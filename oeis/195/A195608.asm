@@ -13,7 +13,13 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,36585 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+  dgs $3,2
+  mod $3,2
+  add $3,2
+  mov $5,$1
+  dgs $5,2
+  mod $5,2
+  sub $3,$5
   dif $3,-2
   add $3,1
   div $3,2

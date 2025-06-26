@@ -1,10 +1,28 @@
 ; A350866: a(n) = A010051(A339399(n)).
 ; Submitted by Simon Strandgaard
 ; 0,0,0,1,0,1,1,1,0,0,1,1,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,1,0,0,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,0
+; Formula: a(n) = ((((-2*((n+1)%2)+1)*(-((n+1)%2)-floor((sqrtint(4*floor((n+1)/2)-3)^2)/4)+floor((n+1)/2))+sqrtint(4*floor((n+1)/2)-3)*((n+1)%2)-1)==0)-A020639((-2*((n+1)%2)+1)*(-((n+1)%2)-floor((sqrtint(4*floor((n+1)/2)-3)^2)/4)+floor((n+1)/2))+sqrtint(4*floor((n+1)/2)-3)*((n+1)%2))*(((-2*((n+1)%2)+1)*(-((n+1)%2)-floor((sqrtint(4*floor((n+1)/2)-3)^2)/4)+floor((n+1)/2))+sqrtint(4*floor((n+1)/2)-3)*((n+1)%2))==A020639((-2*((n+1)%2)+1)*(-((n+1)%2)-floor((sqrtint(4*floor((n+1)/2)-3)^2)/4)+floor((n+1)/2))+sqrtint(4*floor((n+1)/2)-3)*((n+1)%2)))+A020639((-2*((n+1)%2)+1)*(-((n+1)%2)-floor((sqrtint(4*floor((n+1)/2)-3)^2)/4)+floor((n+1)/2))+sqrtint(4*floor((n+1)/2)-3)*((n+1)%2)))==0
 
 #offset 1
 
-seq $0,339399 ; Pairwise listing of the partitions of k into two parts (s,t), with 0 < s <= t ordered by increasing values of s and where k = 2,3,... .
+add $0,1
+mov $6,$0
+mod $6,2
+div $0,2
+mov $4,$0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $5,$0
+pow $5,2
+div $5,4
+add $5,$6
+mul $0,$6
+mul $6,-2
+add $6,1
+sub $4,$5
+mul $4,$6
+add $0,$4
 sub $0,1
 mov $3,$0
 equ $3,0

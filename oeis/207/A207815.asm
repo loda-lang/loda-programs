@@ -1,9 +1,50 @@
 ; A207815: Triangle of coefficients of Chebyshev's S(n,x-3) polynomials (exponents of x in increasing order).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,-3,1,8,-6,1,-21,25,-9,1,55,-90,51,-12,1,-144,300,-234,86,-15,1,377,-954,951,-480,130,-18,1,-987,2939,-3573,2305,-855,183,-21,1,2584,-8850,12707,-10008,4740,-1386,245,-24,1,-6765,26195,-43398,40426,-23373,8715
-; Formula: a(n) = A125662(n)*A097807(n)
 
+mov $6,3
+mov $7,0
+mov $8,3
 mov $1,$0
-seq $1,125662 ; A convolution triangle of numbers based on A001906 (even-indexed Fibonacci numbers).
-seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $9,$5
+add $9,1
+bin $9,2
+sub $1,$9
+sub $1,1
+mul $1,-1
+add $1,$5
+sub $5,$1
+lpb $1
+  sub $1,1
+  add $5,1
+  add $6,$8
+  add $7,1
+  mov $4,$6
+  add $4,$8
+  mul $4,$5
+  div $4,$7
+  mod $6,$8
+  add $6,$4
+  mul $8,-1
+  add $8,$4
+lpe
+mov $1,$6
+div $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,4
+sub $0,1
+sub $2,$0
+mov $3,-1
+pow $3,$2
+mov $0,$3
 mul $0,$1

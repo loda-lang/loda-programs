@@ -1,6 +1,7 @@
 ; A369833: a(n) is the number of distinct values of the permanent of an n X n symmetric Toeplitz matrix using the first n prime numbers.
 ; Submitted by Science United
 ; 1,1,1,6,24,120,720,5040,40320,362880
+; Formula: a(n) = -(b(n)==2)+b(n), b(n) = n*b(n-1), b(0) = 1
 
 mov $2,1
 lpb $0

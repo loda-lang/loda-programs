@@ -7,7 +7,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   add $1,2
-  seq $1,27083 ; a(n) = A027082(n, n+2)
+  seq $1,27083 ; a(n) = A027082(n, n+2).
   div $0,$1
 lpe
 add $1,3

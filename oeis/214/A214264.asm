@@ -1,6 +1,7 @@
 ; A214264: Expansion of f(x^3, x^5) in powers of x where f() is Ramanujan's two-variable theta function.
 ; Submitted by loader3229
 ; 1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = (2*n)==binomial(truncate((sqrtint(16*n)+2)/2),2)
 
 mov $1,$0
 mul $1,16

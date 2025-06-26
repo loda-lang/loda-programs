@@ -1,9 +1,50 @@
 ; A249303: Triangular array:  row n gives the coefficients of the polynomial p(n,x) defined in Comments.
 ; Submitted by jlbrown
 ; 1,0,1,-1,2,-1,1,1,0,-2,3,1,-4,3,1,1,-2,-2,4,0,3,-9,6,1,-1,6,-9,0,5,-1,3,3,-15,10,1,0,-4,18,-24,5,6,1,-8,18,-6,-20,15,1,1,-4,-4,36,-49,14,7,0,5,-30,60,-35,-21,21,1,-1,10,-30,20,50,-84,28,8,-1,5,5,-70,145,-98,-14,28,1
-; Formula: a(n) = A101950(A056536(n+2)-1)
 
 add $0,2
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+mov $2,$0
+mov $6,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $1,$0
+pow $1,2
+div $1,4
+sub $2,$1
+mov $1,$2
+mov $2,$0
+sub $2,$1
+bin $2,2
+add $2,$0
+mov $5,3
+mov $7,3
+mov $4,$2
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $3,$4
+add $3,1
+bin $3,2
+mov $0,$2
+sub $0,$3
 sub $0,1
-seq $0,101950 ; Product of A049310 and A007318 as lower triangular matrices.
+mul $0,-1
+add $0,$4
+sub $4,$0
+lpb $0
+  sub $0,1
+  sub $6,1
+  div $7,-1
+  add $4,1
+  add $5,$7
+  mov $3,$5
+  add $3,$7
+  mul $3,$4
+  div $3,$6
+  add $5,$3
+  add $7,$3
+lpe
+mov $0,$5
+div $0,3

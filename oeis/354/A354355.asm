@@ -1,6 +1,7 @@
 ; A354355: Characteristic function of numbers with their sum of divisors (sigma) 3-smooth.
 ; Submitted by fzs600
 ; 1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,0,0
+; Formula: a(n) = A336457(n)==1
 
 #offset 1
 

@@ -4,9 +4,7 @@
 
 lpb $0
   bor $1,$0
-  lpb $0
-    dif $0,2
-  lpe
+  dir $0,2
   div $0,2
 lpe
 dgs $1,2

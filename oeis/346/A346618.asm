@@ -6,7 +6,20 @@ lpb $0
   div $0,125
   sub $0,1
 lpe
-seq $0,34931 ; Triangle, read by rows, formed by reading Pascal's triangle (A007318) mod 4.
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+bin $1,$0
+mov $0,$1
+mod $0,4
 pow $0,$0
 sub $0,1
 mod $0,2

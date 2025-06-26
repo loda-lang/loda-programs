@@ -1,6 +1,6 @@
 ; A276164: a(n) is the maximum first-player score of a "Coins in a Row" game over all permutations of coins 1..n with both players using a minimax strategy.
 ; Submitted by WTBroughton
-; 1,2,4,7,10,15,17,26,27,40
+; 1,2,4,7,10,15,17,26,27,40,38,57,52,77,67,100
 
 #offset 1
 

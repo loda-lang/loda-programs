@@ -11,7 +11,22 @@ lpb $0
   mov $2,$0
   add $2,1
   max $2,0
-  seq $2,7706 ; a(n) = 1 + coefficient of x^n in Product_{k>=1} (1-x^k) (essentially the expansion of the Dedekind function eta(x)).
+  mul $2,24
+  add $2,1
+  mov $8,$2
+  nrt $2,2
+  mov $6,$2
+  add $6,1
+  mod $6,4
+  sub $6,1
+  mov $7,$2
+  pow $2,2
+  equ $2,$8
+  mul $2,$7
+  mul $2,$6
+  mod $2,3
+  dif $2,-2
+  add $2,1
   sub $4,1
   add $1,$2
   sub $1,1

@@ -13,7 +13,11 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,365089 ; The Thue-Morse sequence along the sequence of cubes.
+  mov $6,$3
+  pow $6,3
+  dgs $6,2
+  mov $3,$6
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

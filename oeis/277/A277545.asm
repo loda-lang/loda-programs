@@ -3,9 +3,7 @@
 
 #offset 1
 
-lpb $0
-  dif $0,7
-lpe
+dir $0,7
 lpb $0
   mod $0,7
 lpe

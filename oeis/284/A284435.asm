@@ -1,6 +1,6 @@
-; A284435: The number of positive integer sequences of length n with no duplicate substrings (forward or backward) and a minimal product (i.e., the product of the sequence is A282193(n)).
+; A284435: The number of positive integer sequences of length n with no duplicate substrings (forward or backward) of length greater than 1 and a minimal product (= A282193(n)).
 ; Submitted by Bok
-; 1,1,2,2,4,4,4,48,144,144
+; 1,1,2,2,4,4,4,48,144,144,144,2304,2160,8640,8640,8640,161280,806400,806400,806400,38534400,39168000,108864000,108864000,2794176000,5370624000,10741248000,21482496000,286355865600,1002245529600,2004491059200,4008982118400,61212572467200,244850289868800,489700579737600
 
 #offset 1
 

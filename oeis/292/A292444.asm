@@ -1,7 +1,6 @@
 ; A292444: Number of non-isomorphic finite multisets that cannot be expressed as the multiset-union of a set of sets.
 ; Submitted by Odicin
-; 0,1,1,2,3,5,6,9,12,17,22
-; Formula: a(n) = b(n+4)-1, b(n) = -b(n-5)+b(n-1)+b(n-4)+b(n-6), b(6) = 2, b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0
+; 0,1,1,2,3,5,6,9,12,17,22,30,39,50,65,83,105,131,167,207,257,317,391,478,585,708,864,1037,1252,1498
 
 #offset 1
 

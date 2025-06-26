@@ -1,4 +1,4 @@
-; A210517: Number of rectangles dissectable into n squares, unique up to aspect ratio.
+; A210517: Number of rectangles dissectible into n squares, unique up to aspect ratio.
 ; Submitted by Luca
 ; 1,1,2,5,11,28,74,211
 

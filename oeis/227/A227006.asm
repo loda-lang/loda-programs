@@ -11,7 +11,7 @@ add $2,7
 lpb $2
   bin $3,2
   add $3,1
-  seq $3,255224 ; Number of (n+2)X(4+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
+  seq $3,255224 ; Number of (n+2)X(4+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2.
   mod $3,$1
   div $3,2
   min $3,1

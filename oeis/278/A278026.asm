@@ -1,4 +1,4 @@
-; A278026: Number of 1324-avoiding permutations of length n with a non-intersecting boundary of type (t, 2), for some integer t >= 1,
+; A278026: Number of 1324-avoiding permutations of length n with a non-intersecting boundary of type (t, 2), for some integer t >= 1.
 ; Submitted by ladmo
 ; 0,0,1,1,4,14,49,174,626,2276,8346,30821,114495,427481
 

@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

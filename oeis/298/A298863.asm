@@ -11,10 +11,19 @@ lpb $2
   mov $3,$1
   mul $3,2
   max $3,1
-  add $3,1
-  seq $3,173919 ; Numbers that are prime or one less than a prime.
-  mul $3,3
   sub $3,1
+  mov $4,$3
+  div $3,2
+  add $3,2
+  mov $5,$3
+  seq $5,40 ; The prime numbers.
+  sub $3,4
+  sub $5,$3
+  sub $5,$3
+  add $4,$5
+  mov $3,$4
+  mul $3,3
+  sub $3,16
   seq $3,230980 ; Number of primes <= n, starting at n=0.
   add $3,$1
   add $0,1

@@ -5,9 +5,7 @@
 mov $1,$0
 add $0,2
 div $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2
 sub $1,$0
 mov $0,$1

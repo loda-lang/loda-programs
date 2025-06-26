@@ -11,7 +11,23 @@ lpb $1
   sub $0,$1
   add $0,$4
   mov $2,$0
-  seq $2,124323 ; Triangle read by rows: T(n,k) is the number of partitions of an n-set having k singleton blocks (0<=k<=n).
+  add $2,1
+  mov $5,$2
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $7,$5
+  add $7,1
+  bin $7,2
+  sub $2,$7
+  sub $2,1
+  mov $6,$2
+  mov $2,$5
+  bin $2,$6
+  sub $5,$6
+  seq $5,296 ; Set partitions without singletons: number of partitions of an n-set into blocks of size > 1. Also number of cyclically spaced (or feasible) partitions.
+  mul $2,$5
   mul $4,$2
 lpe
 mov $0,$2

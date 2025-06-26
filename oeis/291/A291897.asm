@@ -7,6 +7,4 @@
 mul $0,2
 sub $0,1
 seq $0,302585 ; a(n) = n! * [x^n] exp(n*x)/cosh(x).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

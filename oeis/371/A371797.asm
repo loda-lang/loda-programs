@@ -1,6 +1,6 @@
 ; A371797: Number of quanimous subsets of {1..n} containing n, meaning there is more than one set partition with equal block-sums.
 ; Submitted by Johnbodlis team
-; 0,0,1,2,5,11,24,51,112,233
+; 0,0,1,2,5,11,24,51,112,233,507,1044,2214,4557,9472,19545,40373,82145,168374,341523,693350,1408893,2860365,5771355,11667351,23542022,47484577,95861243,193447849,389602553
 
 #offset 1
 

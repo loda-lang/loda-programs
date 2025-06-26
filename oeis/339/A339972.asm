@@ -4,6 +4,4 @@
 
 mul $0,4
 seq $0,339821 ; a(n) = phi(A019565(2n)), where phi is Euler totient function.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

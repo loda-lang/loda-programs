@@ -5,7 +5,11 @@
 #offset 1
 
 mov $1,$0
-seq $1,103164 ; Integers but with the primes squared.
+seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+add $1,1
+mov $2,$0
+pow $2,$1
+mov $1,$2
 sub $1,1
 sub $0,$1
 equ $0,1

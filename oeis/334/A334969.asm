@@ -13,7 +13,10 @@ lpb $2
   seq $7,51903 ; Maximum exponent in the prime factorization of n.
   mov $3,$1
   add $3,1
-  seq $3,111089 ; Largest prime factor of 2n.
+  mod $3,-149
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  trn $3,2
+  add $3,2
   pow $3,$7
   mov $5,$3
   gcd $5,$6

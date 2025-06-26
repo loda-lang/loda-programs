@@ -12,8 +12,17 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
+  mov $3,$0
+  mul $0,8
+  nrt $0,2
   sub $0,1
-  seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  div $0,2
+  mov $4,$0
+  add $4,1
+  bin $4,2
+  sub $3,$4
+  sub $3,1
+  bin $0,$3
   seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   pow $0,2
   add $2,$0

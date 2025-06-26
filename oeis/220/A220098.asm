@@ -6,8 +6,17 @@
 
 sub $0,1
 lpb $0
+  mov $3,$0
+  mul $3,8
+  add $3,1
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
   mov $2,$0
-  seq $2,174028 ; Triangle T(n,k) = 2+4k read by rows.
+  sub $2,$3
+  mul $2,4
+  add $2,2
   div $2,2
   sub $0,$2
   add $1,1

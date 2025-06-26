@@ -1,6 +1,7 @@
 ; A245899: a(n) is the number of permutations avoiding 312 that can be realized on increasing unary-binary trees with n nodes.
 ; Submitted by atannir
 ; 1,1,2,3,7,14,37,80
+; Formula: a(n) = truncate(c(max(n-2,0))/2)+1, b(n) = max(3*c(n-1)+2*(d(n-1)==b(n-1)),4), b(2) = 6, b(1) = 4, b(0) = 1, c(n) = b(n-1)+d(n-1), c(2) = 4, c(1) = 2, c(0) = 0, d(n) = 3*c(n-1), d(2) = 6, d(1) = 0, d(0) = 1
 
 #offset 1
 

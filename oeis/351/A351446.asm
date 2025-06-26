@@ -10,10 +10,17 @@ lpb $2
   mov $4,$1
   add $4,1
   seq $4,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
+  mov $7,$1
   mov $3,$1
   add $3,1
-  seq $3,337194 ; a(n) = 1 + A000265(sigma(n)), where A000265 gives the odd part.
-  sub $3,1
+  mov $6,$3
+  dir $6,2
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,$3
+  bxo $5,$1
+  mul $5,$6
+  dir $5,2
+  mov $3,$5
   seq $3,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
   sub $3,$4
   equ $3,0

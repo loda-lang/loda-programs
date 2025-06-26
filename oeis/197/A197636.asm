@@ -11,9 +11,13 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $5,$1
+  add $5,2
+  mov $6,$5
+  seq $6,40 ; The prime numbers.
+  div $6,2
+  mov $5,$6
+  mul $5,2
   add $5,1
-  seq $5,154115 ; Numbers n such that n + 3 is prime.
-  add $5,3
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$5
   seq $3,301316 ; a(n) = ((n-1)! + 1) mod n^2.

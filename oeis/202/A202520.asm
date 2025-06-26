@@ -2,9 +2,25 @@
 ; Submitted by PDW
 ; 3,2835,467775,127702575,350813659321125,147926426347074375,144228265688397515625,84913182070036240111050234375,206217727884373725983979140625,45665884751355139750522260795703125,48463572986198162681964482985158015982421875,176412350932310924219767245054034888177646484375
 
+mov $2,$0
+mul $2,4
+add $2,1
+seq $2,350972 ; E.g.f. = tan(x).
 mul $0,2
+mov $1,$0
+add $1,1
+mov $3,4
+pow $3,$1
+bin $3,2
+div $3,2
+gcd $2,$3
+mov $1,$3
+div $1,$2
+mul $1,4
 add $0,1
-seq $0,57868 ; Denominator of "modified Bernoulli number" b(2n) = Bernoulli(2*n)/(4*n*(2*n)!).
-lpb $0
-  dif $0,2
-lpe
+mul $0,2
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $1,$0
+mov $0,$1
+mul $0,2
+dir $0,2

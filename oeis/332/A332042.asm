@@ -13,8 +13,15 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $5,$0
-  add $0,1
-  seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  mov $6,-1
+  pow $6,$0
+  mul $6,2
+  bin $6,2
+  mov $7,$0
+  add $7,1
+  seq $7,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $7,$6
+  mov $0,$7
   sub $0,1
   sub $0,$5
   equ $0,$2

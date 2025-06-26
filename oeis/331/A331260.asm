@@ -4,6 +4,14 @@
 
 #offset 1
 
-seq $0,46301 ; Product of 3 successive primes.
+sub $0,1
+mov $1,$0
+add $0,1
+seq $0,40 ; The prime numbers.
+add $1,2
+seq $1,40 ; The prime numbers.
+seq $1,13636 ; a(n) = n*nextprime(n).
+mul $1,$0
+mov $0,$1
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 dif $0,3

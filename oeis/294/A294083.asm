@@ -1,7 +1,7 @@
 ; A294083: a(n) is the n-th nonprime number raised to the n-th prime number.
 ; Submitted by Skillz
 ; 1,64,7776,2097152,31381059609,10000000000000,2218611106740436992,5976303958948914397184,1122274146401882171630859375,83076749736557242056487941267521536,819308872942260126404286866009182175232,1374389534720000000000000000000000000000000000000
-; Formula: a(n) = truncate(A018252(n)^A000040(n))
+; Formula: a(n) = truncate((bitxor(n-1,n-1)+A072668(n-1)+1)^A000040(n))
 
 #offset 1
 
@@ -9,7 +9,12 @@ sub $0,1
 mov $1,$0
 add $0,1
 seq $0,40 ; The prime numbers.
+mov $3,$1
+bxo $3,$1
+mov $2,$1
+seq $2,72668 ; Numbers one less than composite numbers.
+add $3,$2
+mov $1,$3
 add $1,1
-seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 pow $1,$0
 mov $0,$1

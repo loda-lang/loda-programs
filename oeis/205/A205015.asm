@@ -1,15 +1,63 @@
 ; A205015: (1/n)*A205014(n).
 ; Submitted by seanr22a
 ; 1,2,6,1,1,3,2,8,2,5,228,56,14,1,212,4,4,1,1,159,32,114,3,28,2,7,34,24,8,106,16796,2,76,2,98,1350,1314,66,242,320,6,16,2674440,57,1080,4016,73,14,70,1,18,869,60,17,650,12,44,4,559519620,53
-; Formula: a(n) = truncate(A205008(A205009(n))/gcd(A205008(A205009(n)),n))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
+sub $0,1
+mov $6,0
+mov $7,$0
+add $7,4
+pow $7,5
+lpb $7
+  mov $8,$6
+  add $8,1
+  mov $9,$8
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  sub $8,$11
+  sub $8,1
+  mov $10,$9
+  add $10,1
+  mov $9,$8
+  mul $9,2
+  bin $9,$8
+  mov $8,2
+  mul $8,$10
+  bin $8,$10
+  sub $8,$9
+  gcd $8,$1
+  add $6,1
+  add $7,$8
+  sub $7,$1
+lpe
+mov $1,$6
 add $1,1
-seq $1,205009 ; Least k such that n divides the k-th difference between distinct central binomials coefficients.
-seq $1,205008 ; Ordered differences of central binomial coefficients.
+mov $3,$1
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $5,$3
+add $5,1
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $4,$3
+add $4,1
+mov $3,$1
+mul $3,2
+bin $3,$1
+mov $1,2
+mul $1,$4
+bin $1,$4
+sub $1,$3
 mov $2,$1
 add $0,1
 gcd $1,$0

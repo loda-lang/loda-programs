@@ -7,6 +7,4 @@
 mul $0,2
 sub $0,1
 seq $0,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
-lpb $0
-  dif $0,3
-lpe
+dir $0,3

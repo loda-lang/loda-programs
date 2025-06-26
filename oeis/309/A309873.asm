@@ -4,9 +4,7 @@
 
 #offset 1
 
-lpb $0
-  dif $0,4
-lpe
+dir $0,4
 sub $0,1
 mov $1,-1
 bin $1,$0

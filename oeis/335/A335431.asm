@@ -11,7 +11,28 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,190620 ; Odd numbers with a single zero in their binary expansion.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $3,$8
+  sub $3,1
+  sub $6,$3
+  add $3,2
+  mov $7,2
+  pow $7,$3
+  sub $7,1
+  mov $3,$7
+  mov $7,2
+  pow $7,$6
+  mul $7,$3
+  mov $3,$7
+  mul $3,2
+  sub $3,1
   mov $5,$3
   add $3,1
   seq $3,325135 ; Size of the integer partition with Heinz number n after its inner lining, or, equivalently, its largest hook, is removed.

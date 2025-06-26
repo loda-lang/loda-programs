@@ -5,8 +5,6 @@
 #offset 1
 
 seq $0,254051 ; Square array A by downward antidiagonals: A(n,k) = (3 + 3^n*(2*floor(3*k/2) - 1))/6, n,k >= 1; read as A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), ...
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2
 add $0,1

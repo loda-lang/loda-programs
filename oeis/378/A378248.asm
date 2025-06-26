@@ -17,7 +17,7 @@ lpb $0
     lpb $5
       mov $6,$5
       trn $6,1
-      seq $6,29041 ; Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^9)).
+      seq $6,29041 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)*(1-x^9)).
       add $1,$6
       trn $5,3
     lpe

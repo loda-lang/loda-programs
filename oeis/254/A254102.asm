@@ -6,9 +6,7 @@
 
 seq $0,254101 ; Square array A(row,col) = A000265(A254051(row,col)).
 mov $1,$0
-lpb $1
-  dif $1,3
-lpe
+dir $1,3
 div $1,3
 mov $0,$1
 add $0,1

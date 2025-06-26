@@ -14,7 +14,19 @@ lpb $2
   seq $6,33677 ; Smallest divisor of n >= sqrt(n).
   mov $3,$1
   add $3,$6
-  seq $3,131768 ; 2*(A007318 * A097807) - A000012.
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $8,$7
+  bin $8,2
+  sub $3,$8
+  bin $7,$3
+  mov $3,$7
+  mul $3,2
+  sub $3,1
   equ $3,1
   sub $5,1
   sub $0,$3

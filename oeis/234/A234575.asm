@@ -1,4 +1,4 @@
-; A234575: Triangle T(n,k) read by rows: T(n,k) = floor(n/k) + n mod k, with 1<=k<=n.
+; A234575: Triangle T(n, k) read by rows: T(n, k) = floor(n/k) + n mod k.
 ; Submitted by Christian Krause
 ; 1,2,1,3,2,1,4,2,2,1,5,3,3,2,1,6,3,2,3,2,1,7,4,3,4,3,2,1,8,4,4,2,4,3,2,1,9,5,3,3,5,4,3,2,1,10,5,4,4,2,5,4,3,2,1,11,6,5,5,3,6,5,4,3,2,1,12,6,4,3,4,2,6,5,4,3,2,1,13,7
 

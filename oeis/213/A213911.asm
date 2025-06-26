@@ -1,6 +1,7 @@
 ; A213911: Number of runs of consecutive zeros in the Zeckendorf (binary) representation of n.
 ; Submitted by Science United
 ; 0,0,1,1,1,1,1,2,1,1,2,2,2,1,1,2,2,2,2,2,3,1,1,2,2,2,2,2,3,2,2,3,3,3,1,1,2,2,2,2,2,3,2,2,3,3,3,2,2,3,3,3,3,3,4,1,1,2,2,2,2,2,3,2,2,3,3,3,2,2,3,3,3,3,3,4,2,2,3,3
+; Formula: a(n) = sumdigits(c(n)+1,2)*sign(c(n)+1)-1, b(n) = sign(2*sign(b(n-1)+c(n-1)+2)+2*sign(c(n-1))-1)*bitor(abs(b(n-1)+c(n-1)+2),abs(c(n-1)))-c(n-1), b(1) = 2, b(0) = 0, c(n) = truncate((sign(2*sign(b(n-1)+c(n-1)+2)+2*sign(c(n-1))-1)*bitor(abs(b(n-1)+c(n-1)+2),abs(c(n-1)))-c(n-1))/2), c(1) = 1, c(0) = 0
 
 lpb $0
   sub $0,1

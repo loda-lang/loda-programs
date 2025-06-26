@@ -7,7 +7,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,29032 ; Expansion of 1/((1-x)(1-x^3)(1-x^4)(1-x^5)).
+  seq $2,29032 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^4)*(1-x^5)).
   trn $0,7
   add $1,$2
 lpe

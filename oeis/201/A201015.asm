@@ -11,7 +11,24 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,44990 ; Numbers whose base-3 representation contains no 0's and exactly one 2.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  sub $3,1
+  add $6,1
+  mov $7,3
+  pow $7,$3
+  mov $3,3
+  pow $3,$6
+  div $3,2
+  add $7,$3
+  mov $3,$7
   seq $3,7089 ; Numbers in base 3.
   sub $3,1
   mov $5,$3

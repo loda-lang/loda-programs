@@ -1,6 +1,7 @@
 ; A353370: a(n) = 1 if the prime factorization of n contains as many even as odd prime indices, when counted with multiplicity, otherwise 0.
 ; Submitted by [AF] Kalianthys
 ; 1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0
+; Formula: a(n) = A316523(A181819(n*A181811(n))*A181811(A181819(n*A181811(n))))==0
 
 #offset 1
 

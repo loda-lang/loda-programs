@@ -25,7 +25,8 @@ lpb $0
   mul $9,2
   bin $9,2
   add $3,1
-  seq $3,593 ; Sum of odd divisors of n.
+  dir $3,2
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $3,$9
   mul $3,8
   sub $3,$8

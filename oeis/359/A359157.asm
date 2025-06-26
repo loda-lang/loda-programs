@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,65883 ; Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
+  dir $3,4
   seq $3,73184 ; Number of cubefree divisors of n.
   mov $5,$3
   trn $3,56

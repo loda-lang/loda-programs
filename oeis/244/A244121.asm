@@ -1,9 +1,34 @@
 ; A244121: Triangle read by rows: terms T(n,k) of a binomial decomposition of n^n as Sum(k=0..n)T(n,k).
 ; Submitted by Ralfy
 ; 1,0,1,0,4,0,0,9,18,0,0,16,192,48,0,0,25,1200,1800,100,0,0,36,5760,29160,11520,180,0,0,49,23520,317520,423360,58800,294,0,0,64,86016,2721600,9175040,4536000,258048,448,0,0,81,290304,19840464,145152000,181440000,39680928,1016064,648,0,0,100,921600,128595600,1857945600,4921875000,2786918400,300056400,3686400,900,0,0,121,2787840,762125760,20399554560,102910500000,123492600000,35699220480,2032335360,12545280,1210,0,0,144
-; Formula: a(n) = A244120(n)*A007318(n)
 
 mov $1,$0
-seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,244120 ; Triangle read by rows: coefficients T(n,k) of a binomial decomposition of n^n as Sum(k=0..n)T(n,k)*binomial(n,k).
+add $1,1
+mov $2,$1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+bin $1,$2
+mov $4,0
+lpb $0
+  mov $6,$4
+  add $4,1
+  sub $0,$4
+lpe
+mov $5,$4
+sub $5,$0
+sub $0,1
+sub $6,$0
+pow $6,$0
+max $4,1
+mul $4,$6
+add $0,1
+pow $0,$5
+mul $0,$4
 mul $0,$1

@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,3960 ; Fully multiplicative with a(p) = [ (p+1)/2 ] for prime p.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

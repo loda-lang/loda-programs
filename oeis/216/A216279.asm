@@ -11,7 +11,10 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,5
-  seq $2,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+  mov $5,$2
+  nrt $2,2
+  pow $2,2
+  equ $2,$5
   sub $0,2
   add $1,$2
   mov $3,1

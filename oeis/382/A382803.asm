@@ -2,7 +2,8 @@
 ; Submitted by Goldislops
 ; 1,2,3,4,5,15,16,255,256,65535,65536,4294967295
 
-add $0,1
+#offset 1
+
 mov $2,2
 mov $1,$0
 sub $1,2

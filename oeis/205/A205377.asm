@@ -11,7 +11,21 @@ pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,205376 ; Ordered differences of distinct odd squares, stored in triangle.
+  mov $5,$3
+  mov $6,$3
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  mov $4,$3
+  bin $3,2
+  sub $5,$3
+  add $5,$4
+  add $3,$4
+  sub $3,$6
+  add $3,1
+  mul $3,$5
+  mul $3,4
   gcd $3,$0
   add $1,1
   add $2,$3

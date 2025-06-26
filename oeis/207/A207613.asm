@@ -1,12 +1,61 @@
 ; A207613: Triangle of coefficients of polynomials v(n,x) jointly generated with A207612; see Formula section.
 ; Submitted by Science United
 ; 1,2,2,3,4,4,5,8,8,8,8,16,20,16,16,13,30,44,48,32,32,21,56,92,112,112,64,64,34,102,188,256,272,256,128,128,55,184,372,560,672,640,576,256,256,89,328,724,1184,1552,1696,1472,1280,512,512,144,580,1384
-; Formula: a(n) = A207611(n)*A059268(n-1)
 
 #offset 1
 
+mov $8,0
+mov $10,0
+mov $7,3
+mov $9,3
+mov $6,$0
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $12,$6
+add $12,1
+bin $12,2
+mov $5,3
+add $6,1
 mov $1,$0
-seq $1,207611 ; Triangle of coefficients of polynomials v(n,x) jointly generated with A207610; see Formula section.
+sub $1,$12
+sub $1,1
+mul $1,-1
+add $1,$6
+sub $6,$1
+lpb $1
+  sub $1,1
+  add $6,1
+  add $9,$7
+  mov $11,$10
+  add $7,$9
+  add $10,$5
+  add $11,$10
+  mov $5,$7
+  sub $5,$9
+  sub $5,$10
+  mul $5,$6
+  sub $6,1
+  add $8,1
+  div $5,$8
+  add $7,$5
+  mul $9,-1
+  add $9,$5
+lpe
+mov $1,$11
+div $1,3
 sub $0,1
-seq $0,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+mov $4,$0
+mul $4,8
+add $4,1
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $2,$0
+sub $2,$4
+mov $3,2
+pow $3,$2
+mov $0,$3
 mul $0,$1

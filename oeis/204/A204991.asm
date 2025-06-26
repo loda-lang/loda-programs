@@ -4,11 +4,34 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,1
-seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
-seq $0,165781 ; a(n) = (2^A002326(n)-1)/(2*n+1).
+mov $6,0
+dir $0,2
+div $0,2
+mov $3,$0
+mul $3,2
+add $3,1
+mul $0,2
+mov $5,$0
+add $5,1
+mov $9,$5
+mov $8,$5
+lpb $8
+  equ $5,$6
+  mov $7,$5
+  equ $7,0
+  sub $8,$7
+  add $6,256
+  mul $6,2
+  mod $6,$9
+lpe
+sub $0,$8
+add $0,1
+mov $4,2
+pow $4,$0
+mov $0,$4
+sub $0,1
+div $0,$3
 mul $0,$2
 add $1,$0
 dif $1,2

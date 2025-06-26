@@ -15,7 +15,13 @@ lpb $3
   mov $4,$2
   pow $4,2
   sub $4,1
-  seq $4,1803 ; Numerators in expansion of (1 - x)^(-3/2).
+  mov $5,$4
+  mul $5,2
+  add $5,1
+  bin $5,$4
+  add $4,1
+  mul $4,$5
+  dir $4,2
   gcd $2,$4
   div $4,$2
   bin $0,$3

@@ -1,10 +1,51 @@
 ; A338372: T(n, m) = Sum_{k=1..(m+3)/2} C(m-k+2, k-1)*C(n+1, k-1)*C(n-m+k-1, k-1)*C(2*n-2*k+4, 2*m-4*k+5)/(C(2*k-2, k-1)*C(2*m-2*k+4, 2*k-2))/2, triangle read by rows.
 ; Submitted by Fardringle
 ; 1,2,2,3,10,4,4,28,32,8,5,60,136,88,16,6,110,416,504,224,32,7,182,1036,2024,1616,544,64,8,280,2240,6448,8064,4736,1280,128,9,408,4368,17424,31456,28288,13056,2944,256,10,570,7872,41616,102592,130880,90880,34432,6656,512,11,770,13332,90288,291808,501568,487040,273792,87808,14848,1024
-; Formula: a(n) = A208752(n+1)*A059268(n)
 
 mov $1,$0
 add $1,1
-seq $1,208752 ; Triangle of coefficients of polynomials v(n,x) jointly generated with A208751; see the Formula section.
-seq $0,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+mov $7,3
+mov $8,0
+mov $9,3
+mov $6,$1
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $10,$6
+add $10,1
+bin $10,2
+sub $1,$10
+sub $1,1
+mul $1,-1
+add $1,$6
+sub $6,$1
+lpb $1
+  sub $1,1
+  add $6,1
+  add $7,$9
+  add $7,$9
+  mov $5,$7
+  mul $5,$6
+  sub $6,1
+  add $8,1
+  div $5,$8
+  add $7,$5
+  mul $9,-1
+  add $9,$5
+lpe
+mov $1,$9
+div $1,3
+mov $4,$0
+mul $4,8
+add $4,1
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $2,$0
+sub $2,$4
+mov $3,2
+pow $3,$2
+mov $0,$3
 mul $0,$1

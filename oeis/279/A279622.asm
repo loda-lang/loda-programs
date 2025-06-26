@@ -11,9 +11,16 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $6,-1
+  pow $6,$1
+  mul $6,2
+  bin $6,2
+  mov $7,$1
+  add $7,1
+  seq $7,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $7,$6
   mov $5,$1
-  add $5,1
-  seq $5,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  mov $5,$7
   mov $3,$1
   add $3,1
   gcd $5,$3

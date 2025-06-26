@@ -1,6 +1,7 @@
 ; A280710: Characteristic function of squarefree semiprimes.
 ; Submitted by Landjunge
 ; 0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0
+; Formula: a(n) = truncate(A073184(n)/2)==2
 
 #offset 1
 

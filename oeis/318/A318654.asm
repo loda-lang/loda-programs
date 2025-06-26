@@ -16,7 +16,7 @@ lpb $2
   seq $5,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
   mov $3,$1
   add $3,1
-  seq $3,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  lex $3,2
   mul $3,2
   trn $3,$5
   min $3,1

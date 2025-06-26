@@ -1,6 +1,7 @@
 ; A372470: Multiplicative with a(p^e) = e+1 if e+1 is a power of 2, and 0 otherwise.
 ; Submitted by Science United
 ; 1,2,2,0,2,4,2,4,0,4,2,0,2,4,4,0,2,0,2,0,4,4,2,8,0,4,4,0,2,8,2,0,4,4,4,0,2,4,4,8,2,8,2,0,0,4,2,0,0,0,4,0,2,8,4,8,4,4,2,0,2,4,0,0,4,8,2,0,4,8,2,0,2,4,0,0,4,8,2,0
+; Formula: a(n) = gcd(A000005(n),2^n)*(truncate(A000005(n)/gcd(A000005(n),2^n))==1)
 
 #offset 1
 

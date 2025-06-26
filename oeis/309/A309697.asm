@@ -6,9 +6,7 @@
 
 mov $1,$0
 pow $1,$0
-lpb $1
-  dif $1,10
-lpe
+dir $1,10
 div $1,10
 mov $0,$1
 mod $0,10

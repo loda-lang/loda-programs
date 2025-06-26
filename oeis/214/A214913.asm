@@ -8,8 +8,15 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  mov $5,$1
+  max $5,1
+  log $5,2
+  add $5,1
+  mov $6,$1
+  mov $3,2
+  pow $3,$5
+  sub $3,$1
+  sub $3,1
   seq $3,213719 ; Characteristic function for A179016.
   sub $0,$3
   add $1,1

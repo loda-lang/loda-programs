@@ -1,6 +1,7 @@
 ; A291300: Signed domination number of Fibonacci cube Gamma_n.
 ; Submitted by Jamie Morken(l1)
 ; 2,3,3,2,5,9,10,17,25,40
+; Formula: a(n) = -d(n-1)+c(n-1)+2, b(n) = 2*(b(n-4)==1)+b(n-1)+b(n-2)+1, b(4) = 4, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = 2*(b(n-3)==1)+b(n-1)+1, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 2*(b(n-1)==1), d(3) = 2, d(2) = 0, d(1) = 0, d(0) = 0
 
 #offset 1
 

@@ -14,7 +14,10 @@ lpb $2
   add $3,1
   mov $5,$1
   add $5,2
-  seq $5,70777 ; a(1) = 1; a(n) = (largest prime factor of n) - 1.
+  mod $5,-149
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  trn $5,2
+  add $5,1
   mod $3,$5
   mul $3,4
   trn $3,3

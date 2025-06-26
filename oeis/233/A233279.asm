@@ -4,6 +4,17 @@
 
 mov $1,$0
 neq $1,0
-seq $0,6068 ; a(n) is Gray-coded into n.
-seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+mov $4,0
+mov $5,$0
+lpb $5
+  bxo $4,$5
+  div $5,2
+lpe
+mov $2,$4
+log $2,2
+mov $3,2
+pow $3,$2
+sub $3,1
+mov $0,$4
+bxo $0,$3
 mul $0,$1

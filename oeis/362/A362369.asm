@@ -1,12 +1,61 @@
 ; A362369: Triangle read by rows, T(n, k) = binomial(n, k) * k! * Stirling2(n-k, k), for n >= 0 and 0 <= k <= n//2, where '//' denotes integer division.
 ; Submitted by Science United
 ; 1,0,0,2,0,3,0,4,12,0,5,60,0,6,210,120,0,7,630,1260,0,8,1736,8400,1680,0,9,4536,45360,30240,0,10,11430,216720,327600,30240,0,11,28050,956340,2772000,831600,0,12,67452,3993000,20207880,13305600,665280
-; Formula: a(n) = A131689(A056536(n+1)-1)*A046899(A056536(n+1)-1)
 
 add $0,1
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
-sub $0,1
-mov $1,$0
-seq $1,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
-seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+mov $3,$0
+mov $8,0
+mov $10,0
+mov $11,0
+mov $12,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $2,$0
+pow $2,2
+div $2,4
+sub $3,$2
+mov $2,$3
+mov $3,$0
+sub $3,$2
+bin $3,2
+add $3,$0
+mov $4,$3
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+bin $5,2
+mov $1,$3
+sub $1,1
+sub $1,$5
+bin $1,$4
+mov $6,$3
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $7,$6
+add $7,1
+bin $7,2
+mov $0,$3
+sub $0,$7
+mov $7,$0
+mov $0,$6
+mov $6,$7
+lpb $6
+  sub $6,1
+  mov $9,$6
+  pow $9,$0
+  sub $10,$12
+  sub $10,$6
+  bin $10,$8
+  mul $10,$9
+  add $11,$10
+  mov $12,1
+  add $8,1
+  mul $10,0
+lpe
+mov $0,$11
 mul $0,$1

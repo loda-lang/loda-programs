@@ -12,7 +12,19 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
+  add $0,1
+  mov $4,$0
+  mul $0,8
+  nrt $0,2
+  sub $0,1
+  div $0,2
+  mov $5,$0
+  add $5,1
+  bin $5,2
+  sub $4,$5
+  sub $4,1
+  bin $0,$4
+  mul $0,2
   seq $0,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
   mod $0,2
   mul $1,2

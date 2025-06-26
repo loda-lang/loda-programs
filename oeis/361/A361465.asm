@@ -6,9 +6,7 @@
 
 mov $2,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 mov $1,$0
 gcd $1,$2
 equ $1,$0

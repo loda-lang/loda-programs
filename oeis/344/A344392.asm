@@ -1,9 +1,49 @@
 ; A344392: T(n, k) = k!*Stirling2(n - k, k), for n >= 0 and 0 <= k <= floor(n/2). Triangle read by rows.
 ; Submitted by UBT - Mikeejones
 ; 1,0,0,1,0,1,0,1,2,0,1,6,0,1,14,6,0,1,30,36,0,1,62,150,24,0,1,126,540,240,0,1,254,1806,1560,120,0,1,510,5796,8400,1800,0,1,1022,18150,40824,16800,720,0,1,2046,55980,186480,126000,15120
-; Formula: a(n) = A131689(A056536(n+1)-1)
 
 add $0,1
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
-sub $0,1
-seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+mov $2,$0
+mov $5,0
+mov $7,0
+mov $8,0
+mov $9,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $1,$0
+pow $1,2
+div $1,4
+sub $2,$1
+mov $1,$2
+mov $2,$0
+sub $2,$1
+bin $2,2
+add $2,$0
+mov $3,$2
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+mov $0,$2
+sub $0,$4
+mov $4,$0
+mov $0,$3
+mov $3,$4
+lpb $3
+  sub $3,1
+  mov $6,$3
+  pow $6,$0
+  sub $7,$9
+  sub $7,$3
+  bin $7,$5
+  mul $7,$6
+  add $8,$7
+  mov $9,1
+  add $5,1
+  mul $7,0
+lpe
+mov $0,$8

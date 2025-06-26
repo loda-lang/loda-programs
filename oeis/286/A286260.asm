@@ -4,8 +4,18 @@
 
 #offset 1
 
+mov $6,$0
+sub $6,1
+mov $5,$0
+dir $5,2
+seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$0
+bxo $4,$6
+mul $4,$5
+dir $4,2
 mov $1,$0
-seq $1,161942 ; Odd part of sum of divisors of n.
+mov $1,$4
+mul $1,3
 mul $0,2
 mov $3,$0
 sub $3,1
@@ -14,9 +24,8 @@ add $0,1
 div $0,2
 log $0,2
 mov $2,$0
-add $0,$1
+add $0,$4
 pow $0,2
-mul $1,3
 sub $0,$2
 sub $0,$1
 add $0,2

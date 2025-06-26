@@ -1,9 +1,22 @@
 ; A253064: Number of odd terms in f^n, where f = 1/x + 1 + x + y.
 ; Submitted by Simon Strandgaard
 ; 1,4,4,12,4,16,12,40,4,16,16,48,12,48,40,128,4,16,16,48,16,64,48,160,12,48,48,144,40,160,128,416,4,16,16,48,16,64,48,160,16,64,64,192,48,192,160,512,12,48,48,144,48,192,144,480,40,160,160,480,128,512,416,1344,4,16,16,48,16,64,48,160,16,64,64,192,48,192,160,512
-; Formula: a(n) = A245564(n)*A001316(n)
 
+mov $3,2
+mov $5,2
 mov $1,$0
-seq $1,245564 ; a(n) = Product_{i in row n of A245562} Fibonacci(i+2).
-seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+lpb $1
+  mov $4,$1
+  mod $4,2
+  mul $4,$5
+  mov $5,$3
+  div $1,2
+  add $3,$4
+lpe
+mov $1,$3
+div $1,2
+dgs $0,2
+mov $2,2
+pow $2,$0
+mov $0,$2
 mul $0,$1

@@ -11,9 +11,17 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,359194 ; Binary complement of 3*n.
+  mul $3,3
+  mov $4,$3
+  max $4,1
+  log $4,2
+  add $4,1
+  mov $5,$3
+  mov $3,2
+  pow $3,$4
+  sub $3,$5
   sub $3,$1
-  max $3,0
+  trn $3,1
   min $3,1
   sub $0,$3
   add $1,1

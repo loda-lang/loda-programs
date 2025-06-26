@@ -4,8 +4,18 @@
 
 mov $1,$0
 neq $1,0
-seq $0,233271 ; a(0)=0; thereafter a(n+1) = a(n) + 1 + number of 0's in binary representation of a(n), counted with A080791.
+mov $4,0
+lpb $0
+  sub $0,1
+  seq $4,233272 ; a(n) = n + 1 + number of nonleading zeros in binary representation of n (A080791).
+lpe
+mov $0,$4
 trn $0,1
 add $0,1
-seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+mov $2,$0
+log $2,2
+mov $3,2
+pow $3,$2
+sub $3,1
+bxo $0,$3
 mul $0,$1

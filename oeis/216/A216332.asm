@@ -1,13 +1,22 @@
 ; A216332: Number of horizontal and antidiagonal neighbor colorings of the even squares of an n X 2 array with new integer colors introduced in row major order.
 ; Submitted by BrandyNOW
 ; 1,2,3,10,27,114,409,2066,9089,52922,272947,1788850,10515147,76282138,501178937,3974779402,28773452321,247083681522,1949230218691,17984917069018,153281759047387,1510073008031682,13806215066685433,144466325466945282,1408621900803060705,15586227681748183978,161278353358629226675,1879836370194918728834,20555596673435403499083,251554605154723467929962,2896227959507289559616217,37104887223398228950568442,448371253145121338801335489,5998135122267144438322092002,75859346615220378448496745731
-; Formula: a(n) = A123346(A061579(floor((n^2)/2)))
+; Formula: a(n) = A123346((truncate((sqrtint(8*floor((n^2)/2)+8)-1)/2)+1)^2-floor((n^2)/2)-1)
 
 #offset 1
 
 pow $0,2
 mov $1,$0
 div $1,2
-seq $1,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+add $2,1
+pow $2,2
+sub $2,$1
+mov $1,$2
 seq $1,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
 mov $0,$1

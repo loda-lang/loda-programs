@@ -10,9 +10,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  lpb $3
-    dif $3,2
-  lpe
+  dir $3,2
   sub $3,1
   seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
   mod $3,2

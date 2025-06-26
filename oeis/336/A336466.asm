@@ -4,6 +4,4 @@
 #offset 1
 
 seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

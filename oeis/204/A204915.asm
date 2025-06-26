@@ -13,9 +13,19 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,204890 ; Ordered differences of primes.
+  mov $6,$1
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
   mov $4,$1
-  add $4,1
-  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  sub $4,$6
+  mov $5,$4
+  add $5,1
+  seq $5,40 ; The prime numbers.
+  mov $4,$5
   mul $4,2
   add $4,$3
   mul $4,$3

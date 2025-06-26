@@ -1,12 +1,61 @@
 ; A344913: Table read by rows, T(n, k) (for 0 <= k <= n) = (-2)^(n - k)*k!*Stirling2(n, k).
 ; Submitted by Leviathan
 ; 1,0,1,0,-2,2,0,4,-12,6,0,-8,56,-72,24,0,16,-240,600,-480,120,0,-32,992,-4320,6240,-3600,720,0,64,-4032,28896,-67200,67200,-30240,5040,0,-128,16256,-185472,653184,-1008000,766080,-282240,40320
-; Formula: a(n) = A131689(gcd(0,n))*A130321(n)*A097807(gcd(0,n))
 
 gcd $1,$0
+mov $9,0
+mov $11,0
+mov $12,0
+mov $13,0
 mov $2,$1
-seq $2,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-seq $1,97807 ; Riordan array (1/(1+x),1) read by rows.
-mul $1,$2
-seq $0,130321 ; Triangle, (2^0, 2^1, 2^2, ...) in every column.
+add $2,1
+mov $7,$2
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $8,$7
+add $8,1
+bin $8,2
+sub $2,$8
+mov $8,$2
+mov $2,$7
+mov $7,$8
+lpb $7
+  sub $7,1
+  mov $10,$7
+  pow $10,$2
+  sub $11,$13
+  sub $11,$7
+  bin $11,$9
+  mul $11,$10
+  add $12,$11
+  mov $13,1
+  add $9,1
+  mul $11,0
+lpe
+add $1,1
+mov $2,$12
+mov $3,$1
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,4
+add $0,1
+sub $1,1
+sub $3,$1
+mov $4,-1
+pow $4,$3
+mov $1,$4
+mul $1,$12
+mov $5,$0
+mul $0,8
+nrt $0,2
+add $0,3
+div $0,2
+bin $0,2
+sub $0,$5
+mov $6,2
+pow $6,$0
+mov $0,$6
 mul $0,$1

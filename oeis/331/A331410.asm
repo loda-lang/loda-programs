@@ -8,8 +8,15 @@ sub $0,1
 lpb $0
   add $1,1
   mov $2,$0
+  mul $2,2
   add $2,1
-  seq $2,108738 ; a(n) = n/(smallest odd prime divisor of n), if any.
+  mov $3,$2
+  add $2,1
+  seq $2,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
+  div $3,$2
+  mov $2,$3
+  div $2,2
+  add $2,1
   add $0,$2
   div $0,2
 lpe

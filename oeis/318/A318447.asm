@@ -16,7 +16,10 @@ lpb $4
   sub $4,1
   mov $5,$0
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  seq $0,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mul $0,2
+  mov $6,$0
+  dgs $6,2
+  sub $0,$6
   sub $0,$5
   mul $1,$0
   add $3,$1

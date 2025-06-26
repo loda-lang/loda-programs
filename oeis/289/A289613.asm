@@ -1,6 +1,7 @@
 ; A289613: Related to number of mesh patterns of length 2 that avoid the pattern 321.
 ; Submitted by Jamie Morken(l1)
 ; 1,1,1,1,8,31,116,407,1401,4825,16750
+; Formula: a(n) = ((2*max(-binomial(n-1,2)+truncate(binomial(2*n-2,n-1)/n)-2,0)+4)==16)+max(-binomial(n-1,2)+truncate(binomial(2*n-2,n-1)/n)-2,0)+1
 
 #offset 1
 

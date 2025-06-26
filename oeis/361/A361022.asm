@@ -1,6 +1,7 @@
 ; A361022: a(n) = 1 if d(n) divides d(n+1), otherwise 0, where d(n) is number of positive divisors of n.
 ; Submitted by Science United
 ; 1,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,1,0,0,1,1,1,0,1,0,1,1,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
+; Formula: a(n) = truncate(A000005(n)/gcd(A000005(n+1),A000005(n)))==1
 
 #offset 1
 

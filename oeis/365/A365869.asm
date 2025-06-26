@@ -13,7 +13,14 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,67029 ; Exponent of least prime factor in prime factorization of n, a(1)=0.
+  mov $5,$3
+  mov $6,$3
+  seq $6,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  max $6,2
+  dir $3,$6
+  div $5,$3
+  log $5,$6
+  mov $3,$5
   mul $3,338
   gcd $3,4
   add $3,1

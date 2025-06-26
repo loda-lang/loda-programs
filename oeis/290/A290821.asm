@@ -1,6 +1,7 @@
 ; A290821: Side length of largest equilateral triangle that can be made from n or fewer equilateral triangles with integer sides s_k, subject to gcd(s_1,s_2,...,s_n) = 1.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,2,3,4,5,7,9,12,16,21,28,39,49
+; Formula: a(n) = 2*((truncate(b(n-1)/16)-1)==1)+b(n-1), b(n) = b(n-2)+b(n-3), b(4) = 2, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1
 
 #offset 1
 

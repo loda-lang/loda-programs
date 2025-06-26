@@ -15,7 +15,13 @@ lpb $2
   sub $3,1
   mov $5,$3
   add $3,2
-  seq $3,53866 ; Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
+  mov $7,$3
+  dir $7,2
+  mov $6,$7
+  nrt $7,2
+  pow $7,2
+  equ $7,$6
+  mov $3,$7
   equ $3,0
   sub $0,$3
   add $1,1

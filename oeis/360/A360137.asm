@@ -1,11 +1,38 @@
 ; A360137: a(n) = V(A026430(n)), where V(1) = 1 and V(k) = A285953(k+1) for k >= 2.
 ; Submitted by Mumps
 ; 1,5,12,14,21,23,26,33,39,41,44,50,54,59,65,68,75,77,80,86,90,95,102,105,107,113,120,123,128,132,134,141,147,149,152,158,162,167,174,177,179,185,192,194,201,203,207,212,216,221,228,230,237,239,243,248
-; Formula: a(n) = A360393(A026430(n)+1)-1
 
 #offset 1
 
-seq $0,26430 ; a(n) is the sum of first n terms of A001285 (Thue-Morse sequence).
-add $0,1
-seq $0,360393 ; Complement of A360392.
-sub $0,1
+mov $2,$0
+div $2,2
+mul $2,2
+mov $1,$2
+dgs $2,2
+sub $1,$2
+mod $1,2
+mul $0,3
+add $0,$1
+div $0,2
+mov $3,0
+mov $4,$0
+pow $4,2
+lpb $4
+  mov $5,$3
+  add $5,1
+  mov $7,$5
+  div $7,2
+  mul $7,2
+  mov $6,$7
+  dgs $7,2
+  sub $6,$7
+  mod $6,2
+  mul $5,3
+  add $5,$6
+  div $5,2
+  add $5,1
+  add $0,1
+  add $3,1
+  add $4,$5
+  sub $4,$0
+lpe

@@ -12,7 +12,8 @@ lpb $0
   max $2,0
   mul $2,4
   add $2,3
-  seq $2,593 ; Sum of odd divisors of n.
+  dir $2,2
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   div $2,4
   add $4,2
   add $1,$2

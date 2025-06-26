@@ -9,6 +9,4 @@ min $0,19
 add $0,1
 seq $0,82690 ; Denominator of n*sum(k=1,(-1)^(k+1)/(n+k)).
 div $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

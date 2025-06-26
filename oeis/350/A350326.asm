@@ -12,8 +12,24 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  add $0,1
-  seq $0,339443 ; Pairwise listing of the partitions of k into two parts (s,t), with 0 < t <= s ordered by decreasing values of s and where k = 2,3,... .
+  add $0,2
+  mov $7,$0
+  mod $7,2
+  div $0,2
+  mov $5,$0
+  mul $0,4
+  sub $0,3
+  nrt $0,2
+  mov $6,$0
+  pow $6,2
+  div $6,4
+  add $6,1
+  sub $6,$7
+  sub $5,$6
+  sub $0,$5
+  sub $5,$0
+  mul $5,$7
+  add $0,$5
   mul $1,$0
   add $3,$1
 lpe

@@ -10,7 +10,15 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,34460 ; a(n) = usigma(n) - n, where usigma(n) = sum of unitary divisors of n (A034448).
+  sub $3,1
+  mov $5,0
+  sub $5,$3
+  add $3,1
+  seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  add $3,344
+  add $5,$3
+  mov $3,$5
+  sub $3,345
   max $3,1
   sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -1,4 +1,4 @@
-; A259214: Number of (n+1)X(n+1) 0..1 arrays with each 2X2 subblock having clockwise pattern 0000 0011 or 0101
+; A259214: Number of (n+1)X(n+1) 0..1 arrays with each 2X2 subblock having clockwise pattern 0000 0011 or 0101.
 ; Submitted by AXm 77
 ; 7,23,66,183,487,1278,3319,8591,22210,57455,148815,386046,1002991,2609559,6797794
 

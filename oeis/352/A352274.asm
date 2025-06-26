@@ -21,7 +21,9 @@ lpb $2
   mod $5,2
   mov $3,$1
   add $3,1
-  seq $3,137893 ; Fixed point of the morphism 0->100, 1->101, starting from a(1) = 1.
+  dir $3,3
+  mod $3,3
+  mod $3,2
   mul $3,$5
   sub $0,$3
   add $1,1

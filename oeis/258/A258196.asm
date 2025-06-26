@@ -8,7 +8,23 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,116916 ; Expansion of q^(-1/8) * (eta(q)^3 + 3 * eta(q^9)^3) in powers of q^3.
+  mul $2,3
+  add $2,1
+  mov $5,$2
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  add $6,1
+  bin $6,2
+  sub $2,2
+  sub $2,$6
+  bin $2,$5
+  mul $5,2
+  add $5,1
+  mul $5,$2
+  mov $2,$5
   mod $2,3
   dif $2,-2
   add $4,1

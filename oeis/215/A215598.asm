@@ -9,7 +9,25 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,133089 ; Expansion of f(x)^3 in powers of x where f() is a Ramanujan theta function.
+  mov $5,-1
+  pow $5,$2
+  add $2,1
+  mov $6,$2
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $2,2
+  sub $2,$7
+  bin $2,$6
+  mul $6,2
+  add $6,1
+  mul $6,$2
+  mov $2,$6
+  mul $2,$5
   sub $4,1
   add $1,$2
   mov $3,2

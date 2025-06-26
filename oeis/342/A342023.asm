@@ -1,6 +1,7 @@
 ; A342023: a(n) = 1 if there is a prime p such that p^p divides n, otherwise 0.
 ; Submitted by gemini8
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+; Formula: a(n) = binomial(truncate(A327936(n)/2),(truncate(A327936(n)/2)==0)+truncate(A327936(n)/2))
 
 #offset 1
 

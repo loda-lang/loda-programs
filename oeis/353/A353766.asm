@@ -1,6 +1,7 @@
 ; A353766: a(n) = 1 if A353749(n) divides A353749(sigma(n)), and 0 otherwise. Here A353749(k) = phi(k) * A064989(k), and A064989 shifts the prime factorization one step towards lower primes.
 ; Submitted by Science United
 ; 1,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+; Formula: a(n) = truncate((A064989(n+2)*A000010(n+2))/gcd(A064989(n+2)*A000010(n+2),A064989(A000203(n)+2)*A000010(A000203(n)+2)))==1
 
 #offset 1
 

@@ -15,7 +15,14 @@ lpb $3
   seq $0,40 ; The prime numbers.
   sub $0,2
   trn $0,2
-  seq $0,118822 ; Numerators of the convergents of the 2-adic continued fraction of zero given by A118821.
+  sub $0,1
+  mov $4,$0
+  div $4,4
+  mov $5,-1
+  pow $5,$4
+  gcd $0,4
+  sub $0,2
+  mul $0,$5
   add $2,$0
 lpe
 mov $0,$2

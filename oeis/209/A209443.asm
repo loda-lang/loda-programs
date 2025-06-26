@@ -12,7 +12,8 @@ pow $3,$1
 mul $3,2
 bin $3,2
 add $1,1
-seq $1,593 ; Sum of odd divisors of n.
+dir $1,2
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mul $1,$3
 mul $1,8
 sub $1,$2

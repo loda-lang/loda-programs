@@ -11,7 +11,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,129514 ; a(n) = gcd(Sum_{k|n} k, Sum_{1<k<n, k does not divide n} k) = gcd(sigma(n), n(n+1)/2 - sigma(n)) = gcd(sigma(n), n(n+1)/2), where sigma(n) = A000203(n).
+  mov $5,$3
+  pow $5,6
+  add $5,$3
+  div $5,2
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  gcd $5,$3
+  mov $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

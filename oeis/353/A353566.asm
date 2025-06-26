@@ -1,6 +1,7 @@
 ; A353566: a(n) = 1 if n is a multiple of its prime shadow A181819(n), and 0 otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = A181819(n)==gcd(A181819(n),n)
 
 #offset 1
 

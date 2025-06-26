@@ -13,7 +13,8 @@ lpb $2
   mov $3,$5
   add $3,$1
   add $3,1
-  seq $3,353670 ; a(n) = 1 if the odd part of n is a prime, otherwise 0.
+  dir $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0

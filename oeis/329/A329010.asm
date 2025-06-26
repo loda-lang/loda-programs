@@ -10,6 +10,4 @@ mov $1,9
 pow $1,$0
 sub $1,$2
 mov $0,$1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

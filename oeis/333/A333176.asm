@@ -15,8 +15,31 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,90971 ; Sierpiński's triangle, read by rows, starting from 1: T(n,k) = (T(n-1,k) + T(n-1,k-1)) mod 2.
-  seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  add $6,1
+  bin $6,2
+  mov $5,$0
+  sub $5,$6
+  sub $0,1
+  add $4,1
+  bin $4,$5
+  mod $4,2
+  mov $8,$0
+  mul $8,8
+  add $8,1
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  sub $0,$8
+  mov $7,$0
+  add $7,1
+  seq $7,40 ; The prime numbers.
+  mov $0,$7
   mul $0,$4
   add $1,$0
 lpe

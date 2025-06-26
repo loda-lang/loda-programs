@@ -15,7 +15,24 @@ lpb $2
   add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mul $3,2
-  seq $3,113126 ; A simple 4-diagonal matrix.
+  add $3,1
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  add $6,1
+  bin $6,2
+  sub $3,$6
+  sub $3,1
+  sub $4,$3
+  trn $4,3
+  mov $5,0
+  pow $5,$4
+  mul $3,$5
+  add $5,$3
+  mov $3,$5
   div $3,2
   add $3,1
   equ $3,5

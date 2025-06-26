@@ -7,11 +7,23 @@ sub $0,1
 lpb $0
   mov $2,-2
   bin $2,$0
+  mov $5,$0
   mov $1,$0
   add $1,1
-  seq $1,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
+  mov $4,$1
+  dir $4,2
+  seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $4,2
+  mov $3,$1
+  bxo $3,$0
+  sub $3,2
+  mul $3,$4
+  mov $6,0
+  sub $6,$3
+  mov $0,0
+  mov $1,$6
+  div $1,2
   sub $1,1
   sub $1,$2
-  mov $0,0
 lpe
 mov $0,$1

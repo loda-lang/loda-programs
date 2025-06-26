@@ -14,7 +14,20 @@ lpb $2
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $3,4
   add $3,1
-  seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+  mov $6,$3
+  mul $3,4
+  sub $3,3
+  nrt $3,2
+  mov $5,$3
+  pow $5,2
+  div $5,4
+  sub $6,$5
+  mov $5,$6
+  mov $6,$3
+  sub $6,$5
+  bin $6,2
+  add $6,$3
+  mov $3,$6
   sub $3,1
   seq $3,124237 ; Riordan array (1/(1-2x), x/((1-x)(1-2x))).
   equ $3,1

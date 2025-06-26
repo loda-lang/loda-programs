@@ -1,7 +1,7 @@
 ; A340374: a(n) = 1 if the odd part of n satisfies Korselt's criterion (is in A324050), 0 otherwise.
 ; Submitted by taurec
 ; 1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,0,0,1,1,0,1,1,0,1,1,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,1
-; Formula: a(n) = -10*truncate(gcd(A304438(n),A000142(n-1))/10)+gcd(A304438(n),A000142(n-1))
+; Formula: a(n) = -10*truncate(gcd(A304438(n),(n-1)!)/10)+gcd(A304438(n),(n-1)!)
 
 #offset 1
 

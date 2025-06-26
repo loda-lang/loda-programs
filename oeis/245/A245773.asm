@@ -15,16 +15,45 @@ lpb $2
   mov $4,$1
   mov $0,$3
   sub $0,$2
+  mov $8,$0
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
   mov $6,$0
-  seq $6,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
+  sub $6,$7
+  add $8,1
+  gcd $8,$6
+  div $8,$6
   sub $0,1
   mov $5,$0
-  pow $5,$6
+  pow $5,$8
+  mov $6,$8
+  mov $10,$5
+  mul $10,8
+  add $10,1
+  nrt $10,2
+  add $10,1
+  div $10,2
+  bin $10,2
+  sub $5,$10
   add $5,1
-  seq $5,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
-  mul $5,$6
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $9,$5
+  seq $9,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,$9
+  mul $5,$8
+  mov $11,$0
+  mul $11,8
+  add $11,1
+  nrt $11,2
+  add $11,1
+  div $11,2
+  bin $11,2
   add $0,1
+  sub $0,$11
   mul $0,$5
   add $1,$0
 lpe

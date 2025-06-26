@@ -12,7 +12,21 @@ lpb $2
   sub $2,18
   mov $3,$1
   add $3,1
-  seq $3,49777 ; Triangular array read by rows: T(m,n) = n + n+1 + ... + m = (m+n)(m-n+1)/2.
+  mov $6,$3
+  mov $7,$3
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  mov $5,$3
+  bin $3,2
+  sub $6,$3
+  add $6,$5
+  add $3,$5
+  sub $3,$7
+  add $3,1
+  mul $3,$6
+  div $3,2
   mod $3,3
   gcd $3,4
   add $3,1

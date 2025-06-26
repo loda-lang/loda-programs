@@ -10,7 +10,21 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,193974 ; Mirror of the triangle A193973.
+  add $3,1
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  bin $5,2
+  sub $3,$5
+  mul $4,2
+  add $4,2
+  sub $4,$3
+  add $3,3
+  mul $3,$4
+  div $3,2
   gcd $3,$0
   add $1,1
   add $2,$3

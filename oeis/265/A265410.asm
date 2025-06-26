@@ -1,6 +1,7 @@
 ; A265410: a(n) = one-based index to the nearest horizontally or vertically adjacent inner neighbor in square-grid spirals, and to the nearest diagonally adjacent inner neighbor when n is one of the corner cases A033638.
 ; Submitted by mmonnin
 ; 0,1,1,1,1,1,1,1,2,2,2,3,3,3,4,5,5,5,6,7,7,7,8,9,10,10,10,11,12,13,13,13,14,15,16,17,17,17,18,19,20,21,21,21,22,23,24,25,26,26,26,27,28,29,30,31,31,31,32,33,34,35,36,37,37,37,38,39,40,41,42,43,43,43,44,45,46,47,48,49
+; Formula: a(n) = -(0==(n-1))+A265409(max(n-2,0)+1)+1
 
 #offset 1
 

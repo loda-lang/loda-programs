@@ -13,8 +13,18 @@ lpb $2
   mov $3,$1
   mul $3,2
   max $3,1
-  add $3,1
-  seq $3,173919 ; Numbers that are prime or one less than a prime.
+  sub $3,1
+  mov $6,$3
+  div $3,2
+  add $3,2
+  mov $7,$3
+  seq $7,40 ; The prime numbers.
+  sub $3,4
+  sub $7,$3
+  sub $7,$3
+  add $6,$7
+  mov $3,$6
+  sub $3,5
   dgs $3,10
   mod $3,2
   mov $5,0

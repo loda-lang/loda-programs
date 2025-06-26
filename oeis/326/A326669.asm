@@ -13,7 +13,9 @@ lpb $2
   mov $5,$3
   seq $5,73642 ; Replace 2^k in the binary representation of n with k (i.e., if n = 2^b + 2^c + 2^d + ... then a(n) = b + c + d + ...).
   mul $3,2
-  seq $3,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+  add $3,1
+  dgs $3,2
+  sub $3,1
   gcd $5,$3
   div $3,$5
   equ $3,1

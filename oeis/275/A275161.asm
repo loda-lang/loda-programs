@@ -1,6 +1,7 @@
 ; A275161: Number of sides of a polygon formed by tiling n squares in a spiral.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 4,4,6,4,6,4,6,6,4,6,6,4,6,6,6,4,6,6,6,4,6,6,6,6,4,6,6,6,6,4,6,6,6,6,6,4,6,6,6,6,6,4,6,6,6,6,6,6,4,6,6,6,6,6,6,4,6,6,6,6,6,6,6,4,6,6,6,6,6,6,6,4,6,6,6,6,6,6,6,6
+; Formula: a(n) = (8*((-truncate(n/sqrtint(n+1))*sqrtint(n+1)+n)==0)+16)%10
 
 #offset 1
 

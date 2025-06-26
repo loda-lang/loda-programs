@@ -14,7 +14,16 @@ lpb $2
   add $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   mov $6,$3
-  seq $6,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  sub $6,1
+  mov $7,-1
+  pow $7,$6
+  mul $7,2
+  bin $7,2
+  mov $8,$6
+  add $8,1
+  seq $8,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $8,$7
+  mov $6,$8
   gcd $6,$3
   div $3,$6
   mov $5,1

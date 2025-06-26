@@ -4,7 +4,17 @@
 
 #offset 1
 
-seq $0,10785 ; Repdigit numbers, or numbers whose digits are all equal.
+mov $2,$0
+sub $2,1
+div $2,9
+mov $3,$2
+mul $3,9
+sub $0,$3
+add $2,1
+mov $3,10
+pow $3,$2
+div $3,9
+mul $0,$3
 lpb $0
   add $1,$0
   div $0,10

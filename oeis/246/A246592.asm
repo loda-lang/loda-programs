@@ -5,7 +5,13 @@
 mov $1,$0
 mul $0,2
 add $0,1
-seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
+mov $4,$0
+log $4,2
+add $4,1
+mov $5,$0
+mov $0,2
+pow $0,$4
+sub $0,$5
 mov $3,$0
 lpb $0
   div $0,2

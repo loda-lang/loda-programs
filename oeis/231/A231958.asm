@@ -1,4 +1,4 @@
-; A231958: Numbers n dividing the Lucas sequence u(n) defined by u(i) = 2*u(i-1) - 5*u(i-2) with initial conditions u(0)=0, u(1)=1
+; A231958: Numbers n dividing the Lucas sequence u(n) defined by u(i) = 2*u(i-1) - 5*u(i-2) with initial conditions u(0)=0, u(1)=1.
 ; Submitted by Science United
 ; 1,2,4,8,12,16,24,32,36,48,56,64,72,96,108,112,128,132,144,156,168,192,216,224,256,264,272,288,312,324,336,384,392,396,432,448,468,496,504,512,528,544,552,576,624,648,672,768,784,792,816,864,896,936,972
 

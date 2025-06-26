@@ -1,7 +1,25 @@
 ; A266612: Binary representation of the middle column of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Christian Krause
 ; 1,10,101,1010,10100,101001,1010010,10100101,101001010,1010010101,10100101010,101001010101,1010010101010,10100101010101,101001010101010,1010010101010101,10100101010101010,101001010101010101,1010010101010101010,10100101010101010101,101001010101010101010,1010010101010101010101,10100101010101010101010,101001010101010101010101,1010010101010101010101010,10100101010101010101010101,101001010101010101010101010,1010010101010101010101010101,10100101010101010101010101010,101001010101010101010101010101
-; Formula: a(n) = A007088(A266613(n))
 
-seq $0,266613 ; Decimal representation of the middle column of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,2
+equ $2,$0
+mov $1,2
+pow $1,$0
+mul $1,31
+sub $1,8
+div $1,24
+mov $0,$1
+add $0,$2
+mov $3,0
+mov $4,1
+max $0,1
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

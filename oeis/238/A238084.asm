@@ -1,6 +1,7 @@
 ; A238084: The dimensions in which extremal self-dual lattices exist.
 ; Submitted by NeoGen
 ; 1,2,3,4,5,6,7,8,12,14,15,23,24
+; Formula: a(n) = ((-A265409(max(n-2,0)+1))==0)+A265409(max(n-2,0)+1)*floor(n/2)+n-1
 
 #offset 1
 

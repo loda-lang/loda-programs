@@ -8,8 +8,25 @@ lpb $3
   sub $3,1
   max $3,1
   mov $0,$2
-  seq $0,97207 ; Triangle read by rows: T(n,k) = binomial(n,k) + 2*binomial(n,k-1).
-  add $1,$0
+  add $0,1
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $4,$5
+  add $4,1
+  bin $4,2
+  sub $0,$4
+  sub $0,1
+  mov $4,$5
+  bin $4,$0
+  sub $0,1
+  bin $5,$0
+  mul $5,2
+  add $5,$4
+  mov $0,$5
+  add $1,$5
   add $2,1
 lpe
 mov $0,$1

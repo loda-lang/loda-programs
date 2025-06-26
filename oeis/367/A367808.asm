@@ -13,11 +13,30 @@ lpb $5
   sub $5,1
   mov $3,$1
   sub $3,$5
-  sub $3,1
   mov $2,$3
-  seq $2,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  sub $3,1
+  mov $6,$2
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  add $6,1
+  pow $6,2
+  sub $6,$2
+  mov $2,$6
   seq $2,106436 ; Difference array of Bell numbers A000110 read by antidiagonals.
-  seq $3,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+  mov $9,$3
+  mul $9,8
+  add $9,1
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  mov $7,$3
+  sub $7,$9
+  mov $8,2
+  pow $8,$7
+  mov $3,$8
   mul $3,$2
   add $4,$3
 lpe

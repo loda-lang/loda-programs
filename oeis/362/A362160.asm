@@ -4,11 +4,25 @@
 
 mov $1,$0
 add $1,1
-seq $1,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+mov $3,$1
+log $3,2
+mov $4,2
+pow $4,$3
+sub $4,1
+bxo $1,$4
 mov $2,$1
 div $1,2
 bxo $2,$1
+mov $5,0
 mov $1,$2
-seq $1,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-div $1,2
+lpb $1
+  mov $6,$1
+  mod $6,2
+  div $1,2
+  add $5,$6
+  mul $5,2
+lpe
+mov $1,$5
+div $1,4
+div $5,2
 mov $0,$1

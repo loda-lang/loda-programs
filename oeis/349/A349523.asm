@@ -1,7 +1,7 @@
 ; A349523: a(n) = Sum_{k=1..n} A339399(k).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,5,6,9,11,13,14,18,20,23,24,29,31,35,38,41,42,48,50,55,58,62,63,70,72,78,81,86,90,94,95,103,105,112,115,121,125,130,131,140,142,150,153,160,164,170,175,180,181,191,193,202,205,213,217,224,229,235,236,247,249
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A339399(n+1), b(0) = 1
+; Formula: a(n) = b(n-1), b(n) = (-2*((n+2)%2)+1)*(-((n+2)%2)-floor((sqrtint(4*floor((n+2)/2)-3)^2)/4)+floor((n+2)/2))+sqrtint(4*floor((n+2)/2)-3)*((n+2)%2)+b(n-1), b(0) = 1
 
 #offset 1
 
@@ -9,8 +9,24 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
-  add $2,1
-  seq $2,339399 ; Pairwise listing of the partitions of k into two parts (s,t), with 0 < s <= t ordered by increasing values of s and where k = 2,3,... .
+  add $2,2
+  mov $5,$2
+  mod $5,2
+  div $2,2
+  mov $3,$2
+  mul $2,4
+  sub $2,3
+  nrt $2,2
+  mov $4,$2
+  pow $4,2
+  div $4,4
+  add $4,$5
+  mul $2,$5
+  mul $5,-2
+  add $5,1
+  sub $3,$4
+  mul $3,$5
+  add $2,$3
   sub $0,1
   add $1,$2
 lpe

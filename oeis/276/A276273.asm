@@ -1,6 +1,7 @@
 ; A276273: Replacing every "mixed pair" of integers (as defined in the comments) with the smaller integer of the pair rebuilds the sequence.
 ; Submitted by Chad To
 ; 1,2,2,3,3,2,4,3,3,4,2,3,5,4,4,3,3,4,4,5,3,2,4,3,5,6,4,5,5,4,4,3,3,4,4,5,5,4,6,5,3,4,2,3,5,4,4,3,5,6,6,7,5,4,6,5,5,6,4,5,5,4,4,3,3,4,4,5,5,4,6,5,5,6,4,5,7,6,6,5
+; Formula: a(n) = sumdigits(bitxor(n-1,floor((n-1)/4)),2)*sign(bitxor(n-1,floor((n-1)/4)))+1
 
 #offset 1
 

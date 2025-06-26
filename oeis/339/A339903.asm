@@ -7,6 +7,4 @@ sub $0,1
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 add $0,1
 seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

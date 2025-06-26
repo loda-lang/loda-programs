@@ -6,9 +6,45 @@
 
 mov $1,$0
 dif $1,2
-seq $1,204931 ; Least k such that n divides A204930(k), the k-th difference of two distinct factorials.
-add $1,1
-seq $1,131818 ; A130296 + A002260 - A000012. Triangle read by rows: row n consists of n, 2, 3, 4, ..., n.
 sub $1,1
+mov $3,0
+mov $4,$1
+add $1,1
+add $4,4
+pow $4,5
+lpb $4
+  mov $5,$3
+  add $5,1
+  mov $6,$5
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $5,$7
+  sub $5,1
+  mov $7,2
+  pow $7,$5
+  mov $5,2
+  pow $5,$6
+  mul $5,2
+  sub $5,$7
+  seq $5,276091 ; Numbers obtained by reinterpreting base-2 representation of n in A001563-base (A276326): a(n) = Sum_{k>=0} A030308(n,k)*A001563(k+1).
+  gcd $5,$1
+  add $3,1
+  add $4,$5
+  sub $4,$1
+lpe
+mov $1,$3
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+sub $1,$2
 sub $0,1
 mov $0,$1

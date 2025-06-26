@@ -1,6 +1,7 @@
 ; A213007: Decimal expansion of Brun's quadruple primes constant.
 ; Submitted by BrandyNOW
 ; 8,7,0,5,8,8,3,8
+; Formula: a(n) = -10*truncate((binomial(n*(sumdigits(n,2)+1)-1,2)+7)/10)+binomial(n*(sumdigits(n,2)+1)-1,2)+7
 
 mov $1,$0
 dgs $1,2

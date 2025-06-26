@@ -8,7 +8,5 @@ mov $1,$0
 add $0,2
 mul $1,$0
 add $1,5
-lpb $1
-  dif $1,2
-lpe
+dir $1,2
 mov $0,$1

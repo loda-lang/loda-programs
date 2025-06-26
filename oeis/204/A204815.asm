@@ -4,10 +4,8 @@
 pow $0,$0
 lpb $0
   mov $1,$0
-  mov $0,0
-  lpb $1
-    dif $1,5
-  lpe
+  dir $1,5
   mod $1,5
+  mov $0,0
 lpe
 mov $0,$1

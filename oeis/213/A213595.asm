@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,48784 ; a(n) = tau(binomial(2*n,n)), where tau = number of divisors (A000005).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

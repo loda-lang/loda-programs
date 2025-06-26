@@ -1,6 +1,7 @@
 ; A359472: a(n) = 1 if the product of exponents in the prime factorization of n is 3, otherwise 0.
 ; Submitted by Fardringle
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = A005361(n)==3
 
 #offset 1
 

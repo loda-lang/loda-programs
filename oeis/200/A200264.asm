@@ -12,10 +12,20 @@ lpb $1
   sub $0,$1
   mul $0,2
   mov $4,$0
-  add $4,1
-  seq $4,93515 ; Numbers k such that either k or k-1 is a prime.
-  mov $0,$4
-  sub $0,1
+  sub $4,1
+  mov $5,$4
+  div $4,2
+  add $4,2
+  mov $6,$4
+  seq $6,40 ; The prime numbers.
+  sub $4,4
+  sub $6,$4
+  sub $6,$4
+  add $5,$6
+  mov $4,$5
+  sub $4,4
+  mov $0,$5
+  sub $0,5
   dgs $0,10
   mod $0,2
   add $3,$0

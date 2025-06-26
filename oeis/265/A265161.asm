@@ -1,12 +1,41 @@
 ; A265161: Array A read by upward antidiagonals in which the entry in row n and column k is defined by A(n,k) = (3/2)*(3^k - 1) + A265159(n,k), n,k >= 1.
 ; Submitted by Christian Krause
 ; 8,35,26,89,107,80,116,269,323,242,251,350,809,971,728,278,755,1052,2429,2915,2186,332,836,2267,3158,7289,8747,6560,359,998,2510,6803,9476,21869,26243,19682,737,1079,2996,7532,20411,28430,65609,78731,59048
-; Formula: a(n) = 9*A005836(A135764(n)+1)-1
 
 #offset 1
 
-seq $0,135764 ; Distribute the natural numbers in columns based on the occurrence of "2" in each prime factorization; square array A(row,col) = 2^(row-1) * ((2*col)-1), read by descending antidiagonals.
-add $0,1
-seq $0,5836 ; Numbers whose base-3 representation contains no 2.
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+mov $5,0
+sub $0,$3
+sub $0,1
+sub $1,$0
+mul $1,2
+add $1,1
+mov $2,2
+pow $2,$0
+mul $2,$1
+mov $4,$2
+mov $7,1
+mov $0,$2
+div $0,4
+lpb $0
+  mov $6,$0
+  mul $6,$7
+  div $0,2
+  add $5,$6
+  mul $7,3
+lpe
+mov $0,$5
+mul $0,2
+add $0,$2
+mul $0,3
+div $0,2
 mul $0,9
 sub $0,1

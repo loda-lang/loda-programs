@@ -19,7 +19,14 @@ lpb $4
   mul $0,$5
   seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $0,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
-  seq $0,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
+  dir $0,2
+  add $0,1
+  mov $6,$0
+  add $6,$0
+  bin $6,$0
+  mov $0,$6
+  mod $0,4
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

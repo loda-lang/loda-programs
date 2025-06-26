@@ -9,7 +9,14 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,369643 ; a(n) = 1 if n' / gcd(n,n') is a multiple of 3, otherwise 0. Here n' stands for the arithmetic derivative of n, A003415.
+  mov $5,$3
+  seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  gcd $3,$5
+  div $5,$3
+  mov $4,3
+  gcd $4,$5
+  mov $3,$4
+  div $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

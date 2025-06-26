@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,270413 ; Numbers n such that sigma(n-1) is a prime.
+seq $0,270413 ; Numbers m such that sigma(m-1) is a prime.
 sub $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 add $0,1

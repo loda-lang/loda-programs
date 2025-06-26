@@ -13,4 +13,4 @@ seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 add $1,$0
 mov $0,$1
 div $0,2
-seq $0,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
+seq $0,75255 ; a(n) = n - (sum of prime factors of n (with repetition)).

@@ -12,7 +12,21 @@ lpb $2
   sub $2,7
   mov $3,$1
   add $3,1
-  seq $3,127094 ; Triangle, reversal of A127093.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  sub $3,1
+  add $6,1
+  sub $6,$3
+  gcd $3,$6
+  div $3,$6
+  mul $3,$6
   mov $5,$3
   div $3,2
   neq $3,0

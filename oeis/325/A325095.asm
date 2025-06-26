@@ -9,8 +9,18 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
-  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  mul $0,4
+  mov $4,$0
+  max $4,1
+  log $4,2
+  add $4,1
+  mov $5,$0
+  mov $0,2
+  pow $0,$4
+  sub $0,$5
+  sub $0,2
+  div $0,2
+  dgs $0,2
   seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
   add $2,$0
 lpe

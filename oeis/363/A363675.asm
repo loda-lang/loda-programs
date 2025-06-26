@@ -10,7 +10,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,3
-  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  add $3,1
+  dir $3,2
+  div $3,2
   seq $3,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
   min $3,1
   add $5,1

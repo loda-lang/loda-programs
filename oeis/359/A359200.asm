@@ -1,16 +1,46 @@
 ; A359200: Triangle read by rows: T(n, k) = A358125(n,k)*binomial(n-1, k), 0 <= k <= n-1.
 ; Submitted by Science United
 ; 0,1,1,3,8,3,7,30,30,7,15,88,144,88,15,31,230,520,520,230,31,63,564,1620,2240,1620,564,63,127,1330,4620,8120,8120,4620,1330,127,255,3056,12432,26432,33600,26432,12432,3056,255,511,6894,32112,79968,122976,122976,79968,32112,6894,511
-; Formula: a(n) = A007318(n-1)*truncate(A129527(A130328(n-1))/2)
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+mov $3,$0
+mov $7,0
+sub $0,1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $4,$1
+add $4,1
+bin $4,2
+sub $3,$4
+sub $3,1
+bin $1,$3
 mov $2,$0
-seq $2,130328 ; Triangle of differences between powers of 2, read by rows.
-seq $2,129527 ; a(2n) = a(n) + 2n, a(2n+1) = 2n + 1.
+add $2,1
+mov $5,$2
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $2,$6
+sub $2,1
+mov $6,2
+pow $6,$2
+mov $2,2
+pow $2,$5
+mul $2,2
+sub $2,$6
+lpb $2
+  add $7,$2
+  dif $2,2
+lpe
+add $2,$7
 mov $0,$2
 div $0,2
 mul $0,$1

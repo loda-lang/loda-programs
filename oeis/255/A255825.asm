@@ -7,9 +7,7 @@ sub $0,1
 lpb $0
   add $0,1
   mul $0,4
-  lpb $0
-    dif $0,5
-  lpe
+  dir $0,5
   div $0,5
 lpe
 add $0,1

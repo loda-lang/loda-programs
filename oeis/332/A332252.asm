@@ -7,7 +7,7 @@ mul $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $3,2
   add $3,1
   div $3,2
   gcd $3,2

@@ -1,10 +1,64 @@
 ; A314770: Coordination sequence Gal.6.195.2 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 ; Submitted by Penguin
 ; 1,5,9,13,19,24,29,34,39,45,49,53,58,63,67,71,77,82,87,92,97,103,107,111,116,121,125,129,135,140,145,150,155,161,165,169,174,179,183,187,193,198,203,208,213,219,223,227,232,237
-; Formula: a(n) = truncate((-2*A314208(n)*truncate((7*n-1)/A314208(n))+20*n+truncate((-A314208(n)*truncate((7*n-1)/A314208(n))+10*n)/14)+1)/2)
 
 mov $2,$0
-seq $2,314208 ; Coordination sequence Gal.6.619.6 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+mov $10,0
+mov $13,0
+mov $4,$0
+mov $6,$0
+mov $8,$0
+mov $14,$0
+mul $14,4
+mov $15,$0
+mov $11,$0
+lpb $11
+  sub $11,2
+  add $13,7
+  trn $11,$13
+  add $11,$13
+  sub $11,4
+  sub $13,1
+lpe
+mul $15,5
+add $11,$15
+max $11,2
+add $11,1
+div $11,3
+add $11,$14
+sub $11,$0
+mov $12,$0
+mul $12,3
+mul $8,6
+sub $8,1
+mod $8,$11
+add $8,1
+add $8,$12
+gcd $10,$8
+add $10,2
+div $10,5
+add $8,$10
+mov $9,$0
+mul $9,3
+mul $2,7
+sub $2,1
+mod $2,$8
+add $2,$9
+add $2,1
+mov $5,5
+sub $5,$2
+sub $2,$5
+div $2,3
+mov $5,$2
+mul $5,2
+mov $7,$0
+add $7,1
+mul $7,2
+add $5,$7
+mov $2,$5
+div $2,2
+add $2,1
+add $2,$0
 mov $3,$0
 mul $3,3
 mul $0,7

@@ -1,6 +1,7 @@
 ; A341625: a(n) = 1 if the arithmetic derivative of n is less than n, otherwise 0.
 ; Submitted by Stony666
 ; 0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1
+; Formula: a(n) = max(-A003415(n)+n-1,0)==(-A003415(n)+n-1)
 
 mov $2,$0
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

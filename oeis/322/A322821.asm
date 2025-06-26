@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

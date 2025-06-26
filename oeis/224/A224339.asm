@@ -1,12 +1,24 @@
 ; A224339: Absolute difference between sum of odd divisors of n^2 and sum of even divisors of n^2.
 ; Submitted by Simon Strandgaard
 ; 1,5,13,29,31,65,57,125,121,155,133,377,183,285,403,509,307,605,381,899,741,665,553,1625,781,915,1093,1653,871,2015,993,2045,1729,1535,1767,3509,1407,1905,2379,3875,1723,3705,1893,3857,3751,2765,2257,6617,2801,3905,3991,5307,2863,5465,4123,7125,4953,4355,3541,11687,3783,4965,6897,8189,5673,8645,4557,8903,7189,8835,5113,15125,5403,7035,10153,11049,7581,11895,6321,15779
-; Formula: a(n) = gcd(A002129(n^2),A002129(n^2))
 
 #offset 1
 
 mov $1,$0
 pow $1,2
-seq $1,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
+mov $4,$1
+sub $4,1
+mov $3,$1
+dir $3,2
+seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $3,2
+mov $2,$1
+bxo $2,$4
+sub $2,2
+mul $2,$3
+mov $5,0
+sub $5,$2
+mov $1,$5
+div $1,2
 gcd $1,$1
 mov $0,$1

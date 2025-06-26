@@ -1,12 +1,56 @@
 ; A290448: Triangle read by rows: T(n,k) = (Eulerian(n+1,k)-binomial(n,k))/2, for 0 <= k <= n.
 ; Submitted by Science United
 ; 0,0,0,0,1,0,0,4,4,0,0,11,30,11,0,0,26,146,146,26,0,0,57,588,1198,588,57,0,0,120,2136,7792,7792,2136,120,0,0,247,7290,44089,78060,44089,7290,247,0,0,502,23902,227554,655114,655114,227554,23902,502,0
-; Formula: a(n) = truncate((-A007318(n)+truncate(A176200(n)/2)+1)/2)
 
+mov $6,0
+mov $8,0
+mov $9,0
 mov $1,$0
-seq $1,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+add $1,1
+mov $4,$1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $5,$1
+mov $1,$4
+add $1,1
+sub $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$1
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $1,$9
+mul $1,2
+sub $1,1
 div $1,2
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+add $0,1
+mov $2,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $3,$0
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+bin $0,$2
 sub $0,1
 sub $1,$0
 mov $0,$1

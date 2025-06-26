@@ -1,9 +1,10 @@
 ; A384197: The Barret reducer reciprocal mod n.
 ; Submitted by Science United
 ; 4,8,5,16,12,10,9,32,28,25,23,21,19,18,17,64,60,56,53,51,48,46,44,42,40,39,37,36,35,34,33,128,124,120,117,113,110,107,105,102,99,97,95,93,91,89,87,85,83,81,80,78,77,75,74,73,71,70,69,68,67,66,65,256
-; Formula: a(n) = floor(truncate(4^(logint(n+1,2)+1))/(n+1))
+; Formula: a(n) = floor(truncate(4^(logint(n,2)+1))/n)
 
-add $0,1
+#offset 1
+
 mov $1,$0
 log $1,2
 add $1,1

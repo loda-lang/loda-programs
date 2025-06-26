@@ -1,7 +1,7 @@
 ; A326483: a(n) = 2^n*E2_{n}(1/2) with E2_{n} the polynomials defined in A326480.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,-2,-4,40,80,-1952,-3904,177280,354560,-25866752,-51733504,5535262720,11070525440,-1633165156352,-3266330312704,635421069967360,1270842139934720,-315212388819402752,-630424777638805504,194181169538675507200
-; Formula: a(n) = truncate((A108520(2*n+2)*truncate(A002436(floor((n+1)/2))/(4^floor((n+1)/2))))/2)
+; Formula: a(n) = truncate((A108520(2*n+2)*truncate((A008280((truncate((sqrtint(16*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)+8)-1)/2)/2)+8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2))/2),2)+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1,2)-8*truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+8)-1)/2)+1)^2-(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2))/2),2)-truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)+8)-1)/2)/2)+binomial(2*floor((n+1)/2),2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*floor((n+1)/2),2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*floor((n+1)/2),2)+8)/2)-8*binomial(2*floor((n+1)/2),2)+8)-1)/2)-1)*2^(2*floor((n+1)/2)))/(4^floor((n+1)/2))))/2)
 
 add $0,1
 mov $1,$0
@@ -10,7 +10,62 @@ mov $2,4
 pow $2,$1
 mul $0,2
 seq $0,108520 ; Expansion of 1/(1+2*x+2*x^2).
-seq $1,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+mul $1,2
+mov $3,2
+pow $3,$1
+bin $1,2
+add $1,1
+mov $6,$1
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+add $6,1
+pow $6,2
+sub $6,$1
+mul $1,8
+nrt $1,2
+div $1,2
+mov $4,$6
+add $4,$1
+mov $5,$4
+add $5,2
+mov $7,$5
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $8,$7
+add $8,1
+bin $8,2
+mov $9,$7
+mod $9,2
+sub $5,1
+sub $5,$8
+sub $5,$9
+add $5,$4
+mov $1,$4
+add $1,1
+mov $10,$1
+mul $10,8
+nrt $10,2
+div $10,2
+bin $10,2
+sub $1,$10
+sub $5,$1
+mov $1,$5
+add $1,2
+mov $11,$1
+mul $11,8
+nrt $11,2
+sub $11,1
+div $11,2
+add $11,1
+pow $11,2
+sub $11,$1
+mov $1,$11
+seq $1,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+mul $1,$3
 div $1,$2
 mul $1,$0
 mov $0,$1

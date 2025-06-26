@@ -1,4 +1,4 @@
-; A383990: Series expansion of the exponential generating function exp(dias(x))-1 where dias(x) = (1 - sqrt(1+4*x)) / (2*x) + 1.
+; A383990: Series expansion of the exponential generating function exp(-dend(-x))-1 where dend(x) = (1 - sqrt(1+4*x)) / (2*x) + 1 (given by A000108).
 ; Submitted by Ralfy
 ; 0,1,-3,19,-191,2661,-47579,1040047,-26888511,802727209,-27178685459,1029077910411,-43086906080063,1976633329627789,-98597207392040811,5313105048925173991,-307587436319162110079,19038773384213189214417,-1254686724727364725716131
 

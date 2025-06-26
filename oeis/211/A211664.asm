@@ -1,4 +1,4 @@
-; A211664: Number of iterations (...f_4(f_3(f_2(n))))...) such that the result is < 1, where f_j(x):=log_j(x).
+; A211664: Number of iterations (...(log_4(log_3(log_2(n))))...) such that the result is < 1.
 ; Submitted by p3d-cluster
 ; 1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 ; Formula: a(n) = floor((4*n+4)/(n+4))

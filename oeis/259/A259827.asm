@@ -11,10 +11,16 @@ lpb $0
   add $2,1
   dir $2,2
   div $2,2
-  seq $2,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
+  mov $6,-1
+  pow $6,$2
+  mul $2,2
+  add $2,1
+  seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
+  mul $6,$2
+  mov $2,$6
   mod $5,2
   add $5,1
-  add $1,$2
+  add $1,$6
   mov $3,1
   add $3,$4
   mul $3,$5

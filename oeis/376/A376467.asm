@@ -1,9 +1,51 @@
 ; A376467: Triangular array read by rows: A063007 * A007318.
 ; Submitted by nkbr
 ; 1,3,2,13,18,6,63,132,90,20,321,900,930,420,70,1683,5910,8190,5600,1890,252,8989,37926,65940,60480,30870,8316,924,48639,239624,501228,577080,395010,160776,36036,3432,265729,1497096,3660300,5072760,4358970,2378376,804804,154440,12870,1462563,9274410,25951860,42060480,43513470,29801772,13513500,3912480,656370,48620
-; Formula: a(n) = A118384(n)*A046899(n)
 
 mov $1,$0
-seq $1,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
-seq $0,118384 ; Gaussian column reduction of Hankel matrix for central Delannoy numbers.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+bin $3,2
+mov $7,0
+sub $1,1
+sub $1,$3
+bin $1,$2
+mov $4,3
+mov $6,6
+mov $8,3
+add $0,1
+mov $5,$0
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $9,$5
+add $9,1
+bin $9,2
+sub $0,$9
+sub $0,1
+mul $0,-1
+add $0,$5
+lpb $0
+  sub $0,1
+  add $6,$8
+  add $7,1
+  mov $4,$6
+  mul $4,2
+  mul $4,$5
+  div $4,$7
+  sub $6,$8
+  mul $6,-2
+  add $6,$4
+  div $4,2
+  mul $8,-1
+  add $8,$4
+lpe
+mov $0,$4
+div $0,3
 mul $0,$1

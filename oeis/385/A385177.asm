@@ -1,30 +1,25 @@
 ; A385177: a(n) = Sum_{k=1..n} ceiling(k/phi), where phi is the golden ratio (A001622).
-; Submitted by Technik007[CZ]
+; Submitted by mmonnin
 ; 1,3,5,8,12,16,21,26,32,39,46,54,63,72,82,92,103,115,127,140,153,167,182,197,213,230,247,265,283,302,322,342,363,385,407,430,453,477,502,527,553,579,606,634,662,691,721,751,782,813,845,878,911,945,979,1014,1050,1086,1123,1161,1199,1238,1277,1317,1358,1399,1441,1484,1527,1571,1615,1660,1706,1752,1799,1846,1894,1943,1992,2042
-; Formula: a(n) = b(n-1)+1, b(n) = -n+b(n-1)+truncate((-truncate((sqrtint(n^2-n)+n)/2)+sqrtint(5*(truncate((sqrtint(n^2-n)+n)/2)+2)^2)-2)/2)+truncate((sqrtint(n^2-n)+n)/2)+2, b(1) = 2, b(0) = 0
+; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+truncate((-n+sqrtint((n+1)*(5*n+5))-1)/2)+1, b(0) = 0
 
 #offset 1
 
 sub $0,1
 lpb $0
+  mov $2,$0
+  add $2,1
   sub $0,1
-  add $4,1
-  mov $3,$4
-  pow $3,2
-  sub $3,$4
-  nrt $3,2
-  add $3,$4
-  div $3,2
-  add $3,2
-  mov $2,$3
-  pow $3,2
-  mul $3,5
-  nrt $3,2
-  sub $3,$2
-  div $3,2
-  sub $3,$4
-  add $1,$3
+  mov $1,$2
+  mul $1,4
   add $1,$2
+  mul $1,$2
+  nrt $1,2
+  sub $1,$2
+  div $1,2
+  mov $2,$1
+  add $2,1
+  add $3,$2
 lpe
-mov $0,$1
+mov $0,$3
 add $0,1

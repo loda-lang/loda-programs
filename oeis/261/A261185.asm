@@ -7,9 +7,7 @@
 mul $0,2
 sub $0,1
 pow $0,3
-lpb $0
-  dif $0,7
-lpe
+dir $0,7
 lpb $0
   mod $0,7
 lpe

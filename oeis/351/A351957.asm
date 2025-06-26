@@ -1,6 +1,7 @@
 ; A351957: a(n) = 1 if the primorial inflation of k is a sum of distinct primorial numbers, otherwise 0.
 ; Submitted by pututu
 ; 1,1,1,0,1,0,1,1,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,1,1,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
+; Formula: a(n) = (gcd(A276086(n*A181811(n)),A003415(A276086(n*A181811(n))))-1)==0
 
 #offset 1
 

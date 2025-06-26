@@ -15,7 +15,16 @@ lpb $4
   bin $1,$0
   mov $5,$0
   add $5,1
-  seq $5,64866 ; Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
+  mov $6,$5
+  mul $6,24
+  nrt $6,3
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  mul $7,-2
+  bin $7,3
+  div $7,-4
+  sub $5,$7
   mov $0,$5
   equ $0,1
   mul $1,$0

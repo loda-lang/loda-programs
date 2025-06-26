@@ -10,10 +10,34 @@ add $5,1
 pow $5,2
 lpb $5
   mov $3,$4
-  seq $3,55235 ; Sums of two powers of 3.
+  add $3,1
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  sub $3,1
+  mov $7,3
+  pow $7,$3
+  mov $3,3
+  pow $3,$6
+  add $3,$7
   add $4,1
   mov $2,$3
-  seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).
+  mul $3,3
+  add $3,2
+  div $3,4
+  dif $3,2
+  mul $3,2
+  add $3,1
+  mod $3,3
+  mul $3,9
+  add $3,2
+  mod $3,10
   neq $3,0
   sub $0,$3
   mov $1,$0

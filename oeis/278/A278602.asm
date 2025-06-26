@@ -14,7 +14,15 @@ lpb $1
   sub $0,$1
   mov $3,$0
   seq $3,272171 ; Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
-  seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
+  sub $0,1
+  mov $5,$0
+  mul $5,8
+  add $5,1
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  sub $0,$5
   seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
   mul $0,$3
   add $2,$0

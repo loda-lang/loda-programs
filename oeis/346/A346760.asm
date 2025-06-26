@@ -14,7 +14,16 @@ lpb $2
   mov $5,$0
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$0
-  seq $4,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  sub $4,1
+  mov $6,-1
+  pow $6,$4
+  mul $6,2
+  bin $6,2
+  mov $7,$4
+  add $7,1
+  seq $7,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $7,$6
+  mov $4,$7
   trn $4,3
   mul $4,$5
   div $4,2

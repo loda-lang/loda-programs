@@ -13,8 +13,6 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mul $0,7
-  mov $5,$0
-  add $5,6
   mov $4,$0
   add $4,7
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

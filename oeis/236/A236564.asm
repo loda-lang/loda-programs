@@ -11,8 +11,18 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
-  seq $0,201125 ; Differences between odd powers of 2 and the next smaller square.
+  mov $6,$0
+  mul $6,2
+  add $6,1
+  mov $7,2
+  pow $7,$6
+  add $6,$7
+  log $6,2
+  nrt $7,2
+  pow $7,2
+  mov $0,2
+  pow $0,$6
+  sub $0,$7
   mov $2,$3
   mul $2,$0
   div $1,2

@@ -7,7 +7,9 @@
 sub $0,1
 lpb $0
   add $0,1
-  seq $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+  seq $0,62570 ; a(n) = phi(2*n).
+  dif $0,2
+  dir $0,2
   sub $0,1
   add $1,1
 lpe

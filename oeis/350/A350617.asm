@@ -9,8 +9,6 @@ lpb $0
   seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
   add $1,$2
   dif $2,$1
-  lpb $1
-    dif $1,2
-  lpe
+  dir $1,2
 lpe
 mov $0,$1

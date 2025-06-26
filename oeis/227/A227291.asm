@@ -1,6 +1,7 @@
 ; A227291: Characteristic function of squarefree numbers squared (A062503).
 ; Submitted by Science United
 ; 1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = (n-1)==((truncate((truncate((sqrtint(4*n)+1)/2)-1)/(truncate((sqrtint(4*(truncate(max(0,truncate((sqrtint(4*n)+1)/2)-1)/A019554(max(0,truncate((sqrtint(4*n)+1)/2)-1)+1))+1)^2)+1)/2)^2))+1)^2-1)
 
 #offset 1
 

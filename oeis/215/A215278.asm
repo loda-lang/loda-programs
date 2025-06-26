@@ -17,7 +17,20 @@ lpb $2
   add $3,$1
   sub $3,$6
   add $4,1
-  seq $4,30528 ; Triangle read by rows: a(n,k) = binomial(k,n-k).
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  mov $8,$7
+  sub $8,$4
+  add $4,1
+  bin $4,$8
   mul $4,$3
   add $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

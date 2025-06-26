@@ -13,7 +13,10 @@ lpb $2
   seq $5,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mov $3,$1
   add $3,1
-  seq $3,373157 ; a(n) = 1 if the 2-adic valuation of n is a multiple of 3, otherwise 0.
+  mov $6,$3
+  dir $6,8
+  mov $3,$6
+  mod $3,2
   mul $3,$5
   mod $3,2
   sub $0,$3

@@ -10,7 +10,16 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,26430 ; a(n) is the sum of first n terms of A001285 (Thue-Morse sequence).
+  mov $5,$3
+  div $5,2
+  mul $5,2
+  mov $4,$5
+  dgs $5,2
+  sub $4,$5
+  mod $4,2
+  mul $3,3
+  add $3,$4
+  div $3,2
   add $3,1
   add $0,1
   add $1,1

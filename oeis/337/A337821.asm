@@ -4,9 +4,7 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2
 add $0,1
 lex $0,2

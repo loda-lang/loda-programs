@@ -6,9 +6,7 @@
 
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 mov $1,$0
-lpb $1
-  dif $1,3
-lpe
+dir $1,3
 div $1,3
 mov $0,$1
 add $0,1

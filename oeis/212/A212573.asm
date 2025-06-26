@@ -6,7 +6,44 @@ lpb $0
   sub $2,2
   mov $0,$2
   max $2,0
-  seq $2,7904 ; Crystal ball sequence for diamond.
+  add $2,1
+  mov $7,0
+  sub $7,$2
+  sub $7,$2
+  mov $8,1
+  add $8,$7
+  mov $9,$7
+  mul $9,-1
+  mov $6,$2
+  mul $6,4
+  add $6,1
+  mov $4,$2
+  add $4,1
+  mul $6,$4
+  div $6,2
+  mov $5,$9
+  mul $5,$8
+  mov $3,$9
+  bin $3,2
+  add $5,$3
+  mul $5,$2
+  mov $3,$9
+  bin $3,2
+  sub $5,$3
+  div $9,2
+  mul $3,$8
+  sub $5,$3
+  mov $3,$9
+  sub $3,1
+  mul $3,-2
+  bin $3,3
+  div $3,-4
+  sub $5,$3
+  mov $10,$6
+  add $10,$5
+  mov $2,$10
+  div $2,2
+  sub $2,1
   add $1,$2
 lpe
 mul $1,2

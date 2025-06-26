@@ -1,5 +1,5 @@
 ; A276163: a(n) is the maximum first-player score difference of a "Coins in a Row" game over all permutations of coins 1..n with both players using a minimax strategy.
-; 1,1,2,4,5,9,6,16,9,25
+; 1,1,2,4,5,9,6,16,9,25,10,36,13,49,14,64
 
 #offset 1
 

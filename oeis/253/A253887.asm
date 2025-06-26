@@ -6,8 +6,6 @@
 
 mul $0,2
 sub $0,1
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 div $0,3
 add $0,1

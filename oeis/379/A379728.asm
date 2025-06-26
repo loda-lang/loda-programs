@@ -8,9 +8,7 @@ sub $0,1
 mov $1,$0
 add $0,2
 div $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 add $0,$1
 div $0,2
 mod $0,2

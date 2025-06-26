@@ -4,8 +4,6 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 seq $0,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
 sub $0,2

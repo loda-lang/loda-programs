@@ -1,6 +1,7 @@
 ; A231475: Largest integer less than 5 and coprime to n.
 ; Submitted by Ralfy
 ; 4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3,4,3,4,1,4,3
+; Formula: a(n) = truncate((sign(3*sign(gcd(n-21,6))*sign(-gcd(n-21,6)+6)+sign(-gcd(n-21,6)+6)+sign(gcd(n-21,6)))*bitxor(abs(-gcd(n-21,6)+6),abs(gcd(n-21,6))))/2)+1
 
 #offset 1
 

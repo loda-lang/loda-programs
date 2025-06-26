@@ -10,7 +10,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,340075 ; The odd part of A340072(n).
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  sub $3,1
+  mov $5,$3
+  add $3,1
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  gcd $5,$3
+  div $3,$5
+  dir $3,2
   equ $3,1
   sub $0,$3
   add $1,1

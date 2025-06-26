@@ -4,8 +4,6 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 sub $0,1
 max $0,1

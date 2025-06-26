@@ -4,11 +4,17 @@
 
 #offset 1
 
-seq $0,226720 ; Complement of A122437.
-mov $1,$0
-mov $2,$0
+mov $3,2
+pow $3,$0
+mul $3,3
+log $3,3
+mov $4,$0
+add $4,$3
+mov $0,$4
+mov $1,$4
+mov $2,$4
 lpb $2
-  div $2,$0
+  div $2,$4
   div $1,2
 lpe
 mov $0,$1

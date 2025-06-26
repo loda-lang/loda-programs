@@ -1,4 +1,4 @@
-; A253206: Coefficients of the Dirichlet series for zeta(5s)/zeta(s).
+; A253206: Coefficients of the Dirichlet series for zeta(5*s)/zeta(s).
 ; Submitted by [SG] Felix
 ; 1,-1,-1,0,-1,1,-1,0,0,1,-1,0,-1,1,1,0,-1,0,-1,0,1,1,-1,0,0,1,0,0,-1,-1,-1,1,1,1,1,0,-1,1,1,0,-1,-1,-1,0,0,1,-1,0,0,0,1,0,-1,0,1,0,1,1,-1,0,-1,1,0,-1,1,-1,-1,0,1,-1,-1,0,-1,1,0,0,1,-1,-1,0
 ; Formula: a(n) = -5*truncate((A007426(n)+2)/5)+A007426(n)

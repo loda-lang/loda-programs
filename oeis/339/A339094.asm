@@ -1,4 +1,4 @@
-; A339094: Number of (unordered) ways of making change for n US Dollars using the current US denominations of 1$, 2$, 5$, 10$, 20$, 50$ and 100$ bills.
+; A339094: Number of (unordered) ways of making change for n US Dollars using the current US denominations of $1, $2, $5, $10, $20, $50 and $100 bills.
 ; Submitted by Kotenok2000
 ; 1,1,2,2,3,4,5,6,7,8,11,12,15,16,19,22,25,28,31,34,41,44,51,54,61,68,75,82,89,96,109,116,129,136,149,162,175,188,201,214,236,249,271,284,306,328,350,372,394,416,451,473,508,530,565,600,635,670,705,740,793,828,881,916
 

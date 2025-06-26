@@ -2,13 +2,20 @@
 ; Submitted by Science United
 ; 0,1,2,3,0,4,1,0,5,2,0,1,6,3,0,1,2,0,7,4,1,0,2,3,0,1,8,5,0,2,1,0,3,4,0,1,2,9,0,6,1,0,3,2,1,0,4,5,0,1,2,0,3,10,1,0,7,2,0,1,4,3,0,2,1,0,5,6,0,1,2,3,0,1,4,0,11,2,1,0
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $3,$0
 pow $3,2
 lpb $3
   add $2,1
   mov $4,$2
-  seq $4,93709 ; Characteristic function of squares or twice squares.
+  dir $4,2
+  mov $6,$4
+  nrt $4,2
+  pow $4,2
+  equ $4,$6
   sub $1,$4
   mov $5,$1
   max $5,0

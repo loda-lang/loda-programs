@@ -1,4 +1,4 @@
-; A316340: Image of 1 under repeated application of the morphism 1 -> 12312, 2 -> 341, 3 -> 34134, 4 -> 123,
+; A316340: Image of 1 under repeated application of the morphism 1 -> 12312, 2 -> 341, 3 -> 34134, 4 -> 123.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,3,1,2,3,4,1,3,4,1,3,4,1,2,3,1,2,3,4,1,3,4,1,3,4,1,2,3,1,2,3,1,2,3,4,1,3,4,1,2,3,1,2,3,1,2,3,4,1,3,4,1,2,3,1,2,3,1,2,3,4,1,3,4,1,3,4,1,2,3,1,2,3,4,1,3,4,1,3
 ; Formula: a(n) = -4*truncate(b(n)/4)+b(n)+1, b(n) = sqrtint((sqrtint(5*n^2)+n+7)*(5*sqrtint(5*n^2)+5*n+35))*(sqrtint(5*n^2)+n+8)-2*truncate((sqrtint((sqrtint(5*n^2)+n+7)*(5*sqrtint(5*n^2)+5*n+35))*(sqrtint(5*n^2)+n+8))/2)+b(n-1)+1, b(0) = 0

@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,9764 ; Tan(x)^2 = sum(n>=0, a(n)*x^(2*n)/(2*n)! ).
+    seq $7,9764 ; Expansion of e.g.f. tan(x)^2 (even powers only).
     mov $9,10
     add $9,$5
     sub $4,1

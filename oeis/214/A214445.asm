@@ -13,7 +13,62 @@ lpb $1
   mov $3,-4
   pow $3,$2
   mul $1,2
-  seq $2,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+  mul $2,2
+  mov $4,2
+  pow $4,$2
+  bin $2,2
+  add $2,1
+  mov $7,$2
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  add $7,1
+  pow $7,2
+  sub $7,$2
+  mul $2,8
+  nrt $2,2
+  div $2,2
+  mov $5,$7
+  add $5,$2
+  mov $6,$5
+  add $6,2
+  mov $8,$6
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  mov $10,$8
+  mod $10,2
+  sub $6,1
+  sub $6,$9
+  sub $6,$10
+  add $6,$5
+  mov $2,$5
+  add $2,1
+  mov $11,$2
+  mul $11,8
+  nrt $11,2
+  div $11,2
+  bin $11,2
+  sub $2,$11
+  sub $6,$2
+  mov $2,$6
+  add $2,2
+  mov $12,$2
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  add $12,1
+  pow $12,2
+  sub $12,$2
+  mov $2,$12
+  seq $2,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mul $2,$4
   div $2,$3
 lpe
 mul $0,$2

@@ -11,7 +11,28 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,220464 ; Reverse reluctant sequence of reluctant sequence A002260.
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $3,$8
+  sub $3,1
+  sub $7,$3
+  add $7,1
+  mov $6,$7
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $7,$8
+  mov $3,$7
   equ $3,1
   add $5,2
   sub $0,$3

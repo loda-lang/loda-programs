@@ -1,6 +1,7 @@
 ; A323885: Sum of A001511 and its Dirichlet inverse.
 ; Submitted by Gunnar Hjern
 ; 2,0,0,4,0,4,0,4,1,4,0,2,0,4,2,5,0,2,0,2,2,4,0,4,1,4,1,2,0,0,0,6,2,4,2,3,0,4,2,4,0,0,0,2,1,4,0,5,1,2,2,2,0,2,2,4,2,4,0,4,0,4,1,7,2,0,0,2,2,0,0,4,0,4,1,2,2,0,0,5
+; Formula: a(n) = logint(truncate((sign(3*sign(2*n-1)*sign(2*n)+sign(2*n)+sign(2*n-1))*bitxor(abs(2*n),abs(2*n-1))+1)/2),2)+A092673(n)
 
 #offset 1
 

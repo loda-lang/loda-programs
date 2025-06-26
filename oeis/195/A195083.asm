@@ -14,7 +14,13 @@ lpb $2
   seq $4,195082 ; Fractalization of (1+[2n/3]), where [ ] = floor.
   mov $3,$1
   add $3,1
-  seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $5,$3
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  sub $3,$5
   add $4,$1
   sub $4,$3
   mov $3,$4

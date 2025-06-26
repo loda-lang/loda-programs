@@ -8,9 +8,20 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,345954 ; a(n) is the number of ternary strings of length n with at least three 0's.
-  add $1,$0
+  mov $4,$0
+  add $4,3
+  mul $4,$0
+  add $4,8
+  mov $6,2
+  pow $6,$0
+  mul $6,$4
+  div $6,8
+  mov $5,3
+  pow $5,$0
+  sub $5,$6
+  mov $0,$5
   mul $0,$2
+  add $1,$5
   mul $1,3
   add $1,$0
 lpe

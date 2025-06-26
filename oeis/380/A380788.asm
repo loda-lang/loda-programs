@@ -10,8 +10,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,70941 ; Length of binary representation of 2n+1.
-  sub $3,1
+  mul $3,2
+  add $3,1
+  log $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

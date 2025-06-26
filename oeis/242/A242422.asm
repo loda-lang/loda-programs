@@ -11,7 +11,16 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
-  seq $3,238303 ; Triangle T(n,k), 0<=k<=n, read by rows given by T(n,0) = 1, T(n,k) = 2 if k>0.
+  mov $5,$3
+  mul $5,8
+  add $5,1
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  sub $3,$5
+  min $3,1
+  add $3,1
   equ $3,1
   sub $0,$3
   add $1,1

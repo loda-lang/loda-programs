@@ -11,8 +11,32 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
+  sub $0,1
+  mov $7,$0
+  add $7,$0
+  mul $7,2
+  add $7,$0
+  mul $7,$0
+  nrt $7,2
+  add $7,$0
+  mov $0,$7
+  div $0,2
+  add $0,4
+  mov $6,$0
+  add $6,$0
+  mul $6,2
+  add $6,$0
+  mul $6,$0
+  nrt $6,2
+  add $6,$0
+  add $7,1
+  equ $7,1
+  sub $7,$6
+  mov $0,$7
   add $0,1
-  seq $0,188433 ; a(n) = [2r]-[nr]-[2r-nr], where r=(1+sqrt(5))/2 and [.]=floor.
+  mod $0,2
+  add $0,2
+  mod $0,2
   add $3,$0
   add $4,$3
 lpe

@@ -15,7 +15,20 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,18900 ; Sums of two distinct powers of 2.
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $5,$4
+  bin $5,2
+  sub $0,$5
+  sub $0,1
+  mov $5,2
+  pow $5,$0
+  mov $0,2
+  pow $0,$4
+  add $0,$5
   seq $0,59590 ; Numbers obtained by reinterpreting base-2 representation of n in the factorial base: a(n) = Sum_{k>=0} A030308(n,k)*A000142(k+1).
   mul $1,$0
 lpe

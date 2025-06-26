@@ -11,4 +11,10 @@ lpb $0
 lpe
 add $0,$1
 add $0,1
-seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
+mov $2,$0
+log $2,2
+add $2,1
+mov $3,$0
+mov $0,2
+pow $0,$2
+sub $0,$3

@@ -1,4 +1,4 @@
-; A222557: Number of (n+3)X1 arrays of occupancy after each element moves up to +-n places but not 0
+; A222557: Number of (n+3)X1 arrays of occupancy after each element moves up to +-n places but not 0.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 4,64,359,1562,6220,24024,92011,352258,1351519
 

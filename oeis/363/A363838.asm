@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   max $2,0
   add $2,1
-  seq $2,364813 ; Generalized positive integers (see formula section).
+  seq $2,364813 ; a(n) = Product_{k=2..n} k^ord(n, k) where ord(n, k) = 0 if k does not divide n, otherwise ord(n, k) = e where e is such that k^e divides n but k^(e + 1) does not.
   mul $1,$2
 lpe
 mov $0,$1

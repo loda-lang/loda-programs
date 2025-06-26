@@ -4,9 +4,7 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 seq $0,6005 ; The odd prime numbers together with 1.
 trn $0,2
 add $0,2

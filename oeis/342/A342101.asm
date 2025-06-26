@@ -11,7 +11,9 @@ add $3,5
 pow $3,2
 lpb $3
   mov $4,$2
-  seq $4,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
+  dir $4,2
+  div $4,2
+  mod $4,2
   sub $0,$4
   add $2,3
   sub $3,$0

@@ -4,7 +4,17 @@
 
 lpb $0
   mov $1,$0
-  seq $1,49581 ; Table T(n,k) = |n-k| read by antidiagonals (n >= 0, k >= 0).
+  mul $1,2
+  add $1,1
+  mov $3,$1
+  nrt $3,2
+  mov $4,$3
+  add $4,1
+  pow $4,2
+  sub $4,$1
+  pow $3,2
+  sub $1,$3
+  min $1,$4
   add $2,$1
   mul $2,2
   pow $2,2

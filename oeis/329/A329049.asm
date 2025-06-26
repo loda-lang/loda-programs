@@ -1,11 +1,40 @@
 ; A329049: Transpose of square array A329050.
 ; Submitted by [SG]KidDoesCrunch
 ; 2,3,4,5,9,16,7,25,81,256,11,49,625,6561,65536,13,121,2401,390625,43046721,4294967296,17,169,14641,5764801,152587890625,1853020188851841,18446744073709551616,19,289,28561,214358881,33232930569601,23283064365386962890625,3433683820292512484657849089281,340282366920938463463374607431768211456,23,361,83521,815730721,45949729863572161,1104427674243920646305299201,542101086242752217003726400434970855712890625,11790184577738583171520872861412518665678211592275841109096961
-; Formula: a(n) = truncate(A037126(A061579(n)+1)^A130321(A061579(n)))
+; Formula: a(n) = A000040((truncate((sqrtint(8*n+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n+8)-1)/2)+1)^2-8*n-7)+1)/2),2)-n)^truncate(2^(-(truncate((sqrtint(8*n+8)-1)/2)+1)^2+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n+8)-1)/2)+1)^2-8*n)+3)/2),2)+n))
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-mov $1,$0
-seq $1,130321 ; Triangle, (2^0, 2^1, 2^2, ...) in every column.
 add $0,1
-seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
-pow $0,$1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+add $2,1
+pow $2,2
+sub $2,$0
+mov $1,$2
+add $1,1
+mov $3,$1
+mul $1,8
+nrt $1,2
+add $1,3
+div $1,2
+bin $1,2
+sub $1,$3
+mov $4,2
+pow $4,$1
+mov $6,$2
+mul $6,8
+add $6,1
+nrt $6,2
+add $6,1
+div $6,2
+bin $6,2
+mov $0,$2
+sub $0,$6
+mov $1,$4
+mov $5,$0
+add $5,1
+seq $5,40 ; The prime numbers.
+mov $0,$5
+pow $0,$4

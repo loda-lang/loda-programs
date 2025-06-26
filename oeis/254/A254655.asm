@@ -17,7 +17,13 @@ lpb $4
   add $1,$0
   mov $3,$0
   max $3,0
-  seq $3,106400 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and -1's.
+  dgs $3,2
+  mov $7,0
+  sub $7,$3
+  gcd $7,2
+  mul $7,2
+  sub $7,3
+  mov $3,$7
   add $3,$1
   mov $0,$3
   mov $2,$4

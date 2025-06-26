@@ -4,9 +4,7 @@
 
 mov $1,$0
 mul $1,7
-lpb $1
-  dif $1,2
-lpe
+dir $1,2
 div $1,2
 mod $1,2
 sub $0,1

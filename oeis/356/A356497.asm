@@ -21,7 +21,7 @@ mov $4,1
 mov $0,$1
 add $0,1
 lpb $0
-  mul $4,2
   dif $0,2
+  mul $4,2
 lpe
 mov $0,$4

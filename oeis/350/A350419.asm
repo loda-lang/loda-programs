@@ -11,7 +11,20 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,105020 ; Array read by antidiagonals: row n (n >= 0) contains the numbers m^2 - n^2, m >= n+1.
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $3,$6
+  mul $7,2
+  add $7,2
+  sub $7,$3
+  mul $3,$7
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1

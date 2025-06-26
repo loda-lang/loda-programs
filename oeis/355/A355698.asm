@@ -14,7 +14,15 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,202022 ; Characteristic functions of repdigit numbers in decimal representation.
+  mov $5,$0
+  max $5,1
+  log $5,10
+  add $5,1
+  mov $6,10
+  pow $6,$5
+  div $6,9
+  mod $0,$6
+  equ $0,0
   mul $1,$0
   add $3,$1
 lpe

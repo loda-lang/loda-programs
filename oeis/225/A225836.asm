@@ -10,10 +10,15 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,3
   mov $3,$1
-  seq $3,164057 ; Complement to A164056, change A164056 bits (0->1; 1->0). Provides a coding template for Petoukhov matrices, relating to DNA codons.
+  add $3,4
+  dir $3,2
+  sub $3,4
+  div $3,2
+  pow $3,2
+  mod $3,2
   sub $0,$3
+  add $1,3
   mov $4,$0
   max $4,0
   equ $4,$0

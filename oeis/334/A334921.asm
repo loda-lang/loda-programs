@@ -11,8 +11,14 @@ lpb $4
   sub $0,$4
   mov $1,$2
   bin $1,$0
-  seq $0,106400 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and -1's.
-  mul $1,$0
+  dgs $0,2
+  mov $5,0
+  sub $5,$0
+  gcd $5,2
+  mul $5,2
+  sub $5,3
+  mov $0,$5
+  mul $1,$5
   mul $3,-1
   add $3,$1
 lpe

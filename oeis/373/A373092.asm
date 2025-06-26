@@ -8,7 +8,7 @@ sub $0,1
 lpb $0
   add $0,1
   seq $0,182622 ; a(n) is the number whose binary representation is the concatenation of the divisors of n written in base 2.
-  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $0,2
   sub $0,1
   add $1,7
 lpe

@@ -12,12 +12,37 @@ lpb $2
   sub $2,7
   mov $6,$1
   add $6,1
-  seq $6,51537 ; Triangle read by rows: T(i,j) = lcm(i,j)/gcd(i,j) for 1 <= j <= i.
-  seq $6,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
+  mov $7,$6
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $6,$9
+  add $7,1
+  mov $8,$7
+  mul $7,$6
+  gcd $6,$8
+  pow $6,2
+  div $7,$6
+  mov $6,$7
+  dir $6,4
+  mov $10,1
+  sub $10,$6
+  pow $10,$10
+  mov $6,$10
   pow $6,6
   mov $3,$1
   add $3,1
-  seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $11,$3
+  mul $11,8
+  nrt $11,2
+  add $11,1
+  div $11,2
+  bin $11,2
+  sub $3,$11
   mul $3,$6
   mov $5,$3
   add $1,1

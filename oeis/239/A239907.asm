@@ -4,9 +4,7 @@
 
 mov $1,$0
 lpb $0
-  lpb $0
-    dif $0,2
-  lpe
+  dir $0,2
   div $0,4
   sub $1,1
 lpe

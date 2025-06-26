@@ -1,11 +1,62 @@
 ; A205390: s(k)-s(j), where (k,j) is the least pair for which n divides s(k)-s(j), and s(j)=(1/2)C(2j,j).
 ; Submitted by Conan
 ; 2,2,9,32,25,336,7,32,9,1590,1254,336,91,336,1590,32,34,24300,1254,6400,336,1254,92368,336,25,22594,459,336,116,1590,260338,32,1254,34,1715,24300,24309,1254,4719,6400,123,336,57500460,23848,24300
-; Formula: a(n) = truncate(A205008(A205009(2*n))/2)
 
 #offset 1
 
 mul $0,2
-seq $0,205009 ; Least k such that n divides the k-th difference between distinct central binomials coefficients.
-seq $0,205008 ; Ordered differences of central binomial coefficients.
+sub $0,1
+mov $4,0
+mov $5,$0
+add $0,1
+add $5,4
+pow $5,5
+lpb $5
+  mov $6,$4
+  add $6,1
+  mov $7,$6
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $6,$9
+  sub $6,1
+  mov $8,$7
+  add $8,1
+  mov $7,$6
+  mul $7,2
+  bin $7,$6
+  mov $6,2
+  mul $6,$8
+  bin $6,$8
+  sub $6,$7
+  gcd $6,$0
+  add $4,1
+  add $5,$6
+  sub $5,$0
+lpe
+mov $0,$4
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
+mov $2,$1
+add $2,1
+mov $1,$0
+mul $1,2
+bin $1,$0
+mov $0,2
+mul $0,$2
+bin $0,$2
+sub $0,$1
 div $0,2

@@ -20,7 +20,7 @@ lpb $3
   seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
   mul $0,$7
   seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $0,2
   mod $0,2
   mov $2,$3
   mul $2,$0

@@ -9,7 +9,9 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  add $3,1
+  dir $3,2
+  div $3,2
   mov $5,2
   max $5,$3
   equ $5,2

@@ -9,8 +9,16 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,336937 ; The 2-adic valuation of sigma(n), the sum of divisors of n.
+  add $3,2
+  mov $7,$1
+  add $7,$3
+  mov $6,$7
+  dir $6,2
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,-1
+  mul $5,$6
+  lex $5,2
+  mov $3,$5
   div $3,2
   equ $3,0
   sub $0,$3

@@ -1,4 +1,4 @@
-; A360278: Determinant of the matrix [L(j+k)+d(j,k)]_{1<=j,k<=n}, where L(n) denotes the Lucas number A000032(n), and d(j,k) is 1 or 0 according as j = k or not.
+; A360278: Determinant of the matrix [L(j+k) + d(j,k)]_{1<=j, k<=n}, where L(n) denotes the Lucas number A000032(n), and d(j,k) is 1 or 0 according as j = k or not.
 ; Submitted by entity
 ; 4,16,44,121,319,841,2204,5776,15124,39601,103679,271441,710644,1860496,4870844,12752041,33385279,87403801,228826124,599074576,1568397604,4106118241,10749957119,28143753121,73681302244,192900153616,505019158604,1322157322201,3461452807999,9062201101801,23725150497404,62113250390416,162614600673844,425730551631121,1114577054219519
 ; Formula: a(n) = (-truncate(c(n+1)/b(n+1))*b(n+1)+c(n+1))*(-truncate(c(n+1)/b(n+1))*b(n+1)+min(n+1,(n+1)%2)*b(n+1)+c(n+1))-5, b(n) = 3*b(n-2)-b(n-4), b(6) = 29, b(5) = 11, b(4) = 11, b(3) = 4, b(2) = 4, b(1) = 1, b(0) = 1, c(n) = 2*c(n-2)+b(n-2), c(3) = 7, c(2) = 7, c(1) = 3, c(0) = 3

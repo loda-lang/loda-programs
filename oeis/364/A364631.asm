@@ -6,9 +6,16 @@
 
 sub $0,1
 lpb $0
+  mov $3,-1
+  pow $3,$0
+  mul $3,2
+  bin $3,2
+  mov $4,$0
+  add $4,1
+  seq $4,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $4,$3
   mov $2,$0
-  add $2,1
-  seq $2,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  mov $2,$4
   mul $2,2
   seq $2,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
   div $2,2

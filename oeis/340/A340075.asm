@@ -4,5 +4,11 @@
 
 #offset 1
 
-seq $0,340072 ; a(n) = phi(x) / gcd(x-1, phi(x)), where x = A003961(n), i.e., n with its prime factorization shifted one step towards larger primes.
+seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+sub $0,1
+mov $1,$0
+add $0,1
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+gcd $1,$0
+div $0,$1
 dir $0,2

@@ -1,4 +1,4 @@
-; A212241: Number of 2 X 2 matrices M of with terms in {1,...,n} such that permanent(M) > n.
+; A212241: Number of 2 X 2 matrices M with terms in {1,...,n} such that permanent(M) > n.
 ; Submitted by Science United
 ; 0,1,15,76,243,598,1249,2326,3984,6405,9786,14363,20378,28117,37864,49965,64740,82591,103877,129062,158543,192832,232371,277740,329399,388002,454043,528220,611087,703402,805721,918898,1043520,1180469
 

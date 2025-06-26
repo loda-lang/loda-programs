@@ -11,8 +11,18 @@ lpb $2
   mov $1,$0
   sub $1,$2
   mul $1,2
-  add $1,1
-  seq $1,173919 ; Numbers that are prime or one less than a prime.
+  sub $1,1
+  mov $4,$1
+  div $1,2
+  add $1,2
+  mov $5,$1
+  seq $5,40 ; The prime numbers.
+  sub $1,4
+  sub $5,$1
+  sub $5,$1
+  add $4,$5
+  mov $1,$4
+  sub $1,5
   dgs $1,10
   mod $1,2
   add $3,$1

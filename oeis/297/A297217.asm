@@ -1,6 +1,7 @@
 ; A297217: Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
 ; Submitted by BrandyNOW
 ; 3,0,4,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+; Formula: a(n) = 2*binomial(9,min(n-1,5))-(0==(n-1))-10*truncate((2*binomial(9,min(n-1,5))-(0==(n-1))+2)/10)+2
 
 #offset 1
 

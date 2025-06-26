@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,228192 ;  a(n) = A001850(n^2), where A001850 forms the central Delannoy numbers.
+    seq $7,228192 ; a(n) = A001850(n^2), where A001850 forms the central Delannoy numbers.
     mov $9,10
     add $9,$5
     sub $4,1

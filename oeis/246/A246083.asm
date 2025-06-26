@@ -13,9 +13,17 @@ lpb $2
   div $0,5
   mov $4,$0
   min $4,1
-  seq $0,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
-  sub $0,1
+  max $0,1
+  sub $0,2
+  mov $6,$0
+  div $6,3
+  mov $5,3
+  pow $5,$6
+  mod $0,3
+  add $0,2
+  mul $0,$5
   add $0,$4
+  sub $0,1
   add $1,1
   add $3,$0
 lpe

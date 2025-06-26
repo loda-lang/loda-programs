@@ -1,4 +1,4 @@
-; A222556: Number of (n+2)X1 arrays of occupancy after each element moves up to +-n places but not 0
+; A222556: Number of (n+2)X1 arrays of occupancy after each element moves up to +-n places but not 0.
 ; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
 ; 2,20,102,427,1668,6372,24230,92279,352596
 ; Formula: a(n) = -(n+2)^2+binomial(2*n+3,n+1)+1

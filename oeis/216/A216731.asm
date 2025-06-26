@@ -1,4 +1,4 @@
-; A216731: Primes p such that there is no power of 3 in the open interval (2p, 3p).
+; A216731: Primes p > 3 such that there is no power of 3 in the open interval (2p, 3p).
 ; Submitted by Science United
 ; 5,7,17,19,23,41,43,47,53,59,61,67,71,73,79,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509
 

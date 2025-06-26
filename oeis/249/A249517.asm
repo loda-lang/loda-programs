@@ -1,4 +1,4 @@
-; A249517: Numbers n for which the digital sum A007953(n) and the digital product A007954(n) both contain the same distinct digits as the number n.
+; A249517: Numbers k for which the digital sum A007953(k) and the digital product A007954(k) both contain the same distinct digits as the number k.
 ; Submitted by Simon Strandgaard
 ; 0,1,2,3,4,5,6,7,8,9,11111111111
 

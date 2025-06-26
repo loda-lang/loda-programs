@@ -13,7 +13,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,349706 ; Array T(n,k) = Sum_{j=0, k} binomial(k,j)*j^n for n and k >= 0, read by ascending antidiagonals.
+  seq $0,349706 ; Square array T(n,k) = Sum_{j=0..k} binomial(k,j) * j^n for n and k >= 0, read by ascending antidiagonals.
   add $1,$0
 lpe
 mov $0,$1

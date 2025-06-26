@@ -8,6 +8,4 @@ sub $0,5
 mov $1,$0
 add $0,10
 mul $0,$1
-lpb $0
-  dif $0,5
-lpe
+dir $0,5

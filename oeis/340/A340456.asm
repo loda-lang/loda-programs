@@ -14,8 +14,18 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,330025 ; a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
-  mul $1,$0
+  mov $7,$0
+  div $7,5
+  mov $6,-2
+  pow $6,$7
+  mod $0,5
+  mul $0,$6
+  dir $0,2
+  mov $5,0
+  bxo $5,$0
+  mod $5,2
+  mov $0,$5
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

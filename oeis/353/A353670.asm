@@ -4,7 +4,5 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

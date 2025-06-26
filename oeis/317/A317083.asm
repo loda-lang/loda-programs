@@ -5,6 +5,4 @@
 trn $0,1
 add $0,1
 seq $0,60565 ; Follow trajectory of 2n+1 in the '3x+1' problem until a lower number is reached; A060445 gives number of steps for this to happen. Sequence gives the first lower number that is reached.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

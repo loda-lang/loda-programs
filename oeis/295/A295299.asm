@@ -14,10 +14,14 @@ add $0,1
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,593 ; Sum of odd divisors of n.
+  dir $5,2
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
   add $3,1
-  seq $3,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mul $3,2
+  mov $6,$3
+  dgs $6,2
+  sub $3,$6
   sub $3,$5
   add $3,$4
   gcd $3,2

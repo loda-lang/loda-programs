@@ -14,7 +14,12 @@ lpb $1
   sub $0,$1
   add $0,1
   seq $0,40 ; The prime numbers.
-  seq $0,23416 ; Number of 0's in binary expansion of n.
+  mov $4,$0
+  dgs $4,2
+  max $0,1
+  log $0,2
+  add $0,1
+  sub $0,$4
   add $3,$0
 lpe
 mov $0,$3

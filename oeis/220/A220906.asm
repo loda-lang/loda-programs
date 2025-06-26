@@ -10,12 +10,20 @@ lpb $3
   add $0,$3
   trn $0,1
   mul $0,2
-  add $0,1
-  seq $0,286063 ; Fixed point of the mapping 00->001, 1->100, starting with 00.
+  mov $7,2
+  sub $7,$0
+  div $0,3
+  dgs $0,2
+  mod $0,2
+  add $7,$0
+  mov $6,3
+  gcd $6,$7
+  div $6,2
+  mov $0,$6
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
-  mov $4,$0
+  mov $4,$6
 lpe
 min $5,1
 mul $5,$4

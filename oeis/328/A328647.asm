@@ -12,7 +12,7 @@ mov $2,$0
 sub $0,$1
 sub $1,$2
 mul $1,2
-seq $1,61084 ; Fibonacci-type sequence based on subtraction: a(0) = 1, a(1) = 2 and a(n) = a(n-2)-a(n-1).
+seq $1,61084 ; Fibonacci-type sequence based on subtraction: a(0) = 1, a(1) = 2 and a(n) = a(n-2) - a(n-1).
 mul $1,-1
 sub $0,1
 bin $0,$2

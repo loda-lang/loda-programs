@@ -10,7 +10,7 @@ lpb $2
   mov $4,$1
   seq $4,62756 ; Number of 1's in ternary (base-3) expansion of n.
   mov $3,$1
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $3,2
   sub $3,$4
   equ $3,0
   sub $0,$3

@@ -1,9 +1,20 @@
 ; A249922: E.g.f. satisfies: A(x) = x + 4*A(x)^5/5.
 ; Submitted by Simon Strandgaard
 ; 1,96,1161216,111588212736,41521527606214656,42355944224989145726976,96575619003620851215495069696,429963927063544377213100737813282816,3395036444630744502734855883444511190286336,44244440869926546911112904419213680504885798240256
-; Formula: a(n) = A052504(n)*4^n
 
 mov $1,4
 pow $1,$0
-seq $0,52504 ; Number of permutations sigma of [5n] without fixed points such that sigma^5 = Id.
+mov $2,0
+mov $3,0
+mov $4,1
+mul $0,4
+lpb $0
+  sub $0,1
+  add $2,5
+  add $3,$2
+  add $3,1
+  div $3,5
+  mul $4,$3
+lpe
+mov $0,$4
 mul $0,$1

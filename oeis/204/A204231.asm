@@ -11,7 +11,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,46301 ; Product of 3 successive primes.
+  seq $3,40 ; The prime numbers.
+  mov $5,$1
+  add $5,2
+  seq $5,40 ; The prime numbers.
+  seq $5,13636 ; a(n) = n*nextprime(n).
+  mul $5,$3
+  mov $3,$5
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

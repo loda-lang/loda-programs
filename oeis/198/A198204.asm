@@ -1,13 +1,47 @@
 ; A198204: Series reversion of (1 - t*x)*log(1 + x) with respect to x.
 ; Submitted by Landjunge
 ; 1,1,2,1,9,12,1,28,120,120,1,75,750,2100,1680,1,186,3780,21840,45360,30240,1,441,16856,176400,705600,1164240,665280,1,1016,69552,1224720,8316000,25280640,34594560,17297280,1,2295,272250,7692300,82577880,408648240,998917920,1167566400,518918400
-; Formula: a(n) = A046899(n-1)*A028246(n)
 
 #offset 1
 
-sub $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+bin $3,2
+mov $6,0
+mov $8,0
+mov $9,0
 mov $1,$0
-seq $1,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
-add $0,1
-seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+sub $1,1
+sub $1,$3
+bin $1,$2
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
+mov $5,$0
+mov $0,$4
+mov $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$0
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+lpe
+mov $0,$9
 mul $0,$1

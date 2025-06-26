@@ -1,4 +1,4 @@
-; A362412: The number of primes factors of the square root of the largest square dividing n, counted with multiplicity.
+; A362412: The number of prime factors of the square root of the largest square dividing n, counted with multiplicity.
 ; Submitted by Steve Dodd
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,2,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,2,0,0,0,2,0,0,0,1,0,0,0,1,1,0,0,2,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,3,0,0,0,1,0,0,0,2,0,0,1,1,0,0,0,2
 

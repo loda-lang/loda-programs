@@ -1,12 +1,45 @@
 ; A204060: G.f.: Sum_{n>=1} Fibonacci(n^2)*x^(n^2).
 ; Submitted by Simon Strandgaard
 ; 1,0,0,3,0,0,0,0,34,0,0,0,0,0,0,987,0,0,0,0,0,0,0,0,75025,0,0,0,0,0,0,0,0,0,0,14930352,0,0,0,0,0,0,0,0,0,0,0,0,7778742049,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10610209857723,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A324969(n+1)*A010052(n)
 
 #offset 1
 
 mov $1,$0
-seq $1,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
-add $0,1
-seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+nrt $1,2
+pow $1,2
+equ $1,$0
+mov $2,$0
+mov $5,0
+mov $9,0
+sub $0,1
+mov $3,$0
+mov $6,1
+lpb $0
+  mul $9,$6
+  mul $9,2
+  mov $10,$5
+  pow $10,2
+  mov $11,$6
+  pow $11,2
+  sub $9,$10
+  add $10,$11
+  mov $11,$10
+  sub $11,$9
+  mov $7,$0
+  max $7,1
+  log $7,2
+  mov $8,2
+  pow $8,$7
+  ban $8,$3
+  neq $8,0
+  mul $11,$8
+  div $0,2
+  mov $4,$9
+  mul $4,$8
+  add $9,$11
+  add $10,$4
+  mov $5,$9
+  mov $6,$10
+lpe
+mov $0,$6
 mul $0,$1

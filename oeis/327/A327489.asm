@@ -1,6 +1,7 @@
 ; A327489: T(n, k) = 1 + NOR(k - 1, n - k), where NOR is the Peirce arrow operating bitwise on the inputs, triangle read by rows, T(n, k) for n >= 1, 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,1,1,2,1,2,1,1,1,1,4,1,2,1,4,3,3,1,1,3,3,2,3,2,1,2,3,2,1,1,1,1,1,1,1,1,8,1,2,1,4,1,2,1,8,7,7,1,1,3,3,1,1,7,7,6,7,6,1,2,3,2,1,6,7,6,5,5,5,5,1,1,1,1,5,5,5,5
+; Formula: a(n) = -max(sign(2*sign(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1)+2*sign(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))-1)*bitor(abs(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1),abs(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))),1)+truncate(2^(logint(max(sign(2*sign(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1)+2*sign(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))-1)*bitor(abs(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1),abs(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))),1),2)+1))
 
 #offset 1
 

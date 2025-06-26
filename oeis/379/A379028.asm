@@ -20,7 +20,7 @@ lpb $0
     dif $0,$2
     mov $5,$4
     add $5,1
-    seq $5,122668 ; d(n)_n where d() = A000005.
+    seq $5,122668 ; a(n) = d(n)_n where d() = A000005.
     add $4,1
   lpe
   mul $1,$5

@@ -6,6 +6,7 @@ add $0,1
 bin $0,2
 mul $0,4
 mov $1,$0
+mov $10,0
 trn $0,1
 mov $2,$0
 mov $3,-1
@@ -20,8 +21,27 @@ mul $5,2
 mov $6,-2
 bin $6,$4
 div $6,$5
+mov $7,0
+mov $9,3
 sub $4,$6
-seq $4,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+add $4,3
+lpb $4
+  sub $4,$9
+  mov $8,$4
+  max $8,0
+  mov $11,$8
+  nrt $8,2
+  pow $8,2
+  equ $8,$11
+  equ $11,0
+  mul $8,2
+  sub $8,$11
+  add $7,$8
+  mov $9,2
+  add $9,$10
+  add $10,2
+lpe
+mov $4,$7
 mul $4,$5
 div $4,2
 max $4,0

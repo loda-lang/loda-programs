@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 1,2,3,4,5,7,19,22
 
-add $0,1
+#offset 1
+
 mov $2,$0
 mov $1,$0
 add $1,5

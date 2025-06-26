@@ -10,8 +10,12 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,191610 ; Possible number of trailing zeros in k!.
+  mul $3,5
+  mov $5,$3
+  dgs $3,5
+  sub $5,$3
+  div $5,4
+  mov $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

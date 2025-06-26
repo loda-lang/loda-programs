@@ -11,7 +11,14 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $4,$0
+  mul $4,8
+  add $4,1
+  nrt $4,2
+  add $4,1
+  div $4,2
+  bin $4,2
+  sub $0,$4
   equ $0,0
   add $3,$0
 lpe

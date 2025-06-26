@@ -1,7 +1,6 @@
 ; A339901: a(n) =  A339971(n) /  gcd(A339809(2*n), A339971(n)).
 ; Submitted by bashno
 ; 1,1,1,1,1,3,3,3,1,5,5,5,15,3,5,15,1,3,3,3,1,9,9,9,15,15,5,15,9,45,5,45,1,1,1,1,3,3,1,3,5,1,5,5,5,15,15,15,3,3,1,3,9,9,3,9,1,15,15,15,15,9,45,45,1,9,9,9,9,27,27,27,45,45,5,45,135,135,45,135
-; Formula: a(n) = truncate(A000265(A000010(A181819(A181811(A057335(2*n))*A057335(2*n)))-1)/gcd(A000265(A000010(A181819(A181811(A057335(2*n))*A057335(2*n)))-1),A181819(A181811(truncate((A057335(A048678(2*n))-1)/A293810(A057335(A048678(2*n))-1))+1)*(truncate((A057335(A048678(2*n))-1)/A293810(A057335(A048678(2*n))-1))+1))-1))
 
 mov $2,$0
 mul $2,2
@@ -28,7 +27,7 @@ seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(
 mov $5,$1
 seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $5,1
-seq $5,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+dir $5,2
 mov $1,$5
 gcd $1,$2
 mul $0,2
@@ -40,6 +39,6 @@ seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(
 mov $7,$0
 seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $7,1
-seq $7,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+dir $7,2
 mov $0,$7
 div $0,$1

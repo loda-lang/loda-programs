@@ -1,6 +1,6 @@
 ; A382385: Number of minimum dominating sets in the n X n fiveleaper graph.
 ; Submitted by Science United
-; 1,1,1,1,1,112,12,32
+; 1,1,1,1,1,112,12,32,4809,48,860,9840,2
 
 #offset 1
 

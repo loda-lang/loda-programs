@@ -1,6 +1,7 @@
 ; A266173: Number of species of sets of four orthogonal Latin squares.
 ; Submitted by mmonnin
 ; 1,0,0,0,1,0,1,1,96
+; Formula: a(n) = truncate((truncate(3^binomial(sumdigits(n-2,2)*sign(n-2),2))*(4*truncate(3^binomial(sumdigits(n-2,2)*sign(n-2),2))-1))/30)
 
 #offset 1
 

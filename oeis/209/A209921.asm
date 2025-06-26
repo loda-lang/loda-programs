@@ -9,7 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  dir $3,2
   seq $3,341885 ; a(n) is the sum of A000217(p) over the prime factors p of n, counted with multiplicity.
   add $3,1
   mod $3,2

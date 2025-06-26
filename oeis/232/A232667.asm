@@ -17,7 +17,13 @@ lpb $2
   add $5,$3
   sub $5,$1
   mul $6,$5
-  seq $6,82446 ; a(0)=0, a(1)=1, a(2)=0; thereafter, if k>=0 and a block of the first 3*2^k terms is known, then a(3*2^k+i)=1-a(i) for 0<=i<3*2^k.
+  mov $7,$6
+  div $7,6
+  dgs $7,2
+  add $6,$7
+  sub $6,1
+  gcd $6,2
+  sub $6,1
   mul $6,2
   mov $3,$6
   mul $3,$1

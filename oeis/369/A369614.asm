@@ -1,6 +1,7 @@
 ; A369614: Maximal size of Condorcet domain on n alternatives.
 ; Submitted by BrandyNOW
 ; 1,1,2,4,9,20,45,100,224
+; Formula: a(n) = b(n)+1, b(n) = (b(n-4)<=1)+2*b(n-1)-b(n-3)+b(n-2), b(5) = 19, b(4) = 8, b(3) = 3, b(2) = 1, b(1) = 0, b(0) = 0
 
 lpb $0
   sub $0,1

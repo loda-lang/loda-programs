@@ -11,8 +11,13 @@ pow $2,3
 lpb $2
   sub $2,2
   mov $5,$1
-  seq $5,154115 ; Numbers n such that n + 3 is prime.
-  add $5,3
+  add $5,1
+  mov $6,$5
+  seq $6,40 ; The prime numbers.
+  div $6,2
+  mov $5,$6
+  mul $5,2
+  add $5,1
   mov $3,$5
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   seq $3,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.

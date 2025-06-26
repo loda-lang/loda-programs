@@ -9,7 +9,8 @@ mov $1,2
 mov $2,9998
 lpb $2
   mov $3,$1
-  seq $3,4092 ; Sum of digits of even numbers.
+  mul $3,2
+  dgs $3,10
   equ $3,4
   sub $0,$3
   add $1,9

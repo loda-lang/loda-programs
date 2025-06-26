@@ -10,7 +10,8 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,336466 ; Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
+  seq $5,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
+  dir $5,2
   mov $3,$1
   add $3,1
   seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.

@@ -10,7 +10,16 @@ lpb $4
   add $0,$4
   mov $7,$0
   bin $7,2
-  seq $7,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  add $7,1
+  mov $8,$7
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  add $8,1
+  pow $8,2
+  sub $8,$7
+  mov $7,$8
   add $7,2
   mov $2,$7
   mul $7,8
@@ -20,15 +29,46 @@ lpb $4
   add $2,$7
   mov $7,$2
   add $7,1
-  mov $1,$7
-  seq $1,319573 ; The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
+  mov $1,$2
+  add $1,2
+  mov $9,$1
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  add $10,1
+  bin $10,2
+  sub $1,$10
+  sub $1,1
+  mov $11,$9
+  mod $11,2
+  sub $9,$1
+  mul $9,$11
+  mul $11,$1
+  sub $1,$11
+  add $1,$9
   add $1,$7
   add $7,1
-  seq $7,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $12,$7
+  mul $12,8
+  nrt $12,2
+  add $12,1
+  div $12,2
+  bin $12,2
+  sub $7,$12
   sub $1,$7
   mov $7,$1
-  add $7,1
-  seq $7,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  add $7,2
+  mov $13,$7
+  mul $13,8
+  nrt $13,2
+  sub $13,1
+  div $13,2
+  add $13,1
+  pow $13,2
+  sub $13,$7
+  mov $7,$13
   seq $7,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
   mov $0,$7
   mov $3,$4

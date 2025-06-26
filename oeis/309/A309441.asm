@@ -1,6 +1,7 @@
 ; A309441: Number of ON (black) cells in the n-th iteration of the "honeycomb" elementary cellular automaton with rule 4124, starting with a single ON (black) cell (see Comments for precise definition).
 ; Submitted by Schildkroete
 ; 1,2,2,2,4,2,4,4,4,6,4,6,8,2,4,4,4,8,4,8,8,8,12,8,12,14,4,8,8,6,12,8,12,16,12,18,12,14,16,12,16,10,8,16,12,16,20,12,16,20,12,20,16,16,24,18,24,20,16,16,16,24,24,20,20,22,24,20,32,30,20,20,28,18,28,32,24,32,28,26
+; Formula: a(n) = sumdigits(b(n),2)*sign(b(n)), b(n) = sign(3*sign(sign(3*sign(b(n-1))*sign(4*b(n-1))+sign(4*b(n-1))+sign(b(n-1)))*bitxor(abs(b(n-1)),abs(4*b(n-1)))-b(n-1))*sign(8*b(n-1))+sign(8*b(n-1))+sign(sign(3*sign(b(n-1))*sign(4*b(n-1))+sign(4*b(n-1))+sign(b(n-1)))*bitxor(abs(b(n-1)),abs(4*b(n-1)))-b(n-1)))*bitxor(abs(sign(3*sign(b(n-1))*sign(4*b(n-1))+sign(4*b(n-1))+sign(b(n-1)))*bitxor(abs(b(n-1)),abs(4*b(n-1)))-b(n-1)),abs(8*b(n-1))), b(0) = 1
 
 mov $1,1
 lpb $0

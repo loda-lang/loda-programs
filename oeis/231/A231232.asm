@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,76297 ; Prime(n)+ s*n is prime, s=2.
+seq $0,76297 ; Numbers k such that prime(k) + s*k is prime, s=2.
 seq $0,40 ; The prime numbers.

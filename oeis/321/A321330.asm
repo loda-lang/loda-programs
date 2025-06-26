@@ -4,6 +4,4 @@
 
 add $0,1
 seq $0,227830 ; Denominators of coefficients in expansion of x/(exp(x)-1).
-lpb $0
-  dif $0,3
-lpe
+dir $0,3

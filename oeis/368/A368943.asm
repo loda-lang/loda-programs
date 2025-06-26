@@ -1,6 +1,7 @@
 ; A368943: Number of unlabeled mappings from n points to themselves with unique square root (endofunctions).
 ; Submitted by omegaintellisys
 ; 1,1,1,1,3,7,11,23,50
+; Formula: a(n) = floor((floor(binomial(n,2)/2)^4)/(((binomial(n,2)^2)==0)+binomial(n,2)^2))+1
 
 bin $0,2
 mov $2,$0

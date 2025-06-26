@@ -1,6 +1,7 @@
 ; A210607: Vertex number of an L-toothpick structure which give Recamán's sequence A005132.
 ; Submitted by BrandyNOW
 ; 0,1,4,9,12,16,20,25,36
+; Formula: a(n) = floor(((sqrtint(n*((4*n)>=12))+n)^2)/4)
 
 #offset 1
 

@@ -16,7 +16,13 @@ lpb $2
   sub $2,$5
   mov $3,$2
   max $3,0
-  seq $3,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  add $7,2
+  div $7,2
+  bin $7,2
+  equ $3,$7
   add $5,$4
   add $1,$3
   mov $4,3

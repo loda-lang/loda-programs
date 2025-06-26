@@ -17,7 +17,17 @@ lpb $2
   sub $0,1
   sub $1,1
   mov $4,$0
-  seq $4,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
+  add $4,1
+  mov $5,$4
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  bin $6,2
+  sub $4,1
+  sub $4,$6
+  bin $4,$5
   seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   mul $0,$4
   mul $3,3

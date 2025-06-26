@@ -1,7 +1,24 @@
 ; A256078: Write n in binary, exchange digits '0' <-> '1'.
 ; Submitted by Stony666
 ; 1,0,1,0,11,10,1,0,111,110,101,100,11,10,1,0,1111,1110,1101,1100,1011,1010,1001,1000,111,110,101,100,11,10,1,0,11111,11110,11101,11100,11011,11010,11001,11000,10111,10110,10101,10100,10011,10010,10001,10000,1111,1110,1101,1100,1011,1010,1001,1000,111,110,101,100,11,10,1,0,111111,111110,111101,111100,111011,111010,111001,111000,110111,110110,110101,110100,110011,110010,110001,110000
-; Formula: a(n) = A007088(A035327(n))
 
-seq $0,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,$0
+max $1,1
+log $1,2
+add $1,1
+mov $2,$0
+mov $0,2
+pow $0,$1
+sub $0,$2
+mov $3,0
+mov $4,1
+sub $0,1
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

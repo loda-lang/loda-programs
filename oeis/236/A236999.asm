@@ -6,6 +6,4 @@
 add $0,2
 bin $0,2
 sub $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

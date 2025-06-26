@@ -6,6 +6,4 @@
 
 seq $0,337194 ; a(n) = 1 + A000265(sigma(n)), where A000265 gives the odd part.
 seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

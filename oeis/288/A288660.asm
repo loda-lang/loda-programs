@@ -12,9 +12,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,111393 ; Number of digits in n^3.
-  sub $3,1
+  pow $3,3
+  mov $5,$3
+  mul $5,10
+  log $5,10
+  mov $3,$5
   add $3,$4
+  sub $3,1
   gcd $3,2
   sub $0,$3
   add $0,1

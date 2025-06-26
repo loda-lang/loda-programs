@@ -1,6 +1,7 @@
 ; A349317: Triangle T(n,k): T(n,k) = 1 if gcd(n, k) > 1, else 0.
 ; Submitted by Science United
 ; 0,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,0
+; Formula: a(n) = binomial(0,gcd(truncate((sqrtint(8*n)+1)/2),-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)==1)
 
 #offset 1
 

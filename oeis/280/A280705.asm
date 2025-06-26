@@ -1,7 +1,12 @@
 ; A280705: a(n) = A002110(A280700(n)) = A046523(A283475(n)).
 ; Submitted by Jamie Morken(w1)
 ; 1,2,6,2,30,2,6,30,210,2,6,30,30,210,30,30,2310,2,6,30,30,210,30,30,210,2310,30,30,210,210,30,210,30030,2,6,30,30,210,30,30,210,2310,30,30,210,210,30,210,2310,30030,30,30,210,210,30,210,2310,2310,30,210,210,2310,30030,210,510510,2,6,30,30,210,30,30,210,2310,30,30,210,210,30,210
-; Formula: a(n) = A002110(A280700(n))
+; Formula: a(n) = A002110(sumdigits(2*n-sumdigits(2*n,2),2)*sign(2*n-sumdigits(2*n,2)))
 
-seq $0,280700 ; Binary weight of terms of A005187: a(n) = A000120(A005187(n)).
+mul $0,2
+mov $1,$0
+dgs $0,2
+sub $1,$0
+dgs $1,2
+mov $0,$1
 seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.

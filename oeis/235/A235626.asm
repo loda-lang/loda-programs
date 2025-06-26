@@ -12,7 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
-  seq $3,37465 ; Sum{d(i)*6^i: i=0,1,...,m}, where Sum{d(i)*5^i: i=0,1,...,m} is the base 5 representation of n.
+  seq $3,37465 ; a(n) = Sum_{i=0..m} d(i)*6^i, where Sum_{i=0..m} d(i)*5^i is the base 5 representation of n.
   mul $3,2
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

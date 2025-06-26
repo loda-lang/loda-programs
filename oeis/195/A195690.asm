@@ -11,7 +11,17 @@ lpb $2
   add $3,1
   mov $4,$3
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  seq $3,146076 ; Sum of even divisors of n.
+  mov $7,$3
+  sub $7,1
+  mov $6,$3
+  div $6,2
+  dir $6,2
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,$3
+  bxo $5,$7
+  sub $5,1
+  mul $5,$6
+  mov $3,$5
   add $3,$4
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,2

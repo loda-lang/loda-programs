@@ -9,7 +9,15 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,2448 ; Expansion of Jacobi theta function theta_4(x).
+  mov $6,$2
+  nrt $2,2
+  pow $2,2
+  equ $2,$6
+  mul $2,-1
+  pow $2,$6
+  mul $2,2
+  equ $6,0
+  sub $2,$6
   mod $5,2
   add $5,1
   add $1,$2

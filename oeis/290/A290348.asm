@@ -1,7 +1,7 @@
 ; A290348: Denominators of the Harary index for the n-halved cube graph.
 ; Submitted by Arkhenia
 ; 1,1,1,1,1,3,3,3,1,5,5,15,15,105,105,105,105,315,315,315,315,3465,3465,3465,693,9009,3003,3003,3003,5005,5005,5005,5005,85085,17017,153153,153153,2909907,2909907,14549535
-; Formula: a(n) = truncate(A000142(n)/gcd(A000142(n),64*A279683(n)))
+; Formula: a(n) = truncate((n!)/gcd(n!,64*A279683(n)))
 
 #offset 1
 

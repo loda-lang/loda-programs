@@ -1,6 +1,7 @@
 ; A295890: a(n) = 1 if binary weights of n and 3n have different parity, 0 otherwise; a(n) = A010060(n) XOR A010060(3n).
 ; Submitted by Tom Poleski
 ; 0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1
+; Formula: a(n) = sumdigits(bitxor(floor(n/2)+n,floor(n/2)),2)*sign(bitxor(floor(n/2)+n,floor(n/2)))-2*truncate((sumdigits(bitxor(floor(n/2)+n,floor(n/2)),2)*sign(bitxor(floor(n/2)+n,floor(n/2))))/2)
 
 mov $1,$0
 div $0,2

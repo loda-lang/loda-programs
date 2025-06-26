@@ -18,10 +18,27 @@ lpb $4
   mov $2,$5
   sub $2,$4
   mov $1,$2
-  seq $1,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
+  mul $1,8
+  nrt $1,2
+  add $1,1
+  div $1,2
+  mov $6,$1
+  bin $1,2
+  mov $7,$2
+  sub $7,$1
+  div $6,$7
+  mov $1,$6
   seq $1,2321 ; Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
+  mov $8,$2
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  bin $9,2
   sub $2,1
-  seq $2,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
+  sub $2,$9
+  bin $2,$8
   mul $2,$1
   add $3,$2
 lpe

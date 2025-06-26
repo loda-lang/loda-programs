@@ -1,4 +1,4 @@
-; A211885: Number of lower triangular n X n arrays of integers 0 upwards introduced in row major order, with each element unique in its row and column, and containing the value n(n+1)/2-2
+; A211885: Number of lower triangular n X n arrays of integers 0 upwards introduced in row major order, with each element unique in its row and column, and containing the value n(n+1)/2-2.
 ; Submitted by Stony666
 ; 0,2,8,26,66,141,267,463,751
 

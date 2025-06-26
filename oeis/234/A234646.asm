@@ -1,7 +1,13 @@
 ; A234646: Sum of the distinct prime divisors of n^3 + 1.
 ; 0,2,3,9,18,12,38,45,22,80,31,42,39,166,69,213,258,25,326,14,137,434,486,18,91,616,41,65,786,281,111,28,345,177,1135,402,147,95,90,1490,271,559,1766,165,639,315,175,115,105,201,82,2566,439,924,432,2980,114,165,3366,180,3602,563,120,3909,164,108,687,4442,64,46,4902,1662,5186,797,1809,102,5719,1969,6086,6170
-; Formula: a(n) = A008472(n^3+1)
 
+mov $1,0
 pow $0,3
 add $0,1
-seq $0,8472 ; Sum of the distinct primes dividing n.
+lpb $0
+  mov $2,$0
+  seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  dir $0,$2
+  add $1,$2
+lpe
+mov $0,$1

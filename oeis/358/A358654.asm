@@ -4,7 +4,5 @@
 
 add $0,1
 seq $0,353654 ; Numbers whose binary expansion has the same number of trailing 0 bits as other 0 bits.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2

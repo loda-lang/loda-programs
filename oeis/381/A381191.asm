@@ -1,6 +1,7 @@
 ; A381191: Order of the minimal polynomial for the n-th smallest Pisot number.
 ; Submitted by loader3229
 ; 3,4,5,3,6,5,7,6,5,8
+; Formula: a(n) = -(((floor((sqrtint(4*n-3)^2)/4)+1)==sqrtint(4*n-3))+1)*(-floor((sqrtint(4*n-3)^2)/4)+n-1)+sqrtint(4*n-3)+2
 
 #offset 1
 

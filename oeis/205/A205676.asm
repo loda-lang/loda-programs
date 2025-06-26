@@ -13,7 +13,20 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,18900 ; Sums of two distinct powers of 2.
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $8,$7
+  bin $8,2
+  sub $3,$8
+  sub $3,1
+  mov $8,2
+  pow $8,$3
+  mov $3,2
+  pow $3,$7
+  add $3,$8
   seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   mov $6,$3
   seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.

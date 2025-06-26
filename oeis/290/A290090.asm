@@ -15,7 +15,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $4,1
-  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $0,2
   mul $1,$0
   mod $1,2
   add $3,$1

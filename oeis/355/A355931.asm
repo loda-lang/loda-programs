@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,9194 ; a(n) = gcd(n, sigma(n)).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

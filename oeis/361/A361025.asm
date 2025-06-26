@@ -4,8 +4,18 @@
 
 #offset 1
 
+mov $5,$0
+sub $5,1
+mov $4,$0
+dir $4,2
+seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $3,$0
+bxo $3,$5
+mul $3,$4
+lex $3,2
 mov $1,$0
-seq $1,286357 ; One more than the exponent of the highest power of 2 dividing sigma(n): a(n) = A001511(A000203(n)).
+mov $1,$3
+add $1,1
 mul $0,2
 mov $2,$0
 sub $2,1

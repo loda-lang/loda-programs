@@ -10,7 +10,10 @@ add $2,9
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,374045 ; a(n) = 1 if A328845(n) is even, otherwise 0, where A328845 is the first Fibonacci based variant of arithmetic derivative.
+  dir $3,3
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  add $3,1
+  mod $3,2
   equ $3,0
   sub $0,$3
   add $1,1

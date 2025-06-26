@@ -12,7 +12,12 @@ lpb $0
   mov $5,$2
   mul $5,3
   add $5,1
-  seq $5,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+  mov $6,$5
+  dir $6,3
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $5,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
+  mul $5,2
+  sub $5,$6
   add $1,$5
   mov $3,2
   add $3,$4

@@ -1,4 +1,4 @@
-; A206424: The number of 1's in row n of Pascal's Triangle (mod 3)
+; A206424: The number of 1's in row n of Pascal's Triangle (mod 3).
 ; Submitted by Simon Strandgaard
 ; 1,2,2,2,4,4,2,4,5,2,4,4,4,8,8,4,8,10,2,4,5,4,8,10,5,10,14,2,4,4,4,8,8,4,8,10,4,8,8,8,16,16,8,16,20,4,8,10,8,16,20,10,20,28,2,4,5,4,8,10,5,10,14,4,8,10,8,16,20,10,20,28,5,10,14,10,20,28,14,28
 ; Formula: a(n) = truncate(A285326(A006047(n))/2)

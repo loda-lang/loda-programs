@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,337194 ; a(n) = 1 + A000265(sigma(n)), where A000265 gives the odd part.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

@@ -11,9 +11,41 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
-  seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+  mov $6,$3
+  mul $3,4
+  sub $3,3
+  nrt $3,2
+  mov $5,$3
+  pow $5,2
+  div $5,4
+  sub $6,$5
+  mov $5,$6
+  mov $6,$3
+  sub $6,$5
+  bin $6,2
+  add $6,$3
+  mov $7,$6
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  mov $3,$6
+  sub $3,$9
   sub $3,1
-  seq $3,120986 ; Triangle read by rows: T(n,k) is the number of ternary trees with n edges and having k middle edges (n >= 0, k >= 0).
+  bin $7,$3
+  mul $3,-1
+  add $3,$8
+  mul $8,2
+  add $8,2
+  bin $8,$3
+  add $3,1
+  mul $7,$8
+  div $7,$3
+  mov $3,$7
   equ $3,1
   sub $0,$3
   add $1,1

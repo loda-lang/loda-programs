@@ -1,6 +1,7 @@
 ; A287523: Fixed point starting with 1 of the morphism 0->01, 1->101.
 ; Submitted by zombie67 [MM]
 ; 1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0
+; Formula: a(n) = ((sqrtint((n-2)*(5*n-10))+n-2)==1)-sqrtint((truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+2)*(5*truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+10))-truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)-2*truncate((((sqrtint((n-2)*(5*n-10))+n-2)==1)-sqrtint((truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+2)*(5*truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+10))-truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)-3)/2)-2
 
 #offset 1
 

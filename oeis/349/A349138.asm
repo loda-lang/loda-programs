@@ -14,7 +14,10 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,349137 ; a(n) = phi(A003602(n)), where A003602 is Kimberling's paraphrases, and phi is Euler totient function.
+  dir $0,2
+  div $0,2
+  add $0,1
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $1,$0
   add $3,$1
 lpe

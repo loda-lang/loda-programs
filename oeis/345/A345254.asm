@@ -1,11 +1,31 @@
 ; A345254: Dispersion of A004754, a rectangular array T(n,k) read by downward antidiagonals.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,8,9,10,7,16,17,18,11,12,32,33,34,19,20,13,64,65,66,35,36,21,14,128,129,130,67,68,37,22,15,256,257,258,131,132,69,38,23,24,512,513,514,259,260,133,70,39,40,25,1024,1025,1026,515,516,261,134
-; Formula: a(n) = A139706(A288870(n-1)-1)
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+mov $5,1
+sub $0,$3
 sub $0,1
-seq $0,288870 ; Triangle T from array A(k,n) = (2*k+1)*2^n + 1, k >=0, n >= 0 read by downwards antidiagonals.
-sub $0,1
-seq $0,139706 ; Take n in binary. Rotate the binary digits to the right until a 1 once again appears as the leftmost digit. Convert back into decimal for a(n).
+sub $1,$0
+mov $2,2
+pow $2,$1
+mul $0,$2
+mul $0,2
+add $0,$2
+mov $4,$0
+lpb $4
+  div $4,2
+  dif $0,2
+  mul $5,2
+lpe
+add $0,$5
+div $0,2

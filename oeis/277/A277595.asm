@@ -11,7 +11,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,14
-  seq $3,65881 ; Ultimate modulo 10: right-hand nonzero digit of n.
+  dir $3,10
+  mod $3,10
   sub $3,1
   equ $3,5
   sub $0,$3

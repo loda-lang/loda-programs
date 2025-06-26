@@ -1,7 +1,6 @@
 ; A252650: Expansion of (eta(q) * eta(q^2) * eta(q^3) / eta(q^6))^2 in powers of q.
 ; Submitted by Simon Strandgaard
 ; 1,-2,-3,4,6,6,-12,-16,-3,4,36,12,-12,-28,-24,24,6,18,-12,-40,-18,32,72,24,-12,-62,-42,4,48,30,-72,-64,-3,48,108,48,-12,-76,-60,56,36,42,-96,-88,-36,24,144,48,-12,-114,-93,72,84,54,-12,-144,-24,80,180,60,-72,-124,-96,32,6,84,-144,-136,-54,96,288,72,-12,-148,-114,124,120,96,-168,-160
-; Formula: a(n) = truncate((truncate((A186100(n)*((-1)^n+2))/3)*(3*((n+17)%3)-2)*(-1)^n)/4)
 
 mov $1,$0
 add $1,17
@@ -13,7 +12,10 @@ pow $2,$0
 mov $3,-1
 pow $3,$0
 add $3,2
-seq $0,186100 ; Expansion of 2 * a(q^2)^2 - a(q)^2 in powers of q where a() is a cubic AGM theta function.
+dir $0,2
+mul $0,3
+seq $0,281786 ; Expansion of a(q) * b(q^2) + a(q^2) * b(q) in powers of q where a(), b() are cubic AGM functions.
+div $0,2
 mul $0,$3
 div $0,3
 mul $0,$2

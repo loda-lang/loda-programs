@@ -8,8 +8,13 @@ sub $0,1
 lpb $0
   mov $2,$0
   mul $2,2
-  seq $2,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
-  add $2,1
+  mov $4,$0
+  mul $4,16
+  nrt $4,2
+  add $4,1
+  div $4,2
+  bin $4,2
+  sub $2,$4
   mov $3,$2
   mod $3,2
   sub $0,$2

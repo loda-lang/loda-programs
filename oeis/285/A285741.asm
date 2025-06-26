@@ -2,6 +2,14 @@
 ; Submitted by Skillz
 ; 1,2,2,4,2,4,4,8,2,4,4,8,4,8,8,16,2,4,4,8,4,8,8,16,4,8,8,16,8,16,16,77,2,4,4,8,4,8,8,16,4,8,8,16,8,16,16,77,4,8,8,16,8,16,16,77,8,16,16,77,16,77,77,154,2,4,4,8,4,8,8,16,4,8,8,16,8,16,16,77
 
+mov $1,1
 dif $0,2
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-seq $0,1127 ; Trajectory of 1 under map x->x + (x-with-digits-reversed).
+dgs $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  add $1,$2
+lpe
+mov $0,$2

@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

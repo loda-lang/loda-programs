@@ -1,9 +1,23 @@
 ; A353110: Binary representation of A000422(n).
 ; Submitted by Jamie Morken(w3)
 ; 1,10101,101000001,1000011100001,1101010000110001,10011111101111110001,11101001100101110110001,101001110010111111110110001,111010110111100110100010110001,1010001110111010100100110010110001
-; Formula: a(n) = A007088(A014925(n))
 
 #offset 1
 
-seq $0,14925 ; Number of zeros in numbers 1 to 111...1 (n+1 digits).
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,10
+pow $1,$0
+mul $0,$1
+div $1,9
+mov $2,0
+mov $3,1
+sub $0,$1
+div $0,9
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2

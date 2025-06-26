@@ -1,6 +1,7 @@
 ; A265317: The number of partitions of 2n having segment structure symmetry.
 ; Submitted by BrandyNOW
 ; 1,1,3,5,10,17,33,53
+; Formula: a(n) = (0==n)+floor((2*binomial(n+3,0)*2^n)/floor((n+3)/2))+floor((n+3)/2)-3
 
 mov $1,2
 pow $1,$0

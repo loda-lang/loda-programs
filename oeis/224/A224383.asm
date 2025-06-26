@@ -12,8 +12,30 @@ lpb $2
   sub $2,2
   mov $3,$1
   add $3,1
-  seq $3,224380 ; Table read by antidiagonals of numbers of form (2^n -1)*2^(m+2) + 3 where n>=1, m>=1.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $3,$8
   sub $3,1
+  sub $6,$3
+  add $3,2
+  mov $7,2
+  pow $7,$3
+  sub $7,2
+  mov $3,$7
+  mov $7,2
+  pow $7,$6
+  mul $7,$3
+  mov $3,$7
+  sub $3,2
+  div $3,2
+  mul $3,8
+  add $3,10
   mov $5,$3
   add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

@@ -1,6 +1,6 @@
 ; A371790: Number of non-quanimous subsets of {1..n} containing n, meaning there is only one set partition with equal block-sums.
 ; Submitted by Dirk Broer
-; 1,2,3,6,11,21,40,77,144,279
+; 1,2,3,6,11,21,40,77,144,279,517,1004,1882,3635,6912,13223,25163,48927,93770,182765,355226,688259,1333939,2617253,5109865,10012410,19624287,38356485,74987607,147268359
 
 #offset 1
 

@@ -1,6 +1,7 @@
 ; A370301: Least number of vertices of a universal graph for cycles up to length n, i.e., a graph containing induced cycles of lengths 3..n.
 ; Submitted by Skillz
 ; 3,5,6,7,9,10,11,12,13,14,16
+; Formula: a(n) = -(truncate((7*n-19)/6)==0)+truncate((7*n-19)/6)+4
 
 #offset 3
 

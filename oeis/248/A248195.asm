@@ -6,7 +6,18 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,248196 ; Numbers k such that A248180(k+1) = A248180(k) + 1.
+  add $3,2
+  mov $4,$3
+  mov $5,1
+  add $5,$3
+  add $3,$5
+  bin $3,$5
+  mul $4,2
+  bin $4,$5
+  add $3,$4
+  div $3,2
+  mul $3,2
+  log $3,2
   sub $3,1
   add $0,1
   add $1,1

@@ -1,10 +1,59 @@
 ; A219859: Triangular array read by rows: T(n,k) is the number of endofunctions, functions f:{1,2,...,n}->{1,2,...,n}, that have exactly k elements with no preimage; n>=0, 0<=k<=n.
 ; Submitted by Leviathan
 ; 1,1,0,2,2,0,6,18,3,0,24,144,84,4,0,120,1200,1500,300,5,0,720,10800,23400,10800,930,6,0,5040,105840,352800,294000,63210,2646,7,0,40320,1128960,5362560,7056000,2857680,324576,7112,8,0,362880,13063680,83825280,160030080,105099120,23496480,1524600,18360,9,0
-; Formula: a(n) = A131689(A061579(n))*A007318(A061579(n))
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-mov $1,$0
-seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+add $2,1
+pow $2,2
+sub $2,$0
+mov $9,0
+mov $10,0
+mov $1,$2
+add $1,1
+mov $3,$1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $4,$1
+add $4,1
+bin $4,2
+sub $3,$4
+sub $3,1
+mov $11,0
+bin $1,$3
+mov $7,0
+mov $0,$2
+add $0,1
+mov $5,$0
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $0,$6
+mov $6,$0
+mov $0,$5
+mov $5,$6
+lpb $5
+  sub $5,1
+  mov $8,$5
+  pow $8,$0
+  sub $9,$11
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $10,$9
+  mov $11,1
+  add $7,1
+  mul $9,0
+lpe
+mov $0,$10
 mul $0,$1

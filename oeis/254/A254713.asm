@@ -10,8 +10,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $3,$1
-  seq $3,35026 ; Number of times that i and 2n-i are both prime, for i = 1, ..., 2n-1.
+  seq $3,45917 ; From Goldbach problem: number of decompositions of 2n into unordered sums of two primes.
+  mul $3,2
+  sub $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

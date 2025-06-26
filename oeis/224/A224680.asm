@@ -6,4 +6,4 @@
 #offset 1
 
 pow $0,2
-seq $0,224678 ;  L.g.f.: -log(1 - Sum_{n>=1} x^(n*(n+1)/2))  =  Sum_{n>=1} a(n)*x^n/n.
+seq $0,224678 ; L.g.f.: -log(1 - Sum_{n>=1} x^(n*(n+1)/2)) = Sum_{n>=1} a(n)*x^n/n.

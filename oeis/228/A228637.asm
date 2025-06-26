@@ -1,4 +1,4 @@
-; A228637: The number triangle associated with the polynomials V_n(x)
+; A228637: The number triangle associated with the polynomials V_n(x).
 ; Submitted by Penguin
 ; 1,-1,1,-1,1,1,1,1,3,1,1,1,11,5,1,-1,1,41,29,7,1,-1,1,153,169,55,9,1,1,1,571,985,433,89,11,1,1,1,2131,5741,3409,881,131,13,1,-1,1,7953,33461,26839,8721,1561,181,15,1
 

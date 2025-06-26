@@ -12,7 +12,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,52382 ; Numbers without 0 as a digit, a.k.a. zeroless numbers.
+  seq $3,52382 ; Numbers without 0 in the decimal expansion, colloquial 'zeroless numbers'.
   mov $5,$3
   sub $5,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

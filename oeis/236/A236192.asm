@@ -9,9 +9,14 @@ sub $0,1
 sub $2,8
 pow $2,2
 lpb $2
+  mov $7,$1
+  bxo $7,$1
+  mov $6,$1
+  seq $6,72668 ; Numbers one less than composite numbers.
+  add $7,$6
   mov $5,$1
+  mov $5,$7
   add $5,1
-  seq $5,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.

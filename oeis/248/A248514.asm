@@ -6,7 +6,10 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  seq $1,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mul $1,2
+  mov $2,$1
+  dgs $2,2
+  sub $1,$2
   mod $1,2
   add $1,1
   div $0,$1

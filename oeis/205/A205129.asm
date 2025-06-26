@@ -11,7 +11,23 @@ pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,205128 ; Ordered differences of distinct hexagonal numbers.
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $3,$5
+  sub $3,1
+  sub $4,$3
+  mul $3,4
+  add $3,5
+  add $3,$4
+  add $3,$4
+  mul $4,$3
+  add $3,$4
   gcd $3,$0
   add $1,1
   add $2,$3

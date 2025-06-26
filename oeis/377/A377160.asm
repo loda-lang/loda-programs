@@ -10,9 +10,12 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,-1
+  sub $5,$1
+  bin $5,2
+  seq $5,51903 ; Maximum exponent in the prime factorization of n.
   mov $3,$1
-  add $3,1
-  seq $3,176166 ; a(n) is the maximum exponent in the prime factorization of the n-th triangular number.
+  mov $3,$5
   trn $3,2
   min $3,1
   sub $0,$3

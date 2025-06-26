@@ -1,6 +1,7 @@
 ; A195397: Decimal expansion of shortest length, (C), of segment from side CA through incenter to side CB in right triangle ABC with sidelengths (a,b,c)=(sqrt(3),sqrt(5),sqrt(8)).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,6,1,1,7,6,7,4,0,2,9,5,1,5,5,7,4,3,0,1,9,6,1,7,7,6,1,9,1,3,8,6,0,9,9,2,5,6,8,5,5,0,2,6,1,9,9,8,1,8,8,6,9,5,5,2,9,0,1,9,7,4,2,0,0,4,3,5,5,4,8,1,6,0,9,6,5,5,3,2
+; Formula: a(n) = -10*truncate(truncate((4*d(max(6*n-6,0))+64)/truncate((c(max(6*n-6,0))+10)/(10^(n-1))))/10)+truncate((4*d(max(6*n-6,0))+64)/truncate((c(max(6*n-6,0))+10)/(10^(n-1)))), b(n) = 4*truncate((4*truncate(((b(n-1)==1)-f(n-1)+e(n-1))/3))/5), b(4) = 92, b(3) = 24, b(2) = 12, b(1) = 0, b(0) = 0, c(n) = 4*truncate((4*truncate(((b(n-1)==1)-f(n-1)+e(n-1))/3))/5)+c(n-1)+f(n-1), c(4) = 176, c(3) = 48, c(2) = 12, c(1) = 0, c(0) = 0, d(n) = 4*truncate((4*truncate(((b(n-1)==1)-f(n-1)+e(n-1))/3))/5)+c(n-1)+d(n-1)+f(n-1), d(4) = 249, d(3) = 73, d(2) = 25, d(1) = 13, d(0) = 13, e(n) = 4*truncate((4*truncate(((b(n-1)==1)-f(n-1)+e(n-1))/3))/5)+2*c(n-1)+d(n-1)+e(n-1)+f(n-1), e(4) = 420, e(3) = 123, e(2) = 38, e(1) = 13, e(0) = 0, f(n) = 4*truncate((4*truncate(((b(n-1)==1)-f(n-1)+e(n-1))/3))/5)+f(n-1), f(4) = 128, f(3) = 36, f(2) = 12, f(1) = 0, f(0) = 0
 
 #offset 1
 

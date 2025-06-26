@@ -1,7 +1,29 @@
 ; A290193: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 705", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jamie Morken(s4)
 ; 1,1,101,1011,111,101111,11111,10111111,1111111,1011111111,111111111,101111111111,11111111111,10111111111111,1111111111111,1011111111111111,111111111111111,101111111111111111,11111111111111111,10111111111111111111,1111111111111111111,1011111111111111111111,111111111111111111111,101111111111111111111111,11111111111111111111111,10111111111111111111111111,1111111111111111111111111,1011111111111111111111111111,111111111111111111111111111,101111111111111111111111111111,11111111111111111111111111111
-; Formula: a(n) = A007088(A290195(n))
 
-seq $0,290195 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 705", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+sub $0,2
+mov $2,2
+pow $2,$0
+sub $0,$2
+mov $1,$0
+bin $0,$1
+mul $0,114
+gcd $1,2
+div $0,$1
+div $0,38
+mul $0,$2
+max $0,1
+mul $0,2
+sub $0,1
+mov $3,0
+mov $4,1
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

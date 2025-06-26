@@ -1,6 +1,7 @@
 ; A359473: a(n) = 1 if the number of divisors of n is a power of 2, otherwise 0.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0
+; Formula: a(n) = truncate(A000005(n)/gcd(A000005(n),2^n))==1
 
 #offset 1
 

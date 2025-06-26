@@ -1,6 +1,7 @@
 ; A204259: Matrix given by f(i,j) = 1 + [(2i+j) mod 3], by antidiagonals.
 ; Submitted by loader3229
 ; 1,2,3,3,1,2,1,2,3,1,2,3,1,2,3,3,1,2,3,1,2,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,3,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,3,1,2,3,1,2,3,1,2,3,1,2,1,2
+; Formula: a(n) = sign(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n)*((abs(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n)-1)%3+1)
 
 #offset 1
 

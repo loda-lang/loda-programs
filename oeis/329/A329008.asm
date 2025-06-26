@@ -9,6 +9,4 @@ pow $1,$0
 add $1,1
 div $1,4
 mov $0,$1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

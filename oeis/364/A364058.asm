@@ -12,7 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,361725 ; a(n) is the largest of two middle prime factors of n if the number of primes divisors counted with multiplicity (A001222(n)) is even, otherwise is the middle prime factor of n.
+  seq $3,361725 ; a(n) is the largest of two middle prime factors of n if the number of prime divisors counted with multiplicity (A001222(n)) is even, otherwise is the middle prime factor of n.
   sub $3,2
   min $3,1
   sub $0,$3

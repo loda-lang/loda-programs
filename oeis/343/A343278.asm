@@ -15,7 +15,29 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $3,$0
-  seq $0,8278 ; Reflected triangle of Stirling numbers of 2nd kind, S(n,n-k+1), n >= 1, 1 <= k <= n.
+  mov $5,$0
+  mul $0,8
+  nrt $0,2
+  sub $0,1
+  div $0,2
+  mov $6,$0
+  add $6,1
+  pow $6,2
+  sub $6,$5
+  mov $0,$6
+  add $0,1
+  seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+  mov $7,$6
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  mov $4,$6
+  sub $4,$7
+  seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  div $0,$4
   max $1,$0
 lpe
 mov $0,$1
