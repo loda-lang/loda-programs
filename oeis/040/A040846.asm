@@ -1,12 +1,27 @@
 ; A040846: Continued fraction for sqrt(876).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by mmonnin
 ; 29,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1
-; Formula: a(n) = 10*truncate(A010163(n)/4)+A010163(n)
 
+mov $2,$0
+mod $2,8
+mov $3,10
+mov $5,8
+sub $5,$2
+min $2,$5
+mod $2,4
+mov $4,$0
+gcd $0,8
+lpb $4
+  mov $4,3
+  add $0,6
+  mov $3,7
+lpe
+mul $0,$3
+trn $0,63
+add $0,1
+add $0,$2
+div $0,2
 mov $1,$0
-seq $1,10163 ; Continued fraction for sqrt(92).
-mov $2,$1
-div $1,4
-mul $1,10
-add $1,$2
-mov $0,$1
+div $0,4
+mul $0,10
+add $0,$1

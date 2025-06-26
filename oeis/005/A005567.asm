@@ -1,16 +1,20 @@
 ; A005567: Number of walks on square lattice.
-; Submitted by Jamie Morken(s2)
+; Submitted by BrandyNOW
 ; 10,70,308,1092,3414,9834,26752,69784,176306,434382,1048812,2490636,5833006,13500754,30933368,70255008,158335434,354419190,788529700,1744831060,3841983110,8422163130,18387829488
+; Formula: a(n) = n^2+(24*n+8*n^2-16)*2^n+11*n+26
 
-add $0,1
-lpb $0
-  add $2,$0
-  add $2,4
-  add $3,$2
-  sub $0,1
-  mul $1,2
-  add $1,$3
-  mul $3,2
-lpe
-mov $0,$1
-mul $0,2
+mov $1,$0
+pow $1,2
+mov $4,2
+pow $4,$0
+mov $3,$1
+mul $3,8
+mov $2,$0
+mul $2,24
+sub $2,16
+add $2,$3
+mul $2,$4
+mul $0,11
+add $0,$1
+add $0,$2
+add $0,26

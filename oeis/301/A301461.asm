@@ -1,15 +1,7 @@
 ; A301461: Number of integers less than or equal to n whose largest prime factor is 3.
+; Submitted by shiva
 ; 0,0,0,1,1,1,2,2,2,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,6,6,6,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11
+; Formula: a(n) = A071521(floor(n/3))
 
-lpb $0
-  trn $3,2
-  mov $2,$0
-  lpb $2
-    div $2,3
-    add $1,$3
-    mov $3,2
-  lpe
-  div $0,2
-lpe
-div $1,2
-mov $0,$1
+div $0,3
+seq $0,71521 ; Number of 3-smooth numbers <= n.

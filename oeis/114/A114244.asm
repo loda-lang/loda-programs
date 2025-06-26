@@ -1,14 +1,34 @@
 ; A114244: a(n) = (n+1)*(n+2)^2*(n+3)*(7n^2 + 28n + 30)/360.
-; Submitted by NOSNHOP
+; Submitted by shiva
 ; 1,13,76,295,889,2254,5040,10242,19305,34243,57772,93457,145873,220780,325312,468180,659889,912969,1242220,1664971,2201353,2874586,3711280,4741750,6000345,7525791,9361548,11556181,14163745,17244184,20863744,25095400,30019297
-; Formula: a(n) = a(n-1)+A085463(n+1), a(0) = 1
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,85463 ; Number of 5-tuples (v1,v2,v3,v4,v5) of nonnegative integers less than n such that v1<=v4, v1<=v5, v2<=v4, v2<=v5 and v3<=v4.
+mov $3,$0
+mov $5,2
+lpb $5
+  bin $5,$4
+  add $0,$5
+  mov $4,$0
+  add $4,1
+  mov $6,$0
+  add $6,3
+  mov $8,$4
+  pow $8,2
+  bin $8,2
   sub $0,1
+  add $4,1
+  mov $7,$4
+  mul $7,2
+  bin $7,2
+  mov $4,2
+  mul $4,$6
+  mul $4,$7
+  mul $4,$8
+  div $4,720
+  mov $2,$5
+  mul $2,$4
   add $1,$2
 lpe
+min $3,1
+mul $3,$4
+sub $1,$3
 mov $0,$1

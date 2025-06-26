@@ -1,31 +1,29 @@
-; A212730: Number of 0..2 arrays of length 2*n with sum less than 2*n in any length 2n subsequence (=less than 50% duty cycle)
-; Submitted by Simon Strandgaard
+; A212730: Number of 0..2 arrays of length 2*n with sum less than 2*n in any length 2n subsequence (=less than 50% duty cycle).
+; Submitted by iBezanilla
 ; 3,31,294,2727,25048,228826,2083371,18925047,171633840,1554702516,14069962041,127240600050,1150026301089,10389276050527,93819553163854,846952848390039,7643713441711560,68967751709641564,622154460094492809,5611414120892598172,50603189798808294039,456271046946240314589,4113524690041771227240,37081493616725687253474,334239026764806555486273,3012438343915636521528141,27148380441126037848131856,244645735310960424957846999,2204459649285900561742190784,19862774999605418186160993906
+; Formula: a(n) = truncate(d(2*n)/10), b(n) = c(n-1), b(3) = -2, b(2) = -2, b(1) = 0, b(0) = -2, c(n) = truncate((n*(3*c(n-2)+2*c(n-1)))/(n+2)), c(3) = -6, c(2) = -2, c(1) = -2, c(0) = 0, d(n) = 3*d(n-1)-5*b(n-1), d(3) = 100, d(2) = 30, d(1) = 10, d(0) = 0
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mul $1,2
-add $1,1
-mov $2,$1
-mov $5,1
-mov $7,$1
-add $7,2
-add $1,1
-lpb $1
-  sub $1,1
-  sub $3,$7
-  bin $3,$1
-  sub $5,1
-  sub $1,1
-  mov $4,$5
-  sub $4,1
-  bin $4,$2
-  mul $4,$3
-  add $6,$4
-  sub $7,1
-  sub $2,3
-  equ $3,3
+mov $1,3
+mov $2,-2
+mul $0,2
+lpb $0
+  sub $0,1
+  sub $5,$2
+  mul $5,3
+  sub $5,$2
+  sub $5,$2
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
+  sub $4,2
+  mul $4,$2
+  div $4,$1
+  add $1,1
+  mov $2,$3
+  mov $3,$4
 lpe
-mov $0,$6
+mov $0,$5
+div $0,10

@@ -1,18 +1,21 @@
 ; A079945: Partial sums of A079882.
-; Submitted by BrandyNOW
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,4,5,7,9,10,11,12,13,15,17,19,21,22,23,24,25,26,27,28,29,31,33,35,37,39,41,43,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111
-; Formula: a(n) = d(n+1), b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -1, b(1) = -1, b(0) = 0, c(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2)*c(n-1), c(2) = 4, c(1) = 2, c(0) = 2, d(n) = d(n-1)+gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2), d(2) = 3, d(1) = 1, d(0) = 0
+; Formula: a(n) = (floor((4*n+8)/(floor(truncate(2^logint(n+2,2))/2)+n+2))-2)*((n+2)%floor(truncate(2^logint(n+2,2))/2)+1)+floor(truncate(2^logint(n+2,2))/2)+n
 
+add $0,2
+mov $1,$0
+log $1,2
 mov $2,2
-add $0,1
-lpb $0
-  sub $0,1
-  mov $4,$3
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  gcd $3,2
-  mul $2,$3
-  add $3,$4
-lpe
-mov $0,$3
+pow $2,$1
+div $2,2
+mov $3,$0
+mod $3,$2
+add $3,1
+add $2,$0
+mul $0,4
+div $0,$2
+sub $0,2
+mul $0,$3
+add $0,$2
+sub $0,2

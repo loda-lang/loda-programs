@@ -4,5 +4,23 @@
 
 #offset 1
 
-seq $0,221919 ; Triangle of numerators of sum of two unit fractions: 1/n + 1/m, n >= m >= 1.
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+add $1,$0
+add $1,2
+add $0,1
+pow $0,2
+lpb $0
+  gcd $0,$1
+lpe
+div $1,$0
+mov $0,$1
 dif $0,2

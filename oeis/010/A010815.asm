@@ -1,23 +1,19 @@
 ; A010815: From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
-; Submitted by loader3229
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,-1,-1,0,0,1,0,1,0,0,0,0,-1,0,0,-1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,-1,0,0
 
-mul $0,3
+mul $0,24
 add $0,1
+mov $3,$0
+nrt $0,2
 mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,2
-sub $0,$2
-bin $0,$1
-mul $1,2
 add $1,1
-mul $1,$0
-mov $0,$1
+mod $1,4
+sub $1,1
+mov $2,$0
+pow $0,2
+equ $0,$3
+mul $0,$2
+mul $0,$1
 mod $0,3
 dif $0,-2

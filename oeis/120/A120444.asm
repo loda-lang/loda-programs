@@ -1,20 +1,22 @@
 ; A120444: First differences of A004125.
-; Submitted by Simon Strandgaard
+; Submitted by fzs600
 ; 0,1,0,3,-1,5,0,4,1,9,-5,11,3,5,0,15,-4,17,-3,9,7,21,-13,18,9,13,-1,27,-13,29,0,17,13,21,-20,35,15,21,-11,39,-13,41,3,11,19,45,-29,40,6,29,5,51,-13,37,-9,33,25,57,-49,59,27,21,0,45,-13,65,9,41,-5,69,-52,71,33,25,11,57,-13,77,-27,40
-; Formula: a(n) = 2*n-truncate((84*A000203(n+1)-79)/84)
 
 #offset 1
 
+mov $2,$0
 add $0,1
-mov $1,$0
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mul $1,21
-mov $2,3
-mul $2,$1
-add $2,$1
-mov $1,$2
-sub $1,79
-div $1,84
-sub $0,1
+mov $3,$0
+mov $4,$0
+dir $4,2
+seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mul $0,2
-sub $0,$1
+bxo $3,$2
+mul $3,$4
+sub $3,$0
+mov $0,$3
+add $0,2
+mov $1,13
+sub $1,$0
+mov $0,$1
+sub $0,12

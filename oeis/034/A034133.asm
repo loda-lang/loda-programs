@@ -1,18 +1,16 @@
 ; A034133: Decimal part of cube root of a(n) starts with 7: first term of runs.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 5,20,51,104,186,301,457,659,913,1226,1602,2049,2572,3177,3870,4658,5546,6540,7646,8870,10219,11698,13313,15070,16975,19035,21254,23640,26199,28935,31856,34966,38273,41782,45500,49431,53583,57961,62571
-; Formula: a(n) = truncate(((10*n+7)^3+min(n-1,0))/1000)+1
+; Formula: a(n) = truncate(((10*n+7)^3)/1000)+1
 
 #offset 1
 
-sub $0,1
 mov $3,10
 mul $3,$0
-mov $2,17
+mov $2,7
 add $2,$3
 mov $1,$2
 pow $1,3
-min $0,0
-add $0,$1
+mov $0,$1
 div $0,1000
 add $0,1

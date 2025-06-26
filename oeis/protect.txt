@@ -39,6 +39,7 @@ A004930: a(n) = floor(n*phi^15), where phi is the golden ratio, A001622.
 A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
 A005097: (Odd primes - 1)/2.
 A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
+A005563: a(n) = n*(n+2) = (n+1)^2 - 1.
 A005722: a(n) = (prime(n) - 1)^2.
 A006093: a(n) = prime(n) - 1.
 A006094: Products of 2 successive primes.
@@ -369,6 +370,7 @@ A118152: Start with 1 and repeatedly reverse the digits and add 56 to get the ne
 A118153: Start with 1 and repeatedly reverse the digits and add 57 to get the next term.
 A118154: Start with 1 and repeatedly reverse the digits and add 58 to get the next term.
 A118156: Start with 1 and repeatedly reverse the digits and add 61 to get the next term.
+A118157: Start with 1 and repeatedly reverse the digits and add 62 to get the next term.
 A118160: Start with 1 and repeatedly reverse the digits and add 48 to get the next term.
 A118163: Start with 1 and repeatedly reverse the digits and add 65 to get the next term.
 A118215: Start with 1 and repeatedly reverse the digits and add 68 to get the next term.
@@ -512,6 +514,7 @@ A177882: Trisection of A001317.
 A178064: Number of 0's in binary representation of n-th semiprime.
 A178743: a(n) = A000041(n) mod 10.
 A179262: a(n) = 2*prime(n)^2 - 1.
+A180172: a(n) = gcd(prime(n)+2, n).
 A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
 A181062: Prime powers minus 1.
