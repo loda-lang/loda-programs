@@ -8,11 +8,19 @@ sub $0,1
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,78191 ; a(n) = concatenation of n n times divided by n.
-  add $3,$2
+  mov $4,$2
+  log $4,10
+  add $4,1
+  mov $5,10
+  pow $5,$4
+  mov $4,$5
+  sub $4,1
+  pow $5,$2
+  div $5,$4
+  add $3,$5
   sub $0,1
   add $1,$3
-  add $1,$2
+  add $1,$5
 lpe
 add $1,1
 mov $0,$1

@@ -13,7 +13,6 @@ add $1,1
 seq $1,118235 ; Smallest positive number starting an interval of consecutive integers with element sum n.
 bin $1,2
 add $1,$2
-sub $0,1
 mov $0,$1
 mul $0,8
 add $0,9

@@ -6,11 +6,11 @@
 
 sub $0,1
 mov $2,$0
-mul $2,2
 pow $2,2
 lpb $2
+  add $1,1
   mov $3,$1
-  add $3,2
+  mul $3,2
   mov $5,$3
   seq $5,3558 ; Least number m > 0 such that 2^m == +-1 (mod 2n + 1).
   sub $5,$3
@@ -19,7 +19,7 @@ lpb $2
   mov $3,$6
   equ $3,0
   sub $0,$3
-  add $1,2
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
@@ -27,5 +27,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-mul $0,2
+mul $0,4
 add $0,5
