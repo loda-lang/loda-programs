@@ -1442,6 +1442,8 @@ A151516: Duplicate of A003104.
 A151565: Duplicate of A060632.
 A151796: Erroneous version of A074721.
 A151814: Erroneous version of A013579.
+A151878: Weight distribution of [255,37,91] primitive binary BCH code.
+A151909: Weight distribution of [255,45,87] primitive binary BCH code.
 A151992: Erroneous version of A003173.
 A151996: Erroneous version of A100200.
 A152137: Apparently an erroneous version of A073520.
