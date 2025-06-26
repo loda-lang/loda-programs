@@ -9,5 +9,5 @@ mov $1,$0
 seq $1,101301 ; The sum of the first n primes, minus n.
 add $0,$1
 sub $0,1
-seq $0,70320 ; Max( phi(k) : k=1,2,3,...,n ).
+seq $0,70320 ; a(n) = Max( phi(k) : k=1..n ).
 add $0,1

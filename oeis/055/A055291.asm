@@ -10,7 +10,28 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,2621 ; Expansion of 1 / ((1-x)^2*(1-x^2)*(1-x^3)*(1-x^4)).
+  mov $5,-1
+  pow $5,$2
+  mul $5,9
+  mov $6,$2
+  pow $6,3
+  mov $7,$2
+  mov $8,$2
+  mul $8,145
+  add $2,1
+  mov $9,$2
+  mod $9,12
+  equ $9,0
+  pow $7,2
+  mul $7,21
+  add $5,$6
+  add $5,$7
+  add $5,$8
+  add $5,350
+  mul $2,$5
+  div $2,576
+  add $2,1
+  sub $2,$9
   add $1,$2
   add $3,$4
   sub $4,1

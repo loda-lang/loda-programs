@@ -1,6 +1,6 @@
 ; A060075: Third column of triangle A060074.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
-; 1,14,331,12284,663061,49164554,4798037791,596372040824,91991577140521,17244625801225094,3861296322290987251,1017889493782391701364,312043142223584185393981,110072908401904868672053634
+; 1,14,331,12284,663061,49164554,4798037791,596372040824,91991577140521,17244625801225094,3861296322290987251,1017889493782391701364,312043142223584185393981,110072908401904868672053634,44269461921572566583027776711,20136444961077089693182895665904
 
 add $0,1
 mov $4,$0
@@ -9,12 +9,72 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  mov $6,$0
+  add $6,$0
+  bin $6,2
+  add $6,1
+  mov $10,$6
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  add $10,1
+  pow $10,2
+  sub $10,$6
+  mov $6,$10
+  mul $6,8
+  nrt $6,2
+  div $6,2
+  mov $7,$10
+  add $7,$6
+  mov $6,$7
+  add $6,1
+  mov $8,$7
+  add $8,2
+  mov $11,$8
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $12,$11
+  add $12,1
+  bin $12,2
+  sub $8,$12
+  sub $8,1
+  mov $13,$11
+  mod $13,2
+  sub $11,$8
+  mul $11,$13
+  mul $13,$8
+  sub $8,$13
+  add $8,$11
+  add $8,$6
+  add $6,1
+  mov $9,$6
+  mul $9,8
+  nrt $9,2
+  div $9,2
+  bin $9,2
+  sub $6,$9
+  sub $8,$6
+  mov $6,$8
+  add $6,1
+  mov $14,$6
+  mul $14,8
+  nrt $14,2
+  sub $14,1
+  div $14,2
+  add $14,1
+  pow $14,2
+  sub $14,$6
+  mov $6,$14
+  seq $6,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mov $0,$6
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   mul $4,$3
   add $1,$2
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1

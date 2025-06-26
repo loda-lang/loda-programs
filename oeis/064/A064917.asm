@@ -5,9 +5,7 @@
 #offset 2
 
 sub $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 lpb $0
   add $0,2
   seq $0,64916 ; a(n) = n/lpf(n) + lpf(n) - 1, where lpf = A020639 = least prime factor.

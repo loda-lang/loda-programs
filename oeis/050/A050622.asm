@@ -9,7 +9,16 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,122098 ; Smallest number, different from 1, which when multiplied by "n" produces a number with "n" as its rightmost digits.
+  mov $4,$3
+  log $4,10
+  add $4,1
+  mov $5,10
+  pow $5,$4
+  mov $4,$5
+  gcd $4,$3
+  div $5,$4
+  add $5,1
+  mov $3,$5
   mod $3,2
   equ $3,0
   sub $0,$3

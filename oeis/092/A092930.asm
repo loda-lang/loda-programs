@@ -15,8 +15,13 @@ lpb $5
   max $4,0
   add $4,1
   mov $6,$4
+  mov $8,$4
+  bxo $8,$4
+  mov $7,$4
+  seq $7,72668 ; Numbers one less than composite numbers.
+  add $8,$7
+  mov $4,$8
   add $4,1
-  seq $4,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mul $6,$4
   mul $0,$5
   mov $2,$5

@@ -3,8 +3,6 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 sub $0,3
 equ $0,0

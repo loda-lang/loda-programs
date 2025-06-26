@@ -1,9 +1,55 @@
 ; A051468: (Terms in A029641)/2.
 ; Submitted by mmonnin
 ; 2,3,7,8,10,15,4,25,18,5,22,56,91,98,70,32,27,78,147,189,168,102,6,105,225,336,357,270,50,330,561,693,627,7,45,176,891,1254,1320,605,253,72,52,221,2145,2574,858,325,8,273,2002,4719,4004,1183,98,9,76,400,1470
-; Formula: a(n) = truncate(A097207(A268232(n+1))/2)
 
 add $0,1
-seq $0,268232 ; Indices of 0's in A047999.
-seq $0,97207 ; Triangle read by rows: T(n,k) = binomial(n,k) + 2*binomial(n,k-1).
+mov $7,0
+mov $8,$0
+sub $0,1
+add $8,3
+pow $8,2
+lpb $8
+  mov $6,$7
+  add $6,1
+  mov $4,$6
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  add $7,1
+  mov $3,$4
+  add $3,1
+  bin $3,2
+  sub $6,$3
+  sub $6,1
+  bin $4,$6
+  mov $6,$4
+  mod $6,2
+  equ $6,0
+  sub $0,$6
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $8,$5
+  sub $8,1
+lpe
+mov $0,$7
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $1,$2
+bin $1,$0
+sub $0,1
+bin $2,$0
+mul $2,2
+add $2,$1
+mov $0,$2
 div $0,2

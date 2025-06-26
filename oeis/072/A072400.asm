@@ -3,7 +3,7 @@
 
 #offset 1
 
-seq $0,65883 ; Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
+dir $0,4
 lpb $0
   mod $0,8
 lpe

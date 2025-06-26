@@ -9,9 +9,9 @@ lpb $2
   sub $2,$0
   mov $4,$0
   seq $4,6005 ; The odd prime numbers together with 1.
-  seq $4,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $4,2
   mov $3,$0
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $3,2
   sub $3,$4
   mov $1,$3
 lpe

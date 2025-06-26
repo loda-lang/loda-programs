@@ -1,6 +1,7 @@
 ; A104570: Triangle read by rows: T(i,j) is the (i,j)-entry (1 <= j <= i) of the product R*Q of the infinite lower triangular matrices R = [1; 1,1; 1,1,1; 1,1,1,1; ...] and Q = [1; 1,3; 1,3,1; 1,3,1,3; ...].
 ; Submitted by loader3229
 ; 1,2,3,3,6,1,4,9,2,3,5,12,3,6,1,6,15,4,9,2,3,7,18,5,12,3,6,1,8,21,6,15,4,9,2,3,9,24,7,18,5,12,3,6,1,10,27,8,21,6,15,4,9,2,3,11,30,9,24,7,18,5,12,3,6,1,12,33,10,27,8,21,6,15,4,9,2,3,13,36
+; Formula: a(n) = truncate(((sign(2*sign(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+2*sign(-1)+3)*bitand(abs(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1),abs(-1))+2)*(4*sign(2*sign(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+2*sign(-1)+3)*bitand(abs(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1),abs(-1))+4)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2))/8)
 
 #offset 1
 

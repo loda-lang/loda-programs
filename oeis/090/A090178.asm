@@ -1,14 +1,19 @@
 ; A090178: a(1) = 2; for n > 1, a(n) = n + prime(n-1).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,4,6,9,12,17,20,25,28,33,40,43,50,55,58,63,70,77,80,87,92,95,102,107,114,123,128,131,136,139,144,159,164,171,174,185,188,195,202,207,214,221,224,235,238,243,246,259,272,277,280,285,292,295,306,313,320,327
-; Formula: a(n) = A008578(n)+n
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-add $0,1
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-add $1,$0
+mov $2,1
+lpb $0
+  seq $0,40 ; The prime numbers.
+  div $2,$0
+  bxo $2,$0
+  mul $0,0
+lpe
+add $1,$2
+mov $0,$2
 mov $0,$1
 add $0,1

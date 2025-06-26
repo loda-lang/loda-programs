@@ -13,10 +13,25 @@ lpb $3
   add $0,$3
   trn $0,1
   add $0,1
-  seq $0,14370 ; If n = binomial(b,2) + binomial(c,1), b > c >= 0 then a(n) = binomial(b+1,3) + binomial(c+1,2).
-  mov $4,$0
-  mul $4,$0
-  add $4,$0
+  mov $6,$0
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $0,$7
+  mov $8,$0
+  add $8,1
+  bin $8,2
+  add $6,2
+  bin $6,3
+  add $8,$6
+  mov $0,$8
+  mov $4,$8
+  mul $4,$8
+  add $4,$8
   mov $2,$3
   mul $2,$4
   add $1,$2

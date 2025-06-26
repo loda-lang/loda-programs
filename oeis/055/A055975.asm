@@ -5,9 +5,7 @@
 #offset 1
 
 mov $1,$0
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $1,$0
 div $0,2
 mov $2,-1

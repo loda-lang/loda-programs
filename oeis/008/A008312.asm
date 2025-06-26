@@ -1,9 +1,38 @@
 ; A008312: Triangle of coefficients of Chebyshev polynomials U_n(x).
 ; Submitted by zombie67 [MM]
 ; 1,2,-1,4,-4,8,1,-12,16,6,-32,32,-1,24,-80,64,-8,80,-192,128,1,-40,240,-448,256,10,-160,672,-1024,512,-1,60,-560,1792,-2304,1024,-12,280,-1792,4608,-5120,2048,1,-84,1120,-5376,11520,-11264,4096,14,-448,4032,-15360,28160,-24576,8192,-1,112,-2016,13440,-42240,67584,-53248,16384,-16,672,-8064,42240,-112640,159744,-114688,32768,1,-144,3360,-29568,126720,-292864,372736,-245760
-; Formula: a(n) = A065109(A091995(n+1)-1)
 
-add $0,1
-seq $0,91995 ; Permutation of the natural numbers.
+mov $5,0
+mov $6,0
+lpb $0
+  add $5,$6
+  equ $6,0
+  sub $0,$5
+  sub $0,$6
+lpe
+add $6,$5
+add $0,$6
+bin $0,2
+add $5,$6
+add $5,$0
+add $5,1
+mov $1,$5
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $4,$1
+add $4,1
+bin $4,2
+mov $0,$5
+sub $0,$4
 sub $0,1
-seq $0,65109 ; Triangle T(n,k) of coefficients relating to Bezier curve continuity.
+mov $2,$1
+sub $2,$0
+mov $3,-1
+pow $3,$0
+bin $1,$0
+mul $1,$3
+mov $0,2
+pow $0,$2
+mul $0,$1

@@ -1,10 +1,16 @@
 ; A105584: Fixed point of the morphism 1 -> 34, 2 -> 32, 3 -> 12, 4 -> 14, starting from a(0) = 1.
 ; Submitted by pututu
 ; 1,2,1,4,1,2,3,2,1,2,1,4,3,4,1,4,1,2,1,4,1,2,3,2,3,4,3,2,1,2,3,2,1,2,1,4,1,2,3,2,1,2,1,4,3,4,1,4,3,4,3,2,3,4,1,4,1,2,1,4,3,4,1,4,1,2,1,4,1,2,3,2,1,2,1,4,3,4,1,4
-; Formula: a(n) = n%2+2*A020987(n)+1
 
+mov $2,0
 mov $1,$0
-seq $1,20987 ; Zero-one version of Golay-Rudin-Shapiro sequence (or word).
+lpb $1
+  dir $1,2
+  div $1,2
+  add $2,$1
+lpe
+add $1,$2
+mod $1,2
 mul $1,2
 mod $0,2
 add $0,$1

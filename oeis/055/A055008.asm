@@ -10,7 +10,8 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $6,$3
-  seq $6,593 ; Sum of odd divisors of n.
+  dir $6,2
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   bxo $3,$1
   mul $3,$6
   mov $4,$1

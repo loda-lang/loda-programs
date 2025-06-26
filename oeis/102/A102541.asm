@@ -1,9 +1,55 @@
 ; A102541: Triangle read by rows, formed from antidiagonals of Losanitsch's triangle. T(n, k) = A034851(n-k, k), n >= 0 and 0 <= k <= floor(n/2).
 ; Submitted by Science United
 ; 1,1,1,1,1,1,1,2,1,1,2,2,1,3,4,1,1,3,6,2,1,4,9,6,1,1,4,12,10,3,1,5,16,19,9,1,1,5,20,28,19,3,1,6,25,44,38,12,1,1,6,30,60,66,28,4,1,7,36,85,110,66,16,1,1,7,42,110,170,126,44,4,1,8,49,146,255,236,110,20
-; Formula: a(n) = A034851(A056536(n+1)-1)
 
 add $0,1
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+mov $2,$0
+mov $5,0
+mov $8,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $1,$0
+pow $1,2
+div $1,4
+sub $2,$1
+mov $1,$2
+mov $2,$0
+sub $2,$1
+bin $2,2
+add $2,$0
+mov $3,$2
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+mov $0,$2
+sub $0,$4
 sub $0,1
-seq $0,34851 ; Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n.
+mov $4,$0
+mov $0,$3
+sub $3,$4
+add $3,1
+lpb $3
+  sub $3,1
+  mov $6,$5
+  add $6,$0
+  add $6,$3
+  sub $6,1
+  div $6,2
+  sub $6,$5
+  bin $6,$3
+  mov $7,$0
+  bin $7,$5
+  mul $7,$6
+  add $7,$8
+  mov $9,$8
+  add $5,1
+  mul $8,-3
+  add $8,$7
+lpe
+add $9,$8
+mov $0,$9

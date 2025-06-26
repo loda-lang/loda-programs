@@ -12,8 +12,10 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  add $0,1
-  seq $0,97932 ; Positive integers n such that 2n-19 is prime.
+  add $0,2
+  seq $0,40 ; The prime numbers.
+  div $0,2
+  add $0,10
   mov $5,1
   add $5,$0
   mov $0,$5

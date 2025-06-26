@@ -21,7 +21,13 @@ lpb $4
   sub $0,$4
   mov $6,$0
   seq $6,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
   seq $0,61687 ; Generalized Bell numbers: column 6 of A275043.
   mul $0,$6
   add $3,$0

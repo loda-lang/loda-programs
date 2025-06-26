@@ -4,6 +4,4 @@
 #offset 1
 
 seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

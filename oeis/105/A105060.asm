@@ -4,7 +4,13 @@
 
 #offset 1
 
-seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+sub $0,$2
 mov $1,1
 add $1,$0
 lpb $0

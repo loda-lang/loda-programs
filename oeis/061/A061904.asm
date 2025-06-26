@@ -11,7 +11,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,4159 ; Sum of digits of n^2.
+  pow $3,2
+  dgs $3,10
   sub $3,1
   seq $3,33763 ; Product t2(q^d); d | 4, where t2 = theta2(q)/(2*q^(1/4)).
   equ $3,1

@@ -12,7 +12,29 @@ mov $4,$0
 lpb $4
   sub $4,2
   mov $0,$5
-  seq $0,247453 ; T(n,k) = binomial(n,k)*A000111(n-k)*(-1)^(n-k), 0 <= k <= n.
+  add $0,1
+  mov $8,$0
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  sub $0,$9
+  sub $0,1
+  mov $9,$0
+  mov $0,$8
+  bin $0,$9
+  sub $8,$9
+  mov $10,-1
+  pow $10,$8
+  mov $11,$8
+  seq $11,122045 ; Euler (or secant) numbers E(n).
+  seq $8,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $8,$11
+  mul $8,$10
+  mul $0,$8
   mov $6,0
   gcd $6,$0
   mov $7,0

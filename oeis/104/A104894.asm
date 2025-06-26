@@ -1,6 +1,7 @@
 ; A104894: Binary array, related to the Thue-Morse sequence A010060, read by downward antidiagonals.
 ; Submitted by loader3229
 ; 0,1,0,0,1,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,0,0,0,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,0,1,1,0,1,1,1,1,1,0,0,1,0,1,1,0,0,0
+; Formula: a(n) = sumdigits(-truncate((-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)/truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1)))*truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1))-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1,2)*sign(-truncate((-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)/truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1)))*truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1))-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)-2*truncate((sumdigits(-truncate((-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)/truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1)))*truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1))-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1,2)*sign(-truncate((-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)/truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1)))*truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1))-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1))/2)
 
 mov $3,$0
 mul $3,8

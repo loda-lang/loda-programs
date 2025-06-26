@@ -10,7 +10,8 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $0,$1
-  seq $0,4164 ; Sum of digits of n^3.
+  pow $0,3
+  dgs $0,10
   add $1,$0
 lpe
 mov $0,$1

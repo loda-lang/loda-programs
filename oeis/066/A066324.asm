@@ -1,11 +1,35 @@
 ; A066324: Number of endofunctions on n labeled points constructed from k rooted trees.
 ; Submitted by zombie67 [MM]
 ; 1,2,2,9,12,6,64,96,72,24,625,1000,900,480,120,7776,12960,12960,8640,3600,720,117649,201684,216090,164640,88200,30240,5040,2097152,3670016,4128768,3440640,2150400,967680,282240,40320,43046721,76527504,89282088,79361856,55112400,29393280,11430720,2903040,362880,1000000000,1800000000,2160000000,2016000000,1512000000,907200000,423360000,145152000,32659200,3628800,25937424601,47158953820,57876897870,56123052480,44643337200,29221093440,15496034400,6439910400,1975881600,399168000,39916800,743008370688
-; Formula: a(n) = A201685(n)*A002260(n)
 
 #offset 1
 
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
 mov $1,$0
-seq $1,201685 ; Triangular array read by rows. T(n,k) is the number of connected endofunctions on {1,2,...,n} that have exactly k nodes in the unique cycle of its digraph representation.
-seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-mul $0,$1
+sub $1,$5
+sub $1,1
+mov $3,$4
+sub $4,$1
+add $3,1
+pow $3,$4
+lpb $1
+  sub $1,1
+  add $4,1
+  mul $3,$4
+lpe
+mov $1,$3
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+sub $0,$2
+mul $0,$3

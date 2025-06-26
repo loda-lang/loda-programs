@@ -5,6 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
-lpb $0
-  dif $0,4
-lpe
+dir $0,4

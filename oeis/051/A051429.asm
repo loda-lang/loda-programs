@@ -8,13 +8,28 @@ pow $2,4
 lpb $2
   sub $2,59
   mov $3,$1
-  seq $3,110813 ; A triangle of pyramidal numbers.
-  mov $5,$3
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $3,$6
+  mov $6,$7
+  bin $6,$3
+  add $7,1
+  bin $7,$3
+  add $6,$7
   add $1,1
+  mov $3,$6
   mul $3,338
   gcd $3,4
   add $3,1
   equ $3,5
+  mov $5,$6
   sub $0,$3
   mov $4,$0
   max $4,0

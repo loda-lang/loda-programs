@@ -12,8 +12,10 @@ lpb $1
   sub $1,1
   mov $5,$3
   mov $3,$2
+  mov $6,$4
+  dir $6,2
   mov $2,$4
-  seq $2,6519 ; Highest power of 2 dividing n.
+  div $2,$6
   mul $2,$3
   add $2,$5
   add $4,1

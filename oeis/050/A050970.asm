@@ -6,6 +6,4 @@
 
 sub $0,1
 seq $0,99612 ; Numerators of the coefficients in the Taylor expansion of sec(x) + tan(x) around x=0.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

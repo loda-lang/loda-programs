@@ -14,8 +14,15 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
-  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  add $4,1
+  pow $4,2
+  sub $4,$0
+  mov $0,$4
   seq $0,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
   mul $1,$0
   max $1,$0

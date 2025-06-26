@@ -4,7 +4,9 @@
 #offset 1
 
 lpb $0
-  seq $0,70939 ; Length of binary representation of n.
+  max $0,1
+  log $0,2
+  add $0,1
   add $1,$0
   sub $0,1
 lpe

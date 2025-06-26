@@ -4,7 +4,5 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 seq $0,87780 ; Number of non-congruent solutions to x^2 == 2 mod n.

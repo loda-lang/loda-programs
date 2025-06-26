@@ -10,7 +10,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,7954 ; Product of decimal digits of n.
-  seq $3,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $8,$3
+  mul $8,8
+  add $8,1
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  sub $3,$8
   mov $7,3
   mul $7,$3
   mov $6,3

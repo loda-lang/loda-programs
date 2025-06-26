@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,48 ; Number of n-bead necklaces with beads of 2 colors and primitive period n, when turning over is not allowed but the two colors can be interchanged.
+  mov $5,$0
+  seq $5,51841 ; Number of binary Lyndon words with an even number of 1's.
+  seq $0,1037 ; Number of degree-n irreducible polynomials over GF(2); number of n-bead necklaces with beads of 2 colors when turning over is not allowed and with primitive period n; number of binary Lyndon words of length n.
+  sub $0,$5
   mul $1,$0
   add $3,$1
 lpe

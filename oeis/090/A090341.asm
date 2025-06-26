@@ -13,7 +13,7 @@ lpb $3
   add $0,$3
   add $0,$3
   add $0,1
-  seq $0,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
+  seq $0,75255 ; a(n) = n - (sum of prime factors of n (with repetition)).
   mov $2,$3
   mul $2,$0
   mul $4,$3

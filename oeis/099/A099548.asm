@@ -4,7 +4,7 @@
 #offset 1
 
 sub $0,1
-seq $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+dir $0,2
 lpb $0
   mod $0,7
 lpe

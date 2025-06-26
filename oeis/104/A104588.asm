@@ -1,9 +1,14 @@
 ; A104588: Product of primes less than or equal to sqrt(n).
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,2,2,2,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210,210
-; Formula: a(n) = A034386(sqrtint(n))
 
 #offset 1
 
+mov $1,1
 nrt $0,2
-seq $0,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
+lpb $0
+  dir $1,$0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $0,$1

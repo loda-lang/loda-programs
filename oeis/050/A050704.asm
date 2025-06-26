@@ -13,7 +13,7 @@ lpb $2
   add $3,4
   mov $5,$3
   sub $3,1
-  seq $3,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
+  seq $3,75255 ; a(n) = n - (sum of prime factors of n (with repetition)).
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

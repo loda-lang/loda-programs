@@ -9,9 +9,15 @@ lpb $0
   add $3,1
   mov $4,$2
   mov $2,$1
+  mov $5,$3
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  add $6,1
   mov $1,$3
-  add $1,1
-  seq $1,107436 ; a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.
+  mov $1,$6
   mul $1,$2
   add $1,$4
 lpe

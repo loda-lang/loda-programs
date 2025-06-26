@@ -1,9 +1,76 @@
 ; A009832: Expansion of e.g.f. tanh(x)*exp(x).
 ; Submitted by mmonnin
 ; 0,1,2,1,-4,1,62,1,-1384,1,50522,1,-2702764,1,199360982,1,-19391512144,1,2404879675442,1,-370371188237524,1,69348874393137902,1,-15514534163557086904,1,4087072509293123892362,1,-1252259641403629865468284,1
-; Formula: a(n) = -A122045(n)+1
 
-seq $0,122045 ; Euler (or secant) numbers E(n).
+mov $4,0
+mov $2,$0
+add $2,1
+lpb $2
+  div $2,2
+  sub $4,$0
+  gcd $4,$2
+  mul $2,2
+  mov $3,-4
+  pow $3,$4
+  mul $4,2
+  mov $5,2
+  pow $5,$4
+  bin $4,2
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  add $8,1
+  pow $8,2
+  sub $8,$4
+  mul $4,8
+  nrt $4,2
+  div $4,2
+  mov $6,$8
+  add $6,$4
+  mov $7,$6
+  add $7,2
+  mov $9,$7
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  add $10,1
+  bin $10,2
+  mov $11,$9
+  mod $11,2
+  sub $7,1
+  sub $7,$10
+  sub $7,$11
+  add $7,$6
+  mov $4,$6
+  add $4,1
+  mov $12,$4
+  mul $12,8
+  nrt $12,2
+  div $12,2
+  bin $12,2
+  sub $4,$12
+  sub $7,$4
+  mov $4,$7
+  add $4,2
+  mov $13,$4
+  mul $13,8
+  nrt $13,2
+  sub $13,1
+  div $13,2
+  add $13,1
+  pow $13,2
+  sub $13,$4
+  mov $4,$13
+  seq $4,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mul $4,$5
+  div $4,$3
+lpe
 mov $1,1
-sub $1,$0
+sub $1,$4
+mov $0,$4
 mov $0,$1

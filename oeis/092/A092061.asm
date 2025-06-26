@@ -1,7 +1,6 @@
 ; A092061: Numbers k such that primorial(k)^2 + 1 is prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,4,5,8,16,248
-; Formula: a(n) = truncate(b(n-1)/2), b(n) = 4*c(n-2)+2*(2*c(n-3)-b(n-3))^3+2*(2*c(n-4)-b(n-4))^3, b(10) = -99606016, b(9) = 73984, b(8) = 8752, b(7) = 496, b(6) = 32, b(5) = 16, b(4) = 10, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = 2*c(n-1), c(7) = 64, c(6) = 32, c(5) = 16, c(4) = 8, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 0
 
 #offset 1
 

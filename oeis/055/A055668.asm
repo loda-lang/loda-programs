@@ -1,10 +1,18 @@
 ; A055668: Number of inequivalent Eisenstein-Jacobi primes of norm n.
 ; Submitted by Gunnar Hjern
 ; 0,0,0,1,1,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2
-; Formula: a(n) = truncate((A135461(n)*A004016(n))/6)
 
+mov $2,0
+equ $2,$0
+mov $3,$0
+dir $3,3
+seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
-seq $1,4016 ; Theta series of planar hexagonal lattice A_2.
+seq $1,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
+mul $1,2
+sub $1,$3
+mul $1,6
+add $1,$2
 seq $0,135461 ; a(n) = 1 if n is the norm of an Eisenstein prime (see A055664) otherwise 0.
 mul $0,$1
 div $0,6

@@ -7,7 +7,22 @@
 sub $0,6
 mov $1,$0
 add $0,1
-seq $0,1298 ; Stirling numbers of the second kind S(n+4, n).
+mov $2,$0
+pow $2,3
+mul $2,15
+sub $2,2
+mov $3,$0
+pow $3,2
+mul $3,30
+mov $4,$0
+mul $4,5
+add $2,$3
+add $2,$4
+add $0,4
+bin $0,5
+mul $0,120
+mul $0,$2
+div $0,5760
 add $1,6
 lpb $1
   mul $0,$1

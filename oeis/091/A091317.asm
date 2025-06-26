@@ -13,9 +13,13 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
-  add $4,2
-  seq $4,154115 ; Numbers n such that n + 3 is prime.
   add $4,3
+  mov $7,$4
+  seq $7,40 ; The prime numbers.
+  div $7,2
+  mov $4,$7
+  mul $4,2
+  add $4,1
   seq $4,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $6,$4
   seq $4,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.

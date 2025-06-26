@@ -9,8 +9,11 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $6,2
   mov $5,$1
-  seq $5,277169 ; Product of squares of proper divisors of n.
+  pow $5,$6
   mov $3,$1
   seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   div $3,$5

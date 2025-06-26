@@ -9,7 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $3,1
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $3,2
   sub $3,1
   seq $3,16 ; a(n) is the number of distinct (infinite) output sequences from binary n-stage shift register which feeds back the complement of the last stage.
   equ $3,1

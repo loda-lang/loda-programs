@@ -14,8 +14,29 @@ lpb $2
   add $4,1
   mov $3,$1
   add $3,2
-  mov $5,$3
-  seq $5,55374 ; Invert transform applied three times to Pascal's triangle A007318.
+  mov $5,$1
+  add $5,3
+  mov $8,$5
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,0
+  pow $9,$8
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $5,$7
+  sub $5,1
+  mov $7,$8
+  bin $7,$5
+  add $8,$9
+  mul $8,2
+  mov $10,2
+  pow $10,$8
+  mul $7,$10
+  mov $5,$7
+  div $5,4
   mov $6,$5
   add $6,2
   mov $3,$6

@@ -1,13 +1,45 @@
 ; A098729: Consider the sequence {b(n), n >= 1} of digits of the integers: 0 1 2 3 4 5 6 7 8 9 1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 2 0... (A033307); a(n) = b(n) + n.
 ; Submitted by Karlsson
 ; 1,3,5,7,9,11,13,15,17,19,12,12,14,15,16,18,18,21,20,24,22,27,24,30,26,33,28,36,30,39,33,32,35,35,37,38,39,41,41,44,43,47,45,50,47,53,49,56,51,59,54,52,56,55,58,58,60,61,62,64,64,67,66,70,68,73,70,76,72,79,75
-; Formula: a(n) = A007376(n-1)+n
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-seq $0,7376 ; The almost-natural numbers: write n in base 10 and juxtapose digits.
+mov $5,0
+sub $0,1
+mov $3,1
+mov $7,$0
+lpb $7
+  sub $7,1
+  mov $8,10
+  pow $8,$3
+  mov $4,$5
+  mov $5,$3
+  mul $5,$8
+  div $8,9
+  sub $5,$8
+  mov $6,$0
+  geq $6,$5
+  mul $7,$6
+  add $3,$6
+lpe
+mov $6,$0
+sub $6,$4
+mod $6,$3
+mov $7,$3
+sub $7,$6
+sub $7,1
+mov $6,10
+pow $6,$7
+mov $5,10
+pow $5,$3
+div $5,10
+sub $0,$4
+div $0,$3
+add $0,$5
+div $0,$6
+mod $0,10
 mov $1,$0
 add $1,$2
 add $1,1

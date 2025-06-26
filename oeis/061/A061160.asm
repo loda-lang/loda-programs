@@ -4,7 +4,5 @@
 
 seq $0,271236 ; G.f.: Product_{k>=1} 1/(1 - (9*x)^k)^(1/3).
 mov $1,$0
-lpb $1
-  dif $1,3
-lpe
+dir $1,3
 mov $0,$1

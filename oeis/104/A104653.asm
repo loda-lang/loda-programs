@@ -16,7 +16,19 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,193229 ; A double factorial triangle.
-  seq $0,209518 ; Triangle by rows, reversal of A104712.
+  add $0,1
+  mov $5,$0
+  mul $0,8
+  nrt $0,2
+  sub $0,1
+  div $0,2
+  mov $6,$0
+  add $6,1
+  bin $6,2
+  sub $5,$6
+  sub $5,1
+  add $0,2
+  bin $0,$5
   mul $0,$4
   add $1,$0
 lpe

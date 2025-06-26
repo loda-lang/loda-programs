@@ -1,5 +1,6 @@
 ; A066746: Conjectured values of a(n) defined by a(n) = least number of applications of f(k) = k^2 + 1 to n to yield a prime, if this number exists; = -1 otherwise.
 ; 1,0,0,1,0,1,0,3,-1,1,0
+; Formula: a(n) = -truncate((-2*truncate(binomial(-2,n-1)/2)+gcd(-2*truncate(binomial(-2,n-1)/2)+4,3)+4)/((truncate((-2*truncate(binomial(-2,n-1)/2)+4)/2)==0)+truncate((-2*truncate(binomial(-2,n-1)/2)+4)/2)))*((truncate((-2*truncate(binomial(-2,n-1)/2)+4)/2)==0)+truncate((-2*truncate(binomial(-2,n-1)/2)+4)/2))-2*truncate(binomial(-2,n-1)/2)+gcd(-2*truncate(binomial(-2,n-1)/2)+4,3)+4
 
 #offset 1
 

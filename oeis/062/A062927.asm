@@ -11,7 +11,10 @@ lpb $2
   add $3,1
   mov $4,$3
   mul $3,2
-  seq $3,4166 ; Sum of digits of 3^n.
+  mov $5,$3
+  mov $3,3
+  pow $3,$5
+  dgs $3,10
   mod $3,$4
   equ $3,0
   sub $0,$3

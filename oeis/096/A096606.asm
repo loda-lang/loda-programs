@@ -15,6 +15,15 @@ lpb $2
   trn $1,1
   mov $2,0
 lpe
+mul $1,2
+add $1,3
+mul $1,2
+div $1,3
 add $1,1
-seq $1,96607 ; a(n) = A096605(2*n).
+mul $1,2
+mov $3,$1
+dgs $1,2
+sub $3,$1
+mov $1,$3
+div $1,4
 sub $0,$1

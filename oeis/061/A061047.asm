@@ -7,6 +7,4 @@ sub $0,7
 mov $1,$0
 add $0,14
 mul $0,$1
-lpb $0
-  dif $0,7
-lpe
+dir $0,7

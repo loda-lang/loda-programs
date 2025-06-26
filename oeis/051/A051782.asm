@@ -15,7 +15,14 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,163626 ; Triangle read by rows: The n-th derivative of the logistic function written in terms of y, where y = 1/(1 + exp(-x)).
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $6,$0
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $0,$6
   mov $5,$0
   mul $0,2
   bin $0,$5

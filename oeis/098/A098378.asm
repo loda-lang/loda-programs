@@ -1,5 +1,6 @@
 ; A098378: Number of characters needed to write number n in the traditional Ethiopic (Geez) number system.
 ; 1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1
+; Formula: a(n) = ((max(n-10,0)%10)!=0)+1
 
 #offset 1
 

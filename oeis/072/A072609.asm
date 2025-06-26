@@ -15,10 +15,20 @@ lpb $3
   add $6,1
   mul $0,2
   mov $7,$0
-  add $7,1
-  seq $7,93515 ; Numbers k such that either k or k-1 is a prime.
-  mov $0,$7
-  sub $0,1
+  sub $7,1
+  mov $8,$7
+  div $7,2
+  add $7,2
+  mov $9,$7
+  seq $9,40 ; The prime numbers.
+  sub $7,4
+  sub $9,$7
+  sub $9,$7
+  add $8,$9
+  mov $7,$8
+  sub $7,4
+  mov $0,$8
+  sub $0,5
   mod $0,$6
   mod $0,2
   mov $2,$3

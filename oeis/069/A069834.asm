@@ -5,6 +5,4 @@
 
 add $0,1
 bin $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

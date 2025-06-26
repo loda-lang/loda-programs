@@ -10,9 +10,17 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  pow $6,2
+  mov $5,$1
+  add $5,1
+  seq $5,40 ; The prime numbers.
+  sub $5,1
+  add $6,$1
+  sub $6,$5
+  add $6,$1
   mov $3,$1
-  add $3,1
-  seq $3,73497 ; a(n) = n^2 - prime(n).
+  mov $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,2

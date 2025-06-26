@@ -1,13 +1,30 @@
 ; A064299: a(n) = B(n)*C(n), where B(n) are Bell numbers (A000110) and C(n) are Catalan numbers (A000108).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,4,25,210,2184,26796,376233,5920200,102816714,1947916100,39890416020,876478739164,20537052247300,510548782729680,13407568735200525,370553407586717490,10742998644116921160,325786278993936753300,10307990595756667951830,339523603280116511496240,11618291721829380141652020,412285909349896821135135720,15146770070517773626922922900,575244195039290981490150396636,22552577573595682488718638260556,911594628310322233077663224681648,37945644138393422852802195470281556
-; Formula: a(n) = A000110(n)*floor(binomial(2*n,n)/(n+1))
 
 mov $1,$0
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $1,1
+mov $3,0
+mov $5,$1
+sub $1,1
+mov $4,$1
+bin $4,2
+add $4,$1
+add $4,$5
+lpb $5
+  mov $1,$4
+  max $1,1
+  sub $1,1
+  seq $1,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  dif $3,$5
+  add $3,$1
+  sub $4,1
+  sub $5,1
+lpe
+mov $1,$3
 mov $2,$0
 mul $0,2
 bin $0,$2
 add $2,1
 div $0,$2
-mul $0,$1
+mul $0,$3

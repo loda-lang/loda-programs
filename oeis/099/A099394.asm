@@ -1,10 +1,46 @@
 ; A099394: Triangle T(k,n) by rows: n! * A075499(k,n).
 ; Submitted by stoneageman
 ; 1,4,1,16,12,2,64,112,48,6,256,960,800,240,24,1024,7936,11520,6240,1440,120,4096,64512,154112,134400,53760,10080,720,16384,520192,1978368,2612736,1612800,510720,80640,5040,65536,4177920,24780800
-; Formula: a(n) = A262616(n)*A028246(n+1)
 
 mov $1,$0
-seq $1,262616 ; Triangle read by rows: T(n,k) = 4^(n-k), n>=0, 0<=k<=n.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+add $2,3
+div $2,2
+bin $2,2
+sub $2,$1
+mov $5,0
+mov $7,0
+mov $8,0
 add $0,1
-seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+mov $1,4
+pow $1,$2
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
+mov $4,$0
+mov $0,$3
+mov $3,$4
+add $3,2
+lpb $3
+  sub $3,1
+  mov $6,$3
+  pow $6,$0
+  sub $7,$3
+  bin $7,$5
+  mul $7,$6
+  add $8,$7
+  add $5,1
+  mul $7,0
+lpe
+mov $0,$8
 mul $0,$1

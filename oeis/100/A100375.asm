@@ -4,6 +4,4 @@
 #offset 1
 
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

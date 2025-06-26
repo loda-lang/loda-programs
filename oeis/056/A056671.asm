@@ -8,8 +8,6 @@ seq $0,73184 ; Number of cubefree divisors of n.
 add $2,$0
 add $2,$0
 add $1,$2
-lpb $1
-  dif $1,3
-lpe
+dir $1,3
 mov $0,$1
 div $0,2

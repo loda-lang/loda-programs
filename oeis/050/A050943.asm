@@ -13,7 +13,14 @@ lpb $2
   mov $3,$1
   pow $3,$5
   add $3,1
-  seq $3,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  add $6,3
+  div $6,2
+  bin $6,2
+  sub $6,$3
+  mov $3,$6
   mul $3,$5
   neq $3,0
   sub $0,$3

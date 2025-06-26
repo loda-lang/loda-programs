@@ -9,8 +9,25 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $7,$1
+  div $7,5
   mov $3,$1
-  seq $3,3893 ; a(n) = Fibonacci(n) mod 10.
+  mod $3,5
+  mov $6,$3
+  add $6,1
+  div $6,3
+  mov $8,3
+  pow $8,$7
+  sub $3,$6
+  mul $3,$8
+  mod $3,5
+  mov $5,$1
+  pow $5,2
+  mod $5,3
+  bxo $5,$3
+  mod $5,2
+  mul $5,5
+  add $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

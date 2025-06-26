@@ -4,8 +4,6 @@
 
 mov $1,$0
 seq $1,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-lpb $1
-  dif $1,10
-lpe
+dir $1,10
 mov $0,$1
 mod $0,10

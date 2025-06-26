@@ -17,8 +17,14 @@ lpb $2
   sub $3,$6
   add $3,1
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $3,1
-  seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  sub $3,2
+  mov $8,$3
+  bxo $8,$3
+  mov $7,$3
+  seq $7,72668 ; Numbers one less than composite numbers.
+  add $8,$7
+  mov $3,$8
+  add $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

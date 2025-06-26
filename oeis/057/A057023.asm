@@ -6,7 +6,5 @@
 
 seq $0,40 ; The prime numbers.
 div $0,2
-lpb $0
-  dif $0,4
-lpe
+dir $0,4
 dif $0,2

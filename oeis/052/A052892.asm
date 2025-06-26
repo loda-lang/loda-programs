@@ -13,7 +13,17 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
+  add $4,1
+  mov $5,$4
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  bin $6,2
+  sub $4,1
+  sub $4,$6
+  bin $4,$5
   add $0,1
   seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
   mul $0,$4

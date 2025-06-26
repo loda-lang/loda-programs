@@ -1,10 +1,10 @@
 ; A104033: Triangle, read by rows, equal to the matrix inverse of triangle A103327, where A103327(n,k) = binomial(2*n+1,2*k+1).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,-3,1,25,-10,1,-427,175,-21,1,12465,-5124,630,-36,1,-555731,228525,-28182,1650,-55,1,35135945,-14449006,1782495,-104676,3575,-78,1,-2990414715,1229758075,-151714563,8912475,-305305,6825,-105,1,329655706465,-135565467080,16724709820,-982532408
-; Formula: a(n) = A119879(truncate((sqrtint(8*n+1)+1)/2)^2+max(0,n)+n+1)
 
 max $1,$0
 add $1,$0
+mov $6,0
 mul $0,8
 add $0,1
 nrt $0,2
@@ -12,5 +12,86 @@ add $0,1
 div $0,2
 pow $0,2
 add $0,$1
-add $0,1
-seq $0,119879 ; Exponential Riordan array (sech(x),x).
+add $0,2
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
+mov $3,$0
+mov $0,$2
+bin $0,$3
+sub $2,$3
+mov $4,$2
+add $4,1
+lpb $4
+  div $4,2
+  sub $6,$2
+  gcd $6,$4
+  mul $4,2
+  mov $5,-4
+  pow $5,$6
+  mul $6,2
+  mov $7,2
+  pow $7,$6
+  bin $6,2
+  add $6,1
+  mov $10,$6
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  add $10,1
+  pow $10,2
+  sub $10,$6
+  mul $6,8
+  nrt $6,2
+  div $6,2
+  mov $8,$10
+  add $8,$6
+  mov $9,$8
+  add $9,2
+  mov $11,$9
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $12,$11
+  add $12,1
+  bin $12,2
+  mov $13,$11
+  mod $13,2
+  sub $9,1
+  sub $9,$12
+  sub $9,$13
+  add $9,$8
+  mov $6,$8
+  add $6,1
+  mov $14,$6
+  mul $14,8
+  nrt $14,2
+  div $14,2
+  bin $14,2
+  sub $6,$14
+  sub $9,$6
+  mov $6,$9
+  add $6,2
+  mov $15,$6
+  mul $15,8
+  nrt $15,2
+  sub $15,1
+  div $15,2
+  add $15,1
+  pow $15,2
+  sub $15,$6
+  mov $6,$15
+  seq $6,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mul $6,$7
+  div $6,$5
+lpe
+mul $0,$6

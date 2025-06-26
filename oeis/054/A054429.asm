@@ -1,6 +1,7 @@
 ; A054429: Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
 ; Submitted by loader3229
 ; 1,3,2,7,6,5,4,15,14,13,12,11,10,9,8,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111
+; Formula: a(n) = sign(3*sign(n)*sign(truncate(2^logint(n,2))-1)+sign(truncate(2^logint(n,2))-1)+sign(n))*bitxor(abs(n),abs(truncate(2^logint(n,2))-1))
 
 #offset 1
 

@@ -10,7 +10,12 @@ lpb $2
   mov $0,$1
   trn $0,1
   add $0,1
-  seq $0,72905 ; a(n) is the least k > n such that k*n is a square.
+  mov $3,$0
+  seq $3,19554 ; Smallest number whose square is divisible by n.
+  add $3,$0
+  pow $3,2
+  div $3,$0
+  mov $0,$3
   sub $0,$1
 lpe
 sub $0,1

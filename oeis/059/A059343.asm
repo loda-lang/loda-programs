@@ -8,7 +8,22 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $6,$1
-  seq $6,130125 ; Triangle defined by A128174 * A130123, read by rows.
+  add $6,1
+  mov $7,$6
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $6,$8
+  add $7,$6
+  mod $7,2
+  mul $7,2
+  pow $7,$6
+  mov $6,$7
+  div $6,2
   mov $3,$1
   seq $3,112227 ; A scaled Hermite triangle.
   mul $3,$6

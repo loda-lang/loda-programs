@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,98035 ; a(n) = Sum_{k|n} mu(k+1), where mu() is the Moebius function.
+  seq $3,98035 ; a(n) = Sum_{d|n} mu(d+1), where mu() is the Moebius function.
   equ $3,0
   sub $0,$3
   add $1,1

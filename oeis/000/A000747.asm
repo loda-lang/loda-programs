@@ -12,11 +12,42 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
-  seq $4,247453 ; T(n,k) = binomial(n,k)*A000111(n-k)*(-1)^(n-k), 0 <= k <= n.
-  add $0,1
-  seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  add $6,1
+  bin $6,2
+  sub $0,1
+  sub $4,$6
+  sub $4,1
+  mov $6,$4
+  mov $4,$5
+  bin $4,$6
+  sub $5,$6
+  mov $7,-1
+  pow $7,$5
+  mov $8,$5
+  seq $8,122045 ; Euler (or secant) numbers E(n).
+  seq $5,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $5,$8
+  mul $5,$7
+  mov $10,$0
+  mul $10,8
+  add $10,1
+  nrt $10,2
+  add $10,1
+  div $10,2
+  bin $10,2
+  sub $0,$10
+  mul $4,$5
+  mov $9,$0
+  add $9,1
+  seq $9,40 ; The prime numbers.
+  mov $0,$9
   mul $0,$4
   mul $1,-1
   add $1,$0

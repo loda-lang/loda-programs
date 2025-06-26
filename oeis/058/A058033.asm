@@ -12,8 +12,9 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,61720 ; First differences of sequence of primorials.
-  seq $0,70941 ; Length of binary representation of 2n+1.
-  sub $0,1
+  mul $0,2
+  add $0,1
+  log $0,2
   max $0,2
   mov $2,$3
   mul $2,$0

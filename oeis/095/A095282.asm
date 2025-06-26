@@ -10,8 +10,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,3
-  seq $3,285383 ; Limiting 0-word of the morphism 0 -> 11, 1 -> 01.
+  add $3,2
+  dir $3,4
+  mod $3,2
   mul $3,$1
   add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

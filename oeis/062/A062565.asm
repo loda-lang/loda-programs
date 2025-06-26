@@ -6,8 +6,6 @@
 
 seq $0,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
 lpb $0
-  lpb $0
-    dif $0,4
-  lpe
+  dir $0,4
   dif $0,9
 lpe

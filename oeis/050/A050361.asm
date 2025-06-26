@@ -5,8 +5,6 @@
 #offset 1
 
 seq $0,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,3
 add $0,1

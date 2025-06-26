@@ -1,9 +1,26 @@
 ; A010221: Continued fraction for sqrt(177).
 ; Submitted by gemini8
 ; 13,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8
-; Formula: a(n) = 5*truncate(A010163(n)/4)+gcd(A010163(n)-2,5*truncate(A010163(n)/4))+2
 
-seq $0,10163 ; Continued fraction for sqrt(92).
+mov $2,$0
+mov $4,$0
+mod $4,8
+gcd $0,8
+mov $3,8
+sub $3,$4
+min $4,$3
+mod $4,4
+mov $5,10
+lpb $2
+  mov $2,3
+  add $0,6
+  mov $5,7
+lpe
+mul $0,$5
+trn $0,63
+add $0,1
+add $0,$4
+div $0,2
 mov $1,$0
 sub $1,2
 div $0,4

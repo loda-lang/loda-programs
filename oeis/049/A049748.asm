@@ -12,8 +12,21 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $0,$5
   sub $0,1
-  seq $0,48147 ; Array T read by diagonals; T(i,j) = i^2 + j^2.
+  sub $4,$0
+  pow $0,2
+  pow $4,2
+  add $4,$0
+  mov $0,$4
   seq $0,295820 ; Number of nonnegative solutions to (x,y) = 1 and x^2 + y^2 <= n.
   mul $0,2
   add $1,$0

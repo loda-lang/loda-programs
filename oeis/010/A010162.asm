@@ -1,12 +1,24 @@
 ; A010162: Continued fraction for sqrt(91).
 ; Submitted by Olaf
 ; 9,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1,18,1,1,5,1,5,1,1
-; Formula: a(n) = gcd(max(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2),5),binomial(2*truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)+1,2))
 
 mov $2,$0
-seq $2,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+mod $2,8
+mov $3,8
+sub $3,$2
+min $2,$3
 mod $2,4
-seq $0,40329 ; Continued fraction for sqrt(348).
+mov $4,$0
+mov $5,10
+gcd $0,8
+lpb $4
+  mov $4,3
+  add $0,6
+  mov $5,7
+lpe
+mul $0,$5
+trn $0,63
+add $0,1
 add $0,$2
 div $0,2
 mov $1,$0

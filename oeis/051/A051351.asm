@@ -1,5 +1,6 @@
 ; A051351: a(n) = a(n-1) + sum of digits of n-th prime.
 ; 0,2,5,10,17,19,23,31,41,46,57,61,71,76,83,94,102,116,123,136,144,154,170,181,198,214,216,220,228,238,243,253,258,269,282,296,303,316,326,340,351,368,378,389,402,419,438,442,449,460,473,481,495,502,510,524
+; Formula: a(n) = sumdigits(-2*truncate((max(2*n-2,1)-1)/2)+max(2*n-2,1)+A000040(truncate((max(2*n-2,1)-1)/2)+2)-2,10)*sign(-2*truncate((max(2*n-2,1)-1)/2)+max(2*n-2,1)+A000040(truncate((max(2*n-2,1)-1)/2)+2)-2)+a(n-1), a(0) = 0
 
 lpb $0
   sub $0,1
@@ -7,10 +8,20 @@ lpb $0
   mul $2,2
   max $2,1
   mov $3,$2
-  add $3,1
-  seq $3,93515 ; Numbers k such that either k or k-1 is a prime.
-  mov $2,$3
-  sub $2,1
+  sub $3,1
+  mov $4,$3
+  div $3,2
+  add $3,2
+  mov $5,$3
+  seq $5,40 ; The prime numbers.
+  sub $3,4
+  sub $5,$3
+  sub $5,$3
+  add $4,$5
+  mov $3,$4
+  sub $3,4
+  mov $2,$4
+  sub $2,5
   dgs $2,10
   add $1,$2
 lpe

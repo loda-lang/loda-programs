@@ -8,6 +8,4 @@ mul $1,2
 mov $0,$1
 nrt $0,2
 div $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

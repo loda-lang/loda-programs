@@ -14,7 +14,22 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,49771 ; Triangular array T read by rows: T(n,k) = (k^4 mod n) + (n^4 mod k).
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $0,$5
+  add $4,1
+  mov $5,$4
+  pow $4,4
+  mod $4,$0
+  pow $0,4
+  mod $0,$5
+  add $0,$4
   add $1,$0
 lpe
 mov $0,$1

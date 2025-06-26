@@ -4,9 +4,16 @@
 
 #offset 1
 
-seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
+mov $7,$0
+mul $7,8
+nrt $7,2
+add $7,3
+div $7,2
+bin $7,2
+sub $7,$0
+mov $0,$7
 mov $2,5
-mov $3,$0
+mov $3,$7
 mul $3,3
 lpb $3
   mov $5,$3
@@ -19,7 +26,7 @@ lpb $3
   sub $3,1
 lpe
 mov $4,10
-pow $4,$0
+pow $4,$7
 div $2,$4
 div $1,$2
 mov $0,$1

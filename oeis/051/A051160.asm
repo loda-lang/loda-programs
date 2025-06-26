@@ -1,6 +1,7 @@
 ; A051160: Coefficients in expansion of (1-x)^floor(n/2)(1+x)^ceiling(n/2).
 ; Submitted by loader3229
 ; 1,1,1,1,0,-1,1,1,-1,-1,1,0,-2,0,1,1,1,-2,-2,1,1,1,0,-3,0,3,0,-1,1,1,-3,-3,3,3,-1,-1,1,0,-4,0,6,0,-4,0,1,1,1,-4,-4,6,6,-4,-4,1,1,1,0,-5,0,10,0,-10,0,5,0,-1,1,1,-5,-5,10,10,-10,-10,5,5,-1,-1,1,0
+; Formula: a(n) = binomial(truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-truncate((sqrtint(8*n+8)-1)/2)+n-2)/2),truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))*(truncate(binomial(-1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-truncate((sqrtint(8*n+8)-1)/2)+n))==1)
 
 add $0,1
 mov $2,$0

@@ -13,7 +13,9 @@ lpb $2
   sub $2,$0
   mov $3,$1
   mul $3,2
-  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  add $3,1
+  dir $3,2
+  div $3,2
   mov $4,$3
   add $4,1
   mov $5,$4
