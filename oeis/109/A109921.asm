@@ -15,8 +15,18 @@ lpb $3
   equ $6,0
   add $0,$6
   max $0,0
-  add $0,1
-  seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
+  sub $0,1
+  mov $7,$0
+  div $0,2
+  add $0,2
+  mov $8,$0
+  seq $8,40 ; The prime numbers.
+  sub $0,4
+  sub $8,$0
+  sub $8,$0
+  add $7,$8
+  mov $0,$7
+  sub $0,4
   bin $0,2
   mov $2,$3
   mul $2,$0

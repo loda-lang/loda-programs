@@ -7,4 +7,4 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 add $0,1
-seq $0,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
+seq $0,75255 ; a(n) = n - (sum of prime factors of n (with repetition)).

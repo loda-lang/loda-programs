@@ -8,7 +8,13 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
+  mov $5,$2
+  nrt $2,2
+  pow $2,2
+  equ $2,$5
+  equ $5,0
+  mul $2,2
+  sub $2,$5
   add $4,1
   add $1,$2
   mov $3,$4

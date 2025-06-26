@@ -1,4 +1,4 @@
-; A143970: Eigentriangle by rows, n terms of (10 * A002535) followed by A002535(n)
+; A143970: Eigentriangle by rows, n terms of (10 * A002535) followed by A002535(n).
 ; Submitted by loader3229
 ; 1,10,1,10,10,11,10,10,110,31,10,10,110,310,161,10,10,110,310,1610,601,10,10,110,310,1610,6010,2651,10,10,110,310,1610,6010,26510,10711
 

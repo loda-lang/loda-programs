@@ -9,7 +9,5 @@ div $0,2
 add $0,2
 bin $0,2
 div $0,5
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 mul $0,40

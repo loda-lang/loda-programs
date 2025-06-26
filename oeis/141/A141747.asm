@@ -11,7 +11,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,288002 ; L-fusc, sequence l of the mutual diatomic recurrence pair: l(1)=0, r(1)=1, l(2n) = l(n), r(2n) = r(n), l(2n+1) = l(n)+r(n), r(2n+1) = l(n+1)+r(n+1), where r(n) = A288003(n).
+  dir $2,4
+  sub $2,1
+  div $2,2
+  seq $2,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
   equ $2,0
   add $4,$5
   sub $4,1

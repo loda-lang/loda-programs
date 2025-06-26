@@ -11,9 +11,26 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
-  seq $3,89798 ; Expansion of Jacobi theta function theta_4(q^2).
+  mov $8,-1
+  pow $8,$3
+  add $8,1
+  mov $7,$3
+  dif $7,2
+  mov $9,$7
+  mov $6,-1
+  pow $6,$7
+  nrt $7,2
+  pow $7,2
+  equ $7,$9
+  equ $9,0
+  mul $7,2
+  sub $7,$9
+  mul $7,$6
+  mul $7,$8
+  div $7,2
+  mov $3,$7
   sub $5,1
-  add $2,$3
+  add $2,$7
   mov $4,2
   add $4,$5
   add $5,2

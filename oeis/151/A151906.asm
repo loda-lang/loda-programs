@@ -6,11 +6,14 @@ lpb $0
   mov $1,$0
   mul $1,2
   div $1,3
-  seq $1,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
+  dgs $1,2
+  mov $2,3
+  pow $2,$1
+  mov $0,0
+  mov $1,$2
   div $1,2
   mul $1,8
   add $1,4
   div $1,3
-  mov $0,0
 lpe
 mov $0,$1

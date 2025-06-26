@@ -10,7 +10,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,35191 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 9.
+  dir $3,3
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   dif $3,2
   equ $3,1
   sub $0,$3

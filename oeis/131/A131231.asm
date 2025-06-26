@@ -1,6 +1,7 @@
 ; A131231: 3*A130296 - 2*A128174.
 ; Submitted by loader3229
 ; 1,6,1,7,3,1,12,1,3,1,13,3,1,3,1,18,1,3,1,3,1,19,3,1,3,1,3,1,24,1,3,1,3,1,3,1,25,3,1,3,1,3,1,3,1
+; Formula: a(n) = 3*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)*((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)==1)+2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2*truncate((sqrtint(8*n)-1)/2)-2*n-4*truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2)+3
 
 #offset 1
 

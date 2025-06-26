@@ -15,9 +15,23 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,106476 ; Sequence array of Euler phi function.
+  add $4,1
+  mov $5,$4
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  add $6,1
+  bin $6,2
+  sub $4,$6
+  sub $4,1
+  sub $5,$4
+  add $5,1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
-  mul $0,$4
+  mul $0,$5
   add $1,$0
+  mov $4,$5
 lpe
 mov $0,$1

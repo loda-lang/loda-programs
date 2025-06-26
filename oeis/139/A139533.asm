@@ -9,7 +9,11 @@ sub $0,1
 pow $2,4
 lpb $2
   add $5,3
-  seq $6,93709 ; Characteristic function of squares or twice squares.
+  dir $6,2
+  mov $8,$6
+  nrt $6,2
+  pow $6,2
+  equ $6,$8
   sub $6,$5
   mod $6,2
   add $6,1

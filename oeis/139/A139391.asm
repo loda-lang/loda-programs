@@ -7,6 +7,4 @@ mov $1,-2
 bin $1,$0
 div $1,2
 sub $0,$1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

@@ -1,9 +1,50 @@
 ; A134426: Triangle read by rows: T(n,k) is the number of paths of length n in the first quadrant, starting at the origin, ending at height k and consisting of 2 kind of upsteps U=(1,1) (U1 and U2), 3 kind of flatsteps F=(1,0) (F1, F2 and F3) and 1 kind of downsteps D=(1,-1).
 ; Submitted by ChelseaOilman
 ; 1,3,2,11,12,4,45,62,36,8,197,312,240,96,16,903,1570,1440,784,240,32,4279,7956,8244,5472,2320,576,64,20793,40670,46116,35224,18480,6432,1344,128,103049,209712,254912,216384,132320,57600,17024,3072,256
-; Formula: a(n) = A110440(n)*A059268(n)
 
+mov $5,3
+mov $7,3
+mov $8,0
+mov $9,3
 mov $1,$0
-seq $1,110440 ; Triangular array formed by the little Schröder numbers s(n,k).
-seq $0,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+add $1,1
+mov $6,$1
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $10,$6
+add $10,1
+bin $10,2
+sub $1,$10
+sub $1,1
+mul $1,-1
+add $1,$6
+lpb $1
+  sub $1,1
+  add $7,$5
+  add $7,$9
+  mov $5,$7
+  mul $5,$6
+  sub $6,1
+  add $8,1
+  div $5,$8
+  add $7,$5
+  mul $9,-2
+  add $9,$7
+lpe
+mov $1,$5
+div $1,3
+mov $4,$0
+mul $4,8
+add $4,1
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $2,$0
+sub $2,$4
+mov $3,2
+pow $3,$2
+mov $0,$3
 mul $0,$1

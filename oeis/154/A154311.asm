@@ -12,10 +12,20 @@ lpb $2
   mov $5,$1
   mul $5,2
   mov $6,$5
-  add $6,1
-  seq $6,93515 ; Numbers k such that either k or k-1 is a prime.
-  mov $5,$6
-  sub $5,1
+  sub $6,1
+  mov $7,$6
+  div $6,2
+  add $6,2
+  mov $8,$6
+  seq $8,40 ; The prime numbers.
+  sub $6,4
+  sub $8,$6
+  sub $8,$6
+  add $7,$8
+  mov $6,$7
+  sub $6,4
+  mov $5,$7
+  sub $5,5
   dgs $5,10
   mov $3,$1
   add $3,1

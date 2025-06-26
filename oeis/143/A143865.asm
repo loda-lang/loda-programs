@@ -1,4 +1,4 @@
-; A143865: Eigentriangle of A099375 (odd number subsequences decrescendo)
+; A143865: Eigentriangle of A099375 (odd number subsequences decrescendo).
 ; Submitted by loader3229
 ; 1,3,1,5,3,4,7,5,12,12,9,7,20,36,36,11,9,28,60,108,108,13,11,36,84,180,324,324,15,13,44,108,252,540,972,972,17,15,52,132,324,756,1620,2916,2916
 

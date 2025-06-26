@@ -5,7 +5,14 @@
 #offset 1
 
 mov $1,1
-seq $0,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+mov $4,$0
+log $4,10
+add $4,1
+mov $3,10
+pow $3,$4
+mul $3,$0
+add $3,$0
+mov $0,$3
 mul $0,100
 sub $0,54
 lpb $0

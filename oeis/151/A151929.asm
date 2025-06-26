@@ -10,7 +10,7 @@ lpb $3
   add $0,$3
   trn $0,1
   seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
-  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $0,2
   mov $4,$3
   mul $4,$0
   add $2,$4

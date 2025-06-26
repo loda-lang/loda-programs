@@ -1,12 +1,42 @@
 ; A143594: Triangle read by rows, A051731 * (an infinite lower triangular matrix with 1's in the first column and the rest 2's).
 ; Submitted by [Team CHINA-hwt]Gimi Huang
 ; 1,2,2,2,2,2,3,4,2,2,2,2,2,2,2,4,6,4,2,2,2,2,2,2,2,2,2,2,4,6,4,4,2,2,2,2,3,4,4,2,2,2,2,2,2,4,6,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6,10,8,6,4,4,2,2,2,2,2,2,2,2
-; Formula: a(n) = A135539(n)*min(A002260(n),2)
 
 #offset 1
 
+mov $5,0
+mov $6,0
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $8,$4
+add $8,1
+bin $8,2
 mov $1,$0
-seq $1,135539 ; Triangle read by rows: T(n,k) = number of divisors of n that are >= k.
-seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+sub $1,$8
+sub $1,1
+add $4,1
+mov $7,$1
+mov $1,$4
+lpb $1
+  sub $1,1
+  sub $1,$7
+  add $6,1
+  mov $3,$4
+  div $3,$6
+  mul $3,$6
+  div $3,$4
+  add $5,$3
+lpe
+mov $1,$5
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+sub $0,$2
 min $0,2
-mul $0,$1
+mul $0,$5

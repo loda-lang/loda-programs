@@ -20,7 +20,9 @@ pow $3,2
 lpb $3
   mov $4,$2
   add $4,1
-  seq $4,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+  seq $4,62570 ; a(n) = phi(2*n).
+  dif $4,2
+  dir $4,2
   sub $4,1
   equ $4,0
   sub $0,$4

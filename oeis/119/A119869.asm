@@ -9,7 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,4015 ; Theta series of face-centered cubic (f.c.c.) lattice.
+  dir $0,4
+  mul $0,2
+  seq $0,5875 ; Theta series of simple cubic lattice; also number of ways of writing a nonnegative integer n as a sum of 3 squares (zero being allowed).
   add $1,$0
 lpe
 mov $0,$1

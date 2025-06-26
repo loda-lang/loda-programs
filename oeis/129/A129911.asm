@@ -23,7 +23,14 @@ lpb $2
   mov $3,$6
   mul $3,2
   add $3,3
-  seq $3,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+  mov $8,$3
+  log $8,10
+  add $8,1
+  mov $7,10
+  pow $7,$8
+  mul $7,$3
+  add $7,$3
+  mov $3,$7
   sub $3,2
   div $3,3
   sub $3,1

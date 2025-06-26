@@ -12,7 +12,7 @@ lpb $2
   mov $6,$5
   mov $3,$1
   add $3,1
-  seq $3,152754 ; "Upper positive integers": n is in the sequence iff in the representation n=A000695(k)+2*A000695(l) satisfies inequality A000695(k) < A000695(l)
+  seq $3,152754 ; "Upper positive integers": n is in the sequence iff in the representation n=A000695(k)+2*A000695(l) satisfies inequality A000695(k) < A000695(l).
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

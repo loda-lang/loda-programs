@@ -11,7 +11,19 @@ lpb $0
   mul $2,3
   mov $5,-1
   pow $5,$2
-  seq $2,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mul $2,8
+  add $2,1
+  mov $6,$2
+  nrt $2,2
+  mov $7,$2
+  mov $8,$2
+  add $8,1
+  mod $8,4
+  sub $8,1
+  pow $2,2
+  equ $2,$6
+  mul $2,$7
+  mul $2,$8
   mul $2,$5
   mod $2,3
   dif $2,-2

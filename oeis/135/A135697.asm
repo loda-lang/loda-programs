@@ -15,7 +15,16 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,4197 ; Triangle read by rows. T(n, k) = n - k if n - k < k, otherwise k.
+  mul $0,2
+  mov $4,$0
+  nrt $4,2
+  mov $5,$4
+  add $4,1
+  mul $5,$4
+  sub $0,$5
+  add $0,1
+  gcd $0,0
+  div $0,2
   add $0,1
   seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
   mul $1,10

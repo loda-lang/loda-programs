@@ -10,7 +10,10 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,53186 ; Square excess of n: difference between n and largest square <= n.
+  mov $6,$0
+  nrt $6,2
+  pow $6,2
+  sub $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

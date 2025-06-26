@@ -1,4 +1,4 @@
-; A142720: A triangle sequence of coefficients of odd sum polynomials: p(x,n)=x^(2*n - 1) - Sum[x^(2*i + 1), {i, 0, n - 1}] - 1.
+; A142720: A triangle sequence of coefficients of odd sum polynomials: p(x,n) = x^(2*n-1) - (Sum_{i=0..n-1} x^(2*i+1)) - 1.
 ; Submitted by Christian Krause
 ; -1,-1,-1,-1,-1,0,-1,-1,-1,0,-1,0,-1,-1,-1,0,-1,0,-1,0,-1,-1,-1,0,-1,0,-1,0,-1,0,-1,-1,-1,0,-1,0,-1,0,-1,0,-1,0,-1,-1,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,-1,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,-1,-1,0,-1,0,-1,0
 

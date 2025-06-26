@@ -13,7 +13,20 @@ lpb $2
   sub $2,9
   mov $3,$1
   add $3,1
-  seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+  mov $7,$3
+  mul $3,4
+  sub $3,3
+  nrt $3,2
+  mov $6,$3
+  pow $6,2
+  div $6,4
+  sub $7,$6
+  mov $6,$7
+  mov $7,$3
+  sub $7,$6
+  bin $7,2
+  add $7,$3
+  mov $3,$7
   sub $3,1
   seq $3,113025 ; Triangle of integer coefficients of polynomials P(n,x) of degree n, and falling powers of x, arising in diagonal Padé approximation of exp(x).
   mov $5,$3

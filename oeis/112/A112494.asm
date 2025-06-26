@@ -13,8 +13,23 @@ lpb $4
   sub $0,$4
   mov $3,$0
   add $3,1
+  mov $6,$3
+  pow $6,3
+  mul $6,15
+  sub $6,2
+  mov $7,$3
+  pow $7,2
+  mul $7,30
+  mov $8,$3
+  mul $8,5
+  add $6,$7
+  add $6,$8
   mov $0,$3
-  seq $0,1298 ; Stirling numbers of the second kind S(n+4, n).
+  add $0,4
+  bin $0,5
+  mul $0,120
+  mul $0,$6
+  div $0,5760
   mov $2,2
   mul $2,$3
   mul $2,$0

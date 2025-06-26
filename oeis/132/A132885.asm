@@ -1,9 +1,47 @@
 ; A132885: Triangle read by rows: T(n,k) is the number of paths in the right half-plane from (0,0) to (n,0), consisting of steps U=(1,1), D=(1,-1), h=(1,0) and H=(2,0), having k H=(2,0) steps (0 <= k <= floor(n/2)).
 ; Submitted by respawner
 ; 1,1,3,1,7,2,19,9,1,51,28,3,141,95,18,1,393,306,70,4,1107,987,285,30,1,3139,3144,1071,140,5,8953,9963,3948,665,45,1,25653,31390,14148,2856,245,6,73789,98483,49815,11844,1330,63,1,212941,307836,172645,47160,6426,392,7,616227,959257,590898,182655,29610,2394,84,1,1787607,2981174,2000934,690580,129690,12852,588,8,5196627,9243405,6714799,2560558,547965,65142,3990,108
-; Formula: a(n) = A171128(A056536(n+1)-1)
 
 add $0,1
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+mov $2,$0
+mov $6,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $1,$0
+pow $1,2
+div $1,4
+sub $2,$1
+mov $1,$2
+mov $2,$0
+sub $2,$1
+bin $2,2
+add $2,$0
+mov $3,$2
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+mov $0,$2
+sub $0,$4
 sub $0,1
-seq $0,171128 ; A117852*A130595 as lower triangular matrices.
+mov $4,$0
+mov $0,$3
+bin $0,$4
+mov $5,1
+mov $7,1
+sub $3,$4
+lpb $3
+  mul $5,$3
+  add $6,1
+  sub $3,1
+  mul $5,$3
+  div $5,$6
+  div $5,$6
+  add $7,$5
+  sub $3,1
+lpe
+mul $0,$7

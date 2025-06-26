@@ -9,7 +9,16 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  seq $0,4016 ; Theta series of planar hexagonal lattice A_2.
+  mov $6,0
+  equ $6,$0
+  mov $7,$0
+  dir $7,3
+  seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
+  mul $0,2
+  sub $0,$7
+  mul $0,6
+  add $0,$6
   mul $5,2
   add $5,2
   mov $2,$3

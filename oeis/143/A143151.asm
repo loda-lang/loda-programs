@@ -4,14 +4,29 @@
 
 #offset 1
 
-seq $0,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+add $2,1
+gcd $2,$0
+div $2,$0
+mul $0,$2
 mul $0,2
 sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
   add $1,1
-  seq $1,214606 ; a(n) = gcd(n, 2^n - 2).
+  mov $4,2
+  pow $4,$1
+  sub $4,2
   mul $0,2
+  gcd $1,$4
 lpe
 mov $0,$1

@@ -11,10 +11,36 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $6,$1
-  seq $6,100852 ; Triangle read by rows: T(n,k) = 2^k * 3^n, 0 <= k <= n.
+  add $6,1
+  mov $7,$6
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $6,$9
+  sub $6,1
+  mov $8,2
+  pow $8,$6
+  mov $6,3
+  pow $6,$7
+  mul $8,$6
+  mov $6,$8
   seq $6,351219 ; Multiplicative with a(p^e) = Fibonacci(e+1).
   mov $3,$1
-  seq $3,135278 ; Triangle read by rows, giving the numbers T(n,m) = binomial(n+1, m+1); or, Pascal's triangle A007318 with its left-hand edge removed.
+  add $3,1
+  mov $11,$3
+  mul $11,8
+  nrt $11,2
+  add $11,1
+  div $11,2
+  mov $10,$11
+  bin $10,2
+  sub $3,$10
+  bin $11,$3
+  mov $3,$11
   mul $3,$6
   mov $5,$3
   neq $3,-1

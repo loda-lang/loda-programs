@@ -1,10 +1,56 @@
 ; A154693: Triangle read by rows: T(n, k) = (2^(n-k) + 2^k)*A008292(n+1, k+1).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,3,5,16,5,9,66,66,9,17,260,528,260,17,33,1026,3624,3624,1026,33,65,4080,23820,38656,23820,4080,65,129,16302,154548,374856,374856,154548,16302,129,257,65260,993344,3529360,4998080,3529360,993344,65260,257
-; Formula: a(n) = A271709(n)*A008292(n+1)
 
 mov $1,$0
-seq $1,271709 ; Table T(n,k) = 2^n + 2^k read by antidiagonals.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+mov $7,0
+mov $9,0
+mov $10,0
 add $0,1
-seq $0,8292 ; Triangle of Eulerian numbers T(n,k) (n >= 1, 1 <= k <= n) read by rows.
+sub $1,$4
+sub $1,1
+sub $2,$1
+mov $3,2
+pow $3,$1
+mov $1,2
+pow $1,$2
+add $1,$3
+mov $5,$0
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
+mov $6,$0
+mov $0,$5
+add $0,1
+sub $5,$6
+add $5,2
+lpb $5
+  sub $5,1
+  mov $8,$5
+  pow $8,$0
+  sub $9,2
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $10,$9
+  add $7,1
+  mul $9,0
+  sub $9,$6
+lpe
+mov $0,$10
 mul $0,$1

@@ -9,9 +9,19 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $3,$6
   mov $5,$3
-  seq $3,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+  sub $3,1
+  mov $7,$3
+  seq $7,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
+  mov $3,$7
+  add $3,1
   mod $3,2
   sub $0,$3
   add $1,1

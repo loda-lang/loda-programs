@@ -4,6 +4,4 @@
 
 add $0,1
 seq $0,349834 ; Expansion of sqrt(1 + 4*x)/(1 - 4*x).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

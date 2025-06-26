@@ -1,6 +1,7 @@
 ; A134224: A004736 + A134082 - I as infinite lower triangular matrices; I = Identity matrix.
 ; Submitted by loader3229
 ; 1,4,1,3,6,1,4,3,8,1,5,4,3,10,1,6,5,4,3,12,1,7,6,5,4,3,14,1,8,7,6,5,4,3,16,1,9,8,7,6,5,4,3,18,1,10,9,8,7,6,5,4,3,20,1
+; Formula: a(n) = (-binomial(truncate((sqrtint(8*n+8)+1)/2),2)+truncate((sqrtint(8*n+8)+1)/2)+n+1)^((-n+binomial(truncate((sqrtint(8*n+8)+1)/2),2)+truncate((sqrtint(8*n+8)+1)/2)+1)==3)-n+binomial(truncate((sqrtint(8*n+8)+1)/2),2)+truncate((sqrtint(8*n+8)+1)/2)-1
 
 add $0,1
 mov $3,$0

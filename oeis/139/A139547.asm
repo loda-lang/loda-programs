@@ -1,8 +1,24 @@
 ; A139547: Triangle read by rows: T(n,k) = A003418(A010766).
 ; Submitted by Simon Strandgaard
 ; 1,2,1,6,1,1,12,2,1,1,60,2,1,1,1,60,6,2,1,1,1,420,6,2,1,1,1,1,840,12,2,2,1,1,1,1,2520,12,6,2,1,1,1,1,1,2520,60,6,2,2,1,1,1,1,1,27720,60,6,2,2,1,1,1,1,1,1,27720,60,12,6,2,2,1,1,1,1,1,1,360360,60
-; Formula: a(n) = A003418(A010766(n+1))
 
 add $0,1
-seq $0,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
-seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+mov $2,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
+mov $1,$0
+bin $0,2
+sub $2,$0
+div $1,$2
+mov $3,1
+mov $0,$1
+lpb $0
+  mov $4,$3
+  gcd $4,$0
+  mul $3,$0
+  div $3,$4
+  sub $0,1
+lpe
+mov $0,$3

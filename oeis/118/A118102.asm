@@ -3,8 +3,16 @@
 
 mov $1,2
 lpb $1
+  mov $2,$0
+  nrt $2,2
+  mov $3,$2
+  add $3,1
+  pow $3,2
+  sub $3,$0
+  pow $2,2
   add $0,1
-  seq $0,4737 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,1) for n >= 1.
+  sub $0,$2
+  min $0,$3
   seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mov $1,$0
 lpe

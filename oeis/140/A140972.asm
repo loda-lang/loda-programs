@@ -12,7 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+  seq $3,1654 ; Golden rectangle numbers: F(n) * F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
   mod $3,$1
   min $3,1
   sub $0,1

@@ -15,10 +15,22 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  sub $4,1
+  mov $6,$4
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $4,$6
+  mov $5,$4
+  add $5,1
+  seq $5,40 ; The prime numbers.
   seq $0,5145 ; n copies of n-th prime.
   sub $0,3
-  add $0,$4
+  add $0,$5
   add $1,$0
+  mov $4,$5
 lpe
 mov $0,$1

@@ -10,7 +10,9 @@ add $2,5
 pow $2,3
 lpb $2
   mov $3,$6
-  seq $3,10059 ; Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+  dgs $3,2
+  add $3,1
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -4,8 +4,20 @@
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,1
-seq $0,9999 ; Triangle in which j-th entry in i-th row is (i+1-j)^j, 0<=j<=i.
+add $2,1
+sub $2,$0
+pow $2,$0
+mov $0,$2
 lpb $0
   mov $1,$0
   div $0,10

@@ -4,8 +4,19 @@
 
 #offset 1
 
+sub $0,1
+mul $0,2
 mov $1,1
-seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
+mov $2,$0
+nrt $2,2
+mov $3,$2
+add $2,1
+mul $3,$2
+sub $0,$3
+add $0,1
+gcd $0,0
+div $0,2
+add $0,1
 lpb $0
   mul $1,$0
   sub $0,1

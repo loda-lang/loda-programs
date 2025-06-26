@@ -1,4 +1,4 @@
-; A152902: Convolution sequence, A000027 / A008683
+; A152902: Convolution sequence, A000027 / A008683.
 ; Submitted by Science United
 ; 1,3,7,14,27,49,88,155,272,472,819,1415,2446,4219,7280,12548
 

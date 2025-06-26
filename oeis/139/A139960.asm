@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,139530 ; Primes of the form 24n+13.
+  seq $3,139530 ; Primes of the form 24*k + 13.
   sub $3,1
   mov $5,$3
   add $3,1

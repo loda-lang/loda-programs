@@ -1,6 +1,7 @@
 ; A141473: Number of 3-equitable permutations: permutations on n letters equally avoiding each permutation of S_3.
 ; Submitted by Mumps
 ; 6,2,2,0,0,4,2,0,0
+; Formula: a(n) = sign(3*sign(55*n-166)*sign((n-3)^2)+sign((n-3)^2)+sign(55*n-166))*bitxor(abs((n-3)^2),abs(55*n-166))-10*truncate((sign(3*sign(55*n-166)*sign((n-3)^2)+sign((n-3)^2)+sign(55*n-166))*bitxor(abs((n-3)^2),abs(55*n-166))+7)/10)+7
 
 #offset 3
 

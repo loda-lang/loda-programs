@@ -1,4 +1,4 @@
-; A145784: Numbers with property that the number of prime factors is a multiple of 3.
+; A145784: Numbers with property that their number of prime factors counted with multiplicity is a multiple of 3.
 ; Submitted by PDW
 ; 1,8,12,18,20,27,28,30,42,44,45,50,52,63,64,66,68,70,75,76,78,92,96,98,99,102,105,110,114,116,117,124,125,130,138,144,147,148,153,154,160,164,165,170,171,172,174,175,182,186,188,190,195,207,212,216,222,224,230,231,236,238,240,242,244,245,246,255,258,261,266,268,273,275,279,282,284,285,286,290
 

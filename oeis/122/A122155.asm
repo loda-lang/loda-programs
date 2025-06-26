@@ -4,8 +4,21 @@
 
 mov $1,$0
 neq $1,0
-seq $0,153151 ; Rotated binary decrementing: For n<2 a(n) = n, if n=2^k, a(n) = 2*n-1, otherwise a(n) = n-1.
+mov $4,0
+mov $5,$0
+lpb $5
+  div $5,2
+  div $4,2
+  add $4,$0
+lpe
+dif $4,2
+mov $0,$4
 trn $0,1
 add $0,1
-seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+mov $2,$0
+log $2,2
+mov $3,2
+pow $3,$2
+sub $3,1
+bxo $0,$3
 mul $0,$1

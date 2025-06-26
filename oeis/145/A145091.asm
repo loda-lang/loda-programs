@@ -26,7 +26,27 @@ lpb $0
   mul $0,3
   sub $0,6
   add $0,$3
-  seq $0,144330 ; Triangle read by rows, A144328 * A000012
+  mov $6,$0
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $0,$7
+  sub $0,1
+  mov $5,$6
+  add $5,$0
+  sub $6,$0
+  add $6,1
+  mul $5,$6
+  mov $6,0
+  bin $6,$0
+  add $5,$6
+  add $6,$5
+  mov $0,$6
+  div $0,2
   sub $0,$1
   min $0,0
   add $1,1

@@ -1,9 +1,52 @@
 ; A136159: A Chebyshev polynomial triangle of the first kind defined by T(n+1,x) = 3x*T(n,x) - T(n-1,x).
 ; Submitted by Landjunge
 ; 1,1,3,-1,9,-4,27,-15,1,81,-54,7,243,-189,36,-1,729,-648,162,-10,2187,-2187,675,-66,1,6561,-7290,2673,-360,13,19683,-24057,10206,-1755,105,-1,59049,-78732,37908,-7938,675,-16
-; Formula: a(n) = A164948(A056536(n+1)-1)
 
 add $0,1
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+mov $2,$0
+mov $4,0
+mov $8,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $1,$0
+pow $1,2
+div $1,4
+sub $2,$1
+mov $1,$2
+mov $2,$0
+sub $2,$1
+bin $2,2
+add $2,$0
+mov $3,$2
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $9,$3
+add $9,1
+bin $9,2
+mov $0,$2
+sub $0,$9
 sub $0,1
-seq $0,164948 ; Fibonacci matrix read by antidiagonals. (Inverse of A136158.)
+sub $3,$0
+mov $5,$0
+mov $0,$3
+add $3,1
+lpb $3
+  sub $3,1
+  sub $0,4
+  mov $6,$5
+  add $6,$0
+  add $6,3
+  bin $6,$3
+  sub $8,1
+  add $0,4
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $4,$7
+  mul $4,2
+lpe
+mov $0,$4
+div $0,2

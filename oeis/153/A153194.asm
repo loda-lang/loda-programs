@@ -11,7 +11,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,75119 ; Denominator of n/floor(sqrt(n)); numerator is A073890(n).
+  mov $5,$3
+  nrt $5,2
+  gcd $3,$5
+  div $5,$3
+  mov $3,$5
   sub $3,2
   equ $3,1
   sub $0,$3

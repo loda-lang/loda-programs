@@ -1,10 +1,47 @@
 ; A134318: A007318 * A134317.
 ; Submitted by Roadranner
 ; 1,1,1,2,2,2,4,4,6,4,8,8,14,16,8,16,16,30,44,40,16,32,32,62,104,128,96,32,64,64,126,228,336,352,224,64,128,128,254,480,792,1024,928,512,128,256,256,510,988,1752,2608,2976,2368,1152,256
-; Formula: a(n) = A232089(n)*A128175(n+1)
 
 mov $1,$0
 add $1,1
-seq $1,128175 ; Binomial transform of A128174.
-seq $0,232089 ; Table read by rows, which consist of 1 followed by 2^k, 0 <= k < n ; n = 0,1,2,3,...
-mul $0,$1
+mov $4,$1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $7,$4
+add $7,1
+bin $7,2
+mov $9,0
+sub $1,$7
+sub $1,1
+mov $5,$1
+mov $1,$4
+sub $4,$5
+mov $6,0
+sub $6,$4
+add $4,1
+lpb $4
+  sub $4,1
+  mov $8,$1
+  bin $8,$6
+  add $9,$8
+  add $6,2
+lpe
+mov $1,$9
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
+trn $0,1
+mov $2,2
+pow $2,$0
+mov $0,$2
+mul $0,$9

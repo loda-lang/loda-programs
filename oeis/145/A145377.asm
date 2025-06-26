@@ -4,7 +4,8 @@
 
 #offset 1
 
-lpb $0
-  dif $0,3
-lpe
-seq $0,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+dir $0,3
+mov $1,$0
+nrt $0,2
+pow $0,2
+equ $0,$1

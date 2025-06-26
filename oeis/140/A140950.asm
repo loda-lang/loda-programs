@@ -8,7 +8,28 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,140944 ; Triangle T(n,k) read by rows, the k-th term of the n-th differences of the Jacobsthal sequence A001045.
+  add $5,1
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $10,$7
+  add $10,1
+  bin $10,2
+  sub $5,$10
+  sub $5,1
+  mov $8,$7
+  sub $8,$5
+  mov $9,2
+  pow $9,$5
+  mov $5,-2
+  pow $5,$8
+  mov $7,$9
+  mul $7,$5
+  sub $9,$7
+  mov $5,$9
+  div $5,3
   sub $0,1
   mov $2,$3
   mul $2,$5

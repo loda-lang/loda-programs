@@ -18,7 +18,16 @@ lpb $2
   add $4,1
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   add $0,1
-  seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
+  mov $6,$0
+  mul $0,8
+  nrt $0,2
+  add $0,1
+  div $0,2
+  mov $5,$0
+  bin $0,2
+  sub $6,$0
+  gcd $5,$6
+  mov $0,$5
   trn $0,1
   add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -11,9 +11,11 @@ add $2,$0
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,111089 ; Largest prime factor of 2n.
+  mod $3,-149
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  trn $3,2
   mul $3,2
-  add $3,1
+  add $3,5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

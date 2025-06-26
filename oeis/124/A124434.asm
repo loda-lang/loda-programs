@@ -4,5 +4,23 @@
 
 #offset 1
 
-seq $0,69482 ; a(n) = prime(n+1)^2 - prime(n)^2.
+sub $0,1
+mov $1,0
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  pow $0,2
+  mov $2,$3
+  mul $2,$0
+  mul $4,$3
+  add $1,$2
+  mov $5,$0
+lpe
+sub $1,$5
+mov $0,$1
 dif $0,2

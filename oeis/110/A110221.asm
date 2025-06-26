@@ -1,12 +1,65 @@
 ; A110221: Triangle read by rows: T(n,k) (0<=k<=floor(n/2)) is the number of Delannoy paths of length n, having k ED's.
 ; Submitted by Technik007[CZ]
 ; 1,3,11,2,45,18,195,120,6,873,720,90,3989,4110,870,20,18483,22806,6930,420,86515,124264,49560,5320,70,408105,668520,331128,52920,1890,1936881,3562830,2111760,456120,29610,252,9238023,18850590,13020480,3575880
-; Formula: a(n) = A110165(A056536(n+1)-1)*A046899(A056536(n+1)-1)
 
 add $0,1
-seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+mov $3,$0
+mov $9,0
+mov $11,0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $2,$0
+pow $2,2
+div $2,4
+sub $3,$2
+mov $2,$3
+mov $3,$0
+sub $3,$2
+bin $3,2
+add $3,$0
+mov $4,$3
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+bin $5,2
+mov $1,$3
+sub $1,1
+sub $1,$5
+bin $1,$4
+mov $8,6
+mov $10,3
+mov $7,$3
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $6,$7
+add $6,1
+bin $6,2
+mov $0,$3
+sub $0,$6
 sub $0,1
-mov $1,$0
-seq $1,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
-seq $0,110165 ; Riordan array (1/sqrt(1-6x+5x^2),(1-3x-sqrt(1-6x+5x^2))/(2x)).
+mul $0,-1
+add $0,$7
+lpb $0
+  sub $0,1
+  add $8,$10
+  mov $6,$8
+  mul $6,2
+  mul $6,$7
+  sub $7,1
+  add $9,1
+  div $6,$9
+  add $8,$6
+  div $6,2
+  mul $10,-1
+  add $10,$6
+  add $11,$10
+lpe
+mov $0,$11
+div $0,3
+add $0,1
 mul $0,$1

@@ -11,9 +11,19 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
-  mul $2,2
-  add $2,1
-  seq $2,285250 ; Positions of 0 in A285249; complement of A285251.
+  mul $2,4
+  sub $2,1
+  mov $5,2
+  add $5,$2
+  mov $2,$5
+  mul $2,3
+  div $2,2
+  mov $4,729
+  sub $4,$2
+  add $4,1
+  seq $4,189727 ; Fixed point of the morphism 0->011, 1->110.
+  add $4,$5
+  mov $2,$4
   div $2,4
   add $2,1
   seq $2,1359 ; Lesser of twin primes.

@@ -15,7 +15,16 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
+  mov $5,$0
+  mul $0,8
+  nrt $0,2
+  add $0,1
+  div $0,2
+  mov $4,$0
+  bin $0,2
+  sub $5,$0
+  div $4,$5
+  mov $0,$4
   seq $0,18805 ; Number of elements in the set {(x,y): 1 <= x,y <= n, gcd(x,y)=1}.
   pow $0,2
   add $1,$0

@@ -8,8 +8,10 @@ sub $0,1
 lpb $0
   add $1,1
   mov $2,$0
-  add $2,3
-  seq $2,97932 ; Positive integers n such that 2n-19 is prime.
+  add $2,4
+  seq $2,40 ; The prime numbers.
+  div $2,2
+  add $2,10
   mov $3,1
   add $3,$2
   max $2,$3

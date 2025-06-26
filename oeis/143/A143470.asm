@@ -1,13 +1,43 @@
 ; A143470: Triangle read by rows, A000012 * A143316, 1 <= k <= n.
 ; Submitted by tosi
 ; 1,3,1,7,1,1,11,3,1,1,19,3,1,1,1,23,7,3,1,1,1,35,7,3,1,1,1,1,43,11,3,3,1,1,1,1,55,11,7,3,1,1,1,1,1,63,19,7,3,3,1,1,1,1,1,83,19,7,3,3,1,1,1,1,1,1,91,23,11,7,3,3,1,1,1,1,1,1,115,23
-; Formula: a(n) = A018805(A010766(n))
 
 #offset 1
 
 mov $1,$0
-seq $1,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
-seq $1,18805 ; Number of elements in the set {(x,y): 1 <= x,y <= n, gcd(x,y)=1}.
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+mov $3,$1
+mov $6,0
+bin $1,2
+mov $4,$0
+sub $4,$1
+mov $9,0
+div $3,$4
+mov $5,0
+mov $8,3
+mov $1,$3
+add $1,2
+lpb $1
+  sub $1,$8
+  mov $7,$1
+  max $7,0
+  add $7,1
+  seq $7,62570 ; a(n) = phi(2*n).
+  mov $8,1
+  max $1,$9
+  add $6,$7
+  add $9,1
+lpe
+mov $1,$6
+sub $1,1
+add $5,$1
+add $5,1
+mov $1,$5
+mul $1,2
+sub $1,1
 mov $2,$1
 sub $0,1
 mov $0,$1

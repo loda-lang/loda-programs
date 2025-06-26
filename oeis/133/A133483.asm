@@ -1,6 +1,7 @@
 ; A133483: A way of splitting the numbers from 1 to 16 into two groups so that the numbers in each group have the same sum, the same sum of squares and the same sum of cubes.
 ; Submitted by BrandyNOW
 ; 1,4,6,7,10,11,13,16
+; Formula: a(n) = sumdigits(n-1,2)%2+2*n-1
 
 #offset 1
 

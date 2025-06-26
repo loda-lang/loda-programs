@@ -1,12 +1,58 @@
 ; A124148: Fibonacci triangle read by rows; the triangles below read by rows. Analog of A124171.
 ; 1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,2,3,1,1,1,1,1,2,1,1,2,3,1,1,2,3,5,1,1,1,1,1,2,1,1,2,3,1,1,2,3,5,1,1,2,3,5,8,1,1,1,1,1,2,1,1,2,3,1,1,2,3,5,1,1,2,3,5,8,1,1,2
-; Formula: a(n) = A000045(A025682(A332663(n-1)+1)+1)
 
 #offset 1
 
 sub $0,1
-seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+mov $1,$0
+mul $1,6
+nrt $1,3
+mov $2,$1
+add $2,2
+bin $2,3
+mov $3,$0
+geq $3,$2
+add $3,$1
+add $3,1
+bin $3,3
+mov $7,0
+sub $0,$3
 add $0,1
-seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
-add $0,1
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $4,$0
+mul $4,8
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $11,0
+sub $0,$4
+mov $5,$0
+mov $8,1
+lpb $0
+  mul $11,$8
+  mul $11,2
+  mov $12,$7
+  pow $12,2
+  mov $13,$8
+  pow $13,2
+  sub $11,$12
+  add $12,$13
+  mov $13,$12
+  sub $13,$11
+  mov $9,$0
+  max $9,1
+  log $9,2
+  mov $10,2
+  pow $10,$9
+  ban $10,$5
+  neq $10,0
+  mul $13,$10
+  div $0,2
+  mov $6,$11
+  mul $6,$10
+  add $11,$13
+  add $12,$6
+  mov $7,$11
+  mov $8,$12
+lpe
+mov $0,$7

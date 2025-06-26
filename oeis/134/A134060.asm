@@ -5,9 +5,18 @@
 mov $1,1
 lpb $0
   mov $1,$0
-  seq $1,206735 ; Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
-  mul $1,3
+  mul $1,8
+  nrt $1,2
+  sub $1,1
+  div $1,2
+  mov $4,$1
+  add $4,1
+  bin $4,2
+  mov $3,$0
+  sub $3,$4
   mov $0,0
+  bin $1,$3
+  mul $1,3
   mov $2,$1
   equ $2,0
 lpe

@@ -1,6 +1,7 @@
 ; A131230: Triangle read by rows: 2*A130296 - A128174.
 ; Submitted by loader3229
 ; 1,4,1,5,2,1,8,1,2,1,9,2,1,2,1,12,1,2,1,2,1,13,2,1,2,1,2,1,16,1,2,1,2,1,2,1,17,2,1,2,1,2,1,2,1,20,1,2,1,2,1,2,1,2,1,21,2,1,2,1,2,1,2,1,2,1,24,1,2,1,2,1,2,1,2,1,2,1,25,2
+; Formula: a(n) = 2*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)*((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)==1)-n-2*truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2)+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2
 
 #offset 1
 

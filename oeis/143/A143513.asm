@@ -11,7 +11,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,336466 ; Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
+  seq $3,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
+  dir $3,2
   equ $3,1
   sub $0,$3
   add $1,2

@@ -13,9 +13,39 @@ lpb $2
   mov $5,$3
   mov $6,$3
   seq $6,63655 ; Smallest semiperimeter of integral rectangle with area n.
-  seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+  mov $8,$3
+  mul $3,4
+  sub $3,3
+  nrt $3,2
+  mov $7,$3
+  pow $7,2
+  div $7,4
+  sub $8,$7
+  mov $7,$8
+  mov $8,$3
+  sub $8,$7
+  bin $8,2
+  add $8,$3
+  mov $9,$8
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $12,$9
+  add $12,1
+  bin $12,2
+  mov $3,$8
+  sub $3,$12
   sub $3,1
-  seq $3,65109 ; Triangle T(n,k) of coefficients relating to Bezier curve continuity.
+  mov $10,$9
+  sub $10,$3
+  mov $11,-1
+  pow $11,$3
+  bin $9,$3
+  mul $9,$11
+  mov $3,2
+  pow $3,$10
+  mul $3,$9
   gcd $3,2
   mul $3,$6
   div $3,2

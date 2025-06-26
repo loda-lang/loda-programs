@@ -14,7 +14,18 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
+  sub $0,1
+  mul $0,2
+  mov $4,$0
+  nrt $4,2
+  mov $5,$4
+  add $4,1
+  mul $5,$4
+  sub $0,$5
+  add $0,1
+  gcd $0,0
+  div $0,2
+  add $0,1
   seq $0,1113 ; Decimal expansion of e.
   add $1,$0
   mul $1,10

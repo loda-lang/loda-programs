@@ -1,10 +1,52 @@
 ; A141690: Triangle t(n,m) = 2*A008292(n+1,m+1) - A007318(n,m), a linear combination of Eulerian numbers and Pascal's triangle, 0 <= m <= n.
 ; Submitted by Ralfy
 ; 1,1,1,1,6,1,1,19,19,1,1,48,126,48,1,1,109,594,594,109,1,1,234,2367,4812,2367,234,1,1,487,8565,31203,31203,8565,487,1,1,996,29188,176412,312310,176412,29188,996,1,1,2017,95644,910300,2620582,2620582,910300,95644,2017,1,1,4062,305229,4406856,19476018,31448244,19476018,4406856,305229,4062,1,1,8155,956487,20375205,132636618,325024110,325024110,132636618,20375205,956487,8155,1,1,16344
-; Formula: a(n) = -A007318(n)+A176200(n)+1
 
 mov $1,$0
-seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+add $1,1
+mov $2,$1
+mov $8,0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+mov $9,0
+bin $1,$2
+mov $6,0
 add $0,1
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
+mov $5,$0
+mov $0,$4
+add $0,1
+sub $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$0
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $0,$9
+mul $0,2
 sub $0,$1

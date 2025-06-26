@@ -1,7 +1,54 @@
 ; A124445: Expansion of 1/(1-x-x*y+x^2*y-x^3*y^2).
 ; Submitted by sjmielh
 ; 1,1,1,1,1,1,1,1,2,1,1,1,3,3,1,1,1,4,5,4,1,1,1,5,7,8,5,1,1,1,6,9,13,12,6,1,1,1,7,11,19,22,17,7,1,1,1,8,13,26,35,35,23,8,1,1,1,9,15,34,51,61,53,30,9,1
-; Formula: a(n) = A124279(A061579(n))
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,124279 ; Riordan array (1/(1-x),x(1-x+x^2)/(1-x)).
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+add $1,1
+pow $1,2
+sub $1,$0
+mov $5,0
+mov $7,0
+mov $8,0
+mov $2,3
+mov $4,3
+mov $6,3
+mov $0,$1
+add $0,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $9,$3
+add $9,1
+bin $9,2
+sub $0,$9
+sub $0,1
+mul $0,-1
+add $0,$3
+sub $3,$0
+lpb $0
+  sub $0,1
+  sub $5,1
+  add $6,$4
+  mul $6,-1
+  add $4,$6
+  add $7,$2
+  mov $2,$4
+  sub $2,$6
+  sub $2,$7
+  mul $2,$3
+  div $2,$5
+  add $4,$2
+  mul $6,-1
+  add $6,$2
+  add $8,$2
+lpe
+mov $0,$8
+div $0,3
+add $0,1

@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,152834 ; Numbers of form 6k+1 that use only digits 2 and 3.
+  seq $3,152834 ; Numbers of the form 6*k+1 that use only digits 2 and 3.
   sub $3,1
   mov $5,$3
   add $3,1

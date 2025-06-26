@@ -11,8 +11,11 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,109883 ; Start subtracting from n its divisors beginning from 1 until one reaches a number smaller than the last divisor subtracted or reaches the last nontrivial divisor < n. Define this to be the perfect deficiency of n. Then a(n) = perfect deficiency of n.
+  mov $5,$3
+  nrt $5,2
+  pow $5,2
+  sub $3,$5
   add $3,1
-  seq $3,71797 ; Restart counting after each new odd integer (a fractal sequence).
   equ $3,1
   sub $0,$3
   add $1,1

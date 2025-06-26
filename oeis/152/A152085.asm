@@ -13,8 +13,13 @@ lpb $2
   mov $3,$1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,4755 ; Binary expansion starts 11.
+  mov $8,$3
+  log $8,2
+  add $8,1
+  mov $7,2
+  pow $7,$8
   sub $3,1
+  add $3,$7
   add $3,$5
   mov $6,$3
   add $3,1

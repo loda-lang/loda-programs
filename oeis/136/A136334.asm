@@ -1,12 +1,61 @@
 ; A136334: Triangular sequence from both a cubic expansion polynomial and a three deep polynomial recursion: Expansion polynomial: f(x,t)=1/(1 - 2*x*t + t^3); Recursion polynomials: p(x, n) = 2*x*p(x, n - 1) - p(x, n - 3);.
 ; Submitted by Science United
 ; 1,0,2,0,0,4,-1,0,0,8,0,-4,0,0,16,0,0,-12,0,0,32,1,0,0,-32,0,0,64,0,6,0,0,-80,0,0,128,0,0,24,0,0,-192,0,0,256,-1,0,0,80,0,0,-448,0,0,512,0,-8,0,0,240,0,0,-1024,0,0,1024
-; Formula: a(n) = A126030(n-1)*A059268(n-1)
 
 #offset 1
 
 sub $0,1
+mov $8,0
+mov $10,0
+mov $5,3
+mov $7,3
+mov $9,3
 mov $1,$0
-seq $1,126030 ; Riordan array (1/(1+x^3),x/(1+x^3)).
-seq $0,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+add $1,1
+mov $6,$1
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $11,$6
+add $11,1
+bin $11,2
+sub $1,$11
+sub $1,1
+mul $1,-1
+add $1,$6
+sub $6,$1
+lpb $1
+  sub $1,1
+  add $6,1
+  add $9,$7
+  mul $9,-1
+  add $7,$9
+  mul $10,-1
+  add $10,$5
+  mov $5,$7
+  sub $5,$9
+  sub $5,$10
+  mul $5,$6
+  sub $6,1
+  add $8,1
+  div $5,$8
+  add $7,$5
+  mul $9,-1
+  add $9,$5
+lpe
+mov $1,$5
+div $1,3
+mov $4,$0
+mul $4,8
+add $4,1
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $2,$0
+sub $2,$4
+mov $3,2
+pow $3,$2
+mov $0,$3
 mul $0,$1

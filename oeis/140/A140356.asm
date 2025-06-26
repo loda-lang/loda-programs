@@ -1,6 +1,19 @@
 ; A140356: Triangle T(n,m) read by rows: m! if m <= floor(n/2), and (n-m)! otherwise.
 ; 1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,2,6,2,1,1,1,1,2,6,6,2,1,1,1,1,2,6,24,6,2,1,1,1,1,2,6,24,24,6,2,1,1,1,1,2,6,24,120,24,6,2,1,1,1,1,2,6,24,120,120,24,6,2,1,1,1,1
-; Formula: a(n) = A000142(A004197(n))
 
-seq $0,4197 ; Triangle read by rows. T(n, k) = n - k if n - k < k, otherwise k.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $0,2
+mov $1,$0
+nrt $1,2
+mov $2,$1
+mov $3,1
+add $1,1
+mul $2,$1
+sub $0,$2
+add $0,1
+gcd $0,0
+div $0,2
+lpb $0
+  mul $3,$0
+  sub $0,1
+lpe
+mov $0,$3

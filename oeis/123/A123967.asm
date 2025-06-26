@@ -1,9 +1,52 @@
 ; A123967: Triangle read by rows: T(0,0)=1; for n >= 1 T(n,k) is the coefficient of x^k in the monic characteristic polynomial of the tridiagonal n X n matrix with main diagonal 5,5,5,... and sub- and superdiagonals 1,1,1,... (0 <= k <= n).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,-5,1,24,-10,1,-115,73,-15,1,551,-470,147,-20,1,-2640,2828,-1190,246,-25,1,12649,-16310,8631,-2400,370,-30,1,-60605,91371,-58275,20385,-4225,519,-35,1,290376,-501150,374115,-157800,41140,-6790,693,-40,1,-1391275,2704755,-2313450,1142730,-359275,74571,-10220,892,-45,1
-; Formula: a(n) = A207824(n)*A097807(n)
 
+mov $6,3
+mov $7,0
+mov $8,3
 mov $1,$0
-seq $1,207824 ; Triangle of coefficients of Chebyshev's S(n,x+5) polynomials (exponents of x in increasing order).
-seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $10,$5
+add $10,1
+bin $10,2
+sub $1,$10
+sub $1,1
+mul $1,-1
+add $1,$5
+sub $5,$1
+lpb $1
+  sub $1,1
+  mov $9,$6
+  add $5,1
+  add $6,$8
+  add $7,1
+  mov $4,$6
+  mul $4,2
+  add $4,$9
+  mul $4,$5
+  div $4,$7
+  mod $6,$8
+  add $6,$4
+  mul $8,-1
+  add $8,$4
+lpe
+mov $1,$6
+div $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,4
+sub $0,1
+sub $2,$0
+mov $3,-1
+pow $3,$2
+mov $0,$3
 mul $0,$1

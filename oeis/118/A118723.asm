@@ -1,4 +1,4 @@
-; A118723: Chen primes for which the digital root is also a Chen prime.
+; A118723: Chen primes whose digital root is also a Chen prime.
 ; Submitted by KARTman
 ; 2,3,5,7,11,23,29,41,47,59,83,101,113,131,137,149,167,191,227,239,257,263,281,293,311,317,347,353,389,401,419,443,461,479,491,509,563,569,587,599,617,641,653,659,677,743,761,797,821,839,857,887,911,941,947
 

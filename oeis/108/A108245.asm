@@ -1,11 +1,16 @@
 ; A108245: If n-th prime is 4m - 1, then a(n) = 4m + 1. If n-th prime is 4m + 1, then a(n) = 4m - 1.
 ; Submitted by Science United
 ; 5,3,9,13,11,15,21,25,27,33,35,39,45,49,51,61,59,69,73,71,81,85,87,95,99,105,109,107,111,129,133,135,141,147,153,155,165,169,171,181,179,193,191,195,201,213,225,229,227,231,241,239,253,255,265,267,273,275,279,285,291,309,313,311,315,333,335,349,347,351,361,369,371,381,385,387,395,399,407,421
+; Formula: a(n) = sign(3*sign(2)*sign(2*truncate(A000040(n)/2)-2)+sign(2*truncate(A000040(n)/2)-2)+sign(2))*bitxor(abs(2*truncate(A000040(n)/2)-2),abs(2))+3
 
 #offset 2
 
+mov $2,$0
+seq $2,40 ; The prime numbers.
+div $2,2
+mov $0,$2
 sub $0,1
-seq $0,154115 ; Numbers n such that n + 3 is prime.
+mul $0,2
 add $1,$0
 bxo $1,2
 mov $0,$1

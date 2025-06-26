@@ -10,8 +10,13 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,6257 ; Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
+  mul $3,2
+  add $3,3
+  mov $5,$3
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  sub $3,$6
   div $3,2
   add $3,1
   trn $3,2

@@ -5,10 +5,7 @@
 #offset 1
 
 mov $3,$0
-sub $0,1
-lpb $3
-  dif $3,2
-lpe
+dir $3,2
 div $3,2
 mov $2,-1
 pow $2,$3
@@ -21,6 +18,7 @@ seq $3,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
 mul $3,$2
 div $3,2
 max $3,0
+sub $0,1
 mod $0,4
 mul $0,$3
 sub $3,$0

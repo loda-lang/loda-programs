@@ -1,9 +1,54 @@
 ; A124341: Riordan array (1/(1+x), x(1+2x)/(1+x)^2).
 ; Submitted by Fardringle
 ; 1,-1,1,1,-1,1,-1,0,-1,1,1,2,-1,-1,1,-1,-5,5,-2,-1,1,1,9,-10,8,-3,-1,1,-1,-14,14,-14,11,-4,-1,1,1,20,-14,14,-17,14,-5,-1,1,-1,-27,6,0,9,-19,17,-6,-1,1,1,35
-; Formula: a(n) = A146314(n)*A097807(n)
 
+mov $4,3
+mov $6,3
+mov $7,0
+mov $8,3
 mov $1,$0
-seq $1,146314 ; Inverse of Riordan array A127543.
-seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $9,$5
+add $9,1
+bin $9,2
+sub $1,$9
+sub $1,1
+mul $1,-1
+add $1,$5
+sub $5,$1
+lpb $1
+  sub $1,1
+  div $8,-1
+  add $5,1
+  add $6,$8
+  mov $4,$6
+  dif $4,2
+  mul $4,2
+  mul $4,$5
+  sub $5,1
+  add $7,1
+  div $4,$7
+  add $6,$4
+  mul $8,-2
+  add $8,$4
+lpe
+add $8,$4
+add $0,1
+mov $1,$8
+div $1,6
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,4
+sub $0,1
+sub $2,$0
+mov $3,-1
+pow $3,$2
+mov $0,$3
 mul $0,$1

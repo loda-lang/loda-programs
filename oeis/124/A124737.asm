@@ -1,9 +1,28 @@
 ; A124737: Table where row n has k C(n,k) times.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,1,0,1,1,2,0,1,1,1,2,2,2,3,0,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,0,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,5,0,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2
-; Formula: a(n) = A124748(A054429(n+1)-1)
 
 add $0,1
-seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+mov $1,$0
+log $1,2
+mov $2,2
+pow $2,$1
+sub $2,1
+bxo $0,$2
 sub $0,1
-seq $0,124748 ; Table where row n has k C(n,k) times, in reverse order.
+mov $3,0
+mov $4,14161
+lpb $4
+  mov $5,$3
+  seq $5,17877 ; Expansion of 1/(1 - x^9 - x^10).
+  sub $0,$5
+  add $3,1
+  mov $6,$0
+  max $6,0
+  equ $6,$0
+  mul $4,$6
+  sub $4,1
+lpe
+mov $0,$4
+sub $0,1
+mod $0,10

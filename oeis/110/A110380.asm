@@ -12,8 +12,15 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
+  add $0,1
+  mov $5,$0
+  mul $0,8
+  nrt $0,2
+  add $0,3
+  div $0,2
+  bin $0,2
   add $0,2
+  sub $0,$5
   mov $4,10
   pow $4,$0
   mov $0,$4

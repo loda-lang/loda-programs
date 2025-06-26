@@ -13,7 +13,8 @@ lpb $2
   sub $3,1
   mod $3,81
   add $3,1
-  seq $3,593 ; Sum of odd divisors of n.
+  dir $3,2
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,1
   mod $3,2
   equ $3,0

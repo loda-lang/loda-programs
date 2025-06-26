@@ -12,7 +12,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,112248 ; a(n) = n mod floor(log_2(n)).
+  mov $6,$3
+  mul $6,2
+  log $6,2
+  mov $5,-1
+  add $5,$6
+  mod $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

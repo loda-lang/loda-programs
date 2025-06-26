@@ -1,8 +1,49 @@
 ; A152719: Triangle read by rows: T(n,k) = A000129( 1 + min(k,n-k) ), n>=0, 0<=k<=n.
 ; Submitted by PDW
 ; 1,1,1,1,2,1,1,2,2,1,1,2,5,2,1,1,2,5,5,2,1,1,2,5,12,5,2,1,1,2,5,12,12,5,2,1,1,2,5,12,29,12,5,2,1,1,2,5,12,29,29,12,5,2,1,1,2,5,12,29,70,29,12,5,2,1,1,2,5,12,29,70,70,29,12,5,2,1,1,2
-; Formula: a(n) = A000129(A003983(n+1))
 
+mul $0,2
+mov $1,$0
+nrt $1,2
+mov $2,$1
+mov $5,0
+mov $9,0
+add $1,1
+mul $2,$1
+sub $0,$2
 add $0,1
-seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
-seq $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
+gcd $0,0
+div $0,2
+add $0,1
+mov $3,$0
+mov $6,1
+lpb $0
+  mul $9,$6
+  mul $9,2
+  mov $10,$5
+  pow $10,2
+  mov $11,$6
+  pow $11,2
+  sub $9,$10
+  sub $9,$10
+  add $10,$11
+  mov $11,$10
+  sub $11,$9
+  mov $7,$0
+  max $7,1
+  log $7,2
+  mov $8,2
+  pow $8,$7
+  ban $8,$3
+  neq $8,0
+  mul $11,$8
+  div $0,2
+  mov $4,$9
+  add $4,$10
+  mul $4,$8
+  add $9,$11
+  add $10,$4
+  mov $5,$9
+  mov $6,$10
+lpe
+mov $0,$5

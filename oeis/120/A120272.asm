@@ -12,8 +12,24 @@ lpb $2
   add $4,$1
   mov $0,$3
   sub $0,$2
-  add $0,1
-  seq $0,78971 ; Numbers n such that C(4n,n)/(3n+1) (A002293) is not divisible by 4.
+  mov $6,$0
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $0,$8
+  sub $0,1
+  mov $7,4
+  pow $7,$0
+  mov $0,2
+  pow $0,$6
+  pow $0,2
+  add $0,$7
+  mul $0,2
+  div $0,3
   seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   sub $0,1
   mov $5,$0

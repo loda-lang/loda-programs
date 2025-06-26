@@ -1,4 +1,4 @@
-; A156708: Triangle read by rows, binomial transform of A154325
+; A156708: Triangle read by rows, binomial transform of A154325.
 ; Submitted by PDW
 ; 1,2,1,4,4,1,8,11,5,1,16,26,16,6,1,32,57,42,22,7,1,64,120,99,64,29,8,1,128,247,219,163,93,37,9,1,256,502,466,382,256,130,46,10,1,512,1013,968,848,638,386,176,56,11,1
 

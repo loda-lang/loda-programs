@@ -1,8 +1,49 @@
 ; A139147: Triangle read by rows: replace A003983(n,k) with F(n).
 ; 1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,2,3,2,1,1,1,1,2,3,3,2,1,1,1,1,2,3,5,3,2,1,1,1,1,2,3,5,5,3,2,1,1,1,1,2,3,5,8,5,3,2,1,1,1,1,2,3,5,8,8,5,3,2,1,1
-; Formula: a(n) = A000045(A003983(n))
 
 #offset 1
 
-seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+sub $0,1
+mul $0,2
+mov $1,$0
+nrt $1,2
+mov $2,$1
+mov $5,0
+mov $9,0
+add $1,1
+mul $2,$1
+sub $0,$2
+add $0,1
+gcd $0,0
+div $0,2
+add $0,1
+mov $3,$0
+mov $6,1
+lpb $0
+  mul $9,$6
+  mul $9,2
+  mov $10,$5
+  pow $10,2
+  mov $11,$6
+  pow $11,2
+  sub $9,$10
+  add $10,$11
+  mov $11,$10
+  sub $11,$9
+  mov $7,$0
+  max $7,1
+  log $7,2
+  mov $8,2
+  pow $8,$7
+  ban $8,$3
+  neq $8,0
+  mul $11,$8
+  div $0,2
+  mov $4,$9
+  mul $4,$8
+  add $9,$11
+  add $10,$4
+  mov $5,$9
+  mov $6,$10
+lpe
+mov $0,$5

@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,139530 ; Primes of the form 24n+13.
+  seq $3,139530 ; Primes of the form 24*k + 13.
   mov $5,$3
   seq $3,35146 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -44.
   equ $3,0

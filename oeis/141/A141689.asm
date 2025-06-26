@@ -1,13 +1,52 @@
 ; A141689: Average of Eulerian numbers (A008292) and Pascal's triangle (A007318): t(n,m) = (A008292(n,m) + A007318(n,m))/2.
 ; Submitted by Science United
 ; 1,1,1,1,3,1,1,7,7,1,1,15,36,15,1,1,31,156,156,31,1,1,63,603,1218,603,63,1,1,127,2157,7827,7827,2157,127,1,1,255,7318,44145,78130,44145,7318,255,1,1,511,23938,227638,655240,655240,227638,23938,511,1,1,1023,76341,1101804,4869162,7862250,4869162,1101804,76341,1023,1,1,2047,239163,5093925,33159402,81256374,81256374,33159402,5093925,239163,2047,1,1,4095
-; Formula: a(n) = truncate((A007318(n-1)+A008292(n))/2)
 
 #offset 1
 
+mov $6,0
+mov $8,0
+mov $9,0
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
 mov $1,$0
-seq $1,8292 ; Triangle of Eulerian numbers T(n,k) (n >= 1, 1 <= k <= n) read by rows.
+sub $1,$5
+sub $1,1
+mov $5,$1
+mov $1,$4
+add $1,1
+sub $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$1
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $1,$9
+mov $2,$0
+mul $0,8
+nrt $0,2
 sub $0,1
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-add $0,$1
+div $0,2
+mov $3,$0
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+bin $0,$2
+add $0,$9
 div $0,2

@@ -1,4 +1,4 @@
-; A145735: Indices of palindromes in A033649
+; A145735: Indices of palindromes in A033649.
 ; Submitted by Mumps
 ; 1,3,4,5,6,12,13,19,29,36
 

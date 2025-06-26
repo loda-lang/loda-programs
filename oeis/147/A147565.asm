@@ -1,11 +1,53 @@
 ; A147565: Triangle, T(n, k) = coefficients [x^k]( p(x, n) ), where p(x, n) = (1/2)*( (1+x)^n + 2^n*(1-x)^(n+1)*LerchPhi(x, -n, 1/2) ), read by rows.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,1,1,4,1,1,13,13,1,1,40,118,40,1,1,121,846,846,121,1,1,364,5279,11784,5279,364,1,1,1093,30339,129879,129879,30339,1093,1,1,3280,165820,1242672,2337542,1242672,165820,3280,1,1,9841,878188,10854028,34706710,34706710,10854028,878188,9841,1,1,29524,4558093,89150512,453461746,763546360,453461746,89150512,4558093,29524,1,1,88573,23351241,701540445,5418411714,14294010138,14294010138,5418411714,701540445,23351241,88573,1,1,265720
-; Formula: a(n) = truncate((A007318(n)+A060187(n+1))/2)
 
 mov $1,$0
 add $1,1
-seq $1,60187 ; Triangle read by rows: Eulerian numbers of type B, T(n,k) (1 <= k <= n) given by T(n, 1) = T(n,n) = 1, otherwise T(n, k) = (2*n - 2*k + 1)*T(n-1, k-1) + (2*k - 1)*T(n-1, k).
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-add $0,$1
+mov $6,0
+mov $8,0
+mov $9,0
+mov $4,$1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $5,$1
+mov $1,$4
+sub $4,$5
+add $4,1
+lpb $4
+  sub $4,1
+  mov $7,$4
+  mul $7,2
+  add $7,1
+  pow $7,$1
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $1,$9
+add $0,1
+mov $2,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $3,$0
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+bin $0,$2
+add $0,$9
 div $0,2

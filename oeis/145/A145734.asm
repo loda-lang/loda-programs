@@ -1,4 +1,4 @@
-; A145734: Indices of palindromes in A033648
+; A145734: Indices of palindromes in A033648.
 ; Submitted by loader3229
 ; 1,2,4,5,7,10,23,32
 ; Formula: a(n) = truncate((sqrtint(4*n-3)*(truncate((((-truncate(sqrtint(4*n-3)/4)+n-2)*(-truncate(sqrtint(4*n-3)/4)+n-1)+1)*sqrtint(4*n-3)^2)/6)+22))/24)+1

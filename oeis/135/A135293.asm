@@ -10,7 +10,22 @@ lpb $3
   add $0,$3
   trn $0,1
   add $0,1
-  seq $0,73216 ; The terms of A055235 (sums of two powers of 3) divided by 2.
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  add $6,1
+  bin $6,2
+  sub $0,$6
+  sub $0,1
+  mov $6,3
+  pow $6,$0
+  mov $0,3
+  pow $0,$5
+  add $0,$6
+  div $0,2
   mov $4,$3
   mul $4,$0
   add $2,$4

@@ -6,7 +6,7 @@
 #offset 1
 
 sub $0,1
-seq $0,173999 ; Successive positions of odd digits in decimal expansion of Pi (position 0 means 3 before comma or decimal point)
+seq $0,173999 ; Successive positions of odd digits in decimal expansion of Pi (position 0 means 3 before comma or decimal point).
 add $0,1
 seq $0,344000 ; Indices k such that A011772(k) is even.
 add $0,2
