@@ -11,7 +11,7 @@ lpb $3
   mov $1,$0
   add $1,$3
   add $1,1
-  seq $1,380977 ; Triangle read by rows: T(n,m) (1<=m<=n.) = number of surjections f:[n]->[m] with f(n)!=f(j), j<n;
+  seq $1,380977 ; Triangle read by rows: T(n,m) (1<=m<=n) = number of surjections f:[n]->[m] with f(n) != f(j), j<n.
   div $1,2
   mul $0,$3
   add $2,$1

@@ -11,8 +11,13 @@ lpb $2
   mov $3,$1
   add $3,2
   mov $5,$3
-  add $3,1
-  seq $3,161344 ; Numbers k with A033676(k)=2, where A033676 is the largest divisor <= sqrt(k).
+  mov $6,$3
+  seq $3,40 ; The prime numbers.
+  sub $3,1
+  add $6,$3
+  div $6,$3
+  add $3,$6
+  mul $3,2
   div $3,$5
   sub $3,3
   gcd $3,2

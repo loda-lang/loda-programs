@@ -13,7 +13,7 @@ lpb $2
   add $1,2
   mov $3,$1
   pow $3,2
-  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  dir $3,2
   seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   equ $3,0
   sub $0,$3

@@ -1,6 +1,7 @@
 ; A181022: Maximum number of 1s in an nX(n+3) binary matrix with no three 1s adjacent in a line along a row, column or diagonally.
 ; Submitted by William Michael Kanar
 ; 3,8,10,16,24,29,37,48,56
+; Formula: a(n) = b(n-1)+c(n-1)+3, b(n) = b(n-3)+3, b(7) = 9, b(6) = 6, b(5) = 6, b(4) = 6, b(3) = 3, b(2) = 3, b(1) = 3, b(0) = 0, c(n) = ((b(n-4)+c(n-3)+1)==1)+b(n-2)+c(n-1)+2, c(7) = 36, c(6) = 28, c(5) = 20, c(4) = 15, c(3) = 10, c(2) = 4, c(1) = 2, c(0) = 0
 
 #offset 1
 

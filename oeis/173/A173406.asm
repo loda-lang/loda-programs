@@ -1,6 +1,7 @@
 ; A173406: This sequence starts with any odd, composite number, like 15. There exists a power of two such that every 2^n + s_i is composite, where s_i is a term in the sequence less than 2^n. For example, 128+15=143, 512+15=527, 512+143=655, etc.
 ; Submitted by amazing
 ; 15,143,527,655,1039,1167,1551,1679
+; Formula: a(n) = 64*sign(3*sign(1)*sign(3*n-3)+sign(3*n-3)+sign(1))*bitxor(abs(3*n-3),abs(1))+64*max(0,n-1)-49
 
 #offset 1
 

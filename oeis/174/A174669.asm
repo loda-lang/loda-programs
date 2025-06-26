@@ -1,11 +1,32 @@
-; A174669: Sequence A154690 adjusted to leading one:t(n,m)=A154690(n,m)-A154690(n,0)+1
+; A174669: Sequence A154690 adjusted to leading one:t(n,m)=A154690(n,m)-A154690(n,0)+1.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,4,1,1,10,10,1,1,24,32,24,1,1,58,88,88,58,1,1,140,236,256,236,140,1,1,334,628,712,712,628,334,1,1,784,1648,1984,1984,1984,1648,784,1,1,1810,4240,5536,5536,5536,5536,4240,1810,1,1,4116,10676,15296,15776
-; Formula: a(n) = -A137688(n)+A154690(n)
 
 mov $1,$0
-seq $1,137688 ; 2^A003056: 2^n appears n+1 times.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,2
+pow $3,$2
+mov $1,$3
 sub $1,1
-seq $0,154690 ; Triangle read by rows: T(n, k) = (2^(n-k) + 2^k)*binomial(n,k), 0 <= k <= n.
-sub $0,1
+mov $4,0
+lpb $0
+  add $4,1
+  sub $0,$4
+  mov $5,$4
+lpe
+bin $4,$0
+sub $5,$0
+mov $6,2
+pow $6,$0
+mov $0,2
+pow $0,$5
+add $0,$6
+mul $4,$0
+mov $0,$4
 sub $0,$1
+sub $0,1

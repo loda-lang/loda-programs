@@ -1,4 +1,4 @@
-; A178923: Rectangular array T(m,k)= StirlingS2(k-1,m-1)*m! (The Coupon Collectors Problem)
+; A178923: Rectangular array T(m,k)= StirlingS2(k-1,m-1)*m! (The Coupon Collectors Problem).
 ; Submitted by Science United
 ; 1,0,0,0,2,0,0,2,0,0,0,2,6,0,0,0,2,18,0,0,0,0,2,42,24,0,0,0,0,2,90,144,0,0,0,0,0,2,186,600,120,0,0,0,0,0,2,378,2160,1200,0,0,0,0,0
 

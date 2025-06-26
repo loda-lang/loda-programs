@@ -8,9 +8,16 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
+  mov $2,$1
+  mul $2,2
+  mov $3,1
+  seq $3,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
+  mul $3,91
   add $1,1
-  seq $1,129726 ; a(n) = a(n-1) + prime(n) - prime(n-1) + 2; a(1) = 2.
-  add $1,3
+  seq $1,40 ; The prime numbers.
+  sub $1,179
+  add $1,$3
+  add $1,$2
   trn $0,$1
 lpe
 mov $0,$1

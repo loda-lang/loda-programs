@@ -1,15 +1,70 @@
-; A174674: Sequence A154695 adjusted to leading one:t(n,m)=A154695(n,m)-A154695(n,0)+1
+; A174674: Sequence A154695 adjusted to leading one:t(n,m)=A154695(n,m)-A154695(n,0)+1.
 ; Submitted by ChelseaOilman
 ; 1,1,1,1,20,1,1,130,130,1,1,744,1824,744,1,1,4234,20152,20152,4234,1,1,24484,210796,376704,210796,24484,1,1,143686,2183524,6233224,6233224,2183524,143686,1,1,851504,22549360,99411264,149600192,99411264
-; Formula: a(n) = A271709(n)*A060187(n+1)-A137688(n)
 
 mov $1,$0
-seq $1,137688 ; 2^A003056: 2^n appears n+1 times.
+add $1,1
+mov $3,$1
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,2
+pow $4,$3
+mov $10,0
+mov $12,0
+mov $13,0
+mov $1,$4
 sub $1,1
 mov $2,$0
-seq $2,271709 ; Table T(n,k) = 2^n + 2^k read by antidiagonals.
+add $2,1
+mov $5,$2
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $7,$5
+add $7,1
+bin $7,2
 add $0,1
-seq $0,60187 ; Triangle read by rows: Eulerian numbers of type B, T(n,k) (1 <= k <= n) given by T(n, 1) = T(n,n) = 1, otherwise T(n, k) = (2*n - 2*k + 1)*T(n-1, k-1) + (2*k - 1)*T(n-1, k).
+sub $2,$7
+sub $2,1
+sub $5,$2
+mov $6,2
+pow $6,$2
+mov $2,2
+pow $2,$5
+add $2,$6
+mov $8,$0
+mul $8,8
+nrt $8,2
+sub $8,1
+div $8,2
+mov $9,$8
+add $9,1
+bin $9,2
+sub $0,$9
+sub $0,1
+mov $9,$0
+mov $0,$8
+sub $8,$9
+add $8,1
+lpb $8
+  sub $8,1
+  mov $11,$8
+  mul $11,2
+  add $11,1
+  pow $11,$0
+  sub $12,2
+  sub $12,$8
+  bin $12,$10
+  mul $12,$11
+  add $13,$12
+  add $10,1
+  mul $12,0
+  sub $12,$9
+lpe
+mov $0,$13
 mul $0,$2
 sub $0,$1
 sub $0,1

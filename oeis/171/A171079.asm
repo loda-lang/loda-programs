@@ -1,7 +1,7 @@
 ; A171079: Denominator of s_{2n}, where s_0 = 1/2, s_n = | 2^n*(2^(n-1)-1)*Bernoulli(n)/n! | for n>0.
 ; Submitted by iBezanilla
 ; 2,3,45,945,4725,13365,638512875,18243225,23260111875,38979295480125,1531329465290625,274446060013125,201919571963756521875,11094481976030578125,80664808595725181953125,5660878804669082674070015625,31245110285511170603633203125,75344438393998438430390625
-; Formula: a(n) = truncate(gcd(0,truncate(gcd(0,2*truncate(truncate((A000142(2*n+1)^2)/gcd(A129814(2*n),A000142(2*n+1)^2))/(2*n+1)))/gcd(2*truncate(truncate((A000142(2*n+1)^2)/gcd(A129814(2*n),A000142(2*n+1)^2))/(2*n+1)),2^(2*n))))/gcd(truncate(gcd(0,2*truncate(truncate((A000142(2*n+1)^2)/gcd(A129814(2*n),A000142(2*n+1)^2))/(2*n+1)))/gcd(2*truncate(truncate((A000142(2*n+1)^2)/gcd(A129814(2*n),A000142(2*n+1)^2))/(2*n+1)),2^(2*n))),2^(2*n)-gcd(2*n,2)))
+; Formula: a(n) = truncate(gcd(0,truncate(gcd(0,2*truncate(truncate((((2*n+1)!)^2)/gcd(A129814(2*n),((2*n+1)!)^2))/(2*n+1)))/gcd(2*truncate(truncate((((2*n+1)!)^2)/gcd(A129814(2*n),((2*n+1)!)^2))/(2*n+1)),2^(2*n))))/gcd(truncate(gcd(0,2*truncate(truncate((((2*n+1)!)^2)/gcd(A129814(2*n),((2*n+1)!)^2))/(2*n+1)))/gcd(2*truncate(truncate((((2*n+1)!)^2)/gcd(A129814(2*n),((2*n+1)!)^2))/(2*n+1)),2^(2*n))),2^(2*n)-gcd(2*n,2)))
 
 mov $11,2
 mul $11,$0

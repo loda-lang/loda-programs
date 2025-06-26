@@ -1,4 +1,4 @@
-; A176113: Determinant of n X n matrix whose (i,j)-th element is (i+j)^(n-1)
+; A176113: Determinant of n X n matrix whose (i,j)-th element is (i+j)^(n-1).
 ; Submitted by BrandyNOW
 ; 1,-1,-8,1296,7962624,-2985984000000,-100306130042880000000,416336312719673760153600000000,281633758444745849464726940024832000000000
 

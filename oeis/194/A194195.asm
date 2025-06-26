@@ -1,4 +1,4 @@
-; A194195: First inverse function (numbers of rows) for pairing function A060734
+; A194195: First inverse function (numbers of rows) for pairing function A060734.
 ; Submitted by Coleslaw
 ; 1,2,2,1,3,3,3,2,1,4,4,4,4,3,2,1,5,5,5,5,5,4,3,2,1,6,6,6,6,6,6,5,4,3,2,1,7,7,7,7,7,7,7,6,5,4,3,2,1,8,8,8,8,8,8,8,8,7,6,5,4,3,2,1,9,9,9,9,9,9,9,9,9,8,7,6,5,4,3,2
 ; Formula: a(n) = min((sqrtint(n-1)+1)^2-n+1,sqrtint(n-1)+1)

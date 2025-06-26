@@ -1,13 +1,60 @@
-; A174160: A symmetrical triangular sequence:t(n,m)=2*Eulerian[n, m - 1] - (Binomial[n - 1, m - 1]*Binomial[n, m - 1]/m)^2
+; A174160: A symmetrical triangular sequence:t(n,m)=2*Eulerian[n, m - 1] - (Binomial[n - 1, m - 1]*Binomial[n, m - 1]/m)^2.
 ; Submitted by Stony666
 ; 1,1,1,1,-1,1,1,-14,-14,1,1,-48,-268,-48,1,1,-111,-1896,-1896,-111,1,1,-201,-8643,-25793,-8643,-201,1,1,-290,-29830,-208862,-208862,-29830,-290,1,1,-292,-83680,-1206508,-2799316,-1206508,-83680,-292,1,1,1
-; Formula: a(n) = -A174158(n)+A176200(n-1)+1
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+mov $7,0
+mov $9,0
+mov $10,0
 mov $1,$0
-seq $1,174158 ; Triangle read by rows: T(n,m) = (binomial(n - 1, m - 1)*binomial(n, m - 1)/m)^2.
+sub $1,$4
+sub $1,1
+mov $3,$2
+add $3,1
+bin $3,$1
+bin $2,$1
+add $1,1
+mul $2,$3
+div $2,$1
+mov $1,$2
+pow $1,2
+mov $5,$0
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $0,$6
 sub $0,1
-seq $0,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+mov $6,$0
+mov $0,$5
 add $0,1
+sub $5,$6
+add $5,2
+lpb $5
+  sub $5,1
+  mov $8,$5
+  pow $8,$0
+  sub $9,2
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $10,$9
+  add $7,1
+  mul $9,0
+  sub $9,$6
+lpe
+mov $0,$10
+mul $0,2
 sub $0,$1

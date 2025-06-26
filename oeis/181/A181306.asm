@@ -1,4 +1,4 @@
-; A181306: Number of 2-compositions of n having no increasing columns. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
+; A181306: Number of 2-compositions of n having no increasing columns.
 ; Submitted by Gunnar Hjern
 ; 1,1,3,7,18,44,110,272,676,1676,4160,10320,25608,63536,157648,391152,970528,2408064,5974880,14824832,36783296,91266496,226449920,561866240,1394099328,3459031296,8582528768,21294921472,52836837888,131098461184
 ; Formula: a(n) = 2*a(n-1)+2*a(n-2)-2*a(n-3), a(6) = 110, a(5) = 44, a(4) = 18, a(3) = 7, a(2) = 3, a(1) = 1, a(0) = 1

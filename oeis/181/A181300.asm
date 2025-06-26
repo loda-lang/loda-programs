@@ -9,7 +9,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,181305 ; Number of increasing columns in all 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
+  seq $0,181305 ; Number of increasing columns in all 2-compositions of n.
   sub $0,$1
   add $1,$0
 lpe

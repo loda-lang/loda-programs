@@ -10,7 +10,21 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  seq $0,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+  mul $0,24
+  add $0,1
+  mov $7,$0
+  nrt $0,2
+  mov $5,$0
+  add $5,1
+  mod $5,4
+  sub $5,1
+  mov $6,$0
+  pow $0,2
+  equ $0,$7
+  mul $0,$6
+  mul $0,$5
+  mod $0,3
+  dif $0,-2
   mov $1,24
   add $1,$4
   bin $1,$4

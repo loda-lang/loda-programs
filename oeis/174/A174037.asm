@@ -1,7 +1,26 @@
 ; A174037: Triangle T(n, k, q) = Sum_{j>=0} q^j * floor(binomial(n, k)/2^j) with q = 2, read by rows.
 ; Submitted by Gunnar Hjern
 ; 1,1,1,1,4,1,1,5,5,1,1,12,16,12,1,1,13,36,36,13,1,1,16,49,92,49,16,1,1,17,93,197,197,93,17,1,1,32,124,304,464,304,124,32,1,1,33,204,540,768,768,540,204,33,1,1,36,237,752,1556,1788,1556,752,237,36,1,1,37,289,1229,2788,3824,3824,2788,1229,289,37,1,1,44
-; Formula: a(n) = A080277(A007318(n))
 
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,80277 ; Partial sums of A038712.
+add $0,1
+mov $1,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $2,$0
+add $2,1
+bin $2,2
+sub $1,$2
+sub $1,1
+mov $3,0
+mov $5,1
+bin $0,$1
+lpb $0
+  mov $4,$0
+  mul $4,$5
+  div $0,2
+  add $3,$4
+  mul $5,2
+lpe
+mov $0,$3

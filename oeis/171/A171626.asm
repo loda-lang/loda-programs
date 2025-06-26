@@ -1,7 +1,6 @@
 ; A171626: Ceiling(n-th noncomposite/n).
 ; Submitted by Simon Strandgaard (M1)
 ; 1,1,1,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
-; Formula: a(n) = truncate(truncate((n*(91*A008578(n)+91*n-91))/(gcd(0,n)^2))/91)
 
 #offset 1
 
@@ -11,9 +10,15 @@ add $1,$0
 gcd $2,$1
 pow $2,2
 mov $3,$0
-add $0,1
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-add $3,$0
+mov $4,1
+lpb $0
+  seq $0,40 ; The prime numbers.
+  div $4,$0
+  bxo $4,$0
+  mul $0,0
+lpe
+add $3,$4
+mov $0,$4
 mov $0,$3
 mul $0,91
 mul $1,$0

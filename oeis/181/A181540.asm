@@ -9,11 +9,20 @@ lpb $2
   sub $2,1
   mov $4,$3
   add $4,1
-  seq $4,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
+  mov $6,$4
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $5,$4
+  bin $4,2
+  sub $6,$4
+  gcd $5,$6
   mov $0,$3
   seq $0,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
-  mul $0,$4
+  mul $0,$5
   add $1,$0
   add $3,1
+  mov $4,$5
 lpe
 mov $0,$1

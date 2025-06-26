@@ -1,4 +1,4 @@
-; A166575: Primes p>=5 with the property: if Prime(k)<p/2<Prime(k+1), then p>=Prime(k)+ Prime(k+1)
+; A166575: Primes p>=5 with the property: if Prime(k)<p/2<Prime(k+1), then p>=Prime(k)+ Prime(k+1).
 ; Submitted by stoneageman
 ; 5,13,19,31,37,43,53,61,71,73,79,101,103,113,131,139,157,163,173,191,193,199,211,223,241,251,269,271,277,293,311,313,331,353,373,379,397,419,421,439,443,457,463,499,509,521,523,541,577,601,607,613,619,631,653,659,661,673,691
 

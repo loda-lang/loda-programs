@@ -15,7 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,192570 ; a(n) = floor(sqrt(Bell(n)))
+    seq $7,192570 ; a(n) = floor(sqrt(Bell(n))).
     mov $9,10
     add $9,$5
     min $10,$0

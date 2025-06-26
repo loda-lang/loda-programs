@@ -10,12 +10,13 @@ add $2,1
 pow $2,2
 lpb $2
   mov $6,$1
-  add $6,4
-  seq $6,154115 ; Numbers n such that n + 3 is prime.
-  sub $6,2
-  div $6,2
+  add $6,5
+  mov $7,$6
+  seq $7,40 ; The prime numbers.
+  div $7,2
+  mov $6,$7
   mul $6,6
-  add $6,15
+  add $6,3
   div $6,3
   mov $3,$6
   sub $3,11

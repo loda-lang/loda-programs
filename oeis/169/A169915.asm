@@ -9,13 +9,16 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,2
+  seq $6,40 ; The prime numbers.
+  mov $5,1
+  add $5,$6
   mov $3,$1
-  add $3,1
-  seq $3,67076 ; Numbers k such that 2*k + 3 is a prime.
+  mov $3,$5
+  div $3,2
   add $3,$1
-  add $3,1
   add $3,$1
-  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

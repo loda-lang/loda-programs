@@ -10,9 +10,15 @@ add $0,$4
 mov $2,$0
 lpb $2
   mov $3,$4
-  seq $3,106400 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and -1's.
+  dgs $3,2
+  mov $5,0
+  sub $5,$3
+  gcd $5,2
+  mul $5,2
+  sub $5,3
   add $1,1
-  add $2,$3
+  add $2,$5
+  mov $3,$5
   add $4,$0
   add $4,1
 lpe

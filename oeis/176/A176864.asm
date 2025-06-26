@@ -10,8 +10,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  nrt $5,2
+  pow $5,2
   mov $3,$1
-  seq $3,53186 ; Square excess of n: difference between n and largest square <= n.
+  sub $3,$5
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   equ $3,1
   sub $0,$3

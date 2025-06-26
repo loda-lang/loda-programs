@@ -11,7 +11,7 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  dir $3,2
   seq $3,7424 ; a(n) = 1 if n is squarefree, otherwise 2.
   add $3,1
   mod $3,2

@@ -11,9 +11,10 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
-  add $4,1
-  seq $4,97932 ; Positive integers n such that 2n-19 is prime.
-  add $4,3
+  add $4,2
+  seq $4,40 ; The prime numbers.
+  div $4,2
+  add $4,13
   mov $7,1
   add $7,$4
   mov $4,$7

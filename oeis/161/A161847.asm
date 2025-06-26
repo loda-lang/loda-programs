@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-lpb $0
-  dif $0,5
-lpe
+dir $0,5

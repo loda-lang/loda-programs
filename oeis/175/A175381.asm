@@ -1,4 +1,4 @@
-; A175381: A positive integer of n is included if all positive integers that, when written in binary, occur as substrings in binary n divide n.
+; A175381: A positive integer k is included if all positive integers that, when written in binary, occur as substrings in binary k divide k.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,8,10,12,16,20,24,32,36,40,48,64,72,80,96,128,136,144,160,192,256,272,288,320,384,512,528,544,576,640,768,1024,1056,1088,1152,1280,1536,2048,2080,2112,2176,2304,2560,3072,4096,4160,4224,4352,4608,5120,6144,8192,8256,8320,8448,8704,9216,10240,12288,16384,16512,16640,16896,17408,18432,20480,24576,32768,32896,33024,33280,33792,34816,36864,40960,49152
 

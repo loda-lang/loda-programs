@@ -9,9 +9,12 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
-  seq $3,154115 ; Numbers n such that n + 3 is prime.
-  add $3,2
+  add $3,3
+  mov $6,$3
+  seq $6,40 ; The prime numbers.
+  div $6,2
+  mov $3,$6
+  mul $3,2
   mov $5,$3
   add $3,1
   seq $3,35144 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -46.

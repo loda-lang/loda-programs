@@ -1,4 +1,4 @@
-; A183919: Characteristic sequence for sin(2Pi/n) being rational.
+; A183919: Characteristic sequence for sin(2*Pi/n) being rational.
 ; Submitted by STE\/E
 ; 1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ; Formula: a(n) = 0^(floor((2*truncate(10^min(n-1,12)))/97)%10)

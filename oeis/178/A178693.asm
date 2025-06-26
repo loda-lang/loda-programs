@@ -4,6 +4,4 @@
 
 trn $0,1
 seq $0,103971 ; Expansion of (1 - sqrt(1 - 4*x - 16*x^2))/(2*x).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

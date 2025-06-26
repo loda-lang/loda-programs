@@ -1,13 +1,67 @@
-; A174672: Sequence A154693 adjusted to leading one:t(n,m)=A154693(n,m)-A154693(n,0)+1
+; A174672: Sequence A154693 adjusted to leading one:t(n,m)=A154693(n,m)-A154693(n,0)+1.
 ; Submitted by Landjunge
 ; 1,1,1,1,12,1,1,58,58,1,1,244,512,244,1,1,994,3592,3592,994,1,1,4016,23756,38592,23756,4016,1,1,16174,154420,374728,374728,154420,16174,1,1,65004,993088,3529104,4997824,3529104,993088,65004,1,1,260842,6314368
-; Formula: a(n) = A271709(n)*A008292(n+1)-A137688(n)
 
 mov $1,$0
-seq $1,137688 ; 2^A003056: 2^n appears n+1 times.
+add $1,1
+mov $3,$1
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,2
+pow $4,$3
+mov $10,0
+mov $12,0
+mov $13,0
+mov $1,$4
 mov $2,$0
-seq $2,271709 ; Table T(n,k) = 2^n + 2^k read by antidiagonals.
+add $2,1
+mov $5,$2
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $7,$5
+add $7,1
+bin $7,2
 add $0,1
-seq $0,8292 ; Triangle of Eulerian numbers T(n,k) (n >= 1, 1 <= k <= n) read by rows.
+sub $2,$7
+sub $2,1
+sub $5,$2
+mov $6,2
+pow $6,$2
+mov $2,2
+pow $2,$5
+add $2,$6
+mov $8,$0
+mul $8,8
+nrt $8,2
+sub $8,1
+div $8,2
+mov $9,$8
+add $9,1
+bin $9,2
+sub $0,$9
+sub $0,1
+mov $9,$0
+mov $0,$8
+add $0,1
+sub $8,$9
+add $8,2
+lpb $8
+  sub $8,1
+  mov $11,$8
+  pow $11,$0
+  sub $12,2
+  sub $12,$8
+  bin $12,$10
+  mul $12,$11
+  add $13,$12
+  add $10,1
+  mul $12,0
+  sub $12,$9
+lpe
+mov $0,$13
 mul $0,$2
-sub $0,$1
+sub $0,$4

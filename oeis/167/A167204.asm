@@ -4,7 +4,12 @@
 
 #offset 1
 
-seq $0,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
+mov $1,$0
+log $1,2
+mov $2,2
+pow $2,$1
+sub $0,$2
+add $0,1
 dir $0,2
 div $0,2
 add $0,1

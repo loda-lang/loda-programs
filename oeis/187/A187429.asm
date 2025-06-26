@@ -21,7 +21,14 @@ lpb $3
   mov $5,$0
   seq $5,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
   sub $0,1
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $6,$0
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $0,$6
   seq $0,58095 ; McKay-Thompson series of class 9c for the Monster group.
   mul $0,$5
   add $2,$0

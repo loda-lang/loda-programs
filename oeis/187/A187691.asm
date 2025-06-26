@@ -5,8 +5,31 @@
 #offset 1
 
 mov $1,$0
+mov $4,0
+mov $8,0
 sub $0,1
-seq $0,101659 ; Fixed point of morphism 0 -> 01, 1 -> 02, 2 -> 11.
+mov $2,$0
+lpb $0
+  mul $8,2
+  div $8,3
+  mov $5,$4
+  equ $5,1
+  add $5,1
+  mov $3,$5
+  sub $3,$8
+  mov $6,$0
+  max $6,1
+  log $6,2
+  mov $7,2
+  pow $7,$6
+  ban $7,$2
+  neq $7,0
+  div $0,2
+  mul $3,$7
+  add $8,$3
+  mov $4,$8
+lpe
+mov $0,$4
 dif $0,-2
 add $0,$1
 div $0,2

@@ -1,11 +1,51 @@
-; A174729: A symmetrical triangle sequence:q=3:t(n,m,q)=(1 - q^n)*Eulerian[n + 1, m] - (1 - q^n) + 1
+; A174729: A symmetrical triangle sequence:q=3:t(n,m,q)=(1 - q^n)*Eulerian[n + 1, m] - (1 - q^n) + 1.
 ; Submitted by Stony666
 ; 1,1,1,1,-23,1,1,-259,-259,1,1,-1999,-5199,-1999,1,1,-13551,-72841,-72841,-13551,1,1,-86631,-866319,-1758119,-866319,-86631,1,1,-537755,-9382311,-34140947,-34140947,-9382311,-537755,1,1,-3286559,-95821919
-; Formula: a(n) = -A098355(n)*truncate(A176200(n)/2)+truncate(A176200(n)/2)+1
 
 mov $1,$0
-seq $1,98355 ; Multiplication table of the powers of three read by antidiagonals.
-seq $0,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,0
+mov $8,0
+mov $1,3
+pow $1,$2
+mov $5,0
+add $0,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
+mov $4,$0
+mov $0,$3
+add $0,1
+sub $3,$4
+add $3,2
+lpb $3
+  sub $3,1
+  mov $6,$3
+  pow $6,$0
+  sub $7,2
+  sub $7,$3
+  bin $7,$5
+  mul $7,$6
+  add $8,$7
+  add $5,1
+  mul $7,0
+  sub $7,$4
+lpe
+mov $0,$8
+mul $0,2
+sub $0,1
 div $0,2
 mul $1,$0
 add $0,1

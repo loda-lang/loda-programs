@@ -5,6 +5,4 @@
 trn $0,1
 add $0,1
 seq $0,163176 ; The n-th Minkowski number divided by the n-th factorial: a(n) = A053657(n)/n!.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

@@ -1,12 +1,53 @@
-; A174035: A triangle sequence of the form:t(n,m]=Binomial[n, m] + Floor[Eulerian[n + 1, m]/2]
+; A174035: A triangle sequence of the form: T(n,m) = binomial(n, m) + floor(Eulerian(n + 1, m)/2).
 ; Submitted by gera
-; 1,1,1,1,4,1,1,8,8,1,1,17,39,17,1,1,33,161,161,33,1,1,66,610,1228,610,66,1,1,130,2167,7844,7844,2167,130,1,1,259,7332,44173,78165,44173,7332,259,1,1,515,23956,227680,655303,655303,227680,23956,515,1,1,1028,76363
-; Formula: a(n) = truncate((2*A007318(n)+A008292(n+1))/2)
+; 1,1,1,1,4,1,1,8,8,1,1,17,39,17,1,1,33,161,161,33,1,1,66,610,1228,610,66,1,1,130,2167,7844,7844,2167,130,1,1,259,7332,44173,78165,44173,7332,259,1,1,515,23956,227680,655303,655303,227680,23956,515,1,1,1028,76363,1101864,4869267,7862376,4869267,1101864,76363,1028,1
 
 mov $1,$0
 add $1,1
-seq $1,8292 ; Triangle of Eulerian numbers T(n,k) (n >= 1, 1 <= k <= n) read by rows.
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+mov $6,0
+mov $8,0
+mov $9,0
+mov $4,$1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $5,$1
+mov $1,$4
+add $1,1
+sub $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$1
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $1,$9
+add $0,1
+mov $2,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $3,$0
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+bin $0,$2
 mul $0,2
-add $0,$1
+add $0,$9
 div $0,2

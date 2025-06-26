@@ -1,11 +1,55 @@
 ; A174966: A symmetrical triangle sequence: q=1;t(n,m,q)=If[q == 1, Binomial[n, m] + Eulerian[n + 1, m] - Binomial[n, m]*Eulerian[n + 1, m], (q - 1) + Binomial[n, m]^q + Eulerian[n + 1, m]^q - q*Binomial[n, m]*Eulerian[n + 1, m]]
 ; Submitted by [AF>Amis de la Mer] ComteZera
 ; 1,1,1,1,-2,1,1,-19,-19,1,1,-74,-324,-74,1,1,-223,-2708,-2708,-223,1,1,-594,-16659,-45884,-16659,-594,1,1,-1475,-85839,-531011,-531011,-85839,-1475,1,1,-3506,-394388,-4852814,-10777040,-4852814,-394388,-3506,1,1
-; Formula: a(n) = -A007318(n)*truncate(A176200(n)/2)+truncate(A176200(n)/2)+1
 
 mov $1,$0
-seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+add $1,1
+mov $2,$1
+mov $8,0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+mov $9,0
+bin $1,$2
+mov $6,0
+add $0,1
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
+mov $5,$0
+mov $0,$4
+add $0,1
+sub $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$0
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $0,$9
+mul $0,2
+sub $0,1
 div $0,2
 mul $1,$0
 add $0,1

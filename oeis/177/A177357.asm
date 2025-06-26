@@ -1,10 +1,14 @@
 ; A177357: Number of positive squares <= prime(n) - 3.
 ; Submitted by Dataman
 ; 0,1,2,2,3,3,4,4,5,5,5,6,6,6,7,7,7,8,8,8,8,8,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,12,13,13,13,13,13,13,14,14,14,14,15,15,15,15,15,15,16,16,16,16,16,16,17,17,17,17,17,18,18,18,18,18,18,19,19,19,19,19,19,19
-; Formula: a(n) = sqrtint(A154115(n-1))
+; Formula: a(n) = sqrtint(2*truncate(A000040(n)/2)-2)
 
 #offset 2
 
+mov $1,$0
+seq $1,40 ; The prime numbers.
+div $1,2
+mov $0,$1
 sub $0,1
-seq $0,154115 ; Numbers n such that n + 3 is prime.
+mul $0,2
 nrt $0,2

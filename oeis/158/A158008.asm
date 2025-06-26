@@ -12,7 +12,20 @@ lpb $2
   add $5,1
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $5,1
-  seq $5,322252 ; a(0) = 1 and a(n) = (5*n)!/(5!*n!^5) for n > 0.
+  max $5,1
+  mov $7,$5
+  mov $8,$5
+  mul $8,3
+  mov $9,5
+  mul $9,$5
+  bin $9,$8
+  bin $8,$5
+  mul $8,$9
+  mul $5,2
+  bin $5,$7
+  pow $5,2
+  mul $5,$8
+  div $5,120
   sub $5,1
   add $4,3
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

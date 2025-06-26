@@ -10,8 +10,18 @@ mod $2,2
 lpb $2
   mul $0,2
   mul $0,$2
-  add $0,1
-  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  sub $0,1
+  mov $3,$0
+  div $0,2
+  add $0,2
+  mov $4,$0
+  seq $4,40 ; The prime numbers.
+  sub $0,4
+  sub $4,$0
+  sub $4,$0
+  add $3,$4
+  mov $0,$3
+  sub $0,5
   div $2,9
 lpe
 add $1,$0

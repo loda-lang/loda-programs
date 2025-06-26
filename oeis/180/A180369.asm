@@ -6,5 +6,5 @@
 #offset 1
 
 add $0,3
-seq $0,177771 ; Factorial of (prime(n) - 1).
+seq $0,177771 ; a(n) = (prime(n) - 1)!.
 div $0,720

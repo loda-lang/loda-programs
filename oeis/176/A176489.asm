@@ -1,11 +1,55 @@
 ; A176489: Triangle T(n,k) = A176487(n,k)+A176488(n,k)-1 read by rows 0<=k<=n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,12,1,1,35,35,1,1,82,206,82,1,1,177,922,922,177,1,1,368,3599,7284,3599,368,1,1,751,12917,46923,46923,12917,751,1,1,1518,43876,264810,468706,264810,43876,1518,1,1,3053,143588,1365740,3931310
-; Formula: a(n) = truncate((4*A007318(n)+3*A176200(n)-7)/2)+1
 
+mov $6,0
+mov $8,0
+mov $9,0
 mov $1,$0
-seq $1,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+add $1,1
+mov $4,$1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $5,$1
+mov $1,$4
+add $1,1
+sub $4,$5
+add $4,2
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$1
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $1,$9
+mul $1,2
+sub $1,1
+add $0,1
+mov $2,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $3,$0
+add $3,1
+bin $3,2
+sub $2,$3
+sub $2,1
+bin $0,$2
 add $1,$0
 mul $1,3
 add $0,$1

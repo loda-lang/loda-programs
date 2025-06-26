@@ -1,4 +1,4 @@
-; A165051: a(n) = image of n under the base-6 Kaprekar map n -> (n with digits sorted into descending order) - (n with digits sorted into ascending order)
+; A165051: a(n) = image of n under the base-6 Kaprekar map n -> (n with digits sorted into descending order) - (n with digits sorted into ascending order).
 ; Submitted by Jamie Morken(w1)
 ; 0,0,0,0,0,0,5,0,5,10,15,20,10,5,0,5,10,15,15,10,5,0,5,10,20,15,10,5,0,5,25,20,15,10,5,0,35,35,70,105,140,175,35,0,35,70,105,140,70,35,35,70,105,140,105,70,70,70,105,140,140,105,105,105,105,140,175,140,140,140,140,140,70,70,70,105,140,175,70,35
 ; Formula: a(n) = -A028901(A004185(A007092(n)))+A028901(A004186(A007092(n)))

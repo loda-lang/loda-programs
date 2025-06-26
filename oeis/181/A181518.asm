@@ -10,7 +10,10 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mul $3,2
+  mov $5,$3
+  dgs $5,2
+  sub $3,$5
   trn $3,1
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

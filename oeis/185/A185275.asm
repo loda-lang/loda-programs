@@ -4,6 +4,4 @@
 
 add $0,1
 seq $0,185021 ; a(n) = h(1)*h(2)*...*h(n), where h(i) = i/[g(i/2)*g(i/4)*g(i/8)*...] and g(x) = x if x is an integer and g(x) = 1 otherwise.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

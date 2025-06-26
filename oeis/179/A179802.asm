@@ -1,7 +1,6 @@
 ; A179802: Digital root of A179545.
 ; Submitted by Dave Studdert
 ; 3,9,3,9,3,9,3,9,3,3,9,9,3,9,3,3,3,9,9,3,9,9,3,3,9,3,9,3,9,3,9,3,3,9,3,9,9,9,3,3,3,9,3,9,3,9,9,9,3,9,3,3,9,3,3,3,3,9,9,3,9,3,9,3,9,3,9,9,3,9,3,3,9,9,9,3,3,9,3,9
-; Formula: a(n) = 4*min(A078979(max(truncate(A062876(n)/4)+1,3)+1)+2,3)+2*truncate((2*truncate((2*min(A078979(max(truncate(A062876(n)/4)+1,3)+1)+2,3))/2)*min(A078979(max(truncate(A062876(n)/4)+1,3)+1)+2,3))/7)-10*truncate((4*min(A078979(max(truncate(A062876(n)/4)+1,3)+1)+2,3)+2*truncate((2*truncate((2*min(A078979(max(truncate(A062876(n)/4)+1,3)+1)+2,3))/2)*min(A078979(max(truncate(A062876(n)/4)+1,3)+1)+2,3))/7)+3)/10)+3
 
 #offset 1
 
@@ -10,8 +9,16 @@ div $0,4
 add $0,1
 max $0,3
 add $0,1
-seq $0,78979 ; a(n) = A078711(n) - 1.
-add $0,2
+mov $2,$0
+mod $0,3
+mov $3,$0
+equ $3,0
+lex $2,2
+add $2,3
+dgr $2,4
+mul $2,$3
+add $0,$2
+add $0,1
 min $0,3
 mul $0,2
 mov $1,$0

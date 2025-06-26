@@ -11,7 +11,7 @@ mov $0,$1
 lpb $0
   mul $0,$4
   mov $3,$0
-  seq $3,186723 ; a(n) = n^n! (mod 10)
+  seq $3,186723 ; a(n) = n^n! (mod 10).
   mov $4,$3
   min $4,1
   div $0,10

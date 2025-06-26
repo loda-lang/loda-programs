@@ -8,9 +8,13 @@ sub $0,1
 lpb $0
   mov $3,$0
   trn $3,1
-  seq $3,166257 ; Odd numbers not of the form prime(k) + phi(prime(k)).
-  add $3,1
+  sub $3,1
+  mov $4,$3
+  seq $4,72668 ; Numbers one less than composite numbers.
   mul $0,0
+  mov $3,$4
+  mul $3,2
+  add $3,2
 lpe
 mov $0,$3
 div $0,2

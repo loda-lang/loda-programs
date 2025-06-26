@@ -1,6 +1,7 @@
 ; A162345: Length of n-th edge in the graph of the zig-zag function for prime numbers.
 ; Submitted by Science United
 ; 2,2,2,3,3,3,3,3,5,4,4,5,3,3,5,6,4,4,5,3,4,5,5,7,6,3,3,3,3,9,9,5,4,6,6,4,6,5,5,6,4,6,6,3,3,7,12,8,3,3,5,4,6,8,6,6,4,4,5,3,6,12,9,3,3,9,10,8,6,3,5,7,7,6,5,5,7,6,6,9
+; Formula: a(n) = truncate((-A008578(max(n-3,0)+3)+A159477(A159477((A008578(max(n-3,0)+3)==0)+A008578(max(n-3,0)+3)+2)+2)+10054)/2)-5027
 
 #offset 1
 

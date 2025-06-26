@@ -1,6 +1,7 @@
 ; A189661: Fixed point of the morphism 0->010, 1->10 starting with 0.
 ; Submitted by Ralfy
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
+; Formula: a(n) = ((sqrtint((n-2)*(5*n-10))+n-2)==1)-sqrtint((truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+2)*(5*truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+10))-truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)-2*truncate((((sqrtint((n-2)*(5*n-10))+n-2)==1)-sqrtint((truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+2)*(5*truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+10))-truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)-2*truncate((((sqrtint((n-2)*(5*n-10))+n-2)==1)-sqrtint((truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+2)*(5*truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+10))-truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)-3)/2)-1)/2)-2*truncate((((sqrtint((n-2)*(5*n-10))+n-2)==1)-sqrtint((truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+2)*(5*truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)+10))-truncate((sqrtint((n-2)*(5*n-10))+n-2)/2)-3)/2)-1
 
 #offset 1
 

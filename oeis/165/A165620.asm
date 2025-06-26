@@ -1,9 +1,43 @@
 ; A165620: Riordan array ((1-x)/(1-x^4),x/(1+x^2)).
 ; Submitted by [AF] Kalianthys
 ; 1,-1,1,0,-1,1,0,-1,-1,1,1,1,-2,-1,1,-1,2,2,-3,-1,1,0,-2,4,3,-4,-1,1,0,-2,-4,7,4,-5,-1,1,1,2,-6,-7,11,5,-6,-1,1,-1,3,6,-13,-11,16,6,-7,-1,1,0,-3,9,13,-24,-16,22,7,-8,-1,1
-; Formula: a(n) = A128494(n)*A097807(n)
 
+mov $4,0
+mov $6,0
 mov $1,$0
-seq $1,128494 ; Coefficient table for sums of Chebyshev's S-Polynomials.
-seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
-mul $0,$1
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $8,$5
+add $8,1
+bin $8,2
+sub $1,$8
+sub $1,1
+sub $5,$1
+add $5,4
+mov $7,-1
+sub $7,$1
+mov $1,$5
+div $1,2
+lpb $1
+  sub $1,1
+  bin $6,$1
+  add $4,$6
+  mov $6,$7
+lpe
+mov $1,$4
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,4
+sub $0,1
+sub $2,$0
+mov $3,-1
+pow $3,$2
+mov $0,$3
+mul $0,$4

@@ -1,11 +1,13 @@
 ; A164313: LCM of all differences of odd primes up to prime(n).
 ; Submitted by gemini8
 ; 2,4,24,120,840,1680,5040,720720,720720,24504480,465585120,465585120,465585120,53542288800,160626866400,4658179125600,288807105787200,288807105787200,288807105787200,10685862914126400,10685862914126400
-; Formula: a(n) = A051426(truncate(A154115(n-1)/2))
+; Formula: a(n) = A051426(truncate(A000040(n)/2)-1)
 
 #offset 3
 
+mov $1,$0
+seq $1,40 ; The prime numbers.
+div $1,2
+mov $0,$1
 sub $0,1
-seq $0,154115 ; Numbers n such that n + 3 is prime.
-div $0,2
 seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.

@@ -11,7 +11,30 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,190907 ; Triangle read by rows: T(n,k) = binomial(n+k, n-k) k! / (floor(k/2)! * floor((k+2)/2)!).
+  add $0,1
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $8,$4
+  add $8,1
+  bin $8,2
+  sub $0,$8
+  sub $0,1
+  mov $5,$0
+  mov $6,$0
+  div $6,2
+  mov $7,-2
+  sub $7,$6
+  bin $7,$6
+  add $0,$4
+  mov $4,$5
+  bin $4,$6
+  gcd $4,$7
+  mul $5,2
+  bin $0,$5
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1

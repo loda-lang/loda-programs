@@ -11,7 +11,26 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
-  seq $3,80332 ; G.f.: Product_{n>0} (1 - x^n)^3 * (1 - x^(2*n - 1))^2 = Sum_{n in Z} (6*n + 1) * x^(n*(3*n + 1)/2).
+  mul $3,3
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $3,2
+  sub $3,$6
+  bin $3,$7
+  mul $7,2
+  add $7,1
+  mul $7,$3
+  mov $3,$7
+  mod $3,3
+  mul $3,$7
+  dif $3,-2
   add $2,$3
   mov $4,2
   add $4,$5

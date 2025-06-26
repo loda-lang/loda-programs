@@ -1,4 +1,4 @@
-; A159221: 1/2 the number of n X n arrays of squares of integers with every 2X2 subblock summing to 20
+; A159221: 1/2 the number of n X n arrays of squares of integers with every 2X2 subblock summing to 20.
 ; Submitted by HansCCT
 ; 9,23,49,101,201,401,793,1577,3129,6233,12409,24761,49401,98681,197113,393977,787449,1574393,3147769,6294521,12587001,25171961,50339833,100675577,201342969,402677753,805339129
 ; Formula: a(n) = 2*((n-2)%2+2)*2^floor((n-2)/2)+12*2^(n-2)-7

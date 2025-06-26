@@ -7,7 +7,13 @@
 sub $0,2
 mov $1,$0
 equ $1,0
+mov $2,1
 add $0,$1
 max $0,0
 add $0,1
-seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
+lpb $0
+  dir $2,$0
+  mul $2,$0
+  sub $0,1
+lpe
+mov $0,$2

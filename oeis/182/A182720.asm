@@ -4,7 +4,19 @@
 
 #offset 1
 
-seq $0,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+add $2,1
+gcd $2,$0
+div $2,$0
+mul $0,$2
 lpb $0
   mov $1,$0
   seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).

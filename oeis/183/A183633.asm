@@ -1,4 +1,4 @@
-; A183633: Number of (n+1)X(n+1) 0..3 arrays with every 2X2 subblock summing to 6
+; A183633: Number of (n+1)X(n+1) 0..3 arrays with every 2X2 subblock summing to 6.
 ; Submitted by Johnbodlis team
 ; 44,340,2300,14644,90524,551380,3333500,20077684
 ; Formula: a(n) = 4*(2^n-1)*3^(n+1)+4*2^n

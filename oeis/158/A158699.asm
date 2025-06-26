@@ -5,7 +5,18 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,51596 ; Numerical values or Gematriot of Hebrew letters {aleph, bet, ..., tav}.
+  sub $2,1
+  mov $3,$2
+  div $3,9
+  mov $4,$3
+  mul $4,9
+  add $2,1
+  sub $2,$4
+  add $3,1
+  mov $4,10
+  pow $4,$3
+  mul $2,$4
+  div $2,10
   trn $0,9
   add $1,$2
 lpe

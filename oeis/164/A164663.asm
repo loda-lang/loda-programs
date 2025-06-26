@@ -14,12 +14,29 @@ lpb $2
   sub $0,$2
   mov $6,$0
   seq $6,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
+  mov $9,$0
+  mul $9,8
+  add $9,1
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  mov $7,$0
+  sub $7,$9
+  mov $8,2
+  pow $8,$7
   mov $4,$0
-  seq $4,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+  mov $4,$8
   mul $4,$6
   div $4,2
   add $0,1
-  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $10,$0
+  mul $10,8
+  nrt $10,2
+  add $10,1
+  div $10,2
+  bin $10,2
+  sub $0,$10
   mov $5,$0
   gcd $5,$4
   div $0,$5

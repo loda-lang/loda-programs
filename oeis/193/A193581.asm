@@ -1,8 +1,98 @@
 ; A193581: Sort-and-subtract: a(n) = n - A004185(n).
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,18,9,0,0,0,0,0,0,0,0,27,18,9,0,0,0,0,0,0,0,36,27,18,9,0,0,0,0,0,0,45,36,27,18,9,0,0,0,0,0,54,45,36,27,18,9,0,0,0,0,63,54,45,36,27,18,9,0,0,0
-; Formula: a(n) = -A004185(n)+n
 
+mov $2,0
+mov $3,0
+mov $4,0
+mov $5,0
+mov $6,0
+mov $7,0
+mov $8,0
+mov $9,0
+mov $10,0
 mov $1,$0
-seq $1,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+lpb $1
+  mov $12,$1
+  mod $12,10
+  mov $13,$12
+  equ $13,9
+  div $1,10
+  add $10,$13
+  mov $13,$12
+  equ $13,8
+  add $9,$13
+  mov $13,$12
+  equ $13,7
+  add $8,$13
+  mov $13,$12
+  equ $13,6
+  add $7,$13
+  mov $13,$12
+  equ $13,5
+  add $6,$13
+  mov $13,$12
+  equ $13,4
+  add $5,$13
+  mov $13,$12
+  equ $13,3
+  add $4,$13
+  mov $13,$12
+  equ $13,2
+  add $3,$13
+  mov $13,$12
+  equ $13,1
+  add $2,$13
+lpe
+mov $1,10
+pow $1,$2
+div $1,9
+mov $11,10
+pow $11,$3
+mul $1,$11
+div $11,9
+mul $11,2
+add $1,$11
+mov $11,10
+pow $11,$4
+mul $1,$11
+div $11,9
+mul $11,3
+add $1,$11
+mov $11,10
+pow $11,$5
+mul $1,$11
+div $11,9
+mul $11,4
+add $1,$11
+mov $11,10
+pow $11,$6
+mul $1,$11
+div $11,9
+mul $11,5
+add $1,$11
+mov $11,10
+pow $11,$7
+mul $1,$11
+div $11,9
+mul $11,6
+add $1,$11
+mov $11,10
+pow $11,$8
+mul $1,$11
+div $11,9
+mul $11,7
+add $1,$11
+mov $11,10
+pow $11,$9
+mul $1,$11
+div $11,9
+mul $11,8
+add $1,$11
+mov $11,10
+pow $11,$10
+mul $1,$11
+div $11,9
+mul $11,9
+add $1,$11
 sub $0,$1

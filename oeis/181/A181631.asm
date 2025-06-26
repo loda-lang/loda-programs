@@ -1,6 +1,6 @@
-; A181631: Triangle by rows, number of leading 1's in Fibonacci Maximal notation.
+; A181631: Triangle by rows, number of leading 1's in the maximal Fibonacci representation (A104326).
 ; Submitted by USTL-FIL (Lille Fr)
-; 1,1,2,1,2,3,1,1,2,3,4,1,1,1,2,2,3,4,5,1,1,1,1,1,2,2,2,3,3,4,5,6
+; 1,1,2,1,2,3,1,1,2,3,4,1,1,1,2,2,3,4,5,1,1,1,1,1,2,2,2,3,3,4,5,6,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,5,6,7,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,4
 ; Formula: a(n) = -10*truncate(A261300(A341915(A003754(n)+1))/10)+A261300(A341915(A003754(n)+1))
 
 #offset 1

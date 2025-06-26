@@ -6,7 +6,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,160929 ; a(n)= n * reversal(n-1)
+seq $1,160929 ; a(n)= n * reversal(n-1).
 add $0,1
 seq $0,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
 mul $0,$1

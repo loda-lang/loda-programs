@@ -14,7 +14,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,190457 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(golden ratio,4,3) and []=floor.
+  seq $3,190457 ; a(n) = [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(golden ratio,4,3) and []=floor.
   equ $3,4
   sub $0,$3
   add $1,1

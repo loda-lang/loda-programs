@@ -9,6 +9,4 @@ add $1,$0
 bin $1,$2
 bin $0,$2
 mul $0,$1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

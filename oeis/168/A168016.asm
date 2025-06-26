@@ -4,7 +4,24 @@
 
 #offset 1
 
-seq $0,127013 ; Triangle read by rows: row reversal of A126988.
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+add $2,1
+mov $3,$2
+sub $0,1
+sub $0,$4
+sub $0,$2
+gcd $2,$0
+div $2,$0
+mul $3,$2
+div $3,$0
+mov $0,$3
 lpb $0
   mov $1,$0
   seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).

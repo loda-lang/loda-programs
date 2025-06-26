@@ -14,7 +14,25 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,89913 ; Table T(n,k) = lcm(n,k)/gcd(n,k) = n*k/gcd(n,k)^2 read by antidiagonals (n >= 1, k >= 1).
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $7,$5
+  add $7,1
+  bin $7,2
+  sub $0,$7
+  sub $0,1
+  sub $5,$0
+  add $5,1
+  mov $6,$5
+  add $0,1
+  mul $5,$0
+  gcd $0,$6
+  pow $0,2
+  div $5,$0
+  mov $0,$5
   seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $4,-1
   pow $4,$0

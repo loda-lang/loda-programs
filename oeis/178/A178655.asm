@@ -10,9 +10,27 @@ lpb $5
   mov $4,$0
   max $4,0
   mov $3,$4
-  seq $4,131198 ; Triangle T(n,k), 0 <= k <= n, read by rows, given by [1,0,1,0,1,0,1,0,...] DELTA [0,1,0,1,0,1,0,1,...] where DELTA is the operator defined in A084938.
+  add $4,1
+  mov $6,$4
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  mov $7,$6
+  bin $7,$4
+  sub $6,1
+  bin $6,$4
+  add $4,1
+  mul $6,$7
+  div $6,$4
   mov $2,$5
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
   add $1,$2
 lpe
 min $3,1

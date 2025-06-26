@@ -1,4 +1,4 @@
-; A176345: Sum of gcd(k,n) from k = 1 to n over "regular" integers only (an integer k is regular if there is an x such that k^2 x == k (mod n))
+; A176345: Sum of gcd(k,n) from k = 1 to n over "regular" integers only (an integer k is regular if there is an x such that k^2 x == k (mod n)).
 ; Submitted by Simon Strandgaard
 ; 1,3,5,6,9,15,13,12,15,27,21,30,25,39,45,24,33,45,37,54,65,63,45,60,45,75,45,78,57,135,61,48,105,99,117,90,73,111,125,108,81,195,85,126,135,135,93,120,91,135,165,150,105,135,189,156,185,171,117,270,121,183,195,96,225,315,133,198,225,351,141,180,145,219,225,222,273,375,157,216
 

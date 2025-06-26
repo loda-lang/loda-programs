@@ -10,9 +10,10 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,105760 ; Nonnegative numbers k such that 2k+7 is prime.
-  sub $3,1
+  add $3,4
+  seq $3,40 ; The prime numbers.
+  div $3,2
+  sub $3,4
   mov $5,$3
   add $3,3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

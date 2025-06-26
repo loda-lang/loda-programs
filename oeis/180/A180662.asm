@@ -6,4 +6,4 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-seq $0,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+seq $0,1654 ; Golden rectangle numbers: F(n) * F(n+1), where F(n) = A000045(n) (Fibonacci numbers).

@@ -10,8 +10,14 @@ sub $0,1
 add $4,1
 pow $4,2
 lpb $4
+  mov $7,$3
+  nrt $7,2
+  mov $8,$7
+  pow $7,2
+  neq $7,$3
   mov $5,$3
-  seq $5,173517 ; a(n) = k if n is the k-th nonsquare, zero otherwise.
+  sub $5,$8
+  mul $5,$7
   mul $5,$3
   trn $5,1
   add $5,1

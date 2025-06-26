@@ -4,7 +4,5 @@
 
 #offset 1
 
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 seq $0,593 ; Sum of odd divisors of n.

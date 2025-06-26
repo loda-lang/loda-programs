@@ -10,7 +10,8 @@ lpb $4
   sub $0,$4
   mov $1,$0
   add $1,$2
-  seq $0,110501 ; Unsigned Genocchi numbers (of first kind) of even index.
+  seq $0,24255 ; a(0)=0, a(n) = n*E(2n-1) for n >= 1, where E(n) = A000111(n) are the Euler (or up-down) numbers.
+  dir $0,4
   bin $1,$4
   mul $1,$0
   add $3,$1

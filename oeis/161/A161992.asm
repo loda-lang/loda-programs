@@ -12,7 +12,7 @@ add $2,11
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  dir $3,2
   add $3,1
   mov $4,6
   div $4,$3

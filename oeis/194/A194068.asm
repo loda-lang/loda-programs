@@ -11,7 +11,31 @@ pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,194067 ; Natural interspersion of A087483; a rectangular array, by antidiagonals.
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  add $6,1
+  bin $6,2
+  sub $3,$6
+  sub $3,1
+  sub $4,$3
+  mov $5,0
+  gcd $5,$3
+  mul $5,2
+  div $3,2
+  mul $3,2
+  add $3,$4
+  add $3,2
+  add $3,$4
+  add $3,$5
+  pow $3,2
+  div $3,6
+  add $3,$5
+  div $3,2
+  add $3,1
   gcd $3,$0
   add $1,1
   add $2,$3
