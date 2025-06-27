@@ -1,5 +1,5 @@
 ; A134359: Coefficient of y^(n-4) in expansion of (y+n!)^n.
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 331776,1036800000,4031078400000,22583444889600000,185003580535603200000,2184855285409366671360000,36414254756822777856000000000,837793163263009313783808000000000
 
 #offset 4
@@ -10,12 +10,7 @@ bin $0,4
 lpb $1
   mov $3,$1
   pow $3,4
-  mul $4,$1
-  sub $4,1
   sub $1,1
   mul $2,$3
 lpe
-gcd $4,$2
-div $2,$4
 mul $0,$2
-mul $0,2
