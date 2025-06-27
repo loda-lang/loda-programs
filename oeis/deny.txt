@@ -1444,6 +1444,7 @@ A151796: Erroneous version of A074721.
 A151814: Erroneous version of A013579.
 A151878: Weight distribution of [255,37,91] primitive binary BCH code.
 A151909: Weight distribution of [255,45,87] primitive binary BCH code.
+A151933: Weight distribution of [255,47,85] primitive binary BCH code.
 A151992: Erroneous version of A003173.
 A151996: Erroneous version of A100200.
 A152137: Apparently an erroneous version of A073520.
@@ -1496,6 +1497,7 @@ A171114: Duplicate of A328551.
 A171115: Duplicate of A328552.
 A172321: Duplicate of A154689.
 A172432: Duplicate of A098952.
+A173667: Number of real zeros of the polynomial whose coefficients are the decimal expansion of n.
 A173709: Duplicate of A144226.
 A174112: After correction, duplicate of A111490.
 A174781: Duplicate of A028846.
@@ -1689,6 +1691,7 @@ A294455: Erroneous version of A182522.
 A295558: Erroneous version of A295559.
 A296509: Duplicate of A238005.
 A296366: Erroneous version of A007334.
+A297037: Number of pieces in the list d(m), d(m-1), ..., d(0) of base-9 digits of n; see Comments.
 A299917: Erroneous version of A299915.
 A299999: Duplicate of A007341.
 A300754: Erroneous version of A145392.
@@ -1696,6 +1699,7 @@ A300755: Erroneous version of A145393.
 A306574: Incorrect version of A088527.
 A307289: Erroneous version of A006227.
 A307897: Duplicate of A008651.
+A308407: Lexicographically earliest sequence of distinct terms such that reading one-by-one the central pair of digit of each term is the same as reading one-by-one the successive pairs of digits of the sequence itself.
 A317107: Numbers missing from A317105.
 A317439: Numbers missing from A317437.
 A317440: Numbers missing from A317438.
@@ -1703,6 +1707,7 @@ A317949: Erroneous version of A013582.
 A318936: Erroneous version of A088750.
 A323461: Erroneous version of A323457.
 A323841: Erroneous version of: Number of Stanley graphs on n nodes.
+A328075: Numbers such that the absolute values of the differences between any pair of digits are distinct.
 A328087: Erroneous version of A001523.
 A328980: Erroneous version of A328910: Number of solutions to Erdős''s Last Equation in n variables.
 A330553: Erroneous version of A275649.
