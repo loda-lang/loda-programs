@@ -1,0 +1,50 @@
+; A124029: Triangle T(n,k) with the coefficient [x^k] of the characteristic polynomial of the following n X n triangular matrix: 4 on the main diagonal, -1 of the two adjacent subdiagonals, 0 otherwise.
+; Submitted by Science United
+; 1,4,-1,15,-8,1,56,-46,12,-1,209,-232,93,-16,1,780,-1091,592,-156,20,-1,2911,-4912,3366,-1200,235,-24,1,10864,-21468,17784,-8010,2120,-330,28,-1,40545,-91824,89238,-48624,16255,-3416,441,-32,1,151316,-386373,430992,-275724,111524,-29589,5152,-568,36,-1,564719,-1604984,2021103,-1485264,705565,-226464,49756,-7392,711,-40,1,2107560,-6598282,9258404,-7686435,4196000,-1581832,420336,-78756,10200,-870,44,-1,7865521,-26895704
+
+mov $6,3
+mov $8,3
+mov $1,$0
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $9,$5
+add $9,1
+bin $9,2
+sub $1,$9
+sub $1,1
+mul $1,-1
+add $1,$5
+sub $5,$1
+lpb $1
+  sub $1,1
+  add $5,1
+  add $6,$8
+  add $7,1
+  mov $4,$6
+  mul $4,2
+  mul $4,$5
+  div $4,$7
+  mod $6,$8
+  add $6,$4
+  mul $8,-1
+  add $8,$4
+lpe
+mov $1,$6
+div $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,4
+add $0,$5
+sub $0,1
+sub $2,$0
+mov $3,-1
+pow $3,$2
+mov $0,$3
+mul $0,$1
