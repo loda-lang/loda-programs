@@ -10,5 +10,5 @@ lpb $0
   mul $0,4
   pow $0,$0
 lpe
+add $0,1
 mul $0,30
-add $0,30

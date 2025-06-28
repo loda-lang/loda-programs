@@ -1,5 +1,5 @@
 ; A273040: Least k >= 2 such that the base-k digits of n are nondecreasing.
-; Submitted by damotbe
+; Submitted by DukeBox
 ; 2,3,2,3,3,4,2,3,5,4,4,5,3,3,2,6,3,5,5,7,4,4,4,5,7,3,4,6,6,8,2,5,5,5,6,8,5,5,5,3,3,4,4,3,6,6,4,7,5,6,6,6,3,8,8,10,6,6,6,7,7,5,2,5,6,7,7,5,5,9,6,11,7,5,7,7,8,8,8,3
 
 #offset 1
@@ -15,9 +15,9 @@ lpb $3
       mov $1,$0
       mod $1,$2
       div $0,$2
-      add $3,2
       sub $4,$1
     lpe
+    mul $3,2
   lpe
   mov $1,$0
   neq $1,1

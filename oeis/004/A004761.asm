@@ -1,19 +1,15 @@
 ; A004761: Numbers n whose binary expansion does not begin with 11.
-; Submitted by BrandyNOW
+; Submitted by fzs600
 ; 0,1,2,4,5,8,9,10,11,16,17,18,19,20,21,22,23,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142
-; Formula: a(n) = -max(-n+3,0)+max(n-2,1)+truncate(2^logint(max(n-2,1),2))
+; Formula: a(n) = truncate(2^logint(max(n-2,1),2))+n-2
 
 #offset 1
 
-mov $3,$0
-sub $3,1
-mul $3,-1
-trn $3,-2
 sub $0,2
-max $0,1
-mov $2,$0
-log $2,2
-mov $1,2
-pow $1,$2
-add $0,$1
-sub $0,$3
+mov $1,$0
+max $1,1
+log $1,2
+mov $2,2
+pow $2,$1
+add $2,$0
+mov $0,$2

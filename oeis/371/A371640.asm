@@ -5,11 +5,10 @@
 
 #offset 1
 
-mov $1,$0
-mov $2,9
-pow $2,$0
+mov $1,9
+pow $1,$0
 gcd $0,9
-mul $0,$2
+mul $0,$1
 sub $0,9
 div $0,9
 mul $0,9
