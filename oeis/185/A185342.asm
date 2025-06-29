@@ -1,24 +1,22 @@
 ; A185342: Triangle of successive recurrences in columns of A117317(n).
 ; Submitted by loader3229
 ; 2,4,-4,6,-12,8,8,-24,32,-16,10,-40,80,-80,32,12,-60,160,-240,192,-64,14,-84,280,-560,672,-448,128,16,-112,448,-1120,1792,-1792,1024,-256,18,-144,672,-2016,4032,-5376,4608,-2304,512,20,-180,960,-3360,8064,-13440,15360,-11520,5120,-1024,22,-220,1320,-5280,14784,-29568,42240,-42240,28160,-11264,2048,24,-264,1760,-7920,25344,-59136,101376,-126720,112640,-67584,24576,-4096,26,-312
-; Formula: a(n) = 2*truncate((-2)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)
+; Formula: a(n) = -truncate((-2)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)
 
 add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $3,$2
-add $3,1
-bin $3,2
-sub $0,$3
-sub $0,1
-mov $1,-2
-pow $1,$0
-add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
 add $2,1
-bin $2,$0
-mul $1,$2
+bin $2,2
+sub $0,$2
+mov $3,-2
+pow $3,$0
+add $1,1
+bin $1,$0
+mul $1,$3
 mov $0,$1
-mul $0,2
+mul $0,-1

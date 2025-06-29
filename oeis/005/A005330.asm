@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $2,1
-sub $0,2
 max $4,$2
 lpb $4
   sub $4,1
@@ -18,7 +17,6 @@ lpb $4
   mov $5,$0
   add $5,1
   seq $5,5328 ; Certain subgraphs of a directed graph.
-  sub $0,1
   mul $1,$5
   add $3,$1
 lpe

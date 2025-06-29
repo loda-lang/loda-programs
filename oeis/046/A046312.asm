@@ -1,16 +1,29 @@
 ; A046312: Numbers that are divisible by exactly 9 primes with multiplicity.
-; Submitted by Odd-Rod
+; Submitted by rajab
 ; 512,768,1152,1280,1728,1792,1920,2592,2688,2816,2880,3200,3328,3888,4032,4224,4320,4352,4480,4800,4864,4992,5832,5888,6048,6272,6336,6480,6528,6720,7040,7200,7296,7424,7488,7936,8000,8320,8748,8832,9072,9408,9472,9504,9720,9792,9856,10080,10496,10560,10800,10880,10944,11008,11136,11200,11232,11648,11904,12000,12032,12160,12480,13122,13248,13568,13608,14112,14208,14256,14580,14688,14720,14784,15104,15120,15232,15488,15616,15680
 
 #offset 1
 
-sub $0,1
-mov $2,4
+add $0,5
+mov $2,8
+pow $2,$0
+mov $4,12
+mov $1,48
 lpb $2
-  mov $1,$0
-  add $1,$2
-  seq $1,46314 ; Numbers that are divisible by exactly 10 primes with multiplicity.
+  mov $3,$1
+  add $3,2
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $3,3
+  equ $3,7
+  mul $4,2
+  sub $0,$3
+  add $1,$4
+  mov $4,$0
+  max $4,6
+  equ $4,$0
+  mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+add $0,2
 div $0,2

@@ -1,27 +1,19 @@
 ; A018300: Divisors of 138.
-; Submitted by kundor
+; Submitted by loader3229
 ; 1,2,3,6,23,46,69,138
+; Formula: a(n) = ((n-1)%4+2*max((n-1)%4-2,0)+1)*23^floor((n-1)/4)
 
 #offset 1
 
-mov $1,1
-mov $2,3
 sub $0,1
-lpb $0
-  add $1,1
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
-  div $0,2
-  mul $2,$1
-  dif $2,$3
-  add $1,$4
-  sub $1,1
-  bin $1,2
-  mul $1,2
-  add $1,2
-  mov $4,3
-lpe
-mov $0,$2
-div $0,3
+mov $1,$0
+mod $1,4
+add $1,1
+div $0,4
+mov $2,23
+pow $2,$0
+mov $0,$1
+trn $0,3
+mul $0,2
+add $0,$1
+mul $0,$2

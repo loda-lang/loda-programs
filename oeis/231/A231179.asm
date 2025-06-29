@@ -27,19 +27,15 @@ lpb $3
   mov $0,$7
   bin $0,$8
   sub $7,$8
-  mov $9,-1
-  pow $9,$7
-  mov $10,$7
-  seq $10,122045 ; Euler (or secant) numbers E(n).
+  mov $9,$7
+  seq $9,122045 ; Euler (or secant) numbers E(n).
   seq $7,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-  gcd $7,$10
-  mul $7,$9
+  gcd $7,$9
   mul $0,$7
   mov $5,0
   gcd $5,$0
   mov $6,0
   gcd $6,$5
-  mov $0,$6
   add $2,$6
   sub $3,1
 lpe

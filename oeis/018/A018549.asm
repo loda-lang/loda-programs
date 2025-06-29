@@ -1,25 +1,22 @@
 ; A018549: Divisors of 610.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,5,10,61,122,305,610
+; Formula: a(n) = floor(((11^(2*floor((n-1)/4))+1)*(((n-1)%4)^2+2*max(2*floor((n-1)/4)-3,0)+1))/2)
 
 #offset 1
 
-mov $1,1
-mov $2,3
 sub $0,1
-lpb $0
-  add $1,1
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
-  div $0,2
-  mul $2,$1
-  dif $2,$3
-  add $1,$4
-  bin $1,2
-  mul $1,4
-  mov $4,1
-lpe
-mov $0,$2
-div $0,3
+mov $1,$0
+mod $1,4
+pow $1,2
+add $1,1
+div $0,4
+mul $0,2
+mov $2,11
+pow $2,$0
+add $2,1
+trn $0,3
+mul $0,2
+add $0,$1
+mul $0,$2
+div $0,2

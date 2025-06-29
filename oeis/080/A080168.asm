@@ -10,16 +10,20 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  mul $3,2
   add $3,1
-  seq $3,80565 ; Binary expansion of n has form 11**...*1.
-  mov $5,$3
-  sub $3,1
   mov $7,$3
-  add $3,1
+  mov $9,$3
+  log $9,2
+  add $9,1
+  mov $3,2
+  pow $3,$9
+  add $7,$3
+  mov $3,$7
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $3,1
-  mov $8,$7
-  sub $8,2
+  mov $5,$7
+  mov $8,-2
   mul $8,$3
   add $8,2
   mov $6,2
@@ -27,7 +31,6 @@ lpb $2
   sub $0,$6
   add $1,1
   add $1,$4
-  mov $3,$6
   mov $4,$0
   max $4,0
   equ $4,$0

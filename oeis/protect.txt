@@ -375,6 +375,7 @@ A118160: Start with 1 and repeatedly reverse the digits and add 48 to get the ne
 A118163: Start with 1 and repeatedly reverse the digits and add 65 to get the next term.
 A118215: Start with 1 and repeatedly reverse the digits and add 68 to get the next term.
 A118226: Start with 1 and repeatedly reverse the digits and add 76 to get the next term.
+A118633: Start with 1 and repeatedly reverse the digits and add 37 to get the next term.
 A118636: Start with 1 and repeatedly reverse the digits and add 40 to get the next term.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
@@ -596,6 +597,7 @@ A330410: a(n) = 6*prime(n) - 1.
 A333169: a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
 A336551: a(n) = A003557(n) - 1.
 A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.
+A344856: Bitwise XOR of prime(n) and n^2.
 A356533: a(n) = sigma_2(n)^2.
 A356534: a(n) = sigma_3(n)^2.
 A356868: a(n) = n^2 * prime(n).

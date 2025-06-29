@@ -8,7 +8,6 @@ lpb $0
   mul $3,2
   sub $0,$3
   mov $2,$0
-  max $2,0
   mul $2,2
   dir $2,4
   mov $7,$2

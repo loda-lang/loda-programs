@@ -1470,6 +1470,7 @@ A159839: Erroneous version of A007770.
 A159942: Duplicate of A102339.
 A159985: Erroneous version of A259667
 A160053: Duplicate of A140612.
+A160338: Height (maximum absolute value of coefficients) of the n-th cyclotomic polynomial.
 A160507: Duplicate of A071734.
 A160701: Duplicate of A137551.
 A160771: Erroneous version of A040976.
@@ -1675,6 +1676,7 @@ A274643: Erroneous version of A259698,
 A274942: Erroneous version of A129860.
 A275081: Duplicate of A097443.
 A275571: Incorrect duplicate of A004146.
+A276502: Least k > 0 such that A045876(n) divides A045876(n*10^k).
 A279796: Erroneous duplicate of A285022.
 A282320: Erroneous version of A002854.
 A283021: Erroneous version of A263656.
@@ -1692,6 +1694,7 @@ A295558: Erroneous version of A295559.
 A296509: Duplicate of A238005.
 A296366: Erroneous version of A007334.
 A297037: Number of pieces in the list d(m), d(m-1), ..., d(0) of base-9 digits of n; see Comments.
+A297038: Number of pieces in the list d(m), d(m-1), ..., d(0) of base-10 digits of n; see Comments.
 A299917: Erroneous version of A299915.
 A299999: Duplicate of A007341.
 A300754: Erroneous version of A145392.
