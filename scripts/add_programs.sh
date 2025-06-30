@@ -19,7 +19,7 @@ if (( num_added >= 5 )); then
   git commit -m "added $num_added programs"
 fi
 
-git pull -X theirs
+# git pull -X theirs
 git push
 
 popd > /dev/null

@@ -151,7 +151,7 @@ for f in $files; do
   if [ "$commit_staged" != "y" ]; then
     clear
   fi
-  if ((num_updated >= 1000)); then
+  if ((num_updated >= 10000)); then
     break
   fi
   if git diff -U1000 --exit-code -- $f > /dev/null; then
@@ -180,7 +180,7 @@ if (( num_updated >= 50 )); then
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git commit -m "updated $num_updated programs"
-    git pull -X theirs
+#    git pull -X theirs
     git push
   fi
 fi

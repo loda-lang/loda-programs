@@ -61,7 +61,7 @@ if (( num_deleted > 0 )); then
   read -p "Commit $num_deleted deleted programs? (Y/n) " a
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git commit -m "deleted $num_deleted programs"
-    git pull -X theirs
+#    git pull -X theirs
     git push
   fi
 fi
