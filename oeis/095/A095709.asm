@@ -10,8 +10,6 @@ add $1,3
 div $1,2
 bin $1,2
 sub $1,$0
-mov $3,0
-mov $6,0
 mov $0,$1
 add $0,1
 mov $2,1

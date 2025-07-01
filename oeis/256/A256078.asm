@@ -7,11 +7,10 @@ max $1,1
 log $1,2
 add $1,1
 mov $2,$0
+mov $4,1
 mov $0,2
 pow $0,$1
 sub $0,$2
-mov $3,0
-mov $4,1
 sub $0,1
 lpb $0
   mov $5,$0

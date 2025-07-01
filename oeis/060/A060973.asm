@@ -1,24 +1,18 @@
 ; A060973: a(2*n+1) = a(n+1)+a(n), a(2*n) = 2*a(n), with a(1)=0 and a(2)=1.
-; Submitted by aendgraend
+; Submitted by loader3229
 ; 0,1,1,2,2,2,3,4,4,4,4,4,5,6,7,8,8,8,8,8,8,8,8,8,9,10,11,12,13,14,15,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
-; Formula: a(n) = e(n-1), b(n) = c(n-1)+truncate((-c(n-1)+b(n-1))/2), b(3) = 6, b(2) = 5, b(1) = 3, b(0) = 3, c(n) = c(n-1)*((d(n-1)==4)-2*truncate(((d(n-1)==4)+truncate((-c(n-1)+b(n-1))/2))/2)+truncate((-c(n-1)+b(n-1))/2)+2), c(3) = 12, c(2) = 6, c(1) = 6, c(0) = 3, d(n) = (d(n-1)==4)-2*truncate(((d(n-1)==4)+truncate((-c(n-1)+b(n-1))/2))/2)+truncate((-c(n-1)+b(n-1))/2)+2, d(3) = 2, d(2) = 1, d(1) = 2, d(0) = 0, e(n) = (d(n-1)==4)-2*truncate(((d(n-1)==4)+truncate((-c(n-1)+b(n-1))/2))/2)+e(n-1)+truncate((-c(n-1)+b(n-1))/2)+1, e(3) = 2, e(2) = 1, e(1) = 1, e(0) = 0
+; Formula: a(n) = -min(-floor(truncate(2^logint(n,2))/2)+n,truncate(2^logint(n,2)))+n
 
 #offset 1
 
-mov $1,3
-mov $2,3
-sub $0,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  equ $3,4
-  add $3,$1
-  mod $3,2
-  add $3,2
-  sub $4,1
-  add $4,$3
-  add $1,$2
-  mul $2,$3
-lpe
+mov $1,$0
+log $1,2
+mov $2,2
+pow $2,$1
+mov $3,$2
+div $3,2
+mov $4,$0
+sub $0,$3
+min $0,$2
+sub $4,$0
 mov $0,$4

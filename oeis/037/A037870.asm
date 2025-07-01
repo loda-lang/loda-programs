@@ -1,5 +1,5 @@
 ; A037870: a(n) = (1/2)*Sum{|d(i)-e(i)|}, where Sum{d(i)*2^i} is base 2 representation of n and e(i) are digits d(i) in nonincreasing order, for i=0,1,...,m.
-; Submitted by Science United
+; Submitted by Wood
 ; 0,1,0,1,1,1,0,1,1,1,1,2,1,1,0,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,0,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,1,2,2,2,2,2,2,2,1,3,2,2,1,2,1,1,0,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,1,2
 
 #offset 1
@@ -9,6 +9,7 @@ pow $2,$0
 add $0,$2
 sub $0,1
 lpb $0
+  add $4,1
   mov $5,$0
   add $5,1
   mov $1,$5
@@ -21,8 +22,5 @@ lpb $0
   div $5,2
   mov $0,$5
   sub $0,1
-  mov $6,$5
-  min $6,1
-  add $4,$6
 lpe
 mov $0,$4

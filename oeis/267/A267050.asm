@@ -15,7 +15,6 @@ div $4,$2
 add $4,$0
 mov $1,$4
 div $1,2
-mov $0,$4
 mov $0,$1
 add $0,1
 mov $5,$0
@@ -29,6 +28,5 @@ sub $0,$6
 pow $0,$5
 mul $5,$0
 trn $5,1
-mov $7,0
 equ $7,$5
 mov $0,$7

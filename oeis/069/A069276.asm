@@ -1,38 +1,16 @@
 ; A069276: 15-almost primes (generalization of semiprimes).
-; Submitted by sbo92
+; Submitted by DukeBox
 ; 32768,49152,73728,81920,110592,114688,122880,165888,172032,180224,184320,204800,212992,248832,258048,270336,276480,278528,286720,307200,311296,319488,373248,376832,387072,401408,405504,414720,417792,430080,450560,460800,466944,475136,479232,507904,512000,532480,559872,565248,580608,602112,606208,608256,622080,626688,630784,645120,671744,675840,691200,696320,700416,704512,712704,716800,718848,745472,761856,768000,770048,778240,798720,839808,847872,868352,870912,903168,909312,912384,933120,940032
 
 #offset 1
 
-mov $1,$0
-add $1,5
-mov $4,8
-pow $4,$1
-mov $6,12
-mov $3,48
-lpb $4
-  mov $5,$3
-  add $5,2
-  seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $5,3
-  equ $5,7
-  sub $1,$5
-  add $3,$6
-  mov $6,$1
-  max $6,6
-  equ $6,$1
-  mul $4,$6
-  sub $4,1
+sub $0,1
+mov $2,4
+lpb $2
+  mov $1,$0
+  add $1,$2
+  seq $1,46314 ; Numbers that are divisible by exactly 10 primes with multiplicity.
+  div $2,4
 lpe
-mov $1,$3
-add $1,2
-mov $2,$0
-mul $0,2
-add $2,$0
-add $0,$2
-pow $0,$0
-lex $0,2
-add $0,1
-mod $0,10
-mul $0,$1
+mov $0,$1
 mul $0,32

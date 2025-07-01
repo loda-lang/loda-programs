@@ -206,6 +206,7 @@ A062207: a(n) = 2*n^n-1.
 A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062312: Nonprime numbers squared.
 A062355: a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
+A062401: a(n) = phi(sigma(n)).
 A062727: Sum of the divisors of n^n (A000312).
 A062772: Smallest prime larger than square of n-th prime.
 A062971: a(n) = (2*n)^n.
@@ -375,6 +376,7 @@ A118160: Start with 1 and repeatedly reverse the digits and add 48 to get the ne
 A118163: Start with 1 and repeatedly reverse the digits and add 65 to get the next term.
 A118215: Start with 1 and repeatedly reverse the digits and add 68 to get the next term.
 A118226: Start with 1 and repeatedly reverse the digits and add 76 to get the next term.
+A118631: Start with 1 and repeatedly reverse the digits and add 34 to get the next term.
 A118633: Start with 1 and repeatedly reverse the digits and add 37 to get the next term.
 A118636: Start with 1 and repeatedly reverse the digits and add 40 to get the next term.
 A118755: Smallest prime >= 6*n.

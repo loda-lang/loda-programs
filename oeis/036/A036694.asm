@@ -1,27 +1,21 @@
 ; A036694: a(n) = (1/4)*A036693(n) for n >= 1.
-; Submitted by Science United
+; Submitted by pm120
 ; 0,1,2,4,5,8,8,9,12,14,16,15,16,22,21,24,22,26,27,30,32,29,36,34,35,42,40,42,41,44,48,45,52,50,54,57,50,60,55,66,62,59,66,66,72,71,66,74,73,78,80,82,81,78,84,83,92,86,92,89,94,98,95,98,100,105,100,100,108,111,106,110,107,122,116,118,115,120,126,117
 
-mov $3,$0
-mov $5,2
-lpb $5
-  bin $5,$4
-  add $0,$5
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  pow $4,2
-  seq $4,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.
-  mul $4,2
-  mov $2,$5
-  mul $2,$4
-  mul $0,$5
-  add $1,$2
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  gcd $1,$0
+  seq $0,603 ; Number of nonnegative solutions to x^2 + y^2 <= n^2.
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
 lpe
-min $3,1
-mul $3,$4
-add $1,4
-sub $1,$3
-mov $0,$1
-sub $0,5
-div $0,2
+mul $1,$0
+mov $0,$2
+sub $0,$1
+sub $0,1

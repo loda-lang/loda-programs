@@ -736,6 +736,7 @@ A296908: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) < #
 A296923: Primes p such that Legendre(-5,p) = -1.
 A296924: Primes p such that Legendre(-6,p) = 0 or 1.
 A297155: a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
+A297784: Number of distinct runs in base-16 digits of n.
 A301517: Numbers whose ratio (sum of nonsquarefree divisors)/(sum of squarefree divisors) is a positive integer.
 A302253: Positions of 3 in A190436.
 A305390: A ternary tribonacci sequence: define the morphism f: 1 -> 2, 2 -> 3, 3 -> 1,2,3; let S[k] be result of applying f k times to 1, for k =- 0,1,2,...; sequence gives limit S[3k+1] as k -> oo.

@@ -1,22 +1,12 @@
 ; A385212: a(n) = n^(mu(n)^2), where mu is the Möbius function (A008683).
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Science United
 ; 1,2,3,1,5,6,7,1,1,10,11,1,13,14,15,1,17,1,19,1,21,22,23,1,1,26,1,1,29,30,31,1,33,34,35,1,37,38,39,1,41,42,43,1,1,46,47,1,1,1,51,1,53,1,55,1,57,58,59,1,61,62,1,1,65,66,67,1,69,70,71,1,73,74,1,1,77,78,79,1
 
 #offset 1
 
-mov $3,$0
-lpb $3
-  sub $3,1
-  lpb $1
-    sub $2,$1
-    sub $2,$3
-    mod $2,$0
-    mul $2,$1
-    trn $3,$0
-    sub $1,$2
-  lpe
-  add $1,1
-  mov $2,$1
-  pow $2,$0
+sub $0,1
+lpb $0
+  add $0,1
+  seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
 lpe
-mov $0,$1
+add $0,1

@@ -1,7 +1,7 @@
 ; A036746: Numbers with "long" representations in Roman notation: given by last n letters from ...MMMDCCCLXXXVIII.
-; Submitted by loader3229
+; Submitted by fzs600
 ; 1,2,3,8,18,28,38,88,188,288,388,888,1888,2888,3888
-; Formula: a(n) = truncate(((9*(n%4)+8)*10^floor(n/4)-17)/9)+1
+; Formula: a(n) = floor(((9*(n%4)+8)*10^floor(n/4))/9)
 
 #offset 1
 
@@ -16,6 +16,4 @@ mul $0,8
 sub $0,1
 add $0,$1
 mul $0,$2
-sub $0,17
 div $0,9
-add $0,1

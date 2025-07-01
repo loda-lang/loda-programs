@@ -1,20 +1,24 @@
 ; A137452: Triangular array of the coefficients of the sequence of Abel polynomials A(n,x) := x*(x-n)^(n-1).
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 1,0,1,0,-2,1,0,9,-6,1,0,-64,48,-12,1,0,625,-500,150,-20,1,0,-7776,6480,-2160,360,-30,1,0,117649,-100842,36015,-6860,735,-42,1,0,-2097152,1835008,-688128,143360,-17920,1344,-56,1,0,43046721,-38263752,14880348,-3306744,459270,-40824,2268,-72,1,0,-1000000000,900000000,-360000000,84000000,-12600000,1260000,-84000,3600,-90,1,0,25937424601,-23579476910,9646149645,-2338460520,372027810,-40584852,3074610,-159720,5445,-110,1,0,-743008370688
+; Formula: a(n) = truncate((-truncate((sqrtint(8*n+8)-1)/2))^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*binomial(truncate((sqrtint(8*n+8)-1)/2)-1,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
 
-lpb $0
-  add $2,1
-  sub $0,$2
-  sub $3,1
-lpe
-mov $1,$2
-bin $1,$0
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $2,$1
 sub $2,$0
-mov $0,$2
-add $2,$3
-lpb $0
-  sub $0,1
-  mul $1,$2
-  mov $2,$3
-lpe
+sub $3,$1
+pow $3,$2
+sub $1,1
+bin $1,$2
+mul $1,$3
 mov $0,$1

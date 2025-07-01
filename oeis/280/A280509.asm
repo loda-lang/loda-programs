@@ -5,7 +5,13 @@
 #offset 1
 
 mul $0,3
-seq $0,57889 ; Bijective bit-reverse of n: keep the trailing zeros in the binary expansion of n fixed, but reverse all the digits up to that point.
-mov $1,$0
+lpb $0
+  mov $2,$0
+  mod $2,2
+  div $0,2
+  add $3,$2
+  mul $3,2
+lpe
+mov $1,$3
 lex $1,3
 mov $0,$1

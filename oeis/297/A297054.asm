@@ -1,5 +1,5 @@
 ; A297054: The coefficients of the product (1-x^2)(1-x^3)(1-x^4)... / (1+x).
-; Submitted by fzs600
+; Submitted by Science United
 ; 1,-1,0,-1,0,0,0,1,0,1,0,1,-1,1,-1,0,-1,0,-1,0,-1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,-1,1,-1,1,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,-1,1,-1,1,-1,1,-1,0,-1,0
 
 #offset 1
@@ -10,26 +10,22 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,3
+  mul $2,24
   add $2,1
+  mov $3,2
+  mov $5,$2
+  nrt $2,2
   mov $4,$2
-  mul $4,8
-  nrt $4,2
-  sub $4,1
-  div $4,2
-  mov $5,$4
-  add $5,1
-  bin $5,2
-  sub $2,2
-  sub $2,$5
-  bin $2,$4
-  mul $4,2
   add $4,1
-  mul $4,$2
-  mov $2,$4
+  mod $4,4
+  sub $4,1
+  mov $6,$2
+  pow $2,2
+  equ $2,$5
+  mul $2,$6
+  mul $2,$4
   mod $2,3
   dif $2,-2
   add $1,$2
-  mov $3,2
 lpe
 mov $0,$1
