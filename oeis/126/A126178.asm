@@ -1,0 +1,42 @@
+; A126178: Triangle read by rows: T(n,k) is number of hex trees with n edges and k vertices of outdegree 1 (0<=k<=n).
+; Submitted by mmonnin
+; 1,0,3,1,0,9,0,9,0,27,2,0,54,0,81,0,30,0,270,0,243,5,0,270,0,1215,0,729,0,105,0,1890,0,5103,0,2187,14,0,1260,0,11340,0,20412,0,6561,0,378,0,11340,0,61236,0,78732,0,19683,42,0,5670,0,85050,0,306180,0,295245,0
+
+mov $1,$0
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+add $0,1
+sub $1,$3
+add $2,$1
+mod $2,2
+add $2,2
+pow $2,$1
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $7,$4
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
+mov $5,$0
+mov $0,$4
+bin $0,$5
+sub $4,$5
+mov $6,$4
+dif $6,2
+bin $4,$6
+add $6,1
+div $4,$6
+mul $0,$4
+mul $0,$2
+div $0,3
