@@ -1,14 +1,23 @@
 ; A143075: Polynomial expansion sequence: p(x)=1/(1 - 4x + 5x^2 - 6x^4 + 6x^5 - x^6 - 2x^7 + x^8).
+; Submitted by BrandyNOW
 ; 1,4,11,24,47,86,152,262,444,742,1228,2018,3301,5382,8755,14218,23063,37380,60552,98052,158736,256932,415824,672924,1088929,1762048,2851187,4613460,7464887,12078602,19543760
-; Formula: a(n) = a(n-6)+A192748(n+1), a(5) = 47, a(4) = 24, a(3) = 11, a(2) = 4, a(1) = 1, a(0) = 0
+; Formula: a(n) = truncate(e(n+2)/2), b(n) = -2*truncate((b(n-1)+d(n-1))/2)+b(n-1)+d(n-1), b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = c(n-1)+d(n-1), c(4) = 7, c(3) = 3, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = d(n-1)+d(n-2)+1, d(4) = 7, d(3) = 4, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = 2*truncate((b(n-1)+d(n-1))/2)-b(n-1)+c(n-1)+e(n-1), e(4) = 8, e(3) = 2, e(2) = 0, e(1) = 0, e(0) = 0
 
 #offset 1
 
+add $0,2
 lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,192748 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
-  trn $0,6
-  add $1,$2
+  sub $0,1
+  add $2,$4
+  add $3,1
+  mov $6,$4
+  add $1,$4
+  mod $1,2
+  add $5,$2
+  sub $5,$1
+  mov $4,$3
+  add $4,$6
+  mov $3,$6
 lpe
-mov $0,$1
+mov $0,$5
+div $0,2

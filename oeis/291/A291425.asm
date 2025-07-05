@@ -8,12 +8,11 @@ sub $0,1
 mov $1,2
 add $1,$0
 mov $2,1
-mov $3,-2
 gcd $0,2
 lpb $0
   add $0,1
   add $2,2
-  add $3,5
+  mov $3,$2
   mul $3,$0
   lpb $3
     add $2,1
@@ -22,8 +21,8 @@ lpb $0
     neq $4,1
     sub $3,$4
   lpe
+  mov $1,1
   add $2,1
   div $0,$2
-  sub $3,$2
 lpe
 mov $0,$2

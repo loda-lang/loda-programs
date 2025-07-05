@@ -1,12 +1,37 @@
 ; A022333: Exponent of 5 (value of j) in n-th number of form 2^i*5^j.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 0,0,0,1,0,1,0,1,2,0,1,2,0,1,2,3,0,1,2,3,0,1,2,3,0,4,1,2,3,0,4,1,2,3,0,4,1,5,2,3,0,4,1,5,2,3,0,4,1,5,2,6,3,0,4,1,5,2,6,3,0,4,1,5,2,6,3,0,7,4,1,5,2,6,3,0,7,4,1,5
-; Formula: a(n) = truncate((A004531(20*A003592(n))-8)/4)
 
 #offset 1
 
-seq $0,3592 ; Numbers of the form 2^i*5^j with i, j >= 0.
-mul $0,20
-seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
-sub $0,8
-div $0,4
+mov $2,12
+mov $11,1
+lpb $0
+  sub $0,1
+  mov $4,11
+  mov $5,$2
+  lpb $5
+    trn $5,1
+    mov $6,$$5
+    leq $6,$$4
+    lpb $6
+      mov $6,0
+      mov $4,$5
+    lpe
+    mov $6,$5
+    geq $6,12
+    mul $5,$6
+  lpe
+  mov $3,$2
+  sub $3,$4
+  equ $3,1
+  lpb $3
+    mov $3,0
+    mov $$2,$$4
+    mul $$2,5
+    add $2,1
+  lpe
+  mul $$4,2
+lpe
+mov $0,$4
+sub $0,11

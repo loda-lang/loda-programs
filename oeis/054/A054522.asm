@@ -1,14 +1,30 @@
 ; A054522: Triangle T(n,k): T(n,k) = phi(k) if k divides n, T(n,k)=0 otherwise (n >= 1, 1<=k<=n). T(n,k) = number of elements of order k in cyclic group of order n.
-; Submitted by WTBroughton
+; Submitted by Mumps
 ; 1,1,1,1,0,2,1,1,0,2,1,0,0,0,4,1,1,2,0,0,2,1,0,0,0,0,0,6,1,1,0,2,0,0,0,4,1,0,2,0,0,0,0,0,6,1,1,0,0,4,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,10,1,1,2,2,0,2,0,0,0,0,0,4,1,0
-; Formula: a(n) = A054526(n-1)*A126988(n)^truncate(0^A126988(n))
 
 #offset 1
 
-mov $1,$0
-seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
-pow $2,$1
-pow $1,$2
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+add $2,1
+gcd $2,$0
+div $2,$0
+mul $0,$2
+mul $0,2
 sub $0,1
-seq $0,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
-mul $0,$1
+lpb $0
+  div $0,2
+  mov $1,$0
+  add $1,1
+  mov $4,$1
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  div $0,72
+lpe
+mov $0,$4

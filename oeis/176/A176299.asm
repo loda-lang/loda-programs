@@ -6,14 +6,13 @@
 #offset 1
 
 mov $1,1
-mov $3,2
+mov $2,2
 sub $0,1
 lpb $0
   sub $0,1
   add $3,$1
   add $1,$2
-  mov $2,$1
   mul $1,$3
-  mov $3,$2
+  mov $2,$3
 lpe
 mov $0,$1

@@ -4,8 +4,6 @@
 
 dir $0,4
 mov $3,$0
-trn $3,1
-add $3,1
 seq $3,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mov $1,$0
 mul $1,$3

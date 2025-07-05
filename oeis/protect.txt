@@ -341,6 +341,7 @@ A102781: Number of positive even numbers less than the n-th prime.
 A104638: Number of odd digits in n-th prime.
 A105555: Let d = number of divisors of n; a(n) = d-th prime.
 A105825: a(n) = sigma(n) (mod 5).
+A105827: a(n) = sigma(n) (mod 8).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
 A106044: Difference between n-th prime and next larger perfect square.
 A106138: Semiprimes (mod 2).
@@ -374,10 +375,13 @@ A118156: Start with 1 and repeatedly reverse the digits and add 61 to get the ne
 A118157: Start with 1 and repeatedly reverse the digits and add 62 to get the next term.
 A118160: Start with 1 and repeatedly reverse the digits and add 48 to get the next term.
 A118163: Start with 1 and repeatedly reverse the digits and add 65 to get the next term.
+A118200: Start with 1 and repeatedly reverse the digits and add 66 to get the next term.
 A118215: Start with 1 and repeatedly reverse the digits and add 68 to get the next term.
+A118218: Start with 1 and repeatedly reverse the digits and add 71 to get the next term.
 A118226: Start with 1 and repeatedly reverse the digits and add 76 to get the next term.
 A118631: Start with 1 and repeatedly reverse the digits and add 34 to get the next term.
 A118633: Start with 1 and repeatedly reverse the digits and add 37 to get the next term.
+A118634: Start with 1 and repeatedly reverse the digits and add 38 to get the next term.
 A118636: Start with 1 and repeatedly reverse the digits and add 40 to get the next term.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
@@ -548,6 +552,7 @@ A231620: a(n) = A000930(n^2), where A000930 is Narayana's cows sequence.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
 A234645: Sum of the divisors of n^3+1.
 A239050: a(n) = 4*sigma(n).
+A239690: Base 4 sum of digits of prime(n).
 A239691: Base 5 sum of digits of prime(n).
 A239692: Base 6 sum of digits of prime(n).
 A239694: Base 8 sum of digits of prime(n).

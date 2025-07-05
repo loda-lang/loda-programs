@@ -11,7 +11,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  add $0,1
   mov $4,$0
   mul $0,8
   nrt $0,2
@@ -21,7 +20,6 @@ lpb $2
   add $5,1
   bin $5,2
   sub $4,$5
-  sub $4,1
   bin $0,$4
   seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   add $1,$0

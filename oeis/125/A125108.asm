@@ -1,32 +1,22 @@
 ; A125108: Column sums of a Gaussian polynomial-shaped array. Row sums generate the Eulerian array A008292.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 1,2,4,10,26,72,202,580
+; Formula: a(n) = floor((3^(n-1)+3^floor(n/2)+floor((2*3^(n-1))/(3^floor(n/2)+1))+1)/4)
 
 #offset 1
 
-mov $2,1
-mov $10,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,70689 ; Numbers k such that k+1 and k^2+1 are primes.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$3
+mov $1,3
+pow $1,$0
 add $0,1
+div $0,2
+mov $2,3
+pow $2,$0
+add $2,1
+mov $3,$1
+mul $3,2
+div $3,$2
+add $1,$2
+add $1,$3
+mov $0,$1
+div $0,4

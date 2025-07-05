@@ -1,14 +1,31 @@
 ; A068111: Numerators of coefficients in J0(i*sqrt(x))^2, where J0 denotes the ordinary Bessel function of order 0.
-; Submitted by BrandyNOW
+; Submitted by mmonnin
 ; 1,1,3,5,35,7,77,143,143,2431,46189,4199,96577,7429,7429,215441,6678671,392863,392863,765049,765049,31367009,1348781387,58642669,2756205443,2756205443,2756205443,146078888479,146078888479,5037203051,297194980009,584803025179,584803025179,584803025179,39181802686993,39181802686993,2781907990776503,5488629279099587,5488629279099587,5488629279099587,433601713048867373,10575651537777253,877779077635511999,20413466921756093,20413466921756093,1816798556036292277,1816798556036292277,38655288426304091
-; Formula: a(n) = truncate(truncate(binomial(2*n,n)/A001316(n))/A356637(n))
 
-mov $1,$0
-seq $1,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
-mov $2,$0
-seq $2,356637 ; a(n) = A000265(A263931(n)).
-mov $3,$0
 mul $0,2
-bin $0,$3
+mov $2,$0
+mov $5,$0
+sub $0,1
+mov $6,2
+mov $7,$0
+lpb $7
+  sub $7,1
+  mov $0,$5
+  sub $0,$7
+  mul $2,$0
+  mov $3,$0
+  mov $4,$0
+  gcd $4,$7
+  sub $7,1
+  add $0,1
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $0,$3
+  add $0,1
+  mul $0,$6
+  mul $4,$0
+  max $6,$4
+lpe
+mov $1,$6
+gcd $1,$2
+mov $0,$6
 div $0,$1
-div $0,$2

@@ -1,31 +1,16 @@
 ; A040633: Continued fraction for sqrt(659).
-; Submitted by Simon Strandgaard
+; Submitted by JagDoc
 ; 25,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1
-; Formula: a(n) = 15*truncate((truncate((3*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+1)/8)+truncate((3*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+1
+; Formula: a(n) = gcd(max(n,1),2)*truncate(binomial(2*gcd(n,3),gcd(n,3))/(gcd(n,3)+1))^2
 
-sub $2,$0
+mov $2,$0
+max $2,1
 gcd $2,2
-mul $0,2
-mov $5,2
-trn $5,$0
-add $5,6
-gcd $0,$5
-sub $0,3
-mov $4,3
-pow $4,$0
-mov $0,$4
-add $0,1
-mod $0,10
-sub $3,$0
-gcd $3,2
-mul $3,$0
-mov $0,$3
-mul $0,$2
-mul $0,3
-div $0,5
-add $0,1
+gcd $0,3
 mov $1,$0
-div $0,8
-mul $0,15
-add $1,$0
-mov $0,$1
+mul $0,2
+bin $0,$1
+add $1,1
+div $0,$1
+pow $0,2
+mul $0,$2

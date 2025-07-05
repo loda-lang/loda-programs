@@ -1,21 +1,25 @@
 ; A025696: Index of 3^n within sequence of numbers of form 3^i*4^j.
-; Submitted by Stony666
+; Submitted by Joe
 ; 1,2,4,7,11,15,20,26,33,41,49,58,68,79,91,103,116,130,145,161,177,194,212,231,251,271,292,314,337,360,384,409,435,462,489,517,546,576,607,638,670,703,737,772,807,843,880,918,957,996,1036,1077,1119,1162,1205,1249
+; Formula: a(n) = b(n-1)+1, b(n) = 2*n-truncate((sqrtint(2*n^2)+n)/2)+b(n-1), b(0) = 0
 
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$3
-  sub $0,$4
-  mul $0,61
-  add $0,1
-  div $0,77
-  mov $2,$0
-  add $2,1
+lpb $0
+  mov $3,$0
+  add $3,$0
+  mov $4,$3
+  add $4,1
+  mul $3,$0
+  nrt $3,2
+  add $3,$0
+  mov $2,$3
+  div $2,2
+  sub $4,$2
+  mov $2,$4
+  sub $2,1
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

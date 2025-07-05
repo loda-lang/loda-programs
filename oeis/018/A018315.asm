@@ -1,19 +1,17 @@
 ; A018315: Divisors of 170.
-; Submitted by mmonnin
+; Submitted by sascha.gibson@gmx.de
 ; 1,2,5,10,17,34,85,170
-; Formula: a(n) = (b(n-1)+1)*min(n-1,(n-1)%4)^2+c(n-1), b(n) = 16*c(n-4), b(7) = 16, b(6) = 16, b(5) = 16, b(4) = 16, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 17*c(n-4), c(7) = 17, c(6) = 17, c(5) = 17, c(4) = 17, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 1
+; Formula: a(n) = (((n-1)%4)^2+1)*17^floor((n-1)/4)
 
 #offset 1
 
-mov $2,1
 sub $0,1
-lpb $0
-  sub $0,4
-  mov $1,$2
-  mul $1,16
-  add $2,$1
-lpe
+mov $1,$0
+mod $1,4
+pow $1,2
 add $1,1
-pow $0,2
-mul $0,$1
-add $0,$2
+div $0,4
+mov $2,17
+pow $2,$0
+mov $0,$1
+mul $0,$2

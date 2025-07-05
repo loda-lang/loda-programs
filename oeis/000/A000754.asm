@@ -1,10 +1,44 @@
 ; A000754: Boustrophedon transform of odd numbers.
-; Submitted by shiva
+; Submitted by sascha.gibson@gmx.de
 ; 1,4,12,33,96,317,1218,5425,27608,158129,1006574,7048657,53847420,445643681,3971876930,37928628529,386337833232,4181155148673,47912508680086,579538956964241,7378919177090244,98648882783190305,1381640244637736842,20230328454804778993,309096650299657901656,4919425978833694723777,81426900017431159795998,1399625312949759162299985,24948816147639457741678668,460604380045775170661992289,8796895667287569660695334354,173608609234749229095152458417,3536725545346509911987557160480
-; Formula: a(n) = 2*A231179(n)+A000667(n)
 
 mov $1,$0
-seq $1,667 ; Boustrophedon transform of all-1's sequence.
-seq $0,231179 ; Boustrophedon transform of nonnegative integers, cf. A001477.
-add $1,$0
-add $0,$1
+add $1,1
+bin $1,2
+mov $2,$0
+mov $0,0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $3,$1
+  add $3,$2
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $3,$8
+  sub $3,1
+  mov $8,$3
+  mov $3,$7
+  bin $3,$8
+  sub $7,$8
+  mov $9,$7
+  seq $9,122045 ; Euler (or secant) numbers E(n).
+  seq $7,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $7,$9
+  mul $3,$7
+  mov $5,0
+  gcd $5,$3
+  mov $6,0
+  gcd $6,$5
+  mov $4,$2
+  add $4,$8
+  add $4,1
+  mul $4,$6
+  add $0,$4
+lpe

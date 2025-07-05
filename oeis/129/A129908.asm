@@ -1,25 +1,10 @@
 ; A129908: Quotient of the decimal representation of concatenated twin primes divided by 3.
-; Submitted by [AF] Kalianthys
+; Submitted by Daniele Casale
 ; 11,19,371,573,977,1381,1987,2391,33701,35703,45713,49717,59727,63731,65733,75743,79747,89757,93761,103771,115783,139807,143811,153821,173841,189857,199867,205873,213881,219887,269937,273941,275943,285953,293961,3397007,3437011,3497017,3537021,3637031,3837051,4097077,4257093,4297097,4337101,4397107,4757143,4837151,4937161,4957163,5357203,5397207,5557223,5657233,5737241,5957263,6237291,6257293,6437311,6497317,6657333,6757343,6937361,6957363,7037371,7097377,7137381,7457413,7557423,7697437,7797447
-; Formula: a(n) = 2*truncate(A127421(A001359(truncate((4*n+A189727(-truncate((12*n-9)/2)+730)-3)/4)+1)+1)/6)+1
+; Formula: a(n) = 2*truncate(A127421(A001359(n)+1)/6)+1
 
 #offset 1
 
-mul $0,4
-sub $0,5
-mov $2,2
-add $2,$0
-mov $0,$2
-mul $0,3
-div $0,2
-mov $1,729
-sub $1,$0
-add $1,1
-seq $1,189727 ; Fixed point of the morphism 0->011, 1->110.
-add $1,$2
-mov $0,$1
-div $0,4
-add $0,1
 seq $0,1359 ; Lesser of twin primes.
 add $0,1
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.

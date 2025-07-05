@@ -7,7 +7,6 @@
 
 mov $1,$0
 seq $1,141849 ; Primes congruent to 1 mod 11.
-sub $0,1
 mov $0,$1
 sub $0,23
 div $0,11

@@ -1,13 +1,28 @@
 ; A070906: Every third Bell number A000110.
-; Submitted by Ralfy
+; Submitted by BrandyNOW
 ; 1,5,203,21147,4213597,1382958545,682076806159,474869816156751,445958869294805289,545717047936059989389,846749014511809332450147,1629595892846007606764728147,3819714729894818339975525681317
 
 mul $0,3
-mov $2,1
-lpb $2
-  sub $2,1
-  mov $1,$0
-  mul $1,2
-  seq $1,188164 ; Number of palindromic structures of length n.
+mov $4,1
+mov $7,$0
+lpb $0
+  mul $4,$0
+  sub $0,1
 lpe
-mov $0,$1
+mov $0,$7
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  add $1,1
+  mul $3,$6
+  mul $5,-1
+  add $5,$3
+lpe
+mov $0,$5
+div $0,$4

@@ -1,32 +1,26 @@
 ; A370729: a(n) is the number of distinct length-n blocks occurring in the characteristic sequence of A228082.
-; Submitted by Coleslaw
+; Submitted by BrandyNOW
 ; 1,2,3,5,8,11,17,24,35,51,71
+; Formula: a(n) = truncate((logint(n+13,2)*(n+1)*(2492*n+56*n^3+2*n^4+9170)+34561)/69120)+1
 
-add $0,2
-lpb $0
-  sub $0,1
-  add $6,$3
-  mov $7,$6
-  add $9,$5
-  add $3,2
-  add $4,$3
-  sub $4,$9
-  add $4,1
-  mov $6,$4
-  sub $6,$7
-  sub $6,1
-  mul $9,-1
-  sub $11,$9
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  add $7,$4
-  mov $8,$5
-  sub $8,$10
-  mov $10,$7
-  add $5,$7
-lpe
-mov $0,$11
-div $0,2
+mov $4,$0
+mul $4,2492
+mov $1,$0
+pow $1,4
+mul $1,2
+mov $2,$0
+pow $2,3
+mul $2,56
+add $1,$2
+add $1,4995
+add $1,$4
+add $1,4175
+mov $3,$0
+add $3,13
+log $3,2
+add $0,1
+mul $0,$1
+mul $0,$3
+add $0,34561
+div $0,69120
 add $0,1

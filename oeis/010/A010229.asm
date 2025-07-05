@@ -1,23 +1,16 @@
 ; A010229: Continued fraction for sqrt(187).
-; Submitted by Science United
+; Submitted by hhhchelhhh
 ; 13,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13
-; Formula: a(n) = truncate((4*gcd(-n,2)*(truncate(3^(gcd(2*n,max(-n+2,0)+6)-3))%10)+4*gcd(-n,2)+4*truncate((gcd(-n,2)*(truncate(3^(gcd(2*n,max(-n+2,0)+6)-3))%10))/3))/3)
+; Formula: a(n) = truncate((4*truncate((gcd(max(n,1),2)*binomial(2*gcd(n,3),gcd(n,3)))/2))/3)
 
-mov $1,2
-trn $1,$0
-add $1,6
-sub $2,$0
-gcd $2,2
+mov $1,$0
+max $1,1
+gcd $1,2
+gcd $0,3
+mov $2,$0
 mul $0,2
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
-mul $0,$2
-add $2,$0
-div $0,3
-add $0,$2
+bin $0,$2
+mul $0,$1
+div $0,2
 mul $0,4
 div $0,3

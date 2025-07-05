@@ -1,16 +1,17 @@
 ; A373340: Number of permutations of symmetric group S_n with an odd number of cycles of length 2 or more.
-; Submitted by Aionel
+; Submitted by iBezanilla
 ; 0,0,1,5,20,84,424,2680,20544,182336,1816448,19963008,239511040,3113532928,43589194752,653837290496,10461395173376,177843714539520,3201186853912576,60822550206644224,1216451004093038592,25545471085864681472,562000363888824811520
+; Formula: a(n) = a(n-1)+c(n-1), a(3) = 5, a(2) = 1, a(1) = 0, a(0) = 0, b(n) = n*b(n-1), b(3) = 6, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*(-a(n-1)+c(n-1))+n*b(n-1), c(3) = 15, c(2) = 4, c(1) = 1, c(0) = 0
 
 mov $2,1
-mov $3,-1
 lpb $0
-  add $3,$1
-  mov $1,$3
-  add $1,$0
-  mul $2,$0
   sub $0,1
+  add $1,1
+  mul $2,$1
+  add $3,$4
+  mul $4,2
+  sub $4,$3
+  mul $4,$1
+  add $4,$2
 lpe
-add $3,$2
 mov $0,$3
-div $0,2

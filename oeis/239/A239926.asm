@@ -5,7 +5,6 @@
 #offset 1
 
 add $0,2
-mov $4,0
 mov $5,$0
 pow $5,5
 lpb $5
@@ -17,8 +16,6 @@ lpb $5
   sub $5,$0
 lpe
 mov $0,$4
-add $0,1
-max $0,2
 div $0,2
 mul $0,2
 mov $1,3

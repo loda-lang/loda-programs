@@ -1,16 +1,15 @@
 ; A010144: Continued fraction for sqrt(59).
-; Submitted by BrandyNOW
+; Submitted by DukeBox
 ; 7,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1
+; Formula: a(n) = truncate((gcd(max(n,1),2)*(binomial(2*gcd(n,3),gcd(n,3))+1))/3)
 
 mov $2,$0
 max $2,1
 gcd $2,2
 gcd $0,3
-add $0,1
 mov $1,$0
 mul $0,2
 bin $0,$1
-add $1,1
-div $0,$1
-dir $0,2
+add $0,1
 mul $0,$2
+div $0,3

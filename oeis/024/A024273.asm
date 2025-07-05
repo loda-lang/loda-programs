@@ -6,10 +6,10 @@ mov $3,$0
 mov $2,2
 lpb $2
   sub $2,2
-  add $0,$2
   sub $0,1
   mov $4,$0
   max $4,0
+  pow $0,0
   mov $1,-1
   pow $1,$4
   mul $1,2
@@ -18,7 +18,7 @@ lpb $2
   seq $4,6229 ; Expansion of e.g.f. exp( tan x ).
   mul $1,$4
   mov $4,$1
-  div $4,2
 lpe
 mul $3,$4
 mov $0,$3
+div $0,2

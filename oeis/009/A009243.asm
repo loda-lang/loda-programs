@@ -1,16 +1,18 @@
 ; A009243: Expansion of exp(tan(x))*x.
-; Submitted by Coleslaw
+; Submitted by Science United
 ; 0,1,2,3,12,45,222,1239,7672,54873,416410,3577739,32324292,322495173,3382216502,38370542175,457713511280,5817952885169,77686268202162,1093812528874387,16145162631579900,249472828725529437,4030053480328871182,67807763939709678951
 
-mov $3,$0
-mov $1,2
-lpb $1
-  sub $1,1
-  add $0,$1
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,6229 ; Expansion of e.g.f. exp( tan x ).
+mov $2,$0
+mov $4,3
+lpb $4
+  sub $4,2
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  max $0,1
+  seq $0,6229 ; Expansion of e.g.f. exp( tan x ).
+  mul $1,$0
+  add $3,$1
 lpe
-mul $3,$2
 mov $0,$3

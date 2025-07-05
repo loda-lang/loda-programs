@@ -1,5 +1,5 @@
 ; A033712: theta3(z) * theta3(2*z) * theta3(3*z) * theta3(6*z).
-; Submitted by Science United
+; Submitted by Ralfy
 ; 1,2,2,6,6,4,14,8,6,26,12,16,42,12,16,44,6,20,50,16,36,56,24,16,42,30,28,78,48,36,84,40,6,80,36,48,150,44,40,100,36,36,112,48,72,148,48,48,42,50,62,124,84,52,158,64,48,144,60,64,252,60,64,200,6,88,168,64,108,176,96,80,150,84,76,218,120,96,196,72
 
 mov $2,1
@@ -14,12 +14,14 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,33716 ; Number of integer solutions to the equation x^2 + 3y^2 = n.
+    seq $7,33715 ; Number of integer solutions (x, y) to the equation x^2 + 2y^2 = n.
     mov $9,10
     add $9,$5
     sub $4,$0
+    sub $4,1
     mul $7,$$9
-    trn $4,1
+    add $4,$11
+    trn $4,3
     add $5,1
     add $6,$7
   lpe

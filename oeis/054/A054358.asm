@@ -4,7 +4,6 @@
 
 mov $2,$0
 trn $2,1
-mov $4,0
 mov $5,$2
 add $5,1
 mov $6,$2
@@ -17,27 +16,25 @@ lpb $5
   sub $2,$5
   mov $7,$2
   seq $7,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $8,0
-  mov $9,$2
-  mul $9,8
-  nrt $9,2
-  add $9,1
-  div $9,2
-  bin $9,2
-  sub $2,$9
+  mov $8,$2
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  sub $2,$8
   seq $2,123611 ; Row sums of triangle A123610.
   mul $2,$7
   add $4,$2
 lpe
 mov $2,$4
 div $2,2
-mov $1,$2
-mul $2,2
 mov $3,$0
 mul $0,2
 bin $0,$3
 add $3,1
 div $0,$3
-sub $0,$1
+sub $0,$2
+mov $1,$2
 sub $1,$0
 mov $0,$1

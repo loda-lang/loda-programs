@@ -6,7 +6,6 @@
 
 sub $0,1
 mov $4,1
-mov $5,0
 mov $1,$0
 lpb $1
   add $5,1
@@ -15,7 +14,6 @@ lpb $1
   trn $1,1
   mul $4,$5
 lpe
-mov $1,$4
 mov $2,$0
 nrt $2,2
 mov $3,$2
