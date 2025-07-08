@@ -1,36 +1,39 @@
 ; A178478: Permutations of 12345678: Numbers having each of the decimal digits 1..8 exactly once, and no other digit.
-; Submitted by sbo92
+; Submitted by BrandyNOW
 ; 12345678,12345687,12345768,12345786,12345867,12345876,12346578,12346587,12346758,12346785,12346857,12346875,12347568,12347586,12347658,12347685,12347856,12347865,12348567,12348576,12348657,12348675,12348756,12348765,12354678,12354687,12354768,12354786,12354867,12354876,12356478,12356487,12356748,12356784,12356847,12356874,12357468,12357486,12357648,12357684,12357846,12357864,12358467,12358476,12358647,12358674,12358746,12358764,12364578,12364587,12364758,12364785,12364857,12364875,12365478
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-mov $3,1212
-mov $4,$1
-add $1,1
-add $4,12
-pow $4,4
-lpb $4
-  sub $4,$1
-  mov $5,$3
-  seq $5,261794 ; a(n) is the smallest nonzero number that is not a substring of n in decimal representation.
-  sub $5,1
-  equ $5,5
-  sub $1,$5
-  add $3,3
+sub $0,1
+max $2,$0
+mov $3,$2
+add $3,1
+mov $5,1212
+mov $6,$2
+add $6,12
+pow $6,4
+lpb $6
+  sub $6,$3
+  mov $1,$5
+  seq $1,261794 ; a(n) is the smallest nonzero number that is not a substring of n in decimal representation.
+  sub $1,1
+  equ $1,5
+  sub $3,$1
+  add $5,3
 lpe
-mov $1,$3
-div $1,9
-sub $1,1
-mov $2,$0
-mul $0,2
-add $2,$0
-add $0,$2
-pow $0,$0
-lex $0,2
-add $0,1
-mod $0,10
-mul $0,$1
+sub $2,10
+mov $3,$5
+div $3,9
+sub $3,1
+mov $4,$2
+mul $2,2
+add $4,$2
+add $2,$4
+pow $2,$2
+lex $2,2
+add $2,1
+mod $2,10
+mul $2,$3
+mov $0,$2
 add $0,1370371
 mul $0,9

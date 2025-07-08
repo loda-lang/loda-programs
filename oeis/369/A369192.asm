@@ -1,15 +1,14 @@
 ; A369192: Number of labeled simple graphs with n vertices and at most n edges (not necessarily covering).
-; Submitted by STE\/E
+; Submitted by BrandyNOW
 ; 1,1,2,8,57,638,9949,198440,4791323,135142796,4346814276,156713948672,6251579884084,273172369790743,12969420360339724,664551587744173992,36543412829258260135,2146170890448154922648,134053014635659737513358,8872652968135849629240560
 
-mov $4,$0
-add $0,1
+mov $2,$0
+bin $2,2
 lpb $0
+  mov $3,$2
+  bin $3,$0
   sub $0,1
-  mov $3,$4
-  bin $3,2
-  bin $3,$1
-  add $1,1
-  add $2,$3
+  add $1,$3
 lpe
-mov $0,$2
+mov $0,$1
+add $0,1

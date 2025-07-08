@@ -1,16 +1,13 @@
 ; A040633: Continued fraction for sqrt(659).
-; Submitted by JagDoc
+; Submitted by Mumps
 ; 25,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1
-; Formula: a(n) = gcd(max(n,1),2)*truncate(binomial(2*gcd(n,3),gcd(n,3))/(gcd(n,3)+1))^2
+; Formula: a(n) = gcd(max(n,1),2)*(2*gcd(n,3)-1)^2
 
-mov $2,$0
-max $2,1
-gcd $2,2
-gcd $0,3
 mov $1,$0
+max $1,1
+gcd $1,2
+gcd $0,3
 mul $0,2
-bin $0,$1
-add $1,1
-div $0,$1
+sub $0,1
 pow $0,2
-mul $0,$2
+mul $0,$1

@@ -8,13 +8,11 @@ mov $1,$0
 mov $2,$0
 dif $2,2
 seq $2,62570 ; a(n) = phi(2*n).
-sub $0,1
 mov $0,$2
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 mov $3,$1
 seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
-sub $1,1
 mov $1,$3
 sub $1,$0
 sub $1,1

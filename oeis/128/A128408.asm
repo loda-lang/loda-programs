@@ -7,7 +7,6 @@
 mov $1,$0
 seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
 mul $0,8
-sub $0,7
 nrt $0,2
 add $0,1
 div $0,2

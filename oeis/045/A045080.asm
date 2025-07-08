@@ -1,5 +1,5 @@
 ; A045080: Numbers whose base-4 representation contains exactly three 0's and four 3's.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by DukeBox
 ; 12351,12495,12531,12540,13071,13107,13116,13251,13260,13296,15375,15411,15420,15555,15564,15600,16131,16140,16176,16320,16639,17215,17359,17395,17404,19519,19663,19699,19708,20239
 
 #offset 1
@@ -14,7 +14,6 @@ lpb $2
   mov $4,1
   mov $3,$1
   lpb $3
-    sub $3,1
     mov $5,$3
     add $5,$6
     mod $5,4
@@ -35,4 +34,4 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-sub $0,31
+add $0,5430

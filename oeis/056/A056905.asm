@@ -4,8 +4,8 @@
 
 #offset 1
 
-mov $2,9
 mov $4,-4
+mov $2,4
 mov $3,$0
 pow $3,5
 lpb $3
@@ -15,9 +15,7 @@ lpb $3
   add $4,8
   sub $0,$1
   add $2,$4
-  add $2,$4
   sub $3,$0
 lpe
 mov $0,$2
 add $0,1
-div $0,2

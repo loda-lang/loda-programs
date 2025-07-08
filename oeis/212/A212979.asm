@@ -1,24 +1,18 @@
 ; A212979: Number of (w,x,y) with all terms in {0,...,n} and range=average.
-; Submitted by STE\/E
+; Submitted by mmonnin
 ; 1,1,1,7,10,13,19,25,34,40,49,61,70,82,94,109,124,136,154,172,190,208,226,250,271,292,316,340,367,391,418,448,475,505,535,568,601,631,667,703,739,775,811,853,892,931,973,1015,1060,1102,1147,1195,1240
+; Formula: a(n) = 3*floor((3*binomial(n+1,2)+4)/2)-3*floor((6*binomial(n+1,2)+8)/5)-2
 
-mov $3,$0
-mov $4,2
-lpb $0
-  mov $0,$2
-  add $4,$3
-  add $4,7
-  bin $3,2
-  add $4,$3
-  mov $2,$4
-  mul $2,4
-  div $2,5
-lpe
-div $4,2
+add $0,1
+bin $0,2
+mul $0,3
+mov $2,$0
+add $2,4
 mov $1,$2
-sub $1,$4
-sub $1,2
-trn $1,1
-mul $1,3
-add $1,1
+mul $2,2
+div $2,5
+div $1,2
+sub $1,$2
 mov $0,$1
+mul $0,3
+sub $0,2

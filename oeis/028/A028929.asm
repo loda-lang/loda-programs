@@ -11,7 +11,6 @@ pow $2,3
 lpb $2
   sub $2,60
   mov $3,$1
-  add $3,1
   seq $3,28958 ; Numbers represented by quadratic form with Gram matrix [ 2, 1; 1, 12 ] (divided by 2).
   mov $5,$3
   mul $3,338

@@ -1,22 +1,22 @@
 ; A059598: Tenth column (m=9) of convolution triangle A059594(n,m).
-; Submitted by Jamie Morken(l1)
+; Submitted by Science United
 ; 1,10,65,320,1320,4752,15400,45760,126500,328680,809380,1901120,4282200,9289840,19482200,39619008,78337930,150954980,284060810,522920640,943206264,1669294000,2902420600,4963400000
+; Formula: a(n) = truncate(b(n)/3), b(n) = truncate((10*b(n-1)+10*d(n-1)-10*c(n-1))/n), b(3) = 960, b(2) = 195, b(1) = 30, b(0) = 3, c(n) = -c(n-1)+truncate((10*b(n-1)+10*d(n-1)-10*c(n-1))/n), c(3) = 792, c(2) = 168, c(1) = 27, c(0) = 3, d(n) = b(n-1)+d(n-1)+truncate((10*b(n-1)+10*d(n-1)-10*c(n-1))/n), d(3) = 1416, d(2) = 261, d(1) = 36, d(0) = 3
 
-mov $4,4
-add $0,2
+mov $1,3
+mov $2,3
+mov $3,3
 lpb $0
-  mov $2,$0
-  add $4,3
-  sub $0,2
-  add $2,$4
-  bin $2,$0
-  add $4,$1
-  mov $3,$4
-  add $3,2
-  bin $3,$1
-  mul $3,$2
-  add $1,1
-  mov $4,4
-  add $5,$3
+  sub $0,1
+  add $3,$1
+  add $4,1
+  mov $1,$3
+  sub $1,$2
+  mul $1,10
+  div $1,$4
+  mul $2,-1
+  add $2,$1
+  add $3,$1
 lpe
-mov $0,$5
+mov $0,$1
+div $0,3

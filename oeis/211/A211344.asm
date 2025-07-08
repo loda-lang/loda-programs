@@ -25,7 +25,6 @@ mul $2,$0
 mov $0,$2
 sub $0,2
 div $0,2
-mov $4,0
 mov $5,$0
 lpb $0
   mov $6,$5

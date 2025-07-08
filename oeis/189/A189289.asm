@@ -1,9 +1,10 @@
 ; A189289: Zero-one sequence based on the sequence (4n):  a(A008586(k))=a(k); a(A042968(k))=1-a(k), a(1)=0, a(2)=0, a(3)=0.
-; Submitted by Frank [NT]
+; Submitted by Science United
 ; 1,1,1,1,0,1,0,1,1,0,0,1,1,1,0,1,0,0,1,0,0,1,1,1,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,1,0,0,0,1,1,0,1,0,0,0,1,1,0,1,1,1,1,0,0,0,1,0,1,1,1,1,0,0,0,1,0,0,0,0,1,0,1,1,0
 
 #offset 1
 
+mov $1,6
 sub $0,1
 lpb $0
   add $0,1
@@ -11,7 +12,8 @@ lpb $0
   dir $0,4
   div $0,4
   equ $1,0
-  mov $2,1
 lpe
-pow $1,$2
-mov $0,$1
+mov $2,$1
+add $2,1
+mov $0,$2
+mod $0,2

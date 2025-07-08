@@ -1,20 +1,22 @@
 ; A008380: 4*(2n-1)!*H(2n), where H(n) = Sum 1/i are harmonic numbers.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 6,50,1176,54792,4251456,495480960,80990184960,17683570598400,4972664013004800,1750589607352320000,754268505333719040000,390464536066453094400000,239146855253471119933440000
+; Formula: a(n) = 2*truncate(c(2*n)/gcd(c(2*n),-2*n+b(2*n))), b(n) = n*b(n-1), b(2) = 4, b(1) = 2, b(0) = 2, c(n) = n*c(n-1)+b(n-1), c(2) = 6, c(1) = 2, c(0) = 0
 
 #offset 1
 
-mov $1,$0
-mov $4,5
+mov $1,2
 mul $0,2
 lpb $0
-  mov $2,$0
   sub $0,1
+  add $2,1
   mul $3,$2
-  add $3,$4
-  mul $4,$2
+  add $3,$1
+  mul $1,$2
 lpe
-mov $0,$3
-div $0,5
-div $0,$1
+mov $4,$3
+sub $1,$2
+gcd $3,$1
+div $4,$3
+mov $0,$4
 mul $0,2

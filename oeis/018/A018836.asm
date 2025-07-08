@@ -6,18 +6,16 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
-  mov $5,2
-  bin $5,$0
+  mov $4,2
+  bin $4,$0
   mov $2,$0
   mul $2,7
   add $2,2
-  sub $2,$5
+  sub $2,$4
   pow $2,2
   div $2,7
   add $2,1
-  sub $4,1
-  mul $4,2
   add $1,$2
-  add $3,$4
+  lex $3,$3
 lpe
 mov $0,$1
