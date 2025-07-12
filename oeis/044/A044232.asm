@@ -1,4 +1,4 @@
-; A044232: Numbers n such that string 5,5 occurs in the base 8 representation of n but not of n-1.
+; A044232: Numbers k such that string 5,5 occurs in the base 8 representation of k but not of k-1.
 ; 45,109,173,237,301,360,429,493,557,621,685,749,813,872,941,1005,1069,1133,1197,1261,1325,1384,1453,1517,1581,1645,1709,1773,1837,1896,1965,2029,2093,2157,2221,2285,2349,2408,2477,2541
 
 #offset 1

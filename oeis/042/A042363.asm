@@ -14,7 +14,26 @@ lpb $0
   mov $1,$3
   add $1,$6
   div $1,2
-  seq $1,10225 ; Continued fraction for sqrt(183).
+  mov $7,2
+  trn $7,$1
+  add $7,6
+  gcd $1,$7
+  sub $1,3
+  sub $7,2
+  mov $9,3
+  pow $9,$1
+  mov $1,$9
+  mod $1,10
+  mov $8,2
+  add $8,$1
+  mov $1,$8
+  div $1,3
+  mul $1,3
+  mul $8,2
+  mul $1,$7
+  add $1,$8
+  div $1,2
+  sub $1,1
   mul $1,5
   div $1,4
   mov $5,0
