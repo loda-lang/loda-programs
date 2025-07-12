@@ -1,13 +1,24 @@
 ; A000161: Number of partitions of n into 2 squares.
-; Submitted by ChelseaOilman
+; Submitted by Stephen Uitti
 ; 1,1,1,0,1,1,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,2,1,0,0,1,0,0,1,0,1,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,2,0,1,1,0,0,0,0,1,0,0,1,0,0,1,2,0,0,1,0,0,0,1,1,1,0,0,0,0,0
 
-trn $0,1
-add $0,1
-seq $0,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
-add $2,$0
-lpb $2
-  trn $2,2
-  add $1,1
+mov $2,3
+equ $3,$0
+mov $4,$0
+dir $4,2
+add $4,2
+lpb $4
+  sub $4,$2
+  mov $6,$4
+  max $6,0
+  add $1,4
+  mov $5,$6
+  nrt $6,2
+  pow $6,2
+  equ $6,$5
+  add $7,$6
+  mov $2,2
+  mul $2,$1
 lpe
-mov $0,$1
+mov $0,$7
+add $0,$3

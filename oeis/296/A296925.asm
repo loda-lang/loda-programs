@@ -16,7 +16,6 @@ lpb $2
   div $6,2
   mov $3,$6
   mul $3,2
-  add $3,1
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
   seq $3,35180 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -10.

@@ -7,7 +7,6 @@
 
 seq $0,1175 ; Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n.
 sub $0,1
-mov $1,0
 pow $1,$0
 add $0,3
 gcd $1,$0

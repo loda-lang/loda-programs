@@ -1,19 +1,19 @@
 ; A037842: Fibonacci numbers in base 1.
-; Submitted by loader3229
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,11,111,11111,11111111,1111111111111,111111111111111111111,1111111111111111111111111111111111,1111111111111111111111111111111111111111111111111111111
-; Formula: a(n) = 10*truncate(d(n)/9)+1, b(n) = 10*c(n-1)*b(n-1), b(2) = 100, b(1) = 10, b(0) = 1, c(n) = 10*c(n-2)*b(n-2), c(2) = 10, c(1) = 1, c(0) = 1, d(n) = 10*c(n-1)*b(n-1), d(2) = 100, d(1) = 10, d(0) = 1
+; Formula: a(n) = truncate((truncate(10^b(n))-10)/9)+1, b(n) = b(n-1)+b(n-2), b(4) = 8, b(3) = 5, b(2) = 3, b(1) = 2, b(0) = 1
 
 mov $1,1
-mov $2,1
-mov $3,1
 lpb $0
   sub $0,1
-  mul $1,$2
-  mul $1,10
-  mov $2,$3
-  mov $3,$1
+  add $1,$4
+  mov $4,$2
+  mov $2,$1
+  add $1,1
 lpe
+mov $3,10
+pow $3,$1
 mov $0,$3
+sub $0,10
 div $0,9
-mul $0,10
 add $0,1

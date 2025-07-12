@@ -1,18 +1,21 @@
 ; A052201: Equivalent of the Kurepa hypothesis for left factorial.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 4,15,48,175,816,4851,34960,292743,2774040,29251651,339184776,4285584615,58571107168,860622082035,13525670637216,226358825764711,4018390654376520,75413358213752643,1491684815796629080,31014754853346045831,676190458445520562896
 
 #offset 1
 
-add $0,1
+add $0,3
+mov $1,$0
+mov $2,1
+mov $5,$0
+sub $0,3
 lpb $0
-  add $1,$0
-  add $1,1
-  mul $2,$0
-  add $2,$1
-  add $1,$0
   sub $0,1
+  add $1,$5
+  add $3,1
+  add $4,$2
+  mul $2,$3
 lpe
-mov $0,$2
+mov $0,$4
+mul $0,$1
 div $0,2
-sub $0,1

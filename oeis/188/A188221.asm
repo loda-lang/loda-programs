@@ -1,21 +1,19 @@
 ; A188221: a(n) = [n*r + k*r]-[n*r]-[k*r], where r=sqrt(5), k=1, [ ]=floor.
-; Submitted by AnandBhat
+; Submitted by mmonnin
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1
-; Formula: a(n) = -sqrtint(5*n^2)+sqrtint(5*(n+1)^2)-2
+; Formula: a(n) = -sqrtint(5*n^2)-n-2*truncate((-sqrtint(5*n^2)-n+sqrtint(5*(sqrtint(5*n^2)+n+4)^2)-4)/2)+sqrtint(5*(sqrtint(5*n^2)+n+4)^2)-4
 
 #offset 1
 
 mov $1,$0
-add $0,1
+pow $0,2
+mul $0,5
+nrt $0,2
+add $0,$1
+add $0,4
 mov $2,$0
-pow $2,2
-mul $2,5
-nrt $2,2
-mov $3,$1
-pow $3,2
-mul $3,5
-nrt $3,2
-add $1,$3
-add $0,$2
-sub $0,$1
-sub $0,3
+pow $0,2
+mul $0,5
+nrt $0,2
+sub $0,$2
+mod $0,2

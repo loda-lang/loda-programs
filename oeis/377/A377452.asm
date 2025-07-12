@@ -18,7 +18,6 @@ lpb $2
   seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   mov $7,$0
   mul $7,8
-  add $7,1
   nrt $7,2
   add $7,1
   div $7,2
@@ -27,8 +26,7 @@ lpb $2
   add $0,1
   mov $6,$0
   add $6,$0
-  trn $6,3
-  add $6,1
+  sub $6,2
   add $0,$6
   bin $0,$6
   mul $0,12

@@ -13,7 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,171581 ; The natural numbers without primes > 3.
-  trn $3,2
+  sub $3,2
   max $1,$5
   add $1,1
   mov $5,$3

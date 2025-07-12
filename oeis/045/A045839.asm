@@ -1,8 +1,27 @@
 ; A045839: a(n) = A005929(n)/2.
-; Submitted by zombie67 [MM]
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0
 
 dif $0,-2
-max $0,0
-seq $0,217219 ; Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
-div $0,6
+add $0,3
+lpb $0
+  sub $0,3
+  mov $2,$0
+  max $2,0
+  mov $0,0
+  mov $1,17
+  add $1,$2
+  mod $1,3
+  sub $1,2
+  bin $1,2
+  mul $1,2
+  mov $3,$2
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $2,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
+  mul $2,2
+  sub $2,$3
+  mul $2,6
+  mul $2,$1
+lpe
+mov $0,$2
+div $0,36

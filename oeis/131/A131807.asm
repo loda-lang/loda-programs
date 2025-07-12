@@ -6,7 +6,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,131377 ; Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
+  seq $2,131377 ; a(n) = (pi(n)+1) mod 2.
   sub $0,1
   add $1,$2
 lpe

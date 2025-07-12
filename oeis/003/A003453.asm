@@ -1,25 +1,16 @@
 ; A003453: Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation and reflection.
-; Submitted by BrandyNOW
+; Submitted by iBezanilla
 ; 1,3,6,11,17,26,36,50,65,85,106,133,161,196,232,276,321,375,430,495,561,638,716,806,897,1001,1106,1225,1345,1480,1616,1768,1921,2091,2262,2451,2641,2850,3060,3290,3521,3773,4026,4301,4577,4876,5176,5500,5825,6175,6526,6903,7281,7686,8092,8526,8961,9425,9890,10385,10881,11408,11936,12496,13057,13651,14246,14875,15505,16170,16836,17538,18241,18981,19722,20501,21281,22100,22920,23780
-; Formula: a(n) = truncate(((3*n-15)*(-1)^n+2*n^3-6*n^2-23*n+63)/48)
+; Formula: a(n) = truncate(((n-3)*(floor((n-4)/2)+n-3)+binomial(n-3,3))/4)
 
 #offset 5
 
 mov $1,$0
-mov $2,$0
-mul $2,23
-mov $3,$0
-mov $4,-1
-pow $4,$0
-pow $0,3
-mul $0,2
-add $0,63
-pow $1,2
-mul $1,6
-sub $3,5
-mul $3,3
-mul $3,$4
-sub $0,$1
-sub $0,$2
-add $0,$3
-div $0,48
+sub $1,4
+div $1,2
+sub $0,3
+add $1,$0
+mul $1,$0
+bin $0,3
+add $0,$1
+div $0,4

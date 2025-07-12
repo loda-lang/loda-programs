@@ -12,7 +12,6 @@ lpb $2
   add $3,3
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $3,1
-  dgs $3,2
   mov $5,3
   pow $5,$3
   mov $3,$5

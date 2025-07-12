@@ -1,24 +1,17 @@
 ; A040475: Continued fraction for sqrt(498).
+; Submitted by Science United
 ; 22,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3,6,22,6,3,44,3
-; Formula: a(n) = truncate((16*truncate((b(n+1)-26)/6)+736)/5)-144, b(n) = 18*truncate(A010126(n-1)/3)+6*A010126(n-1)+20, b(1) = 62, b(0) = 0
+; Formula: a(n) = truncate((gcd(n,3)*gcd(max(n,1),2)*(binomial(2*gcd(n,3),gcd(n,3))+9)+2)/4)
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  seq $1,10126 ; Continued fraction for sqrt(22).
-  mov $3,$1
-  div $3,3
-  mul $3,3
-  add $1,$3
-  mul $1,6
-  add $1,20
-  add $2,1
-lpe
-mov $0,$1
-sub $0,26
-div $0,6
-add $0,46
-mul $0,16
-div $0,5
-sub $0,144
+mov $2,$0
+max $2,1
+gcd $2,2
+gcd $0,3
+mov $1,$0
+mul $2,$0
+mul $0,2
+bin $0,$1
+add $0,9
+mul $0,$2
+add $0,2
+div $0,4

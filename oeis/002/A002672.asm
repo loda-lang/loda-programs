@@ -1,22 +1,23 @@
 ; A002672: Denominators of central difference coefficients M_{3}^(2n+1).
-; Submitted by Jamie Morken(w1)
+; Submitted by BrandyNOW
 ; 1,8,1920,193536,154828800,1167851520,892705701888000,1428329123020800,768472460034048000,4058540589291090739200,196433364521688791777280000,5957759187690780937420800000,30447485794244997427545243648000000,341011840895543971188506728857600000
+; Formula: a(n) = truncate(truncate((c(2*n)+min(2*n,0))/gcd(c(2*n),b(2*n)))/6), b(n) = 3*b(n-1)+1, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = c(n-1)*(2*n+2), c(2) = 24, c(1) = 4, c(0) = 1
 
 #offset 1
 
-mov $1,1
 mul $0,2
-lpb $0
-  sub $0,1
-  mov $2,1
-  add $2,$0
-  add $2,1
-  mul $1,2
-  mul $1,$2
-  mul $3,3
-  sub $3,2
+mov $4,2
+mov $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $4,2
+  mul $1,3
+  add $1,1
+  mul $2,$4
 lpe
-gcd $3,$1
-div $1,$3
-mov $0,$1
-div $0,3
+add $3,$2
+gcd $2,$1
+div $3,$2
+mov $0,$3
+div $0,6

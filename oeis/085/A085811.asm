@@ -1,20 +1,15 @@
 ; A085811: Number of partitions of n including 3, but not 1.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,0,1,0,1,1,2,2,4,4,7,8,12,14,21,24,34,41,55,66,88,105,137,165,210,253,320,383,478,574,708,847,1039,1238,1507,1794,2167,2573,3094,3660,4378,5170,6153,7245,8591,10087,11914,13959,16424,19196,22519,26252,30701,35717,41646,48342,56224,65121,75547,87331,101066,116600,134647,155038,178651,205343,236131,270928,310962,356169,408046,466610,533623,609237,695578,792906,903811,1028764,1170827,1330772
+; Formula: a(n) = -(1==(n-1))-(0==(n-1))+A002865(max(n-3,0))
 
 #offset 1
 
-add $0,3
-lpb $0
-  sub $0,4
-  sub $0,$1
-  mov $2,$0
-  max $2,0
-  seq $2,2865 ; Number of partitions of n that do not contain 1 as a part.
-  mul $2,$1
-  mul $1,$2
-  sub $1,2
-lpe
-mov $0,$1
-add $0,2
-div $0,4
+sub $0,1
+equ $1,$0
+mov $2,1
+equ $2,$0
+trn $0,2
+seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
+sub $0,$1
+sub $0,$2
