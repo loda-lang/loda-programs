@@ -8,7 +8,17 @@ lpb $3
   mov $0,$4
   add $0,$3
   max $0,0
-  seq $0,10785 ; Repdigit numbers, or numbers whose digits are all equal.
+  mov $6,$0
+  sub $6,1
+  div $6,9
+  mov $7,$6
+  mul $7,9
+  sub $0,$7
+  add $6,1
+  mov $7,10
+  pow $7,$6
+  div $7,9
+  mul $0,$7
   mov $2,$3
   mul $2,$0
   add $1,$2

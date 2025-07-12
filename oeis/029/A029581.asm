@@ -9,8 +9,14 @@ lpb $0
   sub $0,1
   mov $3,$0
   mod $3,4
-  add $3,2
-  seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  add $3,1
+  mov $5,$3
+  bxo $5,$3
+  mov $4,$3
+  seq $4,72668 ; Numbers one less than composite numbers.
+  add $5,$4
+  mov $3,$5
+  add $3,1
   mul $3,$2
   div $0,4
   add $1,$3

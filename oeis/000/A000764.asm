@@ -38,7 +38,10 @@ lpb $2
   gcd $6,$5
   mov $4,$2
   max $4,0
-  seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mov $10,$4
+  mul $10,2
+  seq $10,188164 ; Number of palindromic structures of length n.
+  mov $4,$10
   mul $4,$6
   add $0,$4
 lpe

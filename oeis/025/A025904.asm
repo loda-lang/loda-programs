@@ -10,7 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,29113 ; Expansion of 1/((1-x)(1-x^6)(1-x^9)(1-x^10)).
+  seq $4,29113 ; Expansion of 1/((1-x)*(1-x^6)*(1-x^9)*(1-x^10)).
   mov $2,$5
   mul $2,$4
   add $1,$2

@@ -6,15 +6,6 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-sub $1,$0
-mov $3,$1
-mov $2,1
-lpb $2
-  sub $2,1
-  mov $1,$3
-  add $1,$0
-  seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  div $3,2
-  equ $0,0
-lpe
-mov $0,$1
+seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+bin $0,0
+mul $0,$1

@@ -10,7 +10,18 @@ lpb $1
   mov $5,$3
   mov $3,$2
   mov $2,$4
-  seq $2,10204 ; Continued fraction for sqrt(153).
+  dgr $2,9
+  mov $6,$2
+  mod $6,4
+  equ $6,2
+  mov $7,$2
+  div $2,8
+  mul $2,22
+  equ $7,0
+  mul $7,10
+  add $2,$7
+  sub $2,$6
+  add $2,2
   mul $2,$3
   add $2,$5
   add $4,1

@@ -1,4 +1,4 @@
-; A035057: Numbers n such that 2^n does not contain the digit 1 (probably finite).
+; A035057: Numbers k such that 2^k does not contain the digit 1 (probably finite).
 ; Submitted by Daniel
 ; 1,2,3,5,6,8,11,12,15,16,19,23,25,28,32,33,35,38,43,52,56,59,63,66,73,91
 

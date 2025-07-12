@@ -15,7 +15,10 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
-  seq $0,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mul $0,2
+  mov $5,$0
+  dgs $5,2
+  sub $0,$5
   mod $0,2
   add $0,1
   mul $1,$0

@@ -4,10 +4,18 @@
 
 lpb $0
   mov $2,$0
-  seq $2,66568 ; a(n) = n - sum of digits of n.
-  mov $3,$2
+  div $2,10
+  mul $2,10
+  mov $5,$2
+  dgs $2,10
+  sub $5,$2
+  div $5,9
+  mov $4,$5
+  mul $4,9
+  mov $2,$4
+  mov $3,$4
   min $3,1
-  sub $0,$2
+  sub $0,$4
   add $1,$3
 lpe
 mov $0,$1

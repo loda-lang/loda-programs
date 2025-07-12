@@ -16,7 +16,10 @@ lpb $2
   sub $3,1
   mov $6,-1
   pow $6,$3
-  seq $3,53694 ; Number of self-conjugate 5-core partitions of n.
+  add $3,1
+  dir $3,5
+  seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+  div $3,4
   mul $3,$6
   equ $3,0
   sub $0,$3

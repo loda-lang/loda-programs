@@ -7,9 +7,12 @@ mov $3,1
 lpb $0
   sub $0,1
   mov $4,$2
-  mov $2,$1
   mov $6,$3
-  seq $6,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+  mod $6,8
+  mov $7,8
+  sub $7,$6
+  mov $2,$1
+  min $6,$7
   add $6,1
   mod $6,4
   mov $1,$3

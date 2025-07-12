@@ -11,7 +11,9 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,293162 ; Take every third term of the {0,1}-version of the Thue-Morse sequence: a(n) = A010060(3n).
+  mul $3,3
+  dgs $3,2
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

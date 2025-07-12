@@ -4,6 +4,19 @@
 
 #offset -1
 
-add $0,2
-seq $0,60055 ; Denominators of nonzero numbers appearing in the Euler-Maclaurin summation formula. (See A060054 for the definition of these numbers.)
+add $0,1
+mul $0,2
+mov $2,$0
+seq $2,129814 ; a(n) = Bernoulli(n) * (n+1)!.
+mov $1,$0
+add $1,1
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+pow $1,2
+gcd $2,$1
+add $0,1
+div $1,$2
+div $1,$0
+mov $0,$1
+dif $0,2
+mul $0,2
 dir $0,2

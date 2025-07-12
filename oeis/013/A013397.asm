@@ -11,7 +11,7 @@ lpb $2
   sub $0,$2
   mul $1,-1
   mul $1,$0
-  seq $0,6228 ; Expansion of exp(arcsin(x)).
+  seq $0,6228 ; Expansion of e.g.f. exp(arcsin(x)).
   add $1,$0
 lpe
 mov $0,$1

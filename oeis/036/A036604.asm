@@ -1,6 +1,6 @@
 ; A036604: Sorting numbers: minimal number of comparisons needed to sort n elements.
 ; Submitted by BrandyNOW
-; 0,1,3,5,7,10,13,16,19,22,26,30,34,38,42,46,50,54
+; 0,1,3,5,7,10,13,16,19,22,26,30,34,38,42,46,50,54,58,62,66,71
 ; Formula: a(n) = n*(logint(6*n,2)-2)-truncate((-3*logint(6*n,2)+truncate(2^(logint(6*n,2)+1))+3)/6)
 
 #offset 1

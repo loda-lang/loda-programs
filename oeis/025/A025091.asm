@@ -16,8 +16,13 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
+  mov $7,$0
+  bxo $7,$0
+  mov $6,$0
+  seq $6,72668 ; Numbers one less than composite numbers.
+  add $7,$6
+  mov $0,$7
   add $0,1
-  seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   add $3,$0
   add $4,$3
 lpe

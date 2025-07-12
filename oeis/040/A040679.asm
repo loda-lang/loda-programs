@@ -1,12 +1,24 @@
 ; A040679: Continued fraction for sqrt(706).
 ; Submitted by Landjunge
 ; 26,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1,52,1,1,3,26,3,1,1
-; Formula: a(n) = 21*truncate((gcd(truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/5),truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)+1)+truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2))/4)+gcd(truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/5),truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)+1)+truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)
 
 mov $3,$0
-seq $3,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+mod $3,8
+mov $4,8
+sub $4,$3
+min $3,$4
 mod $3,4
-seq $0,40329 ; Continued fraction for sqrt(348).
+mov $5,$0
+mov $6,10
+gcd $0,8
+lpb $5
+  mov $5,3
+  add $0,6
+  mov $6,7
+lpe
+mul $0,$6
+trn $0,63
+add $0,1
 add $0,$3
 div $0,2
 mov $2,$0

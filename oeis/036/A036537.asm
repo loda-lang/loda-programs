@@ -10,7 +10,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,212181 ; Largest odd divisor of tau(n): a(n) = A000265(A000005(n)).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  dir $3,2
   equ $3,1
   sub $0,$3
   add $1,1

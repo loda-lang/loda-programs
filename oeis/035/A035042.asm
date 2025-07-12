@@ -7,8 +7,29 @@ lpb $0
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,116690 ; a(n) = C(n,8) + C(n,7) + C(n,6) + C(n,5) + C(n,4) + C(n,3) + C(n,2) + C(n,1).
-  add $3,$4
+  mov $6,$4
+  bin $6,2
+  add $6,$4
+  mov $7,$4
+  bin $7,3
+  add $7,$6
+  mov $8,$4
+  bin $8,4
+  add $8,$7
+  mov $9,$4
+  bin $9,5
+  add $9,$8
+  mov $10,$4
+  bin $10,6
+  add $10,$9
+  mov $11,$4
+  bin $11,7
+  add $11,$10
+  mov $5,$4
+  bin $5,8
+  add $5,$11
+  add $3,$5
+  mov $4,$5
 lpe
 mov $0,$3
 mul $0,-1

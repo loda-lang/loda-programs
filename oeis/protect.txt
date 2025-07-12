@@ -195,6 +195,7 @@ A060418: Largest decimal digit in n-th prime.
 A060429: a(n) = 4*prime(n)^2+1.
 A060497: a(n) = binomial(2^n, prime(n)).
 A060604: a(n) = binomial(prime(n), n) where prime(n) = n-th prime.
+A060620: Average of the first n primes rounded down.
 A060800: a(n) = p^2 + p + 1 where p runs through the primes.
 A060904: Largest power of 5 that divides n.
 A061066: a(n) = (prime(n)^2 - 1)/8.

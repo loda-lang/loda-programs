@@ -1,15 +1,32 @@
 ; A008442: Expansion of Jacobi theta constant (theta_2(2z))^2/4.
-; Submitted by Ralfy
+; Submitted by mmonnin
 ; 1,0,0,0,2,0,0,0,1,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,3,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,4,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
 
 #offset 1
 
 sub $0,1
+mov $1,-1
+pow $1,$0
+mov $4,3
+add $0,3
 lpb $0
-  mod $0,2
-  mul $0,3
-  sub $0,1
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  mov $7,$3
+  nrt $3,2
+  pow $3,2
+  equ $3,$7
+  equ $7,0
+  mul $3,2
+  sub $3,$7
+  mod $6,2
+  add $6,4
+  mul $0,$1
+  add $2,$3
+  mov $4,2
+  add $4,$5
+  mul $4,$6
+  add $5,2
 lpe
-add $0,1
-seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
-div $0,2
+mov $0,$2

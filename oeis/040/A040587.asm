@@ -7,8 +7,18 @@ add $1,1
 lpb $1
   sub $1,1
   mov $2,$3
-  seq $2,10204 ; Continued fraction for sqrt(153).
-  add $2,1
+  dgr $2,9
+  mov $4,$2
+  mod $4,4
+  equ $4,2
+  mov $5,$2
+  div $2,8
+  mul $2,22
+  equ $5,0
+  mul $5,10
+  add $2,$5
+  sub $2,$4
+  add $2,3
   add $3,1
 lpe
 gcd $0,2

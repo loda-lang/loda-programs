@@ -11,7 +11,6 @@ bxo $3,$0
 mov $2,$0
 seq $2,72668 ; Numbers one less than composite numbers.
 add $3,$2
-mov $1,$0
 mov $1,$3
 add $1,1
 mov $0,$1

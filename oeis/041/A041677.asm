@@ -27,7 +27,7 @@ lpb $0
   div $6,5
   mul $6,$7
   add $6,$7
-  seq $6,144330 ; Triangle read by rows, A144328 * A000012
+  seq $6,144330 ; Triangle read by rows, A144328 * A000012.
   gcd $5,$6
   add $5,2
   div $5,5

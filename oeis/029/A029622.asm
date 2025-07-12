@@ -7,8 +7,26 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,2
+  mov $7,$1
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
   mov $3,$1
-  seq $3,29620 ; Numbers in (3,2)-Pascal triangle A029618 that are different from 2.
+  sub $3,$9
+  sub $3,1
+  mov $6,$7
+  bin $6,$3
+  mov $8,1
+  add $8,$7
+  bin $8,$3
+  add $6,$8
+  bin $3,$6
+  add $3,$8
+  add $3,$6
   add $3,1
   mov $5,$3
   mul $3,338

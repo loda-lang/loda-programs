@@ -11,7 +11,8 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $4,$3
-  seq $4,35191 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 9.
+  dir $4,3
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   seq $3,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
   mul $3,2
   sub $3,$4

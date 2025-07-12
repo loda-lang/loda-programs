@@ -4,8 +4,18 @@
 
 lpb $0
   add $1,1
+  mov $3,$0
+  mul $3,2
+  add $3,1
   mov $2,$0
-  seq $2,38554 ; Derivative of n: write n in binary, replace each pair of adjacent bits with their mod 2 sum (a(0)=a(1)=0 by convention). Also n XOR (n shift 1).
+  bxo $2,$3
+  log $3,2
+  mov $4,2
+  pow $4,$3
+  sub $4,$2
+  div $4,2
+  mov $2,0
+  sub $2,$4
   mov $0,$2
   mul $0,$1
   sub $1,2

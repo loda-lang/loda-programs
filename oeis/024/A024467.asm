@@ -14,7 +14,18 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  mov $6,$0
+  mul $6,6
+  nrt $6,3
+  mov $7,$6
+  add $7,2
+  bin $7,3
+  mov $8,$0
+  geq $8,$7
+  add $8,$6
+  add $8,1
+  bin $8,3
+  sub $0,$8
   min $0,1
   add $3,$0
   add $4,$3

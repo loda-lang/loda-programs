@@ -11,7 +11,11 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,30586 ; Write n in base 6, then complement each digit (d -> 5-d) and juxtapose.
+  seq $3,30548 ; Write n in base 6 and juxtapose.
+  mov $5,23
+  sub $5,$3
+  mov $3,$5
+  sub $3,18
   equ $3,1
   sub $0,$3
   mov $4,$0

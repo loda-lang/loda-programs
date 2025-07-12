@@ -8,7 +8,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,29114 ; Expansion of 1/((1-x)(1-x^6)(1-x^9)(1-x^11)).
+  seq $0,29114 ; Expansion of 1/((1-x)*(1-x^6)*(1-x^9)*(1-x^11)).
   mov $2,$3
   mul $2,$0
   add $4,$2

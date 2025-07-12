@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  dir $5,2
   seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $3,$1
   add $3,5

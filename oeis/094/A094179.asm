@@ -1,5 +1,5 @@
 ; A094179: Numbers congruent to 3 mod 4 which are divisible only by primes congruent to 3 mod 4.
-; Submitted by Simon Strandgaard
+; Submitted by Philippe
 ; 3,7,11,19,23,27,31,43,47,59,63,67,71,79,83,99,103,107,127,131,139,147,151,163,167,171,179,191,199,207,211,223,227,231,239,243,251,263,271,279,283,307,311,331,343,347,359,363,367,379,383,387,399,419,423,431,439,443,463,467,479,483,487,491,499,503,523,531,539,547,563,567,571,587,599,603,607,619,627,631
 
 #offset 1
@@ -12,11 +12,9 @@ lpb $2
   add $3,3
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $3,1
-  mov $5,3
+  div $5,2
   pow $5,$3
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
+  sub $0,$5
   mov $4,$0
   max $4,0
   equ $4,$0

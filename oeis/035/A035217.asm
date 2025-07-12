@@ -15,11 +15,23 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $6,$0
-  seq $6,121238 ; a(n) = (-1)^(1+n+A088585(n)).
+  dir $6,2
+  div $6,2
+  mov $7,-1
+  pow $7,$6
   mov $5,$0
   mul $5,2
-  seq $5,100047 ; A Chebyshev transform of the Fibonacci numbers.
-  mul $5,$6
+  mov $6,$7
+  mov $8,$5
+  add $8,7
+  mod $8,10
+  div $8,5
+  mul $8,2
+  sub $8,1
+  mod $5,5
+  min $5,1
+  mul $5,$8
+  mul $5,$7
   mod $0,7
   pow $0,8
   add $0,1

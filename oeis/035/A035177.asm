@@ -16,13 +16,17 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  seq $5,121238 ; a(n) = (-1)^(1+n+A088585(n)).
+  dir $5,2
+  div $5,2
+  mov $6,-1
+  pow $6,$5
   pow $0,6
   add $0,1
   mod $0,13
   sub $0,1
-  mul $0,$5
+  mul $0,$6
   mul $1,$0
   add $3,$1
+  mov $5,$6
 lpe
 mov $0,$3

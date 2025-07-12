@@ -23,7 +23,15 @@ lpb $4
   sub $6,$5
   mov $5,$6
   div $6,2
-  seq $0,100047 ; A Chebyshev transform of the Fibonacci numbers.
+  mov $7,$0
+  add $7,7
+  mod $7,10
+  div $7,5
+  mul $7,2
+  sub $7,1
+  mod $0,5
+  min $0,1
+  mul $0,$7
   mul $0,$5
   mul $1,$0
   add $3,$1

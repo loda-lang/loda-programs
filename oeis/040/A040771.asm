@@ -1,13 +1,25 @@
 ; A040771: Continued fraction for sqrt(800).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 28,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3,56,3,1,1,13,1,1,3
-; Formula: a(n) = 5*truncate((gcd(0,truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)+truncate(truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)/8))+2)/5)+truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)+truncate((2*gcd(0,5*truncate((gcd(0,truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)+truncate(truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)/8))+2)/5)+truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)+truncate(truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)/8))+2)/5)+truncate(truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)/8)
 
 mul $0,3
 mov $4,$0
-seq $4,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+mod $4,8
+mov $5,8
+sub $5,$4
+min $4,$5
 mod $4,4
-seq $0,40329 ; Continued fraction for sqrt(348).
+mov $6,$0
+mov $7,10
+gcd $0,8
+lpb $6
+  mov $6,3
+  add $0,6
+  mov $7,7
+lpe
+mul $0,$7
+trn $0,63
+add $0,1
 add $0,$4
 div $0,2
 mov $3,$0

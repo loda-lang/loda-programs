@@ -1,10 +1,12 @@
 ; A043529: Number of distinct base-2 digits of n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
-; Formula: a(n) = gcd(binomial(n,floor(n/2)),2)
+; Formula: a(n) = ((n+1)!=truncate(2^logint(n+1,2)))+1
 
+add $0,1
 mov $1,$0
-div $0,2
-bin $1,$0
-gcd $1,2
-mov $0,$1
+log $1,2
+mov $2,2
+pow $2,$1
+neq $0,$2
+add $0,1

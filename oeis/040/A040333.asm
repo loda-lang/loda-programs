@@ -1,14 +1,26 @@
 ; A040333: Continued fraction for sqrt(352).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 18,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1,36,1,3,5,9,5,3,1
-; Formula: a(n) = 2*truncate((2*A266313(n)-4*truncate(A266313(n)/4)+A040329(n))/2)-A266313(n)+truncate((2*A266313(n)-4*truncate(A266313(n)/4))/3)
 
 mov $2,$0
-seq $2,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+mod $2,8
+mov $4,8
+sub $4,$2
+min $2,$4
 mov $3,$2
 mod $2,4
 add $2,$3
-seq $0,40329 ; Continued fraction for sqrt(348).
+mov $5,$0
+mov $6,10
+gcd $0,8
+lpb $5
+  mov $5,3
+  add $0,6
+  mov $6,7
+lpe
+mul $0,$6
+trn $0,63
+add $0,1
 add $0,$2
 div $0,2
 div $2,3

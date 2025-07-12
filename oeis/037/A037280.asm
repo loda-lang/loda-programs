@@ -4,7 +4,11 @@
 
 #offset 1
 
-seq $0,37279 ; If n is composite, replace n with the concatenation of its nontrivial divisors, otherwise a(n) = n.
+mov $1,$0
+seq $1,106708 ; a(n) is the concatenation of its nontrivial divisors.
+seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+max $1,$0
+mov $0,$1
 dir $0,2
 div $0,2
 mul $0,2

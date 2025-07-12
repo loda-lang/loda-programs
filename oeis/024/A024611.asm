@@ -11,10 +11,22 @@ add $2,$0
 add $2,1
 lpb $2
   sub $2,1
+  mov $6,0
+  equ $6,$1
+  mov $7,$1
+  dir $7,3
+  seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,353816 ; a(n) = 1 if n is a number of the form x^2 + xy + y^2, otherwise 0.
-  add $4,$3
+  seq $3,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
+  mul $3,2
+  sub $3,$7
+  mul $3,6
+  add $3,$6
+  mov $5,$3
+  min $5,1
   add $1,1
+  mov $3,$5
+  add $4,$5
 lpe
 mov $0,$4
 add $0,1

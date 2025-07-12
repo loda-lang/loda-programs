@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,52382 ; Numbers without 0 as a digit, a.k.a. zeroless numbers.
+  seq $3,52382 ; Numbers without 0 in the decimal expansion, colloquial 'zeroless numbers'.
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

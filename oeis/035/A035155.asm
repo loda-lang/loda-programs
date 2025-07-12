@@ -16,7 +16,15 @@ lpb $4
   bin $1,$0
   mov $5,$0
   mul $5,2
-  seq $5,100047 ; A Chebyshev transform of the Fibonacci numbers.
+  mov $6,$5
+  add $6,7
+  mod $6,10
+  div $6,5
+  mul $6,2
+  sub $6,1
+  mod $5,5
+  min $5,1
+  mul $5,$6
   mod $0,7
   pow $0,8
   add $0,1

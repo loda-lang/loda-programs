@@ -7,10 +7,13 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,13
-  seq $3,5567 ; Number of walks on square lattice.
+  mov $6,169
+  mov $7,13500416
+  mov $8,1352
+  mov $9,8192
   add $4,1
   add $5,1
+  mov $3,13500754
   gcd $3,$5
   div $3,$4
   sub $0,$3

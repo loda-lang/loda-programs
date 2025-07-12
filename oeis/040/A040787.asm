@@ -1,13 +1,25 @@
 ; A040787: Continued fraction for sqrt(816).
 ; Submitted by Ralfy
 ; 28,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1,56,1,1,3,3,3,1,1
-; Formula: a(n) = truncate((-truncate(truncate(A040329(n*(A266313(n)+1))/2)/8)+max(49*truncate(truncate(A040329(n*(A266313(n)+1))/2)/8),4)+truncate(A040329(n*(A266313(n)+1))/2)-3)/2)+1
 
 mov $2,$0
-seq $2,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+mod $2,8
+mov $3,8
+sub $3,$2
+min $2,$3
 add $2,1
 mul $0,$2
-seq $0,40329 ; Continued fraction for sqrt(348).
+mov $4,$0
+mov $5,10
+gcd $0,8
+lpb $4
+  mov $4,3
+  add $0,6
+  mov $5,7
+lpe
+mul $0,$5
+trn $0,63
+add $0,1
 div $0,2
 mov $1,$0
 div $0,8

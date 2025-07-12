@@ -4,5 +4,12 @@
 
 dir $0,5
 mul $0,5
-seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $0,21
+mov $1,3
+mul $1,$0
+add $1,$0
+mov $0,$1
+sub $0,79
+div $0,84
 add $0,1
