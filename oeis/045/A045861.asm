@@ -10,7 +10,13 @@ add $2,1
 pow $2,8
 lpb $2
   mov $3,$1
-  seq $3,2993 ; Initial digits of squares.
+  pow $3,2
+  mov $5,$3
+  max $5,1
+  log $5,10
+  mov $6,10
+  pow $6,$5
+  div $3,$6
   sub $3,1
   equ $3,6
   sub $0,$3

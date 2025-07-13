@@ -1,13 +1,21 @@
 ; A004016: Theta series of planar hexagonal lattice A_2.
-; Submitted by BrandyNOW
+; Submitted by gemini8
 ; 1,6,0,6,6,0,0,12,0,6,0,0,6,12,0,0,6,0,0,12,0,12,0,0,0,6,0,6,12,0,0,12,0,0,0,0,6,12,0,12,0,0,0,12,0,0,0,0,6,18,0,0,12,0,0,0,0,12,0,0,0,12,0,12,6,0,0,12,0,0,0,0,0,12,0,6,12,0,0,12
 
-equ $1,$0
-mov $2,$0
-dir $2,3
-seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-seq $0,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
-mul $0,2
-sub $0,$2
-mul $0,6
-add $0,$1
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  trn $0,1
+  seq $0,38589 ; Sizes of successive clusters in hexagonal lattice A_2 centered at lattice point.
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
+lpe
+min $5,1
+mul $5,$4
+sub $1,$5
+mov $0,$1

@@ -4,24 +4,20 @@
 
 mov $3,$0
 lpb $3
-  mov $6,0
   mov $4,11
   pow $4,$1
-  lpb $4
-    div $4,10
-    add $6,1
-  lpe
+  mul $4,10
+  log $4,10
   add $1,1
-  add $2,$6
+  add $2,$4
   mov $3,$0
   sub $3,$2
 lpe
 mov $3,11
 pow $3,$1
-lpb $3
-  div $3,10
-  add $5,1
-lpe
+mul $3,10
+log $3,10
+add $5,$3
 add $2,$5
 sub $2,$0
 sub $2,1

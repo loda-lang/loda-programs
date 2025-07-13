@@ -1,6 +1,7 @@
 ; A073141: Product of the largest and smallest number having in binary representation the same number of 0's and 1's as n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,4,9,16,30,30,49,64,108,108,154,108,154,154,225,256,408,408,532,408,532,532,690,408,532,532,690,532,690,690,961,1024,1584,1584,1960,1584,1960,1960,2340,1584,1960,1960,2340,1960,2340,2340,2914,1584,1960
+; Formula: a(n) = A073138(max(n-1,0)+1)*A059893(A073138(max(n-1,0)+1))*(n!=0)
 
 mov $1,$0
 neq $1,0

@@ -11,7 +11,22 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,48645 ; Integers with one or two 1-bits in their binary expansion.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  sub $3,1
+  mov $7,2
+  pow $7,$3
+  div $7,2
+  mov $3,2
+  pow $3,$6
+  add $3,$7
   mul $3,2
   mov $5,$3
   add $3,1

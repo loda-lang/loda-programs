@@ -1,4 +1,4 @@
-; A073457: Numbers n such that phi(n) = pi(n) + 2.
+; A073457: Numbers k such that phi(k) = pi(k) + 2.
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 7,9,15,16,22,54,66,120,210
 

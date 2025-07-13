@@ -13,7 +13,9 @@ lpb $3
   sub $0,$3
   add $0,1
   seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  seq $0,55642 ; Number of digits in the decimal expansion of n.
+  max $0,1
+  log $0,10
+  add $0,1
   add $2,$0
 lpe
 mov $0,$2

@@ -1,30 +1,13 @@
 ; A060996: Stirling2 transform of [2,3,3,3,3,3,3,3,...].
-; Submitted by BrandyNOW
+; Submitted by mmonnin
 ; 2,5,14,44,155,608,2630,12419,63440,347924,2035709,12640790,82933310,572697965,4148875634,31440426440,248594609411,2046230418476,17498226615170,155172474706115,1424609448470252,13520147215341968,132456017565253037
+; Formula: a(n) = 3*A188164(2*n+2)-1
 
-mov $4,1
-mov $7,$0
-lpb $0
-  mul $4,$0
-  sub $0,1
-lpe
-mov $0,$7
 add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$1
-  add $2,1
-  pow $2,$7
-  mov $3,$7
-  bin $3,$1
-  mul $6,$1
-  add $6,$2
-  add $1,1
-  mul $3,$6
-  mul $5,-1
-  add $5,$3
-lpe
-mov $0,$5
-div $0,$4
+mov $1,$0
+mul $1,2
+seq $1,188164 ; Number of palindromic structures of length n.
+sub $1,1
+mov $0,$1
 mul $0,3
-sub $0,1
+add $0,2

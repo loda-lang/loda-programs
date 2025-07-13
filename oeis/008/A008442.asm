@@ -1,5 +1,5 @@
 ; A008442: Expansion of Jacobi theta constant (theta_2(2z))^2/4.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,0,0,0,2,0,0,0,1,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,3,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,4,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
 
 #offset 1
@@ -13,20 +13,17 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
-  mov $7,$3
+  mov $5,$3
   nrt $3,2
   pow $3,2
-  equ $3,$7
-  equ $7,0
+  equ $3,$5
+  equ $5,0
   mul $3,2
-  sub $3,$7
-  mod $6,2
+  sub $3,$5
   add $6,4
   mul $0,$1
   add $2,$3
   mov $4,2
-  add $4,$5
   mul $4,$6
-  add $5,2
 lpe
 mov $0,$2

@@ -5,9 +5,8 @@
 #offset 1
 
 nrt $0,2
-add $0,2
 mov $1,$0
-trn $1,3
+sub $1,1
 mov $0,$1
 lpb $0
   mov $2,$0

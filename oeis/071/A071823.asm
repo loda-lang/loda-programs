@@ -11,7 +11,10 @@ lpb $4
   mov $0,$6
   sub $0,$4
   add $0,1
-  seq $0,111089 ; Largest prime factor of 2n.
+  mod $0,-149
+  seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  trn $0,2
+  add $0,2
   dif $0,2
   bin $0,2
   sub $0,1

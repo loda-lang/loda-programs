@@ -1,7 +1,27 @@
 ; A046974: Partial sums of digits of decimal expansion of Pi.
 ; Submitted by Wood
 ; 3,4,8,9,14,23,25,31,36,39,44,52,61,68,77,80,82,85,93,97,103,105,111,115,118,121,129,132,134,141,150,155,155,157,165,173,177,178,187,194,195,201,210,213,222,231,234,241,246,247,247,252,260,262,262,271,278,282,291,295,299,304,313,315,318,318,325,333,334,340,344,344,350,352,360,366,368,368,376,385
-; Formula: a(n) = sumdigits(A011545(n),10)*sign(A011545(n))
 
-seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
+mov $2,0
+mov $5,0
+add $0,1
+mov $1,1
+mov $3,$0
+mul $3,7
+lpb $3
+  max $3,1
+  max $5,$2
+  div $5,$3
+  add $2,$1
+  sub $3,1
+  mul $1,2
+  add $1,$5
+lpe
+sub $0,1
+mov $4,10
+pow $4,$0
+div $2,$4
+mul $1,2
+div $1,$2
+mov $0,$1
 dgs $0,10

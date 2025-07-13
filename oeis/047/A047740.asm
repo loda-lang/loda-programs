@@ -13,7 +13,15 @@ lpb $3
   sub $3,1
   mov $4,$2
   sub $4,2
-  seq $4,56556 ; First tetrahedral coordinate; repeat m (m+1)*(m+2)/2 times.
+  mov $6,$4
+  mul $6,6
+  nrt $6,3
+  mov $7,$6
+  add $7,2
+  bin $7,3
+  geq $4,$7
+  add $4,$6
+  sub $4,1
   add $5,1
   add $2,$5
   add $2,1

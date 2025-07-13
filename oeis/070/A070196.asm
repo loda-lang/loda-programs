@@ -1,8 +1,98 @@
 ; A070196: a(n) = n plus the sorted version of the base-10 digits of n.
 ; Submitted by Simon Strandgaard
 ; 0,2,4,6,8,10,12,14,16,18,11,22,24,26,28,30,32,34,36,38,22,33,44,46,48,50,52,54,56,58,33,44,55,66,68,70,72,74,76,78,44,55,66,77,88,90,92,94,96,98,55,66,77,88,99,110,112,114,116,118,66,77,88,99,110,121,132,134,136,138,77,88,99,110,121,132,143,154,156,158
-; Formula: a(n) = A004185(n)+n
 
 mov $1,$0
-seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+mov $2,0
+mov $3,0
+mov $4,0
+mov $5,0
+mov $6,0
+mov $7,0
+mov $8,0
+mov $9,0
+mov $10,0
+lpb $0
+  mov $12,$0
+  mod $12,10
+  mov $13,$12
+  equ $13,9
+  div $0,10
+  add $10,$13
+  mov $13,$12
+  equ $13,8
+  add $9,$13
+  mov $13,$12
+  equ $13,7
+  add $8,$13
+  mov $13,$12
+  equ $13,6
+  add $7,$13
+  mov $13,$12
+  equ $13,5
+  add $6,$13
+  mov $13,$12
+  equ $13,4
+  add $5,$13
+  mov $13,$12
+  equ $13,3
+  add $4,$13
+  mov $13,$12
+  equ $13,2
+  add $3,$13
+  mov $13,$12
+  equ $13,1
+  add $2,$13
+lpe
+mov $0,10
+pow $0,$2
+div $0,9
+mov $11,10
+pow $11,$3
+mul $0,$11
+div $11,9
+mul $11,2
+add $0,$11
+mov $11,10
+pow $11,$4
+mul $0,$11
+div $11,9
+mul $11,3
+add $0,$11
+mov $11,10
+pow $11,$5
+mul $0,$11
+div $11,9
+mul $11,4
+add $0,$11
+mov $11,10
+pow $11,$6
+mul $0,$11
+div $11,9
+mul $11,5
+add $0,$11
+mov $11,10
+pow $11,$7
+mul $0,$11
+div $11,9
+mul $11,6
+add $0,$11
+mov $11,10
+pow $11,$8
+mul $0,$11
+div $11,9
+mul $11,7
+add $0,$11
+mov $11,10
+pow $11,$9
+mul $0,$11
+div $11,9
+mul $11,8
+add $0,$11
+mov $11,10
+pow $11,$10
+mul $0,$11
+div $11,9
+mul $11,9
+add $0,$11
 add $0,$1

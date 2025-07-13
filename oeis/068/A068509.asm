@@ -1,5 +1,5 @@
 ; A068509: a(n) = maximum length of a subset in {1,..,n} whose integers have pairwise LCM not exceeding n.
-; Submitted by iBezanilla
+; Submitted by BarnardsStern
 ; 1,2,2,3,3,4,4,4,4,4,4,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12
 
 #offset 1
@@ -7,6 +7,7 @@
 mov $1,$0
 sub $1,1
 mov $5,$1
+div $0,2
 mov $4,$1
 lpb $4
   sub $4,1

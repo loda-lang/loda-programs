@@ -12,9 +12,28 @@ lpb $2
   sub $2,16
   mov $7,2
   max $7,$1
-  seq $7,323231 ; A(n, k) = [x^k] (1/(1-x) + x/(1-x)^n), square array read by descending antidiagonals for n, k >= 0.
-  mov $6,$7
-  sub $6,1
+  add $7,1
+  mov $9,$7
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  add $10,1
+  bin $10,2
+  sub $9,1
+  sub $7,1
+  sub $7,$10
+  sub $7,$9
+  trn $9,$7
+  add $9,$7
+  sub $9,1
+  add $7,$9
+  mov $8,$9
+  bin $8,$7
+  mov $7,$8
+  add $7,1
+  mov $6,$8
   gcd $6,4
   mov $3,4
   div $3,$6

@@ -1,20 +1,22 @@
 ; A073078: Least k such that n divides C(2k,k).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,2,3,3,2,4,7,5,3,6,5,7,4,8,15,9,5,10,3,5,6,12,7,13,7,14,5,15,8,16,31,6,9,4,5,19,10,7,13,21,5,22,6,8,12,24,15,25,13,11,7,27,14,8,11,11,15,30,14,31,16,5,63,8,6,34,9,14,4,36,14,37,19,14,10,6,7,40,15
 
 #offset 1
 
-mov $3,$0
-lpb $3
-  add $3,$1
-  sub $2,1
-  lpb $1
-    bin $2,$1
-    mod $2,$0
-    equ $2,0
-    sub $1,$2
-  lpe
-  add $1,1
-  sub $3,$1
+mov $1,$0
+sub $1,1
+mov $2,$1
+add $1,1
+pow $2,5
+lpb $2
+  add $3,1
+  mov $4,2
+  mul $4,$3
+  bin $4,$3
+  gcd $4,$1
+  add $2,$4
+  sub $2,$1
 lpe
-mov $0,$1
+mov $0,$3
+add $0,1

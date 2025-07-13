@@ -15,8 +15,18 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,53121 ; Catalan triangle (with 0's) read by rows.
-  add $0,1
-  seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mov $6,$0
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $0,$6
+  mov $5,$0
+  add $5,1
+  seq $5,40 ; The prime numbers.
+  mov $0,$5
   mul $0,$4
   add $1,$0
 lpe

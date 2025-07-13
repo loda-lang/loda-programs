@@ -9,7 +9,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,68496 ; n! reduced mod 2^n.
+  seq $3,68496 ; a(n) = n! reduced mod 2^n.
   mov $4,$3
   add $5,1
   mul $5,2

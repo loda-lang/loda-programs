@@ -5,5 +5,14 @@
 #offset 1
 
 sub $0,1
-seq $0,99612 ; Numerators of the coefficients in the Taylor expansion of sec(x) + tan(x) around x=0.
+mov $2,$0
+seq $2,122045 ; Euler (or secant) numbers E(n).
+mov $1,$0
+seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $1,$2
+trn $0,1
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+gcd $0,$1
+div $1,$0
+mov $0,$1
 dir $0,2

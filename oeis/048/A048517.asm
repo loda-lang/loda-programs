@@ -13,7 +13,9 @@ lpb $2
   sub $2,$0
   mov $3,$1
   mul $3,2
-  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  add $3,1
+  dir $3,2
+  div $3,2
   mov $5,$3
   add $5,1
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -1,21 +1,37 @@
 ; A064427: a(n) = n + (number of primes < n).
-; Submitted by vaughan
+; Submitted by Stephen Uitti
 ; 1,2,4,6,7,9,10,12,13,14,15,17,18,20,21,22,23,25,26,28,29,30,31,33,34,35,36,37,38,40,41,43,44,45,46,47,48,50,51,52,53,55,56,58,59,60,61,63,64,65,66,67,68,70,71,72,73,74,75,77,78,80,81,82,83,84,85,87,88,89,90,92,93,95,96,97,98,99,100,102
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-add $0,1
-lpb $0
-  sub $0,2
-  div $0,2
-  mul $0,2
-  add $0,2
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  add $2,1
+mov $4,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $7,0
+  mov $0,$4
+  sub $0,$1
+  mov $8,$0
+  mov $6,2
+  lpb $6
+    sub $6,1
+    mov $0,$8
+    add $0,$6
+    trn $0,1
+    mov $3,$0
+    seq $3,230980 ; Number of primes <= n, starting at n=0.
+    mov $5,$6
+    mul $5,$3
+    mov $0,$3
+    add $7,$5
+  lpe
+  min $8,1
+  mul $8,$0
+  mov $0,$7
+  sub $0,$8
+  add $0,1
+  add $2,$0
 lpe
-mov $1,2
-add $1,$2
-mov $0,$1
-sub $0,1
+mov $0,$2

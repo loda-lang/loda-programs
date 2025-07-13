@@ -16,7 +16,17 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $0,1
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,4
+  sub $0,1
+  sub $5,$0
+  mov $6,-1
+  pow $6,$5
+  mov $0,$6
   mul $0,$4
   pow $0,2
   add $1,$0

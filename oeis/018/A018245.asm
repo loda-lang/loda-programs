@@ -1,23 +1,19 @@
 ; A018245: A self-generating sequence: there are a(n) (k+1)'s between successive k's, where k=4.
-; Submitted by fzs600
+; Submitted by arkiss
 ; 4,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5
-; Formula: a(n) = -2*truncate((sqrtint(2*(2*n)^2)+sqrtint(2*(2*n-2)^2))/2)+sqrtint(2*(2*n)^2)+sqrtint(2*(2*n-2)^2)+4
+; Formula: a(n) = -sqrtint(8*(n-1)^2)+sqrtint(8*n^2)+2
 
 #offset 1
 
 sub $0,1
-mul $0,2
 mov $1,$0
-pow $1,2
-mul $1,2
-mov $3,$1
-nrt $3,2
-add $0,2
+add $0,1
 pow $0,2
-mul $0,2
-mov $2,$0
-nrt $2,2
-mov $0,$2
-add $0,$3
-mod $0,2
-add $0,4
+mul $0,8
+nrt $0,2
+add $0,3
+pow $1,2
+mul $1,8
+nrt $1,2
+add $1,1
+sub $0,$1

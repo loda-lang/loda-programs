@@ -10,7 +10,8 @@ lpb $1
   mul $2,-2
   div $2,$0
   sub $0,$2
-  add $0,1
-  seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $0,1
+  mov $3,$0
+  seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  lex $3,$0
+  add $0,$3
 lpe

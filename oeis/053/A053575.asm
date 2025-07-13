@@ -4,5 +4,6 @@
 
 #offset 1
 
-seq $0,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n > 1.
+seq $0,62570 ; a(n) = phi(2*n).
+dif $0,2
 dir $0,2

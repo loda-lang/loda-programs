@@ -8,7 +8,9 @@ lpb $0
   mov $2,$0
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   mov $3,$2
-  seq $3,55642 ; Number of digits in the decimal expansion of n.
+  max $3,1
+  log $3,10
+  add $3,1
   pow $0,$3
   div $0,$2
   mul $1,10
