@@ -1,0 +1,10 @@
+; A099819: Bisection of A000521.
+; Submitted by iBezanilla
+; 744,21493760,20245856256,4252023300096,401490886656000,22567393309593600,874313719685775360,25497827389410525184,593121772421445058560,11459912788444786513920,189449976248893390028800
+; Formula: a(n) = A000521(2*n+2)
+
+#offset -1
+
+add $0,1
+mul $0,2
+seq $0,521 ; Coefficients of modular function j as power series in q = e^(2 Pi i t). Another name is the elliptic modular invariant J(tau).
