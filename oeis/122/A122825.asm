@@ -6,7 +6,14 @@
 
 sub $0,1
 mov $1,$0
-seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-lex $1,$0
-add $0,$1
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  mov $3,$0
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,$3
+lpe
+mov $0,$1
 add $0,1

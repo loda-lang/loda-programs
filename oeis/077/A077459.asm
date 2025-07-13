@@ -10,7 +10,13 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,334913 ; a(n) is the sum of digits of n in signed binary nonadjacent form.
+  mul $3,2
+  mov $5,$1
+  add $5,$3
+  dgs $3,2
+  dgs $5,2
+  sub $5,$3
+  mov $3,$5
   equ $3,0
   sub $0,$3
   add $1,1

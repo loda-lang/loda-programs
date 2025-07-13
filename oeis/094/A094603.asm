@@ -1,10 +1,22 @@
 ; A094603: a(n) is the length of the maximal sequence of rightmost black cells in the n-th row of Rule 30 (begun from an initial black cell).
 ; Submitted by Cruncher Pete
 ; 1,3,1,4,1,3,1,6,1,3,1,4,1,3,1,7,1,3,1,4,1,3,1,6,1,3,1,4,1,3,1,9,1,3,1,4,1,3,1,6,1,3,1,4,1,3,1,7,1,3,1,4,1,3,1,6,1,3,1,4,1,3,1,15,1,3,1,4,1,3,1,6,1,3,1,4,1,3,1,7
-; Formula: a(n) = A089309(A110240(n-1))
 
 #offset 1
 
-sub $0,1
-seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
-seq $0,89309 ; Write n in binary; a(n) = length of the rightmost run of 1's.
+sub $0,2
+mov $3,1
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $2,$3
+  mul $2,2
+  bxo $2,$3
+  add $3,$2
+  bxo $3,$2
+lpe
+mov $0,$3
+dir $0,2
+add $0,1
+lex $0,2

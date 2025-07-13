@@ -4,7 +4,26 @@
 
 #offset 1
 
-seq $0,254101 ; Square array A(row,col) = A000265(A254051(row,col)).
+mov $2,0
+sub $0,1
+lpb $0
+  sub $0,1
+  sub $0,$2
+  add $2,1
+lpe
+mov $3,3
+pow $3,$0
+sub $2,$0
+mul $2,3
+add $2,1
+div $2,2
+mul $2,$3
+mul $2,2
+add $2,$3
+mov $0,$2
+div $0,2
+add $0,1
+dir $0,2
 mov $1,$0
 dir $1,3
 div $1,3

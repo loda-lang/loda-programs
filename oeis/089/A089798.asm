@@ -7,9 +7,15 @@ pow $3,$0
 add $3,1
 mov $2,$0
 dif $2,2
+mov $4,$2
 mov $1,-1
 pow $1,$2
-seq $2,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
+nrt $2,2
+pow $2,2
+equ $2,$4
+equ $4,0
+mul $2,2
+sub $2,$4
 mul $2,$1
 mul $2,$3
 div $2,2

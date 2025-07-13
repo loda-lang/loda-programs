@@ -8,4 +8,4 @@
 mov $1,$0
 seq $0,7955 ; Product of divisors of n.
 div $0,$1
-seq $0,205745 ; a(n) = card { d | d*p = n, d odd, p prime }
+seq $0,205745 ; a(n) = card { d | d*p = n, d odd, p prime }.

@@ -14,8 +14,13 @@ pow $5,4
 lpb $5
   add $4,2
   mov $6,$4
-  seq $6,89312 ; Write n in binary; a(n) = number represented by rightmost block of 1's.
-  sub $6,1
+  dir $6,2
+  add $6,1
+  mov $7,2
+  pow $7,$6
+  gcd $7,$6
+  mov $6,$7
+  sub $6,2
   equ $6,0
   sub $3,$6
   add $4,1

@@ -9,7 +9,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,71374 ; 0 iff n is of the form 4^a*(8k+7), otherwise 1.
+  dir $3,4
+  bin $3,3
+  bin $3,3
+  gcd $3,2
+  sub $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

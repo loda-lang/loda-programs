@@ -5,7 +5,9 @@
 #offset 1
 
 mov $2,$0
-seq $2,55642 ; Number of digits in the decimal expansion of n.
+max $2,1
+log $2,10
+add $2,1
 mov $3,$0
 mov $4,$0
 mov $1,$0
@@ -19,7 +21,11 @@ lpb $1
   div $7,$6
   neq $7,$0
   mov $3,$4
-  seq $3,127739 ; Triangle read by rows, in which row n contains the triangular number T(n) = A000217(n) repeated n times; smallest triangular number greater than or equal to n.
+  mul $3,8
+  nrt $3,2
+  add $3,3
+  div $3,2
+  bin $3,2
   mul $1,$7
   sub $1,1
 lpe

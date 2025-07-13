@@ -9,14 +9,11 @@ mov $3,$0
 lpb $3
   mov $4,$3
   mod $4,10
+  sub $0,$4
   mul $1,10
   add $1,$4
   div $3,10
 lpe
-mul $1,3
-sub $1,2
-div $1,3
-add $1,1
 mov $2,$0
 mul $0,2
 add $2,$0

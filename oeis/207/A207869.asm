@@ -1,4 +1,4 @@
-; A207869: Z(n,-1), where Z(n,x) is the n-th Zeckendorf polynomial.
+; A207869: a(n) = Z(n,-1), where Z(n,x) is the n-th Zeckendorf polynomial.
 ; Submitted by Science United
 ; 1,-1,1,2,-1,0,-2,1,2,0,2,3,-1,0,-2,0,1,-2,-1,-3,1,2,0,2,3,0,1,-1,2,3,1,3,4,-1,0,-2,0,1,-2,-1,-3,0,1,-1,1,2,-2,-1,-3,-1,0,-3,-2,-4,1,2,0,2,3,0,1,-1,2,3,1,3,4,0,1,-1,1,2,-1,0,-2,2,3,1,3,4
 ; Formula: a(n) = truncate(A085008(A290258(n+1))/3)

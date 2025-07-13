@@ -16,7 +16,9 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
-  seq $1,95190 ; Doubled Thue-Morse sequence: a(2n) = A010060(n), a(2n+1) = A010060(n).
+  div $1,2
+  dgs $1,2
+  mod $1,2
   mul $3,$1
   add $5,$3
 lpe

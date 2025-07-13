@@ -1,4 +1,4 @@
-; A085233: (Greatest power of smallest prime factor of n) > square root(n).
+; A085233: Numbers k such that k is divisible by a power of its smallest prime factor that exceeds its square root.
 ; Submitted by Simon Strandgaard (M1)
 ; 2,3,4,5,7,8,9,11,12,13,16,17,19,23,24,25,27,29,31,32,37,40,41,43,45,47,48,49,53,56,59,61,63,64,67,71,73,79,80,81,83,89,96,97,101,103,107,109,112,113,121,125,127,128,131,135,137,139,144,149,151,157,160,163,167,169,173,175,176,179,181,189,191,192,193,197,199,208,211,223
 

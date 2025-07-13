@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,77510 ; Numbers n such that n + pi(n) is a prime.
+seq $0,77510 ; Numbers k such that k + pi(k) is a prime.
 add $0,1
 seq $0,64427 ; a(n) = n + (number of primes < n).
 sub $0,1

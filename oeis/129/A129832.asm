@@ -9,8 +9,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $1,1
+  mov $6,$1
+  seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  seq $3,318622 ; Number of irreducible factors in the factorization of the n-th cyclotomic polynomial over GF(2) (counted with multiplicity).
+  seq $3,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
+  mov $5,$6
+  gcd $6,$3
+  div $5,$6
+  mov $3,$5
   equ $3,1
   sub $0,$3
   mov $4,$0

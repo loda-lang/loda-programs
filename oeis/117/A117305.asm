@@ -10,7 +10,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,4157 ; Sum of digits of n-th triangular number.
+  add $3,1
+  bin $3,2
+  dgs $3,10
   trn $3,1
   seq $3,317497 ; Triangle T(n,k) = 3*T(n-1,k) +  T(n-3,k-1) for k = 0..floor(n/3) with T(0,0) = 1 and T(n,k) = 0 for n or k < 0, read by rows.
   equ $3,1

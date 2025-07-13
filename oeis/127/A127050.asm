@@ -1,9 +1,40 @@
 ; A127050: A007376(2n+1).
 ; Submitted by estatic707
 ; 1,3,5,7,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4
-; Formula: a(n) = A033307(2*n)
 
 mov $1,$0
 add $1,$0
-seq $1,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
+mov $2,1
+mov $4,0
+mov $6,$1
+lpb $6
+  sub $6,1
+  mov $7,10
+  pow $7,$2
+  mov $3,$4
+  mov $4,$2
+  mul $4,$7
+  div $7,9
+  sub $4,$7
+  mov $5,$1
+  geq $5,$4
+  mul $6,$5
+  add $2,$5
+lpe
+mov $5,$1
+sub $5,$3
+mod $5,$2
+mov $6,$2
+sub $6,$5
+sub $6,1
+mov $5,10
+pow $5,$6
+mov $4,10
+pow $4,$2
+div $4,10
+sub $1,$3
+div $1,$2
+add $1,$4
+div $1,$5
+mod $1,10
 mov $0,$1

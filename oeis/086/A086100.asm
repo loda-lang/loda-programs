@@ -1,7 +1,23 @@
 ; A086100: A086099 in binary.
 ; Submitted by Jon Maiga
 ; 0,0,1,0,11,10,11,0,111,110,111,100,111,110,111,0,1111,1110,1111,1100,1111,1110,1111,1000,1111,1110,1111,1100,1111,1110,1111,0,11111,11110,11111,11100,11111,11110,11111,11000,11111,11110,11111,11100
-; Formula: a(n) = A007088(A086099(n))
 
-seq $0,86099 ; a(n) = OR(k AND (n-k): 0<=k<=n), AND and OR bitwise.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+add $0,1
+mov $1,$0
+log $1,2
+mov $2,2
+pow $2,$1
+gcd $0,$2
+sub $2,$0
+mov $3,0
+mov $4,1
+mov $0,$2
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

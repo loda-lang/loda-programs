@@ -19,9 +19,11 @@ lpb $4
   add $3,1
   div $5,$3
   sub $3,$5
-  add $3,1
-  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $3,3
+  mov $6,$3
+  seq $3,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  lex $6,$3
+  add $3,$6
+  sub $3,2
 lpe
 min $2,1
 mul $2,$3

@@ -1,4 +1,4 @@
-; A188189: [nr]-[kr]-[nr-kr], where r=sqrt(5), k=2, [ ]=floor.
+; A188189: a(n) = [n*r]-[k*r]-[n*r-k*r], where r=sqrt(5), k=2, [ ]=floor.
 ; Submitted by omegaintellisys
 ; 1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0
 ; Formula: a(n) = -2*truncate((sqrtint((sqrtint((n-2)*(5*n-10))+n+5)*(5*sqrtint((n-2)*(5*n-10))+5*n+25))+sqrtint((n-2)*(5*n-10))+n+5)/2)+sqrtint((sqrtint((n-2)*(5*n-10))+n+5)*(5*sqrtint((n-2)*(5*n-10))+5*n+25))+sqrtint((n-2)*(5*n-10))+n+5

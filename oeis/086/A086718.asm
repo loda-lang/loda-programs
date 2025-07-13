@@ -14,14 +14,42 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
-  seq $4,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-  add $4,1
-  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  add $5,1
+  pow $5,2
+  sub $5,$0
+  mov $7,$5
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,1
+  mov $4,$5
+  sub $4,$7
+  mov $6,$4
+  add $6,1
+  seq $6,40 ; The prime numbers.
+  mov $9,$0
+  mul $9,8
+  add $9,1
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  sub $0,$9
   add $0,1
-  seq $0,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
-  mul $0,$4
+  mov $4,$6
+  mov $8,$0
+  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $0,$8
+  mul $0,$6
   add $1,$0
 lpe
 mov $0,$1

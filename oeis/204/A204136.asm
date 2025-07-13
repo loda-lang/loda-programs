@@ -12,7 +12,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,169643 ; Numbers n such that neither composite(n)-+1 is composite.
+  seq $0,169643 ; Numbers k such that neither composite(k)+-1 is composite.
   mov $2,$3
   mul $2,$0
   mul $4,$3

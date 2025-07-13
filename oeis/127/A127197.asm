@@ -4,6 +4,4 @@
 #offset 2
 
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

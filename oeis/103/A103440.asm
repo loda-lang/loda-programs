@@ -5,4 +5,11 @@
 #offset 1
 
 dir $0,3
-seq $0,181905 ; Expansion of (b(q^3)^3 - b(q)^3) / 9 in powers of q where b() is a cubic AGM theta function.
+sub $0,1
+mov $1,8
+add $1,$0
+mod $1,3
+sub $1,1
+add $0,1
+seq $0,106402 ; Expansion of eta(q^3)^9 / eta(q)^3 in powers of q.
+mul $0,$1

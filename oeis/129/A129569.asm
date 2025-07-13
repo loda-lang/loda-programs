@@ -1,7 +1,6 @@
 ; A129569: A129360 * A128174.
 ; Submitted by Jason Jung
 ; 1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1
-; Formula: a(n) = -2*truncate((b(n-1)+1)/2)+b(n-1)+1, b(n) = b(n-1)+A340375(A331145(max(n-1,0)+1)), b(0) = 0
 
 #offset 1
 
@@ -11,8 +10,33 @@ lpb $0
   mov $2,$0
   max $2,0
   add $2,1
-  seq $2,331145 ; Triangle read by rows: T(n,k) (n>=k>=1) = ceiling((n/k)*ceiling(n/k)).
-  seq $2,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
+  mov $3,$2
+  mul $3,8
+  nrt $3,2
+  sub $3,1
+  div $3,2
+  mov $5,$3
+  add $5,1
+  bin $5,2
+  sub $2,$5
+  add $3,1
+  mov $4,$3
+  sub $3,1
+  div $3,$2
+  add $3,1
+  mul $4,$3
+  sub $4,1
+  div $4,$2
+  mov $2,$4
+  add $2,1
+  dir $2,2
+  add $2,1
+  mov $6,$2
+  add $6,$2
+  bin $6,$2
+  mov $2,$6
+  mod $2,4
+  div $2,2
   add $1,$2
 lpe
 add $1,1

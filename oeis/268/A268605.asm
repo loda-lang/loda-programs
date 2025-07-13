@@ -1,11 +1,26 @@
 ; A268605: a(1) = 0; a(n+1) is the smallest integer in which the difference between its digits sum and the a(n) digits sum is equal to the n-th prime.
 ; 0,2,5,19,89,1999,59999,4999999,599999999,199999999999,399999999999999,799999999999999999,8999999999999999999999,499999999999999999999999999,29999999999999999999999999999999,4999999999999999999999999999999999999,3999999999999999999999999999999999999999999,8999999999999999999999999999999999999999999999999,69999999999999999999999999999999999999999999999999999999,1999999999999999999999999999999999999999999999999999999999999999,99999999999999999999999999999999999999999999999999999999999999999999999
-; Formula: a(n) = A071061(A007504(n-1)+1)-1
+; Formula: a(n) = truncate(10^truncate((b(n-1)-1)/9))*(-9*truncate((b(n-1)-1)/9)+b(n-1))-1, b(n) = b(n-1)+c(n-1), b(1) = 3, b(0) = 1, c(n) = A159477(c(n-1)+1), c(1) = 3, c(0) = 2
 
 #offset 1
 
+mov $3,1
+mov $4,2
 sub $0,1
-seq $0,7504 ; Sum of the first n primes.
-add $0,1
-seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
+lpb $0
+  sub $0,1
+  add $3,$4
+  add $4,1
+  seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$3
+sub $0,1
+mov $1,$0
+mod $1,9
+add $1,1
+div $0,9
+mov $2,10
+pow $2,$0
+mov $0,$1
+mul $0,$2
 sub $0,1

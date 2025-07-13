@@ -14,12 +14,35 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
-  seq $4,106476 ; Sequence array of Euler phi function.
-  add $0,1
-  seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
-  mul $0,$4
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  add $6,1
+  bin $6,2
+  sub $0,1
+  sub $4,$6
+  sub $4,1
+  sub $5,$4
+  add $5,1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $8,$0
+  mul $8,8
+  add $8,1
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  sub $0,$8
+  mov $4,$5
+  mov $7,$0
+  add $7,1
+  seq $7,40 ; The prime numbers.
+  mov $0,$7
+  mul $0,$5
   add $1,$0
 lpe
 mov $0,$1

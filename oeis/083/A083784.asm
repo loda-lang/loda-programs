@@ -20,9 +20,13 @@ add $4,1
 pow $4,2
 lpb $4
   mov $5,$3
+  add $5,2
+  mov $10,$5
+  seq $10,40 ; The prime numbers.
+  div $10,2
+  mov $5,$10
+  mul $5,2
   add $5,1
-  seq $5,154115 ; Numbers n such that n + 3 is prime.
-  add $5,3
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mul $5,3
   sub $5,1

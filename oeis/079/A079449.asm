@@ -1,4 +1,4 @@
-; A079449: Primes p such that there is at least one integer x satisfying p=x*tau(x)+1 where tau(x)=A000005(x), the number of divisors of x.
+; A079449: Primes p such that there is at least one integer x satisfying p = x*tau(x)+1 where tau(x) = A000005(x), the number of divisors of x.
 ; Submitted by entity
 ; 2,5,7,11,13,23,41,47,59,61,73,83,89,107,109,137,157,167,179,193,227,229,233,241,263,271,277,313,337,347,349,359,373,379,383,409,433,449,457,461,467,479,503,563,569,587,709,719,733,809,821,839,853,857,863
 

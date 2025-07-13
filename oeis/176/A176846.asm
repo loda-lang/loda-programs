@@ -7,7 +7,8 @@ sub $0,1
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,290080 ; a(1) = 0; for n > 1, a(n) = sigma(bigomega(n)).
+  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $0,$2
   add $1,1
 lpe

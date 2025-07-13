@@ -5,6 +5,4 @@
 dif $0,-2
 max $0,0
 add $0,1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

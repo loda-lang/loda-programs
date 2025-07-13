@@ -4,5 +4,29 @@
 
 #offset 1
 
-seq $0,24255 ; a(0)=0, a(n) = n*E(2n-1) for n >= 1, where E(n) = A000111(n) are the Euler (or up-down) numbers.
+mov $1,$0
+mov $3,0
+mov $6,0
+mov $7,0
+sub $0,1
+add $0,$1
+mov $2,1
+mov $5,$0
+lpb $0
+  sub $0,1
+  div $7,2
+  add $7,$3
+  mul $7,2
+  mov $3,$2
+  pow $3,$5
+  sub $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+gcd $0,$6
+mul $0,$1
 dir $0,4

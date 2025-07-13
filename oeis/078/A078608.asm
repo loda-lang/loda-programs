@@ -20,6 +20,7 @@ lpe
 mul $1,$0
 div $1,$2
 mov $0,$1
+mul $0,2
 add $0,1
-seq $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
+log $0,2
 sub $0,1

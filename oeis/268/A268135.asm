@@ -9,7 +9,8 @@ mov $3,$0
 pow $3,4
 lpb $3
   mov $1,$2
-  seq $1,4159 ; Sum of digits of n^2.
+  pow $1,2
+  dgs $1,10
   mov $4,$2
   dgs $4,10
   gcd $4,$1

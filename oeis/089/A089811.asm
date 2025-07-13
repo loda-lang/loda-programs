@@ -15,7 +15,10 @@ mov $3,-1
 pow $3,$0
 mov $5,2
 lpb $0
-  seq $0,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+  mov $6,$0
+  nrt $0,2
+  pow $0,2
+  equ $0,$6
   mul $0,8
   add $0,63
   div $5,2

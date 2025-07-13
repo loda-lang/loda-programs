@@ -1,11 +1,29 @@
 ; A078841: Main diagonal of the table of k-almost primes (A078840): a(n) = (n+1)-st integer that is an n-almost prime.
 ; Submitted by shiva
 ; 1,3,9,20,54,112,240,648,1344,2816,5760,12800,26624,62208,129024,270336,552960,1114112,2293760,4915200,9961472,20447232,47775744,96468992,198180864,411041792,830472192,1698693120,3422552064,7046430720,14763950080,30198988800,61203283968,124554051584,251255586816,532575944704,1073741824000,2233382993920,4696546738176,9483287789568,19481971654656,40407052320768,81363860455424,163277476724736,333976656936960,672901116198912,1354598325420032,2770769301995520,5770237022568448,11610842789314560
-; Formula: a(n) = truncate((A046314(n+1)*2^(n+10))/1048576)
 
 mov $1,$0
-add $1,1
-seq $1,46314 ; Numbers that are divisible by exactly 10 primes with multiplicity.
+add $1,6
+mov $4,8
+pow $4,$1
+mov $6,12
+mov $3,48
+lpb $4
+  mov $5,$3
+  add $5,2
+  seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $5,3
+  equ $5,7
+  sub $1,$5
+  add $3,$6
+  mov $6,$1
+  max $6,6
+  equ $6,$1
+  mul $4,$6
+  sub $4,1
+lpe
+mov $1,$3
+add $1,2
 add $0,10
 mov $2,2
 pow $2,$0

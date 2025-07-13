@@ -5,4 +5,16 @@
 #offset 1
 
 dir $0,2
-seq $0,87780 ; Number of non-congruent solutions to x^2 == 2 mod n.
+mov $1,0
+mov $2,$0
+lpb $0
+  mov $3,$0
+  sub $0,1
+  pow $3,2
+  sub $3,3
+  sub $3,$0
+  mod $3,$2
+  equ $3,$0
+  add $1,$3
+lpe
+mov $0,$1

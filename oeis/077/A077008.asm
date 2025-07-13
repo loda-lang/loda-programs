@@ -1,12 +1,13 @@
 ; A077008: Legendre symbol (-1,p) where p is the n-th prime.
 ; Submitted by nenym
 ; -1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,-1,1,-1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,-1,1,1,-1,-1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,1,-1
-; Formula: a(n) = binomial(-1,A097932(n-1))
+; Formula: a(n) = binomial(-1,truncate(A000040(n)/2)+10)
 
 #offset 2
 
-sub $0,1
-seq $0,97932 ; Positive integers n such that 2n-19 is prime.
+seq $0,40 ; The prime numbers.
+div $0,2
+add $0,10
 mov $1,-1
 bin $1,$0
 mov $0,$1

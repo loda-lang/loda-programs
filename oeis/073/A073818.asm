@@ -15,8 +15,27 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-  seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mul $4,8
+  nrt $4,2
+  add $4,3
+  div $4,2
+  bin $4,2
+  add $4,1
+  sub $4,$0
+  mov $5,$0
+  sub $0,1
+  mov $7,$0
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
+  mov $6,$0
+  add $6,1
+  seq $6,40 ; The prime numbers.
+  mov $0,$6
   mul $0,$4
   trn $1,$0
   add $1,$0

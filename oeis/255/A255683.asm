@@ -1,4 +1,4 @@
-; A255683: Sum of the binary numbers whose digits are cyclic permutations of the binary expansion of n
+; A255683: Sum of the binary numbers whose digits are cyclic permutations of the binary expansion of n.
 ; Submitted by Jamie Morken(s3)
 ; 1,3,6,7,14,14,21,15,30,30,45,30,45,45,60,31,62,62,93,62,93,93,124,62,93,93,124,93,124,124,155,63,126,126,189,126,189,189,252,126,189,189,252,189,252,252,315,126,189,189,252,189,252,252,315,189,252,252,315,252,315,315,378,127,254,254,381,254,381,381,508,254,381,381,508,381,508,508,635,254
 

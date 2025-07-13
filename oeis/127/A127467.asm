@@ -1,7 +1,7 @@
 ; A127467: Mobius transform of A127466.
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,0,6,2,2,0,8,4,0,0,0,20,2,4,6,0,0,12,6,0,0,0,0,0,42,4,4,0,8,0,0,0,32,6,0,12,0,0,0,0,0,54,4,8,0,0,20,0,0,0,0,40
-; Formula: a(n) = A054526(n-1)*truncate(A319998(2*A126988(n))/2)*(A002262(n-1)+1)
+; Formula: a(n) = A054526(n-1)*truncate(A319998(2*A126988(n))/2)*(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)
 
 #offset 1
 
@@ -14,6 +14,13 @@ sub $0,1
 mov $1,$0
 seq $1,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
 mul $1,$2
-seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+mov $3,$0
+mul $3,8
+add $3,1
+nrt $3,2
+add $3,1
+div $3,2
+bin $3,2
 add $0,1
+sub $0,$3
 mul $0,$1

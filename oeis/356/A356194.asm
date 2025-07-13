@@ -11,9 +11,12 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,112622 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = product_{p|n} b(p,n)^b(p,n).
-  seq $3,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
+  dir $3,4
+  mov $4,1
+  sub $4,$3
+  pow $4,$4
   add $1,$0
   add $1,1
-  add $2,$3
+  add $2,$4
 lpe
 mov $0,$1

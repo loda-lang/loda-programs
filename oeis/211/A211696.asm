@@ -16,7 +16,14 @@ lpb $4
   sub $0,1
   mov $5,$0
   max $5,0
-  seq $5,60719 ; a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).
+  add $5,1
+  mov $6,$5
+  mul $6,2
+  seq $6,188164 ; Number of palindromic structures of length n.
+  sub $6,1
+  mov $5,$6
+  mul $5,2
+  add $5,1
   mov $0,$5
   div $0,2
   add $0,1

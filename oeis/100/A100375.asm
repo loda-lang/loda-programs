@@ -3,5 +3,6 @@
 
 #offset 1
 
-seq $0,1223 ; Prime gaps: differences between consecutive primes.
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.
 dir $0,2

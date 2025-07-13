@@ -18,8 +18,25 @@ lpb $2
   sub $5,1
   mov $3,$1
   add $3,$5
+  add $3,2
+  mov $8,$3
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $10,$8
+  add $10,1
+  bin $10,2
+  sub $3,$10
+  sub $3,2
+  mov $7,$8
+  sub $7,1
+  bin $7,$3
   add $3,1
-  seq $3,29635 ; The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
+  mov $9,$8
+  bin $9,$3
+  add $9,$7
+  mov $3,$9
   equ $3,2
   sub $0,$3
   add $1,1

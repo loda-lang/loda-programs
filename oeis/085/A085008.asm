@@ -10,7 +10,16 @@ sub $0,1
 lpb $0
   mov $3,$0
   add $3,1
-  seq $3,85006 ; Let S(0)={1,1,2} S(n)={S(n-1), S(n-1)-{x},{3-x}} where x is the last element of S(n-1), then sequence is S(infinity).
+  mov $4,$3
+  mod $3,3
+  mov $5,$3
+  equ $5,0
+  lex $4,2
+  add $4,3
+  mod $4,2
+  mul $4,$5
+  mov $3,1
+  add $3,$4
   sub $0,1
   add $2,$3
 lpe

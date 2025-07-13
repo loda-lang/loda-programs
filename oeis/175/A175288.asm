@@ -1,4 +1,4 @@
-; A175288: Decimal expansion of the constant x satisfying (cos(x))^2 = sin(x).
+; A175288: Decimal expansion of the minimal positive constant x satisfying (cos(x))^2 = sin(x).
 ; Submitted by Jave808
 ; 6,6,6,2,3,9,4,3,2,4,9,2,5,1,5,2,5,5,1,0,4,0,0,4,8,9,5,9,7,7,7,9,2,7,2,0,6,6,7,4,9,0,1,3,8,7,2,5,9,4,7,8,4,2,8,3,1,4,7,3,8,4,2,8,0,3,9,7,8,9,8,9,3,7,9,0,5,9,2,8
 

@@ -5,9 +5,7 @@
 #offset 1
 
 seq $0,79695 ; Values never taken by phi(j)/2 for any j: a(n) = A005277(n)/2.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2
 mul $0,2
 add $0,1

@@ -3,5 +3,25 @@
 
 #offset 1
 
-seq $0,65383 ; a(n) = smallest prime >= n*(n + 1)/2.
+add $0,1
+bin $0,2
+trn $0,1
+mov $1,$0
+equ $1,0
+add $1,$0
+mov $2,0
+mov $3,$1
+mov $4,$1
+lpb $4
+  sub $4,1
+  mov $5,$3
+  add $5,1
+  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $3,1
+  add $4,$5
+lpe
+mov $1,$3
+add $1,1
+add $2,$1
+mov $0,$2
 dir $0,2

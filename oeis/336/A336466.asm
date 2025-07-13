@@ -3,5 +3,15 @@
 
 #offset 1
 
-seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
+mov $1,1
+sub $0,1
+lpb $0
+  mov $2,$0
+  add $2,1
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+  sub $2,1
+  mul $1,$2
+lpe
+mov $0,$1
 dir $0,2

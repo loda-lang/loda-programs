@@ -11,8 +11,15 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  seq $0,54243 ; Number of partitions of n into distinct positive parts <= n, where parts are combined by XOR.
+  mov $4,$0
+  mul $4,2
+  add $4,1
+  log $4,2
+  sub $0,$4
+  mov $5,2
+  pow $5,$0
+  mov $0,$5
   mul $1,2
-  add $1,$0
+  add $1,$5
 lpe
 mov $0,$1

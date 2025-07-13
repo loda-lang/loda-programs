@@ -5,7 +5,18 @@ sub $1,$0
 mov $2,1
 lpb $0
   mov $3,$0
-  seq $3,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  add $3,1
+  mov $4,$3
+  mul $3,8
+  nrt $3,2
+  sub $3,1
+  div $3,2
+  mov $5,$3
+  add $5,1
+  bin $5,2
+  sub $4,$5
+  sub $4,1
+  bin $3,$4
   mod $3,2
   sub $0,1
   add $2,$3

@@ -1,7 +1,7 @@
 ; A086597: Number of primitive prime factors in Fibonacci(n).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,3,1,1,1,2,1,1,2,1,2,1,1,2,2,1,1,2,1,2,1,2,2,2,1,2,1,1,2,1,1,3,2,3,2,2,1,2,1,1,1,2,2,2,2
-; Formula: a(n) = A001221(truncate(A061446(n)/gcd(A000142(max(n-2,0)),A061446(n))))
+; Formula: a(n) = A001221(truncate(A061446(n)/gcd(max(n-2,0)!,A061446(n))))
 
 #offset 1
 

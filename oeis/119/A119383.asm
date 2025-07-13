@@ -1,9 +1,22 @@
 ; A119383: a(n) = n!- A088921(n).
 ; Submitted by Goldislops
 ; 0,0,0,1,11,87,640,4855,39909,361995,3626938,39912947,478993719,6227004807,87178258916,1307674303055,20922789757641,355687427834707,6402373705204718,121645100407784603,2432902008174544219
-; Formula: a(n) = -A088921(n)+(n!)
 
 mov $1,$0
-seq $1,88921 ; The number of 321- and 2143-avoiding permutations of length n.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-sub $0,$1
+add $1,1
+mov $2,$1
+mov $3,2
+pow $3,$1
+mov $4,$0
+bin $1,3
+add $1,$2
+sub $3,$1
+sub $3,$0
+mov $1,$3
+mov $5,1
+lpb $0
+  mul $5,$0
+  sub $0,1
+lpe
+mov $0,$5
+sub $0,$3

@@ -14,7 +14,21 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,79784 ; Triangle read by rows in which the n-th row contains the smallest set of n consecutive numbers such that the r-th number in the n-th row is divisible by n-r+1. The first term of the n-th row must exceed n.
-  add $1,$0
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $0,1
+  sub $0,$5
+  sub $0,$4
+  add $4,1
+  seq $4,79782 ; Final term of n-th row of triangle in A079784.
+  add $4,$0
+  mov $0,$4
+  add $1,$4
 lpe
 mov $0,$1

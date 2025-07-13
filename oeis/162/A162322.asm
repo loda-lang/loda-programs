@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,83794 ; Numbers n such that tau(n) is different from tau(n-1), where tau(m) = number of divisors of m.
+seq $0,83794 ; Numbers k such that tau(k) is different from tau(k-1), where tau(m) = number of divisors of m.
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

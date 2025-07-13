@@ -9,7 +9,16 @@ lpb $2
   mov $3,$1
   seq $3,7954 ; Product of decimal digits of n.
   trn $3,1
-  seq $3,82375 ; Irregular triangle read by rows: row n begins with n and decreases by 2 until 0 or 1 is reached, for n >= 0.
+  mul $3,2
+  add $3,1
+  mov $5,$3
+  mul $5,2
+  nrt $5,2
+  sub $3,$5
+  pow $5,2
+  div $5,2
+  sub $3,$5
+  mul $3,-1
   equ $3,2
   sub $0,$3
   add $1,1

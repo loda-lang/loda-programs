@@ -5,4 +5,5 @@
 #offset 1
 
 dir $0,2
-seq $0,279186 ; Maximal entry in n-th row of A279185.
+seq $0,11773 ; Variant of Carmichael's lambda function: a(p1^e1*...*pN^eN) = lcm((p1-1)*p1^(e1-1), ..., (pN-1)*pN^(eN-1)).
+seq $0,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).

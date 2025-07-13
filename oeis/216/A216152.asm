@@ -13,9 +13,10 @@ lpb $2
   add $2,1
   div $3,$2
   sub $2,$3
-  add $2,1
-  seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $2,1
+  mov $4,$2
+  seq $2,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  lex $4,$2
+  add $2,$4
   seq $2,205959 ; a(n) = n^omega(n)/rad(n).
   sub $0,1
   mul $1,$2

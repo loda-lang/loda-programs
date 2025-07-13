@@ -1,4 +1,4 @@
-; A169643: Numbers n such that neither composite(n)-+1 is composite.
+; A169643: Numbers k such that neither composite(k)+-1 is composite.
 ; Submitted by zombie67 [MM]
 ; 1,2,6,10,19,28,42,51,75,79,104,114,138,148,152,178,187,212,221,247,278,338,348,372,423,465,490,504,525,539,669,679,683,709,729,848,858,873,883,909,961,1028,1071,1080,1089,1104,1202,1221,1247,1251,1354,1363
 

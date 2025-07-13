@@ -1,4 +1,4 @@
-; A188068: [nr]-[kr]-[nr-kr], where r=sqrt(3), k=1, [ ]=floor.
+; A188068: a(n) = [n*r]-[k*r]-[n*r-k*r], where r=sqrt(3), k=1, [ ]=floor.
 ; Submitted by Science United
 ; 0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1
 ; Formula: a(n) = -2*truncate((sqrtint((sqrtint((n-1)*(3*n-3))+n+2)*(3*sqrtint((n-1)*(3*n-3))+3*n+6))+sqrtint((n-1)*(3*n-3))+n+2)/2)+sqrtint((sqrtint((n-1)*(3*n-3))+n+2)*(3*sqrtint((n-1)*(3*n-3))+3*n+6))+sqrtint((n-1)*(3*n-3))+n+2

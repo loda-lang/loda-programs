@@ -1,4 +1,4 @@
-; A244579: Numbers n with the property that the number of parts in the symmetric representation of sigma(n) equals the number of divisors of n.
+; A244579: Numbers k with the property that the number of parts in the symmetric representation of sigma(k) equals the number of divisors of k.
 ; Submitted by Kotenok2000
 ; 1,3,5,7,9,11,13,17,19,21,23,25,27,29,31,33,37,39,41,43,47,49,51,53,55,57,59,61,65,67,69,71,73,79,81,83,85,87,89,93,95,97,101,103,107,109,111,113,115,119,121,123,125,127,129,131,133,137,139,141,145
 

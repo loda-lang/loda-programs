@@ -9,10 +9,14 @@ lpb $2
   add $0,$2
   trn $0,1
   mov $3,$0
-  seq $3,70939 ; Length of binary representation of n.
+  max $3,1
+  log $3,2
+  add $3,1
   seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   mov $4,$0
-  seq $4,70939 ; Length of binary representation of n.
+  max $4,1
+  log $4,2
+  add $4,1
   sub $3,$4
   mov $5,2
   pow $5,$3

@@ -4,5 +4,9 @@
 
 trn $0,1
 add $0,1
-seq $0,163176 ; The n-th Minkowski number divided by the n-th factorial: a(n) = A053657(n)/n!.
+mov $1,$0
+seq $1,53657 ; a(n) = Product_{p prime} p^{ Sum_{k>=0} floor[(n-1)/((p-1)p^k)]}.
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+div $1,$0
+mov $0,$1
 dir $0,2

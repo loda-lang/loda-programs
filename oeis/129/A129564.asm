@@ -1,9 +1,33 @@
 ; A129564: A129360 * A000012.
 ; Submitted by PDW
 ; 1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1
-; Formula: a(n) = A340375(A331145(n))
 
 #offset 1
 
-seq $0,331145 ; Triangle read by rows: T(n,k) (n>=k>=1) = ceiling((n/k)*ceiling(n/k)).
-seq $0,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+add $1,1
+mov $2,$1
+sub $1,1
+div $1,$0
+add $1,1
+mul $2,$1
+sub $2,1
+div $2,$0
+mov $0,$2
+add $0,1
+dir $0,2
+add $0,1
+mov $4,$0
+add $4,$0
+bin $4,$0
+mov $0,$4
+mod $0,4
+div $0,2

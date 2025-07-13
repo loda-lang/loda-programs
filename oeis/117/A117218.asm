@@ -11,7 +11,9 @@ lpb $2
   mov $3,$1
   pow $3,2
   mov $5,$3
-  seq $5,55642 ; Number of digits in the decimal expansion of n.
+  max $5,1
+  log $5,10
+  add $5,1
   mod $3,$5
   equ $3,0
   sub $0,$3

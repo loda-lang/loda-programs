@@ -3,9 +3,7 @@
 
 lpb $0
   mul $0,2
-  lpb $0
-    dif $0,3
-  lpe
+  dir $0,3
   div $0,3
   add $1,10
 lpe

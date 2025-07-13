@@ -10,7 +10,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   max $3,$1
-  seq $3,39963 ; The period-doubling sequence A035263 repeated.
+  div $3,2
+  add $3,1
+  lex $3,2
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,6
   sub $2,$0

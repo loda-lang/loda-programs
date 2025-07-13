@@ -12,7 +12,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,83794 ; Numbers n such that tau(n) is different from tau(n-1), where tau(m) = number of divisors of m.
+  seq $0,83794 ; Numbers k such that tau(k) is different from tau(k-1), where tau(m) = number of divisors of m.
   mov $2,$3
   mul $2,$0
   add $1,$2

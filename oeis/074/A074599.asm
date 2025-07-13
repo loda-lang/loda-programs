@@ -1,4 +1,4 @@
-; A074599: Numerator of 2 * H(n,2,1), a generalized harmonic number. See A075135. Also 2 * A025550.
+; A074599: Numerator of 2 * H(n,2,1), a generalized harmonic number. See A075135. Also 2 * A350669.
 ; Submitted by Science United
 ; 2,8,46,352,1126,13016,176138,182144,3186538,62075752,63461422,1488711776,7577414602,23104065256,680057071574,21372905414144,21646396991594,21904260478904,819482859775298,828045249930848
 ; Formula: a(n) = 2*truncate((c(n)+d(n))/gcd(c(n),b(n))), b(n) = b(n-1)*(2*n-1), b(3) = 30, b(2) = 6, b(1) = 2, b(0) = 2, c(n) = c(n-1)*(2*n-1)+b(n-1), c(3) = 46, c(2) = 8, c(1) = 2, c(0) = 0, d(n) = d(n-1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0

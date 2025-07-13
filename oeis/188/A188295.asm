@@ -1,4 +1,4 @@
-; A188295: [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
+; A188295: a(n) = [n*r]-[n*r-r], where r=1/sqrt(2), [ ]=floor.
 ; Submitted by Science United
 ; 0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1
 ; Formula: a(n) = sqrtint(2*n^2)*sqrtint(2*(n-1)^2)-2*truncate((sqrtint(2*n^2)*sqrtint(2*(n-1)^2)+sqrtint(2*n^2)+1)/2)+sqrtint(2*n^2)+1

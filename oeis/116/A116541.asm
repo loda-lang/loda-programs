@@ -13,7 +13,19 @@ lpb $2
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $3,1
-  seq $3,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  add $6,1
+  gcd $6,$3
+  div $6,$3
+  mul $3,$6
   neq $3,1
   equ $3,0
   sub $5,1

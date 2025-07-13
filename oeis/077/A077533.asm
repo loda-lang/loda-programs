@@ -13,7 +13,9 @@ lpb $2
   mul $3,3
   mov $5,$3
   seq $5,193238 ; Number of prime digits in decimal representation of n.
-  seq $3,55642 ; Number of digits in the decimal expansion of n.
+  max $3,1
+  log $3,10
+  add $3,1
   sub $3,$5
   equ $3,0
   sub $0,$3

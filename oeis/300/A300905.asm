@@ -1,5 +1,5 @@
 ; A300905: a(n) = n^sigma(n) mod sigma(n)^n.
-; Submitted by BrandyNOW
+; Submitted by fzs600
 ; 0,8,17,1978,73,0,1570497,1009588832,7390478182,1391503283200,166394893969,151448237549551616,762517292682713,18685202394240778240,814227337406354049,187036938412352867328077,947615093635545799201,2095989269871299377743863001
 
 #offset 1
@@ -12,14 +12,7 @@ seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(
 mov $2,$0
 bxo $2,$4
 mul $2,$3
-mov $1,$0
-sub $1,1
-mov $6,$0
-dir $6,2
-seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $5,$0
-bxo $5,$1
-mul $5,$6
-pow $5,$0
+mov $1,$2
+pow $1,$0
 pow $0,$2
-mod $0,$5
+mod $0,$1

@@ -1,4 +1,4 @@
-; A076645: Counts the ways to write 0 as 1 +- 2 +- 3 +- 4 +- ... +- k for some k, where signs alternate except that there is one instance of two consecutive positive terms.
+; A076645: Irregular triangle read by rows of ways to write 0 as 1 +- 2 +- 3 +- 4 +- ... +- k for some k, where signs alternate except that there is one instance of two consecutive positive terms.
 ; Submitted by Simon Strandgaard
 ; 1,2,-3,1,-2,3,4,-5,6,-7,1,-2,3,-4,5,6,-7,8,-9,10,-11,1,-2,3,-4,5,-6,7,8,-9,10,-11,12,-13,14,-15,1,-2,3,-4,5,-6,7,-8,9,10,-11,12,-13,14,-15,16,-17,18,-19,1,-2,3,-4,5,-6,7,-8,9,-10,11,12,-13,14,-15,16,-17,18,-19,20,-21,22,-23,1,-2
 

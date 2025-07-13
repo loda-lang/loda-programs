@@ -12,7 +12,24 @@ lpb $3
   add $0,$3
   add $0,$2
   add $0,1
-  seq $0,129372 ; Triangle read by rows: T(n,k) = 1 if k divides n and n/k is odd, T(n,k) = 0 otherwise.
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  add $6,1
+  bin $6,2
+  sub $0,$6
+  add $4,1
+  mov $5,$4
+  sub $4,1
+  div $4,$0
+  add $4,1
+  div $5,$0
+  mul $5,$4
+  mov $0,$5
+  mod $0,2
   mov $2,$3
   mul $2,$1
 lpe

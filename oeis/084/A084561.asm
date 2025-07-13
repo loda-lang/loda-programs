@@ -9,7 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $3,1
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $3,2
   sub $3,1
   seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
   equ $3,1

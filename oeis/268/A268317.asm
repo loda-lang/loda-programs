@@ -7,7 +7,15 @@ trn $0,1
 mov $4,$0
 mov $3,3
 lpb $3
-  seq $4,5378 ; The female of a pair of recurrences.
+  add $4,1
+  mov $6,0
+  sub $6,$4
+  pow $4,2
+  add $4,2
+  mul $4,5
+  nrt $4,2
+  add $4,$6
+  div $4,2
   sub $0,$4
   add $2,1
   mov $5,$0

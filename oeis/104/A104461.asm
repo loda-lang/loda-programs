@@ -10,9 +10,10 @@ mul $1,-2
 add $0,1
 div $1,$0
 sub $0,$1
-add $0,1
-seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-sub $0,1
+mov $3,$0
+seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+lex $3,$0
+add $0,$3
 mov $2,$0
 seq $2,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
 seq $2,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.

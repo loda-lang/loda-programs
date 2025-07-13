@@ -1,8 +1,22 @@
 ; A264974: Self-inverse permutation of natural numbers: a(n) = A263273(4*n) / 4.
 ; Submitted by mmonnin
 ; 0,1,2,3,4,5,6,7,16,9,10,19,12,13,14,15,8,17,18,11,20,21,34,43,48,25,52,27,28,55,30,37,46,57,22,49,36,31,58,39,40,41,42,23,50,45,32,59,24,35,44,51,26,53,54,29,56,33,38,47,60,61,142,63,88,169,102,115,124,129,70,151,144,97,178,75,106,133,156,79
-; Formula: a(n) = truncate(A263272(2*n)/2)
 
 mul $0,2
-seq $0,263272 ; Self-inverse permutation of nonnegative integers: a(n) = A263273(2*n) / 2.
+mov $1,$0
+mov $3,0
+mul $0,2
+lpb $0
+  mov $4,$0
+  mod $4,3
+  div $0,3
+  mul $3,3
+  add $3,$4
+lpe
+lex $1,3
+mov $0,$3
+div $0,2
+mov $2,3
+pow $2,$1
+mul $0,$2
 div $0,2

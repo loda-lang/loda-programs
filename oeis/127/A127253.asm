@@ -27,5 +27,21 @@ mul $3,$2
 mov $1,$3
 mod $1,3
 dif $1,-2
-seq $0,127247 ; A Thue-Morse falling factorial triangle.
+mov $5,$0
+add $5,1
+mov $7,$5
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $6,$7
+add $6,1
+bin $6,2
+sub $5,$6
+bin $7,$5
+dif $7,2
+bin $5,$7
+dgs $5,2
+mod $5,2
+mov $0,$5
 mul $0,$1

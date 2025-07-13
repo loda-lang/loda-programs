@@ -16,7 +16,16 @@ lpb $2
   add $5,1
   seq $5,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
   mov $3,$5
-  seq $3,82375 ; Irregular triangle read by rows: row n begins with n and decreases by 2 until 0 or 1 is reached, for n >= 0.
+  mul $3,2
+  add $3,1
+  mov $6,$3
+  mul $6,2
+  nrt $6,2
+  sub $3,$6
+  pow $6,2
+  div $6,2
+  sub $3,$6
+  mul $3,-1
   equ $3,2
   sub $0,$3
   add $1,1

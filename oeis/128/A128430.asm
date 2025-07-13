@@ -11,10 +11,22 @@ lpb $0
   max $2,0
   mov $3,$2
   add $3,1
-  seq $3,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
+  mov $5,$3
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $4,$5
+  add $4,1
+  bin $4,2
+  sub $3,$4
+  add $5,1
+  gcd $5,$3
+  div $5,$3
   add $2,1
   seq $2,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
-  mul $2,$3
+  mul $2,$5
+  mov $3,$5
   sub $1,$2
 lpe
 add $1,1

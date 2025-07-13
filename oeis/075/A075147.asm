@@ -19,7 +19,19 @@ lpb $4
   sub $2,$4
   mov $1,$2
   seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  seq $2,76112 ; Triangle (read by rows) in which the n-th row contains first n terms of n geometric progression with first term 1 and common ratio (n-1).
+  sub $2,1
+  mov $8,$2
+  mul $8,8
+  add $8,1
+  nrt $8,2
+  add $8,1
+  div $8,2
+  mov $7,$8
+  bin $8,2
+  mov $6,$2
+  sub $6,$8
+  pow $7,$6
+  mov $2,$7
   mul $2,$1
   add $3,$2
 lpe

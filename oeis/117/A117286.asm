@@ -17,7 +17,23 @@ lpb $2
   mov $3,$1
   sub $3,$5
   trn $3,1
-  seq $3,104583 ; Triangle read by rows: T(i,j) is the (i,j)-entry (1 <= j <= i) of the product A*B of the matrices A = [1; 3,1; 5,3,1; 7,5,3,1; ...]; B = [1; 1,2; 1,2,1; 1,2,1,2; ...] (both infinite lower triangular matrices).
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $3,$8
+  sub $3,1
+  sub $7,$3
+  add $7,1
+  mod $3,2
+  add $3,1
+  mul $3,$7
+  mul $3,$7
   equ $3,1
   sub $0,$3
   add $1,1

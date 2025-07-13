@@ -16,10 +16,14 @@ lpb $2
   mov $0,$5
   add $0,1
   equ $0,4
+  mul $0,4
+  mov $6,$0
+  dgs $0,4
+  sub $6,$0
+  div $6,3
+  mov $0,$6
   add $0,1
-  seq $0,120518 ; a(n) = min{j : A120507(j) = n}.
-  mov $3,$0
-  sub $3,1
-  add $1,$3
+  add $1,$6
+  mov $3,$6
 lpe
 mov $0,$1

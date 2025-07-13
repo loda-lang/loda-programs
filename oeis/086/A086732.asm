@@ -15,7 +15,19 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
-  seq $0,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
+  sub $0,1
+  mov $6,$0
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $0,$6
+  add $0,1
+  mov $5,$0
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $0,$5
   mul $0,$4
   add $1,$0
 lpe

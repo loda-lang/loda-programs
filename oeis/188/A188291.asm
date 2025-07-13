@@ -1,14 +1,21 @@
 ; A188291: [nr+kr]-[nr]-[kr], where r=sqrt(5), k=5, [ ]=floor.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+; Formula: a(n) = -sqrtint(5*n^2)-n-2*truncate((-sqrtint(5*n^2)-n+sqrtint(5*(sqrtint(5*n^2)+n+4)^2+n-2)-4)/2)+sqrtint(5*(sqrtint(5*n^2)+n+4)^2+n-2)-4
 
 #offset 1
 
-lpb $0
-  add $0,$2
-  mov $2,$1
-  add $2,1
-  seq $2,188292 ; Positions of 0 in A188291; complement of A188293.
-  sub $0,$2
-  add $1,1
-lpe
+mov $1,$0
+pow $0,2
+mul $0,5
+nrt $0,2
+add $0,$1
+add $0,4
+sub $1,2
+mov $2,$0
+pow $0,2
+mul $0,5
+add $0,$1
+nrt $0,2
+sub $0,$2
+mod $0,2

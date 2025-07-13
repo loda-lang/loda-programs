@@ -4,8 +4,6 @@
 
 #offset 1
 
-lpb $0
-  dif $0,5
-lpe
+dir $0,5
 seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
 add $0,1

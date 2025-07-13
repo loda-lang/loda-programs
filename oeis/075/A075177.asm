@@ -12,10 +12,20 @@ lpb $2
   mul $3,2
   max $3,1
   mov $5,$3
-  add $5,1
-  seq $5,93515 ; Numbers k such that either k or k-1 is a prime.
-  mov $3,$5
-  sub $3,1
+  sub $5,1
+  mov $6,$5
+  div $5,2
+  add $5,2
+  mov $7,$5
+  seq $7,40 ; The prime numbers.
+  sub $5,4
+  sub $7,$5
+  sub $7,$5
+  add $6,$7
+  mov $5,$6
+  sub $5,4
+  mov $3,$6
+  sub $3,5
   dgs $3,10
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2

@@ -10,8 +10,12 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
-  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  add $3,3
+  mov $5,$3
+  seq $3,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  lex $5,$3
+  add $3,$5
+  add $3,1
   add $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1

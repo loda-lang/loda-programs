@@ -21,8 +21,27 @@ lpb $4
   sub $0,$4
   mov $6,$0
   seq $6,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,322252 ; a(0) = 1 and a(n) = (5*n)!/(5!*n!^5) for n > 0.
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
+  max $0,1
+  mov $8,$0
+  mov $9,$0
+  mul $9,3
+  mov $10,5
+  mul $10,$0
+  bin $10,$9
+  bin $9,$0
+  mul $9,$10
+  mul $0,2
+  bin $0,$8
+  pow $0,2
+  mul $0,$9
+  div $0,120
   mul $0,$6
   add $3,$0
 lpe

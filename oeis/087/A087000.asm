@@ -11,9 +11,13 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $6,$1
+  add $6,2
+  mov $7,$6
+  seq $7,40 ; The prime numbers.
+  div $7,2
+  mov $6,$7
+  mul $6,2
   add $6,1
-  seq $6,154115 ; Numbers n such that n + 3 is prime.
-  add $6,3
   seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$6
   seq $3,69531 ; Smallest positive k such that 10^k + 1 is divisible by n, or 0 if no such number exists.

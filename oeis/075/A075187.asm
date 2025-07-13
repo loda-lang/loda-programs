@@ -4,7 +4,21 @@
 
 mov $1,$0
 add $0,1
-seq $0,112002 ; Seventh diagonal of triangle A008275 (Stirling1) and seventh column of |A008276|.
+mov $2,63
+mul $2,$0
+add $2,1575
+mul $2,$0
+add $2,15435
+mul $2,$0
+add $2,73801
+mul $2,$0
+add $2,171150
+mul $2,$0
+add $2,152696
+add $0,6
+bin $0,7
+mul $0,$2
+div $0,576
 add $1,1
 lpb $1
   mul $0,$1

@@ -8,7 +8,16 @@ mov $1,$0
 lpb $1
   mov $2,$1
   add $2,1
-  seq $2,204255 ; Symmetric matrix given by f(i,j)=1+[(i+j) mod 4].
+  mov $4,$2
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $3,$4
+  add $3,2
+  mod $3,4
+  mov $2,$3
+  add $2,1
   add $0,$2
   add $1,$2
   sub $1,4

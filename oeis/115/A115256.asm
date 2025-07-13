@@ -8,7 +8,7 @@ lpb $0
   sub $0,3
   mov $2,$0
   max $2,0
-  seq $2,106183 ; Expansion of 1/sqrt(1-4x-4x^2+16x^3).
+  seq $2,106183 ; Expansion of 1/sqrt(1-4*x-4*x^2+16*x^3).
   add $1,$2
 lpe
 mov $0,$1

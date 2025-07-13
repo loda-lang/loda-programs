@@ -6,7 +6,27 @@ dir $0,3
 mul $0,2
 trn $0,1
 add $0,1
-seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
+mov $3,$0
+mov $4,2
+mov $5,$0
+lpb $5
+  sub $5,2
+  mov $0,$3
+  sub $0,$5
+  mov $1,$0
+  mov $2,$0
+  gcd $2,$5
+  bin $2,$0
+  add $0,1
+  mul $0,$2
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $0,$1
+  add $0,1
+  mul $0,$4
+  mul $2,$0
+  max $4,$2
+lpe
+mov $0,$4
 sub $0,2
 div $0,3
 mod $0,3

@@ -12,7 +12,16 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,217394 ; Numbers starting with 2.
+  mov $6,$3
+  mul $6,9
+  log $6,10
+  mov $7,10
+  pow $7,$6
+  add $3,$7
+  add $3,$7
+  div $7,9
+  add $7,1
+  sub $3,$7
   mov $5,$3
   add $5,2
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.

@@ -9,8 +9,25 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
-  add $5,2
-  seq $5,57963 ; Triangle T(n,k) of number of minimal 2-covers of a labeled n-set that cover k points of that set uniquely (k=2,..,n).
+  add $5,1
+  mov $6,$5
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $5,$8
+  add $5,1
+  mov $7,2
+  pow $7,$5
+  sub $7,2
+  add $6,2
+  bin $6,$5
+  mul $6,$7
+  mov $5,$6
+  div $5,2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.

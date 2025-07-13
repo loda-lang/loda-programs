@@ -4,8 +4,6 @@
 
 mul $0,4
 add $0,2
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 mod $0,3
 mod $0,2

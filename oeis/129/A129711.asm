@@ -2,8 +2,17 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,2,1,3,2,5,2,1,8,3,2,13,5,2,1,21,8,3,2,34,13,5,2,1,55,21,8,3,2,89,34,13,5,2,1,144,55,21,8,3,2,233,89,34,13,5,2,1,377,144,55,21,8,3,2,610,233,89,34,13,5,2,1,987,377,144,55,21,8,3,2,1597,610,233,89,34,13,5,2
 
+mul $0,2
+add $0,1
 mov $1,1
-seq $0,82375 ; Irregular triangle read by rows: row n begins with n and decreases by 2 until 0 or 1 is reached, for n >= 0.
+mov $5,$0
+mul $5,2
+nrt $5,2
+sub $0,$5
+pow $5,2
+div $5,2
+sub $0,$5
+mul $0,-1
 lpb $0
   sub $0,1
   add $3,$2

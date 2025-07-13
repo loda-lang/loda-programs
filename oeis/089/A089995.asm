@@ -16,7 +16,14 @@ lpb $2
   mul $7,$8
   seq $7,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $7,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
-  seq $7,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
+  dir $7,2
+  add $7,1
+  mov $9,$7
+  add $9,$7
+  bin $9,$7
+  mov $7,$9
+  mod $7,4
+  div $7,2
   mov $3,$1
   add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

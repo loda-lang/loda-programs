@@ -14,7 +14,16 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,157454 ; Triangle read by rows: T(n, m) = min(2*m - 1, 2*(n - m) + 1).
+  sub $0,1
+  mul $0,2
+  mov $4,$0
+  nrt $4,2
+  mov $5,$4
+  add $4,1
+  mul $5,$4
+  sub $0,$5
+  add $0,1
+  gcd $0,0
   div $0,2
   add $0,1
   seq $0,6005 ; The odd prime numbers together with 1.
