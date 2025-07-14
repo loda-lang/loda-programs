@@ -1,11 +1,16 @@
 ; A144570: Nonprime(prime(n)).
-; Submitted by Jon Maiga
+; Submitted by modesti
 ; 1,4,8,10,16,20,25,27,33,40,44,51,56,58,64,72,80,82,90,94,96,105,111,118,126,132,134,140,142,146,164,169,176,178,190,194,202,208,213,219,226,230,243,245,249,252,266,282,287,289,294,300,302,315,322,328,335
+; Formula: a(n) = A122825(2*truncate((A000040(n)+1)/2))-1
 
 #offset 1
 
-seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
-seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-lex $1,$0
-add $0,$1
+seq $1,40 ; The prime numbers.
+add $1,1
+div $1,2
+mul $1,2
+seq $1,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $1,1
+sub $0,1
+mov $0,$1

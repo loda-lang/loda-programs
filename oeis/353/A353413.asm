@@ -7,5 +7,4 @@
 mul $0,2
 sub $0,1
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
-mul $0,2
 dir $0,2

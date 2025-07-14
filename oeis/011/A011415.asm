@@ -6,11 +6,11 @@
 
 sub $0,1
 mov $5,14
+mov $7,1
 mov $3,$0
 mul $3,8
 lpb $3
   sub $3,2
-  sub $4,$13
   add $6,$4
   add $6,$2
   add $7,$9
@@ -27,10 +27,8 @@ lpb $3
   sub $9,$8
   sub $10,$9
   add $11,$5
-  sub $13,$11
   add $4,$5
   add $4,$11
-  mov $9,1
   add $12,$10
   sub $12,15
   sub $7,$8

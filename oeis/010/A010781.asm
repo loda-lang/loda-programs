@@ -7,7 +7,7 @@
 sub $0,1
 mov $5,14
 mov $3,$0
-mul $3,8
+mul $3,7
 lpb $3
   sub $3,2
   sub $13,$17

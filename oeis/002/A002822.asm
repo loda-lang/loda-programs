@@ -1,33 +1,32 @@
 ; A002822: Numbers m such that 6m-1, 6m+1 are twin primes.
-; Submitted by Science United
+; Submitted by Coleslaw
 ; 1,2,3,5,7,10,12,17,18,23,25,30,32,33,38,40,45,47,52,58,70,72,77,87,95,100,103,107,110,135,137,138,143,147,170,172,175,177,182,192,205,213,215,217,220,238,242,247,248,268,270,278,283,287,298,312,313,322,325,333,338,347,348,352,355,357,373,378,385,390,397,425,432,443,448,452,455,465,467,495
 
 #offset 1
 
-sub $0,1
-mov $1,-1
-mov $2,$0
-add $2,8
-pow $2,4
-lpb $2
-  mov $3,$6
-  add $3,3
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  equ $5,2
-  sub $5,1
+mov $1,$0
+sub $1,1
+max $2,$1
+mov $4,$2
+add $2,1
+mov $5,$2
+pow $5,4
+lpb $5
+  mov $3,$7
+  mul $3,3
+  add $3,1
+  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  bin $3,2
+  sub $4,$3
+  add $4,1
   add $6,1
-  mul $3,$6
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $5,$1
-  mul $2,$4
-  sub $2,18
-  mov $6,$5
+  add $7,$6
+  mov $6,$4
+  max $6,0
+  equ $6,$4
+  sub $4,$6
+  sub $5,$6
 lpe
-mov $0,$1
-div $0,6
+mov $0,$7
+div $0,2
 add $0,1

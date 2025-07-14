@@ -1,10 +1,21 @@
 ; A004011: Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-; Submitted by BrandyNOW
+; Submitted by DukeBox
 ; 1,24,24,96,24,144,96,192,24,312,144,288,96,336,192,576,24,432,312,480,144,768,288,576,96,744,336,960,192,720,576,768,24,1152,432,1152,312,912,480,1344,144,1008,768,1056,288,1872,576,1152,96,1368,744,1728,336,1296,960,1728,192,1920,720,1440,576,1488,768,2496,24,2016,1152,1632,432,2304,1152,1728,312,1776,912,2976,480,2304,1344,1920
 
-equ $1,$0
-mul $1,23
-dir $0,2
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mul $0,24
+mul $0,2
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
+  mov $2,$3
+  mul $2,$0
+  add $4,$2
+lpe
+min $1,1
+mul $1,$0
+mov $0,$4
 sub $0,$1

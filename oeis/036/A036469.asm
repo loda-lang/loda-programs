@@ -1,18 +1,15 @@
 ; A036469: Partial sums of A000009 (partitions into distinct parts).
-; Submitted by happywetter.at
+; Submitted by Ralfy
 ; 1,2,3,5,7,10,14,19,25,33,43,55,70,88,110,137,169,207,253,307,371,447,536,640,762,904,1069,1261,1483,1739,2035,2375,2765,3213,3725,4310,4978,5738,6602,7584,8697,9957,11383,12993,14809,16857,19161,21751,24661,27925,31583,35680,40262,45382,51100,57478,64586,72503,81311,91103,101983,114059,127453,142301,158745,176945,197077,219327,243903,271033,300960,333952,370304,410330,454376,502822,556072,614571,678805,749293
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  div $2,2
-  seq $2,70 ; a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
-  add $1,$2
-  mov $3,1
-  add $3,$4
-  add $4,1
+mov $2,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$2
+  sub $0,$1
+  seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

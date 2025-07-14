@@ -4,10 +4,10 @@
 
 #offset 1
 
+mov $1,1
 mov $2,$0
-mul $2,$0
-add $2,2
-pow $2,2
+add $2,1
+pow $2,4
 lpb $2
   mov $5,$1
   seq $5,40 ; The prime numbers.
