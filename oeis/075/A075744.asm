@@ -1,0 +1,34 @@
+; A075744: Hierarchies of hierarchies.
+; Submitted by Athlici
+; 1,1,5,36,338,3898,53173,835992,14864340,294606273,6434871231,153473830678,3966604562709,110386840008838,3289768253831145,104502173165838799,3523895395660532937,125689588963370029163,4726867751402704638366,186902021178952943036080,7750251360089303492887228,336264819325916310327765739,15233729539923898947325891756,719226749867749759597131940452,35326927314308437674285322417075,1802326421261807548399707205897131,95369587286824866582953522523235462,5226905034868683494334913301866266913
+
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $5,2
+  max $6,1
+  mov $4,$2
+  lpb $4
+    mov $8,$4
+    trn $8,1
+    seq $8,75729 ; Number of different hierarchical orderings that can be formed from n labeled elements: these are divided into groups and the elements in each group are then arranged in a "preferential arrangement" or "weak order" as in A000670.
+    mov $9,10
+    add $9,$5
+    sub $4,1
+    mul $7,$1
+    add $7,$0
+    add $7,$4
+    sub $7,1
+    bin $7,$0
+    mul $7,$$9
+    mul $7,$8
+    add $5,1
+    add $6,$7
+  lpe
+  sub $6,$3
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+mov $0,$3
