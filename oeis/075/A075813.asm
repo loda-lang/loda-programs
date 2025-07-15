@@ -1,9 +1,10 @@
 ; A075813: Palindromic even numbers with exactly 2 prime factors (counted with multiplicity). Equivalently, palindromic numbers of the form 2*p with p prime.
-; Submitted by Goldislops
+; Submitted by Science United
 ; 4,6,22,202,262,454,626,818,838,878,898,20302,20602,22322,22522,22622,22822,24142,24842,26662,26762,28682,41014,41414,41614,41714,43034,43234,43534,43634,45454,45554,45754,47074,47374,47774,49094,49394
 
 #offset 1
 
+mov $1,2
 mov $2,$0
 sub $0,1
 mul $2,10

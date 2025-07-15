@@ -1,28 +1,19 @@
 ; A306759: Decimal expansion of the sum of reciprocals of Brazilian primes, also called the Brazilian primes constant.
-; Submitted by BrandyNOW
+; Submitted by Eric
 ; 3,3,1,7,5,4,4,6,6
-; Formula: a(n) = -10*truncate((-10*truncate((truncate((7525*n-(18879*(n+4)^3)^2-12*n^7-1533*n^5+36)/2520)-1)/10)+truncate((7525*n-(18879*(n+4)^3)^2-12*n^7-1533*n^5+36)/2520)+9)/10)-10*truncate((truncate((7525*n-(18879*(n+4)^3)^2-12*n^7-1533*n^5+36)/2520)-1)/10)+truncate((7525*n-(18879*(n+4)^3)^2-12*n^7-1533*n^5+36)/2520)+9
+; Formula: a(n) = -2*(sqrtint(max(n-1,0))==0)-2*sqrtint(max(n-1,0))-2*truncate((sign(3*sign(-1)*sign(max(n-1,0))+sign(max(n-1,0))+sign(-1))*bitxor(abs(-1),abs(max(n-1,0))))/((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0))))-10*truncate((-2*(sqrtint(max(n-1,0))==0)-2*sqrtint(max(n-1,0))-2*truncate((sign(3*sign(-1)*sign(max(n-1,0))+sign(max(n-1,0))+sign(-1))*bitxor(abs(-1),abs(max(n-1,0))))/((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0))))+gcd((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0)),-2*(sqrtint(max(n-1,0))==0)-2*sqrtint(max(n-1,0))-2*truncate((sign(3*sign(-1)*sign(max(n-1,0))+sign(max(n-1,0))+sign(-1))*bitxor(abs(-1),abs(max(n-1,0))))/((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0)))))+2)/10)+gcd((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0)),-2*(sqrtint(max(n-1,0))==0)-2*sqrtint(max(n-1,0))-2*truncate((sign(3*sign(-1)*sign(max(n-1,0))+sign(max(n-1,0))+sign(-1))*bitxor(abs(-1),abs(max(n-1,0))))/((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0)))))+2
 
+trn $0,1
+mov $1,-1
+bxo $1,$0
+nrt $0,2
 mov $2,$0
-mov $3,$0
-mul $3,7525
-mov $4,$0
-pow $0,7
-mul $0,-6
-pow $2,5
-mul $2,1533
-mov $1,$0
-add $1,36
-add $4,4
-pow $4,3
-mul $4,18879
-pow $4,2
+equ $2,0
+add $0,$2
+div $1,$0
+add $1,$0
+mul $1,-2
+gcd $0,$1
 add $0,$1
-sub $0,$2
-add $0,$3
-sub $0,$4
-div $0,2520
-sub $0,1
-mod $0,10
-add $0,10
+add $0,2
 mod $0,10

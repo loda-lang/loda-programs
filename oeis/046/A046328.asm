@@ -9,6 +9,7 @@ sub $0,1
 mul $2,10
 pow $2,2
 lpb $2
+  add $1,1
   mov $6,$1
   seq $6,61142 ; Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
   mov $5,$1
@@ -19,7 +20,6 @@ lpb $2
   sub $3,$6
   equ $3,0
   sub $0,$3
-  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
@@ -27,3 +27,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+add $0,1

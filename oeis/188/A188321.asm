@@ -1,5 +1,5 @@
 ; A188321: a(n) = [n*r] - [k*r] - [n*r-k*r], where r=1/sqrt(2), k=5, [ ]=floor.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Goldislops
 ; 0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0
 
 #offset 1
@@ -12,6 +12,7 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
+  sub $2,$1
   mov $5,$0
   add $0,1
   seq $0,188323 ; Positions of 1 in A188321; complement of A188322.

@@ -5,8 +5,6 @@
 mov $1,-1
 pow $1,$0
 mov $3,5
-mov $4,0
-mov $5,0
 mov $2,$0
 mul $2,3
 lpb $2

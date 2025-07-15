@@ -4,19 +4,14 @@
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-mov $4,1
-mov $2,$1
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$4
-  add $3,1
-  bxo $3,$4
-  div $3,3
-  add $4,$3
-  bxo $4,$3
+mov $1,1
+lpb $0
+  sub $0,1
+  sub $2,$1
+  mov $1,$2
+  dir $1,4
+  mod $1,2
+  add $2,2
 lpe
-gcd $3,2
-mov $0,$3
+gcd $1,2
+mov $0,$1

@@ -370,6 +370,7 @@ A117495: Product of a prime number p and the number of primes smaller than p.
 A117812: a(n) = n^(2*n) - 1.
 A117961: Hexagonal numbers with prime indices.
 A118075: Start with 1 and repeatedly reverse the digits and add 42 to get the next term.
+A118091: Start with 1 and repeatedly reverse the digits and add 46 to get the next term.
 A118152: Start with 1 and repeatedly reverse the digits and add 56 to get the next term.
 A118153: Start with 1 and repeatedly reverse the digits and add 57 to get the next term.
 A118154: Start with 1 and repeatedly reverse the digits and add 58 to get the next term.
