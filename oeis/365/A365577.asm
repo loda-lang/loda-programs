@@ -1,0 +1,14 @@
+; A365577: Sequence of the short legs of primitive Pythagorean triples beginning with the triple (3,4,5), with each subsequent triple having as its short leg the sum of the legs of the previous triple, and with the long leg and the hypotenuse of each triple being consecutive natural numbers.
+; Submitted by Science United
+; 3,7,31,511,131071,8589934591,36893488147419103231,680564733841876926926749214863536422911,231584178474632390847141970017375815706539969331281128078915168015826259279871,26815615859885194199148049996411692254958731641184786755447122887443528060147093953603748596333806855380063716372972101707507765623893139892867298012168191
+; Formula: a(n) = 2*2^(2^(n-1))-1
+
+#offset 1
+
+sub $0,1
+mov $1,2
+pow $1,$0
+mov $0,2
+pow $0,$1
+mul $0,2
+sub $0,1
