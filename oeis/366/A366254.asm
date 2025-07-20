@@ -1,16 +1,15 @@
 ; A366254: Binary weight of May code (A303767).
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,1,2,1,2,1,2,3,4,1,2,3,2,3,2,3,4,1,2,3,2,3,2,3,4,5,2,3,4,3,4,3,4,1,2,3,2,3,2,3,4,5,2,3,4,3,4,3,4,5,2,3,4,3,4,3,4,5,6,3,4,5,4,5,6,1,2,3,2,3,2,3,4,5,2,3,4,3,4,3
 
 lpb $0
-  mov $4,$0
-  max $4,1
-  log $4,2
-  add $1,1
+  mov $1,$0
+  max $1,1
+  log $1,2
   mov $2,2
-  pow $2,$4
-  pow $3,0
-  sub $0,$3
+  pow $2,$1
+  add $3,1
+  sub $0,1
   mod $0,$2
 lpe
-mov $0,$1
+mov $0,$3

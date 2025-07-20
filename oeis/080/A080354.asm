@@ -1,17 +1,25 @@
 ; A080354: First differences of A080353.
-; Submitted by Science United
+; Submitted by kpmonaghan
 ; 2,2,2,1,2,1,2,1,2,1,1,2,1,1,2,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1
-; Formula: a(n) = d(n+1), b(n) = 2*c(n-1)+truncate(b(n-1)/2), b(2) = 20, b(1) = 8, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(2) = 16, c(1) = 8, c(0) = 4, d(n) = gcd(truncate(b(n-1)/2),2), d(2) = 2, d(1) = 2, d(0) = 0
+; Formula: a(n) = (max(-3*n+binomial(truncate((sqrtint(24*n+40)-1)/2)+1,2)-3,0)==(-3*n+binomial(truncate((sqrtint(24*n+40)-1)/2)+1,2)-3))+1
 
-mov $2,4
+mul $0,3
+add $0,5
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+mov $1,$0
+sub $1,1
+mov $0,1
+sub $0,$1
+mov $1,$0
+max $1,0
+equ $1,$0
+mov $0,$1
 add $0,1
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $1,$2
-  add $1,$2
-  mul $2,$3
-lpe
-mov $0,$3

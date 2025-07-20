@@ -1,19 +1,18 @@
 ; A176393: a(n) = A176100(n) + 1 = 2*A141468(n) + 1.
-; Submitted by Kotenok2000
+; Submitted by Ralfy
 ; 1,3,9,13,17,19,21,25,29,31,33,37,41,43,45,49,51,53,55,57,61,65,67,69,71,73,77,79,81,85,89,91,93,97,99,101,103,105,109,111,113,115,117,121,125,127,129,131,133,137,139,141,145,149,151,153,155,157,161,163,165
 
 #offset 1
 
-sub $0,1
+sub $0,2
 lpb $0
+  trn $0,1
+  add $0,1
+  seq $0,72668 ; Numbers one less than composite numbers.
   mov $1,$0
-  trn $1,1
-  mov $2,$1
-  seq $2,72668 ; Numbers one less than composite numbers.
-  mul $0,0
-  mov $1,$2
-  mul $1,2
-  add $1,2
+  mov $0,0
 lpe
-mov $0,$1
+add $0,1
+add $0,$1
+mul $0,2
 add $0,1

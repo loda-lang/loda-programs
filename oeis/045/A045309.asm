@@ -1,22 +1,28 @@
 ; A045309: Primes congruent to {0, 2} mod 3.
-; Submitted by Kotenok2000
+; Submitted by iBezanilla
 ; 2,3,5,11,17,23,29,41,47,53,59,71,83,89,101,107,113,131,137,149,167,173,179,191,197,227,233,239,251,257,263,269,281,293,311,317,347,353,359,383,389,401,419,431,443,449,461,467,479,491,503,509,521,557,563,569,587,593,599,617,641,647,653,659,677,683,701,719,743,761,773,797,809,821,827,839,857,863,881,887
 
 #offset 1
 
+mov $2,$0
 sub $0,1
-equ $1,$0
-sub $0,1
-mul $0,2
-lpb $0
-  sub $0,1
-  mov $2,$0
-  div $2,2
-  add $2,1
-  seq $2,7528 ; Primes of the form 6k-1.
-  sub $2,3
-  mov $0,1
+add $2,5
+pow $2,3
+lpb $2
+  mov $3,$6
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $1,8
+  mul $2,$4
+  sub $2,18
+  add $5,$1
+  div $5,7
+  add $1,1
+  mov $6,$5
 lpe
-mov $0,$2
-sub $0,$1
-add $0,3
+mov $0,$5
+add $0,1

@@ -1,13 +1,25 @@
 ; A134659: Total number of odd coefficients in (1+x+x^2)^k for k=0,...,n.
-; Submitted by Steve Dodd
+; Submitted by Science United
 ; 1,4,7,12,15,24,29,40,43,52,61,76,81,96,107,128,131,140,149,164,173,200,215,248,253,268,283,308,319,352,373,416,419,428,437,452,461,488,503,536,545,572,599,644,659,704,737,800,805,820,835,860,875,920,945,1000,1011,1044,1077,1132,1153,1216,1259,1344,1347,1356,1365,1380,1389,1416,1431,1464,1473,1500,1527,1572,1587,1632,1665,1728
-; Formula: a(n) = a(n-1)+A071053(n), a(0) = 1
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,71053 ; Number of ON cells at n-th generation of 1-D CA defined by Rule 150, starting with a single ON cell at generation 0.
-  sub $0,1
-  add $1,$2
+mov $5,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $2,1
+  mov $0,$5
+  sub $0,$1
+  mul $0,2
+  lpb $0
+    div $0,2
+    mov $4,$2
+    mul $4,2
+    add $2,$3
+    add $3,$0
+    mod $3,2
+    mul $3,$4
+  lpe
+  add $6,$2
 lpe
-mov $0,$1
+mov $0,$6

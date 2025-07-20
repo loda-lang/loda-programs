@@ -1,24 +1,29 @@
 ; A228074: A Fibonacci-Pascal triangle read by rows: T(n,0) = Fibonacci(n), T(n,n) = n and for n > 0: T(n,k) = T(n-1,k-1) + T(n-1,k), 0 < k < n.
-; Submitted by AXm 77
+; Submitted by iBezanilla
 ; 0,1,1,1,2,2,2,3,4,3,3,5,7,7,4,5,8,12,14,11,5,8,13,20,26,25,16,6,13,21,33,46,51,41,22,7,21,34,54,79,97,92,63,29,8,34,55,88,133,176,189,155,92,37,9,55,89,143,221,309,365,344,247,129,46,10,89,144,232,364,530,674,709,591,376,175,56,11,144,233
 
-lpb $0
-  add $2,1
-  add $4,2
-  mov $5,1
-  sub $0,$2
-lpe
-mov $1,$5
-add $2,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,2
+add $2,2
 sub $2,$0
+mov $3,$0
+mov $4,$0
 mov $0,$2
 lpb $0
-  sub $0,1
+  sub $0,2
+  add $3,$0
   bin $3,$0
-  sub $4,1
+  add $4,1
   add $1,$3
   mov $3,$4
-  div $3,2
 lpe
 mov $0,$1
-sub $0,1

@@ -1,5 +1,5 @@
 ; A277319: Numbers k such that A048675(k) is a prime.
-; Submitted by Dave Studdert
+; Submitted by Sterndu
 ; 3,4,6,8,10,18,22,24,30,32,40,42,46,54,56,66,70,72,88,96,98,102,114,118,126,128,130,136,150,152,168,182,200,224,234,238,246,250,266,270,294,312,318,328,330,350,354,360,370,392,402,406,416,424,434,440,442,450,472,480,486,510,536,546,594,600,630,640,646,648,650,654,666,680,690,722,728,762,770,792
 
 #offset 1
@@ -16,6 +16,9 @@ lpb $2
   mul $3,$5
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $3,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
+  add $3,1
+  trn $3,2
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

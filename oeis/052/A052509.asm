@@ -1,27 +1,27 @@
 ; A052509: Knights-move Pascal triangle: T(n,k), n >= 0, 0 <= k <= n; T(n,0) = T(n,n) = 1, T(n,k) = T(n-1,k) + T(n-2,k-1) for k = 1,2,...,n-1, n >= 2.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,1,1,2,1,1,3,2,1,1,4,4,2,1,1,5,7,4,2,1,1,6,11,8,4,2,1,1,7,16,15,8,4,2,1,1,8,22,26,16,8,4,2,1,1,9,29,42,31,16,8,4,2,1,1,10,37,64,57,32,16,8,4,2,1,1,11,46,93,99,63,32,16,8,4,2,1,1,12
 
 add $0,1
+mov $1,1
 mov $2,$0
 mul $2,8
 nrt $2,2
 sub $2,1
 div $2,2
-mov $1,$2
-add $1,1
-bin $1,2
-sub $0,$1
-sub $0,1
-mov $1,1
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,2
+sub $0,$4
 sub $2,$0
+mov $3,$2
+add $0,3
 lpb $0
-  sub $0,1
-  mul $1,$2
-  sub $2,1
-  add $4,1
-  div $1,$4
-  add $3,$1
+  sub $0,2
+  bin $3,$0
+  add $1,$3
+  mov $3,$2
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1
+sub $0,1

@@ -1,5 +1,5 @@
 ; A059342: Triangle giving denominators of coefficients of Euler polynomials, highest powers first.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 1,1,2,1,1,1,1,2,1,4,1,1,1,1,1,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,1,4,1,2,1,8,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,4,1,1,1,4,1,2,1,4,1,1
 
 mov $1,$0
@@ -16,14 +16,12 @@ sub $1,$4
 sub $1,1
 mov $4,$5
 bin $4,$1
-mov $1,$5
 mul $1,2
 add $1,1
 lpb $1
   sub $1,2
   mul $4,$1
 lpe
-mov $1,$4
 add $0,1
 mov $3,$0
 mul $3,8

@@ -1,15 +1,15 @@
 ; A007821: Primes p such that pi(p) is not prime.
-; Submitted by Jave808
+; Submitted by Just Jake
 ; 2,7,13,19,23,29,37,43,47,53,61,71,73,79,89,97,101,103,107,113,131,137,139,149,151,163,167,173,181,193,197,199,223,227,229,233,239,251,257,263,269,271,281,293,307,311,313,317,337,347,349,359,373,379,383,389,397,409,419,421,433,439,443,449,457,463,467,479,487,491,499,503,521,523,541,557,569,571,577,593
+; Formula: a(n) = truncate((20*A000040(A018252(n))-37)/20)+2
 
 #offset 1
 
-sub $0,1
-lpb $0
-  seq $0,72668 ; Numbers one less than composite numbers.
-  mov $1,$0
-  mov $0,0
-lpe
-mov $0,$1
-add $0,1
+seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 seq $0,40 ; The prime numbers.
+mov $1,$0
+mul $1,20
+mov $0,$1
+sub $0,37
+div $0,20
+add $0,2

@@ -1,15 +1,16 @@
 ; A307848: The number of exponential infinitary divisors of n.
-; Submitted by Science United
+; Submitted by shiva
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,4,1,1,1,2,1,1,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,4,1,1,2,2,1,1,1,2
 
 #offset 1
 
 mov $5,$0
 sub $5,1
+mov $3,$0
 max $4,$5
 add $4,1
 seq $4,19554 ; Smallest number whose square is divisible by n.
-mov $3,$0
+sub $0,8
 sub $3,1
 div $3,$4
 add $3,1

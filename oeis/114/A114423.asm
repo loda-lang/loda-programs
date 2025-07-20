@@ -1,16 +1,20 @@
 ; A114423: Multifactorial array read by ascending antidiagonals.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,1,1,2,1,1,6,2,1,1,24,3,2,1,1,120,8,3,2,1,1,720,15,4,3,2,1,1,5040,48,10,4,3,2,1,1,40320,105,18,5,4,3,2,1,1,362880,384,28,12,5,4,3,2,1,1,3628800,945,80,21,6,5,4,3,2,1,1,39916800,3840,162,32,14,6,5,4,3,2,1,1
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,1
-add $2,1
 mov $3,$0
 mov $0,$2
 lpb $0

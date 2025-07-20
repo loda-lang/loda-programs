@@ -1,19 +1,17 @@
 ; A230847: a(n) = 1 + A054541(n).
 ; Submitted by mmonnin
 ; 3,2,3,3,5,3,5,3,5,7,3,7,5,3,5,7,7,3,7,5,3,7,5,7,9,5,3,5,3,5,15,5,7,3,11,3,7,7,5,7,7,3,11,3,5,3,13,13,5,3,5,7,3,11,7,7,7,3,7,5,3,11,15,5,3,5,15,7,11,3,5,7,9,7,7,5,7,9,5,9
-; Formula: a(n) = c(n)+1, b(n) = A159477((d(n-1)==0)+b(n-1)+1), b(2) = 3, b(1) = 2, b(0) = 0, c(n) = -b(n-1)+A159477((d(n-1)==0)+b(n-1)+1), c(2) = 1, c(1) = 2, c(0) = 0, d(n) = (d(n-1)==0)+b(n-1), d(2) = 2, d(1) = 1, d(0) = 0
+; Formula: a(n) = max(-n+2,0)+A013632(A000040(max(n-2,0)+1))+1
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  equ $3,0
-  add $3,$1
-  mov $2,$3
-  add $2,1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  sub $2,$1
-  add $1,$2
-lpe
-mov $0,$2
+mov $2,$0
+sub $2,2
+trn $1,$2
+max $2,0
+add $2,1
+seq $2,40 ; The prime numbers.
+seq $2,13632 ; Difference between n and the next prime greater than n.
+add $1,$2
+mov $0,$1
 add $0,1

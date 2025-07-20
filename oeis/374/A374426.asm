@@ -1,15 +1,21 @@
 ; A374426: a(n) = n*(n + 1)/2 + pi(n), where pi(n) = A000720(n) is the prime counting function.
-; Submitted by Aurimas
+; Submitted by shiva
 ; 1,4,8,12,18,24,32,40,49,59,71,83,97,111,126,142,160,178,198,218,239,261,285,309,334,360,387,415,445,475,507,539,572,606,641,677,715,753,792,832,874,916,960,1004,1049,1095,1143,1191,1240,1290,1341,1393,1447,1501,1556,1612,1669,1727,1787,1847,1909,1971,2034,2098,2163,2229,2297,2365,2434,2504,2576,2648,2722,2796,2871,2947,3024,3102,3182,3262
 
 #offset 1
 
+sub $0,1
+mov $3,$0
 mov $1,$0
+add $1,1
 lpb $1
-  mov $2,$1
-  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $3,$1
-  add $3,$2
   sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,1
+  mov $2,$0
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,$0
+  add $4,$2
 lpe
-mov $0,$3
+mov $0,$4

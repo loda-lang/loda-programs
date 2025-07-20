@@ -1,24 +1,13 @@
 ; A064427: a(n) = n + (number of primes < n).
-; Submitted by mmonnin
+; Submitted by Coleslaw
 ; 1,2,4,6,7,9,10,12,13,14,15,17,18,20,21,22,23,25,26,28,29,30,31,33,34,35,36,37,38,40,41,43,44,45,46,47,48,50,51,52,53,55,56,58,59,60,61,63,64,65,66,67,68,70,71,72,73,74,75,77,78,80,81,82,83,84,85,87,88,89,90,92,93,95,96,97,98,99,100,102
+; Formula: a(n) = A230980(n-1)+n
 
 #offset 1
 
 sub $0,1
-mov $5,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$5
-  sub $0,$2
-  mov $1,$0
-  equ $1,0
-  mov $4,$0
-  add $4,$1
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $0,$4
-  add $0,1
-  add $3,$0
-lpe
-mov $0,$3
+mov $1,$0
+seq $0,230980 ; Number of primes <= n, starting at n=0.
+add $1,$0
+mov $0,$1
+add $0,1

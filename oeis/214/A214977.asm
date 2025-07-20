@@ -13,7 +13,6 @@ lpb $0
   mul $4,$0
   nrt $4,2
   add $4,$0
-  mov $3,$0
   mov $3,$4
   div $3,2
   add $3,1

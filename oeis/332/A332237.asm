@@ -17,9 +17,7 @@ lpb $1
   mov $3,$2
   mul $3,$1
   div $3,2
-  add $5,$6
   add $2,$6
-  mul $4,0
   add $4,$5
   mov $5,$3
   equ $6,1

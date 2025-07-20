@@ -1,28 +1,29 @@
 ; A007692: Numbers that are the sum of 2 nonzero squares in 2 or more ways.
-; Submitted by Penguin
+; Submitted by amazing
 ; 50,65,85,125,130,145,170,185,200,205,221,250,260,265,290,305,325,338,340,365,370,377,410,425,442,445,450,481,485,493,500,505,520,530,533,545,565,578,580,585,610,625,629,650,680,685,689,697,725,730,740,745,754,765,785,793,800,820,845,850,865,884,890,901,905,925,949,962,965,970,985,986,1000,1010,1025,1037,1040,1060,1066,1073
 
 #offset 1
 
 sub $0,1
-mov $1,49
+mov $1,9
 mov $2,$0
-add $2,7
+add $2,11
 pow $2,2
+bin $2,2
 lpb $2
-  add $1,1
-  mov $3,$1
-  mul $3,2
-  seq $3,925 ; Number of ordered ways of writing n as a sum of 2 squares of nonnegative integers.
-  sub $3,1
-  trn $3,2
-  min $3,1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
   sub $2,1
+  mov $4,$1
+  seq $4,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
+  mov $5,$4
+  gcd $4,2
+  mul $4,-1
+  add $4,$5
+  mov $3,$4
+  min $3,1
+  add $3,3
+  equ $3,4
+  sub $0,$3
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,1

@@ -1,5 +1,5 @@
 ; A118945: n-th (starting from the left) decimal digit of 12^n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,4,2,3,3,8,0,9,5,2,8,5,0,8,3,4,9,9,8,1,1,3,1,5,4,1,4,0,5,1,7,5,0,8,6,1,4,1,8,7,9,9,5,0,2,3,3,3,7,5,9,8,1,2,7,7,7,5,5,6,0,1,9,1,2,4,3,1,2,8,6,8,3,8,8,4,0,0,1,3
 
 #offset 1
@@ -14,10 +14,9 @@ lpb $3
 lpe
 mov $3,12
 pow $3,$1
-lpb $3
-  div $3,10
-  add $5,1
-lpe
+mul $3,10
+log $3,10
+add $5,$3
 add $2,$5
 sub $2,$0
 sub $2,1

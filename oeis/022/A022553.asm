@@ -1,35 +1,41 @@
 ; A022553: Number of binary Lyndon words containing n letters of each type; periodic binary sequences of period 2n with n zeros and n ones in each period.
-; Submitted by Ralfy
+; Submitted by KetamiNO [YouTube]
 ; 1,1,1,3,8,25,75,245,800,2700,9225,32065,112632,400023,1432613,5170575,18783360,68635477,252085716,930138521,3446158600,12815663595,47820414961,178987624513,671825020128,2528212128750,9536894664375,36054433807398,136583760011496,518401146543811,1971076356825975,7506908923471953,28634752192836096,109385279303266065,418427080483926037,1602661111666612025,6146007503718874176,23596358977508462295,90692376956025211721,348936088066654123269,1343840109164979124000,5180299766448679532059
 
-mov $1,$0
-trn $1,1
-mov $2,0
-mov $3,$1
-add $3,1
-mov $4,$1
-bin $4,2
-add $4,$1
-add $4,$3
-lpb $3
-  sub $3,1
-  mov $1,$4
-  sub $1,$3
-  mov $5,$1
-  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $6,0
-  mov $7,$1
-  mul $7,8
-  nrt $7,2
-  add $7,1
-  div $7,2
-  bin $7,2
-  sub $1,$7
-  seq $1,123611 ; Row sums of triangle A123610.
-  mul $1,$5
-  add $2,$1
+trn $0,1
+mov $2,1
+add $2,$0
+gcd $3,$2
+pow $3,2
+mov $5,$0
+add $5,1
+mov $6,$0
+bin $6,2
+add $6,$0
+add $6,$5
+lpb $5
+  sub $5,1
+  mov $0,$6
+  sub $0,$5
+  add $2,442
+  mov $7,$0
+  seq $7,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $8,$0
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  sub $0,$8
+  mov $1,$0
+  mul $0,2
+  bin $0,$1
+  mul $0,$7
+  add $4,2
+  add $4,$0
 lpe
-mov $1,$2
-div $1,2
-mov $0,$1
-mul $1,2
+mul $2,$4
+div $2,$3
+mov $0,$2
+div $0,886
+sub $0,1

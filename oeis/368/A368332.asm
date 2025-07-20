@@ -1,5 +1,5 @@
 ; A368332: The number of terms of A054744 that divide n.
-; Submitted by Science United
+; Submitted by Athlici
 ; 1,1,1,2,1,1,1,3,1,1,1,2,1,1,1,4,1,1,1,2,1,1,1,3,1,1,2,2,1,1,1,5,1,1,1,2,1,1,1,3,1,1,1,2,1,1,1,4,1,1,1,2,1,2,1,3,1,1,1,2,1,1,1,6,1,1,1,2,1,1,1,3,1,1,1,2,1,1,1,4
 
 #offset 1
@@ -11,6 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
+    mul $0,4
     add $2,1
     sub $3,$4
   lpe

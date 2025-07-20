@@ -1,27 +1,29 @@
 ; A163602: First differences of A161753.
-; Submitted by pm120
+; Submitted by KetamiNO [YouTube]
 ; 1,15,20,28,17,19,44,52,29,31,68,76,41,43,92,49,51,53,55,116,124,65,67,69,71,148,77,79,164,172,89,91,188,97,99,101,103,212,109,111,113,115,236,244,125,127,129,131,268,137,139,284,292,149,151,153,155,316,161,163,332,169,171,173,175,356,181,183,185,187,189,191,388,197,199,404,412,209,211,428
 
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $2,2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  add $0,$2
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
   trn $0,1
-  seq $0,72668 ; Numbers one less than composite numbers.
   add $0,1
+  seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   pow $0,2
-  mul $0,10
-  mov $1,$2
-  mul $1,$0
-  add $4,$1
+  mov $1,$0
+  mul $1,2
+  mov $0,$1
+  mov $2,$3
+  mul $2,$1
+  add $4,$2
 lpe
-min $3,1
-mul $3,$0
+min $5,1
+mul $5,$0
 mov $0,$4
-sub $0,$3
-div $0,10
+sub $0,$5
+div $0,2

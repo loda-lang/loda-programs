@@ -1,5 +1,5 @@
 ; A223079: Positive integers, written in base 4, with the property that if the base-4 representation is reversed the result is three times the original number.
-; Submitted by loader3229
+; Submitted by Eric
 ; 1023,10323,103323,1033323,10231023,10333323,102301023,103333323,1023001023,1032310323,1033333323,10230001023,10323010323,10333333323,102300001023,102310231023,103230010323,103323103323,103333333323
 
 #offset 1
@@ -13,8 +13,8 @@ mov $5,1
 mov $7,$0
 add $7,10
 lpb $7
-  add $6,1
   add $8,$2
+  add $6,1
   mov $9,$8
   geq $9,$1
   lpb $9
@@ -57,6 +57,7 @@ lpb $7
       mov $0,$12
       seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
       add $0,$14
+      add $1,$2
     lpe
     mov $7,1
     sub $9,1

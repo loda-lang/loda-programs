@@ -1,31 +1,45 @@
 ; A268617: a(n) = (1/n^2) * Sum_{d|n} moebius(n/d)*binomial(3*d,d).
-; Submitted by Yankton
+; Submitted by Goldislops
 ; 3,3,9,30,120,513,2373,11484,57861,300420,1599477,8692074,48061689,269694453,1532744100,8808000696,51110965698,299155382325,1764498529977,10479611189400,62629105220514,376411503694677,2273982941083533,13802537605619124,84141675425838225,514987312014416553,3163620641291970255
 
 #offset 1
 
-mov $2,$0
+mov $1,$0
 sub $0,1
-mov $3,$0
-bin $3,2
+mov $3,1
 add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  mov $4,$0
-  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
-  sub $0,1
-  lpb $0
-    add $5,1
-    sub $0,$5
-  lpe
-  add $0,1
-  seq $0,244035 ; a(n) = Sum_{d|n} Sum{t|d} moebius(d/t)*binomial(3*t,t)/(3*d^2).
-  mul $0,$4
-  add $1,$0
+gcd $4,$3
+pow $4,2
+mov $6,$0
+add $6,1
+mov $7,$0
+bin $7,2
+add $7,$0
+add $7,$6
+lpb $6
+  sub $6,1
+  mov $0,$7
+  sub $0,$6
+  mov $8,$0
+  seq $8,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $9,$0
+  mul $9,8
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  sub $0,$9
+  mov $2,$0
+  mul $2,3
+  bin $2,$0
+  bin $0,0
+  mul $0,$2
+  mul $0,$8
+  add $5,$0
 lpe
-mov $0,$1
+mul $3,$5
+div $3,$4
+mov $0,$3
+div $0,3
+div $0,$1
 mul $0,3

@@ -1,35 +1,13 @@
 ; A020844: Decimal expansion of 1/sqrt(87).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,0,7,2,1,1,2,5,3,4,8,3,7,7,9,4,8,3,2,8,2,2,3,5,3,5,1,0,6,1,1,5,5,8,2,7,3,9,3,9,7,9,7,7,8,0,9,4,1,5,6,9,5,0,2,4,2,0,2,5,2,5,6,3,0,3,9,8,6,0,2,9,2,9,6,6,3,5,0,5
+; Formula: a(n) = -10*truncate(sqrtint(floor((10^(2*n+2))/87))/10)+sqrtint(floor((10^(2*n+2))/87))
 
-mov $1,1
-mov $2,1
-mov $4,$0
-add $4,3
-mov $7,10
-pow $7,$4
-mov $3,$0
-add $3,7
-lpb $3
-  sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,86
-  mov $5,$1
-  pow $5,2
-  add $4,$5
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  mov $1,$4
-  add $1,$6
-  mov $8,$4
-  div $8,$7
-  max $8,2
-  div $1,$8
-  mov $2,$6
-  div $2,$8
-lpe
-div $2,100
-mov $0,$2
+add $0,1
+mul $0,2
+mov $1,10
+pow $1,$0
+mov $0,$1
+div $0,87
+nrt $0,2
 mod $0,10

@@ -1,23 +1,19 @@
 ; A062044: Primes arising in A062042.
-; Submitted by Ralfy
+; Submitted by mmonnin
 ; 2,5,7,11,17,23,29,37,43,47,53,59,67,73,79,89,97,101,103,107,113,127,139,149,163,173,179,181,191,211,223,227,233,239,251,263,269,277,283,293,307,313,317,331,347,353,359,367,373,379,383,389,397,401,409,419
+; Formula: a(n) = A159477((c(n-1)==0)+a(n-1)+b(n-1)+1), a(2) = 5, a(1) = 2, a(0) = 0, b(n) = -a(n-1)-b(n-1)+A159477((c(n-1)==0)+a(n-1)+b(n-1)+1), b(2) = 1, b(1) = 2, b(0) = 0, c(n) = (c(n-1)==0)+a(n-1)+b(n-1), c(2) = 4, c(1) = 1, c(0) = 0
 
 #offset 1
 
-sub $0,1
-mov $3,2
-lpb $3
-  add $0,$3
-  mov $1,2
-  lpb $1
-    bin $1,2
-    sub $0,1
-    mov $2,$0
-    max $2,0
-    seq $2,107817 ; Slowest increasing sequence where 2 consecutive integers sum up to a prime.
-    pow $0,$1
-    mov $3,0
-    add $4,$2
-  lpe
+lpb $0
+  sub $0,1
+  add $1,$2
+  equ $3,0
+  add $3,$1
+  mov $2,$3
+  add $2,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  sub $2,$1
+  add $1,$2
 lpe
-mov $0,$4
+mov $0,$1

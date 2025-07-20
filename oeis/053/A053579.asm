@@ -15,10 +15,10 @@ lpb $2
   nrt $6,2
   sub $6,1
   div $6,2
-  mov $8,$6
-  add $8,1
-  bin $8,2
-  sub $3,$8
+  mov $5,$6
+  add $5,1
+  bin $5,2
+  sub $3,$5
   sub $3,1
   sub $6,$3
   add $3,2
@@ -30,11 +30,6 @@ lpb $2
   mov $7,2
   pow $7,$6
   mul $7,$3
-  mov $3,$7
-  mul $3,2
-  sub $3,1
-  mov $5,$3
-  add $3,1
   seq $3,325135 ; Size of the integer partition with Heinz number n after its inner lining, or, equivalently, its largest hook, is removed.
   equ $3,0
   sub $0,$3
@@ -45,8 +40,5 @@ lpb $2
   mul $2,$4
   trn $2,1
 lpe
-mov $0,$5
-sub $0,5
-div $0,2
-add $0,3
-mul $0,2
+mul $7,2
+mov $0,$7

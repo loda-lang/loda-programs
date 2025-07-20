@@ -17,6 +17,5 @@ lpb $3
   equ $0,0
   gcd $0,$1
   div $1,$0
-  mod $0,2
 lpe
 mov $0,$1

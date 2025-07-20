@@ -17,7 +17,6 @@ sub $1,$0
 pow $0,2
 pow $1,2
 add $1,$0
-mov $3,0
 mov $0,$1
 lpb $0
   sub $0,1

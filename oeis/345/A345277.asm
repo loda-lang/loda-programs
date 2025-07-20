@@ -1,20 +1,24 @@
 ; A345277: Sums of 3 consecutive even-indexed primes.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 23,39,61,85,109,133,157,185,211,239,269,297,321,351,383,421,453,487,517,547,573,615,651,691,719,753,785,815,845,885,921,965,1003,1045,1081,1115,1153,1189,1227,1263,1297,1333,1363,1399,1433,1473,1515,1565,1619,1667,1703,1739
 
 #offset 1
 
-sub $0,2
-mov $2,$0
+sub $0,1
+mov $4,$0
+mul $4,2
 mov $3,3
 lpb $3
   sub $3,1
-  mov $0,$2
-  add $0,1
+  mov $0,$4
   add $0,$3
-  mul $0,2
-  add $0,2
   seq $0,40 ; The prime numbers.
-  add $1,$0
+  sub $0,2
+  mov $2,10
+  mul $2,$0
+  add $4,3
+  add $1,$2
 lpe
 mov $0,$1
+div $0,10
+add $0,6

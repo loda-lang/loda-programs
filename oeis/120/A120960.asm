@@ -1,5 +1,5 @@
 ; A120960: Pythagorean prime powers.
-; Submitted by fzs600
+; Submitted by Science United
 ; 5,13,17,25,29,37,41,53,61,73,89,97,101,109,113,125,137,149,157,169,173,181,193,197,229,233,241,257,269,277,281,289,293,313,317,337,349,353,373,389,397,401,409,421,433,449,457,461,509,521,541,557,569,577,593,601,613,617,625,641,653,661,673,677,701,709,733,757,761,769,773,797,809,821,829,841,853,857,877,881
 
 #offset 1
@@ -9,21 +9,24 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  sub $2,2
+  add $1,1
   mov $3,$1
+  mul $3,4
   add $3,1
-  seq $3,158523 ; Moebius transform of negated primes in factorization of n.
-  add $3,2
-  div $3,2
-  gcd $3,2
-  mul $4,4
+  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  add $3,13
+  div $3,8
+  sub $3,1
+  equ $3,1
   sub $0,$3
-  add $0,1
-  add $1,$4
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
+mul $0,4
 add $0,1

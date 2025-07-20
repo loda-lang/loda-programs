@@ -15,7 +15,14 @@ lpb $4
   sub $0,$4
   mov $1,$0
   mov $5,$0
-  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $5,2
+  seq $5,188164 ; Number of palindromic structures of length n.
+  mov $6,2
+  mul $6,$5
+  add $6,$5
+  add $6,$5
+  mov $5,$6
+  div $5,4
   add $0,1
   mul $0,$5
   bin $1,$4

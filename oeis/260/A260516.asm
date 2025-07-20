@@ -1,11 +1,28 @@
 ; A260516: Expansion of f(x, x^2) * f(x^2, x^10) in powers of x where f(,) is Ramanujan's general theta function.
-; Submitted by Owdjim
+; Submitted by Science United
 ; 1,1,2,1,1,1,0,2,0,1,1,1,2,0,1,2,1,3,1,0,0,1,2,1,1,1,1,0,2,0,0,1,2,1,1,1,1,2,1,1,1,0,3,1,2,1,0,2,0,1,1,2,0,1,2,0,1,2,1,1,0,1,0,0,1,0,1,4,2,0,1,1,2,2,0,0,0,2,1,1
 
-mul $0,2
-lpb $0
-  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,20
+mov $1,$0
+mul $1,2
+mov $2,1
+add $2,$1
+mov $8,3
+mov $5,$2
+add $5,3
+lpb $5
+  sub $5,$8
+  mov $6,$5
+  max $6,0
+  mov $3,$6
+  mul $3,24
+  nrt $3,2
+  add $3,2
+  div $3,2
+  bin $3,2
+  mul $6,3
+  equ $6,$3
+  add $8,$7
+  add $4,$6
+  mov $7,3
 lpe
-add $0,1
-seq $0,121444 ; Expansion of f(x^3, x^9) * f(x, x^2) in powers of x where f(, ) is Ramanujan's general theta functions.
+mov $0,$4

@@ -1,14 +1,16 @@
-; A385973: The hypotenuses of the triangles defined in A365577/
+; A385973: The hypotenuses of the triangles defined in A365577.
 ; Submitted by Science United
 ; 5,25,481,130561,8589803521,36893488138829168641,680564733841876926889855726716117319681,231584178474632390847141970017375815705859404597439251151988418800962722856961
-; Formula: a(n) = 4*binomial(b(n),2)+1, b(n) = b(n-1)^2, b(0) = 2
+; Formula: a(n) = 4*binomial(2^(2^(n-1)),2)+1
 
+#offset 1
+
+sub $0,1
 mov $1,2
-lpb $0
-  sub $0,1
-  pow $1,2
-lpe
-bin $1,2
-mov $0,$1
+pow $1,$0
+mov $2,2
+pow $2,$1
+bin $2,2
+mov $0,$2
 mul $0,4
 add $0,1
