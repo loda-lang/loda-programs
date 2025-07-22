@@ -1,18 +1,18 @@
 ; A285957: {01->0}-transform of the Thue-Morse word A010060.
-; Submitted by Science United
+; Submitted by m0laki
 ; 0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0
 
 #offset 1
 
-mov $2,-2
 mul $0,2
 lpb $0
   sub $0,1
-  add $2,2
   sub $2,$1
   mov $1,$2
   dir $1,4
-  mod $1,2
+  gcd $1,2
 lpe
 mov $0,$2
+mod $0,2
+add $0,2
 mod $0,2

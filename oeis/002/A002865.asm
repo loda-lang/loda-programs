@@ -1,32 +1,23 @@
 ; A002865: Number of partitions of n that do not contain 1 as a part.
-; Submitted by Jave808
+; Submitted by Mumps
 ; 1,0,1,1,2,2,4,4,7,8,12,14,21,24,34,41,55,66,88,105,137,165,210,253,320,383,478,574,708,847,1039,1238,1507,1794,2167,2573,3094,3660,4378,5170,6153,7245,8591,10087,11914,13959,16424,19196,22519,26252,30701,35717,41646,48342,56224,65121,75547,87331,101066,116600,134647,155038,178651,205343,236131,270928,310962,356169,408046,466610,533623,609237,695578,792906,903811,1028764,1170827,1330772,1512301,1716486
 
-mov $2,1
-mov $3,$2
-mov $10,1
-lpb $0
+mov $4,$0
+mov $2,2
+lpb $2
+  sub $2,1
+  mov $0,$4
+  add $0,$2
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,$4
-    add $7,1
-    seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-    sub $7,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  mov $5,$0
+  max $5,0
+  seq $5,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $0,$5
+  mov $1,$2
+  mul $1,$5
+  add $3,$1
 lpe
+min $4,1
+mul $4,$0
 mov $0,$3
+sub $0,$4

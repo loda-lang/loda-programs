@@ -5,24 +5,20 @@
 mov $4,$0
 mov $5,9
 lpb $5
-  mov $6,$4
-  add $6,2
-  add $7,14
-  mov $2,$6
+  sub $5,1
+  add $1,14
+  mov $3,$4
+  add $3,2
+  mov $2,$3
   mul $2,2
   div $2,3
   add $4,1
-  sub $4,$6
+  sub $4,$3
   add $4,$2
   mod $2,2
-  sub $1,$2
-  mov $3,$1
-  max $3,0
-  equ $3,$1
-  mul $5,$3
-  sub $5,1
+  add $5,$2
 lpe
-mov $0,$7
+mov $0,$1
 div $0,14
 add $0,1
 mod $0,10

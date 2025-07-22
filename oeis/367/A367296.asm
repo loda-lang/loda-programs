@@ -1,12 +1,28 @@
 ; A367296: Numbers k such that 8 is the first digit of 2^k.
-; Submitted by Coleslaw
+; Submitted by DenMartin
 ; 3,13,23,33,43,106,116,126,136,146,199,209,219,229,239,302,312,322,332,342,395,405,415,425,435,498,508,518,528,538,591,601,611,621,631,684,694,704,714,724,787,797,807,817,827,880,890,900,910,920,983,993,1003
 
 #offset 1
 
-seq $0,320864 ; Powers of 2 with initial digit 8.
-lpb $0
-  dif $0,2
-  add $1,1
+mov $2,$0
+add $2,15
+pow $2,2
+lpb $2
+  add $3,1
+  mov $4,2
+  pow $4,$3
+  mov $8,$4
+  log $8,10
+  mov $5,10
+  pow $5,$8
+  mov $1,$4
+  div $1,$5
+  sub $1,3
+  equ $1,5
+  add $6,$1
+  mov $7,$6
+  neq $7,$0
+  sub $2,$7
 lpe
-mov $0,$1
+mov $0,$3
+add $0,1

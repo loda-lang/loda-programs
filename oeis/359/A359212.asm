@@ -1,18 +1,10 @@
 ; A359212: Number of divisors of 3*n-2 of form 3*k+1.
-; Submitted by Dongha Hwang
+; Submitted by Science United
 ; 1,2,2,2,2,3,2,2,2,4,2,2,2,4,2,2,3,4,2,2,2,4,2,4,2,4,2,2,2,4,4,2,2,5,2,2,2,6,2,2,2,4,2,4,4,4,2,2,2,4,2,4,2,6,2,2,3,4,4,2,2,4,2,4,2,6,2,2,2,6,2,2,4,6,2,2,2,4,2,4
+; Formula: a(n) = A001817(3*n-2)
 
 #offset 1
 
-mov $1,1
-mov $2,34
-lpb $0
-  sub $0,1
-  mov $3,$0
-  gcd $3,$1
-  div $3,$1
-  add $1,3
-  add $2,$3
-lpe
-mov $0,$2
-sub $0,34
+mul $0,3
+sub $0,2
+seq $0,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).

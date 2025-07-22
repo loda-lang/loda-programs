@@ -4,27 +4,32 @@
 
 #offset 1
 
-mov $2,$0
+mov $3,$0
 sub $0,1
-mul $2,10
-pow $2,2
-lpb $2
-  mov $6,$1
-  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mov $5,$1
-  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $6,$1
-  sub $6,$5
-  mov $3,4
-  seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
-  sub $3,$6
-  equ $3,0
-  sub $0,$3
+mul $3,10
+pow $3,2
+lpb $3
+  mov $1,$2
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $6,$2
+  add $6,1
+  add $1,$6
+  seq $6,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  sub $1,$6
+  seq $6,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.
+  add $6,$1
+  mov $4,4
+  seq $4,83399 ; Number of divisors of n that are not divisors of other divisors of n.
+  sub $4,$6
+  equ $4,0
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
 lpe
-mov $0,$1
+mov $0,$2
+add $0,1

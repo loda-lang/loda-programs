@@ -1,20 +1,21 @@
 ; A008678: Expansion of 1/((1-x^3)*(1-x^5)*(1-x^7)*(1-x^9)).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,0,0,1,0,1,1,1,1,2,2,1,3,2,3,4,3,4,5,5,5,7,6,7,9,8,9,11,11,11,14,13,14,17,16,18,20,20,21,24,24,25,29,28,30,34,33,35,39,39,41,45,45,47,52,52,54,59,59,62,67,67,70,76,76,79,85,85,89,95,96,99,106,107,110,118,118,123,130,131
 
-add $0,1
-lpb $0
-  mov $3,0
-  mov $2,$0
-  lpb $2
-    mov $4,$2
-    trn $4,1
-    mul $4,2
-    seq $4,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    trn $2,9
-    add $3,$4
-  lpe
-  trn $0,7
-  add $1,$3
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  trn $0,1
+  seq $0,8674 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)*(1-x^7)*(1-x^9)).
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
 lpe
+min $5,1
+mul $5,$4
+sub $1,$5
 mov $0,$1

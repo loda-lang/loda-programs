@@ -11,9 +11,6 @@ sub $3,1
 div $3,2
 mov $4,2
 pow $4,$3
-mov $10,0
-mov $12,0
-mov $13,0
 mov $1,$4
 sub $1,1
 mov $2,$0

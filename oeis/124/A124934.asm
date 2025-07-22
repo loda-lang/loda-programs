@@ -4,22 +4,26 @@
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-add $2,7
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
+  sub $2,2
+  add $1,1
   mov $3,$1
-  seq $3,1842 ; Expansion of Sum_{n>=0} x^(4*n+3)/(1 - x^(4*n+3)).
-  min $3,1
+  mul $3,4
+  add $3,1
+  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  add $3,13
+  div $3,8
+  equ $3,1
   sub $0,$3
-  add $1,4
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
-div $0,4

@@ -9,16 +9,15 @@ sub $0,1
 mul $2,10
 pow $2,2
 lpb $2
-  mov $6,$1
-  add $6,1
-  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$1
   add $5,1
+  add $6,1
   add $6,$5
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
   sub $6,$5
   seq $5,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.
   add $5,$6
+  mov $6,1
   mov $3,4
   seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $3,$5

@@ -1,19 +1,16 @@
 ; A359276: a(n) = greatest integer k such that (n+k)! <= n^n.
-; Submitted by taurec
+; Submitted by loader3229
 ; 0,0,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,6,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,11,11,11,11,11,12,12,12,12,12,13,13,13,13,13,13,14,14,14,14,14,15,15,15,15,15,15,16,16
+; Formula: a(n) = sqrtnint(8*binomial(n+6,n-1)*(n+10),10)-1
 
 #offset 1
 
+mov $1,$0
 sub $0,1
-sub $1,$0
-mov $3,1
-add $0,1
-pow $0,$0
-mov $2,$0
-lpb $2
-  add $3,1
-  div $2,$3
-lpe
-mov $0,$3
-add $0,$1
-sub $0,2
+add $1,6
+bin $1,$0
+mul $1,8
+add $0,11
+mul $0,$1
+nrt $0,10
+sub $0,1

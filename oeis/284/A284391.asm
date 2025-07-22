@@ -1,17 +1,17 @@
 ; A284391: 1-limiting word of the morphism 0 -> 1, 1 -> 001.
-; Submitted by Science United
+; Submitted by m0laki
 ; 1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1
 
 #offset 1
 
+mov $1,1
+mov $2,-1
 lpb $0
   sub $0,1
-  sub $2,$1
+  add $2,$1
   mov $1,$2
   dir $1,4
-  mod $1,2
-  add $2,2
+  gcd $1,2
 lpe
 mov $0,$1
-add $0,1
-mod $0,2
+sub $0,1

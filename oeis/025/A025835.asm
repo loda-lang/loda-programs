@@ -1,17 +1,20 @@
 ; A025835: Expansion of 1/((1-x^3)(1-x^5)(1-x^6)).
-; Submitted by Manuel Stenschke
+; Submitted by sascha.gibson@gmx.de
 ; 1,0,0,1,0,1,2,0,1,2,1,2,3,1,2,4,2,3,5,2,4,6,3,5,7,4,6,8,5,7,10,6,8,11,7,10,13,8,11,14,10,13,16,11,14,18,13,16,20,14,18,22,16,20,24,18,22,26,20,24,29,22,26,31,24,29
-; Formula: a(n) = b(n+3), b(n) = -floor((n+2)/6)+b(n-3)+floor((n+2)/5), b(2) = 0, b(1) = 0, b(0) = 0
 
-add $0,3
-lpb $0
-  mov $2,$0
-  add $2,2
-  mov $3,$2
-  div $3,6
-  sub $0,3
-  div $2,5
-  sub $2,$3
-  add $1,$2
+add $0,1
+mov $3,4
+mov $2,$0
+lpb $2
+  mov $1,$2
+  mul $1,2
+  add $1,3
+  mov $4,$1
+  div $4,6
+  div $1,5
+  sub $1,$4
+  trn $2,6
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$3
+sub $0,4

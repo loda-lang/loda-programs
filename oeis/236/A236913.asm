@@ -1,11 +1,18 @@
 ; A236913: Number of partitions of 2n of type EE (see Comments).
-; Submitted by Orange Kid
+; Submitted by crashtech
 ; 1,1,3,6,12,22,40,69,118,195,317,505,793,1224,1867,2811,4186,6168,9005,13026,18692,26613,37619,52815,73680,102162,140853,193144,263490,357699,483338,650196,870953,1161916,1544048,2044188,2696627,3545015,4644850,6066425,7898630,10253568,13272332,17132044,22054694,28317803,36267714,46335767,59058176,75100211,95285933,120634125,152402294,192139963,241753433,303584109,380503578,476028109,594457221,741040507,922178606,1145664693,1420974960,1759616557,2175545082,2685664089,3310422523,4074528159
-; Formula: a(n) = truncate((A000041(2*n)+A081362(2*n))/2)
+; Formula: a(n) = truncate((2*truncate((A000041(2*n)+A000700(2*n))/2)+2)/2)-1
 
 mul $0,2
 mov $1,$0
-seq $1,81362 ; Expansion of q^(1/24) * eta(q) / eta(q^2) in powers of q.
+seq $1,700 ; Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 add $0,$1
 div $0,2
+mov $1,$0
+add $0,1
+add $1,$0
+add $1,1
+mov $0,$1
+div $0,2
+sub $0,1
