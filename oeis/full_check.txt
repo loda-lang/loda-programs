@@ -325,6 +325,7 @@ A088442: A linear version of the Josephus problem.
 A088462: a(1)=1, a(n) = ceiling((n - a(a(n-1)))/2).
 A088517: First differences of Golomb's sequence.
 A088534: Number of representations of n by the quadratic form x^2 + xy + y^2 with 0 <= x <= y.
+A088841: Numerator of the quotient sigma(7*n)/sigma(n).
 A088917: Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
 A089090: a(n) is the smallest composite number coprime to n.
 A089809: Complement of A078588.
