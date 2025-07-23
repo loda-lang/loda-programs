@@ -1,9 +1,9 @@
 ; A070908: Every fifth Bell number A000110.
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,52,115975,1382958545,51724158235372,4638590332229999353,846749014511809332450147,281600203019560266563340426570,157450588391204931289324344702531067
-; Formula: a(n) = A000110(5*n)
+; Formula: a(n) = A188164(10*n)
 
 mov $1,$0
-mul $1,5
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mul $1,10
+seq $1,188164 ; Number of palindromic structures of length n.
 mov $0,$1

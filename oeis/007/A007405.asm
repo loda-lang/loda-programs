@@ -1,19 +1,38 @@
 ; A007405: Dowling numbers: e.g.f.: exp(x + (exp(b*x) - 1)/b) with b=2.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,6,24,116,648,4088,28640,219920,1832224,16430176,157554048,1606879040,17350255744,197553645440,2363935624704,29638547505408,388328781668864,5304452565517824,75381218537805824,1112348880749130752,17014743624340539392,269360902955086379008,4407020091461230256128,74419107231916777476096,1295464318095102248689664,23220976941054083448463360,428151487068221854382391296,8112523237259437267469942784,157820714595646132497846927360,3149598980263142775744799145984,64429763679761238712667815673856
 
 mov $2,$0
-mov $4,$0
-lpb $4
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
   sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,4211 ; Shifts one place left under 2nd-order binomial transform.
-  mul $1,$0
-  add $3,$1
+  div $4,2
+  add $4,1
+  pow $4,2
+  sub $4,$0
+  mov $7,$4
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  mov $6,$4
+  sub $6,$7
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $5,$4
+  seq $5,225476 ; Triangle read by rows, k!*2^k*S_2(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+  div $5,$6
+  add $1,$5
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1

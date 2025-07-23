@@ -525,6 +525,7 @@ A177882: Trisection of A001317.
 A178064: Number of 0's in binary representation of n-th semiprime.
 A178743: a(n) = A000041(n) mod 10.
 A179262: a(n) = 2*prime(n)^2 - 1.
+A179665: a(n) = prime(n)^9.
 A180172: a(n) = gcd(prime(n)+2, n).
 A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).

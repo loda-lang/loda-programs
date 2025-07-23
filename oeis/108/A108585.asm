@@ -28,8 +28,8 @@ lpb $3
       add $6,$8
     lpe
     mov $0,$6
-    mul $0,2
-    add $2,$0
+    add $2,$6
   lpe
 lpe
 mov $0,$2
+mul $0,2

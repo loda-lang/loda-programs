@@ -1,19 +1,13 @@
 ; A083266: Sum of related numbers (counted in A073757) belonging to n: a(n) = A000203(n) + A023896(n) - 1; related = {divisor-set, RRS}.
-; Submitted by Simon Strandgaard
+; Submitted by DenMartin
 ; 1,3,6,10,15,17,28,30,39,37,66,51,91,65,83,94,153,92,190,121,157,145,276,155,280,197,282,223,435,191,496,318,377,325,467,306,703,401,523,409,861,347,946,523,617,577,1128,507,1085,592,887,721,1431,605,1171,791,1105,901,1770,647,1891,1025,1237,1150,1643,803,2278,1213,1613,983,2556,1058,2701,1445,1623,1507,2405,1103,3160,1465
 
 #offset 1
 
+mov $1,$0
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,2618 ; a(n) = n*phi(n).
+dif $0,2
+add $1,$0
+mov $0,$1
 sub $0,1
-mov $2,$0
-add $0,1
-lpb $2
-  mov $3,$2
-  gcd $3,$0
-  dif $3,$2
-  equ $3,1
-  add $1,$3
-  sub $2,1
-  add $4,$1
-lpe
-add $0,$4

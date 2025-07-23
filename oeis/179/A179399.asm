@@ -1,25 +1,13 @@
 ; A179399: Prime(n)^2 mod prime(n-4).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Athlici
 ; 1,1,4,4,1,9,9,1,2,22,8,34,37,23,24,6,19,19,55,40,65,10,68,57,47,43,61,41,21,111,103,7,126,20,26,31,13,161,75,54,145,143,18,128,112,104,62,33,196,26,110,98,61,149,143,61,196,213,69,57,51,283,269,54,217,73,153,147,53,227,323,217,117,203,105,293,122,179,98,167
-; Formula: a(n) = A159477(A159477(A159477(A159477(b(n-5)+5)+5)+5)+5)^2-truncate((A159477(A159477(A159477(A159477(b(n-5)+5)+5)+5)+5)^2)/b(n-5))*b(n-5), b(n) = A159477(b(n-1)+5), b(0) = 2
+; Formula: a(n) = A000040(n)^2-A000040(n-4)*truncate((A000040(n)^2)/A000040(n-4))
 
 #offset 5
 
-mov $1,2
-sub $0,5
-lpb $0
-  sub $0,1
-  add $1,5
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$1
-add $0,5
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-add $0,5
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-add $0,5
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-add $0,5
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $1,$0
+sub $1,4
+seq $1,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 pow $0,2
 mod $0,$1

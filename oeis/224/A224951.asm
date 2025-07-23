@@ -13,7 +13,6 @@ add $3,7
 pow $3,2
 lpb $3
   mov $4,$2
-  add $4,2
   seq $4,87810 ; First differences of A029931.
   add $4,1
   mod $4,2

@@ -12,20 +12,10 @@ add $2,12
 pow $2,4
 lpb $2
   sub $2,$0
-  mov $3,$1
-  mul $3,2
-  add $3,1
-  dir $3,2
-  div $3,2
-  mov $4,$3
+  mov $4,$1
   add $4,1
-  mov $5,$4
-  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mov $6,$5
   seq $4,48785 ; a(0) = 0; a(n) = tau(n^3), where tau = number of divisors (A000005).
-  gcd $5,$4
-  div $6,$5
-  mul $4,$6
+  mov $3,$1
   dgs $3,10
   mul $3,2
   div $3,$4

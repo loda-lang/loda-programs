@@ -1,18 +1,16 @@
 ; A368043: Triangle read by rows: T(n, k) = 2^(n + k).
-; Submitted by GPV67
+; Submitted by iBezanilla
 ; 1,2,4,4,8,16,8,16,32,64,16,32,64,128,256,32,64,128,256,512,1024,64,128,256,512,1024,2048,4096,128,256,512,1024,2048,4096,8192,16384,256,512,1024,2048,4096,8192,16384,32768,65536,512,1024,2048,4096,8192,16384,32768,65536,131072,262144
-; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n))
+; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*n+1)-1)/2),2)+n))
 
-add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $1,$2
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
 bin $1,2
 sub $0,$1
-sub $0,1
-mov $3,2
-pow $3,$0
-mov $0,$3
+mov $1,2
+pow $1,$0
+mov $0,$1

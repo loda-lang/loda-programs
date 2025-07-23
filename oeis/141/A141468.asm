@@ -4,17 +4,14 @@
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
+sub $0,2
+mov $1,$0
+lpb $0
+  trn $0,1
+  add $0,1
+  seq $0,72668 ; Numbers one less than composite numbers.
   mov $1,$0
-  trn $1,2
-  mul $0,2
-  sub $0,1
-  sub $0,$1
-  seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  mov $0,0
 lpe
+mov $0,$1
+add $0,1
