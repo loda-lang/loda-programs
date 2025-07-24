@@ -1,0 +1,28 @@
+; A348085: a(n) = [x^n] Product_{k=1..2*n} 1/(1 - (2*k-1) * x).
+; Submitted by Science United
+; 1,4,170,13776,1652442,262842580,52116296024,12380577235040,3427841258566890,1083931844930932140,385417972804020879450,152219732613102667656000,66113646914860527721527960,31319437721634527178263452656,16070573254332847726171921567888,8879313592352298860073540234801600,5255895032875345897789230889576284810,3318229908634011958552404056104748143260,2225691683344758051106719256715274482732030,1580598896920004099627418122929004361604912400,1184780256926098721461765354378915170672844957642
+; Formula: a(n) = truncate(A225476(9*binomial(n+1,2)-sqrtint(32*binomial(n+1,2)))/((9*binomial(n+1,2)-binomial(truncate((sqrtint(72*binomial(n+1,2)-8*sqrtint(32*binomial(n+1,2)))+1)/2),2)-sqrtint(32*binomial(n+1,2)))!))
+
+add $0,1
+bin $0,2
+mov $3,$0
+mul $3,32
+nrt $3,2
+sub $3,$0
+mul $0,4
+sub $3,$0
+mov $2,$0
+sub $2,$3
+mov $1,$2
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+bin $1,2
+mov $4,$2
+sub $4,$1
+seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $5,$2
+seq $5,225476 ; Triangle read by rows, k!*2^k*S_2(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+div $5,$4
+mov $0,$5
