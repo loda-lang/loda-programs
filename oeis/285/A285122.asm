@@ -6,7 +6,6 @@
 pow $0,2
 mov $2,$0
 mov $4,1
-mov $7,0
 add $0,1
 mov $3,$0
 lpb $3
@@ -25,6 +24,5 @@ lpe
 div $2,$7
 sub $2,$7
 sub $1,$2
-mov $0,$7
 mov $0,$1
 sub $0,1

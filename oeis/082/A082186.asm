@@ -4,7 +4,6 @@
 
 #offset 1
 
-mov $5,0
 mov $1,$0
 sub $1,1
 mov $3,$1
@@ -18,7 +17,6 @@ lpb $4
   lex $1,2
   add $5,$1
 lpe
-mov $1,$5
 mov $2,$5
 add $2,1
 mov $0,$2

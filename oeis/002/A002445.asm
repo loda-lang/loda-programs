@@ -1,30 +1,27 @@
 ; A002445: Denominators of Bernoulli numbers B_{2n}.
-; Submitted by fzs600
+; Submitted by Science United
 ; 1,6,30,42,30,66,2730,6,510,798,330,138,2730,6,870,14322,510,6,1919190,6,13530,1806,690,282,46410,66,1590,798,870,354,56786730,6,510,64722,30,4686,140100870,6,30,3318,230010,498,3404310,6,61410,272118,1410,6,4501770,6,33330,4326,1590,642,209191710,1518,1671270,42,1770,6,2328255930,6,30,4357878,510,8646,4206930,6,4110,274386,679470,6,2381714790,6,4470,2162622,30,138,1794590070,6
 
 mul $0,2
-equ $3,$0
-mov $6,$0
-mov $1,2
+equ $1,$0
+mov $5,2
 mov $2,$0
 lpb $2
   sub $2,2
-  mov $0,$6
-  sub $0,$2
-  mov $4,$0
-  mov $5,$0
-  gcd $5,$2
-  bin $5,$0
-  add $0,1
-  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $0,$4
-  add $0,1
-  mul $0,$1
-  mul $5,$0
-  max $1,$5
+  mov $6,$0
+  sub $6,$2
+  mov $3,$6
+  gcd $3,$2
+  bin $3,$6
+  mov $4,$6
+  mul $6,$3
+  add $6,1
+  seq $6,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $6,$4
+  add $6,1
+  mul $6,$5
+  mul $3,$6
+  max $5,$3
 lpe
-sub $0,1
-div $0,2
-add $0,1
-mul $0,2
-sub $0,$3
+mov $0,$5
+sub $0,$1

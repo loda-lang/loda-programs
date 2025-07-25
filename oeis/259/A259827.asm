@@ -16,10 +16,9 @@ lpb $0
   mul $2,2
   add $2,1
   seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
-  mul $6,$2
-  mov $2,$6
   mod $5,2
   add $5,1
+  mul $6,$2
   add $1,$6
   mov $3,1
   add $3,$4

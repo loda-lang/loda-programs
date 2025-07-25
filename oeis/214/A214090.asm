@@ -1,9 +1,8 @@
 ; A214090: Period 6: repeat [0, 0, 1, 0, 1, 1].
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0
-; Formula: a(n) = floor((35*(n%6))/4)%2
+; Formula: a(n) = -2*truncate(truncate(bitxor(n,1)/3)/2)+truncate(bitxor(n,1)/3)
 
-mod $0,6
-mul $0,35
-div $0,4
+bxo $0,1
+div $0,3
 mod $0,2

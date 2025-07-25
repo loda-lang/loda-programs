@@ -18,7 +18,6 @@ lpb $0
   add $5,1
   seq $5,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
   mul $5,$4
-  mov $2,$0
   mov $2,$5
   sub $2,4
   mul $2,$3

@@ -5,26 +5,16 @@
 #offset 2
 
 sub $0,2
-lpb $0
-  sub $0,1
-  mov $6,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,22597 ; Expansion of Product_{m >= 1} (1 + q^m)^(-2).
-    mov $9,10
-    sub $4,$0
-    sub $4,7
-    trn $4,3
-    add $6,$7
-  lpe
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+mov $3,8
+mov $1,3
+mov $2,$0
+add $2,3
+lpb $2
+  div $2,$1
+  sub $2,$1
+  sub $3,$1
+  mov $1,$3
 lpe
-mov $0,$15
-add $0,11
-mod $0,10
+mov $0,$1
+mul $0,3
+sub $0,8

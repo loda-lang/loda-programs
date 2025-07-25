@@ -18,7 +18,6 @@ lpb $4
   mov $6,$5
   mul $6,24
   nrt $6,3
-  sub $6,1
   div $6,2
   mov $7,$6
   mul $7,-2

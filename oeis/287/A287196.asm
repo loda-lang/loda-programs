@@ -13,7 +13,6 @@ mul $2,2
 mov $3,2
 pow $3,$2
 add $3,$1
-mov $4,0
 mov $5,1
 mov $0,$3
 sub $0,1
