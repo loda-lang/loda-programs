@@ -1,14 +1,13 @@
 ; A292058: Wiener index of the n X n rook complement graph.
+; Submitted by Science United
 ; 0,10,54,168,400,810,1470,2464,3888,5850,8470,11880,16224,21658,28350,36480,46240,57834,71478,87400,105840,127050,151294,178848,210000,245050,284310,328104,376768,430650,490110,555520,627264,705738,791350,884520,985680,1095274
-; Formula: a(n) = 2*binomial(-n+1,2)*(2*n+binomial(-n+1,2))
+; Formula: a(n) = 2*binomial(n,2)*(2*n+binomial(n,2))
 
 #offset 1
 
-sub $0,1
-sub $1,$0
-add $0,2
-sub $0,$1
-bin $1,2
-add $0,$1
+mov $1,$0
+bin $0,2
+mul $1,2
+add $1,$0
 mul $0,$1
 mul $0,2

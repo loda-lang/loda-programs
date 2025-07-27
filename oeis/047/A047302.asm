@@ -1,15 +1,13 @@
 ; A047302: Numbers that are congruent to {1, 2, 3, 4, 6} mod 7.
 ; Submitted by Science United
 ; 1,2,3,4,6,8,9,10,11,13,15,16,17,18,20,22,23,24,25,27,29,30,31,32,34,36,37,38,39,41,43,44,45,46,48,50,51,52,53,55,57,58,59,60,62,64,65,66,67,69,71,72,73,74,76,78,79
-; Formula: a(n) = floor((6*n)/5)+floor((n-1)/5)
+; Formula: a(n) = truncate((7*truncate((6*n-5)/5))/6)+1
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-add $0,2
-add $0,$1
-mul $0,3
+mul $0,6
+sub $0,5
 div $0,5
-div $1,5
-add $0,$1
+mul $0,7
+div $0,6
+add $0,1

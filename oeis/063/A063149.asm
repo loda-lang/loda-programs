@@ -1,11 +1,12 @@
 ; A063149: Composite numbers which in base 5 contain their largest proper factor as a substring.
+; Submitted by Athlici
 ; 25,35,55,65,85,95,115,125,145,155,175,185,205,215,235,245,265,275,295,305,325,335,355,365,385,395,415,425,445,455,475,485,505,515,535,545,565,575,595,605,625,635,655,665,685,695,715,725,745,755,775,785,805
-; Formula: a(n) = 10*truncate((3*n-3)/2)+25
+; Formula: a(n) = 5*bitor(3*n-3,1)+20
 
 #offset 1
 
 sub $0,1
 mul $0,3
-div $0,2
-mul $0,10
-add $0,25
+bor $0,1
+add $0,4
+mul $0,5

@@ -7,7 +7,6 @@
 sub $0,2
 mov $1,$0
 bin $1,2
-mov $2,0
 mov $4,$0
 sub $0,1
 mov $3,$0
@@ -16,7 +15,6 @@ add $3,$0
 add $3,$4
 lpb $4
   mov $0,$3
-  max $0,1
   sub $0,1
   seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   dif $2,$4

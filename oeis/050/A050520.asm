@@ -9,7 +9,6 @@ mov $1,$0
 seq $1,50518 ; An arithmetic progression of at least 6 terms having the same value of phi starts at these numbers.
 div $1,2
 seq $1,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
-sub $0,1
 mov $0,$1
 div $0,77760
 mul $0,155520

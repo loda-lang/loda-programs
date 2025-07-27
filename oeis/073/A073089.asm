@@ -4,11 +4,19 @@
 
 #offset 1
 
-sub $0,1
 lpb $0
-  add $1,$0
-  dif $0,2
+  sub $0,1
+  mov $1,$3
+  add $1,1
+  mov $4,$1
+  bin $4,2
+  dir $4,2
+  div $4,2
+  mod $4,2
+  equ $4,0
+  sub $1,1
+  equ $2,$1
+  add $3,2
+  sub $4,$2
 lpe
-add $0,$1
-div $0,2
-mod $0,2
+mov $0,$4

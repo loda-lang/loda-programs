@@ -1,12 +1,11 @@
 ; A092202: Expansion of (x - x^3) / (1 - x^5) in powers of x.
-; Submitted by Mads Nissen
+; Submitted by Orange Kid
 ; 0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0,0,1,0,-1,0
-; Formula: a(n) = truncate(1/(gcd(n%5-1,4)-3))
+; Formula: a(n) = 2*truncate((n%5-2)/2)-(n%5)+2
 
 mod $0,5
-sub $0,1
-gcd $0,4
-sub $0,3
-mov $1,1
-div $1,$0
+sub $0,2
+mod $0,2
+mov $1,$0
+mul $1,-1
 mov $0,$1

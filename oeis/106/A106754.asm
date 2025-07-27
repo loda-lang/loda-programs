@@ -1,24 +1,29 @@
 ; A106754: Primes p with digital sum equal to 11.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 29,47,83,137,173,191,227,263,281,317,353,443,461,641,821,911,1019,1091,1109,1163,1181,1217,1307,1361,1433,1451,1523,1613,1721,1811,1901,2027,2063,2081,2153,2207,2243,2333,2351,2423,2441,2531,2621,2711,2801,3251,3323,3413,3701,4007,4133,4241,4421,5051,5231,5303,5501,6113,6131,6203,6221,6311,7013,7103,7121,7211,8111,9011,10037,10091,10163,10181,10253,10271,10343,10433,10613,10631,11027,11117
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,1
-pow $2,2
+mov $1,10
+mov $2,$0
+add $0,1
+add $2,12
+pow $2,4
 lpb $2
+  sub $2,$0
+  mov $4,$1
+  add $4,1
+  seq $4,48785 ; a(0) = 0; a(n) = tau(n^3), where tau = number of divisors (A000005).
+  sub $4,2
   mov $3,$1
-  seq $3,166311 ; Numbers whose sum of digits is 11.
-  mov $5,$3
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  dgs $3,10
+  mul $3,2
+  div $3,$4
+  div $3,2
+  equ $3,5
   sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+  add $1,3
 lpe
-mov $0,$5
+mov $0,$1
+sub $0,2

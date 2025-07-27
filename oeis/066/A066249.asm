@@ -1,5 +1,5 @@
 ; A066249: Inverse permutation to A066248.
-; Submitted by Science United
+; Submitted by gemini8
 ; 3,1,5,2,7,4,8,6,9,10,11,12,13,16,14,18,15,22,17,28,19,30,20,36,21,40,23,42,24,46,25,52,26,58,27,60,29,66,31,70,32,72,33,78,34,82,35,88,37,96,38,100,39,102,41,106,43,108,44,112,45,126,47,130,48,136,49,138,50
 
 #offset 1
@@ -9,13 +9,12 @@ mov $1,-1
 pow $1,$0
 add $0,$1
 add $0,1
+mov $2,2
 mov $3,$0
 add $0,1
 pow $3,5
 lpb $3
   mov $4,$2
-  add $6,1
-  max $2,2
   seq $4,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
   mul $4,2
   add $4,1
@@ -30,5 +29,5 @@ lpb $3
   add $3,$4
   sub $3,$0
 lpe
-mov $0,$6
-add $0,1
+mov $0,$2
+sub $0,1

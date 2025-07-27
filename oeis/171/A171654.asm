@@ -1,10 +1,9 @@
 ; A171654: Period 10: repeat 0, 1, 6, 7, 2, 3, 8, 9, 4, 5.
-; Submitted by Science United
+; Submitted by omegaintellisys
 ; 0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5,0,1,6,7,2,3,8,9,4,5
-; Formula: a(n) = (4*floor(n/2)+n)%10
+; Formula: a(n) = -10*truncate((bitxor(3*n,1)-1)/10)+bitxor(3*n,1)-1
 
-mov $1,$0
-div $1,2
-mul $1,4
-add $0,$1
+mul $0,3
+bxo $0,1
+sub $0,1
 mod $0,10
