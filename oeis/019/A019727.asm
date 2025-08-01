@@ -1,21 +1,32 @@
 ; A019727: Decimal expansion of sqrt(2*Pi).
-; Submitted by shiva
+; Submitted by LCB001
 ; 2,5,0,6,6,2,8,2,7,4,6,3,1,0,0,0,5,0,2,4,1,5,7,6,5,2,8,4,8,1,1,0,4,5,2,5,3,0,0,6,9,8,6,7,4,0,6,0,9,9,3,8,3,1,6,6,2,9,9,2,3,5,7,6,3,4,2,2,9,3,6,5,4,6,0,7,8,4,1,9
 
 #offset 1
 
-sub $0,1
 mul $0,2
-seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
-mov $1,$0
-mul $1,2
-mov $2,7
-lpb $0
-  div $2,$0
-  add $2,1
-  add $0,$2
-  div $0,2
-  add $2,$1
+sub $0,1
+mov $4,1
+mov $6,$0
+mul $6,5
+lpb $6
+  max $6,1
+  max $3,$5
+  div $3,$6
+  add $5,$4
+  sub $6,1
+  mul $4,2
+  add $4,$3
 lpe
 sub $0,1
+mov $2,10
+pow $2,$0
+div $5,$2
+mul $4,2
+div $4,$5
+mov $1,$4
+mul $1,8
+nrt $1,2
+div $1,2
+mov $0,$1
 mod $0,10

@@ -161,6 +161,7 @@ A036582: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036583: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036585: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036987: Fredholm-Rueppel sequence.
+A037022: Triangle in which row n has the first n digits of sqrt(n) (truncated).
 A037126: Triangle T(n,k) = prime(k) for k = 1..n.
 A037178: Longest cycle when squaring modulo n-th prime.
 A037813: Number of i such that d(i)<=d(i-1), where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.

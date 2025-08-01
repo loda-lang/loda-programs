@@ -1,21 +1,19 @@
 ; A005044: Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,0,0,1,0,1,1,2,1,3,2,4,3,5,4,7,5,8,7,10,8,12,10,14,12,16,14,19,16,21,19,24,21,27,24,30,27,33,30,37,33,40,37,44,40,48,44,52,48,56,52,61,56,65,61,70,65,75,70,80,75,85,80,91,85,96,91,102,96,108,102,114,108,120,114,127,120,133,127,140
-; Formula: a(n) = truncate(((truncate((n-1)/2)+2)^2+truncate((gcd(n-2,2)^3+6)/6)*(-n+2)+n+1)/12)
+; Formula: a(n) = truncate(((floor((n+1)/2)+2)^2-n*truncate((gcd(n,2)^3+6)/6))/12)
 
+add $0,1
+mov $2,$0
+div $2,2
+add $2,2
+pow $2,2
 sub $0,1
-mov $1,$0
-div $1,2
-add $1,2
-pow $1,2
-add $1,2
-add $1,$0
-sub $0,1
-sub $2,$0
+sub $1,$0
 gcd $0,2
 pow $0,3
 add $0,6
 div $0,6
-mul $0,$2
-add $0,$1
+mul $0,$1
+add $0,$2
 div $0,12

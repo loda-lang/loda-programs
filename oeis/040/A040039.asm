@@ -1,9 +1,32 @@
 ; A040039: First differences of A033485; also A033485 with terms repeated.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,1,2,2,3,3,5,5,7,7,10,10,13,13,18,18,23,23,30,30,37,37,47,47,57,57,70,70,83,83,101,101,119,119,142,142,165,165,195,195,225,225,262,262,299,299,346,346,393,393,450,450,507,507,577,577,647,647,730,730,813,813,914,914,1015,1015,1134,1134,1253,1253,1395,1395,1537,1537,1702,1702,1867,1867,2062,2062
-; Formula: a(n) = truncate(A000123(floor((n+2)/2))/2)
 
-add $0,2
-div $0,2
-seq $0,123 ; Number of binary partitions: number of partitions of 2n into powers of 2.
-div $0,2
+add $0,1
+mov $2,$0
+mov $10,1
+lpb $0
+  sub $0,1
+  sub $10,$6
+  mov $4,$2
+  add $4,$0
+  lpb $4
+    sub $4,1
+    sub $4,$0
+    mov $9,10
+    add $9,$5
+    sub $2,1
+    equ $7,$8
+    mul $7,$$9
+    mov $5,$4
+    mul $5,2
+    add $6,$7
+  lpe
+  mov $9,10
+  add $9,$2
+  mov $10,$6
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+mov $0,$3

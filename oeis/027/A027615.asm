@@ -1,17 +1,16 @@
 ; A027615: Number of 1's when n is written in base -2.
-; Submitted by Science United
+; Submitted by Coleslaw
 ; 0,1,2,3,1,2,3,4,2,3,4,5,3,4,2,3,1,2,3,4,2,3,4,5,3,4,5,6,4,5,3,4,2,3,4,5,3,4,5,6,4,5,6,7,5,6,4,5,3,4,5,6,4,5,3,4,2,3,4,5,3,4,2,3,1,2,3,4,2,3,4,5,3,4,5,6,4,5,3,4
 
-sub $1,$0
-mov $2,2
-lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  add $0,2
-  div $0,4
-  add $1,$3
-  mul $2,4
+mov $2,$0
+mov $3,2
+mov $1,$0
+div $1,2
+lpb $1
+  div $1,3
+  add $2,$3
+  bxo $2,$3
+  mul $3,4
 lpe
-mov $0,$1
+mov $0,$2
 dgs $0,2

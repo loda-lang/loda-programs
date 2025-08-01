@@ -70,6 +70,7 @@ A014692: a(n) = prime(n) - (n-1).
 A014709: The regular paper-folding (or dragon curve) sequence.
 A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
+A016775: (3*n)^11.
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A020908: Number of terms in Zeckendorf representation of 2^n.
 A021260: Decimal expansion of 1/256.

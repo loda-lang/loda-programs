@@ -5,8 +5,6 @@
 
 #offset 1
 
-mov $1,$0
-pow $1,2
-mul $1,5
-nrt $1,2
-mov $0,$1
+pow $0,2
+mul $0,5
+nrt $0,2
