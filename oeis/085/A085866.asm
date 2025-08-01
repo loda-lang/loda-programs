@@ -1,14 +1,13 @@
 ; A085866: a(1) = 3, a(n+1) = a(n)*phi(a(n)), where phi(n) is Euler's totient function.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 3,6,12,48,768,196608,12884901888,55340232221128654848,1020847100762815390390123822295304634368,347376267711948586270712955026063723559809953996921692118372752023739388919808
-; Formula: a(n) = 3*2^floor((2^(n-1))/2)
+; Formula: a(n) = 3*2^truncate(2^(n-2))
 
 #offset 1
 
-sub $0,1
+sub $0,2
 mov $1,2
 pow $1,$0
-div $1,2
 mov $0,2
 pow $0,$1
 mul $0,3

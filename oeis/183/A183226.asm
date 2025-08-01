@@ -1,13 +1,9 @@
 ; A183226: Sum of digits of (2^n) in base 5, also sum of digits of (10^n) in base 5.
-; Submitted by Simon Strandgaard
+; Submitted by Rantanplan
 ; 1,2,4,4,4,4,8,4,4,8,12,12,12,12,8,12,16,20,20,20,16,12,20,24,28,20,32,32,24,32,40,40,32,24,28,32,32,40,28,36,36,40,44,40,36,40,36,44,44,44,44,48,52,52,48,56,40,56,68,60,52,52,48,60,56,64,60,48,56,60,60,64,60,60,60,64,52,48,64,68
+; Formula: a(n) = sumdigits(10^n,5)
 
-mov $1,2
+mov $1,10
 pow $1,$0
-lpb $1
-  mov $3,$1
-  mod $3,5
-  div $1,5
-  add $2,$3
-lpe
-mov $0,$2
+dgs $1,5
+mov $0,$1

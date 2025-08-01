@@ -9,7 +9,6 @@ nrt $2,2
 sub $2,1
 div $2,2
 mov $3,3
-mov $4,0
 mov $1,$2
 add $1,1
 bin $1,2

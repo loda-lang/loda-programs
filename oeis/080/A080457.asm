@@ -1,12 +1,11 @@
 ; A080457: a(1)=3; for n>1, a(n)=a(n-1) if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Solidair79
 ; 3,7,7,11,15,19,19,23,27,31,31,35,39,43,43,47,51,55,55,59,63,67,67,71,75,79,79,83,87,91,91,95,99,103,103,107,111,115,115,119,123,127,127,131,135,139,139,143,147,151,151,155,159,163,163,167,171,175
-; Formula: a(n) = 4*truncate((3*n-2)/4)+3
+; Formula: a(n) = bitor(3*n-6,3)+4
 
 #offset 1
 
-mul $0,3
 sub $0,2
-div $0,4
-mul $0,4
-add $0,3
+mul $0,3
+bor $0,3
+add $0,4

@@ -1,11 +1,13 @@
 ; A141265: Concatenate first n factorials in reverse order.
-; Submitted by Science United
+; Submitted by Steve Dodd
 ; 1,21,621,24621,12024621,72012024621,504072012024621,40320504072012024621,36288040320504072012024621,362880036288040320504072012024621
 
 add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,38507 ; a(n) = n! + 1.
+  mov $5,1
+  fac $5,$0
+  mov $2,$5
+  add $2,1
   mov $3,$2
   log $3,10
   add $3,1

@@ -1,5 +1,5 @@
 ; A379012: a(n) = A034444(n) if n is powerful (A001694), and 0 otherwise.
-; Submitted by Science United
+; Submitted by Coleslaw
 ; 1,0,0,2,0,0,0,2,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,2,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0
 
 #offset 1
@@ -12,6 +12,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
+    mul $4,$1
     neq $4,0
     add $2,1
     sub $3,$4
@@ -19,7 +20,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
-    seq $5,78007 ; Expansion of (1-x)/(1-x-2*x^2-x^3).
+    seq $5,78008 ; Expansion of (1 - x)/((1 + x)*(1 - 2*x)).
     mov $4,2
   lpe
   mul $1,$5

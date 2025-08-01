@@ -6,7 +6,6 @@
 
 mov $2,9
 mul $0,8
-sub $0,7
 nrt $0,2
 add $0,1
 div $0,2

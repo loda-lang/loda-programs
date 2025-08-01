@@ -1,15 +1,14 @@
 ; A190236: a(n) = [n*u + n*v] -[n*u] -[n*v], where u=1/2, v=(1+sqrt(5))/2, and []=floor.
-; Submitted by Science United
+; Submitted by LCB001
 ; 1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0
+; Formula: a(n) = n*(sqrtint(5*n^2)+n)-2*truncate((n*(sqrtint(5*n^2)+n))/2)
 
 #offset 1
 
 mov $1,$0
-dif $0,2
-mul $1,4
-add $1,$0
-mul $1,$0
-nrt $1,2
-add $1,$0
-mov $0,$1
+pow $0,2
+mul $0,5
+nrt $0,2
+add $0,$1
+mul $0,$1
 mod $0,2

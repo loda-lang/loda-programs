@@ -1,4 +1,4 @@
-; A153844: First Sunday in n-th month of 365-day year starting on Friday
+; A153844: First Sunday in n-th month of 365-day year starting on Friday.
 ; Submitted by Dave Studdert
 ; 3,7,7,4,2,6,4,1,5,3,7,5
 ; Formula: a(n) = -truncate((24*floor((4*((n-1)%16))/3)-40)/9)-7*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)-10*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+19)/7)-10*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+20

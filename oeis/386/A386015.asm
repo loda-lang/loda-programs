@@ -1,18 +1,14 @@
 ; A386015: Number of parking functions of size n with a descent in the first position.
-; Submitted by Science United
+; Submitted by Eric
 ; 0,1,6,50,540,7203,114688,2125764,45000000,1071794405,28378791936,827150951094,26322173602816,908224365234375,33776997205278720,1347022612475207432,57346445240058396672,2595972722108590509129,124518400000000000000000,6308807923967155297895610,336682260736692839281065984
+; Formula: a(n) = truncate((n*truncate((n+1)^(n-2)))/2)
 
 #offset 1
 
-sub $0,1
-mov $1,2
-mov $2,$0
-add $2,1
-lpb $0
-  sub $0,1
-  mov $3,$1
-  mul $3,$2
-  add $1,$3
-lpe
-mov $0,$3
-div $0,4
+mov $1,$0
+sub $1,2
+add $0,1
+pow $0,$1
+add $1,2
+mul $0,$1
+div $0,2

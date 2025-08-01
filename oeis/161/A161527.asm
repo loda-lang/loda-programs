@@ -1,7 +1,7 @@
 ; A161527: Numerators of cumulative sums of rational sequence A038110(k)/A038111(k).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,2,11,27,61,809,13945,268027,565447,2358365,73551683,2734683311,112599773191,4860900544813,9968041656757,40762420985117,83151858555707,5085105491885327,341472595155548909,24295409051193284539,1777124696397561611347,140649159182959899776413,285216396323287054021519,25424243346910742874795191,2469670203174503224740573527,249774475978944297623800166227,1515326445391953520455978889493,3063067942111900185731907267467,334279748240180486554780580153903,37817388546538598542170495861391039
-; Formula: a(n) = truncate((floor(max(2*truncate(A102476(n+1)/4)-A109606(2*truncate(A102476(n+1)/4))-2,0)/2)+1)/gcd(floor(max(2*truncate(A102476(n+1)/4)-A109606(2*truncate(A102476(n+1)/4))-2,0)/2)+1,A034386(A000961(n-1))))
+; Formula: a(n) = truncate(truncate((2*truncate(A102476(n+1)/4)-A109606(2*truncate(A102476(n+1)/4)))/2)/gcd(truncate((2*truncate(A102476(n+1)/4)-A109606(2*truncate(A102476(n+1)/4)))/2),A034386(A000961(n))))
 
 #offset 1
 
@@ -13,12 +13,8 @@ mul $1,2
 mov $3,$1
 seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 sub $1,$3
-sub $1,1
-trn $1,1
 div $1,2
-add $1,1
 mov $2,$1
-sub $0,1
 seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
 seq $0,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
 gcd $1,$0

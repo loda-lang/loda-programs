@@ -1,15 +1,15 @@
 ; A103704: Add 5 to each of the preceding digits, beginning with 1.
-; Submitted by Science United
+; Submitted by jprange
 ; 1,6,11,6,6,11,11,6,6,6,6,11,11,11,11,6,6,6,6,6,6,6,6,11,11,11,11,11,11,11,11,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
 
 #offset 1
 
-max $2,$0
-lpb $2
+sub $0,1
+lpb $0
   mov $1,$0
-  mov $0,$2
-  div $2,2
+  sub $0,1
+  div $0,2
 lpe
 mov $0,$1
 mul $0,5
-sub $0,4
+add $0,1

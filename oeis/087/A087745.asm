@@ -1,15 +1,13 @@
 ; A087745: Numbers A001317 repeated.
-; Submitted by Jave808
+; Submitted by Science United
 ; 1,1,3,3,5,5,15,15,17,17,51,51,85,85,255,255,257,257,771,771,1285,1285,3855,3855,4369,4369,13107,13107,21845,21845,65535,65535,65537,65537,196611,196611,327685,327685,983055,983055,1114129,1114129
-; Formula: a(n) = truncate(b(n)/2), b(n) = sign(3*sign(b(n-2))*sign(2*b(n-2))+sign(2*b(n-2))+sign(b(n-2)))*bitxor(abs(2*b(n-2)),abs(b(n-2))), b(1) = 2, b(0) = 2
+; Formula: a(n) = bitxor(2*a(n-2),a(n-2)), a(1) = 1, a(0) = 1
 
-mov $1,2
+mov $1,1
 lpb $0
   sub $0,2
   mov $2,$1
-  mov $1,2
-  mul $1,$2
+  mul $1,2
   bxo $1,$2
 lpe
 mov $0,$1
-div $0,2

@@ -11,8 +11,6 @@ mul $1,8
 nrt $1,2
 sub $1,1
 div $1,2
-mov $2,$1
-add $2,1
 mov $0,$1
 add $0,2
 seq $0,6882 ; Double factorials n!!: a(n) = n*a(n-2) for n > 1, a(0) = a(1) = 1.

@@ -1,31 +1,28 @@
 ; A277087: a(0) = 1, a(n) = (denominator of the Bernoulli number B_{2n})/3, for n>=1.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,2,10,14,10,22,910,2,170,266,110,46,910,2,290,4774,170,2,639730,2,4510,602,230,94,15470,22,530,266,290,118,18928910,2,170,21574,10,1562,46700290,2,10,1106,76670,166,1134770,2,20470,90706,470,2,1500590,2,11110,1442,530,214,69730570,506,557090,14,590,2,776085310,2,10,1452626,170,2882,1402310,2,1370,91462,226490,2,793904930,2,1490,720874,10,46,598196690,2
 
 mul $0,2
-equ $3,$0
-mov $6,$0
-trn $0,2
 mov $1,2
 mov $2,$0
 lpb $2
   sub $2,2
-  mov $0,$6
-  sub $0,$2
-  mov $4,$0
   mov $5,$0
-  gcd $5,$2
-  bin $5,$0
-  add $0,1
-  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $0,$4
-  add $0,1
-  mul $0,$1
-  mul $5,$0
-  max $1,$5
+  sub $5,$2
+  mov $3,$5
+  mov $4,$5
+  gcd $4,$2
+  bin $4,$5
+  mul $5,$4
+  add $5,1
+  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $5,$3
+  add $5,1
+  mul $5,$1
+  mul $4,$5
+  max $1,$4
 lpe
+mov $0,$1
 sub $0,1
-div $0,2
+div $0,3
 add $0,1
-mul $0,2
-sub $0,$3

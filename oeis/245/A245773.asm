@@ -31,7 +31,6 @@ lpb $2
   sub $0,1
   mov $5,$0
   pow $5,$8
-  mov $6,$8
   mov $10,$5
   mul $10,8
   add $10,1

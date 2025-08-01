@@ -14,8 +14,5 @@ lpb $1
   add $0,1
   seq $0,40 ; The prime numbers.
   nrt $0,2
-  mul $0,2
-  add $0,1
-  div $0,2
   add $0,$2
 lpe

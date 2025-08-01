@@ -12,9 +12,6 @@ div $1,2
 mov $4,$1
 add $4,1
 bin $4,2
-mov $7,0
-mov $9,0
-mov $10,0
 mov $3,$0
 sub $3,$4
 sub $3,1

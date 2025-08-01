@@ -8,7 +8,6 @@ mov $2,$0
 seq $2,40 ; The prime numbers.
 mov $1,1
 add $1,$2
-sub $0,2
 mov $0,$1
 div $0,2
 sub $0,1

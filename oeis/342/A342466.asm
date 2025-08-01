@@ -4,6 +4,16 @@
 
 #offset 1
 
-seq $0,337194 ; a(n) = 1 + A000265(sigma(n)), where A000265 gives the odd part.
+mov $3,$0
+sub $3,1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+dir $1,2
+mov $0,$1
+add $0,1
 seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
 dir $0,2

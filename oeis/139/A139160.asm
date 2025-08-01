@@ -1,15 +1,12 @@
 ; A139160: a(n)=(prime(n)!+2)/2.
-; Submitted by Jamie Morken(s1)
+; Submitted by Science United
 ; 2,4,61,2521,19958401,3113510401,177843714048001,60822550204416001,12926008369442488320001,4420880996869850977271808000001,4111419327088961408862781440000001
 
 #offset 1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-mov $2,$0
-lpb $0
-  sub $0,2
-  add $1,$0
-  mul $2,$1
-lpe
-mov $0,$2
+seq $0,40 ; The prime numbers.
+mov $1,1
+fac $1,$0
+mov $0,$1
+div $0,2
 add $0,1

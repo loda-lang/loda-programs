@@ -12,10 +12,7 @@ lpb $2
   sub $2,2
   mov $3,$1
   add $3,4
-  mov $6,$3
   seq $3,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-  lex $6,$3
-  add $3,$6
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,2
   mov $5,$3
