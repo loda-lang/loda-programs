@@ -1,5 +1,5 @@
 ; A132443: Number of n x n crossword puzzles with rotational symmetry and exactly one black square per row.
-; Submitted by skildude
+; Submitted by Science United
 ; 0,0,0,2,2,10,12,120,186
 
 #offset 3
@@ -15,6 +15,7 @@ lpb $0
   add $1,$4
   add $4,1
   mul $5,$1
+  bin $1,$3
   max $1,$4
   mul $3,$2
   div $3,$4

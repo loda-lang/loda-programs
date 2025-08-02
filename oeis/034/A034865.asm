@@ -4,9 +4,8 @@
 
 #offset 4
 
-sub $0,5
-mov $1,6
+sub $0,4
+mov $1,5
 fac $1,$0
-add $0,1
 mul $0,$1
-mul $0,60
+mul $0,12

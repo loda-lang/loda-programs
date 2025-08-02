@@ -9,16 +9,14 @@ mul $1,8
 nrt $1,2
 sub $1,1
 div $1,2
-mov $2,1
-mov $3,$1
-add $3,1
-bin $3,2
-sub $0,$3
-mov $3,$0
-bin $0,$3
-sub $1,$3
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $1,$0
 lpb $1
   sub $1,1
-  mul $2,$1
 lpe
-mul $0,$2
+mov $0,$1
+add $0,2
+mod $0,2

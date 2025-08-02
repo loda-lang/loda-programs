@@ -1,5 +1,5 @@
 ; A123081: Infinite square array read by antidiagonals: T(n,k) = Bell(n+k) = A000110(n+k).
-; Submitted by Bill F
+; Submitted by Science United
 ; 1,1,1,2,2,2,5,5,5,5,15,15,15,15,15,52,52,52,52,52,52,203,203,203,203,203,203,203,877,877,877,877,877,877,877,877,4140,4140,4140,4140,4140,4140,4140,4140,4140,21147,21147,21147,21147,21147,21147,21147,21147,21147,21147,115975,115975,115975,115975,115975,115975,115975,115975,115975,115975,115975,678570,678570,678570,678570,678570,678570,678570,678570,678570,678570,678570,678570,4213597,4213597
 
 mov $1,$0
@@ -8,20 +8,12 @@ add $1,1
 nrt $1,2
 add $1,1
 div $1,2
-mov $4,$1
 sub $1,1
-mov $3,$1
-bin $3,2
-add $3,$1
-add $3,$4
-lpb $4
-  mov $1,$3
-  max $1,1
-  sub $1,1
-  seq $1,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  dif $2,$4
-  add $2,$1
-  sub $3,1
-  sub $4,1
+seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $2,2
+lpb $2
+  equ $2,1
+  mul $1,841
 lpe
-mov $0,$2
+mov $0,$1
+div $0,841
