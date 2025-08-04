@@ -1,15 +1,10 @@
 ; A075069: Product of prime(n) consecutive numbers starting from prime(n).
-; Submitted by Jon Maiga
+; Submitted by drnickrivera
 ; 6,60,15120,8648640,14079294028800,32382376266240000,415017197290314178560000,2149789081963827444940800000,106425394494182556214892101632000000,132923807095642467606593507268303331000320000000
 
 #offset 1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-max $0,2
-lpb $0
-  mov $1,$0
-  seq $1,151817 ; a(n) = 2*(2*n)!/n!.
-  div $0,$1
-lpe
+seq $0,40 ; The prime numbers.
+add $1,$0
+fac $1,$0
 mov $0,$1
-div $0,4

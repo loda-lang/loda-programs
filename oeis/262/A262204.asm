@@ -1,15 +1,11 @@
 ; A262204: a(n) = (2*prime(n))! / prime(n)!.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 12,120,30240,17297280,28158588057600,64764752532480000,830034394580628357120000,4299578163927654889881600000,212850788988365112429784203264000000,265847614191284935213187014536606662000640000000
 
 #offset 1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-max $0,2
-lpb $0
-  mov $1,$0
-  seq $1,151817 ; a(n) = 2*(2*n)!/n!.
-  div $0,$1
-lpe
+seq $0,40 ; The prime numbers.
+mov $1,$0
+fac $1,$0
 mov $0,$1
-div $0,2
+mul $0,2

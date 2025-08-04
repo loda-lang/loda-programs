@@ -10,23 +10,19 @@ lpb $0
   max $3,0
   mul $3,25
   div $3,2
-  mul $3,3
-  add $3,4
+  mul $3,24
+  add $3,25
+  mov $6,$3
+  nrt $3,2
+  mov $7,$3
   mov $1,$3
-  mul $1,8
-  nrt $1,2
-  sub $1,1
-  div $1,2
-  mov $6,$1
-  add $6,1
-  bin $6,2
-  sub $3,2
-  sub $3,$6
-  bin $3,$1
-  mul $1,2
   add $1,1
-  mul $1,$3
-  mov $3,$1
+  mod $1,4
+  sub $1,1
+  pow $3,2
+  equ $3,$6
+  mul $3,$7
+  mul $3,$1
   mul $3,2
   mod $3,3
   dif $3,-2

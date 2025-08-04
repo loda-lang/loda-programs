@@ -1,4 +1,4 @@
-; A187804: Number of circular permutations of length n whose n flattenings are all not derangements
+; A187804: Number of circular permutations of length n whose n flattenings are all not derangements.
 ; Submitted by BrandyNOW
 ; 1,0,3,0,19,0,0,0
 

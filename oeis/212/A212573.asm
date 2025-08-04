@@ -5,7 +5,6 @@ lpb $0
   mov $2,$0
   sub $2,2
   mov $0,$2
-  max $2,0
   add $2,1
   mov $7,0
   sub $7,$2

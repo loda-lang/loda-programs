@@ -13,9 +13,18 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $6,$5
+  bin $6,2
   mov $4,$0
-  seq $4,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
+  sub $4,1
+  sub $4,$6
+  bin $4,$5
+  sub $0,1
   seq $0,118384 ; Gaussian column reduction of Hankel matrix for central Delannoy numbers.
   pow $0,2
   mul $0,$4

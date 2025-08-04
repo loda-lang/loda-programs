@@ -1,20 +1,12 @@
 ; A205795: Sums of coefficients of polynomials from 5n-th moments of X ~ Hypergeometric(4m, 5m, m).
-; Submitted by Athlici
+; Submitted by Coleslaw
 ; 24,2880,43545600,5230697472000,2432902008176640000,3102242008666197196800000,8841761993739701954543616000000,49205466506600690141269768273920000000,485663859076129603777149565235783270400000000,7911522544013240381082219675638737768808448000000000
-; Formula: a(n) = 24*binomial(5*n-5,n-1)*b(max(4*n-4,0)), b(n) = n*b(n-1), b(0) = 1
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-mov $2,1
+sub $0,1
 mul $0,4
-mov $3,$0
-lpb $3
-  mul $2,$3
-  sub $3,1
-lpe
-add $0,$1
-bin $0,$1
-mul $0,$2
+fac $1,$0
+mov $0,$1
 mul $0,24

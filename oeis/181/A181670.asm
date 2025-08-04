@@ -25,8 +25,6 @@ sub $5,1
 div $5,2
 mov $6,2
 pow $6,$5
-mov $1,$3
 mov $2,$6
 mod $2,$3
-mov $0,$6
 mov $0,$2

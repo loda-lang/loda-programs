@@ -1,9 +1,8 @@
 ; A107943: a(n) = (n+1)*(n+2)^2*(n+3)^2*(n+4)^2*(n+5)*(2n+3)/8640.
-; Submitted by pututu
+; Submitted by Science United
 ; 1,25,245,1470,6468,22932,69300,185130,448305,1002001,2095093,4140500,7796880,14080080,24511824,41314284,67660425,107991345,168413245,257188162,385334180,567352500,822100500,1173831750,1653425865
-; Formula: a(n) = a(n-1)+floor((floor((binomial(n+4,4)*binomial(3*n+6,2))/15)*binomial(n+3,2))/3), a(0) = 1
+; Formula: a(n) = truncate(b(n)/45)+1, b(n) = binomial(n+3,2)*binomial(n+4,4)*binomial(3*n+6,2)+b(n-1), b(0) = 0
 
-mov $1,1
 lpb $0
   mov $3,$0
   add $3,3
@@ -16,10 +15,10 @@ lpb $0
   mul $2,3
   bin $2,2
   mul $2,$4
-  div $2,15
   mul $2,$3
-  div $2,3
   sub $0,1
   add $1,$2
 lpe
 mov $0,$1
+div $0,45
+add $0,1

@@ -1,29 +1,32 @@
 ; A068431: Expansion of sqrt(Pi) in base 2.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 1,1,1,0,0,0,1,0,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,1,1,0,1,1,0,1,0,0,1,1,1,0,1,1,1,1,0,1,1,0,1,0,1,0,1,0,1,0,0,1,1,1,1,0,0,1,1,1,0,0,0,0,1,1,1,0,1,1,0,0,0
 
 #offset 1
 
-mov $4,2
-mov $2,1
-mov $3,$0
-mul $3,5
+sub $0,1
+mov $2,$0
+add $2,$0
+add $2,2
+mov $5,1
+mov $3,$2
+mul $3,2
 lpb $3
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  div $1,$0
-  div $2,$0
+  mov $4,$3
+  mul $4,2
+  add $4,1
+  mul $5,$4
+  mul $6,$3
+  add $6,$5
+  div $6,$2
   sub $3,1
+  div $5,$2
 lpe
-pow $4,$0
-div $2,$4
-div $2,$4
-mul $2,2
-div $1,$2
-nrt $1,2
-mov $0,$1
+mov $1,2
+pow $1,$2
+mul $5,2
+mul $6,$1
+div $6,$5
+max $0,$6
+nrt $0,2
 mod $0,2
