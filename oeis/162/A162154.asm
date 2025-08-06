@@ -21,7 +21,6 @@ lpb $5
   sub $6,$0
   sub $6,$0
   mov $0,$6
-  sub $0,6
   div $0,2
   mul $0,2
   sub $0,$1

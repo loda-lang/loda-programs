@@ -1,27 +1,22 @@
 ; A357107: Decimal expansion of the real root of 2*x^3 - x - 2.
-; Submitted by BrandyNOW
+; Submitted by Ncard00
 ; 1,1,6,5,3,7,3,0,4,3,0,6,2,4,1,4,7,1,6,9,5,6,3,5,8,4,3,4,5,1,7,7,9,8,0,8,2,5,4,2,8,8,7,3,1,8,8,2,0,0,4,8,6,1,3,3,4,4,2,6,6,3,1,1,6,4,8,4,4,8,4,7,1,4,0,1,1,5
+; Formula: a(n) = -10*truncate(truncate(d(n+168)/truncate(c(n+168)/(10^(n-1))))/10)+truncate(d(n+168)/truncate(c(n+168)/(10^(n-1)))), b(n) = 4*c(n-1)+2*e(n-1)+2*max(b(n-1),1), b(3) = 84, b(2) = 12, b(1) = 2, b(0) = 0, c(n) = 5*c(n-1)+2*e(n-1)+2*max(-c(n-2)+c(n-1),1), c(4) = 690, c(3) = 98, c(2) = 14, c(1) = 2, c(0) = 0, d(n) = 5*c(n-1)+2*e(n-1)+2*max(b(n-1),1)+d(n-1), d(3) = 114, d(2) = 16, d(1) = 2, d(0) = 0, e(n) = c(n-1)+e(n-1), e(3) = 16, e(2) = 2, e(1) = 0, e(0) = 0
 
 #offset 1
 
-sub $0,1
 mov $3,$0
-mul $3,5
-add $3,2
+sub $0,1
+add $3,168
 lpb $3
-  sub $3,2
-  add $6,$4
-  mov $2,5
-  add $2,$7
-  equ $1,1
+  sub $3,1
+  add $6,$2
+  max $1,1
   add $1,$6
   add $1,$2
-  add $2,$6
+  mul $1,2
   add $2,$1
   add $5,$2
-  add $6,$5
-  add $4,$5
-  add $7,$1
 lpe
 mov $4,10
 pow $4,$0

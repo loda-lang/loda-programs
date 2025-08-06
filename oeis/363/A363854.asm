@@ -1,19 +1,17 @@
 ; A363854: Number of divisors of 7*n-2 of form 7*k+6.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 0,1,0,1,0,1,0,2,0,1,0,1,0,2,0,1,1,1,0,2,0,1,0,1,0,3,0,1,0,2,0,2,0,1,1,1,0,2,0,1,0,1,1,3,0,2,0,1,0,2,0,1,1,1,0,3,0,1,0,1,0,4,0,1,0,2,0,2,1,1,1,1,0,2,0,1,0,2,0,3
 
 #offset 1
 
 mov $1,4
-add $0,1
 lpb $0
-  sub $0,3
+  sub $0,2
   add $1,2
   mov $2,$0
   gcd $2,$1
   div $2,$1
   add $3,$2
-  add $0,1
   add $1,5
 lpe
 mov $0,$3

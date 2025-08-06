@@ -1,8 +1,7 @@
 ; A192570: a(n) = floor(sqrt(Bell(n))).
-; Submitted by amazing
+; Submitted by Ralfy
 ; 1,1,1,2,3,7,14,29,64,145,340,823,2052,5257,13816,37188,102372,287862,825879,2415107,7191950,21791507,67132076,210123786,667801519,2153738687,7044944749,23360587491,78489103731
-; Formula: a(n) = sqrtint(A188164(2*n))
+; Formula: a(n) = sqrtint(A000110(n))
 
-mul $0,2
-seq $0,188164 ; Number of palindromic structures of length n.
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
 nrt $0,2

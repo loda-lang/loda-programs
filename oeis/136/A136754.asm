@@ -1,9 +1,11 @@
 ; A136754: Leading digit of n! in base 3.
+; Submitted by shiva
 ; 1,1,2,2,2,1,2,2,2,2,2,2,1,1,2,1,2,1,1,2,1,1,1,2,2,2,2,2,2,2,2,1,1,1,1,2,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,2,1,2,1,1,2,1,1,2,2,1,1,2,2,1,1,1,1,2,2,2,1,1,1,1,1,1,1,1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-lpb $0
-  mov $1,$0
-  div $0,3
+mov $1,1
+fac $1,$0
+lpb $1
+  mov $2,$1
+  div $1,3
 lpe
-mov $0,$1
+mov $0,$2

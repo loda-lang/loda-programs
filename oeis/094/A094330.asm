@@ -1,19 +1,12 @@
 ; A094330: Product of next n numbers divided by n.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,3,40,1260,72072,6511680,852508800,152512113600,35730097603200,10613749905158400,3897631650008678400,1733625189541076832000,918381625086037787136000,571320549624154764994560000
 
 #offset 1
 
 mov $1,$0
+bin $1,2
 add $1,1
-sub $0,1
-mov $2,1
-add $2,$0
-bin $2,2
-lpb $0
-  sub $0,1
-  add $2,1
-  mul $1,$2
-lpe
+fac $1,$0
+div $1,$0
 mov $0,$1
-div $0,2

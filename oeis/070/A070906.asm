@@ -1,7 +1,9 @@
 ; A070906: Every third Bell number A000110.
-; Submitted by Mumps
+; Submitted by Science United
 ; 1,5,203,21147,4213597,1382958545,682076806159,474869816156751,445958869294805289,545717047936059989389,846749014511809332450147,1629595892846007606764728147,3819714729894818339975525681317
-; Formula: a(n) = A188164(6*n)
+; Formula: a(n) = A000110(3*n)
 
-mul $0,6
-seq $0,188164 ; Number of palindromic structures of length n.
+mov $1,$0
+mul $1,3
+seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $0,$1

@@ -1,17 +1,14 @@
 ; A156778: a(n) = n*A007504(n)/2 = n*(sum of first n primes)/2.
 ; Submitted by Science United
 ; 0,1,5,15,34,70,123,203,308,450,645,880,1182,1547,1967,2460,3048,3740,4509,5396,6390,7476,8701,10051,11556,13250,15093,17064,19194,21460,23895,26660,29616,32802,36159,39830,43686,47804,52193,56823,61740
+; Formula: a(n) = truncate((n*(A101301((n==0)+n)+n))/2)
 
-mov $2,1
-mov $3,2
-max $1,$0
-lpb $1
-  sub $1,1
-  add $2,$3
-  add $3,1
-  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $1,$2
-sub $1,1
-mul $0,$1
+mov $2,$0
+equ $2,0
+mov $1,$0
+add $1,$2
+seq $1,101301 ; The sum of the first n primes, minus n.
+add $1,$0
+mul $1,$0
+mov $0,$1
 div $0,2

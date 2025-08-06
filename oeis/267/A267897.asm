@@ -1,11 +1,11 @@
 ; A267897: a(n) = prime(n)! - prime(n).
+; Submitted by Philip
 ; 0,3,115,5033,39916789,6227020787,355687428095983,121645100408831981,25852016738884976639977,8841761993739701954543615999971,8222838654177922817725562879999969,13763753091226345046315979581580902399999963
-; Formula: a(n) = -A000040(n)+(A000040(n)!)
 
 #offset 1
 
 seq $0,40 ; The prime numbers.
-mov $1,$0
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $1,1
+fac $1,$0
 sub $1,$0
 mov $0,$1

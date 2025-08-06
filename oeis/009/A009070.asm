@@ -13,9 +13,6 @@ lpb $2
   seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   seq $5,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
   div $5,3
-  mul $5,2
-  add $5,1
-  div $5,2
   mov $3,$1
   add $3,1
   dif $3,2

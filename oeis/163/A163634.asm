@@ -1,27 +1,36 @@
 ; A163634: a(n) = (p*(p+4)+1)/2 where (p,p+4) are the n-th cousin prime pair.
-; Submitted by Irish Republican
+; Submitted by reallight
 ; 11,39,111,219,759,1011,2379,3279,4899,5511,6159,8319,13611,19011,25311,26679,38919,47739,49611,61599,72579,79599,97239,105339,108111,119559,125499,189111,208011,227811,274539,288039,297219,340311,365511,370659,386319,391611,413139,440859,469479,511059,592959,599511,738111,820479,843699,851511,1015311,1023879,1049799,1102611,1111539,1202799,1230879,1249779,1278399,1297659,1386111,1436511,1593111,1746579,1757811,1990011,2001999,2173611,2287659,2431011,2511039,2578719,2633511,2758899,2829819
 
 #offset 1
 
-sub $0,1
-mov $4,-1
-mov $2,$0
-add $2,2
-pow $2,4
-lpb $2
-  sub $2,1
-  max $3,$4
-  add $3,1
-  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,$5
-  sub $2,$0
-  sub $4,3
-  add $4,$1
-  mov $5,2
-lpe
-mov $0,$4
-div $0,2
 add $0,1
+mov $3,$0
+sub $0,1
+pow $3,2
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $1,1
+  mov $4,$2
+  add $4,$1
+  add $4,3
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  trn $3,1
+lpe
+mov $0,$2
+add $0,4
+div $0,2
+mul $0,4
+sub $0,6
+pow $0,2
+sub $0,100
+div $0,8
+add $0,11

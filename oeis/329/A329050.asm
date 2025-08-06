@@ -22,7 +22,6 @@ add $5,1
 div $5,2
 bin $5,2
 sub $0,$5
-mov $1,$3
 mov $4,$0
 add $4,1
 seq $4,40 ; The prime numbers.
