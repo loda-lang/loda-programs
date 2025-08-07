@@ -1,0 +1,27 @@
+; A385865: Triangle read by rows where T(n,k), for 1 <= k < n, is the column number where (n-k)^2 occurs in an n X n grid filled rowwise with the numbers 1 to n^2.
+; Submitted by DukeBox
+; 1,1,1,1,4,1,1,4,4,1,1,4,3,4,1,1,4,2,2,4,1,1,4,1,8,1,4,1,1,4,9,7,7,9,4,1,1,4,9,6,5,6,9,4,1,1,4,9,5,3,3,5,9,4,1,1,4,9,4,1,12,1,4,9,4,1,1,4,9,3,12,10,10,12,3,9,4,1,1,4
+; Formula: a(n) = (-n+binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+3)^2-truncate(((-n+binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+3)^2-1)/(truncate((sqrtint(8*n-8)-1)/2)+2))*(truncate((sqrtint(8*n-8)-1)/2)+2)
+
+#offset 2
+
+sub $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+sub $1,$0
+add $1,1
+add $0,1
+add $0,$1
+pow $1,2
+sub $1,1
+mod $1,$0
+mov $0,$1
+add $0,1
