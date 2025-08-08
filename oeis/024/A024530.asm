@@ -1,0 +1,43 @@
+; A024530: Numerator of -Sum_{k=1..n} (-1)^k / prime(k).
+; Submitted by Science United
+; 0,1,1,11,47,727,7141,151427,2366603,64131559,1636722341,57208085801,1916138684507,85982424199597,3392993977055461,172553478253276697,8530444564835173531,535885387802465283059,30766248305796169627529,2178627017847750336027713,146824196716110006802088533,11276107190402729457519878299,850082787442566602993449062151,73774516125073700956355356712663,6298867419442283533760002729434217,634758881582247053545370802356477359,61805079075861433983329348890672457189,6598785509172225061182986252619770453537
+
+mov $3,$0
+sub $0,1
+bin $3,2
+add $3,$0
+add $0,1
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $7,$5
+  add $7,1
+  bin $7,2
+  sub $0,$7
+  sub $0,1
+  mov $6,4
+  pow $6,$0
+  mov $0,2
+  pow $0,$5
+  pow $0,2
+  add $0,$6
+  mul $0,2
+  div $0,3
+  seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+  sub $0,1
+  mov $4,$0
+  seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+  div $4,$0
+  mov $0,$4
+  add $0,1
+  div $1,-1
+  add $1,$0
+lpe
+mov $0,$1
