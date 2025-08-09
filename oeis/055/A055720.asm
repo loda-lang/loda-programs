@@ -1,32 +1,33 @@
 ; A055720: Numbers k such that d(k)+1 | k.
-; Submitted by Science United
+; Submitted by Athlici
 ; 3,4,10,15,28,35,54,55,63,64,65,85,95,98,100,115,125,135,144,145,147,155,156,175,176,185,189,205,215,234,235,245,260,265,295,297,305,335,336,351,355,364,365,395,400,408,415,416,445,459,485,505,510,513,515,535,539,545,565,572,585,600,621,635,637,650,655,680,684,685,695,714,745,755,783,784,785,815,819,833
 
 #offset 1
 
-mov $1,1
 mov $2,$0
-pow $2,4
+sub $0,1
+add $2,3
+pow $2,2
 lpb $2
+  sub $4,$6
   mov $3,$1
   add $3,1
-  mov $4,0
-  mov $5,$3
-  mov $7,2
-  lpb $3
-    mov $6,$5
-    dif $6,$3
-    neq $6,$5
-    add $7,$6
-    sub $3,1
-    add $4,1
-  lpe
-  mod $4,$7
-  mov $3,$4
-  equ $3,0
-  sub $0,$3
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,$4
+  mov $5,$1
+  add $5,1
+  gcd $5,$3
   add $1,1
-  sub $2,$0
+  add $3,1
+  div $3,$5
+  equ $3,1
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mov $6,2
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
 add $0,1

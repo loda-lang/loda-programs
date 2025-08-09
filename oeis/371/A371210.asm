@@ -1,22 +1,21 @@
 ; A371210: Number of minimum vertex colorings in the complement of the path graph on n nodes.
-; Submitted by zombie67 [MM]
+; Submitted by loader3229
 ; 1,1,4,2,18,6,96,24,600,120,4320,720,35280,5040,322560,40320,3265920,362880,36288000,3628800,439084800,39916800,5748019200,479001600,80951270400,6227020800,1220496076800,87178291200,19615115520000,1307674368000,334764638208000
+; Formula: a(n) = d(n)*(min(n,n%2)*c(n)+1)*(min(n,n%2)*b(n)+1), b(n) = b(n-2)+1, b(5) = 2, b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = c(n-2)+1, c(5) = 2, c(4) = 2, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = d(n-2)*(b(n-2)+1), d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 1
 
 #offset 1
 
-sub $0,1
-mov $1,10
-mov $2,1
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
+mov $3,1
+lpb $0
+  sub $0,2
+  add $1,1
   add $2,1
-  mov $0,$3
-  lpb $0
-    bin $0,$2
-    mul $1,$3
-  lpe
+  mul $3,$1
 lpe
-mov $0,$1
-div $0,10
+mul $2,$0
+add $2,1
+mul $1,$0
+add $1,1
+mul $2,$3
+mul $2,$1
+mov $0,$2

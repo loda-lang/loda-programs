@@ -1,19 +1,17 @@
 ; A290344: Denominators of the Kirchhoff (and Harary) index for the n-hypercube graph.
-; Submitted by Jon Maiga
+; Submitted by shiva
 ; 1,1,1,3,3,15,15,105,105,315,63,693,693,9009,9009,45045,45045,765765,765765,14549535,14549535,14549535,14549535,334639305,334639305,1673196525,1673196525,5019589575,5019589575,145568097675,145568097675,4512611027925,4512611027925
 
 mov $1,1
-sub $0,1
 lpb $0
-  mov $2,$0
-  add $2,1
-  mul $3,2
-  add $3,$1
-  mul $3,$0
-  mul $3,4
   sub $0,1
-  mul $1,$2
+  add $3,1
+  mul $2,2
+  mul $2,$3
+  add $2,$1
+  mul $1,$3
 lpe
-gcd $3,$1
-div $1,$3
+gcd $2,$1
+div $1,$2
 mov $0,$1
+dir $0,2

@@ -22,9 +22,8 @@ sub $3,1
 add $3,$1
 div $1,2
 bin $3,$1
-mul $2,$3
 add $0,1
-mov $1,$2
+mul $2,$3
 mov $4,$0
 mul $0,8
 nrt $0,2

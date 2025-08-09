@@ -5,6 +5,7 @@
 mov $1,$0
 lpb $0
   sub $0,1
+  dif $0,$2
   add $2,1
   dif $0,$2
   seq $1,3132 ; Sum of squares of digits of n.

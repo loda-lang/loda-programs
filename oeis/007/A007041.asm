@@ -1,7 +1,6 @@
 ; A007041: State assignments for n-state machine.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 2,12,12,1120,3360,6720,6720,172972800,1210809600,7264857600,36324288000,145297152000,435891456000,871782912000,871782912000,1676837160768946176000,25152557411534192640000,352135803761478696960000,4577765448899223060480000,54933185386790676725760000,604265039254697443983360000,6042650392546974439833600000,54383853532922769958502400000,435070828263382159668019200000,3045495797843675117676134400000,18272974787062050706056806400000,91364873935310253530284032000000,365459495741241014121136128000000
-; Formula: a(n) = truncate((truncate(2^logint(2*n-1,2))!)/((logint(2*n-1,2)!)*((-n+truncate(2^logint(2*n-1,2)))!)))
 
 #offset 2
 
@@ -11,11 +10,17 @@ sub $1,1
 log $1,2
 mov $2,2
 pow $2,$1
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,$1
+mov $1,1
+fac $1,$4
 mov $3,$2
 sub $3,$0
-seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,$3
+mov $3,1
+fac $3,$4
 mul $3,$1
-seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,$2
+mov $2,1
+fac $2,$4
 div $2,$3
 mov $0,$2

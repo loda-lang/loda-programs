@@ -1,20 +1,11 @@
 ; A007843: Least positive integer k for which 2^n divides k!.
-; Submitted by yasiwo
+; Submitted by Science United
 ; 1,2,4,4,6,8,8,8,10,12,12,14,16,16,16,16,18,20,20,22,24,24,24,26,28,28,30,32,32,32,32,32,34,36,36,38,40,40,40,42,44,44,46,48,48,48,48,50,52,52,54,56,56,56,58,60,60,62,64,64,64,64,64,64,66,68,68,70,72,72,72,74,76,76,78,80,80,80,80,82
+; Formula: a(n) = max(0,n)+A100661((n==0)+n)
 
-add $0,1
-mov $3,$0
-mov $1,$0
-div $1,2
-lpb $1
-  mov $2,$1
-  max $2,1
-  log $2,2
-  mov $4,2
-  pow $4,$2
-  ban $4,$3
-  neq $4,0
-  div $1,2
-  add $3,$4
-lpe
-mov $0,$3
+max $1,$0
+mov $2,$0
+equ $2,0
+add $0,$2
+seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
+add $0,$1

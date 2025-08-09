@@ -9,21 +9,19 @@ mov $6,1
 add $6,$0
 lpb $0
   sub $0,1
-  add $1,1
+  sub $4,$1
+  sub $4,1
+  add $1,2
   equ $2,1
   add $2,2
   sub $2,$6
   bin $2,$0
   mul $2,338
-  sub $4,1
   mov $3,$4
-  bin $3,2
   mul $3,$2
   gcd $3,0
-  div $3,$1
-  sub $1,1
   mul $5,3
   add $5,$3
 lpe
 mov $0,$5
-div $0,169
+div $0,676

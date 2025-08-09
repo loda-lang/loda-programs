@@ -5,7 +5,7 @@
 mov $1,$0
 mov $3,2
 lpb $3
-  sub $3,1
+  div $3,3
   mov $2,$1
   seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
   mov $0,$2

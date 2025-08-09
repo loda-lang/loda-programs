@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,60542 ; a(n) = (1/6)*multinomial(3*n;n,n,n).
+    seq $7,386876 ; a(n) = (1/2) * (3*n)! / n!^3 for n > 0, a(0) = 1.
     mov $9,10
     add $9,$5
     sub $4,1
@@ -19,7 +19,6 @@ lpb $0
     add $5,1
     add $6,$7
   lpe
-  mul $6,3
   div $6,$2
   mov $9,10
   add $9,$2

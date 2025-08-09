@@ -1,22 +1,18 @@
 ; A164029: a(n) = nonprime(n) + (-1)^(nonprime(n)).
-; Submitted by Jon Maiga
+; Submitted by DukeBox
 ; 1,0,5,7,9,8,11,13,15,14,17,19,21,20,23,25,24,27,26,29,31,33,32,35,34,37,39,38,41,43,45,44,47,49,48,51,50,53,55,54,57,56,59,61,63,62,65,64,67,69,68,71,73,75,74,77,76,79,81,80,83,85,84,87,86,89,91,90,93,92,95,94,97,99,98,101,103,105,104,107
 
 #offset 1
 
-sub $0,1
+sub $0,2
+mov $1,$0
 lpb $0
-  mov $2,$0
-  sub $2,1
-  mov $3,$2
-  seq $3,72668 ; Numbers one less than composite numbers.
-  mul $0,0
-  mov $2,$3
-  mul $2,2
-  add $2,2
+  trn $0,1
+  add $0,1
+  seq $0,72668 ; Numbers one less than composite numbers.
+  mov $1,$0
+  mov $0,0
 lpe
-mov $0,$2
-div $0,2
-mov $1,-1
-pow $1,$0
-add $0,$1
+mov $0,$1
+add $0,1
+bxo $0,1

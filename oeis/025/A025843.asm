@@ -1,14 +1,21 @@
 ; A025843: Expansion of 1/((1-x^3)(1-x^6)(1-x^10)).
-; Submitted by ckrause
+; Submitted by Egon Olsen
 ; 1,0,0,1,0,0,2,0,0,2,1,0,3,1,0,3,2,0,4,2,1,4,3,1,5,3,2,5,4,2,7,4,3,7,5,3,9,5,4,9,7,4,11,7,5,11,9,5,13,9,7,13,11,7,15,11,9,15,13,9,18,13,11,18,15,11,21,15,13,21,18
-; Formula: a(n) = b(n+3), b(n) = b(n-3)+A325488(max(n-3,0)), b(2) = 0, b(1) = 0, b(0) = 0
 
-add $0,3
-lpb $0
-  sub $0,3
-  mov $2,$0
-  max $2,0
-  seq $2,325488 ; Dimensions of space of harmonic polynomials of each degree invariant under the full icosahedral group.
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  trn $0,1
+  seq $0,29047 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^6)*(1-x^10)).
+  mov $2,$3
+  mul $2,$0
   add $1,$2
+  mov $4,$0
 lpe
+min $5,1
+mul $5,$4
+sub $1,$5
 mov $0,$1

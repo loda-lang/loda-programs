@@ -6,12 +6,7 @@
 
 sub $0,1
 mov $1,1
-mov $2,$0
-add $2,1
-mov $3,$0
-lpb $3
-  mul $1,$3
-  sub $3,1
-lpe
-dir $1,$2
+fac $1,$0
+add $0,1
+dir $1,$0
 mov $0,$1

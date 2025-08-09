@@ -20,7 +20,6 @@ mov $0,2
 pow $0,$1
 mul $0,2
 sub $0,$2
-mov $3,0
 mov $5,-2
 mov $6,1
 lpb $0

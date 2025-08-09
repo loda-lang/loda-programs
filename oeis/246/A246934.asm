@@ -1,25 +1,12 @@
 ; A246934: The closest square to n-th prime.
+; Submitted by aendgraend
 ; 1,4,4,9,9,16,16,16,25,25,36,36,36,49,49,49,64,64,64,64,81,81,81,81,100,100,100,100,100,121,121,121,144,144,144,144,169,169,169,169,169,169,196,196,196,196,225,225,225,225,225,225,256,256,256,256,256,256,289,289,289,289,324,324,324,324,324,324,361,361,361,361,361,361,361,400,400,400,400,400
+; Formula: a(n) = truncate((sqrtint(4*A006005(n))+1)/2)^2
 
 #offset 1
 
-mov $2,0
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
-  add $2,2
-  sub $3,$0
-lpe
-mov $0,$2
-add $0,1
-max $0,2
-add $0,1
-div $0,2
-mul $0,8
+seq $0,6005 ; The odd prime numbers together with 1.
+mul $0,4
 nrt $0,2
 add $0,1
 div $0,2

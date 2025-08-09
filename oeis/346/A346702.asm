@@ -1,5 +1,5 @@
 ; A346702: The a(n)-th composition in standard order is the odd bisection of the n-th composition in standard order.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,1,2,1,4,2,1,3,8,4,2,5,1,3,6,3,16,8,4,9,2,5,10,5,1,3,6,3,12,6,3,7,32,16,8,17,4,9,18,9,2,5,10,5,20,10,5,11,1,3,6,3,12,6,3,7,24,12,6,13,3,7,14,7,64,32,16,33,8,17,34,17,4,9,18,9,36,18
 
 mov $1,$0
@@ -19,8 +19,6 @@ lpb $0
   div $0,2
   mov $2,$4
   mul $2,$6
-  mul $7,2
-  sub $7,$3
   add $7,$2
   mov $3,$7
 lpe

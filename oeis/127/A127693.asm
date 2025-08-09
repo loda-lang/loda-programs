@@ -1,5 +1,5 @@
 ; A127693: Expansion of psi(x^2) + x * psi(x^10) in powers of x where psi() is a Ramanujan theta function.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
 
 mul $0,8
@@ -11,10 +11,9 @@ dir $3,2
 add $3,2
 lpb $3
   sub $3,$1
-  mov $2,$3
-  equ $2,0
   add $4,4
   mov $1,2
   mul $1,$4
+  bin $2,$3
 lpe
 mov $0,$2

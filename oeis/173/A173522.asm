@@ -1,15 +1,18 @@
 ; A173522: Zero together with the partial sums of A105321.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Coleslaw
 ; 0,1,4,8,14,20,26,34,46,56,62,70,82,94,106,122,146,164,170,178,190,202,214,230,254,274,286,302,326,350,374,406,454,488,494,502,514,526,538,554,578,598,610,626,650,674,698,730,778,814,826,842,866,890,914,946,994,1034,1058,1090,1138,1186,1234,1298,1394,1460,1466,1474,1486,1498,1510,1526,1550,1570,1582,1598,1622,1646,1670,1702
+; Formula: a(n) = b(max(2*n-1,0)), b(n) = b(n-1)+truncate(2^(sumdigits(truncate((n-1)/2),2)*sign(truncate((n-1)/2)))), b(0) = 0
 
-mov $1,1
-add $0,1
+mul $0,2
+sub $0,1
 lpb $0
-  sub $0,$1
-  add $1,$3
-  mov $2,$0
-  max $2,0
-  seq $2,6046 ; Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1).  a(n) = Sum_{i=0..n-1} 2^wt(i).
-  add $3,$2
+  mov $3,$0
+  sub $3,1
+  div $3,2
+  dgs $3,2
+  sub $0,1
+  mov $2,2
+  pow $2,$3
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

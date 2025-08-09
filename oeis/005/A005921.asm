@@ -1,17 +1,28 @@
 ; A005921: From solution to a difference equation.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,10,48,312,2520,24480,277200,3588480,52254720,845510400,15048633600,292190976000,6146069529600,139223731046400,3379030566912000,87478184521728000,2406225451069440000,70080382582898688000
-; Formula: a(n) = n*(a(n-1)+max(a(n-2)*(n-1),2)), a(2) = 10, a(1) = 3, a(0) = 1
 
-mov $1,1
+mov $1,-1
+mov $2,1
+mov $3,1
+mov $4,1
+add $0,1
 lpb $0
-  sub $0,1
-  add $2,1
-  max $3,2
-  mov $4,$1
-  mul $4,$2
-  add $1,$3
-  mul $1,$2
-  mov $3,$4
+  sub $0,2
+  add $2,$3
+  add $3,$2
+  add $5,1
+  mul $4,$5
+  add $5,1
+  mul $4,$5
+  add $5,$1
+  mov $1,0
 lpe
-mov $0,$1
+mul $2,$0
+add $2,$3
+mul $5,$0
+add $5,1
+mul $2,$4
+mul $2,$5
+mov $0,$2
+div $0,2

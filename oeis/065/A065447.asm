@@ -1,9 +1,18 @@
 ; A065447: Concatenation of 1, 00, 111, 0000, ..., n 1's (if n is odd) or n 0's (if n is even).
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,100,100111,1001110000,100111000011111,100111000011111000000,1001110000111110000001111111,100111000011111000000111111100000000,100111000011111000000111111100000000111111111,1001110000111110000001111111000000001111111110000000000,100111000011111000000111111100000000111111111000000000011111111111,100111000011111000000111111100000000111111111000000000011111111111000000000000,1001110000111110000001111111000000001111111110000000000111111111110000000000001111111111111
-; Formula: a(n) = A007088(A065760(n))
+; Formula: a(n) = truncate(gcd(d(n),b(n))/9), b(n) = 10*c(n-1)*b(n-1)+1, b(2) = 901, b(1) = -9, b(0) = 1, c(n) = 10*c(n-1), c(2) = -100, c(1) = -10, c(0) = -1, d(n) = d(n-1), d(2) = 0, d(1) = 0, d(0) = 0
 
 #offset 1
 
-seq $0,65760 ; Concatenation of increasing number of alternating digits in base 2, starting with 1.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,-1
+lpb $0
+  sub $0,1
+  mul $2,10
+  mul $1,$2
+  add $1,1
+lpe
+gcd $3,$1
+mov $0,$3
+div $0,9

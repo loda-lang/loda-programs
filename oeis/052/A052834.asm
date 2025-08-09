@@ -1,35 +1,14 @@
 ; A052834: a(n) = Bell(n+1)-Bell(n)-1, n>0.
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 0,0,2,9,36,150,673,3262,17006,94827,562594,3535026,23430839,163254884,1192059222,9097183601,72384727656,599211936354,5150665398897,45891416030314,423145657921378,4031845922290571,39645290116637022,401806863439720942,4192631462935194063
 
-mov $20,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
+mov $1,$0
+mov $2,1
+lpb $2
+  sub $2,1
+  mov $0,$1
+  add $0,$2
+  trn $0,1
+  seq $0,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
 lpe
-mov $2,0
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  seq $4,338497 ; Least number of odd cubes needed to represent n.
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
-lpe
-equ $0,0
 sub $0,1
-add $0,$1

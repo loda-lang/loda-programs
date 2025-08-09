@@ -6,16 +6,13 @@
 
 sub $0,3
 mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
+mov $2,2
+lpb $2
+  sub $2,1
   mov $0,$1
-  add $0,$3
+  add $0,$2
   add $0,4
   seq $0,239493 ; Number of (2,1)-separable partitions of n; see Comments.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+  max $2,1
 lpe
-mov $0,$2
 sub $0,1

@@ -1,21 +1,24 @@
 ; A127741: a(n) = (n+1) * A005493(n).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,6,30,148,755,4044,22841,136056,853452,5625950,38885297,281170080,2122313505,16688829122,136457754030,1158155642512,10186602918035,92711977180164,871936904575985,8462913158427580,84668764368102012,872196382566014506,9241557859113581689,100623155110444657536,1124816404784718923025,12898230836723472060990,151600203629924615902782,1825019350959289535084076,22486867164615522660510275,283398297951437014579365180,3650910644214152457348729721,48048999129475164574265680096
-; Formula: a(n) = n*A123346((truncate((sqrtint(8*binomial(n+3,2)-8)-1)/2)+1)^2-binomial(n+3,2)+1)+A123346((truncate((sqrtint(8*binomial(n+3,2)-8)-1)/2)+1)^2-binomial(n+3,2)+1)
 
-mov $1,$0
-add $1,3
-bin $1,2
-sub $1,1
-mov $2,$1
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-add $2,1
-pow $2,2
-sub $2,$1
+mov $4,2
+lpb $4
+  div $4,2
+  mov $1,$0
+  add $1,$4
+  mov $5,$1
+  add $5,1
+  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mov $1,$5
+  mul $1,3
+  mov $3,$4
+  mul $3,$1
+  add $2,$3
+  mov $6,$1
+lpe
+sub $2,$6
 mov $1,$2
-seq $1,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
+div $1,3
+add $0,1
 mul $0,$1
-add $0,$1

@@ -1,22 +1,21 @@
 ; A022922: Number of integers m such that 5^n < 2^m < 5^(n+1).
-; Submitted by Jamie Morken
+; Submitted by Wood
 ; 2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2
 
-mov $1,$0
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
-  mov $0,$1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  max $0,0
-  seq $0,67497 ; Smallest k for which 2^k is n+1 decimal digits long, and equivalently numbers k such that 1 is the first digit of 2^k.
-  sub $0,1
+  mov $7,5
+  pow $7,$0
+  mov $6,$7
+  log $6,2
   mov $2,$3
-  mul $2,$0
-  add $4,$2
+  mul $2,$6
+  add $1,$2
+  mov $5,$6
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
-sub $0,1
+sub $1,$5
+mov $0,$1

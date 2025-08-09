@@ -1,25 +1,18 @@
 ; A372635: a(n) = Sum_{j=1..n} Sum_{k=1..n} phi(j)*phi(k).
-; Submitted by Aionel
+; Submitted by Science United
 ; 1,4,16,36,100,144,324,484,784,1024,1764,2116,3364,4096,5184,6400,9216,10404,14400,16384,19600,22500,29584,32400,40000,44944,52900,58564,72900,77284,94864,104976,118336,129600,147456,156816,186624,202500,224676,240100,280900
 
 #offset 1
 
-mov $4,3
-add $0,2
-lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  add $3,1
-  seq $3,62570 ; a(n) = phi(2*n).
-  mov $4,1
-  max $0,$5
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $1,$0
+  sub $1,$4
+  mov $3,280
+  min $3,$1
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $2,$3
-  add $5,1
 lpe
+pow $2,2
 mov $0,$2
-sub $0,1
-add $1,$0
-add $1,1
-mul $1,$2
-mov $0,$1

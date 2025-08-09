@@ -1,20 +1,11 @@
 ; A105234: Central column of a Moebius-binomial triangle.
-; Submitted by Science United
+; Submitted by Dirk Broer
 ; 1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1
+; Formula: a(n) = -2*truncate(A385212(max(n-1,0)+1)/2)+A385212(max(n-1,0)+1)
 
-sub $0,1
-max $2,$0
-mov $1,$2
-add $2,1
-seq $2,19554 ; Smallest number whose square is divisible by n.
-div $1,$2
-mov $3,$1
-min $3,1
-lpb $3
-  mov $2,$3
-  add $2,1
-  equ $2,2
-  div $3,10
-lpe
-mov $0,$2
+mov $1,$0
+trn $1,1
+add $1,1
+seq $1,385212 ; a(n) = n^(mu(n)^2), where mu is the Möbius function (A008683).
+mov $0,$1
 mod $0,2

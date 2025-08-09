@@ -1,8 +1,9 @@
 ; A003673: Decimal expansion of fine-structure constant alpha.
-; Submitted by [SG]ATA-Rolf
+; Submitted by Science United
 ; 0,0,7,2,9,7,3,5,2,5,6
 
 mov $6,1
+sub $0,1
 mov $3,$0
 lpb $3
   sub $3,1
@@ -10,14 +11,13 @@ lpb $3
   add $1,$6
   add $1,$2
   add $2,$1
-  mul $4,$10
-  mov $5,$10
+  mul $4,$5
   sub $6,$7
   add $7,14
   sub $8,$1
   sub $9,$8
-  sub $10,2
-  sub $10,$9
+  sub $5,2
+  sub $5,$9
   add $4,14
   add $4,$7
 lpe

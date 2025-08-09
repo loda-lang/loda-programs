@@ -1,10 +1,29 @@
 ; A144526: Denominators of expansion of exp(1-sqrt(1-3*x)).
-; Submitted by Fardringle
+; Submitted by kpmonaghan
 ; 1,2,4,16,128,640,5120,71680,573440,2293760,6553600,504627200,1153433600,209924915200,2938948812800,58778976256000,1880927240192000,415269650432000,255806104666112000,15260018802688000,194412639546245120000,418734915945758720000
 
 mov $1,$0
-seq $1,144301 ; a(0) = a(1) = 1; thereafter a(n) = (2*n-3)*a(n-1) + a(n-2).
-seq $0,165 ; Double factorial of even numbers: (2n)!! = 2^n*n!.
-gcd $1,$0
+sub $1,1
+mov $2,1
+mov $3,-1
+mov $7,1
+mov $8,$1
+lpb $8
+  sub $8,1
+  mov $9,$7
+  add $3,2
+  mov $7,$2
+  mul $2,$3
+  add $2,$9
+lpe
+mov $5,1
+fac $5,$0
+add $6,$2
+mov $4,2
+pow $4,$0
+mul $4,$5
+mov $1,$6
+gcd $1,$4
+mov $0,$4
 div $0,$1
 dir $0,3

@@ -1,12 +1,12 @@
 ; A372689: Positive integers whose binary indices (positions of ones in reversed binary expansion) sum to a prime number.
-; Submitted by Fortuna
+; Submitted by John Napoli
 ; 2,3,4,6,9,11,12,16,18,23,26,29,33,38,41,43,44,48,50,55,58,61,64,69,71,72,74,79,81,86,89,91,92,96,101,103,104,106,111,113,118,121,131,132,134,137,142,144,149,151,152,154,159,163,164,166,169,174,176,181
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,1
+mov $1,2
 pow $2,2
 lpb $2
   mov $3,$1

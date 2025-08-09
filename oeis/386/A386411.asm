@@ -1,5 +1,5 @@
 ; A386411: Decimal expansion of the volume of an augmented truncated tetrahedron with unit edge.
-; Submitted by DukeBox
+; Submitted by Vato
 ; 3,8,8,9,0,8,7,2,9,6,5,2,6,0,1,1,3,8,4,2,0,4,6,4,3,9,9,1,5,7,6,6,6,9,7,1,6,0,6,6,5,9,7,6,5,7,2,8,6,6,0,7,2,0,1,2,3,5,8,6,9,2,7,9,4,7,4,5,1,4,3,1,5,7,7,0,7,9,4,3
 
 #offset 1
@@ -14,7 +14,7 @@ lpb $3
   mul $1,2
   add $1,$6
   add $2,$1
-  mul $2,2
+  div $1,2
   mul $1,2
   mov $5,116
   sub $5,$1

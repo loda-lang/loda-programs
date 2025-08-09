@@ -1,16 +1,15 @@
 ; A097806: Riordan array (1+x, 1) read by rows.
-; Submitted by Science United
+; Submitted by Eric
 ; 1,1,1,0,1,1,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0
-; Formula: a(n) = binomial(1,-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)
+; Formula: a(n) = (-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)<=1
 
 add $0,1
 mov $1,$0
-mul $0,8
-nrt $0,2
-add $0,3
-div $0,2
-bin $0,2
-sub $0,$1
-mov $2,1
-bin $2,$0
-mov $0,$2
+mul $1,8
+nrt $1,2
+add $1,3
+div $1,2
+bin $1,2
+sub $1,$0
+leq $1,1
+mov $0,$1

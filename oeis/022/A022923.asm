@@ -1,21 +1,12 @@
 ; A022923: Number of integers m such that 7^n < 2^m < 7^(n+1).
-; Submitted by Science United
+; Submitted by loader3229
 ; 2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3
+; Formula: a(n) = -logint(7^n,2)+logint(7*7^n,2)
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  mov $7,7
-  pow $7,$0
-  mov $6,$7
-  log $6,2
-  mov $2,$3
-  mul $2,$6
-  add $1,$2
-  mov $5,$6
-lpe
-sub $1,$5
+mov $1,7
+pow $1,$0
 mov $0,$1
+log $1,2
+mul $0,7
+log $0,2
+sub $0,$1

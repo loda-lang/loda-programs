@@ -8,15 +8,13 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  mov $6,1
-  fac $6,$0
-  fac $6,2
-  add $0,$6
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
+  mov $5,1
+  fac $5,$0
+  fac $5,2
+  add $0,$5
+  mov $1,$2
+  mov $2,$0
 lpe
-sub $1,$5
+sub $1,$2
 mov $0,$1
 div $0,2

@@ -5,10 +5,8 @@
 #offset 1
 
 sub $0,1
-mov $3,0
 mov $4,$0
 add $0,1
-add $4,4
 pow $4,5
 lpb $4
   mov $5,$3
@@ -18,17 +16,17 @@ lpb $4
   nrt $6,2
   sub $6,1
   div $6,2
-  mov $7,$6
-  add $7,1
-  bin $7,2
-  sub $5,$7
+  mov $2,$6
+  add $2,1
+  bin $2,2
+  sub $5,$2
   sub $5,1
-  mov $7,2
-  pow $7,$5
+  mov $2,2
+  pow $2,$5
   mov $5,2
   pow $5,$6
   mul $5,2
-  sub $5,$7
+  sub $5,$2
   mul $5,2
   add $5,1
   seq $5,6520 ; Partial sums of A006519.
@@ -45,7 +43,5 @@ mul $1,8
 nrt $1,2
 sub $1,1
 div $1,2
-mov $2,$1
-add $2,1
 mov $0,$1
 add $0,2

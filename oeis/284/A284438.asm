@@ -6,12 +6,10 @@
 
 mov $2,$0
 lpb $2
-  sub $2,1
-  mov $1,$0
-  sub $1,$2
-  mov $3,280
-  min $3,$1
-  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  pow $3,$1
+  mov $2,0
+  mov $1,280
+  min $1,$0
+  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  pow $1,$0
 lpe
-mov $0,$3
+mov $0,$1

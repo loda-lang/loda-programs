@@ -1,17 +1,16 @@
 ; A040825: Continued fraction for sqrt(855).
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 29,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4
+; Formula: a(n) = floor((18*floor((gcd(n,4)^4)/(12*0^n+12))+28)/7)
 
-mov $2,$0
-gcd $2,4
-mov $1,4
-pow $1,$2
-lpb $0
-  mov $0,1
-  mul $1,2
-lpe
-div $1,24
+mov $1,$0
+gcd $1,4
+pow $1,4
+pow $2,$0
+add $2,1
+mul $2,12
+div $1,$2
+mul $1,18
+add $1,28
+div $1,7
 mov $0,$1
-mul $0,18
-add $0,28
-div $0,7
