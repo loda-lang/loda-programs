@@ -17,11 +17,7 @@ lpb $2
   mov $4,$0
   seq $4,157491 ; A050165*A130595 as infinite lower triangular matrices.
   mov $5,0
-  lpb $0
-    add $5,1
-    sub $0,$5
-  lpe
-  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  seq $0,127568 ; Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
   mul $0,$4
   add $1,$0
 lpe

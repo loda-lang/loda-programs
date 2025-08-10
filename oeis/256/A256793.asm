@@ -13,13 +13,7 @@ lpb $2
   mov $5,0
   mov $3,$1
   add $3,1
-  lpb $3
-    trn $3,1
-    seq $3,80883 ; Distance of n to next square.
-    sub $3,1
-    add $5,1
-  lpe
-  mov $3,$5
+  seq $3,249160 ; Smallest number of iterations k such that A068527^(k)(n)=A068527^(k+1)(n).
   gcd $3,2
   sub $0,$3
   add $0,1

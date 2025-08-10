@@ -11,10 +11,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,173557 ; a(n) = Product_{primes p dividing n} (p-1).
-  lpb $3
-    dif $3,2
-    dif $3,3
-  lpe
+  seq $3,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
   equ $3,1
   sub $0,$3
   mov $4,$0

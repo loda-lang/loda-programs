@@ -7,11 +7,4 @@ lpb $0
   mul $0,2
   sub $0,2
 lpe
-lpb $0
-  sub $0,$1
-  div $0,7
-  mul $0,2
-  add $0,3
-  add $1,1
-  add $0,$1
-lpe
+seq $0,325282 ; Maximum adjusted frequency depth among integer partitions of n.
