@@ -1,24 +1,19 @@
 ; A110804: a(1) = 10, a(n) = a(n-1) times the number of digits in a(n-1).
-; Submitted by Skillz
+; Submitted by loader3229
 ; 10,20,40,80,160,480,1440,5760,23040,115200,691200,4147200,29030400,232243200,2090188800,20901888000,229920768000,2759049216000,35867639808000,502146957312000,7532204359680000
+; Formula: a(n) = 10*b(n), b(n) = logint(10*b(n-1)+1,10)*b(n-1)+b(n-1), b(2) = 2, b(1) = 1, b(0) = 0
 
 #offset 1
 
-mov $4,$0
-sub $0,1
-lpb $4
-  sub $4,1
+mov $1,1
+lpb $0
+  sub $0,1
+  mul $2,10
+  add $2,1
+  log $2,10
+  mul $2,$1
+  add $1,$2
   mov $2,$1
-  mov $3,4
-  mov $0,$1
-  lpb $0
-    div $0,10
-    add $1,$2
-    mov $3,0
-  lpe
-  mov $5,$3
-  div $5,4
-  add $1,$5
 lpe
-mov $0,$1
+mov $0,$2
 mul $0,10

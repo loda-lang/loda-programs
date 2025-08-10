@@ -87,6 +87,7 @@ A010055: 1 if n is a prime power p^k (k >= 0), otherwise 0.
 A010059: Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
 A010060: Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
 A010816: Expansion of Product_{k>=1} (1 - x^k)^3.
+A010846: Number of numbers <= n whose set of prime factors is a subset of the set of prime factors of n.
 A011371: a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
 A014587: Nim function for Take-a-Factorial-Game (a subtraction game).
 A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).

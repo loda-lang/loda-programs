@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  mul $3,2
   add $3,1
   mov $6,$3
   seq $6,295665 ; Fully multiplicative with a(prime(m)) = prime(k) when m = prime(k), and a(prime(m)) = 1 when m is not a prime.
@@ -26,4 +27,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+mul $0,2
 add $0,1

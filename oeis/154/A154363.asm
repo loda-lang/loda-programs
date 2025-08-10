@@ -1,4 +1,4 @@
-; A154363: Numbers from Bhargava's prime-universality criterion theorem
+; A154363: Numbers from Bhargava's prime-universality criterion theorem.
 ; Submitted by Science United
 ; 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,67,73
 

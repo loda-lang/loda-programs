@@ -1,40 +1,29 @@
 ; A319970: a(n) = A003146(A003144(n)).
-; Submitted by Science United
+; Submitted by DukeBox
 ; 4,17,28,41,48,61,72,85,98,109,122,129,142,153,166,177,190,197,210,221,234,247,258,271,278,291,302,315,322,335,346,359,372,383,396,403,416,427,440,451,464,471,484,495,508,521,532,545,552,565,576,589,602,613,626,633,646,657,670,681,694,701,714,725,738,751,762,775,782,795,806,819,826,839,850,863,876,887,900,907
 
 #offset 1
 
 sub $0,1
-mov $3,$0
 mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $6,0
-  mov $0,$3
-  sub $0,$1
-  mov $7,$0
-  mov $5,2
-  lpb $5
-    sub $5,1
-    mov $0,$7
-    add $0,$5
-    trn $0,1
-    seq $0,322410 ; Compound tribonacci sequence with a(n) = A278040(A278039(n)), for n >= 0.
-    mov $8,$0
-    add $8,1
-    mov $0,$8
-    mov $4,$5
-    mul $4,$8
-    add $6,$4
-  lpe
-  min $7,1
-  mul $7,$0
-  mov $0,$6
-  sub $0,$7
-  mul $0,2
+mov $3,1
+lpb $0
   sub $0,1
-  add $2,$0
+  mov $4,$0
+  max $4,0
+  add $4,1
+  seq $4,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
+  mov $2,$4
+  add $4,1
+  bxo $4,$2
+  div $4,2
+  mov $5,0
+  sub $5,$4
+  mov $4,$5
+  add $4,7
+  add $3,$4
 lpe
-mov $0,$2
-add $0,1
+mov $0,$3
+mul $0,2
+add $0,2
+sub $0,$1

@@ -1,5 +1,5 @@
 ; A385887: The number k such that the k-th composition in standard order is the reversed sequence of lengths of maximal runs of binary indices of n.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,1,1,2,1,3,2,4,1,3,3,6,2,5,4,8,1,3,3,6,3,7,6,12,2,5,5,10,4,9,8,16,1,3,3,6,3,7,6,12,3,7,7,14,6,13,12,24,2,5,5,10,5,11,10,20,4,9,9,18,8,17,16,32,1,3,3,6,3,7,6,12,3,7,7,14,6,13,12,24
 
 mov $1,$0
@@ -18,8 +18,6 @@ lpb $0
   div $0,2
   mov $2,$4
   mul $2,$6
-  mul $7,2
-  sub $7,$3
   add $7,$2
   mov $3,$7
 lpe

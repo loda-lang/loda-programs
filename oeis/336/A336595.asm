@@ -12,19 +12,17 @@ lpb $2
   sub $2,14
   mov $3,$1
   add $3,1
-  mov $6,2
-  pow $6,$3
+  mov $5,2
+  pow $5,$3
   trn $3,2
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mul $6,$3
-  div $6,2
-  mov $3,$6
+  mul $5,$3
+  mov $3,$5
   gcd $3,4
   add $3,1
-  gcd $3,$6
+  gcd $3,$5
   equ $3,5
-  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

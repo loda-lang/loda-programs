@@ -1,7 +1,7 @@
 ; A337314: a(n) is the number of n-digit positive integers with exactly four distinct base 10 digits.
-; Submitted by Opolis
+; Submitted by Science United
 ; 0,0,0,4536,45360,294840,1587600,7715736,35244720,154700280,661122000,2773768536,11487556080,47136955320,192126589200,779279814936,3149513947440,12695388483960,51073849285200,205172877726936,823325141746800,3301203837670200,13228529919066000
-; Formula: a(n) = 1512*truncate((4^(n-1)+3*2^(n-1)-3*3^(n-1))/2)
+; Formula: a(n) = 2268*2^(n-1)+2268*floor((4^(n-1))/3)-2268*3^(n-1)
 
 #offset 1
 
@@ -13,9 +13,7 @@ pow $3,$0
 mov $2,3
 pow $2,$0
 sub $2,$3
-mov $0,$2
-mul $0,3
-sub $1,$0
+div $1,3
+sub $1,$2
 mov $0,$1
-div $0,2
-mul $0,1512
+mul $0,2268

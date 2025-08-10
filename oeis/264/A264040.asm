@@ -1,19 +1,11 @@
 ; A264040: Number of possible permutations of the n X n generalization of the sliding block 15-puzzle.
-; Submitted by Science United
+; Submitted by Athlici
 ; 1,12,181440,10461394944000,7755605021665492992000000,185996663394950608733999724075417600000000,304140932017133780436126081660647688443776415689605120000000000,63443466092942082051716694667580740401432758087272596099400947187607352115200000000000000
-; Formula: a(n) = truncate((b(n^2)-1)/2)+1, b(n) = n*b(n-1), b(0) = 1
 
 #offset 1
 
-mov $2,1
 pow $0,2
-lpb $0
-  mul $2,$0
-  sub $0,1
-lpe
-mov $0,$2
-sub $0,1
-mov $1,$0
-div $1,2
+mov $1,1
+fac $1,$0
+dif $1,2
 mov $0,$1
-add $0,1

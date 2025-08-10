@@ -4,23 +4,25 @@
 
 #offset 1
 
-mov $3,$0
-add $3,3
-pow $3,2
-lpb $3
-  mov $4,$2
-  seq $4,277546 ; a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
-  equ $4,6
-  sub $0,$4
-  mov $1,$0
-  max $1,0
-  equ $1,$0
-  add $2,2
-  mul $3,$1
-  sub $3,2
+mov $1,3
+mov $2,$0
+add $2,3
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,277546 ; a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
+  equ $3,6
+  sub $0,$3
+  add $1,2
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,2
 lpe
-mov $0,$2
+mov $0,$1
 mul $0,8
-add $4,$0
-mov $0,$4
-sub $0,74
+add $3,$0
+mov $0,$3
+sub $0,66

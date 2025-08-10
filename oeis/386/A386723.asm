@@ -1,34 +1,25 @@
 ; A386723: Expansion of (1/x) * Series_Reversion( x * (1-x)^3 / (1+2*x)^4 ).
-; Submitted by Wood
+; Submitted by Science United
 ; 1,11,175,3275,67156,1460237,33073930,771961835,18437940220,448483875596,11071403236807,276675755470349,6985664542196380,177932236341440270,4566561255466298500,117974930924420353835,3065563791639454312492,80069021664742889373380
 
+mul $0,2
 mov $2,1
-mov $10,1
-add $0,1
+mov $3,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,386719 ; a(n) = Sum_{k=0..n} 2^k * binomial(4*n,k) * binomial(4*n-k-1,n-k).
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-    add $7,1
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  sub $0,2
+  add $2,$6
+  add $4,$6
+  add $5,2
+  mov $6,$4
+  mul $6,9
+  add $2,$6
+  mul $2,$3
+  div $2,$5
+  mov $3,$0
+  mul $4,2
+  add $4,$2
+  add $1,$2
 lpe
-mov $0,$7
-sub $0,12
-div $0,11
+mov $0,$1
 add $0,1

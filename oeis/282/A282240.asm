@@ -7,4 +7,4 @@
 
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
 add $0,1
-seq $0,209931 ;  Numbers n such that smallest digit of all divisors of n is 1.
+seq $0,209931 ; Numbers k such that smallest digit of all divisors of k is 1.

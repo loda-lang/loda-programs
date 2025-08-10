@@ -1,17 +1,18 @@
 ; A095448: a(n) = 28 written in base n.
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 1111111111111111111111111111,11100,1001,130,103,44,40,34,31,28,26,24,22,20
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,28
+mul $1,56
+add $1,2
+div $1,2
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -22,3 +23,6 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
+sub $0,341
+div $0,10
+add $0,34

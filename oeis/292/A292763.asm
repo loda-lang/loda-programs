@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $5,$1
@@ -17,8 +16,6 @@ lpb $2
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,$5
   mov $7,$3
-  add $7,1
-  trn $3,2
   gcd $3,2
   mov $6,$7
   pow $7,$3

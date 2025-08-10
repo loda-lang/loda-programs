@@ -4,15 +4,28 @@
 
 #offset 1
 
-sub $0,1
-mov $2,1
-mov $1,$0
-lpb $1
-  mov $3,$1
-  seq $3,1462 ; Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
-  sub $1,1
-  add $2,$3
+mov $1,1
+mov $2,20
+mov $3,20
+mov $20,1
+mov $21,2
+mov $5,$0
+lpb $5
+  mov $4,$$2
+  lpb $4
+    add $6,$1
+    mov $7,$6
+    geq $7,$0
+    mov $$3,$1
+    sub $4,1
+    mul $6,$12
+    mul $7,$4
+    add $3,1
+    sub $4,$7
+  lpe
+  add $1,1
+  add $2,1
+  sub $5,1
 lpe
-mov $0,$2
-mov $1,$2
-sub $1,1
+mov $0,$3
+sub $0,20

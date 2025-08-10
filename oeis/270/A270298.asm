@@ -4,10 +4,7 @@
 
 #offset 1
 
-mov $1,$0
-sub $0,1
-mov $0,$1
-mov $3,$1
+mov $3,$0
 add $3,2
 pow $3,2
 lpb $3
@@ -17,11 +14,11 @@ lpb $3
   sub $4,1
   equ $4,0
   sub $0,$4
-  mov $5,$0
-  max $5,0
-  equ $5,$0
+  mov $1,$0
+  max $1,0
+  equ $1,$0
   add $2,2
-  mul $3,$5
+  mul $3,$1
   sub $3,1
 lpe
 mov $0,$2
