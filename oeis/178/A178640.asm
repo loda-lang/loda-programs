@@ -1,11 +1,18 @@
 ; A178640: Triangle T(n,k) with the coefficient [x^k] of the series (-1)^(n+1) * (x-1)^(n+1) * Sum_{j>=0} (5+8*j)^n*x^j in row n, column k.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,5,3,25,94,9,125,1697,1223,27,625,25436,57926,14236,81,3125,352543,1903218,1513438,159593,243,15625,4717434,52306583,95276588,34660263,1766458,729,78125,62123517,1301287905,4593751457,3854897607,738035607
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2

@@ -1,5 +1,5 @@
 ; A161153: Positive integers that are coprime to their number of digits in binary representation.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,3,4,5,7,9,11,13,15,16,17,18,19,21,22,23,24,26,27,28,29,31,35,37,41,43,47,49,53,55,59,61,64,65,66,67,68,69,71,72,73,74,75,76,78,79,80,81,82,83,85,86,87,88,89,90,92,93,94,95,96,97,99,100,101,102,103,104,106,107,108,109,110,111,113,114,115,116,117,118
 
 #offset 1
@@ -12,13 +12,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  mov $5,0
+  mov $5,$3
+  mul $5,2
+  log $5,2
   add $1,1
-  mov $6,$3
-  lpb $6
-    div $6,2
-    add $5,1
-  lpe
   gcd $3,$5
   equ $3,1
   sub $0,$3

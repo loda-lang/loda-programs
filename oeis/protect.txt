@@ -454,6 +454,7 @@ A139287: 2^(2p - 1) - 1, where p is prime.
 A139290: 2^(2p - 1)/4, where p is prime.
 A139293: (2^(2p - 1)/8)-1, where p is prime.
 A139478: a(n) = A001109(n) in binary.
+A139582: Twice partition numbers.
 A140353: a(n) = prime(n) + 9.
 A140475: 1 along with primes greater than 3.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.

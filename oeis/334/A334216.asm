@@ -8,6 +8,5 @@
 mov $1,$0
 seq $1,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
 seq $1,1221 ; Number of distinct primes dividing n (also called omega(n)).
-sub $0,1
 mov $0,$1
 add $0,1

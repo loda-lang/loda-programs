@@ -1,18 +1,23 @@
 ; A209568: Triangle of coefficients of polynomials v(n,x) jointly generated with A209567; see the Formula section.
-; Submitted by nenym
+; Submitted by loader3229
 ; 1,2,2,3,5,3,4,10,11,4,5,17,28,21,5,6,26,58,67,36,6,7,37,105,166,142,57,7,8,50,173,350,416,274,85,8,9,65,266,659,1011,940,491,121,9,10,82,388,1141,2156,2612,1955,829,166,10,11,101,543,1852,4172,6265
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $2,$0
 add $2,2
 mul $2,2
-add $3,$0
+mov $3,$0
 mov $4,$0
 mov $0,$2
 lpb $0

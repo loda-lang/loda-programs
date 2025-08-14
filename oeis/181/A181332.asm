@@ -1,14 +1,21 @@
 ; A181332: Triangle read by rows: T(n,k) is the number of 2-compositions of n having k nonzero entries in the top row. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
-; Submitted by Conan
+; Submitted by loader3229
 ; 1,1,1,2,4,1,4,12,7,1,8,32,31,10,1,16,80,111,59,13,1,32,192,351,268,96,16,1,64,448,1023,1037,530,142,19,1,128,1024,2815,3598,2435,924,197,22,1,256,2304,7423,11535,9843,4923,1477,261,25,1,512,5120,18943,34832
 
 mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

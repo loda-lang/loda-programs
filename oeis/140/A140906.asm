@@ -1,20 +1,15 @@
 ; A140906: Number of 6 X 6 matrices with elements in 0..n with each row and each column in nondecreasing order. 6,6,n can be permuted, see formula.
-; Submitted by Simon Strandgaard
+; Submitted by mudpuppie
 ; 1,924,226512,24293412,1447482465,55197331332,1478619421136,29706808370096,469699956117392,6062460972064640,65728947490132992,612416828057104512,4995284546047230864,36217696550300209296,236405501218419838800,1404221840699607829900
 
-add $0,4
 mov $1,1
-mov $2,10
-mov $4,$0
-mov $0,12
-lpb $0
-  sub $0,2
-  mov $3,$4
-  add $3,2
-  bin $3,$1
-  add $1,2
-  mul $2,$3
-  add $4,1
+mov $2,6
+lpb $2
+  mov $3,$0
+  add $3,$2
+  fac $3,6
+  mul $1,$3
+  sub $2,1
 lpe
-mov $0,$2
-div $0,42336000
+mov $0,$1
+div $0,222531556847250309120000000

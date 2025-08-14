@@ -1,5 +1,5 @@
 ; A121081: Number of partitions of n into parts with at most one 1 and at most one 2.
-; Submitted by Ralfy
+; Submitted by Hadius Moonbottle
 ; 1,1,2,2,3,5,6,8,11,14,18,24,30,38,49,61,76,96,118,146,181,221,270,331,401,486,589,709,852,1025,1225,1463,1746,2075,2463,2922,3453,4077,4808,5656,6644,7798,9130,10678,12475,14547,16942,19714,22898,26570,30798
 
 #offset 1
@@ -25,7 +25,6 @@ lpb $2
     mov $5,$6
     mul $5,$0
     add $7,$5
-    sub $8,$1
   lpe
   mov $0,$7
   mov $1,$2

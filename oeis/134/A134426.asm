@@ -4,7 +4,6 @@
 
 mov $5,3
 mov $7,3
-mov $8,0
 mov $9,3
 mov $1,$0
 add $1,1

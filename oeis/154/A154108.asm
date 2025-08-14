@@ -5,39 +5,19 @@
 #offset 1
 
 sub $0,1
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$6
-  add $0,$4
-  sub $0,1
-  mov $8,0
-  mov $9,$0
-  mov $3,2
-  lpb $3
-    sub $3,1
-    mov $0,$9
-    add $0,$3
-    sub $0,1
-    mov $1,1
-    add $1,$0
-    max $1,0
-    seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-    mov $7,$3
-    mul $7,$1
-    mov $0,$1
-    add $8,$7
-  lpe
-  min $9,1
-  mul $9,$0
-  mov $0,$8
-  sub $0,$9
-  mov $2,$4
-  mul $2,$0
-  add $5,$2
+mov $4,$0
+mov $2,2
+lpb $2
+  sub $2,1
+  mov $0,$4
+  add $0,$2
+  trn $0,2
+  seq $0,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
+  mov $1,$2
+  mul $1,$0
+  add $3,$1
 lpe
-min $6,1
-mul $6,$0
-mov $0,$5
-sub $0,$6
+min $4,1
+mul $4,$0
+mov $0,$3
+sub $0,$4

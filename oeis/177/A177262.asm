@@ -1,14 +1,19 @@
 ; A177262: Triangle read by rows: T(n,k) is the number of permutations of {1,2,...,n} starting with exactly k consecutive integers (1<=k<=n).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,4,1,1,18,4,1,1,96,18,4,1,1,600,96,18,4,1,1,4320,600,96,18,4,1,1,35280,4320,600,96,18,4,1,1,322560,35280,4320,600,96,18,4,1,1,3265920,322560,35280,4320,600,96,18,4,1,1,36288000,3265920,322560,35280,4320,600,96,18,4,1,1,439084800,36288000,3265920,322560,35280,4320,600,96,18,4,1,1,5748019200,439084800
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $2,$0
 pow $1,$2
 add $1,$2

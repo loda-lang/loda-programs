@@ -10,8 +10,11 @@ mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-mul $1,16
+add $1,120
+mul $1,8
+nrt $1,2
 add $1,1
+div $1,2
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -22,6 +25,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-sub $0,201
-div $0,10
-add $0,20

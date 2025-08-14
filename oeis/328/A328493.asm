@@ -1,21 +1,15 @@
 ; A328493: a(n) = (p_n + 1)*q_n - 1; where (p_n, q_n) is the n-th twin prime pair.
-; Submitted by Karlsson
+; Submitted by Science United
 ; 19,41,155,341,929,1805,3659,5255,10505,11771,19181,22649,32579,37055,39401,52211,57839,73169,79805,97655,121451,176819,187055,213905,273005,325469,360599,382541,412805,436259,656909,676505,686411,737021,778805,1041419,1066055,1103549,1128905
+; Formula: a(n) = 2*binomial(A014574(n),2)+2*A014574(n)-1
 
 #offset 1
 
-lpb $0
-  seq $0,14574 ; Average of twin prime pairs.
-  sub $0,2
-  mov $2,$0
-  mov $0,0
-lpe
-mov $0,$2
-add $0,3
-div $0,2
-mul $0,2
+seq $0,14574 ; Average of twin prime pairs.
 mov $1,$0
-add $1,2
-sub $0,1
-mul $0,$1
-add $0,1
+bin $1,2
+add $1,$0
+add $1,1
+mov $0,$1
+mul $0,2
+sub $0,3

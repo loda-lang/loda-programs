@@ -1,22 +1,23 @@
 ; A268222: Triangle read by rows: T(n,k) (n>=5, k=3..n-2) is the number of topologies t on n points having exactly k open sets such that t contains exactly one open set of size m for each m in {0,4,5,6,...,s,n} where s is the size of the largest proper open set in t.
-; Submitted by Bill F
+; Submitted by loader3229
 ; 5,15,30,35,105,210,70,280,840,1680,126,630,2520,7560,15120,210,1260,6300,25200,75600,151200,330,2310,13860,69300,277200,831600,1663200,495,3960,27720,166320,831600,3326400,9979200,19958400,715,6435,51480,360360,2162160,10810800,43243200,129729600,259459200,1001,10010,90090,720720,5045040,30270240,151351200,605404800,1816214400,3632428800,1365,15015,150150,1351350,10810800,75675600,454053600,2270268000,9081072000,27243216000,54486432000,1820,21840,240240,2402400,21621600,172972800,1210809600
 
 #offset 5
 
-sub $0,5
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,1
+sub $0,4
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 sub $2,$0
-add $2,1
+add $2,2
 add $0,4
-lpb $0
-  sub $0,1
-  add $2,1
-  mul $1,$2
-lpe
-add $0,$1
+fac $2,$0
+mov $0,$2
 div $0,24

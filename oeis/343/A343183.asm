@@ -1,17 +1,17 @@
 ; A343183: A343182(n) converted from base 2 to base 10.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,4,100,27748,1826909284,7846656366854040676,144745261873314177466380711909411548260,49254260310842419635956203183145610297181518175722645092459215139793457671268
-; Formula: a(n) = truncate((2*a(n-1)+b(n-1))/2)*b(n-1)^2+a(n-1), a(1) = 4, a(0) = 0, b(n) = b(n-1)^2, b(1) = 4, b(0) = 2
+; Formula: a(n) = 4*truncate(c(n)/8), b(n) = b(n-1)^2, b(1) = 4, b(0) = 2, c(n) = (b(n-1)+c(n-1))*b(n-1)^2+c(n-1), c(1) = 8, c(0) = 0
 
 mov $2,2
 lpb $0
   sub $0,1
   mov $1,$3
-  mul $1,2
   add $1,$2
   pow $2,2
-  div $1,2
   mul $1,$2
   add $3,$1
 lpe
 mov $0,$3
+div $0,8
+mul $0,4

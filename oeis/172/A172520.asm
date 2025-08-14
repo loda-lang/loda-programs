@@ -1,16 +1,21 @@
 ; A172520: Triangle in which row n gives the number of divisors of numbers in the range n to n+k for k=0..n-1.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,3,2,4,5,3,4,6,7,2,5,6,8,9,4,5,7,8,10,11,2,5,7,9,10,12,13,4,6,8,9,11,12,14,15,3,6,7,10,11,13,14,16,17,4,5,9,10,12,13,15,16,18,19,2,7,8,10,12,14,15,17,18,20,21,6,7,9,11,13,14,16,17,19,20,22,23,2,5
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
 add $2,1
+sub $0,$5
 add $0,$2
+sub $0,1
 lpb $0
   sub $0,1
   add $4,1

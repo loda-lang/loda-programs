@@ -17,7 +17,6 @@ sub $0,1
 mul $0,2
 mul $2,2
 bin $2,$0
-mov $5,0
 mov $0,$2
 lpb $1
   add $5,1

@@ -16,7 +16,6 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
   sub $0,1
   mov $6,$0
   mul $6,8
@@ -31,10 +30,10 @@ lpb $2
   div $0,2
   mov $8,3
   pow $8,$0
-  mov $9,$7
-  div $9,$8
+  mov $5,$7
+  div $5,$8
   add $7,$8
-  add $7,$9
+  add $7,$5
   mov $0,$7
   div $0,4
   add $0,1

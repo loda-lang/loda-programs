@@ -1,14 +1,19 @@
 ; A183225: Array:  row r is the complement of the (r+2)-gonal numbers; by antidiagonals.
-; Submitted by [TA]crashtech
+; Submitted by loader3229
 ; 2,4,2,5,3,2,7,5,3,2,8,6,4,3,2,9,7,6,4,3,2,11,8,7,5,4,3,2,12,10,8,7,5,4,3,2,13,11,9,8,6,5,4,3,2,14,12,10,9,8,6,5,4,3,2,16,13,11,10,9,7,6,5,4,3,2,17,14,13,11,10,9,7,6,5,4,3,2,18,15
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $2,$0
 mov $3,1
 add $3,$0

@@ -1,17 +1,16 @@
 ; A032108: Number of reversible strings with n labeled beads of 3 colors.
+; Submitted by Science United
 ; 3,9,81,972,14580,262440,5511240,132269760,3571283520,107138505600,3535570684800,127280544652800,4963941241459200,208485532141286400,9381848946357888000,450328749425178624000
-; Formula: a(n) = 3*truncate((b(n)-8)/12)+3, b(n) = 3*n*b(n-1), b(1) = 6, b(0) = 2
 
 #offset 1
 
-mov $1,2
-lpb $0
-  sub $0,1
-  add $2,3
-  mul $1,$2
-lpe
-sub $1,8
-div $1,12
-mul $1,3
-add $1,3
+mov $1,1
+fac $1,$0
+mov $2,3
+pow $2,$0
+mov $3,1
+fac $3,$0
+gcd $3,2
 mov $0,$1
+mul $0,$2
+div $0,$3

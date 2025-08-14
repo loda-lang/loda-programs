@@ -1,19 +1,20 @@
 ; A372637: a(n) = (1/2) * Sum_{k=1..n} phi(6*k).
-; Submitted by Mumps
+; Submitted by Science United
 ; 1,3,6,10,14,20,26,34,43,51,61,73,85,97,109,125,141,159,177,193,211,231,253,277,297,321,348,372,400,424,454,486,516,548,572,608,644,680,716,748,788,824,866,906,942,986,1032,1080,1122,1162,1210,1258,1310,1364,1404
 
 #offset 1
 
-sub $0,1
-lpb $0
-  mov $2,$0
-  mul $2,9
-  add $2,9
-  seq $2,62570 ; a(n) = phi(2*n).
-  dif $2,2
-  div $2,3
-  sub $0,1
-  add $1,$2
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $1,$0
+  sub $1,$4
+  mul $1,3
+  mov $3,280
+  min $3,$1
+  mul $3,2
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $2,$3
 lpe
-mov $0,$1
-add $0,1
+mov $0,$2
+div $0,2

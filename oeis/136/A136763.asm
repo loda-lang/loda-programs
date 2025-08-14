@@ -1,7 +1,10 @@
 ; A136763: a(n) = leading digit of n! in base 13.
+; Submitted by loader3229
 ; 1,1,2,6,1,9,4,2,1,12,9,8,7,7,8,9,11,1,1,2,3,5,9,1,2,4,9,1,3,7,1,3,7,1,3,10,2,6,1,4,1,3,10,2,9,2,8,2,8,2,9,2,11,3,1,4,1,7,2,11,4,1,6,2,12,4,1,9,3,1,8,3,1,8,3,1,9,4,2,12
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,$0
+mov $0,1
+fac $0,$2
 lpb $0
   mov $1,$0
   div $0,13

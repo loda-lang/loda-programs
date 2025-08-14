@@ -1,16 +1,19 @@
 ; A049706: a(n) = T(n,n+2), array T as in A049704.
+; Submitted by shiva
 ; 1,1,3,5,8,11,15,20,25,30,37,44,52,61,68,76,88,99,111,124,134,145,161,176,190,206,221,236,256,274,293,316,334,352,372,390,414,441,462,482,510,536,563,594,616,639,673,704,733,764,790,818,856,891,920,952,982
-; Formula: a(n) = truncate(b(2*n)/2), b(n) = b(n-1)+A000010(floor(n/2)+1), b(0) = 1
 
-mov $1,1
-mul $0,2
-lpb $0
-  mov $2,$0
-  div $2,2
-  add $2,1
-  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $0,1
-  add $1,$2
+mov $4,$0
+add $0,1
+lpb $4
+  sub $4,1
+  mov $1,$0
+  sub $1,$4
+  add $2,$3
+  mov $3,280
+  min $3,$1
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $2,$3
 lpe
-mov $0,$1
-div $0,2
+div $2,2
+mov $0,$2
+add $0,1

@@ -1,7 +1,7 @@
 ; A264772: Triangle T(n,k) = binomial(3*n - 2*k, 2*n - k), 0 <= k <= n.
 ; Submitted by loader3229
 ; 1,3,1,15,4,1,84,21,5,1,495,120,28,6,1,3003,715,165,36,7,1,18564,4368,1001,220,45,8,1,116280,27132,6188,1365,286,55,9,1,735471,170544,38760,8568,1820,364,66,10,1,4686825,1081575,245157,54264,11628,2380,455,78,11,1,30045015,6906900,1562275,346104,74613,15504,3060,560,91,12,1,193536720,44352165,10015005,2220075,480700,100947,20349,3876,680,105,13,1,1251677700,286097760
-; Formula: a(n) = binomial(3*truncate((sqrtint(8*n+8)-1)/2)+2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-2*n,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = binomial(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+max(0,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+truncate((sqrtint(8*n+8)-1)/2)-1)-1,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+truncate((sqrtint(8*n+8)-1)/2)-1)
 
 add $0,1
 mov $1,$0
@@ -9,14 +9,12 @@ mul $1,8
 nrt $1,2
 sub $1,1
 div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
-mul $0,-1
-add $0,$1
-add $1,$0
-add $1,$0
-bin $1,$0
-mov $0,$1
+mov $3,$1
+add $3,2
+bin $3,2
+sub $0,$3
+sub $1,$0
+max $2,$1
+sub $2,$0
+bin $2,$1
+mov $0,$2

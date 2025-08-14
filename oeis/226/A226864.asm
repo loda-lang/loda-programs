@@ -10,7 +10,19 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
-  seq $3,133985 ; Expansion of f(-x, x^2) in powers of x where f(, ) is Ramanujan's general theta function.
+  mul $3,3
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $3,2
+  sub $3,$6
+  bin $3,$6
   sub $5,1
   add $2,$3
   mov $4,2

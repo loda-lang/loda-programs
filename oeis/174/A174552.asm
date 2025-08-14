@@ -1,11 +1,18 @@
 ; A174552: Triangular array T(n,k): The differences in the columns of A174551.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,1,1,1,2,8,7,6,6,81,65,50,36,24,1024,781,570,390,240,120,15625,11529,8162,5460,3360,1800,720,279936,201811,140070,92526,57120,31920,15120,5040
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 add $1,1

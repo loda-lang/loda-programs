@@ -5,5 +5,5 @@
 
 mov $1,$0
 seq $1,556 ; Expansion of exp(-x) / (1 - exp(x) + exp(-x)).
-seq $0,557 ; Expansion of e.g.f.: 1/(1-2*sinh(x)).
+seq $0,557 ; Expansion of e.g.f. 1/(1 - 2*sinh(x)).
 sub $0,$1

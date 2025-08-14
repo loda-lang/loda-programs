@@ -1,19 +1,33 @@
 ; A334689: Triangle read by rows: T(n,k) (0 <= k <= n) =  k!*(Stirling2(n,k)+(k+1)*Stirling2(n,k+1))^2.
-; Submitted by Athlici
+; Submitted by loader3229
 ; 1,1,1,1,9,2,1,49,72,6,1,225,1250,600,24,1,961,16200,25350,5400,120,1,3969,181202,735000,470400,52920,720,1,16129,1866312,17360406,26460000,8490720,564480,5040,1,65025,18301250,362237400,1159593624,840157920,153679680,6531840,40320
-; Formula: a(n) = truncate((A028246(n+1)^2)/((-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)!))
 
-mov $1,$0
 add $0,1
-seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+mov $3,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $4,$0
+add $4,1
+bin $4,2
+sub $3,$4
+mov $1,$3
+sub $1,1
+add $3,1
+lpb $3
+  sub $3,1
+  mov $6,$3
+  pow $6,$0
+  sub $7,$3
+  bin $7,$5
+  mul $7,$6
+  add $8,$7
+  add $5,1
+  mov $7,0
+lpe
+mov $2,1
+fac $2,$1
+mov $0,$8
 pow $0,2
-mov $2,$1
-mul $2,8
-add $2,1
-nrt $2,2
-add $2,1
-div $2,2
-bin $2,2
-sub $1,$2
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-div $0,$1
+div $0,$2

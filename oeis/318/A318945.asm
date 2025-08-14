@@ -1,17 +1,23 @@
 ; A318945: Triangle read by rows: T(n,k) (n>=2, 0 <= k <= n-2) = number of Dyck paths with k valleys of altitude k.
-; Submitted by Saenger
+; Submitted by loader3229
 ; 1,4,1,13,5,1,39,19,6,1,112,64,26,7,1,313,201,97,34,8,1,859,603,331,139,43,9,1,2328,1752,1064,512,191,53,10,1
 
 #offset 2
 
+mov $1,3
 mov $3,3
 mov $5,3
-sub $0,2
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
+sub $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

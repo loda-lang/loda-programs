@@ -10,7 +10,5 @@ seq $1,295665 ; Fully multiplicative with a(prime(m)) = prime(k) when m = prime(
 seq $1,64988 ; Multiplicative with a(p^e) = prime(p)^e.
 mov $2,$0
 div $2,$1
-sub $0,1
 mov $0,$2
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mul $2,2

@@ -1,30 +1,27 @@
 ; A045789: Squares with initial digit '6'.
-; Submitted by biodoc
+; Submitted by KetamiNO [YouTube]
 ; 64,625,676,6084,6241,6400,6561,6724,6889,60025,60516,61009,61504,62001,62500,63001,63504,64009,64516,65025,65536,66049,66564,67081,67600,68121,68644,69169,69696,600625,602176,603729,605284,606841
 
 #offset 1
 
 sub $0,1
-mov $1,6
+mov $1,8
 mov $2,$0
 add $2,2
 pow $2,4
 lpb $2
+  sub $2,1
   mov $3,$1
   pow $3,2
   mov $5,$3
   log $5,10
-  mov $6,10
-  pow $6,$5
-  div $3,$6
+  mov $4,10
+  pow $4,$5
+  div $3,$4
   equ $3,6
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
-pow $1,2
 mov $0,$1
+pow $0,2

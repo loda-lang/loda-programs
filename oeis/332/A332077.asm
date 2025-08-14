@@ -1,5 +1,5 @@
 ; A332077: Square array of sunflower numbers Sun(m,n) = minimal number of distinct sets of cardinality <= m such that there is a sunflower with at least n sets among them, read by falling antidiagonals; m, n >= 1.
-; Submitted by Kovas McCann
+; Submitted by KetamiNO [YouTube]
 ; 1,2,1,3,2,1,4,7,2,1,5,11,21,2,1,6,21
 
 #offset 1
@@ -10,6 +10,7 @@ nrt $1,2
 sub $1,1
 div $1,2
 mov $3,1
+mov $6,2
 mov $7,$1
 add $7,1
 bin $7,2
@@ -22,6 +23,7 @@ add $1,1
 lpb $1
   sub $1,1
   dif $5,2
+  dir $5,$0
   mov $4,$3
   add $4,$5
   add $4,$0
@@ -37,4 +39,4 @@ lpb $1
   add $6,$5
 lpe
 mov $0,$6
-add $0,1
+sub $0,1

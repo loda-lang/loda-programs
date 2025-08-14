@@ -1,24 +1,17 @@
 ; A128893: (1/p)*(binomial(2*p,p)+2*(p-1)), where p = n-th prime.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 4,8,52,492,64132,800048,137270956,1860277044,357975249028,1036802293087624,15013817846943908,47192717955016924592,10360599532897359064120,154361699651715243559788,34589385964790856394651396,118349529407778329236413352408,412825418773807104132857739017404
+; Formula: a(n) = 2*truncate(binomial(2*A000040(n)-1,A000040(n))/A000040(n))+2
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
+seq $0,40 ; The prime numbers.
+sub $0,1
 mov $1,$0
-mul $1,2
+add $0,1
+add $1,$0
 bin $1,$0
 div $1,$0
 mov $0,$1
-add $0,2
+add $0,1
+mul $0,2

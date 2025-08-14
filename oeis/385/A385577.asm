@@ -1,23 +1,20 @@
 ; A385577: Array read by ascending antidiagonals: A(n,m) = n*Pochhammer(n+1,m+1)/(m+2).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,0,3,2,0,6,8,6,0,10,20,30,24,0,15,40,90,144,120,0,21,70,210,504,840,720,0,28,112,420,1344,3360,5760,5040,0,36,168,756,3024,10080,25920,45360,40320,0,45,240,1260,6048,25200,86400,226800,403200,362880,0
 
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-add $0,1
-sub $0,$2
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
 add $1,1
-bin $1,$0
+bin $1,2
+sub $0,$1
 sub $0,1
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
-mov $0,$1
+sub $2,$0
+add $0,2
+fac $2,$0
+div $2,$0
+mov $0,$2

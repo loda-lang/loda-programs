@@ -1,14 +1,19 @@
-; A217839: T(n,k)=Number of n element 0..1 arrays with each element the minimum of k adjacent elements of a random 0..1 array of n+k-1 elements
-; Submitted by STE\/E
+; A217839: T(n,k)=Number of n element 0..1 arrays with each element the minimum of k adjacent elements of a random 0..1 array of n+k-1 elements.
+; Submitted by loader3229
 ; 2,2,4,2,4,8,2,4,7,16,2,4,7,12,32,2,4,7,11,21,64,2,4,7,11,17,37,128,2,4,7,11,16,27,65,256,2,4,7,11,16,23,44,114,512,2,4,7,11,16,22,34,72,200,1024,2,4,7,11,16,22,30,52,117,351,2048,2,4,7,11,16,22,29,42,81,189,616,4096,2,4
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $2,$0
 add $2,2
 add $0,$2

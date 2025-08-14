@@ -35,9 +35,6 @@ lpb $2
   sub $3,1
   mov $5,1
   add $5,$3
-  add $3,1
-  seq $3,62570 ; a(n) = phi(2*n).
-  sub $5,$3
   div $5,2
   mov $3,$5
   mul $3,338

@@ -1,46 +1,56 @@
 ; A113968: a(0) = 0 and a(n) = (5*(-4)^n + 16*(-1)^n + 9*4^n)/240 for n >= 1.
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Science United
 ; 0,0,1,1,15,17,239,273,3823,4369,61167,69905,978671,1118481,15658735,17895697,250539759,286331153,4008636143,4581298449,64138178287,73300775185,1026210852591,1172812402961,16419373641455,18764998447377
 
-mov $5,$0
-mov $2,$0
-lpb $2
-  mov $9,$5
-  mov $3,2
-  lpb $3
-    sub $3,1
-    mov $0,$5
-    add $0,$3
+mov $13,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $10,0
+  mov $0,$13
+  sub $0,$3
+  mov $9,$0
+  mov $11,2
+  lpb $11
+    sub $11,1
+    mov $0,$9
+    add $0,$11
     sub $0,1
-    mov $11,2
-    lpb $11
-      sub $11,1
-      add $0,$11
-      sub $0,1
-      mov $4,$0
-      gcd $4,2
-      mov $6,4
-      pow $6,$0
-      div $6,5
-      mul $4,$6
-      mov $12,$11
-      lpb $12
-        sub $12,1
-        mov $10,$4
-      lpe
+    mov $5,$0
+    mov $6,0
+    mov $7,2
+    lpb $7
+      sub $7,1
+      mov $0,$5
+      add $0,$7
+      sub $0,2
+      mov $1,1
+      sub $1,$0
+      gcd $1,2
+      mul $0,2
+      add $0,$1
+      mov $2,2
+      pow $2,$0
+      add $1,$2
+      mov $0,$1
+      div $0,3
+      mov $8,$7
+      mul $8,$0
+      add $6,$8
     lpe
-    mov $7,$10
-    mov $8,$3
-    lpb $8
-      sub $8,1
-      mov $1,$10
-    lpe
+    min $5,1
+    mul $5,$0
+    mov $0,$6
+    sub $0,$5
+    mov $12,$11
+    mul $12,$0
+    add $10,$12
   lpe
-  sub $2,2
-  lpb $9
-    mov $9,0
-    sub $1,$7
-  lpe
+  min $9,1
+  mul $9,$0
+  mov $0,$10
+  sub $0,$9
+  div $0,5
+  add $4,$0
 lpe
-mov $0,$1
-div $0,6
+mov $0,$4

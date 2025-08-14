@@ -11,8 +11,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,361465 ; a(n) = 1 if A017665(n) [the numerator of the sum of the reciprocals of the divisors of n] is a power of 2, otherwise 0.
-  sub $0,$3
+  mov $6,$3
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  dir $3,2
+  mov $5,$3
+  gcd $5,$6
+  equ $5,$3
+  sub $0,$5
   add $1,2
   mov $4,$0
   max $4,0

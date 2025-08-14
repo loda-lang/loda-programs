@@ -1,22 +1,17 @@
 ; A289830: a(n) satisfies the equation n/(n-1) + a(n)/n! = H(n), where H(n) is the n-th harmonic number.
-; Submitted by Jon Maiga
+; Submitted by KetamiNO [YouTube]
 ; -1,2,18,124,900,7188,63504,618336,6596640,76635360,963895680,13056819840,189581333760,2938083321600,48416639846400,845487698227200,15598004134809600,303161985274982400,6191998554470400000,132599321499875328000,2970952207377960960000
 
 #offset 2
 
-sub $0,2
-mov $2,1
-mov $3,$0
-add $0,2
-lpb $3
-  mov $4,$3
-  add $4,1
-  mul $2,$4
-  mul $1,$3
+mov $1,-1
+mov $2,$0
+sub $0,1
+lpb $0
+  max $0,2
   add $1,$2
-  sub $3,1
+  mul $2,$0
+  sub $0,1
+  mul $1,$0
 lpe
-sub $1,$2
-mul $1,$0
-add $2,$1
-mov $0,$2
+mov $0,$1

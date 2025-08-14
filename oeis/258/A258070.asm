@@ -5,11 +5,10 @@
 #offset 1
 
 sub $0,1
-mul $0,2
-mov $2,$0
-pow $2,2
-mov $1,$2
-pow $1,$0
-lex $1,$0
-mov $0,$1
-div $0,4
+mov $1,$0
+lpb $1
+  mul $0,3
+  pow $1,$0
+  equ $1,2
+lpe
+div $0,3
