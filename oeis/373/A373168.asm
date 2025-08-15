@@ -1,13 +1,20 @@
 ; A373168: Triangle read by rows: the exponential almost-Riordan array ( exp(x/(1-x)) | 1/(1-x), x ).
-; Submitted by [AF>France>Sale-caractere] Antares
+; Submitted by loader3229
 ; 1,1,1,3,1,1,13,2,2,1,73,6,6,3,1,501,24,24,12,4,1,4051,120,120,60,20,5,1,37633,720,720,360,120,30,6,1,394353,5040,5040,2520,840,210,42,7,1,4596553,40320,40320,20160,6720,1680,336,56,8,1,58941091,362880,362880,181440,60480,15120,3024,504,72,9,1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 sub $1,$0
-add $3,$0
+mov $3,$0
 mov $0,$1
 add $1,1
 lpb $1

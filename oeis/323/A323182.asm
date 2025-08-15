@@ -1,11 +1,18 @@
 ; A323182: Square array T(n,k), n >= 0, k >= 0, read by antidiagonals, where T(n,k) is Chebyshev polynomial of the second kind U_{n}(x), evaluated at x=k.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,0,1,2,-1,1,4,3,0,1,6,15,4,1,1,8,35,56,5,0,1,10,63,204,209,6,-1,1,12,99,496,1189,780,7,0,1,14,143,980,3905,6930,2911,8,1,1,16,195,1704,9701,30744,40391,10864,9,0,1,18,255,2716,20305,96030,242047,235416,40545,10,-1,1,20,323,4064,37829,241956,950599,1905632,1372105,151316,11,0,1,22
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 sub $2,$0
 mul $2,2
 mov $3,1

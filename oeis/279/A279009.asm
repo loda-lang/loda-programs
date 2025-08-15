@@ -1,16 +1,23 @@
 ; A279009: Alternating Jacobsthal triangle A_{-2}(n,k) read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,-2,0,1,-2,-2,-1,1,4,0,-1,-2,1,4,4,1,1,-3,1,-8,0,3,0,4,-4,1,-8,-8,-3,3,-4,8,-5,1,16,0,-5,-6,7,-12,13,-6,1,16,16,5,1,-13,19,-25,19,-7,1,-32,0,11,4,14,-32,44,-44,26,-8,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 add $2,2
 sub $2,$0
 sub $0,1
 div $0,-1
-add $3,$0
+mov $3,$0
 mov $4,$0
 mov $0,$2
 lpb $0

@@ -1,5 +1,5 @@
 ; A290343: Numerators of the Kirchhoff (and Harary) index for the n-hypercube graph.
-; Submitted by vanos0512
+; Submitted by loader3229
 ; 0,1,5,58,206,3548,12136,291824,1012048,10650848,7560128,298378880,1081081600,51358504448,189080845312,3502982600704,13051710507008,830688808865792,3123121211121664,223924345487409152,847782882348335104
 
 mov $3,1
@@ -16,7 +16,9 @@ lpb $1
   mul $4,2
   mul $5,$1
 lpe
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $6,$0
+mov $0,1
+fac $0,$6
 gcd $0,$2
 mov $1,$2
 div $1,$0

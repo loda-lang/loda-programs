@@ -7,7 +7,7 @@ lpb $4
   sub $4,1
   mov $1,$0
   sub $1,$4
-  mov $3,280
+  mov $3,140
   min $3,$1
   seq $3,382724 ; Number of entries in the n-th row of Pascal's triangle not divisible by 6.
   add $2,$3

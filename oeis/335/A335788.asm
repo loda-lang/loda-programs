@@ -2,37 +2,34 @@
 ; Submitted by loader3229
 ; 1,1,3,11,49,263,1675,12417,105183,1002475,10616589,123679907,1571831251,21640964933,320872742611,5097445680435,86377624918593,1555173730665199,29646960589439139,596571563234557361,12636340495630310359,281040812801112341027,6548183676729160919245,159506163208194891330267,4054315017969344421174699,107346101980878679643918245,2955890941554407565687971547,84524176984670014742292102923,2506500306304789683920454698737,76982948328434616921629228347127,2445933101849662444538773795264603
 
-mov $1,$0
-equ $1,0
-mov $20,1
-add $0,$1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
+max $0,1
+mov $4,$0
+sub $4,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $8,0
+  mov $3,$0
+  add $3,2
+  lpb $3
+    sub $3,1
+    mov $6,$3
+    pow $6,$4
+    sub $7,$3
+    bin $7,$5
+    mul $7,$6
+    add $8,$7
+    add $5,1
+    mov $7,0
   lpe
-  sub $3,1
-lpe
-mov $1,0
-mov $2,0
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  seq $4,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
+  mov $2,1
+  fac $2,$0
+  mov $9,$0
+  add $9,1
+  seq $9,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+  div $8,$2
+  mul $8,$9
+  add $1,$8
 lpe
 mov $0,$1
 mul $0,2

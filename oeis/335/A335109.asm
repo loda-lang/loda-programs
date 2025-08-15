@@ -1,15 +1,18 @@
 ; A335109: Triangle read by rows: T(n,k) is the number of permutations of length n with each cycle of the permutation containing only elements that are identical (mod k), where 1 <= k <= n.
-; Submitted by BlisteringSheep
+; Submitted by loader3229
 ; 1,2,1,6,2,1,24,4,2,1,120,12,4,2,1,720,36,8,4,2,1,5040,144,24,8,4,2,1,40320,576,72,16,8,4,2,1,362880,2880,216,48,16,8,4,2,1,3628800,14400,864,144,32,16,8,4,2,1
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 add $1,2
 lpb $1
   sub $1,1

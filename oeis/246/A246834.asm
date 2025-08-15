@@ -1,11 +1,18 @@
 ; A246834: A(n,k) is the concatenation of n and k*n in binary; square array A(n,k), n>=0, k>=0, read by antidiagonals.
-; Submitted by Fornax
+; Submitted by loader3229
 ; 0,0,1,0,3,2,0,6,10,3,0,7,20,15,4,0,12,22,30,36,5,0,13,40,57,72,45,6,0,14,42,60,76,90,54,7,0,15,44,63,144,95,108,63,8,0,24,46,114,148,180,210,126,136,9,0,25,80,117,152,185,216,245,272,153,10,0,26,82,120,156,190,222,252,280,306,170,11,0,27
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 mov $1,$0
 sub $2,$0
 mul $2,$0

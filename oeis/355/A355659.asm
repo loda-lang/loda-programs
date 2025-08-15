@@ -1,11 +1,18 @@
 ; A355659: Martingale win/loss triangle, read by rows: T(n,k) = total number of dollars won (or lost) using the martingale method on all possible n trials that have exactly k losses and n-k wins, for 0 <= k <= n.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 0,1,-1,2,1,-3,3,5,-1,-7,4,11,7,-7,-15,5,19,24,4,-21,-31,6,29,53,38,-12,-51,-63,7,41,97,111,41,-57,-113,-127,8,55,159,243,187,5,-163,-239,-255,9,71,242,458,500,248,-130,-394,-493,-511,10,89,349,784,1084,874,202,-488,-878,-1003,-1023
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $6,$1
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mov $2,$0
 mov $0,$1
 mov $1,$2

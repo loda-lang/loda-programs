@@ -1,11 +1,18 @@
 ; A193919: Triangular array:  the fusion of (p(n,x)) by (q(n,x)), where p(n,x)=sum{F(k+1)*x^(n-k) : 0<=k<=n}, where F=A000045 (Fibonacci numbers), and q(n,x)=(x+1)^n.
-; Submitted by Dr. Berthold Schaefer
+; Submitted by loader3229
 ; 1,1,1,1,3,2,2,7,9,4,3,14,25,21,7,5,28,64,75,46,12,8,53,148,224,195,94,20,13,99,326,603,679,468,185,33,21,181,687,1502,2073,1855,1056,353,54,34,327,1405,3543,5786,6357,4711,2280,659,88,55,584,2802,8005
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 trn $1,1

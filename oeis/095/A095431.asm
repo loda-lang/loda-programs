@@ -1,5 +1,5 @@
 ; A095431: a(n) = 16 written in base n.
-; Submitted by loader3229
+; Submitted by KetamiNO [YouTube]
 ; 1111111111111111,10000,121,100,31,24,22,20,17,16,15,14,13,12,11,10
 
 #offset 1
@@ -10,11 +10,8 @@ mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-add $1,120
-mul $1,8
-nrt $1,2
-add $1,1
-div $1,2
+neq $1,0
+mul $1,16
 lpb $1
   mov $4,$1
   mod $4,$2

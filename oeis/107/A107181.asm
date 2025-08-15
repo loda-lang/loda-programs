@@ -1,21 +1,19 @@
 ; A107181: Primes of the form 8x^2 + 9y^2.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 17,41,89,113,137,233,257,281,353,401,449,521,569,593,617,641,761,809,857,881,929,953,977,1049,1097,1193,1217,1289,1361,1409,1433,1481,1553,1601,1697,1721,1889,1913,2081,2129,2153,2273,2297,2393,2417,2441,2609,2633,2657,2729,2753,2777,2801,2897,2969,3041,3089,3137,3209,3257,3329,3449,3593,3617,3761,3833,3881,3929,4001,4049,4073,4217,4241,4289,4337,4409,4457,4481,4649,4673
 
 #offset 1
 
-mov $2,18
+mov $2,16
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  sub $1,1
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
   add $2,24
   sub $3,$0
 lpe
-add $0,$2
-div $0,24
-mul $0,24
-add $0,17
+mov $0,$2
+add $0,1

@@ -1,11 +1,18 @@
 ; A193997: Triangular array:  the fission of (p(n,x)) by (q(n,x)), where p(n,x)=sum{F(k+1)*x^(n-k) : 0<=k<=n}, where F=A000045 (Fibonacci numbers) and q(n,x)=(x+1)^n.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by loader3229
 ; 1,2,3,3,8,6,5,18,23,11,8,37,66,55,19,13,73,167,196,120,32,21,139,388,587,511,246,53,34,259,853,1578,1777,1225,484,87,55,474,1799,3933,5428,4857,2765,924,142,89,856,3678,9275,15147,16642,12333,5969
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 add $1,1

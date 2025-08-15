@@ -1,13 +1,20 @@
 ; A249250: Triangular array: row n gives the coefficients of the polynomial p(n,x) defined in Comments.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 1,1,3,1,6,3,1,9,15,3,1,12,36,24,3,1,15,66,90,33,3,1,18,105,228,171,42,3,1,21,153,465,579,279,51,3,1,24,210,828,1500,1200,414,60,3,1,27,276,1344,3258,3858,2172,576,69,3,1,30,351,2040,6258,10116,8430,3576,765,78,3,1,33,435,2943,10986,22890,26262,16350,5493,981,87,3,1,36
 
 mov $1,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 sub $2,$0
 lpb $0
   sub $0,1

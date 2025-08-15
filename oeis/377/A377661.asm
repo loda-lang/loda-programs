@@ -1,16 +1,23 @@
 ; A377661: Triangle read by rows: T(n, k) = e*Gamma(n - k + 1, 1)*binomial(n, k)^2.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,1,5,8,1,16,45,18,1,65,256,180,32,1,326,1625,1600,500,50,1,1957,11736,14625,6400,1125,72,1,13700,95893,143766,79625,19600,2205,98,1,109601,876800,1534288,1022336,318500,50176,3920,128,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
 mov $1,$2
 bin $1,$0
 pow $1,2
 sub $2,$0
-add $3,$1
+mov $3,$1
 mov $0,$2
 lpb $0
   sub $0,1

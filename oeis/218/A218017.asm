@@ -13,12 +13,11 @@ add $3,1
 bin $3,2
 sub $0,$3
 sub $0,1
+add $2,1
 sub $2,$0
 mov $1,7
 pow $1,$2
-lpb $0
-  sub $0,1
-  add $2,1
-  mul $1,$2
-lpe
+fac $2,$0
+mul $1,$2
 mov $0,$1
+div $0,7

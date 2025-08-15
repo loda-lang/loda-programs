@@ -1,13 +1,20 @@
 ; A347171: Triangle read by rows where T(n,k) is the sum of Golay-Rudin-Shapiro terms GRS(j) (A020985) for j in the range 0 <= j < 2^n and having binary weight wt(j) = A000120(j) = k.
-; Submitted by [SG]FX
+; Submitted by loader3229
 ; 1,1,1,1,2,-1,1,3,-1,1,1,4,0,0,-1,1,5,2,-2,1,1,1,6,5,-4,3,-2,-1,1,7,9,-5,3,-3,3,1,1,8,14,-4,0,0,2,-4,-1,1,9,20,0,-6,6,-4,0,5,1,1,10,27,8,-14,12,-10,8,-3,-6,-1,1,11,35,21,-22,14,-10,10,-11,7,7,1,1,12
 
 mov $1,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 sub $2,$0
 lpb $0
   sub $0,1

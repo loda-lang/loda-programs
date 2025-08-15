@@ -1,14 +1,19 @@
 ; A347834: An array A of the positive odd numbers, read by antidiagonals upwards, giving the present triangle T.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,5,7,13,21,9,29,53,85,11,37,117,213,341,15,45,149,469,853,1365,17,61,181,597,1877,3413,5461,19,69,245,725,2389,7509,13653,21845,23,77,277,981,2901,9557,30037,54613,87381,25,93,309,1109,3925,11605,38229,120149,218453,349525
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $2,$0
 mov $3,1
 mov $1,$2

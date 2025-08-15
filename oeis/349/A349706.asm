@@ -1,11 +1,18 @@
 ; A349706: Square array T(n,k) = Sum_{j=0..k} binomial(k,j) * j^n for n and k >= 0, read by ascending antidiagonals.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,0,2,0,1,4,0,1,4,8,0,1,6,12,16,0,1,10,24,32,32,0,1,18,54,80,80,64,0,1,34,132,224,240,192,128,0,1,66,342,680,800,672,448,256,0,1,130,924,2192,2880,2592,1792,1024,512,0,1,258,2574,7400,11000,10752,7840,4608,2304,1024
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $6,1
 mov $0,$1

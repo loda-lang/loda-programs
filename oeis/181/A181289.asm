@@ -1,11 +1,18 @@
 ; A181289: Triangle read by rows: T(n,k) is the number of 2-compositions of n having length k (0 <= k <= n).
-; Submitted by LM
+; Submitted by loader3229
 ; 1,0,2,0,3,4,0,4,12,8,0,5,25,36,16,0,6,44,102,96,32,0,7,70,231,344,240,64,0,8,104,456,952,1040,576,128,0,9,147,819,2241,3400,2928,1344,256,0,10,200,1372,4712,9290,11040,7840,3072,512,0,11,264,2178,9108,22363
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 bin $6,$1
 mov $0,$1

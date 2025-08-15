@@ -12,8 +12,7 @@ lpb $0
   equ $1,0
   add $0,$1
   add $3,$0
-  mov $2,$0
-  max $2,$3
+  mov $2,$3
   sub $3,2
 lpe
 mov $0,$2

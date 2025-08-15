@@ -1,11 +1,18 @@
 ; A335050: Array read by descending antidiagonals, T(n,k) is the number of nodes in the pill tree with initial conditions (n,k), for n and k >= 0.
-; Submitted by vanos0512
+; Submitted by loader3229
 ; 1,2,3,3,7,8,4,12,21,22,5,18,40,63,64,6,25,66,130,195,196,7,33,100,231,427,624,625,8,42,143,375,803,1428,2054,2055,9,52,196,572,1376,2805,4860,6916,6917,10,63,260,833,2210,5016,9877,16794,23712,23713
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 mov $1,1
 sub $2,$0
 add $0,1

@@ -1,11 +1,18 @@
 ; A267849: Triangular array: T(n,k) is the 2-row creation rook number to place k rooks on a 3 x n board.
-; Submitted by Jamie Morken(w4)
+; Submitted by loader3229
 ; 1,1,3,1,6,12,1,9,36,60,1,12,72,240,360,1,15,120,600,1800,2520,1,18,180,1200,5400,15120,20160,1,21,252,2100,12600,52920,141120,181440,1,24,336,3360,25200,141120,564480,1451520,1814400,1,27,432,5040,45360,317520,1693440,6531840,16329600,19958400
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 bin $1,$0
 add $0,2
 lpb $0

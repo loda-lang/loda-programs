@@ -1,5 +1,5 @@
 ; A332239: a(n) = n^(n-2) - Sum_{k=1..n-1} k^(k-2) * a(n-k).
-; Submitted by ChelseaOilman
+; Submitted by computerguy09
 ; 1,0,2,11,96,1058,14292,229273,4268583,90599501,2161197285,57273924968,1670125069883,53158796477452,1834276943996477,68212851126889959,2719975462998554200,115777392670653923870,5240030485305934701421,251291379101960875175412
 
 #offset 1
@@ -7,14 +7,14 @@
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  max $6,1
+  mov $6,0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,173249 ; Partial sums of A000272.
+    seq $7,272 ; Number of trees on n labeled nodes: n^(n-2) with a(0)=1.
     mov $9,10
     add $9,$5
+    mov $10,3
     sub $4,1
     mul $7,$$9
     add $5,1
@@ -24,7 +24,9 @@ lpb $0
   add $9,$2
   mov $3,$6
   div $3,-1
+  mul $5,$1
   mov $$9,$3
   add $2,1
 lpe
-mov $0,$3
+mov $0,$6
+div $0,3

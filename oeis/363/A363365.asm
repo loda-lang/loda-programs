@@ -1,16 +1,21 @@
 ; A363365: Array read by ascending antidiagonals: A(1, k) = k; for n > 1, A(n, k) = (k + 1)*A(n-1, k) + k + 1 - n, with k > 0.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,2,3,7,3,4,21,14,4,5,62,57,23,5,6,184,228,117,34,6,7,549,911,586,207,47,7,8,1643,3642,2930,1244,333,62,8,9,4924,14565,14649,7465,2334,501,79,9,10,14766,58256,73243,44790,16340,4012,717,98,10
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
 mov $1,1
 add $2,1
+sub $0,1
+sub $0,$4
 sub $0,$2
 add $2,1
 add $2,$0

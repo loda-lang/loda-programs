@@ -1,11 +1,18 @@
 ; A183157: Triangle read by rows: T(n,k) is the number of partial isometries of an n-chain of height k (height of alpha = |Im(alpha)|).
-; Submitted by http://asterion.petrsu.ru/
+; Submitted by loader3229
 ; 1,1,1,1,4,2,1,9,10,2,1,16,28,12,2,1,25,60,40,14,2,1,36,110,100,54,16,2,1,49,182,210,154,70,18,2,1,64,280,392,364,224,88,20,2,1,81,408,672,756,588,312,108,22,2,1,100,570,1080,1428,1344,900,420,130,24,2
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
 mov $1,$2
 bin $1,$0
 add $0,1

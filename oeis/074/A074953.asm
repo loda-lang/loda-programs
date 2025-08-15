@@ -1,30 +1,32 @@
 ; A074953: Numbers equidistant from consecutive twin prime pairs.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 5,9,15,24,36,51,66,87,105,123,144,165,186,195,213,234,255,276,297,330,384,426,447,492,546,585,609,630,651,735,816,825,843,870,951,1026,1041,1056,1077,1122,1191,1254,1284,1296,1311,1374,1440,1467,1485,1548,1614,1644,1683,1710,1755,1830,1875,1905,1941,1974,2013,2055,2085,2100,2121,2136,2190,2253,2289,2325,2361,2466,2571,2625,2673,2700,2721,2760,2796,2886
 
 #offset 1
 
-add $0,2
-lpb $0
-  sub $0,3
-  sub $3,1
+sub $0,1
+mov $2,$0
+add $0,1
+add $2,3
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  div $3,2
+  add $3,$4
+  add $5,$4
   sub $0,$3
-  mov $2,$0
-  mul $2,2
-  trn $2,1
-  mov $4,$2
+  add $0,1
+  add $1,1
+  add $1,$4
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  trn $5,$0
+  mul $2,$4
   sub $2,1
-  gcd $2,2
-  div $4,2
-  add $4,1
-  seq $4,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
-  sub $4,1
-  mul $4,3
-  add $4,$2
-  mov $2,$4
-  add $2,1
-  mul $2,4
-  add $1,$2
 lpe
+sub $1,$5
 mov $0,$1
-div $0,4
+add $0,3

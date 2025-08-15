@@ -1,16 +1,21 @@
 ; A318942: Triangle read by rows: T(n,k) = number of Dyck paths with n nodes and altitude k (1 <= k <= n).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,1,5,4,1,13,12,6,1,34,35,21,8,1,89,99,68,32,10,1,233,274,208,114,45,12,1,610,747,612,376,175,60,14,1,1597,2015,1752,1177,620,253,77,16,1,4181,5394,4916,3549,2062,959,350,96,18,1,10946,14359,13588,10406,6551,3381,1414,468,117,20
 
 #offset 1
 
-mov $3,3
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
+mov $9,$2
+add $9,1
+bin $9,2
+sub $0,$9
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

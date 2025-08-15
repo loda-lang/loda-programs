@@ -1,25 +1,31 @@
 ; A015885: Inverse of 1876th cyclotomic polynomial.
-; Submitted by shiva
+; Submitted by Science United
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mul $0,4
-sub $0,1
-mov $3,2
-add $3,$0
-mov $0,$3
-mul $0,3
-div $0,2
-mov $2,729
-sub $2,$0
-add $2,1
-seq $2,189727 ; Fixed point of the morphism 0->011, 1->110.
-add $2,$3
-mov $0,$2
-div $0,4
+mov $3,-1
+pow $3,$0
+add $3,1
+mov $8,3
+mov $2,$0
+dif $2,2
 mov $1,-1
-pow $1,$0
-add $1,1
-dif $0,2
-seq $0,15003 ; Inverse of 994th cyclotomic polynomial.
-mul $0,$1
-div $0,2
+pow $1,$2
+mov $4,$2
+add $4,3
+lpb $4
+  sub $4,$8
+  mov $5,$4
+  max $5,0
+  add $5,1
+  seq $5,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  mov $7,73
+  mod $7,$5
+  seq $7,292438 ; Characteristic function of non-isolated nonprimes.
+  mul $8,21
+  add $6,$7
+lpe
+mov $2,$6
+mul $2,$1
+mul $2,$3
+div $2,2
+mov $0,$2

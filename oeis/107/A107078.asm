@@ -4,11 +4,10 @@
 
 #offset 1
 
-mov $5,2
 mov $1,$0
 lpb $1
+  mov $5,2
   mov $2,$1
-  div $2,4
   lpb $2
     mov $3,$1
     mod $3,$5

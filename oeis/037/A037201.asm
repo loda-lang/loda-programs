@@ -4,6 +4,7 @@
 
 #offset 1
 
+mov $1,1
 mov $2,$0
 add $2,2
 pow $2,2

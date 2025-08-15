@@ -1,16 +1,21 @@
 ; A357498: Triangle read by rows where each term in row n is the next greater multiple of n..1 divided by n..1.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,3,1,2,5,1,2,4,9,1,2,3,5,11,1,2,3,5,8,17,1,2,3,4,6,10,21,1,2,3,4,6,9,14,29,1,2,3,4,5,7,10,16,33,1,2,3,4,5,7,9,13,20,41,1,2,3,4,5,6,8,11,15,23,47,1,2,3,4,5,6,8,10,13,18,28,57,1,2
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
 mov $4,1
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $5,$2
+add $5,1
+bin $5,2
 add $2,1
+sub $0,$5
+sub $0,1
 lpb $0
   sub $0,1
   equ $4,$2

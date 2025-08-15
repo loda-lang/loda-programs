@@ -1,16 +1,21 @@
 ; A353612: Triangle read by rows: T(n,k) = (n + k) if (n + k) is a prime number, otherwise T(n,k) = 0; n >= 1, k >= 1.
-; Submitted by amazing
+; Submitted by loader3229
 ; 2,3,0,0,5,0,5,0,7,0,0,7,0,0,0,7,0,0,0,11,0,0,0,0,11,0,13,0,0,0,11,0,13,0,0,0,0,11,0,13,0,0,0,17,0,11,0,13,0,0,0,17,0,19,0,0,13,0,0,0,17,0,19,0,0,0,13,0,0,0,17,0,19,0,0,0,23,0
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 add $2,2
-add $5,$0
+mov $5,$0
 add $0,$2
 lpb $0
   sub $0,1

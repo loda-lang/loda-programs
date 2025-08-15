@@ -1,17 +1,22 @@
 ; A180177: Triangle read by rows: T(n,k) is the number of compositions of n without 2's and having k parts; 1<=k<=n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,1,1,0,1,1,2,0,1,1,2,3,0,1,1,3,3,4,0,1,1,4,6,4,5,0,1,1,5,9,10,5,6,0,1,1,6,13,16,15,6,7,0,1,1,7,18,26,25,21,7,8,0,1,1,8,24,40,45,36,28,8,9,0,1,1,9,31,59,75,71,49,36,9,10,0,1,1,10
 
 #offset 1
 
+mov $1,3
 mov $3,3
 mov $5,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
 mul $0,-1
 add $0,$2
 sub $2,$0

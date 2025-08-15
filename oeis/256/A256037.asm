@@ -1,12 +1,19 @@
 ; A256037: Triangle read by rows: number of R-class idempotents of rank k in Brauer monoid B_n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,1,1,0,1,0,3,0,1,3,0,5,0,1,0,15,0,7,0,1,15,0,35,0,9,0,1,0,105,0,63,0,11,0,1,105,0,315,0,99,0,13,0,1,0,945,0,693,0,143,0,15,0,1,945,0,3465,0,1287,0,195,0,17,0,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,$2
+sub $0,1
 gcd $0,0
 mov $1,2
 sub $2,$0

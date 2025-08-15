@@ -1,16 +1,21 @@
 ; A265584: Array T(n,k) counting words with n letters drawn from a k-letter alphabet with no letter appearing thrice in a 3-letter subword.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,2,0,4,3,0,6,9,4,0,10,24,16,5,0,16,66,60,25,6,0,26,180,228,120,36,7,0,42,492,864,580,210,49,8,0,68,1344,3276,2800,1230,336,64,9,0,110,3672,12420,13520,7200,2310,504,81,10,0,178,10032,47088,65280,42150,15876,3976,720,100,11
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
 mov $3,1
-mov $6,1
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+mov $6,1
 add $6,$0
 sub $1,$0
 add $1,1

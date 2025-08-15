@@ -4,6 +4,7 @@
 
 #offset 1
 
+mov $1,4
 mov $2,$0
 sub $0,1
 add $2,27

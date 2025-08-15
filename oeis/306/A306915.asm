@@ -1,11 +1,18 @@
 ; A306915: Square array A(n,k), n >= 0, k >= 1, read by antidiagonals, where column k is the expansion of g.f. 1/((1-x)^k-x^k).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,2,1,2,4,1,3,4,8,1,4,6,8,16,1,5,10,11,16,32,1,6,15,20,21,32,64,1,7,21,35,36,42,64,128,1,8,28,56,70,64,85,128,256,1,9,36,84,126,127,120,171,256,512,1,10,45,120,210,252,220,240,342,512,1024,1,11,55,165,330,462,463,385,496,683,1024,2048,1,12
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 add $2,1
 sub $2,$0
 sub $0,1

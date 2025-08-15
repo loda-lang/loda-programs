@@ -1,10 +1,12 @@
 ; A127036: a(n) = maximal value of m such that 17^m divides n! (17^m <= n!).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,0,0,1,1,2,3,3,4,5,6,7,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,25,26,27,28,30,31,32,33,35,36,37,38,40,41,42,44,45,46,48,49,51,52,53,55,56,57,59,60,62,63,65,66
 
 #offset 1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,$0
+mov $0,1
+fac $0,$2
 lpb $0
   div $0,17
   add $1,1

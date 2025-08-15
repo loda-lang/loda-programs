@@ -1,13 +1,20 @@
 ; A344557: Triangle read by rows, T(n, k) = 2^(n - k)*M(n, k, 1/2, 1/2), where M(n, k, x, y) is a generalized Motzkin recurrence. T(n, k) for 0 <= k <= n.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,1,1,5,2,1,13,11,3,1,57,36,18,4,1,201,165,70,26,5,1,861,646,339,116,35,6,1,3445,2863,1449,595,175,45,7,1,14897,12104,6692,2744,950,248,56,8,1,63313,53769,29772,13236,4686,1422,336,68,9,1
 
-mov $3,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
 mov $1,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0
