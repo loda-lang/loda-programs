@@ -1,18 +1,17 @@
 ; A095456: a(n) = 32 written in base n.
-; Submitted by iBezanilla
+; Submitted by kpmonaghan
 ; 11111111111111111111111111111111,100000,1012,200,112,52,44,40,35,32
 
 #offset 1
 
+mov $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $1,$0
-add $1,$0
 mov $0,0
-mul $1,16
-add $1,1
+neq $1,0
+mul $1,32
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -23,6 +22,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-sub $0,201
-div $0,10
-add $0,20

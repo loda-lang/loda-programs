@@ -1,5 +1,5 @@
 ; A085128: Multiples of 5 which are members of A002473. Or multiples of 5 with the largest prime divisor <= 7.
-; Submitted by Skillz
+; Submitted by KetamiNO [YouTube]
 ; 5,10,15,20,25,30,35,40,45,50,60,70,75,80,90,100,105,120,125,135,140,150,160,175,180,200,210,225,240,245,250,270,280,300,315,320,350,360,375,400,405,420,450,480,490,500,525,540,560,600,625,630,640,675,700
 
 #offset 1
@@ -10,6 +10,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  max $4,1
   seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   equ $4,7
   sub $0,$4

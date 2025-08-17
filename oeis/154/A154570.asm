@@ -1,18 +1,17 @@
 ; A154570: The main diagonal of the successive differences of A154127.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by mudpuppie
 ; 1,3,-4,2,-6,-2,-14,-18,-46,-82,-174,-338,-686,-1362,-2734,-5458,-10926,-21842,-43694,-87378,-174766,-349522,-699054,-1398098,-2796206,-5592402,-11184814,-22369618,-44739246,-89478482,-178956974,-357913938,-715827886
-; Formula: a(n) = b(n)+1, b(n) = 2*b(n-2)+b(n-1)+2, b(4) = -7, b(3) = 1, b(2) = -5, b(1) = 2, b(0) = 0
+; Formula: a(n) = 2*a(n-2)+a(n-1), a(3) = 2, a(2) = -4, a(1) = 3, a(0) = 1
 
+mov $1,1
+mov $2,-7
+mov $3,2
 lpb $0
   sub $0,1
+  mul $2,$1
+  mov $1,$3
   add $1,1
-  mov $3,$1
-  mul $3,2
-  add $4,2
-  mov $1,$4
-  add $2,$3
-  mov $4,$2
-  sub $4,9
+  add $3,$2
+  mov $2,2
 lpe
-add $1,1
 mov $0,$1

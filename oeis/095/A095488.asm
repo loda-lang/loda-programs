@@ -1,5 +1,5 @@
 ; A095488: a(n) = 48 written in base n.
-; Submitted by Coleslaw
+; Submitted by Owdjim
 ; 111111111111111111111111111111111111111111111111,110000,1210,300,143,120,66,60,53,48,44,40,39,36,33,30
 
 #offset 1
@@ -10,8 +10,8 @@ mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
+neq $1,0
 mul $1,48
-add $1,1
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -22,6 +22,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-sub $0,101
-div $0,10
-add $0,10

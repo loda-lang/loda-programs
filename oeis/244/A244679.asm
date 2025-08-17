@@ -4,18 +4,42 @@
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-mov $1,$0
-pow $0,2
-bin $1,2
-mul $1,6
-add $1,$0
-add $1,$2
-lpb $2
-  mov $2,0
-  mov $0,$1
-  bin $1,$0
-  sub $0,1
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
+mul $0,2
+bin $0,2
+mov $6,$0
+add $6,$0
+mov $7,1
+mov $5,$6
+mov $3,$6
+lpb $3
+  sub $3,1
+  mov $8,$2
+  mov $1,10
+  pow $1,$7
+  mov $2,$7
+  mul $2,$1
+  div $1,9
+  sub $2,$1
+  mov $4,$6
+  geq $4,$2
+  mul $3,$4
+  add $7,$4
 lpe
+mov $4,$6
+sub $4,$8
+mod $4,$7
+mov $3,$7
+sub $3,$4
+sub $3,1
+mov $4,10
+pow $4,$3
+mov $2,10
+pow $2,$7
+div $2,10
+sub $5,$8
+div $5,$7
+add $5,$2
+div $5,$4
+mod $5,10
+mov $0,$5

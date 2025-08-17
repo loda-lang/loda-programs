@@ -1,5 +1,5 @@
 ; A131944: Expansion of (1 - b(q)*b(q^2)) / 3 where b() is a cubic AGM function. Expansion of (1 - eta(q)^3 * eta(q^2)^3 / (eta(q^3) * eta(q^6))) / 3 in powers of q.
-; Submitted by Christian Krause
+; Submitted by DenMartin
 ; 1,1,-5,1,6,-5,8,1,-23,6,12,-5,14,8,-30,1,18,-23,20,6,-40,12,24,-5,31,14,-77,8,30,-30,32,1,-60,18,48,-23,38,20,-70,6,42,-40,44,12,-138,24,48,-5,57,31,-90,14,54,-77,72,8,-100,30,60,-30,62,32,-184
 
 #offset 1
@@ -19,10 +19,8 @@ lpb $6
       mov $4,$0
       mod $4,$2
       neq $4,0
-      mov $5,$2
-      equ $5,1
+      max $4,$7
       add $2,2
-      max $4,$5
       sub $3,$4
       mul $7,9
     lpe

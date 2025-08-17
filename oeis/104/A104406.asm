@@ -1,24 +1,22 @@
 ; A104406: Number of numbers <= n having no 2 in ternary representation.
-; Submitted by Coleslaw
+; Submitted by Egon Olsen
 ; 1,1,2,3,3,3,3,3,4,5,5,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,9,9,10,11,11,11,11,11,12,13,13,14,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15
 
 #offset 1
 
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,3
-  mov $4,$3
-  div $3,6
-  add $3,1
-  seq $3,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
-  sub $3,1
-  add $3,$4
-  add $0,2
-  add $1,3
-  add $2,$3
-  sub $2,$0
+sub $0,1
+mov $5,3
+mov $1,$0
+add $1,2
+lpb $1
+  sub $1,1
+  mov $3,$2
+  bin $3,$4
+  mod $3,6
+  nrt $3,12
+  add $2,2
+  add $4,1
+  add $5,$3
 lpe
-mov $0,$1
-div $0,3
+mov $0,$5
+sub $0,4

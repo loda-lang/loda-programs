@@ -1,5 +1,5 @@
 ; A071424: a(n) = a(n-1) + number of decimal digits of n!. Number of decimal digits of concatenation of first n factorials.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,2,3,5,8,11,15,20,26,33,41,50,60,71,84,98,113,129,147,166,186,208,231,255,281,308,337,367,398,431,465,501,538,577,618,660,704,749,796,844,894,946,999,1054,1111,1169,1229,1291,1354,1419,1486,1554,1624
 
 #offset 1
@@ -12,8 +12,9 @@ lpb $3
   mov $0,$1
   sub $0,$3
   add $0,1
-  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  max $0,1
+  mov $4,$0
+  mov $0,1
+  fac $0,$4
   log $0,10
   add $0,1
   add $2,$0

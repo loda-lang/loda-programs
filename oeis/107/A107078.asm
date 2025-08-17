@@ -1,13 +1,14 @@
 ; A107078: Whether n has non-unitary prime divisors.
-; Submitted by Science United
+; Submitted by Matthias Lehmkuhl
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1
 
 #offset 1
 
+mov $5,2
 mov $1,$0
 lpb $1
-  mov $5,2
   mov $2,$1
+  div $2,4
   lpb $2
     mov $3,$1
     mod $3,$5

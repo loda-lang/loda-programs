@@ -8,16 +8,14 @@ lpb $0
   sub $0,$3
   mov $2,$0
   dif $2,-2
-  add $2,1
   max $2,0
   mov $4,$2
   div $4,2
   add $4,2
   pow $4,2
-  mov $5,0
+  mov $5,1
   sub $5,$2
   gcd $2,2
-  pow $2,3
   add $2,6
   div $2,6
   mul $2,$5

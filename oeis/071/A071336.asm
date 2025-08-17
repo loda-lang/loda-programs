@@ -1,26 +1,18 @@
 ; A071336: Number of vertices of Goldberg-Casper-Klug pseudo-icosahedra.
-; Submitted by Wood
+; Submitted by Science United
 ; 12,32,42,72,92,122,132,162,192,212,252,272,282,312,362,372,392,432,482,492,522,572,612,632,642,672,732,752,762,792,812,842,912,932,972,1002,1032,1082,1092,1112,1122,1172,1212,1242,1272,1292,1332,1392,1442,1472,1482,1512,1562,1572,1632,1692,1712,1722,1752,1812,1832,1892,1922,1932,1962,1992,2012,2082,2112,2172,2192,2232,2252,2282,2292,2372,2412,2432,2442,2472
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+sub $0,1
 pow $2,2
 lpb $2
+  add $1,4
   mov $3,$1
-  add $3,2
-  seq $3,115979 ; Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
-  mul $3,-1
-  trn $3,1
-  add $3,$4
-  equ $3,1
-  gcd $3,2
+  seq $3,92573 ; Number of solutions to x^2 + 3y^2 = n in positive integers x and y.
+  min $3,1
   sub $0,$3
-  add $0,1
-  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

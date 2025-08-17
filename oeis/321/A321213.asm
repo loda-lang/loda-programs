@@ -1,22 +1,17 @@
 ; A321213: a(n) is the number of divisors of n-th Fermat number (A000215).
-; Submitted by mmonnin
+; Submitted by Science United
 ; 2,2,2,2,2,4,4,4,4,8,16,32
-; Formula: a(n) = 2*c(max(n-3,0)), b(n) = 2*b(n-4)*b(n-1), b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = 2*b(n-2), c(3) = 2, c(2) = 2, c(1) = 1, c(0) = 1
+; Formula: a(n) = truncate(2^(binomial(2,truncate((2*truncate((n^2-1)/12))/3))+max(truncate((2*truncate((n^2-1)/12))/3)-1,0)))
 
-mov $1,1
-mov $2,1
-mov $3,1
-mov $4,1
-sub $0,3
-lpb $0
-  sub $0,1
-  mov $5,$1
-  mul $5,$4
-  mul $1,2
-  mov $4,$3
-  mov $3,$2
-  mov $2,$1
-  mov $1,$5
-lpe
-mov $0,$3
+pow $0,2
+sub $0,1
+div $0,12
 mul $0,2
+div $0,3
+mov $1,2
+bin $1,$0
+trn $0,1
+add $0,$1
+mov $1,2
+pow $1,$0
+mov $0,$1

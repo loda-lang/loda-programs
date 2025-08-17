@@ -1,9 +1,9 @@
 ; A218271: a(n) = a(n-1)^a(n-2) + a(n-3) with a(0) = a(1) = a(2) = 1.
-; Submitted by KetamiNO [YouTube]
+; Submitted by omegaintellisys
 ; 1,1,1,2,3,10,1002,1020180963368077455371525121027
-; Formula: a(n) = b(n+1), b(n) = sumdigits(b(n-3),31)*sign(b(n-3))+truncate(b(n-1)^(sumdigits(b(n-2),31)*sign(b(n-2)))), b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0
+; Formula: a(n) = sumdigits(a(n-3),31)*sign(a(n-3))+truncate(a(n-1)^(sumdigits(a(n-2),31)*sign(a(n-2)))), a(4) = 3, a(3) = 2, a(2) = 1, a(1) = 1, a(0) = 1
 
-add $0,1
+mov $2,1
 lpb $0
   sub $0,1
   dgs $2,31

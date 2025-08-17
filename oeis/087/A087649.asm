@@ -1,23 +1,10 @@
 ; A087649: a(n) = (1/2)*(Bell(n+2)-Bell(n+1)+Bell(n)).
-; Submitted by ChelseaOilman
+; Submitted by KetamiNO [YouTube]
 ; 1,2,6,21,83,363,1733,8942,49484,291871,1825501,12054705,83734241,609851830,4644041462,36883843101,304846039251,2616765134351,23286746418237,214489200063218,2041785040262972,20060079966396887,203156789589084133,2118391734395139205,22719307530341781105,250362195872335616234,2832226801593746709670,32862489791098200264053,390784875988774495955715,4758974866826713713918339,59309030059097073333140069,755912290871162634715449078,9846754082922130784721427148,131017379761882956853858248959
-; Formula: a(n) = truncate((A000110(n)+A123346((truncate((sqrtint(8*binomial(n+3,2)-8)-1)/2)+1)^2-binomial(n+3,2)+1))/2)
+; Formula: a(n) = truncate((A000110(n)+A005493(n))/2)
 
 mov $1,$0
 seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-add $0,3
-bin $0,2
-sub $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-add $2,1
-pow $2,2
-sub $2,$0
-mov $0,$2
-seq $0,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
-add $1,$0
-mov $0,$1
+seq $0,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
+add $0,$1
 div $0,2

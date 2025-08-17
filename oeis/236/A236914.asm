@@ -1,12 +1,12 @@
 ; A236914: Number of partitions of 2n+1 of type OO (see Comments).
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 0,1,3,7,14,27,49,86,146,242,392,623,973,1498,2274,3411,5059,7427,10801,15572,22267,31602,44533,62338,86716,119918,164903,225566,306993,415814,560641,752622,1006132,1339677,1776980,2348384,3092594,4058848,5309608,6923959,9001747,11668765,15083146,19443237,24997285,32055418,41004230,52324747,66614382,84613725,107239203,135622955,171161152,215572796,270970998,339949238,425685678,532069294,663851774,826830709,1028069997,1276164654,1581558720,1956926660,2417629854,2982263029,3673307317,4517909823
-; Formula: a(n) = truncate((A000041(2*n+1)+A081362(2*n+1))/2)
+; Formula: a(n) = truncate((-A000700(2*n+1)+A000041(2*n+1))/2)
 
 mul $0,2
 add $0,1
 mov $1,$0
-seq $1,81362 ; Expansion of q^(1/24) * eta(q) / eta(q^2) in powers of q.
+seq $1,700 ; Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
-add $0,$1
+sub $0,$1
 div $0,2

@@ -1,14 +1,27 @@
 ; A257520: Number of factorizations of m^2 into 2 factors, where m is a product of exactly n distinct primes and each factor is a product of n primes (counted with multiplicity).
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 1,1,2,4,10,26,71,197,554,1570,4477,12827,36895,106471,308114,893804,2598314,7567466,22076405,64498427,188689685,552675365,1620567764,4756614062,13974168191,41088418151,120906613076,356035078102,1049120176954,3093337815410,9126012883471,26938296428341,79557246035882,235069619680394,694877408121725,2054961210508547,6079565938857997,17993084439771805,53271398742003236,157772034083800894,467418608635866229,1385208570477104189,4106304766947885566,12176097327225241880,36114404145565301852
-; Formula: a(n) = truncate(A002426(max(n,0))/2)+1
 
-mov $2,$0
-max $2,0
-mov $3,$2
-mov $1,$2
-seq $1,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
-min $0,0
-mov $0,$1
+mov $3,1
+mov $4,3
+mov $5,1
+mov $1,$0
+lpb $1
+  sub $1,1
+  mul $3,3
+  sub $3,$5
+  sub $3,$5
+  mul $5,3
+  add $5,$6
+  add $5,$6
+  mov $2,$4
+  sub $2,2
+  mul $2,$5
+  div $2,$4
+  add $4,1
+  mov $5,$6
+  mov $6,$2
+lpe
+mov $0,$3
 div $0,2
 add $0,1

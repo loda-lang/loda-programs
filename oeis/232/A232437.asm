@@ -4,28 +4,26 @@
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,3
+mov $1,4
+mov $2,$0
+add $2,11
 pow $2,2
+bin $2,2
 lpb $2
-  add $6,1
+  sub $2,1
   mov $3,$1
-  add $3,1
-  seq $3,80171 ; a(n) = n*a(n-1) - (n-1)^2*a(n-2), a(0)=1, a(1)=1.
-  mov $5,$3
-  gcd $5,$6
-  mov $3,$5
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  pow $3,2
+  mov $4,$3
+  dir $4,3
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $3,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
   mul $3,2
-  equ $3,2
+  sub $3,$4
+  add $3,2
+  equ $3,5
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,1

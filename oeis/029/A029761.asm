@@ -1,26 +1,25 @@
 ; A029761: Partial sums of A005001.
-; Submitted by BarnardsStern
+; Submitted by Science United
 ; 1,3,7,16,40,116,395,1551,6847,33290,175708,996696,6031281,38710303,262288647,1868825536,13955504572,108907053412,885935408411,7495705968467,65829634763895,599033379716074,5638952863115576,54830878201599424,549981672834888561,5683722799698177051,60448710450180221815,660930746036722255968,7421952186223198942576,85522775565269950820356,1010372613456126035148283,12228581397573358604571863,151511460231599304992921087,1920390231911632858145998458,24884308392232026873687732628
 
 mov $4,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $7,0
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
   mov $0,$4
-  sub $0,$2
-  mov $1,$0
-  mov $6,$0
-  add $6,1
-  lpb $6
-    sub $6,1
-    mov $0,$1
-    sub $0,$6
-    mov $5,$0
-    seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-    add $7,$5
+  sub $0,$3
+  mov $1,0
+  mov $2,$0
+  add $2,1
+  lpb $2
+    sub $2,1
+    mov $0,0
+    sub $0,$2
+    gcd $0,0
+    seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+    add $1,$0
   lpe
-  add $3,$7
+  add $5,$1
 lpe
-mov $0,$3
+mov $0,$5

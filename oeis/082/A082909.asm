@@ -1,11 +1,12 @@
 ; A082909: a(n) = Sum_{d|n} (d mod 3).
-; Submitted by Joe
+; Submitted by KetamiNO [YouTube]
 ; 1,3,1,4,3,3,2,6,1,6,3,4,2,6,3,7,3,3,2,9,2,6,3,6,4,6,1,8,3,6,2,9,3,6,6,4,2,6,2,12,3,6,2,9,3,6,3,7,3,9,3,8,3,3,6,12,2,6,3,9,2,6,2,10,6,6,2,9,3,12,3,6,2,6,4,8,6,6,2,15
 
 #offset 1
 
 mov $1,$0
 dir $1,3
+mov $0,$1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 seq $0,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
 sub $0,$1

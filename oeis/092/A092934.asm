@@ -10,10 +10,8 @@ add $1,1
 fac $1,$0
 mov $2,4
 pow $2,$0
-mov $3,$0
-mul $3,2
 mov $4,$0
-mov $4,$3
+mul $4,2
 mov $3,1
 fac $3,$4
 mov $4,$0

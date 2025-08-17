@@ -1,32 +1,28 @@
 ; A352650: Triangle read by rows: T(n,k) = n * T(n-1,k) + (-1)^(n-k) for 0 <= k <= n with initial values T(n,k) = 0 if n < 0 or k < 0 or k > n.
-; Submitted by Science United
+; Submitted by sascha.gibson@gmx.de
 ; 1,0,1,1,1,1,2,4,2,1,9,15,9,3,1,44,76,44,16,4,1,265,455,265,95,25,5,1,1854,3186,1854,666,174,36,6,1,14833,25487,14833,5327,1393,287,49,7,1,133496,229384,133496,47944,12536,2584,440,64,8,1,1334961,2293839,1334961,479439,125361,25839,4401,639,81,9,1
 
-mov $2,3
-mov $5,3
-mov $1,$0
-add $1,1
-mov $4,$1
-mul $4,8
-nrt $4,2
-sub $4,1
-div $4,2
-mov $3,$4
-add $3,1
-bin $3,2
-sub $1,$3
-sub $1,1
-mul $1,-1
-add $1,$4
-lpb $1
-  sub $1,1
-  mov $3,$5
-  mul $3,$4
-  sub $4,1
-  mov $5,$3
-  div $2,-1
-  add $2,$3
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
 mov $1,$2
-div $1,3
-mov $0,$1
+add $1,1
+bin $1,2
+sub $0,$1
+mov $1,3
+sub $0,1
+mul $0,-1
+add $0,$2
+lpb $0
+  sub $0,1
+  mul $1,$2
+  sub $2,1
+  mul $3,-1
+  add $3,$1
+lpe
+mov $0,$3
+div $0,3

@@ -1,13 +1,11 @@
 ; A096788: Numbers m such that both m and m+1 are composite numbers whose sum is a prime of the form 4k+3.
-; Submitted by hugo75
+; Submitted by Science United
 ; 9,15,21,33,35,39,51,63,65,69,75,81,95,99,105,111,119,125,135,141,153,155,165,183,189,209,215,219,221,231,243,245,249,261,273,285,299,303,309,315,321,323,329,341,345,363,369,371,375,393,405,411,413,429,441
 
 #offset 1
 
-add $0,1
+mov $1,8
 mov $2,$0
-sub $0,1
-add $2,6
 pow $2,2
 lpb $2
   mov $5,$1

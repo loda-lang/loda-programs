@@ -1,20 +1,21 @@
 ; A075436: Right- or upward-moving paths connecting opposite corners of an n X n chessboard, visiting the diagonal in 0 up to (n-2) intermediate points between start and finish. Equivalently, subdivide the chessboard into 1 up to (n-1) blocks along the diagonal in all possible ways and sum the path-count over all sub-blocks.
-; Submitted by Frank [NT]
+; Submitted by KetamiNO [YouTube]
 ; 2,10,52,274,1452,7716,41064,218722,1165564,6213100,33125336,176629268,941884088,5022886536,26786945232,142857244674,761881733148,4063282813596,21670523246712,115574945807004,616395334890408,3287425475237496,17532874879557552,93508437317897844,498710805759356952,2659787722752302776,14185522276443566704,75656072451998411752,403498877245357029104,2151993343813759720976,11477295290349050450336,61212231852104242917186,326465199521846044192860,1741147589225758627533180,9286119933908017913689784
 
 #offset 2
 
-sub $0,1
+sub $0,2
 mov $4,$0
+mul $4,2
+add $4,1
+add $0,1
 lpb $0
   sub $0,1
   mov $3,$4
   bin $3,$1
-  add $1,1
-  mul $2,2
   add $3,$2
+  mul $3,2
+  add $1,1
   add $2,$3
-  add $4,1
 lpe
 mov $0,$3
-mul $0,2
