@@ -1,19 +1,24 @@
 ; A034020: Not of the form x^2 + x*y + y^2.
-; Submitted by KetamiNO [YouTube]
+; Submitted by crashtech
 ; 2,5,6,8,10,11,14,15,17,18,20,22,23,24,26,29,30,32,33,34,35,38,40,41,42,44,45,46,47,50,51,53,54,55,56,58,59,60,62,65,66,68,69,70,71,72,74,77,78,80,82,83,85,86,87,88,89,90,92,94,95,96,98,99,101,102,104,105,106,107,110,113,114,115,116,118,119,120,122,123
 
 #offset 1
 
-add $0,1
 mov $2,$0
 sub $0,1
-pow $2,8
+pow $2,2
 lpb $2
+  add $1,4
   mov $3,$1
-  seq $3,33716 ; Number of integer solutions to the equation x^2 + 3y^2 = n.
+  seq $3,92573 ; Number of solutions to x^2 + 3y^2 = n in positive integers x and y.
   equ $3,0
   sub $0,$3
-  add $1,1
-  sub $2,$0
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
+div $0,4
+add $0,1

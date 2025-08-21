@@ -1,23 +1,27 @@
 ; A018298: Divisors of 135.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Dirk Broer
 ; 1,3,5,9,15,27,45,135
 
 #offset 1
 
-mov $2,1
 sub $0,1
+mov $1,$0
+mov $2,1
 lpb $0
-  mov $3,$2
-  add $2,2
-  lpb $3
-    mov $4,$1
-    gcd $4,$2
-    trn $4,$3
-    equ $4,0
-    add $2,2
-    sub $3,$4
-  lpe
   sub $0,1
-  mov $1,135
+  mov $4,$3
+  add $4,1
+  mul $3,$1
+  add $4,$3
+  add $3,$2
+  add $1,1
+  div $1,8
+  add $2,$4
+  mul $2,$1
+  mul $4,3
+  add $2,$4
 lpe
-mov $0,$2
+mov $0,$4
+div $0,3
+mul $0,2
+add $0,1

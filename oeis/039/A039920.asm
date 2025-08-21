@@ -1,26 +1,25 @@
 ; A039920: Concatenation of the first n decimal digits of e-2.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 7,71,718,7182,71828,718281,7182818,71828182,718281828,7182818284,71828182845,718281828459,7182818284590,71828182845904,718281828459045,7182818284590452,71828182845904523,718281828459045235,7182818284590452353,71828182845904523536
 
 #offset 1
 
-mov $2,1
-mov $3,$0
-mul $3,4
-lpb $3
-  mov $5,$3
-  mul $5,2
-  add $5,4
-  mul $2,$5
-  add $1,$2
-  div $1,$0
-  mul $1,2
-  div $2,$0
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,4
-div $1,$2
+add $0,1
+mov $1,10
+pow $1,$0
+mov $4,$1
+pow $1,2
+mov $2,2
 mov $0,$1
+lpb $0
+  add $2,$3
+  max $3,$2
+  mov $5,$0
+  div $5,$3
+  mov $0,$5
+  mov $3,1
+  add $6,$5
+lpe
+mov $0,$6
+div $0,$4
+div $0,10
