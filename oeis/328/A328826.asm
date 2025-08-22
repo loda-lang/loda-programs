@@ -19,8 +19,7 @@ mul $1,2
 dif $1,2
 mul $2,2
 sub $2,$0
-lpb $2
-  mul $1,$2
-  sub $2,1
-lpe
+mov $4,1
+fac $4,$2
+mul $1,$4
 mov $0,$1

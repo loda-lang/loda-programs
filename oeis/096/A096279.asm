@@ -1,17 +1,18 @@
 ; A096279: Sums of successive sums of successive sums of successive sums of successive primes.
-; Submitted by McShane of TSBT
+; Submitted by shiva
 ; 83,122,168,216,264,316,378,446,514,582,644,700,766,846,924,994,1062,1126,1188,1258,1340,1434,1528,1602,1656,1704,1764,1860,1984,2094,2178,2260,2348,2432,2514,2598,2682,2766,2848,2932,3018,3090,3152,3242,3378,3518,3614,3676,3738,3810,3896,4000,4108,4204,4284,4354,4422,4490,4578,4710,4854,4956,5028,5126,5262,5400,5510,5590,5664,5756,5862,5964,6054,6140,6234,6334,6438,6552,6666,6768
 
 #offset 1
 
-add $0,2
-lpb $0
-  sub $0,3
-  sub $3,1
-  sub $0,$3
-  mov $2,$0
-  add $2,1
-  seq $2,96278 ; Sums of successive sums of successive sums of successive primes.
-  add $1,$2
+mov $1,$0
+mov $2,2
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  add $0,1
+  seq $0,96278 ; Sums of successive sums of successive sums of successive primes.
+  mul $1,$2
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

@@ -1,14 +1,21 @@
 ; A221179: A convolution triangle of numbers obtained from A146559.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,1,0,1,1,0,0,2,1,0,-2,1,3,1,0,-4,-4,3,4,1,0,-4,-12,-5,6,5,1,0,0,-16,-24,-4,10,6,1,0,8,-4,-42,-39,0,15,7,1,0,16,32,-24,-88,-55,8,21,8,1,0,16,80,72,-80
 
+mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

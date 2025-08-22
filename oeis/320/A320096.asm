@@ -28,7 +28,17 @@ lpb $3
   pow $1,$5
   mov $7,$0
   seq $7,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
-  seq $0,233543 ; Triangle read by rows: T(n,k) = k!.
+  mov $10,$0
+  mul $10,8
+  nrt $10,2
+  add $10,1
+  div $10,2
+  bin $10,2
+  mov $9,$0
+  sub $9,$10
+  mov $8,1
+  fac $8,$9
+  mov $0,$8
   mul $0,$7
   mul $0,$1
   add $4,$0

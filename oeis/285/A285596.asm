@@ -9,17 +9,16 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $5,0
-  mov $7,2
-  lpb $7
-    div $7,2
+  mov $6,2
+  lpb $6
+    div $6,2
     mov $3,$1
     add $3,1
     seq $3,285599 ; 1-limiting word of the morphism 0->11, 1-> 0111.
-    add $5,$7
-    mov $6,$3
-    sub $7,1
+    add $5,$6
+    sub $6,1
+    sub $6,$3
   lpe
-  sub $5,$6
   mov $3,$5
   equ $3,0
   sub $0,$3

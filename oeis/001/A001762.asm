@@ -4,13 +4,12 @@
 
 #offset 3
 
-mov $4,1
-fac $4,$0
-mov $3,4
-gcd $3,$4
+mov $3,1
+fac $3,$0
 sub $0,3
-mov $1,$4
-div $1,$3
+mov $1,$3
+div $1,4
+max $1,4
 mov $2,$0
 mul $0,2
 add $0,$2
@@ -20,6 +19,5 @@ mul $2,2
 add $2,2
 bin $2,2
 div $0,$2
-div $0,5
 mul $0,$1
-div $0,6
+div $0,30

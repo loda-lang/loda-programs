@@ -1,21 +1,36 @@
 ; A232472: 2-Fubini numbers.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 2,10,62,466,4142,42610,498542,6541426,95160302,1520385010,26468935022,498766780786,10114484622062,219641848007410,5085371491003502,125055112347154546,3255163896227709422,89416052656071565810,2584886208925055791982,78447137202259689678706,2493719594804686310662382
 
 #offset 2
 
-sub $0,1
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  seq $0,629 ; Number of necklaces of partitions of n+1 labeled beads.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+sub $0,2
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $8,0
+  mov $3,$0
+  add $3,2
+  lpb $3
+    sub $3,1
+    mov $6,$3
+    pow $6,$4
+    sub $7,$3
+    bin $7,$5
+    mul $7,$6
+    add $8,$7
+    add $5,1
+    mov $7,0
+  lpe
+  mov $2,1
+  fac $2,$0
+  div $8,$2
+  mul $1,$5
+  add $1,$8
+  mul $8,$0
+  add $1,$8
 lpe
-sub $4,$0
-mov $0,$4
-div $0,2
+mov $0,$1
+mul $0,2

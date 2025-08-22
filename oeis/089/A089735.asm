@@ -1,5 +1,5 @@
 ; A089735: Self-convolution of A004148 (the RNA secondary structure numbers) with itself.
-; Submitted by Vester
+; Submitted by iBezanilla
 ; 1,2,3,6,13,28,62,140,320,740,1728,4068,9645,23010,55195,133042,322078,782758,1909091,4671098,11462607,28204212,69569278,171993316,426111203,1057757858,2630527679,6552998126,16350465147,40857321696,102239831436
 
 mov $6,$0
@@ -24,10 +24,10 @@ lpb $4
     mov $7,$8
     mul $7,$1
     mov $0,$1
+    pow $3,$8
     add $5,1
     add $5,$7
   lpe
-  min $3,1
   mul $3,$0
   add $6,2
   mov $0,$5

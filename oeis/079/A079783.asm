@@ -28,7 +28,6 @@ lpb $2
   add $4,1
   seq $4,79782 ; Final term of n-th row of triangle in A079784.
   add $4,$0
-  mov $0,$4
   add $1,$4
 lpe
 mov $0,$1

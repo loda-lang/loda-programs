@@ -1,33 +1,38 @@
 ; A050148: a(n) = T(n,n-2), array T as in A050143.
-; Submitted by Elzeard BOUFFIER
+; Submitted by vaughan
 ; 1,7,32,160,832,4424,23872,130176,715520,3957448,21998176,122786976,687736896,3863423880,21758302848,122811081216,694533774336,3934558067336,22323615621280,126832567223712,721500116473664
 
 #offset 2
 
-sub $0,2
+sub $0,1
+pow $0,2
 mul $0,2
-mov $1,1
+sub $0,1
+mov $1,3
 mov $2,$0
-mov $3,1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+mov $7,3
+sub $0,$3
+sub $0,1
+mul $0,-1
+add $0,$2
+sub $2,$0
 lpb $0
-  sub $0,2
-  add $1,$5
-  sub $3,$5
-  add $4,2
-  mov $5,$3
+  sub $0,1
+  add $4,1
+  add $6,$1
   add $5,$6
-  mov $7,$1
-  add $1,$5
-  mov $3,$6
-  mov $5,$6
-  add $5,$1
-  mov $6,$1
+  mov $7,$5
+  mov $1,$5
   mul $1,$2
   div $1,$4
-  mov $2,$0
-  add $3,$6
-  add $3,$1
-  add $7,$1
+  mul $5,2
 lpe
-add $7,$3
 mov $0,$7
+div $0,3

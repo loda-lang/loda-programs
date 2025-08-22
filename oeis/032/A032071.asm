@@ -5,11 +5,8 @@
 #offset 1
 
 mov $1,$0
-sub $0,1
-mov $4,1
-add $4,$0
 mov $5,2
-pow $5,$4
+pow $5,$0
 mov $3,$5
 div $5,3
 mul $3,$5
@@ -20,6 +17,6 @@ trn $2,8
 mov $0,$2
 div $0,2
 add $0,4
-mov $6,1
-fac $6,$1
-mul $0,$6
+mov $4,1
+fac $4,$1
+mul $0,$4

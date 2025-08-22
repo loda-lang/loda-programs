@@ -5,9 +5,8 @@
 #offset 1
 
 mov $1,$0
-sub $0,1
 mov $3,6
-mov $4,$1
+mov $4,$0
 pow $4,5
 lpb $4
   mov $2,$3

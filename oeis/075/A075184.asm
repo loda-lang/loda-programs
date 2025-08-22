@@ -1,17 +1,14 @@
 ; A075184: One half of fourth column of triangle A075181.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 3,50,675,8820,117600,1632960,23814000,365904000,5927644800,101189088000,1818030614400,34326452160000,679990671360000,14108934647808000,306113492805120000,6933770723303424000
 
 mov $1,$0
-mov $2,$0
-add $0,2
 add $1,4
+mov $2,1
+fac $2,$1
+add $0,2
 bin $1,4
-add $2,4
-lpb $2
-  mul $1,$2
-  sub $2,1
-lpe
+mul $1,$2
 div $1,$0
 mov $0,$1
 div $0,4

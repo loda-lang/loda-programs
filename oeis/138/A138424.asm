@@ -1,24 +1,17 @@
 ; A138424: a(n) = (prime(n)^5 - prime(n))/2.
-; Submitted by jp557
+; Submitted by KetamiNO [YouTube]
 ; 15,120,1560,8400,80520,185640,709920,1238040,3218160,10255560,14314560,34671960,57928080,73504200,114672480,209097720,357462120,422298120,675062520,902114640,1036535760,1538528160,1969520280,2792029680,4293670080,5255050200,5796370320,7012758600,7693119720,9212175840,16519184640,19289744760,24130862160,25944422280,36719887800,39251362800,47694496200,57531808440,64945992720,77481945960,91882998360,97132122360,127097450880,133892592000,148354640280,156039800400,209113600920,275736538560
+; Formula: a(n) = truncate((-A000040(n)+truncate(A000040(n)^A064989(A045970(A122258(2)))))/2)
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
-max $0,2
+seq $0,40 ; The prime numbers.
+mov $2,2
+seq $2,122258 ; Number of Pierpont primes <= n.
+seq $2,45970 ; a(1)=7; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+4}^e_i.
+seq $2,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 mov $1,$0
-pow $1,5
+pow $1,$2
 sub $1,$0
 mov $0,$1
 div $0,2

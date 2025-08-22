@@ -1,14 +1,10 @@
 ; A110561: Denominators of T(n+1)/n! reduced to lowest terms, where T(n) are the triangular numbers A000217.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,1,1,3,8,40,180,140,896,72576,604800,6652800,68428800,59304960,726485760,163459296000,2324754432000,39520825344000,640237370572800,579262382899200,10532043325440000,4644631106519040000
-; Formula: a(n) = truncate(b(n)/gcd(binomial(n+2,2),b(n))), b(n) = n*b(n-1), b(0) = 1
 
-mov $1,$0
 mov $2,1
-lpb $0
-  mul $2,$0
-  sub $0,1
-lpe
+fac $2,$0
+mov $1,$0
 add $1,2
 bin $1,2
 gcd $1,$2

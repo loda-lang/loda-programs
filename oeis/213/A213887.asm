@@ -1,11 +1,18 @@
 ; A213887: Triangle of coefficients of representations of columns of A213743 in binomial basis.
-; Submitted by Bunteck
+; Submitted by loader3229
 ; 1,0,1,0,1,1,0,1,2,1,0,1,3,3,1,0,0,4,6,4,1,0,0,3,10,10,5,1,0,0,2,12,20,15,6,1,0,0,1,12,31,35,21,7,1,0,0,0,10,40,65,56,28,8,1,0,0,0,6,44,101,120,84,36,9,1,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $6,$1
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 sub $1,$0
 add $1,2
 lpb $1

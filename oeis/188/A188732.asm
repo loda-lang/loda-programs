@@ -1,29 +1,36 @@
 ; A188732: Decimal expansion of (5+sqrt(61))/6.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 2,1,3,5,0,4,1,6,1,2,6,5,1,1,0,9,0,6,5,6,8,8,2,8,7,1,2,2,6,2,6,5,1,6,9,0,2,2,6,1,3,8,4,1,8,9,4,4,1,4,2,7,2,1,6,6,9,6,2,0,7,2,9,3,3,6,5,1,3,0,9,3,1,4,8,9,4,5,4,5
+; Formula: a(n) = -10^(n-1)-10*truncate((-10^(n-1)-10*truncate((-10^(n-1)+truncate((3*d(max(4*n-4,0))+4)/truncate(c(max(4*n-4,0))/(10^(n-1))))-1)/10)+truncate((3*d(max(4*n-4,0))+4)/truncate(c(max(4*n-4,0))/(10^(n-1))))+9)/10)-10*truncate((-10^(n-1)+truncate((3*d(max(4*n-4,0))+4)/truncate(c(max(4*n-4,0))/(10^(n-1))))-1)/10)+truncate((3*d(max(4*n-4,0))+4)/truncate(c(max(4*n-4,0))/(10^(n-1))))+9, b(n) = 4*c(n-2)+4*d(n-2)+4*gcd(b(n-2),2), b(5) = 164, b(4) = 164, b(3) = 12, b(2) = 12, b(1) = 0, b(0) = 0, c(n) = 21*c(n-2)+18*d(n-2)+18*gcd(b(n-2),2), c(5) = 909, c(4) = 909, c(3) = 57, c(2) = 57, c(1) = 1, c(0) = 1, d(n) = -5*d(n-2)-6*c(n-2)-6*gcd(b(n-2),2), d(5) = -264, d(4) = -264, d(3) = -18, d(2) = -18, d(1) = 0, d(0) = 0
 
 #offset 1
 
 sub $0,1
 mov $2,1
-mov $5,1
 mov $3,$0
-mul $3,3
+mul $3,4
 lpb $3
-  sub $3,1
+  sub $3,2
   add $5,$2
-  add $1,$2
+  gcd $1,2
   add $1,$5
-  mov $2,$1
   mul $1,2
   add $2,$1
+  mul $1,2
+  add $2,$1
+  sub $5,$2
+  mul $2,3
 lpe
-sub $5,$1
-add $1,$5
-add $1,1
 mov $4,10
 pow $4,$0
+mul $5,3
 div $2,$4
+mov $1,4
+add $1,$5
 div $1,$2
+sub $1,$4
 mov $0,$1
+sub $0,1
+mod $0,10
+add $0,10
 mod $0,10

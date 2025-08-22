@@ -1,57 +1,52 @@
 ; A349489: a(n) = Sum_{k=1..n} k * floor(sqrt(2*k-1)).
-; Submitted by Christian Krause
+; Submitted by crashtech
 ; 1,3,9,17,32,50,71,95,131,171,215,263,328,398,473,553,638,728,842,962,1088,1220,1358,1502,1677,1859,2048,2244,2447,2657,2874,3098,3362,3634,3914,4202,4498,4802,5114,5434,5803,6181,6568,6964,7369,7783,8206,8638,9079,9529,10039
 
 #offset 1
 
 sub $0,1
-mov $7,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$7
-  sub $0,$4
+mov $11,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
   mov $9,0
-  mov $10,$0
+  mov $0,$11
+  sub $0,$2
   mov $8,$0
-  add $8,1
-  lpb $8
-    sub $8,1
-    mov $13,0
-    mov $0,$10
-    sub $0,$8
-    mov $1,$0
-    mov $12,2
-    lpb $12
-      sub $12,1
-      mov $0,$1
-      add $0,$12
-      sub $0,1
-      mov $2,$0
-      mov $3,1
-      mov $5,0
-      lpb $0
-        mov $0,$2
-        add $0,1
-        add $3,1
-        add $5,$0
-        add $0,$2
-        div $0,$3
-        sub $0,$3
-      lpe
-      mov $0,$5
-      mov $11,$12
-      mul $11,$5
-      add $13,$11
+  mov $10,$0
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $0,$8
+    sub $0,$10
+    mov $4,$0
+    mov $5,0
+    mov $6,2
+    lpb $6
+      sub $6,1
+      mov $0,$4
+      add $0,$6
+      trn $0,1
+      mov $1,$0
+      mov $3,$0
+      add $0,1
+      add $1,$0
+      nrt $1,2
+      mul $3,$1
+      add $1,$3
+      add $0,$1
+      mov $7,$6
+      mul $7,$0
+      add $5,$7
     lpe
-    min $1,1
-    mul $1,$0
-    mov $0,$13
-    sub $0,$1
-    add $0,1
+    min $4,1
+    mul $4,$0
+    mov $0,$5
+    sub $0,$4
+    sub $0,1
     add $9,$0
   lpe
-  add $6,$9
+  add $12,$9
 lpe
-mov $0,$6
+mov $0,$12

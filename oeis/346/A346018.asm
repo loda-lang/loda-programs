@@ -1,15 +1,18 @@
 ; A346018: Triangle read by rows: T(n,k) is the number of integers m such that 1 <= m <= n and gcd(m,n) <= k, 1 <= k <= n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,2,2,2,3,2,3,3,4,4,4,4,4,5,2,4,5,5,5,6,6,6,6,6,6,6,7,4,6,6,7,7,7,7,8,6,6,8,8,8,8,8,8,9,4,8,8,8,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,11,4,6,8,10,10,11,11,11,11,11,11,12
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $6,$1
+add $6,1
+bin $6,2
+sub $0,$6
 add $1,2
 lpb $1
   sub $1,1

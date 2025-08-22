@@ -1,15 +1,18 @@
 ; A125250: Square array, read by antidiagonals, where A(1,1) = A(2,2) = 1, A(1,2) = A(2,1) = 0, A(n,k) = 0 if n < 1 or k < 1, otherwise A(n,k) = A(n-2,k-2) + A(n-1,k-2) + A(n-2,k-1) + A(n-1,k-1).
-; Submitted by Athlici
+; Submitted by loader3229
 ; 1,0,0,0,1,0,0,1,1,0,0,0,2,0,0,0,0,2,2,0,0,0,0,1,5,1,0,0,0,0,0,5,5,0,0,0,0,0,0,3,11,3,0,0,0,0,0,0,1,13,13,1,0,0,0,0,0,0,0,9,26,9,0,0,0,0,0,0,0,0,4,32,32,4,0,0,0,0,0,0
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $1,$0
 add $1,2
 lpb $1

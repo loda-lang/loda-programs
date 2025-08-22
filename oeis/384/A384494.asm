@@ -18,8 +18,7 @@ bin $1,$0
 sub $2,$0
 mov $0,$2
 add $0,1
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
+mov $4,1
+fac $4,$0
+mul $1,$4
 mov $0,$1

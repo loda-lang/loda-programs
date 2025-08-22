@@ -1,13 +1,20 @@
 ; A321622: The Riordan square of the Fine numbers, triangle read by rows, T(n, k) for 0 <= k<= n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,0,1,1,1,1,1,1,2,4,2,1,1,6,10,7,3,1,1,18,31,19,10,4,1,1,57,97,61,29,13,5,1,1,186,316,196,96,40,16,6,1,1,622,1054,652,316,136,52,19,7,1,1,2120,3586,2210,1072,458,181,65,22,8,1,1
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0

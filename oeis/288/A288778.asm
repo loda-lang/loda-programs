@@ -19,8 +19,7 @@ mov $1,1
 add $1,$0
 mul $1,$2
 add $1,$0
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
+mov $4,1
+fac $4,$0
+mul $1,$4
 mov $0,$1

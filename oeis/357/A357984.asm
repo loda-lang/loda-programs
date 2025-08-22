@@ -1,5 +1,5 @@
 ; A357984: Replace prime(k) with A000720(k) in the prime factorization of n.
-; Submitted by Kotenok2000
+; Submitted by MVeiga
 ; 1,0,1,0,2,0,2,0,1,0,3,0,3,0,2,0,4,0,4,0,2,0,4,0,4,0,1,0,4,0,5,0,3,0,4,0,5,0,3,0,6,0,6,0,2,0,6,0,4,0,4,0,6,0,6,0,4,0,7,0,7,0,2,0,6,0,8,0,4,0,8,0,8,0,4,0,6,0,8,0
 
 #offset 1
@@ -16,7 +16,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  gcd $3,$0
   sub $3,1
   mov $5,2
   lpb $5

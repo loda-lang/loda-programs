@@ -1,11 +1,18 @@
 ; A276995: Triangle read by rows, T(n,k) = k^(n-k)*(n-k)!*Sum_{j=0..n-k}(-1)^j/j! for 0<=k<=n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,1,0,0,1,0,1,0,1,0,2,4,0,1,0,9,16,9,0,1,0,44,144,54,16,0,1,0,265,1408,729,128,25,0,1,0,1854,16960,10692,2304,250,36,0,1,0,14833,237312,193185,45056,5625,432,49,0,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
 mul $0,-1
 add $0,$2
 mov $1,1

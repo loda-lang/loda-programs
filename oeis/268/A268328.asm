@@ -1,5 +1,5 @@
 ; A268328: Integers of the form (prime(m) + prime(m+1))/10 for some m.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 3,6,9,10,12,21,24,30,32,33,34,36,39,41,45,48,52,54,60,63,74,81,84,93,99,103,112,114,118,120,122,123,125,129,130,132,135,136,141,146,153,156,162,165,171,174,177,183,190,192,196
 
 #offset 1
@@ -11,6 +11,7 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
+  add $3,2
   seq $3,6005 ; The odd prime numbers together with 1.
   mov $6,$3
   add $6,1

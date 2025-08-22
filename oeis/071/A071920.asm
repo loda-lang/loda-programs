@@ -1,12 +1,17 @@
 ; A071920: Square array giving number of unimodal functions [n]->[m] for n>=0, m>=0, with a(0,m)=0 for all m>=0, read by antidiagonals.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,0,0,0,1,0,0,2,1,0,0,3,4,1,0,0,4,9,7,1,0,0,5,16,22,11,1,0,0,6,25,50,46,16,1,0,0,7,36,95,130,86,22,1,0,0,8,49,161,295,296,148,29,1,0,0,9,64,252,581,791,610,239,37,1,0,0,10,81,372,1036,1792,1897,1163,367,46,1,0,0,11
 
-mov $2,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
 sub $0,1
 mov $1,1
 sub $2,$0

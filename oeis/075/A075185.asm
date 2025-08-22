@@ -1,8 +1,9 @@
 ; A075185: One-fourth of fifth column of triangle A075181.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 6,137,2436,40614,673470,11389140,198793980,3602823840,67991283360,1337641905600,27440275262400,586731694348800,13067437397414400,302870068070169600,7298072456298624000
 
 mov $1,$0
+add $1,1
 add $0,1
 mov $2,$0
 mov $3,$0
@@ -19,9 +20,7 @@ add $2,$4
 add $2,502
 mul $0,$2
 div $0,48
-add $1,1
-lpb $1
-  mul $0,$1
-  sub $1,1
-lpe
+mov $5,1
+fac $5,$1
+mul $0,$5
 div $0,4

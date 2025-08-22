@@ -1,9 +1,18 @@
 ; A180662: The Golden Triangle: T(n,k) = A001654(k) for n>=0 and 0<=k<=n.
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 0,0,1,0,1,2,0,1,2,6,0,1,2,6,15,0,1,2,6,15,40,0,1,2,6,15,40,104,0,1,2,6,15,40,104,273,0,1,2,6,15,40,104,273,714,0,1,2,6,15,40,104,273,714,1870,0,1,2,6,15,40,104,273,714,1870,4895,0,1,2,6,15,40,104,273,714,1870,4895,12816,0,1
+; Formula: a(n) = A074677(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-seq $0,1654 ; Golden rectangle numbers: F(n) * F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
+mul $0,2
+seq $0,74677 ; a(n) = Sum_{i = 0..floor(n/2)} (-1)^(i + floor(n/2)) F(2*i + e), where F = A000045 (Fibonacci numbers) and e = (1-(-1)^n)/2.

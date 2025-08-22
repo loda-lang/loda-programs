@@ -12,19 +12,18 @@ add $3,$0
 add $3,$2
 lpb $2
   sub $2,1
-  mov $5,0
   mov $0,$3
   sub $0,$2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mul $4,2
-  mov $7,$0
-  mul $7,8
-  nrt $7,2
-  add $7,1
-  div $7,2
-  bin $7,2
-  sub $0,$7
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  sub $0,$5
   mov $6,$0
   div $6,2
   bin $0,$6

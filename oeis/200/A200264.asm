@@ -22,8 +22,6 @@ lpb $1
   sub $6,$4
   sub $6,$4
   add $5,$6
-  mov $4,$5
-  sub $4,4
   mov $0,$5
   sub $0,5
   dgs $0,10

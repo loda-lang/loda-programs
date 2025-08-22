@@ -586,6 +586,7 @@ A244735: a(n) = (prime(n) mod 5) mod 2.
 A248558: Squares of the digits of the decimal expansion of e.
 A254029: Positive solutions of Monkey and Coconuts Problem for the classic case (5 sailors, 1 coconut to the monkey): a(n) = 15625*n - 4 for n >= 1.
 A256136: a(n) = 6^A000120(n).
+A258774: a(n) = 1 + sigma(n) + sigma(n)^2.
 A259547: a(n) = n^4*Fibonacci(n).
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.

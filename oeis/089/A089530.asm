@@ -1,10 +1,26 @@
 ; A089530: A023204 indexed by A000040.
-; Submitted by trigggl
+; Submitted by KetamiNO [YouTube]
 ; 1,3,4,6,7,8,10,14,15,16,19,21,24,25,30,31,33,34,37,39,40,44,45,46,48,49,50,57,59,61,63,68,70,71,75,76,78,80,85,90,91,93,96,97,99,101,102,103,109,111,112,113,117,118,120,131,132,137,139,140,144,147,149,154,158,159,168,170,174,175,179,180,186,187,191,195,196,199,203,205
-; Formula: a(n) = A036234(A023204(n)-1)
 
 #offset 1
 
-seq $0,23204 ; Primes p such that 2*p + 3 is also prime.
+mov $2,$0
 sub $0,1
-seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,40 ; The prime numbers.
+  add $3,$4
+  mul $3,2
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$1
