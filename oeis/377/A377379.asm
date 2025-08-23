@@ -1,0 +1,20 @@
+; A377379: a(n) = rad(n)^binomial(bigomega(n) + omega(n), omega(n) + 1), where rad = A007947, bigomega = A001222, and omega = A001221.
+; Submitted by Science United
+; 1,2,3,8,5,1296,7,64,27,10000,11,60466176,13,38416,50625,1024,17,60466176,19,10000000000,194481,234256,23,3656158440062976,125,456976,729,289254654976,29,14348907000000000000000,31,32768,1185921,1336336,1500625,3656158440062976,37,2085136,2313441,100000000000000000000,41,2232232135326160725639168,43,26559922791424,576650390625,4477456,47,1719070799748422591028658176,343,10000000000,6765201,141167095653376,53,3656158440062976,9150625,83668255425284801560576,10556001,11316496,59
+; Formula: a(n) = truncate(A007947(n-1)^binomial(A001222(n)+A087802(n),A001222(n)-1))
+
+#offset 1
+
+mov $3,$0
+seq $3,87802 ; a(n) = Sum_{d|n, d nonprime} mu(d), where mu = A008683.
+add $3,1
+mov $2,$0
+seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+sub $2,1
+add $3,$2
+bin $3,$2
+sub $0,1
+mov $1,$0
+seq $1,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+pow $1,$3
+mov $0,$1
