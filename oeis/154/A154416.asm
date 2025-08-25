@@ -1,0 +1,29 @@
+; A154416: Maximal Stirling numbers of the first kind.
+; Submitted by Torbj&#246;rn Eriksson
+; 1,1,1,2,11,35,274,1624,13068,118124,1026576,12753576,120543840,1931559552,20313753096,392156797824,5056995703824,102992244837120,1583313975727488,34012249593822720,610116075740491776,13803759753640704000,284093315901811468800,6756146673770930688000,157375898285941510732800,3925495373278097719296000,102339530601744675672576000,2671674589068831403868160000,77226989703299075087834112000,2105684281550279072336117760000,66951000306085302338993639424000,1902893785240928209998216560640000
+
+add $0,1
+mov $1,1
+mov $2,$0
+sub $0,1
+mov $3,$0
+bin $3,2
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $2,1
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  add $4,1
+  pow $4,2
+  sub $4,$0
+  mov $0,$4
+  seq $0,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+  max $1,$0
+lpe
+mov $0,$1
