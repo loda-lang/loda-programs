@@ -15,7 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,3149 ; a(n) = Sum_{k=0..n} k!(n-k)!.
+    seq $7,3149 ; a(n) = Sum_{k=0..n} k!*(n - k)!.
     mov $9,10
     add $9,$5
     min $10,$0

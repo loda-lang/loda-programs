@@ -1,11 +1,24 @@
 ; A146099: Bell numbers (A000110) read mod 9.
-; Submitted by PDW
+; Submitted by DukeBox
 ; 1,1,2,5,6,7,5,4,0,6,1,6,4,1,7,5,5,0,4,5,1,6,6,1,6,4,1,1,5,2,6,4,5,4,6,3,1,6,1,1,1,2,5,6,7,5,4,0,6,1,6,4,1,7,5,5,0,4,5,1,6,6,1,6,4,1,1,5,2,6,4,5,4,6,3,1,6,1,1,1
-; Formula: a(n) = -9*truncate(truncate(A137341(n)/(n!))/9)+truncate(A137341(n)/(n!))
 
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
-mod $1,9
-mov $0,$1
+mov $5,1
+fac $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  pow $3,$1
+  mov $4,$1
+  bin $4,$2
+  mul $7,$2
+  add $7,$3
+  add $2,1
+  mul $4,$7
+  mul $6,-1
+  add $6,$4
+lpe
+mov $0,$6
+div $0,$5
+mod $0,9

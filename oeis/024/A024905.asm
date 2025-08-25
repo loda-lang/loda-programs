@@ -1,9 +1,26 @@
 ; A024905: Numbers k such that 7*k + 1 is prime.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 4,6,10,16,18,28,30,34,40,48,54,60,64,66,70,78,88,90,94,96,100,106,108,118,126,130,136,138,144,150,156,166,184,186,196,204,210,214,226,228,238,244,246,268,276,286,288,298,304,306,316,324,328,330,334,340,346,348,360,364,370,376,378,384,390,400,406,408,418,424,430,438,444,448,460,474,478,480,484,504
-; Formula: a(n) = truncate(A140444(n)/7)
 
 #offset 1
 
-seq $0,140444 ; Primes congruent to 1 (mod 14).
+mov $2,$0
+sub $0,1
+add $2,7
+pow $2,3
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,18
+  add $5,2
+  mov $1,$5
+  mul $1,7
+lpe
+mov $0,$1
 div $0,7

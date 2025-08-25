@@ -1,23 +1,29 @@
 ; A158662: Sum of primes <= n if 1 is counted as a prime.
-; Submitted by Josemi
+; Submitted by Science United
 ; 1,3,6,6,11,11,18,18,18,18,29,29,42,42,42,42,59,59,78,78,78,78,101,101,101,101,101,101,130,130,161,161,161,161,161,161,198,198,198,198,239,239,282,282,282,282,329,329,329,329,329,329,382,382,382,382,382,382,441,441,502,502,502,502,502,502,569,569,569,569,640,640,713,713,713,713,713,713,792,792
 
 #offset 1
 
-mov $1,1
-lpb $0
-  mov $3,$2
-  lpb $3
-    sub $0,1
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    neq $4,1
-    sub $3,$4
-  lpe
-  add $2,1
+sub $0,1
+mov $5,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$5
+  sub $0,$2
+  add $0,1
+  mov $1,$0
   sub $0,1
-  mul $1,$2
-  add $5,$2
+  mov $3,$0
+  add $0,1
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,2
+  sub $0,$3
+  lpb $0
+    sub $0,1
+    mov $1,$0
+  lpe
+  add $4,$1
 lpe
-mov $0,$5
+mov $0,$4

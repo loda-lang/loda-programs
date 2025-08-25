@@ -8,7 +8,6 @@ mov $3,1
 fac $3,$0
 mov $1,4
 mul $1,$3
-mov $0,0
 mov $0,$1
 lpb $0
   add $2,$1

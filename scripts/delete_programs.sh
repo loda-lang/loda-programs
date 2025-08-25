@@ -27,7 +27,7 @@ for f in $files; do
   echo
   usage=$(cat $LODA_HOME/stats/call_graph.csv | grep ,${anumber} | wc -l)
   full_check=$(cat $LODA_HOME/programs/oeis/full_check.txt | grep ${anumber}: | wc -l)
-  num_terms=$(cat $LODA_HOME/oeis/b/${anumber:1:3}/b${anumber:1}.txt | grep . | wc -l)
+  num_terms=$(cat $LODA_HOME/seqs/oeis/b/${anumber:1:3}/b${anumber:1}.txt | grep . | wc -l)
   echo "$num_terms known sequence terms."
   if (( usage > 0 )); then
     echo "$usage other programs using this program."

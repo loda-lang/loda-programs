@@ -1,22 +1,21 @@
 ; A035817: Coordination sequence for lattice D*_64 (with edges defined by l_1 norm = 1).
-; Submitted by Jamie Morken(w2)
+; Submitted by Mumps
 ; 1,128,8192,349568,11190272,286680704,6123315200,112173964160,1799375912960,25678370512000,330122643283968,3862436697723264,41474426978451456,411631804378210944,3799040291725172736
+; Formula: a(n) = truncate(b(n)/3), b(n) = truncate((64*c(n-1)+64*d(n-1))/n), b(3) = 1048704, b(2) = 24576, b(1) = 384, b(0) = 3, c(n) = -c(n-1)+truncate((64*c(n-1)+64*d(n-1))/n), c(3) = 1024509, c(2) = 24195, c(1) = 381, c(0) = 3, d(n) = d(n-1)+truncate((64*c(n-1)+64*d(n-1))/n), d(3) = 1073667, d(2) = 24963, d(1) = 387, d(0) = 3
 
-add $0,2
+mov $1,3
+mov $2,3
+mov $3,3
 lpb $0
-  mov $2,$0
-  max $4,92
-  div $4,2
-  add $4,18
-  sub $0,2
-  sub $2,3
-  add $2,$4
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $0,1
-  add $1,1
-  add $5,$3
+  sub $0,1
+  mul $2,-1
+  add $4,1
+  mov $1,$3
+  sub $1,$2
+  mul $1,64
+  div $1,$4
+  add $2,$1
+  add $3,$1
 lpe
-mov $0,$5
+mov $0,$1
+div $0,3

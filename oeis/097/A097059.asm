@@ -1,24 +1,15 @@
 ; A097059: Numbers of the form p^3 + 3^p for p prime.
+; Submitted by Sterndu
 ; 17,54,368,2530,178478,1596520,129145076,1162268326,94143190994,68630377389272,617673396313738,450283905891048016,36472996377170855324,328256967394537157134,26588814358957503391610
+; Formula: a(n) = truncate(A000040(n)^A131589(1))+truncate(A131589(1)^A000040(n))
 
 #offset 1
 
-mov $3,0
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
-max $0,2
-mov $1,3
-pow $1,$0
-pow $0,3
-add $1,$0
-mov $0,$1
+seq $0,40 ; The prime numbers.
+mov $2,1
+seq $2,131589 ; Expansion of -(3+9*x+2*x^2)/((x+1)*(x^2+3*x+1)).
+mov $1,$0
+pow $1,$2
+pow $2,$0
+add $2,$1
+mov $0,$2

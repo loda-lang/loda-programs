@@ -1,40 +1,37 @@
 ; A050149: a(n) = T(n,n-3), array T as in A050143.
-; Submitted by damotbe
+; Submitted by Coleslaw
 ; 1,15,80,432,2352,12896,71136,394400,2196128,12273648,68811184,386838480,2179890000,12309739968,69641542848,394643939904,2239678552640,12727572969680,72415319422992,412470467298032
 
 #offset 3
 
-mul $0,2
-sub $0,4
+sub $0,2
 pow $0,2
+mul $0,2
 sub $0,1
-div $0,2
+mov $1,3
 mov $2,$0
 mul $2,8
 nrt $2,2
 sub $2,1
 div $2,2
-mov $5,3
-mov $6,$2
-add $6,1
-bin $6,2
-sub $0,$6
+mov $3,$2
+add $3,1
+bin $3,2
+add $2,1
+sub $0,$3
+sub $0,1
 mul $0,-1
-add $0,2
 add $0,$2
 sub $2,$0
 lpb $0
   sub $0,1
-  mul $5,2
-  add $2,1
-  add $3,$5
-  mov $1,$3
-  mul $1,$2
-  sub $2,1
   add $4,1
+  add $6,$1
+  add $5,$6
+  mov $1,$5
+  mul $1,$2
   div $1,$4
-  div $1,2
-  add $5,$1
+  mul $5,2
 lpe
-mov $0,$3
+mov $0,$5
 div $0,6

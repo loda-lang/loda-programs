@@ -4,11 +4,6 @@
 
 mov $3,-4
 pow $3,$0
-mov $5,0
-mov $6,0
-mov $9,0
-mov $10,0
-mov $11,0
 mov $1,$0
 mul $1,2
 mov $8,$1
@@ -30,7 +25,6 @@ lpb $1
   mul $9,-1
   add $9,$7
 lpe
-gcd $9,$1
 mul $0,2
 mov $1,$9
 div $1,$3
@@ -42,5 +36,4 @@ mul $4,16
 add $4,4
 gcd $1,$4
 div $2,$1
-mov $0,$4
 mov $0,$2

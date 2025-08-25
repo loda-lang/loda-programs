@@ -1,17 +1,18 @@
 ; A095426: a(n) = 11 written in base n.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 11111111111,1011,102,23,21,15,14,13,12,11,10
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,11
+neq $1,0
+mul $1,10
+add $1,1
 lpb $1
   mov $4,$1
   mod $4,$2

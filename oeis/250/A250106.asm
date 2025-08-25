@@ -1,7 +1,6 @@
 ; A250106: Column 2 of triangle in A250104 (or A124323).
 ; Submitted by PDW
 ; 1,0,6,10,60,231,1148,5832,32175,188375,1169652,7663734,52808847,381494400,2881338840,22696790440,186058768140,1584156272157,13984151627030,127779961705620,1206805491491985,11764472685724561,118230099056654664
-; Formula: a(n) = A000296(n-2)*binomial(n,n-2)
 
 #offset 2
 
@@ -9,5 +8,26 @@ sub $0,2
 mov $1,$0
 add $0,2
 bin $0,$1
-seq $1,296 ; Set partitions without singletons: number of partitions of an n-set into blocks of size > 1. Also number of cyclically spaced (or feasible) partitions.
+mov $5,1
+fac $5,$1
+mov $8,$1
+add $1,3
+lpb $1
+  sub $1,1
+  mov $3,$2
+  sub $3,1
+  pow $3,$8
+  add $3,2
+  mov $4,$8
+  bin $4,$2
+  mul $7,$2
+  add $7,$3
+  add $2,1
+  mul $4,$7
+  mul $6,-1
+  add $6,$4
+lpe
+mov $1,$6
+div $1,$5
+sub $1,2
 mul $0,$1

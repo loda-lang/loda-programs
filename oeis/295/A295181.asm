@@ -1,11 +1,18 @@
 ; A295181: Square array A(n,k), n >= 0, k >= 0, read by antidiagonals, where column k is the expansion of e.g.f. exp(-k*x)/(1 - x)^k.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 1,1,0,1,0,0,1,0,1,0,1,0,2,2,0,1,0,3,4,9,0,1,0,4,6,24,44,0,1,0,5,8,45,128,265,0,1,0,6,10,72,252,880,1854,0,1,0,7,12,105,416,1935,6816,14833,0,1,0,8,14,144,620,3520,16146,60032,133496,0,1,0,9,16,189,864,5725,31104,153657,589312,1334961,0
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 sub $2,$0
 mov $3,1
 lpb $0

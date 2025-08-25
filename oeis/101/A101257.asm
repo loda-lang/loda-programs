@@ -6,7 +6,6 @@
 
 mov $1,$0
 mov $3,1
-mov $6,0
 mov $2,$0
 lpb $2
   sub $2,$3

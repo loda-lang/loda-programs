@@ -1,18 +1,25 @@
 ; A342120: Square array T(n,k), n>=0, k>=0, read by antidiagonals, where column k is the expansion of g.f. 1/(1 - k*x - k*x^2).
-; Submitted by Jamie Morken(w1)
+; Submitted by Coleslaw
 ; 1,1,0,1,1,0,1,2,2,0,1,3,6,3,0,1,4,12,16,5,0,1,5,20,45,44,8,0,1,6,30,96,171,120,13,0,1,7,42,175,464,648,328,21,0,1,8,56,288,1025,2240,2457,896,34,0,1,9,72,441,1980,6000,10816,9315,2448,55,0,1,10,90,640,3479,13608,35125,52224,35316,6688,89,0,1,11
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+add $2,1
 sub $2,$0
 mov $3,1
 lpb $0
   sub $0,1
-  mov $1,$4
-  mul $3,$2
   mov $4,$3
-  add $3,$1
+  add $3,$5
+  mul $3,$2
+  mov $5,$4
 lpe
-mov $0,$3
+mov $0,$4

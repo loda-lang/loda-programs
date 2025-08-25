@@ -1,13 +1,14 @@
 ; A018606: Divisors of 714.
-; Submitted by [TA]crashtech
+; Submitted by Checco
 ; 1,2,3,6,7,14,17,21,34,42,51,102,119,238,357,714
 
 #offset 1
 
 mov $2,1
+mov $3,1
 sub $0,1
 lpb $0
-  mov $3,$2
+  mul $3,2
   lpb $3
     add $2,1
     mov $1,714
