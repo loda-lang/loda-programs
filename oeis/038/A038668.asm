@@ -1,17 +1,18 @@
 ; A038668: a(n)=[ n/3 ] + [ n/4 ] + [ n/7 ] + [ n/11 ] + [ n/18 ] + [ n/29 ] + [ n/47 ] + [ n/76 ] + [ n/123 ] + [ n/199 ]... (using Lucas numbers A000204).
-; Submitted by PDW
+; Submitted by Egon Olsen
 ; 0,0,1,2,2,3,4,5,6,6,7,9,9,10,11,12,12,14,14,15,17,18,18,20,20,20,21,23,24,25,25,26,28,28,29,32,32,32,33,34,34,36,36,38,39,39,40,42,43,43,44,45,45,47,48,50,51,52,52,54,54,54,56,57,57,59,59,60,61,62,62,65,65,65
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A304094(n+1)-1, b(0) = 0
 
 #offset 1
 
-sub $0,1
+mov $1,1
+mov $4,$0
 lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,304094 ; Number of Lucas numbers (A000204: 1, 3, 4, 7, 11, ... excluding 2) that divide n
+  sub $0,3
+  mov $3,$4
+  div $3,$1
+  seq $3,130241 ; Maximal index k of a Lucas number such that Lucas(k) <= n (the 'lower' Lucas (A000032) Inverse).
+  add $1,1
   sub $2,1
-  sub $0,1
-  add $1,$2
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2

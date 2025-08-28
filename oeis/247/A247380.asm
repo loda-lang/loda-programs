@@ -1,32 +1,26 @@
 ; A247380: First differences of A117495.
-; Submitted by Manuel Stenschke
+; Submitted by Science United
 ; 3,7,11,23,21,37,31,51,77,49,97,85,67,99,137,149,93,169,143,111,199,167,221,281,197,153,211,163,225,533,251,323,203,479,219,367,379,315,401,413,261,601,277,369,287,751,775,415,325,429,539,343,771,575,587,599,383,619,513,401,893,1161,559,439,573,1241,733,1017,485,629,779,935,805,817,679,839,1005,709,1033,1209
 
 #offset 1
 
-mov $2,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$2
-  add $0,$4
-  sub $0,1
-  mov $3,$0
-  max $0,0
-  add $0,2
-  mov $6,$0
-  seq $6,40 ; The prime numbers.
-  div $6,2
-  mov $0,$6
-  mul $0,2
+sub $0,2
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
   add $0,1
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mul $3,$0
-  mov $5,$4
-  mul $5,$3
-  add $1,$5
+  mov $6,$0
+  add $0,1
+  seq $0,6005 ; The odd prime numbers together with 1.
+  mul $0,$6
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mul $4,$3
+  mov $5,$0
 lpe
-min $2,1
-mul $2,$3
-sub $1,$2
+sub $1,$5
 mov $0,$1

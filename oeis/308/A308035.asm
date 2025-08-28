@@ -1,11 +1,18 @@
 ; A308035: Square array A(n,k), n >= 0, k >= 0, read by antidiagonals, where column k is the expansion of 2/(1 - x + sqrt(1 - 2*x + (1+4*k)*x^2)).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,0,1,1,1,-1,-2,1,1,1,-2,-5,-3,1,1,1,-3,-8,-3,1,1,1,1,-4,-11,1,21,11,1,1,1,-5,-14,9,61,51,15,1,1,1,-6,-17,21,121,91,-41,-13,1,1,1,-7,-20,37,201,101,-377,-391,-77,1,1,1,-8,-23,57,301,51,-1203,-1469,-407,-86,1,1,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 mov $1,1
 mul $2,-1
 add $2,$0

@@ -1,11 +1,24 @@
 ; A239447: Partial sums of A030101.
+; Submitted by Wood
 ; 0,1,2,5,6,11,14,21,22,31,36,49,52,63,70,85,86,103,112,137,142,163,176,205,208,227,238,265,272,295,310,341,342,375,392,441,450,491,516,573,578,615,636,689,702,747,776,837,840,875,894,945,956,999,1026,1085,1092,1131,1154,1209,1224,1271,1302,1365,1366,1431,1464,1561,1578,1659,1708,1821,1830,1903,1944,2049,2074,2163,2220,2341
-; Formula: a(n) = a(n-1)+A030101(n), a(0) = 0
 
-lpb $0
-  mov $2,$0
-  seq $2,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-  sub $0,1
-  add $1,$2
+mov $4,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
+  mov $1,$0
+  lpb $1
+    mul $0,2
+    sub $0,$1
+    div $1,2
+    sub $0,$1
+  lpe
+  mov $1,5
+  add $1,$0
+  mov $0,$1
+  sub $0,5
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

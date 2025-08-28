@@ -1,11 +1,18 @@
 ; A323224: A(n, k) = [x^k] C^n*x/(1 - x) where C = 2/(1 + sqrt(1 - 4*x)), square array read by ascending antidiagonals with n >= 0 and k >= 0.
-; Submitted by pag
+; Submitted by loader3229
 ; 0,0,1,0,1,1,0,1,2,1,0,1,3,4,1,0,1,4,8,9,1,0,1,5,13,22,23,1,0,1,6,19,41,64,65,1,0,1,7,26,67,131,196,197,1,0,1,8,34,101,232,428,625,626,1,0,1,9,43,144,376,804,1429,2055,2056,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mov $1,1
 sub $2,1
 sub $2,$0

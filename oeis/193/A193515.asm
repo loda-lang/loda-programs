@@ -1,15 +1,20 @@
 ; A193515: T(n,k) = number of ways to place any number of 3X1 tiles of k distinguishable colors into an nX1 grid.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,1,1,1,1,2,1,1,3,3,1,1,4,5,4,1,1,5,7,7,6,1,1,6,9,10,13,9,1,1,7,11,13,22,23,13,1,1,8,13,16,33,43,37,19,1,1,9,15,19,46,69,73,63,28,1,1,10,17,22,61,101,121,139,109,41,1,1,11,19,25,78,139,181,253,268,183,60,1,1
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
 mov $3,3
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,3
 sub $2,$0
 add $0,2

@@ -1,20 +1,22 @@
 ; A259575: Reciprocity array of 1; rectangular, read by antidiagonals.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,2,1,1,2,3,2,1,1,3,4,4,3,1,1,3,5,6,5,3,1,1,4,6,7,7,6,4,1,1,4,7,8,10,8,7,4,1,1,5,8,10,11,11,10,8,5,1,1,5,9,12,13,15,13,12,9,5,1,1,6,10,13,15,16,16,15,13,10,6,1,1,6
 
 #offset 1
 
-mov $4,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mul $4,$0
-add $5,$0
 add $2,1
-sub $2,$4
-mov $4,0
+sub $2,$0
+mov $5,$0
 mov $0,$2
 lpb $0
   sub $0,1

@@ -1,19 +1,20 @@
 ; A151914: a(0)=0, a(1)=4; for n>=2, a(n) = (8/3)*(Sum_{i=1..n-1} 3^wt(i)) + 4, where wt() = A000120().
-; Submitted by reallight
+; Submitted by DukeBox
 ; 0,4,12,20,44,52,76,100,172,180,204,228,300,324,396,468,684,692,716,740,812,836,908,980,1196,1220,1292,1364,1580,1652,1868,2084,2732,2740,2764,2788,2860,2884,2956,3028,3244,3268,3340,3412,3628,3700,3916,4132,4780
-; Formula: a(n) = 4*b(n), b(n) = -floor(truncate(3^(sumdigits(n-1,2)*sign(n-1)))/3)+b(n-1)+truncate(3^(sumdigits(n-1,2)*sign(n-1))), b(0) = 0
+; Formula: a(n) = 2*truncate((b(n)+5)/3)-2, b(n) = 4*truncate(3^(sumdigits(n-1,2)*sign(n-1)))+b(n-1), b(0) = 0
 
 lpb $0
+  sub $0,1
   mov $2,$0
-  sub $2,1
   dgs $2,2
   mov $3,3
   pow $3,$2
   mov $2,$3
-  div $3,3
-  sub $2,$3
-  sub $0,1
+  mul $2,4
   add $1,$2
 lpe
 mov $0,$1
-mul $0,4
+add $0,5
+div $0,3
+sub $0,1
+mul $0,2

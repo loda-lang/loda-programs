@@ -1,28 +1,37 @@
 ; A154817: Triangle T(n,k) = A060187(n+2,k+2), 1<=k<=n.
-; Submitted by stoneageman
+; Submitted by Ralfy
 ; 6,23,23,76,230,76,237,1682,1682,237,722,10543,23548,10543,722,2179,60657,259723,259723,60657,2179,6552,331612,2485288,4675014,2485288,331612,6552,19673,1756340,21707972,69413294,69413294,21707972,1756340
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,13
-pow $2,2
-lpb $2
-  sub $2,7
-  mov $3,$1
-  seq $3,176198 ; Triangle, read by rows, T(n, k) = f(n,k,q) - f(n,0,q) + 1, where f(n, k, q) = [x^k](p(x,n,q)), p(x, n, q) = (1-x)^(n+1)*Sum_{k >= 0} ( (q*k+1)^n + (q*(k+1)-1)^n )*x^k, and q = 2.
-  mov $5,$3
-  div $3,2
-  neq $3,0
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $1,1
-  mul $2,$4
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+mov $1,$0
+sub $1,$5
+add $4,2
+mov $5,$1
+mov $1,$4
+sub $4,$5
+add $4,1
+lpb $4
+  sub $4,1
+  mov $7,$4
+  mul $7,2
+  add $7,1
+  pow $7,$1
+  sub $3,2
+  sub $3,$4
+  bin $3,$6
+  mul $3,$7
+  add $6,1
+  add $2,$3
+  mul $3,0
+  sub $3,$5
 lpe
-mov $0,$5
-sub $0,11
-div $0,2
-add $0,6
+mov $0,$2

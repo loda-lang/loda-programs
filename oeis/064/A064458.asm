@@ -1,12 +1,9 @@
 ; A064458: Highest power of 11 dividing n!.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,7,7,7
-; Formula: a(n) = truncate((11*floor(n/11)-sumdigits(11*floor(n/11),11))/10)
+; Formula: a(n) = truncate((-sumdigits(n,11)+n)/10)
 
-div $0,11
-mul $0,11
 mov $1,$0
-dgs $0,11
-sub $1,$0
-div $1,10
-mov $0,$1
+dgs $1,11
+sub $0,$1
+div $0,10

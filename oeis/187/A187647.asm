@@ -1,17 +1,16 @@
 ; A187647: Partial sums of the central Stirling numbers of the second kind.
-; Submitted by ChelseaOilman
+; Submitted by 7Tonin
 ; 1,2,9,99,1800,44325,1367977,50697257,2192461310,108367857065,6025952821720,372308453692006,25302513044450266,1875871087298000326,150658859151673309726,13030526931922299349726,1207492044401730133131811,119351510621413108729616266,12534121893912783037092788591,1393726712414815685881815016341,163582636240390566173769051523522,20210102409084209197960253112690703,2621711853040103247294523317944793055,356287883901276440027077656955960229455,50619628302285110075985180384230613349915
-; Formula: a(n) = a(n-1)+truncate(A344397(2*n)/(n!)), a(0) = 1
+; Formula: a(n) = a(n-1)+A354977(binomial(n+2,2)-1), a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  mov $3,$0
-  mul $3,2
-  seq $3,344397 ; a(n) = Stirling2(n, floor(n/2)) * floor(n/2)!.
-  div $3,$2
+  add $2,2
+  bin $2,2
+  sub $2,1
+  seq $2,354977 ; Triangle read by rows. T(n, k) = Sum_{j=0..n}((-1)^(n-j)*binomial(n, j)*j^(n+k)) / n!.
   sub $0,1
-  add $1,$3
+  add $1,$2
 lpe
 mov $0,$1

@@ -1,11 +1,18 @@
 ; A169623: Generalized Pascal triangle read by rows: T(n,0) = T(0,n) = 1 for n >= 0, T(n,k) = 0 for k < 0 or k > n; otherwise T(n,k) = T(n-2,k-2) + T(n-2,k-1) + T(n-2,k) for 1 <= k <= n-1.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,2,1,1,2,3,2,1,1,3,5,5,3,1,1,3,6,7,6,3,1,1,4,9,13,13,9,4,1,1,4,10,16,19,16,10,4,1,1,5,14,26,35,35,26,14,5,1,1,5,15,30,45,51,45,30,15,5,1,1,6,20,45,75,96,96,75,45,20,6,1,1,6
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 mov $1,$2

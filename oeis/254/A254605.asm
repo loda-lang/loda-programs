@@ -1,15 +1,18 @@
 ; A254605: The minimum absolute difference between k*m1 and m2 (m1<m2), where m1*m2 is the n-th term of A075362.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0,0,2,1,0,0,1,1,1,2,1,0,0,0,1,0,2,2,1,0,0,1,0,1,1,3,2,1,0,0,0,1,2,0,2,3,2,1,0,0,1,1,1,1,1,3,3,2,1,0,0,0,0,0,2,0,2,4,3,2,1,0,0,1
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 add $1,1
 lpb $1
   sub $1,$0

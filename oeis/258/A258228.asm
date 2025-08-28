@@ -10,7 +10,6 @@ mul $1,3
 sub $1,2
 mul $0,4
 mov $2,$0
-mov $11,0
 trn $0,1
 mov $3,$0
 mov $4,-1
@@ -29,7 +28,6 @@ mul $6,2
 mov $7,-2
 bin $7,$5
 div $7,$6
-mov $8,0
 mov $10,3
 sub $5,$7
 mul $5,2

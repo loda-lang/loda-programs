@@ -1,11 +1,18 @@
 ; A349841: Triangle T(n,k) built by placing all ones on the left edge, [1,0,0,0,0] repeated on the right edge, and filling the body using the Pascal recurrence T(n,k) = T(n-1,k) + T(n-1,k-1).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,0,1,1,0,1,2,1,0,1,3,3,1,0,1,4,6,4,1,1,1,5,10,10,5,2,0,1,6,15,20,15,7,2,0,1,7,21,35,35,22,9,2,0,1,8,28,56,70,57,31,11,2,0,1,9,36,84,126,127,88,42,13,2,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 sub $2,$0
 add $2,2
 add $0,$2

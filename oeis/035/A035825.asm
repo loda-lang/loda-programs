@@ -1,18 +1,21 @@
 ; A035825: Coordination sequence for lattice D*_80 (with edges defined by l_1 norm = 1).
-; Submitted by Jamie Morken(l1)
+; Submitted by DukeBox
 ; 1,160,12800,682720,27315200,874496032,23338104320,534067024480,10698844067840,190617057780640,3058431999744512,44642243043558880,597778600580572160,7395049289720822560,85027230683021319680
+; Formula: a(n) = truncate(b(n)/3), b(n) = truncate((80*c(n-1)+80*d(n-1))/n), b(3) = 2048160, b(2) = 38400, b(1) = 480, b(0) = 3, c(n) = -c(n-1)+truncate((80*c(n-1)+80*d(n-1))/n), c(3) = 2010237, c(2) = 37923, c(1) = 477, c(0) = 3, d(n) = d(n-1)+truncate((80*c(n-1)+80*d(n-1))/n), d(3) = 2087043, d(2) = 38883, d(1) = 483, d(0) = 3
 
-add $0,2
+mov $1,3
+mov $2,3
+mov $3,3
 lpb $0
-  mov $2,$0
-  sub $0,2
-  add $2,77
-  bin $2,$0
-  mov $3,80
-  bin $3,$1
-  mul $3,$2
-  add $0,1
-  add $1,1
-  add $4,$3
+  sub $0,1
+  mul $2,-1
+  add $4,1
+  mov $1,$3
+  sub $1,$2
+  mul $1,80
+  div $1,$4
+  add $2,$1
+  add $3,$1
 lpe
-mov $0,$4
+mov $0,$1
+div $0,3

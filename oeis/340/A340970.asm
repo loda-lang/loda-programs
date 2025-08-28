@@ -1,11 +1,18 @@
-; A340970: Square array T(n,k), n >= 0, k >= 0, read by antidiagonals, where T(n,k) = Sum_{j=0..n} k^j*binomial(n,j)*binomial(2*j,j).
-; Submitted by Gunnar Hjern
+; A340970: Square array T(n,k), n >= 0, k >= 0, read by antidiagonals, where T(n,k) = Sum_{j=0..n} k^j * binomial(n,j) * binomial(2*j,j).
+; Submitted by loader3229
 ; 1,1,1,1,3,1,1,5,11,1,1,7,33,45,1,1,9,67,245,195,1,1,11,113,721,1921,873,1,1,13,171,1593,8179,15525,3989,1,1,15,241,2981,23649,95557,127905,18483,1,1,17,323,5005,54691,361449,1137709,1067925,86515,1,1,19,417,7785,109345,1032801,5628881,13725439,9004545,408105,1,1,21,523,11441,197331,2458573,19871061,88815897,167204947,76499525,1936881,1,1,23
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mov $1,1
 sub $2,$0
 mov $3,1

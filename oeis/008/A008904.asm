@@ -1,12 +1,26 @@
 ; A008904: a(n) is the final nonzero digit of n!.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,1,2,6,4,2,2,4,2,8,8,8,6,8,2,8,8,6,8,2,4,4,8,4,6,4,4,8,4,6,8,8,6,8,2,2,2,4,2,8,2,2,4,2,8,6,6,2,6,4,2,2,4,2,8,4,4,8,4,6,6,6,2,6,4,6,6,2,6,4,8,8,6,8,2,4,4,8,4,6
 
 mov $1,1
+mov $2,1
+mov $3,1
+sub $0,1
 lpb $0
-  mul $1,$0
   sub $0,1
+  add $3,1
+  mov $4,$3
+  lex $4,5
+  mov $6,3
+  pow $6,$4
+  mov $5,$3
+  dir $5,5
+  mul $5,$6
+  mul $2,$5
+  mod $2,5
+  mov $1,$2
+  mod $1,2
+  mul $1,5
+  add $1,$2
 lpe
 mov $0,$1
-dir $0,10
-mod $0,10

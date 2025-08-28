@@ -1,17 +1,15 @@
 ; A114779: Cumulative product of quadruple factorial A007662.
-; Submitted by Penguin
+; Submitted by Science United
 ; 1,1,2,6,24,120,1440,30240,967680,43545600,5225472000,1207084032000,463520268288000,271159356948480000,455547719673446400000,1578472848668491776000000,9698137182219213471744000000
 
-mov $1,126785
-lpb $0
-  mov $3,$2
-  lpb $3
-    sub $3,4
-    mul $1,$0
-  lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
+mov $3,2
+mov $1,$0
+lpb $1
+  mov $2,1
+  fac $2,$1
+  mul $3,$2
+  sub $1,2
+  trn $1,2
 lpe
-mov $0,$1
-div $0,126785
+mov $0,$3
+div $0,2

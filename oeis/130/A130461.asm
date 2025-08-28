@@ -1,12 +1,19 @@
 ; A130461: Triangle, antidiagonals of an array generated from A130460.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,2,1,1,1,2,3,1,1,1,2,6,4,1,1,1,2,6,12,5,1,1,1,2,6,24,20,6,1,1,1,2,6,24,60,30,7,1,1,1,2,6,24,120,120,42,8,1,1,1,2,6,24,120,360,210,56,9,1,1,1,2,6,24,120,720,840,336,72,10,1,1,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
 mov $1,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,1
+sub $0,$3
 sub $0,$2
 add $2,$0
 dif $0,-1

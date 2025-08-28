@@ -4,14 +4,13 @@
 
 #offset 1
 
-mov $1,$0
-sub $4,$0
-bin $4,4
-mul $4,12
+sub $1,$0
+bin $1,4
+mul $1,12
 sub $0,1
 mov $2,$0
 lpb $2
-  mov $0,$4
+  mov $0,$1
   gcd $0,$2
   mul $0,2
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

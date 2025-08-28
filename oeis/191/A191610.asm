@@ -8,7 +8,6 @@
 sub $0,1
 mul $0,5
 mov $1,$0
-dgs $0,5
-sub $1,$0
-div $1,4
-mov $0,$1
+dgs $1,5
+sub $0,$1
+div $0,4

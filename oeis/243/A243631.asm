@@ -1,11 +1,18 @@
 ; A243631: Square array of Narayana polynomials N_n evaluated at the integers, A(n,k) = N_n(k), n>=0, k>=0, read by antidiagonals.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,2,1,1,1,3,5,1,1,1,4,11,14,1,1,1,5,19,45,42,1,1,1,6,29,100,197,132,1,1,1,7,41,185,562,903,429,1,1,1,8,55,306,1257,3304,4279,1430,1,1,1,9,71,469,2426,8925,20071,20793,4862,1,1,1,10,89,680,4237,20076,65445,124996,103049,16796,1,1,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 mov $1,1
 sub $2,$0
 mov $3,1

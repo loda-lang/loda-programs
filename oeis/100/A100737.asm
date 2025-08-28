@@ -1,10 +1,26 @@
 ; A100737: Inverse modulo 2 binomial transform of 4^n.
-; Submitted by KetamiNO [YouTube]
+; Submitted by DukeBox
 ; 1,3,15,45,255,765,3825,11475,65535,196605,983025,2949075,16711425,50134275,250671375,752014125,4294967295,12884901885,64424509425,193273528275,1095216660225,3285649980675,16428249903375,49284749710125
-; Formula: a(n) = A091732(4^n)
 
-mov $1,4
-pow $1,$0
-mov $2,$1
-seq $2,91732 ; Iphi(n): infinitary analog of Euler's phi function.
+mov $2,4
+pow $2,$0
+sub $2,1
 mov $0,$2
+mov $5,1
+lpb $5
+  sub $5,1
+  mov $3,1
+  add $0,1
+  lpb $0
+    mov $1,1
+    mov $4,4
+    lpb $0
+      dif $0,$4
+      mul $1,$4
+      mov $4,$1
+    lpe
+    sub $1,1
+    mul $3,$1
+  lpe
+lpe
+mov $0,$3

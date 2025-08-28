@@ -1,18 +1,20 @@
 ; A029247: Expansion of 1/((1-x^3)(1-x^4)(1-x^5)(1-x^9)).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,0,0,1,1,1,1,1,2,3,2,2,4,4,4,5,5,6,8,7,8,10,10,11,13,13,14,17,17,18,21,21,23,26,26,28,32,32,34,38,39,41,45,46,49,54,54,57,63,64,67,72,74,78,84,85,89,96,98,102,109,111,116,124,126,131,139,142,148,156,159,165,175,178,184,194,198,205,215,219
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
   lpb $2
-    mov $1,$2
-    trn $1,1
-    mul $1,4
-    seq $1,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    trn $2,8
-    add $3,$1
+    mov $4,$2
+    trn $4,1
+    mul $4,4
+    seq $4,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+    trn $2,9
+    add $3,$4
   lpe
-  trn $0,9
+  trn $0,8
+  add $1,$3
 lpe
-mov $0,$3
+mov $0,$1

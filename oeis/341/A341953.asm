@@ -1,5 +1,5 @@
 ; A341953: Replace each digit d in the decimal representation of n with the digital root of d^n.
-; Submitted by Penguin
+; Submitted by loader3229
 ; 1,4,9,4,2,9,7,1,9,10,11,11,19,17,18,19,14,11,19,40,81,77,59,11,25,49,81,71,59,90,91,94,99,94,92,99,97,91,99,40,71,11,49,77,18,49,74,11,49,70,81,47,29,11,55,79,81,41,29,90,91,94,99,94,92,99,97
 
 #offset 1
@@ -10,9 +10,7 @@ lpb $0
   mov $2,$0
   mod $2,10
   pow $2,$4
-  sub $2,1
-  mod $2,9
-  add $2,1
+  dgr $2,10
   mul $2,$3
   div $0,10
   add $1,$2

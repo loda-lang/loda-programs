@@ -1,19 +1,17 @@
 ; A081147: First differences of A022839.
-; Submitted by Just Jake
+; Submitted by loader3229
 ; 2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2
 ; Formula: a(n) = -sqrtint(5*n^2)+sqrtint(5*(n+1)^2)
 
-mov $1,$0
 add $0,1
 mov $2,$0
 pow $2,2
 mul $2,5
 nrt $2,2
-mov $3,$1
-pow $3,2
-mul $3,5
-nrt $3,2
-add $1,$3
 sub $0,1
-add $0,$2
-sub $0,$1
+mov $1,$0
+pow $1,2
+mul $1,5
+nrt $1,2
+sub $2,$1
+mov $0,$2

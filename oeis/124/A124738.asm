@@ -1,5 +1,5 @@
 ; A124738: Irregular table where the n-th row consists of those positive integers which are coprime to both n and n+1 and which are <= n.
-; Submitted by Stony666
+; Submitted by loader3229
 ; 1,1,1,1,3,1,1,5,1,3,5,1,5,7,1,7,1,3,7,9,1,5,7,1,5,7,11,1,3,5,9,11,1,11,13,1,7,11,13,1,3,5,7,9,11,13,15,1,5,7,11,13,1,5,7,11,13,17,1,3,7,9,11,13,17,1,11,13,17,19,1,5,13,17,19,1,3,5,7,9
 
 #offset 1
@@ -9,13 +9,17 @@ sub $0,1
 pow $2,2
 lpb $2
   sub $2,2
-  mov $6,0
   mov $3,$1
-  lpb $3
-    add $6,1
-    sub $3,$6
-  lpe
   add $3,1
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $3,$8
   add $6,2
   bin $6,2
   mov $7,$6

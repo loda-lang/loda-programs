@@ -4,11 +4,9 @@
 
 #offset 3
 
-sub $0,3
-mov $1,1
-add $1,$0
-add $0,1
+sub $0,2
 mul $0,2
+mov $1,$0
 mov $2,$0
 add $2,2
 add $0,4
@@ -17,4 +15,4 @@ mov $3,1
 fac $3,$2
 mul $0,$3
 mul $0,$1
-div $0,360
+div $0,720

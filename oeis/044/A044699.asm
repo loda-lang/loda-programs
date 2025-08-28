@@ -1,5 +1,5 @@
 ; A044699: Numbers n such that string 7,4 occurs in the base 9 representation of n but not of n+1.
-; Submitted by tosi
+; Submitted by kpmonaghan
 ; 67,148,229,310,391,472,553,611,634,715,796,877,958,1039,1120,1201,1282,1340,1363,1444,1525,1606,1687,1768,1849,1930,2011,2069,2092,2173,2254,2335,2416,2497,2578,2659,2740,2798,2821
 
 #offset 1
@@ -17,14 +17,14 @@ lpb $2
     add $2,$3
     mov $3,0
     sub $4,1
-    add $1,$2
+    add $1,10
     mul $1,8
-    add $1,15
   lpe
   trn $2,1
 lpe
 mov $5,81
 mul $5,$4
+div $1,2
 add $1,$5
 mov $0,$1
-add $0,62
+add $0,65

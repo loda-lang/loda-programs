@@ -1,7 +1,7 @@
 ; A056192: a(n) = n divided by its characteristic cube divisor A056191.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,1,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,3,25,26,1,28,29,30,31,4,33,34,35,36,37,38,39,5,41,42,43,44,45,46,47,48,49,50,51,52,53,2,55,7,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,9,73,74,75,76,77,78,79,80
-; Formula: a(n) = truncate(n/((truncate((truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/A019554(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)+1))+1)^2)+1)/2)^2))+1)^3))
+; Formula: a(n) = truncate(n/((truncate((truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/(truncate(sqrtint(4*(truncate(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/A019554(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)+1))+1)^2)/2)^2))+1)^3))
 
 #offset 1
 
@@ -31,7 +31,6 @@ gcd $7,$8
 mov $0,$8
 div $0,$7
 sub $0,1
-mov $14,0
 max $14,$0
 mov $13,$14
 add $14,1
@@ -42,7 +41,6 @@ add $12,1
 pow $12,2
 mul $12,4
 nrt $12,2
-add $12,1
 div $12,2
 pow $12,2
 mov $11,$0

@@ -1,5 +1,5 @@
 ; A152885: Number of descents beginning and ending with an odd number in all permutations of {1,2,...,n}.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 0,0,2,6,72,360,4320,30240,403200,3628800,54432000,598752000,10059033600,130767436800,2440992153600,36614882304000,753220435968000,12804747411456000,288106816757760000,5474029518397440000,133809610449715200000,2810001819444019200000
 
 #offset 1
@@ -9,7 +9,6 @@ mov $1,$0
 add $0,2
 div $0,2
 bin $0,2
-lpb $1
-  mul $0,$1
-  sub $1,1
-lpe
+mov $2,1
+fac $2,$1
+mul $0,$2
