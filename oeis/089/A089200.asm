@@ -18,18 +18,14 @@ lpb $2
   mov $5,$3
   add $3,1
   mov $6,$3
-  mov $9,$3
   seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-  mov $10,$3
-  add $10,1
-  add $3,1
-  mul $3,$10
   mov $8,$3
-  gcd $8,$9
-  mov $7,$8
+  add $8,1
+  add $3,1
+  mul $3,$8
+  mov $7,$3
   mod $7,$6
   equ $7,0
-  mov $3,$8
   mov $3,$7
   equ $3,0
   sub $0,$3

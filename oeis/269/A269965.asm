@@ -1,17 +1,26 @@
-; A269965: Start with a square; at each stage add a square at each expandable vertex so that the ratio of the side of the squares at stage n+1 and at stage n is the golden ratio phi=0.618...; a(n) is the number of squares in a portion of the n-th stage (see below)
+; A269965: Start with a square; at each stage add a square at each expandable vertex so that the ratio of the side of the squares at stage n+1 and at stage n is the golden ratio phi=0.618...; a(n) is the number of squares in a portion of the n-th stage (see below).
 ; Submitted by Science United
 ; 1,3,10,26,63,145,332,760,1745,4007,9198,21102,48403,111021,254656,584132,1339893,3073459,7049906,16171066,37093175,85084313,195166404,447672720,1026871705,2355438303,5402904310,12393181766,28427480091,65206953349,149571708488,343087582300,786974290109,1805161612427,4140679674042,9497890961874,21786262117759,49973327654385,114628818075724,262935580842152,603121630610529,1383440385456055,3173335531298558,7278996984667870,16696563152627555,38298576259459037,87849273535719120,201508662057575028
-; Formula: a(n) = b(n-5), b(n) = b(n-1)+A269963(n+1), b(0) = 1
+; Formula: a(n) = e(n-4), b(n) = 2*b(n-1)+d(n-1)+1, b(4) = 36, b(3) = 15, b(2) = 6, b(1) = 1, b(0) = 0, c(n) = 2*b(n-1)+2*e(n-1)+2*truncate((d(n-1)+1)/2)+2, c(4) = 58, c(3) = 22, c(2) = 10, c(1) = 2, c(0) = 2, d(n) = -d(n-1)-2*b(n-1)+c(n-1)+f(n-1)+1, d(4) = 8, d(3) = 5, d(2) = 2, d(1) = 3, d(0) = 0, e(n) = b(n-1)+e(n-1)+1, e(4) = 26, e(3) = 10, e(2) = 3, e(1) = 1, e(0) = 0, f(n) = c(n-1)+f(n-1)+2, f(4) = 44, f(3) = 20, f(2) = 8, f(1) = 4, f(0) = 0
 
 #offset 5
 
-mov $1,1
-sub $0,5
+mov $2,2
+sub $0,4
 lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,269963 ; Start with a square; at each stage add a square at each expandable vertex so that the ratio of the side of the squares at stage n+1 and at stage n is the golden ratio phi=0.618...; a(n) is the number of squares in a portion of the n-th stage (see below).
   sub $0,1
-  add $1,$2
+  add $3,1
+  add $4,$1
+  add $4,1
+  mul $1,2
+  add $1,$3
+  add $2,2
+  div $3,2
+  add $5,$2
+  mov $2,$3
+  add $2,$4
+  mul $2,2
+  mov $3,$5
+  sub $3,$1
 lpe
-mov $0,$1
+mov $0,$4

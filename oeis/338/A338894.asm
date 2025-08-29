@@ -14,13 +14,11 @@ lpb $1
   add $5,1
   seq $5,19554 ; Smallest number whose square is divisible by n.
   div $4,$5
-  mov $3,$1
   mov $3,$4
   add $3,1
   pow $3,2
   mul $3,4
   nrt $3,2
-  add $3,1
   div $3,2
   sub $3,1
   sub $1,1

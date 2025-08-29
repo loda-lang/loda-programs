@@ -391,6 +391,7 @@ A118215: Start with 1 and repeatedly reverse the digits and add 68 to get the ne
 A118218: Start with 1 and repeatedly reverse the digits and add 71 to get the next term.
 A118226: Start with 1 and repeatedly reverse the digits and add 76 to get the next term.
 A118631: Start with 1 and repeatedly reverse the digits and add 34 to get the next term.
+A118632: Start with 1 and repeatedly reverse the digits and add 35 to get the next term.
 A118633: Start with 1 and repeatedly reverse the digits and add 37 to get the next term.
 A118634: Start with 1 and repeatedly reverse the digits and add 38 to get the next term.
 A118636: Start with 1 and repeatedly reverse the digits and add 40 to get the next term.

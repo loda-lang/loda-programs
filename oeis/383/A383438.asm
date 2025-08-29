@@ -1,14 +1,24 @@
 ; A383438: a(n) = Sum_{k=1..n} Product_{p|k, p prime} k/p.
-; Submitted by Science United
+; Submitted by Bill F
 ; 1,2,3,5,6,12,13,17,20,30,31,55,56,70,85,93,94,148,149,189,210,232,233,329,334,360,369,425,426,1326,1327,1343,1376,1410,1445,1661,1662,1700,1739,1899,1900,3664,3665,3753,3888,3934,3935,4319,4326,4576,4627,4731
-; Formula: a(n) = a(n-1)+A205959(n), a(0) = 0
 
 #offset 1
 
-lpb $0
-  mov $2,$0
-  seq $2,205959 ; a(n) = n^omega(n)/rad(n).
-  sub $0,1
-  add $1,$2
+sub $0,1
+mov $4,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$4
+  sub $0,$1
+  mov $2,24
+  seq $2,6005 ; The odd prime numbers together with 1.
+  add $0,1
+  seq $0,205959 ; a(n) = n^omega(n)/rad(n).
+  add $2,$0
+  mov $0,$2
+  sub $0,89
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

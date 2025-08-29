@@ -1,9 +1,32 @@
 ; A370418: Triangle read by rows. T(n, k) = (n - k)! * (n + k)!.
-; Submitted by Conan
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,2,4,6,24,36,48,120,720,576,720,1440,5040,40320,14400,17280,30240,80640,362880,3628800,518400,604800,967680,2177280,7257600,39916800,479001600,25401600,29030400,43545600,87091200,239500800,958003200,6227020800,87178291200
-; Formula: a(n) = A143084(n)*A119502(n)
 
 mov $1,$0
-seq $1,119502 ; Triangle read by rows, T(n,k) = (n-k)!, for n>=0 and 0<=k<=n.
-seq $0,143084 ; Triangle read by rows: T(n,m) = (n + m)!.
-mul $0,$1
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+add $5,1
+div $5,2
+add $0,1
+mov $4,$5
+add $4,1
+bin $4,2
+sub $1,$4
+mov $5,0
+sub $5,$1
+fac $5,$1
+mov $6,$0
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $2,$6
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $3,1
+fac $3,$0
+mov $0,$3
+mul $0,$5

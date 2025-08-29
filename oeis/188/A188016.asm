@@ -1,7 +1,7 @@
 ; A188016: Positions of 1 in A188014; complement of A188015.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 2,5,7,10,12,13,15,18,20,23,25,26,28,31,33,34,36,39,41,44,46,47,49,52,54,57,59,60,62,65,67,68,70,73,75,78,80,81,83,86,88,89,91,94,96,99,101,102,104,107,109,112,114,115,117,120,122,123,125,128,130,133,135,136,138,141,143,146,148,149,151,154,156,157,159,162,164,167,169,170
-; Formula: a(n) = truncate((sqrtint((truncate((2*floor((n+82)/2)-floor((floor((n+82)/2)+1)/7)+1)/3)+n-25)*(5*truncate((2*floor((n+82)/2)-floor((floor((n+82)/2)+1)/7)+1)/3)+5*n-125))+truncate((2*floor((n+82)/2)-floor((floor((n+82)/2)+1)/7)+1)/3)+n-25)/2)+1
+; Formula: a(n) = truncate((55*truncate((2*floor((n+82)/2)-floor((floor((n+82)/2)+1)/7)+1)/3)+55*n-1375)/34)+1
 
 #offset 1
 
@@ -17,14 +17,8 @@ sub $0,$2
 div $0,3
 sub $0,107
 add $0,$3
-mov $4,$0
-add $4,$0
-mul $4,2
-add $4,$0
-mul $4,$0
-nrt $4,2
-add $4,$0
-mov $1,$4
-div $1,2
-add $1,1
+mov $1,$0
+mul $1,55
+div $1,34
 mov $0,$1
+add $0,1

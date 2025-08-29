@@ -10,17 +10,12 @@ add $2,1
 pow $2,2
 lpb $2
   sub $2,1
-  mov $7,0
   max $7,$1
   mov $6,$7
   add $7,1
   seq $7,19554 ; Smallest number whose square is divisible by n.
   div $6,$7
-  mov $3,$1
   mov $3,$6
-  add $3,1
-  pow $3,2
-  sub $3,1
   seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

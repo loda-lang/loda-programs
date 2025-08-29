@@ -1,9 +1,30 @@
 ; A049089: Array read by antidiagonals: T(1,j)=2j+2 i>=1, T(i,1)=2i+2 i>=1, T(i,j)=T(i-1,j-1)+T(i-1,j).
 ; Submitted by Aurum
 ; 4,6,6,8,10,8,10,16,14,10,12,24,24,18,12,14,34,40,32,22,14,16,46,64,56,40,26,16,18,60,98,96,72,48,30,18,20,76,144,160,128,88,56,34,20,22,94,204,258,224,160,104,64,38,22,24,114,280,402,384,288,192,120,72,42,24,26,136,374,606,642
-; Formula: a(n) = 2*A188553(n)
 
 #offset 1
 
-seq $0,188553 ; T(n,k) = Number of n X k binary arrays without the pattern 0 1 diagonally, vertically, antidiagonally or horizontally.
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
+add $2,2
+sub $2,$0
+mov $3,$2
+add $0,3
+lpb $0
+  sub $0,2
+  add $4,1
+  bin $3,$0
+  mul $3,$4
+  add $1,$3
+  mov $3,$2
+lpe
+mov $0,$1
 mul $0,2

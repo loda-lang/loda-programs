@@ -5,7 +5,6 @@
 #offset 1
 
 mov $3,$0
-mul $3,6
 lpb $3
   sub $3,1
   add $4,$0
@@ -18,5 +17,7 @@ lpb $3
     sub $1,$2
   lpe
   add $1,1
+  add $4,$0
 lpe
 mov $0,$1
+mul $0,2

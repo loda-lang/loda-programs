@@ -7,8 +7,11 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,165190 ; G.f.: 1/((1-x^4)*(1-x^5)).
+  add $2,4
+  mov $4,$2
+  div $4,5
+  div $2,4
+  sub $2,$4
   add $1,$2
   mov $3,8
 lpe
