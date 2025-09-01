@@ -4,16 +4,15 @@
 
 #offset 1
 
-mov $1,$0
-add $1,6
-pow $1,3
+mov $1,216
+sub $1,$0
 lpb $1
   mov $2,2
   sub $2,$0
   lpb $2
     mov $2,0
-    mov $4,$3
     mov $1,3
+    mov $4,$3
   lpe
   mov $2,$0
   add $3,1

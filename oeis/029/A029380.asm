@@ -1,25 +1,21 @@
 ; A029380: Expansion of 1/((1-x^5)(1-x^6)(1-x^7)(1-x^10)).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,0,0,0,0,1,1,1,0,0,2,1,2,1,1,2,2,3,2,2,4,3,4,3,4,5,5,6,5,5,8,7,8,7,8,10,10,11,10,10,14,13,15,13,14,17,17,19,18,18,22,21,24,22,24,27,27,29,28,29,34,33,36,34,36,40,41,43,42,43,49,48,52,50,52,57,58,61,60,61
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
   lpb $2
-    mov $1,$2
-    add $1,20638
-    mov $4,$1
-    div $4,6
-    mov $5,0
-    sub $5,$4
-    add $1,1
-    div $1,5
-    sub $1,688
-    add $1,$5
-    trn $2,7
-    add $3,$1
+    mov $4,$2
+    trn $4,1
+    seq $4,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+    sub $2,1
+    trn $2,9
+    add $3,$4
   lpe
-  sub $0,2
+  add $0,1
   trn $0,8
+  add $1,$3
 lpe
-mov $0,$3
+mov $0,$1

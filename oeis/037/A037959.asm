@@ -4,15 +4,13 @@
 
 #offset 2
 
-mov $1,$0
 mov $2,$0
 add $2,1
 bin $2,2
+mul $2,$0
 add $0,2
-mov $3,1
-fac $3,$0
-mul $2,$3
-div $2,3
-mul $1,$2
-mov $0,$1
-div $0,8
+mov $1,1
+fac $1,$0
+mul $2,$1
+mov $0,$2
+div $0,24

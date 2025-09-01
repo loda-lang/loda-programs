@@ -1,22 +1,26 @@
 ; A025733: Index of 8^n within sequence of numbers of form 8^i*10^j.
-; Submitted by KetamiNO [YouTube]
+; Submitted by loader3229
 ; 1,2,4,7,11,16,22,29,37,46,56,66,77,89,102,116,131,147,164,182,201,220,240,261,283,306,330,355,381,408,436,464,493,523,554,586,619,653,688,724,761,799,837,876,916,957,999,1042,1086,1131,1177,1224,1271,1319,1368
+; Formula: a(n) = c(n-1), b(n) = 2*((c(n-1)-1)==0)+2*b(n-1), b(1) = 4, b(0) = 1, c(n) = c(n-1)+logint((((c(n-1)-1)==0)+b(n-1))^3,10)+1, c(1) = 2, c(0) = 1
 
 #offset 1
 
+mov $2,1
+mov $3,1
 sub $0,1
-mov $3,$0
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  mul $0,28
-  lpb $0
-    sub $0,30
-    trn $0,1
-    add $2,1
-  lpe
+lpb $0
+  sub $0,1
+  sub $3,1
+  mov $4,$3
+  equ $4,0
+  add $2,$4
+  mov $5,$2
+  pow $5,3
+  mov $1,$5
+  log $1,10
+  add $1,1
+  mul $2,2
+  add $3,1
+  add $3,$1
 lpe
-mov $0,$2
-add $0,1
+mov $0,$3

@@ -1,5 +1,5 @@
 ; A045183: Numbers whose base-5 representation contains exactly two 0's and three 2's.
-; Submitted by arkiss
+; Submitted by DukeBox
 ; 1262,1302,1310,1502,1510,1550,3187,3387,3427,3435,4387,4427,4435,4627,4635,4675,6287,6307,6311,6313,6314,6317,6322,6337,6362,6387,6427,6435,6507,6511,6513,6514,6517,6522,6527,6535
 
 #offset 1
@@ -14,14 +14,12 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    add $5,2
+    add $5,6
     mul $5,16
     mod $5,10
     sub $5,1
     trn $5,4
-    mul $3,2
-    sub $3,8
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4
@@ -32,4 +30,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-add $0,1
