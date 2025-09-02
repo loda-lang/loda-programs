@@ -1,13 +1,24 @@
 ; A328946: Product of primorials of consecutive integers (second definition A034386).
-; Submitted by Jamie Morken(w2)
+; Submitted by loader3229
 ; 1,1,2,12,72,2160,64800,13608000,2857680000,600112800000,126023688000000,291114719280000000,672475001536800000000,20194424296150104000000000,606438561613387623120000000000,18211350005250030322293600000000000,546886840657658410578476808000000000000
 
-mov $1,1
-mov $2,$0
-lpb $2
-  seq $2,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
+mov $2,1
+mov $3,1
+mov $4,1
+lpb $0
   sub $0,1
-  mul $1,$2
-  mov $2,$0
+  sub $4,1
+  mov $5,$2
+  add $5,1
+  mov $6,$3
+  gcd $6,$5
+  mov $7,$5
+  div $7,$6
+  pow $7,$0
+  mov $1,$4
+  equ $1,0
+  add $2,$1
+  mul $3,$7
+  add $4,$1
 lpe
-mov $0,$1
+mov $0,$3

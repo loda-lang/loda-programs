@@ -1,21 +1,23 @@
 ; A284369: Fixed point of the morphism 0->1, 1->1001.
-; Submitted by BarnardsStern
+; Submitted by Science United
 ; 1,0,0,1,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,1
+; Formula: a(n) = d(n)-3, b(n) = truncate((-c(n-1)+b(n-1))/(-c(n-1)-e(n-1)-2*truncate((-c(n-1)-e(n-1)+b(n-1))/2)+b(n-1)+2)), b(3) = -6, b(2) = -2, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1), c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 1, d(n) = -c(n-1)-e(n-1)-2*truncate((-c(n-1)-e(n-1)+b(n-1))/2)+b(n-1)+4, d(3) = 3, d(2) = 3, d(1) = 4, d(0) = 0, e(n) = -c(n-2)-e(n-2)-2*truncate((-c(n-2)-e(n-2)+b(n-2))/2)+b(n-2)+e(n-1)+4, e(3) = 36, e(2) = 33, e(1) = 29, e(0) = 29
 
 #offset 1
 
-mov $2,2
+mov $2,1
+mov $4,29
 lpb $0
   sub $0,1
-  sub $0,$3
   sub $1,$2
-  add $1,1
-  div $1,2
+  add $4,$3
   add $3,$1
-  gcd $3,4
-  equ $4,$0
+  sub $3,$4
+  mod $3,2
+  add $3,2
+  div $1,$3
   mul $2,2
-  mul $2,$3
-  div $3,2
+  add $3,2
 lpe
-mov $0,$4
+mov $0,$3
+sub $0,3

@@ -1,16 +1,33 @@
 ; A094590: a(1) = 1; a(n+1) = a(n) * k(n), where k(n) is the number of elements of {a(j)}, 1<=j<=n, which are <= n.
-; Submitted by Jamie Morken(w2)
+; Submitted by loader3229
 ; 1,1,2,6,18,54,216,864,3456,13824,55296,221184,884736,3538944,14155776,56623104,226492416,905969664,4529848320,22649241600,113246208000,566231040000,2831155200000,14155776000000,70778880000000
-; Formula: a(n) = b(n-1), b(n) = A084526(n)*b(n-1), b(0) = 1
+; Formula: a(n) = truncate((b(n-1)-2)/2)+1, b(n) = c(n-1)*b(n-1), b(4) = 36, b(3) = 12, b(2) = 4, b(1) = 2, b(0) = 2, c(n) = ((e(n-1)-1)==0)+c(n-1), c(4) = 3, c(3) = 3, c(2) = 3, c(1) = 2, c(0) = 1, d(n) = d(n-1)*truncate((c(n-1)+1)/gcd(f(n-1),c(n-1)+1))^((e(n-1)-1)==0), d(4) = 3, d(3) = 3, d(2) = 3, d(1) = 1, d(0) = 1, e(n) = d(n-1)*truncate((c(n-1)+1)/gcd(f(n-1),c(n-1)+1))^((e(n-1)-1)==0)*((e(n-1)-1)==0)+e(n-1)-1, e(4) = 1, e(3) = 2, e(2) = 3, e(1) = 1, e(0) = 1, f(n) = gcd(f(n-1),c(n-1)+1), f(4) = 1, f(3) = 1, f(2) = 1, f(1) = 2, f(0) = 0
 
 #offset 1
 
-mov $1,1
+mov $1,2
+mov $2,1
+mov $3,1
+mov $4,1
 sub $0,1
 lpb $0
-  mov $2,$0
-  seq $2,84526 ; The length of each successively larger, indecomposable, 'prime' 3-ball ground-state site swap given in A084521, i.e., the number of digits in each term of A084522.
   sub $0,1
+  sub $4,1
+  mov $5,$2
+  add $5,1
+  gcd $6,$5
+  mov $7,$5
+  div $7,$6
+  mov $8,$4
+  equ $8,0
   mul $1,$2
+  add $2,$8
+  pow $7,$8
+  mul $3,$7
+  mul $8,$3
+  add $4,$8
 lpe
 mov $0,$1
+sub $0,2
+div $0,2
+add $0,1

@@ -1,20 +1,20 @@
 ; A146323: a(n) = floor(Sum_{i=1..n} (1/phi(i))).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,2,3,3,3,3,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+; Formula: a(n) = logint((4*n-4)*((4*n-4)*((n+314)*(4*n-4)+6160)+55800)+230880,5)-6
 
 #offset 1
 
-mov $1,1
-mov $3,1
 sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  mul $3,$2
-  add $3,$1
-  sub $0,1
-  mul $1,$2
-lpe
-div $3,$1
-mov $0,$3
+mov $1,$0
+mul $0,4
+add $1,315
+mul $1,$0
+add $1,6160
+mul $1,$0
+add $1,55800
+mul $1,$0
+add $1,230880
+log $1,5
+mov $0,$1
+sub $0,6

@@ -1,16 +1,32 @@
 ; A128881: A007376(8n).
-; Submitted by Science United
+; Submitted by loader3229
 ; 8,1,1,2,2,2,3,3,4,4,4,5,5,6,6,6,7,7,8,8,8,9,9,0,0,1,8,1,1,6,1,1,4,2,1,2,3,1,0,4,1,8,5,1,6,5,1,4,6,1,2,7,1,0,8,1,8,9,1,6,9,2,4,0,2,2,1,2,0,2,2,8,3,2,6,3,2,4,4,2
+; Formula: a(n) = b(8*n), b(n) = truncate(d(n-1)/truncate(10^(e(n-1)-1))), b(3) = 3, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = ((e(n-1)-1)==0)+c(n-1), c(3) = 4, c(2) = 3, c(1) = 2, c(0) = 1, d(n) = -truncate(d(n-1)/truncate(10^(e(n-1)-1)))*truncate(10^(e(n-1)-1))+(((e(n-1)-1)==0)+c(n-1))*((e(n-1)-1)==0)+d(n-1), d(3) = 4, d(2) = 3, d(1) = 2, d(0) = 0, e(n) = (logint(((e(n-1)-1)==0)+c(n-1),10)+1)*((e(n-1)-1)==0)+e(n-1)-1, e(3) = 1, e(2) = 1, e(1) = 1, e(0) = 1
 
 #offset 1
 
-mov $2,$0
-mul $2,8
-mov $1,$2
-lpb $2
-  pow $2,0
-  mov $0,$1
+mov $2,1
+mov $8,1
+mul $0,8
+lpb $0
   sub $0,1
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
-  mov $1,1
+  sub $8,1
+  mov $7,10
+  pow $7,$8
+  mov $1,$3
+  div $1,$7
+  mov $6,$1
+  mul $6,$7
+  mov $4,$8
+  equ $4,0
+  add $2,$4
+  mov $5,$2
+  log $5,10
+  add $5,1
+  mul $5,$4
+  mul $4,$2
+  add $8,$5
+  sub $3,$6
+  add $3,$4
 lpe
+mov $0,$1

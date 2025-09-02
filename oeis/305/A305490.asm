@@ -1,5 +1,5 @@
 ; A305490: Fixed point of the morphism 0->120, 1->110, 2->100.
-; Submitted by Raul Prisacariu
+; Submitted by Just Jake
 ; 1,1,0,1,1,0,1,2,0,1,1,0,1,1,0,1,2,0,1,1,0,1,0,0,1,2,0,1,1,0,1,1,0,1,2,0,1,1,0,1,1,0,1,2,0,1,1,0,1,0,0,1,2,0,1,1,0,1,1,0,1,2,0,1,1,0,1,2,0,1,2,0,1,1,0,1,0,0,1,2
 
 #offset 1
@@ -8,17 +8,15 @@ mul $0,2
 sub $0,1
 lpb $0
   sub $0,1
-  mov $2,$1
-  add $2,$0
-  bin $2,$0
-  mov $4,$3
-  mul $4,2
-  add $4,4
-  add $1,1
   mov $3,$2
-  pow $3,2
-  mul $3,$2
-  mul $3,$4
-  mod $3,3
+  add $3,$0
+  bin $3,$0
+  mov $1,$4
+  mul $1,2
+  add $1,4
+  add $2,1
+  mov $4,$3
+  mul $4,$1
+  mod $4,3
 lpe
-mov $0,$3
+mov $0,$4

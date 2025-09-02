@@ -1,11 +1,24 @@
 ; A146120: Bell numbers (A000110) read mod 30.
-; Submitted by [AF>Le_Pommier] Jerome_C2005
+; Submitted by JagDoc
 ; 1,1,2,5,15,22,23,7,0,27,25,0,7,7,22,5,17,24,19,17,22,21,3,16,9,13,4,19,5,2,27,13,14,7,9,0,7,21,16,19,7,8,17,15,16,5,25,12,21,1,0,7,13,22,11,17,0,25,23,28,27,15,28,21,25,22,13,29,26,27,25,2,25,3,12,7,27,28,25,19
-; Formula: a(n) = -30*truncate(truncate(A137341(n)/(n!))/30)+truncate(A137341(n)/(n!))
 
-mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
-mod $1,30
-mov $0,$1
+mov $4,1
+fac $4,$0
+mov $7,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  add $1,1
+  mul $3,$6
+  mul $5,-1
+  add $5,$3
+lpe
+mov $0,$5
+div $0,$4
+mod $0,30

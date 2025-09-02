@@ -1,18 +1,24 @@
 ; A267609: Decimal representation of the n-th iteration of the "Rule 182" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jamie Morken(s2)
+; Submitted by UBT - wbiz
 ; 1,7,21,127,381,1911,5461,32767,98301,491511,1408981,8355711,25001341,125269879,357913941,2147483647,6442450941,32212254711,92341796821,547608330111,1638530022781,8209829984119,23456963876181,140735340838911,422201727483901,2111025817550839,6051529460383701,35887507618889599,107379944056520061,538030035483195255,1537228672809129301,9223372036854775807,27670116110564327421,138350580552821637111,396604997584755359701,2351959869397967830911,7037432864120193940861,35260951296895807911799
+; Formula: a(n) = truncate((c(n+2)-22)/16)+1, b(n) = bitxor(bitxor(c(n-1)+truncate(bitxor(b(n-1),2*b(n-1))/2),truncate(bitxor(b(n-1),2*b(n-1))/2)),4*b(n-1)), b(1) = 6, b(0) = 1, c(n) = bitxor(bitxor(c(n-1)+truncate(bitxor(b(n-1),2*b(n-1))/2),truncate(bitxor(b(n-1),2*b(n-1))/2)),4*b(n-1)), c(1) = 6, c(0) = 2
 
-add $0,1
-mul $0,2
-mov $2,$0
+mov $1,1
+mov $2,2
+add $0,2
 lpb $0
   sub $0,1
-  mov $3,$2
-  bin $3,$0
-  add $3,1
-  mod $3,2
+  mov $3,$1
   mul $1,2
-  add $1,$3
+  bxo $3,$1
+  div $3,2
+  mul $1,2
+  add $2,$3
+  bxo $2,$3
+  bxo $2,$1
+  mov $1,$2
 lpe
-mov $0,$1
-div $0,2
+mov $0,$2
+sub $0,22
+div $0,16
+add $0,1

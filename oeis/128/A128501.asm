@@ -1,6 +1,17 @@
 ; A128501: a(n) = lcm{1 <= k <= n, gcd(k, 3) = 1}.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,1,2,2,4,20,20,140,280,280,280,3080,3080,40040,40040,40040,80080,1361360,1361360,25865840,25865840,25865840,25865840,594914320,594914320,2974571600,2974571600,2974571600,2974571600,86262576400
+; Formula: a(n) = truncate(b(n)/27), b(n) = truncate(n/gcd(n,b(n-1)))*b(n-1), b(1) = 27, b(0) = 27
 
-seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
-dir $0,3
+mov $1,27
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $4,$2
+  gcd $4,$1
+  mov $3,$2
+  div $3,$4
+  mul $1,$3
+lpe
+mov $0,$1
+div $0,27

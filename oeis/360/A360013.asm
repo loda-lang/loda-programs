@@ -4,32 +4,28 @@
 
 #offset 1
 
-mov $1,$0
-mov $3,$0
-pow $3,2
-lpb $3
+mov $2,$0
+pow $2,2
+lpb $2
+  add $6,1
+  mov $7,$1
   add $7,1
-  mov $8,$2
-  add $8,1
-  seq $8,51903 ; Maximum exponent in the prime factorization of n.
-  mod $4,-149
-  seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  trn $4,2
-  add $4,2
-  pow $4,$8
-  mov $6,$4
-  gcd $6,$7
-  div $4,$6
-  equ $4,1
-  sub $1,$4
-  add $2,1
-  mov $5,$1
-  max $5,1
-  equ $5,$1
-  mul $3,$5
-  sub $3,1
+  seq $7,51903 ; Maximum exponent in the prime factorization of n.
+  trn $3,2
+  add $3,2
+  pow $3,$7
+  mov $5,$3
+  gcd $5,$6
+  div $3,$5
+  equ $3,1
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,1
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $1,$2
-add $1,1
 mov $0,$1
+add $0,1
 mul $0,2

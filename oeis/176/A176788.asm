@@ -6,7 +6,6 @@
 
 mov $1,$0
 mov $2,1
-sub $0,1
 lpb $0
   mov $3,$0
   seq $3,6882 ; Double factorials n!!: a(n) = n*a(n-2) for n > 1, a(0) = a(1) = 1.

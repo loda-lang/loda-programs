@@ -1,16 +1,17 @@
 ; A279506: Total number of 1's in the binary expansion of A003418.
-; Submitted by amazing
+; Submitted by loader3229
 ; 1,1,1,2,2,4,4,4,4,6,6,6,6,12,12,12,12,12,12,12,12,12,12,14,14,21,21,18,18,17,17,22,22,22,22,22,22,28,28,28,28,25,25,32,32,32,32,40,40,40,40,40,40,43,43,43,43,43,43,38,38,44,44,44,44,44,44,47,47,47,47,52,52,56,56,56,56,56,56,53
+; Formula: a(n) = sumdigits(b(n),2)*sign(b(n)), b(n) = truncate(n/gcd(n,b(n-1)))*b(n-1), b(1) = 1, b(0) = 1
 
 mov $1,1
 lpb $0
-  mov $2,$1
-  gcd $2,$0
-  mul $1,$0
-  div $1,$2
   sub $0,1
+  add $2,1
+  mov $4,$2
+  gcd $4,$1
+  mov $3,$2
+  div $3,$4
+  mul $1,$3
 lpe
+dgs $1,2
 mov $0,$1
-add $0,1
-div $0,2
-dgs $0,2

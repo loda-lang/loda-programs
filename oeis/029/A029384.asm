@@ -1,18 +1,20 @@
 ; A029384: Expansion of 1/((1-x^5)(1-x^6)(1-x^8)(1-x^10)).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,0,0,0,0,1,1,0,1,0,2,1,1,1,1,2,3,1,3,1,4,3,3,3,4,4,6,3,6,4,8,6,7,6,8,8,11,7,11,8,14,11,13,11,14,14,18,13,19,14,22,18,21,19,23,22,28,21,29,23,33,28,32,29,35,33,41,32,42,35,47,41,47,42,50,47,57,47,59,50
 
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
   lpb $2
-    mov $1,$2
-    trn $1,1
-    seq $1,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    trn $2,8
-    add $3,$1
+    mov $4,$2
+    trn $4,1
+    seq $4,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+    sub $2,1
+    trn $2,9
+    add $3,$4
   lpe
-  sub $0,4
-  trn $0,6
+  trn $0,8
+  add $1,$3
 lpe
-mov $0,$3
+mov $0,$1

@@ -16,17 +16,17 @@ lpb $0
     mov $9,10
     add $9,$5
     sub $4,1
+    mul $7,$1
     add $7,1
     add $7,$0
     add $7,$4
     bin $7,$0
     mul $7,$$9
     mul $7,$8
-    add $9,1
     add $5,1
     add $6,$7
   lpe
-  add $9,1
+  add $9,2
   mov $3,$6
   mov $$9,$3
   add $2,1

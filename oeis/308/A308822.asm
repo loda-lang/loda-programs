@@ -1,25 +1,23 @@
 ; A308822: Sum of all the parts in the partitions of n into 5 parts.
-; Submitted by Christian Krause
+; Submitted by Mumps
 ; 0,0,0,0,0,5,6,14,24,45,70,110,156,234,322,450,592,799,1026,1330,1680,2121,2618,3243,3936,4800,5746,6885,8148,9657,11310,13237,15360,17820,20502,23590,26928,30747,34884,39546,44600,50266,56364,63167,70488,78615
+; Formula: a(n) = n*(((n-5)>=0)+truncate(((n-5)*((n-5)*((n-5)*(n+25)+310)+180*truncate((n-5)/2)-90*n+1770))/2880))
 
-mov $4,3
 mov $1,$0
-sub $1,2
-lpb $1
-  sub $1,$4
-  mov $3,$1
-  add $3,3
-  mov $5,$3
-  pow $5,2
-  mul $5,3
-  sub $3,2
-  pow $3,3
-  div $3,3
-  mul $3,2
-  add $3,$5
-  add $3,24
-  div $3,48
-  add $2,$3
-  mov $4,10
-lpe
-mul $0,$2
+sub $1,5
+mov $2,$0
+add $2,25
+mul $2,$1
+add $2,310
+mov $3,$1
+mod $3,2
+mul $3,-90
+mul $2,$1
+add $2,$3
+add $2,1320
+mov $3,$1
+geq $3,0
+mul $1,$2
+div $1,2880
+add $1,$3
+mul $0,$1

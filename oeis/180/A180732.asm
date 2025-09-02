@@ -17,15 +17,13 @@ lpb $1
   trn $5,$2
   mov $6,10
   pow $6,$5
-  mov $7,$3
+  add $7,4
   mov $4,$3
   div $4,$6
   neq $4,$0
   mul $1,$4
   sub $1,1
-  mul $3,22
-  add $3,$7
-  add $8,4
+  mul $3,23
 lpe
-mov $0,$8
+mov $0,$7
 div $0,4

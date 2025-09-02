@@ -1,16 +1,20 @@
 ; A171784: Fourth smallest divisor of smallest number having exactly n divisors.
+; Submitted by loader3229
 ; 6,8,4,8,4,4,4,8,4,8,4,4,4,8,4,8,4,4,4,8,4,4,4,4,4,8,4,8,4,4,4,4,4,8,4,4,4,8,4,8,4,4,4,8,4,4,4,4,4,8,4,4,4,4,4,8,4,8,4,4,4,4,4,8,4,4,4,8,4,8,4,4,4,4,4,8,4,4,4,8
-; Formula: a(n) = 4*A010051(n)+2*max(-n+5,0)+4
+; Formula: a(n) = 2*binomial(c(n),d(n))+4, b(n) = n*b(n-1), b(3) = 6, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 2, c(3) = 2, c(2) = 2, c(1) = 2, c(0) = 0, d(n) = gcd(n,b(n-1)), d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 0
 
 #offset 4
 
-sub $0,1
-mov $1,4
-trn $1,$0
-add $0,1
-seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-add $1,$0
-add $1,$0
-mul $1,2
-add $1,4
-mov $0,$1
+mov $1,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $3,2
+  mov $4,$2
+  gcd $4,$1
+  mul $1,$2
+lpe
+bin $3,$4
+mov $0,$3
+mul $0,2
+add $0,4

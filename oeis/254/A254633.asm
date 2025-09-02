@@ -1,24 +1,20 @@
 ; A254633: a(n) = 16^n*[x^n]hypergeometric([3/2, -2*n], [3], -x).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,16,480,17920,752640,34062336,1623638016,80408739840,4100845731840,214072431738880,11388653368508416,615465127495335936,33704042696173158400,1866685441634205696000,104401050057113075712000,5889038054986331298201600,334693662791723162114457600
-; Formula: a(n) = floor(binomial(2*n+2,n+1)/(n+2))*floor(binomial(2*n,n)/(n+1))*(n+1)*4^n
+; Formula: a(n) = floor(binomial(2*n+2,n+1)/(n+2))*binomial(2*n,n)*4^n
 
 mov $1,4
 pow $1,$0
 mov $2,$0
 add $2,1
 mov $3,$0
-mov $4,$0
+mov $4,$2
 add $4,1
-mul $0,2
-bin $0,$3
-div $0,$4
-mul $0,$2
 mov $5,$2
-mov $6,$2
-add $6,1
 mul $2,2
 bin $2,$5
-div $2,$6
+div $2,$4
+mul $0,2
+bin $0,$3
 mul $0,$2
 mul $0,$1

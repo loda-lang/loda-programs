@@ -1,21 +1,19 @@
 ; A140580: a(n) = (n^2)/A048671(n), = n*A014963(n) = A140579 * [1, 2, 3, ...].
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,4,9,8,25,6,49,16,27,10,121,12,169,14,15,32,289,18,361,20,21,22,529,24,125,26,81,28,841,30,961,64,33,34,35,36,1369,38,39,40,1681,42,1849,44,45,46,2209,48,343,50,51,52,2809,54,55,56,57,58,3481,60,3721,62,63
-; Formula: a(n) = n*((gcd(n,2^n-2)-1)*(-2*truncate((A143731(n)+1)/2)+A143731(n)+1)+1)
+; Formula: a(n) = n*c(n), b(n) = truncate(n/gcd(n,b(n-1)))*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = truncate(n/gcd(n,b(n-1))), c(2) = 2, c(1) = 1, c(0) = 0
 
 #offset 1
 
-mov $1,$0
-seq $1,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
-add $1,1
-mod $1,2
-mov $3,2
-pow $3,$0
-sub $3,2
-mov $2,$0
-gcd $2,$3
-sub $2,1
-mul $1,$2
-mov $2,$1
-add $2,1
-mul $0,$2
+mov $1,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $4,$2
+  gcd $4,$1
+  mov $3,$2
+  div $3,$4
+  mul $1,$3
+lpe
+mul $3,$2
+mov $0,$3

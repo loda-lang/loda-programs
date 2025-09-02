@@ -4,18 +4,23 @@
 
 #offset 2
 
-sub $0,2
+mov $3,1
+fac $3,$0
 mov $4,$0
-mov $2,2
-lpb $2
-  div $2,2
-  mov $0,$4
-  add $0,$2
-  seq $0,60719 ; a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).
-  mov $1,$2
-  mul $1,$0
-  add $3,$1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $7,$6
+  pow $7,$4
+  mov $5,$4
+  bin $5,$6
+  mul $2,$6
+  add $2,$7
+  mul $5,$2
+  add $6,1
+  mul $1,-1
+  add $1,$5
 lpe
-mov $0,$3
-div $0,2
-sub $0,1
+mov $0,$1
+div $0,$3
+sub $0,2

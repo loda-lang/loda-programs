@@ -1,11 +1,14 @@
 ; A007823: A007824(n)/16.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 1,2,5,14,45,186,945,5778,44037,403470,4344877,56072378,793804721,12734185106,229632768005,4628786367502,105803768420397,2626282179198138,71539181027191729,2076395667668755090,65704452165048754181
-; Formula: a(n) = A159699(a(n-1)), a(0) = 1
+; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A006520(b(n-1)+1), b(0) = 0
 
-mov $1,$0
-mov $0,1
-lpb $1
-  sub $1,1
-  seq $0,159699 ; Replace 2^k in binary expansion of n with A045623(k+1).
+lpb $0
+  sub $0,1
+  mov $1,$2
+  add $1,1
+  seq $1,6520 ; Partial sums of A006519.
+  add $2,$1
 lpe
+mov $0,$2
+add $0,1

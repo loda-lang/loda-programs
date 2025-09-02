@@ -1,22 +1,20 @@
 ; A119944: First differences of A003418(n) = lcm(1..n).
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 0,1,4,6,48,0,360,420,1680,0,25200,0,332640,0,0,360360,11531520,0,220540320,0,0,0,5121436320,0,21416915520,0,53542288800,0,2248776129600,0,69872686884000,72201776446800,0,0,0
+; Formula: a(n) = c(n+1), b(n) = b(n-1)+c(n-1), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = (truncate(n/gcd(b(n-1)+c(n-1),n))-1)*(b(n-1)+c(n-1)), c(2) = 1, c(1) = 0, c(0) = 1
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  mov $6,$0
-  seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
-  add $0,$6
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mul $4,$3
-  mov $5,$0
+mov $3,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $3,$1
+  add $5,1
+  mov $4,$3
+  gcd $4,$5
+  mov $1,$3
+  mov $2,$5
+  div $2,$4
+  sub $2,1
+  mul $3,$2
 lpe
-sub $1,$5
-mov $0,$1
-sub $0,1
+mov $0,$3
