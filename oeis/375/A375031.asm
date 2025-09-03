@@ -1,0 +1,32 @@
+; A375031: Numbers whose prime factorization has at least one exponent that equals 2 and no higher even exponent.
+; Submitted by Science United
+; 4,9,12,18,20,25,28,36,44,45,49,50,52,60,63,68,72,75,76,84,90,92,98,99,100,108,116,117,121,124,126,132,140,147,148,150,153,156,164,169,171,172,175,180,188,196,198,200,204,207,212,220,225,228,234,236,242,244,245,252,260,261,268,275,276,279,284,288,289,292,294,300,306,308,315,316,325,332,333,338
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+add $2,2
+pow $2,2
+lpb $2
+  mov $5,6
+  mov $3,$1
+  add $3,1
+  seq $3,375033 ; The maximum even exponent in the prime factorization of n, or 0 if no such exponent exists.
+  lpb $3
+    mov $6,$3
+    equ $6,2
+    div $3,10
+    add $5,$6
+  lpe
+  sub $5,6
+  sub $0,$5
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1

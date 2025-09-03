@@ -1,0 +1,21 @@
+; A044863: Positive integers having the same number of base-7 runs of odd length as even.
+; Submitted by Joe
+; 49,56,58,59,60,61,62,65,73,81,89,97,98,106,112,113,115,116,117,118,122,130,138,146,147,155,163,168,169,170,172,173,174,179,187,195,196,204,212,220,224,225,226,227,229,230,236,244,245
+
+#offset 1
+
+mov $1,1
+mov $2,$0
+add $0,5
+add $2,10
+pow $2,2
+bin $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,44938 ; Number of runs of even length in base 7 representation of n.
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
