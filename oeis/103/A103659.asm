@@ -1,5 +1,5 @@
 ; A103659: (1/6) * most frequently occurring volume assumed by triangular pyramids with their 4 vertices chosen from distinct points of an (n+1)X(n+1)X(n+1) lattice cube.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,2,4,4,12,12,12,12,12,24,24,24,24
 
 #offset 1

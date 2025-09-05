@@ -1,5 +1,5 @@
 ; A091704: Number of Barker codes (or Barker sequences) of length n up to reversals and negations.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,1,2,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 #offset 2

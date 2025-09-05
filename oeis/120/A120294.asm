@@ -1,5 +1,5 @@
 ; A120294: Numerator of determinant of n X n matrix with elements M[j,j] = (i+j)/(i+j-1).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,5,1,17,13,37,1,1,41,101,61,29,1,197,113,257,1,1,181,401,1,97,53,577,313,677,73,157,421,1,1,1,109,89,613,1297,137,1,761,1601
 
 #offset 1

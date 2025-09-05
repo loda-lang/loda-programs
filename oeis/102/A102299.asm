@@ -1,5 +1,5 @@
 ; A102299: Number of prime divisors with multiplicity of n where n and n+1 are composite or twin composite numbers.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 3,2,2,2,3,2,4,2,2,3,5,2,2,2,2,2,3,3,5,2,3,2,4,2,4,2,2,3,6,2,3,2,2,3,3,2,5,4,4,2,2,2,4,2,3,2,2,2,3,3,4,3,3,2,3,2,3,3,2,2,5,2,2,2,3,3,7,2,4,2,2,4,4,2,2,2,6,2,2,3
 ; Formula: a(n) = A001222(2*A153238(floor((n-1)/2)+1)-2*floor((n-1)/2)+n+1)
 

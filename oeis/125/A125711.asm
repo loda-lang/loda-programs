@@ -1,5 +1,5 @@
 ; A125711: In the "3x+1" problem, let 1 denote a halving step and 0 denote an x->3x+1 step. Then a(n) is obtained by writing the sequence of steps needed to reach 1 from 2n and reading it as a decimal number.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3,175,7,47,431,87791,15,743151,111,22255,943,751,218863,175087,31,5871,1791727,1431279,239,191,55023,44015,1967,11917039,1775,3515647479163389605506303638875119,481007,382703,437231,108202665749908974283165422824431,63,95803119
 
 #offset 1

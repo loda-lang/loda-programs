@@ -1,5 +1,5 @@
 ; A099918: A Chebyshev transform related to the 7th cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1
 ; Formula: a(n) = binomial(2,floor((n%7)/2))*(-1)^(n%7)
 

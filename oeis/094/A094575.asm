@@ -1,4 +1,4 @@
-; A094575: Numbers n with property that binomial (2n, n) / (n-1) is an integer.
+; A094575: Numbers k with property that binomial(2k, k) / (k-1) is an integer.
 ; Submitted by emoga
 ; 2,3,5,7,16,21,25,29,41,43,46,67,73,78,89,92,105,111,127,141,154,157,171,188,191,205,210,211,221,229,232,239,241,267,277,300,305,309,313,316,323,326,331,346,369,379,415,421,430,436,441,443,451,460,461,465
 

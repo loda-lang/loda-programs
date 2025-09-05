@@ -1,5 +1,5 @@
 ; A121749: Number of deco polyominoes of height n, consisting only of columns of odd length. A deco polyomino is a directed column-convex polyomino in which the height, measured along the diagonal, is attained only in the last column.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,2,6,16,66,246,1248,5976,36120,210480,1479600,10140480,81340560,640367280,5773662720,51312240000,513773124480,5085768280320,55995414048000,610811823283200,7334879610643200,87402605773190400
 
 #offset 1

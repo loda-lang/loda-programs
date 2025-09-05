@@ -12,7 +12,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,186193 ; Numbers n such that n!! is divisible by (n+1).
+  seq $3,186193 ; Numbers k such that k!! is divisible by (k+1).
   mov $5,$3
   add $3,3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

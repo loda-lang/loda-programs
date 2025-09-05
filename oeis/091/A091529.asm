@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,91528 ; Sum {k=1 to n} H(k) k! (n-k)! (mod {n+1}), where H(k) is the k-th harmonic number.
+  seq $3,91528 ; a(n) = (Sum_{k=1..n} H(k)*k!*(n-k)!) mod (n+1), where H(k) is the k-th harmonic number.
   min $3,1
   sub $0,$3
   add $1,1

@@ -1,5 +1,5 @@
 ; A131036: First differences of A131711.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,3,-3,7,-9,9,-1,-3,3,-7,-1,1,1,3,-3,7,-9,9,-1,-3,3,-7,-1,1,1,3,-3,7,-9,9,-1,-3,3,-7,-1,1,1,3,-3,7,-9,9,-1,-3,3,-7,-1
 
 mul $0,2

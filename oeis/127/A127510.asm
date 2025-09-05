@@ -1,5 +1,5 @@
 ; A127510: Triangle T(n,k) = k*mobius(n).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,-1,-2,-1,-2,-3,0,0,0,0,-1,-2,-3,-4,-5,1,2,3,4,5,6,-1,-2,-3,-4,-5,-6,-7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10
 
 #offset 1

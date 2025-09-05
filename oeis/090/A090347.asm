@@ -1,5 +1,5 @@
 ; A090347: Number of labeled trees with n nodes and even number of leaves minus number of labeled trees with n nodes and odd number of leaves.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3,8,5,-156,-1253,48,116937,1236140,-4517689,-317599800,-3473788019,43408737540,2033846838675,19004486417504,-643679274285679,-24665731809676452,-135665006897593601,15018201730467027960
 
 #offset 2

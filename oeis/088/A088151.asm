@@ -1,5 +1,5 @@
 ; A088151: Value of n-th digit in ternary representation of n^n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,1,0,0,1,1,1,0,0,0,1,2,1,2,2,0,0,1,1,1,0,2,1,1,0,0,1,0,1,1,1,2,0,2,0,2,1,1,1,0,1,0,1,0,0,0,1,2,2,2,1,1,0,1,2,1,1,1,1,1,1,0,0,1,1,0,2,2,1,0,0,0,0,1,1,2,1,2
 ; Formula: a(n) = floor((n^n)/(3^n))%3
 

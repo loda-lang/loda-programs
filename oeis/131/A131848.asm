@@ -1,5 +1,5 @@
 ; A131848: Least nonnegative number which when added to the n-th semiprime gives a multiple of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,2,1,3,0,2,2,4,0,2,4,4,6,2,2,3,2,3,5,4,4,3,1,1,26,27,1,3,2,3,5,7,34,33,33,34,37,39,1,3,0,43,1,43,46,1,2,4,49,50,0,1,54,55,51,54,53,55,57,54,51,54,57,59,62,63,63,66,69,71,1,3,4,2,73,75,69,71
 
 #offset 1

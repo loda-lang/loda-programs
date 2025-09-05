@@ -1,5 +1,5 @@
 ; A132707: Decimal expansion of 17/Pi.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 5,4,1,1,2,6,8,0,6,5,1,2,4,4,4,1,4,1,6,1,4,2,0,4,7,9,5,4,6,6,5
 
 #offset 1

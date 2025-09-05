@@ -1,5 +1,5 @@
 ; A128919: Numbers simultaneously heptagonal and centered heptagonal.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,148,21022,2984983,423846571,60183228106,8545594544488,1213414242089197,172296276782121493,24464857888819162816,3473837523935538998386
 ; Formula: a(n) = 147*floor((c(n)^2)/120)+1, b(n) = 10*c(n-1)+b(n-1), b(1) = 10, b(0) = 0, c(n) = 11*c(n-1)+b(n-1), c(1) = 11, c(0) = 1
 

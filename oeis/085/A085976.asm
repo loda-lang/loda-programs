@@ -1,5 +1,5 @@
 ; A085976: Number of 2's in decimal expansion of prime(n).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 #offset 1

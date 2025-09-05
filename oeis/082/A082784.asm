@@ -1,5 +1,5 @@
 ; A082784: Characteristic function of multiples of 7.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
 ; Formula: a(n) = truncate(gcd(n,7)/6)
 

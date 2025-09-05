@@ -1,5 +1,5 @@
 ; A114832: Each term is previous term plus ceiling of harmonic mean of two previous terms.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,7,13,23,40,70,121,210,364,631,1093,1894,3281,5683,9844,17050,29532,51151,88597,153455,265792,460366,797377,1381098,2392132,4143295,7176398,12429886,21529195,37289660,64587586,111868981,193762759
 ; Formula: a(n) = b(n-1), b(n) = b(n-1)+c(n-1), b(1) = 2, b(0) = 1, c(n) = truncate((2*b(n-1)*(b(n-1)+c(n-1)))/(2*b(n-1)+c(n-1)))+1, c(1) = 2, c(0) = 1
 

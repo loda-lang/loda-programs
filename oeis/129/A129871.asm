@@ -1,5 +1,5 @@
 ; A129871: A variant of Sylvester's sequence: a(0)=1 and for n>0, a(n) = (a(0)*a(1)*...*a(n-1)) + 1.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,7,43,1807,3263443,10650056950807,113423713055421844361000443,12864938683278671740537145998360961546653259485195807
 ; Formula: a(n) = a(n-1)*(a(n-1)-1)+1, a(2) = 3, a(1) = 2, a(0) = 1
 

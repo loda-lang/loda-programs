@@ -1,5 +1,5 @@
 ; A111874: The work performed by a partial function f:{1,...,n}->{1,...,n} is defined to be work(f)=sum(|i-f(i)|,i in dom(f)); a(n) is equal to sum(work(f)) where the sum is over all injective partial functions f:{1,...,n}->{1,...,n}.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,4,56,680,8360,108220,1492624,21994896,346014960,5798797620,103251381640,1947864594104,38827482815576,815655120856940,18013584786712480,417284952377904160,10117859730525070944
 
 #offset 1

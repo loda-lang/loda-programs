@@ -1,5 +1,5 @@
 ; A120995: Denominators of rationals related to John Wallis' product formula for Pi/2 (from his 'Arithmetica infinitorum' from 1659).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,15,175,3675,14553,231231,920205,234652275,2807136475,14933966047,59612442981,11425718238025,15211755050625,243077636829375,971230202264925,993568496917018275,3970836034391543625
 
 #offset 1

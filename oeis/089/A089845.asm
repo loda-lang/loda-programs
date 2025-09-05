@@ -1,5 +1,5 @@
 ; A089845: Least common multiple of all cycle sizes in range [A014137(n-1)..A014138(n-1)] of permutation A089865/A089866.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,2,10,70,630,6930,90090,90090,1531530,29099070,29099070,669278610,3346393050,10039179150,291136195350,9025222055850,9025222055850,9025222055850,333933216066450
 ; Formula: a(n) = truncate(b(max(n-2,0))/gcd(d(max(n-2,0)),b(max(n-2,0)))), b(n) = b(n-1)*(c(n-1)+1), b(2) = 10, b(1) = 2, b(0) = 1, c(n) = max(c(n-1)-2,0)+4, c(2) = 6, c(1) = 4, c(0) = 1, d(n) = d(n-1)*(c(n-1)+1)+b(n-1), d(2) = 7, d(1) = 1, d(0) = 0
 

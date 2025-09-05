@@ -1,5 +1,5 @@
 ; A103187: a(n) = second term in continued fraction of n-th harmonic number.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,1,12,3,2,1,1,1,1,50,9,5,3,3,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,36,17,11,8,6,5,4,4,3,3,3,3,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 #offset 2

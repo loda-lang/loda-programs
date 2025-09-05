@@ -1,5 +1,5 @@
 ; A089280: Tower of Hanoi game: a(n) is the number of pegs occupied by already-moved disks after move #n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,1,2,3,2,1,2,2,3,3,2,3,2,1,2,3,3,2,3,3,3,3,2,2,3,3,2,3,2,1,2,2,3,3,3,3,2,2,3,3,3,3,3,3,3,3,2,3,3,2,3,3,3,3,2,2,3,3,2,3,2,1,2,3,3,2,3,3,3,3,3,3,3,3,2,3,3,2,3
 
 #offset 1

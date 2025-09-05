@@ -1,5 +1,5 @@
 ; A108039: Replace each entry 2^i(2j+1) of the triangle in A008280 with i and replace 0's with *'s; then the entries n in the new triangle do not occur beyond diagonal a(n), measured from the left edge and taking the left edge to be diagonal number 1.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,4,4,4,8,8,8,8,10,12,12,16,16,16,16,16,18,20
 
 add $0,1

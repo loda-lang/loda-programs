@@ -1,5 +1,5 @@
 ; A102508: Suppose there are equally spaced chairs around a round table. Then a(n) is the maximal number of chairs for which there exists a seating arrangement of n people around the table such that if a waiter puts two glasses (randomly) on the table in front of two (different) chairs, it is always possible to turn the table so that the two glasses end up in front of two seated persons.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3,7,13,21,31,39,57,73,91,95,133
 
 #offset 1

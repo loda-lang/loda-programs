@@ -1,5 +1,5 @@
 ; A124827: Order of Galois groups of irreducible Chebyshev polynomials of order n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,6,8,20,12,42,16,54,40,110,48,156,84,120,64,272,108,342,160,252
 ; Formula: a(n) = n*A127835(n)
 

@@ -1,5 +1,5 @@
 ; A132175: Index of end of n-th generation of terms in A063882.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 4,9,20,43,91,188,384,777,1564,3140,6293,12601,25218,50453,100925,201870,403762,807547
 ; Formula: a(n) = b(n-1), b(n) = b(n-1)+A132177(n+1), b(0) = 4
 

@@ -1,5 +1,5 @@
 ; A134804: Remainder of triangular number A000217(n) modulo 9.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1,0,0,1,3,6,1,6,3,1
 ; Formula: a(n) = binomial(n+1,2)%9
 

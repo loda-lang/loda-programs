@@ -1,4 +1,4 @@
-; A115956: Numbers n having exactly 2 distinct prime factors, the largest of which is greater than or equal to sqrt(n) (i.e., sqrt(n)-rough numbers with exactly 2 distinct prime factors).
+; A115956: Numbers k having exactly 2 distinct prime factors, the largest of which is greater than or equal to sqrt(k) (i.e., sqrt(k)-rough numbers with exactly 2 distinct prime factors).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 6,10,14,15,20,21,22,26,28,33,34,35,38,39,44,46,51,52,55,57,58,62,65,68,69,74,76,77,82,85,86,87,88,91,92,93,94,95,99,104,106,111,115,116,117,118,119,122,123,124,129,133,134,136,141,142,143,145,146,148,152,153
 

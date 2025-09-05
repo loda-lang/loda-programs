@@ -1,5 +1,5 @@
 ; A093518: Number of ways of representing n as the sum of two (not necessarily distinct) generalized pentagonal numbers.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,2,1,1,1,1,2,1,1,1,0,2,1,2,1,1,2,0,1,1,0,2,1,2,0,1,3,1,1,1,1,0,1,1,1,1,2,1,0,2,2,2,0,1,1,0,2,1,0,1,1,3,1,0,1,1,2,2,1,0,1,2,1,1,0,2,0,0,1,2,1,2,1,0,2,0,3,1,2
 
 mov $1,$0

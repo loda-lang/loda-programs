@@ -1,5 +1,5 @@
 ; A096285: Denominator of the ratio of the preceding two terms.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1
 ; Formula: a(n) = (floor((n-3)/2)%3)%2+1
 
