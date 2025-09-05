@@ -1,5 +1,5 @@
 ; A033825: Finite sequence associated with M24.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,4,4,4,6,6,8,8,10,12,16,24
 
 mov $1,$0

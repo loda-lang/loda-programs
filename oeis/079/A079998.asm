@@ -1,5 +1,5 @@
 ; A079998: The characteristic function of the multiples of five.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0
 ; Formula: a(n) = truncate(gcd(n,5)/4)
 

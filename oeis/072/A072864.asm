@@ -1,4 +1,4 @@
-; A072864: Numbers n such that the smallest k dividing sigma(k*n^2) is equal to 3.
+; A072864: Numbers m such that the smallest k dividing sigma(k*m^2) is equal to 3.
 ; Submitted by Laurent Cheylat
 ; 7,13,14,19,21,26,28,31,35,37,38,39,42,43,52,56,57,61,62,63,65,67,70,73,74,76,77,78,79,84,86,91,93,95,97,103,104,105,109,111,112,114,117,119,122,124,126,127,129,130,133,134,139,140,143,146,148,151,152,154
 

@@ -1,5 +1,5 @@
 ; A064534: If p >= 11 is prime, n is a power of one of the primes in this sequence but n is not a power of p, then the equation x^p + y^p = n*z^p has no solution in integers x,y,z.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 3,5,7,11,13,17,19,23,29,53,59
 
 #offset 1

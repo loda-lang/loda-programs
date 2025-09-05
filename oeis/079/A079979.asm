@@ -1,5 +1,5 @@
 ; A079979: Characteristic function of multiples of six.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0
 ; Formula: a(n) = truncate(gcd(n,6)/4)
 

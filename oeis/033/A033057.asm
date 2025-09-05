@@ -1,4 +1,4 @@
-; A033057: Numbers whose base-6 representation Sum_{i=0..m} d(i)*6^i has odd d(i) for all odd i.
+; A033057: Numbers whose base-6 representation Sum_{i=0..m} d(i)*6^i has odd d(m-i) for all odd i.
 ; Submitted by damotbe
 ; 1,2,3,4,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,42,43,44,45,46,47,54,55,56,57,58,59,66,67,68,69,70,71,78,79,80,81,82,83,90,91,92,93,94,95,102,103,104,105,106,107,114,115,116,117
 

@@ -1,5 +1,5 @@
 ; A054740: Cototient(n)/totient(n) when this is an integer.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,1,2,1,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2
 
 #offset 1

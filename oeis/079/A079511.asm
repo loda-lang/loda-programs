@@ -1,5 +1,5 @@
 ; A079511: a(n) = constant arising in game of n-times nim.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3,5,7,10,13,16,19,22,25,29,32,37
 
 #offset 2

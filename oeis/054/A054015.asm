@@ -1,5 +1,5 @@
 ; A054015: a(n) is Chowla function of n read modulo (number of proper divisors of n), a(1) = 0 by convention.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,0,0,2,0,0,1,1,0,0,0,0,2,2,0,0,0,1,1,1,0,0,1,0,0,2,0,6,0,0,2,1,0,6,0,0,1,0,0,4,0,4,2,1,0,3,1,2,2,0,0,2,1,0,1,1,0,8,0,0,0,2,0,0,0,2,2,3,0,1,0,0,3,3,0,5,0,6
 
 #offset 1

@@ -1,5 +1,5 @@
 ; A049074: Ulam's conjecture (steps to return n to 1 after division by 2 and, if needed, multiplication by 3 with 1 added).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 8,3,49,7,36,55,288,15,339,46,259,67,119,302,694,31,214,357,519,66,148,281,633,91,658,145,101440,330,442,724,101104,63,841,248,540,393,535,557,2344,106,101331,190,1338,325,497,679,100979,139,806,708,1130,197
 
 #offset 1

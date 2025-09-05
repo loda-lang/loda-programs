@@ -1,5 +1,5 @@
 ; A048866: Difference between number of nonprimes and primes in reduced residue system of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,0,0,0,0,0,-2,0,0,2,-2,2,-2,0,-2,4,-4,4,-4,0,-2,6,-6,4,-2,2,-2,10,-6,10,-4,2,-2,6,-6,14,-2,4,-4,16,-8,16,-4,0,-2,18,-10,14,-6,6,-2,22,-10,12,-4,8,0,26,-12,26,-2,4,-2,16,-10,30,-2,10,-8,32,-12,32,-2,2,-2,22,-12,36,-8
 ; Formula: a(n) = -2*A048865(n)+A000010(n)
 

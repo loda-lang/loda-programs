@@ -1,5 +1,5 @@
 ; A045143: Numbers whose base-4 representation contains exactly two 2's and no 3's.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 10,26,34,38,40,41,74,90,98,102,104,105,130,134,136,137,146,150,152,153,160,161,164,165,266,282,290,294,296,297,330,346,354,358,360,361,386,390,392,393,402,406,408,409,416,417,420,421
 
 #offset 1

@@ -1,5 +1,5 @@
 ; A050815: Number of positive Fibonacci numbers with n decimal digits.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 6,5,5,4,5,5,5,4,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,5,5,5,4,5,5,5,4,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,5,5,5,4,5,5
 
 #offset 1

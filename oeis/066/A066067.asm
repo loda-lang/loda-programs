@@ -1,5 +1,5 @@
 ; A066067: Number of binary strings u of any length with property that length(u) + number of 0's in u <= n (only one of a string and its reversal are counted).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,6,10,18,29,49,78,128,203,329,523,844,1347,2172,3480,5614,9023,14567,23466,37910,61165,98865,159677,258190,417283,674890,1091214,1765146,2854793,4618373,7470614,12086436,19552903,31635193,51181367,82809832
 
 #offset 1

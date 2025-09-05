@@ -1,5 +1,5 @@
 ; A033031: Squarefree kernels of 3-smooth numbers.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,2,6,2,3,6,2,6,6,3,2,6,6,6,2,6,3,6,6,2,6,6,6,6,3,2,6,6,6,6,6,2,6,6,3,6,6,6,2,6,6,6,6,6,6,2,3,6,6,6,6,6,6,2,6,6,6,6,6,3,6,6,2,6,6,6,6,6,6,6,6,2,6,6,3,6,6,6
 ; Formula: a(n) = gcd(A003586(n),210)
 

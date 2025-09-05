@@ -18,7 +18,7 @@ lpb $1
     mov $2,$0
     add $2,$5
     div $0,$2
-    seq $2,25815 ; Expansion of 1/((1-x^2)(1-x^6)(1-x^11)).
+    seq $2,25815 ; Expansion of 1/((1-x^2)*(1-x^6)*(1-x^11)).
   lpe
   add $3,$2
 lpe

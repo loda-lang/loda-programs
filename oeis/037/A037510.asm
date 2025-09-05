@@ -1,5 +1,5 @@
 ; A037510: Base 9 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,11,99,892,8030,72270,650431,5853881,52684929,474164362,4267479260,38407313340,345665820061,3110992380551,27998931424959,251990382824632,2267913445421690
 ; Formula: a(n) = b(n-1)+c(n-1), b(n) = 9*b(n-1)+9*c(n-1), b(1) = 9, b(0) = 0, c(n) = -3*truncate((c(n-1)+10)/3)+c(n-1)+10, c(1) = 2, c(0) = 1
 

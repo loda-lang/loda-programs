@@ -1,5 +1,5 @@
 ; A040534: Continued fraction for sqrt(558).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 23,1,1,1,1,1,4,1,1,1,1,1,46,1,1,1,1,1,4,1,1,1,1,1,46,1,1,1,1,1,4,1,1,1,1,1,46,1,1,1,1,1,4,1,1,1,1,1,46,1,1,1,1,1,4,1,1,1,1,1,46,1,1,1,1,1,4,1,1,1,1,1,46,1,1,1,1,1,4,1
 ; Formula: a(n) = truncate(gcd(truncate(binomial(14*(-2)^n,2)/2),truncate((6*truncate(binomial(14*(-2)^n,2)/9)-60)/42))/2)+1
 

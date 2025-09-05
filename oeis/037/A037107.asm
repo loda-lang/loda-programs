@@ -1,5 +1,5 @@
-; A037107: Trajectory of 3 under map n->19n+1 if n odd, n->n/2 if n even
-; Submitted by Christian Krause
+; A037107: Trajectory of 3 under map n->19n+1 if n odd, n->n/2 if n even.
+; Submitted by ckrause
 ; 3,58,29,552,276,138,69,1312,656,328,164,82,41,780,390,195,3706,1853,35208,17604,8802,4401,83620,41810,20905,397196,198598,99299,1886682,943341,17923480,8961740,4480870
 
 mov $1,$0

@@ -1,5 +1,5 @@
 ; A061295: Minimal number of steps to get from 0 to n by (a) adding 1 or (b) subtracting 1 or (c) multiplying by 3.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,2,2,3,4,3,4,4,3,4,5,4,5,6,5,6,5,4,5,6,5,6,6,5,6,5,4,5,6,5,6,7,6,7,6,5,6,7,6,7,8,7,8,7,6,7,8,7,8,7,6,7,6,5,6,7,6,7,8,7,8,7,6,7,8,7,8,8,7,8,7,6,7,8,7,8,7,6,7
 
 lpb $0

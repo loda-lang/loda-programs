@@ -1,5 +1,5 @@
 ; A026328: a(n) = number of (s(0), s(1), ..., s(n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, s(0) = 2, s(n) = 5. Also a(n) = T(n,n-3), where T is the array in A026323.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,4,15,50,161,504,1553,4730,14289,42900,128193,381654,1132950,3355392,9918990,29278012,86316259,254227980,748200145,2200619806,6469372932,19011518480,55853259800,164055406320,481804384035,1414857108756,4154663090529
 
 #offset 3

@@ -11,7 +11,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,29090 ; Expansion of 1/((1-x)(1-x^5)(1-x^6)(1-x^12)).
+    seq $7,29090 ; Expansion of 1/((1-x)*(1-x^5)*(1-x^6)*(1-x^12)).
     equ $7,1
     mov $9,10
     add $9,$5

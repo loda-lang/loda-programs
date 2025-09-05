@@ -1,5 +1,5 @@
 ; A037527: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 2,1,0.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,21,210,2102,21021,210210,2102102,21021021,210210210,2102102102,21021021021,210210210210,2102102102102,21021021021021,210210210210210,2102102102102102,21021021021021021,210210210210210210,2102102102102102102,21021021021021021021
 ; Formula: a(n) = b(n-1)+c(n-1), b(n) = 10*b(n-1)+10*c(n-1), b(1) = 20, b(0) = 0, c(n) = -3*truncate((c(n-1)+11)/3)+c(n-1)+11, c(1) = 1, c(0) = 2
 

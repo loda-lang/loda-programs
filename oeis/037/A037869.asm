@@ -1,5 +1,5 @@
 ; A037869: a(n) = (number of digits <=4)-(number of digits >4) in base 10 representation of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,1,-1,-1,-1,-1,-1,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,-2,-2,-2,-2,-2,0,0,0,0,0,-2,-2,-2,-2,-2,0,0,0,0,0,-2,-2,-2,-2,-2,0
 
 add $0,1

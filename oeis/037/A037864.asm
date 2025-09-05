@@ -1,5 +1,5 @@
 ; A037864: a(n)=(number of digits <=2)-(number of digits >2) in base 5 representation of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,-1,-1,2,2,2,0,0,2,2,2,0,0,0,0,0,-2,-2,0,0,0,-2,-2,3,3,3,1,1,3,3,3,1,1,3,3,3,1,1,1,1,1,-1,-1,1,1,1,-1,-1,3,3,3,1,1,3,3,3,1,1,3,3,3,1,1,1,1,1,-1,-1,1,1,1,-1,-1,1,1,1,-1,-1,1
 
 add $0,1

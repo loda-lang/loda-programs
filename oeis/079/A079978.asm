@@ -1,5 +1,5 @@
 ; A079978: Characteristic function of multiples of three.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0
 ; Formula: a(n) = truncate(gcd(n,3)/2)
 

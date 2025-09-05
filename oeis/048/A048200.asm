@@ -1,5 +1,5 @@
 ; A048200: Minimal length pair-exchange / set-rotate sequence to reverse n distinct ordered elements.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,2,4,10,15,23,32,42,55,67,84,98,119
 
 #offset 1

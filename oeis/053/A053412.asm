@@ -1,5 +1,5 @@
 ; A053412: n-th nonzero Fibonacci numbers arising in A053408.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,2,3,5,8,13,21,17711,317811
 ; Formula: a(n) = A000045(A053408(n+1))
 
