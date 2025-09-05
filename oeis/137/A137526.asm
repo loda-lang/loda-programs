@@ -1,5 +1,5 @@
 ; A137526: A triangular sequence of coefficients based on an expansion of a Enneper like Sheffer expansion function: g(t) = t; f(t) = t; p(x,t) = Exp[x*(t)]*(1 - f(t)2).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,1,-2,0,1,0,-6,0,1,0,0,-12,0,1,0,0,0,-20,0,1,0,0,0,0,-30,0,1,0,0,0,0,0,-42,0,1,0,0,0,0,0,0,-56,0,1,0,0,0,0,0,0,0,-72,0,1,0,0,0,0,0,0,0,0,-90,0,1
 
 #offset 1

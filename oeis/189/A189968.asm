@@ -1,5 +1,5 @@
 ; A189968: Decimal expansion of (5+sqrt(85))/6, which has periodic continued fractions [2,2,1,2,2,1,...] and [5/2, 1, 5/2, 1, ...].
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,3,6,9,9,2,4,0,7,6,2,1,5,4,8,1,2,1,8,3,3,3,7,1,2,3,8,0,2,9,3,7,9,8,8,5,9,5,4,1,1,3,4,1,7,4,7,8,7,0,7,7,3,3,4,6,6,7,9,5,8,7,0,0,9,0,7,1,1,1,8,3,7,8,0,0,3,1,2,5
 
 #offset 1

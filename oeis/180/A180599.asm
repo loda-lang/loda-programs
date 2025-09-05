@@ -1,5 +1,5 @@
 ; A180599: Zero followed by infinitely many 9's.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
 ; Formula: a(n) = 9*min(n,1)
 

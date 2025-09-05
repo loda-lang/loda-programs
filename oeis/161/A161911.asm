@@ -1,5 +1,5 @@
 ; A161911: a(n) is the n-th difference between consecutive primes minus the number of divisors of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,1,0,0,0,0,3,-2,4,-2,0,0,2,1,0,0,2,-4,2,0,4,0,1,-2,0,-4,2,6,2,0,-2,6,-2,-3,4,0,2,-2,0,2,0,-2,-4,8,10,-6,-1,-2,2,-4,8,-2,2,-2,-2,2,2,-10,8,10,-2,-5,0,6,4,4,-2,-4,4,-4,4,2,-2,0,4,-4,6,0
 ; Formula: a(n) = -A000005(n)+A013632(A000040(n))
 

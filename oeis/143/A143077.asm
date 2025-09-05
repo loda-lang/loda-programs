@@ -1,5 +1,5 @@
 ; A143077: a(n) is the n-th term of a pseudo-Fibonacci sequence created by applying the function fib(1,...,n) to itself n times.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,4,31,485,27343,3595117,1359551201,1310562076858,3378072688461451,22702751567715567129,401359405793550977993221,18572242457139030215454649193,2252593125544789695036793639095505
 
 #offset 1

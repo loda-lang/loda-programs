@@ -1,5 +1,5 @@
 ; A178547: Composite numbers; start sequence with composite number and end with prime, length of successive sequences are strictly increasing.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 4,6,12,20,30,42,60,80,102,128,158,192,228,270,314,360,410,462,522,588,660,734,810,888,968,1050,1152,1260,1374,1490,1608,1734,1862,1994,2130,2268,2412,2558,2708,2862,3020,3182,3348,3518,3692,3878,4074,4272,4482
 
 #offset 1

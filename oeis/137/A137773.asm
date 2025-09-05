@@ -1,4 +1,4 @@
-; A137773: Triangular sequence: The Fibonacci sequence on the diagonal, 1's at all other places
+; A137773: Triangular sequence: The Fibonacci sequence on the diagonal, 1's at all other places.
 ; Submitted by loader3229
 ; 0,1,1,1,1,1,1,1,1,2,1,1,1,1,3,1,1,1,1,1,5,1,1,1,1,1,1,8,1,1,1,1,1,1,1,13,1,1,1,1,1,1,1,1,21,1,1,1,1,1,1,1,1,1,34,1,1,1,1,1,1,1,1,1,1,55
 

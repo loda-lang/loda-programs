@@ -1,5 +1,5 @@
 ; A181591: a(n) = binomial(bigOmega(n),omega(n)), where omega = A001221 and bigOmega = A001222.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,2,1,1,1,3,2,1,1,3,1,1,1,4,1,3,1,3,1,1,1,6,2,1,3,3,1,1,1,5,1,1,1,6,1,1,1,6,1,1,1,3,3,1,1,10,2,3,1,3,1,6,1,6,1,1,1,4,1,1,3,6,1,1,1,3,1,1,1,10,1,1,3,3,1,1,1,10
 ; Formula: a(n) = binomial(A252736(n)+1,A001221(n))
 

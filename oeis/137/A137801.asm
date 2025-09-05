@@ -1,5 +1,5 @@
 ; A137801: Number of arrangements of 2n couples into n cars such that each car contains 2 men and 2 women but no couple (cars are labeled).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,6,900,748440,1559930400,6928346502000,58160619655538400,845986566719614320000,19957466912796971445888000,724891264860942581350908960000,38873628093261330554954970801600000
 
 #offset 1

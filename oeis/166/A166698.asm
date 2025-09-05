@@ -1,5 +1,5 @@
 ; A166698: Totally multiplicative sequence with a(p) = a(p-1) - 1 for prime p.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,-1,0,-1,0,-1,0,1,0,-1,0,-1,0,1,0,-1,0,-1,0,1,0,-1,0,1,0,-1,0,-1,0,-1,0,1,0,1,0,-1,0,1,0,-1,0,-1,0,-1,0,-1,0,1,0,1,0,-1,0,1,0,1,0,-1,0,-1,0,-1,0,1,0,-1,0,1,0,-1,0,-1,0,-1,0,1,0,-1,0
 ; Formula: a(n) = truncate((-1)^A001222(n))*(n%2)
 

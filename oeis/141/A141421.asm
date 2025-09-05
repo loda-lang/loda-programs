@@ -1,6 +1,7 @@
 ; A141421: First bisection of A091137.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,12,720,60480,3628800,479001600,2615348736000,31384184832000,32011868528640000,51090942171709440000,33720021833328230400000,9306726025998591590400000,50814724101952310083584000000
+; Formula: a(n) = A091137(2*n)
 
 mul $0,2
-seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
+seq $0,91137 ; The Hirzebruch numbers. a(n) = Product_{2 <= p <= n+1, p prime} p^floor(n / (p - 1)).

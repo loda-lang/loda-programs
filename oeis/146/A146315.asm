@@ -1,4 +1,4 @@
-; A146315: Prime differences of primes subtracted from nearest square
+; A146315: Prime differences of primes subtracted from nearest square.
 ; Submitted by Mads Nissen
 ; 2,7,11,13,23,29,31,47,53,59,61,79,83,89,97,127,131,137,139,167,173,179,191,193,223,227,233,239,251,293,307,311,313,317,359,383,389,397,439,443,461,467,479,547,557,563,569,571,647,653,659,673,727,743,761,773
 

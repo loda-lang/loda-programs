@@ -1,4 +1,4 @@
-; A145032: If t(n) is the maximal triangular number not exceeding n, then a(n) is the n-th prime for which a(n)-t(a(n)) is a triangular number
+; A145032: If t(n) is the maximal triangular number not exceeding n, then a(n) is the n-th prime for which a(n)-t(a(n)) is a triangular number.
 ; Submitted by LM
 ; 2,3,7,11,13,29,31,37,61,67,79,97,101,137,139,151,163,181,191,193,211,241,263,277,331,379,409,421,463,499,571,601,631,709,739,751,769,821,823,947,967,991,1063,1087,1091,1109,1117,1129,1231,1303,1327,1381,1399
 

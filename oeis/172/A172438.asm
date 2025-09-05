@@ -1,4 +1,4 @@
-; A172438: Numbers n such that tau(n^2+1) - tau(n^2) = 1 where the function tau(n) is the number of positive divisors of n.
+; A172438: Numbers k such that tau(k^2+1) - tau(k^2) = 1 where the function tau(k) is the number of positive divisors of k.
 ; Submitted by Science United
 ; 1,3,5,11,19,27,29,59,61,71,79,101,125,131,139,181,199,242,243,271,333,349,379,387,409,423,449,461,477,521,569,571,603,631,641,661,739,747,751,772,788,821,881,929,991,1017,1031,1039,1051,1058,1069,1075,1083,1091,1127,1129,1151,1171,1181,1183,1228,1341,1361,1412,1439,1459,1475,1489,1499,1503,1525,1531,1557,1636,1682,1709,1719,1737,1741,1773
 

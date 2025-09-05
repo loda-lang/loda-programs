@@ -1,5 +1,5 @@
 ; A174944: Greatest number k such that sum of the n-th powers of the digits of k is greater than k.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 99,1999,19999,199999,2999999,29999999,299999999,2999999999,29999999999,299999999999,2999999999999,29999999999999
 
 #offset 2

@@ -1,4 +1,4 @@
-; A180055: In binary expansion, number of 1's in 5n is less than in n.
+; A180055: Numbers k such that in binary expansion, the number of 1's in 5*k is less than the number of 1's in k.
 ; Submitted by Karlsson
 ; 13,26,29,52,53,55,58,61,77,103,104,106,109,110,111,116,117,119,122,125,154,157,205,206,207,208,212,213,215,218,219,220,221,222,223,231,232,234,237,238,239,244,245,247,250,253,308,309,311,314,317,333,359,365
 

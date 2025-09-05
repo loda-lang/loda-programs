@@ -1,5 +1,5 @@
-; A162445: A sequence related to the Beta function
-; Submitted by Christian Krause
+; A162445: A sequence related to the Beta function.
+; Submitted by ckrause
 ; 1,8,384,46080,2064384,3715891200,392398110720,1428329123020800,274239191619993600,1678343852714360832000,102043306245033138585600,4714400748520531002654720000,160144566965128191597871104000
 ; Formula: a(n) = truncate(b(2*n)/gcd(3*c(2*n)-17,b(2*n))), b(n) = 2*n*b(n-1), b(2) = 8, b(1) = 2, b(0) = 1, c(n) = 2*b(n-1)+2*c(n-1), c(2) = 8, c(1) = 2, c(0) = 0
 

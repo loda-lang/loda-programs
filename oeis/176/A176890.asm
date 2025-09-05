@@ -1,5 +1,5 @@
 ; A176890: Triangle T(n,k) read by rows. Signed subsequence of A051731.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; -1,1,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0
 
 #offset 1

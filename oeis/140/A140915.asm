@@ -1,5 +1,5 @@
 ; A140915: Number of 6 X 8 matrices with elements in 0..n with each row and each column in nondecreasing order. 6,8,n can be permuted, see formula.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3003,2147145,614083470,90474964580,7997986868872,469699956117392,19702998159210080,623055648083552320,15480536486999030720,312230512837780450368,5247874388850386800416
 
 add $0,6

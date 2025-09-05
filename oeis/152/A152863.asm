@@ -1,4 +1,4 @@
-; A152863: Numbers for which A000695(p_n) are primes, where p_n is the n-th prime
+; A152863: Numbers for which A000695(p_n) are primes, where p_n is the n-th prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,7,9,10,14,15,16,18,23,28,34,35,36,40,41,42,43,50,51,52,55,56,57,59,63,71,75,76,77,80,85,86,87,92,96,103,104,115,118,119,121,122,132,138,143,150,151,158,163,166,175,176,180,181,196,202,204,205,206,208
 

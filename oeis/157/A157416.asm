@@ -1,5 +1,5 @@
 ; A157416: Length of maximal uncrossed cycle of knight moves on n X n board.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,4,8,12,24,32,42,54
 ; Formula: a(n) = 2*truncate(((n-1)*(floor((n-1)/6)+n-2))/3)
 

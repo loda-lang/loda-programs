@@ -1,5 +1,5 @@
 ; A144327: Prime numbers p such that p - 1 is the fourth a-figurate number and nineteenth b-figurate number for some a and b.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 191,1217,1559,1901,2243,2927,4637,6689,8741,9767,12161,12503,13187,14897,15581,15923,16607,17291,19001,20369,21737,22079,23447,23789,24473,25841,26183,27551,27893,30971,33023,35759,37811,38153,39521
 
 #offset 1

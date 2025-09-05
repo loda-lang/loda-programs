@@ -11,7 +11,7 @@ add $2,6
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,83368 ; A Fibbinary system represents a number as a sum of distinct Fibonacci numbers (instead of distinct powers of two). Using representations without adjacent zeros, a(n) = the highest bit-position which changes going from n-1 to n.
+  seq $3,83368 ; a(n) is the position of the highest one in A003754(n).
   pow $3,2
   seq $3,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
   seq $3,278159 ; Run length transform of primorials, A002110.

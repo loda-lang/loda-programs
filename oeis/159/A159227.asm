@@ -1,5 +1,5 @@
 ; A159227: 1/4 the number of n X n arrays of squares of integers with every 2X2 subblock summing to 27.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 7,22,45,103,193,421,777,1681,3097,6697,12345,26713,49273,106681,196857,426361,786937,1704697,3146745,6817273,12584953,27266041,50335737,109058041,201334777,436219897
 
 #offset 2

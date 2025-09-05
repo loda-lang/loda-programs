@@ -1,5 +1,5 @@
 ; A160729: First differences of A160728.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 6,6,12,24,24,24,24,24,48,96,96,48,24,24,48
 
 #offset 1

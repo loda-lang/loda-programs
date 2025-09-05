@@ -1,5 +1,5 @@
 ; A166006: Distance from the origin using the binary expansion of Pi to walk the number line: Start at the origin; subtract one for each '0' digit, and add one for each '1' digit.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,1,0,1,0,-1,0,-1,-2,-3,-4,-3,-2,-1,0,1,2,1,2,3,2,3,2,3,2,3,2,1,0,1,0,-1,-2,-1,-2,-3,-4,-5,-4,-5,-4,-3,-4,-3,-4,-5,-6,-5,-4,-5,-6,-7,-8,-7,-8,-9,-10,-9,-8,-9,-8,-9,-10,-9,-8,-9,-10,-11,-10,-11,-12,-11,-10,-11,-12,-13,-12,-11,-12
 
 #offset 1
