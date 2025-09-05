@@ -1,5 +1,5 @@
 ; A018489: Divisors of 500.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,5,10,20,25,50,100,125,250,500
 
 #offset 1

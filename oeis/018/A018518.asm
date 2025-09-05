@@ -1,5 +1,5 @@
 ; A018518: Divisors of 558.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,6,9,18,31,62,93,186,279,558
 
 #offset 1

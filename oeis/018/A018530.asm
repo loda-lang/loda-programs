@@ -1,5 +1,5 @@
 ; A018530: Divisors of 580.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,5,10,20,29,58,116,145,290,580
 
 #offset 1

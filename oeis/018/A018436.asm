@@ -1,5 +1,5 @@
 ; A018436: Divisors of 405.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3,5,9,15,27,45,81,135,405
 
 #offset 1

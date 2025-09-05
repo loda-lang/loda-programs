@@ -1,5 +1,5 @@
 ; A003035: Maximal number of 3-tree rows in n-tree orchard problem.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,1,1,2,4,6,7,10,12,16,19,22,26
 ; Formula: a(n) = truncate((7*floor(((n-1)^2)/2)-n+36)/22)-1
 

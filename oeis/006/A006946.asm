@@ -1,5 +1,5 @@
 ; A006946: Independence number of de Bruijn graph of order n on two symbols.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,7,13,28,55,114,227,466,931,1891,3781
 
 #offset 1

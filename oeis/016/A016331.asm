@@ -1,5 +1,5 @@
 ; A016331: 132nd cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1
 
 mov $1,-1

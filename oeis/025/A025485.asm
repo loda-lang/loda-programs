@@ -1,5 +1,5 @@
 ; A025485: Number of iterations of function f(k) = ceiling(sqrt(k))^2 - k on n required to force n <= 2.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,1,1,2,2,1,1,1,3,3,2,2,1,1,1,2,2,3,3,2,2,1,1,1,4,2,2,2,3,3,2,2,1,1,1,3,4,4,2,2,2,3,3,2,2,1,1,1,2,3,3,4,4,2,2,2,3,3,2,2,1,1,1,2,2,2,3,3,4,4,2,2,2,3,3,2,2,1
 
 lpb $0

@@ -1,5 +1,5 @@
 ; A018467: Divisors of 460.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,5,10,20,23,46,92,115,230,460
 
 #offset 1

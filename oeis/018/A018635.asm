@@ -1,5 +1,5 @@
 ; A018635: Divisors of 768.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,256,384,768
 
 #offset 1

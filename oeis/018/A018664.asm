@@ -1,5 +1,5 @@
 ; A018664: Divisors of 820.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,5,10,20,41,82,164,205,410,820
 
 #offset 1

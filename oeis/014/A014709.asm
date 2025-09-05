@@ -1,5 +1,5 @@
-; A014709: The regular paper-folding (or dragon curve) sequence.
-; Submitted by Christian Krause
+; A014709: The regular paper-folding (or dragon curve) sequence. Alphabet {1,2}.
+; Submitted by ckrause
 ; 1,1,2,1,1,2,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,2,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,2,2,2,1,1,2,1,1,2,2,2,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,2,2,1
 
 add $0,1

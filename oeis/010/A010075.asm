@@ -1,5 +1,5 @@
 ; A010075: a(n) = sum of base-8 digits of a(n-1) + sum of base-8 digits of a(n-2).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,1,2,3,5,8,6,7,13,13,12,11,9,6,8,7,8,8,2,3,5,8,6,7,13,13,12,11,9,6,8,7,8,8,2,3,5,8,6,7,13,13,12,11,9,6,8,7,8,8,2,3,5,8,6,7,13,13,12,11,9,6,8,7,8,8,2,3,5,8,6,7,13,13,12,11,9,6,8
 ; Formula: a(n) = -7*truncate((a(n-1)-1)/7)-7*truncate((a(n-2)-1)/7)+a(n-1)+a(n-2), a(1) = 1, a(0) = 0
 

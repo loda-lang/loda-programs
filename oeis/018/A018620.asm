@@ -1,5 +1,5 @@
 ; A018620: Divisors of 740.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,5,10,20,37,74,148,185,370,740
 
 #offset 1

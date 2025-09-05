@@ -1,5 +1,5 @@
 ; A004735: Denominator of average distance traveled by n-dimensional fly.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,3,4,15,8,35,64,315,128,693,512,3003,1024,6435,16384,109395,32768,230945,131072,969969,262144,2028117,2097152,16900975,4194304,35102025,16777216,145422675,33554432
 
 #offset 1

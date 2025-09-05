@@ -1,5 +1,5 @@
 ; A022564: Number of 2-connected non-Hamiltonian claw-free graphs on n nodes.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,0,0,0,0,0,4,16,84,408
 
 #offset 1

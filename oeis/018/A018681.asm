@@ -1,5 +1,5 @@
 ; A018681: Divisors of 848.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,8,16,53,106,212,424,848
 ; Formula: a(n) = b(n-1), b(n) = 18*c(n-1)+2*b(n-1)+max(9*c(n-1)-6,0), b(1) = 2, b(0) = 1, c(n) = (9*c(n-1)+b(n-1)+max(9*c(n-1)-6,0))==8, c(1) = 0, c(0) = 0
 

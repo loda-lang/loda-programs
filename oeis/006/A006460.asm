@@ -1,5 +1,5 @@
 ; A006460: Image of n after 3k iterates of '3x+1' map (k large).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,2,4,4,4,2,1,2,1,4,1,1,4,4,2,1,4,4,2,2,1,1,2,4,2,1,1,1,1,2,4,4,2,2,1,1,1,2,4,2,4,4,2,2,2,4,4,1,1,1,4,4,2,2,2,4,2,4,2,2,4,4,1,1,1,1,4,4,4,1,2,2,2,4,2,2,4,4,1
 
 #offset 1

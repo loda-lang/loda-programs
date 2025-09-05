@@ -1,5 +1,5 @@
 ; A014036: Inverse of 27th cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ; Formula: a(n) = (binomial(n+6,n)*binomial(n+11,11)+1)%3-1
 

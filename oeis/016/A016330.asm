@@ -1,5 +1,5 @@
 ; A016330: 130th cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,0,0,0,-1,-1,0,0,0,1,1,0,-1,-1,-1,-1,0,1,1,1,1,0,-1,-1,-1,0,1,1,1,1,0,-1,-1,-1,-1,0,1,1,0,0,0,-1,-1,0,0,0,1,1
 
 mov $1,-1

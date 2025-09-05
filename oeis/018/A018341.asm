@@ -1,5 +1,5 @@
 ; A018341: Divisors of 224.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,7,8,14,16,28,32,56,112,224
 ; Formula: a(n) = A029746(A279080(n-1))
 

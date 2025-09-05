@@ -1,5 +1,5 @@
 ; A018499: Divisors of 522.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,6,9,18,29,58,87,174,261,522
 
 #offset 1
