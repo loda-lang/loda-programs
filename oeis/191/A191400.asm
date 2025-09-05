@@ -1,5 +1,5 @@
 ; A191400: Number of nonroot vertices of degree 2 in the rooted tree having Matula-Goebel number n.
-; Submitted by Science United
+; Submitted by tosi
 ; 0,0,1,0,2,1,0,0,2,2,3,1,1,0,3,0,1,2,0,2,1,3,2,1,4,1,3,0,2,3,4,0,4,1,2,2,1,0,2,2,2,1,0,3,4,2,3,1,0,4,2,1,0,3,5,0,1,2,2,3,2,4,2,0,3,4,1,1,3,2,2,2,1,1,5,0,3,2,3,2
 
 #offset 1
@@ -16,5 +16,6 @@ lpb $2
   sub $0,$3
   add $1,1
   sub $2,$0
+  sub $3,1
 lpe
 mov $0,$4

@@ -1,12 +1,19 @@
 ; A344679: Number of 2-matchings of the n-th centered square grid graph.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 0,0,86,544,1854,4688,9910,18576,31934,51424,78678,115520,163966,226224,304694,401968,520830,664256,835414,1037664,1274558,1549840,1867446,2231504,2646334,3116448,3646550,4241536,4906494,5646704,6467638,7374960,8374526,9472384,10674774
-; Formula: a(n) = 2*truncate(A243645(2*n-1)/2)
+; Formula: a(n) = (n-1)*((n-1)*((n-1)*(8*n-8)-14)+8)+2*((n-1)==0)-2
 
 #offset 1
 
-mul $0,2
 sub $0,1
-seq $0,243645 ; Number of ways two L-tiles can be placed on an n X n square.
-div $0,2
-mul $0,2
+mov $1,$0
+mul $0,8
+mul $0,$1
+sub $0,14
+mul $0,$1
+add $0,8
+mul $0,$1
+sub $0,2
+equ $1,0
+mul $1,2
+add $0,$1

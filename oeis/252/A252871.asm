@@ -1,24 +1,21 @@
-; A252871: Number of nX3 nonnegative integer arrays with upper left 0 and lower right n+3-4 and value increasing by 0 or 1 with every step right or down
-; Submitted by Landjunge
+; A252871: Number of nX3 nonnegative integer arrays with upper left 0 and lower right n+3-4 and value increasing by 0 or 1 with every step right or down.
+; Submitted by loader3229
 ; 1,8,44,153,413,949,1948,3676,6497,10894,17492,27083,40653,59411,84820,118630,162913,220100,293020,384941,499613,641313,814892,1025824,1280257,1585066,1947908,2377279,2882573,3474143,4163364,4962698,5885761,6947392,8163724,9552257,11131933,12923213,14948156,17230500,19795745,22671238,25886260,29472115,33462221,37892203,42799988,48225902,54212769,60806012,68053756,76006933,84719389,94247993,104652748,115996904,128347073,141773346,156349412,172152679,189264397,207769783,227758148,249323026
+; Formula: a(n) = floor(((n-1)*((n-1)*((n-1)*((n-1)*((n-1)*(n+23)+205)+720)+1234)+336)+360)/360)
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  add $2,3
-  sub $3,2
-  add $3,$6
-  add $4,$2
-  add $5,$0
-  add $5,1
-  add $6,$5
-  add $3,$4
-  sub $1,2
-  add $1,$3
-  sub $2,1
-  add $5,3
-  add $5,$4
-lpe
-mov $0,$1
-add $0,2
+sub $0,1
+mov $1,$0
+add $0,24
+mul $0,$1
+add $0,205
+mul $0,$1
+add $0,720
+mul $0,$1
+add $0,1234
+mul $0,$1
+add $0,336
+mul $0,$1
+add $0,360
+div $0,360

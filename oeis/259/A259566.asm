@@ -1,19 +1,19 @@
 ; A259566: Numbers following gaps in the sequence of base-3 numbers that don't contain 0.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,4,7,13,16,22,25,40,43,49,52,67,70,76,79,121,124,130,133,148,151,157,160,202,205,211,214,229,232,238,241,364,367,373,376,391,394,400,403,445,448,454,457,472,475,481,484,607,610,616,619,634,637,643,646,688,691,697,700,715,718,724,727,1093,1096,1102,1105,1120
-; Formula: a(n) = 3*truncate(c(n-1)/2)+1, b(n) = 3*b(n-1), b(1) = 3, b(0) = 1, c(n) = c(n-1)+gcd(c(n-1)+2,b(n-1))+1, c(1) = 2, c(0) = 0
+; Formula: a(n) = 3*truncate(c(n-1)/2)+1, b(n) = 3*b(n-1), b(1) = 3, b(0) = 1, c(n) = c(n-1)+gcd(c(n-1)+1,b(n-1))+1, c(1) = 3, c(0) = 1
 
 #offset 1
 
 mov $1,1
+mov $2,1
 sub $0,1
 lpb $0
   sub $0,1
+  add $2,1
   mov $3,$2
-  add $3,2
   gcd $3,$1
   mul $1,3
-  add $2,1
   add $2,$3
 lpe
 mov $0,$2

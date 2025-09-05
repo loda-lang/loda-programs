@@ -14,8 +14,12 @@ lpb $2
   add $3,1
   seq $3,72437 ; Numbers with no prime factors of form 4*k+3.
   mov $5,$3
-  sub $3,1
-  seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
+  mov $6,$3
+  nrt $6,2
+  pow $6,2
+  div $6,$3
+  mov $3,$6
+  add $3,2
   equ $3,2
   sub $0,$3
   add $1,1

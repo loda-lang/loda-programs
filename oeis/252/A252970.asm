@@ -1,23 +1,20 @@
-; A252970: Number of nX2 nonnegative integer arrays with upper left 0 and lower right n+2-5 and value increasing by 0 or 1 with every step right or down
-; Submitted by X_FISH
+; A252970: Number of nX2 nonnegative integer arrays with upper left 0 and lower right n+2-5 and value increasing by 0 or 1 with every step right or down.
+; Submitted by loader3229
 ; 0,0,1,13,61,192,483,1050,2058,3732,6369,10351,16159,24388,35763,51156,71604,98328,132753,176529,231553,299992,384307,487278,612030,762060,941265,1153971,1404963,1699516,2043427,2443048,2905320,3437808,4048737,4747029,5542341,6445104,7466563,8618818,9914866,11368644,12995073,14810103,16830759,19075188,21562707,24313852,27350428,30695560,34373745,38410905,42834441,47673288,52957971,58720662,64995238,71817340,79224433,87255867,95952939,105358956,115519299,126481488,138295248,151012576,164687809
+; Formula: a(n) = truncate(((n-1)*((n-1)*((n-1)*((n-1)*((n-1)*(n+26)+115)-255)-116)+228))/720)
 
 #offset 1
 
 sub $0,1
-mov $1,-4
-mov $4,$0
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$4
-  bin $2,$0
-  mov $3,$4
-  sub $3,$0
-  add $3,2
-  bin $3,$1
-  mul $3,$2
-  add $1,2
-  add $5,$3
-lpe
-mov $0,$5
+mov $1,$0
+add $0,27
+mul $0,$1
+add $0,115
+mul $0,$1
+sub $0,255
+mul $0,$1
+sub $0,116
+mul $0,$1
+add $0,228
+mul $0,$1
+div $0,720

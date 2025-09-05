@@ -18,7 +18,6 @@ lpb $4
   add $5,2
   seq $5,54265 ; Sum of composite numbers between successive primes.
   add $5,$1
-  add $0,1
   mul $1,$5
   add $3,$1
 lpe

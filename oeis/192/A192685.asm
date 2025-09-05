@@ -1,13 +1,17 @@
 ; A192685: Floor-Sqrt transform of numbers of A051286.
-; Submitted by Bunteck
+; Submitted by Science United
 ; 1,1,1,2,3,5,7,12,19,30,48,76,120,191,304,483,770,1228,1960,3130,5002,7998,12794,20477,32787,52521,84165,134922,216361,347063,556882,893792,1434893,2304125,3700752,5945190,9552745,15352271,24677134,39672584,63790535,102586109,165000118,265424117
 
-seq $0,51286 ; Whitney number of level n of the lattice of the ideals of the fence of order 2n.
-mov $1,$0
-mul $0,4
-lpb $0
-  div $2,$0
-  add $0,$2
-  div $0,2
-  mov $2,$1
+mov $2,$0
+div $2,2
+lpb $2
+  mov $1,$0
+  sub $1,$2
+  bin $1,$2
+  pow $1,2
+  sub $2,1
+  add $3,$1
 lpe
+mov $0,$3
+add $0,1
+nrt $0,2

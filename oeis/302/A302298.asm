@@ -1,18 +1,16 @@
 ; A302298: Wiener index of the graph of nodes (i,j) of the square lattice such that abs(i) + abs(j) <= n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,16,192,1008,3504,9504,21840,44576,83232,145008,239008,376464,570960,838656,1198512,1672512,2285888,3067344,4049280,5268016,6764016,8582112,10771728,13387104,16487520,20137520,24407136,29372112,35114128,41721024,49287024,57912960,67706496
-; Formula: a(n) = 16*truncate(b(n)/24), b(n) = (14*n^2+10)*n^2+b(n-1), b(0) = 0
+; Formula: a(n) = floor((n*(n*(n*(n*(28*n+70)+80)+50)+12))/15)
 
-lpb $0
-  mov $2,$0
-  mul $2,$0
-  mov $3,14
-  mul $3,$2
-  add $3,10
-  mul $3,$2
-  sub $0,1
-  add $1,$3
-lpe
-div $1,24
-mov $0,$1
-mul $0,16
+mov $1,$0
+mul $0,28
+add $0,70
+mul $0,$1
+add $0,80
+mul $0,$1
+add $0,50
+mul $0,$1
+add $0,12
+mul $0,$1
+div $0,15

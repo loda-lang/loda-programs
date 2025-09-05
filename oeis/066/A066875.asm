@@ -1,28 +1,29 @@
 ; A066875: Numbers k such that prime(k+1) + prime(k-1) = 2*prime(k).
-; Submitted by Eric
+; Submitted by Science United
 ; 3,16,37,40,47,55,56,74,103,108,111,119,130,161,165,185,188,195,200,219,240,272,273,292,340,359,388,420,427,465,466,509,521,554,600,606,622,630,634,668,683,684,703,710,711,734,762,792,814,822,823,830,831,883,897,953,963,989,991,1021,1086,1091,1162,1174,1218,1257,1294,1300,1319,1366,1377,1387,1408,1415,1426,1430,1492,1499,1503,1511
 
 #offset 1
 
+mov $6,1
 mov $2,$0
 mul $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $5,0
-  seq $5,40 ; The prime numbers.
+  mov $5,$1
+  seq $5,383948 ; Expansion of 1/sqrt((1-3*x)^3 * (1-7*x)).
   add $5,$6
   seq $5,13632 ; Difference between n and the next prime greater than n.
   add $6,$5
+  add $7,1
   mov $3,$5
   sub $3,$4
   add $4,$3
   gcd $3,$2
   bin $3,$2
   sub $0,$3
-  add $1,3
+  trn $1,$3
   sub $2,$0
 lpe
-mov $0,$1
-div $0,3
+mov $0,$7
 add $0,1

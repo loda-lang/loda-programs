@@ -1,13 +1,24 @@
 ; A308823: Sum of the smallest parts of the partitions of n into 5 parts.
-; Submitted by Cruncher Pete
+; Submitted by Science United
 ; 0,0,0,0,0,1,1,2,3,5,8,11,15,21,28,38,48,62,78,98,122,149,181,219,262,314,370,436,510,595,691,797,916,1050,1198,1365,1545,1747,1968,2212,2480,2771,3089,3437,3814,4227,4669,5151,5670,6232,6838,7487,8185,8936
-; Formula: a(n) = a(n-5)+A001401(max(n-5,0)), a(4) = 0, a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 0
+; Formula: a(n) = a(n-5)+truncate(((n-5)*((n-5)*((n-5)*(n+25)+310)+180*truncate((n-5)/2)-90*n+1770))/2880)+1, a(4) = 0, a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 0
 
 lpb $0
+  mov $3,$0
   sub $0,5
+  add $3,25
+  mul $3,$0
+  add $3,310
+  mov $4,$0
+  mod $4,2
+  mul $4,-90
+  mul $3,$0
+  add $3,$4
+  add $3,1320
   mov $2,$0
-  max $2,0
-  seq $2,1401 ; Number of partitions of n into at most 5 parts.
+  mul $2,$3
+  div $2,2880
+  add $2,1
   add $1,$2
 lpe
 mov $0,$1

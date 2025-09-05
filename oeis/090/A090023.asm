@@ -1,17 +1,19 @@
 ; A090023: Number of distinct lines through the origin in the n-dimensional lattice of side length 7.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 0,1,37,415,3745,31471,257257,2078455,16704865,133935391,1072633177,8585561095,68702163985,549687102511,4397773276297,35183283965335,281470638631105,2251782504544831,18014329402322617,144114912035163175,1152920401607386225
+; Formula: a(n) = 8^n-4^n-3^n-2^n+2
 
-mov $2,5
-lpb $2
-  sub $4,$1
-  add $1,$3
-  mov $3,$2
-  pow $3,$0
-  mul $3,$4
-  sub $2,1
-  mov $4,-2
-lpe
+mov $2,2
+pow $2,$0
+sub $1,$2
+mov $2,3
+pow $2,$0
+sub $1,$2
+mov $2,4
+pow $2,$0
+sub $1,$2
+mov $2,8
+pow $2,$0
+add $1,$2
+add $1,2
 mov $0,$1
-add $0,4
-div $0,2

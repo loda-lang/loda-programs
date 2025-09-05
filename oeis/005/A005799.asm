@@ -25,7 +25,6 @@ lpb $5
   mov $11,$7
   mul $11,8
   nrt $11,2
-  sub $11,1
   div $11,2
   add $11,1
   pow $11,2
@@ -45,11 +44,8 @@ lpb $5
   mov $13,$12
   add $13,1
   bin $13,2
-  mov $14,$12
-  mod $14,2
   sub $10,1
   sub $10,$13
-  sub $10,$14
   add $10,$9
   mov $7,$9
   add $7,1
@@ -62,15 +58,15 @@ lpb $5
   sub $10,$7
   mov $7,$10
   add $7,2
-  mov $16,$7
-  mul $16,8
-  nrt $16,2
-  sub $16,1
-  div $16,2
-  add $16,1
-  pow $16,2
-  sub $16,$7
-  mov $7,$16
+  mov $14,$7
+  mul $14,8
+  nrt $14,2
+  sub $14,1
+  div $14,2
+  add $14,1
+  pow $14,2
+  sub $14,$7
+  mov $7,$14
   seq $7,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
   mul $7,$8
   div $7,$6

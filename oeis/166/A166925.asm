@@ -1,5 +1,5 @@
 ; A166925: Digital root of square of n-th triangular number.
-; Submitted by Christian Krause
+; Submitted by derwinv
 ; 1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9,9,1,9
 ; Formula: a(n) = -10*truncate((gcd(n-1,3)+8)/10)+gcd(n-1,3)+8
 

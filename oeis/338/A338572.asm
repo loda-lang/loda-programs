@@ -8,7 +8,7 @@ mov $10,$0
 lpb $10
   add $11,1
   mov $12,$11
-  seq $12,46643 ; From square root of Riemann zeta function: form Dirichlet series Sum b_n/n^s whose square is zeta function; sequence gives numerator of b_n.
+  seq $12,351219 ; Multiplicative with a(p^e) = Fibonacci(e+1).
   add $$12,1
   sub $10,1
 lpe

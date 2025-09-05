@@ -1,18 +1,15 @@
 ; A327949: Decimal expansion of deuteron g factor.
-; Submitted by BrandyNOW
+; Submitted by Kovas McCann
 ; 8,5,7,4,3,8,2,3
-; Formula: a(n) = -10*truncate((-10*truncate((truncate((binomial(2*n-14,n+2)*(2*n+5))/8)+3)/10)+truncate((binomial(2*n-14,n+2)*(2*n+5))/8)+13)/10)-10*truncate((truncate((binomial(2*n-14,n+2)*(2*n+5))/8)+3)/10)+truncate((binomial(2*n-14,n+2)*(2*n+5))/8)+13
+; Formula: a(n) = -10*truncate((bitxor(max(0,binomial(7*n+34,2)),floor(max(0,binomial(7*n+34,2))/2))-1)/10)+bitxor(max(0,binomial(7*n+34,2)),floor(max(0,binomial(7*n+34,2))/2))-1
 
-add $0,2
-mov $1,$0
-sub $0,9
-mul $0,2
-bin $0,$1
-mul $1,2
-add $1,1
-mul $0,$1
-div $0,8
-add $0,3
-mod $0,10
-add $0,10
+mul $0,7
+add $0,34
+bin $0,2
+max $2,$0
+mov $1,$2
+div $2,2
+bxo $1,$2
+mov $0,$1
+sub $0,1
 mod $0,10

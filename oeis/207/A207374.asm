@@ -1,28 +1,30 @@
 ; A207374: Composites of the form 24n - 1.
-; Submitted by fzs600
+; Submitted by Iceocld
 ; 95,119,143,215,287,335,407,455,527,551,575,623,671,695,767,791,815,935,959,1007,1055,1079,1127,1175,1199,1247,1271,1295,1343,1391,1415,1463,1535,1631,1655,1679,1703,1727,1751,1775,1799,1895,1919,1943,1967,1991,2015
 
 #offset 1
 
 sub $0,1
-mov $1,11
+mov $1,1
 mov $2,$0
-add $2,2
+add $2,7
 pow $2,2
 lpb $2
-  sub $2,1
-  add $1,12
   mov $3,$1
+  mul $3,12
+  seq $3,99774 ; Number of divisors of 2*n-1.
+  div $3,2
   mul $3,2
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
+  sub $3,2
+  min $3,1
+  sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-mul $0,2
-add $0,1
+mul $0,24
+sub $0,1

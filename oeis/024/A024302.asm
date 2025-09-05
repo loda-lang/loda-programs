@@ -1,16 +1,9 @@
 ; A024302: Expansion of sin(sinh(x))*x/2.
 ; Submitted by Science United
 ; 0,1,0,-24,-224,320,76032,2165632,23343104,-1474043904,-127160524800,-5452094095360,-48051108446208,17669269569961984,2144050100688125952,144303119119098839040,2287457902532063395840
+; Formula: a(n) = n*A003722(max(n-1,0))
 
-mov $2,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
-  mov $1,$0
-  sub $0,1
-  seq $0,3722 ; E.g.f. sin(sinh(x)) (odd powers only).
-  mul $1,$0
-lpe
-mov $0,$1
+mov $1,$0
+trn $1,1
+seq $1,3722 ; E.g.f. sin(sinh(x)) (odd powers only).
+mul $0,$1

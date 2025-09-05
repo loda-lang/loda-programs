@@ -1,14 +1,24 @@
 ; A308867: Sum of all the parts in the partitions of n into 6 parts.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,0,0,0,0,0,6,7,16,27,50,77,132,182,280,390,560,748,1044,1349,1800,2310,2992,3749,4776,5875,7332,8937,10948,13166,15960,18972,22688,26763,31654,36995,43416,50320,58520,67431,77800,89052,102144,116186,132396,149895
 
 mov $1,$0
-lpb $0
-  sub $0,6
-  mov $3,$0
-  max $3,0
-  seq $3,1401 ; Number of partitions of n into at most 5 parts.
+lpb $1
+  mov $5,$1
+  sub $1,6
+  add $5,24
+  mul $5,$1
+  add $5,310
+  mov $4,$1
+  mod $4,2
+  mul $4,-90
+  mul $5,$1
+  add $5,$4
+  add $5,1320
+  mov $3,$1
+  mul $3,$5
+  div $3,2880
+  add $3,1
   add $2,$3
 lpe
-mov $0,$2
-mul $0,$1
+mul $0,$2

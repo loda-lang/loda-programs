@@ -1,18 +1,14 @@
 ; A286433: Number of entries in the second last blocks of all set partitions of [n].
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,6,25,98,399,1746,8271,42284,231939,1357128,8427181,55288860,381798629,2765917074,20960284277,165729739590,1364153612299,11665484410094,103448316470723,949739632313480,9013431476894623,88304011710168668,891917738589610553,9277180664459998680,99262493047237512521,1091434095872119978750,12321078809199869304881,142679603877720550382314,1693498029023618664900263,20586717892452752970191274,256129340099817427637851255,3259191785692015213529456260,42390078777280720924777313563
-; Formula: a(n) = 2*truncate(A137341(n)/(n!))-n-1
+; Formula: a(n) = 2*A000110(n)-n-1
 
 #offset 2
 
-sub $0,2
+sub $1,$0
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
 mov $2,$0
-add $0,2
-mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
+add $2,$0
+add $1,$2
 mov $0,$1
-mul $0,2
-sub $0,3
-sub $0,$2
+sub $0,1

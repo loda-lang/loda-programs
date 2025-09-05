@@ -1,17 +1,17 @@
 ; A336337: Total number of records over all length n ternary words (words on alphabet {0,1,2}).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 0,3,12,41,132,413,1272,3881,11772,35573,107232,322721,970212,2914733,8752392,26273561,78853452,236625893,710008752,2130288401,6391389492,19175217053,57527748312,172587439241,517770706332,1553328896213,4660020243072,13980127838081
-; Formula: a(n) = truncate((c(n)-1)/3), b(n) = 2*b(n-1), b(1) = 6, b(0) = 3, c(n) = 3*c(n-1)+b(n-1)-1, c(1) = 11, c(0) = 3
+; Formula: a(n) = truncate((11*3^n-2*(n==0)-6*2^n)/6)
 
-mov $1,3
+mov $2,2
+pow $2,$0
+mul $2,-6
+mov $1,$2
 mov $2,3
-lpb $0
-  sub $0,1
-  mul $2,3
-  sub $2,1
-  add $2,$1
-  mul $1,2
-lpe
-mov $0,$2
-sub $0,1
-div $0,3
+pow $2,$0
+mul $2,11
+add $1,$2
+equ $0,0
+mul $0,-2
+add $0,$1
+div $0,6

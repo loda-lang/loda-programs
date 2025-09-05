@@ -11,8 +11,6 @@ div $2,2
 add $2,1
 pow $2,2
 sub $2,$0
-mov $9,0
-mov $10,0
 mov $1,$2
 add $1,1
 mov $3,$1
@@ -25,11 +23,9 @@ add $4,1
 bin $4,2
 sub $3,$4
 sub $3,1
-mov $11,0
-bin $1,$3
-mov $7,0
 mov $0,$2
 add $0,1
+bin $1,$3
 mov $5,$0
 mul $5,8
 nrt $5,2

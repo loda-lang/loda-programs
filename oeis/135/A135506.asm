@@ -1,14 +1,21 @@
 ; A135506: a(n) = x(n+1)/x(n) - 1 where x(1)=1 and x(k) = x(k-1) + lcm(x(k-1),k). Here x(n) = A135504(n).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 2,1,2,5,1,7,1,1,5,11,1,13,1,5,1,17,1,19,1,1,11,23,1,5,13,1,1,29,1,31,1,11,17,1,1,37,1,13,1,41,1,43,1,1,23,47,1,1,1,17,13,53,1,1,1,1,29,59,1,61,1,1,1,13,1,67,1,23,1,71,1,73,1,1,1,1,13,79,1,1
-; Formula: a(n) = truncate((n+1)/gcd(A135504(n),n+1))
+; Formula: a(n) = c(n)-1, b(n) = b(n-1)*(truncate((n+1)/gcd(n+1,b(n-1)))+1), b(2) = 6, b(1) = 3, b(0) = 1, c(n) = truncate((n+1)/gcd(n+1,b(n-1)))+1, c(2) = 2, c(1) = 3, c(0) = 0
 
 #offset 1
 
-mov $2,$0
-add $2,1
-seq $0,135504 ; a(1)=1; for n>1, a(n) = a(n-1) + lcm(a(n-1),n).
-mov $1,$0
-gcd $1,$2
-mov $0,$2
-div $0,$1
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $4,$2
+  gcd $4,$1
+  mov $3,$2
+  div $3,$4
+  add $3,1
+  mul $1,$3
+lpe
+mov $0,$3
+sub $0,1

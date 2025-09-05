@@ -5,7 +5,6 @@
 #offset 1
 
 mov $2,$0
-mov $3,0
 mov $4,1
 lpb $0
   mul $3,$0
@@ -16,5 +15,4 @@ lpb $0
 lpe
 mov $1,$4
 gcd $1,$2
-mov $0,$4
 mov $0,$1

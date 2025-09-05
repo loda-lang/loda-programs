@@ -1,15 +1,18 @@
 ; A095544: a(n) = 76 written in base n.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1111111111111111111111111111111111111111111111111111111111111111111111111111,1001100,2211,1030,301,204,136,114,84,76
 
 #offset 1
 
+mov $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,76
+neq $1,0
+mul $1,10
+add $1,66
 lpb $1
   mov $4,$1
   mod $4,$2

@@ -19,8 +19,7 @@ mov $4,$0
 mov $5,1
 add $5,$0
 lpb $0
-  sub $0,1
-  add $0,$6
+  mov $0,0
   add $4,1
   gcd $1,$2
   div $1,$4
@@ -29,7 +28,6 @@ lpb $0
   mul $1,$4
   div $1,$2
   sub $1,1
-  add $6,2
 lpe
 mov $0,$1
 add $0,1

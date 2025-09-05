@@ -1,17 +1,20 @@
 ; A095460: a(n) = 34 written in base n.
-; Submitted by GPV67
+; Submitted by estatic707
 ; 1111111111111111111111111111111111,100010,1021,202,114,54,46,42,37,34,31
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,34
+add $1,630
+mul $1,8
+nrt $1,2
+sub $1,2
+div $1,2
 lpb $1
   mov $4,$1
   mod $4,$2

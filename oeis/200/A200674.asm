@@ -1,18 +1,16 @@
 ; A200674: Total eccentricity of Tower of Hanoi graph H_n^{3} (divided by 3).
-; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
+; Submitted by loader3229
 ; 0,1,9,61,385,2365,14353,86605,521089,3130909,18798577,112830829,677103073,4062972733,24378899281,146276584333,877669071937,5266043129437,31596344870065,189578327500717,1137470739845281,6824826763594621,40948967555136529
-; Formula: a(n) = truncate(b(n)/10), b(n) = 9*b(n-1)-18*b(n-2)-20, b(4) = 3850, b(3) = 610, b(2) = 90, b(1) = 10, b(0) = 0
+; Formula: a(n) = truncate(((n==0)+14*6^n-10*3^n)/45)
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mul $3,2
-  mul $2,10
-  sub $2,$1
-  add $2,$3
-  mov $1,$2
-  add $2,2
-  sub $3,$1
-lpe
-mov $0,$1
-div $0,10
+mov $2,3
+pow $2,$0
+mul $2,-10
+mov $1,$2
+mov $2,6
+pow $2,$0
+mul $2,14
+add $1,$2
+equ $0,0
+add $0,$1
+div $0,45

@@ -1,17 +1,18 @@
 ; A095514: a(n) = 61 written in base n.
-; Submitted by GPV67
+; Submitted by Science United
 ; 1111111111111111111111111111111111111111111111111111111111111,111101,2021,331,221,141,115,75,67,61,56,51,49,45,41
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,61
+neq $1,0
+mul $1,5
+add $1,56
 lpb $1
   mov $4,$1
   mod $4,$2

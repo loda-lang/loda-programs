@@ -1,4 +1,4 @@
-; A172105: Numbers n such that n-th partial sum of A167020 - n-th partial sum of A167021 = 0 (or A172103(n) - A172104(n) = 0).
+; A172105: Numbers k such that k-th partial sum of A167020 - k-th partial sum of A167021 = 0 (or A172103(k) - A172104(k) = 0).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,6,7,13,27,37,38
 

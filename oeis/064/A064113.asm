@@ -11,11 +11,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,40 ; The prime numbers.
+  seq $5,383948 ; Expansion of 1/sqrt((1-3*x)^3 * (1-7*x)).
   add $5,$6
   seq $5,13632 ; Difference between n and the next prime greater than n.
   add $6,$5
-  add $7,2
+  add $7,1
   mov $3,$5
   sub $3,$4
   add $4,$3
@@ -26,5 +26,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$7
-div $0,2
-add $0,1

@@ -1,20 +1,16 @@
 ; A171435: Product of odd prime factors < n, with multiplicity.
-; Submitted by Aurum
+; Submitted by Iceocld
 ; 1,1,1,1,1,3,1,1,9,5,1,3,1,7,15,1,1,9,1,5,21,11,1,3,25,13,27,7,1,15,1,1,33,17,35,9,1,19,39,5,1,21,1,11,45,23,1,3,49,25,51,13,1,27,55,7,57,29,1,15,1,31,63,1,65,33,1,17,69,35,1,9,1,37,75,19,77,39,1,5
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mov $3,1
-mov $2,$0
-lpb $2
-  mov $4,$2
-  sub $2,2
-  mul $3,$4
+mov $1,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $3,$2
+  gcd $3,$1
+  dir $1,2
+  mul $1,$2
 lpe
 mov $0,$3
-pow $0,2
-add $1,1
-gcd $1,$0
-mov $0,$1

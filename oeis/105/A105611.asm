@@ -1,21 +1,23 @@
 ; A105611: a(n) is the LCM of the Jacobsthal sequence {J(1),...,J(n)}.
-; Submitted by Skivelitis2
+; Submitted by Tarboxer
 ; 1,1,3,15,165,1155,49665,844305,48125385,1491886935,1018958776605,13246464095865,36176093445807315,4594363867617529005,1520734440181402100655,390828751126620339868335
+; Formula: a(n) = d(n-1), b(n) = b(n-1)==0, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = 2*(b(n-1)==0)+2*c(n-1), c(2) = 4, c(1) = 2, c(0) = 0, d(n) = truncate((c(n-1)+1)/gcd(d(n-1),c(n-1)+1))*d(n-1), d(2) = 3, d(1) = 1, d(0) = 1
 
 #offset 1
 
-mov $1,1
+mov $3,1
+sub $0,1
 lpb $0
-  mul $2,-2
-  add $3,1
-  lpb $3
-    mov $3,0
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    div $1,$4
-  lpe
   sub $0,1
-  mul $1,$2
+  mov $5,$2
+  add $5,1
+  mov $6,$3
+  gcd $6,$5
+  mov $4,$5
+  div $4,$6
+  equ $1,0
+  add $2,$1
+  mul $2,2
+  mul $3,$4
 lpe
-gcd $0,$1
+mov $0,$3

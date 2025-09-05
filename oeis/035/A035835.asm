@@ -1,20 +1,21 @@
 ; A035835: Coordination sequence for lattice D*_100 (with edges defined by l_1 norm = 1).
-; Submitted by Jamie Morken(l1)
+; Submitted by kpmonaghan
 ; 1,200,20000,1333400,66680000,2668000040,88977788000,2544128228600,63669939056000,1416866300977800,28388261970800800,517309471897178200,8645481416595304000,133445129808456135400,1913769409906455052000
+; Formula: a(n) = truncate((b(n)-3)/3)+1, b(n) = truncate((400*d(n-1)-400*c(n-1))/(2*n)), b(3) = 4000200, b(2) = 60000, b(1) = 600, b(0) = 3, c(n) = -c(n-1)+d(n-1), c(3) = 60003, c(2) = 600, c(1) = 3, c(0) = 0, d(n) = d(n-1)+truncate((400*d(n-1)-400*c(n-1))/(2*n)), d(3) = 4060803, d(2) = 60603, d(1) = 603, d(0) = 3
 
-add $0,2
+mov $1,3
+mov $3,3
 lpb $0
-  mov $2,$0
-  max $4,100
-  sub $0,2
-  sub $2,3
-  add $2,$4
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $0,1
-  add $1,1
-  add $5,$3
+  sub $0,1
+  mov $1,$3
+  sub $1,$2
+  mov $2,$1
+  add $4,2
+  mul $1,400
+  div $1,$4
+  add $3,$1
 lpe
-mov $0,$5
+mov $0,$1
+sub $0,3
+div $0,3
+add $0,1

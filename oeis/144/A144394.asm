@@ -1,20 +1,19 @@
 ; A144394: Triangle read by rows (n >= 4, 0 <= k <= n - 4): row n gives the coefficients in the expansion of ((x + 1)^n - (x^n + n*x^(n - 1) + n*x + 1))/x^2.
-; Submitted by loader3229
+; Submitted by ledwards
 ; 6,10,10,15,20,15,21,35,35,21,28,56,70,56,28,36,84,126,126,84,36,45,120,210,252,210,120,45,55,165,330,462,462,330,165,55,66,220,495,792,924,792,495,220,66,78,286,715,1287,1716,1716,1287,715,286,78,91,364,1001,2002,3003,3432,3003,2002,1001,364,91,105,455,1365,3003,5005,6435,6435,5005,3003,1365,455,105,120,560
-; Formula: a(n) = binomial(truncate((sqrtint(8*n-24)+3)/2)+2,-binomial(truncate((sqrtint(8*n-24)+3)/2)-1,2)+n-2)
+; Formula: a(n) = binomial(truncate((sqrtint(8*n-24)+1)/2)+3,-binomial(truncate((sqrtint(8*n-24)+1)/2),2)+n-2)
 
 #offset 4
 
 sub $0,2
-mov $1,$0
+mov $2,$0
 sub $0,1
 mul $0,8
 nrt $0,2
-add $0,3
+add $0,1
 div $0,2
-mov $2,$0
-sub $2,1
-bin $2,2
-sub $1,$2
-add $0,2
-bin $0,$1
+mov $1,$0
+bin $1,2
+sub $2,$1
+add $0,3
+bin $0,$2

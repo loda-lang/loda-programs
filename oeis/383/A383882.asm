@@ -10,7 +10,7 @@ bin $1,2
 add $1,$0
 add $1,$2
 lpb $2
-  sub $2,1
+  mul $2,0
   mov $0,$1
   sub $0,1
   seq $0,354977 ; Triangle read by rows. T(n, k) = Sum_{j=0..n}((-1)^(n-j)*binomial(n, j)*j^(n+k)) / n!.

@@ -1,18 +1,31 @@
 ; A128423: A007376(8n+6).
-; Submitted by sascha.gibson@gmx.de
+; Submitted by lee
 ; 6,1,1,2,2,2,3,3,4,4,4,5,5,6,6,6,7,7,8,8,8,9,9,1,2,0,1,0,1,1,8,2,1,6,2,1,4,3,1,2,4,1,0,5,1,8,6,1,6,6,1,4,7,1,2,8,1,0,9,1,8,0,2,6,0,2,4,1,2,2,2,2,0,3,2,8,4,2,6,4
+; Formula: a(n) = e(8*n+8), b(n) = ((d(n-1)-1)==0)+b(n-1), b(4) = 4, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = -truncate(c(n-1)/truncate(10^(d(n-1)-1)))*truncate(10^(d(n-1)-1))+(((d(n-1)-1)==0)+b(n-1))*((d(n-1)-1)==0)+c(n-1), c(4) = 4, c(3) = 3, c(2) = 2, c(1) = 1, c(0) = 0, d(n) = (logint(((d(n-1)-1)==0)+b(n-1),10)+1)*((d(n-1)-1)==0)+d(n-1)-1, d(4) = 1, d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 1, e(n) = truncate(c(n-2)/truncate(10^(d(n-2)-1))), e(4) = 2, e(3) = 1, e(2) = 0, e(1) = 0, e(0) = 0
 
+mov $8,1
 add $0,1
-mov $2,$0
-mul $2,8
-add $2,4
-mov $1,-1
-add $1,$2
-lpb $2
-  pow $2,0
-  mov $0,$1
-  sub $0,$2
-  trn $0,5
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
-  min $1,3
+mul $0,8
+lpb $0
+  sub $0,1
+  sub $8,1
+  mov $9,$1
+  mov $7,10
+  pow $7,$8
+  mov $1,$3
+  div $1,$7
+  mov $6,$1
+  mul $6,$7
+  mov $4,$8
+  equ $4,0
+  add $2,$4
+  mov $5,$2
+  log $5,10
+  add $5,1
+  mul $5,$4
+  mul $4,$2
+  add $8,$5
+  sub $3,$6
+  add $3,$4
 lpe
+mov $0,$9

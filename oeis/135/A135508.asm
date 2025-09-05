@@ -1,14 +1,21 @@
 ; A135508: a(n) = x(n+1)/x(n) - 2 where x(1)=1 and x(n) = 2*x(n-1) + lcm(x(n-1),n).
-; Submitted by Christian Krause
+; Submitted by Egon Olsen
 ; 2,3,1,1,1,7,2,1,1,11,1,1,7,1,1,17,1,1,1,7,11,23,1,1,1,1,7,29,1,1,2,11,17,7,1,37,1,1,1,41,7,1,11,1,23,47,1,1,1,17,1,53,1,1,1,1,29,59,1,1,1,1,1,1,1,67,17,1,1,71,1,1,37,1,1,1,1,79,1,1
-; Formula: a(n) = truncate((n+1)/gcd(A135507(n),n+1))
+; Formula: a(n) = c(n)-2, b(n) = b(n-1)*(truncate((n+1)/gcd(n+1,b(n-1)))+2), b(2) = 20, b(1) = 4, b(0) = 1, c(n) = truncate((n+1)/gcd(n+1,b(n-1)))+2, c(2) = 5, c(1) = 4, c(0) = 0
 
 #offset 1
 
-mov $2,$0
-add $2,1
-seq $0,135507 ; a(1) = 1; for n > 1, a(n) = 2*a(n-1) + lcm(a(n-1),n).
-mov $1,$0
-gcd $1,$2
-mov $0,$2
-div $0,$1
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $4,$2
+  gcd $4,$1
+  mov $3,$2
+  div $3,$4
+  add $3,2
+  mul $1,$3
+lpe
+mov $0,$3
+sub $0,2

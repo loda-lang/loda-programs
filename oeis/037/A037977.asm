@@ -4,23 +4,16 @@
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,2
-pow $2,2
+mov $1,1
+mov $2,$0
+add $2,163
 lpb $2
-  mov $5,6
   mov $3,$1
-  add $3,1
   seq $3,43278 ; Maximal run length in base 4 representation of n.
-  lpb $3
-    mov $6,$3
-    equ $6,2
-    div $3,10
-    add $5,$6
-  lpe
-  sub $5,6
-  sub $0,$5
+  add $3,1
+  equ $3,3
+  sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
@@ -29,4 +22,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1

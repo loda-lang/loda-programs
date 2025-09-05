@@ -1,13 +1,14 @@
 ; A188064: Partial sums of wt(n)! where wt(n) is the Hamming weight of n (A000120).
-; Submitted by DoctorNow
+; Submitted by Coleslaw
 ; 1,2,3,5,6,8,10,16,17,19,21,27,29,35,41,65,66,68,70,76,78,84,90,114,116,122,128,152,158,182,206,326,327,329,331,337,339,345,351,375,377,383,389,413,419,443,467,587,589,595,601,625,631,655,679,799,805,829,853,973,997,1117,1237,1957,1958,1960,1962,1968,1970,1976,1982,2006,2008,2014,2020,2044,2050,2074,2098,2218
-; Formula: a(n) = a(n-1)+A093659(n), a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,93659 ; First column of lower triangular matrix A093658; factorial of the number of 1's in binary expansion of n.
+  dgs $2,2
+  mov $3,1
+  fac $3,$2
   sub $0,1
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

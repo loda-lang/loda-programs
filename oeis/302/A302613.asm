@@ -1,19 +1,16 @@
 ; A302613: Total domination number of the n-folded cube graph.
-; Submitted by loader3229
+; Submitted by Science United
 ; 2,2,2,4,8,12,16,32,64
-; Formula: a(n) = 2*floor((4*binomial(n-2,2)+3*max(binomial(n-2,4),24)+11)/8)-18
+; Formula: a(n) = 2*max(2^max(n-5,0),2*n-8)
 
 #offset 2
 
-sub $0,2
+sub $0,4
 mov $1,$0
-bin $0,4
-max $0,24
-mul $0,3
-bin $1,2
-mul $1,4
-add $0,$1
-add $0,11
-div $0,8
+trn $1,1
 mul $0,2
-sub $0,18
+mov $2,2
+pow $2,$1
+max $2,$0
+mov $0,$2
+mul $0,2

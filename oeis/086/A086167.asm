@@ -1,28 +1,31 @@
 ; A086167: a(n) = sum of the first n lower twin primes.
 ; Submitted by Science United
 ; 3,8,19,36,65,106,165,236,337,444,581,730,909,1100,1297,1524,1763,2032,2313,2624,2971,3390,3821,4282,4803,5372,5971,6588,7229,7888,8697,9518,10345,11202,12083,13102,14133,15182,16243,17334,18485,19714,20991,22280,23581,24900,26327,27778,29259,30746,32353,33972,35639,37336,39057,40844,42715,44592,46523,48472,50469,52496,54577,56664,58775,60904,63045,65282,67549,69858,72197,74578,77127,79718,82375,85062,87773,90502,93291,96092
+; Formula: a(n) = truncate(b(n-1)/2)+3, b(n) = 12*A002822(truncate((2*n-1)/2)+1)+4*gcd(2*n-2,2)+b(n-1)-10, b(0) = 0
 
 #offset 1
 
-mov $2,$0
-add $2,5
-pow $2,3
-mov $3,1
-mov $1,1
-lpb $2
-  mov $5,$3
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,$0
-  add $3,2
-  mul $5,$3
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$5
+sub $0,1
+lpb $0
   mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-  sub $3,$4
+  mul $4,2
+  sub $4,1
+  mov $3,$4
+  sub $4,1
+  gcd $4,2
+  div $3,2
+  add $3,1
+  seq $3,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $3,1
+  mul $3,3
+  add $3,$4
+  mov $2,$3
+  mul $2,2
+  add $2,1
+  mul $2,2
+  sub $0,1
+  add $1,$2
 lpe
 mov $0,$1
-sub $0,1
+div $0,2
+add $0,3
