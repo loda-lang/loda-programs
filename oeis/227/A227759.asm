@@ -1,4 +1,4 @@
-; A227759: Numbers n such that A227758(n) = sigma(sigma(n)) - sigma(n) - n < 0, where sigma(n) = A000203(n) = sum of the divisors of n
+; A227759: Numbers n such that A227758(n) = sigma(sigma(n)) - sigma(n) - n < 0, where sigma(n) = A000203(n) = sum of the divisors of n.
 ; Submitted by Science United
 ; 1,2,4,9,13,16,18,25,36,37,43,49,50,61,64,67,73,81,97,98,100,109,121,144,151,157,163,169,181,193,211,225,229,241,242,256,277,283,289,313,324,331,337,338,361,373,397,400,409,421,433,441,457,484,487,523,529
 

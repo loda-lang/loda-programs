@@ -1,5 +1,5 @@
-; A230610: Number of nX4 0..2 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 3, and upper left element zero
-; Submitted by Christian Krause
+; A230610: Number of nX4 0..2 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 3, and upper left element zero.
+; Submitted by ckrause
 ; 0,2,30,348,3956,44916,509978,5790456,65747178,746521190,8476319172,96243740012,1092792451740,12408031373682,140886078048560,1599680593324818,18163455439700846,206235616589902956,2341687114076439588,26588513812026547076,301897321159051263498,3427870890692145662120,38921507478577665679482,441931389107568341338422,5017877398146503693693780,56975119223090095307034012,646919793553424393883012140,7345403133822652532133408738,83402838707416823784178026336,946991387365197882719762797346
 ; Formula: a(n) = 2*b(max(2*n-2,0)), b(n) = b(n-1)+d(n-1), b(4) = 15, b(3) = 4, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = d(n-1), c(4) = 11, c(3) = 3, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = 2*b(n-1)+2*c(n-1)+2*d(n-1)-f(n-1)+e(n-1)+1, d(4) = 36, d(3) = 11, d(2) = 3, d(1) = 1, d(0) = 0, e(n) = 2*b(n-1)+2*d(n-1)+c(n-1)+1, e(4) = 34, e(3) = 10, e(2) = 3, e(1) = 1, e(0) = 0, f(n) = 2*b(n-1)+2*c(n-1)+2*d(n-1)-f(n-1)+e(n-1)+1, f(4) = 36, f(3) = 11, f(2) = 3, f(1) = 1, f(0) = 0
 

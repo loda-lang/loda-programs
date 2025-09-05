@@ -1,5 +1,5 @@
 ; A244346: Decimal expansion of 56/13, the Korn constant for the sphere.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 4,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3
 ; Formula: a(n) = floor((56*10^(n-1))/13)%10
 

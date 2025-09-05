@@ -5,4 +5,4 @@
 lpb $0
   dif $0,2
 lpe
-cmp $0,1
+equ $0,1

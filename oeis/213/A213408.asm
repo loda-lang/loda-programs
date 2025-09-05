@@ -1,5 +1,5 @@
 ; A213408: Sequence A002654 with the zero terms omitted.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,2,1,1,2,2,1,2,1,2,3,2,2,1,2,1,2,2,2,2,1,3,2,2,2,2,1,4,2,1,2,2,2,1,2,4,2,2,2,1,3,2,2,2,2,2,2,2,1,2,4,1,4,2,2,1,4,2,2,2,2,2,2,1,2,3,4,2,2,2,2,4,2,2,1,2,3,2
 ; Formula: a(n) = truncate(A004018(A001481(n+1))/4)
 

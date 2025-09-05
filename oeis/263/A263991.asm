@@ -1,5 +1,5 @@
 ; A263991: a(n) is the number of uniform consecutive subintervals of the unit interval each of size 2^(-ceiling(log_2(n))) that are completely covered by one of the n uniform consecutive subintervals (of size 1/n each) of the unit interval.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,2,4,4,4,2,8,8,8,6,8,4,4,2,16,16,16,14,16,12,12,10,16,8,8,6,8,4,4,2,32,32,32,30,32,28,28,26,32,24,24,22,24,20,20,18,32,16,16,14,16,12,12,10,16,8,8,6,8,4,4,2,64,64,64,62,64,60,60,58,64,56,56,54,56,52,52,50,64
 
 #offset 1

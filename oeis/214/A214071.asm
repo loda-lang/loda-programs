@@ -1,5 +1,5 @@
 ; A214071: Least m>0 such that 2^n-m and n-m are relatively prime.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,3,1,1,1,1,1,3,1,1,1,1,2,5,1,1,1,1,1,3,1,1,1,1,1,3,1,1,1,1,1,3,1,3,1,1,1,3,1,1,1,1,1,3,1,1,1,1,1,3,1,1,1,3,3,5,1,1,1,1,1,3,1,1,1,1,1,3,1,1,1,1,1,3,1,3,1,1
 
 #offset 1

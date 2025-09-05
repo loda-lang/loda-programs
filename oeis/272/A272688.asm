@@ -1,5 +1,5 @@
 ; A272688: The antibracket constants {x_n}^n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,6,72,1120,21600,498960,13453440,415134720,14435366400
 
 #offset 1

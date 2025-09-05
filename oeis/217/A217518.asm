@@ -1,5 +1,5 @@
 ; A217518: Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123456)*.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13,7,7,12,7,6,13
 ; Formula: a(n) = floor(truncate(24^(6*n-6))/741)%10+5
 

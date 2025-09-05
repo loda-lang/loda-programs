@@ -1,4 +1,4 @@
-; A277868: Number of connected, labeled, unrooted 3-leaf power graphs on n vertices
+; A277868: Number of connected, labeled, unrooted 3-leaf power graphs on n vertices.
 ; Submitted by Science United
 ; 1,1,4,35,361,4482,68027,1238841,26416474,646139853,17837851021,548713086352,18612963869397,690271321306101,27785827303475196
 

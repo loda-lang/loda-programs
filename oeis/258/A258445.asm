@@ -1,5 +1,5 @@
 ; A258445: Irregular triangle related to Pascal's triangle.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,1,1,1,2,1,1,1,1,3,3,3,1,1,1,1,4,4,6,4,4,1,1,1,1,5,5,10,10,10,5,5,1,1,1,1,6,6,15,15,20,15,15,6,6,1,1,1,1,7,7,21,21,35,35,35,21,21,7,7,1,1,1,1,8,8,28,28,56,56,70,56,56,28,28,8,8,1
 
 #offset 1

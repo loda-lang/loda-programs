@@ -1,5 +1,5 @@
 ; A212508: Number of (w,x,y,z) with all terms in {1,...,n} and w<2x and y<3z.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,12,56,168,418,837,1554,2640,4209,6375,9373,13176,18161,24402,32110,41472,52948,66339,82384,101100,122801,147741,176665,209088,246225,287976,334764,386904,445486,509625,581126,659712,745921
 ; Formula: a(n) = truncate(((binomial(-n,2)+truncate((n^2-n+2)/3))*(n^2+floor((n^2+1)/2)))/2)
 

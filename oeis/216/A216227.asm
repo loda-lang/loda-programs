@@ -1,5 +1,5 @@
 ; A216227: Prime numbers that do not appear in the Euclid-Mullin sequence A000946.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 5,11,13,17,19,23,29,31,37,41,47,53,59,61,67,71,73
 
 #offset 1

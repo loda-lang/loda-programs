@@ -1,6 +1,7 @@
 ; A272002: Decimal expansion of Cp(1), the molar specific heat of an atomic ideal gas at constant pressure.
 ; Submitted by pututu
-; 2,0,7,8,6,1,4,9,5
+; 2,0,7,8,6,1,5,6,5,4,5,3,8,3,1
+; Formula: a(n) = -10*truncate((-10*truncate(truncate(((((n-2)==0)+17)*(n+16)^(((n-2)==0)+17))/(((n-2)==0)-74))/10)+truncate(((((n-2)==0)+17)*(n+16)^(((n-2)==0)+17))/(((n-2)==0)-74))+10)/10)-10*truncate(truncate(((((n-2)==0)+17)*(n+16)^(((n-2)==0)+17))/(((n-2)==0)-74))/10)+truncate(((((n-2)==0)+17)*(n+16)^(((n-2)==0)+17))/(((n-2)==0)-74))+10
 
 #offset 2
 

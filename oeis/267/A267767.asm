@@ -11,7 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,7093 ; Numbers in base 7.
   trn $3,1
-  seq $3,317055 ; Triangle read by rows: T(0,0) = 1; T(n,k) = 10 T(n-1,k) + T(n-2,k-1) for k = 0..floor(n/2); T(n,k)=0 for n or k < 0.
+  seq $3,317055 ; Triangle read by rows: T(0,0) = 1; T(n,k) = 10*T(n-1,k) + T(n-2,k-1) for k = 0..floor(n/2); T(n,k)=0 for n or k < 0.
   equ $3,1
   sub $0,$3
   add $1,1

@@ -1,5 +1,5 @@
 ; A255176: a(n) = H_n(2,2) where H_n is the n-th hyperoperator.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
 ; Formula: a(n) = min(n,1)+3
 

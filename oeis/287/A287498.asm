@@ -1,5 +1,5 @@
 ; A287498: Number of maximal independent vertex sets (and minimal vertex covers) in the n-web graph.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,4,9,12,30,55,105,212,405,794,1551,3015,5889,11477,22374,43636,85068,165871,323418,630582,1229517,2397289,4674198,9113711,17769780,34647305,67554891,131717661,256821477,500747300
 
 #offset 1

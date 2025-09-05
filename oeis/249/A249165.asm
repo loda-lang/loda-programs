@@ -1,5 +1,5 @@
 ; A249165: Number of cds-sortable permutations in S_n. That is, number of permutations for which application of some sequence of context directed swaps ("cds" operations) terminates in the identity.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,4,13,72,390,2880,21672,201600,1935360,21772800,253756800,3353011200,45924278400
 
 #offset 1

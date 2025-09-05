@@ -1,5 +1,5 @@
 ; A230595: Number of ways to write n as n = x*y, where x and y are primes, 1 <= x <= n, 1 <= y <= n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,1,0,2,0,0,1,2,0,0,0,2,2,0,0,0,0,0,2,2,0,0,1,2,0,0,0,0,0,0,2,2,2,0,0,2,2,0,0,0,0,0,0,2,0,0,1,0,2,0,0,0,2,0,2,2,0,0,0,2,0,0,2,0,0,0,2,0,0,0,0,2,0,0,2,0,0,0
 ; Formula: a(n) = A001221(n)*(A252736(n)==1)
 

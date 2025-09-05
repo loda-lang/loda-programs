@@ -1,5 +1,5 @@
 ; A282044: Reduced Kronecker coefficients for the case a=2, b=3, i=4.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,0,1,2,5,9,16,24,37,51,71,93
 
 mov $8,$0

@@ -1,4 +1,4 @@
-; A284323: Numbers n such that product of digits of n is a power of 4.
+; A284323: Numbers k such that product of digits of k is a power of 4.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,4,11,14,22,28,41,44,82,88,111,114,122,128,141,144,182,188,212,218,221,224,242,248,281,284,411,414,422,428,441,444,482,488,812,818,821,824,842,848,881,884,1111,1114,1122,1128,1141,1144,1182,1188,1212,1218
 

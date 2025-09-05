@@ -1,4 +1,4 @@
-; A193879: Different leap years in the Gregorian and the revised Julian calendars
+; A193879: Different leap years in the Gregorian and the revised Julian calendars.
 ; Submitted by Kotenok2000
 ; 0,2,4,6,8,11,12,15,16,28,29,32,33,36,38,40,42,44,47,48,51,52,64,65,68,69,72,74,76,78,80,83,84,87,88,100,101,104,105,108,110,112,114,116,119,120,123,124,136,137,140,141,144,146,148,150,152,155,156,159,160
 

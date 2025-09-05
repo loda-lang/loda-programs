@@ -1,5 +1,5 @@
 ; A270003: Least prime p such that n = p + q - r for some primes q and r with q > p.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 3,2,2,2,2,2,2,2,3,2,2,2,2,2,3,2,2,2,2,2,3,2,2,2,3,2,3,2,2,2,2,2,3,2,3,2,2,2,3,2,2,2,2,2,3,2,2,2,3,2,3,2,2,2,3,2,3,2,2,2,2,2,3,2,3,2,2,2,3,2,2,2,2,2,3,2,3,2,2,2
 
 #offset 1

@@ -1,5 +1,5 @@
 ; A285686: Characteristic sequence of the Beatty sequence, A022840, of sqrt(6).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1
 
 #offset 1

@@ -1,5 +1,5 @@
 ; A205565: Number of ways of writing n = u + v with u <= v, and u,v having in ternary representation no 3.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,2,4,2,4,8,4,2,4,2,1,2,1,2,4,2,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,2,4,2,1,2,1,1,1,1,1,2,1,1,1
 
 lpb $0

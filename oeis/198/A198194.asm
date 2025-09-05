@@ -1,5 +1,5 @@
 ; A198194: Greatest number k such that p(k) <= n, p(k) being the number of unrestricted partitions of k.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,3,3,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12
 
 #offset 1

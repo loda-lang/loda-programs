@@ -1,5 +1,5 @@
 ; A194650: Number of ways to place 2 nonattacking kings on an n X n cylindrical chessboard.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,9,68,215,504,1001,1784,2943,4580,6809,9756,13559,18368,24345,31664,40511,51084,63593,78260,95319,115016,137609,163368,192575,225524,262521,303884,349943,401040,457529,519776,588159,663068,744905,834084,931031,1036184
 ; Formula: a(n) = binomial(max((n-1)^2-2,0)+1,2)+max(2*max((n-1)^2-2,0)*(n-1)-2,0)
 

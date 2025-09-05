@@ -1,5 +1,5 @@
 ; A253513: The characteristic function of the multiples of eight.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
 ; Formula: a(n) = truncate(gcd(n,8)/6)
 
