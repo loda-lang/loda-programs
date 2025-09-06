@@ -1,20 +1,19 @@
 ; A051417: Quotients of consecutive values of lcm {1, 3, 5 ..., 2n-1} or A025547(n+1)/A025547(n).
-; Submitted by Ralfy
+; Submitted by DukeBox
 ; 3,5,7,3,11,13,1,17,19,1,23,5,3,29,31,1,1,37,1,41,43,1,47,7,1,53,1,1,59,61,1,1,67,1,71,73,1,1,79,3,83,1,1,89,1,1,1,97,1,101,103,1,107,109,1,113,1,1,1,11,1,5,127,1,131,1,1,137,139,1,1,1,1,149,151,1,1,157,1,1
-; Formula: a(n) = c(n+1), b(n) = truncate((2*n-1)/gcd(b(n-1),2*n-1))*b(n-1), b(2) = 3, b(1) = 1, b(0) = 1, c(n) = truncate((2*n-1)/gcd(b(n-1),2*n-1)), c(2) = 3, c(1) = 1, c(0) = 0
+; Formula: a(n) = truncate((2*n+1)/gcd(2*n+1,b(n-1))), a(2) = 5, a(1) = 3, a(0) = 0, b(n) = truncate((2*n+1)/gcd(2*n+1,b(n-1)))*b(n-1), b(2) = 15, b(1) = 3, b(0) = 1
 
 #offset 1
 
-mov $3,1
-add $0,1
+mov $1,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $2,1
-  mov $1,$3
-  gcd $1,$2
+  add $2,2
   mov $4,$2
-  div $4,$1
-  add $2,1
-  mul $3,$4
+  gcd $4,$1
+  mov $3,$2
+  div $3,$4
+  mul $1,$3
 lpe
-mov $0,$4
+mov $0,$3

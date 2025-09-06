@@ -1,7 +1,7 @@
 ; A051299: a(n) = a(n-1) + rotate( a(n-1), 1 digit left), a(1) = 1.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1,2,4,8,16,77,154,695,1651,8162,9790,17699,94690,141599,557590,1133495,2468446,7152908,8681995,15501953,70521484,75736331,133099648,464096129,1105057423,2155631654,3711948196,10831430159,19145731750,110603049251,216633541762
-; Formula: a(n) = -10*truncate(a(n-1)/truncate(10^logint(a(n-1),10)))*truncate(10^logint(a(n-1),10))+11*a(n-1)+a(n-2)+b(n-1)+b(n-2)+truncate(a(n-1)/truncate(10^logint(a(n-1),10))), a(2) = 2, a(1) = 1, a(0) = 1, b(n) = -a(n-1)-b(n-1), b(2) = -1, b(1) = 0, b(0) = -1
+; Formula: a(n) = -10*truncate(a(n-1)/truncate(10^logint(a(n-1),10)))*truncate(10^logint(a(n-1),10))+11*a(n-1)+truncate(a(n-1)/truncate(10^logint(a(n-1),10))), a(1) = 1, a(0) = 1
 
 #offset 1
 
@@ -10,20 +10,17 @@ mov $2,-1
 lpb $0
   sub $0,1
   add $2,$1
-  mov $3,$2
-  mov $7,$1
-  log $7,10
-  mov $6,10
-  pow $6,$7
-  mul $2,-1
+  mov $3,$1
+  log $3,10
+  mov $4,10
+  pow $4,$3
   mov $5,$1
-  div $5,$6
-  mul $6,$5
-  sub $1,$6
+  div $5,$4
+  mul $4,$5
+  sub $1,$4
   mul $1,10
   add $1,$5
-  add $1,$3
-  add $1,$4
-  mov $4,$3
+  add $1,$2
+  mov $2,0
 lpe
 mov $0,$1

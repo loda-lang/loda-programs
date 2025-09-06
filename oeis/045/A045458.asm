@@ -1,17 +1,18 @@
 ; A045458: Primes congruent to 5 mod 7.
-; Submitted by Science United
+; Submitted by Just Jake
 ; 5,19,47,61,89,103,131,173,229,257,271,313,383,397,439,467,509,523,593,607,677,691,719,733,761,859,887,929,971,1013,1069,1097,1153,1181,1223,1237,1279,1307,1321,1433,1447,1489,1531,1559,1601,1657,1699,1741,1783,1811,1867,1951,1979,1993,2063,2161,2203,2273,2287,2357,2371,2399,2441,2539,2609,2693,2707,2749,2777,2791,2819,2833,2861,2903,2917,3001,3169,3253,3323,3407
 
 #offset 1
 
-mov $2,5
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,5
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $2,14
   sub $0,$1
-  add $2,7
   sub $3,$0
 lpe
 mov $0,$2
+add $0,5

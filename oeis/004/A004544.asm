@@ -1,38 +1,23 @@
 ; A004544: Expansion of sqrt(2) in base 7.
-; Submitted by Science United
+; Submitted by shiva
 ; 1,2,6,2,0,3,4,5,4,5,2,1,1,2,3,2,6,1,0,6,1,3,4,2,1,0,1,2,0,1,6,1,6,6,2,4,0,5,0,4,0,0,4,2,5,1,1,2,6,0,5,2,1,6,0,2,2,6,6,1,5,6,3,5,2,2,0,2,6,0,5,6,5,1,5,5,2,2,4,3
+; Formula: a(n) = -7*truncate(truncate(b(7*n)/truncate(c(7*n)/(7^(n-1))))/7)+truncate(b(7*n)/truncate(c(7*n)/(7^(n-1)))), b(n) = 2*b(n-2)+2*c(n-2), b(3) = 2, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 4*c(n-2)-2*c(n-4), c(6) = 14, c(5) = 4, c(4) = 4, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0
 
 #offset 1
 
-sub $0,1
 mov $1,1
-mov $2,1
-mov $7,10
 mov $3,$0
-add $3,2
+mul $3,7
 lpb $3
-  sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,2
-  mov $5,$1
-  pow $5,2
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  add $4,$5
-  mov $8,$4
-  div $8,$7
-  max $8,1
-  mov $1,$4
-  div $1,$8
-  mov $2,$6
-  div $2,$8
-  mul $7,102
+  sub $3,2
+  add $1,$2
+  add $2,$1
+  mul $1,2
 lpe
-mov $3,7
-pow $3,$0
-div $2,$3
+sub $0,1
+mov $4,7
+pow $4,$0
+div $2,$4
 div $1,$2
-mod $1,7
 mov $0,$1
+mod $0,7

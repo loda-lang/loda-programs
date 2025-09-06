@@ -1,22 +1,17 @@
 ; A007465: Exponential-convolution of triangular numbers with themselves.
-; Submitted by Jamie Morken(w2)
+; Submitted by loader3229
 ; 1,6,30,128,486,1692,5512,17040,50496,144512,401664,1089024,2890240,7529472,19298304,48754688,121602048,299827200,731643904,1768685568,4239261696,10081796096,23805296640,55839817728,130187001856,301813727232,696036360192,1597358735360
+; Formula: a(n) = floor(((n*(n*(n*(n+10)+43)+74)+64)*2^n)/64)
 
-mov $4,2
-add $0,2
-lpb $0
-  mov $2,$0
-  sub $0,2
-  sub $2,1
-  add $2,$4
-  add $2,$4
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  pow $3,2
-  mul $3,$2
-  add $1,1
-  add $4,1
-  add $5,$3
-lpe
-mov $0,$5
+mov $1,$0
+mov $2,2
+pow $2,$0
+add $0,10
+mul $0,$1
+add $0,43
+mul $0,$1
+add $0,74
+mul $0,$1
+add $0,64
+mul $0,$2
+div $0,64

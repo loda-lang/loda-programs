@@ -1,13 +1,21 @@
 ; A010025: Crystal ball sequence for squashed {D_5}^* lattice, perhaps the smallest example of a "non-superficial" lattice.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,13,85,377,1239,3291,7503,15275,28517,49729,82081,129493,196715,289407,414219,578871,792233,1064405,1406797,1832209,2354911,2990723,3757095,4673187,5759949,7040201,8538713,10282285,12299827,14622439,17283491,20318703,23766225,27666717,32063429,37002281,42531943,48703915,55572607,63195419,71632821,80948433,91209105,102484997,114849659,128380111,143156923,159264295,176790137,195826149,216467901,238814913,262970735,289043027,317143639,347388691,379898653,414798425,452217417,492289629,535153731
-; Formula: a(n) = a(n-1)+A010024(n), a(0) = 1
+; Formula: a(n) = b(n)+1, b(n) = b(n-1)+truncate((n*(n*(n*(10*n-5)+20)+5)+6)/3), b(0) = 0
 
-mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,10024 ; Coordination sequence for squashed {D_5}* lattice, perhaps the smallest example of a "non-superficial" lattice.
+  mul $2,10
+  sub $2,5
+  mul $2,$0
+  add $2,20
+  mul $2,$0
+  add $2,5
+  mul $2,$0
+  add $2,6
+  div $2,3
   sub $0,1
   add $1,$2
 lpe
 mov $0,$1
+add $0,1

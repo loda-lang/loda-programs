@@ -1,18 +1,16 @@
 ; A126900: Coordination sequence for 6-dimensional cyclotomic lattice Z[zeta_18].
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,18,144,702,2448,6786,15984,33390,63648,112914,189072,301950,463536,688194,992880,1397358,1924416,2600082,3453840,4518846,5832144,7434882,9372528,11695086,14457312,17718930,21544848,26005374,31176432,37139778,43983216
-; Formula: a(n) = ((3*floor((n*((n^2+2)^2+n^2))/10))==0)+18*floor((n*((n^2+2)^2+n^2))/10)
+; Formula: a(n) = (n==0)+floor((n*((9*n^2+45)*n^2+36))/5)
 
-mov $2,$0
-pow $2,2
-mov $3,$2
-add $2,2
-pow $2,2
-add $2,$3
-mul $0,$2
-div $0,10
-mul $0,3
 mov $1,$0
+mul $0,9
+mul $0,$1
+add $0,45
+mul $0,$1
+mul $0,$1
+add $0,36
+mul $0,$1
+div $0,5
 equ $1,0
-mul $0,6
 add $0,$1

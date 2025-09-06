@@ -1,23 +1,15 @@
 ; A084903: Binomial transform of positive cubes.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,9,44,170,576,1792,5248,14688,39680,104192,267264,672256,1662976,4055040,9764864,23257088,54853632,128253952,297533440,685375488,1568669696,3569352704,8078229504,18192793600,40785412096,91049951232
+; Formula: a(n) = floor(((n*(n*(n+9)+18)+8)*2^n)/8)
 
 mov $1,$0
-mov $2,$0
-mov $4,$0
-add $4,2
-mov $5,-2
-add $0,2
-lpb $1
-  sub $1,1
-  mul $0,2
-  add $2,$4
-  add $2,3
-  add $5,1
-lpe
-mov $3,6
-add $3,$5
-add $3,$2
-mul $3,2
-mul $0,$3
-div $0,16
+mov $2,2
+pow $2,$0
+add $0,9
+mul $0,$1
+add $0,18
+mul $0,$1
+add $0,8
+mul $0,$2
+div $0,8

@@ -1,23 +1,20 @@
 ; A133710: Column l=3 of irregular triangle in A133709.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 0,3,35,131,347,767,1511,2744,4686,7623,11919,18029,26513,38051,53459,73706,99932,133467,175851,228855,294503,375095,473231,591836,734186,903935,1105143,1342305,1620381,1944827
-; Formula: a(n) = truncate((2*binomial(n+6,n)-12*binomial(n+1,n-1)-12*n+10)/2)
+; Formula: a(n) = truncate(((n-1)*((n-1)*((n-1)*((n-1)*((n-1)*(n+26)+295)+1665)+2944)-2772))/720)
 
 #offset 1
 
 sub $0,1
-mov $2,2
-add $2,$0
-mov $1,$2
-bin $1,$0
-add $1,$0
-mul $1,4
-add $0,1
-add $2,5
-bin $2,$0
-sub $2,$1
-mul $2,2
-sub $2,$1
-mov $0,$2
-sub $0,2
-div $0,2
+mov $1,$0
+add $0,27
+mul $0,$1
+add $0,295
+mul $0,$1
+add $0,1665
+mul $0,$1
+add $0,2944
+mul $0,$1
+sub $0,2772
+mul $0,$1
+div $0,720

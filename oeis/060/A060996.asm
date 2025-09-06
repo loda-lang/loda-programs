@@ -1,31 +1,28 @@
 ; A060996: Stirling2 transform of [2,3,3,3,3,3,3,3,...].
-; Submitted by Science United
+; Submitted by Iceocld
 ; 2,5,14,44,155,608,2630,12419,63440,347924,2035709,12640790,82933310,572697965,4148875634,31440426440,248594609411,2046230418476,17498226615170,155172474706115,1424609448470252,13520147215341968,132456017565253037
 
-mov $4,$0
-add $0,1
+mov $2,1
+add $0,2
 lpb $0
   sub $0,1
   mov $5,0
-  mov $8,0
-  mov $3,$0
-  add $3,2
-  lpb $3
-    sub $3,1
-    mov $6,$3
-    pow $6,$4
-    sub $7,$3
-    bin $7,$5
-    mul $7,$6
-    add $8,$7
-    add $5,1
-    mov $7,0
+  mov $4,$2
+  add $4,1
+  lpb $4
+    sub $4,1
+    mov $1,$4
+    trn $1,1
+    seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+    mul $1,2
+    gcd $4,1
+    add $5,$1
   lpe
-  mov $2,1
-  fac $2,$0
-  div $8,$2
-  add $1,$8
+  add $2,1
+  mov $3,$5
 lpe
-mov $0,$1
+mov $0,$3
+sub $0,2
+div $0,2
 mul $0,3
-sub $0,1
+add $0,2
