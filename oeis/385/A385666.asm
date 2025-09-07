@@ -1,0 +1,72 @@
+; A385666: Triangle read by rows: T(n,k) is the number of 2n-bead balanced binary necklaces with period length 2n/k.
+; Submitted by x8CdHfMQ4f
+; 1,1,1,3,0,1,8,1,0,1,25,0,0,0,1,75,3,1,0,0,1,245,0,0,0,0,0,1,800,8,0,1,0,0,0,1,2700,0,3,0,0,0,0,0,1,9225,25,0,0,1,0,0,0,0,1,32065,0,0,0,0,0,0,0,0,0,1,112632,75,8,3,0,1,0,0,0,0,0,1,400023,0
+
+#offset 1
+
+mov $2,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
+mov $1,$0
+bin $0,2
+sub $2,$0
+mov $4,$1
+div $4,$2
+sub $4,1
+mov $3,$1
+mod $3,$2
+equ $3,0
+mov $8,1
+add $8,$4
+gcd $9,$8
+pow $9,2
+mov $11,$4
+add $11,1
+mov $12,$4
+bin $12,2
+add $12,$4
+add $12,$11
+lpb $11
+  sub $11,1
+  mov $4,$12
+  sub $4,$11
+  add $8,442
+  mov $13,$4
+  mul $13,8
+  nrt $13,2
+  add $13,1
+  div $13,2
+  mov $15,$13
+  bin $13,2
+  mov $16,$4
+  sub $16,$13
+  mov $5,$15
+  div $5,$16
+  mov $6,$15
+  mod $6,$16
+  equ $6,0
+  seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $5,$6
+  mov $14,$4
+  mul $14,8
+  nrt $14,2
+  add $14,1
+  div $14,2
+  bin $14,2
+  sub $4,$14
+  mov $7,$4
+  mul $4,2
+  bin $4,$7
+  mul $4,$5
+  add $10,2
+  add $10,$4
+lpe
+mul $8,$10
+div $8,$9
+mov $4,$8
+div $4,886
+sub $4,1
+mul $4,$3
+mov $0,$4
