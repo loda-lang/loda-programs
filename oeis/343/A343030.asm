@@ -1,5 +1,5 @@
 ; A343030: Number of 1-bits in the binary expansion of n which have an odd number of 0-bits at less significant bit positions.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,1,0,0,1,2,0,1,0,1,1,0,2,3,0,0,1,2,0,1,1,2,1,2,0,1,2,0,3,4,0,1,0,1,1,0,2,3,0,1,1,2,1,1,2,3,1,0,2,3,0,2,1,2,2,3,0,1,3,0,4,5,0,0,1,2,0,1,1,2,1,2,0,1,2,0,3,4,0
 
 lpb $0

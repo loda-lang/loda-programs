@@ -1,5 +1,5 @@
 ; A368552: Intersection number of the n-cocktail party graph K_{n X 2}.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,4,4,5,6,6,6,6,6,6,7,7,7,7,7
 ; Formula: a(n) = truncate((n-7)/(truncate((n-7)/3)+3))+6
 

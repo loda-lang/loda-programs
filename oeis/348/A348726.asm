@@ -1,5 +1,5 @@
 ; A348726: Decimal expansion of the positive root of Shanks' simplest cubic associated with the prime p = 37.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 5,3,4,4,7,1,2,3,6,5,4,5,1,8,3,4,9,6,3,1,6,5,6,9,1,4,1,8,8,4,6,9,8,6,4,6,9,9,5,8,6,9,5,8,7,0,8,1,4,2,2,4,9,4,6,3,9,6,3,6,1,7,5,6,0,1,5,4,5,3,8,5,7,2,1,1,5,7,7,0
 
 #offset 1

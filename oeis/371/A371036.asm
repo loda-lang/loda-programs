@@ -1,5 +1,5 @@
 ; A371036: a(n) is the number of ways to place n indistinguishable balls into n distinguishable boxes with at least one box remaining empty and not all balls placed in a single box.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,6,30,120,455,1708,6426,24300,92367,352704,1352065,5200286,20058285,77558744,300540178,1166803092,4537567631,17672631880,68923264389,269128937198,1052049481837,4116715363776,16123801841525,63205303218850,247959266474025,973469712824028
 ; Formula: a(n) = -truncate((2*n-1)/2)+binomial(2*n-1,truncate((2*n-1)/2))+truncate(0^truncate((2*n-1)/2))-2
 

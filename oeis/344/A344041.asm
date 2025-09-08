@@ -1,5 +1,5 @@
 ; A344041: Decimal expansion of Sum_{k>=1} F(k)/(k*2^k), where F(k) is the k-th Fibonacci number (A000045).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 8,6,0,8,1,7,8,8,1,9,2,8,0,0,8,0,7,7,7,7,8,8,6,6,4,6,5,9,0,1,2,1,0,8,5,0,8,4,9,1,4,1,3,6,5,0,8,0,5,7,9,3,0,9,5,1,4,0,1,2,2,0,7,9,8,5,1,2,2,4,3,0,9,2,2,2,6,3,9,2
 
 add $0,1

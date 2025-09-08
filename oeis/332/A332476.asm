@@ -1,5 +1,5 @@
 ; A332476: The number of unitary divisors of n in Gaussian integers.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,2,2,4,4,2,2,2,8,2,4,4,4,8,2,4,4,2,8,4,4,2,4,4,8,2,4,4,16,2,2,4,8,8,4,4,4,8,8,4,8,2,4,8,4,2,4,2,8,8,8,4,4,8,4,4,8,2,16,4,4,4,2,16,8,2,8,4,16,2,4,4,8,8,4,4,16,2,8
 
 #offset 1

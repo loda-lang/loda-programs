@@ -1,5 +1,5 @@
 ; A365605: Characteristic function of numbers without an inferior odd divisor > 1.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,1,1,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0
 
 #offset 1

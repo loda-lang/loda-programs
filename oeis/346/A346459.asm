@@ -1,5 +1,5 @@
 ; A346459: Triangle read by rows: T(n,k) = 0 if all positive integers can be colored with two colors without any positive integer x being the same color as n*x or k*x; otherwise, T(n,k) = 1 (for 2 <= k <= n).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ; Formula: a(n) = (n*floor(binomial(2*n,n)/50))%2
 

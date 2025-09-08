@@ -1,13 +1,11 @@
 ; A370649: Dimension of space of equivariant linear maps from R^{n^3} to R^{n^3} under diagonal action of {-1, 1}^n.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 0,1,32,183,544,1205,2256,3787,5888,8649,12160,16511,21792,28093,35504,44115,54016,65297,78048,92359,108320,126021,145552,167003,190464,216025,243776,273807,306208,341069,378480,418531,461312,506913,555424,606935,661536,719317
-; Formula: a(n) = 15*n*(n-1)^2+n
+; Formula: a(n) = n*(n*(15*n-30)+16)
 
 mov $1,$0
-sub $1,1
-pow $1,2
-mul $1,3
-mov $2,$0
-mul $2,5
-mul $2,$1
-add $0,$2
+mul $0,15
+sub $0,30
+mul $0,$1
+add $0,16
+mul $0,$1

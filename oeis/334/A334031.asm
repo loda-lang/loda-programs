@@ -1,5 +1,5 @@
 ; A334031: The smallest number whose unsorted prime signature is the reversed n-th composition in standard order.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,4,6,8,18,12,30,16,54,36,150,24,90,60,210,32,162,108,750,72,450,300,1470,48,270,180,1050,120,630,420,2310,64,486,324,3750,216,2250,1500,10290,144,1350,900,7350,600,4410,2940,25410,96,810,540,5250,360,3150
 ; Formula: a(n) = A057335(A341915(A006068(n)))
 

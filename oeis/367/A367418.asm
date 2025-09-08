@@ -7,7 +7,6 @@
 
 seq $0,268335 ; Exponentially odd numbers.
 sub $0,1
-mov $2,0
 max $2,$0
 mov $1,$2
 add $2,1

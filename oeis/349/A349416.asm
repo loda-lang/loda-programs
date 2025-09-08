@@ -1,14 +1,16 @@
 ; A349416: a(n) is the Wiener index of a broom on 2n vertices of which n+2 are pendant.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 25,54,100,167,259,380,534,725,957,1234,1560,1939,2375,2872,3434,4065,4769,5550,6412,7359,8395,9524,10750,12077,13509,15050,16704,18475,20367,22384,24530,26809,29225,31782,34484,37335,40339,43500,46822,50309,53965,57794,61800,65987
+; Formula: a(n) = floor(((n-3)*((n-3)*(4*n+27)+131)+150)/6)
 
 #offset 3
 
-lpb $0
-  add $1,1
-  add $1,$0
-  add $2,$1
-  sub $0,1
-  add $1,$0
-lpe
-mov $0,$2
+sub $0,3
+mov $1,$0
+mul $0,4
+add $0,39
+mul $0,$1
+add $0,131
+mul $0,$1
+add $0,150
+div $0,6

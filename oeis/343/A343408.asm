@@ -1,5 +1,5 @@
 ; A343408: Sum of proper divisors of n that are triangular numbers.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,1,1,1,4,1,1,4,1,1,10,1,1,4,1,1,10,1,11,4,1,1,10,1,1,4,1,1,35,1,1,4,1,1,10,1,1,4,11,1,31,1,1,19,1,1,10,1,11,4,1,1,10,1,29,4,1,1,35,1,1,25,1,1,10,1,1,4,11,1,46,1,1,19,1,1,10,1,11
 
 #offset 1

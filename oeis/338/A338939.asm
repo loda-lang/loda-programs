@@ -1,5 +1,5 @@
 ; A338939: a(n) is the number of partitions n = a + b such that a*b is a perfect square.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,0,1,1,1,0,1,0,3,0,1,1,1,1,1,1,1,0,3,0,1,0,1,2,3,0,1,1,3,0,1,0,3,1,1,1,1,1,3,1,1,0,1,1,1,0,1,0,5,1,3,1,1,1,1,0,3,0,3,1,1,0,1,4,1,0,3,0,3,0,1,1,3,2,1,0,3,0,3
 ; Formula: a(n) = truncate((2*truncate(A146564(A170818(n))/3)+1)/gcd(n-1,2))
 

@@ -1,5 +1,5 @@
 ; A345981: a(n) = integral spum of a path P_n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,4,6,8,10,13,15,17,20,21,25
 
 #offset 3

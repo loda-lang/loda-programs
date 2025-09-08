@@ -1,5 +1,5 @@
 ; A333766: Maximum part of the n-th composition in standard order. a(0) = 0.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,2,1,3,2,2,1,4,3,2,2,3,2,2,1,5,4,3,3,3,2,2,2,4,3,2,2,3,2,2,1,6,5,4,4,3,3,3,3,4,3,2,2,3,2,2,2,5,4,3,3,3,2,2,2,4,3,2,2,3,2,2,1,7,6,5,5,4,4,4,4,4,3,3,3,3,3,3,3
 
 mul $0,2

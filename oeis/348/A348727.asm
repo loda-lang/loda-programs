@@ -1,5 +1,5 @@
 ; A348727: Decimal expansion of the absolute value of one of the negative roots of Shanks' simplest cubic associated with the prime p = 37.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,5,7,6,1,1,5,5,7,8,4,5,4,2,5,7,6,1,4,8,2,3,2,1,3,2,0,1,2,4,2,2,5,3,7,0,6,0,5,8,4,8,7,1,9,1,3,0,5,5,9,9,3,0,3,6,8,4,9,1,3,0,5,4,1,7,0,9,6,0,5,3,1,4,9,3,3,6,4,6
 
 add $0,1

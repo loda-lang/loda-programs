@@ -1,5 +1,5 @@
 ; A372224: The size of the smallest critical set of hints needed to uniquely solve a generalized n X n Sudoku board.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,2,4,6,8,12,14,17
 ; Formula: a(n) = floor((floor((55*n)/34)+n)/2)+max(floor((55*n)/34),7)-8
 

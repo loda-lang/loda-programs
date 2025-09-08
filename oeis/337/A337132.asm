@@ -1,5 +1,5 @@
 ; A337132: a(n) is the number of squares at distance n from the central square of a Vicsek fractal.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,4,4,4,12,4,4,12,4,4,12,12,12,36,4,4,12,4,4,12,12,12,36,4,4,12,4,4,12,12,12,36,12,12,36,12,12,36,36,36,108,4,4,12,4,4,12,12,12,36,4,4,12,4,4,12,12,12,36,12,12,36,12,12,36,36,36,108,4,4,12,4,4,12,12,12,36,4,4,12
 
 mov $2,0

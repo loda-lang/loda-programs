@@ -1,25 +1,11 @@
 ; A361612: Decimal expansion of sqrt(10) truncated to n places (after the decimal point).
-; Submitted by Science United
+; Submitted by loader3229
 ; 3,31,316,3162,31622,316227,3162277,31622776,316227766,3162277660,31622776601,316227766016,3162277660168,31622776601683,316227766016837,3162277660168379,31622776601683793,316227766016837933,3162277660168379331,31622776601683793319
-; Formula: a(n) = truncate(d(6*n+169)/truncate(c(6*n+169)/(10^n))), b(n) = truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/9), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)+truncate((((-c(n-2)+c(n-1))==1)+2*c(n-1)+e(n-1))/9), c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = c(n-1)+d(n-1)+truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/9), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = c(n-1)+e(n-1)-1, e(3) = -3, e(2) = -2, e(1) = -1, e(0) = 0
+; Formula: a(n) = sqrtint(10^(2*n+1))
 
-mov $3,$0
-mul $3,6
-add $3,169
-lpb $3
-  sub $3,1
-  add $6,$2
-  equ $1,1
-  add $1,$6
-  add $1,$2
-  div $1,9
-  add $2,$1
-  add $5,$2
-  sub $6,1
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-mov $1,$5
-div $1,$2
+mul $0,2
+add $0,1
+mov $1,10
+pow $1,$0
+nrt $1,2
 mov $0,$1

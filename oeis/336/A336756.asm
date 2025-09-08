@@ -1,5 +1,5 @@
 ; A336756: Perimeters in increasing order of primitive integer-sided triangles whose sides a < b < c are in arithmetic progression.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 9,12,15,15,18,21,21,21,24,24,27,27,27,30,30,33,33,33,33,33,36,36,39,39,39,39,39,39,42,42,42,45,45,45,45,48,48,48,48,51,51,51,51,51,51,51,51,54,54,54,57,57,57,57,57,57,57,57,57,60,60,60,60,63,63,63,63,63,63,66,66,66,66,66,69,69,69,69,69,69
 
 #offset 1
