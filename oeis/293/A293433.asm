@@ -1,5 +1,5 @@
 ; A293433: a(n) is the number of the proper divisors of n that are Jacobsthal numbers (A001045).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,1,1,1,2,1,1,2,2,1,2,1,1,3,1,1,2,1,2,2,2,1,2,2,1,2,1,1,3,1,1,3,1,2,2,1,1,2,2,1,3,1,2,3,1,1,2,1,2,2,1,1,2,3,1,2,1,1,3,1,1,3,1,2,3,1,1,2,2,1,2,1,1,3,1,2,2,1,2
 
 #offset 1

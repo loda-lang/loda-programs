@@ -14,7 +14,7 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
-    seq $7,25791 ; Expansion of 1/((1-x)(1-x^9)(1-x^10)).
+    seq $7,25791 ; Expansion of 1/((1-x)*(1-x^9)*(1-x^10)).
     equ $7,1
     mov $9,10
     add $9,$5

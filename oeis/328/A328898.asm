@@ -1,5 +1,5 @@
 ; A328898: Sum of p-ary comparisons units required to rank a sequence in parallel when the sequence is partitioned into heaps equal to the prime factors p of the initial sequence length n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,1,6,1,11,1,28,12,27,1,58,1,51,28,120,1,105,1,154,52,123,1,260,30,171,117,298,1,281,1,496,124,291,54,534,1,363,172,708,1,545,1,730,309,531,1,1096,56,685,292,1018,1,963,126,1380,364,843,1,1462,1,963,597,2016,174,1337,1,1738,532,1333,1,2364,1,1371,715,2170,128,1865,1,3016
 
 #offset 1

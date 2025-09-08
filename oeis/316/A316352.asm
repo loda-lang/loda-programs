@@ -1,5 +1,5 @@
 ; A316352: Decimal expansion of (BesselI(0,1/2)-BesselI(1,1/2))/(BesselI(0,1/2)-3*BesselI(1,1/2)).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,7,7,9,8,0,6,0,7,9,1,5,0,3,5,6,9,1,3,9,0,2,9,6,2,1,8,4,5,5,3,1,2,0,1,4,6,7,6,0,7,3,3,6,5,5,0,9,6,0,4,4,1,9,3,3,3,3,6,6,5,5,5,2,4,3,1,2,6,9
 
 #offset 1

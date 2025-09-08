@@ -1,5 +1,5 @@
 ; A180117: Numbers n such that n and n+2 are both divisible by exactly 3 primes (counted with multiplicity).
-; Submitted by Conan
+; Submitted by iBezanilla
 ; 18,28,42,50,66,68,76,114,170,172,186,188,236,242,244,266,273,282,284,290,316,343,354,385,402,404,410,423,426,428,434,436,475,506,596,602,603,604,637,652,663,668,722,762,775,786,788,845,890,892,906,925,962,1002,1015,1023,1028,1052,1074,1083,1084,1106,1130,1173,1183,1233,1244,1266,1268,1309,1388,1394,1396,1412,1419,1434,1443,1490,1503,1532
 
 #offset 1
@@ -11,6 +11,8 @@ pow $2,4
 lpb $2
   mov $5,$1
   add $5,3
+  mov $6,$1
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,1
   mul $6,$5
@@ -35,5 +37,6 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+sub $0,34
 div $0,2
-add $0,1
+add $0,18

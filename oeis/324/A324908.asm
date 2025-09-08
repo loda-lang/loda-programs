@@ -1,5 +1,5 @@
 ; A324908: a(n) = 1 if n is an odd number which is not a square, 0 otherwise.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
 
 #offset 1

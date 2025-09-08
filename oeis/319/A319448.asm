@@ -1,5 +1,5 @@
 ; A319448: Moebius function mu(n) defined for the Eisenstein integers.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,-1,0,0,-1,0,1,0,0,1,-1,0,1,-1,0,0,-1,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,1,0,0,1,-1,0,1,-1,0,0,-1,0,1,0,0,1,-1,0,0,0,0,0,-1,0,1,0,0,1,-1,0,1,-1,0,0,-1,0,1,0,0,1,-1,0,1,-1,0,0,-1,0,1,0
 
 #offset 1

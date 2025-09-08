@@ -1,32 +1,25 @@
 ; A126926: Coordination sequence for 12-dimensional cyclotomic lattice Z[zeta_36].
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,36,612,6588,50904,303876,1474092,6033564,21452976,67799268,193960692,509703804,1245059208,2854551492,6191953596,12792023388,25309583712,48183896484,88618163076,157990810428,273847694904,462663220356,763604416332,1233586096668
+; Formula: a(n) = (n==0)+floor((n*(((((9*n^2+495)*n^2+9207)*n^2+62865)*n^2+140184)*n^2+64440))/7700)
 
-mov $2,1
-mov $10,1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $7,$4
-    trn $7,1
-    seq $7,126900 ; Coordination sequence for 6-dimensional cyclotomic lattice Z[zeta_18].
-    mov $9,10
-    add $9,$5
-    min $10,$0
-    mul $7,$$9
-    gcd $4,$10
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$3
+mov $1,$0
+mul $0,9
+mul $0,$1
+add $0,495
+mul $0,$1
+mul $0,$1
+add $0,9207
+mul $0,$1
+mul $0,$1
+add $0,62865
+mul $0,$1
+mul $0,$1
+add $0,140184
+mul $0,$1
+mul $0,$1
+add $0,64440
+mul $0,$1
+div $0,7700
+equ $1,0
+add $0,$1

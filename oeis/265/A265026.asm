@@ -1,33 +1,20 @@
 ; A265026: First differences of A048701.
-; Submitted by Jon Maiga
+; Submitted by iBezanilla
 ; 3,6,6,18,12,6,12,66,24,12,24,6,24,12,24,258,48,24,48,12,48,24,48,6,48,24,48,12,48,24,48,1026,96,48,96,24,96,48,96,12,96,48,96,24,96,48,96,6,96,48,96,24,96,48,96,12,96,48,96,24,96,48,96,4098,192,96,192,48,192,96,192,24,192,96,192,48,192,96,192,12
 
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  mov $5,1
-  add $5,$0
-  mov $6,$5
-  lpb $6
-    mul $5,2
-    sub $5,$6
-    div $6,2
-  lpe
-  mov $2,$4
-  lpb $2
-    sub $2,1
-    mov $1,$5
-  lpe
-lpe
+mov $4,$0
+mov $3,2
 lpb $3
-  mov $3,0
-  sub $1,$5
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  seq $0,48701 ; List of binary palindromes of even length (written in base 10).
+  mov $1,$2
+  mov $2,$0
+  mul $4,$3
 lpe
+sub $1,$2
 mov $0,$1
-mul $0,3

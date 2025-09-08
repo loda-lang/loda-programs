@@ -1,22 +1,16 @@
-; A229587: Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order
-; Submitted by Science United
+; A229587: Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
+; Submitted by loader3229
 ; 0,6,28,116,444,1620,5724,19764,67068,224532,743580,2440692,7951932,25745364,82904796,265720500,848179836,2697594516,8551948572,27033340788,85232507580,268094978388,841477302108,2636009007156,8242758323964,25732468879380,80209988360604,249667710249204,776116366249788,2409688805255892,7473085535287260,23151313964420532,71650113968937852,221538858133842324,684382123082613276,2112443015291098740,6515218984003072956,20079326766398549076,61838989742363637852,190319997556594885428
-; Formula: a(n) = truncate(e(n-1)/4), b(n) = 4*c(n-1)+b(n-1), b(3) = 600, b(2) = 136, b(1) = 24, b(0) = 0, c(n) = 3*c(n-1)+b(n-1)+d(n-1), c(3) = 444, c(2) = 116, c(1) = 28, c(0) = 6, d(n) = 2*d(n-1)-2*c(n-1), d(3) = -312, d(2) = -40, d(1) = 8, d(0) = 10, e(n) = 4*c(n-1), e(3) = 464, e(2) = 112, e(1) = 24, e(0) = 0
+; Formula: a(n) = 2*truncate((truncate(3^(n-2))*(16*n-6)+3)/9)
 
 #offset 1
 
-mov $2,6
-mov $3,10
-sub $0,1
-lpb $0
-  sub $0,1
-  sub $3,$2
-  mul $2,4
-  mov $4,$2
-  add $1,$2
-  mov $2,$1
-  add $2,$3
-  mul $3,2
-lpe
-mov $0,$4
-div $0,4
+sub $0,2
+mov $1,3
+pow $1,$0
+mul $0,16
+add $0,26
+mul $0,$1
+add $0,3
+div $0,9
+mul $0,2

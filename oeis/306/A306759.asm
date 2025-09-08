@@ -1,7 +1,7 @@
 ; A306759: Decimal expansion of the sum of reciprocals of Brazilian primes, also called the Brazilian primes constant.
 ; Submitted by Science United
 ; 3,3,1,7,5,4,4,6,6
-; Formula: a(n) = -(sqrtint(max(n-1,0))==0)-sqrtint(max(n-1,0))-2*truncate((sign(3*sign(-1)*sign(max(n-1,0))+sign(max(n-1,0))+sign(-1))*bitxor(abs(-1),abs(max(n-1,0))))/((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0))))+2
+; Formula: a(n) = -(sqrtint(max(n-1,0))==0)-sqrtint(max(n-1,0))-2*truncate(bitxor(-1,max(n-1,0))/((sqrtint(max(n-1,0))==0)+sqrtint(max(n-1,0))))+2
 
 trn $0,1
 mov $1,-1

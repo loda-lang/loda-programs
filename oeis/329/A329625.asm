@@ -1,5 +1,5 @@
 ; A329625: Smallest BII-number of a connected set-system with n edges.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,5,7,23,31,63,127,383,511,1023,2047,4095,8191
 
 mov $2,$0

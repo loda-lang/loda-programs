@@ -1,5 +1,5 @@
 ; A319635: Number of non-isomorphic weight-n antichains of distinct multisets whose dual is also an antichain of (not necessarily distinct) multisets.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,2,3,5,7,12,16,26,36,58
 ; Formula: a(n) = b(n-1)+truncate((b(n-1)+c(n-1))/9), a(3) = 3, a(2) = 2, a(1) = 1, a(0) = 1, b(n) = 2*b(n-2)+c(n-1)+c(n-2)+1, b(5) = 11, b(4) = 7, b(3) = 5, b(2) = 3, b(1) = 2, b(0) = 1, c(n) = truncate((b(n-1)+c(n-1))/9), c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
 

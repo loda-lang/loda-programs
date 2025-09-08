@@ -1,6 +1,7 @@
 ; A303127: Decimal expansion of proton magnetic moment to Bohr magneton ratio.
 ; Submitted by BrandyNOW
 ; 1,5,2,1,0,3,2,2,0
+; Formula: a(n) = -10*truncate(truncate(((n+6)*(-(((n+5)%6)==0)+truncate(((n+4)*(2*n+6))/3)))/4)/10)+truncate(((n+6)*(-(((n+5)%6)==0)+truncate(((n+4)*(2*n+6))/3)))/4)
 
 #offset -2
 

@@ -1,6 +1,7 @@
 ; A307194: Fill the plane with the square spiral with cells numbered as in A275609; sequence gives the cells along the North-East spoke starting at the origin.
 ; Submitted by Science United
 ; 0,2,1,0,1,0,1,0,1,0,1,0,2,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,2,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,2,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
+; Formula: a(n) = c(n+1), b(n) = -d(n-1)+c(n-1), b(4) = -5, b(3) = 3, b(2) = -1, b(1) = 0, b(0) = 0, c(n) = ((b(n-1)+d(n-1))==1)-3*truncate((e(n-1)+f(n-1)+1)/3)+e(n-1)+f(n-1), c(4) = 0, c(3) = 1, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = 2*c(n-1)-2*d(n-1)+b(n-1)+1, d(4) = -6, d(3) = 6, d(2) = -1, d(1) = 1, d(0) = 0, e(n) = ((b(n-1)+d(n-1))==1)-3*truncate((e(n-1)+f(n-1)+1)/3)+e(n-1)+f(n-1), e(4) = 0, e(3) = 1, e(2) = 2, e(1) = 0, e(0) = 0, f(n) = -3*truncate((e(n-1)+f(n-1)+1)/3)+e(n-1)+f(n-1)+1, f(4) = 1, f(3) = 2, f(2) = 2, f(1) = 1, f(0) = 0
 
 add $0,1
 lpb $0

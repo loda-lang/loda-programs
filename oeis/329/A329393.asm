@@ -1,5 +1,5 @@
 ; A329393: Number of odd divisors minus number of even divisors of the n-th composite.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; -1,0,-2,3,0,-2,0,4,-3,0,-2,4,0,-4,3,0,4,-2,0,-4,4,0,4,-3,0,4,-4,0,-2,6,0,-6,3,0,4,-2,0,4,-4,4,0,-4,0,6,-5,4,0,-2,4,0,-6,0,6,-2,4,0,-6,5,0,-4,4,0,4,-4,0,4,-2,4,0,4,-8,0,6,-3,0,-4,8,0,-4,0
 ; Formula: a(n) = A048272(A072668(n)+1)
 

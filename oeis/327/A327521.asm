@@ -1,5 +1,5 @@
 ; A327521: Number of factorizations of the n-th squarefree number A005117(n) into squarefree numbers > 1.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,1,2,1,2,1,1,2,2,1,1,2,2,1,2,1,5,1,2,2,2,1,2,2,1,5,1,2,1,2,1,2,2,2,1,1,2,2,5,1,2,5,1,1,2,2,5,1,2,1,2,2,2,1,2,2,2,2,1,1,5,1,5,2,1,1,5,2,1,5,2,2,2,2,2,1,2,5
 ; Formula: a(n) = floor((A034444(min(n-1,1)+A144338(n-1)-1)^2)/15)+1
 

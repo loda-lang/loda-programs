@@ -1,16 +1,20 @@
 ; A141052: Number of runs or rising sequences of length 2 among all permutations of n.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,4,21,130,930,7560,68880,695520,7711200,93139200,1217462400,17124307200,257902444800,4140968832000,70614415872000,1274546617344000,24275666967552000,486580401635328000,10238462617743360000,225651661258383360000,5198503365971435520000
 
 #offset 2
 
+sub $0,2
 mov $1,$0
-mul $0,4
-mov $2,$1
-lpb $2
-  add $0,$2
-  mul $0,$2
-  sub $2,1
-lpe
+mov $2,1
+fac $2,$0
+mul $0,5
+add $0,26
+mul $0,$1
+add $0,43
+mul $0,$1
+add $0,22
+mul $0,$2
 div $0,24
-add $0,1
+equ $1,0
+add $0,$1

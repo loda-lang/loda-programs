@@ -1,5 +1,6 @@
 ; A307753: Number of palindromic pentagonal numbers of length n whose index is also palindromic.
 ; 3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = max(-((n-4)==0)-n+truncate(2/(((n-4)==0)+n-4))+4,0)
 
 #offset 1
 

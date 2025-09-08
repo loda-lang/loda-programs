@@ -1,7 +1,7 @@
 ; A327490: T(n, k) = 1 + IFF(k - 1, n - k), where IFF is Boolean equality evaluated bitwise on the inputs, triangle read by rows, T(n, k) for n >= 1, 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,1,1,2,2,2,1,1,1,1,4,2,4,2,4,3,3,3,3,3,3,2,4,2,4,2,4,2,1,1,1,1,1,1,1,1,8,2,4,2,8,2,4,2,8,7,7,3,3,7,7,3,3,7,7,6,8,6,4,6,8,6,4,6,8,6,5,5,5,5,5,5,5,5,5,5,5,5
-; Formula: a(n) = -sign(3*sign(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))*sign(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1)+sign(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1)+sign(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)))*bitxor(abs(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1),abs(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)))-((n-1)==0)+truncate(2^(logint(max(sign(2*sign(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1)+2*sign(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))-1)*bitor(abs(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1),abs(-n+binomial(truncate((sqrtint(8*n)+3)/2),2))),1),2)+1))
+; Formula: a(n) = -((n-1)==0)-bitxor(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(truncate((sqrtint(8*n)+3)/2),2))+truncate(2^(logint(max(bitor(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(truncate((sqrtint(8*n)+3)/2),2)),1),2)+1))
 
 #offset 1
 

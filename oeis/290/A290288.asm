@@ -1,5 +1,5 @@
 ; A290288: Sum of the differences of the larger and smaller parts in the partitions of 2n into two parts with the larger part prime.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,2,4,8,4,12,20,16,28,40,32,48,40,34,56,78,68,60,88,80,112,144,132,168,156,144,184,170,156,202,248,234,220,272,256,310,364,346,328,388,368,432,412,394,464,444,424,406,484,464,544,624,600,684,768,742,828
 
 #offset 1

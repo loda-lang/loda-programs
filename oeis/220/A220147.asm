@@ -1,18 +1,17 @@
 ; A220147: Number of n X 2 arrays of the minimum value of corresponding elements and their horizontal or diagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..2 n X 2 array.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 3,11,26,52,95,163,266,416,627,915,1298,1796,2431,3227,4210,5408,6851,8571,10602,12980,15743,18931,22586,26752,31475,36803,42786,49476,56927,65195,74338,84416,95491,107627,120890,135348,151071,168131,186602,206560,228083,251251,276146,302852,331455,362043,394706,429536,466627,506075,547978,592436,639551,689427,742170,797888,856691,918691,984002,1052740,1125023,1200971,1280706,1364352,1452035,1543883,1640026,1740596,1845727,1955555,2070218,2189856,2314611,2444627,2580050,2721028,2867711,3020251
-; Formula: a(n) = floor(((binomial(n-1,2)+12)^2+(n-1)*(n+4)*(binomial(n-1,2)+12))/9)-13
+; Formula: a(n) = floor(((n-1)*((n-1)*((n-1)*(n+1)+29)+64)+36)/12)
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-add $0,5
+add $0,2
 mul $0,$1
-bin $1,2
-add $1,12
+add $0,29
 mul $0,$1
-pow $1,2
-add $0,$1
-div $0,9
-sub $0,13
+add $0,64
+mul $0,$1
+add $0,36
+div $0,12

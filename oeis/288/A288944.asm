@@ -1,5 +1,5 @@
 ; A288944: Number of automorphisms in the n-halved cube graph.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,2,24,384,1920,23040,322560,5160960,92897280,1857945600,40874803200,980995276800,25505877196800,714164561510400
 
 #offset 1

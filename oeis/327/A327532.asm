@@ -1,5 +1,5 @@
 ; A327532: Indicator function for numbers whose prime indices are relatively prime (A289509).
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1
 ; Formula: a(n) = A064894(2*A334032(A181819(n*A181811(n))))==1
 

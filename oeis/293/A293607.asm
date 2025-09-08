@@ -1,5 +1,5 @@
 ; A293607: Number of unlabeled clutters of weight n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,1,1,2,2,7,8,23,42
 
 add $0,1

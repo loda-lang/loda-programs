@@ -1,5 +1,5 @@
 ; A330168: Length of the longest run of 2's in the ternary expression of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,1,0,0,1,1,1,2,0,0,1,0,0,1,1,1,2,1,1,1,1,1,1,2,2,3,0,0,1,0,0,1,1,1,2,0,0,1,0,0,1,1,1,2,1,1,1,1,1,1,2,2,3,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3
 ; Formula: a(n) = A126387(A289814(n))
 

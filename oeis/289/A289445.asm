@@ -1,5 +1,5 @@
 ; A289445: a(n) = number of similarity classes of groups G with exactly n subgroups and such that G = G-tilde, where G-tilde is the unique subgroup of G left after factoring out the cyclic, central Sylow subgroups.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,0,0,0,1,3,0,4,0,8,3,4
 
 #offset 1

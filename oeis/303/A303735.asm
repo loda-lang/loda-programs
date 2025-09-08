@@ -1,6 +1,7 @@
 ; A303735: a(n) is the metric dimension of the n-dimensional hypercube.
 ; Submitted by entity
 ; 1,2,3,4,4,5,6,6,7,7,8,8,8
+; Formula: a(n) = ((sqrtint(8*n-7)-1)==0)+sqrtint(8*n-7)-1
 
 #offset 1
 

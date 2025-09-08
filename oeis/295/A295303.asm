@@ -1,5 +1,5 @@
 ; A295303: a(n) = +1 if n > phi(sigma(n)), -1 if n < phi(sigma(n)), and 0 if n = phi(sigma(n)), where phi = A000010 and sigma = A000203.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,0,1,-1,1,1,1,0,-1,1,1,0,1,1,1,-1,1,-1,1,1,1,1,1,1,-1,1,1,1,1,1,1,-1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,-1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1
 ; Formula: a(n) = -2*truncate((truncate((2*n-2*A000010(A000203(n)))^(2*n-2*A000010(A000203(n))))-1)/2)+truncate((2*n-2*A000010(A000203(n)))^(2*n-2*A000010(A000203(n))))-1
 

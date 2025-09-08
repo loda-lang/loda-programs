@@ -1,11 +1,10 @@
 ; A114003: Rows sums of triangle A114002.
-; Submitted by Mumps
+; Submitted by iBezanilla
 ; 1,3,3,5,3,7,3,7,5,7,3,11,3,7,7,9,3,11,3,11,7,7,3,15,5,7,7,11,3,15,3,11,7,7,7,17,3,7,7,15,3,15,3,11,11,7,3,19,5,11,7,11,3,15,7,15,7,7,3,23,3,7,11,13,7,15,3,11,7,15,3,23,3,7,11,11,7,15,3,19
-; Formula: a(n) = truncate((A145154(n)-4)/2)+1
+; Formula: a(n) = 2*A000005(n)-1
 
 #offset 1
 
-seq $0,145154 ; Coefficients in expansion of Eisenstein series E_1.
-sub $0,4
-div $0,2
-add $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mul $0,2
+sub $0,1

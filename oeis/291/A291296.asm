@@ -1,5 +1,5 @@
 ; A291296: 2-packing number of Fibonacci cube Gamma_n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 1,1,2,2,3,5,6,9,14,20,29,42
 ; Formula: a(n) = truncate((3*c(n+4)+76)/20)-3, b(n) = max(b(n-1),c(n-1)), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = c(n-1)+max(b(n-3),c(n-3)), c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 1
 

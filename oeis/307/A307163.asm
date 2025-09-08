@@ -1,6 +1,7 @@
 ; A307163: Minimum number of intercalates in a diagonal Latin square of order n.
 ; Submitted by BrandyNOW
 ; 0,0,0,12,0,9,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = floor((36*(2==(n-2))+27*(4==(n-2)))/3)
 
 #offset 1
 

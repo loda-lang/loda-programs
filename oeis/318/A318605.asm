@@ -1,5 +1,5 @@
 ; A318605: Decimal expansion of geometric progression constant for Coxeter's Loxodromic Sequence of Tangent Circles.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 2,8,9,0,0,5,3,6,3,8,2,6,3,9,6,3,8,1,2,4,5,7,0,0,9,2,9,6,1,0,3,1,2,9,6,0,9,4,3,5,9,1,7,2,2,1,6,4,5,8,5,9,1,1,0,7,5,2,0,8,9,0,0,5,2,4,4,5,5,8,0,3,8,3,5,4,9,7,0,4
 
 #offset 1

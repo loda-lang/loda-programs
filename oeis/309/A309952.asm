@@ -1,5 +1,5 @@
 ; A309952: XOR contraction of binary representation of n.
-; Submitted by Christian Krause
+; Submitted by ckrause
 ; 0,1,1,0,2,3,3,2,2,3,3,2,0,1,1,0,4,5,5,4,6,7,7,6,6,7,7,6,4,5,5,4,4,5,5,4,6,7,7,6,6,7,7,6,4,5,5,4,0,1,1,0,2,3,3,2,2,3,3,2,0,1,1,0,8,9,9,8,10,11,11,10,10,11,11,10,8,9,9,8
 
 mov $2,1

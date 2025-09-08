@@ -1,26 +1,29 @@
 ; A305496: Positions of 2 in the fixed point of the morphism 0->120, 1->110, 2->100 applied to 1 (as in A305490).
-; Submitted by PDW
+; Submitted by loader3229
 ; 8,17,26,35,44,53,62,68,71,80,89,98,107,116,125,134,143,149,152,161,170,179,188,197,206,215,224,230,233,242,251,260,269,278,287,296,305,311,314,323,332,341,350,359,368,377,386,392,395,404,413,422,431,440,449,458,467,473,476,485,494,503,512,521,530,539,548,554,557,566,575,584,593,602,608,611,620,629,635,638
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,2
-pow $2,2
-lpb $2
+mov $1,-3
+lpb $0
+  sub $0,1
   mov $3,$1
-  add $3,1
-  seq $3,277547 ; a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
-  equ $3,6
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  mod $3,9
+  equ $3,0
+  mov $4,12
+  mul $4,$3
+  mov $2,12
+  sub $2,$4
+  add $1,$2
+  mov $5,$1
+  dir $5,9
+  mod $5,9
+  neq $5,6
+  add $3,$5
+  mov $2,6
+  mul $2,$3
+  add $1,$2
 lpe
 mov $0,$1
-div $0,2
 add $0,1
+div $0,2
