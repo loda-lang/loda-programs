@@ -1,18 +1,17 @@
 ; A068548: Coefficients of (-x^(2n-6)) in Chebyshev polynomial of degree 2n.
+; Submitted by loader3229
 ; 1,32,400,3584,26880,180224,1118208,6553600,36765696,199229440,1049624576,5402263552,27262976000,135291469824,661693399040,3195455668224,15260018802688,72155450572800,338168545017856
-; Formula: a(n) = truncate((truncate(2^(2*n-1))*(2*n*(2*n-1)+binomial(2*n,3)))/4)
+; Formula: a(n) = truncate((n*(n*(2*n+3)-2)*4^n)/12)
 
 #offset 1
 
-mul $0,2
-sub $0,1
 mov $1,$0
-mov $0,2
-pow $0,$1
-mov $2,1
-add $2,$1
-mul $1,$2
-bin $2,3
-add $2,$1
+mov $2,4
+pow $2,$0
+mul $0,2
+add $0,3
+mul $0,$1
+sub $0,2
+mul $0,$1
 mul $0,$2
-div $0,4
+div $0,12

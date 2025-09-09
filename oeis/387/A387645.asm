@@ -1,16 +1,13 @@
 ; A387645: Detour index of the n X n black bishop graph.
-; Submitted by mkferrysr
+; Submitted by Science United
 ; 0,1,40,196,936,2601,7200,15376,32800,60025,109800,181476,299880,461041,708736,1032256,1503360,2099601,2932200,3960100,5348200,7027801,9234720,11861136,15234336,19193161,24180520,29964676,37132200,45360225,55411200,66846976
-; Formula: a(n) = truncate((n^2-1)/2)*binomial(truncate((n^2-1)/2)+1,2)
+; Formula: a(n) = truncate((n^2-1)/2)*binomial(-truncate((n^2-1)/2),2)
 
 #offset 1
 
-mov $1,$0
-pow $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-mul $2,$1
-mov $0,$2
+pow $0,2
+sub $0,1
+div $0,2
+sub $1,$0
+bin $1,2
+mul $0,$1

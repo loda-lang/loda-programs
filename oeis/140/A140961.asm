@@ -1,21 +1,18 @@
 ; A140961: Number of 3 X n {0,1}-matrices such that: (a) first and second row have a common 1, (b) second and third row have a common 1.
 ; Submitted by loader3229
 ; 1,17,205,2129,20341,184457,1615405,13808609,116015461,962575097,7913168605,64610052689,524855128981,4247421698537,34274519697805,275985344786369,2218709434248901,17815093293410777,142915542082163005,1145704555158361649,9179974972732223221
-; Formula: a(n) = 8*8^(n-1)+5*5^(n-1)-12*6^(n-1)
+; Formula: a(n) = 8^n+5^n-2*6^n
 
 #offset 1
 
-sub $0,1
 mov $2,5
 pow $2,$0
-mul $2,5
 mov $1,$2
 mov $2,6
 pow $2,$0
-mul $2,-12
+mul $2,-2
 add $1,$2
 mov $2,8
 pow $2,$0
-mul $2,8
 add $1,$2
 mov $0,$1

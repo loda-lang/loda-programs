@@ -1,19 +1,21 @@
 ; A023044: 7th differences of factorial numbers.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 1854,16687,165016,1781802,20886576,264398280,3597143040,52370755920,812752093440,13397819541120,233845982899200,4309095479673600,83609603781580800,1704092533657113600,36403110891295948800
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,23043 ; 6th differences of factorial numbers.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mul $4,$3
-  mov $5,$0
-lpe
-sub $1,$5
-mov $0,$1
+mov $1,$0
+mov $2,1
+fac $2,$0
+add $0,21
+mul $0,$1
+add $0,196
+mul $0,$1
+add $0,1015
+mul $0,$1
+add $0,3094
+mul $0,$1
+add $0,5453
+mul $0,$1
+add $0,5053
+mul $0,$1
+add $0,1854
+mul $0,$2

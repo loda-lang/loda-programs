@@ -10,7 +10,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  trn $3,1
+  sub $3,1
   mov $6,0
   max $6,$3
   mov $9,$6
@@ -22,14 +22,12 @@ lpb $2
   pow $8,2
   mul $8,4
   nrt $8,2
-  add $8,1
   div $8,2
   pow $8,2
   mov $7,$3
   div $7,$8
   mov $3,$7
   add $3,1
-  pow $3,2
   mov $5,$3
   add $3,$5
   sub $3,1

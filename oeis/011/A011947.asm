@@ -1,33 +1,24 @@
 ; A011947: Number of Barlow packings with group P63/mmc(O) that repeat after 4n+2 layers.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 1,1,3,7,14,31,63,123,255,511,1015,2047,4092
 
-add $0,1
-mov $2,$0
-mov $6,1
+mov $3,3
+mul $0,2
+add $0,4
 lpb $0
-  sub $0,1
-  mul $1,2
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mul $7,$11
-    equ $7,$8
-    sub $7,2
-    mov $9,10
-    add $9,$5
-    sub $4,$0
-    sub $4,$0
-    mul $7,$$9
-    mov $5,$4
-    add $6,$7
-  lpe
-  sub $6,$3
-  mov $9,10
-  add $9,$2
-  add $1,$6
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  sub $0,$3
+  max $2,1
+  mov $5,$0
+  trn $5,1
+  add $5,1
+  seq $5,56458 ; Number of primitive (aperiodic) palindromes using a maximum of two different symbols.
+  mov $4,$5
+  div $4,2
+  add $4,$2
+  mov $2,$4
+  sub $2,2
+  add $3,$0
+  add $1,$2
 lpe
 mov $0,$1
+add $0,1
