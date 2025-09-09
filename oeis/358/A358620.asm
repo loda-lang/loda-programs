@@ -1,16 +1,13 @@
 ; A358620: Number of nonzero digits needed to write all nonnegative n-digit integers.
-; Submitted by Science United
+; Submitted by loader3229
 ; 9,171,2520,33300,414000,4950000,57600000,657000000,7380000000,81900000000,900000000000,9810000000000,106200000000000,1143000000000000,12240000000000000,130500000000000000,1386000000000000000,14670000000000000000,154800000000000000000
+; Formula: a(n) = floor(((81*n+9)*10^n)/100)
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-lpb $1
-  sub $1,1
-  add $0,1
-  mul $0,10
-lpe
-div $0,10
+mov $1,10
+pow $1,$0
 mul $0,81
 add $0,9
+mul $0,$1
+div $0,100

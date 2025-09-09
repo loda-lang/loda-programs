@@ -1,7 +1,7 @@
 ; A230438: Decimal expansion of the proton mass energy equivalent in Joules.
-; Submitted by loader3229
+; Submitted by Goldislops
 ; 1,5,0,3,2,7,7,6,1
-; Formula: a(n) = -truncate((-2*truncate((sqrtint(8*n+80)-1)/2)+binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)+2)/8)-10*truncate((-truncate((-2*truncate((sqrtint(8*n+80)-1)/2)+binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)+2)/8)-10*truncate((-truncate((-2*truncate((sqrtint(8*n+80)-1)/2)+binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)+2)/8)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+1)/10)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+11)/10)-10*truncate((-truncate((-2*truncate((sqrtint(8*n+80)-1)/2)+binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)+2)/8)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+1)/10)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+11
+; Formula: a(n) = -truncate(binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)/8)-10*truncate((-truncate(binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)/8)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+1)/10)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+1
 
 #offset -9
 
@@ -20,8 +20,6 @@ mul $2,2
 add $2,3
 mov $3,$2
 bin $3,3
-sub $2,5
-sub $3,$2
 div $3,8
 mul $1,2
 sub $1,$0
@@ -30,6 +28,4 @@ bin $1,3
 sub $1,$3
 mov $0,$1
 add $0,1
-mod $0,10
-add $0,10
 mod $0,10

@@ -5,11 +5,10 @@
 #offset 1
 
 mov $1,$0
-sub $1,2
-sub $0,1
-bin $0,2
-bin $0,2
 mov $2,1
-fac $2,$1
+fac $2,$0
+sub $0,5
+mul $0,$1
+add $0,6
 mul $0,$2
-div $0,3
+div $0,24

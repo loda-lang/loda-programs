@@ -4,17 +4,12 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
+equ $1,2
 mov $2,1
 fac $2,$0
 mul $0,5
-add $0,26
-mul $0,$1
-add $0,43
-mul $0,$1
-add $0,22
+add $0,1
 mul $0,$2
 div $0,24
-equ $1,0
 add $0,$1

@@ -1,13 +1,12 @@
-; A250657: Number of (3+1)X(n+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction
-; Submitted by Cruncher Pete
+; A250657: Number of (3+1)X(n+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
+; Submitted by loader3229
 ; 39,70,109,156,211,274,345,424,511,606,709,820,939,1066,1201,1344,1495,1654,1821,1996,2179,2370,2569,2776,2991,3214,3445,3684,3931,4186,4449,4720,4999,5286,5581,5884,6195,6514,6841,7176,7519,7870,8229,8596,8971,9354,9745,10144,10551,10966,11389,11820,12259,12706,13161,13624,14095,14574,15061,15556,16059,16570,17089,17616,18151,18694,19245,19804,20371,20946,21529,22120,22719,23326,23941,24564,25195,25834,26481,27136
-; Formula: a(n) = (n-1)*(4*n+23)+39
+; Formula: a(n) = n*(4*n+19)+16
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 mul $0,4
-add $0,27
+add $0,19
 mul $0,$1
-add $0,39
+add $0,16

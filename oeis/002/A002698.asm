@@ -1,16 +1,15 @@
 ; A002698: Coefficients of Chebyshev polynomials: n*(2*n-3)*2^(2*n-5).
-; Submitted by Ron Shurtz [BlackOps]
+; Submitted by loader3229
 ; 1,18,160,1120,6912,39424,212992,1105920,5570560,27394048,132120576,627048448,2936012800,13589544960,62277025792,282930970624,1275605286912,5712306503680,25426206392320,112562502893568,495879744126976,2174833999740928,9499780463984640
-; Formula: a(n) = truncate((truncate(2^(2*n-1))*(binomial(2*n-1,2)-2)+truncate(2^(2*n-1)))/16)
+; Formula: a(n) = truncate((n*(2*n-3)*4^n)/32)
 
 #offset 2
 
+mov $1,$0
+mov $2,4
+pow $2,$0
 mul $0,2
-sub $0,1
-mov $1,2
-pow $1,$0
-bin $0,2
-sub $0,2
+sub $0,3
 mul $0,$1
-add $0,$1
-div $0,16
+mul $0,$2
+div $0,32

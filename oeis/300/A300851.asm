@@ -4,21 +4,18 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 mov $2,1
 fac $2,$0
-add $0,13
+add $0,6
 mul $0,$1
-add $0,48
+sub $0,9
 mul $0,$1
-sub $0,102
+sub $0,182
 mul $0,$1
-sub $0,175
+add $0,488
 mul $0,$1
-add $0,89
-mul $0,$1
-add $0,126
+sub $0,304
 mul $0,$1
 mul $0,$2
 div $0,24

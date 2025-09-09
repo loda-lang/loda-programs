@@ -4,12 +4,11 @@
 
 #offset 3
 
-sub $0,3
 mov $1,$0
-add $0,2
-bin $0,$1
-add $1,3
 mov $2,1
-fac $2,$1
+fac $2,$0
+sub $0,3
+mul $0,$1
+add $0,2
 mul $0,$2
-div $0,2
+div $0,4

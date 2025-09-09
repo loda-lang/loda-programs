@@ -1,12 +1,12 @@
 ; A192491: Molecular topological indices of the complete tripartite graphs K_{n,n,n}.
+; Submitted by loader3229
 ; 24,240,864,2112,4200,7344,11760,17664,25272,34800,46464,60480,77064,96432,118800,144384,173400,206064,242592,283200,328104,377520,431664,490752,555000,624624,699840,780864,867912,961200
-; Formula: a(n) = 24*floor((3*n*binomial(3*n,2))/9)
+; Formula: a(n) = (36*n-12)*n^2
 
 #offset 1
 
-mul $0,3
 mov $1,$0
-bin $1,2
+mul $0,36
+sub $0,12
 mul $0,$1
-div $0,9
-mul $0,24
+mul $0,$1

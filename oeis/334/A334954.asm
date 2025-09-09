@@ -1,10 +1,9 @@
 ; A334954: a(n) is 1 plus the number of divisors of n.
-; Submitted by Mumps
+; Submitted by Just Jake
 ; 2,3,3,4,3,5,3,5,4,5,3,7,3,5,5,6,3,7,3,7,5,5,3,9,4,5,5,7,3,9,3,7,5,5,5,10,3,5,5,9,3,9,3,7,7,5,3,11,4,7,5,7,3,9,5,9,5,5,3,13,3,5,7,8,5,9,3,7,5,9,3,13,3,5,7,7,5,9,3,11
-; Formula: a(n) = truncate(A145154(n)/4)+1
+; Formula: a(n) = A000005(n)+1
 
 #offset 1
 
-seq $0,145154 ; Coefficients in expansion of Eisenstein series E_1.
-div $0,4
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $0,1

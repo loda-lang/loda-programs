@@ -4,19 +4,15 @@
 
 #offset 4
 
-mov $3,4
-equ $3,$0
-mul $3,12
 mov $1,$0
-pow $1,2
-mul $1,3
-add $1,10
-mov $2,$0
-mul $2,15
-sub $1,$2
-mov $4,1
-fac $4,$0
-mov $0,$4
+mov $2,1
+fac $2,$0
+mul $0,3
+sub $0,15
 mul $0,$1
+add $0,10
+mul $0,$2
 div $0,6
-add $0,$3
+equ $1,4
+mul $1,12
+add $0,$1

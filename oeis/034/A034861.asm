@@ -5,14 +5,11 @@
 #offset 4
 
 mov $1,$0
-pow $1,2
-mul $1,3
-add $1,10
-mov $2,$0
-mul $2,15
-sub $1,$2
-mov $3,1
-fac $3,$0
-mov $0,$3
+mov $2,1
+fac $2,$0
+mul $0,3
+sub $0,15
 mul $0,$1
+add $0,10
+mul $0,$2
 div $0,6

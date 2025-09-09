@@ -1,18 +1,19 @@
 ; A320088: Number of primitive (=aperiodic) 4-ary words with length less than or equal to n which are earlier in lexicographic order than any other word derived by cyclic shifts of the alphabet.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,4,19,79,334,1339,5434,21754,87274,349159,1397734,5590954,22368169,89472934,357908119,1431633559,5726600854,22906403494,91625880229,366503524969,1466015148634,5864060611159,23456246655574,93824986622614,375299963333014,1501199853398419,6004799480703379,24019197923076439,96076791961004374,384307167844017769,1537228672450864744,6148914689804510824,24595658763513013849,98382635054056253014,393530540233409074519,1574122160933636315479,6296488643803281529174,25185954575213142907219
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+truncate(A054719(n+1)/4), b(0) = 1
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,54719 ; Number of 4-ary sequences with primitive period n.
-  div $2,4
-  sub $0,1
-  add $1,$2
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,1
+  seq $0,295505 ; a(n) = Sum_{d|n} mu(n/d)*4^(d-1).
+  add $2,$0
 lpe
-mov $0,$1
+mov $0,$2
