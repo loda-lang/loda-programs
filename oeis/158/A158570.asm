@@ -1,16 +1,14 @@
 ; A158570: a(n) = A007814((2n-1)!! + 1).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1,1,2,4,1,1,2,5,1
-; Formula: a(n) = truncate(((n%4-1)*(n%4+gcd(floor(((n-1)*(n%4))/4),n%4-1)-1))/2)+1
+; Formula: a(n) = truncate(((n%4-1)*(n%4+gcd(floor((n+1)/4),n%4-1)-1))/2)+1
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 mod $0,4
-mul $1,$0
 sub $0,1
+add $1,1
 div $1,4
 gcd $1,$0
 add $1,$0

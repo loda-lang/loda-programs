@@ -4,9 +4,8 @@
 ; Formula: a(n) = truncate(((11*n+9)*n^9)/2)
 
 mov $1,$0
+pow $1,9
 mul $0,11
 add $0,9
-mov $2,$1
-pow $2,9
-mul $0,$2
+mul $0,$1
 div $0,2

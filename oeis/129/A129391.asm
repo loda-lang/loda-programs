@@ -1,5 +1,5 @@
 ; A129391: Expansion of phi(-x) * phi(x^5) / (chi(-x^2) * chi(-x^10)) in powers of x where phi(), chi() are Ramanujan theta functions.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,-2,1,-2,3,0,0,-2,0,0,4,-2,1,-4,2,0,0,-2,0,0,2,-2,3,-2,3,0,0,0,0,0,2,-6,0,-2,4,0,0,-2,0,0,5,-2,0,-4,2,0,0,0,0,0,2,-2,4,-2,2,0,0,-2,0,0,1,-4,1,-2,4,0,0,-4,0,0,4,0,2,-6,2,0,0,0,0,0
 
 mov $1,-1
@@ -10,19 +10,16 @@ add $3,1
 mov $4,1
 mov $5,$0
 lpb $5
-  sub $5,1
+  sub $5,2
   mov $0,$3
   sub $0,$5
   mov $2,$0
   gcd $2,$5
   bin $2,$0
   mov $6,$0
-  dir $6,2
   div $6,2
   mov $7,-1
   pow $7,$6
-  mul $0,2
-  mov $6,$7
   mov $8,$0
   add $8,7
   mod $8,10

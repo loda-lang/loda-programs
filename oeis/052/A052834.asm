@@ -1,30 +1,8 @@
 ; A052834: a(n) = Bell(n+1)-Bell(n)-1, n>0.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,0,2,9,36,150,673,3262,17006,94827,562594,3535026,23430839,163254884,1192059222,9097183601,72384727656,599211936354,5150665398897,45891416030314,423145657921378,4031845922290571,39645290116637022,401806863439720942,4192631462935194063
+; Formula: a(n) = A005493(max(n-1,0))-1
 
-mov $6,1
-lpb $0
-  sub $0,1
-  add $2,1
-  mov $3,$6
-  mov $5,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,2
-    div $7,2
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $$9,$3
-  mul $11,2
-lpe
-mov $0,$6
+trn $0,1
+seq $0,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
 sub $0,1
