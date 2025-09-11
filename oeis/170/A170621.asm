@@ -1,14 +1,10 @@
 ; A170621: Number of reduced words of length n in Coxeter group on 36 generators S_i with relations (S_i)^2 = (S_i S_j)^48 = I.
-; Submitted by Boogyman Munster
+; Submitted by loader3229
 ; 1,36,1260,44100,1543500,54022500,1890787500,66177562500,2316214687500,81067514062500,2837362992187500,99307704726562500,3475769665429687500,121651938290039062500,4257817840151367187500,149023624405297851562500
-; Formula: a(n) = a(n-1)*(b(n-1)+35), a(1) = 36, a(0) = 1, b(n) = min(b(n-1)+35,0), b(1) = 0, b(0) = 1
+; Formula: a(n) = floor((36*35^n)/35)
 
-mov $1,1
-mov $2,1
-lpb $0
-  sub $0,1
-  add $2,35
-  mul $1,$2
-  min $2,0
-lpe
+mov $1,35
+pow $1,$0
 mov $0,$1
+mul $0,36
+div $0,35

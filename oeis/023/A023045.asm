@@ -1,19 +1,23 @@
 ; A023045: 8th differences of factorial numbers.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 14833,148329,1616786,19104774,243511704,3332744760,48773612880,760381337520,12585067447680,220448163358080,4075249496774400,79300508301907200,1620482929875532800,34699018357638835200,777011144137311283200,18162481202288527104000
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,23044 ; 7th differences of factorial numbers.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mul $4,$3
-  mov $5,$0
-lpe
-sub $1,$5
-mov $0,$1
+mov $1,$0
+mov $2,1
+fac $2,$0
+add $0,28
+mul $0,$1
+add $0,350
+mul $0,$1
+add $0,2492
+mul $0,$1
+add $0,10899
+mul $0,$1
+add $0,29596
+mul $0,$1
+add $0,48082
+mul $0,$1
+add $0,42048
+mul $0,$1
+add $0,14833
+mul $0,$2

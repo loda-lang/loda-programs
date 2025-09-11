@@ -1,15 +1,14 @@
 ; A387286: Number of 2 X 2 square tiles in a discrete 4-dimensional hypercube of side length n.
-; Submitted by loader3229
+; Submitted by Wood
 ; 0,16,132,504,1360,3000,5796,10192,16704,25920,38500,55176,76752,104104,138180,180000,230656,291312,363204,447640,546000,659736,790372,939504,1108800,1300000,1514916,1755432,2023504,2321160,2650500,3013696,3412992,3850704,4329220,4851000,5418576,6034552,6701604,7422480
-; Formula: a(n) = ((n-1)*(3*n+5)+5)*(n-1)^2
+; Formula: a(n) = 4*binomial(n,2)*(n^2+binomial(n,2))-4*binomial(n,2)
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-mul $0,3
-add $0,8
+bin $1,2
+pow $0,2
+add $0,$1
 mul $0,$1
-add $0,5
-mul $0,$1
-mul $0,$1
+sub $0,$1
+mul $0,4

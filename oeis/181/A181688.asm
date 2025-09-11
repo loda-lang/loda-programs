@@ -1,4 +1,4 @@
-; A181688: Number of maximal self-avoiding walks from NW to SW corners of a 4-by-n grid
+; A181688: Number of maximal self-avoiding walks from NW to SW corners of a 4-by-n grid.
 ; Submitted by iBezanilla
 ; 1,1,4,8,23,55,144,360,921,2329,5924,15024,38159,96847,245888,624176,1584593,4022609,10211940,25924088,65811431,167069767,424126160,1076693080,2733310377,6938824361,17615009476,44717740000,113521160607,288186606623
 ; Formula: a(n) = truncate(b(n)/2), b(n) = b(n-1)+c(n-1)+d(n-1)+e(n-1), b(3) = 8, b(2) = 2, b(1) = 2, b(0) = 0, c(n) = -c(n-1)+b(n-1), c(3) = -2, c(2) = 4, c(1) = -2, c(0) = 2, d(n) = b(n-1)+d(n-1), d(3) = 4, d(2) = 2, d(1) = 0, d(0) = 0, e(n) = c(n-1)+d(n-1)+e(n-1), e(3) = 6, e(2) = 0, e(1) = 2, e(0) = 0

@@ -37,7 +37,7 @@ plot "counts.dat" using 1:2 with filledcurves above
 EOF
 
 gnuplot counts.gp
-# rm counts.gp
-# rm counts.dat
+rm counts.gp
+rm counts.dat
 
 popd > /dev/null

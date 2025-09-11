@@ -1,21 +1,9 @@
 ; A026906: Number of sums S of distinct positive integers satisfying S <= n.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1,2,4,6,9,13,18,24,32,42,54,69,87,109,136,168,206,252,306,370,446,535,639,761,903,1068,1260,1482,1738,2034,2374,2764,3212,3724,4309,4977,5737,6601,7583,8696,9956,11382,12992,14808,16856,19160,21750,24660,27924,31582,35679,40261,45381,51099,57477,64585,72502,81310,91102,101982,114058,127452,142300,158744,176944,197076,219326,243902,271032,300959,333951,370303,410329,454375,502821,556071,614570,678804,749292,826604
+; Formula: a(n) = A036469(n)-1
 
 #offset 1
 
+seq $0,36469 ; Partial sums of A000009 (partitions into distinct parts).
 sub $0,1
-mov $2,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$2
-  sub $0,$1
-  add $0,1
-  seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
-  div $0,-1
-  mul $0,-1
-  add $3,$0
-lpe
-mov $0,$3
