@@ -1,40 +1,30 @@
 ; A188017: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
-; Submitted by vanos0512
+; Submitted by Science United
 ; 1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1
+; Formula: a(n) = -2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+n+1)*(5*truncate((sqrtint(5*n^2)+n)/2)+5*n+5)+truncate((sqrtint(5*n^2)+n)/2)+n+1)+truncate((sqrtint(5*n^2)+n)/2)+n+1)/2)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+n+1)*(5*truncate((sqrtint(5*n^2)+n)/2)+5*n+5)+truncate((sqrtint(5*n^2)+n)/2)+n+1)+truncate((sqrtint(5*n^2)+n)/2)+n+1
 
 #offset 1
 
 mov $1,$0
-mul $1,5
-mul $1,$0
-nrt $1,2
+mov $2,$0
+add $2,$0
+mul $2,2
+add $2,$0
+mul $2,$0
+nrt $2,2
+add $2,$0
+mov $0,$2
+div $0,2
 add $1,$0
-div $1,2
 mov $0,$1
-mul $0,2
-add $0,126
-mov $3,0
-mov $4,$0
-add $4,1
-sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  mov $5,$2
-  mul $5,4
-  add $5,$2
-  mul $5,$2
-  nrt $5,2
-  sub $5,$2
-  div $5,2
-  sub $0,1
-  mov $2,$5
-  add $2,1
-  add $3,$2
-lpe
-add $3,2
+add $0,1
+mov $3,$0
+add $3,$0
+mul $3,2
+add $3,$0
+mul $3,$0
+add $3,$0
+nrt $3,2
+add $3,$0
 mov $0,$3
-mul $0,2
-sub $0,1
-mod $0,$4
 mod $0,2
