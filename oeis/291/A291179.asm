@@ -5,32 +5,46 @@
 #offset 1
 
 sub $0,1
-mov $5,$0
+mov $11,$0
 mov $1,$0
 lpb $1
   sub $1,1
-  mov $7,0
-  mov $0,$5
+  mov $9,0
+  mov $0,$11
   sub $0,$1
   mov $8,$0
-  mov $6,$0
-  lpb $6
-    sub $6,1
-    mov $3,0
+  mov $10,$0
+  lpb $10
+    sub $10,1
     mov $0,$8
-    sub $0,$6
-    lpb $0
-      mov $2,$0
-      add $2,1
-      seq $2,185399 ; As p runs through the primes, sequence gives denominator of Sum_{k=1..p-1} 1/k.
-      add $3,$2
-      pow $0,7
-      div $0,10
+    sub $0,$10
+    mov $4,$0
+    mov $5,0
+    mov $6,2
+    lpb $6
+      sub $6,1
+      mov $2,0
+      mov $0,$4
+      add $0,$6
+      trn $0,1
+      lpb $0
+        mov $2,$0
+        mul $2,2
+        seq $2,90316 ; a(n) = 24*a(n-1) + a(n-2), starting with a(0) = 2 and a(1) = 24.
+        sub $0,1
+      lpe
+      mov $7,$6
+      mul $7,$2
+      mov $0,$2
+      add $5,$7
     lpe
-    mov $0,$3
-    div $0,2
-    add $7,$0
+    min $4,1
+    mul $4,$0
+    mov $0,$5
+    sub $0,$4
+    div $0,578
+    add $9,$0
   lpe
-  add $4,$7
+  add $3,$9
 lpe
-mov $0,$4
+mov $0,$3

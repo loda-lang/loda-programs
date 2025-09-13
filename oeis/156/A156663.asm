@@ -1,5 +1,5 @@
 ; A156663: Triangle by columns, powers of 2 interleaved with zeros.
-; Submitted by kpmonaghan
+; Submitted by Science United
 ; 1,0,1,2,0,1,0,2,0,1,4,0,2,0,1,0,4,0,2,0,1,8,0,4,0,2,0,1,0,8,0,4,0,2,0,1,16,0,8,0,4,0,2,0,1,0,16,0,8,0,4,0,2,0,1,32,0,16,0,8,0,4,0,2,0,1,0,32,0,16,0,8,0,4,0,2,0,1
 
 add $0,1
@@ -22,7 +22,5 @@ lpb $3
   mul $3,2
   mov $4,2
   pow $4,$5
-  mul $4,2
 lpe
 mov $0,$4
-div $0,2

@@ -1,8 +1,11 @@
 ; A140648: Triangle T(n,m) which can create A140642 without help of Jacobsthal numbers.
-; Submitted by Mumps
+; Submitted by kpmonaghan
 ; 1,2,0,4,1,0,8,2,0,1,16,4,1,0,2,32,8,2,0,1,4,64,16,4,1,0,2,8,128,32,8,2,0,1,4,16,256,64,16,4,1,0,2,8,32,512,128,32,8,2,0,1,4,16,64
-; Formula: a(n) = A193726(binomial(truncate((sqrtint(8*n+8)+1)/2)^2-2*n+1,2))
 
+lpb $0
+  div $0,2
+  sub $0,44
+lpe
 add $0,1
 mov $1,$0
 mul $1,8

@@ -4,11 +4,10 @@
 ; Formula: a(n) = (-n+2)*(-1)^n-(n==0)
 
 mov $1,$0
+equ $1,0
 mov $2,-1
 pow $2,$0
 mul $0,-1
 add $0,2
-equ $1,0
-mul $1,-1
 mul $0,$2
-add $0,$1
+sub $0,$1

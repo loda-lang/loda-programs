@@ -1,18 +1,18 @@
 ; A091630: Numbers n + product of digits associated with A091628.
-; Submitted by zelandonii
+; Submitted by loader3229
 ; 29,235,2247,22271,222319,2222415,22222607,222222991,2222223759,22222225295,222222228367,2222222234511,22222222246799,222222222271375,2222222222320527,22222222222418831,222222222222615439
-; Formula: a(n) = b(n)+1, b(n) = 20*c(n-1)+2*b(n-1)-2, b(1) = 28, b(0) = 5, c(n) = 10*c(n-1)-1, c(1) = 9, c(0) = 1
+; Formula: a(n) = floor((27*2^n+20*10^n+7)/9)
 
 #offset 1
 
-mov $1,5
-mov $2,1
-lpb $0
-  sub $0,1
-  mul $2,10
-  sub $2,1
-  add $1,$2
-  mul $1,2
-lpe
-add $1,1
+mov $2,2
+pow $2,$0
+mul $2,27
+mov $1,$2
+mov $2,10
+pow $2,$0
+mul $2,20
+add $1,$2
+add $1,7
 mov $0,$1
+div $0,9

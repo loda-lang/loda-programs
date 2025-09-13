@@ -1,13 +1,12 @@
 ; A295911: Number of (not necessarily maximal) cliques in the n-Hanoi graph.
-; Submitted by Science United
+; Submitted by loader3229
 ; 8,25,76,229,688,2065,6196,18589,55768,167305,501916,1505749,4517248,13551745,40655236,121965709,365897128,1097691385,3293074156,9879222469,29637667408,88913002225,266739006676,800217020029,2400651060088,7201953180265
-; Formula: a(n) = 17*floor((3^n)/6)+8
+; Formula: a(n) = floor((17*3^n)/6)
 
 #offset 1
 
 mov $1,3
 pow $1,$0
 mov $0,$1
-div $0,6
 mul $0,17
-add $0,8
+div $0,6

@@ -1,7 +1,7 @@
 ; A056191: Characteristic cube divisor of n: cube of g = gcd(K,F), where K is the largest square root divisor of n (A000188) and F = n/(K*K) = A007913(n) is its squarefree part; g^2 divides K^2 = A008833(n) = g^2*L^2 and g divides F = gf.
 ; Submitted by trigggl
 ; 1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,27,1,1,1,1,8,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,27,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1
-; Formula: a(n) = (truncate((truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/A019554(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)+1))+1)^2)+1)/2)^2))+1)^3
+; Formula: a(n) = (truncate((truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/(truncate(sqrtint(4*(truncate(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/A019554(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)+1))+1)^2)/2)^2))+1)^3
 
 #offset 1
 
@@ -30,7 +30,6 @@ gcd $5,$6
 mov $0,$6
 div $0,$5
 sub $0,1
-mov $12,0
 max $12,$0
 mov $11,$12
 add $12,1
@@ -41,7 +40,6 @@ add $10,1
 pow $10,2
 mul $10,4
 nrt $10,2
-add $10,1
 div $10,2
 pow $10,2
 mov $9,$0

@@ -1,25 +1,36 @@
 ; A049434: Stirling numbers of second kind: 8th column of Stirling2 triangle A008277.
-; Submitted by LCB001
+; Submitted by loader3229
 ; 1,36,750,11880,159027,1899612,20912320,216627840,2141764053,20415995028,189036065010,1709751003480,15170932662679,132511015347084,1142399079991620,9741955019900400,82318282158320505,690223721118368580,5749622251945664950
+; Formula: a(n) = truncate((8^n+70*4^n+28*6^n+28*2^n-8*7^n-56*5^n-56*3^n)/40320)
 
 #offset 8
 
-sub $0,1
-mov $1,$0
-sub $0,6
-mov $3,$1
-sub $3,$0
-add $3,2
-lpb $3
-  mov $6,$3
-  pow $6,$1
-  sub $3,1
-  mov $2,-1
-  sub $2,$3
-  bin $2,$5
-  mul $2,$6
-  add $4,$2
-  add $5,1
-lpe
-mov $0,$4
-div $0,5040
+mov $2,2
+pow $2,$0
+mul $2,28
+mov $1,$2
+mov $2,3
+pow $2,$0
+mul $2,-56
+add $1,$2
+mov $2,4
+pow $2,$0
+mul $2,70
+add $1,$2
+mov $2,5
+pow $2,$0
+mul $2,-56
+add $1,$2
+mov $2,6
+pow $2,$0
+mul $2,28
+add $1,$2
+mov $2,7
+pow $2,$0
+mul $2,-8
+add $1,$2
+mov $2,8
+pow $2,$0
+add $1,$2
+mov $0,$1
+div $0,40320

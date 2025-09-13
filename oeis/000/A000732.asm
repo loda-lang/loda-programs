@@ -39,7 +39,16 @@ lpb $2
   mov $4,$2
   add $4,1
   max $4,1
-  seq $4,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  sub $4,1
+  mov $10,$4
+  dif $10,$4
+  add $10,1
+  trn $4,1
+  add $4,1
+  seq $4,40 ; The prime numbers.
+  mul $10,$4
+  mov $4,$10
+  div $4,2
   mul $4,$6
   add $0,$4
 lpe

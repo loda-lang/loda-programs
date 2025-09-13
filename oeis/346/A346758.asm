@@ -8,5 +8,4 @@ mov $1,$0
 seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
 div $1,2
 dif $1,2
-sub $0,1
 mov $0,$1

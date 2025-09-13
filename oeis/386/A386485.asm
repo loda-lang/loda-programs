@@ -9,5 +9,4 @@ sub $0,5
 mul $0,$1
 add $0,2
 equ $1,0
-mul $1,-1
-add $0,$1
+sub $0,$1

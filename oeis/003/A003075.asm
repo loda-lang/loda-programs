@@ -18,7 +18,6 @@ lpb $5
     lpb $3
       mov $4,$0
       mod $4,$2
-      neq $4,0
       sub $2,1
       sub $3,$4
     lpe

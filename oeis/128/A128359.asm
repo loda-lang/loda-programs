@@ -1,18 +1,39 @@
 ; A128359: A007376(8n+5).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 5,1,5,9,3,7,1,5,9,3,7,1,5,9,3,7,1,5,9,3,7,1,5,9,0,1,7,1,1,5,1,1,3,2,1,1,3,1,9,4,1,7,5,1,5,5,1,3,6,1,1,7,1,9,8,1,7,9,1,5,9,2,3,0,2,1,1,2,9,2,2,7,3,2,5,3,2,3,4,2
 
-add $0,1
+mul $0,8
+add $0,3
+mov $5,1
 mov $2,$0
-mul $2,8
-add $2,3
-mov $1,-1
-add $1,$2
 lpb $2
-  pow $2,0
-  mov $0,$1
-  sub $0,$2
-  trn $0,5
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
-  min $1,3
+  sub $2,1
+  mov $6,$4
+  mov $1,10
+  pow $1,$5
+  mov $4,$5
+  mul $4,$1
+  div $1,9
+  sub $4,$1
+  mov $3,$0
+  geq $3,$4
+  mul $2,$3
+  add $5,$3
 lpe
+add $0,1
+mov $3,$0
+sub $3,$6
+mod $3,$5
+mov $2,$5
+sub $2,$3
+sub $2,1
+mov $3,10
+pow $3,$2
+mov $4,10
+pow $4,$5
+div $4,10
+sub $0,$6
+div $0,$5
+add $0,$4
+div $0,$3
+mod $0,10

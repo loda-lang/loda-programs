@@ -1,13 +1,37 @@
 ; A007693: Primes p such that 6*p + 1 is also prime.
 ; Submitted by ledwards
 ; 2,3,5,7,11,13,17,23,37,47,61,73,83,101,103,107,131,137,151,173,181,233,241,257,263,271,277,283,293,311,313,331,347,367,373,397,443,461,467,503,557,577,593,601,607,641,653,661,683,727,751,761,773,787,797,853,863,887,907,937,941,947,971,1013,1033,1061,1063,1091,1103,1117,1151,1171,1193,1201,1283,1321,1327,1361,1381,1423
-; Formula: a(n) = truncate((A216880(n)-4)/3)+2
 
 #offset 1
 
 mov $1,$0
-seq $1,216880 ; Numbers of the form 3p - 2 where p and 6p + 1 are prime.
+sub $1,1
+mov $2,0
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,40 ; The prime numbers.
+  mov $7,2
+  mul $7,$4
+  add $4,$7
+  mul $4,2
+  mov $6,$4
+  add $4,1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
+  trn $3,1
+lpe
+mov $1,$6
+div $1,2
 mov $0,$1
-sub $0,4
+sub $0,6
 div $0,3
 add $0,2
+sub $1,2

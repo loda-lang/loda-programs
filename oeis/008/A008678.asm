@@ -9,7 +9,26 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,8674 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)*(1-x^7)*(1-x^9)).
+  mov $6,$0
+  pow $6,3
+  mul $6,50
+  mov $7,$0
+  pow $7,2
+  mul $7,855
+  mov $8,$0
+  mul $8,6030
+  mov $10,$0
+  mod $10,3
+  mov $9,$0
+  mul $9,$10
+  mul $9,280
+  pow $0,4
+  add $0,$6
+  add $0,$7
+  add $0,$8
+  sub $0,$9
+  add $0,23800
+  div $0,22680
   mov $2,$3
   mul $2,$0
   add $1,$2

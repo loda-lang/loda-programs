@@ -8,7 +8,6 @@ mov $2,1
 fac $2,$0
 mov $1,$0
 equ $1,1
-mul $1,-1
 add $0,1
 mul $0,$2
-add $0,$1
+sub $0,$1

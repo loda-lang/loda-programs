@@ -1,9 +1,9 @@
 ; A265281: Decimal representation of the n-th iteration of the "Rule 86" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Mumps
+; Submitted by Science United
 ; 1,7,19,123,275,1915,4627,32379,67347,463739,1276435,8001147,18245395,124220283,309475859,2134808187,4354074387,30225757051,82642024979,530573137531,1175676118803,8199373878139,19977819994643,139441424012923,286691477808915,2004433876841339,5421800950151699,34563553646843515,77953756128470803,535433110028055419,1316891645684038163,9211475450147870331,18494326840147175187,129370171821977269115,351245807170796468755,2272807130665421870715,5085084727834896885523,35295329100488091399035
+; Formula: a(n) = 2*A030109(A110240(n))+1
 
 seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
-seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-mul $0,486
-dif $0,3
-div $0,162
+seq $0,30109 ; Write n in binary, reverse bits, subtract 1, divide by 2.
+mul $0,2
+add $0,1

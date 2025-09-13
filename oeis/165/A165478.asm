@@ -1,16 +1,10 @@
 ; A165478: Positions of zeros in A165477.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,131070,131071,262141,262142,393212,393213,524283,524284,655354,655355,786425,786426,917496,917497,1048567,1048568,1179638,1179639,1310709,1310710,1441780,1441781,1572851,1572852,1703922,1703923
+; Formula: a(n) = 131070*n-131069*floor(n/2)
 
-add $0,1
 mov $1,$0
-lpb $0
-  sub $0,2
-lpe
-lpb $1
-  sub $1,2
-  mov $2,16
-  seq $2,130752 ; Binomial transform of periodic sequence (2, 3, 1).
-  add $0,$2
-lpe
-sub $0,1
+div $1,2
+mul $1,-131069
+mul $0,131070
+add $0,$1

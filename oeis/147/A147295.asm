@@ -4,9 +4,6 @@
 
 mov $1,$0
 add $1,1
-mov $8,0
-mov $10,0
-mov $11,0
 mov $6,$1
 mul $6,8
 nrt $6,2

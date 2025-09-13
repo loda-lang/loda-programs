@@ -1,13 +1,29 @@
 ; A384998: Total number of partitions of all numbers <= n with designated summands, n >= 0.
-; Submitted by KetamiNO [YouTube]
+; Submitted by Science United
 ; 1,2,5,10,20,35,63,104,173,275,435,666,1018,1516,2248,3275,4745,6776,9632,13528,18910,26182,36078,49311,67111,90690,122052,163271,217559,288350,380806,500504,655601,855113,1111777,1439911,1859347,2392509,3069921,3926494,5008778,6370457,8082185,10225703,12907319,16250699,20414603,25584461,31996149,39925526,49720595,61789347,76641991,94877662,117240650,144605175,178050663,218845935,268547999,328987682,402400450,491413772,599221088,729575267,887016689,1076879063,1305590375,1580695723,1911255409
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A077285(n), b(0) = 0
 
+add $0,2
 lpb $0
-  mov $2,$0
-  seq $2,77285 ; Number of partitions of n with designated summands.
   sub $0,1
-  add $1,$2
+  trn $5,$9
+  mov $6,1
+  mul $10,$4
+  mov $4,$2
+  lpb $4
+    mov $7,$4
+    seq $7,258210 ; Expansion of f(-q) * f(-q^2) * chi(-q^3) in powers of q where chi(), f() are Ramanujan theta functions.
+    mov $9,10
+    add $9,$5
+    sub $4,1
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  div $3,-1
+  mov $$9,$3
+  add $2,1
 lpe
-mov $0,$1
-add $0,1
+mov $0,$6

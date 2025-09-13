@@ -4,29 +4,19 @@
 
 #offset 1
 
-mov $2,1
-add $2,1
-mov $6,1
-sub $0,1
-lpb $0
+add $0,1
+mov $3,$0
+mov $1,2
+lpb $1
+  sub $1,1
+  sub $3,1
+  add $0,$1
   sub $0,1
-  add $2,1
-  mov $5,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    add $2,$7
-    gcd $7,$2
-    equ $7,$$9
-    add $5,2
-    add $6,1
-  lpe
-  add $6,1
-  mov $3,$6
-  mov $$9,$3
+  mov $2,$0
+  max $2,0
+  seq $2,81688 ; 0 followed by A030124 - 1.
 lpe
-mov $0,$5
-div $0,2
+min $3,1
+mul $3,$2
+mov $0,$3
 add $0,1

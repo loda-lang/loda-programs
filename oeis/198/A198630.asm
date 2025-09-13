@@ -1,14 +1,25 @@
 ; A198630: Alternating sums of powers of 1,2,...,7.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,4,28,208,1540,11344,83188,607408,4416580,31986064,230784148,1659338608,11892395620,84983496784,605698755508,4306834677808,30560156566660
+; Formula: a(n) = 7^n+5^n+3^n-6^n-4^n-2^n+1
 
+mov $2,2
+pow $2,$0
+sub $1,$2
+mov $2,3
+pow $2,$0
+add $1,$2
+mov $2,4
+pow $2,$0
+sub $1,$2
+mov $2,5
+pow $2,$0
+add $1,$2
+mov $2,6
+pow $2,$0
+sub $1,$2
 mov $2,7
-lpb $2
-  add $1,$3
-  mul $1,-1
-  mov $3,$2
-  pow $3,$0
-  sub $2,1
-lpe
+pow $2,$0
+add $1,$2
+add $1,1
 mov $0,$1
-add $0,1

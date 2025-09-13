@@ -11,7 +11,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,321
-  seq $3,277547 ; a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
+  dir $3,9
+  mod $3,9
   equ $3,6
   sub $0,$3
   add $1,$4

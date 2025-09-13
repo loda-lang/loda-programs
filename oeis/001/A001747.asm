@@ -9,7 +9,16 @@ lpb $0
   sub $0,$1
   mov $2,$0
   max $2,0
-  seq $2,28815 ; a(n) = prime(n) + 1 (starting with 1).
+  mov $3,$2
+  dif $3,$2
+  add $3,1
+  trn $2,1
+  add $2,1
+  seq $2,40 ; The prime numbers.
+  mul $3,$2
+  mov $2,$3
+  div $2,2
+  add $2,1
   mov $1,$2
 lpe
 mov $0,$1

@@ -6,7 +6,19 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,1401 ; Number of partitions of n into at most 5 parts.
+  mov $3,$2
+  add $3,30
+  mul $3,$2
+  add $3,310
+  mov $4,$2
+  mod $4,2
+  mul $4,-90
+  mul $3,$2
+  add $3,$4
+  add $3,1320
+  mul $2,$3
+  div $2,2880
+  add $2,1
   add $0,5
   trn $0,7
   add $1,$2

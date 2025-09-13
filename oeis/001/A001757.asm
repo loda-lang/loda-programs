@@ -1,18 +1,20 @@
 ; A001757: Expansion of an integral: central elements of rows of triangle in A059366.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,2,9,54,450,4500,55125,771750,12502350,225042300,4538353050,99843767100,2410513805700,62673358948200,1762688220418125,52880646612543750,1698056319002793750,57733914846094987500,2084194325944029048750
 
 mov $3,1
 mov $1,$0
 lpb $1
-  mov $4,$1
+  mov $2,$1
   sub $1,1
-  mod $4,2
-  add $4,$1
-  mul $3,$4
+  mod $2,2
+  add $2,$1
+  mul $3,$2
 lpe
-mov $1,$3
-mov $2,$0
-div $2,2
-bin $0,$2
+add $0,1
+min $0,46
+sub $0,1
+mov $4,$0
+div $4,2
+bin $0,$4
 mul $0,$3

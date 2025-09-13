@@ -12,6 +12,5 @@ mov $2,$0
 pow $2,2
 mov $1,$2
 seq $1,47994 ; Unitary totient (or unitary phi) function uphi(n).
-sub $2,1
 mov $0,$1
 sub $0,1

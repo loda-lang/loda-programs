@@ -1,13 +1,25 @@
 ; A008581: Molien series for 6-dimensional complex reflection group 4.U_4 (3) of order 2^9 .3^7 .5.7.
 ; Submitted by Simon Strandgaard
 ; 1,1,2,3,5,7,10,14,19,25,33,42,54,67,84,103,126,152,183,218,259,305,358,417,485,560,645,739,845,961,1091,1233,1391,1563,1753,1960,2187,2433,2702,2993,3310,3651,4022,4420,4851,5313,5811,6344,6917,7529,8185,8884
-; Formula: a(n) = b(n+1), b(n) = b(n-7)+A001401(max(n-1,0)), b(6) = 7, b(5) = 5, b(4) = 3, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0
+; Formula: a(n) = b(n+1), b(n) = b(n-7)+truncate((max(n-1,0)*(max(n-1,0)*(max(n-1,0)*(max(n-1,0)+30)+310)-90*(max(n-1,0)%2)+1320))/2880)+1, b(6) = 7, b(5) = 5, b(4) = 3, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0
 
 add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,1401 ; Number of partitions of n into at most 5 parts.
+  mov $3,$2
+  add $3,30
+  mul $3,$2
+  add $3,310
+  mov $4,$2
+  mod $4,2
+  mul $4,-90
+  mul $3,$2
+  add $3,$4
+  add $3,1320
+  mul $2,$3
+  div $2,2880
+  add $2,1
   trn $0,7
   add $1,$2
 lpe

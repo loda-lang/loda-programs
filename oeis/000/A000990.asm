@@ -17,7 +17,15 @@ lpb $2
   seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
   mul $4,2
   sub $0,1
-  seq $0,133734 ; A000012 * A002865 as a diagonalized matrix.
+  mov $5,$0
+  mul $5,8
+  add $5,1
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  sub $0,$5
+  seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
   mul $0,$4
   add $1,$0
 lpe

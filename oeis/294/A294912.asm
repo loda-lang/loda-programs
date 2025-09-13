@@ -1,34 +1,35 @@
 ; A294912: Numbers n such that 2^(n-1), (2*n-1)*(2^((n-1)/2)), (4*ceiling((3/4)*n)-2), and (2^((n+1)/2) + floor((1/4)*n)*2^(((n+1)/2)+1)) are all congruent to 1 (mod n).
-; Submitted by Science United
+; Submitted by cargoeagle
 ; 3,11,19,43,59,67,83,107,131,139,163,179,211,227,251,283,307,331,347,379,419,443,467,491,499,523,547,563,571,587,619,643,659,683,691,739,787,811,827,859,883,907,947,971,1019,1051,1091,1123,1163,1171,1187,1259
 
 #offset 1
 
-mov $3,0
-mov $1,0
-mov $2,$0
-pow $2,4
-lpb $2
+sub $0,1
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
   mov $5,0
-  max $3,$1
-  add $3,3
-  lpb $3
+  mov $1,$2
+  add $1,1
+  lpb $1
     gcd $5,3
-    mov $6,$3
-    div $6,6
+    mov $6,$1
+    add $1,$5
     lpb $6
-      mov $4,$3
+      mov $4,$1
       mod $4,$5
       add $5,2
       sub $6,$4
     lpe
-    div $3,$5
-    pow $3,2
+    div $1,$5
+    pow $1,2
     mov $5,1
   lpe
   sub $0,$5
-  add $1,8
-  sub $2,$0
+  add $2,16
+  sub $3,$0
 lpe
-mov $0,$1
-add $0,3
+mov $0,$2
+div $0,2
+add $0,2

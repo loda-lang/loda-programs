@@ -1,14 +1,15 @@
 ; A346688: Replace 4^k with (-1)^k in base-4 expansion of n.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,1,2,3,-1,0,1,2,-2,-1,0,1,-3,-2,-1,0,1,2,3,4,0,1,2,3,-1,0,1,2,-2,-1,0,1,2,3,4,5,1,2,3,4,0,1,2,3,-1,0,1,2,3,4,5,6,2,3,4,5,1,2,3,4,0,1,2,3,-1,0,1,2,-2,-1,0,1,-3,-2,-1,0,-4,-3,-2,-1
+; Formula: a(n) = truncate((5*sumdigits(n,4)-2*sumdigits(n,16))/3)
 
-mov $3,1
-lpb $0
-  mov $2,$0
-  mod $2,4
-  mul $2,$3
-  div $0,4
-  add $1,$2
-  mul $3,-1
-lpe
+mov $2,$0
+dgs $2,4
+mul $2,5
+mov $1,$2
+mov $2,$0
+dgs $2,16
+mul $2,-2
+add $1,$2
 mov $0,$1
+div $0,3

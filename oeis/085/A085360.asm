@@ -4,26 +4,16 @@
 
 #offset 1
 
-sub $0,1
-mov $4,$0
-mov $6,$0
-add $6,1
-lpb $6
-  sub $6,1
-  mov $0,$4
-  sub $0,$6
-  mov $1,$0
-  mov $2,0
-  mov $3,$0
-  add $3,1
-  lpb $3
-    sub $3,1
-    mov $0,$1
-    sub $0,$3
-    add $0,1
-    seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
-    add $2,$0
-  lpe
-  add $5,$2
+mov $3,3
+add $0,2
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  add $2,1
+  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $3,1
+  add $4,1
+  mul $2,$4
+  add $1,$2
 lpe
-mov $0,$5
+mov $0,$1
