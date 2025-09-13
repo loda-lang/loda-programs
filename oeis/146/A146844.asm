@@ -1,0 +1,30 @@
+; A146844: Number of n X n binary arrays symmetric about the diagonal and under 90 degree rotation with all ones connected only in a 1001-1111-1000 pattern in any orientation.
+; Submitted by loader3229
+; 1,1,1,1,1,1,1,1,1,1,1,1,3,3,13,13,31,31,85,85,391,391
+; Formula: a(n) = 306*floor((n-1)/20)+54*floor((n-1)/18)+18*floor((n-1)/16)+10*floor((n-1)/14)+2*floor((n-1)/12)+1
+
+#offset 1
+
+sub $0,1
+mov $2,$0
+div $2,12
+mul $2,2
+mov $1,$2
+mov $2,$0
+div $2,14
+mul $2,10
+add $1,$2
+mov $2,$0
+div $2,16
+mul $2,18
+add $1,$2
+mov $2,$0
+div $2,18
+mul $2,54
+add $1,$2
+mov $2,$0
+div $2,20
+mul $2,306
+add $1,$2
+mov $0,$1
+add $0,1
