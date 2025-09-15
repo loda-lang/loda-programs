@@ -4,14 +4,14 @@
 
 #offset 1
 
-mov $1,3
+mov $1,4
 lpb $1
-  sub $1,1
+  sub $1,2
   mov $2,$0
   seq $2,46314 ; Numbers that are divisible by exactly 10 primes with multiplicity.
 lpe
 mov $0,$2
-mul $0,32
-sub $0,32768
-div $0,4
+mul $0,512
+sub $0,524288
+div $0,64
 add $0,8192

@@ -1,5 +1,5 @@
 ; A291567: The arithmetic function uhat(n,5,2).
-; Submitted by Simon Strandgaard
+; Submitted by Chad To
 ; 1,2,3,4,5,6,7,7,7,5,7,6,7,7,5,7,7,6,7,5,7,7,7,6,5,7,7,7,7,5,7,7,7,7,5,6,7,7,7,5,7,6,7,7,5,7,7,6,7,5,7,7,7,6,5,7,7,7,7,5,7,7,7,7,5,6,7,7,7,5
 
 #offset 1
@@ -9,7 +9,7 @@ mov $4,$3
 mov $2,2
 trn $2,$3
 lpb $3
-  mov $5,$4
+  add $5,8
   lpb $5
     mov $26,$2
     equ $26,0

@@ -4,27 +4,22 @@
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  div $3,3
-  mul $3,3
-  add $3,1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $3,2
-  add $3,$4
-  add $4,1
-  sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
+lpb $0
+  sub $0,2
+  lpb $0
+    mov $2,$0
+    mov $0,0
+  lpe
+  mov $1,$2
   sub $2,1
+  gcd $2,2
+  div $1,2
+  add $1,1
+  seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $1,1
+  mul $1,3
+  add $1,$2
 lpe
 mov $0,$1
-add $0,2
-mul $0,2
+mul $0,4
+add $0,6

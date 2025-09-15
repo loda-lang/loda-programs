@@ -1,27 +1,14 @@
 ; A040793: Continued fraction for sqrt(822).
-; Submitted by Jon Maiga
+; Submitted by crashtech
 ; 28,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1
-; Formula: a(n) = truncate((9*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10)+36)/5)-8
+; Formula: a(n) = truncate((gcd(max(n,1),2)*binomial(3*gcd(n,3),gcd(n,3)))/3)
 
-sub $1,$0
-gcd $1,2
-mul $0,2
-mov $4,2
-trn $4,$0
-add $4,6
-gcd $0,$4
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-add $0,1
-mod $0,10
-sub $2,$0
+mov $2,$0
+max $2,1
 gcd $2,2
-mul $2,$0
-mov $0,$2
-mul $0,$1
-add $0,4
-mul $0,9
-div $0,5
-sub $0,8
+gcd $0,3
+mov $1,$0
+mul $0,3
+bin $0,$1
+mul $0,$2
+div $0,3

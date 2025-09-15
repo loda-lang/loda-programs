@@ -1,5 +1,5 @@
 ; A266875: Number of partially ordered sets ("posets") with n labeled elements, modulo n.
-; Submitted by Gunnar Hjern
+; Submitted by crashtech
 ; 0,1,1,3,1,3,1,3,1,3,1,3,1,3,4,3,1,9,1
 
 #offset 1
@@ -12,11 +12,9 @@ lpb $0
     mov $4,$0
     mod $4,$2
     neq $4,0
-    mov $5,$2
-    equ $5,1
-    add $2,1
-    max $4,$5
+    add $4,$1
     add $1,$3
+    add $2,1
     sub $3,$4
     add $4,1
   lpe
@@ -28,3 +26,4 @@ lpb $0
   add $2,1
 lpe
 mov $0,$3
+mod $0,10

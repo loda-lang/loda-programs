@@ -6,9 +6,11 @@
 
 mov $1,4
 lpb $1
-  sub $1,1
+  sub $1,2
   mov $2,$0
   seq $2,46314 ; Numbers that are divisible by exactly 10 primes with multiplicity.
 lpe
+sub $2,1
 mov $0,$2
 mul $0,256
+add $0,256

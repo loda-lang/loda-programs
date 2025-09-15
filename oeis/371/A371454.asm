@@ -1,15 +1,21 @@
 ; A371454: Numbers whose binary indices are all semiprimes.
-; Submitted by Science United
+; Submitted by loader3229
 ; 8,32,40,256,264,288,296,512,520,544,552,768,776,800,808,8192,8200,8224,8232,8448,8456,8480,8488,8704,8712,8736,8744,8960,8968,8992,9000,16384,16392,16416,16424,16640,16648,16672,16680,16896,16904,16928,16936,17152
-; Formula: a(n) = 8*b(n)-7376, b(n) = sign(2*sign(b(n-1)+1)+2*sign(922)-1)*bitor(abs(b(n-1)+1),abs(922)), b(0) = 0
+; Formula: a(n) = 7168*floor(n/16)+192*floor(n/4)+16*floor(n/2)+8*n
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  add $1,1
-  bor $1,922
-lpe
-mov $0,$1
+mov $2,$0
+div $2,2
+mul $2,16
+mov $1,$2
+mov $2,$0
+div $2,4
+mul $2,192
+add $1,$2
+mov $2,$0
+div $2,16
+mul $2,7168
+add $1,$2
 mul $0,8
-sub $0,7376
+add $0,$1

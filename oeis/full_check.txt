@@ -390,6 +390,7 @@ A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
 A116512: a(n) = number of positive integers each of which is <= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
 A116609: a(n) = 13^n modulo n.
+A117523: Triangular numbers for which the sum of the digits is an octagonal number.
 A118310: a(n) = gcd(n,m(n)), where m(n) is the n-th nonprime positive integer (1 or composite).
 A118480: (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
@@ -447,6 +448,7 @@ A152738: a(n) = floor((n^2)/phi).
 A158378: a(1) = 0, a(n) = gcd(A051904(n), A051903(n)) for n >= 2.
 A158919: Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).
 A160007: Deficient numbers more than 1 unit away from their predecessors.
+A162306: Irregular triangle in which row n contains the numbers <= n whose prime factors are a subset of prime factors of n.
 A162510: Dirichlet inverse of A076479.
 A165265: Concatenate the number of 1's and number of 0's in the binary expansion of n.
 A165513: Trapezoidal numbers.

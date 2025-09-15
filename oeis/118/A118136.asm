@@ -1,12 +1,16 @@
 ; A118136: a(n) = 2 + (2*n! mod n+1).
-; Submitted by trainspotting74
+; Submitted by Science United
 ; 2,2,3,2,5,2,7,2,2,2,11,2,13,2,2,2,17,2,19,2,2,2,23,2,2,2,2,2,29,2,31,2,2,2,2,2,37,2,2,2,41,2,43,2,2,2,47,2,2,2,2,2,53,2,2,2,2,2,59,2,61,2,2,2,2,2,67,2,2,2,71,2,73,2,2,2,2,2,79,2
-; Formula: a(n) = A010051(n+1)*(n-1)+2
 
-mov $1,$0
-sub $0,1
-add $1,1
-seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $1,$0
-mov $0,$1
-add $0,2
+mov $2,$0
+lpb $0
+  add $0,1
+  mov $1,2
+  pow $1,$0
+  sub $1,2
+  equ $2,2
+  gcd $0,$1
+lpe
+mov $0,$2
+max $0,1
+add $0,1

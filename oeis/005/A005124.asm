@@ -1,34 +1,18 @@
 ; A005124: Numbers k such that 8k + 3 is prime.
-; Submitted by cargoeagle
+; Submitted by mudpuppie
 ; 0,1,2,5,7,8,10,13,16,17,20,22,26,28,31,35,38,41,43,47,52,55,58,61,62,65,68,70,71,73,77,80,82,85,86,92,98,101,103,107,110,113,118,121,127,131,136,140,145,146,148,157,160,161,163,178,181,182,185,187,190,191,196,197,202,203,208,212,215,218,223,226,233,238,241,247,248,250,251,253
 
 #offset 1
 
-sub $0,1
-mov $2,2
+mov $2,3
 mov $3,$0
 pow $3,5
 lpb $3
-  mov $5,0
   mov $1,$2
-  add $1,1
-  lpb $1
-    gcd $5,3
-    mov $6,$1
-    add $1,$5
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $2,16
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,8
   sub $3,$0
 lpe
 mov $0,$2
-div $0,16
+div $0,8
