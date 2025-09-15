@@ -1,0 +1,63 @@
+; A117786: Total number of palindromic primes in base 8 with n digits.
+; Submitted by crashtech
+; 4,0,13,0,47,0,311,0,1944,0,12811,0,84424,0,575612,0,4078451,0,28998777,0,205852759,0
+
+#offset 1
+
+sub $0,1
+mov $3,$0
+mov $5,2
+lpb $5
+  sub $5,1
+  add $0,$5
+  sub $0,1
+  mov $7,$0
+  div $7,2
+  mul $7,13
+  mov $6,$7
+  mov $7,$0
+  div $7,4
+  mul $7,34
+  add $6,$7
+  mov $7,$0
+  div $7,6
+  mul $7,298
+  add $6,$7
+  mov $7,$0
+  div $7,8
+  mul $7,1897
+  add $6,$7
+  mov $7,$0
+  div $7,10
+  mul $7,12798
+  add $6,$7
+  mov $7,$0
+  div $7,12
+  mul $7,84079
+  add $6,$7
+  mov $7,$0
+  div $7,14
+  mul $7,575599
+  add $6,$7
+  mov $7,$0
+  div $7,16
+  mul $7,4076507
+  add $6,$7
+  mov $7,$0
+  div $7,18
+  mul $7,28998466
+  add $6,$7
+  mov $7,$0
+  div $7,20
+  mul $7,205839914
+  add $6,$7
+  mov $4,$6
+  add $4,4
+  mov $2,$5
+  mul $2,$4
+  add $1,$2
+lpe
+min $3,1
+mul $3,$4
+sub $1,$3
+mov $0,$1
