@@ -32,7 +32,6 @@ div $6,2
 bin $6,2
 mov $0,$2
 sub $0,$6
-mov $1,$4
 mov $5,$0
 add $5,1
 seq $5,40 ; The prime numbers.

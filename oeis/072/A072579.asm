@@ -4,6 +4,7 @@
 
 #offset 1
 
+mov $1,1
 mov $2,$0
 pow $2,4
 lpb $2
@@ -11,7 +12,6 @@ lpb $2
   seq $4,40 ; The prime numbers.
   mov $5,$4
   dgs $5,2
-  max $4,1
   log $4,2
   add $4,1
   sub $4,$5

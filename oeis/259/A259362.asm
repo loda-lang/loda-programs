@@ -6,16 +6,13 @@
 
 mov $1,$0
 mov $2,1
-mov $6,$0
-sub $6,1
 lpb $0
   div $0,2
   add $2,1
   mov $3,$1
   nrt $3,$2
-  mov $5,$6
-  nrt $5,$2
+  pow $3,$2
+  equ $3,$1
   add $4,$3
-  sub $4,$5
 lpe
 mov $0,$4

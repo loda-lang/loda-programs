@@ -1,13 +1,18 @@
 ; A380009: Numbers t whose binary expansion Sum 2^e_i has exponents e_i which are evil numbers (A001969).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,8,9,32,33,40,41,64,65,72,73,96,97,104,105,512,513,520,521,544,545,552,553,576,577,584,585,608,609,616,617,1024,1025,1032,1033,1056,1057,1064,1065,1088,1089,1096,1097,1120,1121,1128,1129,1536,1537,1544,1545,1568,1569,1576,1577,1600,1601,1608,1609,1632,1633,1640,1641
-; Formula: a(n) = b(n+1)-407, b(n) = sign(2*sign(b(n-1))+2*sign(406)-1)*bitor(abs(b(n-1)),abs(406))+1, b(0) = 0
+; Formula: a(n) = 384*floor(n/16)+16*floor(n/4)+6*floor(n/2)+n
 
-add $0,1
-lpb $0
-  sub $0,1
-  bor $1,406
-  add $1,1
-lpe
-mov $0,$1
-sub $0,407
+mov $2,$0
+div $2,2
+mul $2,6
+mov $1,$2
+mov $2,$0
+div $2,4
+mul $2,16
+add $1,$2
+mov $2,$0
+div $2,16
+mul $2,384
+add $1,$2
+add $0,$1

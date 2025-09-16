@@ -3,7 +3,9 @@
 ; 4,4,3,3,4,3,4,3,4,4,4,7,5,9,4,5,4,8,4,7,2,7,3,7,2,3,2,8,2,5,2,5,3,9,2,3,2,6,2,7,3,6,4,8,3,4,3,7,3,8,2,7,3,7,2,3,2,8,2,5,2,5,3,9,2,3,2,6,2,7,3,6,4,8,3,4,3,9,3,6
 
 mov $1,$0
-seq $1,55642 ; Number of digits in the decimal expansion of n.
+max $1,1
+log $1,10
+add $1,1
 mov $3,$1
 lpb $3
   sub $3,1
@@ -21,12 +23,14 @@ lpb $3
   lpb $7
     sub $7,1
     mov $8,$5
+    max $8,1
     seq $8,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     add $9,$8
     add $5,$4
   lpe
 lpe
 mov $2,$0
+max $2,1
 seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mul $1,$2
 sub $9,$1

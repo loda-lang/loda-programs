@@ -1,22 +1,20 @@
 ; A173841: Number of permutations of 1..n with no adjacent pair summing to n+1.
-; Submitted by Jamie Morken(w1)
+; Submitted by amazing
 ; 1,1,0,2,8,48,240,1968,13824,140160,1263360,15298560,168422400,2373073920,30865121280,496199854080,7445355724800,134510244986880,2287168006717440,45877376537395200,871804170613555200,19225435113632563200,403779880746418176000
 
-add $0,1
+mov $1,1
+mov $3,1
+mov $5,$0
+div $5,2
+mov $2,$5
 lpb $0
-  sub $0,1
-  mov $2,-2
-  pow $2,$1
-  add $4,$1
   sub $4,1
-  mov $3,$4
-  div $3,2
-  bin $3,$1
-  mul $3,$2
-  add $3,$5
-  add $1,1
-  mov $4,$0
-  mul $5,$0
-  add $5,$3
+  mul $1,$2
+  div $1,$4
+  mul $1,2
+  mul $3,$0
+  add $3,$1
+  sub $0,1
+  sub $2,1
 lpe
 mov $0,$3

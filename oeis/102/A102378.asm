@@ -1,9 +1,19 @@
 ; A102378: a(n) = a(n-1) + a([n/2]) + 1, a(1) = 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by rajab
 ; 1,3,5,9,13,19,25,35,45,59,73,93,113,139,165,201,237,283,329,389,449,523,597,691,785,899,1013,1153,1293,1459,1625,1827,2029,2267,2505,2789,3073,3403,3733,4123,4513,4963,5413,5937,6461,7059,7657,8349
-; Formula: a(n) = A000123(n)-1
 
 #offset 1
 
-seq $0,123 ; Number of binary partitions: number of partitions of 2n into powers of 2.
 sub $0,1
+mov $1,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  add $0,1
+  seq $0,8645 ; Molien series of 6 X 6 upper triangular matrices over GF( 2 ).
+  add $3,$0
+lpe
+mov $0,$3

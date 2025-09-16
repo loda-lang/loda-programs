@@ -9,7 +9,7 @@ mov $4,$3
 mov $2,2
 trn $2,$3
 lpb $3
-  add $5,8
+  add $5,4
   lpb $5
     mov $26,$2
     equ $26,0
