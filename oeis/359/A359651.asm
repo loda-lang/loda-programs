@@ -1,15 +1,12 @@
 ; A359651: Numbers with exactly three nonzero decimal digits and not ending with 0.
 ; Submitted by loader3229
 ; 111,112,113,114,115,116,117,118,119,121,122,123,124,125,126,127,128,129,131,132,133,134,135,136,137,138,139,141,142,143,144,145,146,147,148,149,151,152,153,154,155,156,157,158,159,161,162,163,164,165,166,167,168,169,171,172,173,174,175
-; Formula: a(n) = truncate((9*n-sumdigits(n-1,9)+879)/8)
+; Formula: a(n) = floor((n-1)/9)+n+110
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-dgs $2,9
-sub $1,$2
-mul $0,9
+mov $1,$0
+div $1,9
 add $0,$1
-add $0,888
-div $0,8
+add $0,111

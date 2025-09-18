@@ -1,15 +1,27 @@
 ; A174718: Triangle T(n, k, q) = (1-q^n)*( binomial(n, k) - 1 ) + 1, with q = 2, read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,-2,1,1,-13,-13,1,1,-44,-74,-44,1,1,-123,-278,-278,-123,1,1,-314,-881,-1196,-881,-314,1,1,-761,-2539,-4317,-4317,-2539,-761,1,1,-1784,-6884,-14024,-17594,-14024,-6884,-1784,1,1,-4087,-17884,-42412,-63874,-63874,-42412,-17884,-4087,1,1,-9206,-45011,-121736,-213806,-256772,-213806,-121736,-45011,-9206,1,1,-20469,-110537,-335707,-673462,-943666,-943666,-673462,-335707,-110537,-20469,1,1,-45044
+; Formula: a(n) = truncate((-2*truncate(2^truncate((sqrtint(8*n+8)-1)/2))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+2*truncate(2^truncate((sqrtint(8*n+8)-1)/2)))/2)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-  mul $2,2
-  add $2,1
-lpe
-bin $1,$0
-mul $1,$2
-sub $2,$1
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
 add $2,1
-mov $0,$2
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $4,2
+pow $4,$1
+bin $1,$0
+mov $3,2
+mul $3,$4
+mov $0,$1
+mul $1,$4
+sub $0,$1
+mul $0,2
+add $0,$3
+div $0,2

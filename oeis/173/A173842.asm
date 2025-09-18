@@ -1,22 +1,21 @@
 ; A173842: Number of permutations of 1..n with no adjacent pair summing to n+2.
-; Submitted by Jamie Morken(w1)
+; Submitted by omegaintellisys
 ; 1,1,2,2,12,48,336,1968,17760,140160,1543680,15298560,199019520,2373073920,35611269120,496199854080,8437755432960,134510244986880,2556188496691200,45877376537395200,963558923688345600,19225435113632563200,442230750973683302400
 
-add $0,1
+mov $1,1
+mov $3,1
+mov $5,$0
+sub $5,1
+div $5,2
+mov $2,$5
 lpb $0
+  sub $4,1
+  mul $1,$2
+  div $1,$4
+  mul $1,2
+  mul $3,$0
+  add $3,$1
   sub $0,1
-  mov $2,-2
-  pow $2,$1
-  add $4,$1
-  sub $4,2
-  mov $3,$4
-  div $3,2
-  bin $3,$1
-  mul $3,$2
-  add $3,$5
-  add $1,1
-  mov $4,$0
-  mul $5,$0
-  add $5,$3
+  sub $2,1
 lpe
 mov $0,$3

@@ -12,12 +12,14 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,57003 ; Write the natural numbers in groups: 1; 2,3; 4,5,6; 7,8,9,10; ... and multiply the members of each group.
+  mov $6,$0
+  bin $6,2
+  add $6,1
+  fac $6,$0
   mov $2,$3
-  mul $2,$0
-  mul $4,$3
+  mul $2,$6
   add $1,$2
-  mov $5,$0
+  mov $5,$6
 lpe
 div $1,$5
 mov $0,$1

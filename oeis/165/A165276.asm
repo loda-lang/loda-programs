@@ -1,9 +1,24 @@
 ; A165276: Number of even-indexed Fibonacci numbers in the Zeckendorf representation of n.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1,0,1,2,0,1,0,1,2,1,2,3,0,1,0,1,2,0,1,0,1,2,1,2,3,1,2,1,2,3,2,3,4,0,1,0,1,2,0,1,0,1,2,1,2,3,0,1,0,1,2,0,1,0,1,2,1,2,3,1,2,1,2,3,2,3,4,1,2,1,2,3,1,2,1,2,3,2,3,4
-; Formula: a(n) = A139351(A003714(n))
+; Formula: a(n) = 2*sumdigits(c(n),2)*sign(c(n))-sumdigits(c(n),4)*sign(c(n)), b(n) = -c(n-1)+bitor(b(n-1)+c(n-1)+2,c(n-1)), b(1) = 2, b(0) = 0, c(n) = truncate((-c(n-1)+bitor(b(n-1)+c(n-1)+2,c(n-1)))/2), c(1) = 1, c(0) = 0
 
 #offset 1
 
-seq $0,3714 ; Fibbinary numbers: if n = F(i1) + F(i2) + ... + F(ik) is the Zeckendorf representation of n (i.e., write n in Fibonacci number system) then a(n) = 2^(i1 - 2) + 2^(i2 - 2) + ... + 2^(ik - 2). Also numbers whose binary representation contains no two adjacent 1's.
-seq $0,139351 ; Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives e(n).
+lpb $0
+  sub $0,1
+  add $3,2
+  add $3,$4
+  bor $3,$4
+  sub $3,$4
+  mov $4,$3
+  div $4,2
+lpe
+mov $2,$4
+dgs $2,2
+mul $2,2
+mov $1,$2
+mov $2,$4
+dgs $2,4
+sub $1,$2
+mov $0,$1

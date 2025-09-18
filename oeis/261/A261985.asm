@@ -1,11 +1,10 @@
 ; A261985: Sum of the smaller parts of the partitions of n into two squarefree parts.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by [AF>Linux]Rogue 9
 ; 0,1,1,3,2,4,3,6,5,8,6,14,11,11,8,17,18,16,13,32,25,27,19,39,32,39,35,58,40,47,32,61,47,65,41,93,58,67,54,95,73,80,89,130,109,94,87,142,110,106,102,203,129,130,115,189,148,151,137,232,170,165,169,246,191,187,177,311,213,235,177,362,236,260,223,389,287,259,245,377
 
 #offset 1
 
 mov $2,1
-mov $10,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -17,11 +16,13 @@ lpb $0
     mov $7,$4
     trn $7,1
     add $7,1
-    seq $7,5361 ; Product of exponents of prime factorization of n.
-    sub $7,1
-    equ $7,0
+    seq $7,107078 ; Whether n has non-unitary prime divisors.
+    add $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
+    add $10,1
+    mul $10,$4
     min $10,$0
     sub $4,$0
     mul $7,$$9
@@ -30,7 +31,6 @@ lpb $0
   lpe
   mov $9,10
   add $9,$2
-  add $10,1
   mov $3,$6
   mov $$9,$3
   add $2,1

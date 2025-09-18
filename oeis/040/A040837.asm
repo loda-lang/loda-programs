@@ -1,26 +1,16 @@
 ; A040837: Continued fraction for sqrt(867).
-; Submitted by Jon Maiga
+; Submitted by Coleslaw
 ; 29,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2,4,29,4,2,58,2
-; Formula: a(n) = truncate((9*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+1
+; Formula: a(n) = truncate((gcd(max(n,1),2)*(binomial(3*gcd(n,3),gcd(n,3))+2))/3)+1
 
-sub $1,$0
-gcd $1,2
-mul $0,2
-mov $4,2
-trn $4,$0
-add $4,6
-gcd $0,$4
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-add $0,1
-mod $0,10
-sub $2,$0
+mov $2,$0
+max $2,1
 gcd $2,2
-mul $2,$0
-mov $0,$2
-mul $0,$1
-mul $0,9
-div $0,5
+gcd $0,3
+mov $1,$0
+mul $0,3
+bin $0,$1
+add $0,2
+mul $0,$2
+div $0,3
 add $0,1

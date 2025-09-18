@@ -1,35 +1,34 @@
 ; A050069: a(n) = a(n-1) + a(m) for n >= 3, where m = 2^(p+1) + 2 - n and p is the unique integer such that 2^p < n - 1 <= 2^(p+1), starting with a(1) = 1 and a(2) = 3.
-; Submitted by crashtech
+; Submitted by iBezanilla
 ; 1,3,4,7,8,15,19,22,23,45,64,79,87,94,98,101,102,203,301,395,482,561,625,670,693,715,734,749,757,764,768,771,772,1543,2311,3075,3832,4581,5315,6030,6723,7393,8018,8579,9061,9456,9757,9960,10062,10163,10261,10355,10442,10521,10585,10630,10653,10675,10694,10709,10717,10724,10728,10731,10732,21463,32191,42915,53632,64341,75035,85710,96363,106993,117578,128099,138541,148896,159157,169320
 
 #offset 1
 
-mov $3,1
-mov $6,3
-sub $6,1
+mov $6,1
 sub $0,1
 lpb $0
   sub $0,1
-  div $10,2
+  add $6,1
   mov $4,$2
   lpb $4
     trn $4,1
     mov $5,$4
     mov $7,$4
     add $7,$2
-    seq $7,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+    add $7,1
+    seq $7,593 ; Sum of odd divisors of n.
     equ $7,1
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     add $6,$7
   lpe
   mov $9,10
   add $9,$2
-  mov $10,2
   mov $$9,$3
   add $2,1
   mov $3,$6
-  add $3,$10
 lpe
 mov $0,$3
+add $0,1

@@ -11,6 +11,7 @@ mov $1,$0
 mod $1,2
 lpb $1
   sub $1,1
+  max $2,1
   seq $2,1113 ; Decimal expansion of e.
 lpe
 mov $1,$0

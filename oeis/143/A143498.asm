@@ -10,6 +10,7 @@ mul $2,8
 nrt $2,2
 sub $2,1
 div $2,2
+mov $3,$2
 mov $1,$2
 add $1,1
 bin $1,2
@@ -18,13 +19,11 @@ sub $0,1
 mov $1,$2
 bin $1,$0
 sub $2,$0
-mov $3,5
-add $3,$0
 mov $0,$2
+mul $0,-1
+pow $2,0
 add $2,$3
-lpb $0
-  sub $0,1
-  mul $1,$2
-  sub $2,1
-lpe
+add $2,4
+fac $2,$0
+mul $1,$2
 mov $0,$1
