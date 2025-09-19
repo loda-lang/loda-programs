@@ -1,23 +1,12 @@
 ; A367623: Number of comma-children of n in base 3.
-; Submitted by Ralfy
+; Submitted by JohnDoe
 ; 2,1,1,0,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1
 
 #offset 1
 
-mov $1,5
-lpb $0
-  sub $0,1
-  mov $2,$1
-  add $2,$0
-  bin $2,$0
-  mul $4,2
-  add $4,4
-  add $1,1
-  mov $3,$2
-  pow $3,2
-  mul $3,$4
-  add $3,1
-  mod $3,3
-  mov $4,$3
-lpe
-mov $0,$3
+add $0,5
+mov $1,$0
+mul $1,2
+dir $0,3
+lex $1,$0
+mov $0,$1

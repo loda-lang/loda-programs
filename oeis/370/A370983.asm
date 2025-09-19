@@ -14,10 +14,7 @@ bin $1,2
 sub $0,$1
 mov $1,$2
 bin $1,$0
-pow $2,0
-sub $2,$0
-mov $0,$2
-mul $0,-1
+sub $0,1
 pow $2,0
 add $2,$3
 fac $2,$0

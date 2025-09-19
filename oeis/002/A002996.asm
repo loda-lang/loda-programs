@@ -23,15 +23,13 @@ lpb $2
   bin $4,2
   mov $9,$0
   sub $9,$4
-  mov $11,$8
-  div $11,$9
+  mov $5,$8
+  div $5,$9
   mov $10,$8
   mod $10,$9
   equ $10,0
-  seq $11,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  mul $11,$10
-  mov $4,$11
-  mov $5,0
+  seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $5,$10
   mov $7,$0
   mul $7,8
   nrt $7,2
@@ -39,13 +37,12 @@ lpb $2
   div $7,2
   bin $7,2
   sub $0,$7
-  mov $6,$0
   mul $0,2
   bin $0,$6
   add $6,1
   div $0,$6
   mul $0,5
-  mul $0,$11
+  mul $0,$5
   add $1,$0
 lpe
 mov $0,$1

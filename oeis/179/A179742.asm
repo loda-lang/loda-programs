@@ -1,12 +1,10 @@
 ; A179742: The number of syllables in each letter of the English alphabet.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1
+; Formula: a(n) = 2*(n==23)+1
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mul $1,$0
-lex $1,22
-mov $0,$1
+equ $0,23
+mul $0,2
 add $0,1

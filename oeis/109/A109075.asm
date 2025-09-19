@@ -1,5 +1,5 @@
 ; A109075: Number of primes which use each of 0-to-n decimal digits exactly once.
-; Submitted by Just Jake
+; Submitted by Science United
 ; 0,0,0,0,16,0,0,2668,0,0
 
 add $0,1
@@ -16,6 +16,7 @@ lpb $0
     mov $5,$2
     equ $5,1
     add $2,1
+    sub $3,$4
     max $4,$5
     sub $3,$4
   lpe
