@@ -1,27 +1,45 @@
 ; A010228: Continued fraction for sqrt(186).
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 13,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1,1,1,26,1,1,1,3,4,3,1
-; Formula: a(n) = b(n)+1, b(n) = max(truncate(((truncate((-1)^n)+2)*(3*truncate(A010158(n)/4)+truncate((-1)^n)+A010158(n)))/3)-6,0), b(1) = 0, b(0) = 12
+; Formula: a(n) = ((sign(n)*((n-1)%10+1))==9)+((sign(n)*((n-1)%10+1))==8)+((sign(n)*((n-1)%10+1))==7)+((sign(n)*((n-1)%10+1))==3)+((sign(n)*((n-1)%10+1))==2)+((sign(n)*((n-1)%10+1))==1)+26*((sign(n)*((n-1)%10+1))==10)+13*((sign(n)*((n-1)%10+1))==0)+4*((sign(n)*((n-1)%10+1))==5)+3*((sign(n)*((n-1)%10+1))==6)+3*((sign(n)*((n-1)%10+1))==4)
 
-mov $2,12
-lpb $0
-  sub $0,1
-  add $3,1
-  mov $4,-1
-  pow $4,$3
-  add $4,2
-  mov $1,$3
-  seq $1,10158 ; Continued fraction for sqrt(85).
-  mov $5,$1
-  div $1,4
-  mul $1,3
-  sub $1,2
-  add $1,$5
-  add $1,$4
-  mul $1,$4
-  div $1,3
-  trn $1,6
-  mov $2,$1
-lpe
+dgr $0,11
+mov $1,$0
+equ $1,0
+mul $1,13
+mov $2,$1
+mov $1,$0
+equ $1,1
+add $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+add $2,$1
+mov $1,$0
+equ $1,9
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,26
+add $2,$1
 mov $0,$2
-add $0,1

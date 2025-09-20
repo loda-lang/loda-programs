@@ -1,24 +1,49 @@
-; A044239: Numbers n such that string 6,4 occurs in the base 8 representation of n but not of n-1.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; A044239: Numbers k such that string 6,4 occurs in the base 8 representation of k but not of k-1.
+; Submitted by loader3229
 ; 52,116,180,244,308,372,416,436,500,564,628,692,756,820,884,928,948,1012,1076,1140,1204,1268,1332,1396,1440,1460,1524,1588,1652,1716,1780,1844,1908,1952,1972,2036,2100,2164,2228,2292,2356
+; Formula: a(n) = 512*floor((n-1)/9)+500*(((n-1)%9)==8)+436*(((n-1)%9)==7)+416*(((n-1)%9)==6)+372*(((n-1)%9)==5)+308*(((n-1)%9)==4)+244*(((n-1)%9)==3)+180*(((n-1)%9)==2)+116*(((n-1)%9)==1)+52*(((n-1)%9)==0)
 
 #offset 1
 
+sub $0,1
+mov $2,$0
+div $2,9
+mul $2,512
+mod $0,9
 mov $1,$0
-add $1,2
-lpb $1,8
-  add $3,$2
-  mov $2,1
-  lpb $1
-    sub $1,$2
-    mov $4,$2
-    mul $2,8
-  lpe
-lpe
-add $4,$3
-mul $4,3
-add $4,$3
-div $4,2
-mov $0,$4
-mul $0,4
-sub $0,144
+equ $1,0
+mul $1,52
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,116
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,180
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,244
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,308
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,372
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,416
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,436
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,500
+add $2,$1
+mov $0,$2

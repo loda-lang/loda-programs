@@ -1,11 +1,36 @@
 ; A216699: Digital root of cubes of Fibonacci numbers.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 0,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1,9,1,1,8,9,8,8,1
+; Formula: a(n) = ((sign(n)*((n-1)%8+1))==7)+((sign(n)*((n-1)%8+1))==2)+((sign(n)*((n-1)%8+1))==1)+9*((sign(n)*((n-1)%8+1))==8)+9*((sign(n)*((n-1)%8+1))==4)+8*((sign(n)*((n-1)%8+1))==6)+8*((sign(n)*((n-1)%8+1))==5)+8*((sign(n)*((n-1)%8+1))==3)
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-pow $0,3
-sub $0,1
-lpb $0
-  mod $0,9
-lpe
-add $0,1
+dgr $0,9
+mov $1,$0
+equ $1,1
+mov $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,9
+add $2,$1
+mov $0,$2

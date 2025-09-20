@@ -1,13 +1,31 @@
 ; A040883: Continued fraction for sqrt(914).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 30,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4,60,4,3,3,4
-; Formula: a(n) = truncate((4*truncate((2*A040319(n)+4)/6)+2*A040319(n))/2)
+; Formula: a(n) = 60*((sign(n)*((n-1)%5+1))==5)+30*((sign(n)*((n-1)%5+1))==0)+4*((sign(n)*((n-1)%5+1))==4)+4*((sign(n)*((n-1)%5+1))==1)+3*((sign(n)*((n-1)%5+1))==3)+3*((sign(n)*((n-1)%5+1))==2)
 
-seq $0,40319 ; Continued fraction for sqrt(338).
-mul $0,2
+dgr $0,6
 mov $1,$0
-add $0,4
-div $0,6
-mul $0,4
-add $0,$1
-div $0,2
+equ $1,0
+mul $1,30
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,60
+add $2,$1
+mov $0,$2

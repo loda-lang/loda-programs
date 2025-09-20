@@ -4,18 +4,13 @@
 
 #offset 4
 
-mov $1,$0
-sub $1,3
-mul $1,2
-mov $2,$1
-sub $0,3
-add $1,6
-bin $1,$2
-add $2,4
-mov $3,1
-fac $3,$2
-mul $1,$3
-div $1,24
-mul $1,$0
+mul $0,2
+sub $0,7
+mov $1,-6
+bin $1,$0
+mul $0,-1
+mov $2,-8
+fac $2,$0
+mul $1,$2
 mov $0,$1
-div $0,840
+div $0,48

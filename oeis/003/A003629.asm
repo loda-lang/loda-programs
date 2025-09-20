@@ -1,26 +1,22 @@
 ; A003629: Primes p == +- 3 (mod 8), or, primes p such that 2 is not a square mod p.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by iBezanilla
 ; 3,5,11,13,19,29,37,43,53,59,61,67,83,101,107,109,131,139,149,157,163,173,179,181,197,211,227,229,251,269,277,283,293,307,317,331,347,349,373,379,389,397,419,421,443,461,467,491,499,509,523,541,547,557,563,571,587,613,619,643,653,659,661,677,683,691,701,709,733,739,757,773,787,797,811,821,827,829,853,859
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,5
-pow $2,3
-lpb $2
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $1,27
-  mul $2,$4
-  sub $2,18
-  mov $3,$1
-  div $3,12
-  add $1,5
+mov $2,2
+mov $4,-1
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,3
+  dif $4,5
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
+  add $4,1
 lpe
-mov $0,$3
-add $0,1
+add $0,$2

@@ -1,23 +1,39 @@
 ; A040402: Continued fraction for sqrt(423).
-; Submitted by GolfSierra
+; Submitted by loader3229
 ; 20,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1,40,1,1,3,4,3,1,1
+; Formula: a(n) = ((sign(n)*((n-1)%8+1))==7)+((sign(n)*((n-1)%8+1))==6)+((sign(n)*((n-1)%8+1))==2)+((sign(n)*((n-1)%8+1))==1)+40*((sign(n)*((n-1)%8+1))==8)+20*((sign(n)*((n-1)%8+1))==0)+4*((sign(n)*((n-1)%8+1))==4)+3*((sign(n)*((n-1)%8+1))==5)+3*((sign(n)*((n-1)%8+1))==3)
 
-mov $2,$0
-mod $2,8
-mov $3,8
-sub $3,$2
-min $2,$3
-mod $2,4
-seq $0,40329 ; Continued fraction for sqrt(348).
-add $0,$2
-div $0,2
+dgr $0,9
 mov $1,$0
-mul $1,2
-add $1,5
-div $0,4
-mul $0,21
-add $0,$1
-dif $0,2
-div $0,2
-sub $0,2
-seq $0,6068 ; a(n) is Gray-coded into n.
+equ $1,0
+mul $1,20
+mov $2,$1
+mov $1,$0
+equ $1,1
+add $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,6
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,40
+add $2,$1
+mov $0,$2

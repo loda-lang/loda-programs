@@ -1,20 +1,35 @@
 ; A040285: Continued fraction for sqrt(303).
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 17,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2,2,5,2,2,34,2
+; Formula: a(n) = 34*((sign(n)*((n-1)%6+1))==6)+17*((sign(n)*((n-1)%6+1))==0)+5*((sign(n)*((n-1)%6+1))==3)+2*((sign(n)*((n-1)%6+1))==5)+2*((sign(n)*((n-1)%6+1))==4)+2*((sign(n)*((n-1)%6+1))==2)+2*((sign(n)*((n-1)%6+1))==1)
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-gcd $0,262156
-mul $0,42
-mod $0,13
-mov $2,$0
-div $2,5
-mul $2,12
-add $0,$2
-sub $0,2
-dif $0,4
+dgr $0,7
 mov $1,$0
-mul $0,2
-add $0,1
-seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
-mod $0,9
-add $0,$1
+equ $1,0
+mul $1,17
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,34
+add $2,$1
+mov $0,$2

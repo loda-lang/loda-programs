@@ -1,40 +1,49 @@
 ; A044230: Numbers n such that string 5,3 occurs in the base 8 representation of n but not of n-1.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by loader3229
 ; 43,107,171,235,299,344,363,427,491,555,619,683,747,811,856,875,939,1003,1067,1131,1195,1259,1323,1368,1387,1451,1515,1579,1643,1707,1771,1835,1880,1899,1963,2027,2091,2155,2219,2283,2347
+; Formula: a(n) = 512*floor((n-1)/9)+491*(((n-1)%9)==8)+427*(((n-1)%9)==7)+363*(((n-1)%9)==6)+344*(((n-1)%9)==5)+299*(((n-1)%9)==4)+235*(((n-1)%9)==3)+171*(((n-1)%9)==2)+107*(((n-1)%9)==1)+43*(((n-1)%9)==0)
 
 #offset 1
 
-mov $3,3
-mov $4,$0
-add $4,3
-pow $4,2
-lpb $4
-  mov $5,$3
-  add $5,1
-  seq $5,277546 ; a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
-  equ $5,6
-  sub $0,$5
-  add $3,2
-  mov $6,$0
-  max $6,0
-  equ $6,$0
-  mul $4,$6
-  sub $4,1
-  add $5,10
-lpe
-mov $0,$3
-mul $0,8
-pow $5,2
-add $5,$0
-mov $0,$5
-sub $0,90
+sub $0,1
 mov $2,$0
-add $0,1
-mod $0,4
-mul $0,2
-sub $0,79
-add $0,$2
-mov $1,8
-gcd $1,$0
-mul $1,2
-add $0,$1
+div $2,9
+mul $2,512
+mod $0,9
+mov $1,$0
+equ $1,0
+mul $1,43
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,107
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,171
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,235
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,299
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,344
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,363
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,427
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,491
+add $2,$1
+mov $0,$2

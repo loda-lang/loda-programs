@@ -1,18 +1,47 @@
 ; A040619: Continued fraction for sqrt(645).
-; Submitted by omegaintellisys
+; Submitted by loader3229
 ; 25,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1,1,2,50,2,1,1,12,10,12,1
-; Formula: a(n) = A059893(max(A059893(truncate((A040423(n)*((-1)^n+2)-2)/3)+2)-2,0)+2)
+; Formula: a(n) = ((sign(n)*((n-1)%10+1))==8)+((sign(n)*((n-1)%10+1))==7)+((sign(n)*((n-1)%10+1))==3)+((sign(n)*((n-1)%10+1))==2)+50*((sign(n)*((n-1)%10+1))==10)+25*((sign(n)*((n-1)%10+1))==0)+12*((sign(n)*((n-1)%10+1))==6)+12*((sign(n)*((n-1)%10+1))==4)+10*((sign(n)*((n-1)%10+1))==5)+2*((sign(n)*((n-1)%10+1))==9)+2*((sign(n)*((n-1)%10+1))==1)
 
-mov $1,-1
-pow $1,$0
-add $1,2
-seq $0,40423 ; Continued fraction for sqrt(445).
-mul $0,$1
-sub $0,2
-div $0,3
-add $0,2
-seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
-sub $0,1
-trn $0,1
-add $0,2
-seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
+dgr $0,11
+mov $1,$0
+equ $1,0
+mul $1,25
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,10
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,50
+add $2,$1
+mov $0,$2

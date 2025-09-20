@@ -1,22 +1,27 @@
 ; A040820: Continued fraction for sqrt(850).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 29,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6
-; Formula: a(n) = (27*truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)+3)/5)-(-1)^n+truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)+3)/3)-27)*(n%2)+27*truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)+3)/5)-(-1)^n+truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)+3)/3)-27
+; Formula: a(n) = 58*((sign(n)*((n-1)%4+1))==4)+29*((sign(n)*((n-1)%4+1))==0)+6*((sign(n)*((n-1)%4+1))==3)+6*((sign(n)*((n-1)%4+1))==1)+2*((sign(n)*((n-1)%4+1))==2)
 
+dgr $0,5
 mov $1,$0
-mod $1,2
-mov $2,-1
-pow $2,$0
-gcd $0,262156
-mul $0,42
-mod $0,13
-add $0,3
-mov $3,$0
-div $3,5
-mul $3,27
-div $0,3
-sub $0,27
-add $0,$3
-sub $0,$2
-mul $1,$0
-add $0,$1
+equ $1,0
+mul $1,29
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,58
+add $2,$1
+mov $0,$2

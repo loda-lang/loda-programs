@@ -1,31 +1,17 @@
 ; A284237: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
-; Submitted by Matthias Lehmkuhl
+; Submitted by Science United
 ; 1,0,3,5,10,21,42,85,170,341,682,1365,2730,5461,10922,21845,43690,87381,174762,349525,699050,1398101,2796202,5592405,11184810,22369621,44739242,89478485,178956970,357913941,715827882,1431655765,2863311530,5726623061,11453246122,22906492245,45812984490,91625968981,183251937962,366503875925,733007751850,1466015503701,2932031007402,5864062014805,11728124029610,23456248059221,46912496118442,93824992236885,187649984473770,375299968947541,750599937895082,1501199875790165,3002399751580330
+; Formula: a(n) = truncate((2^(n+2)+2*binomial(floor(n/2)-2,n))/6)
 
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$6
-  add $0,$4
-  sub $0,1
-  mov $2,1
-  lpb $2
-    sub $0,1
-    mov $2,$0
-  lpe
-  mov $1,2
-  pow $1,$0
-  mul $1,8
-  div $1,3
-  sub $1,$0
-  div $1,2
-  mov $3,$4
-  mul $3,$1
-  mov $0,$1
-  add $5,$3
-lpe
-min $6,1
-mul $6,$0
-mov $0,$5
-sub $0,$6
+mov $3,$0
+div $3,2
+sub $3,2
+bin $3,$0
+mov $2,$0
+add $2,2
+mov $1,2
+pow $1,$2
+mov $0,$3
+mul $0,2
+add $0,$1
+div $0,6

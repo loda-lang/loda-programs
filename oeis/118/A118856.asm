@@ -1,27 +1,49 @@
 ; A118856: Start with 1 and repeatedly place the first digit at the end of the number and add 13.
-; Submitted by sbo92
+; Submitted by loader3229
 ; 1,14,54,58,98,102,34,56,78,100,14,54,58,98,102,34,56,78,100,14,54,58,98,102,34,56,78,100,14,54,58,98,102,34,56,78,100,14,54,58,98,102,34,56,78,100,14,54,58,98,102,34,56,78,100,14,54,58,98,102,34,56,78,100,14,54
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(c(n-1),1)+1)-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/100)+truncate(b(n-1)/10)+13, b(1) = 14, b(0) = 1, c(n) = 9*min(c(n-1),1)+1, c(1) = 1, c(0) = 0
+; Formula: a(n) = ((sign(n-1)*((n-2)%9+1))==0)+102*((sign(n-1)*((n-2)%9+1))==5)+100*((sign(n-1)*((n-2)%9+1))==9)+98*((sign(n-1)*((n-2)%9+1))==4)+78*((sign(n-1)*((n-2)%9+1))==8)+58*((sign(n-1)*((n-2)%9+1))==3)+56*((sign(n-1)*((n-2)%9+1))==7)+54*((sign(n-1)*((n-2)%9+1))==2)+34*((sign(n-1)*((n-2)%9+1))==6)+14*((sign(n-1)*((n-2)%9+1))==1)
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $3,$1
-  div $3,100
-  mov $2,$1
-  div $2,10
-  mod $2,10
-  add $2,$3
-  add $2,5
-  min $4,1
-  mul $4,9
-  add $4,1
-  mod $1,10
-  mul $1,$4
-  add $1,$2
-  add $1,8
-lpe
-mov $0,$1
+dgr $0,10
+mov $1,$0
+equ $1,0
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,14
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,54
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,58
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,98
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,102
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,34
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,56
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,78
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,100
+add $2,$1
+mov $0,$2

@@ -1,19 +1,39 @@
 ; A040265: Continued fraction for sqrt(282).
-; Submitted by Science United
+; Submitted by loader3229
 ; 16,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1,32,1,3,1,4,1,3,1
+; Formula: a(n) = ((sign(n)*((n-1)%8+1))==7)+((sign(n)*((n-1)%8+1))==5)+((sign(n)*((n-1)%8+1))==3)+((sign(n)*((n-1)%8+1))==1)+32*((sign(n)*((n-1)%8+1))==8)+16*((sign(n)*((n-1)%8+1))==0)+4*((sign(n)*((n-1)%8+1))==4)+3*((sign(n)*((n-1)%8+1))==6)+3*((sign(n)*((n-1)%8+1))==2)
 
-dif $0,3
-dif $0,7
+dgr $0,9
 mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $2,$4
-  equ $4,0
-  add $5,$2
-  mov $3,$5
-  seq $3,40249 ; Continued fraction for sqrt(266).
-  mul $3,$4
-  add $3,$2
-lpe
-mov $0,$3
+equ $1,0
+mul $1,16
+mov $2,$1
+mov $1,$0
+equ $1,1
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,32
+add $2,$1
+mov $0,$2

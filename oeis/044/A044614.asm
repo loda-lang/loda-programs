@@ -1,30 +1,49 @@
 ; A044614: Numbers n such that string 5,6 occurs in the base 8 representation of n but not of n+1.
-; Submitted by WTBroughton
+; Submitted by loader3229
 ; 46,110,174,238,302,366,375,430,494,558,622,686,750,814,878,887,942,1006,1070,1134,1198,1262,1326,1390,1399,1454,1518,1582,1646,1710,1774,1838,1902,1911,1966,2030,2094,2158,2222,2286,2350
+; Formula: a(n) = 512*floor((n-1)/9)+494*(((n-1)%9)==8)+430*(((n-1)%9)==7)+375*(((n-1)%9)==6)+366*(((n-1)%9)==5)+302*(((n-1)%9)==4)+238*(((n-1)%9)==3)+174*(((n-1)%9)==2)+110*(((n-1)%9)==1)+46*(((n-1)%9)==0)
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-add $0,1
-add $2,4
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,277546 ; a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
-  sub $3,1
-  equ $3,6
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-mul $0,8
-add $3,$0
-mov $0,$3
-sub $0,66
+div $2,9
+mul $2,512
+mod $0,9
+mov $1,$0
+equ $1,0
+mul $1,46
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,110
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,174
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,238
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,302
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,366
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,375
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,430
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,494
+add $2,$1
+mov $0,$2

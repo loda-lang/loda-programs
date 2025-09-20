@@ -1,14 +1,45 @@
 ; A103621: Trajectory of 7 under repeated application of the map n -> A102370(n).
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 7,9,11,13,23,25,27,61,71,73,75,77,87,89,91,125,135,137,139,141,151,153,155,189,199,201,203,205,215,217,219,253,263,265,267,269,279,281,283,317,327,329,331,333,343,345,347,381,391,393,395,397,407,409,411,445
-; Formula: a(n) = b(n-1), b(n) = A102370(b(n-1)), b(0) = 7
+; Formula: a(n) = 64*floor((n-1)/8)+61*(((n-1)%8)==7)+27*(((n-1)%8)==6)+25*(((n-1)%8)==5)+23*(((n-1)%8)==4)+13*(((n-1)%8)==3)+11*(((n-1)%8)==2)+9*(((n-1)%8)==1)+7*(((n-1)%8)==0)
 
 #offset 1
 
-mov $1,7
 sub $0,1
-lpb $0
-  sub $0,1
-  seq $1,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
-lpe
-mov $0,$1
+mov $2,$0
+div $2,8
+mul $2,64
+mod $0,8
+mov $1,$0
+equ $1,0
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,13
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,23
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,25
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,27
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,61
+add $2,$1
+mov $0,$2

@@ -1,28 +1,45 @@
 ; A044557: Numbers n such that string 5,3 occurs in the base 7 representation of n but not of n+1.
-; Submitted by XreiterD
+; Submitted by loader3229
 ; 38,87,136,185,234,272,283,332,381,430,479,528,577,615,626,675,724,773,822,871,920,958,969,1018,1067,1116,1165,1214,1263,1301,1312,1361,1410,1459,1508,1557,1606,1644,1655,1704,1753,1802
+; Formula: a(n) = 343*floor((n-1)/8)+332*(((n-1)%8)==7)+283*(((n-1)%8)==6)+272*(((n-1)%8)==5)+234*(((n-1)%8)==4)+185*(((n-1)%8)==3)+136*(((n-1)%8)==2)+87*(((n-1)%8)==1)+38*(((n-1)%8)==0)
 
 #offset 1
 
-mov $1,$0
 sub $0,1
-add $1,2
-lpb $1,8
-  add $3,$2
-  mul $4,6
-  mov $2,1
-  mul $5,2
-  lpb $1
-    sub $1,$2
-    mov $4,$2
-    mov $5,$2
-    mul $2,7
-  lpe
-lpe
-mul $3,7
-add $4,$3
-mul $4,6
-mov $0,$4
-add $0,$5
-div $0,6
-sub $0,115
+mov $2,$0
+div $2,8
+mul $2,343
+mod $0,8
+mov $1,$0
+equ $1,0
+mul $1,38
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,87
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,136
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,185
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,234
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,272
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,283
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,332
+add $2,$1
+mov $0,$2

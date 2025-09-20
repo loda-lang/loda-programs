@@ -1,17 +1,23 @@
 ; A326124: a(n) is the sum of all divisors of the first n positive even numbers.
+; Submitted by Science United
 ; 3,10,22,37,55,83,107,138,177,219,255,315,357,413,485,548,602,693,753,843,939,1023,1095,1219,1312,1410,1530,1650,1740,1908,2004,2131,2275,2401,2545,2740,2854,2994,3162,3348,3474,3698,3830,4010,4244,4412,4556,4808,4979,5196,5412,5622,5784,6064,6280,6528,6768,6978,7158,7518,7704,7928,8240,8495,8747,9083,9287,9557,9845,10181,10397,10800,11022,11288,11660,11960,12248,12640,12880,13258
-; Formula: a(n) = b(n-1)+3, b(n) = b(n-1)+A000203(2*n+2), b(0) = 0
 
 #offset 1
 
-sub $0,1
 lpb $0
-  mov $2,$0
-  mul $2,2
-  add $2,2
-  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $0,1
-  add $1,$2
+  mov $1,$2
+  add $1,1
+  mul $1,2
+  mov $4,$1
+  sub $4,1
+  mov $5,$1
+  dir $5,2
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $6,$1
+  bxo $6,$4
+  mul $6,$5
+  add $2,1
+  add $3,$6
 lpe
-add $1,3
-mov $0,$1
+mov $0,$3

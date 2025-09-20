@@ -1,11 +1,59 @@
 ; A309075: Total number of black cells after n iterations of Langton's ant with two ants on the grid placed side-by-side on neighboring squares and initially looking in the same direction.
+; Submitted by loader3229
 ; 0,2,2,4,6,6,8,8,8,6,6,4,2,2,0,2,2,4,6,6,8,8,8,6,6,4,2,2,0,2,2,4,6,6,8,8,8,6,6,4,2,2,0,2,2,4,6,6,8,8,8,6,6,4,2,2,0,2,2,4,6,6,8,8,8,6,6,4,2,2,0,2,2,4,6,6,8,8,8,6
-; Formula: a(n) = 2*A279313(n)-2*truncate(A259626(A279313(n)+1)/3)
+; Formula: a(n) = 8*((n%14)==8)+8*((n%14)==7)+8*((n%14)==6)+6*((n%14)==10)+6*((n%14)==9)+6*((n%14)==5)+6*((n%14)==4)+4*((n%14)==11)+4*((n%14)==3)+2*((n%14)==13)+2*((n%14)==12)+2*((n%14)==2)+2*((n%14)==1)
 
-seq $0,279313 ; Period 14 zigzag sequence: repeat [0,1,2,3,4,5,6,7,6,5,4,3,2,1].
+mod $0,14
 mov $1,$0
-add $1,1
-seq $1,259626 ; List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
-div $1,3
-sub $0,$1
-mul $0,2
+equ $1,1
+mul $1,2
+mov $2,$1
+mov $1,$0
+equ $1,2
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,2
+add $2,$1
+mov $0,$2

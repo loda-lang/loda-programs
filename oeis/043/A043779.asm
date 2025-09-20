@@ -7,5 +7,4 @@
 
 mov $1,$0
 seq $1,43583 ; Numbers whose base-3 representation has exactly 3 runs.
-sub $0,1
 mov $0,$1

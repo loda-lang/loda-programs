@@ -1,21 +1,15 @@
 ; A067473: Smallest n-digit square starting with 3.
-; Submitted by Simon Strandgaard
+; Submitted by Just Jake
 ; 36,324,3025,30276,300304,3003289,30008484,300017041,3000081529,30000318436,300000484729,3000000666601,30000004655076,300000032019081,3000000027329536,30000000084216561,300000000542063364
+; Formula: a(n) = (sqrtint(3*10^(n-1))+1)^2
 
 #offset 2
 
-sub $0,2
-mov $2,$0
-mov $0,10
-pow $0,$2
-mov $1,$0
-mul $1,30
-mul $0,5
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
-add $0,1
+sub $0,1
+mov $1,10
+pow $1,$0
+mul $1,3
+nrt $1,2
+add $1,1
+mov $0,$1
 pow $0,2

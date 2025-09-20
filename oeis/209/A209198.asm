@@ -1,5 +1,5 @@
 ; A209198: a(n) = 1 if n not == 2 (mod 4) and relatively prime to 63 otherwise 0.
-; Submitted by [BOINCstats] CRNabein
+; Submitted by Science United
 ; 1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,0,0,1,1
 
 #offset 1
@@ -18,8 +18,8 @@ lpb $1
   mov $0,$2
   sub $0,1
   lpb $0
-    equ $4,$0
     mov $0,0
+    sub $1,1
   lpe
 lpe
 mov $0,$4

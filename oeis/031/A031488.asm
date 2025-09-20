@@ -1,32 +1,61 @@
 ; A031488: Numbers whose base-8 representation has one more 0 than 7's.
-; Submitted by stoneageman
+; Submitted by loader3229
 ; 8,16,24,32,40,48,65,66,67,68,69,70,72,80,88,96,104,112,129,130,131,132,133,134,136,144,152,160,168,176,193,194,195,196,197,198,200,208,216,224,232,240,257,258,259,260,261,262,264,272
+; Formula: a(n) = 70*(((n-1)%12)==11)+69*(((n-1)%12)==10)+68*(((n-1)%12)==9)+67*(((n-1)%12)==8)+66*(((n-1)%12)==7)+65*(((n-1)%12)==6)+64*floor((n-1)/12)+48*(((n-1)%12)==5)+40*(((n-1)%12)==4)+32*(((n-1)%12)==3)+24*(((n-1)%12)==2)+16*(((n-1)%12)==1)+8*(((n-1)%12)==0)
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,2
-pow $2,4
-lpb $2
-  sub $2,1
-  mov $4,1
-  mov $3,$1
-  add $3,2
-  seq $3,8539 ; Numbers that do not contain the letter `s'.
-  lpb $3
-    mov $5,$3
-    add $5,5
-    mod $5,10
-    seq $5,131533 ; Period 6: repeat [0, 0, 0, 0, 1, -1].
-    div $3,10
-    add $4,$5
-  lpe
-  mov $3,$4
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  sub $2,$0
-lpe
-mov $0,$1
-add $0,1
+mov $2,$0
+div $2,12
+mul $2,64
+mod $0,12
+mov $1,$0
+equ $1,0
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,16
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,24
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,32
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,40
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,48
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,65
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,66
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,67
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,68
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,69
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,70
+add $2,$1
+mov $0,$2

@@ -1,19 +1,35 @@
 ; A009282: Expansion of e.g.f.: exp(x + sin(x)).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,2,4,7,8,-7,-74,-209,-40,2441,10954,6667,-185524,-1041739,-510530,26716831,158378768,-47260303,-6226501934,-34323431789,71521515284,2087815263725,9437342779558,-55046954388953,-923175950185960,-2736047549718871,43387645616657338
 
-mov $3,$0
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  mov $2,$0
-  add $2,$1
-  bin $2,$0
-  seq $0,2017 ; Expansion of e.g.f. exp(sin(x)).
-  mul $2,$0
-  add $4,$2
-lpe
-mov $0,$4
+mov $2,1
+mov $6,1
 add $0,1
+lpb $0
+  sub $0,1
+  mov $5,2
+  mov $4,$2
+  lpb $4
+    mov $8,$4
+    add $8,3
+    seq $8,101455 ; a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
+    mov $9,20
+    add $9,$5
+    sub $4,1
+    mul $7,$1
+    add $7,$0
+    add $7,$4
+    sub $7,1
+    bin $7,$0
+    mul $7,$$9
+    mul $7,$8
+    sub $9,1
+    add $5,1
+    add $6,$7
+  lpe
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+mov $0,$3

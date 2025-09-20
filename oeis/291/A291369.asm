@@ -1,18 +1,28 @@
 ; A291369: The arithmetic function u(n,3,7).
-; Submitted by mmonnin
+; Submitted by amazing
 ; 15,15,3,4,5,3,7,4,3,5,11,3,13,7,3,4,15,3,15,4,3,11,15,3,5,13,3,4,15,3,15,4,3,15,5,3,15,15,3,4,15,3,15,4,3,15,15,3,7,5,3,4,15,3,5,4,3,15,15,3,15,15,3,4,5,3,15,4,3,5
 
 #offset 1
 
-mov $2,$0
-mov $3,12
+sub $0,1
+mov $1,2
+add $1,$0
+mov $0,1
 lpb $0
-  lpb $2,5
-    mov $3,$2
-    dif $3,$0
-    sub $3,3
+  add $0,1
+  add $2,2
+  add $3,7
+  mul $3,$0
+  sub $3,2
+  lpb $3
+    add $2,1
+    mov $4,$1
+    mod $4,$2
+    neq $4,1
+    sub $3,$4
   lpe
-  sub $0,1
+  mov $1,1
+  add $2,1
+  div $0,$2
 lpe
-mov $0,$3
-add $0,3
+mov $0,$2

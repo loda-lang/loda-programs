@@ -1,23 +1,45 @@
 ; A044563: Numbers n such that string 6,2 occurs in the base 7 representation of n but not of n+1.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 44,93,142,191,240,289,314,338,387,436,485,534,583,632,657,681,730,779,828,877,926,975,1000,1024,1073,1122,1171,1220,1269,1318,1343,1367,1416,1465,1514,1563,1612,1661,1686,1710,1759,1808
+; Formula: a(n) = 343*floor((n-1)/8)+338*(((n-1)%8)==7)+314*(((n-1)%8)==6)+289*(((n-1)%8)==5)+240*(((n-1)%8)==4)+191*(((n-1)%8)==3)+142*(((n-1)%8)==2)+93*(((n-1)%8)==1)+44*(((n-1)%8)==0)
 
 #offset 1
 
-add $0,1
+sub $0,1
+mov $2,$0
+div $2,8
+mul $2,343
+mod $0,8
 mov $1,$0
-lpb $1,8
-  add $3,$2
-  max $4,2
-  mul $4,5
-  mov $2,1
-  lpb $1
-    sub $1,$2
-    mov $4,$2
-    mul $2,7
-  lpe
-lpe
-mul $3,7
-add $4,$3
-mov $0,$4
-sub $0,64
+equ $1,0
+mul $1,44
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,93
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,142
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,191
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,240
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,289
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,314
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,338
+add $2,$1
+mov $0,$2

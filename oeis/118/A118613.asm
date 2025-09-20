@@ -1,33 +1,49 @@
 ; A118613: Start with 1 and repeatedly reverse the digits and add 27 to get the next term.
 ; Submitted by loader3229
 ; 1,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+27, b(0) = 1
+; Formula: a(n) = ((sign(n-1)*((n-2)%9+1))==0)+928*((sign(n-1)*((n-2)%9+1))==3)+856*((sign(n-1)*((n-2)%9+1))==4)+685*((sign(n-1)*((n-2)%9+1))==5)+613*((sign(n-1)*((n-2)%9+1))==6)+370*((sign(n-1)*((n-2)%9+1))==8)+343*((sign(n-1)*((n-2)%9+1))==7)+109*((sign(n-1)*((n-2)%9+1))==2)+100*((sign(n-1)*((n-2)%9+1))==9)+28*((sign(n-1)*((n-2)%9+1))==1)
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $3,$1
-  div $3,100
-  mov $2,$1
-  div $2,10
-  mod $2,10
-  mov $4,$3
-  min $4,1
-  mul $4,9
-  add $4,1
-  mod $1,10
-  mul $1,$4
-  mul $2,$4
-  add $2,$3
-  mov $4,$2
-  min $4,1
-  mul $4,9
-  add $4,1
-  mul $1,$4
-  add $1,$2
-  add $1,27
-lpe
-mov $0,$1
+dgr $0,10
+mov $1,$0
+equ $1,0
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,28
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,109
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,928
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,856
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,685
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,613
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,343
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,370
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,100
+add $2,$1
+mov $0,$2

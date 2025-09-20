@@ -1,21 +1,100 @@
 ; A090277: "Plain Bob Minimus" in bell-ringing is a sequence of permutations p_1=(1,2,3,4), p_2=(2,1,4,3), .. which runs through all permutations of {1,2,3,4} with period 24; sequence gives number in position 1 of n-th permutation.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,2,4,4,3,3,1,1,3,3,2,2,4,4,1,1,4,4,3,3,2,2,1,1,2,2,4,4,3,3,1,1,3,3,2,2,4,4,1,1,4,4,3,3,2,2,1,1,2,2,4,4,3,3,1,1,3,3,2,2,4,4,1,1,4,4,3,3,2,2,1,1,2,2,4,4,3,3,1
+; Formula: a(n) = (((n-1)%24)==23)+(((n-1)%24)==16)+(((n-1)%24)==15)+(((n-1)%24)==8)+(((n-1)%24)==7)+(((n-1)%24)==0)+4*(((n-1)%24)==18)+4*(((n-1)%24)==17)+4*(((n-1)%24)==14)+4*(((n-1)%24)==13)+4*(((n-1)%24)==4)+4*(((n-1)%24)==3)+3*(((n-1)%24)==20)+3*(((n-1)%24)==19)+3*(((n-1)%24)==10)+3*(((n-1)%24)==9)+3*(((n-1)%24)==6)+3*(((n-1)%24)==5)+2*(((n-1)%24)==22)+2*(((n-1)%24)==21)+2*(((n-1)%24)==12)+2*(((n-1)%24)==11)+2*(((n-1)%24)==2)+2*(((n-1)%24)==1)
 
 #offset 1
 
+sub $0,1
+mod $0,24
 mov $1,$0
-lpb $1
-  sub $1,1
-  div $0,2
-  mod $0,4
-  mov $2,1
-  lpb $2
-    sub $2,1
-    mul $0,3
-    add $0,1
-  lpe
-  sub $1,1
-lpe
-div $0,3
-add $0,1
+equ $1,0
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,14
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,15
+add $2,$1
+mov $1,$0
+equ $1,16
+add $2,$1
+mov $1,$0
+equ $1,17
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,18
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,19
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,20
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,21
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,22
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,23
+add $2,$1
+mov $0,$2

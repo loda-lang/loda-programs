@@ -1,11 +1,26 @@
 ; A125898: Floor((quadronacci ratio)^n).
 ; Submitted by Science United
 ; 1,3,7,13,26,51,98,190,367,708,1364,2630,5071,9775,18841,36318,70007,134942,260110,501380,966441,1862874,3590806,6921503,13341626,25716810,49570746,95550687,184179871,355018115,684319420,1319068095,2542585503
-; Formula: a(n) = sqrtint(A192742(n))
+; Formula: a(n) = sqrtint(b(max(2*n-1,0))-1), b(n) = 2*b(n-1)-b(n-5), b(5) = 52, b(4) = 27, b(3) = 16, b(2) = 8, b(1) = 4, b(0) = 2
 
 #offset 1
 
-seq $0,192742 ; Number of matchings in the n-antiprism graph.
+mov $2,5
+mov $7,2
+mul $0,2
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $6,$4
+  mov $4,$3
+  mov $3,$5
+  mov $5,$2
+  mov $2,$7
+  mul $7,2
+  sub $7,$6
+lpe
+mov $0,$7
+sub $0,1
 mov $1,$0
 nrt $1,2
 mov $0,$1

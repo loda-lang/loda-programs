@@ -1,32 +1,49 @@
 ; A118617: Start with 1 and repeatedly reverse the digits and add 31 to get the next term.
 ; Submitted by loader3229
 ; 1,32,54,76,98,120,52,56,96,100,32,54,76,98,120,52,56,96,100,32,54,76,98,120,52,56,96,100,32,54,76,98,120,52,56,96,100,32,54,76,98,120,52,56,96,100,32,54,76,98,120,52,56,96,100,32,54,76,98,120,52,56,96,100,32,54
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*truncate(b(n-1)/100)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*truncate(b(n-1)/100)+1)+truncate(b(n-1)/100)+31, b(0) = 1
+; Formula: a(n) = ((sign(n-1)*((n-2)%9+1))==0)+120*((sign(n-1)*((n-2)%9+1))==5)+100*((sign(n-1)*((n-2)%9+1))==9)+98*((sign(n-1)*((n-2)%9+1))==4)+96*((sign(n-1)*((n-2)%9+1))==8)+76*((sign(n-1)*((n-2)%9+1))==3)+56*((sign(n-1)*((n-2)%9+1))==7)+54*((sign(n-1)*((n-2)%9+1))==2)+52*((sign(n-1)*((n-2)%9+1))==6)+32*((sign(n-1)*((n-2)%9+1))==1)
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $3,$1
-  div $3,100
-  mov $2,$1
-  div $2,10
-  mod $2,10
-  mov $4,$3
-  mul $4,9
-  add $4,1
-  mul $2,$4
-  add $2,$3
-  mov $4,$2
-  min $4,1
-  mul $4,9
-  add $4,1
-  sub $2,10
-  mod $1,10
-  mul $1,$4
-  add $1,$2
-  add $1,41
-lpe
-mov $0,$1
+dgr $0,10
+mov $1,$0
+equ $1,0
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,32
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,54
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,76
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,98
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,120
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,52
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,56
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,96
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,100
+add $2,$1
+mov $0,$2

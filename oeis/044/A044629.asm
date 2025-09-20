@@ -1,12 +1,49 @@
 ; A044629: Numbers n such that string 7,5 occurs in the base 8 representation of n but not of n+1.
-; Submitted by [SG-FC] hl
+; Submitted by loader3229
 ; 61,125,189,253,317,381,445,495,509,573,637,701,765,829,893,957,1007,1021,1085,1149,1213,1277,1341,1405,1469,1519,1533,1597,1661,1725,1789,1853,1917,1981,2031,2045,2109,2173,2237,2301
-; Formula: a(n) = 2*truncate(A044194(n+1)/2)-73
+; Formula: a(n) = 512*floor((n-1)/9)+509*(((n-1)%9)==8)+495*(((n-1)%9)==7)+445*(((n-1)%9)==6)+381*(((n-1)%9)==5)+317*(((n-1)%9)==4)+253*(((n-1)%9)==3)+189*(((n-1)%9)==2)+125*(((n-1)%9)==1)+61*(((n-1)%9)==0)
 
 #offset 1
 
-add $0,1
-seq $0,44194 ; Numbers n such that string 0,7 occurs in the base 8 representation of n but not of n-1.
-div $0,2
-mul $0,2
-sub $0,73
+sub $0,1
+mov $2,$0
+div $2,9
+mul $2,512
+mod $0,9
+mov $1,$0
+equ $1,0
+mul $1,61
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,125
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,189
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,253
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,317
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,381
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,445
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,495
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,509
+add $2,$1
+mov $0,$2

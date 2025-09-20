@@ -1,51 +1,33 @@
 ; A010213: Continued fraction for sqrt(165).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 12,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5,2,5,1,24,1,5
+; Formula: a(n) = ((sign(n)*((n-1)%6+1))==5)+((sign(n)*((n-1)%6+1))==1)+24*((sign(n)*((n-1)%6+1))==6)+12*((sign(n)*((n-1)%6+1))==0)+5*((sign(n)*((n-1)%6+1))==4)+5*((sign(n)*((n-1)%6+1))==2)+2*((sign(n)*((n-1)%6+1))==3)
 
-mov $3,$0
-gcd $3,2
-mov $8,6
-mov $2,$0
-lpb $2
-  gcd $8,$2
-  mul $8,4
-  div $8,3
-  add $8,2
-  mov $2,0
-lpe
-mov $2,$8
-sub $2,2
-mov $4,$2
-div $4,3
-mul $4,3
-add $2,$4
-mul $2,4
-div $2,5
-mul $2,$3
-add $2,$3
-mov $6,$2
-mul $6,8
-nrt $6,2
-sub $6,1
-div $6,2
-mov $7,$6
-add $7,1
-bin $7,2
-sub $2,$7
-sub $2,1
-mov $5,$6
-add $5,$2
-sub $6,$2
-add $6,1
-mul $5,$6
-mov $6,0
-bin $6,$2
-add $5,$6
-add $6,$5
-mov $2,$6
-div $2,2
-gcd $1,$2
-add $1,2
-div $1,5
+dgr $0,7
+mov $1,$0
+equ $1,0
+mul $1,12
+mov $2,$1
+mov $1,$0
+equ $1,1
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,24
+add $2,$1
 mov $0,$2
-add $0,$1
