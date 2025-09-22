@@ -1,0 +1,80 @@
+; A112074: Odd numbers n for which 7 is the smallest i (>= 1) with Jacobi symbol J(i,n) getting either a value 0 or -1.
+; Submitted by Dirk Broer
+; 49,71,119,191,239,241,359,409,431,481,599,601,649,721,769,791,889,911,959,1031,1079,1081,1199,1249,1271,1321,1439,1441,1489,1561,1609,1631,1729,1751,1799,1871,1919,1921,2039,2089,2111,2161,2279,2281
+
+#offset 1
+
+sub $0,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $5,$2
+  mod $5,16
+  add $2,1
+  mov $4,$5
+  equ $4,0
+  mul $4,11
+  mov $6,$4
+  mov $4,$5
+  equ $4,1
+  mul $4,24
+  add $6,$4
+  mov $4,$5
+  equ $4,2
+  mul $4,36
+  add $6,$4
+  mov $4,$5
+  equ $4,3
+  mul $4,24
+  add $6,$4
+  mov $4,$5
+  equ $4,4
+  add $6,$4
+  mov $4,$5
+  equ $4,5
+  mul $4,59
+  add $6,$4
+  mov $4,$5
+  equ $4,6
+  mul $4,25
+  add $6,$4
+  mov $4,$5
+  equ $4,7
+  mul $4,11
+  add $6,$4
+  mov $4,$5
+  equ $4,8
+  mul $4,25
+  add $6,$4
+  mov $4,$5
+  equ $4,9
+  mul $4,59
+  add $6,$4
+  mov $4,$5
+  equ $4,10
+  add $6,$4
+  mov $4,$5
+  equ $4,11
+  mul $4,24
+  add $6,$4
+  mov $4,$5
+  equ $4,12
+  mul $4,36
+  add $6,$4
+  mov $4,$5
+  equ $4,13
+  mul $4,24
+  add $6,$4
+  mov $4,$5
+  equ $4,14
+  mul $4,11
+  add $6,$4
+  mov $4,$5
+  equ $4,15
+  mul $4,49
+  add $6,$4
+  add $1,$6
+lpe
+mov $0,$1
+mul $0,2
+add $0,49

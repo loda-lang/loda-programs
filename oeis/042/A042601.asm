@@ -1,0 +1,145 @@
+; A042601: Denominators of continued fraction convergents to sqrt(829).
+; Submitted by loader3229
+; 1,1,4,5,24,53,183,419,602,1021,2644,8953,20550,91153,111703,426262,537965,30552302,31090267,123823103,154913370,743476583,1641866536,5669076191,12980018918,18649095109,31629114027,81907323163,277351083516,636609490195
+
+mov $1,$0
+dgr $1,18
+mov $5,$1
+equ $5,1
+mov $6,$5
+mov $5,$1
+equ $5,2
+mul $5,3
+add $6,$5
+mov $5,$1
+equ $5,3
+add $6,$5
+mov $5,$1
+equ $5,4
+mul $5,4
+add $6,$5
+mov $5,$1
+equ $5,5
+mul $5,2
+add $6,$5
+mov $5,$1
+equ $5,6
+mul $5,3
+add $6,$5
+mov $5,$1
+equ $5,7
+mul $5,2
+add $6,$5
+mov $5,$1
+equ $5,8
+add $6,$5
+mov $5,$1
+equ $5,9
+add $6,$5
+mov $5,$1
+equ $5,10
+mul $5,2
+add $6,$5
+mov $5,$1
+equ $5,11
+mul $5,3
+add $6,$5
+mov $5,$1
+equ $5,12
+mul $5,2
+add $6,$5
+mov $5,$1
+equ $5,13
+mul $5,4
+add $6,$5
+mov $5,$1
+equ $5,14
+add $6,$5
+mov $5,$1
+equ $5,15
+mul $5,3
+add $6,$5
+mov $5,$1
+equ $5,16
+add $6,$5
+mov $5,$1
+equ $5,17
+mul $5,56
+add $6,$5
+mov $1,$6
+mov $2,1
+lpb $0
+  sub $0,1
+  mov $3,$1
+  mov $4,$0
+  dgr $4,18
+  mov $7,$4
+  equ $7,0
+  mov $8,$7
+  mov $7,$4
+  equ $7,1
+  add $8,$7
+  mov $7,$4
+  equ $7,2
+  mul $7,3
+  add $8,$7
+  mov $7,$4
+  equ $7,3
+  add $8,$7
+  mov $7,$4
+  equ $7,4
+  mul $7,4
+  add $8,$7
+  mov $7,$4
+  equ $7,5
+  mul $7,2
+  add $8,$7
+  mov $7,$4
+  equ $7,6
+  mul $7,3
+  add $8,$7
+  mov $7,$4
+  equ $7,7
+  mul $7,2
+  add $8,$7
+  mov $7,$4
+  equ $7,8
+  add $8,$7
+  mov $7,$4
+  equ $7,9
+  add $8,$7
+  mov $7,$4
+  equ $7,10
+  mul $7,2
+  add $8,$7
+  mov $7,$4
+  equ $7,11
+  mul $7,3
+  add $8,$7
+  mov $7,$4
+  equ $7,12
+  mul $7,2
+  add $8,$7
+  mov $7,$4
+  equ $7,13
+  mul $7,4
+  add $8,$7
+  mov $7,$4
+  equ $7,14
+  add $8,$7
+  mov $7,$4
+  equ $7,15
+  mul $7,3
+  add $8,$7
+  mov $7,$4
+  equ $7,16
+  add $8,$7
+  mov $7,$4
+  equ $7,17
+  mul $7,56
+  add $8,$7
+  mul $1,$8
+  add $1,$2
+  mov $2,$3
+lpe
+mov $0,$2
