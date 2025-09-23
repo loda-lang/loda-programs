@@ -1,0 +1,12 @@
+; A096671: Denominators of terms in series expansion of sin(tan(x)), odd powers only.
+; Submitted by iBezanilla
+; 1,6,40,1008,3456,39916800,566092800,100590336000,355687428096000,1431118828339200,2688996956405760000,8617338912961658880000,224800145555521536000000,10888869450418352160768000000,8841761993739701954543616000000,4500732706172918893117440000000,280107019961673757919941754880000000
+; Formula: a(n) = truncate(((2*n+2)!)/gcd(A009508(n+1),(2*n+2)!))
+
+add $0,1
+mov $1,$0
+seq $1,9508 ; Expansion of sin(tan(x))*x.
+mul $0,2
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+gcd $1,$0
+div $0,$1
