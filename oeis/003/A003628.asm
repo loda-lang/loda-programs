@@ -1,26 +1,22 @@
 ; A003628: Primes congruent to {5, 7} mod 8.
-; Submitted by roundup
+; Submitted by iBezanilla
 ; 5,7,13,23,29,31,37,47,53,61,71,79,101,103,109,127,149,151,157,167,173,181,191,197,199,223,229,239,263,269,271,277,293,311,317,349,359,367,373,383,389,397,421,431,439,461,463,479,487,503,509,541,557,599,607,613,631,647,653,661,677,701,709,719,727,733,743,751,757,773,797,821,823,829,839,853,863,877,887,911
 
 #offset 1
 
-mov $1,1
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  add $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $1,8
-  mul $2,$4
-  sub $2,16
-  mov $5,$1
-  div $5,3
-  mov $3,$5
+mov $4,-1
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,3
+  dif $4,5
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
+  add $4,1
 lpe
-mov $0,$3
-add $0,2
+add $0,$2

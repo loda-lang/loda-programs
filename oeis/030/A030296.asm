@@ -1,21 +1,22 @@
 ; A030296: Smallest start for a run of at least n composite numbers.
-; Submitted by Mumps
+; Submitted by Science United
 ; 4,8,8,24,24,90,90,114,114,114,114,114,114,524,524,524,524,888,888,1130,1130,1328,1328,1328,1328,1328,1328,1328,1328,1328,1328,1328,1328,9552,9552,15684,15684,15684,15684,15684,15684,15684,15684,19610,19610,19610,19610,19610,19610,19610,19610,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,31398,155922,155922,155922,155922,155922,155922,155922,155922,155922
 
 #offset 1
 
-mov $2,$0
-pow $2,20
-add $2,180
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,96457 ; If n is prime replace n with the next prime.
-  sub $3,1
-  add $0,1
-  add $1,1
-  add $2,$3
-  sub $2,$0
+add $0,1
+mov $2,1
+mov $3,$0
+mul $3,$0
+pow $3,2
+lpb $3
+  mov $1,0
+  seq $1,383948 ; Expansion of 1/sqrt((1-3*x)^3 * (1-7*x)).
+  add $1,$2
+  seq $1,13632 ; Difference between n and the next prime greater than n.
+  add $2,$1
+  add $3,$1
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 add $0,2

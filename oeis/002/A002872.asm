@@ -1,34 +1,32 @@
 ; A002872: Number of partitions of {1..2n} that are invariant under a permutation consisting of n 2-cycles.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,2,7,31,164,999,6841,51790,428131,3827967,36738144,376118747,4086419601,46910207114,566845074703,7186474088735,95318816501420,1319330556537631,19013488408858761,284724852032757686,4422344774431494155,71125541977466879231,1182742838681020524168,20307122818027281994803,359542386116253552248737,6556750656904595907050706,123025570918935432078500695,2372659401836771416711491359,46989856771238351593953783028,954825852329043825884721479575,19890361068345331897392614517977
 
-mov $2,1
+mov $8,$0
+add $8,1
+bin $8,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $3,$1
-  mov $5,2
-  max $6,1
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mul $3,2
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    sub $3,$7
-    add $5,1
-    add $6,$7
-  lpe
+  seq $4,5425 ; a(n) = 2*a(n-1) + (n-1)*a(n-2).
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
   sub $6,$3
-  sub $6,$7
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

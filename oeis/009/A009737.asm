@@ -4,21 +4,46 @@
 
 mov $1,$0
 add $1,1
-mov $4,$1
-mov $2,$1
-lpb $2
-  div $2,2
-  mul $2,2
-  mov $1,$4
-  sub $1,$2
-  sub $2,1
-  mov $3,$1
-  add $3,$2
-  bin $3,$1
-  add $1,1
-  seq $1,6229 ; Expansion of e.g.f. exp( tan x ).
-  mul $3,$1
-  mul $5,-4
-  add $5,$3
+mov $19,1
+mov $3,$0
+lpb $3
+  add $2,1
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,18
+    mov $6,$4
+    add $6,20
+    mov $7,$4
+    fac $7,2
+    mul $7,$$6
+    add $7,$$5
+    mov $8,$$5
+    mov $9,$5
+    equ $9,19
+    add $8,$9
+    min $8,1
+    add $5,1
+    mul $7,$8
+    add $$5,$7
+    sub $4,1
+  lpe
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,19
+    mul $$5,$8
+    bxo $8,1
+    sub $4,1
+  lpe
+  sub $3,1
+  mov $19,0
 lpe
-mov $0,$5
+add $2,19
+lpb $1
+  add $15,$3
+  add $3,$$2
+  sub $1,1
+  sub $2,1
+lpe
+mov $0,$15

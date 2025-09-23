@@ -1,33 +1,32 @@
 ; A000587: Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,-1,0,1,1,-2,-9,-9,50,267,413,-2180,-17731,-50533,110176,1966797,9938669,8638718,-278475061,-2540956509,-9816860358,27172288399,725503033401,5592543175252,15823587507881,-168392610536153,-2848115497132448,-20819319685262839,-38795579403211671,1122009166836993406,17235101634895315375,127595724180314195839,153440975825762815938,-9985347479130060737373,-156894403296377741177371,-1244077225312583088164916,-1454252568471818731501051,120225865637787689310572899,2071137586315785548669378432
 
-mov $2,1
-mov $6,1
+mov $4,$0
+add $4,1
+bin $4,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    equ $8,3
-    sub $8,1
-    mul $7,$$9
-    mul $7,$8
-    add $5,1
-    add $6,$7
-  lpe
+  mov $8,-1
+  bin $8,$2
+  mov $5,$2
+  add $5,$4
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
   sub $6,$3
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$8
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

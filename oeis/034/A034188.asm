@@ -1,14 +1,11 @@
 ; A034188: Number of binary codes of length 3 with n words.
+; Submitted by Just Jake
 ; 1,1,3,3,6,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = binomial(sumdigits(3*binomial(8,n),2),2)
 
-add $0,1
-lpb $0
-  add $2,$0
-  trn $2,5
-  sub $0,1
-  trn $0,1
-  add $3,1
-  trn $3,$2
-  add $1,$3
-lpe
+mov $1,8
+bin $1,$0
+mul $1,3
+dgs $1,2
+bin $1,2
 mov $0,$1

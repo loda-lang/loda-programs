@@ -1,22 +1,57 @@
 ; A277616: Lexicographically earliest sequence such that |a(n+1)-a(n)| is a square > 1 (for all n) and no number occurs twice; a(0) = 0.
-; Submitted by Matthias Lehmkuhl
+; Submitted by loader3229
 ; 0,4,8,12,3,7,11,2,6,10,1,5,9,13,17,21,25,16,20,24,15,19,23,14,18,22,26,30,34,38,29,33,37,28,32,36,27,31,35,39,43,47,51,42,46,50,41,45,49,40,44,48,52,56,60,64,55,59,63,54,58,62,53,57,61,65,69,73,77,68,72,76,67,71,75,66,70,74,78,82
+; Formula: a(n) = ((n%13)==10)+13*floor(n/13)+12*((n%13)==3)+11*((n%13)==6)+10*((n%13)==9)+9*((n%13)==12)+8*((n%13)==2)+7*((n%13)==5)+6*((n%13)==8)+5*((n%13)==11)+4*((n%13)==1)+3*((n%13)==4)+2*((n%13)==7)
 
-mov $1,4
-add $0,1
-lpb $0
-  sub $0,1
-  mov $3,$2
-  add $3,$1
-  sub $2,$1
-  max $2,20
-  sub $2,5
-  mov $4,$$2
-  lpb $4
-    mov $4,0
-    mov $2,$3
-  lpe
-  mov $$2,1
-lpe
+mov $2,$0
+div $2,13
+mul $2,13
+mod $0,13
+mov $1,$0
+equ $1,1
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,10
+add $2,$1
+mov $1,$0
+equ $1,10
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,9
+add $2,$1
 mov $0,$2
-sub $0,15

@@ -1,5 +1,5 @@
 ; A201443: Number of non-solvable transitive permutation groups for polynomials of degree p(n), where p(n) is n-th prime.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 0,0,2,3,4,3,5,2,3,2,4
 
 #offset 1
@@ -7,6 +7,7 @@
 lpb $0
   mul $0,2
   sub $0,1
+  mod $0,39
   add $3,$2
   mov $2,$0
   mod $2,10

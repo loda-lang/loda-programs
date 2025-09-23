@@ -1,15 +1,50 @@
 ; A044616: Numbers n such that string 6,0 occurs in the base 8 representation of n but not of n+1.
-; Submitted by jmorken
+; Submitted by Science United
 ; 48,112,176,240,304,368,391,432,496,560,624,688,752,816,880,903,944,1008,1072,1136,1200,1264,1328,1392,1415,1456,1520,1584,1648,1712,1776,1840,1904,1927,1968,2032,2096,2160,2224,2288,2352
-; Formula: a(n) = 3*A044570(n+2)-8*truncate(A044570(n+2)/4)-150
+; Formula: a(n) = 512*floor((n-1)/9)+497*(((n-1)%9)==8)+433*(((n-1)%9)==7)+392*(((n-1)%9)==6)+369*(((n-1)%9)==5)+305*(((n-1)%9)==4)+241*(((n-1)%9)==3)+177*(((n-1)%9)==2)+113*(((n-1)%9)==1)+49*(((n-1)%9)==0)-1
 
 #offset 1
 
-add $0,2
-seq $0,44570 ; Numbers n such that string 0,2 occurs in the base 8 representation of n but not of n+1.
+sub $0,1
+mov $2,$0
+div $2,9
+mul $2,512
+mod $0,9
 mov $1,$0
-mod $0,4
-mul $0,2
-add $1,$0
-mov $0,$1
-sub $0,150
+equ $1,0
+mul $1,49
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,113
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,177
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,241
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,305
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,369
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,392
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,433
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,497
+add $2,$1
+mov $0,$2
+sub $0,1

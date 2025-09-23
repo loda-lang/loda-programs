@@ -13,15 +13,12 @@ lpb $3
   add $1,$0
   mov $6,$0
   min $0,1
-  add $6,$0
-  add $6,$0
   mul $1,2
   trn $1,1
   nrt $1,2
   add $1,$0
-  mov $0,$1
-  mul $0,2
   add $6,$0
+  add $6,$1
   mov $0,$6
   add $0,1
   mov $2,$3
@@ -32,3 +29,5 @@ min $5,1
 mul $5,$0
 mov $0,$4
 sub $0,$5
+mul $0,2
+sub $0,1

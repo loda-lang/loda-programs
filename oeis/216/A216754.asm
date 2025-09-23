@@ -1,11 +1,50 @@
 ; A216754: Digital root of fourth power of Fibonacci numbers.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 0,1,1,7,9,4,1,4,9,7,1,1,9,1,1,7,9,4,1,4,9,7,1,1,9,1,1,7,9,4,1,4,9,7,1,1,9,1,1,7,9,4,1,4,9,7,1,1,9,1,1,7,9,4,1,4,9,7,1,1,9,1,1,7,9,4,1,4,9,7,1,1,9,1,1,7,9,4,1,4
+; Formula: a(n) = ((sign(n)*((n-1)%12+1))==11)+((sign(n)*((n-1)%12+1))==10)+((sign(n)*((n-1)%12+1))==6)+((sign(n)*((n-1)%12+1))==2)+((sign(n)*((n-1)%12+1))==1)+9*((sign(n)*((n-1)%12+1))==12)+9*((sign(n)*((n-1)%12+1))==8)+9*((sign(n)*((n-1)%12+1))==4)+7*((sign(n)*((n-1)%12+1))==9)+7*((sign(n)*((n-1)%12+1))==3)+4*((sign(n)*((n-1)%12+1))==7)+4*((sign(n)*((n-1)%12+1))==5)
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-pow $0,4
-sub $0,1
-lpb $0
-  mod $0,9
-lpe
-add $0,1
+dgr $0,13
+mov $1,$0
+equ $1,1
+mov $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,6
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,10
+add $2,$1
+mov $1,$0
+equ $1,11
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,9
+add $2,$1
+mov $0,$2

@@ -1,21 +1,60 @@
 ; A366626: Group the natural numbers into blocks of size 2: [1,2], [3,4], ... and then reverse the order of the numbers within each block. Then group and reverse for each block size up to 4.
-; Submitted by Science United
+; Submitted by loader3229
 ; 5,2,1,4,7,10,3,6,9,12,11,8,17,14,13,16,19,22,15,18,21,24,23,20,29,26,25,28,31,34,27,30,33,36,35,32,41,38,37,40,43,46,39,42,45,48,47,44,53,50,49,52,55,58,51,54,57,60,59,56,65,62,61,64,67,70,63,66,69,72,71
+; Formula: a(n) = (((n-1)%12)==2)+12*(((n-1)%12)==9)+12*floor((n-1)/12)+11*(((n-1)%12)==10)+10*(((n-1)%12)==5)+9*(((n-1)%12)==8)+8*(((n-1)%12)==11)+7*(((n-1)%12)==4)+6*(((n-1)%12)==7)+5*(((n-1)%12)==0)+4*(((n-1)%12)==3)+3*(((n-1)%12)==6)+2*(((n-1)%12)==1)
 
 #offset 1
 
 sub $0,1
-mov $1,-1
-mov $2,4
-lpb $2
-  max $2,1
-  add $0,$2
-  sub $1,$0
-  div $0,$2
-  mul $0,$2
-  mul $0,2
-  add $0,$1
-  sub $2,1
-  mov $1,$2
-lpe
-sub $0,8
+mov $2,$0
+div $2,12
+mul $2,12
+mod $0,12
+mov $1,$0
+equ $1,0
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,10
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,8
+add $2,$1
+mov $0,$2

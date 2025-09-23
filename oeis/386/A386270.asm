@@ -1,17 +1,12 @@
 ; A386270: Total number of ones in runs of 1s of length <=2 over all binary strings of length n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,4,9,22,52,120,272,608,1344,2944,6400,13824,29696,63488,135168,286720,606208,1277952,2686976,5636096,11796480,24641536,51380224,106954752,222298112,461373440,956301312,1979711488,4093640704,8455716864,17448304640,35970351104
+; Formula: a(n) = floor(((2*n+3)*2^n+4)/8)
 
-mov $1,1
-mov $3,1
-lpb $0
-  sub $0,1
-  add $2,$1
-  mov $4,$0
-  add $4,$2
-  add $1,$3
-  equ $3,$2
-  add $3,$4
-lpe
-mov $0,$1
-sub $0,1
+mov $1,2
+pow $1,$0
+mul $0,2
+add $0,3
+mul $0,$1
+add $0,4
+div $0,8

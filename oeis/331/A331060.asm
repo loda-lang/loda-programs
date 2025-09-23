@@ -7,13 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mod $2,10
-  add $5,1
-  add $3,1
-  sub $3,$5
-  add $3,$4
   gcd $3,2
   add $4,$3
-  mov $5,1
   sub $0,$3
   add $0,1
   add $1,$4

@@ -1,18 +1,21 @@
 ; A075066: Alternately odd and even composite numbers complementing the parity of the index.
-; Submitted by PDW
+; Submitted by Science United
 ; 9,4,15,6,21,8,25,10,27,12,33,14,35,16,39,18,45,20,49,22,51,24,55,26,57,28,63,30,65,32,69,34,75,36,77,38,81,40,85,42,87,44,91,46,93,48,95,50,99
 
 #offset 1
 
-add $0,1
 mov $1,$0
+add $1,3
 dif $1,2
 sub $0,$1
+add $0,2
 lpb $0
-  seq $0,7921 ; Numbers that are not the difference of two primes.
+  trn $0,1
   add $0,1
+  seq $0,7921 ; Numbers that are not the difference of two primes.
   mov $1,$0
+  add $1,3
   mov $0,0
 lpe
 mov $0,$1
-add $0,1
+sub $0,1

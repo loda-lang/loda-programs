@@ -1,21 +1,17 @@
 ; A387913: Hodge number h^{1,n-1} of a smooth hypersurface of degree n+2 in P^{n+1}.
-; Submitted by pm120
+; Submitted by Science United
 ; 1,19,101,426,1667,6371,24229,92278,352595,1351934,5200131,20058104,77558535,300539939,1166802821,4537567326,17672631539,68923264010,269128936779,1052049481376,4116715363271,16123801840974,63205303218251
+; Formula: a(n) = -(n+2)^2+binomial(2*n+3,n+1)
 
-add $0,1
+#offset 1
+
 mov $1,$0
-sub $1,$0
-add $1,2
-mov $4,$0
-add $0,1
-lpb $0
-  sub $0,1
-  mov $3,$4
-  add $3,$1
-  bin $3,$1
-  sub $3,2
-  add $1,1
-  sub $2,$4
-  add $2,$3
-lpe
-mov $0,$2
+add $1,1
+mov $2,$1
+mul $1,2
+add $1,1
+bin $1,$2
+add $2,1
+pow $2,2
+sub $1,$2
+mov $0,$1

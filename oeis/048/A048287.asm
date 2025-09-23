@@ -1,33 +1,32 @@
 ; A048287: Number of semiorders on n labeled nodes whose incomparability graph is connected.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,1,7,61,751,11821,226927,5142061,134341711,3975839341,131463171247,4803293266861,192178106208271,8356430510670061,392386967808249967,19788154572706556461,1066668756919315412431,61204224384073232815981,3724490115064942967767087,239590024559444977243762861,16244971299704993604868706191,1157913082599548965096809029101,86557926777836150240105230746607,6771306691180605665611889453238061,553242257677537992534449858838281551,47124775485345082689729680550898701421
 
 #offset 1
 
-mov $6,1
-sub $0,1
+mov $8,$0
+bin $8,2
 lpb $0
   sub $0,1
-  add $2,1
-  mov $3,$6
-  mov $5,0
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,2
-    div $7,2
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,3
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $3,$6
-  add $9,1
-  mov $$9,$3
+  seq $4,98461 ; Expansion of E.g.f.: 1/sqrt(1-2*x-3*x^2).
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
-mov $0,$6
+mov $0,$1

@@ -1,15 +1,54 @@
 ; A267453: Number of OFF (white) cells in the n-th iteration of the "Rule 131" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,2,3,5,5,8,7,10,11,12,12,16,15,17,18,20,20,23,22,25,26,27,27,31,30,32,33,35,35,38,37,40,41,42,42,46,45,47,48,50,50,53,52,55,56,57,57,61,60,62,63,65,65,68,67,70,71,72,72,76,75,77,78,80,80,83,82,85,86,87,87,91,90,92,93,95,95,98,97,100
+; Formula: a(n) = 16*((n%12)==11)+15*floor(n/12)+12*((n%12)==10)+12*((n%12)==9)+11*((n%12)==8)+10*((n%12)==7)+8*((n%12)==5)+7*((n%12)==6)+5*((n%12)==4)+5*((n%12)==3)+3*((n%12)==2)+2*((n%12)==1)
 
-add $0,1
-mul $0,2
+mov $2,$0
+div $2,12
+mul $2,15
+mod $0,12
 mov $1,$0
-gcd $0,3
-add $1,1
-lpb $1
-  trn $1,4
-  add $0,5
-lpe
-div $0,2
-sub $0,3
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,10
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,16
+add $2,$1
+mov $0,$2

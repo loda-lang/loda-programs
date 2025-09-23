@@ -1,5 +1,5 @@
 ; A275812: Sum of exponents larger than one in the prime factorization of n: A001222(n) - A056169(n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,0,0,2,0,0,0,3,2,0,0,2,0,0,0,4,0,2,0,2,0,0,0,3,2,0,3,2,0,0,0,5,0,0,0,4,0,0,0,3,0,0,0,2,2,0,0,4,2,2,0,2,0,3,0,3,0,0,0,2,0,0,2,6,0,0,0,2,0,0,0,5,0,0,2,2,0,0,0,4
 
 #offset 1
@@ -7,6 +7,7 @@
 mov $2,2
 lpb $0
   mov $3,$0
+  div $3,4
   lpb $3
     mov $4,$0
     mod $4,$2

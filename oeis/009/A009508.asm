@@ -1,22 +1,15 @@
 ; A009508: Expansion of sin(tan(x))*x.
-; Submitted by Goldislops
+; Submitted by Science United
 ; 0,2,4,-18,-2200,-150150,-11618004,-1078005082,-118928710576,-15184771406478,-2148536703814700,-309605570133329954,-34193099991177752904,4268254817856544829418,6637048590856623019431932
+; Formula: a(n) = 2*n*A003723(2*max(n-1,0)+1)*(-1)^max(n-1,0)
 
-mov $3,$0
-mov $1,$0
-lpb $1
-  mov $0,$3
-  sub $0,$1
-  mov $2,$0
-  add $2,$1
-  mov $4,-1
-  pow $4,$0
-  mul $0,2
-  add $0,1
-  seq $0,3723 ; E.g.f. exp(tanh(x)).
-  mul $0,$4
-  sub $1,1
-  mul $2,$0
-lpe
-mov $0,$2
+mov $2,$0
+trn $2,1
+mov $1,-1
+pow $1,$2
+mul $2,2
+add $2,1
+seq $2,3723 ; E.g.f. exp(tanh(x)).
+mul $2,$1
+mul $0,$2
 mul $0,2

@@ -1,33 +1,32 @@
 ; A052833: Expansion of e.g.f.: (log(2-exp(x)))^2.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 0,0,2,12,72,500,4080,38668,419160,5124708,69831360,1049972924,17273719848,308714206996,5956836347280,123437573728620,2734197673727736,64473939310567364,1612626113517932640,42645398700110627356,1188880256538133537224,34849264499702702749812,1071537454092701071848240,34485807901115221811030732,1159403105527970636130626712,40644516616160343410686722340,1483261641729071857333490234880,56261594574485954242559470740348,2214951407411259227476700589258600,90385285826729462669300792576276948
 
-mov $20,1
-mov $3,$0
-lpb $3
+mov $8,$0
+add $8,1
+bin $8,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  seq $4,52517 ; Number of ordered pairs of cycles over all n-permutations having two cycles.
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
-  mov $4,$2
-  seq $4,254 ; Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
-  add $2,20
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
 mov $0,$1
-mul $0,2

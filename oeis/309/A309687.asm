@@ -1,12 +1,50 @@
 ; A309687: Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.
+; Submitted by loader3229
 ; 0,0,0,1,1,1,1,2,3,4,4,5,6,7,8,10,11,12,13,15,17,19,20,22,24,26,28,31,33,35,37,40,43,46,48,51,54,57,60,64,67,70,73,77,81,85,88,92,96,100,104,109,113,117,121,126,131,136,140,145,150,155,160,166
-; Formula: a(n) = truncate(b(n)/4), b(n) = b(n-6)+max(n-6,0)+n, b(5) = 6, b(4) = 5, b(3) = 4, b(2) = 3, b(1) = 2, b(0) = 1
+; Formula: a(n) = ((n%12)==6)+((n%12)==5)+((n%12)==4)+((n%12)==3)+floor(n/12)*(n%12)+12*binomial(floor(n/12),2)+6*floor(n/12)+5*((n%12)==11)+4*((n%12)==10)+4*((n%12)==9)+3*((n%12)==8)+2*((n%12)==7)
 
-mov $1,1
-lpb $0
-  add $1,$0
-  trn $0,6
-  add $1,$0
-lpe
-div $1,4
-mov $0,$1
+mov $2,$0
+div $2,12
+mul $2,6
+mov $3,$0
+div $3,12
+mod $0,12
+mov $4,$3
+mul $4,$0
+bin $3,2
+mul $3,12
+add $3,$4
+mov $1,$0
+equ $1,3
+add $2,$3
+add $2,$1
+mov $1,$0
+equ $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $1,$0
+equ $1,6
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,5
+add $2,$1
+mov $0,$2
