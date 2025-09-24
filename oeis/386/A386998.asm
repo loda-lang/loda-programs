@@ -1,0 +1,10 @@
+; A386998: Sum of all parts of all partitions of n with designated summands.
+; Submitted by Checco
+; 0,1,6,15,40,75,168,287,552,918,1600,2541,4224,6474,10248,15405,23520,34527,51408,74024,107640,152712,217712,304359,427200,589475,815412,1112913,1520064,2052939,2773680,3710638,4963104,6583896,8726576,11484690,15099696,19726994
+; Formula: a(n) = n*A077285(n)
+
+mov $2,$0
+seq $2,77285 ; Number of partitions of n with designated summands.
+mov $1,$0
+mul $1,$2
+mov $0,$1
