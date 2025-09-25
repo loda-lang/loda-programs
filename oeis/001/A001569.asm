@@ -1,0 +1,33 @@
+; A001569: Sum_{n>=0} a(n)*x^n/n!^2 = BesselI(0,2*(1-exp(x))^(1/2)).
+; Submitted by Science United
+; 1,-1,-1,2,37,329,1501,-31354,-1451967,-39284461,-737652869,560823394,1103386777549,82520245792997,4398448305245905,168910341581721494,998428794798272641,-720450682719825322809,-105099789680808769094057,-10594247095804692725600734
+
+mov $4,$0
+add $4,1
+bin $4,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $8,-1
+  bin $8,$2
+  mov $5,$2
+  add $5,$4
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$8
+  mul $1,$2
+  add $1,$5
+  add $2,1
+lpe
+mov $0,$1

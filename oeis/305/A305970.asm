@@ -1,0 +1,33 @@
+; A305970: Number of length-n restricted growth strings (RGS) with growth <= ten and fixed first element.
+; Submitted by Nvgnte
+; 1,1,11,176,3531,83611,2261534,68402389,2278643499,82654180884,3235722405487,135734461882371,6065518222891786,287319811049356921,14366920922020964539,755605044476363993912,41667154360185375211619,2402483802700920413411739,144487701811091308652700982,9043890847513560098993599469,588004168074512800802624947195,39640130594017872307485588225756,2766425728270834805849497936584999,199569075017599472061800620878300835,14861830765379656527640548955902193122,1141084358693025076441830340598045386801
+
+mov $8,$0
+add $8,1
+bin $8,2
+lpb $0
+  sub $0,1
+  mov $4,$2
+  seq $4,27397 ; Number of labeled servers of dimension 10.
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  add $5,1
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
+  add $2,1
+lpe
+mov $0,$1
+add $0,1
