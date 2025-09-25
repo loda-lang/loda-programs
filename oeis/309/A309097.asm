@@ -1,17 +1,16 @@
 ; A309097: Number of partitions of n avoiding the partition (4,2,1).
-; Submitted by Simon Strandgaard
+; Submitted by Coleslaw
 ; 1,1,2,3,5,7,11,14,20,25,32,39,49,56,68,79,91,103,119,132,150,165,183,202,224,241,264,287,311,334,362,385,415,442,472,503,535,563,599,634,670,703,743,778,820,859,899,942,988,1027,1074,1119,1167,1214,1266
 
-mov $2,1
-sub $2,$0
+sub $0,1
+sub $3,$0
 lpb $0
-  max $0,2
-  add $1,$0
-  mov $3,$2
-  div $3,$0
   sub $0,1
-  add $1,$3
-  sub $1,1
+  add $1,1
+  add $2,$0
+  sub $2,$3
+  mov $3,$0
+  div $3,$1
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2
+add $0,1

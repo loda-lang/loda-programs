@@ -12,7 +12,12 @@ lpb $3
   mov $1,$0
   max $1,0
   add $1,1
-  seq $1,139190 ; a(n) = (prime(n)!-2)/2.
+  seq $1,40 ; The prime numbers.
+  mov $4,1
+  fac $4,$1
+  mov $1,$4
+  sub $1,2
+  div $1,2
   add $1,1
   sub $0,1
   sub $0,$2

@@ -30,7 +30,6 @@ lpb $2
   sub $8,$10
   mov $9,2
   pow $9,$8
-  mov $3,$7
   mov $3,$9
   mul $3,$6
   mov $5,$3

@@ -1,10 +1,21 @@
 ; A284238: Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jamie Morken(w1)
+; Submitted by DukeBox
 ; 1,0,6,10,10,42,42,170,170,682,682,2730,2730,10922,10922,43690,43690,174762,174762,699050,699050,2796202,2796202,11184810,11184810,44739242,44739242,178956970,178956970,715827882,715827882,2863311530,2863311530,11453246122,11453246122,45812984490,45812984490,183251937962,183251937962,733007751850,733007751850,2932031007402,2932031007402,11728124029610,11728124029610,46912496118442,46912496118442,187649984473770,187649984473770,750599937895082,750599937895082,3002399751580330,3002399751580330
 
-seq $0,283709 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
-add $0,2
-div $0,3
+mov $2,$0
+div $2,2
+sub $2,2
+bin $2,$0
+mov $4,$0
+add $4,2
+mov $3,2
+pow $3,$4
+sub $3,3
+mov $0,$2
+mul $0,2
+add $0,$3
+add $0,4
+div $0,6
 dif $0,2
 mov $1,2
 min $1,$0

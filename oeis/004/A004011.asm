@@ -1,28 +1,21 @@
 ; A004011: Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-; Submitted by KetamiNO [YouTube]
+; Submitted by Science United
 ; 1,24,24,96,24,144,96,192,24,312,144,288,96,336,192,576,24,432,312,480,144,768,288,576,96,744,336,960,192,720,576,768,24,1152,432,1152,312,912,480,1344,144,1008,768,1056,288,1872,576,1152,96,1368,744,1728,336,1296,960,1728,192,1920,720,1440,576,1488,768,2496,24,2016,1152,1632,432,2304,1152,1728,312,1776,912,2976,480,2304,1344,1920
 
-dif $0,4
 mul $0,2
-mov $1,1
 mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
+mov $2,2
+lpb $2
+  sub $2,1
   mov $0,$3
-  add $0,$5
+  add $0,$2
   trn $0,1
+  gcd $3,$0
   seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
-  mov $4,$5
+  mov $4,$2
   mul $4,$0
   add $1,$4
 lpe
-min $3,1
 mul $3,$0
 mov $0,$1
 sub $0,$3
-mul $0,-25
-sub $2,$0
-mov $0,$2
-div $0,25
-sub $0,1

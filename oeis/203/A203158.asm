@@ -1,26 +1,15 @@
 ; A203158: v(n+1)/v(n), where v=A203012.
-; Submitted by Jamie Morken(l1)
+; Submitted by joework1
 ; 7,247,21756,3613701,974243088,388409565699,214946329538304,157727064375306153,148245464311769260800,173696139110375108022159,248243987235370949531025408,425095516929076538387157860013
+; Formula: a(n) = truncate(A203750(n+1)/(n+1))
 
 #offset 1
 
 mov $1,$0
 add $1,1
-add $0,1
-mov $2,1
-mov $3,$0
-mul $3,$0
-mov $4,$0
-lpb $4
-  add $0,1
-  mul $2,$3
-  mul $2,$4
-  add $3,$0
-  sub $4,1
-  add $5,1
-  add $0,1
-  div $2,$5
-lpe
-div $2,$5
+mov $2,$0
+add $2,1
+seq $2,203750 ; Square root of v(2n)/v(2n-1), where v=A203748.
+div $2,$1
+sub $0,1
 mov $0,$2
-div $0,$1

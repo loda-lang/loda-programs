@@ -1,36 +1,34 @@
 ; A038052: Number of labeled trees of nonempty sets with n points. (Each node is a set of 1 or more points.)
-; Submitted by vonboedefeldt
+; Submitted by loader3229
 ; 1,1,2,7,42,376,4513,68090,1238968,26416729,646140364,17837852044,548713088399,18612963873492,690271321314292,27785827303491579,1206582732097720126,56224025231569020724,2798445211000659147033,148178324442139816854902,8317074395027724691495980,493274669253662458302270345,30824553009270276317155562560,2024296175481049869193194553112,139381515667102834772778640358159,10040739498424948805380610117642136,755284251206911703038960528144030584,59219363627010827513457350330791545283
 
-mov $19,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,$4
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-  mov $19,0
-lpe
-mov $3,$0
-lpb $3
-  mov $2,$0
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
   sub $0,1
+  mov $8,$2
+  trn $8,2
   mov $4,$2
-  add $4,1
-  pow $4,$0
-  add $2,20
-  mul $$2,$4
-  add $1,$$2
-  sub $3,1
+  pow $4,$8
+  mov $5,$2
+  add $5,$9
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
-equ $0,0
-add $0,$1
+mov $0,$1

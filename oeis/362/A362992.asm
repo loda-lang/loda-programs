@@ -1,11 +1,29 @@
 ; A362992: a(n) = (n + 1)^(n - 1) * lcm{k + 1 : 0 <= k <= n}. Main diagonal of triangle A362995.
-; Submitted by Dingo
+; Submitted by tosi
 ; 1,2,18,192,7500,77760,7058940,220200960,12053081880,252000000000,65362309994520,1716349336289280,645822919595173320,20430218263561666560,701330854833984375000,51933349175015422033920,35071094208630625451626320,1487906280482935955379978240
-; Formula: a(n) = truncate(A152684(n+1)/A025527(n+1))
 
+mov $7,1
+mov $8,1
+mov $9,1
 mov $1,$0
-add $1,1
-seq $1,25527 ; a(n) = n!/lcm{1,2,...,n} = (n-1)!/lcm{C(n-1,0), C(n-1,1), ..., C(n-1,n-1)}.
+lpb $1
+  sub $1,1
+  mov $10,$7
+  add $10,1
+  mov $3,$8
+  gcd $3,$10
+  mov $2,$10
+  div $2,$3
+  equ $6,0
+  add $7,$6
+  sub $6,1
+  mul $8,$2
+  mul $9,$3
+lpe
+mov $4,$0
+mov $5,1
+fac $5,$0
 add $0,1
-seq $0,152684 ; a(n) is the number of top-down sequences (F_1, F_2, ..., F_n) whereas each F_i is a labeled forest on n nodes, containing i directed rooted trees. F_(i+1) is proper subset of F_i.
-div $0,$1
+pow $0,$4
+mul $0,$5
+div $0,$9

@@ -1,11 +1,18 @@
 ; A215472: Expansion of (psi(x) * phi(-x)^4)^2 in powers of x where phi(), psi() are Ramanujan theta functions.
-; Submitted by Mads Nissen
+; Submitted by iBezanilla
 ; 1,-14,81,-238,322,0,-429,82,0,2162,-3038,-1134,2401,2482,0,-6958,3332,0,1442,0,6561,-4508,-9758,0,-1918,18802,0,9362,-24638,-19278,14641,14756,0,0,6562,0,-1148,-33998,26082,-20398,0,0,28083,49042,0,-64078,-30268,0,-38398,74482,0,42532,0,0,0,-76636,-34749,90482,-64478,0,58562,-33614,0,0,128002,6642,-34748,-125678,0,-100558,55522,0,20163,153202,0,0,97412,0,-193438,-178478
-; Formula: a(n) = truncate((2*A209942(n)*(-1)^n)/2)
+; Formula: a(n) = truncate((5*truncate(A000144(4*n+1)/4)-A050456(4*n+1)-16*A050468(4*n+1))/8)
 
-mov $1,-1
-pow $1,$0
-mul $1,2
-seq $0,209942 ; Expansion of (psi(-x) * phi(x)^4)^2 in powers of x where phi(), psi() are Ramanujan theta functions.
-mul $0,$1
-div $0,2
+mul $0,4
+add $0,1
+mov $1,$0
+seq $1,50456 ; a(n) = Sum_{d|n, d==1 mod 4} d^4 - Sum_{d|n, d==3 mod 4} d^4.
+mov $2,$0
+seq $2,50468 ; a(n) = Sum_{d|n, n/d=1 mod 4} d^4 - Sum_{d|n, n/d=3 mod 4} d^4.
+mul $2,16
+seq $0,144 ; Number of ways of writing n as a sum of 10 squares.
+div $0,4
+mul $0,5
+sub $0,$1
+sub $0,$2
+div $0,8

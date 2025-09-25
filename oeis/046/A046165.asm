@@ -1,34 +1,32 @@
 ; A046165: Number of minimal covers of n objects.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 1,1,2,8,49,462,6424,129425,3731508,152424420,8780782707,710389021036,80610570275140,12815915627480695,2855758994821922882,892194474524889501292,391202163933291014701953,240943718535427829240708786,208683398342300491409959279244,254389919027143263498196385133961,436889965042803126034921457227940496,1057829123497366717842464145128521754608,3613693228883426155096708608005525420874235,17426152779544335263469704702505963499936578504,118684188515157499676150126692886411898984770205592
 
-mov $20,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
-  add $2,1
+mov $8,$0
+add $8,1
+bin $8,2
+add $0,1
+lpb $0
+  sub $0,1
   mov $4,$2
   seq $4,94545 ; Number of minimal T_0-covers of an n-set.
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
-equ $0,0
-add $0,$1
+mov $0,$1

@@ -1,29 +1,17 @@
 ; A041195: Denominators of continued fraction convergents to sqrt(108).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by taurec
 ; 1,2,3,5,23,28,51,130,2651,5432,8083,13515,62143,75658,137801,351260,7163001,14677262,21840263,36517525,167910363,204427888,372338251,949104390,19354426051,39657956492,59012382543,98670339035,453693738683,552364077718,1006057816401,2564479710520,52295652026801,107155783764122,159451435790923,266607219555045,1225880314011103,1492487533566148,2718367847577251,6929223228720650,141302832421990251,289534888072701152,430837720494691403,720372608567392555,3312328154764261623,4032700763331654178
-; Formula: a(n) = a(n-1)*(truncate((-4*truncate(min(3*n-8*truncate((3*n)/8),8*truncate((3*n)/8)-3*n+8)/4)+min(3*n-8*truncate((3*n)/8),8*truncate((3*n)/8)-3*n+8)+A040329(3*n))/2)+truncate(truncate((-4*truncate(min(3*n-8*truncate((3*n)/8),8*truncate((3*n)/8)-3*n+8)/4)+min(3*n-8*truncate((3*n)/8),8*truncate((3*n)/8)-3*n+8)+A040329(3*n))/2)/8))+a(n-2), a(2) = 3, a(1) = 2, a(0) = 1
 
-mov $1,1
+mov $1,$0
+seq $1,10174 ; Continued fraction for sqrt(108).
+mov $2,1
 lpb $0
-  sub $0,1
-  add $3,1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mul $1,3
-  mov $6,$1
-  mod $6,8
-  mov $7,8
-  sub $7,$6
-  min $6,$7
-  mod $6,4
-  seq $1,40329 ; Continued fraction for sqrt(348).
-  add $1,$6
-  div $1,2
-  mov $5,$1
-  div $1,8
-  add $1,$5
-  mul $1,$2
-  add $1,$4
+  trn $0,1
+  mov $3,$1
+  mov $4,$0
+  seq $4,10174 ; Continued fraction for sqrt(108).
+  mul $1,$4
+  add $1,$2
+  mov $2,$3
 lpe
-mov $0,$1
+mov $0,$2

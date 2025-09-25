@@ -1,21 +1,28 @@
 ; A218141: a(n) = Stirling2(n^2, n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by DukeBox
 ; 1,1,7,3025,171798901,2436684974110751,14204422416132896951197888,50789872166903636182659702516635946082,155440114706926165785630654089245708839702615196926765,541500903058656141876322139677626107784896646583041951351456223689104719,2754999986711164035029356262910003922476368243643133591265713197865860436127311130380917269755,25545378351836929828979222353421914611063264552007039328326555030028639864663720016920351772612407113266112459931377276
 
-mov $1,1
-mov $2,$0
-pow $0,2
-mov $3,$0
-bin $3,2
-add $3,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
+mov $1,$0
+pow $1,2
+add $1,1
+bin $1,2
+add $0,1
+lpb $0
   sub $0,1
-  seq $0,130850 ; Triangle read by rows, 0 <= k <= n, T(n,k) = Sum_{j=0..n} A(n,j)*binomial(n-j,k) where A(n,j) are the Eulerian numbers A173018.
-  trn $0,$1
-  add $1,$0
-  dif $1,$2
+  mov $5,$2
+  add $5,$1
+  add $2,1
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $4,$5
+  seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $4,$6
 lpe
-mov $0,$1
+mov $0,$4

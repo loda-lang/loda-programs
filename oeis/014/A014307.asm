@@ -1,28 +1,32 @@
 ; A014307: Expansion of the e.g.f. sqrt(exp(x) / (2 - exp(x))).
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 1,1,2,7,35,226,1787,16717,180560,2211181,30273047,458186752,7596317885,136907048461,2665084902482,55726440112987,1245661569161135,29642264728189066,748158516941653967,19962900431638852297,561472467839585937560,16602088291822017588121,514861397268710391722627,16709736134023032831958432,566422920345559866343383785,20017787678934958873836057001,736326721513639545664919412962,28147205535555628918615623800767,1116582656527154585466952320011435,45905239919283899619847966162422706
 
-mov $2,1
-mov $6,1
+mov $8,$0
+add $8,1
+bin $8,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,246 ; Number of permutations in the symmetric group S_n that have odd order.
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$6
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$6
+mov $0,$1

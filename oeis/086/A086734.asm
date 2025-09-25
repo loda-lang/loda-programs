@@ -37,7 +37,6 @@ lpb $2
   div $8,2
   bin $8,2
   sub $0,$8
-  mov $4,$5
   mov $7,$0
   add $7,1
   seq $7,40 ; The prime numbers.

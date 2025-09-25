@@ -1,7 +1,7 @@
 ; A280323: Number of years of lunisolar cycles.
-; Submitted by shiva
+; Submitted by DukeBox
 ; 1,2,3,8,11,19,334,1021
-; Formula: a(n) = truncate((d(n+1)-2)/2)+1, b(n) = b(n-1)*(((sign(n)*((abs(n)-1)%12+1))==9)+((sign(n)*((abs(n)-1)%12+1))==8)+((sign(n)*((abs(n)-1)%12+1))==7)+32*((sign(n)*((abs(n)-1)%12+1))==12)+15*((sign(n)*((abs(n)-1)%12+1))==6)+4*((sign(n)*((abs(n)-1)%12+1))==11)+gcd(((sign(n)*((abs(n)-1)%12+1))==5)+((sign(n)*((abs(n)-1)%12+1))==4)+((sign(n)*((abs(n)-1)%12+1))==2)+((sign(n)*((abs(n)-1)%12+1))==0),2))+max(b(n-2),2), b(3) = 16, b(2) = 6, b(1) = 4, b(0) = 1, c(n) = b(n-1), c(3) = 6, c(2) = 4, c(1) = 1, c(0) = 0, d(n) = max(c(n-1),2), d(3) = 4, d(2) = 2, d(1) = 2, d(0) = 0
+; Formula: a(n) = truncate((d(n+1)-2)/2)+1, b(n) = b(n-1)*(((sign(n)*((abs(n)-1)%12+1))==7)+15*((sign(n)*((abs(n)-1)%12+1))==6)+gcd(((sign(n)*((abs(n)-1)%12+1))==5)+((sign(n)*((abs(n)-1)%12+1))==4)+((sign(n)*((abs(n)-1)%12+1))==2)+((sign(n)*((abs(n)-1)%12+1))==0),2))+max(b(n-2),2), b(3) = 16, b(2) = 6, b(1) = 4, b(0) = 1, c(n) = b(n-1), c(3) = 6, c(2) = 4, c(1) = 1, c(0) = 0, d(n) = max(c(n-1),2), d(3) = 4, d(2) = 2, d(1) = 2, d(0) = 0
 
 #offset 1
 
@@ -34,20 +34,6 @@ lpb $0
   add $5,$6
   mov $6,$1
   equ $6,7
-  add $5,$6
-  mov $6,$1
-  equ $6,8
-  add $5,$6
-  mov $6,$1
-  equ $6,9
-  add $5,$6
-  mov $6,$1
-  equ $6,11
-  mul $6,4
-  add $5,$6
-  mov $6,$1
-  equ $6,12
-  mul $6,32
   add $5,$6
   mov $1,$5
   mul $1,$2

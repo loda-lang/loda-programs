@@ -2,28 +2,26 @@
 ; Submitted by Science United
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $3,3
-mov $4,-7
-mul $0,2
-dif $0,2
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,296891 ; Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
-  sub $2,1
-  mov $5,-1
-  pow $5,$2
-  add $5,1
-  dif $2,2
-  seq $2,15003 ; Inverse of 994th cyclotomic polynomial.
-  mul $2,$5
-  div $2,2
-  mul $4,6
-  add $4,64
-  add $1,$2
-  mov $3,$4
+mov $1,$0
+div $1,2
+add $1,3
+mov $4,3
+mov $5,10
+lpb $1
+  sub $1,$4
+  mov $3,$1
+  max $3,0
+  div $4,-2
+  mov $6,-1
+  pow $6,$3
+  seq $3,15648 ; Inverse of 1639th cyclotomic polynomial.
+  mul $3,$6
+  mul $5,$4
+  sub $5,$4
+  add $2,$3
+  mov $4,$5
+  add $4,16
 lpe
-mov $0,$1
+add $0,1
+mod $0,2
+mul $0,$2

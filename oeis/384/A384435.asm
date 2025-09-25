@@ -1,33 +1,23 @@
 ; A384435: Expansion of e.g.f. 2/(5 - 3*exp(2*x)).
-; Submitted by Science United
+; Submitted by Skyman
 ; 1,3,24,282,4416,86448,2030784,55656912,1743277056,61427981568,2405046994944,103579443604992,4866448609591296,247692476576575488,13576823521525653504,797345878311609526272,49948684871884896731136,3324530341927517641310208,234293439367907438337982464
 
-mov $2,1
-add $2,1
+mov $4,$0
+add $4,1
+bin $4,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mul $6,2
-    mov $9,10
-    add $9,$5
-    mov $11,1
-    mov $7,$0
-    add $7,1
-    add $7,$4
-    bin $7,$0
-    mul $7,3
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  mov $3,3
+  pow $3,$2
+  mov $5,$2
+  add $5,$4
+  mov $6,$5
+  seq $6,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  mov $5,$6
+  mul $5,$3
+  mul $1,2
+  add $1,$5
   add $2,1
 lpe
-pow $3,$11
-mov $0,$3
+mov $0,$1
