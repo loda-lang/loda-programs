@@ -4,20 +4,10 @@
 
 #offset 1
 
-mov $1,-3
-lpb $0
-  sub $0,1
-  add $1,$2
-  add $1,12
-  mov $2,$1
-  dir $2,9
-  mod $2,9
-  neq $2,6
-  sub $1,$2
-  add $1,6
-lpe
-mov $0,$1
 add $0,1
-div $0,2
+mov $1,9
+mul $1,$0
+lex $0,9
+add $0,$1
 mul $0,9
-add $0,8
+sub $0,91

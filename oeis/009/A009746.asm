@@ -11,5 +11,6 @@ lpb $2
   add $0,$2
   trn $0,1
   seq $0,24291 ; Expansion of tan(x)*sinh(tan(x))/2.
+  mov $1,1
 lpe
 mul $0,2

@@ -1,34 +1,57 @@
 ; A031485: Numbers whose base-7 representation has one fewer 0 than 6's.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 6,13,20,27,34,41,43,44,45,46,47,62,69,76,83,90,92,93,94,95,96,111,118,125,132,139,141,142,143,144,145,160,167,174,181,188,190,191,192,193,194,209,216,223,230,237,239,240,241,242,243
+; Formula: a(n) = 49*floor((n-1)/10)+46*((sign(n-1)*((n-2)%10+1))==9)+45*((sign(n-1)*((n-2)%10+1))==8)+44*((sign(n-1)*((n-2)%10+1))==7)+43*((sign(n-1)*((n-2)%10+1))==6)+41*((sign(n-1)*((n-2)%10+1))==5)+34*((sign(n-1)*((n-2)%10+1))==4)+27*((sign(n-1)*((n-2)%10+1))==3)+20*((sign(n-1)*((n-2)%10+1))==2)+13*((sign(n-1)*((n-2)%10+1))==1)+6*((sign(n-1)*((n-2)%10+1))==0)-2*((sign(n-1)*((n-2)%10+1))==10)
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,2
-pow $2,2
-lpb $2
-  mov $5,6
-  mov $3,$1
-  seq $3,7093 ; Numbers in base 7.
-  lpb $3
-    mov $6,$3
-    sub $6,1
-    mod $6,10
-    trn $6,4
-    div $3,10
-    add $5,$6
-  lpe
-  sub $5,6
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+mov $2,$0
+div $2,10
+mul $2,49
+dgr $0,11
+mov $1,$0
+equ $1,0
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,13
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,20
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,27
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,34
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,41
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,43
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,44
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,45
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,46
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,2
+sub $2,$1
+mov $0,$2

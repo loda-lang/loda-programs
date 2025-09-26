@@ -1,8 +1,15 @@
 ; A144614: Sum of divisors of 3*n + 1.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,7,8,18,14,31,20,36,31,56,32,54,38,90,44,72,57,98,72,90,62,127,68,144,74,140,80,126,108,180,112,144,98,217,104,162,110,248,144,180,133,224,128,252,160,270,140,216,180,266,152,288,158,378,164,252,183,308,248,270,182,360,216,360,194,399,200,306,252,434,212,324,256,504,224,342,230,450,288,432
-; Formula: a(n) = A000203(3*n+1)
 
 mul $0,3
-add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $3,$0
+add $3,1
+mov $2,$0
+add $2,1
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+mov $0,$1

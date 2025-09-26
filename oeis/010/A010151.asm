@@ -1,22 +1,35 @@
 ; A010151: Continued fraction for sqrt(73).
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 8,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1,5,5,1,1,16,1,1
+; Formula: a(n) = ((sign(n)*((n-1)%7+1))==6)+((sign(n)*((n-1)%7+1))==5)+((sign(n)*((n-1)%7+1))==2)+((sign(n)*((n-1)%7+1))==1)+16*((sign(n)*((n-1)%7+1))==7)+8*((sign(n)*((n-1)%7+1))==0)+5*((sign(n)*((n-1)%7+1))==4)+5*((sign(n)*((n-1)%7+1))==3)
 
-seq $0,40257 ; Continued fraction for sqrt(274).
-sub $0,1
+dgr $0,8
 mov $1,$0
-mov $2,45
-lpb $2
-  mov $3,$1
-  lpb $3
-    mov $5,$3
-    sub $5,6
-    add $1,$0
-    div $3,10
-    add $4,$5
-  lpe
-  add $2,$4
-lpe
-mov $0,$1
-div $0,2
-add $0,1
+equ $1,0
+mul $1,8
+mov $2,$1
+mov $1,$0
+equ $1,1
+add $2,$1
+mov $1,$0
+equ $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $1,$0
+equ $1,6
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,16
+add $2,$1
+mov $0,$2

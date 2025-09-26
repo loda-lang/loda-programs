@@ -1,23 +1,30 @@
-; A198205: Number of 2nX2 0..3 arrays with values 0..3 introduced in row major order and each element unequal to exactly two horizontal and vertical neighbors
-; Submitted by [AF] Kalianthys
+; A198205: Number of 2nX2 0..3 arrays with values 0..3 introduced in row major order and each element unequal to exactly two horizontal and vertical neighbors.
+; Submitted by loader3229
 ; 4,43,658,11029,189376,3272959,56665678,981535273,17003856124,294580477651,5103458162314,88415060881213,1531751228239288,26536907089886119,459740106490112326,7964792868501695569,137986494481338204148,2390554656240803150203,41415296384309274768514,717501593299298989740901,12430396045455526518050224,215351083942778365228091983,3730861767059226387055955518,64635521075937932931755570809,1119781660538837187147090160876,19399719324703445549763782303779,336091510639829989935888907652218
-; Formula: a(n) = truncate(b(2*n)/6)+2, b(n) = 9*b(n-2)+2*b(n-1)+54, b(2) = 15, b(1) = -6, b(0) = -3
+; Formula: a(n) = 3*d(n-1)+1, b(n) = b(n-1), b(2) = 1, b(1) = 1, b(0) = 1, c(n) = c(n-1)*(b(n-1)+2)^2+c(n-1)*(b(n-1)+1)^2+d(n-1)*(b(n-1)+2)^2+1, c(2) = 426, c(1) = 23, c(0) = 1, d(n) = c(n-1)*(b(n-1)+1)^2+d(n-1)*(b(n-1)+2)^2+1, d(2) = 219, d(1) = 14, d(0) = 1
 
 #offset 1
 
-mov $2,-3
-mov $3,-3
-mul $0,2
+mov $1,1
+mov $2,1
+mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
-  add $3,$2
-  mov $1,2
-  add $1,$2
-  add $1,4
-  mul $1,9
-  mov $2,$3
-  add $3,$1
+  add $1,1
+  mov $3,$2
+  mul $3,$1
+  mul $3,$1
+  add $3,1
+  add $1,1
+  mul $4,$1
+  mul $4,$1
+  add $4,$3
+  mul $2,$1
+  mul $2,$1
+  add $2,$4
+  sub $1,2
 lpe
-mov $0,$2
-div $0,6
-add $0,2
+mov $0,$4
+mul $0,3
+add $0,1

@@ -830,6 +830,7 @@ A349124: a(n) = A349123(n) / A003557(n), where A349123 is the Dirichlet convolut
 A350389: a(n) is the largest unitary divisor of n that is an exponentially odd number (A268335).
 A350390: a(n) is the largest exponentially odd divisor of n.
 A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
+A353478: a(n) = 1 if n is an even semiprime (2*prime), otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.
 A353527: The smallest prime not dividing 2*n, reduced modulo 4.

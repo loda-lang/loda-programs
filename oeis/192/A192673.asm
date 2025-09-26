@@ -1,26 +1,21 @@
-; A192673:  Floor-Sqrt transform of large Schroder numbers (A006318).
-; Submitted by Science United
+; A192673: Floor-Sqrt transform of large Schroder numbers (A006318).
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,2,4,9,19,42,92,203,453,1018,2300,5224,11919,27301,62750,144662,334392,774802,1799089,4185524,9754468,22769099,53225213,124585182,291975928,685044632,1608962053,3782645385,8901012965,20962890607,49409138924,116543063346,275086432485
+; Formula: a(n) = sqrtint(b(n+1)), b(n) = truncate((2*d(n-1)+c(n-1))/(-n)), b(3) = 6, b(2) = 2, b(1) = 2, b(0) = 0, c(n) = 4*d(n-1)+3*c(n-1)+truncate((2*d(n-1)+c(n-1))/(-n)), c(3) = -38, c(2) = -8, c(1) = -2, c(0) = 0, d(n) = 3*d(n-1)+2*c(n-1)+truncate((2*d(n-1)+c(n-1))/(-n)), d(3) = -25, d(2) = -5, d(1) = -1, d(0) = -1
 
-mov $1,$0
-mov $6,$0
-add $6,3
+mov $3,-1
 add $0,1
 lpb $0
   sub $0,1
-  mov $2,$4
-  sub $2,$6
-  bin $2,$0
+  add $2,$3
+  add $3,$2
   sub $4,1
-  trn $0,1
-  mov $3,$4
-  bin $3,$1
-  add $6,1
-  add $1,1
-  mul $3,$2
-  div $3,$1
-  sub $1,1
-  add $5,$3
+  mov $1,$3
+  div $1,$4
+  add $3,$2
+  add $2,$3
+  add $2,$1
+  add $3,$1
 lpe
-mov $0,$5
-nrt $0,2
+nrt $1,2
+mov $0,$1

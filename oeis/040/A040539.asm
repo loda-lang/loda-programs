@@ -1,25 +1,47 @@
 ; A040539: Continued fraction for sqrt(563).
-; Submitted by [AF] Kalianthys
+; Submitted by loader3229
 ; 23,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1
-; Formula: a(n) = truncate((2*truncate(c(n^2+1)/2)+b(n^2+1))/7)+truncate(c(n^2+1)/2), b(n) = b(n-1), b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 2*A010158(2*n-2)*gcd(-n+c(n-1)+1,2), c(2) = 2, c(1) = 36, c(0) = 0
+; Formula: a(n) = ((sign(n)*((n-1)%10+1))==9)+((sign(n)*((n-1)%10+1))==7)+((sign(n)*((n-1)%10+1))==3)+((sign(n)*((n-1)%10+1))==1)+46*((sign(n)*((n-1)%10+1))==10)+23*((sign(n)*((n-1)%10+1))==5)+23*((sign(n)*((n-1)%10+1))==0)+2*((sign(n)*((n-1)%10+1))==8)+2*((sign(n)*((n-1)%10+1))==6)+2*((sign(n)*((n-1)%10+1))==4)+2*((sign(n)*((n-1)%10+1))==2)
 
-pow $0,2
-add $0,1
-lpb $0
-  sub $0,1
-  sub $3,$4
-  gcd $3,2
-  mov $2,$4
-  mul $2,2
-  seq $2,10158 ; Continued fraction for sqrt(85).
-  mul $2,2
-  mul $3,$2
-  add $4,1
-lpe
-mov $0,$3
-div $0,2
-add $1,$0
-add $1,$0
-div $1,7
-add $1,$0
-mov $0,$1
+dgr $0,11
+mov $1,$0
+equ $1,0
+mul $1,23
+mov $2,$1
+mov $1,$0
+equ $1,1
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,23
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,7
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,9
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,46
+add $2,$1
+mov $0,$2

@@ -1,50 +1,45 @@
 ; A041702: Numerators of continued fraction convergents to sqrt(371).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Skyman
 ; 19,58,77,366,443,1695,64853,196254,261107,1240682,1501789,5746049,219851651,665301002,885152653,4205911614,5091064267,19479104415,745297032037,2255370200526,3000667232563,14258039130778,17258706363341,66034158220801,2526556718753779,7645704314482138,10172261033235917,48334748447425806,58507009480661723,223855776889410975,8565026531278278773,25918935370724247294,34483961902002526067,163854782978734351562,198338744880736877629,758871017620944984449,29035437414476646286691,87865183261050883844522
+; Formula: a(n) = truncate((b(n+1)-26)/2)+13, b(n) = b(n-1)*(((sign(truncate(binomial(4*n-5,2)/2))*((abs(truncate(binomial(4*n-5,2)/2))-1)%6+1))==4)+38*((sign(truncate(binomial(4*n-5,2)/2))*((abs(truncate(binomial(4*n-5,2)/2))-1)%6+1))==6)+19*((sign(truncate(binomial(4*n-5,2)/2))*((abs(truncate(binomial(4*n-5,2)/2))-1)%6+1))==0)+4*((sign(truncate(binomial(4*n-5,2)/2))*((abs(truncate(binomial(4*n-5,2)/2))-1)%6+1))==3)+3*((sign(truncate(binomial(4*n-5,2)/2))*((abs(truncate(binomial(4*n-5,2)/2))-1)%6+1))==1))+b(n-2), b(2) = 116, b(1) = 38, b(0) = 2
 
-mov $1,1
+mov $1,2
 add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  mov $6,-1
-  pow $6,$3
-  add $6,2
-  mov $7,2
-  trn $7,$3
-  add $7,6
   mov $1,$3
-  gcd $1,$7
-  sub $1,3
-  sub $7,2
-  mov $9,3
-  pow $9,$1
-  mov $1,$9
-  mod $1,10
-  mov $8,2
-  add $8,$1
-  mov $1,$8
-  div $1,3
-  mul $1,3
-  mul $8,2
-  mul $1,$7
-  add $1,$8
-  div $1,2
+  mul $1,4
   sub $1,1
-  mul $1,$6
-  mul $1,2
-  sub $1,1
-  div $1,3
-  mov $5,$1
-  add $5,11
-  dif $5,2
-  add $1,1
-  add $1,$5
+  bin $1,2
   div $1,2
-  sub $1,3
+  dgr $1,7
+  mov $6,$1
+  equ $6,0
+  mul $6,19
+  mov $5,$6
+  mov $6,$1
+  equ $6,1
+  mul $6,3
+  add $5,$6
+  mov $6,$1
+  equ $6,3
+  mul $6,4
+  add $5,$6
+  mov $6,$1
+  equ $6,4
+  add $5,$6
+  mov $6,$1
+  equ $6,6
+  mul $6,38
+  add $5,$6
+  mov $1,$5
   mul $1,$2
   add $1,$4
   add $3,1
 lpe
 mov $0,$1
+sub $0,26
+div $0,2
+add $0,13

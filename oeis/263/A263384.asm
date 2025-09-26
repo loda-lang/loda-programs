@@ -1,20 +1,25 @@
 ; A263384: Fourth column of the matrix of polynomial coefficients of the rational approximation to Mill's ratio.
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 1,14,185,2640,41685,729330,14073885,297693900,6859400625,171172905750,4601737965825,132643472761800,4082080279402125,133614981594344250,4635763624512145125,169957871025837394500
+; Formula: a(n) = 2*n*b(n-1)+c(n-1)*(2*n+1)+d(n-1)*(2*n+2)+a(n-1)*(2*n+3), a(4) = 41685, a(3) = 2640, a(2) = 185, a(1) = 14, a(0) = 1, b(n) = 2*n*b(n-1), b(4) = 384, b(3) = 48, b(2) = 8, b(1) = 2, b(0) = 1, c(n) = 2*n*b(n-1)+c(n-1)*(2*n+1), c(4) = 2895, c(3) = 279, c(2) = 33, c(1) = 5, c(0) = 1, d(n) = 2*n*b(n-1)+c(n-1)*(2*n+1)+d(n-1)*(2*n+2), d(4) = 12645, d(3) = 975, d(2) = 87, d(1) = 9, d(0) = 1
 
+mov $1,2
 mov $2,1
-add $0,2
-mul $0,2
+mov $3,1
+mov $4,1
+mov $5,1
 lpb $0
-  add $0,1
-  add $4,$2
-  mul $2,$0
-  sub $0,2
-  mul $1,$0
-  add $1,$3
-  add $3,$4
-  mov $4,$3
-  mul $4,$0
   sub $0,1
+  mul $2,$1
+  add $1,1
+  mul $3,$1
+  add $3,$2
+  add $1,1
+  mul $4,$1
+  add $4,$3
+  add $1,1
+  mul $5,$1
+  add $5,$4
+  sub $1,1
 lpe
-mov $0,$1
+mov $0,$5
