@@ -1,9 +1,7 @@
 ; A168185: Characteristic function of numbers that are not multiples of 12.
+; Submitted by loader3229
 ; 0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1
-; Formula: a(n) = truncate(0^truncate(gcd(12,n)/8))
+; Formula: a(n) = sqrtnint(n%12,15)
 
-mov $2,12
-gcd $2,$0
-div $2,8
-pow $1,$2
-mov $0,$1
+mod $0,12
+nrt $0,15

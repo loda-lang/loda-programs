@@ -1,22 +1,47 @@
 ; A345118: a(n) is the sum of the lengths of all the segments used to draw a square of side n representing a basketweave pattern where all the multiple strands are of unit width, the horizontal ones appearing as 1 X 3 rectangles, while the vertical ones as unit area squares.
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 0,4,11,20,34,50,69,92,116,144,175,208,246,286,329,376,424,476,531,588,650,714,781,852,924,1000,1079,1160,1246,1334,1425,1520,1616,1716,1819,1924,2034,2146,2261,2380,2500,2624,2751,2880,3014,3150,3289,3432,3576,3724
-; Formula: a(n) = b(n-1)+c(n-1)+d(n-1)+e(n-1)+4, a(4) = 34, a(3) = 20, a(2) = 11, a(1) = 4, a(0) = 0, b(n) = -2*truncate((b(n-3)+e(n-3)+5)/2)+b(n-1)+b(n-2)+e(n-2)+e(n-3)+10, b(6) = 50, b(5) = 34, b(4) = 20, b(3) = 11, b(2) = 4, b(1) = 0, b(0) = 0, c(n) = -2*truncate((b(n-1)+e(n-1)+5)/2)+b(n-1)+d(n-1)+e(n-1)+6, c(4) = 11, c(3) = 9, c(2) = 5, c(1) = 2, c(0) = 0, d(n) = -2*truncate((b(n-2)+e(n-2)+5)/2)+b(n-2)+d(n-2)+e(n-1)+e(n-2)+10, d(4) = 14, d(3) = 9, d(2) = 7, d(1) = 4, d(0) = 0, e(n) = -2*truncate((b(n-1)+e(n-1)+5)/2)+b(n-1)+e(n-1)+5, e(4) = 1, e(3) = 1, e(2) = 0, e(1) = 1, e(0) = 0
+; Formula: a(n) = 24*floor(n/8)*(n%8)+192*binomial(floor(n/8),2)+116*floor(n/8)+92*((n%8)==7)+69*((n%8)==6)+50*((n%8)==5)+34*((n%8)==4)+20*((n%8)==3)+11*((n%8)==2)+4*((n%8)==1)
 
-lpb $0
-  sub $0,1
-  add $4,$1
-  add $4,5
-  mov $5,$3
-  add $5,$4
-  add $5,$2
-  sub $5,1
-  add $1,$3
-  mod $4,2
-  mov $2,$3
-  add $2,1
-  add $2,$4
-  mov $3,$5
-  sub $3,$1
-lpe
-mov $0,$5
+mov $2,$0
+div $2,8
+mul $2,116
+mov $3,$0
+div $3,8
+mod $0,8
+mov $4,$3
+mul $4,$0
+bin $3,2
+mul $3,8
+add $3,$4
+mul $3,24
+mov $1,$0
+equ $1,1
+mul $1,4
+add $2,$3
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,20
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,34
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,50
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,69
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,92
+add $2,$1
+mov $0,$2

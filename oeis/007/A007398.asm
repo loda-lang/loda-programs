@@ -1,13 +1,32 @@
 ; A007398: Add 7, then reverse digits.
-; Submitted by Kotenok2000
+; Submitted by BrandyNOW
 ; 0,7,41,84,19,62,96,301,803,18,52,95,201,802,908,519,625,236,342,943,59,66,37,44,15,22,92,99,601,806,318,523,35,24,13,2,9,61,86,39,64,17,42,94,101,801,808,518,525,235,242,942,949,659,666,376,383,93,1,8,51,85,29,63,7,41,84,19,62,96,301,803,18,52,95,201,802,908,519,625
-; Formula: a(n) = b(n)-7, b(n) = A004086(b(n-1))+7, b(0) = 7
+; Formula: a(n) = b(n)-1, b(n) = (9*min(truncate((b(n-1)+6)/100),1)+1)*(9*min((-10*truncate(truncate((b(n-1)+6)/10)/10)+truncate((b(n-1)+6)/10))*(9*min(truncate((b(n-1)+6)/100),1)+1)+truncate((b(n-1)+6)/100),1)+1)*(-10*truncate((b(n-1)+6)/10)+b(n-1)+6)+(-10*truncate(truncate((b(n-1)+6)/10)/10)+truncate((b(n-1)+6)/10))*(9*min(truncate((b(n-1)+6)/100),1)+1)+truncate((b(n-1)+6)/100)+1, b(0) = 1
 
-mov $1,$0
-mov $0,7
-lpb $1
-  sub $1,1
-  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $0,7
+mov $1,1
+lpb $0
+  sub $0,1
+  add $1,6
+  mov $3,$1
+  div $3,100
+  mov $2,$1
+  div $2,10
+  mod $2,10
+  mov $4,$3
+  min $4,1
+  mul $4,9
+  add $4,1
+  mod $1,10
+  mul $1,$4
+  mul $2,$4
+  add $2,$3
+  mov $4,$2
+  min $4,1
+  mul $4,9
+  add $4,1
+  mul $1,$4
+  add $1,$2
+  add $1,1
 lpe
-sub $0,7
+mov $0,$1
+sub $0,1

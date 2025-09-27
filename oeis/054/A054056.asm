@@ -1,42 +1,24 @@
 ; A054056: Numbers of form 29+n^2+n or 29+2*n^2.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 29,31,35,37,41,47,49,59,61,71,79,85,101,119,127,139,157,161,185,191,211,229,239,269,271,301,317,335,367,371,409,421,449,479,491,535,541,581,607,629,677,679,731,751,785,829,841,899,911,959,997,1021,1085
+; Formula: a(n) = 2*d(n)+29, b(n) = ((b(n-1)^2)==min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)))+b(n-1), b(2) = 2, b(1) = 1, b(0) = 0, c(n) = ((c(n-1)+binomial(c(n-1),2))==min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)))+c(n-1), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)), d(2) = 1, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-pow $2,2
-lpb $2
-  mov $5,0
-  mov $7,3
-  mov $8,0
+lpb $0
+  sub $0,1
   mov $3,$1
-  add $3,3
-  lpb $3
-    sub $3,$7
-    mov $9,1
-    mov $6,$3
-    lpb $6
-      add $9,2
-      pow $6,$7
-      sub $6,$9
-    lpe
-    equ $6,1
-    add $8,1
-    add $5,$6
-    mov $7,$8
-  lpe
-  mov $3,$5
-  min $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  pow $3,2
+  mov $4,$2
+  bin $4,2
+  add $4,$2
+  mov $5,$3
+  min $5,$4
+  equ $3,$5
+  equ $4,$5
+  add $1,$3
+  add $2,$4
 lpe
-mov $0,$1
+mov $0,$5
 mul $0,2
-add $0,27
+add $0,29

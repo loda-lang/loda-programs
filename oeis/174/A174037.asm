@@ -13,7 +13,6 @@ add $2,1
 bin $2,2
 sub $1,$2
 sub $1,1
-mov $3,0
 mov $5,1
 bin $0,$1
 lpb $0

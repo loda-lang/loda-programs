@@ -1,15 +1,43 @@
 ; A040941: Continued fraction for sqrt(973).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 31,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5,62,5,5,2,8,2,5,5
-; Formula: a(n) = A064989(A297002(5*truncate(A010163(n)/4)+gcd(A010163(n)-2,5*truncate(A010163(n)/4))+2))
+; Formula: a(n) = 62*((sign(n)*((n-1)%8+1))==8)+31*((sign(n)*((n-1)%8+1))==0)+8*((sign(n)*((n-1)%8+1))==4)+5*((sign(n)*((n-1)%8+1))==7)+5*((sign(n)*((n-1)%8+1))==6)+5*((sign(n)*((n-1)%8+1))==2)+5*((sign(n)*((n-1)%8+1))==1)+2*((sign(n)*((n-1)%8+1))==5)+2*((sign(n)*((n-1)%8+1))==3)
 
-seq $0,10163 ; Continued fraction for sqrt(92).
+dgr $0,9
 mov $1,$0
-sub $1,2
-div $0,4
-mul $0,5
-gcd $1,$0
-add $0,$1
-add $0,2
-seq $0,297002 ; Completely multiplicative with a(prime(k)) = prime(2 * k) (where prime(k) denotes the k-th prime).
-seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+equ $1,0
+mul $1,31
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,62
+add $2,$1
+mov $0,$2

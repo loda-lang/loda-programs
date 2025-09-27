@@ -1,23 +1,73 @@
 ; A353466: Numbers k for which A276086(k) is of the form 4k+3.
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 2,8,14,20,26,30,34,36,40,42,46,48,52,54,58,62,68,74,80,86,90,94,96,100,102,106,108,112,114,118,122,128,134,140,146,150,154,156,160,162,166,168,172,174,178,182,188,194,200,206,210,214,216,220,222,226,228,232,234,238,242,248,254,260,266,270,274,276
+; Formula: a(n) = 60*floor((n-1)/15)+58*(((n-1)%15)==14)+54*(((n-1)%15)==13)+52*(((n-1)%15)==12)+48*(((n-1)%15)==11)+46*(((n-1)%15)==10)+42*(((n-1)%15)==9)+40*(((n-1)%15)==8)+36*(((n-1)%15)==7)+34*(((n-1)%15)==6)+30*(((n-1)%15)==5)+26*(((n-1)%15)==4)+20*(((n-1)%15)==3)+14*(((n-1)%15)==2)+8*(((n-1)%15)==1)+2*(((n-1)%15)==0)
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-  bin $3,3
-  mod $3,2
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+mov $2,$0
+div $2,15
+mul $2,60
+mod $0,15
+mov $1,$0
+equ $1,0
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,14
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,20
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,26
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,30
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,34
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,36
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,40
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,42
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,46
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,48
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,52
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,54
+add $2,$1
+mov $1,$0
+equ $1,14
+mul $1,58
+add $2,$1
+mov $0,$2

@@ -4,23 +4,31 @@
 
 #offset 1
 
+mov $3,$0
 sub $0,1
-mov $1,2
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-  equ $3,1
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,2
+  mov $1,$4
+  seq $1,40 ; The prime numbers.
+  div $1,2
+  mov $4,$1
+  mul $4,2
+  add $4,1
+  mov $6,$4
+  seq $4,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.
+  sub $4,1
+  equ $4,0
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  trn $3,1
 lpe
-mov $0,$1
+mov $0,$6
+sub $0,3
 div $0,2
-add $0,1
+add $0,2

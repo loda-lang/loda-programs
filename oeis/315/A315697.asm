@@ -1,24 +1,57 @@
 ; A315697: Coordination sequence Gal.6.621.5 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by owensse
+; Submitted by loader3229
 ; 1,6,12,17,23,28,33,38,43,49,54,60,66,72,78,83,89,94,99,104,109,115,120,126,132,138,144,149,155,160,165,170,175,181,186,192,198,204,210,215,221,226,231,236,241,247,252,258,264,270
+; Formula: a(n) = ((sign(n)*((n-1)%12+1))==0)+66*floor(n/12)+60*((sign(n)*((n-1)%12+1))==11)+54*((sign(n)*((n-1)%12+1))==10)+49*((sign(n)*((n-1)%12+1))==9)+43*((sign(n)*((n-1)%12+1))==8)+38*((sign(n)*((n-1)%12+1))==7)+33*((sign(n)*((n-1)%12+1))==6)+28*((sign(n)*((n-1)%12+1))==5)+23*((sign(n)*((n-1)%12+1))==4)+17*((sign(n)*((n-1)%12+1))==3)+12*((sign(n)*((n-1)%12+1))==2)+6*((sign(n)*((n-1)%12+1))==1)
 
-mov $1,$0
-mov $3,$0
-lpb $0
-  add $4,8
-  trn $0,$4
-  add $0,$4
-  sub $0,4
-lpe
-mul $3,4
-trn $0,1
-add $0,$3
-add $0,1
 mov $2,$0
-div $2,14
-mul $0,2
-sub $0,2
-sub $0,$2
-div $0,2
-add $0,1
-add $0,$1
+div $2,12
+mul $2,66
+dgr $0,13
+mov $1,$0
+equ $1,0
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,17
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,23
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,28
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,33
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,38
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,43
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,49
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,54
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,60
+add $2,$1
+mov $0,$2

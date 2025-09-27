@@ -1,15 +1,14 @@
 ; A060781: a(n) = lcm(sigma(n+1), sigma(n)), where sigma = A000203.
-; Submitted by Simon Strandgaard
+; Submitted by DukeBox
 ; 3,12,28,42,12,24,120,195,234,36,84,28,168,24,744,558,234,780,420,672,288,72,120,1860,1302,840,280,840,360,288,2016,1008,432,432,4368,3458,1140,840,2520,630,672,1056,924,1092,936,144,1488,7068,1767,2232,3528,2646,1080,360,360,240,720,180,840,5208,2976,1248,13208,10668,1008,2448,4284,2016,288,144,4680,14430,4218,7068,4340,3360,672,1680,7440,22506
-; Formula: a(n) = A000203(n+1)*truncate(A000203(n+2)/gcd(A000203(n+2),A000203(n+1)))
+; Formula: a(n) = A000203(n)*truncate(A000203(n+1)/gcd(A000203(n+1),A000203(n)))
 
 #offset 1
 
 mov $1,$0
-add $1,2
+add $1,1
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $2,$1
-add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 gcd $1,$0
 div $2,$1

@@ -1,11 +1,12 @@
 ; A047527: Numbers that are congruent to {0, 1, 2, 7} mod 8.
-; Submitted by Athlici
+; Submitted by loader3229
 ; 0,1,2,7,8,9,10,15,16,17,18,23,24,25,26,31,32,33,34,39,40,41,42,47,48,49,50,55,56,57,58,63,64,65,66,71,72,73,74,79,80,81,82,87,88,89,90,95,96,97,98,103,104,105,106,111,112,113,114,119,120
-; Formula: a(n) = -sign(2*sign(n)+2*sign(-3)-1)*bitor(abs(-3),abs(n))+n-4
+; Formula: a(n) = 4*floor(n/4)+n-1
 
 #offset 1
 
-mov $1,-3
-bor $1,$0
-sub $0,$1
-sub $0,4
+mov $1,$0
+div $1,4
+mul $1,4
+add $0,$1
+sub $0,1

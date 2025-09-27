@@ -5,9 +5,7 @@
 #offset 1
 
 mov $2,$0
-mov $4,0
 mul $0,4
-sub $0,3
 nrt $0,2
 mov $1,$0
 pow $1,2

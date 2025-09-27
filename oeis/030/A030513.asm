@@ -12,7 +12,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,114003 ; Rows sums of triangle A114002.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $3,2
+  sub $3,1
   equ $3,7
   sub $0,$3
   add $1,1

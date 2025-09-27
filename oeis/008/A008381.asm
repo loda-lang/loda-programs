@@ -1,20 +1,18 @@
 ; A008381: floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5).
-; Submitted by zombie67 [MM]
+; Submitted by BrandyNOW
 ; 0,0,0,0,0,1,1,2,4,8,16,16,24,36,54,81,81,108,144,192,256,256,320,400,500,625,625,750,900,1080,1296,1296,1512,1764,2058,2401,2401,2744,3136,3584,4096,4096,4608,5184,5832
+; Formula: a(n) = floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5)
 
-mov $3,1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  sub $1,$0
-  mov $4,$1
-  add $4,1
-  div $4,5
-  div $1,5
-  mul $1,$4
-  mul $2,$1
-  add $3,1
-lpe
-mov $0,$2
+mov $1,$0
+add $1,1
+div $1,5
+mov $2,$0
+add $2,2
+div $2,5
+mov $3,$0
+add $3,3
+div $3,5
+div $0,5
+mul $0,$1
+mul $0,$2
+mul $0,$3

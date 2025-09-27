@@ -1,12 +1,22 @@
 ; A008382: a(n) = floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5)*floor((n+4)/5).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by BrandyNOW
 ; 0,0,0,0,0,1,2,4,8,16,32,48,72,108,162,243,324,432,576,768,1024,1280,1600,2000,2500,3125,3750,4500,5400,6480,7776,9072,10584,12348,14406,16807,19208,21952,25088,28672,32768,36864,41472,46656,52488,59049,65610,72900,81000
-; Formula: a(n) = a(n-1)+A008381(n), a(0) = 0
+; Formula: a(n) = floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5)*floor((n+4)/5)
 
-lpb $0
-  mov $2,$0
-  seq $2,8381 ; floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5).
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+add $1,1
+div $1,5
+mov $2,$0
+add $2,2
+div $2,5
+mov $3,$0
+add $3,3
+div $3,5
+mov $4,$0
+add $4,4
+div $4,5
+div $0,5
+mul $0,$1
+mul $0,$2
+mul $0,$3
+mul $0,$4

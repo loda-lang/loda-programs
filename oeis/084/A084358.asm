@@ -1,33 +1,42 @@
 ; A084358: Lists of sets of lists.
-; Submitted by mkferrysr
+; Submitted by loader3229
 ; 1,1,5,37,363,4441,65133,1114009,21771851,478658101,11692343253,314170940293,9209104364331,292435635165649,10000637145321917,366427621403088433,14321135069200849515,594696814358067968461,26147933188037724372069,1213557105228119522698525,59286998382363978401004875,3041221193746534600311433321,163433070369740446207375536525,9181994460388151752134344478217,538291495977757774236696757702923,32872049193514617771632232060871141,2087706180245497830684846865270783733
 
-mov $2,1
+mov $8,$0
+add $8,1
+bin $8,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
-  max $6,1
   mov $4,$2
-  lpb $4
-    mov $8,$4
-    trn $8,1
-    seq $8,262 ; Number of "sets of lists": number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    mul $7,$8
-    add $5,1
-    add $6,$7
-  lpe
-  sub $6,$3
+  seq $4,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
+  mov $5,$2
+  add $5,$8
+  add $5,1
+  mov $6,$5
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $5,$7
+  sub $5,1
+  mov $7,$6
+  bin $7,$5
   mov $3,$6
-  mov $$9,$3
+  mul $3,-1
+  sub $6,$5
+  mov $5,$6
+  pow $6,0
+  add $6,$3
+  fac $6,$5
+  mul $7,$6
+  mov $5,$7
+  gcd $5,$5
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

@@ -1,17 +1,17 @@
 ; A095556: a(n) = 82 written in base n.
-; Submitted by Aurum
+; Submitted by Sebastian Matuschka (aka versat)
 ; 1111111111111111111111111111111111111111111111111111111111111111111111111111111111,1010010,10001,1102,312,214,145,122,101,82,75
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,82
+neq $1,0
+add $1,81
 lpb $1
   mov $4,$1
   mod $4,$2

@@ -1,20 +1,18 @@
 ; A202278: Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
-; Submitted by BrandyNOW
+; Submitted by Nvgnte
 ; 0,1,2,3,5,8,13,21,34,55,89
-; Formula: a(n) = truncate((2*n*sqrtnint(binomial(4*n+1,floor((2*n)/2)),4))/binomial(floor((2*n)/2)+2,2))
+; Formula: a(n) = truncate(b(n-1)/2), b(n) = c(n-1), b(2) = 4, b(1) = 2, b(0) = 0, c(n) = c(n-1)+c(n-2), c(3) = 10, c(2) = 6, c(1) = 4, c(0) = 2
 
 #offset 1
 
-mov $1,$0
-mul $0,2
-mov $2,$0
-div $0,2
-mul $1,4
-add $1,1
-bin $1,$0
-nrt $1,4
-add $0,2
-bin $0,2
-mul $1,$2
-div $1,$0
+mov $2,4
+mov $3,2
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mov $3,$2
+  add $2,$1
+lpe
 mov $0,$1
+div $0,2

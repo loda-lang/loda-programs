@@ -17,5 +17,4 @@ lpb $1
   add $2,1
   max $3,$4
 lpe
-mov $1,$3
 add $0,$3
