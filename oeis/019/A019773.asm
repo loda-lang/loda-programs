@@ -1,26 +1,27 @@
 ; A019773: Decimal expansion of 2*e/23.
-; Submitted by Yeti
+; Submitted by Science United
 ; 2,3,6,3,7,2,3,3,2,9,0,9,4,8,2,1,9,4,3,7,9,1,5,5,4,3,2,2,9,1,5,3,5,8,6,9,3,7,0,1,9,5,3,9,9,4,5,2,1,7,0,3,9,7,8,2,3,2,1,4,5,7,6,3,2,3,8,3,2,7,5,0,4,6,5,5,2,5,8,7
 
-add $0,2
-mov $3,$0
-mul $3,5
-lpb $3
-  add $2,56
-  mul $2,$3
-  mov $5,$3
-  div $5,3
-  add $5,1
-  add $1,$2
-  div $1,$5
-  div $2,$5
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-mul $2,5
-div $2,$4
-div $1,$2
+add $0,1
+mov $1,10
+pow $1,$0
+mov $4,$1
+pow $1,2
+mov $2,1
 mov $0,$1
+lpb $0
+  add $2,$3
+  mul $3,-1
+  add $3,$2
+  mov $5,$0
+  sub $5,2
+  div $5,$3
+  mov $0,$5
+  mov $3,1
+  add $6,$5
+lpe
+mov $0,$6
+mul $0,2
+div $0,$4
 div $0,23
 mod $0,10

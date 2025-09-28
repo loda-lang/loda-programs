@@ -1,5 +1,5 @@
 ; A379572: Number of uniquely graceful graphs containing no isolated points.
-; Submitted by shiva
+; Submitted by Jave808
 ; 0,1,2,4,1,5,10,29
 
 #offset 1
@@ -11,6 +11,7 @@ lpb $0
   dif $0,4
   mul $2,$0
   add $3,$1
+  mod $0,10
   sub $0,1
   sub $1,$2
   mul $1,-1

@@ -1,9 +1,8 @@
 ; A208739: 2^n minus the number of partitions of n.
-; Submitted by zeekec
+; Submitted by Science United
 ; 0,1,2,5,11,25,53,113,234,482,982,1992,4019,8091,16249,32592,65305,130775,261759,523798,1047949,2096360,4193302,8387353,16775641,33552474,67106428,134214718,268431738,536866347,1073736220,2147476806,4294958947,8589924449
-; Formula: a(n) = 2^(n+1)-A000041(n+1)
+; Formula: a(n) = 2^n-A000041(n)
 
-add $0,1
 mov $1,2
 pow $1,$0
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).

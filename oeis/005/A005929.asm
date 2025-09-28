@@ -1,28 +1,29 @@
 ; A005929: Theta series of hexagonal net with respect to midpoint of edge.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 0,2,0,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,2,0,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,4
 
 dif $0,-2
-add $0,3
-lpb $0
-  sub $0,3
-  mov $2,$0
-  max $2,0
-  mov $0,0
-  mov $1,17
-  add $1,$2
-  mod $1,3
-  sub $1,2
-  bin $1,2
-  mul $1,2
-  mov $3,$2
-  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  seq $2,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
-  mul $2,2
-  sub $2,$3
-  mul $2,6
-  mul $2,$1
+max $0,0
+mov $5,$0
+mov $6,$0
+mod $6,3
+mov $1,2
+lpb $1
+  sub $1,1
+  mov $0,$5
+  add $0,$1
+  trn $0,1
+  seq $0,38589 ; Sizes of successive clusters in hexagonal lattice A_2 centered at lattice point.
+  mov $2,$1
+  mul $2,$0
+  mov $3,$0
+  add $4,$2
 lpe
-mov $0,$2
-div $0,36
+min $5,1
+mul $5,$3
+mul $6,2
+sub $4,$5
+mov $0,$4
+mul $0,$6
+div $0,12
 mul $0,2

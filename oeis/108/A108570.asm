@@ -5,40 +5,49 @@
 #offset 1
 
 sub $0,1
-mul $0,2
-trn $0,1
-mov $1,$0
-div $1,2
-sub $0,1
-gcd $0,2
-mov $2,4
-mov $3,$1
-sub $1,1
-add $3,4
-pow $3,3
-lpb $3
-  mov $6,$4
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,3
-  sub $4,$6
-  mul $6,$4
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $1,$6
-  mov $5,$1
-  max $5,0
-  equ $5,$1
-  add $2,6
-  mul $3,$5
-  sub $3,18
-  mov $4,$2
+mov $4,$0
+mul $4,2
+trn $4,1
+mov $5,$4
+div $5,2
+sub $4,1
+gcd $4,2
+max $7,$5
+mov $9,$7
+add $7,1
+mov $10,$7
+pow $10,4
+lpb $10
+  add $6,1
+  mov $8,$3
+  mul $8,3
+  add $8,1
+  seq $8,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  bin $8,2
+  sub $9,$8
+  add $9,1
+  add $3,$6
+  mov $6,$9
+  max $6,0
+  equ $6,$9
+  sub $9,$6
+  sub $10,$6
 lpe
-mov $1,$2
-div $1,6
-mul $1,3
-add $1,$0
-mov $0,$1
+mov $5,$3
+div $5,2
+mul $5,3
+add $5,$4
+mov $0,$5
 mul $0,2
 add $0,1
-pow $0,2
+mul $0,2
+mov $2,$0
+div $0,2
+mov $1,2
+mul $1,$2
+mul $1,$0
+mov $0,$1
+sub $0,36
+div $0,16
+mul $0,4
+add $0,9

@@ -1,12 +1,31 @@
 ; A367866: a(n) = Sum_{d|n} d * sigma(d) * mu(d)^2.
-; Submitted by mmonnin
+; Submitted by BrandyNOW
 ; 1,7,13,7,31,91,57,7,13,217,133,91,183,399,403,7,307,91,381,217,741,931,553,91,31,1281,13,399,871,2821,993,7,1729,2149,1767,91,1407,2667,2379,217,1723,5187,1893,931,403,3871,2257,91,57,217,3991,1281,2863,91
-; Formula: a(n) = A133477(n^2)+1
 
 #offset 1
 
-mov $1,$0
-pow $1,2
-seq $1,133477 ; Sum of cubefree divisors of n excluding 1.
+mov $1,1
+mov $2,2
+mov $4,-1
+lpb $0
+  mov $3,$0
+  pow $3,2
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
+  mov $3,$2
+  add $3,1
+  lpb $0
+    dif $0,$2
+    equ $4,0
+    add $4,1
+    mov $5,$2
+    mul $5,$3
+    add $5,$4
+  lpe
+  mul $1,$5
+lpe
 mov $0,$1
-add $0,1

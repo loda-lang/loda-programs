@@ -1,25 +1,20 @@
 ; A167302: Totally multiplicative sequence with a(p) = 10*(p-2) for prime p.
-; Submitted by Simon Strandgaard
+; Submitted by sjmielh
 ; 1,0,10,0,30,0,50,0,100,0,90,0,110,0,300,0,150,0,170,0,500,0,210,0,900,0,1000,0,270,0,290,0,900,0,1500,0,350,0,1100,0,390,0,410,0,3000,0,450,0,2500,0,1500,0,510,0,2700,0,1700,0,570,0,590,0,5000,0,3300,0,650,0,2100,0,690,0,710,0,9000,0,4500,0,770,0
 
 #offset 1
 
 mov $1,1
-mov $2,2
+sub $0,1
 lpb $0
-  mov $3,$0
-  pow $3,2
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  sub $5,2
-  dif $0,$2
+  mov $2,$0
+  add $2,1
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+  sub $2,2
+  mul $2,2
   mul $1,10
-  mul $1,$5
+  mul $1,$2
+  div $1,2
 lpe
-mul $0,$1
+mov $0,$1

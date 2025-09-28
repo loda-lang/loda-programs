@@ -1,17 +1,19 @@
 ; A130632: Number of natural numbers between d(n) and d(n+1), where d(n) denotes the number of divisors of n.
-; Submitted by Conan
+; Submitted by Science United
 ; 0,0,0,0,1,1,1,0,0,1,3,3,1,0,0,2,3,3,3,1,0,1,5,4,0,0,1,3,5,5,3,1,0,0,4,6,1,0,3,5,5,5,3,0,1,1,7,6,2,1,1,3,5,3,3,3,0,1,9,9,1,1,0,2,3,5,3,1,3,5,9,9,1,1,0,1,3,5,7,4
-; Formula: a(n) = gcd((-A000005(n+1)+A000005(n+2))==0,-A000005(n+1)+A000005(n+2))-1
 
 #offset 1
 
-mov $2,$0
-add $2,1
-seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $0,2
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $0,$2
-mov $1,$0
-equ $0,0
-gcd $0,$1
+mov $3,1
+lpb $3
+  sub $3,1
+  mov $2,$0
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $0,1
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $0,$2
+  mov $1,$0
+  equ $0,0
+  gcd $0,$1
+lpe
 sub $0,1
