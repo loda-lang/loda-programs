@@ -1,19 +1,16 @@
 ; A332921: Number of symmetric non-isomorphic free unrooted snake-shaped polyominoes of maximum length on a quadratic board of n X n squares.
-; Submitted by Just Jake
+; Submitted by iBezanilla
 ; 1,1,2,3,2,0,3,0,2,0
+; Formula: a(n) = binomial(gcd(n-1,(n-1)^2-sumdigits((n-1)^2,2)-1),sumdigits((n-1)^2,2))
 
 #offset 1
 
 sub $0,1
-mov $1,5
-mov $2,$0
-pow $2,2
-mov $0,$2
-lpb $0
-  dgs $0,2
-  pow $1,3
-  add $1,1
-lpe
-mov $0,$1
-sub $0,4
-mod $0,10
+mov $1,$0
+mul $1,$0
+mov $2,$1
+dgs $2,2
+sub $1,1
+sub $1,$2
+gcd $0,$1
+bin $0,$2

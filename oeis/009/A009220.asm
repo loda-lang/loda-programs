@@ -2,37 +2,19 @@
 ; Submitted by loader3229
 ; 1,1,1,3,9,33,153,731,4273,25857,177489,1311379,10342137,89060065,800697641,7778778091,78896218081,849264442881,9587206592289,113234181108643,1403875965476969,18073465545032353,243412313149166137,3395124358886313595,49273184499900888465
 
-mov $2,1
+mov $3,$0
+add $3,1
+bin $3,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
-  max $6,1
   mov $4,$2
-  lpb $4
-    mov $12,$4
-    mod $12,2
-    mov $8,$4
-    seq $8,3724 ; Number of partitions of n-set into odd blocks.
-    mul $8,$12
-    mov $9,20
-    add $9,$5
-    sub $4,1
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    mul $7,$8
-    sub $9,1
-    add $9,$8
-    add $5,1
-    add $6,$7
-  lpe
-  sub $6,$3
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,3724 ; Number of partitions of n-set into odd blocks.
+  mov $5,$2
+  add $5,$3
+  seq $5,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

@@ -1,25 +1,31 @@
 ; A001122: Primes with primitive root 2.
-; Submitted by Landjunge
+; Submitted by Science United
 ; 3,5,11,13,19,29,37,53,59,61,67,83,101,107,131,139,149,163,173,179,181,197,211,227,269,293,317,347,349,373,379,389,419,421,443,461,467,491,509,523,541,547,557,563,587,613,619,653,659,661,677,701,709,757,773,787,797,821,827,829,853,859,877,883,907,941,947,1019,1061,1091,1109,1117,1123,1171,1187,1213,1229,1237,1259,1277
 
 #offset 1
 
+mov $3,$0
 sub $0,1
-mov $1,2
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-  equ $3,1
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,2
+  mov $1,$4
+  seq $1,40 ; The prime numbers.
+  div $1,2
+  mov $4,$1
+  mul $4,2
+  add $4,1
+  mov $6,$4
+  seq $4,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.
+  sub $4,1
+  equ $4,0
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  trn $3,1
 lpe
-mov $0,$1
-add $0,1
+mov $0,$6

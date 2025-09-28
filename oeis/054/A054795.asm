@@ -1,42 +1,24 @@
 ; A054795: Numbers of form 23+n^2+n or 23+2*n^2.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 23,25,29,31,35,41,43,53,55,65,73,79,95,113,121,133,151,155,179,185,205,223,233,263,265,295,311,329,361,365,403,415,443,473,485,529,535,575,601,623,671,673,725,745,779,823,835,893,905,953,991,1015,1079
+; Formula: a(n) = 2*d(n)+23, b(n) = ((b(n-1)^2)==min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)))+b(n-1), b(2) = 2, b(1) = 1, b(0) = 0, c(n) = ((c(n-1)+binomial(c(n-1),2))==min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)))+c(n-1), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)), d(2) = 1, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-pow $2,2
-lpb $2
-  mov $5,0
-  mov $7,3
-  mov $8,0
+lpb $0
+  sub $0,1
   mov $3,$1
-  add $3,3
-  lpb $3
-    sub $3,$7
-    mov $9,1
-    mov $6,$3
-    lpb $6
-      add $9,2
-      pow $6,$7
-      sub $6,$9
-    lpe
-    equ $6,1
-    add $8,1
-    add $5,$6
-    mov $7,$8
-  lpe
-  mov $3,$5
-  min $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  pow $3,2
+  mov $4,$2
+  bin $4,2
+  add $4,$2
+  mov $5,$3
+  min $5,$4
+  equ $3,$5
+  equ $4,$5
+  add $1,$3
+  add $2,$4
 lpe
-mov $0,$1
+mov $0,$5
 mul $0,2
-add $0,21
+add $0,23

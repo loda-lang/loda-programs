@@ -1,17 +1,17 @@
 ; A095554: a(n) = 81 written in base n.
-; Submitted by loader3229
+; Submitted by Science United
 ; 111111111111111111111111111111111111111111111111111111111111111111111111111111111,1010001,10000,1101,311,213,144,121,100,81,74,69,63
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,81
+equ $1,0
+add $1,81
 lpb $1
   mov $4,$1
   mod $4,$2

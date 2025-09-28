@@ -1,31 +1,46 @@
 ; A052142: Expansion of e.g.f. exp(x/(1-4*x)^(1/2)).
-; Submitted by damotbe
+; Submitted by shiva
 ; 1,1,5,49,697,12881,291901,7823425,241878449,8469678817,331194361141,14301627569681,675802760007145,34681947121134769,1920727213363900397,114166002761833118881,7248797582463164166241,489621781318487529974465
 
-mov $2,1
-mov $10,1
+mov $8,$0
+add $8,1
+bin $8,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mul $6,$5
-    mov $7,$4
-    add $7,1
-    seq $7,37965 ; a(n) = n*binomial(2*n-2, n-1).
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
+  seq $4,189054 ; Expansion of e.g.f. exp(x/sqrt(1-4*x^2)).
+  mov $5,$2
+  add $5,$8
+  add $5,1
+  mov $6,$5
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
   add $2,1
-  mov $8,$3
+  sub $5,$7
+  sub $5,1
+  mov $7,$6
+  bin $7,$5
+  mov $3,$6
+  mul $3,-1
+  sub $6,$5
+  mov $5,$6
+  pow $6,0
+  add $6,$3
+  fac $6,$5
+  mul $7,$6
+  mov $5,$7
+  gcd $5,$5
+  mul $5,$4
+  add $1,$5
+  mul $1,2
 lpe
-mov $0,$8
-max $0,1
+mov $0,$1
+sub $0,2
+div $0,2
+add $0,1

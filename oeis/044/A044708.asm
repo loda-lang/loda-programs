@@ -1,35 +1,54 @@
 ; A044708: Numbers n such that string 8,4 occurs in the base 9 representation of n but not of n+1.
-; Submitted by BarnardsStern
+; Submitted by Science United
 ; 76,157,238,319,400,481,562,643,692,724,805,886,967,1048,1129,1210,1291,1372,1421,1453,1534,1615,1696,1777,1858,1939,2020,2101,2150,2182,2263,2344,2425,2506,2587,2668,2749,2830,2879
+; Formula: a(n) = 729*floor((n-1)/10)+725*(((n-1)%10)==9)+693*(((n-1)%10)==8)+644*(((n-1)%10)==7)+563*(((n-1)%10)==6)+482*(((n-1)%10)==5)+401*(((n-1)%10)==4)+320*(((n-1)%10)==3)+239*(((n-1)%10)==2)+158*(((n-1)%10)==1)+77*(((n-1)%10)==0)-1
 
 #offset 1
 
 sub $0,1
-mov $4,$0
-add $0,2
 mov $2,$0
-lpb $2
-  add $3,$0
-  add $6,$2
-  mov $5,12
-  lpb $5
-    mov $5,1
-    sub $6,3
-  lpe
-  mov $1,41
-  mov $2,0
-  sub $6,6
-  lpb $6
-    add $1,4
-    mul $1,2
-    add $2,$6
-    sub $4,1
-    trn $6,$3
-  lpe
-  trn $2,1
-lpe
-mov $7,81
-mul $7,$4
-add $1,$7
-mov $0,$1
-add $0,35
+div $2,10
+mul $2,729
+mod $0,10
+mov $1,$0
+equ $1,0
+mul $1,77
+add $2,$1
+mov $1,$0
+equ $1,1
+mul $1,158
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,239
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,320
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,401
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,482
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,563
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,644
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,693
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,725
+add $2,$1
+mov $0,$2
+sub $0,1

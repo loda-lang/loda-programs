@@ -1,10 +1,21 @@
 ; A122417: Factorials from an irrationality measure for e, with a(1) = 2.
-; Submitted by ckrause
+; Submitted by Just Jake
 ; 2,6,24,120,720,24,40320,120,5040,720,479001600,120,87178291200,40320,720,5040,6402373705728000,5040,2432902008176640000,720,40320,479001600,620448401733239439360000,120,39916800,87178291200,3628800,40320
-; Formula: a(n) = (A002034(n)+1)!
 
 #offset 1
 
-seq $0,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
-add $0,1
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $1,1
+mov $2,$0
+mov $3,2
+mov $5,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  equ $2,$5
+  add $4,$2
+  mul $5,$3
+  mod $5,$0
+  add $3,1
+lpe
+fac $1,$3
+mov $0,$1

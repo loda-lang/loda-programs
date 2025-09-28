@@ -20,14 +20,26 @@ lpb $2
   pow $6,2
   mul $6,4
   nrt $6,2
-  add $6,1
   div $6,2
   pow $6,2
   mov $5,$1
   div $5,$6
   mov $3,$5
   add $3,1
-  seq $3,253262 ; Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
+  mod $3,10
+  mov $9,$3
+  equ $9,1
+  mov $10,$9
+  mov $9,$3
+  equ $9,4
+  add $10,$9
+  mov $9,$3
+  equ $9,6
+  sub $10,$9
+  mov $9,$3
+  equ $9,9
+  sub $10,$9
+  mov $3,$10
   sub $3,1
   gcd $3,2
   sub $0,$3

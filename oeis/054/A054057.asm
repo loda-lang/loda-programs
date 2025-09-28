@@ -1,43 +1,24 @@
 ; A054057: Numbers of form 41+n^2+n or 41+2*n^2.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 41,43,47,49,53,59,61,71,73,83,91,97,113,131,139,151,169,173,197,203,223,241,251,281,283,313,329,347,379,383,421,433,461,491,503,547,553,593,619,641,689,691,743,763,797,841,853,911,923,971,1009,1033,1097
+; Formula: a(n) = 2*d(n)+41, b(n) = ((b(n-1)^2)==min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)))+b(n-1), b(2) = 2, b(1) = 1, b(0) = 0, c(n) = ((c(n-1)+binomial(c(n-1),2))==min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)))+c(n-1), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = min(b(n-1)^2,c(n-1)+binomial(c(n-1),2)), d(2) = 1, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,1
-pow $2,2
-lpb $2
-  mov $5,0
-  mov $7,3
-  mov $8,0
+lpb $0
+  sub $0,1
   mov $3,$1
-  add $3,3
-  lpb $3
-    sub $3,$7
-    mov $9,1
-    mov $6,$3
-    lpb $6
-      add $9,2
-      pow $6,$7
-      sub $6,$9
-    lpe
-    equ $6,1
-    add $8,1
-    add $5,$6
-    mov $7,$8
-  lpe
-  mov $3,$5
-  min $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  pow $3,2
+  mov $4,$2
+  bin $4,2
+  add $4,$2
+  mov $5,$3
+  min $5,$4
+  equ $3,$5
+  equ $4,$5
+  add $1,$3
+  add $2,$4
 lpe
-mov $0,$1
+mov $0,$5
 mul $0,2
-add $0,39
+add $0,41

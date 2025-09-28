@@ -1,11 +1,9 @@
 ; A373415: Maximum of the n-th maximal run of squarefree numbers.
-; Submitted by mg13 [HWU]
+; Submitted by Omega Intelligence Systems
 ; 3,7,11,15,17,19,23,26,31,35,39,43,47,51,53,55,59,62,67,71,74,79,83,87,89,91,95,97,103,107,111,115,119,123,127,131,134,139,143,146,149,151,155,159,161,163,167,170,174,179,183,187,191,195,197,199,203,206
 
 #offset 1
 
-mov $1,0
-mov $4,0
 sub $0,1
 mul $0,2
 mov $2,$0
@@ -33,3 +31,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+add $0,1

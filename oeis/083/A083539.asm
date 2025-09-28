@@ -1,11 +1,12 @@
 ; A083539: a(n) = sigma(n) * sigma(n+1): product of sigma-values for consecutive integers.
-; Submitted by Penguin
+; Submitted by Science United
 ; 3,12,28,42,72,96,120,195,234,216,336,392,336,576,744,558,702,780,840,1344,1152,864,1440,1860,1302,1680,2240,1680,2160,2304,2016,3024,2592,2592,4368,3458,2280,3360,5040,3780,4032,4224,3696,6552,5616,3456,5952,7068,5301,6696,7056,5292,6480,8640,8640,9600,7200,5400,10080,10416,5952,9984,13208,10668,12096,9792,8568,12096,13824,10368,14040,14430,8436,14136,17360,13440,16128,13440,14880,22506
-; Formula: a(n) = A000203(2*binomial(n+1,2))
+; Formula: a(n) = A000203(n)*A000203(n+1)
 
 #offset 1
 
-add $0,1
-bin $0,2
-mul $0,2
+mov $1,$0
+add $1,1
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $0,$1

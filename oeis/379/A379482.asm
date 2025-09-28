@@ -1,13 +1,9 @@
 ; A379482: a(n) = sigma(A003961(n^2)), where A003961 is fully multiplicative with a(prime(i)) = prime(i+1), and sigma is the sum of divisors function.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,13,31,121,57,403,133,1093,781,741,183,3751,307,1729,1767,9841,381,10153,553,6897,4123,2379,871,33883,2801,3991,19531,16093,993,22971,1407,88573,5673,4953,7581,94501,1723,7189,9517,62301,1893,53599,2257,22143,44517,11323,2863,305071,16105,36413,11811,37147,3541,253903,10431,145369,17143,12909,3783,213807,4557,18291,103873,797161,17499,73749,5113,46101,27001,98553,5403,853633,6321,22399,86831,66913,24339,123721,6973,560937
-; Formula: a(n) = A000203(A003961(n)^2)
+; Formula: a(n) = A065766(A003961(n))
 
 #offset 1
 
-mov $1,$0
-seq $1,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-pow $1,2
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,1
-mov $0,$1
+seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+seq $0,65766 ; Sum of divisors of twice a square number, divided by three.

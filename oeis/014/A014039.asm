@@ -1,28 +1,16 @@
 ; A014039: Inverse of 30th cyclotomic polynomial.
-; Submitted by Jamie Morken(l1)
+; Submitted by Science United
 ; 1,-1,1,0,0,1,-1,1,0,0,0,0,0,0,0,-1,1,-1,0,0,-1,1,-1,0,0,0,0,0,0,0,1,-1,1,0,0,1,-1,1,0,0,0,0,0,0,0,-1,1,-1,0,0,-1,1,-1,0,0,0,0,0,0,0,1,-1,1,0,0,1,-1,1,0,0,0,0,0,0,0,-1,1,-1,0,0
+; Formula: a(n) = ((floor(n/5)+2)%3-1)*(-1)^n*((n%5)<=2)
 
-mul $0,7
-div $0,5
 mov $1,-1
 pow $1,$0
-lpb $0
-  add $2,21
-  add $5,21
-  mod $0,$2
-  mov $3,-1
-  mov $4,4
-  add $4,$0
-  div $0,10
-lpe
-sub $3,$4
-div $3,4
-add $0,1
-mul $0,$3
-mul $0,2
-gcd $5,2
-mul $5,2
-sub $0,$5
-add $0,6
-div $0,2
+mov $2,$0
+mod $2,5
+leq $2,2
+div $0,5
+add $0,2
+mod $0,3
+sub $0,1
+mul $0,$2
 mul $0,$1
