@@ -16,9 +16,9 @@ mul $0,3 ; source=parameter 3
 ; value: 2,3,4
 
 ; parameter 3
-; number of unique values: 9
-; value: 2,3,4,5,7,9,24,86400,12345679
+; number of unique values: 11
+; value: 2,3,4,5,7,8,9,20,24,86400,12345679
 
 ; programs with this pattern
-; number of programs: 16
-; program id: 2798,16051,47235,47395,47407,47410,51063,72703,73763,89644,90772,92259,166959,178069,215414,267958
+; number of programs: 18
+; program id: 2798,16051,47235,47395,47407,47410,51063,72703,73763,89644,90772,92259,166959,178069,215414,259751,267958,270296
