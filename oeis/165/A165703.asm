@@ -1,0 +1,53 @@
+; A165703: Number of reduced words of length n in Coxeter group on 47 generators S_i with relations (S_i)^2 = (S_i S_j)^9 = I.
+; Submitted by loader3229
+; 1,47,2162,99452,4574792,210440432,9680259872,445291954112,20483429889152,942237774899911,43342937645346180,1993775131683637965,91713656057342175900,4218828178632902248860,194066096216890962690720
+
+mov $10,1
+lpb $0
+  sub $0,1
+  mov $1,$2
+  mul $2,-1035
+  mov $11,$2
+  mov $2,$3
+  mul $3,45
+  add $11,$3
+  mov $3,$4
+  mul $4,45
+  add $11,$4
+  mov $4,$5
+  mul $5,45
+  add $11,$5
+  mov $5,$6
+  mul $6,45
+  add $11,$6
+  mov $6,$7
+  mul $7,45
+  add $11,$7
+  mov $7,$8
+  mul $8,45
+  add $11,$8
+  mov $8,$9
+  mul $9,45
+  add $11,$9
+  mov $9,$10
+  mul $10,45
+  add $10,$11
+lpe
+mov $0,$1
+add $0,$2
+add $0,$2
+add $0,$3
+add $0,$3
+add $0,$4
+add $0,$4
+add $0,$5
+add $0,$5
+add $0,$6
+add $0,$6
+add $0,$7
+add $0,$7
+add $0,$8
+add $0,$8
+add $0,$9
+add $0,$9
+add $0,$10
