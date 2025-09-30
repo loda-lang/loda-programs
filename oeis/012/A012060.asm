@@ -1,21 +1,13 @@
 ; A012060: cosh(sin(arctanh(x)))=1+1/2!*x^2+5/4!*x^4+61/6!*x^6+937/8!*x^8...
-; Submitted by Skyman
+; Submitted by Science United
 ; 1,1,5,61,937,-34919,-13257619,-3269873515,-890367567919,-286428853272143,-109915623105978539,-50081947723080008339,-26861824093922170259335,-16800404374717805427318199
 
-mul $0,2
-mov $4,$0
-add $4,1
-bin $4,2
-add $0,1
+mov $1,$0
+div $1,16
+sub $1,1
+mul $1,2
 lpb $0
-  sub $0,1
-  mov $5,$3
-  seq $5,2017 ; Expansion of e.g.f. exp(sin(x)).
-  mov $1,$3
-  add $1,$4
-  seq $1,111594 ; Triangle of arctanh numbers.
-  mul $1,$5
-  add $2,$1
-  add $3,1
+  sub $0,$1
 lpe
-mov $0,$2
+mul $0,2
+seq $0,12051 ; exp(sin(arctanh(x)))=1+x+1/2!*x^2+2/3!*x^3+5/4!*x^4+16/5!*x^5...

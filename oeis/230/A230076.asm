@@ -1,20 +1,21 @@
 ; A230076: a(n) = (A007521(n)-1)/4.
-; Submitted by Mumps
+; Submitted by Dave Studdert
 ; 1,3,7,9,13,15,25,27,37,39,43,45,49,57,67,69,73,79,87,93,97,99,105,115,127,135,139,153,163,165,169,175,177,183,189,193,199,205,207,213,219,235,249,253,255,265,267,273,277,279,295,303,307,309,319,325,343,345,357,363,373,387,399,403,405,409,417,423,427,433,435,447,465,469,475,483,487,493,499,507
 
 #offset 1
 
-mov $2,5
+mov $2,4
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  mul $4,0
+  add $4,8
   sub $0,$1
-  add $2,8
+  add $2,$4
   sub $3,$0
 lpe
 mov $0,$2
-sub $0,5
 div $0,4
-add $0,1

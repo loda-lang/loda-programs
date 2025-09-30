@@ -1,26 +1,20 @@
 ; A003886: Degrees of irreducible representations of group L2(19).
 ; Submitted by loader3229
 ; 1,9,9,18,18,18,18,19,20,20,20,20
+; Formula: a(n) = (n>=9)+(n>=8)+9*(n>=4)+8*(n>=2)+1
 
 #offset 1
 
 mov $1,$0
-mov $4,1
-lpb $0
-  div $0,2
-  add $3,1
-  max $5,1
-  log $5,2
-  mov $2,2
-  pow $2,$5
-  ban $2,$1
-  neq $2,0
-  bor $2,$3
-  mov $5,4
-  mod $1,11
-  sub $1,5
-  add $4,6
-  bxo $4,$2
-lpe
-mov $0,$4
-sub $0,5
+mov $2,$0
+geq $2,8
+mov $3,$0
+geq $3,9
+geq $0,2
+mul $0,8
+geq $1,4
+mul $1,9
+add $0,$1
+add $0,$2
+add $0,$3
+add $0,1

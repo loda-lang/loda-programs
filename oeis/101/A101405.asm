@@ -1,23 +1,17 @@
 ; A101405: a(n) = n^(pi(n-1)).
-; Submitted by Science United
+; Submitted by matszpk
 ; 1,1,3,16,25,216,343,4096,6561,10000,14641,248832,371293,7529536,11390625,16777216,24137569,612220032,893871739,25600000000,37822859361,54875873536,78310985281,2641807540224,3814697265625,5429503678976
 
 #offset 1
 
-mov $1,1
-mov $2,1
-sub $0,1
+mov $1,$0
 lpb $0
-  mov $3,$2
-  lpb $3
-    mov $4,$1
-    gcd $4,$2
-    add $5,$4
-    mov $3,$5
-  lpe
-  sub $0,1
-  mul $1,$2
+  sub $0,2
+  div $0,2
+  mul $0,2
+  add $0,3
+  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   add $2,1
 lpe
-pow $2,$5
-mov $0,$2
+pow $1,$2
+mov $0,$1

@@ -1,17 +1,15 @@
 ; A071723: Expansion of (1+x^2*C^2)*C^4, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
-; Submitted by ckrause
+; Submitted by BrandyNOW
 ; 1,4,15,54,192,682,2431,8710,31382,113696,414086,1515516,5571750,20569590,76228095,283481670,1057628550,3957577800,14849601090,55859886420,210622646520,795898303668,3013646759910,11432740177564,43448822603452,165396657221152
-; Formula: a(n) = -2*binomial(floor((4*n+3)/2),n-3)+binomial(floor((4*n+3)/2)+1,n)
+; Formula: a(n) = -2*binomial(2*n+1,n-3)+binomial(2*n+2,n)
 
-mov $2,4
-mul $2,$0
-add $2,3
-div $2,2
-mov $1,$2
-add $1,1
-bin $1,$0
-sub $0,3
-bin $2,$0
-sub $1,$2
-sub $1,$2
-mov $0,$1
+mov $1,$0
+mul $0,2
+add $0,1
+mov $2,$0
+add $0,1
+bin $0,$1
+sub $1,3
+bin $2,$1
+mul $2,2
+sub $0,$2

@@ -1,45 +1,49 @@
 ; A037074: Numbers that are the product of a pair of twin primes.
-; Submitted by damotbe
+; Submitted by rajab
 ; 15,35,143,323,899,1763,3599,5183,10403,11663,19043,22499,32399,36863,39203,51983,57599,72899,79523,97343,121103,176399,186623,213443,272483,324899,359999,381923,412163,435599,656099,675683,685583,736163,777923,1040399,1065023,1102499,1127843,1192463,1327103,1512899,1633283,1664099,1695203,1742399,2039183,2108303,2196323,2214143,2585663,2624399,2782223,2883203,2965283,3196943,3504383,3526883,3732623,3802499,3992003,4112783,4334723,4359743,4460543,4536899,4588163,5008643,5143823,5336099,5475599
 
 #offset 1
 
-sub $0,1
-mul $0,2
-trn $0,1
 mov $1,$0
-div $1,2
-sub $0,1
-gcd $0,2
-mov $2,4
-mov $3,$1
 sub $1,1
-add $3,4
-pow $3,3
-lpb $3
-  mov $6,$4
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,3
-  sub $4,$6
-  mul $6,$4
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $1,$6
-  mov $5,$1
+mov $6,$1
+mul $6,2
+trn $6,1
+mov $7,$6
+div $7,2
+sub $6,1
+gcd $6,2
+max $9,$7
+mov $2,$9
+add $9,1
+mov $8,$9
+pow $8,4
+lpb $8
+  mov $3,$4
+  mul $3,3
+  add $3,1
+  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  bin $3,2
+  add $5,1
+  sub $2,$3
+  add $2,1
+  add $4,$5
+  mov $5,$2
   max $5,0
-  equ $5,$1
-  add $2,6
-  mul $3,$5
-  sub $3,18
-  mov $4,$2
+  equ $5,$2
+  sub $8,$5
+  sub $2,$5
 lpe
-mov $1,$2
-div $1,6
-mul $1,3
-add $1,$0
+mov $7,$4
+div $7,2
+mul $7,3
+add $7,$6
+mov $1,$7
+mul $1,2
+add $1,2
+pow $1,2
+mul $1,2
 mov $0,$1
-mul $0,2
-add $0,2
-pow $0,2
-sub $0,1
+sub $0,32
+div $0,2
+add $0,15

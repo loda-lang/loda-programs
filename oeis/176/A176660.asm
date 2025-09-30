@@ -1,16 +1,25 @@
 ; A176660: Partial sums of A038772.
-; Submitted by Science United
+; Submitted by Wood
 ; 23,50,79,113,150,188,231,277,324,373,426,480,536,593,651,710,777,845,914,987,1061,1137,1215,1294,1377,1463,1550,1639,1733,1830,1928,2131,2338,2547,2770,2997,3226,3459,3698,3945,4194,4447,4704,4963,5226,5493
-; Formula: a(n) = a(n-1)+A038772(max(n-1,0)+1), a(0) = 0
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,38772 ; Numbers not divisible by any of their digits.
-  add $1,$2
+mov $2,$0
+add $2,10
+pow $2,2
+lpb $2
+  add $6,$0
+  add $1,1
+  mov $5,$1
+  seq $5,38769 ; Number of digits of n which are divisors of n.
+  mov $3,$5
+  add $3,1
+  equ $3,1
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$1
+mov $0,$6

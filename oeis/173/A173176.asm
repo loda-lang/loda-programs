@@ -1,35 +1,22 @@
 ; A173176: Greater twin primes in A172240.
-; Submitted by hustlebankwrecktank
+; Submitted by Science United
 ; 7,13,19,31,43,61,73,103,109,139,151,181,193,199,229,241,271,283,313,349,421,433,463,523,571,601,619,643,661,811,823,829,859,883,1021,1033,1051,1063,1093,1153,1231,1279,1291,1303,1321,1429,1453,1483,1489,1609,1621,1669,1699,1723,1789,1873,1879,1933,1951,1999
 
 #offset 1
 
-mov $2,$0
-sub $2,1
-max $3,$2
-mov $5,$3
-add $3,1
-mov $6,$3
-pow $6,4
-lpb $6
-  mov $4,$8
-  mul $4,3
-  add $4,1
-  seq $4,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $4,2
-  sub $5,$4
-  add $5,1
-  add $7,1
-  add $8,$7
-  mov $7,$5
-  max $7,0
-  equ $7,$5
-  sub $5,$7
-  sub $6,$7
+lpb $0
+  lpb $0
+    sub $0,1
+  lpe
+  sub $0,1
 lpe
-mov $1,$8
+mul $0,2
+sub $0,1
+mov $1,$0
 div $1,2
 add $1,1
+seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+sub $1,1
 mov $0,$1
 mul $0,6
-add $0,1
+add $0,7

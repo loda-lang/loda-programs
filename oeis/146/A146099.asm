@@ -1,24 +1,39 @@
 ; A146099: Bell numbers (A000110) read mod 9.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1,1,2,5,6,7,5,4,0,6,1,6,4,1,7,5,5,0,4,5,1,6,6,1,6,4,1,1,5,2,6,4,5,4,6,3,1,6,1,1,1,2,5,6,7,5,4,0,6,1,6,4,1,7,5,5,0,4,5,1,6,6,1,6,4,1,1,5,2,6,4,5,4,6,3,1,6,1,1,1
 
-mov $1,$0
-mov $5,1
-fac $5,$0
+mov $6,1
+fac $6,$0
+mov $9,$0
+mov $10,1
 add $0,1
 lpb $0
   sub $0,1
-  mov $3,$2
-  pow $3,$1
-  mov $4,$1
-  bin $4,$2
-  mul $7,$2
-  add $7,$3
-  add $2,1
-  mul $4,$7
-  mul $6,-1
-  add $6,$4
+  mov $4,$3
+  pow $4,$9
+  mov $5,$9
+  bin $5,$3
+  mul $8,$3
+  add $8,$4
+  mov $12,$8
+  div $12,$6
+  mul $13,$3
+  add $13,$12
+  add $3,1
+  mod $8,$6
+  mul $10,-1
+  mov $2,$5
+  mul $2,$8
+  mul $2,$10
+  mov $1,$5
+  mul $1,$13
+  mul $1,$10
+  add $7,$1
+  add $11,$2
 lpe
-mov $0,$6
-div $0,$5
+mul $7,$10
+mul $11,$10
+div $11,$6
+add $11,$7
+mov $0,$11
 mod $0,9

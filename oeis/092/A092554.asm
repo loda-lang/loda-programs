@@ -4,7 +4,7 @@
 
 add $0,1
 mov $3,$0
-mul $3,7
+mul $3,5
 lpb $3
   max $3,1
   sub $1,10

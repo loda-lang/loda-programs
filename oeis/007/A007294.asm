@@ -1,20 +1,22 @@
 ; A007294: Number of partitions of n into nonzero triangular numbers.
-; Submitted by fzs600
+; Submitted by Science United
 ; 1,1,1,2,2,2,4,4,4,6,7,7,10,11,11,15,17,17,22,24,25,32,35,36,44,48,50,60,66,68,81,89,92,107,117,121,141,153,159,181,197,205,233,252,262,295,320,332,372,401,417,465,501,520,575,619,645,710,763,793,869,933,971,1059,1134,1180,1286,1374,1430,1549,1654,1722,1863,1985,2065,2225,2372,2467,2654,2821
 
 mov $2,1
 mov $10,1
+add $0,1
 lpb $0
   sub $0,1
   mov $5,0
   mov $6,0
   mov $4,$2
   lpb $4
+    trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,185027 ; Sum of the triangular divisors of n.
     mov $9,10
     add $9,$5
-    sub $4,1
     mul $7,$$9
     add $5,1
     add $6,$7
@@ -25,7 +27,5 @@ lpb $0
   mov $3,$6
   mov $$9,$3
   add $2,1
-  mov $8,$3
 lpe
-mov $0,$8
-max $0,1
+mov $0,$7

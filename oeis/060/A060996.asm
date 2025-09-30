@@ -1,23 +1,45 @@
 ; A060996: Stirling2 transform of [2,3,3,3,3,3,3,3,...].
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 2,5,14,44,155,608,2630,12419,63440,347924,2035709,12640790,82933310,572697965,4148875634,31440426440,248594609411,2046230418476,17498226615170,155172474706115,1424609448470252,13520147215341968,132456017565253037
 
-add $0,2
 mov $1,$0
-sub $0,1
-mov $2,$0
-bin $2,2
-add $2,$0
-add $2,$1
-lpb $1
-  mov $0,$2
+add $1,1
+mov $5,1
+mul $0,2
+equ $0,1
+add $0,$1
+mov $6,$0
+mov $13,1
+fac $13,$0
+add $0,1
+lpb $0
   sub $0,1
-  seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  sub $2,1
-  dif $3,$1
-  add $3,$0
-  sub $1,1
+  mul $5,-1
+  mov $11,$10
+  pow $11,$6
+  mov $12,$6
+  bin $12,$10
+  mul $9,$10
+  add $9,$11
+  mov $7,$9
+  div $7,$13
+  mul $4,$10
+  add $4,$7
+  mod $9,$13
+  add $10,1
+  mov $3,$12
+  mul $3,$9
+  mul $3,$5
+  mov $2,$12
+  mul $2,$4
+  mul $2,$5
+  add $8,$3
+  add $14,$2
 lpe
-mov $0,$3
+mul $14,$5
+mul $8,$5
+div $8,$13
+add $8,$14
+mov $0,$8
 mul $0,3
 sub $0,1

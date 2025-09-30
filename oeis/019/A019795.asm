@@ -1,23 +1,27 @@
 ; A019795: Decimal expansion of sqrt(e)/22.
-; Submitted by gemini8
+; Submitted by Dave Studdert
 ; 0,7,4,9,4,1,8,7,5,9,4,0,9,1,4,9,1,5,7,6,5,8,4,7,7,6,3,0,8,2,4,6,1,9,8,0,5,2,9,7,1,7,0,9,5,4,8,6,8,2,4,9,0,9,6,1,7,0,4,9,0,5,9,6,2,0,0,3,0,0,4,6,4,1,7,9,1,8,8,9
 
 add $0,1
+mov $1,10
+pow $1,$0
+mov $4,$1
+pow $1,2
 mov $2,1
-mov $3,$0
-mul $3,5
-lpb $3
-  mul $2,$3
-  add $1,$2
-  div $1,$0
-  div $2,$0
-  mul $2,2
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-mul $2,11
-div $2,$4
-div $1,$2
-mod $1,10
 mov $0,$1
+lpb $0
+  add $2,$3
+  mul $3,-1
+  add $3,$2
+  mov $5,$0
+  sub $5,2
+  div $5,$3
+  mov $0,$5
+  add $2,1
+  mov $3,1
+  add $6,$5
+lpe
+mov $0,$6
+div $0,$4
+div $0,22
+mod $0,10

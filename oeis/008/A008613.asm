@@ -1,23 +1,18 @@
 ; A008613: Molien series for 3-dimensional representation of A_5.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,0,1,0,1,0,2,0,2,0,3,0,4,0,4,1,5,1,6,1,7,2,8,2,9,3,10,4,11,4,13,5,14,6,15,7,17,8,18,9,20,10,22,11,23,13,25,14,27,15,29,17,31,18,33,20,35,22,37,23,40,25,42,27,44,29,47,31,49,33,52,35,55,37,57,40,60,42,63,44
+; Formula: a(n) = truncate((n^2+15*(n+1)*(-1)^n+3*n+105)/120)
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $4,$0
-  sub $4,1
-  mov $6,$0
-  div $6,3
-  mov $5,$0
-  div $5,5
-  add $5,$6
-  mov $2,$0
-  div $2,2
-  add $2,$5
-  sub $2,$4
-  add $1,$2
-  mov $3,2
-lpe
-mov $0,$1
+mov $3,-1
+pow $3,$0
+mov $1,$0
+mul $1,3
+mov $2,$0
+add $2,1
+mul $2,$3
+mul $2,15
+pow $0,2
+add $0,$1
+add $0,$2
+add $0,105
+div $0,120

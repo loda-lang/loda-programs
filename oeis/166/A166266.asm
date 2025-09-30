@@ -1,24 +1,10 @@
 ; A166266: Number of 1's in binary expansion of A000110(n).
-; Submitted by Frank [NT]
+; Submitted by Science United
 ; 1,1,1,2,4,3,5,7,4,8,8,10,10,12,14,15,15,16,22,19,25,29,25,31,25,31,28,39,32,35,41,42,46,47,46,52,49,52,59,53,59,55,75,69,58,68,62,85,81,82,55,81,82,89,89,97,87,96,92,95,103,99,120,105,105,113,106,126,125,126,108,137,126,127,119,131,135,145,164,135
 
-add $0,1
-mov $1,0
-mov $3,$0
-sub $0,1
-mov $2,$0
-bin $2,2
-add $2,$0
-add $2,$3
-lpb $3
-  mov $0,$2
-  max $0,1
-  sub $0,1
-  seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  dif $1,$3
-  add $1,$0
-  sub $2,1
-  sub $3,1
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $1,$0
+lpb $0
+  div $1,2
+  sub $0,$1
 lpe
-mov $0,$1
-dgs $0,2

@@ -9,32 +9,34 @@ mov $1,$0
 mul $1,2
 trn $1,1
 mov $2,$1
-div $2,2
 sub $1,1
 gcd $1,2
-max $5,$2
-mov $7,$5
-add $5,1
-mov $8,$5
-pow $8,4
-lpb $8
-  add $4,1
-  mov $6,$3
-  mul $6,3
-  add $6,1
-  seq $6,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $6,2
-  sub $7,$6
-  add $7,1
-  add $3,$4
-  mov $4,$7
-  max $4,0
-  equ $4,$7
-  sub $7,$4
-  sub $8,$4
+div $2,2
+add $2,1
+mov $4,$2
+sub $2,1
+add $4,5
+pow $4,3
+lpb $4
+  mov $9,$8
+  add $9,2
+  seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,8
+  add $5,3
+  mul $9,$5
+  add $9,1
+  seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $2,$9
+  mov $6,$2
+  max $6,0
+  equ $6,$2
+  add $7,3
+  mul $4,$6
+  sub $4,18
+  mov $8,$7
 lpe
 mov $2,$3
-div $2,2
+div $2,16
 mul $2,3
 add $2,$1
 mov $0,$2

@@ -5,9 +5,9 @@
 #offset 1
 
 sub $0,1
-lpb $0
-  sub $0,1
-  mul $0,5
-  pow $0,$0
-lpe
+mul $0,4
+sub $1,$0
+pow $0,$0
+lex $0,$1
+div $0,4
 add $0,1

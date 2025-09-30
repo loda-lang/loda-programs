@@ -1,11 +1,27 @@
 ; A005214: Triangular numbers together with squares (excluding 0).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by DukeBox
 ; 1,3,4,6,9,10,15,16,21,25,28,36,45,49,55,64,66,78,81,91,100,105,120,121,136,144,153,169,171,190,196,210,225,231,253,256,276,289,300,324,325,351,361,378,400,406,435,441,465,484,496,528,529,561,576,595,625,630,666,676,703,729,741,780,784,820,841,861,900,903,946,961,990,1024,1035,1081,1089,1128,1156,1176
-; Formula: a(n) = truncate(A054057(n+1)/2)-20
+; Formula: a(n) = truncate((2*b(n+1)+41)/2)-20, b(n) = min(c(n-1)^2,d(n-1)+binomial(d(n-1),2)), b(2) = 1, b(1) = 0, b(0) = 0, c(n) = ((c(n-1)^2)==min(c(n-1)^2,d(n-1)+binomial(d(n-1),2)))+c(n-1), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = ((d(n-1)+binomial(d(n-1),2))==min(c(n-1)^2,d(n-1)+binomial(d(n-1),2)))+d(n-1), d(2) = 2, d(1) = 1, d(0) = 0
 
 #offset 1
 
 add $0,1
-seq $0,54057 ; Numbers of form 41+n^2+n or 41+2*n^2.
+lpb $0
+  sub $0,1
+  mov $5,$3
+  pow $5,2
+  mov $2,$4
+  bin $2,2
+  add $2,$4
+  mov $1,$5
+  min $1,$2
+  equ $5,$1
+  equ $2,$1
+  add $3,$5
+  add $4,$2
+lpe
+mov $0,$1
+mul $0,2
+add $0,41
 div $0,2
 sub $0,20

@@ -9,11 +9,37 @@ nrt $1,2
 add $1,1
 div $1,2
 sub $1,1
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mov $2,2
-lpb $2
-  equ $2,1
-  mul $1,841
+mov $7,1
+fac $7,$1
+mov $10,$1
+mov $11,1
+add $1,1
+lpb $1
+  sub $1,1
+  mov $5,$4
+  pow $5,$10
+  mov $6,$10
+  bin $6,$4
+  mul $9,$4
+  add $9,$5
+  mov $13,$9
+  div $13,$7
+  mul $14,$4
+  add $14,$13
+  add $4,1
+  mod $9,$7
+  mul $11,-1
+  mov $3,$6
+  mul $3,$9
+  mul $3,$11
+  mov $2,$6
+  mul $2,$14
+  mul $2,$11
+  add $8,$2
+  add $12,$3
 lpe
-mov $0,$1
-div $0,841
+mul $8,$11
+mul $12,$11
+div $12,$7
+add $12,$8
+mov $0,$12

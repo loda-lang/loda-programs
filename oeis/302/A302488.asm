@@ -1,20 +1,12 @@
 ; A302488: Total domination number of the n X n grid graph.
-; Submitted by yasiwo
+; Submitted by BrandyNOW
 ; 0,1,2,3,6,9,12,15,20,25,30,35,42,49,56,63,72,81,90,99,110,121,132,143,156,169,182,195,210,225,240,255,272,289,306,323,342,361,380,399,420,441,462,483,506,529,552,575,600,625,650,675,702,729,756,783,812,841,870,899,930
-; Formula: a(n) = n%4+2*floor(n/4)*(n%4)+8*binomial(floor(n/4),2)+6*floor(n/4)
+; Formula: a(n) = binomial(n+2,3)%2+floor((n*(n+2))/4)
 
-mov $2,$0
-div $2,4
-mul $2,6
-mov $3,$0
-div $3,4
-mod $0,4
-mov $1,$3
+mov $1,$0
+add $0,2
 mul $1,$0
-bin $3,2
-mul $3,4
-add $3,$1
-mul $3,2
-add $2,$3
-add $2,$0
-mov $0,$2
+div $1,4
+bin $0,3
+mod $0,2
+add $0,$1

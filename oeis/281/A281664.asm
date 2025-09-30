@@ -1,20 +1,20 @@
 ; A281664: Numbers k such that A000005(k) = A000005(A000217(k)).
-; Submitted by [AF] Kalianthys
+; Submitted by BrandyNOW
 ; 1,2,6,10,18,22,30,42,46,58,66,70,78,82,102,106,126,130,138,150,162,166,178,190,198,210,222,226,238,250,262,270,282,306,310,330,346,358,366,378,382,418,430,438,442,462,466,478,486,490,498,502,522,546,562,570,586,598,606,618,630,642,646,658,682,690,718,726,738,742,750,786,810,822,826,838,858,862,882,886
 
 #offset 1
 
 sub $0,1
-mov $1,2
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$1
-  add $3,1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,4
-  sub $2,$0
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,4
+  sub $3,$0
 lpe
-add $0,$1
-sub $0,1
+pow $2,$0
+mov $0,$2

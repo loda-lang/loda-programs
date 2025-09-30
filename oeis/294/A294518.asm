@@ -1,29 +1,30 @@
 ; A294518: Decimal expansion of 3*log(2) - Pi/2.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 5,0,8,6,4,5,2,1,4,8,8,4,9,3,9,3,0,9,0,2,0,3,7,4,6,7,2,7,3,4,7,7,8,2,6,2,1,2,7,9,1,5,7,0,3,3,9,3,2,1,2,8,5,1,8,7,4,5,6,7,7,3,2,3,2,6,2,7,2,6,6,2,7,6,5,9,7,9,6,4
 
 add $0,1
 mov $3,$0
-mul $3,8
+mul $3,7
 lpb $3
   max $3,1
   sub $5,$4
   max $6,$2
   div $6,$3
+  add $1,10
+  sub $3,1
+  add $4,$1
   add $4,$5
-  sub $5,$2
   mul $5,2
-  add $1,$3
   mul $1,2
   add $1,$6
   add $2,$1
-  sub $3,1
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-mul $1,2
+equ $1,1
 sub $1,$5
+mul $1,2
 div $1,$2
 mov $0,$1
 mod $0,10

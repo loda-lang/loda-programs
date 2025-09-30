@@ -13,6 +13,7 @@ lpb $5
   seq $4,147836 ; a(n) = floor(Pi * n!).
   mov $2,$5
   mul $2,$4
+  bin $0,$5
   add $1,$2
 lpe
 mul $3,$4

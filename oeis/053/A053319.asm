@@ -1,31 +1,36 @@
 ; A053319: Distance between the smaller members of successive twin prime pairs.
-; Submitted by [AF] Kalianthys
+; Submitted by DukeBox
 ; 2,6,6,12,12,18,12,30,6,30,12,30,12,6,30,12,30,12,30,36,72,12,30,60,48,30,18,24,18,150,12,6,30,24,138,12,18,12,30,60,78,48,12,12,18,108,24,30,6,120,12,48,30,24,66,84,6,54,18,48,30,54,6,24,18,12,96,30,42,30,42,168,42,66,30,24,18,60,12,168
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-add $0,1
-add $2,3
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+mov $4,$0
+mov $3,3
+lpb $3
   div $3,2
-  add $3,$4
-  add $5,$4
-  sub $0,$3
-  add $0,1
+  mov $0,$4
+  add $0,$3
+  mov $6,$0
+  mul $6,2
+  trn $6,1
+  mov $7,$6
+  sub $6,1
+  gcd $6,2
+  div $7,2
+  add $7,1
+  seq $7,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  mul $7,3
+  add $7,$6
+  mov $0,$7
+  mul $0,2
+  mov $2,$3
+  mul $2,$0
+  mul $4,$3
   add $1,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  trn $5,$0
-  mul $2,$4
-  sub $2,1
+  add $1,$2
+  mov $5,$0
 lpe
-mov $0,$5
-mul $0,2
+sub $1,$5
+mov $0,$1
+sub $0,2

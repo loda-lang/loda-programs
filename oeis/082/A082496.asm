@@ -4,13 +4,14 @@
 
 #offset 1
 
+mov $1,-1
 mov $2,$0
 sub $2,1
 mov $7,$0
 add $7,5
 pow $7,3
 lpb $7
-  add $1,1
+  add $1,2
   mov $4,$5
   add $4,2
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
@@ -27,6 +28,6 @@ lpb $7
   mul $7,$3
   sub $7,18
 lpe
-mov $0,$5
+mov $0,$1
 mul $0,2
 add $0,5

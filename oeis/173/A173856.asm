@@ -1,18 +1,15 @@
 ; A173856: Expansion of 10/9 in base phi.
-; Submitted by Jamie Morken(s2)
+; Submitted by Science United
 ; 1,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
-; Formula: a(n) = 0^(n-1)-floor(((n-1)^2)/24)*(n-1)-2*truncate((0^(n-1)-floor(((n-1)^2)/24)*(n-1)-2*truncate((0^(n-1)-floor(((n-1)^2)/24)*(n-1))/2)+2)/2)-2*truncate((0^(n-1)-floor(((n-1)^2)/24)*(n-1))/2)+2
 
 #offset 1
 
 sub $0,1
-pow $1,$0
-mov $2,$0
 pow $0,2
-div $0,24
-mul $0,$2
-sub $1,$0
+mov $1,$0
+sub $0,1
+dif $0,8
+div $1,3
+trn $1,$0
 mov $0,$1
-mod $0,2
-add $0,2
 mod $0,2

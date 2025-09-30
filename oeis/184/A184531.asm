@@ -1,18 +1,15 @@
 ; A184531: Upper s-Wythoff sequence, where s=5n-4.  Complement of A184530.
-; Submitted by WTBroughton
+; Submitted by rajab
 ; 2,9,15,21,27,33,39,46,52,58,64,70,77,83,89,95,101,108,114,120,126,132,139,145,151,157,163,170,176,182,188,194,201,207,213,219,225,231,238,244,250,256,262,269,275,281,287,293,300,306,312,318,324,331,337
-; Formula: a(n) = 6*n+floor((28*n+91)/145)-4
+; Formula: a(n) = 6*n+floor((6*n+50)/31)-5
 
 #offset 1
 
-sub $0,2
-mov $2,$0
-mul $2,6
-mov $1,$0
-mul $1,28
+sub $0,1
+mul $0,6
+mov $1,56
+add $1,$0
+div $1,31
+add $1,$0
 mov $0,$1
-add $0,147
-div $0,145
 add $0,1
-add $0,$2
-add $0,7

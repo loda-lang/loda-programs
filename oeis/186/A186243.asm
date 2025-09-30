@@ -1,27 +1,23 @@
 ; A186243: Numbers k such that 6*k-5 and 6*k-1 are both primes.
-; Submitted by davidBAM
+; Submitted by Science United
 ; 2,3,4,7,8,12,14,17,18,19,22,28,33,38,39,47,52,53,59,64,67,74,77,78,82,84,103,108,113,124,127,129,138,143,144,147,148,152,157,162,169,182,183,203,214,217,218,238,239,242,248,249,259,262,264,267,269,278,283,298,312,313,333,334,348,357,368,374,379,383,392,397,399,407,413,424,437,444,448,449
 
 #offset 1
 
 sub $0,1
+mov $1,2
 mov $2,$0
 pow $2,2
+add $2,5
 lpb $2
   mov $3,$1
-  add $3,2
-  mul $3,6
-  mov $6,$3
-  sub $6,4
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
+  add $1,$3
   add $1,1
-  mov $5,$3
-  sub $5,$6
-  sub $5,1
-  mul $6,$5
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$6
+  add $3,1
+  equ $3,4
+  sub $0,$3
+  add $1,$3
   mov $4,$0
   max $4,0
   equ $4,$0
@@ -29,4 +25,6 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+sub $0,6
+div $0,6
 add $0,2

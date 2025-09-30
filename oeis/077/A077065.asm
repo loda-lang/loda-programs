@@ -1,31 +1,13 @@
 ; A077065: Semiprimes of form prime - 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 4,6,10,22,46,58,82,106,166,178,226,262,346,358,382,466,478,502,562,586,718,838,862,886,982,1018,1186,1282,1306,1318,1366,1438,1486,1522,1618,1822,1906,2026,2038,2062,2098,2206,2446,2458,2578,2818,2878,2902,2962,2998,3022,3118,3166,3202,3466,3622,3778,3802,3862,3946,4006,4078,4126,4138,4258,4282,4546,4678,4702,4786,4798,4918,5086,5098,5386,5398,5482,5506,5638,5806
+; Formula: a(n) = A079148(n+2)-1
 
 #offset 1
 
-mov $2,$0
+mov $1,$0
+add $1,2
+seq $1,79148 ; Primes p such that p-1 has at most 2 prime factors, counted with multiplicity; i.e., primes p such that bigomega(p-1) = A001222(p-1) <= 2.
 sub $0,1
-add $2,7
-pow $2,4
-lpb $2
-  mov $1,$6
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $3,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mov $1,$5
-  mul $2,$4
-  sub $2,17
-  mov $5,1
-  add $6,$1
-lpe
-mov $0,$6
-add $0,1
-mul $0,2
+mov $0,$1
+sub $0,1

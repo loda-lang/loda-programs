@@ -1,22 +1,23 @@
-; A192674:  Floor-Sqrt transform of large central Delannoy numbers (A001850).
-; Submitted by hecmac33
+; A192674: Floor-Sqrt transform of large central Delannoy numbers (A001850).
+; Submitted by BrandyNOW
 ; 1,1,3,7,17,41,94,220,515,1209,2845,6711,15861,37549,89015,211287,502051,1194083,2842413,6771220,16141369,38501639,91888052,219411132,524154756,1252695124,2995034616,7163349548,17138661276,41017945745,98196952422,235147807457,563242204233
+; Formula: a(n) = sqrtint(truncate((b(n)+c(n))/2)), b(n) = 4*c(n-1)+3*b(n-1)+truncate((2*c(n-1)+b(n-1))/(-n)), b(2) = 16, b(1) = 4, b(0) = 3, c(n) = 3*c(n-1)+2*b(n-1)+truncate((2*c(n-1)+b(n-1))/(-n)), c(2) = 10, c(1) = 2, c(0) = -1
 
-mov $5,$0
-add $0,2
+mov $2,3
+mov $3,-1
 lpb $0
-  mov $3,$0
-  add $3,$5
-  sub $0,2
-  sub $3,2
-  bin $3,$0
-  mov $4,$5
-  bin $4,$2
-  mul $4,$3
-  add $1,$4
-  add $2,2
+  sub $0,1
+  add $2,$3
+  add $3,$2
+  sub $4,1
+  mov $1,$3
+  div $1,$4
+  add $3,$2
+  add $2,$3
+  add $2,$1
+  add $3,$1
 lpe
-mov $0,$1
-mul $0,2
-sub $0,1
+add $2,$3
+mov $0,$2
+div $0,2
 nrt $0,2

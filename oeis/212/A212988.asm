@@ -1,33 +1,13 @@
 ; A212988: Number of (w,x,y) with all terms in {0,...,n} and 4*w = x+y.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,1,2,4,7,9,12,16,21,25,30,36,43,49,56,64,73,81,90,100,111,121,132,144,157,169,182,196,211,225,240,256,273,289,306,324,343,361,380,400,421,441,462,484,507,529,552,576,601,625,650,676,703,729,756,784
-; Formula: a(n) = ((n%4)==1)+((n%4)==0)+2*floor(n/4)*(n%4)+8*binomial(floor(n/4),2)+6*floor(n/4)+4*((n%4)==3)+2*((n%4)==2)
+; Formula: a(n) = 2*floor((n^2)/8)+floor(n/2)+1
 
-mov $2,$0
-div $2,4
-mul $2,6
-mov $3,$0
-div $3,4
-mod $0,4
-mov $4,$3
-mul $4,$0
-bin $3,2
-mul $3,4
-add $3,$4
-mul $3,2
 mov $1,$0
-equ $1,0
-add $2,$3
-add $2,$1
-mov $1,$0
-equ $1,1
-add $2,$1
-mov $1,$0
-equ $1,2
+mul $1,$0
+div $1,8
+add $1,1
 mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,3
-mul $1,4
-add $2,$1
-mov $0,$2
+div $0,2
+sub $0,1
+add $0,$1

@@ -1,5 +1,5 @@
 ; A066722: Numbers that can be expressed as the sum of two primes in exactly six ways.
-; Submitted by Fardringle
+; Submitted by MichaelLang
 ; 60,66,72,100,106,110,116,118,134,146,166,172,182,212,248,332
 
 #offset 1
@@ -23,5 +23,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
 mul $0,2

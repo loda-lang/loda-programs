@@ -1,5 +1,5 @@
 ; A339971: Odd part of A339821(n).
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 1,1,1,1,3,3,3,3,5,5,5,5,15,15,15,15,3,3,3,3,9,9,9,9,15,15,15,15,45,45,45,45,1,1,1,1,3,3,3,3,5,5,5,5,15,15,15,15,3,3,3,3,9,9,9,9,15,15,15,15,45,45,45,45,9,9,9,9,27,27,27,27,45,45,45,45,135,135,135,135
 
 mul $0,2
@@ -10,6 +10,5 @@ mul $0,$2
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 mov $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-sub $1,1
 dir $1,2
 mov $0,$1

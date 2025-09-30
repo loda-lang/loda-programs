@@ -1,23 +1,21 @@
 ; A066883: Number of primes in the interval [p(n), p(n)^2] minus p(n), where p(n) is the n-th prime.
 ; Submitted by amazing
 ; 0,0,2,5,15,21,38,46,68,108,121,171,210,227,268,341,412,441,524,585,612,711,781,888,1042,1126,1165,1247,1286,1381,1720,1814,1972,2018,2306,2361,2536,2715,2838,3029,3217,3290,3635,3709,3848,3920,4370,4836,4999,5078,5239,5502,5589,6016,6284,6551,6836,6924,7209,7403,7499,8000,8720,8935,9039,9249,10018,10352,10920,11042,11278,11634,12114,12488,12861,13108,13495,14016,14273,14795
-; Formula: a(n) = gcd(0,-A000040(n+1)-n+A230980(A000040(n+1)^2)+1)
+; Formula: a(n) = -A000040(n)-n+A230980(A000040(n)^2)+1
 
 #offset 1
 
-sub $0,1
-sub $4,$0
-mov $3,$0
-add $3,2
-seq $3,40 ; The prime numbers.
-pow $3,2
-seq $3,230980 ; Number of primes <= n, starting at n=0.
-add $3,1
-add $3,$4
+sub $0,2
+sub $1,$0
+mov $2,$0
+add $2,2
+seq $2,40 ; The prime numbers.
+pow $2,2
+seq $2,230980 ; Number of primes <= n, starting at n=0.
+add $2,1
 add $0,2
 seq $0,40 ; The prime numbers.
-mov $1,$3
-sub $1,$0
-sub $1,1
-gcd $2,$1
+add $2,$1
+sub $2,$0
 mov $0,$2
+sub $0,2

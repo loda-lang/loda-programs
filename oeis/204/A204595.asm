@@ -1,11 +1,18 @@
 ; A204595: a(n) = maximal i such that there is a quasigroup q of order n such that q, q^2, ..., q^i are quasigroups of order n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,2,4,1,6,6,7,2,10
 
 #offset 2
 
-mov $1,$0
-seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+mov $2,$0
+sub $2,1
 sub $0,2
-dif $0,4
-add $0,$1
+lpb $0
+  bin $1,2
+  mov $2,$0
+  sub $2,$1
+  dif $0,7
+  dif $0,2
+  sub $1,1
+lpe
+mov $0,$2

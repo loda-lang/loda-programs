@@ -4,32 +4,27 @@
 
 #offset 1
 
+mov $1,3
 mov $2,$0
 sub $0,1
-add $2,7
-pow $2,3
+add $2,10
+pow $2,2
 lpb $2
-  mov $7,$6
-  add $7,2
-  seq $7,38769 ; Number of digits of n which are divisors of n.
-  mov $3,$6
-  sub $3,$7
-  add $3,3
-  mul $7,$3
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$7
-  add $1,2
+  add $1,1
+  mov $5,$1
+  seq $5,38769 ; Number of digits of n which are divisors of n.
+  add $1,1
+  mov $3,$5
+  add $3,1
+  equ $3,1
+  sub $0,$3
   mov $4,$0
   max $4,0
   equ $4,$0
-  div $5,4
-  add $5,$1
-  add $1,$4
   mul $2,$4
-  sub $2,17
-  add $6,2
+  sub $2,1
 lpe
-mov $0,$5
-div $0,4
-add $0,2
+mov $0,$1
+sub $0,33
+div $0,2
+add $0,17
