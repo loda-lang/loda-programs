@@ -13,8 +13,8 @@ div $1,6 ; source=parameter 5
 mov $0,$1
 
 ; parameter 0
-; number of unique values: 8
-; value: 2,6,7,8,9,10,11,12
+; number of unique values: 9
+; value: 2,4,6,7,8,9,10,11,12
 
 ; parameter 1
 ; number of unique values: 7
@@ -37,5 +37,5 @@ mov $0,$1
 ; value: 6,10,12,20,24,30,42,48,56,72
 
 ; programs with this pattern
-; number of programs: 17
-; program id: 17269,17931,17997,17998,18056,18090,18091,18206,18208,19512,20595,20726,20758,20968,20973,20979,21029
+; number of programs: 18
+; program id: 17269,17931,17997,17998,18056,18090,18091,18206,18208,18209,19512,20595,20726,20758,20968,20973,20979,21029

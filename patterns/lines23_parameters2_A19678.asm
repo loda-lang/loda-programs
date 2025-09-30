@@ -27,9 +27,9 @@ mod $0,10
 ; value: 2,4,5
 
 ; parameter 1
-; number of unique values: 10
-; value: 7,9,11,13,15,16,17,19,21,23
+; number of unique values: 9
+; value: 9,11,13,15,16,17,19,21,23
 
 ; programs with this pattern
-; number of programs: 17
-; program id: 19678,19680,19684,19686,19688,19690,19695,19696,19697,19698,19699,19700,19701,19702,19703,179044,336308
+; number of programs: 15
+; program id: 19678,19680,19684,19686,19688,19690,19697,19698,19699,19700,19701,19702,19703,179044,336308
