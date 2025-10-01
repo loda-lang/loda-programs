@@ -4,7 +4,6 @@
 
 mov $1,$0
 div $1,16
-sub $1,1
 mul $1,2
 lpb $0
   sub $0,$1

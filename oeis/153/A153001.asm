@@ -1,16 +1,13 @@
 ; A153001: Rows of A152980 when written as a triangle converge to this sequence.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 4,7,9,10,15,22,21,14,15,23,28,35,52,64,49,22,15,23,28,35,52,65,56,43,53,74,91,122,168,176,113,38,15,23,28,35,52,65,56,43,53,74,91,122,168,177,120,59,53,74,91,122,169,186,155,139,180,239,304,412,512,464,257,70,15
+; Formula: a(n) = truncate((A151688(bitxor(384,n))-8)/2)+4
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $3,1
-  sub $0,$3
-  mov $2,$0
-  seq $2,151688 ; G.f.: Product_{n>=0} (1 + x^(2^n-1) + 2*x^(2^n)).
-  add $1,$2
-lpe
-add $2,$1
+mov $1,384
+bxo $1,$0
+mov $2,$1
+seq $2,151688 ; G.f.: Product_{n>=0} (1 + x^(2^n-1) + 2*x^(2^n)).
 mov $0,$2
+sub $0,8
 div $0,2
+add $0,4

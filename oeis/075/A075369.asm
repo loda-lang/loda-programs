@@ -1,44 +1,49 @@
 ; A075369: Square associated with twin primes (p,p+2): p(p+2) + 1. Square of the average of twin primes.
-; Submitted by Landjunge
+; Submitted by Science United
 ; 16,36,144,324,900,1764,3600,5184,10404,11664,19044,22500,32400,36864,39204,51984,57600,72900,79524,97344,121104,176400,186624,213444,272484,324900,360000,381924,412164,435600,656100,675684,685584,736164,777924,1040400,1065024,1102500,1127844,1192464,1327104,1512900,1633284,1664100,1695204,1742400,2039184,2108304,2196324,2214144,2585664,2624400,2782224,2883204,2965284,3196944,3504384,3526884,3732624,3802500,3992004,4112784,4334724,4359744,4460544,4536900,4588164,5008644,5143824,5336100,5475600
 
 #offset 1
 
-sub $0,1
-mul $0,2
-trn $0,1
 mov $1,$0
-div $1,2
-sub $0,1
-gcd $0,2
-mov $2,4
-mov $3,$1
 sub $1,1
-add $3,4
-pow $3,3
-lpb $3
-  mov $6,$4
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,3
-  sub $4,$6
-  mul $6,$4
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $1,$6
-  mov $5,$1
+mov $6,$1
+mul $6,2
+trn $6,1
+mov $7,$6
+div $7,2
+sub $6,1
+gcd $6,2
+max $9,$7
+mov $2,$9
+add $9,1
+mov $8,$9
+pow $8,4
+lpb $8
+  mov $3,$4
+  mul $3,3
+  add $3,1
+  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  bin $3,2
+  add $5,1
+  sub $2,$3
+  add $2,1
+  add $4,$5
+  mov $5,$2
   max $5,0
-  equ $5,$1
-  add $2,6
-  mul $3,$5
-  sub $3,18
-  mov $4,$2
+  equ $5,$2
+  sub $8,$5
+  sub $2,$5
 lpe
-mov $1,$2
-div $1,6
-mul $1,3
-add $1,$0
+mov $7,$4
+div $7,2
+mul $7,3
+add $7,$6
+mov $1,$7
+mul $1,2
+add $1,2
+pow $1,2
+mul $1,2
+add $1,2
 mov $0,$1
-mul $0,2
-add $0,2
-pow $0,2
+div $0,2
+sub $0,1

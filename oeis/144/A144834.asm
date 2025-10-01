@@ -1,44 +1,24 @@
 ; A144834: Numbers n such that the two numbers n+1 and n+3 are both prime.
-; Submitted by Just Jake
+; Submitted by Science United
 ; 2,4,10,16,28,40,58,70,100,106,136,148,178,190,196,226,238,268,280,310,346,418,430,460,520,568,598,616,640,658,808,820,826,856,880,1018,1030,1048,1060,1090,1150,1228,1276,1288,1300,1318,1426,1450,1480,1486,1606,1618,1666,1696,1720,1786,1870,1876,1930,1948,1996,2026,2080,2086,2110,2128,2140,2236,2266,2308,2338,2380,2548,2590,2656,2686,2710,2728,2788,2800
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-mul $1,2
-trn $1,1
-mov $2,$1
-div $2,2
-sub $1,1
-gcd $1,2
-max $4,$2
-mov $6,$4
-add $4,1
-mov $7,$4
-pow $7,4
-lpb $7
-  mov $5,$3
-  mul $5,3
-  add $5,1
-  seq $5,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $5,2
-  sub $6,$5
-  add $6,1
-  add $8,1
-  add $3,$8
-  mov $8,$6
-  max $8,0
-  equ $8,$6
-  sub $6,$8
-  sub $7,$8
+lpb $0
+  min $0,0
+  sub $0,1
 lpe
-mov $2,$3
-div $2,2
-mul $2,3
-add $2,$1
-mov $0,$2
-mul $0,4
-sub $0,4
-div $0,2
-add $0,2
+mul $0,2
+trn $0,1
+mov $1,$0
+sub $0,1
+gcd $0,2
+div $1,2
+add $1,1
+seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+sub $1,1
+mul $1,3
+add $1,$0
+mov $0,$1
+mul $0,2

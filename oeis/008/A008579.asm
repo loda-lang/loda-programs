@@ -1,22 +1,18 @@
 ; A008579: Coordination sequence for planar net 3.6.3.6. Spherical growth function for a certain reflection group in plane.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,4,8,14,18,22,28,30,38,38,48,46,58,54,68,62,78,70,88,78,98,86,108,94,118,102,128,110,138,118,148,126,158,134,168,142,178,150,188,158,198,166,208,174,218,182,228,190,238,198,248,206,258,214,268,222,278,230,288,238,298,246,308,254,318,262,328,270,338,278,348,286,358,294,368,302,378,310,388,318
-; Formula: a(n) = max(floor((2*n)/4)*(-((2*n)%4)+10)-2*((2*n)==2)+min(5*((2*n)%4)-2,6),1)
+; Formula: a(n) = -2*(1==n)+max(-2*(-1)^n+truncate((n*((-1)^n+9))/2),1)
 
-mul $0,2
-mov $1,$0
-mod $1,4
+mov $3,1
+equ $3,$0
+mov $1,-1
+pow $1,$0
 mov $2,$1
-mul $2,5
-sub $2,2
-min $2,6
-mov $3,10
-sub $3,$1
-mov $1,$0
-div $1,4
-mul $3,$1
-add $3,$2
-equ $0,2
-mul $0,-2
-add $0,$3
+mul $2,2
+add $1,9
+mul $0,$1
+div $0,2
+sub $0,$2
 max $0,1
+sub $0,$3
+sub $0,$3
