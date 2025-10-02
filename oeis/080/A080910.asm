@@ -1,0 +1,53 @@
+; A080910: Number of numbers that differ from n in decimal representation by exactly one edit-operation: deletion, insertion, or substitution.
+; Submitted by loader3229
+; 18,27,27,27,27,27,27,27,27,27,46,45,46,46,46,46,46,46,46,46,46,46,45,46,46,46,46,46,46,46,46,46,46,45,46,46,46,46,46,46,46,46,46,46,45,46,46,46,46,46,46,46,46,46,46,45,46,46,46,46,46,46,46,46,46,46,45,46,46
+
+mov $1,18
+mov $2,27
+mov $3,27
+mov $4,27
+mov $5,27
+mov $6,27
+mov $7,27
+mov $8,27
+mov $9,27
+mov $10,27
+mov $11,46
+mov $12,45
+mov $13,46
+mov $14,46
+mov $15,46
+mov $16,46
+mov $17,46
+mov $18,46
+mov $19,46
+mov $20,46
+mov $21,46
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $22,$1
+  add $22,$11
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+lpe
+mov $0,$1
