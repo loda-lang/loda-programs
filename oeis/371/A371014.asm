@@ -6,6 +6,7 @@
 
 mov $2,$0
 mov $4,$0
+sub $0,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -13,13 +14,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  mul $0,4
-  seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
-  mov $5,$0
-  equ $5,0
-  mov $0,$5
-  add $0,1
-  mod $0,2
+  seq $0,229062 ; 1 if n is representable as sum of two nonnegative squares, otherwise 0.
   mul $1,$0
   add $3,$1
 lpe

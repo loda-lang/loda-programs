@@ -1,29 +1,29 @@
 ; A319968: a(n) = A003145(A003145(n)).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by rajab
 ; 6,19,30,43,50,63,74,87,100,111,124,131,144,155,168,179,192,199,212,223,236,249,260,273,280,293,304,317,324,337,348,361,374,385,398,405,418,429,442,453,466,473,486,497,510,523,534,547,554,567,578,591,604,615,628,635,648,659,672,683,696,703,716,727,740,753,764,777,784,797,808,821,828,841,852,865,878,889,902,909
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-mov $2,1
+mov $3,1
 lpb $0
   sub $0,1
-  mov $3,$0
-  max $3,0
-  add $3,1
-  seq $3,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
-  mov $5,$3
-  sub $3,1
-  bxo $3,$5
-  div $3,2
-  mov $4,0
-  sub $4,$3
-  mov $3,$4
-  add $3,7
-  add $2,$3
+  mov $4,$0
+  max $4,0
+  add $4,1
+  seq $4,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
+  mov $2,$4
+  add $4,1
+  bxo $4,$2
+  div $4,2
+  mov $5,0
+  sub $5,$4
+  mov $4,$5
+  add $4,7
+  add $3,$4
 lpe
-mov $0,$2
+mov $0,$3
 mul $0,2
 add $0,4
 sub $0,$1

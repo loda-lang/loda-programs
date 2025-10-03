@@ -1,21 +1,71 @@
 ; A092749: a(n) is the least k such that m^2 + m + k is prime for m = 0..n.
-; Submitted by Skivelitis2
+; Submitted by loader3229
 ; 2,3,5,5,11,11,11,11,11,11,17,17,17,17,17,17,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41
+; Formula: a(n) = -24*(n==15)-24*(n==14)-24*(n==13)-24*(n==12)-24*(n==11)-24*(n==10)-30*(n==9)-30*(n==8)-30*(n==7)-30*(n==6)-30*(n==5)-30*(n==4)-36*(n==3)-36*(n==2)-38*(n==1)-39*(n==0)+41
 
-add $0,1
-mov $4,1
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,$0
-  add $1,1
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,2
-  sub $0,$1
-  add $2,$4
-  sub $3,$0
-lpe
-mov $0,$4
-div $0,2
-add $0,2
+mov $1,$0
+equ $1,0
+mul $1,-39
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,-38
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,-36
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-36
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,-30
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,-30
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,-30
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,-30
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,-30
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,-30
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,-24
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,-24
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,-24
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,-24
+add $2,$1
+mov $1,$0
+equ $1,14
+mul $1,-24
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,-24
+add $2,$1
+add $2,41
+mov $0,$2

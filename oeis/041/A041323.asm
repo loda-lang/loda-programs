@@ -1,54 +1,48 @@
 ; A041323: Denominators of continued fraction convergents to sqrt(175).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,4,9,13,35,153,4013,16205,36423,52628,141679,619344,16244623,65597836,147440295,213038131,573516557,2507104359,65758229891,265540023923,596838277737,862378301660,2321594881057,10148757825888,266189298354145,1074905951242468,2416001200839081,3490907152081549,9397815505002179,41082169172090265,1077534213979349069,4351219025089486541,9779972264158322151,14131191289247808692,38042354842653939535,166300610659863566832,4361858231999106677167,17613733538656290275500,39589325309311687228167
-; Formula: a(n) = a(n-1)*(2*truncate((2*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)-4)/5)-truncate((4*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)-10*truncate((4*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)-8)/10)+truncate((2*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)-4)/5)-8)/2))+a(n-2), a(2) = 9, a(1) = 4, a(0) = 1
+; Formula: a(n) = truncate((b(n)-8)/8)+1, b(n) = b(n-1)*(((sign(n)*((abs(n)-1)%6+1))==3)+((sign(n)*((abs(n)-1)%6+1))==0)+26*((sign(n)*((abs(n)-1)%6+1))==6)+4*((sign(n)*((abs(n)-1)%6+1))==5)+4*((sign(n)*((abs(n)-1)%6+1))==1)+2*((sign(n)*((abs(n)-1)%6+1))==4)+2*((sign(n)*((abs(n)-1)%6+1))==2))+b(n-2), b(2) = 72, b(1) = 32, b(0) = 8
 
-mov $1,1
+mov $1,8
+mov $3,1
 lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  add $3,1
-  mov $6,-1
-  pow $6,$3
-  add $6,2
-  mov $7,2
-  trn $7,$3
-  add $7,6
   mov $1,$3
-  gcd $1,$7
-  sub $1,3
-  sub $7,2
-  mov $9,3
-  pow $9,$1
-  mov $1,$9
-  mod $1,10
-  mov $8,2
-  add $8,$1
-  mov $1,$8
-  div $1,3
-  mul $1,3
-  mul $8,2
-  mul $1,$7
-  add $1,$8
-  div $1,2
-  sub $1,1
-  mul $1,$6
-  mul $1,2
-  sub $1,1
-  div $1,3
-  sub $1,2
-  mov $5,$1
-  mul $5,2
-  div $5,5
-  mul $1,4
-  mod $1,10
-  add $1,$5
-  div $1,2
-  mul $5,2
-  sub $5,$1
+  dgr $1,7
+  mov $6,$1
+  equ $6,0
+  mov $5,$6
+  mov $6,$1
+  equ $6,1
+  mul $6,4
+  add $5,$6
+  mov $6,$1
+  equ $6,2
+  mul $6,2
+  add $5,$6
+  mov $6,$1
+  equ $6,3
+  add $5,$6
+  mov $6,$1
+  equ $6,4
+  mul $6,2
+  add $5,$6
+  mov $6,$1
+  equ $6,5
+  mul $6,4
+  add $5,$6
+  mov $6,$1
+  equ $6,6
+  mul $6,26
+  add $5,$6
   mov $1,$5
   mul $1,$2
   add $1,$4
+  add $3,1
 lpe
 mov $0,$1
+sub $0,8
+div $0,8
+add $0,1

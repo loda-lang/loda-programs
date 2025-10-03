@@ -1,38 +1,26 @@
 ; A003961: Completely multiplicative with a(prime(k)) = prime(k+1).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by vaughan
 ; 1,3,5,9,7,15,11,27,25,21,13,45,17,33,35,81,19,75,23,63,55,39,29,135,49,51,125,99,31,105,37,243,65,57,77,225,41,69,85,189,43,165,47,117,175,87,53,405,121,147,95,153,59,375,91,297,115,93,61,315,67,111,275,729,119,195,71,171,145,231,73,675,79,123,245,207,143,255,83,567
 
 #offset 1
 
 mov $1,1
-mov $2,2
-mov $4,1
 lpb $0
-  mul $1,$4
+  mov $2,2
   mov $3,$0
+  bin $3,2
   lpb $3
     mov $4,$0
     mod $4,$2
-    neq $4,0
     add $2,1
     sub $3,$4
   lpe
-  div $0,$2
-  mov $4,$2
-  mov $5,$2
-  lpb $5
-    mov $6,$4
-    add $4,1
-    lpb $6
-      mov $7,$4
-      gcd $7,$6
-      equ $7,1
-      mov $2,2
-      sub $6,$7
-    lpe
-    neq $6,0
-    sub $5,$6
+  mov $3,$2
+  seq $3,66169 ; Least k such that phi(k) >= n.
+  lpb $0
+    dif $0,$2
+    mov $2,0
   lpe
-  add $4,1
+  mul $1,$3
 lpe
-mov $0,$1
+mul $0,$1

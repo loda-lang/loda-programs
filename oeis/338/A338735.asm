@@ -1,34 +1,13 @@
 ; A338735: a(n) = Bell(n) + n - 2 (cf. A000110).
-; Submitted by shiva
+; Submitted by Science United
 ; 0,2,6,17,55,207,882,4146,21154,115983,678579,4213607,27644448,190899334,1382958558,10480142161,82864869819,682076806175,5832742205074,51724158235390,474869816156770,4506715738447343,44152005855084367,445958869294805311,4638590332229999376
+; Formula: a(n) = A000110(n)+n-2
 
 #offset 1
 
-sub $0,1
-mov $4,$0
-add $0,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $8,0
-  add $1,1
-  mov $3,$0
-  add $3,2
-  lpb $3
-    sub $3,1
-    mov $6,$3
-    pow $6,$4
-    sub $7,$3
-    bin $7,$5
-    mul $7,$6
-    add $8,$7
-    add $5,1
-    mov $7,0
-  lpe
-  mov $2,1
-  fac $2,$0
-  div $8,$2
-  add $1,$8
-lpe
+mov $2,$0
+seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $1,$0
+add $1,$2
 mov $0,$1
 sub $0,2

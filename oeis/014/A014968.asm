@@ -2,21 +2,12 @@
 ; Submitted by Science United
 ; 0,1,2,4,7,12,20,32,50,77,116,172,252,364,520,736,1031,1432,1974,2700,3668,4952,6644,8864,11764,15533,20412,26704,34784,45124,58312,75072,96306,123128,156904,199320,252443,318796,401468,504224,631636,789264,983848,1223532,1518164,1879620,2322184,2863040,3522812,4326201,5302782,6487896,7923700,9660452,11757968,14287328,17332936,20994872,25391636,30663428,36975904,44524548,53539856,64293280,77104135,92347728,110464688,131971788,157474600,187682032,223423144,265666720,315543750,374373368,443692932
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $1,$4
-    seq $1,15128 ; Number of overpartitions of n: an overpartition of n is an ordered sequence of nonincreasing integers that sum to n, where the first occurrence of each integer may be overlined.
-    sub $4,$5
-    add $5,$1
-  lpe
-  add $2,1
-  mov $3,$5
+seq $0,15128 ; Number of overpartitions of n: an overpartition of n is an ordered sequence of nonincreasing integers that sum to n, where the first occurrence of each integer may be overlined.
+mov $1,$0
+add $0,256378972453252042135457371855533400
+add $1,256378972453252042135457371855533402
+lpb $1
+  mod $1,8
+  div $0,2
 lpe
-mov $0,$3
-div $0,2
+sub $0,128189486226626021067728685927766700

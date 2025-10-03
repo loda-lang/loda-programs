@@ -1,5 +1,5 @@
 ; A010398: Squares mod 37.
-; Submitted by Science United
+; Submitted by SzaMoT
 ; 0,1,3,4,7,9,10,11,12,16,21,25,26,27,28,30,33,34,36
 
 #offset 1
@@ -12,7 +12,6 @@ lpb $2
   add $3,1
   seq $3,36167 ; Log base 2 (n) mod 37.
   gcd $3,2
-  add $4,3
   sub $0,$3
   add $0,1
   add $1,$4

@@ -1,20 +1,22 @@
 ; A004494: Tersum n + 5.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 5,3,4,8,6,7,2,0,1,14,12,13,17,15,16,11,9,10,23,21,22,26,24,25,20,18,19,32,30,31,35,33,34,29,27,28,41,39,40,44,42,43,38,36,37,50,48,49,53,51,52,47,45,46,59,57,58,62,60,61,56,54,55,68,66,67,71,69
+; Formula: a(n) = -9*floor((floor(n/3)%3)/2)+binomial(gcd(3,-9*floor((floor(n/3)%3)/2)+n+3),2)+n+2
 
-mov $1,3
-gcd $1,$0
-bin $1,2
-add $0,$1
+mov $1,$0
+add $1,8
+div $0,3
+mod $0,3
+div $0,2
+mov $2,1
+sub $2,$0
+mul $0,10
+add $0,$2
+sub $1,$0
+mov $0,$1
+sub $0,4
+mov $3,3
+gcd $3,$0
+bin $3,2
+add $0,$3
 sub $0,1
-mov $2,$0
-div $2,3
-mul $2,3
-add $2,3
-mod $2,9
-add $2,4
-lpb $2
-  div $2,5
-  add $0,9
-lpe
-sub $0,15

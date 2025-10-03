@@ -1,19 +1,19 @@
 ; A019634: Decimal expansion of sqrt(2*Pi*e)/3.
-; Submitted by Dave Studdert
+; Submitted by crashtech
 ; 1,3,7,7,5,7,7,1,1,8,0,4,0,8,3,0,9,7,9,4,8,9,7,9,7,2,9,4,7,6,6,6,1,7,5,4,9,8,1,5,1,7,3,9,7,2,3,3,0,4,3,6,1,5,0,5,1,8,8,8,3,7,5,1,2,6,5,9,8,5,9,7,6,1,7,1,1,3,9,0
 
 #offset 1
 
 add $0,1
-mul $0,2
-mov $10,1
 mov $8,$0
-mul $8,7
+mul $0,2
+mul $8,14
 lpb $8
   max $8,1
   max $7,$9
   div $7,$8
   sub $8,1
+  add $9,1
   add $9,$10
   mul $10,2
   add $10,$7

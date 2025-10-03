@@ -1,32 +1,33 @@
 ; A040618: Continued fraction for sqrt(644).
-; Submitted by Science United
+; Submitted by loader3229
 ; 25,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2,50,2,1,1,1,6,1,1,1,2
 
-mov $1,-1
-pow $1,$0
-add $1,1
-mov $3,16
-mul $0,2
-pow $0,2
+mov $2,25
+mov $3,2
+mov $4,1
+mov $5,1
+mov $6,1
+mov $7,6
+mov $8,1
+mov $9,1
+mov $10,1
+mov $11,2
+mov $12,50
 lpb $0
-  mov $2,$0
-  mul $3,9
-  add $3,6
-  mov $0,0
-  mod $2,10
-  add $2,5
-  div $3,$2
-  sub $3,5
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$1
 lpe
-sub $3,7
-mov $0,$3
-div $0,4
-mul $0,12
-add $0,$3
-mul $0,$1
-add $0,8
-mul $1,2
-add $0,$3
-dif $0,$1
-div $0,3
-sub $0,2
+mov $0,$2

@@ -17,11 +17,15 @@ lpb $2
   equ $3,5
   sub $0,$3
   add $1,1
+  add $3,3
+  sub $3,$0
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $3,$0
+  add $2,$1
 lpe
 mov $0,$5
+sub $0,4
 div $0,2
+add $0,2

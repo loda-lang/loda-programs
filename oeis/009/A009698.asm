@@ -1,16 +1,16 @@
 ; A009698: Expansion of tan(tan(x))*sin(x).
-; Submitted by Science United
+; Submitted by crashtech
 ; 0,2,12,358,19352,1709194,222722596,40122780142,9543330683696,2895895566420498,1091590070839432764,500335689476146083190,274027979513688992336584,176734166480671985581245594
 
 add $0,1
-mov $3,$0
-sub $0,1
 lpb $0
   sub $0,1
   mov $1,$2
-  add $1,$3
+  mul $1,2
   seq $1,9821 ; Expansion of tanh(tanh(x))*exp(x).
   gcd $1,$0
+  mul $1,2
   add $2,1
 lpe
 mov $0,$1
+div $0,2

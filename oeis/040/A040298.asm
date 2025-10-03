@@ -1,30 +1,29 @@
 ; A040298: Continued fraction for sqrt(316).
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 17,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1,34,1,3,2,8,2,3,1
 
-mov $1,$0
-mod $1,8
-mov $3,8
-sub $3,$1
-min $1,$3
-mod $1,4
-mov $4,$0
-mov $5,10
-gcd $0,8
-lpb $4
-  mov $4,3
-  add $0,6
-  mov $5,7
+mov $2,17
+mov $3,1
+mov $4,3
+mov $5,2
+mov $6,8
+mov $7,2
+mov $8,3
+mov $9,1
+mov $10,34
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$5
-trn $0,63
-add $0,1
-add $0,$1
-dif $0,2
-mov $2,$0
-mul $2,2
-div $0,4
-add $2,$0
-mul $0,7
-add $0,$2
-dif $0,2
+mov $0,$2

@@ -1,16 +1,13 @@
 ; A028438: Golc sequence in base 8. Left to right concatenation of n,int(log_8(n)),int(log_8(int(log_8(n)))),... in base8.
+; Submitted by loader3229
 ; 8,16,24,32,40,48,56,65,73,81,89,97,105,113,121,129,137,145,153,161,169,177,185,193,201,209,217,225,233,241,249,257,265,273,281,289,297,305,313,321,329,337,345,353,361,369,377,385,393,401,409,417,425,433
-; Formula: a(n) = 0^(0^max(n-7,0))+8*n
+; Formula: a(n) = ((n-1)>=7)+8*n
 
 #offset 1
 
 sub $0,1
-mov $4,$0
-trn $0,6
-pow $2,$0
-pow $1,$2
-add $1,8
-mov $3,$4
-mul $3,8
-add $1,$3
-mov $0,$1
+mov $1,$0
+geq $1,7
+mul $0,8
+add $0,8
+add $0,$1

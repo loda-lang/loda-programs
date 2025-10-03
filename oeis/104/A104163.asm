@@ -1,30 +1,19 @@
 ; A104163: Primes p such that (2p+1)/3 is prime.
-; Submitted by Coleslaw
+; Submitted by Science United
 ; 7,19,43,61,79,109,151,163,223,271,349,421,439,523,601,613,631,673,691,811,853,919,991,1009,1051,1063,1153,1213,1231,1279,1321,1429,1531,1549,1663,1693,1789,1801,1873,1933,1951,2113,2143,2179,2221,2239,2503,2539,2683,2791,2833,2851,3079,3121,3169,3229,3319,3331,3463,3499,3511,3571,3583,3709,3823,3889,3931,4093,4111,4129,4201,4363,4561,4591,4663,4813,4831,4951,4969,4993
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,1
-pow $2,2
-lpb $2
-  max $3,$5
-  add $3,1
-  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,10
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-  add $5,1
-  add $5,$1
-  add $1,2
+lpb $0
+  trn $0,1
+  add $0,1
+  seq $0,130800 ; Numbers k such that both 2k+1 and 3k+1 are primes.
+  mul $0,2
+  mov $1,$0
+  mov $0,0
 lpe
 mov $0,$1
-div $0,12
-mul $0,3
-add $0,1
+sub $0,3
+div $0,4
+mul $0,6
+add $0,7

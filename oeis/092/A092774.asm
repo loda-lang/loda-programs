@@ -1,13 +1,14 @@
 ; A092774: Prime(prime(n))^2+1.
-; Submitted by Jamie Morken(w2)
+; Submitted by Science United
 ; 10,26,122,290,962,1682,3482,4490,6890,11882,16130,24650,32042,36482,44522,58082,76730,80090,109562,124610,134690,160802,185762,212522,259082,299210,316970,344570,358802,380690,502682,546122,597530,635210
-; Formula: a(n) = A000040(A000040(n+1)+1)^2+1
+; Formula: a(n) = 2*floor((A000040(max(A006005(n),2))^2+1)/2)
 
 #offset 1
 
-add $0,1
-seq $0,40 ; The prime numbers.
-add $0,1
+seq $0,6005 ; The odd prime numbers together with 1.
+max $0,2
 seq $0,40 ; The prime numbers.
 pow $0,2
 add $0,1
+div $0,2
+mul $0,2
