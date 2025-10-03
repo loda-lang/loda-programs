@@ -1,17 +1,30 @@
 ; A011636: 45th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,0,-1,0,0,0,0,0,1,0,0,-1,0,0,1,0,0,0,0,0,-1,0,0,1
+; Formula: a(n) = (n==24)+(n==15)+(n==9)+(n==0)-(n==21)-(n==12)-(n==3)
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,14018 ; Inverse of 9th cyclotomic polynomial.
-  mov $3,$4
-  add $3,12
-  mov $4,$0
-  add $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+equ $1,0
+mov $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,9
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,15
+add $2,$1
+mov $1,$0
+equ $1,21
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,24
+add $2,$1
+mov $0,$2

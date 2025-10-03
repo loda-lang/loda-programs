@@ -1,10 +1,39 @@
 ; A166266: Number of 1's in binary expansion of A000110(n).
-; Submitted by Science United
+; Submitted by 10esseeTony
 ; 1,1,1,2,4,3,5,7,4,8,8,10,10,12,14,15,15,16,22,19,25,29,25,31,25,31,28,39,32,35,41,42,46,47,46,52,49,52,59,53,59,55,75,69,58,68,62,85,81,82,55,81,82,89,89,97,87,96,92,95,103,99,120,105,105,113,106,126,125,126,108,137,126,127,119,131,135,145,164,135
 
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mov $1,$0
+mov $7,1
+fac $7,$0
+mov $10,$0
+mov $11,1
+add $0,1
 lpb $0
-  div $1,2
-  sub $0,$1
+  sub $0,1
+  mov $5,$4
+  pow $5,$10
+  mov $6,$10
+  bin $6,$4
+  mul $9,$4
+  add $9,$5
+  mov $13,$9
+  div $13,$7
+  mul $3,$4
+  add $3,$13
+  add $4,1
+  mod $9,$7
+  mul $11,-1
+  mov $2,$6
+  mul $2,$9
+  mul $2,$11
+  mov $1,$6
+  mul $1,$3
+  mul $1,$11
+  add $8,$1
+  add $12,$2
 lpe
+mul $8,$11
+mul $12,$11
+div $12,$7
+add $12,$8
+mov $0,$12
+dgs $0,2

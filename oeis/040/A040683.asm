@@ -1,16 +1,29 @@
 ; A040683: Continued fraction for sqrt(710).
-; Submitted by Science United
+; Submitted by loader3229
 ; 26,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1
 
-mov $1,126
-mov $2,$0
-dif $2,2
+mov $2,26
+mov $3,1
+mov $4,1
+mov $5,1
+mov $6,4
+mov $7,1
+mov $8,1
+mov $9,1
+mov $10,52
 lpb $0
-  mov $0,0
-  mov $1,4
-  gcd $1,$2
-  pow $1,4
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mov $0,$1
-div $0,5
-add $0,1
+mov $0,$2

@@ -1,30 +1,29 @@
 ; A010221: Continued fraction for sqrt(177).
-; Submitted by gemini8
+; Submitted by loader3229
 ; 13,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8
 
-mov $2,$0
-mov $4,$0
-mod $4,8
-gcd $0,8
-mov $3,8
-sub $3,$4
-min $4,$3
-mod $4,4
-mov $5,10
-lpb $2
-  mov $2,3
-  add $0,6
-  mov $5,7
+mov $2,13
+mov $3,3
+mov $4,3
+mov $5,2
+mov $6,8
+mov $7,2
+mov $8,3
+mov $9,3
+mov $10,26
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$5
-trn $0,63
-add $0,1
-add $0,$4
-div $0,2
-mov $1,$0
-sub $1,2
-div $0,4
-mul $0,5
-gcd $1,$0
-add $0,$1
-add $0,2
+mov $0,$2

@@ -4,16 +4,12 @@
 
 #offset 1
 
+mov $1,$0
+pow $1,2
+add $1,$0
 mov $2,$0
-lpb $0
-  max $0,$3
-  sub $0,1
-  mov $3,$2
-  mul $3,30
-  mov $1,$3
-  neq $3,$2
-  mul $3,2
-  pow $3,$1
-lpe
-mov $0,$1
-div $0,30
+add $2,46
+mul $0,$1
+pow $0,$2
+lex $0,$1
+sub $0,46

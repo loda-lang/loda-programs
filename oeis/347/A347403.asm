@@ -1,5 +1,5 @@
 ; A347403: Step at which n is removed by the sieve of Eratosthenes or 0 if n is prime.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,0,0,2,0,2,0,2,3,2,0,2,0,2,3,2,0,2,0,2,3,2,0,2,4,2,3,2,0,2,0,2,3,2,4,2,0,2,3,2,0,2,0,2,3,2,0,2,5,2,3,2,0,2,4,2,3,2,0,2,0,2,3,2,4,2,0,2,3,2,0,2,0,2,3,2,5,2,0,2
 
 #offset 1
@@ -18,7 +18,6 @@ lpb $0
   sub $0,$2
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   lpb $0
     mov $0,1

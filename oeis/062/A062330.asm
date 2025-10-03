@@ -1,14 +1,38 @@
 ; A062330: a(n) = product of the sum and product of the digits of a(n-1) (0 is not to be considered a factor in the product).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 2,4,16,42,48,384,1440,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144
-; Formula: a(n) = b(n-1), b(n) = A062331(b(n-1)), b(0) = 2
+; Formula: a(n) = 1296*((n-1)==6)+240*((n-1)==5)-96*((n-1)==4)-102*((n-1)==3)-128*((n-1)==2)-140*((n-1)==1)-142*((n-1)==0)+144
 
 #offset 1
 
-mov $1,2
 sub $0,1
-lpb $0
-  sub $0,1
-  seq $1,62331 ; a(n) is the product of the sum and the product of the digits of n (0 is not to be considered a factor in the product).
-lpe
-mov $0,$1
+mov $1,$0
+equ $1,0
+mul $1,-142
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,-140
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,-128
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-102
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,-96
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,240
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,1296
+add $2,$1
+add $2,144
+mov $0,$2

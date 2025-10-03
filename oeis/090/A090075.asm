@@ -1,35 +1,26 @@
 ; A090075: (Presumed) number of palindromes in the Reverse and Add! trajectory of 10^n.
+; Submitted by loader3229
 ; 11,9,8,9,12,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+; Formula: a(n) = (n==4)-(n==5)-2*(n==3)-2*(n==1)-3*(n==2)+11
 
-mov $2,$0
-mov $4,6
-mov $5,6
-lpb $5
-  mov $5,2
-  add $1,$0
-  trn $1,2
-  add $4,2
-  lpb $4
-    sub $4,$0
-    add $0,3
-    trn $0,6
-    mov $3,$2
-    mov $2,0
-    trn $4,$0
-  lpe
-  lpb $5
-    trn $5,$3
-    mov $3,0
-    mov $4,$1
-  lpe
-  mov $1,$5
-  lpb $4
-    mov $4,$3
-    add $4,3
-    trn $1,6
-  lpe
-  add $4,5
-lpe
-add $1,$4
-add $1,3
-mov $0,$1
+mov $1,$0
+equ $1,1
+mul $1,-2
+mov $2,$1
+mov $1,$0
+equ $1,2
+mul $1,-3
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,-1
+add $2,$1
+add $2,11
+mov $0,$2

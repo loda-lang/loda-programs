@@ -1,35 +1,31 @@
 ; A024896: Numbers k such that 5*k - 2 is prime.
-; Submitted by Egon Olsen
+; Submitted by KetamiNO [YouTube]
 ; 1,3,5,9,11,15,17,21,23,33,35,39,45,47,53,57,59,63,71,75,77,87,89,93,101,105,113,119,123,129,131,135,137,147,149,155,165,171,173,177,191,197,203,207,213,219,221,225,231,233,239,243,245,257,261,275,285,287,291,297,299,305,309,311,317,323,333,339,345,347,351,357,365,375,383,387,395,399,401,411
 
 #offset 1
 
-sub $0,1
-mov $1,2
-mov $3,11
 mov $2,$0
-pow $2,4
+sub $0,1
+pow $2,2
 lpb $2
-  mov $5,0
-  max $3,$1
+  mov $3,$1
   add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,5
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
+  mov $6,$3
+  mov $5,$3
+  lpb $5
+    div $5,10
+    mul $3,0
   lpe
-  sub $0,$5
+  add $3,$6
+  add $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
   add $1,10
-  sub $2,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
 div $0,5

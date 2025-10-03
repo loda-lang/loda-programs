@@ -1,14 +1,30 @@
 ; A008461: Take sum of squares of digits of previous term.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 7,49,97,130,10,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = b(n-1), b(n) = A003132(b(n-1)), b(0) = 7
+; Formula: a(n) = 129*((n-1)==3)+96*((n-1)==2)+48*((n-1)==1)+9*((n-1)==4)+6*((n-1)==0)+1
 
 #offset 1
 
-mov $1,7
 sub $0,1
-lpb $0
-  sub $0,1
-  seq $1,3132 ; Sum of squares of digits of n.
-lpe
-mov $0,$1
+mov $1,$0
+equ $1,0
+mul $1,6
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,48
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,96
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,129
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,9
+add $2,$1
+add $2,1
+mov $0,$2

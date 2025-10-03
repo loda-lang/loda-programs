@@ -5,7 +5,7 @@
 add $0,4
 mov $10,1
 mov $8,$0
-mul $8,4
+mul $8,7
 lpb $8
   max $8,1
   max $7,$9
@@ -13,6 +13,7 @@ lpb $8
   sub $8,1
   add $9,$10
   mul $10,2
+  sub $10,1
   add $10,$7
 lpe
 mov $1,10

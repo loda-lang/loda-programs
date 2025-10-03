@@ -1,33 +1,29 @@
 ; A040669: Continued fraction for sqrt(696).
-; Submitted by LCB001
+; Submitted by loader3229
 ; 26,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2,52,2,1,1,1,1,1,2
 
-mul $0,27
-mov $2,$0
-mov $4,$0
-mod $4,8
-gcd $0,8
-mov $3,8
-sub $3,$4
-min $4,$3
-mod $4,4
-mov $5,10
-lpb $2
-  mov $2,3
-  add $0,6
-  mov $5,7
+mov $2,26
+mov $3,2
+mov $4,1
+mov $5,1
+mov $6,1
+mov $7,1
+mov $8,1
+mov $9,2
+mov $10,52
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$5
-trn $0,63
-add $0,1
-add $0,$4
-div $0,2
-dif $0,4
-mov $1,$0
-div $1,2
-mul $1,2
-div $0,4
-mul $0,21
-add $0,$1
-div $0,2
-add $0,1
+mov $0,$2

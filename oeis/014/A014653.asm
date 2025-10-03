@@ -1,21 +1,17 @@
 ; A014653: Inverse of 644th cyclotomic polynomial.
-; Submitted by Stony666
+; Submitted by KetamiNO [YouTube]
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $3,3
+mov $4,1
 add $0,3
 lpb $0
   sub $0,$3
-  add $1,46
   mov $2,$0
   max $2,0
-  mov $4,-1
-  pow $4,$2
-  add $4,1
-  dif $2,2
-  seq $2,15003 ; Inverse of 994th cyclotomic polynomial.
-  mul $2,$4
-  div $2,2
-  mov $3,$1
+  add $4,45
+  mov $1,$2
+  seq $1,15661 ; Inverse of 1652nd cyclotomic polynomial.
+  mov $3,$4
 lpe
-mov $0,$2
+mov $0,$1

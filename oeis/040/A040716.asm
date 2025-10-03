@@ -1,27 +1,33 @@
 ; A040716: Continued fraction for sqrt(744).
-; Submitted by Mads Nissen
+; Submitted by loader3229
 ; 27,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3,54,3,1,1,1,1,1,1,1,3
 
-mov $2,$0
-pow $2,4
-mov $3,$2
-trn $3,4
-sub $3,4
-gcd $2,$3
-mul $2,3
-mov $5,$0
-pow $5,2
-div $5,2
-lpb $5
-  div $5,5
-  add $4,$5
-  mov $5,5
-  mul $5,$4
-  sub $6,1
+mov $2,27
+mov $3,3
+mov $4,1
+mov $5,1
+mov $6,1
+mov $7,1
+mov $8,1
+mov $9,1
+mov $10,1
+mov $11,3
+mov $12,54
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$1
 lpe
-mov $0,$6
-gcd $0,$2
-mov $1,$0
-div $0,4
-mul $0,5
-add $0,$1
+mov $0,$2

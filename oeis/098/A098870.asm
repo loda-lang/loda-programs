@@ -1,14 +1,38 @@
 ; A098870: Sum of the cubes of the digits of the previous term, starting with 2.
-; Submitted by Orange Kid
+; Submitted by loader3229
 ; 2,8,512,134,92,737,713,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371,371
-; Formula: a(n) = b(n-1), b(n) = A055012(b(n-1)), b(0) = 2
+; Formula: a(n) = 366*((n-1)==5)+342*((n-1)==6)+141*((n-1)==2)-237*((n-1)==3)-279*((n-1)==4)-363*((n-1)==1)-369*((n-1)==0)+371
 
 #offset 1
 
-mov $1,2
 sub $0,1
-lpb $0
-  sub $0,1
-  seq $1,55012 ; Sum of cubes of the digits of n written in base 10.
-lpe
-mov $0,$1
+mov $1,$0
+equ $1,0
+mul $1,-369
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,-363
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,141
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-237
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,-279
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,366
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,342
+add $2,$1
+add $2,371
+mov $0,$2

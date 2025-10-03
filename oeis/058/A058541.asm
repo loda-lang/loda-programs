@@ -1,19 +1,87 @@
 ; A058541: Trajectory of 1 under map that sends x to 3x - sigma(x).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,2,3,5,9,14,18,15,21,31,61,121,230,258,246,234,156,76,88,84,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28
-; Formula: a(n) = b(n)+1, b(n) = 3*b(n-1)-A000203(b(n-1)+1)+2, b(0) = 0
+; Formula: a(n) = 230*(n==13)+218*(n==14)+206*(n==15)+202*(n==12)+128*(n==16)+93*(n==11)+60*(n==18)+56*(n==19)+48*(n==17)+33*(n==10)+3*(n==9)-7*(n==8)-10*(n==6)-13*(n==7)-14*(n==5)-19*(n==4)-23*(n==3)-25*(n==2)-26*(n==1)-27*(n==0)+28
 
-lpb $0
-  sub $0,1
-  mov $2,$1
-  add $2,7
-  add $1,1
-  seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $1,$2
-  sub $1,$2
-  sub $2,$1
-  mov $1,$2
-  sub $1,19
-lpe
-mov $0,$1
-add $0,1
+mov $1,$0
+equ $1,0
+mul $1,-27
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,-26
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,-25
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-23
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,-19
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,-14
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,-10
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,-13
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,-7
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,33
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,93
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,202
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,230
+add $2,$1
+mov $1,$0
+equ $1,14
+mul $1,218
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,206
+add $2,$1
+mov $1,$0
+equ $1,16
+mul $1,128
+add $2,$1
+mov $1,$0
+equ $1,17
+mul $1,48
+add $2,$1
+mov $1,$0
+equ $1,18
+mul $1,60
+add $2,$1
+mov $1,$0
+equ $1,19
+mul $1,56
+add $2,$1
+add $2,28
+mov $0,$2

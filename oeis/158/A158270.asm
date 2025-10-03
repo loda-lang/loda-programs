@@ -1,21 +1,18 @@
 ; A158270: Single-digit numbers in A061049.
-; Submitted by loader3229
+; Submitted by Ralfy
 ; 0,9,5,3,1,3,3,5,7,9
-; Formula: a(n) = (truncate(11^(n-2))+1)*(2*max(n-5,0)-4*truncate(bitxor(n-1,1)/4)+bitxor(n-1,1))-10*truncate(((truncate(11^(n-2))+1)*(2*max(n-5,0)-4*truncate(bitxor(n-1,1)/4)+bitxor(n-1,1))+9)/10)+9
+; Formula: a(n) = truncate((2*max(n-1,7))/(-n+max(n-1,7)+3))*(-n+max(n-1,7)+3)-10*truncate((truncate((2*max(n-1,7))/(-n+max(n-1,7)+3))*(-n+max(n-1,7)+3)+1)/10)+1
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-bxo $1,1
-mod $1,4
-sub $0,1
-mov $2,11
-pow $2,$0
-add $2,1
-trn $0,3
+mov $2,$0
+max $0,7
+sub $2,$0
+sub $1,$2
+add $1,2
 mul $0,2
-add $0,$1
-mul $0,$2
-add $0,9
+div $0,$1
+mul $0,$1
+add $0,1
 mod $0,10

@@ -1,19 +1,20 @@
 ; A098107: Sum of all matrix elements M(i,j) = n!*(i/j), (i,j = 1..n).
-; Submitted by ckrause
+; Submitted by BrandyNOW
 ; 1,9,66,500,4110,37044,365904,3945024,46195920,584575200,7955893440,115942544640,1802051072640,29763892972800,520699560192000,9619862405529600,187181055358617600,3826464958007193600
+; Formula: a(n) = binomial(n+1,2)*c(n), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*c(n-1)+b(n-1), c(2) = 3, c(1) = 1, c(0) = 0
 
 #offset 1
 
 mov $1,$0
-add $0,1
-sub $2,$0
-sub $0,1
+add $1,1
+mov $2,1
 lpb $0
-  mul $3,$0
-  sub $3,$2
-  mul $2,$0
   sub $0,1
+  add $3,1
+  mul $4,$3
+  add $4,$2
+  mul $2,$3
 lpe
-mov $0,$3
+bin $1,2
+mov $0,$4
 mul $0,$1
-div $0,2

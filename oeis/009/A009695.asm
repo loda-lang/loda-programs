@@ -1,16 +1,14 @@
 ; A009695: Expansion of tan(tan(x))*cos(x) (odd powers only).
-; Submitted by iBezanilla
+; Submitted by Just Jake
 ; 1,1,37,1517,108393,11820345,1828543693,380880450277,102776857839441,34874008165786609,14532999645144493557,7296638106447614270813,4344082656476890774001593,3025958669024832261385239593
+; Formula: a(n) = A009821(2*n-1)*(-1)^(n-1)
 
 #offset 1
 
-mov $3,$0
-lpb $0
-  sub $0,1
-  mov $1,$2
-  add $1,$3
-  seq $1,9821 ; Expansion of tanh(tanh(x))*exp(x).
-  gcd $1,$0
-  add $2,1
-lpe
-mov $0,$1
+sub $0,1
+mov $1,-1
+pow $1,$0
+mul $0,2
+add $0,1
+seq $0,9821 ; Expansion of tanh(tanh(x))*exp(x).
+mul $0,$1

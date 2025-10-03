@@ -1,25 +1,33 @@
 ; A040630: Continued fraction for sqrt(656).
-; Submitted by CFJH
+; Submitted by loader3229
 ; 25,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1,50,1,1,1,1,2,1,1,1,1
 
-mov $1,$0
-sub $1,1
-mod $1,2
-sub $1,1
-gcd $1,4
-mul $1,3
-add $1,73
-div $1,7
-add $1,1
-pow $1,2
-sub $1,119
-mov $3,$0
-lpb $3
-  div $3,5
-  add $2,$3
-  mov $3,5
-  mul $3,$2
-  sub $4,1
+mov $2,25
+mov $3,1
+mov $4,1
+mov $5,1
+mov $6,1
+mov $7,2
+mov $8,1
+mov $9,1
+mov $10,1
+mov $11,1
+mov $12,50
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$1
 lpe
-mov $0,$4
-gcd $0,$1
+mov $0,$2

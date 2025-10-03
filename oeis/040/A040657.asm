@@ -1,33 +1,29 @@
 ; A040657: Continued fraction for sqrt(684).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 26,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6,52,6,1,1,12,1,1,6
 
-mul $0,3
-mov $3,$0
-mod $3,8
-mov $4,8
-sub $4,$3
-min $3,$4
-mod $3,4
-mov $5,$0
-mov $6,10
-gcd $0,8
-lpb $5
-  mov $5,3
-  add $0,6
-  mov $6,7
+mov $2,26
+mov $3,6
+mov $4,1
+mov $5,1
+mov $6,12
+mov $7,1
+mov $8,1
+mov $9,6
+mov $10,52
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$6
-trn $0,63
-add $0,1
-add $0,$3
-div $0,2
-mov $2,$0
-div $0,8
-add $0,$2
-gcd $1,$0
-mul $1,2
-add $1,2
-div $1,5
-mul $1,4
-add $0,$1
+mov $0,$2

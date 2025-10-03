@@ -5,15 +5,18 @@
 mul $0,2
 add $0,1
 lpb $0
+  mov $3,0
   mov $2,$0
   lpb $2
-    mov $0,1
-    mov $1,$2
-    trn $1,1
-    seq $1,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
-    trn $2,7
-    add $3,$1
+    mov $4,$2
+    trn $4,1
+    seq $4,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
+    mov $2,0
+    add $3,$4
   lpe
+  mul $3,2
   trn $0,7
+  add $1,$3
 lpe
-mov $0,$3
+mov $0,$1
+div $0,2

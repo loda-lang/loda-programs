@@ -1,7 +1,34 @@
 ; A271703: Triangle read by rows: the unsigned Lah numbers T(n, k) = binomial(n-1, k-1)*n!/k! if n > 0 and k > 0, T(n, 0) = 0^n and otherwise 0, for n >= 0 and 0 <= k <= n.
-; Submitted by Jason Jung
+; Submitted by Science United
 ; 1,0,1,0,2,1,0,6,6,1,0,24,36,12,1,0,120,240,120,20,1,0,720,1800,1200,300,30,1,0,5040,15120,12600,4200,630,42,1,0,40320,141120,141120,58800,11760,1176,56,1,0,362880,1451520,1693440,846720,211680,28224,2016,72,1,0,3628800,16329600,21772800,12700800,3810240,635040,60480,3240,90,1,0,39916800,199584000,299376000,199584000,69854400,13970880,1663200,118800,4950,110,1,0,479001600
-; Formula: a(n) = gcd(A111596(n),A111596(n))
 
-seq $0,111596 ; The matrix inverse of the unsigned Lah numbers A271703.
-gcd $0,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $5,$2
+  add $5,1
+  mov $4,$5
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $1,$4
+  add $1,1
+  bin $1,2
+  add $2,1
+  sub $5,$1
+  sub $5,1
+  mov $1,$4
+  bin $1,$5
+  mov $3,$4
+  mul $3,-1
+  sub $4,$5
+  mov $5,$4
+  pow $4,0
+  add $4,$3
+  fac $4,$5
+  mul $1,$4
+  mov $5,$1
+  gcd $5,$5
+lpe
+mov $0,$5
