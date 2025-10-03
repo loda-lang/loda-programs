@@ -1,9 +1,8 @@
 ; A043545: (Maximal base-2 digit of n) - (minimal base-2 digit of n).
-; Submitted by fzs600
+; Submitted by loader3229
 ; 0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (sumdigits(n+1,2)-1)!=0
+; Formula: a(n) = sumdigits(n+1,2)!=1
 
 add $0,1
 dgs $0,2
-sub $0,1
-neq $0,0
+neq $0,1

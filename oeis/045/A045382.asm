@@ -1,5 +1,5 @@
 ; A045382: Primes congruent to {2, 7} mod 8.
-; Submitted by ckrause
+; Submitted by Science United
 ; 2,7,23,31,47,71,79,103,127,151,167,191,199,223,239,263,271,311,359,367,383,431,439,463,479,487,503,599,607,631,647,719,727,743,751,823,839,863,887,911,919,967,983,991,1031,1039,1063,1087,1103,1151,1223,1231,1279,1303,1319,1327,1367,1399,1423,1439,1447,1471,1487,1511,1543,1559,1567,1583,1607,1663,1759,1783,1823,1831,1847,1871,1879,1951,1999,2039
 
 #offset 1
@@ -11,7 +11,7 @@ pow $3,5
 lpb $3
   mov $1,$2
   add $1,1
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
   add $2,8
   sub $3,$0

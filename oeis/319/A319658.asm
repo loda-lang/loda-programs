@@ -1,20 +1,15 @@
 ; A319658: a(n) is the minimal number of successive ON cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
+; Submitted by Science United
 ; 1,3,1,2,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-pow $2,4
-mul $2,2
-lpb $0
-  sub $0,1
-  dif $0,3
-  mul $2,4086
-  mov $1,$2
-  div $2,8
-  mod $2,8
-lpe
-div $1,4086
-add $1,1
+mul $0,2
+bin $0,2
+add $0,1
+dgs $0,3
+mov $1,4
+lex $1,$0
 mov $0,$1
+add $0,1

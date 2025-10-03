@@ -1,35 +1,33 @@
 ; A156592: Product p*q of two primes with q = 2*p + 1.
-; Submitted by yoyo_rkn
+; Submitted by Science United
 ; 10,21,55,253,1081,1711,3403,5671,13861,15931,25651,34453,60031,64261,73153,108811,114481,126253,158203,171991,258121,351541,371953,392941,482653,518671,703891,822403,853471,869221,933661,1034641,1104841,1159003,1309771,1660753,1817371,2053351,2077741,2126953,2201851,2434321,2992681,3022111,3324331,3971971,4142881,4212253,4388203,4495501,4567753,4862521,5013361,5128003,6008311,6561253,7138531,7229503,7459453,7787431,8026021,8317081,8514001,8563591,9067411,9169903,10335331,10944181,11056753
 
 #offset 1
 
-mov $2,$0
-mov $3,0
-mov $5,0
-mov $6,0
-sub $0,1
-add $2,7
-pow $2,4
-lpb $2
-  mov $1,$6
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $3,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mov $1,$5
-  mul $2,$4
-  sub $2,17
-  mov $5,1
-  add $6,$1
+mov $1,$0
+add $1,2
+mov $6,$1
+sub $1,1
+pow $6,2
+lpb $6
+  sub $6,1
+  mov $4,$5
+  add $4,1
+  seq $4,40 ; The prime numbers.
+  sub $4,1
+  add $5,1
+  mov $3,$4
+  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $4,1
+  max $4,1
+  equ $4,1
+  sub $1,$4
+  mov $2,$1
+  max $2,0
+  equ $2,$1
+  add $3,$4
+  mul $6,$2
 lpe
-mov $0,$6
-mul $0,2
-add $0,3
-bin $0,2
+mov $1,$3
+bin $1,2
+mov $0,$1

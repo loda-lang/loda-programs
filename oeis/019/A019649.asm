@@ -11,7 +11,7 @@ lpb $8
   max $7,$9
   div $7,$8
   sub $8,1
-  add $9,2
+  add $9,1
   add $9,$10
   mul $10,2
   add $10,$7

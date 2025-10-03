@@ -1,16 +1,15 @@
 ; A099984: Bisection of A007947.
-; Submitted by MichaelLang
+; Submitted by Science United
 ; 1,3,5,7,3,11,13,15,17,19,21,23,5,3,29,31,33,35,37,39,41,43,15,47,7,51,53,55,57,59,61,21,65,67,69,71,73,15,77,79,3,83,85,87,89,91,93,95,97,33,101,103,105,107,109,111,113,115,39,119,11,123,5,127,129,131,133,15,137,139,141,143,145,21,149,151,51,155,157,159
-; Formula: a(n) = truncate((2*A007947(2*n-2)+200)/2)-100
 
 #offset 1
 
 sub $0,1
 mul $0,2
-seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-mov $1,200
-add $1,$0
-add $1,$0
-mov $0,$1
-div $0,2
-sub $0,100
+lpb $0
+  mov $1,$0
+  add $1,1
+  seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  div $0,$1
+lpe
+add $0,1

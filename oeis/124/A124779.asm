@@ -1,11 +1,22 @@
 ; A124779: a(n) = gcd(A(n), A(n+2))/gcd(d(n), d(n+2)) where A(n) = Sum_{k=0..n} n!/k! and d(n) = gcd(A(n), n!).
-; Submitted by Joe
+; Submitted by loader3229
 ; 1,2,5,1,1,1,1,1,1,1,13,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,37,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = truncate(A124780(n)/gcd(n!,A124780(n)))
+; Formula: a(n) = (n==1)+36*(n==34)+12*(n==10)+4*(n==2)+1
 
 mov $1,$0
-seq $1,124780 ; a(n) = gcd(A(n), A(n+2)) where A(n) = A000522(n) = Sum_{k=0..n} n!/k!.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
-div $1,$0
-mov $0,$1
+equ $1,1
+mov $2,$1
+mov $1,$0
+equ $1,2
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,34
+mul $1,36
+add $2,$1
+add $2,1
+mov $0,$2

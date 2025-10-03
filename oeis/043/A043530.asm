@@ -1,17 +1,23 @@
 ; A043530: Number of distinct base-3 digits of n.
-; Submitted by Pokihead
+; Submitted by loader3229
 ; 1,1,2,1,2,2,2,1,2,2,3,2,1,2,3,2,2,2,3,2,3,2,2,2,2,1,2,2,3,2,2,3,3,3,3,2,2,3,2,1,2,3,2,2,3,3,3,3,2,2,3,2,2,2,3,2,3,3,3,2,3,2,3,3,3,3,2,2,3,2,2,2,3,2,3,2,2,2,2,1
 
 #offset 1
 
-mov $20,$0
-mov $22,3
+mov $4,$0
 mov $0,0
-lpb $20
-  mov $21,$20
-  mod $21,$22
-  div $20,$22
-  bor $$21,1
+lpb $4
+  mov $3,$4
+  mod $3,3
+  mov $2,$3
+  equ $2,0
+  div $4,3
+  bor $0,$2
+  mov $2,$3
+  equ $2,1
+  bor $1,$2
+  equ $3,2
+  bor $5,$3
 lpe
 add $0,$1
-add $0,$2
+add $0,$5
