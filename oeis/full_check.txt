@@ -6,6 +6,7 @@ A000161: Number of partitions of n into 2 squares.
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 A000480: a(n) = floor(cos(n)).
+A000493: a(n) = floor(sin(n)).
 A000572: A Beatty sequence: [ n(e+1) ].
 A000720: pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 A000865: Numbers beginning with letter 'o' in English.
