@@ -36,6 +36,9 @@ A004924: a(n) = floor(n*phi^9), where phi is the golden ratio, A001622.
 A004926: a(n) = floor(n*phi^11), where phi is the golden ratio, A001622.
 A004927: a(n) = floor(n*phi^12), where phi is the golden ratio, A001622.
 A004930: a(n) = floor(n*phi^15), where phi is the golden ratio, A001622.
+A004931: a(n) = floor(n*phi^16), where phi is the golden ratio, A001622.
+A004932: a(n) = floor(n*phi^17), where phi is the golden ratio, A001622.
+A004933: a(n) = floor(n*phi^18), where phi is the golden ratio, A001622.
 A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
 A005097: (Odd primes - 1)/2.
 A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
