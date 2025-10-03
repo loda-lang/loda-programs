@@ -5,6 +5,7 @@ A000040: The prime numbers.
 A000161: Number of partitions of n into 2 squares.
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+A000480: a(n) = floor(cos(n)).
 A000572: A Beatty sequence: [ n(e+1) ].
 A000720: pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 A000865: Numbers beginning with letter 'o' in English.
@@ -55,6 +56,9 @@ A004641: Fixed under 0 -> 10, 1 -> 100.
 A004921: a(n) = floor(n*phi^6), phi = golden ratio, A001622.
 A004928: a(n) = floor(n*phi^13), where phi is the golden ratio, A001622.
 A004929: a(n) = floor(n*phi^14), where phi is the golden ratio, A001622.
+A004931: a(n) = floor(n*phi^16), where phi is the golden ratio, A001622.
+A004932: a(n) = floor(n*phi^17), where phi is the golden ratio, A001622.
+A004933: a(n) = floor(n*phi^18), where phi is the golden ratio, A001622.
 A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
 A004939: a(n) = round(n*phi^4), where phi is the golden ratio, A001622.
@@ -89,9 +93,12 @@ A010060: Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 a
 A010816: Expansion of Product_{k>=1} (1 - x^k)^3.
 A010846: Number of numbers <= n whose set of prime factors is a subset of the set of prime factors of n.
 A011371: a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
+A014383: Inverse of 374th cyclotomic polynomial.
 A014587: Nim function for Take-a-Factorial-Game (a subtraction game).
 A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 A014963: Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
+A015582: Inverse of 1573rd cyclotomic polynomial.
+A015760: Inverse of 1751st cyclotomic polynomial.
 A015910: a(n) = 2^n mod n.
 A019446: a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
 A019554: Smallest number whose square is divisible by n.
@@ -111,6 +118,8 @@ A022853: a(n) = integer nearest n*Pi.
 A023514: a(n) = sum of exponents in prime-power factorization of prime(n) + 1.
 A023689: Numbers with exactly 7 ones in binary expansion.
 A023690: Numbers with exactly 8 ones in binary expansion.
+A023805: Xenodromes: all digits in base 11 are different.
+A023806: Xenodromes: all digits in base 12 are different.
 A024698: a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
 A024702: a(n) = (prime(n)^2 - 1)/24.
 A024707: Positions of multiples of 5 in A024702.
@@ -163,6 +172,7 @@ A036583: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036585: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036987: Fredholm-Rueppel sequence.
 A037022: Triangle in which row n has the first n digits of sqrt(n) (truncated).
+A037087: Beatty sequence for e^(1/e).
 A037126: Triangle T(n,k) = prime(k) for k = 1..n.
 A037178: Longest cycle when squaring modulo n-th prime.
 A037813: Number of i such that d(i)<=d(i-1), where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.
@@ -170,6 +180,7 @@ A038451: Sums of 9 distinct powers of 10.
 A038452: Sums of 10 distinct powers of 10.
 A038461: Sums of 10 distinct powers of 2.
 A038462: Sums of 11 distinct powers of 2.
+A038565: Number of times digits are repeated in A038564.
 A038573: a(n) = 2^A000120(n) - 1.
 A038609: Numbers that are the sum of 2 different primes.
 A039007: Numbers whose base-5 representation has the same number of 0's and 1's.
@@ -186,6 +197,9 @@ A042987: Primes congruent to {2, 3, 5, 7} mod 8.
 A042999: Primes congruent to {2, 3, 5} (mod 8).
 A043529: Number of distinct base-2 digits of n.
 A043545: (Maximal base-2 digit of n) - (minimal base-2 digit of n).
+A044241: Numbers n such that string 6,6 occurs in the base 8 representation of n but not of n-1.
+A044939: Number of runs of even length in base-8 representation of n.
+A044941: Number of runs of even length in base-10 representation of n.
 A045252: Numbers whose base-5 expansion contains exactly one 1 and one 4.
 A045312: Primes congruent to {2, 3, 5, 6} (mod 7).
 A045329: Primes congruent to {0, 2, 3, 6} (mod 7).
