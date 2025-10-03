@@ -1,0 +1,74 @@
+; A019304: "Pascal sweep" for k=3: draw a horizontal line through the 1 at C(k,0) in Pascal's triangle; rotate this line and record the sum of the numbers on it (excluding the initial 1).
+; Submitted by loader3229
+; 1,4,1,12,1,6,1,18,1,8,1,25,1,10,1,33,1,12,1,42,1,14,1,52,1,16,1,63,1,18,1,75,1,20,1,88,1,22,1,102,1,24,1,117,1,26,1,133,1,28,1,150,1,30,1,168,1,32,1,187,1,34,1,207,1,36,1,228,1,38,1,250,1,40,1,273,1,42,1,297
+
+mov $2,1
+mov $3,4
+mov $4,1
+mov $5,12
+mov $6,1
+mov $7,6
+mov $8,1
+mov $9,18
+lpb $0
+  sub $0,1
+  mul $1,138
+  sub $1,378
+  mul $2,$1
+  mov $10,$2
+  add $1,378
+  div $1,138
+  mul $1,-2
+  sub $1,100
+  mov $2,$3
+  mul $3,$1
+  add $10,$3
+  add $1,100
+  div $1,-2
+  mul $1,-181
+  sub $1,3783
+  mov $3,$4
+  mul $4,$1
+  add $10,$4
+  add $1,3783
+  div $1,-181
+  mul $1,-6
+  sub $1,184
+  mov $4,$5
+  mul $5,$1
+  add $10,$5
+  add $1,184
+  div $1,-6
+  mul $1,-138
+  add $1,3862
+  mov $5,$6
+  mul $6,$1
+  add $10,$6
+  sub $1,3862
+  div $1,-138
+  mul $1,2
+  add $1,84
+  mov $6,$7
+  mul $7,$1
+  add $10,$7
+  sub $1,84
+  div $1,2
+  mul $1,181
+  add $1,2335
+  mov $7,$8
+  mul $8,$1
+  add $10,$8
+  sub $1,2335
+  div $1,181
+  mul $1,6
+  add $1,136
+  mov $8,$9
+  mul $9,$1
+  add $10,$9
+  sub $1,136
+  div $1,6
+  add $1,1
+  mov $9,$10
+  div $9,2380
+lpe
+mov $0,$2
