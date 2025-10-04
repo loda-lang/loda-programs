@@ -4,9 +4,7 @@
 
 #offset 1
 
-mov $3,$0
-sub $0,1
-max $2,$3
+max $2,$0
 mov $5,-1
 pow $5,$2
 mov $6,$2
@@ -28,12 +26,12 @@ lpb $8
   mov $7,$4
   mov $9,$8
   mul $9,$4
-  add $10,$9
+  add $3,$9
 lpe
 min $6,1
 mul $6,$7
-sub $10,$6
-sub $6,$10
+sub $3,$6
+sub $6,$3
 mov $4,$6
 mul $4,$5
 mov $0,$4

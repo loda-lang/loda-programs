@@ -7,7 +7,6 @@
 
 mov $1,$0
 seq $1,137657 ; Primes that are simultaneously of the forms 24i+7 and 7j+24.
-sub $0,1
 mov $0,$1
 sub $0,31
 div $0,7
