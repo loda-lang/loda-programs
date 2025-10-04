@@ -1,65 +1,32 @@
 ; A258277: Expansion of chi(-q) * phi(-q^3) * psi(q^3) in powers of q where chi(), phi(), psi() are Ramanujan theta functions.
-; Submitted by vaughan
+; Submitted by DukeBox
 ; 1,-1,0,-2,2,-1,0,0,3,0,0,-2,2,-2,0,0,1,-2,0,-2,2,-1,0,0,2,0,0,-2,4,0,0,0,2,-3,0,-2,2,0,0,0,1,0,0,-4,0,-2,0,0,4,-2,0,0,2,-2,0,0,3,0,0,-2,2,0,0,0,2,-1,0,-2,4,-2,0,0,0,0,0,-2,2,-2,0,0
 
 mul $0,3
 mov $2,-1
 pow $2,$0
-mov $1,$0
-add $1,1
-mul $1,4
-mov $3,$1
-sub $1,1
-mov $4,$1
-mov $6,$1
-add $6,1
-mov $15,$6
-lex $15,2
-mov $5,2
-pow $5,$15
-div $6,$5
-div $6,2
-mov $7,-1
-pow $7,$6
-mul $7,2
-mov $8,-2
-bin $8,$6
-div $8,$7
-mov $11,3
-sub $6,$8
-mul $6,2
-add $6,3
-lpb $6
-  sub $6,$11
-  mov $10,$6
-  max $10,0
-  mul $10,4
-  mov $14,$10
-  nrt $14,2
-  add $10,2
-  mov $13,$10
-  nrt $13,2
-  mov $10,$13
-  add $10,$14
-  mod $10,2
-  mov $11,2
-  add $11,$12
-  add $9,$10
-  add $12,2
+mov $7,3
+add $0,1
+mov $5,$0
+dir $5,2
+add $5,2
+lpb $5
+  sub $5,$7
+  mov $1,$5
+  max $1,0
+  mov $4,$1
+  nrt $1,2
+  pow $1,2
+  equ $1,$4
+  equ $4,0
+  mul $1,2
+  sub $1,$4
+  add $3,$1
+  add $6,4
+  mov $7,2
+  mul $7,$6
 lpe
-mov $6,$9
-mul $6,$7
-div $6,2
-max $6,0
-mul $6,2
-mod $1,4
-mul $1,$6
-sub $6,$1
-mov $1,$6
-div $1,2
-mul $1,-2
-sub $1,$4
-add $1,$3
-mul $1,$2
-div $1,4
-mov $0,$1
+mov $0,$3
+mul $0,4
+mul $0,$2
+div $0,4

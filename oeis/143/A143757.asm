@@ -1,18 +1,29 @@
 ; A143757: Aliquot sequence starting at 82.
-; Submitted by Aurum
+; Submitted by loader3229
 ; 82,44,40,50,43,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((2*A000203(a(n-1))-2*a(n-1)+1)/2), a(0) = 82
+; Formula: a(n) = (n==5)+82*(n==0)+50*(n==3)+44*(n==1)+43*(n==4)+40*(n==2)
 
 mov $1,$0
-mov $0,82
-lpb $1
-  sub $1,1
-  sub $0,1
-  mov $2,$0
-  add $0,1
-  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $0,$2
-  mul $0,2
-  sub $0,1
-  div $0,2
-lpe
+equ $1,0
+mul $1,82
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,44
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,40
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,50
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,43
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $0,$2

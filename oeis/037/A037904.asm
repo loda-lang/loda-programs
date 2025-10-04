@@ -1,18 +1,16 @@
 ; A037904: Greatest digit of n - least digit of n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,0,1,0,1,2,3,4,5,6,7,8,2,1,0,1,2,3,4,5,6,7,3,2,1,0,1,2,3,4,5,6,4,3,2,1,0,1,2,3,4,5,5,4,3,2,1,0,1,2,3,4,6,5,4,3,2,1,0,1,2,3,7,6,5,4,3,2,1,0,1,2,8
 
 #offset 1
 
-mov $3,-12
+mov $3,9
 lpb $0
   mov $2,$0
   mod $2,10
+  min $3,$2
   div $0,10
-  sub $1,$2
-  max $3,$1
-  max $4,$2
-  add $1,$2
+  max $1,$2
 lpe
-add $3,$4
-mov $0,$3
+mov $0,$1
+sub $0,$3

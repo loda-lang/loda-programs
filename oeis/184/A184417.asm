@@ -1,46 +1,19 @@
 ; A184417: p^2 + (p+2)^2 - 1 where (p,p+2) is the n-th twin prime pair.
-; Submitted by iBezanilla
+; Submitted by mweholt
 ; 33,73,289,649,1801,3529,7201,10369,20809,23329,38089,45001,64801,73729,78409,103969,115201,145801,159049,194689,242209,352801,373249,426889,544969,649801,720001,763849,824329,871201,1312201,1351369,1371169,1472329,1555849,2080801,2130049,2205001,2255689,2384929,2654209
+; Formula: a(n) = 2*truncate((8*truncate(A171688(max(2*n-3,0)+1)/2)^2-32)/2)+33
 
 #offset 1
 
 sub $0,1
-mov $7,$0
-mul $7,2
-trn $7,1
-mov $6,$7
-div $6,2
-sub $7,1
-gcd $7,2
-max $4,$6
-mov $2,$4
-add $4,1
-mov $5,$4
-pow $5,4
-lpb $5
-  add $8,1
-  mov $3,$9
-  mul $3,3
-  add $3,1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $3,2
-  add $9,$8
-  sub $2,$3
-  add $2,1
-  mov $8,$2
-  max $8,0
-  equ $8,$2
-  sub $2,$8
-  sub $5,$8
-lpe
-mov $6,$9
-div $6,2
-mul $6,3
-add $6,$7
-mov $1,$6
-mul $1,2
-add $1,2
-pow $1,2
-mul $1,2
-mov $0,$1
+mul $0,2
+trn $0,1
 add $0,1
+seq $0,171688 ; Twin primes > 3.
+div $0,2
+pow $0,2
+mul $0,8
+sub $0,32
+div $0,2
+mul $0,2
+add $0,33
