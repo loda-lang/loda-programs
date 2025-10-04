@@ -887,3 +887,4 @@ A374130: a(n) = 1 if bitwise-XOR of the exponents of primes in the prime factori
 A376573: Numbers that are not squares of triangular numbers. Complement of A000537.
 A376928: The largest noncomposite number k such that n is divisible by all the primes that do not exceed k.
 A382767: Smallest number k that is powerful but not a prime power that is also coprime to n.
+A383762: The number of unitary divisors of n that are exponentially squarefree numbers.
