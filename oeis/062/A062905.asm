@@ -1,20 +1,18 @@
 ; A062905: Numbers k such that k and its reversal are both multiples of 15.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,510,525,540,555,570,585,5010,5025,5040,5055,5070,5085,5100,5115,5130,5145,5160,5175,5190,5205,5220,5235,5250,5265,5280,5295,5310,5325,5340,5355,5370,5385,5400,5415,5430,5445,5460,5475,5490,5505,5520,5535
+; Formula: a(n) = 4410*((n-1)>=7)+495*((n-1)>=1)+15*n-15
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-mov $3,1
-lpb $0
-  div $0,7
-  nrt $0,8
-  add $3,10
-  mov $2,3
-  mul $2,$3
-  add $1,$2
-  mul $3,8
-lpe
-mov $0,$1
+geq $1,1
+mul $1,495
+mov $2,$1
+mov $1,$0
+geq $1,7
+mul $1,4410
+add $2,$1
 mul $0,15
+add $0,$2

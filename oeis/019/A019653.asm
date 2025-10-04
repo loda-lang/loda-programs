@@ -1,5 +1,5 @@
 ; A019653: Decimal expansion of sqrt(Pi*e)/9.
-; Submitted by Science United
+; Submitted by crashtech
 ; 3,2,4,6,9,8,0,4,0,5,9,1,3,6,4,2,0,7,1,7,1,2,9,1,4,5,2,9,0,0,8,5,3,5,9,0,5,9,9,7,6,7,5,0,5,8,4,9,6,1,8,5,3,9,8,9,0,8,6,0,0,0,1,2,7,4,6,6,1,7,9,6,9,2,9,2,1,7,4,3
 
 add $0,2
@@ -16,18 +16,19 @@ lpb $8
   mul $10,2
   add $10,$7
 lpe
+mov $2,1
+div $0,2
 mov $1,10
 pow $1,$0
-mov $4,$1
+pow $1,2
 mul $9,9
 mul $10,2
-pow $1,2
-mov $2,1
 mov $0,$1
 lpb $0
   add $2,$3
   mul $3,-1
   add $3,$2
+  mov $4,2
   mov $5,$0
   sub $5,2
   div $5,$3
@@ -36,6 +37,7 @@ lpb $0
   add $6,$5
 lpe
 mul $4,$9
+mul $10,2
 mov $0,$6
 mul $0,$10
 div $0,$4

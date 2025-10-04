@@ -1,14 +1,33 @@
 ; A242765: a(1) = 2; for n>1, a(n) = product of digits of (a(n-1)^2).
-; Submitted by Xenon
+; Submitted by loader3229
 ; 2,4,6,18,24,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = b(n-1), b(n) = A053667(b(n-1)), b(0) = 2
+; Formula: a(n) = 210*((n-1)==5)+24*((n-1)==4)+18*((n-1)==3)+6*((n-1)==2)+4*((n-1)==1)+2*((n-1)==0)
 
 #offset 1
 
-mov $1,2
 sub $0,1
-lpb $0
-  sub $0,1
-  seq $1,53667 ; Product of digits of n^2.
-lpe
-mov $0,$1
+mov $1,$0
+equ $1,0
+mul $1,2
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,18
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,24
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,210
+add $2,$1
+mov $0,$2

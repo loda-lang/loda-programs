@@ -1,21 +1,15 @@
 ; A204577: Sqrt(floor[A204575(n)/2]), written in binary.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,0,10,1100,1000110,110011000,100101001010,11011000100100,10011101110001110,1110010111100110000,1010011101111110010010,111101000000111000111100,101100011100111010111010110,100000011000101011010011001000,10111100110000011100011011011010,10001001100001001111111010001010100,1100100001100001011011111001100011110,1001000111111100111010111011111001100000,110101001011100001010110001000001100100010,100110101111101001011001001110101010001101100,11100001110100011100001100100110111011101100110
 
 #offset 1
 
-sub $0,1
-lpb $0
-  sub $0,3
-  sub $1,1
-  sub $0,$1
-  add $1,$0
-  mov $2,$0
-  max $2,0
-  mul $2,4
-  add $2,3
-  seq $2,143607 ; Numerators of principal and intermediate convergents to 2^(1/2).
-  seq $2,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+sub $0,2
+mov $1,1
+lpb $1
+  add $0,1
+  mov $1,$0
 lpe
-mov $0,$2
-div $0,10
+seq $0,1109 ; a(n)^2 is a triangular number: a(n) = 6*a(n-1) - a(n-2) with a(0)=0, a(1)=1.
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mul $0,10

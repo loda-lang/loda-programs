@@ -1,16 +1,25 @@
 ; A143645: Aliquot sequence starting at 24.
-; Submitted by Athlici
+; Submitted by loader3229
 ; 24,36,55,17,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -a(n-1)+A000203(a(n-1)), a(0) = 24
+; Formula: a(n) = (n==4)+55*(n==2)+36*(n==1)+24*(n==0)+17*(n==3)
 
-mov $2,$0
-mov $0,24
-lpb $2
-  sub $2,1
-  sub $0,1
-  mov $1,$0
-  add $0,1
-  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $0,1
-  sub $0,$1
-lpe
+mov $1,$0
+equ $1,0
+mul $1,24
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,36
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,55
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,17
+add $2,$1
+mov $1,$0
+equ $1,4
+add $2,$1
+mov $0,$2

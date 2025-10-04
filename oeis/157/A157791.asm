@@ -1,23 +1,110 @@
 ; A157791: Least number of lattice points on two adjacent sides from which every point of a square n X n lattice is visible.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+; Formula: a(n) = -((n-1)==24)-((n-1)==23)-((n-1)==22)-((n-1)==21)-((n-1)==20)-((n-1)==19)-((n-1)==18)-((n-1)==17)-((n-1)==16)-((n-1)==15)-((n-1)==14)-((n-1)==13)-((n-1)==12)-((n-1)==11)-((n-1)==10)-2*((n-1)==9)-2*((n-1)==8)-2*((n-1)==7)-2*((n-1)==6)-2*((n-1)==5)-2*((n-1)==4)-3*((n-1)==3)-3*((n-1)==2)-4*((n-1)==1)-4*((n-1)==0)+5
 
 #offset 1
 
 sub $0,1
-mov $1,1
-lpb $1
-  sub $1,1
-  trn $0,1
-  sub $0,$2
-  mov $2,2
-  mul $0,2
-  add $0,1
-  lpb $0
-    add $2,1
-    div $0,$2
-    mul $0,2
-  lpe
-lpe
+mov $1,$0
+equ $1,0
+mul $1,-4
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,-4
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,-3
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,-3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,-2
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,14
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,16
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,17
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,18
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,19
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,20
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,21
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,22
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,23
+mul $1,-1
+add $2,$1
+mov $1,$0
+equ $1,24
+mul $1,-1
+add $2,$1
+add $2,5
 mov $0,$2
-sub $0,2

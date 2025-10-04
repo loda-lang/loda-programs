@@ -1,22 +1,19 @@
 ; A035858: Coordination sequence for A_32 lattice.
-; Submitted by Jamie Morken(w4)
+; Submitted by KetamiNO [YouTube]
 ; 1,1056,279312,33020768,2216449224,96447982752,2962111270448,68139802316256,1226979622925364,17893889175680672,217162303201118352,2242202047912186080,20060152971318789560,157926267134053719840
 
 add $0,2
 lpb $0
   mov $2,$0
-  max $4,98
-  div $4,3
   sub $0,2
-  sub $2,3
-  add $2,$4
+  add $2,29
   bin $2,$0
-  mov $3,$4
+  mov $3,32
   bin $3,$1
   add $0,1
   add $1,1
   pow $3,2
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4

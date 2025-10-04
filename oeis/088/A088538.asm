@@ -10,14 +10,10 @@ mul $3,8
 sub $3,$0
 lpb $3
   max $3,1
-  sub $7,$4
-  add $5,$7
   max $6,$2
   div $6,$3
+  div $2,$1
   sub $3,1
-  add $4,$7
-  sub $4,$1
-  mul $7,2
   mul $1,2
   add $1,$6
   add $2,$1
@@ -32,7 +28,6 @@ mul $4,2
 mov $2,1
 sub $2,$5
 div $2,$4
-mul $2,2
 div $1,$2
 mov $0,$1
 mod $0,10

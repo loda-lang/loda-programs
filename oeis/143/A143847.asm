@@ -1,18 +1,41 @@
 ; A143847: Aliquot sequence starting at 96.
-; Submitted by shiva
+; Submitted by loader3229
 ; 96,156,236,184,176,196,203,37,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((2*A000203(a(n-1))-2*a(n-1)+1)/2), a(0) = 96
+; Formula: a(n) = (n==8)+236*(n==2)+203*(n==6)+196*(n==5)+184*(n==3)+176*(n==4)+156*(n==1)+96*(n==0)+37*(n==7)
 
 mov $1,$0
-mov $0,96
-lpb $1
-  sub $1,1
-  sub $0,1
-  mov $2,$0
-  add $0,1
-  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $0,$2
-  mul $0,2
-  sub $0,1
-  div $0,2
-lpe
+equ $1,0
+mul $1,96
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,156
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,236
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,184
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,176
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,196
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,203
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,37
+add $2,$1
+mov $1,$0
+equ $1,8
+add $2,$1
+mov $0,$2

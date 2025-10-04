@@ -4,15 +4,24 @@
 
 #offset 1
 
-mov $20,$0
-mov $22,4
+mov $5,$0
 mov $0,0
-lpb $20
-  mov $21,$20
-  mod $21,$22
-  div $20,$22
-  bor $$21,1
+lpb $5
+  mov $4,$5
+  mod $4,4
+  mov $3,$4
+  equ $3,0
+  div $5,4
+  bor $0,$3
+  mov $3,$4
+  equ $3,1
+  bor $1,$3
+  mov $3,$4
+  equ $3,2
+  bor $2,$3
+  equ $4,3
+  bor $6,$4
 lpe
 add $0,$1
 add $0,$2
-add $0,$3
+add $0,$6

@@ -1,16 +1,18 @@
 ; A007415: Expand sin x / exp x = x-x^2+x^3/3-x^5/30+... and invert nonzero coefficients.
-; Submitted by ckrause
+; Submitted by BrandyNOW
 ; 0,1,-1,3,0,-30,90,-630,0,22680,-113400,1247400,0,-97297200,681080400,-10216206000,0,1389404016000,-12504636144000,237588086736000,0,-49893498214560000,548828480360160000,-12623055048283680000,0,3786916514485104000000
+; Formula: a(n) = truncate(b(n)/gcd(-n,2)), b(n) = -n*b(n-1)+n*truncate((b(n-2)*(-n+1))/2), b(2) = -2, b(1) = 1, b(0) = 0
 
-mov $1,7
+mov $3,2
 lpb $0
-  mul $1,$0
-  dif $1,-2
-  mul $2,$0
-  mov $3,$2
   sub $0,1
-  add $2,$1
-  mov $1,$3
+  sub $1,1
+  div $3,2
+  mul $3,$1
+  mul $2,$1
+  sub $2,$3
+  add $3,$2
 lpe
+gcd $1,2
+div $2,$1
 mov $0,$2
-div $0,7

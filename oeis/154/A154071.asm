@@ -1,0 +1,62 @@
+; A154071: Number of planar triangular n X n X n nonnegative integer grids with mirror symmetry about one altitude with every similarly oriented 5 X 5 X 5 subtriangle summing to 8.
+; Submitted by loader3229
+; 990,3472,5217,7165,5966,5372,3621,1629,738,448,184,109,100,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87
+; Formula: a(n) = 7078*((n-5)==3)+5879*((n-5)==4)+5285*((n-5)==5)+5130*((n-5)==2)+3534*((n-5)==6)+3385*((n-5)==1)+1542*((n-5)==7)+903*((n-5)==0)+651*((n-5)==8)+361*((n-5)==9)+97*((n-5)==10)+22*((n-5)==11)+13*((n-5)==12)+87
+
+#offset 5
+
+sub $0,5
+mov $1,$0
+equ $1,0
+mul $1,903
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,3385
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,5130
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,7078
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,5879
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,5285
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,3534
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,1542
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,651
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,361
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,97
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,22
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,13
+add $2,$1
+add $2,87
+mov $0,$2

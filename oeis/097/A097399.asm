@@ -1,0 +1,56 @@
+; A097399: Maximum of the determinant over all permutations of the entries of a 3 X 3 matrix which are consecutive integers in the range (n-4,n+4).
+; Submitted by loader3229
+; 86,104,172,252,332,412,492,572,652,732,812,892,972,1053,1134,1215,1296,1377,1458,1539,1620,1701,1782,1863,1944,2025,2106,2187,2268,2349,2430,2511,2592,2673,2754,2835,2916,2997,3078,3159,3240,3321,3402,3483,3564
+; Formula: a(n) = 81*n-(n>=12)-(n>=11)-(n>=10)-(n>=9)-(n>=8)-(n>=7)-(n>=6)-(n>=5)-(n>=4)-(n>=3)-13*(n>=2)-63*(n>=1)+86
+
+mov $1,$0
+geq $1,1
+mul $1,-63
+mov $2,$1
+mov $1,$0
+geq $1,2
+mul $1,-13
+add $2,$1
+mov $1,$0
+geq $1,3
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,4
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,5
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,6
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,7
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,8
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,9
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,10
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,11
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,12
+mul $1,-1
+add $2,$1
+mul $0,81
+add $0,86
+add $0,$2

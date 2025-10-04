@@ -1,16 +1,19 @@
 ; A009206: Expansion of e.g.f.: exp(sin(x))*x.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 0,1,2,3,0,-15,-48,-21,448,1953,640,-32461,-152064,77649,4331264,18557595,-46686208,-894805183,-2948087808,21405607651,254321049600,421226202033,-10904188190720,-90171090228021,96102216892416,6418365899545825
 
+mov $2,$0
 mov $3,$0
-mov $1,$0
-lpb $1
-  mov $0,$3
-  sub $0,$1
-  mov $2,$0
-  add $2,$1
+add $3,1
+lpb $3
+  div $3,2
+  mul $3,2
+  sub $3,1
+  mov $0,$2
+  sub $0,$3
+  mov $1,$0
+  add $1,$3
   seq $0,2017 ; Expansion of e.g.f. exp(sin(x)).
-  sub $1,1
-  mul $2,$0
+  mul $1,$0
 lpe
-mov $0,$2
+mov $0,$1

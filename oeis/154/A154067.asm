@@ -1,0 +1,66 @@
+; A154067: Number of planar triangular n X n X n nonnegative integer grids with mirror symmetry about one altitude with every similarly oriented 4 X 4 X 4 subtriangle summing to 8.
+; Submitted by loader3229
+; 182,1408,988,2849,1206,2855,879,1266,284,262,114,119,51,61,51,61,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51
+; Formula: a(n) = 2804*((n-4)==5)+2798*((n-4)==3)+1357*((n-4)==1)+1215*((n-4)==7)+1155*((n-4)==4)+937*((n-4)==2)+828*((n-4)==6)+233*((n-4)==8)+211*((n-4)==9)+131*((n-4)==0)+68*((n-4)==11)+63*((n-4)==10)+10*((n-4)==15)+10*((n-4)==13)+51
+
+#offset 4
+
+sub $0,4
+mov $1,$0
+equ $1,0
+mul $1,131
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,1357
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,937
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,2798
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,1155
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,2804
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,828
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,1215
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,233
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,211
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,63
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,68
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,10
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,10
+add $2,$1
+add $2,51
+mov $0,$2

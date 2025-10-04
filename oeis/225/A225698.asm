@@ -1,9 +1,8 @@
 ; A225698: Denominators of mass formula for vacuum graphs for a phi^4 field theory.
 ; Submitted by Science United
 ; 1,8,384,3072,98304,2359296,113246208,100663296,19327352832,1391569403904,22265110462464,534362651099136,17099604835172352,136796838681378816,6566248256706183168,157589958160948396032,6723838214867131564032
-; Formula: a(n) = truncate(A190901(2*min(n,27))/gcd(A025036(min(n,27)),A190901(2*min(n,27))))
+; Formula: a(n) = truncate(A190901(2*min(n,16))/gcd(A025036(min(n,16)),A190901(2*min(n,16))))
 
-min $0,27
 mov $1,$0
 seq $1,25036 ; Number of partitions of { 1, 2, ..., 4n } into sets of size 4.
 mul $0,2
