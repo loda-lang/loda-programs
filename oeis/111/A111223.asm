@@ -1,34 +1,21 @@
 ; A111223: Numbers n such that 5*n + 2 is prime.
-; Submitted by ckrause
+; Submitted by Wood
 ; 0,1,3,7,9,13,19,21,25,27,31,33,39,45,51,55,61,63,67,69,73,79,91,93,97,109,111,115,117,121,123,129,135,145,151,157,159,165,171,175,177,181,187,189,193,195,199,217,219,223,237,243,247,255,259,261,265,273,285,289,297,313,319,321,325,327,331,333,339,349,355,357,369,373,375,381,397,399,403,405
 
 #offset 1
 
 sub $0,1
-mov $1,-4
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $5,0
-  mov $3,$1
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,3
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,1
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,10
-  sub $2,$0
+mov $2,6
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,10
+  sub $3,$0
 lpe
-mov $0,$1
+pow $2,$0
+mov $0,$2
 div $0,5

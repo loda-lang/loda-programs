@@ -1,5 +1,5 @@
 ; A016347: 180th cyclotomic polynomial.
-; Submitted by Simon Strandgaard
+; Submitted by KetamiNO [YouTube]
 ; 1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
 
 mov $1,$0
@@ -13,9 +13,14 @@ lpb $1
   sub $1,3
   sub $1,$5
   mov $4,$1
-  max $4,0
-  seq $4,14018 ; Inverse of 9th cyclotomic polynomial.
-  add $3,$4
+  mod $4,9
+  mov $7,$4
+  equ $7,0
+  mov $6,$7
+  mov $7,$4
+  equ $7,3
+  sub $6,$7
+  add $3,$6
   add $5,12
 lpe
 mov $1,$3

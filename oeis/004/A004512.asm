@@ -1,24 +1,22 @@
 ; A004512: Tersum n + 23.
-; Submitted by loader3229
+; Submitted by Science United
 ; 23,21,22,26,24,25,20,18,19,5,3,4,8,6,7,2,0,1,14,12,13,17,15,16,11,9,10,50,48,49,53,51,52,47,45,46,32,30,31,35,33,34,29,27,28,41,39,40,44,42,43,38,36,37,77,75,76,80,78,79,74,72,73,59,57,58,62,60
-; Formula: a(n) = 27*((floor(n/9)%3)==0)-9*((-3*truncate(truncate((27*((floor(n/9)%3)==0)+n-9)/3)/3)+truncate((27*((floor(n/9)%3)==0)+n-9)/3))==2)+binomial(gcd(3,27*((floor(n/9)%3)==0)-9*((-3*truncate(truncate((27*((floor(n/9)%3)==0)+n-9)/3)/3)+truncate((27*((floor(n/9)%3)==0)+n-9)/3))==2)+n-6),2)+n-7
+; Formula: a(n) = 27*((floor(n/9)%3)==0)-9*((floor((27*((floor(n/9)%3)==0)+n)/3)%3)==2)+binomial(gcd(3,27*((floor(n/9)%3)==0)-9*((floor((27*((floor(n/9)%3)==0)+n)/3)%3)==2)+n),2)+n-7
 
 mov $1,$0
 div $1,9
 mod $1,3
 equ $1,0
 mul $1,27
-sub $1,9
 add $0,$1
 mov $1,$0
 div $1,3
 mod $1,3
 equ $1,2
 mul $1,-9
-add $1,3
 add $0,$1
 mov $2,3
 gcd $2,$0
 bin $2,2
 add $0,$2
-sub $0,1
+sub $0,7

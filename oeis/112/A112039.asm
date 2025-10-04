@@ -1,18 +1,20 @@
 ; A112039: Let b(0)=1/2, b(n) = b(n-1) + Prime[n]/2; a(n)=b(2*n).
-; Submitted by UBT - wbiz
+; Submitted by Science United
 ; 3,9,21,39,65,99,141,191,251,320,396,482,581,686,797,926,1064,1214,1374,1544,1724,1916,2114,2331,2559,2795,3041,3301,3571,3850,4138,4447,4762,5096,5444,5800,6170,6551,6944,7349,7769,8201,8642,9095,9557,10030
-; Formula: a(n) = truncate((b(2*n+1)+c(2*n+1))/2), b(n) = A159477(b(n-1)+1), b(1) = 1, b(0) = 0, c(n) = b(n-1)+c(n-1), c(1) = 0, c(0) = 0
 
 #offset 1
 
 mul $0,2
-add $0,1
+sub $0,1
+mov $2,$0
 lpb $0
-  sub $0,1
-  add $2,$1
-  add $1,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $0,1
+  seq $0,60939 ; a(n) = (Sum of the first n primes) + n.
+  mov $1,$0
+  mov $0,0
 lpe
-add $1,$2
 mov $0,$1
+sub $0,$2
+sub $0,6
 div $0,2
+add $0,3
