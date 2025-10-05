@@ -1,0 +1,74 @@
+; A070937: Number of times maximal coefficient (A025591) appears in Product_{k<=n} (x^k + 1), i.e., number of times highest value appears in n-th row of A053632 or n-th column of A070936.
+; Submitted by loader3229
+; 1,2,4,1,5,6,4,5,1,4,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1
+
+mov $2,1
+mov $3,2
+mov $4,4
+mov $5,1
+mov $6,5
+mov $7,6
+mov $8,4
+mov $9,5
+lpb $0
+  sub $0,1
+  mul $1,9875
+  sub $1,88875
+  mul $2,$1
+  mov $10,$2
+  add $1,88875
+  div $1,9875
+  mul $1,-14996
+  add $1,119968
+  mov $2,$3
+  mul $3,$1
+  add $10,$3
+  sub $1,119968
+  div $1,-14996
+  mul $1,24638
+  sub $1,132966
+  mov $3,$4
+  mul $4,$1
+  add $10,$4
+  add $1,132966
+  div $1,24638
+  mul $1,-21588
+  add $1,99169
+  mov $4,$5
+  mul $5,$1
+  add $10,$5
+  sub $1,99169
+  div $1,-21588
+  mul $1,35004
+  sub $1,121456
+  mov $5,$6
+  mul $6,$1
+  add $10,$6
+  add $1,121456
+  div $1,35004
+  mul $1,-29883
+  add $1,107094
+  mov $6,$7
+  mul $7,$1
+  add $10,$7
+  sub $1,107094
+  div $1,-29883
+  mul $1,20241
+  sub $1,94096
+  mov $7,$8
+  mul $8,$1
+  add $10,$8
+  add $1,94096
+  div $1,20241
+  mul $1,-23291
+  add $1,127893
+  mov $8,$9
+  mul $9,$1
+  add $10,$9
+  sub $1,127893
+  div $1,-23291
+  add $1,1
+  mov $9,$10
+  div $9,16731
+lpe
+mov $0,$2

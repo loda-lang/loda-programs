@@ -1,0 +1,59 @@
+; A321015: Number of isohedral Voronoi parallelotopes in R^n.
+; Submitted by Science United
+; 1,2,2,4,3,6,4,7,4,6,3,10,3,7,6,9,3,10,3,10,7,6,3,15,5,6,6,11,3,14,3,11,6,6,8,16,3,6,6,15,3,15,3,10,10,6,3,19,6,10,6,10,3,14,7,16,6,6,3,22,3,6,11,13,7,14,3,10,6,15,3,23,3,6,10,10,8,14,3,19
+
+#offset 1
+
+mov $2,$0
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  gcd $1,$4
+  bin $1,$0
+  mov $6,$0
+  geq $6,6
+  mul $0,2
+  mov $5,$6
+  mov $6,$0
+  geq $6,8
+  add $5,$6
+  mov $6,$0
+  geq $6,9
+  add $5,$6
+  mov $6,$0
+  geq $6,10
+  add $5,$6
+  mov $6,$0
+  geq $6,11
+  add $5,$6
+  add $5,$0
+  mov $6,$0
+  mul $6,-1
+  add $5,$6
+  mov $6,$0
+  geq $6,18
+  mul $6,-1
+  mul $0,2
+  add $5,$6
+  mov $6,$0
+  geq $6,19
+  mul $6,-1
+  add $5,$6
+  mov $6,$0
+  geq $6,20
+  mul $6,-1
+  add $5,$6
+  mov $6,$0
+  geq $6,22
+  mul $6,-1
+  add $5,$6
+  mul $0,0
+  add $0,$5
+  add $0,1
+  mul $1,$0
+  add $3,$1
+lpe
+mov $0,$3

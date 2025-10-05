@@ -1,0 +1,77 @@
+; A079313: a(n) is taken to be the smallest positive integer not already present which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
+; Submitted by loader3229
+; 1,3,5,2,7,8,9,11,13,12,15,17,19,16,21,23,25,20,27,29,31,24,33,35,37,28,39,41,43,32,45,47,49,36,51,53,55,40,57,59,61,44,63,65,67,48,69,71,73,52,75,77,79,56,81,83,85,60,87,89,91,64,93,95,97,68,99,101,103,72,105,107,109,76,111,113,115,80,117,119
+
+#offset 1
+
+mov $2,1
+mov $3,3
+mov $4,5
+mov $5,2
+mov $6,7
+mov $7,8
+mov $8,9
+mov $9,11
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,417
+  sub $1,1251
+  mul $2,$1
+  mov $10,$2
+  add $1,1251
+  div $1,417
+  mul $1,-65
+  sub $1,148
+  mov $2,$3
+  mul $3,$1
+  add $10,$3
+  add $1,148
+  div $1,-65
+  mul $1,45
+  add $1,91
+  mov $3,$4
+  mul $4,$1
+  add $10,$4
+  sub $1,91
+  div $1,45
+  mul $1,-243
+  add $1,110
+  mov $4,$5
+  mul $5,$1
+  add $10,$5
+  sub $1,110
+  div $1,-243
+  mul $1,-417
+  add $1,4155
+  mov $5,$6
+  mul $6,$1
+  add $10,$6
+  sub $1,4155
+  div $1,-417
+  mul $1,65
+  sub $1,112
+  mov $6,$7
+  mul $7,$1
+  add $10,$7
+  add $1,112
+  div $1,65
+  mul $1,-45
+  add $1,89
+  mov $7,$8
+  mul $8,$1
+  add $10,$8
+  sub $1,89
+  div $1,-45
+  mul $1,243
+  sub $1,1082
+  mov $8,$9
+  mul $9,$1
+  add $10,$9
+  add $1,1082
+  div $1,243
+  add $1,1
+  mov $9,$10
+  div $9,1236
+lpe
+mov $0,$2

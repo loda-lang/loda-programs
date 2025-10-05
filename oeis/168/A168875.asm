@@ -1,0 +1,113 @@
+; A168875: Number of reduced words of length n in Coxeter group on 6 generators S_i with relations (S_i)^2 = (S_i S_j)^21 = I.
+; Submitted by loader3229
+; 1,6,30,150,750,3750,18750,93750,468750,2343750,11718750,58593750,292968750,1464843750,7324218750,36621093750,183105468750,915527343750,4577636718750,22888183593750,114440917968750,572204589843735
+
+mov $22,1
+lpb $0
+  sub $0,1
+  mov $1,$2
+  mul $2,-10
+  mov $23,$2
+  mov $2,$3
+  mul $3,4
+  add $23,$3
+  mov $3,$4
+  mul $4,4
+  add $23,$4
+  mov $4,$5
+  mul $5,4
+  add $23,$5
+  mov $5,$6
+  mul $6,4
+  add $23,$6
+  mov $6,$7
+  mul $7,4
+  add $23,$7
+  mov $7,$8
+  mul $8,4
+  add $23,$8
+  mov $8,$9
+  mul $9,4
+  add $23,$9
+  mov $9,$10
+  mul $10,4
+  add $23,$10
+  mov $10,$11
+  mul $11,4
+  add $23,$11
+  mov $11,$12
+  mul $12,4
+  add $23,$12
+  mov $12,$13
+  mul $13,4
+  add $23,$13
+  mov $13,$14
+  mul $14,4
+  add $23,$14
+  mov $14,$15
+  mul $15,4
+  add $23,$15
+  mov $15,$16
+  mul $16,4
+  add $23,$16
+  mov $16,$17
+  mul $17,4
+  add $23,$17
+  mov $17,$18
+  mul $18,4
+  add $23,$18
+  mov $18,$19
+  mul $19,4
+  add $23,$19
+  mov $19,$20
+  mul $20,4
+  add $23,$20
+  mov $20,$21
+  mul $21,4
+  add $23,$21
+  mov $21,$22
+  mul $22,4
+  add $22,$23
+lpe
+mov $0,$1
+add $0,$2
+add $0,$2
+add $0,$3
+add $0,$3
+add $0,$4
+add $0,$4
+add $0,$5
+add $0,$5
+add $0,$6
+add $0,$6
+add $0,$7
+add $0,$7
+add $0,$8
+add $0,$8
+add $0,$9
+add $0,$9
+add $0,$10
+add $0,$10
+add $0,$11
+add $0,$11
+add $0,$12
+add $0,$12
+add $0,$13
+add $0,$13
+add $0,$14
+add $0,$14
+add $0,$15
+add $0,$15
+add $0,$16
+add $0,$16
+add $0,$17
+add $0,$17
+add $0,$18
+add $0,$18
+add $0,$19
+add $0,$19
+add $0,$20
+add $0,$20
+add $0,$21
+add $0,$21
+add $0,$22

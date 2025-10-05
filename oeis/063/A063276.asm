@@ -1,0 +1,68 @@
+; A063276: Dimension of the space of weight n cuspidal newforms for Gamma_1( 3 ).
+; Submitted by loader3229
+; -1,0,0,0,0,1,1,1,2,2,2,1,3,3,4,2,4,3,5,3,6,4,6,3,7,5,8,4,8,5,9,5,10,6,10,5,11,7,12,6,12,7,13,7,14,8,14,7,15,9,16,8,16,9,17,9,18,10,18,9,19,11,20,10,20,11,21,11,22,12,22,11,23,13,24,12,24
+
+#offset 2
+
+mov $2,-1
+mov $7,1
+mov $8,1
+mov $9,1
+sub $0,2
+lpb $0
+  sub $0,1
+  mul $1,-1
+  add $1,1
+  mul $2,$1
+  mov $10,$2
+  sub $1,1
+  div $1,-1
+  mul $1,4
+  mov $2,$3
+  mul $3,$1
+  add $10,$3
+  div $1,4
+  mul $1,-4
+  add $1,3
+  mov $3,$4
+  mul $4,$1
+  add $10,$4
+  sub $1,3
+  div $1,-4
+  mul $1,3
+  add $1,4
+  mov $4,$5
+  mul $5,$1
+  add $10,$5
+  sub $1,4
+  div $1,3
+  sub $1,6
+  mov $5,$6
+  mul $6,$1
+  add $10,$6
+  mul $1,-4
+  sub $1,10
+  mov $6,$7
+  mul $7,$1
+  add $10,$7
+  sub $1,14
+  div $1,-4
+  mul $1,4
+  sub $1,13
+  mov $7,$8
+  mul $8,$1
+  add $10,$8
+  add $1,13
+  div $1,4
+  mul $1,-3
+  add $1,10
+  mov $8,$9
+  mul $9,$1
+  add $10,$9
+  sub $1,10
+  div $1,-3
+  add $1,1
+  mov $9,$10
+  div $9,5
+lpe
+mov $0,$2
