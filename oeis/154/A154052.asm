@@ -1,0 +1,64 @@
+; A154052: Number of planar triangular n X n X n nonnegative integer grids symmetric both under 120 degree rotation and reflection with every similarly oriented 5 X 5 X 5 subtriangle summing to 5.
+; Submitted by loader3229
+; 0,5,8,0,2,3,0,1,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0
+
+#offset 5
+
+mov $3,5
+mov $4,8
+mov $6,2
+mov $7,3
+sub $0,5
+lpb $0
+  sub $0,1
+  mul $1,-793
+  add $1,5551
+  mul $2,$1
+  mov $9,$2
+  sub $1,5551
+  div $1,-793
+  mul $1,389
+  sub $1,2334
+  mov $2,$3
+  mul $3,$1
+  add $9,$3
+  add $1,2334
+  div $1,389
+  mul $1,-731
+  add $1,483
+  mov $3,$4
+  mul $4,$1
+  add $9,$4
+  sub $1,483
+  div $1,-731
+  mul $1,5093
+  sub $1,23574
+  mov $4,$5
+  mul $5,$1
+  add $9,$5
+  add $1,23574
+  div $1,5093
+  mul $1,-389
+  add $1,6921
+  mov $5,$6
+  mul $6,$1
+  add $9,$6
+  sub $1,6921
+  div $1,-389
+  mul $1,731
+  mov $6,$7
+  mul $7,$1
+  add $9,$7
+  div $1,731
+  mul $1,-4300
+  add $1,18023
+  mov $7,$8
+  mul $8,$1
+  add $9,$8
+  sub $1,18023
+  div $1,-4300
+  add $1,1
+  mov $8,$9
+  div $8,4587
+lpe
+mov $0,$2

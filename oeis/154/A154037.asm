@@ -1,0 +1,65 @@
+; A154037: Number of planar triangular n X n X n nonnegative integer grids symmetric under 120 degree rotation with every similarly oriented 3 X 3 X 3 subtriangle summing to 4.
+; Submitted by loader3229
+; 0,14,8,0,29,0,0,33,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0,27,0,0
+
+#offset 3
+
+mov $3,14
+mov $4,8
+mov $6,29
+sub $0,3
+lpb $0
+  sub $0,1
+  mul $1,-882
+  add $1,6174
+  mul $2,$1
+  mov $9,$2
+  sub $1,6174
+  div $1,-882
+  mul $1,-1200
+  add $1,7200
+  mov $2,$3
+  mul $3,$1
+  add $9,$3
+  sub $1,7200
+  div $1,-1200
+  mul $1,-2940
+  add $1,14700
+  mov $3,$4
+  mul $4,$1
+  add $9,$4
+  sub $1,14700
+  div $1,-2940
+  mul $1,4085
+  sub $1,17222
+  mov $4,$5
+  mul $5,$1
+  add $9,$5
+  add $1,17222
+  div $1,4085
+  mul $1,1200
+  sub $1,4800
+  mov $5,$6
+  mul $6,$1
+  add $9,$6
+  add $1,4800
+  div $1,1200
+  mul $1,2940
+  sub $1,14700
+  mov $6,$7
+  mul $7,$1
+  add $9,$7
+  add $1,14700
+  div $1,2940
+  mul $1,-3203
+  add $1,11048
+  mov $7,$8
+  mul $8,$1
+  add $9,$8
+  sub $1,11048
+  div $1,-3203
+  add $1,1
+  mov $8,$9
+  div $8,2400
+lpe
+mov $0,$2
