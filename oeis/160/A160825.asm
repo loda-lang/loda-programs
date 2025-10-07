@@ -1,0 +1,17 @@
+; A160825: a(1) = 1. For n >=2, a(n) = the smallest integer > a(n-1) such that both a(n) and a(n)-a(n-1) have the same number of (non-leading) 0's when they are represented in binary.
+; Submitted by DukeBox
+; 1,6,7,13,22,26,44,52,88,104,176,208,352,416,704,832,1408,1664,2816,3328,5632,6656,11264,13312,22528,26624,45056,53248,90112,106496,180224,212992,360448,425984,720896,851968,1441792,1703936,2883584,3407872,5767168,6815744,11534336,13631488,23068672,27262976,46137344,54525952,92274688,109051904,184549376,218103808,369098752,436207616,738197504,872415232,1476395008,1744830464,2952790016,3489660928,5905580032,6979321856,11811160064,13958643712,23622320128,27917287424,47244640256,55834574848
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+A160824(n+1), b(0) = 1
+
+#offset 1
+
+mov $1,1
+sub $0,1
+lpb $0
+  mov $2,$0
+  add $2,1
+  seq $2,160824 ; a(1)=1, a(n) = the smallest positive integer such that both a(n) and Sum_{k=1..n} a(k) have the same number of (nonleading) 0's when they are represented in binary.
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1
