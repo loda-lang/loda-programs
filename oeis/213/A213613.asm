@@ -1,4 +1,4 @@
-; A213613: Decimal expansion of the duration of the Gregorian year in SI seconds
+; A213613: Decimal expansion of the duration of the Gregorian year in SI seconds.
 ; Submitted by BrandyNOW
 ; 3,1,5,5,6,9,5,2
 ; Formula: a(n) = -10*truncate((truncate((2^(n-4)+(binomial(n-4,2)-1)*(2^(n-4)+939)+939)/16)+5)/10)+truncate((2^(n-4)+(binomial(n-4,2)-1)*(2^(n-4)+939)+939)/16)+5

@@ -1,38 +1,17 @@
 ; A252043: a(n) is the concatenation of first n terms of A033307.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 1,12,123,1234,12345,123456,1234567,12345678,123456789,1234567891,12345678910,123456789101,1234567891011,12345678910111,123456789101112,1234567891011121,12345678910111213,123456789101112131,1234567891011121314,12345678910111213141,123456789101112131415,1234567891011121314151,12345678910111213141516,123456789101112131415161,1234567891011121314151617,12345678910111213141516171,123456789101112131415161718,1234567891011121314151617181,12345678910111213141516171819,123456789101112131415161718192
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $3,$0
 mov $2,$0
 lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  mov $6,$0
-  add $6,1
-  seq $6,261138 ; The concatenation of 123456...n and the reverse of this number.
-  add $0,1
-  mov $5,$0
-  mov $0,10
-  pow $0,$5
-  mov $7,0
-  sub $7,$0
-  mov $0,$6
-  mul $0,10
-  div $0,$7
-  add $0,9
-  mod $0,10
-  add $0,10
-  mod $0,10
-  mov $4,1
-  seq $4,422 ; Concatenation of numbers from n down to 1.
-  sub $4,$0
-  mov $0,$4
-  add $0,8
+  sub $0,1
+  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
   mul $1,10
   add $1,$0
 lpe

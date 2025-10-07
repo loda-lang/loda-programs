@@ -1,15 +1,19 @@
 ; A035340: 6th column of Wythoff array.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 13,47,68,102,136,157,191,212,246,280,301,335,369,390,424,445,479,513,534,568,589,623,657,678,712,746,767,801,822,856,890,911,945,979,1000,1034,1055,1089,1123,1144,1178,1199,1233,1267,1288,1322,1356,1377,1411,1432,1466,1500,1521,1555,1576,1610,1644,1665,1699,1733,1754,1788,1809,1843,1877,1898,1932,1966,1987,2021,2042,2076,2110,2131,2165,2186,2220,2254,2275,2309
-; Formula: a(n) = 3*truncate((sqrtint((truncate((sqrtint(5*(n+1)^2)+n+1)/2)+truncate((sqrtint(5*truncate((sqrtint(5*(n+1)^2)+n+1)/2)^2)+truncate((sqrtint(5*(n+1)^2)+n+1)/2))/2))*(5*truncate((sqrtint(5*(n+1)^2)+n+1)/2)+5*truncate((sqrtint(5*truncate((sqrtint(5*(n+1)^2)+n+1)/2)^2)+truncate((sqrtint(5*(n+1)^2)+n+1)/2))/2)))+truncate((sqrtint(5*(n+1)^2)+n+1)/2)+truncate((sqrtint(5*truncate((sqrtint(5*(n+1)^2)+n+1)/2)^2)+truncate((sqrtint(5*(n+1)^2)+n+1)/2))/2))/2)+2*truncate((sqrtint(5*(n+1)^2)+n+1)/2)+2*truncate((sqrtint(5*truncate((sqrtint(5*(n+1)^2)+n+1)/2)^2)+truncate((sqrtint(5*(n+1)^2)+n+1)/2))/2)
+; Formula: a(n) = 4*truncate((sqrtint((n+1)*(5*n+5))+n+1)/2)+3*truncate((2*truncate((sqrtint((n+1)*(5*n+5))+n+1)/2)+sqrtint((2*truncate((sqrtint((n+1)*(5*n+5))+n+1)/2)+n+1)*(10*truncate((sqrtint((n+1)*(5*n+5))+n+1)/2)+5*n+5))+n+1)/2)+2*n-3
 
 add $0,1
 mov $1,$0
-pow $0,2
-mul $0,5
-nrt $0,2
+add $1,$0
+mul $1,2
+add $1,$0
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
 add $0,$1
-div $0,2
+add $0,$1
 mov $2,$0
 add $2,$0
 mul $2,2
@@ -19,15 +23,7 @@ nrt $2,2
 add $2,$0
 div $2,2
 add $0,$2
-mov $3,$0
-add $3,$0
-mul $3,2
-add $3,$0
-mul $3,$0
-nrt $3,2
-add $3,$0
-div $3,2
-add $0,$3
 mul $0,2
-add $3,$0
-mov $0,$3
+add $2,$0
+mov $0,$2
+sub $0,5

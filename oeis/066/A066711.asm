@@ -1,15 +1,46 @@
 ; A066711: RATS: Reverse Add Then Sort the digits applied to previous term, starting with 9.
-; Submitted by Jamie Morken(w4)
+; Submitted by loader3229
 ; 9,18,99,189,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117,288,117
-; Formula: a(n) = b(n-1), b(n) = A004185(A056964(b(n-1))), b(0) = 9
+; Formula: a(n) = c(n-1), b(n) = truncate((1192*truncate((-2277*truncate((-1192*truncate((2277*b(n-1))/2277))/(-1192)))/(-2277)))/1192)+1, b(4) = 4, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = d(n-3), c(4) = 117, c(3) = 189, c(2) = 99, c(1) = 18, c(0) = 9, d(n) = truncate((d(n-1)*(1192*truncate((-2277*truncate((-1192*truncate((2277*b(n-1))/2277))/(-1192)))/(-2277))-2798)+d(n-2)*(-2277*truncate((-1192*truncate((2277*b(n-1))/2277))/(-1192))+14405)+d(n-3)*(-1192*truncate((2277*b(n-1))/2277)+2798)+d(n-4)*(2277*b(n-1)-6831))/7574), d(6) = 288, d(5) = 117, d(4) = 288, d(3) = 117, d(2) = 288, d(1) = 117, d(0) = 189
 
 #offset 1
 
+mov $2,9
+mov $3,18
+mov $4,99
+mov $5,189
 sub $0,1
-mov $1,$0
-mov $0,9
-lpb $1
-  sub $1,1
-  seq $0,56964 ; a(n) = n + reversal of digits of n.
-  seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+lpb $0
+  sub $0,1
+  mul $1,2277
+  sub $1,6831
+  mul $2,$1
+  mov $6,$2
+  add $1,6831
+  div $1,2277
+  mul $1,-1192
+  add $1,2798
+  mov $2,$3
+  mul $3,$1
+  add $6,$3
+  sub $1,2798
+  div $1,-1192
+  mul $1,-2277
+  add $1,14405
+  mov $3,$4
+  mul $4,$1
+  add $6,$4
+  sub $1,14405
+  div $1,-2277
+  mul $1,1192
+  sub $1,2798
+  mov $4,$5
+  mul $5,$1
+  add $6,$5
+  add $1,2798
+  div $1,1192
+  add $1,1
+  mov $5,$6
+  div $5,7574
 lpe
+mov $0,$2

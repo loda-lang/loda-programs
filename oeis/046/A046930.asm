@@ -1,21 +1,23 @@
 ; A046930: Size of sea of composite numbers surrounding n-th prime.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,1,2,4,4,4,4,4,8,6,6,8,4,4,8,10,6,6,8,4,6,8,8,12,10,4,4,4,4,16,16,8,6,10,10,6,10,8,8,10,6,10,10,4,4,12,22,14,4,4,8,6,10,14,10,10,6,6,8,4,10,22,16,4,4,16,18,14,10,4,8,12,12,10,8,8,12,10,10,16
-; Formula: a(n) = max(-A008578(n)+A159477(A159477((A008578(n)==0)+A008578(n)+2)+2),3)-2
 
 #offset 1
 
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+sub $0,1
 mov $1,$0
+dif $1,$0
+add $1,1
+trn $0,1
+add $0,1
+seq $0,40 ; The prime numbers.
+mul $1,$0
+mov $0,$1
+div $0,2
+max $0,2
 mov $2,$0
-equ $2,0
-add $2,$0
-add $2,2
-seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-mov $3,$2
+seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+sub $2,$0
 mov $0,$2
-add $0,2
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-sub $0,$1
-max $0,3
 sub $0,2

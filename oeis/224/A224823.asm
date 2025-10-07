@@ -1,5 +1,5 @@
 ; A224823: Number of solutions to n = x + y + 3*z where x, y, z are triangular numbers.
-; Submitted by omegaintellisys
+; Submitted by Dirk Broer
 ; 1,2,1,3,4,1,5,4,0,6,6,3,5,6,2,6,8,0,7,8,4,9,6,1,11,10,0,8,6,5,9,12,3,7,14,0,11,8,5,13,10,4,8,8,0,14,16,5,11,12,1,16,10,0,14,14,7,9,12,5,14,14,0,7,16,7,18,14,4,19,10,0,12,16,9,13,20,0,10,18
 
 mov $3,3
@@ -8,13 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,4
-  add $2,1
-  seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
-  mul $2,4
-  add $4,3
+  seq $2,8441 ; Number of ordered ways of writing n as the sum of 2 triangular numbers.
+  add $4,1
   add $1,$2
-  mov $3,$4
+  mov $3,2
+  add $3,$4
+  add $4,2
 lpe
 mov $0,$1
-div $0,4

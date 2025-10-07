@@ -1,45 +1,36 @@
-; A187378: Number of 4-step S, NW and NE-moving king's tours on an n X n board summed over all starting positions
+; A187378: Number of 4-step S, NW and NE-moving king's tours on an n X n board summed over all starting positions.
+; Submitted by loader3229
 ; 0,4,40,132,278,478,732,1040,1402,1818,2288,2812,3390,4022,4708,5448,6242,7090,7992,8948,9958,11022,12140,13312,14538,15818,17152,18540,19982,21478,23028,24632,26290,28002,29768,31588,33462,35390,37372,39408,41498,43642,45840,48092,50398,52758,55172,57640,60162,62738
+; Formula: a(n) = c(n-1), b(n) = truncate((-149*truncate((163*truncate((-14*b(n-1))/(-14))+126)/163))/(-149))+1, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = d(n-2), c(3) = 132, c(2) = 40, c(1) = 4, c(0) = 0, d(n) = truncate((d(n-1)*(-149*truncate((163*truncate((-14*b(n-1))/(-14))+126)/163)+192)+d(n-2)*(163*truncate((-14*b(n-1))/(-14))+126)+d(n-3)*(-14*b(n-1)+14))/62), d(4) = 732, d(3) = 478, d(2) = 278, d(1) = 132, d(0) = 40
 
 #offset 1
 
+mov $3,4
+mov $4,40
 sub $0,1
-mov $7,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $10,0
-  mov $0,$7
-  sub $0,$4
-  mov $5,$0
-  mov $9,$0
-  lpb $9
-    sub $9,1
-    mov $0,$5
-    sub $0,$9
-    mov $2,5
-    mov $6,5
-    pow $0,3
-    lpb $0
-      mov $2,$0
-      div $2,2
-      mov $0,10
-      add $6,9
-    lpe
-    mul $2,2
-    add $2,6
-    add $6,$0
-    add $8,16
-    mul $8,2
-    div $8,$2
-    mov $3,$0
-    add $3,$6
-    add $3,$8
-    mov $6,$3
-    sub $6,7
-    mul $6,2
-    add $10,$6
-  lpe
-  add $1,$10
+lpb $0
+  sub $0,1
+  mul $1,-14
+  add $1,14
+  mul $2,$1
+  mov $5,$2
+  sub $1,14
+  div $1,-14
+  mul $1,163
+  add $1,126
+  mov $2,$3
+  mul $3,$1
+  add $5,$3
+  div $1,163
+  mul $1,-149
+  add $1,192
+  mov $3,$4
+  mul $4,$1
+  add $5,$4
+  sub $1,192
+  div $1,-149
+  add $1,1
+  mov $4,$5
+  div $4,62
 lpe
-mov $0,$1
+mov $0,$2

@@ -1,34 +1,30 @@
 ; A316319: Coordination sequence for a trivalent node in a chamfered version of the 3^6 triangular tiling of the plane.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,3,7,14,25,38,51,63,75,87,99,111,123,135,147,159,171,183,195,207,219,231,243,255,267,279,291,303,315,327,339,351,363,375,387,399,411,423,435,447,459,471,483,495,507,519,531,543,555,567,579,591,603,615,627,639,651,663,675,687,699,711,723,735,747,759,771,783,795,807,819,831,843,855,867,879,891,903,915,927
+; Formula: a(n) = (n>=6)+(n>=5)+12*n-(n>=4)-5*(n>=3)-8*(n>=2)-10*(n>=1)+1
 
-mov $5,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$5
-  sub $0,$3
-  mov $4,$0
-  mul $4,2
-  mov $6,0
-  sub $0,$4
-  bin $0,2
-  lpb $0
-    add $6,22
-    trn $0,$6
-    mov $4,0
-    pow $4,$0
-    sub $4,1
-    mov $2,1
-    sub $2,$4
-    mov $4,9
-    sub $4,$2
-    mov $0,$4
-    add $0,4
-  lpe
-  mov $4,$0
-  add $4,1
-  add $1,$4
-lpe
-mov $0,$1
+mov $1,$0
+geq $1,1
+mul $1,-10
+mov $2,$1
+mov $1,$0
+geq $1,2
+mul $1,-8
+add $2,$1
+mov $1,$0
+geq $1,3
+mul $1,-5
+add $2,$1
+mov $1,$0
+geq $1,4
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,5
+add $2,$1
+mov $1,$0
+geq $1,6
+add $2,$1
+mul $0,12
 add $0,1
+add $0,$2

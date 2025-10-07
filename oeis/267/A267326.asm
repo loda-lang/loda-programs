@@ -1,21 +1,12 @@
 ; A267326: Number of ways writing n^2 as a sum of four squares: a(n) = A000118(n^2).
-; Submitted by KetamiNO [YouTube]
+; Submitted by Science United
 ; 1,8,24,104,24,248,312,456,24,968,744,1064,312,1464,1368,3224,24,2456,2904,3048,744,5928,3192,4424,312,6248,4392,8744,1368,6968,9672,7944,24,13832,7368,14136,2904,11256,9144,19032,744,13784,17784,15144,3192,30008,13272,18056,312,22408,18744,31928,4392,22904,26232,32984,1368,39624,20904,28328,9672,30264,23832,55176,24,45384,41496,36456,7368,57512,42408,40904,2904,43224,33768,81224,9144,60648,57096,50568
+; Formula: a(n) = A000118(n^2)
 
-pow $0,2
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
-lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
+mov $2,$0
+pow $2,2
+seq $2,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
+mov $1,1
+add $1,$2
+mov $0,$1
+sub $0,1

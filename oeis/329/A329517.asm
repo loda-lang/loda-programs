@@ -1,12 +1,28 @@
 ; A329517: Expansion of (2*x^6 - 3*x^4 - 3*x^3 - 3*x^2 - 2*x - 1)/(x - 1).
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,3,6,9,12,12,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
-; Formula: a(n) = A001222(A098361(8*min(n,6)+4))+1
+; Formula: a(n) = 3*(n>=4)+3*(n>=3)+3*(n>=2)+2*(n>=1)-2*(n>=6)+1
 
-min $0,6
-mul $0,2
+mov $1,$0
+geq $1,1
+mul $1,2
+mov $2,$1
+mov $1,$0
+geq $1,2
+mul $1,3
+add $2,$1
+mov $1,$0
+geq $1,3
+mul $1,3
+add $2,$1
+mov $1,$0
+geq $1,4
+mul $1,3
+add $2,$1
+mov $1,$0
+geq $1,6
+mul $1,-2
+add $2,$1
+mul $0,0
 add $0,1
-mul $0,4
-seq $0,98361 ; Multiplication table of the factorial numbers read by antidiagonals.
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-add $0,1
+add $0,$2

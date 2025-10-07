@@ -5,6 +5,6 @@
 
 #offset 1
 
-seq $0,174000 ; Successive positions of even digits after comma in decimal expansion of Pi
+seq $0,174000 ; Successive positions of even digits after comma in decimal expansion of Pi.
 add $0,1
 seq $0,796 ; Decimal expansion of Pi (or digits of Pi).

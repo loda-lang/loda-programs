@@ -5,24 +5,22 @@
 #offset 1
 
 sub $0,1
-mov $3,0
 mov $4,$0
 add $0,1
-add $4,4
 pow $4,5
 lpb $4
   mov $5,$3
   add $5,1
   seq $5,204890 ; Ordered differences of primes.
-  mov $8,$3
-  mul $8,8
-  add $8,1
-  nrt $8,2
-  add $8,1
-  div $8,2
-  bin $8,2
+  mov $2,$3
+  mul $2,8
+  add $2,1
+  nrt $2,2
+  add $2,1
+  div $2,2
+  bin $2,2
   mov $6,$3
-  sub $6,$8
+  sub $6,$2
   mov $7,$6
   add $7,1
   seq $7,40 ; The prime numbers.
@@ -43,7 +41,5 @@ mul $1,8
 nrt $1,2
 sub $1,1
 div $1,2
-mov $2,$1
-add $2,1
 mov $0,$1
 add $0,2

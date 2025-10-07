@@ -1,5 +1,5 @@
 ; A045019: Numbers whose base-4 representation contains exactly one 0 and one 1.
-; Submitted by ChelseaOilman
+; Submitted by cargoeagle
 ; 4,18,19,24,28,33,36,49,52,74,75,78,79,98,99,104,108,114,115,120,124,134,135,137,141,146,147,152,156,161,164,177,180,198,199,201,205,210,211,216,220,225,228,241,244,298,299,302,303
 
 #offset 1
@@ -10,6 +10,7 @@ add $0,1
 add $2,7
 pow $2,3
 lpb $2
+  mov $4,1
   mov $3,$1
   lpb $3
     sub $3,1
@@ -20,11 +21,9 @@ lpb $2
     div $3,4
     max $4,$5
   lpe
-  sub $4,1
   mov $3,$4
-  div $3,2
+  sub $3,4
   equ $3,2
-  mov $4,1
   sub $0,$3
   add $1,1
   sub $2,$0

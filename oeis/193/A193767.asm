@@ -1,17 +1,61 @@
 ; A193767: The number of dominoes in a largest saturated domino covering of the 4 by n board.
+; Submitted by loader3229
 ; 2,5,8,12,14,17,21,24,26,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105,108,111,114,117,120,123,126,129,132,135,138,141,144,147,150,153,156,159,162,165,168,171,174,177
 
 #offset 1
 
+mov $2,2
+mov $3,5
+mov $4,8
+mov $5,12
+mov $6,14
+mov $7,17
 sub $0,1
-mov $3,$0
 lpb $0
-  mod $0,3
-  mul $0,4
-  pow $1,0
+  sub $0,1
+  mul $1,-647
+  add $1,5176
+  mul $2,$1
+  mov $8,$2
+  sub $1,5176
+  div $1,-647
+  mul $1,654
+  sub $1,4578
+  mov $2,$3
+  mul $3,$1
+  add $8,$3
+  add $1,4578
+  div $1,654
+  mul $1,601
+  sub $1,3606
+  mov $3,$4
+  mul $4,$1
+  add $8,$4
+  add $1,3606
+  div $1,601
+  mul $1,-753
+  add $1,1824
+  mov $4,$5
+  mul $5,$1
+  add $8,$5
+  sub $1,1824
+  div $1,-753
+  mul $1,350
+  sub $1,2026
+  mov $5,$6
+  mul $6,$1
+  add $8,$6
+  add $1,2026
+  div $1,350
+  mul $1,-205
+  add $1,5034
+  mov $6,$7
+  mul $7,$1
+  add $8,$7
+  sub $1,5034
+  div $1,-205
+  add $1,1
+  mov $7,$8
+  div $7,1796
 lpe
-mov $2,$3
-mul $2,3
-add $1,2
-add $1,$2
-mov $0,$1
+mov $0,$2

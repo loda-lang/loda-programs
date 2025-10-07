@@ -1,35 +1,29 @@
 ; A040363: Continued fraction for sqrt(383).
-; Submitted by Landjunge
+; Submitted by loader3229
 ; 19,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1
 
-mov $3,$0
-mod $3,8
-mov $4,8
-sub $4,$3
-min $3,$4
-mod $3,4
-mov $5,$0
-mov $6,10
-gcd $0,8
-lpb $5
-  mov $5,3
-  add $0,6
-  mov $6,7
+mov $2,19
+mov $3,1
+mov $4,1
+mov $5,3
+mov $6,19
+mov $7,3
+mov $8,1
+mov $9,1
+mov $10,38
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$6
-trn $0,63
-add $0,1
-add $0,$3
-div $0,2
-mov $2,$0
-div $0,2
-add $0,1
-div $2,5
-gcd $2,$0
-add $0,$2
-sub $0,1
-mov $1,$0
-div $0,4
-mul $0,7
-add $1,$0
-add $0,$1
+mov $0,$2

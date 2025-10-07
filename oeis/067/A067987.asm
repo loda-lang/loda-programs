@@ -1,22 +1,35 @@
 ; A067987: Convolution of L(n+1) := A000204(n+1) (Lucas), n>=0, with L(n+9), n>=0.
-; Submitted by [TA]crashtech
+; Submitted by loader3229
 ; 76,351,872,1943,3980,7808,14838,27581,50404,90905,162214,286944,503888,879387,1526560,2637787,4539472,7784224,13305786,22679065,38555996,65395261,110682602,186969408,315274900
+; Formula: a(n) = c(n-2), a(3) = 1943, a(2) = 872, a(1) = 351, a(0) = 76, b(n) = truncate((-5*truncate((5*truncate((5*b(n-1))/5))/5))/(-5))+1, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = truncate((c(n-1)*(-5*truncate((5*truncate((5*b(n-1))/5))/5)+9351)+c(n-2)*(5*truncate((5*b(n-1))/5)-2198)+c(n-3)*(5*b(n-1)-5767))/3574), c(4) = 14838, c(3) = 7808, c(2) = 3980, c(1) = 1943, c(0) = 872
 
-mov $1,$0
-add $1,8
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$5
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-  add $3,$0
-  add $4,$3
+mov $2,76
+mov $3,351
+mov $4,872
+lpb $0
+  sub $0,1
+  mul $1,5
+  sub $1,5767
+  mul $2,$1
+  mov $5,$2
+  add $1,5767
+  div $1,5
+  mul $1,5
+  sub $1,2198
+  mov $2,$3
+  mul $3,$1
+  add $5,$3
+  add $1,2198
+  div $1,5
+  mul $1,-5
+  add $1,9351
+  mov $3,$4
+  mul $4,$1
+  add $5,$4
+  sub $1,9351
+  div $1,-5
+  add $1,1
+  mov $4,$5
+  div $4,3574
 lpe
-mul $5,2
-add $5,$4
-mov $0,$5
+mov $0,$2

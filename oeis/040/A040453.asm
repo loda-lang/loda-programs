@@ -1,34 +1,33 @@
 ; A040453: Continued fraction for sqrt(475).
-; Submitted by Science United
+; Submitted by loader3229
 ; 21,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1,42,1,3,1,6,2,6,1,3,1
 
-mov $1,-1
-pow $1,$0
-add $1,2
-mov $2,-1
-pow $2,$0
-add $2,2
-mov $4,14
-mul $0,2
-pow $0,2
+mov $2,21
+mov $3,1
+mov $4,3
+mov $5,1
+mov $6,6
+mov $7,2
+mov $8,6
+mov $9,1
+mov $10,3
+mov $11,1
+mov $12,42
 lpb $0
-  mov $3,$0
-  mul $4,9
-  add $4,6
-  mov $0,0
-  mod $3,10
-  add $3,5
-  div $4,$3
-  sub $4,5
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$1
 lpe
-pow $1,2
-sub $4,7
-add $0,$4
-mul $0,$2
-sub $0,2
-div $0,3
-add $0,1
-mul $0,$1
-sub $0,2
-div $0,3
-add $0,1
+mov $0,$2

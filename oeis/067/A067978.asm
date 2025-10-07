@@ -1,19 +1,29 @@
 ; A067978: Convolution of Fibonacci F(n+1), n>=0, with F(n+10), n>=0.
-; Submitted by jmorken
+; Submitted by loader3229
 ; 55,144,343,720,1440,2770,5197,9564,17345,31090,55200,97236,170147,296040,512555,883620,1517568,2597606,4432985,7544820,12809845,21700934,36689088,61914600,104306575,175448640
+; Formula: a(n) = c(n-2), a(3) = 720, a(2) = 343, a(1) = 144, a(0) = 55, b(n) = truncate((-b(n-1))/(-1))+1, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = truncate((c(n-1)*(-b(n-1)+4894)+c(n-2)*(b(n-1)-1153)+c(n-3)*(b(n-1)-3022))/1870), c(4) = 5197, c(3) = 2770, c(2) = 1440, c(1) = 720, c(0) = 343
 
-mov $1,$0
-add $1,10
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
-  add $0,$4
-  mov $4,$3
-  add $3,$0
+mov $2,55
+mov $3,144
+mov $4,343
+lpb $0
+  sub $0,1
+  sub $1,3022
+  mul $2,$1
+  mov $5,$2
+  add $1,1869
+  mov $2,$3
+  mul $3,$1
+  add $5,$3
+  mul $1,-1
+  add $1,3741
+  mov $3,$4
+  mul $4,$1
+  add $5,$4
+  sub $1,4894
+  div $1,-1
+  add $1,1
+  mov $4,$5
+  div $4,1870
 lpe
-mov $0,$3
+mov $0,$2

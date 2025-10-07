@@ -1,13 +1,43 @@
 ; A098500: Number of squares on infinite quarter chessboard at <=n knight moves from the corner.
-; Submitted by [SG]FX
+; Submitted by loader3229
 ; 1,3,12,32,59,91,130,176,229,289,356,430,511,599,694,796,905,1021,1144,1274,1411,1555,1706,1864,2029,2201,2380,2566,2759,2959,3166,3380,3601,3829,4064,4306,4555,4811,5074,5344,5621,5905,6196,6494,6799,7111,7430
-; Formula: a(n) = a(n-1)+A047883(n), a(0) = 1
+; Formula: a(n) = c(n-3), a(4) = 59, a(3) = 32, a(2) = 12, a(1) = 3, a(0) = 1, b(n) = truncate((-5005*truncate((8224*truncate((-3750*truncate((531*b(n-1))/531))/(-3750)))/8224))/(-5005))+1, b(4) = 4, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = truncate((c(n-1)*(-5005*truncate((8224*truncate((-3750*truncate((531*b(n-1))/531))/(-3750)))/8224)+25010)+c(n-2)*(8224*truncate((-3750*truncate((531*b(n-1))/531))/(-3750))-16786)+c(n-3)*(-3750*truncate((531*b(n-1))/531)+8562)+c(n-4)*(531*b(n-1)-1593))/10559), c(6) = 289, c(5) = 229, c(4) = 176, c(3) = 130, c(2) = 91, c(1) = 59, c(0) = 32
 
-mov $1,1
+mov $2,1
+mov $3,3
+mov $4,12
+mov $5,32
 lpb $0
-  mov $2,$0
-  seq $2,47883 ; Squares on unbounded chessboard for which the least number of knight's moves from corner (0,0) is n.
   sub $0,1
-  add $1,$2
+  mul $1,531
+  sub $1,1593
+  mul $2,$1
+  mov $6,$2
+  add $1,1593
+  div $1,531
+  mul $1,-3750
+  add $1,8562
+  mov $2,$3
+  mul $3,$1
+  add $6,$3
+  sub $1,8562
+  div $1,-3750
+  mul $1,8224
+  sub $1,16786
+  mov $3,$4
+  mul $4,$1
+  add $6,$4
+  add $1,16786
+  div $1,8224
+  mul $1,-5005
+  add $1,25010
+  mov $4,$5
+  mul $5,$1
+  add $6,$5
+  sub $1,25010
+  div $1,-5005
+  add $1,1
+  mov $5,$6
+  div $5,10559
 lpe
-mov $0,$1
+mov $0,$2

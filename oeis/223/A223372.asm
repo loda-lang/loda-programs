@@ -1,21 +1,22 @@
-; A223372: 3X3 square grid graph coloring a rectangular array: number of nX1 0..8 arrays where 0..8 label nodes of the square grid graph and every array movement to a horizontal or vertical neighbor moves along an edge of this graph
-; Submitted by Jamie Morken(w1)
+; A223372: 3X3 square grid graph coloring a rectangular array: number of nX1 0..8 arrays where 0..8 label nodes of the square grid graph and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
+; Submitted by loader3229
 ; 9,24,68,192,544,1536,4352,12288,34816,98304,278528,786432,2228224,6291456,17825792,50331648,142606336,402653184,1140850688,3221225472,9126805504,25769803776,73014444032,206158430208,584115552256,1649267441664,4672924418048,13194139533312,37383395344384,105553116266496,299067162755072,844424930131968,2392537302040576,6755399441055744,19140298416324608,54043195528445952,153122387330596864,432345564227567616,1224979098644774912,3458764513820540928,9799832789158199296,27670116110564327424
-; Formula: a(n) = c(max(3*n-4,0))+9, b(n) = 2*b(n-2)+7, b(3) = 13, b(2) = 7, b(1) = 3, b(0) = 0, c(n) = c(n-1)+d(n-1)+7, c(2) = 15, c(1) = 8, c(0) = 0, d(n) = b(n-1), d(2) = 3, d(1) = 0, d(0) = 1
+; Formula: a(n) = b(n-1), b(n) = c(n-1), b(2) = 68, b(1) = 24, b(0) = 9, c(n) = 8*c(n-2), c(2) = 192, c(1) = 68, c(0) = 24
 
 #offset 1
 
-mov $3,1
-mul $0,3
-sub $0,4
+mov $2,9
+mov $3,24
+mov $4,68
+sub $0,1
 lpb $0
   sub $0,1
-  add $2,2
-  add $2,$3
-  mov $3,$1
+  mul $2,0
   mov $1,$2
-  sub $1,$3
-  add $2,5
+  mov $2,$3
+  mul $3,8
+  add $1,$3
+  mov $3,$4
+  mov $4,$1
 lpe
 mov $0,$2
-add $0,9

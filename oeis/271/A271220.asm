@@ -1,17 +1,15 @@
 ; A271220: Concatenate sum of digits of previous term and product of digits of previous term, starting with 6.
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 6,66,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236,1236
-; Formula: a(n) = 30*b(n-1)+6, b(n) = 41, b(1) = 2, b(0) = 0
+; Formula: a(n) = -1170*(n==1)-1230*(n==0)+1236
 
-#offset 1
-
-mov $2,2
-sub $0,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  mov $2,41
-lpe
-mov $0,$1
-mul $0,30
-add $0,6
+mov $1,$0
+equ $1,0
+mul $1,-1230
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,-1170
+add $2,$1
+add $2,1236
+mov $0,$2

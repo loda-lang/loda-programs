@@ -1,10 +1,16 @@
 ; A008906: Number of digits in n! excluding final zeros.
-; Submitted by STE\/E
+; Submitted by BrandyNOW
 ; 1,1,1,1,2,2,2,3,4,5,5,6,7,8,9,10,11,12,13,15,15,16,18,19,20,20,21,23,24,25,26,27,29,30,32,33,34,36,37,39,39,41,43,44,46,47,48,50,52,53,53,55,56,58,60,61,62,64,66,68,68,70,72,74,76,76,78,80,82,84,85,86,88,90,92,92,94,96,98,99
+; Formula: a(n) = -truncate((-sumdigits(n,5)+n)/4)+logint(n!,10)+1
 
-seq $0,4153 ; Factorial numbers written backwards.
-lpb $0
-  div $0,10
-  add $1,1
-lpe
-mov $0,$1
+mov $1,$0
+mov $2,1
+fac $2,$0
+mov $0,$2
+log $0,10
+add $0,1
+mov $3,$1
+dgs $3,5
+sub $1,$3
+div $1,4
+sub $0,$1

@@ -1,28 +1,60 @@
 ; A114210: Number of derangements of [n] avoiding the patterns 123 and 231.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 0,1,1,3,4,7,8,14,13,23,20,34,28,48,37,64,48,82,60,103,73,126,88,151,104,179,121,209,140,241,160,276,181,313,204,352,228,394,253,438,280,484,308,533,337,584,368,637,400,693,433,751,468,811,504,874,541,939
 
 #offset 1
 
-mov $2,1
 mov $3,1
+mov $4,1
+mov $5,3
+mov $6,4
+mov $7,7
+sub $0,1
 lpb $0
   sub $0,1
-  add $3,1
-  mov $5,$4
-  add $5,2
-  add $5,$1
-  mov $1,$3
-  add $1,1
-  sub $3,$4
-  mov $4,$2
-  mul $4,3
-  mul $4,$0
+  mul $1,274
+  add $1,425
+  mul $2,$1
+  mov $8,$2
+  sub $1,425
+  div $1,274
+  mul $1,429
+  add $1,1358
   mov $2,$3
-  add $2,$4
-  mod $2,6
-  mov $3,$5
-  add $3,2
+  mul $3,$1
+  add $8,$3
+  sub $1,1358
+  div $1,429
+  mul $1,155
+  add $1,2620
+  mov $3,$4
+  mul $4,$1
+  add $8,$4
+  sub $1,2620
+  div $1,155
+  mul $1,-274
+  add $1,1882
+  mov $4,$5
+  mul $5,$1
+  add $8,$5
+  sub $1,1882
+  div $1,-274
+  mul $1,-429
+  add $1,358
+  mov $5,$6
+  mul $6,$1
+  add $8,$6
+  sub $1,358
+  div $1,-429
+  mul $1,-155
+  sub $1,904
+  mov $6,$7
+  mul $7,$1
+  add $8,$7
+  add $1,904
+  div $1,-155
+  add $1,1
+  mov $7,$8
+  div $7,591
 lpe
-mov $0,$3
-div $0,9
+mov $0,$2

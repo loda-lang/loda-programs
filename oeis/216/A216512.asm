@@ -1,25 +1,25 @@
 ; A216512: Number of nonnegative integer solutions to the equation a^2 + 7*b^2 = n.
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,2,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,3,0,0,1,0,0,0,1,1,0,0,0,0,1,0,1,0
 
 #offset 1
 
-mov $1,$0
-lpb $1
-  mov $4,$0
-  dif $4,$1
-  neq $4,$0
-  mul $4,$1
-  pow $4,3
-  sub $1,1
-  mul $2,-1
-  add $2,$4
-  mov $3,16
+sub $0,1
+mov $1,2
+mov $3,$0
+add $3,3
+lpb $3
+  sub $3,$1
+  mov $6,$3
+  max $6,0
+  mov $2,$6
+  nrt $6,2
+  pow $6,2
+  equ $6,$2
+  mov $1,1
+  add $1,$4
+  mul $1,7
+  add $4,2
+  add $5,$6
 lpe
-add $2,1
-gcd $4,$2
-mul $4,$3
-mov $1,$4
-mod $1,14
-mov $0,$1
-div $0,4
+mov $0,$5

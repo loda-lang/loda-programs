@@ -1,35 +1,29 @@
 ; A040218: Continued fraction for sqrt(234).
-; Submitted by Athlici
+; Submitted by loader3229
 ; 15,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3,30,3,2,1,2,1,2,3
 
-mov $2,$0
-mod $2,8
-mov $3,8
-sub $3,$2
-min $2,$3
-add $2,1
-mod $2,4
-mov $4,$0
-mov $5,10
-gcd $0,8
-lpb $4
-  mov $4,3
-  add $0,6
-  mov $5,7
+mov $2,15
+mov $3,3
+mov $4,2
+mov $5,1
+mov $6,2
+mov $7,1
+mov $8,2
+mov $9,3
+mov $10,30
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$5
-trn $0,63
-add $0,1
-add $0,$2
-div $0,2
-mov $1,$0
-div $0,8
-mul $0,49
-add $0,$1
-add $1,$0
-equ $1,2
-dif $0,2
-sub $0,2
-div $0,2
-add $0,$1
-add $0,2
+mov $0,$2

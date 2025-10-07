@@ -1,5 +1,5 @@
 ; A377780: First differences of A000015 (smallest prime-power >= n).
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 0,1,1,1,2,0,1,1,2,0,2,0,3,0,0,1,2,0,4,0,0,0,2,0,2,0,2,0,2,0,1,5,0,0,0,0,4,0,0,0,2,0,4,0,0,0,2,0,4,0,0,0,6,0,0,0,0,0,2,0,3,0,0,3,0,0,4,0,0,0,2,0,6,0,0,0,0,0,2,0
 
 #offset 1
@@ -11,8 +11,9 @@ lpb $2
   sub $2,1
   mov $0,$4
   add $0,$2
+  trn $0,1
   mov $5,$0
-  add $5,1
+  add $5,2
   seq $5,15 ; Smallest prime power >= n.
   sub $5,2
   mov $0,$5

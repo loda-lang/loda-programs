@@ -14,7 +14,7 @@ lpb $0
     mul $6,$5
     mov $7,$4
     add $7,1
-    seq $7,228441 ; G.f.: Sum_{k>0} -(-x)^k / (1 + x^k).
+    seq $7,228441 ; Expansion of Sum_{k>0} -(-x)^k / (1 + x^k).
     mov $9,10
     add $9,$5
     mul $7,$$9

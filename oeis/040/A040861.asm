@@ -1,26 +1,29 @@
 ; A040861: Continued fraction for sqrt(891).
-; Submitted by Science United
+; Submitted by loader3229
 ; 29,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1,58,1,5,1,1,1,5,1
 
-mov $2,10
-mov $3,$0
-mod $3,4
-mov $4,$0
-gcd $0,8
-lpb $4
-  mov $4,3
-  add $0,6
-  mov $2,7
+mov $2,29
+mov $3,1
+mov $4,5
+mov $5,1
+mov $6,1
+mov $7,1
+mov $8,5
+mov $9,1
+mov $10,58
+lpb $0
+  sub $0,1
+  mul $2,0
+  mov $1,$2
+  add $1,$3
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$1
 lpe
-mul $0,$2
-trn $0,63
-add $0,1
-add $0,$3
-gcd $1,$0
-add $1,1
-mul $1,8
-dif $1,$0
-add $1,1
-div $1,5
-mov $0,$1
-sub $0,1
+mov $0,$2

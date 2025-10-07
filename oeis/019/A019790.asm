@@ -1,24 +1,28 @@
 ; A019790: Decimal expansion of sqrt(e)/17.
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by 10esseeTony
 ; 0,9,6,9,8,3,6,0,4,1,5,8,8,3,1,0,6,7,4,6,1,6,8,5,3,4,0,4,5,9,6,5,6,6,8,0,6,8,5,5,1,6,2,4,1,2,1,8,2,4,4,0,0,0,6,8,0,8,8,7,0,1,8,3,3,1,8,0,3,5,8,9,4,8,2,0,1,2,6,8
 
-add $0,1
+add $0,2
+mov $1,10
+pow $1,$0
+mov $4,$1
+mul $4,2
+pow $1,2
 mov $2,1
-mov $3,$0
-mul $3,5
-lpb $3
-  mul $2,$3
-  sub $3,1
-  add $1,$2
-  div $1,$0
-  div $2,$0
-  mul $2,2
-lpe
-div $1,17
-mul $1,2
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
-mod $1,10
 mov $0,$1
+lpb $0
+  mul $3,-1
+  add $3,$2
+  mov $5,$0
+  sub $5,2
+  div $5,$3
+  mov $0,$5
+  add $2,2
+  mov $3,1
+  add $6,$5
+lpe
+mov $0,$6
+mul $0,2
+div $0,$4
+div $0,170
+mod $0,10

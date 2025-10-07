@@ -9,12 +9,6 @@ mov $5,-1
 mov $7,1
 mov $8,1
 mov $10,-1
-mov $12,1
-mov $13,1
-mov $14,1
-mov $16,-1
-mov $17,-1
-mov $19,1
 lpb $0
   sub $0,1
   mul $1,-1
@@ -27,15 +21,7 @@ lpb $0
   mov $6,$7
   mov $7,$8
   mov $8,$11
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$12
-  mov $12,$11
   mov $11,$10
   mov $10,$9
 lpe
-mov $0,$13
+mov $0,$1
