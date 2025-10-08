@@ -1,0 +1,66 @@
+; A316945: A triple of positive integers (n,p,k) is admissible if there exist at least two different multisets of k positive integers, {x_1,x_2,...,x_k} and {y_1,y_2,...,y_k}, such that x_1+x_2+...+x_k=y_1+y_2+...+y_k = n and x_1x_2...x_k = y_1y_2...y_k = p. For each n, let A(n)={k:(n,p,k) is admissible for some p}, and let a(n) = |A(n)|.
+; Submitted by loader3229
+; 0,0,0,0,0,0,0,0,0,0,0,1,2,4,4,6,7,7,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70
+; Formula: a(n) = ((n-1)>=18)+((n-1)>=15)+((n-1)>=13)-((n-1)>=17)-((n-1)>=14)-((n-1)>=10)-((n-1)>=9)-((n-1)>=8)-((n-1)>=7)-((n-1)>=6)-((n-1)>=5)-((n-1)>=4)-((n-1)>=3)-((n-1)>=2)-((n-1)>=1)+n-1
+
+#offset 1
+
+sub $0,1
+mov $1,$0
+geq $1,1
+mul $1,-1
+mov $2,$1
+mov $1,$0
+geq $1,2
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,3
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,4
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,5
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,6
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,7
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,8
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,9
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,10
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,13
+add $2,$1
+mov $1,$0
+geq $1,14
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,15
+add $2,$1
+mov $1,$0
+geq $1,17
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,18
+add $2,$1
+add $0,$2

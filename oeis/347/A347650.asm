@@ -1,0 +1,77 @@
+; A347650: Number of minimum total dominating sets in the n-pan graph (for n > 2).
+; Submitted by loader3229
+; 1,2,3,2,3,8,5,2,5,18,7,2,7,32,9,2,9,50,11,2,11,72,13,2,13,98,15,2,15,128,17,2,17,162,19,2,19,200,21,2,21,242,23,2,23,288,25,2,25,338,27,2,27,392,29,2,29,450,31,2,31,512,33,2,33,578,35,2,35,648
+
+#offset 1
+
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,2
+mov $6,3
+mov $7,8
+mov $8,5
+mov $9,2
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,3
+  add $1,29
+  mul $2,$1
+  mov $10,$2
+  sub $1,29
+  div $1,3
+  mul $1,4
+  add $1,52
+  mov $2,$3
+  mul $3,$1
+  add $10,$3
+  sub $1,52
+  div $1,4
+  mul $1,3
+  add $1,45
+  mov $3,$4
+  mul $4,$1
+  add $10,$4
+  sub $1,45
+  div $1,3
+  mul $1,2
+  add $1,36
+  mov $4,$5
+  mul $5,$1
+  add $10,$5
+  sub $1,36
+  div $1,2
+  mul $1,-3
+  add $1,5
+  mov $5,$6
+  mul $6,$1
+  add $10,$6
+  sub $1,5
+  div $1,-3
+  mul $1,-4
+  sub $1,20
+  mov $6,$7
+  mul $7,$1
+  add $10,$7
+  add $1,20
+  div $1,-4
+  mul $1,-3
+  sub $1,21
+  mov $7,$8
+  mul $8,$1
+  add $10,$8
+  add $1,21
+  div $1,-3
+  mul $1,-2
+  sub $1,20
+  mov $8,$9
+  mul $9,$1
+  add $10,$9
+  add $1,20
+  div $1,-2
+  add $1,1
+  mov $9,$10
+  div $9,10
+lpe
+mov $0,$2
