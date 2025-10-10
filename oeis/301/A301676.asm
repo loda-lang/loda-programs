@@ -1,21 +1,57 @@
 ; A301676: Coordination sequence for node of type V2 in "krs" 2-D tiling (or net).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,4,8,13,18,22,27,31,35,41,44,48,55,57,61,69,70,74,83,83,87,97,96,100,111,109,113,125,122,126,139,135,139,153,148,152,167,161,165,181,174,178,195,187,191,209,200,204,223,213,217,237,226,230,251,239,243,265,252,256,279,265,269,293,278,282,307,291,295,321,304,308,335,317,321,349,330,334,363,343
 
-mov $3,$0
-mov $5,2
-lpb $5
-  bin $5,$4
-  add $0,$5
+mov $2,1
+mov $3,4
+mov $4,8
+mov $5,13
+mov $6,18
+mov $7,22
+lpb $0
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,301677 ; Partial sums of A301676.
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
+  mul $1,2
+  sub $1,4
+  mul $2,$1
+  mov $8,$2
+  add $1,4
+  div $1,2
+  mul $1,7
+  sub $1,5
+  mov $2,$3
+  mul $3,$1
+  add $8,$3
+  add $1,5
+  div $1,7
+  mul $1,-7
+  sub $1,3
+  mov $3,$4
+  mul $4,$1
+  add $8,$4
+  div $1,-7
+  mul $1,-2
+  add $1,21
+  mov $4,$5
+  mul $5,$1
+  add $8,$5
+  sub $1,21
+  div $1,-2
+  mul $1,-7
+  add $1,26
+  mov $5,$6
+  mul $6,$1
+  add $8,$6
+  sub $1,26
+  div $1,-7
+  mul $1,7
+  sub $1,18
+  mov $6,$7
+  mul $7,$1
+  add $8,$7
+  add $1,18
+  div $1,7
+  add $1,1
+  mov $7,$8
+  div $7,11
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
-mov $0,$1
+mov $0,$2

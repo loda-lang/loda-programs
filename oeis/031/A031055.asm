@@ -1,44 +1,63 @@
 ; A031055: Write n in base 8, then complement each digit (d -> 7-d) and juxtapose.
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 6,5,4,3,2,1,0,6,7,6,6,6,5,6,4,6,3,6,2,6,1,6,0,5,7,5,6,5,5,5,4,5,3,5,2,5,1,5,0,4,7,4,6,4,5,4,4,4,3,4,2,4,1,4,0,3,7,3,6,3,5,3,4,3,3,3,2,3,1,3,0,2,7,2,6,2,5,2,4,2
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-mov $2,1
-mov $4,0
-mov $6,$1
-lpb $6
-  sub $6,1
-  mov $7,8
-  pow $7,$2
+mov $1,6
+mov $2,5
+mov $3,4
+mov $4,3
+mov $5,2
+mov $6,1
+mov $8,6
+mov $9,7
+mov $10,6
+mov $11,6
+mov $12,6
+mov $13,5
+mov $14,6
+mov $15,4
+mov $16,6
+mov $17,3
+mov $18,6
+mov $19,2
+mov $20,6
+mov $21,1
+mov $22,6
+mov $24,5
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $25,$1
+  mov $1,$2
+  mov $2,$3
   mov $3,$4
-  mov $4,$2
-  mul $4,$7
-  div $7,7
-  sub $4,$7
-  mov $5,$1
-  geq $5,$4
-  mul $6,$5
-  add $2,$5
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mul $7,-1
+  add $25,$7
+  add $25,$9
+  add $25,$23
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
 lpe
-mov $5,$1
-sub $5,$3
-mod $5,$2
-mov $6,$2
-sub $6,$5
-sub $6,1
-mov $5,8
-pow $5,$6
-mov $4,8
-pow $4,$2
-div $4,8
-sub $1,$3
-div $1,$2
-add $1,$4
-div $1,$5
-mod $1,8
-mul $1,-1
 mov $0,$1
-add $0,7

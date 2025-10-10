@@ -1,18 +1,60 @@
 ; A019450: Conjectured formula for irreducible 5-fold Euler sums of weight 2n+13.
-; Submitted by jmorken
+; Submitted by loader3229
 ; 1,2,5,9,15,23,36,50,71,96,127,165,213,266,333,409,498,600,720,851,1005,1176,1368,1582,1824,2085,2381,2703,3057,3444,3871,4328,4833,5376,5964,6598,7287,8018,8813,9660,10567,11536,12576,13673,14852,16099,17424,18828
 
 #offset 1
 
-add $0,2
+mov $1,1
+mov $2,2
+mov $3,5
+mov $4,9
+mov $5,15
+mov $6,23
+mov $7,36
+mov $8,50
+mov $9,71
+mov $10,96
+mov $11,127
+mov $12,165
+mov $13,213
+mov $14,266
+mov $15,333
+sub $0,1
 lpb $0
-  add $3,1
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,308265 ; Sum of the largest parts in the partitions of n into 3 parts.
-  add $1,$2
-  mov $3,4
+  sub $0,1
+  mov $16,$1
+  mov $1,$2
+  mov $2,$3
+  mul $3,-2
+  add $16,$3
+  mov $3,$4
+  mul $4,-2
+  add $16,$4
+  add $16,$5
+  mov $4,$5
+  mov $5,$6
+  mul $6,3
+  add $16,$6
+  add $16,$7
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mul $10,-1
+  add $16,$10
+  mov $10,$11
+  mul $11,-3
+  add $16,$11
+  mov $11,$12
+  mul $12,-1
+  add $16,$12
+  mov $12,$13
+  mul $13,2
+  add $16,$13
+  mov $13,$14
+  mul $14,2
+  add $16,$14
+  mov $14,$15
+  mov $15,$16
 lpe
 mov $0,$1

@@ -4,32 +4,29 @@
 
 #offset 1
 
-mov $6,$0
-add $6,3
-sub $0,1
-mov $2,$6
-sub $6,1
+mov $2,$0
+add $2,$0
 pow $2,2
 lpb $2
-  sub $2,1
-  mov $4,$5
-  add $4,1
-  seq $4,40 ; The prime numbers.
-  sub $4,1
   add $5,1
-  mov $7,$4
-  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $4,1
-  max $4,1
-  equ $4,1
-  sub $6,$4
-  mov $1,$6
-  max $1,0
-  equ $1,$6
-  mul $2,$1
+  mul $5,$1
+  add $5,1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $5,2
+  add $1,1
+  mov $3,$5
+  mul $3,$1
+  add $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $3,1
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $3,$7
-div $3,2
-mov $0,$3
-sub $0,3
-div $0,2
+mov $0,$1
+mul $0,2
+sub $0,4
+div $0,4

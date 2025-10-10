@@ -1,5 +1,5 @@
 ; A011645: 90th cyclotomic polynomial.
-; Submitted by KetamiNO [YouTube]
+; Submitted by Science United
 ; 1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1
 
 mov $2,-1
@@ -18,6 +18,7 @@ lpb $1
   equ $7,3
   sub $6,$7
   add $3,$6
+  mul $5,$0
   add $5,12
 lpe
 mov $1,$3

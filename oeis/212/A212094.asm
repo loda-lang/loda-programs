@@ -7,8 +7,8 @@ add $4,1
 lpb $4
   sub $4,1
   mov $1,0
+  mov $0,0
   sub $0,$4
-  sub $0,1
   pow $0,2
   lpb $0
     sub $0,1

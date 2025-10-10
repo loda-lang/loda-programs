@@ -1,17 +1,48 @@
 ; A160825: a(1) = 1. For n >=2, a(n) = the smallest integer > a(n-1) such that both a(n) and a(n)-a(n-1) have the same number of (non-leading) 0's when they are represented in binary.
-; Submitted by DukeBox
+; Submitted by hustlebankwrecktank
 ; 1,6,7,13,22,26,44,52,88,104,176,208,352,416,704,832,1408,1664,2816,3328,5632,6656,11264,13312,22528,26624,45056,53248,90112,106496,180224,212992,360448,425984,720896,851968,1441792,1703936,2883584,3407872,5767168,6815744,11534336,13631488,23068672,27262976,46137344,54525952,92274688,109051904,184549376,218103808,369098752,436207616,738197504,872415232,1476395008,1744830464,2952790016,3489660928,5905580032,6979321856,11811160064,13958643712,23622320128,27917287424,47244640256,55834574848
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A160824(n+1), b(0) = 1
+; Formula: a(n) = e(n-1)+1, b(n) = truncate((521*truncate((-120*truncate((-1042*truncate((240*b(n-1))/240))/(-1042)))/(-120)))/521)+1, b(5) = 5, b(4) = 4, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = d(n-2), c(5) = 18, c(4) = 4, c(3) = 9, c(2) = 6, c(1) = 1, c(0) = 5, d(n) = truncate((d(n-1)*(521*truncate((-120*truncate((-1042*truncate((240*b(n-1))/240))/(-1042)))/(-120))-937)+d(n-2)*(-120*truncate((-1042*truncate((240*b(n-1))/240))/(-1042))+1328)+d(n-3)*(-1042*truncate((240*b(n-1))/240)+1874)+d(n-4)*(240*b(n-1)-720))/484), d(7) = 72, d(6) = 16, d(5) = 36, d(4) = 8, d(3) = 18, d(2) = 4, d(1) = 9, d(0) = 6, e(n) = c(n-1)+e(n-1), e(5) = 25, e(4) = 21, e(3) = 12, e(2) = 6, e(1) = 5, e(0) = 0
 
 #offset 1
 
-mov $1,1
+mov $2,1
+mov $3,5
+mov $4,1
+mov $5,6
 sub $0,1
 lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,160824 ; a(1)=1, a(n) = the smallest positive integer such that both a(n) and Sum_{k=1..n} a(k) have the same number of (nonleading) 0's when they are represented in binary.
   sub $0,1
-  add $1,$2
+  mul $1,240
+  sub $1,720
+  mul $2,$1
+  mov $6,$2
+  add $7,$3
+  add $1,720
+  div $1,240
+  mul $1,-1042
+  add $1,1874
+  mov $2,$3
+  mul $3,$1
+  add $6,$3
+  sub $1,1874
+  div $1,-1042
+  mul $1,-120
+  add $1,1328
+  mov $3,$4
+  mul $4,$1
+  add $6,$4
+  sub $1,1328
+  div $1,-120
+  mul $1,521
+  sub $1,937
+  mov $4,$5
+  mul $5,$1
+  add $6,$5
+  add $1,937
+  div $1,521
+  add $1,1
+  mov $5,$6
+  div $5,484
 lpe
-mov $0,$1
+mov $0,$7
+add $0,1

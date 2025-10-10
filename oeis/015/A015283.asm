@@ -6,24 +6,28 @@ mul $0,4
 add $0,10
 div $0,7
 sub $0,1
-mov $1,-7
-mov $4,3
 dif $0,2
+mov $2,-7
+mov $5,3
 add $0,3
 lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  mov $5,-1
-  pow $5,$3
-  add $5,1
-  dif $3,2
-  seq $3,15003 ; Inverse of 994th cyclotomic polynomial.
-  mul $3,$5
-  div $3,2
-  mul $1,6
-  add $1,68
-  add $2,$3
-  mov $4,$1
+  sub $0,$5
+  mov $4,$0
+  max $4,0
+  mov $3,$4
+  sub $4,164
+  mul $3,$4
+  div $3,$4
+  mov $1,-1
+  pow $1,$3
+  add $1,1
+  mov $4,$3
+  dif $4,2
+  seq $4,15003 ; Inverse of 994th cyclotomic polynomial.
+  mul $4,$1
+  div $4,2
+  mul $2,6
+  add $2,68
+  mov $5,$2
 lpe
-mov $0,$2
+mov $0,$4

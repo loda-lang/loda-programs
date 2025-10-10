@@ -1,22 +1,71 @@
 ; A326034: Number of knapsack partitions of n with largest part 3.
-; Submitted by arkiss
+; Submitted by loader3229
 ; 0,0,0,1,1,2,1,2,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,3,1,3
 
-mov $4,1
-mov $2,$0
-lpb $2
-  max $2,$1
-  add $4,$3
-  add $4,1
-  add $3,2
-  mov $5,$0
-  mod $5,$4
-  min $5,1
-  mul $5,$3
-  add $1,$5
-  sub $2,$3
-  sub $3,$4
+mov $5,1
+mov $6,1
+mov $7,2
+mov $8,1
+mov $9,2
+lpb $0
+  sub $0,1
+  mul $1,-25
+  add $1,175
+  mul $2,$1
+  mov $10,$2
+  sub $1,175
+  div $1,-25
+  mul $1,-20
+  add $1,120
+  mov $2,$3
+  mul $3,$1
+  add $10,$3
+  sub $1,120
+  div $1,-20
+  mul $1,-61
+  add $1,255
+  mov $3,$4
+  mul $4,$1
+  add $10,$4
+  sub $1,255
+  div $1,-61
+  mul $1,170
+  sub $1,795
+  mov $4,$5
+  mul $5,$1
+  add $10,$5
+  add $1,795
+  div $1,170
+  mul $1,231
+  sub $1,925
+  mov $5,$6
+  mul $6,$1
+  add $10,$6
+  add $1,925
+  div $1,231
+  mul $1,61
+  sub $1,130
+  mov $6,$7
+  mul $7,$1
+  add $10,$7
+  add $1,130
+  div $1,61
+  mul $1,-145
+  add $1,620
+  mov $7,$8
+  mul $8,$1
+  add $10,$8
+  sub $1,620
+  div $1,-145
+  mul $1,-211
+  add $1,805
+  mov $8,$9
+  mul $9,$1
+  add $10,$9
+  sub $1,805
+  div $1,-211
+  add $1,1
+  mov $9,$10
+  div $9,125
 lpe
-sub $1,$3
-mov $0,$1
-div $0,2
+mov $0,$2

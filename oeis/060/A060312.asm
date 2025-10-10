@@ -1,17 +1,38 @@
 ; A060312: Number of distinct ways to tile a 2 X n rectangle with dominoes (solutions are identified if they are rotations or reflections of each other).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,1,2,4,5,9,12,21,30,51,76,127,195,322,504,826,1309,2135,3410,5545,8900,14445,23256,37701,60813,98514,159094,257608,416325,673933,1089648,1763581,2852242,4615823,7466468,12082291,19546175,31628466,51170460,82798926,133962621,216761547,350713222,567474769,918170280,1485645049,2403786672,3889431721,6293172025,10182603746,16475700746,26658304492,43133883845,69792188337,112925875764,182718064101,295643622054,478361686155,774004793980,1252366480135,2026370442075,3278736922210,5305106018016
 
 #offset 1
 
-mov $1,-1
-pow $1,$0
-add $1,3
-add $1,$0
-add $0,1
-dif $1,$0
-div $1,2
-seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $0,$1
-div $0,2
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,4
+mov $5,5
+mov $6,9
+mov $7,12
+mov $8,21
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $9,$1
+  mov $1,$2
+  mov $2,$3
+  mul $3,-1
+  add $9,$3
+  mov $3,$4
+  mul $4,-1
+  add $9,$4
+  mov $4,$5
+  mov $5,$6
+  mul $6,-1
+  add $9,$6
+  mov $6,$7
+  mul $7,2
+  add $9,$7
+  add $9,$8
+  mov $7,$8
+  mov $8,$9
+lpe
+mov $0,$1

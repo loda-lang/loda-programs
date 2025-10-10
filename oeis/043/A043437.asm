@@ -1,32 +1,67 @@
 ; A043437: Numbers having one 4 in base 8.
-; Submitted by Science United
+; Submitted by loader3229
 ; 4,12,20,28,32,33,34,35,37,38,39,44,52,60,68,76,84,92,96,97,98,99,101,102,103,108,116,124,132,140,148,156,160,161,162,163,165,166,167,172,180,188,196,204,212,220,224,225,226,227,229,230
 
 #offset 1
 
+mov $1,4
+mov $2,12
+mov $3,20
+mov $4,28
+mov $5,32
+mov $6,33
+mov $7,34
+mov $8,35
+mov $9,37
+mov $10,38
+mov $11,39
+mov $12,44
+mov $13,52
+mov $14,60
 sub $0,1
-mov $2,$0
-mul $2,240
-add $2,133
-lpb $2
-  add $4,3
-  mov $5,0
-  mov $3,$1
-  lpb $3
-    mov $6,$3
-    mod $6,8
-    equ $6,$4
-    div $3,8
-    add $5,$6
-  lpe
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $15,$1
+  mov $1,$2
+  mul $2,2
+  add $15,$2
+  mov $2,$3
+  mul $3,-2
+  add $15,$3
+  mov $3,$4
+  mul $4,2
+  add $15,$4
+  mov $4,$5
+  mul $5,-2
+  add $15,$5
+  mov $5,$6
+  mul $6,2
+  add $15,$6
+  mov $6,$7
+  mul $7,-2
+  add $15,$7
+  mov $7,$8
+  mul $8,2
+  add $15,$8
+  mov $8,$9
+  mul $9,-2
+  add $15,$9
+  mov $9,$10
+  mul $10,2
+  add $15,$10
+  mov $10,$11
+  mul $11,-2
+  add $15,$11
+  mov $11,$12
+  mul $12,2
+  add $15,$12
+  mov $12,$13
+  mul $13,-2
+  add $15,$13
+  mov $13,$14
+  mul $14,2
+  add $15,$14
+  mov $14,$15
 lpe
 mov $0,$1

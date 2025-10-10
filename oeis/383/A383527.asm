@@ -1,13 +1,24 @@
 ; A383527: Partial sums of A005773.
-; Submitted by vaughan
+; Submitted by KetamiNO [YouTube]
 ; 1,2,4,9,22,57,153,420,1170,3293,9339,26642,76363,219728,634312,1836229,5328346,15494125,45137995,131712826,384900937,1126265986,3299509114,9676690939,28407473191,83470059532,245465090758,722406781935,2127562036990,6270020029353
-; Formula: a(n) = a(n-1)+A005773(n), a(0) = 1
 
-mov $1,1
+mov $4,1
+mul $0,2
 lpb $0
-  mov $2,$0
-  seq $2,5773 ; Number of directed animals of size n (or directed n-ominoes in standard position).
-  sub $0,1
-  add $1,$2
+  sub $0,2
+  add $2,$1
+  mul $2,$3
+  add $3,1
+  add $5,1
+  mov $1,$4
+  add $1,$4
+  div $2,$5
+  add $2,$4
+  add $2,$4
+  mul $4,-1
+  add $4,$2
+  add $6,$2
 lpe
-mov $0,$1
+mov $0,$6
+div $0,2
+add $0,1

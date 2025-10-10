@@ -1,26 +1,33 @@
 ; A010164: Continued fraction for sqrt(93).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 9,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1
 
-mov $1,-1
-pow $1,$0
-add $1,2
-mov $2,16
-mul $0,2
-pow $0,2
+mov $1,9
+mov $2,1
+mov $3,1
+mov $4,1
+mov $5,4
+mov $6,6
+mov $7,4
+mov $8,1
+mov $9,1
+mov $10,1
+mov $11,18
 lpb $0
-  mov $3,$0
-  mov $0,0
-  mul $2,9
-  add $2,6
-  mod $3,10
-  add $3,5
-  div $2,$3
-  sub $2,5
+  sub $0,1
+  mul $1,0
+  mov $12,$1
+  add $12,$2
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
 lpe
-sub $2,7
-mov $0,$2
-mul $0,$1
-sub $0,2
-div $0,3
-add $0,1
+mov $0,$1

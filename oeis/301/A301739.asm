@@ -1,21 +1,60 @@
 ; A301739: The number of trees with 4 nodes labeled by positive integers, where each tree's label sum is n.
-; Submitted by Michael Goetz
+; Submitted by loader3229
 ; 2,4,10,17,30,44,67,91,126,163,213,265,333,403,491,582,693,807,944,1084,1249,1418,1614,1814,2044,2278,2544,2815,3120,3430,3777,4129,4520,4917,5355,5799,6287,6781,7321,7868,8463,9065,9718,10378,11091,11812,12588,13372,14214,15064
 
 #offset 4
 
-sub $0,3
+mov $2,2
+mov $3,4
+mov $4,10
+mov $5,17
+mov $6,30
+mov $7,44
+sub $0,4
 lpb $0
-  add $1,$3
-  mov $2,$0
-  mul $2,$0
-  add $2,1
-  mul $2,2
-  div $2,3
-  add $2,1
-  add $3,1
   sub $0,1
-  trn $0,1
-  add $1,$2
+  mul $1,-209
+  sub $1,2172
+  mul $2,$1
+  mov $8,$2
+  add $1,2172
+  div $1,-209
+  mul $1,920
+  add $1,5820
+  mov $2,$3
+  mul $3,$1
+  add $8,$3
+  sub $1,5820
+  div $1,920
+  mul $1,1129
+  add $1,10170
+  mov $3,$4
+  mul $4,$1
+  add $8,$4
+  sub $1,10170
+  div $1,1129
+  mul $1,209
+  add $1,8448
+  mov $4,$5
+  mul $5,$1
+  add $8,$5
+  sub $1,8448
+  div $1,209
+  mul $1,-920
+  sub $1,300
+  mov $5,$6
+  mul $6,$1
+  add $8,$6
+  div $1,-920
+  mul $1,-1129
+  sub $1,4650
+  mov $6,$7
+  mul $7,$1
+  add $8,$7
+  add $1,4650
+  div $1,-1129
+  add $1,1
+  mov $7,$8
+  div $7,756
 lpe
-mov $0,$1
+mov $0,$2

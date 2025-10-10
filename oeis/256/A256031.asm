@@ -1,23 +1,15 @@
 ; A256031: Number of irreducible idempotents in partial Brauer monoid PB_n.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 2,3,12,30,240,840,10080,45360,725760,3991680,79833600,518918400,12454041600,93405312000,2615348736000,22230464256000,711374856192000,6758061133824000,243290200817664000,2554547108585472000,102181884343418880000,1175091669949317120000
+; Formula: a(n) = (gcd(n-1,2)*(n-1)+2)*(n-1)!
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-mov $4,1
-fac $4,$1
 sub $0,1
-mov $2,$0
-mod $2,2
-mul $2,2
-add $2,2
-mov $3,$4
-mul $3,2
-mul $0,20
-div $0,$2
-div $0,5
+mov $1,$0
+mov $2,1
+fac $2,$0
+gcd $0,2
+mul $0,$1
 add $0,2
-mul $0,$3
-div $0,2
+mul $0,$2

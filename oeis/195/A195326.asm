@@ -1,11 +1,21 @@
 ; A195326: Numerators of fractions leading to e - 1/e (A174548).
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Science United
 ; 0,2,2,7,7,47,47,5923,5923,426457,426457,15636757,15636757,7318002277,7318002277,1536780478171,1536780478171,603180793741,603180793741,142957467201379447,142957467201379447
-; Formula: a(n) = truncate(A306150(n)/gcd(n!,A306150(n)))
+; Formula: a(n) = truncate((2*c(n))/gcd(n!,2*c(n))), b(n) = b(n-1)==0, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = (b(n-1)==0)+n*c(n-1), c(2) = 2, c(1) = 1, c(0) = 0
 
 mov $1,$0
-seq $1,306150 ; Row sums of A306015.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+lpb $1
+  sub $1,1
+  equ $2,0
+  add $3,1
+  mul $5,$3
+  add $5,$2
+lpe
+mov $1,$5
+mul $1,2
+mov $4,1
+fac $4,$0
+mov $0,$4
 gcd $0,$1
 div $1,$0
 mov $0,$1

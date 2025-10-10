@@ -18,6 +18,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $11,3
+    dif $4,2
     add $5,1
     mul $7,$$9
     mod $2,$11

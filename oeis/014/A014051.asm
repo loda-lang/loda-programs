@@ -1,26 +1,38 @@
 ; A014051: Inverse of 42nd cyclotomic polynomial.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,-1,1,0,0,0,0,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,-1,1,-1,0,0,0,0,-1,1,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,0,0,0,0,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,-1,1,-1,0,0,0,0,-1,1,-1,0,0,0,0,0,0,0
 
-mov $1,-1
-pow $1,$0
+mov $1,1
+mov $2,-1
+mov $3,1
+mov $8,1
+mov $9,-1
+mov $10,1
 lpb $0
-  add $2,21
-  add $5,21
-  mod $0,$2
-  mov $3,-1
-  mov $4,4
-  add $4,$0
-  div $0,10
+  sub $0,1
+  mul $1,-1
+  mov $13,$1
+  mov $1,$2
+  mul $2,-1
+  add $13,$2
+  add $13,$4
+  add $13,$5
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mul $7,-1
+  add $13,$7
+  add $13,$9
+  add $13,$10
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mul $12,-1
+  add $13,$12
+  mov $12,$13
 lpe
-sub $3,$4
-div $3,4
-add $0,1
-mul $0,$3
-mul $0,2
-gcd $5,2
-mul $5,2
-sub $0,$5
-add $0,6
-div $0,2
-mul $0,$1
+mov $0,$1

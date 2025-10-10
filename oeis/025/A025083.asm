@@ -1,23 +1,50 @@
 ; A025083: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (Fibonacci numbers), t = (odd natural numbers).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 3,5,12,16,34,42,77,91,160,184,312,352,587,653,1076,1184,1938,2114,3445,3731,6064,6528,10592,11344,18387,19605,31756,33728,54610,57802,93565,98731,159792,168152,272120,285648,462235,484125,783380,818800,1324898,1382210
 
 #offset 1
 
+mov $1,3
+mov $2,5
+mov $3,12
+mov $4,16
+mov $5,34
+mov $6,42
+mov $7,77
+mov $8,91
+mov $9,160
+mov $10,184
 sub $0,1
-mov $1,$0
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$5
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  mul $0,2
-  add $3,$0
-  add $4,$3
-  add $4,3
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $11,$1
+  mov $1,$2
+  mul $2,2
+  add $11,$2
+  mov $2,$3
+  mul $3,-3
+  add $11,$3
+  mov $3,$4
+  mul $4,4
+  add $11,$4
+  mov $4,$5
+  mul $5,-1
+  add $11,$5
+  mov $5,$6
+  mul $6,-2
+  add $11,$6
+  mov $6,$7
+  mul $7,3
+  add $11,$7
+  mov $7,$8
+  mul $8,-4
+  add $11,$8
+  add $11,$9
+  mov $8,$9
+  mov $9,$10
+  mul $10,2
+  add $11,$10
+  mov $10,$11
 lpe
-mov $0,$4
+mov $0,$1

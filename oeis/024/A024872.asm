@@ -1,22 +1,47 @@
 ; A024872: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (natural numbers >= 2), t = (Fibonacci numbers).
-; Submitted by vanos0512
+; Submitted by loader3229
 ; 2,4,12,19,43,70,138,223,409,662,1162,1880,3210,5194,8710,14093,23353,37786,62118,100509,164355,265932,433316,701120,1139714,1844096,2992960,4842711,7851463,12703934,20582546,33303259,53932317,87264322
 
 #offset 2
 
-mov $1,$0
+mov $1,2
+mov $2,4
+mov $3,12
+mov $4,19
+mov $5,43
+mov $6,70
+mov $7,138
+mov $8,223
+mov $9,409
+mov $10,662
 sub $0,2
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  seq $0,22360 ; Fibonacci sequence beginning 0, 26.
-  add $3,$0
-  add $4,$3
+lpb $0
+  sub $0,1
+  mov $11,$1
+  add $11,$2
+  add $11,$3
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mul $4,2
+  add $11,$4
+  mov $4,$5
+  mul $5,-3
+  add $11,$5
+  mov $5,$6
+  mul $6,-1
+  add $11,$6
+  mov $6,$7
+  mul $7,-1
+  add $11,$7
+  mov $7,$8
+  mul $8,-2
+  add $11,$8
+  mov $8,$9
+  mul $9,3
+  add $11,$9
+  add $11,$10
+  mov $9,$10
+  mov $10,$11
 lpe
-add $4,$3
-mov $0,$4
-div $0,26
+mov $0,$1

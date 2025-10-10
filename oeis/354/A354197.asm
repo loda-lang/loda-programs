@@ -1,5 +1,5 @@
 ; A354197: a(n) = A064989(sigma(sigma(sigma(A003961(n))))), where A003961 shifts the prime factorization one step towards larger primes, and A064989 shifts it back towards smaller primes.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Science United
 ; 1,1,5,2,2,10,5,44,20,11,6,6,5,5,5,3,2,20,10,4,10,12,66,6,58,10,204,204,11,5,10,986,20,2,55,113,20,55,12,2,5,55,5,29,40,132,12,15,40,58,132,10,6,6,6,18,5,8,20,6,22,145,78,262,5,20,10,170,10,40,6,2486,2,40,50,12,40,12,20,6
 
 #offset 1
@@ -27,7 +27,6 @@ lpb $0
       mov $1,$5
       gcd $1,$7
       equ $1,1
-      mov $3,2
       sub $7,$1
     lpe
     neq $7,0

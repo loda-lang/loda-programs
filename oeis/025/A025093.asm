@@ -1,26 +1,50 @@
 ; A025093: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (Lucas numbers), t = (odd natural numbers).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 3,5,22,30,66,82,161,191,342,394,680,768,1291,1437,2382,2622,4306,4698,7673,8311,13526,14562,23648,25328,41075,43797,70966,75374,122066,129202,209169,220719,357254,375946,608424,638672,1033531,1082477,1751630,1830830
 
 #offset 1
 
-mov $1,$0
-add $1,1
+mov $1,3
+mov $2,5
+mov $3,22
+mov $4,30
+mov $5,66
+mov $6,82
+mov $7,161
+mov $8,191
+mov $9,342
+mov $10,394
 sub $0,1
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$5
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  mul $0,2
+lpb $0
   sub $0,1
-  add $3,$0
-  add $4,$3
+  mul $1,-1
+  mov $11,$1
+  mov $1,$2
+  mul $2,2
+  add $11,$2
+  mov $2,$3
+  mul $3,-3
+  add $11,$3
+  mov $3,$4
+  mul $4,4
+  add $11,$4
+  mov $4,$5
+  mul $5,-1
+  add $11,$5
+  mov $5,$6
+  mul $6,-2
+  add $11,$6
+  mov $6,$7
+  mul $7,3
+  add $11,$7
+  mov $7,$8
+  mul $8,-4
+  add $11,$8
+  add $11,$9
+  mov $8,$9
+  mov $9,$10
+  mul $10,2
+  add $11,$10
+  mov $10,$11
 lpe
-mul $5,2
-add $5,$4
-mov $0,$5
+mov $0,$1

@@ -1,9 +1,37 @@
-; A044298: Numbers n such that string 5,2 occurs in the base 9 representation of n but not of n-1.
-; Submitted by ckrause
-; 47,128,209,290,371,423,452,533,614,695,776,857,938,1019,1100,1152,1181,1262,1343,1424,1505,1586,1667,1748,1829,1881,1910,1991,2072,2153,2234,2315,2396,2477,2558,2610,2639,2720,2801
-; Formula: a(n) = A044678(n)+1
+; A044298: Numbers k such that the string 5,2 occurs in the base 9 representation of k but not of k-1.
+; Submitted by loader3229
+; 47,128,209,290,371,423,452,533,614,695,776,857,938,1019,1100,1152,1181,1262,1343,1424,1505,1586,1667,1748,1829,1881,1910,1991,2072,2153,2234,2315,2396,2477,2558,2610,2639,2720,2801,2882,2963,3044,3125,3206,3287,3339,3368
 
 #offset 1
 
-seq $0,44678 ; Numbers n such that string 5,1 occurs in the base 9 representation of n but not of n+1.
-add $0,1
+mov $1,47
+mov $2,128
+mov $3,209
+mov $4,290
+mov $5,371
+mov $6,423
+mov $7,452
+mov $8,533
+mov $9,614
+mov $10,695
+mov $11,776
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $12,$1
+  add $12,$2
+  add $12,$11
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+lpe
+mov $0,$1

@@ -1,20 +1,18 @@
 ; A092283: Triangular array read by rows: T(n,k)=n+k^2, 1<=k<=n.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 2,3,6,4,7,12,5,8,13,20,6,9,14,21,30,7,10,15,22,31,42,8,11,16,23,32,43,56,9,12,17,24,33,44,57,72,10,13,18,25,34,45,58,73,90,11,14,19,26,35,46,59,74,91,110,12,15,20,27,36,47,60,75,92,111,132,13,16,21,28,37,48,61,76,93,112,133,156,14,17
-; Formula: a(n) = (-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^2+truncate((sqrtint(8*n)-1)/2)+1
+; Formula: a(n) = (-binomial(truncate((sqrtint(8*n)+1)/2),2)+gcd(0,n))^2+truncate((sqrtint(8*n)+1)/2)
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-pow $0,2
-add $1,$0
-mov $0,$1
+gcd $1,$0
+mul $0,8
+nrt $0,2
 add $0,1
+div $0,2
+mov $2,$0
+bin $0,2
+sub $1,$0
+pow $1,2
+add $1,$2
+mov $0,$1

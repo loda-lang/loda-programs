@@ -1,23 +1,47 @@
-; A024873: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (natural numbers >= 2), t = (Lucas numbers).
-; Submitted by LG@BOINC
+; A024873: a(n) = s(1)*t(n) + s(2)*t(n-1) + ... + s(k)*t(n-k+1), where k = [ n/2 ], s = (natural numbers >= 2), t = (Lucas numbers).
+; Submitted by loader3229
 ; 6,8,26,43,97,156,308,499,915,1480,2598,4204,7178,11614,19476,31513,52219,84492,138900,224745,367509,594642,968924,1567752,2548478,4123524,6692462,10828631,17556405,28406860,46023972,74468351,120596327,195128956,315902914
 
 #offset 2
 
-mov $1,$0
-sub $1,1
+mov $1,6
+mov $2,8
+mov $3,26
+mov $4,43
+mov $5,97
+mov $6,156
+mov $7,308
+mov $8,499
+mov $9,915
+mov $10,1480
 sub $0,2
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-  add $3,$0
-  add $4,$3
+lpb $0
+  sub $0,1
+  mov $11,$1
+  add $11,$2
+  add $11,$3
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mul $4,2
+  add $11,$4
+  mov $4,$5
+  mul $5,-3
+  add $11,$5
+  mov $5,$6
+  mul $6,-1
+  add $11,$6
+  mov $6,$7
+  mul $7,-1
+  add $11,$7
+  mov $7,$8
+  mul $8,-2
+  add $11,$8
+  mov $8,$9
+  mul $9,3
+  add $11,$9
+  add $11,$10
+  mov $9,$10
+  mov $10,$11
 lpe
-add $4,$3
-mov $0,$4
+mov $0,$1

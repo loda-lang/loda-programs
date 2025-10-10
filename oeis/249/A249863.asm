@@ -1,16 +1,17 @@
 ; A249863: Chebyshev S polynomial (A049310) evaluated at x = 26/7 and multiplied by powers of 7 (A000420).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,26,627,15028,360005,8623758,206577463,4948449896,118537401609,2839498396930,68018625641339,1629348845225244,39030157319430733,934945996889162102,22396118210466108735,536486719624549884112
+; Formula: a(n) = b(n-1), a(1) = 26, a(0) = 1, b(n) = 26*b(n-1)-49*b(n-2), b(1) = 627, b(0) = 26
 
-mov $3,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  mul $0,24
-  add $3,$1
-  add $3,1
-  add $3,$0
-  sub $1,$0
+mov $2,1
+mov $3,26
+lpb $0
+  sub $0,1
+  mul $2,-49
+  mov $1,$2
+  mov $2,$3
+  mul $3,26
+  add $1,$3
+  mov $3,$1
 lpe
-mov $0,$3
+mov $0,$2

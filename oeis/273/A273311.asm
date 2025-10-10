@@ -1,12 +1,40 @@
 ; A273311: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
+; Submitted by loader3229
 ; 1,5,22,62,135,247,408,624,905,1257,1690,2210,2827,3547,4380,5332,6413,7629,8990,10502,12175,14015,16032,18232,20625,23217,26018,29034,32275,35747,39460,43420,47637,52117,56870,61902,67223,72839,78760,84992,91545,98425,105642,113202,121115,129387,138028,147044,156445,166237,176430,187030,198047,209487,221360,233672,246433,259649,273330,287482,302115,317235,332852,348972,365605,382757,400438,418654,437415,456727,476600,497040,518057,539657,561850,584642,608043,632059,656700,681972
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A273309(n), b(0) = 0
+; Formula: a(n) = c(n-3), a(4) = 135, a(3) = 62, a(2) = 22, a(1) = 5, a(0) = 1, b(n) = truncate((-337*truncate((173*truncate((337*truncate((-173*b(n-1))/(-173))+53)/337))/173))/(-337))+1, b(4) = 4, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = truncate((-173*c(n-4)*b(n-1)+c(n-1)*(-337*truncate((173*truncate((337*truncate((-173*b(n-1))/(-173))+53)/337))/173)+439)+c(n-2)*(173*truncate((337*truncate((-173*b(n-1))/(-173))+53)/337)+831)+c(n-3)*(337*truncate((-173*b(n-1))/(-173))+53))/339), c(6) = 1257, c(5) = 905, c(4) = 624, c(3) = 408, c(2) = 247, c(1) = 135, c(0) = 62
 
+mov $2,1
+mov $3,5
+mov $4,22
+mov $5,62
 lpb $0
-  mov $2,$0
-  seq $2,273309 ; Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 641", based on the 5-celled von Neumann neighborhood.
   sub $0,1
-  add $1,$2
+  mul $1,-173
+  mul $2,$1
+  mov $6,$2
+  div $1,-173
+  mul $1,337
+  add $1,53
+  mov $2,$3
+  mul $3,$1
+  add $6,$3
+  div $1,337
+  mul $1,173
+  add $1,831
+  mov $3,$4
+  mul $4,$1
+  add $6,$4
+  sub $1,831
+  div $1,173
+  mul $1,-337
+  add $1,439
+  mov $4,$5
+  mul $5,$1
+  add $6,$5
+  sub $1,439
+  div $1,-337
+  add $1,1
+  mov $5,$6
+  div $5,339
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2
