@@ -19,6 +19,7 @@ A001316: Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of 
 A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
 A001670: n appears n times (n even).
+A001837: Numbers k such that phi(2k+1) < phi(2k).
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 A001953: a(n) = floor((n + 1/2) * sqrt(2)).
@@ -110,6 +111,7 @@ A019594: Conway's "para-budding" sequence.
 A019778: Decimal expansion of sqrt(e)/5.
 A019786: Decimal expansion of sqrt(e)/13.
 A020639: Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+A020677: Numbers of form 3*x^2 + 4*y^2.
 A022164: First column of spectral array W(sqrt(5)-1).
 A022303: The sequence a of 1's and 2's starting with (1,2,1) such that a(n) is the length of the (n+2)nd run of a.
 A022342: Integers with "even" Zeckendorf expansions (do not end with ...+F_2 = ...+1) (the Fibonacci-even numbers); also, apart from first term, a(n) = Fibonacci successor to n-1.
@@ -124,11 +126,13 @@ A023689: Numbers with exactly 7 ones in binary expansion.
 A023690: Numbers with exactly 8 ones in binary expansion.
 A023805: Xenodromes: all digits in base 11 are different.
 A023806: Xenodromes: all digits in base 12 are different.
+A023893: Number of partitions of n into prime power parts (1 included); number of nonisomorphic Abelian subgroups of symmetric group S_n.
 A024698: a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
 A024702: a(n) = (prime(n)^2 - 1)/24.
 A024707: Positions of multiples of 5 in A024702.
 A025426: Number of partitions of n into 2 nonzero squares.
 A025441: Number of partitions of n into 2 distinct nonzero squares.
+A025446: Number of partitions of n into 2 nonnegative cubes.
 A025456: Number of partitions of n into 3 positive cubes.
 A025465: Number of partitions of n into 3 distinct nonnegative cubes.
 A025480: a(2n) = n, a(2n+1) = a(n).
@@ -136,6 +140,8 @@ A026274: Greatest k such that s(k) = n, where s = A026272.
 A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 A026513: a(n) = t(2+3n), where t = A001285 (Thue-Morse sequence).
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
+A029927: Convert n from nautical miles to statute miles.
+A030556: run length of n-th run of digit 0 in A030548.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
 A030132: Digital root of Fibonacci(n).
 A030133: a(n+1) is the sum of digits of (a(n) + a(n-1)).
@@ -192,6 +198,12 @@ A039007: Numbers whose base-5 representation has the same number of 0's and 1's.
 A039010: Numbers whose base-5 representation has the same number of 1's and 2's.
 A039012: Numbers whose base-5 representation has the same number of 1's and 4's.
 A039014: Numbers whose base-5 representation has the same number of 2's and 4's.
+A039051: Numbers whose base-8 representation has the same number of 0's and 2's.
+A039057: Numbers whose base-8 representation has the same number of 1's and 3's.
+A039065: Numbers whose base-8 representation has the same number of 2's and 6's.
+A039068: Numbers whose base-8 representation has the same number of 3's and 5's.
+A039069: Numbers whose base-8 representation has the same number of 3's and 6's.
+A039071: Numbers whose base-8 representation has the same number of 4's and 5's.
 A039139: Numbers whose base-10 representation has the same number of 3's and 8's.
 A039966: a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
 A040008: Continued fraction for sqrt(12).
@@ -200,10 +212,15 @@ A040074: Continued fraction for sqrt(84).
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
 A042987: Primes congruent to {2, 3, 5, 7} mod 8.
 A042999: Primes congruent to {2, 3, 5} (mod 8).
+A043091: Every string of 2 consecutive base 5 digits contains exactly 2 distinct numbers.
+A043279: Maximal run length in base 5 representation of n.
 A043529: Number of distinct base-2 digits of n.
 A043545: (Maximal base-2 digit of n) - (minimal base-2 digit of n).
 A044241: Numbers n such that string 6,6 occurs in the base 8 representation of n but not of n-1.
 A044249: Numbers k such that string 7,6 occurs in the base 8 representation of k but not of k-1.
+A044329: Numbers n such that string 8,6 occurs in the base 9 representation of n but not of n-1.
+A044396: Numbers n such that string 6,4 occurs in the base 10 representation of n but not of n-1.
+A044866: Positive integers having the same number of base-10 runs of odd length as even.
 A044939: Number of runs of even length in base-8 representation of n.
 A044941: Number of runs of even length in base-10 representation of n.
 A045252: Numbers whose base-5 expansion contains exactly one 1 and one 4.
@@ -229,6 +246,7 @@ A046363: Composite numbers whose sum of prime factors (with multiplicity) is pri
 A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 A046933: Number of composites between successive primes.
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
+A048636: Primes of the form prime^3 + 2.
 A048671: a(n) is the least common multiple of the proper divisors of n.
 A048865: a(n) is the number of primes in the reduced residue system mod n.
 A048896: a(n) = 2^(A000120(n+1) - 1), n >= 0.
@@ -327,6 +345,7 @@ A079947: Partial sums of A030300.
 A080081: Beatty sequence for (3+sqrt(13))/2.
 A080339: Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 A080463: Sum of the two numbers formed by alternate digits of n.
+A080612: Numbers n such that 1/p(2n+1)*sum(k=1,n,p(2k+1)-p(2k)) >= 1/p(2*n)*sum(k=1,n,p(2k)-p(2k-1)) where p(k) denotes the k-th prime.
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
 A080755: a(n) = ceiling(n*(1+1/sqrt(2))).
 A080763: Exchange 1's and 2's in the eta-sequence A006337.
@@ -343,6 +362,7 @@ A085003: Partial sums of A085002.
 A085263: Number of ways to write n as the sum of a squarefree number (A005117) and a positive square (A000290).
 A085357: Common residues of binomial(3n,n)/(2n+1) modulo 2: relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
 A085405: Common residues of binomial(3n+2,n+1)/(3n+2) modulo 2.
+A085563: Sum of the prime digits of n.
 A086377: a(1)=1; a(n)=a(n-1)+2 if n is in the sequence; a(n)=a(n-1)+2 if n and (n-1) are not in the sequence; a(n)=a(n-1)+3 if n is not in the sequence but (n-1) is in the sequence.
 A087055: Largest square number less than 2*n^2.
 A087560: Smallest m > n such that gcd(m, n^2) = n.
@@ -362,6 +382,7 @@ A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for w
 A092391: a(n) = n + wt(n), where wt(n) = A000120(n) = binary weight of n.
 A092436: a(n) = 1/2 + (-1)^n*(1/2 - A010060(floor(n/2))).
 A092486: Take natural numbers, exchange first and third quadrisection.
+A092620: Numbers with exactly one prime digit.
 A094914: Absolute value of n^2 + n - 1354363.
 A094918: a(n) = (3^n-1)/2 mod n.
 A095080: Fibeven primes, i.e., primes p whose Zeckendorf-expansion A014417(p) ends with zero.
