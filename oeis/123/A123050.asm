@@ -1,0 +1,54 @@
+; A123050: Conjectured number of ordered trees on n edges for which the conjugate and transpose commute.
+; Submitted by loader3229
+; 1,1,2,2,2,4,4,4,6,6,6,8,8,8,12,12,12,14,16,16,18,18,22,24,24,24,30,30,30,32,38,38,40,40,46,48,48,48,58,58,58,60,68,68,70,70,80,82,82,82,94,94,94,96,108,108,110,110,122,124,124,124,140,140,140,142,156,156,158
+
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,2
+mov $5,2
+mov $6,4
+mov $7,4
+mov $8,4
+mov $9,6
+mov $10,6
+mov $11,6
+mov $12,8
+mov $13,8
+mov $14,8
+mov $15,12
+mov $16,12
+mov $17,12
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $18,$1
+  add $18,$3
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mul $6,-1
+  add $18,$6
+  mov $6,$7
+  mul $7,-1
+  add $18,$7
+  add $18,$10
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mul $11,-1
+  add $18,$11
+  mov $11,$12
+  mov $12,$13
+  add $18,$14
+  add $18,$15
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+lpe
+mov $0,$1

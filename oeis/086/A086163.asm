@@ -1,0 +1,70 @@
+; A086163: Number of monomial ideals in two variables x, y that are Artinian, integrally closed, of colength n and contain x^4.
+; Submitted by loader3229
+; 1,1,2,3,4,6,7,7,10,13,13,16,18,19,23,27,28,32,36,39,43,48,50,56,61,65,71,77,81,90,95,100,108,116,121,132,139,145,156,167,172,185,194,202,215,228,235,250,262,273,287,302,311,329,343,356,373,390,402,424,439,454
+
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,4
+mov $6,6
+mov $7,7
+mov $8,7
+mov $9,10
+mov $10,13
+mov $11,13
+mov $12,16
+mov $13,18
+mov $14,19
+mov $15,23
+mov $16,27
+mov $17,28
+mov $18,32
+mov $19,36
+mov $20,39
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $21,$1
+  add $21,$2
+  add $21,$4
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mul $5,-1
+  add $21,$5
+  add $21,$7
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mul $8,-1
+  add $21,$8
+  mov $8,$9
+  mov $9,$10
+  mul $10,-1
+  add $21,$10
+  mov $10,$11
+  mul $11,2
+  add $21,$11
+  mov $11,$12
+  mul $12,-1
+  add $21,$12
+  mov $12,$13
+  mov $13,$14
+  mul $14,-1
+  add $21,$14
+  add $21,$15
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mul $17,-1
+  add $21,$17
+  add $21,$18
+  add $21,$20
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+lpe
+mov $0,$1

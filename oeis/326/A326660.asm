@@ -1,0 +1,35 @@
+; A326660: Number of n-bead asymmetric bracelets with exactly 3 different colored beads.
+; Submitted by Science United
+; 0,0,1,3,12,34,111,315,933,2622,7503,21033,59472,167118,472120,1332945,3777600,10720869,30516447,87032994,248820704,712743768,2045784183,5882367570,16942974048,48876558318,141204944529,408494941773,1183247473872,3431450670601,9962348798055,28953195561405,84227735574988,245251783389000,714734692679886,2084644456958112,6084911494981872,17774352679453836,51955812408822140,151970773478611698,444792553066884000,1302606845817238874,3816941158807133871,11190577802443148103,32825695519582142730
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  sub $0,1
+  mov $1,1
+  add $1,$0
+  mov $3,0
+  gcd $3,$1
+  pow $3,2
+  mov $5,$0
+  add $0,1
+  seq $0,56268 ; Number of primitive (aperiodic) words of length n which contain exactly three different symbols.
+  mul $0,91
+  mul $1,$0
+  div $1,$3
+  mov $0,$1
+  div $0,91
+  add $5,1
+  seq $5,56499 ; Number of primitive (period n) periodic palindromes using exactly three different symbols.
+  sub $5,$0
+  sub $6,$5
+  mov $0,$6
+  div $0,2
+  pow $6,$5
+lpe

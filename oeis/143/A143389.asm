@@ -1,0 +1,58 @@
+; A143389: Coefficient Expansion sequence of a Weaver Morse Code polynomial (using Cyclotomic prime base dot, dash, letter space and word space symbols): p(x) = -5 - 10 x - 12 x^2 - 10 x^3 - 7 x^4 - 3 x^5 + 5 x^7 + 8 x^8 + 9 x^9 + 8 x^10 + 6 x^11 + 3 x^12 + x^13.
+; Submitted by loader3229
+; 1,-3,3,1,-6,7,-1,-9,11,7,-34,32,23,-95,99,27,-219,250,76,-571,619,241,-1517,1684,511,-3927,4500,1205,-10120,11628,3041,-26200,30648,7148,-68161,80975,16901,-176402,212169,39547,-456228,557737,91154,-1183066,1466383
+
+mov $1,1
+mov $2,-3
+mov $3,3
+mov $4,1
+mov $5,-6
+mov $6,7
+mov $7,-1
+mov $8,-9
+mov $9,11
+mov $10,7
+mov $11,-34
+mov $12,32
+mov $13,23
+lpb $0
+  sub $0,1
+  mul $1,5
+  mov $14,$1
+  mov $1,$2
+  mul $2,10
+  add $14,$2
+  mov $2,$3
+  mul $3,12
+  add $14,$3
+  mov $3,$4
+  mul $4,10
+  add $14,$4
+  mov $4,$5
+  mul $5,7
+  add $14,$5
+  mov $5,$6
+  mul $6,3
+  add $14,$6
+  mov $6,$7
+  mov $7,$8
+  mul $8,-5
+  add $14,$8
+  mov $8,$9
+  mul $9,-8
+  add $14,$9
+  mov $9,$10
+  mul $10,-9
+  add $14,$10
+  mov $10,$11
+  mul $11,-8
+  add $14,$11
+  mov $11,$12
+  mul $12,-6
+  add $14,$12
+  mov $12,$13
+  mul $13,-3
+  add $14,$13
+  mov $13,$14
+lpe
+mov $0,$1

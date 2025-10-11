@@ -1,0 +1,76 @@
+; A132376: Algorithmic drum function based on two bar 16 notes per bar: Funk drum : Based on Andy Newark "In Time" from Sly Stone's "Fresh" 1973.
+; Submitted by loader3229
+; 5,5,2,5,2,3,5,5,2,5,2,5,2,3,3,3,5,2,4,1,3,5,2,5,5,2,2,5,5,3,3,2,5,5,2,5,2,3,5,5,2,5,2,5,2,3,3,3,5,2,4,1,3,5,2,5,5,2,2,5,5,3,3,2,5,5,2,5,2,3,5,5,2,5,2,5,2,3,3,3
+
+#offset 1
+
+mov $1,5
+mov $2,5
+mov $3,2
+mov $4,5
+mov $5,2
+mov $6,3
+mov $7,5
+mov $8,5
+mov $9,2
+mov $10,5
+mov $11,2
+mov $12,5
+mov $13,2
+mov $14,3
+mov $15,3
+mov $16,3
+mov $17,5
+mov $18,2
+mov $19,4
+mov $20,1
+mov $21,3
+mov $22,5
+mov $23,2
+mov $24,5
+mov $25,5
+mov $26,2
+mov $27,2
+mov $28,5
+mov $29,5
+mov $30,3
+mov $31,3
+mov $32,2
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $33,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
+  mov $25,$26
+  mov $26,$27
+  mov $27,$28
+  mov $28,$29
+  mov $29,$30
+  mov $30,$31
+  mov $31,$32
+  mov $32,$33
+lpe
+mov $0,$1

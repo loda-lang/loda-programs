@@ -1,0 +1,49 @@
+; A183042: Least number of knight's moves from (0,0) to the segment of points (0,n), (1,n-1), ..., (n,0) on infinite chessboard.
+; Submitted by Matthias Lehmkuhl
+; 0,6,6,8,12,18,22,28,36,42,52,64,68,82,98,104,118,138,146,164,184,194,216,240,248,274,302,312,338,370,382,412,444,458,492,528,540,578,618,632,670,714,730,772,816,834,880,928,944,994
+
+mov $2,6
+mov $3,6
+mov $4,8
+mov $5,12
+mov $6,18
+mov $7,22
+mov $8,28
+mov $9,36
+mov $10,42
+mov $11,52
+mov $12,64
+mov $13,68
+mov $14,82
+mov $15,98
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $16,$1
+  add $16,$6
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mul $9,-2
+  add $16,$9
+  mov $9,$10
+  mul $10,-1
+  add $16,$10
+  add $16,$12
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mul $13,2
+  add $16,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+lpe
+mov $0,$1
+div $0,2
+mul $0,2

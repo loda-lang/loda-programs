@@ -1,0 +1,64 @@
+; A019305: "Pascal sweep" for k=4: draw a horizontal line through the 1 at binomial(k,0) in Pascal's triangle; rotate this line and record the sum of the numbers on it (excluding the initial 1).
+; Submitted by loader3229
+; 1,5,11,6,1,33,1,8,22,9,1,59,1,11,37,12,1,94,1,14,56,15,1,139,1,17,79,18,1,195,1,20,106,21,1,263,1,23,137,24,1,344,1,26,172,27,1,439,1,29,211,30,1,549,1,32,254,33,1,675,1,35,301,36,1,818,1,38,352,39,1,979,1,41,407,42
+
+mov $1,1
+mov $2,5
+mov $3,11
+mov $4,6
+mov $5,1
+mov $6,33
+mov $7,1
+mov $8,8
+mov $9,22
+mov $10,9
+mov $11,1
+mov $12,59
+mov $13,1
+mov $14,11
+mov $15,37
+mov $16,12
+mov $17,1
+mov $18,94
+mov $19,1
+mov $20,14
+mov $21,56
+mov $22,15
+mov $23,1
+mov $24,139
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $25,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mul $7,4
+  add $25,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mul $13,-6
+  add $25,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mul $19,4
+  add $25,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
+lpe
+mov $0,$1
