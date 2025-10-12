@@ -1,0 +1,49 @@
+; A123569: Number of ways to write n as an ordered sum of 1s, 2s, 3s and 4s such that no 2 precedes any 1 and no 3 precedes any 1 or 2.
+; Submitted by loader3229
+; 1,2,3,5,7,12,17,26,37,57,80,119,168,247,346,503,705,1014,1417,2026,2827,4015,5595,7912,11009,15505,21554,30260,42020,58837,81639,114054,158137,220521,305563,425432,589179,819234,1134015,1575053,2179376
+
+mov $1,1
+mov $2,2
+mov $3,3
+mov $4,5
+mov $5,7
+mov $6,12
+mov $7,17
+mov $8,26
+mov $9,37
+mov $10,57
+mov $11,80
+mov $12,119
+lpb $0
+  sub $0,1
+  mov $13,$1
+  add $13,$2
+  add $13,$3
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mul $4,2
+  add $13,$4
+  mov $4,$5
+  mul $5,-2
+  add $13,$5
+  mov $5,$6
+  mul $6,-1
+  add $13,$6
+  mov $6,$7
+  mul $7,-1
+  add $13,$7
+  mov $7,$8
+  mul $8,-3
+  add $13,$8
+  mov $8,$9
+  mul $9,2
+  add $13,$9
+  add $13,$11
+  add $13,$12
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+lpe
+mov $0,$1

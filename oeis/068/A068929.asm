@@ -1,0 +1,63 @@
+; A068929: Number of incongruent ways to tile a 4 X n room with 1 X 2 Tatami mats. At most 3 Tatami mats may meet at a point.
+; Submitted by loader3229
+; 1,3,2,1,2,2,2,3,3,4,5,5,6,8,8,11,12,14,17,20,24,29,32,41,46,56,68,78,93,114,130,161,188,223,268,318,378,456,533,646,763,911,1092,1296,1542,1855,2190,2634,3133,3732,4463,5323,6339,7596,9022,10802,12876
+
+#offset 1
+
+mov $1,1
+mov $2,3
+mov $3,2
+mov $4,1
+mov $5,2
+mov $6,2
+mov $7,2
+mov $8,3
+mov $9,3
+mov $10,4
+mov $11,5
+mov $12,5
+mov $13,6
+mov $14,8
+mov $15,8
+mov $16,11
+mov $17,12
+mov $18,14
+mov $19,17
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $20,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mul $5,-1
+  add $20,$5
+  mov $5,$6
+  mov $6,$7
+  mul $7,-1
+  add $20,$7
+  mov $7,$8
+  mov $8,$9
+  mul $9,-1
+  add $20,$9
+  add $20,$10
+  mov $9,$10
+  mov $10,$11
+  mul $11,-1
+  add $20,$11
+  mov $11,$12
+  mov $12,$13
+  add $20,$14
+  add $20,$15
+  add $20,$17
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+lpe
+mov $0,$1

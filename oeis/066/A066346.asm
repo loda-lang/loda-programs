@@ -1,0 +1,49 @@
+; A066346: Number of winning binary "same game" templates with ternary digits totaling n.
+; Submitted by loader3229
+; 1,0,1,0,2,2,4,9,13,28,46,84,146,252,433,736,1242,2087,3482,5791,9587,15823,26038,42743,70016,114485,186903,304728,496260,807395,1312504,2132102,3461407,5616609,9109732
+
+mov $1,1
+mov $3,1
+mov $5,2
+mov $6,2
+mov $7,4
+mov $8,9
+mov $9,13
+mov $10,28
+mov $11,46
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $12,$1
+  mov $1,$2
+  mul $2,-1
+  add $12,$2
+  mov $2,$3
+  mul $3,-3
+  add $12,$3
+  mov $3,$4
+  mul $4,-1
+  add $12,$4
+  mov $4,$5
+  mul $5,6
+  add $12,$5
+  mov $5,$6
+  mul $6,7
+  add $12,$6
+  mov $6,$7
+  mul $7,-3
+  add $12,$7
+  mov $7,$8
+  mul $8,-8
+  add $12,$8
+  mov $8,$9
+  mul $9,-1
+  add $12,$9
+  mov $9,$10
+  mul $10,4
+  add $12,$10
+  add $12,$11
+  mov $10,$11
+  mov $11,$12
+lpe
+mov $0,$1

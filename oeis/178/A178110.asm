@@ -1,0 +1,83 @@
+; A178110: Consider the set of divisors d of binomial(n-d-1,d-1) where gcd(n,d)>1 and 1<d<=n/2. If the smallest element of this set is 6, n is in the sequence.
+; Submitted by loader3229
+; 16,18,26,27,32,34,40,45,50,56,58,63,64,72,74,80,81,82,88,90,98,99,104,106,112,117,122,128,130,135,136,144,146,152,153,154,160,162,170,171,176,178,184,189,194,200,202,207,208,216,218,224,225,226,232,234,242
+
+#offset 1
+
+mov $1,16
+mov $2,18
+mov $3,26
+mov $4,27
+mov $5,32
+mov $6,34
+mov $7,40
+mov $8,45
+mov $9,50
+mov $10,56
+mov $11,58
+mov $12,63
+mov $13,64
+mov $14,72
+mov $15,74
+mov $16,80
+mov $17,81
+mov $18,82
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $19,$1
+  mov $1,$2
+  mul $2,2
+  add $19,$2
+  mov $2,$3
+  mul $3,-2
+  add $19,$3
+  mov $3,$4
+  mul $4,2
+  add $19,$4
+  mov $4,$5
+  mul $5,-2
+  add $19,$5
+  mov $5,$6
+  mul $6,2
+  add $19,$6
+  mov $6,$7
+  mul $7,-2
+  add $19,$7
+  mov $7,$8
+  mul $8,2
+  add $19,$8
+  mov $8,$9
+  mul $9,-2
+  add $19,$9
+  mov $9,$10
+  mul $10,2
+  add $19,$10
+  mov $10,$11
+  mul $11,-2
+  add $19,$11
+  mov $11,$12
+  mul $12,2
+  add $19,$12
+  mov $12,$13
+  mul $13,-2
+  add $19,$13
+  mov $13,$14
+  mul $14,2
+  add $19,$14
+  mov $14,$15
+  mul $15,-2
+  add $19,$15
+  mov $15,$16
+  mul $16,2
+  add $19,$16
+  mov $16,$17
+  mul $17,-2
+  add $19,$17
+  mov $17,$18
+  mul $18,2
+  add $19,$18
+  mov $18,$19
+lpe
+mov $0,$1

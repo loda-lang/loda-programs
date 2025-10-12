@@ -1,0 +1,45 @@
+; A178715: a(n) = solution to the "Select All, Copy, Paste" problem: Given the ability to type a single letter, or to type individual "Select All", "Copy" or "Paste" command keystrokes, what is the maximal number of letters of text that can be obtained with n keystrokes?
+; Submitted by loader3229
+; 1,2,3,4,5,6,9,12,16,20,27,36,48,64,81,108,144,192,256,324,432,576,768,1024,1296,1728,2304,3072,4096,5184,6912,9216,12288,16384,20736,27648,36864,49152,65536,82944,110592,147456,196608,262144,331776,442368,589824,786432,1048576,1327104,1769472,2359296,3145728,4194304,5308416,7077888,9437184,12582912,16777216,21233664,28311552,37748736,50331648,67108864,84934656,113246208,150994944,201326592,268435456,339738624,452984832,603979776,805306368,1073741824,1358954496,1811939328,2415919104,3221225472
+
+#offset 1
+
+mov $1,1
+mov $2,2
+mov $3,3
+mov $4,4
+mov $5,5
+mov $6,6
+mov $7,9
+mov $8,12
+mov $9,16
+mov $10,20
+mov $11,27
+mov $12,36
+mov $13,48
+mov $14,64
+mov $15,81
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $16,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mul $11,4
+  add $16,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+lpe
+mov $0,$1

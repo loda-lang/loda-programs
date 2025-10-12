@@ -1,0 +1,55 @@
+; A152592: Consider the last letter of each of the English words zero, one, two, three, four, five, ... . Write down 0 for a vowel {a,e,i,o,u}, 1 for a consonant.
+; Submitted by loader3229
+; 0,0,0,0,1,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0
+
+mov $5,1
+mov $7,1
+mov $8,1
+mov $9,1
+mov $11,1
+mov $12,1
+mov $14,1
+mov $15,1
+mov $16,1
+mov $17,1
+mov $18,1
+mov $19,1
+mov $20,1
+mov $21,1
+mov $25,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $27,$1
+  add $27,$21
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mul $22,-1
+  add $27,$22
+  add $27,$26
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
+  mov $25,$26
+  mov $26,$27
+lpe
+mov $0,$1

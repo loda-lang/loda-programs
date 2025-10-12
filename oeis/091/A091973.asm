@@ -1,0 +1,53 @@
+; A091973: Poincaré series [or Poincare series] (or Molien series) for a certain three-dimensional group of order 1344.
+; Submitted by loader3229
+; 1,0,1,3,3,4,7,8,9,12,14,17,20,22,26,30,32,36,42,45,49,55,59,64,70,75,81,88,93,99,107,113,120,128,135,143,151,158,167,177,184,193,204,212,221,232,242,252,263,273,284,296,306,318,331,342,354,367,379,392,406,418,432,447
+
+mov $1,1
+mov $3,1
+mov $4,3
+mov $5,3
+mov $6,4
+mov $7,7
+mov $8,8
+mov $9,9
+mov $10,12
+mov $11,14
+mov $12,17
+mov $13,20
+lpb $0
+  sub $0,1
+  mov $14,$1
+  mov $1,$2
+  mul $2,-1
+  add $14,$2
+  add $14,$3
+  mov $2,$3
+  mov $3,$4
+  mul $4,-2
+  add $14,$4
+  add $14,$5
+  mov $4,$5
+  mov $5,$6
+  mul $6,-1
+  add $14,$6
+  add $14,$7
+  mov $6,$7
+  mov $7,$8
+  mul $8,-1
+  add $14,$8
+  add $14,$9
+  mov $8,$9
+  mov $9,$10
+  mul $10,-1
+  add $14,$10
+  mov $10,$11
+  mul $11,2
+  add $14,$11
+  mov $11,$12
+  mul $12,-1
+  add $14,$12
+  add $14,$13
+  mov $12,$13
+  mov $13,$14
+lpe
+mov $0,$1

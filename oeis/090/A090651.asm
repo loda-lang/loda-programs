@@ -1,0 +1,68 @@
+; A090651: Perpetual calendar sequence: There are 14 basic year calendars, 7 for normal years and 7 for leap years. This sequence identifies the calendars for years 1901 through 2099, when it reinitializes because 2100 is not a leap year.
+; Submitted by loader3229
+; 3,4,5,13,1,2,3,11,6,7,1,9,4,5,6,14,2,3,4,12,7,1,2,10,5,6,7,8,3,4,5,13,1,2,3,11,6,7,1,9,4,5,6,14,2,3,4,12,7,1,2,10,5,6,7,8,3,4,5,13,1,2,3,11,6,7,1,9,4,5,6,14,2,3,4,12,7,1,2,10
+
+#offset 1901
+
+mov $1,3
+mov $2,4
+mov $3,5
+mov $4,13
+mov $5,1
+mov $6,2
+mov $7,3
+mov $8,11
+mov $9,6
+mov $10,7
+mov $11,1
+mov $12,9
+mov $13,4
+mov $14,5
+mov $15,6
+mov $16,14
+mov $17,2
+mov $18,3
+mov $19,4
+mov $20,12
+mov $21,7
+mov $22,1
+mov $23,2
+mov $24,10
+mov $25,5
+mov $26,6
+mov $27,7
+mov $28,8
+sub $0,1901
+lpb $0
+  sub $0,1
+  mov $29,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
+  mov $25,$26
+  mov $26,$27
+  mov $27,$28
+  mov $28,$29
+lpe
+mov $0,$1
