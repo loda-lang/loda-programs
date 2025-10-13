@@ -1,0 +1,36 @@
+; A187860: Number of 5-step one space for components leftwards or up, two space for components rightwards or down asymmetric quasi-queen's tours (antidiagonal moves become knight moves) on an n X n board summed over all starting positions.
+; Submitted by loader3229
+; 0,0,486,3320,11986,26836,50378,81124,120051,166504,220483,281988,351019,427576,511659,603268,702403,809064,923251,1044964,1174203,1310968,1455259,1607076,1766419,1933288,2107683,2289604,2479051,2676024,2880523,3092548,3312099,3539176,3773779,4015908,4265563,4522744,4787451,5059684,5339443,5626728,5921539,6223876,6533739,6851128,7176043,7508484,7848451,8195944
+
+#offset 1
+
+mov $3,486
+mov $4,3320
+mov $5,11986
+mov $6,26836
+mov $7,50378
+mov $8,81124
+mov $9,120051
+mov $10,166504
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $11,$1
+  add $11,$8
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mul $9,-3
+  add $11,$9
+  mov $9,$10
+  mul $10,3
+  add $11,$10
+  mov $10,$11
+lpe
+mov $0,$1

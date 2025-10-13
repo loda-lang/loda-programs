@@ -1,0 +1,59 @@
+; A262114: Irregular triangle read by rows: row b (b >= 2) gives periodic part of digits of the base-b expansion of 1/5.
+; Submitted by loader3229
+; 0,0,1,1,0,1,2,1,0,3,1,1,1,2,5,4,1,4,6,3,1,7,2,2,2,4,9,7,2,7,10,5,2,11,3,3,3,6,13,10,3,10,14,7,3,15,4,4,4,8,17,13,4,13,18,9,4,19,5,5,5,10,21,16,5,16,22,11,5,23,6,6,6,12,25,19,6,19,26,13
+
+#offset 2
+
+mov $3,1
+mov $4,1
+mov $6,1
+mov $7,2
+mov $8,1
+mov $10,3
+mov $11,1
+mov $12,1
+mov $13,1
+mov $14,2
+mov $15,5
+mov $16,4
+mov $17,1
+mov $18,4
+mov $19,6
+mov $20,3
+mov $21,1
+mov $22,7
+mov $23,2
+mov $24,2
+sub $0,2
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $25,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mul $13,2
+  add $25,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
+lpe
+mov $0,$1
