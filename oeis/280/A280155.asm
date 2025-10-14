@@ -1,0 +1,40 @@
+; A280155: Number of n X 2 0..1 arrays with no element unequal to a strict majority of its horizontal, vertical and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
+; Submitted by loader3229
+; 0,4,8,18,40,92,208,470,1060,2384,5352,11992,26824,59906,133592,297510,661720,1470062,3262264,7231940,16016596,35439722,78349800,173074816,382029988,842648168,1857362384,4091321478,9006604780,19815365450,43571105320,95755070858,210330449800,461773968236,1013334445656,2222699684542,4873280682028,10680270846896,23397551374112,51238044066744,112164383286040,245450348530058,536938086470464,1174199711215214,2566976957424376,5610079207162214,12257095567938072,26772073880810836,58459677375233884
+
+#offset 1
+
+mov $2,4
+mov $3,8
+mov $4,18
+mov $5,40
+mov $6,92
+mov $7,208
+mov $8,470
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $9,$1
+  mov $1,$2
+  mov $2,$3
+  mul $3,-1
+  add $9,$3
+  mov $3,$4
+  mul $4,-4
+  add $9,$4
+  mov $4,$5
+  mul $5,-6
+  add $9,$5
+  mov $5,$6
+  mul $6,-2
+  add $9,$6
+  mov $6,$7
+  mul $7,3
+  add $9,$7
+  mov $7,$8
+  mul $8,2
+  add $9,$8
+  mov $8,$9
+lpe
+mov $0,$1

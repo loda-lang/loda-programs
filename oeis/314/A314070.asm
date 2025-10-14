@@ -1,0 +1,60 @@
+; A314070: Coordination sequence Gal.6.657.2 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+; Submitted by loader3229
+; 1,5,11,15,22,27,31,38,42,48,54,58,65,69,74,81,85,91,96,101,107,111,118,123,127,134,138,144,150,154,161,165,170,177,181,187,192,197,203,207,214,219,223,230,234,240,246,250,257,261
+
+mov $1,1
+mov $2,5
+mov $3,11
+mov $4,15
+mov $5,22
+mov $6,27
+mov $7,31
+mov $8,38
+mov $9,42
+mov $10,48
+mov $11,54
+mov $12,58
+mov $13,65
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $14,$1
+  mov $1,$2
+  mul $2,-1
+  add $14,$2
+  mov $2,$3
+  mul $3,2
+  add $14,$3
+  mov $3,$4
+  mul $4,-2
+  add $14,$4
+  mov $4,$5
+  mul $5,3
+  add $14,$5
+  mov $5,$6
+  mul $6,-4
+  add $14,$6
+  mov $6,$7
+  mul $7,4
+  add $14,$7
+  mov $7,$8
+  mul $8,-4
+  add $14,$8
+  mov $8,$9
+  mul $9,4
+  add $14,$9
+  mov $9,$10
+  mul $10,-4
+  add $14,$10
+  mov $10,$11
+  mul $11,3
+  add $14,$11
+  mov $11,$12
+  mul $12,-2
+  add $14,$12
+  mov $12,$13
+  mul $13,2
+  add $14,$13
+  mov $13,$14
+lpe
+mov $0,$1
