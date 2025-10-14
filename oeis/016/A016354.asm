@@ -9,9 +9,14 @@ lpb $0
   sub $0,3
   sub $0,$4
   mov $3,$0
-  max $3,0
-  seq $3,14018 ; Inverse of 9th cyclotomic polynomial.
-  add $2,$3
+  mod $3,9
+  mov $5,$3
+  equ $5,0
+  mov $6,$5
+  mov $5,$3
+  equ $5,3
+  sub $6,$5
+  add $2,$6
   add $4,30
 lpe
 mov $0,$2

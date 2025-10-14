@@ -1,27 +1,14 @@
 ; A147846: Triangular numbers n*(n+1)/2 with n or n+1 prime.
 ; Submitted by Science United
 ; 1,3,6,10,15,21,28,55,66,78,91,136,153,171,190,253,276,406,435,465,496,666,703,820,861,903,946,1081,1128,1378,1431,1711,1770,1830,1891,2211,2278,2485,2556,2628,2701,3081,3160,3403,3486,3916,4005,4656,4753,5050,5151,5253,5356,5671,5778,5886,5995,6328,6441,8001,8128,8515,8646,9316,9453,9591,9730,11026,11175,11325,11476,12246,12403,13203,13366,13861,14028,14878,15051,15931
+; Formula: a(n) = truncate((A173919(n)*(A173919(n)+1)-2)/2)+1
 
 #offset 1
 
-sub $0,1
-mov $2,4
-mov $4,$0
-sub $4,2
-mov $5,$4
-pow $5,4
-lpb $5
-  max $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  mul $1,2
-  add $2,2
-  sub $4,$1
-  sub $5,$4
-lpe
-add $4,$2
-mov $3,$4
-mul $3,$4
-sub $3,$4
-mov $0,$3
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+mov $1,$0
+add $1,1
+mul $0,$1
+sub $0,2
 div $0,2
+add $0,1

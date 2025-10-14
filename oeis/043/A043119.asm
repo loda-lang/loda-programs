@@ -1,53 +1,41 @@
 ; A043119: Numbers k such that 0 and 4 occur juxtaposed in the base-6 representation of k but not of k-1.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 24,40,60,76,96,112,132,144,168,184,204,220,240,256,276,292,312,328,348,360,384,400,420,436,456,472,492,508,528,544,564,576,600,616,636,652,672,688,708,724,744,760,780,792,816,832,852
 
 #offset 1
 
+mov $1,24
+mov $2,40
+mov $3,60
+mov $4,76
+mov $5,96
+mov $6,112
+mov $7,132
+mov $8,144
+mov $9,168
+mov $10,184
+mov $11,204
+mov $12,220
+mov $13,240
 sub $0,1
-mov $2,$0
-mov $7,$0
-mov $9,$0
-lpb $9
-  sub $9,1
-  mov $0,$7
-  sub $0,$9
-  mul $0,2
-  mov $3,$0
-  add $3,1
-  add $3,$0
-  mov $4,0
-  add $8,$0
-  mov $0,$3
-  add $1,1
-  sub $3,1
-  mul $3,5
-  mov $5,16
-  mul $5,$8
-  sub $5,$8
-  add $10,$8
-  add $10,$5
-  mov $5,4
-  mov $6,$3
-  mul $6,$8
-  add $3,2
-  lpb $0
-    add $5,2
-    div $6,$10
-    mov $0,$5
-    mul $3,$6
-    mul $7,$2
-  lpe
-  add $4,$0
-  add $4,5
-  gcd $3,$5
-  add $3,$4
-  mov $10,$3
-  sub $10,6
-  div $10,3
-  add $1,$10
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $14,$1
+  add $14,$2
+  add $14,$13
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
 lpe
-add $1,$2
 mov $0,$1
-mul $0,4
-add $0,24

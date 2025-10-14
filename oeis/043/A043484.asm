@@ -1,36 +1,33 @@
 ; A043484: Numbers having four 7's in base 9.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 5740,12301,18862,25423,31984,38545,45106,46564,47293,48022,48751,49480,50209,50938,51100,51181,51262,51343,51424,51505,51586,51604,51613,51622,51631,51640,51649,51658,51660,51661,51662
 
 #offset 1
 
-mov $2,$0
+mov $1,5740
+mov $2,12301
+mov $3,18862
+mov $4,25423
+mov $5,31984
+mov $6,38545
+mov $7,45106
+mov $8,46564
 sub $0,1
-add $2,3
-pow $2,6
-mul $2,2
-lpb $2
-  mov $5,6
-  mov $3,$1
-  add $3,1
-  seq $3,52421 ; Numbers without 8 as a digit.
-  lpb $3
-    mov $6,$3
-    add $6,5
-    mod $6,10
-    equ $6,2
-    div $3,10
-    add $5,$6
-  lpe
-  sub $5,9
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $9,$1
+  add $9,$2
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mul $8,9
+  add $9,$8
+  mov $8,$9
+  div $8,9
 lpe
 mov $0,$1

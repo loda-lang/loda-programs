@@ -1,12 +1,32 @@
 ; A051916: The Greek sequence: 2^a * 3^b * 5^c where a = 0,1,2,3,..., b,c in {0,1}, excluding the terms 1,2; that is: (a,b,c) != (0,0,0), (1,0,0).
-; Submitted by Science United
+; Submitted by loader3229
 ; 3,4,5,6,8,10,12,15,16,20,24,30,32,40,48,60,64,80,96,120,128,160,192,240,256,320,384,480,512,640,768,960,1024,1280,1536,1920,2048,2560,3072,3840,4096,5120,6144,7680,8192,10240,12288,15360,16384,20480,24576,30720,32768,40960,49152,61440,65536,81920,98304,122880,131072,163840,196608,245760,262144,327680,393216,491520,524288,655360,786432,983040,1048576,1310720,1572864,1966080,2097152,2621440,3145728,3932160
-; Formula: a(n) = truncate((A070814(n+2)-49)/17)+3
+; Formula: a(n) = b(n-1), b(n) = c(n-4), b(8) = 16, b(7) = 15, b(6) = 12, b(5) = 10, b(4) = 8, b(3) = 6, b(2) = 5, b(1) = 4, b(0) = 3, c(n) = 2*c(n-4), c(8) = 32, c(7) = 30, c(6) = 24, c(5) = 20, c(4) = 16, c(3) = 15, c(2) = 12, c(1) = 10, c(0) = 8
 
 #offset 1
 
-add $0,2
-seq $0,70814 ; Solutions to phi(gpf(x)) - gpf(phi(x)) = 14 = c are special multiples of 17, x = 17k, where greatest prime factors of factor k were observed from {2, 3, 5}, i.e., it is smaller than 17. See solutions to other even cases of c (=A070813): A007283 for 0, A070004 for 2, A070815 for 254, A070816 for 65534. Gpf = greatest prime factor.
-sub $0,49
-div $0,17
-add $0,3
+mov $1,3
+mov $2,4
+mov $3,5
+mov $4,6
+mov $5,8
+mov $6,10
+mov $7,12
+mov $8,15
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $9,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mul $5,2
+  add $9,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+lpe
+mov $0,$1

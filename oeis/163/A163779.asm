@@ -1,26 +1,26 @@
 ; A163779: Numbers k of the form 4*j + 1 such that 2*k + 1 is a prime with primitive root 2.
-; Submitted by gemini8
+; Submitted by Omega Intelligence Systems
 ; 1,5,9,29,33,41,53,65,69,81,89,105,113,173,189,209,221,233,245,261,273,281,293,309,329,393,413,429,441,453,473,509,545,561,585,593,629,641,645,653,713,725,741,749,761,765,785,809,833,873,893,933,953,965,989,993,1013,1041,1049,1065,1121,1133,1169,1185,1229,1233,1265,1269,1289,1329,1341,1349,1353,1401,1409,1421,1425,1469,1481,1505
 
 #offset 1
 
 sub $0,1
-mov $1,2
 mov $2,$0
-add $0,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-  equ $3,1
+  add $1,1
+  add $3,2
+  seq $3,55388 ; Number of riffle shuffles of 2n cards required to return the deck to its initial state.
+  sub $3,$1
+  equ $3,$1
   sub $0,$3
+  add $1,3
   mov $4,$0
-  max $4,1
+  max $4,0
   equ $4,$0
-  add $1,8
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-div $0,2
+add $0,1

@@ -1,49 +1,41 @@
 ; A161220: The n-th member of a twin prime pair minus 2*n.
-; Submitted by dthonon
+; Submitted by Science United
 ; 1,1,1,3,3,5,5,13,13,21,21,35,35,43,43,69,69,71,71,97,97,105,105,131,131,139,139,141,141,167,167,175,175,201,201,209,209,235,235,267,267,335,335,343,343,369,369,425,425,469,469,495,495,509,509,529,529,543,543,689,689,697,697,699,699,725,725,745,745,879,879,887,887,901,901,909,909,935,935,991
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-min $1,1
-sub $1,2
-sub $1,$0
-trn $0,1
-mov $2,$0
-div $2,2
-sub $0,1
-gcd $0,2
-mov $3,4
-mov $4,$2
-sub $2,1
-add $4,4
-pow $4,3
-lpb $4
-  mov $7,$5
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,3
-  sub $5,$7
-  mul $7,$5
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $2,$7
-  mov $6,$2
-  max $6,0
-  equ $6,$2
-  add $3,6
-  mul $4,$6
-  sub $4,18
-  mov $5,$3
+mov $5,$0
+add $5,1
+lpb $5
+  sub $5,1
+  mov $0,$1
+  sub $0,$5
+  mov $3,0
+  mov $8,$0
+  mov $6,2
+  lpb $6
+    sub $6,1
+    mov $0,$8
+    add $0,$6
+    sub $0,1
+    mov $2,$0
+    lpb $2
+      sub $2,1
+    lpe
+    sub $2,1
+    sub $0,$2
+    seq $0,1097 ; Twin primes.
+    mov $4,$6
+    mul $4,$0
+    add $3,$4
+  lpe
+  min $8,1
+  mul $8,$0
+  mov $0,$3
+  sub $0,$8
+  sub $0,2
+  add $7,$0
 lpe
-mov $2,$3
-div $2,6
-mul $2,3
-add $2,$0
-mov $0,$2
-mul $0,2
-add $0,3
-add $0,$1
-add $1,$0
-mov $0,$1
+mov $0,$7

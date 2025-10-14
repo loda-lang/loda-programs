@@ -1,23 +1,24 @@
 ; A229785: Partial sums of A157129.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,2,4,6,7,8,9,10,12,14,16,18,19,20,22,24,25,26,28,30,31,32,33,34,36,38,40,42,43,44,45,46,48,50,52,54,55,56,58,60,61,62,63,64,66,68,70,72,73,74,76,78,79,80,81,82,84,86,88,90,91,92,94,96,97,98,100,102,103,104
-; Formula: a(n) = d(n-1)+a(n-1)+1, a(3) = 4, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = truncate((-c(n-1)+b(n-1)+1)/2), b(3) = -33, b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 2*c(n-1)*gcd(d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),2)^2, c(3) = 512, c(2) = 64, c(1) = 8, c(0) = 4, d(n) = truncate(gcd(d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),2)/2), d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate((e(n)-7)/3)+2, b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -34, b(2) = -4, b(1) = 0, b(0) = 0, c(n) = 2*gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2),4)*c(n-1), c(3) = 512, c(2) = 64, c(1) = 8, c(0) = 1, d(n) = gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2),4), d(3) = 4, d(2) = 4, d(1) = 4, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 14, e(2) = 8, e(1) = 2, e(0) = 0
 
 #offset 1
 
-mov $2,4
+mov $2,1
 lpb $0
   sub $0,1
   add $4,$3
-  add $4,1
+  add $4,2
   sub $1,$2
-  add $1,1
   div $1,2
   add $3,$1
-  gcd $3,2
-  mul $2,$3
+  mod $3,2
+  gcd $3,4
   mul $2,2
   mul $2,$3
-  div $3,2
 lpe
 mov $0,$4
+sub $0,7
+div $0,3
+add $0,2

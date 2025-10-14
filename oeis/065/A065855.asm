@@ -1,27 +1,19 @@
 ; A065855: Number of composites <= n.
-; Submitted by Science United
+; Submitted by 10esseeTony
 ; 0,0,0,1,1,2,2,3,4,5,5,6,6,7,8,9,9,10,10,11,12,13,13,14,15,16,17,18,18,19,19,20,21,22,23,24,24,25,26,27,27,28,28,29,30,31,31,32,33,34,35,36,36,37,38,39,40,41,41,42,42,43,44,45,46,47,47,48,49,50,50,51,51,52,53,54,55,56,56,57
-; Formula: a(n) = truncate((-b(n)+d(n)+n+2)/2)-2, b(n) = -2*binomial(gcd(c(n-1),n+1),n+1), b(3) = 0, b(2) = -2, b(1) = -2, b(0) = 0, c(n) = 2*c(n-1)-n-2, c(3) = -25, c(2) = -10, c(1) = -3, c(0) = 0, d(n) = -2*binomial(gcd(c(n-1),n+1),n+1)+d(n-1)+1, d(3) = -1, d(2) = -2, d(1) = -1, d(0) = 0
+; Formula: a(n) = b(n-1)-1, b(n) = (A010051(n+1)==0)+b(n-1), b(0) = 1
 
 #offset 1
 
-mov $1,2
+mov $1,1
+sub $0,1
 lpb $0
+  mov $2,$0
+  add $2,1
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  equ $2,0
   sub $0,1
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  mul $4,2
-  sub $4,1
-  sub $4,$1
-  add $1,1
-  mov $3,-2
-  mul $3,$2
-  add $5,1
-  add $5,$3
+  add $1,$2
 lpe
-mov $0,$5
-sub $0,$3
-add $0,$1
-div $0,2
-sub $0,2
+mov $0,$1
+sub $0,1

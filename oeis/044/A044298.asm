@@ -4,17 +4,17 @@
 
 #offset 1
 
-mov $1,47
-mov $2,128
-mov $3,209
-mov $4,290
-mov $5,371
-mov $6,423
-mov $7,452
-mov $8,533
-mov $9,614
-mov $10,695
-mov $11,776
+mov $1,46
+mov $2,127
+mov $3,208
+mov $4,289
+mov $5,370
+mov $6,422
+mov $7,451
+mov $8,532
+mov $9,613
+mov $10,694
+mov $11,775
 sub $0,1
 lpb $0
   sub $0,1
@@ -35,3 +35,4 @@ lpb $0
   mov $11,$12
 lpe
 mov $0,$1
+add $0,1

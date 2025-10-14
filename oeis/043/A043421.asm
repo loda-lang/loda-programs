@@ -1,32 +1,45 @@
 ; A043421: Numbers having one 0 in base 8.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 8,16,24,32,40,48,56,65,66,67,68,69,70,71,72,80,88,96,104,112,120,129,130,131,132,133,134,135,136,144,152,160,168,176,184,193,194,195,196,197,198,199,200,208,216,224,232,240,248,257
 
 #offset 1
 
-mov $2,$0
+mov $1,8
+mov $2,16
+mov $3,24
+mov $4,32
+mov $5,40
+mov $6,48
+mov $7,56
+mov $8,65
+mov $9,66
+mov $10,67
+mov $11,68
+mov $12,69
+mov $13,70
+mov $14,71
+mov $15,72
 sub $0,1
-add $2,3
-pow $2,2
-lpb $2
-  bin $4,2
-  mov $5,0
-  mov $3,$1
-  lpb $3
-    mov $6,$3
-    mod $6,8
-    equ $6,$4
-    div $3,8
-    add $5,$6
-  lpe
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $16,$1
+  add $16,$2
+  add $16,$15
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
 lpe
 mov $0,$1

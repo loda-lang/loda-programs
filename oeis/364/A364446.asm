@@ -11,11 +11,14 @@ lpb $2
   mul $0,2
   trn $0,1
   seq $0,97514 ; Number of partitions of an n-set without blocks of size 2.
+  max $2,1
   mov $4,$0
   sub $4,1
+  mul $4,2
   mov $1,$2
   mul $1,$4
   add $3,$1
 lpe
 mov $0,$3
+div $0,2
 add $0,1

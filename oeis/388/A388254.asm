@@ -1,24 +1,26 @@
 ; A388254: Decimal expansion of (1/4) * exp(Pi / 2) * sqrt(2).
-; Submitted by iBezanilla
+; Submitted by KetamiNO [YouTube]
 ; 1,7,0,0,7,6,0,5,8,8,4,1,2,5,5,1,5,6,4,1,1,9,9,5,1,5,5,0,4,4,5,8,9,6,7,1,7,5,4,4,7,9,6,4,1,3,5,9,7,1,3,4,6,9,3,5,9,2,9,8,4,5,0,0,1,9,7,5,0,5,4,6,0,4,0,6,3,5,4,6
 
 #offset 1
 
 mov $3,$0
+sub $0,1
 mul $3,8
+sub $3,$0
 lpb $3
   max $3,1
-  sub $7,$4
-  add $5,$7
   max $6,$2
   div $6,$3
-  add $1,1
+  sub $7,$4
+  add $8,$6
   sub $3,1
-  sub $4,$6
+  sub $4,$8
   add $4,$7
-  sub $4,$1
-  sub $4,$6
+  add $5,$7
   mul $7,2
+  mov $8,$6
+  add $6,5
   mul $1,2
   add $1,$6
   add $2,$1
@@ -27,9 +29,9 @@ lpb $3
 lpe
 gcd $1,2
 add $1,$2
-sub $0,1
 mov $4,10
 pow $4,$0
+mul $4,2
 mov $2,1
 sub $2,$5
 div $2,$4

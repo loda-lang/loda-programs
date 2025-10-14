@@ -1,21 +1,35 @@
 ; A044301: Numbers n such that string 5,5 occurs in the base 9 representation of n but not of n-1.
-; Submitted by GolfSierra
+; Submitted by loader3229
 ; 50,131,212,293,374,450,536,617,698,779,860,941,1022,1103,1179,1265,1346,1427,1508,1589,1670,1751,1832,1908,1994,2075,2156,2237,2318,2399,2480,2561,2637,2723,2804,2885,2966,3047,3128
 
 #offset 1
 
+mov $1,50
+mov $2,131
+mov $3,212
+mov $4,293
+mov $5,374
+mov $6,450
+mov $7,536
+mov $8,617
+mov $9,698
+mov $10,779
 sub $0,1
-mov $2,1
-mov $3,$0
-add $0,4
-mod $0,9
 lpb $0
-  div $0,8
-  mov $2,2
+  sub $0,1
+  mul $1,-1
+  mov $11,$1
+  add $11,$2
+  add $11,$10
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
 lpe
-mov $1,$3
-mul $1,81
-mul $2,5
-add $2,$1
-mov $0,$2
-add $0,40
+mov $0,$1

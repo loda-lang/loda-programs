@@ -1,22 +1,29 @@
 ; A051048: Sqrt[a(n)a(n+1)+1] of A051047.
-; Submitted by GolfSierra
+; Submitted by loader3229
 ; 2,5,31,449,6271,87361,1216799,16947841,236052991,3287794049,45793063711,637815097921,8883618307199,123732841202881,1723376158533151,24003533378261249,334326091137124351
-; Formula: a(n) = truncate(max(2*A246655(n+1)^2-2*truncate((A246655(n+1)^2+A246655(n+1))/2),A103974(n))/2)-1
+; Formula: a(n) = b(n-1), b(n) = c(n-4), b(5) = 87361, b(4) = 6271, b(3) = 449, b(2) = 31, b(1) = 5, b(0) = 2, c(n) = 15*c(n-1)-15*c(n-2)+c(n-3), c(5) = 3287794049, c(4) = 236052991, c(3) = 16947841, c(2) = 1216799, c(1) = 87361, c(0) = 6271
 
 #offset 1
 
-mov $1,$0
-add $1,1
-seq $1,246655 ; Prime powers: numbers of the form p^k where p is a prime and k >= 1.
-mov $2,$1
-mul $2,$1
-seq $0,103974 ; Smaller sides (a) in (a,a,a+1)-integer triangle with integer area.
-add $1,$2
-div $1,2
-sub $2,$1
-mov $1,$2
-mul $1,2
-max $1,$0
-mov $0,$1
-div $0,2
+mov $1,2
+mov $2,5
+mov $3,31
+mov $4,449
+mov $5,6271
 sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $6,$1
+  add $6,$3
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mul $4,-15
+  add $6,$4
+  mov $4,$5
+  mul $5,15
+  add $6,$5
+  mov $5,$6
+lpe
+mov $0,$1

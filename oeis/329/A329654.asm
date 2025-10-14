@@ -1,13 +1,33 @@
 ; A329654: a(n) = numerator(b(n)), where b(0) = b(1) = 1 and b(n) = n*b(n-1)/b(n-2) for n >= 1.
-; Submitted by Stephen Uitti
+; Submitted by Cruncher Pete
 ; 1,1,2,6,12,10,5,7,28,72,180,275,55,91,2548,252,3600,18700,187,1729,12103,5880,13200,473110,4301,247,786695,171990,16632,5488076,124729,38285,27871480,550368,3110184,23324323,56695,1416545,559818584,3236688,2073456,4781486215,2324495,937099,12036099556
-; Formula: a(n) = truncate(A372993(n+1)/gcd((n+1)!,A372993(n+1)))
 
 add $0,1
+mov $4,3
+mov $6,1
+mov $7,2
+mov $8,1
 mov $1,$0
-seq $1,372993 ; a(n) = n! a(n-1) / a(n-2), where a(0) = 1, a(1) = 1.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
-mov $2,$1
+sub $1,1
+lpb $1
+  sub $1,1
+  mov $3,$6
+  mul $6,$7
+  div $6,$8
+  mul $7,$4
+  mov $8,$4
+  mov $4,1
+  add $4,$8
+  mov $8,$3
+lpe
+mov $5,1
+fac $5,$0
+mov $0,$5
+gcd $0,$6
+mov $2,$6
+mul $2,2
 div $2,$0
 mov $0,$2
+sub $0,2
+div $0,2
+add $0,1

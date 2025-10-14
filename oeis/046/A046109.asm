@@ -1,29 +1,31 @@
 ; A046109: Number of lattice points (x,y) on the circumference of a circle of radius n with center at (0,0).
-; Submitted by shiva
+; Submitted by Cruncher Pete
 ; 1,4,4,4,4,12,4,4,4,4,12,4,4,12,4,12,4,12,4,4,12,4,4,4,4,20,12,4,4,12,12,4,4,4,12,12,4,12,4,12,12,12,4,4,4,12,4,4,4,4,20,12,12,12,4,12,4,4,12,4,12,12,4,4,4,36,4,4,12,4,12,4,4,12,12,20,4,4,12,4
 
-pow $0,2
-mov $5,3
-equ $1,$0
-mov $3,$0
-dir $3,2
-add $3,2
-lpb $3
-  sub $3,$5
-  mov $7,$3
-  max $7,0
-  mov $2,$7
-  nrt $7,2
-  pow $7,2
-  equ $7,$2
-  equ $2,0
-  mul $7,2
-  sub $7,$2
-  add $4,4
-  mov $5,2
-  mul $5,$4
-  add $6,$7
+mov $1,$0
+mov $6,3
+mul $0,$1
+dir $0,9
+equ $2,$0
+mov $4,$0
+dir $4,2
+add $4,2
+lpb $4
+  sub $4,$6
+  mov $8,$4
+  max $8,0
+  mov $3,$8
+  nrt $8,2
+  pow $8,2
+  equ $8,$3
+  equ $3,0
+  mul $8,2
+  sub $8,$3
+  add $5,4
+  mov $6,2
+  mul $6,$5
+  add $7,$8
 lpe
-mov $0,$6
+mov $0,$7
 mul $0,4
-add $0,$1
+add $0,$2

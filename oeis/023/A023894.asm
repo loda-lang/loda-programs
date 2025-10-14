@@ -1,20 +1,31 @@
 ; A023894: Number of partitions of n into prime power parts (1 excluded).
-; Submitted by nkbr
+; Submitted by Science United
 ; 1,0,1,1,2,2,3,4,6,7,9,12,15,19,23,29,37,44,54,66,80,96,115,138,165,196,231,275,322,380,443,520,607,705,819,950,1099,1268,1461,1681,1932,2214,2533,2898,3305,3768,4285,4872,5530,6267,7094,8022,9060,10219,11515,12959,14574,16367,18364,20587,23052,25793,28827,32195,35924,40046,44607,49646,55210,61346,68115,75569,83785,92816,102752,113674,125665,138832,153271,169108
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,23893 ; Number of partitions of n into prime power parts (1 included); number of nonisomorphic Abelian subgroups of symmetric group S_n.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+mov $2,1
+mov $6,1
+mov $10,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    mov $7,$4
+    add $7,1
+    seq $7,23889 ; Sum of the prime power divisors of n (not including 1).
+    mov $9,10
+    add $9,$5
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,$2
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
+mov $0,$6

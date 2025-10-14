@@ -1,17 +1,14 @@
 ; A323614: List of 7-powerful numbers (for the definition of k-powerful see A323395).
-; Submitted by BrandyNOW
+; Submitted by Stefano Spezia
 ; 144,192,208,224,240,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,528,544,560,576,592,608,624,640,656,672,688,704,720,736,752,768,784,800,816,832,848,864,880,896,912,928,944,960
-; Formula: a(n) = 16*b(n-1)+144, b(n) = n+2, b(1) = 3, b(0) = 0
+; Formula: a(n) = 32*((n-1)>=1)+16*n+128
 
 #offset 1
 
-mov $1,2
 sub $0,1
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $2,$1
-lpe
-mov $0,$2
-add $0,9
+mov $1,$0
+geq $1,1
+mul $1,2
+add $0,$1
 mul $0,16
+add $0,144

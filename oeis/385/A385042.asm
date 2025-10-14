@@ -1,5 +1,5 @@
 ; A385042: The number of unitary divisors of n whose exponents in their prime factorizations are all powers of 2 (A138302).
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,2,2,2,2,4,2,1,2,4,2,4,2,4,4,2,2,4,2,4,4,4,2,2,2,4,1,4,2,8,2,1,4,4,4,4,2,4,4,2,2,8,2,4,4,4,2,4,2,4,4,4,2,2,4,2,4,4,2,8,2,4,4,1,4,8,2,4,4,8,2,2,2,4,4,4,4,8,2,4
 
 #offset 1
@@ -16,6 +16,7 @@ add $0,1
 mod $0,10
 mul $0,$3
 add $0,2
+mov $1,1
 seq $1,40 ; The prime numbers.
 pow $1,$0
 mov $0,$1

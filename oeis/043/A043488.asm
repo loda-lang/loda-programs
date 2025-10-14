@@ -1,37 +1,35 @@
 ; A043488: Numbers having four 8's in base 9.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 6560,13121,19682,26243,32804,39365,45926,52487,53216,53945,54674,55403,56132,56861,57590,58319,58400,58481,58562,58643,58724,58805,58886,58967,58976,58985,58994,59003,59012,59021,59030
 
 #offset 1
 
-mov $2,$0
+mov $1,6560
+mov $2,13121
+mov $3,19682
+mov $4,26243
+mov $5,32804
+mov $6,39365
+mov $7,45926
+mov $8,52487
+mov $9,53216
 sub $0,1
-add $2,3
-pow $2,6
-lpb $2
-  mov $5,6
-  mov $3,$1
-  add $3,1
-  seq $3,52421 ; Numbers without 8 as a digit.
-  lpb $3
-    mov $6,$3
-    add $6,3
-    mod $6,10
-    equ $6,2
-    div $3,10
-    add $5,$6
-  lpe
-  sub $5,8
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $10,$1
+  add $10,$2
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mul $9,9
+  add $10,$9
+  mov $9,$10
+  div $9,9
 lpe
 mov $0,$1
-mul $0,9
-add $0,8

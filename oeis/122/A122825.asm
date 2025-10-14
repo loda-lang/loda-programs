@@ -5,15 +5,22 @@
 #offset 1
 
 sub $0,1
-mov $1,$0
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
+mov $4,2
+lpb $4
+  sub $4,1
+  div $4,2
+  sub $0,1
   mov $3,$0
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,$3
+  max $3,0
+  add $3,1
+  mul $0,$4
+  mov $1,$3
+  seq $3,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+  lex $1,$3
+  add $3,$1
 lpe
-mov $0,$1
+min $2,1
+mul $2,$3
+mov $0,$2
 add $0,1

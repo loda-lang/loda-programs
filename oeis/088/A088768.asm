@@ -4,30 +4,29 @@
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,5
-pow $2,3
-lpb $2
-  add $3,2
-  add $6,$5
-  add $6,9
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,2
-  add $5,$3
-  sub $5,$1
-  add $5,1
-  mul $6,$5
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$6
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $6,10
-  mul $2,$4
-  sub $2,1
+mov $1,$0
+add $0,1
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $6,$2
+  add $6,1
+  seq $6,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $6,13
+  mov $4,$2
+  add $4,$6
+  add $4,3
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$4
+  add $2,2
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
+  trn $3,1
 lpe
-mov $0,$5
-div $0,2
+mov $0,$2
+mul $0,2
+sub $0,8
+div $0,4
 add $0,5

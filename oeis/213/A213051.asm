@@ -1,26 +1,27 @@
 ; A213051: Primes of the form 4*k+3 with primitive root +2.
-; Submitted by http://jkfs.petrsu.ru/
+; Submitted by Omega Intelligence Systems
 ; 3,11,19,59,67,83,107,131,139,163,179,211,227,347,379,419,443,467,491,523,547,563,587,619,659,787,827,859,883,907,947,1019,1091,1123,1171,1187,1259,1283,1291,1307,1427,1451,1483,1499,1523,1531,1571,1619,1667,1747,1787,1867,1907,1931,1979,1987,2027,2083,2099,2131,2243,2267,2339,2371,2459,2467,2531,2539,2579,2659,2683,2699,2707,2803,2819,2843,2851,2939,2963,3011
 
 #offset 1
 
 sub $0,1
-mov $1,2
 mov $2,$0
-add $0,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-  equ $3,1
+  add $1,1
+  add $3,2
+  seq $3,55388 ; Number of riffle shuffles of 2n cards required to return the deck to its initial state.
+  sub $3,$1
+  equ $3,$1
   sub $0,$3
+  add $1,3
   mov $4,$0
-  max $4,1
+  max $4,0
   equ $4,$0
-  add $1,8
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+mul $0,2
+add $0,3

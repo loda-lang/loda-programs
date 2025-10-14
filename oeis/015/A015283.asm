@@ -1,5 +1,5 @@
 ; A015283: Inverse of 1274th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 1,0,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mul $0,4
@@ -20,6 +20,7 @@ lpb $0
   div $3,$4
   mov $1,-1
   pow $1,$3
+  pow $2,$1
   add $1,1
   mov $4,$3
   dif $4,2

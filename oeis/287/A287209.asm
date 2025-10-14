@@ -1,19 +1,19 @@
 ; A287209: a(1)=4, a(2)=5, a(n) = sum of digits of a(n-1) + sum of digits of a(n-2), n>=3.
-; Submitted by Jon Maiga
+; Submitted by DukeBox
 ; 4,5,9,14,14,10,6,7,13,11,6,8,14,13,9,13,13,8,12,11,5,7,12,10,4,5,9,14,14,10,6,7,13,11,6,8,14,13,9,13,13,8,12,11,5,7,12,10,4,5,9,14,14,10,6,7,13,11,6,8,14,13,9,13,13,8,12,11,5,7,12,10,4,5,9,14,14,10,6,7
-; Formula: a(n) = b(n-1)+1, b(n) = -9*truncate(b(n-1)/9)-9*truncate(b(n-2)/9)+b(n-1)+b(n-2)+1, b(1) = 4, b(0) = 3
+; Formula: a(n) = b(n-1)+c(n-1), b(n) = sumdigits(b(n-1)+b(n-2),10)*sign(b(n-1)+b(n-2)), b(1) = 4, b(0) = 1, c(n) = b(n-1), c(1) = 1, c(0) = 3
 
 #offset 1
 
-mov $2,3
+mov $2,1
+mov $3,3
 sub $0,1
 lpb $0
   sub $0,1
-  add $1,1
-  mod $2,9
-  mov $3,$1
-  mov $1,$2
-  add $2,$3
+  mov $1,$3
+  mov $3,$2
+  add $2,$1
+  dgs $2,10
 lpe
-mov $0,$2
-add $0,1
+add $3,$2
+mov $0,$3

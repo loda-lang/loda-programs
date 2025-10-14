@@ -1,15 +1,19 @@
 ; A009767: Expansion of e.g.f. tan(x^2)/2 in odd powers of x^2.
-; Submitted by Fardringle
+; Submitted by Lenonn
 ; 1,120,241920,2352430080,70008319180800,4981141593037209600,724337282211580477440000,193082117289145211195228160000,87097726450270042926290105794560000,62534967622066352401869341275560345600000,68083350599600621793249530921443071413452800000
-; Formula: a(n) = truncate((A151817(2*n+1)*gcd(A155585(2*n+1),A122045(2*n+1)))/4)
+; Formula: a(n) = truncate((2*floor((A151817(2*n+1)*gcd(A155585(2*n+1),0))/4)-2)/2)+1
 
-mul $0,2
-add $0,1
-mov $1,$0
-seq $1,151817 ; a(n) = 2*(2*n)!/n!.
 mov $2,$0
-seq $2,122045 ; Euler (or secant) numbers E(n).
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $0,$2
-mul $0,$1
-div $0,4
+mul $2,2
+add $2,1
+mov $1,$2
+seq $1,151817 ; a(n) = 2*(2*n)!/n!.
+seq $2,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $2,0
+mul $2,$1
+div $2,4
+mul $2,2
+mov $0,$2
+sub $0,2
+div $0,2
+add $0,1

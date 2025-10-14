@@ -1,11 +1,9 @@
 ; A010057: a(n) = 1 if n is a cube, else 0.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -sqrtnint(max(n,1)-1,3)+sqrtnint(max(n,1),3)
+; Formula: a(n) = n==(sqrtnint(n,3)^3)
 
-max $0,1
 mov $1,$0
-sub $1,1
 nrt $1,3
-nrt $0,3
-sub $0,$1
+pow $1,3
+equ $0,$1

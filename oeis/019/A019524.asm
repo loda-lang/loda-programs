@@ -1,10 +1,29 @@
 ; A019524: Duplicate terms of A007908.
-; Submitted by shiva
+; Submitted by LCB001
 ; 11,1212,123123,12341234,1234512345,123456123456,12345671234567,1234567812345678,123456789123456789,1234567891012345678910,12345678910111234567891011,123456789101112123456789101112
-; Formula: a(n) = truncate(A030656(A007908(n))/2)
+; Formula: a(n) = floor((2*b(n)*10^(logint(2*b(n),10)+1)+2*b(n))/2), b(n) = b(n-1)*10^(logint(n,10)+1)+n, b(2) = 12, b(1) = 1, b(0) = 0
 
 #offset 1
 
-seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
-seq $0,30656 ; Pair up the numbers.
+lpb $0
+  sub $0,1
+  add $7,1
+  mov $2,$7
+  log $2,10
+  add $2,1
+  pow $1,$2
+  mul $6,$1
+  add $6,$7
+  mov $1,10
+lpe
+mov $0,$6
+mul $0,2
+mov $3,$0
+log $3,10
+add $3,1
+mov $4,10
+pow $4,$3
+mov $5,$0
+mul $0,$4
+add $0,$5
 div $0,2

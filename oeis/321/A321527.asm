@@ -1,5 +1,5 @@
 ; A321527: Expansion of x^3 * c(x^2) * c(x^4)^2 / (9 * c(x)) in powers of x where c() is a cubic AGM theta function.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 0,0,0,1,-1,0,2,0,-3,4,0,0,1,0,0,6,-7,0,8,0,-6,8,0,0,-1,0,0,13,-8,0,12,0,-15,12,0,0,7,0,0,14,-18,0,16,0,-12,24,0,0,-5,0,0,18,-14,0,26,0,-24,20,0,0,6,0,0,32,-31,0,24,0,-18,24,0,0,5,0,0,31,-20,0,28,0
 
 mov $2,1
@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
+    dif $7,3
     trn $7,1
     add $7,1
     seq $7,93829 ; Expansion of q * psi(q^3)^3 / psi(q) in powers of q where psi() is a Ramanujan theta function.
@@ -30,4 +31,4 @@ lpb $0
   mov $$9,$3
   add $2,1
 lpe
-mov $0,$3
+mov $0,$6

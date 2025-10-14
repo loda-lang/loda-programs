@@ -1,31 +1,25 @@
 ; A073355: Sum of squarefree kernels of numbers <= n.
-; Submitted by entity
+; Submitted by 10esseeTony
 ; 1,3,6,8,13,19,26,28,31,41,52,58,71,85,100,102,119,125,144,154,175,197,220,226,231,257,260,274,303,333,364,366,399,433,468,474,511,549,588,598,639,681,724,746,761,807,854,860,867,877,928,954,1007,1013,1068,1082,1139,1197,1256,1286,1347,1409,1430,1432,1497,1563,1630,1664,1733,1803,1874,1880,1953,2027,2042,2080,2157,2235,2314,2324
 
 #offset 1
 
 sub $0,1
-mov $4,3
-mov $1,$0
-add $1,3
-lpb $1
-  sub $1,$4
-  mov $3,$1
-  max $3,0
-  mov $4,1
-  mov $6,$3
-  add $6,1
-  add $2,$5
-  add $3,1
-  mov $8,$3
-  seq $8,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+mov $4,$0
+mov $3,$0
+add $3,1
+lpb $3
   sub $3,1
-  mov $7,$3
-  div $7,$8
-  add $3,$7
-  add $3,2
-  mov $5,$3
-  gcd $5,$6
+  mov $0,$4
+  sub $0,$3
+  mov $2,$0
+  lpb $2
+    add $2,1
+    seq $2,19554 ; Smallest number whose square is divisible by n.
+    sub $2,1
+  lpe
+  mov $0,$2
+  add $0,1
+  add $1,$0
 lpe
-mov $0,$2
-add $0,1
+mov $0,$1

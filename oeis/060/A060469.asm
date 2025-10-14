@@ -1,26 +1,39 @@
 ; A060469: Smallest positive a(n) such that number of solutions to a(n) = a(j)+a(k) j<k<n is one or less.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,3,4,6,8,11,13,16,18,23,25,28,30,35,37,40,42,47,49,52,54,59,61,64,66,71,73,76,78,83,85,88,90,95,97,100,102,107,109,112,114,119,121,124,126,131,133,136,138,143,145,148,150,155,157,160,162,167,169,172,174,179,181,184,186,191,193,196,198,203,205,208,210,215,217,220,222,227,229
 
 #offset 1
 
+mov $1,1
+mov $2,2
+mov $3,3
+mov $4,4
+mov $5,6
+mov $6,8
+mov $7,11
+mov $8,13
+mov $9,16
+mov $10,18
+mov $11,23
 sub $0,1
-mov $2,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
-  sub $0,2
-  mov $1,$0
-  gcd $1,4
-  div $0,2
-  add $0,1
-  lpb $0
-    mov $0,$1
-    add $0,1
-  lpe
-  add $4,$0
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $12,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mul $7,-1
+  add $12,$7
+  add $12,$8
+  add $12,$11
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
 lpe
-mov $0,$4
-add $0,1
+mov $0,$1

@@ -1,15 +1,37 @@
 ; A044294: Numbers n such that string 4,7 occurs in the base 9 representation of n but not of n-1.
-; Submitted by Science United
+; Submitted by loader3229
 ; 43,124,205,286,367,387,448,529,610,691,772,853,934,1015,1096,1116,1177,1258,1339,1420,1501,1582,1663,1744,1825,1845,1906,1987,2068,2149,2230,2311,2392,2473,2554,2574,2635,2716,2797
-; Formula: a(n) = truncate((3*truncate((2*A044684(n+1))/3)-249)/2)+36
 
 #offset 1
 
-add $0,1
-seq $0,44684 ; Numbers n such that string 5,7 occurs in the base 9 representation of n but not of n+1.
-mul $0,2
-div $0,3
-sub $0,83
-mul $0,3
-div $0,2
-add $0,36
+mov $1,43
+mov $2,124
+mov $3,205
+mov $4,286
+mov $5,367
+mov $6,387
+mov $7,448
+mov $8,529
+mov $9,610
+mov $10,691
+mov $11,772
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $1,-1
+  mov $12,$1
+  add $12,$2
+  add $12,$11
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+lpe
+mov $0,$1
