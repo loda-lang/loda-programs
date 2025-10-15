@@ -1,0 +1,65 @@
+; A370559: Periodic sequence S_{29} of length 28: used to compute the number of times the 29th day of a month occurs on a day of the week for the Gregorian cycle of 400 years.
+; Submitted by loader3229
+; 1,2,2,1,2,1,2,2,1,2,1,1,3,2,1,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,2,1,2,1,2,2,1,2,1,1,3,2,1,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,2,1,2,1,2,2,1,2,1,1,3,2,1,2,1,2,2,2,2,1,1,2
+
+mov $1,1
+mov $2,2
+mov $3,2
+mov $4,1
+mov $5,2
+mov $6,1
+mov $7,2
+mov $8,2
+mov $9,1
+mov $10,2
+mov $11,1
+mov $12,1
+mov $13,3
+mov $14,2
+mov $15,1
+mov $16,2
+mov $17,1
+mov $18,2
+mov $19,2
+mov $20,2
+mov $21,2
+mov $22,1
+mov $23,1
+mov $24,2
+mov $25,2
+mov $26,1
+mov $27,2
+mov $28,1
+lpb $0
+  sub $0,1
+  mov $29,$1
+  mov $1,$2
+  mov $2,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$6
+  mov $6,$7
+  mov $7,$8
+  mov $8,$9
+  mov $9,$10
+  mov $10,$11
+  mov $11,$12
+  mov $12,$13
+  mov $13,$14
+  mov $14,$15
+  mov $15,$16
+  mov $16,$17
+  mov $17,$18
+  mov $18,$19
+  mov $19,$20
+  mov $20,$21
+  mov $21,$22
+  mov $22,$23
+  mov $23,$24
+  mov $24,$25
+  mov $25,$26
+  mov $26,$27
+  mov $27,$28
+  mov $28,$29
+lpe
+mov $0,$1
