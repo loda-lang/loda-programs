@@ -63,7 +63,6 @@ A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x
 A009194: a(n) = gcd(n, sigma(n)).
 A010871: Constant sequence: a(n) = 32.
 A011757: a(n) = prime(n^2).
-A014303: a(n) = prime(n)*(prime(n+1)-1)/2.
 A014566: Sierpiński numbers of the first kind: n^n + 1.
 A014683: In the sequence of positive integers add 1 to each prime number.
 A014688: a(n) = n-th prime + n.
@@ -220,7 +219,6 @@ A062971: a(n) = (2*n)^n.
 A062981: a(n) = n^phi(n).
 A063439: a(n) = phi(n)^phi(n).
 A065073: n-th prime + sum of digits of n-th prime.
-A065313: a(n) = Pi(n*Pi(n)).
 A065858: m-th composite number c(m) = A002808(m), where m is the n-th prime number: a(n) = A002808(A000040(n)).
 A065995: a(n) = prime(prime(n) + n).
 A066096: a(n) = floor(n*phi), where phi = (1 + sqrt(5))/2.
@@ -308,7 +306,6 @@ A091330: a(n) = ((p-1)!/p) - ((p-1)*(p-1)!/p!), where p is the n-th prime.
 A092759: a(n) = prime(n)^7.
 A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
-A092772: (Prime(prime(n))^2-1)/24.
 A093460: a(n) = 2n^(n-1) - 1.
 A094815: (prime(prime(n)))^n.
 A095116: a(n) = prime(n) + n - 1.
@@ -616,7 +613,6 @@ A319089: a(n) = tau(n)^3, where tau is A000005.
 A319527: a(n) = 7 * sigma(n).
 A319528: a(n) = 8 * sigma(n).
 A323902: a(n) = A002487(A156552(n)).
-A324868: Binary weight of A324398(n).
 A325299: a(n) = 9 * sigma(n).
 A326122: a(n) = 10 * sigma(n).
 A330410: a(n) = 6*prime(n) - 1.
