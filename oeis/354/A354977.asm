@@ -2,9 +2,6 @@
 ; Submitted by loader3229
 ; 1,1,1,1,3,7,1,6,25,90,1,10,65,350,1701,1,15,140,1050,6951,42525,1,21,266,2646,22827,179487,1323652,1,28,462,5880,63987,627396,5715424,49329280,1,36,750,11880,159027,1899612,20912320,216627840,2141764053
 
-#inputs 2
-#outputs 1
-
 max $0,1
 mov $1,$0
 seq $1,3056 ; n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
