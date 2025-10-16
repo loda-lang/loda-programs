@@ -1,24 +1,22 @@
 ; A040335: Continued fraction for sqrt(354).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 18,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1,36,1,4,2,2,18,2,2,4,1
 
-sub $1,$0
-gcd $1,2
-mov $2,16
-mul $0,4
-pow $0,2
+mov $1,18
+mov $2,1
+mov $3,4
+mov $4,2
+mov $5,2
+mov $6,18
+mov $7,2
+mov $8,2
+mov $9,4
+mov $10,1
+mov $11,36
 lpb $0
-  mov $3,$0
-  mov $0,0
-  mul $2,9
-  add $2,6
-  mod $3,10
-  add $3,5
-  div $2,$3
-  sub $2,5
+  mul $1,0
+  rol $1,11
+  add $11,$1
+  sub $0,1
 lpe
-sub $2,7
-mov $0,$2
-gcd $0,18
-mul $1,$0
 mov $0,$1

@@ -1,19 +1,22 @@
 ; A007381: 7th-order maximal independent sets in path graph.
-; Submitted by Gibson Praise
+; Submitted by loader3229
 ; 1,2,1,3,1,4,1,5,2,6,4,7,7,8,11,9,16,11,22,15,29,22,37,33,46,49,57,71,72,100,94,137,127,183,176,240,247,312,347,406,484,533,667,709,907,956,1219,1303,1625,1787,2158,2454,2867,3361,3823,4580
 
 #offset 1
 
-add $0,16
+mov $1,1
+mov $2,2
+mov $3,1
+mov $4,3
+mov $5,1
+mov $6,4
+mov $7,1
+mov $8,5
+mov $9,2
+sub $0,1
 lpb $0
-  mov $2,$0
-  mod $2,2
-  sub $0,7
-  mov $3,$0
-  div $3,2
-  bin $3,$1
-  mul $3,$2
-  add $1,1
-  add $4,$3
+  rol $1,9
+  add $9,$7
+  sub $0,1
 lpe
-mov $0,$4
+mov $0,$1

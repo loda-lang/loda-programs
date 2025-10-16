@@ -1,11 +1,49 @@
 ; A014141: Inverse of 132nd cyclotomic polynomial.
-; Submitted by Olde16
+; Submitted by Science United
 ; 1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,1,0,-1,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A014075(floor(n/2))*((n+1)%2)
 
+mov $4,1
+mov $5,-1
+mov $6,1
+mov $15,1
+mov $16,-1
+mov $17,1
 mov $1,$0
 div $1,2
-seq $1,14075 ; Inverse of 66th cyclotomic polynomial.
+lpb $1
+  sub $1,1
+  mul $4,-1
+  mov $24,$4
+  mov $4,$5
+  mul $5,-1
+  add $24,$5
+  add $24,$7
+  add $24,$8
+  rol $5,5
+  mov $9,$10
+  mul $10,-1
+  add $24,$10
+  mov $10,$11
+  mul $11,-1
+  add $24,$11
+  add $24,$13
+  add $24,$14
+  add $24,$15
+  rol $11,6
+  mov $16,$17
+  mul $17,-1
+  add $24,$17
+  mov $17,$18
+  mul $18,-1
+  add $24,$18
+  add $24,$20
+  add $24,$21
+  rol $18,5
+  mov $22,$23
+  mul $23,-1
+  add $24,$23
+  mov $23,$24
+lpe
 add $0,1
 mod $0,2
-mul $0,$1
+mul $0,$4

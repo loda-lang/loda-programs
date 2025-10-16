@@ -1,22 +1,21 @@
 ; A018403: Divisors of 344.
-; Submitted by Wood
+; Submitted by Science United
 ; 1,2,4,8,43,86,172,344
-; Formula: a(n) = d(n-1)+1, b(n) = b(n-1)+c(n-1)+2, b(3) = 41, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = max(33,b(n-1)+c(n-1)+2), c(3) = 41, c(2) = 33, c(1) = 2, c(0) = 0, d(n) = b(n-1)+1, d(3) = 7, d(2) = 3, d(1) = 1, d(0) = 0
 
 #offset 1
 
+mov $2,28
+mov $3,1
+fil $3,3
 sub $0,1
 lpb $0
   sub $0,1
-  add $2,2
-  mul $3,12
-  sub $3,27
-  mov $4,$1
-  add $4,1
-  add $1,$2
-  mov $2,$3
-  max $2,$1
-  mov $3,5
+  mul $1,2
+  add $1,$3
+  mov $3,$4
+  mov $4,$5
+  mov $5,$2
+  mov $2,1
 lpe
-mov $0,$4
+mov $0,$1
 add $0,1

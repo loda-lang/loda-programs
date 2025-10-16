@@ -1,5 +1,5 @@
 ; A043134: Numbers k such that 0 and 4 occur juxtaposed in the base-7 representation of k but not of k-1.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 28,53,77,102,126,151,175,196,224,249,273,298,322,347,371,396,420,445,469,494,518,539,567,592,616,641,665,690,714,739,763,788,812,837,861,882,910,935,959,984,1008,1033,1057,1082,1106
 
 #offset 1
@@ -26,20 +26,7 @@ lpb $0
   mov $16,$1
   add $16,$2
   add $16,$15
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
+  rol $1,15
   mov $15,$16
 lpe
 mov $0,$1

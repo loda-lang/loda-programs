@@ -1,27 +1,22 @@
 ; A040437: Continued fraction for sqrt(459).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 21,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2
 
-mul $0,3
-mov $2,16
-sub $3,$0
-gcd $3,2
-mul $0,4
-pow $0,2
+mov $1,21
+mov $2,2
+mov $3,2
+mov $4,1
+mov $5,4
+mov $6,21
+mov $7,4
+mov $8,1
+mov $9,2
+mov $10,2
+mov $11,42
 lpb $0
-  mov $1,$0
-  mul $2,9
-  add $2,6
-  mov $0,0
-  mod $1,10
-  add $1,5
-  div $2,$1
-  sub $2,5
+  mul $1,0
+  rol $1,11
+  add $11,$1
+  sub $0,1
 lpe
-sub $2,7
-mov $0,$2
-gcd $0,18
-mul $3,$0
-mov $0,$3
-div $0,6
-add $0,$3
+mov $0,$1

@@ -1,19 +1,27 @@
 ; A003124: One of the basic cycles in the x->3x-1 (x odd) or x/2 (x even) problem.
 ; Submitted by loader3229
 ; 17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34,17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34,17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34
-; Formula: a(n) = truncate(a(n-1)/2)*(5*a(n-1)-10*truncate(a(n-1)/2)+1)+2*a(n-1)-4*truncate(a(n-1)/2), a(0) = 17
 
 mov $1,17
+mov $2,50
+mov $3,25
+mov $4,74
+mov $5,37
+mov $6,110
+mov $7,55
+mov $8,164
+mov $9,82
+mov $10,41
+mov $11,122
+mov $12,61
+mov $13,182
+mov $14,91
+mov $15,272
+mov $16,136
+mov $17,68
+mov $18,34
 lpb $0
+  rol $1,18
   sub $0,1
-  mov $2,$1
-  mod $2,2
-  mov $3,$2
-  mul $3,5
-  add $3,1
-  div $1,2
-  mul $1,$3
-  add $1,$2
-  add $1,$2
 lpe
 mov $0,$1

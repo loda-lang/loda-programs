@@ -14,11 +14,7 @@ mov $9,7
 lpb $0
   sub $0,1
   mov $1,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
+  rol $3,6
   mov $8,$9
   mov $9,$2
   mov $2,$1

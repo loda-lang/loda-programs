@@ -18,15 +18,7 @@ lpb $0
   mul $2,0
   mov $1,$2
   add $1,$3
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $2,10
   mov $11,$12
   mov $12,$1
 lpe

@@ -1,5 +1,5 @@
 ; A044297: Numbers k such that the string 5,1 occurs in the base 9 representation of k but not of k-1.
-; Submitted by loader3229
+; Submitted by Science United
 ; 46,127,208,289,370,414,451,532,613,694,775,856,937,1018,1099,1143,1180,1261,1342,1423,1504,1585,1666,1747,1828,1872,1909,1990,2071,2152,2233,2314,2395,2476,2557,2601,2638,2719,2800,2881,2962,3043,3124,3205,3286,3330,3367
 
 #offset 1
@@ -22,16 +22,7 @@ lpb $0
   mov $12,$1
   add $12,$2
   add $12,$11
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $1,11
   mov $11,$12
 lpe
 mov $0,$1

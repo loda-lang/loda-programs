@@ -1,25 +1,32 @@
 ; A025105: a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n-k+1), where k = [ n/2 ], s = (F(2), F(3), F(4), ...).
-; Submitted by eclipse99
+; Submitted by loader3229
 ; 2,3,11,18,44,71,155,251,510,825,1608,2602,4924,7967,14761,23884,43540,70449,126805,205175,365532,591443,1044816,1690548,2965334,4798011,8365415
 
 #offset 1
 
-mov $1,$0
-add $1,2
+mov $1,2
+mov $2,3
+mov $3,11
+mov $4,18
+mov $5,44
+mov $6,71
+mov $7,155
+mov $8,251
 sub $0,1
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  seq $0,22360 ; Fibonacci sequence beginning 0, 26.
-  add $3,$0
-  add $4,$3
-  mov $3,$5
+lpb $0
+  rol $1,8
+  mov $9,$2
+  mul $9,-3
+  sub $0,1
+  add $8,$1
+  add $8,$9
+  sub $8,$3
+  sub $8,$3
+  sub $8,$5
+  sub $8,$5
+  mov $9,$6
+  mul $9,3
+  add $8,$9
+  add $8,$7
 lpe
-add $4,$3
-mov $0,$4
-div $0,26
+mov $0,$1

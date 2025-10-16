@@ -1,32 +1,33 @@
 ; A025030: Number of distributive lattices; also number of paths with n turns when light is reflected from 7 glass plates.
-; Submitted by BlisteringSheep
+; Submitted by loader3229
 ; 1,7,28,140,658,3164,15106,72302,345775,1654092,7911970,37846314,181033035,865951710,4142180085,19813648817,94776329265,453351783116,2168556616440,10373043626906,49618272850056,237343357526002,1135304921232228,5430601798602325,25976665248887128,124256419911320974,594366433920801436,2843084148281317997,13599569243647755400,65051990713885003217,311168789247927568765,1488440466455323392839,7119785462855467563220,34056682937281356955140,162906264344844037884370,779243563199190803332332
 
-mov $2,1
-mov $8,1
-mov $10,1
+mov $1,1
+mov $2,7
+mov $3,28
+mov $4,140
+mov $5,658
+mov $6,3164
+mov $7,15106
 lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,6359 ; Number of distributive lattices; also number of paths with n turns when light is reflected from 6 glass plates.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    div $6,-1
-    add $6,$7
-  lpe
-  add $6,$8
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  mul $1,-1
+  rol $1,7
+  mov $8,$2
+  mul $8,6
+  add $7,$1
+  add $7,$8
   mov $8,$3
+  mul $8,-5
+  add $7,$8
+  mov $8,$4
+  mul $8,-10
+  add $7,$8
+  mov $8,$5
+  mul $8,6
+  add $7,$8
+  mov $8,$6
+  mul $8,4
+  sub $0,1
+  add $7,$8
 lpe
-mov $0,$8
+mov $0,$1

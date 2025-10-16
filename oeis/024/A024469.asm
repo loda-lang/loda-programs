@@ -1,25 +1,32 @@
 ; A024469: a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k), where k = [ (n+1)/2 ], s = (Lucas numbers).
-; Submitted by fzs600
+; Submitted by loader3229
 ; 1,3,13,19,48,79,176,283,580,940,1844,2982,5667,9171,17047,27581,50404,81557,147090,237995,424686,687158,1215528,1966764,3453733,5588259,9752641
 
 #offset 1
 
+mov $1,1
+mov $2,3
+mov $3,13
+mov $4,19
+mov $5,48
+mov $6,79
+mov $7,176
+mov $8,283
 sub $0,1
-mov $1,$0
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$5
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-  add $3,$0
-  add $4,$3
+lpb $0
+  rol $1,8
+  mov $9,$2
+  mul $9,-3
+  sub $0,1
+  add $8,$1
+  add $8,$9
+  sub $8,$3
+  sub $8,$3
+  sub $8,$5
+  sub $8,$5
+  mov $9,$6
+  mul $9,3
+  add $8,$9
+  add $8,$7
 lpe
-mul $5,3
-add $5,$3
-mov $0,$5
+mov $0,$1
