@@ -1,0 +1,49 @@
+; A244220: Binary complement of Greedy Catalan Base reduced modulo 2: a(n) = 1 - (A014418(n) modulo 2).
+; Submitted by Romeo Mikuli?
+; 1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1
+
+mov $3,9
+mov $8,37
+mov $9,39
+mov $11,53
+mov $12,55
+mov $13,63
+pow $0,2
+lpb $0
+  sub $0,1
+  mul $2,-1
+  sub $15,1
+  mov $16,$1
+  add $16,$2
+  mov $2,$3
+  mov $3,$4
+  mul $4,-1
+  add $16,$4
+  add $16,$5
+  mov $4,$5
+  mov $5,$6
+  sub $5,$7
+  mul $6,-1
+  add $16,$6
+  rol $6,3
+  mov $8,$9
+  mul $9,2
+  add $16,$9
+  add $16,$11
+  rol $9,3
+  mov $11,$12
+  mul $12,-1
+  add $16,$12
+  add $16,$13
+  mov $12,$13
+  mov $13,$14
+  mul $14,-1
+  add $16,$14
+  mov $14,$15
+  mov $15,$16
+lpe
+mov $0,$15
+add $0,1
+mod $0,2
+add $0,2
+mod $0,2

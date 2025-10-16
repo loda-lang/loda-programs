@@ -1,20 +1,18 @@
 ; A145543: Denominators in continued fraction expansion of sqrt(3/5).
 ; Submitted by BrandyNOW
 ; 1,4,9,31,71,244,559,1921,4401,15124,34649,119071,272791,937444,2147679,7380481,16908641,58106404,133121449,457470751,1048062951,3601659604,8251382159,28355806081,64962994321,223244789044,511452572409,1757602506271,4026657584951
-; Formula: a(n) = b(n-1), b(n) = sign(3*sign(1)*sign(c(n-1))+sign(c(n-1))+sign(1))*bitxor(abs(c(n-1)),abs(1))*b(n-1)+b(n-2), b(2) = 9, b(1) = 4, b(0) = 1, c(n) = sign(3*sign(1)*sign(c(n-1))+sign(c(n-1))+sign(1))*bitxor(abs(c(n-1)),abs(1)), c(2) = 2, c(1) = 3, c(0) = 2
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 4*b(n-2)+3*c(n-2), b(3) = 4, b(2) = 4, b(1) = 1, b(0) = 1, c(n) = 5*b(n-2)+4*c(n-2), c(3) = 5, c(2) = 5, c(1) = 0, c(0) = 0
 
 #offset 1
 
 mov $1,1
-mov $2,2
-mov $3,1
-sub $0,1
 lpb $0
-  sub $0,1
-  bxo $2,1
-  mov $4,$1
-  mul $1,$2
+  sub $0,2
+  add $2,$1
+  mov $3,$2
+  mul $3,3
   add $1,$3
-  mov $3,$4
+  add $2,$1
 lpe
-mov $0,$1
+mul $0,$2
+add $0,$1

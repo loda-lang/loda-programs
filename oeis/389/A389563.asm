@@ -1,25 +1,25 @@
 ; A389563: Number of achiral polyominoes with n heptagonal cells of the hyperbolic regular tiling with Schläfli symbol {7,oo}.
-; Submitted by cellarnoise2
+; Submitted by Science United
 ; 1,1,1,3,6,21,51,190,506,1950,5481,21576,62832,250971,749398,3025308,9203634,37456650,115607310,473498025,1478314266,6085977381,19180049928,79296104784,251857119696,1044955576496,3340843549855,13903071489300,44700485049720,186507160795350,602574657427116,2519857658331576,8175951659117794,34258270557555282
 
-mov $2,$0
-mul $0,3
+trn $0,1
 add $0,1
 lpb $0
   sub $0,1
-  gcd $3,2
-  add $3,$0
-  bin $3,$0
+  max $4,$0
+  max $2,$4
+  add $2,$0
+  bin $2,$0
+  gcd $2,2
+  add $4,1
+  mov $3,$4
   mul $3,3
-  mov $4,$1
-  bin $4,$2
-  trn $0,1
-  add $1,2
-  add $2,1
-  mul $4,$3
-  div $4,$2
+  bin $3,$1
+  mul $3,$2
+  div $3,$4
+  sub $4,1
+  add $0,1
+  trn $0,2
+  add $1,1
 lpe
-mov $0,$4
-sub $0,3
-div $0,3
-add $0,1
+mov $0,$3

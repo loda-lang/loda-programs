@@ -1,18 +1,12 @@
 ; A040855: Continued fraction for sqrt(885).
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 29,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1,58,1,2,1
 
-mov $1,$0
-dif $1,2
-mov $2,$1
-equ $1,0
-sub $2,$1
-gcd $2,2
-add $2,9
-add $1,$2
-mul $1,$2
-sub $1,99
-gcd $0,2
-mul $0,$1
-mul $0,4
-div $0,3
+mov $1,29
+mul $0,29
+lpb $0
+  mod $0,4
+  mul $1,2
+  gcd $1,$0
+lpe
+mov $0,$1

@@ -1,0 +1,52 @@
+; A306744: Decimal expansion of the constant S_1 + S_2 = Sum_{j>=1} prime(j)!/prime(j + 1)!.
+; Submitted by Science United
+; 4,1,9,2,2,2,0,6,4,9,0,3
+
+mov $2,4
+mov $3,8
+mov $4,13
+mov $5,18
+mov $6,22
+mov $7,27
+mov $8,30
+mov $9,33
+mov $10,39
+mov $11,44
+mov $12,49
+mov $13,54
+mov $14,1
+mov $15,59
+lpb $0
+  sub $0,1
+  mul $2,-1
+  mov $16,$1
+  add $16,$2
+  mov $2,$3
+  bin $2,2
+  mov $3,$4
+  mul $4,-1
+  add $16,$4
+  add $16,$5
+  mov $4,$5
+  mov $5,$6
+  mul $6,-1
+  add $16,$6
+  add $16,$7
+  rol $6,3
+  mov $8,$9
+  mul $9,2
+  add $16,$9
+  add $16,$11
+  rol $9,3
+  mov $11,$12
+  mul $12,-1
+  add $16,$12
+  add $16,$13
+  add $16,$14
+  rol $12,4
+  mov $15,$16
+lpe
+mov $0,$13
+mod $0,10
+add $0,10
+mod $0,10
