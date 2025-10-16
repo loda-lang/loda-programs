@@ -1,29 +1,22 @@
 ; A134720: Even Padovan numbers.
-; Submitted by Rhodan71
+; Submitted by loader3229
 ; 0,0,0,2,2,4,12,16,28,86,114,200,616,816,1432,4410,5842,10252,31572,41824,73396,226030,299426,525456,1618192,2143648,3761840,11584946,15346786,26931732,82938844,109870576,192809420,593775046,786584466,1380359512,4250949112
 
 #offset 1
 
+mov $4,2
+mov $5,2
+mov $6,4
+mov $7,12
+mov $8,16
+mov $9,28
 sub $0,1
-mov $1,2
-mov $2,7259
-lpb $2
-  sub $2,16
-  sub $2,$1
-  mov $3,$1
-  seq $3,133034 ; First differences of Padovan sequence A000931.
-  mov $5,$3
-  mul $3,338
-  gcd $3,4
-  add $3,1
-  equ $3,5
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
+lpb $0
+  rol $1,9
+  mov $10,$6
+  mul $10,7
+  sub $0,1
+  add $9,$3
+  add $9,$10
 lpe
-mov $0,$5
-div $0,2
-mul $0,2
+mov $0,$1

@@ -1,51 +1,29 @@
 ; A104158: Numbers on a standard, London, or clock dartboard read in a counterclockwise direction.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 20,5,12,9,14,11,8,16,7,19,3,17,2,15,10,6,13,4,18,1,20,5,12,9,14,11,8,16,7,19,3,17,2,15,10,6,13,4,18,1,20,5,12,9,14,11,8,16,7,19,3,17,2,15,10,6,13,4,18,1,20,5,12,9,14,11,8,16,7,19,3,17,2,15,10,6,13,4,18,1
 
 mov $1,20
-mov $2,1
-mov $3,18
-mov $4,4
-mov $5,13
-mov $6,6
-mov $7,10
-mov $8,15
-mov $9,2
-mov $10,17
+mov $2,5
+mov $3,12
+mov $4,9
+mov $5,14
+mov $6,11
+mov $7,8
+mov $8,16
+mov $9,7
+mov $10,19
 mov $11,3
-mov $12,19
-mov $13,7
-mov $14,16
-mov $15,8
-mov $16,11
-mov $17,14
-mov $18,9
-mov $19,12
-mov $20,5
-mul $0,19
-add $0,18
+mov $12,17
+mov $13,2
+mov $14,15
+mov $15,10
+mov $16,6
+mov $17,13
+mov $18,4
+mov $19,18
+mov $20,1
 lpb $0
+  rol $1,20
   sub $0,1
-  mov $21,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
 lpe
-mov $0,$3
+mov $0,$1

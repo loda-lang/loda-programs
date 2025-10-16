@@ -1,27 +1,59 @@
 ; A097603: Multiples of perfect numbers.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 6,12,18,24,28,30,36,42,48,54,56,60,66,72,78,84,90,96,102,108,112,114,120,126,132,138,140,144,150,156,162,168,174,180,186,192,196,198,204,210,216,222,224,228,234,240,246,252,258,264,270,276,280,282,288,294
 
 #offset 1
 
+mov $1,6
+mov $2,12
+mov $3,18
+mov $4,24
+mov $5,28
+mov $6,30
+mov $7,36
+mov $8,42
+mov $9,48
+mov $10,54
+mov $11,56
+mov $12,60
+mov $13,66
+mov $14,72
+mov $15,78
+mov $16,84
 sub $0,1
-mov $1,1
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  mul $3,2
-  seq $3,325469 ; a(n) is the number of divisors d of n such that d divides sigma(d).
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+lpb $0
+  mul $1,-1
+  rol $1,16
+  add $16,$1
+  add $16,$1
+  sub $16,$2
+  sub $16,$2
+  add $16,$3
+  add $16,$3
+  sub $16,$4
+  sub $16,$4
+  add $16,$5
+  add $16,$5
+  sub $16,$6
+  sub $16,$6
+  add $16,$7
+  add $16,$7
+  sub $16,$8
+  sub $16,$8
+  add $16,$9
+  add $16,$9
+  sub $16,$10
+  sub $16,$10
+  add $16,$11
+  add $16,$11
+  sub $16,$12
+  sub $16,$12
+  add $16,$13
+  add $16,$13
+  sub $16,$14
+  sub $16,$14
+  add $16,$15
+  add $16,$15
+  sub $0,1
 lpe
 mov $0,$1
-mul $0,2
-sub $0,2

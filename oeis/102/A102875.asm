@@ -1,9 +1,40 @@
 ; A102875: Let f(n) = n+2 if n == 1 mod 3, = n if n == 2 mod 3, = n-2 if n == 0 mod 3; then a(n) = Fibonacci(f(n)).
 ; Submitted by Jamie Morken(w2)
 ; 0,2,1,1,8,5,3,34,21,13,144,89,55,610,377,233,2584,1597,987,10946,6765,4181,46368,28657,17711,196418,121393,75025,832040,514229,317811,3524578,2178309,1346269,14930352,9227465,5702887,63245986,39088169
-; Formula: a(n) = A000045(A074066(n+1)-1)
 
-add $0,1
-seq $0,74066 ; Zigzag modulo 3.
-sub $0,1
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $2,$0
+add $2,2
+mov $1,$2
+mod $1,3
+sub $2,$1
+sub $2,$1
+mov $6,1
+mov $0,$2
+lpb $0
+  mul $9,$6
+  mul $9,2
+  mov $10,$5
+  pow $10,2
+  mov $3,$6
+  pow $3,2
+  sub $9,$10
+  add $10,$3
+  mov $3,$10
+  sub $3,$9
+  mov $7,$0
+  max $7,1
+  log $7,2
+  mov $8,2
+  pow $8,$7
+  ban $8,$2
+  neq $8,0
+  div $0,2
+  mul $3,$8
+  mov $4,$9
+  mul $4,$8
+  add $9,$3
+  add $10,$4
+  mov $5,$9
+  mov $6,$10
+lpe
+mov $0,$5

@@ -1,21 +1,25 @@
 ; A125997: A106486-encodings of combinatorial games equivalent to game {0|1}.
-; Submitted by shiva
+; Submitted by loader3229
 ; 9,25,73,89,521,537,585,601,2057,2073,2121,2137,2569,2585,2633,2649,4105,4121,4169,4185,4617,4633,4681,4697,6153,6169,6217,6233,6665,6681,6729,6745,8201,8217,8265,8281,8713,8729,8777,8793,10249,10265
 
 #offset 1
 
-mov $3,$0
-pow $3,4
-lpb $3
-  mov $4,$2
-  mul $4,9
-  ban $4,$1
-  equ $4,0
-  sub $0,$4
-  add $1,2
-  mov $2,20
-  sub $3,$0
+mov $1,1
+mov $2,17
+mov $3,65
+mov $4,81
+mov $5,513
+mov $6,529
+mov $7,577
+mov $8,593
+mov $9,2049
+sub $0,1
+lpb $0
+  mul $1,-1
+  rol $1,9
+  add $9,$1
+  add $9,$8
+  sub $0,1
 lpe
 mov $0,$1
-mul $0,8
-add $0,9
+add $0,8

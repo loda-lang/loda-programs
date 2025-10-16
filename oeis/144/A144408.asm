@@ -1,19 +1,15 @@
 ; A144408: Last digit of A135266(n).
-; Submitted by Stony666
+; Submitted by Science United
 ; 0,1,5,9,0,2,6,9,9,1,6,0,0,1,5,9,0,2,6,9,9,1,6,0,0,1,5,9,0,2,6,9,9,1,6,0,0,1,5,9,0,2,6,9,9,1,6,0,0,1,5,9,0,2,6,9,9,1,6,0,0,1,5,9,0,2,6,9,9,1,6,0,0,1,5,9,0,2,6,9
-; Formula: a(n) = -10*truncate((truncate(((-1)^floor((n+2)/3)+floor((3^(n+1))/2)+1)/2)+9)/10)+truncate(((-1)^floor((n+2)/3)+floor((3^(n+1))/2)+1)/2)+9
+; Formula: a(n) = -10*truncate(truncate((3^(n+1)-((n+2)%6))/4)/10)+truncate((3^(n+1)-((n+2)%6))/4)
 
-add $0,1
+mov $2,$0
+add $2,1
+add $0,2
+mod $0,6
 mov $1,3
-pow $1,$0
-div $1,2
-add $1,1
-add $0,1
-div $0,3
-mov $2,-1
-pow $2,$0
-add $1,$2
+pow $1,$2
+sub $1,$0
+div $1,4
 mov $0,$1
-div $0,2
-add $0,9
 mod $0,10

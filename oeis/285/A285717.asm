@@ -1,34 +1,15 @@
 ; A285717: a(n) = A007814(n) + A159918(n) = A007814(n) + A000120(n^2).
-; Submitted by Jamie Morken(w4)
+; Submitted by Icecold
 ; 1,2,2,3,3,3,3,4,3,4,5,4,4,4,4,5,3,4,5,5,6,6,3,5,5,5,6,5,5,5,5,6,3,4,5,5,6,6,7,6,5,7,7,7,8,4,4,6,5,6,5,6,8,7,7,6,6,6,7,6,6,6,6,7,3,4,5,5,6,6,7,6,6,7,9,7,7,8,5,7
+; Formula: a(n) = floor((sumdigits(n^2,2)+sumdigits(n^2-1,2))/2)+1
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mov $3,0
-mul $0,2
-add $0,2
 pow $0,2
+mov $1,$0
+dgs $1,2
 sub $0,1
-div $0,2
-add $0,1
-mov $4,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  div $0,2
-  lex $0,2
-  add $0,1
-  add $3,$0
-lpe
-mov $0,$3
-sub $0,1
-div $0,2
-mul $0,$1
-add $1,2
-mod $0,$1
+dgs $0,2
+add $0,$1
 div $0,2
 add $0,1

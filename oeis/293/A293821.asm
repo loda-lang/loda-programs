@@ -1,23 +1,17 @@
 ; A293821: Number of integer-sided quadrilaterals having perimeter n, modulo rotations but not reflections.
-; Submitted by loader3229
+; Submitted by KetamiNO [YouTube]
 ; 1,1,2,4,6,10,12,20,23,35,38,56,60,84,88,120,125,165,170,220,226,286,292,364,371,455,462,560,568,680,688,816,825,969,978,1140,1150,1330,1340,1540,1551,1771,1782,2024,2036,2300,2312,2600,2613,2925,2938,3276,3290,3654,3668,4060
-; Formula: a(n) = truncate(e(n-4)/2)+1, b(n) = (c(n-1)==0)+b(n-1), b(4) = 3, b(3) = 3, b(2) = 2, b(1) = 2, b(0) = 1, c(n) = ((c(n-1)==0)+b(n-1))*(c(n-1)==0), c(4) = 0, c(3) = 3, c(2) = 0, c(1) = 2, c(0) = 0, d(n) = d(n-1)*((c(n-2)==0)+b(n-2))*(c(n-2)==0)+((c(n-1)==0)+b(n-1))*(c(n-1)==0), d(4) = 9, d(3) = 3, d(2) = 4, d(1) = 2, d(0) = 1, e(n) = d(n-1)+e(n-1), e(4) = 10, e(3) = 7, e(2) = 3, e(1) = 1, e(0) = 0
+; Formula: a(n) = floor(((floor((n-3)/2)+2)*((n-3)%2)+2*binomial(floor((n-3)/2)+2,3))/2)
 
 #offset 4
 
-mov $2,1
-mov $4,1
-sub $0,4
-lpb $0
-  sub $0,1
-  equ $3,0
-  add $5,$4
-  add $2,$3
-  mul $3,$2
-  mul $4,$1
-  add $4,$3
-  mov $1,$3
-lpe
-mov $0,$5
+sub $0,3
+mov $1,$0
 div $0,2
-add $0,1
+add $0,2
+mod $1,2
+mul $1,$0
+bin $0,3
+mul $0,2
+add $0,$1
+div $0,2

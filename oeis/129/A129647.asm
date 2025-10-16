@@ -1,21 +1,27 @@
 ; A129647: Largest order of a permutation of n elements with exactly 2 cycles. Also the largest LCM of a 2-partition of n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,2,3,6,5,12,15,20,21,30,35,42,45,56,63,72,77,90,99,110,117,132,143,156,165,182,195,210,221,240,255,272,285,306,323,342,357,380,399,420,437,462,483,506,525,552,575,600,621,650,675,702,725,756,783,812,837,870,899,930,957,992,1023,1056,1085,1122,1155,1190,1221,1260,1295,1332,1365,1406,1443,1482,1517,1560,1599
 
 #offset 1
 
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,6
+mov $6,5
+mov $7,12
+mov $8,15
 sub $0,1
-mov $1,$0
-mul $1,2
-mov $2,$0
-lpb $2
-  add $3,3
-  sub $1,$2
-  add $2,$3
-  sub $2,1
-  mod $2,4
+lpb $0
+  mul $1,0
+  rol $1,8
+  add $8,$2
+  sub $8,$3
+  sub $8,$3
+  add $8,$4
+  sub $8,$6
+  add $8,$7
+  add $8,$7
+  sub $0,1
 lpe
-div $1,2
-sub $0,$1
-mul $0,$1
-add $0,$1
+mov $0,$1

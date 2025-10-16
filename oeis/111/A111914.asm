@@ -15,16 +15,13 @@ lpb $0
   mov $2,$3
   mul $3,-1
   add $1,$3
-  mov $3,$4
-  mov $4,$5
+  rol $3,3
   mov $5,$6
   mul $6,-1
   add $1,$6
   add $1,$7
   add $1,$10
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
+  rol $6,4
   mov $9,$10
   mov $10,$1
 lpe

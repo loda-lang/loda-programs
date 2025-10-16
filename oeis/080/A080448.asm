@@ -1,23 +1,23 @@
 ; A080448: a(1) = 4, a(n) = smallest (nontrivial) multiple of a(n-1) containing n digits, a(n) not equal to 10*a(n-1). Also a(n) is not divisible by 10.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 4,12,108,1188,10692,117612,1058508,11643588,104792292,1152715212,10374436908,114118805988,1027069253892,11297761792812,101679856135308,1118478417488388,10066305757395492,110729363331350412
-; Formula: a(n) = 2*truncate((3*b(n-1)+1)/2), b(n) = b(n-1)*(-7*truncate(c(n-1)/7)+c(n-1)+8), b(2) = 36, b(1) = 4, b(0) = 1, c(n) = (-7*truncate(c(n-1)/7)+c(n-1)+8)*(7*truncate(c(n-2)/7)-c(n-2)+c(n-1)-8)-7*truncate(c(n-1)/7)+c(n-1)+8, c(3) = 407, c(2) = 45, c(1) = 8, c(0) = 0
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 9*b(n-2)+9*c(n-2), b(3) = 108, b(2) = 108, b(1) = 4, b(0) = 4, c(n) = 90*b(n-2)+90*c(n-2), c(3) = 1080, c(2) = 1080, c(1) = 8, c(0) = 8
 
 #offset 1
 
-mov $1,1
+mov $1,4
+mov $2,8
 sub $0,1
 lpb $0
-  sub $0,1
-  add $3,4
-  mod $2,7
+  sub $0,2
+  mov $3,$1
+  mul $3,90
+  mov $4,$2
+  mul $4,9
+  mul $2,90
   add $2,$3
-  mul $1,$2
-  add $2,$1
-  mov $3,4
+  mul $1,9
+  add $1,$4
 lpe
-mov $0,$1
-mul $0,3
-add $0,1
-div $0,2
-mul $0,2
+mul $0,$2
+add $0,$1

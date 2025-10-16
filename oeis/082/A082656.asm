@@ -1,26 +1,33 @@
 ; A082656: Trajectory of 39 under map x -> x/2 if x even, 3x+9 if x odd.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 39,126,63,198,99,306,153,468,234,117,360,180,90,45,144,72,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9,36,18,9
 
 #offset 1
 
-mov $1,$0
-mov $0,39
-lpb $1
-  mov $2,$0
-  mod $2,2
-  mov $3,1
-  sub $3,$2
-  mov $4,$0
-  lpb $2
-    sub $2,1
-    mul $0,3
-    add $0,9
-  lpe
-  lpb $3
-    sub $3,1
-    div $0,2
-  lpe
-  sub $1,1
+mov $1,39
+mov $2,126
+mov $3,63
+mov $4,198
+mov $5,99
+mov $6,306
+mov $7,153
+mov $8,468
+mov $9,234
+mov $10,117
+mov $11,360
+mov $12,180
+mov $13,90
+mov $14,45
+mov $15,144
+mov $16,72
+mov $17,36
+mov $18,18
+mov $19,9
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,19
+  add $19,$16
+  sub $0,1
 lpe
-mov $0,$4
+mov $0,$1

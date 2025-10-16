@@ -1,15 +1,20 @@
 ; A077246: Bisection (even part) of Chebyshev sequence with Diophantine property.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 2,13,102,803,6322,49773,391862,3085123,24289122,191227853,1505533702,11853041763,93318800402,734697361453,5784260091222,45539383368323,358530806855362,2822707071474573,22223125764941222
-; Formula: a(n) = 7*a(n-1)+b(n-1), a(1) = 13, a(0) = 2, b(n) = 6*a(n-1)+b(n-1), b(1) = 11, b(0) = -1
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 8*c(n-2)+7*b(n-2), b(3) = 102, b(2) = 102, b(1) = 2, b(0) = 2, c(n) = 55*c(n-2)+48*b(n-2), c(3) = 701, c(2) = 701, c(1) = 11, c(0) = 11
 
-mov $2,-1
-mov $3,2
+mov $1,2
+mov $2,11
 lpb $0
-  sub $0,1
-  mov $1,$3
-  mul $1,6
-  add $2,$1
-  add $3,$2
+  sub $0,2
+  mov $3,$1
+  mul $3,48
+  mov $4,$2
+  mul $4,8
+  mul $2,55
+  add $2,$3
+  mul $1,7
+  add $1,$4
 lpe
-mov $0,$3
+mul $0,$2
+add $0,$1

@@ -1,40 +1,24 @@
 ; A077543: Smallest n-digit composite palindrome.
-; Submitted by Jamie Morken(m4)
+; Submitted by loader3229
 ; 4,22,111,1001,10001,100001,1000001,10000001,100000001,1000000001,10000000001,100000000001,1000000000001,10000000000001,100000000000001,1000000000000001,10000000000000001,100000000000000001
 
 #offset 1
 
+mov $1,4
+mov $2,22
+mov $3,111
+mov $4,1001
+mov $5,10001
 sub $0,1
-mov $1,1
-mov $2,1
-mov $3,$0
-mul $3,5
-lpb $3
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  add $2,$3
-  mul $2,$5
-  mov $5,$0
-  mul $5,$3
-  add $5,$0
-  mov $4,$5
-  equ $4,0
-  add $5,$4
-  add $1,$2
-  div $1,$5
-  div $1,$5
-  div $2,$5
-  sub $3,1
+lpb $0
+  mul $1,0
+  rol $1,5
+  mov $6,$3
+  mul $6,-10
+  add $5,$6
+  mov $6,$4
+  mul $6,11
+  sub $0,1
+  add $5,$6
 lpe
-mov $6,10
-pow $6,$0
-div $2,$6
-mov $4,$2
-equ $4,0
-add $2,$4
-mul $1,2
-div $1,$2
-add $1,$6
 mov $0,$1
-add $0,1

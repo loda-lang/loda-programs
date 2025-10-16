@@ -1,5 +1,5 @@
 ; A211770:  a(n) = concatenation of periods of periodic sequences of ending digits of multiples of n.
-; Submitted by loader3229
+; Submitted by cellarnoise2
 ; 1234567890,24680,3692581470,48260,50,62840,7418529630,86420,9876543210,0,1234567890,24680,3692581470,48260,50,62840,7418529630,86420,9876543210,0,1234567890,24680,3692581470,48260,50,62840,7418529630,86420,9876543210,0
 
 #offset 1
@@ -16,16 +16,6 @@ mov $9,9876543210
 sub $0,1
 lpb $0
   sub $0,1
-  mov $11,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $1,10
 lpe
 mov $0,$1

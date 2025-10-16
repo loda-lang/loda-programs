@@ -1,18 +1,24 @@
 ; A161852: Solutions to the simultaneous equations m(n)+1=a(n)^2 and 7*m(n)+1=b(n)^2.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by loader3229
 ; 1,5,11,79,175,1259,2789,20065,44449,319781,708395,5096431,11289871,81223115,179929541,1294473409,2867582785,20630351429,45701395019,328791149455,728354737519,5240028039851,11607974405285,83511657488161,184999235747041,1330946491770725
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = truncate((9*c(n-2)+8*b(n-2))/4), b(3) = 11, b(2) = 11, b(1) = 1, b(0) = 1, c(n) = 14*c(n-2)+12*b(n-2), c(3) = 68, c(2) = 68, c(1) = 4, c(0) = 4
 
 #offset 1
 
-mov $2,2
+mov $1,1
+mov $2,4
 sub $0,1
 lpb $0
-  sub $0,1
-  add $3,$2
-  mov $1,$3
-  dif $1,4
-  mul $1,4
-  add $2,$1
+  sub $0,2
+  mov $3,$1
+  mul $3,12
+  mov $4,$2
+  mul $4,9
+  mul $2,14
+  add $2,$3
+  mul $1,8
+  add $1,$4
+  div $1,4
 lpe
-mov $0,$2
-div $0,2
+mul $0,$2
+add $0,$1

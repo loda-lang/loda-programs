@@ -1,7 +1,7 @@
 ; A286063: Fixed point of the mapping 00->001, 1->100, starting with 00.
 ; Submitted by loader3229
 ; 0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,0
-; Formula: a(n) = truncate(gcd(3,sumdigits(floor((n-1)/3),2)%2-n+3)/2)
+; Formula: a(n) = floor(gcd(3,sumdigits(floor((n-1)/3),2)%2-n+3)/2)
 
 #offset 1
 

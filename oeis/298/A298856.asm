@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $6,$1
@@ -18,7 +17,6 @@ lpb $2
   mov $7,$3
   mul $7,8
   nrt $7,2
-  add $7,1
   div $7,2
   mov $8,$7
   bin $8,2

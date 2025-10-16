@@ -1,5 +1,5 @@
 ; A194519: Second coordinate of (3,7)-Lagrange pair for n.
-; Submitted by DukeBox
+; Submitted by KetamiNO [YouTube]
 ; 1,-1,0,1,-1,0,1,-1,0,1,2,0,1,2,0,1,2,0,1,2,3,1,2,3,1,2,3,1,2,3,4,2,3,4,2,3,4,2,3,4,5,3,4,5,3,4,5,3,4,5,6,4,5,6,4,5,6,4,5,6,7,5,6,7,5,6,7,5,6,7,8,6,7,8,6,7,8,6,7,8
 
 #offset 1
@@ -18,15 +18,7 @@ lpb $0
   mov $1,$2
   add $1,$3
   add $1,$12
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $2,10
   mov $11,$12
   mov $12,$1
 lpe

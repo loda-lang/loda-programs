@@ -1,23 +1,59 @@
 ; A107454: Number of nonisomorphic generalized Petersen graphs P(n,k) with girth 5 on 2n vertices for 1<=k<=Floor[(n-1)/2].
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,1,0,1,2,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1
 
 #offset 5
 
+mov $2,1
+mov $4,1
+mov $6,1
+mov $7,2
+mov $8,1
+mov $9,1
 sub $0,5
-mov $2,$0
-trn $1,$0
-add $1,$0
-lpb $1
-  trn $1,4
-  mov $3,1
-  add $3,$2
-  mov $0,$1
-  mul $0,2
-  trn $1,1
-  mul $2,2
-  add $3,5
-  mod $3,2
+lpb $0
+  mov $11,$1
+  mul $11,-2
+  add $11,10
+  mul $2,$11
+  rol $2,8
+  mov $11,$1
+  mul $11,5
+  sub $11,20
+  mov $10,$2
+  mul $10,$11
+  mov $11,$1
+  mul $11,2
+  sub $11,10
+  add $9,$10
+  mov $10,$3
+  mul $10,$11
+  mul $11,0
+  add $11,10
+  add $9,$10
+  mov $10,$4
+  mul $10,$11
+  mov $11,$1
+  mul $11,2
+  sub $11,10
+  add $9,$10
+  mov $10,$6
+  mul $10,$11
+  mov $11,$1
+  mul $11,-5
+  add $11,20
+  add $9,$10
+  mov $10,$7
+  mul $10,$11
+  mov $11,$1
+  mul $11,-2
+  add $11,10
+  add $9,$10
+  mov $10,$8
+  mul $10,$11
+  add $9,$10
+  div $9,10
+  sub $0,1
+  add $1,1
 lpe
-sub $0,$3
-add $0,1
+mov $0,$2

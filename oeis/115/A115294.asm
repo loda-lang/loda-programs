@@ -1,19 +1,26 @@
 ; A115294: Diagonal sums of correlation triangle for (1+x)^3/(1-x).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,4,11,25,47,79,122,175,239,314,399,495,602,719,847,986,1135,1295,1466,1647,1839,2042,2255,2479,2714,2959,3215,3482,3759,4047,4346,4655,4975,5306,5647,5999,6362,6735,7119,7514,7919,8335,8762,9199,9647,10106
 
-mov $3,3
-add $0,3
+mov $1,1
+mov $2,4
+mov $3,11
+mov $4,25
+mov $5,47
+mov $6,79
+mov $7,122
+mov $8,175
+mov $9,239
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  mul $2,4
-  max $2,0
-  seq $2,8753 ; Expansion of (1+x^10)/((1-x)*(1-x^2)*(1-x^3)).
-  add $4,1
-  add $1,$2
-  mov $3,2
-  div $3,$4
-  add $4,2
+  mul $1,0
+  rol $1,9
+  add $9,$4
+  sub $9,$5
+  sub $9,$5
+  add $9,$6
+  sub $9,$7
+  add $9,$8
+  add $9,$8
+  sub $0,1
 lpe
 mov $0,$1

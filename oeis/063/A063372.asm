@@ -1,5 +1,5 @@
 ; A063372: Dimension of the space of weight n cuspidal newforms for Gamma_1( 99 ).
-; Submitted by loader3229
+; Submitted by Science United
 ; -1,240,521,800,1079,1362,1641,1920,2203,2482,2761,3042,3323,3602,3885,4162,4443,4724,5005,5282,5567,5844,6125,6404,6687,6964,7249,7524,7807,8086,8369,8644,8931,9206,9489,9766,10051,10326,10613
 
 #offset 2
@@ -25,15 +25,7 @@ lpb $0
   add $12,$2
   add $12,$6
   add $12,$8
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $2,10
   mov $11,$12
 lpe
 mov $0,$1
