@@ -1,27 +1,25 @@
 ; A281320: Number of n X 2 0..2 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 0,2,28,304,2976,27488,244544,2119168,18011136,150809088,1247857664,10226274304,83138240512,671370043392,5390483210240,43066315243520,342583723687936,2714813886234624,21440990518444032,168825545758343168,1325724163945529344,10384933699528425472,81168578468615553024,633127166892182601728,4929321190681292570624,38312613117462474391552,297312125575948362842112,2303832386291203452174336,17827983239657670790086656,137786774248537379716464640,1063661873434667625710878720,8202071838217422347119362048
-; Formula: a(n) = 2*truncate(b(max(2*n-3,0))/4), b(n) = b(n-1)+truncate(((n+2)*(2*b(n-2)+b(n-1)))/n), b(4) = 188, b(3) = 56, b(2) = 16, b(1) = 4, b(0) = 1
 
 #offset 1
 
-mul $0,2
-sub $0,3
-mov $1,1
-mov $2,3
-mov $3,1
+mov $2,2
+mov $3,28
+mov $4,304
+sub $0,1
 lpb $0
+  mul $1,-16
+  rol $1,4
+  mov $5,$1
+  mul $5,64
+  add $4,$5
+  mov $5,$2
+  mul $5,-72
+  add $4,$5
+  mov $5,$3
+  mul $5,16
   sub $0,1
-  mul $1,$2
-  add $2,1
-  add $4,1
-  div $1,$4
-  add $1,$3
-  mul $3,2
-  add $1,$3
-  mul $3,-1
-  add $3,$1
+  add $4,$5
 lpe
-mov $0,$3
-div $0,4
-mul $0,2
+mov $0,$1

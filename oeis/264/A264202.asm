@@ -1,13 +1,33 @@
 ; A264202: Number of (n+1) X (2+1) arrays of permutations of 0..n*3+2 with each element having index change +-(.,.) 0,0 0,2 or 1,0.
-; Submitted by Science United
+; Submitted by loader3229
 ; 18,96,605,3600,21853,131712,795906,4804910,29017649,175219200,1058090513,6389336434,38582627490,232984303104,1406895932317,8495659825200,51301766577821,309790076011680,1870693734316914,11296343199296542,68213929272659617,411915613668249600,2487387468686013025,15020300792141454626,90701363877538179762,547707900319579570272,3307380741049062393629,19971899912048490450000,120602016316675915427869,728265533258818210080768,4397693364762816713999202,26555845426237151439241934
-; Formula: a(n) = A324969(n+3)*A006253(n+1)
 
 #offset 1
 
-add $0,1
-mov $1,$0
-seq $1,6253 ; Number of perfect matchings (or domino tilings) in C_4 X P_n.
-add $0,2
-seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
-mul $0,$1
+mov $1,18
+mov $2,96
+mov $3,605
+mov $4,3600
+mov $5,21853
+mov $6,131712
+sub $0,1
+lpb $0
+  rol $1,6
+  mov $7,$1
+  mul $7,3
+  add $6,$7
+  mov $7,$2
+  mul $7,-18
+  add $6,$7
+  mov $7,$3
+  mul $7,5
+  add $6,$7
+  mov $7,$4
+  mul $7,18
+  add $6,$7
+  mov $7,$5
+  mul $7,3
+  sub $0,1
+  add $6,$7
+lpe
+mov $0,$1

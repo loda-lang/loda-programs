@@ -1,31 +1,31 @@
 ; A257656: Expansion of f(x) * f(x^3) * f(-x^4)^2 * chi(-x^6)^2 in powers of x where chi(), f() are Ramanujan theta functions.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 1,1,-1,1,-1,-4,-1,-6,-1,1,4,12,-1,14,6,-4,-1,-16,-1,-18,4,-6,-12,24,-1,21,-14,1,6,-28,4,-30,-1,12,16,24,-1,38,18,14,4,-40,6,-42,-12,-4,-24,48,-1,43,-21,-16,-14,-52,-1,-48,6,-18,28,60,4,62,30,-6,-1,-56,-12,-66,16,24,-24,72,-1,74,-38,21,18,-72,-14,-78
 
-mov $1,$0
-trn $1,1
-trn $0,1
 mov $2,$0
-mov $3,-1
-pow $3,$0
+trn $2,1
+trn $0,1
+mov $3,$0
+mov $4,-1
+pow $4,$0
 add $0,1
-mov $5,$0
-mul $0,6
+mov $6,$0
+mul $0,2
 lpb $0
   sub $0,1
-  mov $6,$5
-  dif $6,$0
-  neq $6,$5
-  mul $6,$0
-  sub $7,$4
+  sub $1,$5
+  mov $7,$6
+  dif $7,$0
+  neq $7,$6
+  mul $7,$0
   sub $0,1
-  add $4,$7
-  add $4,$6
+  add $5,$1
+  add $5,$7
 lpe
-add $4,1
-mov $0,$4
-mul $0,$3
+add $5,1
+mov $0,$5
+mul $0,$4
 mul $0,2
-sub $0,$2
-add $0,$1
+sub $0,$3
+add $0,$2
 div $0,2

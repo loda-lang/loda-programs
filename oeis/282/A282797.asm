@@ -1,7 +1,20 @@
 ; A282797: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 505", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 1,0,111,10,11111,1010,1111111,101010,111111111,10101010,11111111111,1010101010,1111111111111,101010101010,111111111111111,10101010101010,11111111111111111,1010101010101010,1111111111111111111,101010101010101010,111111111111111111111,10101010101010101010,11111111111111111111111,1010101010101010101010,1111111111111111111111111,101010101010101010101010,111111111111111111111111111,10101010101010101010101010,11111111111111111111111111111,1010101010101010101010101010,1111111111111111111111111111111
-; Formula: a(n) = A007088(A282799(n))
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = -10*b(n-2)-121*c(n-2), b(3) = 111, b(2) = 111, b(1) = 1, b(0) = 1, c(n) = 111*c(n-2)+10*b(n-2), c(3) = -101, c(2) = -101, c(1) = -1, c(0) = -1
 
-seq $0,282799 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 505", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,-1
+lpb $0
+  sub $0,2
+  mov $3,$1
+  mul $3,10
+  mov $4,$2
+  mul $4,-121
+  mul $2,111
+  add $2,$3
+  mul $1,-10
+  add $1,$4
+lpe
+mul $0,$2
+add $0,$1

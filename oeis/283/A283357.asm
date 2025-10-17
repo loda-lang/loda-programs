@@ -1,25 +1,25 @@
 ; A283357: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 621", based on the 5-celled von Neumann neighborhood.
-; Submitted by NeoGen
+; Submitted by loader3229
 ; 1,2,4,11,17,46,70,190,286,766,1150,3070,4606,12286,18430,49150,73726,196606,294910,786430,1179646,3145726,4718590,12582910,18874366,50331646,75497470,201326590,301989886,805306366,1207959550,3221225470,4831838206,12884901886,19327352830,51539607550,77309411326,206158430206,309237645310,824633720830,1236950581246,3298534883326,4947802324990,13194139533310,19791209299966,52776558133246,79164837199870,211106232532990,316659348799486,844424930131966,1266637395197950,3377699720527870
 
-mov $5,$0
-sub $0,1
-lpb $5
-  sub $5,1
-  equ $3,$1
-  mov $1,$3
-  add $1,$5
-  mul $1,2
-  equ $3,$4
-  bin $1,$3
-  mul $4,$0
-  add $4,$1
-  mod $4,2
-  sub $0,$3
-  mul $2,2
-  add $2,2
-  sub $2,$4
-  add $3,1
+mov $1,1
+mov $2,2
+mov $3,4
+mov $4,11
+mov $5,17
+mov $6,46
+mov $7,70
+mov $8,190
+lpb $0
+  mul $1,0
+  rol $1,8
+  mov $9,$5
+  mul $9,-4
+  sub $0,1
+  add $8,$9
+  mov $9,$6
+  mul $9,4
+  add $8,$9
+  add $8,$7
 lpe
-mov $0,$2
-add $0,1
+mov $0,$1

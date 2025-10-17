@@ -1,22 +1,24 @@
 ; A252854: Number of (n+2) X (1+2) 0..2 arrays with every consecutive three elements in every row, column, diagonal and antidiagonal having exactly two distinct values, and new values 0 upwards introduced in row major order.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 117,279,684,1719,4383,11286,29241,76059,198324,517923,1353843,3541014,9265005,24247215,63465660,166131999,434901591,1138526262,2980601937,7803157779,20428674372,53482546539,140018449419,366571967094,959696101413,2512514152071,6577842819276,17221008585159,45085173680079,118034497478358,309018294522153,809020346878539,2118042682671060,5545107598482675,14517279946682595,38006731972818774,99502915536933021,260502013934393247,682003125127818972,1785507359607048879,4674518950712885127
 
 #offset 1
 
+mov $1,117
+mov $2,279
+mov $3,684
+mov $4,1719
 sub $0,1
-mov $1,$0
-mov $2,6
-lpb $2
-  sub $2,1
-  mov $0,$1
-  add $0,$2
-  max $0,0
-  seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-  add $0,1
-  bin $0,2
-  add $3,$0
+lpb $0
+  rol $1,4
+  sub $4,$1
+  sub $4,$1
+  mov $5,$2
+  mul $5,-3
+  add $4,$5
+  mov $5,$3
+  mul $5,4
+  sub $0,1
+  add $4,$5
 lpe
-mov $0,$3
-div $0,2
-mul $0,9
+mov $0,$1

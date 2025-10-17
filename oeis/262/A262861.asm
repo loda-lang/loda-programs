@@ -1,10 +1,20 @@
 ; A262861: Binary representation of the n-th iteration of the "Rule 147" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Skivelitis2
+; Submitted by loader3229
 ; 1,101,10001,1011101,100010001,10111011101,1000100010001,101110111011101,10001000100010001,1011101110111011101,100010001000100010001,10111011101110111011101,1000100010001000100010001,101110111011101110111011101,10001000100010001000100010001,1011101110111011101110111011101,100010001000100010001000100010001,10111011101110111011101110111011101,1000100010001000100010001000100010001,101110111011101110111011101110111011101,10001000100010001000100010001000100010001
-; Formula: a(n) = 10*A007088(truncate(A262862(n)/2))+1
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 11001*b(n-2)-10*c(n-2), b(3) = 10001, b(2) = 10001, b(1) = 1, b(0) = 1, c(n) = 1101100*b(n-2)-1000*c(n-2), c(3) = 1001100, c(2) = 1001100, c(1) = 100, c(0) = 100
 
-seq $0,262862 ; Decimal representation of the n-th iteration of the "Rule 147" elementary cellular automaton starting with a single ON (black) cell.
-div $0,2
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mul $0,10
-add $0,1
+mov $1,1
+mov $2,100
+lpb $0
+  sub $0,2
+  mov $3,$1
+  mul $3,1101100
+  mov $4,$2
+  mul $4,-10
+  mul $2,-1000
+  add $2,$3
+  mul $1,11001
+  add $1,$4
+lpe
+mul $0,$2
+add $0,$1

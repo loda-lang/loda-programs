@@ -1,24 +1,38 @@
 ; A243517: Number of length n+2 0..8 arrays with no three elements in a row with pattern aba or abb (with a!=b) and new values 0..8 introduced in 0..8 order.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 3,5,10,25,77,280,1157,5296,26406,141585,807064,4837587,30181075,194210670,1279159631,8571132698,58153599684,398124806735,2743173705258,18987825983429,131858977691833,917797527716980,6398758306106345,44663187105714580,312005684583051122,2180872515709736605,15250334413755881292,106673727021977562951,746324026302128415151,5222311890215065788810,36546417826280705844499,255776161963460122557342,1790189576309742426025520,12530110273204708792844795,87704692211061324097146366
 
 #offset 1
 
+mov $1,3
+mov $2,5
+mov $3,10
+mov $4,25
+mov $5,77
+mov $6,280
+mov $7,1157
 sub $0,1
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  add $0,1
-  seq $0,222776 ; Number of n X 1 0..6 arrays with no element equal to another at a city block distance of exactly two, and new values 0..6 introduced in row major order.
-  mul $1,$0
-  add $3,$1
+lpb $0
+  mul $1,840
+  rol $1,7
+  mov $8,$1
+  mul $8,-2878
+  add $7,$8
+  mov $8,$2
+  mul $8,3887
+  add $7,$8
+  mov $8,$3
+  mul $8,-2669
+  add $7,$8
+  mov $8,$4
+  mul $8,1010
+  add $7,$8
+  mov $8,$5
+  mul $8,-212
+  add $7,$8
+  mov $8,$6
+  mul $8,23
+  sub $0,1
+  add $7,$8
 lpe
-mov $0,$3
-add $0,2
+mov $0,$1

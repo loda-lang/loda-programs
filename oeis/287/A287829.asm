@@ -1,16 +1,20 @@
 ; A287829: Number of sequences over the alphabet {0,1,...,9} such that no two consecutive terms have distance 6.
-; Submitted by Jamie Morken(s1)
+; Submitted by loader3229
 ; 1,10,92,848,7816,72040,663992,6120008,56408056,519912520,4792028792,44168084168,407096815096,3752207504200,34584061167992,318760965520328,2938016812018936,27079673239211080,249593092776937592,2300497181470860488,21203660818791619576
-; Formula: a(n) = 9*a(n-1)+2*a(n-2), a(1) = 10, a(0) = 1
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 11*b(n-2)+9*c(n-2), b(3) = 92, b(2) = 92, b(1) = 1, b(0) = 1, c(n) = 90*b(n-2)+74*c(n-2), c(3) = 756, c(2) = 756, c(1) = 9, c(0) = 9
 
 mov $1,1
-mov $3,1
+mov $2,9
 lpb $0
-  sub $0,1
-  mov $2,$3
-  mul $2,2
-  mul $3,9
-  add $3,$1
-  mov $1,$2
+  sub $0,2
+  mov $3,$1
+  mul $3,90
+  mov $4,$2
+  mul $4,9
+  mul $2,74
+  add $2,$3
+  mul $1,11
+  add $1,$4
 lpe
-mov $0,$3
+mul $0,$2
+add $0,$1

@@ -1,65 +1,21 @@
 ; A267212: Total number of ON (black) cells after n iterations of the "Rule 109" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by owensse
+; Submitted by loader3229
 ; 1,2,7,9,16,23,33,38,51,63,76,87,105,120,139,155,176,197,221,240,267,293,320,345,377,406,439,469,504,539,577,610,651,691,732,771,817,860,907,951,1000,1049,1101,1148,1203,1257,1312,1365,1425,1482,1543,1601,1664,1727,1793,1854,1923,1991,2060,2127,2201,2272,2347,2419,2496,2573,2653,2728,2811,2893,2976,3057,3145,3230,3319,3405,3496,3587,3681,3770
 
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  mov $5,$0
-  div $5,12
-  mul $5,14
-  dgr $0,13
-  mov $4,$0
-  equ $4,1
-  add $5,$4
-  mov $4,$0
-  equ $4,2
-  mul $4,5
-  add $5,$4
-  mov $4,$0
-  equ $4,3
-  mul $4,2
-  add $5,$4
-  mov $4,$0
-  equ $4,4
-  mul $4,7
-  add $5,$4
-  mov $4,$0
-  equ $4,5
-  mul $4,7
-  add $5,$4
-  mov $4,$0
-  equ $4,6
-  mul $4,10
-  add $5,$4
-  mov $4,$0
-  equ $4,7
-  mul $4,5
-  add $5,$4
-  mov $4,$0
-  equ $4,8
-  mul $4,13
-  add $5,$4
-  mov $4,$0
-  equ $4,9
-  mul $4,12
-  add $5,$4
-  mov $4,$0
-  equ $4,10
-  mul $4,13
-  add $5,$4
-  mov $4,$0
-  equ $4,11
-  mul $4,11
-  add $5,$4
-  mov $4,$0
-  equ $4,12
-  mul $4,4
-  add $5,$4
-  add $1,$5
+mov $1,1
+mov $2,2
+mov $3,7
+mov $4,9
+mov $5,16
+mov $6,23
+mov $7,33
+mov $8,38
+lpb $0
+  rol $1,8
+  sub $8,$1
+  sub $8,$3
+  add $8,$5
+  add $8,$7
+  sub $0,1
 lpe
 mov $0,$1
-add $0,1

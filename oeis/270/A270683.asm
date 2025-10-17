@@ -1,23 +1,27 @@
 ; A270683: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,6,18,42,74,126,186,274,370,502,642,826,1018,1262,1514,1826,2146,2534,2930,3402,3882,4446,5018,5682,6354,7126,7906,8794,9690,10702,11722,12866,14018,15302,16594,18026,19466,21054,22650,24402,26162,28086,30018,32122,34234,36526,38826,41314,43810,46502,49202,52106,55018,58142,61274,64626,67986,71574,75170,79002,82842,86926,91018,95362,99714,104326,108946,113834,118730,123902,129082,134546,140018,145782,151554,157626,163706,170094,176490,183202
-; Formula: a(n) = n*(2*n+2)-max(-gcd(n+1,2)+n,0)^2+a(n-1)+1, a(0) = 1
 
 mov $1,1
+mov $2,6
+mov $3,18
+mov $4,42
+mov $5,74
+mov $6,126
+mov $7,186
 lpb $0
-  mov $4,1
-  add $4,$0
-  mov $2,$0
-  add $2,1
-  add $2,$4
-  mul $2,$0
-  gcd $4,2
-  mov $3,$0
-  trn $3,$4
-  pow $3,2
-  sub $2,$3
-  add $2,1
+  mul $1,0
+  rol $1,7
+  sub $7,$1
+  add $7,$2
+  add $7,$2
+  add $7,$3
+  mov $8,$4
+  mul $8,-4
   sub $0,1
-  add $1,$2
+  add $7,$8
+  add $7,$5
+  add $7,$6
+  add $7,$6
 lpe
 mov $0,$1

@@ -1,18 +1,72 @@
 ; A240871: Number of partitions p of n into distinct parts such that max(p) = 3 + min(p).
-; Submitted by iBezanilla
+; Submitted by loader3229
 ; 0,0,0,0,0,1,0,2,1,1,2,2,0,2,2,1,1,2,1,2,1,1,2,2,0,2,2,1,1,2,1,2,1,1,2,2,0,2,2,1,1,2,1,2,1,1,2,2,0,2,2,1,1,2,1,2,1,1,2,2,0,2,2,1,1,2,1,2,1,1,2,2,0,2,2,1,1,2,1,2
 
-mov $4,1
-mov $2,$0
-lpb $2
-  add $4,$3
-  add $3,2
-  mov $5,$0
-  mod $5,$4
-  min $5,1
-  add $1,$5
-  sub $2,$3
-  sub $3,$4
-  add $4,1
+mov $7,1
+mov $9,2
+mov $10,1
+mov $11,1
+lpb $0
+  mov $13,$1
+  mul $13,2
+  sub $13,12
+  mul $2,$13
+  rol $2,10
+  mov $13,$1
+  mul $13,5
+  sub $13,23
+  mov $12,$2
+  mul $12,$13
+  mov $13,$1
+  mul $13,15
+  sub $13,53
+  add $11,$12
+  mov $12,$3
+  mul $12,$13
+  mov $13,$1
+  mul $13,13
+  sub $13,17
+  add $11,$12
+  mov $12,$4
+  mul $12,$13
+  mov $13,$1
+  mul $13,8
+  add $13,27
+  add $11,$12
+  mov $12,$5
+  mul $12,$13
+  mov $13,$1
+  mul $13,-5
+  add $13,68
+  add $11,$12
+  mov $12,$6
+  mul $12,$13
+  mov $13,$1
+  mul $13,-15
+  add $13,74
+  add $11,$12
+  mov $12,$7
+  mul $12,$13
+  mov $13,$1
+  mul $13,-13
+  add $13,17
+  add $11,$12
+  mov $12,$8
+  mul $12,$13
+  mov $13,$1
+  mul $13,-10
+  sub $13,15
+  add $11,$12
+  mov $12,$9
+  mul $12,$13
+  mul $13,0
+  sub $13,45
+  add $11,$12
+  mov $12,$10
+  mul $12,$13
+  add $11,$12
+  div $11,21
+  sub $0,1
+  add $1,1
 lpe
-mov $0,$1
+mov $0,$2

@@ -1,25 +1,20 @@
 ; A282412: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 467", based on the 5-celled von Neumann neighborhood.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,10,111,0,11111,0,1111111,0,111111111,0,11111111111,0,1111111111111,0,111111111111111,0,11111111111111111,0,1111111111111111111,0,111111111111111111111,0,11111111111111111111111,0,1111111111111111111111111,0,111111111111111111111111111,0,11111111111111111111111111111,0,1111111111111111111111111111111,0,111111111111111111111111111111111,0,11111111111111111111111111111111111,0,1111111111111111111111111111111111111,0,111111111111111111111111111111111111111,0
 
-add $0,1
-mov $2,2
-gcd $2,$0
-div $0,$2
-mov $1,2
-pow $1,$0
-sub $1,1
-pow $2,$0
-mod $2,4
-mul $2,$1
-mov $4,1
-mov $0,$2
+mov $1,1
+mov $2,10
+mov $3,111
+mov $5,11111
 lpb $0
-  mov $5,$0
-  mod $5,2
-  mul $5,$4
-  div $0,2
-  add $3,$5
-  mul $4,10
+  mul $1,0
+  rol $1,6
+  mov $7,$2
+  mul $7,-100
+  add $6,$7
+  mov $7,$4
+  mul $7,101
+  sub $0,1
+  add $6,$7
 lpe
-mov $0,$3
+mov $0,$1

@@ -1,8 +1,21 @@
 ; A282002: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,10,11,1110,11,111110,11,11111110,11,1111111110,11,111111111110,11,11111111111110,11,1111111111111110,11,111111111111111110,11,11111111111111111110,11,1111111111111111111110,11,111111111111111111111110,11,11111111111111111111111110,11,1111111111111111111111111110,11,111111111111111111111111111110,11,11111111111111111111111111111110,11,1111111111111111111111111111111110,11,111111111111111111111111111111111110,11,11111111111111111111111111111111111110,11,1111111111111111111111111111111111111110
-; Formula: a(n) = truncate(A204093(A282004(n))/6)
 
-seq $0,282004 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
-seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
-div $0,6
+mov $1,1
+mov $2,10
+mov $3,11
+mov $4,1110
+mov $5,11
+lpb $0
+  mul $1,0
+  rol $1,5
+  mov $6,$1
+  mul $6,-100
+  add $5,$6
+  mov $6,$3
+  mul $6,101
+  sub $0,1
+  add $5,$6
+lpe
+mov $0,$1

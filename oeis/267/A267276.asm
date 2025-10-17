@@ -1,9 +1,31 @@
 ; A267276: Decimal representation of the n-th iteration of the "Rule 118" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,7,19,123,283,1883,5083,30939,72411,483035,1296091,7919323,18544347,123614939,331790043,2027402971,4747015899,31645349595,84938700507,519012464347,1215235471067,8101213091547,21744285759195,132867186079451,311100309354203,2073910378870491,5566537116006107,34013999866427099,79641677814150875,530921056684062427,1425033503538263771,8707583954761135835,20388269517968357083,135915790525845583579,364808576817441912539,2229141492399216637659,5219396996717704230619,34794442373909640492763
-; Formula: a(n) = A030101(A266810(n))
 
-seq $0,266810 ; Decimal representation of the n-th iteration of the "Rule 62" elementary cellular automaton starting with a single ON (black) cell.
-mov $1,$0
-seq $1,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+mov $1,1
+mov $2,7
+mov $3,19
+mov $4,123
+mov $5,283
+mov $6,1883
+mov $7,5083
+mov $8,30939
+lpb $0
+  mul $1,2048
+  rol $1,8
+  mov $9,$1
+  mul $9,-2048
+  sub $0,1
+  add $8,$9
+  mov $9,$3
+  mul $9,-256
+  add $8,$9
+  mov $9,$4
+  mul $9,248
+  add $8,$9
+  mov $9,$5
+  mul $9,8
+  add $8,$9
+  add $8,$7
+lpe
 mov $0,$1

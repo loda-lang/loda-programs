@@ -1,21 +1,25 @@
 ; A287745: Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 342", based on the 5-celled von Neumann neighborhood.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,2,4,20,40,40,80,336,672,672,1344,5440,10880,10880,21760,87296,174592,174592,349184,1397760,2795520,2795520,5591040,22368256,44736512,44736512,89473024,357908480,715816960,715816960,1431633920,5726601216,11453202432,11453202432,22906404864,91625881600,183251763200,183251763200,366503526400,1466015154176,2932030308352,2932030308352,5864060616704,23456246661120,46912493322240,46912493322240,93824986644480,375299963355136,750599926710272,750599926710272,1501199853420544,6004799480791040
 
-mov $2,$0
-add $2,3
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mod $0,4
-  add $0,3
-  mov $3,6
-  sub $3,$0
-  div $3,5
-  mul $1,2
-  add $1,$3
-  add $4,1
+mov $1,1
+mov $2,2
+mov $3,2
+mov $4,4
+mov $5,20
+lpb $0
+  mul $1,-16
+  rol $1,5
+  mov $6,$1
+  mul $6,8
+  sub $0,1
+  add $5,$6
+  mov $6,$2
+  mul $6,4
+  add $5,$6
+  sub $5,$3
+  sub $5,$3
+  add $5,$4
+  add $5,$4
 lpe
 mov $0,$1
-div $0,4

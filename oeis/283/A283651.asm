@@ -1,18 +1,22 @@
 ; A283651: Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 705", based on the 5-celled von Neumann neighborhood.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,7,11,7,47,31,191,127,767,511,3071,2047,12287,8191,49151,32767,196607,131071,786431,524287,3145727,2097151,12582911,8388607,50331647,33554431,201326591,134217727,805306367,536870911,3221225471,2147483647,12884901887,8589934591,51539607551,34359738367,206158430207,137438953471,824633720831,549755813887,3298534883327,2199023255551,13194139533311,8796093022207,52776558133247,35184372088831,211106232532991,140737488355327,844424930131967,562949953421311,3377699720527871,2251799813685247
-; Formula: a(n) = A030101(binomial(min(2*n,3),2)*(truncate((A283709(n)+2)/3)-1)+1)
 
-mov $2,$0
-seq $0,283709 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
-add $0,2
-div $0,3
-sub $0,1
-mul $2,2
-min $2,3
-bin $2,2
-mul $0,$2
-add $0,1
-mov $1,$0
-seq $1,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+mov $1,1
+mov $3,7
+mov $4,11
+mov $5,7
+mov $6,47
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$3
+  mul $7,-4
+  sub $0,1
+  add $6,$7
+  mov $7,$4
+  mul $7,4
+  add $6,$7
+  add $6,$5
+lpe
 mov $0,$1

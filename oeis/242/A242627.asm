@@ -1,15 +1,106 @@
 ; A242627: Number of divisors of n that are less than 10.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 9,1,2,2,3,2,4,2,4,3,3,1,5,1,3,3,4,1,5,1,4,3,2,1,6,2,2,3,4,1,5,1,4,2,2,3,6,1,2,2,5,1,5,1,3,4,2,1,6,2,3,2,3,1,5,2,5,2,2,1,6,1,2,4,4,2,4,1,3,2,4,1,7,1,2,3,3,2,4,1
 
-mov $2,$0
-mov $0,9
+mov $1,9
+mov $2,1
+mov $3,2
+mov $4,2
+mov $5,3
+mov $6,2
+mov $7,4
+mov $8,2
+mov $9,4
+mov $10,3
+mov $11,3
+mov $12,1
+mov $13,5
+mov $14,1
+mov $15,3
+mov $16,3
+mov $17,4
+mov $18,1
+mov $19,5
+mov $20,1
+mov $21,4
+mov $22,3
+mov $23,2
+mov $24,1
+mov $25,6
+mov $26,2
+mov $27,2
+mov $28,3
 lpb $0
-  mov $3,$2
-  dif $3,$0
-  mul $3,$0
-  equ $3,$2
+  rol $1,28
+  add $28,$1
+  add $28,$1
+  mov $29,$2
+  mul $29,4
   sub $0,1
-  add $1,$3
+  add $28,$29
+  mov $29,$3
+  mul $29,7
+  add $28,$29
+  add $28,$4
+  mov $29,$5
+  mul $29,15
+  add $28,$29
+  mov $29,$7
+  mul $29,24
+  add $28,$29
+  mov $29,$8
+  mul $29,27
+  add $28,$29
+  mov $29,$9
+  mul $29,28
+  add $28,$29
+  mov $29,$10
+  mul $29,27
+  add $28,$29
+  mov $29,$11
+  mul $29,23
+  add $28,$29
+  mov $29,$12
+  mul $29,17
+  add $28,$29
+  mov $29,$13
+  mul $29,9
+  add $28,$29
+  add $28,$15
+  mov $29,$16
+  mul $29,-17
+  add $28,$29
+  mov $29,$17
+  mul $29,-23
+  add $28,$29
+  mov $29,$18
+  mul $29,-27
+  add $28,$29
+  mov $29,$19
+  mul $29,-28
+  add $28,$29
+  mov $29,$20
+  mul $29,-27
+  add $28,$29
+  mov $29,$21
+  mul $29,-24
+  add $28,$29
+  mov $29,$23
+  mul $29,-15
+  add $28,$29
+  mov $29,$24
+  mul $29,-11
+  add $28,$29
+  mov $29,$25
+  mul $29,-7
+  add $28,$29
+  mov $29,$26
+  mul $29,-4
+  add $28,$29
+  sub $28,$27
+  sub $28,$27
 lpe
 mov $0,$1
+mod $0,10
+add $0,10
+mod $0,10

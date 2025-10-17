@@ -1,17 +1,23 @@
 ; A267049: Total number of OFF (white) cells after n iterations of the "Rule 91" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 0,1,4,7,11,14,22,25,37,40,56,59,79,82,106,109,137,140,172,175,211,214,254,257,301,304,352,355,407,410,466,469,529,532,596,599,667,670,742,745,821,824,904,907,991,994,1082,1085,1177,1180,1276,1279,1379,1382,1486,1489,1597,1600,1712,1715,1831,1834,1954,1957,2081,2084,2212,2215,2347,2350,2486,2489,2629,2632,2776,2779,2927,2930,3082,3085
 
+mov $2,1
+mov $3,4
+mov $4,7
+mov $5,11
+mov $6,14
+mov $7,22
 lpb $0
-  add $4,$0
+  mul $1,0
+  rol $1,7
+  add $7,$2
+  sub $7,$3
+  sub $7,$4
+  sub $7,$4
+  add $7,$5
+  add $7,$5
+  add $7,$6
   sub $0,1
-  add $1,$4
-  mov $2,$3
-  sub $2,1
-  trn $2,3
-  add $2,$0
-  mov $3,$1
-  sub $3,$2
-  mov $4,$0
 lpe
-mov $0,$3
+mov $0,$1

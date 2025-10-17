@@ -1,19 +1,34 @@
-; A245135: Number of length 5 0..n arrays least squares fitting to a zero slope straight line, with a single point taken as having zero slope
-; Submitted by Gunnar Hjern
+; A245135: Number of length 5 0..n arrays least squares fitting to a zero slope straight line, with a single point taken as having zero slope.
+; Submitted by loader3229
 ; 8,39,112,275,552,1029,1728,2781,4200,6171,8688,11999,16072,21225,27392,34969,43848,54511,66800,81291,97768,116909,138432,163125,190632,221859,256368,295191,337800,385361,437248,494769,557192,625975,700272,781699,869288,964821,1067200,1178381,1297128,1425579,1562352,1709775,1866312,2034489,2212608,2403401,2605000,2820351,3047408,3289339,3543912,3814525,4098752,4400229,4716328,5050931,5401200,5771271,6158088,6566049,6991872,7440225,7907592,8398919,8910448,9447411,10005800,10591141,11199168
 
 #offset 1
 
-add $0,1
-mov $1,$0
-mov $3,$0
-mov $4,$0
-mul $0,2
-lpb $3
-  sub $3,1
-  trn $0,4
-  add $2,$4
-  add $4,$0
+mov $1,8
+mov $2,39
+mov $3,112
+mov $4,275
+mov $5,552
+mov $6,1029
+mov $7,1728
+mov $8,2781
+sub $0,1
+lpb $0
+  rol $1,8
+  sub $8,$1
+  sub $8,$1
+  sub $8,$2
+  sub $8,$2
+  mov $9,$3
+  mul $9,6
+  sub $0,1
+  add $8,$9
+  mov $9,$5
+  mul $9,-6
+  add $8,$9
+  add $8,$6
+  add $8,$6
+  add $8,$7
+  add $8,$7
 lpe
-mov $0,$2
-mul $0,$1
+mov $0,$1

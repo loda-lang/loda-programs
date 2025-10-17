@@ -1,35 +1,22 @@
 ; A290493: Number of irredundant sets in the n-cycle graph.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,3,4,11,16,24,43,75,130,218,375,644,1106,1893,3244,5563,9538,16350,28026,48046,82366,141199,242053,414948,711341,1219442,2090470,3583661,6143419,10531574,18054122,30949915,53056986,90954814,155922503,267295658,458221025
 
 #offset 1
 
-mov $4,3
-add $0,1
+mov $1,1
+mov $2,3
+mov $3,4
+mov $4,11
+mov $5,16
+mov $6,24
+sub $0,1
 lpb $0
+  mul $1,-1
+  rol $1,6
+  add $6,$2
+  add $6,$4
+  add $6,$5
   sub $0,1
-  add $1,1
-  add $6,$3
-  mov $7,$6
-  sub $7,1
-  add $9,$5
-  add $2,$1
-  add $4,1
-  sub $4,$9
-  mov $6,$4
-  add $8,1
-  add $8,$2
-  mul $9,-1
-  mov $11,$8
-  mov $1,$3
-  mov $3,$8
-  sub $3,1
-  equ $4,98
-  mov $8,$5
-  sub $8,$10
-  sub $8,2
-  mov $10,$7
-  max $5,0
-  add $5,$7
 lpe
-mov $0,$11
+mov $0,$1

@@ -1,23 +1,28 @@
 ; A258800: The number of zeroless decimal numbers whose digital sum is n.
-; Submitted by [AF>Libristes] ElGuillermo
+; Submitted by loader3229
 ; 0,1,2,4,8,16,32,64,128,256,511,1021,2040,4076,8144,16272,32512,64960,129792,259328,518145,1035269,2068498,4132920,8257696,16499120,32965728,65866496,131603200,262947072,525375999,1049716729,2097364960,4190597000,8372936304,16729373488,33425781248
 
-mov $5,$0
-mov $2,2
-lpb $2
-  sub $2,1
-  mov $0,$5
-  add $0,$2
-  trn $0,1
-  seq $0,172319 ; 10th column of A172119.
-  mov $4,$0
-  sub $4,1
-  mov $0,$4
-  mov $1,$2
-  mul $1,$4
-  add $3,$1
+mov $2,1
+mov $3,2
+mov $4,4
+mov $5,8
+mov $6,16
+mov $7,32
+mov $8,64
+mov $9,128
+mov $10,256
+lpb $0
+  mul $1,0
+  rol $1,10
+  add $10,$1
+  add $10,$2
+  add $10,$3
+  add $10,$4
+  add $10,$5
+  add $10,$6
+  add $10,$7
+  add $10,$8
+  add $10,$9
+  sub $0,1
 lpe
-min $5,1
-mul $5,$0
-mov $0,$3
-sub $0,$5
+mov $0,$1

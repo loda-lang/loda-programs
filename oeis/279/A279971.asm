@@ -1,25 +1,34 @@
 ; A279971: Number of n X 2 0..1 arrays with no element equal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly two elements, and with new values introduced in order 0 sequentially upwards.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 1,3,9,31,108,366,1205,3873,12207,37859,115842,350412,1049545,3116655,9185349,26890375,78253896,226510362,652483133,1871302893,5345409483,15213423371,43153001406,122024489304,344061371665,967537410459,2714082921537,7595814615151,21212253613284,59117981076102,164447166644549,456621250544505,1265766044204967,3503154416135603,9680799270309306,26714301940328868,73618850841889753,202617207194292615,556971572398476285,1529271204449329111,4194250384768799040,11491177227178651314,31451076543716155853
 
 #offset 1
 
-sub $0,1
-mul $0,2
 mov $1,1
-mov $4,$0
-add $0,1
+mov $2,3
+mov $3,9
+mov $4,31
+mov $5,108
+mov $6,366
+sub $0,1
 lpb $0
+  mul $1,-1
+  rol $1,6
+  mov $7,$1
+  mul $7,9
+  add $6,$7
+  mov $7,$2
+  mul $7,-30
+  add $6,$7
+  mov $7,$3
+  mul $7,45
+  add $6,$7
+  mov $7,$4
+  mul $7,-30
+  add $6,$7
+  mov $7,$5
+  mul $7,9
   sub $0,1
-  add $1,1
-  mov $2,$4
-  sub $2,$1
-  add $2,1
-  bin $2,$0
-  mov $3,$1
-  bin $3,2
-  mul $3,$2
-  trn $0,1
-  add $5,$3
+  add $6,$7
 lpe
-mov $0,$5
+mov $0,$1

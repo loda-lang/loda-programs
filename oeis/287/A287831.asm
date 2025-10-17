@@ -1,16 +1,20 @@
 ; A287831: Number of sequences over the alphabet {0,1,...,9} such that no two consecutive terms have distance 8.
-; Submitted by Jamie Morken(s4)
+; Submitted by loader3229
 ; 1,10,96,924,8892,85572,823500,7924932,76265388,733938084,7063035084,67970944260,654116708844,6294876045156,60578584659468,582976518206148,5610260171812140,53990200655546148,519573366930788172,5000101506310370436,48118353758378062956
-; Formula: a(n) = 9*a(n-1)+6*a(n-2), a(1) = 10, a(0) = 1
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 15*b(n-2)+9*c(n-2), b(3) = 96, b(2) = 96, b(1) = 1, b(0) = 1, c(n) = 126*b(n-2)+78*c(n-2), c(3) = 828, c(2) = 828, c(1) = 9, c(0) = 9
 
 mov $1,1
-mov $3,1
+mov $2,9
 lpb $0
-  sub $0,1
-  mov $2,$3
-  mul $2,6
-  mul $3,9
-  add $3,$1
-  mov $1,$2
+  sub $0,2
+  mov $3,$1
+  mul $3,126
+  mov $4,$2
+  mul $4,9
+  mul $2,78
+  add $2,$3
+  mul $1,15
+  add $1,$4
 lpe
-mov $0,$3
+mul $0,$2
+add $0,$1

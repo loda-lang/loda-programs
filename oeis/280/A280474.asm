@@ -1,20 +1,34 @@
 ; A280474: Number of n X 2 0..2 arrays with no element unequal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly two elements, and with new values introduced in order 0 sequentially upwards.
-; Submitted by Xenon
+; Submitted by loader3229
 ; 1,6,30,158,846,4446,22734,113310,552654,2647390,12492366,58202526,268228430,1224529758,5544352206,24921415326,111297979854,494186360670,2182903872334,9596971862430,42012203555406,183197641092446,795992121639630,3447199714777758,14883423768540366,64078994698080606,275164377232797774,1178719902472278430,5037804383170196814,21485617422272043870,91450872433320887246,388520313453685124766,1647681399670229703630,6976057585998407224158,29489283908845708885326,124472252357119660880286
 
 #offset 1
 
+mov $1,1
+mov $2,6
+mov $3,30
+mov $4,158
+mov $5,846
+mov $6,4446
+sub $0,1
 lpb $0
-  mov $2,$0
+  mul $1,-64
+  rol $1,6
+  mov $7,$1
+  mul $7,240
+  add $6,$7
+  mov $7,$2
+  mul $7,-348
+  add $6,$7
+  mov $7,$3
+  mul $7,245
+  add $6,$7
+  mov $7,$4
+  mul $7,-87
+  add $6,$7
+  mov $7,$5
+  mul $7,15
   sub $0,1
-  add $2,1
-  bin $2,$0
-  mov $3,$0
-  div $3,-1
-  bin $3,$1
-  mul $3,$2
-  add $1,2
-  mul $4,2
-  add $4,$3
+  add $6,$7
 lpe
-mov $0,$4
+mov $0,$1

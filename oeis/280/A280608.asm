@@ -1,23 +1,24 @@
 ; A280608: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 294", based on the 5-celled von Neumann neighborhood.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,3,4,14,17,57,65,225,257,897,1025,3585,4097,14337,16385,57345,65537,229377,262145,917505,1048577,3670017,4194305,14680065,16777217,58720257,67108865,234881025,268435457,939524097,1073741825,3758096385,4294967297,15032385537,17179869185,60129542145,68719476737,240518168577,274877906945,962072674305,1099511627777,3848290697217,4398046511105,15393162788865,17592186044417,61572651155457,70368744177665,246290604621825,281474976710657,985162418487297,1125899906842625,3940649673949185
 
-mov $5,$0
-add $5,1
-lpb $5
-  sub $5,1
-  equ $3,$1
-  mov $1,$3
-  add $1,$5
-  mul $1,2
-  equ $3,$4
-  bin $1,$3
-  mul $4,$0
-  add $4,$1
-  mod $4,2
-  sub $0,$3
-  mul $2,2
-  add $2,$4
-  add $3,1
+mov $1,1
+mov $2,3
+mov $3,4
+mov $4,14
+mov $5,17
+mov $6,57
+mov $7,65
+lpb $0
+  mul $1,0
+  rol $1,7
+  mov $8,$4
+  mul $8,-4
+  sub $0,1
+  add $7,$8
+  mov $8,$5
+  mul $8,4
+  add $7,$8
+  add $7,$6
 lpe
-mov $0,$2
+mov $0,$1

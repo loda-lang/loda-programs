@@ -1,8 +1,23 @@
 ; A282911: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 526", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 1,11,111,1101,11001,111011,1111011,11011011,110011011,1110111011,11110111011,110110111011,1100110111011,11101110111011,111101110111011,1101101110111011,11001101110111011,111011101110111011,1111011101110111011,11011011101110111011,110011011101110111011,1110111011101110111011,11110111011101110111011,110110111011101110111011,1100110111011101110111011,11101110111011101110111011,111101110111011101110111011,1101101110111011101110111011,11001101110111011101110111011,111011101110111011101110111011
-; Formula: a(n) = A004086(A007088(A282914(n)))
 
-seq $0,282914 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 526", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+mov $1,1
+mov $2,11
+mov $3,111
+mov $4,1101
+mov $5,11001
+mov $6,111011
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$1
+  mul $7,-10000
+  sub $0,1
+  add $6,$7
+  mov $7,$2
+  mul $7,10000
+  add $6,$7
+  add $6,$5
+lpe
+mov $0,$1

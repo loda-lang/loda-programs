@@ -1,7 +1,20 @@
 ; A277926: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,10,0,1111,0,111111,0,11111111,0,1111111111,0,111111111111,0,11111111111111,0,1111111111111111,0,111111111111111111,0,11111111111111111111,0,1111111111111111111111,0,111111111111111111111111,0,11111111111111111111111111,0,1111111111111111111111111111,0,111111111111111111111111111111,0,11111111111111111111111111111111,0,1111111111111111111111111111111111,0,111111111111111111111111111111111111,0,11111111111111111111111111111111111111,0,1111111111111111111111111111111111111111,0
-; Formula: a(n) = A007088(A277928(n))
 
-seq $0,277928 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,10
+mov $4,1111
+mov $6,111111
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$2
+  mul $7,-100
+  add $6,$7
+  mov $7,$4
+  mul $7,101
+  sub $0,1
+  add $6,$7
+lpe
+mov $0,$1

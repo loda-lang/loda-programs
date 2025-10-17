@@ -1,21 +1,36 @@
 ; A270085: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 65", based on the 5-celled von Neumann neighborhood.
-; Submitted by Watewmark
+; Submitted by loader3229
 ; 1,5,10,46,55,151,168,356,377,689,714,1182,1211,1867,1900,2776,2813,3941,3982,5394,5439,7167,7216,9292,9345,11801,11858,14726,14787,18099,18164,21952,22021,26317,26390,31226,31303,36711,36792,42804,42889,49537,49626,56942,57035,65051,65148,73896,73997,83509,83614,93922,94031,105167,105280,117276,117393,130281,130402,144214,144339,159107,159236,174992,175125,191901,192038,209866,210007,228919,229064,249092,249241,270417,270570,292926,293083,316651,316812,341624
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  add $0,$3
-  trn $0,1
-  seq $0,271255 ; Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 323", based on the 5-celled von Neumann neighborhood.
-  mov $2,$3
-  mul $2,$0
-  mov $0,1
-  add $4,2
-  add $4,$2
+mov $1,1
+mov $2,5
+mov $3,10
+mov $4,46
+mov $5,55
+mov $6,151
+mov $7,168
+mov $8,356
+mov $9,377
+mov $10,689
+mov $11,714
+lpb $0
+  mul $1,0
+  rol $1,11
+  sub $11,$4
+  add $11,$5
+  mov $12,$6
+  mul $12,3
+  sub $0,1
+  add $11,$12
+  mov $12,$7
+  mul $12,-3
+  add $11,$12
+  mov $12,$8
+  mul $12,-3
+  add $11,$12
+  mov $12,$9
+  mul $12,3
+  add $11,$12
+  add $11,$10
 lpe
-min $1,1
-mov $0,$4
-sub $0,$1
-sub $0,4
+mov $0,$1

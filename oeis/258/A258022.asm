@@ -1,16 +1,89 @@
 ; A258022: Nonnegative integers n with property that when starting from x=n, the map x -> floor(tan(x)) reaches [the fixed point] 0 (or any other integer less than 1 if such negative fixed points exist).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24,25,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46,47,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,68,69,71,72,73,74,75,76,77,78,79,80,81
+; Formula: a(n) = 22*floor((n-1)/20)+21*(((n-1)%20)==19)+20*(((n-1)%20)==18)+19*(((n-1)%20)==17)+18*(((n-1)%20)==16)+17*(((n-1)%20)==15)+16*(((n-1)%20)==14)+15*(((n-1)%20)==13)+14*(((n-1)%20)==12)+13*(((n-1)%20)==11)+12*(((n-1)%20)==10)+11*(((n-1)%20)==9)+10*(((n-1)%20)==8)+9*(((n-1)%20)==7)+8*(((n-1)%20)==6)+7*(((n-1)%20)==5)+6*(((n-1)%20)==4)+5*(((n-1)%20)==3)+3*(((n-1)%20)==2)+2*(((n-1)%20)==1)
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-lpb $2
-  trn $2,2
-  add $1,1
-  trn $1,$2
-  add $0,2
-  sub $0,$1
-  trn $2,18
-lpe
+div $2,20
+mul $2,22
+mod $0,20
+mov $1,$0
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,5
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,7
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,8
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,8
+mul $1,10
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,10
+mul $1,12
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,13
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,14
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,15
+add $2,$1
+mov $1,$0
+equ $1,14
+mul $1,16
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,17
+add $2,$1
+mov $1,$0
+equ $1,16
+mul $1,18
+add $2,$1
+mov $1,$0
+equ $1,17
+mul $1,19
+add $2,$1
+mov $1,$0
+equ $1,18
+mul $1,20
+add $2,$1
+mov $1,$0
+equ $1,19
+mul $1,21
+add $2,$1
+mov $0,$2

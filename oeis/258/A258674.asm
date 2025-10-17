@@ -1,25 +1,22 @@
 ; A258674: Number of (n+2) X (1+2) 0..1 arrays with no 3 x 3 subblock diagonal sum equal to the antidiagonal sum.
-; Submitted by vanos0512
+; Submitted by loader3229
 ; 320,1600,8320,43264,219648,1115136,5744640,29593600,151101440,771506176,3960635392,20332478464,104035123200,532316160000,2729194291200,13992627011584,71652362682368,366911879643136,1880261562204160,9635511245209600,49355207485685760,252808226150547456,1295299772072067072,6636657062459736064,33998110478072545280,174164719556991385600,892299206763143495680,4571522156814300872704,23419831621838897676288,119979406066688181927936,614676118082798726676480,3149096520208903202406400
 
 #offset 1
 
-mov $1,2
-pow $1,$0
-add $0,2
+mov $1,320
+mov $2,1600
+mov $3,8320
+mov $4,43264
+sub $0,1
 lpb $0
+  mul $1,256
+  rol $1,4
+  mov $5,$1
+  mul $5,32
   sub $0,1
-  mov $3,$2
-  mov $2,$4
-  div $2,2
-  add $2,1
-  seq $2,205219 ; Number of (n+1)X2 0..1 arrays with the number of equal 2X2 subblock diagonal pairs and equal antidiagonal pairs differing from each horizontal or vertical neighbor, and new values 0..1 introduced in row major order
-  mul $3,$2
-  add $4,1
+  add $4,$5
+  add $4,$3
+  add $4,$3
 lpe
-mov $0,$3
-div $0,16
-mul $0,4
-mul $1,$0
 mov $0,$1
-mul $0,4

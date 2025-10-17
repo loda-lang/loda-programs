@@ -1,27 +1,25 @@
-; A232590: Number of (1+1)X(n+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal
-; Submitted by [AF] Kalianthys
+; A232590: Number of (1+1)X(n+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
+; Submitted by loader3229
 ; 0,10,2,26,20,70,90,210,336,674,1178,2234,4036,7502,13714,25314,46464,85562,157266,289370,532116,978838,1800234,3311282,6090256,11201874,20603306,37895546,69700612,128199582,235795618,433695938,797691008,1467182698,2698569506,4963443354,9129195412,16791208422,30883847034,56804251026,104479306320,192167404546,353450961722,650097672762,1195716038852,2199264673518,4045078384946,7440059097506,13684402155776,25169539638426,46294000891506,85147942685914,156611483215636,288053426793270,529812852694602
-; Formula: a(n) = 2*b(n+1), b(n) = 2*b(n-2)+2*b(n-3)+c(n-2), b(6) = 10, b(5) = 13, b(4) = 1, b(3) = 5, b(2) = 0, b(1) = 1, b(0) = 1, c(n) = 4*c(n-3)+3*c(n-4)+2*c(n-2)-c(n-1)+c(n-5), c(8) = 8, c(7) = 15, c(6) = -1, c(5) = 7, c(4) = -2, c(3) = 3, c(2) = -1, c(1) = 1, c(0) = 0
 
 #offset 1
 
-mov $3,1
-add $0,1
+mov $2,10
+mov $3,2
+mov $4,26
+mov $5,20
+sub $0,1
 lpb $0
+  rol $1,5
+  mov $6,$1
+  mul $6,3
   sub $0,1
-  mov $6,$4
-  sub $3,$4
-  mov $4,$2
-  add $4,$3
-  add $5,$2
-  add $5,$4
-  mov $2,$3
-  add $2,$1
-  sub $2,$4
-  sub $4,$6
-  mov $1,$3
-  mov $3,$5
-  sub $3,$6
+  add $5,$6
+  mov $6,$2
+  mul $6,4
+  add $5,$6
+  add $5,$3
+  add $5,$3
+  sub $5,$4
 lpe
-mov $0,$3
-mul $0,2
+mov $0,$1

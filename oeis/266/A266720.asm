@@ -1,7 +1,22 @@
 ; A266720: Binary representation of the middle column of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,10,101,1011,10110,101101,1011010,10110101,101101010,1011010101,10110101010,101101010101,1011010101010,10110101010101,101101010101010,1011010101010101,10110101010101010,101101010101010101,1011010101010101010,10110101010101010101,101101010101010101010,1011010101010101010101,10110101010101010101010,101101010101010101010101,1011010101010101010101010,10110101010101010101010101,101101010101010101010101010,1011010101010101010101010101,10110101010101010101010101010,101101010101010101010101010101
-; Formula: a(n) = A007088(A266721(n))
 
-seq $0,266721 ; Decimal representation of the middle column of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,10
+mov $3,101
+mov $4,1011
+mov $5,10110
+lpb $0
+  mul $1,0
+  rol $1,5
+  mov $6,$2
+  mul $6,-10
+  add $5,$6
+  add $5,$3
+  mov $6,$4
+  mul $6,10
+  sub $0,1
+  add $5,$6
+lpe
+mov $0,$1

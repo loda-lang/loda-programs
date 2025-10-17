@@ -1,17 +1,20 @@
 ; A267454: Total number of OFF (white) cells after n iterations of the "Rule 131" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,2,5,10,15,23,30,40,51,63,75,91,106,123,141,161,181,204,226,251,277,304,331,362,392,424,457,492,527,565,602,642,683,725,767,813,858,905,953,1003,1053,1106,1158,1213,1269,1326,1383,1444,1504,1566,1629,1694,1759,1827,1894,1964,2035,2107,2179,2255,2330,2407,2485,2565,2645,2728,2810,2895,2981,3068,3155,3246,3336,3428,3521,3616,3711,3809,3906,4006
 
+mov $2,2
+mov $3,5
+mov $4,10
+mov $5,15
+mov $6,23
+mov $7,30
+mov $8,40
 lpb $0
+  rol $1,8
+  sub $8,$1
+  sub $8,$3
+  add $8,$5
+  add $8,$7
   sub $0,1
-  mov $3,$1
-  add $1,2
-  add $3,3
-  mul $3,$0
-  div $3,$1
-  add $1,1
-  div $1,2
-  add $2,2
-  add $2,$3
 lpe
-mov $0,$2
+mov $0,$1

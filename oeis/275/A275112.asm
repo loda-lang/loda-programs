@@ -1,12 +1,37 @@
 ; A275112: Zero together with the partial sums of A064412.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,1,6,20,52,112,215,375,613,948,1407,2013,2799,3793,5034,6554,8398,10603,13220,16290,19870,24006,28761,34185,40347,47302,55125,63875,73633,84463,96452,109668,124204,140133,157554,176544,197208,219628,243915,270155,298465,328936,361691,396825,434467,474717,517710,563550,612378,664303,719472,777998,840034,905698,975149,1048509,1125943,1207578,1293585,1384095,1479285,1579291,1684296,1794440,1909912,2030857,2157470,2289900,2428348,2572968,2723967,2881503,3045789,3216988,3395319,3580949,3774103
-; Formula: a(n) = a(n-1)+A064412(n), a(0) = 0
 
+mov $2,1
+mov $3,6
+mov $4,20
+mov $5,52
+mov $6,112
+mov $7,215
+mov $8,375
+mov $9,613
 lpb $0
-  mov $2,$0
-  seq $2,64412 ; At stage 1, start with a unit equilateral equiangular triangle. At each successive stage add 3*(n-1) new triangles around outside with edge-to-edge contacts. Sequence gives number of triangles (regardless of size) at n-th stage.
+  rol $1,9
+  mov $10,$1
+  mul $10,-3
+  add $9,$10
+  add $9,$2
+  add $9,$2
+  add $9,$3
+  add $9,$3
+  mov $10,$4
+  mul $10,-4
+  add $9,$10
+  mov $10,$5
+  mul $10,4
+  add $9,$10
+  sub $9,$6
+  sub $9,$6
+  sub $9,$7
+  sub $9,$7
+  mov $10,$8
+  mul $10,3
   sub $0,1
-  add $1,$2
+  add $9,$10
 lpe
 mov $0,$1

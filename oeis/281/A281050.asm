@@ -1,21 +1,33 @@
 ; A281050: Number of n X 2 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly two elements, and with new values introduced in order 0 sequentially upwards.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,1,6,29,122,468,1686,5807,19338,62731,199264,622152,1914780,5821645,17515566,52221929,154461110,453654108,1324053522,3842768987,11096398578,31895230903,91296545404,260329675536,739725018360,2095147333465,5916475166934,16661365736309,46799586608306,131139465383268,366651394308942,1022972141735879,2848531606812378,7917283905377827,21967267094716504,60850367828991576,168297223038373908,464786286896101285,1281815453918408190,3530402600186784449,9711312046668362606,26681661873373433580
 
 #offset 1
 
+mov $2,1
+mov $3,6
+mov $4,29
+mov $5,122
+mov $6,468
 sub $0,1
-mov $4,$0
 lpb $0
-  mov $1,$0
+  mul $1,-1
+  rol $1,6
+  mov $7,$1
+  mul $7,9
+  add $6,$7
+  mov $7,$2
+  mul $7,-30
+  add $6,$7
+  mov $7,$3
+  mul $7,45
+  add $6,$7
+  mov $7,$4
+  mul $7,-30
+  add $6,$7
+  mov $7,$5
+  mul $7,9
   sub $0,1
-  mov $2,$1
-  add $2,1
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $4,1
-  add $5,$3
+  add $6,$7
 lpe
-mov $0,$5
+mov $0,$1

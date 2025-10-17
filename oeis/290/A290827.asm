@@ -1,7 +1,23 @@
 ; A290827: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,1,101,1111,111,111111,11111,11111111,1111111,1111111111,111111111,111111111111,11111111111,11111111111111,1111111111111,1111111111111111,111111111111111,111111111111111111,11111111111111111,11111111111111111111,1111111111111111111,1111111111111111111111,111111111111111111111,111111111111111111111111,11111111111111111111111,11111111111111111111111111,1111111111111111111111111,1111111111111111111111111111,111111111111111111111111111,111111111111111111111111111111,11111111111111111111111111111
-; Formula: a(n) = A007088(A290829(n))
 
-seq $0,290829 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,1
+mov $3,101
+mov $4,1111
+mov $5,111
+mov $6,111111
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$3
+  mul $7,-100
+  sub $0,1
+  add $6,$7
+  mov $7,$4
+  mul $7,100
+  add $6,$7
+  add $6,$5
+lpe
+mov $0,$1

@@ -1,22 +1,21 @@
 ; A262480: Number of trivial c-Wilf equivalence classes in the symmetric group S_n.
-; Submitted by iBezanilla
+; Submitted by DukeBox
 ; 1,1,1,2,8,32,192,1272,10176,90816,908160,9980160,119761920,1556766720,21794734080,326918753280,5230700052480,88921859604480,1600593472880640,30411275148656640,608225502973132800,12772735543856332800,281000181964839321600,6463004184741681561600,155112100433800357478400,3877802510833236993638400
+; Formula: a(n) = floor((n!+floor((2*2^floor(n/2)*floor(n/2)!)/2)+2)/4)
 
-mov $1,1
-mov $4,1
-lpb $0
-  sub $0,2
-  add $3,1
-  mul $4,$3
-  add $3,1
-  mul $1,$3
-lpe
-mul $3,$0
-add $3,1
-mov $2,$4
-mul $2,$3
-mul $2,$1
-add $1,$2
-mov $0,$1
-div $0,2
-dif $0,2
+mov $1,$0
+div $1,2
+mov $2,1
+fac $2,$1
+mul $2,2
+mov $4,2
+pow $4,$1
+mul $4,$2
+mov $1,$4
+div $1,2
+mov $3,1
+fac $3,$0
+mov $0,$3
+add $0,$1
+add $0,2
+div $0,4

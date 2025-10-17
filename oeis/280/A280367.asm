@@ -1,7 +1,22 @@
 ; A280367: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 259", based on the 5-celled von Neumann neighborhood.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,1,11,1000,11,111000,11,11111000,11,1111111000,11,111111111000,11,11111111111000,11,1111111111111000,11,111111111111111000,11,11111111111111111000,11,1111111111111111111000,11,111111111111111111111000,11,11111111111111111111111000,11,1111111111111111111111111000,11,111111111111111111111111111000,11,11111111111111111111111111111000,11,1111111111111111111111111111111000,11,111111111111111111111111111111111000,11,11111111111111111111111111111111111000,11,1111111111111111111111111111111111111000
-; Formula: a(n) = A007088(A280369(n))
 
-seq $0,280369 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 259", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,1
+mov $3,11
+mov $4,1000
+mov $5,11
+mov $6,111000
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$2
+  mul $7,-100
+  add $6,$7
+  mov $7,$4
+  mul $7,101
+  sub $0,1
+  add $6,$7
+lpe
+mov $0,$1

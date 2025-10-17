@@ -1,22 +1,21 @@
 ; A289006: Conversion to octal of the binary expansion given by the first n terms of the period-3 sequence A011655 (repeat 0, 1, 1).
-; Submitted by Jamie Morken(s1)
+; Submitted by loader3229
 ; 0,1,3,6,15,33,66,155,333,666,1555,3333,6666,15555,33333,66666,155555,333333,666666,1555555,3333333,6666666,15555555,33333333,66666666,155555555,333333333,666666666,1555555555,3333333333,6666666666,15555555555,33333333333,66666666666,155555555555,333333333333,666666666666
 
 #offset 1
 
+mov $2,1
+mov $3,3
+mov $4,6
+mov $5,15
+mov $6,33
 sub $0,1
-mov $1,2
-pow $1,$0
-mul $1,6
-div $1,7
-mov $4,1
-mov $0,$1
 lpb $0
-  mov $3,$0
-  mod $3,8
-  mul $3,$4
-  div $0,8
-  add $2,$3
-  mul $4,10
+  mul $1,-10
+  rol $1,6
+  mov $7,$3
+  mul $7,11
+  sub $0,1
+  add $6,$7
 lpe
-mov $0,$2
+mov $0,$1

@@ -1,24 +1,22 @@
-; A232583: Number of (n+1)X(2+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal
-; Submitted by Jon Maiga
+; A232583: Number of (n+1)X(2+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
+; Submitted by loader3229
 ; 10,34,124,456,1686,6232,23034,85130,314626,1162804,4297528,15882942,58700688,216947890,801802986,2963329250,10951967500,40476633544,149594843398,552877431048,2043342182250,7551849721642,27910368960066,103152038798468,381232620876664,1408971775191406,5207323179010624,19245392397571362,71127739877836746,262876187485147810,971546264023204380,3590671913524975688,13270520682347224054,49045616926811011768,181264367639418256090,669922676775564739914,2475921763900724139906,9150591245041535587156
-; Formula: a(n) = 2*truncate(b(n+1)/7), b(n) = 3*b(n-1)+2*c(n-1)+d(n-2), b(4) = 434, b(3) = 119, b(2) = 35, b(1) = 7, b(0) = 0, c(n) = 2*c(n-1)+2*c(n-2)-d(n-3)+d(n-1), c(7) = 6496, c(6) = 1757, c(5) = 476, c(4) = 126, c(3) = 35, c(2) = 7, c(1) = 7, c(0) = 0, d(n) = 4*d(n-1)+2*d(n-4)-d(n-2)-d(n-3), d(8) = 29904, d(7) = 8092, d(6) = 2191, d(5) = 595, d(4) = 161, d(3) = 42, d(2) = 7, d(1) = 0, d(0) = 0
 
 #offset 1
 
-add $0,1
+mov $1,10
+mov $2,34
+mov $3,124
+mov $4,456
+sub $0,1
 lpb $0
-  sub $0,1
-  add $4,$1
-  add $1,$3
-  add $3,$1
-  mov $5,7
-  add $5,$2
   mul $1,2
-  add $1,$5
-  add $2,$3
-  add $2,$4
-  mov $3,$5
+  rol $1,4
+  sub $4,$1
+  sub $4,$2
+  mov $5,$3
+  mul $5,4
+  sub $0,1
+  add $4,$5
 lpe
 mov $0,$1
-div $0,7
-mul $0,2
