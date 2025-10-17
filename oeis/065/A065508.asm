@@ -1,34 +1,27 @@
 ; A065508: Primes p such that p^2 - p + 1 is prime.
-; Submitted by shiva
+; Submitted by DukeBox
 ; 2,3,7,13,67,79,139,151,163,193,337,349,379,457,541,613,643,727,769,919,991,1021,1093,1117,1201,1231,1381,1423,1549,1567,1597,1621,1693,1747,1789,1801,1933,1987,2011,2017,2113,2137,2143,2239,2281,2557,2647,2659,2683,2689,2731,3049,3271,3331,3511,3541,3607,3733,3847,3889,3919,4003,4057,4111,4159,4327,4447,4507,4561,4813,5011,5179,5209,5527,5641,5749,5779,5839,6007,6043
 
 #offset 1
 
+mov $3,1
+mov $4,$0
 sub $0,1
-mov $2,24
-add $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $3,1
-  mov $6,$1
-  mul $6,$3
-  add $6,2
-  mov $5,1
-  add $5,$1
-  bin $5,$6
-  mul $5,2
-  mov $3,$5
-  add $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+pow $4,2
+lpb $4
+  mov $5,$3
+  seq $5,40 ; The prime numbers.
+  mov $1,$5
+  add $3,1
+  mul $5,$1
+  sub $5,$1
+  add $5,1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  mov $2,$0
+  max $2,0
+  equ $2,$0
+  mul $4,$2
+  trn $4,1
 lpe
 mov $0,$1

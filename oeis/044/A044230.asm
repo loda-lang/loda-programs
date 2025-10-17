@@ -1,5 +1,5 @@
 ; A044230: Numbers n such that string 5,3 occurs in the base 8 representation of n but not of n-1.
-; Submitted by loader3229
+; Submitted by Science United
 ; 43,107,171,235,299,344,363,427,491,555,619,683,747,811,856,875,939,1003,1067,1131,1195,1259,1323,1368,1387,1451,1515,1579,1643,1707,1771,1835,1880,1899,1963,2027,2091,2155,2219,2283,2347
 
 #offset 1
@@ -21,15 +21,7 @@ lpb $0
   mov $11,$1
   add $11,$2
   add $11,$10
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
+  rol $1,10
   mov $10,$11
 lpe
 mov $0,$1

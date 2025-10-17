@@ -1,17 +1,22 @@
 ; A218395: Numbers whose square is the sum of the squares of 11 consecutive integers.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 11,77,143,1529,2849,30503,56837,608531,1133891,12140117,22620983,242193809,451285769,4831736063,9003094397,96392527451,179610602171,1923018812957,3583208949023,38363983731689,71484568378289,765356655820823,1426108158616757
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = truncate((15*c(n-2)+14*b(n-2))/8), b(3) = 143, b(2) = 143, b(1) = 11, b(0) = 11, c(n) = truncate((73*c(n-2)+66*b(n-2))/4), c(3) = 1386, c(2) = 1386, c(1) = 66, c(0) = 66
 
+mov $1,11
+mov $2,66
 lpb $0
-  sub $0,1
-  add $3,1
-  mov $1,$3
-  mul $1,3
-  dif $1,8
-  add $2,$1
-  add $2,$1
-  add $3,$2
+  sub $0,2
+  mov $3,$1
+  mul $3,66
+  mov $4,$2
+  mul $4,15
+  mul $2,73
+  add $2,$3
+  div $2,4
+  mul $1,14
+  add $1,$4
+  div $1,8
 lpe
-mov $0,$2
-mul $0,11
-add $0,11
+mul $0,$2
+add $0,$1

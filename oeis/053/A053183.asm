@@ -1,32 +1,30 @@
 ; A053183: Primes of the form p^2 + p + 1 when p is prime.
-; Submitted by Hans van der Giessen
+; Submitted by Science United
 ; 7,13,31,307,1723,3541,5113,8011,10303,17293,28057,30103,86143,147073,459007,492103,552793,579883,598303,684757,704761,735307,830833,1191373,1204507,1353733,1395943,1424443,1482307,1886503,2037757,2212657,2432041,2507473,2922391,3281533,3413257,3730693,3894703,4534771,5168803,5333791,5473261,5815333,7094233,7450171,7781311,8746807,8817931,9069133,9250723,9843907,10378063,10572253,11611057,11899051,12190573,12655807,13479913,15066043,15916111,17284807,17787307,18143341,19443691,22292563,22406023
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,10
-pow $2,3
+pow $2,2
 lpb $2
-  sub $6,1
-  mov $3,$6
-  add $3,$1
-  sub $3,1
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $7,$3
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$7
-  add $1,2
+  mov $3,$1
+  add $3,1
+  seq $3,40 ; The prime numbers.
+  mov $5,$3
+  pow $3,2
+  add $5,$3
+  mov $3,$5
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $5,2
+  sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
-  mov $7,$5
   mul $2,$4
-  sub $2,17
-  add $5,$1
+  trn $2,1
 lpe
-mov $0,$7
-add $0,1
+mov $0,$5
+add $0,3

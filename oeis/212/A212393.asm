@@ -14,9 +14,7 @@ sub $0,1
 lpb $0
   sub $0,1
   mov $1,$5
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
+  rol $2,4
   mov $5,$6
   mul $6,-5
   add $1,$6

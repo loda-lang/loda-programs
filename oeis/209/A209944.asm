@@ -1,21 +1,23 @@
-; A209944: Half the number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having at most one duplicate clockwise edge difference.
-; Submitted by Cruncher Pete
+; A209944: a(n) is half the number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having at most one duplicate clockwise edge difference.
+; Submitted by loader3229
 ; 34,258,1956,14832,112464,852768,6466176,49030272,371775744,2819017728,21375415296,162080704512,1228989210624,9318903717888,70661292834816,535794601623552,4062703123759104,30805753962037248,233586961257332736,1771190815088443392,13430188425618653184,101835420334773239808,772174783116063277056,5855073742713658540032,44396539853674710564864,336640124034612165869568,2552599222451769521995776,19355276823125963122409472,146762851608177012998406144,1112840431526573635459350528
-; Formula: a(n) = 2*truncate(b(n+2)/24), b(n) = 12*b(n-2)+6*b(n-1), b(1) = 7, b(0) = 1
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 18*b(n-2)+6*c(n-2), b(3) = 1956, b(2) = 1956, b(1) = 34, b(0) = 34, c(n) = 102*b(n-2)+42*c(n-2), c(3) = 12876, c(2) = 12876, c(1) = 224, c(0) = 224
 
 #offset 1
 
-mov $1,1
-mov $3,1
-add $0,2
+mov $1,34
+mov $2,224
+sub $0,1
 lpb $0
-  sub $0,1
-  mov $2,$1
-  mul $2,12
-  mul $1,6
-  add $1,$3
-  mov $3,$2
+  sub $0,2
+  mov $3,$1
+  mul $3,102
+  mov $4,$2
+  mul $4,6
+  mul $2,42
+  add $2,$3
+  mul $1,18
+  add $1,$4
 lpe
-mov $0,$1
-div $0,24
-mul $0,2
+mul $0,$2
+add $0,$1

@@ -25,15 +25,7 @@ lpb $0
   mov $13,$3
   add $13,$7
   add $13,$9
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
+  rol $3,10
   mov $12,$13
 lpe
 mov $0,$1

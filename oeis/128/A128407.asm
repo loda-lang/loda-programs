@@ -1,7 +1,7 @@
 ; A128407: Triangle read by rows: T(n,n) = mobius(n) on the diagonal, zero elsewhere.
 ; Submitted by kpmonaghan
 ; 1,0,-1,0,0,-1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A008683(truncate(sqrtint(8*n)/2))*((-truncate((truncate(sqrtint(8*n)/2)+1)/(-binomial(truncate(sqrtint(8*n)/2),2)+n+1))*(-binomial(truncate(sqrtint(8*n)/2),2)+n+1)+truncate(sqrtint(8*n)/2)+1)==0)
+; Formula: a(n) = A008683(floor(sqrtint(8*n)/2))*((-truncate((floor(sqrtint(8*n)/2)+1)/(-binomial(floor(sqrtint(8*n)/2),2)+n+1))*(-binomial(floor(sqrtint(8*n)/2),2)+n+1)+floor(sqrtint(8*n)/2)+1)==0)
 
 #offset 1
 

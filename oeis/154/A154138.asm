@@ -4,22 +4,20 @@
 
 #offset 1
 
-mov $1,1
-mov $2,3
-mov $3,12
-mov $4,22
-mov $5,73
+mov $1,3
+mov $2,7
+mov $3,25
+mov $4,45
 sub $0,1
 lpb $0
-  rol $1,5
-  mov $6,$2
-  mul $6,-6
+  mul $1,-1
+  rol $1,4
+  mov $5,$2
+  mul $5,6
   sub $0,1
-  sub $5,$1
-  add $5,$6
-  mov $6,$3
-  mul $6,6
-  add $5,$6
-  add $5,$4
+  add $4,$5
 lpe
 mov $0,$1
+sub $0,3
+div $0,2
+add $0,1

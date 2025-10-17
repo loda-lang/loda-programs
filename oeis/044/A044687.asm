@@ -1,5 +1,5 @@
 ; A044687: Numbers n such that string 6,1 occurs in the base 9 representation of n but not of n+1.
-; Submitted by loader3229
+; Submitted by KetamiNO [YouTube]
 ; 55,136,217,298,379,460,503,541,622,703,784,865,946,1027,1108,1189,1232,1270,1351,1432,1513,1594,1675,1756,1837,1918,1961,1999,2080,2161,2242,2323,2404,2485,2566,2647,2690,2728,2809
 
 #offset 1
@@ -22,16 +22,7 @@ lpb $0
   mov $12,$1
   add $12,$2
   add $12,$11
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $1,11
   mov $11,$12
 lpe
 mov $0,$1

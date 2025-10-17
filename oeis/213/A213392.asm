@@ -1,17 +1,31 @@
 ; A213392: Number of (w,x,y) with all terms in {0,...,n} and 2*max(w,x,y) >= 3*min(w,x,y).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,7,25,61,115,199,319,469,667,919,1213,1573,2005,2491,3061,3721,4447,5275,6211,7225,8359,9619,10969,12457,14089,15823,17713,19765,21931,24271,26791,29437,32275,35311,38485,41869,45469,49219,53197
 
-mov $4,$0
-mov $1,$0
-lpb $1
-  sub $1,3
-  add $2,1
-  mov $3,$2
-  mul $3,$1
-  mul $3,6
-  add $4,$3
+mov $1,1
+mov $2,7
+mov $3,25
+mov $4,61
+mov $5,115
+mov $6,199
+mov $7,319
+mov $8,469
+lpb $0
+  mul $1,-1
+  rol $1,8
+  add $8,$1
+  add $8,$1
+  sub $8,$2
+  add $8,$3
+  add $8,$3
+  mov $9,$4
+  mul $9,-4
+  sub $0,1
+  add $8,$9
+  add $8,$5
+  add $8,$5
+  sub $8,$6
+  add $8,$7
+  add $8,$7
 lpe
-add $0,1
-pow $0,3
-sub $0,$4
+mov $0,$1

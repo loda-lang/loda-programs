@@ -1,17 +1,22 @@
 ; A215042: a(n) = F(8*n)/L(2*n) with n >= 0, F = A000045 (Fibonacci numbers) and L = A000032 (Lucas numbers).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,7,141,2576,46347,831985,14930208,267913919,4807525989,86267568688,1548008749155,27777890017577,498454011832896,8944394323670071,160500643816049277,2880067194369984080,51680708854856144763,927372692193073296289
 
-mov $2,$0
-mul $2,2
-mov $3,$0
-mul $3,2
-lpb $3
-  sub $3,1
-  mov $0,$2
-  add $0,1
-  seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-  add $1,$0
-  add $2,2
+mov $2,7
+mov $3,141
+mov $4,2576
+lpb $0
+  mul $1,-1
+  rol $1,4
+  mov $5,$1
+  mul $5,21
+  add $4,$5
+  mov $5,$2
+  mul $5,-56
+  add $4,$5
+  mov $5,$3
+  mul $5,21
+  sub $0,1
+  add $4,$5
 lpe
 mov $0,$1

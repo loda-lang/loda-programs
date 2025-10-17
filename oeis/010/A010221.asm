@@ -1,43 +1,15 @@
 ; A010221: Continued fraction for sqrt(177).
-; Submitted by loader3229
+; Submitted by Science United
 ; 13,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8,2,3,3,26,3,3,2,8
-; Formula: a(n) = 26*((sign(n)*((n-1)%8+1))==8)+13*((sign(n)*((n-1)%8+1))==0)+8*((sign(n)*((n-1)%8+1))==4)+3*((sign(n)*((n-1)%8+1))==7)+3*((sign(n)*((n-1)%8+1))==6)+3*((sign(n)*((n-1)%8+1))==2)+3*((sign(n)*((n-1)%8+1))==1)+2*((sign(n)*((n-1)%8+1))==5)+2*((sign(n)*((n-1)%8+1))==3)
+; Formula: a(n) = 5*floor(A010163(n)/4)+gcd(A010163(n)-2,5*floor(A010163(n)/4))+2
 
-dgr $0,9
 mov $1,$0
-equ $1,0
-mul $1,13
+seq $1,10163 ; Continued fraction for sqrt(92).
 mov $2,$1
-mov $1,$0
-equ $1,1
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,2
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,3
-mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,4
-mul $1,8
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,6
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,7
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,8
-mul $1,26
-add $2,$1
-mov $0,$2
+sub $2,2
+div $1,4
+mul $1,5
+gcd $2,$1
+add $1,$2
+add $1,2
+mov $0,$1

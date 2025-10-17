@@ -1,14 +1,32 @@
 ; A172506: a(n) = numerator of fraction a/b, where gcd(a, b) = 1, whose decimal representation has the form (1)(2)(3)...(n-1)(n).(1)(2)(3)...(n-1)(n).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by DukeBox
 ; 11,303,123123,6170617,246902469,1929001929,12345671234567,617283906172839,123456789123456789,123456789101234567891,12345678910111234567891011,15432098637639015432098637639,1234567891011121312345678910111213,6172839455055606570617283945505560657
-; Formula: a(n) = truncate(truncate(A030656(A007908(n))/2)/gcd(10000000000000000000000000000000000000,truncate(A030656(A007908(n))/2)))
 
 #offset 1
 
-seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
-seq $0,30656 ; Pair up the numbers.
-div $0,2
+lpb $0
+  sub $0,1
+  add $3,1
+  mov $2,$3
+  log $2,10
+  add $2,1
+  pow $4,$2
+  mul $8,$4
+  add $8,$3
+  mov $4,10
+lpe
+mov $5,$8
+add $5,1
+mov $7,$5
+log $5,10
+add $5,1
+mov $6,10
+pow $6,$5
+mov $0,$8
+mul $0,$6
+add $0,$7
+sub $0,1
+dif $0,481
 mov $1,10000000000000000000000000000000000000
 gcd $1,$0
-mov $2,10000000000000000000000000000000000000
 div $0,$1

@@ -1,51 +1,45 @@
 ; A211380: Number of pairs of intersecting diagonals in the interior and exterior of a regular n-gon.
-; Submitted by PDW
+; Submitted by loader3229
 ; 0,1,5,15,42,94,189,340,572,903,1365,1981,2790,3820,5117,6714,8664,11005,13797,17083,20930,25386,30525,36400,43092,50659,59189,68745,79422,91288,104445,118966,134960,152505,171717,192679,215514,240310,267197,296268,327660
 
 #offset 3
 
+mov $3,1
+mov $4,5
+mov $5,15
+mov $6,42
 sub $0,3
-mov $8,$0
-mov $6,$0
-lpb $6
-  sub $6,1
-  mov $0,$8
-  sub $0,$6
-  mov $10,0
-  mov $11,$0
-  mov $9,$0
-  lpb $9
-    sub $9,1
-    mov $0,$11
-    sub $0,$9
-    mov $13,0
-    mov $14,$0
-    mov $12,$0
-    lpb $12
-      sub $12,1
-      mov $0,$14
-      sub $0,$12
-      mov $5,$0
-      add $0,1
-      mov $2,$0
-      sub $0,4
-      lpb $0
-        sub $0,1
-        add $2,1
-        equ $3,$2
-        sub $3,$2
-        equ $4,2
-        sub $4,1
-        add $5,1
-        sub $5,$3
-        mul $2,$4
-      lpe
-      sub $3,$1
-      add $1,$8
-      add $13,$5
-    lpe
-    add $10,$13
-  lpe
-  add $7,$10
+lpb $0
+  mov $8,$1
+  mul $8,-14505
+  sub $8,60116
+  mul $2,$8
+  rol $2,5
+  mov $8,$1
+  mul $8,17061
+  add $8,64283
+  mov $7,$2
+  mul $7,$8
+  mov $8,$1
+  mul $8,14505
+  add $8,1093
+  add $6,$7
+  mov $7,$3
+  mul $7,$8
+  mov $8,$1
+  mul $8,-17061
+  sub $8,5848
+  add $6,$7
+  mov $7,$4
+  mul $7,$8
+  mul $8,0
+  add $8,37681
+  add $6,$7
+  mov $7,$5
+  mul $7,$8
+  add $6,$7
+  div $6,16645
+  sub $0,1
+  add $1,1
 lpe
-mov $0,$7
+mov $0,$2

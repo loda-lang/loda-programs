@@ -1,20 +1,35 @@
 ; A165188: Interleaving of A014125 and zero followed by A014125.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,3,1,6,3,11,6,18,11,27,18,39,27,54,39,72,54,94,72,120,94,150,120,185,150,225,185,270,225,321,270,378,321,441,378,511,441,588,511,672,588,764,672,864,764,972,864,1089,972,1215,1089,1350,1215,1495,1350
 
 #offset 1
 
-add $0,1
+mov $1,1
+mov $3,3
+mov $4,1
+mov $5,6
+mov $6,3
+mov $7,11
+mov $8,6
+mov $9,18
+sub $0,1
 lpb $0
-  sub $2,1
-  add $4,$2
-  sub $5,$4
-  pow $2,2
-  mov $3,$0
-  pow $3,2
-  mod $3,3
-  mul $3,$5
-  sub $0,2
-  add $1,$3
+  mul $1,-1
+  rol $1,9
+  mov $10,$2
+  mul $10,3
+  add $9,$10
+  add $9,$3
+  mov $10,$4
+  mul $10,-3
+  add $9,$10
+  mov $10,$5
+  mul $10,-3
+  add $9,$10
+  add $9,$6
+  mov $10,$7
+  mul $10,3
+  sub $0,1
+  add $9,$10
 lpe
 mov $0,$1

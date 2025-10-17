@@ -1,16 +1,13 @@
 ; A020114: Ceiling of GAMMA(n+1/9)/GAMMA(1/9).
-; Submitted by Goldislops
+; Submitted by Icecold
 ; 1,1,1,1,1,4,18,105,741,6006,54718,553254,6147264,74450194,976124761,13774204959,208143541602,3353423725802,57380805974820,1039230152655058,19860842917407766,399423618672311730
 
 mov $2,$0
-div $2,3
 lpb $2
-  sub $2,1
-  mov $1,$0
-  sub $1,$2
-  mov $3,140
-  min $3,$1
-  seq $3,20069 ; Integer part of Gamma(n+1/9)/Gamma(1/9).
+  mul $2,0
+  mov $1,140
+  min $1,$0
+  seq $1,20069 ; Integer part of Gamma(n+1/9)/Gamma(1/9).
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

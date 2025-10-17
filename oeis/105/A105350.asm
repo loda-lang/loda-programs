@@ -1,9 +1,12 @@
 ; A105350: Largest squared factorial dividing n!.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,1,4,4,36,36,576,576,518400,518400,518400,518400,25401600,25401600,1625702400,1625702400,131681894400,131681894400,13168189440000,13168189440000,1593350922240000,1593350922240000,229442532802560000,229442532802560000
-; Formula: a(n) = A055770(A055772(n+1))^2
+; Formula: a(n) = A055770(A055772(max(n-1,0)+1))^2
 
-add $0,1
-seq $0,55772 ; Square root of largest square dividing n!.
-seq $0,55770 ; Largest factorial number which divides n.
-pow $0,2
+trn $0,1
+mov $1,$0
+add $1,1
+seq $1,55772 ; Square root of largest square dividing n!.
+seq $1,55770 ; Largest factorial number which divides n.
+pow $1,2
+mov $0,$1

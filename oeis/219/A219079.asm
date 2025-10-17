@@ -1,26 +1,24 @@
-; A219079: Hilltop maps: number of 2Xn binary arrays indicating the locations of corresponding elements not exceeded by any horizontal, diagonal or antidiagonal neighbor in a random 0..1 2Xn array
-; Submitted by [SG]KidDoesCrunch
+; A219079: Hilltop maps: number of 2Xn binary arrays indicating the locations of corresponding elements not exceeded by any horizontal, diagonal or antidiagonal neighbor in a random 0..1 2Xn array.
+; Submitted by loader3229
 ; 1,11,47,165,625,2435,9367,35901,137865,529675,2034399,7813333,30009313,115260115,442689383,1700273453,6530386425,25081819099,96333894191,369997847365,1421082488529,5458073486883,20963291245879,80515511728413,309242835770473,1187735498682283,4561837661391487,17521041403620533,67294567377651905,258464020158410355,992704943646575623,3812767071163423757,14644021702511630809,56244550905174807675,216023273578059473871,829699125983915187493,3186696638081098474929,12239419260704675775427
-; Formula: a(n) = 9*b(n-3)+9*b(n-4)+a(n-2)+a(n-3)+18, a(7) = 9367, a(6) = 2435, a(5) = 625, a(4) = 165, a(3) = 47, a(2) = 11, a(1) = 1, a(0) = 1, b(n) = 7*b(n-3)+6*b(n-4)+3*b(n-1)+b(n-2)+16, b(8) = 164027, b(7) = 42708, b(6) = 11113, b(5) = 2892, b(4) = 755, b(3) = 196, b(2) = 49, b(1) = 12, b(0) = 3
 
 #offset 1
 
-mov $2,1
-mov $5,3
+mov $1,1
+mov $2,11
+mov $3,47
+mov $4,165
+sub $0,1
 lpb $0
-  sub $0,1
-  sub $1,$2
-  add $3,1
-  sub $3,$4
-  mov $4,$2
-  mul $4,2
-  add $2,$1
-  add $2,$3
-  mul $5,3
-  add $5,$2
-  add $5,2
-  mov $1,$3
-  mov $3,$5
+  mul $1,6
+  rol $1,4
+  mov $5,$1
+  mul $5,7
+  add $4,$5
   add $4,$2
+  mov $5,$3
+  mul $5,3
+  sub $0,1
+  add $4,$5
 lpe
-mov $0,$2
+mov $0,$1

@@ -1,20 +1,16 @@
 ; A066949: Take the sum of the previous two terms, subtract n if this sum is greater than n.
-; Submitted by ckrause
+; Submitted by kpmonaghan
 ; 0,1,1,2,3,5,2,7,1,8,9,6,3,9,12,6,2,8,10,18,8,5,13,18,7,25,6,4,10,14,24,7,31,5,2,7,9,16,25,2,27,29,14,43,13,11,24,35,11,46,7,2,9,11,20,31,51,25,18,43,1,44,45,26,7,33,40,6,46,52,28,9,37,46,9,55,64,42,28,70
-; Formula: a(n) = b(n-1), a(3) = 2, a(2) = 1, a(1) = 1, a(0) = 0, b(n) = -truncate((b(n-1)+b(n-2)-1)/(n+1))*(n+1)+b(n-1)+b(n-2), b(4) = 5, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 1
+; Formula: a(n) = b(n-1)+1, a(3) = 2, a(2) = 1, a(1) = 1, a(0) = 0, b(n) = (b(n-1)+b(n-2)+1)%(n+1), b(4) = 4, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 0
 
-mov $1,3
-mov $2,1
-mov $4,1
+mov $1,1
 lpb $0
   sub $0,1
-  sub $1,1
-  sub $2,1
+  add $1,1
   mod $2,$1
-  add $2,1
   mov $3,$4
+  add $3,1
   mov $4,$2
-  add $1,2
   add $2,$3
 lpe
 mov $0,$3

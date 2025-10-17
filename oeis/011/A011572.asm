@@ -1,30 +1,21 @@
 ; A011572: Stirling numbers of second kind S2(23,n).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,4194303,15686335501,2916342574750,96416888184100,998969857983405,4382641999117305,9741955019900400,12320068811796900,9593401297313460,4864251308951100,1672162773483930,401282560341390,68629175807115,8479404429331,762361127264,49916988803,2364885369,79781779,1859550,28336,253,1
 
 #offset 1
 
-sub $0,1
-mov $4,1
-fac $4,$0
-mov $7,$0
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$1
-  add $2,1
-  pow $2,10
-  mov $3,$7
-  bin $3,$1
-  equ $6,2
-  add $6,$2
-  pow $6,2
-  add $1,1
-  mul $3,$1
-  mul $3,$6
-  mul $3,$1
-  mul $5,-1
-  add $5,$3
-lpe
-mov $0,$5
-div $0,$4
+add $0,276
+mov $3,$0
+mul $3,8
+nrt $3,2
+add $3,1
+div $3,2
+bin $3,2
+mov $4,$0
+sub $4,$3
+mov $1,1
+fac $1,$4
+mov $2,$0
+seq $2,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+div $2,$1
+mov $0,$2

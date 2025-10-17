@@ -1,28 +1,34 @@
 ; A105100: Sum of ordered 3 prime sided prime triangles.
-; Submitted by Jamie Morken(w2)
+; Submitted by Science United
 ; 41,156,304,462,630,834,1020,1214,1420,1618,1824,2076,2288,2514,2712,2926,3198,3460,3656,3874,4086,4370,4598,4888,5100,5346,5626,5886,6126,6332,6580,6836,7146,7386,7678,7848,8208,8560,8762,8962,9258,9498,9696,9986,10282,10560,10842,11196,11420,11772,12020,12280,12550,12794,13116,13458,13700,13980,14220,14432,14724,15114,15420,15784,16040,16212,16422,16722,16986,17284,17602,17914,18230,18546,18938,19228,19520,19862,20070,20344
 
 #offset 1
 
-mul $0,6
-sub $0,7
-mov $1,-1
+sub $0,1
 mov $4,$0
-mov $3,6
-lpb $3
-  sub $3,1
+mov $2,2
+lpb $2
+  sub $2,1
   mov $0,$4
-  add $0,1
-  add $0,$3
-  max $0,0
-  add $0,1
-  seq $0,40 ; The prime numbers.
-  sub $0,3
-  mov $2,$3
-  equ $2,$3
-  mul $2,$0
-  add $1,3
-  add $1,$2
+  add $0,$2
+  mul $0,6
+  mov $5,0
+  mov $6,0
+  max $6,$0
+  add $6,1
+  seq $6,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
+  mov $7,3
+  lpb $7
+    mov $7,$5
+    mov $5,$6
+  lpe
+  sub $5,1
+  mov $0,$5
+  mov $1,$2
+  mul $1,$5
+  add $3,$1
 lpe
-add $1,1
-mov $0,$1
+min $4,1
+mul $4,$0
+mov $0,$3
+sub $0,$4

@@ -1,35 +1,28 @@
 ; A136240: Numbers n among A006093 such that n^2 + n + 1 is prime.
-; Submitted by shiva
+; Submitted by DukeBox
 ; 1,2,6,12,66,78,138,150,162,192,336,348,378,456,540,612,642,726,768,918,990,1020,1092,1116,1200,1230,1380,1422,1548,1566,1596,1620,1692,1746,1788,1800,1932,1986,2010,2016,2112,2136,2142,2238,2280,2556,2646,2658,2682,2688,2730,3048,3270,3330,3510,3540,3606,3732,3846,3888,3918,4002,4056,4110,4158,4326,4446,4506,4560,4812,5010,5178,5208,5526,5640,5748,5778,5838,6006,6042
 
 #offset 1
 
+mov $3,1
+mov $4,$0
 sub $0,1
-mov $2,24
-add $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $3,1
-  mov $6,$1
-  mul $6,$3
-  add $6,2
-  mov $5,1
-  add $5,$1
-  bin $5,$6
-  mul $5,2
-  mov $3,$5
-  add $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+pow $4,2
+lpb $4
+  mov $5,$3
+  seq $5,40 ; The prime numbers.
+  mov $1,$5
+  add $3,1
+  mul $5,$1
+  sub $5,$1
+  add $5,1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  mov $2,$0
+  max $2,0
+  equ $2,$0
+  mul $4,$2
+  trn $4,1
 lpe
 mov $0,$1
 sub $0,1

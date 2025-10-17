@@ -1,7 +1,7 @@
 ; A082117: Fibonacci sequence (mod 6).
 ; Submitted by loader3229
 ; 0,1,1,2,3,5,2,1,3,4,1,5,0,5,5,4,3,1,4,5,3,2,5,1,0,1,1,2,3,5,2,1,3,4,1,5,0,5,5,4,3,1,4,5,3,2,5,1,0,1,1,2,3,5,2,1,3,4,1,5,0,5,5,4,3,1,4,5,3,2,5,1,0,1,1,2,3,5,2,1
-; Formula: a(n) = 3*sign(3*sign((n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3))*sign((n^2)%3)+sign((n^2)%3)+sign((n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3)))*bitxor(abs((n^2)%3),abs((n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3)))+(n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3)-6*truncate((sign(3*sign((n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3))*sign((n^2)%3)+sign((n^2)%3)+sign((n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3)))*bitxor(abs((n^2)%3),abs((n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3))))/2)
+; Formula: a(n) = (n%4-(floor(n/2)%2))*(floor(n/4)%2+1)+3*bitxor((n^2)%3,(n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3))-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3)-6*truncate(bitxor((n^2)%3,(n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3))/2)
 
 mov $1,$0
 mov $2,$0

@@ -1,14 +1,34 @@
 ; A211117: Number of (n+1) X (n+1) -2..2 symmetric matrices with every 2 X 2 subblock having sum zero and two, three or four distinct values.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 12,30,72,174,422,1028,2510,6134,14988,36594,89250,217416,529010,1285754,3121904,7573550,18358950,44474532,107679342,260584230,630363356,1524363938,3685232642,8907169352,21524344338,52005554058,125635087296,303475391166,732985830278,1770248001476,4275085396814,10323628614806,24928766622444,60194016900882,145342521912354,350930522156808,847306518949106,2045749513816922,4939217532283088,11925008676275342,28790883285286566,69510072378914340,167817622843075566,405158508531974982,978161022243662012
-; Formula: a(n) = 2*A000045(n+3)+A211479(n)-2
 
 #offset 1
 
-mov $1,$0
-seq $1,211479 ; Number of -1..1 arrays x(i) of n+1 elements i=1..n+1 with x(i)+x(j), x(i+1)+x(j+1), -(x(i)+x(j+1)), and -(x(i+1)+x(j)) having two, three or four distinct values for every i<=n and j<=n.
-add $0,3
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $1,$0
-add $0,$1
-sub $0,2
+mov $1,12
+mov $2,30
+mov $3,72
+mov $4,174
+mov $5,422
+mov $6,1028
+sub $0,1
+lpb $0
+  mul $1,-2
+  rol $1,6
+  mov $7,$1
+  mul $7,-3
+  add $6,$7
+  mov $7,$2
+  mul $7,8
+  add $6,$7
+  mov $7,$3
+  mul $7,3
+  add $6,$7
+  mov $7,$4
+  mul $7,-11
+  add $6,$7
+  mov $7,$5
+  mul $7,6
+  sub $0,1
+  add $6,$7
+lpe
+mov $0,$1
