@@ -1,0 +1,37 @@
+; A220011: Number of 2 X n arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and nonincreasing columns, 0..3 2 X n array.
+; Submitted by loader3229
+; 4,7,19,43,85,154,263,431,685,1062,1611,2395,3493,5002,7039,9743,13277,17830,23619,30891,39925,51034,64567,80911,100493,123782,151291,183579,221253,264970,315439,373423,439741,515270,600947,697771,806805,929178,1066087,1218799,1388653,1577062,1785515,2015579,2268901,2547210,2852319,3186127,3550621,3947878,4380067,4849451,5358389,5909338,6504855,7147599,7840333,8585926,9387355,10247707,11170181,12158090,13214863,14344047,15549309,16834438,18203347,19660075,21208789,22853786,24599495,26450479
+
+#offset 1
+
+mov $1,4
+mov $2,7
+mov $3,19
+mov $4,43
+mov $5,85
+mov $6,154
+mov $7,263
+mov $8,431
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,8
+  mov $9,$3
+  mul $9,6
+  sub $8,$2
+  add $8,$9
+  mov $9,$4
+  mul $9,-15
+  add $8,$9
+  mov $9,$5
+  mul $9,20
+  add $8,$9
+  mov $9,$6
+  mul $9,-15
+  add $8,$9
+  mov $9,$7
+  mul $9,6
+  sub $0,1
+  add $8,$9
+lpe
+mov $0,$1

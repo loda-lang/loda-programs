@@ -1,0 +1,63 @@
+; A204021: Triangle read by rows: row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of min(2i-1,2j-1) (A157454).
+; Submitted by DukeBox
+; 1,1,-1,2,-4,1,4,-12,9,-1,8,-32,40,-16,1,16,-80,140,-100,25,-1,32,-192,432,-448,210,-36,1,64,-448,1232,-1680,1176,-392,49,-1,128,-1024,3328,-5632,5280,-2688,672,-64,1,256,-2304,8640,-17472,20592
+
+max $0,1
+mov $3,$0
+add $0,1
+mov $5,$0
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
+mul $0,-2
+add $0,$5
+add $0,$3
+mov $10,3
+mov $12,3
+mov $4,$0
+add $4,1
+mov $11,$4
+mul $11,8
+nrt $11,2
+sub $11,1
+div $11,2
+mov $2,$11
+add $2,1
+bin $2,2
+sub $4,$2
+sub $4,1
+mul $4,-1
+add $4,$11
+sub $11,$4
+lpb $4
+  sub $4,1
+  add $11,1
+  sub $1,1
+  mov $10,$12
+  mul $10,2
+  mul $10,$11
+  div $10,$1
+  add $12,$10
+lpe
+mov $4,$10
+div $4,3
+mov $9,$0
+mul $9,8
+add $9,1
+nrt $9,2
+add $9,1
+div $9,2
+bin $9,2
+mov $7,$0
+sub $7,$9
+mov $8,2
+pow $8,$7
+mov $0,$8
+mul $0,$4
+div $0,2

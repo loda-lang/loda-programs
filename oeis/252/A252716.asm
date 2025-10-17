@@ -1,0 +1,44 @@
+; A252716: Number of (n+2) X (5+2) 0..3 arrays with every consecutive three elements in every row and diagonal having exactly two distinct values, and in every column and antidiagonal not having exactly two distinct values, and new values 0 upwards introduced in row major order.
+; Submitted by loader3229
+; 129,69,86,112,147,214,288,383,564,768,1027,1518,2080,2789,4126,5680,7629,11284,15600,20981,31014,43056,57979,85638,119392,160967,237556,332608,448971,662014,930912,1258109,1853454,2617584,3541861,5213268,7394224,10017005,14731126,20982256,28457763,41814454,59804064,81202127,119215284,171184512,232686163,341340558,492013216,669469013,981333886,1419646384,1933558845,2832243604,4111299696,5604721445,8204144454,11947374000,16301147275,23846432358,34830186208,47560345751,69533880436,101841276352
+
+#offset 1
+
+mov $1,129
+mov $2,69
+mov $3,86
+mov $4,112
+mov $5,147
+mov $6,214
+mov $7,288
+mov $8,383
+mov $9,564
+mov $10,768
+mov $11,1027
+mov $12,1518
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,12
+  mov $13,$2
+  mul $13,-3
+  sub $0,1
+  add $12,$13
+  mov $13,$3
+  mul $13,3
+  add $12,$13
+  mov $13,$5
+  mul $13,10
+  add $12,$13
+  mov $13,$6
+  mul $13,-10
+  add $12,$13
+  mov $13,$8
+  mul $13,-6
+  add $12,$13
+  mov $13,$9
+  mul $13,6
+  add $12,$13
+  add $12,$11
+lpe
+mov $0,$1

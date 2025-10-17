@@ -1,0 +1,33 @@
+; A252726: Number of (7+2) X (n+2) 0..3 arrays with every consecutive three elements in every row and diagonal having exactly two distinct values, and in every column and antidiagonal not having exactly two distinct values, and new values 0 upwards introduced in row major order.
+; Submitted by loader3229
+; 257,220,224,257,288,324,373,452,512,617,768,900,1093,1412,1664,2057,2688,3204,3973,5252,6272,7817,10368,12420,15493,20612,24704,30857,41088,49284,61573,82052,98432,123017,163968,196740,245893,327812,393344,491657,655488,786564,983173,1310852,1572992,1966217,2621568,3145860,3932293,5243012,6291584,7864457,10485888,12583044,15728773,20971652,25165952,31457417,41943168,50331780,62914693,83886212,100663424,125829257,167772288,201326724,251658373,335544452,402653312,503316617,671088768,805306500
+
+#offset 1
+
+mov $1,257
+mov $2,220
+mov $3,224
+mov $4,257
+mov $5,288
+mov $6,324
+mov $7,373
+mov $8,452
+mov $9,512
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,9
+  sub $9,$2
+  sub $9,$2
+  sub $9,$3
+  sub $9,$3
+  mov $10,$5
+  mul $10,3
+  sub $0,1
+  add $9,$10
+  mov $10,$6
+  mul $10,3
+  add $9,$10
+  sub $9,$8
+lpe
+mov $0,$1

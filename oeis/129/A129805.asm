@@ -1,0 +1,32 @@
+; A129805: Primes congruent to +-1 mod 18.
+; Submitted by Science United
+; 17,19,37,53,71,73,89,107,109,127,163,179,181,197,199,233,251,269,271,307,359,379,397,431,433,449,467,487,503,521,523,541,557,577,593,613,631,647,683,701,719,739,757,773,809,811,827,829,863,881,883,919,937,953,971,991,1009,1061,1063,1097,1117,1151,1153,1171,1187,1223,1259,1277,1279,1297,1367,1423,1439,1459,1493,1511,1531,1549,1567,1583
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+add $2,3
+pow $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  add $3,1
+  seq $3,10183 ; Continued fraction for sqrt(118).
+  mul $3,5
+  sub $3,1
+  add $3,$5
+  mov $5,$3
+  add $5,1
+  add $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $3,2
+  sub $0,$3
+  add $1,2
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+lpe
+mov $0,$5
+div $0,5

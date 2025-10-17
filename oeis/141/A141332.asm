@@ -1,0 +1,97 @@
+; A141332: a(n) = number of positive integers k, k < n, where |the sine of k radians| is < |the sine of n radians|. Also, a(n) = number of positive integers k, k < n, where |the cosine of k radians| is > |the cosine of n radians|.
+; Submitted by loader3229
+; 0,1,0,1,4,1,2,7,2,3,10,3,3,12,6,2,13,9,1,14,12,0,15,16,1,14,21,4,13,26,7,12,31,10,10,33,15,7,32,20,4,31,25,1,30,31,2,27,38,7,24,45,12,21,52,17,17,54,24,12,51,31,7,48,38,2,45,46,3,40,55,10,35,64,17,30,73,24,24,75
+
+#offset 1
+
+mov $2,1
+mov $4,1
+mov $5,4
+mov $6,1
+mov $7,2
+mov $8,7
+mov $9,2
+mov $10,3
+mov $11,10
+mov $12,3
+mov $13,3
+mov $14,12
+mov $15,6
+mov $16,2
+mov $17,13
+mov $18,9
+mov $19,1
+mov $20,14
+mov $21,12
+mov $23,15
+sub $0,1
+lpb $0
+  mul $1,-1
+  rol $1,23
+  mov $24,$1
+  mul $24,3
+  add $23,$24
+  mov $24,$2
+  mul $24,-4
+  add $23,$24
+  mov $24,$3
+  mul $24,4
+  add $23,$24
+  mov $24,$4
+  mul $24,-4
+  add $23,$24
+  mov $24,$5
+  mul $24,4
+  add $23,$24
+  mov $24,$6
+  mul $24,-4
+  add $23,$24
+  mov $24,$7
+  mul $24,4
+  add $23,$24
+  mov $24,$8
+  mul $24,-4
+  add $23,$24
+  mov $24,$9
+  mul $24,4
+  add $23,$24
+  mov $24,$10
+  mul $24,-4
+  add $23,$24
+  add $23,$11
+  add $23,$11
+  add $23,$12
+  add $23,$12
+  mov $24,$13
+  mul $24,-4
+  add $23,$24
+  mov $24,$14
+  mul $24,4
+  add $23,$24
+  mov $24,$15
+  mul $24,-4
+  add $23,$24
+  mov $24,$16
+  mul $24,4
+  add $23,$24
+  mov $24,$17
+  mul $24,-4
+  add $23,$24
+  mov $24,$18
+  mul $24,4
+  add $23,$24
+  mov $24,$19
+  mul $24,-4
+  add $23,$24
+  mov $24,$20
+  mul $24,4
+  add $23,$24
+  mov $24,$21
+  mul $24,-4
+  add $23,$24
+  mov $24,$22
+  mul $24,3
+  sub $0,1
+  add $23,$24
+lpe
+mov $0,$1
