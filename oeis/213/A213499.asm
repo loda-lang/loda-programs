@@ -1,10 +1,27 @@
 ; A213499: Number of (w,x,y) with all terms in {0,...,n} and w != min(|w-x|, |x-y|).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 0,4,17,47,96,176,286,439,634,885,1188,1561,1997,2515,3108,3796,4569,5451,6429,7528,8735,10076,11535,13142,14878,16774,18811,21021,23382,25930,28640,31549,34632,37927,41406,45111,49011,53149,57494
-; Formula: a(n) = (n+1)^3-A213497(n)
 
-mov $1,$0
-seq $1,213497 ; Number of (w,x,y) with all terms in {0,...,n} and w = min(|w-x|, |x-y|).
-add $0,1
-pow $0,3
-sub $0,$1
+mov $2,4
+mov $3,17
+mov $4,47
+mov $5,96
+mov $6,176
+mov $7,286
+mov $8,439
+lpb $0
+  mul $1,-1
+  rol $1,8
+  add $8,$1
+  add $8,$2
+  add $8,$2
+  sub $8,$3
+  sub $8,$4
+  sub $8,$4
+  sub $8,$5
+  add $8,$6
+  add $8,$6
+  add $8,$7
+  sub $0,1
+lpe
+mov $0,$1

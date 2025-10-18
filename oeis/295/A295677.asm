@@ -7,12 +7,9 @@ mov $3,1
 mov $4,4
 mov $5,-3
 lpb $0
+  rol $2,4
+  add $5,$2
+  add $5,$4
   sub $0,1
-  mov $1,$2
-  add $1,$3
-  add $1,$5
-  rol $2,3
-  mov $4,$5
-  mov $5,$1
 lpe
 mov $0,$2

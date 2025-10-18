@@ -1,7 +1,7 @@
 ; A340206: Constant whose decimal expansion is the concatenation of the smallest n-digit square A061432(n), for n = 1, 2, 3, ...
 ; Submitted by loader3229
 ; 1,1,6,1,0,0,1,0,2,4,1,0,0,0,0,1,0,0,4,8,9,1,0,0,0,0,0,0,1,0,0,0,4,5,6,9,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,4,1,2,9,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,4,7,9,8,4,1,0
-; Formula: a(n) = floor(((sqrtint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1)+1)^2)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))%10
+; Formula: a(n) = floor(((sqrtint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1)+1)^2)/truncate(10^(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)-1)))%10
 
 mov $1,$0
 add $1,1

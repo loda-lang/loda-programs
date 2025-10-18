@@ -1,25 +1,20 @@
 ; A382478: Number of palindromic binary strings of length n having no 4-runs of 1's.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,2,4,3,7,6,14,12,27,23,52,44,100,85,193,164,372,316,717,609,1382,1174,2664,2263,5135,4362,9898,8408,19079,16207,36776,31240,70888,60217,136641,116072,263384,223736,507689,431265,978602,831290,1886316,1602363,3635991,3088654,7008598,5953572
 
-add $0,1
+mov $1,1
+mov $2,2
+mov $3,2
+mov $4,4
+mov $5,3
+mov $6,7
+mov $7,6
+mov $8,14
 lpb $0
+  rol $1,8
+  add $8,$2
+  add $8,$4
+  add $8,$6
   sub $0,1
-  mov $9,$7
-  add $9,1
-  sub $2,$7
-  mov $7,$6
-  add $7,$2
-  mov $6,$4
-  sub $6,$3
-  mov $4,$2
-  mov $2,1
-  add $2,$5
-  add $2,$1
-  mov $1,$3
-  mov $3,$8
-  mov $8,$5
-  add $5,$9
 lpe
-mov $0,$7
-add $0,1
+mov $0,$1

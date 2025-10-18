@@ -1,21 +1,22 @@
 ; A195558: Hypotenuses of primitive Pythagorean triples in A195556 and A195557.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,13,25,37,493,949,1405,18721,36037,53353,710905,1368457,2026009,26995669,51965329,76934989,1025124517,1973314045,2921503573,38927735977,74933968381,110940200785,1478228842609,2845517484433,4212806126257
 
 #offset 1
 
+mov $1,1
+mov $2,13
+mov $3,25
+mov $4,37
+mov $5,493
+mov $6,949
 sub $0,1
 lpb $0
-  sub $3,1
-  sub $3,$0
+  mul $1,-1
+  rol $1,6
+  mov $7,$3
+  mul $7,38
   sub $0,1
-  trn $3,$0
-  mov $1,$3
-  mul $1,36
-  add $2,1
-  add $2,$1
-  add $3,$2
+  add $6,$7
 lpe
-mov $0,$3
-mul $0,12
-add $0,1
+mov $0,$1

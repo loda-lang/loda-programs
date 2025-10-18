@@ -1,29 +1,28 @@
 ; A338760: Subword complexity of the infinite word Prod_{i>=1} Prod_{j=1..i} a^(i-j+1) b^j.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,2,4,8,15,28,47,73,107,150,203,267,343,432,535,653,787,938,1107,1295,1503,1732,1983,2257,2555,2878,3227,3603,4007,4440,4903,5397,5923,6482,7075,7703,8367,9068,9807,10585,11403,12262,13163,14107,15095,16128,17207
 
-mov $5,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$5
-  sub $0,$3
-  mov $7,$0
-  mov $1,$0
-  add $1,1
-  lpb $1
-    sub $1,1
-    mov $0,$7
-    sub $0,$1
-    mov $2,5
-    bin $2,$0
-    mov $6,2
-    bin $6,$2
-    add $6,$0
-    mov $4,$6
-    sub $4,1
-    add $8,$4
-  lpe
+mov $1,1
+mov $2,2
+mov $3,4
+mov $4,8
+mov $5,15
+mov $6,28
+mov $7,47
+mov $8,73
+lpb $0
+  mul $1,0
+  rol $1,8
+  mov $9,$5
+  mul $9,4
+  sub $8,$4
+  add $8,$9
+  mov $9,$6
+  mul $9,-6
+  add $8,$9
+  mov $9,$7
+  mul $9,4
+  sub $0,1
+  add $8,$9
 lpe
-mov $0,$8
+mov $0,$1

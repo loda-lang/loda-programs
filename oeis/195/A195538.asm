@@ -1,21 +1,24 @@
 ; A195538: Denominators a(n) of Pythagorean approximations b(n)/a(n) to sqrt(8).
-; Submitted by ckrause
+; Submitted by loader3229
 ; 5,12,145,420,4901,14280,166465,485112,5654885,16479540,192099601,559819260,6525731525,19017375312,221682772225,646030941360,7530688524101,21946034630940,255821727047185,745519146510612,8690408031080165
 
 #offset 1
 
-mov $2,5
-mov $4,4
+mov $1,5
+mov $2,12
+mov $3,145
+mov $4,420
+mov $5,4901
+mov $6,14280
+sub $0,1
 lpb $0
+  rol $1,6
+  mov $7,$2
+  mul $7,-35
+  add $6,$7
+  mov $7,$4
+  mul $7,35
   sub $0,1
-  add $2,$3
-  mov $1,$2
-  sub $1,$3
-  mul $2,4
-  add $4,$2
-  mov $2,$4
-  add $2,$3
-  mov $3,$1
+  add $6,$7
 lpe
 mov $0,$1
-dif $0,2

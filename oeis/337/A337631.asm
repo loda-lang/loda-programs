@@ -1,18 +1,29 @@
 ; A337631: a(n) is the sum of the squares of diameters of all nonempty subsets of {1,2,...,n}.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 0,1,10,55,228,801,2526,7387,20440,54229,139218,348111,851916,2047945,4849606,11337667,26214336,60030909,136314810,307232695,687865780,1530920881,3388997550,7465861035,16374562728,35769024421,77846282146,168845901727
 
 #offset 1
 
 mov $2,1
+mov $3,10
+mov $4,55
+mov $5,228
+sub $0,1
 lpb $0
+  mul $1,8
+  rol $1,5
+  mov $6,$1
+  mul $6,-28
+  add $5,$6
+  mov $6,$2
+  mul $6,38
+  add $5,$6
+  mov $6,$3
+  mul $6,-25
+  add $5,$6
+  mov $6,$4
+  mul $6,8
   sub $0,1
-  mov $3,$0
-  pow $3,2
-  mul $3,$2
-  mul $1,2
-  add $1,$3
-  add $2,1
+  add $5,$6
 lpe
 mov $0,$1
-div $0,2

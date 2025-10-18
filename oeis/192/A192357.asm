@@ -1,28 +1,24 @@
 ; A192357: Constant term of the reduction of the polynomial p(n,x)=(1/2)((x+3)^n+(x-3)^n) by x^2->x+1.
-; Submitted by mkferrysr
+; Submitted by loader3229
 ; 1,0,10,1,137,93,2219,3410,39586,94467,750823,2317249,14833565,53482716,301162922,1194377453,6225350029,26179063845,130188268471,567580989502,2742763551458,12225952022559,58052436966875,262325736910601
 
 #offset 1
 
+mov $1,1
+mov $3,10
+mov $4,1
 sub $0,1
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  add $1,$3
+lpb $0
+  mul $1,-55
+  rol $1,4
   mov $5,$1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  mov $6,-2
-  pow $6,$0
-  add $6,1
-  bin $6,2
-  mul $1,$6
-  sub $1,$5
-  add $3,$1
+  mul $5,-20
+  sub $0,1
+  add $4,$5
+  mov $5,$2
+  mul $5,19
+  add $4,$5
+  add $4,$3
+  add $4,$3
 lpe
-mov $0,$3
+mov $0,$1

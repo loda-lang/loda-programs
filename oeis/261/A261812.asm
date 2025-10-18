@@ -1,23 +1,47 @@
 ; A261812: First differences of A098842.
-; Submitted by Skillz
+; Submitted by loader3229
 ; -2,0,-1,1,0,0,-1,1,0,0,0,-1,1,0,0,0,-1,1,0,0,-1,1,0,0,0,-1,1,0,0,0,-1,1,0,0,-1,1,0,0,0,-1,1,0,0,-1,1,0,0,0,-1,1,0,0,0,-1,1,0,0,-1,1,0,0,0,-1,1,0,0,0,-1,1,0,0,-1,1,0,0,0,-1,1,0,0
 
 #offset 1
 
+mov $1,-2
+mov $3,-1
+mov $4,1
+mov $7,-1
+mov $8,1
+mov $12,-1
+mov $13,1
+mov $17,-1
+mov $18,1
+mov $21,-1
+mov $22,1
+mov $26,-1
+mov $27,1
+mov $31,-1
+mov $32,1
+mov $35,-1
+mov $36,1
+mov $40,-1
+mov $41,1
+mov $44,-1
+mov $45,1
 sub $0,1
-mov $4,$0
-mov $3,3
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  add $0,1
-  seq $0,98842 ; Number of n-digit Fibonacci numbers.
-  mov $2,$3
-  mul $2,$0
-  mul $4,$3
-  add $1,$2
-  mov $5,$0
+lpb $0
+  mul $1,0
+  rol $1,45
+  sub $45,$32
+  sub $45,$33
+  sub $45,$34
+  sub $45,$35
+  sub $45,$36
+  sub $45,$37
+  sub $45,$38
+  sub $45,$39
+  sub $45,$40
+  sub $45,$41
+  sub $45,$42
+  sub $45,$43
+  sub $45,$44
+  sub $0,1
 lpe
-sub $1,$5
 mov $0,$1

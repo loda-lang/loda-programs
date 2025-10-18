@@ -1,16 +1,21 @@
 ; A301454: Number of strictly log-concave permutations of {1,...,n}.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 1,1,2,4,6,8,10,12,12,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 
-sub $0,1
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,4
+mov $5,6
+mov $6,8
+mov $7,10
+mov $8,12
+mov $9,12
+mov $10,8
 lpb $0
-  sub $0,3
-  add $1,5
-  trn $1,$0
-  mov $0,$1
-  add $0,2
-  mul $0,2
+  mul $1,0
+  rol $1,10
+  add $10,$9
+  sub $0,1
 lpe
-mul $0,2
-trn $0,1
-add $0,1
+mov $0,$1

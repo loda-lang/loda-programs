@@ -1,7 +1,22 @@
 ; A285648: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 73", based on the 5-celled von Neumann neighborhood.
-; Submitted by [DPC] hansR
+; Submitted by loader3229
 ; 1,1,100,11,0,111111,0,11111111,0,1111111111,0,111111111111,0,11111111111111,0,1111111111111111,0,111111111111111111,0,11111111111111111111,0,1111111111111111111111,0,111111111111111111111111,0,11111111111111111111111111,0,1111111111111111111111111111,0,111111111111111111111111111111,0,11111111111111111111111111111111,0,1111111111111111111111111111111111,0,111111111111111111111111111111111111,0,11111111111111111111111111111111111111,0,1111111111111111111111111111111111111111,0
-; Formula: a(n) = A007088(A285650(n))
 
-seq $0,285650 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 73", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,1
+mov $3,100
+mov $4,11
+mov $6,111111
+mov $8,11111111
+lpb $0
+  mul $1,0
+  rol $1,8
+  mov $9,$4
+  mul $9,-100
+  add $8,$9
+  mov $9,$6
+  mul $9,101
+  sub $0,1
+  add $8,$9
+lpe
+mov $0,$1

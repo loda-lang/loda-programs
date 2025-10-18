@@ -1,23 +1,22 @@
 ; A336678: Number of paths of length n starting at initial node of the path graph P_11.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,1,2,3,6,10,20,35,70,126,252,461,922,1702,3404,6315,12630,23494,46988,87533,175066,326382,652764,1217483,2434966,4542526,9085052,16950573,33901146,63255670,126511340,236063915,472127830,880983606,1761967212,3287837741
 
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,6
+mov $6,10
 lpb $0
+  mul $1,2
+  rol $1,6
+  mov $7,$2
+  mul $7,-9
+  add $6,$7
+  mov $7,$4
+  mul $7,6
   sub $0,1
-  add $2,2
-  sub $3,$4
-  mul $3,2
-  add $3,1
-  sub $3,$2
-  mov $5,$4
-  add $1,$3
-  dif $2,2
-  mov $4,$2
-  add $4,$1
-  add $5,$4
-  mov $1,$4
-  mov $2,$3
-  mov $3,$5
+  add $6,$7
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1

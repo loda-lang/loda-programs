@@ -1,24 +1,26 @@
 ; A221044: The Wiener index of the Bethe cactus lattice graph C_n defined pictorially in the Hosoya - Balasubramanian reference.
-; Submitted by HansCCT
+; Submitted by loader3229
 ; 8,352,6568,92608,1143880,13115680,143509480,1521045376,15755283592,160392633568,1610896046632,16004345360704,157595696236744,1540370736608416,14961422399467624,144535575132212992,1389765142844188936,13308390999949846624,126980061472109030056,1207661435632198248640
 
 #offset 1
 
-mov $2,$0
-lpb $2
-  sub $2,1
-  add $5,2
-  mov $0,3
-  pow $0,$5
-  add $0,1
-  mul $0,$1
-  div $0,4
-  add $0,1
-  sub $0,$4
-  sub $4,$3
-  add $1,2
-  sub $3,$4
-  add $3,$0
+mov $1,8
+mov $2,352
+mov $3,6568
+mov $4,92608
+sub $0,1
+lpb $0
+  mul $1,-243
+  rol $1,4
+  mov $5,$1
+  mul $5,378
+  add $4,$5
+  mov $5,$2
+  mul $5,-156
+  add $4,$5
+  mov $5,$3
+  mul $5,22
+  sub $0,1
+  add $4,$5
 lpe
-mov $0,$3
-mul $0,8
+mov $0,$1

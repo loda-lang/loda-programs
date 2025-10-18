@@ -1,20 +1,20 @@
 ; A229514: Number of n X 1 0..2 arrays of the median of the corresponding element, the element to the east and the element to the south in a larger (n+1) X 2 0..2 array without adjacent equal elements in the latter.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 3,7,17,39,91,211,491,1141,2653,6167,14337,33329,77481,180121,418731,973431,2262953,5260727,12229707,28430619,66093171,153647981,357188221,830361871,1930357153,4487535937,10432255377,24252051409,56379179411,131065690791,304690764961,708320092711,1646644439003,3827983896547,8898982904347,20687625358949,48092894164701,111802414680551,259909081071201,604215308017201,1404630176589753,3265368994806057,7591061939255867,17647078004745239,41024479130530041,95370343321355511,221709149707751691
-; Formula: a(n) = truncate(b(n+1)/2), b(n) = 2*sign(2*sign(c(n-3))+2*sign(1)-1)*bitor(abs(c(n-3)),abs(1))+2*b(n-1), b(3) = 14, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = sign(2*sign(c(n-3))+2*sign(1)-1)*bitor(abs(c(n-3)),abs(1))+3*c(n-1)-2*c(n-2), c(5) = 68, c(4) = 29, c(3) = 12, c(2) = 5, c(1) = 2, c(0) = 1
 
 #offset 1
 
-mov $4,1
-add $0,1
+mov $1,3
+mov $2,7
+mov $3,17
+mov $4,39
+sub $0,1
 lpb $0
-  sub $0,1
-  bor $1,1
-  add $2,$1
-  mov $1,$3
-  mov $3,$4
+  rol $1,4
+  sub $4,$1
   add $4,$2
-  mul $2,2
+  add $4,$3
+  add $4,$3
+  sub $0,1
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1

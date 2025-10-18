@@ -1,18 +1,13 @@
-; A317509: Coefficients in Expansion of 1/(1 + x - 2*x^5).
-; Submitted by William Michael Kanar
+; A317509: Coefficients in expansion of 1/(1 + x - 2*x^5).
+; Submitted by BrandyNOW
 ; 1,-1,1,-1,1,1,-3,5,-7,9,-7,1,9,-23,41,-55,57,-39,-7,89,-199,313,-391,377,-199,-199,825,-1607,2361,-2759,2361,-711,-2503,7225,-12743,17465,-18887,13881,569,-26055,60985,-98759,126521
-; Formula: a(n) = 2*a(n-5)-a(n-1), a(5) = 1, a(4) = 1, a(3) = -1, a(2) = 1, a(1) = -1, a(0) = 1
 
-mov $2,1
+mov $6,1
 lpb $0
+  rol $1,9
+  mul $1,2
+  sub $1,$5
   sub $0,1
-  mov $4,$6
-  mov $6,$2
-  mul $2,-1
-  add $2,$5
-  mov $5,$1
-  mov $1,$3
-  mov $3,$4
-  mul $3,2
+  mov $6,$1
 lpe
-mov $0,$2
+mov $0,$6

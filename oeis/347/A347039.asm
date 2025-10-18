@@ -1,5 +1,5 @@
 ; A347039: Times on the display of a 24-hour digital clock with 6 digits, rounded to full seconds, at which the hour and minute hands of an analog clock form a right angle. Terms with fewer than 6 digits are to be assumed filled with zeros to the left.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 1622,4905,12149,15433,22716,30000,33244,40527,43811,51055,54338,61622,64905,72149,75433,82716,90000,93244,100527,103811,111055,114338,121622,124905,132149,135433,142716,150000,153244,160527,163811,171055,174338,181622,184905,192149,195433,202716,210000,213244,220527,223811,231055,234338
 
 #offset 1
@@ -23,17 +23,7 @@ lpb $0
   mov $13,$1
   add $13,$2
   add $13,$12
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
+  rol $1,12
   mov $12,$13
 lpe
 mov $0,$1

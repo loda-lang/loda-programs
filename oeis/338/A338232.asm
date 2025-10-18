@@ -1,18 +1,33 @@
 ; A338232: Number of ternary strings of length n that contain at least two 0's and at most two 1's.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,0,1,7,33,121,378,1065,2803,7045,17148,40789,95373,220065,502414,1136977,2553831,5699149,12645504,27914877,61337665,134213065,292547346,635430937,1375724763,2969559381,6392110468,13723752805,29393671413,62813884465,133949278998,285078439329,605590372303
 
-mov $4,$0
+mov $3,1
+mov $4,7
+mov $5,33
+mov $6,121
+mov $7,378
 lpb $0
-  mov $2,$4
-  sub $2,$0
-  bin $2,2
-  add $2,1
-  add $0,1
-  mov $3,$4
-  bin $3,$0
-  mul $3,$2
-  sub $0,2
-  add $1,$3
+  mul $1,8
+  rol $1,7
+  mov $8,$1
+  mul $8,-44
+  add $7,$8
+  mov $8,$2
+  mul $8,102
+  add $7,$8
+  mov $8,$3
+  mul $8,-129
+  add $7,$8
+  mov $8,$4
+  mul $8,96
+  add $7,$8
+  mov $8,$5
+  mul $8,-42
+  add $7,$8
+  mov $8,$6
+  mul $8,10
+  sub $0,1
+  add $7,$8
 lpe
 mov $0,$1

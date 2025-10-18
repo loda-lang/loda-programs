@@ -1,22 +1,26 @@
 ; A241606: A linear divisibility sequence of the fourth order related to A003779.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,11,95,781,6336,51205,413351,3335651,26915305,217172736,1752296281,14138673395,114079985111,920471087701,7426955448000,59925473898301,483517428660911,3901330906652795,31478457514091281,253988526230055936
-; Formula: a(n) = b(2*n), b(n) = 3*b(n-2)+2*b(n-1)-b(n-3)+c(n-2), b(7) = 281, b(6) = 95, b(5) = 36, b(4) = 11, b(3) = 5, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = -b(n-1)-c(n-1), c(3) = 0, c(2) = -1, c(1) = 0, c(0) = 0
 
 #offset 1
 
-mov $2,1
-mul $0,2
+mov $1,1
+mov $2,11
+mov $3,95
+mov $4,781
+sub $0,1
 lpb $0
+  mul $1,-1
+  rol $1,4
+  mov $5,$1
+  mul $5,11
+  add $4,$5
+  mov $5,$2
+  mul $5,-25
+  add $4,$5
+  mov $5,$3
+  mul $5,11
   sub $0,1
-  add $2,$1
-  add $3,$4
-  add $4,$2
-  add $3,$4
-  sub $4,$3
-  add $1,$2
-  sub $1,$4
-  add $3,$4
-  add $3,$4
+  add $4,$5
 lpe
-mov $0,$3
+mov $0,$1

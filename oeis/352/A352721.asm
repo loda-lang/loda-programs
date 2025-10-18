@@ -1,18 +1,19 @@
 ; A352721: Perfect cubes whose decimal digits appear in nonincreasing order.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 0,1,8,64,1000,8000,64000,1000000,8000000,64000000,1000000000,8000000000,64000000000,1000000000000,8000000000000,64000000000000,1000000000000000,8000000000000000,64000000000000000,1000000000000000000,8000000000000000000,64000000000000000000
 
 #offset 1
 
-mov $1,1
+mov $2,1
+mov $3,8
+mov $4,64
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,4
+  mov $5,$1
+  mul $5,1000
   sub $0,1
-  mov $2,2
-  pow $2,$0
-  mul $2,$1
-  pow $2,3
-  trn $0,2
-  mul $1,10
+  add $4,$5
 lpe
-mov $0,$2
+mov $0,$1

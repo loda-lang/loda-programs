@@ -1,23 +1,31 @@
 ; A193958: Mirror of the triangle A193955.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 1,1,1,5,3,2,14,9,5,3,34,21,13,7,4,74,46,28,17,9,5,152,94,58,35,21,11,6,299,185,114,70,42,25,13,7,571,353,218,134,82,49,29,15,8,1066,659,407,251,154,94,56,33,17,9,1956,1209,747,461,284,174,106,63,37
 
-lpb $0
-  add $2,1
-  sub $0,$2
-  mov $5,-1
-lpe
-mov $4,$0
-add $4,$5
-add $2,2
-sub $2,$0
-mov $0,$2
-lpb $0
-  sub $0,1
-  add $1,$3
-  mul $3,-1
-  add $3,$4
-  add $3,$0
-  add $3,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
+mov $2,$0
 mov $0,$1
+sub $1,$2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $4,$0
+  max $4,1
+  add $4,$6
+  sub $6,1
+  add $3,$4
+  add $4,$5
+  mov $5,$3
+  add $3,$4
+lpe
+mov $0,$4

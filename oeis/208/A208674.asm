@@ -1,27 +1,24 @@
 ; A208674: Number of words, either empty or beginning with the first letter of the n-ary alphabet, where each letter of the alphabet occurs 3 times and letters of neighboring word positions are equal or neighbors in the alphabet.
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 1,1,10,37,163,640,2503,9559,36154,135541,505279,1875592,6941035,25629211,94478338,347857921,1279622611,4704064120,17284247263,63484653151,233114307274,855817783741,3141437229271,11529935743528,42314502514051,155283277278547,569823180145714,2090935465683337,7672379004317323,28152126489362392,103296643671750679,379015207598164663,1390668607322097850,5102560080646359589,18721934108149343023,68692906117081659016,252041478963958380763,924764965456615114699,3393049034786260718818
-; Formula: a(n) = 9*truncate(c(n)/2)+1, b(n) = 2*b(n-1)+2*b(n-2)+1, b(4) = 25, b(3) = 9, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = 4*b(n-3)+3*c(n-1)+3*d(n-1)-2*d(n-2)+2, c(5) = 142, c(4) = 36, c(3) = 8, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = c(n-1), d(4) = 8, d(3) = 2, d(2) = 0, d(1) = 0, d(0) = 0
 
+mov $1,1
+mov $2,1
+mov $3,10
+mov $4,37
+mov $5,163
 lpb $0
-  sub $0,1
-  add $2,$7
-  mul $2,2
-  add $2,$4
+  mul $1,4
+  rol $1,5
+  sub $5,$1
+  sub $5,$1
+  mov $6,$2
+  mul $6,-14
+  add $5,$6
+  sub $5,$3
   mov $6,$4
-  mul $1,2
-  sub $4,$2
-  sub $7,$4
-  mov $4,$1
-  mov $5,$1
-  add $1,1
-  add $1,$3
-  mov $3,$5
-  add $4,$7
-  add $4,$6
-  mov $7,$6
+  mul $6,5
+  sub $0,1
+  add $5,$6
 lpe
-mov $0,$4
-div $0,2
-mul $0,9
-add $0,1
+mov $0,$1

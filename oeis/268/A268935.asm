@@ -1,19 +1,35 @@
 ; A268935: a(1)=2, a(2)=3. For n>2 a(n) is the sum of the prime factors (with repetition) of a(n-1) + a(n-2).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 2,3,5,6,11,17,11,11,13,9,13,13,15,11,15,15,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10,10,9,19,11,10
-; Formula: a(n) = A001414(b(n-1)+1), a(2) = 3, a(1) = 2, a(0) = 0, b(n) = A001414(b(n-1)+1)+A001414(b(n-2)+1)-1, b(2) = 4, b(1) = 2, b(0) = 1
 
 #offset 1
 
-mov $1,1
+mov $1,2
+mov $2,3
+mov $3,5
+mov $4,6
+mov $5,11
+mov $6,17
+mov $7,11
+mov $8,11
+mov $9,13
+mov $10,9
+mov $11,13
+mov $12,13
+mov $13,15
+mov $14,11
+mov $15,15
+mov $16,15
+mov $17,10
+mov $18,10
+mov $19,9
+mov $20,19
+mov $21,11
+sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,21
+  add $21,$16
   sub $0,1
-  add $1,1
-  seq $1,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-  mov $3,$2
-  mov $4,$1
-  mov $2,$1
-  sub $2,1
-  add $1,$3
 lpe
-mov $0,$4
+mov $0,$1

@@ -1,18 +1,22 @@
 ; A377110: a(n) = coefficient of sqrt(2) in the expansion of (2 + sqrt(2) + sqrt(3))^n.
-; Submitted by STE\/E
+; Submitted by loader3229
 ; 0,1,4,23,120,629,3260,16843,86832,447241,2302516,11851487,60995880,313912637,1615504748,8313878227,42785563488,220186165393,1133137017700,5831424517415,30010056528600,154439694647429,794787521046812,4090186754982235,21049182488180880
 
-mov $2,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,188571 ; a(n) = coefficient of sqrt(2) in the expansion of (1 + sqrt(2) + sqrt(3))^n.
-  mul $1,$0
-  add $3,$1
+mov $2,1
+mov $3,4
+mov $4,23
+lpb $0
+  mul $1,23
+  rol $1,4
+  mov $5,$1
+  mul $5,-8
+  add $4,$5
+  mov $5,$2
+  mul $5,-14
+  add $4,$5
+  mov $5,$3
+  mul $5,8
+  sub $0,1
+  add $4,$5
 lpe
-mov $0,$3
+mov $0,$1

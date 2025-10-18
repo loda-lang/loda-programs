@@ -1,10 +1,29 @@
 ; A212687: Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|<n+|y-z|.
-; Submitted by ChUcK
+; Submitted by loader3229
 ; 0,1,12,67,212,527,1096,2045,3496,5621,8580,12591,17852,24627,33152,43737,56656,72265,90876,112891,138660,168631,203192,242837,287992,339197,396916,461735,534156,614811,704240,803121,912032,1031697
-; Formula: a(n) = n^4-A212688(n)
 
-mov $1,$0
-pow $1,4
-seq $0,212688 ; Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|>=n+|y-z|.
-sub $1,$0
+mov $2,1
+mov $3,12
+mov $4,67
+mov $5,212
+mov $6,527
+mov $7,1096
+lpb $0
+  rol $1,7
+  mov $8,$1
+  mul $8,-3
+  add $7,$8
+  add $7,$2
+  mov $8,$3
+  mul $8,5
+  add $7,$8
+  mov $8,$4
+  mul $8,-5
+  add $7,$8
+  sub $7,$5
+  mov $8,$6
+  mul $8,3
+  sub $0,1
+  add $7,$8
+lpe
 mov $0,$1

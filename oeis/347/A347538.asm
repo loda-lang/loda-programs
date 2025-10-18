@@ -1,24 +1,27 @@
 ; A347538: Number of minimum dominating sets in the cycle graph C_n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 3,6,5,3,14,8,3,25,11,3,39,14,3,56,17,3,76,20,3,99,23,3,125,26,3,154,29,3,186,32,3,221,35,3,259,38,3,300,41,3,344,44,3,391,47,3,441,50,3,494,53,3,550,56,3,609,59,3,671,62,3,736,65,3,804,68,3
-; Formula: a(n) = -c(n-1)+c(n-2)+binomial(-c(n-4)+a(n-2)+a(n-3)+c(n-3)-1,c(n-3))+2, a(8) = 8, a(7) = 14, a(6) = 3, a(5) = 5, a(4) = 6, a(3) = 3, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = truncate(b(n-1)^c(n-1))-1, b(5) = -1, b(4) = 0, b(3) = -2, b(2) = -1, b(1) = 0, b(0) = 0, c(n) = c(n-1)+truncate(b(n-1)^c(n-1)), c(5) = 1, c(4) = 1, c(3) = 0, c(2) = 1, c(1) = 1, c(0) = 0
 
 #offset 3
 
+mov $1,3
+mov $2,6
+mov $3,5
+mov $4,3
+mov $5,14
+mov $6,8
+mov $7,3
+mov $8,25
+mov $9,11
+sub $0,3
 lpb $0
+  rol $1,9
+  mov $10,$3
+  mul $10,-3
+  add $9,$10
+  mov $10,$6
+  mul $10,3
   sub $0,1
-  bin $7,$3
-  mov $3,$5
-  mov $6,$4
-  add $6,$1
-  add $6,1
-  sub $4,$2
-  mov $1,$4
-  add $1,1
-  pow $2,$5
-  add $5,$2
-  sub $2,1
-  mov $4,$7
-  mov $7,$6
+  add $9,$10
 lpe
 mov $0,$1

@@ -1,12 +1,21 @@
 ; A221366: The simple continued fraction expansion of F(x) := Product_{n >= 0} (1 - x^(4*n+3))/(1 - x^(4*n+1)) when x = (1/2)*(7 - 3*sqrt(5)).
+; Submitted by loader3229
 ; 1,5,1,45,1,320,1,2205,1,15125,1,103680,1,710645,1,4870845,1,33385280,1,228826125,1,1568397605,1,10749957120,1,73681302245,1,505019158605,1,3461452808000,1,23725150497405,1
 
+mov $1,1
+mov $2,5
+mov $3,1
+mov $4,45
+mov $5,1
+mov $6,320
 lpb $0
-  div $0,2
-  mov $1,$0
-  add $1,1
-  seq $1,81078 ; a(n) = Lucas(4n) - 3, or Lucas(2n-1)*Lucas(2n+1).
-  mul $0,2
+  rol $1,6
+  mov $7,$2
+  mul $7,-8
+  add $6,$7
+  mov $7,$4
+  mul $7,8
+  sub $0,1
+  add $6,$7
 lpe
-add $1,1
 mov $0,$1

@@ -1,11 +1,20 @@
 ; A265427: Binary representation of the n-th iteration of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,11,101,1111,11101,110111,1011101,11110111,111011101,1101110111,10111011101,111101110111,1110111011101,11011101110111,101110111011101,1111011101110111,11101110111011101,110111011101110111,1011101110111011101,11110111011101110111,111011101110111011101,1101110111011101110111,10111011101110111011101,111101110111011101110111,1110111011101110111011101,11011101110111011101110111,101110111011101110111011101,1111011101110111011101110111,11101110111011101110111011101,110111011101110111011101110111
-; Formula: a(n) = 10*A007088(truncate(A030101(A006977(n))/2))+1
 
-seq $0,6977 ; Cellular automaton with Rule 230: 000, 001, 010, 011, ..., 111 -> 0,1,1,0,0,1,1,1.
-seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-div $0,2
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mul $0,10
-add $0,1
+mov $1,1
+mov $2,11
+mov $3,101
+mov $4,1111
+mov $5,11101
+mov $6,110111
+lpb $0
+  mul $1,-10000
+  rol $1,6
+  mov $7,$2
+  mul $7,10000
+  sub $0,1
+  add $6,$7
+  add $6,$4
+lpe
+mov $0,$1

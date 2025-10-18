@@ -1,18 +1,31 @@
 ; A206548: Period 12: repeat 1, 5, 11, 13, 17, 19, 19, 17, 13, 11, 5, 1.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,5,11,13,17,19,19,17,13,11,5,1,1,5,11,13,17,19,19,17,13,11,5,1,1,5,11,13,17,19,19,17,13,11,5,1,1,5,11,13,17,19,19,17,13,11,5,1,1,5,11,13,17,19,19,17,13,11,5,1,1,5,11,13,17,19,19,17,13,11,5,1
 
 #offset 1
 
+mov $1,1
+mov $2,5
+mov $3,11
+mov $4,13
+mov $5,17
+mov $6,19
+mov $7,19
+mov $8,17
+mov $9,13
 sub $0,1
 lpb $0
-  mul $0,23
-  mod $0,12
-  trn $0,1
+  rol $1,9
+  sub $9,$1
+  sub $9,$1
+  add $9,$2
+  add $9,$2
+  sub $9,$3
+  add $9,$6
+  sub $9,$7
+  sub $9,$7
+  add $9,$8
+  add $9,$8
+  sub $0,1
 lpe
-add $0,1
-seq $0,37 ; Numbers that are not squares (or, the nonsquares).
-add $0,1
-seq $0,183866 ; n+floor(2*sqrt(n-1)); complement of A035106.
-mul $0,2
-sub $0,9
+mov $0,$1

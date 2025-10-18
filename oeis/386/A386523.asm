@@ -1,32 +1,32 @@
 ; A386523: Decimal expansion of 577/408.
-; Submitted by Mumps
+; Submitted by loader3229
 ; 1,4,1,4,2,1,5,6,8,6,2,7,4,5,0,9,8,0,3,9,2,1,5,6,8,6,2,7,4,5,0,9,8,0,3,9,2,1,5,6,8,6,2,7,4,5,0,9,8,0,3,9,2,1,5,6,8,6,2,7,4,5,0,9,8,0,3,9,2,1,5,6,8,6,2,7,4,5,0,9
-; Formula: a(n) = -10*truncate(truncate((2*b(max(4*n-4,0))-3*d(max(4*n-4,0)))/truncate((2*b(max(4*n-4,0)))/(10^(n-1))))/10)+truncate((2*b(max(4*n-4,0))-3*d(max(4*n-4,0)))/truncate((2*b(max(4*n-4,0)))/(10^(n-1)))), b(n) = 2*b(n-1)+2*max(26*e(n-1),c(n-1)), b(3) = 120, b(2) = 8, b(1) = 2, b(0) = 1, c(n) = 4*c(n-1)+2*max(26*e(n-1),c(n-1))-4*c(n-2), c(4) = 3232, c(3) = 144, c(2) = 12, c(1) = 2, c(0) = 0, d(n) = truncate((-b(n-1)-c(n-1)-max(26*e(n-1),c(n-1))+d(n-1))/2), d(3) = -37, d(2) = -3, d(1) = 0, d(0) = 0, e(n) = max(26*e(n-1),c(n-1)), e(3) = 52, e(2) = 2, e(1) = 0, e(0) = 0
 
 #offset 1
 
-sub $0,1
 mov $1,1
-mov $3,$0
-mul $3,4
-lpb $3
-  sub $3,1
-  mul $6,26
-  max $6,$2
-  add $1,$6
-  add $2,$1
-  sub $5,$2
-  div $5,2
-  mul $1,2
-  mul $2,2
+mov $2,4
+mov $3,1
+mov $4,4
+mov $5,2
+mov $6,1
+mov $7,5
+mov $8,6
+mov $9,8
+mov $10,6
+mov $11,2
+mov $12,7
+mov $13,4
+mov $14,5
+mov $16,9
+mov $17,8
+mov $19,3
+mov $20,9
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,20
+  add $20,$4
+  sub $0,1
 lpe
-mul $1,2
-mov $4,10
-pow $4,$0
-mul $5,3
-mov $2,$1
-div $2,$4
-sub $1,$5
-div $1,$2
 mov $0,$1
-mod $0,10

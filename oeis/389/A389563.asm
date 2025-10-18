@@ -6,11 +6,9 @@ trn $0,1
 add $0,1
 lpb $0
   sub $0,1
-  max $4,$0
-  max $2,$4
-  add $2,$0
   bin $2,$0
   gcd $2,2
+  max $4,$0
   add $4,1
   mov $3,$4
   mul $3,3

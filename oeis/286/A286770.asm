@@ -1,12 +1,22 @@
 ; A286770: Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 221", based on the 5-celled von Neumann neighborhood.
+; Submitted by loader3229
 ; 1,10,0,1110,1,111110,1,11111110,1,1111111110,1,111111111110,1,11111111111110,1,1111111111111110,1,111111111111111110,1,11111111111111111110,1,1111111111111111111110,1,111111111111111111111110,1,11111111111111111111111110,1,1111111111111111111111111110,1,111111111111111111111111111110,1,11111111111111111111111111111110,1,1111111111111111111111111111111110,1,111111111111111111111111111111111110,1,11111111111111111111111111111111111110,1,1111111111111111111111111111111111111110,1
 
+mov $1,1
+mov $2,10
+mov $4,1110
+mov $5,1
+mov $6,111110
+mov $7,1
 lpb $0
-  sub $0,3
-  mod $0,2
+  mul $1,0
+  rol $1,7
+  mov $8,$3
+  mul $8,-100
+  add $7,$8
+  mov $8,$5
+  mul $8,101
   sub $0,1
+  add $7,$8
 lpe
-seq $0,287192 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 253", based on the 5-celled von Neumann neighborhood.
-add $0,1
-seq $0,5836 ; Numbers whose base-3 representation contains no 2.
-seq $0,7089 ; Numbers in base 3.
+mov $0,$1

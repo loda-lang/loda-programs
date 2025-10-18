@@ -1,25 +1,24 @@
 ; A192374: Coefficient of x in the reduction of the polynomial p(n,x) defined at A162517 and below in Comments.
-; Submitted by Sphynx
+; Submitted by loader3229
 ; 0,2,4,28,84,406,1448,6200,23688,97034,380716,1533844,6079452,24339742,96844496,386805104,1541301648,6150529682,24521644756,97819530508,390080615652,1555871900710,6204937972088,24747735482792,98698893741336
-; Formula: a(n) = d(n-1), b(n) = 4*b(n-2)-b(n-1)+c(n-2), b(4) = 70, b(3) = -12, b(2) = 10, b(1) = -2, b(0) = 2, c(n) = 3*b(n-1)+3*b(n-2)+3*c(n-1)+3*c(n-2), c(5) = 1470, c(4) = 336, c(3) = 96, c(2) = 18, c(1) = 6, c(0) = 0, d(n) = b(n-1)+c(n-1), d(4) = 84, d(3) = 28, d(2) = 4, d(1) = 2, d(0) = 0
 
 #offset 1
 
 mov $2,2
+mov $3,4
+mov $4,28
 sub $0,1
 lpb $0
+  mul $1,-9
+  rol $1,4
+  mov $5,$1
+  mul $5,-6
   sub $0,1
-  add $1,$3
-  mul $1,3
-  sub $3,$2
-  add $4,$2
-  mov $6,$4
-  mul $2,3
-  add $4,$2
-  mov $5,$4
-  mov $4,$2
-  add $4,$1
-  mov $2,$3
-  mov $3,$5
+  add $4,$5
+  mov $5,$2
+  mul $5,10
+  add $4,$5
+  add $4,$3
+  add $4,$3
 lpe
-mov $0,$6
+mov $0,$1

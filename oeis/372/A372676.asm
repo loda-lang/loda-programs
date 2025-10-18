@@ -8,7 +8,5 @@
 mov $1,11
 mul $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $2,$0
-sub $0,1
 mov $0,$1
 div $0,10

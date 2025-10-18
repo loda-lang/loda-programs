@@ -1,21 +1,26 @@
 ; A329908: Number of oriented rational links with crossing number n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 2,2,5,6,15,24,51,90,187,352,715,1386,2795,5504,11051,21930,43947,87552,175275,349866,700075,1398784,2798251,5593770,11188907,22372352,44747435,89483946,178973355,357924864,715860651,1431677610,2863377067,5726666752,11453377195
 
 #offset 2
 
+mov $1,2
+mov $2,2
+mov $3,5
+mov $4,6
+mov $5,15
+mov $6,24
 sub $0,2
 lpb $0
-  sub $0,2
-  add $1,1
-  mul $1,2
-  mov $2,$1
-  sub $2,$0
+  mul $1,-4
+  rol $1,6
+  sub $6,$1
+  sub $6,$1
+  sub $6,$3
+  mov $7,$4
+  mul $7,3
+  sub $0,1
+  add $6,$7
+  add $6,$5
 lpe
-sub $1,$2
-add $1,1
-add $2,4
-bin $2,2
-mul $1,$2
-div $1,3
 mov $0,$1

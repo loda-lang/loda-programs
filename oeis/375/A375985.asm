@@ -1,23 +1,19 @@
 ; A375985: Number of subsets of {1,2,...,n} such that no two elements differ by 1, 3, 4, or 5.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,3,5,7,9,11,14,18,25,35,49,67,90,119,158,211,285,387,526,712,960,1290,1733,2331,3142,4241,5727,7729,10422,14043,18918,25490,34359,46329,62478,84250,113590,153123,206400,278219,375056,505635,681703,919076,1239066
 
-add $0,2
+mov $1,1
+mov $2,2
+mov $3,3
+mov $4,5
+mov $5,7
+mov $6,9
+mov $7,11
+mov $8,14
 lpb $0
+  rol $1,8
+  add $8,$2
+  add $8,$7
   sub $0,1
-  add $2,2
-  mov $7,$6
-  mov $6,$4
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  add $7,$4
-  mov $8,$5
-  sub $8,$9
-  mov $9,$7
-  add $5,$7
 lpe
-mov $0,$8
-div $0,2
-add $0,1
+mov $0,$1

@@ -1,7 +1,21 @@
 ; A266254: Binary representation of the n-th iteration of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by matali
+; Submitted by loader3229
 ; 1,100,11,1111100,11,11111111100,11,111111111111100,11,1111111111111111100,11,11111111111111111111100,11,111111111111111111111111100,11,1111111111111111111111111111100,11,11111111111111111111111111111111100,11,111111111111111111111111111111111111100,11,1111111111111111111111111111111111111111100,11,11111111111111111111111111111111111111111111100,11,111111111111111111111111111111111111111111111111100,11,1111111111111111111111111111111111111111111111111111100,11
-; Formula: a(n) = A007088(A266255(n))
 
-seq $0,266255 ; Decimal representation of the n-th iteration of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,100
+mov $3,11
+mov $4,1111100
+mov $5,11
+lpb $0
+  mul $1,0
+  rol $1,5
+  mov $6,$1
+  mul $6,-10000
+  add $5,$6
+  mov $6,$3
+  mul $6,10001
+  sub $0,1
+  add $5,$6
+lpe
+mov $0,$1

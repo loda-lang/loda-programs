@@ -1,8 +1,41 @@
 ; A314169: Duplicate of A299911.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 1,5,11,16,22,29,35,38,43,51,56,60,67,75,78,81,89,96,100,105,113,118,121,127,134,140,145,151,156,161,167,172,178,185,191,194,199,207,212,216,223,231,234,237,245,252,256,261,269,274
-; Formula: a(n) = A299911(n)
 
-mov $1,$0
-seq $1,299911 ; Coordination sequence of point of type 3.3.3.4.4 in 3-uniform tiling #3.54 in the Galebach listing.
+mov $1,1
+mov $2,5
+mov $3,11
+mov $4,16
+mov $5,22
+mov $6,29
+mov $7,35
+mov $8,38
+mov $9,43
+mov $10,51
+mov $11,56
+lpb $0
+  sub $0,1
+  mul $1,0
+  mov $12,$1
+  mov $1,$2
+  mul $2,-1
+  add $12,$2
+  add $12,$3
+  mov $2,$3
+  mov $3,$4
+  mul $4,-1
+  add $12,$4
+  add $12,$5
+  add $12,$9
+  mov $4,$5
+  mov $5,$6
+  rol $6,3
+  mov $8,$9
+  mov $9,$10
+  mul $10,-1
+  add $12,$10
+  add $12,$11
+  mov $10,$11
+  mov $11,$12
+lpe
 mov $0,$1

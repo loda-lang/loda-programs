@@ -1,5 +1,5 @@
 ; A370560: Periodic sequence S_{30} of length 28: used to compute the number that the day 30 of a month occurs on a day of the week for the Gregorian cycle of 400 years.
-; Submitted by fzs600
+; Submitted by Omega Intelligence Systems
 ; 3,2,1,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,2,1,1,1,2,2,1,2,1,1,3,2,1,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,2,1,1,1,2,2,1,2,1,1,3,2,1,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,2,1,1,1,2,2
 
 mov $2,2
@@ -23,8 +23,6 @@ mov $27,2
 lpb $0
   sub $0,1
   max $28,1
-  mov $29,$1
   rol $1,28
-  mov $28,$29
 lpe
 mov $0,$13

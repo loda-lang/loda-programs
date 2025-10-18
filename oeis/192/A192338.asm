@@ -1,25 +1,24 @@
 ; A192338: Constant term of the reduction of n-th polynomial at A157751 by x^2->x+2.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,2,6,18,54,166,514,1610,5078,16118,51394,164474,527798,1697254,5466498,17627370,56892246,183742358
-; Formula: a(n) = b(n-1)+d(n-1), b(n) = 2*b(n-1)+b(n-2), b(4) = 17, b(3) = 7, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = 2*b(n-1)+c(n-1), c(3) = 10, c(2) = 4, c(1) = 2, c(0) = 0, d(n) = 4*d(n-2)+2*d(n-1)+b(n-3)+c(n-3), d(4) = 37, d(3) = 11, d(2) = 3, d(1) = 1, d(0) = 0
 
 #offset 1
 
 mov $1,1
+mov $2,2
+mov $3,6
+mov $4,18
 sub $0,1
 lpb $0
+  mul $1,-4
+  rol $1,4
+  mov $5,$1
+  mul $5,-10
+  add $4,$5
+  add $4,$2
+  mov $5,$3
+  mul $5,4
   sub $0,1
-  mov $2,$1
-  add $1,$4
-  mul $3,2
-  sub $3,$4
-  mov $4,$2
-  add $4,$1
-  mul $5,2
-  add $5,$2
-  mov $2,$3
-  mov $3,$5
-  add $5,$2
+  add $4,$5
 lpe
-add $5,$1
-mov $0,$5
+mov $0,$1

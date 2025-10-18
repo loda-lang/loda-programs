@@ -1,33 +1,25 @@
 ; A218420: Hilltop maps: number of n X 2 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal, vertical or antidiagonal neighbor in a random 0..1 n X 2 array.
-; Submitted by Science United
+; Submitted by loader3229
 ; 3,13,49,191,737,2849,11011,42557,164481,635711,2456993,9496161,36702211,141852301,548252401,2118969471,8189716289,31652864193,122336815619,472825977597,1827449929601,7063007117695,27298186799297,105506194473793,407776426844163,1576036507800461,6091306192324657,23542608908492607,90991064431570209,351676139147157729,1359211562344801539,5253288084008265277,20303708751546420993,78472869272587588287,303293909857902252385,1172216545789369009825,4530561233049956061187,17510403824400011474701
 
 #offset 1
 
+mov $1,3
+mov $2,13
+mov $3,49
+mov $4,191
+mov $5,737
 sub $0,1
-mov $1,$0
-mul $1,2
-add $1,1
-mov $4,1
-mov $3,$1
-lpb $3
-  sub $3,1
-  add $6,1
-  mov $8,$2
-  mov $2,$7
-  add $2,$4
-  mov $7,$5
-  add $7,$2
-  mov $5,$4
-  mov $4,$6
-  add $4,$8
-  mov $6,$8
+lpb $0
+  rol $1,5
+  add $5,$1
+  add $5,$2
+  mov $6,$3
+  mul $6,3
+  add $5,$6
+  mov $6,$4
+  mul $6,3
+  sub $0,1
+  add $5,$6
 lpe
-mov $3,$7
-mul $3,2
-mov $1,$3
-add $1,2
-div $1,2
 mov $0,$1
-mul $0,2
-sub $0,1

@@ -1,15 +1,20 @@
 ; A332936: Number of blue nodes in n-th power graph W exponentiation of a cycle graph with 7 blue nodes and 1 green node.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 7,51,387,2943,22383,170235,1294731,9847143,74892951,569602179,4332138579,32948302095,250590001023,1905875101899,14495230812123,110244221191287,838468077093927,6377011953177555,48500691394138659,368874495293576607,2805493888166196879,21337327619448845211
-; Formula: a(n) = 6*a(n-1)+3*b(n-1), a(1) = 51, a(0) = 7, b(n) = 3*a(n-1)+2*b(n-1), b(1) = 27, b(0) = 3
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 8*c(n-2)+5*b(n-2), b(3) = 387, b(2) = 387, b(1) = 7, b(0) = 7, c(n) = 53*c(n-2)+32*b(n-2), c(3) = 2556, c(2) = 2556, c(1) = 44, c(0) = 44
 
 mov $1,7
-mov $2,3
+mov $2,44
 lpb $0
-  sub $0,1
-  add $2,$1
-  add $1,$2
-  add $2,$1
-  mul $1,3
+  sub $0,2
+  mov $3,$1
+  mul $3,32
+  mov $4,$2
+  mul $4,8
+  mul $2,53
+  add $2,$3
+  mul $1,5
+  add $1,$4
 lpe
-mov $0,$1
+mul $0,$2
+add $0,$1

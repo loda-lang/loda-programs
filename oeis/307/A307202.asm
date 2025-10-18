@@ -1,30 +1,22 @@
 ; A307202: Coordination sequence for trivalent node of type alpha' in the first Moore pentagonal tiling.
-; Submitted by vonboedefeldt
+; Submitted by loader3229
 ; 1,3,9,15,21,24,30,42,42,45,51,69,63,66,72,96,84,87,93,123,105,108,114,150,126,129,135,177,147,150,156,204,168,171,177,231,189,192,198,258,210,213,219,285,231,234,240,312,252,255,261,339,273,276,282,366,294,297,303,393,315,318,324,420,336,339,345,447,357,360,366,474,378,381,387,501,399,402,408,528
 
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
+mov $1,1
+mov $2,3
+mov $3,9
+mov $4,15
+mov $5,21
+mov $6,24
+mov $7,30
+mov $8,42
+mov $9,42
+lpb $0
+  mul $1,0
+  rol $1,9
+  sub $9,$1
+  add $9,$5
+  add $9,$5
   sub $0,1
-  mov $4,$0
-  mul $4,5
-  sub $4,1
-  mov $6,$4
-  add $4,6
-  div $4,4
-  sub $6,$4
-  mul $4,$6
-  add $4,53
-  div $4,5
-  mul $4,3
-  sub $4,29
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
 mov $0,$1

@@ -1,23 +1,24 @@
 ; A296805: Sum of the larger parts in the partitions of n into two distinct parts with the larger part even.
-; Submitted by [AF] Kalianthys
+; Submitted by loader3229
 ; 0,0,2,0,4,4,10,6,14,14,24,18,30,30,44,36,52,52,70,60,80,80,102,90,114,114,140,126,154,154,184,168,200,200,234,216,252,252,290,270,310,310,352,330,374,374,420,396,444,444,494,468,520,520,574,546,602,602,660,630,690,690,752,720,784,784,850,816,884,884,954,918,990,990,1064,1026,1102,1102,1180,1140
 
 #offset 1
 
-add $0,1
+mov $3,2
+mov $5,4
+mov $6,4
+mov $7,10
+mov $8,6
+mov $9,14
+sub $0,1
 lpb $0
-  mov $2,$0
-  add $2,$4
-  sub $2,2
-  mov $3,$2
-  sub $3,$1
-  sub $0,2
-  sub $1,1
-  div $2,2
-  sub $3,$2
-  trn $2,$0
-  mul $3,$2
-  trn $4,1
-  add $4,2
+  rol $1,9
+  sub $9,$1
+  sub $9,$4
+  sub $9,$4
+  add $9,$5
+  add $9,$5
+  add $9,$8
+  sub $0,1
 lpe
-mov $0,$3
+mov $0,$1

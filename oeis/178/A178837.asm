@@ -1,12 +1,12 @@
 ; A178837: Indices k such that the sum of the digits of Fibonacci(k) is a prime number.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 3,4,5,8,9,11,14,15,18,22,25,26,27,29,30,31,34,39,41,43,45,47,51,53,54,58,61,63,65,66,67,81,85,87,90,94,99,105,107,111,113,118,122,133,135,139,147,149,151,161,167,169,173,187,191,193,194,195,198,202,213,223
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,10
+mov $1,2
 pow $2,2
 lpb $2
   mov $3,$1

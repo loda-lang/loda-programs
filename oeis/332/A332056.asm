@@ -1,23 +1,21 @@
 ; A332056: a(1) = 1, then a(n+1) = a(n) - (-1)^a(n) Sum_{k=1..n} a(k): if a(n) is odd, add the partial sum, else subtract.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,-1,1,4,-3,1,6,-5,1,8,-7,1,10,-9,1,12,-11,1,14,-13,1,16,-15,1,18,-17,1,20,-19,1,22,-21,1,24,-23,1,26,-25,1,28,-27,1,30,-29,1,32,-31,1,34,-33,1,36,-35,1,38,-37,1,40,-39
-; Formula: a(n) = truncate(d(n-1)/2), b(n) = b(n-1)+e(n-1)-2, b(3) = 3, b(2) = -1, b(1) = -3, b(0) = -1, c(n) = c(n-1)*(b(n-1)+e(n-1))+c(n-2), c(3) = 8, c(2) = 2, c(1) = -2, c(0) = 4, d(n) = c(n-1), d(3) = 2, d(2) = -2, d(1) = 4, d(0) = 2, e(n) = -c(n-1)*(b(n-1)+e(n-1))+e(n-1), e(3) = -4, e(2) = 6, e(1) = 4, e(0) = 0
 
 #offset 1
 
-mov $1,-1
-mov $2,4
-mov $3,2
+mov $1,1
+mov $2,2
+mov $3,-1
+mov $4,1
+mov $5,4
 sub $0,1
 lpb $0
+  rol $1,5
+  add $5,$1
+  add $5,$2
+  sub $5,$3
+  sub $5,$4
   sub $0,1
-  mov $4,$3
-  add $1,$5
-  mov $3,$2
-  mul $2,$1
-  sub $5,$2
-  sub $1,2
-  add $2,$4
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

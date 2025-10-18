@@ -1,14 +1,40 @@
 ; A211568: Number of -2..2 arrays x(i) of n+1 elements i=1..n+1 with set{t,u,v in 0,1}((x[i+t]+x[j+u]+x[k+v])*(-1)^(t+u+v)) having two, three or four distinct values for every i,j,k<=n.
-; Submitted by KetamiNO [YouTube]
+; Submitted by loader3229
 ; 24,44,78,142,256,472,868,1626,3046,5790,11016,21196,40828,79318,154246,301890,591328,1163856,2292084,4530250,8957830,17760094,35222584,69994044,139121260,276928662,551322342,1098804034,2190169552,4369076320,8716262692,17399405418,34734234982,69370839678,138550775400,276813147628,553060894684,1105268247766,2208859273030,4415188306242,8825394309184,17643277123824,35271735926868,70521144135562,140998168663366,281929894195102,563728304944408,1127258691699996,2254125219646156,4507660374126870
-; Formula: a(n) = 2*A000045(n+3)+A211567(n)-6
 
 #offset 1
 
-mov $1,$0
-seq $1,211567 ; Number of -2..2 arrays x(i) of n+1 elements i=1..n+1 with set{t,u,v in 0,1}((x[i+t]+x[j+u]+x[k+v])*(-1)^(t+u+v)) having two or four distinct values for every i,j,k<=n.
-add $0,3
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $1,$0
-add $0,$1
-sub $0,6
+mov $1,24
+mov $2,44
+mov $3,78
+mov $4,142
+mov $5,256
+mov $6,472
+mov $7,868
+mov $8,1626
+sub $0,1
+lpb $0
+  mul $1,12
+  rol $1,8
+  mov $9,$1
+  mul $9,-6
+  add $8,$9
+  mov $9,$2
+  mul $9,-34
+  add $8,$9
+  mov $9,$3
+  mul $9,29
+  add $8,$9
+  mov $9,$4
+  mul $9,16
+  add $8,$9
+  mov $9,$5
+  mul $9,-21
+  add $8,$9
+  add $8,$6
+  mov $9,$7
+  mul $9,4
+  sub $0,1
+  add $8,$9
+lpe
+mov $0,$1

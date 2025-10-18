@@ -1,31 +1,28 @@
 ; A319325: a(n) is the number of row convex polyglasses (polyiamonds which need only touch at corners) with n cells.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 2,10,52,276,1470,7838,41798,222902,1188696,6339088,33805118,180276062,961376842,5126833922,27340398612,145800977348,777527983398,4146404063814,22111958704510,117918733974142,628837454333128,3353466668484240,17883379272566534,95368550166928198
-; Formula: a(n) = 2*truncate((c(n+1)-3)/3)+2, b(n) = -c(n-1)-d(n-1), b(4) = -14, b(3) = -3, b(2) = -1, b(1) = 0, b(0) = 0, c(n) = 6*c(n-1)+3*b(n-1)+3*d(n-1), c(4) = 78, c(3) = 15, c(2) = 3, c(1) = 0, c(0) = 0, d(n) = b(n-1)+f(n-1), d(4) = -4, d(3) = -1, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = -c(n-1)-d(n-1)+e(n-1), e(4) = -18, e(3) = -4, e(2) = -1, e(1) = 0, e(0) = 0, f(n) = min(d(n-1)+e(n-1),b(n-1)+f(n-1)), f(4) = -5, f(3) = -1, f(2) = 0, f(1) = 0, f(0) = 1
 
 #offset 1
 
-mov $7,1
-add $0,1
+mov $1,2
+mov $2,10
+mov $3,52
+mov $4,276
+mov $5,1470
+sub $0,1
 lpb $0
-  sub $0,1
+  mul $1,-3
+  rol $1,5
+  mov $6,$1
+  mul $6,9
+  add $5,$6
+  sub $5,$2
+  mov $6,$3
+  mul $6,-9
+  add $5,$6
   mov $6,$4
-  add $6,$5
-  mov $3,$2
-  add $4,$2
-  sub $5,$4
-  add $2,$4
-  add $2,$1
-  sub $3,$2
-  mov $4,$1
-  add $4,$7
-  min $6,$4
-  add $1,$3
-  mul $2,3
-  mov $7,$6
+  mul $6,7
+  sub $0,1
+  add $5,$6
 lpe
-mov $0,$2
-sub $0,3
-div $0,3
-mul $0,2
-add $0,2
+mov $0,$1

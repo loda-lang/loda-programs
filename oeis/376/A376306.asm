@@ -1,5 +1,5 @@
 ; A376306: Run-lengths of the sequence of first differences of squarefree numbers.
-; Submitted by Conan
+; Submitted by amazing
 ; 2,1,2,1,1,1,2,3,2,2,2,1,2,1,2,1,2,1,1,1,3,2,1,1,1,2,1,2,1,1,1,2,1,1,1,2,3,2,1,1,2,1,2,1,2,1,2,1,1,1,1,1,1,2,1,1,1,2,1,2,1,1,1,1,1,1,1,2,3,2,2,1,1,2,1,2,1,2,1,1
 
 #offset 1
@@ -17,6 +17,7 @@ lpb $5
   seq $4,376592 ; Points of nonzero curvature in the sequence of squarefree numbers (A005117).
   mov $2,$5
   mul $2,$4
+  bin $0,$5
   add $1,$2
 lpe
 min $3,1

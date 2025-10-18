@@ -1,19 +1,22 @@
 ; A377115: a(n) = coefficient of sqrt(3) in the expansion of (3 + sqrt(2) + sqrt(3))^n.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 0,1,6,36,216,1304,7920,48320,295680,1812672,11124864,68320000,419719680,2579051008,15849305088,97406521344,598661038080,3679444570112,22614556631040,138994100486144,854291341737984,5250689954316288,32272093691707392,198352703517884416
 
-mov $2,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,188572 ; a(n) = coefficient of sqrt(3) in the expansion of (1 + sqrt(2) + sqrt(3))^n sequence.
-  mul $1,$0
-  mul $3,2
-  add $3,$1
+mov $2,1
+mov $3,6
+mov $4,36
+lpb $0
+  mul $1,8
+  rol $1,4
+  mov $5,$1
+  mul $5,48
+  add $4,$5
+  mov $5,$2
+  mul $5,-44
+  add $4,$5
+  mov $5,$3
+  mul $5,12
+  sub $0,1
+  add $4,$5
 lpe
-mov $0,$3
+mov $0,$1

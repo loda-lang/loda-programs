@@ -1,25 +1,34 @@
 ; A268419: Number of n X 1 0..3 arrays with every repeated value in every row unequal to the previous repeated value, and in every column equal to the previous repeated value, and new values introduced in row-major sequential order.
-; Submitted by Omega Intelligence Systems
+; Submitted by loader3229
 ; 1,2,5,14,44,147,505,1750,6065,20950,72052,246715,841345,2858714,9682221,32700942,110173948,370393059,1242869721,4163561358,13927246329,46526402422,155249799428,517505902283,1723457914689,5734951039346,19069525483157,63367171279310,210441971403212,698505882885171,2317398014107897,7685015110366726,25475388905552513,84420018515938774,279661954532864404,926185412373651931,3066556782464565313,10150871532253601738,33594218696771535933,111158669575348128078,367745653281384501916,1216421906995577627523
 
 #offset 1
 
+mov $1,1
+mov $2,2
+mov $3,5
+mov $4,14
+mov $5,44
+mov $6,147
 sub $0,1
-mov $3,$0
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $0,1
-  add $0,$5
-  mov $1,$0
-  add $1,$3
-  add $1,1
-  div $1,2
-  bin $1,$0
-  add $1,$4
-  add $2,$1
-  mul $4,2
-  add $4,$1
+lpb $0
+  mul $1,-3
+  rol $1,6
+  mov $7,$1
+  mul $7,-8
+  add $6,$7
+  mov $7,$2
+  mul $7,12
+  add $6,$7
+  mov $7,$3
+  mul $7,12
+  add $6,$7
+  mov $7,$4
+  mul $7,-20
+  add $6,$7
+  mov $7,$5
+  mul $7,8
+  sub $0,1
+  add $6,$7
 lpe
-mov $0,$2
-add $0,1
+mov $0,$1

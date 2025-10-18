@@ -1,23 +1,22 @@
 ; A212586: Nonnegative walks of length n on the x-axis starting at the origin using steps {1,0,-1} and visiting no point more than twice.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,6,13,29,60,128,269,569,1198,2526,5321,11213,23624,49776,104873,220961,465546,980870,2066613,4354189,9173924,19328720,40724053,85802297,180778518,380885758,802495569,1690793437,3562365392,7505616544,15813728657,33318250753
-; Formula: a(n) = f(n)+1, b(n) = b(n-1)+d(n-1), b(4) = 12, b(3) = 5, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = 2*truncate(d(n-1)/2)+b(n-1)+e(n-1)+3, c(4) = 42, c(3) = 20, c(2) = 7, c(1) = 3, c(0) = 0, d(n) = -b(n-1)+c(n-1)+1, d(4) = 16, d(3) = 7, d(2) = 4, d(1) = 1, d(0) = 0, e(n) = b(n-1)+c(n-1)+d(n-1)+e(n-1)+4, e(4) = 64, e(3) = 28, e(2) = 12, e(1) = 4, e(0) = 0, f(n) = c(n-1)+d(n-1)+1, f(4) = 28, f(3) = 12, f(2) = 5, f(1) = 1, f(0) = 0
 
+mov $1,1
+mov $2,2
+mov $3,6
+mov $4,13
+mov $5,29
+mov $6,60
 lpb $0
+  mul $1,-1
+  rol $1,6
+  add $6,$2
+  sub $6,$3
+  sub $6,$3
+  add $6,$4
+  add $6,$5
+  add $6,$5
   sub $0,1
-  add $4,$1
-  add $4,3
-  mov $5,$3
-  add $5,$2
-  add $5,1
-  add $1,$3
-  div $3,2
-  mov $2,$3
-  mul $2,2
-  add $2,$4
-  mov $3,$5
-  sub $3,$1
-  add $4,$5
 lpe
-mov $0,$5
-add $0,1
+mov $0,$1

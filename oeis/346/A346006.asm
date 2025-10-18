@@ -1,5 +1,5 @@
 ; A346006: Successive numbers arising from the Moessner construction of the sequence of fourth powers on page 64 of Conway-Guy's "Book of Numbers".
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 0,1,4,6,4,16,32,24,8,81,108,54,12,256,256,96,16,625,500,150,20,1296,864,216,24,2401,1372,294,28,4096,2048,384,32,6561,2916,486,36,10000,4000,600,40,14641,5324,726,44,20736,6912,864,48,28561,8788,1014,52,38416,10976,1176,56,50625,13500,1350,60
 
 mov $2,1
@@ -24,33 +24,24 @@ mov $20,150
 lpb $0
   sub $0,1
   mov $21,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
+  rol $1,4
   mov $4,$5
   mul $5,-5
   add $21,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
+  rol $5,4
   mov $8,$9
   mul $9,10
   add $21,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
+  rol $9,4
   mov $12,$13
   mul $13,-10
   add $21,$13
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
+  rol $13,4
   mov $16,$17
   mul $17,5
   add $21,$17
   mov $17,$18
-  mov $18,$19
-  mov $19,$20
+  rol $18,3
   mov $20,$21
 lpe
 mov $0,$1

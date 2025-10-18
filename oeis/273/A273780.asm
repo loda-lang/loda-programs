@@ -1,13 +1,24 @@
 ; A273780: Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 1,4,21,48,81,121,169,225,289,361,441,529,625,729,841,961,1089,1225,1369,1521,1681,1849,2025,2209,2401,2601,2809,3025,3249,3481,3721,3969,4225,4489,4761,5041,5329,5625,5929,6241,6561,6889,7225,7569,7921,8281,8649,9025,9409,9801,10201,10609,11025,11449,11881,12321,12769,13225,13689,14161,14641,15129,15625,16129,16641,17161,17689,18225,18769,19321,19881,20449,21025,21609,22201,22801,23409,24025,24649,25281
-; Formula: a(n) = a(n-1)+A273782(max(n-1,0)), a(0) = 1
 
 mov $1,1
+mov $2,4
+mov $3,21
+mov $4,48
+mov $5,81
+mov $6,121
+mov $7,169
 lpb $0
-  trn $0,1
-  mov $2,$0
-  seq $2,273782 ; First differences of number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 929", based on the 5-celled von Neumann neighborhood.
-  add $1,$2
+  mul $1,0
+  rol $1,7
+  mov $8,$5
+  mul $8,-3
+  add $7,$4
+  add $7,$8
+  mov $8,$6
+  mul $8,3
+  sub $0,1
+  add $7,$8
 lpe
 mov $0,$1

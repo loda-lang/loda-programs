@@ -1,16 +1,20 @@
 ; A360605: The polygonal polynomials evaluated at x = -1/2 and normalized with (-2)^n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,0,1,0,-3,8,-31,72,-195,448,-1071,2416,-5475,12120,-26719,58232,-126243,271824,-582575,1242720,-2640899,5592360,-11806239,24855080,-52195843,109362528,-228667311,477218512,-994205475,2067947128,-4294967391,8908080216
 
-mov $2,$0
-lpb $2
-  sub $2,1
-  add $3,2
-  mul $3,2
-  mov $1,$3
-  mov $3,$0
-  sub $3,$1
-  sub $4,$3
+mov $2,1
+mov $4,1
+lpb $0
+  mul $1,4
+  rol $1,5
+  mov $6,$1
+  mul $6,-8
+  sub $0,1
+  add $5,$6
+  add $5,$2
+  mov $6,$3
+  mul $6,5
+  add $5,$6
+  sub $5,$4
 lpe
-mov $0,$4
-div $0,3
+mov $0,$1
