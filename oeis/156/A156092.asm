@@ -1,21 +1,18 @@
 ; A156092: Alternating sum of the squares of the first n Fibonacci numbers with index divisible by 4.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,-9,432,-20304,953865,-44811360,2105180064,-98898651657,4646131447824,-218269279396080,10254010000167945,-481720200728497344,22630595424239207232,-1063156264738514242569,49945713847285930193520,-2346385394557700204852880
 
-mov $1,-1
-pow $1,$0
-mov $3,1
+mov $2,-9
+mov $3,432
 lpb $0
+  mul $1,-1
+  rol $1,3
+  mov $4,$1
+  mul $4,-48
+  add $3,$4
+  mov $4,$2
+  mul $4,-48
   sub $0,1
-  add $2,$3
-  add $3,$2
+  add $3,$4
 lpe
-pow $3,2
-mov $0,$3
-mul $0,5
-div $0,3
-pow $0,2
-div $0,5
-mul $0,$1
-div $0,7
-mul $0,9
+mov $0,$1

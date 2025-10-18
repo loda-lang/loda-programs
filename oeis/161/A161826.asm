@@ -1,23 +1,25 @@
 ; A161826: Number of maximal vertex-independent sets in the hypergraph with nodes V = {1, 2, ..., n} and "edges" consisting of the triples (X,Y,Z) with X<Y<Z and X+Y=Z.
-; Submitted by http://asterion.petrsu.ru/
+; Submitted by loader3229
 ; 1,1,3,2,6,1,6,1,5,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1
 
 #offset 1
 
-sub $0,1
-mov $1,2
+mov $1,1
 mov $2,1
-mov $3,$0
-add $0,2
-lpb $3
-  mul $2,$3
-  mul $1,2
-  mul $1,$0
-  add $1,$2
-  sub $3,1
-  gcd $0,2
+mov $3,3
+mov $4,2
+mov $5,6
+mov $6,1
+mov $7,6
+mov $8,1
+mov $9,5
+mov $10,1
+mov $11,4
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,11
+  add $11,$9
+  sub $0,1
 lpe
-div $1,$2
 mov $0,$1
-div $0,16
-add $0,1

@@ -1,18 +1,29 @@
 ; A141134: Hankel transform of C(2n+4,n+4).
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 1,-8,8,1,1,-16,16,1,1,-24,24,1,1,-32,32,1,1,-40,40,1,1,-48,48,1,1,-56,56,1,1,-64,64,1,1,-72,72,1,1,-80,80,1,1,-88,88,1,1,-96,96,1,1,-104,104
 
-add $0,2
-mov $2,-2
-bin $2,$0
-div $2,2
-mov $1,2
-mul $1,$2
-mul $1,2
-mod $2,2
-mul $2,$1
-lpb $2
-  mul $2,0
-  gcd $1,1
+mov $1,1
+mov $2,-8
+mov $3,8
+mov $4,1
+mov $5,1
+mov $6,-16
+lpb $0
+  mul $1,-1
+  rol $1,6
+  sub $6,$1
+  sub $6,$1
+  mov $7,$2
+  mul $7,-3
+  sub $0,1
+  add $6,$7
+  mov $7,$3
+  mul $7,-4
+  add $6,$7
+  mov $7,$4
+  mul $7,-3
+  add $6,$7
+  sub $6,$5
+  sub $6,$5
 lpe
 mov $0,$1

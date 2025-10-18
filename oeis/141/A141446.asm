@@ -1,16 +1,26 @@
 ; A141446: A102055(n) mod 9.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,2,1,4,-4,7,-5,8,-5,4,-7,1,-5,5,-2,4,-1,4,-5,2,-8,4,-4,7,-5,8,-5,4,-7,1,-5,5,-2,4,-1,4,-5,2,-8,4,-4,7,-5,8,-5,4,-7,1,-5,5,-2,4,-1,4,-5,2,-8,4,-4,7,-5,8,-5,4,-7,1,-5,5,-2,4,-1,4,-5,2,-8,4,-4,7,-5,8
 
+mov $1,1
+mov $2,2
+mov $3,1
+mov $4,4
+mov $5,-4
+mov $6,7
+mov $7,-5
+mov $8,8
+mov $9,-5
+mov $10,4
+mov $11,-7
+mov $12,1
+mov $13,-5
 lpb $0
+  mul $1,0
+  rol $1,13
+  add $13,$3
+  add $13,$4
+  sub $13,$12
   sub $0,1
-  mov $2,$0
-  max $2,0
-  add $2,1
-  mul $2,2
-  seq $2,226158 ; a(n) = 2*n*(2^n - 1)*zeta(1-n) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
-  sub $1,$2
 lpe
-add $1,1
-mod $1,9
 mov $0,$1

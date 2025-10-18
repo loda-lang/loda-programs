@@ -1,20 +1,16 @@
 ; A156346: Palindromic period of length 12: repeat 1,2,-4,4,-2,-1,-1,-2,4,-4,2,1.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,-4,4,-2,-1,-1,-2,4,-4,2,1,1,2,-4,4,-2,-1,-1,-2,4,-4,2,1,1,2,-4,4,-2,-1,-1,-2,4,-4,2,1,1,2,-4,4,-2,-1,-1,-2,4,-4,2,1
-; Formula: a(n) = truncate((-10*truncate((-18*b(n)+81)/10)-18*b(n)+81)/2), b(n) = 2*b(n-1)-9*truncate((2*b(n-1)+c(n-1))/9)+c(n-1), b(1) = 2, b(0) = 1, c(n) = b(n-1)+c(n-1), c(1) = 1, c(0) = 0
 
-mov $2,1
+mov $1,1
+mov $2,2
+mov $3,-4
+mov $4,4
+mov $5,-2
+mov $6,-1
 lpb $0
+  mul $1,-1
+  rol $1,6
   sub $0,1
-  add $3,$2
-  add $2,$3
-  mod $2,9
 lpe
-mov $1,6
-sub $1,$2
-mul $1,2
-sub $1,3
 mov $0,$1
-mul $0,9
-mod $0,10
-div $0,2

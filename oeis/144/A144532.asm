@@ -1,20 +1,13 @@
 ; A144532: Continued fraction for sqrt(8/9).
-; Submitted by loader3229
+; Submitted by KetamiNO [YouTube]
 ; 0,1,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2
-; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 16*c(n-2)+15*b(n-2), b(3) = 16, b(2) = 16, b(1) = 0, b(0) = 0, c(n) = truncate((-105*b(n-2)-112*c(n-2))/8), c(3) = -14, c(2) = -14, c(1) = 1, c(0) = 1
+; Formula: a(n) = (max(-min(n,n%2)+b(n),0)+min(n,n%2))^truncate(max(-min(n,n%2)+b(n),0)^(max(-min(n,n%2)+b(n),0)+min(n,n%2))), b(n) = 2, b(1) = 0, b(0) = 0
 
-mov $2,1
 lpb $0
   sub $0,2
-  mov $3,$1
-  mul $3,-105
-  mov $4,$2
-  mul $4,16
-  mul $2,-112
-  add $2,$3
-  div $2,8
-  mul $1,15
-  add $1,$4
+  mov $1,2
 lpe
-mul $0,$2
+trn $1,$0
 add $0,$1
+pow $1,$0
+pow $0,$1

@@ -1,26 +1,30 @@
 ; A157606: a(1)=1. a(n) = the largest integer coprime to a(n-1) and less than n^2.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,3,8,15,23,35,48,61,80,99,119,143,168,193,224,255,287,323,360,397,440,483,527,575,624,673,728,783,839,899,960,1021,1088,1155,1223,1295,1368,1441,1520,1599,1679,1763,1848,1933,2024,2115,2207,2303,2400,2497,2600
 
 #offset 1
 
-mov $3,$0
-add $3,4
+mov $1,1
+mov $2,3
+mov $3,8
+mov $4,15
+mov $5,23
+mov $6,35
+mov $7,48
+mov $8,61
+mov $9,80
+mov $10,99
 sub $0,1
-mov $2,-3
-add $2,$3
-mov $4,$0
-mov $0,$3
 lpb $0
-  gcd $0,$2
+  mul $1,0
+  rol $1,10
+  add $10,$2
+  sub $10,$3
+  sub $10,$3
+  add $10,$4
+  sub $10,$8
+  add $10,$9
+  add $10,$9
   sub $0,1
-  trn $2,3
-  add $2,2
 lpe
-mov $1,$2
-sub $1,1
-mov $5,$4
-mul $5,$4
-add $1,$4
-add $1,$5
 mov $0,$1
