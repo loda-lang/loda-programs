@@ -1,0 +1,36 @@
+; A241256: Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or zero plus the sum of the elements above it or one plus the sum of the elements diagonally to its northwest or zero plus the sum of the elements antidiagonally to its northeast, modulo 4.
+; Submitted by loader3229
+; 2,5,4,10,12,22,41,59,120,171,306,494,784,1345,2112,3547,5782,9402,15643,25307,41868,68465,112078,184535,301346,495580,811726,1330658,2184497,3577622,5872217,9625155,15783147,25889388,42437724,69611469,114132047,187158815,306930859,503254222,825326007,1353309486,2219208801,3639171463,5967386119,9785730771,16046518857,26313537296,43149625232,70756905948,116029604381,190266313967,312003051083,511628920082,838976555668,1375773548629,2256014657338,3699458877035,6066443033062,9947860629332
+
+#offset 1
+
+mov $1,2
+mov $2,5
+mov $3,4
+mov $4,10
+mov $5,12
+mov $6,22
+mov $7,41
+mov $8,59
+mov $9,120
+mov $10,171
+mov $11,306
+mov $12,494
+sub $0,1
+lpb $0
+  mul $1,0
+  rol $1,12
+  add $12,$2
+  add $12,$4
+  add $12,$4
+  add $12,$5
+  sub $12,$6
+  sub $12,$7
+  sub $12,$8
+  add $12,$9
+  add $12,$9
+  add $12,$10
+  add $12,$10
+  sub $0,1
+lpe
+mov $0,$1

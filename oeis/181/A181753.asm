@@ -1,0 +1,76 @@
+; A181753: Universal sequence of period 56 which contains every 3-subset of {1,2,...,8} exactly once.
+; Submitted by loader3229
+; 1,3,5,6,7,2,5,6,8,2,3,4,7,2,3,5,7,8,1,4,7,8,2,4,5,6,1,4,5,7,1,2,3,6,1,2,4,6,7,8,3,6,7,1,3,4,5,8,3,4,6,8,1,2,5,8,1,3,5,6,7,2,5,6,8,2,3,4,7,2,3,5,7,8,1,4,7,8,2,4
+
+#offset 1
+
+mov $1,1
+mov $2,3
+mov $3,5
+mov $4,6
+mov $5,7
+mov $6,2
+mov $7,5
+mov $8,6
+mov $9,8
+mov $10,2
+mov $11,3
+mov $12,4
+mov $13,7
+mov $14,2
+mov $15,3
+mov $16,5
+mov $17,7
+mov $18,8
+mov $19,1
+mov $20,4
+mov $21,7
+mov $22,8
+mov $23,2
+mov $24,4
+mov $25,5
+mov $26,6
+mov $27,1
+mov $28,4
+mov $29,5
+mov $30,7
+mov $31,1
+mov $32,2
+mov $33,3
+mov $34,6
+mov $35,1
+mov $36,2
+mov $37,4
+mov $38,6
+mov $39,7
+mov $40,8
+mov $41,3
+mov $42,6
+mov $43,7
+mov $44,1
+mov $45,3
+mov $46,4
+mov $47,5
+mov $48,8
+mov $49,3
+mov $50,4
+sub $0,1
+lpb $0
+  rol $1,50
+  sub $50,$1
+  add $50,$7
+  sub $50,$8
+  add $50,$14
+  sub $50,$15
+  add $50,$21
+  sub $50,$22
+  add $50,$28
+  sub $50,$29
+  add $50,$35
+  sub $50,$36
+  add $50,$42
+  sub $50,$43
+  add $50,$49
+  sub $0,1
+lpe
+mov $0,$1
