@@ -1,30 +1,23 @@
 ; A123251: Continued fraction for sqrt(2)*tan(1/sqrt(2)).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,4,1,3,1,12,1,7,1,20,1,11,1,28,1,15,1,36,1,19,1,44,1,23,1,52,1,27,1,60,1,31,1,68,1,35,1,76,1,39,1,84,1,43,1,92,1,47,1,100,1,51,1,108,1,55,1,116,1,59,1,124,1,63,1,132,1,67,1,140,1,71,1,148,1,75,1,156,1,79
 
 #offset 1
 
+mov $1,1
+mov $2,4
+mov $3,1
+mov $4,3
+mov $5,1
+mov $6,12
+mov $7,1
+mov $8,7
 sub $0,1
-mov $1,$0
 lpb $0
-  mov $6,2
-  ban $6,$1
-  neq $6,0
-  mov $5,$0
-  mul $5,2
-  div $0,2
-  mul $0,2
-  mov $3,$5
-  add $3,1
-  mul $5,$6
-  mov $2,3
-  mul $2,$6
-  sub $3,$2
-  sub $3,$5
-  add $3,$6
-  add $4,$5
+  mul $1,-1
+  rol $1,8
+  add $8,$4
+  add $8,$4
+  sub $0,1
 lpe
-mov $0,$4
-div $0,2
-add $0,$3
-add $0,1
+mov $0,$1

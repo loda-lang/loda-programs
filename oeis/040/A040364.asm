@@ -1,12 +1,20 @@
 ; A040364: Continued fraction for sqrt(384).
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 19,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1,38,1,1,2,9,2,1,1
-; Formula: a(n) = 5*floor(A010163(n)/4)+A010163(n)
 
-mov $1,$0
-seq $1,10163 ; Continued fraction for sqrt(92).
-mov $2,$1
-div $1,4
-mul $1,5
-add $1,$2
+mov $1,19
+mov $2,1
+mov $3,1
+mov $4,2
+mov $5,9
+mov $6,2
+mov $7,1
+mov $8,1
+mov $9,38
+lpb $0
+  mul $1,0
+  rol $1,9
+  add $9,$1
+  sub $0,1
+lpe
 mov $0,$1

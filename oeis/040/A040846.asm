@@ -1,29 +1,20 @@
 ; A040846: Continued fraction for sqrt(876).
-; Submitted by Science United
+; Submitted by loader3229
 ; 29,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1
 
-mov $3,10
-mov $5,$0
-mod $5,8
-mov $6,8
-sub $6,$5
-min $5,$6
-mod $5,4
-mov $1,$0
-gcd $1,8
-mov $4,$0
-lpb $4
-  mul $4,$5
-  add $1,6
-  mov $3,7
+mov $1,29
+mov $2,1
+mov $3,1
+mov $4,2
+mov $5,14
+mov $6,2
+mov $7,1
+mov $8,1
+mov $9,58
+lpb $0
+  mul $1,0
+  rol $1,9
+  add $9,$1
+  sub $0,1
 lpe
-mul $1,$3
-trn $1,63
-add $1,1
-add $1,$5
-div $1,2
-mov $2,$1
-div $1,4
-mul $1,10
-add $1,$2
 mov $0,$1

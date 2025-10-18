@@ -1,22 +1,23 @@
 ; A108486: Sum binomial(2n-2k,2k)3^k*2^(n-k), k=0..floor(n/2).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 1,2,10,80,412,2456,14680,85376,503056,2959136,17381536,102199040,600757696,3531251072,20758107520,122021457920,717273440512,4216334967296,24784750512640,145691471876096,856414086962176
 
-add $0,1
+mov $1,1
+mov $2,2
+mov $3,10
+mov $4,80
 lpb $0
+  mul $1,-36
+  rol $1,4
+  mov $5,$1
+  mul $5,24
+  add $4,$5
+  mov $5,$2
+  mul $5,8
+  add $4,$5
+  mov $5,$3
+  mul $5,4
   sub $0,1
-  mul $0,2
-  mov $2,$1
-  bin $2,$0
-  mul $4,2
-  add $4,4
-  div $0,2
-  add $1,2
-  mov $3,$2
-  mul $3,$4
-  sub $4,2
-  mul $5,3
-  add $5,$3
+  add $4,$5
 lpe
-mov $0,$5
-div $0,4
+mov $0,$1

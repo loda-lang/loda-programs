@@ -1,12 +1,26 @@
 ; A040245: Continued fraction for sqrt(262).
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 16,5,2,1,2,1,10,16,10,1,2,1,2,5,32,5,2,1,2,1,10,16,10,1,2,1,2,5,32,5,2,1,2,1,10,16,10,1,2,1,2,5,32,5,2,1,2,1,10,16,10,1,2,1,2,5,32,5,2,1,2,1,10,16,10,1,2,1,2,5,32,5,2,1,2,1,10,16,10,1
-; Formula: a(n) = truncate((4*A010151(3*n)*gcd(n,2))/4)
 
-mov $1,$0
-gcd $0,2
-mul $0,4
-mul $1,3
-seq $1,10151 ; Continued fraction for sqrt(73).
-mul $0,$1
-div $0,4
+mov $1,16
+mov $2,5
+mov $3,2
+mov $4,1
+mov $5,2
+mov $6,1
+mov $7,10
+mov $8,16
+mov $9,10
+mov $10,1
+mov $11,2
+mov $12,1
+mov $13,2
+mov $14,5
+mov $15,32
+lpb $0
+  mul $1,0
+  rol $1,15
+  add $15,$1
+  sub $0,1
+lpe
+mov $0,$1

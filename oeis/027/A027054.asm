@@ -11,9 +11,8 @@ mov $9,12
 sub $0,3
 lpb $0
   rol $1,9
-  div $4,$7
   sub $0,1
-  add $9,4
+  mov $9,4
   sub $9,$5
   add $9,$8
   add $9,$8

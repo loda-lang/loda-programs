@@ -1,29 +1,32 @@
 ; A132286: Odd palindromes with an even number of digits divided by 11.
-; Submitted by Gunnar Hjern
+; Submitted by loader3229
 ; 1,3,5,7,9,91,101,111,121,131,141,151,161,171,181,273,283,293,303,313,323,333,343,353,363,455,465,475,485,495,505,515,525,535,545,637,647,657,667,677,687,697,707,717,727,819,829,839,849,859,869,879,889,899
 
 #offset 1
 
-mov $2,$0
+mov $1,1
+mov $2,3
+mov $3,5
+mov $4,7
+mov $5,9
+mov $6,91
+mov $7,101
+mov $8,111
+mov $9,121
+mov $10,131
+mov $11,141
+mov $12,151
+mov $13,161
+mov $14,171
+mov $15,181
+mov $16,273
 sub $0,1
-add $2,5
-pow $2,3
-lpb $2
-  sub $2,32
-  mov $3,$1
-  add $3,1
-  seq $3,66492 ; a(n) = A056524(n)/11.
-  mov $5,$3
-  mul $3,338
-  add $3,2
-  gcd $3,4
-  add $3,1
-  equ $3,5
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
+lpb $0
+  mul $1,0
+  rol $1,16
+  sub $16,$5
+  add $16,$6
+  add $16,$15
+  sub $0,1
 lpe
-mov $0,$5
+mov $0,$1

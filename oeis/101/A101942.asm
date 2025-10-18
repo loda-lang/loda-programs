@@ -1,36 +1,26 @@
 ; A101942: Write n in base 4 as n = b_0 + b_1*4 + b_2*4^2 + b_3*4^3 + ...; then a(n) = Product_{i >= 0} prime(i+1)^b_i.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,4,8,3,6,12,24,9,18,36,72,27,54,108,216,5,10,20,40,15,30,60,120,45,90,180,360,135,270,540,1080,25,50,100,200,75,150,300,600,225,450,900,1800,675,1350,2700,5400,125,250,500,1000,375,750,1500,3000,1125
 
 mov $1,1
-mov $2,1
-mov $3,1
-mov $9,1
-mov $8,$0
-lpb $8
-  mov $5,$2
-  lpb $5
-    add $2,1
-    mov $6,$2
-    gcd $6,$3
-    neq $6,1
-    sub $5,$6
-  lpe
-  add $2,1
-  mul $4,$2
-  add $4,4
-  add $4,$6
-  mov $5,$0
-  mod $5,$4
-  sub $0,$5
-  div $5,$3
-  mov $7,$2
-  pow $7,$5
-  mul $1,$7
-  mov $3,$4
-  mov $7,$0
-  equ $7,0
-  sub $8,$9
-  sub $9,$7
+mov $2,2
+mov $3,4
+mov $4,8
+mov $5,3
+mov $6,6
+mov $7,12
+mov $8,24
+mov $9,9
+mov $10,18
+mov $11,36
+mov $12,72
+mov $13,27
+mov $14,54
+mov $15,108
+mov $16,216
+lpb $0
+  mul $1,5
+  rol $1,16
+  sub $0,1
 lpe
 mov $0,$1

@@ -1,23 +1,32 @@
 ; A122089: a(1)=a(2)=1. a(n) = smallest integer which is greater than a(n-1) and is coprime to (a(n-1)+a(n-2)).
-; Submitted by Petros Paraschos
+; Submitted by loader3229
 ; 1,1,3,5,7,11,13,17,19,23,25,29,31,37,39,41,43,47,49,53,55,59,61,67,69,71,73,77,79,83,85,89,91,97,99,101,103,107,109,113,115,119,121,127,129,131,133,137,139,143,145,149,151,157,159,161,163,167,169,173,175,179
 
 #offset 1
 
+mov $1,1
+mov $2,1
+mov $3,3
+mov $4,5
+mov $5,7
+mov $6,11
+mov $7,13
+mov $8,17
+mov $9,19
+mov $10,23
+mov $11,25
+mov $12,29
+mov $13,31
+mov $14,37
+mov $15,39
+mov $16,41
+sub $0,1
 lpb $0
-  mov $1,$2
-  add $1,$5
-  equ $5,0
-  add $5,$2
-  mov $3,$2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    neq $4,1
-    sub $3,$4
-  lpe
+  mul $1,0
+  rol $1,16
+  sub $16,$5
+  add $16,$6
+  add $16,$15
   sub $0,1
-  add $2,1
 lpe
-mov $0,$5
+mov $0,$1

@@ -15,37 +15,17 @@ mov $13,-3
 mov $14,-8
 mov $15,-10
 lpb $0
+  rol $1,15
+  sub $15,$1
+  sub $15,$2
+  add $15,$5
+  add $15,$6
+  add $15,$7
+  sub $15,$8
+  sub $15,$9
+  sub $15,$10
+  add $15,$13
+  add $15,$14
   sub $0,1
-  mov $16,$1
-  mov $1,$2
-  mul $2,-1
-  add $16,$2
-  mov $2,$3
-  mul $3,-1
-  add $16,$3
-  mov $3,$4
-  mov $4,$5
-  add $16,$6
-  add $16,$7
-  add $16,$8
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mul $9,-1
-  add $16,$9
-  mov $9,$10
-  mul $10,-1
-  add $16,$10
-  mov $10,$11
-  mul $11,-1
-  add $16,$11
-  mov $11,$12
-  mov $12,$13
-  add $16,$14
-  add $16,$15
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
 lpe
 mov $0,$1

@@ -1,12 +1,41 @@
 ; A110670: Sequence is {a(5,n)}, where a(m,n) is defined at sequence A110665.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 0,1,5,12,16,5,-33,-103,-203,-333,-505,-743,-1071,-1500,-2028,-2655,-3399,-4296,-5382,-6674,-8170,-9870,-11798,-14002,-16530,-19405,-22625,-26190,-30130,-34505,-39375,-44769,-50685,-57123,-64119,-71745,-80073,-89138,-98938,-109473,-120785,-132958
-; Formula: a(n) = a(n-1)+A110669(n), a(0) = 0
 
+mov $2,1
+mov $3,5
+mov $4,12
+mov $5,16
+mov $6,5
+mov $7,-33
+mov $8,-103
+mov $9,-203
 lpb $0
-  mov $2,$0
-  seq $2,110669 ; Sequence is {a(4,n)}, where a(m,n) is defined at sequence A110665.
+  rol $1,9
+  mov $10,$1
+  mul $10,-7
+  add $9,$10
+  mov $10,$2
+  mul $10,23
+  add $9,$10
+  mov $10,$3
+  mul $10,-47
+  add $9,$10
+  mov $10,$4
+  mul $10,66
+  add $9,$10
+  mov $10,$5
+  mul $10,-66
+  add $9,$10
+  mov $10,$6
+  mul $10,47
+  add $9,$10
+  mov $10,$7
+  mul $10,-23
+  add $9,$10
+  mov $10,$8
+  mul $10,7
   sub $0,1
-  add $1,$2
+  add $9,$10
 lpe
 mov $0,$1

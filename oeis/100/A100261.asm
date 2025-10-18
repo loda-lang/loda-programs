@@ -1,27 +1,27 @@
 ; A100261: Continued fraction expansion of cot(1-Pi/4).
-; Submitted by Science United
+; Submitted by loader3229
 ; 4,1,1,2,2,1,16,1,4,2,5,1,28,1,7,2,8,1,40,1,10,2,11,1,52,1,13,2,14,1,64,1,16,2,17,1,76,1,19,2,20,1,88,1,22,2,23,1,100,1,25,2,26,1,112,1,28,2,29,1,124,1,31,2,32,1,136,1,34,2,35,1,148,1,37,2,38,1,160,1
 
 #offset 1
 
+mov $1,4
+mov $2,1
+mov $3,1
+mov $4,2
+mov $5,2
+mov $6,1
+mov $7,16
+mov $8,1
+mov $9,4
+mov $10,2
+mov $11,5
+mov $12,1
 sub $0,1
-mov $1,$0
-mov $4,$0
-mov $5,3
-gcd $0,6
-add $0,1
 lpb $0
+  mul $1,-1
+  rol $1,12
+  add $12,$6
+  add $12,$6
   sub $0,1
-  add $1,1
-  mov $2,$4
-  add $2,1
-  bin $2,$0
-  mul $2,$5
-  mov $3,$2
-  div $3,$1
-  mul $5,2
-  sub $0,1
-  add $4,1
 lpe
-mov $0,$3
-div $0,3
+mov $0,$1

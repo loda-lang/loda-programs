@@ -1,27 +1,14 @@
 ; A016003: a(n) = (tau(n^8)+7)/8.
-; Submitted by Checco
+; Submitted by Science United
 ; 1,2,2,3,2,11,2,4,3,11,2,20,2,11,11,5,2,20,2,20,11,11,2,29,3,11,4,20,2,92,2,6,11,11,11,37,2,11,11,29,2,92,2,20,20,11,2,38,3,20,11,20,2,29,11,29,11,11,2,173,2,11,20,7,11,92,2,20,11,92,2,54,2,11,20,20,11,92,2,38
+; Formula: a(n) = truncate((2*A146564((-n)^4))/24)+1
 
 #offset 1
 
-mov $1,1
-lpb $0
-  mov $2,2
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    add $5,8
-  lpe
-  mul $1,$5
-lpe
-mov $0,$1
-div $0,8
+mul $0,-1
+pow $0,4
+seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+add $1,$0
+add $0,$1
+div $0,24
 add $0,1

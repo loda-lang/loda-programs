@@ -1,19 +1,22 @@
 ; A086349: On a 3 X 3 board, the number of n-move paths for a chess king.
-; Submitted by GolfSierra
+; Submitted by loader3229
 ; 1,9,40,200,952,4624,22272,107648,519552,2509056,12113920,58492928,282425344,1363677184,6584401920,31792332800,153506906112,741197021184,3578815578112,17280050659328,83435464425472
 
-add $0,3
-mov $1,-2
-pow $1,$0
-mov $2,-2
-mov $3,1
+mov $1,1
+mov $2,9
+mov $3,40
+mov $4,200
 lpb $0
+  mul $1,0
+  rol $1,4
+  mov $5,$1
+  mul $5,8
   sub $0,1
-  mul $3,4
-  mov $4,$2
-  mov $2,$3
-  add $3,$4
+  add $4,$5
+  mov $5,$2
+  mul $5,12
+  add $4,$5
+  add $4,$3
+  add $4,$3
 lpe
-mov $0,$3
-add $0,$1
-div $0,32
+mov $0,$1

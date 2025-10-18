@@ -1,37 +1,33 @@
 ; A085583: Number of (3412,1234)-avoiding involutions in S_n.
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 1,2,4,8,16,29,51,83,131,196,286,402,554,743,981,1269,1621,2038,2536,3116,3796,4577,5479,6503,7671,8984,10466,12118,13966,16011,18281,20777,23529,26538,29836,33424,37336,41573,46171,51131,56491,62252,68454,75098
 
 #offset 1
 
+mov $1,1
+mov $2,2
+mov $3,4
+mov $4,8
+mov $5,16
+mov $6,29
+mov $7,51
 sub $0,1
-mov $4,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $6,0
-  mov $0,$4
-  sub $0,$2
-  mov $7,$0
-  mov $5,$0
-  add $5,1
-  lpb $5
-    sub $5,1
-    mov $0,$7
-    sub $0,$5
-    mov $1,$0
-    equ $1,0
-    add $0,$1
-    add $0,$1
-    sub $0,2
-    mov $1,$0
-    add $0,1
-    div $1,2
-    pow $1,2
-    add $1,$0
-    add $6,$1
-  lpe
-  add $3,$6
+lpb $0
+  rol $1,7
+  mov $8,$1
+  mul $8,-3
+  add $7,$8
+  add $7,$2
+  mov $8,$3
+  mul $8,5
+  add $7,$8
+  mov $8,$4
+  mul $8,-5
+  add $7,$8
+  sub $7,$5
+  mov $8,$6
+  mul $8,3
+  sub $0,1
+  add $7,$8
 lpe
-mov $0,$3
+mov $0,$1

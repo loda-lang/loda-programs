@@ -1,25 +1,27 @@
 ; A094287: Number of (s(0), s(1), ..., s(n)) such that 0 < s(i) < 7 and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, s(0) = 1, s(n) = 1.
-; Submitted by matszpk
+; Submitted by loader3229
 ; 1,1,2,4,9,21,51,127,323,835,2188,5798,15510,41822,113531,309937,850118,2340918,6466953,17913087,49726649,138287113,385126811,1073832695,2996974774,8370739326,23394528640,65415732100,182989086965,512046072481,1433197869570
 
-add $0,1
-mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  div $1,2
-  mul $1,2
-  sub $1,1
-  trn $1,1
-  mov $0,$3
-  sub $0,$1
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,4
+mov $5,9
+mov $6,21
+lpb $0
+  mul $1,-1
+  rol $1,6
+  sub $6,$1
+  sub $6,$1
+  mov $7,$2
+  mul $7,9
+  add $6,$7
+  mov $7,$4
+  mul $7,-10
+  add $6,$7
+  mov $7,$5
+  mul $7,6
   sub $0,1
-  mov $2,$0
-  add $2,$1
-  bin $2,$1
-  mov $0,$1
-  seq $0,96976 ; Number of walks of length n on P_3 plus a loop at the end.
-  mul $2,$0
-  add $4,$2
+  add $6,$7
 lpe
-mov $0,$4
+mov $0,$1

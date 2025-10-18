@@ -1,15 +1,22 @@
 ; A087330: Sum of all digits of all integers less than or equal to 555...55 (with n 5's) in base 10.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,15,370,6150,86430,1114210,13641990,161419770,1864197550,21141975330,236419753110,2614197530890,28641975308670,311419753086450,3364197530864230,36141975308642010,386419753086419790
 
-mov $2,$0
+mov $2,15
+mov $3,370
+mov $4,6150
 lpb $0
+  mul $1,-100
+  rol $1,4
+  mov $5,$1
+  mul $5,220
+  add $4,$5
+  mov $5,$2
+  mul $5,-141
+  add $4,$5
+  mov $5,$3
+  mul $5,22
   sub $0,1
-  mul $2,10
-  sub $2,$1
-  add $1,4
-  sub $2,$1
+  add $4,$5
 lpe
-mov $0,$2
-div $0,2
-mul $0,5
+mov $0,$1

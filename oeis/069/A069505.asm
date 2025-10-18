@@ -1,27 +1,22 @@
 ; A069505: a(1) = 1; a(n) = smallest palindromic number of the form k*a(n-1) + 1 with k > 1.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 1,3,7,22,111,1111,11111,111111,1111111,11111111,111111111,1111111111,11111111111,111111111111,1111111111111,11111111111111,111111111111111,1111111111111111,11111111111111111,111111111111111111
-; Formula: a(n) = truncate(b(n)/2)+1, b(n) = truncate((20*b(n-1)+40)/2), b(5) = 2220, b(4) = 220, b(3) = 42, b(2) = 12, b(1) = 4, b(0) = 0
 
 mov $1,1
-mov $2,1
-mov $3,1
-mov $4,1
+mov $2,3
+mov $3,7
+mov $4,22
+mov $5,111
+mov $6,1111
 lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$4
+  mul $7,-10
+  add $6,$7
+  mov $7,$5
+  mul $7,11
   sub $0,1
-  add $6,2
-  mul $6,$4
-  mov $5,$2
-  mul $5,$6
-  mul $5,$3
-  add $6,$5
-  div $6,$2
-  mov $4,$3
-  mul $4,$1
-  mov $3,$2
-  mov $2,$1
-  mov $1,2
+  add $6,$7
 lpe
-mov $0,$6
-div $0,2
-add $0,1
+mov $0,$1

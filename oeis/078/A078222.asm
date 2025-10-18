@@ -1,21 +1,21 @@
 ; A078222: a(1) = 2, a(n+1) > a(n) is the smallest multiple of a(n) using only even digits.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,4,8,24,48,240,480,2400,4800,24000,48000,240000,480000,2400000,4800000,24000000,48000000,240000000,480000000,2400000000,4800000000,24000000000,48000000000,240000000000,480000000000,2400000000000
-; Formula: a(n) = 2*c(n-1), b(n) = gcd(b(n-1)+1,d(n-1))+2, b(2) = 3, b(1) = 3, b(0) = 0, c(n) = gcd(b(n-1)+1,d(n-1))*c(n-1)+c(n-1), c(2) = 4, c(1) = 2, c(0) = 1, d(n) = c(n-1), d(2) = 2, d(1) = 1, d(0) = 0
 
 #offset 1
 
-mov $2,1
+mov $1,2
+mov $2,4
+mov $3,8
+mov $4,24
+mov $5,48
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,5
+  mov $6,$3
+  mul $6,10
   sub $0,1
-  add $1,1
-  gcd $1,$4
-  mov $3,$2
-  mul $2,$1
-  add $2,$3
-  add $1,2
-  mov $4,$3
+  add $5,$6
 lpe
-mov $0,$2
-mul $0,2
+mov $0,$1

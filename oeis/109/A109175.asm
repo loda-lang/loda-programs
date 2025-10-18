@@ -1,26 +1,25 @@
 ; A109175: Minimum number of moves to solve the first Panex puzzle of order n of transferring a side tower to the center column.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,3,9,24,58,143,345,836,2018,4875,11769,28416,68602,165623,399849,965324,2330498,5626323,13583145,32792616,79168378,191129375,461427129,1113983636,2689394402,6492772443,15674939289,37842651024,91360241338
-; Formula: a(n) = d(n-1)+1, b(n) = 2*b(n-1)+c(n-1)+c(n-2)+5, b(5) = 265, b(4) = 108, b(3) = 43, b(2) = 16, b(1) = 5, b(0) = 0, c(n) = -c(n-1)+b(n-1)+1, c(4) = 32, c(3) = 12, c(2) = 5, c(1) = 1, c(0) = 0, d(n) = b(n-1)+c(n-1)+2, d(4) = 57, d(3) = 23, d(2) = 8, d(1) = 2, d(0) = 0
 
 #offset 1
 
+mov $1,1
+mov $2,3
+mov $3,9
+mov $4,24
+mov $5,58
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,5
+  sub $5,$1
+  sub $5,$2
+  sub $5,$2
+  add $5,$3
+  add $5,$3
+  add $5,$4
+  add $5,$4
   sub $0,1
-  add $2,1
-  add $4,$1
-  add $4,$2
-  add $4,3
-  mov $1,$3
-  add $3,1
-  mov $5,$3
-  add $5,$2
-  add $1,$3
-  mov $2,$3
-  add $2,$4
-  mov $3,$5
-  sub $3,$1
 lpe
-mov $0,$5
-add $0,1
+mov $0,$1

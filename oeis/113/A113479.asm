@@ -1,21 +1,20 @@
 ; A113479: Starting with the fraction 4/1 as the first term, a(n) is the numerator of the reduced fraction of the n-th term according to the rule: if n is even, multiply the previous term by n/(n+1); otherwise multiply the previous term by (n+1)/n.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 4,8,32,128,256,512,4096,32768,65536,131072,524288,2097152,4194304,8388608,134217728,2147483648,4294967296,8589934592,34359738368,137438953472,274877906944,549755813888,4398046511104,35184372088832,70368744177664,140737488355328,562949953421312,2251799813685248,4503599627370496,9007199254740992,288230376151711744,9223372036854775808,18446744073709551616,36893488147419103232,147573952589676412928,590295810358705651712,1180591620717411303424,2361183241434822606848,18889465931478580854784
-; Formula: a(n) = 4*c(n-1), b(n) = (d(n-1)==0)+b(n-1), b(2) = 2, b(1) = 2, b(0) = 1, c(n) = 2*gcd(c(n-1),b(n-1))*c(n-1), c(2) = 8, c(1) = 2, c(0) = 1, d(n) = d(n-1)==0, d(2) = 0, d(1) = 1, d(0) = 0
+; Formula: a(n) = 2*floor(truncate(4^(-sumdigits(n+1,2)+n+1))/gcd(truncate(4^(-sumdigits(n+1,2)+n+1)),n+1))
 
 #offset 1
 
-mov $2,1
-mov $3,1
-sub $0,1
-lpb $0
-  sub $0,1
-  equ $4,0
-  mov $1,$3
-  gcd $1,$2
-  add $2,$4
-  mul $3,2
-  mul $3,$1
-lpe
-mov $0,$3
-mul $0,4
+add $0,1
+mov $3,$0
+dgs $3,2
+mov $1,$0
+sub $1,$3
+mov $3,4
+pow $3,$1
+mov $1,$3
+gcd $1,$0
+mov $2,$3
+div $2,$1
+mov $0,$2
+mul $0,2

@@ -1,26 +1,25 @@
 ; A117474: The values of 'a' in a^2 + b^2 = c^2 where b - a = 7 and gcd(a,b,c)=1.
-; Submitted by Stephen Uitti
+; Submitted by loader3229
 ; 5,8,48,65,297,396,1748,2325,10205,13568,59496,79097,346785,461028,2021228,2687085,11780597,15661496,68662368,91281905,400193625,532029948,2332499396,3100897797,13594802765,18073356848
 
 #offset 1
 
+mov $1,5
+mov $2,8
+mov $3,48
+mov $4,65
+mov $5,297
 sub $0,1
-mov $1,$0
-mod $1,2
-mul $1,2
-sub $1,1
-mov $2,10
-div $0,2
-mul $0,2
-add $0,2
 lpb $0
+  rol $1,5
+  mov $6,$2
+  mul $6,-6
   sub $0,1
-  add $3,$2
-  mov $2,$1
-  mul $2,2
-  add $1,$3
+  sub $5,$1
+  add $5,$6
+  mov $6,$3
+  mul $6,6
+  add $5,$6
+  add $5,$4
 lpe
 mov $0,$1
-sub $0,17
-div $0,2
-add $0,5

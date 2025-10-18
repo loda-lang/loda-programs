@@ -8,9 +8,8 @@ mov $3,2
 lpb $0
   rol $1,3
   sub $3,$1
+  sub $3,$2
   mul $3,2
-  sub $3,$2
-  sub $3,$2
   sub $0,1
 lpe
 mov $0,$1

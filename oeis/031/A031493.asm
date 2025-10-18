@@ -1,35 +1,30 @@
 ; A031493: Numbers whose base-9 representation has one more 0 than 8's.
-; Submitted by Matt
+; Submitted by loader3229
 ; 9,18,27,36,45,54,63,82,83,84,85,86,87,88,90,99,108,117,126,135,144,163,164,165,166,167,168,169,171,180,189,198,207,216,225,244,245,246,247,248,249,250,252,261,270,279,288,297,306,325
 
 #offset 1
 
-mov $2,$0
+mov $1,9
+mov $2,18
+mov $3,27
+mov $4,36
+mov $5,45
+mov $6,54
+mov $7,63
+mov $8,82
+mov $9,83
+mov $10,84
+mov $11,85
+mov $12,86
+mov $13,87
+mov $14,88
+mov $15,90
 sub $0,1
-add $2,3
-pow $2,2
-lpb $2
-  mov $5,6
-  mov $3,$1
-  add $3,1
-  seq $3,52421 ; Numbers without 8 as a digit.
-  lpb $3
-    mov $6,$3
-    sub $6,1
-    mod $6,10
-    trn $6,6
-    div $3,10
-    add $5,$6
-  lpe
-  sub $5,8
-  mov $3,$5
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  mul $1,-1
+  rol $1,15
+  add $15,$1
+  add $15,$14
+  sub $0,1
 lpe
 mov $0,$1

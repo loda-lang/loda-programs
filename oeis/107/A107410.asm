@@ -1,18 +1,13 @@
 ; A107410: Each term is sum of three previous terms mod 9.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2,5,2,0,7,0,7,5,3,6,5,5,7,8,2,8,0,1,0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2,5,2,0,7,0,7,5,3,6,5,5,7,8,2,8,0,1,0,1
-; Formula: a(n) = -9*truncate(b(n)/9)+b(n), b(n) = b(n-1)+b(n-2)+b(n-3), b(2) = 2, b(1) = 1, b(0) = 0
 
-mov $2,1
-mov $3,1
+mov $1,1
 lpb $0
   sub $0,1
-  mov $1,$4
-  mov $4,$2
-  add $4,$1
-  mov $2,$1
-  add $2,$3
-  mov $3,$1
+  ror $1,3
+  add $1,$2
+  add $3,$2
 lpe
-mov $0,$4
-mod $0,9
+mod $3,9
+mov $0,$3

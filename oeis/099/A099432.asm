@@ -1,20 +1,23 @@
 ; A099432: Convolution of A030195(n) (generalized (3,3)-Fibonacci) with itself.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,6,33,162,756,3402,14931,64314,273051,1145988,4764744,19656756,80561061,328316814,1331513397,5377120038,21633427836,86747114430,346810621815,1382826606210,5500378861551,21830478128136,86469557676048
 
-mov $3,$0
-mov $5,$0
-add $5,1
-lpb $5
-  sub $5,1
-  mov $0,$3
-  sub $0,$5
-  mov $1,$5
-  add $1,1
-  mov $2,$5
-  bin $2,$0
-  mul $1,$2
-  mul $4,3
-  add $4,$1
+mov $1,1
+mov $2,6
+mov $3,33
+mov $4,162
+lpb $0
+  mul $1,-9
+  rol $1,4
+  mov $5,$1
+  mul $5,-18
+  add $4,$5
+  mov $5,$2
+  mul $5,-3
+  add $4,$5
+  mov $5,$3
+  mul $5,6
+  sub $0,1
+  add $4,$5
 lpe
-mov $0,$4
+mov $0,$1

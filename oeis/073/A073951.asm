@@ -1,24 +1,29 @@
 ; A073951: Number of strings over Z_3 of length n with trace 1 and subtrace 1.
-; Submitted by Coleslaw
+; Submitted by loader3229
 ; 0,1,3,6,21,81,252,729,2187,6642,19845,59049,176904,531441,1594323,4780782,14344533,43046721,129146724,387420489,1162261467,3486843450,10460471301,31381059609,94143001680,282429536481,847288609443,2541864234006,7625594296341
 
 #offset 1
 
-mov $4,1
-add $0,1
+mov $2,1
+mov $3,3
+mov $4,6
+mov $5,21
+sub $0,1
 lpb $0
+  mul $1,27
+  rol $1,5
+  mov $6,$1
+  mul $6,-36
+  add $5,$6
+  mov $6,$2
+  mul $6,27
+  add $5,$6
+  mov $6,$3
+  mul $6,-15
+  add $5,$6
+  mov $6,$4
+  mul $6,6
   sub $0,1
-  sub $4,$6
-  add $6,$4
-  add $2,$0
-  bin $2,$0
-  mov $3,$4
-  pow $3,$1
-  mul $3,$2
-  add $1,1
-  mov $2,$1
-  sub $4,1
-  add $5,$3
+  add $5,$6
 lpe
-mov $0,$5
-div $0,3
+mov $0,$1

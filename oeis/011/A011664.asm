@@ -1,15 +1,14 @@
 ; A011664: A binary m-sequence: expansion of reciprocal of x^5+x^3+1.
-; Submitted by Mumps
+; Submitted by WTBroughton
 ; 0,0,0,0,1,0,0,1,0,1,1,0,0,1,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,0,1,0,0,0,0,1,0,0,1,0,1,1,0,0,1,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,0,1,0,0,0,0,1,0,0,1,0,1,1,0,0,1,1,1,1,1
 
-mov $5,45
+mov $5,9577
 lpb $0
+  mul $1,32
+  rol $1,7
+  add $7,$2
+  add $7,$4
   sub $0,1
-  mov $6,$1
-  add $6,$3
-  rol $1,4
-  mov $4,$5
-  mov $5,$6
 lpe
 mov $0,$1
 mod $0,2
