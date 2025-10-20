@@ -1,7 +1,7 @@
 ; A000952: Numbers k == 2 (mod 4) that are the orders of conference matrices.
 ; Submitted by Skillz
 ; 2,6,10,14,18,26,30,38,42,46,50,54,62
-; Formula: a(n) = 4*truncate((5*n-(floor((n-1)/2)%3))/4)-2
+; Formula: a(n) = 4*floor((5*n-(floor((n-1)/2)%3))/4)-2
 
 #offset 1
 

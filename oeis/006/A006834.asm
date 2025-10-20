@@ -1,7 +1,7 @@
 ; A006834: Decimal expansion of neutron-to-proton mass ratio.
 ; Submitted by loader3229
 ; 1,0,0,1,3,7,8,4,1,9
-; Formula: a(n) = -10*truncate(truncate((3*floor(((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)-n+truncate((sqrtint(8*n)+3)/2)+1)^2)/4)-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1)/2)/10)+truncate((3*floor(((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)-n+truncate((sqrtint(8*n)+3)/2)+1)^2)/4)-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1)/2)
+; Formula: a(n) = -10*truncate(truncate((3*floor(((-binomial(floor((sqrtint(8*n-7)+1)/2),2)-n+floor((sqrtint(8*n)+3)/2)+1)^2)/4)-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1)/2)/10)+truncate((3*floor(((-binomial(floor((sqrtint(8*n-7)+1)/2),2)-n+floor((sqrtint(8*n)+3)/2)+1)^2)/4)-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1)/2)
 
 #offset 1
 

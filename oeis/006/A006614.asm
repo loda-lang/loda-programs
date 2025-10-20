@@ -1,7 +1,7 @@
 ; A006614: A variant of Zarankiewicz's problem: a(n) is the least k such that every n X n {0,1}-matrix with k ones contains an all-ones 2 X 4 submatrix.
 ; Submitted by BrandyNOW
 ; 14,21,26,32,41,48,56,67
-; Formula: a(n) = truncate((truncate((10*n-20)/3)*(n+8)+truncate((10*n-20)/3))/10)+7
+; Formula: a(n) = floor((floor((10*n-20)/3)*(n+8)+floor((10*n-20)/3))/10)+7
 
 #offset 4
 

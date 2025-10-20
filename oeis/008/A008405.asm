@@ -9,7 +9,7 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  seq $4,3725 ; E.g.f.: exp( x * exp(-x) ).
+  seq $4,3725 ; Expansion of e.g.f. exp( x * exp(-x) ).
   mov $5,$2
   add $5,$3
   seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.

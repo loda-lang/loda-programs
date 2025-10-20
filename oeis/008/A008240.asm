@@ -21,9 +21,7 @@ lpb $0
   mul $1,0
   mov $15,$1
   add $15,$4
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
+  rol $1,4
   mov $4,$5
   mul $5,-2
   add $15,$5

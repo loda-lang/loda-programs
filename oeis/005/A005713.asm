@@ -1,7 +1,7 @@
 ; A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
 ; Submitted by Science United
 ; 1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1
-; Formula: a(n) = -truncate((sqrtint(5*(n+1)^2)+n+1)/2)-2*truncate((-truncate((sqrtint(5*(n+1)^2)+n+1)/2)+sqrtint(5*(truncate((sqrtint(5*(n+1)^2)+n+1)/2)+4)^2)-3)/2)+sqrtint(5*(truncate((sqrtint(5*(n+1)^2)+n+1)/2)+4)^2)-3
+; Formula: a(n) = -floor((sqrtint(5*(n+1)^2)+n+1)/2)-2*truncate((-floor((sqrtint(5*(n+1)^2)+n+1)/2)+sqrtint(5*(floor((sqrtint(5*(n+1)^2)+n+1)/2)+4)^2)-3)/2)+sqrtint(5*(floor((sqrtint(5*(n+1)^2)+n+1)/2)+4)^2)-3
 
 add $0,1
 mov $1,$0

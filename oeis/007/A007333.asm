@@ -18,8 +18,7 @@ lpb $0
   mul $2,-2
   add $15,$2
   add $15,$3
-  mov $2,$3
-  mov $3,$4
+  rol $2,3
   mov $4,$5
   mul $5,-3
   add $15,$5

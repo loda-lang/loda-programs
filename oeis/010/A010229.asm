@@ -1,7 +1,7 @@
 ; A010229: Continued fraction for sqrt(187).
 ; Submitted by hhhchelhhh
 ; 13,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13
-; Formula: a(n) = truncate((4*truncate((gcd(max(n,1),2)*binomial(2*gcd(n,3),gcd(n,3)))/2))/3)
+; Formula: a(n) = floor((4*floor((gcd(max(n,1),2)*binomial(2*gcd(n,3),gcd(n,3)))/2))/3)
 
 mov $1,$0
 max $1,1

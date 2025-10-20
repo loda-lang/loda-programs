@@ -1,10 +1,31 @@
 ; A006563: (2*n)!-Sum ((-1)^(i+1)*binomial(n,i)*2^i*(2*i-1)!,i=1..n).
 ; Submitted by Athlici
 ; 1,0,44,-174,117256,-7589530,2965194588,-692238710870,349381845013136,-172725188707732914,125191334490221307940,-102149999612542557845422,105262879332307879142908440,-125296099002304850701565276234
-; Formula: a(n) = -A006547(n)+((2*n)!)
 
-mov $1,$0
-seq $1,6547 ; Sum ((-1)^(i+1)*binomial(n,i)*2^i*(2*i-1)!,i=1..n).
+mov $3,1
+mov $4,0
+mov $6,0
+mov $7,0
+mov $1,1
+mov $5,$0
+lpb $5
+  equ $6,0
+  add $7,$6
+  add $1,5
+  mul $3,$5
+  div $3,$7
+  add $4,$3
+  mul $3,$1
+  mul $3,$7
+  mul $3,-2
+  sub $5,1
+  trn $6,3
+  sub $1,1
+lpe
+mov $1,$4
+mul $1,2
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+fac $2,$0
+mov $0,$2
 sub $0,$1

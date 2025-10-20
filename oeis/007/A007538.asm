@@ -1,7 +1,7 @@
 ; A007538: A self-generating sequence: there are a(n) 3's between successive 2's.
 ; Submitted by Science United
 ; 2,3,3,2,3,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,3,2,3
-; Formula: a(n) = -2*truncate((sqrtint((sqrtint((n-1)*(3*n-3))+n+2)*(3*sqrtint((n-1)*(3*n-3))+3*n+6))+sqrtint((n-1)*(3*n-3))+n+2)/2)+sqrtint((sqrtint((n-1)*(3*n-3))+n+2)*(3*sqrtint((n-1)*(3*n-3))+3*n+6))+sqrtint((n-1)*(3*n-3))+n+4
+; Formula: a(n) = (sqrtint((sqrtint((n-1)*(3*n-3))+n+2)*(3*sqrtint((n-1)*(3*n-3))+3*n+6))+sqrtint((n-1)*(3*n-3))+n+2)%2+2
 
 #offset 1
 

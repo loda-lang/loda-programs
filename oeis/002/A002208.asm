@@ -4,7 +4,36 @@
 
 sub $2,$0
 fac $2,$0
-seq $0,2657 ; Numerators of Cauchy numbers of second type (= Bernoulli numbers B_n^{(n)}).
+mov $5,0
+mov $6,0
+mov $8,0
+mov $9,0
+mov $4,0
+sub $4,$0
+fac $4,$0
+mov $10,$0
+add $10,2
+bin $10,2
+add $0,1
+lpb $0
+  sub $0,1
+  mul $5,$8
+  mov $7,2
+  add $7,$0
+  fac $7,$6
+  mov $8,$0
+  trn $10,1
+  mul $9,0
+  add $9,$10
+  seq $9,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  mul $9,$7
+  add $5,$9
+  add $6,1
+lpe
+mov $3,$4
+gcd $3,$5
+mov $0,$5
+div $0,$3
 mov $1,$2
 gcd $1,$0
 div $0,$1

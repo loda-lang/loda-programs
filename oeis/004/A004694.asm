@@ -1,7 +1,7 @@
 ; A004694: Fibonacci numbers written in base 13. (Next term contains a non-decimal character.)
 ; Submitted by Jamie Morken(w4)
 ; 0,1,1,2,3,5,8,10,18,28,43
-; Formula: a(n) = truncate((3*b(n)-12*truncate(c(n)/12)+c(n))/4), b(n) = b(n-1)+b(n-2), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = d(n-1), c(2) = 1, c(1) = 1, c(0) = 0, d(n) = d(n-1)+d(n-2), d(2) = 2, d(1) = 1, d(0) = 1
+; Formula: a(n) = floor((c(n)%12+3*b(n))/4), b(n) = b(n-1)+b(n-2), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = c(n-1)+c(n-2), c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0
 
 mov $3,1
 lpb $0

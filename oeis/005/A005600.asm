@@ -1,7 +1,7 @@
 ; A005600: Decimal expansion of reciprocal of fine-structure constant alpha.
 ; Submitted by BrandyNOW
 ; 1,3,7,0,3,5,9,9,9
-; Formula: a(n) = 3*min(n-3,6)-((n%4)==0)-10*truncate((3*min(n-3,6)-((n%4)==0)+1)/10)+1
+; Formula: a(n) = (3*min(n-3,6)-((n%4)==0)+1)%10
 
 #offset 3
 

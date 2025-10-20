@@ -1,7 +1,7 @@
 ; A004569: Expansion of sqrt(7) in base 2.
 ; Submitted by Mumps
 ; 1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,1,0,0,1,1,1,0,1,0,0,1,0,1,1,1,1,1,0,0,0,1,1,1,0,1,0,0,1,1,0,1,1,0,1,1,1,1,0,0,0,1,1,1,0,0,1,1,1,0,1,0,1,0,0,1
-; Formula: a(n) = -2*truncate(sqrtint(floor((7*truncate(2^(2*n-4)))/4))/2)+sqrtint(floor((7*truncate(2^(2*n-4)))/4))
+; Formula: a(n) = sqrtint(floor((7*2^(2*n-4))/4))%2
 
 #offset 2
 

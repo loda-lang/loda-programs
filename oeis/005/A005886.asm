@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+  seq $2,8441 ; Number of ordered ways of writing n as the sum of 2 triangular numbers.
   add $4,1
   add $1,$2
   mov $3,$4

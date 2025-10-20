@@ -1,7 +1,7 @@
 ; A010381: Squares mod 19.
 ; Submitted by loader3229
 ; 0,1,4,5,6,7,9,11,16,17
-; Formula: a(n) = floor(n/truncate(3^logint(n,3)))*(n%truncate(3^logint(n,3))+truncate(3^logint(n,3)))+truncate(3^logint(n,3))-2
+; Formula: a(n) = 3^logint(n,3)+floor(n/(3^logint(n,3)))*(n%(3^logint(n,3))+3^logint(n,3))-2
 
 #offset 1
 

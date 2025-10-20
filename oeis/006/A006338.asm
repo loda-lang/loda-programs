@@ -1,7 +1,7 @@
 ; A006338: An "eta-sequence": floor((n+1)*sqrt(2) + 1/2) - floor(n*sqrt(2) + 1/2).
 ; Submitted by BrandyNOW
 ; 2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2
-; Formula: a(n) = -truncate((sqrtint(8*n^2)+1)/2)+truncate((sqrtint(8*(n+1)^2)+1)/2)
+; Formula: a(n) = -floor((sqrtint(8*n^2)+1)/2)+floor((sqrtint(8*(n+1)^2)+1)/2)
 
 #offset 1
 

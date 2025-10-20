@@ -1,7 +1,7 @@
 ; A002483: Expansion of Jacobi theta function {theta_1}'(q) in powers of q^(1/4).
 ; Submitted by loader3229
 ; 0,2,0,0,0,0,0,0,0,-6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = 2*sqrtint(n)*(-4*truncate(gcd(sqrtint(n)+1,4)/4)+gcd(sqrtint(n)+1,4)-1)*((sqrtint(n)^2)==n)
+; Formula: a(n) = 2*sqrtint(n)*(gcd(sqrtint(n)+1,4)%4-1)*((sqrtint(n)^2)==n)
 
 mov $1,$0
 nrt $0,2

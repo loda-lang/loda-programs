@@ -1,14 +1,31 @@
 ; A008460: Take sum of squares of digits of previous term; start with 6.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 6,36,45,41,17,50,25,29,85,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37,58,89,145,42,20,4,16,37
-; Formula: a(n) = b(n-1), b(n) = A003132(b(n-1)), b(0) = 6
 
 #offset 1
 
 mov $1,6
+mov $2,36
+mov $3,45
+mov $4,41
+mov $5,17
+mov $6,50
+mov $7,25
+mov $8,29
+mov $9,85
+mov $10,89
+mov $11,145
+mov $12,42
+mov $13,20
+mov $14,4
+mov $15,16
+mov $16,37
+mov $17,58
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,17
+  add $17,$9
   sub $0,1
-  seq $1,3132 ; Sum of squares of digits of n.
 lpe
 mov $0,$1

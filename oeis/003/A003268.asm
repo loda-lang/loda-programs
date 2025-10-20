@@ -20,9 +20,7 @@ lpb $0
   mov $3,$8
   mov $8,$4
   add $8,$6
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
+  rol $4,4
   mov $7,$8
 lpe
 mov $0,$1

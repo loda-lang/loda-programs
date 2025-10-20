@@ -1,7 +1,7 @@
 ; A001069: Log2*(n) (version 2): take log_2 of n this many times to get a number < 2.
 ; Submitted by gemini8
 ; 0,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = truncate((20*n-20)/(6*n+4))
+; Formula: a(n) = floor((20*n-20)/(6*n+4))
 
 #offset 1
 

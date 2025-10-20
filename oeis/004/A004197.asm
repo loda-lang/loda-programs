@@ -1,7 +1,7 @@
 ; A004197: Triangle read by rows. T(n, k) = n - k if n - k < k, otherwise k.
 ; Submitted by loader3229
 ; 0,0,0,0,1,0,0,1,1,0,0,1,2,1,0,0,1,2,2,1,0,0,1,2,3,2,1,0,0,1,2,3,3,2,1,0,0,1,2,3,4,3,2,1,0,0,1,2,3,4,4,3,2,1,0,0,1,2,3,4,5,4,3,2,1,0,0,1,2,3,4,5,5,4,3,2,1,0,0,1
-; Formula: a(n) = truncate(gcd(-sqrtint(2*n)*(sqrtint(2*n)+1)+2*n+1,0)/2)
+; Formula: a(n) = floor(gcd(-sqrtint(2*n)*(sqrtint(2*n)+1)+2*n+1,0)/2)
 
 mul $0,2
 mov $1,$0

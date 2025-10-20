@@ -1,7 +1,7 @@
 ; A001468: There are a(n) 2's between successive 1's.
 ; Submitted by BrandyNOW
 ; 1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2
-; Formula: a(n) = -truncate((sqrtint(5*n^2)+n)/2)+truncate((sqrtint(5*(n+1)^2)+n+1)/2)
+; Formula: a(n) = -floor((sqrtint(5*n^2)+n)/2)+floor((sqrtint(5*(n+1)^2)+n+1)/2)
 
 mov $1,$0
 add $0,1

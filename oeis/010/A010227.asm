@@ -1,7 +1,7 @@
 ; A010227: Continued fraction for sqrt(185).
 ; Submitted by BrandyNOW
 ; 13,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1
-; Formula: a(n) = truncate(binomial(3*gcd(min(n,1)+4,n),3)/18)+1
+; Formula: a(n) = floor(binomial(3*gcd(min(n,1)+4,n),3)/18)+1
 
 mov $1,$0
 min $0,1

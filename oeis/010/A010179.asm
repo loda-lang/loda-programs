@@ -1,7 +1,7 @@
 ; A010179: Continued fraction for sqrt(114).
 ; Submitted by BrandyNOW
 ; 10,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1
-; Formula: a(n) = truncate((gcd(max(n,1),2)*binomial(2*gcd(n,3),gcd(n,3)))/2)
+; Formula: a(n) = floor((gcd(max(n,1),2)*binomial(2*gcd(n,3),gcd(n,3)))/2)
 
 mov $2,$0
 max $2,1

@@ -1,7 +1,7 @@
 ; A004585: Expansion of sqrt(10) in base 2.
 ; Submitted by Science United
 ; 1,1,0,0,1,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,1,1,0,1,0,1,1,0,1,1,0,1,0,0,1,0,1,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,1
-; Formula: a(n) = -2*truncate(truncate(sqrtint(min(4^(n-1),10)*4^(n-1))/4)/2)+truncate(sqrtint(min(4^(n-1),10)*4^(n-1))/4)
+; Formula: a(n) = floor(sqrtint(min(4^(n-1),10)*4^(n-1))/4)%2
 
 #offset 2
 

@@ -1,6 +1,6 @@
 ; A004630: Squares written in base 12. (Next term contains a non-decimal character.)
 ; 1,4,9,14,21,30,41,54,69,84
-; Formula: a(n) = 2*truncate((truncate((n^2-1)/2)+2)/3)+truncate((n^2-1)/2)+1
+; Formula: a(n) = 2*floor((floor((n^2-1)/2)+2)/3)+floor((n^2-1)/2)+1
 
 #offset 1
 

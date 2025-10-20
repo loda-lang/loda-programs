@@ -1,6 +1,6 @@
 ; A008835: Largest 4th power dividing n.
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
-; Formula: a(n) = (truncate(max(0,truncate(sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)-1)/A019554(max(0,truncate(sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)-1)+1))+1)^4
+; Formula: a(n) = (floor(max(0,floor(sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)-1)/A019554(max(0,floor(sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)-1)+1))+1)^4
 
 #offset 1
 

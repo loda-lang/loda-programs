@@ -1,7 +1,7 @@
 ; A010383: Squares mod 21.
 ; Submitted by BrandyNOW
 ; 0,1,4,7,9,15,16,18
-; Formula: a(n) = b(n-1), b(n) = c(n-1), b(3) = 7, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = c(n-1)+gcd(-c(n-2)+c(n-1)+c(n-3),18), c(4) = 15, c(3) = 9, c(2) = 7, c(1) = 4, c(0) = 1
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+gcd(-b(n-2)+b(n-1)+b(n-3),18), b(5) = 15, b(4) = 9, b(3) = 7, b(2) = 4, b(1) = 1, b(0) = 0
 
 #offset 1
 

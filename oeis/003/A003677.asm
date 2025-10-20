@@ -1,7 +1,7 @@
 ; A003677: Decimal expansion of proton mass (mass units).
 ; Submitted by Jon Maiga
 ; 1,0,0,7,2,7,6,4,6,6
-; Formula: a(n) = -10*truncate((truncate((binomial(5*n+10,7)*(5*n-5))/792)+1)/10)+truncate((binomial(5*n+10,7)*(5*n-5))/792)+1
+; Formula: a(n) = (floor((binomial(5*n+10,7)*(5*n-5))/792)+1)%10
 
 #offset 1
 

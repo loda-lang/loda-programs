@@ -1,7 +1,7 @@
 ; A004573: Expansion of sqrt(7) in base 6.
 ; Submitted by Solidair79
 ; 2,3,5,1,2,5,2,1,0,1,2,2,3,2,1,2,5,0,0,3,5,0,3,5,0,5,2,1,2,5,3,3,0,4,4,5,1,1,5,5,2,3,4,5,2,1,5,0,4,4,1,0,3,0,5,5,2,5,0,1,1,2,3,1,5,4,5,3,0,1,5,5,3,5,0,3,1,2,3,5
-; Formula: a(n) = -6*truncate(sqrtint(7*truncate(6^(2*n-2)))/6)+sqrtint(7*truncate(6^(2*n-2)))
+; Formula: a(n) = sqrtint(7*6^(2*n-2))%6
 
 #offset 1
 

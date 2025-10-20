@@ -1,7 +1,7 @@
 ; A007875: Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
 ; Submitted by [AF>PlusCitoyen] Davlabedave
 ; 1,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,2,1,2,2,2,1,2,1,2,1,2,1,4,1,1,2,2,2,2,1,2,2,2,1,4,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,4,1,2,2,1,2,4,1,2,2,4,1,2,1,2,2,2,2,4,1,2
-; Formula: a(n) = truncate(A034444(max(n-1,4)+1)/2)
+; Formula: a(n) = floor(A034444(max(n-1,4)+1)/2)
 
 #offset 1
 

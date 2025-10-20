@@ -1,7 +1,7 @@
 ; A010124: Continued fraction for sqrt(19).
 ; Submitted by BrandyNOW
 ; 4,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2,1,3,1,2,8,2
-; Formula: a(n) = -10*truncate((gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/10)+gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))
+; Formula: a(n) = (gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))%10
 
 mov $2,2
 trn $2,$0

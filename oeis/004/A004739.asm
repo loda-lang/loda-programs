@@ -1,7 +1,7 @@
 ; A004739: Concatenation of sequences (1,2,2,...,n-1,n-1,n,n,n-1,n-1,...,2,2,1) for n >= 1.
 ; Submitted by mmonnin
 ; 1,1,1,2,2,1,1,2,3,3,2,1,1,2,3,4,4,3,2,1,1,2,3,4,5,5,4,3,2,1,1,2,3,4,5,6,6,5,4,3,2,1,1,2,3,4,5,6,7,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8
-; Formula: a(n) = truncate(gcd(-2*sqrtint(n-1)*(sqrtint(n-1)+1)+2*n-1,0)/2)+1
+; Formula: a(n) = floor(gcd(-2*sqrtint(n-1)*(sqrtint(n-1)+1)+2*n-1,0)/2)+1
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A006166: a(0)=0, a(1)=a(2)=1; for n >= 1, a(3n+2) = 2a(n+1) + a(n), a(3n+1) = a(n+1) + 2a(n), a(3n) = 3a(n).
 ; Submitted by loader3229
 ; 0,1,1,3,3,3,3,5,7,9,9,9,9,9,9,9,9,9,9,11,13,15,17,19,21,23,25,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69
-; Formula: a(n) = (2*floor(n/truncate(3^logint(max(n,1),3)))-2)*(n%truncate(3^logint(max(n,1),3)))-(floor(n/truncate(3^logint(max(n,1),3)))==0)+truncate(3^logint(max(n,1),3))
+; Formula: a(n) = 3^logint(max(n,1),3)+(2*floor(n/(3^logint(max(n,1),3)))-2)*(n%(3^logint(max(n,1),3)))-(floor(n/(3^logint(max(n,1),3)))==0)
 
 mov $1,$0
 max $1,1

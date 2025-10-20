@@ -10,7 +10,9 @@ lpb $2
   mov $0,$1
   add $0,$2
   trn $0,1
-  seq $0,24291 ; Expansion of tan(x)*sinh(tan(x))/2.
+  mul $0,2
+  seq $0,9737 ; Expansion of e.g.f. tan(x)*exp(tan(x)).
+  div $0,2
   mov $1,1
 lpe
 mul $0,2

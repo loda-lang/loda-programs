@@ -1,7 +1,7 @@
 ; A005796: Degrees of fundamental invariants of Weyl group W(E_8).
 ; Submitted by Science United
 ; 2,8,12,14,18,20,24,30
-; Formula: a(n) = 4*n+2*gcd(floor((n+2)/2),4)-8*truncate(gcd(floor((n+2)/2),4)/4)-4
+; Formula: a(n) = 4*n+2*(gcd(floor((n+2)/2),4)%4)-4
 
 #offset 1
 

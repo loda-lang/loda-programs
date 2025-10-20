@@ -1,7 +1,7 @@
 ; A006618: Zarankiewicz's problem.
 ; Submitted by BrandyNOW
 ; 11,17,22,28,36,43,51,61
-; Formula: a(n) = truncate((truncate((10*n-10)/3)*(n+6)+truncate((10*n-10)/3))/9)+5
+; Formula: a(n) = floor((floor((10*n-10)/3)*(n+6)+floor((10*n-10)/3))/9)+5
 
 #offset 3
 

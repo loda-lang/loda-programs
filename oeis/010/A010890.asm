@@ -1,7 +1,7 @@
 ; A010890: 15th cyclotomic polynomial.
 ; Submitted by Science United
 ; 1,-1,0,1,-1,1,0,-1,1
-; Formula: a(n) = truncate(((-3*truncate((n-4)/3)+n-4)^2+1)/gcd((-3*truncate((n-4)/3)+n-4)^2,4))-1
+; Formula: a(n) = floor(((-3*truncate((n-4)/3)+n-4)^2+1)/gcd((-3*truncate((n-4)/3)+n-4)^2,4))-1
 
 sub $0,4
 mod $0,3

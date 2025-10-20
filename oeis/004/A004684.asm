@@ -1,7 +1,7 @@
 ; A004684: Primes written in base 11. (Next term contains a nondecimal character.)
 ; Submitted by Science United
 ; 2,3,5,7,10,12,16,18,21,27,29,34,38
-; Formula: a(n) = truncate((5*truncate((56*truncate((10*A000040(n)+2)/11)+44*truncate((10*A000040(n)+9)/11)+168)/5)-310)/100)+2
+; Formula: a(n) = floor((5*floor((56*floor((10*A000040(n)+2)/11)+44*floor((10*A000040(n)+9)/11)+168)/5)-310)/100)+2
 
 #offset 1
 

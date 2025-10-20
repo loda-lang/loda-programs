@@ -1,7 +1,7 @@
 ; A008958: Triangle of central factorial numbers 4^k T(2n+1, 2n+1-2k).
 ; Submitted by loader3229
 ; 1,1,1,1,10,1,1,35,91,1,1,84,966,820,1,1,165,5082,24970,7381,1,1,286,18447,273988,631631,66430,1,1,455,53053,1768195,14057043,15857205,597871,1,1,680,129948,8187608,157280838,704652312,397027996,5380840,1
-; Formula: a(n) = A136630(2*binomial(truncate((sqrtint(8*n+8)+3)/2),2)-2*n+binomial(2*truncate((sqrtint(8*n+8)-1)/2)+2,2)-1)
+; Formula: a(n) = A136630(2*binomial(floor((sqrtint(8*n+8)+3)/2),2)-2*n+binomial(2*truncate((sqrtint(8*n+8)-1)/2)+2,2)-1)
 
 mov $1,$0
 add $1,1

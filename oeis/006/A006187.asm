@@ -1,7 +1,7 @@
 ; A006187: Number of pair-coverings with largest block size 5.
 ; Submitted by loader3229
 ; 1,6,10,13,15,16,16,18
-; Formula: a(n) = truncate(((n-5)*(-min(n-5,6)+10)+min(n-5,6))/2)+1
+; Formula: a(n) = floor(((n-5)*(-min(n-5,6)+10)+min(n-5,6))/2)+1
 
 #offset 5
 

@@ -9,7 +9,7 @@ lpb $0
   lpb $2
     mov $4,$2
     trn $4,1
-    seq $4,29195 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^6)(1-x^9)).
+    seq $4,29195 ; Expansion of 1/((1-x^2)*(1-x^5)*(1-x^6)*(1-x^9)).
     trn $2,8
     add $3,$4
   lpe

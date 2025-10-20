@@ -1,7 +1,7 @@
 ; A004555: Expansion of sqrt(5) in base 2.
 ; Submitted by skylaar
 ; 1,0,0,0,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,1,1,0,0,1,1,1,0,0,1,1,1,0
-; Formula: a(n) = -2*truncate(truncate(sqrtint(5*4^(n-1))/4)/2)+truncate(sqrtint(5*4^(n-1))/4)
+; Formula: a(n) = floor(sqrtint(5*4^(n-1))/4)%2
 
 #offset 2
 

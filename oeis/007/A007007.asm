@@ -1,7 +1,7 @@
 ; A007007: Valence of graph of maximal intersecting families of sets.
 ; Submitted by BrandyNOW
 ; 0,1,3,4,10,15,35,56,126,210,462,792,1716,3003,6435,11440,24310,43758,92378,167960,352716,646646,1352078,2496144,5200300,9657700,20058300,37442160,77558760,145422675,300540195,565722720,1166803110,2203961430
-; Formula: a(n) = binomial(-(1==n)+n,truncate((-(1==n)+n)/2)+1)
+; Formula: a(n) = binomial(-(1==n)+n,floor((-(1==n)+n)/2)+1)
 
 #offset 1
 

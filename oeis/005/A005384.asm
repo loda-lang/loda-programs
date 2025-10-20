@@ -1,13 +1,36 @@
 ; A005384: Sophie Germain primes p: 2p+1 is also prime.
 ; Submitted by Dave Studdert
 ; 2,3,5,11,23,29,41,53,83,89,113,131,173,179,191,233,239,251,281,293,359,419,431,443,491,509,593,641,653,659,683,719,743,761,809,911,953,1013,1019,1031,1049,1103,1223,1229,1289,1409,1439,1451,1481,1499,1511,1559,1583,1601,1733,1811,1889,1901,1931,1973,2003,2039,2063,2069,2129,2141,2273,2339,2351,2393,2399,2459,2543,2549,2693,2699,2741,2753,2819,2903
-; Formula: a(n) = truncate((A077065(n)-4)/2)+2
 
 #offset 1
 
 mov $1,$0
-seq $1,77065 ; Semiprimes of form prime - 1.
-mov $0,$1
+sub $1,1
+mov $2,0
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,40 ; The prime numbers.
+  add $4,1
+  mov $7,$4
+  add $7,$4
+  mov $4,$7
+  sub $4,2
+  mov $6,$4
+  add $4,1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
+  trn $3,1
+lpe
+mov $1,$6
+mov $0,$6
 sub $0,4
 div $0,2
 add $0,2

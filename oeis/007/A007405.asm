@@ -29,10 +29,12 @@ lpb $2
   bin $7,2
   mov $6,$4
   sub $6,$7
-  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $8,1
+  fac $8,$6
   mov $5,$4
   seq $5,225476 ; Triangle read by rows, k!*2^k*S_2(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
-  div $5,$6
+  div $5,$8
+  mov $6,$8
   add $1,$5
 lpe
 mov $0,$1

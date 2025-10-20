@@ -1,7 +1,7 @@
 ; A010176: Continued fraction for sqrt(111).
 ; Submitted by BrandyNOW
 ; 10,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1,1,6,1,1,20,1
-; Formula: a(n) = 2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+2*gcd(0==truncate(3^(gcd(n,max(-n+2,0)+6)-3)),2)+truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(0==truncate(3^(gcd(n,max(-n+2,0)+6)-3)),2))/3)-1
+; Formula: a(n) = 2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+2*gcd(0==truncate(3^(gcd(n,max(-n+2,0)+6)-3)),2)+floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(0==truncate(3^(gcd(n,max(-n+2,0)+6)-3)),2))/3)-1
 
 mov $1,2
 trn $1,$0

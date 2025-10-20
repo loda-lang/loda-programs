@@ -1,43 +1,9 @@
 ; A000737: Boustrophedon transform of natural numbers, cf. A000027.
-; Submitted by mmonnin
+; Submitted by 10esseeTony
 ; 1,3,8,21,60,197,756,3367,17136,98153,624804,4375283,33424512,276622829,2465449252,23543304919,239810132288,2595353815825,29740563986500,359735190398875,4580290700420064,61233976084442741,857620718152442948,12557501046460350751,191864482984875761440,3053618087081354193177,50543834938876804568996,868784526721053030066147,15486391413853744602374016,285909346323802258232980733,5460466289232689286576259044,107763464988237152808979762663,2195339281611307463257731019392
+; Formula: a(n) = A000667(n)+A231179(n)
 
 mov $1,$0
-add $1,1
-bin $1,2
-mov $2,$0
-mov $0,0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,$2
-  add $3,1
-  mov $7,$3
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $8,$7
-  add $8,1
-  bin $8,2
-  sub $3,$8
-  sub $3,1
-  mov $8,$3
-  mov $3,$7
-  bin $3,$8
-  sub $7,$8
-  mov $9,$7
-  seq $9,122045 ; Euler (or secant) numbers E(n).
-  seq $7,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-  gcd $7,$9
-  mul $3,$7
-  mov $5,0
-  gcd $5,$3
-  mov $6,0
-  gcd $6,$5
-  mov $4,$2
-  add $4,1
-  mul $4,$6
-  add $0,$4
-lpe
+seq $1,667 ; Boustrophedon transform of all-1's sequence.
+seq $0,231179 ; Boustrophedon transform of nonnegative integers, cf. A001477.
+add $0,$1

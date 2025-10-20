@@ -1,7 +1,7 @@
 ; A001176: Number of zeros in fundamental period of Fibonacci numbers mod n.
 ; Submitted by BrandyNOW
 ; 1,1,2,1,4,2,2,2,2,4,1,2,4,2,2,2,4,2,1,2,2,1,2,2,4,4,2,2,1,2,1,2,2,4,2,2,4,1,2,2,2,2,2,1,2,2,2,2,2,4,2,2,4,2,2,2,2,1,1,2,4,1,2,2,4,2,2,2,2,2,1,2,4,4,2,1,2,2,1,2
-; Formula: a(n) = truncate(A001175(n)/A001177(n))
+; Formula: a(n) = floor(A001175(n)/A001177(n))
 
 #offset 1
 

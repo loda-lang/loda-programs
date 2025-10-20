@@ -1,7 +1,7 @@
 ; A005488: Maximal number of edges in a b^{hat} graceful graph with n nodes.
 ; Submitted by loader3229
 ; 0,1,3,6,9,13,18,24,29
-; Formula: a(n) = truncate(((10*n-10)*(10*n+28)+315)/315)-1
+; Formula: a(n) = floor(((10*n-10)*(10*n+28)+315)/315)-1
 
 #offset 1
 
