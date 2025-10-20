@@ -1,0 +1,64 @@
+; A189328: Number of nondecreasing arrangements of 5 numbers in 0..n with the last equal to n and each after the second equal to the sum of one or two of the preceding four.
+; Submitted by loader3229
+; 2,8,11,20,21,36,31,49,42,63,51,79,60,93,72,105,80,125,89,133,104,149,109,168,117,178,135,190,138,213,147,219,166,234,166,257,176,263,197,274,196,303,205,304,227,319,225,346,234,347,259,360,254,392,262,389,290,404,283,434,292,433,321,445,311,481,321,474,352,488,341,524,350,518,382,530,370,570,379,558
+
+#offset 1
+
+mov $1,2
+mov $2,8
+mov $3,11
+mov $4,20
+mov $5,21
+mov $6,36
+mov $7,31
+mov $8,49
+mov $9,42
+mov $10,63
+mov $11,51
+mov $12,79
+mov $13,60
+mov $14,93
+sub $0,1
+lpb $0
+  mul $1,-1
+  rol $1,14
+  mov $15,$1
+  mul $15,-3
+  add $14,$15
+  mov $15,$2
+  mul $15,-5
+  add $14,$15
+  mov $15,$3
+  mul $15,-5
+  add $14,$15
+  sub $14,$4
+  sub $14,$4
+  mov $15,$5
+  mul $15,3
+  add $14,$15
+  mov $15,$6
+  mul $15,8
+  add $14,$15
+  mov $15,$7
+  mul $15,10
+  add $14,$15
+  mov $15,$8
+  mul $15,8
+  add $14,$15
+  mov $15,$9
+  mul $15,3
+  add $14,$15
+  sub $14,$10
+  sub $14,$10
+  mov $15,$11
+  mul $15,-5
+  add $14,$15
+  mov $15,$12
+  mul $15,-5
+  add $14,$15
+  mov $15,$13
+  mul $15,-3
+  sub $0,1
+  add $14,$15
+lpe
+mov $0,$1

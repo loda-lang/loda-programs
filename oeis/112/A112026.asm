@@ -1,0 +1,65 @@
+; A112026: A puzzle sequence, answer unknown.
+; Submitted by DukeBox
+; 30,28,32,38,40,42,46,52,60,60,64,68
+
+#offset 1
+
+sub $0,1
+mov $1,$0
+dgr $1,17
+mov $4,$1
+equ $4,1
+mov $3,$4
+mov $4,$1
+equ $4,2
+add $3,$4
+mov $4,$1
+equ $4,3
+mul $4,2
+add $3,$4
+mov $4,$1
+equ $4,4
+add $3,$4
+add $3,$1
+add $3,$1
+mov $4,$1
+equ $4,7
+add $3,$4
+mov $4,$1
+equ $4,8
+mul $4,3
+add $3,$4
+mov $4,$1
+equ $4,9
+add $3,$4
+mov $4,$1
+equ $4,10
+add $3,$4
+mov $4,$1
+equ $4,11
+add $3,$4
+mov $4,$1
+equ $4,12
+add $3,$4
+mov $4,$1
+equ $4,13
+mul $4,2
+add $3,$4
+mov $4,$1
+equ $4,14
+mov $2,4
+add $3,$4
+mov $4,$1
+equ $4,15
+add $3,$4
+mov $4,$1
+equ $4,16
+mul $4,58
+add $3,$4
+lpb $0
+  sub $0,1
+  mov $2,$3
+lpe
+mov $0,$2
+mul $0,2
+add $0,22
