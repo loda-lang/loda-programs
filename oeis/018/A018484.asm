@@ -1,7 +1,7 @@
 ; A018484: Divisors of 492.
 ; Submitted by vanos0512
 ; 1,2,3,4,6,12,41,82,123,164,246,492
-; Formula: a(n) = 12*truncate(A018405(n)/28)+A018405(n)
+; Formula: a(n) = 12*floor(A018405(n)/28)+A018405(n)
 
 #offset 1
 

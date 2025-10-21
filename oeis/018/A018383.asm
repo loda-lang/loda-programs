@@ -1,7 +1,7 @@
 ; A018383: Divisors of 304.
 ; Submitted by BrandyNOW
 ; 1,2,4,8,16,19,38,76,152,304
-; Formula: a(n) = b(n-1), b(n) = 26*truncate(b(n-5)/2)+2*b(n-1)-13*b(n-5), b(5) = 19, b(4) = 16, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1
+; Formula: a(n) = 26*truncate(a(n-5)/2)+2*a(n-1)-13*a(n-5), a(6) = 19, a(5) = 16, a(4) = 8, a(3) = 4, a(2) = 2, a(1) = 1
 
 #offset 1
 

@@ -13,35 +13,32 @@ mov $8,10446
 mov $9,24244
 mov $10,53942
 lpb $0
+  rol $1,10
+  mov $11,$2
+  mul $11,-6
+  sub $10,$1
+  add $10,$11
+  mov $11,$3
+  mul $11,9
+  add $10,$11
+  mov $11,$4
+  mul $11,9
+  add $10,$11
+  mov $11,$5
+  mul $11,-24
+  add $10,$11
+  mov $11,$6
+  mul $11,7
+  add $10,$11
+  mov $11,$7
+  mul $11,17
+  add $10,$11
+  mov $11,$8
+  mul $11,-18
+  add $10,$11
+  mov $11,$9
+  mul $11,7
   sub $0,1
-  mov $11,$1
-  mov $1,$2
-  mul $2,-1
-  add $11,$2
-  mov $2,$3
-  mul $3,-6
-  add $11,$3
-  mov $3,$4
-  mul $4,9
-  add $11,$4
-  mov $4,$5
-  mul $5,9
-  add $11,$5
-  mov $5,$6
-  mul $6,-24
-  add $11,$6
-  mov $6,$7
-  mul $7,7
-  add $11,$7
-  mov $7,$8
-  mul $8,17
-  add $11,$8
-  mov $8,$9
-  mul $9,-18
-  add $11,$9
-  mov $9,$10
-  mul $10,7
-  add $11,$10
-  mov $10,$11
+  add $10,$11
 lpe
 mov $0,$1

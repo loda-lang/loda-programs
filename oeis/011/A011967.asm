@@ -8,7 +8,21 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,11966 ; Third differences of Bell numbers.
+  mov $6,$0
+  mov $7,$0
+  mov $8,$0
+  seq $8,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $0,3
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $6,2
+  seq $6,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $6,3
+  add $7,1
+  seq $7,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $7,3
+  sub $0,$6
+  add $0,$7
+  sub $0,$8
   mov $2,$3
   mul $2,$0
   add $1,$2

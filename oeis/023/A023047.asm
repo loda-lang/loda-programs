@@ -8,7 +8,27 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,23046 ; 9th differences of factorial numbers.
+  mov $5,$0
+  mov $6,1
+  fac $6,$0
+  add $0,36
+  mul $0,$5
+  add $0,582
+  mul $0,$5
+  add $0,5460
+  mul $0,$5
+  add $0,32403
+  mul $0,$5
+  add $0,124908
+  mul $0,$5
+  add $0,309602
+  mul $0,$5
+  add $0,470328
+  mul $0,$5
+  add $0,391641
+  mul $0,$5
+  add $0,133496
+  mul $0,$6
   add $1,$2
   mov $2,$0
   pow $4,$3

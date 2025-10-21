@@ -5,9 +5,7 @@
 mov $2,1
 mov $3,1
 mov $8,1
-mov $9,1
-mov $10,1
-mov $11,1
+fil $8,4
 lpb $0
   sub $0,1
   mov $1,1
@@ -18,10 +16,7 @@ lpb $0
   mov $4,$5
   mov $5,$6
   sub $9,1
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
+  rol $6,5
   mov $10,$11
   mov $11,$3
   mov $3,$2

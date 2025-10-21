@@ -8,7 +8,23 @@ mov $2,$0
 pow $2,4
 lpb $2
   add $3,1
-  seq $3,254031 ; a(n) = 1*5^n + 2*4^n + 3*3^n + 4*2^n + 5*1^n.
+  mov $7,2
+  pow $7,$3
+  mul $7,4
+  mov $6,$7
+  mov $7,3
+  pow $7,$3
+  mul $7,3
+  add $6,$7
+  mov $7,4
+  pow $7,$3
+  mul $7,2
+  add $6,$7
+  mov $7,5
+  pow $7,$3
+  add $6,$7
+  add $6,5
+  mov $3,$6
   mul $3,11
   add $4,1
   add $5,1

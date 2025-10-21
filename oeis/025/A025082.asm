@@ -1,23 +1,32 @@
 ; A025082: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (Fibonacci numbers), t = (F(2), F(3), F(4), ...).
-; Submitted by Catchercradle
+; Submitted by loader3229
 ; 2,3,8,13,31,50,105,170,340,550,1058,1712,3212,5197,9564,15475,28065,45410,81395,131700,233832,378348,666468,1078368,1886966,3053175,5312240,8595385
 
 #offset 1
 
-mov $1,$0
-add $1,2
+mov $1,2
+mov $2,3
+mov $3,8
+mov $4,13
+mov $5,31
+mov $6,50
+mov $7,105
+mov $8,170
 sub $0,1
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
-  add $0,$4
-  mov $4,$3
-  add $3,$0
+lpb $0
+  rol $1,8
+  mov $9,$2
+  mul $9,-3
+  sub $0,1
+  add $8,$1
+  add $8,$9
+  sub $8,$3
+  sub $8,$3
+  sub $8,$5
+  sub $8,$5
+  mov $9,$6
+  mul $9,3
+  add $8,$9
+  add $8,$7
 lpe
-mov $0,$3
+mov $0,$1

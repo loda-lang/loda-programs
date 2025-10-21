@@ -1,7 +1,7 @@
 ; A018473: Divisors of 472.
 ; Submitted by Stony666
 ; 1,2,4,8,59,118,236,472
-; Formula: a(n) = truncate(b(n-1)/2)+1, b(n) = 2*b(n-1)+2*c(n-1)+2, b(1) = 2, b(0) = 0, c(n) = 43*((2*c(n-1)+b(n-1)+2)==8), c(1) = 0, c(0) = 0
+; Formula: a(n) = floor(b(n-1)/2)+1, b(n) = 2*b(n-1)+2*c(n-1)+2, b(1) = 2, b(0) = 0, c(n) = 43*((2*c(n-1)+b(n-1)+2)==8), c(1) = 0, c(0) = 0
 
 #offset 1
 

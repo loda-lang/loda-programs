@@ -1,19 +1,28 @@
 ; A016348: 182nd cyclotomic polynomial.
-; Submitted by Hans van der Giessen
+; Submitted by loader3229
 ; 1,1,0,0,0,0,0,-1,-1,0,0,0,0,-1,0,1,0,0,0,0,1,0,-1,0,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,0,-1,0,1,0,0,0,0,1,0,-1,0,0,0,0,-1,-1,0,0,0,0,0,1,1
 
-mov $1,-1
-pow $1,$0
-add $0,1
+mov $1,1
+mov $2,1
+mov $8,-1
+mov $9,-1
+mov $14,-1
+mov $16,1
 lpb $0
-  mov $3,$0
-  sub $3,1
-  sub $4,$3
-  mod $4,13
-  pow $4,$4
-  add $0,4
-  trn $0,11
-  add $2,$4
+  mul $1,-1
+  rol $1,19
+  add $19,$1
+  sub $19,$2
+  add $19,$3
+  sub $19,$4
+  add $19,$5
+  sub $19,$6
+  sub $19,$13
+  add $19,$14
+  sub $19,$15
+  add $19,$16
+  sub $19,$17
+  add $19,$18
+  sub $0,1
 lpe
-mov $0,$2
-mul $0,$1
+mov $0,$1

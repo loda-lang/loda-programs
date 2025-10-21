@@ -19,7 +19,22 @@ lpb $3
   sub $0,$3
   mov $5,$0
   add $5,1
-  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $9,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $8,$5
+  bin $5,2
+  sub $9,$5
+  mov $11,$8
+  div $11,$9
+  mov $10,$8
+  mod $10,$9
+  equ $10,0
+  seq $11,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $11,$10
+  mov $5,$11
   mov $6,0
   mov $7,$0
   mul $7,8
@@ -31,7 +46,7 @@ lpb $3
   sub $0,$7
   add $0,1
   seq $0,127687 ; Number of unlabeled maximal independent sets in the n-cycle graph.
-  mul $0,$5
+  mul $0,$11
   add $2,$0
 lpe
 mov $0,$2

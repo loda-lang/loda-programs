@@ -1,7 +1,7 @@
 ; A018516: Divisors of 555.
 ; Submitted by Aflatoxin
 ; 1,3,5,15,37,111,185,555
-; Formula: a(n) = truncate(A264984(A018470(n))/2)
+; Formula: a(n) = floor(A264984(A018470(n))/2)
 
 #offset 1
 

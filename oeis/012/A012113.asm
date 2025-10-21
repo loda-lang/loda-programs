@@ -1,7 +1,7 @@
 ; A012113: Expansion of e.g.f. tan(arcsin(arcsinh(x))) (odd powers only).
 ; Submitted by Science United
 ; 1,2,24,552,28032,1778688,212383872,25215328512,5734229114880,1029078328135680,410202091438571520,93624495716395745280,65377722614151010222080,15441784659337549573324800
-; Formula: a(n) = truncate((6*A012262(truncate((4*n-3)/2)+1)+2*gcd(4*n-4,2)-10)/6)+1
+; Formula: a(n) = truncate((6*A012262(floor((4*n-3)/2)+1)+2*gcd(4*n-4,2)-10)/6)+1
 
 #offset 1
 

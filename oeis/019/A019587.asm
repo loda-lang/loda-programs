@@ -1,4 +1,4 @@
-; A019587: The left budding sequence: # of i such that 0<i<=n and 0 < {tau*i} <= {tau*n}, where {} is fractional part.
+; A019587: The left budding sequence: number of i such that 0 < i <= n and 0 < {phi*i} <= {phi*n}, where {} denotes the fractional part and phi = A001622.
 ; Submitted by Kotenok2000
 ; 1,1,3,2,1,5,3,8,5,2,9,5,1,10,5,15,9,3,15,8,21,13,5,20,11,2,19,9,27,16,5,25,13,1,23,10,33,19,5,30,15,41,25,9,37,20,3,33,15,46,27,8,41,21,55,34,13,49,27,5,43,20,59,35,11,52,27,2,45,19,63,36,9,55,27,74,45,16,65,35
 

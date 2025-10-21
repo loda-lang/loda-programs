@@ -1,7 +1,7 @@
 ; A014430: Subtract 1 from Pascal's triangle, read by rows.
 ; Submitted by mmonnin
 ; 1,2,2,3,5,3,4,9,9,4,5,14,19,14,5,6,20,34,34,20,6,7,27,55,69,55,27,7,8,35,83,125,125,83,35,8,9,44,119,209,251,209,119,44,9,10,54,164,329,461,461,329,164,54,10,11,65,219,494,791,923,791,494,219,65,11,12,77,285,714,1286,1715,1715,1286,714,285,77,12,13,90
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)+3)/2),-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2))-1
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)+3)/2),-n+binomial(floor((sqrtint(8*n+8)+3)/2),2))-1
 
 mov $1,$0
 add $0,1

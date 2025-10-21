@@ -1,33 +1,28 @@
 ; A031479: Numbers whose base-6 representation has 2 more 0's than 5's.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 36,72,108,144,217,218,219,220,222,228,234,240,252,288,324,360,433,434,435,436,438,444,450,456,468,504,540,576,649,650,651,652,654,660,666,672,684,720,756,792,865,866,867,868,870,876
 
 #offset 1
 
-add $0,1
-mov $2,$0
+mov $1,36
+mov $2,72
+mov $3,108
+mov $4,144
+mov $5,217
+mov $6,218
+mov $7,219
+mov $8,220
+mov $9,222
+mov $10,228
+mov $11,234
+mov $12,240
+mov $13,252
 sub $0,1
-pow $2,8
-lpb $2
-  mov $4,1
-  add $1,5
-  mov $3,$1
-  seq $3,7092 ; Numbers in base 6.
-  lpb $3
-    mov $5,$3
-    sub $5,1
-    mod $5,10
-    div $5,2
-    bin $5,2
-    div $3,10
-    add $4,$5
-  lpe
-  mov $3,$4
-  mod $3,7
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+lpb $0
+  mul $1,-1
+  rol $1,13
+  add $13,$1
+  add $13,$12
+  sub $0,1
 lpe
 mov $0,$1
-div $0,6

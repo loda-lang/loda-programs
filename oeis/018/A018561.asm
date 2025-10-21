@@ -1,7 +1,7 @@
 ; A018561: Divisors of 636.
 ; Submitted by Fardringle
 ; 1,2,3,4,6,12,53,106,159,212,318,636
-; Formula: a(n) = 12*truncate(A018405(n)/14)+A018405(n)
+; Formula: a(n) = 12*floor(A018405(n)/14)+A018405(n)
 
 #offset 1
 

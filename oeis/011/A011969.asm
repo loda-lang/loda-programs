@@ -1,15 +1,21 @@
 ; A011969: Apply (1+Shift)^2 to Bell numbers.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by BrandyNOW
 ; 1,3,5,10,27,87,322,1335,6097,30304,162409,931667,5686712,36750201,250401793,1792401626,13436958559,105208112643,858286687914,7279760687179,64071719451645,584150874832552,5508179528996197,53640307148135743,538769596743421304,5574660076674694277,59354386057373560269,649618131315527501290,7301604746995673387507,84206597795996204485471,995589157794129817484946,12058196777188855425187119,149498136956873276121567097,1896018591892051410887675088,24582295844382284389737038737
+; Formula: a(n) = 2*A000110(max(n-2,0)+1)-max(-2*n+4,0)+A000110(max(n-2,0)+2)+A000110(max(n-2,0))
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,11968 ; Apply (1+Shift) to Bell numbers.
-  add $1,$2
-  sub $3,2
-lpe
-mov $0,$1
+mov $3,$0
+sub $3,1
+mul $3,-2
+trn $3,-2
+trn $0,2
+mov $1,$0
+mov $2,$0
+seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $0,2
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $1,1
+seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mul $1,2
+add $0,$1
+add $0,$2
+sub $0,$3

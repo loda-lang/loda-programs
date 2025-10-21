@@ -1,7 +1,7 @@
 ; A023132: Signature sequence of 1/sqrt(8) (arrange the numbers i+j*x (i,j >= 1) in increasing order; the sequence of i's is the signature of x).
 ; Submitted by Science United
 ; 1,1,1,2,1,2,1,2,1,3,2,1,3,2,1,3,2,1,4,3,2,1,4,3,2,1,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,6,5,4,3,2,1,6,5,4,3,2,1,6,5,4,3,2,7,1,6,5,4,3,2,7,1,6,5,4,3,2,7,1,6,5
-; Formula: a(n) = logint(truncate(A003591(n)/truncate(2^A025637(n))),7)+1
+; Formula: a(n) = logint(floor(A003591(n)/(2^A025637(n))),7)+1
 
 #offset 1
 

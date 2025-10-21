@@ -24,11 +24,9 @@ mov $21,7
 mov $22,1
 mov $23,24
 lpb $0
-  sub $0,1
   mul $1,0
-  mov $24,$1
-  add $24,$2
   rol $1,23
-  mov $23,$24
+  add $23,$1
+  sub $0,1
 lpe
 mov $0,$1

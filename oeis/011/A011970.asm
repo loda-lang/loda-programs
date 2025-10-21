@@ -10,7 +10,22 @@ lpb $0
   add $1,$3
   mov $2,$0
   max $2,0
-  seq $2,11969 ; Apply (1+Shift)^2 to Bell numbers.
+  mov $6,$2
+  sub $6,1
+  mul $6,-2
+  trn $6,-2
+  trn $2,2
+  mov $4,$2
+  mov $5,$2
+  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $2,2
+  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $4,1
+  seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $4,2
+  add $2,$4
+  add $2,$5
+  sub $2,$6
   add $3,$2
 lpe
 mov $0,$3

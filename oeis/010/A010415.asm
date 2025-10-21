@@ -1,27 +1,28 @@
 ; A010415: Squares mod 54.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 0,1,4,7,9,10,13,16,19,22,25,27,28,31,34,36,37,40,43,46,49,52
 
 #offset 1
 
-mov $2,$0
+mov $1,1
+mov $2,4
+mov $3,7
+mov $4,10
+mov $5,13
+mov $6,16
+mov $7,18
+mov $8,19
+mov $9,22
+mov $10,25
+mov $11,27
+mov $12,28
 sub $0,1
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,321
-  dir $3,9
-  mod $3,9
-  equ $3,6
-  sub $0,$3
-  add $1,$4
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  mul $1,-1
+  rol $1,12
+  add $12,$1
+  add $12,$11
+  sub $0,1
 lpe
-mov $0,$1
-div $0,6
+mov $0,$7
+sub $0,18

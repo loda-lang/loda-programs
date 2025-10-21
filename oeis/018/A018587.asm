@@ -1,6 +1,7 @@
 ; A018587: Divisors of 676.
 ; Submitted by loader3229
 ; 1,2,4,13,26,52,169,338,676
+; Formula: a(n) = 13*a(n-3), a(3) = 4, a(2) = 2, a(1) = 1
 
 #offset 1
 

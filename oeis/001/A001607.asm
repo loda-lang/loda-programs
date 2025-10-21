@@ -9,11 +9,10 @@ lpb $0
   mov $3,$1
   mul $3,4
   mov $4,$2
-  mul $4,-1
   mul $2,0
   add $2,$3
   mul $1,-3
-  add $1,$4
+  sub $1,$4
 lpe
 mul $0,$2
 add $0,$1

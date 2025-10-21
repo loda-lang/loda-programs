@@ -1,6 +1,6 @@
 ; A013575: Minimal scope of an (n,3) difference triangle.
 ; 6,13,19,24,30,36,42,48,54,60,66,72,78,84,90
-; Formula: a(n) = (truncate((2*n-1)/3)==1)+6*n
+; Formula: a(n) = (floor((2*n-1)/3)==1)+6*n
 
 #offset 1
 

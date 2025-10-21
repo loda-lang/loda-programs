@@ -1,7 +1,7 @@
 ; A011982: Covering numbers C(n,7,3) (next term is <= 25).
 ; Submitted by loader3229
 ; 1,4,4,6,8,11,13,14,15
-; Formula: a(n) = -(-2*truncate(truncate((sqrtint(8*n-48)-1)/2)/2)+truncate((sqrtint(8*n-48)-1)/2))*(-binomial(truncate((sqrtint(8*n-48)-1)/2)+1,2)+n-7)+(-2*truncate(truncate((sqrtint(8*n-48)-1)/2)/2)+truncate((sqrtint(8*n-48)-1)/2))*(-n+binomial(truncate((sqrtint(8*n-48)-1)/2)+1,2)+truncate((sqrtint(8*n-48)-1)/2)+7)+2*n-binomial(truncate((sqrtint(8*n-48)-1)/2)+1,2)-truncate((n-6)/(-2))+binomial(truncate((sqrtint(n-6)+1)/2),2)-13
+; Formula: a(n) = -(-2*truncate(truncate((sqrtint(8*n-48)-1)/2)/2)+truncate((sqrtint(8*n-48)-1)/2))*(-binomial(truncate((sqrtint(8*n-48)-1)/2)+1,2)+n-7)+(-2*truncate(truncate((sqrtint(8*n-48)-1)/2)/2)+truncate((sqrtint(8*n-48)-1)/2))*(-n+binomial(truncate((sqrtint(8*n-48)-1)/2)+1,2)+truncate((sqrtint(8*n-48)-1)/2)+7)+2*n-binomial(truncate((sqrtint(8*n-48)-1)/2)+1,2)-truncate((n-6)/(-2))+binomial(floor((sqrtint(n-6)+1)/2),2)-13
 
 #offset 7
 

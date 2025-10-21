@@ -1,16 +1,61 @@
 ; A013525: E.g.f.: x + (gdinv x - sinh x)/2, where gdinv = inverse-Gudermannian. Sequence has odd-indexed coefficients; others are zero.
 ; Submitted by BrandyNOW
 ; 1,0,2,30,692,25260,1351382,99680490,9695756072,1202439837720,185185594118762,34674437196568950,7757267081778543452,2043536254646561946180,626129820701814932734142,220771946624511552276841410,88759695789769644718332394832,40361649617943949031084123726640,20611030169758851061173539835629522,11744790263521554126008914288099473870,7425575359057490008938578390702913342212,5182311366759806059698978652372592988155100,3973789711298796351804020255044035309759636902
+; Formula: a(n) = (0==n)+truncate((A008280((truncate((sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2+8*binomial(floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2+8*floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2))/2),2)+8*floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2+8*floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-binomial(floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2+8*floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2))/2),2)-floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2+8*floor(sqrtint(8*(floor(sqrtint(8*binomial(2*n,2)+8)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)
 
-mov $1,3
+equ $1,$0
 mov $2,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $2,1
-  mov $1,$2
-  seq $1,122045 ; Euler (or secant) numbers E(n).
-  gcd $1,0
-lpe
-mov $0,$1
+add $2,$0
+bin $2,2
+add $2,1
+mov $6,$2
+mul $6,8
+nrt $6,2
+div $6,2
+add $6,1
+pow $6,2
+sub $6,$2
+mov $2,$6
+mul $2,8
+nrt $2,2
+div $2,2
+mov $3,$6
+add $3,$2
+mov $4,$3
+add $4,2
+mov $7,$4
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $8,$7
+add $8,1
+bin $8,2
+sub $4,1
+sub $4,$8
+add $4,$3
+mov $2,$3
+add $2,1
+mov $5,$2
+mul $5,8
+nrt $5,2
+div $5,2
+bin $5,2
+sub $2,$5
+sub $4,$2
+mov $2,$4
+add $2,1
+mov $9,$2
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+add $9,1
+pow $9,2
+sub $9,$2
+mov $2,$9
+seq $2,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+mov $0,$2
+sub $0,1
 div $0,2
+add $0,$1

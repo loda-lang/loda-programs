@@ -1,17 +1,20 @@
 ; A011966: Third differences of Bell numbers.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,5,20,87,409,2066,11155,64077,389946,2504665,16923381,119928232,888980293,6876320041,55382419676,463539664643,4024626253845,36189297168874,336513491259647,3231446022478129,32004743929977258,326548129128737469,3428663026172389201,37009200128958089736,410293120492598913337,4667643410030380953757,54445703622345032445700,650665509861092250844607,7960970769102929378666273,99653500452826152085797954,1275435210520448785430788027,16680152361305837407066153637,222775807862127299282649714970
+; Formula: a(n) = 3*A000110(n+1)-A000110(n)-3*A000110(n+2)+A000110(n+3)
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,11965 ; Second differences of Bell numbers.
-  mov $1,$2
-  mov $2,$0
-  mul $4,$3
-lpe
-sub $1,$2
-mov $0,$1
+mov $1,$0
+mov $2,$0
+mov $3,$0
+seq $3,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $0,3
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $1,2
+seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mul $1,3
+add $2,1
+seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mul $2,3
+sub $0,$1
+add $0,$2
+sub $0,$3

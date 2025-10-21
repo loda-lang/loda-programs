@@ -17,12 +17,14 @@ lpb $0
   sub $0,$5
   mov $4,$0
   max $4,0
-  add $4,1
-  seq $4,296891 ; Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
-  sub $4,1
+  mov $7,$4
+  sub $4,164
+  mul $7,$4
+  div $7,$4
   mov $6,-1
-  pow $6,$4
+  pow $6,$7
   add $6,1
+  mov $4,$7
   dif $4,2
   seq $4,15003 ; Inverse of 994th cyclotomic polynomial.
   mul $4,$6

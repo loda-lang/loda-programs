@@ -1,7 +1,7 @@
 ; A018121: Powers of fifth root of 3 rounded to nearest integer.
 ; Submitted by iBezanilla
 ; 1,1,2,2,2,3,4,5,6,7,9,11,14,17,22,27,34,42,52,65,81,101,126,157,195,243,303,377,470,585,729,908,1131,1409,1756,2187,2724,3394,4228,5267,6561,8173,10182,12684,15800,19683
-; Formula: a(n) = truncate((sqrtint(4*sqrtnint(9^n,5)+4)+1)/2)
+; Formula: a(n) = floor((sqrtint(4*sqrtnint(9^n,5)+4)+1)/2)
 
 mov $1,9
 pow $1,$0

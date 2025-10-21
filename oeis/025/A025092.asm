@@ -1,26 +1,32 @@
 ; A025092: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (Lucas numbers), t = (F(2), F(3), F(4), ...).
-; Submitted by Conan
+; Submitted by loader3229
 ; 2,3,14,23,57,92,205,332,680,1100,2158,3492,6636,10737,19958,32293,59015,95488,172215,278650,497232,804538,1423164,2302728,4043702,6542847
 
 #offset 1
 
-mov $1,$0
-add $1,2
+mov $1,2
+mov $2,3
+mov $3,14
+mov $4,23
+mov $5,57
+mov $6,92
+mov $7,205
+mov $8,332
 sub $0,1
-div $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  seq $0,22360 ; Fibonacci sequence beginning 0, 26.
-  add $3,$0
-  add $4,$3
-  mov $3,$5
+lpb $0
+  rol $1,8
+  mov $9,$2
+  mul $9,-3
+  sub $0,1
+  add $8,$1
+  add $8,$9
+  sub $8,$3
+  sub $8,$3
+  sub $8,$5
+  sub $8,$5
+  mov $9,$6
+  mul $9,3
+  add $8,$9
+  add $8,$7
 lpe
-add $4,$3
-add $5,$4
-mov $0,$5
-div $0,26
+mov $0,$1

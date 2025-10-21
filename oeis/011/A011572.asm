@@ -13,9 +13,34 @@ div $3,2
 bin $3,2
 mov $4,$0
 sub $4,$3
+mov $5,0
+mov $6,0
+mov $9,0
 mov $1,1
 fac $1,$4
 mov $2,$0
-seq $2,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+add $2,1
+mov $7,$2
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $7,$8
+lpb $7
+  sub $7,1
+  mov $10,$7
+  pow $10,$2
+  sub $6,1
+  sub $6,$7
+  bin $6,$9
+  mul $6,$10
+  add $9,1
+  add $5,$6
+  mov $6,0
+lpe
+mov $2,$5
 div $2,$1
 mov $0,$2

@@ -1,7 +1,7 @@
 ; A011264: In the prime factorization of n, increment even powers and decrement odd powers (multiplicative).
 ; Submitted by Bunteck
 ; 1,1,1,8,1,1,1,4,27,1,1,8,1,1,1,32,1,27,1,8,1,1,1,4,125,1,9,8,1,1,1,16,1,1,1,216,1,1,1,4,1,1,1,8,27,1,1,32,343,125,1,8,1,9,1,4,1,1,1,8,1,1,27,128,1,1,1,8,1,1,1,108,1,1,125,8,1,1,1,32
-; Formula: a(n) = truncate((n^2)/((truncate((n-1)/(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/(truncate(sqrtint(4*(truncate(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)/2)^2))+1))+1)*(floor((n-1)/(truncate(sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)^2))+1)))
+; Formula: a(n) = truncate((n^2)/((truncate((n-1)/(truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/(floor(sqrtint(4*(floor(max(0,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)/2)^2))+1))+1)*(floor((n-1)/(floor(sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)^2))+1)))
 
 #offset 1
 

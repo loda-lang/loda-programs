@@ -1,7 +1,7 @@
 ; A018602: Divisors of 708.
 ; Submitted by GolfSierra
 ; 1,2,3,4,6,12,59,118,177,236,354,708
-; Formula: a(n) = 15*truncate(A018405(n)/14)+A018405(n)
+; Formula: a(n) = 15*floor(A018405(n)/14)+A018405(n)
 
 #offset 1
 

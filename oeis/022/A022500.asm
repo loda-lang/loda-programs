@@ -1,9 +1,26 @@
 ; A022500: Describe the previous term! (method B - initial term is 4).
 ; Submitted by Steve Dodd
 ; 4,41,4111,4113,411231,4112213111,411222113113,41122312311231,4112223111213112213111,41122331132111311222113113,411222321231211331122312311231,41122331211121311121123212223111213112213111,41122232112113211131132112213121112331132111311222113113,4112233121122112312113311231211222113111211321321231211331122312311231,41122232112112221221311121123212213111211223123113211231211131211121311121123212223111213112213111
-; Formula: a(n) = A345110(A001140(n))
+; Formula: a(n) = -10*floor((b(n-1)+4)/(10^logint(max(b(n-1)+4,1),10)))*10^logint(max(b(n-1)+4,1),10)+10*b(n-1)+floor((b(n-1)+4)/(10^logint(max(b(n-1)+4,1),10)))+40, b(n) = A045918(b(n-1)), b(0) = 0
 
 #offset 1
 
-seq $0,1140 ; Describe the previous term! (method A - initial term is 4).
-seq $0,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
+mov $4,0
+sub $0,1
+lpb $0
+  sub $0,1
+  seq $4,45918 ; Describe n. Also called the "Say What You See" or "Look and Say" sequence LS(n).
+lpe
+mov $0,$4
+add $0,4
+mov $1,$0
+max $1,1
+log $1,10
+mov $2,10
+pow $2,$1
+mov $3,$0
+div $3,$2
+mul $2,$3
+sub $0,$2
+mul $0,10
+add $0,$3

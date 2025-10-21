@@ -7,8 +7,7 @@ seq $1,55642 ; Number of digits in the decimal expansion of n.
 mov $2,10
 mul $2,$0
 mov $3,1
-mov $4,1
-mov $5,1
+fil $3,3
 lpb $2
   sub $2,1
   mov $6,$4

@@ -1,21 +1,23 @@
 ; A011677: A binary m-sequence: expansion of reciprocal of x^7+x^5+x^2+x+1.
-; Submitted by Tae Hyun Kim
+; Submitted by [Trident Mindset] Timothy Ray Green
 ; 0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1
-; Formula: a(n) = -2*truncate((b(n-5)+a(n-1)+a(n-3))/2)+b(n-5)+a(n-1)+a(n-3), a(8) = 0, a(7) = 1, a(6) = 1, a(5) = 0, a(4) = 0, a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 0, b(n) = b(n-2)+a(n-2), b(6) = 0, b(5) = 3, b(4) = 0, b(3) = 3, b(2) = 0, b(1) = 3, b(0) = 0
 
-mov $3,3
+mov $2,-5
+mov $3,5
+mov $5,13
+mov $7,29
 lpb $0
+  mul $1,0
+  rol $1,11
+  sub $11,$1
+  add $11,$4
+  add $11,$5
+  add $11,$6
+  add $11,$6
+  add $11,$7
   sub $0,1
-  mov $7,$6
-  mov $6,$4
-  add $6,$8
-  mov $4,$2
-  mod $5,2
-  add $8,$1
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  mov $8,$5
-  add $5,$7
 lpe
 mov $0,$8
+mod $0,2
+add $0,2
+mod $0,2

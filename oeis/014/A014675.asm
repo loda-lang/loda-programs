@@ -1,7 +1,7 @@
 ; A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 ; Submitted by hugo75
 ; 2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2
-; Formula: a(n) = gcd(-truncate((sqrtint(5*(n+1)^2)+n+1)/2)+sqrtint(5*(truncate((sqrtint(5*(n+1)^2)+n+1)/2)+2)^2)-1,2)
+; Formula: a(n) = gcd(-floor((sqrtint(5*(n+1)^2)+n+1)/2)+sqrtint(5*(floor((sqrtint(5*(n+1)^2)+n+1)/2)+2)^2)-1,2)
 
 add $0,1
 mov $1,$0
