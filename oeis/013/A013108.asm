@@ -1,21 +1,16 @@
 ; A013108: cos(arcsinh(x)+arctan(x))=1-4/2!*x^2+40/4!*x^4-1030/6!*x^6+51160/8!*x^8...
-; Submitted by Jamie Morken(l1)
+; Submitted by DukeBox
 ; 1,-4,40,-1030,51160,-4176250,507867100,-86130937750,19429666282000,-5626346310003250,2034312191276462500,-898279284686285368750,475692945053706430375000,-297573010648301986578906250
+; Formula: a(n) = (2*n*A006228(2*n)+A006228(2*n+1))*(-1)^n
 
 mov $1,-1
 pow $1,$0
-mov $2,1
-mov $3,1
 mul $0,2
-lpb $0
-  sub $0,1
-  mov $4,$2
-  mov $2,$3
-  mul $3,$0
-  add $3,$4
-  mul $4,$0
-  sub $2,$4
-  add $2,$3
-lpe
-mov $0,$2
+mov $3,$0
+seq $3,6228 ; Expansion of e.g.f. exp(arcsin(x)).
+mov $2,$0
+add $2,1
+seq $2,6228 ; Expansion of e.g.f. exp(arcsin(x)).
+mul $0,$3
+add $0,$2
 mul $0,$1

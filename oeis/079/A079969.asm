@@ -1,21 +1,19 @@
 ; A079969: Number of permutations satisfying -k<=p(i)-i<=r and p(i)-i not in I, i=1..n, with k=1, r=5, I={2}.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,2,3,6,11,21,38,70,128,236,434,799,1469,2702,4969,9140,16811,30921,56872,104604,192396,353872,650872,1197141,2201885,4049898,7448923,13700706,25199527,46349157,85249390,156798074,288396620,530444084
 
-mov $5,1
-add $0,2
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,6
+mov $6,11
 lpb $0
+  rol $1,6
+  add $6,$1
+  add $6,$2
+  add $6,$4
+  add $6,$5
   sub $0,1
-  mov $7,$6
-  mov $6,$4
-  add $6,$8
-  mov $4,$2
-  add $4,$1
-  mov $2,$1
-  add $5,$7
-  mov $1,$3
-  mov $3,$8
-  mov $8,$5
-  add $2,$3
 lpe
-mov $0,$3
+mov $0,$1

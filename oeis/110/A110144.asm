@@ -1,21 +1,34 @@
 ; A110144: Terms of A110142 at positions p(n)+1, where p(n) = A000041(n) is the number of partitions of n; a(n) = A110142(p(n)+1) for n>=1, with a(0) = 1.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,2,3,8,6,48,24,384,144,3840,1152,46080,11520,645120,138240,10321920,1935360,185794560,30965760,3715891200,557383680,81749606400,11147673600,1961990553600,245248819200,51011754393600,5885971660800
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = truncate((b(n-2)*(-4*d(n-2)^2+3)+3*c(n-2))/2), b(5) = 6, b(4) = 6, b(3) = 3, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = truncate((b(n-2)*(d(n-2)*(4*d(n-2)+4)+5)+c(n-2)*(4*d(n-2)+5))/2), c(5) = 42, c(4) = 42, c(3) = 5, c(2) = 5, c(1) = 1, c(0) = 1, d(n) = d(n-2)+1, d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
 
 mov $1,1
-add $0,1
+mov $2,1
 lpb $0
-  mov $3,$0
   sub $0,2
-  lpb $3
-    add $4,$3
-    equ $6,0
-    add $2,$6
-    mul $3,$0
-    sub $3,$4
-    mov $5,$2
-  lpe
-  add $5,2
-  mul $1,$5
+  mov $6,4
+  mul $6,$3
+  add $6,4
+  mul $6,$3
+  add $6,5
+  mul $6,$1
+  mov $7,4
+  mul $7,$3
+  add $7,5
+  mov $4,-4
+  mul $4,$3
+  mul $4,$3
+  add $4,3
+  mov $5,3
+  mul $5,$2
+  mul $1,$4
+  add $1,$5
+  div $1,2
+  mul $2,$7
+  add $2,$6
+  div $2,2
+  add $3,1
 lpe
-mov $0,$1
+mul $0,$2
+add $0,$1

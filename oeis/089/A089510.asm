@@ -1,22 +1,56 @@
 ; A089510: A periodic sequence with period length 30.
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,0,0,0,0,-1,1,0,0,-1,1,-1,1,0,-1,0,1,-1,1,-1,0,0,1,-1,0,0,0,0,1,-1,1,0,0,0,0,-1,1,0,0,-1,1,-1,1,0,-1,0,1,-1,1,-1,0,0,1,-1,0,0,0,0,1,-1,1,0,0,0,0,-1,1,0,0,-1,1,-1,1,0,-1,0,1,-1,1,-1
 
 #offset 1
 
+mov $1,1
+mov $6,-1
+mov $7,1
+mov $10,-1
+mov $11,1
+mov $12,-1
+mov $13,1
+mov $15,-1
+mov $17,1
+mov $18,-1
+mov $19,1
+mov $20,-1
+mov $23,1
+mov $24,-1
+mov $29,1
 sub $0,1
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,182067 ; a(n) = floor(n) - floor(n/2) - floor(n/3) - floor(n/5) + floor(n/30).
-  mov $2,$3
-  mul $2,$0
-  mul $4,$3
-  add $1,$2
-  mov $5,$0
+lpb $0
+  mul $1,-1
+  rol $1,29
+  sub $29,$1
+  sub $29,$2
+  sub $29,$3
+  sub $29,$4
+  sub $29,$5
+  sub $29,$6
+  sub $29,$7
+  sub $29,$8
+  sub $29,$9
+  sub $29,$10
+  sub $29,$11
+  sub $29,$12
+  sub $29,$13
+  sub $29,$14
+  sub $29,$15
+  sub $29,$16
+  sub $29,$17
+  sub $29,$18
+  sub $29,$19
+  sub $29,$20
+  sub $29,$21
+  sub $29,$22
+  sub $29,$23
+  sub $29,$24
+  sub $29,$25
+  sub $29,$26
+  sub $29,$27
+  sub $29,$28
+  sub $0,1
 lpe
-sub $1,$5
 mov $0,$1

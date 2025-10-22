@@ -1,40 +1,17 @@
 ; A105652: Numbers k such that p1=2k+3, p2=4k+5 and p3=6k+7 are all prime.
-; Submitted by Athlici
+; Submitted by Icecold
 ; 0,2,17,104,134,152,164,167,299,362,584,617,647,764,827,1109,1139,1277,1517,1529,1532,2129,2222,2399,2474,2612,2789,2924,3074,3179,3344,3419,3482,3809,3839,3842,3932,4007,4082,4094,4142,4259,4262,4322,4469,4544,5087,5414,5624,5654,5792,6119,6194,6257,6572,6704,6737,6767,6812,7097,7274,7559,7694,7712,7967,8042,8132,8627,8879,9059,9224,9392,10022,10352,10592,10697,10907,11222,11387,11504
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,5
-pow $2,3
-lpb $2
-  mov $3,$1
-  add $3,2
-  mov $6,$1
-  add $6,4
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,1
-  add $5,5
-  add $5,$3
-  sub $5,$1
-  mul $6,$5
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $6,2
-  mov $3,$6
-  mul $3,$1
-  add $3,$6
-  add $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  max $0,1
+  seq $0,64238 ; Values of m such that N = (am+1)(bm+1)(cm+1) is a 3-Carmichael number (A087788), where a,b,c = 1,2,3.
+  mov $1,$0
+  add $1,$0
+  sub $1,4
+  mov $0,0
 lpe
 mov $0,$1
-div $0,2
+div $0,4

@@ -1,5 +1,5 @@
 ; A034938: Primes p such that (p-3)/2 is a prime of the form 6k-1.
-; Submitted by cellarnoise2
+; Submitted by Science United
 ; 13,37,61,97,109,181,229,277,337,349,397,457,541,709,769,937,1009,1021,1117,1129,1201,1237,1297,1321,1489,1549,1597,1621,1657,1777,1861,2029,2221,2377,2389,2437,2521,2557,2617,2749,2857,3001,3049
 
 #offset 1
@@ -10,10 +10,9 @@ pow $2,3
 lpb $2
   mov $3,$1
   add $3,3
-  mov $6,$1
   add $6,5
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $6,2
+  max $6,2
   add $5,$3
   sub $5,$1
   mul $6,$5
@@ -34,5 +33,6 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-mul $0,2
-add $0,7
+div $0,6
+mul $0,12
+add $0,13

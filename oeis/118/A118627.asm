@@ -1,5 +1,5 @@
 ; A118627: a(1) = a(2) = 1. For n >=3, a(n) = the a(n-2)th integer, among those positive integers which are missing from the first (m-1) terms of the sequence, below a(n-1) if such a positive integer exists. Otherwise, a(n) = the a(n-2)th integer, among those positive integers which are missing from the first (m-1) terms of the sequence, above a(n-1).
-; Submitted by loader3229
+; Submitted by LM
 ; 1,1,2,3,5,8,13,21,6,30,24,55,31,87,56,144,88,233,145,379,234,614,380,995,615,1611,996,2608,1612,4221,2609,6831,4222,11054,6832,17887,11055,28943,17888,46832,28944,75777,46833,122611,75778,198390,122612,321003
 
 #offset 1
@@ -23,19 +23,11 @@ lpb $0
   sub $0,1
   mul $1,0
   mov $15,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
+  rol $1,8
   mov $8,$9
   mul $9,-1
   add $15,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
+  rol $9,4
   mov $12,$13
   mul $13,2
   add $15,$13

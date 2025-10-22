@@ -1,14 +1,39 @@
 ; A118296: Start with 21 and repeatedly reverse the digits and add 1 to get the next term.
+; Submitted by loader3229
 ; 21,13,32,24,43,35,54,46,65,57,76,68,87,79,98,90,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10
-; Formula: a(n) = b(n-1), b(n) = A004086(b(n-1))+1, b(0) = 21
 
 #offset 1
 
+mov $1,21
+mov $2,13
+mov $3,32
+mov $4,24
+mov $5,43
+mov $6,35
+mov $7,54
+mov $8,46
+mov $9,65
+mov $10,57
+mov $11,76
+mov $12,68
+mov $13,87
+mov $14,79
+mov $15,98
+mov $16,90
+mov $17,10
+mov $18,2
+mov $19,3
+mov $20,4
+mov $21,5
+mov $22,6
+mov $23,7
+mov $24,8
+mov $25,9
 sub $0,1
-mov $1,$0
-mov $0,21
-lpb $1
-  sub $1,1
-  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $0,1
+lpb $0
+  mul $1,0
+  rol $1,25
+  add $25,$16
+  sub $0,1
 lpe
+mov $0,$1

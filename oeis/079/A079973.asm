@@ -1,19 +1,14 @@
 ; A079973: Number of permutations satisfying -k <= p(i) - i <= r and p(i) - i not in I, i=1..n, with k=1, r=4, I={0,3}.
-; Submitted by www.urfak.petrsu.ru
+; Submitted by Science United
 ; 1,0,1,1,1,3,2,5,6,8,14,16,27,36,51,77,103,155,216,309,448,628,912,1292,1849,2652,3769,5413,7713,11031,15778,22513,32222,46004,65766,94004,134283,191992,274291,392041,560287,800615,1144320,1635193,2336976
 ; Formula: a(n) = a(n-2)+a(n-3)+a(n-5), a(7) = 5, a(6) = 2, a(5) = 3, a(4) = 1, a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 1
 
 mov $2,1
-mov $3,1
+mov $4,1
 lpb $0
+  rol $1,5
+  add $5,$3
   sub $0,1
-  mov $5,$6
-  add $5,$1
-  mov $6,$4
-  mov $4,$2
-  mov $2,$1
-  add $2,$5
-  mov $1,$3
-  mov $3,$5
+  add $3,$5
 lpe
-mov $0,$3
+mov $0,$4

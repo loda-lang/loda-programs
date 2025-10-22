@@ -1,34 +1,32 @@
 ; A118602: Start with 1 and repeatedly reverse the digits and add 21 to get the next term.
 ; Submitted by loader3229
 ; 1,22,43,55,76,88,109,922,250,73,58,106,622,247,763,388,904,430,55,76,88,109,922,250,73,58,106,622,247,763,388,904,430,55,76,88,109,922,250,73,58,106,622,247,763,388,904,430,55,76,88,109,922,250,73,58
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+21, b(0) = 1
 
 #offset 1
 
 mov $1,1
+mov $2,22
+mov $3,43
+mov $4,55
+mov $5,76
+mov $6,88
+mov $7,109
+mov $8,922
+mov $9,250
+mov $10,73
+mov $11,58
+mov $12,106
+mov $13,622
+mov $14,247
+mov $15,763
+mov $16,388
+mov $17,904
+mov $18,430
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,18
+  add $18,$3
   sub $0,1
-  mov $3,$1
-  div $3,100
-  mov $2,$1
-  div $2,10
-  mod $2,10
-  mov $4,$3
-  min $4,1
-  mul $4,9
-  add $4,1
-  mod $1,10
-  mul $1,$4
-  mul $2,$4
-  add $2,$3
-  mov $4,$2
-  min $4,1
-  mul $4,9
-  add $4,1
-  sub $2,20
-  mul $1,$4
-  add $1,$2
-  add $1,41
 lpe
 mov $0,$1

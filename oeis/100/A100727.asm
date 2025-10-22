@@ -1,20 +1,23 @@
 ; A100727: Continued fraction expansion of (1/2) [tan(1) + sec(1)].
-; Submitted by zombie67 [MM]
+; Submitted by loader3229
 ; 1,1,2,2,1,1,1,2,1,2,1,2,1,3,1,2,1,4,1,2,1,5,1,2,1,6,1,2,1,7,1,2,1,8,1,2,1,9,1,2,1,10,1,2,1,11,1,2,1,12,1,2,1,13,1,2,1,14,1,2,1,15,1,2,1,16,1,2,1,17,1,2,1,18,1,2,1,19,1,2
 
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,2
+mov $5,1
+fil $5,3
+mov $8,2
+mov $9,1
+mov $10,2
+mov $11,1
 lpb $0
-  sub $0,3
-  equ $1,1
-  mov $2,$0
-  add $2,$4
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  add $0,1
-  add $1,1
-  mul $3,$2
-  div $3,$1
-  add $4,1
+  mul $1,0
+  rol $1,11
+  sub $11,$3
+  add $11,$7
+  add $11,$7
+  sub $0,1
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1

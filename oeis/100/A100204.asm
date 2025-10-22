@@ -1,5 +1,5 @@
 ; A100204: Numbers of cubes in the range [n^2, (n+1)^2].
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,1,1,0,0,1,0,1,1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
 
 mov $1,$0
@@ -9,8 +9,11 @@ mov $3,$0
 mul $3,6
 lpb $3
   sub $3,3
+  mov $5,$1
+  nrt $5,3
+  pow $5,3
   mov $2,$1
-  seq $2,10057 ; a(n) = 1 if n is a cube, else 0.
+  equ $2,$5
   add $4,$2
   add $1,1
 lpe

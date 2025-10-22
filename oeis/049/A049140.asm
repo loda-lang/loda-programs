@@ -4,25 +4,24 @@
 
 #offset 1
 
+mov $2,$0
 sub $0,1
-mov $1,$0
-add $0,1
 mov $6,$0
+add $0,2
 lpb $0
-  sub $0,1
-  equ $2,1
-  sub $2,$6
-  bin $2,$0
-  sub $4,1
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
+  mov $4,$0
+  add $4,$6
+  sub $0,2
+  sub $4,2
+  bin $4,$0
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  trn $0,1
+  add $3,1
   add $6,1
-  trn $0,2
-  add $1,1
-  gcd $3,0
-  div $3,$1
-  sub $1,1
-  add $5,$3
+  add $7,$5
 lpe
-mov $0,$5
+gcd $1,$2
+mov $0,$7
+div $0,$1

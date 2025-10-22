@@ -1,14 +1,35 @@
 ; A067114: Let N = 24681012141618202224262830..., the concatenation of the even numbers. Then a(n) = sum of first n digits of N.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 2,6,12,20,21,21,22,24,25,29,30,36,37,45,47,47,49,51,53,57,59,65,67,75,78,78,81,83,86,90,93,99,102,110,114,114,118,120,124,128,132,138,142,150,155,155,160,162,167,171,176,182,187,195,201,201,207,209,215,219
-; Formula: a(n) = a(n-1)+A036211(n), a(0) = 0
 
 #offset 1
 
+mov $1,2
+mov $2,6
+mov $3,12
+mov $4,20
+mov $5,21
+mov $6,21
+mov $7,22
+mov $8,24
+mov $9,25
+mov $10,29
+mov $11,30
+mov $12,36
+mov $13,37
+mov $14,45
+mov $15,47
+sub $0,1
 lpb $0
-  mov $2,$0
-  seq $2,36211 ; Successive digits of even numbers.
+  mul $1,0
+  rol $1,15
+  add $15,$2
+  sub $15,$3
+  sub $15,$4
+  add $15,$5
+  sub $15,$12
+  add $15,$13
+  add $15,$14
   sub $0,1
-  add $1,$2
 lpe
 mov $0,$1

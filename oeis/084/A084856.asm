@@ -1,22 +1,25 @@
 ; A084856: Prime(n+2)^2-prime(n)^2.
-; Submitted by Kotenok2000
+; Submitted by DukeBox
 ; 21,40,96,120,168,192,240,480,432,528,720,480,528,960,1272,912,1008,1320,840,1200,1560,1680,2520,2280,1200,1248,1272,1320,4248,4392,2640,2160,3432,3480,2448,3768,3240,3360,4152,2832,4440,4488,2328,2352,5712
-; Formula: a(n) = A159477(A159477(b(n-1)+3)+3)^2-b(n-1)^2, b(n) = A159477(b(n-1)+3), b(0) = 2
 
 #offset 1
 
-mov $1,2
 sub $0,1
-lpb $0
-  sub $0,1
-  add $1,3
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  add $0,2
+  seq $0,40 ; The prime numbers.
+  pow $0,2
+  mov $2,$3
+  mul $2,$0
+  sub $4,1
+  mul $4,$3
+  add $1,$2
+  mov $5,$0
 lpe
+sub $1,$5
 mov $0,$1
-pow $1,2
-add $0,3
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-add $0,3
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-pow $0,2
-sub $0,$1

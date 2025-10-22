@@ -1,30 +1,12 @@
 ; A033452: "STIRLING" transform of squares A000290.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,1,5,22,99,471,2386,12867,73681,446620,2856457,19217243,135610448,1001159901,7714225057,61904585510,516347066551,4468588592739,40058673825258,371421499686007,3556976106133821,35138574378189700,357654857584636597,3746672593640388775,40354065859158757568,446454554888822476841,5069105308727814673677,59018723129660405886262,704069410634088782067803,8599860917202757820195359,107477952157455960848734338,1373466552746190179126876859,17935847602948345248859200505,239210124242279545638563112972
+; Formula: a(n) = -2*A000110(n+1)+A000110(n+2)
 
-mov $4,$0
-add $0,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $8,0
-  mov $3,$0
-  add $3,2
-  lpb $3
-    sub $3,1
-    mov $6,$3
-    pow $6,$4
-    sub $7,$3
-    bin $7,$5
-    mul $7,$6
-    add $8,$7
-    add $5,1
-    mov $7,0
-  lpe
-  mov $2,1
-  fac $2,$0
-  div $8,$2
-  mul $8,$0
-  add $1,$8
-lpe
-mov $0,$1
+mov $1,$0
+add $0,2
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $1,1
+seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mul $1,2
+sub $0,$1

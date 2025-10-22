@@ -1,15 +1,28 @@
 ; A118607: Start with 1 and repeatedly reverse the digits and add 18 to get the next term.
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,19,109,919,937,757,775,595,613,334,451,172,289,1000,19,109,919,937,757,775,595,613,334,451,172,289,1000,19,109,919,937,757,775,595,613,334,451,172,289,1000,19,109,919,937,757,775,595,613,334,451,172,289,1000,19,109,919,937,757,775,595,613,334,451,172,289,1000,19,109,919,937,757,775,595,613,334,451,172,289,1000,19
-; Formula: a(n) = b(n-1), b(n) = A004086(b(n-1))+18, b(0) = 1
 
 #offset 1
 
+mov $1,1
+mov $2,19
+mov $3,109
+mov $4,919
+mov $5,937
+mov $6,757
+mov $7,775
+mov $8,595
+mov $9,613
+mov $10,334
+mov $11,451
+mov $12,172
+mov $13,289
+mov $14,1000
 sub $0,1
-mov $1,$0
-mov $0,1
-lpb $1
-  sub $1,1
-  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $0,18
+lpb $0
+  mul $1,0
+  rol $1,14
+  add $14,$1
+  sub $0,1
 lpe
+mov $0,$1

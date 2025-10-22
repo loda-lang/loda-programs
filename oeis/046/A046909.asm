@@ -1,28 +1,16 @@
 ; A046909: Number of isomorphism classes of connected irreducible quasiorders with n labeled points.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,1,2,17,167,1672
+; Formula: a(n) = d(n)+1, c(n) = 10*c(n-1)+10*truncate(c(n-4)/6)+truncate(c(n-2)/6), c(4) = 1001, c(3) = 100, c(2) = 10, c(1) = 1, c(0) = 0, d(n) = truncate(c(n-2)/6), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
 
-mul $0,2
-sub $0,4
+mov $1,1
 lpb $0
-  sub $0,2
-  add $3,1
-  mul $8,4
-  add $6,$3
-  add $6,$8
-  add $2,$1
-  add $2,$4
-  mul $7,4
-  sub $7,$1
-  mov $8,$7
-  mov $1,$4
+  div $2,6
+  ror $1,4
+  add $1,$2
+  mul $1,10
   add $1,$3
-  add $1,2
-  mov $4,$2
-  add $5,$6
-  add $7,$6
-  add $7,$8
-  mov $3,$5
+  sub $0,1
 lpe
-mov $0,$8
+mov $0,$4
 add $0,1

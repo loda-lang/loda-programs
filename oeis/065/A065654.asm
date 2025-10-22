@@ -1,17 +1,17 @@
 ; A065654: Fixed points for A065652, a permutation of the natural numbers.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 0,1,2,4,8,24,80,784,8288,1053024,115519040,2186083514944,26210587691915648,9556921325803348132669824,1373760651292040932579353684066560,182669489453303120238622839813317479832750842872064
-; Formula: a(n) = truncate(c(n)/2), b(n) = b(n-2)^2+2, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = b(n-1)^2-b(n-1)+c(n-1)+2, c(1) = 2, c(0) = 0
+; Formula: a(n) = truncate(b(n)/2), b(n) = c(n-1)^2-c(n-1)+b(n-1)+2, b(3) = 9, b(2) = 5, b(1) = 3, b(0) = 1, c(n) = c(n-2)^2+2, c(4) = 6, c(3) = 3, c(2) = 2, c(1) = 1, c(0) = 0
 
+mov $1,1
 lpb $0
-  sub $0,1
-  mov $2,$1
-  add $3,1
-  sub $3,$1
-  mov $1,$3
+  sub $1,$2
   pow $2,2
-  add $2,1
-  add $3,$2
+  mov $4,2
+  ror $1,4
+  add $1,$2
+  add $1,$3
+  sub $0,1
 lpe
-mov $0,$3
+mov $0,$1
 div $0,2

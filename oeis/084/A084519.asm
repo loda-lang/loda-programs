@@ -1,20 +1,18 @@
 ; A084519: Number of indecomposable ground-state 3-ball juggling sequences of period n.
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 1,1,3,13,47,173,639,2357,8695,32077,118335,436549,1610471,5941181,21917583,80856053,298285687,1100404333,4059496479,14975869477,55247410055,203812962077,751885445295,2773777080149,10232728055191
-; Formula: a(n) = b(n-1), b(n) = 8*c(n-3)+3*b(n-1), b(5) = 173, b(4) = 47, b(3) = 13, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = 3*c(n-1)+2*c(n-2)+2*c(n-3), c(5) = 203, c(4) = 55, c(3) = 15, c(2) = 4, c(1) = 1, c(0) = 0
 
 #offset 1
 
-mov $1,1
+mov $3,2
 sub $0,1
 lpb $0
   sub $0,1
-  add $3,$4
+  ror $1,3
   add $1,$3
+  add $1,$2
   add $3,$1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  add $3,$4
+  mul $1,2
 lpe
-mov $0,$1
+mov $0,$3
+div $0,2

@@ -4,30 +4,27 @@
 
 #offset 1
 
-mov $2,$0
 sub $0,1
+mov $5,-1
+mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
-  add $3,3
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $3,$6
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
+  mov $1,$3
   add $1,2
-  mov $3,$5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,2
+  mul $1,$3
+  add $1,1
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
   mov $4,$0
   max $4,0
   equ $4,$0
-  mul $2,$4
-  sub $2,17
   add $5,2
-  add $5,$1
-  mov $1,0
-  add $6,2
+  mul $2,$4
+  sub $2,18
+  mov $3,$5
 lpe
 mov $0,$3
-div $0,4
-mul $0,2
-add $0,3
+add $0,2

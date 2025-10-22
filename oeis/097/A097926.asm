@@ -4,16 +4,15 @@
 
 #offset 5
 
-mov $1,18
-mov $2,36
-mov $3,70
-mov $4,134
-sub $0,5
+mov $1,1
+mov $3,1
+mov $4,1
+sub $0,2
 lpb $0
-  rol $1,4
-  add $4,$1
-  add $4,$2
-  add $4,$3
   sub $0,1
+  ror $1,4
+  add $4,$2
+  add $1,$4
 lpe
 mov $0,$1
+mul $0,2

@@ -1,19 +1,28 @@
 ; A075156: Binomial transform of pentanacci numbers A074048: a(n) = Sum_{k=0..n} binomial(n,k)*A074048(k).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 5,6,10,24,70,216,664,2008,5998,17808,52770,156360,463492,1374392,4076222,12090144,35859742,106359928,315460168,935639768,2775057510,8230670416,24411730298,72403913480,214746249796,636926269816
+; Formula: a(n) = 14*a(n-3)+6*a(n-1)+2*a(n-5)-7*a(n-4)-13*a(n-2), a(11) = 156360, a(10) = 52770, a(9) = 17808, a(8) = 5998, a(7) = 2008, a(6) = 664, a(5) = 216, a(4) = 70, a(3) = 24, a(2) = 10, a(1) = 6, a(0) = 5
 
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,74048 ; Pentanacci numbers with initial conditions a(0)=5, a(1)=1, a(2)=3, a(3)=7, a(4)=15.
-  mul $1,$0
-  add $3,$1
+mov $1,5
+mov $2,6
+mov $3,10
+mov $4,24
+mov $5,70
+lpb $0
+  mul $1,2
+  rol $1,5
+  mov $6,$1
+  mul $6,-7
+  add $5,$6
+  mov $6,$2
+  mul $6,14
+  add $5,$6
+  mov $6,$3
+  mul $6,-13
+  add $5,$6
+  mov $6,$4
+  mul $6,6
+  sub $0,1
+  add $5,$6
 lpe
-mov $0,$3
+mov $0,$1

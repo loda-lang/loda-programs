@@ -1,13 +1,14 @@
 ; A095288: Least middle side of 2^n primitive arithmetic triangles, i.e., primitive Heronian triangles whose sides are in arithmetic progression.
-; Submitted by pututu
+; Submitted by Science United
 ; 4,28,364,6916,214396,7932652,341104036,20807346196,1394092195132,101768730244636,8039729689326244,779853779864645668,80324939326058503804,8755418386540376914636,1111938135090627868158772
-; Formula: a(n) = 4*c(n+1), b(n) = A002476(n)*b(n-1), b(2) = 91, b(1) = 7, b(0) = 1, c(n) = b(n-1), c(2) = 7, c(1) = 1, c(0) = 0
+; Formula: a(n) = 4*c(n+1), b(n) = A002476(d(n-1)%41+1)*b(n-1), b(2) = 91, b(1) = 7, b(0) = 1, c(n) = b(n-1), c(2) = 7, c(1) = 1, c(0) = 0, d(n) = d(n-1)%41+1, d(2) = 2, d(1) = 1, d(0) = 0
 
 mov $1,1
 add $0,1
 lpb $0
   sub $0,1
   mov $2,$1
+  mod $3,41
   mov $1,$3
   add $1,1
   seq $1,2476 ; Primes of the form 6m + 1.

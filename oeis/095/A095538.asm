@@ -1,17 +1,18 @@
 ; A095538: a(n) = 73 written in base n.
-; Submitted by Ralfy
+; Submitted by DukeBox
 ; 1111111111111111111111111111111111111111111111111111111111111111111111111,1001001,2201,1021,243,201,133,111,81,73,67,61,58,53
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,73
+neq $1,0
+mul $1,5
+add $1,68
 lpb $1
   mov $4,$1
   mod $4,$2

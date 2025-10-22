@@ -1,40 +1,17 @@
 ; A086168: a(n) = sum of the first n upper twin primes.
-; Submitted by Cruncher Pete
+; Submitted by Wood
 ; 5,12,25,44,75,118,179,252,355,464,603,754,935,1128,1327,1556,1797,2068,2351,2664,3013,3434,3867,4330,4853,5424,6025,6644,7287,7948,8759,9582,10411,11270,12153,13174,14207,15258,16321,17414,18567,19798,21077,22368,23671,24992,26421,27874,29357,30846,32455,34076,35745,37444,39167,40956,42829,44708,46641,48592,50591,52620,54703,56792,58905,61036,63179,65418,67687,69998,72339,74722,77273,79866,82525,85214,87927,90658,93449,96252
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mul $1,2
-mov $2,$0
 mov $3,$0
-add $3,8
-pow $3,3
+sub $0,1
 lpb $3
-  max $6,2
-  mov $4,$6
-  mul $4,2
-  mov $7,$4
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,3
-  sub $4,$7
-  mul $7,$4
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$7
-  mov $5,$0
-  max $5,1
-  equ $5,$0
-  add $6,3
+  sub $3,1
+  add $1,1
+  mov $0,$1
+  seq $0,1359 ; Lesser of twin primes.
+  add $0,2
   add $2,$0
-  mul $3,$5
-  sub $3,18
 lpe
 mov $0,$2
-mul $0,12
-add $0,8
-add $0,$1
-div $0,2
-add $0,1

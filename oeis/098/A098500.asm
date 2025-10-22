@@ -1,26 +1,25 @@
 ; A098500: Number of squares on infinite quarter chessboard at <=n knight moves from the corner.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,12,32,59,91,130,176,229,289,356,430,511,599,694,796,905,1021,1144,1274,1411,1555,1706,1864,2029,2201,2380,2566,2759,2959,3166,3380,3601,3829,4064,4306,4555,4811,5074,5344,5621,5905,6196,6494,6799,7111,7430
-; Formula: a(n) = b(n)+1, b(n) = 7*n+4*(n>=3)-2*(n>=5)-5*(n>=1)+b(n-1), b(0) = 0
+; Formula: a(n) = 3*a(n-1)-3*a(n-2)+a(n-3), a(13) = 599, a(12) = 511, a(11) = 430, a(10) = 356, a(9) = 289, a(8) = 229, a(7) = 176, a(6) = 130, a(5) = 91, a(4) = 59, a(3) = 32, a(2) = 12, a(1) = 3, a(0) = 1
 
+mov $1,1
+mov $2,3
+mov $3,12
+mov $4,32
+mov $5,59
+mov $6,91
+mov $7,130
 lpb $0
-  mov $3,$0
-  geq $3,1
-  mul $3,-5
-  mov $4,$3
-  mov $3,$0
-  geq $3,3
-  mul $3,4
-  add $4,$3
-  mov $3,$0
-  geq $3,5
-  mul $3,-2
-  add $4,$3
-  mov $2,$0
-  mul $2,7
-  add $2,$4
+  mul $1,0
+  rol $1,7
+  mov $8,$5
+  mul $8,-3
+  add $7,$4
+  add $7,$8
+  mov $8,$6
+  mul $8,3
   sub $0,1
-  add $1,$2
+  add $7,$8
 lpe
 mov $0,$1
-add $0,1
