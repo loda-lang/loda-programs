@@ -1,10 +1,31 @@
 ; A045509: Factorials having initial digit '1'.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,120,1307674368000,121645100408832000,1124000727777607680000,15511210043330985984000000,10888869450418352160768000000,10333147966386144929666651337523200000000,13763753091226345046315979581580902400000000
-; Formula: a(n) = A045520(n+1)!
 
 #offset 1
 
 add $0,1
-seq $0,45520 ; Numbers k such that k! has initial digit '1'.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,$0
+sub $0,1
+pow $4,2
+lpb $4
+  mov $7,1
+  fac $7,$3
+  mov $8,$7
+  log $8,10
+  mov $1,10
+  pow $1,$8
+  mov $5,$7
+  div $5,$1
+  equ $5,1
+  sub $0,$5
+  add $3,1
+  mov $6,$0
+  max $6,0
+  equ $6,$0
+  mul $4,$6
+  sub $4,1
+lpe
+mov $2,1
+fac $2,$3
+mov $0,$2

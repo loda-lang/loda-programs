@@ -9,16 +9,14 @@ mov $9,2
 mov $10,3
 mov $11,4
 lpb $0
-  sub $0,1
-  mov $12,$1
-  add $12,$2
-  add $12,$3
-  add $12,$4
-  add $12,$5
-  add $12,$6
-  add $12,$7
-  add $12,$8
   rol $1,11
-  mov $11,$12
+  add $11,$1
+  add $11,$2
+  add $11,$3
+  add $11,$4
+  add $11,$5
+  add $11,$6
+  add $11,$7
+  sub $0,1
 lpe
 mov $0,$1

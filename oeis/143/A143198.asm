@@ -1,20 +1,18 @@
 ; A143198: Triangle read by rows T(n, k) = n + (n+1)*(k-1)*(k+2)/2.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; -1,-1,1,-1,2,8,-1,3,11,23,-1,4,14,29,49,-1,5,17,35,59,89,-1,6,20,41,69,104,146,-1,7,23,47,79,119,167,223,-1,8,26,53,89,134,188,251,323,-1,9,29,59,99,149,209,279,359,449,-1,10,32,65,109,164,230,307,395,494,604,-1,11,35,71,119,179,251,335,431,539,659,791,-1,12
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1,2)*(truncate((sqrtint(8*n+8)-1)/2)+1)-1
+; Formula: a(n) = floor((sqrtint(8*n+8)+1)/2)*binomial(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+1,2)-1
 
 add $0,1
+mov $2,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
 mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
+bin $1,2
+sub $2,$1
 bin $2,2
-sub $0,$2
-bin $0,2
-add $1,1
-mul $1,$0
-sub $1,1
-mov $0,$1
+mul $2,$0
+sub $2,1
+mov $0,$2

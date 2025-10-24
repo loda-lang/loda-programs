@@ -1,30 +1,28 @@
 ; A079981: Number of permutations satisfying -k<=p(i)-i<=r and p(i)-i not in I, i=1..n, with k=3, r=3, I={-2,0,1,2}.
-; Submitted by Sir Stooper
+; Submitted by loader3229
 ; 1,0,0,0,1,0,2,0,3,0,8,0,12,0,27,0,52,0,95,0,196,0,369,0,720,0,1408,0,2709,0,5292,0,10249,0,19894,0,38675,0,74992,0,145692,0,282823,0,549000,0,1066095,0,2069496,0,4018065,0,7801024,0,15144960,0,29404281,0
 
-mov $1,-1
-pow $1,$0
-add $1,1
-mov $2,1
-mov $3,4
-dif $0,2
+mov $1,1
+mov $5,1
+mov $7,2
+mov $9,3
+mov $11,8
+mov $13,12
+mov $15,27
+mov $17,52
 lpb $0
+  rol $1,18
+  add $18,$4
+  sub $18,$6
+  sub $18,$6
+  add $18,$8
+  add $18,$8
+  add $18,$10
+  add $18,$10
+  mov $19,$12
+  mul $19,4
   sub $0,1
-  sub $4,$5
-  mov $6,$2
-  add $6,$3
-  mov $7,$5
-  sub $9,$2
-  add $2,$4
-  add $2,$9
-  mov $5,$3
-  mov $9,$4
-  add $3,$8
-  mov $4,$6
-  mov $8,$7
+  add $18,$19
+  add $18,$14
 lpe
-mul $2,$3
-mov $0,$2
-div $0,4
-mul $0,$1
-div $0,2
+mov $0,$1

@@ -1,5 +1,5 @@
 ; A044700: Numbers n such that string 7,5 occurs in the base 9 representation of n but not of n+1.
-; Submitted by DukeBox
+; Submitted by fix
 ; 68,149,230,311,392,473,554,620,635,716,797,878,959,1040,1121,1202,1283,1349,1364,1445,1526,1607,1688,1769,1850,1931,2012,2078,2093,2174,2255,2336,2417,2498,2579,2660,2741,2807,2822
 
 #offset 1
@@ -17,13 +17,11 @@ mov $10,717
 mov $11,798
 sub $0,1
 lpb $0
-  sub $0,1
   mul $1,-1
-  mov $12,$1
-  add $12,$2
-  add $12,$11
   rol $1,11
-  mov $11,$12
+  add $11,$1
+  add $11,$10
+  sub $0,1
 lpe
 mov $0,$1
 sub $0,1

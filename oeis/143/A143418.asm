@@ -1,20 +1,18 @@
 ; A143418: Triangle read by rows. T(n,k) = binomial(n,k)*(binomial(n,k)-1)/2.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,3,3,6,15,6,10,45,45,10,15,105,190,105,15,21,210,595,595,210,21,28,378,1540,2415,1540,378,28,36,630,3486,7875,7875,3486,630,36,45,990,7140,21945,31626,21945,7140,990,45,55,1485,13530,54285,106491,106491,54285,13530,1485,55,66,2145,24090,122265,313236,426426,313236,122265,24090,2145,66,78,3003,40755,255255,827541,1471470,1471470,827541,255255,40755,3003,78,91,4095
-; Formula: a(n) = binomial(binomial(truncate((sqrtint(8*n)-1)/2)+2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n),2)
+; Formula: a(n) = binomial(binomial(floor((sqrtint(8*n)+1)/2)+1,-binomial(floor((sqrtint(8*n)+1)/2),2)+n),2)
 
 #offset 1
 
+mov $2,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
 mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-add $1,2
-bin $1,$0
 bin $1,2
-mov $0,$1
+sub $2,$1
+add $0,1
+bin $0,$2
+bin $0,2

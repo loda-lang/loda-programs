@@ -1,67 +1,31 @@
 ; A046983: Denominators of Taylor series for tan(x + Pi/4).
-; Submitted by 10esseeTony
+; Submitted by Checco
 ; 1,1,1,3,3,15,45,315,63,2835,14175,155925,93555,6081075,42567525,638512875,127702575,10854718875,97692469875,1856156927625,371231385525,194896477400625,2143861251406875,2900518163668125,2275791174570375,3698160658676859375,48076088562799171875,1298054391195577640625,95646113035463615625,263505041412702261046875,3952575621190533915703125,122529844256906551386796875,1441527579493018251609375,4043484860477916195764296875,68739242628124575327993046875,2405873491984360136479756640625
-; Formula: a(n) = floor((n!)/gcd(A008280((truncate((sqrtint(-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-binomial(n,2)+floor(sqrtint(8*binomial(n,2)+8)/2))+8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*binomial(floor(sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2))/2),2)+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-8*binomial(n,2)+8)-1)/2)+1)^2+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-binomial(n,2)+floor(sqrtint(8*binomial(n,2)+8)/2))-(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(floor(sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2))/2),2)-floor(sqrtint(8*binomial(n,2)+8)/2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)+binomial(n,2)-1)*2^n,n!))
 
-mov $2,2
-pow $2,$0
 mov $1,$0
-bin $1,2
 add $1,1
-mov $6,$1
-mul $6,8
-nrt $6,2
-sub $6,1
-div $6,2
-add $6,1
-pow $6,2
-sub $6,$1
-mul $1,8
-nrt $1,2
-div $1,2
-mov $4,$6
-add $4,$1
-mov $5,$4
-add $5,2
-mov $7,$5
-mul $7,8
-nrt $7,2
-sub $7,1
-div $7,2
-mov $8,$7
-add $8,1
-bin $8,2
-sub $5,$8
-sub $5,1
-mov $9,$7
-mod $9,2
-mul $9,$5
-sub $5,$9
-add $5,$4
+lpb $1
+  sub $1,1
+  add $2,$7
+  sub $2,$3
+  mov $7,$6
+  add $7,1
+  trn $7,$1
+  pow $7,$0
+  add $7,$2
+  mov $8,$0
+  bin $8,$6
+  mul $8,$7
+  add $3,$7
+  add $6,1
+  mul $7,-1
+  sub $3,$7
+  mul $4,-1
+  add $4,$8
+lpe
+mov $5,1
+fac $5,$0
 mov $1,$4
-add $1,1
-mov $10,$1
-mul $10,8
-nrt $10,2
-div $10,2
-bin $10,2
-sub $1,$10
-sub $5,$1
-mov $1,$5
-add $1,2
-mov $3,$1
-mul $3,8
-nrt $3,2
-sub $3,1
-div $3,2
-add $3,1
-pow $3,2
-sub $3,$1
-mov $1,$3
-seq $1,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
-mov $11,1
-fac $11,$0
-mul $1,$2
-gcd $1,$11
-mov $0,$11
+gcd $1,$5
+mov $0,$5
 div $0,$1

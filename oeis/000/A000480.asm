@@ -12,16 +12,11 @@ fil $16,3
 mov $22,-1
 fil $22,3
 lpb $0
+  mov $1,0
+  rol $1,24
+  add $24,$1
+  sub $24,$2
+  add $24,$23
   sub $0,1
-  mul $1,0
-  mov $25,$1
-  add $25,$2
-  mov $1,$2
-  mov $2,$3
-  mul $3,-1
-  add $25,$3
-  add $25,$24
-  rol $3,22
-  mov $24,$25
 lpe
 mov $0,$1

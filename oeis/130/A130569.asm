@@ -1,22 +1,44 @@
 ; A130569: Numbers of the form k*2^m + 1 for k odd, m >=1, that are not Proth numbers (A080075) (2^m <= k).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 7,11,15,19,21,23,27,29,31,35,37,39,43,45,47,51,53,55,59,61,63,67,69,71,73,75,77,79,83,85,87,89,91,93,95,99,101,103,105,107,109,111,115,117,119,121,123,125,127,131,133,135,137,139,141,143,147,149,151,153,155
 
 #offset 1
 
+mov $1,3
+mov $2,5
+mov $3,7
+mov $4,9
+mov $5,10
+mov $6,11
+mov $7,13
+mov $8,14
+mov $9,15
+mov $10,17
+mov $11,18
+mov $12,19
+mov $13,21
+mov $14,22
+mov $15,23
+mov $16,25
+mov $17,26
+mov $18,27
+mov $19,29
+mov $20,30
+mov $21,31
+mov $22,33
+mov $23,34
+mov $24,35
+mov $25,36
+mov $26,37
 sub $0,1
-mov $2,$0
 lpb $0
-  mov $1,$2
-  add $1,1
-  add $3,1
-  mov $0,$2
-  div $0,$3
-  sub $0,$3
-  sub $0,2
-  mul $3,2
-  add $0,$3
+  mov $1,0
+  rol $1,26
+  sub $26,$18
+  add $26,$19
+  add $26,$25
+  sub $0,1
 lpe
-add $0,$1
+mov $0,$1
 mul $0,2
-add $0,7
+add $0,1

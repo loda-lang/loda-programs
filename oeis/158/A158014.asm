@@ -1,28 +1,31 @@
 ; A158014: Primes p such that (p-1)/8 is also prime.
-; Submitted by WTBroughton
+; Submitted by Icecold
 ; 17,41,89,137,233,569,809,857,1049,1097,1193,1433,1913,2153,2777,3209,3449,3593,3833,3929,4073,4457,4793,4937,5273,5417,6089,6473,6569,6857,7433,7529,7577,7817,9209,9497,9833,10313,10457,10889,10937,11273,11897,12473,12569,12809,12953,13337,13577,14489,14969,15017,16217,16553,16649,16889,17033,17657,18713,19289,19577,20249,20393,20873,21929,22409,22697,23417,23753,23993,24329,24953,25097,25673,26393,26633,26777,27689,27737,28649
 
 #offset 1
 
-mov $2,$0
+mov $3,1
+mov $4,$0
 sub $0,1
-add $2,5
-pow $2,3
-lpb $2
-  add $3,8
+pow $4,2
+lpb $4
+  mov $5,$3
+  seq $5,40 ; The prime numbers.
   mov $1,$5
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,17
+  add $3,1
+  mov $5,9
+  mul $5,$1
+  sub $5,$1
   add $5,1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  mov $2,$0
+  max $2,0
+  equ $2,$0
+  mul $4,$2
+  trn $4,1
 lpe
-mov $0,$3
-add $0,9
+mov $0,$1
+div $0,3
+mul $0,24
+add $0,17

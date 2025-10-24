@@ -1,5 +1,5 @@
 ; A044313: Numbers k such that the string 6,8 occurs in the base 9 representation of k but not of k-1.
-; Submitted by DukeBox
+; Submitted by 10esseeTony
 ; 62,143,224,305,386,467,548,558,629,710,791,872,953,1034,1115,1196,1277,1287,1358,1439,1520,1601,1682,1763,1844,1925,2006,2016,2087,2168,2249,2330,2411,2492,2573,2654,2735,2745,2816,2897,2978,3059,3140,3221,3302,3383,3464
 
 #offset 1
@@ -17,12 +17,10 @@ mov $10,710
 mov $11,791
 sub $0,1
 lpb $0
-  sub $0,1
   mul $1,-1
-  mov $12,$1
-  add $12,$2
-  add $12,$11
   rol $1,11
-  mov $11,$12
+  add $11,$1
+  add $11,$10
+  sub $0,1
 lpe
 mov $0,$1

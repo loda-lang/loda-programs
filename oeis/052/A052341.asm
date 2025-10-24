@@ -7,19 +7,15 @@ fil $1,3
 mov $4,-3
 mov $5,7
 lpb $0
+  rol $1,5
+  add $5,$1
+  sub $5,$2
+  mov $6,$3
+  mul $6,-3
+  add $5,$6
+  mov $6,$4
+  mul $6,-3
   sub $0,1
-  mov $6,$1
-  add $6,$2
-  mov $1,$2
-  mov $2,$3
-  mul $3,-1
-  add $6,$3
-  mov $3,$4
-  mul $4,-3
-  add $6,$4
-  mov $4,$5
-  mul $5,-3
-  add $6,$5
-  mov $5,$6
+  add $5,$6
 lpe
 mov $0,$1

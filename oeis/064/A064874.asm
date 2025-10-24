@@ -1,5 +1,5 @@
 ; A064874: Second of four sequences representing the lexicographical minimal decomposition of n in 4 squares: n = A064873(n)^2 + a(n)^2 + A064875(n)^2 + A064876(n)^2.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,0,0,1,0,0,1,1,0,0,0,1,2,0,1,1,0,0,0,1,0,1,2,2,2,0,0,1,1,0,1,1,0,1,0,1,0,0,1,1,0,0,1,3,2,0,1,1,4,0,0,1,0,0,1,1,2,2,0,1,1,0,1,1,0,0,1,3,0,1,3,3,0,0,0,1,2,2,2,2
 
 mov $1,$0
@@ -13,7 +13,6 @@ lpb $1
   sub $1,1
   add $2,1
 lpe
-pow $2,2
 sub $0,$2
 mov $2,0
 lpb $1

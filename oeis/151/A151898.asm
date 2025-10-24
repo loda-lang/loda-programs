@@ -1,24 +1,66 @@
 ; A151898: First differences of Frobenius numbers for 7 successive numbers A138987.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,1,1,1,1,9,2,2,2,2,2,16,3,3,3,3,3,23,4,4,4,4,4,30,5,5,5,5,5,37,6,6,6,6,6,44,7,7,7,7,7,51,8,8,8,8,8,58,9,9,9,9,9,65,10,10,10,10,10,72,11,11,11,11,11,79,12,12,12,12,12,86,13,13,13,13,13,93,14,14
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$1
-  add $0,$4
-  mov $2,$0
-  add $0,2
-  div $2,6
-  mul $2,$0
-  mov $3,$4
-  mul $3,$2
-  add $5,$3
+mov $2,1
+fil $2,5
+mov $7,9
+mov $8,2
+fil $8,4
+lpb $0
+  mov $13,$1
+  mul $13,21
+  add $13,166
+  mul $2,$13
+  rol $2,10
+  mov $13,$1
+  mul $13,-33
+  sub $13,322
+  mov $12,$2
+  mul $12,$13
+  mul $13,0
+  add $13,6
+  add $11,$12
+  mov $12,$3
+  mul $12,$13
+  mul $13,0
+  add $13,4
+  add $11,$12
+  mov $12,$4
+  mul $12,$13
+  mul $13,0
+  add $13,2
+  add $11,$12
+  mov $12,$5
+  mul $12,$13
+  mov $13,$1
+  mul $13,-21
+  sub $13,40
+  add $11,$12
+  mov $12,$7
+  mul $12,$13
+  mov $13,$1
+  mul $13,33
+  add $13,124
+  add $11,$12
+  mov $12,$8
+  mul $12,$13
+  mul $13,0
+  sub $13,6
+  add $11,$12
+  mov $12,$9
+  mul $12,$13
+  mul $13,0
+  sub $13,4
+  add $11,$12
+  mov $12,$10
+  mul $12,$13
+  add $11,$12
+  div $11,2
+  sub $0,1
+  add $1,1
 lpe
-sub $5,$2
-mov $0,$5
-add $0,1
+mov $0,$2

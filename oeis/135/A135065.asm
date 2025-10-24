@@ -1,22 +1,19 @@
 ; A135065: A127733 * A007318 as infinite lower triangular matrices.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,4,4,9,18,9,16,48,48,16,25,100,150,100,25,36,180,360,360,180,36,49,294,735,980,735,294,49,64,448,1344,2240,2240,1344,448,64,81,648,2268,4536,5670,4536,2268,648,81,100,900,3600,8400,12600,12600,8400,3600,900,100,121,1210,5445,14520,25410,30492,25410,14520,5445,1210,121,144,1584,7920,23760,47520,66528,66528,47520,23760,7920,1584,144,169,2028
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(truncate((sqrtint(8*n+8)-1)/2)+1)^2
+; Formula: a(n) = max(0,floor((sqrtint(8*n+8)+1)/2))*binomial(floor((sqrtint(8*n+8)+1)/2),-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+1)*(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+1)
 
 add $0,1
+mov $2,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
 mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $3,$1
-add $3,1
-bin $3,2
-sub $0,$3
-sub $0,1
-mov $2,$1
-add $2,1
-bin $1,$0
+bin $1,2
+sub $2,$1
+max $3,$0
+bin $0,$2
+mul $0,$3
+mul $2,$0
 mov $0,$2
-pow $0,2
-mul $0,$1

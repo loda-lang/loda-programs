@@ -6,12 +6,10 @@ mov $1,1
 mov $6,1
 fil $6,3
 lpb $0
-  sub $0,1
-  mov $9,$1
-  add $9,$2
-  add $9,$3
-  add $9,$4
   rol $1,8
-  mov $8,$9
+  add $8,$1
+  add $8,$2
+  add $8,$3
+  sub $0,1
 lpe
 mov $0,$1

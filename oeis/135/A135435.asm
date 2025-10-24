@@ -5,15 +5,8 @@
 mov $2,7
 mov $6,4
 lpb $0
+  rol $2,7
+  add $8,$4
   sub $0,1
-  mov $1,$2
-  add $1,$5
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$1
 lpe
 mov $0,$2

@@ -17,6 +17,7 @@ lpb $0
   add $4,1
   add $3,$2
   add $1,$0
+  mod $1,$3
   bin $1,2
   pow $1,2
   add $2,$4

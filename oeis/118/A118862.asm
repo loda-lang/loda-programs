@@ -1,27 +1,23 @@
 ; A118862: Start with 1 and repeatedly place the first digit at the end of the number and add 15.
-; Submitted by sjmielh
+; Submitted by loader3229
 ; 1,16,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(c(n-1),1)+1)-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/100)+truncate(b(n-1)/10)+15, b(1) = 16, b(0) = 1, c(n) = 9*min(c(n-1),1)+1, c(1) = 1, c(0) = 0
+; Formula: a(n) = b(n-1), b(n) = b(n-6), b(11) = 49, b(10) = 43, b(9) = 82, b(8) = 76, b(7) = 106, b(6) = 109, b(5) = 49, b(4) = 43, b(3) = 82, b(2) = 76, b(1) = 16, b(0) = 1
 
 #offset 1
 
 mov $1,1
+mov $2,16
+mov $3,76
+mov $4,82
+mov $5,43
+mov $6,49
+mov $7,109
+mov $8,106
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,8
+  add $8,$2
   sub $0,1
-  mov $3,$1
-  div $3,100
-  mov $2,$1
-  div $2,10
-  mod $2,10
-  sub $2,24
-  add $2,$3
-  min $4,1
-  mul $4,9
-  add $4,1
-  mod $1,10
-  mul $1,$4
-  add $1,$2
-  add $1,39
 lpe
 mov $0,$1

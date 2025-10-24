@@ -1,17 +1,17 @@
 ; A126392: Number of base 5 n-digit numbers with adjacent digits differing by two or less.
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 1,5,19,75,295,1161,4569,17981,70763,278483,1095951,4313041,16973681,66798773,262882051,1034554523,4071419319,16022795225,63056626377,248155086189,976597549531,3843333571747,15125179200799,59524119253665
-; Formula: a(n) = 4*c(n-1)+2*b(n-1)+a(n-1), a(2) = 19, a(1) = 5, a(0) = 1, b(n) = b(n-1)+c(n-1), b(2) = 4, b(1) = 1, b(0) = 0, c(n) = 2*c(n-1)+b(n-1)+a(n-1), c(2) = 12, c(1) = 3, c(0) = 1
+; Formula: a(n) = 4*a(n-1)-a(n-3), a(4) = 295, a(3) = 75, a(2) = 19, a(1) = 5, a(0) = 1
 
-mov $2,1
-mov $4,1
+mov $1,1
+mov $2,5
+mov $3,19
 lpb $0
-  sub $0,1
-  add $1,$2
-  add $2,$1
-  mov $3,$4
+  mul $1,-1
+  rol $1,3
   mov $4,$2
-  add $2,$3
-  add $4,$2
+  mul $4,4
+  sub $0,1
+  add $3,$4
 lpe
-mov $0,$4
+mov $0,$1

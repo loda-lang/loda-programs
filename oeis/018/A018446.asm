@@ -1,18 +1,18 @@
 ; A018446: Divisors of 424.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,2,4,8,53,106,212,424
-; Formula: a(n) = 37*(a(n-3)==2)+2*a(n-1), a(3) = 4, a(2) = 2, a(1) = 1
+; Formula: a(n) = b(n-1)+c(n-1), b(n) = 37, b(6) = 37, b(5) = 37, b(4) = 37, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)+37, c(6) = 175, c(5) = 69, c(4) = 16, c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 1
 
 #offset 1
 
-mov $1,1
+mov $6,1
 sub $0,1
 lpb $0
+  rol $1,6
+  mov $4,37
+  add $6,$5
+  add $6,$5
   sub $0,1
-  ror $1,3
-  mul $1,37
-  add $1,$2
-  add $1,$2
-  equ $3,2
 lpe
-mov $0,$1
+add $6,$1
+mov $0,$6

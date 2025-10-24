@@ -1,22 +1,26 @@
 ; A121123: Unbranched a-4-catapolynonagons (see Brunvoll reference for precise definition).
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,3,12,63,342,1998,11772,70308,420552,2521368,15120432,90710928,544218912,3265243488,19591180992,117546666048,705278316672,4231667380608,25389994205952,152339950119168,914039640248832,5484237750793728,32905426141965312,197432556307596288
 
 #offset 2
 
+mov $1,1
+mov $2,3
+mov $3,12
+mov $4,63
 sub $0,2
-mov $1,6
-pow $1,$0
-mov $2,1
 lpb $0
+  mul $1,0
+  rol $1,4
+  mov $5,$1
+  mul $5,-36
+  add $4,$5
+  mov $5,$2
+  mul $5,6
+  add $4,$5
+  mov $5,$3
+  mul $5,6
   sub $0,1
-  gcd $3,2
-  add $3,1
-  mul $2,$3
+  add $4,$5
 lpe
-mov $0,$2
-mul $0,2
-sub $0,1
-add $0,$1
-div $0,4
-add $0,1
+mov $0,$1

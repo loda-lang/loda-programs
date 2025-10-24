@@ -1,14 +1,19 @@
 ; A156089: Alternating sum of the squares of the first n odd-indexed Fibonacci numbers.
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 0,-1,3,-22,147,-1009,6912,-47377,324723,-2225686,15255075,-104559841,716663808,-4912086817,33667943907,-230763520534,1581676699827,-10840973378257,74305136947968,-509294985257521,3490759759854675
+; Formula: a(n) = 7*a(n-3)-7*a(n-1)+a(n-4), a(7) = -47377, a(6) = 6912, a(5) = -1009, a(4) = 147, a(3) = -22, a(2) = 3, a(1) = -1, a(0) = 0
 
-mul $0,2
+mov $2,-1
+mov $3,3
+mov $4,-22
 lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,107840 ; a(n)= 3*a(n-1) -3*a(n-3) +a(n-4), n>6.
-  sub $0,2
-  add $1,$2
-  mul $1,-1
+  rol $1,4
+  mov $5,$1
+  mul $5,7
+  add $4,$5
+  mov $5,$3
+  mul $5,-7
+  sub $0,1
+  add $4,$5
 lpe
 mov $0,$1

@@ -1,27 +1,65 @@
 ; A014311: Numbers with exactly 3 ones in binary expansion.
-; Submitted by Time_Traveler
+; Submitted by BrandyNOW
 ; 7,11,13,14,19,21,22,25,26,28,35,37,38,41,42,44,49,50,52,56,67,69,70,73,74,76,81,82,84,88,97,98,100,104,112,131,133,134,137,138,140,145,146,148,152,161,162,164,168,176,193,194,196,200,208,224,259,261,262,265,266,268,273,274,276,280,289,290,292,296,304,321,322,324,328,336,352,385,386,388
+; Formula: a(n) = truncate(2^(-binomial(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1,3)-binomial(truncate((sqrtint(8*n-8*binomial(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1,3)-7)+1)/2),2)+n-1))+truncate(2^(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1))+truncate(2^(truncate((sqrtint(8*n-8*binomial(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1,3))-1)/2)+1))
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,3
-pow $2,2
-lpb $2
-  mov $5,$1
-  add $5,1
-  dgs $5,2
-  mov $3,$5
-  sub $3,2
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
+mov $1,2
+fil $1,3
+mov $4,$0
+mov $5,$0
+mov $6,$0
+mul $6,6
+nrt $6,3
+mov $7,$6
+add $7,2
+bin $7,3
+mov $8,$0
+geq $8,$7
+add $8,$6
+add $8,1
+bin $8,3
+sub $0,$8
+mov $9,$0
+mul $9,8
+add $9,1
+nrt $9,2
+add $9,1
+div $9,2
+bin $9,2
+mov $10,$4
+mul $10,6
+nrt $10,3
+mov $11,$10
+add $11,2
+bin $11,3
+mov $12,$4
+geq $12,$11
+add $12,$10
+add $12,1
+bin $12,3
+sub $0,$9
+sub $4,$12
+add $4,1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+mov $13,$5
+mul $13,6
+nrt $13,3
+mov $14,$13
+add $14,2
+bin $14,3
+geq $5,$14
+add $5,$13
+add $5,1
+pow $2,$4
+pow $3,$5
+pow $1,$0
+add $1,$2
+add $1,$3
 mov $0,$1
-add $0,1

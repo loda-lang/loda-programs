@@ -1,32 +1,15 @@
 ; A140087: Decimal expansion of a lower bound of the area of a convex universal cover for a unit length curve.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 2,3,2,2,3,9,2,1,0
-; Formula: a(n) = -10*truncate((-13*truncate(truncate(((sqrtnint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1,3)+1)^3)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))/13)+truncate(((sqrtnint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1,3)+1)^3)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))+1)/10)-13*truncate(truncate(((sqrtnint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1,3)+1)^3)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))/13)+truncate(((sqrtnint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1,3)+1)^3)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))+1
+; Formula: a(n) = -10*truncate((binomial((-n-3*truncate((-n)/3))^3,-n^2+1)+2)/10)+binomial((-n-3*truncate((-n)/3))^3,-n^2+1)+2
 
-mov $1,$0
-add $1,1
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$0
+sub $1,$0
+pow $0,2
+sub $2,$0
 add $2,1
-mov $3,$2
-mul $2,8
-nrt $2,2
-add $2,3
-div $2,2
-bin $2,2
-sub $2,$3
-mov $0,10
-pow $0,$1
-sub $0,1
-nrt $0,3
-add $0,1
-pow $0,3
-mov $1,10
-pow $1,$2
-div $0,$1
-mod $0,13
-add $0,1
+mod $1,3
+pow $1,3
+bin $1,$2
+mov $0,$1
+add $0,2
 mod $0,10

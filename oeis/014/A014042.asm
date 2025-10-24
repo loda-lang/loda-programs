@@ -7,41 +7,21 @@ fil $1,3
 mov $12,-1
 fil $12,3
 lpb $0
-  sub $0,1
   mul $1,-1
-  mov $21,$1
-  add $21,$2
-  rol $1,3
-  mov $3,$4
-  mul $4,-1
-  add $21,$4
-  add $21,$5
-  rol $4,3
-  mov $6,$7
-  mul $7,-1
-  add $21,$7
-  add $21,$8
-  rol $7,3
-  mov $9,$10
-  mul $10,-1
-  add $21,$10
-  add $21,$11
-  mov $10,$11
-  mov $11,$12
-  mul $12,-1
-  add $21,$12
-  add $21,$14
-  rol $12,3
-  mov $14,$15
-  mul $15,-1
-  add $21,$15
-  add $21,$17
-  rol $15,3
-  mov $17,$18
-  mul $18,-1
-  add $21,$18
-  add $21,$20
-  rol $18,3
-  mov $20,$21
+  rol $1,20
+  add $20,$1
+  sub $20,$3
+  add $20,$4
+  sub $20,$6
+  add $20,$7
+  sub $20,$9
+  add $20,$10
+  sub $20,$11
+  add $20,$13
+  sub $20,$14
+  add $20,$16
+  sub $20,$17
+  add $20,$19
+  sub $0,1
 lpe
 mov $0,$1
