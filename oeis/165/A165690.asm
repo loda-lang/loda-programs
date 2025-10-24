@@ -1,53 +1,23 @@
 ; A165690: Number of reduced words of length n in Coxeter group on 40 generators S_i with relations (S_i)^2 = (S_i S_j)^9 = I.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 1,40,1560,60840,2372760,92537640,3608967960,140749750440,5489240267160,214080370418460,8349134446289520,325616243404105680,12699033492713883120,495262306214038144080,19315229942277159012720
 
-mov $10,1
+mov $1,1
+mov $3,1
 lpb $0
   sub $0,1
-  mov $1,$2
-  mul $2,-741
-  mov $11,$2
-  mov $2,$3
+  ror $3,18
+  add $13,$5
+  add $14,$20
+  mov $2,$20
+  mul $2,779
+  mov $3,$1
   mul $3,38
-  add $11,$3
-  mov $3,$4
-  mul $4,38
-  add $11,$4
-  mov $4,$5
-  mul $5,38
-  add $11,$5
-  mov $5,$6
-  mul $6,38
-  add $11,$6
-  mov $6,$7
-  mul $7,38
-  add $11,$7
-  mov $7,$8
-  mul $8,38
-  add $11,$8
-  mov $8,$9
-  mul $9,38
-  add $11,$9
-  mov $9,$10
-  mul $10,38
-  add $10,$11
+  sub $3,$2
+  sub $1,$20
+  add $1,$3
 lpe
 mov $0,$1
-add $0,$2
-add $0,$2
-add $0,$3
-add $0,$3
-add $0,$4
-add $0,$4
-add $0,$5
-add $0,$5
-add $0,$6
-add $0,$6
-add $0,$7
-add $0,$7
-add $0,$8
-add $0,$8
-add $0,$9
-add $0,$9
-add $0,$10
+add $0,$1
+add $0,$20
+sub $0,$3

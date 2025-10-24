@@ -1,5 +1,5 @@
 ; A175411: a(n) = Sum_{i=(n*n-n+2)/2..(n*n+n)/2} i!.
-; Submitted by Science United
+; Submitted by Icecold
 ; 1,8,864,4037040,1401598598400,53652268264218624000,316196664157721349185863680000,382630662500715988102392981826830336000000,122342346998826334909002798912467017444232685158400000000,12931604174610554670466196146308122246477496321113350463375278080000000000
 
 #offset 1
@@ -13,7 +13,7 @@ lpb $0
   mov $3,1
   fac $3,$4
   mov $5,0
-  seq $5,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  seq $5,167900 ; Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^16 = I.
   mul $5,$3
   add $1,$5
 lpe

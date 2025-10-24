@@ -1,22 +1,30 @@
 ; A201618: Number of n X 1 0..3 arrays with rows and columns lexicographically nondecreasing and every element equal to at least one horizontal or vertical neighbor.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 0,4,4,10,16,26,40,59,84,116,156,205,264,334,416,511,620,744,884,1041,1216,1410,1624,1859,2116,2396,2700,3029,3384,3766,4176,4615,5084,5584,6116,6681,7280,7914,8584,9291,10036,10820,11644,12509,13416,14366,15360,16399,17484,18616,19796,21025,22304,23634,25016,26451,27940,29484,31084,32741,34456,36230,38064,39959,41916,43936,46020,48169,50384,52666,55016,57435,59924,62484,65116,67821,70600,73454,76384,79391
 
 #offset 1
 
+mov $2,4
+mov $3,4
+mov $4,10
+mov $5,16
+mov $6,26
+mov $7,40
+mov $8,59
 sub $0,1
-mov $3,$0
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $0,$3
-  sub $0,$5
-  mov $1,4
-  bin $1,$0
+lpb $0
+  mov $1,0
+  rol $1,8
+  mov $9,$5
+  mul $9,4
+  sub $8,$4
+  add $8,$9
+  mov $9,$6
+  mul $9,-6
+  add $8,$9
+  mov $9,$7
+  mul $9,4
   sub $0,1
-  mov $2,$5
-  bin $2,$0
-  mul $1,$2
-  add $4,$1
+  add $8,$9
 lpe
-mov $0,$4
+mov $0,$1

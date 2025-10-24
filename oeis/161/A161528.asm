@@ -1,8 +1,11 @@
 ; A161528: Expansion of the q-series Sum_{n >= 0} (-1)^nq^(n(n+1)/2)(1-q)(1-q^2)...(1-q^n)/((1-q^(n+1))(1-q^(n+2))...(1-q^(2n+1))).
-; Submitted by Ralfy
+; Submitted by Pavel_Kirpichenko
 ; 1,0,2,1,0,0,2,1,2,0,0,0,2,0,2,2,1,0,0,0,2,0,0,2,3,0,2,0,0,0,2,0,0,0,2,2,2,0,2,1,0,0,2,0,0,0,0,2,2,0,2,1,2,0,2,0,2,0,0,0,0,0,2,2,0,0,2,0,4,0,0,2,3,0,0,0,0,0,0,2
-; Formula: a(n) = -10*truncate(A050999(5*n+1)/10)+A050999(5*n+1)
 
+lpb $0
+  div $0,131
+  sub $0,1
+lpe
 mul $0,5
 add $0,1
 seq $0,50999 ; Sum of squares of odd divisors of n.

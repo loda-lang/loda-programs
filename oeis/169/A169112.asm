@@ -6,16 +6,13 @@ mov $1,1
 mov $3,1
 lpb $0
   sub $0,1
-  ror $3,30
-  max $13,$10
-  mov $2,$32
-  mul $2,2
+  ror $3,27
   mov $3,$1
-  sub $3,$2
-  sub $1,$32
+  sub $3,$29
+  add $14,$13
   add $1,$3
 lpe
 mov $0,$1
 add $0,$1
-add $0,$32
+add $0,$29
 sub $0,$3

@@ -1,12 +1,28 @@
 ; A181305: Number of increasing columns in all 2-compositions of n.
-; Submitted by Gunnar Hjern
+; Submitted by loader3229
 ; 0,1,5,24,104,432,1736,6820,26332,100308,377996,1411844,5234428,19285252,70670972,257766212,936336572,3388962884,12226547132,43983439684,157814634684,564917186372,2017873643708,7193745818436
+; Formula: a(n) = truncate(b(n)/2), b(n) = 12*b(n-4)+7*b(n-1)-4*b(n-3)-4*b(n-5)-12*b(n-2), b(11) = 2823688, b(10) = 755992, b(9) = 200616, b(8) = 52664, b(7) = 13640, b(6) = 3472, b(5) = 864, b(4) = 208, b(3) = 48, b(2) = 10, b(1) = 2, b(0) = 0
 
+mov $2,2
+mov $3,10
+mov $4,48
+mov $5,208
 lpb $0
-  mov $1,$0
-  seq $1,181331 ; Number of 0's in the top rows of all 2-compositions of n.
-  sub $0,2
-  add $2,$1
+  mul $1,-4
+  rol $1,5
+  mov $6,$1
+  mul $6,12
+  add $5,$6
+  mov $6,$2
+  mul $6,-4
+  add $5,$6
+  mov $6,$3
+  mul $6,-12
+  add $5,$6
+  mov $6,$4
+  mul $6,7
+  sub $0,1
+  add $5,$6
 lpe
-add $2,$0
-mov $0,$2
+mov $0,$1
+div $0,2

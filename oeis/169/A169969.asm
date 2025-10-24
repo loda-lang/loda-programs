@@ -1,23 +1,22 @@
 ; A169969: Locations of row maxima in "crushed" version of Stern's diatomic array.
-; Submitted by 10esseeTony
+; Submitted by loader3229
 ; 1,3,5,7,11,13,21,27,43,53,85,107,171,213,341,427,683,853,1365,1707,2731,3413,5461,6827,10923,13653,21845,27307,43691,54613,87381,109227,174763,218453,349525,436907,699051,873813,1398101,1747627,2796203,3495253,5592405
-; Formula: a(n) = 2*truncate(b(n-1)/3)+1, b(n) = d(n-1)-1, b(2) = 8, b(1) = 5, b(0) = 0, c(n) = -c(n-1)+d(n-1)-1, c(2) = 6, c(1) = 2, c(0) = 3, d(n) = c(n-1)+d(n-1), d(2) = 11, d(1) = 9, d(0) = 6
+; Formula: a(n) = b(n-1), b(n) = 2*b(n-4)+b(n-2), b(7) = 27, b(6) = 21, b(5) = 13, b(4) = 11, b(3) = 7, b(2) = 5, b(1) = 3, b(0) = 1
 
 #offset 1
 
+mov $1,1
 mov $2,3
-mov $3,6
+mov $3,5
+mov $4,7
+mov $5,11
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,5
+  add $5,$1
+  add $5,$1
+  add $5,$3
   sub $0,1
-  add $3,$2
-  mov $1,$3
-  sub $1,$2
-  sub $1,1
-  mul $2,-1
-  add $2,$1
 lpe
 mov $0,$1
-div $0,3
-mul $0,2
-add $0,1

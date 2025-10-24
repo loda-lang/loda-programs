@@ -1,13 +1,27 @@
 ; A181296: The number of odd entries in all the 2-compositions of n.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,2,10,48,208,864,3472,13640,52664,200616,755992,2823688,10468856,38570504,141341944,515532424,1872673144,6777925768,24453094264,87966879368,315629269368,1129834372744,4035747287416,14387491636872
+; Formula: a(n) = 12*a(n-4)+7*a(n-1)-4*a(n-3)-4*a(n-5)-12*a(n-2), a(11) = 2823688, a(10) = 755992, a(9) = 200616, a(8) = 52664, a(7) = 13640, a(6) = 3472, a(5) = 864, a(4) = 208, a(3) = 48, a(2) = 10, a(1) = 2, a(0) = 0
 
+mov $2,2
+mov $3,10
+mov $4,48
+mov $5,208
 lpb $0
-  mov $1,$0
-  seq $1,181331 ; Number of 0's in the top rows of all 2-compositions of n.
-  add $2,$1
-  sub $0,2
+  mul $1,-4
+  rol $1,5
+  mov $6,$1
+  mul $6,12
+  add $5,$6
+  mov $6,$2
+  mul $6,-4
+  add $5,$6
+  mov $6,$3
+  mul $6,-12
+  add $5,$6
+  mov $6,$4
+  mul $6,7
+  sub $0,1
+  add $5,$6
 lpe
-add $2,$0
-mov $0,$2
-mul $0,2
+mov $0,$1

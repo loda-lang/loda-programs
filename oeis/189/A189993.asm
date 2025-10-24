@@ -1,9 +1,16 @@
 ; A189993: Length of the longest run of Ramanujan primes that are consecutive primes < 10^n.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1,2,5,13,13,20,21,26,31
 
 #offset 1
 
+sub $0,1
+mov $1,13
+lpb $1
+  mov $1,$0
+lpe
+mov $0,$1
+add $0,1
 mov $1,$0
 mul $1,2
 mul $0,2

@@ -4,34 +4,22 @@
 
 #offset 1
 
-mov $4,0
-mov $7,0
-mov $8,0
-mov $1,$0
-mul $1,2
-sub $1,1
-mov $3,1
-mov $6,$1
-lpb $1
-  sub $1,1
-  div $8,2
-  add $8,$4
-  mul $8,2
-  mov $4,$3
-  pow $4,$6
-  sub $4,$8
-  mov $5,$6
-  bin $5,$3
-  mul $5,$4
-  add $3,1
-  mul $7,-1
-  add $7,$5
+sub $0,1
+lpb $0
+  mov $0,$1
+  pow $1,$0
+  mov $0,$1
+  mul $0,21
+  div $0,20
+  add $0,24
 lpe
-gcd $1,$7
-dir $1,2
+add $0,1
 mov $2,$0
-dgs $2,2
-mov $0,2
-pow $0,$2
+seq $2,24255 ; a(0)=0, a(n) = n*E(2n-1) for n >= 1, where E(n) = A000111(n) are the Euler (or up-down) numbers.
+mov $3,$2
+mul $0,2
+seq $0,277423 ; a(n) = n!*LaguerreL(n, n).
 div $0,2
-mul $0,$1
+gcd $2,$0
+div $3,$2
+mov $0,$3

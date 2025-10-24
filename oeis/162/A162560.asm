@@ -14,10 +14,9 @@ lpb $0
   mul $3,-6
   mov $4,$2
   mul $4,6
+  mov $1,$4
   mul $2,24
   add $2,$3
-  mul $1,0
-  add $1,$4
 lpe
 mul $0,$2
 add $0,$1
