@@ -1,16 +1,31 @@
 ; A335412: a(n) is the number of edges formed by n-secting the angles of an equilateral triangle.
-; Submitted by cinquefiore
+; Submitted by loader3229
 ; 3,12,39,54,123,144,255,282,435,432,663,702,939,984,1263,1314,1635,1692,2055,2082,2523,2592,3039,3114,3603,3684,4215,4302,4875,4932,5583,5682,6339,6444,7143,7254,7995,8112,8895,8982,9843,9972,10839,10974,11883,12024,12975,13122,14115,14232,15303,15462,16539,16704,17823,17994,19155,19332,20535,20682,21963,22152,23439,23634,24963,25164,26535,26742,28155,28332,29823,30042,31539,31764,33303,33534,35115,35352,36975,37182
-; Formula: a(n) = -3*n*(n-1)+3*A277402(n)
 
 #offset 1
 
-mov $1,$0
+mov $1,3
+mov $2,12
+mov $3,39
+mov $4,54
+mov $5,123
+mov $6,144
+mov $7,255
+mov $8,282
+mov $9,435
+mov $10,432
+mov $11,663
+mov $12,702
+mov $13,939
 sub $0,1
-mul $1,$0
-add $0,1
-seq $0,277402 ; "3-Portolan numbers": number of regions formed by n-secting the angles of an equilateral triangle.
-sub $0,1
-sub $0,$1
-mul $0,3
-add $0,3
+lpb $0
+  rol $1,13
+  sub $13,$1
+  sub $13,$2
+  add $13,$3
+  sub $13,$10
+  add $13,$11
+  add $13,$12
+  sub $0,1
+lpe
+mov $0,$1

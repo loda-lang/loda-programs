@@ -1,5 +1,5 @@
 ; A352735: Lucky numbers in Chinese: Numbers whose decimal expansion contains 8 but not 4.
-; Submitted by Science United
+; Submitted by loader3229
 ; 8,18,28,38,58,68,78,80,81,82,83,85,86,87,88,89,98,108,118,128,138,158,168,178,180,181,182,183,185,186,187,188,189,198,208,218,228,238,258,268,278,280,281,282,283,285,286,287,288,289,298,308,318,328,338,358
 
 #offset 1
@@ -24,12 +24,10 @@ mov $17,98
 mov $18,108
 sub $0,1
 lpb $0
-  sub $0,1
   mul $1,-1
-  mov $19,$1
-  add $19,$2
-  add $19,$18
   rol $1,18
-  mov $18,$19
+  add $18,$1
+  add $18,$17
+  sub $0,1
 lpe
 mov $0,$1

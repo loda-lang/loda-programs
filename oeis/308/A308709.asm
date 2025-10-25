@@ -1,14 +1,20 @@
 ; A308709: Start with 3, divide by 3, multiply by 2, multiply by 3, multiply by 2, repeat.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 3,1,2,6,12,4,8,24,48,16,32,96,192,64,128,384,768,256,512,1536,3072,1024,2048,6144,12288,4096,8192,24576,49152,16384,32768,98304,196608,65536,131072,393216,786432,262144,524288,1572864,3145728,1048576
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 2*b(n-2)+2*c(n-2), b(3) = 2, b(2) = 2, b(1) = 3, b(0) = 3, c(n) = -2*c(n-2), c(3) = 4, c(2) = 4, c(1) = -2, c(0) = -2
 
 #offset 1
 
+mov $1,3
+mov $2,-2
 sub $0,1
-mov $1,$0
-mod $0,4
-gcd $0,3
-lpb $1
-  sub $1,2
-  mul $0,2
+lpb $0
+  sub $0,2
+  mov $3,$2
+  mul $3,2
+  mul $1,2
+  add $1,$3
+  mul $2,-2
 lpe
+mul $0,$2
+add $0,$1

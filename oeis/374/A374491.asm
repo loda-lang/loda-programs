@@ -1,28 +1,22 @@
 ; A374491: Decimal expansion of zeta(-11).
-; Submitted by Science United
+; Submitted by loader3229
 ; 2,1,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6,0,9,2,7,9,6
-; Formula: a(n) = -10*truncate(truncate((-d(max(4*n+24,0))+b(max(4*n+24,0)))/truncate(c(max(4*n+24,0))/(10^(n+6))))/10)+truncate((-d(max(4*n+24,0))+b(max(4*n+24,0)))/truncate(c(max(4*n+24,0))/(10^(n+6)))), b(n) = 4*b(n-1), b(2) = 16, b(1) = 4, b(0) = 1, c(n) = -4*c(n-1)-64, c(2) = 192, c(1) = -64, c(0) = 0, d(n) = -4*b(n-1)+truncate((-d(n-1)+c(n-1))/16), d(2) = -19, d(1) = -4, d(0) = 0
+; Formula: a(n) = b(n+1), b(n) = b(n-6), b(11) = 7, b(10) = 2, b(9) = 9, b(8) = 0, b(7) = 6, b(6) = 9, b(5) = 7, b(4) = 2, b(3) = 9, b(2) = 0, b(1) = 1, b(0) = 2
 
 #offset -1
 
-add $0,6
-mov $1,1
-mov $3,$0
-mul $3,4
-lpb $3
-  sub $3,1
-  mul $1,4
-  mul $5,-1
-  add $5,$2
-  div $5,16
-  sub $5,$1
-  add $2,16
-  mul $2,-4
+mov $1,2
+mov $2,1
+mov $4,9
+mov $5,2
+mov $6,7
+mov $7,9
+mov $8,6
+add $0,1
+lpb $0
+  mov $1,0
+  rol $1,8
+  add $8,$2
+  sub $0,1
 lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-sub $1,$5
-div $1,$2
 mov $0,$1
-mod $0,10

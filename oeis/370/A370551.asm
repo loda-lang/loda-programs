@@ -1,14 +1,24 @@
 ; A370551: a(n) is the numerator of the real part of Product_{k=1..n} (1 + i/k) where i is the imaginary unit.
-; Submitted by owensse
+; Submitted by DukeBox
 ; 1,1,0,-5,-3,-73,-11,-2795,-3055,-58643,-2561,-4197973,-614635,-61269445,-3871801,-1495930487,-23794993,-26949145375,-1677354925,-1013112936505,-30432904645,-459074207581145,-2099373575975,-6497000065206625,-11053607615333933,-239235470859971731
-; Formula: a(n) = truncate(A231530(n)/gcd(n!,A231530(n)))
 
 #offset 1
 
+mov $6,1
 mov $1,$0
-seq $1,231530 ; Real part of Product_{k=1..n} (k+i), where i is the imaginary unit.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
-mov $2,$1
+lpb $1
+  sub $1,1
+  mov $3,$7
+  add $5,1
+  mul $7,$5
+  add $7,$6
+  mul $6,$5
+  sub $6,$3
+lpe
+mov $4,1
+fac $4,$0
+mov $0,$4
+gcd $0,$6
+mov $2,$6
 div $2,$0
 mov $0,$2

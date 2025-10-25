@@ -1,15 +1,47 @@
 ; A308759: Sum of the second largest parts of the partitions of n into 4 parts.
-; Submitted by [SG-FC] hl
+; Submitted by loader3229
 ; 0,0,0,0,1,1,3,5,10,13,23,30,46,59,83,103,141,170,220,265,334,392,484,563,680,784,930,1061,1247,1409,1631,1836,2106,2349,2673,2967,3348,3699,4143,4554,5077,5554,6150,6710,7396,8032,8816,9546,10432,11264,12260
-; Formula: a(n) = b(max(n-1,0)), b(n) = b(n-1)+A308096(max(n-1,0)+1), b(0) = 0
 
-sub $0,1
+mov $5,1
+mov $6,1
+mov $7,3
+mov $8,5
+mov $9,10
+mov $10,13
+mov $11,23
+mov $12,30
+mov $13,46
+mov $14,59
+mov $15,83
+mov $16,103
 lpb $0
+  rol $1,16
+  sub $16,$2
+  sub $16,$3
+  sub $16,$3
+  sub $16,$4
+  sub $16,$4
+  add $16,$5
+  add $16,$5
+  mov $17,$6
+  mul $17,3
   sub $0,1
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,308096 ; Take all the integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c. a(n) is the sum of all the b's.
-  add $1,$2
+  add $16,$17
+  mov $17,$7
+  mul $17,4
+  add $16,$17
+  mov $17,$9
+  mul $17,-4
+  add $16,$17
+  mov $17,$10
+  mul $17,-3
+  add $16,$17
+  sub $16,$11
+  sub $16,$11
+  add $16,$12
+  add $16,$12
+  add $16,$13
+  add $16,$13
+  add $16,$14
 lpe
 mov $0,$1

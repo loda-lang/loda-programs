@@ -1,23 +1,26 @@
 ; A331133: a(n) = Sum_{i=1..n} d(i)^2*d(i+1)/2, where d(n) = A000005(n).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,5,11,20,28,44,52,76,94,110,122,158,166,198,238,263,275,311,323,395,427,443,459,555,573,605,653,689,705,769,781,853,885,917,989,1070,1078,1110,1174,1238,1254,1318,1330,1438,1510,1526,1546,1696,1723,1795,1843,1879,1895,2023,2087,2215,2247,2263,2287,2431,2439,2487,2613,2711,2775,2839,2851,2923,2987,3051,3075,3219,3227,3275,3383,3455,3519,3583,3603,3853
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+truncate((A000005(n+3)*A000005(n+2)^2)/2), b(0) = 1
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
+mov $5,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$5
+  sub $0,$1
+  add $0,1
+  mov $4,$0
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  pow $4,2
   mov $3,$0
-  add $3,2
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mov $2,$0
-  add $2,3
-  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mul $2,$3
-  mul $2,$3
-  div $2,2
-  sub $0,1
-  add $1,$2
+  mul $3,$4
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2
+div $0,2
+add $0,1

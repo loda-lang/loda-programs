@@ -1,14 +1,35 @@
 ; A348919: Sum of the middle parts of the partitions of k into 3 parts for all 0 <= k <= n.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,0,0,1,2,5,10,18,29,47,69,100,140,191,253,333,426,540,675,834,1017,1234,1478,1760,2080,2442,2846,3305,3810,4375,5000,5690,6445,7281,8187,9180,10260,11433,12699,14077,15554,17150,18865,20706,22673,24788,27036,29440,32000,34724
-; Formula: a(n) = a(n-1)+A308266(max(n-1,0)+1), a(0) = 0
 
+mov $4,1
+mov $5,2
+mov $6,5
+mov $7,10
+mov $8,18
+mov $9,29
+mov $10,47
+mov $11,69
 lpb $0
+  rol $1,11
+  sub $11,$1
+  sub $11,$2
+  sub $11,$2
+  mov $12,$4
+  mul $12,3
   sub $0,1
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,308266 ; Sum of the middle parts in the partitions of n into 3 parts.
-  add $1,$2
+  add $11,$12
+  mov $12,$5
+  mul $12,3
+  add $11,$12
+  mov $12,$6
+  mul $12,-3
+  add $11,$12
+  mov $12,$7
+  mul $12,-3
+  add $11,$12
+  add $11,$9
+  add $11,$9
+  add $11,$10
 lpe
 mov $0,$1

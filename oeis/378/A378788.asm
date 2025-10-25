@@ -1,18 +1,25 @@
 ; A378788: Lower matching number of the (n,n)-stacked book graph.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,4,6,10,14,17,24,30,34,44,52,57,70,80,86,102,114,121,140,154,162,184,200,209,234,252,262,290,310,321,352,374,386,420,444,457,494,520,534,574,602,617,660,690,706,752,784,801,850,884,902,954,990,1009
 
 #offset 1
 
+mov $1,1
+mov $2,2
+mov $3,4
+mov $4,6
+mov $5,10
+mov $6,14
+mov $7,17
 sub $0,1
-mov $2,$0
 lpb $0
+  rol $1,7
+  sub $7,$1
+  sub $7,$3
+  sub $7,$3
+  add $7,$4
+  add $7,$4
+  add $7,$6
   sub $0,1
-  add $3,$2
-  add $1,$3
-  add $1,2
-  mod $3,3
 lpe
 mov $0,$1
-div $0,3
-add $0,1

@@ -1,29 +1,59 @@
 ; A311181: Coordination sequence Gal.5.107.1 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by loader3229
 ; 1,4,8,12,16,20,24,30,36,40,44,46,48,52,56,62,68,74,80,82,84,86,88,94,100,106,112,116,120,122,124,128,132,138,144,148,152,156,160,164,168,172,176,180,184,188,192,198,204,208
 
-mov $3,$0
-mov $1,2
-lpb $1
-  sub $1,1
-  mov $0,$3
-  add $0,$1
-  div $0,2
-  mov $5,$0
-  seq $5,348237 ; Coordination sequence for the cpq net with respect to a node where a hexagon and two octagons meet.
-  mov $6,$0
-  mul $6,3
-  mul $0,7
+mov $1,1
+mov $2,4
+mov $3,8
+mov $4,12
+mov $5,16
+mov $6,20
+mov $7,24
+mov $8,30
+mov $9,36
+mov $10,40
+mov $11,44
+mov $12,46
+mov $13,48
+mov $14,52
+mov $15,56
+lpb $0
+  mov $1,0
+  rol $1,15
+  sub $15,$1
+  add $15,$2
+  add $15,$2
+  sub $15,$3
+  sub $15,$3
+  add $15,$4
+  add $15,$4
+  mov $16,$5
+  mul $16,-3
   sub $0,1
-  sub $0,$6
-  mod $0,$5
-  add $0,$6
-  add $0,1
-  mov $2,$1
-  mul $2,$0
-  add $4,$2
+  add $15,$16
+  mov $16,$6
+  mul $16,4
+  add $15,$16
+  mov $16,$7
+  mul $16,-4
+  add $15,$16
+  mov $16,$8
+  mul $16,4
+  add $15,$16
+  mov $16,$9
+  mul $16,-4
+  add $15,$16
+  mov $16,$10
+  mul $16,4
+  add $15,$16
+  mov $16,$11
+  mul $16,-3
+  add $15,$16
+  add $15,$12
+  add $15,$12
+  sub $15,$13
+  sub $15,$13
+  add $15,$14
+  add $15,$14
 lpe
-min $3,2
-mul $0,$3
-div $0,2
-add $0,$4
+mov $0,$1
