@@ -1,9 +1,23 @@
 ; A284235: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,0,11,101,1010,10101,101010,1010101,10101010,101010101,1010101010,10101010101,101010101010,1010101010101,10101010101010,101010101010101,1010101010101010,10101010101010101,101010101010101010,1010101010101010101,10101010101010101010,101010101010101010101,1010101010101010101010,10101010101010101010101,101010101010101010101010,1010101010101010101010101,10101010101010101010101010,101010101010101010101010101,1010101010101010101010101010,10101010101010101010101010101,101010101010101010101010101010
-; Formula: a(n) = A007088(truncate((A283709(n)+2)/3))
+; Formula: a(n) = 10*a(n-1)-10*a(n-3)+a(n-2), a(11) = 10101010101, a(10) = 1010101010, a(9) = 101010101, a(8) = 10101010, a(7) = 1010101, a(6) = 101010, a(5) = 10101, a(4) = 1010, a(3) = 101, a(2) = 11, a(1) = 0, a(0) = 1
 
-seq $0,283709 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
-add $0,2
-div $0,3
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $3,11
+mov $4,101
+mov $5,1010
+mov $6,10101
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$3
+  mul $7,-10
+  add $6,$7
+  add $6,$4
+  mov $7,$5
+  mul $7,10
+  sub $0,1
+  add $6,$7
+lpe
+mov $0,$1

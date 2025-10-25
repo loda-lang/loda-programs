@@ -1,7 +1,7 @@
 ; A254632: Triangle read by rows, T(n, k) = 4^n*[x^k]hypergeometric([3/2, -n], [3], -x), n>=0, 0<=k<=n.
 ; Submitted by ChelseaOilman
 ; 1,4,2,16,16,5,64,96,60,14,256,512,480,224,42,1024,2560,3200,2240,840,132,4096,12288,19200,17920,10080,3168,429,16384,57344,107520,125440,94080,44352,12012,1430,65536,262144,573440,802816,752640,473088,192192,45760,4862
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+2,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*truncate(4^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1))
+; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+2,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*truncate(4^(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)-1))
 
 mov $1,$0
 add $1,1

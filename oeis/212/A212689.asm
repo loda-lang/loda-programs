@@ -1,30 +1,28 @@
 ; A212689: Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|>n+|y-z|.
-; Submitted by iBezanilla
+; Submitted by KetamiNO [YouTube]
 ; 0,0,0,6,20,58,124,244,424,700,1080,1610,2300,3206,4340,5768,7504,9624,12144,15150,18660,22770,27500,32956,39160,46228,54184,63154,73164,84350,96740,110480,125600,142256,160480,180438,202164,225834
 
-mov $3,$0
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $5,0
-  mov $0,$3
-  sub $0,$1
-  mov $6,$0
+mov $5,$0
+mov $7,$0
+lpb $7
+  clr $0,5
+  sub $7,1
+  mov $0,$5
+  sub $0,$7
+  mov $2,$0
   mov $4,$0
   lpb $4
     sub $4,1
-    mov $0,$6
+    mov $0,$2
     sub $0,$4
-    mov $8,$0
-    sub $8,1
-    mov $7,$8
-    div $7,2
-    mov $9,$8
-    add $9,$7
-    mul $9,2
-    mul $9,$7
-    add $5,$9
+    sub $0,1
+    mov $1,$0
+    div $0,2
+    add $1,$0
+    mul $1,$0
+    mul $1,2
+    add $3,$1
   lpe
-  add $2,$5
+  add $6,$3
 lpe
-mov $0,$2
+mov $0,$6

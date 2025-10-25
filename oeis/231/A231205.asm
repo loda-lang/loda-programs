@@ -1,29 +1,18 @@
 ; A231205: Table of maximal number of guesses required to solve a Mastermind variant, read by columns.
 ; Submitted by loader3229
 ; 0,1,1,2,1,2,3,2,2,3,4,2,5
+; Formula: a(n) = -3*truncate((a(n-1)+a(n-2)+a(n-4))/3)+a(n-1)+a(n-2)+a(n-3)+a(n-4), a(5) = 1, a(4) = 2, a(3) = 1, a(2) = 1, a(1) = 0
 
 #offset 1
 
+mov $1,1
 sub $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $5,$2
-add $5,1
-bin $5,2
-sub $0,$5
-add $2,2
-sub $2,$0
-mov $4,$0
-mov $0,$2
 lpb $0
-  sub $0,1
-  trn $0,2
-  bin $3,2
-  add $3,$4
+  mod $1,3
+  add $1,$4
+  ror $1,4
+  add $1,$2
   add $1,$3
-  mov $3,$4
+  sub $0,1
 lpe
-mov $0,$1
+mov $0,$2

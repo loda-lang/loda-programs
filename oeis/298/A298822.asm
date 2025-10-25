@@ -4,44 +4,27 @@
 
 #offset 1
 
-mov $2,1
-mov $3,2
-mov $4,21
-mov $5,8
-mov $6,85
+mov $1,1
+mov $2,2
+mov $3,21
+mov $4,8
+mov $5,85
+mov $6,18
+mov $7,217
+mov $8,32
 sub $0,1
 lpb $0
-  mov $8,$1
-  mul $8,-8
-  sub $8,13
-  mul $2,$8
-  rol $2,5
-  mov $8,$1
-  mul $8,66
-  add $8,411
-  mov $7,$2
-  mul $7,$8
-  mov $8,$1
-  mul $8,-14
-  sub $8,214
-  add $6,$7
-  mov $7,$3
-  mul $7,$8
-  mov $8,$1
-  mul $8,-66
-  add $8,4
-  add $6,$7
-  mov $7,$4
-  mul $7,$8
-  mov $8,$1
-  mul $8,22
-  add $8,47
-  add $6,$7
-  mov $7,$5
-  mul $7,$8
-  add $6,$7
-  div $6,19
+  mul $1,-1
+  rol $1,8
+  mov $9,$2
+  mul $9,4
+  add $8,$9
+  mov $9,$4
+  mul $9,-6
+  add $8,$9
+  mov $9,$6
+  mul $9,4
   sub $0,1
-  add $1,1
+  add $8,$9
 lpe
-mov $0,$2
+mov $0,$1

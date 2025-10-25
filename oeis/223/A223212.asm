@@ -1,20 +1,23 @@
-; A223212: 3X3X3 triangular graph coloring a rectangular array: number of nX2 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph
-; Submitted by Jon Maiga
+; A223212: 3X3X3 triangular graph coloring a rectangular array: number of nX2 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
+; Submitted by loader3229
 ; 18,126,918,6642,48114,348462,2523798,18278946,132387858,958837662,6944516694,50296639122,364280484978,2638352661966,19108640336598,138397015977282,1002359858893074,7259732297153982,52579632512961558,380815385752155186,2758109007129585138,19975992514546907502,144678936151447711254,1047857549539608435042,7589255722600680011538,54966252281460555984606,398100815192169456011478,2883301161686161739930322,20882714306846495543685234,151245996296254428921484302,1095420406539145033422072918
-; Formula: a(n) = 18*b(n-1), b(n) = 9*b(n-2)+6*b(n-1), b(1) = 7, b(0) = 1
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 15*b(n-2)+6*c(n-2), b(3) = 918, b(2) = 918, b(1) = 18, b(0) = 18, c(n) = 84*b(n-2)+39*c(n-2), c(3) = 5724, c(2) = 5724, c(1) = 108, c(0) = 108
 
 #offset 1
 
-mov $1,1
-mov $3,1
+mov $1,18
+mov $2,108
 sub $0,1
 lpb $0
-  sub $0,1
-  mov $2,$3
-  mul $2,9
-  mul $3,6
-  add $3,$1
-  mov $1,$2
+  sub $0,2
+  mov $3,$1
+  mul $3,84
+  mov $4,$2
+  mul $4,6
+  mul $2,39
+  add $2,$3
+  mul $1,15
+  add $1,$4
 lpe
-mov $0,$3
-mul $0,18
+mul $0,$2
+add $0,$1

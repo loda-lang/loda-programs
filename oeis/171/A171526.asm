@@ -1,38 +1,11 @@
 ; A171526: Denominator of (n-th noncomposite/n).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50
-; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = truncate((b(n-2)*(d(n-2)+4)+c(n-2)*(d(n-2)*(-2*d(n-2)-1)+8))/4), b(5) = 5, b(4) = 5, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = truncate((b(n-2)*(-11*d(n-2)+12)+c(n-2)*(d(n-2)*(22*d(n-2)-13)-8))/4), c(5) = 1, c(4) = 1, c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 0, d(n) = d(n-2)+1, d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = gcd(binomial(n-4,n),n)
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  sub $0,2
-  mov $4,$3
-  add $4,4
-  mov $5,-2
-  mul $5,$3
-  sub $5,1
-  mul $5,$3
-  add $5,8
-  mul $5,$2
-  mov $6,-11
-  mul $6,$3
-  add $6,12
-  mul $6,$1
-  mov $7,22
-  mul $7,$3
-  sub $7,13
-  mul $7,$3
-  sub $7,8
-  mul $1,$4
-  add $1,$5
-  div $1,4
-  mul $2,$7
-  add $2,$6
-  div $2,4
-  add $3,1
-lpe
-mul $0,$2
-add $0,$1
+mov $1,$0
+sub $0,4
+bin $0,$1
+gcd $0,$1

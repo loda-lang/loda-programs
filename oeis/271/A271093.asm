@@ -1,13 +1,33 @@
 ; A271093: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 275", based on the 5-celled von Neumann neighborhood.
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 1,6,11,51,56,168,173,389,394,746,751,1271,1276,1996,2001,2953,2958,4174,4179,5691,5696,7536,7541,9741,9746,12338,12343,15359,15364,18836,18841,22801,22806,27286,27291,32323,32328,37944,37949,44181,44186,51066,51071,58631,58636,66908,66913,75929,75934,85726,85731,96331,96336,107776,107781,120093,120098,133314,133319,147471,147476,162596,162601,178721,178726,195878,195883,214099,214104,233416,233421,253861,253866,275466,275471,298263,298268,322284,322289,347561
-; Formula: a(n) = a(n-1)+A271091(n), a(0) = 1
 
 mov $1,1
+mov $2,6
+mov $3,11
+mov $4,51
+mov $5,56
+mov $6,168
+mov $7,173
+mov $8,389
 lpb $0
-  mov $2,$0
-  seq $2,271091 ; Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 275", based on the 5-celled von Neumann neighborhood.
+  mov $1,0
+  rol $1,8
+  sub $8,$1
+  add $8,$2
+  mov $9,$3
+  mul $9,3
   sub $0,1
-  add $1,$2
+  add $8,$9
+  mov $9,$4
+  mul $9,-3
+  add $8,$9
+  mov $9,$5
+  mul $9,-3
+  add $8,$9
+  mov $9,$6
+  mul $9,3
+  add $8,$9
+  add $8,$7
 lpe
 mov $0,$1

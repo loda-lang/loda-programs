@@ -1,24 +1,24 @@
 ; A075526: a(n) = A008578(n+2) - A008578(n+1).
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8
 
-mov $1,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  mov $0,$1
-  add $0,$5
-  trn $0,1
-  mov $2,$0
-  add $2,1
-  seq $2,40 ; The prime numbers.
-  sub $2,1
-  mov $4,$5
-  mul $4,$2
+mov $2,$0
+mov $4,2
+lpb $4
+  sub $4,1
   mov $0,$2
-  add $3,$4
+  add $0,$4
+  sub $0,1
+  mod $0,110
+  max $0,0
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  sub $0,1
+  mov $1,$4
+  mul $1,$0
+  add $3,$1
 lpe
-min $1,1
-mul $1,$0
+min $2,1
+mul $2,$0
 mov $0,$3
-sub $0,$1
+sub $0,$2

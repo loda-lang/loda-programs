@@ -1,17 +1,27 @@
 ; A233021: Number of n X 3 0..3 arrays with no element x(i,j) adjacent to value 3-x(i,j) horizontally, vertically, diagonally or antidiagonally, and top left element zero.
-; Submitted by Science United
+; Submitted by loader3229
 ; 9,81,849,8835,92067,959385,9997413,104179551,1085618895,11312857317,117887355777,1228463178219,12801387988827,133398816787089,1390102724464989,14485777543658775,150951255149241255,1573010586587819229,16391796829188488697,170813219936579943267,1779985221214269403443,18548607589726165984329,193288595555272476411861,2014193302165882607057487,20989208633003787008552319,218721251116283699150226261,2279218169981387591884918641,23750940705855135123103013211,247500301569486435278073167883
+; Formula: a(n) = b(n-1), b(n) = 11*b(n-1)+2*b(n-4)-5*b(n-2)-11*b(n-3), b(8) = 1085618895, b(7) = 104179551, b(6) = 9997413, b(5) = 959385, b(4) = 92067, b(3) = 8835, b(2) = 849, b(1) = 81, b(0) = 9
 
 #offset 1
 
+mov $1,9
+mov $2,81
+mov $3,849
+mov $4,8835
 sub $0,1
 lpb $0
-  max $0,1
-  seq $0,209823 ; Number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having one or two distinct values, and new values 0..2 introduced in row major order.
-  mov $1,$0
-  sub $1,5
-  mov $0,0
+  mul $1,2
+  rol $1,4
+  mov $5,$1
+  mul $5,-11
+  add $4,$5
+  mov $5,$2
+  mul $5,-5
+  add $4,$5
+  mov $5,$3
+  mul $5,11
+  sub $0,1
+  add $4,$5
 lpe
 mov $0,$1
-mul $0,2
-add $0,9

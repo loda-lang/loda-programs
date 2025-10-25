@@ -1,16 +1,16 @@
 ; A272356: (Sum_{i=1..n} prime(i)) mod 4.
-; Submitted by pram
+; Submitted by 10esseeTony
 ; 0,2,1,2,1,0,1,2,1,0,1,0,1,2,1,0,1,0,1,0,3,0,3,2,3,0,1,0,3,0,1,0,3,0,3,0,3,0,3,2,3,2,3,2,3,0,3,2,1,0,1,2,1,2,1,2,1,2,1,2,3,2,3,2,1,2,3,2,3,2,3,0,3,2,3,2,1,2,3,0
-; Formula: a(n) = -10*truncate(A007090(binomial(n,n==0)*(A101301((n==0)+n)+n))/10)+A007090(binomial(n,n==0)*(A101301((n==0)+n)+n))
 
 mov $2,$0
-equ $2,0
-mov $1,$0
-add $1,$2
-seq $1,101301 ; The sum of the first n primes, minus n.
-add $1,$0
-bin $0,$2
-mul $1,$0
-mov $0,$1
-seq $0,7090 ; Numbers in base 4.
-mod $0,10
+lpb $2
+  trn $2,1
+  add $2,1
+  seq $2,60939 ; a(n) = (Sum of the first n primes) + n.
+  mov $1,$2
+  mov $2,0
+lpe
+mov $2,$1
+sub $2,$0
+mod $2,4
+mov $0,$2

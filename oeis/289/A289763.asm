@@ -1,19 +1,32 @@
 ; A289763: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 597", based on the 5-celled von Neumann neighborhood.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,1,11,1011,10111,10111,101111,10101111,101011111,101011111,1010111111,101010111111,1010101111111,1010101111111,10101011111111,1010101011111111,10101010111111111,10101010111111111,101010101111111111,10101010101111111111,101010101011111111111,101010101011111111111,1010101010111111111111,101010101010111111111111,1010101010101111111111111,1010101010101111111111111,10101010101011111111111111,1010101010101011111111111111,10101010101010111111111111111,10101010101010111111111111111
-; Formula: a(n) = A004086(A007088(2^(n+1)-floor((2^(floor((n+1)/2)+1))/3)-1))
+; Formula: a(n) = 10000*a(n-6)+990*a(n-3)+100*a(n-4)+11*a(n-1)-100*a(n-2)-11000*a(n-5), a(14) = 10101011111111, a(13) = 1010101111111, a(12) = 1010101111111, a(11) = 101010111111, a(10) = 1010111111, a(9) = 101011111, a(8) = 101011111, a(7) = 10101111, a(6) = 101111, a(5) = 10111, a(4) = 10111, a(3) = 1011, a(2) = 11, a(1) = 1, a(0) = 1
 
-add $0,1
-mov $1,2
-pow $1,$0
-mov $2,$0
-div $2,2
-add $2,1
-mov $3,2
-pow $3,$2
-div $3,3
+mov $1,1
+mov $2,1
+mov $3,11
+mov $4,1011
+mov $5,10111
+mov $6,10111
+lpb $0
+  mul $1,10000
+  rol $1,6
+  mov $7,$1
+  mul $7,-11000
+  add $6,$7
+  mov $7,$2
+  mul $7,100
+  add $6,$7
+  mov $7,$3
+  mul $7,990
+  add $6,$7
+  mov $7,$4
+  mul $7,-100
+  add $6,$7
+  mov $7,$5
+  mul $7,11
+  sub $0,1
+  add $6,$7
+lpe
 mov $0,$1
-sub $0,$3
-sub $0,1
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).

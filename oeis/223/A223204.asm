@@ -1,21 +1,23 @@
 ; A223204: Rolling icosahedron face footprints: number of n X 3 0..19 arrays starting with 0 where 0..19 label faces of an icosahedron and every array movement to a horizontal or vertical neighbor moves across an icosahedral edge.
-; Submitted by [AF>Le_Pommier] Jerome_C2005
+; Submitted by loader3229
 ; 9,75,657,5763,50553,443451,3889953,34122675,299324169,2625672171,23032401201,202040266467,1772297595801,15546597829275,136374785271873,1196279871788307,10493769275551017,92051363736382539,807474735076340817,7083169888214302275,62133579523776038841,545035875937555745019,4781055724390449627489,41939429767638935157363,367892756459969517161289,3227155948604447784136875,28308618024520091022909297,248323250323471923637909923,2178292016862207130695370713,19107981651112920328982516571
-; Formula: a(n) = 3*truncate(b(n-1)/2), b(n) = 4*c(n-1)+3*b(n-1), b(1) = 50, b(0) = 6, c(n) = 6*c(n-1)+4*b(n-1), c(1) = 72, c(0) = 8
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 9*c(n-2)+7*b(n-2), b(3) = 657, b(2) = 657, b(1) = 9, b(0) = 9, c(n) = 70*c(n-2)+54*b(n-2), c(3) = 5106, c(2) = 5106, c(1) = 66, c(0) = 66
 
 #offset 1
 
-mov $1,6
-mov $2,8
+mov $1,9
+mov $2,66
 sub $0,1
 lpb $0
-  sub $0,1
-  mul $2,2
-  add $2,$1
-  add $1,$2
-  add $1,$2
-  add $2,$1
+  sub $0,2
+  mov $3,$1
+  mul $3,54
+  mov $4,$2
+  mul $4,9
+  mul $2,70
+  add $2,$3
+  mul $1,7
+  add $1,$4
 lpe
-mov $0,$1
-div $0,2
-mul $0,3
+mul $0,$2
+add $0,$1

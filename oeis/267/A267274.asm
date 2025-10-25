@@ -1,14 +1,23 @@
 ; A267274: Decimal representation of the n-th iteration of the "Rule 117" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,3,24,31,384,511,6144,8191,98304,131071,1572864,2097151,25165824,33554431,402653184,536870911,6442450944,8589934591,103079215104,137438953471,1649267441664,2199023255551,26388279066624,35184372088831,422212465065984,562949953421311,6755399441055744,9007199254740991,108086391056891904,144115188075855871,1729382256910270464,2305843009213693951,27670116110564327424,36893488147419103231,442721857769029238784,590295810358705651711,7083549724304467820544,9444732965739290427391
+; Formula: a(n) = 17*a(n-2)-16*a(n-4), a(10) = 1572864, a(9) = 131071, a(8) = 98304, a(7) = 8191, a(6) = 6144, a(5) = 511, a(4) = 384, a(3) = 31, a(2) = 24, a(1) = 3, a(0) = 1
 
 mov $1,1
+mov $2,3
+mov $3,24
+mov $4,31
+mov $5,384
+mov $6,511
 lpb $0
-  mov $1,$0
-  seq $1,266984 ; Decimal representation of the n-th iteration of the "Rule 81" elementary cellular automaton starting with a single ON (black) cell.
-  div $0,$1
+  mul $1,0
+  rol $1,6
+  mov $7,$2
+  mul $7,-16
+  add $6,$7
+  mov $7,$4
+  mul $7,17
+  sub $0,1
+  add $6,$7
 lpe
-add $0,1
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-mul $1,$0
 mov $0,$1

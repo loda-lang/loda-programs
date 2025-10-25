@@ -14,14 +14,11 @@ mov $7,14
 mov $8,27
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,8
+  mov $9,$7
+  mul $9,3
   sub $0,1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mul $8,3
+  add $8,$9
 lpe
 mov $0,$1

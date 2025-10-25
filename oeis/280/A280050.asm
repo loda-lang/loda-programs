@@ -1,15 +1,34 @@
 ; A280050: a(n) = Sum_{k=2..n} k/lpf(k), where lpf(k) is the least prime dividing k (A020639).
+; Submitted by Science United
 ; 0,1,2,4,5,8,9,13,16,21,22,28,29,36,41,49,50,59,60,70,77,88,89,101,106,119,128,142,143,158,159,175,186,203,210,228,229,248,261,281,282,303,304,326,341,364,365,389,396,421,438,464,465,492,503,531,550,579,580,610,611,642,663,695,708,741,742,776,799,834,835
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A032742(n+1), b(0) = 0
 
 #offset 1
 
-sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  sub $0,1
-  add $1,$2
+mov $27,$0
+mov $29,$0
+lpb $29
+  clr $0,27
+  mov $5,2
+  sub $29,1
+  mov $0,$27
+  sub $0,$29
+  mov $1,$0
+  lpb $1
+    mov $2,$1
+    div $2,4
+    lpb $2
+      mov $3,$1
+      mod $3,$5
+      add $5,1
+      sub $2,$3
+    lpe
+    lpb $1
+      dif $1,$5
+      mov $13,$1
+      div $1,$0
+    lpe
+  lpe
+  add $23,$13
+  add $28,$23
 lpe
-mov $0,$1
+mov $0,$28

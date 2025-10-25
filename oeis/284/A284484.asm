@@ -1,7 +1,23 @@
 ; A284484: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
-; Submitted by corysmath
+; Submitted by loader3229
 ; 1,0,111,1011,1111,101111,111111,10111111,11111111,1011111111,1111111111,101111111111,111111111111,10111111111111,11111111111111,1011111111111111,1111111111111111,101111111111111111,111111111111111111,10111111111111111111,11111111111111111111,1011111111111111111111,1111111111111111111111,101111111111111111111111,111111111111111111111111,10111111111111111111111111,11111111111111111111111111,1011111111111111111111111111,1111111111111111111111111111,101111111111111111111111111111
-; Formula: a(n) = A007088(A284485(n))
+; Formula: a(n) = 100*a(n-2)-100*a(n-3)+a(n-1), a(10) = 1111111111, a(9) = 1011111111, a(8) = 11111111, a(7) = 10111111, a(6) = 111111, a(5) = 101111, a(4) = 1111, a(3) = 1011, a(2) = 111, a(1) = 0, a(0) = 1
 
-seq $0,284485 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $3,111
+mov $4,1011
+mov $5,1111
+mov $6,101111
+lpb $0
+  mul $1,0
+  rol $1,6
+  mov $7,$3
+  mul $7,-100
+  sub $0,1
+  add $6,$7
+  mov $7,$4
+  mul $7,100
+  add $6,$7
+  add $6,$5
+lpe
+mov $0,$1

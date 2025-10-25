@@ -1,35 +1,47 @@
 ; A278211: Maximum total number of possible moves that any number of rooks of the same color can make on an n X n chessboard.
-; Submitted by omegaintellisys
+; Submitted by loader3229
 ; 0,4,12,28,48,76,108,152,204,264,332,408,492,584,684,792,908,1032,1164,1304,1452,1608,1772,1944,2124,2312,2508,2712,2924,3144,3372,3608,3852,4104,4364,4632,4908,5192,5484,5784,6092,6408,6732,7064,7404,7752,8108,8472,8844,9224
+; Formula: a(n) = b(n-1), b(n) = c(n-4), b(6) = 108, b(5) = 76, b(4) = 48, b(3) = 28, b(2) = 12, b(1) = 4, b(0) = 0, c(n) = truncate((c(n-1)*(893*n-3912)+c(n-2)*(-1975*n+8834)+c(n-3)*(468*n-1258)+c(n-4)*(1223*n-6724)+c(n-5)*(-609*n+3654))/206), c(8) = 492, c(7) = 408, c(6) = 332, c(5) = 264, c(4) = 204, c(3) = 152, c(2) = 108, c(1) = 76, c(0) = 48
 
 #offset 1
 
+mov $3,4
+mov $4,12
+mov $5,28
+mov $6,48
 sub $0,1
-mov $5,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $7,0
-  mov $0,$5
-  sub $0,$3
-  mov $6,$0
-  mov $8,$0
-  lpb $8
-    sub $8,1
-    mov $0,$6
-    sub $0,$8
-    mov $1,$0
-    add $1,1
-    seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-    mov $2,$1
-    lpb $0
-      mod $0,9
-      mov $2,2
-    lpe
-    mov $0,$2
-    mul $0,4
-    add $7,$0
-  lpe
-  add $4,$7
+lpb $0
+  mov $8,$1
+  mul $8,-609
+  add $8,3045
+  mul $2,$8
+  rol $2,5
+  mov $8,$1
+  mul $8,1223
+  sub $8,5501
+  mov $7,$2
+  mul $7,$8
+  mov $8,$1
+  mul $8,468
+  sub $8,790
+  add $6,$7
+  mov $7,$3
+  mul $7,$8
+  mov $8,$1
+  mul $8,-1975
+  add $8,6859
+  add $6,$7
+  mov $7,$4
+  mul $7,$8
+  mov $8,$1
+  mul $8,893
+  sub $8,3019
+  add $6,$7
+  mov $7,$5
+  mul $7,$8
+  add $6,$7
+  div $6,206
+  sub $0,1
+  add $1,1
 lpe
-mov $0,$4
+mov $0,$2

@@ -1,29 +1,26 @@
 ; A126531: Number of base 10 n-digit numbers with adjacent digits differing by five or less.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1,10,80,660,5430,44692,367826,3027314,24915652,205062892,1687725824,13890462738,114322452324,940906242802,7743925534706,63734705924048,524554726284436,4317234336897124,35532064407664766,292438978880594940
+; Formula: a(n) = 8*a(n-1)+3*a(n-2)+2*a(n-5)-a(n-4)-9*a(n-3), a(11) = 13890462738, a(10) = 1687725824, a(9) = 205062892, a(8) = 24915652, a(7) = 3027314, a(6) = 367826, a(5) = 44692, a(4) = 5430, a(3) = 660, a(2) = 80, a(1) = 10, a(0) = 1
 
-mov $2,1
-mov $10,1
-add $0,1
+mov $1,1
+mov $2,10
+mov $3,80
+mov $4,660
+mov $5,5430
 lpb $0
+  mul $1,2
+  rol $1,5
+  mov $6,$2
+  mul $6,-9
+  sub $5,$1
+  add $5,$6
+  mov $6,$3
+  mul $6,3
+  add $5,$6
+  mov $6,$4
+  mul $6,8
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,126504 ; Number of base 9 n-digit numbers with adjacent digits differing by four or less.
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  add $5,$6
 lpe
-mov $0,$3
+mov $0,$1

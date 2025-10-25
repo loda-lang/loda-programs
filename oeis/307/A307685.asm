@@ -1,17 +1,16 @@
-; A307685: Clique covering number of the n-Sierpinski sieve graph.
-; Submitted by BrandyNOW
+; A307685: Clique covering number of the n-Sierpinski gasket graph.
+; Submitted by loader3229
 ; 1,3,6,17,48,143,426,1277,3828,11483,34446,103337,310008,930023,2790066,8370197,25110588,75331763,225995286,677985857,2033957568,6101872703,18305618106,54916854317,164750562948,494251688843,1482755066526,4448265199577,13344795598728,40034386796183
-; Formula: a(n) = floor((3^(n-1))/3)+floor((3^(n-1)+2)/4)+1
+; Formula: a(n) = floor((7*3^(n-1)+15)/12)
 
 #offset 1
 
 sub $0,1
+mov $2,3
+pow $2,$0
+mul $2,7
 mov $1,3
-pow $1,$0
-mov $2,2
-add $2,$1
-div $2,4
+add $1,$2
+add $1,12
 mov $0,$1
-div $0,3
-add $0,$2
-add $0,1
+div $0,12

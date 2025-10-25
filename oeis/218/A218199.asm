@@ -1,25 +1,28 @@
-; A218199: Hilltop maps: number of n X 1 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or vertical neighbor in a random 0..2 n X 1 array
-; Submitted by USTL-FIL (Lille Fr)
+; A218199: Hilltop maps: number of n X 1 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or vertical neighbor in a random 0..2 n X 1 array.
+; Submitted by Tarboxer
 ; 1,3,7,13,25,49,97,191,375,737,1449,2849,5601,11011,21647,42557,83665,164481,323361,635711,1249775,2456993,4830321,9496161,18668961,36702211,72154647,141852301,278874281,548252401,1077835841,2118969471,4165784295,8189716289,16100558297,31652864193,62227892545,122336815619,240507846943,472825977597,929551396897,1827449929601,3592671966657,7063007117695,13885506388447,27298186799297,53666822201697,105506194473793,207419716980929,407776426844163,801667347299879,1576036507800461,3098406193399225
-; Formula: a(n) = 2*b(n-1)+1, b(n) = b(n-1)+b(n-2)+b(n-3)+b(n-4)+b(n-5)+2, b(9) = 368, b(8) = 187, b(7) = 95, b(6) = 48, b(5) = 24, b(4) = 12, b(3) = 6, b(2) = 3, b(1) = 1, b(0) = 0
+; Formula: a(n) = b(n-1)-1, b(n) = c(n-5)+1, b(7) = 192, b(6) = 98, b(5) = 50, b(4) = 26, b(3) = 14, b(2) = 8, b(1) = 4, b(0) = 2, c(n) = c(n-1)+c(n-2)+c(n-3)+c(n-4)+c(n-5), c(9) = 21647, c(8) = 11011, c(7) = 5601, c(6) = 2849, c(5) = 1449, c(4) = 737, c(3) = 375, c(2) = 191, c(1) = 97, c(0) = 49
 
 #offset 1
 
-mov $1,1
+mov $1,2
+mov $2,4
+mov $3,7
+mov $4,13
+mov $5,25
+mov $6,49
+mov $7,97
 sub $0,1
 lpb $0
+  mul $1,0
+  rol $1,7
+  add $7,$2
+  add $7,$3
+  add $7,$4
+  add $7,$5
+  add $7,$6
   sub $0,1
-  add $3,1
-  mov $5,$6
-  mov $6,$4
-  add $6,$1
-  mov $4,$2
-  add $4,$6
-  mov $2,$1
-  mov $1,$3
-  add $1,$5
-  mov $3,$5
+  add $2,1
 lpe
-mov $0,$4
-mul $0,2
-add $0,1
+mov $0,$1
+sub $0,1

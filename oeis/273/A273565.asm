@@ -1,27 +1,25 @@
 ; A273565: Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 793", based on the 5-celled von Neumann neighborhood.
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 1,4,28,141,625,2625,10753,43521,175105,702465,2813953,11264001,45072385,180322305,721354753,2885550081
-; Formula: a(n) = truncate(d(n)/2)+1, b(n) = 4*d(n-1)+2*b(n-1)-4*e(n-1)-4, b(3) = -196, b(2) = -40, b(1) = -6, b(0) = 1, c(n) = 1, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = c(n-1)*(e(n-1)+1)+4*e(n-1)-2*b(n-1)-4*d(n-1)+c(n-1)+4, d(3) = 280, d(2) = 54, d(1) = 6, d(0) = 0, e(n) = 8*e(n-1)+2*c(n-1)-4*b(n-1)-8*d(n-1)+8, e(3) = 394, e(2) = 82, e(1) = 12, e(0) = 1
+; Formula: a(n) = 8*a(n-3)+7*a(n-1)-14*a(n-2), a(9) = 702465, a(8) = 175105, a(7) = 43521, a(6) = 10753, a(5) = 2625, a(4) = 625, a(3) = 141, a(2) = 28, a(1) = 4, a(0) = 1
 
 mov $1,1
-mov $4,1
+mov $2,4
+mov $3,28
+mov $4,141
+mov $5,625
 lpb $0
+  mul $1,0
+  rol $1,5
+  mov $6,$2
+  mul $6,8
+  add $5,$6
+  mov $6,$3
+  mul $6,-14
+  add $5,$6
+  mov $6,$4
+  mul $6,7
   sub $0,1
-  sub $3,1
-  sub $3,$4
-  add $1,$3
-  add $1,$3
-  mul $1,2
-  add $4,1
-  mul $4,$2
-  mov $5,$4
-  mov $4,$2
-  sub $4,$1
-  add $5,$4
-  mov $2,1
-  mov $3,$5
-  mul $4,2
+  add $5,$6
 lpe
-mov $0,$3
-div $0,2
-add $0,1
+mov $0,$1

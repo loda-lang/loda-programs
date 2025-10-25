@@ -1,22 +1,24 @@
 ; A203980: Number of (n+1) X 5 0..2 arrays with no 2 X 2 subblock having equal diagonal elements or equal antidiagonal elements, and new values 0..2 introduced in row major order.
-; Submitted by [AF>Libristes]Maeda
+; Submitted by loader3229
 ; 384,5184,69984,956448,13071456,178855776,2447270496,33489653472,458288894304,6271519652064,85823503984224,1174465206026208,16072153386090336,219941927082883296,3009830115907061856,41188497051114028512,563650513151425206624,7713364750351325586144,105554762009022984135264,1444480864629020901478368,19767227253101517380862816,270507753233200384486331616,3701806207939093570755640416,50657953560888796640580637152,693236791670372737428799573344,9486708710959592721901542131424
-; Formula: a(n) = 96*truncate(b(n+1)/144), b(n) = truncate(A233152(truncate((n-2)/2)+1)/2)*truncate(A233152(truncate((n-1)/2)+1)/2), b(2) = 576, b(1) = 0, b(0) = 0
+; Formula: a(n) = b(n-1), b(n) = 324*b(n-4)+15*b(n-1)-270*b(n-3), b(7) = 33489653472, b(6) = 2447270496, b(5) = 178855776, b(4) = 13071456, b(3) = 956448, b(2) = 69984, b(1) = 5184, b(0) = 384
 
 #offset 1
 
-add $0,1
+mov $1,384
+mov $2,5184
+mov $3,69984
+mov $4,956448
+sub $0,1
 lpb $0
+  mul $1,324
+  rol $1,4
+  mov $5,$1
+  mul $5,-270
+  add $4,$5
+  mov $5,$3
+  mul $5,15
   sub $0,1
-  mov $2,$1
-  mov $1,$3
-  div $1,2
-  add $1,1
-  seq $1,233152 ; Number of n X 5 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally or antidiagonally.
-  div $1,2
-  mul $2,$1
-  add $3,1
+  add $4,$5
 lpe
-mov $0,$2
-div $0,144
-mul $0,96
+mov $0,$1

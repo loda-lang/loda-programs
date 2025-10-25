@@ -5,75 +5,25 @@
 #offset 1
 
 sub $0,1
-mov $2,1
-fil $2,3
-mov $5,3
-mov $6,1
-mov $7,4
-mov $8,2
-mov $9,1
-mov $10,6
-mov $11,1
+mov $1,1
+fil $1,3
+mov $4,3
+mov $5,1
+mov $6,4
+mov $7,2
+mov $8,1
+mov $9,6
+mov $10,1
+mov $11,9
+mov $12,2
+mov $13,1
+mov $14,11
 lpb $0
-  mov $13,$1
-  mul $13,166
-  sub $13,498
-  mul $2,$13
-  rol $2,10
-  mov $13,$1
-  mul $13,20
-  sub $13,40
-  mov $12,$2
-  mul $12,$13
-  mov $13,$1
-  mul $13,-53
-  sub $13,113
-  add $11,$12
-  mov $12,$3
-  mul $12,$13
-  mov $13,$1
-  mul $13,35
-  add $13,478
-  add $11,$12
-  mov $12,$4
-  mul $12,$13
-  mul $13,0
-  add $13,235
-  add $11,$12
-  mov $12,$5
-  mul $12,$13
-  mov $13,$1
-  mul $13,-166
-  add $13,2209
-  add $11,$12
-  mov $12,$6
-  mul $12,$13
-  mov $13,$1
-  mul $13,-20
-  add $13,140
-  add $11,$12
-  mov $12,$7
-  mul $12,$13
-  mov $13,$1
-  mul $13,53
-  sub $13,152
-  add $11,$12
-  mov $12,$8
-  mul $12,$13
-  mov $13,$1
-  mul $13,-35
-  sub $13,303
-  add $11,$12
-  mov $12,$9
-  mul $12,$13
-  mul $13,0
-  sub $13,235
-  add $11,$12
-  mov $12,$10
-  mul $12,$13
-  add $11,$12
-  div $11,881
+  mul $1,0
+  rol $1,14
+  sub $14,$4
+  add $14,$9
+  add $14,$9
   sub $0,1
-  add $1,1
 lpe
-mov $0,$2
+mov $0,$1

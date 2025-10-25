@@ -1,40 +1,28 @@
 ; A259677: Octagonal numbers (A000567) that are semiprimes (A001358).
-; Submitted by ATS
+; Submitted by Science United
 ; 21,65,133,341,481,1541,4033,5461,6533,8321,11041,13333,14981,31621,38081,48133,56033,79381,83333,97921,109061,111361,133141,188501,197633,206981,219781,229633,256961,282133,293281,328021,340033,360533,416641,481601,556421,561601,587861,636641,653333,710533,722261,819541,876961,929633,1032533,1053761,1082401,1357441,1373633,1584133,1690501,1717633,1735841,1904033,2030341,2181121,2337301,2358533,2466133,2487941,2722721,2944261,3076481,3125281,3375041,3387781,3542533,3568661,3647621,3985921
 
 #offset 1
 
-mov $3,$0
+mov $2,$0
 sub $0,1
-add $3,7
-pow $3,4
-lpb $3
-  mov $2,$7
-  add $2,3
-  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $2,3
+add $2,1
+pow $2,2
+lpb $2
+  max $3,$5
+  add $3,1
+  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,4
+  mov $4,$0
+  max $4,0
+  equ $4,$0
   mul $2,$4
-  add $2,2
-  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$2
-  add $4,2
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mov $2,$6
-  mul $3,$5
-  sub $3,17
-  mov $6,1
-  add $7,1
-  add $7,$2
+  sub $2,1
+  add $5,$1
+  add $5,3
+  add $1,2
 lpe
-mov $0,$7
-div $0,2
-mul $0,6
-add $0,8
-add $1,$0
-mul $1,$0
-mov $0,$1
-sub $0,64
-div $0,3
-add $0,21
+mov $0,$5
+add $0,1

@@ -1,28 +1,32 @@
 ; A218035: Number of n-digit palindromes with squares that are also palindromes.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 4,2,5,3,8,5,13,9,22,16,37,27,60,43,93,65,138,94,197,131,272,177,365,233,478,300,613,379,772,471,957,577,1170,698,1413,835,1688,989,1997,1161,2342,1352,2725,1563,3148,1795,3613,2049,4122,2326,4677,2627,5280,2953,5933,3305,6638,3684,7397,4091,8212,4527,9085,4993,10018,5490,11013,6019,12072,6581,13197,7177,14390,7808,15653,8475,16988,9179,18397,9921
 
 #offset 1
 
+mov $1,4
+mov $2,2
+mov $3,5
+mov $4,3
+mov $5,8
+mov $6,5
+mov $7,13
+mov $8,9
+mov $9,22
 sub $0,1
-mov $1,1
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
+lpb $0
+  mov $1,0
+  rol $1,9
+  mov $10,$3
+  mul $10,4
+  sub $9,$1
+  add $9,$10
+  mov $10,$5
+  mul $10,-6
+  add $9,$10
+  mov $10,$7
+  mul $10,4
   sub $0,1
-  mov $4,$0
-  max $4,0
-  add $4,1
-  seq $4,343098 ; Number of palindromes < 10^n whose squares are also palindromes.
-  mov $2,$5
-  mul $2,$4
-  mul $0,$5
-  add $1,$2
+  add $9,$10
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
 mov $0,$1
-sub $0,1

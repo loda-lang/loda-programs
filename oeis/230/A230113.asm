@@ -1,35 +1,31 @@
 ; A230113: Digital root of summed Fibonacci and Lucas digital roots indexed by numbers not divisible by 2, 3 or 5.
-; Submitted by Coleslaw
+; Submitted by loader3229
 ; 3,4,5,6,6,5,4,3,4,6,6,5,4,3,3,5,6,5,4,3,3,4,5,6,5,3,3,4,5,6,6,4,3,4,5,6,6,5,4,3,4,6,6,5,4,3,3,5,6,5,4,3,3,4,5,6,5,3,3,4,5,6,6,4,3,4,5,6,6,5,4,3,4,6,6,5,4,3,3,5
 
 #offset 1
 
-add $0,3
-mov $1,$0
-div $1,2
-mod $1,4
-mul $0,6
-add $0,$1
-add $0,1
-div $0,4
-mul $0,5
-add $0,4
-div $0,4
-mul $0,2
-sub $0,15
-mov $3,4
-mov $5,1
+mov $1,3
+mov $2,4
+mov $3,5
+mov $4,6
+mov $5,6
+mov $6,5
+mov $7,4
+mov $8,3
+mov $9,4
+mov $10,6
+mov $11,6
+mov $12,5
+mov $13,4
+mov $14,3
+mov $15,3
+mov $16,5
+mov $17,6
+sub $0,1
 lpb $0
+  rol $1,17
+  sub $17,$1
+  add $17,$16
   sub $0,1
-  add $2,$3
-  mul $3,2
-  sub $3,1
-  mov $4,$2
-  mov $2,$5
-  add $5,$4
 lpe
-mov $0,$5
-div $0,2
-mod $0,9
-div $0,2
-add $0,2
+mov $0,$1

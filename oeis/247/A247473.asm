@@ -1,17 +1,24 @@
-; A247473: Numbers of the form 2^k (k>=0) that are a sum of divisors of n for some n.
-; Submitted by Jon Maiga
+; A247473: Numbers of the form 2^k (k>=0) that are a sum of divisors of m for some m.
+; Submitted by loader3229
 ; 1,4,8,32,128,256,512,1024,4096,8192,16384,32768,65536,131072,262144,524288,1048576,2097152,4194304,8388608,16777216,33554432,67108864,134217728,268435456,536870912,1073741824,2147483648,4294967296,8589934592,17179869184,34359738368
-; Formula: a(n) = truncate(2^(A180221(max(n-2,0)+1)*((n-1)!=0)))
 
 #offset 1
 
+mov $1,1
+mov $2,4
+mov $3,8
+mov $4,32
+mov $5,128
+mov $6,256
+mov $7,512
+mov $8,1024
+mov $9,4096
 sub $0,1
-mov $1,$0
-neq $1,0
-trn $0,1
-add $0,1
-seq $0,180221 ; Numbers that can be written as sum of one or more distinct elements of A000043. Numbers k for which sigma(A180162(k))=2^k, k>=2.
-mul $0,$1
-mov $2,2
-pow $2,$0
-mov $0,$2
+lpb $0
+  mov $1,0
+  rol $1,9
+  add $9,$8
+  add $9,$8
+  sub $0,1
+lpe
+mov $0,$1

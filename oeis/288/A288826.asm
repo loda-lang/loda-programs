@@ -11,9 +11,9 @@ mov $4,$0
 add $4,1
 mov $6,$4
 div $6,3
+mov $10,1
 div $4,2
 sub $4,$6
-mov $5,0
 pow $5,$4
 mov $2,$0
 div $2,2
@@ -28,8 +28,6 @@ sub $0,$8
 add $0,$5
 mul $0,2
 sub $0,1
-mov $9,0
-mov $10,1
 lpb $0
   mov $11,$0
   mod $11,2

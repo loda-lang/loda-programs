@@ -1,13 +1,34 @@
 ; A211324: Number of (n+1) X (n+1) -3..3 symmetric matrices with every 2 X 2 subblock having sum zero and one or three distinct values.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 15,29,55,107,209,409,805,1583,3127,6175,12233,24241,48141,95655,190343,378967,755249,1505841,3004341,5996175,11972503,23911631,47770041,95451441,190761021,381287447,762198439,1523777639,3046559585,6091487857,12180348709,24356406335,48705894583,97400514463,194782836137,389536073713,779024356077,1557971060103,3115816676807,6231429733879,12462530404625,24924527077809,49848191361045,99694984098927,199387706780119,398771749325039,797537572997145,1595065547717553,3190115571505437,6380206004027255
-; Formula: a(n) = 2*A000045(n+3)+A211114(n)
 
 #offset 1
 
-mov $1,$0
-seq $1,211114 ; Number of (n+1) X (n+1) -2..2 symmetric matrices with every 2 X 2 subblock having sum zero and one or three distinct values.
-add $0,3
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $1,$0
-add $0,$1
+mov $1,15
+mov $2,29
+mov $3,55
+mov $4,107
+mov $5,209
+mov $6,409
+mov $7,805
+sub $0,1
+lpb $0
+  mul $1,-4
+  rol $1,7
+  sub $7,$1
+  sub $7,$1
+  mov $8,$2
+  mul $8,12
+  add $7,$8
+  add $7,$3
+  mov $8,$4
+  mul $8,-11
+  add $7,$8
+  add $7,$5
+  add $7,$5
+  mov $8,$6
+  mul $8,3
+  sub $0,1
+  add $7,$8
+lpe
+mov $0,$1

@@ -1,26 +1,26 @@
 ; A229134: Square numbers that are the sum of two non-consecutive triangular numbers.
-; Submitted by 2mdPUbG3fhUMEpz6FJkmzwC9PME8
+; Submitted by BrandyNOW
 ; 16,36,81,121,196,225,256,289,361,441,484,529,576,625,676,841,900,961,1024,1156,1225,1296,1444,1521,1600,1681,1849,1936,2116,2304,2401,2500,2601,2704,2809,2916,3136,3249,3481,3721,4096,4356,4624,4761,4900,5041,5184,5476,5776,5929,6241,6561,6724,6889,7056,7396,7569,7921,8281,8649,8836,9025,9216,9409,9604,9801,10000,10201,10816,11236,11449,11664,11881,12100,12321,12769,12996,13456,13689,14161
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-mov $4,2
 add $0,1
-mov $1,2
-add $2,4
-pow $2,4
+add $2,5
+pow $2,2
 lpb $2
   max $3,$4
-  mul $3,2
   add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   equ $3,0
   sub $0,$3
   add $1,4
   sub $2,$0
   add $4,$1
+  add $1,4
 lpe
 mov $0,$4
-div $0,2
+sub $0,64
+div $0,4
+add $0,16

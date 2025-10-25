@@ -1,7 +1,23 @@
 ; A287190: Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 253", based on the 5-celled von Neumann neighborhood.
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,10,0,1110,11,111110,11,11111110,11,1111111110,11,111111111110,11,11111111111110,11,1111111111111110,11,111111111111111110,11,11111111111111111110,11,1111111111111111111110,11,111111111111111111111110,11,11111111111111111111111110,11,1111111111111111111111111110,11,111111111111111111111111111110,11,11111111111111111111111111111110,11,1111111111111111111111111111111110,11,111111111111111111111111111111111110,11,11111111111111111111111111111111111110,11,1111111111111111111111111111111111111110
-; Formula: a(n) = A007088(A287192(n))
+; Formula: a(n) = 101*a(n-2)-100*a(n-4), a(12) = 11, a(11) = 111111111110, a(10) = 11, a(9) = 1111111110, a(8) = 11, a(7) = 11111110, a(6) = 11, a(5) = 111110, a(4) = 11, a(3) = 1110, a(2) = 0, a(1) = 10, a(0) = 1
 
-seq $0,287192 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 253", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $2,10
+mov $4,1110
+mov $5,11
+mov $6,111110
+mov $7,11
+lpb $0
+  mul $1,0
+  rol $1,7
+  mov $8,$3
+  mul $8,-100
+  add $7,$8
+  mov $8,$5
+  mul $8,101
+  sub $0,1
+  add $7,$8
+lpe
+mov $0,$1
