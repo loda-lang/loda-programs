@@ -1,0 +1,77 @@
+; A345212: Numbers with equal numbers of prime and semiprime divisors.
+; Submitted by Science United
+; 1,4,8,9,12,16,18,20,24,25,27,28,30,32,40,42,44,45,48,49,50,52,54,56,63,64,66,68,70,75,76,78,80,81,88,92,96,98,99,102,104,105,110,112,114,116,117,121,124,125,128,130,135,136,138,147,148,152,153,154,160,162,164,165,169,170,171,172,174,175,176,182,184,186,188,189,190,192,195,207
+
+#offset 1
+
+mov $1,$0
+sub $1,1
+mov $4,$0
+add $4,9
+pow $4,2
+lpb $4
+  mov $5,$3
+  add $5,1
+  seq $5,73184 ; Number of cubefree divisors of n.
+  mov $7,$5
+  add $7,2
+  mov $8,$5
+  add $8,2
+  mov $9,$5
+  add $9,3
+  mov $10,$5
+  add $10,4
+  add $5,1
+  mov $11,$5
+  pow $11,4
+  mul $11,15
+  mov $12,$5
+  pow $12,3
+  mul $12,150
+  mov $13,$5
+  pow $13,2
+  mul $13,515
+  mov $14,$5
+  mul $14,672
+  add $11,$12
+  add $11,$13
+  add $11,$14
+  add $11,223
+  mul $5,$8
+  mul $5,$9
+  mul $5,$10
+  mul $5,$11
+  div $5,360
+  mov $16,$7
+  mul $16,3
+  add $7,2
+  mov $17,$7
+  pow $17,3
+  mov $15,2
+  add $15,$16
+  mul $15,$17
+  add $15,$7
+  mov $7,$15
+  div $7,6
+  div $5,$7
+  div $5,2
+  mod $5,2
+  sub $1,$5
+  add $3,1
+  mov $6,$1
+  max $6,0
+  equ $6,$1
+  mul $4,$6
+  sub $4,2
+lpe
+mov $1,$3
+add $1,1
+mov $2,$0
+mul $0,2
+add $2,$0
+add $0,$2
+pow $0,$0
+lex $0,2
+add $0,1
+mod $0,10
+mul $0,$1
