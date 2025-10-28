@@ -28,17 +28,17 @@ mov $0,$2
 add $0,1
 
 ; parameter 0
-; number of unique values: 11
-; value: 2,10,12,22,28,30,42,66,70,96,116
+; number of unique values: 10
+; value: 2,10,12,22,28,30,42,70,96,116
 
 ; parameter 1
 ; number of unique values: 2
 ; value: 48,50
 
 ; parameter 2
-; number of unique values: 10
-; value: 34,50,52,54,56,60,64,70,74,78
+; number of unique values: 9
+; value: 34,50,54,56,60,64,70,74,78
 
 ; programs with this pattern
-; number of programs: 19
-; program id: 142212,142490,142548,142553,142622,142671,142679,142750,142801,142821,142834,142841,142854,142895,142902,142906,244763,244769,244778
+; number of programs: 17
+; program id: 142212,142490,142548,142553,142622,142679,142750,142801,142821,142834,142841,142854,142895,142902,142906,244763,244769
