@@ -153,6 +153,7 @@ A030124: Complement (and also first differences) of Hofstadter's sequence A00522
 A030132: Digital root of Fibonacci(n).
 A030133: a(n+1) is the sum of digits of (a(n) + a(n-1)).
 A030300: Runs have lengths 2^n, n >= 0.
+A030556: run length of n-th run of digit 0 in A030548.
 A031013: Position of n-th 5 in A031007.
 A032665: Digit '2' concatenated with a(n) is a prime.
 A032668: Digit '5' concatenated with a(n) is a prime.
@@ -189,9 +190,11 @@ A036583: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036585: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036987: Fredholm-Rueppel sequence.
 A037022: Triangle in which row n has the first n digits of sqrt(n) (truncated).
+A037085: Beatty sequence for Pi^2.
 A037087: Beatty sequence for e^(1/e).
 A037126: Triangle T(n,k) = prime(k) for k = 1..n.
 A037178: Longest cycle when squaring modulo n-th prime.
+A037414: Positive numbers having the same set of digits in base 2 and base 9.
 A037813: Number of i such that d(i)<=d(i-1), where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.
 A038451: Sums of 9 distinct powers of 10.
 A038452: Sums of 10 distinct powers of 10.
@@ -223,6 +226,9 @@ A043091: Every string of 2 consecutive base 5 digits contains exactly 2 distinct
 A043279: Maximal run length in base 5 representation of n.
 A043529: Number of distinct base-2 digits of n.
 A043545: (Maximal base-2 digit of n) - (minimal base-2 digit of n).
+A044061: Numbers n such that string 0,0 occurs in the base 4 representation of n but not of n-1.
+A044144: Numbers k such that string 0,6 occurs in the base 7 representation of k but not of k-1.
+A044232: Numbers k such that string 5,5 occurs in the base 8 representation of k but not of k-1.
 A044241: Numbers n such that string 6,6 occurs in the base 8 representation of n but not of n-1.
 A044249: Numbers k such that string 7,6 occurs in the base 8 representation of k but not of k-1.
 A044329: Numbers n such that string 8,6 occurs in the base 9 representation of n but not of n-1.
@@ -250,6 +256,7 @@ A045833: Expansion of eta(q^9)^3 / eta(q^3) in powers of q.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
 A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
+A046411: Composite numbers the concatenation of whose prime factors is a prime.
 A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 A046933: Number of composites between successive primes.
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
@@ -487,6 +494,8 @@ A140868: a(n) = floor(floor(n*alpha)*alpha) where alpha = 1+sqrt(2) = A014176.
 A141105: Upper Even Swappage of Upper Wythoff Sequence.
 A141123: Primes of the form -x^2+2*x*y+2*y^2 (as well as of the form 3*x^2+6*x*y+2*y^2).
 A141172: Primes of the form 2*x^2+2*x*y-3*y^2 (as well as of the form 2*x^2+6*x*y+y^2).
+A141332: a(n) = number of positive integers k, k < n, where |the sine of k radians| is < |the sine of n radians|. Also, a(n) = number of positive integers k, k < n, where |the cosine of k radians| is > |the cosine of n radians|.
+A141333: a(n) = number of positive integers k, k < n, where |the sine of k radians| is > |the sine of n radians|. Also, a(n) = number of positive integers k, k < n, where |the cosine of k radians| is < |the cosine of n radians|.
 A141785: Primes of the form -x^2 + 5*x*y + 5*y^2 (as well as of the form 9*x^2 + 15*x*y + 5*y^2).
 A144611: Sturmian word of slope 2-sqrt(2).
 A147645: Number of distinct Mersenne primes dividing n.
@@ -504,6 +513,7 @@ A165265: Concatenate the number of 1's and number of 0's in the binary expansion
 A165513: Trapezoidal numbers.
 A166011: Least common multiple of prime(n)-3 and prime(n)+3.
 A171798: a(n) = base-10 concatenation XYZ, where X = number of bits in binary expansion of n, Y = number of 0's, Z = number of 1's.
+A172331: a(n) = floor(n*(sqrt(13)+sqrt(7))).
 A174897: a(n) = characteristic function of numbers k such that A007955(m) = k has solution for some m, where A007955(m) = product of divisors of m.
 A174898: a(n) = characteristic function of numbers k such that A007955(m) = k has no solution for any m, where A007955(m) = product of divisors of m.
 A179247: Numbers that have 7 terms in their Zeckendorf representation.
@@ -534,6 +544,7 @@ A186221: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) 
 A187285: Smallest multiple of n beginning with 1.
 A187330: a(n) = floor((4-sqrt(5))*n); complement of A187339.
 A187338: a(n) = 3*n + floor(sqrt(2)*n), complement of A187328.
+A187342: Floor(((15+sqrt(5))/11)n); complement of A187341.
 A187948: [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 A187975: Positions of 1 in the zero-one sequence given by s(n)=[nr+5r]-[nr]-[5r], where r=sqrt(2), n>=1, [ ]=floor.
 A188012: Positions of 0 in A188011; complement of A188013.
@@ -629,6 +640,7 @@ A232324: n(n+1)/2 modulo sigma(n).
 A232437: Numbers whose square is expressible in only one way as x^2+xy+y^2, with x and y > 0.
 A232742: Numbers n for which the largest m such that (m-1)! divides n is a composite.
 A233269: a(n) = A055881(A001109(n)).
+A233279: Permutation of nonnegative integers: a(n) = A054429(A006068(n)).
 A235224: a(0) = 0, and for n > 0, a(n) = largest k such that A002110(k-1) <= n, where A002110(k) gives the k-th primorial number.
 A238248: Numbers m such that A072219(m) = 7.
 A238392: Triangle read by rows: each row is an initial segment of the terms of A000123 followed by its reflection.
@@ -891,8 +903,11 @@ A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).
 A349124: a(n) = A349123(n) / A003557(n), where A349123 is the Dirichlet convolution of the arithmetic derivative with n*tau(n).
 A350389: a(n) is the largest unitary divisor of n that is an exponentially odd number (A268335).
 A350390: a(n) is the largest exponentially odd divisor of n.
+A351399: Sum of the exponents in the prime factorizations of the divisors of A100716(n) of the form p^p, p prime.
 A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353478: a(n) = 1 if n is an even semiprime (2*prime), otherwise 0.
+A353486: Primorial base exp-function reduced modulo 4.
+A353487: a(n) = A276086(2*n) mod 4, where A276086 is the primorial base exp-function.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.
 A353527: The smallest prime not dividing 2*n, reduced modulo 4.
@@ -921,7 +936,9 @@ A360158: a(n) is the number of unitary divisors of n that are odd squares minus 
 A363089: Positive numbers k for which cos(k) > sin(k).
 A368333: The largest term of A054744 that divide n.
 A368542: The number of divisors of n whose prime factors are all Mersenne primes (A000668).
+A369275: Nonnegative numbers k satisfying sin(k) < sin(k+1) < sin(k+2) < sin(k+3) < sin(k+4).
 A373834: a(n) = 1 if n is a multiple of A276150(n), otherwise 0, where A276150 is the digit sum in the primorial base.
+A373841: Numbers whose digital sum in the primorial base is a multiple of 3.
 A374130: a(n) = 1 if bitwise-XOR of the exponents of primes in the prime factorization of n is equal to 1, otherwise 0.
 A376573: Numbers that are not squares of triangular numbers. Complement of A000537.
 A376928: The largest noncomposite number k such that n is divisible by all the primes that do not exceed k.
