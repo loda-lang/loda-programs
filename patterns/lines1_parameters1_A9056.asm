@@ -1,0 +1,9 @@
+add $0,2 ; source=parameter 0
+
+; parameter 0
+; number of unique values: 17
+; value: 1,2,3,4,5,6,7,8,9,47,64,96,239,342,10099,15683,38272752
+
+; programs with this pattern
+; number of programs: 19
+; program id: 9056,20705,20710,20715,20719,20722,20723,20725,88475,112821,114143,121377,121378,130764,130765,177949,213182,213184,342350
