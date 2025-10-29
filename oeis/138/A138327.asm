@@ -14,10 +14,8 @@ mov $9,38
 mov $10,44
 sub $0,1
 lpb $0
-  mov $1,0
   rol $1,10
   add $6,$0
-  sub $10,$4
   add $10,$5
   add $10,$9
   sub $0,1

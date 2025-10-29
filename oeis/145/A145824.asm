@@ -1,34 +1,40 @@
 ; A145824: Lower twin primes p1 such that p1-1 is a square.
-; Submitted by nenym
+; Submitted by [SG]KidDoesCrunch
 ; 5,17,101,197,5477,8837,16901,17957,21317,25601,52901,65537,106277,115601,122501,164837,184901,193601,220901,341057,401957,470597,490001,495617,614657,739601,846401,972197,1110917,1144901,1336337,1464101,1752977,1795601,1833317,1865957,1943237,2016401,2119937,2131601,2446097,2890001,3182657,3297857,3519377,4024037,4326401,4393217,4726277,6100901,6421157,6604901,6760001,7107557,7728401,7806437,8352101,8561477,8916197,9278117,9572837,10137857,10368401,10588517,10916417,11062277,11262737,12390401
 
 #offset 1
 
+mov $1,1
 mov $2,$0
 sub $0,1
-add $2,5
+add $2,7
 pow $2,3
 lpb $2
-  pow $3,2
-  mov $5,$3
-  add $5,2
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $3,3
-  sub $3,$5
-  mul $5,$3
-  add $5,2
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$5
-  max $1,5
-  mov $3,$1
-  div $3,2
+  sub $6,1
+  mov $3,$6
+  add $3,$1
+  add $7,1
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $7,$3
+  pow $7,2
+  add $7,1
+  mov $9,$7
+  equ $9,1
+  mov $8,$7
+  seq $8,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $8,$9
+  add $8,1
+  mod $8,2
+  sub $0,$8
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
-  add $1,3
+  max $5,3
+  mov $7,$5
   mul $2,$4
-  sub $2,18
+  sub $2,17
+  add $5,$1
 lpe
-mov $0,$3
-pow $0,2
-add $0,1
+mov $0,$7
+sub $0,1

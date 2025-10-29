@@ -1,11 +1,10 @@
 ; A171526: Denominator of (n-th noncomposite/n).
-; Submitted by Science United
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50
-; Formula: a(n) = gcd(binomial(n-4,n),n)
+; Formula: a(n) = gcd(n,truncate((-3)/n))
 
 #offset 1
 
-mov $1,$0
-sub $0,4
-bin $0,$1
+mov $1,-3
+div $1,$0
 gcd $0,$1

@@ -1,19 +1,36 @@
 ; A192096: Maximum number of tatami tilings of any m X m square region with exactly n horizontal dimers and m monomers.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 2,4,6,12,18,28,44,64,92,132,186,256,352,476,638,852,1124,1472,1920,2484,3196,4096,5216,6612,8350,10496,13140,16396,20380,25244,31178,38380,47104,57660,70380,85684,104068,126080,152396,183808,221208,265664,318432,380928,454834,542116,644992,766080,908420,1075456,1271220,1500364,1768178,2080804,2445312,2869740,3363364,3936832,4602240,5373492,6266496,7299300,8492576,9869908,11458020,13287424,15392824,17813504,20594176,23785572,27445046,31637676,36437152,41926652,48200320,55364544,63539200,72859684
 
-mov $3,3
-add $0,3
+mov $2,1
+mov $3,1
+mov $10,1
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  mul $2,2
-  dif $2,2
-  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
-  add $4,1
-  add $1,$2
-  mov $3,$4
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  add $2,1
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    add $6,$7
+    mov $9,10
+    add $9,$5
+    mov $7,$4
+    add $7,1
+    seq $7,46897 ; Sum of divisors of n that are not divisible by 4.
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  mov $9,10
+  add $9,$2
+  mul $6,2
+  div $6,$2
+  div $6,3
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$3
 mul $0,2

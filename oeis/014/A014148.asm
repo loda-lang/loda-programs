@@ -4,27 +4,16 @@
 
 #offset 1
 
-sub $0,1
-mov $14,$0
-mov $16,$0
-add $16,4
-lpb $16
-  clr $0,14
-  sub $16,1
-  mov $0,$14
-  sub $0,$16
-  mov $11,$0
-  mov $13,$0
-  add $13,1
-  lpb $13
-    sub $13,1
-    mov $0,$11
-    sub $0,$13
-    mov $4,$0
-    add $4,1
-    seq $4,40 ; The prime numbers.
-    add $12,$4
-  lpe
-  add $15,$12
+mov $1,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  add $4,$3
+  mov $0,$1
+  sub $0,$2
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  add $3,$0
 lpe
-mov $0,$15
+mov $0,$4

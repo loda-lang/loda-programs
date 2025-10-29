@@ -1,31 +1,31 @@
 ; A023240: Primes p such that 10*p + 9 is also prime.
-; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
+; Submitted by Just Jake
 ; 2,5,7,13,17,19,23,37,41,43,47,59,61,71,73,83,101,103,127,131,139,149,157,197,199,223,233,239,257,269,271,281,293,307,311,331,349,353,373,401,409,421,433,463,467,479,491,499,503,509,541,547,563,577,587,593,607,619,659,661,677,701,769,787,821,853,859,877,881,883,919,941,947,953,967,971,983,1009,1013,1039
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,5
-pow $2,3
+add $2,1
+pow $2,2
 lpb $2
-  add $3,8
-  mov $1,$6
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  mov $1,$5
-  add $3,2
+  max $3,$5
+  add $3,1
+  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
   mov $4,$0
   max $4,0
   equ $4,$0
+  sub $5,2
+  add $5,$1
+  add $1,1
   mul $2,$4
-  sub $2,17
-  mov $5,1
-  add $6,$1
+  sub $2,1
+  add $5,$1
+  add $1,9
 lpe
-mov $0,$3
+mov $0,$1
+sub $0,30
 div $0,10
+add $0,2

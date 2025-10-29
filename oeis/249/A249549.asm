@@ -1,5 +1,5 @@
 ; A249549: Conjectured largest number k not divisible by 10 such that k^k has exactly n distinct decimal digits.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 2,3,6,8,7,14,15,17,34
 
 #offset 1
@@ -18,12 +18,7 @@ lpb $0
   add $8,$1
   mul $8,2
   sub $8,$4
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
+  rol $1,7
   mov $7,$8
 lpe
 mov $0,$7

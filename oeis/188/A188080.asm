@@ -1,5 +1,5 @@
 ; A188080: Positions of 0 in A188079; complement of A188081.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,5,6,8,9,12,13,15,16,17,19,20,23,24,27,28,30,31,32,34,35,38,39,42,43,45,46,47,49,50,53,54,56,57,58,60,61,64,65,68,69,71,72,73,75,76,79,80,83,84,86,87,88,90,91,94,95,98,99,101,102,103,105,106,109,110,112,113,114,116,117,120,121,124,125,127,128,129
 
 #offset 1
@@ -8,9 +8,76 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  div $4,22
+  mul $4,56
   mov $3,$1
-  add $3,1
-  seq $3,188081 ; Positions of 1 in A188079; complement of A188080.
+  dgr $3,23
+  mov $5,$3
+  equ $5,1
+  mul $5,7
+  add $4,$5
+  mov $5,$3
+  equ $5,2
+  mul $5,10
+  add $4,$5
+  mov $5,$3
+  equ $5,4
+  mul $5,14
+  add $4,$5
+  mov $5,$3
+  equ $5,5
+  mul $5,18
+  add $4,$5
+  mov $5,$3
+  equ $5,6
+  mul $5,21
+  add $4,$5
+  mov $5,$3
+  equ $5,8
+  mul $5,25
+  add $4,$5
+  mov $5,$3
+  equ $5,10
+  mul $5,29
+  add $4,$5
+  mov $5,$3
+  equ $5,11
+  mul $5,33
+  add $4,$5
+  mov $5,$3
+  equ $5,12
+  mul $5,36
+  add $4,$5
+  mov $5,$3
+  equ $5,14
+  mul $5,40
+  add $4,$5
+  mov $5,$3
+  equ $5,16
+  mul $5,44
+  add $4,$5
+  mov $5,$3
+  equ $5,17
+  mul $5,48
+  add $4,$5
+  mov $5,$3
+  equ $5,18
+  mul $5,51
+  add $4,$5
+  mov $5,$3
+  equ $5,20
+  mul $5,55
+  add $4,$5
+  mov $5,$3
+  equ $5,21
+  mul $5,59
+  add $4,$5
+  mov $5,$3
+  equ $5,22
+  mul $5,6
+  add $4,$5
+  mov $3,$4
   sub $3,1
   add $0,1
   add $1,1

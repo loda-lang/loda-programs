@@ -1,7 +1,7 @@
 ; A254277: Decimal expansion of classical electron radius in meters.
 ; Submitted by BrandyNOW
 ; 2,8,1,7,9,4,0,3
-; Formula: a(n) = -truncate((108*n+1620)/7)-2*(n+15)^3-2*n-10*truncate((-truncate((108*n+1620)/7)-2*(n+15)^3-2*n+floor((300*(n+12)^2)/7)+floor((57*(n+15)^8)/7)-28)/10)+floor((300*(n+12)^2)/7)+floor((57*(n+15)^8)/7)-28
+; Formula: a(n) = -floor((108*n+1620)/7)-2*(n+15)^3-2*n-10*truncate((-floor((108*n+1620)/7)-2*(n+15)^3-2*n+floor((300*(n+12)^2)/7)+floor((57*(n+15)^8)/7)-28)/10)+floor((300*(n+12)^2)/7)+floor((57*(n+15)^8)/7)-28
 
 #offset -14
 

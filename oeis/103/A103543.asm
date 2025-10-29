@@ -1,25 +1,33 @@
 ; A103543: Consider those values of k for which A102370(k) = k: 0, 4, 8, 16, 20, 24, 32, 36, 40, 48, 52, 56, 64, ... and divide by 4: 0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22, 24, ...; sequence gives missing numbers.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 3,7,11,15,19,23,27,31,35,39,43,47,51,55,59,62,63,67,71,75,79,83,87,91,95,99,103,107,111,115,119,123,126,127,131,135,139,143,147,151,155,159,163,167,171,175,179,183,187,190,191,195,199,203,207,211,215,219,223
 
 #offset 1
 
-mov $2,$0
+mov $1,3
+mov $2,7
+mov $3,11
+mov $4,15
+mov $5,19
+mov $6,23
+mov $7,27
+mov $8,31
+mov $9,35
+mov $10,39
+mov $11,43
+mov $12,47
+mov $13,51
+mov $14,55
+mov $15,59
+mov $16,62
+mov $17,63
+mov $18,67
 sub $0,1
-add $2,2
-pow $2,2
-lpb $2
-  add $1,4
-  mov $3,$1
-  seq $3,103185 ; a(n) = Sum_{ k >= 0 such that n + k == 0 mod 2^k } 2^(k-1).
-  min $3,1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  mul $1,-1
+  rol $1,18
+  add $18,$1
+  add $18,$17
+  sub $0,1
 lpe
 mov $0,$1
-div $0,4
-add $0,1

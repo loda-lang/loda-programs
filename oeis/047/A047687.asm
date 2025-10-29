@@ -1,11 +1,27 @@
 ; A047687: Numerators of coefficients in Taylor series for exp(sin(x)).
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,0,-1,-1,-1,1,31,1,-2951,-1,181,2417,58913,-5699,-52635599,-19993,1126610929,3631,27069353,-6050353,-118802490419,47438,11162375477471,41478716501,-8529964147714967,-3818348299,-2610006147952249,36698180928319,1446188098724255329,-3518532018557,-334852949145487749761,-7508338288827919,594094494902602207843297,2281941058908653,317334355101311574655801,-6325207413840393223,-869336484857826490420847,745245693369198417947,14070295294155078513813178921,2408753327494274120221
-; Formula: a(n) = truncate(A002017(n)/gcd(n!,A002017(n)))
 
-mov $1,$0
-seq $1,2017 ; Expansion of e.g.f. exp(sin(x)).
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
+mov $6,$0
+add $6,1
+bin $6,2
+mov $8,$0
+add $8,1
+lpb $8
+  sub $8,1
+  mov $7,-1
+  pow $7,$3
+  mov $2,$3
+  add $2,$6
+  seq $2,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  add $3,1
+  div $5,$7
+  add $5,$2
+lpe
+mov $4,1
+fac $4,$0
+mov $0,$4
+gcd $0,$5
+mov $1,$5
 div $1,$0
 mov $0,$1

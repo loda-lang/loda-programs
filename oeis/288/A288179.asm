@@ -1,5 +1,5 @@
 ; A288179: Maximum number of vertices of any convex polygon formed in the middle square of the boundary by drawing the line segments connecting any two lattice points in an (2k+1) X (2k+1) lattice polygon.
-; Submitted by Science United
+; Submitted by Eric Liskay
 ; 4,6,7,6,7,6,6,7,7,8,8,7,7,8,8,8,8,8,8
 
 #offset 1
@@ -12,6 +12,7 @@ lpb $0
   sub $2,26
   max $2,$4
   gcd $2,$0
+  dif $0,10
   mov $3,$0
   div $3,2
   add $4,1

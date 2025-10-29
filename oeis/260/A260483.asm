@@ -4,27 +4,22 @@
 
 #offset 1
 
-mov $2,2
-mov $3,$0
-lpb $3
-  mov $4,$3
-  mul $4,$3
-  add $4,5
-  bin $4,3
-  sub $4,4
-  mov $5,$1
-  mul $2,4
-  mul $2,$4
-  sub $3,1
-  mul $1,2
-  add $1,$2
-  div $1,$0
-  sub $2,$5
-  div $2,$0
-  div $2,2
+mov $2,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $3,0
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    seq $5,314150 ; Coordination sequence Gal.3.58.1 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+    add $3,$5
+    sub $4,1
+  lpe
+  div $3,$2
+  div $3,2
+  mov $1,$3
+  add $2,1
 lpe
-mul $0,2
-add $2,$1
-div $2,$0
-div $1,$2
 mov $0,$1
+max $0,1

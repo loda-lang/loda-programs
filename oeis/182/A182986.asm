@@ -4,13 +4,15 @@
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-mov $3,$1
-dif $3,$1
-mov $2,$1
-trn $2,1
-add $2,1
-seq $2,40 ; The prime numbers.
-mul $3,$2
-mov $0,$3
+mov $1,1
+sub $0,1
+lpb $0
+  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
+  mov $5,$0
+  sub $0,1
+lpe
+rol $1,4
+sub $2,1
+add $5,$4
+mov $0,$5
+sub $0,1

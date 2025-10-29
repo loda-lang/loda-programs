@@ -1,25 +1,39 @@
 ; A272933: Numbers of the form x^2 + 12*y^2.
-; Submitted by Ralfy
+; Submitted by iBezanilla
 ; 0,1,4,9,12,13,16,21,25,28,36,37,48,49,52,57,61,64,73,76,81,84,93,97,100,108,109,112,117,121,124,129,133,144,148,156,157,169,172,181,189,192,193,196,201,208,217,225,228,229,237,241,244,252,256,268,273,277
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-pow $2,2
+sub $0,1
+pow $2,4
 lpb $2
-  gcd $1,28
+  mov $5,0
+  mov $7,2
+  mov $8,0
   mov $3,$1
-  mul $3,$5
-  seq $3,353816 ; a(n) = 1 if n is a number of the form x^2 + xy + y^2, otherwise 0.
+  add $3,2
+  lpb $3
+    sub $3,$7
+    mov $6,$3
+    max $6,0
+    mul $6,2
+    seq $6,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+    add $5,$6
+    mov $7,1
+    add $7,$8
+    mul $7,24
+    add $8,2
+  lpe
+  mov $3,$5
+  min $3,1
   sub $0,$3
-  add $1,3
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
-  add $5,1
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$5
+mov $0,$1
+div $0,2

@@ -1,13 +1,47 @@
 ; A271056: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 259", based on the 5-celled von Neumann neighborhood.
-; Submitted by [SG-FC] hl
+; Submitted by loader3229
 ; 1,6,11,47,52,160,165,377,382,730,735,1251,1256,1972,1977,2925,2930,4142,4147,5655,5660,7496,7501,9697,9702,12290,12295,15307,15312,18780,18785,22741,22746,27222,27227,32255,32260,37872,37877,44105,44110,50986,50991,58547,58552,66820,66825,75837,75842,85630,85635,96231,96236,107672,107677,119985,119990,133202,133207,147355,147360,162476,162481,178597,178602,195750,195755,213967,213972,233280,233285,253721,253726,275322,275327,298115,298120,322132,322137,347405
-; Formula: a(n) = a(n-1)+A271054(n), a(0) = 1
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = truncate((b(n-2)*(d(n-2)*(1500*d(n-2)-1020)+1188)+c(n-2)*(d(n-2)*(1840*d(n-2)-435)+1188))/(1500*d(n-2)^2+648)), b(5) = 52, b(4) = 52, b(3) = 11, b(2) = 11, b(1) = 1, b(0) = 1, c(n) = truncate((b(n-2)*(-408*d(n-2)+192)+c(n-2)*(d(n-2)*(-139*d(n-2)-716)+192))/(-275*d(n-2)^2+32)), c(5) = 108, c(4) = 108, c(3) = 36, c(2) = 36, c(1) = 5, c(0) = 5, d(n) = d(n-2)+1, d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
 
 mov $1,1
+mov $2,5
 lpb $0
-  mov $2,$0
-  seq $2,271054 ; Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 259", based on the 5-celled von Neumann neighborhood.
-  sub $0,1
-  add $1,$2
+  sub $0,2
+  mov $4,1500
+  mul $4,$3
+  sub $4,1020
+  mul $4,$3
+  add $4,1188
+  mov $5,1840
+  mul $5,$3
+  sub $5,435
+  mul $5,$3
+  add $5,1188
+  mul $5,$2
+  mov $6,-408
+  mul $6,$3
+  add $6,192
+  mul $6,$1
+  mov $7,-139
+  mul $7,$3
+  sub $7,716
+  mul $7,$3
+  add $7,192
+  mov $8,1500
+  mul $8,$3
+  mul $8,$3
+  add $8,648
+  mov $9,-275
+  mul $9,$3
+  mul $9,$3
+  add $9,32
+  mul $1,$4
+  add $1,$5
+  div $1,$8
+  mul $2,$7
+  add $2,$6
+  div $2,$9
+  add $3,1
 lpe
-mov $0,$1
+mul $0,$2
+add $0,$1

@@ -4,7 +4,7 @@
 ; Formula: a(n) = -3*A015648(0)+A008441(2*n)+3
 
 mul $0,2
-seq $0,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+seq $0,8441 ; Number of ordered ways of writing n as the sum of 2 triangular numbers.
 seq $2,15648 ; Inverse of 1639th cyclotomic polynomial.
 mov $1,$0
 add $1,$2

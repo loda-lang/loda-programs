@@ -1,13 +1,44 @@
 ; A273833: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,5,26,71,147,264,428,649,933,1290,1726,2251,2871,3596,4432,5389,6473,7694,9058,10575,12251,14096,16116,18321,20717,23314,26118,29139,32383,35860,39576,43541,47761,52246,57002,62039,67363,72984,78908,85145,91701,98586,105806,113371,121287,129564,138208,147229,156633,166430,176626,187231,198251,209696,221572,233889,246653,259874,273558,287715,302351,317476,333096,349221,365857,383014,400698,418919,437683,457000,476876,497321,518341,539946,562142,584939,608343,632364,657008,682285
-; Formula: a(n) = a(n-1)+A273831(n), a(0) = 1
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = truncate((d(n-2)*c(n-2)*(2780*d(n-2)+1231)+b(n-2)*(d(n-2)*(2931*d(n-2)+4623)+2652))/(2931*d(n-2)^2+102)), b(5) = 147, b(4) = 147, b(3) = 26, b(2) = 26, b(1) = 1, b(0) = 1, c(n) = truncate((d(n-2)*c(n-2)*(d(n-2)+38)+b(n-2)*(72*d(n-2)+90))/(49*d(n-2)^2+2)), c(5) = 117, c(4) = 117, c(3) = 45, c(2) = 45, c(1) = 4, c(0) = 4, d(n) = d(n-2)+1, d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
 
 mov $1,1
+mov $2,4
 lpb $0
-  mov $2,$0
-  seq $2,273831 ; Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
-  sub $0,1
-  add $1,$2
+  sub $0,2
+  mov $4,2931
+  mul $4,$3
+  add $4,4623
+  mul $4,$3
+  add $4,2652
+  mov $5,2780
+  mul $5,$3
+  add $5,1231
+  mov $6,72
+  mul $6,$3
+  add $6,90
+  mul $6,$1
+  mov $7,$3
+  add $7,38
+  mul $7,$3
+  mov $8,2931
+  mul $8,$3
+  mul $8,$3
+  add $8,102
+  mov $9,49
+  mul $9,$3
+  mul $9,$3
+  add $9,2
+  mul $5,$3
+  mul $5,$2
+  mul $1,$4
+  add $1,$5
+  div $1,$8
+  mul $2,$7
+  add $2,$6
+  div $2,$9
+  add $3,1
 lpe
-mov $0,$1
+mul $0,$2
+add $0,$1

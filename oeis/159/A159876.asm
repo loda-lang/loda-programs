@@ -12,20 +12,17 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  bin $1,$0
-  mov $7,$0
-  mul $7,4
-  add $7,$0
-  mul $7,$0
-  nrt $7,2
-  add $7,$0
-  mov $5,$7
+  mul $1,4
+  add $1,$0
+  mul $1,$0
+  nrt $1,2
+  add $1,$0
+  mov $5,$1
   div $5,2
   mov $6,$5
   gcd $6,$2
   div $6,$5
-  mul $1,$6
-  add $3,$1
+  add $3,$6
 lpe
 mov $0,$3
 add $0,1

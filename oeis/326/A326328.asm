@@ -1,83 +1,18 @@
 ; A326328: a(n) = (2*n)! [x^(2*n)] cosh(x)^(-3).
-; Submitted by PDW
+; Submitted by DukeBox
 ; 1,-3,33,-723,25953,-1376643,101031873,-9795436563,1212135593793,-186388033956483,34859622790687713,-7791941518975112403,2051293521728340489633,-628173356956461494680323,221398076445213367209575553,-88980467736394156270609236243,40450409313733718675802456121473
+; Formula: a(n) = truncate((-A122045(2*n+2)-A155585(2*n+2)+A122045(2*n))/2)
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  mov $6,-1
-  pow $6,$0
-  mov $7,$0
-  add $7,$0
-  bin $7,2
-  add $7,1
-  mov $11,$7
-  mul $11,8
-  nrt $11,2
-  sub $11,1
-  div $11,2
-  add $11,1
-  pow $11,2
-  sub $11,$7
-  mov $7,$11
-  mul $7,8
-  nrt $7,2
-  div $7,2
-  mov $8,$11
-  add $8,$7
-  mov $7,$8
-  add $7,1
-  mov $9,$8
-  add $9,2
-  mov $12,$9
-  mul $12,8
-  nrt $12,2
-  sub $12,1
-  div $12,2
-  mov $13,$12
-  add $13,1
-  bin $13,2
-  sub $9,$13
-  sub $9,1
-  mov $14,$12
-  mod $14,2
-  sub $12,$9
-  mul $12,$14
-  mul $14,$9
-  sub $9,$14
-  add $9,$12
-  add $9,$7
-  add $7,1
-  mov $10,$7
-  mul $10,8
-  nrt $10,2
-  div $10,2
-  bin $10,2
-  sub $7,$10
-  sub $9,$7
-  mov $7,$9
-  add $7,1
-  mov $15,$7
-  mul $15,8
-  nrt $15,2
-  sub $15,1
-  div $15,2
-  add $15,1
-  pow $15,2
-  sub $15,$7
-  mov $7,$15
-  seq $7,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
-  mov $0,$7
-  mul $0,$6
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
-lpe
-sub $1,$5
-sub $3,$1
-mov $0,$3
+mul $0,2
+mov $1,$0
+add $0,2
+mov $2,$0
+seq $2,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+sub $0,1
+add $0,$2
+seq $1,122045 ; Euler (or secant) numbers E(n).
+sub $1,1
+sub $1,$0
+mov $0,$1
 div $0,2
