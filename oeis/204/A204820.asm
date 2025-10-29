@@ -10,9 +10,9 @@ lpb $0
   mov $0,$1
   add $0,1
   mul $0,8
-  div $1,16
-  sub $1,1
+  add $1,29
 lpe
+div $0,$1
 mov $1,-1
 pow $1,$0
 seq $0,166338 ; a(n) = (4*n)!/n!.
