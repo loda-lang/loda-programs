@@ -1,13 +1,12 @@
 ; A356295: Numbers that are not the sum of a nonnegative cube and a prime.
-; Submitted by JZD
+; Submitted by [SG]KidDoesCrunch
 ; 1,9,16,22,26,28,33,35,36,52,57,63,65,76,78,82,85,92,96,99,112,118,119,120,122,126,129,133,141,146,155,160,169,170,183,185,188,202,209,210,216,217,225,236,244,246,248,267,273,280,286,300,302,309,326,328,330,342
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,1
-pow $2,2
+mul $2,6
 lpb $2
   mov $3,$1
   add $3,1

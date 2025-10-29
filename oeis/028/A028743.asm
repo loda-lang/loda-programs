@@ -1,5 +1,5 @@
 ; A028743: Nonsquares mod 30.
-; Submitted by Jamie Morken(s4)
+; Submitted by Science United
 ; 2,3,5,7,8,11,12,13,14,17,18,20,22,23,26,27,28,29
 
 #offset 1
@@ -22,7 +22,7 @@ lpb $4
     add $1,$2
     add $2,$1
     div $3,$2
-    mul $2,28
+    mul $2,$3
   lpe
   mod $6,3
   mov $0,$6

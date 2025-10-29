@@ -1,20 +1,32 @@
 ; A360966: a(n) = denominator of (Zeta(2*n+1,1/4) - Zeta(2*n+1,3/4))/Pi^(2*n+1) where Zeta is the Hurwitz zeta function.
-; Submitted by Aexoden
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,3,45,63,14175,93555,42567525,127702575,97692469875,371231385525,2143861251406875,2275791174570375,48076088562799171875,95646113035463615625,3952575621190533915703125,1441527579493018251609375,68739242628124575327993046875,333120945043988326589504765625
-; Formula: a(n) = 2*truncate(truncate(((2*n)!)/gcd(gcd(A155585(2*n),A122045(2*n))*2^(2*n),(2*n)!))/2)+1
 
 mul $0,2
 mov $1,$0
-mov $2,2
-pow $2,$0
-mov $3,$0
-seq $3,122045 ; Euler (or secant) numbers E(n).
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $1,$3
-mul $1,$2
-gcd $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  add $8,$4
+  sub $8,$6
+  mov $4,$3
+  add $4,1
+  trn $4,$1
+  pow $4,$0
+  add $4,$8
+  mov $5,$0
+  bin $5,$3
+  mul $5,$4
+  add $6,$4
+  add $3,1
+  mul $4,-1
+  sub $6,$4
+  mul $7,-1
+  add $7,$5
+lpe
+mov $2,1
+fac $2,$0
+mov $1,$7
+gcd $1,$2
+mov $0,$2
 div $0,$1
-div $0,2
-mul $0,2
-add $0,1

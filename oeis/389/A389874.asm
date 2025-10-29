@@ -8,9 +8,12 @@ lpb $0
   sub $0,1
   sub $4,$2
   max $4,$0
+  sub $4,1
   div $0,2
   mov $2,$4
+  add $2,1
   bin $2,$0
+  add $4,1
   mov $3,$4
   add $3,$0
   sub $3,1
@@ -18,9 +21,10 @@ lpb $0
   mul $3,$2
   div $3,$4
   add $5,$3
+  add $1,1
+  add $2,1
   sub $0,1
   trn $0,1
-  add $1,1
-  add $4,21
+  min $0,26
 lpe
 mov $0,$5

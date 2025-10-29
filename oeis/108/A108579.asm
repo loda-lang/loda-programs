@@ -1,29 +1,15 @@
 ; A108579: Number of symmetry classes of 3 X 3 magic squares (with distinct positive entries) having magic sum 3n.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,0,0,0,1,3,4,7,10,13,17,22,26,32,38,44,51,59,66,75,84,93,103,114,124,136,148,160,173,187,200,215,230,245,261,278,294,312,330,348,367,387,406,427,448,469,491,514,536,560,584,608,633,659,684,711,738,765,793,822,850,880,910,940,971,1003,1034,1067,1100,1133,1167,1202,1236,1272,1308,1344,1381,1419,1456,1495
-; Formula: a(n) = (((n-1)%6)==4)+3*floor((n-1)/6)*((n-1)%6)+18*binomial(floor((n-1)/6),2)+4*floor((n-1)/6)+3*(((n-1)%6)==5)
+; Formula: a(n) = floor((floor(((3*n-8)^2)/9)+1)/4)
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-div $2,6
-mul $2,4
-mov $3,$0
-div $3,6
-mod $0,6
-mov $4,$3
-mul $4,$0
-bin $3,2
-mul $3,6
-add $3,$4
-mul $3,3
+mul $0,3
+sub $0,8
+pow $0,2
+div $0,9
+add $0,1
 mov $1,$0
-equ $1,4
-add $2,$3
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,3
-add $2,$1
-mov $0,$2
+div $1,4
+mov $0,$1

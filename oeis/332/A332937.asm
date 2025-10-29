@@ -6,14 +6,12 @@
 #offset 1
 
 mov $2,$0
-add $2,$0
-mul $2,2
-add $2,$0
-mul $2,$0
-nrt $2,2
-add $2,$0
 sub $0,1
 mov $1,$2
-div $1,2
-gcd $1,$0
-mov $0,$1
+pow $1,2
+mul $1,5
+nrt $1,2
+add $2,$1
+div $2,2
+gcd $2,$0
+mov $0,$2

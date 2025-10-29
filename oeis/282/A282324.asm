@@ -1,35 +1,32 @@
 ; A282324: Greater of twin primes congruent to 19 (mod 30).
-; Submitted by gemini8
+; Submitted by DukeBox
 ; 19,109,139,199,229,349,619,829,859,1279,1429,1489,1609,1669,1699,1789,1879,1999,2029,2089,2239,2269,2659,2689,3169,3259,3469,3529,3559,3769,3919,4129,4159,4219,4339,4519,4549,4639,4789,4969,5419,5479,5659,5869,6199,6829,6949,7129,7309,7459,7489,7549,7759,7879,8089,8389,8539,8599,8629,8839,9439,9679,9769,9859,10009,10039,10069,10429,10459,10939,11059,11119,11719,11779,12109,12379,12919,13009,13219,13339
 
 #offset 1
 
 sub $0,1
-mov $1,-1
-mov $2,$0
-add $2,8
-pow $2,4
-lpb $2
-  mov $5,$6
-  add $5,3
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $6,1
-  mov $3,$6
-  sub $3,$5
-  add $3,3
-  mul $5,$3
-  add $5,2
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $6,14
-  sub $0,$5
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,18
+mov $1,$0
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  mul $4,15
+  add $4,1
+  seq $4,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  bin $4,2
+  add $4,$5
+  sub $1,$4
+  add $1,1
+  add $2,1
+  add $2,$5
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
+  sub $3,1
 lpe
-mov $0,$1
+mov $0,$2
 div $0,2
-mul $0,15
+mul $0,30
 add $0,19

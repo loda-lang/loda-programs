@@ -1,13 +1,55 @@
 ; A137580: Number of distinct digits in decimal representation of n!.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 1,1,1,1,2,3,3,3,4,5,5,6,6,5,6,7,5,9,8,8,9,7,7,10,9,8,9,10,8,9,9,10,9,10,10,10,10,10,9,10,10,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $0,43537 ; Number of distinct base-10 digits of n.
-mul $0,2
-mov $1,15
-lpb $1
-  mod $1,4
-  mul $0,12
+mov $11,1
+fac $11,$0
+mov $0,0
+mov $7,$11
+lpb $7
+  mov $5,$7
+  mod $5,10
+  mov $4,$5
+  equ $4,0
+  div $7,10
+  bor $0,$4
+  mov $4,$5
+  equ $4,1
+  bor $12,$4
+  mov $4,$5
+  equ $4,2
+  bor $13,$4
+  mov $4,$5
+  equ $4,3
+  bor $1,$4
+  mov $4,$5
+  equ $4,4
+  bor $3,$4
+  mov $4,$5
+  equ $4,5
+  bor $10,$4
+  mov $4,$5
+  equ $4,6
+  bor $9,$4
+  mov $4,$5
+  equ $4,7
+  bor $8,$4
+  mov $4,$5
+  equ $4,8
+  equ $5,9
+  bor $6,$4
+  bor $2,$5
 lpe
-div $0,24
+add $0,$12
+add $0,$13
+add $0,$1
+add $0,$3
+add $0,$10
+add $0,$9
+add $0,$8
+add $0,$6
+add $0,$2
+mul $0,2
+sub $0,1
+div $0,2
+add $0,1

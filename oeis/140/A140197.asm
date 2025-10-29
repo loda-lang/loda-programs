@@ -1,31 +1,19 @@
 ; A140197: A137576((k-1)/2) for composite numbers k from A141229.
-; Submitted by emoga
+; Submitted by DukeBox
 ; 55,301,3631,6085,19495,70645,147853,438205,605695,669781,888823,1694695,3060301,3640783,6692791,7998895,9857245,12912535,15443365,17109895,17690941,22819693,28048231,34936663,58178245,75203725,95263573,124984543,127160245,155267965
 
 #offset 1
 
-sub $0,1
-mov $2,2
-mov $3,$0
-pow $3,2
+add $0,2
+seq $0,71642 ; Numbers n such that x^n + x^(n-1) + x^(n-2) + ... + x + 1 is irreducible over GF(2).
+mov $2,1
+add $2,$0
+mov $3,9
 lpb $3
-  mov $4,$2
-  add $4,1
-  seq $4,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-  equ $4,1
-  sub $0,$4
-  add $2,2
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mul $3,$5
-  sub $3,1
+  div $3,9
+  max $1,$0
+  mul $1,$2
 lpe
-mov $0,$2
-add $0,1
-mov $1,$0
-bin $0,2
-mul $1,$0
 mov $0,$1
-mul $0,6
+mul $0,3
 add $0,1

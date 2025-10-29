@@ -6,12 +6,13 @@
 
 mov $2,$0
 sub $0,1
-add $2,10
 pow $2,2
 lpb $2
-  add $1,1
+  add $1,2
   mov $3,$1
-  seq $3,380534 ; a(n) = 1 if the least significant nonzero digit in primorial base representation of n (A049345) is greater than 1, otherwise 0.
+  seq $3,276088 ; The least significant nonzero digit in primorial base representation of n: a(n) = A276094(n) / A002110(A276084(n)) (with a(0) = 0).
+  sub $3,1
+  min $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
@@ -20,4 +21,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+add $0,2

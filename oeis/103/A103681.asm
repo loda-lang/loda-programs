@@ -1,28 +1,14 @@
 ; A103681: Numbers m such that in binary representation m! does not contain 7!.
-; Submitted by kpmonaghan
+; Submitted by shiva
 ; 0,1,2,3,4,5,6,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73
-; Formula: a(n) = truncate(d(n)/2), b(n) = -2*truncate(c(n-1)/2)+c(n-1), b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = -2*truncate(c(n-2)/2)+c(n-1)+c(n-2)+floor((((56*(c(n-2)==11))==0)+56*(c(n-1)==11))/12)+1, c(6) = 11, c(5) = 9, c(4) = 7, c(3) = 5, c(2) = 3, c(1) = 1, c(0) = 0, d(n) = b(n-1)+c(n-1), d(4) = 6, d(3) = 4, d(2) = 2, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  add $4,$3
-  mov $2,$1
-  mod $2,2
-  equ $5,0
-  mov $6,$5
-  mov $5,$1
-  equ $5,11
-  mul $5,56
-  add $6,$5
-  mov $1,$6
-  div $1,12
-  add $1,1
-  add $1,$4
-  mov $3,$1
+sub $0,1
+mov $1,$0
+add $0,1
+lpb $1
+  mov $1,6
+  add $0,2
 lpe
-mov $0,$4
-div $0,2
+sub $0,1

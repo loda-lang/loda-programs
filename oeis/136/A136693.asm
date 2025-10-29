@@ -1,11 +1,14 @@
 ; A136693: Final nonzero digit of n! in base 6.
-; Submitted by Jamie Morken(w2)
+; Submitted by Science United
 ; 1,1,2,1,4,2,2,2,4,4,4,2,4,4,2,2,2,4,2,2,4,2,2,4,4,4,2,4,4,2,4,4,2,2,2,4,4,4,2,4,4,2,2,2,4,2,2,4,2,2,4,4,4,2,2,2,4,2,2,4,4,4,2,2,2,4,2,2,4,4,4,2,4,4,2,4,4,2,2,2
-; Formula: a(n) = A277544(n!)
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+fac $2,$0
 mov $1,-1
-add $1,$0
+add $1,$2
 add $1,1
-seq $1,277544 ; a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
+dir $1,6
+lpb $1
+  mod $1,6
+lpe
 mov $0,$1

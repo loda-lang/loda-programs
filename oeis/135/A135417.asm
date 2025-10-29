@@ -1,5 +1,5 @@
 ; A135417: Number of mountain numbers (see A134941) with n digits.
-; Submitted by Penguin
+; Submitted by Science United
 ; 1,0,8,56,252,784,1792,3108,4166,4352,3544,2232,1068,376,92,14,1
 
 #offset 1
@@ -14,7 +14,7 @@ mov $4,$0
 mul $1,2
 mov $0,99
 lpb $0
-  sub $0,6
+  mov $0,$2
   dif $1,-1
   mul $1,$2
   sub $2,1

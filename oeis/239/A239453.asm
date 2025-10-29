@@ -1,32 +1,46 @@
 ; A239453: Convolution of the generalized Catalan numbers A057977 with themselves.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,3,8,11,30,43,112,172,420,694,1584,2809,6006,11379,22880,46088,87516,186562,335920,754646,1293292,3050238,4992288,12319816,19315400,49725004,74884320,200571541,290845350,808559299,1131445440,3257808976,4407922860,13119940234
+; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = truncate((b(n-2)*(d(n-2)*(8*d(n-2)+33)+21)+c(n-2)*(d(n-2)-3))/(d(n-2)*(2*d(n-2)+8)+6)), b(5) = 11, b(4) = 11, b(3) = 3, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = truncate((b(n-2)*(-5*d(n-2)+3)+c(n-2)*(d(n-2)*(8*d(n-2)+27)+27))/(d(n-2)*(2*d(n-2)+8)+6)), c(5) = 19, c(4) = 19, c(3) = 5, c(2) = 5, c(1) = 1, c(0) = 1, d(n) = d(n-2)+1, d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
 
+mov $1,1
 mov $2,1
-mov $10,1
-add $0,2
 lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $7,$4
-    trn $7,1
-    seq $7,57977 ; GCD of consecutive central binomial coefficients: a(n) = gcd(A001405(n+1), A001405(n)).
-    mov $9,10
-    add $9,$5
-    min $10,$0
-    mul $7,$$9
-    gcd $4,$10
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  sub $0,2
+  mov $4,8
+  mul $4,$3
+  add $4,33
+  mul $4,$3
+  add $4,21
+  mov $5,$3
+  sub $5,3
+  mul $5,$2
+  mov $6,-5
+  mul $6,$3
+  add $6,3
+  mul $6,$1
+  mov $7,8
+  mul $7,$3
+  add $7,27
+  mul $7,$3
+  add $7,27
+  mov $8,2
+  mul $8,$3
+  add $8,8
+  mul $8,$3
+  add $8,6
+  mov $9,2
+  mul $9,$3
+  add $9,8
+  mul $9,$3
+  add $9,6
+  mul $1,$4
+  add $1,$5
+  div $1,$8
+  mul $2,$7
+  add $2,$6
+  div $2,$9
+  add $3,1
 lpe
-mov $0,$3
+mul $0,$2
+add $0,$1

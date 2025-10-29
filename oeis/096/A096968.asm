@@ -1,14 +1,21 @@
 ; A096968: a(n) = (prime(n)*prime(n+2))^4.
-; Submitted by Simon Strandgaard
+; Submitted by DukeBox
 ; 10000,194481,9150625,68574961,1222830961,3722098081,23372600161,92173567201,258439040161,1325558466241,2609649624481,6407383500961,13788812262241,26975984333281,59128856241841,109250345339521
-; Formula: a(n) = (A000040(n+1)*A000040(n+3))^4
 
 #offset 1
 
 mov $1,$0
-add $1,1
 seq $1,40 ; The prime numbers.
-add $0,3
+mov $3,2
+add $0,2
 seq $0,40 ; The prime numbers.
 mul $0,$1
 pow $0,4
+lpb $0
+  mov $2,$3
+  mov $3,$0
+  sub $3,$2
+  mov $0,$1
+lpe
+mov $0,$3
+add $0,2

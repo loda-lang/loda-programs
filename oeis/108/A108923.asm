@@ -1,13 +1,35 @@
 ; A108923: Expansion of 1/((x^8+1)*(1-x)^3).
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,3,6,10,15,21,28,36,44,52,60,68,76,84,92,100,109,119,130,142,155,169,184,200,216,232,248,264,280,296,312,328,345,363,382,402,423,445,468,492,516,540,564,588,612,636,660,684,709,735,762,790,819,849,880,912
-; Formula: a(n) = a(n-1)+A108922(n), a(0) = 1
+; Formula: a(n) = 8*max(n%16-7,0)*binomial(floor(n/16)+2,2)+8*min(-(n%16)+15,8)*binomial(floor(n/16)+1,2)+binomial(floor(n/2)+min(floor((n%16+3)/2),floor((-(n%16)+17)/2))+1,2)
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,108922 ; Expansion of 1/((x^8+1)*(x-1)^2).
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+mov $3,$0
+div $3,16
+mov $6,$3
+add $6,2
+bin $6,2
+mul $6,8
+add $3,1
+bin $3,2
+mul $3,8
+mov $1,$0
+mod $1,16
+mov $4,$1
+trn $4,7
+mul $4,$6
+mov $5,15
+sub $5,$1
+min $5,8
+mov $2,17
+sub $2,$1
+div $2,2
+mul $3,$5
+add $1,3
+div $1,2
+min $1,$2
+div $0,2
+add $0,$1
+add $0,1
+bin $0,2
+add $0,$3
+add $0,$4

@@ -1,7 +1,7 @@
 ; A387365: a(n) = (n+1)* 2^abs(n-1 - c*(c-1)) / 2, where c = ceiling(sqrt(n)).
-; Submitted by DukeBox
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,2,5,12,7,4,9,20,44,24,13,7,15,32,68,144,76,40,21,11,23,48,100,208,432,224,116,60,31,16,33,68,140,288,592,1216,624,320,164,84,43,22,45,92,188,384,784,1600,3264,1664,848,432,220,112,57,29
-; Formula: a(n) = truncate((truncate(2^gcd(-sqrtint(n-1)*(sqrtint(n-1)+1)+n-1,0))*(n+1)-2)/2)+1
+; Formula: a(n) = floor(((n+1)*2^gcd(-sqrtint(n-1)*(sqrtint(n-1)+1)+n-1,0))/2)
 
 #offset 1
 
@@ -19,6 +19,4 @@ mov $3,2
 pow $3,$0
 mov $0,$3
 mul $0,$1
-sub $0,2
 div $0,2
-add $0,1

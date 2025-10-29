@@ -1,92 +1,25 @@
 ; A378811: Number of minimum edge cuts in the n-Lucas cube graph.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 0,2,3,12,5,3,14,8,3
 
 #offset 1
 
-mov $2,1
-mov $4,1
-mov $5,4
-mov $7,2
-mov $8,7
 mov $9,2
 mov $10,3
 mov $11,10
 mov $12,3
 mov $14,12
+mov $20,14
+mov $21,15
 mov $15,6
 mov $17,13
 mov $18,9
-mov $19,1
-mov $20,14
-mov $23,15
 sub $0,1
 lpb $0
-  mul $1,-1
   rol $1,23
-  mov $24,$1
-  mul $24,3
+  mov $3,$8
   sub $0,1
-  add $23,$24
-  mov $24,$2
-  mul $24,-4
-  add $23,$24
-  mov $24,$3
-  mul $24,4
-  add $23,$24
-  mov $24,$4
-  mul $24,-4
-  add $23,$24
-  mov $24,$5
-  mul $24,4
-  add $23,$24
-  mov $24,$6
-  mul $24,-4
-  add $23,$24
-  mov $24,$7
-  mul $24,4
-  add $23,$24
-  mov $24,$8
-  mul $24,-4
-  add $1,1
   max $10,1
   add $10,2
-  add $23,$24
-  mov $24,$9
-  mul $24,4
-  add $23,$24
-  mov $24,$10
-  mul $24,-4
-  add $23,$24
-  add $23,$11
-  add $23,$11
-  add $23,$12
-  add $23,$12
-  add $23,$2
-  mul $24,-4
-  mul $21,$13
-  add $23,$24
-  mov $24,$14
-  mul $24,4
-  sub $5,8
-  add $23,$24
-  mov $24,$15
-  mul $24,-4
-  add $23,$24
-  mov $24,$16
-  mul $24,4
-  add $23,$24
-  mov $24,$18
-  mul $24,-16
-  add $22,$23
-  div $3,$22
-  bin $4,$3
-  add $4,2
-  add $23,$24
-  mov $24,$20
-  mul $24,4
-  mov $3,$8
-  add $23,$24
-  add $23,$24
 lpe
 mov $0,$3

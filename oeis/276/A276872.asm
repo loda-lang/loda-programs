@@ -1,20 +1,18 @@
 ; A276872: Sums-complement of the Beatty sequence for sqrt(6).
-; Submitted by Athlici
+; Submitted by DukeBox
 ; 1,6,11,16,21,28,33,38,43,50,55,60,65,70,77,82,87,92,99,104,109,114,119,126,131,136,141,148,153,158,163,168,175,180,185,190,197,202,207,212,217,224,229,234,239,246,251,256,261,268,273,278,283,288,295,300
+; Formula: a(n) = 3*n+2*floor(sqrtint((2*n-2)*(3*n-3))/2)-2
 
 #offset 1
 
 sub $0,1
-mov $3,6
-lpb $3
-  div $3,8
-  mov $1,$0
-  mul $1,11
-  div $1,49
-lpe
-mov $2,$0
-mul $2,5
-mul $1,2
-add $1,$2
+mov $1,$0
+add $1,$0
+add $0,$1
+mul $1,$0
+nrt $1,2
+div $1,2
+add $0,$1
+add $1,$0
 mov $0,$1
 add $0,1

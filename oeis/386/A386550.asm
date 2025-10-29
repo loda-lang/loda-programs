@@ -1,22 +1,20 @@
 ; A386550: Indices of hexagonal numbers that are six times another hexagonal number.
-; Submitted by DukeBox
+; Submitted by treaclepumpkin
 ; 0,2,176,17222,1687556,165363242,16203910136,1587817830062,155589943435916,15246226638889682,1493974620667752896,146394266598800894102,14345144152061819869076,1405677732635459546275322,137742072654122973715112456,13497317442371415964534745342
-; Formula: a(n) = 2*truncate(b(max(2*n-2,0))/7), b(n) = 7*d(n-1), b(2) = 7, b(1) = 0, b(0) = 0, c(n) = 8*d(n-1)+c(n-1)-1, c(2) = 8, c(1) = 1, c(0) = 2, d(n) = 9*d(n-1)+c(n-1)-1, d(2) = 9, d(1) = 1, d(0) = 0
+; Formula: a(n) = truncate(c(max(2*n-2,0))/4), b(n) = 9*b(n-1)+d(n-1)-1, b(2) = 9, b(1) = 1, b(0) = 0, c(n) = 8*b(n-1), c(2) = 8, c(1) = 0, c(0) = 0, d(n) = 8*b(n-1)+d(n-1)-1, d(2) = 8, d(1) = 1, d(0) = 2
 
 #offset 1
 
-mov $2,2
+mov $3,2
 sub $0,1
 mul $0,2
 lpb $0
   sub $0,1
-  mov $1,$3
-  mul $1,7
-  sub $2,1
-  add $2,$1
-  add $2,$3
+  mov $2,$1
+  mul $2,8
+  sub $3,1
   add $3,$2
+  add $1,$3
 lpe
-mov $0,$1
-div $0,7
-mul $0,2
+mov $0,$2
+div $0,4

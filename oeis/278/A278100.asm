@@ -1,19 +1,10 @@
 ; A278100: Number of squarefree positive integers less than n^2.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 0,3,6,11,16,23,31,39,50,61,75,89,103,120,139,157,177,199,219,243,269,297,323,351,381,412,444,477,513,547,584,624,660,703,745,789,835,882,928,977,1025,1073,1124,1174,1230,1285,1342,1400,1460,1523,1582,1645,1708,1771,1840,1910,1977,2048,2119,2192,2263,2337,2415,2491,2569,2650,2729,2813,2896,2983,3068,3152,3239,3328,3417,3509,3602,3698,3795,3891
+; Formula: a(n) = A107079(n^2)-1
 
 #offset 1
 
-mov $2,$0
-pow $2,2
-lpb $2
-  sub $2,1
-  add $3,$4
-  mov $4,$3
-  mov $3,$1
-  add $3,1
-  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  equ $3,1
-  add $1,1
-lpe
-mov $0,$4
+pow $0,2
+seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
+sub $0,1

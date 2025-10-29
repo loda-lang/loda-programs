@@ -1,17 +1,75 @@
 ; A352531: Numbers with multiplicative persistence value 10.
-; Submitted by Tim B
+; Submitted by DukeBox
 ; 3778888999,3778889899,3778889989,3778889998,3778898899,3778898989,3778898998,3778899889,3778899898,3778899988,3778988899,3778988989,3778988998,3778989889,3778989898,3778989988,3778998889,3778998898,3778998988,3778999888,3779888899,3779888989
-; Formula: a(n) = truncate((A007090(truncate(A145850(A031443(n+14)+1)/8)-27307)-1111333)/2)+3778888999
 
 #offset 1
 
-add $0,14
-seq $0,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
-add $0,1
-seq $0,145850 ; a(n) = A145818(2n-1).
-div $0,8
-sub $0,27307
-seq $0,7090 ; Numbers in base 4.
-sub $0,1111333
-div $0,2
-add $0,3778888999
+sub $0,1
+mov $1,2
+fil $1,3
+mov $4,$0
+mov $5,$0
+mov $6,$0
+mul $6,6
+nrt $6,3
+mov $7,$6
+add $7,2
+bin $7,3
+mov $8,$0
+geq $8,$7
+add $8,$6
+add $8,1
+bin $8,3
+sub $0,$8
+mov $9,$0
+mul $9,8
+add $9,1
+nrt $9,2
+add $9,1
+div $9,2
+bin $9,2
+mov $10,$4
+mul $10,6
+nrt $10,3
+mov $11,$10
+add $11,2
+bin $11,3
+mov $12,$4
+geq $12,$11
+add $12,$10
+add $12,1
+bin $12,3
+sub $0,$9
+sub $4,$12
+add $4,1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+mov $13,$5
+mul $13,6
+nrt $13,3
+mov $14,$13
+add $14,2
+bin $14,3
+geq $5,$14
+add $5,$13
+add $5,1
+pow $2,$4
+pow $3,$5
+pow $1,$0
+add $1,$2
+add $1,$3
+mov $15,$1
+mov $17,8
+mov $0,$1
+lpb $0
+  div $0,2
+  mov $16,$0
+  mul $16,$17
+  mul $17,10
+  add $15,$16
+lpe
+mov $0,$15
+add $0,3778888888
