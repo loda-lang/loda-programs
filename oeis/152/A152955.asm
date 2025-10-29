@@ -1,0 +1,76 @@
+; A152955: Odd squarefree numbers n such that the cyclotomic polynomial Phi(n,x) has height 1.
+; Submitted by [SG]KidDoesCrunch
+; 1,3,5,7,11,13,15,17,19,21,23,29,31,33,35,37,39,41,43,47,51,53,55,57,59,61,65,67,69,71,73,77,79,83,85,87,89,91,93,95,97,101,103,107,109,111,113,115,119,123,127,129,131,133,137,139,141,143,145,149,151,155,157,159,161,163,167,173,177,179,181,183,185,187,191,193,197,199,201,203
+
+#offset 1
+
+mov $1,$0
+sub $1,1
+mov $4,$0
+pow $4,2
+lpb $4
+  mov $5,$3
+  add $5,1
+  seq $5,73184 ; Number of cubefree divisors of n.
+  mov $7,$5
+  add $7,2
+  mov $8,$5
+  add $8,2
+  mov $9,$5
+  mov $10,$5
+  add $10,4
+  add $5,1
+  mov $11,$5
+  pow $11,4
+  mul $11,15
+  mov $12,$5
+  pow $12,3
+  mul $12,150
+  mov $13,$5
+  mul $13,515
+  add $9,3
+  mul $9,2
+  mov $14,$5
+  mul $14,672
+  add $11,$12
+  add $11,$13
+  add $11,$14
+  add $11,223
+  mul $5,$8
+  mul $5,$9
+  mul $5,$10
+  mul $5,$11
+  div $5,360
+  mov $16,$7
+  mul $16,3
+  add $7,2
+  mov $17,$7
+  pow $17,3
+  mov $15,2
+  add $15,$16
+  mul $15,$17
+  add $15,$7
+  mov $7,$15
+  div $7,6
+  div $5,$7
+  div $5,2
+  mod $5,2
+  sub $1,$5
+  add $3,2
+  mov $6,$1
+  max $6,0
+  equ $6,$1
+  mul $4,$6
+  sub $4,2
+lpe
+mov $1,$3
+add $1,1
+mov $2,$0
+mul $0,2
+add $2,$0
+add $0,$2
+pow $0,$0
+lex $0,2
+add $0,1
+mod $0,10
+mul $0,$1
