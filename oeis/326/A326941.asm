@@ -1,5 +1,5 @@
 ; A326941: Number of T_0 sets of subsets of {1..n}.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 2,4,14,224,64210,4294322204,18446744009291513774,340282366920938463075992982725615419816,115792089237316195423570985008687907843742078391854287068939455414919611614210
 
 mov $1,$0
@@ -8,6 +8,7 @@ lpb $0
   trn $0,1
   mov $2,$0
   seq $2,59201 ; Number of T_0-covers of a labeled n-set.
+  mod $0,10
   mov $3,$1
   bin $3,$0
   mul $2,$3

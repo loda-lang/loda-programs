@@ -1,5 +1,5 @@
 ; A375202: a(n) is the least integer x >= 0 such that n = x^2 + y^2 + z^2 for some integers y, z, or -1 if there is no such x.
-; Submitted by Science United
+; Submitted by kampfgurke
 ; 0,0,0,1,0,0,1,-1,0,0,0,1,2,0,1,-1,0,0,0,1,0,1,2,-1,2,0,0,1,-1,0,1,-1,0,1,0,1,0,0,1,-1,0,0,1,3,2,0,1,-1,4,0,0,1,0,0,1,-1,2,2,0,1,-1,0,1,-1,0,0,1,3,0,1,3,-1,0,0,0,1,2,2,2,-1
 
 mov $1,$0
@@ -11,6 +11,7 @@ lpb $1
   mov $5,-1
   mul $1,$3
   sub $1,1
+  dif $1,2
 lpe
 lpb $1
   mov $4,$2
