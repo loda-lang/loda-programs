@@ -736,6 +736,7 @@ A283770: Numbers k such that L(k) = 1 mod 3, where L = A000201 = lower Wythoff s
 A283772: Numbers k such that U(k) = 0 mod 3, where U = A001950 = upper Wythoff sequence.
 A283773: Numbers k such that U(k) = 1 mod 3, where U = A001950 = upper Wythoff sequence.
 A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff sequence.
+A283900: Relative of Hofstadter Q-sequence: a(-769) = 770, a(-768) = 4, a(-767) = 770, a(-766) = 4; thereafter a(n) = a(n-a(n-1)) + a(n-a(n-2)).
 A284394: {101->2}-transform of the infinite Fibonacci word A003849.
 A284396: Positions of 2 in A284394.
 A284489: Positions of 1 in A284487; complement of A284488.
@@ -942,5 +943,6 @@ A373841: Numbers whose digital sum in the primorial base is a multiple of 3.
 A374130: a(n) = 1 if bitwise-XOR of the exponents of primes in the prime factorization of n is equal to 1, otherwise 0.
 A376573: Numbers that are not squares of triangular numbers. Complement of A000537.
 A376928: The largest noncomposite number k such that n is divisible by all the primes that do not exceed k.
+A380539: The second smallest prime not dividing n.
 A382767: Smallest number k that is powerful but not a prime power that is also coprime to n.
 A383762: The number of unitary divisors of n that are exponentially squarefree numbers.

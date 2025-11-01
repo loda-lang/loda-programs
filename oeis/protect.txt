@@ -10,7 +10,6 @@ A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n th
 A001247: Squares of Bell numbers.
 A001248: Squares of primes.
 A001255: Squares of partition numbers.
-A001317: Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.
 A001348: Mersenne numbers: 2^p - 1, where p is prime.
 A001566: a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2.
 A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
@@ -235,7 +234,6 @@ A071986: Parity of the prime-counting function pi(n).
 A072003: 10's complement of final digit of n-th prime.
 A072055: a(n) = 2*prime(n)+1.
 A072205: a(n) = (p^2 - p + 2)/2 for p = prime(n); number of squares modulo p^2.
-A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A073123: a(n) is the largest number such that pi(a(n)) = prime(n).
 A073256: a(n) = phi(n-th composite number).
 A073521: The set of 16 consecutive primes with the property that they form a 4 X 4 magic square with the smallest magic constant (258).
@@ -271,7 +269,6 @@ A081689: A005228 - 1.
 A081865: a(n) = sigma_7(2n-1).
 A081866: a(n)=sigma_9(2n-1).
 A083271: a(n) = n*tau(n) + 1.
-A083542: a(n) = phi(n+1)*phi(n), product of totients of two consecutive integers.
 A083681: Sum of divisors of semiprimes.
 A083786: Composite numbers mod 10.
 A084300: a(n) = phi(n) mod 6.
