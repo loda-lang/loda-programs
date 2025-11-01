@@ -1,5 +1,5 @@
 ; A219611: a(n) is the smallest omega(A061214(k)) sampled over all indices k of prime gaps prime(k+1) - prime(k) = 2n, where omega = A001221.
-; Submitted by Science United
+; Submitted by shiva
 ; 1,3,5,9,11,14,14,21
 
 #offset 1
@@ -19,9 +19,7 @@ mov $13,54
 mov $14,62
 sub $0,1
 lpb $0
-  mov $1,0
   rol $1,14
-  sub $14,$2
   add $14,$8
   add $14,$8
   sub $0,1

@@ -1,25 +1,21 @@
 ; A014965: a(n) = lcm(n, Fibonacci(n)).
-; Submitted by ckrause
+; Submitted by BrandyNOW
 ; 1,2,6,12,5,24,91,168,306,110,979,144,3029,5278,1830,15792,27149,23256,79439,27060,229866,389642,659111,46368,75025,3156218,5303286,8898708,14912641,2496120,41734339,69705888
+; Formula: a(n) = truncate((n*truncate((min(n,n%2)*c(n)+b(n))/3))/gcd(n,truncate((min(n,n%2)*c(n)+b(n))/3))), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mov $2,$0
-mov $3,1
-mov $4,1
-add $0,1
-sub $1,1
-lpb $1
-  sub $1,1
-  mov $5,$4
-  mov $4,$3
-  add $3,$5
+mov $2,3
+mov $4,$0
+lpb $4
+  sub $4,2
+  add $2,$1
+  add $1,$2
 lpe
-add $2,1
-gcd $2,$3
-mov $1,$3
-div $1,$2
-mul $1,$0
-mov $0,$1
+mul $4,$2
+add $4,$1
+div $4,3
+mov $3,$0
+gcd $3,$4
+mul $0,$4
+div $0,$3

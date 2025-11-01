@@ -1,25 +1,40 @@
 ; A157127: A transform of the Catalan numbers with a simple Hankel transform.
-; Submitted by Raul Prisacariu
+; Submitted by loader3229
 ; 1,0,-1,-1,1,2,1,-3,-5,-1,11,15,-5,-44,-41,51,169,85,-303,-611,-15,1513,2021,-1271,-6827,-5673,10361,28301,10141,-61102,-107015,20109,310387,356515,-354349,-1421913,-936805,2567875,5930631,972819,-14696329
+; Formula: a(n) = b(n-3), a(5) = 2, a(4) = 1, a(3) = -1, a(2) = -1, a(1) = 0, a(0) = 1, b(n) = truncate((b(n-2)*(-2*n-8)+b(n-3)*(-4*n-6)+b(n-4)*(-n-2)+b(n-5)*(-4*n-2))/(n+6)), b(7) = 11, b(6) = -1, b(5) = -5, b(4) = -3, b(3) = 1, b(2) = 2, b(1) = 1, b(0) = -1
 
-add $0,1
+mov $2,1
+mov $4,-1
+mov $5,-1
+mov $6,1
 lpb $0
+  mov $8,$1
+  mul $8,-4
+  sub $8,10
+  mul $2,$8
+  rol $2,5
+  mov $8,$1
+  mul $8,-1
+  sub $8,4
+  mov $7,$2
+  mul $7,$8
+  mov $8,$1
+  mul $8,-4
+  sub $8,14
+  add $6,$7
+  mov $7,$3
+  mul $7,$8
+  mov $8,$1
+  mul $8,-2
+  sub $8,12
+  add $6,$7
+  mov $7,$4
+  mul $7,$8
+  mov $8,$1
+  add $8,8
   sub $0,1
-  sub $1,$0
-  mov $2,$4
-  bin $2,$0
-  mul $4,2
-  mov $3,$4
-  sub $3,2
-  div $3,2
-  bin $3,$1
   add $1,1
-  add $1,$0
-  mul $3,$2
-  div $3,$1
-  mov $4,1
-  sub $4,$0
-  trn $0,1
-  add $5,$3
+  add $6,$7
+  div $6,$8
 lpe
-mov $0,$5
+mov $0,$2

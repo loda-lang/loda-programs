@@ -1,8 +1,11 @@
 ; A037220: Summarize the previous term!.
-; Submitted by crashtech
+; Submitted by atannir
 ; 0,10,1011,1031,102113,10311213,10411223,1031221314,1041222314,1031321324,1031223314,1031223314,1031223314,1031223314,1031223314,1031223314,1031223314,1031223314,1031223314,1031223314,1031223314
-; Formula: a(n) = A047842(a(n-1)), a(0) = 0
 
+lpb $0
+  mov $0,47
+  mov $1,1
+lpe
 lpb $0
   sub $0,1
   seq $1,47842 ; Describe n (count digits in order of increasing value, ignoring missing digits).

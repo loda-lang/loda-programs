@@ -1,22 +1,26 @@
 ; A115197: Convolution of generalized Catalan numbers A064062 (called C(n;2)).
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 1,2,7,32,169,974,5947,37820,247885,1662890,11362399,78806936,553386097,3926523782,28108587139,202764451700,1472446595221,10755543924578,78973277044903,582558618222416,4315238786662585
+; Formula: a(n) = b(n-1), a(2) = 7, a(1) = 2, a(0) = 1, b(n) = truncate((b(n-1)*(7*n-6)+b(n-2)*(8*n+4))/(n+1)), b(2) = 32, b(1) = 7, b(0) = 2
 
-mov $4,-1
-add $0,1
+mov $2,1
+mov $3,2
 lpb $0
+  mov $5,$1
+  mul $5,8
+  add $5,12
+  mul $2,$5
+  rol $2,2
+  mov $5,$1
+  mul $5,7
+  add $5,1
+  mov $4,$2
+  mul $4,$5
+  mov $5,$1
+  add $5,2
+  add $3,$4
+  div $3,$5
   sub $0,1
-  mov $2,2
-  mul $2,$0
-  add $2,$4
-  add $2,2
-  bin $2,$0
-  mov $3,-2
-  bin $3,$1
-  mul $3,$2
-  add $1,3
-  add $4,2
-  mul $5,2
-  add $5,$3
+  add $1,1
 lpe
-mov $0,$5
+mov $0,$2

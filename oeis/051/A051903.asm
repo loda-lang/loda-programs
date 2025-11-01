@@ -1,17 +1,13 @@
 ; A051903: Maximum exponent in the prime factorization of n.
 ; Submitted by Science United
 ; 0,1,1,2,1,1,1,3,2,1,1,2,1,1,1,4,1,2,1,2,1,1,1,3,2,1,3,2,1,1,1,5,1,1,1,2,1,1,1,3,1,1,1,2,2,1,1,4,2,2,1,2,1,3,1,3,1,1,1,2,1,1,2,6,1,1,1,2,1,1,1,3,1,1,2,2,1,1,1,4
+; Formula: a(n) = A067132(max(0,n-1)+1)-1
 
 #offset 1
 
-mov $1,3
 sub $0,1
-lpb $0
-  add $1,1
-  mov $2,$0
-  add $2,1
-  seq $2,261969 ; Product of primes dividing n with maximum multiplicity.
-  div $0,$2
-lpe
+max $1,$0
+add $1,1
+seq $1,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
 mov $0,$1
-sub $0,3
+sub $0,1

@@ -1,16 +1,12 @@
 ; A014284: Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,3,6,11,18,29,42,59,78,101,130,161,198,239,282,329,382,441,502,569,640,713,792,875,964,1061,1162,1265,1372,1481,1594,1721,1852,1989,2128,2277,2428,2585,2748,2915,3088,3267,3448,3639,3832,4029,4228,4439,4662,4889,5118,5351,5590,5831,6082,6339,6602,6871,7142,7419,7700,7983,8276,8583,8894,9207,9524,9855,10192,10539,10888,11241,11600,11967,12340,12719,13102,13491,13888,14289
-; Formula: a(n) = c(n-1)-1, b(n) = A151800(b(n-1)), b(1) = 2, b(0) = 0, c(n) = c(n-1)+A151800(b(n-1)), c(1) = 4, c(0) = 2
+; Formula: a(n) = A007504(n-1)+1
 
 #offset 1
 
-mov $2,2
 sub $0,1
-lpb $0
-  sub $0,1
-  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
-  add $2,$1
-lpe
-mov $0,$2
-sub $0,1
+mov $1,$0
+seq $1,7504 ; Sum of the first n primes.
+mov $0,$1
+add $0,1

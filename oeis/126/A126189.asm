@@ -1,27 +1,33 @@
 ; A126189: Number of hex trees with n edges and no adjacent vertices of outdegree 2.
-; Submitted by iBezanilla
+; Submitted by loader3229
 ; 1,3,10,36,135,519,2034,8100,32688,133380,549342,2280690,9534591,40103019,169583382,720549432,3074694552,13170845916,56616211818,244144402182,1055875341888,4578616787256,19903066450722,86713862341590
+; Formula: a(n) = b(n-2), a(3) = 36, a(2) = 10, a(1) = 3, a(0) = 1, b(n) = truncate((b(n-1)*(6*n+27)+b(n-2)*(-9*n-27)+b(n-3)*(12*n+18))/(n+6)), b(4) = 2034, b(3) = 519, b(2) = 135, b(1) = 36, b(0) = 10
 
-add $0,2
+mov $2,1
+mov $3,3
+mov $4,10
 lpb $0
-  sub $0,1
-  mov $4,3
-  pow $4,$0
-  mul $4,4
-  add $2,$0
-  bin $2,$0
-  mul $2,2
-  mov $3,$0
-  bin $3,$1
+  mov $6,$1
+  mul $6,12
+  add $6,30
+  mul $2,$6
+  rol $2,3
+  mov $6,$1
+  mul $6,-9
+  sub $6,36
+  mov $5,$2
+  mul $5,$6
+  mov $6,$1
+  mul $6,6
+  add $6,33
+  add $4,$5
+  mov $5,$3
+  mul $5,$6
+  mov $6,$1
+  add $6,7
+  add $4,$5
+  div $4,$6
   sub $0,1
   add $1,1
-  mul $3,$2
-  mul $3,$4
-  div $3,$1
-  add $5,$3
-  mov $2,$1
 lpe
-mov $0,$5
-sub $0,24
-div $0,24
-add $0,1
+mov $0,$2

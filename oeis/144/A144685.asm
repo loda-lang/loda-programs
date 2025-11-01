@@ -1,25 +1,38 @@
 ; A144685: Size of acyclic domain of size n based on the alternating scheme.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,2,4,9,20,45,100,222,488,1069,2324,5034,10840,23266,49704,105884,224720,475773,1004212,2115186,4443896,9319702,19503224,40750884,84990640,177017810,368108680,764571492,1585851248,3285861924,6800042704,14059397560,29037419424
-; Formula: a(n) = truncate((2^n-binomial(n,floor((n+1)/2))*(2*floor((n+1)/2)+n+1)+(n+4)*2^n)/2)
+; Formula: a(n) = b(n-1), b(n) = c(n-3), b(4) = 20, b(3) = 9, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = truncate((16*c(n-4)*(n-1)-16*c(n-3)*(n-1)+c(n-1)*(4*n+8)-12*c(n-2))/(n+2)), c(6) = 1069, c(5) = 488, c(4) = 222, c(3) = 100, c(2) = 45, c(1) = 20, c(0) = 9
 
 #offset 1
 
-mov $1,$0
-mov $3,$0
-mov $4,1
-add $4,$0
-mov $0,$4
-div $0,2
-bin $3,$0
-add $4,$0
-add $0,$4
-mul $0,$3
-mul $0,-1
-mov $2,2
-pow $2,$1
-add $0,$2
-add $1,4
-mul $2,$1
-add $0,$2
-div $0,2
+mov $2,1
+mov $3,2
+mov $4,4
+mov $5,9
+sub $0,1
+lpb $0
+  mov $7,$1
+  mul $7,16
+  mul $2,$7
+  rol $2,4
+  mov $7,$1
+  mul $7,-16
+  mov $6,$2
+  mul $6,$7
+  add $5,$6
+  mov $6,$3
+  mul $6,-12
+  mov $7,$1
+  mul $7,4
+  add $7,12
+  add $5,$6
+  mov $6,$4
+  mul $6,$7
+  mov $7,$1
+  add $7,3
+  add $5,$6
+  div $5,$7
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$2

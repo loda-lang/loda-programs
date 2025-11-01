@@ -1,18 +1,42 @@
 ; A192249: 1-sequence of reduction of binomial coefficient sequence B(n,4)=A000332 by x^2 -> x+1.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,5,20,90,300,930,2610,6900,17295,41605,96660,218145,480225,1034765,2188385,4552745,9334760,18892805,37794765,74817520,146702410,285169310,549948760,1052879110,2002263910,3784182685,7110957850,13291250220
+; Formula: a(n) = 5*b(n-1), b(n) = c(n-2), b(3) = 18, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = truncate((c(n-1)*((n-1)*(2*n+12)+20)+c(n-2)*(4*n+24)+c(n-3)*((n-1)*(-n-12)-42))/((n-1)*(n+4)+6)), c(4) = 522, c(3) = 186, c(2) = 60, c(1) = 18, c(0) = 4
 
 #offset 1
 
-mov $3,$0
+mov $3,1
+mov $4,4
 sub $0,1
-lpb $3
-  sub $3,1
-  mov $1,4
-  add $1,$3
-  bin $1,4
-  add $1,$2
-  mov $2,$4
-  add $4,$1
+lpb $0
+  mov $6,-1
+  mul $6,$1
+  sub $6,13
+  mul $6,$1
+  sub $6,42
+  mul $2,$6
+  rol $2,3
+  mov $6,4
+  mul $6,$1
+  add $6,28
+  mov $5,$2
+  mul $5,$6
+  mov $6,2
+  mul $6,$1
+  add $6,14
+  mul $6,$1
+  add $6,20
+  add $4,$5
+  mov $5,$3
+  mul $5,$6
+  mov $6,$1
+  add $6,5
+  mul $6,$1
+  add $6,6
+  add $4,$5
+  div $4,$6
+  sub $0,1
+  add $1,1
 lpe
 mov $0,$2
+mul $0,5

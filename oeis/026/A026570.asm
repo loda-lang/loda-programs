@@ -1,24 +1,36 @@
 ; A026570: a(n) = A026568(n,n-1), also a(n) = number of integer strings s(0),...,s(n) counted by A026568 such that s(n)=1.
-; Submitted by Penguin
+; Submitted by loader3229
 ; 1,1,4,7,20,43,111,259,648,1565,3885,9533,23662,58547,145630,362151,903110,2253615,5633359,14094035,35304658,88511733,222115782,557819793,1401987930,3526066273,8874034647,22346581133,56304982154
+; Formula: a(n) = b(n-1), b(n) = c(n-2), b(3) = 7, b(2) = 4, b(1) = 1, b(0) = 1, c(n) = truncate((c(n-1)*(2*n+6)+c(n-2)*(3*n+10)+c(n-3)*(-4*n-6))/(n+4)), c(4) = 111, c(3) = 43, c(2) = 20, c(1) = 7, c(0) = 4
 
 #offset 1
 
-mov $4,1
-add $0,1
+mov $2,1
+mov $3,1
+mov $4,4
+sub $0,1
 lpb $0
-  mov $2,$0
-  sub $0,2
-  add $2,$4
-  add $2,$0
-  sub $2,3
-  div $2,2
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
+  mov $6,$1
+  mul $6,-4
+  sub $6,10
+  mul $2,$6
+  rol $2,3
+  mov $6,$1
+  mul $6,3
+  add $6,13
+  mov $5,$2
+  mul $5,$6
+  mov $6,$1
+  mul $6,2
+  add $6,8
+  add $4,$5
+  mov $5,$3
+  mul $5,$6
+  mov $6,$1
+  add $6,5
+  add $4,$5
+  div $4,$6
+  sub $0,1
   add $1,1
-  add $4,2
-  add $5,$3
 lpe
-mov $0,$5
+mov $0,$2
