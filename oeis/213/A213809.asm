@@ -1,35 +1,59 @@
 ; A213809: Position of the maximum element in the simple continued fraction of Fibonacci(n+1)^5/Fibonacci(n)^5.
+; Submitted by loader3229
 ; 1,1,1,1,3,3,3,3,3,5,5,3,5,5,5,5,5,5,5,7,7,5,7,7,7,7,7,7,7,9,9,7,9,9,9,9,9,9,9,11,11,9,11,11,11,11,11,11,11,13,13,11,13,13,13,13,13,13,13,15,15,13,15,15,15,15,15,15,15,17,17,15,17,17,17,17,17,17,17,19
 
 #offset 1
 
 sub $0,1
-mov $5,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$5
-  add $0,$4
+mov $2,1
+fil $2,4
+mov $6,3
+fil $6,5
+mov $11,5
+mov $12,5
+mov $13,3
+mov $14,5
+lpb $0
+  mov $16,$1
+  mul $16,7
+  sub $16,21
+  mul $2,$16
+  rol $2,13
+  mov $16,$1
+  mul $16,-6
+  add $16,19
+  mov $15,$2
+  mul $15,$16
+  add $14,$15
+  mov $15,$3
+  mul $15,-13
+  add $14,$15
+  mov $15,$4
+  mul $15,34
+  add $14,$15
+  add $14,$5
+  add $14,$6
+  add $14,$7
+  add $14,$8
+  add $14,$9
+  add $14,$10
+  mov $16,$1
+  mul $16,-7
+  add $16,22
+  mov $15,$11
+  mul $15,$16
+  mov $16,$1
+  mul $16,6
+  sub $16,18
+  add $14,$15
+  mov $15,$12
+  mul $15,$16
+  add $14,$15
+  mov $15,$13
+  mul $15,14
+  add $14,$15
+  div $14,33
   sub $0,1
-  mov $3,$0
-  lpb $0
-    sub $0,1
-    trn $0,7
-    sub $3,1
-    add $3,$0
-    trn $0,2
-  lpe
-  trn $3,2
-  mov $2,$4
-  lpb $2
-    sub $2,1
-    mov $1,$3
-  lpe
+  add $1,1
 lpe
-lpb $5
-  mov $5,0
-  sub $1,$3
-lpe
-mul $1,2
-add $1,1
-mov $0,$1
+mov $0,$2

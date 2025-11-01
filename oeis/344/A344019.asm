@@ -1,25 +1,34 @@
 ; A344019: A tight upper bound on the order of a finite subgroup of the collineation group of the free projective plane F_n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 24,12,120,240,1440,10080,80640,725760,7257600,79833600,958003200,12454041600,174356582400,2615348736000,41845579776000,711374856192000,12804747411456000,243290200817664000,4865804016353280000,102181884343418880000,2248001455555215360000,51704033477769953280000,1240896803466478878720000
+; Formula: a(n) = b(n-4), b(n) = c(n-1), b(2) = 120, b(1) = 12, b(0) = 24, c(n) = truncate((c(n-1)*((n-1)*(-22*n-26)+70)+c(n-2)*(-15*n*(n-1)+90))/(-22*n+47)), c(2) = 240, c(1) = 120, c(0) = 12
 
 #offset 4
 
-mov $1,1
+mov $2,24
+mov $3,12
 sub $0,4
 lpb $0
-  mov $2,$0
+  mov $5,-15
+  mul $5,$1
+  sub $5,15
+  mul $5,$1
+  add $5,90
+  mul $2,$5
+  rol $2,2
+  mov $5,-22
+  mul $5,$1
+  sub $5,48
+  mul $5,$1
+  add $5,70
+  mov $4,$2
+  mul $4,$5
+  mov $5,-22
+  mul $5,$1
+  add $5,25
+  add $3,$4
+  div $3,$5
   sub $0,1
-  mul $2,2
-  add $2,2
-  sub $2,$0
-  mul $3,$2
-  add $3,$1
-  sub $2,1
-  mul $1,$2
+  add $1,1
 lpe
-sub $1,$2
-gcd $3,$1
-div $1,$3
-mov $0,$1
-mul $0,12
-add $0,12
+mov $0,$2

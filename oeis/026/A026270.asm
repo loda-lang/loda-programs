@@ -1,26 +1,34 @@
 ; A026270: Number of (s(0), s(1), ..., s(n)) such that every s(i) is a nonnegative integer, s(0) = 0, s(1) = 1 = s(n), |s(i) - s(i-1)| <= 1 for i >= 2, |s(2) - s(1)| = 1, |s(3) - s(2)| = 1 if s(2) = 1. Also T(n,n-1), where T is the array in A026268.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 1,2,6,15,39,102,270,721,1941,5262,14354,39372,108528,300482,835278,2330334,6522882,18313542,51559506,145530291,411738723,1167450066,3316925794,9441771081,26923831029,76901809810,219992462862,630245628681,1808029517585
+; Formula: a(n) = b(n-2), b(n) = c(n-2), b(3) = 15, b(2) = 6, b(1) = 2, b(0) = 1, c(n) = truncate((-3*c(n-3)*(n-1)+c(n-1)*(3*n+15)+c(n-2)*(n+5))/(n+7)), c(4) = 270, c(3) = 102, c(2) = 39, c(1) = 15, c(0) = 6
 
 #offset 2
 
-sub $0,2
-mov $5,$0
+mov $2,1
 mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  max $0,0
-  add $0,2
-  seq $0,26269 ; a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is a nonnegative integer, s(0) = 0 = s(n), s(1) = 1, |s(i) - s(i-1)| <= 1 for i >= 2, |s(2) - s(1)| = 1, |s(3) - s(2)| = 1 if s(2) = 1. Also a(n) = T(n,n) and a(n) = Sum{T(k,k-1)}, k = 1,2,...,n, where T is array in A026268.
+mov $4,6
+sub $0,2
+lpb $0
+  mov $6,$1
+  mul $6,-3
+  mul $2,$6
+  rol $2,3
+  mov $6,$1
+  add $6,6
+  mov $5,$2
+  mul $5,$6
+  mov $6,$1
+  mul $6,3
+  add $6,18
+  add $4,$5
+  mov $5,$3
+  mul $5,$6
+  mov $6,$1
+  add $6,8
+  add $4,$5
+  div $4,$6
   sub $0,1
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
+  add $1,1
 lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mov $0,$2

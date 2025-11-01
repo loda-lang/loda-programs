@@ -1,19 +1,29 @@
 ; A234255: Decimal expansion of -B(12) = 691/2730, 13th Bernoulli number without sign.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 0,2,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5
-; Formula: a(n) = b(n-1)-1, b(n) = -c(n-1)+b(n-1)+4, b(1) = 3, b(0) = 1, c(n) = 3*truncate((c(n-2)-4)/3)-c(n-2)-3*truncate((c(n-1)-4)/3)+c(n-1)+4, c(2) = 6, c(1) = 1, c(0) = 2
+; Formula: a(n) = truncate((min(n-1,(n-1)%3)*(min(n-1,(n-1)%3)*d(n-1)+c(n-1))+b(n-1))/2), b(n) = 3*d(n-3)+b(n-3)+c(n-3), b(8) = 6, b(7) = 6, b(6) = 6, b(5) = 6, b(4) = 6, b(3) = 6, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = truncate((-3*c(n-3)-3*d(n-3))/2), c(8) = 6, c(7) = 6, c(6) = 6, c(5) = -6, c(4) = -6, c(3) = -6, c(2) = 3, c(1) = 3, c(0) = 3, d(n) = truncate((c(n-3)+d(n-3))/2), d(8) = -2, d(7) = -2, d(6) = -2, d(5) = 2, d(4) = 2, d(3) = 2, d(2) = 1, d(1) = 1, d(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,2
+mov $2,3
+mov $3,1
 sub $0,1
 lpb $0
-  sub $0,1
-  sub $2,4
-  sub $1,$2
-  mod $2,3
-  add $2,$1
+  sub $0,3
+  mov $5,$3
+  mul $5,3
+  mov $4,$3
+  mul $4,-3
+  add $3,$2
+  div $3,2
+  add $1,$5
+  add $1,$2
+  mul $2,-3
+  add $2,$4
+  div $2,2
 lpe
-mov $0,$1
-sub $0,1
+mul $3,$0
+add $2,$3
+mul $0,$2
+add $0,$1
+div $0,2

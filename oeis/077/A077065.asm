@@ -1,30 +1,33 @@
 ; A077065: Semiprimes of form prime - 1.
-; Submitted by DukeBox
+; Submitted by taurec
 ; 4,6,10,22,46,58,82,106,166,178,226,262,346,358,382,466,478,502,562,586,718,838,862,886,982,1018,1186,1282,1306,1318,1366,1438,1486,1522,1618,1822,1906,2026,2038,2062,2098,2206,2446,2458,2578,2818,2878,2902,2962,2998,3022,3118,3166,3202,3466,3622,3778,3802,3862,3946,4006,4078,4126,4138,4258,4282,4546,4678,4702,4786,4798,4918,5086,5098,5386,5398,5482,5506,5638,5806
 
 #offset 1
 
-mov $2,$0
 sub $0,1
+mov $2,$0
+add $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,40 ; The prime numbers.
-  add $3,1
-  mov $6,$3
-  add $6,$3
-  mov $3,$6
-  sub $3,2
-  mov $5,$3
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
+  mov $5,$1
+  add $6,1
+  mul $6,$1
+  add $6,1
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $6,2
   add $1,1
+  mov $3,$6
+  mul $3,$1
+  add $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $3,1
+  sub $0,$3
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
-  trn $2,1
+  sub $2,1
 lpe
 mov $0,$5
+mul $0,2
+add $0,4

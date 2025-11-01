@@ -4,12 +4,15 @@
 
 #offset 1
 
-mov $1,1
-dir $0,2
-div $0,2
-lpb $0
-  sub $0,1
-  add $1,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
+sub $0,1
+seq $0,3602 ; Kimberling's paraphrase of the binary number system: if n = (2k-1)*2^m then a(n) = k.
+sub $0,1
+mov $1,$0
+dif $1,$0
+add $1,1
+trn $0,1
+add $0,1
+seq $0,40 ; The prime numbers.
+mul $1,$0
 mov $0,$1
+div $0,2

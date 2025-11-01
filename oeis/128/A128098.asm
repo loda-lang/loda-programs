@@ -1,28 +1,42 @@
 ; A128098: Number of steps that touch the x-axis in all Motzkin paths of length n.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 1,4,11,30,80,214,574,1548,4197,11440,31339,86252,238407,661584,1842585,5148960,14432643,40569804,114339777,323031750,914683602,2595411126,7378861196,21016701652,59962687675,171353419536,490407962229
+; Formula: a(n) = b(n-1), b(n) = c(n-1), b(2) = 11, b(1) = 4, b(0) = 1, c(n) = truncate((c(n-1)*((n-1)*((n-1)*(32*n+250)+772)+642)+c(n-2)*((n-1)*((n-1)*(48*n+303)+843)+666))/((n-1)*((n-1)*(16*n+149)+413)+294)), c(2) = 30, c(1) = 11, c(0) = 4
 
 #offset 1
 
-mov $1,1
-sub $2,$0
-add $2,1
-mov $3,1
+mov $2,1
+mov $3,4
 sub $0,1
 lpb $0
+  mov $5,48
+  mul $5,$1
+  add $5,351
+  mul $5,$1
+  add $5,843
+  mul $5,$1
+  add $5,666
+  mul $2,$5
+  rol $2,2
+  mov $5,32
+  mul $5,$1
+  add $5,282
+  mul $5,$1
+  add $5,772
+  mul $5,$1
+  add $5,642
+  mov $4,$2
+  mul $4,$5
+  mov $5,16
+  mul $5,$1
+  add $5,165
+  mul $5,$1
+  add $5,413
+  mul $5,$1
+  add $5,294
+  add $3,$4
+  div $3,$5
   sub $0,1
-  sub $1,$3
-  add $2,1
-  add $4,1
-  add $5,$3
-  add $3,$1
-  mul $1,$2
-  add $1,$5
-  add $1,$5
-  div $1,$4
-  add $3,$1
-  add $6,$3
-  add $3,$5
+  add $1,1
 lpe
-mov $0,$6
-add $0,1
+mov $0,$2

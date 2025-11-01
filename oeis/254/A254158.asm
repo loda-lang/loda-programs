@@ -1,5 +1,5 @@
 ; A254158: Decimal expansion of alpha particle-proton mass ratio.
-; Submitted by DukeBox
+; Submitted by mudpuppie
 ; 3,9,7,2,5,9,9,6,9,0
 
 #offset 1
@@ -17,6 +17,7 @@ lpb $5
   seq $4,19698 ; Decimal expansion of 2*Pi/13.
   mov $2,$5
   mul $2,$4
+  mod $0,19
   mul $0,$5
   add $1,$2
 lpe

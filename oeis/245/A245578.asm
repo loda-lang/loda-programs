@@ -15,20 +15,16 @@ lpb $0
   mul $7,-1
   mul $2,$7
   rol $2,4
-  mul $7,0
-  sub $7,16
   mov $6,$2
-  mul $6,$7
+  mul $6,-16
   mov $7,$1
   add $7,6
   add $5,$6
   mov $6,$3
   mul $6,$7
-  mul $7,0
-  add $7,14
   add $5,$6
   mov $6,$4
-  mul $6,$7
+  mul $6,14
   add $5,$6
   div $5,8
   sub $0,1

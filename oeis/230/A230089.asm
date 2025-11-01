@@ -1,37 +1,14 @@
 ; A230089: If n is divisible by 4 then 4, if n is divisible by 2 then 2, otherwise n.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 1,2,3,4,5,2,7,4,9,2,11,4,13,2,15,4,17,2,19,4,21,2,23,4,25,2,27,4,29,2,31,4,33,2,35,4,37,2,39,4,41,2,43,4,45,2,47,4,49,2,51,4,53,2,55,4,57,2,59,4,61,2,63,4,65,2,67,4,69,2,71,4,73,2,75,4,77,2,79,4
-; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = truncate((b(n-2)*(2*d(n-2)+3))/(2*d(n-2)+1)), b(5) = 5, b(4) = 5, b(3) = 3, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = truncate((b(n-2)*(-4*d(n-2)+2)+c(n-2)*(-2*d(n-2)-1))/(2*d(n-2)+1)), c(5) = -3, c(4) = -3, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 1, d(n) = d(n-2)+1, d(5) = 2, d(4) = 2, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = gcd(max(-binomial(-2,n-1)-4,0),binomial(-2,n-1))
 
 #offset 1
 
-mov $1,1
-mov $2,1
 sub $0,1
-lpb $0
-  sub $0,2
-  mov $4,$3
-  mul $4,2
-  add $4,3
-  mov $6,$3
-  mul $6,-4
-  add $6,2
-  mul $6,$1
-  mov $7,$3
-  mul $7,-2
-  sub $7,1
-  mul $2,$7
-  add $2,$6
-  mov $8,$3
-  mul $8,2
-  add $8,1
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  mul $1,$4
-  div $1,$8
-  div $2,$5
-  add $3,1
-lpe
-mul $0,$2
-add $0,$1
+mov $2,-2
+bin $2,$0
+sub $1,$2
+trn $1,4
+gcd $1,$2
+mov $0,$1

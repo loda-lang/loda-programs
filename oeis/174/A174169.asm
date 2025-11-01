@@ -1,36 +1,39 @@
 ; A174169: A generalized Chebyshev transform of the Motzkin numbers A001006.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,-1,-2,0,0,-3,1,8,1,1,26,7,-51,-3,0,-264,-186,348,-120,-285,2697,2871,-2304,3393,8029,-25795,-36872,16108,-60010,-159683,213795,413712,-181857,833779,2669534,-1272977,-4030235,3611168,-9145271,-39467427
+; Formula: a(n) = b(n-3), a(4) = 0, a(3) = -2, a(2) = -1, a(1) = 1, a(0) = 1, b(n) = truncate((-9*b(n-4)*(n-1)+b(n-1)*(2*n+7)+b(n-2)*(-3*n-6)+b(n-3)*(6*n+3))/(n+5)), b(6) = 1, b(5) = 8, b(4) = 1, b(3) = -3, b(2) = 0, b(1) = 0, b(0) = -2
 
-mov $1,1
-mov $20,1
-equ $21,0
-sub $24,3
-add $0,2
+mov $2,1
+mov $3,1
+mov $4,-1
+mov $5,-2
 lpb $0
+  mov $7,$1
+  mul $7,-9
+  mul $2,$7
+  rol $2,4
+  mov $7,$1
+  mul $7,6
+  add $7,9
+  mov $6,$2
+  mul $6,$7
+  mov $7,$1
+  mul $7,-3
+  sub $7,9
+  add $5,$6
+  mov $6,$3
+  mul $6,$7
+  mov $7,$1
+  mul $7,2
+  add $7,9
+  add $5,$6
+  mov $6,$4
+  mul $6,$7
+  mov $7,$1
+  add $7,6
+  add $5,$6
+  div $5,$7
   sub $0,1
-  add $1,2
-  mov $3,$1
-  sub $21,2
-  add $1,20
-  lpb $3
-    mov $4,$3
-    lpb $4
-      mov $5,$4
-      add $5,19
-      mov $5,$$5
-      add $7,$5
-      bin $4,$11
-      sub $4,1
-    lpe
-    mov $6,$1
-    sub $6,$3
-    sub $6,2
-    mul $7,$$6
-    add $$1,$7
-    sub $3,1
-  lpe
-  sub $1,19
-  add $21,2
+  add $1,1
 lpe
-mov $0,$7
+mov $0,$2

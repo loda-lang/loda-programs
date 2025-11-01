@@ -11,10 +11,8 @@ lpb $0
   sub $5,288
   mul $2,$5
   rol $2,2
-  mul $5,0
-  add $5,19
   mov $4,$2
-  mul $4,$5
+  mul $4,19
   sub $0,1
   add $1,1
   add $3,$4
