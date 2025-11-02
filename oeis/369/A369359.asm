@@ -1,22 +1,37 @@
 ; A369359: a(n) is the total semiperimeter over all Motzkin polyominoes of length n.
-; Submitted by [BAT] Svennemans
+; Submitted by loader3229
 ; 0,2,4,11,29,80,222,624,1766,5030,14396,41371,119297,345008,1000274,2906427,8461269,24674718,72065892,210766089,617173791,1809257448,5309289426,15594735954,45845032212,134880781266,397123496252,1170026790029,3449372893511,10175133060424
+; Formula: a(n) = b(n-1), a(2) = 4, a(1) = 2, a(0) = 0, b(n) = truncate((b(n-2)*(n-1)*((n-1)*(15*n+39)+45)+b(n-1)*((n-1)*((n-1)*(10*n+31)+45)+12))/((n-1)*((n-1)*(5*n+18)+26)+6)), b(2) = 11, b(1) = 4, b(0) = 2
 
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  dif $4,$2
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  seq $1,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
+mov $3,2
+lpb $0
+  mov $5,15
+  mul $5,$1
+  add $5,54
+  mul $5,$1
+  add $5,45
+  mul $5,$1
+  mul $2,$5
+  rol $2,2
+  mov $5,10
+  mul $5,$1
+  add $5,41
+  mul $5,$1
+  add $5,45
+  mul $5,$1
+  add $5,12
+  mov $4,$2
+  mul $4,$5
+  mov $5,5
+  mul $5,$1
+  add $5,23
+  mul $5,$1
+  add $5,26
+  mul $5,$1
+  add $5,6
+  add $3,$4
+  div $3,$5
+  sub $0,1
   add $1,1
-  mul $2,$4
-  add $2,1
-  add $3,$1
 lpe
-mov $0,$3
-sub $0,2
-div $0,2
+mov $0,$2

@@ -1,16 +1,17 @@
 ; A117818: a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
-; Submitted by Xenon
+; Submitted by DukeBox
 ; 1,2,3,2,5,3,7,4,3,5,11,6,13,7,5,8,17,9,19,10,7,11,23,12,5,13,9,14,29,15,31,16,11,17,7,18,37,19,13,20,41,21,43,22,15,23,47,24,7,25,17,26,53,27,11,28,19,29,59,30,61,31,21,32,13,33,67,34,23,35,71,36,73,37,25,38,11,39,79,40
 
 #offset 1
 
 mov $2,2
 lpb $0
-  add $2,$3
+  sub $2,$3
   mov $3,$0
   lpb $3
     mov $1,$0
     mod $1,$2
+    mul $1,3
     add $2,1
     sub $3,$1
   lpe

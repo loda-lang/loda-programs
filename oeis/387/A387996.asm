@@ -1,16 +1,18 @@
 ; A387996: One third the number of solid partitions of n with 3 parts.
-; Submitted by loader3229
+; Submitted by Goldislops
 ; 2,2,5,7,10,13,18,21,27,32,38,44,52,58,67,75,84,93,104,113,125,136,148,160,174,186,201,215,230,245,262,277,295,312,330,348,368,386,407,427,448,469,492,513,537,560,584,608,634,658,685,711,738,765,794,821,851
+; Formula: a(n) = floor(((n-3)^2+2*n-6)/4)+floor((2*n-6)/3)+2
 
-lpb $0
-  sub $0,1
-  ror $1,3
-  sub $5,1
-  add $3,2
-  sub $4,$5
-  mov $1,$3
-  add $1,$4
-  mod $4,-3
-lpe
-mov $0,$2
+#offset 3
+
+sub $0,3
+mov $2,$0
+mul $2,2
+mov $1,$0
+pow $1,2
+add $1,$2
+div $1,4
+div $2,3
+add $1,$2
+mov $0,$1
 add $0,2
