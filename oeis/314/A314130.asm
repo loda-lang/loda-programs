@@ -19,11 +19,9 @@ mov $14,70
 mov $15,74
 lpb $0
   sub $0,1
-  mul $1,0
-  mov $16,$1
   mov $1,$2
   mul $2,-1
-  add $16,$2
+  mov $16,$2
   add $16,$3
   mov $2,$3
   mov $3,$4

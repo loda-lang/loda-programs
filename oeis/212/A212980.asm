@@ -1,17 +1,26 @@
 ; A212980: Number of (w,x,y) with all terms in {0,...,n} and w<x+y and x<y.
-; Submitted by gemini8
+; Submitted by loader3229
 ; 0,1,6,17,37,68,113,174,254,355,480,631,811,1022,1267,1548,1868,2229,2634,3085,3585,4136,4741,5402,6122,6903,7748,8659,9639,10690,11815,13016,14296,15657,17102,18633,20253,21964,23769,25670,27670
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+floor((5*n^2)/4), b(0) = 0
+; Formula: a(n) = (floor((n-1)/2)*(5*floor((n-1)/2)+5)+1)*((n-1)%2)+floor((floor((n-1)/2)*(floor((n-1)/2)*(20*floor((n-1)/2)+15)+1))/6)
 
 #offset 1
 
 sub $0,1
-lpb $0
-  mov $2,$0
-  mul $2,$0
-  mul $2,5
-  div $2,4
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,20
+add $0,15
+mul $0,$1
+add $0,1
+mul $0,$1
+div $0,6
+mul $3,5
+add $3,5
+mul $3,$4
+add $3,1
+mul $2,$3
+add $0,$2

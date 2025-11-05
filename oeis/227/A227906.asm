@@ -1,21 +1,14 @@
 ; A227906: Coins left after packing heart patterns (fixed orientation) into n X n coins.
-; Submitted by DukeBox
+; Submitted by Flashfire42
 ; 2,4,4,9,6,13,8,17,10,21,12,25,14,29,16,33,18,37,20,41,22,45,24,49,26,53,28,57,30,61,32,65,34,69,36,73,38,77,40,81,42,85,44,89,46,93,48,97,50,101,52,105,54,109,56,113,58,117,60,121
-; Formula: a(n) = gcd(floor((n-2)/((((n-2)^2)==0)+(n-2)^2)),binomial(-2,n-2))+max(-binomial(-2,n-2),0)+1
 
 #offset 2
 
 sub $0,2
 mov $1,$0
-mov $2,-2
-bin $2,$0
-trn $3,$2
-mul $0,$1
-mov $4,$0
-equ $4,0
-add $0,$4
-div $1,$0
-gcd $1,$2
-add $1,$3
-mov $0,$1
+add $0,1
+gcd $0,2
+mul $1,$0
+dif $0,$1
+add $0,$1
 add $0,1

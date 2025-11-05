@@ -1,23 +1,19 @@
 ; A165652: Number of disconnected 2-regular graphs on n vertices.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 0,0,0,0,0,0,1,1,2,3,4,5,8,9,12,16,20,24,32,38,48,59,72,87,109,129,157,190,229,272,330,390,467,555,659,778,926,1086,1283,1509,1774,2074,2437,2841,3322,3871,4509,5236,6094,7055,8181,9464,10944,12624,14577,16778,19322,22209,25518,29268,33580,38437,44003,50304,57479,65584,74830,85240,97083,110440,125576,142626,161954,183668,208232,235857,267015,302007,341473,385713
 
-mov $2,$0
-add $2,4
-lpb $2
-  sub $2,4
-  sub $2,$5
-  mov $4,$2
-  max $4,0
-  seq $4,2865 ; Number of partitions of n that do not contain 1 as a part.
-  add $3,$4
-  mul $4,$5
-  sub $5,2
+add $0,4
+lpb $0
+  sub $0,4
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,2865 ; Number of partitions of n that do not contain 1 as a part.
+  add $1,$2
+  mul $2,$3
+  mul $3,$2
+  sub $3,2
 lpe
-add $3,$4
-mov $1,$3
-equ $1,0
-mov $2,$3
-add $2,$1
-mov $0,$2
-sub $0,1
+add $1,$2
+mov $0,$1
+trn $0,1

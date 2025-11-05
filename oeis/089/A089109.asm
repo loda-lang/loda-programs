@@ -1,18 +1,27 @@
 ; A089109: Convoluted convolved Fibonacci numbers G_5^(r).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 5,9,17,25,38,51,70,89,115,141,175,209,252,295,348,401,465,529,605,681,770,859,962,1065,1183,1301,1435,1569,1720,1871,2040,2209,2397,2585,2793,3001,3230,3459,3710,3961,4235,4509,4807,5105,5428,5751,6100,6449
-; Formula: a(n) = b(n+3), b(n) = b(n-2)+truncate(((n+2)^2-16)/4), b(1) = -1, b(0) = 0
+; Formula: a(n) = floor((floor((n-1)/2)*(floor((n-1)/2)+7)+8)/2)*((n-1)%2)+floor((floor((n-1)/2)*(floor((n-1)/2)*(2*floor((n-1)/2)+21)+49)+30)/6)
 
 #offset 1
 
-add $0,3
-lpb $0
-  mov $2,$0
-  add $2,2
-  pow $2,2
-  sub $2,16
-  div $2,4
-  trn $0,2
-  add $1,$2
-lpe
-mov $0,$1
+sub $0,1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,2
+add $0,21
+mul $0,$1
+add $0,49
+mul $0,$1
+add $0,30
+div $0,6
+add $3,7
+mul $3,$4
+add $3,8
+div $3,2
+mul $2,$3
+add $0,$2

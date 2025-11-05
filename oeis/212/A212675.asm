@@ -1,23 +1,27 @@
 ; A212675: Number of (w,x,y,z) with all terms in {1,...,n} and  w >= |x-y| + |y-z|.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 0,1,14,57,158,353,688,1217,2004,3121,4650,6681,9314,12657,16828,21953,28168,35617,44454,54841,66950,80961,97064,115457,136348,159953,186498,216217,249354,286161,326900,371841,421264,475457,534718
+; Formula: a(n) = (floor(n/2)*(floor(n/2)*(12*floor(n/2)+19)+11)+1)*(n%2)+truncate((floor(n/2)*(floor(n/2)*(floor(n/2)*(18*floor(n/2)+20)+9)-5))/3)
 
+mov $2,$0
+mod $2,2
+div $0,2
 mov $1,$0
-pow $1,4
-lpb $0
-  sub $0,2
-  mov $4,$0
-  bin $4,2
-  mov $5,1
-  add $5,$0
-  mov $3,$0
-  add $3,$5
-  mul $3,$5
-  add $3,$4
-  mul $3,$5
-  add $2,$3
-lpe
-mov $0,$2
-mul $0,2
-sub $1,$0
-mov $0,$1
+mov $3,$0
+mov $4,$0
+mul $0,18
+add $0,20
+mul $0,$1
+add $0,9
+mul $0,$1
+sub $0,5
+mul $0,$1
+div $0,3
+mul $3,12
+add $3,19
+mul $3,$4
+add $3,11
+mul $3,$4
+add $3,1
+mul $2,$3
+add $0,$2

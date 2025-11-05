@@ -1,19 +1,32 @@
 ; A063985: Partial sums of cototient sequence A051953.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,1,2,4,5,9,10,14,17,23,24,32,33,41,48,56,57,69,70,82,91,103,104,120,125,139,148,164,165,187,188,204,217,235,246,270,271,291,306,330,331,361,362,386,407,431,432,464,471,501,520,548,549,585,600,632,653,683,684,728,729,761,788,820,837,883,884,920,945,991,992,1040,1041,1079,1114,1154,1171,1225,1226,1274
-; Formula: a(n) = b(n-1), b(n) = -A000010(n+1)+b(n-1)+n+1, b(0) = 0
 
 #offset 1
 
-sub $0,1
-lpb $0
-  mov $3,$0
-  add $3,1
-  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  mov $2,$0
-  sub $2,$3
-  add $2,1
-  sub $0,1
-  add $1,$2
+mov $1,$0
+add $1,1
+bin $1,2
+mov $2,$0
+sub $2,1
+sub $4,$2
+mov $7,3
+add $2,3
+lpb $2
+  sub $2,$7
+  mov $6,$2
+  max $6,0
+  add $6,1
+  seq $6,62570 ; a(n) = phi(2*n).
+  max $2,$8
+  add $5,$6
+  mov $7,1
+  add $8,1
 lpe
-mov $0,$1
+add $3,$5
+add $4,$3
+mov $2,$4
+add $2,$1
+sub $2,1
+pow $0,2
+sub $0,$2

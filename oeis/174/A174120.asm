@@ -1,21 +1,17 @@
 ; A174120: Partial sums of A024012.
-; Submitted by BrandyNOW
+; Submitted by Dave Studdert
 ; 1,2,2,1,1,8,36,115,307,738,1662,3589,7541,15564,31752,64295,129575,260358,522178,1046105,2094281,4190992,8384812,16772891,33549531,67103338,134211526,268428525,536863197,1073733268,2147474192
-; Formula: a(n) = 2*2^(n-1)-binomial(n,2)-2*binomial(n,3)-1
+; Formula: a(n) = 2^n-truncate(binomial(-2*n+2,3)/(-4))-1
 
 #offset 1
 
+mov $1,2
+pow $1,$0
 sub $0,1
-mov $2,2
-pow $2,$0
-mul $2,2
-add $0,1
-mov $1,$0
-bin $1,2
-bin $0,3
-mov $3,$0
-add $0,$1
-sub $2,$0
-sub $2,$3
-mov $0,$2
+mov $2,$0
+mul $2,-2
+bin $2,3
+div $2,-4
+sub $1,$2
+mov $0,$1
 sub $0,1

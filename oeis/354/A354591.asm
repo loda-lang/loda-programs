@@ -1,9 +1,78 @@
 ; A354591: Numbers k that can be written as the sum of 4 divisors of k (not necessarily distinct).
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 4,6,8,10,12,16,18,20,24,28,30,32,36,40,42,44,48,50,52,54,56,60,64,66,68,70,72,76,78,80,84,88,90,92,96,100,102,104,108,110,112,114,116,120,124,126,128,130,132,136,138,140,144,148,150,152,156,160,162,164,168,170,172,174,176,180,184,186,188,190,192,196,198,200,204,208,210,212,216,220
-; Formula: a(n) = 2*A080671(n)
 
 #offset 1
 
-seq $0,80671 ; Numbers having divisors 2 or 3 or 5.
+mov $3,2
+mov $4,3
+mov $5,4
+mov $6,5
+mov $7,6
+mov $8,8
+mov $9,9
+mov $10,10
+mov $11,12
+mov $12,14
+mov $13,15
+mov $14,16
+mov $15,18
+mov $16,20
+mov $17,21
+mov $18,22
+mov $19,24
+mov $20,25
+mov $21,26
+mov $22,27
+mov $23,28
+mov $24,30
+sub $0,1
+lpb $0
+  mul $3,-1
+  rol $3,22
+  add $24,$3
+  add $24,$3
+  sub $24,$4
+  sub $24,$4
+  add $24,$5
+  add $24,$5
+  sub $24,$6
+  sub $24,$6
+  add $24,$7
+  add $24,$7
+  sub $24,$8
+  sub $24,$8
+  add $24,$9
+  add $24,$9
+  sub $24,$10
+  sub $24,$10
+  add $24,$11
+  add $24,$11
+  sub $24,$12
+  sub $24,$12
+  add $24,$13
+  add $24,$13
+  sub $24,$14
+  sub $24,$14
+  add $24,$15
+  add $24,$15
+  sub $24,$16
+  sub $24,$16
+  add $24,$17
+  add $24,$17
+  sub $24,$18
+  sub $24,$18
+  add $24,$19
+  add $24,$19
+  sub $24,$20
+  sub $24,$20
+  add $24,$21
+  add $24,$21
+  sub $24,$22
+  sub $24,$22
+  add $24,$23
+  add $24,$23
+  sub $0,1
+lpe
+mov $0,$3
 mul $0,2

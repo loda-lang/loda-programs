@@ -7,6 +7,5 @@
 
 mov $1,$0
 seq $1,224 ; Number of squares mod n.
-sub $0,1
 mov $0,$1
 sub $0,1

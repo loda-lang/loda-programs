@@ -1,34 +1,30 @@
 ; A203298: Second elementary symmetric function of the first n terms of (1,2,2,3,3,4,4,5,5...).
 ; Submitted by loader3229
 ; 2,8,23,47,91,151,246,366,540,750,1037,1373,1813,2317,2956,3676,4566,5556,6755,8075,9647,11363,13378,15562,18096,20826,23961,27321,31145,35225,39832,44728,50218,56032,62511,69351,76931,84911,93710,102950
+; Formula: a(n) = (floor((n-2)/2)*(floor((n-2)/2)*(floor((n-2)/2)+6)+11)+6)*((n-2)%2)+floor((floor((n-2)/2)*(floor((n-2)/2)*(floor((n-2)/2)*(3*floor((n-2)/2)+22)+54)+47)+12)/6)
 
 #offset 2
 
-mov $1,2
-mov $2,8
-mov $3,23
-mov $4,47
-mov $5,91
-mov $6,151
-mov $7,246
-mov $8,366
 sub $0,2
-lpb $0
-  rol $1,8
-  sub $8,$1
-  sub $8,$1
-  sub $8,$2
-  sub $8,$2
-  mov $9,$3
-  mul $9,6
-  sub $0,1
-  add $8,$9
-  mov $9,$5
-  mul $9,-6
-  add $8,$9
-  add $8,$6
-  add $8,$6
-  add $8,$7
-  add $8,$7
-lpe
-mov $0,$1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,3
+add $0,22
+mul $0,$1
+add $0,54
+mul $0,$1
+add $0,47
+mul $0,$1
+add $0,12
+div $0,6
+add $3,6
+mul $3,$4
+add $3,11
+mul $3,$4
+add $3,6
+mul $2,$3
+add $0,$2

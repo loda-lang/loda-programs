@@ -1,31 +1,29 @@
 ; A212750: Number of (w,x,y,z) with all terms in {0,...,n} and at least one of these conditions holds: w=R, x=R, y<R, z<R, where R = max{w,x,y,z} - min{w,x,y,z}.
 ; Submitted by loader3229
 ; 1,14,72,216,529,1070,1984,3336,5345,8070,11816,16624,22897,30646,40384,52080,66369,83166,103240,126440,153681,184734,220672,261176,307489,359190,417704,482496,555185,635110,724096,821344,928897
+; Formula: a(n) = floor((floor(n/2)*(floor(n/2)*(74*floor(n/2)+177)+142)+39)/3)*(n%2)+floor((floor(n/2)*(floor(n/2)*(floor(n/2)*(37*floor(n/2)+84)+68)+24)+3)/3)
 
-mov $1,1
-mov $2,14
-mov $3,72
-mov $4,216
-mov $5,529
-mov $6,1070
-mov $7,1984
-mov $8,3336
-lpb $0
-  rol $1,8
-  sub $8,$1
-  sub $8,$1
-  sub $8,$2
-  sub $8,$2
-  mov $9,$3
-  mul $9,6
-  sub $0,1
-  add $8,$9
-  mov $9,$5
-  mul $9,-6
-  add $8,$9
-  add $8,$6
-  add $8,$6
-  add $8,$7
-  add $8,$7
-lpe
-mov $0,$1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,37
+add $0,84
+mul $0,$1
+add $0,68
+mul $0,$1
+add $0,24
+mul $0,$1
+add $0,3
+div $0,3
+mul $3,74
+add $3,177
+mul $3,$4
+add $3,142
+mul $3,$4
+add $3,39
+div $3,3
+mul $2,$3
+add $0,$2

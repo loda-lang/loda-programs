@@ -1,5 +1,5 @@
 ; A047687: Numerators of coefficients in Taylor series for exp(sin(x)).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by axels
 ; 1,1,1,0,-1,-1,-1,1,31,1,-2951,-1,181,2417,58913,-5699,-52635599,-19993,1126610929,3631,27069353,-6050353,-118802490419,47438,11162375477471,41478716501,-8529964147714967,-3818348299,-2610006147952249,36698180928319,1446188098724255329,-3518532018557,-334852949145487749761,-7508338288827919,594094494902602207843297,2281941058908653,317334355101311574655801,-6325207413840393223,-869336484857826490420847,745245693369198417947,14070295294155078513813178921,2408753327494274120221
 
 mov $6,$0
@@ -10,13 +10,13 @@ add $8,1
 lpb $8
   sub $8,1
   mov $7,-1
-  pow $7,$3
-  mov $2,$3
-  add $2,$6
-  seq $2,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
-  add $3,1
+  pow $7,$2
+  mov $3,$2
+  add $3,$6
+  seq $3,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  add $2,1
   div $5,$7
-  add $5,$2
+  add $5,$3
 lpe
 mov $4,1
 fac $4,$0

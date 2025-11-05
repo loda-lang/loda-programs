@@ -1,7 +1,7 @@
 ; A245093: Triangle read by rows in which row n lists the first n terms of A000203.
 ; Submitted by Ralfy
 ; 1,1,3,1,3,4,1,3,4,7,1,3,4,7,6,1,3,4,7,6,12,1,3,4,7,6,12,8,1,3,4,7,6,12,8,15,1,3,4,7,6,12,8,15,13,1,3,4,7,6,12,8,15,13,18,1,3,4,7,6,12,8,15,13,18,12,1,3,4,7,6,12,8,15,13,18,12,28,1,3
-; Formula: a(n) = A000203(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)
+; Formula: a(n) = A000203(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n)
 
 #offset 1
 

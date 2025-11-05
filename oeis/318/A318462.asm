@@ -11,5 +11,4 @@ mul $2,2
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $1,$2
-sub $0,1
 mov $0,$1

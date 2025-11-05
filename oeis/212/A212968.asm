@@ -1,18 +1,24 @@
 ; A212968: Number of (w,x,y) with all terms in {0,...,n} and w>=range{w,x,y}.
-; Submitted by Ciceronian
+; Submitted by loader3229
 ; 1,5,17,38,75,127,203,300,429,585,781,1010,1287,1603,1975,2392,2873,3405,4009,4670,5411,6215,7107,8068,9125,10257,11493,12810,14239,15755,17391,19120,20977,22933,25025,27222,29563,32015,34619,37340
-; Formula: a(n) = a(n-1)+floor((floor((7*n+4)/2)^2)/7)+1, a(0) = 1
+; Formula: a(n) = (floor(n/2)*(7*floor(n/2)+10)+4)*(n%2)+floor((floor(n/2)*(floor(n/2)*(14*floor(n/2)+21)+13)+3)/3)
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  mul $2,7
-  add $2,4
-  div $2,2
-  pow $2,2
-  div $2,7
-  add $2,1
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,14
+add $0,21
+mul $0,$1
+add $0,13
+mul $0,$1
+add $0,3
+div $0,3
+mul $3,7
+add $3,10
+mul $3,$4
+add $3,4
+mul $2,$3
+add $0,$2
