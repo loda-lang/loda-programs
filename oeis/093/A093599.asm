@@ -1,0 +1,75 @@
+; A093599: Composite numbers having an odd number of prime factors, all of which are distinct.
+; Submitted by [SG]KidDoesCrunch
+; 30,42,66,70,78,102,105,110,114,130,138,154,165,170,174,182,186,190,195,222,230,231,238,246,255,258,266,273,282,285,286,290,310,318,322,345,354,357,366,370,374,385,399,402,406,410,418,426,429,430,434,435,438,442,455,465,470,474,483,494,498,506,518,530,534,555,561,574,582,590,595,598,602,606,609,610,615,618,627,638
+
+#offset 1
+
+mov $1,$0
+sub $1,1
+mov $4,$0
+add $4,9
+pow $4,2
+lpb $4
+  mov $5,$3
+  add $5,1
+  seq $5,73184 ; Number of cubefree divisors of n.
+  mov $7,$5
+  add $7,2
+  mov $8,$5
+  mul $8,2
+  mov $9,$5
+  add $9,3
+  mov $10,$5
+  add $10,4
+  add $5,1
+  mov $11,$5
+  pow $11,4
+  mul $11,15
+  mov $12,$5
+  mul $12,150
+  mov $13,$5
+  pow $13,2
+  mul $13,515
+  mov $14,$5
+  mul $14,672
+  add $11,$12
+  add $11,$13
+  add $11,$14
+  add $11,223
+  mul $5,$8
+  mul $5,$9
+  mul $5,$10
+  mul $5,$11
+  div $5,360
+  mov $16,$7
+  mul $16,3
+  add $7,2
+  mov $17,$7
+  pow $17,3
+  mov $15,2
+  add $15,$16
+  mul $15,$17
+  mov $7,$15
+  div $7,6
+  div $5,$7
+  div $5,2
+  mod $5,2
+  sub $1,$5
+  add $3,1
+  mov $6,$1
+  max $6,0
+  equ $6,$1
+  mul $4,$6
+  sub $4,2
+lpe
+mov $1,$3
+add $1,1
+mov $2,$0
+mul $0,2
+add $2,$0
+add $0,$2
+pow $0,$0
+lex $0,2
+add $0,1
+mod $0,10
+mul $0,$1
