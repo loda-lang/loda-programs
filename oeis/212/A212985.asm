@@ -1,13 +1,19 @@
 ; A212985: Number of (w,x,y) with all terms in {0,...,n} and 3w = 3x + y.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 1,2,3,7,9,11,18,21,24,34,38,42,55,60,65,81,87,93,112,119,126,148,156,164,189,198,207,235,245,255,286,297,308,342,354,366,403,416,429,469,483,497,540,555,570,616,632,648,697,714,731,783,801,819,874
+; Formula: a(n) = floor(((2*floor(n/3)+2)*(n%3)+floor(n/3)*(5*floor(n/3)+7)+2)/2)
 
+mov $2,$0
+mod $2,3
+div $0,3
+mov $1,$0
+mov $3,$0
+mul $0,5
+add $0,7
+mul $0,$1
 add $0,2
-gcd $2,$0
-add $0,1
-lpb $0
-  sub $0,3
-  sub $2,1
-  add $1,$2
-lpe
-mov $0,$1
+mul $3,2
+add $3,2
+mul $2,$3
+add $0,$2
+div $0,2

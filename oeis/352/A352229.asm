@@ -1,5 +1,5 @@
 ; A352229: Numbers that can be expressed as the sum of two primes in exactly 7 ways.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Owdjim
 ; 78,96,112,130,140,176,178,194,206,208,218,224,226,232,272,278,326,398
 
 #offset 1
@@ -10,6 +10,7 @@ mov $1,11
 add $2,1
 mul $2,81
 lpb $2
+  sub $2,1
   mov $3,$1
   seq $3,45917 ; From Goldbach problem: number of decompositions of 2n into unordered sums of two primes.
   add $3,2

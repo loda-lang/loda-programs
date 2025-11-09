@@ -1,37 +1,33 @@
 ; A355489: Numbers k such that A000120(k) = A007814(k) + 2.
-; Submitted by zelandonii
+; Submitted by [SG]KidDoesCrunch
 ; 3,5,9,14,17,22,26,33,38,42,50,60,65,70,74,82,92,98,108,116,129,134,138,146,156,162,172,180,194,204,212,228,248,257,262,266,274,284,290,300,308,322,332,340,356,376,386,396,404,420,440,452,472,488,513,518
 
 #offset 1
 
-sub $0,1
+add $0,1
 mov $1,2
 mov $2,$0
-add $2,4
-pow $2,2
+pow $2,4
 lpb $2
-  sub $2,1
-  mov $5,$1
-  mul $5,2
-  bin $5,$1
-  mov $6,0
-  sub $6,$1
-  gcd $6,$5
-  div $5,$6
-  mov $3,$5
-  gcd $3,4
-  add $3,3
-  equ $3,5
-  sub $3,1
-  sub $0,1
+  mov $4,1
+  div $5,$2
+  mov $3,$1
+  lpb $3
+    sub $5,1
+    lpb $3
+      dif $3,2
+      add $5,$4
+    lpe
+    div $3,2
+    div $4,2
+  lpe
+  add $3,$5
+  equ $3,0
   sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
+  add $1,2
+  sub $2,$0
 lpe
 mov $0,$1
-sub $0,7
-div $0,2
+sub $0,12
+div $0,4
 add $0,3

@@ -1,37 +1,23 @@
 ; A014135: Inverse of 126th cyclotomic polynomial.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,0,0,-1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,-1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,1,0,0,-1,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-mul $1,2
-add $1,1
-div $1,3
-mov $2,-1
-pow $2,$1
-add $2,1
-dif $1,2
-mov $3,-1
-pow $3,$1
-lpb $1
-  add $4,21
-  add $7,21
-  mod $1,$4
-  mov $5,-1
-  mov $6,4
-  add $6,$1
-  div $1,10
+mov $1,1
+mov $4,-1
+mov $7,1
+mov $22,1
+mov $25,-1
+mov $28,1
+lpb $0
+  mul $1,-1
+  rol $1,36
+  sub $36,$3
+  add $36,$9
+  add $36,$12
+  sub $36,$18
+  add $36,$24
+  add $36,$27
+  sub $36,$33
+  sub $0,1
 lpe
-sub $5,$6
-div $5,4
-add $1,1
-mul $1,$5
-mul $1,2
-gcd $7,2
-mul $7,2
-sub $1,$7
-add $1,6
-div $1,2
-mul $1,$3
-mul $1,$2
-div $1,2
 mov $0,$1

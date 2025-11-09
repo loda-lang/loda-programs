@@ -1,27 +1,38 @@
 ; A154563: Averages of twin prime pairs of A074378.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 18,60,138,150,1278,1620,2730,4128,6360,11718,13398,17490,20808,23028,28308,29670,51870,61380,69828,73848,78540,92568,97500,115770,138570,166668,176610,193380,200928,258318,304980,430008,500910,518760,536190
 
 #offset 1
 
-mov $2,2
-mov $3,$0
 sub $0,1
-add $3,1
-pow $3,2
-lpb $3
-  mov $4,$2
-  seq $4,78784 ; Primes on axis of Ulam square spiral (with rows ... / 7 8 9 / 6 1 2 / 5 4 3 / ... ) with origin at (1).
-  sub $4,2
-  mov $1,$4
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$4
-  add $2,1
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mul $3,$5
-  trn $3,1
+mov $1,-1
+mov $2,$0
+add $2,8
+pow $2,4
+lpb $2
+  dif $6,2
+  mov $7,$6
+  add $7,3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
+  mov $3,$6
+  sub $3,$7
+  add $3,1
+  gcd $7,2
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $5,4
+  add $5,$1
+  add $1,1
+  mul $2,$4
+  sub $2,18
+  mov $6,$5
+  sub $6,1
 lpe
-mov $0,$1
-add $0,1
+mov $0,$5
+div $0,2
+add $0,2

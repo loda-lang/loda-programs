@@ -1,18 +1,44 @@
 ; A018212: Alkane (or paraffin) numbers l(11,n).
-; Submitted by iBezanilla
+; Submitted by loader3229
 ; 1,5,25,85,255,651,1519,3235,6470,12190,21942,37854,63090,101850,160050,245322,367983,541035,781495,1110395,1554553,2146573,2927145,3945045,5260060,6942988,9079292,11769100,15131700,19305540
+; Formula: a(n) = floor((floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(8*floor(n/2)+140)+1022)+4025)+9212)+12215)+8658)+2520)/630)*(n%2)+floor((floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(8*floor(n/2)+144)+1092)+4536)+11277)+17346)+16603)+9474)+2520)/2520)
 
-mov $4,3
-add $0,2
-lpb $0
-  mov $2,$0
-  sub $0,2
-  add $2,2
-  bin $2,$0
-  mov $3,$4
-  bin $3,3
-  mul $3,$2
-  add $4,2
-  add $1,$3
-lpe
-mov $0,$1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mul $0,8
+add $0,144
+mul $0,$1
+add $0,1092
+mul $0,$1
+add $0,4536
+mul $0,$1
+add $0,11277
+mul $0,$1
+add $0,17346
+mul $0,$1
+add $0,16603
+mul $0,$1
+add $0,9474
+mul $0,$1
+add $0,2520
+div $0,2520
+mul $3,8
+add $3,140
+mul $3,$1
+add $3,1022
+mul $3,$1
+add $3,4025
+mul $3,$1
+add $3,9212
+mul $3,$1
+add $3,12215
+mul $3,$1
+add $3,8658
+mul $3,$1
+add $3,2520
+div $3,630
+mul $2,$3
+add $0,$2

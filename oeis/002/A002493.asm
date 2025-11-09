@@ -1,25 +1,61 @@
 ; A002493: Number of ways to arrange n non-attacking kings on an n X n board, with 2 sides identified to form a cylinder, with 1 in each row and column.
-; Submitted by iBezanilla
+; Submitted by loader3229
 ; 1,0,0,0,10,60,462,3920,36954,382740,4327510,53088888,702756210,9988248956,151751644590,2454798429600,42130249479562,764681923900260,14636063499474054,294639009867223880,6223681483119443490,137643067038372067788,3180893444110091247070,76672486187670765972336,1924400398260570692302650,50215958990981450911524020,1360356464865809128456603062,38207329324243434866323339800,1111173015462211112020451237074,33423476475314113434763770017820,1038682461337999367449913512953870
 
 #offset 1
 
-mov $3,$0
-mov $5,2
-lpb $5
-  bin $5,$4
-  mul $0,2
+mov $2,1
+mov $6,10
+mov $7,60
+mov $8,462
+mov $9,3920
+mov $10,36954
+sub $0,1
+lpb $0
+  mov $2,0
+  rol $2,9
+  mov $12,$1
+  mul $12,-1
+  sub $12,4
+  mov $11,$3
+  mul $11,$12
+  mov $12,$1
+  mul $12,-2
+  sub $12,15
+  add $10,$11
+  mov $11,$4
+  mul $11,$12
+  mov $12,$1
+  mul $12,3
+  add $12,8
+  add $10,$11
+  mov $11,$5
+  mul $11,$12
+  mov $12,$1
+  mul $12,4
+  add $12,21
+  add $10,$11
+  mov $11,$6
+  mul $11,$12
+  mov $12,$1
+  mul $12,-3
+  sub $12,24
+  add $10,$11
+  mov $11,$7
+  mul $11,$12
+  mov $12,$1
+  mul $12,-2
+  sub $12,13
+  add $10,$11
+  mov $11,$8
+  mul $11,$12
+  mov $12,$1
+  add $12,12
+  add $10,$11
+  mov $11,$9
+  mul $11,$12
   sub $0,1
-  div $0,2
-  mov $4,$0
-  seq $4,382644 ; Number of king permutations on n elements not beginning with the smallest element.
-  mov $2,$5
-  mul $2,$4
-  mul $0,$5
-  add $1,$2
+  add $1,1
+  add $10,$11
 lpe
-mul $1,$3
-mul $3,$4
-sub $1,$3
-add $1,$2
-mov $0,$1
+mov $0,$2

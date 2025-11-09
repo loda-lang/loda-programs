@@ -1,13 +1,21 @@
 ; A193632: Triangle: T(n,k)=C(4n-1,2k), 0<=k<=n.
-; Submitted by p3d-cluster
+; Submitted by axels
 ; 1,1,3,1,21,35,1,55,330,462,1,105,1365,5005,6435,1,171,3876,27132,75582,92378,1,253,8855,100947,490314,1144066,1352078,1,351,17550,296010,2220075,8436285,17383860,20058300,1,465,31465,736281,7888725
+; Formula: a(n) = binomial(4*truncate((sqrtint(8*n+8)-1)/2)-1,2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))
 
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+mul $2,4
+sub $2,1
+sub $0,$1
 mul $0,2
-lpb $0
-  add $1,2
-  sub $0,$1
-lpe
-mul $1,2
-sub $1,1
-bin $1,$0
-mov $0,$1
+sub $0,2
+bin $2,$0
+mov $0,$2

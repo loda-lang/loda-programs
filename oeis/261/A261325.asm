@@ -1,11 +1,13 @@
 ; A261325: Expansion of f(x^3, x^3) * f(x, x^5) / f(x, x)^2 in powers of x where f(,) is Ramanujan's general theta function.
-; Submitted by vonboedefeldt
+; Submitted by [SG]KidDoesCrunch
 ; 1,-3,8,-18,38,-75,140,-252,439,-744,1232,-1998,3182,-4986,7700,-11736,17673,-26322,38808,-56682,82070,-117867,167996,-237744,334202,-466836,648224,-895014,1229148,-1679436,2283568,-3090672,4164578,-5587941,7467464,-9940482,13183238,-17421288,22942512,-30113388,39399277,-51389664,66829520,-86658156,112057312,-144510534,185876372,-238478472,305216244,-389700618,496420280,-630944928,800173430,-1012636314,1278863996,-1611834372,2027516127,-2545527372,3189932984,-3990208662,4982405054,-6210551736
-; Formula: a(n) = A233693(3*n+1)*(-1)^n
+; Formula: a(n) = truncate((-A217771(3*n+1))/4)*(-1)^n
 
 mov $1,-1
 pow $1,$0
 mul $0,3
 add $0,1
-seq $0,233693 ; Expansion of q * psi(-q) * chi(-q^6) * psi(-q^9) / (phi(-q) * phi(-q^18)) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
+seq $0,217771 ; Expansion of (phi(-x) / phi(-x^3))^2 in powers of x where phi() is a Ramanujan theta function.
+mul $0,-1
+div $0,4
 mul $0,$1

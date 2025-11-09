@@ -1,17 +1,27 @@
 ; A339360: Sum of all squarefree numbers with greatest prime factor prime(n).
-; Submitted by Science United
+; Submitted by jdio2
 ; 1,2,9,60,504,6336,89856,1645056,33094656,801239040,24246190080,777550233600,29697402470400,1250501433753600,55083063155097600,2649111037319577600,143390180403000115200,8619643674791667302400,534710099148093259776000,36412881178052121329664000,2623901348173666295218176000,194242612478884366868545536000,15555374144541890530322153472000,1307439042022255102801760747520000,117764027447691315042722449981440000,11551460220430844722729966161100800000,1178725291359015474902899021263667200000
-; Formula: a(n) = A000040(n)*(a(n-1)+b(n-1)), a(2) = 9, a(1) = 2, a(0) = 1, b(n) = a(n-1)+b(n-1), b(2) = 3, b(1) = 1, b(0) = 0
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mov $2,$1
-  mov $1,$3
-  add $1,1
-  seq $1,40 ; The prime numbers.
-  mul $1,$2
-  add $3,1
+mov $4,$0
+mov $2,2
+lpb $2
+  sub $2,1
+  mov $0,$4
+  add $0,$2
+  trn $0,1
+  seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+  seq $0,49417 ; a(n) = isigma(n): sum of infinitary divisors of n.
+  mov $5,$0
+  lpb $0
+    min $0,0
+    max $0,1
+  lpe
+  mul $0,$5
+  mov $1,$2
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$1
+min $4,1
+mul $4,$0
+mov $0,$3
+sub $0,$4

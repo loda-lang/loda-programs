@@ -1,22 +1,29 @@
 ; A241787: Triangular numbers which have one or more occurrences of exactly four different digits.
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 1035,1275,1326,1378,1485,1540,1596,1653,1830,1953,2016,2145,2346,2415,2485,2701,2850,3081,3160,3240,3486,3570,3741,3916,4095,4186,4278,4371,4560,4753,4851,4950,5460,5671,6105,6328,6903,7021,7140,7260,7381,7503,8256,9045,9180,9316,9453,9730,9870,10153,10585,10731,10878,11026,11325,11476,11628,11935,12090,12246,12561,12720,12880,13041,13203,13530,13861,14196,14535,14878,15400,15576,15753,15931,16471,16653,16836,17020,17391,17578
 
 #offset 1
 
 mov $2,$0
+mov $5,9
 sub $0,1
-add $2,10
-pow $2,2
-bin $2,2
+add $2,5
+pow $2,3
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,43537 ; Number of distinct base-10 digits of n.
-  equ $3,4
-  add $4,1
-  sub $0,$3
-  add $1,$4
+  mov $4,$5
+  bin $4,2
+  seq $4,43537 ; Number of distinct base-10 digits of n.
+  sub $4,2
+  equ $4,2
+  sub $0,$4
   sub $2,$0
+  add $3,$5
+  add $5,1
 lpe
+mov $1,$3
+mul $1,4
 mov $0,$1
+sub $0,41040
+div $0,4
+add $0,10296

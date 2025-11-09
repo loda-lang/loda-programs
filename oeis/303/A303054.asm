@@ -1,22 +1,44 @@
 ; A303054: Number of minimum total dominating sets in the n-ladder graph.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,4,1,16,9,1,64,16,1,169,25,1,361,36,1,676,49,1,1156,64,1,1849,81,1,2809,100,1,4096,121,1,5776,144,1,7921,169,1,10609,196,1,13924,225,1,17956,256,1,22801,289,1,28561,324,1,35344,361,1,43264,400,1,52441,441,1,63001,484,1,75076,529,1,88804,576,1,104329,625,1,121801,676,1,141376,729,1,163216,784
-; Formula: a(n) = (binomial(-min(n-1,(n-1)%3)+b(n-1)+c(n-1)+2,binomial(b(n-1),-min(n-1,(n-1)%3)+c(n-1)+1))+binomial(b(n-1),-min(n-1,(n-1)%3)+c(n-1)+1))^2, b(n) = b(n-3)+1, b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-3), c(5) = 0, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = truncate(((truncate((floor((n-1)/3)*(floor((n-1)/3)*(floor((n-1)/3)*(floor((n-1)/3)+10)+21)-12)-24)/4)*((n-1)%3)+truncate((floor((n-1)/3)*(floor((n-1)/3)*(floor((n-1)/3)*(-3*floor((n-1)/3)-30)-71)+4)+48)/4))*((n-1)%3)+floor((floor((n-1)/3)*(floor((n-1)/3)*(floor((n-1)/3)*(floor((n-1)/3)+10)+29)+20)+4)/2))/2)
 
 #offset 1
 
 sub $0,1
-lpb $0
-  sub $0,3
-  add $1,1
-lpe
-sub $2,$0
-mov $0,$2
-add $0,1
-add $2,$1
-bin $1,$0
-add $2,2
-bin $2,$1
-add $1,$2
-pow $1,2
-mov $0,$1
+mov $2,$0
+mod $2,3
+div $0,3
+mov $1,$0
+mov $3,$0
+mov $4,$0
+add $0,10
+mul $0,$1
+add $0,29
+mul $0,$1
+add $0,20
+mul $0,$1
+add $0,4
+div $0,2
+mul $3,-3
+sub $3,30
+mul $3,$1
+sub $3,71
+mul $3,$1
+add $3,4
+mul $3,$1
+add $3,48
+div $3,4
+add $4,10
+mul $4,$1
+add $4,21
+mul $4,$1
+sub $4,12
+mul $4,$1
+sub $4,24
+div $4,4
+mul $4,$2
+add $3,$4
+mul $2,$3
+add $0,$2
+div $0,2

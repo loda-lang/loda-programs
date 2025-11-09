@@ -4,23 +4,25 @@
 
 #offset 1
 
-mov $1,1
+mov $4,1
+mov $6,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
+  sub $4,2
   mov $5,$1
-  seq $5,40 ; The prime numbers.
+  seq $5,383948 ; Expansion of 1/sqrt((1-3*x)^3 * (1-7*x)).
+  add $5,$6
   seq $5,13632 ; Difference between n and the next prime greater than n.
+  add $6,$5
   mov $3,$5
   sub $3,$4
   add $4,$3
+  equ $3,2
   gcd $3,$2
   bin $3,$2
-  equ $3,0
   sub $0,$3
-  add $1,1
+  trn $1,$3
   sub $2,$0
-  sub $2,1
 lpe
 mov $0,$4

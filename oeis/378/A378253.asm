@@ -1,11 +1,12 @@
 ; A378253: Perfect powers p such that there are no other perfect powers between p and the least prime > p.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,4,9,16,27,36,49,64,81,100,125,128,144,169,196,216,225,243,256,289,324,343,361,400,441,484,512,529,576,625,676,729,784,841,900,961,1000,1024,1089,1156,1225,1296,1331,1369,1444,1521,1600,1681,1728,1764,1849
 
 #offset 1
 
 mov $2,$0
 sub $0,1
+mov $1,1
 pow $2,2
 lpb $2
   mov $5,0

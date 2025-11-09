@@ -19,6 +19,7 @@ lpb $2
   div $3,$5
   equ $3,1
   sub $0,$3
+  add $1,$4
   add $1,1
   mov $4,$0
   max $4,0

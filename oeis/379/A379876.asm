@@ -16,6 +16,7 @@ lpb $0
   sub $3,$4
   pow $3,$1
   mul $5,$1
+  dif $0,27
   add $1,1
   mul $3,$2
   div $3,$4

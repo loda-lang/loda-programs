@@ -1,64 +1,35 @@
 ; A014149: Inverse of 140th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,1,0,-1,0,1,0,-1,0
 
-mov $1,$0
-div $1,2
+mov $1,1
 mov $3,-1
-pow $3,$1
-mov $8,1
-fil $8,5
-mov $15,-1
-fil $15,5
-mov $2,$1
-lpb $2
-  sub $2,1
-  mul $8,-1
-  mov $6,$8
-  add $6,$9
-  rol $8,5
-  mov $12,$13
-  mul $13,-1
-  add $6,$13
-  add $6,$14
-  mov $13,$14
-  mov $14,$15
-  mul $15,-1
-  add $6,$15
-  add $6,$16
-  rol $15,3
-  mov $17,$18
-  mul $18,-1
-  add $6,$18
-  add $6,$19
-  mov $18,$19
-  mov $19,$20
-  mul $20,-1
-  add $6,$20
-  add $6,$21
-  mov $20,$21
-  mov $21,$22
-  mul $22,-1
-  add $6,$22
-  add $6,$24
-  rol $22,3
-  mov $24,$25
-  mul $25,-1
-  add $6,$25
-  add $6,$26
-  mov $25,$26
-  mov $26,$27
-  mul $27,-1
-  add $6,$27
-  add $6,$4
-  mov $27,$28
-  mov $28,$7
-  mov $7,$5
-  mov $5,$4
-  mov $4,$6
+mov $5,1
+mov $7,-1
+mov $9,1
+mov $15,1
+mov $17,-1
+mov $19,1
+mov $21,-1
+mov $23,1
+lpb $0
+  mul $1,-1
+  rol $1,48
+  sub $48,$2
+  add $48,$10
+  add $48,$12
+  add $48,$14
+  add $48,$16
+  sub $48,$20
+  sub $48,$22
+  sub $48,$24
+  sub $48,$26
+  sub $48,$28
+  add $48,$32
+  add $48,$34
+  add $48,$36
+  add $48,$38
+  sub $48,$46
+  sub $0,1
 lpe
-mov $2,$8
-mul $2,$3
-add $0,1
-mod $0,2
-mul $0,$2
+mov $0,$1

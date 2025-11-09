@@ -1,23 +1,33 @@
 ; A027314: a(n) is the sum of squares of numbers in row n of array T given by A026323.
-; Submitted by ckrause
+; Submitted by http://amez.petrsu.ru/
 ; 1,3,19,140,1071,8338,65715,523134,4200411,33981063,276739029,2267119660,18671460905,154507444731,1284064525987,10713124806766,89698502332131,753460696118753,6347826760778761,53625936977157324,454169619779127597,3855428639572871124
+; Formula: a(n) = b(2*n), b(n) = c(n-2), b(3) = 7, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = truncate((-c(n-2)*(n-1)+c(n-1)*(4*n+23)+c(n-3)*(-6*n-12))/(n+8)), c(4) = 140, c(3) = 51, c(2) = 19, c(1) = 7, c(0) = 3
 
+mov $10,1
+mov $11,1
+mov $12,3
 mul $0,2
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  add $0,2
-  seq $0,5322 ; Column of Motzkin triangle.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+lpb $0
+  mov $14,$9
+  mul $14,-6
+  sub $14,18
+  mul $10,$14
+  rol $10,3
+  mov $14,$9
+  mul $14,-1
+  mov $13,$10
+  mul $13,$14
+  mov $14,$9
+  mul $14,4
+  add $14,27
+  add $12,$13
+  mov $13,$11
+  mul $13,$14
+  mov $14,$9
+  add $14,9
+  add $12,$13
+  div $12,$14
+  sub $0,1
+  add $9,1
 lpe
-mul $0,2
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
+mov $0,$10

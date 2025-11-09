@@ -1,17 +1,32 @@
 ; A180292: Number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to n-2.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,18,50,90,147,224,324,450,605,792,1014,1274,1575,1920,2312,2754,3249,3800,4410,5082,5819,6624,7500,8450,9477,10584,11774,13050,14415,15872,17424,19074,20825,22680,24642,26714,28899,31200,33620,36162,38829,41624,44550,47610,50807,54144,57624,61250,65025,68952,73034,77274,81675,86240,90972,95874,100949
-; Formula: a(n) = A100542(n-1)*(((n-3)^2+1)%(n-2)+n-2)
+; Formula: a(n) = b(n-3), b(n) = truncate(((n-1)*(243*n+1268)+b(n-1)*((n-1)*(-16*n-70)+102)+2346)/((n-1)*(-16*n-22)+136)), b(1) = 18, b(0) = 1
 
 #offset 3
 
-mov $1,$0
-sub $1,2
+mov $2,1
 sub $0,3
-pow $0,2
-add $0,1
-mod $0,$1
-add $0,$1
-add $1,1
-seq $1,100542 ; Two-color Rado numbers R(0,n).
-mul $0,$1
+lpb $0
+  sub $0,1
+  mov $3,-16
+  mul $3,$1
+  sub $3,86
+  mul $3,$1
+  add $3,102
+  mul $2,$3
+  mov $3,243
+  mul $3,$1
+  add $3,1511
+  mul $3,$1
+  add $3,2346
+  add $2,$3
+  mov $3,-16
+  mul $3,$1
+  sub $3,38
+  mul $3,$1
+  add $3,136
+  add $1,1
+  div $2,$3
+lpe
+mov $0,$2

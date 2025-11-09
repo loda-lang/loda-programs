@@ -1,26 +1,26 @@
 ; A045309: Primes congruent to {0, 2} mod 3.
-; Submitted by Coleslaw
+; Submitted by John Greer
 ; 2,3,5,11,17,23,29,41,47,53,59,71,83,89,101,107,113,131,137,149,167,173,179,191,197,227,233,239,251,257,263,269,281,293,311,317,347,353,359,383,389,401,419,431,443,449,461,467,479,491,503,509,521,557,563,569,587,593,599,617,641,647,653,659,677,683,701,719,743,761,773,797,809,821,827,839,857,863,881,887
 
 #offset 1
 
 sub $0,1
+mov $2,$0
+mul $2,2
+max $2,1
+sub $2,2
 mov $3,4
-mov $4,$0
-mul $4,2
-max $4,1
-sub $4,2
-mov $1,$4
-pow $1,4
-lpb $1
-  max $2,$3
-  add $2,1
-  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $2,2
-  add $3,3
+mov $4,$2
+pow $4,4
+lpb $4
+  max $1,$3
+  add $1,1
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $1,2
+  sub $2,$1
+  add $3,6
   sub $4,$2
-  sub $1,$4
 lpe
-add $4,$3
-sub $4,1
-mov $0,$4
+add $2,$3
+sub $2,1
+mov $0,$2

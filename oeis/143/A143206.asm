@@ -1,23 +1,36 @@
 ; A143206: Product of the n-th cousin prime pair.
-; Submitted by Ralfy
+; Submitted by [SG]KidDoesCrunch
 ; 21,77,221,437,1517,2021,4757,6557,9797,11021,12317,16637,27221,38021,50621,53357,77837,95477,99221,123197,145157,159197,194477,210677,216221,239117,250997,378221,416021,455621,549077,576077,594437,680621,731021,741317,772637,783221,826277,881717,938957,1022117,1185917,1199021,1476221,1640957,1687397,1703021,2030621,2047757,2099597,2205221,2223077,2405597,2461757,2499557,2556797,2595317,2772221,2873021,3186221,3493157,3515621,3980021,4003997,4347221,4575317,4862021,5022077,5157437,5267021
 
 #offset 1
 
-mov $2,$0
+add $0,1
+mov $3,$0
 sub $0,1
-mov $3,1
+pow $3,2
 lpb $3
-  sub $3,1
   mov $1,$2
-  bin $1,$2
   add $1,1
-  mov $0,$2
-  seq $0,87679 ; Numbers k such that both k+2 and k-2 are prime.
-  mul $1,$0
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $1,1
+  mov $4,$2
+  add $4,$1
+  add $4,3
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  trn $3,1
 lpe
-pow $1,2
-mov $0,$1
-sub $0,100
-div $0,4
-add $0,21
+mov $0,$2
+add $0,4
+div $0,2
+mul $0,4
+sub $0,6
+pow $0,2
+div $0,16
+mul $0,4
+sub $0,3

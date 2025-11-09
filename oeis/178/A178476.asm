@@ -6,13 +6,13 @@
 
 sub $0,1
 mov $2,$0
-mov $1,12
+add $0,1
+mov $1,$0
 lpb $1
-  div $1,2
+  div $1,5
   mov $0,$2
   add $0,1
   seq $0,178485 ; (A178475(n)-6)/9.
-  sub $0,1
 lpe
 mul $0,9
-add $0,111126
+add $0,111117

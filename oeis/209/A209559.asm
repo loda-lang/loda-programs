@@ -1,5 +1,5 @@
 ; A209559: Triangle of coefficients of polynomials u(n,x) jointly generated with A209560; see the Formula section.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,3,2,1,5,8,3,1,9,17,15,4,1,15,38,39,24,5,1,25,76,104,74,35,6,1,41,149,242,229,125,48,7,1,67,282,543,607,440,195,63,8,1,109,524,1159,1531,1308,769,287,80,9,1,177,957,2401,3631,3660,2533,1253,404
 
 #offset 1
@@ -25,6 +25,7 @@ lpb $1
   bin $4,$1
   trn $5,$4
   sub $6,1
+  dif $1,14
   add $3,$4
   add $4,$5
   mov $5,$3

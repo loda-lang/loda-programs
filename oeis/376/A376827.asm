@@ -1,13 +1,31 @@
 ; A376827: T(n, k) = binomial(n, k)*hypergeom([(1 - n)/2, -n/2], [1], 4).
-; Submitted by Seppy
+; Submitted by MaxTheMouse
 ; 1,1,1,3,6,3,7,21,21,7,19,76,114,76,19,51,255,510,510,255,51,141,846,2115,2820,2115,846,141,393,2751,8253,13755,13755,8253,2751,393,1107,8856,30996,61992,77490,61992,30996,8856,1107
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 bin $0,$2
-seq $1,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
-mul $0,$1
+mov $3,1
+mov $5,1
+lpb $1
+  mul $3,$1
+  add $4,1
+  sub $1,1
+  mul $3,$1
+  div $3,$4
+  div $3,$4
+  add $5,$3
+  sub $1,1
+lpe
+mul $0,$5

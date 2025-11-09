@@ -1,52 +1,39 @@
 ; A032093: Number of reversible strings with n-1 beads of 2 colors. 6 beads are black. Strings are not palindromic.
 ; Submitted by loader3229
 ; 3,12,40,100,226,452,848,1484,2485,3976,6160,9240,13524,19320,27072,37224,50391,67188,88440,114972,147862,188188,237328,296660,367913,452816,553504,672112,811240,973488,1161984,1379856
+; Formula: a(n) = floor((floor((n-8)/2)*(floor((n-8)/2)*(floor((n-8)/2)*(floor((n-8)/2)*(4*floor((n-8)/2)+50)+245)+580)+651)+270)/30)*((n-8)%2)+floor((floor((n-8)/2)*(floor((n-8)/2)*(floor((n-8)/2)*(floor((n-8)/2)*(floor((n-8)/2)*(4*floor((n-8)/2)+54)+295)+825)+1231)+921)+270)/90)
 
 #offset 8
 
-mov $1,3
-mov $2,9
 sub $0,8
-lpb $0
-  mov $4,4
-  clr $5,3
-  add $5,45
-  mul $5,$2
-  mov $8,4
-  mul $8,$3
-  add $8,30
-  mul $8,$3
-  add $8,71
-  mul $8,$3
-  add $8,45
-  mov $9,4
-  mul $9,$3
-  add $9,30
-  mul $9,$3
-  add $9,71
-  mul $9,$3
-  add $9,45
-  sub $0,2
-  mul $4,$3
-  add $4,54
-  mul $4,$3
-  add $4,257
-  mul $4,$3
-  add $4,465
-  add $6,12
-  mul $6,$3
-  add $6,138
-  mul $6,$3
-  add $6,495
-  mul $6,$1
-  add $7,135
-  mul $1,$4
-  add $1,$5
-  div $1,$8
-  mul $2,$7
-  add $2,$6
-  div $2,$9
-  add $3,1
-lpe
-mul $0,$2
-add $0,$1
+mov $2,$0
+mod $2,2
+div $0,2
+mov $1,$0
+mov $3,$0
+mul $0,4
+add $0,54
+mul $0,$1
+add $0,295
+mul $0,$1
+add $0,825
+mul $0,$1
+add $0,1231
+mul $0,$1
+add $0,921
+mul $0,$1
+add $0,270
+div $0,90
+mul $3,4
+add $3,50
+mul $3,$1
+add $3,245
+mul $3,$1
+add $3,580
+mul $3,$1
+add $3,651
+mul $3,$1
+add $3,270
+div $3,30
+mul $2,$3
+add $0,$2

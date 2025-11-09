@@ -1,9 +1,8 @@
 ; A132733: Triangle T(n, k) = 4*binomial(n, k) - 5 with T(n, 0) = T(n, n) = 1, read by rows.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,1,1,3,1,1,7,7,1,1,11,19,11,1,1,15,35,35,15,1,1,19,55,75,55,19,1,1,23,79,135,135,79,23,1,1,27,107,219,275,219,107,27,1,1,31,139,331,499,499,331,139,31,1,1,35,175,475,835,1003,835,475,175,35,1,1,39,215,655,1315,1843,1843,1315,655,215,39,1,1,43
-; Formula: a(n) = 2*max(2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)-3,0)+1
+; Formula: a(n) = 2*max(2*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)-3,0)+1
 
-add $0,1
 mov $1,$0
 mul $1,8
 nrt $1,2
@@ -13,7 +12,6 @@ mov $2,$1
 add $2,1
 bin $2,2
 sub $0,$2
-sub $0,1
 bin $1,$0
 mul $1,2
 mov $0,$1

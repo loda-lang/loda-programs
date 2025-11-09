@@ -1,7 +1,7 @@
 ; A130822: Two 1's, one 2, four 3's, three 4's ...
 ; Submitted by loader3229
 ; 1,1,2,3,3,3,3,4,4,4,5,5,5,5,5,5,6,6,6,6,6,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12
-; Formula: a(n) = truncate((sqrtint(16*truncate(truncate((sqrtint(8*n)-1)/2)/2)+8*n-8*truncate((sqrtint(8*n)-1)/2))+1)/2)
+; Formula: a(n) = floor((sqrtint(16*truncate(truncate((sqrtint(8*n)-1)/2)/2)+8*n-8*truncate((sqrtint(8*n)-1)/2))+1)/2)
 
 #offset 1
 

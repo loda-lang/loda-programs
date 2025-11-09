@@ -1,21 +1,25 @@
 ; A175567: (n!)^2 modulo n(n+1)/2.
-; Submitted by BrandyNOW
+; Submitted by DukeBox
 ; 0,1,0,6,0,15,0,0,0,45,0,66,0,0,0,120,0,153,0,0,0,231,0,0,0,0,0,378,0,435,0,0,0,0,0,630,0,0,0,780,0,861,0,0,0,1035,0,0,0,0,0,1326,0,0,0,0,0,1653,0,1770,0,0,0,0,0,2145,0,0,0,2415,0,2556,0,0,0,0,0,3003,0,0
-; Formula: a(n) = truncate((gcd(c(n),-truncate(b(n)/e(n))*e(n)+b(n))*(d(n)+n))/2), b(n) = -n*b(n-1), b(4) = 24, b(3) = -6, b(2) = 2, b(1) = -1, b(0) = 1, c(n) = c(n-1), c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = d(n-1), d(4) = -1, d(3) = -1, d(2) = -1, d(1) = -1, d(0) = -1, e(n) = -n+e(n-1), e(4) = -10, e(3) = -6, e(2) = -3, e(1) = -1, e(0) = 0
 
 #offset 1
 
-mov $1,1
-mov $4,-1
-lpb $0
-  sub $0,1
+mov $2,$0
+lpb $2
   sub $2,1
-  mul $1,$2
-  add $5,$2
+  mov $3,$1
+  add $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $3,1
+  mov $4,11
+  mul $4,$3
+  add $4,2
+  mov $6,1
+  add $6,$1
+  bin $6,$4
+  mul $6,2
+  add $1,1
+  mov $5,$6
 lpe
-sub $4,$2
-mod $1,$5
-gcd $3,$1
-mul $3,$4
-mov $0,$3
+mov $0,$5
 div $0,2

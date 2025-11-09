@@ -1,13 +1,21 @@
 ; A117627: Let f(n) = minimum of average number of comparisons needed for any sorting method for n elements and let g(n) = n!*f(n). Sequence gives a lower bound on g(n).
 ; Submitted by [SG]KidDoesCrunch
 ; 0,2,16,112,832,6896,62368,619904,6733312,79268096,1010644736,13833177088,203128772608,3175336112128,52723300200448,927263962759168,17221421451378688,336720980854571008,6911300635636400128,148661140496700932096,3349306149209694273536,78623460051492733976576,1926974340292301062930432,49047394720777765413453824,1299110040569299741844701184,35677261481751817065110437888,1014635557161177370874574012416,29867033466502614839274720198656,909402042547103168060562438356992
-; Formula: a(n) = A249769(2*n-1)*(logint(A249769(2*n-1),2)+2)-truncate(2^(logint(A249769(2*n-1),2)+1))
+; Formula: a(n) = (logint(c(max(2*n-2,0))+min(2*n-2,(2*n-2)%2),2)+2)*(c(max(2*n-2,0))+min(2*n-2,(2*n-2)%2))-2^(logint(c(max(2*n-2,0))+min(2*n-2,(2*n-2)%2),2)+1), b(n) = b(n-2)+1, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = c(n-2)*(b(n-2)+2), c(3) = 2, c(2) = 2, c(1) = 1, c(0) = 1
 
 #offset 1
 
+mov $5,1
 mul $0,2
-sub $0,1
-seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
+sub $0,2
+lpb $0
+  sub $0,2
+  mov $4,$3
+  add $4,2
+  mul $5,$4
+  add $3,1
+lpe
+add $0,$5
 mov $1,$0
 log $1,2
 add $1,1

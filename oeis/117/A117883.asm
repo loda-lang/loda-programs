@@ -1,44 +1,50 @@
 ; A117883: Alternate numbers on a dartboard, read clockwise.
 ; Submitted by Science United
 ; 1,4,6,15,17,19,16,11,9,5
+; Formula: a(n) = (((2*n-1)%20)==1)+19*(((2*n-1)%20)==11)+17*(((2*n-1)%20)==9)+16*(((2*n-1)%20)==13)+15*(((2*n-1)%20)==7)+11*(((2*n-1)%20)==15)+9*(((2*n-1)%20)==17)+6*(((2*n-1)%20)==5)+5*(((2*n-1)%20)==19)+4*(((2*n-1)%20)==3)
 
 #offset 1
 
 mul $0,2
-mov $4,1
-mov $6,4
-mov $8,6
-mov $10,15
-mov $12,17
-mov $14,19
-mov $16,16
-mov $18,11
-mov $20,9
-mov $22,5
+sub $0,1
+mod $0,20
 mov $1,$0
-sub $1,1
-lpb $1
-  sub $1,1
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
-  mov $21,$22
-  mov $22,$2
-lpe
-mov $0,$3
+equ $1,1
+mov $2,$1
+mov $1,$0
+equ $1,3
+mul $1,4
+add $2,$1
+mov $1,$0
+equ $1,5
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,15
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,17
+add $2,$1
+mov $1,$0
+equ $1,11
+mul $1,19
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,16
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,11
+add $2,$1
+mov $1,$0
+equ $1,17
+mul $1,9
+add $2,$1
+mov $1,$0
+equ $1,19
+mul $1,5
+add $2,$1
+mov $0,$2

@@ -1,16 +1,25 @@
 ; A212252: Number of (w,x,y,z) with all terms in {1,...,n} and 3w=x+y+z+n+2.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,0,0,3,11,24,45,76,117,171,240,324,426,548,690,855,1045,1260,1503,1776,2079,2415,2786,3192,3636,4120,4644,5211,5823,6480,7185,7940,8745,9603,10516,11484,12510,13596,14742,15951,17225,18564,19971
-; Formula: a(n) = truncate(b(n+1)/2), b(n) = (n-3)*(5*n-14)+b(n-3), b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = truncate(((5*floor(n/3)*(n%3)+floor(n/3)*(15*floor(n/3)-4))*(n%3)+floor(n/3)*(floor(n/3)*(15*floor(n/3)-6)-3))/2)
 
-add $0,1
-lpb $0
-  sub $0,3
-  mov $1,$0
-  mul $1,5
-  add $1,1
-  mul $1,$0
-  add $2,$1
-lpe
-mov $0,$2
+mov $2,$0
+mod $2,3
+div $0,3
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,15
+sub $0,6
+mul $0,$1
+sub $0,3
+mul $3,15
+sub $3,4
+mul $4,5
+mul $4,$2
+mul $3,$1
+add $3,$4
+mul $2,$3
+mul $0,$1
+add $0,$2
 div $0,2

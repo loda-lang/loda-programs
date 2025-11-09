@@ -1,34 +1,30 @@
 ; A019694: Decimal expansion of 2*Pi/5.
-; Submitted by PDW
+; Submitted by Goldislops
 ; 1,2,5,6,6,3,7,0,6,1,4,3,5,9,1,7,2,9,5,3,8,5,0,5,7,3,5,3,3,1,1,8,0,1,1,5,3,6,7,8,8,6,7,7,5,9,7,5,0,0,4,2,3,2,8,3,8,9,9,7,7,8,3,6,9,2,3,1,2,6,5,6,2,5,1,4,4,8,3,5
 
 #offset 1
 
 sub $0,1
-mov $2,3
-mov $3,$0
-mul $3,5
-lpb $3
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  equ $4,0
-  mov $5,$0
-  add $5,$4
-  div $1,$5
-  div $2,$5
-  sub $3,1
+mov $1,5
+add $1,$0
+mov $6,1
+mov $2,$1
+mul $2,7
+lpb $2
+  max $2,1
+  max $3,$5
+  div $3,$2
+  add $5,$6
+  sub $2,1
+  mul $6,2
+  add $6,$3
 lpe
-mul $1,2
-div $1,5
-mov $6,10
-pow $6,$0
-div $2,2
-div $2,$6
-div $1,$2
-add $1,$6
-mov $0,$1
+sub $1,1
+mov $4,10
+pow $4,$1
+div $5,$4
+div $6,2500
+div $6,$5
+div $6,5
+mov $0,$6
 mod $0,10

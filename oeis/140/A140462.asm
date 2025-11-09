@@ -1,25 +1,24 @@
 ; A140462: Turan's upper bound on the number of triangles of a simplicial complex of dimension two for which every minimal non-face has three vertices.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,0,0,1,3,7,14,23,36,54,75,102,136,174,220,275,335,405,486,573,672,784,903,1036,1184,1340,1512,1701,1899,2115,2350,2595,2860,3146,3443,3762,4104,4458,4836,5239,5655,6097,6566,7049,7560,8100,8655,9240,9856,10488,11152,11849,12563,13311,14094,14895,15732,16606,17499,18430,19400,20390,21420,22491,23583,24717,25894,27093,28336,29624,30935,32292,33696,35124,36600,38125,39675,41275,42926,44603
-; Formula: a(n) = b(2*n), b(n) = b(n-6)+truncate((truncate((n-4)/2)*(2*n+truncate((n-4)/2)-10)+truncate((n-4)/2)+3)/6), b(5) = 0, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = truncate(((2*floor(n/3)*(n%3)+floor(n/3)*(5*floor(n/3)-3))*(n%3)+(5*floor(n/3)-3)*floor(n/3)^2)/2)
 
-mul $0,2
-lpb $0
-  mov $2,$0
-  mov $4,$0
-  sub $4,5
-  sub $0,6
-  sub $2,4
-  div $2,2
-  mov $3,$4
-  add $3,$4
-  add $3,$2
-  mul $3,$2
-  mov $4,7776
-  add $4,$2
-  add $3,$4
-  sub $3,7773
-  div $3,6
-  add $1,$3
-lpe
-mov $0,$1
+mov $2,$0
+mod $2,3
+div $0,3
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mul $0,5
+sub $0,3
+mul $0,$1
+mul $0,$1
+mul $3,5
+sub $3,3
+mul $4,2
+mul $4,$2
+mul $3,$1
+add $3,$4
+mul $2,$3
+add $0,$2
+div $0,2

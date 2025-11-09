@@ -1,19 +1,27 @@
 ; A213392: Number of (w,x,y) with all terms in {0,...,n} and 2*max(w,x,y) >= 3*min(w,x,y).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,7,25,61,115,199,319,469,667,919,1213,1573,2005,2491,3061,3721,4447,5275,6211,7225,8359,9619,10969,12457,14089,15823,17713,19765,21931,24271,26791,29437,32275,35311,38485,41869,45469,49219,53197
+; Formula: a(n) = floor((((18*floor(n/3)+12)*(n%3)+floor(n/3)*(48*floor(n/3)+30))*(n%3)+floor(n/3)*(floor(n/3)*(48*floor(n/3)+54)+18)+2)/2)
 
+mov $2,$0
+mod $2,3
+div $0,3
 mov $1,$0
-mul $1,2
-add $1,1
-mul $1,2
-lpb $1
-  mov $3,$1
-  bin $3,2
-  add $3,2
-  div $3,6
-  trn $1,6
-  add $2,$3
-lpe
-mov $0,$2
-mul $0,3
-add $0,1
+mov $3,$0
+mov $4,$0
+mul $0,48
+add $0,54
+mul $0,$1
+add $0,18
+mul $0,$1
+add $0,2
+mul $3,48
+add $3,30
+mul $4,18
+add $4,12
+mul $4,$2
+mul $3,$1
+add $3,$4
+mul $2,$3
+add $0,$2
+div $0,2

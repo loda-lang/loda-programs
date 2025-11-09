@@ -1,25 +1,25 @@
 ; A010398: Squares mod 37.
-; Submitted by SzaMoT
+; Submitted by Lord_Possum
 ; 0,1,3,4,7,9,10,11,12,16,21,25,26,27,28,30,33,34,36
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-pow $2,2
+add $0,1
+pow $2,5
 lpb $2
   mov $3,$1
+  mul $3,2
+  mov $4,$3
+  leq $4,1
+  pow $3,90
   add $3,1
-  seq $3,36167 ; Log base 2 (n) mod 37.
-  gcd $3,2
+  mod $3,37
+  sub $3,$4
+  equ $3,0
   sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $5,1
-  mul $2,$4
-  sub $2,1
+  add $1,1
+  sub $2,$0
 lpe
-mov $0,$5
+mov $0,$1

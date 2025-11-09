@@ -1,23 +1,14 @@
 ; A074201: Let b(1) = 1, b(2) = 2, b(n+2) = (b(n+1)+1)/(b(n)+1); then a(n) = 1 if b(n) >= 1 and a(n) = 0 otherwise (also a(n) = floor(b(n)) for n > 2).
-; Submitted by Jamie Morken(w4)
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1
-; Formula: a(n) = (max(c(n-1)-1,0)+1)%2, b(n) = -2*b(n-2)+b(n-1)-14, b(3) = -27, b(2) = -13, b(1) = 0, b(0) = 0, c(n) = -2*b(n-1)-14, c(3) = 12, c(2) = -14, c(1) = -14, c(0) = 0
+; Formula: a(n) = (sign(46*n-56)*((abs(46*n-56)-1)%119+1)-2*truncate((sign(46*n-56)*((abs(46*n-56)-1)%119+1)+1)/2)+3)%2
 
 #offset 1
 
-sub $0,1
-lpb $0
-  sub $0,1
-  mov $2,7
-  add $2,$1
-  mul $2,-2
-  add $4,$2
-  add $1,$3
-  mov $3,1
-  add $3,$4
-  sub $4,$3
-lpe
-trn $2,1
-mov $0,$2
+mul $0,46
+sub $0,56
+dgr $0,120
 add $0,1
+mod $0,2
+add $0,2
 mod $0,2
