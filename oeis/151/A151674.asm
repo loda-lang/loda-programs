@@ -1,15 +1,14 @@
 ; A151674: G.f.: Product_{k >= 0} (1 + 4*x^(5^k)).
+; Submitted by DukeBox
 ; 1,4,0,0,0,4,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,16,0,0,0,16,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (binomial(n-32,n)*8^n-10*truncate((binomial(n-32,n)*8^n)/10)-10*truncate((binomial(n-32,n)*8^n-10*truncate((binomial(n-32,n)*8^n)/10)+10)/10)+10)^2
+; Formula: a(n) = (binomial(n-32,n)*(-2)^n-10*truncate((binomial(n-32,n)*(-2)^n)/10))^2
 
 mov $2,$0
 sub $2,32
 bin $2,$0
-mov $1,8
+mov $1,-2
 pow $1,$0
 mul $1,$2
 mov $0,$1
-mod $0,10
-add $0,10
 mod $0,10
 pow $0,2

@@ -1,16 +1,30 @@
 ; A009641: a(n) = Product_{i=0..6} floor((n+i)/7).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,0,0,0,0,0,0,1,2,4,8,16,32,64,128,192,288,432,648,972,1458,2187,2916,3888,5184,6912,9216,12288,16384,20480,25600,32000,40000,50000,62500,78125,93750,112500,135000,162000,194400,233280,279936,326592,381024
+; Formula: a(n) = floor(n/7)*floor((n+1)/7)*floor((n+2)/7)*floor((n+3)/7)*floor((n+4)/7)*floor((n+5)/7)*floor((n+6)/7)
 
-mov $2,1
-mov $3,8
-lpb $3
-  sub $3,1
-  max $3,1
-  sub $4,$1
-  mov $1,$4
-  add $1,$0
-  div $1,$3
-  mul $2,$1
-lpe
-mov $0,$2
+mov $1,$0
+add $1,1
+div $1,7
+mov $2,$0
+add $2,2
+div $2,7
+mov $3,$0
+add $3,3
+div $3,7
+mov $4,$0
+add $4,4
+div $4,7
+mov $5,$0
+add $5,5
+div $5,7
+mov $6,$0
+add $6,6
+div $6,7
+div $0,7
+mul $0,$1
+mul $0,$2
+mul $0,$3
+mul $0,$4
+mul $0,$5
+mul $0,$6

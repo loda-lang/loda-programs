@@ -1,5 +1,5 @@
 ; A352229: Numbers that can be expressed as the sum of two primes in exactly 7 ways.
-; Submitted by Owdjim
+; Submitted by DukeBox
 ; 78,96,112,130,140,176,178,194,206,208,218,224,226,232,272,278,326,398
 
 #offset 1
@@ -21,7 +21,7 @@ lpb $2
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,3
+  sub $2,4
 lpe
 mov $0,$1
 mul $0,2
