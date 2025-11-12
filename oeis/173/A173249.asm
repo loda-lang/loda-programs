@@ -1,17 +1,13 @@
 ; A173249: Partial sums of A000272.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by vaughan
 ; 1,2,3,6,22,147,1443,18250,280394,5063363,105063363,2463011054,64380375278,1856540769315,58550453144611,2004745521503986,74062339559431922,2936485391069247715,124376016487663499491
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+truncate((n-1)^(n-3)), b(2) = 2, b(1) = 1, b(0) = 1
 
-mov $1,-1
-mov $3,1
-add $0,1
 lpb $0
   sub $0,1
-  add $3,$2
-  mov $2,2
-  add $2,$1
-  pow $2,$1
-  add $1,1
+  add $2,1
+  pow $2,$0
+  add $1,$2
+  mov $2,$0
 lpe
-mov $0,$3
+mov $0,$1
+add $0,1

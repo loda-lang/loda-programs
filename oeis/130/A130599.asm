@@ -1,14 +1,12 @@
 ; A130599: Transformation of sequence 3^k by sandwiching it between 1's.
-; Submitted by davidBAM
+; Submitted by loader3229
 ; 1,1,1,3,1,9,1,27,1,81,1,243,1,729,1,2187,1,6561,1,19683,1,59049,1,177147,1,531441,1,1594323,1,4782969,1,14348907,1,43046721,1,129140163,1,387420489,1,1162261467,1,3486784401,1,10460353203,1,31381059609,1,94143178827
-; Formula: a(n) = 2*floor((3^floor(n/2)*(n%2))/2)+1
+; Formula: a(n) = min(n,n%2)*b(n)+1, b(n) = 3*b(n-2)+2, b(1) = 0, b(0) = 0
 
-mov $1,$0
-div $1,2
-mov $2,3
-pow $2,$1
-mod $0,2
-mul $0,$2
-div $0,2
-mul $0,2
+lpb $0
+  sub $0,2
+  mul $1,3
+  add $1,2
+lpe
+mul $0,$1
 add $0,1

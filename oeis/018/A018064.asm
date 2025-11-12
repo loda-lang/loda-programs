@@ -1,18 +1,12 @@
 ; A018064: Powers of fourth root of 7 rounded to nearest integer.
-; Submitted by [AF>Libristes] alain65
+; Submitted by mkferrysr
 ; 1,2,3,4,7,11,19,30,49,80,130,211,343,558,907,1476,2401,3905,6352,10333,16807,27338,44467,72329,117649,191365,311270,506304,823543,1339556,2178890,3544131,5764801,9376890,15252230,24808920,40353607,65638231
+; Formula: a(n) = floor((sqrtnint(16*7^n,4)+1)/2)
 
-mov $3,7
-pow $3,$0
-mov $0,$3
-nrt $0,2
-div $3,$0
-mov $1,$3
-mov $0,$3
-lpb $0
-  div $2,$0
-  add $0,$2
-  add $0,1
-  div $0,2
-  mov $2,$3
-lpe
+mov $1,7
+pow $1,$0
+mul $1,16
+nrt $1,4
+add $1,1
+div $1,2
+mov $0,$1

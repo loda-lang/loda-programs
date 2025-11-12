@@ -1,20 +1,11 @@
 ; A133375: Catalan numbers with digits sorted in increasing order and zeros suppressed.
-; Submitted by Simon Strandgaard
+; Submitted by DukeBox
 ; 1,1,2,5,14,24,123,249,134,2468,16679,56788,1228,2479,244467,4456899,3355677,12446799,3467778,112366779,12244566,222446667,1234456689,1333455669,112234447899
 
 mov $1,$0
-mov $3,0
-mov $4,0
-mov $5,0
-mov $6,0
-mov $7,0
-mov $8,0
-mov $9,0
-mov $10,0
 mul $0,2
 bin $0,$1
 add $1,1
-mov $2,0
 div $0,$1
 lpb $0
   mov $12,$0

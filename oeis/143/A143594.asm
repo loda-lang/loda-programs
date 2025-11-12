@@ -1,11 +1,9 @@
 ; A143594: Triangle read by rows, A051731 * (an infinite lower triangular matrix with 1's in the first column and the rest 2's).
-; Submitted by [Team CHINA-hwt]Gimi Huang
+; Submitted by marianob [marche]
 ; 1,2,2,2,2,2,3,4,2,2,2,2,2,2,2,4,6,4,2,2,2,2,2,2,2,2,2,2,4,6,4,4,2,2,2,2,3,4,4,2,2,2,2,2,2,4,6,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6,10,8,6,4,4,2,2,2,2,2,2,2,2
 
 #offset 1
 
-mov $5,0
-mov $6,0
 mov $4,$0
 mul $4,8
 nrt $4,2
@@ -30,7 +28,6 @@ lpb $1
   div $3,$4
   add $5,$3
 lpe
-mov $1,$5
 mov $2,$0
 mul $2,8
 nrt $2,2

@@ -1,7 +1,7 @@
 ; A119913: Number of directed simple cycles in the complete graph K_n.
-; Submitted by BrandyNOW
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,2,14,74,394,2344,16036,125628,1112028,10976118,119481218,1421542550,18348340022,255323504812,3809950976872,60683990530072,1027542662934744,18430998766219146,349096664728623126,6962409983976703106,145841989688186383106
-; Formula: a(n) = 2*truncate(c(n-1)/2), b(n) = n*b(n-1)+n, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = n*b(n-1)+c(n-1), c(2) = 2, c(1) = 0, c(0) = 0
+; Formula: a(n) = c(n-1), b(n) = n*b(n-1)+n, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = n*b(n-1)+c(n-1), c(2) = 2, c(1) = 0, c(0) = 0
 
 #offset 1
 
@@ -14,5 +14,3 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$3
-div $0,2
-mul $0,2

@@ -1,8 +1,7 @@
 ; A130658: Period 4: repeat [1, 1, 2, 2].
-; Submitted by Hans van der Giessen
+; Submitted by Cruncher Pete
 ; 1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2,1,1,2,2
-; Formula: a(n) = floor(n/2)%2+1
+; Formula: a(n) = max(bitand(n,2),1)
 
-div $0,2
-mod $0,2
-add $0,1
+ban $0,2
+max $0,1

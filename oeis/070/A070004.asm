@@ -1,18 +1,17 @@
 ; A070004: Numbers of the form 5*2^n or 5*3*2^n; a(n) = 5*A029744(n).
-; Submitted by Penguin
+; Submitted by Time_Traveler
 ; 5,10,15,20,30,40,60,80,120,160,240,320,480,640,960,1280,1920,2560,3840,5120,7680,10240,15360,20480,30720,40960,61440,81920,122880,163840,245760,327680,491520,655360,983040,1310720,1966080,2621440
-; Formula: a(n) = 5*floor((((n-1)%2+3)*2^floor((n-1)/2))/2)
+; Formula: a(n) = 5*truncate(2^truncate((n-2)/2))*(-2*truncate((n-2)/2)+n)
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mod $2,2
-add $2,3
+sub $0,2
+mov $1,$0
+mod $1,2
+add $1,2
 div $0,2
-mov $1,2
-pow $1,$0
-mul $1,$2
-div $1,2
-mov $0,$1
+mov $2,2
+pow $2,$0
+mul $2,$1
+mov $0,$2
 mul $0,5

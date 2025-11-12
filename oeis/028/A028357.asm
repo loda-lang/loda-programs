@@ -1,19 +1,17 @@
 ; A028357: Partial sums of A028356.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,3,6,10,13,15,16,18,21,25,28,30,31,33,36,40,43,45,46,48,51,55,58,60,61,63,66,70,73,75,76,78,81,85,88,90,91,93,96,100,103,105,106,108,111,115,118,120,121,123,126
-; Formula: a(n) = 2*floor(n/3)+2*n-4*floor(n/6)+floor(n/2)+1
 
 mov $2,$0
-div $2,2
-mov $1,$2
-mov $2,$0
-div $2,3
-mul $2,2
-add $1,$2
-mov $2,$0
-div $2,6
-mul $2,-4
-add $1,$2
-mul $0,2
-add $0,$1
-add $0,1
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,0
+  sub $0,$2
+  gcd $0,6
+  mod $0,6
+  mov $3,$0
+  add $3,1
+  add $1,$3
+lpe
+mov $0,$1

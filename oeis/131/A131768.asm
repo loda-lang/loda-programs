@@ -1,17 +1,14 @@
 ; A131768: 2*(A007318 * A097807) - A000012.
-; Submitted by Science United
+; Submitted by Ken_g6
 ; 1,3,1,5,5,1,7,11,7,1,9,19,19,9,1,11,29,39,29,11,1,13,41,69,69,41,13,1,15,55,111,139,111,55,15,1,17,71,167,251,251,167,71,17,1,19,89,239,419,503,419,239,89,19,1
-; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n+8)+1)/2),-binomial(truncate((sqrtint(8*n+8)+1)/2),2)+n+1)-1
 
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
 add $0,1
-mov $2,$0
-mul $0,8
-nrt $0,2
-add $0,1
-div $0,2
-mov $1,$0
-bin $1,2
-sub $2,$1
-bin $0,$2
+add $1,1
+bin $1,$0
+mov $0,$1
 mul $0,2
 sub $0,1

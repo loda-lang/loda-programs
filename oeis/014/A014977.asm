@@ -1,7 +1,93 @@
 ; A014977: Expansion of Molien series for automorphism group (2.Weyl(E6)) of E6 lattice.
 ; Submitted by Science United
 ; 1,1,1,2,3,4,6,8,10,14,18,22,29,36,43,54,66,78,95,113,132,157,184,212,248,287,327,377,431,487,555,628,704,794,891,992,1110,1236,1367,1518,1680,1848,2039,2243,2455,2694
-; Formula: a(n) = A008584(2*n)
 
+mov $1,1
+mov $3,1
+mov $5,1
+mov $6,1
+mov $7,2
+mov $8,1
+mov $9,3
+mov $10,2
+mov $11,4
+mov $12,3
+mov $13,6
+mov $14,4
+mov $15,8
+mov $16,6
+mov $17,10
+mov $18,9
+mov $19,14
+mov $20,11
+mov $21,18
+mov $22,15
+mov $23,22
+mov $24,20
+mov $25,29
+mov $26,25
+mov $27,36
+mov $28,32
+mov $29,43
+mov $30,41
+mov $31,54
+mov $32,49
+mov $33,66
+mov $34,61
+mov $35,78
+mov $36,75
+mov $37,95
+mov $38,89
+mov $39,113
+mov $40,107
+mov $41,132
+mov $42,129
 mul $0,2
-seq $0,8584 ; Molien series for Weyl group E_6.
+lpb $0
+  mul $1,-1
+  rol $1,42
+  add $42,$2
+  add $42,$5
+  add $42,$6
+  sub $42,$7
+  add $42,$9
+  sub $42,$10
+  sub $42,$11
+  sub $42,$11
+  add $42,$12
+  mov $43,$14
+  mul $43,-3
+  sub $0,1
+  add $42,$43
+  add $42,$16
+  add $42,$16
+  sub $42,$17
+  sub $42,$18
+  mov $43,$19
+  mul $43,3
+  add $42,$43
+  add $42,$20
+  sub $42,$21
+  sub $42,$21
+  add $42,$22
+  mov $43,$23
+  mul $43,3
+  add $42,$43
+  sub $42,$24
+  sub $42,$25
+  add $42,$26
+  add $42,$26
+  mov $43,$28
+  mul $43,-3
+  add $42,$43
+  add $42,$30
+  sub $42,$31
+  sub $42,$31
+  sub $42,$32
+  add $42,$33
+  sub $42,$35
+  add $42,$36
+  add $42,$37
+  add $42,$40
+lpe
+mov $0,$1

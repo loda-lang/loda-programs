@@ -12,11 +12,10 @@ mov $7,89
 mov $8,145
 mov $9,42
 mov $10,20
-sub $0,1
 lpb $0
   mov $2,0
   rol $2,9
   add $10,$2
   sub $0,1
 lpe
-mov $0,$3
+mov $0,$2

@@ -1,10 +1,9 @@
 ; A179409: The number of alive cells in Conway's Game of Life on the 8x8 toroidal grid, in a cyclic sequence of 48 patterns containing among other patterns, a "stairstep hexomino" and its mirror image, illustrated below.
-; Submitted by loader3229
+; Submitted by Science United
 ; 6,6,6,8,10,12,16,18,20,26,26,28,30,22,26,16,20,18,18,20,16,20,10,8,6,6,6,8,10,12,16,18,20,26,26,28,30,22,26,16,20,18,18,20,16,20,10,8,6,6,6,8,10,12,16,18,20,26,26,28,30,22,26,16,20,18,18,20,16,20,10,8
 
 mov $1,6
-mov $2,6
-mov $3,6
+fil $1,3
 mov $4,8
 mov $5,10
 mov $6,12
@@ -28,30 +27,6 @@ mov $23,10
 mov $24,8
 lpb $0
   sub $0,1
-  mov $25,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
-  mov $21,$22
-  mov $22,$23
-  mov $23,$24
-  mov $24,$25
+  rol $1,24
 lpe
 mov $0,$1

@@ -1,22 +1,18 @@
 ; A156086: Sum of the squares of the first n Fibonacci numbers with index divisible by 4.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,9,450,21186,995355,46760580,2196752004,103200583725,4848230683206,227763641527110,10700042921091135,502674253649756424,23614989878617461000,1109401850041370910801,52118271962065815346890,2448449380367051950393290
+; Formula: a(n) = b(4*n), b(n) = 8*b(n-2)-8*b(n-4)+b(n-6)+1, b(7) = 450, b(6) = 65, b(5) = 65, b(4) = 9, b(3) = 9, b(2) = 1, b(1) = 1, b(0) = 0
 
-mov $2,9
-mov $3,450
-mov $4,21186
+mul $0,4
 lpb $0
-  mul $1,-1
-  rol $1,4
-  mov $5,$1
-  mul $5,49
-  add $4,$5
-  mov $5,$2
-  mul $5,-96
-  add $4,$5
-  mov $5,$3
-  mul $5,49
+  rol $1,6
+  mov $7,$2
+  mul $7,-8
+  add $6,$7
+  mov $7,$4
+  mul $7,8
+  add $7,1
   sub $0,1
-  add $4,$5
+  add $6,$7
 lpe
-mov $0,$1
+mov $0,$6

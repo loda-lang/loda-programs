@@ -1,20 +1,20 @@
 ; A175633: Numbers x such that x^2 - 28*y^2 = 1 for some integer y.
-; Submitted by Sphynx
+; Submitted by Science United
 ; 1,127,32257,8193151,2081028097,528572943487,134255446617601,34100354867927167,8661355881006882817,2199950293420880308351,558778713173022591438337,141927593195654317345029247
-; Formula: a(n) = 126*c(n-1)^2+1, b(n) = 14*c(n-1)+b(n-1), b(1) = 1, b(0) = 1, c(n) = 15*c(n-1)+b(n-1), c(1) = 1, c(0) = 0
+; Formula: a(n) = floor(c(max(2*n-2,0))/2), b(n) = 15*b(n-1)+c(n-1), b(1) = 17, b(0) = 1, c(n) = 14*b(n-1)+c(n-1), c(1) = 16, c(0) = 2
 
 #offset 1
 
-mov $2,1
-sub $0,1
+mov $1,1
+mov $3,2
+mul $0,2
+sub $0,2
 lpb $0
   sub $0,1
-  mov $1,$3
-  mul $1,14
-  add $2,$1
+  mov $2,$1
+  mul $2,14
   add $3,$2
+  add $1,$3
 lpe
-pow $3,2
 mov $0,$3
-mul $0,126
-add $0,1
+div $0,2

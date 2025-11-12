@@ -1,26 +1,25 @@
 ; A071554: Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 2<=i<=n.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 4,16,106,1156,15016,255256,4849846,111546436,3234846616,100280245066,3710369067406,152125131763606,6541380665835016,307444891294245706,16294579238595022366,961380175077106319536,58644190679703485491636
 
 #offset 2
 
-mov $1,3
-mov $2,1
-sub $0,2
+mov $1,1
+add $0,1
 lpb $0
-  add $3,1
+  add $3,9
   lpb $3
-    add $2,2
+    add $2,1
     mov $4,$1
     gcd $4,$2
     neq $4,1
     sub $3,$4
   lpe
-  add $2,2
+  add $2,1
   sub $0,1
   mul $1,$2
 lpe
 mov $0,$1
-div $0,3
-mul $0,3
-add $0,1
+sub $0,6
+div $0,2
+add $0,4

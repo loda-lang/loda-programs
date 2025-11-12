@@ -1,11 +1,10 @@
 ; A165024: Length of cycle mentioned in A165023.
-; Submitted by axels
+; Submitted by Cruncher Pete
 ; 2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = min(binomial(n-1,2),1)+2
+; Formula: a(n) = min(floor(n/3),1)+2
 
 #offset 1
 
-sub $0,1
-bin $0,2
+div $0,3
 min $0,1
 add $0,2

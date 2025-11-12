@@ -1,4 +1,4 @@
-; A044943: Runs of odd length in the base 3 representation of n.
+; A044943: Number of runs of odd length in the base 3 representation of n.
 ; Submitted by Sphynx
 ; 1,1,2,0,2,2,2,0,1,3,3,1,1,1,3,3,1,1,3,3,3,1,3,1,1,1,2,2,2,4,2,4,4,4,2,0,2,2,2,0,2,2,2,0,2,4,4,4,2,4,2,2,2,2,2,2,4,2,4,4,4,2,2,4,4,2,2,2,4,4,2,0,2,2,2,0,2,2,2,0
 

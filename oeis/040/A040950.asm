@@ -1,22 +1,19 @@
 ; A040950: Continued fraction for sqrt(982).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 31,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2,1,30,1,2,62,2
-; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+27*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n+1,2))/3)+gcd(-n+1,2)
+; Formula: a(n) = a(n-6), a(9) = 30, a(8) = 1, a(7) = 2, a(6) = 62, a(5) = 2, a(4) = 1, a(3) = 30, a(2) = 1, a(1) = 2, a(0) = 31
 
-mov $1,2
-trn $1,$0
-add $1,6
-sub $2,$0
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
-add $2,1
-gcd $2,2
-add $2,$0
+mov $2,31
+mov $3,2
+mov $4,1
+mov $5,30
+mov $6,1
+mov $7,2
+mov $8,62
+lpb $0
+  mov $2,0
+  rol $2,7
+  add $8,$2
+  sub $0,1
+lpe
 mov $0,$2
-div $0,3
-mul $0,27
-add $0,$2

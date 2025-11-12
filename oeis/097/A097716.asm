@@ -5,21 +5,18 @@
 mov $1,-1
 pow $1,$0
 mov $2,$0
-mov $6,0
-mov $9,0
-mov $10,0
 mul $0,2
 add $0,1
 mov $5,1
 mov $8,$0
 lpb $0
   sub $0,1
-  div $10,2
-  add $10,$6
-  mul $10,2
+  div $3,2
+  add $3,$6
+  mul $3,2
   mov $6,$5
   pow $6,$8
-  sub $6,$10
+  sub $6,$3
   mov $7,$8
   bin $7,$5
   mul $7,$6
@@ -27,17 +24,10 @@ lpb $0
   mul $9,-1
   add $9,$7
 lpe
-mov $3,$2
-mod $3,2
-mul $3,2
-add $3,1
-gcd $0,$9
 mul $2,3
 div $2,2
 mov $4,2
 pow $4,$2
-mul $3,$4
-mov $2,$3
-gcd $2,$0
-div $0,$2
+gcd $0,$9
+div $0,$4
 mul $0,$1
