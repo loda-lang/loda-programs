@@ -1,16 +1,11 @@
 ; A209518: Triangle by rows, reversal of A104712.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,3,1,4,6,1,5,10,10,1,6,15,20,15,1,7,21,35,35,21,1,8,28,56,70,56,28,1,9,36,84,126,126,84,36,1,10,45,120,210,252,210,120,45,1,11,55,165,330,462,462,330,165,55
-; Formula: a(n) = binomial(floor((sqrtint(8*n+8)+1)/2)+1,-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)
 
-mov $2,$0
-add $0,1
-mul $0,8
-nrt $0,2
-add $0,1
-div $0,2
-mov $1,$0
-bin $1,2
-sub $2,$1
-add $0,1
-bin $0,$2
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,2
+bin $1,$0
+mov $0,$1

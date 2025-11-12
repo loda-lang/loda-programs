@@ -5,24 +5,24 @@
 #offset 1
 
 sub $0,1
-mov $14,$0
-mov $16,$0
-lpb $16
-  clr $0,14
-  sub $16,1
-  mov $0,$14
-  sub $0,$16
-  mov $11,$0
-  mov $13,$0
-  lpb $13
-    sub $13,1
-    mov $0,$11
-    sub $0,$13
+mov $20,$0
+mov $22,$0
+lpb $22
+  clr $0,20
+  sub $22,1
+  mov $0,$20
+  sub $0,$22
+  mov $17,$0
+  mov $19,$0
+  lpb $19
+    sub $19,1
+    mov $0,$17
+    sub $0,$19
     dir $0,3
     add $0,1
     div $0,3
-    add $12,$0
+    add $18,$0
   lpe
-  add $15,$12
+  add $21,$18
 lpe
-mov $0,$15
+mov $0,$21

@@ -23,7 +23,6 @@ lpb $3
   add $6,1
   sub $0,$6
   add $2,1
-  mov $4,$6
   mov $5,$0
   max $5,0
   equ $5,$0

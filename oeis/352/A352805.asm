@@ -1,28 +1,23 @@
 ; A352805: a(n) = A296507(n+1)/6; numbers k such that 36*k^2 - 13 is prime.
-; Submitted by Skivelitis2
+; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
 ; 1,2,3,4,5,6,9,12,14,15,16,17,19,20,23,28,31,33,34,35,36,38,40,46,49,53,55,59,60,62,63,67,69,73,74,76,80,83,84,98,100,102,103,105,106,111,113,115,119,120,121,122,123,127,128,132,134,136,142,144,145,147,148,149,152,154,155,158,159,168,170,171,172,178,179,181,187,189,192,198
 
 #offset 1
 
-sub $0,1
-mov $5,-14
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $3,$6
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,$1
-  sub $0,$3
-  add $1,36
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,$1
-  mov $6,$5
+mov $2,4
+mov $4,12
+mov $3,$0
+pow $3,5
+lpb $3
+  sub $3,1
+  mov $1,$2
+  sub $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,8
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$1
-div $0,36
+mov $0,$4
+div $0,24
+add $0,1

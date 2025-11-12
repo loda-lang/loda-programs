@@ -1,25 +1,130 @@
 ; A387577: Numbers k such that it is not possible to choose a sequence of distinct integer partitions, one of each prime index of k (with multiplicity).
-; Submitted by Science United
+; Submitted by loader3229
 ; 4,8,12,16,20,24,27,28,32,36,40,44,48,52,54,56,60,64,68,72,76,80,81,84,88,92,96,100,104,108,112,116,120,124,128,132,135,136,140,144,148,152,156,160,162,164,168,172,176,180,184,188,189,192,196,200,204,208
 
 #offset 1
 
-mov $2,$0
+mov $2,4
+mov $3,8
+mov $4,12
+mov $5,16
+mov $6,20
+mov $7,24
+mov $8,27
+mov $9,28
+mov $10,32
+mov $11,36
+mov $12,40
+mov $13,44
+mov $14,48
+mov $15,52
+mov $16,54
+mov $17,56
+mov $18,60
+mov $19,64
+mov $20,68
+mov $21,72
+mov $22,76
+mov $23,80
+mov $24,81
+mov $25,84
+mov $26,88
+mov $27,92
+mov $28,96
+mov $29,100
+mov $30,104
+mov $31,108
 sub $0,1
-add $2,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,2
-  seq $3,359550 ; Characteristic function of A048103; From n >= 1, a(n) is multiplicative with a(p^e) = 1 if p > e, otherwise 0. a(0) = 0 by convention.
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+lpb $0
+  mul $2,-1
+  rol $2,30
+  mov $32,$2
+  mul $32,2
+  add $31,$32
+  mov $32,$3
+  mul $32,-2
+  add $31,$32
+  mov $32,$4
+  mul $32,2
+  add $31,$32
+  mov $32,$5
+  mul $32,-2
+  add $31,$32
+  mov $32,$6
+  mul $32,2
+  add $31,$32
+  mov $32,$7
+  mul $32,-2
+  add $31,$32
+  mov $32,$8
+  mul $32,2
+  add $31,$32
+  mov $32,$9
+  mul $32,-2
+  add $31,$32
+  mov $32,$10
+  mul $32,2
+  add $31,$32
+  mov $32,$11
+  mul $32,-2
+  add $31,$32
+  mov $32,$12
+  mul $32,2
+  add $31,$32
+  mov $32,$13
+  mul $32,-2
+  add $31,$32
+  mov $32,$14
+  mul $32,2
+  add $31,$32
+  mov $32,$15
+  mul $32,-2
+  add $31,$32
+  mov $32,$16
+  mul $32,2
+  add $31,$32
+  mov $32,$17
+  mul $32,-2
+  add $31,$32
+  mov $32,$18
+  mul $32,2
+  add $31,$32
+  mov $32,$19
+  mul $32,-2
+  add $31,$32
+  mov $32,$20
+  mul $32,2
+  add $31,$32
+  mov $32,$21
+  mul $32,-2
+  add $31,$32
+  mov $32,$22
+  mul $32,2
+  add $31,$32
+  mov $32,$23
+  mul $32,-2
+  add $31,$32
+  mov $32,$24
+  mul $32,2
+  add $31,$32
+  mov $32,$25
+  mul $32,-2
+  add $31,$32
+  mov $32,$26
+  mul $32,2
+  add $31,$32
+  mov $32,$27
+  mul $32,-2
+  add $31,$32
+  mov $32,$28
+  mul $32,2
+  add $31,$32
+  mov $32,$29
+  mul $32,-2
+  add $31,$32
+  mov $32,$30
+  mul $32,2
+  sub $0,1
+  add $31,$32
 lpe
-mov $0,$1
-add $0,1
+mov $0,$2

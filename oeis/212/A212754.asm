@@ -8,7 +8,6 @@ mod $2,2
 div $0,2
 mov $1,$0
 mov $3,$0
-mov $4,$0
 mul $0,14
 add $0,24
 mul $0,$1
@@ -17,9 +16,9 @@ mul $0,$1
 add $0,2
 mul $3,28
 add $3,57
-mul $3,$4
+mul $3,$1
 add $3,38
-mul $3,$4
+mul $3,$1
 add $3,8
 mul $2,$3
 mul $0,$1

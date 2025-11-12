@@ -1,13 +1,11 @@
 ; A342784: Positions of words in A342753 having 1st digit 1 and last digit 0.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 6,9,15,21,24,30,33,36,45,48,51,54,66,69,72,75,78,81,93,99,102,105,108,111,114,117,123,138,141,147,150,153,156,159,162,165,168,171,177,186,201,207,210,213,219,222,225,228,231,234,237,240,243,246,249,252
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,4
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1

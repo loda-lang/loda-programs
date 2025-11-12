@@ -1,5 +1,5 @@
 ; A390278: All positive numbers except those that are the product of an even number of distinct primes (including 1).
-; Submitted by DukeBox
+; Submitted by Science United
 ; 2,3,4,5,7,8,9,11,12,13,16,17,18,19,20,23,24,25,27,28,29,30,31,32,36,37,40,41,42,43,44,45,47,48,49,50,52,53,54,56,59,60,61,63,64,66,67,68,70,71,72,73,75,76,78,79,80,81,83,84,88,89,90,92,96,97,98,99,100
 
 #offset 1
@@ -40,10 +40,10 @@ lpb $4
   mul $5,$10
   mul $5,$11
   div $5,360
-  mov $16,$7
-  pow $16,3
+  mov $2,$7
+  pow $2,3
   mov $15,2
-  mul $15,$16
+  mul $15,$2
   mov $7,$15
   div $7,6
   div $5,$7
@@ -59,12 +59,4 @@ lpb $4
 lpe
 mov $1,$3
 add $1,1
-mov $2,$0
-mul $0,2
-add $2,$0
-add $0,$2
-pow $0,$0
-lex $0,2
-add $0,1
-mod $0,10
-mul $0,$1
+mov $0,$1

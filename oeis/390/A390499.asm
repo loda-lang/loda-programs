@@ -11,11 +11,10 @@ lpb $0
   mul $4,$2
   pow $4,$1
   div $0,2
+  mov $1,1
   mov $2,$3
   add $2,1
   bin $2,$0
   add $3,2
-  min $0,23
-  mov $1,1
 lpe
 mov $0,$4

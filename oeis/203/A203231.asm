@@ -1,20 +1,19 @@
 ; A203231: (n-1)-st elementary symmetric function of the first n terms of the periodic sequence (3,1,3,1,3,1,3,1,...).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,4,15,24,81,108,351,432,1377,1620,5103,5832,18225,20412,63423,69984,216513,236196,728271,787320,2421009,2598156,7971615,8503056,26040609,27634932,84499119,89282088,272629233,286978140,875283327,918330048
-; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 4*c(n-2)+3*b(n-2), b(3) = 15, b(2) = 15, b(1) = 1, b(0) = 1, c(n) = 3*c(n-2), c(3) = 9, c(2) = 9, c(1) = 3, c(0) = 3
+; Formula: a(n) = a(n-1)*(2*c(n-1)+1)+b(n-1), a(2) = 4, a(1) = 1, a(0) = 0, b(n) = b(n-1)*(2*c(n-1)+1), b(2) = 3, b(1) = 3, b(0) = 1, c(n) = 2*c(n-1)-3*truncate((2*c(n-1)+1)/3)+1, c(2) = 1, c(1) = 0, c(0) = 1
 
 #offset 1
 
 mov $1,1
-mov $2,3
-sub $0,1
+mov $2,1
 lpb $0
-  sub $0,2
-  mov $3,$2
-  mul $3,4
-  mul $1,3
-  add $1,$3
-  mul $2,3
+  sub $0,1
+  mul $2,2
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+  mod $2,3
 lpe
-mul $0,$2
-add $0,$1
+mov $0,$3

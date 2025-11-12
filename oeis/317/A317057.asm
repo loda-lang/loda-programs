@@ -1,23 +1,34 @@
 ; A317057: a(n) is the number of time-dependent assembly trees satisfying the connected gluing rule for a cycle on n vertices.
-; Submitted by Jamie Morken(w1)
+; Submitted by Minoer
 ; 1,1,4,23,166,1437,14512,167491,2174746,31374953,497909380,8619976719,161667969646,3265326093109,70663046421208,1631123626335707,40004637435452866,1038860856732399105,28476428717448349996
 
 #offset 1
 
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
+mov $2,1
+add $2,1
+lpb $0
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,629 ; Number of necklaces of partitions of n+1 labeled beads.
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $11,1
+    mov $12,$1
+    mov $7,2
+    div $7,2
+    add $7,$0
+    add $7,$4
+    bin $7,$0
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-mul $3,$4
-sub $1,$3
-mov $0,$1
-dif $0,2
+mov $0,$3

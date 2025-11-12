@@ -1,12 +1,25 @@
 ; A229975: The base 8 expansion of the number of trailing zeros of the base 8 expansion of (8^n)!.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 2,25,252,2525,25252,252525,2525252,25252525,252525252,2525252525,25252525252,252525252525,2525252525252,25252525252525,252525252525252,2525252525252525,25252525252525252,252525252525252525,2525252525252525252,25252525252525252525
-; Formula: a(n) = floor((10^(n+8))/396000000)
+; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = truncate((52*c(n-2)+32*b(n-2))/5), b(3) = 252, b(2) = 252, b(1) = 2, b(0) = 2, c(n) = truncate((473*c(n-2)+243*b(n-2))/5), c(3) = 2273, c(2) = 2273, c(1) = 23, c(0) = 23
 
 #offset 1
 
-add $0,8
-mov $1,10
-pow $1,$0
-mov $0,$1
-div $0,396000000
+mov $1,2
+mov $2,23
+sub $0,1
+lpb $0
+  sub $0,2
+  mov $3,$1
+  mul $3,243
+  mov $4,$2
+  mul $4,52
+  mul $2,473
+  add $2,$3
+  div $2,5
+  mul $1,32
+  add $1,$4
+  div $1,5
+lpe
+mul $0,$2
+add $0,$1

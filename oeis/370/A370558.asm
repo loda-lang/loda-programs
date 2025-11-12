@@ -1,77 +1,107 @@
 ; A370558: Periodic sequence S_1 of length 28: used to compute the number of times a day from 1 to 28 of a month occurs on a day of the week for the Gregorian cycle of 400 years.
 ; Submitted by loader3229
 ; 1,2,2,1,2,1,2,2,1,3,1,1,3,2,1,3,1,2,2,2,2,1,1,2,2,1,3,1,1,2,2,1,2,1,2,2,1,3,1,1,3,2,1,3,1,2,2,2,2,1,1,2,2,1,3,1,1,2,2,1,2,1,2,2,1,3,1,1,3,2,1,3,1,2,2,2,2,1,1,2
+; Formula: a(n) = ((n%28)==27)+((n%28)==25)+((n%28)==22)+((n%28)==21)+((n%28)==16)+((n%28)==14)+((n%28)==11)+((n%28)==10)+((n%28)==8)+((n%28)==5)+((n%28)==3)+((n%28)==0)+3*((n%28)==26)+3*((n%28)==15)+3*((n%28)==12)+3*((n%28)==9)+2*((n%28)==24)+2*((n%28)==23)+2*((n%28)==20)+2*((n%28)==19)+2*((n%28)==18)+2*((n%28)==17)+2*((n%28)==13)+2*((n%28)==7)+2*((n%28)==6)+2*((n%28)==4)+2*((n%28)==2)+2*((n%28)==1)
 
-mov $1,2
-mov $2,1
-mov $3,3
-mov $4,1
-mov $5,2
-mov $6,2
-mov $7,2
-mov $8,2
-mov $9,1
-mov $10,1
-mov $11,2
-mov $12,2
-mov $13,1
-mov $14,3
-mov $15,1
-mov $16,1
-mov $17,2
-mov $18,2
-mov $19,1
-mov $20,2
-mov $21,1
-mov $22,2
-mov $23,2
-mov $24,1
-mov $25,3
-lpb $0
-  sub $0,1
-  mov $26,$1
-  mov $1,$2
-  mul $2,-1
-  add $26,$2
-  add $26,$5
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mul $6,-1
-  add $26,$6
-  add $26,$9
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mul $10,-1
-  add $26,$10
-  add $26,$13
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mul $14,-1
-  add $26,$14
-  add $26,$17
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mul $18,-1
-  add $26,$18
-  add $26,$21
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
-  mov $21,$22
-  mul $22,-1
-  add $26,$22
-  add $26,$25
-  mov $22,$23
-  mov $23,$24
-  mov $24,$25
-  mov $25,$26
-lpe
-mov $0,$16
+mod $0,28
+mov $1,$0
+equ $1,0
+mov $2,$1
+mov $1,$0
+equ $1,1
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,2
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,7
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,8
+add $2,$1
+mov $1,$0
+equ $1,9
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,10
+add $2,$1
+mov $1,$0
+equ $1,11
+add $2,$1
+mov $1,$0
+equ $1,12
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,13
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,14
+add $2,$1
+mov $1,$0
+equ $1,15
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,16
+add $2,$1
+mov $1,$0
+equ $1,17
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,18
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,19
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,20
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,21
+add $2,$1
+mov $1,$0
+equ $1,22
+add $2,$1
+mov $1,$0
+equ $1,23
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,24
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,25
+add $2,$1
+mov $1,$0
+equ $1,26
+mul $1,3
+add $2,$1
+mov $1,$0
+equ $1,27
+add $2,$1
+mov $0,$2

@@ -1,25 +1,12 @@
 ; A349417: a(n) is the Wiener index of a sling on n+1 vertices.
-; Submitted by loader3229
+; Submitted by Science United
 ; 2,2,4,9,18,32,52,79,114,158,212,277,354,444,548,667,802,954,1124,1313,1522,1752,2004,2279,2578,2902,3252,3629,4034,4468,4932,5427,5954,6514,7108,7737,8402,9104,9844,10623,11442,12302,13204,14149,15138,16172,17252,18379,19554,20778
-; Formula: a(n) = floor((n-3)/2)*(2*floor((n-3)/2)+3)*((n-3)%2)+truncate((floor((n-3)/2)*(floor((n-3)/2)*(4*floor((n-3)/2)+6)-4)+6)/3)
+; Formula: a(n) = -n+binomial(n-1,3)+5
 
 #offset 3
 
-sub $0,3
-mov $2,$0
-mod $2,2
-div $0,2
+sub $0,1
 mov $1,$0
-mov $3,$0
-mul $0,4
-add $0,6
-mul $0,$1
-sub $0,4
-mul $0,$1
-add $0,6
-div $0,3
-mul $3,2
-add $3,3
-mul $3,$1
-mul $2,$3
-add $0,$2
+bin $0,3
+add $0,4
+sub $0,$1

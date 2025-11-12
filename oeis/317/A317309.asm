@@ -10,7 +10,6 @@ mov $2,$0
 add $2,8
 pow $2,4
 lpb $2
-  dif $6,2
   mov $7,$6
   add $7,3
   mul $7,8
@@ -28,6 +27,7 @@ lpb $2
   mov $4,$0
   max $4,0
   equ $4,$0
+  div $5,6
   add $5,$1
   mov $6,$5
   mul $2,$4
@@ -36,4 +36,5 @@ lpb $2
 lpe
 mov $0,$1
 div $0,2
+mul $0,2
 add $0,3

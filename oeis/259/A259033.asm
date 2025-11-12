@@ -1,9 +1,15 @@
 ; A259033: Expansion of psi(x^3)^2 * f(-x^2)^4 / f(-x)^6 in powers of where psi(), f() are Ramanujan theta function.
-; Submitted by Fardringle
+; Submitted by Science United
 ; 1,6,23,76,221,584,1443,3368,7497,16046,33190,66628,130288,248858,465387,853836,1539425,2731462,4775703,8236856,14027754,23609794,39301171,64747876,105638153,170778512,273704800,435079524,686237877,1074405242,1670333294,2579418528,3957815025,6035676072,9150527880,13794989908,20684726890,30854823202,45795947443,67646021752,99459052297,145580883934,212172644735,307937557524,445126960789,640928544586,919376330987,1313970932888,1871264166529,2655749585224,3756517051030,5296284303724,7443623811213
-; Formula: a(n) = truncate(A233693(6*n+5)/4)
+; Formula: a(n) = truncate((truncate((-A261321(6*n+5))/2)-4)/4)+1
 
-mul $0,6
-add $0,5
-seq $0,233693 ; Expansion of q * psi(-q) * chi(-q^6) * psi(-q^9) / (phi(-q) * phi(-q^18)) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
+mov $1,$0
+mul $1,6
+add $1,5
+seq $1,261321 ; Expansion of (phi(q) / phi(q^3))^2 in powers of q where phi() is a Ramanujan theta function.
+mul $1,-1
+div $1,2
+mov $0,$1
+sub $0,4
 div $0,4
+add $0,1
