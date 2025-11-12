@@ -1,19 +1,18 @@
-; A249452: Numbers n such that A249441(n) = 3.
-; Submitted by William Michael Kanar
+; A249452: Numbers k such that A249441(k) = 3.
+; Submitted by Time_Traveler
 ; 15,31,47,63,95,127,191,255,383,511,767,1023,1535,2047,3071,4095,6143,8191,12287,16383,24575,32767,49151,65535,98303,131071,196607,262143,393215,524287,786431,1048575,1572863,2097151,3145727,4194303,6291455,8388607,12582911
-; Formula: a(n) = 16*floor((((n-1)%2+3)*2^floor((n-1)/2))/2)-1
+; Formula: a(n) = 16*truncate(2^truncate((n-2)/2))*(-2*truncate((n-2)/2)+n)-1
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mod $2,2
-add $2,3
+sub $0,2
+mov $1,$0
+mod $1,2
+add $1,2
 div $0,2
-mov $1,2
-pow $1,$0
-mul $1,$2
-div $1,2
-mov $0,$1
+mov $2,2
+pow $2,$0
+mul $2,$1
+mov $0,$2
 mul $0,16
 sub $0,1

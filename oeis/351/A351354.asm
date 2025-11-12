@@ -1,26 +1,17 @@
 ; A351354: Numbers k such that the k-th centered 40-gonal numbers (A195317) is a square.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,3,7,45,117,799,2091,14329,37513,257115,673135,4613733,12078909,82790071,216747219,1485607537,3889371025,26658145587,69791931223,478361013021,1252365390981,8583840088783,22472785106427,154030760585065,403257766524697,2763969850442379
-; Formula: a(n) = truncate((min(n,n%2)*(3*c(n)+b(n))+truncate((6*c(n))/3))/4)+1, b(n) = truncate((16*c(n-2)+4*b(n-2))/4), b(3) = 1, b(2) = 1, b(1) = -3, b(0) = -3, c(n) = 16*c(n-2)+4*b(n-2)+truncate((4*c(n-2))/4), c(3) = 5, c(2) = 5, c(1) = 1, c(0) = 1
 
 #offset 1
 
-mov $1,-3
 mov $2,1
+mul $0,6
+sub $0,4
 lpb $0
-  sub $0,2
-  mul $2,4
+  sub $0,4
   add $1,$2
-  mul $1,4
-  div $2,4
   add $2,$1
-  div $1,4
 lpe
-mul $2,3
-add $1,$2
-mul $2,2
-div $2,3
-mul $0,$1
-add $0,$2
-div $0,4
+mov $0,$2
+div $0,2
 add $0,1

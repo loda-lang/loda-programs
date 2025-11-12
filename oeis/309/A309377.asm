@@ -1,21 +1,10 @@
 ; A309377: a(n) is the product of the divisors of n^n (A000312).
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Science United
 ; 1,1,8,729,68719476736,30517578125,2444746349972956194083608044935243159422957210683702349648543934214737968217920868940091707112078529114392164827136,459986536544739960976801,2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376
+; Formula: a(n) = sqrtint(truncate((n^n)^A000005(n^n)))
 
 pow $0,$0
-mov $1,1
-mov $4,$0
-mov $5,47
-lpb $0
-  sub $0,2
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  mov $3,$4
-  div $3,$1
-  pow $3,$2
-  mul $5,$3
-  add $1,1
-lpe
-mov $0,$5
-div $0,47
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+pow $0,$1
+nrt $0,2

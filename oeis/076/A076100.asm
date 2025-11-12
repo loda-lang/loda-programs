@@ -1,19 +1,19 @@
 ; A076100: Least common multiple of n numbers starting with n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by DukeBox
 ; 1,6,60,420,2520,27720,360360,360360,12252240,232792560,232792560,5354228880,26771144400,80313433200,2329089562800,72201776446800,144403552893600,144403552893600,5342931457063200,5342931457063200
 
 #offset 1
 
-mov $2,1
-mov $3,2
+mov $1,2
+mov $3,1
 sub $0,1
 mul $0,2
 lpb $0
   sub $0,1
-  gcd $1,$3
-  dif $2,$1
-  mov $1,$2
-  mul $2,$3
-  add $3,1
+  gcd $2,$1
+  dif $3,$2
+  mov $2,$3
+  mul $3,$1
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$3

@@ -12,11 +12,6 @@ mov $5,$0
 mov $6,$0
 mul $6,6
 nrt $6,3
-mov $7,$6
-add $7,2
-bin $7,3
-mov $8,$0
-geq $8,$7
 add $8,$6
 add $8,1
 bin $8,3

@@ -1,22 +1,20 @@
 ; A018560: Divisors of 632.
-; Submitted by Mumps
+; Submitted by Kovas McCann
 ; 1,2,4,8,79,158,316,632
-; Formula: a(n) = d(n-1)+1, b(n) = b(n-1)+c(n-1)+2, b(3) = 77, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = max(69,b(n-1)+c(n-1)+2), c(3) = 77, c(2) = 69, c(1) = 2, c(0) = 0, d(n) = b(n-1)+1, d(3) = 7, d(2) = 3, d(1) = 1, d(0) = 0
+; Formula: a(n) = 2*a(n-1)-3*(a(n-6)==17), a(8) = 632, a(7) = 316, a(6) = 158, a(5) = 79, a(4) = 8, a(3) = 4, a(2) = 2, a(1) = 1
 
 #offset 1
 
+mov $4,-21
+mov $6,1
 sub $0,1
 lpb $0
+  mul $1,-1
+  rol $1,6
+  mul $3,3
+  equ $4,17
+  add $6,$5
+  add $6,$5
   sub $0,1
-  add $2,2
-  mul $3,12
-  sub $3,27
-  mov $4,$1
-  add $4,1
-  add $1,$2
-  mov $2,$3
-  max $2,$1
-  mov $3,8
 lpe
-mov $0,$4
-add $0,1
+mov $0,$6

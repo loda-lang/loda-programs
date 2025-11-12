@@ -4,35 +4,34 @@
 
 mov $1,$0
 add $1,1
-mov $2,$1
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $4,$2
-add $4,1
-bin $4,2
-sub $1,$4
+mov $4,$1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $6,$4
+add $6,1
+bin $6,2
+sub $1,$6
 sub $1,1
-sub $2,$1
-mov $3,2
-pow $3,$1
+sub $4,$1
+mov $5,2
+pow $5,$1
 mov $1,2
-pow $1,$2
-add $1,$3
+pow $1,$4
+add $1,$5
 mov $0,$1
 dif $0,2
-mov $6,0
-mov $7,$0
-lpb $7
-  bxo $6,$7
-  div $7,2
+mov $2,$0
+lpb $2
+  bxo $3,$2
+  div $2,2
 lpe
-mov $5,$6
-mod $5,2
-mov $0,$6
-add $0,$5
-mul $0,$5
+mov $7,$3
+mod $7,2
+mov $0,$3
+add $0,$7
+mul $0,$7
 div $0,2
 sub $1,$0
 mov $0,$1

@@ -1,12 +1,11 @@
-; A153841: First Sunday in n-th month of 365-day year starting on Tuesday
-; Submitted by USTL-FIL (Lille Fr)
+; A153841: First Sunday in n-th month of 365-day year starting on Tuesday.
+; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
 ; 6,3,3,7,5,2,7,4,1,6,3,1
-; Formula: a(n) = -truncate((24*floor((4*((n-1)%16))/3)-40)/9)-10*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+2
+; Formula: a(n) = -truncate((24*floor((4*n-4)/3)-40)/9)-10*truncate((-truncate((24*floor((4*n-4)/3)-40)/9)+truncate(41^truncate((24*floor((4*n-4)/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*n-4)/3)-40)/9))+2
 
 #offset 1
 
 sub $0,1
-mod $0,16
 mul $0,4
 div $0,3
 mul $0,6

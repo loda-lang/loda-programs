@@ -1,22 +1,19 @@
-; A163723: Number of nX2 binary arrays with all 1s connected, a path of 1s from left column to right column, and no 1 having more than two 1s adjacent
-; Submitted by BrandyNOW
+; A163723: Number of nX2 binary arrays with all 1s connected, a path of 1s from left column to right column, and no 1 having more than two 1s adjacent.
+; Submitted by Minoer
 ; 1,7,21,49,101,193,351,617,1059,1787,2979,4923,8085,13219,21545,35037,56889,92269,149539,242229,392231,634967,1027751,1663319,2691721,4355743,7048221,11404777,18453869,29859577,48314439,78175073,126490635,204666899,331158795,535827027,866987229,1402815739,2269804529,3672621909,5942428161,9615051877,15557481931,25172535789,40730019791,65902557743,106632579791,172535139887,279167722129,451702864567,730870589349,1182573456673,1913444048885,3096017508529,5009461560495,8105479072217,13114940636019
-; Formula: a(n) = 2*min(n+4,(n+4)%2)*c(n+4)+2*b(n+4)-2*binomial(n+4,2)-5, b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = 3*c(n-2)-c(n-4), c(6) = 13, c(5) = 5, c(4) = 5, c(3) = 2, c(2) = 2, c(1) = 1, c(0) = 1
 
 #offset 1
 
-mov $2,1
-mov $3,1
-add $0,4
 mov $1,$0
-lpb $0
-  sub $0,2
-  add $3,$2
-  add $2,$3
+lpb $1
+  sub $1,1
+  add $3,1
+  add $5,$3
+  mov $2,$4
+  mov $4,$6
+  add $6,$2
+  add $6,$5
 lpe
-bin $1,2
-mul $0,$3
-add $0,$2
-sub $0,$1
+mov $0,$6
 mul $0,2
-sub $0,5
+sub $0,1

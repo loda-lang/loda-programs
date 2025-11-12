@@ -1,36 +1,20 @@
 ; A040737: Continued fraction for sqrt(765).
-; Submitted by Sir Stooper
+; Submitted by loader3229
 ; 27,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1,54,1,1,1,13,6,13,1,1,1
 
-mov $1,-1
-pow $1,$0
-add $1,2
-mov $2,-1
-pow $2,$0
-add $2,2
-mov $4,16
-mul $0,2
-pow $0,2
+mov $2,27
+mov $3,1
+fil $3,3
+mov $6,13
+mov $7,6
+mov $8,13
+mov $9,1
+fil $9,3
+mov $12,54
 lpb $0
-  mov $3,$0
-  mul $4,9
-  add $4,6
-  mov $0,0
-  mod $3,10
-  add $3,5
-  div $4,$3
-  sub $4,5
+  mov $2,0
+  rol $2,11
+  add $12,$2
+  sub $0,1
 lpe
-sub $4,7
-mov $0,$4
-div $0,4
-mul $0,9
-add $0,$4
-mul $0,$2
-sub $0,2
-div $0,3
-add $0,1
-mul $0,$1
-sub $0,2
-div $0,3
-add $0,1
+mov $0,$2

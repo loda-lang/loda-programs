@@ -1,11 +1,10 @@
 ; A095477: a(n) = 42 written in base 14 - n.
-; Submitted by Checco
+; Submitted by DukeBox
 ; 30,33,36,39,42,46,52,60,110,132,222,1120,101010,111111111111111111111111111111111111111111
 
 sub $0,4
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

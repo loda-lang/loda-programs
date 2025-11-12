@@ -15,10 +15,8 @@ lpb $0
   max $4,1
   mul $5,$1
   add $1,1
-  mul $3,2
   mul $3,$2
   div $3,$4
   add $5,$3
 lpe
 mov $0,$5
-div $0,2

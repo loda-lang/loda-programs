@@ -1,20 +1,19 @@
 ; A040774: Continued fraction for sqrt(803).
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 28,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2
-; Formula: a(n) = 24*truncate((-10*truncate((gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/10)+gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)-10*truncate((gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/10)+gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))
+; Formula: a(n) = a(n-6), a(9) = 27, a(8) = 1, a(7) = 2, a(6) = 56, a(5) = 2, a(4) = 1, a(3) = 27, a(2) = 1, a(1) = 2, a(0) = 28
 
+mov $2,28
 mov $3,2
-trn $3,$0
-add $3,6
-gcd $0,$3
-sub $0,3
-mov $2,3
-pow $2,$0
-gcd $0,2
-add $2,$0
+mov $4,1
+mov $5,27
+mov $6,1
+mov $7,2
+mov $8,56
+lpb $0
+  mov $2,0
+  rol $2,7
+  add $8,$2
+  sub $0,1
+lpe
 mov $0,$2
-mod $0,10
-mov $1,$0
-div $0,3
-mul $0,24
-add $0,$1

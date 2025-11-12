@@ -1,5 +1,5 @@
 ; A081801: Decimal expansion of electron mass in kg.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 9,1,0,9,3,8,3,7,1
 
 #offset -30
@@ -16,7 +16,5 @@ lpb $0
   max $0,1
 lpe
 mov $0,$2
-add $0,3
-mod $0,10
-add $0,10
+add $0,13
 mod $0,10

@@ -1,5 +1,5 @@
 ; A336869: Number of divisors d of n! with distinct prime multiplicities such that the quotient n!/d also has distinct prime multiplicities.
-; Submitted by loader3229
+; Submitted by wareyore
 ; 1,1,2,2,6,4,12,8,20,28,68,40,80,0,56,160,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ; Formula: a(n) = (n>=2)+104*(n>=15)+96*(n>=16)+56*(n>=14)+40*(n>=12)+40*(n>=10)+12*(n>=8)+8*(n>=9)+8*(n>=6)+4*(n>=4)-2*(n>=5)-4*(n>=7)-28*(n>=11)-80*(n>=13)-256*(n>=17)+1
 
@@ -62,6 +62,5 @@ mov $1,$0
 geq $1,17
 mul $1,-256
 add $2,$1
-mul $0,0
-add $0,1
+mov $0,1
 add $0,$2

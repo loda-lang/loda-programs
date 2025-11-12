@@ -1,14 +1,28 @@
 ; A345451: Sum of the unitary divisors of n whose square does not divide n.
-; Submitted by GolfSierra
+; Submitted by atannir
 ; 0,2,3,4,5,11,7,8,9,17,11,19,13,23,23,16,17,29,19,29,31,35,23,35,25,41,27,39,29,71,31,32,47,53,47,49,37,59,55,53,41,95,43,59,59,71,47,67,49,77,71,69,53,83,71,71,79,89,59,119,61,95,79,64,83,143,67,89,95,143,71
 
 #offset 1
 
-sub $0,1
+mov $1,1
+mov $2,2
+mov $4,1
 lpb $0
-  sub $0,904
-  div $0,834
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    min $4,1
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+    mul $4,$2
+    mov $5,1
+    add $5,$4
+  lpe
+  mul $1,$5
 lpe
-add $0,1
-seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+mov $0,$1
 sub $0,1

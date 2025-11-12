@@ -1,16 +1,16 @@
 ; A127988: Sequence determining the parity of A025748.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,8,32,40,128,136,160,168,512,520,544,552,640,648,672,680,2048,2056,2080,2088,2176,2184,2208,2216,2560,2568,2592,2600,2688,2696,2720,2728,8192,8200,8224,8232,8320,8328,8352,8360,8704,8712,8736
-; Formula: a(n) = 8*truncate(b(n+1)/12), b(n) = b(n-1)+c(n-1)+6, b(1) = 6, b(0) = 0, c(n) = sign(3*sign(b(n-1)+c(n-1))*sign(b(n-1)+c(n-1)+6)+sign(b(n-1)+c(n-1)+6)+sign(b(n-1)+c(n-1)))*bitxor(abs(b(n-1)+c(n-1)),abs(b(n-1)+c(n-1)+6)), c(1) = 6, c(0) = 0
+; Formula: a(n) = 8*floor(c(n+1)/12), b(n) = bitxor(b(n-1)+c(n-1),b(n-1)+c(n-1)+6), b(1) = 6, b(0) = 0, c(n) = b(n-1)+c(n-1)+6, c(1) = 6, c(0) = 0
 
 add $0,1
 lpb $0
   sub $0,1
-  add $2,$1
-  mov $1,$2
-  add $1,6
-  bxo $2,$1
+  add $1,$2
+  mov $2,$1
+  add $2,6
+  bxo $1,$2
 lpe
-mov $0,$1
+mov $0,$2
 div $0,12
 mul $0,8

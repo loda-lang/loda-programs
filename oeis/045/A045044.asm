@@ -1,5 +1,5 @@
 ; A045044: Numbers whose base-4 representation contains exactly one 0 and two 2's.
-; Submitted by Science United
+; Submitted by Minoer
 ; 34,40,74,98,104,134,137,139,142,146,152,161,163,164,172,178,184,202,226,232,282,294,297,299,302,314,330,354,360,390,393,395,398,402,408,417,419,420,428,434,440,458,482,488,534,537
 
 #offset 1
@@ -30,7 +30,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,2
-add $0,10923
-div $0,2
-sub $0,5461
