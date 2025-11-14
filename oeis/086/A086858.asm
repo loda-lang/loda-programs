@@ -12,6 +12,5 @@ mov $2,$1
 mov $1,$0
 geq $1,26
 add $2,$1
-mul $0,0
-add $0,1
+mov $0,1
 add $0,$2

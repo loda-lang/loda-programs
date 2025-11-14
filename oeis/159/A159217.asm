@@ -14,6 +14,5 @@ add $1,$2
 mov $0,$1
 dif $0,$2
 add $0,$1
-add $0,11
 div $0,4
-sub $0,6
+sub $0,3

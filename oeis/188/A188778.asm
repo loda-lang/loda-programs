@@ -1,7 +1,7 @@
 ; A188778: Number of 3-turn bishop's tours on an n X n board summed over all starting positions.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 0,0,28,152,488,1192,2468,4560,7760,12400,18860,27560,38968,53592,71988,94752,122528,156000,195900,243000,298120,362120,435908,520432,616688,725712,848588,986440,1140440,1311800,1501780,1711680,1942848,2196672,2474588,2778072,3108648,3467880,3857380,4278800,4733840,5224240
-; Formula: a(n) = floor((floor((n-1)/2)*(floor((n-1)/2)*(176*floor((n-1)/2)+156)+40))/3)*((n-1)%2)+truncate((floor((n-1)/2)*(floor((n-1)/2)*(floor((n-1)/2)*(88*floor((n-1)/2)+16)-16)-4))/3)
+; Formula: a(n) = truncate((floor((n-1)/2)*(floor((n-1)/2)*(176*floor((n-1)/2)+156)+40)*((n-1)%2)+floor((n-1)/2)*(floor((n-1)/2)*(floor((n-1)/2)*(88*floor((n-1)/2)+16)-16)-4))/3)
 
 #offset 1
 
@@ -17,13 +17,12 @@ mul $0,$1
 sub $0,16
 mul $0,$1
 sub $0,4
-mul $0,$1
-div $0,3
 mul $3,176
 add $3,156
 mul $3,$1
 add $3,40
 mul $3,$1
-div $3,3
 mul $2,$3
+mul $0,$1
 add $0,$2
+div $0,3

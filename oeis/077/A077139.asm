@@ -1,20 +1,18 @@
 ; A077139: a(1) = 1, a(n) = lcm(n, a(n-1)) / gcd(n, a(n-1)).
-; Submitted by Simon Strandgaard
+; Submitted by DukeBox
 ; 1,2,6,6,30,5,35,280,2520,252,2772,231,3003,858,1430,5720,97240,437580,8314020,415701,969969,176358,4056234,2704156,67603900,2600150,70204050,10029150,290845350,9694845,300540195,9617286240,35263382880,1037158320
-; Formula: a(n) = b(n-1), b(n) = truncate((truncate(b(n-1)/gcd(b(n-1),n+1))*(n+1))/gcd(b(n-1),n+1)), b(1) = 2, b(0) = 1
+; Formula: a(n) = truncate((n*truncate(a(n-1)/gcd(a(n-1),n)))/gcd(a(n-1),n)), a(1) = 1, a(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,1
-sub $0,1
+mov $3,1
 lpb $0
   sub $0,1
   add $2,1
-  mov $3,$1
-  gcd $3,$2
-  div $1,$3
-  mul $1,$2
-  div $1,$3
+  mov $1,$3
+  gcd $1,$2
+  div $3,$1
+  mul $3,$2
+  div $3,$1
 lpe
-mov $0,$1
+mov $0,$3

@@ -1,11 +1,10 @@
 ; A028739: Nonsquares mod 26.
-; Submitted by Athlici
+; Submitted by shiva
 ; 2,5,6,7,8,11,15,18,19,20,21,24
 
 #offset 1
 
 mov $1,$0
-sub $0,1
 lpb $1
   sub $1,1
   mov $0,0

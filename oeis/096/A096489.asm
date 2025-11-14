@@ -1,5 +1,5 @@
 ; A096489: Noncomposite numbers n such that number of decimal digits of n = number of divisors of n.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 1,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97
 
 #offset 1
@@ -26,37 +26,20 @@ mov $19,79
 mov $20,83
 mov $21,89
 mov $22,97
-mov $23,101
 mov $24,103
 mov $25,107
-mov $26,109
 mov $27,113
 mov $28,121
 mov $29,127
 mov $30,131
-mov $31,137
-mov $32,139
-mov $33,143
-mov $34,149
-mov $35,151
-mov $36,157
-mov $37,163
-mov $38,167
 mov $39,169
-mov $40,173
-mov $41,179
 mov $42,181
-mov $43,187
-mov $44,191
-mov $45,193
-mov $46,197
-mov $47,199
 mov $48,209
 mov $49,211
 sub $0,1
 lpb $0
   rol $1,49
-  add $49,$1
+  bin $22,$14
   add $49,$48
   sub $0,1
 lpe

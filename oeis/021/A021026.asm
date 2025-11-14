@@ -1,19 +1,10 @@
 ; A021026: Decimal expansion of 1/22.
-; Submitted by loader3229
+; Submitted by DukeBox
 ; 0,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4
-; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = truncate((5*b(n-2)+5*c(n-2))/4), b(3) = 5, b(2) = 5, b(1) = 0, b(0) = 0, c(n) = truncate((-b(n-2)-c(n-2))/4), c(3) = -1, c(2) = -1, c(1) = 4, c(0) = 4
+; Formula: a(n) = -6*truncate(truncate(((3*n)^2-1)/2)/6)+truncate(((3*n)^2-1)/2)
 
-mov $2,4
-lpb $0
-  sub $0,2
-  mov $3,$2
-  mul $3,5
-  mul $2,-1
-  sub $2,$1
-  div $2,4
-  mul $1,5
-  add $1,$3
-  div $1,4
-lpe
-mul $0,$2
-add $0,$1
+mul $0,3
+pow $0,2
+sub $0,1
+div $0,2
+mod $0,6

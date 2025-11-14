@@ -46,6 +46,5 @@ mov $1,$0
 geq $1,25
 mul $1,2
 add $2,$1
-mul $0,0
-add $0,2
+mov $0,2
 add $0,$2

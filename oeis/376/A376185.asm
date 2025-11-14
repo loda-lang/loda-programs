@@ -1,20 +1,17 @@
 ; A376185: a(n) = denominator of the sum S(n) defined in A376062.
-; Submitted by Eric Liskay
+; Submitted by BrandyNOW
 ; 12,48,624,97968,2399530224,1439436326371902768,517994234419759747473589427583418224,67079506723028253472357256785558488997471406450171845011442457607246768
-; Formula: a(n) = 12*truncate((c(n-1)*b(n-1))/3), b(n) = b(n-1)*(b(n-1)+1), b(2) = 12, b(1) = 3, b(0) = 3, c(n) = c(n-1)*(c(n-1)-1)+1, c(2) = 13, c(1) = 4, c(0) = 1
+; Formula: a(n) = 4*b(n-1), b(n) = b(n-1)*(b(n-1)+1), b(0) = 3
 
 #offset 1
 
 mov $1,3
-mov $2,1
 sub $0,1
 lpb $0
   sub $0,1
-  mul $2,$1
-  mov $1,$2
+  mov $2,$1
   add $2,1
+  mul $1,$2
 lpe
-mul $1,$2
 mov $0,$1
-div $0,3
-mul $0,12
+mul $0,4

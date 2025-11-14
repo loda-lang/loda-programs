@@ -1,11 +1,9 @@
 ; A101197: Lengths of successive words (starting with a) under the substitution: {a -> aab, b -> aac, c -> b}.
-; Submitted by amazing
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,9,25,71,199,561,1577,4439,12487,35137,98857,278151,782599,2201937,6195369,17431351,49044935,137993185,388258473,1092406631,3073602311,8647907569,24331808809,68460135703,192619882695
-; Formula: a(n) = 3*a(n-1)+2*c(n-1)-2*b(n-1), a(2) = 9, a(1) = 3, a(0) = 1, b(n) = 2*a(n-1)+2*c(n-1)-2*b(n-1), b(2) = 6, b(1) = 2, b(0) = 1, c(n) = a(n-1)+c(n-1), c(2) = 5, c(1) = 2, c(0) = 1
 
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 lpb $0
   sub $0,1
   add $3,$1

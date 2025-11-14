@@ -1,5 +1,5 @@
 ; A309750: Number of letters in the English names of the months when the names are arranged in alphabetical order.
-; Submitted by Simon Strandgaard
+; Submitted by DukeBox
 ; 4,5,6,3,3,5,3,5,4,6,3,4
 
 #offset 1
@@ -25,7 +25,6 @@ lpb $3
   mul $1,$7
   add $2,1
   sub $3,1
-  mod $3,11
   mov $7,$0
   equ $7,1
 lpe

@@ -1,18 +1,23 @@
 ; A336627: Coordination sequence for the Manhattan lattice.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,4,8,11,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,80,84,88,92,96,100,104,108,112,116,120,124,128,132,136,140,144,148,152,156,160,164,168,172,176,180,184,188,192,196,200,204,208,212,216,220,224
-; Formula: a(n) = (n==1)-(truncate((97*n-97)/113)==2)+max(4*n-4,1)
+; Formula: a(n) = (n>=5)+4*n-(n>=4)-2*(n>=2)-3*(n>=1)+1
 
-mov $2,$0
-sub $0,1
-mov $3,97
-mul $3,$0
-div $3,113
-equ $3,2
+mov $1,$0
+geq $1,1
+mul $1,-3
+mov $2,$1
+mov $1,$0
+geq $1,2
+mul $1,-2
+add $2,$1
+mov $1,$0
+geq $1,4
+mul $1,-1
+add $2,$1
+mov $1,$0
+geq $1,5
+add $2,$1
 mul $0,4
-max $0,1
-sub $0,$3
-mov $1,$2
-equ $1,1
-add $1,$0
-mov $0,$1
+add $0,1
+add $0,$2

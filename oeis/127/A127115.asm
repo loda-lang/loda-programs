@@ -1,6 +1,18 @@
 ; A127115: n! in base 8.
+; Submitted by DukeBox
 ; 1,1,2,6,30,170,1320,11660,116600,1304600,15657400,230212400,3443176000,56312146000,1211416624000,23016735654000,460356735300000,12067735663300000,265756631234600000,6601271140642200000
-; Formula: a(n) = A007094(n!)
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $0,7094 ; Numbers in base 8.
+min $0,19
+mov $1,1
+fac $1,$0
+mov $4,1
+mov $0,$1
+lpb $0
+  mov $3,$0
+  mod $3,8
+  mul $3,$4
+  div $0,8
+  add $2,$3
+  mul $4,10
+lpe
+mov $0,$2

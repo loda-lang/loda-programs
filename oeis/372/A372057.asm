@@ -17,6 +17,5 @@ mov $1,$0
 geq $1,21
 mul $1,9
 add $2,$1
-mul $0,0
-add $0,1
+mov $0,1
 add $0,$2
