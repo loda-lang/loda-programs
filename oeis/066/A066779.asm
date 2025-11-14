@@ -10,7 +10,6 @@ lpb $0
   mov $2,$0
   lpb $2
     mov $6,$2
-    div $6,4
     lpb $6
       mov $7,$2
       mod $7,$5

@@ -1,23 +1,19 @@
 ; A203232: (n-1)-st elementary symmetric function of the first n terms of the periodic sequence (2,3,2,3,2,3,...).
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,5,16,60,156,540,1296,4320,9936,32400,72576,233280,513216,1632960,3545856,11197440,24074496,75582720,161243136,503884800,1068235776,3325639680,7014076416,21767823360,45712429056,141490851840
-; Formula: a(n) = min(n-1,(n-1)%2)*c(n-1)+b(n-1), b(n) = 5*c(n-2)-4*b(n-2), b(3) = 16, b(2) = 16, b(1) = 1, b(0) = 1, c(n) = 16*c(n-2)-20*b(n-2), c(3) = 44, c(2) = 44, c(1) = 4, c(0) = 4
+; Formula: a(n) = d(n-1), b(n) = b(n-1)*(gcd(c(n-1),2)+1), b(2) = 12, b(1) = 6, b(0) = 2, c(n) = gcd(c(n-1),2)+1, c(2) = 2, c(1) = 3, c(0) = 0, d(n) = d(n-1)*(gcd(c(n-1),2)+1)+b(n-1), d(2) = 16, d(1) = 5, d(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,4
+mov $1,2
+mov $3,1
 sub $0,1
 lpb $0
-  sub $0,2
-  mov $3,$1
-  mul $3,-20
-  mov $4,$2
-  mul $4,5
-  mul $2,16
-  add $2,$3
-  mul $1,-4
-  add $1,$4
+  sub $0,1
+  gcd $2,2
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
 lpe
-mul $0,$2
-add $0,$1
+mov $0,$3

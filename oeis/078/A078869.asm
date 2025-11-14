@@ -77,6 +77,5 @@ mov $1,$0
 geq $1,18
 mul $1,-6
 add $2,$1
-mul $0,0
-add $0,3
+mov $0,3
 add $0,$2

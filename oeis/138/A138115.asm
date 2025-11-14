@@ -1,4 +1,5 @@
 ; A138115: Triangle read by rows: row n lists the first n digits of the decimal expansion of e.
+; Submitted by Steve Dodd
 ; 2,2,7,2,7,1,2,7,1,8,2,7,1,8,2,2,7,1,8,2,8,2,7,1,8,2,8,1,2,7,1,8,2,8,1,8,2,7,1,8,2,8,1,8,2,2,7,1,8,2,8,1,8,2,8,2,7,1,8,2,8,1,8,2,8,4,2,7,1,8,2,8,1,8,2,8,4,5
 
 #offset 1
@@ -9,8 +10,6 @@ nrt $1,2
 add $1,1
 div $1,2
 bin $1,2
-mov $4,0
-mov $7,0
 sub $0,$1
 mov $2,10
 pow $2,$0

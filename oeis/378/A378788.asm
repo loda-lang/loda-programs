@@ -1,27 +1,19 @@
 ; A378788: Lower matching number of the (n,n)-stacked book graph.
-; Submitted by loader3229
+; Submitted by Jave808
 ; 1,2,4,6,10,14,17,24,30,34,44,52,57,70,80,86,102,114,121,140,154,162,184,200,209,234,252,262,290,310,321,352,374,386,420,444,457,494,520,534,574,602,617,660,690,706,752,784,801,850,884,902,954,990,1009
-; Formula: a(n) = truncate((((-floor((n-1)/3)+1)*((n-1)%3)+7*floor((n-1)/3)+1)*((n-1)%3)+floor((n-1)/3)*(6*floor((n-1)/3)+4)+2)/2)
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-mod $2,3
-div $0,3
 mov $1,$0
-mov $3,$0
-mov $4,$0
-mul $0,6
-add $0,4
-mul $0,$1
-add $0,2
-mul $3,7
-add $3,1
-mul $4,-1
-add $4,1
-mul $4,$2
-add $3,$4
-mul $2,$3
-add $0,$2
-div $0,2
+mul $0,2
+lpb $0
+  add $2,$0
+  add $2,$1
+  sub $0,2
+  mod $1,3
+  dif $1,2
+lpe
+mov $0,$2
+div $0,3
+add $0,1

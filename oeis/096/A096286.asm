@@ -82,6 +82,5 @@ mov $1,$0
 geq $1,22
 mul $1,-2
 add $2,$1
-mul $0,0
-add $0,6
+mov $0,6
 add $0,$2

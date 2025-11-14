@@ -1,20 +1,18 @@
 ; A059426: First differences of A026273.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1
-; Formula: a(n) = floor(c(n+3)/2)+1, b(n) = gcd(c(n-1)%2+truncate((-b(n-1)+d(n-1))/2),4)*b(n-1), b(2) = 32, b(1) = 8, b(0) = 4, c(n) = floor(gcd(c(n-1)%2+truncate((-b(n-1)+d(n-1))/2),4)/2), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = truncate((-b(n-1)+d(n-1))/2), d(2) = -5, d(1) = -2, d(0) = 0
+; Formula: a(n) = floor(b(n+2)/2), b(n) = 2*gcd(b(n-1)+truncate((-d(n-1)+c(n-1))/2),2), b(2) = 2, b(1) = 4, b(0) = 0, c(n) = truncate((-d(n-1)+c(n-1))/2), c(2) = -9, c(1) = -2, c(0) = 0, d(n) = 2*gcd(b(n-1)+truncate((-d(n-1)+c(n-1))/2),2)*d(n-1), d(2) = 32, d(1) = 16, d(0) = 4
 
-mov $1,4
-add $0,3
+mov $3,4
+add $0,2
 lpb $0
   sub $0,1
-  sub $3,$1
-  div $3,2
-  mod $2,2
-  add $2,$3
-  gcd $2,4
-  mul $1,$2
+  sub $2,$3
   div $2,2
+  add $1,$2
+  gcd $1,2
+  mul $1,2
+  mul $3,$1
 lpe
-div $2,2
-mov $0,$2
-add $0,1
+mov $0,$1
+div $0,2

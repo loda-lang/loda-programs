@@ -9,7 +9,6 @@ div $1,2
 mov $2,$1
 add $2,1
 bin $2,2
-mov $5,1
 sub $0,$2
 mov $2,$0
 sub $0,1
@@ -24,4 +23,3 @@ lpb $1
   add $5,$4
 lpe
 mov $0,$5
-sub $0,1

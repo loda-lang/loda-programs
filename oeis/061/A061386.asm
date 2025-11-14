@@ -1,31 +1,29 @@
 ; A061386: Sum of digits = 3 times number of digits.
-; Submitted by [AF>Occitania]franky82
+; Submitted by [SG]KidDoesCrunch
 ; 3,15,24,33,42,51,60,108,117,126,135,144,153,162,171,180,207,216,225,234,243,252,261,270,306,315,324,333,342,351,360,405,414,423,432,441,450,504,513,522,531,540,603,612,621,630,702,711,720,801,810,900,1029
 
 #offset 1
 
 sub $0,1
+mov $1,3
 mov $2,$0
-add $0,6
-add $2,8
-pow $2,2
+add $2,2
+pow $2,4
 lpb $2
+  sub $2,1
   mov $3,$1
   dgs $3,10
-  mov $5,$1
-  max $5,1
-  log $5,10
-  add $5,1
-  div $3,$5
-  equ $3,3
+  mov $4,$1
+  log $4,10
+  add $4,1
+  mov $5,$3
+  mod $5,$4
+  div $3,$4
+  mul $3,2
+  gcd $3,$5
+  equ $3,6
   sub $0,$3
   add $1,3
-  mov $4,$0
-  max $4,6
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
-div $0,3
-mul $0,3
