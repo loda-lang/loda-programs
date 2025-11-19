@@ -1,0 +1,62 @@
+; A011542: Minimal number of coins needed to pay n cents using coins of sizes 1, 5, 10, 25, 50 cents.
+; Submitted by loader3229
+; 0,1,2,3,4,1,2,3,4,5,1,2,3,4,5,2,3,4,5,6,2,3,4,5,6,1,2,3,4,5,2,3,4,5,6,2,3,4,5,6,3,4,5,6,7,3,4,5,6,7,1,2,3,4,5,2,3,4,5,6,2,3,4,5,6,3,4,5,6,7,3,4,5,6,7,2,3,4,5,6
+
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,4
+mov $6,1
+mov $7,2
+mov $8,3
+mov $9,4
+mov $10,5
+mov $11,1
+mov $12,2
+mov $13,3
+mov $14,4
+mov $15,5
+mov $16,2
+mov $17,3
+mov $18,4
+mov $19,5
+mov $20,6
+mov $21,2
+mov $22,3
+mov $23,4
+mov $24,5
+mov $25,6
+mov $26,1
+mov $27,2
+mov $28,3
+mov $29,4
+mov $30,5
+mov $31,2
+mov $32,3
+mov $33,4
+mov $34,5
+mov $35,6
+mov $36,2
+mov $37,3
+mov $38,4
+mov $39,5
+mov $40,6
+mov $41,3
+mov $42,4
+mov $43,5
+mov $44,6
+mov $45,7
+mov $46,3
+mov $47,4
+mov $48,5
+mov $49,6
+mov $50,7
+mov $51,1
+lpb $0
+  mul $1,-1
+  rol $1,51
+  add $51,$1
+  add $51,$50
+  sub $0,1
+lpe
+mov $0,$1

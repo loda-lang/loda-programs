@@ -1,0 +1,18 @@
+; A051113: Number of monotone Boolean functions of n variables with 5 mincuts.
+; Submitted by Science United
+; 0,0,0,0,6,2146,304752,25400564,1557306954,78817977462,3513106214484,143429796694888,5501383287745422,201652447559180618,7148287976359243896,247151326758617289372,8386495692534098616210,280574309728711561269214,9286566498536162168164188
+
+mov $2,$0
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  seq $0,56048 ; Number of 5-antichain covers of a labeled n-set.
+  mul $1,$0
+  add $3,$1
+lpe
+mov $0,$3
