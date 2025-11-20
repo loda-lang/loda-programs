@@ -1,0 +1,62 @@
+; A078603: Number of ways of arranging the numbers 1..n in a circle so that adjacent numbers do not differ by 1 mod n.
+; Submitted by pm120
+; 1,0,0,0,2,6,46,354,3106,29926,315862,3628906,45132474,604534846,8680957902,133082437730,2169964347282,37505486702678,685046187718022,13186335387855770,266816610979894058,5662225862272325550
+
+#offset 1
+
+mov $2,1
+mov $6,1
+mov $7,3
+mov $8,23
+mov $9,177
+mov $10,1553
+sub $0,1
+lpb $0
+  mov $2,0
+  rol $2,9
+  mov $12,$1
+  mul $12,-1
+  sub $12,3
+  mov $11,$3
+  mul $11,$12
+  mov $12,$1
+  mul $12,-2
+  sub $12,11
+  add $10,$11
+  mov $11,$4
+  mul $11,$12
+  mov $12,$1
+  mul $12,3
+  add $12,9
+  add $10,$11
+  mov $11,$5
+  mul $11,$12
+  mov $12,$1
+  mul $12,4
+  add $12,13
+  add $10,$11
+  mov $11,$6
+  mul $11,$12
+  mov $12,$1
+  mul $12,-3
+  sub $12,25
+  add $10,$11
+  mov $11,$7
+  mul $11,$12
+  mov $12,$1
+  mul $12,-2
+  sub $12,9
+  mul $3,2
+  add $10,$11
+  mov $11,$8
+  mul $11,$12
+  mov $12,$1
+  add $12,11
+  add $10,$11
+  mov $11,$9
+  mul $11,$12
+  sub $0,1
+  add $1,1
+  add $10,$11
+lpe
+mov $0,$2
