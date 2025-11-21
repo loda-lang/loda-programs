@@ -1,0 +1,107 @@
+; A241050: Number of n X 2 0..3 arrays with no element equal to one plus the sum of elements to its left or zero plus the sum of elements above it or zero plus the sum of the elements diagonally to its northwest or one plus the sum of the elements antidiagonally to its northeast, modulo 4.
+; Submitted by loader3229
+; 3,3,4,6,8,12,13,20,28,38,53,68,96,130,178,245,330,454,617,841,1153,1563,2144,2913,3982,5431,7404,10111,13783,18809,25665,34995,47772,65135,88894,121250,165416,225685,307854,420020,572988,781677,1066446,1454794,1984790,2707624,3693895,5039348,6874790,9378947,12794981,17455433,23813363,32486884,44320033,60462664,82485603,112529668,153516953,209433565,285716393,389784897,531758303,725443606,989676597,1350151456,1841925840,2512820384,3428079853,4676709456,6380133584,8704007770,11874317737
+
+#offset 1
+
+mov $2,3
+mov $3,3
+mov $4,4
+mov $5,6
+mov $6,8
+mov $7,12
+mov $8,13
+mov $9,20
+mov $10,28
+mov $11,38
+mov $12,53
+mov $13,68
+sub $0,1
+lpb $0
+  mov $15,-21
+  mul $15,$1
+  add $15,73
+  mul $15,$1
+  sub $15,30
+  mul $2,$15
+  rol $2,12
+  mov $15,-38
+  mul $15,$1
+  add $15,60
+  mov $14,$2
+  mul $14,$15
+  mov $15,-21
+  mul $15,$1
+  add $15,73
+  mul $15,$1
+  sub $15,30
+  add $13,$14
+  mov $14,$4
+  mul $14,$15
+  mov $15,21
+  mul $15,$1
+  sub $15,111
+  mul $15,$1
+  add $15,90
+  add $13,$14
+  mov $14,$5
+  mul $14,$15
+  mov $15,38
+  mul $15,$1
+  sub $15,60
+  add $13,$14
+  mov $14,$6
+  mul $14,$15
+  mov $15,-21
+  mul $15,$1
+  add $15,73
+  mul $15,$1
+  sub $15,30
+  add $13,$14
+  mov $14,$7
+  mul $14,$15
+  mov $15,21
+  mul $15,$1
+  sub $15,111
+  mul $15,$1
+  add $15,90
+  add $13,$14
+  mov $14,$8
+  mul $14,$15
+  mov $15,38
+  mul $15,$1
+  sub $15,60
+  add $13,$14
+  mov $14,$9
+  mul $14,$15
+  mov $15,-42
+  mul $15,$1
+  add $15,146
+  mul $15,$1
+  sub $15,60
+  add $13,$14
+  mov $14,$10
+  mul $14,$15
+  mov $15,-76
+  mul $15,$1
+  add $15,120
+  add $13,$14
+  mov $14,$11
+  mul $14,$15
+  mov $15,21
+  mul $15,$1
+  sub $15,73
+  mul $15,$1
+  add $15,30
+  add $13,$14
+  mov $14,$12
+  mul $14,$15
+  mov $15,-38
+  mul $15,$1
+  add $15,60
+  add $13,$14
+  div $13,$15
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$2
