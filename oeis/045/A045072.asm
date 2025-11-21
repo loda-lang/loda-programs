@@ -1,13 +1,11 @@
 ; A045072: Numbers whose base-4 representation contains exactly two 0's and one 3.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 48,67,76,112,131,140,176,193,194,196,200,208,224,263,267,269,270,275,284,291,300,305,306,308,312,323,332,368,387,396,432,449,450,452,456,464,480,519,523,525,526,531,540,547,556,561
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
+add $2,6
 pow $2,3
 lpb $2
   mov $4,1

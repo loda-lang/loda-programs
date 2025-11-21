@@ -1,41 +1,20 @@
-; A044105: Numbers n such that string 0,3 occurs in the base 6 representation of n but not of n-1.
-; Submitted by loader3229
+; A044105: Numbers k such that string 0,3 occurs in the base 6 representation of k but not of k-1.
+; Submitted by Steve Dodd
 ; 39,75,111,147,183,219,234,255,291,327,363,399,435,450,471,507,543,579,615,651,666,687,723,759,795,831,867,882,903,939,975,1011,1047,1083,1098,1119,1155,1191,1227,1263,1299,1314,1335
-; Formula: a(n) = 234*(((n-1)%7)==6)+219*(((n-1)%7)==5)+216*floor((n-1)/7)+183*(((n-1)%7)==4)+147*(((n-1)%7)==3)+111*(((n-1)%7)==2)+75*(((n-1)%7)==1)+39*(((n-1)%7)==0)
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-div $2,7
-mul $2,216
-mod $0,7
-mov $1,$0
-equ $1,0
-mul $1,39
-add $2,$1
-mov $1,$0
-equ $1,1
-mul $1,75
-add $2,$1
-mov $1,$0
-equ $1,2
-mul $1,111
-add $2,$1
-mov $1,$0
-equ $1,3
-mul $1,147
-add $2,$1
-mov $1,$0
-equ $1,4
-mul $1,183
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,219
-add $2,$1
-mov $1,$0
-equ $1,6
-mul $1,234
-add $2,$1
-mov $0,$2
+mov $1,-5
+lpb $0
+  mov $3,7
+  gcd $3,$0
+  sub $0,1
+  add $2,7
+  div $2,$3
+  mov $3,$2
+  bin $3,2
+  add $1,$3
+  mov $2,2
+lpe
+mov $0,$1
+add $0,23

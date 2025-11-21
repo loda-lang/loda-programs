@@ -1,15 +1,12 @@
 ; A045070: Numbers whose base-4 representation contains exactly one 0 and four 3's.
-; Submitted by Science United
+; Submitted by Wood
 ; 831,975,1011,1020,1279,1855,1999,2035,2044,2303,2879,3023,3059,3068,3199,3263,3295,3311,3319,3323,3325,3326,3391,3535,3571,3580,3647,3791,3827,3836,3871,3887,3895,3899,3901,3902,3919
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,2
-pow $2,3
+add $2,6
+pow $2,5
 lpb $2
   mov $4,1
   mov $3,$1

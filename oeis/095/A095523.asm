@@ -1,11 +1,10 @@
 ; A095523: a(n) = 65 written in base 10 - n.
-; Submitted by loader3229
+; Submitted by Goldislops
 ; 65,72,101,122,145,230,1001,2102,1000001,11111111111111111111111111111111111111111111111111111111111111111
 
 mov $2,10
 sub $2,$0
-max $2,1
-mov $3,56
+mov $3,1
 mov $5,$2
 equ $5,1
 mov $0,0
@@ -20,4 +19,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-div $0,56

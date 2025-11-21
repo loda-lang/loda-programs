@@ -1,48 +1,36 @@
 ; A153043: Numbers n > 1 such that 2*n-3 is not a prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Daniele Casale
 ; 2,6,9,12,14,15,18,19,21,24,26,27,29,30,33,34,36,39,40,42,44,45,47,48,49,51,54,57,59,60,61,62,63,64,66,68,69,72,73,74,75,78,79,81,82,84,86,87,89,90,93,94,95,96,99,102,103,104,105,106,108,109,110,111,112,114,117,119,120,123,124,125,126,128,129,131,132,134,135,138
 
 #offset 1
 
-mov $3,1
-mov $1,$0
-lpb $1
-  mov $2,$1
-  lpb $2
-    mov $2,1
-    mov $3,$0
+mov $2,$0
+sub $0,1
+pow $2,2
+lpb $2
+  mov $6,$1
+  add $6,1
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$1
+  mul $5,$6
+  mov $3,$1
+  lpb $3
     sub $3,1
-    mov $6,$0
-    pow $6,2
-    lpb $6
-      mov $7,$5
-      mov $9,0
-      add $5,2
-      add $7,7
-      lpb $7
-        gcd $9,3
-        mov $4,$7
-        div $4,5
-        lpb $4
-          mov $8,$7
-          mod $8,$9
-          add $9,2
-          sub $4,$8
-        lpe
-        div $7,$9
-        pow $7,2
-        mov $9,1
-      lpe
-      add $3,$9
-      sub $3,1
-      sub $6,$3
-    lpe
-    mov $3,$5
-    add $3,7
-    sub $0,$1
+    sub $3,$1
   lpe
-  div $1,$3
+  sub $3,$5
+  trn $3,1
+  add $3,$4
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $1,2
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$3
+mov $0,$1
 div $0,2
 add $0,2

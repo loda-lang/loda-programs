@@ -1,7 +1,7 @@
 ; A143668: Result of the morphing 01->01021212, 02->0102121201, 12->01021201, iterated from '01'. Sequence of the Fibonacci word fractal.
-; Submitted by vaughan
+; Submitted by Owdjim
 ; 0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,1,2,0,1,0,2
-; Formula: a(n) = 2*(n-1)*(-2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)+2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)-sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))-truncate((sqrtint(5*n^2)+n)/2)-4*truncate(((n-1)*(-2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2))/2)-1
+; Formula: a(n) = 2*(((n-1)*((floor((sqrtint(5*n^2)+n)/2)+sqrtint((floor((sqrtint(5*n^2)+n)/2)+2)*(5*floor((sqrtint(5*n^2)+n)/2)+10))+2)%2))%2)-((floor((sqrtint(5*n^2)+n)/2)+sqrtint((floor((sqrtint(5*n^2)+n)/2)+2)*(5*floor((sqrtint(5*n^2)+n)/2)+10))+2)%2)+1
 
 #offset 1
 
@@ -12,7 +12,6 @@ add $3,$0
 mul $3,$0
 nrt $3,2
 add $3,$0
-mov $1,$0
 mov $1,$3
 div $1,2
 add $1,2

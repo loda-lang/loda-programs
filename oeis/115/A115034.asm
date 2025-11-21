@@ -1,22 +1,17 @@
 ; A115034: Alternately multiply and divide, with a(1)=1 and a(2)=2.
-; Submitted by Jamie Morken(w1)
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,2,1,2,2,4,2,8,4,32,8,256,32,8192,256,2097152,8192,17179869184,2097152,36028797018963968,17179869184,618970019642690137449562112,36028797018963968
-; Formula: a(n) = d(n-1), b(n) = b(n-2)*(2*b(n-1)+b(n-4)), b(4) = 2, b(3) = 0, b(2) = 2, b(1) = 0, b(0) = 1, c(n) = b(n-1), c(3) = 2, c(2) = 0, c(1) = 1, c(0) = 0, d(n) = c(n-1)*(b(n-1)+d(n-1))+c(n-2), d(3) = 1, d(2) = 2, d(1) = 2, d(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,2
-mov $4,1
 sub $0,1
+mov $1,1
+fil $1,8
+add $2,1
 lpb $0
   sub $0,1
-  mov $5,$1
-  add $1,$4
-  mul $1,$3
-  mov $4,$2
-  add $4,$1
-  mov $2,$3
-  mov $3,$5
+  mul $3,$1
+  ror $1,4
 lpe
-mov $0,$4
+mul $3,$4
+mov $0,$3

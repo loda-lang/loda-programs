@@ -1,11 +1,10 @@
 ; A115158: Number of divisors of A006558(n).
-; Submitted by PDW
+; Submitted by Bunteck
 ; 1,2,4,6,8,8,8,24,24,24
 
 #offset 1
 
 sub $0,1
-min $0,21
 lpb $0
   sub $0,1
   sub $1,$2

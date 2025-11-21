@@ -1,9 +1,41 @@
 ; A070908: Every fifth Bell number A000110.
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,52,115975,1382958545,51724158235372,4638590332229999353,846749014511809332450147,281600203019560266563340426570,157450588391204931289324344702531067
-; Formula: a(n) = A188164(10*n)
 
-mov $1,$0
-mul $1,10
-seq $1,188164 ; Number of palindromic structures of length n.
-mov $0,$1
+mov $4,$0
+mul $4,4
+add $4,$0
+mov $9,1
+fac $9,$4
+mov $12,$4
+mov $13,1
+add $4,1
+lpb $4
+  sub $4,1
+  mov $7,$6
+  pow $7,$12
+  mov $8,$12
+  bin $8,$6
+  mul $11,$6
+  add $11,$7
+  mov $2,$11
+  div $2,$9
+  mul $5,$6
+  add $5,$2
+  add $6,1
+  mod $11,$9
+  mul $13,-1
+  mov $3,$8
+  mul $3,$11
+  mul $3,$13
+  mov $1,$8
+  mul $1,$5
+  mul $1,$13
+  add $10,$1
+  add $14,$3
+lpe
+mul $10,$13
+mul $14,$13
+div $14,$9
+add $14,$10
+mov $0,$14

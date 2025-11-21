@@ -1,19 +1,18 @@
 ; A122416: Numbers from an irrationality measure for e, with a(1) = 2.
-; Submitted by arkiss
+; Submitted by [SG]KidDoesCrunch
 ; 2,3,4,5,6,4,8,5,7,6,12,5,14,8,6,7,18,7,20,6,8,12,24,5,11,14,10,8,30,6,32,9,12,18,8,7,38,20,14,6,42,8,44,12,7,24,48,7,15,11,18,14,54,10,12,8,20,30,60,6,62,32,8,9,14,12,68,18,24,8,72,7,74,38,11,20,12,14,80,7
 
 #offset 1
 
-mov $1,$0
-mov $2,1
-mov $4,2
-mov $3,$0
-lpb $3
-  sub $3,1
-  equ $0,$2
-  mul $2,$4
-  mod $2,$1
-  add $3,$0
-  add $4,1
+mov $1,1
+mov $3,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  equ $2,$1
+  add $4,$2
+  mul $1,$3
+  mod $1,$0
+  add $3,1
 lpe
-mov $0,$4
+mov $0,$3

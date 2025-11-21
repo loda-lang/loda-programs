@@ -16,11 +16,8 @@ lpb $2
   mov $4,$1
   log $4,10
   add $4,1
-  mov $5,$3
-  mod $5,$4
   div $3,$4
   mul $3,2
-  gcd $3,$5
   equ $3,6
   sub $0,$3
   add $1,3

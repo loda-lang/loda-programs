@@ -1,5 +1,5 @@
 ; A121072: Nonisomorphic catacondensed monoheptafusenes (see reference for precise definition).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by ledwards
 ; 0,1,3,3,9,10,30,36,108,137,411
 
 mov $1,$0
@@ -9,8 +9,7 @@ mov $6,1
 gcd $0,2
 mov $4,$1
 mov $5,2
-mul $1,0
-add $1,2
+mov $1,2
 mov $2,1
 add $2,$0
 lpb $4

@@ -1,19 +1,19 @@
 ; A081759: Numbers n such that 5n+6 is prime.
-; Submitted by Science United
+; Submitted by rajab
 ; 1,5,7,11,13,19,25,29,35,37,41,47,49,53,55,61,65,79,83,85,91,97,103,107,113,119,125,127,131,137,139,149,151,161,163,175,181,187,193,197,203,205,209,211,217,229,233,235,239,245,257,259,263,271,275,289,293,295,301,305,313,319,323,343,347,359,361,365,371,373,379,385,389,401,415,421,425,427,431,443
 
 #offset 1
 
 add $0,1
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
+mov $1,$0
+pow $1,9
+lpb $1
+  mov $3,$2
+  add $3,1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  sub $1,$0
   add $2,10
-  sub $3,$0
 lpe
 mov $0,$2
 div $0,5

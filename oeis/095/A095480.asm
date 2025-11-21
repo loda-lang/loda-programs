@@ -1,17 +1,17 @@
 ; A095480: a(n) = 44 written in base n.
-; Submitted by Aurum
+; Submitted by [SG]KidDoesCrunch
 ; 11111111111111111111111111111111111111111111,101100,1122,230,134,112,62,54,48,44,40,38,35,32
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $1,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
-mov $1,44
+neq $1,0
+add $1,43
 lpb $1
   mov $4,$1
   mod $4,$2

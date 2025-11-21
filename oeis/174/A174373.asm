@@ -12,9 +12,8 @@ add $2,1
 bin $2,2
 sub $1,$2
 sub $1,1
-mov $4,0
 bin $0,$1
-trn $0,1
+sub $0,1
 mov $3,$0
 equ $3,0
 add $3,$0

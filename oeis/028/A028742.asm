@@ -1,13 +1,11 @@
 ; A028742: Nonsquares mod 29.
-; Submitted by Cruncher Pete
+; Submitted by [SG]KidDoesCrunch
 ; 2,3,8,10,11,12,14,15,17,18,19,21,26,27
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
   mov $3,$1

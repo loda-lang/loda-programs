@@ -1,7 +1,8 @@
 ; A178801: Write n! partition(n) times.
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by shiva
 ; 1,1,2,2,6,6,6,24,24,24,24,24,120,120,120,120,120,120,120,720,720,720,720,720,720,720,720,720,720,720,5040,5040,5040,5040,5040,5040,5040,5040,5040,5040,5040,5040,5040,5040,5040,40320,40320,40320,40320,40320,40320
-; Formula: a(n) = A061602(A036042(n))
+; Formula: a(n) = A061602(A036042(min(n,52)))
 
+min $0,52
 seq $0,36042 ; k appears partition(k) times.
 seq $0,61602 ; Sum of factorials of the digits of n.

@@ -1,12 +1,15 @@
 ; A165577: Partial sums of A011626.
-; Submitted by Science United
+; Submitted by marianob [marche]
 ; 0,1,0,1,2,1,0,1,0,1,2,3,4,3,2,1,2,1,0,1,0,1,0,1,0,1,2,3,4,5,6,5,4,5,6,5,6,5,4,3,4,3,2,3,4,3,2,3,4,5,4,3,2,3,2,1,0,1,0,1,0,-1,0,1,2,3,2,1,0,1,2,3,2,3,4,5,6,7,8,9
-; Formula: a(n) = b(n)-1, b(n) = b(n-1)+A011626(n), b(0) = 1
+; Formula: a(n) = b(n)-1, b(n) = n^113-227*truncate((n^113+1)/227)+b(n-1), b(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,11626 ; Legendre symbol (n,227).
+  pow $2,113
+  add $2,1
+  mod $2,227
+  sub $2,1
   sub $0,1
   add $1,$2
 lpe

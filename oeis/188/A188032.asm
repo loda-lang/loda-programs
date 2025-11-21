@@ -22,7 +22,6 @@ lpb $0
 lpe
 mov $0,$5
 div $0,2
-add $0,1
 mov $1,$0
 mul $1,4
 add $1,$0
@@ -31,4 +30,4 @@ nrt $1,2
 add $1,$0
 div $1,2
 add $0,$1
-sub $0,2
+add $0,1

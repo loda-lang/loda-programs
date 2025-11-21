@@ -1,19 +1,18 @@
 ; A011690: A binary m-sequence: expansion of reciprocal of x^7+x^3+1.
-; Submitted by Skillz
+; Submitted by Science United
 ; 0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,1,1,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,0,1,1,0,0,0,1,0,1,0,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,0,0,1,0,1,1,0,1,1,1,1
 
-mov $5,1
+mov $3,1
 lpb $0
   sub $0,1
-  mov $7,$6
-  add $7,$3
-  mov $6,$4
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  mov $8,$5
-  mov $5,$7
+  add $5,1
+  ror $3,8
+  mul $3,2
+  sub $3,$10
+  add $6,1
+  add $7,$10
 lpe
-mov $0,$6
+mov $0,$9
+mod $0,2
+add $0,2
 mod $0,2

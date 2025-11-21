@@ -1,5 +1,5 @@
 ; A031459: Numbers whose base-3 representation has 3 fewer 0's than 2's.
-; Submitted by ProfBuzz
+; Submitted by Science United
 ; 26,53,71,77,79,134,152,158,160,188,206,212,214,224,230,232,236,238,240,323,377,395,401,403,431,449,455,457,467,473,475,479,481,483,539,557,563,565,593,611,617,619,629,635,637,641,643
 
 #offset 1
@@ -29,7 +29,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$1
-sub $0,79
+mov $0,$3
 div $0,3
-add $0,26

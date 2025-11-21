@@ -2,8 +2,25 @@
 ; Submitted by NeoGen
 ; 1,1,1,2,1,2,2,3,2,1,2,2,3,2,2,3,3,4,3,2,3,2,3,1,2,2,3,2,2,3,3,4,3,2,3,2,3,2,3,3,4,3,3,4,4,5,4,3,4,3,4,2,3,3,4,3,2,3,2,3,3,4,3,4,3,1,2,2,3,2,2,3,3,4,3,2,3,2,3,2
 
-seq $0,57520 ; a(n) = A014486(n)/2. In binary expansion there is one more 1 than 0 and reading from the left (the most significant bit) to right, the number of 0's never exceed the number of 1's.
+mov $4,$0
+pow $4,4
+lpb $4
+  sub $4,1
+  mov $5,$3
+  seq $5,80116 ; Characteristic function of A014486. a(n) = 1 if n's binary expansion is totally balanced, otherwise zero.
+  sub $0,$5
+  add $3,2
+  sub $4,$0
+lpe
+mov $0,$3
+div $0,2
 mul $0,2
 dif $0,2
-seq $0,139352 ; Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives o(n).
+mov $2,$0
+dgs $2,2
+sub $1,$2
+mov $2,$0
+dgs $2,4
+add $1,$2
+mov $0,$1
 add $0,1

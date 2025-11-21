@@ -1,9 +1,12 @@
 ; A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
-; Submitted by Science United
+; Submitted by Richard Oldroyd
 ; 0,0,0,1,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0
-; Formula: a(n) = A010051(A032742(n))
+; Formula: a(n) = A001222(n)==2
 
 #offset 1
 
-seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+mov $1,$0
+seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+equ $1,2
+sub $0,1
+mov $0,$1

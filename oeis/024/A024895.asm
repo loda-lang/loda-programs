@@ -1,20 +1,20 @@
 ; A024895: Numbers k such that 5*k - 3 is prime.
-; Submitted by Wood
+; Submitted by rajab
 ; 1,2,4,8,10,14,20,22,26,28,32,34,40,46,52,56,62,64,68,70,74,80,92,94,98,110,112,116,118,122,124,130,136,146,152,158,160,166,172,176,178,182,188,190,194,196,200,218,220,224,238,244,248,256,260,262,266,274,286,290,298,314,320,322,326,328,332,334,340,350,356,358,370,374,376,382,398,400,404,406
 
 #offset 1
 
-sub $0,1
 mov $2,6
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
+sub $0,1
+mov $1,$0
+pow $1,5
+lpb $1
+  mov $3,$2
+  add $3,1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  sub $1,$0
   add $2,10
-  sub $3,$0
 lpe
 pow $2,$0
 mov $0,$2

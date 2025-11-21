@@ -1,5 +1,5 @@
 ; A140411: Conjectured complete list of squarefree numbers that can be written as a sum of at most two positive squares, but not as a sum of three positive squares.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,5,10,13,37,58,85,130
 
 #offset 1
@@ -23,6 +23,5 @@ lpb $1
   mov $4,$6
   equ $7,3
 lpe
-mov $1,$4
-add $1,1
-mov $0,$1
+mov $0,$4
+add $0,1

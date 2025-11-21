@@ -1,13 +1,12 @@
 ; A044969: Numbers whose base-3 representation contains no 0's and exactly four 1's.
-; Submitted by damotbe
+; Submitted by Minoer
 ; 40,122,124,130,148,202,368,374,376,392,394,400,446,448,454,472,608,610,616,634,688,1106,1124,1130,1132,1178,1184,1186,1202,1204,1210,1340,1346,1348,1364,1366,1372,1418,1420,1426,1444
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,4
 lpb $2
   mov $5,6

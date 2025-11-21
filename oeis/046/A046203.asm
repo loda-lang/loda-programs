@@ -1,5 +1,5 @@
 ; A046203: Even numbers in the triangle of denominators in Leibniz's Harmonic Triangle.
-; Submitted by Kotenok2000
+; Submitted by DukeBox
 ; 2,2,6,4,12,12,4,20,30,20,6,30,60,60,30,6,42,140,42,8,56,168,280,280,168,56,8,72,252,504,630,504,252,72,10,90,360,840,1260,1260,840,360,90,10,110,1320,2310,2772,2310,1320,110,12,132,660,1980,3960,5544,5544
 
 #offset 1
@@ -17,19 +17,14 @@ lpb $2
   nrt $7,2
   sub $7,1
   div $7,2
-  mov $8,$7
-  add $8,1
-  bin $8,2
-  sub $3,$8
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $3,$6
   add $7,1
   bin $7,$3
   mul $3,$7
-  mul $3,2
-  sub $3,1
-  div $3,2
-  add $3,1
   mov $5,$3
-  mov $6,0
   mul $3,338
   gcd $3,4
   add $3,1

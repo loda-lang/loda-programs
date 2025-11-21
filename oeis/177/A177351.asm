@@ -9,16 +9,14 @@ div $1,2
 mov $2,$1
 add $2,1
 bin $2,2
-mov $5,6
 sub $0,$2
 mov $3,$0
 sub $1,$0
 lpb $1
   sub $1,1
+  add $5,$4
   add $3,1
   mov $4,$1
   bin $4,$3
-  add $5,$4
 lpe
 mov $0,$5
-sub $0,6

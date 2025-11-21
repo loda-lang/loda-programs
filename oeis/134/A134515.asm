@@ -1,23 +1,21 @@
 ; A134515: Third column (k=2) of triangle A134832 (circular succession numbers).
-; Submitted by Penguin
+; Submitted by Science United
 ; 1,0,0,10,15,168,1008,8244,73125,726440,7939008,94744494,1225760627,17088219120,255365758560,4072255216296,69021889788969,1239055874931312,23484788783212480,468656477004105810,9821896865573503095
 
-mov $1,$0
-add $1,1
+add $0,1
 mov $2,1
-mov $3,1
+add $2,$0
 mov $4,$0
 lpb $4
-  add $5,1
+  equ $5,0
+  add $1,$5
   mul $2,$4
-  div $2,$5
+  div $2,$1
   mul $3,-1
   add $3,$2
-  mul $2,$5
+  mul $2,$1
   sub $4,1
+  div $5,$1
 lpe
 mov $0,$3
-mul $0,$1
-add $1,1
-mul $0,$1
 div $0,2

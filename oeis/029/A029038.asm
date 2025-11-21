@@ -1,18 +1,16 @@
-; A029038: Expansion of 1/((1-x)(1-x^3)(1-x^4)(1-x^12)).
-; Submitted by Mumps
+; A029038: Expansion of 1/((1-x)*(1-x^3)*(1-x^4)*(1-x^12)).
+; Submitted by Science United
 ; 1,1,1,2,3,3,4,5,6,7,8,9,12,13,14,17,20,21,24,27,30,33,36,39,45,48,51,57,63,66,72,78,84,90,96,102,112,118,124,134,144,150,160,170,180,190,200,210,225,235,245,260,275
-; Formula: a(n) = b(n+3), b(n) = b(n-3)+truncate((n-3)/4)+truncate(binomial(truncate((n-3)/4),2)/3)+1, b(2) = 0, b(1) = 0, b(0) = 0
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
   mov $2,$0
-  div $2,4
-  mov $3,$2
-  bin $2,2
-  div $2,3
-  add $2,$3
-  add $2,1
+  add $2,3
+  pow $2,2
+  add $2,9
+  div $2,24
+  sub $0,4
+  trn $0,8
   add $1,$2
 lpe
 mov $0,$1

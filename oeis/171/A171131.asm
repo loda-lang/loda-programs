@@ -1,5 +1,5 @@
 ; A171131: Primes p such that sum of divisors of p-3 is prime.
-; Submitted by mudpuppie
+; Submitted by bryentravis
 ; 5,7,19,67,4099,65539,262147,1073741827
 
 #offset 1
@@ -13,9 +13,8 @@ lpb $0
   mul $3,2
   add $3,$1
 lpe
-mov $0,$3
-add $0,1
 mov $2,2
-pow $2,$0
+pow $2,$3
 mov $0,$2
+mul $0,2
 add $0,3

@@ -1,12 +1,11 @@
 ; A133284: Indices of the 12-gonal numbers which are also centered 12-gonal number or numbers X such that 30*X^2-24*X+3 is a square.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,13,277,6073,133321,2926981,64260253,1410798577,30973308433,680001986941,14929070404261,327759546906793,7195780961545177,157979421607087093,3468351494394370861,76145753455069071841
-; Formula: a(n) = floor(c(n-1)/5)+1, b(n) = 20*c(n-1)+b(n-1), b(1) = 60, b(0) = 0, c(n) = 21*c(n-1)+b(n-1), c(1) = 63, c(0) = 3
+; Formula: a(n) = floor(b(n)/100)+1, b(n) = 20*d(n-1), b(2) = 1260, b(1) = 60, b(0) = 0, c(n) = 20*d(n-1)+c(n-1), c(2) = 1320, c(1) = 60, c(0) = 0, d(n) = 21*d(n-1)+c(n-1), d(2) = 1383, d(1) = 63, d(0) = 3
 
 #offset 1
 
 mov $3,3
-sub $0,1
 lpb $0
   sub $0,1
   mov $1,$3
@@ -14,6 +13,6 @@ lpb $0
   add $2,$1
   add $3,$2
 lpe
-mov $0,$3
-div $0,5
+mov $0,$1
+div $0,100
 add $0,1

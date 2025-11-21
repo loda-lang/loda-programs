@@ -1,14 +1,11 @@
 ; A011560: Stirling numbers of second kind S2(11,n).
-; Submitted by Science United
+; Submitted by win prion
 ; 1,1023,28501,145750,246730,179487,63987,11880,1155,55,1
 
 #offset 1
 
 add $0,54
 mov $1,$0
-mov $6,0
-mov $8,0
-mov $9,0
 add $0,1
 mov $4,$0
 mul $4,8
@@ -33,7 +30,7 @@ lpb $4
   mul $8,$7
   add $9,$8
   add $6,1
-  mul $8,0
+  mov $8,0
 lpe
 mov $2,$1
 mul $2,8
@@ -47,4 +44,3 @@ mov $3,1
 fac $3,$1
 mov $0,$9
 div $0,$3
-mov $1,$3

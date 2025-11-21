@@ -1,5 +1,5 @@
 ; A175769: Maximum cardinality of isosceles sets in E^n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Torbj&#246;rn Eriksson
 ; 3,6,8,11,17,28,30,45
 
 #offset 1
@@ -19,7 +19,6 @@ lpb $0
   add $2,$4
   mul $2,$1
   add $2,$4
-  sub $1,1
 lpe
 mov $0,$2
 add $0,2

@@ -1,32 +1,30 @@
 ; A099534: a(n)=Sum of the first n decimal places of e.
-; Submitted by BrandyNOW
+; Submitted by Matthias Lehmkuhl
 ; 7,8,16,18,26,27,35,37,45,49,54,63,63,67,72,74,77,82,85,91,91,93,101,108,112,119,120,123,128,130,136,142,144,148,157,164,171,176,183,185,189,196,196,205,208,214,223,232,241,246,255,260,267,271,280,286,292
 
 #offset 1
 
-mov $3,$0
-add $3,1
+add $0,1
 mov $5,10
-pow $5,$3
-mov $4,$5
+pow $5,$0
+mov $3,$5
 pow $5,2
 mov $6,1
-mov $3,$5
-lpb $3
-  mov $3,-1
-  add $6,$7
-  mul $7,-1
-  add $7,$6
-  mov $2,$5
-  div $2,$7
-  add $3,$2
-  mov $5,$3
-  mov $7,1
-  add $1,$3
+mov $0,$5
+lpb $0
+  mov $0,-1
+  add $6,$4
+  mul $4,-1
+  add $4,$6
+  mov $1,$5
+  div $1,$4
+  add $0,$1
+  add $2,$0
+  mov $4,1
+  mov $5,$0
 lpe
-mov $3,$1
-div $3,$4
-div $3,10
-dgs $3,10
-mov $0,$3
+mov $0,$2
+div $0,$3
+div $0,10
+dgs $0,10
 sub $0,2

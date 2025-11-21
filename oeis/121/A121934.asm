@@ -1,22 +1,18 @@
 ; A121934: Smallest positive number m such that m == i (mod i+1) for all 1<=i<=n.
-; Submitted by Fardringle
+; Submitted by DukeBox
 ; 1,1,5,11,59,59,419,839,2519,2519,27719,27719,360359,360359,360359,720719,12252239,12252239,232792559,232792559,232792559,232792559,5354228879,5354228879,26771144399,26771144399,80313433199,80313433199
 
 #offset 1
 
-mov $2,1
+mov $1,1
 mov $3,2
-sub $0,1
 lpb $0
   sub $0,1
-  gcd $1,$3
-  dif $2,$1
-  mov $1,$2
-  mul $2,$3
-  add $3,1
+  gcd $2,$1
+  dif $3,$2
+  mov $2,$3
+  mul $3,$1
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$3
 sub $0,1
-div $0,2
-mul $0,2
-add $0,1

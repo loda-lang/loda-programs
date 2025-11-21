@@ -7,5 +7,7 @@
 mov $1,$0
 seq $0,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
 seq $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+fac $2,$0
+mov $0,$2
 dif $0,$1

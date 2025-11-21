@@ -1,14 +1,15 @@
 ; A014476: Triangular array formed from even elements to right of middle of rows of Pascal's triangle.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 4,10,6,56,28,8,126,84,36,210,120,10,462,330,792,220,66,12,1716,286,78,2002,364,14,11440,8008,4368,1820,560,120,16,24310,19448,12376,6188,2380,680,136,43758,31824,18564,8568,3060,816,18,92378,75582,50388
 
 #offset 1
 
+mov $2,$0
 sub $0,1
-mov $2,3551
-sub $2,$0
+add $2,3
+pow $2,2
 lpb $2
-  sub $2,36
+  sub $2,3
   mov $3,$1
   add $3,1
   mov $6,$3
@@ -19,14 +20,12 @@ lpb $2
   sub $7,1
   pow $7,2
   div $7,4
-  add $7,1
   sub $6,$7
-  mov $7,$6
-  add $7,1
   mov $5,$3
-  bin $5,$7
+  bin $5,$6
+  mov $8,$5
+  pow $5,2
   mov $3,$5
-  mul $3,338
   gcd $3,4
   add $3,1
   equ $3,5
@@ -37,4 +36,4 @@ lpb $2
   equ $4,$0
   mul $2,$4
 lpe
-mov $0,$5
+mov $0,$8

@@ -4,20 +4,19 @@
 
 #offset 5
 
-mov $4,2
-sub $0,2
+sub $0,1
 lpb $0
   mul $2,$0
+  add $2,$4
+  mul $4,$0
   add $0,1
   mul $1,$0
   add $1,$5
+  add $4,$1
   mul $5,$0
   add $5,$3
-  add $2,$1
   mul $3,$0
-  add $3,$4
-  mul $4,$0
+  max $3,1
   sub $0,2
 lpe
 mov $0,$2
-div $0,2

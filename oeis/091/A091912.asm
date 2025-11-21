@@ -1,81 +1,35 @@
 ; A091912: Numerators of Taylor series for log(tan(x)+1/cos(x)).
-; Submitted by http://jkfs.petrsu.ru/radio.m3u8
+; Submitted by DukeBox
 ; 1,1,1,61,277,50521,41581,199360981,228135437,2404879675441,14814847529501,69348874393137901,238685140977801337,4087072509293123892361,454540704683713199807,441543893249023104553682821,2088463430347521052196056349,80723299235887898062168247453281,17140149829321289863761779489089,23489580527043108252017828576198947741,14488927529868273188172835884298367497,10364622733519612119397957304745185976310201,1589515884519518540721608102017614123903854761,350923027193976051443948867093355168290742509719
-; Formula: a(n) = truncate(truncate(A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))/gcd((2*n)!,A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))))/gcd(truncate((-10*n+binomial(10*n+8,3))/50),truncate(A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))/gcd((2*n)!,A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))))))
 
 mov $1,$0
-mul $1,10
-mov $4,$0
-add $4,$0
-bin $4,2
-add $4,1
-mov $8,$4
-mul $8,8
-nrt $8,2
-sub $8,1
-div $8,2
-add $8,1
-pow $8,2
-sub $8,$4
-mov $4,$8
-mul $4,8
-nrt $4,2
-div $4,2
-mov $5,$8
-add $5,$4
-mov $4,$5
-add $4,1
-mov $6,$5
-add $6,2
-mov $9,$6
-mul $9,8
-nrt $9,2
-sub $9,1
-div $9,2
-mov $10,$9
-add $10,1
-bin $10,2
-sub $6,$10
-sub $6,1
-mov $11,$9
-mod $11,2
-sub $9,$6
-mul $9,$11
-mul $11,$6
-sub $6,$11
-add $6,$9
-add $6,$4
-add $4,1
-mov $7,$4
-mul $7,8
-nrt $7,2
-div $7,2
-bin $7,2
-sub $4,$7
-sub $6,$4
-mov $4,$6
-add $4,1
-mov $12,$4
-mul $12,8
-nrt $12,2
-sub $12,1
-div $12,2
-add $12,1
-pow $12,2
-sub $12,$4
-mov $4,$12
-seq $4,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
-mov $2,$0
-mov $2,$4
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$4
-div $2,$0
-mov $3,$1
-add $1,8
-bin $1,3
-sub $1,$3
-div $1,50
-gcd $1,$2
-mov $0,$2
+mov $8,$0
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,$6
+  sub $2,$4
+  mov $6,$5
+  add $6,1
+  trn $6,$0
+  pow $6,$8
+  add $6,$2
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $4,$6
+  add $5,1
+  mul $6,-1
+  mul $9,-1
+  add $9,$7
+  sub $4,$6
+lpe
+mul $1,2
+mov $3,2
+fac $3,$1
+mul $1,$3
+gcd $1,$9
+mov $0,$9
 div $0,$1
+dir $0,2

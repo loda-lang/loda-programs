@@ -1,15 +1,12 @@
 ; A045109: Numbers whose base-4 representation contains exactly four 1's and four 2's.
-; Submitted by iBezanilla
+; Submitted by DukeBox
 ; 21930,22122,22170,22182,22185,22890,22938,22950,22953,23130,23142,23145,23190,23193,23205,25962,26010,26022,26025,26202,26214,26217,26262,26265,26277,26970,26982,26985,27030,27033
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,9
-pow $2,3
+add $2,10
+pow $2,5
 lpb $2
   mov $4,1
   mov $3,$1

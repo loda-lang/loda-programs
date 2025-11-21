@@ -1,16 +1,40 @@
 ; A023104: (2^n)-th digit of infinite string 12345678910111213141516...
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,2,4,8,1,2,3,6,1,0,3,1,0,2,7,6,5,4,0,9,1,4,7,1,5,5,7,0,2,5,1,5,5,5,0,4,8,1,9,0,2,2,1,0,5,6,8,1,9,1,8,2,3,5,4,4,4,3,8,7,0,0,6,3,1,2,1,5,5,0,1,1,5,9,9,3,0,1,6,4
 
-mov $1,$0
-mov $0,2
-pow $0,$1
-mov $1,$0
+mov $1,2
+pow $1,$0
+mov $0,$1
+sub $0,1
 mov $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,1
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
-  mov $1,1
+mov $6,$0
+lpb $6
+  sub $6,1
+  mov $7,10
+  pow $7,$2
+  mov $3,$4
+  mov $4,$2
+  mul $4,$7
+  div $7,9
+  sub $4,$7
+  mov $5,$0
+  geq $5,$4
+  mul $6,$5
+  add $2,$5
 lpe
+mov $5,$0
+sub $5,$3
+mod $5,$2
+mov $6,$2
+sub $6,$5
+sub $6,1
+mov $5,10
+pow $5,$6
+mov $4,10
+pow $4,$2
+div $4,10
+sub $0,$3
+div $0,$2
+add $0,$4
+div $0,$5
+mod $0,10

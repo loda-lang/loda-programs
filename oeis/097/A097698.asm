@@ -1,18 +1,23 @@
 ; A097698: Numbers k such that both 4*k^2 - 3 and 4*k^2 + 3 are primes.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 2,4,5,7,32,46,56,70,73,86,109,149,152,161,163,170,175,178,208,220,235,254,277,280,290,313,317,326,334,343,347,352,364,368,373,385,403,409,434,446,460,527,541,551,565,578,598,628,632,689,709,710,737,761,812,814,823,826,892,893,950,956,962,989,1018,1034,1039,1046,1111,1117,1124,1132,1148,1162,1178,1183,1222,1243,1244,1249
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,7
-pow $2,3
+mov $1,-1
+mov $2,$0
+add $2,8
+pow $2,4
 lpb $2
   mov $7,$6
+  add $7,7
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
   mov $3,$6
-  add $3,6
+  sub $3,$7
+  add $3,1
+  gcd $7,2
   mul $7,$3
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$7
@@ -20,13 +25,14 @@ lpb $2
   mov $4,$0
   max $4,0
   equ $4,$0
-  max $5,1
-  add $5,3
   add $5,$1
   mul $2,$4
-  sub $2,17
+  sub $2,18
   mov $6,$5
+  sub $6,$1
+  add $5,4
 lpe
 mov $0,$1
+sub $0,5
 div $0,4
-add $0,1
+add $0,2

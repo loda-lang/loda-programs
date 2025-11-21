@@ -1,17 +1,21 @@
 ; A074745: a(n) = sum_{k=1..n} prime(k)*prime(k+1).
+; Submitted by DukeBox
 ; 6,21,56,133,276,497,820,1257,1924,2823,3970,5487,7250,9271,11762,14889,18488,22575,27332,32515,38282,44839,52226,60859,70656,81059,92080,103743,116060,130411,147048,164995,184038,204749,227248,250955
-; Formula: a(n) = b(n-1)+6, b(n) = b(n-1)+A013636(A000040(n+1)), b(0) = 0
 
 #offset 1
 
 sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,40 ; The prime numbers.
-  seq $2,13636 ; a(n) = n*nextprime(n).
-  sub $0,1
-  add $1,$2
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  mod $0,110
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  seq $0,13636 ; a(n) = n*nextprime(n).
+  add $2,$0
 lpe
-add $1,6
-mov $0,$1
+mov $0,$2

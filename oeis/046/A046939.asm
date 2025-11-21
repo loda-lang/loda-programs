@@ -1,11 +1,10 @@
 ; A046939: "Magic numbers" for the number of neutrons in nucleus.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Ken_g6
 ; 2,8,14,20,50,82,126,184
 
 #offset 1
 
 mov $5,$0
-sub $0,1
 lpb $5
   max $5,$3
   sub $5,1

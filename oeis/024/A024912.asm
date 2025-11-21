@@ -1,19 +1,21 @@
 ; A024912: Numbers k such that 10*k + 1 is prime.
-; Submitted by Science United
+; Submitted by rajab
 ; 1,3,4,6,7,10,13,15,18,19,21,24,25,27,28,31,33,40,42,43,46,49,52,54,57,60,63,64,66,69,70,75,76,81,82,88,91,94,97,99,102,103,105,106,109,115,117,118,120,123,129,130,132,136,138,145,147,148,151,153,157,160,162,172,174,180,181,183,186,187,190,193,195,201,208,211,213,214,216,222
 
 #offset 1
 
 add $0,1
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
+mov $1,$0
+pow $1,6
+lpb $1
+  mov $3,$2
+  add $3,1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  sub $1,$0
   add $2,10
-  sub $3,$0
 lpe
 mov $0,$2
+sub $0,10
 div $0,10
+add $0,1

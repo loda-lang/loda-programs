@@ -1,21 +1,15 @@
 ; A132796: Second diagonal of Gely numbers.
-; Submitted by William Michael Kanar
+; Submitted by BrandyNOW
 ; 0,1,0,5,6,21,36,85,162,341,672,1365,2718,5461,10908,21845,43674,87381,174744,349525,699030,1398101,2796180,5592405,11184786,22369621,44739216,89478485,178956942,357913941,715827852
-; Formula: a(n) = truncate((-2*n*c(n)+b(n))/2), b(n) = 2*b(n-1)+2*c(n-1), b(2) = 4, b(1) = 2, b(0) = 0, c(n) = binomial(c(n-1)-1,4), c(2) = 1, c(1) = 0, c(0) = 1
+; Formula: a(n) = n*(2*truncate((n-1)/2)-n+1)+floor((2*2^n)/3)
 
-mov $1,1
-mov $3,1
-lpb $0
-  sub $0,1
-  sub $1,1
-  add $2,$3
-  mul $2,2
-  sub $3,1
-  bin $3,4
-lpe
-sub $1,1
+mov $1,2
+pow $1,$0
 mul $1,2
-mul $1,$3
-add $1,$2
-div $1,2
-mov $0,$1
+div $1,3
+mov $3,$0
+sub $3,1
+mod $3,2
+sub $2,$3
+mul $0,$2
+add $0,$1

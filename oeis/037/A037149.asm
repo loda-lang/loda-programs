@@ -1,5 +1,5 @@
 ; A037149: Denominators of Fourier coefficients of Eisenstein series of degree 2 and weight 12 when evaluated at Gram(A_2)*z.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,691,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953,53678953
 ; Formula: a(n) = 53678262*(n>=3)+690*(n>=2)+1
 
@@ -11,6 +11,5 @@ mov $1,$0
 geq $1,3
 mul $1,53678262
 add $2,$1
-mul $0,0
-add $0,1
+mov $0,1
 add $0,$2

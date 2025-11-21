@@ -4,16 +4,43 @@
 
 #offset 1
 
-mov $3,2
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $1,$3
-  add $1,3
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
-  sub $2,$0
-  add $3,4
+mov $10,$0
+mov $12,$0
+lpb $12
+  clr $0,10
+  sub $12,1
+  mov $0,$10
+  sub $0,$12
+  mov $6,$0
+  mov $8,2
+  lpb $8
+    sub $8,1
+    mov $0,$6
+    add $0,$8
+    sub $0,1
+    mov $1,2
+    mov $3,$0
+    pow $3,54
+    lpb $3
+      mov $2,$1
+      add $2,3
+      seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+      sub $0,$2
+      add $1,4
+      sub $3,$0
+    lpe
+    mov $0,$1
+    div $0,4
+    mul $0,2
+    mov $9,$8
+    mul $9,$0
+    add $7,$9
+  lpe
+  min $6,1
+  mul $6,$0
+  mov $0,$7
+  sub $0,$6
+  div $0,2
+  add $11,$0
 lpe
-mov $0,$3
-div $0,4
+mov $0,$11

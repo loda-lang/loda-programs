@@ -1,12 +1,11 @@
 ; A008832: Discrete logarithm of n to the base 2 modulo 19.
-; Submitted by UBT - Mikeejones
+; Submitted by Minoer
 ; 0,1,13,2,16,14,6,3,8,17,12,15,5,7,11,4,10,9
 
 #offset 1
 
 mov $1,280
 lpb $1
-  sub $1,12
   mov $2,2
   sub $2,$0
   lpb $2

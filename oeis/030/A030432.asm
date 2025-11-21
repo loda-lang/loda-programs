@@ -1,23 +1,19 @@
 ; A030432: Primes of form 10n+7.
-; Submitted by ahorek's team
+; Submitted by rajab
 ; 7,17,37,47,67,97,107,127,137,157,167,197,227,257,277,307,317,337,347,367,397,457,467,487,547,557,577,587,607,617,647,677,727,757,787,797,827,857,877,887,907,937,947,967,977,997,1087,1097,1117,1187,1217,1237,1277,1297,1307,1327,1367,1427,1447,1487,1567,1597,1607,1627,1637,1657,1667,1697,1747,1777,1787,1847,1867,1877,1907,1987,1997,2017,2027,2087
 
 #offset 1
 
-sub $0,1
-mov $2,16
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
+mov $2,6
+mov $1,$0
+pow $1,9
+lpb $1
+  mov $3,$2
+  add $3,1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  sub $1,$0
   add $2,10
-  sub $3,$0
 lpe
-pow $2,$0
+add $2,1
 mov $0,$2
-div $0,10
-mul $0,10
-add $0,7

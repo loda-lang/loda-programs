@@ -1,14 +1,10 @@
 ; A040155: Continued fraction for sqrt(168).
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 12,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1,24,1
-; Formula: a(n) = truncate((23*(-1)^n-24*(n==0)+25)/2)
+; Formula: a(n) = gcd(n%2,12*binomial(0,n)-24)
 
-mov $2,-1
-pow $2,$0
-mul $2,23
-mov $1,$2
-add $1,25
-equ $0,0
-mul $0,-24
-add $0,$1
-div $0,2
+bin $1,$0
+sub $1,2
+mul $1,12
+mod $0,2
+gcd $0,$1

@@ -1,7 +1,7 @@
 ; A121262: The characteristic function of the multiples of four.
 ; Submitted by Cruncher Pete
 ; 1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
-; Formula: a(n) = truncate(gcd(n,-4)/3)
+; Formula: a(n) = floor(gcd(n,-4)/3)
 
 gcd $0,-4
 div $0,3

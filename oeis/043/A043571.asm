@@ -1,13 +1,13 @@
 ; A043571: Numbers whose base-2 representation has exactly 4 runs.
-; Submitted by Penguin
+; Submitted by DukeBox
 ; 10,18,20,22,26,34,36,38,40,44,46,50,52,54,58,66,68,70,72,76,78,80,88,92,94,98,100,102,104,108,110,114,116,118,122,130,132,134,136,140,142,144,152,156,158,160,176,184,188,190,194,196
 
 #offset 1
 
+mov $2,$0
 sub $0,1
-mov $1,2
-mov $2,45
-add $2,$0
+add $2,10
+pow $2,2
 lpb $2
   mov $3,$1
   seq $3,37800 ; Number of occurrences of 01 in the binary expansion of n.

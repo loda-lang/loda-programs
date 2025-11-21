@@ -1,11 +1,9 @@
 ; A018360: Divisors of 260.
-; Submitted by zombie67 [MM]
+; Submitted by Science United
 ; 1,2,4,5,10,13,20,26,52,65,130,260
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

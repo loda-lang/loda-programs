@@ -1,16 +1,15 @@
 ; A192668: Floor-Sqrt transform of superfactorials (A000178).
-; Submitted by [AF] Kalianthys
+; Submitted by iBezanilla
 ; 1,1,1,3,16,185,4988,354134,71109667,42836123450,81600285441318,515548511098996334,11283348939893661586501,890385701589932763452676123,262895016275494870674135139820802,300629890583706167610723324054426034948
-; Formula: a(n) = sqrtint(c(n)), b(n) = b(n-1)*(n+1), b(2) = 6, b(1) = 2, b(0) = 1, c(n) = c(n-1)*b(n-1), c(2) = 2, c(1) = 1, c(0) = 1
+; Formula: a(n) = sqrtint(c(n)), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*c(n-1)*b(n-1), c(2) = 2, c(1) = 1, c(0) = 1
 
 mov $1,1
-mov $2,1
 mov $3,1
 lpb $0
   sub $0,1
   add $2,1
-  mul $3,$1
   mul $1,$2
+  mul $3,$1
 lpe
 mov $0,$3
 nrt $0,2

@@ -1,13 +1,11 @@
 ; A049074: Ulam's conjecture (steps to return n to 1 after division by 2 and, if needed, multiplication by 3 with 1 added).
-; Submitted by ckrause
+; Submitted by DukeBox
 ; 8,3,49,7,36,55,288,15,339,46,259,67,119,302,694,31,214,357,519,66,148,281,633,91,658,145,101440,330,442,724,101104,63,841,248,540,393,535,557,2344,106,101331,190,1338,325,497,679,100979,139,806,708,1130,197
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-add $1,5
+add $1,4
 pow $1,2
 lpb $1
   mov $2,2

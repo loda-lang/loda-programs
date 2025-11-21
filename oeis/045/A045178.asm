@@ -1,13 +1,11 @@
 ; A045178: Numbers whose base-5 representation contains exactly one 0 and two 2's.
-; Submitted by Landjunge
+; Submitted by Tom Poleski
 ; 52,60,137,177,185,257,261,263,264,267,272,277,285,301,303,304,305,315,320,327,335,352,360,387,427,435,512,552,560,662,682,686,688,689,692,697,712,737,762,802,810,882,886,888,889,892
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,4
 lpb $2
   mov $4,-5

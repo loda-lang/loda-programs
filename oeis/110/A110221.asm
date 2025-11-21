@@ -1,11 +1,9 @@
 ; A110221: Triangle read by rows: T(n,k) (0<=k<=floor(n/2)) is the number of Delannoy paths of length n, having k ED's.
-; Submitted by Technik007[CZ]
+; Submitted by DukeBox
 ; 1,3,11,2,45,18,195,120,6,873,720,90,3989,4110,870,20,18483,22806,6930,420,86515,124264,49560,5320,70,408105,668520,331128,52920,1890,1936881,3562830,2111760,456120,29610,252,9238023,18850590,13020480,3575880
 
 add $0,1
 mov $3,$0
-mov $9,0
-mov $11,0
 mul $0,4
 sub $0,3
 nrt $0,2
@@ -41,9 +39,8 @@ add $6,1
 bin $6,2
 mov $0,$3
 sub $0,$6
-sub $0,1
-mul $0,-1
 add $0,$7
+sub $0,1
 lpb $0
   sub $0,1
   add $8,$10

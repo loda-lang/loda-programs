@@ -1,15 +1,17 @@
 ; A049341: a(n+1) = sum of digits of a(n) + a(n-1).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by BrandyNOW
 ; 3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3
+; Formula: a(n) = 3*b(n)+3, b(n) = -3*truncate((b(n-1)+b(n-2)+1)/3)+b(n-1)+b(n-2)+1, b(2) = 2, b(1) = 1, b(0) = 0
 
-mod $0,8
+mov $1,1
 lpb $0
-  sub $1,$0
-  div $0,8
-  add $0,3
+  sub $0,1
+  add $2,1
+  mod $1,3
+  add $1,$2
+  mul $2,-1
+  add $2,$1
 lpe
-mul $0,2
-sub $0,$1
-lex $0,2
+mov $0,$2
 mul $0,3
 add $0,3

@@ -1,12 +1,12 @@
 ; A033160: Begins with (2, 4); avoids 3-term arithmetic progressions.
-; Submitted by Jamie Morken(s1)
+; Submitted by [BOINCstats] CRNabein
 ; 2,4,5,7,11,13,14,16,29,31,32,34,38,40,41,43,83,85,86,88,92,94,95,97,110,112,113,115,119,121,122,124,245,247,248,250,254,256,257,259,272,274,275,277,281,283,284,286,326,328,329,331,335,337,338,340,353,355,356,358,362
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 mov $4,1
+sub $0,1
 div $0,4
 lpb $0
   mov $3,$0
@@ -18,7 +18,6 @@ lpe
 mov $0,$2
 mul $0,2
 add $0,$1
-mul $0,9
-add $0,5
-div $0,6
-add $0,2
+mul $0,3
+div $0,2
+add $0,1

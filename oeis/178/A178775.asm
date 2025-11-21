@@ -1,14 +1,13 @@
 ; A178775: Smallest prime factors of zerofull restricted pandigital numbers.
-; Submitted by Science United
+; Submitted by Steve Dodd
 ; 3,2,3,3,2,3,3,2,3,2,2,2,3,3,3,2,3,2,2,3,2,2,3,2,3,2,3,3,2,3,3,2,3,3,2,3,3,3,3,3,3,3,2,3,2,3,3,3,3,2,3,2,2,2,3,2,3,3,2,3,3,2,3,3,2,3,2,2,2,3,2,3,3,3,3,2,3,2,3,3
 
 #offset 1
 
 mov $1,1
 mov $2,1
-mov $3,18
+mov $3,8
 lpb $3
-  sub $3,1
   div $3,2
   sub $0,1
   add $1,1

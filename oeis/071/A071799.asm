@@ -1,20 +1,16 @@
 ; A071799: Number of lattice paths in the lattice [0..2n] X [0..2n] which do not pass through the point (n,n).
-; Submitted by Jon Maiga
+; Submitted by [SG]KidDoesCrunch
 ; 2,34,524,7970,121252,1850380,28337976,435443490,6711230900,103711749284,1606464657096,24935144010764,387746052588104,6039349005200440,94203136553911024,1471326505700038434,23007323485217888340,360154459563530689204,5643332975601670914600
+; Formula: a(n) = -binomial(2*n,floor((2*n)/2))^2+binomial(4*n,2*n)
 
 #offset 1
 
-sub $0,1
-mov $3,2
-add $3,$0
-add $3,$0
-lpb $0
-  mov $2,$3
-  bin $2,$0
-  pow $2,2
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
 mul $0,2
-add $0,2
+mov $1,$0
+mov $2,$0
+add $0,$2
+bin $0,$1
+div $2,2
+bin $1,$2
+pow $1,2
+sub $0,$1

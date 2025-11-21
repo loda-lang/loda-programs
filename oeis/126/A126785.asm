@@ -1,19 +1,19 @@
 ; A126785: Numbers k such that 10*k + 11 is prime.
-; Submitted by Wood
+; Submitted by rajab
 ; 0,2,3,5,6,9,12,14,17,18,20,23,24,26,27,30,32,39,41,42,45,48,51,53,56,59,62,63,65,68,69,74,75,80,81,87,90,93,96,98,101,102,104,105,108,114,116,117,119,122,128,129,131,135,137,144,146,147,150,152,156,159,161,171,173,179,180,182,185,186,189,192,194,200,207,210,212,213,215,221
 
 #offset 1
 
 add $0,1
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
+mov $1,$0
+pow $1,6
+lpb $1
+  mov $3,$2
+  add $3,1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  sub $1,$0
   add $2,10
-  sub $3,$0
 lpe
 mov $0,$2
 sub $0,10

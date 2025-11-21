@@ -1,5 +1,5 @@
 ; A144031: INVERT transform of A002321, Mertens's function.
-; Submitted by Athlici
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,-2,-6,-10,-13,-10,4,36,84,137,159,94,-133,-573,-1197,-1788,-1864,-647,2741,8784,16631,22920,20769,87,-49372,-130497,-226511,-286165,-214344,117678,822398,1889427,3022590,3465187,1927286,-3188290,-13016609,-26739085
 
 #offset 1
@@ -10,12 +10,13 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
+    trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
     mov $9,10
     add $9,$5
     mov $10,3
-    sub $4,1
     mul $7,$$9
     add $5,1
     add $6,$7

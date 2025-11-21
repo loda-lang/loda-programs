@@ -1,49 +1,37 @@
 ; A172048: a(n) = A104275(n) + A014076(n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Daniele Casale
 ; 2,14,23,32,38,41,50,53,59,68,74,77,83,86,95,98,104,113,116,122,128,131,137,140,143,149,158,167,173,176,179,182,185,188,194,200,203,212,215,218,221,230,233,239,242,248,254,257,263,266,275,278,281,284,293,302,305,308,311,314,320,323,326,329,332,338,347,353,356,365,368,371,374,380,383,389,392,398,401,410
 
 #offset 1
 
-mov $3,1
-mov $1,$0
-lpb $1
-  mov $2,$1
-  lpb $2
-    mov $2,1
-    mov $3,$0
+mov $2,$0
+sub $0,1
+pow $2,2
+lpb $2
+  mov $6,$1
+  add $6,1
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$1
+  mul $5,$6
+  mov $3,$1
+  lpb $3
     sub $3,1
-    mov $6,$0
-    pow $6,2
-    lpb $6
-      mov $7,$5
-      mov $9,0
-      add $5,2
-      add $7,7
-      lpb $7
-        gcd $9,3
-        mov $4,$7
-        div $4,5
-        lpb $4
-          mov $8,$7
-          mod $8,$9
-          add $9,2
-          sub $4,$8
-        lpe
-        div $7,$9
-        pow $7,2
-        mov $9,1
-      lpe
-      add $3,$9
-      sub $3,1
-      sub $6,$3
-    lpe
-    mov $3,$5
-    add $3,7
-    sub $0,$1
+    sub $3,$1
   lpe
-  div $1,$3
+  sub $3,$5
+  trn $3,1
+  add $3,$4
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $1,2
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$3
+mov $0,$1
 div $0,2
 mul $0,3
 add $0,2

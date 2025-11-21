@@ -1,11 +1,9 @@
 ; A018271: Divisors of 72.
-; Submitted by emoga
+; Submitted by [Trident Mindset] Timothy Ray Green
 ; 1,2,3,4,6,8,9,12,18,24,36,72
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

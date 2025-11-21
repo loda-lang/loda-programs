@@ -1,13 +1,13 @@
 ; A080336: Partial sums of A007001.
-; Submitted by planetclown
+; Submitted by Science United
 ; 0,1,3,4,6,9,10,12,13,15,18,19,21,24,28,29,31,32,34,37,38,40,41,43,46,47,49,52,56,57,59,60,62,65,66,68,71,75,76,78,81,85,90,91,93,94,96,99,100,102,103,105,108,109,111,114,118,119,121
-; Formula: a(n) = a(n-1)+A080237(n+22), a(0) = 0
+; Formula: a(n) = a(n-1)+A007001(n), a(1) = 1, a(0) = 0
 
 lpb $0
-  mov $2,$0
-  add $2,22
-  seq $2,80237 ; Start with 1 and apply the process: k-th run is 1, 2, 3, ..., a(k-1)+1.
   sub $0,1
-  add $1,$2
+  add $2,1
+  mov $3,$2
+  seq $3,7001 ; Trajectory of 1 under the morphism 1 -> 12, 2 -> 123, 3 -> 1234, etc.
+  add $1,$3
 lpe
 mov $0,$1
