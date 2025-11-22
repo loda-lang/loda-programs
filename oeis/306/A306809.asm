@@ -1,35 +1,27 @@
 ; A306809: Binomial transform of the continued fraction expansion of e.
-; Submitted by loader3229
+; Submitted by Josemi
 ; 2,3,6,12,23,46,98,213,458,972,2051,4322,9098,19113,40054,83748,174767,364086,757298,1572861,3262242,6757500,13981019,28894090,59652314,123032913,253522382,521957844,1073741831,2207135966,4533576578,9305762469,19088743546,39131924268
 
-mov $1,2
-mov $2,3
-mov $3,6
-mov $4,12
-mov $5,23
-mov $6,46
-mov $7,98
-lpb $0
-  mul $1,4
-  rol $1,7
-  mov $8,$1
-  mul $8,-16
-  add $7,$8
-  mov $8,$2
-  mul $8,33
-  add $7,$8
-  mov $8,$3
-  mul $8,-43
-  add $7,$8
-  mov $8,$4
-  mul $8,37
-  add $7,$8
-  mov $8,$5
-  mul $8,-21
-  add $7,$8
-  mov $8,$6
-  mul $8,7
-  sub $0,1
-  add $7,$8
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  mul $0,2
+  mov $6,$0
+  sub $6,1
+  mov $5,$6
+  mul $5,2
+  dif $5,3
+  trn $6,$5
+  mov $0,$6
+  add $0,1
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$3

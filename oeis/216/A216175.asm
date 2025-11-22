@@ -5,49 +5,49 @@
 #offset 1
 
 sub $0,1
+mov $25,$0
 mov $27,$0
-mov $29,$0
-add $29,1
-lpb $29
-  clr $0,27
-  sub $29,1
-  mov $0,$27
-  sub $0,$29
+add $27,1
+lpb $27
+  clr $0,25
+  sub $27,1
+  mov $0,$25
+  sub $0,$27
+  mov $22,$0
   mov $24,$0
-  mov $26,$0
-  add $26,1
-  lpb $26
-    clr $0,24
-    sub $26,1
-    mov $0,$24
-    sub $0,$26
+  add $24,1
+  lpb $24
+    clr $0,22
+    sub $24,1
+    mov $0,$22
+    sub $0,$24
+    mov $19,$0
     mov $21,$0
-    mov $23,$0
-    add $23,1
-    lpb $23
-      clr $0,21
-      sub $23,1
-      mov $0,$21
-      sub $0,$23
+    add $21,1
+    lpb $21
+      clr $0,19
+      sub $21,1
+      mov $0,$19
+      sub $0,$21
+      mov $16,$0
       mov $18,$0
-      mov $20,$0
-      add $20,1
-      lpb $20
-        sub $20,1
-        mov $0,$18
-        sub $0,$20
-        add $0,1
+      add $18,1
+      lpb $18
+        sub $18,1
+        mov $0,$16
+        sub $0,$18
+        sub $0,8
         pow $0,2
-        sub $0,1
-        mod $0,6
         div $0,2
         add $0,1
-        add $19,$0
+        mod $0,3
+        add $0,1
+        add $17,$0
       lpe
-      add $22,$19
+      add $20,$17
     lpe
-    add $25,$22
+    add $23,$20
   lpe
-  add $28,$25
+  add $26,$23
 lpe
-mov $0,$28
+mov $0,$26

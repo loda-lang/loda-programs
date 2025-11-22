@@ -1,20 +1,15 @@
 ; A289405: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 566", based on the 5-celled von Neumann neighborhood.
-; Submitted by Romeo Mikuli?
+; Submitted by BrandyNOW
 ; 1,10,110,1100,11100,111000,1111000,11110000,111110000,1111100000,11111100000,111111000000,1111111000000,11111110000000,111111110000000,1111111100000000,11111111100000000,111111111000000000,1111111111000000000,11111111110000000000,111111111110000000000,1111111111100000000000,11111111111100000000000,111111111111000000000000,1111111111111000000000000,11111111111110000000000000,111111111111110000000000000,1111111111111100000000000000,11111111111111100000000000000,111111111111111000000000000000
-; Formula: a(n) = truncate((9*truncate((c(n+1)*(min(n+1,(n+1)%2)*c(n+1)+b(n+1)))/3)-27)/27)+1, b(n) = b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 10*c(n-2), c(3) = 30, c(2) = 30, c(1) = 3, c(0) = 3
+; Formula: a(n) = truncate((10^(n+1)-10^floor((n+1)/2))/9)
 
-mov $2,3
 add $0,1
-lpb $0
-  sub $0,2
-  add $1,$2
-  mul $2,10
-lpe
-mul $0,$2
-add $0,$1
-mul $0,$2
-div $0,3
-mul $0,9
-sub $0,27
-div $0,27
-add $0,1
+mov $3,$0
+div $3,2
+mov $1,10
+pow $1,$3
+mov $2,10
+pow $2,$0
+sub $2,$1
+mov $0,$2
+div $0,9

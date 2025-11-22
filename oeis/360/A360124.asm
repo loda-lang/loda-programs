@@ -1,29 +1,25 @@
 ; A360124: Numbers k such that A360121(k) is odd, but A347389(k) is even.
-; Submitted by Science United
+; Submitted by davis49
 ; 8,16,32,64,72,128,144,200,256,288,392,400,512,576,648,784,800,968,1024,1152,1296,1352,1568,1600,1800,1936,2048,2304,2312,2592,2704,2888,3136,3200,3528,3600,3872,4096,4232,4608,4624,5000,5184,5408,5776,5832,6272,6400,6728,7056,7200,7688,7744,8192
-; Formula: a(n) = 8*truncate((2*b(n+1)+41)/2)-160, b(n) = min(c(n-1)^2,d(n-1)+binomial(2*d(n-1),2)), b(2) = 1, b(1) = 0, b(0) = 0, c(n) = ((c(n-1)^2)==min(c(n-1)^2,d(n-1)+binomial(2*d(n-1),2)))+c(n-1), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = ((d(n-1)+binomial(2*d(n-1),2))==min(c(n-1)^2,d(n-1)+binomial(2*d(n-1),2)))+d(n-1), d(2) = 1, d(1) = 1, d(0) = 0
+; Formula: a(n) = 8*d(n+1), b(n) = ((b(n-1)+binomial(2*b(n-1),2))==min(c(n-1)^2,b(n-1)+binomial(2*b(n-1),2)))+b(n-1), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = ((c(n-1)^2)==min(c(n-1)^2,b(n-1)+binomial(2*b(n-1),2)))+c(n-1), c(2) = 2, c(1) = 1, c(0) = 0, d(n) = min(c(n-1)^2,b(n-1)+binomial(2*b(n-1),2)), d(2) = 1, d(1) = 0, d(0) = 0
 
 #offset 1
 
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,$3
-  pow $5,2
-  mov $2,$4
-  mul $2,2
-  bin $2,2
+  mov $4,$2
+  pow $4,2
+  mov $3,$1
+  mul $3,2
+  bin $3,2
+  add $3,$1
+  mov $5,$4
+  min $5,$3
+  equ $3,$5
+  equ $4,$5
+  add $1,$3
   add $2,$4
-  mov $1,$5
-  min $1,$2
-  equ $5,$1
-  equ $2,$1
-  add $3,$5
-  add $4,$2
 lpe
-mov $0,$1
-mul $0,2
-add $0,41
-div $0,2
-sub $0,20
+mov $0,$5
 mul $0,8

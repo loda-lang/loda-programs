@@ -1,12 +1,9 @@
 ; A344393: T(n, k) = Eulerian1(n - k, k), for n >= 0 and 0 <= k <= floor(n/2). Triangle read by rows.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,1,1,0,1,1,1,4,0,1,11,1,1,26,11,0,1,57,66,1,1,120,302,26,0,1,247,1191,302,1,1,502,4293,2416,57,0,1,1013,14608,15619,1191,1,1,2036,47840,88234,15619,120,0,1,4083,152637,455192,156190,4293,1
 
 add $0,1
 mov $2,$0
-mov $5,0
-mov $7,0
-mov $8,0
 mul $0,4
 sub $0,3
 nrt $0,2
@@ -44,7 +41,7 @@ lpb $3
   mul $7,$6
   add $8,$7
   add $5,1
-  mul $7,0
+  mov $7,0
   sub $7,$4
 lpe
 mov $0,$8

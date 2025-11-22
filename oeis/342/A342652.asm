@@ -5,10 +5,8 @@
 #offset 2
 
 seq $0,322993 ; a(1) = 0; for n > 1, a(n) = A000265(A156552(n)).
-mul $0,2
 sub $0,1
 lpb $0
-  div $0,2
   mov $1,$0
   add $1,1
   seq $1,331410 ; a(n) is the number of iterations needed to reach a power of 2 starting at n and using the map k -> k + k/p, where p is the largest prime factor of k.

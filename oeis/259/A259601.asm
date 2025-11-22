@@ -1,7 +1,7 @@
 ; A259601: Triangular array: sums of two distinct upper Wythoff numbers.
-; Submitted by shiva
+; Submitted by [BOINCstats] CRNabein
 ; 7,9,12,12,15,17,15,18,20,23,17,20,22,25,28,20,23,25,28,31,33,22,25,27,30,33,35,38,25,28,30,33,36,38,41,43,28,31,33,36,39,41,44,46,49,30,33,35,38,41,43,46,48,51,54,33,36,38,41,44,46,49,51,54,57
-; Formula: a(n) = -binomial(floor((sqrtint(8*n-8)+1)/2),2)+floor((floor((sqrtint(8*n-8)+3)/2)+sqrtint(5*(floor((sqrtint(8*n-8)+3)/2)+8)^2)+8)/2)+floor((sqrtint(8*n-8)+3)/2)+truncate((-binomial(floor((sqrtint(8*n-8)+1)/2),2)+sqrtint(5*(-binomial(floor((sqrtint(8*n-8)+1)/2),2)+n-1)^2)+n-1)/2)+n-14
+; Formula: a(n) = -binomial(floor((sqrtint(8*n-8)+1)/2),2)+floor((floor((sqrtint(8*n-8)+3)/2)+sqrtint(5*floor((sqrtint(8*n-8)+3)/2)^2))/2)+floor((sqrtint(8*n-8)+3)/2)+truncate((-binomial(floor((sqrtint(8*n-8)+1)/2),2)+sqrtint(5*(-binomial(floor((sqrtint(8*n-8)+1)/2),2)+n-1)^2)+n-1)/2)+n-1
 
 #offset 2
 
@@ -18,7 +18,6 @@ mul $1,8
 nrt $1,2
 add $1,3
 div $1,2
-add $1,8
 mov $6,$0
 pow $6,2
 mul $6,5
@@ -37,4 +36,3 @@ add $3,$0
 add $3,$2
 mov $0,$3
 add $0,$1
-sub $0,21

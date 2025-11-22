@@ -1,19 +1,18 @@
 ; A349948: Tetrahedral-sided isosceles Heron triangle pairs.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,10,48,190,720,2698,10080,37630,140448,524170,1956240,7300798,27246960,101687050,379501248,1416317950,5285770560,19726764298,73621286640,274758382270,1025412242448,3826890587530,14282150107680,53301709843198,198924689265120
-; Formula: a(n) = 2*c(n-1)-4, b(n) = 2*c(n-1)+b(n-1), b(1) = 5, b(0) = 1, c(n) = 3*c(n-1)+b(n-1), c(1) = 7, c(0) = 2
+; Formula: a(n) = 2*floor(c(n)/2)-4, b(n) = 2*b(n-1)+c(n-1), b(1) = 2, b(0) = 0, c(n) = 3*b(n-1)+2*c(n-1), c(1) = 4, c(0) = 2
 
 #offset 1
 
-mov $1,1
 mov $2,2
-sub $0,1
 lpb $0
   sub $0,1
-  add $1,$2
+  add $2,$1
   add $1,$2
   add $2,$1
 lpe
 mov $0,$2
+div $0,2
 sub $0,2
 mul $0,2

@@ -1,9 +1,9 @@
 ; A338992: Number of vertices of a hexagonal tessellation that lie on subsequent circles centered at the center of one hexagon.
-; Submitted by Vato
+; Submitted by ledwards
 ; 0,6,6,12,12,6,12,6,12,12,12,12,18,12,12,6,12,12,12,12,24,12,6,12,12,12,6,12,12,24,12,12,12,12,12,18,12,12,12,12,18,12,12,12,24,12,12,12,12,24,6,24,12,12,12,12,6,12,24,12,12,12,12,12,12,12,24,12,18
 
 mov $2,$0
-pow $2,2
+mul $2,2
 lpb $2
   sub $2,1
   add $2,$4

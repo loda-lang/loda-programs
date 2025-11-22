@@ -16,7 +16,24 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,56273 ; Word structures of length n using a 6-ary alphabet.
+  mov $6,2
+  pow $6,$0
+  mul $6,135
+  mov $5,$6
+  mov $6,3
+  pow $6,$0
+  mul $6,40
+  add $5,$6
+  mov $6,4
+  pow $6,$0
+  mul $6,15
+  add $5,$6
+  mov $6,6
+  pow $6,$0
+  add $5,$6
+  mov $0,530
+  add $0,$5
+  div $0,720
   mul $1,$0
   add $3,$1
 lpe

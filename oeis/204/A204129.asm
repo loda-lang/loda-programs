@@ -1,4 +1,5 @@
 ; A204129: Symmetric matrix based on f(i,j)=(L(i) if i=j and 1 otherwise), where L=A000032 (Lucas numbers), by antidiagonals.
+; Submitted by Irish Republican
 ; 1,1,1,1,3,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,18,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 #offset 1
@@ -10,8 +11,6 @@ sub $1,1
 div $1,2
 mov $3,$1
 bin $3,2
-mov $6,0
-mov $10,0
 sub $0,1
 sub $0,$3
 gcd $0,$1

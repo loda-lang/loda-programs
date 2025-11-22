@@ -1,5 +1,5 @@
 ; A356793: Decimal expansion of sum of squares of reciprocals of lesser twin primes, Sum_{j>=1} 1/(A001359(j))^2.
-; Submitted by fix
+; Submitted by marcstone
 ; 1,6,5,6,1,8,4,6,5,3,9,5
 
 mov $1,1
@@ -11,7 +11,7 @@ mov $11,66
 mov $12,84
 mov $13,113
 mov $14,141
-mov $15,183
+mov $15,3
 mov $17,284
 lpb $0
   mul $1,-1
@@ -39,6 +39,4 @@ lpb $0
 lpe
 mov $0,$17
 sub $0,3
-mod $0,10
-add $0,10
 mod $0,10

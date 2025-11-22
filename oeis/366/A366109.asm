@@ -1,7 +1,7 @@
 ; A366109: a(n) = floor(n!*(3*floor(n/2)!*ceiling(n/2)! + 3*floor((n+2)/2)!*ceiling((n-2)/2)! - 6*floor(n/2)!*ceiling((n-2)/2)!)^(-1)).
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,1,2,4,7,13,26,46,92,168,333,616,1225,2288,4558,8580,17107,32413,64664,123170,245832,470288,938943,1802770,3600207,6933733,13849778,26744400,53429368,103411680,206621384,400720260,800747232,1555737480,3109074130,6050090200,12091800773
-; Formula: a(n) = floor(floor((n*binomial(n-2,floor((n-2)/2)))/(floor((n-2)/2)+1))/3)*binomial(n-2,0)
+; Formula: a(n) = floor(floor((n*binomial(n-2,floor((n-2)/2)))/(floor((n-2)/2)+1))/3)
 
 #offset 3
 
@@ -16,5 +16,4 @@ add $1,1
 mul $2,$3
 div $2,$1
 div $2,3
-bin $0,0
-mul $0,$2
+mov $0,$2

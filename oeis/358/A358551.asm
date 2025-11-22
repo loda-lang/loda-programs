@@ -1,19 +1,19 @@
 ; A358551: Number of nodes in the ordered rooted tree with binary encoding A014486(n).
-; Submitted by Landjunge
+; Submitted by Rodney Duane
 ; 1,2,3,3,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
 
 #offset 1
 
+mov $1,1
 sub $0,1
-mov $1,$0
-mul $1,2
-mov $3,$1
-sub $3,1
-mul $3,$1
-mul $3,2
-lpb $3
-  div $3,8
-  add $2,2
+lpb $0
+  sub $0,$1
+  add $2,1
+  mul $1,$2
+  add $2,1
+  add $3,$2
+  mul $1,$2
+  div $1,$3
 lpe
 mov $0,$2
 div $0,2

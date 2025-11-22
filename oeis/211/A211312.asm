@@ -1,9 +1,7 @@
 ; A211312: Square array of Delannoy numbers D(i,j) mod 3 (i >= 0, j >= 0) read by antidiagonals.
-; Submitted by amazing
+; Submitted by LiHuaMer
 ; 1,1,1,1,0,1,1,2,2,1,1,1,1,1,1,1,0,1,1,0,1,1,2,2,0,2,2,1,1,1,1,0,0,1,1,1,1,0,1,0,0,0,1,0,1,1,2,2,2,0,0,2,2,2,1,1,1,1,2,2,0,2,2,1,1,1,1,0,1,2,0,2,2,0,2,1,0,1,1,2
 
-mov $3,0
-mov $4,0
 add $0,1
 mov $2,$0
 mul $2,8

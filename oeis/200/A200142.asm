@@ -1,13 +1,12 @@
 ; A200142: Number of near-matchings on the complete graph over 2n+1 vertices.
-; Submitted by Mumps
+; Submitted by Science United
 ; 3,30,315,3780,51975,810810,14189175,275675400,5892561675,137493105750,3478575575475,94870242967500,2774954606799375,86663966950811250,2878481759437659375,101322557932205610000,3767932623103896121875,147614301587482048068750
-; Formula: a(n) = truncate((2*n*b(2*n+1))/2), b(n) = n*b(n-2), b(1) = 1, b(0) = 1
+; Formula: a(n) = n*b(2*n+1), b(n) = n*b(n-2), b(1) = 1, b(0) = 1
 
 #offset 1
 
-mov $1,$0
 mov $2,1
-mul $0,2
+mov $1,$0
 mul $1,2
 add $1,1
 lpb $1
@@ -15,4 +14,3 @@ lpb $1
   sub $1,2
 lpe
 mul $0,$2
-div $0,2

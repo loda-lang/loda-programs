@@ -1,18 +1,9 @@
 ; A321540: 3^n with digits rearranged into nondecreasing order.
-; Submitted by Jamie Morken(r1)
+; Submitted by treaclepumpkin
 ; 1,3,9,27,18,234,279,1278,1566,13689,4599,114777,113445,1233459,2467899,1344789,1234467,11123469,23447889,1112246667,134446788,12333456,113356899,11234477889,122234456889,23444678889,1222345568889,2445567778899
 
 mov $1,3
 pow $1,$0
-mov $2,0
-mov $3,0
-mov $4,0
-mov $5,0
-mov $6,0
-mov $7,0
-mov $8,0
-mov $9,0
-mov $10,0
 lpb $1
   mov $12,$1
   mod $12,10

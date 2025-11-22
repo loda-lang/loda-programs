@@ -4,23 +4,14 @@
 
 #offset 1
 
-sub $0,1
-mov $3,$0
-add $0,1
-mul $3,$0
-div $3,2
 mov $2,$0
-mul $2,$0
 lpb $0
-  sub $0,2
-  add $5,1
-  mov $1,$0
-  add $1,$5
-  div $1,$5
-  mul $1,$5
-  add $4,$1
+  max $0,1
+  mov $3,$2
+  div $3,$0
+  mul $3,$0
+  sub $0,1
+  add $1,$3
 lpe
-mov $0,$4
-sub $0,$3
-add $0,$2
+mov $0,$1
 mul $0,2

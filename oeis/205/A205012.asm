@@ -1,14 +1,12 @@
 ; A205012: Least s(k) such that n divides s(k)-s(j) for some j<k, where s(j)=C(2j-2,j-1).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 2,6,20,6,6,20,20,70,20,70,3432,924,252,20,3432,70,70,20,20,3432,924,3432,70,924,70,252,924,924,252,3432,705432,70,3432,70,3432,48620,48620,3432,12870,12870,252,924,155117520,3432,48620,184756,3432
 
 #offset 1
 
 sub $0,1
-mov $4,0
 mov $5,$0
 add $0,1
-add $5,4
 pow $5,5
 lpb $5
   mov $6,$4
@@ -18,10 +16,10 @@ lpb $5
   nrt $7,2
   sub $7,1
   div $7,2
-  mov $9,$7
-  add $9,1
-  bin $9,2
-  sub $6,$9
+  mov $1,$7
+  add $1,1
+  bin $1,2
+  sub $6,$1
   sub $6,1
   mov $8,$7
   add $8,1
@@ -51,4 +49,3 @@ mul $0,2
 bin $0,$3
 div $0,2
 mul $0,2
-mov $1,$3

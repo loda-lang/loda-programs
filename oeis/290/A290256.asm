@@ -4,18 +4,13 @@
 
 #offset 1
 
-mov $1,$0
-mul $1,2
 lpb $0
-  add $2,2
-  mov $4,$0
-  max $4,1
-  log $4,2
-  mov $3,2
-  pow $3,$4
-  ban $3,$1
+  bin $2,$1
+  lpb $0
+    dif $0,2
+    add $2,1
+  lpe
   div $0,2
-  sub $0,$3
+  sub $1,21
 lpe
 mov $0,$2
-div $0,2

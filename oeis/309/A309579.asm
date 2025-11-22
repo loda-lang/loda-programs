@@ -1,18 +1,15 @@
 ; A309579: Maximum principal ratio of a strongly connected digraph on n nodes.
-; Submitted by BrandyNOW
+; Submitted by Aionel
 ; 2,6,22,102,582,3942,30822,272742,2691942,29303142,348637542,4499984742,62618845542,934401757542,14882928349542,252007880413542,4520257017565542,85616990623453542,1707551662741213542,35768179777214173542,785101998295619293542,18019779824218937053542
-; Formula: a(n) = 2*truncate(c(n-1)/6), b(n) = n*b(n-1), b(2) = 4, b(1) = 2, b(0) = 2, c(n) = n*b(n-1)+c(n-1), c(2) = 6, c(1) = 2, c(0) = 0
 
 #offset 3
 
-mov $1,2
 sub $0,1
 lpb $0
+  mul $1,$0
+  add $1,$0
   sub $0,1
-  add $2,1
-  mul $1,$2
-  add $3,$1
 lpe
-mov $0,$3
-div $0,6
+mov $0,$1
+div $0,3
 mul $0,2

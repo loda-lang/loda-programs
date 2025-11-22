@@ -27,7 +27,6 @@ lpb $2
   add $3,$7
   mov $5,$3
   mul $3,3
-  add $3,2
   div $3,4
   dif $3,2
   mul $3,2

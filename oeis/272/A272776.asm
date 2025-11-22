@@ -1,5 +1,5 @@
-; A272776: Numbers n such that phi(Fibonacci(n)) is a square.
-; Submitted by USTL-FIL (Lille Fr)
+; A272776: Numbers k such that phi(Fibonacci(k)) is a square.
+; Submitted by WeirdBird
 ; 1,2,3,5,6,9,22,33
 
 #offset 1
@@ -14,8 +14,7 @@ lpb $0
   div $0,11
   add $1,$0
 lpe
-add $3,1
 mul $0,$1
 add $1,$3
 add $0,$1
-sub $0,3
+sub $0,2

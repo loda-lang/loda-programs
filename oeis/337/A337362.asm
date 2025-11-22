@@ -12,5 +12,4 @@ seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $1,1
 bin $1,2
 sub $1,$2
-sub $0,1
 mov $0,$1

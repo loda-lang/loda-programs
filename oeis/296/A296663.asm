@@ -1,18 +1,14 @@
 ; A296663: Row sums of A296664.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,1,4,7,20,38,96,187,444,874,2000,3958,8840,17548,38528,76627,166124,330818,710256,1415650,3016056,6015316,12736064,25413342,53530840,106853668,224107936,447472972,935062544,1867450648,3890018816,7770342787,16141765964
-; Formula: a(n) = binomial(n,floor(n/2))*(binomial(floor(n/2),n+1)+n+1)-2^n+binomial(n,floor(n/2))
+; Formula: a(n) = binomial(n,floor(n/2))*(n+2)-2^n
 
 mov $1,2
 pow $1,$0
+mov $3,$0
+div $3,2
 mov $2,$0
-mov $3,1
-add $3,$0
-div $0,2
-bin $2,$0
-bin $0,$3
-add $0,$3
+bin $2,$3
+add $0,2
 mul $0,$2
 sub $0,$1
-add $2,$0
-mov $0,$2

@@ -1,23 +1,20 @@
 ; A195531: Hypotenuses of Pythagorean triples in A195499 and A195503.
-; Submitted by Athlici
+; Submitted by DukeBox
 ; 5,17,65,241,901,3361,12545,46817,174725,652081,2433601,9082321,33895685,126500417,472105985,1761923521,6575588101,24540428881,91586127425,341804080817,1275630195845,4760716702561,17767236614401,66308229755041
-; Formula: a(n) = 4*truncate(((-truncate(c(n+2)/b(n+2))*b(n+2)+c(n+2))*(-truncate(c(n+2)/b(n+2))*b(n+2)+min(n+2,(n+2)%2)*b(n+2)+c(n+2)))/18)+1, b(n) = 2*c(n-2)+b(n-2), b(3) = 6, b(2) = 6, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)+b(n-2), c(3) = 9, c(2) = 9, c(1) = 3, c(0) = 3
 
 #offset 1
 
-mov $2,3
-add $0,2
+mov $1,1
+fil $1,3
 lpb $0
-  sub $0,2
+  sub $0,1
+  add $2,$1
   add $1,$2
-  add $1,$2
+  add $1,1
   add $2,$1
 lpe
-mod $2,$1
-mul $0,$1
-add $0,$2
-mul $2,$0
 mov $0,$2
-div $0,18
+sub $0,6
+div $0,6
 mul $0,4
-add $0,1
+add $0,5

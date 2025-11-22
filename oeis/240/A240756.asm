@@ -1,0 +1,101 @@
+; A240756: Number of n X 2 0..3 arrays with no element equal to one plus the sum of elements to its left or zero plus the sum of elements above it or zero plus the sum of the elements diagonally to its northwest or zero plus the sum of the elements antidiagonally to its northeast, modulo 4.
+; Submitted by loader3229
+; 5,6,12,16,16,35,35,36,65,83,102,172,191,230,381,458,576,905,1064,1362,2090,2514,3267,4869,5894,7740,11297,13853,18318,26249,32499,43165,60950,76216,101501,141589,178559,238124,328924,418014,557746,764306,977771,1304528,1776240,2285404,3047857,4128640,5338070,7114469,9597662,12460429,16594997,22313545,29069390,38686317,51880502,67783148,90143136,120632128,157985296,209962450,280502283,368082771,488894985,652255309,857295576,1138097026,1516705226,1996145127,2648820897,3526817580,4646735175
+
+#offset 1
+
+mov $2,5
+mov $3,6
+mov $4,12
+mov $5,16
+mov $6,16
+mov $7,35
+mov $8,35
+mov $9,36
+mov $10,65
+mov $11,83
+mov $12,102
+mov $13,172
+mov $14,191
+mov $15,230
+mov $16,381
+sub $0,1
+lpb $0
+  mov $18,$1
+  mul $18,2
+  sub $18,4
+  mul $2,$18
+  rol $2,15
+  mov $18,$1
+  mul $18,-6
+  add $18,8
+  mov $17,$2
+  mul $17,$18
+  mov $18,$1
+  mul $18,-1
+  add $18,2
+  add $16,$17
+  mov $17,$4
+  mul $17,$18
+  mov $18,$1
+  mul $18,3
+  sub $18,4
+  add $16,$17
+  mov $17,$5
+  mul $17,$18
+  mov $18,$1
+  mul $18,-4
+  add $18,8
+  add $16,$17
+  mov $17,$6
+  mul $17,$18
+  mov $18,$1
+  mul $18,10
+  sub $18,12
+  add $16,$17
+  mov $17,$7
+  mul $17,$18
+  mov $18,$1
+  mul $18,6
+  sub $18,8
+  add $16,$17
+  mov $17,$8
+  mul $17,$18
+  mov $18,$1
+  sub $18,2
+  add $16,$17
+  mov $17,$10
+  mul $17,$18
+  mov $18,$1
+  mul $18,-3
+  add $18,4
+  add $16,$17
+  mov $17,$11
+  mul $17,$18
+  mov $18,$1
+  mul $18,3
+  sub $18,6
+  add $16,$17
+  mov $17,$12
+  mul $17,$18
+  mov $18,$1
+  mul $18,-9
+  add $18,12
+  add $16,$17
+  mov $17,$13
+  mul $17,$18
+  mov $18,$1
+  mul $18,-1
+  add $18,2
+  add $16,$17
+  mov $17,$15
+  mul $17,$18
+  mov $18,$1
+  mul $18,-3
+  add $18,4
+  add $16,$17
+  div $16,$18
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$2

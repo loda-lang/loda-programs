@@ -1,5 +1,5 @@
 ; A289252: Decimal expansion of the mean number of iterations in a comparison algorithm using centered continued fractions, a constant related to Vallée's constant.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by DukeBox
 ; 1,0,8,9,2,2,1,4,7,3,8,6
 
 #offset 1
@@ -23,6 +23,5 @@ lpb $0
   dif $6,$4
 lpe
 mov $0,$3
-mod $0,10
 add $0,10
 mod $0,10
