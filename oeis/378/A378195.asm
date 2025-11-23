@@ -1,0 +1,58 @@
+; A378195: Number of 2-colorings of length n without an arithmetic progression of length 3.
+; Submitted by Flashfire42
+; 1,2,4,6,10,14,20,16,6,0
+
+mov $2,1
+fil $2,3
+mov $5,2
+mov $6,2
+mov $7,3
+mov $8,5
+mov $9,7
+lpb $0
+  mov $11,$1
+  rol $2,8
+  mul $11,-6
+  sub $11,9
+  mov $10,$2
+  mul $10,$11
+  mov $11,$1
+  mul $11,-8
+  sub $11,15
+  add $9,$10
+  mov $10,$3
+  mul $10,$11
+  mov $11,$1
+  mul $11,-4
+  sub $11,27
+  add $9,$10
+  mov $10,$4
+  mul $10,$11
+  mov $11,$1
+  mul $11,2
+  add $11,9
+  add $9,$10
+  mov $10,$5
+  mul $10,-3
+  trn $8,$1
+  add $9,$10
+  mov $10,$6
+  mul $10,$11
+  mov $11,$1
+  mul $11,4
+  add $11,27
+  add $9,$10
+  mov $10,$7
+  mul $10,$11
+  add $9,$10
+  mov $10,$8
+  mul $10,3
+  mov $11,$1
+  add $11,9
+  mul $5,2
+  add $9,$10
+  div $9,$11
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$4

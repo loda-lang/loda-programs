@@ -1,0 +1,15 @@
+; A370767: Number of signed permutations of length n+1 with adjacent elements differing by more than 1 and whose first element is 1.
+; Submitted by Karlsson
+; 1,1,3,17,139,1401,16867,236513,3787707,68219081,1364931859,30037136433,721044433387,18750182814233,525071095004739,15753703863875201,504159100060894747,17142539126080474473,617165134818228049267,23453349764127439545041,938170391199139959128139,39404462487260564720460473,1733845831852152433076181667,79758882264749888685737376033,3828509056149658243987925088379,191429083940030392801643235840521,9954479062203763223080241170263507,537549856140627331477008337876097393
+
+mov $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,283184 ; a(n) is the number of symmetric permutations (p(1),p(2),...,p(m)) of (1,2,...,m), m=2n or m=2n+1, with p(m+1-k) = m+1-p(k) for 1<=k<=m, such that adjacent numbers do not differ by 1. a(n) is also the number of point-symmetric arrangements of m non-attacking kings on an m X m board, with one in each row and column.
+  add $1,$0
+lpe
+mov $0,$1
+add $0,1
