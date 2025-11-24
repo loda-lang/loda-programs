@@ -1,11 +1,10 @@
 ; A373182: Number of ways that people can sit in n linearly arranged seats such that there are one or two empty seats between any two persons, zero or one empty seats at the start and end, and at least one person gets seated.
-; Submitted by Skillz
+; Submitted by piieeto
 ; 1,2,3,6,12,26,60,144,366,960,2640,7464,21960,66240,206760,660240,2172240,7298640,25179840,88583040,319097520,1170650880,4387582080,16728808320,65040796800,256987987200,1033805566080,4222598688000,17536408243200,73886160096000
 
 #offset 1
 
 mov $4,$0
-sub $0,1
 lpb $4
   mov $0,$2
   sub $0,$4

@@ -1,17 +1,10 @@
 ; A372671: a(n) = phi(6 * n)/2.
-; Submitted by GPV67
+; Submitted by Science United
 ; 1,2,3,4,4,6,6,8,9,8,10,12,12,12,12,16,16,18,18,16,18,20,22,24,20,24,27,24,28,24,30,32,30,32,24,36,36,36,36,32,40,36,42,40,36,44,46,48,42,40,48,48,52,54,40,48,54,56,58,48,60,60,54,64,48,60,66,64,66,48,70,72,72,72,60
-; Formula: a(n) = truncate((A000010(2*min(280,3*n))-2)/2)+1
+; Formula: a(n) = truncate(A000010(6*n)/2)
 
 #offset 1
 
-mov $1,3
-mul $1,$0
-mov $2,280
-min $2,$1
-mul $2,2
-seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $0,$2
-sub $0,2
+mul $0,6
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 div $0,2
-add $0,1

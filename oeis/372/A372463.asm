@@ -21,7 +21,6 @@ lpb $0
   mul $3,-1
   bin $3,$1
   mul $3,$2
-  mul $3,6
   add $5,$3
   sub $0,1
   trn $0,1
@@ -29,4 +28,3 @@ lpb $0
   mov $2,$1
 lpe
 mov $0,$5
-div $0,6
