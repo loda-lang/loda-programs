@@ -1,0 +1,84 @@
+; A264908: Primes of the form 2^i + 2^j + 2^k - 1, i > j > k > 0.
+; Submitted by [SG] blAckmAmbA
+; 13,37,41,43,73,83,97,103,137,139,151,163,167,193,199,223,521,523,547,577,607,641,643,647,769,1033,1063,1091,1103,1153,1283,1543,1567,1663,2053,2081,2083,2087,2113,2143,2179,2207,2239,2311,2591,2687,3079,3583,4129,4231,4639
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+add $2,1
+pow $2,2
+lpb $2
+  mov $3,$1
+  mov $6,2
+  fil $6,3
+  mov $9,$3
+  mov $10,$3
+  mov $11,$3
+  mul $11,6
+  nrt $11,3
+  mov $12,$11
+  add $12,2
+  bin $12,3
+  mov $13,$3
+  geq $13,$12
+  add $13,$11
+  add $13,1
+  bin $13,3
+  sub $3,$13
+  mov $14,$3
+  mul $14,8
+  add $14,1
+  nrt $14,2
+  add $14,1
+  div $14,2
+  bin $14,2
+  mov $15,$9
+  mul $15,6
+  nrt $15,3
+  mov $16,$15
+  add $16,2
+  bin $16,3
+  mov $17,$9
+  geq $17,$16
+  add $17,$15
+  add $17,1
+  bin $17,3
+  sub $3,$14
+  sub $9,$17
+  add $9,1
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  add $9,1
+  mov $18,$10
+  mul $18,6
+  nrt $18,3
+  mov $19,$18
+  add $19,2
+  bin $19,3
+  geq $10,$19
+  add $10,$18
+  add $10,1
+  pow $7,$9
+  pow $8,$10
+  pow $6,$3
+  add $6,$7
+  add $6,$8
+  mov $3,$6
+  mul $3,2
+  sub $3,2
+  mov $5,$3
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$5
+add $0,1
