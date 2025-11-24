@@ -1,25 +1,15 @@
 ; A195618: a(0) = 1; a(n) = A001208(n) + 1 for n > 0.
-; Submitted by jdio2
+; Submitted by iBezanilla
 ; 1,4,9,16,27,36,53,70,90,113,147,173,213,260,303,355,419,477,549,634,715,806,903,1013,1128,1255,1383,1525,1679,1842,2011,2189,2383,2585,2802,3021,3257,3509,3773,4044,4327,4629,4942,5273,5607,5961,6335,6724,7121
 
-mov $2,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $6,$0
-  seq $6,1208 ; a(n) = solution to the postage stamp problem with 3 denominations and n stamps.
-  mov $5,$0
-  bin $5,2
-  bin $0,2
-  mov $1,2
-  pow $1,$5
-  mov $5,$1
-  sub $5,$6
-  mov $3,2
-  pow $3,$0
+mov $3,$0
+mov $1,$0
+lpb $1
+  sub $1,1
   mov $0,$3
-  sub $0,$5
+  sub $0,$1
+  mov $2,$0
+  seq $2,1208 ; a(n) = solution to the postage stamp problem with 3 denominations and n stamps.
 lpe
+mov $0,$2
 add $0,1

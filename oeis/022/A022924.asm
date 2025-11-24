@@ -1,16 +1,12 @@
 ; A022924: Number of 3^m between 2^n and 2^(n+1).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1
+; Formula: a(n) = -logint(2^n,3)+logint(2*2^n,3)
 
-lpb $0
-  mov $1,2
-  pow $1,$0
-  mul $1,2
-  mov $0,$1
-  lpb $0
-    mov $1,$0
-    div $0,3
-  lpe
-lpe
+mov $1,2
+pow $1,$0
 mov $0,$1
-mod $0,2
+log $1,3
+mul $0,2
+log $0,3
+sub $0,$1

@@ -1,17 +1,17 @@
 ; A054096: T(n,2), array T as in A054090.
-; Submitted by Science United
+; Submitted by Kingda Toro
 ; 1,2,6,22,98,522,3262,23486,191802,1753618,17755382,197282022,2387112466,31249472282,440096734638,6635304614542,106638824162282,1819969265702946
 
 #offset 2
 
-mov $1,4
+mov $2,4
 sub $0,2
 lpb $0
   sub $0,1
-  add $1,$2
-  mul $2,$0
   add $2,$1
+  mul $1,$0
   add $1,$2
+  add $2,$1
 lpe
-mov $0,$1
+mov $0,$2
 div $0,4

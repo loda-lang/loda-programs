@@ -1,14 +1,48 @@
 ; A270452: Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 161", based on the 5-celled von Neumann neighborhood.
-; Submitted by Mads Nissen
+; Submitted by Science United
 ; 1,5,14,38,67,131,180,296,397,613,702,1010,1191,1647,1784,2388,2681,3441,3674,4654,5067,6227,6572,8016,8557,10213,10702,12674,13391,15631,16272,18868,19777,22689,23490,26806,27939,31587,32596,36720,38085,42565,43798,48818,50423,55831,57320,63300,65193,71617,73370,80406,82603,90131,92156,100344,102877,111573,113918,123346,126223,136183,138864,149620,152849,164169,167218,179366,182995,195763,199188,212824,216869,231173,234982,250202,254695,270599,274840,291732
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+A270450(max(n-1,0)), b(0) = 0
 
-add $0,1
+mov $2,4
+mov $3,9
+mov $4,24
+mov $5,29
+mov $6,64
+mov $7,49
+mov $8,116
+mov $9,101
+mov $10,216
+mov $11,89
+mov $12,308
+mov $13,181
+mov $14,456
+mov $15,137
+mov $16,604
+mov $17,293
+mov $18,760
+mov $19,233
+mov $20,980
+mov $21,413
+mov $22,1160
+mov $23,345
+mov $24,1444
+mov $25,541
+mov $26,1656
+mov $27,489
+mov $28,1972
+mov $29,717
+mov $30,2240
 lpb $0
+  mov $1,0
+  rol $1,30
+  add $30,$12
+  sub $30,$16
+  sub $30,$16
+  add $30,$20
+  sub $30,$22
+  add $30,$26
+  add $30,$26
   sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,270450 ; Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 161", based on the 5-celled von Neumann neighborhood.
-  add $1,$2
+  add $32,$1
 lpe
-mov $0,$1
+mov $0,$32
+add $0,1

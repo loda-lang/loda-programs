@@ -5,17 +5,14 @@
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  mov $4,$0
-  equ $4,0
-  add $0,$4
-  seq $0,40 ; The prime numbers.
-  add $2,$0
+mov $2,$0
+lpb $0
+  trn $0,1
+  add $0,1
+  seq $0,60939 ; a(n) = (Sum of the first n primes) + n.
+  mov $1,$0
+  mov $0,0
 lpe
-mov $0,$2
+mov $0,$1
+sub $0,$2
+add $0,2

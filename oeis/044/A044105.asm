@@ -1,10 +1,9 @@
 ; A044105: Numbers k such that string 0,3 occurs in the base 6 representation of k but not of k-1.
-; Submitted by Steve Dodd
+; Submitted by Spot T
 ; 39,75,111,147,183,219,234,255,291,327,363,399,435,450,471,507,543,579,615,651,666,687,723,759,795,831,867,882,903,939,975,1011,1047,1083,1098,1119,1155,1191,1227,1263,1299,1314,1335
 
 #offset 1
 
-mov $1,-5
 lpb $0
   mov $3,7
   gcd $3,$0
@@ -17,4 +16,4 @@ lpb $0
   mov $2,2
 lpe
 mov $0,$1
-add $0,23
+add $0,18

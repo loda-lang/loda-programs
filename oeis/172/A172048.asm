@@ -1,35 +1,17 @@
 ; A172048: a(n) = A104275(n) + A014076(n).
-; Submitted by Daniele Casale
+; Submitted by Science United
 ; 2,14,23,32,38,41,50,53,59,68,74,77,83,86,95,98,104,113,116,122,128,131,137,140,143,149,158,167,173,176,179,182,185,188,194,200,203,212,215,218,221,230,233,239,242,248,254,257,263,266,275,278,281,284,293,302,305,308,311,314,320,323,326,329,332,338,347,353,356,365,368,371,374,380,383,389,392,398,401,410
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-pow $2,2
-lpb $2
-  mov $6,$1
-  add $6,1
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $5,$1
-  mul $5,$6
-  mov $3,$1
-  lpb $3
-    sub $3,1
-    sub $3,$1
-  lpe
-  sub $3,$5
-  trn $3,1
-  add $3,$4
-  gcd $3,2
-  sub $0,$3
+lpb $0
+  trn $0,1
   add $0,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $1,2
-  mul $2,$4
-  sub $2,1
+  seq $0,7921 ; Numbers that are not the difference of two primes.
+  add $0,1
+  mov $1,$0
+  mov $0,0
 lpe
 mov $0,$1
 div $0,2

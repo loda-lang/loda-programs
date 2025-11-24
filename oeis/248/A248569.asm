@@ -1,21 +1,20 @@
 ; A248569: Decimal expansion of Sun-to-Earth mass ratio.
 ; Submitted by BrandyNOW
 ; 3,3,2,9,4,6,0,4
-; Formula: a(n) = -10*truncate((truncate(((floor((n+7)/(n-4))*binomial(n-2,2)-12)*(floor((n+7)/(n-4))*binomial(n-2,2)+n-16))/12)+1)/10)+truncate(((floor((n+7)/(n-4))*binomial(n-2,2)-12)*(floor((n+7)/(n-4))*binomial(n-2,2)+n-16))/12)+1
+; Formula: a(n) = (-10*truncate((truncate(((n-5)*(truncate(((n-17)*(n-5))/2)*(n-5)+42))/24)+2)/10)+truncate(((n-5)*(truncate(((n-17)*(n-5))/2)*(n-5)+42))/24)+12)%10
 
 #offset 6
 
+sub $0,5
 mov $1,$0
-sub $1,2
-bin $1,2
-sub $0,4
-mov $2,$0
-add $0,11
-div $0,$2
-mul $0,$1
 sub $0,12
-add $2,$0
-mul $0,$2
-div $0,12
-add $0,1
+mul $0,$1
+div $0,2
+mul $0,$1
+add $0,42
+mul $0,$1
+div $0,24
+add $0,2
+mod $0,10
+add $0,10
 mod $0,10

@@ -19,6 +19,7 @@ lpb $5
   mov $1,$7
   add $1,1
   bin $1,2
+  add $4,1
   sub $6,$1
   sub $6,1
   mov $8,$7
@@ -31,7 +32,6 @@ lpb $5
   bin $6,$8
   sub $6,$7
   gcd $6,$0
-  add $4,1
   add $5,$6
   sub $5,$0
 lpe
@@ -47,5 +47,3 @@ add $3,1
 mov $0,$3
 mul $0,2
 bin $0,$3
-div $0,2
-mul $0,2

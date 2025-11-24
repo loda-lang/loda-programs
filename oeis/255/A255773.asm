@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $3,$0
 mul $3,2
-add $3,2
 lpb $3
   sub $3,1
   dif $3,2

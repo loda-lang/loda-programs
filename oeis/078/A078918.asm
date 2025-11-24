@@ -4,7 +4,7 @@
 
 #offset 1
 
-sub $0,3
+sub $0,1
 mov $1,1
 fil $1,8
 lpb $0
@@ -15,4 +15,4 @@ lpb $0
   ror $1,4
   mov $1,$5
 lpe
-mov $0,$2
+mov $0,$4

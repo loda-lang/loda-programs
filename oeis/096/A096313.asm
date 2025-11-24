@@ -1,16 +1,14 @@
 ; A096313: a(n) = determinant of n X n matrix m(i,j) = Product_{k=1..i} k+j.
-; Submitted by Aexoden
+; Submitted by BrandyNOW
 ; 1,2,6,48,1440,207360,174182400,1003290624000,45509262704640000,18349334722510848000000,73244672425152101744640000000,3189483207556703361731395584000000000
-; Formula: a(n) = c(n)*(n+1), b(n) = b(n-1)*(n+1), b(2) = 6, b(1) = 2, b(0) = 1, c(n) = c(n-1)*b(n-1), c(2) = 2, c(1) = 1, c(0) = 1
 
 mov $1,1
-mov $2,1
 mov $3,1
+add $3,$0
 lpb $0
   sub $0,1
   add $2,1
-  mul $3,$1
   mul $1,$2
+  mul $3,$1
 lpe
 mov $0,$3
-mul $0,$2

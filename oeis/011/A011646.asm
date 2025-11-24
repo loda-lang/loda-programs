@@ -1,18 +1,13 @@
 ; A011646: 93rd cyclotomic polynomial.
-; Submitted by ckrause
+; Submitted by The Pariahs
 ; 1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,-1,0,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1,0,-1,1
 
-mov $1,-1
-pow $1,$0
+add $0,3
 lpb $0
-  sub $0,1
-  dif $0,30
-  add $2,$3
-  sub $3,$2
-  add $2,3
+  sub $0,3
+  sub $1,$0
+  mod $1,31
+  pow $1,$1
+  add $2,$1
 lpe
-mov $0,$3
-mul $0,3
-add $0,9
-div $0,9
-mul $0,$1
+mov $0,$2

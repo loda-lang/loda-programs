@@ -18,7 +18,6 @@ lpb $3
     mod $7,$2
     equ $7,0
     sub $3,$6
-    mul $6,2
     add $6,$3
     div $1,$2
     sub $5,$7

@@ -8,9 +8,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $6,1
-  mov $7,$1
-  add $7,1
-  seq $7,51903 ; Maximum exponent in the prime factorization of n.
+  max $8,$1
+  add $8,1
+  seq $8,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
+  mov $7,$8
+  sub $7,1
   mov $3,$1
   add $3,1
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

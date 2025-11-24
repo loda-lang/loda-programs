@@ -4,8 +4,7 @@
 
 mov $1,4
 mov $3,1
-mov $4,1
-mov $5,1
+fil $3,3
 mul $0,2
 add $0,3
 lpb $0

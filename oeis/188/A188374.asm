@@ -1,7 +1,7 @@
 ; A188374: [nr+kr]-[nr]-[kr], where r=1/sqrt(2), k=2, [ ]=floor.
 ; Submitted by Science United
 ; 1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0
-; Formula: a(n) = sqrtint(2*n^2)*sqrtint(2*(n+2)^2)-2*truncate((sqrtint(2*n^2)*sqrtint(2*(n+2)^2)+sqrtint(2*n^2))/2)+sqrtint(2*n^2)
+; Formula: a(n) = (sqrtint(2*n^2)*sqrtint(2*(n+2)^2)+sqrtint(2*n^2))%2
 
 #offset 1
 

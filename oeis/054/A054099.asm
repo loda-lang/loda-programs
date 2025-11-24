@@ -1,19 +1,18 @@
 ; A054099: Sum{T(n,k): k=0,1,...,n}, array T as in A054098.
-; Submitted by Cruncher Pete
+; Submitted by BrandyNOW
 ; 1,3,6,14,44,178,892,5354,37480,299842,2698580,26985802,296843824,3562125890,46307636572,648306912010,9724603680152,155593658882434,2645092201001380
-; Formula: a(n) = truncate(b(n)/(-n+binomial(c(n),b(n))))+1, b(n) = n*(b(n-1)-4)+2, b(3) = -40, b(2) = -10, b(1) = -2, b(0) = 0, c(n) = c(n-1), c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = (a(n-3)==b(n-2))+a(n-1)*(n-1)+2, a(3) = 14, a(2) = 6, a(1) = 3, a(0) = 1, b(n) = b(n-1)
 
 mov $2,1
+mov $4,1
 lpb $0
+  rol $2,3
+  equ $2,$8
+  mov $5,$3
+  mul $5,$1
   sub $0,1
-  sub $1,4
-  mul $1,$2
-  add $1,2
-  add $2,1
-  sub $4,1
+  add $1,1
+  add $4,2
+  add $4,$5
 lpe
-bin $3,$1
-add $4,$3
-div $1,$4
-mov $0,$1
-add $0,1
+mov $0,$4

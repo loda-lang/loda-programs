@@ -1,18 +1,12 @@
 ; A022930: Number of 4^m between 3^n and 3^(n+1).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1
+; Formula: a(n) = -logint(3^n,4)+logint(3*3^n,4)
 
-mov $3,$0
-add $3,1
-mov $2,2
-lpb $2
-  div $2,2
-  mov $0,$3
-  sub $0,$2
-  mul $0,61
-  add $0,1
-  div $0,77
-  add $1,$0
-lpe
+mov $1,3
+pow $1,$0
 mov $0,$1
-mod $0,2
+log $1,4
+mul $0,3
+log $0,4
+sub $0,$1

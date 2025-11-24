@@ -1,14 +1,9 @@
 ; A302178: The number of 3D walks of semilength n in a quadrant returning to the origin.
-; Submitted by NeoGen
+; Submitted by Science United
 ; 1,4,40,570,9898,195216,4209084,96941130,2349133930,59272544760,1545550116240,41416083787260,1135679731004700,31760915181412800,903492759037272480,26086451983000501410,763124703525758894490,22585374873810849150600,675419388009799152812400
 
 mov $1,$0
 add $1,3
-mov $4,0
-mov $5,0
-mov $7,0
-mov $8,0
-mov $9,0
 mov $2,$0
 add $2,1
 lpb $2
@@ -29,7 +24,6 @@ lpb $2
   add $7,2
   add $8,$6
 lpe
-mov $2,$8
 mov $3,$0
 mul $0,2
 bin $0,$3

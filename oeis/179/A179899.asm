@@ -1,35 +1,17 @@
 ; A179899: Integers of the form A179896(n)/A141468(n+1).
-; Submitted by Daniele Casale
+; Submitted by Science United
 ; 0,12,21,30,36,39,48,51,57,66,72,75,81,84,93,96,102,111,114,120,126,129,135,138,141,147,156,165,171,174,177,180,183,186,192,198,201,210,213,216,219,228,231,237,240,246,252,255,261,264,273,276,279,282,291,300,303,306,309,312,318,321,324,327,330,336,345,351,354,363,366,369,372,378,381,387,390,396,399,408
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-pow $2,2
-lpb $2
-  mov $6,$1
-  add $6,1
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $5,$1
-  mul $5,$6
-  mov $3,$1
-  lpb $3
-    sub $3,1
-    sub $3,$1
-  lpe
-  sub $3,$5
-  trn $3,1
-  add $3,$4
-  gcd $3,2
-  sub $0,$3
+lpb $0
+  trn $0,1
   add $0,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $1,2
-  mul $2,$4
-  sub $2,1
+  seq $0,7921 ; Numbers that are not the difference of two primes.
+  add $0,1
+  mov $1,$0
+  mov $0,0
 lpe
 mov $0,$1
 div $0,2

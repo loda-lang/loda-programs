@@ -15,6 +15,7 @@ lpb $1
   mov $3,$2
   div $3,2
   seq $3,7317 ; Binomial transform of Catalan numbers.
+  mov $0,4
   sub $2,1
   seq $2,2212 ; Number of restricted hexagonal polyominoes with n cells.
   sub $2,$3

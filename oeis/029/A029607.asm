@@ -1,14 +1,14 @@
 ; A029607: Even numbers in the (2,3)-Pascal triangle A029600 that are different from 2.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by retired97
 ; 8,24,26,14,50,40,48,90,20,80,196,308,322,224,100,26,276,504,630,546,324,126,120,780,1134,1176,870,450,32,1914,2310,2046,1320,168,638,1650,4224,4356,3366,792,222,38,806,2288,8580,7722,1014,260,224,3094,12012
 
 #offset 1
 
 sub $0,1
-mov $2,7254
+mov $2,7260
 sub $2,$0
 lpb $2
-  sub $2,64
+  sub $2,58
   mov $7,$1
   mul $7,8
   nrt $7,2
@@ -34,8 +34,7 @@ lpb $2
   mov $5,$3
   mul $3,338
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

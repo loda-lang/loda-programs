@@ -12,12 +12,10 @@ lpb $4
   mov $1,$2
   bin $1,$0
   dgs $0,2
-  mov $5,0
   sub $5,$0
   gcd $5,2
   mul $5,2
-  sub $5,3
-  mov $0,$5
+  sub $5,6
   mul $1,$5
   mul $3,-1
   add $3,$1

@@ -1,41 +1,39 @@
 ; A070908: Every fifth Bell number A000110.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1,52,115975,1382958545,51724158235372,4638590332229999353,846749014511809332450147,281600203019560266563340426570,157450588391204931289324344702531067
 
-mov $4,$0
-mul $4,4
-add $4,$0
-mov $9,1
-fac $9,$4
-mov $12,$4
-mov $13,1
-add $4,1
-lpb $4
-  sub $4,1
-  mov $7,$6
-  pow $7,$12
-  mov $8,$12
-  bin $8,$6
-  mul $11,$6
-  add $11,$7
-  mov $2,$11
-  div $2,$9
-  mul $5,$6
-  add $5,$2
-  add $6,1
-  mod $11,$9
-  mul $13,-1
-  mov $3,$8
-  mul $3,$11
-  mul $3,$13
-  mov $1,$8
-  mul $1,$5
+mul $0,5
+mov $6,1
+fac $6,$0
+mov $9,$0
+mov $10,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$3
+  pow $4,$9
+  mov $5,$9
+  bin $5,$3
+  mul $8,$3
+  add $8,$4
+  mov $12,$8
+  div $12,$6
+  mul $13,$3
+  add $13,$12
+  add $3,1
+  mod $8,$6
+  mul $10,-1
+  mov $2,$5
+  mul $2,$8
+  mul $2,$10
+  mov $1,$5
   mul $1,$13
-  add $10,$1
-  add $14,$3
+  mul $1,$10
+  add $7,$1
+  add $11,$2
 lpe
-mul $10,$13
-mul $14,$13
-div $14,$9
-add $14,$10
-mov $0,$14
+mul $7,$10
+mul $11,$10
+div $11,$6
+add $11,$7
+mov $0,$11

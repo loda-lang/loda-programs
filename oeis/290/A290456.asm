@@ -1,10 +1,7 @@
 ; A290456: Triangle formed by reading the triangle of Eulerian numbers (A173018) mod 6.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,1,1,0,1,4,1,0,1,5,5,1,0,1,2,0,2,1,0,1,3,2,2,3,1,0,1,0,3,4,3,0,1,0,1,1,3,1,1,3,1,1,0,1,4,4,4,4,4,4,4,1,0,1,5,2,2,2,2,2,2,5,1,0,1,2,3,0,0,0,0,0,3,2,1,0,1,3
 
-mov $4,0
-mov $6,0
-mov $7,0
 add $0,1
 mov $2,$0
 mul $2,8
@@ -30,10 +27,9 @@ lpb $2
   mul $6,$5
   add $7,$6
   add $4,1
-  mul $6,0
+  mov $6,0
   sub $6,$3
 lpe
 mov $1,$7
 mod $1,6
-mov $0,$7
 mov $0,$1

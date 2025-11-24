@@ -1,4 +1,5 @@
 ; A204127: Symmetric matrix based on f(i,j)=(F(i+1) if i=j and 1 otherwise), where F=A000045 (Fibonacci numbers), by antidiagonals.
+; Submitted by Science United
 ; 1,1,1,1,2,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,13,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 #offset 1
@@ -10,7 +11,6 @@ sub $1,1
 div $1,2
 mov $3,$1
 bin $3,2
-mov $10,0
 sub $0,1
 sub $0,$3
 gcd $0,$1
@@ -21,7 +21,6 @@ mov $2,-1
 sub $2,$0
 mul $2,2
 bin $2,$1
-mov $6,0
 mov $0,$2
 div $0,2
 add $0,1

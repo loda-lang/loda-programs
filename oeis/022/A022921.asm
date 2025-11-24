@@ -1,21 +1,12 @@
 ; A022921: Number of integers m such that 3^n < 2^m < 3^(n+1).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1
+; Formula: a(n) = -logint(3^n,2)+logint(3*3^n,2)
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  mov $7,3
-  pow $7,$0
-  mov $6,$7
-  log $6,2
-  mov $2,$3
-  mul $2,$6
-  add $1,$2
-  mov $5,$6
-lpe
-sub $1,$5
+mov $1,3
+pow $1,$0
 mov $0,$1
+log $1,2
+mul $0,3
+log $0,2
+sub $0,$1

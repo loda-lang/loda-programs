@@ -1,11 +1,10 @@
 ; A332789: First differences of the iterated Beatty sequence A007069.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,1,3,2
 
 #offset 1
 
 sub $0,1
-mov $1,1
 mov $4,$0
 mov $3,2
 lpb $3
@@ -26,4 +25,3 @@ lpb $3
 lpe
 sub $1,$5
 mov $0,$1
-sub $0,1

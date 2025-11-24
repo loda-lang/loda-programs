@@ -16,7 +16,6 @@ lpb $2
     add $5,$6
     mod $5,4
     mul $5,$4
-    add $3,94
     div $3,4
     max $4,$5
     mov $6,1
@@ -26,9 +25,9 @@ lpb $2
   mov $3,$4
   equ $3,2
   sub $0,$3
-  add $1,1
+  add $1,3
   sub $2,$0
 lpe
 mov $0,$1
 mul $0,2
-sub $0,63
+add $0,1

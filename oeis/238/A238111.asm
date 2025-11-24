@@ -1,22 +1,9 @@
 ; A238111: Twice the large Schroeder numbers A006318.
-; Submitted by Science United
+; Submitted by Goldislops
 ; 2,4,12,44,180,788,3612,17116,83172,412196,2075436,10586892,54595476,284157492,1490774076,7875206076,41854313412,223636052036,1200637707852,6473448634348,35037238641780,190299310403924,1036863750837852,5665846701859484,31042935297750180,170499885177942628
+; Formula: a(n) = 2*A006318(n)
 
-mov $1,1
-mov $4,1
-mov $3,$0
-lpb $3
-  mul $4,$3
-  add $1,1
-  mul $2,2
-  add $2,1
-  sub $3,1
-  add $5,$1
-  add $1,1
-  mul $4,$3
-  div $4,$5
-  add $2,$4
-lpe
-mov $0,$2
-add $0,1
+mov $1,$0
+seq $1,6318 ; Large Schröder numbers (or large Schroeder numbers, or big Schroeder numbers).
+mov $0,$1
 mul $0,2

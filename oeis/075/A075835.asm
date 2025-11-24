@@ -1,18 +1,18 @@
 ; A075835: Numbers k such that 13*k^2 + 4 is a square.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 0,3,33,360,3927,42837,467280,5097243,55602393,606529080,6616217487,72171863277,787274278560,8587845200883,93679022931153,1021881407041800,11147016454528647,121595299592773317
-; Formula: a(n) = b(max(2*n-2,0)), b(n) = 3*b(n-1)+b(n-2), b(1) = 1, b(0) = 0
+; Formula: a(n) = floor(b(n-1)/3), b(n) = 9*c(n-1)+b(n-1), b(1) = 9, b(0) = 0, c(n) = 10*c(n-1)+b(n-1), c(1) = 10, c(0) = 1
 
 #offset 1
 
-mov $2,1
+mov $3,1
 sub $0,1
-mul $0,2
 lpb $0
   sub $0,1
-  mov $3,$1
-  mul $1,3
-  add $1,$2
-  mov $2,$3
+  mov $1,$3
+  mul $1,9
+  add $2,$1
+  add $3,$2
 lpe
-mov $0,$1
+mov $0,$2
+div $0,3

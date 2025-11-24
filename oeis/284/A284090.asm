@@ -5,7 +5,20 @@
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,273972 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 20", based on the 5-celled von Neumann neighborhood.
+mov $5,1
+add $5,$0
+div $5,2
+lpb $0
+  sub $0,1
+  mov $4,$5
+  mul $4,4
+  bin $4,$2
+  mod $4,2
+  add $2,1
+  mul $3,2
+  add $3,$4
+lpe
+mov $0,$3
 dir $0,2
 div $0,2
 sub $1,1

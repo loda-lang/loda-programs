@@ -1,5 +1,5 @@
 ; A171474: n-th prime^n-th nonnegative nonprime (without repetition).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Science United
 ; 1,2,3,5,7,11,13,16,17,19,23,29,31,37,41,43,47,53,59,61,64,67,71,73,79,81,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,256,257
 
 #offset 1
@@ -18,7 +18,6 @@ lpb $2
     lpb $10
       mov $11,$3
       mod $11,$9
-      mul $11,3
       add $9,1
       sub $10,$11
     lpe

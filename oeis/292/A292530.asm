@@ -11,7 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,40 ; The prime numbers.
+  seq $5,133241 ; Dimensions of certain Lie algebra (see reference for precise definition).
   add $5,$6
   seq $5,13632 ; Difference between n and the next prime greater than n.
   add $6,$5
@@ -27,4 +27,4 @@ lpb $2
 lpe
 mov $0,$6
 sub $0,$4
-add $0,2
+add $0,1

@@ -5,7 +5,8 @@
 lpb $0
   add $1,1
   mov $2,$0
-  seq $2,48762 ; Largest cube <= n.
+  nrt $2,3
+  pow $2,3
   mov $3,$2
   equ $3,0
   mov $4,$2

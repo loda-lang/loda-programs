@@ -1,12 +1,26 @@
 ; A127528: Triangle T(n,k) read by rows: tau(n)*phi(n/k) if k|n, else 0.
 ; Submitted by Ralfy
 ; 1,2,2,4,0,2,6,3,0,3,8,0,0,0,2,8,8,4,0,0,4,12,0,0,0,0,0,2,16,8,0,4,0,0,0,4,18,0,6,0,0,0,0,0,3,16,16,0,0,4,0,0,0,0,4,20,0,0,0,0,0,0,0,0,0,2,24,12,12,12,0,6,0,0,0,0,0,6,24,0
-; Formula: a(n) = A000005(truncate((sqrtint(8*n)+1)/2))*truncate(A319998(max(2*A126988(n)-1,0)+1)/2)
+; Formula: a(n) = A000005(floor((sqrtint(8*n)+1)/2))*truncate(A319998(max(2*truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)-1,0)+1)/2)
 
 #offset 1
 
 mov $1,$0
-seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+mov $2,$1
+bin $1,2
+mov $3,$0
+sub $3,$1
+mov $5,$2
+div $5,$3
+mov $4,$2
+mod $4,$3
+equ $4,0
+mul $4,$5
+mov $1,$4
 mul $1,2
 trn $1,1
 add $1,1

@@ -1,17 +1,12 @@
 ; A022927: Number of integers m such that 5^n < 3^m < 5^(n+1).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,1,2,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2
+; Formula: a(n) = -logint(5^n,3)+logint(5*5^n,3)
 
-add $0,1
 mov $1,5
 pow $1,$0
-div $1,2
 mov $0,$1
-lpb $0
-  sub $0,1
-  mov $2,$0
-  equ $2,0
-  div $0,3
-lpe
-add $2,1
-mov $0,$2
+log $1,3
+mul $0,5
+log $0,3
+sub $0,$1

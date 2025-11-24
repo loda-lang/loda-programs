@@ -4,28 +4,35 @@
 
 #offset 1
 
-sub $0,1
+mov $1,$0
+div $1,2
+max $1,1
+log $1,11
+mov $2,11
+pow $2,$1
+sub $0,$2
+mov $3,$2
+mul $3,11
+mov $4,$0
+geq $4,$3
+mul $2,10
+mul $2,$4
+sub $0,$2
+add $1,$4
+mov $5,$4
+equ $5,0
+mul $5,11
+add $4,$5
 mov $2,$0
-pow $2,2
+div $2,$4
+mov $3,11
+pow $3,$1
+mul $0,$3
 lpb $2
-  mov $3,$1
-  mov $6,0
-  mov $5,$1
-  lpb $5
-    mov $7,$5
-    mod $7,11
-    div $5,11
-    mul $6,11
-    add $6,$7
-  lpe
-  sub $3,$6
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  mov $7,$2
+  mod $7,11
+  div $2,11
+  mul $6,11
+  add $6,$7
 lpe
-mov $0,$1
+add $0,$6

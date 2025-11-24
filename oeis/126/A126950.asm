@@ -1,26 +1,35 @@
 ; A126950: a(1) = 1; for n>1, a(n) = the smallest number p > a(n-1) such that (a(n-1)+p)/2 is a cube.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,15,39,89,161,271,415,609,849,1151,1511,1945,2449,3039,3711,4481,5345,6319,7399,8601,9921,11375,12959,14689,16561,18591,20775,23129,25649,28351,31231,34305,37569,41039,44711,48601,52705,57039,61599,66401
-; Formula: a(n) = 2*truncate((140*n+42*(n-1)^2+4*(n-1)^3-8*truncate((140*n-140)/8)-38)/8)-12*binomial(n-1,2)-23
+; Formula: a(n) = b(n-1), b(n) = c(n-1), b(2) = 39, b(1) = 15, b(0) = 1, c(n) = truncate((c(n-1)*(18*n+27)+c(n-2)*((n-1)*(6*n+33)+64)+2)/((n-1)*(6*n+15)+19)), c(2) = 89, c(1) = 39, c(0) = 15
 
 #offset 1
 
+mov $2,1
+mov $3,15
 sub $0,1
-mov $1,$0
-mov $2,$0
-mul $2,140
-mod $2,8
-mov $3,$0
-pow $0,3
-mul $0,4
-pow $1,2
-mul $1,42
-bin $3,2
-mul $3,6
-add $0,$1
-add $0,$2
-add $0,102
-div $0,8
-sub $0,$3
-mul $0,2
-sub $0,23
+lpb $0
+  mov $5,6
+  mul $5,$1
+  add $5,39
+  mul $5,$1
+  add $5,64
+  mul $2,$5
+  rol $2,2
+  mov $5,18
+  mul $5,$1
+  add $5,45
+  mov $4,$2
+  mul $4,$5
+  add $3,$4
+  add $3,2
+  mov $5,6
+  mul $5,$1
+  add $5,21
+  mul $5,$1
+  add $5,19
+  sub $0,1
+  add $1,1
+  div $3,$5
+lpe
+mov $0,$2

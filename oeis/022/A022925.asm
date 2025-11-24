@@ -1,18 +1,12 @@
 ; A022925: Number of 5^m between 2^n and 2^(n+1).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0
+; Formula: a(n) = -logint(2^n,5)+logint(2*2^n,5)
 
-add $0,1
-mov $2,$0
-lpb $2
-  mov $3,10
-  pow $3,$0
-  div $2,$3
-lpe
-lpb $3
-  mul $3,2
-  mov $1,$3
-  equ $1,2
-  div $3,10
-lpe
+mov $1,2
+pow $1,$0
 mov $0,$1
+log $1,5
+mul $0,2
+log $0,5
+sub $0,$1

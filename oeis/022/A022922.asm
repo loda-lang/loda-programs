@@ -1,21 +1,12 @@
 ; A022922: Number of integers m such that 5^n < 2^m < 5^(n+1).
-; Submitted by Wood
+; Submitted by BrandyNOW
 ; 2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2
+; Formula: a(n) = -logint(5^n,2)+logint(5*5^n,2)
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  mov $7,5
-  pow $7,$0
-  mov $6,$7
-  log $6,2
-  mov $2,$3
-  mul $2,$6
-  add $1,$2
-  mov $5,$6
-lpe
-sub $1,$5
+mov $1,5
+pow $1,$0
 mov $0,$1
+log $1,2
+mul $0,5
+log $0,2
+sub $0,$1

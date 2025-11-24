@@ -1,5 +1,5 @@
 ; A186191: First digit of tetranacci numbers A000288.
-; Submitted by Jamie Morken(l1)
+; Submitted by pm120
 ; 1,1,1,1,4,7,1,2,4,9,1,3,6,1,2,4,9,1,3,6,1,2,4,9,1,3,6,1,2,4,9,1,3,6,1,2,4,8,1,3,6,1,2,4,8,1,3,6,1,2,4,8,1,3,6,1,2,4,8,1,3,6,1,2,4,8,1,3,6,1,2,4,8,1,3,6,1,2,4,8
 
 seq $0,288 ; Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) with a(0) = a(1) = a(2) = a(3) = 1.
@@ -7,4 +7,4 @@ lpb $0
   mov $1,$0
   div $0,10
 lpe
-mov $0,$1
+add $0,$1

@@ -4,25 +4,14 @@
 
 #offset 1
 
-mov $1,$0
+mov $1,1
 lpb $0
-  mov $4,$3
-  add $4,1
-  mul $7,10
-  mov $2,$4
-  sub $2,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
+  lpb $0
+    dif $0,2
+    mul $1,100
+  lpe
+  add $2,$1
   div $0,2
-  mul $2,$6
-  add $7,$2
-  mul $7,10
-  mov $3,$7
+  mul $1,10
 lpe
-mov $0,$3
-div $0,10
+mov $0,$2

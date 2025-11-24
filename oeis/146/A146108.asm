@@ -1,24 +1,39 @@
 ; A146108: Bell numbers (A000110) read mod 18.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,1,2,5,15,16,5,13,0,15,1,6,13,1,16,5,5,0,13,5,10,15,15,10,15,13,10,1,5,2,15,13,14,13,15,12,1,15,10,1,1,2,5,15,16,5,13,0,15,1,6,13,1,16,5,5,0,13,5,10,15,15,10,15,13,10,1,5,2,15,13,14,13,15,12,1,15,10,1,1
 
+mov $4,1
+fac $4,$0
+mov $7,$0
+mov $8,1
 add $0,1
-mov $1,0
-mov $3,$0
-sub $0,1
-mov $2,$0
-bin $2,2
-add $2,$0
-add $2,$3
-lpb $3
-  mov $0,$2
-  max $0,1
+lpb $0
   sub $0,1
-  seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  dif $1,$3
-  add $1,$0
-  sub $2,1
-  sub $3,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  mov $10,$6
+  div $10,$4
+  mul $11,$1
+  add $11,$10
+  add $1,1
+  mod $6,$4
+  mul $8,-1
+  mov $12,$3
+  mul $12,$6
+  mul $12,$8
+  mov $13,$3
+  mul $13,$11
+  mul $13,$8
+  add $5,$13
+  add $9,$12
 lpe
-mov $0,$1
+mul $5,$8
+mul $9,$8
+div $9,$4
+add $9,$5
+mov $0,$9
 mod $0,18

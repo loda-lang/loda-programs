@@ -1,5 +1,5 @@
 ; A138463: A bisection of A006318.
-; Submitted by Science United
+; Submitted by Mads Nissen
 ; 2,22,394,8558,206098,5293446,142078746,3937603038,111818026018,3236724317174,95149655201962
 
 mov $4,-1
@@ -18,9 +18,4 @@ lpb $1
   add $3,$2
   add $4,$2
 lpe
-mov $1,$2
-sub $1,2
-div $1,2
-add $1,1
-mov $0,$1
-mul $0,2
+mov $0,$2

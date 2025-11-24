@@ -1,13 +1,12 @@
 ; A014762: Squares of numbers in array formed from even elements to the right of middle of rows of Pascal triangle.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 16,100,36,3136,784,64,15876,7056,1296,44100,14400,100,213444,108900,627264,48400,4356,144,2944656,81796,6084,4008004,132496,196,130873600,64128064,19079424,3312400,313600,14400,256,590976100,378224704
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,3
-pow $2,2
+mul $2,23
 lpb $2
   sub $2,2
   mov $3,$1
@@ -26,8 +25,7 @@ lpb $2
   pow $5,2
   mov $3,$5
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

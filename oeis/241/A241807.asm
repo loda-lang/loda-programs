@@ -1,15 +1,13 @@
 ; A241807: Numerators of c(n) = (n^2+n+2)/((n+1)*(n+2)*(n+3)) as defined in A241269.
-; Submitted by Jamie Morken(m4)
+; Submitted by BrandyNOW
 ; 1,1,2,7,11,2,11,29,37,23,28,67,79,23,53,121,137,77,86,191,211,29,127,277,301,163,176,379,407,109,233,497,529,281,298,631,667,88,371,781,821,431,452,947,991,259,541,1129,1177,613,638
-; Formula: a(n) = truncate((n^2+n+2)/gcd(n*(2*n+6),n^2+n+2))
+; Formula: a(n) = floor((n*(n+1)+2)/gcd(n*(2*n+6),n*(n+1)+2))
 
 mov $1,$0
-mov $2,$0
-add $2,2
-pow $0,2
-add $0,$2
-mul $2,2
-add $2,2
-mul $2,$1
-gcd $2,$0
-div $0,$2
+mul $1,2
+add $1,6
+mul $1,$0
+fac $0,2
+add $0,2
+gcd $1,$0
+div $0,$1

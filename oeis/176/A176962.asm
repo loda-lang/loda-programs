@@ -18,14 +18,12 @@ lpb $2
   seq $4,117316 ; Riordan array ((1-x)/(1-x-2x^2),x(1-x)/(1-x-2x^2)).
   mov $6,$0
   mul $6,8
-  add $6,1
   nrt $6,2
   add $6,1
   div $6,2
   bin $6,2
   sub $0,$6
   add $0,1
-  mov $5,$0
   mul $0,2
   bin $0,$5
   add $5,1

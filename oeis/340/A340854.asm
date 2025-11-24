@@ -1,5 +1,5 @@
 ; A340854: Numbers that cannot be factored into factors > 1, the least of which is odd.
-; Submitted by Stony666
+; Submitted by Steve Dodd
 ; 1,2,4,6,8,10,14,16,20,22,26,28,32,34,38,44,46,52,58,62,64,68,74,76,82,86,88,92,94,104,106,116,118,122,124,128,134,136,142,146,148,152,158,164,166,172,178,184,188,194,202,206,212,214,218,226,232,236,244
 
 #offset 1
@@ -14,7 +14,6 @@ lpb $4
   lpb $2
     gcd $6,3
     mov $7,$2
-    div $7,5
     lpb $7
       mov $5,$2
       mod $5,$6

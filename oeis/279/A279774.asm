@@ -1,5 +1,5 @@
 ; A279774: Numbers n such that the sum of digits of 4n equals 8.
-; Submitted by [TA]crashtech
+; Submitted by Science United
 ; 2,11,20,29,38,56,65,83,101,110,128,155,200,254,263,281,290,308,326,335,353,380,425,506,515,533,551,560,578,605,650,758,776,785,803,830,875,1001,1010,1028,1055,1100,1253,1280,1325,1505,1550,1775
 
 #offset 1
@@ -16,10 +16,8 @@ lpb $2
   log $5,10
   add $5,1
   dgs $3,10
-  mov $6,$3
-  neq $6,0
   div $3,$5
-  add $3,$6
+  mul $3,2
   pow $3,2
   equ $3,4
   sub $0,$3

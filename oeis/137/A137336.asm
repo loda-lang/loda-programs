@@ -1,7 +1,7 @@
 ; A137336: Triangle read by rows, with 2-variable g.f. (-2*x*t+t^2)/(1-2*x*t+t^2).
-; Submitted by mmonnin
+; Submitted by sbo92
 ; 0,0,-2,1,0,-4,0,4,0,-8,-1,0,12,0,-16,0,-6,0,32,0,-32,1,0,-24,0,80,0,-64,0,8,0,-80,0,192,0,-128,-1,0,40,0,-240,0,448,0,-256,0,-10,0,160,0,-672,0,1024,0,-512,1,0,-60,0,560,0,-1792,0,2304,0,-1024
-; Formula: a(n) = 0^(n-1)-truncate(truncate((2*truncate((sqrtint(8*n)-1)/2)+2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-4*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n)/2))^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))/2)*binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2))*(binomial(-1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)==1)
+; Formula: a(n) = 0^(n-1)-truncate(truncate((2*truncate((sqrtint(8*n)-1)/2)+2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-4*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n)/2))^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))/2)*binomial(-1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)*binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2))
 
 #offset 1
 
@@ -39,7 +39,6 @@ mul $0,-1
 add $0,$6
 mov $5,-1
 bin $5,$0
-equ $5,1
 mul $6,-1
 sub $6,1
 add $6,$0

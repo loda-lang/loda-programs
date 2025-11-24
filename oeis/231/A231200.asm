@@ -1,49 +1,45 @@
 ; A231200: Boustrophedon transform of even numbers.
-; Submitted by amazing
+; Submitted by Science United
 ; 0,2,8,24,72,240,924,4116,20944,119952,763540,5346748,40845816,338041704,3012855356,28770647220,293055401888,3171602665696,36343889387172,439607533130732,5597256953340360,74829813397495128,1048039052970587788,15345654816688856484,234464334629564280432,3731615783504681061200,61766130157108710454004,1061681572457412264467676,18924849467571426278609304,349390067443945824858023112,6672858756109760748238150620,131690288493024152572345391508,2682772527470404897459652282176
 
-mov $1,$0
+mov $2,$0
 sub $0,1
+mov $5,$0
+bin $5,2
+add $5,$0
+add $5,$0
 mov $4,$0
-bin $4,2
-add $4,$0
-add $4,$0
-mov $3,$0
-lpb $3
-  mov $0,$4
-  sub $0,$3
+lpb $4
+  mov $0,$5
+  sub $0,$4
   add $0,1
-  mov $7,$0
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $8,$7
-  add $8,1
-  bin $8,2
-  sub $0,$8
-  sub $0,1
   mov $8,$0
-  mov $0,$7
-  bin $0,$8
-  sub $7,$8
-  mov $9,-1
-  pow $9,$7
-  mov $10,$7
-  seq $10,122045 ; Euler (or secant) numbers E(n).
-  seq $7,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-  gcd $7,$10
-  mul $7,$9
-  mul $0,$7
-  mov $5,0
-  gcd $5,$0
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  sub $0,$9
+  sub $0,1
+  mov $9,$0
+  mov $0,$8
+  bin $0,$9
+  sub $8,$9
+  mov $1,$8
+  seq $1,122045 ; Euler (or secant) numbers E(n).
+  seq $8,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $8,$1
+  mul $0,$8
   mov $6,0
-  gcd $6,$5
-  mov $0,$6
-  add $2,$6
-  sub $3,1
+  gcd $6,$0
+  mov $7,0
+  gcd $7,$6
+  add $3,$7
+  sub $4,1
 lpe
-mov $0,$2
+mov $0,$3
 add $0,1
-mul $0,$1
+mul $0,$2
 mul $0,2

@@ -1,15 +1,38 @@
 ; A370767: Number of signed permutations of length n+1 with adjacent elements differing by more than 1 and whose first element is 1.
-; Submitted by Karlsson
+; Submitted by Science United
 ; 1,1,3,17,139,1401,16867,236513,3787707,68219081,1364931859,30037136433,721044433387,18750182814233,525071095004739,15753703863875201,504159100060894747,17142539126080474473,617165134818228049267,23453349764127439545041,938170391199139959128139,39404462487260564720460473,1733845831852152433076181667,79758882264749888685737376033,3828509056149658243987925088379,191429083940030392801643235840521,9954479062203763223080241170263507,537549856140627331477008337876097393
+; Formula: a(n) = d(n)+1, b(n) = c(n-2), b(5) = 15466, b(4) = 1262, b(3) = 122, b(2) = 14, b(1) = 2, b(0) = 0, c(n) = 2*n*c(n-4)+c(n-1)*(2*n+7)+c(n-2)*(-2*n-1)+c(n-3)*(-2*n-1), c(7) = 1296712778, c(6) = 64431374, c(5) = 3551194, c(4) = 219646, c(3) = 15466, c(2) = 1262, c(1) = 122, c(0) = 14, d(n) = b(n-1)+d(n-1), d(5) = 1400, d(4) = 138, d(3) = 16, d(2) = 2, d(1) = 0, d(0) = 0
 
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,283184 ; a(n) is the number of symmetric permutations (p(1),p(2),...,p(m)) of (1,2,...,m), m=2n or m=2n+1, with p(m+1-k) = m+1-p(k) for 1<=k<=m, such that adjacent numbers do not differ by 1. a(n) is also the number of point-symmetric arrangements of m non-attacking kings on an m X m board, with one in each row and column.
-  add $1,$0
+mov $2,1
+mov $4,2
+mov $5,14
+lpb $0
+  mov $7,$1
+  mul $7,2
+  add $7,2
+  mul $2,$7
+  rol $2,4
+  mov $7,$1
+  mul $7,-2
+  sub $7,3
+  sub $0,1
+  mov $6,$2
+  mul $6,$7
+  mov $7,$1
+  mul $7,-2
+  sub $7,3
+  add $5,$6
+  mov $6,$3
+  mul $6,$7
+  mov $7,$1
+  mul $7,2
+  add $7,9
+  add $5,$6
+  mov $6,$4
+  mul $6,$7
+  add $8,$2
+  add $1,1
+  add $5,$6
 lpe
-mov $0,$1
+mov $0,$8
 add $0,1
