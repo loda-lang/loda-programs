@@ -1,0 +1,61 @@
+; A259688: Related to Euler numbers, expansion of e.g.f. tan(x)^2.
+; Submitted by atannir
+; 1,2,8,16,136,272,3968,7936,176896,353792,11184128,22368256,951878656,1903757312,104932671488,209865342976,14544442556416,29088885112832,2475749026562048,4951498053124096,507711943253426176,1015423886506852352,123460740095103991808,246921480190207983616,35125800801971979943936,70251601603943959887872,11559592093904798920736768,23119184187809597841473536,4356981378562584648085405696,8713962757125169296170811392,1864703851860264785548754812928,3729407703720529571097509625856
+; Formula: a(n) = truncate((A008280((truncate((sqrtint(8*(-n-2*truncate((-n)/2))*(-(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2-n+binomial(truncate((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2)+16)-1)/2)+1,2)+binomial(n+2,2)+truncate((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2)+16)-1)/2)-4)+8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*binomial(floor((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2))+1)/2),2)+8*n-8*binomial(truncate((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2)+16)-1)/2)+1,2)-8*binomial(n+2,2)+32)-1)/2)+1)^2-(-n-2*truncate((-n)/2))*(-(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2-n+binomial(truncate((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2)+16)-1)/2)+1,2)+binomial(n+2,2)+truncate((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2)+16)-1)/2)-4)-(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2-binomial(floor((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2))+1)/2),2)-n+binomial(truncate((sqrtint(8*(floor(sqrtint(8*binomial(n+2,2)+8)/2)+1)^2+8*n-8*binomial(n+2,2)+16)-1)/2)+1,2)+binomial(n+2,2)-4)-2)/2)+1
+
+mov $1,$0
+add $0,2
+bin $0,2
+add $0,1
+mov $4,$0
+mul $4,8
+nrt $4,2
+div $4,2
+add $4,1
+pow $4,2
+sub $4,$0
+mov $2,$4
+add $2,$1
+mov $3,$2
+add $3,3
+mov $5,$3
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $3,$6
+add $3,2
+sub $7,$1
+mod $7,2
+sub $5,$3
+mul $5,$7
+add $3,$5
+add $3,$2
+mov $0,$2
+add $0,1
+mov $8,$0
+mul $8,8
+nrt $8,2
+add $8,1
+div $8,2
+bin $8,2
+sub $0,$8
+sub $3,$0
+mov $0,$3
+add $0,1
+mov $9,$0
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+add $9,1
+pow $9,2
+sub $9,$0
+mov $0,$9
+seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+sub $0,2
+div $0,2
+add $0,1
