@@ -1,0 +1,59 @@
+; A320034: a(n) is the number of integer partitions of n with largest part <= 6 for which the index of the seaweed algebra formed by the integer partition paired with its weight is 0.
+; Submitted by loader3229
+; 1,1,1,2,3,3,5,6,7,7,6,9,11,8,8,9,11,9,11,9,12,9,8,9,14,6,9,5,11,6,11,4,12,5,8,4,14,5,9,3,11,5,11,3,12,5,8,3,14,5,9,3,11,5,11,3,12,5,8,3,14,5,9,3,11,5,11,3,12,5,8,3,14,5,9,3,11,5,11,3
+
+#offset 1
+
+sub $0,1
+mov $1,1
+fil $1,3
+mov $4,2
+mov $5,3
+mov $6,3
+mov $7,5
+mov $8,6
+mov $9,7
+mov $10,7
+mov $11,6
+mov $12,9
+mov $13,11
+mov $14,8
+mov $15,8
+mov $16,9
+mov $17,11
+mov $18,9
+mov $19,11
+mov $20,9
+mov $21,12
+mov $22,9
+mov $23,8
+mov $24,9
+mov $25,14
+mov $26,6
+mov $27,9
+mov $28,5
+mov $29,11
+mov $30,6
+mov $31,11
+mov $32,4
+mov $33,12
+mov $34,5
+mov $35,8
+mov $36,4
+mov $37,14
+mov $38,5
+mov $39,9
+mov $40,3
+mov $41,11
+mov $42,5
+mov $43,11
+mov $44,3
+lpb $0
+  mov $1,0
+  rol $1,44
+  add $44,$36
+  add $44,$38
+  sub $44,$42
+  sub $0,1
+lpe
+mov $0,$1
