@@ -1,0 +1,83 @@
+; A157245: Decimal expansion of estimate of 1 - (the weakly triple-free set constant).
+; Submitted by iBezanilla
+; 1,9,9,6,8,0,5,1,6,1,9,7
+
+mov $2,1
+mov $3,2
+mov $6,14
+mov $7,24
+mov $8,40
+mov $9,67
+mov $10,114
+mov $11,200
+mov $12,364
+mov $13,684
+lpb $0
+  equ $4,-6
+  mov $15,$1
+  mul $15,8
+  add $15,8
+  mul $2,$15
+  rol $2,12
+  mov $15,$1
+  sub $15,16
+  mov $14,$2
+  mul $14,$15
+  mov $15,$1
+  sub $15,59
+  add $11,1
+  add $13,$14
+  mov $14,$5
+  mul $14,$15
+  mov $15,$1
+  mul $15,12
+  add $15,61
+  add $13,$14
+  mov $14,$6
+  mul $14,$15
+  mov $15,$1
+  mul $15,5
+  add $15,12
+  add $13,$14
+  mov $14,$7
+  mul $14,$15
+  mov $15,$1
+  mul $15,-12
+  sub $15,54
+  add $13,$14
+  mov $14,$8
+  mul $14,$15
+  mov $15,$1
+  mul $15,10
+  add $15,74
+  add $13,$14
+  add $13,$9
+  mov $14,$9
+  mul $14,$15
+  mov $15,$1
+  sub $15,26
+  add $13,$14
+  mov $14,$10
+  mul $14,$15
+  mov $15,$1
+  mul $15,-4
+  sub $15,47
+  add $13,$14
+  mov $14,$11
+  mul $14,$15
+  mov $15,$1
+  mul $15,4
+  add $15,47
+  add $13,$14
+  mov $14,$12
+  mul $14,$15
+  mov $15,$1
+  add $15,12
+  add $13,$14
+  div $13,$15
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$14
+add $0,1
+mod $0,10
