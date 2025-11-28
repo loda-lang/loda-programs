@@ -1,0 +1,88 @@
+; A157244: Decimal expansion of estimate of the weakly triple-free set constant.
+; Submitted by Science United
+; 8,0,0,3,1,9,4,8,3,8,0,2
+
+mov $3,24
+mov $5,1
+mov $6,2
+mov $9,14
+mov $10,24
+mov $11,40
+mov $12,67
+mov $13,114
+mov $14,200
+mov $15,364
+mov $16,684
+mov $1,$0
+lpb $1
+  equ $7,-6
+  mov $18,$4
+  mul $18,8
+  add $18,8
+  mul $5,$18
+  rol $5,12
+  mov $18,$4
+  sub $18,16
+  mov $17,$5
+  mul $17,$18
+  mov $18,$4
+  sub $18,59
+  add $14,1
+  add $16,$17
+  mov $17,$8
+  mul $17,$18
+  mov $18,$4
+  mul $18,12
+  add $18,61
+  add $16,$17
+  mov $17,$9
+  mul $17,$18
+  mov $18,$4
+  mul $18,5
+  add $18,12
+  add $16,$17
+  mov $17,$10
+  mul $17,$18
+  mov $18,$4
+  mul $18,-12
+  sub $18,54
+  add $16,$17
+  mov $17,$11
+  mul $17,$18
+  mov $18,$4
+  mul $18,10
+  add $18,74
+  add $16,$17
+  add $16,$12
+  mov $17,$12
+  mul $17,$18
+  mov $18,$4
+  sub $18,26
+  add $16,$17
+  mov $17,$13
+  mul $17,$18
+  mov $18,$4
+  mul $18,-4
+  sub $18,47
+  add $16,$17
+  mov $17,$14
+  mul $17,$18
+  mov $18,$4
+  mul $18,4
+  add $18,47
+  add $16,$17
+  mov $17,$15
+  mul $17,$18
+  mov $18,$4
+  add $18,12
+  add $16,$17
+  div $16,$18
+  sub $1,1
+  add $4,1
+lpe
+mov $1,$17
+add $1,1
+mod $1,10
+sub $3,$1
+mov $0,$3
+sub $0,15

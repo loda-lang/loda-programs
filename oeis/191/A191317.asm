@@ -1,0 +1,58 @@
+; A191317: Number of dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0)-steps at positive heights) having no UDU's, where U=(1,1) and D=(1,-1).
+; Submitted by Science United
+; 1,1,2,3,5,8,14,23,40,67,117,198,346,590,1032,1769,3096,5328,9329,16103,28205,48801,85500,148216,259733,450952,790387,1374044,2408653,4191814,7349019,12801243,22445281,39127766,68611494,119687036,209890344,366348367,642493426,1121992447,1967839835
+
+mov $1,-2
+mov $2,1
+fil $2,4
+mov $6,2
+mov $7,3
+mov $8,5
+lpb $0
+  mov $10,$1
+  mul $10,-3
+  sub $10,6
+  mul $2,$10
+  rol $2,7
+  mov $10,$1
+  mul $10,3
+  add $10,6
+  mov $9,$2
+  mul $9,$10
+  mov $10,$1
+  mul $10,-8
+  sub $10,22
+  add $8,$9
+  mov $9,$3
+  mul $9,$10
+  mov $10,$1
+  mul $10,5
+  add $10,16
+  add $8,$9
+  mov $9,$4
+  mul $9,$10
+  mov $10,$1
+  mul $10,-3
+  sub $10,12
+  add $8,$9
+  mov $9,$5
+  mul $9,$10
+  mov $10,$1
+  add $10,2
+  add $8,$9
+  mov $9,$6
+  mul $9,$10
+  mov $10,$1
+  mul $10,2
+  add $10,16
+  add $8,$9
+  mov $9,$7
+  mul $9,$10
+  mov $10,$1
+  add $10,8
+  add $8,$9
+  div $8,$10
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$4
