@@ -1,24 +1,25 @@
 ; A080075: Proth numbers: of the form k*2^m + 1 for k odd, m >= 1 and 2^m > k.
-; Submitted by davidsteele1975
+; Submitted by Science United
 ; 3,5,9,13,17,25,33,41,49,57,65,81,97,113,129,145,161,177,193,209,225,241,257,289,321,353,385,417,449,481,513,545,577,609,641,673,705,737,769,801,833,865,897,929,961,993,1025,1089,1153,1217,1281,1345,1409,1473,1537,1601,1665,1729,1793,1857,1921,1985,2049,2113,2177,2241,2305,2369,2433,2497,2561,2625,2689,2753,2817,2881,2945,3009,3073,3137
-; Formula: a(n) = 2*truncate((b(n+1)-15)/9)+3, b(n) = b(n-1)+d(n-1), b(3) = 24, b(2) = 15, b(1) = 6, b(0) = 3, c(n) = truncate((6*n+c(n-1))/d(n-1)), c(3) = 2, c(2) = 1, c(1) = 3, c(0) = 3, d(n) = truncate((6*n+c(n-1))/d(n-1))*d(n-1), d(3) = 18, d(2) = 9, d(1) = 9, d(0) = 3
+; Formula: a(n) = 2*(-2^logint(max(floor(n/3),1),2)*((-2^logint(max(floor(n/3),1),2)+n)>=(2^logint(max(floor(n/3),1),2)))-2^logint(max(floor(n/3),1),2)+n+1)*2^(((-2^logint(max(floor(n/3),1),2)+n)>=(2^logint(max(floor(n/3),1),2)))+logint(max(floor(n/3),1),2))+1
 
 #offset 1
 
-mov $2,3
-mov $3,3
-mov $4,3
+mov $1,$0
+div $1,3
+max $1,1
+log $1,2
+mov $2,2
+pow $2,$1
+sub $0,$2
+mov $4,$0
+geq $4,$2
+add $1,$4
+mul $2,$4
+mov $3,2
+pow $3,$1
 add $0,1
-lpb $0
-  sub $0,1
-  add $1,6
-  add $2,$4
-  add $3,$1
-  div $3,$4
-  mul $4,$3
-lpe
-mov $0,$2
-sub $0,15
-div $0,9
+sub $0,$2
+mul $0,$3
 mul $0,2
-add $0,3
+add $0,1

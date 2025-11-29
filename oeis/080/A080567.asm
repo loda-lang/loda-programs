@@ -1,24 +1,24 @@
 ; A080567: 1 + Sum_{k=2..n} 2^((prime(k)-1)/2).
-; Submitted by Simon Strandgaard
+; Submitted by skildude
 ; 1,3,7,15,47,111,367,879,2927,19311,52079,314223,1362799,3459951,11848559,78957423,615828335,1689570159,10279504751,44639243119,113358719855,663114533743,2862137789295,20454323833711,301929300544367
 
 #offset 1
 
 sub $0,1
-mov $4,$0
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $3,1
-  mov $0,$4
-  sub $0,$2
-  add $0,1
-  seq $0,40 ; The prime numbers.
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$2
+  sub $0,$1
+  seq $0,6093 ; a(n) = prime(n) - 1.
+  mov $4,$0
+  equ $4,$0
   lpb $0
     sub $0,2
-    mul $3,2
+    mul $4,2
   lpe
-  add $1,$3
+  add $3,$4
 lpe
-mov $0,$1
-add $0,1
+mov $0,$3

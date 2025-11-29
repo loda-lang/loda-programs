@@ -1,5 +1,5 @@
 ; A018407: Divisors of 351.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,9,13,27,39,117,351
 
 #offset 1
@@ -22,6 +22,4 @@ lpb $0
   mov $1,104
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
 add $0,1

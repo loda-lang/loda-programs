@@ -1,7 +1,7 @@
 ; A032633: a(n) = floor(n^3 / Pi).
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,2,8,20,39,68,109,162,232,318,423,550,699,873,1074,1303,1563,1856,2183,2546,2947,3389,3872,4400,4973,5594,6265,6987,7763,8594,9482,10430,11439,12510,13647,14851,16123,17466,18881,20371,21938
-; Formula: a(n) = truncate(truncate(((2*n^3)^2+truncate((8*n^3-truncate((194*n^3+97)/113)+3)/2)+1)/(truncate((8*n^3-truncate((194*n^3+97)/113)+3)/2)+1))/4)
+; Formula: a(n) = truncate(truncate(((2*n^3)^2+truncate((8*n^3-floor((194*n^3+97)/113)+4)/2)+1)/(truncate((8*n^3-floor((194*n^3+97)/113)+4)/2)+1))/4)
 
 pow $0,3
 mov $1,$0
@@ -13,7 +13,6 @@ mov $2,97
 mul $2,$1
 div $2,113
 mul $1,4
-sub $1,1
 sub $1,$2
 div $1,2
 add $1,1

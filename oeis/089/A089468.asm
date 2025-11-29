@@ -1,17 +1,16 @@
 ; A089468: Hyperbinomial transform of A089467 and also the 2nd hyperbinomial transform of A089466.
-; Submitted by Ralfy
+; Submitted by BrandyNOW
 ; 1,3,15,110,1083,13482,203569,3618540,74058105,1715620148,44384718879,1268498827752,39692276983555,1349678904881400,49556966130059553,1954156038072106448,82363978221026323761,3695194039210436996400
 
-mov $1,$0
-lpb $1
-  add $5,1
-  add $2,1
-  mov $3,$5
-  mul $3,$1
-  add $4,$3
-  sub $1,1
-  mul $5,$2
-  add $5,$4
+lpb $0
+  add $3,1
+  add $4,1
+  mov $1,$3
+  mul $1,$0
+  add $2,$1
+  sub $0,1
+  mul $3,$4
+  add $3,$2
 lpe
-mov $0,$5
+mov $0,$3
 add $0,1

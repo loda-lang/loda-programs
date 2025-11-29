@@ -1,10 +1,9 @@
 ; A061462: The exact power of 2 that divides the n-th Bell number (A000110). Has period 12.
+; Submitted by BrandyNOW
 ; 1,1,2,1,1,4,1,1,4,1,1,2,1,1,2,1,1,4,1,1,4,1,1,2,1,1,2,1,1,4,1,1,4,1,1,2,1,1,2,1,1,4,1,1,4,1,1,2,1,1,2,1,1,4,1,1,4,1,1,2,1,1,2,1,1,4,1,1,4,1,1,2,1,1,2,1,1,4,1,1
-; Formula: a(n) = gcd(truncate((n^2-n+4)/3),4)
+; Formula: a(n) = gcd(truncate((n*(n-1)+4)/3),4)
 
-mov $1,$0
-pow $0,2
-sub $0,$1
+fac $0,-2
 add $0,4
 div $0,3
 gcd $0,4

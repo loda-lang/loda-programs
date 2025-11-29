@@ -1,18 +1,18 @@
 ; A160890: a(n) = ((2^b-1)/phi(n))*Sum_{d|n} Moebius(n/d)*d^(b-1) for b = 3.
-; Submitted by TheKillerChicken
+; Submitted by Science United
 ; 7,21,28,42,42,84,56,84,84,126,84,168,98,168,168,168,126,252,140,252,224,252,168,336,210,294,252,336,210,504,224,336,336,378,336,504,266,420,392,504,294,672,308,504,504,504,336,672,392,630,504,588,378,756,504,672,560,630,420,1008,434,672,672,672,588,1008,476,756,672,1008,504,1008,518,798,840,840,672,1176,560,1008
 ; Formula: a(n) = 7*A253629(n)*binomial(2*(-1)^(n-1),2)
 
 #offset 1
 
 sub $0,1
-mov $1,-1
-pow $1,$0
-mul $1,2
-bin $1,2
-mov $2,$0
-add $2,1
-seq $2,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
-mul $2,$1
-mov $0,$2
+mov $2,-1
+pow $2,$0
+mul $2,2
+bin $2,2
+mov $1,$0
+add $1,1
+seq $1,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+mul $1,$2
+mov $0,$1
 mul $0,7

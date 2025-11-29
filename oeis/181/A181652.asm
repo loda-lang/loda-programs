@@ -1,5 +1,5 @@
 ; A181652: Inverse of number triangle A181651.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,-1,1,-1,-1,1,-1,0,-1,1,-1,0,-1,-1,1,-1,0,-1,0,-1,1,-1,0,-1,0,-1,-1,1,-1,0,-1,0,-1,0,-1,1,-1,0,-1,0,-1,0,-1,-1,1,-1,0,-1,0,-1,0,-1,0,-1,1,-1,0,-1,0,-1,0,-1,0,-1,-1,1
 ; Formula: a(n) = ((-binomial(truncate((sqrtint(8*n+17)-1)/2)+1,2)+n+2)==1)-gcd(-binomial(truncate((sqrtint(8*n+17)-1)/2)+1,2)+n+2,2)+1
 
@@ -14,7 +14,6 @@ div $2,2
 mov $1,$2
 add $1,1
 bin $1,2
-add $0,1
 mov $0,$4
 sub $0,$1
 mov $3,$0

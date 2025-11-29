@@ -1,10 +1,9 @@
 ; A162886: Even numbers in an alternating 1-based sum up to some odd nonprime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [SG]KidDoesCrunch
 ; 24,42,54,60,78,84,96,114,132,138,144,150,168,174,180,186,204,216,222,234,240,258,264,276,282,294,306,312,324,330,348,354,366,372,384,390,402,414,420,432,438,444,450,456,474,480,486,492,504,510,516,528,534,546,558,564
 
 #offset 1
 
-mov $1,4
 mov $2,$0
 add $2,2
 pow $2,2
@@ -16,7 +15,6 @@ lpb $2
   lpb $3
     gcd $5,3
     mov $6,$3
-    div $6,6
     lpb $6
       mov $4,$3
       mod $4,$5
@@ -27,8 +25,8 @@ lpb $2
     pow $3,2
     mov $5,1
   lpe
-  add $0,$5
   sub $0,1
+  add $0,$5
   sub $2,$0
 lpe
 mov $0,$1

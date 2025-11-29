@@ -1,5 +1,5 @@
 ; A179410: The number of columns with alive cells in the n-th generation of cyclic sequence of patterns given in A179409, played in Conway's Game of Life on the 8x8 toroidal grid.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 4,5,3,3,5,5,7,6,7,8,7,7,7,4,7,5,6,6,5,5,5,5,7,3,4,5,3,3,5,5,7,6,7,8,7,7,7,4,7,5,6,6,5,5,5,5,7,3,4,5,3,3,5,5,7,6,7,8,7,7,7,4,7,5,6,6,5,5,5,5,7,3
 
 mov $1,4
@@ -13,45 +13,21 @@ mov $8,6
 mov $9,7
 mov $10,8
 mov $11,7
-mov $12,7
-mov $13,7
+fil $11,3
 mov $14,4
 mov $15,7
 mov $16,5
 mov $17,6
 mov $18,6
 mov $19,5
-mov $20,5
-mov $21,5
-mov $22,5
+fil $19,4
 mov $23,7
 mov $24,3
 lpb $0
   sub $0,1
   mov $25,$1
   mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
-  mov $21,$22
-  mov $22,$23
-  mov $23,$24
+  rol $2,23
   mov $24,$25
 lpe
 mov $0,$1

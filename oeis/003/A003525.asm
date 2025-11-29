@@ -1,11 +1,11 @@
 ; A003525: Divisors of 2^14 - 1.
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,3,43,127,129,381,5461,16383
 
 #offset 1
 
 mov $2,$0
-pow $2,7
+pow $2,10
 lpb $2
   add $3,8
   pow $3,4
@@ -22,6 +22,5 @@ lpb $2
   sub $2,$0
   equ $3,$1
 lpe
-mov $0,$4
-mul $0,2
+mov $0,$1
 sub $0,1

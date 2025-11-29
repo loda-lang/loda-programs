@@ -1,5 +1,5 @@
 ; A023622: Convolution of Lucas numbers and A001950.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 2,11,30,65,128,234,410,700,1173,1945,3198,5230,8524,13858,22493,36470,59089,95694,154926,250770,405854,656789,1062817,1719788,2782794,4502780,7285780
 
 #offset 1
@@ -12,11 +12,15 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  mul $0,377
-  div $0,144
+  mov $6,$0
+  mul $0,55
+  div $0,34
+  add $0,$6
   add $3,$0
   add $4,$3
 lpe
+add $5,1
 mul $5,2
-add $5,$4
-mov $0,$5
+add $4,$5
+mov $0,$4
+sub $0,2

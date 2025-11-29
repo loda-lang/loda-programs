@@ -1,13 +1,12 @@
-; A081769: a(n)-th term of the continued fraction for sum(k>=0,1/2^(2^k)) is 2.
-; Submitted by Science United
+; A081769: a(n)-th term of the continued fraction for Sum_{k>=0} 1/2^(2^k) is 2.
+; Submitted by Goldislops
 ; 5,13,18,23,25,30,38,43,45,53,58,60,65,70,78,83,85,93,98,103,105,110,118,120,125,133,138,140,145,150,158,163,165,173,178,183,185,190,198,203,205,213,218,220,225,230,238,240,245,253,258,263,265,270,278,280
 
 #offset 1
 
+mov $2,$0
 sub $0,1
 mov $4,$0
-mov $2,$0
-add $2,1
 lpb $2
   sub $2,1
   mov $0,$4

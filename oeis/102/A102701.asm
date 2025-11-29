@@ -1,13 +1,12 @@
 ; A102701: Non-"Ding!Bong!" numbers: positive numbers which are not a positive linear combination of 5's and 7's.
-; Submitted by PDW
+; Submitted by roundup
 ; 1,2,3,4,6,8,9,11,13,16,18,23
 
 #offset 1
 
+mov $5,$0
 sub $0,1
 mov $6,$0
-mov $5,$0
-add $5,1
 lpb $5
   sub $5,1
   mov $0,$6

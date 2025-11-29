@@ -1,5 +1,5 @@
 ; A182377: Total sum of positive ranks of all regions in the last shell of n.
-; Submitted by Dylan Delgado
+; Submitted by Tatadu
 ; 0,0,0,1,2,5,8,14,21,32,45,67,91
 
 #offset 1
@@ -8,8 +8,8 @@ mov $3,1
 sub $0,1
 lpb $0
   sub $0,1
-  add $3,$2
   sub $3,$1
+  add $3,$2
   add $2,$0
   add $2,$1
   mov $1,$3

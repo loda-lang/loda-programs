@@ -1,31 +1,48 @@
 ; A006604: Generalized Fibonacci numbers.
-; Submitted by [AF] Hydrosaure
+; Submitted by loader3229
 ; 1,1,4,13,53,228,1037,4885,23640,116793,586633,2986616,15377097,79927913,418852716,2210503285,11738292397,62673984492,336260313765,1811960161517,9802082905840,53213718977777,289817858570513,1583076422786096,8670574105626961
+; Formula: a(n) = b(n-4), a(6) = 1037, a(5) = 228, a(4) = 53, a(3) = 13, a(2) = 4, a(1) = 1, a(0) = 1, b(n) = truncate((b(n-1)*(13*n+47)+b(n-2)*(-7*n-20)+b(n-3)*(-6*n-24)+b(n-4)*(7*n+23)+b(n-5)*(-n-2))/(2*n+10)), b(8) = 15377097, b(7) = 2986616, b(6) = 586633, b(5) = 116793, b(4) = 23640, b(3) = 4885, b(2) = 1037, b(1) = 228, b(0) = 53
 
-add $0,2
+mov $2,1
+mov $3,1
+mov $4,4
+mov $5,13
+mov $6,53
 lpb $0
+  mov $8,-1
+  mul $8,$1
+  sub $8,3
+  mul $2,$8
+  rol $2,5
+  mov $8,7
+  mul $8,$1
+  add $8,30
+  mov $7,$2
+  mul $7,$8
+  mov $8,-6
+  mul $8,$1
+  sub $8,30
+  add $6,$7
+  mov $7,$3
+  mul $7,$8
+  mov $8,-7
+  mul $8,$1
+  sub $8,27
+  add $6,$7
+  mov $7,$4
+  mul $7,$8
+  mov $8,13
+  mul $8,$1
+  add $8,60
+  add $6,$7
+  mov $7,$5
+  mul $7,$8
+  mov $8,2
+  mul $8,$1
+  add $8,12
+  add $6,$7
+  div $6,$8
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $9,10
-    add $9,$5
-    mov $10,3
-    mov $7,$4
-    seq $7,6318 ; Large Schröder numbers (or large Schroeder numbers, or big Schroeder numbers).
-    dif $7,2
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $3,$6
-  mov $9,10
-  add $9,$2
-  add $9,1
-  mov $$9,$3
-  add $2,1
+  add $1,1
 lpe
-mov $0,$6
-div $0,3
+mov $0,$2

@@ -1,6 +1,7 @@
 ; A037078: In ternary expansion of n, reading from right to left, digits occur in order ...,0,1,2,0,1,2,...
+; Submitted by Ulf
 ; 0,1,2,3,7,11,21,34,65,102,196,308,588,925,1766,2775,5299,8327,15897,24982,47693,74946,143080,224840,429240,674521,1287722,2023563,3863167,6070691,11589501,18212074,34768505,54636222,104305516,163908668
-; Formula: a(n) = truncate(b(n)/4), b(n) = b(n-3)+floor((4*(n%2+1)*3^floor(n/2)+4*3^floor(n/2))/3), b(2) = 8, b(1) = 4, b(0) = 0
+; Formula: a(n) = a(n-3)+floor((3^floor(n/2)+(n%2+1)*3^floor(n/2))/3), a(2) = 2, a(1) = 1, a(0) = 0
 
 lpb $0
   mov $3,$0
@@ -12,10 +13,8 @@ lpb $0
   pow $4,$3
   mul $2,$4
   add $2,$4
-  mul $2,4
   div $2,3
   trn $0,3
   add $1,$2
 lpe
-div $1,4
 mov $0,$1

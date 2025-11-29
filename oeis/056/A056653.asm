@@ -8,9 +8,8 @@ sub $0,1
 lpb $0
   add $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
-  mov $3,$0
+  mov $1,$0
   mov $0,0
 lpe
-ror $3,17
-mov $0,$4
+mov $0,$1
 add $0,1

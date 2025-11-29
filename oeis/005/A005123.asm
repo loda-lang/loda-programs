@@ -1,15 +1,9 @@
 ; A005123: Numbers k such that 8k + 1 is prime.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 2,5,9,11,12,14,17,24,29,30,32,35,39,42,44,50,51,54,56,57,65,71,72,74,75,77,80,84,95,96,101,107,110,116,117,119,122,126,129,131,137,141,144,149,150,152,156,161,162,165,170,176,179,185,186,194,200,201,207,212,215,219,222,225,234,236,239,249,252,260,261,264,266,267,269,270,284,285,287,297
-; Formula: a(n) = truncate((A209544(n+1)-16)/8)+2
+; Formula: a(n) = A153762(n)+1
 
 #offset 1
 
-mov $1,$0
-add $1,1
-seq $1,209544 ; Primes not expressed in form n<+>2, where operation <+> defined in A206853.
-sub $0,1
-mov $0,$1
-sub $0,16
-div $0,8
-add $0,2
+seq $0,153762 ; Numbers k such that 8k + 9 is prime.
+add $0,1

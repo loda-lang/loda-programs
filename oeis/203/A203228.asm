@@ -5,9 +5,7 @@
 #offset 1
 
 mov $1,1
-fil $1,3
-add $4,1
-sub $0,1
+fil $1,2
 lpb $0
   sub $0,1
   add $4,1

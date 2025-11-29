@@ -1,10 +1,9 @@
 ; A095457: a(n) = 32 written in base 10 - n.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 32,35,40,44,52,112,200,1012,100000,11111111111111111111111111111111
 
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

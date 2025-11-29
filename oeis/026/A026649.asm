@@ -13,14 +13,12 @@ lpb $0
   mov $3,$4
   bin $3,$1
   mul $3,$2
+  mul $3,2
   sub $3,$5
   add $1,1
   add $5,$6
   mul $5,-1
   add $5,$3
 lpe
-mul $5,2
 mov $0,$5
-sub $0,2
 div $0,2
-add $0,1

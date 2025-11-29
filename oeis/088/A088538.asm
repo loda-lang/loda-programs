@@ -12,19 +12,16 @@ lpb $3
   max $3,1
   max $6,$2
   div $6,$3
-  div $2,$1
-  sub $3,1
   mul $1,2
   add $1,$6
-  add $2,$1
+  mov $2,$1
+  sub $3,1
   sub $5,$1
 lpe
-sub $0,1
-gcd $1,2
 add $1,$2
+sub $0,1
 mov $4,10
 pow $4,$0
-mul $4,2
 mov $2,1
 sub $2,$5
 div $2,$4

@@ -1,23 +1,16 @@
 ; A086676: Number of n-dimensional 2 X 2 X ... X 2 grid graphs needed to cover an n-dimensional 3 X 3 X ... X 3 torus.
 ; Submitted by BrandyNOW
 ; 2,3,5,8,12,18,29,44,68
-; Formula: a(n) = truncate((14*n*(270*(-1)^(n-1)+56*(n-1)^3+8310)+34560)/69120)
+; Formula: a(n) = floor(((n-1)*((n-1)*(binomial(n-1,2)+1)+66))/36)+2
 
 #offset 1
 
 sub $0,1
-mov $3,-1
-pow $3,$0
-mul $3,270
-mov $2,$0
-pow $2,3
-mul $2,56
-mov $1,$2
-add $1,4135
-add $1,$3
-add $1,4175
+mov $1,$0
+bin $0,2
 add $0,1
 mul $0,$1
-mul $0,14
-add $0,34560
-div $0,69120
+add $0,66
+mul $0,$1
+div $0,36
+add $0,2

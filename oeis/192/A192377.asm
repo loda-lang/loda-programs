@@ -1,20 +1,20 @@
 ; A192377: Coefficient of x in the reduction by x^2->x+2 of the polynomial p(n,x) defined below in Comments.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 0,2,4,20,68,262,968,3624,13512,50442,188236,702524,2621836,9784846,36517520,136285264,508623504,1898208786,7084211604,26438637668,98670339028,368242718486,1374300534872,5128959421048,19141537149272,71437189176090
+; Formula: a(n) = b(n-1), b(n) = 5*c(n-1)+3*d(n-1)+2*e(n-1)+b(n-1), b(3) = 20, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = b(n-1), c(3) = 4, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = c(n-1), d(3) = 2, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = 2*c(n-1)+b(n-1)+d(n-1)+e(n-1), e(3) = 11, e(2) = 3, e(1) = 1, e(0) = 1
 
 #offset 1
 
 mov $4,1
-add $0,1
+sub $0,1
 lpb $0
   sub $0,1
+  add $4,$2
   ror $1,3
   add $1,$3
-  add $3,$1
   add $4,$1
-  add $4,$3
   add $1,$4
+  add $4,$2
   add $1,$4
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

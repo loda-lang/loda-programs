@@ -1,18 +1,16 @@
 ; A034798: Value of n considered as a game.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,0,2,1,1,2,2,0,1,0,3,1,1,3,3,0,2,0,2,2,2,2,2,0,3,0,3,3,3,3,3,0,2,0,2,2,2,2,2,0,3,0,3,3,3,3,3,0,2,0,2,2,2,2,2,0,3,0,3,3,3,3,3,0,1,0,3,1,1,3,3,0,1,0,3,1,1,3,3
 
 mov $4,34
 mov $5,378
 lpb $0
   rol $2,4
-  sub $7,9
-  mul $7,$1
   sub $7,58
   ban $0,$4
+  mul $4,$8
   mov $6,$3
   mul $6,$7
-  mul $7,$1
   add $1,1
   add $5,$6
 lpe

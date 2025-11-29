@@ -1,16 +1,16 @@
 ; A056765: Number of integers from A056757 (defined by A000005(x)^3 > x) not exceeding 2^n.
-; Submitted by marcstone
+; Submitted by Irish Republican
 ; 0,1,3,5,8,16,21,33,52,65,90,121,143,176,204,221,245,257,263,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267,267
 
 #offset 1
 
 sub $0,1
-mov $4,$0
 mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$4
-  sub $0,$3
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$3
+  sub $0,$4
   mov $2,$0
   geq $2,1
   mov $1,$2

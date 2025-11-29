@@ -1,11 +1,11 @@
 ; A022794: Place where n-th 1 occurs in A023132.
-; Submitted by Skillz
+; Submitted by Science United
 ; 1,2,3,5,7,9,12,15,18,22,26,30,35,40,45,51,57,64,71,78,86,94,102,111,120,129,139,149,159,170,181,192,204,216,229,242,255,269,283,297,312,327,342,358,374,390,407,424,441,459,477,496,515,534,554,574
-; Formula: a(n) = b(n-1)-1, b(n) = b(n-1)+floor(sqrtint(floor((n^2)/2))/2)+1, b(0) = 2
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+floor(sqrtint(floor((n^2)/2))/2)+1, b(0) = 1
 
 #offset 1
 
-mov $1,2
+mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
@@ -19,4 +19,3 @@ lpb $0
   add $1,$3
 lpe
 mov $0,$1
-sub $0,1

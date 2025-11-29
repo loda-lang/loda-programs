@@ -1,21 +1,19 @@
 ; A131751: Numbers that are both centered triangular and centered pentagonal.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by BrandyNOW
 ; 1,31,1891,117181,7263301,450207451,27905598631,1729696907641,107213302675081,6645495068947351,411913480972060651,25531990325198812981,1582571486681354344141,98093900183918770523731,6080239239916282418127151,376876738974625591153359601
-; Formula: a(n) = truncate((b(max(2*n-2,0))+min(2*n-2,(2*n-2)%2))/2)+1, b(n) = 61*b(n-2)+60*c(n-2), b(3) = 61, b(2) = 61, b(1) = 1, b(0) = 1, c(n) = b(n-2)+c(n-2), c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0
+; Formula: a(n) = floor(b(n-1)/2)+1, b(n) = 60*c(n-1)+b(n-1)+60, b(1) = 60, b(0) = 0, c(n) = 61*c(n-1)+b(n-1)+61, c(1) = 61, c(0) = 0
 
 #offset 1
 
-mov $1,1
 sub $0,1
-mul $0,2
 lpb $0
-  sub $0,2
-  mov $3,$2
-  mul $3,60
+  sub $0,1
+  add $3,1
+  mov $1,$3
+  mul $1,60
   add $2,$1
-  mul $1,61
-  add $1,$3
+  add $3,$2
 lpe
-add $0,$1
+mov $0,$2
 div $0,2
 add $0,1

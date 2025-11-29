@@ -1,5 +1,5 @@
 ; A131977: Analog of A131976 for the icosahedron.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,3,5,8,8,12,8,8,5,3,1,1
 
 mov $3,1
@@ -23,6 +23,4 @@ add $1,18
 add $0,8
 mul $0,$1
 div $0,120
-mul $0,4
 sub $0,1
-div $0,4

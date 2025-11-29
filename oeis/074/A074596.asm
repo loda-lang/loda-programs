@@ -1,26 +1,21 @@
 ; A074596: Numerator of 3 * H(n,3,1), a generalized harmonic number. See A075135.
-; Submitted by vonboedefeldt
+; Submitted by Science United
 ; 3,15,117,627,8571,35649,699171,7898361,40404717,41219817,1300637127,22464584559,843217244283,854342788713,37181761691859,864748487122557,6116114629522299,6175362432667599,6231378537459519,182250420468103851
-; Formula: a(n) = 6*truncate(truncate((b(n)+d(n))/gcd(d(n),c(n)))/2)+3, b(n) = b(n-1), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)*(3*n-2), c(3) = 56, c(2) = 8, c(1) = 2, c(0) = 2, d(n) = d(n-1)*(3*n-2)+c(n-1), d(3) = 78, d(2) = 10, d(1) = 2, d(0) = 0
+; Formula: a(n) = 3*truncate((c(n)+d(n))/gcd(c(n),b(n))), b(n) = b(n-1)*(3*n-2), b(3) = 56, b(2) = 8, b(1) = 2, b(0) = 2, c(n) = c(n-1)*(3*n-2)+b(n-1), c(3) = 78, c(2) = 10, c(1) = 2, c(0) = 0, d(n) = d(n-1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $3,2
-mov $1,$0
-lpb $1
-  sub $1,1
-  add $4,1
-  mul $5,$4
-  add $5,$3
-  mul $3,$4
-  add $4,2
+mov $1,2
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+  add $2,2
 lpe
-add $2,$5
-gcd $5,$3
-div $2,$5
-mov $1,$2
-div $1,2
-mul $1,2
-add $1,1
-mov $0,$1
+add $4,$3
+gcd $3,$1
+div $4,$3
+mov $0,$4
 mul $0,3

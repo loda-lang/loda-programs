@@ -1,11 +1,10 @@
 ; A008709: 12 in base 12-n.
-; Submitted by loader3229
+; Submitted by cargoeagle
 ; 10,11,12,13,14,15,20,22,30,110,1100,111111111111
 
 sub $0,2
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

@@ -1,5 +1,5 @@
 ; A038675: Triangle read by rows: T(n,k)=A(n,k)*binomial(n+k-1,n), where A(n,k) are the Eulerian numbers (A008292).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Just Jake
 ; 1,1,3,1,16,10,1,55,165,35,1,156,1386,1456,126,1,399,8456,25368,11970,462,1,960,42876,289920,393030,95040,1716,1,2223,193185,2577135,7731405,5525091,741741,6435,1,5020,803440,19411480,111675850,176644468
 
 #offset 1
@@ -9,9 +9,6 @@ mul $3,8
 nrt $3,2
 sub $3,1
 div $3,2
-mov $6,0
-mov $8,0
-mov $9,0
 mov $2,$3
 bin $2,2
 add $3,1
@@ -43,7 +40,7 @@ lpb $4
   mul $8,$7
   add $9,$8
   add $6,1
-  mul $8,0
+  mov $8,0
   sub $8,$5
 lpe
 mov $0,$9

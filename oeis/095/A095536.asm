@@ -1,19 +1,19 @@
 ; A095536: a(n) = 72 written in base n.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 111111111111111111111111111111111111111111111111111111111111111111111111,1001000,2200,1020,242,200,132,110,80,72,66,60,57,52
 
 #offset 1
 
 mov $1,$0
 mov $2,$0
-mov $3,2
+mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-add $1,629
+add $1,630
+mul $1,8
 nrt $1,2
-add $1,11
-mul $1,2
+add $1,1
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -24,4 +24,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-div $0,2

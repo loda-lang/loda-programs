@@ -1,5 +1,5 @@
 ; A231730: Triangular array read by rows: row n shows the coefficients of the polynomial u(n) = c(0) + c(1)*x + ... + c(n)*x^(n) which is the numerator of the n-th convergent of the continued fraction [k, k, k, ... ], where k = x + 1/2.
-; Submitted by ThatGuy0_o
+; Submitted by Goldislops
 ; 1,2,5,4,4,9,22,12,8,29,56,72,32,16,65,202,232,208,80,32,181,556,924,800,560,192,64,441,1726,2964,3480,2480,1440,448,128,1165,4832,10112,12608,11680,7168,3584,1024,256,2929,14066,31632,46752,46816,36288,19712
 
 #offset 1
@@ -38,8 +38,6 @@ lpb $1
   mul $9,-1
   add $9,$5
 lpe
-mov $1,$5
-div $1,3
 mov $4,$0
 mul $4,8
 add $4,1
@@ -52,4 +50,5 @@ sub $2,$4
 mov $3,2
 pow $3,$2
 mov $0,$3
-mul $0,$1
+mul $0,$5
+div $0,3

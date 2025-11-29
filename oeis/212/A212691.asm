@@ -1,18 +1,15 @@
 ; A212691: Number of (w,x,y,z) with all terms in {1,...,n} and w+|x-y|<=|x-z|+|y-z|.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,0,2,8,26,50,100,154,252,348,510,660,902,1118,1456,1750,2200,2584,3162,3648,4370,4970,5852,6578,7636,8500,9750,10764,12222,13398,15080,16430,18352,19888,22066,23800,26250,28194,30932,33098,36140
-; Formula: a(n) = floor(n/2)*binomial(n,2)+truncate(binomial(-2*n+2,3)/(-4))
 
 mov $2,$0
-sub $2,1
-mov $3,$2
-mul $3,-2
-bin $3,3
-div $3,-4
-div $0,2
-mov $1,$2
-add $1,1
-bin $1,2
-mul $1,$0
-add $1,$3
-mov $0,$1
+mov $3,$0
+lpb $3
+  sub $3,2
+  sub $2,1
+  mov $1,$2
+  pow $1,2
+  add $4,$1
+lpe
+mov $0,$4
+mul $0,2

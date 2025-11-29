@@ -1,66 +1,28 @@
 ; A000111: Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-; Submitted by Science United
+; Submitted by Just Jake
 ; 1,1,1,2,5,16,61,272,1385,7936,50521,353792,2702765,22368256,199360981,1903757312,19391512145,209865342976,2404879675441,29088885112832,370371188237525,4951498053124096,69348874393137901,1015423886506852352,15514534163557086905,246921480190207983616,4087072509293123892361,70251601603943959887872,1252259641403629865468285,23119184187809597841473536,441543893249023104553682821,8713962757125169296170811392,177519391579539289436664789665,3729407703720529571097509625856
-; Formula: a(n) = A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)+1,2)+binomial(n,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-binomial(n,2)+floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2))+8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*binomial(floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)+1)/2),2)+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-8*binomial(n,2)+8)-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)+1,2)+binomial(n,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-binomial(n,2)+floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2))-(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)+1)/2),2)-floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*floor((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-8*binomial(n,2)-7)+1)/2)-8*binomial(n,2)+8)-1)/2)+1,2)+binomial(n,2)-1)
 
-bin $0,2
-add $0,1
-mov $3,$0
-mul $3,8
-nrt $3,2
-sub $3,1
-div $3,2
-add $3,1
-pow $3,2
-sub $3,$0
-mov $0,$3
-mul $0,8
-add $0,1
-nrt $0,2
-add $0,1
+mov $2,$0
+mov $1,1
+lpb $1,2
+  sub $1,1
+  mov $5,2
+  lpb $5
+    sub $5,1
+    mov $0,$2
+    add $0,$5
+    trn $0,1
+    mov $4,$0
+    seq $4,122045 ; Euler (or secant) numbers E(n).
+    seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+    gcd $0,$4
+    mul $0,2
+    mov $3,$5
+    mul $3,$0
+    add $6,$3
+  lpe
+lpe
+mov $0,$6
+sub $0,2
 div $0,2
-mov $1,$3
-add $1,$0
-mov $0,$1
 add $0,1
-mov $2,$1
-add $2,2
-mov $4,$2
-mul $4,8
-nrt $4,2
-sub $4,1
-div $4,2
-mov $5,$4
-add $5,1
-bin $5,2
-sub $2,$5
-sub $2,1
-mov $6,$4
-mod $6,2
-sub $4,$2
-mul $4,$6
-mul $6,$2
-sub $2,$6
-add $2,$4
-add $2,$0
-add $0,1
-mov $7,$0
-mul $7,8
-nrt $7,2
-add $7,1
-div $7,2
-bin $7,2
-sub $0,$7
-sub $2,$0
-mov $0,$2
-add $0,2
-mov $8,$0
-mul $8,8
-nrt $8,2
-sub $8,1
-div $8,2
-add $8,1
-pow $8,2
-sub $8,$0
-mov $0,$8
-seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.

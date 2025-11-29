@@ -1,34 +1,14 @@
 ; A065890: Number of composites less than the n-th prime.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,1,2,5,6,9,10,13,18,19,24,27,28,31,36,41,42,47,50,51,56,59,64,71,74,75,78,79,82,95,98,103,104,113,114,119,124,127,132,137,138,147,148,151,152,163,174,177,178,181,186,187,196,201,206,211,212,217,220,221,230,243,246,247,250,263,268,277,278,281,286,293,298,303,306,311,318,321,328
+; Formula: a(n) = -n+A008578(n+1)-1
 
 #offset 1
 
+mov $1,$0
+add $0,1
+seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+mov $2,$0
+sub $2,$1
+mov $0,$2
 sub $0,1
-mov $31,$0
-mov $33,$0
-lpb $33
-  clr $0,31
-  sub $33,1
-  mov $0,$31
-  sub $0,$33
-  mov $27,$0
-  mov $29,2
-  lpb $29
-    sub $29,1
-    mov $0,$27
-    add $0,$29
-    trn $0,1
-    seq $0,6093 ; a(n) = prime(n) - 1.
-    mov $30,$29
-    mul $30,$0
-    add $28,$30
-  lpe
-  min $27,1
-  mul $27,$0
-  mov $0,$28
-  sub $0,$27
-  sub $0,1
-  add $32,$0
-lpe
-mov $0,$32

@@ -1,16 +1,14 @@
 ; A011674: A binary m-sequence: expansion of reciprocal of x^7+x^6+x^5+x^4+x^3+x^2+1.
-; Submitted by Science United
+; Submitted by datamgmt
 ; 0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,0,0,1,1,1,1,0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,1,0,1,1,0,0,1,1,1,0,0,1,1,0,0,1,0
 
-mov $2,-3
+mov $5,2241
+mov $6,1
 lpb $0
+  rol $1,8
   sub $0,1
-  ror $1,10
-  add $1,$2
-  add $1,$3
-  mov $6,$4
+  add $8,$6
+  add $8,$7
 lpe
-mov $0,$10
-mod $0,2
-add $0,2
+mov $0,$7
 mod $0,2

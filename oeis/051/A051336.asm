@@ -4,14 +4,35 @@
 
 #offset 1
 
-mov $2,$0
-lpb $0
-  sub $0,1
-  mov $3,$2
-  lpb $3
-    sub $3,$0
-    add $1,$3
+sub $0,1
+mov $31,$0
+mov $33,$0
+add $33,1
+lpb $33
+  clr $0,31
+  sub $33,1
+  mov $0,$31
+  sub $0,$33
+  mov $28,$0
+  mov $30,$0
+  add $30,1
+  lpb $30
+    sub $30,1
+    mov $0,$28
+    sub $0,$30
+    mov $1,$0
+    trn $0,1
+    add $0,1
+    seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+    lpb $1
+      sub $0,1
+      mov $1,$0
+      add $0,764
+    lpe
+    mov $0,$1
+    add $0,1
+    add $29,$0
   lpe
+  add $32,$29
 lpe
-add $2,$1
-mov $0,$2
+mov $0,$32

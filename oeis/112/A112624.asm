@@ -1,5 +1,5 @@
 ; A112624: If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = Product_{p|n} b(p,n)!.
-; Submitted by Science United
+; Submitted by dhh
 ; 1,1,1,2,1,1,1,6,2,1,1,2,1,1,1,24,1,2,1,2,1,1,1,6,2,1,6,2,1,1,1,120,1,1,1,4,1,1,1,6,1,1,1,2,2,1,1,24,2,2,1,2,1,6,1,6,1,1,1,2,1,1,2,720,1,1,1,2,1,1,1,12,1,1,2,2,1,1,1,24
 
 #offset 1
@@ -9,6 +9,7 @@ mov $2,2
 lpb $0
   mov $4,1
   mov $3,$0
+  div $3,5
   lpb $3
     mov $4,$0
     mod $4,$2

@@ -1,45 +1,26 @@
 ; A049435: Stirling numbers of second kind: 10th column of Stirling2 triangle A008277.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,55,1705,39325,752752,12662650,193754990,2758334150,37112163803,477297033785,5917584964655,71187132291275,835143799377954,9593401297313460,108254081784931500,1203163392175387500,13199555372846848005,143197070509423605675
-; Formula: a(n) = truncate((10^(n-1)+126*6^(n-1)+84*4^(n-1)+36*8^(n-1)+9*2^(n-1)-9*9^(n-1)-36*3^(n-1)-84*7^(n-1)-126*5^(n-1))/362880)
 
 #offset 10
 
 sub $0,1
-mov $1,2
-pow $1,$0
-mul $1,9
-mov $2,$1
-mov $1,3
-pow $1,$0
-mul $1,-36
-add $2,$1
-mov $1,4
-pow $1,$0
-mul $1,84
-add $2,$1
-mov $1,5
-pow $1,$0
-mul $1,-126
-add $2,$1
-mov $1,6
-pow $1,$0
-mul $1,126
-add $2,$1
-mov $1,7
-pow $1,$0
-mul $1,-84
-add $2,$1
-mov $1,8
-pow $1,$0
-mul $1,36
-add $2,$1
-mov $1,9
-pow $1,$0
-mul $1,-9
-add $2,$1
-mov $1,10
-pow $1,$0
-add $2,$1
-mov $0,$2
+mov $1,$0
+sub $0,6
+mov $3,$1
+sub $3,$0
+add $3,4
+lpb $3
+  mov $6,$3
+  pow $6,$1
+  sub $3,1
+  sub $2,2
+  sub $2,$3
+  bin $2,$5
+  mul $2,$6
+  add $4,$2
+  add $5,1
+  mov $2,1
+lpe
+mov $0,$4
 div $0,362880

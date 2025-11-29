@@ -1,19 +1,16 @@
 ; A061464: Denominator of 1/(1^1) + 1/(2^2) + 1/(3^3) + ... 1/(n^n).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,4,108,6912,21600000,583200000,480290277600000,31476303632793600000,16727798278915463577600000,52274369621610823680000000000,14914487726878692033020558868480000000000
-; Formula: a(n) = truncate(truncate(n^n)/gcd(a(n-1),truncate(n^n)))*a(n-1), a(1) = 1, a(0) = 1
 
-mov $2,1
-mov $3,1
+mov $1,1
 lpb $0
+  mov $2,$0
+  pow $2,$0
+  mul $3,$2
+  add $3,$1
   sub $0,1
-  mov $5,$2
-  pow $5,$2
-  mov $4,$3
-  gcd $4,$5
-  mov $1,$5
-  div $1,$4
-  add $2,1
-  mul $3,$1
+  mul $1,$2
 lpe
-mov $0,$3
+gcd $3,$1
+div $1,$3
+mov $0,$1

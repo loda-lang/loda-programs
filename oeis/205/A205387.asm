@@ -1,13 +1,11 @@
 ; A205387: The index j<k such that n divides s(k)-s(j) for some j, where s(j)=(1/2)C(2j,j).
-; Submitted by DukeBox
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,1,2,3,5,2,2,1,5,6,5,4,5,5,2,1,3,6,4,5,6,3,5,3,7,2,5,3,5,10,2,6,1,1,3,1,6,7,4,2,5,14,6,3,3,5,5,1,4
 
 #offset 1
 
-sub $0,1
 mov $4,$0
-add $0,1
-pow $4,5
+pow $4,3
 lpb $4
   mov $5,$3
   add $5,1

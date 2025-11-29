@@ -5,7 +5,9 @@
 
 mov $1,$0
 seq $1,227573 ; Numerators of rationals with e.g.f. D(4,x), a Debye function.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+fac $2,$0
+mov $0,$2
 gcd $0,$1
 div $1,$0
 mov $0,$1

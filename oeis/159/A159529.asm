@@ -6,15 +6,12 @@
 mov $2,1
 mov $3,2
 lpb $0
-  mov $5,$1
-  mul $5,-578
   sub $5,578
   mul $2,$5
   rol $2,2
   mov $4,$2
   mul $4,2
   sub $0,1
-  add $1,1
   add $3,$4
 lpe
 mov $0,$2

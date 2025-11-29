@@ -1,5 +1,5 @@
 ; A162461: Number of reduced words of length n in the Weyl group D_48.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 1,48,1175,19552,248723,2579312,22706404,174482000,1194358970,7396268880,41942496051,219939217728,1075086490926,4931595192160,21350092231441,87658196804688,342762976614961,1281150739056160
 
 mov $2,$0
@@ -10,23 +10,19 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  mul $0,3
+  mul $0,24
   add $0,1
   mov $5,$0
-  mul $5,8
-  nrt $5,2
-  sub $5,1
-  div $5,2
-  mov $6,$5
-  add $6,1
-  bin $6,2
-  sub $0,2
-  sub $0,$6
-  bin $0,$5
-  mul $5,2
-  add $5,1
-  mul $5,$0
-  mov $0,$5
+  nrt $0,2
+  mov $6,$0
+  mov $7,$0
+  add $7,1
+  mod $7,4
+  sub $7,1
+  pow $0,2
+  equ $0,$5
+  mul $0,$6
+  mul $0,$7
   mod $0,3
   dif $0,-2
   mov $1,47

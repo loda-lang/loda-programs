@@ -5,15 +5,16 @@
 #offset 1
 
 mov $3,$0
-pow $3,7
+pow $3,5
 lpb $3
-  mov $2,$1
-  add $2,3
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $1,4
+  mov $1,$2
+  add $1,3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $2,4
+  sub $0,$1
   sub $3,$0
 lpe
-mov $0,$1
-div $0,2
+mov $0,$2
+div $0,4
+mul $0,2
 add $0,1

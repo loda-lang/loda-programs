@@ -1,7 +1,60 @@
 ; A027087: a(n) = A027082(n, 2n).
-; Submitted by modesti
+; Submitted by Science United
 ; 1,1,2,5,11,27,68,175,458,1215,3258,8815,24031,65937,181936,504473,1404879,3927495,11017802,31004871,87497297,247559933,702089528,1995483853,5682959332,16214622573,46343364290,132667706857,380358924209
-; Formula: a(n) = A125189(2*n)
 
 mul $0,2
-seq $0,125189 ; Number of symmetric bushes with n edges. I.e., number of ordered trees with n edges, no non-root vertices of outdegree 1 and symmetrical with respect to the vertical axis passing through the root.
+mov $4,1
+fil $4,3
+mov $7,2
+mov $8,2
+mov $9,3
+mov $10,5
+mov $11,7
+lpb $0
+  mov $13,$3
+  mul $13,-3
+  mul $4,$13
+  rol $4,8
+  mov $13,$3
+  mul $13,-6
+  sub $13,9
+  mov $12,$4
+  mul $12,$13
+  mov $13,$3
+  mul $13,-8
+  sub $13,15
+  add $11,$12
+  mov $12,$5
+  mul $12,$13
+  mov $13,$3
+  mul $13,-4
+  sub $13,27
+  add $11,$12
+  mov $12,$6
+  mul $12,$13
+  add $11,$12
+  mov $12,$7
+  mul $12,-3
+  mov $13,$3
+  mul $13,2
+  add $13,9
+  add $11,$12
+  mov $12,$8
+  mul $12,$13
+  mov $13,$3
+  mul $13,4
+  add $13,27
+  add $11,$12
+  mov $12,$9
+  mul $12,$13
+  add $11,$12
+  mov $12,$10
+  mul $12,3
+  mov $13,$3
+  add $13,9
+  add $11,$12
+  div $11,$13
+  sub $0,1
+  add $3,1
+lpe
+mov $0,$4

@@ -1,5 +1,5 @@
 ; A018759: Divisors of 986.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,17,29,34,58,493,986
 
 #offset 1
@@ -21,7 +21,6 @@ lpb $0
     equ $1,1
     sub $3,$4
   lpe
-  add $1,3
   add $2,1
   sub $3,3
 lpe

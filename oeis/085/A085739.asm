@@ -1,19 +1,22 @@
 ; A085739: Partial sums of A034953(n).
-; Submitted by thorsam
+; Submitted by Steve Dodd
 ; 3,9,24,52,118,209,362,552,828,1263,1759,2462,3323,4269,5397,6828,8598,10489,12767,15323,18024,21184,24670,28675,33428,38579,43935,49713,55708,62149,70277,78923,88376,98106,109281,120757,133160,146526,160554
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+binomial(A000040(n+1)+1,2), b(0) = 3
 
 #offset 1
 
-mov $1,3
 sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,40 ; The prime numbers.
-  add $2,1
-  bin $2,2
-  sub $0,1
-  add $1,$2
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  min $0,55
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  add $0,1
+  bin $0,2
+  add $2,$0
 lpe
-mov $0,$1
+mov $0,$2

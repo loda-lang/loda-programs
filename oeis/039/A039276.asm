@@ -1,5 +1,5 @@
 ; A039276: Numbers whose base-3 representation has the same nonzero number of 0's and 2's.
-; Submitted by atannir
+; Submitted by iBezanilla
 ; 6,11,15,19,21,32,34,38,42,46,48,56,58,60,64,66,72,89,95,97,101,103,105,113,115,119,123,127,129,137,139,141,145,147,153,167,169,173,175,177,181,183,191,193,195,199,201,207,217,219,225,260,266,268,278,284
 
 #offset 1
@@ -33,7 +33,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$1
-sub $0,19
+mov $0,$3
 div $0,3
-add $0,6

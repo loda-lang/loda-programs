@@ -1,5 +1,5 @@
 ; A133323: Hex (or centered hexagonal) numbers that are prime powers of the form (6n+1)^k.
-; Submitted by Kotenok2000
+; Submitted by Steve Dodd
 ; 7,19,37,61,127,169,271,331,397,547,631,919,1657,1801,1951,2269,2437,2791,3169,3571,4219,4447,5167,5419,6211,7057,7351,8269,9241,10267,11719,12097,13267,13669,16651,19441,19927,22447,23497,24571,25117,26227,27361
 
 #offset 1
@@ -15,7 +15,6 @@ lpb $3
   add $1,1
   lpb $1
     mov $7,$1
-    div $7,3
     lpb $7
       mov $8,$1
       mod $8,$6

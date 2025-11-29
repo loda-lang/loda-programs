@@ -2,87 +2,86 @@
 ; Submitted by Science United
 ; 8,0,0,3,1,9,4,8,3,8,0,2
 
-mov $3,24
-mov $5,1
-mov $6,2
-mov $9,14
-mov $10,24
-mov $11,40
-mov $12,67
-mov $13,114
-mov $14,200
-mov $15,364
-mov $16,684
+mov $4,1
+mov $5,2
+mov $8,14
+mov $9,24
+mov $10,40
+mov $11,67
+mov $12,114
+mov $13,200
+mov $14,364
+mov $15,684
 mov $1,$0
 lpb $1
-  equ $7,-6
-  mov $18,$4
-  mul $18,8
-  add $18,8
-  mul $5,$18
-  rol $5,12
-  mov $18,$4
-  sub $18,16
-  mov $17,$5
-  mul $17,$18
-  mov $18,$4
-  sub $18,59
-  add $14,1
-  add $16,$17
-  mov $17,$8
-  mul $17,$18
-  mov $18,$4
-  mul $18,12
-  add $18,61
-  add $16,$17
-  mov $17,$9
-  mul $17,$18
-  mov $18,$4
-  mul $18,5
-  add $18,12
-  add $16,$17
-  mov $17,$10
-  mul $17,$18
-  mov $18,$4
-  mul $18,-12
-  sub $18,54
-  add $16,$17
-  mov $17,$11
-  mul $17,$18
-  mov $18,$4
-  mul $18,10
-  add $18,74
-  add $16,$17
-  add $16,$12
-  mov $17,$12
-  mul $17,$18
-  mov $18,$4
-  sub $18,26
-  add $16,$17
-  mov $17,$13
-  mul $17,$18
-  mov $18,$4
-  mul $18,-4
-  sub $18,47
-  add $16,$17
-  mov $17,$14
-  mul $17,$18
-  mov $18,$4
-  mul $18,4
-  add $18,47
-  add $16,$17
-  mov $17,$15
-  mul $17,$18
-  mov $18,$4
-  add $18,12
-  add $16,$17
-  div $16,$18
+  equ $6,-6
+  mov $17,$3
+  mul $17,8
+  add $17,8
+  mul $4,$17
+  rol $4,12
+  mov $17,$3
+  sub $17,16
+  mov $16,$4
+  mul $16,$17
+  mov $17,$3
+  sub $17,59
+  add $13,1
+  add $15,$16
+  mov $16,$7
+  mul $16,$17
+  mov $17,$3
+  mul $17,12
+  add $17,61
+  add $15,$16
+  mov $16,$8
+  mul $16,$17
+  mov $17,$3
+  mul $17,5
+  add $17,12
+  add $15,$16
+  mov $16,$9
+  mul $16,$17
+  mov $17,$3
+  mul $17,-12
+  sub $17,54
+  add $15,$16
+  mov $16,$10
+  mul $16,$17
+  mov $17,$3
+  mul $17,10
+  add $17,74
+  add $15,$16
+  add $15,$11
+  mov $16,$11
+  mul $16,$17
+  mov $17,$3
+  sub $17,26
+  add $15,$16
+  mov $16,$12
+  mul $16,$17
+  mov $17,$3
+  mul $17,-4
+  sub $17,47
+  add $15,$16
+  mov $16,$13
+  mul $16,$17
+  mov $17,$3
+  mul $17,4
+  add $17,47
+  add $15,$16
+  mov $16,$14
+  mul $16,$17
+  mov $17,$3
+  add $17,12
+  add $15,$16
+  div $15,$17
   sub $1,1
-  add $4,1
+  add $3,1
 lpe
-mov $1,$17
+mov $1,$16
 add $1,1
-mod $1,10
-sub $3,$1
-mov $0,$3
-sub $0,15
+mul $1,9
+mov $0,$1
+sub $0,1
+mod $0,10

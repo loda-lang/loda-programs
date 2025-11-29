@@ -1,12 +1,13 @@
 ; A007519: Primes of form 8n+1, that is, primes congruent to 1 mod 8.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 17,41,73,89,97,113,137,193,233,241,257,281,313,337,353,401,409,433,449,457,521,569,577,593,601,617,641,673,761,769,809,857,881,929,937,953,977,1009,1033,1049,1097,1129,1153,1193,1201,1217,1249,1289,1297,1321,1361,1409,1433,1481,1489,1553,1601,1609,1657,1697,1721,1753,1777,1801,1873,1889,1913,1993,2017,2081,2089,2113,2129,2137,2153,2161,2273,2281,2297,2377
-; Formula: a(n) = A209544(n+1)
+; Formula: a(n) = 2*truncate((8*A153762(n)-8)/2)+17
 
 #offset 1
 
-mov $1,$0
-add $1,1
-seq $1,209544 ; Primes not expressed in form n<+>2, where operation <+> defined in A206853.
-sub $0,1
-mov $0,$1
+seq $0,153762 ; Numbers k such that 8k + 9 is prime.
+mul $0,8
+sub $0,8
+div $0,2
+mul $0,2
+add $0,17

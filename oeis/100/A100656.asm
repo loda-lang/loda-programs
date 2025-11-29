@@ -1,7 +1,9 @@
 ; A100656: a(n)=1 if a hexagonal number is a prime, otherwise 0.
+; Submitted by Science United
 ; 0,1,1,1,1,0,1,0,0,1,1,1,0,1,1,0,0,1,0,0,0,0,0,1,1,1,0,1
-; Formula: a(n) = A010051(3*n*(n+1)+1)
+; Formula: a(n) = A010051(3*min(n,61)*(min(n,61)+1)+1)
 
+min $0,61
 mov $1,$0
 add $0,1
 mul $1,$0

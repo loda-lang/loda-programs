@@ -4,22 +4,17 @@
 
 #offset 1
 
-sub $0,1
-mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  add $0,2
-  mov $4,$0
-  seq $4,40 ; The prime numbers.
-  mov $0,$4
-  sub $0,3
-  div $0,2
-  mul $0,2
-  add $0,3
-  add $2,$0
+add $0,1
+max $1,$0
+mov $3,$1
+lpb $3
+  trn $3,1
+  add $3,1
+  seq $3,60939 ; a(n) = (Sum of the first n primes) + n.
+  mov $2,$3
+  mov $3,0
 lpe
-mov $0,$2
+mov $3,$2
+sub $3,$1
+mov $0,$3
+sub $0,2

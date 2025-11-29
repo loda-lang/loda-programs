@@ -1,17 +1,16 @@
 ; A073531: Number of n-digit positive integers with all digits distinct.
-; Submitted by Jamie Morken(s1)
+; Submitted by loader3229
 ; 9,81,648,4536,27216,136080,544320,1632960,3265920,3265920
-; Formula: a(n) = 9*b(n-1), b(n) = b(n-1)*(-n+10), b(1) = 9, b(0) = 1
+; Formula: a(n) = 9*binomial(9,-n+10)*(n-1)!
 
 #offset 1
 
-mov $1,1
-mov $2,10
 sub $0,1
-lpb $0
-  sub $0,1
-  sub $2,1
-  mul $1,$2
-lpe
-mov $0,$1
+mov $2,1
+fac $2,$0
+mov $1,9
+sub $1,$0
+mov $0,9
+bin $0,$1
+mul $0,$2
 mul $0,9

@@ -1,11 +1,11 @@
 ; A024474: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = (Lucas numbers), t = A000201 (lower Wythoff sequence).
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,13,18,42,57,112,137,245,282,488,562,947,1056,1752,1969,3234,3564,5822,6294,10245,11166,18135,19514,31647,33580,54413,58116,94119,99407,160936,171219,277135,292509,473393,494951,800957,842277,1362949,1422184
 
 #offset 1
 
-sub $0,1
 mov $1,$0
+sub $0,1
 div $0,2
 mov $2,$0
 add $2,1
@@ -15,12 +15,11 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  add $0,1
   mul $0,55
   div $0,34
   add $3,$0
   add $4,$3
 lpe
-mul $5,3
-add $5,$3
-mov $0,$5
+mul $5,2
+add $4,$5
+mov $0,$4

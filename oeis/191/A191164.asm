@@ -4,16 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,2
 add $2,8
 pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
   mul $3,4
-  add $3,3
+  add $3,7
   mov $5,97
   mul $5,$3
   div $5,113
@@ -23,8 +21,7 @@ lpb $2
   div $3,2
   mul $3,338
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0
@@ -33,4 +30,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$1
-sub $0,2
+sub $0,1

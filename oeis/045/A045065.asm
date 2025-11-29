@@ -1,15 +1,12 @@
 ; A045065: Numbers whose base-4 representation contains no 0's and exactly four 3's.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [SG]KidDoesCrunch
 ; 255,511,767,895,959,991,1007,1015,1019,1021,1022,1535,1791,1919,1983,2015,2031,2039,2043,2045,2046,2559,2815,2943,3007,3039,3055,3063,3067,3069,3070,3455,3519,3551,3567,3575,3579,3581
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,2
-pow $2,3
+add $2,6
+pow $2,5
 lpb $2
   mov $4,1
   mov $3,$1

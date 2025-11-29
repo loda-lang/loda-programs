@@ -1,28 +1,10 @@
 ; A111215: Numbers k such that 4k + 5 is prime.
-; Submitted by jdio2
+; Submitted by skildude
 ; 0,2,3,6,8,9,12,14,17,21,23,24,26,27,33,36,38,42,44,47,48,56,57,59,63,66,68,69,72,77,78,83,86,87,92,96,98,99,101,104,107,111,113,114,126,129,134,138,141,143,147,149,152,153,159,162,164,167,168,174,176,182,188,189,191,192,198,201,204,206,212,213,218,219,231,233,234,237,243,248
+; Formula: a(n) = floor((A002144(n)-5)/4)
 
 #offset 1
 
-sub $0,1
-mov $1,4
-mov $2,$0
-add $2,3
-pow $2,3
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,319984 ; Fully multiplicative with a(p^e) = prime(p mod 4)^e.
-  sub $3,4
-  equ $3,0
-  sub $0,$3
-  add $1,5
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-sub $0,24
-div $0,20
+seq $0,2144 ; Pythagorean primes: primes of the form 4*k + 1.
+sub $0,5
+div $0,4

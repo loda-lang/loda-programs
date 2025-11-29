@@ -4,15 +4,19 @@
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mov $2,2
-lpb $2
-  add $0,1
-  mov $2,$1
-  add $2,1
-  seq $2,160787 ; G.f.: (21+104*x+103*x^2+23*x^3+x^4)/(1-x)^5.
-  gcd $2,$0
+mov $1,2
+lpb $1
+  mov $1,$0
+  mul $1,63
+  add $1,247
+  mul $1,$0
+  add $1,441
+  mul $1,$0
+  add $1,377
+  mul $1,$0
+  add $1,126
+  div $1,6
+  gcd $1,$0
 lpe
-mov $0,$2
+mov $0,$1
 mod $0,2

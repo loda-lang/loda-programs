@@ -1,5 +1,5 @@
 ; A005453: A finite sequence associated with the Lie algebra B_4.
-; Submitted by Jon Maiga
+; Submitted by Just Jake
 ; 1,2,3,4,6,10,11,12,28,60
 
 mov $6,$0
@@ -16,7 +16,6 @@ lpb $6
     lpb $3
       mov $4,$0
       mod $4,$2
-      neq $4,0
       mov $1,$8
       equ $1,0
       add $8,$1

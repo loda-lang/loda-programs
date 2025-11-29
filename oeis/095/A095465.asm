@@ -1,10 +1,9 @@
 ; A095465: a(n) = 36 written in base 12 - n.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 30,33,36,40,44,51,100,121,210,1100,100100,111111111111111111111111111111111111
 
 mov $2,12
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

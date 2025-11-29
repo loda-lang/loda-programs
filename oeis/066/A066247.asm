@@ -6,10 +6,10 @@
 
 sub $0,1
 lpb $0
-  add $0,1
-  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,1
+  add $1,1
+  mov $2,67600144946390082339
+  add $0,$1
+  seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 lpe
-mov $1,$0
-min $1,1
-mov $0,$1
+mov $0,$2
+div $0,67600144946390082339

@@ -1,21 +1,18 @@
 ; A186682: Total number of positive integers below 10^n requiring 18 positive biquadrates in their representation as sum of biquadrates.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,2,19,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24
-; Formula: a(n) = 17*((n-1)>=2)+5*((n-1)>=3)+2*((n-1)>=1)
 
 #offset 1
 
+mov $7,18
+mov $8,20
+mov $9,37
+mov $10,42
 sub $0,1
-mov $1,$0
-geq $1,1
-mul $1,2
-mov $2,$1
-mov $1,$0
-geq $1,2
-mul $1,17
-add $2,$1
-mov $1,$0
-geq $1,3
-mul $1,5
-add $2,$1
-mov $0,$2
+lpb $0
+  rol $1,18
+  sub $0,1
+  mov $10,$9
+lpe
+mov $0,$7
+sub $0,18

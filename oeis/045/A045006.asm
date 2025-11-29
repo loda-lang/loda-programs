@@ -1,5 +1,5 @@
 ; A045006: Numbers whose base-3 representation contains exactly three 0's and two 2's.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [SG]KidDoesCrunch
 ; 164,168,180,216,251,263,267,299,303,315,407,411,423,459,491,493,497,501,505,507,515,519,531,541,543,549,569,573,585,621,649,651,657,675,746,752,754,764,776,780,788,790,794,798,802
 
 #offset 1
@@ -21,8 +21,7 @@ lpb $2
   lpe
   add $1,2
   max $3,$1
-  sub $5,8
-  equ $5,2
+  equ $5,10
   sub $0,$5
   add $1,1
   mov $4,$0
@@ -31,7 +30,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$1
-sub $0,163
+mov $0,$3
 div $0,3
-add $0,54

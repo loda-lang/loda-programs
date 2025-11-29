@@ -1,24 +1,26 @@
 ; A001358: Semiprimes (or biprimes): products of two primes.
-; Submitted by marianob [marche]
+; Submitted by Science United
 ; 4,6,9,10,14,15,21,22,25,26,33,34,35,38,39,46,49,51,55,57,58,62,65,69,74,77,82,85,86,87,91,93,94,95,106,111,115,118,119,121,122,123,129,133,134,141,142,143,145,146,155,158,159,161,166,169,177,178,183,185,187,194,201,202,203,205,206,209,213,214,215,217,218,219,221,226,235,237,247,249
 
 #offset 1
 
 sub $0,1
-mov $4,$0
-mov $2,2
+mov $1,1
+mov $2,$0
+add $2,2
+pow $2,2
 lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $3,2
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $1,1
+  mul $2,$4
   sub $2,1
-  mov $0,$4
-  add $0,$2
-  trn $0,1
-  add $0,1
-  seq $0,62198 ; Sum of first n semiprimes.
-  mov $1,$2
-  mul $1,$0
-  add $3,$1
 lpe
-min $4,1
-mul $4,$0
-mov $0,$3
-sub $0,$4
+mov $0,$1
+add $0,1

@@ -1,13 +1,11 @@
 ; A045256: Numbers whose base-5 representation contains exactly two 1's and one 4.
-; Submitted by Landjunge
+; Submitted by Science United
 ; 34,46,106,134,146,154,164,169,170,172,173,184,196,209,221,226,230,232,233,236,241,284,296,356,409,421,481,506,526,530,532,533,536,541,556,581,634,646,654,664,669,670,672,673,684,696
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,4
 lpb $2
   mov $4,-5
@@ -23,8 +21,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

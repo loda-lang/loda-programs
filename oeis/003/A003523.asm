@@ -1,5 +1,5 @@
 ; A003523: Divisors of 2^10 - 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Mads Nissen
 ; 1,3,11,31,33,93,341,1023
 
 #offset 1
@@ -9,10 +9,8 @@ pow $2,4
 lpb $2
   add $3,1
   mov $5,$3
-  mod $3,2
   sub $3,4
   mul $5,2
-  mod $5,7
   mul $5,$3
   mul $3,7
   add $3,$5

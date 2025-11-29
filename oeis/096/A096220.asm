@@ -1,5 +1,5 @@
 ; A096220: a(n) is the minimal length of prime-complete rules for the first n primes.
-; Submitted by BrandyNOW
+; Submitted by Eric
 ; 1,3,6,12,20,33,48,66,87
 
 lpb $0
@@ -17,9 +17,8 @@ lpb $0
   sub $2,$4
   sub $2,$3
   sub $2,$0
-  pow $3,0
-  add $4,$3
-  add $4,1
+  mov $3,1
+  add $4,2
   add $4,$2
   sub $2,$7
   add $2,1

@@ -1,22 +1,20 @@
 ; A212970: Number of (w,x,y) with all terms in {0,...,n} and  w != x and x < range(w,x,y).
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 0,2,8,22,44,80,128,196,280,390,520,682,868,1092,1344,1640,1968,2346,2760,3230,3740,4312,4928,5612,6344,7150,8008,8946,9940,11020,12160,13392,14688,16082,17544,19110,20748,22496,24320,26260,28280
-; Formula: a(n) = (floor(n/2)*(5*floor(n/2)+7)+2)*(n%2)+floor((floor(n/2)*(floor(n/2)*(10*floor(n/2)+12)+2))/3)
 
-mov $2,$0
-mod $2,2
-div $0,2
 mov $1,$0
-mov $3,$0
-mul $0,10
-add $0,12
-mul $0,$1
-add $0,2
-mul $0,$1
-div $0,3
-mul $3,5
-add $3,7
-mul $3,$1
-add $3,2
-mul $2,$3
-add $0,$2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,0
+  sub $0,$1
+  mul $2,$0
+  gcd $2,$0
+  mul $2,2
+  sub $2,$5
+  add $2,$3
+  max $3,$2
+  add $4,$2
+  add $5,2
+lpe
+mov $0,$4
