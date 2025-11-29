@@ -1,12 +1,11 @@
 ; A280324: Number of lunar months of lunisolar cycles.
-; Submitted by Ralfy
+; Submitted by taurec
 ; 12,25,37,99,136,235,4131,12628
-; Formula: a(n) = truncate((c(n+1)-24)/2)+12, b(n) = b(n-1)*(((sign(n-1)*((abs(n-1)-1)%12+1))==7)+15*((sign(n-1)*((abs(n-1)-1)%12+1))==6)+gcd(((sign(n-1)*((abs(n-1)-1)%12+1))==5)+((sign(n-1)*((abs(n-1)-1)%12+1))==4)+((sign(n-1)*((abs(n-1)-1)%12+1))==2)+((sign(n-1)*((abs(n-1)-1)%12+1))==0),2))+max(b(n-2),2), b(2) = 50, b(1) = 24, b(0) = 0, c(n) = b(n-1), c(2) = 24, c(1) = 0, c(0) = 24
+; Formula: a(n) = truncate(b(n)/2), b(n) = b(n-1)*(((sign(n-1)*((abs(n-1)-1)%12+1))==7)+15*((sign(n-1)*((abs(n-1)-1)%12+1))==6)+gcd(((sign(n-1)*((abs(n-1)-1)%12+1))==5)+((sign(n-1)*((abs(n-1)-1)%12+1))==4)+((sign(n-1)*((abs(n-1)-1)%12+1))==2)+((sign(n-1)*((abs(n-1)-1)%12+1))==0),2))+max(b(n-2),2), b(2) = 50, b(1) = 24, b(0) = 0
 
 #offset 1
 
 mov $2,24
-add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
@@ -39,7 +38,5 @@ lpb $0
   add $1,$4
   add $3,1
 lpe
-mov $0,$2
-sub $0,24
+mov $0,$1
 div $0,2
-add $0,12

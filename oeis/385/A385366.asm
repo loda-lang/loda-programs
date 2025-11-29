@@ -6,12 +6,9 @@
 #offset 1
 
 sub $0,1
-mov $1,$0
-mov $2,1
-fac $2,$0
-add $0,1
+mov $1,1
+fac $1,$0
+fac $0,2
+trn $0,4
 mul $0,$1
-add $0,2
-trn $0,6
-mul $0,$2
 div $0,2

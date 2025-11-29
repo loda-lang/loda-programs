@@ -1,8 +1,9 @@
 ; A386965: Number of permutations p of [2*n] such that there is at least one index i in [2*n-1] with p(i+1) = n + p(i).
-; Submitted by Science United
+; Submitted by isaiahbanking
 ; 1,10,294,16296,1458120,191751120,34807535280,8337722440320,2547572372311680,966944845408147200,446304490431888211200,246166572372916851532800,159902551429370021259187200,120818209587660157360960972800,105060730670227917425027835648000
 
-add $0,1
+#offset 1
+
 mov $1,-4
 mov $2,$0
 mul $0,2
@@ -10,10 +11,10 @@ lpb $0
   sub $4,1
   mul $1,$2
   div $1,$4
+  sub $2,1
   mul $3,$0
   add $3,$1
   sub $0,1
-  sub $2,1
 lpe
 mov $0,$3
 div $0,4

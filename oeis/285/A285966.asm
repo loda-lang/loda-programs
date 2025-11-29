@@ -1,16 +1,16 @@
 ; A285966: {11->1}-transform of the Thue-Morse word A010060.
-; Submitted by Science United
+; Submitted by retired97
 ; 0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0
 
 #offset 1
 
+mov $2,2
 sub $0,1
 mul $0,2
 lpb $0
   sub $0,1
   mov $1,$2
   div $1,2
-  add $1,1
   dir $1,4
   mod $1,2
   add $2,2

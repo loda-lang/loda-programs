@@ -4,7 +4,6 @@
 ; Formula: a(n) = 6*floor(n/4)+n
 
 mov $1,$0
-div $0,4
-mul $0,-6
-sub $1,$0
-mov $0,$1
+div $1,4
+mul $1,6
+add $0,$1

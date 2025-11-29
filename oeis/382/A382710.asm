@@ -1,24 +1,20 @@
 ; A382710: Smallest missing number after A019444(n) has been computed.
-; Submitted by Cruncher Pete
+; Submitted by Science United
 ; 2,2,4,4,4,5,5,7,7,7,9,9,9,10,10,12,12,12,13,13,15,15,15,17,17,17,18,18,20,20,20,22,22,22,23,23,25,25,25,26,26,28,28,28,30,30,30,31,31,33,33,33,34,34,36,36,36,38,38,38,39,39,41,41,41,43,43,43,44,44,46,46,46,47,47,49,49,49,51,51
 
 #offset 1
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $2,$4
-  add $2,$4
-  mul $2,2
-  add $2,$4
-  mul $2,$4
-  nrt $2,2
-  sub $2,$4
-  mov $1,$2
-  div $1,2
-  mul $4,-1
-  add $4,$1
+sub $0,1
+mov $1,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  max $2,$0
+  mov $0,$1
+  sub $0,$2
+  add $0,1
+  mul $0,55
+  div $0,34
 lpe
-mov $0,$1
 add $0,1

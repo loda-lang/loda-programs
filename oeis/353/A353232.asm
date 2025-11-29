@@ -1,14 +1,12 @@
 ; A353232: a(n) is the number of ways to split [n] = {1,2,...,n} into two (possibly empty) complementary intervals {1,2,...,i} and {i+1,i+2,...,n} and then, if both intervals are nonempty, select 2 nonempty blocks/cells (i.e., subintervals) from each of them, or if one of the intervals is empty, select 2 nonempty blocks/cells from the nonempty interval.
-; Submitted by GolfSierra
+; Submitted by BrandyNOW
 ; 0,2,6,13,26,51,98,182,324,552,902,1419,2158,3185,4578,6428,8840,11934,15846,20729,26754,34111,43010,53682,66380,81380,98982,119511,143318,170781,202306,238328,279312,325754,378182,437157,503274,577163,659490,750958,852308,964320,1087814,1223651,1372734,1536009,1714466,1909140,2121112,2351510,2601510,2872337,3165266,3481623,3822786,4190186,4585308,5009692,5464934,5952687,6474662,7032629,7628418,8263920,8941088,9661938,10428550,11243069,12107706,13024739,13996514,15025446,16114020,17264792
 ; Formula: a(n) = n*(n-1)+binomial(n+1,5)
 
 #offset 1
 
-sub $0,1
-mov $1,1
-add $1,$0
-mul $1,$0
-add $0,2
-bin $0,5
+mov $1,$0
+add $1,1
+bin $1,5
+fac $0,-2
 add $0,$1

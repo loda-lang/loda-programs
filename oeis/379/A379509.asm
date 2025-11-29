@@ -1,27 +1,19 @@
 ; A379509: Sum of the legs of the unique primitive Pythagorean triple whose inradius is A002315(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
-; Submitted by Science United
+; Submitted by JagDoc
 ; 7,127,3527,115199,3886471,131868799,4478743367,152140105727,5168253960967,175568314524799,5964153390518471,202605640846963199,6882627599758753927,233806732543181952127,7942546277657462785607,269812766700752532479999,9165691521506791484696071,311363698964290393026435199
-; Formula: a(n) = 8*(truncate((min(n,n%2)*b(n)+c(n))/4)+1)*(d(n)+truncate((min(n,n%2)*b(n)+c(n))/4)+1)-1, b(n) = 29*b(n-2)+24*c(n-2), b(5) = 13452, b(4) = 13452, b(3) = 396, b(2) = 396, b(1) = 12, b(0) = 12, c(n) = 6*b(n-2)+5*c(n-2), c(5) = 2786, c(4) = 2786, c(3) = 82, c(2) = 82, c(1) = 2, c(0) = 2, d(n) = d(n-2), d(5) = 0, d(4) = 0, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = floor(((c(n)+4)^2)/8)-1, b(n) = 4*c(n-1)+b(n-1), b(1) = 24, b(0) = 8, c(n) = 5*c(n-1)+b(n-1), c(1) = 28, c(0) = 4
 
-mov $3,12
-mov $4,2
+mov $2,8
+mov $3,4
 lpb $0
-  sub $0,2
-  mov $2,$4
-  mul $2,24
+  sub $0,1
   mov $1,$3
-  mul $1,6
-  mul $3,29
+  mul $1,4
+  add $2,$1
   add $3,$2
-  mul $4,5
-  add $4,$1
 lpe
-mul $0,$3
-add $0,$4
-div $0,4
-add $0,1
-add $5,$0
-mul $5,$0
-mov $0,$5
-mul $0,8
+add $3,4
+pow $3,2
+mov $0,$3
+div $0,8
 sub $0,1

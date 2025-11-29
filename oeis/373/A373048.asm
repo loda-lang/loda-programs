@@ -8,14 +8,13 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  mov $6,$0
+  mov $5,$0
   mov $0,1
-  fac $0,$6
+  fac $0,$5
   nrt $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2
-  mov $5,$0
 lpe
-sub $1,$5
+sub $1,$0
 mov $0,$1

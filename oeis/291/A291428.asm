@@ -21,7 +21,6 @@ lpb $0
     neq $4,1
     sub $3,$4
   lpe
-  mov $1,1
   add $2,1
   div $0,$2
 lpe

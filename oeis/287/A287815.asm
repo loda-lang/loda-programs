@@ -1,20 +1,16 @@
 ; A287815: Number of octonary sequences of length n such that no two consecutive terms have distance 7.
-; Submitted by loader3229
+; Submitted by Just Jake
 ; 1,8,62,482,3746,29114,226274,1758602,13667858,106226618,825593474,6416514026,49869159026,387583197338,3012297335522,23411580532682,181954847741906,1414153417389434,10990803008177474,85420541561578922,663888608980117298,5159743512230294618
-; Formula: a(n) = min(n,n%2)*c(n)+b(n), b(n) = 13*b(n-2)+7*c(n-2), b(3) = 62, b(2) = 62, b(1) = 1, b(0) = 1, c(n) = 84*b(n-2)+48*c(n-2), c(3) = 420, c(2) = 420, c(1) = 7, c(0) = 7
+; Formula: a(n) = 6*a(n-1)+2*b(n-1), a(1) = 8, a(0) = 1, b(n) = 6*a(n-1)+b(n-1), b(1) = 7, b(0) = 1
 
 mov $1,1
-mov $2,7
+mov $2,1
 lpb $0
-  sub $0,2
-  mov $3,$1
-  mul $3,84
-  mov $4,$2
-  mul $4,7
-  mul $2,48
-  add $2,$3
-  mul $1,13
-  add $1,$4
+  sub $0,1
+  mul $1,3
+  add $1,$2
+  mul $1,2
+  mul $2,-1
+  add $2,$1
 lpe
-mul $0,$2
-add $0,$1
+mov $0,$1

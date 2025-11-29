@@ -1,5 +1,5 @@
 ; A371594: Starting positions of runs in the paperfolding sequence A014707.
-; Submitted by Science United
+; Submitted by Steve Dodd
 ; 1,3,4,6,8,11,13,14,16,19,20,22,25,27,29,30,32,35,36,38,40,43,45,46,49,51,52,54,57,59,61,62,64,67,68,70,72,75,77,78,80,83,84,86,89,91,93,94,97,99,100,102,104,107,109,110,113,115,116,118,121,123,125
 
 #offset 1
@@ -13,9 +13,8 @@ lpb $0
   mod $1,2
   equ $1,0
   sub $2,2
-  equ $2,$3
-  sub $2,$3
   add $3,2
   sub $1,$2
 lpe
 mov $0,$1
+sub $0,2

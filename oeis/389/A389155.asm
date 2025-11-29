@@ -6,9 +6,8 @@ mov $1,$0
 add $0,1
 lpb $0
   sub $0,1
-  equ $2,1
+  equ $2,5
   sub $2,$6
-  mul $2,4
   bin $2,$0
   sub $4,1
   trn $0,1
@@ -19,8 +18,7 @@ lpb $0
   gcd $3,0
   div $3,$1
   add $5,$3
-  sub $6,1
+  sub $6,4
   trn $1,2
-  sub $2,$5
 lpe
 mov $0,$5

@@ -16,12 +16,10 @@ lpb $3
   sub $3,1
   add $4,$8
   add $4,$7
-  add $5,$7
   mul $7,2
   mov $8,$6
-  add $6,5
+  add $1,$3
   mul $1,2
-  add $1,$6
   add $2,$1
   sub $2,$4
   sub $5,$1

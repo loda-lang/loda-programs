@@ -1,13 +1,11 @@
 ; A374938: Maximum number of squares covered (i.e., attacked) by 8 independent (i.e., nonattacking) queens on an n X n chessboard.
-; Submitted by Goldislops
+; Submitted by Irish Republican
 ; 64,81,100,121,144,169,196,224,251
 
 #offset 8
 
-sub $0,8
 mov $4,$0
-add $0,4
-add $4,8
+sub $0,4
 pow $4,2
 lpb $4
   sub $4,1

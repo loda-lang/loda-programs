@@ -1,5 +1,5 @@
 ; A389507: Largest even number that is not the sum of two elements coprime to the primorial prime(n)# and each bounded by prime(n)#.
-; Submitted by Steve Dodd
+; Submitted by [SG]KidDoesCrunch
 ; 4,16,16,28,28,40,56,64,76
 
 #offset 2
@@ -15,13 +15,11 @@ lpb $0
   add $32,$4
   add $32,$7
   sub $32,$9
-  add $32,$10
   add $32,$13
   sub $32,$15
   sub $32,$17
   add $32,$19
   sub $32,$20
-  add $32,$22
   sub $32,$23
   sub $0,1
   mov $16,$25

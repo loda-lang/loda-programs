@@ -13,9 +13,8 @@ mov $15,6
 sub $0,1
 lpb $0
   rol $1,23
-  mov $3,$8
   sub $0,1
   max $10,1
   add $10,2
 lpe
-mov $0,$3
+mov $0,$8

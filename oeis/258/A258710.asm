@@ -1,23 +1,21 @@
 ; A258710: Motzkin numbers A001006 read mod 11.
-; Submitted by loader3229
+; Submitted by amazing
 ; 1,1,2,4,9,10,7,6,4,10,10,1,1,2,4,9,10,7,6,4,9,0,3,3,6,1,5,8,10,7,1,6,10,7,7,3,6,8,4,5,9,6,9,10,8,8,5,10,6,3,1,4,10,9,8,7,7,3,6,8,4,5,9,6,3,5,9,9,7,3,4,2,8,10,3,8,7,8,8,5
-; Formula: a(n) = -11*truncate((b(n)+c(n))/11)+b(n)+c(n), b(n) = c(n-1), b(2) = 1, b(1) = 0, b(0) = 1, c(n) = truncate((n*(3*c(n-2)+2*c(n-1)))/(n+2)), c(2) = 1, c(1) = 1, c(0) = 0
 
-mov $1,3
-mov $2,1
-lpb $0
-  sub $0,1
-  mul $2,3
-  add $2,$3
-  add $2,$3
-  mov $4,$1
-  sub $4,2
-  mul $4,$2
-  div $4,$1
-  add $1,1
-  mov $2,$3
-  mov $3,$4
+mov $6,1
+mov $3,$0
+lpb $3
+  mul $6,$3
+  sub $1,2
+  sub $2,$1
+  sub $3,1
+  mul $6,$3
+  div $6,$2
+  sub $3,1
+  add $4,$6
 lpe
-mov $0,$2
-add $0,$3
-mod $0,11
+mov $7,$4
+add $7,1
+add $5,$7
+mod $5,11
+mov $0,$5

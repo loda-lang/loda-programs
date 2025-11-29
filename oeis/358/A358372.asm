@@ -1,10 +1,9 @@
 ; A358372: Number of nodes in the n-th standard ordered rooted tree.
-; Submitted by Science United
+; Submitted by Kalle
 ; 1,2,3,3,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,5,6,6,6,6,6,6,6,5,6,6,6,7,7,7,7,6,7,7,7,7,7,7,7,6,6,7,7,7,7,7,7,6,7,7,7,7,7,7,7,5,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8
 
 #offset 1
 
-mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
@@ -15,4 +14,5 @@ lpb $0
   div $0,2
   add $1,$2
 lpe
+add $1,1
 mov $0,$1

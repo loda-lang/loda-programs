@@ -1,12 +1,12 @@
-; A262717: a(n) = (n-1)*binomial(3*n-2,n)/(2*n-1)+(n+1)*binomial(3*n,n)/(2*n+1)-binomial(3*n-1,n).
-; Submitted by Simon Strandgaard
+; A262717: a(n) = (n-1)*binomial(3*n-2,n)/(2*n-1) + (n+1)*binomial(3*n,n)/(2*n+1) - binomial(3*n-1,n).
+; Submitted by Aionel
 ; 1,0,1,6,35,208,1260,7752,48279,303600,1924065,12271350,78676884,506662016,3275052040,21238169904,138111313215,900331830048,5881813095795,38499031112850,252423322176795,1657580519271600,10899847657028400,71764700685918240
+; Formula: a(n) = binomial(-2*n+truncate((2*b(n)+2*n-min(n,0)-2)/2)+2,-b(n)-4*n+min(n,0)+truncate((2*b(n)+2*n-min(n,0)-2)/2)+2)+binomial(-2*n+truncate((2*b(n)+2*n-min(n,0)-2)/2)+1,-b(n)-4*n+min(n,0)+truncate((2*b(n)+2*n-min(n,0)-2)/2)+2), b(n) = 1, b(1) = 1, b(0) = 0
 
 lpb $0
+  sub $0,1
   add $1,2
-  mul $2,0
-  add $2,1
-  sub $0,$2
+  mov $2,1
 lpe
 sub $2,1
 sub $0,$1

@@ -1,5 +1,5 @@
 ; A245430: Number of nonnegative integers with property that their base 9/5 expansion (see A024653) has n digits.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 9,9,18,36,63,108,198,360,648,1161,2088,3762,6768,12186,21933,39483,71064,127917,230256,414459,746028,1342845,2417121,4350816,7831476,14096655,25373979,45673164,82211688,147981042,266365872,479458575,863025435,1553445783,2796202404
 
 #offset 1
@@ -11,7 +11,6 @@ lpb $1
   mov $4,2
   lpb $4
     sub $4,2
-    mov $8,1
     mov $0,$3
     sub $0,1
     mov $5,$0
@@ -41,4 +40,3 @@ lpb $1
   lpe
 lpe
 mul $0,9
-sub $0,9

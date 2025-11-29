@@ -4,31 +4,15 @@
 
 #offset 1
 
-sub $0,1
-mov $30,$0
-mov $32,$0
-add $32,1
-lpb $32
-  clr $0,30
-  sub $32,1
-  mov $0,$30
-  sub $0,$32
-  mov $27,$0
-  mov $29,$0
-  add $29,1
-  lpb $29
-    sub $29,1
-    mov $0,$27
-    sub $0,$29
-    lpb $0
-      div $0,2
-      sub $0,1
-      mov $2,$0
-    lpe
-    mov $26,$2
-    equ $26,0
-    add $28,$26
-  lpe
-  add $31,$28
+mov $1,$0
+mov $2,1
+fil $2,4
+lpb $0
+  sub $0,$2
+  add $1,$0
+  gcd $3,45
+  add $4,$2
+  mov $2,$3
+  mov $3,$4
 lpe
-mov $0,$31
+mov $0,$1

@@ -1,21 +1,26 @@
 ; A373275: a(n) = Sum_{d|n} (-1)^(d-1) * 2^(n/d-1).
-; Submitted by [AF] Kalianthys
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,5,5,17,29,65,117,261,497,1025,2017,4097,8129,16405,32629,65537,130845,262145,523765,1048645,2096129,4194305,8386641,16777233,33550337,67109125,134209477,268435457,536855053,1073741825,2147450741,4294968325,8589869057
 
 #offset 1
 
-sub $0,1
+mov $1,1
 mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,175879 ; Numbers arising from certain regular binary expansions.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
+lpb $0
+  sub $0,1
+  add $1,$0
+  mov $2,$4
+  gcd $2,$1
+  bin $2,$1
+  mul $2,2
+  mov $3,$4
+  div $3,$1
+  equ $1,1
+  add $1,1
+  pow $2,$3
+  add $2,$5
+  mov $5,0
+  sub $5,$2
 lpe
-sub $1,$5
-mov $0,$1
+mov $0,$2
+div $0,2

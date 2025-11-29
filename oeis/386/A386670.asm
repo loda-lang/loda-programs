@@ -1,15 +1,14 @@
 ; A386670: Number of ternary strings of length 2*n that have more 0's than the combined number of 1's and 2's.
-; Submitted by shiva
+; Submitted by Science United
 ; 0,1,9,73,577,4521,35313,275577,2150721,16793929,131230609,1026283545,8032614625,62921342953,493262044977,3869724080313,30379987189377,238661880787593,1876072096450257,14756076838714713,116126703647975457,914363729294862633,7203083947383222897
 
-mov $2,$0
-add $2,$0
+mov $3,$0
+add $3,$0
 lpb $0
   sub $0,1
-  mov $3,$2
-  bin $3,$0
-  add $1,$3
+  mov $2,$3
+  bin $2,$0
   mul $1,2
+  add $1,$2
 lpe
 mov $0,$1
-div $0,2

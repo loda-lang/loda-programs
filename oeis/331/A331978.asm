@@ -1,10 +1,31 @@
 ; A331978: E.g.f.: -log(2 - cosh(x)) (even powers only).
-; Submitted by Aflatoxin
+; Submitted by DukeBox
 ; 0,1,4,46,1114,46246,2933074,263817646,31943268634,5009616448246,987840438629794,239217148602642046,69790939492563608554,24143849395162438623046,9772368696995766705116914,4575221153658910691872135246,2453303387149157947685779986874
-; Formula: a(n) = truncate((A260504(max(2*n-1,0))+1)/2)
 
+mov $2,1
 mul $0,2
-trn $0,1
-seq $0,260504 ; Number of chains in the poset of all odd-sized subsets of {1,2,...,n} ordered by inclusion.
-add $0,1
-div $0,2
+lpb $0
+  sub $0,1
+  equ $5,$8
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $11,1
+    mov $7,$0
+    add $7,$4
+    add $7,1
+    bin $7,$0
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  sub $5,$2
+  add $2,1
+lpe
+mov $0,$6
