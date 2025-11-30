@@ -1,0 +1,57 @@
+; A194097: Decimal expansion of the sum of the reciprocals of A016041 (primes that are binary palindromes).
+; Submitted by Goldislops
+; 8,1,5,7,1,0,1,9,6,2,9,0
+
+mov $1,1
+mov $2,7
+mov $3,5
+mov $4,9
+mov $5,15
+mov $6,17
+mov $7,40
+mov $8,73
+mov $9,87
+mov $10,219
+mov $11,433
+mov $12,583
+mov $13,1421
+lpb $0
+  div $3,2
+  rol $1,13
+  mov $14,$2
+  mul $14,-4
+  sub $0,1
+  add $13,$14
+  mov $14,$3
+  mul $14,-8
+  add $2,$1
+  add $11,$2
+  add $13,$14
+  mov $14,$4
+  mul $14,-4
+  add $13,$14
+  mov $14,$5
+  mul $14,9
+  add $13,$14
+  mov $14,$6
+  mul $14,19
+  add $13,$14
+  add $13,$7
+  gcd $14,2
+  mul $14,-8
+  add $13,$14
+  mov $14,$9
+  mul $14,-13
+  div $12,2
+  add $13,$14
+  mul $14,5
+  add $13,$14
+  add $13,$11
+  add $13,$12
+  add $13,$12
+lpe
+mov $0,$7
+sub $0,2
+mod $0,10
+add $0,10
+mod $0,10

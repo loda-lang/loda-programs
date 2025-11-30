@@ -1,0 +1,41 @@
+; A179875: Numbers h such that h and h+1 have same antiharmonic mean of the numbers k < h such that gcd(k, h) = 1.
+; Submitted by Torbj&#246;rn Eriksson
+; 1,6,10,22,46,58,65,69,77,82,106,129,166,178,185,194,210,221,226,237,254,262,265,309,321,330,346,358,365,382,398,417,437,454,462,466,469,473,478,482,493,497,502,505,517,533,546,554,562,570,573,581,586,589,597,614,626,662,669,681,690,714,718,753,758,781,785,789,794,813,838,858,862,886,889,893,901,905,910,914
+
+#offset 1
+
+mov $3,$0
+sub $0,1
+add $3,2
+pow $3,2
+lpb $3
+  mov $6,$2
+  sub $6,$2
+  sub $6,1
+  mov $7,$2
+  add $7,1
+  seq $7,73184 ; Number of cubefree divisors of n.
+  mov $1,$7
+  max $7,56
+  mul $7,$1
+  sub $7,32
+  mod $7,3
+  add $7,1
+  mov $8,$6
+  sub $8,$7
+  add $8,3
+  mov $4,$2
+  add $4,2
+  seq $4,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  sub $4,$8
+  equ $4,-2
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1
