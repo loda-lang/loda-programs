@@ -1,0 +1,55 @@
+; A046222: First numerator and then denominator of central elements of 1/2-Pascal triangle.
+; Submitted by DukeBox
+; 1,1,1,2,3,1,11,1,40,1,147,1,546,1,2046,1,7722,1,29315,1,111826,1,428298,1,1646008,1,6344366,1,24515700,1,94942620,1,368404110,1,1431985635,1,5574725970,1,21732560850,1,84828633120,1,331488081210,1
+
+#offset 1
+
+mov $2,1
+mov $3,1
+mov $4,2
+mov $5,1
+mov $6,1
+mov $7,3
+mov $8,1
+mov $9,11
+mov $10,1
+mov $11,40
+mov $12,1
+mov $13,147
+sub $0,1
+bxo $0,1
+lpb $0
+  mov $2,0
+  rol $2,12
+  mov $15,$1
+  mul $15,-12
+  sub $15,24
+  mov $14,$5
+  mul $14,$15
+  mov $15,$1
+  mul $15,35
+  add $15,153
+  add $13,$14
+  mov $14,$7
+  mul $14,$15
+  mov $15,$1
+  mul $15,-36
+  sub $15,244
+  add $13,$14
+  mov $14,$9
+  mul $14,$15
+  mov $15,$1
+  mul $15,15
+  add $15,137
+  add $13,$14
+  mov $14,$11
+  mul $14,$15
+  mov $15,$1
+  mul $15,2
+  add $15,22
+  sub $0,1
+  add $1,1
+  add $13,$14
+  div $13,$15
+lpe
+mov $0,$2
