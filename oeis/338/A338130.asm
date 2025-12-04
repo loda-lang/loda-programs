@@ -1,24 +1,27 @@
 ; A338130: Positive numbers k such that the ternary representation of k^k ends with that of k.
-; Submitted by ckrause
+; Submitted by skildude
 ; 1,4,7,10,19,28,37,46,55,64,73,82,109,136,163,190,217,244,271,298,325,352,379,406,433,460,487,514,541,568,595,622,649,676,703,730,811,892,973,1054,1135,1216,1297,1378,1459,1540,1621,1702,1783,1864,1945,2026,2107,2188,2269,2350,2431,2512,2593,2674,2755,2836,2917,2998,3079,3160,3241,3322,3403,3484,3565,3646,3727,3808,3889,3970,4051,4132,4213,4294
+; Formula: a(n) = 3*(-2*3^logint(max(floor(n/2),1),3)*((-3^logint(max(floor(n/2),1),3)+n)>=(3*3^logint(max(floor(n/2),1),3)))-3^logint(max(floor(n/2),1),3)+n)*3^(((-3^logint(max(floor(n/2),1),3)+n)>=(3*3^logint(max(floor(n/2),1),3)))+logint(max(floor(n/2),1),3))+1
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$1
-  sub $0,$3
-  mov $2,4
-  mov $5,1
-  lpb $0
-    div $0,$2
-    mov $2,3
-    mul $5,3
-  lpe
-  add $4,$5
-lpe
-mov $0,$4
+div $1,2
+max $1,1
+log $1,3
+mov $2,3
+pow $2,$1
+sub $0,$2
+mov $3,$2
+mul $3,3
+mov $4,$0
+geq $4,$3
+add $1,$4
+mul $2,2
+mul $2,$4
+mov $3,3
+pow $3,$1
+sub $0,$2
+mul $0,$3
+mul $0,3
+add $0,1

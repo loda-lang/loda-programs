@@ -1,5 +1,5 @@
 ; A373474: a(n) = 1 if A001414(n) and A083345(n) are both multiples of 3, otherwise 0, where A001414 is fully additive with a(p) = p, and A083345 is the numerator of the fully additive function with a(p) = 1/p.
-; Submitted by nebula
+; Submitted by Science United
 ; 1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0
 
 #offset 1
@@ -11,16 +11,7 @@ pow $2,3
 lpb $2
   sub $2,18
   mov $3,$1
-  add $3,1
-  seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
-  add $3,1
-  trn $3,2
-  add $3,1
-  pow $3,2
-  add $3,8
   bin $3,2
-  div $3,2
-  sub $3,12
   mov $5,$1
   add $5,1
   seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
@@ -32,8 +23,7 @@ lpb $2
   mod $3,6
   dif $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   mov $4,$0
   max $4,0
   equ $4,$0

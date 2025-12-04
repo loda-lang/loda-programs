@@ -10,20 +10,16 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  div $1,2
   add $1,$4
   bin $1,$0
-  add $2,1
   mov $5,$0
-  mov $6,$0
-  div $6,2
   div $0,2
+  add $2,1
   bin $5,$0
-  add $0,$4
-  add $6,$0
+  mov $6,$4
   bin $6,$0
   mul $6,$5
-  mul $1,$5
+  mul $6,$5
   mul $1,$6
   add $3,$1
 lpe

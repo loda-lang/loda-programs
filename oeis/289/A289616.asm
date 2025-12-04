@@ -1,7 +1,7 @@
 ; A289616: A246604 (Catalan(n)-n) with initial terms 1,0,0,2,10 changed to 1,1,1,2,11.
-; Submitted by Jamie Morken(w1)
+; Submitted by Science United
 ; 1,1,1,2,11,37,126,422,1422,4853,16786,58775,208000,742887,2674426,9694830,35357654,129644773,477638682,1767263171,6564120400,24466266999,91482563618,343059613627,1289904147300,4861946401427,18367353072126,69533550915977,263747951750332,1002242216651339
-; Formula: a(n) = ((max(truncate(binomial(2*n-2,n-1)/n)-3,0)-11)==0)-max(n-3,0)+max(truncate(binomial(2*n-2,n-1)/n)-3,0)+1
+; Formula: a(n) = (max(floor(binomial(2*n-2,n-1)/n)-3,0)==11)-max(n-3,0)+max(floor(binomial(2*n-2,n-1)/n)-3,0)+1
 
 #offset 1
 
@@ -18,8 +18,7 @@ bin $0,$4
 div $0,$5
 trn $0,3
 mov $3,$0
-sub $3,11
-equ $3,0
+equ $3,11
 add $0,1
 add $0,$3
 sub $0,$1

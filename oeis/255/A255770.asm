@@ -2,13 +2,11 @@
 ; Submitted by Science United
 ; 1,2,3,4,6,8,9,11,13,17,19,21
 
-mov $4,$0
 mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  mov $0,$4
-  sub $0,$2
+  mov $0,$2
   mul $0,2
   sub $0,3
   mov $1,2

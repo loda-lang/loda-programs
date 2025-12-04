@@ -6,21 +6,20 @@ mov $1,$0
 add $0,1
 lpb $0
   sub $0,1
-  equ $2,1
-  sub $2,$6
+  equ $2,-1
+  add $2,$6
   bin $2,$0
   sub $4,1
-  sub $0,1
-  trn $0,1
+  trn $0,2
   mov $3,$4
   bin $3,$1
   mul $3,$2
-  add $1,1
   gcd $3,0
+  add $1,1
   div $3,$1
+  add $6,4
+  sub $1,1
+  trn $1,1
   add $5,$3
-  sub $6,4
-  trn $1,2
-  sub $2,$5
 lpe
 mov $0,$5

@@ -1,32 +1,27 @@
 ; A291423: The arithmetic function u(n,4,2).
-; Submitted by loader3229
+; Submitted by Flashfire42
 ; 7,6,7,4,5,6,7,4,7,5,7,4,7,6,5,4,7,6,7,4,7,6,7,4,5,6,7,4,7,5,7,4,7,6,5,4,7,6,7,4,7,6,7,4,5,6,7,4,7,5,7,4,7,6,5,4,7,6,7,4,7,6,7,4,5,6,7,4,7,5
 
 #offset 1
 
-mov $1,7
-mov $2,6
-mov $3,7
-mov $4,4
-mov $5,5
-mov $6,6
-mov $7,7
-mov $8,4
-mov $9,7
-mov $10,5
-mov $11,7
-mov $12,4
-mov $13,7
-mov $14,6
-mov $15,5
-mov $16,4
-mov $17,7
-mov $18,6
-mov $19,7
-mov $20,4
 sub $0,1
+mov $1,2
+add $1,$0
+mov $2,1
+mov $3,1
+gcd $0,2
 lpb $0
-  rol $1,20
-  sub $0,1
+  add $0,1
+  add $2,2
+  mul $3,$0
+  lpb $3
+    add $2,1
+    mov $4,$1
+    mod $4,$2
+    neq $4,1
+    sub $3,$4
+  lpe
+  add $2,1
+  div $0,$2
 lpe
-mov $0,$1
+mov $0,$2

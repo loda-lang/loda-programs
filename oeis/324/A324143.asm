@@ -1,11 +1,10 @@
 ; A324143: This sequence and A324142 are a pair of complementary sequences studied by Bode, Harborth, and Kimberling (2007).
-; Submitted by Arkhenia
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,6,7,8,10,11,12,14,16,17,19,20,22,24,25,27,28,29,31,32,34,35,37,38,40,41,43,44,45,47,48,50,51,53,54,56,58,59,61,62,64,65,67,68,70,71,73,74,76,77,79,80,82,83,85,86,88,90,91,93,94,96,97,99,100
 
 #offset 1
 
 mov $10,1
-sub $0,1
 lpb $0
   sub $0,1
   pow $3,$9
@@ -28,5 +27,5 @@ lpb $0
   mov $$9,$3
   add $1,$6
 lpe
-mov $0,$1
+mov $0,$5
 add $0,1

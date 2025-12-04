@@ -1,5 +1,5 @@
 ; A291425: The arithmetic function u(n,4,4).
-; Submitted by mmonnin
+; Submitted by Science United
 ; 13,10,13,4,5,6,7,4,9,5,11,4,13,7,5,4,13,6,13,4,7,10,13,4,5,10,9,4,13,5,13,4,11,10,5,4,13,10,13,4,13,6,13,4,5,10,13,4,7,5,13,4,13,6,5,4,13,10,13,4,13,10,7,4,5,6,13,4,13,5
 
 #offset 1
@@ -7,12 +7,11 @@
 sub $0,1
 mov $1,2
 add $1,$0
-mov $2,1
 gcd $0,2
 lpb $0
   add $0,1
-  add $2,2
-  mov $3,$2
+  mov $2,3
+  add $3,3
   mul $3,$0
   lpb $3
     add $2,1
@@ -21,7 +20,6 @@ lpb $0
     neq $4,1
     sub $3,$4
   lpe
-  mov $1,1
   add $2,1
   div $0,$2
 lpe

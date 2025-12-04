@@ -11,7 +11,6 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  max $3,1
   log $3,10
   add $3,1
   sub $4,$3

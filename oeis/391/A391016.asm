@@ -1,5 +1,5 @@
 ; A391016: Decimal expansion of an observed ratio describing the separation of level sets in Collatz orbits.
-; Submitted by Science United
+; Submitted by Orange Kid
 ; 5,1,5,2,0,4,8,3,3,4
 
 add $0,1
@@ -19,12 +19,9 @@ sub $0,1
 lpb $0
   sub $7,$3
   rol $1,16
-  sub $13,14
   sub $0,1
   mov $14,$2
 lpe
 mov $0,$3
 add $0,3
-mod $0,10
-add $0,10
 mod $0,10

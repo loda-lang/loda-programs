@@ -20,7 +20,7 @@ add $1,1
 mov $2,2
 pow $2,$0
 mul $2,$1
-mov $4,1
+mov $4,2
 mov $0,$2
 div $0,4
 lpb $0
@@ -31,7 +31,6 @@ lpb $0
   add $5,$6
 lpe
 mov $0,$5
-mul $0,2
 add $0,$2
 mul $0,3
 div $0,2

@@ -6,8 +6,7 @@
 
 sub $0,1
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 mov $7,$0
 lpb $7
   mov $5,$2

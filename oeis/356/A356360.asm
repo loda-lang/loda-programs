@@ -1,21 +1,18 @@
 ; A356360: Denominator of the continued fraction 1/(2-3/(3-4/(4-5/(...(n-1)-n/(n+1))))).
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 5,7,3,11,13,1,17,19,1,23,1,1,29,31,1,1,37,1,41,43,1,47,1,1,53,1,1,59,61,1,1,67,1,71,73,1,1,79,1,83,1,1,89,1,1,1,97,1,101,103,1,107,109,1,113,1,1,1,1,1,1,127,1,131,1,1,137,139,1,1,1,1,149,151,1,1,157,1,1,163
-; Formula: a(n) = floor((2*n-1)/gcd(b(n-1),2*n-1)), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1
 
 #offset 3
 
+mul $0,2
+sub $0,1
 mov $1,$0
-sub $1,1
 mov $2,1
-mov $3,1
-mov $4,$1
-lpb $4
-  sub $4,1
-  add $5,1
-  add $2,2
-  mul $3,$5
+lpb $0
+  sub $0,1
+  mul $2,$0
+  sub $0,1
 lpe
-gcd $3,$2
-div $2,$3
-mov $0,$2
+gcd $2,$1
+div $1,$2
+mov $0,$1

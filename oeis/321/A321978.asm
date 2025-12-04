@@ -11,7 +11,7 @@ mul $0,2
 add $1,$0
 add $1,$2
 lpb $2
-  sub $2,1
+  mov $2,0
   mov $0,$1
   seq $0,60854 ; Array T(m,n) read by antidiagonals: T(m,n) (m >= 1, n >= 1) = number of ways to arrange the numbers 1,2,...,m*n in an m X n matrix so that each row and each column is increasing.
 lpe

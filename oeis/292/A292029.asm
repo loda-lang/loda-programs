@@ -1,7 +1,7 @@
 ; A292029: Wiener index of the n-folded cube graph.
-; Submitted by Simon Strandgaard
+; Submitted by BlisteringSheep
 ; 1,6,40,200,1056,4928,23808,107136,494080,2173952,9744384,42225664,185679872,795770880,3451518976,14668955648,62970789888,265876668416,1132226150400,4755349831680,20120910954496,84141991264256,354160151101440,1475667296256000,6184144161734656
-; Formula: a(n) = truncate((truncate((n*(2^(n-1)-binomial(n-1,floor((n-1)/2))))/2)*2^(n-1))/2)
+; Formula: a(n) = truncate((n*(2^(n-1)-binomial(n-1,floor((n-1)/2)))*2^(n-1))/4)
 
 #offset 2
 
@@ -18,6 +18,5 @@ bin $4,$0
 sub $3,$4
 mov $0,$3
 mul $0,$2
-div $0,2
 mul $0,$1
-div $0,2
+div $0,4

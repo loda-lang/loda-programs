@@ -1,5 +1,5 @@
 ; A325837: The number of coreful divisors of n that are exponentially odd numbers (A268335).
-; Submitted by [AF] Kalianthys
+; Submitted by Karlsson
 ; 1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2
 
 #offset 1
@@ -13,7 +13,6 @@ lpb $0
     add $2,$6
     mov $4,$0
     mod $4,$2
-    neq $4,0
     mov $5,$2
     equ $5,1
     add $2,1

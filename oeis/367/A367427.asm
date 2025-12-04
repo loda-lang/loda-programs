@@ -38,5 +38,4 @@ lpb $3
   add $1,$$2
   sub $3,1
 lpe
-add $0,$1
-add $0,1
+mov $0,$1

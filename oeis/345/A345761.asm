@@ -1,5 +1,5 @@
 ; A345761: a(n) is the number of distinct numbers of orthogonal diagonal mates that a diagonal Latin squares of order n can have.
-; Submitted by Mads Nissen
+; Submitted by Tatadu
 ; 1,0,0,1,2,1,3,31,99
 
 #offset 1
@@ -19,7 +19,6 @@ lpb $0
   mul $12,2
   add $12,11
   add $1,10
-  pow $10,$14
   add $10,$11
   mul $11,$12
   mov $12,$1

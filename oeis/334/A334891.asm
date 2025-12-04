@@ -1,5 +1,5 @@
 ; A334891: Number of ways to choose 4 points that form a square from the A000292(n) points in a regular tetrahedral grid where each side has n vertices.
-; Submitted by ckrause
+; Submitted by yasiwo
 ; 0,0,3,12,36,84,174,336,612,1044,1701
 
 mov $8,$0
@@ -37,9 +37,8 @@ lpb $6
           lpb $3
             mov $4,$0
             mod $4,$2
-            sub $0,$4
-            neq $4,0
             mul $5,$2
+            sub $0,$4
             add $2,1
             sub $3,$4
           lpe

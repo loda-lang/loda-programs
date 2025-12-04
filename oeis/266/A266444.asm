@@ -1,54 +1,22 @@
 ; A266444: Middle column of the "Rule 25" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,0,0,0,1,0,1,0,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
 
-mov $2,1
-mov $6,1
-mov $8,1
+mov $1,1
+mov $5,17
+mov $7,69
+mov $9,277
+mov $10,555
+mov $14,8881
 lpb $0
-  mov $11,$1
-  mul $11,-801
-  add $11,8811
-  mul $2,$11
-  rol $2,8
-  mov $11,$1
-  mul $11,593
-  sub $11,5930
-  mov $10,$2
-  mul $10,$11
-  mov $11,$1
-  mul $11,-2716
-  add $11,24131
-  add $9,$10
-  mov $10,$4
-  mul $10,$11
-  mov $11,$1
-  mul $11,-1367
-  add $11,4586
-  add $9,$10
-  mov $10,$5
-  mul $10,$11
-  mov $11,$1
-  mul $11,5551
-  sub $11,26929
-  add $9,$10
-  mov $10,$6
-  mul $10,$11
-  mov $11,$1
-  mul $11,2168
-  sub $11,8060
-  add $9,$10
-  mov $10,$7
-  mul $10,$11
-  mov $11,$1
-  mul $11,-3428
-  add $11,8728
-  add $9,$10
-  mov $10,$8
-  mul $10,$11
-  add $9,$10
-  div $9,5337
+  mov $1,0
+  rol $1,14
+  sub $14,$11
+  sub $14,$11
+  add $14,$12
+  add $14,$13
+  add $14,$13
   sub $0,1
-  add $1,1
 lpe
-mov $0,$2
+mov $0,$1
+mod $0,2

@@ -1,13 +1,13 @@
 ; A262518: Even bisection of A155043.
-; Submitted by BarnardsStern
+; Submitted by Science United
 ; 0,1,2,2,3,3,3,4,5,4,5,5,6,6,6,6,7,7,10,8,8,8,9,9,9,10,10,10,10,11,10,12,19,12,13,13,11,14,14,14,14,15,12,16,15,15,17,16,13,18,19,17,14,18,14,18,18,19,19,20,15,21,21,20,16,22,16,23,17,23,17,24,24,25,25,24,25,26,25,27
 
 mul $0,2
 lpb $0
+  add $1,1
   add $2,1
   seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,$2
-  add $1,1
   mov $2,$0
 lpe
 mov $0,$1

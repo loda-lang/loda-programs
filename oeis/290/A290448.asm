@@ -1,10 +1,7 @@
 ; A290448: Triangle read by rows: T(n,k) = (Eulerian(n+1,k)-binomial(n,k))/2, for 0 <= k <= n.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,0,1,0,0,4,4,0,0,11,30,11,0,0,26,146,146,26,0,0,57,588,1198,588,57,0,0,120,2136,7792,7792,2136,120,0,0,247,7290,44089,78060,44089,7290,247,0,0,502,23902,227554,655114,655114,227554,23902,502,0
 
-mov $6,0
-mov $8,0
-mov $9,0
 mov $1,$0
 add $1,1
 mov $4,$1
@@ -32,13 +29,9 @@ lpb $4
   mul $8,$7
   add $9,$8
   add $6,1
-  mul $8,0
+  mov $8,0
   sub $8,$5
 lpe
-mov $1,$9
-mul $1,2
-sub $1,1
-div $1,2
 add $0,1
 mov $2,$0
 mul $0,8
@@ -51,7 +44,7 @@ bin $3,2
 sub $2,$3
 sub $2,1
 bin $0,$2
-sub $0,1
+mov $1,$9
 sub $1,$0
 mov $0,$1
 div $0,2

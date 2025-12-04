@@ -1,25 +1,25 @@
 ; A360394: Intersection of A026430 and A360392.
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by [SG]KidDoesCrunch
 ; 3,5,8,10,12,14,16,18,21,23,26,28,30,33,35,37,39,41,44,46,48,50,52,54,57,59,61,63,65,68,70,72,75,77,80,82,84,86,88,90,93,95,98,100,102,105,107,109,111,113,116,118,120,123,125,128,130,132,134,136,138
+; Formula: a(n) = floor(c(2*n)/4)-11, b(n) = truncate(truncate((-10*4^(n-1)+b(n-1))/2)/gcd(truncate((-10*4^(n-1)+b(n-1))/2)+1,4)), b(3) = -90, b(2) = -20, b(1) = -1, b(0) = 0, c(n) = c(n-1)+gcd(truncate((-10*4^(n-2)+b(n-2))/2)+1,4)+2, c(3) = 61, c(2) = 58, c(1) = 52, c(0) = 50
 
 #offset 1
 
-mov $2,$0
+mov $2,10
+mov $4,50
 mul $0,2
-sub $0,1
-add $2,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,260393 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1) and midword sequence (a(n)); see Comments.
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  sub $0,1
+  add $4,$3
+  add $4,2
+  sub $1,$2
+  div $1,2
+  mov $3,1
+  add $3,$1
+  gcd $3,4
+  div $1,$3
+  mul $2,4
 lpe
-mov $0,$1
-div $0,2
-add $0,1
+div $4,4
+mov $0,$4
+sub $0,11
