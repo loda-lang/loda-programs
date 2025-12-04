@@ -1,12 +1,14 @@
 ; A024269: Expansion of tan(x)*sin(tan(x))/2.
-; Submitted by JohnRummel
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,6,59,268,-58123,-8182126,-1063116241,-153085326824,-25192786614807,-4733251241428194,-1002760023439122397,-234743067240981946588,-58793979433427774979363,-14793571004015066901139030
-; Formula: a(n) = truncate((-4*A009831(2*n)*(-1)^n)/8)
+; Formula: a(n) = truncate((A009831(2*min(n,92))*truncate((-1)^(min(n,92)-1)))/2)
 
+min $0,92
+sub $0,1
 mov $1,-1
 pow $1,$0
-mul $1,-4
 mul $0,2
+add $0,2
 seq $0,9831 ; Expansion of e.g.f. tanh(x)*exp(tanh(x)).
 mul $0,$1
-div $0,8
+div $0,2

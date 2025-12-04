@@ -1,13 +1,12 @@
 ; A225159: Denominators of the sequence of fractions f(n) defined recursively by f(1) = 7/1; f(n+1) is chosen so that the sum and the product of the first n terms of the sequence are equal.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,6,43,2143,5211907,30351298460743,1016966398053911225889737707,1130815308619683511655208290917557601522304473342184143
-; Formula: a(n) = c(n-1), b(n) = c(n-1)*b(n-1), b(1) = 1, b(0) = 1, c(n) = b(n-1)^2+c(n-1)*b(n-1)+max(c(n-1)^2,4), c(1) = 6, c(0) = 1
+; Formula: a(n) = c(n-1), a(2) = 6, a(1) = 1, a(0) = 0, b(n) = c(n-1)*b(n-1), b(2) = 6, b(1) = 1, b(0) = 1, c(n) = b(n-1)^2+c(n-1)*b(n-1)+max(c(n-1)^2,4), c(2) = 43, c(1) = 6, c(0) = 1
 
 #offset 1
 
 mov $2,1
 mov $4,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $1,$4
@@ -20,4 +19,4 @@ lpb $0
   pow $4,2
   add $4,$3
 lpe
-mov $0,$4
+mov $0,$1

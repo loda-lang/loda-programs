@@ -1,11 +1,28 @@
 ; A027882: a(n) = Sum_{k>=1} k^n (2/3)^k.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 2,6,30,222,2190,27006,399630,6899262,136125390,3021538686,74520313230,2021686771902,59833117024590,1918366107872766,66237821635330830,2450438532592334142,96696400596369539790
-; Formula: a(n) = 4*truncate(A201339(n)/2)+2
 
-mov $1,$0
-seq $1,201339 ; Expansion of e.g.f. exp(x) / (3 - 2*exp(x)).
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,0
+  mov $5,0
+  mov $3,$0
+  add $3,2
+  lpb $3
+    sub $3,1
+    mov $6,$3
+    pow $6,$4
+    sub $7,$3
+    bin $7,$5
+    mul $7,$6
+    add $2,$7
+    add $5,1
+    mov $7,0
+  lpe
+  mul $1,2
+  add $1,$2
+lpe
 mov $0,$1
-div $0,2
-mul $0,4
-add $0,2
+mul $0,2

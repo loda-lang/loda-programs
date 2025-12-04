@@ -1,27 +1,21 @@
 ; A202267: Numbers in which all digits are noncomposites (1, 2, 3, 5, 7) or 0.
-; Submitted by Mads Nissen
+; Submitted by loader3229
 ; 0,1,2,3,5,7,10,11,12,13,15,17,20,21,22,23,25,27,30,31,32,33,35,37,50,51,52,53,55,57,70,71,72,73,75,77,100,101,102,103,105,107,110,111,112,113,115,117,120,121,122,123,125,127,130,131,132,133,135,137,150,151,152,153,155,157,170,171,172,173,175,177,200,201,202,203,205,207,210,211
 
 #offset 1
 
+mov $2,1
 sub $0,1
-mov $2,$0
-pow $2,4
-lpb $2
-  sub $2,1
-  mov $4,0
-  mov $3,$1
-  lpb $3
-    mov $5,$3
-    mod $5,10
-    seq $5,68346 ; a(n) = n'' = second arithmetic derivative of n.
-    div $3,10
-    add $4,$5
-  lpe
-  mov $3,$4
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+lpb $0
+  mov $3,$0
+  mod $3,6
+  mov $4,$3
+  mul $3,2
+  sub $3,3
+  max $3,$4
+  mul $3,$2
+  div $0,6
+  add $1,$3
+  mul $2,10
 lpe
 mov $0,$1

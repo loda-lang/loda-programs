@@ -1,5 +1,5 @@
 ; A067498: Maximum number of reflections for a ray of light which reflects at n points (reflecting more than once at most or all points).
-; Submitted by Jamie Morken(l1)
+; Submitted by Bill F
 ; 1,3,7,11,21,27,43,51,69,83,111,123,157,171,199,227,273
 
 #offset 1
@@ -12,6 +12,7 @@ lpb $2
   add $4,1
   seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $2,$4
+  pow $2,$3
   sub $4,1
   mul $3,$4
 lpe

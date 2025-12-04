@@ -1,30 +1,28 @@
 ; A186098: Primes removed by sieve generating A095117.
-; Submitted by LCB001
+; Submitted by [SG]KidDoesCrunch
 ; 2,7,23,31,41,53,61,137,157,193,233,241,257,283,293,311,397,439,479,499,523,557,593,647,883,1061,1129,1213,1303,1381,1429,1439,1543,1601,1847,1867,1877,1931,2011,2063,2129,2293,2333,2347,2393,2477,2551,2633,2677,2687,2699,2797,2843,2909,3001,3079,3169,3203,3271,3329,3389,3617,3637,3671,3719,3761,3797,3947,4007,4021,4057,4129,4217,4253,4283,4451,4583,4663,4723,4793
 
 #offset 1
 
 sub $0,1
-mov $3,-1
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $1,$5
-  add $1,3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $3,$1
-  add $3,1
-  add $5,1
-  mul $1,$3
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,18
+mov $1,1
+add $1,$0
+mov $5,$1
+sub $1,1
+pow $5,2
+lpb $5
+  mov $6,$4
+  add $6,1
+  seq $6,40 ; The prime numbers.
+  add $6,$4
+  mov $3,$6
+  add $4,2
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$6
+  mov $2,$1
+  max $2,0
+  equ $2,$1
+  mul $5,$2
+  trn $5,1
 lpe
 mov $0,$3
-add $0,3

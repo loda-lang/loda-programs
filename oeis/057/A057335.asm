@@ -1,14 +1,14 @@
 ; A057335: a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-; Submitted by Kotenok2000
+; Submitted by Watewmark
 ; 1,2,4,6,8,12,18,30,16,24,36,60,54,90,150,210,32,48,72,120,108,180,300,420,162,270,450,630,750,1050,1470,2310,64,96,144,240,216,360,600,840,324,540,900,1260,1500,2100,2940,4620,486,810,1350,1890,2250,3150,4410,6930,3750,5250,7350,11550,10290,16170,25410,30030,128,192,288,480,432,720,1200,1680,648,1080,1800,2520,3000,4200,5880,9240
 
-mov $1,1
+mov $2,1
 lpb $0
-  mov $2,$0
-  dgs $2,2
-  add $2,1
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $1,$0
+  dgs $1,2
+  max $1,1
+  seq $1,40 ; The prime numbers.
   div $0,2
-  mul $1,$2
+  mul $2,$1
 lpe
-mov $0,$1
+mov $0,$2

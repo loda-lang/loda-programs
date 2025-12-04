@@ -1,26 +1,24 @@
 ; A194758: Number of k such that {k*log(2)} < {n*log(2)}, where { } = fractional part.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kingda Toro
 ; 1,1,1,4,3,2,7,5,3,10,7,4,1,11,7,3,15,10,5,19,13,7,23,16,9,2,21,13,5,26,17,8,31,21,11,36,25,14,3,31,19,7,37,24,11,43,29,15,49,34,19,4,41,25,9,48,31,14,55,37,19,62,43,24,5,51,31,11,59,38,17,67,45,23,75
 
 #offset 1
 
-mov $2,$0
-add $2,1
-sub $0,1
-mov $3,$0
 mov $1,$0
-lpb $1
-  mov $4,$1
-  add $4,1
-  mov $5,22
-  mul $5,$4
-  div $5,13
-  sub $1,1
-  add $3,$5
+add $1,1
+sub $0,1
+mov $2,$0
+lpb $0
+  mov $3,$0
+  add $3,1
+  mov $4,22
+  mul $4,$3
+  div $4,13
+  sub $0,1
+  add $2,$4
 lpe
-mov $1,$3
-add $1,2
-mul $1,2
-mod $1,$2
-mov $0,$1
+mov $0,$2
+add $0,2
+mul $0,2
+mod $0,$1
 add $0,1

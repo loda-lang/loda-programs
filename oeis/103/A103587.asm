@@ -1,5 +1,5 @@
 ; A103587: Sequence of run lengths in A103585.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,1,3,1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,1,3,1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2
 
 #offset 1
@@ -11,24 +11,21 @@ mov $4,2
 mov $5,1
 mov $6,2
 mov $7,1
-mov $8,1
-mov $9,1
+fil $7,3
 mov $10,2
 mov $11,1
 mov $12,2
 mov $13,1
 mov $14,2
 mov $15,1
-mov $16,1
-mov $17,1
+fil $15,3
 mov $18,2
 mov $19,1
 mov $20,2
 mov $21,1
 mov $22,2
 mov $23,1
-mov $24,1
-mov $25,1
+fil $23,3
 mov $26,2
 mov $27,1
 mov $28,2
@@ -38,35 +35,9 @@ sub $0,1
 lpb $0
   sub $0,1
   mov $31,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
+  rol $1,11
   mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
-  mov $15,$16
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
-  mov $21,$22
-  mov $22,$23
-  mov $23,$24
-  mov $24,$25
-  mov $25,$26
-  mov $26,$27
-  mov $27,$28
-  mov $28,$29
-  mov $29,$30
+  rol $12,19
   mov $30,$31
 lpe
 mov $0,$1

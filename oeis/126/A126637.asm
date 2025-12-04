@@ -1,5 +1,5 @@
 ; A126637: Difference x-y of generator pairs (x,y) {x and y coprime and not both odd, x>y} of primitive Pythagorean triangles, sorted on values x+y (A126611), then on x-y.
-; Submitted by cargoeagle
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,3,1,3,5,1,5,7,1,3,5,7,9,1,3,5,7,9,11,1,7,11,13,1,3,5,7,9,11,13,15,1,3,5,7,9,11,13,15,17,1,5,11,13,17,19,1,3,5,7,9,11,13,15,17,19,21,1,3,7,9,11,13,17,19,21,23,1,5,7,11
 
 #offset 1
@@ -33,8 +33,7 @@ lpb $2
   mul $3,338
   add $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

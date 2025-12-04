@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-add $1,2
+add $1,1
 seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 lpb $1
   mod $1,3

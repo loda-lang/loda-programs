@@ -1,21 +1,19 @@
 ; A108895: Partial sums of quadruple factorial numbers n!!!! (A007662).
-; Submitted by John Martin
+; Submitted by Zaibas McCann
 ; 1,2,4,7,11,16,28,49,81,126,246,477,861,1446,3126,6591,12735,22680,52920,118755,241635,450480,1115760,2629965,5579085,10800210,28097490,68981025,151556385,302969010,821887410,2089276995,4731688515
 
 mov $4,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $1,1
   mov $0,$4
-  sub $0,$1
-  mov $3,$0
-  equ $3,$0
+  sub $0,$2
   lpb $0
-    mul $3,$0
-    sub $0,1
-    trn $0,3
+    mul $1,$0
+    trn $0,4
   lpe
-  add $2,$3
+  add $3,$1
 lpe
-mov $0,$2
+mov $0,$3

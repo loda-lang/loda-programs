@@ -1,21 +1,12 @@
 ; A037564: Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 2,2,1.
 ; Submitted by loader3229
 ; 2,16,113,793,5553,38872,272106,1904744,13333209,93332465,653327257,4573290800,32013035602,224091249216,1568638744513,10980471211593,76863298481153,538043089368072,3766301625576506
+; Formula: a(n) = floor((113*7^n)/342)
 
 #offset 1
 
-mov $1,2
-mov $2,16
-mov $3,113
-mov $4,793
-sub $0,1
-lpb $0
-  mul $1,-7
-  rol $1,4
-  mov $5,$3
-  mul $5,7
-  sub $0,1
-  add $4,$1
-  add $4,$5
-lpe
+mov $1,7
+pow $1,$0
+mul $1,113
+div $1,342
 mov $0,$1

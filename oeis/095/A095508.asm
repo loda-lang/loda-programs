@@ -1,5 +1,5 @@
 ; A095508: a(n) = 58 written in base n.
-; Submitted by Science United
+; Submitted by Joe
 ; 1111111111111111111111111111111111111111111111111111111111,111010,2011,322,213,134,112,72,64,58,53
 
 #offset 1
@@ -11,8 +11,7 @@ mov $5,$0
 equ $5,1
 mov $0,0
 neq $1,0
-mul $1,10
-add $1,48
+add $1,57
 lpb $1
   mov $4,$1
   mod $4,$2

@@ -15,19 +15,17 @@ mov $2,$1
 add $2,1
 lpb $2
   sub $2,1
-  mov $5,0
   mov $1,$4
   sub $1,$2
   add $1,$0
   add $1,1
   mov $6,$1
   lpb $6
-    mov $7,$2
-    gcd $7,$1
-    equ $7,1
-    add $5,$7
-    sub $6,$7
+    mov $3,$2
+    gcd $3,$1
+    equ $3,1
+    add $5,$3
+    sub $6,$3
   lpe
-  add $3,$5
 lpe
-mov $0,$3
+mov $0,$5

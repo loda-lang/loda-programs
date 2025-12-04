@@ -1,14 +1,18 @@
 ; A060856: Multi-dimensional Catalan numbers: diagonal T(n,n+2) of A060854.
-; Submitted by Cruncher Pete
+; Submitted by [SG]KidDoesCrunch
 ; 1,14,6006,140229804,278607172289160,67867669180627125604080,2760171874087743799855959353857200,24486819823897171791550434989846505231774984000,59986874261544072491135645330451363110127974096720977464312000,50106797649691113217459397039765454644914995408023080761564114499343647939320000,17270116201201546083735211771578848933931940730158595798214507507343374373102471993828185973452000000
-; Formula: a(n) = truncate(truncate(A127223(n+1)/(n+1))/A107252(n+1))
 
 #offset 1
 
-add $0,1
+mov $2,$0
+add $0,$2
 mov $1,$0
-seq $1,127223 ; a(n) = (n^2)!/n!.
-div $1,$0
-seq $0,107252 ; a(n) = Product_{k=0..n-1} (n+k)!/(k+1)!.
-div $1,$0
-mov $0,$1
+bin $1,2
+add $1,$0
+add $1,$2
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  seq $0,60854 ; Array T(m,n) read by antidiagonals: T(m,n) (m >= 1, n >= 1) = number of ways to arrange the numbers 1,2,...,m*n in an m X n matrix so that each row and each column is increasing.
+lpe

@@ -1,19 +1,18 @@
 ; A093280: a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 80.
-; Submitted by emoga
+; Submitted by Watewmark
 ; 0,800,88000,9920000,999200000,99992000000,9999920000000,999999200000000,99999992000000000,9999999920000000000,999999999200000000000,99999999992000000000000,9999999999920000000000000,999999999999200000000000000,99999999999992000000000000000
 ; Formula: a(n) = 80*truncate((10^(n-1)+gcd((n-1)==2,10)-11)/8)*10^(n-1)
 
 #offset 1
 
 sub $0,1
-mov $1,$0
+mov $1,10
+pow $1,$0
 equ $0,2
 gcd $0,10
-mov $2,10
-pow $2,$1
-add $0,$2
+add $0,$1
 sub $0,11
 div $0,8
-mul $2,$0
-mov $0,$2
+mul $1,$0
+mov $0,$1
 mul $0,80

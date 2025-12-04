@@ -1,5 +1,5 @@
 ; A033095: Number of 1's when n is written in base b for 2<=b<=n+1.
-; Submitted by Jamie Morken(w1)
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,3,4,6,6,9,6,10,10,12,11,16,13,15,14,16,13,18,15,21,20,21,16,24,20,23,23,26,25,32,22,26,25,25,28,34,28,32,30,35,30,37,31,35,36,35,31,41,34,37,36,39,35,43,38,44,41,42,38,49,40,43
 
 #offset 1
@@ -21,9 +21,7 @@ lpb $3
     lpe
   lpe
   add $2,1
-  mov $6,$4
-  neq $6,0
   mov $0,$4
-  sub $3,$6
+  sub $3,1
 lpe
 mov $0,$1

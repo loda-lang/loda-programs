@@ -1,5 +1,5 @@
 ; A045066: Numbers whose base-4 representation contains exactly one 0 and no 3's.
-; Submitted by HipsterDuRocher
+; Submitted by Watewmark
 ; 0,4,8,17,18,20,24,33,34,36,40,69,70,73,74,81,82,84,88,97,98,100,104,133,134,137,138,145,146,148,152,161,162,164,168,277,278,281,282,293,294,297,298,325,326,329,330,337,338,340,344,353
 
 #offset 1
@@ -21,8 +21,7 @@ lpb $2
     max $4,$5
   lpe
   mov $3,$4
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,16 +1,12 @@
 ; A037633: Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,3.
-; Submitted by entity
+; Submitted by loader3229
 ; 2,11,58,292,1461,7308,36542,182711,913558,4567792,22838961,114194808,570974042,2854870211,14274351058,71371755292,356858776461,1784293882308,8921469411542,44607347057711,223036735288558,1115183676442792
-; Formula: a(n) = -floor((5^n+47)/31)+floor((5^n+47)/2)-23
+; Formula: a(n) = floor((29*5^n)/62)
 
 #offset 1
 
 mov $1,5
 pow $1,$0
-add $1,47
-mov $2,$1
-div $2,31
-div $1,2
-sub $1,$2
+mul $1,29
+div $1,62
 mov $0,$1
-sub $0,23

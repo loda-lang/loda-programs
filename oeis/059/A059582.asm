@@ -1,17 +1,12 @@
 ; A059582: First differences give digits of Pi = 3.1415926...
-; Submitted by kpmonaghan
+; Submitted by Just Jake
 ; 1,4,5,9,10,15,24,26,32,37,40,45,53,62,69,78,81,83,86,94,98,104,106,112,116,119,122,130,133,135,142,151,156,156,158,166,174,178,179,188,195,196,202,211,214,223,232,235,242,247,248,248,253,261,263,263,272,279,283,292,296,300,305,314,316,319,319,326,334,335,341,345,345,351,353,361,367,369,369,377
 
 mov $1,$0
-mov $2,2
-lpb $2
-  sub $2,1
-  div $2,2
+mul $1,574
+trn $0,1
+seq $0,46974 ; Partial sums of digits of decimal expansion of Pi.
+lpb $0
   mov $0,$1
-  trn $0,1
-  seq $0,46974 ; Partial sums of digits of decimal expansion of Pi.
 lpe
-min $1,1
-mul $1,$0
-mov $0,$1
 add $0,1

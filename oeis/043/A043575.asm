@@ -1,5 +1,5 @@
 ; A043575: Numbers whose base-2 representation has exactly 8 runs.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 170,298,330,338,340,342,346,362,426,554,586,594,596,598,602,618,650,658,660,662,666,674,676,678,680,684,686,690,692,694,698,714,722,724,726,730,746,810,842,850,852,854,858,874,938
 
 #offset 1
@@ -12,15 +12,14 @@ pow $2,3
 lpb $2
   mov $3,$1
   seq $3,37800 ; Number of occurrences of 01 in the binary expansion of n.
-  add $3,2
-  equ $3,5
+  equ $3,3
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
-  add $1,1
   mul $2,$4
-  sub $2,1
+  sub $2,2
 lpe
 mov $0,$1
 mul $0,2

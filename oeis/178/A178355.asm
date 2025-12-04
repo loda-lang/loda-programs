@@ -1,5 +1,5 @@
 ; A178355: Fibonacci numbers with digits increased by 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,2,3,5,8,34,89
 
 #offset 1
@@ -17,6 +17,5 @@ lpb $0
   add $2,$4
   mul $2,$1
   add $2,$4
-  sub $1,1
 lpe
 mov $0,$4

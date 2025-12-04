@@ -1,5 +1,5 @@
 ; A208654: Number of palindromic paths through the subset array of {1,2,...,n}; see Comments.
-; Submitted by http://amez.petrsu.ru/
+; Submitted by Science United
 ; 1,2,18,144,12000,540000,388962000,108425318400,650403212820480,1175952237465600000,57409367332363200000000,691636564481660937216000000,270540272566435932512004833280000
 
 #offset 1
@@ -18,8 +18,7 @@ lpb $0
   mul $3,$2
   mov $6,$5
   add $1,1
-  add $4,2
-  div $4,2
+  add $4,1
   mul $4,-1
   mul $5,$3
 lpe

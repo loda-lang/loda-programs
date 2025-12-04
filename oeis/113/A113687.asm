@@ -1,35 +1,31 @@
 ; A113687: Expansion of q^(-7/12)eta(q)eta(q^6)^3/(eta(q^2)eta(q^3)) in powers of q.
-; Submitted by Kotenok2000
+; Submitted by BrandyNOW
 ; 1,-1,0,0,0,-1,-1,1,1,0,0,1,-1,1,-1,0,1,1,0,0,-1,-1,-1,0,0,0,0,1,-1,0,1,-1,0,0,0,-1,0,0,1,1,1,0,1,-1,0,1,0,-1,0,0,1,-1,-1,0,0,0,1,0,1,0,0,0,-1,-2,0,-1,0,0,-1,0,1,1,-1,1,0,-1,0,2,0,0
 
-mov $3,3
+mov $4,3
 mul $0,2
 add $0,3
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  mul $2,24
-  add $2,1
-  mov $5,$2
-  nrt $2,2
-  mov $6,$2
-  mov $7,$2
-  add $7,1
-  mod $7,4
-  sub $7,1
-  pow $2,2
-  equ $2,$5
-  mul $2,$6
-  mul $2,$7
-  mod $2,3
-  dif $2,-2
-  add $2,1
-  add $4,7
-  add $1,$2
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  mul $3,24
+  add $3,1
+  mov $6,$3
+  nrt $3,2
+  mov $7,$3
+  mov $1,$3
+  add $1,1
+  mod $1,4
   sub $1,1
-  mov $3,2
-  add $3,$4
-  add $4,2
+  pow $3,2
+  equ $3,$6
+  mul $3,$7
+  mul $3,$1
+  mod $3,3
+  dif $3,-2
+  add $5,9
+  add $2,$3
+  mov $4,$5
 lpe
-mov $0,$1
+mov $0,$2

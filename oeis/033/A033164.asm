@@ -1,18 +1,11 @@
 ; A033164: Begins with (4, 5); avoids 3-term arithmetic progressions.
-; Submitted by Tony Fitzgerald
+; Submitted by [SG]KidDoesCrunch
 ; 4,5,7,8,13,14,16,17,31,32,34,35,40,41,43,44,85,86,88,89,94,95,97,98,112,113,115,116,121,122,124,125,247,248,250,251,256,257,259,260,274,275,277,278,283,284,286,287,328,329,331,332,337,338,340,341,355,356,358,359,364
+; Formula: a(n) = A005836(n)+4
 
 #offset 1
 
-mov $2,1
-sub $0,1
-lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  div $0,2
-  add $1,$3
-  mul $2,3
-lpe
+mov $1,$0
+seq $1,5836 ; Numbers whose base-3 representation contains no 2.
 mov $0,$1
 add $0,4

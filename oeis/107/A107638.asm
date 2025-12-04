@@ -1,5 +1,5 @@
 ; A107638: Order of appearance of ones in the Fibonacci substitution :triangular in form.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1,1,1,3,1,3,4,1,3,4,1,3,4,6,1,3,4,6,1,3,4,6,8,1,3,4,6,8,9,1,3,4,6,8,9,1,3,4,6,8,9,11,1,3,4,6,8,9,11,12,1,3,4,6,8,9,11,12,1,3,4,6,8,9,11,12,14,1,3,4,6,8,9,11,12,14,1,3,4,6
 
 mov $2,$0
@@ -24,6 +24,7 @@ lpb $2
   add $3,1
   mod $3,2
   sub $0,$3
+  mod $1,150
   add $1,1
   mov $4,$0
   max $4,0

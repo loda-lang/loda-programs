@@ -1,19 +1,16 @@
 ; A101634: Subtract 1, multiply by 1, subtract 2, multiply by 2, etc.
-; Submitted by gobo
+; Submitted by BrandyNOW
 ; 6,5,6,9,20,75,414,2849,22728,204471,2044610,22490589,269886924,3508529843,49119417606,736791263865,11788660221584,200407223766639,3607330027799178,68539270528184021,1370785410563680020
-; Formula: a(n) = 2*b(n-1)+n-1, b(n) = n*(b(n-1)-1), b(1) = 2, b(0) = 3
+; Formula: a(n) = b(n-1), b(n) = n*(-n+b(n-1)), b(1) = 5, b(0) = 6
 
 #offset 1
 
+mov $1,6
 sub $0,1
-mov $3,3
-mov $1,$0
-lpb $1
-  sub $1,1
-  add $4,1
-  sub $3,1
-  mul $3,$4
+lpb $0
+  sub $0,1
+  add $2,1
+  sub $1,$2
+  mul $1,$2
 lpe
-mov $2,$3
-mul $2,2
-add $0,$2
+mov $0,$1

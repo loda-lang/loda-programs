@@ -1,4 +1,4 @@
-; A131219: a(n,m) = (binomial(n,m) mod 2)*Gray_Code(n,m).
+; A131219: Triangle read by rows: T(n, k) = A047999(n, k)*A131218(n-k, k).
 ; Submitted by loader3229
 ; 1,1,1,1,0,1,1,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0
 ; Formula: a(n) = -2*truncate(binomial(-4*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1),76)/2)+binomial(-4*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1),76)

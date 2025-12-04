@@ -1,7 +1,7 @@
 ; A130292: Numbers that are sums of fifth powers of two distinct primes.
 ; Submitted by PDW
 ; 275,3157,3368,16839,17050,19932,161083,161294,164176,177858,371325,371536,374418,388100,532344,1419889,1420100,1422982,1436664,1580908,1791150,2476131,2476342,2479224,2492906,2637150,2847392,3895956
-; Formula: a(n) = A351245(A181819(A181811(A057335(truncate(2^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n-1))+truncate(2^truncate((sqrtint(8*n)+1)/2))))*A057335(truncate(2^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n-1))+truncate(2^truncate((sqrtint(8*n)+1)/2)))))
+; Formula: a(n) = A351245(A181819(A181811(A057335(2^floor((sqrtint(8*n)+1)/2)+truncate(2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1))))*A057335(2^floor((sqrtint(8*n)+1)/2)+truncate(2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1)))))
 
 #offset 1
 

@@ -1,17 +1,18 @@
 ; A082480: a(n) = Product_{k=1..n} (F(k)+1) where F(k) denotes the k-th Fibonacci number.
-; Submitted by roundup
+; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
 ; 1,2,4,12,48,288,2592,36288,798336,27941760,1564738560,140826470400,20419838208000,4778242140672000,1806175529174016000,1103573248325323776000,1090330369345419890688000,1742347930213980985319424000,4503969399603140847050711040000
+; Formula: a(n) = truncate(b(n+2)/8), b(n) = b(n-1)*(c(n-1)+1), b(2) = 8, b(1) = 8, b(0) = 4, c(n) = c(n-1)+c(n-2), c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 1
 
-add $0,1
-mov $1,1
-fil $1,4
-sub $0,1
+mov $1,4
+mov $2,1
+add $0,2
 lpb $0
   sub $0,1
-  mov $5,$1
-  sub $5,1
-  add $1,$3
-  mul $2,$1
-  mov $3,$5
+  mov $3,$2
+  add $2,1
+  mul $1,$2
+  mov $2,$4
+  add $4,$3
 lpe
-mov $0,$2
+mov $0,$1
+div $0,8

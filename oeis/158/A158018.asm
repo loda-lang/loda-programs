@@ -1,34 +1,17 @@
 ; A158018: Primes p such that (p - 1)/12 is also prime.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 37,61,157,229,277,349,373,709,733,853,877,997,1069,1213,1237,1669,1789,2293,2389,2677,2749,2797,3229,3253,3373,3517,3733,4549,4597,4813,4909,5197,5557,5749,6037,6277,6829,7213,7573,7717,7933,8293,8629,9013,9133,9277,9733,9949,10069,10357,10597,11149,11437,12109,12157,12253,12373,12589,12613,12757,12829,13093,13309,13477,14173,14557,15349,15493,16333,16477,16573,17077,17509,17989,18133,18517,18637,19213,19309,19429
 
 #offset 1
 
+sub $0,2
 mov $2,$0
-sub $0,1
-add $2,7
-pow $2,4
-lpb $2
-  mov $1,$6
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,3
-  mul $1,$3
-  add $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $3,4
-  sub $0,$1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mov $1,$5
-  mul $2,$4
-  sub $2,17
-  mov $5,1
-  add $6,$1
+mov $1,2
+lpb $1
+  div $1,-4
+  mov $0,$2
+  add $0,1
+  seq $0,75704 ; p and 12*p+1 are both primes.
 lpe
-mov $0,$3
-sub $0,4
-div $0,2
-mul $0,6
-add $0,13
+mul $0,12
+add $0,1

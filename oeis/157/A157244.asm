@@ -1,5 +1,5 @@
 ; A157244: Decimal expansion of estimate of the weakly triple-free set constant.
-; Submitted by Science United
+; Submitted by fritzgrid
 ; 8,0,0,3,1,9,4,8,3,8,0,2
 
 mov $4,1
@@ -80,8 +80,7 @@ lpb $1
   add $3,1
 lpe
 mov $1,$16
-add $1,1
 mul $1,9
 mov $0,$1
-sub $0,1
+add $0,8
 mod $0,10

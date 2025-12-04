@@ -1,5 +1,5 @@
 ; A083000: Values of x for which 9y^2 = x^2 + 2xy - 2x has integer solutions with positive y.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 3,18,338,2883,24642,486098,4155987,35532450,700951682,5992929075,51237766962
 
 #offset 1
@@ -21,6 +21,5 @@ lpb $0
   add $3,$2
 lpe
 mov $0,$2
-sub $0,16
 div $0,10
-add $0,3
+add $0,2

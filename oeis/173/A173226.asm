@@ -1,22 +1,16 @@
 ; A173226: Partial sums of A000364.
-; Submitted by Athlici
+; Submitted by iBezanilla
 ; 1,2,7,68,1453,51974,2754739,202115720,19593627865,2424473303306,372795661540831,69721670054678732,15584255833611765637,4102656765126735657998,1256362298168756601126283,442800255547191861154809104,177962191835086481297819598769
 
-mov $3,$0
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  min $0,16
-  mul $0,2
-  mov $4,$0
-  seq $4,122045 ; Euler (or secant) numbers E(n).
-  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-  gcd $0,$4
-  mul $0,2
-  add $1,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$2
+  sub $0,$1
+  seq $0,11248 ; Twice A000364.
+  div $0,2
+  add $3,$0
 lpe
-mov $0,$1
-div $0,2
-add $0,1
+mov $0,$3

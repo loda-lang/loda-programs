@@ -1,5 +1,5 @@
 ; A031472: Numbers whose base-5 representation has 2 more 0's than 4's.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 25,50,75,126,127,128,130,135,140,150,175,200,251,252,253,255,260,265,275,300,325,376,377,378,380,385,390,400,425,450,500,629,631,632,633,636,637,638,641,642,643,645,651,652,653,655
 
 #offset 1
@@ -24,8 +24,7 @@ lpb $2
   lpe
   mov $3,$4
   dif $3,2
-  sub $3,7
-  equ $3,0
+  equ $3,7
   sub $0,$3
   add $1,1
   sub $2,$0

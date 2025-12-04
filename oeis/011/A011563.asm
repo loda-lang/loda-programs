@@ -1,14 +1,11 @@
 ; A011563: Stirling numbers of second kind S2(14,n).
-; Submitted by jprange
+; Submitted by [SG]KidDoesCrunch
 ; 1,8191,788970,10391745,40075035,63436373,49329280,20912320,5135130,752752,66066,3367,91,1
 
 #offset 1
 
 add $0,119
 mov $1,$0
-mov $6,0
-mov $8,0
-mov $9,0
 sub $0,28
 mov $4,$0
 mul $4,8
@@ -33,7 +30,7 @@ lpb $4
   mul $8,$7
   add $9,$8
   add $6,1
-  mul $8,0
+  mov $8,0
 lpe
 mov $2,$1
 mul $2,8
@@ -47,4 +44,3 @@ mov $3,1
 fac $3,$1
 mov $0,$9
 div $0,$3
-mov $1,$3

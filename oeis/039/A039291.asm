@@ -1,5 +1,5 @@
 ; A039291: Numbers whose base-5 representation has the same nonzero number of 2's and 4's.
-; Submitted by Tom Poleski
+; Submitted by Solidair79
 ; 14,22,39,47,54,59,69,70,71,73,89,97,102,107,110,111,113,117,139,147,164,172,179,184,194,195,196,198,214,222,227,232,235,236,238,242,254,259,269,270,271,273,279,284,294,295,296,298,324,329,334,344,345,346
 
 #offset 1
@@ -22,8 +22,7 @@ lpb $2
   lpe
   mov $3,$4
   dif $3,2
-  sub $3,7
-  equ $3,0
+  equ $3,7
   sub $0,$3
   add $1,1
   sub $2,$0

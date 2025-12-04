@@ -1,7 +1,7 @@
 ; A005006: Davenport-Schinzel numbers of degree n on 5 symbols.
-; Submitted by Landjunge
+; Submitted by [SG]KidDoesCrunch
 ; 1,5,9,17,22,34,41,53,61,73
-; Formula: a(n) = 4*truncate((16*n-17)/11)+floor((21*max(4*n-4,15))/22)-13
+; Formula: a(n) = 4*floor((16*n-16)/11)+floor((21*max(4*n-4,15))/22)-13
 
 #offset 1
 
@@ -9,7 +9,6 @@ sub $0,1
 mul $0,4
 mov $1,$0
 mul $0,4
-sub $0,1
 div $0,11
 mul $0,4
 sub $0,13

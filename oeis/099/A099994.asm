@@ -1,24 +1,40 @@
 ; A099994: Bisection of A002113.
-; Submitted by Aurum
+; Submitted by iBezanilla
 ; 0,2,4,6,8,11,33,55,77,99,111,131,151,171,191,212,232,252,272,292,313,333,353,373,393,414,434,454,474,494,515,535,555,575,595,616,636,656,676,696,717,737,757,777,797,818,838,858,878,898,919,939,959,979,999,1111,1331,1551,1771,1991
 
 #offset 1
 
-sub $0,1
 mul $0,2
+sub $0,1
+mov $1,$0
+div $1,2
+max $1,1
+log $1,10
+mov $2,10
+pow $2,$1
+sub $0,$2
+mov $3,$2
+mul $3,10
+mov $4,$0
+geq $4,$3
+mul $2,9
+mul $2,$4
+sub $0,$2
+add $1,$4
+mov $5,$4
+equ $5,0
+mul $5,10
+add $4,$5
 mov $2,$0
-pow $2,2
+div $2,$4
+mov $3,10
+pow $3,$1
+mul $0,$3
 lpb $2
-  mov $5,$1
-  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  mov $3,$1
-  equ $3,$5
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  mov $7,$2
+  mod $7,10
+  div $2,10
+  mul $6,10
+  add $6,$7
 lpe
-mov $0,$1
+add $0,$6

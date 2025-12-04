@@ -1,7 +1,7 @@
 ; A120263: Ratio of the numerator of n*HarmonicNumber[n] to the numerator of HarmonicNumber[n]: A096617(n)/A001008(n).
 ; Submitted by Jamie Morken(w3)
 ; 1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,3,1,5,3,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,7,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,3,1,1,3,1,1,1,1,1,1,1,1,1,1,11,1,1,1
-; Formula: a(n) = truncate(n/gcd(truncate(b(n)/gcd(c(n),b(n))),n)), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*c(n-1)+b(n-1), c(2) = 3, c(1) = 1, c(0) = 0
+; Formula: a(n) = floor(n/gcd(truncate(b(n)/gcd(c(n),b(n))),n)), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*c(n-1)+b(n-1), c(2) = 3, c(1) = 1, c(0) = 0
 
 #offset 1
 

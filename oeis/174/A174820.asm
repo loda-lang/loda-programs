@@ -1,5 +1,5 @@
 ; A174820: Triangle T(n,k) read by rows. T(n,k) = A174557(n,k)-A174557(n-1,k).
-; Submitted by Skillz
+; Submitted by fritzgrid
 ; 1,-3,1,-1,-2,1,-1,-1,-2,1,-1,0,0,-2,1,-1,-1,-1,0,-2,1,-1,0,0,0,0,-2,1,-1,-1,0,-1,0,0,-2,1,-1,0,-1,0,0,0,0,-2,1,-1,-1,0,0,-1,0,0,0,-2,1,-1,0,0,0,0,0,0,0,0,-2,1,-1,-1,-1,-1,0,-1,0,0,0,0,-2,1,-1,0
 ; Formula: a(n) = 2*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n)^(-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n))-truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))
 
@@ -30,4 +30,3 @@ sub $0,$5
 pow $0,$0
 mul $0,2
 sub $0,$3
-mov $1,$3

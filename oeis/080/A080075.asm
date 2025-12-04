@@ -1,25 +1,22 @@
 ; A080075: Proth numbers: of the form k*2^m + 1 for k odd, m >= 1 and 2^m > k.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 3,5,9,13,17,25,33,41,49,57,65,81,97,113,129,145,161,177,193,209,225,241,257,289,321,353,385,417,449,481,513,545,577,609,641,673,705,737,769,801,833,865,897,929,961,993,1025,1089,1153,1217,1281,1345,1409,1473,1537,1601,1665,1729,1793,1857,1921,1985,2049,2113,2177,2241,2305,2369,2433,2497,2561,2625,2689,2753,2817,2881,2945,3009,3073,3137
-; Formula: a(n) = 2*(-2^logint(max(floor(n/3),1),2)*((-2^logint(max(floor(n/3),1),2)+n)>=(2^logint(max(floor(n/3),1),2)))-2^logint(max(floor(n/3),1),2)+n+1)*2^(((-2^logint(max(floor(n/3),1),2)+n)>=(2^logint(max(floor(n/3),1),2)))+logint(max(floor(n/3),1),2))+1
+; Formula: a(n) = 2*min(-floor((2^logint(n,2))/2)+n+1,2^logint(n,2))*(-min(-floor((2^logint(n,2))/2)+n+1,2^logint(n,2))+n+1)+1
 
 #offset 1
 
 mov $1,$0
-div $1,3
-max $1,1
 log $1,2
 mov $2,2
 pow $2,$1
-sub $0,$2
-mov $4,$0
-geq $4,$2
-add $1,$4
-mul $2,$4
-mov $3,2
-pow $3,$1
 add $0,1
-sub $0,$2
-mul $0,$3
+mov $3,$2
+div $3,2
+mov $4,$0
+sub $0,$3
+min $0,$2
+sub $4,$0
+mul $4,$0
+mov $0,$4
 mul $0,2
 add $0,1

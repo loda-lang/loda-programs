@@ -1,18 +1,12 @@
 ; A037585: Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 3,19,117,703,4221,25327,151965,911791,5470749,32824495,196946973,1181681839,7090091037,42540546223,255243277341,1531459664047,9188757984285,55132547905711,330795287434269,1984771724605615,11908630347633693,71451782085802159,428710692514812957
-; Formula: a(n) = b(n-1)+c(n-1), b(n) = 6*b(n-1)+6*c(n-1), b(1) = 18, b(0) = 0, c(n) = -4*truncate((c(n-1)+22)/4)+c(n-1)+22, c(1) = 1, c(0) = 3
+; Formula: a(n) = floor((19*6^n)/35)
 
 #offset 1
 
-mov $2,3
-sub $0,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mul $1,6
-  add $2,22
-  mod $2,4
-lpe
-add $1,$2
+mov $1,6
+pow $1,$0
+mul $1,19
+div $1,35
 mov $0,$1

@@ -1,28 +1,9 @@
 ; A000111: Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-; Submitted by Just Jake
+; Submitted by Science United
 ; 1,1,1,2,5,16,61,272,1385,7936,50521,353792,2702765,22368256,199360981,1903757312,19391512145,209865342976,2404879675441,29088885112832,370371188237525,4951498053124096,69348874393137901,1015423886506852352,15514534163557086905,246921480190207983616,4087072509293123892361,70251601603943959887872,1252259641403629865468285,23119184187809597841473536,441543893249023104553682821,8713962757125169296170811392,177519391579539289436664789665,3729407703720529571097509625856
+; Formula: a(n) = gcd(A155585(n),A122045(n))
 
-mov $2,$0
-mov $1,1
-lpb $1,2
-  sub $1,1
-  mov $5,2
-  lpb $5
-    sub $5,1
-    mov $0,$2
-    add $0,$5
-    trn $0,1
-    mov $4,$0
-    seq $4,122045 ; Euler (or secant) numbers E(n).
-    seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-    gcd $0,$4
-    mul $0,2
-    mov $3,$5
-    mul $3,$0
-    add $6,$3
-  lpe
-lpe
-mov $0,$6
-sub $0,2
-div $0,2
-add $0,1
+mov $1,$0
+seq $1,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$1

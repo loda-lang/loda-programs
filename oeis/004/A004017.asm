@@ -1,20 +1,18 @@
 ; A004017: Theta series of E_8 lattice with respect to deep hole.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 16,128,448,1024,2016,3584,5504,8192,12112,16128,21312,28672,35168,44032,56448,65536,78624,96896,109760,129024,154112,170496,194688,229376,252016,281344,327040,352256,390240,451584,476672,524288,596736,628992,693504,775168,810464
 
 #offset 1
 
-mul $0,2
-mov $2,$0
-lpb $2
-  mov $1,$4
-  gcd $1,$2
-  equ $1,$2
-  mul $1,$2
+lpb $0
+  mov $1,$2
+  gcd $1,$0
+  equ $1,$0
+  mul $1,$0
   pow $1,3
-  sub $2,2
   add $3,$1
-  sub $4,1
+  sub $0,2
+  sub $2,1
 lpe
-mov $0,$3
-mul $0,2
+add $0,$3
+mul $0,16

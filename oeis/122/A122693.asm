@@ -1,19 +1,17 @@
 ; A122693: Bishops on an n X n board (see Robinson paper for details).
-; Submitted by DukeBox
+; Submitted by BrandyNOW
 ; 0,2,4,32,128,1152,6912,73728,589824,7372800,73728000,1061683200,12740198400,208089907200,2913258700800,53271016243200,852336259891200,17259809262796800,310676566730342400,6903923705118720000,138078474102374400000,3341499073277460480000
-; Formula: a(n) = floor((n+1)/2)*2^n*floor(n/2)!*floor((n+1)/2)!
 
-mov $1,2
-pow $1,$0
-mov $4,$0
-add $4,1
-div $4,2
-div $0,2
-mov $2,1
-fac $2,$0
-mov $3,1
-fac $3,$4
-mul $1,$2
-mul $1,$3
-mul $4,$1
-mov $0,$4
+add $0,1
+mov $2,$0
+div $2,2
+sub $0,1
+lpb $0
+  sub $0,1
+  add $1,1
+  equ $3,0
+  mul $3,$2
+  mul $2,$1
+  add $2,$3
+lpe
+mov $0,$2

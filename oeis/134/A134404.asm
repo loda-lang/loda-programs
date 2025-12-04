@@ -1,5 +1,5 @@
 ; A134404: Triangle read by rows in which row n contains Fib(0), ..., Fib(n-1), Fib(n), Fib(n-1), ..., Fib(0).
-; Submitted by Jamie Morken(l1)
+; Submitted by Science United
 ; 0,0,1,0,0,1,1,1,0,0,1,1,2,1,1,0,0,1,1,2,3,2,1,1,0,0,1,1,2,3,5,3,2,1,1,0,0,1,1,2,3,5,8,5,3,2,1,1,0,0,1,1,2,3,5,8,13,8,5,3,2,1,1,0,0,1,1,2,3,5,8,13,21,13,8,5,3,2,1,1
 
 mov $1,$0
@@ -8,8 +8,6 @@ mov $2,$1
 add $2,1
 pow $2,2
 sub $2,$0
-mov $5,0
-mov $9,0
 pow $1,2
 add $0,1
 sub $0,$1

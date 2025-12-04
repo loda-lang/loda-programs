@@ -1,25 +1,16 @@
 ; A011649: 102nd cyclotomic polynomial.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1
 
-mov $1,1
-mov $2,1
-mov $4,-1
-mov $5,-1
-mov $7,1
-mov $8,1
-mov $10,-1
-mov $11,-1
-mov $13,1
-mov $14,1
-mov $16,-1
-mov $17,-1
-mov $19,1
-mov $20,1
-mov $22,-1
+mov $1,-1
+pow $1,$0
+add $0,3
 lpb $0
-  mul $1,-1
-  rol $1,22
-  sub $0,1
+  sub $0,3
+  sub $3,$0
+  mod $3,17
+  pow $3,$3
+  add $2,$3
 lpe
-mov $0,$7
+mov $0,$2
+mul $0,$1

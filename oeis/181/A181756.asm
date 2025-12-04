@@ -1,11 +1,10 @@
 ; A181756: a(1) = 1, a(2) = 10. For n >= 3, a(n) is found by concatenating the first n-1 terms of the sequence and then dividing the resulting number by a(n-1).
-; Submitted by Skillz
+; Submitted by [SG]KidDoesCrunch
 ; 1,10,11,1001,110001,1001000001,1100010000000001,10010000010000000000000001,110001000000000100000000000000000000000001,10010000010000000000000001000000000000000000000000000000000000000001
 
 #offset 1
 
 mov $1,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $2,$1
@@ -20,4 +19,4 @@ lpb $0
   div $1,$2
   add $3,$2
 lpe
-mov $0,$1
+mov $0,$2

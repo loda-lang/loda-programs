@@ -1,5 +1,5 @@
 ; A026318: a(n) = n-th nonnegative integer k satisfying sin(k) < cos(k) < sin(k+1).
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by kpmonaghan
 ; 7,13,32,38,51,57,76,82,95,101,120,126,139,145,164,170,189,208,214,233,252,258,277,296,302,321,340,346,365,371,384,390,409,415,428,434,453,459,472,478,497,503,516,522,541,547,566,585
 
 #offset 1
@@ -23,8 +23,7 @@ lpb $2
   mul $3,338
   max $3,$2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

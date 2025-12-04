@@ -1,16 +1,16 @@
 ; A054785: a(n) = sigma(2n) - sigma(n), where sigma is the sum of divisors of n, A000203.
-; Submitted by shiva
+; Submitted by Science United
 ; 2,4,8,8,12,16,16,16,26,24,24,32,28,32,48,32,36,52,40,48,64,48,48,64,62,56,80,64,60,96,64,64,96,72,96,104,76,80,112,96,84,128,88,96,156,96,96,128,114,124,144,112,108,160,144,128,160,120,120,192,124,128,208,128,168,192,136,144,192,192,144,208,148,152,248,160,192,224,160,192
 
 #offset 1
 
-mov $3,$0
-sub $3,1
 mov $2,$0
-dir $2,2
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $2,1
+mov $3,$0
+dir $3,2
+seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
-bxo $1,$3
-mul $1,$2
-add $2,$1
-mov $0,$2
+bxo $1,$2
+mul $1,$3
+add $3,$1
+mov $0,$3

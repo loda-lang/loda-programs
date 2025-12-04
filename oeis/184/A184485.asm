@@ -1,21 +1,24 @@
 ; A184485: Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
-; Submitted by CFJH
+; Submitted by Science United
 ; 2,7,11,15,19,24,28,32,37,41,45,50,54,58,63,67,71,75,80,84,88,93,97,101,106,110,114,118,123,127,131,136,140,144,149,153,157,161,166,170,174,179,183,187,192,196,200,204,209,213,217,222,226,230,235,239,243
-; Formula: a(n) = 4*n+truncate((10*n-floor((10*n+15)/360)+15)/33)-2
+; Formula: a(n) = e(n)-2, b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -36, b(2) = -8, b(1) = -1, b(0) = 0, c(n) = 4*gcd(max(d(n-1)-2,0)+truncate((-c(n-1)+b(n-1))/2)-1,4)*c(n-1), c(3) = 256, c(2) = 64, c(1) = 16, c(0) = 2, d(n) = floor(gcd(max(d(n-1)-2,0)+truncate((-c(n-1)+b(n-1))/2)-1,4)/2), d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = d(n-1)+e(n-1)+4, e(3) = 13, e(2) = 9, e(1) = 4, e(0) = 0
 
 #offset 1
 
-mov $1,$0
-mul $1,10
-add $1,15
-mov $3,$1
-div $1,360
-sub $3,$1
-div $3,33
-mov $2,$0
-mul $2,3
-mov $1,$3
-add $1,$2
-add $1,$0
-mov $0,$1
+mov $2,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  add $4,$3
+  add $4,4
+  trn $3,2
+  sub $3,1
+  add $3,$1
+  gcd $3,4
+  mul $2,4
+  mul $2,$3
+  div $3,2
+lpe
+mov $0,$4
 sub $0,2

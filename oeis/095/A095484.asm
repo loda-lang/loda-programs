@@ -1,5 +1,5 @@
 ; A095484: a(n) = 46 written in base n.
-; Submitted by Science United
+; Submitted by Conan
 ; 1111111111111111111111111111111111111111111111,101110,1201,232,141,114,64,56,51,46,42
 
 #offset 1
@@ -11,8 +11,7 @@ mov $5,$0
 equ $5,1
 mov $0,0
 neq $1,0
-mul $1,48
-sub $1,2
+add $1,45
 lpb $1
   mov $4,$1
   mod $4,$2

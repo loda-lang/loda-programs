@@ -1,29 +1,13 @@
 ; A101040: If n has one or two prime-factors then 1 else 0.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0
+; Formula: a(n) = binomial(1,A001222(n)-1)
 
 #offset 1
 
-mov $2,2
-lpb $0
-  add $1,2
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    neq $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  sub $1,57
-  lpb $0
-    dif $0,$2
-    mul $1,2
-  lpe
-  sub $1,17
-lpe
-mov $0,$1
-div $0,4
-mod $0,2
-add $0,2
-mod $0,2
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+sub $0,1
+mov $6,1
+bin $6,$0
+rol $1,6
+mov $0,$5

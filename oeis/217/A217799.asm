@@ -1,7 +1,7 @@
 ; A217799: Number of alternating permutations on 2n+1 letters that avoid a certain pattern of length 4 (see Lewis, 2012, Appendix, for precise definition).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,16,168,2112,30030,466752,7759752,135980416
-; Formula: a(n) = max(2*truncate((2*binomial(-n-1,2*n))/binomial(2*n+2,2))*truncate((2*binomial(2*n+2,n-1))/(n+1))-1,0)+1
+; Formula: a(n) = max(2*truncate((2*binomial(-n-1,2*n))/binomial(2*n+2,2))*truncate((2*binomial(2*n+2,n-1))/(n+1)),1)
 
 mov $1,$0
 add $1,1
@@ -26,5 +26,4 @@ div $4,$6
 mov $0,$4
 mul $0,$1
 mul $0,2
-trn $0,1
-add $0,1
+max $0,1

@@ -1,13 +1,12 @@
 ; A037483: Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2.
 ; Submitted by loader3229
 ; 1,8,49,296,1777,10664,63985,383912,2303473,13820840,82925041,497550248,2985301489,17911808936,107470853617,644825121704,3868950730225,23213704381352,139282226288113,835693357728680,5014160146372081
-; Formula: a(n) = floor((48*6^(n-1))/35)
+; Formula: a(n) = floor((8*6^n)/35)
 
 #offset 1
 
-sub $0,1
 mov $1,6
 pow $1,$0
+mul $1,8
+div $1,35
 mov $0,$1
-mul $0,48
-div $0,35

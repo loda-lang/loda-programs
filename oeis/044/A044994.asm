@@ -1,5 +1,5 @@
 ; A044994: Numbers whose base-3 representation contains exactly one 0 and no 2's.
-; Submitted by shiva
+; Submitted by skildude
 ; 0,3,10,12,31,37,39,94,112,118,120,283,337,355,361,363,850,1012,1066,1084,1090,1092,2551,3037,3199,3253,3271,3277,3279,7654,9112,9598,9760,9814,9832,9838,9840,22963,27337,28795,29281,29443
 
 #offset 1
@@ -26,7 +26,6 @@ mul $2,$0
 equ $0,2
 sub $0,2
 sub $2,$0
-mov $5,0
 mov $0,$2
 sub $0,3
 mov $4,$0

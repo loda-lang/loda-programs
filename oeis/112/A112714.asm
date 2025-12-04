@@ -1,25 +1,22 @@
 ; A112714: Numbers of the form k*2^m-1 with k<2^m and k odd.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,7,11,15,23,31,39,47,55,63,79,95,111,127,143,159,175,191,207,223,239,255,287,319,351,383,415,447,479,511,543,575,607,639,671,703,735,767,799,831,863,895,927,959,991,1023,1087,1151,1215,1279,1343,1407,1471,1535,1599,1663,1727,1791,1855,1919,1983,2047,2111,2175,2239,2303,2367,2431,2495,2559,2623,2687,2751,2815,2879,2943,3007,3071,3135
-; Formula: a(n) = 2*(-2^logint(max(floor(n/3),1),2)*((-2^logint(max(floor(n/3),1),2)+n)>=(2^logint(max(floor(n/3),1),2)))-2^logint(max(floor(n/3),1),2)+n+1)*2^(((-2^logint(max(floor(n/3),1),2)+n)>=(2^logint(max(floor(n/3),1),2)))+logint(max(floor(n/3),1),2))-1
+; Formula: a(n) = 2*min(-floor((2^logint(n,2))/2)+n+1,2^logint(n,2))*(-min(-floor((2^logint(n,2))/2)+n+1,2^logint(n,2))+n+1)-1
 
 #offset 1
 
 mov $1,$0
-div $1,3
-max $1,1
 log $1,2
 mov $2,2
 pow $2,$1
-sub $0,$2
-mov $4,$0
-geq $4,$2
-add $1,$4
-mul $2,$4
-mov $3,2
-pow $3,$1
 add $0,1
-sub $0,$2
-mul $0,$3
+mov $3,$2
+div $3,2
+mov $4,$0
+sub $0,$3
+min $0,$2
+sub $4,$0
+mul $4,$0
+mov $0,$4
 mul $0,2
 sub $0,1

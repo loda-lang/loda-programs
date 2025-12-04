@@ -10,9 +10,14 @@ lpb $3
   add $0,$3
   trn $0,1
   pow $2,$0
-  seq $0,27641 ; Numerator of Bernoulli number B_n.
-  sub $0,1
+  mov $6,$0
+  seq $6,227570 ; Numerators of rationals with e.g.f. D(3,x), a Debye function.
+  mov $0,6
+  gcd $0,$6
+  div $6,$0
+  mov $0,$6
   add $0,$2
+  sub $0,1
   mov $1,$3
   mul $1,$0
   add $5,$1

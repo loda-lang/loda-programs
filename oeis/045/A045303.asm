@@ -1,5 +1,5 @@
 ; A045303: Numbers whose base-5 representation contains exactly two 3's and three 4's.
-; Submitted by ChelseaOilman
+; Submitted by mkferrysr
 ; 2374,2474,2494,2498,2974,2994,2998,3094,3098,3118,5499,5599,5619,5623,6099,6119,6123,6219,6223,6243,8624,8724,8744,8748,9224,9244,9248,9344,9348,9368,9874,9974,9994,9998,10499,10599
 
 #offset 1
@@ -22,8 +22,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,2
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

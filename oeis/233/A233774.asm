@@ -1,19 +1,17 @@
 ; A233774: Total number of vertices in the first n rows of Sierpinski gasket, with a(0) = 1.
-; Submitted by Ralfy
+; Submitted by BrandyNOW
 ; 1,3,6,10,15,19,25,33,42,46,52,60,70,78,90,106,123,127,133,141,151,159,171,187,205,213,225,241,261,277,301,333,366,370,376,384,394,402,414,430,448,456,468,484,504,520,544,576,610,618,630,646,666,682,706,738,774,790,814,846,886,918,966,1030,1095,1099,1105,1113,1123,1131,1143,1159,1177,1185,1197,1213,1233,1249,1273,1305
-; Formula: a(n) = truncate(b(2*n+1)/2)+1, b(n) = b(n-1)+truncate(2^(sumdigits(n-1,2)*sign(n-1))), b(0) = 0
+; Formula: a(n) = floor(b(2*n)/2)+1, b(n) = 2^sumdigits(n,2)+b(n-1), b(0) = 0
 
 mul $0,2
-add $0,1
 lpb $0
-  mov $1,$0
-  sub $1,1
-  dgs $1,2
-  mov $3,2
-  pow $3,$1
+  mov $3,$0
+  dgs $3,2
+  mov $2,2
+  pow $2,$3
   sub $0,1
-  add $2,$3
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1
 div $0,2
 add $0,1

@@ -1,25 +1,38 @@
 ; A164302: a(n) = 2* (the n-th positive (odd) integer that is a palindrome when written in base 2).
-; Submitted by shiva
+; Submitted by Bill F
 ; 2,6,10,14,18,30,34,42,54,62,66,90,102,126,130,146,170,186,198,214,238,254,258,306,330,378,390,438,462,510,514,546,594,626,650,682,730,762,774,806,854,886,910,942,990,1022,1026,1122,1170,1266,1290,1386,1434,1530,1542,1638,1686,1782,1806,1902,1950,2046,2050,2114,2210,2274,2322,2386,2482,2546,2570,2634,2730,2794,2842,2906,3002,3066,3078,3142
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-pow $2,5
-lpb $2
-  add $1,1
-  mov $3,$1
-  seq $3,178225 ; Characteristic function of A006995 (binary palindromes).
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+add $0,1
+mov $3,$0
+div $3,2
+log $3,2
+mov $4,2
+pow $4,$3
+sub $0,$4
+mov $5,$4
+mul $5,2
+mov $6,$0
+geq $6,$5
+mul $4,$6
+sub $0,$4
+add $3,$6
+mov $7,$6
+equ $7,0
+mul $7,2
+add $6,$7
+mov $4,$0
+div $4,$6
+mov $5,2
+pow $5,$3
+mul $0,$5
+lpb $4
+  mov $1,$4
+  mod $1,2
+  mul $2,2
+  add $2,$1
+  div $4,2
 lpe
-mov $0,$1
-div $0,2
-mul $0,4
-add $0,2
+add $0,$2
+mul $0,2

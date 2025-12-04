@@ -6,12 +6,18 @@ mov $1,$0
 mul $1,2
 mov $8,1
 fac $8,$1
-mov $1,$8
 mov $2,$0
 seq $2,2445 ; Denominators of Bernoulli numbers B_{2n}.
 mov $3,$0
 mov $4,$0
-seq $4,367 ; Numerators of Bernoulli numbers B_2n.
+mul $4,2
+mov $9,$4
+seq $9,129814 ; a(n) = Bernoulli(n) * (n+1)!.
+add $4,1
+mov $10,1
+fac $10,$4
+mov $4,$10
+gcd $4,$9
 mov $5,$0
 trn $5,1
 add $5,$0
@@ -20,6 +26,7 @@ mul $5,$0
 gcd $6,$0
 add $6,$5
 sub $6,1
+div $9,$4
 mul $0,2
 seq $0,52653 ; E.g.f. (1-2x^2)/(1-x-2x^2).
 gcd $5,$0
@@ -28,7 +35,7 @@ mov $7,-4
 pow $7,$3
 dif $7,2
 mov $3,$7
-mul $3,$4
+mul $3,$9
 mov $0,$6
 mul $0,-1
 mul $0,$8

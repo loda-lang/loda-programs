@@ -1,7 +1,7 @@
 ; A082154: Dispersion of the complement of the hexagonal numbers.
 ; Submitted by loader3229
 ; 1,2,6,3,8,15,4,10,18,28,5,12,21,32,45,7,14,24,36,50,66,9,17,27,40,55,72,91,11,20,31,44,60,78,98,120,13,23,35,49,65,84,105,128,153,16,26,39,54,71,90,112,136,162,190,19,30,43,59,77,97,119,144,171,200,231,22,34
-; Formula: a(n) = truncate((4*gcd(0,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+floor(((4*gcd(0,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+3)^2)/2))/4)+1
+; Formula: a(n) = floor((4*gcd(0,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+floor(((4*gcd(0,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+3)^2)/2))/4)+1
 
 #offset 1
 

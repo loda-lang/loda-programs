@@ -1,12 +1,12 @@
 ; A095510: a(n) = 59 written in base n.
-; Submitted by vaughan
+; Submitted by yasiwo
 ; 11111111111111111111111111111111111111111111111111111111111,111011,2012,323,214,135,113,73,65,59,54
 
 #offset 1
 
 mov $1,$0
 mov $2,$0
-mov $3,2
+mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
@@ -22,4 +22,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-div $0,2

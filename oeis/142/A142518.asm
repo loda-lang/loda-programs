@@ -14,7 +14,6 @@ lpb $3
   lpb $1
     gcd $5,3
     mov $6,$2
-    div $6,5
     lpb $6
       mov $4,$1
       mod $4,$5

@@ -1,11 +1,10 @@
 ; A095493: a(n) = 50 written in base 12 - n.
-; Submitted by Science United
+; Submitted by mkferrysr
 ; 42,46,50,55,62,101,122,200,302,1212,110010,11111111111111111111111111111111111111111111111111
 
 sub $0,2
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

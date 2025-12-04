@@ -1,10 +1,9 @@
 ; A125829: Sprague-Grundy values for octal game .115.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,0,1,1,1,2,2,2,1,2,2,2,1,1,1,0,1,1,1,2,2,2,1,2,2,2,1,1,1,0,1,1,1,2,2,2,1,2,2,2,1,1,1,0,1,1,1,2,2,2,1,2,2,2,1,1,1,0,1,1,1,2,2,2,1,2,2,2,1,1,1,0,1,1,1,2,2,2
 
 #offset 1
 
-sub $0,1
 mov $2,1
 fil $2,3
 mov $6,1
@@ -16,4 +15,4 @@ lpb $0
   rol $2,14
   sub $0,1
 lpe
-mov $0,$2
+mov $0,$15

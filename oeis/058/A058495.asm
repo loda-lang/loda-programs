@@ -1,5 +1,5 @@
 ; A058495: Total number of multiple edges in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
-; Submitted by PE2OND
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,2,5,15,47,149,489
 
 mov $1,1
@@ -27,6 +27,5 @@ lpb $0
   add $2,$7
   mov $3,$5
   mov $7,$6
-  bin $8,$1
 lpe
 mov $0,$9

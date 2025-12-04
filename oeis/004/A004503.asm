@@ -1,7 +1,7 @@
 ; A004503: Tersum n + 14.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 14,12,13,17,15,16,11,9,10,23,21,22,26,24,25,20,18,19,5,3,4,8,6,7,2,0,1,41,39,40,44,42,43,38,36,37,50,48,49,53,51,52,47,45,46,32,30,31,35,33,34,29,27,28,68,66,67,71,69,70,65,63,64,77,75,76,80,78
-; Formula: a(n) = -9*((-3*truncate(truncate((-27*((floor(n/9)%3)==2)+n+9)/3)/3)+truncate((-27*((floor(n/9)%3)==2)+n+9)/3))==2)-27*((floor(n/9)%3)==2)+binomial(gcd(3,-9*((-3*truncate(truncate((-27*((floor(n/9)%3)==2)+n+9)/3)/3)+truncate((-27*((floor(n/9)%3)==2)+n+9)/3))==2)-27*((floor(n/9)%3)==2)+n+12),2)+n+11
+; Formula: a(n) = -9*((-3*truncate(truncate((-27*((floor(n/9)%3)==2)+n+9)/3)/3)+truncate((-27*((floor(n/9)%3)==2)+n+9)/3))==2)-27*((floor(n/9)%3)==2)+binomial(gcd(3,-9*((-3*truncate(truncate((-27*((floor(n/9)%3)==2)+n+9)/3)/3)+truncate((-27*((floor(n/9)%3)==2)+n+9)/3))==2)-27*((floor(n/9)%3)==2)+n+9),2)+n+11
 
 mov $1,$0
 div $1,9
@@ -15,10 +15,9 @@ div $1,3
 mod $1,3
 equ $1,2
 mul $1,-9
-add $1,3
 add $0,$1
 mov $2,3
 gcd $2,$0
 bin $2,2
 add $0,$2
-sub $0,1
+add $0,2

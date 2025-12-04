@@ -1,16 +1,16 @@
 ; A011668: A binary m-sequence: expansion of reciprocal of x^6+x^5+x^2+x+1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 0,0,0,0,0,1,1,0,1,1,1,0,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1,1,0,1,1,0,1,0,0,0,1,0,0,0,0,1,0,1,1,0,0,1,0,1,0,1,0,0,1,0,0,1,1,1,1,0,0,0,0,0,1,1,0,1,1,1,0,0,1,1,0,0
+; Formula: a(n) = -2*truncate(b(n)/2)+b(n), b(n) = b(n-1)+b(n-2)+b(n-5)+b(n-6), b(9) = 439, b(8) = 249, b(7) = 154, b(6) = 95, b(5) = 59, b(4) = 36, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0
 
-mov $1,1
-mov $6,1
-mov $7,1
+mov $1,13
+mov $2,23
 lpb $0
-  rol $1,7
-  add $7,$2
-  add $7,$4
+  rol $1,6
+  add $6,$1
+  add $6,$4
+  add $6,$5
   sub $0,1
 lpe
-mov $0,$6
-sub $0,1
+mov $0,$3
 mod $0,2

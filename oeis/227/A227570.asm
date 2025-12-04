@@ -5,8 +5,7 @@
 mov $1,$0
 seq $0,176327 ; Numerators of the rational sequence with e.g.f. (x/2)*(1+exp(-x))/(1-exp(-x)).
 lpb $1
-  sub $1,1
-  equ $1,0
+  equ $1,1
   sub $1,1
   sub $0,3
 lpe
