@@ -1,0 +1,82 @@
+; A201649: The fifth of the five known sets of nine distinct odd numbers the sum of whose reciprocals is 1.
+; Submitted by [SG]KidDoesCrunch
+; 3,5,7,9,11,15,33,45,385
+
+#offset 1
+
+mov $6,1
+mov $7,1
+mov $8,2
+mov $9,3
+mov $10,4
+mov $11,5
+mov $12,7
+mov $13,8
+sub $0,1
+lpb $0
+  rol $2,12
+  mul $12,2
+  mul $1,2
+  mov $14,$3
+  mul $14,-114
+  mov $15,$1
+  add $15,16
+  mul $15,$1
+  add $15,22
+  equ $6,99
+  add $13,$14
+  mul $14,$15
+  mul $15,$1
+  add $15,60
+  add $13,$14
+  mov $14,$5
+  mul $14,$15
+  mul $15,$17
+  sub $15,36
+  add $13,$14
+  mov $14,$7
+  mul $14,$15
+  mul $15,$18
+  sub $15,36
+  add $13,$14
+  mov $14,$8
+  mul $14,$15
+  mov $15,$1
+  add $15,16
+  mul $15,$1
+  add $15,24
+  add $13,$14
+  mov $14,$9
+  mul $14,$15
+  mov $15,$1
+  add $15,20
+  mul $15,$1
+  add $15,58
+  add $13,$14
+  mov $14,$10
+  mul $14,$15
+  mov $15,8
+  mul $15,$1
+  add $15,38
+  add $13,$14
+  mov $14,$11
+  mul $14,$15
+  mul $15,$1
+  sub $15,8
+  mul $15,$1
+  sub $15,10
+  add $13,$14
+  mov $14,$12
+  mul $14,$15
+  mov $15,$1
+  add $15,12
+  mul $15,$1
+  add $15,32
+  add $13,$14
+  div $13,$15
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$7
+mul $0,2
+add $0,1

@@ -1,0 +1,40 @@
+; A281022: Single (or isolated or non-twin) primes that are also safe primes.
+; Submitted by [SG]KidDoesCrunch
+; 23,47,83,167,263,359,383,467,479,503,563,587,719,839,863,887,983,1187,1283,1307,1367,1439,1523,1823,1907,2039,2063,2099,2207,2447,2459,2579,2819,2879,2903,2963,3023,3203,3623,3779,3803,3863,3947,4007,4079,4139,4283,4679,4703,4919,5087,5387,5399,5483,5507,5807,5927,5939,6047,6599,6719,6899,6983,7079,7187,7247,7523,7607,7643,7703,7727,7823,8039,8147,8423,8543,8699,8747,8783,8963
+
+#offset 1
+
+add $0,1
+mov $3,$0
+sub $0,1
+pow $3,3
+lpb $3
+  add $5,$2
+  mov $1,$2
+  mul $1,2
+  add $1,5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,$5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,2
+  mov $4,$1
+  mul $4,$2
+  add $4,$1
+  add $4,1
+  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $4,1
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+add $2,2
+mov $0,$2
+mul $0,2
+sub $0,4
+div $0,4
+mul $0,4
+add $0,3
