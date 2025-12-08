@@ -1,0 +1,33 @@
+; A049945: a(n) = a(1) + a(2) + ... + a(n-1) + a(m) for n >= 4, where m = 2^(p+1) + 2 - n and p is the unique integer such that 2^p < n-1 <= 2^(p+1), starting with a(1) = a(2) = 1 and a(3) = 4.
+; Submitted by Torbj&#246;rn Eriksson
+; 1,1,4,7,14,34,65,127,254,634,1206,2381,4742,9477,18951,37899,75798,189494,360040,710606,1416477,2830593,5660011,11319450,22638520,45276913,90553764,181107497,362214974,724429941,1448859879,2897719755,5795439510,14488598774,27528337672,54332245406
+
+#offset 1
+
+mov $3,1
+mov $6,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    mov $5,$4
+    mov $7,$4
+    add $7,$2
+    seq $7,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
+    equ $7,1
+    add $7,1
+    mov $9,10
+    add $9,$5
+    mul $7,$$9
+    add $6,$7
+  lpe
+  mov $9,10
+  add $9,$2
+  mov $$9,$3
+  add $2,1
+  mov $3,$6
+  max $6,2
+lpe
+mov $0,$3
