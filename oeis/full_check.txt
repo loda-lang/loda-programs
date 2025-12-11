@@ -155,6 +155,7 @@ A030133: a(n+1) is the sum of digits of (a(n) + a(n-1)).
 A030300: Runs have lengths 2^n, n >= 0.
 A030556: run length of n-th run of digit 0 in A030548.
 A031013: Position of n-th 5 in A031007.
+A031016: Write n in base 7, then complement each digit (d -> 6-d) and juxtapose.
 A032665: Digit '2' concatenated with a(n) is a prime.
 A032668: Digit '5' concatenated with a(n) is a prime.
 A032682: Numbers k such that k surrounded by digit '1' is a prime.
