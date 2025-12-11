@@ -1,17 +1,13 @@
 ; A265104: a(n) = A265100(n+1) - 6, n >= 1.
-; Submitted by KetamiNO [YouTube]
+; Submitted by TuxNews
 ; 8,26,35,80,89,107,116,242,251,269,278,323,332,350,359,728,737,755,764,809,818,836,845,971,980,998,1007,1052,1061,1079,1088,2186,2195,2213,2222,2267,2276,2294,2303,2429,2438,2456,2465,2510,2519,2537
+; Formula: a(n) = 9*A005836(n+1)-1
 
 #offset 1
 
-mov $2,9
-lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  div $0,2
-  add $1,$3
-  mul $2,3
-lpe
+mov $1,$0
+add $1,1
+seq $1,5836 ; Numbers whose base-3 representation contains no 2.
 mov $0,$1
+mul $0,9
 sub $0,1

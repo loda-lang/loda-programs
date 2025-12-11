@@ -4,20 +4,18 @@
 
 #offset 2
 
-sub $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-sub $0,1
-mov $1,$2
-add $1,2
-bin $1,2
-sub $1,$0
-mov $0,$2
-pow $2,0
-fac $2,$0
-mul $1,$2
-mov $0,$1
+mov $3,1
+sub $0,2
+lpb $0
+  add $2,1
+  sub $0,$2
+  mul $3,$2
+lpe
+add $1,$3
+mul $0,-1
+add $0,$2
+mov $4,$1
+mul $4,$0
+add $3,$4
+mov $0,$3
 mul $0,2

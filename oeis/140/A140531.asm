@@ -1,18 +1,12 @@
 ; A140531: Concatenate subsequences 0, 1, 2, 4, ..., 2^k.
-; Submitted by shiva
+; Submitted by Pavel_Kirpichenko
 ; 0,0,1,0,1,2,0,1,2,4,0,1,2,4,8,0,1,2,4,8,16,0,1,2,4,8,16,32,0,1,2,4,8,16,32,64,0,1,2,4,8,16,32,64,128,0,1,2,4,8,16,32,64,128,256,0,1,2,4,8,16,32,64,128,256,512,0,1,2,4,8,16,32,64,128,256,512,1024
-; Formula: a(n) = floor(truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n))/2)
 
-mov $2,$0
-mul $2,8
-add $2,1
-nrt $2,2
-add $2,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+mov $2,2
+pow $2,$0
 div $2,2
-bin $2,2
-mov $3,$0
-sub $3,$2
-mov $1,2
-pow $1,$3
-mov $0,$1
-div $0,2
+mov $0,$2

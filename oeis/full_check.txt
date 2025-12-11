@@ -16,6 +16,7 @@ A001221: Number of distinct primes dividing n (also called omega(n)).
 A001222: Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 A001223: Prime gaps: differences between consecutive primes.
 A001316: Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+A001358: Semiprimes (or biprimes): products of two primes.
 A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
 A001670: n appears n times (n even).

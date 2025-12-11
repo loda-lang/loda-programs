@@ -1,4 +1,4 @@
-; A044938: Number of runs of even length in base 7 representation of n.
+; A044938: Number of runs of even length in the base-7 representation of n.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
 

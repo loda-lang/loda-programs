@@ -1,20 +1,12 @@
 ; A111412: f(f(n+1))-f(f(n)), where f(m) = wt(m) = A000120(m).
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,0,0,0,0,0,1,-1,0,0,1,-1,1,0,-1,0,0,0,1,-1,1,0,-1,0,1,0,-1,1,-1,0,1,-1,0,0,1,-1,1,0,-1,0,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,0,-1,0,1,-1,1,0,0,-1,0,0,1,-1,1,0,-1,0,1,0,-1,1,-1,0,1,-1
+; Formula: a(n) = -sumdigits(sumdigits(n,2),2)+sumdigits(sumdigits(n+1,2),2)
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  dgs $0,2
-  dgs $0,2
-  mov $2,$3
-  mul $2,$0
-  mul $4,$3
-  mov $5,$0
-  add $1,$2
-lpe
-sub $1,$5
-mov $0,$1
+mov $1,$0
+dgs $1,2
+dgs $1,2
+add $0,1
+dgs $0,2
+dgs $0,2
+sub $0,$1

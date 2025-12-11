@@ -1,14 +1,13 @@
 ; A010383: Squares mod 21.
-; Submitted by BrandyNOW
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,4,7,9,15,16,18
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+gcd(-b(n-2)+b(n-1)+b(n-3),18), b(5) = 15, b(4) = 9, b(3) = 7, b(2) = 4, b(1) = 1, b(0) = 0
+; Formula: a(n) = a(n-1)+gcd(-a(n-2)+a(n-1)+a(n-3),18), a(6) = 15, a(5) = 9, a(4) = 7, a(3) = 4, a(2) = 1, a(1) = 0, a(0) = 1
 
 #offset 1
 
 mov $1,1
 mov $2,2
 mov $4,1
-sub $0,1
 lpb $0
   sub $0,1
   add $2,$1
@@ -17,4 +16,4 @@ lpb $0
   mov $3,$4
   add $4,$2
 lpe
-mov $0,$3
+mov $0,$1

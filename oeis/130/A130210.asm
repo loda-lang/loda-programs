@@ -24,7 +24,7 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,16007 ; a(n) = (tau(n^11)+10)/11.
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1
 mod $0,10

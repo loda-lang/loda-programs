@@ -1,4 +1,4 @@
-; A025698: Index of 3^n within sequence of numbers of form 3^i*7^j.
+; A025698: Index of 3^n within the sequence of the numbers of the form 3^i*7^j.
 ; Submitted by Simon Strandgaard
 ; 1,2,4,6,9,12,16,20,25,31,37,44,51,59,67,76,86,96,107,118,130,142,155,168,182,197,212,228,244,261,278,296,315,334,354,374,395,416,438,461,484,508,532,557,582,608,634,661,689,717,746,775,805,835,866,898,930,963,996
 

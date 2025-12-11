@@ -1,27 +1,39 @@
 ; A023212: Primes p such that 4*p+1 is also prime.
-; Submitted by Science United
+; Submitted by atannir
 ; 3,7,13,37,43,67,73,79,97,127,139,163,193,199,277,307,373,409,433,487,499,577,619,673,709,727,739,853,883,919,997,1033,1039,1063,1087,1093,1123,1129,1297,1327,1423,1429,1453,1543,1549,1567,1579,1597,1663,1753,1777,1879,1987,2017,2029,2143,2293,2383,2437,2647,2677,2683,2713,2767,2803,2887,2953,3037,3049,3067,3109,3163,3229,3259,3307,3457,3469,3499,3637,3739
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,1
-pow $2,4
+mov $2,$0
+add $0,1
+add $2,7
+pow $2,3
 lpb $2
+  mov $1,$6
+  add $1,2
+  add $6,1
+  add $3,$1
+  sub $3,$6
+  mov $4,$3
+  add $4,1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $4,$1
+  mov $1,$4
+  add $1,$4
+  add $1,1
+  seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $1,1
+  mul $3,2
+  mul $3,$5
+  div $3,2
+  sub $0,$1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  add $6,1
+  mul $2,$5
   sub $2,1
-  sub $4,1
-  max $3,$4
-  add $3,1
-  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,8
-  sub $2,$0
-  sub $4,2
-  add $4,$1
 lpe
-mov $0,$1
-sub $0,24
-div $0,8
-add $0,3
+mov $0,$3
+add $0,2

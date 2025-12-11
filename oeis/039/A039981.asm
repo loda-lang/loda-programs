@@ -1,20 +1,11 @@
 ; A039981: An example of a d-perfect sequence.
-; Submitted by Jamie Morken(l1)
+; Submitted by iBezanilla
 ; 1,1,0,0,1,2,2,2,1,0,1,1,2,0,0,2,0,1,2,2,0,0,2,1,1,1,0,0,1,1,2,0,0,2,0,0,2,0,1,2,2,1,0,1,1,2,0,1,2,2,1,0,1,2,2,2,0,0,2,1,1,1,2,0,2,2,1,0,0,1,0,2,1,1,0,0,1,2,2,2
+; Formula: a(n) = A052709(n)%3
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  mov $2,$1
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  add $1,1
-  mul $3,$2
-  div $3,$1
-  add $4,2
-  add $5,$3
-lpe
-mod $5,3
-mov $0,$5
+seq $0,52709 ; Expansion of g.f. (1-sqrt(1-4*x-4*x^2))/(2*(1+x)).
+mov $1,$0
+mod $1,3
+mov $0,$1

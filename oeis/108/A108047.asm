@@ -1,17 +1,16 @@
 ; A108047: Concatenation of the previous pair of numbers, with the first two terms both 1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,1,11,111,11111,11111111,1111111111111,111111111111111111111,1111111111111111111111111111111111,1111111111111111111111111111111111111111111111111111111,11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-; Formula: a(n) = truncate(b(n)/9), b(n) = b(n-2)*b(n-1), b(1) = 10, b(0) = 1
+; Formula: a(n) = truncate(b(n)/9), b(n) = b(n-2)*b(n-1), b(2) = 10, b(1) = 10, b(0) = 1
 
 #offset 1
 
 mov $1,1
-mov $3,10
+mov $2,10
 lpb $0
   sub $0,1
-  mov $2,$1
-  mul $1,$3
-  mov $3,$2
+  ror $1,2
+  mul $2,$1
 lpe
+div $1,9
 mov $0,$1
-div $0,9

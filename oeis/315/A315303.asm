@@ -1,15 +1,12 @@
 ; A315303: Coordination sequence Gal.6.247.6 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by loader3229
+; Submitted by Kingda Toro
 ; 1,6,10,16,20,24,28,32,38,42,48,54,58,64,68,72,76,80,86,90,96,102,106,112,116,120,124,128,134,138,144,150,154,160,164,168,172,176,182,186,192,198,202,208,212,216,220,224,230,234
-; Formula: a(n) = ((sign(n)*((n-1)%10+1))==0)+48*floor(n/10)+42*((sign(n)*((n-1)%10+1))==9)+38*((sign(n)*((n-1)%10+1))==8)+32*((sign(n)*((n-1)%10+1))==7)+28*((sign(n)*((n-1)%10+1))==6)+24*((sign(n)*((n-1)%10+1))==5)+20*((sign(n)*((n-1)%10+1))==4)+16*((sign(n)*((n-1)%10+1))==3)+10*((sign(n)*((n-1)%10+1))==2)+6*((sign(n)*((n-1)%10+1))==1)
+; Formula: a(n) = max(48*floor(n/10)+42*((sign(n)*((n-1)%10+1))==9)+38*((sign(n)*((n-1)%10+1))==8)+32*((sign(n)*((n-1)%10+1))==7)+28*((sign(n)*((n-1)%10+1))==6)+24*((sign(n)*((n-1)%10+1))==5)+20*((sign(n)*((n-1)%10+1))==4)+16*((sign(n)*((n-1)%10+1))==3)+10*((sign(n)*((n-1)%10+1))==2)+6*((sign(n)*((n-1)%10+1))==1),1)
 
 mov $2,$0
 div $2,10
 mul $2,48
 dgr $0,11
-mov $1,$0
-equ $1,0
-add $2,$1
 mov $1,$0
 equ $1,1
 mul $1,6
@@ -47,3 +44,4 @@ equ $1,9
 mul $1,42
 add $2,$1
 mov $0,$2
+max $0,1

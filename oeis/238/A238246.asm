@@ -1,23 +1,30 @@
 ; A238246: Numbers m such that A072219(m) = 3.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 3,5,6,7,9,10,12,13,14,15,17,18,20,24,25,26,28,29,30,31,33,34,36,40,48,49,50,52,56,57,58,60,61,62,63,65,66,68,72,80,96,97,98,100,104,112,113,114,116,120,121,122,124,125,126,127,129,130,132,136,144,160,192,193,194,196,200,208,224,225,226,228,232,240,241,242,244,248,249,250
 
 #offset 1
 
 mov $2,$0
-pow $2,4
+sub $0,1
+mov $1,4
+pow $2,2
 lpb $2
+  add $1,1
   mov $3,$1
-  add $3,2
   dir $3,2
   div $3,2
-  seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
-  add $3,1
-  div $3,2
+  mov $6,-1
+  pow $6,$3
+  add $5,$6
+  mov $3,$5
   equ $3,1
   sub $0,$3
-  add $1,1
-  sub $2,$0
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-add $0,2
+div $0,2
+add $0,1

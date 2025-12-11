@@ -1,13 +1,8 @@
 ; A278665: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
-; Submitted by DukeBox
+; Submitted by Tatadu
 ; 1,11,11,11,11,10011,110011,100011,1000011,10010011,101110011,1010100011,10101000011,101010010011,1010101110011,10101010100011,101010101000011,1010101010010011,10101010101110011,101010101010100011,1010101010101000011,10101010101010010011,101010101010101110011,1010101010101010100011,10101010101010101000011,101010101010101010010011,1010101010101010101110011,10101010101010101010100011,101010101010101010101000011,1010101010101010101010010011,10101010101010101010101110011
+; Formula: a(n) = truncate(A099820(A278667(n))/10)
 
-seq $0,278666 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
-lpb $0
-  mov $2,$0
-  mod $2,2
-  div $0,2
-  mul $1,10
-  add $1,$2
-lpe
-mov $0,$1
+seq $0,278667 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
+seq $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
+div $0,10

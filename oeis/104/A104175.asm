@@ -1,7 +1,7 @@
 ; A104175: From the words to the song "867-5309/Jenny" by Tommy Tutone.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7,5,3,0,9,8,6,7
-; Formula: a(n) = a(n-7), a(10) = 7, a(9) = 6, a(8) = 8, a(7) = 9, a(6) = 0, a(5) = 3, a(4) = 5, a(3) = 7, a(2) = 6, a(1) = 8
+; Formula: 
 
 #offset 1
 
@@ -11,9 +11,8 @@ mov $4,7
 mov $5,5
 mov $6,3
 mov $8,9
-sub $0,1
 lpb $0
   rol $2,7
   sub $0,1
 lpe
-mov $0,$2
+mov $0,$8

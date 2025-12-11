@@ -9,15 +9,13 @@ mov $3,$0
 mov $1,$0
 lpb $1
   sub $1,1
-  mov $2,0
   mov $0,$3
   sub $0,$1
   add $0,1
   lpb $0
-    mov $2,$0
-    nrt $0,2
-    pow $0,2
+    seq $0,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+    sub $0,1
   lpe
-  add $4,$2
+  add $2,$0
 lpe
-mov $0,$4
+mov $0,$2

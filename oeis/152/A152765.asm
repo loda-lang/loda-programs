@@ -4,7 +4,7 @@
 
 mov $2,29
 lpb $2
-  mov $2,12
+  mov $2,21
   mov $1,$0
   mul $0,2
   bin $0,$1

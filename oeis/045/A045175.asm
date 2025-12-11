@@ -1,5 +1,5 @@
 ; A045175: Numbers whose base-5 representation contains no 0's and exactly three 2's.
-; Submitted by arkiss
+; Submitted by KetamiNO [YouTube]
 ; 62,187,287,307,311,313,314,317,322,337,362,437,562,812,912,932,936,938,939,942,947,962,987,1062,1187,1412,1432,1436,1438,1439,1442,1447,1462,1487,1532,1536,1538,1539,1542,1547,1556,1558
 
 #offset 1
@@ -25,8 +25,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

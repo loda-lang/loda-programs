@@ -1,5 +1,5 @@
 ; A201649: The fifth of the five known sets of nine distinct odd numbers the sum of whose reciprocals is 1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by GPV67
 ; 3,5,7,9,11,15,33,45,385
 
 #offset 1
@@ -16,19 +16,9 @@ sub $0,1
 lpb $0
   rol $2,12
   mul $12,2
-  mul $1,2
-  mov $14,$3
-  mul $14,-114
-  mov $15,$1
-  add $15,16
-  mul $15,$1
-  add $15,22
-  equ $6,99
-  add $13,$14
-  mul $14,$15
-  mul $15,$1
   add $15,60
-  add $13,$14
+  mul $1,2
+  equ $6,99
   mov $14,$5
   mul $14,$15
   mul $15,$17

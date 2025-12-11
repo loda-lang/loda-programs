@@ -1,40 +1,10 @@
 ; A216053: a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
 ; Submitted by Science United
 ; 2,3,5,8,13,20,31,46,68,98,140,196,273,374,509,685,916,1213,1598,2088,2715,3507,4509,5764,7339,9297,11733,14743,18461,23026,28630,35472,43821,53964,66274,81157,99134,120771,146786,177971,215309,259892,313066,376327,451502,540636,646194,770948,918221,1091746,1295972,1535915,1817504,2147435,2533590,2984866,3511689,4125843,4841063,5672883,6639350,7760855,9061011,10566510,12308140,14320698,16644218,19323907,22411642,25965987,30053955,34751160,40143943,46329632,53419132,61537396,70826487,81446350
+; Formula: a(n) = A000070(n-1)+1
 
 #offset 1
 
 sub $0,1
-mov $10,$0
-mov $12,2
-lpb $12
-  clr $0,10
-  sub $12,1
-  mov $0,$10
-  add $0,$12
-  sub $0,1
-  mov $6,$0
-  mov $8,2
-  lpb $8
-    sub $8,1
-    mov $0,$6
-    add $0,$8
-    trn $0,1
-    seq $0,14160 ; Apply partial sum operator thrice to partition numbers.
-    mov $9,$8
-    mul $9,$0
-    add $7,$9
-  lpe
-  min $6,1
-  mul $6,$0
-  mov $0,$7
-  sub $0,$6
-  mov $13,$12
-  mul $13,$0
-  add $11,$13
-lpe
-min $10,1
-mul $10,$0
-mov $0,$11
-sub $0,$10
+seq $0,70 ; a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
 add $0,1

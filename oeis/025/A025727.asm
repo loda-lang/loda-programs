@@ -1,4 +1,4 @@
-; A025727: Index of 7^n within sequence of numbers of form 7^i*10^j.
+; A025727: Index of 7^n within the sequence of the numbers of the form 7^i*10^j.
 ; Submitted by Jamie Morken(s2.)
 ; 1,2,4,7,11,16,22,28,35,43,52,62,73,84,96,109,123,138,154,171,188,206,225,245,266,288,310,333,357,382,408,435,463,491,520,550,581,613,646,679,713,748,784,821,859,898,937,977,1018,1060,1103,1147,1191,1236,1282,1329
 ; Formula: a(n) = floor(binomial(11*n+1,2)/143)+1

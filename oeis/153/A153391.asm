@@ -1,5 +1,5 @@
 ; A153391: G.f.: A(x) = F(x*G(x)^2) where F(x) = G(x*F(x)) = 1 + x*F(x)^3 is the g.f. of A001764 and G(x) = F(x/G(x)) = 1 + x*G(x)^2 is the g.f. of A000108 (Catalan).
-; Submitted by UBT - Mikeejones
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,5,29,183,1223,8525,61366,453003,3412077,26124599,202748728,1591450129,12612760009,100790253764,811227147197,6570431009209,53512143110041,437976298197769,3600504527707557,29716593448484673
 
 lpb $0
@@ -19,11 +19,9 @@ lpb $0
   mul $3,$2
   mul $3,6
   div $3,$4
-  add $1,1
-  mov $2,$1
-  mul $2,2
-  add $2,$1
   add $5,$3
+  add $1,1
+  mov $2,0
 lpe
 mov $0,$5
 sub $0,3

@@ -4,15 +4,13 @@
 
 #offset 1
 
+mov $2,10
 sub $0,1
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,60939 ; a(n) = (Sum of the first n primes) + n.
-  mov $2,$0
+  mov $1,$0
   mov $0,0
 lpe
-mov $1,4
-add $1,$2
 mov $0,$1
-sub $0,3
+add $0,1

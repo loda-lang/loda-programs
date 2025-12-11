@@ -1,7 +1,7 @@
-; A025743: Index of 10^n within sequence of numbers of form 5^i*10^j.
+; A025743: Index of 10^n within the sequence of the numbers of the form 5^i*10^j.
 ; Submitted by Jon Maiga
 ; 1,3,6,11,17,25,34,45,57,70,85,101,119,138,159,181,204,229,255,283,312,343,375,408,443,479,517,556,597,639,682,727,773,821,870,921,973,1026,1081,1137,1195,1254,1315,1377,1440,1505,1571,1639,1708,1779,1851,1924
-; Formula: a(n) = truncate(((2*n-2)*(10*n+8))/28)+1
+; Formula: a(n) = floor(((2*n-2)*(10*n+8))/28)+1
 
 #offset 1
 

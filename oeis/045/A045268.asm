@@ -1,5 +1,5 @@
 ; A045268: Numbers whose base-5 representation contains exactly one 2 and two 3's.
-; Submitted by damotbe
+; Submitted by Science United
 ; 68,88,92,193,213,217,268,293,328,333,340,341,344,348,368,388,392,413,417,428,433,440,441,444,448,452,457,460,461,464,472,488,492,568,588,592,693,713,717,818,838,842,893,918,953,958
 
 #offset 1
@@ -23,8 +23,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,2
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

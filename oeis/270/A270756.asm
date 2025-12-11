@@ -1,20 +1,22 @@
 ; A270756: Total sum of the sizes of all blocks with maximal element 2 in all set partitions of {1,2,...,n}.
-; Submitted by STE\/E
+; Submitted by [SG]KidDoesCrunch
 ; 3,4,9,25,82,307,1283,5894,29427,158269,910520,5570737,36071631,246188196,1764757189,13246059237,103825154098,847806545767,7196895817375,63389642645486,578318132627495,5456455370760825,53165437331978992,534262881004973981,5530508070819609931,58908427188078754980,644979540983297501937,7251973500472054631233,83660880748060144496082,989428618389529882832491,11986856975249995149995947,148651387942361466789116950,1885725232945825034402579435,24454231174332375675918113093
 
 #offset 2
 
-sub $0,1
-mov $1,1
-mov $2,$0
-lpb $2
-  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  mov $3,$1
-  sub $0,1
-  mul $1,$2
-  mul $2,2
-  add $3,$2
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,2
+  mov $0,$1
+  sub $0,2
   mov $2,$0
-  mov $0,1
+  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $0,1
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $0,$2
+  add $2,36
 lpe
-mov $0,$3
+add $2,$0
+mov $0,$2
+sub $0,36

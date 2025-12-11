@@ -1,5 +1,5 @@
 ; A138069: Triangle read by rows: row n lists the digits of A135696(n), the palindromic number with odd number of digits formed from the reflected decimal expansion of e.
-; Submitted by Jamie Morken(w1)
+; Submitted by Science United
 ; 2,2,7,2,2,7,1,7,2,2,7,1,8,1,7,2,2,7,1,8,2,8,1,7,2,2,7,1,8,2,8,2,8,1,7,2,2,7,1,8,2,8,1,8,2,8,1,7,2,2,7,1,8,2,8,1,8,1,8,2,8,1,7,2,2,7,1,8,2,8,1,8,2,8,1,8,2,8,1,7
 
 #offset 1
@@ -11,8 +11,6 @@ mov $2,$1
 add $2,1
 pow $2,2
 sub $2,$0
-mov $5,0
-mov $8,0
 pow $1,2
 add $0,1
 sub $0,$1

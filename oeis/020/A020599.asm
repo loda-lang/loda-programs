@@ -1,5 +1,5 @@
 ; A020599: Smallest nonempty set S containing prime divisors of 5k+7 for each k in S.
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 2,3,11,13,17,23,31,61
 
 #offset 1
@@ -7,7 +7,6 @@
 sub $0,1
 mov $1,$0
 lpb $1
-  mov $0,$1
   sub $0,1
   sub $1,$0
   mov $2,$0

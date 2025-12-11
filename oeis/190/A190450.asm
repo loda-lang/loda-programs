@@ -1,48 +1,44 @@
 ; A190450: Positions of 4 in A190445.
-; Submitted by pututu
+; Submitted by [SG]KidDoesCrunch
 ; 3,8,16,21,29,37,42,50,55,58,63,71,76,84,92,97,105,110,118,126,131,139,144,147,152,160,165,173,181,186,194,199,207,215,220,228,236,241,249,254,262,270,275,283,288,291,296,304,309,317,325,330,338,343,351,359,364,372,377,380,385,393,398,406
 
 #offset 1
 
-mov $3,0
-mov $4,$0
-mov $6,0
+mov $6,$0
 sub $0,1
-add $4,1
-pow $4,2
-lpb $4
-  mov $5,$3
-  add $5,2
+pow $6,2
+lpb $6
   mov $7,$5
-  mul $7,4
-  mov $8,$7
-  add $8,$7
-  mul $8,2
-  add $8,$7
-  mul $8,$7
-  nrt $8,2
-  add $8,$7
-  mov $7,$8
+  add $7,2
+  mov $4,$7
+  mul $4,4
+  add $5,1
+  mov $3,$4
+  add $3,$4
+  mul $3,2
+  add $3,$4
+  mul $3,$4
+  nrt $3,2
+  add $3,$4
+  mov $4,$3
+  div $4,2
+  mod $4,4
+  add $4,1
+  div $4,2
+  mov $7,$4
+  add $7,$2
   div $7,2
-  mod $7,4
-  add $7,1
-  div $7,2
-  sub $5,1
-  mov $5,$7
-  add $5,$6
-  div $5,2
-  gcd $5,2
-  sub $0,$5
+  gcd $7,2
+  sub $0,$7
   add $0,1
-  add $3,1
-  mov $6,$0
-  max $6,0
-  equ $6,$0
-  mul $4,$6
-  sub $4,1
+  mov $2,$0
+  max $2,0
+  equ $2,$0
+  mul $6,$2
+  sub $6,1
 lpe
-mov $0,$3
-add $0,1
+mov $0,$5
+add $0,2
 mov $1,$0
 add $1,$0
 mul $1,2
@@ -50,9 +46,5 @@ add $1,$0
 mul $1,$0
 nrt $1,2
 add $1,$0
-mov $2,$1
-div $2,2
-add $2,1
-min $1,$2
 mov $0,$1
-add $0,1
+div $0,2

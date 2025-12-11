@@ -1,18 +1,16 @@
 ; A095574: a(n) = 91 written in base n.
-; Submitted by BlisteringSheep
+; Submitted by iBezanilla
 ; 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,1011011,10101,1123,331,231,160,133,111,91,83,77,70,67,61
 
 #offset 1
 
-mov $1,$0
+trn $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $0,0
-neq $1,0
-mul $1,48
-add $1,43
+mov $0,1
+add $1,91
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -23,3 +21,4 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
+sub $0,1

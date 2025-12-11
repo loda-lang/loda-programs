@@ -1,16 +1,18 @@
 ; A011971: Aitken's array: triangle of numbers {a(n,k), n >= 0, 0 <= k <= n} read by rows, defined by a(0,0)=1, a(n,0) = a(n-1,n-1), a(n,k) = a(n,k-1) + a(n-1,k-1).
-; Submitted by ChelseaOilman
+; Submitted by kpmonaghan
 ; 1,1,2,2,3,5,5,7,10,15,15,20,27,37,52,52,67,87,114,151,203,203,255,322,409,523,674,877,877,1080,1335,1657,2066,2589,3263,4140,4140,5017,6097,7432,9089,11155,13744,17007,21147,21147,25287,30304,36401,43833,52922,64077,77821,94828,115975,115975,137122,162409,192713,229114,272947,325869,389946,467767,562595,678570,678570,794545,931667,1094076,1286789,1515903,1788850,2114719,2504665,2972432,3535027,4213597,4213597,4892167
 ; Formula: a(n) = A123346((truncate((sqrtint(8*n+8)-1)/2)+1)^2-n-1)
 
-add $0,1
 mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
 add $1,1
-pow $1,2
-sub $1,$0
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+add $2,1
+pow $2,2
+sub $2,$1
+mov $1,$2
+seq $1,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
 mov $0,$1
-seq $0,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.

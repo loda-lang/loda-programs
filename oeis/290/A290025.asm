@@ -13,6 +13,7 @@ lpb $1
   mov $0,$5
   sub $0,$1
   mov $2,$0
+  mod $2,59
   add $2,1
   seq $2,34004 ; Successive decimal digits of triangular numbers.
   mov $3,2

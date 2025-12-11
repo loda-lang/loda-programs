@@ -1,5 +1,5 @@
 ; A135374: Mersenne numbers with digits sorted in increasing order and zeros suppressed.
-; Submitted by Simon Strandgaard
+; Submitted by Wood
 ; 1,3,7,15,13,36,127,255,115,123,247,459,1189,13368,23677,35556,11137,122346,224578,145578,112579,133449,367888,11256777,13334455,1366788,112234777,234455568,11356789,112334778,1234446778,2244567999
 
 #offset 1
@@ -7,15 +7,6 @@
 mov $1,2
 pow $1,$0
 sub $1,1
-mov $2,0
-mov $3,0
-mov $4,0
-mov $5,0
-mov $6,0
-mov $7,0
-mov $8,0
-mov $9,0
-mov $10,0
 mov $0,$1
 lpb $0
   mov $12,$0

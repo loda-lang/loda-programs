@@ -4,14 +4,17 @@
 
 #offset 1
 
-sub $0,2
-mov $2,$0
-mov $1,2
-lpb $1
-  div $1,-4
-  mov $0,$2
-  add $0,1
-  seq $0,75704 ; p and 12*p+1 are both primes.
+sub $0,1
+seq $0,75704 ; p and 12*p+1 are both primes.
+mul $0,2
+sub $0,1
+lpb $0
+  div $0,2
+  mov $1,$0
+  add $1,1
+  seq $1,34718 ; Dirichlet convolution of b_n=n with b_n with b_n.
+  mov $0,0
 lpe
-mul $0,12
+mov $0,$1
+mul $0,4
 add $0,1

@@ -1,4 +1,4 @@
-; A025726: Index of 7^n within sequence of numbers of form 7^i*9^j.
+; A025726: Index of 7^n within the sequence of the numbers of the form 7^i*9^j.
 ; Submitted by Simon Strandgaard
 ; 1,2,4,7,11,16,22,29,37,45,54,64,75,87,100,114,129,145,161,178,196,215,235,256,278,301,325,349,374,400,427,455,484,514,545,576,608,641,675,710,746,783,821,860,899,939,980,1022,1065,1109,1154,1200,1247,1294,1342
 

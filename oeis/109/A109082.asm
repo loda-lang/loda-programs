@@ -1,5 +1,5 @@
 ; A109082: Depth of rooted tree having Matula-Goebel number n.
-; Submitted by entity
+; Submitted by haroldew
 ; 0,1,2,1,3,2,2,1,2,3,4,2,3,2,3,1,3,2,2,3,2,4,3,2,3,3,2,2,4,3,5,1,4,3,3,2,3,2,3,3,4,2,3,4,3,3,4,2,2,3,3,3,2,2,4,2,2,4,4,3,3,5,2,1,3,4,3,3,3,3,4,2,3,3,3,2,4,3,5,3
 
 #offset 1
@@ -11,5 +11,7 @@ lpb $0
   sub $0,1
   add $1,2
 lpe
-mov $0,$1
+add $0,8
+add $0,$1
 div $0,2
+sub $0,4

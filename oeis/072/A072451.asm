@@ -1,10 +1,14 @@
 ; A072451: Number of odd terms in the reduced residue system of 2*n-1.
-; Submitted by Gibson Praise
+; Submitted by Science United
 ; 1,1,2,3,3,5,6,4,8,9,6,11,10,9,14,15,10,12,18,12,20,21,12,23,21,16,26,20,18,29,30,18,24,33,22,35,36,20,30,39,27,41,32,28,44,36,30,36,48,30,50,51,24,53,54,36,56,44,36,48,55,40,50,63,42,65,54,36,68,69,46,60,56,42,74,75,48,60,78,52
+; Formula: a(n) = truncate(A109606(2*n-1)/2)+1
 
 #offset 1
 
-mul $0,2
+mov $1,$0
+mul $1,2
+mov $0,$1
 sub $0,1
-seq $0,62570 ; a(n) = phi(2*n).
-dif $0,2
+seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+div $0,2
+add $0,1

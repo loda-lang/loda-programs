@@ -1,4 +1,4 @@
-; A025697: Index of 3^n within sequence of numbers of form 3^i*6^j.
+; A025697: Index of 3^n within the sequence of the numbers of the form 3^i*6^j.
 ; Submitted by William Michael Kanar
 ; 1,2,4,6,9,13,17,22,27,33,40,47,55,63,72,82,92,103,115,127,140,153,167,182,197,213,229,246,264,282,301,321,341,362,383,405,428,451,475,499,524,550,576,603,630,658,687,716,746,777,808,840,872,905,939,973,1008,1043
 

@@ -5,15 +5,14 @@
 #offset 1
 
 lpb $0
-  mov $2,$0
+  mul $2,2
   lpb $2
-    mul $2,2
-    div $2,9
-    mod $2,4
+    div $2,10
     mul $1,10
   lpe
   add $1,$0
   sub $0,1
+  add $2,$0
 lpe
 mov $0,$1
 mul $0,2

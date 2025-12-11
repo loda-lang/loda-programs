@@ -1,5 +1,5 @@
 ; A268689: Let f(n) = maximal value of the weak Goodstein function g_k(n) for k >= 0; then a(n) = minimal value of k such that g_k(n) = f(n).
-; Submitted by Mumps
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,0,4,14,94,510
 
 mov $3,1
@@ -15,9 +15,7 @@ lpb $1
   equ $4,2
   add $4,$2
 lpe
-mov $1,$5
-sub $1,2
-max $1,2
-mov $0,$1
+mov $0,$5
 sub $0,2
-div $0,2
+div $0,4
+mul $0,2

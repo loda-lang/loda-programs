@@ -1,4 +1,4 @@
-; A025736: Index of 9^n within sequence of numbers of form 6^i*9^j.
+; A025736: Index of 9^n within the sequence of the numbers of the form 6^i*9^j.
 ; Submitted by Gunnar Hjern
 ; 1,3,6,10,15,22,30,39,49,61,74,88,103,119,137,156,176,197,220,244,269,295,322,351,381,412,444,478,513,549,586,625,665,706,748,791,836,882,929,977,1027,1078,1130,1183,1237,1293,1350,1408,1467,1528,1590,1653,1717
 

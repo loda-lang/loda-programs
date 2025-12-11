@@ -1,8 +1,13 @@
 ; A055034: a(1) = 1, a(n) = phi(2*n)/2 for n > 1.
-; Submitted by Gibson Praise
+; Submitted by Science United
 ; 1,1,1,2,2,2,3,4,3,4,5,4,6,6,4,8,8,6,9,8,6,10,11,8,10,12,9,12,14,8,15,16,10,16,12,12,18,18,12,16,20,12,21,20,12,22,23,16,21,20,16,24,26,18,20,24,18,28,29,16,30,30,18,32,24,20,33,32,22,24,35,24,36,36,20,36,30,24,39,32
+; Formula: a(n) = truncate(A109606(2*n)/2)+1
 
 #offset 1
 
-seq $0,62570 ; a(n) = phi(2*n).
-dif $0,2
+mov $1,$0
+mul $1,2
+mov $0,$1
+seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+div $0,2
+add $0,1

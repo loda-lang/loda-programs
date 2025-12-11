@@ -1,20 +1,18 @@
 ; A033162: Begins with (3, 4); avoids 3-term arithmetic progressions.
-; Submitted by Zaibas McCann
+; Submitted by [SG]KidDoesCrunch
 ; 3,4,6,7,12,13,15,16,30,31,33,34,39,40,42,43,84,85,87,88,93,94,96,97,111,112,114,115,120,121,123,124,246,247,249,250,255,256,258,259,273,274,276,277,282,283,285,286,327,328,330,331,336,337,339,340,354,355,357,358,363
-; Formula: a(n) = floor(c(n)/2)+3, b(n) = b(n-1)+gcd(b(n-1)+1,3^(n-1))+1, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = b(n-1), c(2) = 2, c(1) = 0, c(0) = 0
 
 #offset 1
 
+sub $0,1
 mov $1,1
+mov $3,$0
 lpb $0
-  sub $0,1
-  mov $4,$2
-  add $2,1
-  mov $3,$2
-  gcd $3,$1
+  div $0,2
+  mov $2,$0
+  mul $2,$1
+  add $3,$2
   mul $1,3
-  add $2,$3
 lpe
-mov $0,$4
-div $0,2
+mov $0,$3
 add $0,3

@@ -1,5 +1,5 @@
 ; A039287: Numbers whose base-5 representation has the same nonzero number of 1's and 2's.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 7,11,27,35,38,39,42,47,51,55,58,59,66,71,82,86,107,111,127,135,138,139,142,147,162,175,178,179,182,186,190,193,194,195,198,199,202,210,213,214,217,222,227,235,238,239,242,247,251,255,258,259,266,271,275
 
 #offset 1
@@ -22,8 +22,7 @@ lpb $2
   lpe
   mov $3,$4
   pow $3,2
-  sub $3,2
-  equ $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

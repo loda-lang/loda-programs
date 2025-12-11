@@ -1,5 +1,5 @@
 ; A045212: Numbers whose base-5 representation contains exactly two 0's and two 4's.
-; Submitted by ChelseaOilman
+; Submitted by Goldislops
 ; 504,520,600,649,729,745,1129,1145,1225,1274,1354,1370,1754,1770,1850,1899,1979,1995,2379,2395,2475,2509,2514,2519,2521,2522,2523,2529,2545,2554,2570,2579,2595,2601,2602,2603,2605,2610
 
 #offset 1
@@ -14,8 +14,7 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    add $5,3
-    mul $5,8
+    mul $5,2
     mod $5,10
     sub $5,1
     trn $5,4

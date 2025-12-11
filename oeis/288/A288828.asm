@@ -1,13 +1,12 @@
 ; A288828: Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 515", based on the 5-celled von Neumann neighborhood.
-; Submitted by BrandyNOW
+; Submitted by skildude
 ; 1,3,5,11,27,55,119,239,495,991,2015,4031,8127,16255,32639,65279,130815,261631,523775,1047551,2096127,4192255,8386559,16773119,33550335,67100671,134209535,268419071,536854527,1073709055,2147450879,4294901759,8589869055,17179738111,34359607295,68719214591,137438691327,274877382655,549755289599,1099510579199,2199022206975,4398044413951,8796090925055,17592181850111,35184367894527,70368735789055,140737479966719,281474959933439,562949936644095,1125899873288191,2251799780130815,4503599560261631
-; Formula: a(n) = 2*2^(n+1)+2*truncate(0^(-floor((n+2)/3)+floor((n+2)/2)))-2*2^n-2*truncate(2^(floor((n+1)/2)-1))-1
+; Formula: a(n) = 2*floor((2^(n+1))/2)+2*truncate(0^(-floor((n+2)/3)+floor((n+2)/2)))-2*truncate(2^(floor((n+1)/2)-1))-1
 
 add $0,1
 mov $1,2
 pow $1,$0
-mov $3,$0
-sub $3,1
+div $1,2
 mov $4,$0
 add $4,1
 mov $6,$4
@@ -18,13 +17,10 @@ pow $5,$4
 mov $2,$0
 div $2,2
 sub $2,1
-mov $7,2
-pow $7,$2
-mov $8,2
-pow $8,$3
+mov $3,2
+pow $3,$2
 mov $0,$1
-sub $0,$7
-sub $0,$8
+sub $0,$3
 add $0,$5
 mul $0,2
 sub $0,1

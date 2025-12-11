@@ -4,17 +4,25 @@
 
 #offset 1
 
-sub $0,1
-mov $3,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  max $1,$0
-  add $1,1
-  seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
-  add $4,$1
+mov $30,$0
+mov $32,$0
+lpb $32
+  sub $32,1
+  mov $0,$30
+  sub $0,$32
+  sub $0,1
+  mov $27,$0
+  add $29,1
+  lpb $29
+    clr $0,27
+    mov $0,$27
+    seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+    add $2,11
+    div $2,$0
+    sub $29,1
+  lpe
+  mov $0,$2
+  div $0,6
+  add $31,$0
 lpe
-mov $0,$4
+mov $0,$31

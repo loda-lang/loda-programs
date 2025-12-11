@@ -22,10 +22,9 @@ lpb $3
   nrt $6,2
   add $6,$4
   div $6,2
-  mov $4,$6
-  add $4,2
   mov $2,$3
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
   add $1,$2
 lpe
 sub $1,$4

@@ -1,15 +1,11 @@
 ; A115389: Denominator of rational part of raw moment n of the line point picking problem.
-; Submitted by Jamie Morken(w4)
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,3,6,5,30,105,140,126,1260,1155,13860,12870,12012,9009,72072,68068,1225224,5819814,5542680,5290740,116396280,111546435,535422888,514829700,1487285800,1434168450,5736673800,5545451340,166363540200,644658718275,312561802800
 
 #offset 1
 
 mov $2,$0
 mov $3,1
-sub $0,1
-div $0,2
-mul $0,2
-add $0,1
 lpb $0
   sub $0,1
   add $4,1

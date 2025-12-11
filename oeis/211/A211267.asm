@@ -13,10 +13,10 @@ lpb $0
   add $0,$4
   div $0,$3
   sub $0,$3
-  sub $1,1
   add $1,$0
   mov $4,$2
 lpe
+geq $3,$0
 add $3,$2
 add $3,$1
 mov $0,$3

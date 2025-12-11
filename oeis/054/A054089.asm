@@ -1,12 +1,11 @@
 ; A054089: For k >= 1, let p(k) = least h in N not already an a(i), q(k) = p(k)+k, a(2k) = q(k), a(2k+1) = p(k).
-; Submitted by Jamie Morken(s4)
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,2,6,4,8,5,11,7,14,9,16,10,19,12,21,13,24,15,27,17,29,18,32,20,35,22,37,23,40,25,42,26,45,28,48,30,50,31,53,33,55,34,58,36,61,38,63,39,66,41,69,43,71,44,74,46,76,47,79,49,82,51
 
 #offset 1
 
-sub $0,1
+sub $0,2
 mov $2,$0
-sub $0,1
 div $0,2
 mov $1,$0
 add $1,1
@@ -15,6 +14,6 @@ sub $1,1
 mul $0,2
 sub $0,$1
 div $0,3
-add $2,2
+add $2,3
 dif $2,2
 add $0,$2

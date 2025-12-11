@@ -1,13 +1,12 @@
 ; A125583: Number of letters in the n-th prime number (in French).
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by GPV67
 ; 4,5,4,4,4,6,7,7,10,9,10,10
 
 #offset 1
 
+mov $1,$0
 sub $0,1
 mov $2,$0
-mov $1,$0
-add $1,1
 lpb $1
   add $2,$0
   sub $2,3

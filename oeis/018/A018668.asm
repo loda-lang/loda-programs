@@ -1,11 +1,11 @@
 ; A018668: Divisors of 826.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,7,14,59,118,413,826
 
 #offset 1
 
 mov $1,1
-mov $2,3
+mov $2,1
 sub $0,1
 lpb $0
   add $1,1
@@ -23,4 +23,3 @@ lpb $0
   bin $4,2
 lpe
 mov $0,$2
-div $0,3

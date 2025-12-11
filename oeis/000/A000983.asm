@@ -1,12 +1,11 @@
 ; A000983: Size of minimal binary covering code of length n and covering radius 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,2,4,7,12,16,32,62
 
 #offset 1
 
 mov $2,1
 mov $5,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $4,$6
@@ -19,5 +18,5 @@ lpb $0
   mov $2,$5
   add $5,$4
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

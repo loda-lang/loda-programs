@@ -7,21 +7,19 @@
 
 mov $1,4
 pow $1,$0
-mov $4,$0
-add $4,1
 mov $2,3
 pow $2,$0
-mul $2,$4
 mov $3,2
 pow $3,$0
-mul $3,$4
+add $0,1
+mul $2,$0
+mov $4,$0
+fac $0,-2
 mul $3,$0
 div $3,2
-mul $4,$0
-sub $0,1
-mul $4,$0
+fac $4,-3
 div $4,6
 sub $1,$2
-add $1,$3
 sub $1,$4
+add $1,$3
 mov $0,$1

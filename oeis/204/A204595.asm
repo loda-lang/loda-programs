@@ -10,7 +10,7 @@ mov $2,1
 add $2,$0
 lpb $0
   dif $0,7
-  dif $0,2
+  dir $0,2
   mov $2,$1
   dif $2,4
 lpe

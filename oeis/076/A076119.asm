@@ -1,5 +1,5 @@
 ; A076119: Every second sector of a dartboard, starting at the top (20) and working around clockwise.
-; Submitted by loader3229
+; Submitted by Just Jake
 ; 20,18,13,10,2,3,7,8,14,12,20,18,13,10,2,3,7,8,14,12,20,18,13,10,2,3,7,8,14,12,20,18,13,10,2,3,7,8,14,12,20,18,13,10,2,3,7,8,14,12,20,18,13,10,2,3,7,8,14,12,20,18,13,10,2,3,7,8,14,12,20,18,13,10,2
 
 #offset 1
@@ -14,9 +14,8 @@ mov $8,7
 mov $9,8
 mov $10,14
 mov $11,12
-sub $0,1
 lpb $0
   rol $2,10
   sub $0,1
 lpe
-mov $0,$2
+mov $0,$11

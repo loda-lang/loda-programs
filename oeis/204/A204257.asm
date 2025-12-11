@@ -1,19 +1,16 @@
 ; A204257: Matrix given by f(i,j)=1+[(i+2j) mod 3], by antidiagonals.
 ; Submitted by Science United
 ; 1,3,2,2,1,3,1,3,2,1,3,2,1,3,2,2,1,3,2,1,3,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,2,1,3,2,1,3,2,1,3,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,1,3,2,2,1,3,2,1,3,2,1,3,2,1,3,1,3
-; Formula: a(n) = 2*n-2*binomial(truncate((sqrtint(8*n)-1)/2),2)-3*truncate((2*n-2*binomial(truncate((sqrtint(8*n)-1)/2),2)-2)/3)-1
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-bin $2,2
-sub $0,$2
 sub $0,1
 mul $0,2
-mod $0,3
+lpb $0
+  mov $1,$0
+  mod $1,3
+  add $2,2
+  sub $0,$2
+lpe
+mov $0,$1
 add $0,1

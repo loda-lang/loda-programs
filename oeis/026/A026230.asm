@@ -1,27 +1,26 @@
 ; A026230: a(n) = (1/3)*s(n+1), where s = A026229.
-; Submitted by Gunnar Hjern
+; Submitted by [SG]KidDoesCrunch
 ; 2,4,6,7,10,12,13,16,18,19,21,22,25,28,30,31,34,36,37,39,40,43,46,48,49,52,54,55,57,58,61,63,64,66,67,70,73,75,76,79,82,84,85,88,90,91,93,94,97,100,102,103,106,108,109,111,112,115,117
-; Formula: a(n) = truncate((e(n)-1)/2)+2, b(n) = 2*c(n-1)+truncate(b(n-1)/2), b(3) = 73, b(2) = 18, b(1) = 4, b(0) = 0, c(n) = 2*gcd(d(n-1)*b(n-1)-c(n-1)+truncate(b(n-1)/2),4)*c(n-1), c(3) = 64, c(2) = 32, c(1) = 8, c(0) = 2, d(n) = truncate(gcd(d(n-1)*b(n-1)-c(n-1)+truncate(b(n-1)/2),4)/2), d(3) = 0, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = 2*d(n-1)+e(n-1)+2, e(3) = 10, e(2) = 6, e(1) = 2, e(0) = 0
+; Formula: a(n) = floor(b(n)/2)+1, b(n) = 2*e(n-1)+b(n-1)+2, b(3) = 10, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = 2*d(n-1)+truncate(c(n-1)/2), c(3) = 73, c(2) = 18, c(1) = 4, c(0) = 0, d(n) = 2*gcd(e(n-1)*c(n-1)-d(n-1)+truncate(c(n-1)/2),4)*d(n-1), d(3) = 64, d(2) = 32, d(1) = 8, d(0) = 2, e(n) = floor(gcd(e(n-1)*c(n-1)-d(n-1)+truncate(c(n-1)/2),4)/2), e(3) = 0, e(2) = 1, e(1) = 1, e(0) = 0
 
 #offset 1
 
-mov $2,2
+mov $3,2
 lpb $0
   sub $0,1
-  add $4,$3
-  add $4,2
-  add $4,$3
-  mul $3,$1
-  div $1,2
-  sub $3,$2
-  add $3,$1
-  gcd $3,4
-  mul $2,2
-  add $1,$2
-  mul $2,$3
-  div $3,2
+  add $1,$4
+  add $1,2
+  add $1,$4
+  mul $4,$2
+  div $2,2
+  sub $4,$3
+  add $4,$2
+  gcd $4,4
+  mul $3,2
+  add $2,$3
+  mul $3,$4
+  div $4,2
 lpe
-mov $0,$4
-sub $0,1
+mov $0,$1
 div $0,2
-add $0,2
+add $0,1

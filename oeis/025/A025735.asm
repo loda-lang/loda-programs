@@ -1,7 +1,7 @@
-; A025735: Index of 9^n within sequence of numbers of form 5^i*9^j.
+; A025735: Index of 9^n within the sequence of the numbers of the form 5^i*9^j.
 ; Submitted by BrandyNOW
 ; 1,3,6,11,17,24,33,43,54,67,81,97,114,132,152,173,195,219,244,270,298,327,358,390,423,458,494,531,570,610,651,694,738,784,831,879,929,980,1032,1086,1141,1197,1255,1314,1375,1437,1500,1565,1631,1698,1767,1837
-; Formula: a(n) = binomial(n,2)+truncate((n*(2*n+4)-2)/11)+1
+; Formula: a(n) = binomial(n,2)+floor((n*(2*n+4)-2)/11)+1
 
 #offset 1
 

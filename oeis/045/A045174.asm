@@ -1,5 +1,5 @@
 ; A045174: Numbers whose base-5 representation contains no 0's and exactly two 2's.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 12,37,57,61,63,64,67,72,87,112,162,182,186,188,189,192,197,212,237,282,286,288,289,292,297,306,308,309,316,318,319,321,323,324,332,336,338,339,342,347,357,361,363,364,367,372,412,432
 
 #offset 1
@@ -24,8 +24,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

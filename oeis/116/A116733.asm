@@ -1,17 +1,16 @@
 ; A116733: Number of permutations of length n which avoid the patterns 321, 1324, 2341.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,2,5,12,24,41,63,90,122,159,201,248,300,357,419,486,558,635,717,804,896,993,1095,1202,1314,1431,1553,1680,1812,1949,2091,2238,2390,2547,2709,2876,3048,3225,3407,3594,3786,3983,4185,4392,4604,4821,5043,5270
 
 #offset 1
 
 sub $0,1
-sub $1,$0
-mov $2,55
+sub $2,$0
 lpb $0
   sub $0,1
-  sub $2,$1
-  sub $1,$3
+  sub $1,$2
+  sub $2,$3
   gcd $3,$0
 lpe
-mov $0,$2
-sub $0,54
+mov $0,$1
+add $0,1

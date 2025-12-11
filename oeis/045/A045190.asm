@@ -1,13 +1,11 @@
 ; A045190: Numbers whose base-5 representation contains no 0's and exactly three 3's.
-; Submitted by Landjunge
+; Submitted by [SG]KidDoesCrunch
 ; 93,218,343,418,443,458,463,466,467,469,473,493,593,843,968,1043,1068,1083,1088,1091,1092,1094,1098,1118,1218,1468,1593,1668,1693,1708,1713,1716,1717,1719,1723,1743,1843,2043,2068,2083
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   mov $4,-6
@@ -23,8 +21,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,2
-  equ $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,11 +1,9 @@
 ; A095453: a(n) = 30 written in base 15 - n.
-; Submitted by Irish Republican
+; Submitted by [AF>Linux]Rogue 9
 ; 20,22,24,26,28,30,33,36,42,50,110,132,1010,11110,111111111111111111111111111111
 
-mov $2,10
+mov $2,15
 sub $2,$0
-add $2,5
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

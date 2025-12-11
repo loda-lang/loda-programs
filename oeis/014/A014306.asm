@@ -1,10 +1,11 @@
 ; A014306: a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
-; Submitted by shiva
+; Submitted by BrandyNOW
 ; 0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = binomial(sqrtnint(6*n,3)+2,3)!=n
 
-lpb $0
-  add $1,1
-  add $2,$1
-  sub $0,$2
-lpe
-min $0,1
+mov $1,$0
+mul $0,6
+nrt $0,3
+add $0,2
+bin $0,3
+neq $0,$1

@@ -1,5 +1,5 @@
 ; A049004: First letter of English names for months of year, mapping A -> 1, B -> 2 etc.
-; Submitted by Goldislops
+; Submitted by [SG]KidDoesCrunch
 ; 10,6,13,1,13,10,10,1,19,15,14,4,10,6,13,1,13,10,10,1,19,15,14,4,10,6,13,1,13,10,10,1,19,15,14,4,10,6,13,1,13,10,10,1,19,15,14,4,10,6,13,1,13,10,10,1,19,15,14,4,10,6,13,1,13,10,10,1,19,15,14,4,10,6,13,1,13,10
 
 #offset 1
@@ -16,9 +16,8 @@ mov $10,19
 mov $11,15
 mov $12,14
 mov $13,4
-sub $0,1
 lpb $0
   rol $2,12
   sub $0,1
 lpe
-mov $0,$2
+mov $0,$13

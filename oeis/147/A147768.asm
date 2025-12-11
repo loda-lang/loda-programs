@@ -1,10 +1,9 @@
 ; A147768: Triangle read by rows: A000012^(-2) * A027293 as infinite lower triangular matrices.
-; Submitted by loader3229
+; Submitted by JagDoc
 ; 1,-1,1,1,-1,1,0,1,-1,1,1,0,1,-1,1,0,1,0,1,-1,1,2,0,1,0,1,-1,1,0,2,0,1,0,1,-1,1,3,0,2,0,1,0,1,-1,1,1,3,0,2,0,1,0,1,-1,1,4,1,3,0,2,0,1,0,1,-1,1,2,4,1,3,0,2,0,1,0,1,-1,1
 
 mov $3,3
-mov $4,3
-mov $5,3
+fil $3,3
 add $0,1
 mov $2,$0
 mul $2,8

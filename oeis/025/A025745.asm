@@ -1,7 +1,7 @@
-; A025745: Index of 10^n within sequence of numbers of form 7^i*10^j.
+; A025745: Index of 10^n within the sequence of the numbers of the form 7^i*10^j.
 ; Submitted by BrandyNOW
 ; 1,3,6,10,15,21,29,38,48,59,71,85,100,116,133,151,170,191,213,236,260,285,312,340,369,399,430,462,496,531,567,604,642,682,723,765,808,852,897,944,992,1041,1091,1142,1195,1249,1304,1360,1417,1475,1535,1596,1658
-; Formula: a(n) = binomial(n,2)+truncate((n*(n+5)-2)/11)+1
+; Formula: a(n) = binomial(n,2)+floor((n*(n+5)-2)/11)+1
 
 #offset 1
 

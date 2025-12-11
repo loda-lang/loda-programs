@@ -1,21 +1,21 @@
 ; A287805: Number of quinary sequences of length n such that no two consecutive terms have distance 2.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,5,19,73,281,1083,4175,16097,62065,239307,922711,3557761,13717913,52893147,203943935,786361409,3032030689,11690820555,45077144455,173807214241,670161078089,2583988659867,9963272432111,38416111919777,148123788152017,571131629935179
+; Formula: a(n) = 3*a(n-1)+2*c(n-1)-d(n-1)+b(n-1), a(3) = 73, a(2) = 19, a(1) = 5, a(0) = 1, b(n) = 2*b(n-1)+2*c(n-1), b(3) = 32, b(2) = 8, b(1) = 2, b(0) = 0, c(n) = 2*a(n-1)-d(n-1), c(3) = 30, c(2) = 8, c(1) = 2, c(0) = 1, d(n) = 2*a(n-1)-d(n-1), d(3) = 30, d(2) = 8, d(1) = 2, d(0) = 0
 
-mov $1,1
-mov $2,5
-mov $3,19
-mov $4,73
+mov $2,1
+mov $4,1
 lpb $0
-  mul $1,0
-  rol $1,4
-  mov $5,$1
-  mul $5,-6
-  add $4,$5
-  add $4,$2
-  mov $5,$3
-  mul $5,4
   sub $0,1
-  add $4,$5
+  add $1,$2
+  add $2,$4
+  add $2,$1
+  mul $4,2
+  sub $4,$3
+  mul $1,2
+  mov $3,$4
+  mov $4,$2
+  add $4,$3
+  mov $2,$3
 lpe
-mov $0,$1
+mov $0,$4

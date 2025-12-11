@@ -1,13 +1,11 @@
 ; A045272: Numbers whose base-5 representation contains exactly two 2's and two 3's.
-; Submitted by damotbe
+; Submitted by skildude
 ; 318,338,342,438,442,462,943,963,967,1063,1067,1087,1318,1338,1342,1443,1463,1467,1518,1543,1578,1583,1590,1591,1594,1598,1618,1638,1642,1663,1667,1678,1683,1690,1691,1694,1698,1702
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   mov $4,-6

@@ -1,16 +1,14 @@
 ; A254132: a(0)=1 and a(1)=2, then each term is x + y + x*y where x and y are the 2 last terms.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,5,17,107,1943,209951,408146687,85691213438975,34974584955819144511487,2997014624388697307377363936018956287,104819342594514896999066634490728502944926883876041385836543
-; Formula: a(n) = d(n)-1, b(n) = c(n-2)*b(n-2), b(2) = 3, b(1) = 2, b(0) = 1, c(n) = c(n-1)*b(n-1), c(2) = 6, c(1) = 3, c(0) = 3, d(n) = c(n-1)*b(n-1), d(2) = 6, d(1) = 3, d(0) = 2
+; Formula: a(n) = b(n)-1, b(n) = b(n-2)*b(n-1), b(2) = 6, b(1) = 3, b(0) = 2
 
-mov $1,1
+mov $1,2
 mov $2,3
-mov $3,2
 lpb $0
   sub $0,1
+  ror $1,2
   mul $2,$1
-  mov $1,$3
-  mov $3,$2
 lpe
-mov $0,$3
+mov $0,$1
 sub $0,1

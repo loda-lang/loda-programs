@@ -1,23 +1,22 @@
 ; A094958: Numbers of the form 2^k or 5*2^k.
-; Submitted by Science United
+; Submitted by Jonatan Natonik
 ; 1,2,4,5,8,10,16,20,32,40,64,80,128,160,256,320,512,640,1024,1280,2048,2560,4096,5120,8192,10240,16384,20480,32768,40960,65536,81920,131072,163840,262144,327680,524288,655360,1048576,1310720,2097152
-; Formula: a(n) = truncate((((n-1)%2+4)*2^floor((n-1)/2)+min(n-1,1)+1)/2)-1
+; Formula: a(n) = floor((((n-1)%2+4)*2^floor((n-1)/2)+min(n-1,2))/2)-1
 
 #offset 1
 
 sub $0,1
 mov $1,$0
 div $1,2
-mov $3,$0
 mov $4,$0
-min $4,1
-mov $0,$4
-add $0,1
+min $4,2
+mov $3,$0
 mod $3,2
 add $3,4
 mov $2,2
 pow $2,$1
 mul $2,$3
+mov $0,$4
 add $0,$2
 div $0,2
 sub $0,1

@@ -14,6 +14,7 @@ lpb $2
   mov $3,$1
   seq $3,40 ; The prime numbers.
   mov $5,$3
+  add $5,2
   seq $3,1177 ; Fibonacci entry points: a(n) = least k >= 1 such that n divides Fibonacci number F_k (=A000045(k)).
   gcd $3,4
   div $3,2
@@ -26,3 +27,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
+sub $0,2

@@ -1,18 +1,18 @@
 ; A245357: Number of numbers whose base 5/4 expansion (see A024634) has n digits.
+; Submitted by [SG]KidDoesCrunch
 ; 5,5,5,5,5,10,10,15,15,20,25,30,40,50,60,75,95,120,150,185,235,290,365,455,570,710,890,1110,1390,1735,2170,2715,3390,4240,5300,6625,8280,10350,12940,16175,20215,25270,31590,39485,49355,61695,77120,96400,120500
-; Formula: a(n) = 5*max(truncate(b(n-1)/5)-1,0)+5, b(n) = truncate((5*b(n-1))/4), b(0) = 4
+; Formula: a(n) = 5*b(n-1)+5, b(n) = floor((b(n-1)+c(n-1))/4), b(1) = 0, b(0) = 0, c(n) = b(n-1)+c(n-1)+1, c(1) = 1, c(0) = 0
 
 #offset 1
 
-mov $1,4
 sub $0,1
 lpb $0
   sub $0,1
-  mul $1,5
+  add $1,$2
+  mov $2,$1
+  add $2,1
   div $1,4
 lpe
 mov $0,$1
-div $0,5
-trn $0,1
 add $0,1
 mul $0,5

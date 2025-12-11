@@ -24,6 +24,5 @@ lpb $2
   sub $2,$3
   sub $2,$0
 lpe
-mov $0,$4
-mul $0,2
+mov $0,$1
 sub $0,1

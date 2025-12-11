@@ -1,4 +1,4 @@
-; A044950: Runs of odd length in the base 10 representation of n.
+; A044950: Number of runs of odd length in the base 10 representation of n.
 ; 1,1,1,1,1,1,1,1,1,2,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2
 
 #offset 1
