@@ -1,5 +1,5 @@
 ; A332587: a(n) = least m such that there is a component of a certain pawn game based on a word of length m that is equivalent to a Nim-heap of size n.
-; Submitted by biodoc
+; Submitted by [SG]KidDoesCrunch
 ; 1,4,6,9,11,14,16,20,22,25,27,30,32,37,39,43
 
 #offset 1
@@ -12,13 +12,12 @@ lpb $0
   mov $2,$4
   div $2,$1
   mov $3,$4
-  mul $3,2
   gcd $3,$1
   equ $3,1
   mul $3,$2
   add $3,2
-  add $1,1
   add $5,$3
+  add $1,2
 lpe
 mov $0,$5
 sub $0,1

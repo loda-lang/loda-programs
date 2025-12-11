@@ -18,11 +18,10 @@ lpb $0
   sub $4,$3
   bin $4,$0
   mul $4,$5
-  mul $4,2
   mul $3,$4
   mul $1,-1
   add $1,$3
 lpe
 add $1,$4
 mov $0,$1
-div $0,4
+div $0,2

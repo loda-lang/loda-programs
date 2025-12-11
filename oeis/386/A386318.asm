@@ -6,7 +6,6 @@ mov $2,1
 mov $10,1
 lpb $0
   sub $0,1
-  mov $5,0
   mov $4,$2
   lpb $4
     trn $4,1
@@ -16,6 +15,7 @@ lpb $0
     add $7,1
     seq $7,262767 ; Minimum perimeter of a rectangle with area n and integer sides.
     mul $7,$$9
+    add $4,$0
     add $5,1
     add $5,$7
   lpe

@@ -4,29 +4,41 @@
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,5
-pow $2,3
-lpb $2
-  mov $3,$6
-  div $3,3
-  mov $8,$3
-  seq $8,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
-  mov $3,$8
-  mul $7,2
-  add $7,$8
-  mod $7,2
-  sub $0,$7
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,1
-  add $5,$1
-  equ $1,$7
-  mov $6,$5
+mov $13,$0
+mov $15,$0
+add $15,1
+lpb $15
+  clr $0,13
+  sub $15,1
+  mov $0,$13
+  sub $0,$15
+  mov $9,$0
+  mov $11,2
+  lpb $11
+    sub $11,1
+    mov $0,$9
+    add $0,$11
+    add $0,2
+    mov $4,$0
+    div $4,3
+    mov $6,$4
+    mul $6,5
+    mul $6,$4
+    nrt $6,2
+    add $6,$4
+    div $6,2
+    mov $12,$11
+    mul $12,$6
+    mov $0,$6
+    add $10,$12
+  lpe
+  min $9,1
+  mul $9,$0
+  mov $0,$10
+  sub $0,$9
+  mul $0,3
+  add $0,1
+  add $14,$0
 lpe
-mov $0,$5
-add $0,1
+mov $0,$14

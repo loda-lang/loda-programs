@@ -10,6 +10,4 @@ seq $1,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also
 mov $2,$0
 seq $2,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
 mul $1,$2
-sub $0,1
-mov $0,$2
 mov $0,$1

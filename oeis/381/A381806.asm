@@ -12,10 +12,9 @@ mov $4,$1
 add $4,3
 pow $4,2
 lpb $4
-  mov $7,$3
+  max $7,$3
   add $7,1
-  seq $7,51903 ; Maximum exponent in the prime factorization of n.
-  add $7,1
+  seq $7,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   mov $5,$3
   add $5,1
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
@@ -34,4 +33,3 @@ lpe
 mov $2,$3
 add $2,1
 mov $0,$2
-mov $1,$2
