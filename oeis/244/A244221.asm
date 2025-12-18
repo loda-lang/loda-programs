@@ -1,5 +1,5 @@
 ; A244221: Parity of Greedy Catalan Base representation for n: a(n) = A014418(n) reduced modulo 2.
-; Submitted by WeirdBird
+; Submitted by vaughan
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0
 
 mov $29,9
@@ -8,10 +8,9 @@ mov $35,39
 mov $37,53
 mov $38,55
 mov $39,63
-mov $1,$0
-pow $1,2
-lpb $1
-  sub $1,1
+pow $0,2
+lpb $0
+  sub $0,1
   sub $41,1
   mov $42,$27
   add $42,$28
@@ -36,9 +35,7 @@ lpb $1
   rol $38,4
   mov $41,$42
 lpe
-mov $1,$41
-add $1,1
-mod $1,2
-mov $26,$1
-equ $26,0
-mov $0,$26
+mov $0,$41
+mod $0,2
+add $0,2
+mod $0,2

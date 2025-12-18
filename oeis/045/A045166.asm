@@ -1,5 +1,5 @@
 ; A045166: Numbers whose base-5 representation contains exactly two 0's and one 1.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by rajab
 ; 25,127,128,129,135,140,145,175,200,225,251,255,275,376,380,400,501,505,525,637,638,639,642,643,644,647,648,649,677,678,679,685,690,695,702,703,704,710,715,720,727,728,729,735,740,745,877,878,879,885,890,895
 
 #offset 1
@@ -24,8 +24,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

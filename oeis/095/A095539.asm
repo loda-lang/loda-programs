@@ -1,11 +1,9 @@
 ; A095539: a(n) = 73 written in base 14 - n.
-; Submitted by Mads Nissen
+; Submitted by [SG]KidDoesCrunch
 ; 53,58,61,67,73,81,111,133,201,243,1021,2201,1001001,1111111111111111111111111111111111111111111111111111111111111111111111111
 
-mov $2,10
+mov $2,14
 sub $2,$0
-add $2,4
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

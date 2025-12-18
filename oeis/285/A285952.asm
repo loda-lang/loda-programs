@@ -1,17 +1,17 @@
 ; A285952: {0->1, 1->10}-transform of the Thue-Morse word A010060.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,1,0,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,0
 
 #offset 1
 
 sub $0,1
-mul $0,2
 mov $1,$0
-lpb $1
-  div $1,3
-  mov $0,$1
-  dgs $0,2
-  mul $1,3
+lpb $0
+  mod $0,3
 lpe
+mul $1,$0
+div $1,3
+dgs $1,2
+mov $0,$1
 add $0,1
 mod $0,2

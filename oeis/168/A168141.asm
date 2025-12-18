@@ -1,5 +1,5 @@
 ; A168141: a(n) = pi(n + 1) - pi(n - 2), where pi is the prime counting function.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,2,2,1,2,1,1,0,1,1,2,1,1,0,1,1,2,1,1,0,1,1,1,0,0,0,1,1,2,1,1,0,0,0,1,1,1,0,1,1,2,1,1,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,2,1,1,0,0,0,1,1,1,0,1,1,2,1,1,0,0,0,1,1,1
 
 #offset 1
@@ -14,6 +14,7 @@ lpb $0
   add $2,2
   seq $2,46666 ; a(n) = n - (smallest prime dividing n).
   equ $2,0
+  add $4,$1
   div $4,2
   add $1,$2
   add $3,$4

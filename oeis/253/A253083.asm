@@ -1,13 +1,16 @@
 ; A253083: Partial sums of A227349.
-; Submitted by William Michael Kanar
+; Submitted by amazing
 ; 1,2,3,5,6,7,9,12,13,14,15,17,19,21,24,28,29,30,31,33,34,35,37,40,42,44,46,50,53,56,60,65,66,67,68,70,71,72,74,77,78,79,80,82,84,86,89,93,95,97,99,103,105,107,111,117,120,123,126,132,136,140,145,151,152,153,154,156,157,158,160,163,164,165,166,168,170,172,175,179
-; Formula: a(n) = a(n-1)+A227349(n), a(0) = 1
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,227349 ; Product of lengths of runs of 1-bits in binary representation of n.
-  sub $0,1
-  add $1,$2
+mov $2,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$2
+  sub $0,$1
+  dir $0,2
+  seq $0,227349 ; Product of lengths of runs of 1-bits in binary representation of n.
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

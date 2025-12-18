@@ -1,5 +1,5 @@
 ; A025544: a(n) = sum of the exponents in the prime factorization of the least common multiple of the first n composite numbers.
-; Submitted by Landjunge
+; Submitted by Science United
 ; 2,3,4,5,6,6,7,7,8,8,8,8,9,9,10,11,12,12,12,13,13,14,14,14,15,15,15,15,15,15,16,16,17,17,17,17,17,17,17,17,18,18,19,19,20,20,20,20,20,20,20,21,21,21,21,21,21,22,23,23,23,24,24,24,24,24,24,24,25,25,25,25,25,25
 ; Formula: a(n) = A001222(A309383(n)-1)
 

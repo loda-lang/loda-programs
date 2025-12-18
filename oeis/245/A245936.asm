@@ -4,10 +4,9 @@
 
 #offset 1
 
+mov $4,2
 mov $2,96
 sub $2,$0
-mov $3,10
-mov $4,2
 lpb $2
   sub $2,1
   div $1,2

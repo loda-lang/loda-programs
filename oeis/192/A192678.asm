@@ -1,9 +1,8 @@
-; A192678:  Floor-Sqrt transform of idempotent endomap numbers (A000248).
-; Submitted by Science United
+; A192678: Floor-Sqrt transform of idempotent endomap numbers (A000248).
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,3,6,14,32,79,203,541,1495,4267,12543,37902,117519,373236,1212418,4023007,13619993,46998318,165144243,590411905,2145978422,7924484313,29710783080,113031311232,436102652463,1705552475812,6758097531570,27119230158894
 
 mov $1,$0
-sub $0,1
 lpb $0
   mov $4,$1
   sub $4,$0
@@ -16,6 +15,6 @@ lpb $0
 lpe
 mov $0,$5
 add $0,1
-add $3,$0
+mov $3,$0
 nrt $3,2
 mov $0,$3

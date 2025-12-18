@@ -1,37 +1,23 @@
 ; A373933: Number of compositions of 7*n-1 into parts 6 and 7.
-; Submitted by loader3229
+; Submitted by James Adrian
 ; 1,2,3,4,5,6,8,17,54,175,506,1299,3017,6465,13021,25142,47651,91104,180254,374077,810381,1800140,4019204,8888489,19322901,41223071,86520282,179574728,370946309,767426451,1597653852,3354537225,7101005320,15118658953
 
 #offset 1
 
-mov $1,1
-mov $2,2
-mov $3,3
-mov $4,4
-mov $5,5
-mov $6,6
-mov $7,8
-sub $0,1
+mov $1,2
 lpb $0
-  rol $1,7
-  mov $8,$1
-  mul $8,-6
-  add $7,$8
-  mov $8,$2
-  mul $8,21
-  add $7,$8
-  mov $8,$3
-  mul $8,-35
-  add $7,$8
-  mov $8,$4
-  mul $8,35
-  add $7,$8
-  mov $8,$5
-  mul $8,-21
-  add $7,$8
-  mov $8,$6
-  mul $8,7
   sub $0,1
-  add $7,$8
+  pow $4,2
+  add $1,$4
+  equ $2,1
+  sub $2,$1
+  bin $2,$0
+  sub $4,1
+  trn $0,2
+  add $1,3
+  mov $3,$4
+  mul $3,$2
+  gcd $3,0
+  add $5,$3
 lpe
-mov $0,$1
+mov $0,$5

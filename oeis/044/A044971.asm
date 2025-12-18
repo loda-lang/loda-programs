@@ -28,6 +28,6 @@ lpb $2
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,3
 lpe
 mov $0,$1

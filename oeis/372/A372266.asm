@@ -5,11 +5,10 @@
 #offset 2
 
 sub $0,2
-mov $5,$0
+mov $2,$0
 mov $1,1
 lpb $1
   sub $1,1
-  mov $2,$5
   mov $3,2
   lpb $3
     sub $3,1
@@ -18,13 +17,10 @@ lpb $1
     seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
     add $0,1
     seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-    sub $0,1
-    mov $4,$3
-    mul $4,$0
+    add $0,$2
+    mov $4,$0
     mov $0,3
-    add $2,$4
     sub $3,1
   lpe
 lpe
-mov $0,$2
-add $0,1
+mov $0,$4

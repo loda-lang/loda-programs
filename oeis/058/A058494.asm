@@ -1,5 +1,5 @@
 ; A058494: Total number of interior nodes in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
-; Submitted by Hoshione
+; Submitted by iBezanilla
 ; 0,0,1,6,20,74,245,845
 
 mov $1,1
@@ -14,7 +14,6 @@ lpb $0
   mov $6,3
   add $6,$8
   mul $6,$3
-  max $6,$0
   mov $8,0
   add $3,1
   mul $1,2

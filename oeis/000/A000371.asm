@@ -1,9 +1,25 @@
 ; A000371: a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(n,k)*2^(2^k).
-; Submitted by Wood
+; Submitted by [SG]KidDoesCrunch
 ; 2,2,10,218,64594,4294642034,18446744047940725978,340282366920938463334247399005993378250,115792089237316195423570985008687907850547725730273056332267095982282337798562
-; Formula: a(n) = 4*truncate(A003465(n)/2)+2
 
-seq $0,3465 ; Number of ways to cover an n-set.
-div $0,2
-mul $0,4
-add $0,2
+mov $2,$0
+mov $3,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  mov $5,2
+  pow $5,$0
+  mov $0,2
+  pow $0,$5
+  div $0,2
+  mul $1,$0
+  mul $3,-1
+  add $3,$1
+lpe
+mov $0,$3
+mul $0,2

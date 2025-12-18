@@ -1,5 +1,5 @@
 ; A239062: Number of integers x, 1 <= x <= n, such that x^x == 0 (mod n).
-; Submitted by Jon Maiga
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,1,1,1,3,3,1,1,2,1,1,1,7,1,3,1,2,1,1,1,4,5,1,9,2,1,1,1,15,1,1,1,6,1,1,1,4,1,1,1,2,3,1,1,8,7,5,1,2,1,9,1,4,1,1,1,2,1,1,3,31,1,1,1,2,1,1,1,12,1,1,5,2,1,1,1,8
 
 #offset 1
@@ -9,8 +9,7 @@ lpb $0
   mov $3,$0
   pow $3,$0
   mod $3,$2
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,1
   add $1,$3
 lpe

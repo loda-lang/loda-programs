@@ -1,24 +1,32 @@
 ; A054546: First differences of nonprimes (including 0 and 1, A002808).
-; Submitted by Manuel Stenschke
+; Submitted by Science United
 ; 1,3,2,2,1,1,2,2,1,1,2,2,1,1,2,1,1,1,1,2,2,1,1,1,1,2,1,1,2,2,1,1,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,2,1,1,2,2,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,2,1,1,2,2,1,1,2
 
 #offset 1
 
 sub $0,1
-mov $4,$0
-mov $2,2
-lpb $2
-  sub $2,1
-  mov $0,$4
-  add $0,$2
+mov $6,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$6
+  add $0,$4
   trn $0,1
-  seq $0,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
-  mov $1,$2
-  mul $1,$0
-  add $3,$1
+  mov $3,$0
+  mul $3,-2
+  mov $1,$0
+  add $1,1
+  div $3,$1
+  sub $1,$3
+  add $1,1
+  seq $1,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $1,1
+  mov $2,$4
+  mul $2,$1
+  mov $0,$1
+  add $5,$2
 lpe
-min $4,1
-mul $4,$0
-mov $0,$3
-sub $0,$4
-add $0,1
+min $6,1
+mul $6,$0
+mov $0,$5
+sub $0,$6

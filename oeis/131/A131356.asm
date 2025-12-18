@@ -4,39 +4,39 @@
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-max $2,$1
-add $2,1
-mov $6,0
-mov $7,0
-mov $4,$2
-sub $4,1
-mov $5,$2
-pow $5,4
-lpb $5
-  mov $3,$7
-  mul $3,3
-  add $3,1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $3,2
-  sub $4,$3
-  add $4,1
-  add $7,9
-  add $7,$6
-  mov $6,$4
-  max $6,0
-  equ $6,$4
-  sub $4,$6
-  sub $5,$6
-lpe
-mov $4,$7
-div $4,10
-mul $4,6
-add $4,6
-mov $0,$4
-div $0,2
 sub $0,1
-mov $2,$4
-mul $2,5
-add $2,1
+mov $1,1
+mov $5,-1
+mov $2,$0
+add $2,8
+pow $2,4
+lpb $2
+  mov $7,$6
+  add $7,3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
+  mov $3,$6
+  sub $3,$7
+  add $3,1
+  gcd $7,2
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  gcd $1,2
+  add $1,2
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $5,$1
+  add $5,4
+  add $5,$1
+  mul $2,$4
+  sub $2,18
+  mov $6,$5
+  mul $6,3
+  div $6,2
+lpe
+mov $0,$6
+div $0,30
+mul $0,3
+add $0,2

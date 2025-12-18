@@ -1,27 +1,25 @@
 ; A334397: Decimal expansion of (e - 2)/e.
-; Submitted by marcstone
+; Submitted by skildude
 ; 2,6,4,2,4,1,1,1,7,6,5,7,1,1,5,3,5,6,8,0,8,9,5,2,4,5,9,6,7,7,0,7,8,2,6,5,1,0,8,3,7,7,7,3,7,9,3,6,4,6,4,3,3,0,9,8,4,3,2,6,3,9,6,6,0,5,0,7,7,0,0,8,5,1,0,2,0,0,3,9
 
 add $0,1
 mov $3,$0
-mul $3,3
+mul $3,4
 lpb $3
   mov $5,$3
   mul $5,2
-  add $2,$5
+  sub $5,1
+  mul $5,2
   mul $2,$5
   add $1,$2
   div $1,$0
+  mul $2,$3
+  add $2,$3
   div $2,$0
   sub $3,1
 lpe
-bin $2,2
-pow $1,2
-sub $1,$2
 mov $4,10
 pow $4,$0
-mul $4,4
-add $2,$1
 div $2,$4
 div $1,$2
 mov $0,$1

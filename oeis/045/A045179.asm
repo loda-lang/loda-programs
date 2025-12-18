@@ -1,13 +1,11 @@
 ; A045179: Numbers whose base-5 representation contains exactly one 0 and three 2's.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 262,302,310,687,887,927,935,1287,1307,1311,1313,1314,1317,1322,1337,1362,1387,1427,1435,1507,1511,1513,1514,1517,1522,1527,1535,1551,1553,1554,1555,1565,1570,1577,1585,1602,1610,1637
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   mov $4,-6
@@ -25,8 +23,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,2
-  equ $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,7 +1,7 @@
 ; A173300: a(n) is the denominator of the fraction f = x^n + y^n given that x + y = 1 and x^2 + y^2 = 2.
-; Submitted by DukeBox
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,2,2,4,2,8,8,16,8,32,32,64,32,128,128,256,128,512,512,1024,512,2048,2048,4096,2048,8192,8192,16384,8192,32768,32768,65536,32768,131072,131072,262144,131072,524288,524288,1048576,524288,2097152,2097152,4194304,2097152
-; Formula: a(n) = floor(((2*gcd(n,2))^floor((n+1)/(2*gcd(n,2)))-1)/2)+1
+; Formula: a(n) = floor(((2*gcd(n,2))^floor((n+1)/(2*gcd(n,2)))+3)/2)-1
 
 #offset 1
 
@@ -11,9 +11,8 @@ mul $1,2
 add $0,1
 div $0,$1
 pow $1,$0
-mov $0,$1
-sub $0,1
-mov $2,$0
+mov $2,$1
+add $2,3
 div $2,2
-add $2,1
 mov $0,$2
+sub $0,1

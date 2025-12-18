@@ -1,24 +1,18 @@
 ; A278049: a(n) = 3*(Sum_{k=1..n} phi(k)) - 1, where phi = A000010.
-; Submitted by rajab
+; Submitted by [SG]KidDoesCrunch
 ; 2,5,11,17,29,35,53,65,83,95,125,137,173,191,215,239,287,305,359,383,419,449,515,539,599,635,689,725,809,833,923,971,1031,1079,1151,1187,1295,1349,1421,1469,1589,1625,1751,1811,1883,1949,2087,2135,2261,2321,2417,2489,2645,2699,2819,2891,2999,3083,3257,3305,3485,3575,3683,3779,3923,3983,4181,4277,4409,4481,4691,4763,4979,5087,5207,5315,5495,5567,5801,5897
 
 #offset 1
 
-sub $0,1
-mov $3,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  add $0,1
-  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  mul $0,8
-  add $1,$0
+lpb $0
+  mov $1,$0
+  add $1,1
+  seq $1,206297 ; Position of n in the canonical bijection from the positive integers to the positive rational numbers.
+  div $0,$1
 lpe
 mov $0,$1
-sub $0,8
+mul $0,4
+sub $0,12
 div $0,8
 mul $0,3
 add $0,2

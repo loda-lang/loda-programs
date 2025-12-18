@@ -1,18 +1,17 @@
 ; A095586: a(n) = 97 written in base n.
-; Submitted by DukeBox
+; Submitted by [SG]KidDoesCrunch
 ; 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,1100001,10121,1201,342,241,166,141,117,97,89,81,76
 
 #offset 1
 
-mov $1,$0
-mov $2,$0
 mov $3,24
 mov $5,$0
 equ $5,1
-mov $0,0
+mov $1,$0
 neq $1,0
 mul $1,96
 add $1,1
+mov $2,$0
 dif $2,$1
 lpb $1
   mov $4,$1

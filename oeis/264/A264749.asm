@@ -1,7 +1,7 @@
 ; A264749: a(n) = floor(n/BL(n)) where BL(n) = A070939(n) is the binary length of n.
 ; Submitted by loader3229
 ; 0,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,6,6,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,9,9,9,9,9,9,10,10,10,10,10,10,10,11,11,11
-; Formula: a(n) = truncate(n/(logint(max(n,1),2)+1))
+; Formula: a(n) = floor(n/(logint(max(n,1),2)+1))
 
 mov $1,$0
 max $1,1

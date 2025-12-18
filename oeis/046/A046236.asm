@@ -1,17 +1,16 @@
 ; A046236: Cubes which are palindromes in base 6.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 0,1,343,50653,10218313,2181825073,470366406433,101566487155393,21937185733709953,4738389801656378113,1023490673757369487873,221073930689208859487233
 
 #offset 1
 
-mov $2,1
 sub $0,1
 lpb $0
   sub $0,1
   trn $0,$1
-  add $2,5
+  add $2,6
   pow $2,$0
   add $1,$2
 lpe
-pow $1,3
 mov $0,$1
+pow $0,3

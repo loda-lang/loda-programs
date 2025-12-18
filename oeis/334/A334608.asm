@@ -9,21 +9,18 @@ lpb $3
   mov $5,$0
   mul $5,2
   add $5,1
+  mov $6,$5
   mov $7,$5
   div $7,2
-  mov $8,$5
+  sub $0,1
   mul $5,2
   bin $5,$7
-  div $5,$8
-  sub $0,1
+  div $5,$6
   mov $2,$3
   mul $2,$5
-  mov $6,5
   add $1,$2
   mov $4,$5
+  mul $4,2
 lpe
-min $6,1
-mul $6,$4
-sub $1,$6
 sub $1,$4
 mov $0,$1

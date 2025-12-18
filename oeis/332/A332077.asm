@@ -10,7 +10,6 @@ nrt $1,2
 sub $1,1
 div $1,2
 mov $3,1
-mov $6,2
 mov $7,$1
 add $7,1
 bin $7,2
@@ -38,4 +37,4 @@ lpb $1
   add $6,$5
 lpe
 mov $0,$6
-sub $0,1
+add $0,1

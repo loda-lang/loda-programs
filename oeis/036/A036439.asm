@@ -1,13 +1,32 @@
 ; A036439: a(n) = a(n-1) + prime(n-1), with a(1)=2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 2,4,7,12,19,30,43,60,79,102,131,162,199,240,283,330,383,442,503,570,641,714,793,876,965,1062,1163,1266,1373,1482,1595,1722,1853,1990,2129,2278,2429,2586,2749,2916,3089,3268,3449,3640,3833,4030,4229,4440,4663,4890,5119,5352,5591,5832,6083,6340,6603,6872,7143,7420,7701,7984,8277,8584,8895,9208,9525,9856,10193,10540,10889,11242,11601,11968,12341,12720,13103,13492,13889,14290
-; Formula: a(n) = A014284(max(0,n-1)+1)+1
 
 #offset 1
 
-sub $0,1
-max $1,$0
-add $1,1
-seq $1,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
-mov $0,$1
-add $0,1
+mov $11,2
+lpb $11
+  sub $11,1
+  add $0,$11
+  sub $0,2
+  mov $4,$0
+  mov $6,$0
+  lpb $6
+    clr $0,3
+    sub $6,1
+    mov $0,$4
+    sub $0,$6
+    add $0,1
+    lpb $0
+      sub $0,1
+      add $1,1
+      seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+    lpe
+    add $5,$1
+  lpe
+  mov $12,$11
+  mul $12,$5
+  add $10,$12
+lpe
+mov $0,$10
+add $0,2

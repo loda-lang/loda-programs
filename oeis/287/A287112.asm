@@ -6,6 +6,7 @@
 
 sub $0,1
 lpb $0
+  div $0,2
   mul $0,10
   dir $0,2
   pow $0,$0

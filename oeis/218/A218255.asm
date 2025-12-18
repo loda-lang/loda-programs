@@ -1,22 +1,20 @@
 ; A218255: Next prime after 10*n.
-; Submitted by Jamie Morken(l1)
+; Submitted by rajab
 ; 2,11,23,31,41,53,61,71,83,97,101,113,127,131,149,151,163,173,181,191,211,211,223,233,241,251,263,271,281,293,307,311,331,331,347,353,367,373,383,397,401,419,421,431,443,457,461,479,487,491,503,521,521,541,541,557,563,571,587,593,601,613,631,631,641,653,661,673,683,691,701,719,727,733,743,751,761,773,787,797
 
 mul $0,10
-mov $1,$0
-equ $1,0
-add $1,$0
-mov $3,$1
-mov $4,$1
-lpb $4
-  sub $4,1
-  mov $5,$3
-  add $5,1
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $3,1
-  add $4,$5
+mov $2,$0
+equ $2,0
+add $2,$0
+mov $3,$2
+mov $1,$2
+lpb $1
+  sub $1,1
+  mov $4,$3
+  add $4,1
+  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $1,$4
+  add $3,2
 lpe
-mov $1,$3
-add $1,1
-add $2,$1
-mov $0,$2
+mov $0,$3
+add $0,1

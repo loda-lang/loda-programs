@@ -1,17 +1,16 @@
 ; A329019: a(n) = p(1,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(3/2) as in A328644.
-; Submitted by Jamie Morken(l1)
+; Submitted by [SG]KidDoesCrunch
 ; 1,13,133,1261,2321,105469,953317,8596237,77431669,139429433,6275373061,56482551853,508359743893,4575304803901,8235602334113,370603178776909,3335432903959477,30018913315504477,270170288559017029,486306574381812041,21883796946693169621
 
 #offset 1
 
 mov $2,1
-sub $0,1
 lpb $0
   sub $0,1
   add $1,$2
   mul $1,4
   mul $2,9
 lpe
-add $1,$2
 dif $1,5
 mov $0,$1
+div $0,4

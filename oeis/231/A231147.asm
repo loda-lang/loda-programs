@@ -18,7 +18,6 @@ sub $0,$2
 add $0,$1
 bin $0,2
 add $0,$1
-mov $3,0
 mov $4,$0
 mul $4,8
 nrt $4,2
@@ -33,7 +32,6 @@ sub $4,$0
 add $4,3
 add $0,$4
 sub $0,1
-mov $6,0
 gcd $6,$0
 lpb $6
   sub $6,2

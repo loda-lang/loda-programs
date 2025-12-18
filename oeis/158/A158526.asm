@@ -4,31 +4,26 @@
 
 #offset 1
 
-sub $0,1
 mov $3,1
-mov $2,$0
-add $2,8
-pow $2,4
-lpb $2
+mov $4,$0
+sub $0,1
+pow $4,2
+lpb $4
+  mov $5,$3
+  seq $5,40 ; The prime numbers.
+  mov $1,$5
   add $3,1
-  mov $5,$6
   add $5,2
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $5,$3
-  add $6,2
-  add $3,1
-  mul $5,$6
-  add $5,2
+  mul $5,$1
+  sub $5,$1
+  mul $5,2
+  add $5,1
   seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$5
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,17
-  sub $6,$4
+  mov $2,$0
+  max $2,0
+  equ $2,$0
+  mul $4,$2
+  trn $4,1
 lpe
 mov $0,$1
-div $0,2
-add $0,1

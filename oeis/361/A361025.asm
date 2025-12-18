@@ -13,10 +13,9 @@ mov $3,$0
 bxo $3,$5
 mul $3,$4
 lex $3,2
-mov $1,$0
+mul $0,2
 mov $1,$3
 add $1,1
-mul $0,2
 mov $2,$0
 sub $2,1
 bxo $0,$2

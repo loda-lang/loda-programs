@@ -1,5 +1,5 @@
 ; A227628: Number of Lipschitz quaternions X such that X^2 == X (mod n).
-; Submitted by Joe
+; Submitted by Science United
 ; 1,2,14,2,32,28,58,2,110,64,134,28,184,116,448,2,308,220,382,64,812,268,554,28,752,368,974,116,872,896,994,2,1876,616,1856,220,1408,764,2576,64,1724,1624,1894,268,3520,1108,2258,28,2746,1504
 
 #offset 1
@@ -19,12 +19,8 @@ lpb $0
     dif $0,$2
     mov $5,$4
     add $5,2
-    add $6,1
     mul $4,$2
-    sub $4,$6
-    add $4,1
     add $5,$4
-    sub $6,1
   lpe
   mul $1,$5
 lpe

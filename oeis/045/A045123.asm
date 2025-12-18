@@ -1,15 +1,12 @@
 ; A045123: Numbers whose base-4 representation contains exactly two 1's and four 3's.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Dongha Hwang
 ; 1535,1919,2015,2039,2045,3455,3551,3575,3581,3935,3959,3965,4055,4061,4085,4607,4991,5087,5111,5117,5375,5887,5951,6079,6095,6127,6131,6139,6140,6142,6655,7039,7135,7159,7165,7295
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,9
-pow $2,3
+add $2,8
+pow $2,4
 lpb $2
   mov $4,1
   mov $3,$1
@@ -31,7 +28,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,2
-add $0,10923
-div $0,2
-sub $0,5461

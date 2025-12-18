@@ -1,14 +1,12 @@
 ; A010208: Continued fraction for sqrt(159).
-; Submitted by loader3229
+; Submitted by Science United
 ; 12,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1
-; Formula: a(n) = 21*floor(gcd(n,10)/9)+2*floor(gcd(n,5)/5)-12*(n==0)+1
+; Formula: a(n) = 2%gcd(n,10)+21*floor(gcd(n,10)/9)-12*(n==0)+1
 
-mov $2,$0
-gcd $2,5
-div $2,5
-mul $2,2
 mov $1,$0
 gcd $1,10
+mov $2,2
+mod $2,$1
 div $1,9
 mul $1,21
 equ $0,0

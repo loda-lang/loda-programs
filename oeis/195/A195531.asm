@@ -1,19 +1,19 @@
 ; A195531: Hypotenuses of Pythagorean triples in A195499 and A195503.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 5,17,65,241,901,3361,12545,46817,174725,652081,2433601,9082321,33895685,126500417,472105985,1761923521,6575588101,24540428881,91586127425,341804080817,1275630195845,4760716702561,17767236614401,66308229755041
-; Formula: a(n) = 4*floor(c(n+1)/6)+1, b(n) = 2*b(n-1)+c(n-1)+1, b(1) = 1, b(0) = 0, c(n) = 3*b(n-1)+2*c(n-1)+1, c(1) = 1, c(0) = 0
+; Formula: a(n) = 4*floor(c(n)/12)+1, b(n) = 2*b(n-1)+c(n-1), b(1) = 8, b(0) = 2, c(n) = 3*b(n-1)+2*c(n-1), c(1) = 14, c(0) = 4
 
 #offset 1
 
-add $0,1
+mov $1,2
+mov $2,4
 lpb $0
   sub $0,1
   add $2,$1
   add $1,$2
-  add $1,1
   add $2,$1
 lpe
 mov $0,$2
-div $0,6
+div $0,12
 mul $0,4
 add $0,1

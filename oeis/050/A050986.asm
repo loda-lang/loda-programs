@@ -1,5 +1,5 @@
 ; A050986: Number of n-digit right-truncatable primes.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 4,9,14,16,15,12,8,5,0
 
 #offset 1
@@ -21,7 +21,6 @@ lpb $0
   sub $3,$1
   sub $4,$0
 lpe
-add $2,2
 add $2,$6
 mov $0,$2
-add $0,2
+add $0,4

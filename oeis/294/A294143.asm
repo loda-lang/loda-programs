@@ -1,9 +1,25 @@
 ; A294143: Sum of the larger parts of the partitions of 2n into two parts with smaller part squarefree.
-; Submitted by HipsterDuRocher
+; Submitted by [SG]KidDoesCrunch
 ; 1,5,12,18,29,43,60,72,84,106,131,147,176,208,243,265,304,328,371,397,444,494,547,579,611,669,703,737,800,866,935,975,1048,1124,1203,1249,1332,1418,1507,1559,1652,1748,1847,1905,1963,2067,2174,2236,2298,2360
-; Formula: a(n) = A294146(2*n)
 
 #offset 1
 
-mul $0,2
-seq $0,294146 ; Sum of the larger parts of the partitions of n into two parts with smaller part squarefree.
+sub $0,1
+mov $1,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $0,1
+  mov $2,$1
+  add $2,1
+  seq $2,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  mul $2,2
+  max $2,1
+  mod $2,2
+  mul $2,$0
+  add $4,2
+  add $4,$2
+  sub $1,1
+lpe
+mov $0,$4
+add $0,1

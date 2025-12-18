@@ -1,26 +1,20 @@
 ; A070059: Decimal expansion of proton mass (in kilograms).
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,6,7,2,6,2,1,9,2
-; Formula: a(n) = -10*truncate((binomial(18*binomial(truncate((sqrtint(8*n+216)-1)/2),2)-18*n-468,2*binomial(truncate((sqrtint(8*n+216)-1)/2),2)+2*truncate((sqrtint(8*n+216)-1)/2)-2*n-48)+1)/10)+binomial(18*binomial(truncate((sqrtint(8*n+216)-1)/2),2)-18*n-468,2*binomial(truncate((sqrtint(8*n+216)-1)/2),2)+2*truncate((sqrtint(8*n+216)-1)/2)-2*n-48)+1
+; Formula: a(n) = (binomial(floor((binomial(3*n+81,n+27)^2)/(3*(n+28)*(n+29))),2)+1)%10
 
 #offset -26
 
 add $0,27
 mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $3,$1
-bin $3,2
-sub $0,$3
-sub $0,1
-sub $1,$0
-add $1,2
-mul $1,2
-mul $0,18
-sub $2,$0
-bin $2,$1
-mov $0,$2
+mul $0,3
+bin $0,$1
+pow $0,2
+mov $2,$1
+add $2,1
+fac $2,2
+mul $2,3
+div $0,$2
+bin $0,2
 add $0,1
 mod $0,10

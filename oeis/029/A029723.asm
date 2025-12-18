@@ -1,5 +1,5 @@
 ; A029723: Trace of Frobenius of the reduction mod 2 of the elliptic curve C / L, L a lattice with Gram matrix [ 4 1; 1 2n ].
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,3,1,5,9,3,1,21,7,13,13,5
 
 mov $1,2
@@ -17,6 +17,4 @@ lpb $0
   add $1,$3
 lpe
 mov $0,$1
-div $0,4
-mul $0,2
-add $0,1
+div $0,2

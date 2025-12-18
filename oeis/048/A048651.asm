@@ -1,24 +1,23 @@
 ; A048651: Decimal expansion of Product_{k >= 1} (1 - 1/2^k).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 2,8,8,7,8,8,0,9,5,0,8,6,6,0,2,4,2,1,2,7,8,8,9,9,7,2,1,9,2,9,2,3,0,7,8,0,0,8,8,9,1,1,9,0,4,8,4,0,6,8,5,7,8,4,1,1,4,7,4,1,0,6,6,1,8,4,9,0,2,2,4,0,9,0,6,8,4,7,0,1
 
 add $0,1
 mov $1,10
 pow $1,$0
-mov $3,-1
 mov $4,$1
 pow $1,2
+mov $2,-2
 mov $0,$1
 mul $1,2
 mul $0,6
 lpb $0
-  add $2,$3
   add $3,$2
   mov $5,$1
   div $5,$3
   add $0,$5
   mov $1,$0
-  mul $2,0
+  mov $2,$3
 lpe
 div $0,$4
 div $0,10

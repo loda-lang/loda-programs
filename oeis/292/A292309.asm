@@ -4,28 +4,28 @@
 
 #offset 1
 
-mov $2,$0
+mov $3,$0
 sub $0,1
-add $2,2
-pow $2,3
-lpb $2
-  mov $1,$5
-  add $1,1
-  seq $1,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
-  sub $1,1
-  min $1,1
-  sub $0,$1
-  add $3,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $5,1
-  add $5,$3
-  mul $2,$4
+add $3,2
+pow $3,4
+lpb $3
+  mov $2,$1
+  add $2,1
+  seq $2,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $2,1
+  min $2,1
+  sub $0,$2
+  add $4,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  add $1,1
+  add $1,$4
+  mul $3,$5
   sub $3,1
+  sub $4,1
 lpe
-mov $0,$5
+mov $0,$1
 div $0,2
 add $0,1
 bin $0,2

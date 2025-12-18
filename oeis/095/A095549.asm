@@ -1,11 +1,9 @@
 ; A095549: a(n) = 78 written in base 15 - n.
-; Submitted by Science United
+; Submitted by HeatForScience
 ; 53,58,60,66,71,78,86,116,141,210,303,1032,2220,1001110,111111111111111111111111111111111111111111111111111111111111111111111111111111
 
-mov $2,10
+mov $2,15
 sub $2,$0
-add $2,5
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

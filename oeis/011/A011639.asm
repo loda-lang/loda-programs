@@ -1,16 +1,15 @@
 ; A011639: 65th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by Carl@Home
 ; 1,-1,0,0,0,1,-1,0,0,0,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,0,-1,1,-1,1,0,-1,1,-1,1,0,-1,1,0,0,0,-1,1,0,0,0,-1,1
 
-mov $1,3
-add $0,3
+add $0,1
 lpb $0
-  sub $0,$1
-  mov $1,13
-  mov $2,0
-  sub $2,$0
-  mod $2,5
-  pow $2,$2
-  add $3,$2
+  mov $1,1
+  sub $1,$0
+  mod $1,5
+  pow $1,$1
+  sub $0,2
+  trn $0,11
+  add $2,$1
 lpe
-mov $0,$3
+mov $0,$2

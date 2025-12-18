@@ -1,7 +1,7 @@
 ; A123740: Characteristic sequence for Wythoff AB-numbers A003623.
 ; Submitted by Science United
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0
-; Formula: a(n) = -truncate((sqrtint(5*n^2)+n)/2)-2*truncate((-truncate((sqrtint(5*n^2)+n)/2)+sqrtint(5*(truncate((sqrtint(5*n^2)+n)/2)+4)^2)-4)/2)+sqrtint(5*(truncate((sqrtint(5*n^2)+n)/2)+4)^2)-4
+; Formula: a(n) = -floor((sqrtint(5*n^2)+n)/2)-2*truncate((-floor((sqrtint(5*n^2)+n)/2)+sqrtint(5*(floor((sqrtint(5*n^2)+n)/2)+4)^2)-4)/2)+sqrtint(5*(floor((sqrtint(5*n^2)+n)/2)+4)^2)-4
 
 #offset 1
 

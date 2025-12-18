@@ -1,5 +1,5 @@
 ; A228718: Sequence taken from Garvan's paper (see slides 28, 29).
-; Submitted by Mumps
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,3,4,8,12,17,27,40
 
 #offset 1
@@ -20,7 +20,6 @@ lpb $0
   lpe
   add $2,1
   sub $0,1
-  mul $1,$2
 lpe
 mov $0,$5
 add $0,1

@@ -1,29 +1,31 @@
 ; A107749: OrdinaryUnitarySigma(n): If n = Product p_i^r_i then OUSigma(n) = Sigma(2^r_1)*UnitarySigma(n/2^r_1).
-; Submitted by shiva
+; Submitted by GPV67
 ; 1,3,4,7,6,12,8,15,10,18,12,28,14,24,24,31,18,30,20,42,32,36,24,60,26,42,28,56,30,72,32,63,48,54,48,70,38,60,56,90,42,96,44,84,60,72,48,124,50,78,72,98,54,84,72,120,80,90,60,168,62,96,80,127,84,144,68,126,96,144,72,150,74,114,104,140,96,168,80,186
 
 #offset 1
 
-mov $1,1
-mov $2,2
-mov $4,-1
-mul $0,2
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
+mov $1,$0
+sub $1,1
+mov $3,1
+mov $4,3
+mov $2,$0
+lpb $2
+  mov $5,$2
+  lpb $5
+    mov $6,$2
+    mod $6,$4
+    min $6,2
+    add $4,2
+    sub $5,$6
   lpe
-  lpb $0
-    dif $0,$2
-    mul $4,$2
-    mov $5,1
-    add $5,$4
+  mov $7,1
+  lpb $2
+    dif $2,$4
+    mul $7,$4
+    mov $8,$3
   lpe
-  mul $1,$5
+  mul $3,$7
+  add $3,$8
 lpe
-mov $0,$1
-gcd $0,$1
+bxo $0,$1
+mul $0,$3

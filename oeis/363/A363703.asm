@@ -1,13 +1,12 @@
 ; A363703: Lower independence number of the n-folded cube graph.
-; Submitted by BrandyNOW
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,4,4,6,8,24,32
 
 #offset 2
 
 sub $0,2
 mov $1,$0
-trn $0,1
-add $0,1
+max $0,1
 mov $4,$0
 lpb $0
   div $0,2

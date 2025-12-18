@@ -1,6 +1,6 @@
-; A133807: A007318 * (A097806 + A133566 - I), where I is the identity matrix.
+; A133807: Triangle read by rows: A007318 * (A097806 + A133566 - I) as infinite lower triangular matrices, where I is the identity matrix.
 ; Submitted by loader3229
-; 1,2,1,3,4,1,4,9,4,1,5,16,10,6,1,6,25,20,20,6,1,7,36,35,50,21,8,1,8,49,56,105,56,35,8,1,9,64,84,196,126,112,36,10,1,10,81,120,336,252,294,120,54,10,1
+; 1,2,1,3,4,1,4,9,4,1,5,16,10,6,1,6,25,20,20,6,1,7,36,35,50,21,8,1,8,49,56,105,56,35,8,1,9,64,84,196,126,112,36,10,1,10,81,120,336,252,294,120,54,10,1,11,100,165,540,462,672,330,210,55,12,1
 ; Formula: a(n) = gcd(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,2)*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)+binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)
 
 #offset 1

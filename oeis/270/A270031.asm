@@ -14,8 +14,7 @@ lpb $3
     lpb $0
       mov $6,$0
       mod $6,$2
-      add $6,1
-      equ $6,6
+      equ $6,5
       div $0,$2
       sub $5,$6
     lpe

@@ -7,7 +7,7 @@ mov $1,1
 mov $2,2
 mov $3,-2
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,3
   mov $4,$1
   mul $4,-3

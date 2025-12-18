@@ -1,11 +1,11 @@
 ; A308046: a(n) = 2*nextprime(n - 1) - 2*n, where nextprime(n) is the smallest prime > n.
-; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
+; Submitted by [SG]KidDoesCrunch
 ; 2,0,0,2,0,2,0,6,4,2,0,2,0,6,4,2,0,2,0,6,4,2,0,10,8,6,4,2,0,2,0,10,8,6,4,2,0,6,4,2,0,2,0,6,4,2,0,10,8,6,4,2,0,10,8,6,4,2,0,2,0,10,8,6,4,2,0,6,4,2,0,2,0,10,8,6,4,2,0,6
 
 #offset 1
 
 sub $0,1
-mod $0,110
+min $0,108
 mov $1,$0
 mov $2,$0
 equ $2,0
@@ -25,5 +25,5 @@ add $2,1
 add $3,$2
 mov $0,$3
 sub $0,$1
+sub $0,1
 mul $0,2
-sub $0,2

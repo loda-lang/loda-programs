@@ -1,7 +1,7 @@
 ; A254178: Decimal expansion of (1 u)c^2/k in K.
-; Submitted by Skillz
+; Submitted by [SG]KidDoesCrunch
 ; 1,0,8,0,9,5,4,0,2
-; Formula: a(n) = sumdigits(binomial(2*n-27,n-14)*(n-11)+1,90)*sign(binomial(2*n-27,n-14)*(n-11)+1)-10*truncate((sumdigits(binomial(2*n-27,n-14)*(n-11)+1,90)*sign(binomial(2*n-27,n-14)*(n-11)+1)-3)/10)-3
+; Formula: a(n) = -10*truncate((sumdigits(binomial(2*n-27,n-14)*(n-11),90)-2)/10)+sumdigits(binomial(2*n-27,n-14)*(n-11),90)-2
 
 #offset 14
 
@@ -13,8 +13,7 @@ mul $0,2
 add $0,1
 bin $0,$2
 mul $1,$0
-add $1,1
 dgs $1,90
 mov $0,$1
-sub $0,3
+sub $0,2
 mod $0,10

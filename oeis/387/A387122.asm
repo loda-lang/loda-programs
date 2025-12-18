@@ -1,7 +1,7 @@
 ; A387122: Greatest prime divisor of 2*prime(n) + 3.
-; Submitted by Joe
+; Submitted by Science United
 ; 7,3,13,17,5,29,37,41,7,61,13,11,17,89,97,109,11,5,137,29,149,23,13,181,197,41,19,31,17,229,257,53,277,281,43,61,317,47,337,349,19,73,11,389,397,401,17,449,457,461,67,37,97,101,47,23,541,109,557,113,569,31
-; Formula: a(n) = A006530(2*A000040(n)+3)
+; Formula: a(n) = 2*floor(A006530(2*A000040(n)+3)/2)+1
 
 #offset 1
 
@@ -9,3 +9,6 @@ seq $0,40 ; The prime numbers.
 mul $0,2
 add $0,3
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+div $0,2
+mul $0,2
+add $0,1

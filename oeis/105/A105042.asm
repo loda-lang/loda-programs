@@ -1,20 +1,16 @@
 ; A105042: Numbers n such that 10n - 1 is prime.
-; Submitted by Dave Studdert
+; Submitted by Science United
 ; 2,3,6,8,9,11,14,15,18,20,23,24,27,35,36,38,39,41,42,44,45,48,50,51,57,60,62,66,71,72,74,77,81,83,84,86,92,93,101,102,104,105,107,111,113,123,125,126,128,129,132,140,141,143,144,146,149,150,155,156,158,161,162,167,170,171,176,179,188,189,195,198,200,203,204,207,209,210,213,218
 
 #offset 1
 
-mov $2,8
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,11
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  add $2,10
-  sub $0,$1
-  sub $3,$0
+mov $2,$0
+seq $2,30433 ; Primes of form 10*k + 9.
+lpb $2
+  mov $4,1
+  rol $2,2
 lpe
-mov $0,$2
+mov $0,$3
+sub $0,17
 div $0,10
 add $0,2

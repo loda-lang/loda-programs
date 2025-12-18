@@ -1,5 +1,5 @@
 ; A191783: Numbers k such that the topological k-sphere has a unique differentiable structure up to diffeomorphism.
-; Submitted by zelandonii
+; Submitted by Science United
 ; 1,2,3,5,6,12,56,61
 
 #offset 1
@@ -32,9 +32,7 @@ lpb $0
   mov $14,$3
   mul $14,-114
   mov $15,$1
-  add $15,16
-  mul $15,$1
-  add $15,22
+  add $15,38
   add $13,$14
   mov $14,$4
   mul $14,$15

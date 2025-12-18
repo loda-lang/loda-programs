@@ -1,25 +1,10 @@
 ; A067774: Primes p such that p+2 is not a prime.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Checco
 ; 2,7,13,19,23,31,37,43,47,53,61,67,73,79,83,89,97,103,109,113,127,131,139,151,157,163,167,173,181,193,199,211,223,229,233,241,251,257,263,271,277,283,293,307,313,317,331,337,349,353,359,367,373,379,383,389,397,401,409,421,433,439,443,449,457,463,467,479,487,491,499,503,509,523,541,547,557,563,571,577
+; Formula: a(n) = A064989(A025584(n+1))
 
 #offset 1
 
-mov $4,1
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $5,$1
-  seq $5,383948 ; Expansion of 1/sqrt((1-3*x)^3 * (1-7*x)).
-  add $5,$4
-  seq $5,13632 ; Difference between n and the next prime greater than n.
-  mov $3,$5
-  equ $3,2
-  gcd $3,$2
-  bin $3,$2
-  add $4,$5
-  sub $0,$3
-  trn $1,$3
-  sub $2,$0
-lpe
-mov $0,$4
 add $0,1
+seq $0,25584 ; Primes p such that p-2 is not a prime.
+seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

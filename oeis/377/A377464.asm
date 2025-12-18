@@ -1,5 +1,5 @@
 ; A377464: Number of connected pairs of subsets of [n] with each being a different size.
-; Submitted by amazing
+; Submitted by Science United
 ; 0,0,2,12,62,290,1292,5579,23606,98490,406862,1668689,6807704,27663441,112076057,453031502,1828018406,7366128866,29650536878,119249689265,479277846962,1925216817095,7729973578307,31025341749680,124486445913728,499362094315865
 
 mov $3,$0
@@ -25,11 +25,8 @@ lpb $5
   mov $7,$1
   div $7,$6
   mov $8,$4
-  mov $0,$7
-  mul $0,2
-  mul $2,$0
+  mul $2,$7
   div $4,-1
   add $4,$2
 lpe
 mov $0,$8
-div $0,2

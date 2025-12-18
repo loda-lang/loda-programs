@@ -1,5 +1,5 @@
 ; A003530: Divisors of 2^21 - 1.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,7,49,127,337,889,2359,6223,16513,42799,299593,2097151
 
 #offset 1
@@ -24,6 +24,5 @@ lpb $2
   sub $2,$3
   sub $2,$0
 lpe
-mov $0,$4
-mul $0,2
+mov $0,$1
 sub $0,1

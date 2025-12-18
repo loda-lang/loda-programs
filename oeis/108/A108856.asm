@@ -1,20 +1,15 @@
 ; A108856: Numbers k such that 10*k - 131 is prime.
-; Submitted by skildude
+; Submitted by Science United
 ; 15,16,19,21,22,24,27,28,31,33,36,37,40,48,49,51,52,54,55,57,58,61,63,64,70,73,75,79,84,85,87,90,94,96,97,99,105,106,114,115,117,118,120,124,126,136,138,139,141,142,145,153,154,156,157,159,162,163,168,169,171
 
 #offset 1
 
-mov $2,8
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,11
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  add $2,10
-  sub $0,$1
-  sub $3,$0
+mov $2,$0
+seq $2,30433 ; Primes of form 10*k + 9.
+lpb $2
+  rol $2,2
 lpe
-mov $0,$2
+mov $0,$3
+sub $0,19
 div $0,10
 add $0,15

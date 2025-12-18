@@ -1,28 +1,26 @@
 ; A010389: Squares mod 27.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,4,7,9,10,13,16,19,22,25
 
 #offset 1
 
-mov $1,1
-mov $2,4
-mov $3,7
-mov $4,10
-mov $5,13
-mov $6,16
-mov $7,18
-mov $8,19
-mov $9,22
-mov $10,25
-mov $11,27
-mov $12,28
-sub $0,1
 lpb $0
-  mul $1,-1
-  rol $1,12
-  add $12,$1
-  add $12,$11
   sub $0,1
+  equ $3,0
+  mov $4,12
+  mul $4,$3
+  mov $6,$1
+  mov $2,12
+  sub $2,$4
+  add $1,$2
+  mov $5,$1
+  dir $5,9
+  neq $5,6
+  add $3,$5
+  min $3,1
+  mov $2,6
+  mul $2,$3
+  add $1,$2
 lpe
-mov $0,$7
-sub $0,18
+mov $0,$6
+div $0,6

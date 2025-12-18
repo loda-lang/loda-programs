@@ -1,5 +1,5 @@
 ; A127327: Hypertetrahedron with T(W,X,Y,Z) = W - X.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,1,0,0,0,2,1,1,1,0,0,0,0,0,0,3,2,2,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,4,3,3,3,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,4,4,3,3,3,3,3,3
 
 lpb $0
@@ -15,6 +15,7 @@ lpb $0
     mod $4,$3
   lpe
   sub $4,1
+  min $4,8
 lpe
 sub $3,$4
 mov $0,$3

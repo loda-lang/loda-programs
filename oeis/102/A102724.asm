@@ -1,20 +1,33 @@
 ; A102724: Sum of the first n pairs of consecutive primes (for example, a(3) = (2+3) + (3+5) + (5+7) = 25).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 5,13,25,43,67,97,133,175,227,287,355,433,517,607,707,819,939,1067,1205,1349,1501,1663,1835,2021,2219,2423,2633,2849,3071,3311,3569,3837,4113,4401,4701,5009,5329,5659,5999,6351,6711,7083,7467,7857,8253,8663,9097,9547,10003,10465,10937,11417,11909,12417,12937,13469,14009,14557,15115,15679,16255,16855,17473,18097,18727,19375,20043,20727,21423,22125,22837,23563,24303,25055,25817,26589,27375,28173,28983,29811
 
 #offset 1
 
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  equ $4,0
-  add $4,$3
-  add $4,1
-  seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  add $2,$3
-  add $2,$4
-  mov $3,$4
+mov $9,$0
+mov $11,2
+lpb $11
+  clr $0,9
+  sub $11,1
+  mov $0,$9
+  add $0,$11
+  mov $4,$0
+  mov $6,$0
+  lpb $6
+    clr $0,2
+    sub $6,1
+    mov $0,$4
+    sub $0,$6
+    add $0,1
+    lpb $0
+      sub $0,1
+      add $1,1
+      seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+    lpe
+    add $5,$1
+  lpe
+  add $5,1
+  add $14,$5
 lpe
-mov $0,$2
-sub $0,2
+mov $0,$14
+sub $0,4

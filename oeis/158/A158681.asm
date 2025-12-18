@@ -1,22 +1,21 @@
 ; A158681: Wiener indexes of the complete binary trees with n levels, root being at level 0.
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 4,48,368,2304,12864,66816,330496,1579008,7353344,33583104,151056384,671219712,2953068544,12885491712,55835820032,240520790016,1030797656064,4398058045440,18691721789440,79164887531520,334251639701504,1407375101657088,5910974963908608
-; Formula: a(n) = 2*c(n-1)*(b(n-1)+min(n-1,0)), b(n) = 2*c(n-1)+2*d(n-1)+b(n-1)+1, b(2) = 23, b(1) = 6, b(0) = 1, c(n) = 2*c(n-1), c(2) = 8, c(1) = 4, c(0) = 2, d(n) = 2*c(n-1)+2*d(n-1), d(2) = 16, d(1) = 4, d(0) = 0
+; Formula: a(n) = 4*truncate((2*truncate(c(n)/2)*2^n)/4), b(n) = 4*2^(n-1)+2*b(n-1)-2, b(2) = 10, b(1) = 2, b(0) = 0, c(n) = 4*2^(n-1)+2*b(n-1)+c(n-1)-2, c(2) = 12, c(1) = 2, c(0) = 0
 
 #offset 1
 
-mov $1,1
 mov $2,2
-sub $0,1
 lpb $0
   sub $0,1
+  add $1,$2
+  mul $1,2
+  sub $1,2
   mul $2,2
-  mul $3,2
-  add $3,$2
-  add $1,$3
-  add $1,1
+  add $3,$1
 lpe
-add $0,$1
-mul $2,$0
-mov $0,$2
-mul $0,2
+mov $0,$3
+div $0,2
+mul $0,$2
+div $0,4
+mul $0,4

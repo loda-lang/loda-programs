@@ -1,11 +1,9 @@
 ; A291714: 2520 * preferred ratios of room height / length in Alberti's Ten Books on Architecture.
-; Submitted by DukeBox
+; Submitted by [SG]KidDoesCrunch
 ; 1260,1575,1680,1890,2016,2100,2205,2520
 
 #offset 1
 
-mov $1,1
-mov $2,5
 mov $3,10
 mov $4,16
 mov $5,21
@@ -14,58 +12,29 @@ mov $7,33
 mov $8,37
 mov $9,42
 mov $10,47
-mov $11,14
 mov $12,58
-mov $13,64
-mov $14,70
 mov $18,1
 sub $0,1
 lpb $0
   add $10,10
   rol $1,15
-  sub $15,$1
-  add $15,$2
-  add $15,$2
-  sub $15,$3
+  mul $15,$17
   sub $15,$3
   add $15,$4
   add $3,9
-  add $11,1
   add $11,$18
-  mov $16,$5
-  mul $16,-3
   sub $0,1
-  add $15,$16
-  mov $16,$6
-  mul $16,4
-  add $15,$16
-  mov $16,$7
-  mul $16,-4
-  add $15,$16
-  mov $16,$8
-  mul $16,4
-  equ $2,8
-  add $15,$16
-  mov $16,$9
-  mul $16,-4
   add $5,4
   sub $12,85
-  add $15,$16
-  mov $16,$10
-  mul $16,4
-  mov $18,$8
+  mul $13,$10
   add $10,1
-  add $15,$16
-  mov $16,$11
-  mul $16,-3
-  add $15,$16
+  add $15,$11
   add $15,$12
-  add $15,$12
+  add $15,$9
   sub $15,$13
   sub $15,$13
-  add $15,$14
   add $15,$14
 lpe
 mov $0,$3
+add $0,50
 mul $0,21
-add $0,1050

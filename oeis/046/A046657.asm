@@ -1,22 +1,11 @@
 ; A046657: a(n) = A002088(n)/2.
-; Submitted by rajab
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,5,6,9,11,14,16,21,23,29,32,36,40,48,51,60,64,70,75,86,90,100,106,115,121,135,139,154,162,172,180,192,198,216,225,237,245,265,271,292,302,314,325,348,356,377,387,403,415,441,450,470,482,500,514,543,551,581,596,614,630,654,664,697,713,735,747,782,794,830,848,868,886,916,928,967,983,1010
+; Formula: a(n) = truncate((A049643(n)-2)/2)+1
 
 #offset 2
 
-sub $0,1
-mov $3,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  add $0,1
-  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $1,$0
-lpe
-mov $0,$1
+seq $0,49643 ; Number of fractions in Farey series of order n.
 sub $0,2
 div $0,2
 add $0,1

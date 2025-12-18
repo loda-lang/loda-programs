@@ -14,8 +14,7 @@ lpb $2
   seq $3,256306 ; Apply the transformation 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 0 to the digits of n written in base 6; do not convert back to base 10.
   seq $3,316866 ; Number of times 5 appears in decimal expansion of n.
   add $3,$4
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

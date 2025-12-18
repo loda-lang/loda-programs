@@ -1,5 +1,5 @@
 ; A380539: The second smallest prime not dividing n.
-; Submitted by Mads Nissen
+; Submitted by [SG]KidDoesCrunch
 ; 3,5,5,5,3,7,3,5,5,7,3,7,3,5,7,5,3,7,3,7,5,5,3,7,3,5,5,5,3,11,3,5,5,5,3,7,3,5,5,7,3,11,3,5,7,5,3,7,3,7,5,5,3,7,3,5,5,5,3,11,3,5,5,5,3,7,3,5,5,11,3,7,3,5,7,5,3,7,3,7
 
 #offset 1
@@ -20,6 +20,7 @@ lpb $0
   lpe
   add $2,1
   sub $0,1
+  bin $1,$0
   mul $1,$2
 lpe
-mov $0,$2
+mov $0,$1

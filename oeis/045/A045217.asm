@@ -1,13 +1,11 @@
 ; A045217: Numbers whose base-5 representation contains exactly three 0's and three 4's.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [SG]KidDoesCrunch
 ; 12524,12604,12620,13004,13020,13100,15004,15020,15100,15500,15749,16149,16229,16245,18149,18229,18245,18629,18645,18725,28149,28229,28245,28629,28645,28725,30629,30645,30725,31125
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-sub $2,97
+sub $2,98
 pow $2,4
 lpb $2
   mov $4,0
@@ -24,8 +22,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,21
-  equ $3,0
+  equ $3,21
   sub $0,$3
   add $1,1
   sub $2,$0

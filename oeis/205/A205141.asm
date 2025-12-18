@@ -1,11 +1,10 @@
 ; A205141: The number s(j) such that n divides s(k)-s(j), where s(j)=j*(3*j-1) and k is the least positive integer for which such a j exists.
-; Submitted by UBT - Mikeejones
+; Submitted by Science United
 ; 1,1,1,1,12,5,5,35,1,12,1,22,22,22,5,35,5,1,51,12,1,70,12,22,1,117,1,5,22,5,145,651,51,1,35,1,210,287,12,12,51,92,287,22,22,5,70,22,51,1,145,70,92,5,35,5,35,12,117,210
 
 #offset 1
 
 sub $0,1
-mov $3,0
 mov $4,$0
 add $0,1
 pow $4,5

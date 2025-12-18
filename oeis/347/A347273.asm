@@ -1,5 +1,5 @@
 ; A347273: Number of positive widths in the symmetric representation of sigma(n).
-; Submitted by Josemi
+; Submitted by John Napoli
 ; 1,3,4,7,6,11,8,15,13,18,12,23,14,24,23,31,18,35,20,39,32,36,24,47,31,42,40,55,30,59,32,63,48,54,45,71,38,60,56,79,42,83,44,84,73,72,48,95,57,93,72,98,54,107,72,111
 
 #offset 1
@@ -24,5 +24,4 @@ lpb $3
   add $2,1
   sub $3,$4
 lpe
-mov $0,$2
-sub $0,1
+add $0,$5

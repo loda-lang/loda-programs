@@ -1,15 +1,14 @@
 ; A291424: The arithmetic function u(n,4,3).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 10,8,10,4,5,6,7,4,9,5,10,4,10,7,5,4,10,6,10,4,7,8,10,4,5,8,9,4,10,5,10,4,10,8,5,4,10,8,10,4,10,6,10,4,5,8,10,4,7,5,10,4,10,6,5,4,10,8,10,4,10,8,7,4,5,6,10,4,10,5
 
 #offset 1
 
-sub $0,1
-mov $1,2
-add $1,$0
-gcd $0,2
 add $0,1
+mov $1,$0
+gcd $0,2
 lpb $0
+  add $0,1
   mov $2,3
   add $3,2
   mul $3,$0
@@ -20,7 +19,7 @@ lpb $0
     neq $4,1
     sub $3,$4
   lpe
-  add $2,1
   div $0,$2
 lpe
 mov $0,$2
+add $0,1

@@ -1,26 +1,18 @@
 ; A207978: Number of n X 2 nonnegative integer arrays with new values 0 upwards introduced in row major order and no element equal to any diagonal or antidiagonal neighbor (colorings ignoring permutations of colors).
-; Submitted by Science United
+; Submitted by kpmonaghan
 ; 1,2,7,67,1080,25287,794545,31858034,1573857867,93345011951,6514819011216,526593974392123,48658721593531669,5084549201524804642,595348294459678745663,77500341343460209843627,11140107960738185817545800,1757660562895916320583653791,302795242408200627025729083369,56688080938445266241921101306258,11485113222870318163291957527064355,2508603096131822559490018421946320055,588692667996038101613068201937364409952,147960468693650724691370654525509876842291,39715477721796005199433826541136902396333037
+; Formula: a(n) = -(0==(((2*n)==0)+2*n-1))+A000110(max(((2*n)==0)+2*n-2,0)+1)+A000110(max(((2*n)==0)+2*n-2,0))
 
 mul $0,2
 mov $1,$0
 equ $1,0
+add $0,$1
+sub $0,1
+equ $3,$0
+trn $0,1
 mov $2,$0
-add $2,$1
-sub $2,1
-mov $3,$2
-mov $5,2
-lpb $5
-  sub $5,1
-  mov $2,$3
-  add $2,$5
-  trn $2,1
-  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  mov $6,$5
-  mul $6,$2
-  add $4,$6
-lpe
-min $3,1
-mul $3,$2
-add $3,$4
-mov $0,$3
+seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $0,1
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $0,$2
+sub $0,$3

@@ -1,7 +1,7 @@
 ; A082209: a(1) = 1, a(n) = smallest number such that the concatenation of a(n-1) and a(n) is a square.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6,4,9,61,504,1,6
-; Formula: a(n) = a(n-6), a(8) = 6, a(7) = 1, a(6) = 504, a(5) = 61, a(4) = 9, a(3) = 4, a(2) = 6, a(1) = 1
+; Formula: 
 
 #offset 1
 
@@ -11,9 +11,8 @@ mov $4,4
 mov $5,9
 mov $6,61
 mov $7,504
-sub $0,1
 lpb $0
   rol $2,6
   sub $0,1
 lpe
-mov $0,$2
+mov $0,$7

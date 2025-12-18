@@ -1,13 +1,12 @@
 ; A028754: Nonsquares mod 41.
-; Submitted by jdio2
+; Submitted by [SG]KidDoesCrunch
 ; 3,6,7,11,12,13,14,15,17,19,22,24,26,27,28,29,30,34,35,38
 
 #offset 1
 
-sub $0,1
-mov $4,3
 mov $2,$0
-add $2,2
+mov $4,3
+sub $0,1
 pow $2,2
 lpb $2
   mul $4,2

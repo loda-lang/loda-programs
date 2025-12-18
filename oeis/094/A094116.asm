@@ -1,18 +1,25 @@
 ; A094116: Partial sums of A093348.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,1,2,2,7,11,16,20,25,25,26,26,27,27,32,36,41,45,50,50,51,51,52,52,77,101,126,150,175,195,216,236,257,277,302,326,351,375,400,420,441,461,482,502,527,551,576,600,625,625,626,626,627,627,632,636,641,645,650
 
 #offset 1
 
-mov $1,1
 sub $0,1
-min $0,132
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,93348 ; A 5-fractal "castle" starting with 0.
-  sub $0,1
-  add $1,$2
+mov $40,$0
+mov $42,$0
+lpb $42
+  clr $0,40
+  sub $42,1
+  mov $0,$40
+  sub $0,$42
+  lpb $0
+    mov $2,$1
+    mov $1,5
+    pow $1,$0
+    gcd $1,$0
+    sub $1,$2
+    sub $0,1
+  lpe
+  add $41,$1
 lpe
-mov $0,$1
-sub $0,1
+mov $0,$41

@@ -1,7 +1,7 @@
 ; A359295: Decimal expansion of hydrogen ionization energy in the simplified Bohr model (eV).
 ; Submitted by BrandyNOW
 ; 1,3,6,0,5,6,9,3,1,2
-; Formula: a(n) = -10*truncate((-10*truncate((truncate(((n-45)*(n-2)*(2*n-4)*(3*(n-2)^4+3*n-3))/42)+1)/10)+truncate(((n-45)*(n-2)*(2*n-4)*(3*(n-2)^4+3*n-3))/42)+11)/10)-10*truncate((truncate(((n-45)*(n-2)*(2*n-4)*(3*(n-2)^4+3*n-3))/42)+1)/10)+truncate(((n-45)*(n-2)*(2*n-4)*(3*(n-2)^4+3*n-3))/42)+11
+; Formula: a(n) = (-10*truncate((truncate(((n-45)*(n-2)*(2*n-4)*(3*(n-2)^4+3*n-3))/42)+1)/10)+truncate(((n-45)*(n-2)*(2*n-4)*(3*(n-2)^4+3*n-3))/42)+11)%10
 
 #offset 2
 

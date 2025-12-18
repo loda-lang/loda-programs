@@ -21,7 +21,6 @@ lpb $2
   pow $3,2
   mul $3,4
   nrt $3,2
-  add $3,1
   div $3,2
   sub $3,1
   mov $9,0
