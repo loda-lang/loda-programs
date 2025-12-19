@@ -4,35 +4,33 @@
 
 #offset 1
 
-mov $1,1
 mov $3,$0
+sub $0,1
 mul $3,7
 lpb $3
   max $3,1
   max $6,$2
   div $6,$3
   sub $7,$4
-  div $8,4
   add $8,$6
-  div $8,9
-  add $4,$1
-  mul $1,2
+  sub $4,$8
+  div $8,12
   sub $3,1
-  sub $4,$6
   add $4,$8
   add $4,$7
+  add $4,$6
   add $5,$7
   mul $7,2
   mov $8,$6
-  sub $8,$1
+  mul $1,2
   add $1,$6
   add $2,$1
   sub $2,$4
   sub $5,$1
+  add $6,$3
 lpe
 gcd $1,2
 add $1,$2
-sub $0,1
 mov $4,10
 pow $4,$0
 mul $4,2

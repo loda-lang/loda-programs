@@ -1,7 +1,7 @@
 ; A391266: Records in A391055.
-; Submitted by Philip Courte
+; Submitted by Science United
 ; 1,2,3,7,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28
-; Formula: a(n) = floor((6*((n-1)>=4)+6*((n-1)>=3)+2*n-2)/2)+1
+; Formula: a(n) = floor((6*((n-1)>=4)+6*((n-1)>=3)+2*n+1)/2)
 
 #offset 1
 
@@ -16,9 +16,6 @@ geq $1,4
 mul $1,2
 add $2,$1
 add $0,$2
-add $0,3
 add $2,$0
 add $0,$2
-sub $0,9
 div $0,2
-add $0,1
