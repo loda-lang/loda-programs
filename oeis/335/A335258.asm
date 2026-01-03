@@ -6,7 +6,6 @@
 
 sub $0,1
 mod $0,21
-mov $1,$0
 mov $2,$0
 add $2,$0
 bin $2,2
@@ -14,20 +13,22 @@ add $2,1
 mov $6,$2
 mul $6,8
 nrt $6,2
-sub $6,1
 div $6,2
 add $6,1
 pow $6,2
 sub $6,$2
-seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
+mul $0,2
+add $0,1
+mov $9,1
+fac $9,$0
+mov $11,4
+mul $11,$9
 mov $2,$6
 mul $2,8
 nrt $2,2
 div $2,2
 mov $3,$6
 add $3,$2
-mov $2,$3
-add $2,1
 mov $4,$3
 add $4,2
 mov $7,$4
@@ -38,16 +39,10 @@ div $7,2
 mov $8,$7
 add $8,1
 bin $8,2
-sub $4,$8
 sub $4,1
-mov $9,$7
-mod $9,2
-sub $7,$4
-mul $7,$9
-mul $9,$4
-sub $4,$9
-add $4,$7
-add $4,$2
+sub $4,$8
+add $4,$3
+mov $2,$3
 add $2,1
 mov $5,$2
 mul $5,8
@@ -69,6 +64,7 @@ sub $10,$2
 mov $2,$10
 seq $2,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
 mov $1,$2
-gcd $1,$0
+gcd $1,$11
+mov $0,$11
 div $0,$1
 dir $0,2

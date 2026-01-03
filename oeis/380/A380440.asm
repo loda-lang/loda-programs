@@ -1,21 +1,17 @@
 ; A380440: a(n) = 1 if n has no squarefree divisor d such that d^2 > n, otherwise 0.
-; Submitted by nkbr
+; Submitted by Science United
 ; 1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+; Formula: a(n) = min(max(4*n-4*(A075423(n)+1)^2+5,0),1)
 
 #offset 1
 
-mov $3,$0
-sub $0,1
-add $3,1
-lpb $3
-  mov $2,$0
-  add $2,1
-  seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  add $0,1
-  mov $1,2
-  mov $3,$0
-  div $3,$2
-  pow $3,2
-lpe
+mov $1,$0
+seq $1,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+add $1,1
+pow $1,2
+sub $1,$0
+sub $1,2
+mul $1,-4
+trn $1,3
+min $1,1
 mov $0,$1
-div $0,2

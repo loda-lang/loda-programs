@@ -1,22 +1,17 @@
 ; A382169: A382168 with duplicates removed.
-; Submitted by atannir
+; Submitted by win prion
 ; 0,1,7,17,38,74,119,185,263,368,504,657,847,1078,1331,1631,1956,2334,2769,3234,3762,4323,4953,5656,6397,7217,8120,9066,10101,11182,12358,13633,14959,16390,17930,19526,21237,23007,24898,26914,28994,31205,33483,35898
-; Formula: a(n) = truncate(b(n-1)/2), b(n) = truncate((sqrtint(5*n^2)+n)/2)^2+b(n-1)+truncate((sqrtint(5*n^2)+n)/2), b(0) = 0
 
 #offset 1
 
-sub $0,1
-lpb $0
-  mov $2,$0
-  mul $2,5
-  mul $2,$0
-  nrt $2,2
-  add $2,$0
-  div $2,2
-  sub $0,1
-  add $1,$2
-  pow $2,2
-  add $1,$2
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,0
+  sub $0,$2
+  mul $0,55
+  div $0,34
+  bin $0,2
+  add $1,$0
 lpe
 mov $0,$1
-div $0,2

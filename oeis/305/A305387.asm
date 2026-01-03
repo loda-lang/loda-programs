@@ -19,8 +19,7 @@ lpb $1
   mul $3,$4
   div $4,2
 lpe
-add $1,1
-equ $1,1
+equ $1,0
 mov $0,$1
 add $0,1
 mod $0,2

@@ -1,31 +1,25 @@
 ; A362874: Number of strongly magic quad squares that can be formed using cards from Quads-2^n deck.
-; Submitted by loader3229
+; Submitted by DougSloane
 ; 322560,19998720,839946240,30478049280,1036253675520,34162943754240,1109482268590080,35765515020533760,1148704188306554880,36825972627862978560,1179511064637886955520,37761640503165258301440,1208649138156256509296640,38681199166714368680263680
 
 #offset 4
 
-mov $1,840
-mov $2,52080
-mov $3,2187360
-mov $4,79369920
-mov $5,2698577280
 sub $0,4
 lpb $0
-  mul $1,32768
-  rol $1,5
-  mov $6,$1
-  mul $6,-31744
-  add $5,$6
-  mov $6,$2
-  mul $6,9920
-  add $5,$6
-  mov $6,$3
-  mul $6,-1240
-  add $5,$6
-  mov $6,$4
-  mul $6,62
   sub $0,1
-  add $5,$6
+  mul $2,2
+  add $2,1
+lpe
+add $2,1
+mov $3,1
+mov $0,11
+lpb $0
+  sub $0,2
+  mov $1,$3
+  mul $2,2
+  mul $3,$2
+  sub $3,$1
+  add $1,$3
 lpe
 mov $0,$1
-mul $0,384
+mul $0,32

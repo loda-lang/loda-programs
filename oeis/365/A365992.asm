@@ -7,6 +7,5 @@
 
 mov $1,$0
 seq $1,365991 ; Square array read by ascending antidiagonals: T(n,k) is the k-th iterate of the 5x+1 function started at n, with n >= 1 and k >= 0.
-sub $0,1
 mov $0,$1
 mod $0,2

@@ -1,17 +1,19 @@
 ; A327687: Partial sums of Pisano periods (A001175).
-; Submitted by Odd-Rod
+; Submitted by Science United
 ; 1,4,12,18,38,62,78,90,114,174,184,208,236,284,324,348,384,408,426,486,502,532,580,604,704,788,860,908,922,1042,1072,1120,1160,1196,1276,1300,1376,1394,1450,1510,1550,1598,1686,1716,1836,1884,1916,1940,2052,2352,2424,2508,2616,2688,2708,2756,2828,2870,2928,3048,3108,3138,3186,3282,3422,3542,3678,3714,3762,4002,4072,4096,4244,4472,4672,4690,4770,4938,5016,5136
-; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+A001175(n+1), b(0) = 0
 
 #offset 1
 
 sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,1175 ; Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n.
-  sub $0,1
-  add $1,$2
-lpe
+mov $3,$0
+mov $1,$0
 add $1,1
-mov $0,$1
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,1
+  seq $0,1175 ; Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n.
+  add $2,$0
+lpe
+mov $0,$2

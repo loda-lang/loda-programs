@@ -1,5 +1,5 @@
 ; A343984: a(n) = number of n-digit singular subwords of the Thue-Morse word A010060; see Comments.
-; Submitted by Science United
+; Submitted by Checco
 ; 0,2,2,8,8,12,18,20,20,24,28,32,38,40,42,44,44,48,52,56,60,64,68,72,78,80,82,84,86,88,90,92,92,96,100,104,108,112,116,120,124,128,132,136,140,144,148,152,158,160,162,164,166,168,170,172,174,176,178
 
 #offset 1
@@ -34,5 +34,3 @@ min $1,1
 mul $1,$0
 mov $0,$4
 sub $0,$1
-div $0,2
-mul $0,2

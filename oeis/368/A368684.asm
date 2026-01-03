@@ -1,5 +1,5 @@
 ; A368684: Number of partitions of n into 2 parts such that the smaller part divides both n and floor(n/2).
-; Submitted by crashtech
+; Submitted by JagDoc
 ; 0,1,1,2,1,2,1,3,1,2,1,4,1,2,1,4,1,3,1,4,1,2,1,6,1,2,1,4,1,4,1,5,1,2,1,6,1,2,1,6,1,4,1,4,1,2,1,8,1,3,1,4,1,4,1,6,1,2,1,8,1,2,1,6,1,4,1,4,1,4,1,9,1,2,1,4,1,4,1,8
 
 #offset 1
@@ -17,8 +17,7 @@ lpb $2
   add $3,4
   mov $4,2
   mov $5,$0
-  sub $5,1
-  neq $5,0
+  neq $5,1
   sub $2,$5
 lpe
 mov $0,$1

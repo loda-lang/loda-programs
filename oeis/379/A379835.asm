@@ -1,16 +1,15 @@
 ; A379835: Number of 1's in binary expansion of Lucas(n).
-; Submitted by Eric
+; Submitted by Kingda Toro
 ; 1,1,2,1,3,3,2,4,5,3,6,5,3,3,6,5,7,9,6,5,9,10,9,11,6,9,7,10,15,11,10,15,13,11,11,15,15,12,15,17,15,11,14,15,20,15,18,17,13,11,22,20,23,23,19,22,22,22,28,25,23,19,25,27,27,24,26,25,23,27,23,27
-; Formula: a(n) = sumdigits(b(n)+c(n),2)*sign(b(n)+c(n)), b(n) = 4*b(n-2)+2*b(n-1), b(3) = 32, b(2) = 12, b(1) = 2, b(0) = 2, c(n) = c(n-1), c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = sumdigits(c(n)+1,2), b(n) = b(n-1)+c(n-1)+1, b(1) = 1, b(0) = 0, c(n) = max(c(n-1)+1,b(n-1)), c(1) = 1, c(0) = 0
 
-mov $3,2
 lpb $0
   sub $0,1
+  add $3,1
   mov $1,$3
-  mul $1,5
-  add $3,$2
+  max $3,$2
   add $2,$1
 lpe
-add $4,$3
-dgs $4,2
-mov $0,$4
+mov $0,$3
+add $0,1
+dgs $0,2

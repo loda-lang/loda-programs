@@ -1,19 +1,18 @@
 ; A373395: Number of minimum connected dominating sets in the n-triangular graph.
-; Submitted by BrandyNOW
+; Submitted by iBezanilla
 ; 1,3,12,80,750,9072,134456,2359296,47829690,1100000000,28295372292,804925734912,25090245516518,850408685629440,31139121093750000,1224979098644774912,51523614927176684274,2307351090835290783744,109607737155696043718780,5505024000000000000000000
+; Formula: a(n) = floor(((n-1)^(n-1))/((n-1)^2))*(sqrtint((n-1)^2)+1)-(1==(n-1))
 
 #offset 2
 
-sub $0,2
-mov $1,1
-mov $3,$0
-lpb $0
-  sub $0,$1
-  add $2,$3
-  add $2,1
-  mul $1,$2
-  add $2,1
-  pow $1,$0
-  mul $1,$2
-lpe
-mov $0,$1
+sub $0,1
+mov $1,$0
+mov $2,1
+equ $2,$0
+pow $0,$1
+pow $1,2
+div $0,$1
+nrt $1,2
+add $1,1
+mul $0,$1
+sub $0,$2

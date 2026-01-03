@@ -1,46 +1,45 @@
 ; A360280: Squares that are the hypotenuse of a primitive Pythagorean triangle.
-; Submitted by Minoer
+; Submitted by Merlin2331
 ; 25,169,289,625,841,1369,1681,2809,3721,4225,5329,7225,7921,9409,10201,11881,12769,15625,18769,21025,22201,24649,28561,29929,32761,34225,37249,38809,42025,48841,52441,54289,58081,66049,70225,72361,76729,78961,83521,85849,93025,97969
 
 #offset 1
 
 sub $0,1
-mov $3,3
-pow $3,$0
-lpb $3
-  mov $4,$2
-  mov $6,0
-  mov $7,3
-  add $2,4
-  add $4,5
-  lpb $4
-    mov $8,$4
-    lpb $8
-      mov $9,$4
-      mod $9,$7
-      add $7,4
-      sub $8,$9
+mov $2,3
+pow $2,$0
+lpb $2
+  mov $3,$1
+  mov $5,0
+  mov $6,3
+  add $1,4
+  add $3,5
+  lpb $3
+    mov $7,$3
+    sub $7,5
+    lpb $7
+      mov $8,$3
+      mod $8,$6
+      add $6,4
+      sub $7,$8
     lpe
-    lpb $4
-      dif $4,$7
+    lpb $3
+      dif $3,$6
     lpe
-    add $6,$7
+    add $5,$6
   lpe
-  mov $4,$6
-  equ $4,0
-  sub $0,$4
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mul $3,$5
-  sub $3,1
+  mov $3,$5
+  equ $3,0
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,5
 mul $0,2
 pow $0,2
-div $0,32
-sub $1,$0
-sub $0,$1
+div $0,16
 mul $0,4
 add $0,1

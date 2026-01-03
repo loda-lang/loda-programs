@@ -1,33 +1,42 @@
 ; A282326: Greater of twin primes congruent to 1 (mod 30).
-; Submitted by Science United
+; Submitted by pm120
 ; 31,61,151,181,241,271,421,571,601,661,811,1021,1051,1231,1291,1321,1621,1951,2131,2311,2341,2551,2731,2791,2971,3001,3121,3301,3331,3361,3391,3541,3931,4021,4051,4231,4261,4651,4801,5011,5101,5281,5521,5641,5851,5881,6091,6271,6301,6361,6451,6571,6661,6691,6781,6871,6961,7351,7561,7591,7951,8011,8221,8431,8821,8971,9001,9241,9421,9631,9721,9931,10141,10501,10531,10711,10861,10891,11071,11161
 
 #offset 1
 
+sub $0,1
+mov $1,1
+mov $5,-1
 mov $2,$0
-sub $2,1
-mov $3,$0
-pow $3,4
-lpb $3
-  mov $1,$5
-  mul $1,3
-  add $1,1
-  seq $1,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $1,2
-  sub $2,$1
-  add $2,1
-  add $5,9
-  add $5,$4
-  mov $4,$2
+add $2,8
+pow $2,4
+lpb $2
+  mov $7,$6
+  add $7,3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
+  mov $3,$6
+  sub $3,$7
+  add $3,1
+  gcd $7,2
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  gcd $1,2
+  add $1,2
+  mov $4,$0
   max $4,0
-  equ $4,$2
-  sub $2,$4
-  sub $3,$4
+  equ $4,$0
+  add $5,$1
+  add $5,4
+  add $5,$1
+  mul $2,$4
+  sub $2,18
+  mov $6,$5
+  mul $6,3
+  div $6,2
 lpe
-mov $2,$5
-div $2,10
-mul $2,6
-add $2,6
-mov $0,$2
-mul $0,5
-add $0,1
+mov $0,$6
+div $0,30
+mul $0,30
+add $0,31

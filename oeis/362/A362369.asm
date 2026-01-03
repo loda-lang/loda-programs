@@ -1,13 +1,9 @@
 ; A362369: Triangle read by rows, T(n, k) = binomial(n, k) * k! * Stirling2(n-k, k), for n >= 0 and 0 <= k <= n//2, where '//' denotes integer division.
-; Submitted by Science United
+; Submitted by sleiman
 ; 1,0,0,2,0,3,0,4,12,0,5,60,0,6,210,120,0,7,630,1260,0,8,1736,8400,1680,0,9,4536,45360,30240,0,10,11430,216720,327600,30240,0,11,28050,956340,2772000,831600,0,12,67452,3993000,20207880,13305600,665280
 
 add $0,1
 mov $3,$0
-mov $8,0
-mov $10,0
-mov $11,0
-mov $12,0
 mul $0,4
 sub $0,3
 nrt $0,2
@@ -55,7 +51,7 @@ lpb $6
   add $11,$10
   mov $12,1
   add $8,1
-  mul $10,0
+  mov $10,0
 lpe
 mov $0,$11
 mul $0,$1

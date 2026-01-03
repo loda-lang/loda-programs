@@ -1,18 +1,18 @@
 ; A307168: First class of all proper positive solutions x1(n) = a(n) of the Pell equation x^2 - 7*y^2 = 9.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 11,172,2741,43684,696203,11095564,176832821,2818229572,44914840331,715819215724,11408192611253,181815262564324,2897636008417931,46180360872122572,735988137945543221,11729629846256568964,186938089402159560203,2979279800588296394284,47481538720010582748341
+; Formula: a(n) = floor(b(n)/2), b(n) = 14*c(n-1)+b(n-1), b(1) = 22, b(0) = 8, c(n) = 15*c(n-1)+b(n-1), c(1) = 23, c(0) = 1
 
 #offset 1
 
-mov $3,8
-mov $4,1
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $2,$4
-  mul $2,14
+mov $2,8
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,14
+  add $2,$1
   add $3,$2
-  add $4,$3
 lpe
-mov $0,$3
+mov $0,$2
 div $0,2

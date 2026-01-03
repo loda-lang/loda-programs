@@ -1,5 +1,5 @@
 ; A347157: Sum of cubes of distinct prime divisors of n that are < sqrt(n).
-; Submitted by Jamie Morken(w4)
+; Submitted by Carl@Home
 ; 0,0,0,0,0,8,0,8,0,8,0,35,0,8,27,8,0,35,0,8,27,8,0,35,0,8,27,8,0,160,0,8,27,8,125,35,0,8,27,133,0,35,0,8,152,8,0,35,0,133,27,8,0,35,125,351,27,8,0,160,0,8,370,8,125,35,0,8,27,476,0,35,0,8,152
 
 #offset 1
@@ -11,13 +11,12 @@ lpb $0
   sub $2,1
   mov $3,$2
   dif $3,$0
-  equ $3,$2
+  neq $3,$2
   mod $0,2
   pow $0,$1
   mul $0,$4
   pow $0,3
   sub $2,$4
-  equ $3,0
   mul $3,$0
   mov $0,$2
   add $1,$3

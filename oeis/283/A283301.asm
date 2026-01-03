@@ -1,8 +1,12 @@
 ; A283301: Numerators of coefficients at even powers in Taylor series expansion of log(x/sin(x)).
-; Submitted by shiva
+; Submitted by Science United
 ; 0,1,1,1,1,1,691,2,3617,43867,174611,155366,236364091,1315862,3392780147,6892673020804,7709321041217,151628697551,26315271553053477373,308420411983322,261082718496449122051,3040195287836141605382,2530297234481911294093
-; Formula: a(n) = truncate(A350972(max(n-1,0)+n)/gcd(A350972(max(n-1,0)+n),A052653(2*n)))
 
+mov $3,144
+lpb $0
+  mov $0,$3
+  mov $3,0
+lpe
 mov $1,$0
 trn $1,1
 add $1,$0

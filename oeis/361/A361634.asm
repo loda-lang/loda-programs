@@ -16,8 +16,7 @@ lpb $2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $5,$3
   mov $3,$5
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,198788 ; Array T(k,n) read by descending antidiagonals: Last survivor positions in Josephus problem for n numbers and a count of k, n >= 1, k >= 1.
   equ $3,1
   sub $0,$3
