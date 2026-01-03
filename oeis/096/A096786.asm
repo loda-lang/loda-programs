@@ -1,47 +1,17 @@
 ; A096786: Numbers n such that both n and n+1 are composite numbers that sum up to a Pythagorean prime (i.e., of the form 4k+1).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 8,14,20,26,44,48,50,54,56,68,74,86,90,98,114,116,120,128,134,140,146,158,168,174,176,186,194,200,204,216,224,230,254,260,278,284,288,296,300,308,320,326,338,350,354,380,384,386,398,404,410,414,426,428,440
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,3
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,2
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,1
-  mov $3,$5
-  mul $3,$1
-  add $3,$5
-  add $3,1
-  mov $6,$3
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $6,1
-  sub $3,1
-  mov $8,2
-  sub $8,$3
-  mov $7,$8
-  equ $7,0
-  add $8,$7
-  div $3,$8
-  mul $3,$6
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+seq $0,96785 ; Primes of form 4k+1 which are the sum of two consecutive composite numbers.
+div $0,2
+lpb $0
+  mov $1,$0
+  add $2,1
+  sub $0,1
+  mul $0,2
+  sub $0,$1
 lpe
-mov $0,$1
+mov $0,$2
 mul $0,2
-sub $0,8
-div $0,4
-mul $0,2
-add $0,6

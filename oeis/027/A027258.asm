@@ -12,7 +12,7 @@ lpb $0
   max $1,0
   add $1,4
   seq $1,26083 ; a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is an integer, s(0) = 0 = s(n), |s(i) - s(i-1)| = 1 for i = 1,2,3; |s(i) - s(i-1)| <= 1 for i >= 4. Also a(n) = T(n,n), where T is the array defined in A026082.
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1
 div $0,2

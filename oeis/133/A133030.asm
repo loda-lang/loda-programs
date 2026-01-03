@@ -1,11 +1,9 @@
 ; A133030: Divisors of 5130.
-; Submitted by [TA]crashtech
+; Submitted by Dongha Hwang
 ; 1,2,3,5,6,9,10,15,18,19,27,30,38,45,54,57,90,95,114,135,171,190,270,285,342,513,570,855,1026,1710,2565,5130
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mul $1,30
   mov $3,$2

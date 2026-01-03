@@ -1,5 +1,5 @@
 ; A046992: a(n) = Sum_{k=1..n} pi(k) (cf. A000720).
-; Submitted by Just Jake
+; Submitted by skildude
 ; 0,1,3,5,8,11,15,19,23,27,32,37,43,49,55,61,68,75,83,91,99,107,116,125,134,143,152,161,171,181,192,203,214,225,236,247,259,271,283,295,308,321,335,349,363,377,392,407,422,437,452,467,483,499,515,531,547,563,580,597,615,633,651,669,687,705,724,743,762,781,801,821,842,863,884,905,926,947,969,991
 
 #offset 1
@@ -8,17 +8,17 @@ sub $0,1
 mov $28,$0
 mov $30,$0
 lpb $30
-  clr $0,28
   sub $30,1
   mov $0,$28
   sub $0,$30
+  ror $3,18
   lpb $0
-    mov $1,$0
-    add $1,1
-    seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-    add $2,$1
+    mov $4,$0
+    add $4,1
+    seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     sub $0,1
+    add $3,$4
   lpe
-  add $29,$2
+  add $29,$3
 lpe
 mov $0,$29

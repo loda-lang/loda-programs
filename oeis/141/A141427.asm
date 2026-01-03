@@ -1,17 +1,21 @@
 ; A141427: a(n) = phi(A067775(n)).
-; Submitted by fzs600
+; Submitted by Just Jake
 ; 1,4,10,16,22,28,30,40,46,52,58,60,70,72,82,88,100,106,112,130,136,138,148,150,156,166,172,178,180,190,196,198,210,226,232,238,240,250,256,262,268,270,280,282,292,310,316,330,336,346,352,358,366,372,382,388
 
 #offset 1
 
 sub $0,1
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,105575 ; Largest primes < numbers of the form 6k (duplicates removed).
   sub $0,2
   mov $1,$0
+  add $2,6
   mov $0,0
+lpe
+lpb $1
+  mov $1,0
+  sub $1,$2
 lpe
 mov $0,$1
 add $0,1

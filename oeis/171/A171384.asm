@@ -12,7 +12,6 @@ seq $2,40 ; The prime numbers.
 div $2,2
 mov $0,$2
 mul $0,2
-add $0,1
 seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
 dif $0,3
 add $0,1

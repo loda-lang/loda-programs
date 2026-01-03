@@ -5,13 +5,20 @@
 #offset 1
 
 sub $0,1
-mov $1,$0
-dif $1,$0
-add $1,1
-max $0,1
-seq $0,40 ; The prime numbers.
-mul $1,$0
-mov $0,$1
-div $0,2
+mov $3,2
+lpb $3
+  sub $3,1
+  add $2,2
+  add $0,$3
+  trn $0,1
+  lpb $0
+    mov $1,$0
+    mov $2,$0
+    seq $2,28815 ; a(n) = prime(n) + 1 (starting with 1).
+    div $0,13
+    bin $0,$1
+  lpe
+lpe
+mov $0,$2
 mul $0,2
-sub $0,1
+sub $0,7

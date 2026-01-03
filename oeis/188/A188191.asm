@@ -1,19 +1,17 @@
 ; A188191: Positions of 1 in A188189; complement of A188190.
-; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
+; Submitted by Science United
 ; 1,5,6,9,10,13,14,17,18,22,23,26,27,30,31,34,35,39,40,43,44,47,48,51,52,56,57,60,61,64,65,68,69,73,74,77,78,81,82,85,86,89,90,94,95,98,99,102,103,106,107,111,112,115,116,119,120,123,124,128,129,132,133,136,137,140,141,145,146,149,150,153,154,157,158
-; Formula: a(n) = -((n-1)==0)+sqrtint(5*floor(n/2)^2)+n+1
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-equ $1,0
+div $1,2
+pow $1,2
+mul $1,5
+nrt $1,2
+add $0,$1
 add $0,1
-mov $2,$0
-div $2,2
-pow $2,2
-mul $2,5
-nrt $2,2
-sub $0,$1
-add $0,$2
-add $0,1
+lpb $0
+  mul $0,2
+  sub $0,3
+lpe

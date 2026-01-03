@@ -5,19 +5,18 @@
 #offset 1
 
 sub $0,1
+mov $4,$0
+mov $1,1
 mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
   add $0,1
-  seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
-  lpb $0
-    mov $4,$0
-    mov $0,0
-  lpe
-  add $2,$4
+  mov $2,$0
+  seq $2,1358 ; Semiprimes (or biprimes): products of two primes.
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1
+sub $0,1

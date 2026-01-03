@@ -4,29 +4,21 @@
 
 #offset 1
 
-mov $11,2
-lpb $11
-  sub $11,1
-  add $0,$11
-  sub $0,2
-  mov $4,$0
-  mov $6,$0
-  lpb $6
-    clr $0,3
-    sub $6,1
-    mov $0,$4
-    sub $0,$6
-    add $0,1
-    lpb $0
-      sub $0,1
-      add $1,1
-      seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-    lpe
-    add $5,$1
-  lpe
-  mov $12,$11
-  mul $12,$5
-  add $10,$12
+sub $0,1
+mov $27,$0
+mov $29,$0
+add $29,1
+lpb $29
+  clr $0,27
+  sub $29,1
+  mov $0,$27
+  sub $0,$29
+  mov $26,$0
+  equ $26,0
+  add $0,$26
+  seq $0,40 ; The prime numbers.
+  add $3,$0
+  add $28,$3
 lpe
-mov $0,$10
-add $0,1
+mov $0,$28
+sub $0,1

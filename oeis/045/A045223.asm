@@ -1,5 +1,5 @@
 ; A045223: Numbers whose base-5 representation contains exactly one 1 and two 2's.
-; Submitted by LM
+; Submitted by Science United
 ; 37,57,61,137,177,185,188,189,192,197,212,237,257,261,277,285,288,289,292,297,301,305,308,309,316,321,332,336,357,361,412,432,436,537,557,561,637,677,685,688,689,692,697,712,737,877
 
 #offset 1
@@ -21,8 +21,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,2
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

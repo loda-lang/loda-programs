@@ -1,13 +1,11 @@
 ; A018122: Powers of fifth root of 3 rounded up.
-; Submitted by Aurum
+; Submitted by loader3229
 ; 1,2,2,2,3,3,4,5,6,8,9,12,14,18,22,27,34,42,53,66,81,101,126,157,196,243,303,378,470,586,729,909,1132,1410,1756,2187,2725,3394,4228,5267,6561,8174,10182,12684,15801,19683
-; Formula: a(n) = sqrtnint(9^n-2^n,10)+1
+; Formula: a(n) = sqrtnint(3^n-1,5)+1
 
-mov $2,2
-pow $2,$0
-mov $1,9
+mov $1,3
 pow $1,$0
-sub $1,$2
-nrt $1,10
+sub $1,1
+nrt $1,5
 mov $0,$1
 add $0,1

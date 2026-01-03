@@ -10,8 +10,7 @@ mul $0,2
 lpb $0
   div $0,2
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,155504 ; Numbers of the form (3h+1)*3^(k+1) listed in increasing order.
   mov $0,1
 lpe

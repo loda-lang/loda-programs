@@ -1,10 +1,9 @@
 ; A018087: Powers of fourth root of 15 rounded down.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,1,3,7,15,29,58,114,225,442,871,1714,3375,6641,13071,25724,50625,99629,196069,385863,759375,1494442,2941046,5787949,11390625,22416632,44115700,86819243,170859375
-; Formula: a(n) = sqrtint(sqrtint(15^n))
+; Formula: a(n) = sqrtnint(15^n,4)
 
 mov $1,15
 pow $1,$0
+nrt $1,4
 mov $0,$1
-nrt $0,2
-nrt $0,2

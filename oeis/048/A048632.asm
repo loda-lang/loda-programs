@@ -1,8 +1,13 @@
 ; A048632: Differences between factorials and Xfactorials: A048631 - A000142.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by teoparas
 ; 0,0,0,0,0,0,448,3136,25088,238080,2780160,32409600,439263232,5793579008,84589174784,1277254508544,20436072136704,347559326515200,6269816107433984,119673237950431232,2402480754490605568,50578266728651816960,1116823836321860550656
-; Formula: a(n) = n!-A048631(n)
 
+mov $3,239
+lpb $0
+  mov $0,77
+  min $3,1
+  sub $0,$3
+lpe
 mov $2,$0
 seq $2,48631 ; Xfactorials - like factorials but use carryless GF(2)[ X ] polynomial multiplication.
 mov $1,1

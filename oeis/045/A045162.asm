@@ -1,12 +1,11 @@
 ; A045162: Numbers whose base-5 representation contains exactly one 0 and one 1.
-; Submitted by Goldislops
+; Submitted by Science United
 ; 5,27,28,29,35,40,45,51,55,76,80,101,105,137,138,139,142,143,144,147,148,149,177,178,179,185,190,195,202,203,204,210,215,220,227,228,229,235,240,245,257,258,259,261,266,271,277,278
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
+add $2,2
 pow $2,4
 lpb $2
   mov $4,-1

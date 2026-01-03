@@ -1,5 +1,5 @@
 ; A121448: Triangle read by rows: T(n,k) is the number of binary trees with n edges and having k vertices of outdegree 1 (n>=0, k>=0). A binary tree is a rooted tree in which each vertex has at most two children and each child of a vertex is designated as its left or right child.
-; Submitted by Sphynx
+; Submitted by Science United
 ; 1,0,2,1,0,4,0,6,0,8,2,0,24,0,16,0,20,0,80,0,32,5,0,120,0,240,0,64,0,70,0,560,0,672,0,128,14,0,560,0,2240,0,1792,0,256,0,252,0,3360,0,8064,0,4608,0,512,42,0,2520,0,16800,0,26880,0,11520,0,1024,0,924,0,18480,0
 
 mov $1,$0
@@ -18,8 +18,6 @@ add $2,$1
 mod $2,2
 mul $2,2
 pow $2,$1
-mov $1,$2
-div $1,2
 mov $4,$0
 mul $4,8
 nrt $4,2
@@ -40,4 +38,5 @@ bin $4,$6
 add $6,1
 div $4,$6
 mul $0,$4
-mul $0,$1
+mul $0,$2
+div $0,2

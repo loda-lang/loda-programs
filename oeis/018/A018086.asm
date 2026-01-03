@@ -1,12 +1,11 @@
 ; A018086: Powers of fourth root of 14 rounded up.
-; Submitted by Josemi
+; Submitted by loader3229
 ; 1,2,4,8,14,28,53,102,196,380,734,1419,2744,5308,10268,19861,38416,74310,143740,278041,537824,1040333,2012354,3892568,7529536,14564656,28172944,54495952,105413504,203905180
-; Formula: a(n) = sqrtint(sqrtint(max(14^n-2,0)))+1
+; Formula: a(n) = sqrtnint(14^n-1,4)+1
 
 mov $1,14
 pow $1,$0
-trn $1,2
+sub $1,1
+nrt $1,4
 mov $0,$1
-nrt $0,2
-nrt $0,2
 add $0,1

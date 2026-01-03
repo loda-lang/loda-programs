@@ -1,16 +1,18 @@
 ; A105399: Largest prime <= numbers of the form 6k+3 (duplicates removed).
-; Submitted by vaughan
+; Submitted by Science United
 ; 3,7,13,19,23,31,37,43,47,53,61,67,73,79,83,89,97,103,109,113,127,131,139,151,157,163,167,173,181,193,199,211,223,229,233,241,251,257,263,271,277,283,293,307,313,317,331,337,349,353,359,367,373,379,383,389,397,401,409,421,433,439,443,449,457,463,467,479,487,491,499,503,509,523,541,547,557,563,571,577
 
 #offset 1
 
 sub $0,1
 lpb $0
-  mov $1,$0
-  max $1,1
-  seq $1,136798 ; First term in a sequence of at least 3 consecutive composite integers.
-  sub $1,4
-  mov $0,0
+  min $0,1
+  sub $0,2
 lpe
-mov $0,$1
-add $0,3
+add $0,2
+seq $0,25584 ; Primes p such that p-2 is not a prime.
+seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+sub $0,7
+div $0,2
+mul $0,2
+add $0,7

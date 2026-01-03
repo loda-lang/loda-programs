@@ -1,5 +1,5 @@
 ; A023621: Convolution of Lucas numbers and A000201.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by shiva
 ; 1,6,17,37,74,136,239,409,686,1139,1874,3066,4999,8129,13196,21398,34671,56152,90911,147155,238163,385419,623689,1009220,1633025,2642367,4275519,6918017
 
 #offset 1
@@ -17,8 +17,6 @@ lpb $2
   add $3,$0
   add $4,$3
 lpe
-add $5,1
 mul $5,2
 add $4,$5
 mov $0,$4
-sub $0,2

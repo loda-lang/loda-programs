@@ -1,22 +1,14 @@
 ; A135249: a(n) = number of bits in the binary expansion of A046967(n).
-; Submitted by Science United
+; Submitted by rajab
 ; 2,4,16,106,1156,15016,255256,4849846,111546436,3234846616,100280245066,3710369067406,152125131763606,6541380665835016,307444891294245706,16294579238595022366,961380175077106319536,58644190679703485491636,3929160775540133527939546,278970415063349480483707696
+; Formula: a(n) = truncate((A002110(n)-2)/2)+2
 
 #offset 1
 
-seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-mov $1,$0
-mul $1,10
-lpb $0
-  mov $0,3
-  mul $1,3
-lpe
-mov $3,$0
-add $3,5
 mov $2,$0
-mul $2,$3
-add $1,$2
+seq $2,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+rol $1,5
 mov $0,$1
-sub $0,84
-div $0,60
+sub $0,2
+div $0,2
 add $0,2

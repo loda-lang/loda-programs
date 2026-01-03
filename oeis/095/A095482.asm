@@ -11,8 +11,7 @@ mov $5,$0
 equ $5,1
 mov $0,0
 neq $1,0
-mul $1,48
-sub $1,3
+add $1,44
 lpb $1
   mov $4,$1
   mod $4,$2

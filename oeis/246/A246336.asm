@@ -1,13 +1,15 @@
 ; A246336: Partial sums of A151548.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 1,4,9,16,21,32,49,64,69,80,97,116,137,176,225,256,261,272,289,308,329,368,417,452,473,512,565,624,705,832,961,1024,1029,1040,1057,1076,1097,1136,1185,1220,1241,1280,1333,1392,1473,1600,1729,1796,1817,1856,1909,1968,2049,2176,2309,2400,2481,2612,2777,2976,3265,3648,3969,4096,4101,4112,4129,4148,4169,4208,4257,4292,4313,4352,4405,4464,4545,4672,4801,4868
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A151548(n), b(0) = 0
 
-lpb $0
-  mov $2,$0
-  seq $2,151548 ; When A160552 is regarded as a triangle with rows of lengths 1, 1, 2, 4, 8, 16, ..., this is what the rows converge to.
-  sub $0,1
-  add $1,$2
+mov $1,$0
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$1
+  sub $0,$3
+  seq $0,151548 ; When A160552 is regarded as a triangle with rows of lengths 1, 1, 2, 4, 8, 16, ..., this is what the rows converge to.
+  add $2,$0
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2

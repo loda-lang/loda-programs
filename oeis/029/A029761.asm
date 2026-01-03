@@ -17,9 +17,9 @@ lpb $10
     sub $7,1
     mov $0,$5
     sub $0,$7
-    mov $1,$0
-    seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-    add $6,$1
+    mov $2,$0
+    seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+    add $6,$2
   lpe
   add $9,$6
 lpe

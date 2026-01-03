@@ -8,6 +8,3 @@
 seq $0,23719 ; Numbers with exactly two 3's in their base 4 expansion.
 add $0,1
 seq $0,23725 ; Numbers with no 1's in their base-5 expansion.
-sub $0,4
-mov $1,$0
-add $0,4

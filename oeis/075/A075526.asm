@@ -1,24 +1,10 @@
 ; A075526: a(n) = A008578(n+2) - A008578(n+1).
-; Submitted by Conan
+; Submitted by iBezanilla
 ; 1,1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8
+; Formula: a(n) = A013632(A000040(max(n,1)))
 
-mov $27,$0
-mov $29,2
-lpb $29
-  clr $0,27
-  sub $29,1
-  mov $0,$27
-  add $0,$29
-  max $0,1
-  seq $0,40 ; The prime numbers.
-  sub $9,1
-  add $9,$0
-  mov $30,$29
-  mul $30,$9
-  mov $0,$9
-  add $28,$30
-lpe
-min $27,1
-mul $27,$0
-mov $0,$28
-sub $0,$27
+mov $1,$0
+max $1,1
+seq $1,40 ; The prime numbers.
+seq $1,13632 ; Difference between n and the next prime greater than n.
+mov $0,$1

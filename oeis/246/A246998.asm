@@ -1,11 +1,13 @@
 ; A246998: Multiplicity of the zero at x=1 of the characteristic polynomial P_n^{C0+}.
-; Submitted by Penguin
+; Submitted by gingavasalata
 ; 1,2,2,3,3,5,5,8,9,14,16,26,31,49,64,99,133,209,291,455,657,1022,1510,2359,3545,5536,8442,13201,20319,31836,49353,77436,120711,189674,296854,467160,733363,1155647,1818594,2869378,4524081,7146483
-; Formula: a(n) = truncate((A000045(truncate((n-2)/2)+3)+A032190(n)+1)/2)
+; Formula: a(n) = truncate((A000045(truncate((min(n-1,66)-1)/2)+3)+A032190(min(n-1,66)+1)+1)/2)
 
 #offset 1
 
-sub $0,2
+sub $0,1
+min $0,66
+sub $0,1
 mov $1,$0
 div $0,2
 add $0,3

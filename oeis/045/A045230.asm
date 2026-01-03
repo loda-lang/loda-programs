@@ -1,13 +1,12 @@
 ; A045230: Numbers whose base-5 representation contains exactly three 1's and one 2.
-; Submitted by LM
+; Submitted by Science United
 ; 157,161,181,281,657,661,681,757,761,777,785,788,789,792,797,801,805,808,809,816,821,832,836,857,861,881,901,905,908,909,916,921,956,981,1032,1036,1056,1157,1161,1181,1281,1381,1401
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
-pow $2,8
+add $2,8
+pow $2,4
 lpb $2
   mov $4,-6
   mov $3,$1
@@ -21,8 +20,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,2
-  equ $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,5 +1,5 @@
 ; A191568: Numbers k such that k*(k+1)^k+1 is prime.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Dave Studdert
 ; 1,2,3,9,10,14,33,36
 
 #offset 1
@@ -12,8 +12,6 @@ lpb $0
   mul $4,2
   add $1,1
   mov $3,$2
-  pow $3,2
-  mul $3,$2
   mul $3,$4
   mod $3,3
   sub $4,2

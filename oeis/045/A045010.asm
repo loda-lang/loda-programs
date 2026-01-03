@@ -1,11 +1,11 @@
 ; A045010: Numbers whose base-3 representation contains exactly four 0's and one 2.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 162,245,249,261,297,405,487,489,495,513,567,734,736,740,744,748,750,758,762,774,784,786,792,812,816,828,864,892,894,900,918,974,978,990,1026,1134,1216,1218,1224,1242,1296,1462,1468
 
 #offset 1
 
 sub $0,1
-mov $1,1
+mov $1,2
 mov $2,$0
 add $2,4
 pow $2,4
@@ -21,7 +21,7 @@ lpb $2
   lpe
   add $1,2
   max $3,$1
-  equ $5,2
+  equ $5,3
   sub $0,$5
   add $1,1
   mov $4,$0
@@ -30,7 +30,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$1
-sub $0,79
+mov $0,$3
 div $0,3
-add $0,26

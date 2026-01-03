@@ -1,12 +1,11 @@
 ; A018059: Powers of fourth root of 5 rounded up.
-; Submitted by entity
+; Submitted by loader3229
 ; 1,2,3,4,5,8,12,17,25,38,56,84,125,187,280,418,625,935,1398,2090,3125,4673,6988,10450,15625,23365,34939,52246,78125,116825,174693,261227,390625,584121,873465,1306134
-; Formula: a(n) = sqrtint(sqrtint(5^n-1))+1
+; Formula: a(n) = sqrtnint(5^n-1,4)+1
 
 mov $1,5
 pow $1,$0
+sub $1,1
+nrt $1,4
 mov $0,$1
-sub $0,1
-nrt $0,2
-nrt $0,2
 add $0,1

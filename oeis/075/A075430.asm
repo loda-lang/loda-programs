@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
@@ -14,7 +13,20 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   mov $6,$3
-  seq $6,166592 ; Hankel transform of A166588(n-1).
+  mod $6,12
+  mov $8,$6
+  equ $8,1
+  mov $9,$8
+  mov $8,$6
+  equ $8,5
+  add $9,$8
+  mov $8,$6
+  equ $8,7
+  sub $9,$8
+  mov $8,$6
+  equ $8,11
+  sub $9,$8
+  mov $6,$9
   add $6,$3
   mov $7,$6
   seq $7,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).

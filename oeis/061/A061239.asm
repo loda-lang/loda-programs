@@ -1,10 +1,18 @@
 ; A061239: Prime numbers == 4 (mod 9).
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Tony Fitzgerald
 ; 13,31,67,103,139,157,193,211,229,283,337,373,409,463,499,571,607,643,661,733,751,769,787,823,859,877,967,1021,1039,1093,1129,1201,1237,1291,1327,1381,1399,1453,1471,1489,1543,1579,1597,1669,1723,1741,1759,1777,1831,1867,1993,2011,2029,2083,2137,2281,2371,2389,2551,2659,2677,2713,2731,2749,2767,2803,2857,3001,3019,3037,3109,3163,3181,3217,3253,3271,3307,3343,3361,3433
-; Formula: a(n) = 9*A024908(n)-5
 
 #offset 1
 
-seq $0,24908 ; Numbers k such that 9*k - 5 is prime.
-mul $0,9
-sub $0,5
+mov $2,12
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,18
+  sub $3,$0
+lpe
+add $0,$2

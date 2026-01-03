@@ -1,11 +1,14 @@
 ; A179180: Partial sums of A007895.
+; Submitted by Science United
 ; 0,1,2,3,5,6,8,10,11,13,15,17,20,21,23,25,27,30,32,35,38,39,41,43,45,48,50,53,56,58,61,64,67,71,72,74,76,78,81,83,86,89,91,94,97,100,104,106,109,112,115,119,122,126,130,131,133,135,137,140,142,145,148,150,153,156,159,163,165,168,171,174,178,181,185,189,191,194,197,200
-; Formula: a(n) = a(n-1)+A007895(n), a(0) = 0
 
-lpb $0
-  mov $2,$0
-  seq $2,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
-  sub $0,1
-  add $1,$2
+mov $3,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  seq $0,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+  add $2,$0
 lpe
-mov $0,$1
+mov $0,$2

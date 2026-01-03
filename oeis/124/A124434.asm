@@ -1,26 +1,31 @@
 ; A124434: LCM (least common multiple) of A001043 (sum of consecutive primes) and A001223 (difference of consecutive primes).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Just Jake
 ; 5,8,12,36,24,60,36,84,156,60,204,156,84,180,300,336,120,384,276,144,456,324,516,744,396,204,420,216,444,1680,516,804,276,1440,300,924,960,660,1020,1056,360,1860,384,780,396,2460,2604,900,456,924,1416,480,2460,1524,1560,1596,540,1644,1116,564,2880,4200,1236,624,1260,4536,2004,3420,696,1404,2136,2904,2220,2256,1524,2316,3144,1596,3240,4140
 
 #offset 1
 
 sub $0,1
-mov $1,0
 mov $4,$0
 mov $3,2
 lpb $3
-  div $3,2
+  sub $3,1
   mov $0,$4
   add $0,$3
+  trn $0,1
+  add $0,2
+  mov $1,$0
+  seq $1,40 ; The prime numbers.
+  mov $0,$1
+  div $0,2
   add $0,1
-  seq $0,40 ; The prime numbers.
-  pow $0,2
+  bin $0,2
+  mul $0,4
+  add $0,1
   mov $2,$3
   mul $2,$0
-  mul $4,$3
-  add $1,$2
-  mov $5,$0
+  add $5,$2
 lpe
-sub $1,$5
-mov $0,$1
-dif $0,2
+min $4,1
+mul $4,$0
+mov $0,$5
+sub $0,$4

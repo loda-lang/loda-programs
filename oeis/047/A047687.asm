@@ -1,27 +1,27 @@
 ; A047687: Numerators of coefficients in Taylor series for exp(sin(x)).
-; Submitted by Goldislops
+; Submitted by Science United
 ; 1,1,1,0,-1,-1,-1,1,31,1,-2951,-1,181,2417,58913,-5699,-52635599,-19993,1126610929,3631,27069353,-6050353,-118802490419,47438,11162375477471,41478716501,-8529964147714967,-3818348299,-2610006147952249,36698180928319,1446188098724255329,-3518532018557,-334852949145487749761,-7508338288827919,594094494902602207843297,2281941058908653,317334355101311574655801,-6325207413840393223,-869336484857826490420847,745245693369198417947,14070295294155078513813178921,2408753327494274120221
 
-mov $7,$0
-add $7,1
-bin $7,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $8,-1
-  pow $8,$4
-  mov $5,$4
-  add $5,$7
-  seq $5,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
-  add $4,1
-  div $6,$8
-  add $6,$5
+mov $6,$0
+add $6,1
+bin $6,2
+mov $8,$0
+add $8,1
+lpb $8
+  sub $8,1
+  mov $7,-1
+  pow $7,$3
+  mov $4,$3
+  add $4,$6
+  seq $4,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  add $3,1
+  div $5,$7
+  add $5,$4
 lpe
-mov $3,1
-fac $3,$0
-mov $0,$3
-gcd $0,$6
-mov $1,$6
+mov $2,1
+fac $2,$0
+mov $0,$2
+gcd $0,$5
+mov $1,$5
 div $1,$0
 mov $0,$1

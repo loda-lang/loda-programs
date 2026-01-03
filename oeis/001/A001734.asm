@@ -1,10 +1,9 @@
 ; A001734: 6 in base 10-n.
-; Submitted by loader3229
+; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
 ; 6,6,6,6,10,11,12,20,110,111111
 
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

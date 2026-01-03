@@ -1,7 +1,8 @@
 ; A151714: When A151552 is written as a triangle the rows converge to this.
-; Submitted by Landjunge
+; Submitted by Science United
 ; 1,1,2,2,2,3,4,3,2,3,4,4,5,7,7,4,2,3,4,4,5,7,7,5,5,7,8,9,12,14,11,5,2,3,4,4,5,7,7,5,5,7,8,9,12,14,11,6,5,7,8,9,12,14,12,10,12,15,17,21,26,25,16,6,2,3,4,4,5,7,7,5,5,7,8,9,12,14,11,6
-; Formula: a(n) = A151553(max(n-1,0))
+; Formula: a(n) = A151553(max(n%110-1,0))
 
+mod $0,110
 trn $0,1
 seq $0,151553 ; G.f.: (1 + x) * Product_{n>=1} (1 + x^(2^n-1) + x^(2^n)).

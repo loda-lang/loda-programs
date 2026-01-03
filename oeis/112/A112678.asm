@@ -5,7 +5,6 @@
 add $0,1
 mov $1,1
 fil $1,6
-mov $4,-3
 sub $0,1
 lpb $0
   rol $1,5
@@ -16,4 +15,4 @@ lpb $0
   dgs $5,10
   sub $0,$6
 lpe
-mov $0,$5
+mov $0,$1

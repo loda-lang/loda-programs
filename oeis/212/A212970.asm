@@ -1,20 +1,18 @@
 ; A212970: Number of (w,x,y) with all terms in {0,...,n} and  w != x and x < range(w,x,y).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by amazing
 ; 0,2,8,22,44,80,128,196,280,390,520,682,868,1092,1344,1640,1968,2346,2760,3230,3740,4312,4928,5612,6344,7150,8008,8946,9940,11020,12160,13392,14688,16082,17544,19110,20748,22496,24320,26260,28280
 
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,0
-  sub $0,$1
-  mul $2,$0
-  gcd $2,$0
-  mul $2,2
-  sub $2,$5
-  add $2,$3
-  max $3,$2
-  add $4,$2
-  add $5,2
+mov $2,1
+lpb $0
+  sub $0,1
+  mov $1,$2
+  sub $1,$0
+  mov $4,$1
+  max $4,0
+  mov $5,$2
+  mul $5,$4
+  add $2,1
+  add $3,$5
 lpe
-mov $0,$4
+mov $0,$3
+mul $0,2

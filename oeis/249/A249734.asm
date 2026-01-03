@@ -1,12 +1,11 @@
 ; A249734: Even bisection of A003961: Replace in 2n each prime factor p(k) with prime p(k+1).
-; Submitted by mkferrysr
+; Submitted by Science United
 ; 3,9,15,27,21,45,33,81,75,63,39,135,51,99,105,243,57,225,69,189,165,117,87,405,147,153,375,297,93,315,111,729,195,171,231,675,123,207,255,567,129,495,141,351,525,261,159,1215,363,441,285,459,177,1125,273,891,345,279,183,945,201,333,825,2187,357,585,213,513,435,693,219,2025,237,369,735,621,429,765,249,1701
-; Formula: a(n) = 6*truncate(A003961(2*n)/6)+3
+; Formula: a(n) = 3*A003961(n)
 
 #offset 1
 
-mul $0,2
-seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-div $0,6
-mul $0,6
-add $0,3
+mov $1,$0
+seq $1,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+mov $0,$1
+mul $0,3

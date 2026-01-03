@@ -1,21 +1,20 @@
 ; A203625: Indices of octagonal numbers which are also decagonal.
-; Submitted by Jamie Morken(s1)
+; Submitted by Carl@Home
 ; 1,135,26125,5068051,983175705,190731018655,37000834443301,7177971150981675,1392489402456001585,270135766105313325751,52404946135028329194045,10166289414429390550318915,1972207741453166738432675401,382598135552499917865388708815
-; Formula: a(n) = truncate(c(max(2*n-2,0))/3)+1, b(n) = 12*c(n-1)+b(n-1)+24, b(1) = 25, b(0) = 1, c(n) = 13*c(n-1)+b(n-1)+26, c(1) = 27, c(0) = 0
+; Formula: a(n) = floor(c(max(4*n-3,0))/12)+1, b(n) = 2*b(n-1)+c(n-1), b(1) = 5, b(0) = 2, c(n) = 3*b(n-1)+2*c(n-1), c(1) = 8, c(0) = 1
 
 #offset 1
 
+mul $0,4
+sub $0,3
+mov $1,2
 mov $2,1
-sub $0,1
-mul $0,2
 lpb $0
   sub $0,1
-  add $3,2
-  mov $1,$3
-  mul $1,12
   add $2,$1
-  add $3,$2
+  add $1,$2
+  add $2,$1
 lpe
-mov $0,$3
-div $0,3
+mov $0,$2
+div $0,12
 add $0,1

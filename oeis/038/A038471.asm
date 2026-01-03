@@ -1,10 +1,65 @@
 ; A038471: Sums of 3 distinct powers of 4.
-; Submitted by nenym
+; Submitted by loader3229
 ; 21,69,81,84,261,273,276,321,324,336,1029,1041,1044,1089,1092,1104,1281,1284,1296,1344,4101,4113,4116,4161,4164,4176,4353,4356,4368,4416,5121,5124,5136,5184,5376,16389,16401,16404,16449,16452,16464,16641,16644,16656,16704,17409,17412,17424,17472,17664,20481,20484,20496,20544,20736,21504,65541,65553,65556,65601,65604,65616,65793,65796,65808,65856,66561,66564,66576,66624,66816,69633,69636,69648,69696,69888,70656,81921,81924,81936
-; Formula: a(n) = truncate(A001196(A014311(n))/3)
+; Formula: a(n) = truncate(4^(-binomial(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1,3)-binomial(truncate((sqrtint(8*n-8*binomial(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1,3)-7)+1)/2),2)+n-1))+truncate(4^(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1))+truncate(4^(truncate((sqrtint(8*n-8*binomial(((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3)+1,3))-1)/2)+1))
 
 #offset 1
 
-seq $0,14311 ; Numbers with exactly 3 ones in binary expansion.
-seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
-div $0,3
+sub $0,1
+mov $1,4
+fil $1,3
+mov $4,$0
+mov $5,$0
+mov $6,$0
+mul $6,6
+nrt $6,3
+mov $7,$6
+add $7,2
+bin $7,3
+mov $8,$0
+geq $8,$7
+add $8,$6
+add $8,1
+bin $8,3
+sub $0,$8
+mov $9,$0
+mul $9,8
+add $9,1
+nrt $9,2
+add $9,1
+div $9,2
+bin $9,2
+mov $10,$4
+mul $10,6
+nrt $10,3
+mov $11,$10
+add $11,2
+bin $11,3
+mov $12,$4
+geq $12,$11
+add $12,$10
+add $12,1
+bin $12,3
+sub $0,$9
+sub $4,$12
+add $4,1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+mov $13,$5
+mul $13,6
+nrt $13,3
+mov $14,$13
+add $14,2
+bin $14,3
+geq $5,$14
+add $5,$13
+add $5,1
+pow $2,$4
+pow $3,$5
+pow $1,$0
+add $1,$2
+add $1,$3
+mov $0,$1

@@ -1,22 +1,18 @@
 ; A171525: Numerator of (n-th noncomposite/n).
-; Submitted by Science United
+; Submitted by KnocksTech
 ; 1,1,1,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227
 
 #offset 1
 
-mov $3,$0
-sub $3,2
-pow $3,4
-lpb $3
-  add $5,1
-  add $1,1
-  mov $4,$2
-  gcd $4,$1
-  div $4,$5
-  sub $0,$4
-  add $2,1
-  mul $2,2
-  sub $3,$0
+sub $0,3
+lpb $0
+  max $0,1
+  add $0,2
+  mov $1,$0
+  seq $1,40 ; The prime numbers.
+  div $1,2
+  mov $0,0
 lpe
-mov $0,$5
+mov $0,$1
+mul $0,2
 add $0,1

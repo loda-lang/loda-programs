@@ -1,5 +1,5 @@
 ; A132446: The number of n x n crossword puzzles with at most one black square per row up to horizontal/vertical symmetry.
-; Submitted by Aexoden
+; Submitted by Science United
 ; 1,2,3,4,10,24,71,322
 
 #offset 3
@@ -14,8 +14,7 @@ lpb $0
   div $1,2
   add $4,$2
   add $4,5
-  mul $5,0
-  add $5,$4
+  mov $5,$4
   mov $4,$2
   mul $4,$0
   add $6,1

@@ -7,8 +7,8 @@
 mov $2,$0
 seq $2,30433 ; Primes of form 10*k + 9.
 lpb $2
-  mov $4,1
   rol $2,2
+  add $1,2
 lpe
 mov $0,$3
 sub $0,17

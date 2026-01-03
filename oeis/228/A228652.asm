@@ -1,5 +1,5 @@
 ; A228652: Numbers m such that if an urn contains m balls, with at least one each of c colors, there is no c > 1 for which a combination of c colors exists such that it is equally probable for c balls randomly selected from the urn to all be either the same color or distinct colors.
-; Submitted by omegaintellisys
+; Submitted by Owdjim
 ; 1,2,3,5,7,15,19,27,31,47
 
 #offset 1
@@ -31,8 +31,7 @@ lpb $1
     add $7,$5
     mul $7,3
   lpe
-  mov $0,$5
-  div $0,4
-  add $2,$0
+  add $2,$5
 lpe
 mov $0,$2
+div $0,4

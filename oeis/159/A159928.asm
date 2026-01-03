@@ -1,18 +1,17 @@
 ; A159928: a(n) is the sum of the terms of row n of triangle A159927.
-; Submitted by BrandyNOW
+; Submitted by win prion
 ; 1,3,15,91,641,5147,46433,465081,5121789,61513799,800196799,11208394387,168193068805,2691956450679,45775335405729,824136306116113,15661462041469817,313277888390065739,6579708440058166031
-; Formula: a(n) = n*(b(n-1)+a(n-1))+a(n-1), a(2) = 3, a(1) = 1, a(0) = 1, b(n) = truncate((-n*(b(n-1)+a(n-1)))/(-n)), b(2) = 1, b(1) = 0, b(0) = -1
+; Formula: a(n) = n*b(n-1)+a(n-1), a(2) = 3, a(1) = 1, a(0) = 1, b(n) = n*b(n-1)+a(n-1)+floor((n*b(n-1))/n), b(2) = 4, b(1) = 1, b(0) = 0
 
 #offset 1
 
-mov $1,-1
-mov $2,1
+mov $1,1
 lpb $0
   sub $0,1
-  sub $3,1
-  add $1,$2
-  mul $1,$3
-  sub $2,$1
-  div $1,$3
+  add $2,1
+  mul $3,$2
+  add $1,$3
+  div $3,$2
+  add $3,$1
 lpe
-mov $0,$2
+mov $0,$1

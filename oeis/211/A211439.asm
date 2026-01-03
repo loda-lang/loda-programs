@@ -1,19 +1,14 @@
 ; A211439: Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+3x+3y=0.
-; Submitted by loader3229
+; Submitted by rajab
 ; 1,3,5,19,25,31,59,69,79,121,135,149,205,223,241,311,333,355,439,465,491,589,619,649,761,795,829,955,993,1031,1171,1213,1255,1409,1455,1501,1669,1719,1769,1951,2005,2059,2255,2313,2371,2581,2643,2705
-; Formula: a(n) = floor(((8*floor(n/3)+4)*(n%3)+floor(n/3)*(22*floor(n/3)+14)+2)/2)
 
-mov $2,$0
-mod $2,3
-div $0,3
 mov $1,$0
-mov $3,$0
-mul $0,22
-add $0,14
-mul $0,$1
-add $0,2
-mul $3,8
-add $3,4
-mul $2,$3
-add $0,$2
-div $0,2
+mul $1,2
+mov $2,$0
+lpb $2
+  sub $2,3
+  add $0,$1
+  sub $1,1
+lpe
+mul $0,2
+add $0,1

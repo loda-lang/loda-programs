@@ -1,7 +1,7 @@
 ; A188432: Fixed point of the morphism 0->001, 1->01.
 ; Submitted by lee
 ; 0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0
-; Formula: a(n) = -truncate((sqrtint(5*n^2)+n)/2)-2*truncate((-truncate((sqrtint(5*n^2)+n)/2)+sqrtint(5*(truncate((sqrtint(5*n^2)+n)/2)-1)^2)+1)/2)+sqrtint(5*(truncate((sqrtint(5*n^2)+n)/2)-1)^2)+1
+; Formula: a(n) = -floor((sqrtint(5*n^2)+n)/2)-2*truncate((-floor((sqrtint(5*n^2)+n)/2)+sqrtint(5*(floor((sqrtint(5*n^2)+n)/2)-1)^2)+1)/2)+sqrtint(5*(floor((sqrtint(5*n^2)+n)/2)-1)^2)+1
 
 #offset 1
 

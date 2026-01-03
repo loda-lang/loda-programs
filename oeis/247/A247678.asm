@@ -1,25 +1,23 @@
 ; A247678: Odd composite numbers congruent to 4 modulo 9.
-; Submitted by Kotenok2000
+; Submitted by rober
 ; 49,85,121,175,247,265,301,319,355,391,427,445,481,517,535,553,589,625,679,697,715,805,841,895,913,931,949,985,1003,1057,1075,1111,1147,1165,1183,1219,1255,1273,1309,1345,1363,1417,1435,1507,1525,1561,1615,1633,1651,1687,1705,1795,1813,1849,1885,1903,1921,1939,1957,1975,2047,2065,2101,2119,2155,2173,2191,2209,2227,2245,2263,2299,2317,2335,2353,2407,2425,2443,2461,2479
 
 #offset 1
 
-sub $0,1
-mov $1,10
+mov $1,-3
 mov $2,$0
-add $2,2
+add $2,4
 pow $2,2
 lpb $2
-  mov $3,$1
-  add $3,3
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,18
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  sub $2,$4
+  max $3,$1
+  mul $3,2
+  add $3,1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
+  sub $0,$3
+  add $1,9
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,3
+mul $0,2
+add $0,1

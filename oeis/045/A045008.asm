@@ -1,5 +1,5 @@
 ; A045008: Numbers whose base-3 representation contains exactly three 0's and four 2's.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by vaughan
 ; 1484,1520,1532,1536,1628,1640,1644,1676,1680,1692,1952,1964,1968,2000,2004,2016,2108,2112,2124,2160,2267,2375,2411,2423,2427,2699,2735,2747,2751,2843,2855,2859,2891,2895,2907,3671
 
 #offset 1
@@ -21,16 +21,14 @@ lpb $2
   lpe
   add $1,2
   max $3,$1
-  sub $5,7
-  equ $5,2
+  equ $5,9
   sub $0,$5
   sub $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
-  sub $5,2
-  mul $5,10
+  mov $5,-20
   mul $2,$4
-  sub $2,1
+  sub $2,2
 lpe
 mov $0,$3

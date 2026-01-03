@@ -1,5 +1,5 @@
 ; A075435: T(n,k) = right- or upward-moving paths connecting opposite corners of an n X n chessboard, visiting the diagonal at k points between start and finish.
-; Submitted by shiva
+; Submitted by Dave Studdert
 ; 2,6,4,20,24,8,70,116,72,16,252,520,456,192,32,924,2248,2496,1504,480,64,3432,9520,12624,9728,4480,1152,128,12870,39796,60792,56400,33440,12480,2688,256,48620,164904,283208,304704,218720,105600,33152,6144
 
 #offset 2
@@ -7,7 +7,6 @@
 mov $1,$0
 sub $1,1
 mov $7,6
-mov $8,0
 mov $9,3
 mov $6,$1
 mul $6,8

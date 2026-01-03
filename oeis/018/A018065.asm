@@ -1,12 +1,11 @@
 ; A018065: Powers of fourth root of 7 rounded up.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,2,3,5,7,12,19,31,49,80,130,211,343,558,908,1477,2401,3906,6353,10333,16807,27338,44468,72330,117649,191366,311270,506305,823543,1339556,2178890,3544132,5764801,9376891
-; Formula: a(n) = sqrtint(sqrtint(7^n-1))+1
+; Formula: a(n) = sqrtnint(7^n-1,4)+1
 
 mov $1,7
 pow $1,$0
+sub $1,1
+nrt $1,4
 mov $0,$1
-sub $0,1
-nrt $0,2
-nrt $0,2
 add $0,1

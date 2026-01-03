@@ -1,10 +1,9 @@
 ; A079112: Numbers in binary representation with odd length.
-; Submitted by PE2OND
+; Submitted by Science United
 ; 0,1,100,101,110,111,10000,10001,10010,10011,10100,10101,10110,10111,11000,11001,11010,11011,11100,11101,11110,11111,1000000,1000001,1000010,1000011,1000100,1000101,1000110,1000111,1001000,1001001
 
 mul $0,4
-trn $0,1
-add $0,1
+max $0,1
 mov $2,$0
 mul $2,3
 log $2,4
@@ -19,8 +18,8 @@ lpb $0
   mov $1,$0
   mod $1,2
   mul $1,$5
-  div $0,2
   add $4,$1
   mul $5,10
+  div $0,2
 lpe
 mov $0,$4

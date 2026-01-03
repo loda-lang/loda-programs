@@ -1,5 +1,5 @@
 ; A083458: Numbers n such that n^5 + 1 is a palindrome.
-; Submitted by Science United
+; Submitted by taurec
 ; 1,2,6,10,100,1000,10000,100000,1000000
 
 #offset 1
@@ -18,11 +18,9 @@ lpb $3
 lpe
 mov $5,10
 pow $5,$0
-add $5,1
 add $1,$5
 lpb $4
   mod $4,7
   mov $1,$5
 lpe
 mov $0,$1
-sub $0,1

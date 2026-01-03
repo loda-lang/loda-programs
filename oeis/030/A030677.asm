@@ -1,14 +1,20 @@
 ; A030677: a(n) is the square root of A030676(n).
-; Submitted by dhh
+; Submitted by Just Jake
 ; 4,5,6,7,23,8,27,9,30,34,15,58,21,235,257,88,94,315,318,334,110,362,119,123,127,131,426,438,45,461,149,482,492,159,162,165,168,171,551,56,569,1825,586,188,603,611,619,627,201,644,206,659,667,674,2155,689,220,703,711,227,725,732,2335,745,752,2398,242,244,779,785,2502,798,804,81,2581,260,262,264,266,847
 
 #offset 1
 
-seq $0,30676 ; Smallest nontrivial extension of n-th palindrome which is a square.
-mov $1,$0
-lpb $0
-  div $2,$0
-  add $0,$2
-  div $0,2
-  mov $2,$1
+add $0,1
+mov $1,2
+lpb $1
+  mov $1,1
+  sub $0,1
 lpe
+add $0,1
+seq $0,2113 ; Palindromes in base 10.
+seq $0,30666 ; Smallest nontrivial extension of n which is a square.
+mov $2,$0
+sub $2,1
+nrt $2,2
+add $2,1
+mov $0,$2

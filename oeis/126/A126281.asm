@@ -1,6 +1,6 @@
 ; A126281: a(n) is the least m to satisfy the requirements of A052130.
 ; 1,2,5,8,10,13,16,18,21,24,27,29,32,35,37,40,43,46,48,51,54,56,59,62,65,67,70,73
-; Formula: a(n) = max(truncate((12*n-6)/7)+n-3,0)+1
+; Formula: a(n) = max(floor((12*n-6)/7)+n-3,0)+1
 
 #offset 1
 

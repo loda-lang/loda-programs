@@ -1,36 +1,21 @@
 ; A024908: Numbers k such that 9*k - 5 is prime.
-; Submitted by Kotenok2000
+; Submitted by Tony Fitzgerald
 ; 2,4,8,12,16,18,22,24,26,32,38,42,46,52,56,64,68,72,74,82,84,86,88,92,96,98,108,114,116,122,126,134,138,144,148,154,156,162,164,166,172,176,178,186,192,194,196,198,204,208,222,224,226,232,238,254,264,266,284,296,298,302,304,306,308,312,318,334,336,338,346,352,354,358,362,364,368,372,374,382
 
 #offset 1
 
-sub $0,1
 mov $2,12
 mov $3,$0
 pow $3,5
 lpb $3
-  sub $3,1
-  mov $5,0
-  add $1,1
-  lpb $1
-    gcd $5,4
-    mov $6,$1
-    div $6,3
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,1
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  add $2,18
-  sub $0,$5
   mov $1,$2
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,18
   sub $3,$0
 lpe
-mov $0,$2
+add $0,$2
+sub $0,13
 div $0,9
-add $0,1
+add $0,2

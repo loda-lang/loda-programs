@@ -1,21 +1,19 @@
 ; A089826: Decimal expansion of real root of 2*x^3+x^2-1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 6,5,7,2,9,8,1,0,6,1,3,8,3,7,5,9,9,0,8,2,5,0,5,5,5,2,0,0,0,4,8,0,1,7,1,1,6,4,5,0,4,7,6,8,6,1,8,9,2,6,3,4,6,1,7,7,2,0,3,3,5,4,8,7,9,7,5,3,9,4,5,7,3,1,4,7,1,2,1,3
+; Formula: a(n) = floor(b(4*n+4)/(2*floor(c(4*n+4)/(10^(n+1)))))%10, b(n) = 4*b(n-1)+4*c(n-1)+4*d(n-1), b(2) = 16, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)+b(n-1)+d(n-1)+4, c(2) = 12, c(1) = 4, c(0) = 0, d(n) = 2*c(n-1)+2*d(n-1), d(2) = 8, d(1) = 0, d(0) = 0
 
 add $0,1
-mov $6,10
 mov $3,$0
-mul $3,3
+mul $3,4
 lpb $3
   sub $3,1
-  add $6,$2
-  add $1,$6
-  mul $2,2
-  add $2,$1
-  mul $5,2
   add $5,$2
-  mul $1,2
-  mov $6,$5
+  add $1,$5
+  add $2,$1
+  add $2,4
+  mul $1,4
+  mul $5,2
 lpe
 mov $4,10
 pow $4,$0

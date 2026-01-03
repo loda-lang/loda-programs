@@ -1,11 +1,30 @@
 ; A146114: Bell numbers (A000110) read mod 24.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Just Jake
 ; 1,1,2,5,15,4,11,13,12,3,7,18,13,13,10,17,11,12,7,17,4,15,3,10,9,1,10,13,23,20,3,13,20,19,15,18,13,21,10,1,19,20,23,9,4,23,19,18,9,1,18,13,7,4,11,5,12,19,23,10,21,21,10,9,19,4,7,17,20,15,19,2,1,9,18,13,15,4,19,13
-; Formula: a(n) = -24*truncate(truncate(A137341(n)/(n!))/24)+truncate(A137341(n)/(n!))
 
+mov $5,1
+fac $5,$0
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $7,$6
+  pow $7,$0
+  mov $8,$0
+  bin $8,$6
+  mul $3,$6
+  add $3,$7
+  add $6,1
+  mul $8,$3
+  mul $4,-1
+  add $4,$8
+lpe
+mov $1,$4
+div $1,$5
 mod $1,24
-mov $0,$1
+mov $2,$1
+mul $2,6
+mov $0,$2
+sub $0,2
+div $0,6
+add $0,1

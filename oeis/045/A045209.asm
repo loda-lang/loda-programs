@@ -1,13 +1,11 @@
 ; A045209: Numbers whose base-5 representation contains exactly one 0 and three 4's.
-; Submitted by damotbe
+; Submitted by Science United
 ; 524,604,620,749,1149,1229,1245,1374,1774,1854,1870,1999,2399,2479,2495,2549,2574,2599,2609,2614,2619,2621,2622,2623,2649,2729,2745,2774,2854,2870,2899,2979,2995,3009,3014,3019,3021
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   mov $4,-6
@@ -24,8 +22,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,2
-  equ $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,24 +1,23 @@
 ; A077537: Sum of next F(n) Fibonacci numbers, where F(n) = n-th Fibonacci number.
-; Submitted by The Pariahs
+; Submitted by Owdjim
 ; 0,1,1,5,26,343,17334,9209754,225842206252,2880066968519382403,898923707005599922079920034025,3577855662560905980740035806138759999587547050967,4444705723234237498833973519979330664270869912654770206838250657106420149314752,21976735970058050484769325232564213583058273189998859623788473389995154455690179535376388487196528068261162380602867043853324625
 
 mov $4,$0
-mov $2,2
-lpb $2
-  sub $2,1
+mov $3,2
+lpb $3
+  div $3,2
   mov $0,$4
-  add $0,$2
-  trn $0,1
-  add $0,2
-  seq $0,71 ; a(n) = Fibonacci(n) - 1.
-  add $0,2
+  add $0,$3
+  add $0,1
   seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-  sub $0,1
-  mov $1,$2
-  mul $1,$0
-  add $3,$1
+  add $0,2
+  seq $0,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
+  div $0,2
+  mov $2,$3
+  mul $2,$0
+  mul $4,$3
+  add $1,$2
+  mov $5,$0
 lpe
-min $4,1
-mul $4,$0
-mov $0,$3
-sub $0,$4
+sub $1,$5
+mov $0,$1

@@ -15,7 +15,7 @@ mov $8,1210
 mov $9,2744
 sub $0,3
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,9
   mov $10,$5
   mul $10,-4

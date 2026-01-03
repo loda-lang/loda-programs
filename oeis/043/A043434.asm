@@ -1,27 +1,26 @@
 ; A043434: Numbers having two 3's in base 8.
-; Submitted by damotbe
+; Submitted by Science United
 ; 27,91,155,195,203,211,216,217,218,220,221,222,223,227,235,243,251,283,347,411,475,539,603,667,707,715,723,728,729,730,732,733,734,735,739,747,755,763,795,859,923,987,1051,1115,1179,1219
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-mul $2,240
-add $2,133
+sub $0,1
+add $2,5
+pow $2,3
 lpb $2
-  add $4,2
   mov $5,0
   mov $3,$1
   lpb $3
     mov $6,$3
     mod $6,8
-    equ $6,$4
+    equ $6,3
     div $3,8
     add $5,$6
   lpe
-  sub $5,1
   mov $3,$5
-  equ $3,1
+  mul $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,10 +1,9 @@
 ; A095501: a(n) = 54 written in base 10 - n.
-; Submitted by loader3229
+; Submitted by treaclepumpkin
 ; 54,60,66,105,130,204,312,2000,110110,111111111111111111111111111111111111111111111111111111
 
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

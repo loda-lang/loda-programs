@@ -6,26 +6,23 @@
 
 mov $2,$0
 sub $0,1
-add $2,3
-pow $2,4
+add $2,5
+pow $2,3
 lpb $2
   mov $3,$1
   lpb $3
-    mov $6,$3
-    mul $6,2
-    mod $6,3
-    pow $6,2
+    mov $4,$3
+    mul $4,2
+    mod $4,3
+    pow $4,2
     div $3,3
-    add $5,$6
+    add $5,$4
     sub $5,1
   lpe
   equ $5,4
   sub $0,$5
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
+  sub $2,$0
   sub $2,1
 lpe
 mov $0,$1

@@ -1,15 +1,12 @@
 ; A045126: Numbers whose base-4 representation contains exactly three 1's and two 3's.
-; Submitted by shiva
+; Submitted by Science United
 ; 351,375,381,471,477,501,855,861,885,981,1119,1143,1149,1239,1245,1269,1311,1335,1341,1359,1391,1395,1403,1404,1406,1439,1463,1469,1479,1485,1491,1499,1500,1502,1511,1517,1521,1524
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,9
-pow $2,3
+add $2,8
+pow $2,4
 lpb $2
   mov $4,1
   mov $3,$1
@@ -30,7 +27,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,2
-add $0,10923
-div $0,2
-sub $0,5461

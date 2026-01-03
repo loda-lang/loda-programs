@@ -1,11 +1,9 @@
 ; A029641: Even numbers in the (1,2)-Pascal triangle A029635 that are different from 2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 4,6,14,16,20,30,8,50,36,10,44,112,182,196,140,64,54,156,294,378,336,204,12,210,450,672,714,540,100,660,1122,1386,1254,14,90,352,1782,2508,2640,1210,506,144,104,442,4290,5148,1716,650,16,546,4004,9438,8008,2366,196
 
-add $0,1
 mov $6,$0
-sub $0,1
-add $6,3
+add $6,4
 pow $6,2
 lpb $6
   mov $7,$5
@@ -15,6 +13,7 @@ lpb $6
   nrt $2,2
   sub $2,1
   div $2,2
+  add $5,1
   mov $1,$2
   add $1,1
   bin $1,2
@@ -25,7 +24,6 @@ lpb $6
   mod $7,2
   equ $7,0
   sub $0,$7
-  add $5,1
   mov $8,$0
   max $8,0
   equ $8,$0

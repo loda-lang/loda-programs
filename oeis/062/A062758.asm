@@ -7,12 +7,9 @@
 mov $2,$0
 mov $4,$0
 lpb $4
-  sub $4,1
+  mov $4,0
   mov $1,$2
-  gcd $1,$4
   bin $1,$2
-  mov $0,$2
-  mul $0,$1
   sub $0,$1
   add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -1,22 +1,21 @@
 ; A121101: Catapolyoctagons (see Cyvin et al. for precise definition).
-; Submitted by arkiss
+; Submitted by Owdjim
 ; 1,1,3,9,39,169,819,3969,19719,97969,489219,2442969,12211719,61042969,305199219,1525917969,7629511719,38147167969,190735449219,953675292969,4768374511719,23841862792969,119209304199219,596046472167969,2980232312011719,14901161315917969,74505806335449219
-; Formula: a(n) = truncate(b(n-1)/5)+1, b(n) = 5^(n-1)+5^floor(n/2)+b(n-1), b(0) = 0
+; Formula: a(n) = b(max(n-2,0))+1, b(n) = 5^(n-1)+5^floor((n-1)/2)+b(n-1), b(0) = 0
 
 #offset 1
 
-sub $0,1
+sub $0,2
 lpb $0
+  sub $0,1
   mov $2,$0
   div $2,2
   mov $4,5
   pow $4,$2
-  sub $0,1
   mov $3,5
   pow $3,$0
   add $3,$4
   add $1,$3
 lpe
 mov $0,$1
-div $0,5
 add $0,1

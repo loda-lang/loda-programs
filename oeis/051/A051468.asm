@@ -1,54 +1,52 @@
 ; A051468: (Terms in A029641)/2.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 2,3,7,8,10,15,4,25,18,5,22,56,91,98,70,32,27,78,147,189,168,102,6,105,225,336,357,270,50,330,561,693,627,7,45,176,891,1254,1320,605,253,72,52,221,2145,2574,858,325,8,273,2002,4719,4004,1183,98,9,76,400,1470
 
-add $0,1
-mov $8,$0
-sub $0,1
-add $8,3
-pow $8,2
-lpb $8
-  mov $6,$7
-  add $6,1
-  mov $4,$6
-  mul $4,8
-  nrt $4,2
-  sub $4,1
-  div $4,2
+mov $6,$0
+add $6,4
+pow $6,2
+lpb $6
+  mov $7,$5
   add $7,1
-  mov $3,$4
-  add $3,1
-  bin $3,2
-  sub $6,$3
+  mov $2,$7
+  mul $2,8
+  nrt $2,2
+  sub $2,1
+  div $2,2
+  add $5,1
+  mov $1,$2
+  add $1,1
+  bin $1,2
+  sub $7,$1
+  sub $7,1
+  bin $2,$7
+  mov $7,$2
+  mod $7,2
+  equ $7,0
+  sub $0,$7
+  mov $8,$0
+  max $8,0
+  equ $8,$0
+  mul $6,$8
   sub $6,1
-  bin $4,$6
-  mov $6,$4
-  mod $6,2
-  equ $6,0
-  sub $0,$6
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mul $8,$5
-  sub $8,1
 lpe
-mov $0,$7
+mov $0,$5
 add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $1,$2
-add $1,1
-bin $1,2
-sub $0,$1
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $3,$4
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,1
-mov $1,$2
-bin $1,$0
+mov $3,$4
+bin $3,$0
 sub $0,1
-bin $2,$0
-mul $2,2
-add $2,$1
-mov $0,$2
+bin $4,$0
+mul $4,2
+add $4,$3
+mov $0,$4
 div $0,2

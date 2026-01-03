@@ -1,5 +1,5 @@
 ; A126225: Least number k > 0 such that the numerator of Sum_{i=1..k} 1/prime(i)^n is a prime.
-; Submitted by matszpk
+; Submitted by Goldislops
 ; 2,2,3,2,3,5,3,11,3,22
 
 #offset 1
@@ -8,7 +8,6 @@ sub $0,1
 lpb $0
   mov $2,$0
   add $2,$3
-  dif $0,10
   sub $0,2
   add $1,$0
   sub $2,2

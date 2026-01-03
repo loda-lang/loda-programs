@@ -1,16 +1,15 @@
 ; A154949: Diagonal sums of Riordan array A154948.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,1,3,5,10,18,34,62,115,211,389,715,1316,2420,4452,8188,15061,27701,50951,93713,172366,317030,583110,1072506,1972647,3628263,6673417,12274327,22576008,41523752,76374088,140473848,258371689,475219625
-; Formula: a(n) = truncate(b(n+1)/2), b(n) = b(n-1)+b(n-2)+b(n-3), b(2) = 3, b(1) = 2, b(0) = 1
+; Formula: a(n) = b(n)+1, b(n) = 2*b(n-2)+2*b(n-3)+b(n-4)+5, b(3) = 4, b(2) = 2, b(1) = 0, b(0) = 0
 
-mov $1,1
-mov $3,1
-add $0,1
 lpb $0
+  add $2,1
+  rol $1,4
+  add $4,$1
   sub $0,1
-  add $3,$2
-  ror $1,3
-  add $1,$2
+  add $3,$1
+  add $3,$4
 lpe
-div $1,2
-mov $0,$1
+mov $0,$2
+add $0,1

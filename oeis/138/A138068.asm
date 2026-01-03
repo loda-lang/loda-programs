@@ -1,5 +1,5 @@
 ; A138068: Triangle read by rows: row n lists the digits of A135634(n), the palindromic number formed from the reflected decimal expansion of e.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,2,2,2,7,2,2,7,7,2,2,7,1,7,2,2,7,1,1,7,2,2,7,1,8,1,7,2,2,7,1,8,8,1,7,2,2,7,1,8,2,8,1,7,2,2,7,1,8,2,2,8,1,7,2,2,7,1,8,2,8,2,8,1,7,2,2,7,1,8,2,8,8,2,8,1,7,2
 
 #offset 1
@@ -9,8 +9,6 @@ mul $0,2
 mov $1,$0
 nrt $1,2
 mov $2,$1
-mov $5,0
-mov $8,0
 add $1,1
 mul $2,$1
 sub $0,$2

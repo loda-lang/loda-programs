@@ -1,10 +1,9 @@
 ; A018147: Powers of fifth root of 12 rounded down.
-; Submitted by Contact
+; Submitted by loader3229
 ; 1,1,2,4,7,12,19,32,53,87,144,236,389,639,1051,1728,2840,4668,7674,12615,20736,34084,56027,92094,151380,248832,409018,672324,1105134,1816566,2985984,4908216,8067890
-; Formula: a(n) = sqrtnint(12^(2*n),10)
+; Formula: a(n) = sqrtnint(12^n,5)
 
-mul $0,2
 mov $1,12
 pow $1,$0
-nrt $1,10
+nrt $1,5
 mov $0,$1

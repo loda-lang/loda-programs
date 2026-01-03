@@ -5,37 +5,33 @@
 #offset 1
 
 sub $0,1
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $7,$0
-  mov $9,2
-  lpb $9
-    sub $9,1
-    mov $0,$7
-    add $0,$9
-    trn $0,1
-    add $0,1
-    seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
-    lpb $0
-      mov $4,$0
-      mul $0,$2
-    lpe
-    mov $10,$9
-    mul $10,$4
-    mov $0,$4
-    add $8,$10
-  lpe
-  min $7,1
-  mul $7,$0
+mov $8,$0
+mov $10,$0
+add $10,1
+lpb $10
+  clr $0,8
+  sub $10,1
   mov $0,$8
-  sub $0,$7
+  sub $0,$10
+  mov $4,$0
+  mov $6,2
+  lpb $6
+    sub $6,1
+    mov $0,$4
+    add $0,$6
+    max $0,1
+    mov $2,$0
+    seq $2,1358 ; Semiprimes (or biprimes): products of two primes.
+    mov $7,$6
+    mul $7,$2
+    mov $0,$2
+    add $5,$7
+  lpe
+  min $4,1
+  mul $4,$0
+  mov $0,$5
+  sub $0,$4
   sub $0,1
-  add $12,$0
+  add $9,$0
 lpe
-mov $0,$12
+mov $0,$9

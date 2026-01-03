@@ -1,13 +1,11 @@
 ; A018137: Powers of fifth root of 8 rounded up.
-; Submitted by Mumps
+; Submitted by loader3229
 ; 1,2,3,4,6,8,13,19,28,43,64,98,148,223,338,512,777,1177,1783,2703,4096,6209,9411,14264,21619,32768,49668,75282,114105,172951,262144,397337,602249,912839,1383605,2097152
-; Formula: a(n) = sqrtnint(8^n-3^n,5)+1
+; Formula: a(n) = sqrtnint(8^n-1,5)+1
 
-mov $2,3
-pow $2,$0
 mov $1,8
 pow $1,$0
-sub $1,$2
+sub $1,1
 nrt $1,5
 mov $0,$1
 add $0,1

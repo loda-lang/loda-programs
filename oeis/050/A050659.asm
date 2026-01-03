@@ -15,7 +15,7 @@ lpb $2
   add $3,$4
   equ $3,7
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
@@ -25,4 +25,4 @@ lpb $2
   sub $4,2
 lpe
 mov $0,$1
-sub $0,1
+sub $0,2

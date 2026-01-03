@@ -10,8 +10,9 @@ lpb $2
   add $0,$2
   trn $0,1
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  add $5,$0
   mov $1,$2
-  mul $1,$0
+  mul $1,$5
   add $3,$1
 lpe
 min $4,1
