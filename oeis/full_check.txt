@@ -72,6 +72,8 @@ A004933: a(n) = floor(n*phi^18), where phi is the golden ratio, A001622.
 A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
 A004939: a(n) = round(n*phi^4), where phi is the golden ratio, A001622.
+A004943: a(n) = round(n*phi^8), where phi is the golden ratio, A001622.
+A004945: a(n) = round(n*phi^10), where phi is the golden ratio, A001622.
 A004956: a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
@@ -119,6 +121,8 @@ A019554: Smallest number whose square is divisible by n.
 A019594: Conway's "para-budding" sequence.
 A019778: Decimal expansion of sqrt(e)/5.
 A019786: Decimal expansion of sqrt(e)/13.
+A020481: Least p with p, q both prime, p+q = 2n.
+A020482: Greatest p with p, q both prime, p+q = 2n.
 A020639: Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 A020677: Numbers of form 3*x^2 + 4*y^2.
 A022164: First column of spectral array W(sqrt(5)-1).
@@ -130,9 +134,11 @@ A022804: a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is
 A022843: Beatty sequence for e: a(n) = floor(n*e).
 A022844: a(n) = floor(n*Pi).
 A022853: a(n) = integer nearest n*Pi.
+A022934: Number of 2^m between e^n and e^(n+1).
 A023514: a(n) = sum of exponents in prime-power factorization of prime(n) + 1.
 A023689: Numbers with exactly 7 ones in binary expansion.
 A023690: Numbers with exactly 8 ones in binary expansion.
+A023718: Numbers with a single 3 in their base 4 expansion.
 A023805: Xenodromes: all digits in base 11 are different.
 A023806: Xenodromes: all digits in base 12 are different.
 A023893: Number of partitions of n into prime power parts (1 included); number of nonisomorphic Abelian subgroups of symmetric group S_n.
@@ -237,6 +243,7 @@ A044249: Numbers k such that string 7,6 occurs in the base 8 representation of k
 A044329: Numbers n such that string 8,6 occurs in the base 9 representation of n but not of n-1.
 A044396: Numbers n such that string 6,4 occurs in the base 10 representation of n but not of n-1.
 A044866: Positive integers having the same number of base-10 runs of odd length as even.
+A044936: Number of runs of even length in base-5 representation of n.
 A044939: Number of runs of even length in base-8 representation of n.
 A044941: Number of runs of even length in base-10 representation of n.
 A045252: Numbers whose base-5 expansion contains exactly one 1 and one 4.
@@ -255,8 +262,10 @@ A045442: Primes congruent to {1, 5, 7} mod 8.
 A045459: Primes congruent to {0, 1, 4, 6} mod 7.
 A045460: Primes congruent to {0, 4, 6} mod 7.
 A045461: Primes congruent to {0, 1, 4} mod 7.
+A045644: Palindromic and divisible by 9.
 A045833: Expansion of eta(q^9)^3 / eta(q^3) in powers of q.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
+A046136: Primes p such that p, p+4 and p+10 are primes.
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
 A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046411: Composite numbers the concatenation of whose prime factors is a prime.
@@ -353,6 +362,7 @@ A078175: Numbers with an integer arithmetic mean of all prime factors.
 A078285: Least nontrivial multiple of the n-th prime beginning with 1.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.
 A079093: Squarefree kernel of (prime(n)+1)*(prime(n+1)+1)/4.
+A079123: Number of 4's in n# (n primorial) = 4's in A002110(n).
 A079131: Primes such that iterated sum-of-digits (A038194) is odd.
 A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
 A079277: Largest integer k < n such that any prime factor of k is also a prime factor of n.
@@ -434,6 +444,7 @@ A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci r
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
 A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 otherwise.
 A106490: Total number of bases and exponents in Quetian Superfactorization of n, excluding the unity-exponents at the tips of branches.
+A106543: Composite numbers that are not perfect powers.
 A107078: Whether n has non-unitary prime divisors.
 A107145: Primes of the form x^2 + 40y^2.
 A107436: a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.
@@ -748,6 +759,7 @@ A283770: Numbers k such that L(k) = 1 mod 3, where L = A000201 = lower Wythoff s
 A283772: Numbers k such that U(k) = 0 mod 3, where U = A001950 = upper Wythoff sequence.
 A283773: Numbers k such that U(k) = 1 mod 3, where U = A001950 = upper Wythoff sequence.
 A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff sequence.
+A283900: Relative of Hofstadter Q-sequence: a(-769) = 770, a(-768) = 4, a(-767) = 770, a(-766) = 4; thereafter a(n) = a(n-a(n-1)) + a(n-a(n-2)).
 A284394: {101->2}-transform of the infinite Fibonacci word A003849.
 A284396: Positions of 2 in A284394.
 A284489: Positions of 1 in A284487; complement of A284488.
@@ -814,6 +826,7 @@ A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2
 A293449: Characteristic function for A056166, numbers that have no nonprime exponents present in their prime factorization n = p_1^e_1 * ... * p_k^e_k.
 A293484: The number of 7th powers in the multiplicative group modulo n.
 A293698: Values of positive integer i such that floor(tan(i)) = 1.
+A293700: First differences of A293698.
 A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 A294926: Number of proper divisors of n that are deficient (A005100).
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
