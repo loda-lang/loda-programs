@@ -1,7 +1,7 @@
 ; A249869: Triangle giving the area of primitive Pythagorean triangles, with zero entries for non-primitive triangles.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 6,0,30,60,0,84,0,210,0,180,210,0,0,0,330,0,630,0,924,0,546,504,0,1320,0,1560,0,840,0,1386,0,2340,0,0,0,1224,990,0,2730,0,0,0,3570,0,1710,0,2574,0,4620,0,5610,0,5016,0,2310,1716,0,0,0,7140,0,7980,0,0,0,3036
-; Formula: a(n) = 6*truncate((truncate((2*truncate((sqrtint(8*n-8)-1)/2)+4)/truncate(gcd(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+n+1,2*truncate((sqrtint(8*n-8)-1)/2)+4)^(2*truncate((sqrtint(8*n-8)-1)/2)+4)))*(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-1)*(-n+binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+3)*(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+n+1))/12)
+; Formula: a(n) = truncate((truncate((2*truncate((sqrtint(8*n-8)-1)/2)+4)/truncate(gcd(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+n+1,2*truncate((sqrtint(8*n-8)-1)/2)+4)^(2*truncate((sqrtint(8*n-8)-1)/2)+4)))*(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-1)*(-n+binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+3)*(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+n+1))/2)
 
 #offset 2
 
@@ -41,5 +41,4 @@ div $5,$0
 mul $5,$2
 mov $0,$5
 mul $0,$4
-div $0,12
-mul $0,6
+div $0,2

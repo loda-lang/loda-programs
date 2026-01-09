@@ -1,15 +1,22 @@
 ; A088967: Numbers n such that n+9 is a prime.
-; Submitted by Science United
+; Submitted by HeatForScience
 ; 2,4,8,10,14,20,22,28,32,34,38,44,50,52,58,62,64,70,74,80,88,92,94,98,100,104,118,122,128,130,140,142,148,154,158,164,170,172,182,184,188,190,202,214,218,220,224,230,232,242,248,254,260,262,268,272,274,284
-; Formula: a(n) = b(n+5)-9, b(n) = A159477(b(n-1)+1), b(0) = 0
 
 #offset 1
 
-add $0,5
-lpb $0
-  sub $0,1
-  add $1,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $2,8
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,2
+  sub $0,$1
+  sub $3,$0
+  add $4,4
 lpe
-mov $0,$1
-sub $0,9
+mov $0,$4
+div $0,4
+mul $0,2
+add $0,2

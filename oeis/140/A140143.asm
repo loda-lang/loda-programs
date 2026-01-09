@@ -1,28 +1,25 @@
 ; A140143: a(1)=1, a(n)=a(n-1)+n^0 if n odd, a(n)=a(n-1)+ n^5 if n is even.
-; Submitted by atannir
+; Submitted by Science United
 ; 1,33,34,1058,1059,8835,8836,41604,41605,141605,141606,390438,390439,928263,928264,1976840,1976841,3866409,3866410,7066410,7066411,12220043,12220044,20182668,20182669,32064045,32064046
 
 #offset 1
 
-mov $5,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$5
-  sub $0,$4
-  mov $7,$0
-  pow $7,5
-  mov $1,$0
-  lpb $1
-    mov $2,$1
-    lpb $2
-      mov $3,$1
-      mod $3,2
-      mov $7,1
-      sub $2,$3
-    lpe
-    min $1,1
+sub $0,1
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
+  add $0,1
+  mov $2,1
+  mov $3,$0
+  pow $3,5
+  lpb $0
+    rol $2,2
+    sub $0,1
   lpe
-  add $6,$7
+  add $10,$3
 lpe
-mov $0,$6
+mov $0,$10

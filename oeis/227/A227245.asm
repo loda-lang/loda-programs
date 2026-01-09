@@ -1,4 +1,4 @@
-; A227245: Numbers n such that 10^n - 1 divides 10^(10^(10^100)) - 10.
+; A227245: Numbers k such that 10^k - 1 divides 10^(10^(10^100)) - 10.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,3,9,11,17,33,41,51,73,99,101,123,137
 

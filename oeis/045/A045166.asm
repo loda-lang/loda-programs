@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    mul $5,4
-    add $5,2
-    mul $5,3
+    add $5,3
+    mul $5,12
     mod $5,10
     trn $5,4
     bin $5,2

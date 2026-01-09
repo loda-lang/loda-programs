@@ -9,5 +9,4 @@ mov $1,$0
 mul $1,2
 add $1,2
 seq $1,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
-mov $2,$1
 mov $0,$1

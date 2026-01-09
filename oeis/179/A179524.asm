@@ -7,7 +7,6 @@ lpb $0
   sub $0,1
   mov $2,$5
   bin $2,$0
-  mul $2,2
   mov $3,$4
   bin $3,$5
   mul $3,$2
@@ -19,4 +18,3 @@ lpb $0
   add $5,1
 lpe
 mov $0,$1
-div $0,4

@@ -20,10 +20,9 @@ lpb $6
 lpe
 mov $2,$4
 mul $2,2
-add $2,2
 mov $1,3
 pow $1,$2
 mov $0,$1
-div $0,648
-mul $0,81
-add $0,10
+div $0,6480
+mul $0,7290
+add $0,91

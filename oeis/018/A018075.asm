@@ -1,10 +1,9 @@
 ; A018075: Powers of fourth root of 11 rounded down.
-; Submitted by JagDoc
+; Submitted by loader3229
 ; 1,1,3,6,11,20,36,66,121,220,401,730,1331,2423,4414,8039,14641,26663,48558,88433,161051,293299,534145,972765,1771561,3226296,5875603,10700415,19487171,35489261,64631634,117704565
-; Formula: a(n) = sqrtint(sqrtint(11^n))
+; Formula: a(n) = sqrtnint(11^n,4)
 
 mov $1,11
 pow $1,$0
+nrt $1,4
 mov $0,$1
-nrt $0,2
-nrt $0,2

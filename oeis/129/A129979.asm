@@ -1,15 +1,16 @@
-; A129979: Left border of triangle A131088.
-; Submitted by p3d-cluster
+; A129979: a(n) = 2-mu(n), where mu=A008683 is the Moebius function.
+; Submitted by Science United
 ; 1,3,3,2,3,1,3,2,2,1,3,2,3,1,1,2,3,2,3,2,1,1,3,2,2,1,2,2,3,3,3,2,1,1,1,2,3,1,1,2,3,3,3,2,2,1,3,2,2,2,1,2,3,2,1,2,1,1,3,2,3,1,2,2,1,3,3,2,1,3,3,2,3,1,2,2,1,3,3,2
-; Formula: a(n) = A073184(n)*(max(A073184(n)-56,0)+56)-3*truncate((A073184(n)*(max(A073184(n)-56,0)+56)-32)/3)-31
 
 #offset 1
 
-seq $0,73184 ; Number of cubefree divisors of n.
-mov $1,$0
-trn $0,56
-add $0,56
-mul $0,$1
-sub $0,32
-mod $0,3
-add $0,1
+mov $5,$0
+seq $5,73184 ; Number of cubefree divisors of n.
+mov $7,$5
+max $5,56
+mul $5,$7
+sub $5,32
+mod $5,3
+add $5,1
+ror $3,15
+mov $0,$6

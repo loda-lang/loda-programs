@@ -1,11 +1,10 @@
 ; A147818: Period 4: repeat [5, 9, 9, 5].
-; Submitted by Hans van der Giessen
+; Submitted by [SG]KidDoesCrunch
 ; 5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5,5,9,9,5
-; Formula: a(n) = 4*(floor(n/2)%2)+5
+; Formula: a(n) = 2*bitand(n,2)+5
 
 #offset 1
 
-div $0,2
-mod $0,2
-mul $0,4
+ban $0,2
+mul $0,2
 add $0,5

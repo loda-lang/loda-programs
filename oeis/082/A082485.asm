@@ -1,11 +1,12 @@
-; A082485: Numbers n such that 1/(2-s(n)) is an integer where s(k)=sum(i=1,k,1/3^floor(sqrt(i))).
+; A082485: Numbers k such that 1/(2-s(k)) is an integer where s(k) = Sum_{i=1..k} 1/3^floor(sqrt(i)).
+; Submitted by [SG]KidDoesCrunch
 ; 3,11,21,33,47,63,83,105,129,155,183,213,245,279,315,353,393,435,479,525,573,623,675,731,789,849,911,975,1041,1109,1179,1251,1325,1401,1479,1559,1641,1725,1811,1899,1989
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-mov $7,$0
+mov $5,$0
 lpb $0
   sub $2,1
   mov $1,$2
@@ -19,11 +20,10 @@ trn $1,$0
 add $1,$2
 mul $1,2
 add $1,3
-mov $6,$7
+mov $6,$5
 mul $6,7
-mov $3,$7
-mul $3,$7
-add $5,$3
+mov $3,$5
+mul $3,$5
 add $1,$6
-add $1,$5
+add $1,$3
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A045253: Numbers whose base-5 representation contains exactly one 1 and two 4's.
-; Submitted by damotbe
+; Submitted by [SG]KidDoesCrunch
 ; 49,109,121,149,199,224,229,239,244,245,247,248,299,359,371,424,484,496,509,521,529,539,544,545,547,548,559,571,584,596,601,605,607,608,611,616,649,699,724,729,739,744,745,747,748,899
 
 #offset 1
@@ -23,8 +23,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

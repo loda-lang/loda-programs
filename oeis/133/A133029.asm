@@ -1,5 +1,5 @@
 ; A133029: Divisors of 1729, the 2nd taxicab number (also called the Hardy-Ramanujan number).
-; Submitted by PhilBoyd
+; Submitted by [SG]KidDoesCrunch
 ; 1,7,13,19,91,133,247,1729
 
 #offset 1
@@ -17,6 +17,5 @@ lpb $2
   sub $2,$3
   sub $2,$0
 lpe
-mov $0,$4
-mul $0,2
+mov $0,$1
 sub $0,1

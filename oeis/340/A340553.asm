@@ -1,5 +1,5 @@
 ; A340553: a(n) = card({k: prime(n) mod k is not prime}).
-; Submitted by Leviathan
+; Submitted by Science United
 ; 2,3,4,5,6,9,9,12,10,16,19,22,23,24,21,29,30,38,38,39,45,47,44,53,59,57,60,57,72,67,77,74,79,86,90,94,95,97,93,100,107,119,116,125,121,130,135,135,128,150,143,147,160,156,159,160,169,174,175,185,175
 
 #offset 1
@@ -8,7 +8,7 @@ add $0,1
 lpb $0
   mov $0,0
   seq $0,78493 ; One-prime decades.
-  add $0,1
+  sub $0,4
   seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $1,9

@@ -1,5 +1,5 @@
 ; A294835: Denominators of the partial sums of the reciprocals of the positive tetradecagonal numbers (k + 1)*(6*k + 1) = A051866(k+1), for k >= 0.
-; Submitted by ckrause
+; Submitted by BlisteringSheep
 ; 1,14,546,20748,2593500,26799500,991581500,85276009000,5372388567000,59096274237000,3604872728457000,241526472806619000,17631432514883187000,1392883168675771773000,23679013867488120141000,47358027734976240282000,4593728690292695307354000,157718018366715872219154000
 
 add $0,1
@@ -8,9 +8,8 @@ lpb $0
   mov $4,$0
   sub $0,1
   max $1,1
-  mul $2,5
-  sub $2,4
-  add $2,$0
+  mul $2,6
+  sub $2,5
   mul $2,$4
   mul $3,$2
   add $3,$1

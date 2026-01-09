@@ -1,12 +1,12 @@
 ; A357773: Odd numbers with two zeros in their binary expansion.
-; Submitted by mudpuppie
+; Submitted by Science United
 ; 9,19,21,25,39,43,45,51,53,57,79,87,91,93,103,107,109,115,117,121,159,175,183,187,189,207,215,219,221,231,235,237,243,245,249,319,351,367,375,379,381,415,431,439,443,445,463,471,475,477,487,491,493,499,501
 
 #offset 1
 
 mov $4,$0
 sub $0,1
-add $4,10
+add $4,34
 bin $4,2
 lpb $4
   add $5,1
@@ -23,7 +23,7 @@ lpb $4
   max $1,0
   equ $1,$0
   mul $4,$1
-  sub $4,5
+  sub $4,11
 lpe
 mov $0,$5
 mul $0,2

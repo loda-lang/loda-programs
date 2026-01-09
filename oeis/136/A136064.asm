@@ -1,30 +1,37 @@
 ; A136064: Mother primes of order 5.
-; Submitted by Fardringle
+; Submitted by Just Jake
 ; 23,67,199,331,397,463,661,727,859,1123,1783,2113,2179,2311,2971,3037,3433,3631,3697,4027,4093,4159,4357,4621,5347,5479,5743,6007,6271,6337,6733,7393,7591,7789,8053,8317,8647,9043,9109,9439,9967,10099,10627,10891,10957,11353,11551,12277,12343,12409,13597,13729,14323,15643,15907,15973,16369,16831,16963,17029,17359,18217,18679,19141,19207,19273,19603,19801,20593,22111,22573,23431,23497,23563,23761,24223,24421,25147,25411,25741
 
 #offset 1
 
-sub $0,1
-mov $1,-1
 mov $2,$0
-add $2,2
-pow $2,2
+sub $0,1
+add $2,5
+pow $2,3
 lpb $2
-  max $3,$5
-  mul $3,4
+  mov $3,$1
+  add $3,2
+  add $4,8
+  mov $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,1
+  add $1,$4
+  mov $3,$5
+  mul $3,$1
+  add $3,$5
   add $3,1
-  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $3,2
   sub $0,$3
-  add $1,20
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
   sub $2,1
-  add $5,$1
-  sub $5,2
-  add $1,2
 lpe
 mov $0,$1
-add $0,2
+sub $0,21
+div $0,11
+mul $0,11
+add $0,23

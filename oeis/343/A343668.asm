@@ -18,8 +18,7 @@ lpb $0
     add $7,$0
     add $7,$4
     bin $7,$0
-    dif $8,2
-    equ $8,4
+    equ $8,8
     add $8,1
     mod $8,2
     mul $7,$$9

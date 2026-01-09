@@ -1,22 +1,19 @@
 ; A128132: A natural number transform, companion to A127701.
-; Submitted by loader3229
+; Submitted by Spot T
 ; 1,-1,2,0,-1,3,0,0,-1,4,0,0,0,-1,5,0,0,0,0,-1,6,0,0,0,0,0,-1,7,0,0,0,0,0,0,-1,8,0,0,0,0,0,0,0,-1,9,0,0,0,0,0,0,0,0,-1,10,0,0,0,0,0,0,0,0,0,-1,11,0,0,0,0,0,0,0,0,0,0,-1,12
-; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n+1)*(-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n+1)-binomial(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n+1)
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,2
-bin $2,2
-sub $0,$2
-add $0,1
-add $1,1
-bin $1,$0
-mul $0,$1
-mul $0,2
-sub $0,$1
+lpb $0
+  add $1,1
+  add $2,1
+  sub $3,1
+  sub $0,$2
+lpe
+lpb $0
+  sub $0,1
+  mov $1,$3
+  pow $1,$3
+  add $3,1
+lpe
+mov $0,$1

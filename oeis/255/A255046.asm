@@ -1,24 +1,11 @@
 ; A255046: a(n) = (1 + A151548(n))/2.
 ; Submitted by Science United
 ; 1,2,3,4,3,6,9,8,3,6,9,10,11,20,25,16,3,6,9,10,11,20,25,18,11,20,27,30,41,64,65,32,3,6,9,10,11,20,25,18,11,20,27,30,41,64,65,34,11,20,27,30,41,64,67,46,41,66,83,100,145,192,161,64,3,6,9,10,11,20
+; Formula: a(n) = truncate(A160552(n+256)/2)+1
 
+add $0,256
 mov $1,$0
-dif $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
-  bin $0,$2
-  mul $3,2
-  add $3,$0
-lpe
-add $5,$3
-mov $4,$5
-add $4,$5
-mov $0,$4
-div $0,4
+seq $1,160552 ; a(0)=0, a(1)=1; a(2^i+j) = 2*a(j) + a(j+1) for 0 <= j < 2^i.
+mov $0,$1
+div $0,2
 add $0,1

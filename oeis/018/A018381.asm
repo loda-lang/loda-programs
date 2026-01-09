@@ -1,5 +1,5 @@
 ; A018381: Divisors of 297.
-; Submitted by Stony666
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,9,11,27,33,99,297
 
 #offset 1
@@ -21,6 +21,3 @@ lpb $0
   mov $1,99
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
-add $0,1

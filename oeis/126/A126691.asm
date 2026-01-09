@@ -1,11 +1,10 @@
 ; A126691: Prime numbers p such that 100-p is also a prime.
-; Submitted by biodoc
+; Submitted by iBezanilla
 ; 3,11,17,29,41,47,53,59,71,83,89,97
 
 #offset 1
 
 mov $2,2
-mov $4,3
 add $0,1
 lpb $0
   sub $0,1
@@ -24,4 +23,4 @@ lpb $0
 lpe
 mov $0,$4
 mul $0,2
-sub $0,15
+sub $0,9

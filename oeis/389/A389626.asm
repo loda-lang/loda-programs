@@ -1,6 +1,7 @@
 ; A389626: One-third of the total number of edges formed after n points have been placed in general position on each edge of a triangle (as in A365929).
-; Submitted by Cruncher Pete
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,17,85,285,731,1573,2997,5225,8515,13161,19493,27877,38715,52445,69541,90513,115907,146305,182325,224621,273883,330837,396245,470905,555651,651353,758917,879285,1013435,1162381,1327173,1508897,1708675,1927665,2167061,2428093,2712027,3020165,3353845,3714441,4103363,4522057,4972005,5454725,5971771
+; Formula: a(n) = truncate((n*(n*(n*(9*n-12)+9)+6)+6)/6)
 
 mov $1,$0
 mul $0,9
@@ -11,7 +12,4 @@ mul $0,$1
 add $0,6
 mul $0,$1
 add $0,6
-dir $0,2
-sub $0,3
-div $0,3
-add $0,1
+div $0,6

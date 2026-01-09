@@ -1,10 +1,10 @@
 ; A222408: Partial sums of A008531, or crystal ball sequence for {A_4}* lattice.
+; Submitted by [SG]KidDoesCrunch
 ; 1,11,61,211,551,1201,2311,4061,6661,10351,15401,22111,30811,41861,55651,72601,93161,117811,147061,181451,221551,267961,321311,382261,451501,529751,617761,716311,826211,948301,1083451
-; Formula: a(n) = 10*binomial(binomial(n+1,2)+1,2)+1
+; Formula: a(n) = 5*binomial(n+1,2)*(binomial(n+1,2)+1)+1
 
 add $0,1
 bin $0,2
-add $0,1
-bin $0,2
-mul $0,10
+fac $0,2
+mul $0,5
 add $0,1

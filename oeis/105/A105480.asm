@@ -5,14 +5,16 @@
 #offset 4
 
 sub $0,4
-mov $2,1
-lpb $2
-  sub $2,1
-  mov $3,$0
-  add $3,3
-  mov $1,$0
-  seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  bin $3,$0
-  mul $3,$1
+mov $1,1
+lpb $1
+  mov $1,0
+  mov $2,$0
+  equ $2,$0
+  add $2,2
 lpe
-mov $0,$3
+mov $1,$0
+add $1,$2
+bin $1,$0
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mul $1,$0
+mov $0,$1

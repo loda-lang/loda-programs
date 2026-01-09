@@ -1,22 +1,20 @@
 ; A212977: Number of (w,x,y) with all terms in {0,...,n} and  n/2 < w+x+y <= n.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 0,3,6,16,25,46,64,100,130,185,230,308,371,476,560,696,804,975,1110,1320,1485,1738,1936,2236,2470,2821,3094,3500,3815,4280,4640,5168,5576,6171,6630,7296,7809,8550,9120,9940,10570,11473,12166,13156
-; Formula: a(n) = (floor(n/2)*(2*floor(n/2)+5)+3)*(n%2)+floor((floor(n/2)*(floor(n/2)*(7*floor(n/2)+18)+11))/6)
 
-mov $2,$0
-mod $2,2
-div $0,2
-mov $1,$0
-mov $3,$0
-mul $0,7
-add $0,18
-mul $0,$1
-add $0,11
-mul $0,$1
-div $0,6
-mul $3,2
-add $3,5
-mul $3,$1
-add $3,3
-mul $2,$3
-add $0,$2
+add $0,1
+mov $4,$0
+lpb $0
+  sub $0,2
+  mov $2,$4
+  mul $2,2
+  bin $3,0
+  add $3,$4
+  mul $3,$2
+  sub $4,1
+  add $1,$3
+lpe
+mov $0,$1
+sub $0,4
+div $0,4
+add $0,1

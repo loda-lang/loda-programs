@@ -20,4 +20,3 @@ gcd $3,$1
 div $3,$1
 seq $0,5145 ; n copies of n-th prime.
 mul $0,$3
-mov $1,$3

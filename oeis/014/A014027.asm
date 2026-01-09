@@ -1,17 +1,14 @@
 ; A014027: Inverse of 18th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1,0,0,0,0
-; Formula: a(n) = (((n%18)==3)-((n%18)==9))^(n%18)-((n%18)==12)
 
-mod $0,18
+mul $0,2
 mov $1,$0
-equ $1,3
-mov $2,$1
-mov $1,$0
-equ $1,9
-sub $2,$1
-pow $2,$0
-mov $1,$0
-equ $1,12
-sub $2,$1
-mov $0,$2
+gcd $0,6
+trn $0,5
+div $1,6
+add $1,1
+dif $1,2
+mod $1,3
+dif $1,-2
+mul $0,$1

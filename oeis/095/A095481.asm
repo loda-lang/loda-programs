@@ -1,11 +1,9 @@
 ; A095481: a(n) = 44 written in base 14 - n.
-; Submitted by Science United
+; Submitted by Cruncher Pete
 ; 32,35,38,40,44,48,54,62,112,134,230,1122,101100,11111111111111111111111111111111111111111111
 
-mov $2,10
+mov $2,14
 sub $2,$0
-add $2,4
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

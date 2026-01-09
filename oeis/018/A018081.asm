@@ -1,10 +1,9 @@
 ; A018081: Powers of fourth root of 13 rounded down.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,1,3,6,13,24,46,89,169,320,609,1157,2197,4171,7921,15041,28561,54232,102978,195537,371293,705021,1338715,2541992,4826809,9165284,17403307,33045903,62748517,119148698,226242995
-; Formula: a(n) = sqrtint(sqrtint(13^n))
+; Formula: a(n) = sqrtnint(13^n,4)
 
 mov $1,13
 pow $1,$0
+nrt $1,4
 mov $0,$1
-nrt $0,2
-nrt $0,2

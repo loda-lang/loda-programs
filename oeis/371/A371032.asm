@@ -1,9 +1,19 @@
 ; A371032: a(n) is the integer whose decimal digits are 0's or 1's in alternating runs of lengths n, n-1, n-2, ..., 3, 2, 1.
-; Submitted by zombie67 [MM]
+; Submitted by taurec
 ; 1,110,111001,1111000110,111110000111001,111111000001111000110,1111111000000111110000111001,111111110000000111111000001111000110,111111111000000001111111000000111110000111001,1111111111000000000111111110000000111111000001111000110
-; Formula: a(n) = A007088(A371033(n))
+; Formula: a(n) = truncate(c(n+1)/9), b(n) = b(n-1)*10^(n-1), b(2) = 10, b(1) = 1, b(0) = 1, c(n) = b(n-1)*10^(n-1)-c(n-1), c(2) = 9, c(1) = 1, c(0) = 0
 
 #offset 1
 
-seq $0,371033 ; a(n) is the integer whose binary expansion starts with 1 and such that the runs of identical bits have lengths n, n-1, n-2, ..., 3, 2, 1.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $3,1
+add $0,1
+lpb $0
+  sub $0,1
+  mul $1,$3
+  mul $2,-1
+  add $2,$1
+  mul $3,10
+lpe
+mov $0,$2
+div $0,9

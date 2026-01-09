@@ -1,19 +1,19 @@
 ; A064724: A Beatty sequence for 2^sqrt(2).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,4,6,8,9,11,12,14,16,17,19,20,22,24,25,27,28,30,32,33,35,36,38,40,41,43,44,46,48,49,51,52,54,56,57,59,60,62,64,65,67,68,70,72,73,75,76,78,80,81,83,84,86,88,89,91,92,94,96,97,99,100,102,104,105,107,108,110,112,113,115,116,118,120,121,123,124,126,128
-; Formula: a(n) = a(n-1)+gcd(b(n-1)+3,2), a(2) = 3, a(1) = 1, a(0) = 0, b(n) = truncate(truncate((a(n-2)+gcd(b(n-2)+3,2)-1)/2)^a(n-1)), b(2) = 0, b(1) = 1, b(0) = 0
 
 #offset 1
 
+sub $0,1
+mul $0,8
 lpb $0
-  sub $0,1
-  add $2,3
-  gcd $2,2
-  pow $3,$1
-  add $1,$2
-  mov $2,$3
-  mov $3,$1
-  sub $3,1
-  div $3,2
+  add $1,39
+  lpb $0
+    seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+    sub $0,3
+  lpe
+  trn $0,5
 lpe
 mov $0,$1
+div $0,39
+add $0,1

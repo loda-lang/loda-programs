@@ -1,5 +1,5 @@
 ; A332426: Number of unordered pairs of self-avoiding paths with nodes that cover all vertices of a convex n-gon.
-; Submitted by taurec
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,3,30,210,1260,6944,36288,182880,897600,4316928,20427264,95373824,440294400,2013020160,9126248448,41069371392,183607050240,816037560320,3607758766080,15874168848384,69544044134400,303465064562688
 
 #offset 3
@@ -8,7 +8,7 @@ sub $0,3
 mov $5,$0
 add $0,1
 lpb $5
-  sub $5,3
+  mov $5,2
   mov $1,$0
   sub $1,1
   mov $2,$1

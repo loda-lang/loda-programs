@@ -1,20 +1,25 @@
 ; A092256: Nonprimes of form 6k+5.
-; Submitted by arkiss
+; Submitted by kpmonaghan
 ; 35,65,77,95,119,125,143,155,161,185,203,209,215,221,245,275,287,299,305,323,329,335,341,365,371,377,395,407,413,425,437,455,473,485,497,515,527,533,539,545,551,575,581,605,611,623,629,635,665,671,689,695,707,713,725,731,737,749,755,767,779,785,791,803,815,833,845,851,869,875,893,899,905,917,923,935,959,965,989,995
 
 #offset 1
 
-mov $1,28
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  equ $3,0
-  sub $0,$3
-  add $1,6
-  sub $2,$0
+mov $4,28
+mov $1,$0
+mov $3,$0
+pow $3,4
+lpb $3
+  mov $2,$4
+  add $2,1
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $2,0
+  add $4,6
+  sub $1,$2
+  sub $3,$1
 lpe
-mov $0,$1
-add $0,1
+mov $0,$4
+add $4,$0
+mov $0,$4
+sub $0,68
+div $0,2
+add $0,35

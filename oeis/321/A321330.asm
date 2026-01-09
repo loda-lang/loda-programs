@@ -1,11 +1,21 @@
 ; A321330: Denominators of a Boas-Buck sequence for the triangular Sheffer matrix S2[3,1] = A282629.
-; Submitted by Science United
+; Submitted by Owdjim
 ; 2,4,1,80,1,1120,1,44800,1,197120,1,1793792000,1,102502400,1,4879114240000,1,259568877568000,1,40789395046400000,1,238803367362560000,1,9561686829196902400000,1,1050734816395264000000,1,7922540515620290560000000,1,52951091790199773986816000000
 
-lpb $0
-  max $0,100
-  sub $0,9
-lpe
+min $0,33
 add $0,1
-seq $0,227830 ; Denominators of coefficients in expansion of x/(exp(x)-1).
+mov $2,$0
+seq $2,129814 ; a(n) = Bernoulli(n) * (n+1)!.
+mov $1,$0
+add $1,1
+mov $3,1
+fac $3,$1
+mov $1,$3
+pow $1,2
+gcd $2,$1
+div $1,$2
+add $0,1
+gcd $0,$1
+div $1,$0
+mov $0,$1
 dir $0,3

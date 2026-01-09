@@ -1,10 +1,9 @@
 ; A095505: a(n) = 56 written in base 14 - n.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 40,44,48,51,56,62,70,110,132,211,320,2002,111000,11111111111111111111111111111111111111111111111111111111
 
 mov $2,14
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

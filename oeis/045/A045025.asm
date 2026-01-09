@@ -1,5 +1,5 @@
 ; A045025: Numbers whose base-4 representation contains exactly two 0's and two 1's.
-; Submitted by Conan
+; Submitted by [SG]KidDoesCrunch
 ; 65,68,80,262,263,265,269,274,275,280,284,289,292,305,308,322,323,328,332,352,368,385,388,400,449,452,464,517,529,532,577,580,592,773,785,788,833,836,848,1050,1051,1054,1055,1062,1063
 
 #offset 1
@@ -23,8 +23,7 @@ lpb $2
   lpe
   mov $3,$4
   div $3,6
-  sub $3,4
-  equ $3,2
+  equ $3,6
   sub $0,$3
   add $1,1
   sub $2,$0

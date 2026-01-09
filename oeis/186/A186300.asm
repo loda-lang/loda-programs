@@ -11,10 +11,8 @@ lpb $3
   mov $1,$2
   add $1,1
   seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  mul $4,0
-  add $4,8
   sub $0,$1
-  add $2,$4
+  add $2,8
   sub $3,$0
 lpe
 mov $0,$2

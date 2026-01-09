@@ -1,9 +1,35 @@
 ; A337053: a(n) = exp(2) * Sum_{i>=0} Sum_{j>=0} (-1)^(i+j) * (i*j)^n / (i! * j!).
-; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
+; Submitted by Science United
 ; 1,1,0,1,1,4,81,81,2500,71289,170569,4752400,314388361,2553584089,12138750976,3868290439209,98777141491561,74627448683524,77548359598953721,6456459980629467081,96370747288471888164,738333256838429983201,526354651474052521626801
-; Formula: a(n) = A000587(n)^2
 
-seq $0,587 ; Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
-mov $1,$0
+mov $7,$0
+add $7,1
+bin $7,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,-1
+  bin $2,$5
+  mov $8,$5
+  add $8,$7
+  mov $6,$8
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  mov $9,$8
+  sub $9,$6
+  mov $3,1
+  fac $3,$9
+  mov $10,$8
+  seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $10,$3
+  mov $8,$10
+  mul $8,$2
+  add $4,$8
+  add $5,1
+lpe
+mov $1,$4
 pow $1,2
 mov $0,$1

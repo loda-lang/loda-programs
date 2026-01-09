@@ -1,14 +1,12 @@
 ; A095502: a(n) = 55 written in base n.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1111111111111111111111111111111111111111111111111111111,110111,2001,313,210,131,106,67,61,55,50,47,43
 
 #offset 1
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $2,$0
 mov $3,1
-mov $5,$2
+mov $5,$0
 equ $5,1
 mov $0,0
 mov $1,55

@@ -1,20 +1,14 @@
 ; A192222: a(n) = Fibonacci(2^n + 1).
-; Submitted by loader3229
+; Submitted by Manuel Stenschke
 ; 1,2,5,34,1597,3524578,17167680177565,407305795904080553832073954,229265413057075367692743352179590077832064383222590237
-; Formula: a(n) = b(n-1)^2+a(n-1)^2, a(1) = 2, a(0) = 1, b(n) = 2*a(n-1)*b(n-1)-b(n-1)^2, b(1) = 1, b(0) = 1
 
-mov $2,1
-mov $4,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  pow $1,2
-  mul $2,$4
-  mul $2,2
-  sub $2,$1
-  mov $3,$4
-  pow $3,2
-  add $1,$3
-  mov $4,$1
+mov $3,1
+mov $1,2
+pow $1,$0
+lpb $1
+  sub $1,1
+  mov $4,$2
+  mov $2,$3
+  add $3,$4
 lpe
-mov $0,$4
+mov $0,$3

@@ -1,22 +1,30 @@
 ; A043333: Numbers having one 0 in base 4.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by Supericent
 ; 4,8,12,17,18,19,20,24,28,33,34,35,36,40,44,49,50,51,52,56,60,69,70,71,73,74,75,77,78,79,81,82,83,84,88,92,97,98,99,100,104,108,113,114,115,116,120,124,133,134,135,137,138,139,141,142
 
 #offset 1
 
 mov $2,$0
-sub $0,1
-add $2,162
+add $2,6
+pow $2,3
 lpb $2
+  mov $4,1
   mov $3,$1
-  seq $3,160380 ; a(0) = 0; for n >= 1, a(n) = number of 0's in base-4 representation of n.
-  equ $3,1
+  lpb $3
+    mov $5,$3
+    mod $5,4
+    gcd $5,10
+    mul $5,$4
+    sub $5,$4
+    div $3,4
+    max $4,$5
+  lpe
+  div $4,28
+  mov $3,$4
+  equ $3,2
   sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,4
+  sub $2,$0
 lpe
 mov $0,$1
+div $0,4

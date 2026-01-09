@@ -1,12 +1,11 @@
 ; A045177: Numbers whose base-5 representation contains exactly one 0 and one 2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Spot T
 ; 10,27,35,51,53,54,55,65,70,77,85,102,110,132,136,138,139,142,147,152,160,176,178,179,180,190,195,202,210,227,235,256,258,259,266,268,269,271,273,274,276,278,279,280,290,295,326,328,329,330,340,345,351,353
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
+add $2,5
 pow $2,4
 lpb $2
   mov $4,-1

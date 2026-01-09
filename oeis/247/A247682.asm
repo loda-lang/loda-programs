@@ -1,25 +1,25 @@
 ; A247682: Odd composite numbers congruent to 5 modulo 9.
-; Submitted by Kotenok2000
+; Submitted by taurec
 ; 77,95,185,203,221,275,329,365,437,455,473,527,545,581,635,671,689,707,725,779,815,833,851,869,905,923,959,995,1067,1085,1121,1139,1157,1175,1211,1247,1265,1337,1355,1391,1445,1463,1517,1535,1589,1625,1643,1661,1679,1715,1751,1769,1805,1841,1859,1895,1967,1985,2021,2057,2075,2093,2147,2165,2183,2201,2219,2255,2291,2327,2345,2363,2435,2453,2471,2489,2507,2525,2561,2597
 
 #offset 1
 
-sub $0,1
-mov $1,22
+mov $1,2
 mov $2,$0
-add $2,2
+add $0,1
+add $2,5
 pow $2,2
 lpb $2
-  mov $3,$1
+  add $2,1
+  max $3,$1
+  mul $3,2
   add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,18
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  sub $2,$4
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
+  sub $0,$3
+  add $1,9
+  sub $2,$0
 lpe
 mov $0,$1
+mul $0,2
 add $0,1

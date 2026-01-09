@@ -1,26 +1,32 @@
 ; A029761: Partial sums of A005001.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 1,3,7,16,40,116,395,1551,6847,33290,175708,996696,6031281,38710303,262288647,1868825536,13955504572,108907053412,885935408411,7495705968467,65829634763895,599033379716074,5638952863115576,54830878201599424,549981672834888561,5683722799698177051,60448710450180221815,660930746036722255968,7421952186223198942576,85522775565269950820356,1010372613456126035148283,12228581397573358604571863,151511460231599304992921087,1920390231911632858145998458,24884308392232026873687732628
 
-mov $8,$0
-mov $10,$0
-add $10,1
-lpb $10
-  clr $0,8
-  sub $10,1
-  mov $0,$8
-  sub $0,$10
-  mov $5,$0
-  mov $7,$0
-  add $7,1
-  lpb $7
-    sub $7,1
-    mov $0,$5
-    sub $0,$7
-    mov $2,$0
-    seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-    add $6,$2
+mov $30,$0
+mov $32,$0
+add $32,1
+lpb $32
+  clr $0,30
+  sub $32,1
+  mov $0,$30
+  sub $0,$32
+  mov $27,$0
+  mov $29,$0
+  add $29,1
+  lpb $29
+    sub $29,1
+    mov $0,$27
+    sub $0,$29
+    seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+    mov $3,$0
+    mov $4,$0
+    lpb $0
+      bin $3,$0
+      sub $0,$4
+    lpe
+    mul $3,$4
+    add $28,$3
   lpe
-  add $9,$6
+  add $31,$28
 lpe
-mov $0,$9
+mov $0,$31

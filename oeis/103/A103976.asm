@@ -4,54 +4,26 @@
 
 #offset 1
 
-sub $0,1
-mov $15,$0
-mov $17,$0
-lpb $17
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
-  mov $12,$0
-  mov $14,$0
-  lpb $14
-    clr $0,12
-    sub $14,1
-    mov $0,$12
-    sub $0,$14
-    mov $8,$0
-    mov $10,2
-    lpb $10
-      sub $10,1
-      mov $0,$8
-      add $0,$10
-      sub $0,1
-      mov $5,$0
-      mov $3,2
-      lpb $3
-        sub $3,1
-        mov $0,$5
-        add $0,$3
-        max $0,1
-        seq $0,40 ; The prime numbers.
-        mov $1,$0
-        mul $1,1402
-        mov $0,$1
-        leq $3,$1
-      lpe
-      min $5,1
-      mul $5,$0
-      mov $11,$10
-      mul $11,$5
-      add $9,$11
-    lpe
-    min $8,1
-    mul $8,$0
-    mov $0,$9
-    sub $0,$8
-    div $0,1402
-    add $13,$0
+mov $6,$0
+mov $8,$0
+lpb $8
+  clr $0,6
+  sub $8,1
+  mov $0,$6
+  sub $0,$8
+  sub $0,1
+  mov $4,$0
+  mov $2,2
+  lpb $2
+    sub $2,1
+    mov $0,$4
+    add $0,$2
+    trn $0,1
+    seq $0,40976 ; a(n) = prime(n) - 2.
+    mov $1,$2
+    mul $1,$0
+    add $3,$1
   lpe
-  add $16,$13
+  add $7,$3
 lpe
-mov $0,$16
+mov $0,$7
