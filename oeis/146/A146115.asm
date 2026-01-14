@@ -1,11 +1,39 @@
 ; A146115: Bell numbers (A000110) read mod 25.
-; Submitted by chr80
+; Submitted by Dongha Hwang
 ; 1,1,2,5,15,2,3,2,15,22,0,20,22,12,22,20,22,4,9,7,22,1,23,21,14,3,24,14,5,22,22,3,19,22,24,20,17,16,21,9,17,13,17,10,1,15,5,7,11,6,20,2,13,7,11,12,0,20,13,18,12,20,13,11,20,22,13,9,11,7,20,12,20,8,2,22,7,23,20,4
-; Formula: a(n) = -25*truncate(truncate(A137341(n)/(n!))/25)+truncate(A137341(n)/(n!))
 
-mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
-mod $1,25
-mov $0,$1
+mov $4,1
+fac $4,$0
+mov $7,$0
+mov $8,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  mov $10,$6
+  div $10,$4
+  mul $11,$1
+  add $11,$10
+  add $1,1
+  mod $6,$4
+  mul $8,-1
+  mov $12,$3
+  mul $12,$6
+  mul $12,$8
+  mov $13,$3
+  mul $13,$11
+  mul $13,$8
+  add $5,$13
+  add $9,$12
+lpe
+mul $5,$8
+mul $9,$8
+div $9,$4
+add $9,$5
+mov $0,$9
+mod $0,25

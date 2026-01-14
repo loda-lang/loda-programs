@@ -1,23 +1,10 @@
 ; A016180: Inverse of 2171st cyclotomic polynomial.
-; Submitted by NeoGen
+; Submitted by Science United
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((c(max(2*n-2,0))+d(max(2*n-2,0)))/gcd(c(max(2*n-2,0))*b(max(2*n-2,0)),b(max(2*n-2,0))))+1, b(n) = (b(n-1)-2)*(3*n+1), b(3) = -440, b(2) = -42, b(1) = -4, b(0) = 1, c(n) = c(n-1)*(3*n+1)+b(n-1)-2, c(3) = -174, c(2) = -13, c(1) = -1, c(0) = 0, d(n) = d(n-1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = binomial(0,truncate((3*n-39)^(3*n-39)))
 
-mov $1,1
-mov $2,1
-sub $0,1
-mul $0,2
-lpb $0
-  sub $0,1
-  sub $1,2
-  add $2,3
-  mul $3,$2
-  add $3,$1
-  mul $1,$2
-lpe
-add $4,$3
-mul $3,$1
-gcd $3,$1
-div $4,$3
-mov $0,$4
-add $0,1
+mul $0,3
+sub $0,39
+pow $0,$0
+bin $1,$0
+mov $0,$1

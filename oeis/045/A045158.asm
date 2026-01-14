@@ -1,5 +1,5 @@
 ; A045158: Numbers whose base-5 representation contains no 0's and exactly one 1.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 1,7,8,9,11,16,21,37,38,39,42,43,44,47,48,49,57,58,59,61,66,71,82,83,84,86,91,96,107,108,109,111,116,121,187,188,189,192,193,194,197,198,199,212,213,214,217,218,219,222,223,224,237,238
 
 #offset 1
@@ -21,8 +21,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

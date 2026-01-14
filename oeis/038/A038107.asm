@@ -1,13 +1,17 @@
 ; A038107: Number of primes < n^2.
-; Submitted by Jamie Morken(l1)
+; Submitted by Science United
 ; 0,0,2,4,6,9,11,15,18,22,25,30,34,39,44,48,54,61,66,72,78,85,92,99,105,114,122,129,137,146,154,162,172,181,191,200,210,219,228,240,251,263,274,283,295,306,319,329,342,357,367,378,393,409,421,434,445,457,474,487,503,519,532,549,564,578,594,609,624,641,654,675,690,705,722,739,757,779,793,811
-; Formula: a(n) = a(n-1)+A014085(max(n-1,0)), a(0) = 0
 
+pow $0,2
+mov $2,$0
+equ $2,0
+add $0,$2
 lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,14085 ; Number of primes between n^2 and (n+1)^2.
-  add $1,$2
+  sub $0,2
+  div $0,2
+  mul $0,2
+  add $0,3
+  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  add $1,1
 lpe
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A355742: Number of ways to choose a sequence of prime-power divisors, one of each prime index of n. Product of bigomega over the prime indices of n, with multiplicity.
-; Submitted by Kotenok2000
+; Submitted by [SG]KidDoesCrunch
 ; 1,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,1,0,3,0,2,0,2,0,1,0,1,0,2,0,1,0,1,0,2,0,3,0,2,0,1,0,2,0,1,0,2,0,4,0,1,0,4,0,1,0,3,0,1,0,3,0,2,0,2,0,1,0,2,0,3,0,2,0,1,0,2,0,2,0
 
 #offset 1
@@ -22,5 +22,6 @@ lpb $0
     dif $0,$2
     mul $1,$3
   lpe
+  mul $0,$4
 lpe
 mov $0,$1

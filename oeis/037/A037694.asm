@@ -1,11 +1,10 @@
 ; A037694: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 1,2,0,3.
-; Submitted by ckrause
+; Submitted by Science United
 ; 1,12,120,1203,12031,120312,1203120,12031203,120312031,1203120312,12031203120,120312031203,1203120312031,12031203120312,120312031203120,1203120312031203,12031203120312031,120312031203120312,1203120312031203120,12031203120312031203
 
 #offset 1
 
 mov $2,1
-sub $0,1
 lpb $0
   sub $0,1
   add $1,$2
@@ -15,5 +14,5 @@ lpb $0
   div $2,2
   mod $2,4
 lpe
-add $1,$2
 mov $0,$1
+div $0,10

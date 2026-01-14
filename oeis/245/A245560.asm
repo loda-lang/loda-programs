@@ -1,20 +1,17 @@
 ; A245560: Row sums of triangle in A144480.
-; Submitted by crashtech
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,6,14,36,82,196,436,1000,2186,4884,10540,23128,49428,107048,227048,486864,1026394,2183860,4581244,9686776,20237372,42571896,88632664,185653936,385380932,804316296,1665340856,3464899440,7158117736,14853106384
-; Formula: a(n) = truncate((2^n-2*floor((n+1)/2)*binomial(n,floor((n+1)/2))+(n+1)*2^n)/2)
 
-mov $1,$0
-mov $3,$0
+mov $2,$0
 add $0,1
-div $0,2
-bin $3,$0
-mul $0,2
-mul $0,$3
-mul $0,-1
-mov $2,2
-pow $2,$1
-add $0,$2
-add $1,1
-mul $2,$1
-add $0,$2
-div $0,2
+lpb $0
+  sub $0,1
+  mov $3,$0
+  div $3,2
+  mov $4,$2
+  bin $4,$3
+  add $3,1
+  mul $4,$3
+  add $1,$4
+lpe
+mov $0,$1

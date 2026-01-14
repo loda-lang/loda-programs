@@ -1,10 +1,12 @@
 ; A027187: Number of partitions of n into an even number of parts.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Just Jake
 ; 1,0,1,1,3,3,6,7,12,14,22,27,40,49,69,86,118,146,195,242,317,392,505,623,793,973,1224,1498,1867,2274,2811,3411,4186,5059,6168,7427,9005,10801,13026,15572,18692,22267,26613,31602,37619,44533,52815,62338,73680,86716,102162,119918,140853,164903,193144,225566,263490,306993,357699,415814,483338,560641,650196,752622,870953,1006132,1161916,1339677,1544048,1776980,2044188,2348384,2696627,3092594,3545015,4058848,4644850,5309608,6066425,6923959
 ; Formula: a(n) = truncate((A000041(n)+A081362(n))/2)
 
+mov $2,$0
+seq $2,81362 ; Expansion of q^(1/24) * eta(q) / eta(q^2) in powers of q.
 mov $1,$0
-seq $1,81362 ; Expansion of q^(1/24) * eta(q) / eta(q^2) in powers of q.
-seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
-add $0,$1
-div $0,2
+seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+add $1,$2
+div $1,2
+mov $0,$1

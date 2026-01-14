@@ -1,12 +1,11 @@
 ; A368658: a(n) is the number of correct decimal digits of e obtained from the fraction A368618(n)/A368619(n).
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 0,2,5,3,5,5,7,7,9,10,11,11,12,13
-; Formula: a(n) = ((sign(n-1)*((n-2)%16+1))==9)+((sign(n-1)*((n-2)%16+1))==8)+((sign(n-1)*((n-2)%16+1))==6)+((sign(n-1)*((n-2)%16+1))==4)+((sign(n-1)*((n-2)%16+1))==1)+((sign(n-1)*((n-2)%16+1)+1)==11)+sign(n-1)*((n-2)%16+1)+3*((sign(n-1)*((n-2)%16+1))==2)
+; Formula: a(n) = ((n-1)==9)+((n-1)==8)+((n-1)==6)+((n-1)==4)+((n-1)==1)+(n==11)+3*((n-1)==2)+n-1
 
 #offset 1
 
 sub $0,1
-dgr $0,17
 mov $1,$0
 equ $1,1
 mov $2,29
@@ -19,7 +18,6 @@ add $2,$1
 mov $1,$0
 equ $1,4
 add $2,$1
-add $2,1
 mov $1,$0
 equ $1,6
 add $2,$1
@@ -36,4 +34,4 @@ mov $1,$0
 equ $1,11
 add $2,$1
 mov $0,$2
-sub $0,25
+sub $0,24

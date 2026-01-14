@@ -1,11 +1,10 @@
 ; A110863: Number of odd formally self-dual binary codes of length 2n that have the highest possible minimal distance.
-; Submitted by Dingo
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,1,5,112,1
-; Formula: a(n) = truncate(b(n-1)/21)+1, b(n) = max(3*b(n-2)-b(n-1)+binomial(3*b(n-3)+7,2),0), b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = floor(b(n)/21)+1, b(n) = c(n-1)+2, b(2) = 2, b(1) = 2, b(0) = 0, c(n) = max(3*c(n-2)-c(n-1)+binomial(3*c(n-3)+7,2),0), c(2) = 0, c(1) = 0, c(0) = 0
 
 #offset 1
 
-sub $0,1
 lpb $0
   sub $0,1
   mul $1,3
@@ -20,6 +19,6 @@ lpb $0
   bin $4,2
   sub $4,4
 lpe
-mov $0,$2
+mov $0,$1
 div $0,21
 add $0,1

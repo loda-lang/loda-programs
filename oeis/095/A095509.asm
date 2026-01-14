@@ -1,10 +1,9 @@
 ; A095509: a(n) = 58 written in base 11 - n.
-; Submitted by Science United
+; Submitted by Spot T
 ; 53,58,64,72,112,134,213,322,2011,111010,1111111111111111111111111111111111111111111111111111111111
 
 mov $2,11
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

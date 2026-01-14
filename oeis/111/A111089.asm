@@ -1,9 +1,22 @@
 ; A111089: Largest prime factor of 2n.
 ; Submitted by [SG]KidDoesCrunch
 ; 2,2,3,2,5,3,7,2,3,5,11,3,13,7,5,2,17,3,19,5,7,11,23,3,5,13,3,7,29,5,31,2,11,17,7,3,37,19,13,5,41,7,43,11,5,23,47,3,7,5,17,13,53,3,11,7,19,29,59,5,61,31,7,2,13,11,67,17,23,7,71,3,73,37,5,19,11,13,79,5
-; Formula: a(n) = max(A006530(n),2)
 
 #offset 1
 
-seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-max $0,2
+mov $4,2
+mov $1,$0
+lpb $1
+  mov $2,$1
+  lpb $2
+    mov $3,$1
+    mod $3,$4
+    add $4,1
+    sub $2,$3
+  lpe
+  lpb $1
+    dif $1,$4
+  lpe
+lpe
+max $4,$1
+mov $0,$4

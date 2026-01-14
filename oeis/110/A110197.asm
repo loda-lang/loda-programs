@@ -1,28 +1,26 @@
 ; A110197: Number triangle of sums of squared binomial coefficients.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,3,5,1,4,14,10,1,5,30,46,17,1,6,55,146,117,26,1,7,91,371,517,251,37,1,8,140,812,1742,1476,478,50,1,9,204,1596,4878,6376,3614,834,65,1,10,285,2892,11934,22252,19490,7890,1361,82,1,11,385,4917,26334,66352,82994,51990,15761,2107,101,1
 
 add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $5,$2
-add $5,1
-bin $5,2
-sub $0,$5
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,1
-add $2,2
-sub $2,$0
-mov $4,-1
-sub $4,$0
-mov $0,$2
-lpb $0
-  sub $0,1
-  bin $3,$0
-  pow $3,2
-  add $1,$3
-  mov $3,$4
+sub $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  sub $4,1
+  mov $5,$4
+  bin $5,$0
+  pow $5,2
+  add $2,$5
 lpe
-mov $0,$1
+mov $0,$2

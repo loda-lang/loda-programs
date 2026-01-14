@@ -1,7 +1,7 @@
-; A133699: A051731 * A133698.
+; A133699: Triangle read by rows: T(n, k) = A001227(k) if k divides n, T(n, k) = 0 otherwise.
 ; Submitted by Stony666
-; 1,1,1,1,0,2,1,1,0,1,1,0,0,0,2,1,1,2,0,0,2,1,0,0,0,0,0,2,1,1,0,1,0,0,0,1,1,0,2,0,0,0,0,0,3,1,1,0,0,2,0,0,0,0,2
-; Formula: a(n) = truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*gcd(A000203(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n),26)-10*truncate((truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*gcd(A000203(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n),26))/10)
+; 1,1,1,1,0,2,1,1,0,1,1,0,0,0,2,1,1,2,0,0,2,1,0,0,0,0,0,2,1,1,0,1,0,0,0,1,1,0,2,0,0,0,0,0,3,1,1,0,0,2,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,2,1,1,2,1,0,2,0,0,0,0,0,2,1,0
+; Formula: a(n) = truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*gcd(A000203(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n),26)-10*truncate((truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*gcd(A000203(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n),26))/10)
 
 #offset 1
 

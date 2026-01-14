@@ -1,5 +1,5 @@
 ; A039284: Numbers whose base-5 representation has the same nonzero number of 0's and 2's.
-; Submitted by Coleslaw
+; Submitted by LM
 ; 10,27,35,51,53,54,55,65,70,77,85,102,110,132,136,138,139,142,147,152,160,176,178,179,180,190,195,202,210,227,235,252,256,258,259,260,266,268,269,271,273,274,276,278,279,280,290,295,300,326,328,329,330,340
 
 #offset 1
@@ -25,8 +25,7 @@ lpb $2
   lpe
   dif $4,2
   mov $3,$4
-  sub $3,7
-  equ $3,0
+  equ $3,7
   sub $0,$3
   add $1,1
   sub $2,$0

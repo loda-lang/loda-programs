@@ -1,17 +1,11 @@
 ; A369854: a(n) = number of nonempty subsets S of {1,2,...,n} such that (number of nonprimes in S) = (number of primes in S).
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,0,1,2,5,9,19,34,69,125,209,461,791,1715,3002,5004,8007,19447,31823,75581,125969,203489,319769,817189,1307503,2042974,3124549,4686824,6906899,20030009,30045014,84672314,129024479,193536719,286097759,417225899,600805295,1852482995,2707475147,3910797435,5586853479,17620076359,25518731279,78378960359,114955808527,166871334959,239877544004,751616304548,1093260079343,1575580702583,2250829575119,3188675231419,4481381406319,14844575908434,21094923659354,29749251314474,41648951840264,57902201338904
+; Formula: a(n) = binomial(n,A001221(A003418(n)))-1
 
-max $1,$0
-add $0,1
-lpb $0
-  sub $0,2
-  div $0,2
-  mul $0,2
-  add $0,3
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  add $2,1
-lpe
-bin $1,$2
+mov $1,$0
+seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+bin $1,$0
 mov $0,$1
 sub $0,1

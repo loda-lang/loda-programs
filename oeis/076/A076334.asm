@@ -1,5 +1,5 @@
 ; A076334: Differences between successive squarefree kernels.
-; Submitted by stoneageman
+; Submitted by KetamiNO [YouTube]
 ; 1,1,-1,3,1,1,-5,1,7,1,-5,7,1,1,-13,15,-11,13,-9,11,1,1,-17,-1,21,-23,11,15,1,1,-29,31,1,1,-29,31,1,1,-29,31,1,1,-21,-7,31,1,-41,1,3,41,-25,27,-47,49,-41,43,1,1,-29,31,1,-41,-19,63,1,1,-33,35,1,1,-65,67,1,-59,23,39,1,1,-69,-7
 
 #offset 1
@@ -11,7 +11,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+  add $0,1
+  seq $0,76618 ; Least x>1 such that x^d == 1 (mod d) for each divisor d of n.
   mov $2,$3
   mul $2,$0
   add $1,$2

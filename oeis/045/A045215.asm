@@ -4,12 +4,11 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
+  sub $2,$0
   mov $4,-6
   mov $3,$1
   lpb $3
@@ -27,7 +26,5 @@ lpb $2
   equ $3,4
   sub $0,$3
   add $1,1
-  sub $2,$0
 lpe
 mov $0,$1
-add $0,1

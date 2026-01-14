@@ -4,15 +4,14 @@
 
 #offset 1
 
-mov $3,8
-lpb $3
-  mov $1,1
-  fil $1,3
-  sub $0,1
-lpe
-lpb $0
-  sub $0,1
-  add $2,1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
+sub $0,1
+mov $1,$0
+dif $1,$0
+add $1,1
+mov $2,$0
+max $2,1
+seq $2,40 ; The prime numbers.
+mul $1,$2
+mov $2,$1
+div $2,2
 mov $0,$2

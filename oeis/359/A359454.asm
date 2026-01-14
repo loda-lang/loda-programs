@@ -1,5 +1,5 @@
 ; A359454: Decimal expansion of Knopfmacher's limit: Limit_{x -> 1 from below} (1/(1-x)) * Product_{k>=2} (1 - x^m(k)/(k+1)), where m(k) = A060681(k) = k - k/A020639(k).
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 2,2,9,2,1,7,3,6,9,5,3
 
 #offset 1
@@ -46,6 +46,4 @@ lpe
 mov $0,$3
 add $0,$4
 add $0,1
-mod $0,10
-add $0,10
 mod $0,10

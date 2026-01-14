@@ -4,7 +4,7 @@
 
 #offset 1
 
-mov $8,2
+mov $8,1
 mov $1,$0
 lpb $1
   mov $3,0
@@ -26,4 +26,3 @@ lpb $1
   add $8,$9
 lpe
 mov $0,$3
-div $0,2

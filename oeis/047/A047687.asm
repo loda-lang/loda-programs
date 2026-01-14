@@ -5,17 +5,17 @@
 mov $8,$0
 add $8,1
 bin $8,2
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $2,-1
-  pow $2,$5
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $3,-1
+  pow $3,$5
   mov $6,$5
   add $6,$8
   seq $6,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
   add $5,1
-  div $7,$2
+  div $7,$3
   add $7,$6
 lpe
 mov $4,1

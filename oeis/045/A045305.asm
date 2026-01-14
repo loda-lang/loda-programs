@@ -1,13 +1,11 @@
 ; A045305: Numbers whose base-5 representation contains exactly three 3's and one 4.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by KetamiNO [YouTube]
 ; 469,473,493,593,1094,1098,1118,1218,1719,1723,1743,1843,1969,1973,1993,2094,2098,2118,2219,2223,2243,2269,2273,2294,2298,2319,2323,2329,2334,2339,2345,2346,2347,2353,2358,2363,2365
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   mov $4,-6

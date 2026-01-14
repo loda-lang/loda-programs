@@ -1,5 +1,5 @@
 ; A165143: Length of longest cyclic knight path on an n X n chessboard that is determined (up to starting point and direction) by the fields visited.
-; Submitted by Science United
+; Submitted by wareyore
 ; 8,10,16,20,22,32,40,48
 
 #offset 3
@@ -21,6 +21,5 @@ lpb $0
   sub $0,1
 lpe
 mov $0,$9
-sub $0,36
 div $0,2
-add $0,8
+sub $0,10

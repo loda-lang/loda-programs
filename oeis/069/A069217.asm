@@ -1,9 +1,20 @@
 ; A069217: Numbers n such that phi(n) + sigma(n) = n + reversal(n).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,5,7,11,101,131,151,181,191,313,353,373,383,727,757,787,797,919,929,10301,10501,10601,11311,11411,12421,12721,12821,13331,13831,13931,14341,14741,15451,15551,16061,16361,16561,16661,17471,17971,18181,18481,19391,19891,19991,30103,30203,30403,30703,30803,31013,31513,32323,32423,33533,34543,34843,35053,35153,35353,35753,36263,36563,37273,37573,38083,38183,38783,39293,70207,70507,70607,71317,71917,72227,72727,73037,73237
-; Formula: a(n) = A076820(A046853(n))
 
 #offset 1
 
-seq $0,46853 ; Denominator of sum of reciprocals of first n palindromic primes.
-seq $0,76820 ; Second-largest distinct prime dividing n (or 1 if n is a power of a prime).
+sub $0,1
+mov $1,$0
+mov $2,$0
+add $0,1
+div $1,2
+add $1,1
+lpb $1
+  div $1,2
+  mov $0,$2
+  sub $0,$1
+  add $0,1
+  seq $0,2385 ; Palindromic primes: prime numbers whose decimal expansion is a palindrome.
+  max $1,1
+lpe

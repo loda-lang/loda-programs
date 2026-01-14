@@ -1,13 +1,11 @@
 ; A045076: Numbers whose base-4 representation contains exactly three 0's and no 3's.
-; Submitted by mkferrysr
+; Submitted by Solo Man
 ; 64,128,257,258,260,264,272,288,320,384,513,514,516,520,528,544,576,640,1029,1030,1033,1034,1041,1042,1044,1048,1057,1058,1060,1064,1089,1090,1092,1096,1104,1120,1153,1154,1156,1160,1168
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
+add $2,6
 pow $2,3
 lpb $2
   mov $4,2

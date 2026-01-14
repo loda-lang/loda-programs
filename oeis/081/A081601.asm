@@ -1,18 +1,17 @@
 ; A081601: Numbers m such that 3 does not divide Sum_{k=0..m} binomial(2k,k) = A006134(m).
-; Submitted by Science United
+; Submitted by mkferrysr
 ; 0,3,9,12,27,30,36,39,81,84,90,93,108,111,117,120,243,246,252,255,270,273,279,282,324,327,333,336,351,354,360,363,729,732,738,741,756,759,765,768,810,813,819,822,837,840,846,849,972,975,981,984,999,1002,1008,1011
 
 #offset 1
 
+mov $2,3
 sub $0,1
-mov $1,1
-mov $3,$0
 lpb $0
+  mov $3,$0
+  mod $3,2
+  mul $3,$2
   div $0,2
-  mov $2,$0
-  mul $2,$1
-  add $3,$2
-  mul $1,3
+  add $1,$3
+  mul $2,3
 lpe
-mov $0,$3
-mul $0,3
+mov $0,$1

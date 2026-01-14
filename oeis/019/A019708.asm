@@ -4,11 +4,11 @@
 
 mul $0,2
 add $0,3
-mov $5,1
 mov $7,$0
 mul $7,7
 lpb $7
   max $7,1
+  add $6,7
   max $3,$6
   div $3,$7
   add $6,$5

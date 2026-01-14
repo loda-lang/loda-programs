@@ -1,34 +1,28 @@
 ; A090942: n-th arithmetic mean = prime(n).
-; Submitted by Science United
+; Submitted by wsj
 ; 2,4,9,13,27,23,41,33,55,83,51,103,89,69,103,143,155,95,175,147,113,205,171,227,289,201,155,215,165,229,547,255,329,205,489,221,373,385,319,407,419,263,611,279,373,289,763,787,419,327,433,545,345,781,581,593,605,385,625,517,403,903,1175,563,441,577,1255,739,1027,487,633,785,943,811,823,683,845,1013,713,1041
 
 #offset 1
 
 sub $0,1
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
+mov $5,$0
+mov $1,2
+lpb $1
+  sub $1,1
+  mov $0,$5
+  add $0,$1
+  max $0,1
+  mov $2,$0
+  add $2,1
+  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $4,$0
+  mul $4,$2
   mov $0,$4
-  add $0,$3
-  mov $6,$0
-  dif $6,$0
-  add $6,1
-  mov $7,$0
-  trn $7,1
-  add $7,1
-  seq $7,40 ; The prime numbers.
-  mul $6,$7
-  mov $7,$6
-  div $7,2
-  add $7,1
-  mul $0,$7
-  mov $2,$3
-  mul $2,$0
-  mul $4,$3
-  add $1,$2
-  mov $5,$0
+  mov $3,$1
+  mul $3,$4
+  add $6,$3
 lpe
-sub $1,$5
-mov $0,$1
-sub $0,1
+min $5,1
+mul $5,$0
+mov $0,$6
+sub $0,$5

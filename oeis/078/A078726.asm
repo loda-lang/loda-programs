@@ -1,18 +1,9 @@
 ; A078726: Fermat numbers 2^(2^n) + 1 with digits sorted in increasing order and zeros suppressed.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by iBezanilla
 ; 3,5,17,257,35567,2244677999,111344445566777789,111222233333334444445666666777788899,111111222223333333344444455555555566666666777777778888888999999999999
 
 mov $1,2
 pow $1,$0
-mov $2,0
-mov $3,0
-mov $4,0
-mov $5,0
-mov $6,0
-mov $7,0
-mov $8,0
-mov $9,0
-mov $10,0
 mov $0,2
 pow $0,$1
 add $0,1

@@ -1,25 +1,14 @@
 ; A343859: Partial sums of the primes excluding 3.
-; Submitted by vaughan
+; Submitted by Goldislops
 ; 2,7,14,25,38,55,74,97,126,157,194,235,278,325,378,437,498,565,636,709,788,871,960,1057,1158,1261,1368,1477,1590,1717,1848,1985,2124,2273,2424,2581,2744,2911,3084,3263,3444,3635,3828,4025,4224,4435,4658,4885,5114,5347,5586,5827,6078,6335,6598,6867,7138,7415,7696,7979,8272,8579,8890,9203,9520,9851,10188,10535,10884,11237,11596,11963,12336,12715,13098,13487,13884,14285,14694,15113
+; Formula: a(n) = A014284(max(0,n+1)+1)-4
 
 #offset 1
 
-sub $0,1
-mov $2,7
-mov $3,$0
-mov $1,$0
+mov $2,$0
+add $2,1
+max $1,$2
 add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  add $0,2
-  seq $0,40 ; The prime numbers.
-  lpb $0
-    mov $4,$0
-    mod $0,3
-  lpe
-  add $2,$4
-lpe
-mov $0,$2
-sub $0,8
+seq $1,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
+mov $0,$1
+sub $0,4

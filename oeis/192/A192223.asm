@@ -1,22 +1,15 @@
 ; A192223: a(n) = Lucas(2^n + 1).
-; Submitted by loader3229
+; Submitted by KetamiNO [YouTube]
 ; 3,4,11,76,3571,7881196,38388099893011,910763447271179530132922476,512653048485188394162163283930413917147479973138989971
-; Formula: a(n) = 2*b(n)+c(n), b(n) = 2*c(n-1)*b(n-1)-b(n-1)^2, b(1) = 1, b(0) = 1, c(n) = b(n-1)^2+c(n-1)^2, c(1) = 2, c(0) = 1
 
-mov $2,1
-mov $4,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  pow $1,2
-  mul $2,$4
-  mul $2,2
-  sub $2,$1
-  mov $3,$4
-  pow $3,2
-  add $1,$3
-  mov $4,$1
+mov $2,2
+mov $3,1
+mov $1,2
+pow $1,$0
+lpb $1
+  sub $1,1
+  mov $4,$2
+  mov $2,$3
+  add $3,$4
 lpe
-mov $0,$2
-mul $0,2
-add $0,$4
+mov $0,$3

@@ -14,8 +14,7 @@ lpb $0
   pow $2,10
   mov $3,$7
   bin $3,$1
-  equ $6,2
-  add $6,$2
+  mov $6,$2
   pow $6,3
   add $1,1
   mul $3,$6

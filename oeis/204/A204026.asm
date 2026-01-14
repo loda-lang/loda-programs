@@ -1,4 +1,5 @@
 ; A204026: Symmetric matrix based on f(i,j)=min(F(i+1),F(j+1)), where F=A000045 (Fibonacci numbers), by antidiagonals.
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,1,2,1,1,2,2,1,1,2,3,2,1,1,2,3,3,2,1,1,2,3,5,3,2,1,1,2,3,5,5,3,2,1,1,2,3,5,8,5,3,2,1,1,2,3,5,8,8,5,3,2,1,1,2,3,5,8,13,8,5,3,2,1,1,2,3,5,8,13,13,8,5,3,2,1,1,2
 
 #offset 1
@@ -8,8 +9,6 @@ mul $0,2
 mov $1,$0
 nrt $1,2
 mov $2,$1
-mov $5,0
-mov $9,0
 add $1,1
 mul $2,$1
 sub $0,$2

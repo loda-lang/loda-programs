@@ -1,29 +1,20 @@
 ; A103976: Partial sums of A040976 (= primes-2).
-; Submitted by Science United
+; Submitted by mkferrysr
 ; 0,1,4,9,18,29,44,61,82,109,138,173,212,253,298,349,406,465,530,599,670,747,828,915,1010,1109,1210,1315,1422,1533,1658,1787,1922,2059,2206,2355,2510,2671,2836,3007,3184,3363,3552,3743,3938,4135,4344,4565,4790,5017,5248
 
 #offset 1
 
-mov $6,$0
-mov $8,$0
-lpb $8
-  clr $0,6
-  sub $8,1
-  mov $0,$6
-  sub $0,$8
-  sub $0,1
+sub $0,1
+mov $3,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,1
+  seq $0,40 ; The prime numbers.
   mov $4,$0
-  mov $2,2
-  lpb $2
-    sub $2,1
-    mov $0,$4
-    add $0,$2
-    trn $0,1
-    seq $0,40976 ; a(n) = prime(n) - 2.
-    mov $1,$2
-    mul $1,$0
-    add $3,$1
-  lpe
-  add $7,$3
+  sub $4,2
+  add $2,$4
 lpe
-mov $0,$7
+mov $0,$2

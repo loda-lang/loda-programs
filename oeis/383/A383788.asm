@@ -4,6 +4,17 @@
 
 #offset 1
 
+sub $0,1
+mov $1,$0
+min $0,0
+lpb $1
+  mov $1,$0
+  add $1,5
+  pow $1,3
+  sub $0,5
+lpe
+mov $0,$1
+add $0,1
 lpb $0
   seq $0,167831 ; Largest m<=n such that no carry occurs when adding m to n in decimal arithmetic.
 lpe

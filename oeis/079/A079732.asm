@@ -11,12 +11,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,3
-  mov $9,$3
-  seq $9,40 ; The prime numbers.
-  div $9,2
-  mov $3,$9
+  mov $7,$3
+  seq $7,40 ; The prime numbers.
+  div $7,2
+  mov $3,$7
   mul $3,2
-  add $3,1
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
   mul $5,3
@@ -24,14 +23,11 @@ lpb $2
   mov $8,$3
   seq $8,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
   mov $6,$8
-  div $6,2
-  mov $7,$6
   gcd $8,2
   mul $8,-1
   add $8,$6
   mov $3,$8
-  add $3,2
-  neq $3,0
+  neq $3,-2
   sub $0,$3
   add $1,1
   mov $4,$0

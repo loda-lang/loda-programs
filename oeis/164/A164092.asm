@@ -1,5 +1,5 @@
 ; A164092: Triangle by 2^n term rows, codes used for generating Petoukhov matrices in a Gray code format.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,-1,2,0,-2,0,3,1,-1,1,-1,-3,-1,1,4,2,0,2,0,-2,0,2,0,-2,-4,-2,0,-2,0,2,5,3,1,3,1,-1,1,3,1,-1,-3,-1,1,-1,1,3
 
 add $0,1
@@ -8,7 +8,6 @@ log $1,2
 mov $2,2
 pow $2,$1
 sub $2,1
-mov $3,0
 bxo $0,$2
 sub $0,1
 lpb $0

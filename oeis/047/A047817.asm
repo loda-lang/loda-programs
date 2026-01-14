@@ -1,29 +1,28 @@
 ; A047817: Denominators of Hurwitz numbers H_n (coefficients in expansion of Weierstrass P-function).
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by [SG]KidDoesCrunch
 ; 10,10,130,170,10,130,290,170,4810,410,10,2210,530,290,7930,170,10,351130,10,6970,3770,890,10,214370,1010,530,524290,557090,10,325130,10,170,130,1370,290,5969210,1490,10,1081730,6970,10,3770,1730,15130,53107210,10,10,41373410,57130,41410,130,9010,10,38273170,10,557090,29770,2330,10,1332057610,10,10,139490,43690,530,11570,2690,23290,36010,3341090,10,579013370,2930,1490,800930,170,290,338581490,3170,6970
 
 #offset 1
 
+mul $0,2
+mov $5,2
 mov $2,$0
-mov $3,2
-sub $0,2
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
+lpb $2
+  sub $2,2
   mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  mul $0,4
-  mov $5,$0
-  add $0,1
-  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $0,$5
-  add $0,1
-  mul $0,$3
-  mul $1,$0
-  max $3,$1
+  sub $1,$2
+  mov $3,$1
+  gcd $3,$2
+  bin $3,$1
+  mul $1,2
+  mov $4,$1
+  mul $1,$3
+  add $1,1
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $1,$4
+  add $1,1
+  mul $1,$5
+  mul $3,$1
+  max $5,$3
 lpe
-mov $0,$3
-mul $0,5
+mov $0,$5

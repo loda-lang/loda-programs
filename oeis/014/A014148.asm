@@ -5,28 +5,31 @@
 #offset 1
 
 sub $0,1
-mov $24,$0
-mov $26,$0
-add $26,1
-lpb $26
-  clr $0,24
-  sub $26,1
-  mov $0,$24
-  sub $0,$26
-  mov $21,$0
-  mov $23,$0
-  add $23,1
-  lpb $23
-    clr $0,21
-    sub $23,1
-    mov $0,$21
-    sub $0,$23
+mov $12,$0
+mov $14,$0
+add $14,1
+lpb $14
+  clr $0,12
+  sub $14,1
+  mov $0,$12
+  sub $0,$14
+  mov $9,$0
+  mov $11,$0
+  add $11,1
+  lpb $11
+    sub $11,1
+    mov $0,$9
+    sub $0,$11
     mov $3,$0
     add $3,1
     seq $3,40 ; The prime numbers.
-    add $12,$3
-    add $22,$12
+    mov $5,$3
+    lpb $5
+      seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
+      sub $5,$3
+    lpe
+    add $10,$5
   lpe
-  add $25,$22
+  add $13,$10
 lpe
-mov $0,$25
+mov $0,$13

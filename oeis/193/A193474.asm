@@ -1,5 +1,5 @@
-; A193474: Table read by rows: The coefficients of the polynomials P(n, x) = Sum{k=0..n} Sum{j=0..k} (-1)^j * 2^(-k) * binomial(k, j) * (k-2*j)^n * x^(n-k).
-; Submitted by loader3229
+; A193474: Table read by rows: The coefficients of the polynomials P(n, x) = Sum_{k=0..n} Sum_{j=0..k} (-1)^j * 2^(-k) * binomial(k, j) * (k-2*j)^n * x^(n-k).
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,2,0,0,6,0,1,0,24,0,8,0,0,120,0,60,0,1,0,720,0,480,0,32,0,0,5040,0,4200,0,546,0,1,0,40320,0,40320,0,8064,0,128,0,0,362880,0,423360,0,115920,0,4920,0,1,0,3628800,0,4838400,0,1693440,0,130560,0,512,0,0
 
 #offset 1
@@ -12,7 +12,6 @@ div $1,2
 bin $1,2
 sub $1,$0
 mov $3,1
-mov $8,$0
 mul $0,8
 nrt $0,2
 sub $0,1

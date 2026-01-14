@@ -6,8 +6,10 @@
 add $0,1
 mov $1,$0
 seq $1,52860 ; A simple grammar: rooted sequences of cycles.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $2,$0
+mov $3,1
+fac $3,$0
+mov $0,$3
 gcd $0,$1
+mov $2,$3
 div $2,$0
 mov $0,$2

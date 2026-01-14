@@ -4,15 +4,14 @@
 
 #offset 1
 
-lpb $0
-  sub $0,61
-  mov $1,3138
-lpe
-lpb $0
-  max $0,1
-  seq $0,57661 ; a(n) = Sum_{k=1..n} lcm(n,k)/n.
-  mov $1,$0
-  mov $0,0
+mov $2,$0
+lpb $2
+  mov $3,$2
+  gcd $3,$0
+  mov $4,$2
+  div $4,$3
+  add $1,$4
+  sub $2,1
 lpe
 mov $0,$1
 mul $0,2
