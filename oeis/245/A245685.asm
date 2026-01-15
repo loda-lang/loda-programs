@@ -1,16 +1,12 @@
 ; A245685: Sigma(2p)/2, for odd primes p.
-; Submitted by Science United
+; Submitted by kpmonaghan
 ; 6,9,12,18,21,27,30,36,45,48,57,63,66,72,81,90,93,102,108,111,120,126,135,147,153,156,162,165,171,192,198,207,210,225,228,237,246,252,261,270,273,288,291,297,300,318,336,342,345,351,360,363,378,387,396,405
+; Formula: a(n) = 3*floor(A000040(n+1)/2)+3
 
 #offset 1
 
-lpb $0,2
-  sub $0,1
-  add $1,1
-  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
-lpe
-mov $0,$1
-sub $0,3
+add $0,1
+seq $0,40 ; The prime numbers.
 div $0,2
+add $0,1
 mul $0,3
-add $0,6

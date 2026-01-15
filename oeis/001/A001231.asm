@@ -1,7 +1,7 @@
 ; A001231: Number of nonisomorphic projective planes of order n.
 ; Submitted by BrandyNOW
 ; 1,1,1,1,0,1,1,4,0
-; Formula: a(n) = -10*truncate((truncate(truncate((11*n-22*truncate((n-3)/2)-31)^(n-3))/17)+1)/10)+truncate(truncate((11*n-22*truncate((n-3)/2)-31)^(n-3))/17)+1
+; Formula: a(n) = -10*truncate((truncate(if(((11*n-22*truncate((n-3)/2)-31)^2)==1,(11*n-22*truncate((n-3)/2)-31)^(n-3),if((n-3)<=(-1),0,(11*n-22*truncate((n-3)/2)-31)^(n-3)))/17)+1)/10)+truncate(if(((11*n-22*truncate((n-3)/2)-31)^2)==1,(11*n-22*truncate((n-3)/2)-31)^(n-3),if((n-3)<=(-1),0,(11*n-22*truncate((n-3)/2)-31)^(n-3)))/17)+1
 
 #offset 2
 

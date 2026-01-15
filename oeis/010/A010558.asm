@@ -1,7 +1,7 @@
 ; A010558: Maximal size of binary code of length n correcting 2 unidirectional errors.
 ; Submitted by Skillz
 ; 1,1,1,2,2,2,4,6,10
-; Formula: a(n) = floor((truncate(2^(n-3))+5)/7)+1
+; Formula: a(n) = floor((if((n-3)<=(-1),0,2^(n-3))+5)/7)+1
 
 #offset 1
 

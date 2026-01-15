@@ -15,8 +15,15 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $0,$1
-  add $0,1
-  seq $0,1747 ; 2 together with primes multiplied by 2.
+  mov $5,$0
+  dif $5,$0
+  add $5,1
+  max $0,1
+  seq $0,40 ; The prime numbers.
+  mul $5,$0
+  mov $0,$5
+  div $0,2
+  mul $0,2
   mul $1,$0
   add $3,$1
 lpe

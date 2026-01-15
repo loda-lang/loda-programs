@@ -9,7 +9,7 @@ lpb $2
   sub $0,1
   mov $4,$0
   max $4,0
-  pow $0,0
+  mov $0,1
   mov $1,-1
   pow $1,$4
   mul $1,2

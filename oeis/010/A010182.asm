@@ -1,7 +1,7 @@
 ; A010182: Continued fraction for sqrt(117).
 ; Submitted by Science United
 ; 10,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1
-; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2)^2+3*binomial(floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2)^2)/3),2)
+; Formula: a(n) = if((gcd(n,max(-n+2,0)+6)-3)<=(-1),0,3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2)^2+3*binomial(floor((if((gcd(n,max(-n+2,0)+6)-3)<=(-1),0,3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2)^2)/3),2)
 
 mov $1,2
 trn $1,$0

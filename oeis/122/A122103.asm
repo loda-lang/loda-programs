@@ -1,18 +1,20 @@
 ; A122103: Sum of the fifth powers of the first n primes.
-; Submitted by STE\/E
+; Submitted by HeatForScience
 ; 32,275,3400,20207,181258,552551,1972408,4448507,10884850,31395999,60025150,129369107,245225308,392233751,621578758,1039774251,1754698550,2599294851,3949419958,5753649309,7826720902,10903777301,14842817944
-; Formula: a(n) = b(n-1)+32, b(n) = A000040(n+1)^5+b(n-1), b(0) = 0
 
 #offset 1
 
 sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,40 ; The prime numbers.
-  pow $2,5
-  sub $0,1
-  add $1,$2
+mov $1,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  pow $0,5
+  add $3,$0
 lpe
-add $1,32
-mov $0,$1
+mov $0,$3

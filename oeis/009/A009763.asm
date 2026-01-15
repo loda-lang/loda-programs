@@ -15,8 +15,7 @@ lpb $0
   fac $3,$2
   mov $4,$0
   trn $6,1
-  mul $5,0
-  add $5,$6
+  mov $5,$6
   seq $5,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
   mul $5,$3
   add $1,$5

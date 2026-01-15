@@ -1,13 +1,26 @@
 ; A010164: Continued fraction for sqrt(93).
 ; Submitted by DukeBox
 ; 9,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1,18,1,1,1,4,6,4,1,1,1
-; Formula: a(n) = truncate((A010158(n)*((-1)^n+2)-2)/3)+1
 
 mov $2,-1
 pow $2,$0
 add $2,2
+mov $3,16
 mov $1,$0
-seq $1,10158 ; Continued fraction for sqrt(85).
+mul $1,2
+pow $1,2
+lpb $1
+  mov $4,$1
+  mov $1,0
+  mul $3,9
+  add $3,6
+  mod $4,10
+  add $4,5
+  div $3,$4
+  sub $3,5
+lpe
+sub $3,7
+mov $1,$3
 mul $1,$2
 sub $1,2
 div $1,3

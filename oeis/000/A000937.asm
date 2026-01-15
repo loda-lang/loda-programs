@@ -1,7 +1,7 @@
 ; A000937: Length of longest simple cycle without chords in the n-dimensional hypercube graph. Also called n-coil or closed n-snake-in-the-box problem.
 ; Submitted by BrandyNOW
 ; 0,4,6,8,14,26,48,96
-; Formula: a(n) = 2*truncate(2^(n-2))-2*truncate((3*binomial(n-2,0)*(truncate(2^(n-2))+4))/(n+2))+8
+; Formula: a(n) = 2*if((n-2)<=(-1),0,2^(n-2))-2*truncate((3*binomial(n-2,0)*(if((n-2)<=(-1),0,2^(n-2))+4))/(n+2))+8
 
 #offset 1
 

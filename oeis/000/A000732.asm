@@ -43,8 +43,7 @@ lpb $2
   mov $10,$4
   dif $10,$4
   add $10,1
-  trn $4,1
-  add $4,1
+  max $4,1
   seq $4,40 ; The prime numbers.
   mul $10,$4
   mov $4,$10

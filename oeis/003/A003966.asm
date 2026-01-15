@@ -22,8 +22,7 @@ lpb $0
   mov $4,$2
   mov $5,$2
   lpb $5
-    sub $6,1
-    neq $6,0
+    neq $6,1
     sub $4,1
     sub $5,$6
   lpe

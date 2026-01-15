@@ -12,6 +12,6 @@ lpb $0
   seq $1,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
   div $1,4
   sub $1,$0
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

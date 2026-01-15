@@ -12,7 +12,7 @@ lpb $3
   mod $0,9
   lpb $0
     mov $0,1
-    pow $4,0
+    mov $4,1
   lpe
   div $4,3
   add $1,$4

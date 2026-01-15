@@ -18,8 +18,7 @@ lpb $1
   fac $7,$6
   mov $8,$1
   sub $10,1
-  mul $9,0
-  add $9,$10
+  mov $9,$10
   seq $9,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
   mul $9,$7
   add $5,$9

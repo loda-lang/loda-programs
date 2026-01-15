@@ -1,7 +1,7 @@
 ; A003880: Degrees of irreducible representations of group L2(8).
 ; Submitted by loader3229
 ; 1,7,7,7,7,8,9,9,9
-; Formula: a(n) = (floor(gcd(truncate(2^(n-2)),224)/15)+7)%10
+; Formula: a(n) = (floor(gcd(if((n-2)<=(-1),0,2^(n-2)),224)/15)+7)%10
 
 #offset 1
 

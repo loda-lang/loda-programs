@@ -31,8 +31,7 @@ lpb $2
   gcd $0,$4
   add $0,$4
   mul $1,2
-  trn $1,$0
-  add $1,$0
+  max $1,$0
 lpe
 mov $0,$1
 div $0,2
