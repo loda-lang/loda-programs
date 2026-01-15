@@ -7,9 +7,8 @@
 
 sub $0,1
 mov $3,$0
-mul $3,4
-add $3,1
-mul $3,6
+mul $3,24
+add $3,6
 lpb $3
   sub $3,1
   add $6,$2

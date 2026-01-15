@@ -5,9 +5,8 @@
 
 #offset 1
 
-mul $0,2
-sub $0,1
-mul $0,2
+mul $0,4
+sub $0,2
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 div $0,6
 add $0,1

@@ -1,9 +1,11 @@
 ; A004175: Triangle of coefficients of Euler polynomials 2^n*E_n(x) (exponents in decreasing order).
 ; Submitted by damotbe
 ; 1,2,-1,4,-4,0,8,-12,0,2,16,-32,0,16,0,32,-80,0,80,0,-16,64,-192,0,320,0,-192,0,128,-448,0,1120,0,-1344,0,272,256,-1024,0,3584,0,-7168,0,4352,0,512,-2304,0,10752,0,-32256,0,39168,0,-7936,1024,-5120,0,30720,0,-129024,0,261120,0,-158720,0,2048,-11264,0,84480,0,-473088,0,1436160,0,-1745920,0,353792,4096,-24576
-; Formula: a(n) = A081733(2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-n+truncate((sqrtint(8*n+8)-1)/2))*truncate(2^(2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-binomial(floor((sqrtint(16*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8*truncate((sqrtint(8*n+8)-1)/2)-8*n+1)+1)/2),2)-n+truncate((sqrtint(8*n+8)-1)/2)))
 
 mov $1,$0
+mov $12,0
+mov $15,0
+mov $16,0
 add $0,1
 mov $3,$0
 mul $3,8
@@ -19,7 +21,43 @@ mul $0,-2
 add $0,$3
 add $0,$1
 mov $2,$0
-seq $2,81733 ; Triangle read by rows, T(n,k) = 2^(n-k)*[x^k] Euler_polynomial(n, x), for n >= 0, k >= 0.
+add $2,1
+mov $8,$2
+mul $8,8
+nrt $8,2
+sub $8,1
+div $8,2
+mov $9,$8
+add $9,1
+bin $9,2
+sub $2,$9
+sub $2,1
+mov $9,$2
+mov $2,$8
+bin $2,$9
+sub $8,$9
+mov $10,-1
+pow $10,$8
+mov $11,0
+mov $14,$8
+add $8,1
+lpb $8
+  sub $8,1
+  sub $16,$12
+  mov $12,$11
+  pow $12,$14
+  add $12,$16
+  mov $13,$14
+  bin $13,$11
+  mul $13,$12
+  sub $16,$12
+  add $11,1
+  mul $15,-1
+  add $15,$13
+lpe
+mov $8,$15
+mul $8,$10
+mul $2,$8
 mov $7,$0
 mul $7,8
 add $7,1

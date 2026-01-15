@@ -28,7 +28,7 @@ lpb $3
   mod $12,2
   mov $4,$2
   div $4,2
-  seq $4,9843 ; E.g.f. x/cos(x) (odd powers only).
+  seq $4,9843 ; Expansion of e.g.f. x/cos(x) (odd powers only).
   mul $4,$12
   add $2,20
   mul $$2,$4

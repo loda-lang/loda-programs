@@ -19,8 +19,7 @@ lpb $5
   mod $6,5
   dif $6,2
   gcd $6,4
-  add $6,1
-  equ $6,5
+  equ $6,4
   sub $0,$6
   add $4,1
   mov $7,$0

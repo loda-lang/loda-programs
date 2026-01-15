@@ -1,7 +1,7 @@
 ; A005680: A squarefree ternary sequence.
 ; Submitted by Coleslaw
 ; 1,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,2,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,1,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,2,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2
-; Formula: a(n) = truncate((-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2)-1)^(sumdigits(n-2,2)*sign(n-2)-2*truncate((sumdigits(n-2,2)*sign(n-2))/2)-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2)))+2
+; Formula: a(n) = if(((-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2)-1)^2)==1,(-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2)-1)^(sumdigits(n-2,2)*sign(n-2)-2*truncate((sumdigits(n-2,2)*sign(n-2))/2)-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2)),if((sumdigits(n-2,2)*sign(n-2)-2*truncate((sumdigits(n-2,2)*sign(n-2))/2)-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2))<=(-1),0,(-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2)-1)^(sumdigits(n-2,2)*sign(n-2)-2*truncate((sumdigits(n-2,2)*sign(n-2))/2)-2*truncate((-3*sumdigits(n-1,2))/2)-3*sumdigits(n-1,2))))+2
 
 #offset 1
 

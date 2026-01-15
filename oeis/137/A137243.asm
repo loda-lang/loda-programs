@@ -1,45 +1,22 @@
 ; A137243: Number of coprime pairs (a,b) with -n <= a,b <= n.
-; Submitted by Science United
+; Submitted by LCB001
 ; 8,16,32,48,80,96,144,176,224,256,336,368,464,512,576,640,768,816,960,1024,1120,1200,1376,1440,1600,1696,1840,1936,2160,2224,2464,2592,2752,2880,3072,3168,3456,3600,3792,3920,4240,4336,4672,4832,5024,5200,5568,5696,6032,6192,6448,6640,7056,7200,7520,7712,8000,8224,8688,8816,9296,9536,9824,10080,10464,10624,11152,11408,11760,11952,12512,12704,13280,13568,13888,14176,14656,14848,15472,15728
 
 #offset 1
 
-mov $10,$0
-mov $12,$0
-lpb $12
-  clr $0,10
-  sub $12,1
-  mov $0,$10
-  sub $0,$12
-  mov $6,$0
-  mov $8,2
-  lpb $8
-    clr $0,6
-    sub $8,1
-    mov $0,$6
-    add $0,$8
-    sub $0,2
-    mov $1,$0
-    mov $2,$0
-    add $2,1
-    lpb $2
-      sub $2,1
-      mov $0,$1
-      sub $0,$2
-      add $0,1
-      seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-      add $3,$0
-    lpe
-    mov $9,$8
-    mul $9,$3
-    mov $0,$3
-    add $7,$9
-  lpe
-  min $6,1
-  mul $6,$0
-  mov $0,$7
-  sub $0,$6
+sub $0,1
+mov $4,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$4
+  sub $0,$1
+  add $0,1
+  mov $3,$0
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $0,$3
   mul $0,8
-  add $11,$0
+  add $2,$0
 lpe
-mov $0,$11
+mov $0,$2

@@ -12,8 +12,7 @@ lpb $2
   mul $3,2
   add $3,1
   seq $3,359270 ; Number of divisors of 5*n-3 of form 5*k+3.
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,2
   mov $4,$0

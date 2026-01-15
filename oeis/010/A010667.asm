@@ -8,9 +8,8 @@
 sub $0,1
 mov $5,45
 mov $3,$0
-mul $3,4
-add $3,1
-mul $3,5
+mul $3,20
+add $3,5
 lpb $3
   sub $3,1
   add $6,$2

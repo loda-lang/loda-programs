@@ -1,12 +1,19 @@
 ; A243501: Permutation of even numbers: a(n) = 2*A048673(n).
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 2,4,6,10,8,16,12,28,26,22,14,46,18,34,36,82,20,76,24,64,56,40,30,136,50,52,126,100,32,106,38,244,66,58,78,226,42,70,86,190,44,166,48,118,176,88,54,406,122,148,96,154,60,376,92,298,116,94,62,316,68,112,276,730,120,196,72,172,146,232,74,676,80,124,246,208,144,256,84,568
-; Formula: a(n) = truncate((A003961(832*n)-12386)/12393)+2
+; Formula: a(n) = truncate((96*truncate((A003961(n)+4)/2)-192)/48)+2
 
 #offset 1
 
-mul $0,832
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-sub $0,12386
-div $0,12393
+add $0,4
+div $0,2
+mul $0,48
+add $0,30356
+mov $1,307912
+add $1,$0
+add $1,$0
+mov $0,$1
+sub $0,368816
+div $0,48
 add $0,2

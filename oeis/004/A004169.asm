@@ -17,8 +17,7 @@ lpb $2
   dif $3,2
   dir $3,2
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

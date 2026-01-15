@@ -1,6 +1,7 @@
 ; A007665: Tower of Hanoi with 5 pegs.
 ; Submitted by Science United
 ; 1,3,5,7,11,15,19,23,27,31,39,47,55,63,71,79,87,95,103,111,127,143,159,175,191,207,223,239,255,271,287,303,319,335,351,383,415,447,479,511,543,575,607,639,671,703,735,767,799
+; Formula: a(n) = (-truncate((sqrtnint(6*n,3)*(sqrtnint(6*n,3)-1)*(sqrtnint(6*n,3)+1))/6)+truncate(((sqrtnint(6*n,3)-2)*(sqrtnint(6*n,3)-1))/2)+n+1)*if((sqrtnint(6*n,3)-1)<=(-1),0,2^(sqrtnint(6*n,3)-1))-1
 
 #offset 1
 

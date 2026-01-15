@@ -1,7 +1,7 @@
 ; A005678: A squarefree ternary sequence.
 ; Submitted by Xenon
 ; 1,2,1,3,2,1,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,2,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,1,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,2,1,3,2,1,2,3,1,3,2,3
-; Formula: a(n) = truncate((-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2))^(sumdigits(n+2729,2)%2-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2)))+2
+; Formula: a(n) = if(((-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2))^2)==1,(-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2))^(sumdigits(n+2729,2)%2-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2)),if((sumdigits(n+2729,2)%2-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2))<=(-1),0,(-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2))^(sumdigits(n+2729,2)%2-2*truncate((-3*sumdigits(n+2730,2))/2)-3*sumdigits(n+2730,2))))+2
 
 #offset 1
 

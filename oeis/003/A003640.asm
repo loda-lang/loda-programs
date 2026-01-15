@@ -1,7 +1,7 @@
 ; A003640: Number of genera of imaginary quadratic field with discriminant -k, k = A003657(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,1,2,1,2,1,2,1,2,2,2,1,1,2,2,2,2,1,1,2,1,1,1,4,2,2,2,2,1,2,1,2,2,2,2,4,2,1,1,4,2,1,2,2,1,2,2,2,1,2,1,4,1,2,2,2,1,4,1,2,1,2,2,2,1,1,4,4,2,2,1,2,2,2,1,4,2
-; Formula: a(n) = truncate(2^(A001221(A003657(n))-1))
+; Formula: a(n) = if((A001221(A003657(n))-1)<=(-1),0,2^(A001221(A003657(n))-1))
 
 #offset 1
 

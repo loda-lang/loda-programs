@@ -1,7 +1,7 @@
 ; A010155: Continued fraction for sqrt(77).
 ; Submitted by BrandyNOW
 ; 8,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1,3,2,3,1,16,1
-; Formula: a(n) = 2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+2*gcd(-n,2)+binomial(floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)/3),truncate(3^(gcd(n,max(-n+2,0)+6)-3)))-2
+; Formula: a(n) = 2*(if((gcd(n,max(-n+2,0)+6)-3)<=(-1),0,3^(gcd(n,max(-n+2,0)+6)-3))%10)+2*gcd(-n,2)+binomial(floor((if((gcd(n,max(-n+2,0)+6)-3)<=(-1),0,3^(gcd(n,max(-n+2,0)+6)-3))%10)/3),if((gcd(n,max(-n+2,0)+6)-3)<=(-1),0,3^(gcd(n,max(-n+2,0)+6)-3)))-2
 
 mov $1,2
 trn $1,$0

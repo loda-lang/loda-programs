@@ -1,7 +1,7 @@
 ; A007543: Frequency of n-th largest distance in N times N grid, N > n.
 ; Submitted by loader3229
 ; 2,8,12,8,16,24,20,32,18,24,40,48,28,48,60,32,32,56,72,80,36,64,84,96,50,40,72,96,112,120,44,80,108,128,140,72,48,88,120,144,160,168,52,96,132,160,180,192,98,56,104,144,176,200,216,224,60
-; Formula: a(n) = 2*gcd(truncate(2^(-binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)-sqrtint(4*n)+binomial(truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)+8*sqrtint(4*n))-1)/2)+1,2)+truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)+8*sqrtint(4*n))-1)/2)+1)),2)*(-(-floor((sqrtint(4*n-3)^2)/4)+n)*(-floor((sqrtint(4*n-3)^2)/4)+n-1)+sqrtint(4*n-3)*(-floor((sqrtint(4*n-3)^2)/4)+n))
+; Formula: a(n) = 2*gcd(if((-binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)-sqrtint(4*n)+binomial(truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)+8*sqrtint(4*n))-1)/2)+1,2)+truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)+8*sqrtint(4*n))-1)/2)+1)<=(-1),0,2^(-binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)-sqrtint(4*n)+binomial(truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)+8*sqrtint(4*n))-1)/2)+1,2)+truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n)^2)/4)+sqrtint(4*n),2)+8*sqrtint(4*n))-1)/2)+1)),2)*(-(-floor((sqrtint(4*n-3)^2)/4)+n)*(-floor((sqrtint(4*n-3)^2)/4)+n-1)+sqrtint(4*n-3)*(-floor((sqrtint(4*n-3)^2)/4)+n))
 
 #offset 1
 

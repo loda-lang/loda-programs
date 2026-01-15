@@ -4,11 +4,11 @@
 
 mov $2,$0
 lpb $0
-  mul $0,0
+  mov $0,0
   mov $1,$2
   mul $1,2
   seq $1,9821 ; Expansion of tanh(tanh(x))*exp(x).
-  gcd $1,$0
+  gcd $1,0
   mov $2,0
 lpe
 mov $0,$1

@@ -1,29 +1,15 @@
 ; A011888: Partial sums of A011863.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,1,6,22,61,142,292,548,958,1583,2498,3794,5579,7980,11144,15240,20460,27021,35166,45166,57321,71962,89452,110188,134602,163163,196378,234794,278999,329624,387344,452880
-; Formula: a(n) = (floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)+4)+6)+4)+1)*(n%2)+floor((floor(n/2)*(floor(n/2)*(floor(n/2)*(floor(n/2)*(12*floor(n/2)+45)+65)+45)+13))/30)
 
-mov $2,$0
-mod $2,2
-div $0,2
-mov $1,$0
-mov $3,$0
-mul $0,12
-add $0,45
-mul $0,$1
-add $0,65
-mul $0,$1
-add $0,45
-mul $0,$1
-add $0,13
-mul $0,$1
-div $0,30
-add $3,4
-mul $3,$1
-add $3,6
-mul $3,$1
-add $3,4
-mul $3,$1
-add $3,1
-mul $2,$3
-add $0,$2
+add $0,1
+lpb $0
+  mov $2,$0
+  pow $2,4
+  sub $0,1
+  div $1,8
+  mul $1,8
+  add $1,$2
+lpe
+mov $0,$1
+div $0,16

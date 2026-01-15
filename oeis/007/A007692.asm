@@ -20,8 +20,7 @@ lpb $2
   add $4,$5
   mov $3,$4
   min $3,1
-  add $3,3
-  equ $3,4
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

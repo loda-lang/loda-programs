@@ -40,7 +40,15 @@ lpb $2
   max $4,0
   mov $10,$4
   mul $10,2
-  seq $10,188164 ; Number of palindromic structures of length n.
+  add $10,1
+  div $10,2
+  mov $11,$10
+  seq $11,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $11,3
+  mov $10,$11
+  sub $10,2
+  div $10,3
+  add $10,1
   mov $4,$10
   mul $4,$6
   add $0,$4

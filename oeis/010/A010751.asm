@@ -1,7 +1,7 @@
 ; A010751: Up once, down twice, up three times, down four times, ...
 ; Submitted by fzs600
 ; 0,1,0,-1,0,1,2,1,0,-1,-2,-1,0,1,2,3,2,1,0,-1,-2,-3,-2,-1,0,1,2,3,4,3,2,1,0,-1,-2,-3,-4,-3,-2,-1,0,1,2,3,4,5,4,3,2,1,0,-1,-2,-3,-4,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,5,4,3,2,1,0,-1,-2,-3,-4,-5,-6,-5
-; Formula: a(n) = truncate((-1)^(truncate((sqrtint(8*n)-1)/2)+1))*(-n+floor(((truncate((sqrtint(8*n)-1)/2)+1)^2)/2))
+; Formula: a(n) = (-n+floor(((truncate((sqrtint(8*n)-1)/2)+1)^2)/2))*if(1==1,(-1)^(truncate((sqrtint(8*n)-1)/2)+1),if((truncate((sqrtint(8*n)-1)/2)+1)<=(-1),0,(-1)^(truncate((sqrtint(8*n)-1)/2)+1)))
 
 mov $2,$0
 mul $2,8

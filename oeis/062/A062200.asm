@@ -1,16 +1,15 @@
 ; A062200: Number of compositions of n such that two adjacent parts are not equal modulo 2.
-; Submitted by Icecold
+; Submitted by Science United
 ; 1,1,1,3,2,6,6,11,16,22,37,49,80,113,172,257,377,573,839,1266,1874,2798,4175,6204,9274,13785,20577,30640,45665,68072,101393,151169,225193,335659,500162,745342,1110790,1655187,2466760,3675822,5477917,8163217,12164896,18128529,27015092
+; Formula: a(n) = b(2*n), b(n) = b(n-3)+b(n-4), b(4) = 1, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 1
 
 mov $1,1
-mov $3,1
-mov $4,1
+mul $0,2
 lpb $0
-  mul $1,-1
-  rol $1,4
-  add $4,$1
-  add $4,$2
-  add $4,$2
   sub $0,1
+  add $3,$2
+  sub $1,$4
+  ror $1,4
+  add $1,$4
 lpe
-mov $0,$3
+mov $0,$1

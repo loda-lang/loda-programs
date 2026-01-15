@@ -1,10 +1,48 @@
 ; A004174: Triangle of coefficients of Euler polynomials 2^n*E_n(x) (exponents in increasing order).
 ; Submitted by Science United
 ; 1,-1,2,0,-4,4,2,0,-12,8,0,16,0,-32,16,-16,0,80,0,-80,32,0,-192,0,320,0,-192,64,272,0,-1344,0,1120,0,-448,128,0,4352,0,-7168,0,3584,0,-1024,256,-7936,0,39168,0,-32256,0,10752,0,-2304,512,0,-158720,0,261120,0,-129024,0,30720,0,-5120,1024,353792,0,-1745920,0,1436160,0,-473088,0,84480,0,-11264,2048,0,8491008
-; Formula: a(n) = A081733(n)*truncate(2^(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))
 
 mov $1,$0
-seq $1,81733 ; Triangle read by rows, T(n,k) = 2^(n-k)*[x^k] Euler_polynomial(n, x), for n >= 0, k >= 0.
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+mov $9,0
+mov $12,0
+mov $13,0
+sub $1,$6
+sub $1,1
+mov $6,$1
+mov $1,$5
+bin $1,$6
+sub $5,$6
+mov $7,-1
+pow $7,$5
+mov $8,0
+mov $11,$5
+add $5,1
+lpb $5
+  sub $5,1
+  sub $13,$9
+  mov $9,$8
+  pow $9,$11
+  add $9,$13
+  mov $10,$11
+  bin $10,$8
+  mul $10,$9
+  sub $13,$9
+  add $8,1
+  mul $12,-1
+  add $12,$10
+lpe
+mov $5,$12
+mul $5,$7
+mul $1,$5
 mov $4,$0
 mul $4,8
 add $4,1

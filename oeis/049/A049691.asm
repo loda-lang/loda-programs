@@ -1,14 +1,11 @@
 ; A049691: a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
-; Submitted by Stony666
+; Submitted by Science United
 ; 0,3,5,9,13,21,25,37,45,57,65,85,93,117,129,145,161,193,205,241,257,281,301,345,361,401,425,461,485,541,557,617,649,689,721,769,793,865,901,949,981,1061,1085,1169,1209,1257,1301,1393,1425,1509,1549,1613,1661,1765,1801,1881,1929,2001,2057,2173,2205,2325,2385,2457,2521,2617,2657,2789,2853,2941,2989,3129,3177,3321,3393,3473,3545,3665,3713,3869
 
-mov $2,1
 lpb $0
   mov $1,$0
   add $1,1
   seq $1,206297 ; Position of n in the canonical bijection from the positive integers to the positive rational numbers.
   div $0,$1
-  add $2,$1
 lpe
-mov $0,$2
-sub $0,1
+mov $0,$1
