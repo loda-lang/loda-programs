@@ -1,13 +1,12 @@
 ; A044980: Numbers whose base-3 representation contains exactly three 0's and no 1's.
-; Submitted by ChelseaOilman
+; Submitted by wareyore
 ; 54,164,168,180,216,494,506,510,542,546,558,650,654,666,702,1484,1520,1532,1536,1628,1640,1644,1676,1680,1692,1952,1964,1968,2000,2004,2016,2108,2112,2124,2160,4454,4562,4598,4610,4614
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,4
 lpb $2
   mov $5,5
