@@ -77,6 +77,8 @@ A004945: a(n) = round(n*phi^10), where phi is the golden ratio, A001622.
 A004956: a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
+A004963: a(n) = ceiling(n*phi^8), where phi is the golden ratio, A001622.
+A004965: a(n) = ceiling(n*phi^10), where phi is the golden ratio, A001622.
 A005101: Abundant numbers (sum of divisors of m exceeds 2m).
 A005206: Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
 A005351: Base -2 representation for n regarded as base 2, then evaluated.
@@ -87,6 +89,7 @@ A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
 A005882: Theta series of planar hexagonal lattice (A2) with respect to deep hole.
 A005928: G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
 A006530: Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+A006594: A Beatty sequence: floor(n*(1 + 1/e)).
 A006996: a(n) = C(2n,n) mod 3.
 A007066: a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
 A007067: Nearest integer to n*tau.
