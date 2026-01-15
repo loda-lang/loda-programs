@@ -10,7 +10,6 @@ A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n th
 A001247: Squares of Bell numbers.
 A001248: Squares of primes.
 A001255: Squares of partition numbers.
-A001317: Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.
 A001348: Mersenne numbers: 2^p - 1, where p is prime.
 A001566: a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2.
 A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
@@ -19,7 +18,6 @@ A001749: Primes multiplied by 4.
 A001750: Primes multiplied by 5.
 A002062: a(n) = Fibonacci(n) + n.
 A002659: a(n) = 2*sigma(n) - 1.
-A003602: Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
 A003972: Moebius transform of A003961; a(n) = phi(A003961(n)), where A003961 shifts the prime factorization of n one step towards the larger primes.
 A004085: Sum of digits of Euler totient function of n.
 A004087: Primes written backwards.
@@ -148,7 +146,6 @@ A037168: a(n) = 2*prime(n) - 2.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
-A038702: Prime(n)^2 mod prime(n-1).
 A039643: Number of steps to fixed point of "k -> k/2 or (k-1)/2 until result is prime", starting with prime(n)+1.
 A039649: a(n) = phi(n)+1.
 A039701: a(n) = n-th prime modulo 3.
@@ -235,7 +232,6 @@ A071986: Parity of the prime-counting function pi(n).
 A072003: 10's complement of final digit of n-th prime.
 A072055: a(n) = 2*prime(n)+1.
 A072205: a(n) = (p^2 - p + 2)/2 for p = prime(n); number of squares modulo p^2.
-A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A073123: a(n) is the largest number such that pi(a(n)) = prime(n).
 A073256: a(n) = phi(n-th composite number).
 A073521: The set of 16 consecutive primes with the property that they form a 4 X 4 magic square with the smallest magic constant (258).
@@ -271,7 +267,6 @@ A081689: A005228 - 1.
 A081865: a(n) = sigma_7(2n-1).
 A081866: a(n)=sigma_9(2n-1).
 A083271: a(n) = n*tau(n) + 1.
-A083542: a(n) = phi(n+1)*phi(n), product of totients of two consecutive integers.
 A083681: Sum of divisors of semiprimes.
 A083786: Composite numbers mod 10.
 A084300: a(n) = phi(n) mod 6.
@@ -300,11 +295,9 @@ A089034: a(n) = (prime(n)^4 - 1) / 240.
 A089103: a(n) = Mod[n+Prime[n],10]
 A089241: Even numbers k such that k/2 - 1 is prime.
 A089250: Add 2 (mod 10) to each decimal digit of Pi.
-A090076: a(n) = prime(n)*prime(n+2).
 A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
 A091330: a(n) = ((p-1)!/p) - ((p-1)*(p-1)!/p!), where p is the n-th prime.
 A092759: a(n) = prime(n)^7.
-A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
 A093460: a(n) = 2n^(n-1) - 1.
 A094815: (prime(prime(n)))^n.
