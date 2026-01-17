@@ -1,27 +1,19 @@
 ; A058887: Smallest prime p such that (2^n)*p is a nontotient number.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 3,7,17,19,19,19,31,31,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47
-; Formula: a(n) = 16*(n>=8)+12*(n>=6)+10*(n>=2)+4*(n>=1)+2*(n>=3)+3
 
-mov $1,$0
-geq $1,1
-mul $1,4
-mov $2,$1
-mov $1,$0
-geq $1,2
-mul $1,10
-add $2,$1
-mov $1,$0
-geq $1,3
-mul $1,2
-add $2,$1
-mov $1,$0
-geq $1,6
-mul $1,12
-add $2,$1
-mov $1,$0
-geq $1,8
-mul $1,16
-add $2,$1
-mov $0,$2
-add $0,3
+mov $1,3
+mov $2,7
+mov $3,17
+mov $4,19
+fil $4,3
+mov $7,31
+mov $8,31
+mov $9,47
+lpb $0
+  mov $1,0
+  rol $1,9
+  add $9,$8
+  sub $0,1
+lpe
+mov $0,$1

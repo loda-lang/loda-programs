@@ -1,73 +1,27 @@
 ; A091576: Poincaré series [or Poincare series] of the preprojective algebra of a Dynkin diagram of type E_7.
 ; Submitted by loader3229
 ; 7,12,17,22,27,30,33,34,35,34,33,30,27,22,17,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (n>=8)+(n>=7)+5*(n>=4)+5*(n>=3)+5*(n>=2)+5*(n>=1)+3*(n>=6)+3*(n>=5)-(n>=10)-(n>=9)-3*(n>=12)-3*(n>=11)-5*(n>=16)-5*(n>=15)-5*(n>=14)-5*(n>=13)-7*(n>=17)+7
 
-mov $1,$0
-geq $1,1
-mul $1,5
-mov $2,$1
-mov $1,$0
-geq $1,2
-mul $1,5
-add $2,$1
-mov $1,$0
-geq $1,3
-mul $1,5
-add $2,$1
-mov $1,$0
-geq $1,4
-mul $1,5
-add $2,$1
-mov $1,$0
-geq $1,5
-mul $1,3
-add $2,$1
-mov $1,$0
-geq $1,6
-mul $1,3
-add $2,$1
-mov $1,$0
-geq $1,7
-add $2,$1
-mov $1,$0
-geq $1,8
-add $2,$1
-mov $1,$0
-geq $1,9
-mul $1,-1
-add $2,$1
-mov $1,$0
-geq $1,10
-mul $1,-1
-add $2,$1
-mov $1,$0
-geq $1,11
-mul $1,-3
-add $2,$1
-mov $1,$0
-geq $1,12
-mul $1,-3
-add $2,$1
-mov $1,$0
-geq $1,13
-mul $1,-5
-add $2,$1
-mov $1,$0
-geq $1,14
-mul $1,-5
-add $2,$1
-mov $1,$0
-geq $1,15
-mul $1,-5
-add $2,$1
-mov $1,$0
-geq $1,16
-mul $1,-5
-add $2,$1
-mov $1,$0
-geq $1,17
-mul $1,-7
-add $2,$1
-mov $0,7
-add $0,$2
+mov $1,7
+mov $2,12
+mov $3,17
+mov $4,22
+mov $5,27
+mov $6,30
+mov $7,33
+mov $8,34
+mov $9,35
+mov $10,34
+mov $11,33
+mov $12,30
+mov $13,27
+mov $14,22
+mov $15,17
+mov $16,12
+mov $17,7
+lpb $0
+  mov $1,0
+  rol $1,17
+  sub $0,1
+lpe
+mov $0,$1

@@ -1,20 +1,29 @@
 ; A060470: Smallest positive a(n) such that number of solutions to a(n)=a(j)+a(k) j<k<n is two or less.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,3,4,5,6,8,10,12,15,17,19,24,26,28,33,35,37,42,44,46,51,53,55,60,62,64,69,71,73,78,80,82,87,89,91,96,98,100,105,107,109,114,116,118,123,125,127,132,134,136,141,143,145,150,152,154,159,161,163,168,170,172,177,179,181,186,188,190,195,197,199,204,206,208,213,215,217,222,224
 
 #offset 1
 
+mov $1,1
+mov $2,2
+mov $3,3
+mov $4,4
+mov $5,5
+mov $6,6
+mov $7,8
+mov $8,10
+mov $9,12
+mov $10,15
+mov $11,17
+mov $12,19
+mov $13,24
 sub $0,1
-mov $2,$0
-trn $0,5
-mov $1,$0
-sub $0,3
 lpb $0
-  trn $0,3
-  add $1,$3
-  add $1,1
-  mov $3,2
+  mov $1,0
+  rol $1,13
+  sub $13,$9
+  add $13,$10
+  add $13,$12
+  sub $0,1
 lpe
-add $1,$2
 mov $0,$1
-add $0,1

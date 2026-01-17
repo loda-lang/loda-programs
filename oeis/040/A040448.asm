@@ -1,31 +1,19 @@
 ; A040448: Continued fraction for sqrt(470).
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 21,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1,2,8,2,1,42,1
-; Formula: a(n) = truncate((3*gcd(-((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10),2)*(gcd(-n,2)+2)*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10))/5)+truncate((truncate((3*gcd(-((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10),2)*(gcd(-n,2)+2)*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10))/5)+1)/8)
+; Formula: a(n) = a(n-6), a(9) = 8, a(8) = 2, a(7) = 1, a(6) = 42, a(5) = 1, a(4) = 2, a(3) = 8, a(2) = 2, a(1) = 1, a(0) = 21
 
+mov $1,21
+mov $2,1
+mov $3,2
+mov $4,8
 mov $5,2
-trn $5,$0
-add $5,6
-sub $2,$0
-gcd $2,2
-add $2,2
-gcd $0,$5
-sub $0,3
-mov $4,3
-pow $4,$0
-mov $0,$4
-add $0,1
-mod $0,10
-sub $3,$0
-gcd $3,2
-mul $3,$0
-mov $0,$3
-mul $0,$2
-mul $0,3
-div $0,5
-add $0,1
-mov $1,$0
-div $0,8
-add $1,$0
+mov $6,1
+mov $7,42
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
 mov $0,$1
-sub $0,1

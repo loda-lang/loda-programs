@@ -1,18 +1,31 @@
 ; A028291: Expansion of 1/((1-x)^2(1-x^2)(1-x^3)(1-x^5)) in powers of x.
-; Submitted by Sabroe_SMC
+; Submitted by loader3229
 ; 1,2,4,7,11,17,25,35,48,64,84,108,137,171,211,258,312,374,445,525,616,718,832,959,1100,1256,1428,1617,1824,2050,2297,2565,2856,3171,3511,3878,4273,4697,5152,5639,6160,6716,7309,7940,8611,9324,10080,10881,11729
 
-mov $21,$0
-mov $23,$0
-add $23,1
-lpb $23
-  clr $0,21
-  sub $23,1
-  mov $0,$21
-  sub $0,$23
-  add $2,$0
-  seq $2,8669 ; Molien series for 4-dimensional complex reflection group of order 7680 (in powers of x^4).
-  add $20,$2
-  add $22,$20
+mov $1,1
+mov $2,2
+mov $3,4
+mov $4,7
+mov $5,11
+mov $6,17
+mov $7,25
+mov $8,35
+mov $9,48
+mov $10,64
+mov $11,84
+mov $12,108
+lpb $0
+  rol $1,12
+  sub $12,$1
+  sub $12,$1
+  add $12,$3
+  add $12,$4
+  sub $12,$5
+  add $12,$7
+  sub $12,$8
+  sub $12,$9
+  add $12,$11
+  add $12,$11
+  sub $0,1
 lpe
-mov $0,$22
+mov $0,$1

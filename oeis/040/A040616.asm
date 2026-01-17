@@ -1,22 +1,18 @@
 ; A040616: Continued fraction for sqrt(642).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 25,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2,1,24,1,2,50,2
-; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+21*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n+1,2))/3)+gcd(-n+1,2)
+; Formula: a(n) = a(n-6), a(9) = 24, a(8) = 1, a(7) = 2, a(6) = 50, a(5) = 2, a(4) = 1, a(3) = 24, a(2) = 1, a(1) = 2, a(0) = 25
 
-mov $1,2
-trn $1,$0
-add $1,6
-sub $2,$0
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
-add $2,1
-gcd $2,2
-add $2,$0
-mov $0,$2
-div $0,3
-mul $0,21
-add $0,$2
+mov $1,25
+mov $2,2
+mov $3,1
+mov $4,24
+mov $5,1
+mov $6,2
+mov $7,50
+lpb $0
+  rol $1,7
+  mov $7,$1
+  sub $0,1
+lpe
+mov $0,$1

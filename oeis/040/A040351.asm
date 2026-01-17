@@ -1,30 +1,19 @@
 ; A040351: Continued fraction for sqrt(371).
-; Submitted by Science United
+; Submitted by loader3229
 ; 19,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3,1,4,1,3,38,3
-; Formula: a(n) = ((sign(truncate(binomial(4*n-1,2)/2))*((abs(truncate(binomial(4*n-1,2)/2))-1)%6+1))==4)+38*((sign(truncate(binomial(4*n-1,2)/2))*((abs(truncate(binomial(4*n-1,2)/2))-1)%6+1))==6)+19*((sign(truncate(binomial(4*n-1,2)/2))*((abs(truncate(binomial(4*n-1,2)/2))-1)%6+1))==0)+4*((sign(truncate(binomial(4*n-1,2)/2))*((abs(truncate(binomial(4*n-1,2)/2))-1)%6+1))==3)+3*((sign(truncate(binomial(4*n-1,2)/2))*((abs(truncate(binomial(4*n-1,2)/2))-1)%6+1))==1)
+; Formula: a(n) = a(n-6), a(9) = 4, a(8) = 1, a(7) = 3, a(6) = 38, a(5) = 3, a(4) = 1, a(3) = 4, a(2) = 1, a(1) = 3, a(0) = 19
 
-mul $0,4
-sub $0,1
-bin $0,2
-div $0,2
-dgr $0,7
-mov $1,$0
-equ $1,0
-mul $1,19
-mov $2,$1
-mov $1,$0
-equ $1,1
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,3
-mul $1,4
-add $2,$1
-mov $1,$0
-equ $1,4
-add $2,$1
-mov $1,$0
-equ $1,6
-mul $1,38
-add $2,$1
-mov $0,$2
+mov $1,19
+mov $2,3
+mov $3,1
+mov $4,4
+mov $5,1
+mov $6,3
+mov $7,38
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

@@ -1,5 +1,5 @@
 ; A063330: Dimension of the space of weight n cuspidal newforms for Gamma_1( 57 ).
-; Submitted by Science United
+; Submitted by loader3229
 ; -1,71,162,252,342,430,520,610,698,788,878,970,1056,1146,1234,1328,1414,1506,1592,1686,1770,1864,1950,2046,2128,2222,2306,2404,2486,2582,2664,2762,2842,2940,3022,3122,3200,3298,3378,3480,3558,3658
 
 #offset 2
@@ -16,24 +16,15 @@ mov $9,698
 mov $10,788
 sub $0,2
 lpb $0
+  mov $1,0
+  rol $1,10
+  sub $10,$2
+  add $10,$3
+  sub $10,$5
+  add $10,$6
+  add $10,$6
+  sub $10,$7
+  add $10,$9
   sub $0,1
-  mov $1,$2
-  mov $2,$3
-  mul $3,-1
-  mov $11,$3
-  add $11,$4
-  rol $3,3
-  mov $5,$6
-  mul $6,-1
-  add $11,$6
-  mov $6,$7
-  mul $7,2
-  add $11,$7
-  mov $7,$8
-  mul $8,-1
-  add $11,$8
-  add $11,$10
-  rol $8,3
-  mov $10,$11
 lpe
 mov $0,$1

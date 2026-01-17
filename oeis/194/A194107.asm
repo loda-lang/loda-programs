@@ -1,20 +1,17 @@
 ; A194107: Natural fractal sequence of A194106.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,3,1,2,3,4,5,1,2,3,4,5,6,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,13,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,1,2,3,4,5,6,7,8
 
 #offset 1
 
-mov $1,1
-mov $3,2
-sub $0,1
 lpb $0
-  sub $0,1
-  add $2,$1
-  div $4,$3
-  add $4,$3
-  sub $0,$4
-  mov $1,$4
+  mov $3,$1
   add $3,1
-  add $4,$2
+  pow $3,2
+  mul $3,3
+  mov $2,$3
+  nrt $2,2
+  sub $0,$2
+  add $1,1
 lpe
 add $0,1

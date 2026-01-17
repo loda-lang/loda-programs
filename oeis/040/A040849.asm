@@ -1,58 +1,28 @@
 ; A040849: Continued fraction for sqrt(879).
-; Submitted by shiva
+; Submitted by loader3229
 ; 29,1,1,1,5,3,1,3,2,9,2,3,1,3,5,1,1,1,58,1,1,1,5,3,1,3,2,9,2,3,1,3,5,1,1,1,58,1,1,1,5,3,1,3,2,9,2,3,1,3,5,1,1,1,58,1,1,1,5,3,1,3,2,9,2,3,1,3,5,1,1,1,58,1,1,1,5,3,1,3
 
-dgr $0,19
-mov $1,$0
-equ $1,0
-mul $1,29
-mov $2,$1
-mov $1,$0
-equ $1,4
-mul $1,5
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,7
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,8
-mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,9
-mul $1,9
-add $2,$1
-mov $1,$0
-equ $1,10
-mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,11
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,13
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,14
-mul $1,5
-add $2,$1
-mov $1,$0
-equ $1,18
-mul $1,58
-add $2,$1
-mov $0,$2
+mov $1,29
+mov $2,1
+fil $2,3
+mov $5,5
+mov $6,3
+mov $7,1
+mov $8,3
+mov $9,2
+mov $10,9
+mov $11,2
+mov $12,3
+mov $13,1
+mov $14,3
+mov $15,5
+mov $16,1
+fil $16,3
+mov $19,58
 lpb $0
-  sub $0,2
-  add $2,2
+  mov $1,0
+  rol $1,19
+  add $19,$1
+  sub $0,1
 lpe
-mov $0,$2
-sub $0,1
-div $0,2
-add $0,1
+mov $0,$1

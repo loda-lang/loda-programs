@@ -1,21 +1,19 @@
 ; A040201: Continued fraction for sqrt(216).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 14,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1
-; Formula: a(n) = 3*floor((2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10))/3)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+gcd(-n,2)
+; Formula: a(n) = a(n-6), a(9) = 3, a(8) = 2, a(7) = 1, a(6) = 28, a(5) = 1, a(4) = 2, a(3) = 3, a(2) = 2, a(1) = 1, a(0) = 14
 
-mov $1,2
-trn $1,$0
-add $1,6
-sub $2,$0
-gcd $2,2
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
-mul $0,2
-add $2,$0
-div $0,3
-mul $0,3
-add $0,$2
+mov $1,14
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,2
+mov $6,1
+mov $7,28
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

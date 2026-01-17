@@ -1,11 +1,10 @@
 ; A023624: Convolution of Lucas numbers and A014306.
-; Submitted by respawner
+; Submitted by Science United
 ; 0,1,4,7,12,22,37,62,102,166,269,438,710,1151,1864,3018,4885,7906,12794,20702,33497,54202,87702,141907,229612,371522,601137,972662,1573802,2546467,4120272,6666742,10787017,17453762,28240781,45694544
 
 #offset 1
 
 mov $1,$0
-sub $0,1
 mov $2,$0
 lpb $2
   sub $2,1
@@ -13,22 +12,15 @@ lpb $2
   mov $0,$1
   sub $0,$2
   mov $6,$0
-  mul $6,6
-  nrt $6,3
-  mov $7,$6
-  add $7,2
-  bin $7,3
-  mov $8,$0
-  geq $8,$7
-  add $8,$6
-  add $8,1
-  bin $8,3
-  sub $0,$8
-  min $0,1
+  mul $0,6
+  nrt $0,3
+  add $0,2
+  bin $0,3
+  neq $0,$6
   add $3,$0
   add $4,$3
   mov $3,$5
+  mul $5,2
 lpe
-mul $3,2
-add $4,$3
+add $4,$5
 mov $0,$4

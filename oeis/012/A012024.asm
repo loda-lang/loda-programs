@@ -1,23 +1,18 @@
 ; A012024: E.g.f. sinh(sin(arctan(x))) (odd powers only).
-; Submitted by ckrause
+; Submitted by sjmielh
 ; 1,-2,16,-104,-20096,4427776,-954111872,243390205696,-75389245067264,28248828019830784,-12669814369258471424,6721694045416881553408,-4170436153219300846567424,2994608522937575414450814976
 
 #offset 1
 
-mul $0,2
 sub $0,1
-mov $1,1
+min $0,13
 mov $3,$0
+mul $3,2
+add $3,2
 lpb $3
-  sub $0,2
-  mul $1,$3
   sub $3,1
-  sub $4,2
-  mul $1,$3
-  div $1,$4
-  mul $1,$0
-  add $2,$1
-  sub $3,1
+  mov $2,$1
+  seq $2,12019 ; E.g.f.: exp(sin(arctan(x))).
+  add $1,1
 lpe
 mov $0,$2
-add $0,1

@@ -1,34 +1,20 @@
 ; A040531: Continued fraction for sqrt(555).
-; Submitted by Science United
+; Submitted by loader3229
 ; 23,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1,46,1,1,3,1,3,1,1
-; Formula: a(n) = truncate((floor((7728*((sign(n)*((n-1)%8+1))==8)+3864*((sign(n)*((n-1)%8+1))==0)+504*((sign(n)*((n-1)%8+1))==5)+504*((sign(n)*((n-1)%8+1))==3)+336)/84)-5)/2)+1
 
-dgr $0,9
-mov $1,$0
-equ $1,0
-mul $1,23
-mov $2,$1
-mov $1,$0
-equ $1,3
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,8
-mul $1,46
-add $2,$1
-mov $1,$2
-add $1,2
-mul $1,42
-mov $2,3
-mul $2,$1
-add $2,$1
-mov $1,$2
-div $1,84
+mov $1,23
+mov $2,1
+mov $3,1
+mov $4,3
+mov $5,1
+mov $6,3
+mov $7,1
+mov $8,1
+mov $9,46
+lpb $0
+  mov $1,0
+  rol $1,9
+  add $9,$1
+  sub $0,1
+lpe
 mov $0,$1
-sub $0,5
-div $0,2
-add $0,1

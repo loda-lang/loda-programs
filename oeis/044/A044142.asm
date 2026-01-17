@@ -1,45 +1,24 @@
-; A044142: Numbers n such that string 0,4 occurs in the base 7 representation of n but not of n-1.
+; A044142: Numbers k such that string 0,4 occurs in the base 7 representation of k but not of k-1.
 ; Submitted by loader3229
 ; 53,102,151,200,249,298,347,371,396,445,494,543,592,641,690,714,739,788,837,886,935,984,1033,1057,1082,1131,1180,1229,1278,1327,1376,1400,1425,1474,1523,1572,1621,1670,1719,1743,1768,1817
-; Formula: a(n) = 371*(((n-1)%8)==7)+347*(((n-1)%8)==6)+343*floor((n-1)/8)+298*(((n-1)%8)==5)+249*(((n-1)%8)==4)+200*(((n-1)%8)==3)+151*(((n-1)%8)==2)+102*(((n-1)%8)==1)+53*(((n-1)%8)==0)
 
 #offset 1
 
+mov $1,53
+mov $2,102
+mov $3,151
+mov $4,200
+mov $5,249
+mov $6,298
+mov $7,347
+mov $8,371
+mov $9,396
 sub $0,1
-mov $2,$0
-div $2,8
-mul $2,343
-mod $0,8
-mov $1,$0
-equ $1,0
-mul $1,53
-add $2,$1
-mov $1,$0
-equ $1,1
-mul $1,102
-add $2,$1
-mov $1,$0
-equ $1,2
-mul $1,151
-add $2,$1
-mov $1,$0
-equ $1,3
-mul $1,200
-add $2,$1
-mov $1,$0
-equ $1,4
-mul $1,249
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,298
-add $2,$1
-mov $1,$0
-equ $1,6
-mul $1,347
-add $2,$1
-mov $1,$0
-equ $1,7
-mul $1,371
-add $2,$1
-mov $0,$2
+lpb $0
+  mul $1,-1
+  rol $1,9
+  add $9,$1
+  add $9,$8
+  sub $0,1
+lpe
+mov $0,$1

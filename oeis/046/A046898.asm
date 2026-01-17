@@ -1,15 +1,19 @@
 ; A046898: Partial sums of A046897.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by kpmonaghan
 ; 1,4,8,11,17,29,37,40,53,71,83,95,109,133,157,160,178,217,237,255,287,323,347,359,390,432,472,496,526,598,630,633,681,735,783,822,860,920,976,994,1036,1132,1176,1212,1290,1362,1410,1422,1479,1572,1644,1686,1740,1860
 
 #offset 1
 
-sub $0,1
+mov $2,$0
+mov $4,1
 lpb $0
-  mov $0,1
-  add $1,20
-  sub $0,$1
+  sub $0,1
+  mov $5,$2
+  div $5,$4
+  mod $5,4
+  mov $3,$4
+  mul $3,$5
+  add $1,$3
+  add $4,1
 lpe
-add $0,1
-seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
-div $0,8
+mov $0,$1

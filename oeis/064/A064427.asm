@@ -1,39 +1,24 @@
 ; A064427: a(n) = n + (number of primes < n).
-; Submitted by mkferrysr
+; Submitted by Science United
 ; 1,2,4,6,7,9,10,12,13,14,15,17,18,20,21,22,23,25,26,28,29,30,31,33,34,35,36,37,38,40,41,43,44,45,46,47,48,50,51,52,53,55,56,58,59,60,61,63,64,65,66,67,68,70,71,72,73,74,75,77,78,80,81,82,83,84,85,87,88,89,90,92,93,95,96,97,98,99,100,102
 
 #offset 1
 
 sub $0,1
-mov $15,$0
-mov $17,$0
-add $17,1
-lpb $17
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  sub $0,$17
-  mov $11,$0
-  mov $13,2
-  lpb $13
-    sub $13,1
-    mov $0,$11
-    add $0,$13
-    sub $0,1
-    mov $1,$0
-    max $1,0
-    seq $1,230980 ; Number of primes <= n, starting at n=0.
-    sub $8,9
-    mov $14,$13
-    mul $14,$1
-    mov $0,$1
-    add $12,$14
-  lpe
-  min $11,1
-  mul $11,$0
-  mov $0,$12
-  sub $0,$11
-  add $0,1
-  add $16,$0
+mov $1,$0
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$1
+  sub $0,$3
+  mov $2,$0
+  max $2,1
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,21
+  add $5,$2
+  mov $0,$5
+  sub $0,20
+  add $4,$0
 lpe
-mov $0,$16
+mov $0,$4

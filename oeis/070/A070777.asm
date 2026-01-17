@@ -7,16 +7,14 @@
 mov $2,2
 lpb $0
   mov $3,$0
-  pow $3,5
   lpb $3
     mov $1,$0
     mod $1,$2
+    neq $1,0
     add $2,1
     sub $3,$1
   lpe
-  lpb $0
-    dif $0,$2
-  lpe
+  div $0,$2
 lpe
 mov $0,$2
-sub $0,1
+sub $0,2

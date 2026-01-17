@@ -1,5 +1,5 @@
 ; A174160: A symmetrical triangular sequence:t(n,m)=2*Eulerian[n, m - 1] - (Binomial[n - 1, m - 1]*Binomial[n, m - 1]/m)^2.
-; Submitted by Stony666
+; Submitted by wareyore
 ; 1,1,1,1,-1,1,1,-14,-14,1,1,-48,-268,-48,1,1,-111,-1896,-1896,-111,1,1,-201,-8643,-25793,-8643,-201,1,1,-290,-29830,-208862,-208862,-29830,-290,1,1,-292,-83680,-1206508,-2799316,-1206508,-83680,-292,1,1,1
 
 #offset 1
@@ -12,9 +12,6 @@ div $2,2
 mov $4,$2
 add $4,1
 bin $4,2
-mov $7,0
-mov $9,0
-mov $10,0
 mov $1,$0
 sub $1,$4
 sub $1,1
@@ -52,7 +49,7 @@ lpb $5
   mul $9,$8
   add $10,$9
   add $7,1
-  mul $9,0
+  mov $9,0
   sub $9,$6
 lpe
 mov $0,$10

@@ -1,19 +1,19 @@
 ; A044611: Numbers n such that string 5,3 occurs in the base 8 representation of n but not of n+1.
-; Submitted by vaughan
+; Submitted by loader3229
 ; 43,107,171,235,299,351,363,427,491,555,619,683,747,811,863,875,939,1003,1067,1131,1195,1259,1323,1375,1387,1451,1515,1579,1643,1707,1771,1835,1887,1899,1963,2027,2091,2155,2219,2283,2347
 
 #offset 1
 
-mov $1,44
-mov $2,108
-mov $3,172
-mov $4,236
-mov $5,300
-mov $6,352
-mov $7,364
-mov $8,428
-mov $9,492
-mov $10,556
+mov $1,43
+mov $2,107
+mov $3,171
+mov $4,235
+mov $5,299
+mov $6,351
+mov $7,363
+mov $8,427
+mov $9,491
+mov $10,555
 sub $0,1
 lpb $0
   mul $1,-1
@@ -23,4 +23,3 @@ lpb $0
   sub $0,1
 lpe
 mov $0,$1
-sub $0,1

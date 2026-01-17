@@ -1,21 +1,19 @@
 ; A040263: Continued fraction for sqrt(280).
-; Submitted by [BOINCstats] CRNabein
+; Submitted by loader3229
 ; 16,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1
-; Formula: a(n) = floor((gcd(-max(n,1),2)*((floor(truncate(3^(gcd(n,6)-3))/2)+2)%10+truncate(3^(gcd(n,6)-3))))/2)
+; Formula: a(n) = a(n-6), a(9) = 1, a(8) = 2, a(7) = 1, a(6) = 32, a(5) = 1, a(4) = 2, a(3) = 1, a(2) = 2, a(1) = 1, a(0) = 16
 
-mov $1,$0
-gcd $1,6
-sub $1,3
-mov $3,3
-pow $3,$1
-max $0,1
-mov $1,$3
-div $1,2
-add $1,2
-mod $1,10
-add $1,$3
-sub $2,$0
-gcd $2,2
-mul $2,$1
-mov $0,$2
-div $0,2
+mov $1,16
+mov $2,1
+mov $3,2
+mov $4,1
+mov $5,2
+mov $6,1
+mov $7,32
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

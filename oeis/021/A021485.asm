@@ -1,24 +1,16 @@
 ; A021485: Decimal expansion of 1/481.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0,2,0,7,9,0,0
-; Formula: a(n) = truncate((min(n,n%3)*(min(n,n%3)*c(n)+b(n)))/2), b(n) = truncate((51*c(n-3)+13*b(n-3))/4), b(5) = 19, b(4) = 19, b(3) = 19, b(2) = -2, b(1) = -2, b(0) = -2, c(n) = truncate((-3*b(n-3)-13*c(n-3))/4), c(5) = -5, c(4) = -5, c(3) = -5, c(2) = 2, c(1) = 2, c(0) = 2
+; Formula: a(n) = (binomial(gcd(n%2,2*(n==n)+56),n%3)+9)%10
 
-mov $2,-2
-mov $3,2
-lpb $0
-  sub $0,3
-  mov $4,$2
-  mul $4,-3
-  mov $1,$3
-  mul $1,51
-  mul $3,-13
-  add $3,$4
-  div $3,4
-  mul $2,13
-  add $2,$1
-  div $2,4
-lpe
-mul $3,$0
-add $2,$3
-mul $0,$2
-div $0,2
+mov $2,$0
+equ $2,$0
+mov $1,$0
+mod $1,3
+add $2,28
+mul $2,2
+mod $0,2
+gcd $0,$2
+bin $0,$1
+add $0,9
+mod $0,10

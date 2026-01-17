@@ -1,29 +1,19 @@
 ; A040361: Continued fraction for sqrt(381).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 19,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1
-; Formula: a(n) = truncate((6*truncate((5*floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-5)/4))/5)
+; Formula: a(n) = a(n-6), a(9) = 12, a(8) = 1, a(7) = 1, a(6) = 38, a(5) = 1, a(4) = 1, a(3) = 12, a(2) = 1, a(1) = 1, a(0) = 19
 
-mov $1,2
-trn $1,$0
-add $1,6
-gcd $0,$1
-sub $0,3
-sub $1,2
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
-mov $2,2
-add $2,$0
-mov $0,$2
-div $0,3
-mul $0,3
-mul $2,2
-mul $0,$1
-add $0,$2
-div $0,2
-sub $0,1
-mul $0,5
-div $0,4
-mul $0,6
-div $0,5
+mov $1,19
+mov $2,1
+mov $3,1
+mov $4,12
+mov $5,1
+mov $6,1
+mov $7,38
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

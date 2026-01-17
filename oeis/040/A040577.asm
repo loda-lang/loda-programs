@@ -1,24 +1,19 @@
 ; A040577: Continued fraction for sqrt(602).
-; Submitted by shiva
+; Submitted by loader3229
 ; 24,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1,1,6,1,1,48,1
-; Formula: a(n) = floor((6*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10))/((floor(8/(2*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10)))==0)+floor(8/(2*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10)))))
+; Formula: a(n) = a(n-6), a(9) = 6, a(8) = 1, a(7) = 1, a(6) = 48, a(5) = 1, a(4) = 1, a(3) = 6, a(2) = 1, a(1) = 1, a(0) = 24
 
-mov $5,2
-trn $5,$0
-add $5,6
-gcd $0,$5
-sub $0,3
-mov $4,3
-pow $4,$0
-mov $0,$4
-add $0,1
-mod $0,10
-mul $0,2
-mov $3,8
-div $3,$0
-mov $2,$3
-equ $2,0
-mov $1,$3
-add $1,$2
-mul $0,3
-div $0,$1
+mov $1,24
+mov $2,1
+mov $3,1
+mov $4,6
+mov $5,1
+mov $6,1
+mov $7,48
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

@@ -1,49 +1,26 @@
 ; A040913: Continued fraction for sqrt(944).
-; Submitted by Science United
+; Submitted by loader3229
 ; 30,1,2,1,1,1,2,2,3,2,2,1,1,1,2,1,60,1,2,1,1,1,2,2,3,2,2,1,1,1,2,1,60,1,2,1,1,1,2,2,3,2,2,1,1,1,2,1,60,1,2,1,1,1,2,2,3,2,2,1,1,1,2,1,60,1,2,1,1,1,2,2,3,2,2,1,1,1,2,1
 
-mov $1,$0
-dgr $1,17
-mov $2,$1
-equ $2,0
-mul $2,30
-mov $3,$2
-mov $2,$1
-equ $2,2
-mul $2,2
-add $3,$2
-mov $2,$1
-equ $2,6
-mul $2,2
-add $3,$2
-mov $2,$1
-equ $2,7
-mul $2,2
-add $3,$2
-mov $2,$1
-equ $2,8
-mul $2,3
-add $3,$2
-mov $2,$1
-equ $2,9
-mul $2,2
-add $3,$2
-mov $2,$1
-equ $2,10
-mul $2,2
-add $3,$2
-mov $2,$1
-equ $2,14
-mul $2,2
-add $3,$2
-mov $2,$1
-equ $2,16
-mul $2,60
-add $3,$2
-mov $1,$3
+mov $1,30
+mov $2,1
+mov $3,2
+mov $4,1
+fil $4,3
+mov $7,2
+mov $8,2
+mov $9,3
+mov $10,2
+mov $11,2
+mov $12,1
+fil $12,3
+mov $15,2
+mov $16,1
+mov $17,60
 lpb $0
+  mov $1,0
+  rol $1,17
+  add $17,$1
   sub $0,1
-  add $0,$1
-  add $1,1
 lpe
 mov $0,$1

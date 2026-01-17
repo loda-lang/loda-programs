@@ -1,23 +1,19 @@
 ; A040151: Continued fraction for sqrt(164).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 12,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4,6,4,1,24,1,4
-; Formula: a(n) = 3*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+3*gcd(-n,2)+binomial(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2)+1,truncate(3^(gcd(n,max(-n+2,0)+6)-3)))-3
+; Formula: a(n) = a(n-6), a(9) = 6, a(8) = 4, a(7) = 1, a(6) = 24, a(5) = 1, a(4) = 4, a(3) = 6, a(2) = 4, a(1) = 1, a(0) = 12
 
-mov $1,2
-trn $1,$0
-add $1,6
-sub $2,$0
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
-add $0,1
-gcd $2,2
-add $2,$0
-mov $0,$2
-bin $2,$3
-mul $0,3
-sub $0,6
-add $0,$2
+mov $1,12
+mov $2,1
+mov $3,4
+mov $4,6
+mov $5,4
+mov $6,1
+mov $7,24
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

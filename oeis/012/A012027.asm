@@ -1,20 +1,16 @@
 ; A012027: E.g.f. cosh(sin(arctan(x))) = cosh(x/sqrt(1+x^2)) (even powers only).
-; Submitted by ckrause
+; Submitted by sjmielh
 ; 1,1,-11,301,-15287,1239481,-146243459,23567903269,-4951201340399,1307274054385393,-420773143716828539,160635990248839962781,-70764171306270411101351,34822234810202848704345001
 
-mul $0,2
-mov $1,1
-mov $3,$0
-lpb $3
-  sub $0,2
-  mul $1,$3
-  sub $3,1
-  sub $4,2
-  mul $1,$3
-  div $1,$4
-  mul $1,$0
-  add $2,$1
-  sub $3,1
-lpe
-mov $0,$2
 add $0,1
+min $0,14
+mov $3,$0
+mul $3,2
+lpb $3
+  sub $3,1
+  mov $4,$2
+  mov $2,$1
+  seq $2,12019 ; E.g.f.: exp(sin(arctan(x))).
+  add $1,1
+lpe
+mov $0,$4

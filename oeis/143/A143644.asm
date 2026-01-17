@@ -11,22 +11,13 @@ mov $11,2
 fil $11,3
 mov $14,3
 lpb $0
-  sub $0,1
   mul $1,-1
-  mov $15,$1
-  mov $1,$2
-  mov $2,$3
-  add $15,$4
-  add $15,$5
-  rol $3,5
-  mov $7,$8
-  mul $8,-1
-  add $15,$8
-  mov $8,$9
-  mov $9,$10
-  add $15,$11
-  add $15,$12
-  rol $10,5
-  mov $14,$15
+  rol $1,14
+  add $14,$3
+  add $14,$4
+  sub $14,$7
+  add $14,$10
+  add $14,$11
+  sub $0,1
 lpe
 mov $0,$1

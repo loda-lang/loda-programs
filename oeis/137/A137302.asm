@@ -1,22 +1,35 @@
 ; A137302: Decimal expansion of 99999/9801.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,0,2,0,2,9,3,8,4,7,5,6,6,5,7,4,8,3,9,3,0,2,1,1,2,0,2,9,3,8,4,7,5,6,6,5,7,4,8,3,9,3,0,2,1,1,2,0,2,9,3,8,4,7,5,6,6,5,7,4,8,3,9,3,0,2,1,1,2,0,2,9,3,8,4,7,5,6,6,5
-; Formula: a(n) = floor((10*floor((10^(n-2)+14*gcd((n-2)==1,10)-11)/9))/121)%10
 
 #offset 2
 
+mov $1,1
+mov $3,2
+mov $5,2
+mov $6,9
+mov $7,3
+mov $8,8
+mov $9,4
+mov $10,7
+mov $11,5
+mov $12,6
+mov $13,6
+mov $14,5
+mov $15,7
+mov $16,4
+mov $17,8
+mov $18,3
+mov $19,9
+mov $20,3
+mov $22,2
+mov $23,1
+mov $24,1
 sub $0,2
-mov $2,$0
-equ $0,1
-gcd $0,10
-mul $0,14
-mov $3,10
-pow $3,$2
-add $0,$3
-sub $0,11
-div $0,9
-mov $1,$0
-mul $1,10
-div $1,121
+lpb $0
+  mov $1,0
+  rol $1,24
+  add $24,$2
+  sub $0,1
+lpe
 mov $0,$1
-mod $0,10
