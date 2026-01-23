@@ -10,5 +10,4 @@ seq $2,129308 ; a(n) is the number of positive integers k such that k*(k+1) divi
 mov $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $1,$2
-sub $0,1
 mov $0,$1

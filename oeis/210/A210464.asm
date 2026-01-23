@@ -11,7 +11,6 @@ mod $2,2
 div $0,2
 mov $1,$0
 mov $3,$0
-mov $4,$0
 add $0,5
 mul $0,$1
 add $0,8
@@ -19,7 +18,7 @@ mul $0,$1
 add $0,4
 mul $3,3
 add $3,13
-mul $3,$4
+mul $3,$1
 add $3,14
 div $3,2
 mul $2,$3

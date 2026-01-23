@@ -1,5 +1,5 @@
 ; A253583: Decimal expansion of cube root of 2 multiplied by square root of 3.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 2,1,8,2,2,4,7,2,7,1,9,4,3,4,4,2,8,0,7,1,2,0,1,4,5,2,2,8,3,7,9,6,1,7,7,6,2,6,5,1,7,4,6,6,7,7,4,8,0,6,0,1,8,8,1,4,0,7,2,8,2,1,4,6,4,7,3,5,6,0,2,2,0,1,1,4,4,4,7,4
 
 #offset 1
@@ -9,7 +9,7 @@ mov $5,14
 mov $3,$0
 mul $3,9
 lpb $3
-  sub $3,1
+  sub $3,3
   add $6,$4
   add $6,$2
   add $2,$7

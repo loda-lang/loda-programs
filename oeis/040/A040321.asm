@@ -6,9 +6,8 @@ mov $1,18
 mov $2,2
 mov $3,3
 mov $4,1
-fil $4,4
+fil $4,6
 mov $8,8
-mov $9,1
 fil $9,4
 mov $13,3
 mov $14,2

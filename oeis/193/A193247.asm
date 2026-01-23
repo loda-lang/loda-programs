@@ -1,25 +1,19 @@
 ; A193247: Inverse binomial transform of A000371.
-; Submitted by BrandyNOW
+; Submitted by Just Jake
 ; 2,0,8,192,63776,4294321152,18446744022173838464,340282366920938463205120190760593525760,115792089237316195423570985008687907847825466794905548626109625623336235655680
 
-mov $2,$0
-mov $3,1
+mov $2,2
+mov $3,4
 mov $4,$0
 lpb $4
   sub $4,1
-  mov $0,$2
-  sub $0,$4
+  mul $2,2
   mov $1,$0
-  add $1,$4
-  bin $1,$0
-  mov $5,2
-  pow $5,$0
-  mov $0,2
-  pow $0,$5
-  div $0,2
-  mul $1,$0
-  mul $3,-2
-  add $3,$1
+  bin $1,$4
+  mul $1,$3
+  sub $1,$2
+  sub $1,$2
+  add $2,$1
+  pow $3,2
 lpe
-mov $0,$3
-mul $0,2
+mov $0,$2

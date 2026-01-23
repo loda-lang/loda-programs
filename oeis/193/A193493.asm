@@ -30,7 +30,6 @@ lpb $2
   add $0,10
   mod $0,10
   mov $4,1
-  seq $4,422 ; Concatenation of numbers from n down to 1.
   sub $4,$0
   mov $0,$4
   add $0,8

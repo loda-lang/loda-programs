@@ -1,27 +1,15 @@
 ; A190886: a(n) = [5nr]-5[nr], where r=sqrt(5).
-; Submitted by ruslan2570
+; Submitted by Science United
 ; 1,2,3,4,0,2,3,4,0,1,2,4,0,1,2,3,0,1,2,3,4,0,2,3,4,0,1,3,4,0,1,2,3,0,1,2,3,4,1,2,3,4,0,1,3,4,0,1,2,4,0,1,2,3,4,1,2,3,4,0,2,3,4,0,1,2,4,0,1,2,3,4,1,2,3,4,0,2,3,4
+; Formula: a(n) = floor((sqrtint(5*(10*n)^2)%10)/2)
 
 #offset 1
 
-mov $2,1
-mov $3,$0
-mul $3,3
-lpb $3
-  mul $2,$3
-  sub $4,1
-  mul $1,$3
-  add $1,$2
-  div $1,$4
-  div $2,$4
-  add $2,$1
-  sub $3,3
-lpe
-div $2,5
-mul $1,2
-mul $1,$0
-div $1,$2
+mul $0,10
+mov $1,$0
+pow $1,2
+mul $1,5
+nrt $1,2
 mov $0,$1
-mul $0,2
 mod $0,10
 div $0,2

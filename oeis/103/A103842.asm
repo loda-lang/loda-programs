@@ -1,7 +1,7 @@
 ; A103842: Triangle read by rows: row n is binary expansion of 2^n-n, n >= 1.
 ; Submitted by loader3229
 ; 1,1,0,1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1
-; Formula: a(n) = -2*truncate(binomial(truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+truncate((sqrtint(8*n)-1)/2),truncate((sqrtint(8*n)-1)/2))/2)+binomial(truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+truncate((sqrtint(8*n)-1)/2),truncate((sqrtint(8*n)-1)/2))
+; Formula: a(n) = -2*truncate(binomial(if((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+truncate((sqrtint(8*n)-1)/2),truncate((sqrtint(8*n)-1)/2))/2)+binomial(if((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+truncate((sqrtint(8*n)-1)/2),truncate((sqrtint(8*n)-1)/2))
 
 #offset 1
 

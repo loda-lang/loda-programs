@@ -7,15 +7,14 @@ mov $2,1
 mov $3,1
 mov $4,2
 lpb $0
-  mov $6,0
   mov $2,0
   rol $2,3
-  sub $6,5
-  mul $6,$1
+  mov $6,$1
+  mul $6,-5
   mov $5,$2
   mul $5,$6
-  mov $6,2
-  mul $6,$1
+  mov $6,$1
+  mul $6,2
   add $6,3
   add $4,$5
   mov $5,$3

@@ -5,7 +5,7 @@
 #offset 1
 
 sub $0,1
-mov $3,7
+mov $3,6
 lpb $3
   mov $3,0
   mov $2,$0

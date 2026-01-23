@@ -8,6 +8,8 @@
 mov $1,$0
 mul $1,2
 seq $1,40 ; The prime numbers.
+sub $1,9
 mul $0,3
 seq $0,40 ; The prime numbers.
+sub $0,9
 sub $0,$1

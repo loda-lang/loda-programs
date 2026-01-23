@@ -5,5 +5,7 @@
 
 #offset 1
 
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $1,$0
+seq $1,6005 ; The odd prime numbers together with 1.
+mov $0,$1
 mul $0,4

@@ -1,9 +1,12 @@
 ; A305716: Order of rowmotion on the divisor lattice for n.
-; Submitted by Eric
+; Submitted by Science United
 ; 2,3,3,4,3,4,3,5,4,4,3,5,3,4,4,6,3,5,3,5,4,4,3,6,4,4,5,5,3,5,3,7,4,4,4,6,3,4,4,6,3,5,3,5,5,4,3,7,4,5,4,5,3,6,4,6,4,4,3,6,3,4,5,8,4,5,3,5,4,5,3,7,3,4,5,5,4,5,3,7
-; Formula: a(n) = A001222(n)+2
+; Formula: a(n) = A001222(min(n-1,113)+1)+2
 
 #offset 1
 
+sub $0,1
+min $0,113
+add $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 add $0,2

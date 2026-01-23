@@ -1,31 +1,43 @@
 ; A309976: Vacation Dyck paths. Discrete analog for vacation M/M/1 queue embedded chain.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,0,0,1,0,2,1,5,4,15,14,48,49,159,173,540,616,1869,2211,6565,7994,23335,29092,83756,106489,303093,391815,1104490,1448313,4049108,5375784,14922313,20028144,55248554,74869485,205394737,280737471,766396430,1055627409,2869157740,3979545798,10773488687,15037617603
+; Formula: a(n) = b(n-4), a(6) = 1, a(5) = 2, a(4) = 0, a(3) = 1, a(2) = 0, a(1) = 0, a(0) = 1, b(n) = truncate((-3*n*b(n-3)+b(n-1)*(n+4)+b(n-2)*(6*n+12)+b(n-4)*(-8*n-8)+b(n-5)*(-4*n-4))/(n+4)), b(8) = 49, b(7) = 48, b(6) = 14, b(5) = 15, b(4) = 4, b(3) = 5, b(2) = 1, b(1) = 2, b(0) = 0
 
-add $0,2
+mov $2,1
+mov $5,1
 lpb $0
+  mov $8,$1
+  mul $8,-4
+  sub $8,8
+  mul $2,$8
+  rol $2,5
+  mov $8,$1
+  mul $8,-8
+  sub $8,16
+  mov $7,$2
+  mul $7,$8
+  mov $8,$1
+  mul $8,-3
+  sub $8,3
+  add $6,$7
+  mov $7,$3
+  mul $7,$8
+  mov $8,$1
+  mul $8,6
+  add $8,18
+  add $6,$7
+  mov $7,$4
+  mul $7,$8
+  mov $8,$1
+  add $8,5
+  add $6,$7
+  mov $7,$5
+  mul $7,$8
+  mov $8,$1
+  add $8,5
+  add $6,$7
+  div $6,$8
   sub $0,1
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    mov $9,10
-    add $9,$5
-    mov $10,3
-    sub $4,1
-    trn $7,1
-    seq $7,210736 ; Expansion of (1 + sqrt( (1 + 2*x) / (1 - 2*x))) / 2 in powers of x.
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  div $3,-1
-  mul $5,$1
-  mov $$9,$3
-  add $2,1
+  add $1,1
 lpe
-mov $0,$6
-div $0,3
+mov $0,$2

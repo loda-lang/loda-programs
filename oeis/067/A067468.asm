@@ -11,8 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,363093 ; Leading digit of 7^n.
-  sub $3,5
-  equ $3,2
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0

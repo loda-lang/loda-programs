@@ -5,17 +5,20 @@
 #offset 1
 
 sub $0,1
+mov $4,3
 mov $1,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  add $0,1
-  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $3,$0
+add $1,3
+lpb $1
+  sub $1,$4
+  mov $3,$1
+  max $3,0
+  add $3,1
+  seq $3,62570 ; a(n) = phi(2*n).
+  max $1,$5
+  add $2,$3
+  mov $4,1
+  add $5,1
 lpe
-mov $0,$3
+mov $0,$2
 mul $0,3
 sub $0,1

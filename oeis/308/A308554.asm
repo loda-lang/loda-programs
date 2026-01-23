@@ -1,39 +1,22 @@
 ; A308554: Expansion of e.g.f. Sum_{k>=1} tau(k)*(exp(x) - 1)^k/k!, where tau = number of divisors (A000005).
-; Submitted by DenMartin
+; Submitted by loader3229
 ; 1,3,9,30,113,472,2145,10514,55428,313255,1886888,12029741,80701715,567541878,4175795147,32104799401,257561662496,2151841672173,18676002357864,167951667633495,1561420657033927,14980472336450530,148140814019762129,1508776236781766431,15817134534025900951,170585074307085146776,1891309078690016507863,21537920366274850528696,251652151900139463714493,3013363598067090746554342,36937440404492656722529413,463034562100002007731856711,5931212816902911177653499474,77589327896287587617960370947
 
 #offset 1
 
-equ $1,0
-mov $20,1
-sub $0,1
-add $0,$1
 mov $3,$0
-lpb $3
-  add $2,1
+bin $3,2
+lpb $0
+  sub $0,1
   mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
+  add $4,1
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  seq $4,179942 ; Number of times n appears in a 1000 X 1000 multiplication table.
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
 mov $0,$1
-sub $0,1

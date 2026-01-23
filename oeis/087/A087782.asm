@@ -1,5 +1,5 @@
 ; A087782: a(n) = number of solutions to x^3 + x == 0 (mod n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,2,1,1,3,2,1,1,1,6,1,1,3,2,3,1,3,2,1,3,1,2,1,1,3,6,1,1,3,6,1,1,1,6,3,1,3,2,3,3,3,2,1,1,3,2,1,1,1,6,3,3,3,2,3,1,1,6,1,3,3,2,1,1,9,2,1,3,1,6,1,1,3,6,3,1,1,6,1,3
 
 #offset 1
@@ -10,8 +10,7 @@ lpb $0
   pow $3,3
   add $3,$0
   mod $3,$2
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,1
   add $1,$3
 lpe

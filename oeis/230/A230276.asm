@@ -1,25 +1,22 @@
 ; A230276: Voids left after packing 5-curves coins patterns into fountain of coins with base n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,1,6,10,16,24,34,43,57,70,85,102,121,139,162,184,208,234,262,289,321,352,385,420,457,493,534,574,616,660,706,751,801,850,901,954,1009,1063,1122,1180,1240,1302,1366,1429
-; Formula: a(n) = 3*floor(((-n+2)^2)/4)-binomial(floor(((8*n-8)%6)/2),2)+n-1
+; Formula: a(n) = b(n-1), b(n) = c(n-2), b(5) = 16, b(4) = 10, b(3) = 6, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = d(n-2), c(5) = 34, c(4) = 24, c(3) = 16, c(2) = 10, c(1) = 6, c(0) = 1, d(n) = e(n-1), d(5) = 57, d(4) = 43, d(3) = 34, d(2) = 24, d(1) = 16, d(0) = 10, e(n) = -c(n-1)-c(n-2)+c(n-3)+d(n-1)+e(n-1), e(6) = 85, e(5) = 70, e(4) = 57, e(3) = 43, e(2) = 34, e(1) = 24, e(0) = 16
 
 #offset 1
 
+mov $2,1
+mov $3,1
+mov $4,6
+mov $5,10
+mov $6,16
 sub $0,1
-mov $4,$0
-mul $4,8
-mod $4,6
-div $4,2
-bin $4,2
-mov $2,$0
-add $2,1
-mov $3,$2
-mov $2,2
-sub $2,$3
-pow $2,2
-div $2,4
-mul $2,3
-mov $1,$0
-sub $1,$4
-add $1,$2
+lpb $0
+  rol $1,6
+  sub $6,$1
+  sub $6,$2
+  add $6,$4
+  add $6,$5
+  sub $0,1
+lpe
 mov $0,$1

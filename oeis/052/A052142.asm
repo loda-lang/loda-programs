@@ -30,7 +30,7 @@ lpb $0
   mul $3,-1
   sub $6,$5
   mov $5,$6
-  pow $6,0
+  mov $6,1
   add $6,$3
   fac $6,$5
   mul $7,$6

@@ -1,5 +1,5 @@
 ; A013576: Minimal scope of an (n,4) difference triangle.
-; Submitted by [BOINCstats] CRNabein
+; Submitted by Science United
 ; 11,22,32,41,51,60,71,80,91,100,111,120,131,140,151
 
 #offset 1
@@ -21,12 +21,11 @@ lpb $4
     pow $0,2
     sub $2,17
     mul $2,$5
-    mov $5,$0
-    mul $0,2
     add $1,3
     add $1,$2
-    div $1,$5
-    div $2,$5
+    div $1,$0
+    div $2,$0
+    mul $0,2
     gcd $3,2
     sub $3,1
   lpe

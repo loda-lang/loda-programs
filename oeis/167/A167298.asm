@@ -4,7 +4,7 @@
 
 #offset 1
 
-mov $2,4
+mov $2,88
 sub $0,1
 lpb $0
   mov $1,$0
@@ -17,4 +17,4 @@ lpb $0
   mul $2,3
 lpe
 mov $0,$2
-div $0,4
+div $0,88

@@ -1,40 +1,26 @@
 ; A194772: Number of lower triangles of an (n+2) X (n+2) 0..2 array with new values introduced in row major order 0..2 and no element unequal to more than one horizontal or vertical neighbor.
-; Submitted by loader3229
+; Submitted by Science United
 ; 7,17,41,95,219,493,1101,2427,5311,11529,24881,53399,114083,242725,514581,1087411,2291335,4815681,10097401,21126863,44117867,91963997,191384541,397682155,825190479,1710033273,3539371201,7317351687,15111921971,31178281109,64265436581,132348621859,272332741143,559936477105
-; Formula: a(n) = b(n-1), b(n) = c(n-1), b(2) = 41, b(1) = 17, b(0) = 7, c(n) = truncate((c(n-1)*((n-1)*(2*n+9)-7)+c(n-2)*((n-1)*(4*n+22)+24)-16*n+8)/((n-1)*(2*n+7)+1)), c(2) = 95, c(1) = 41, c(0) = 17
+; Formula: a(n) = b(n-1)+1, b(n) = b(n-2)+c(n-2), b(4) = 218, b(3) = 94, b(2) = 40, b(1) = 16, b(0) = 6, c(n) = 3*c(n-1)-4*c(n-3), c(5) = 1934, c(4) = 882, c(3) = 398, c(2) = 178, c(1) = 78, c(0) = 34
 
 #offset 1
 
-mov $2,7
-mov $3,17
+mov $2,2
+mov $3,6
+mov $4,16
+mov $5,34
 sub $0,1
 lpb $0
-  mov $5,4
-  mul $5,$1
-  add $5,26
-  mul $5,$1
-  add $5,24
-  mul $2,$5
-  rol $2,2
-  mov $5,2
-  mul $5,$1
-  add $5,11
-  mul $5,$1
-  sub $5,7
-  mov $4,$2
-  mul $4,$5
-  mov $5,-16
-  mul $5,$1
-  sub $5,8
-  add $3,$4
-  add $3,$5
-  mov $5,2
-  mul $5,$1
-  add $5,9
-  mul $5,$1
-  add $5,1
+  mul $1,4
+  rol $1,5
+  mov $6,$2
+  mul $6,-7
+  add $4,$2
+  add $5,$6
+  mov $6,$4
+  mul $6,3
   sub $0,1
-  add $1,1
-  div $3,$5
+  add $5,$6
 lpe
-mov $0,$2
+mov $0,$3
+add $0,1

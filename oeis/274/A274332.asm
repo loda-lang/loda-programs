@@ -4,5 +4,7 @@
 ; Formula: a(n) = floor(A000040(n+2)/2)
 
 add $0,2
-seq $0,40 ; The prime numbers.
-div $0,2
+mov $1,$0
+seq $1,40 ; The prime numbers.
+div $1,2
+mov $0,$1

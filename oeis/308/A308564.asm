@@ -1,40 +1,22 @@
 ; A308564: Expansion of e.g.f. Sum_{k>=1} phi(k)*(exp(x) - 1)^k/k!, where phi = Euler totient function (A000010).
-; Submitted by fzs600
+; Submitted by loader3229
 ; 1,2,6,22,90,404,1974,10366,57864,341690,2134022,14104624,98498972,723664482,5561589508,44473028634,368602225688,3159852790392,27997141025686,256410638073082,2428063270357748,23774001479212114,240580239864321604,2513553050765310236,27073544636096620620,300106107233384534836,3417374193325333068984,39907510079087841464324,477201559298495872516242,5835497159727432804582510,72900496344634683810643842,929617020550597769335309158,12092873744077482403490018188,160404131794241688299911683380
 
 #offset 1
 
-equ $1,0
-mov $20,1
-sub $0,1
-add $0,$1
 mov $3,$0
-lpb $3
-  add $2,1
+bin $3,2
+lpb $0
+  sub $0,1
   mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $1,0
-mov $2,0
-mov $3,$0
-lpb $3
+  add $4,1
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  seq $4,384710 ; a(n) = Sum_{k=0..n} [gcd(k, n) = 1], where [.] are the Iverson brackets.
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
 mov $0,$1
-sub $0,1

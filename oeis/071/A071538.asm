@@ -4,12 +4,25 @@
 
 #offset 1
 
-mov $10,$0
-lpb $10
-  add $11,1
-  mov $12,$11
-  seq $12,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
-  add $$12,1
-  sub $10,1
+add $0,1
+mov $5,$0
+mov $3,$0
+lpb $3
+  sub $3,2
+  mov $0,$5
+  sub $0,$3
+  add $1,1
+  mul $1,-1
+  add $1,$0
+  mov $2,$0
+  add $2,1
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $2,2
+  mul $2,$1
+  max $2,1
+  seq $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $1,0
+  add $4,$2
 lpe
-mov $0,$1
+mov $0,$4

@@ -4,9 +4,7 @@
 
 #offset 1
 
-sub $0,1
-max $0,1
-seq $0,6093 ; a(n) = prime(n) - 1.
+seq $0,40 ; The prime numbers.
 dif $0,-1
 mul $0,-1
 div $0,2

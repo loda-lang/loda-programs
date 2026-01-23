@@ -5,25 +5,24 @@
 #offset 1
 
 sub $0,1
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
+mov $4,$0
+pow $4,14
+lpb $4
+  mov $5,$3
+  add $5,1
+  seq $5,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
+  gcd $5,262156
+  mul $5,42
+  mod $5,13
+  sub $5,3
+  bin $1,$5
   add $3,1
-  seq $3,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
-  gcd $3,262156
-  mul $3,42
-  mod $3,13
-  sub $3,2
-  mov $5,1
-  bin $5,$3
-  sub $0,$5
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $0,$1
+  mov $2,$0
+  max $2,0
+  equ $2,$0
+  mul $4,$2
+  sub $4,1
 lpe
-mov $0,$1
+mov $0,$3
 add $0,1

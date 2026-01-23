@@ -1,20 +1,18 @@
 ; A033868: Numbers n such that 7*n-11 is prime.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by kpmonaghan
 ; 2,4,6,10,12,16,24,30,34,36,40,42,46,52,54,60,70,76,82,84,90,94,96,112,114,120,124,136,142,144,150,160,162,166,172,180,184,186,190,196,210,214,222,226,232,234,240,244,252,262,270,274,280,300,306,322,336,342,346,354,366,370,372,376,382,384,390,400,402,414,424,426,430,436,442,454,456,460,466,474
 
 #offset 1
 
-mov $4,-4
+mov $2,4
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  add $1,1
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,7
+  sub $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
-  mov $2,$4
-  sub $2,1
+  add $2,14
   sub $3,$0
 lpe
 mov $0,$2

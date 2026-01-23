@@ -4,9 +4,9 @@
 
 #offset 1
 
+sub $0,1
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 mov $4,5
 mov $5,6
 mov $6,4
@@ -21,47 +21,35 @@ mov $14,12
 mov $15,12
 mov $16,15
 mov $17,16
-sub $0,1
 lpb $0
+  mov $1,0
+  rol $1,17
+  sub $17,$7
+  add $17,$8
+  add $17,$8
+  mov $18,$9
+  mul $18,-3
   sub $0,1
-  mul $1,0
-  mov $18,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mul $8,-1
-  add $18,$8
-  mov $8,$9
-  mul $9,2
-  add $18,$9
-  mov $9,$10
-  mul $10,-3
-  add $18,$10
-  mov $10,$11
-  mul $11,4
-  add $18,$11
-  mov $11,$12
-  mul $12,-5
-  add $18,$12
-  mov $12,$13
-  mul $13,6
-  add $18,$13
-  mov $13,$14
-  mul $14,-5
-  add $18,$14
-  mov $14,$15
-  mul $15,4
-  add $18,$15
-  mov $15,$16
-  mul $16,-3
-  add $18,$16
-  mov $16,$17
-  mul $17,2
-  add $18,$17
-  mov $17,$18
+  add $17,$18
+  mov $18,$10
+  mul $18,4
+  add $17,$18
+  mov $18,$11
+  mul $18,-5
+  add $17,$18
+  mov $18,$12
+  mul $18,6
+  add $17,$18
+  mov $18,$13
+  mul $18,-5
+  add $17,$18
+  mov $18,$14
+  mul $18,4
+  add $17,$18
+  mov $18,$15
+  mul $18,-3
+  add $17,$18
+  add $17,$16
+  add $17,$16
 lpe
 mov $0,$1

@@ -1,39 +1,19 @@
 ; A040681: Continued fraction for sqrt(708).
-; Submitted by Athlici
+; Submitted by loader3229
 ; 26,1,1,1,1,4,4,4,1,1,1,1,52,1,1,1,1,4,4,4,1,1,1,1,52,1,1,1,1,4,4,4,1,1,1,1,52,1,1,1,1,4,4,4,1,1,1,1,52,1,1,1,1,4,4,4,1,1,1,1,52,1,1,1,1,4,4,4,1,1,1,1,52,1,1,1,1,4,4,4
 
-mov $2,$0
-div $2,2
-gcd $2,2
-bin $2,2
-add $0,$2
-div $0,2
-mov $3,2
-trn $3,$0
-add $3,6
-gcd $0,$3
-sub $0,3
-sub $3,2
-mov $5,3
-pow $5,$0
-mov $0,$5
-mod $0,10
-mov $4,2
-add $4,$0
-mov $0,$4
-div $0,3
-mul $0,3
-mul $4,2
-mul $0,$3
-add $0,$4
-div $0,2
-sub $0,1
-mul $0,5
-div $0,4
-gcd $1,$0
-sub $0,5
-mul $1,8
-dif $1,$0
-div $1,5
+mov $1,26
+mov $2,1
+fil $2,4
+mov $6,4
+fil $6,3
+mov $9,1
+fil $9,4
+mov $13,52
+lpb $0
+  mov $1,0
+  rol $1,13
+  add $13,$1
+  sub $0,1
+lpe
 mov $0,$1
-add $0,1

@@ -1,5 +1,5 @@
 ; A186443: Records in A087029.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 9,18,90,180,819,1638,7461,14922,67968
 
 #offset 1
@@ -21,9 +21,5 @@ lpb $2
   mov $3,$4
 lpe
 mul $1,$5
-mul $1,625
 mov $0,$1
-sub $0,625
-div $0,625
 mul $0,9
-add $0,9

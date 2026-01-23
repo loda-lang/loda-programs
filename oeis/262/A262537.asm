@@ -1,7 +1,10 @@
 ; A262537: Bisection of A262310.
-; Submitted by [AF]worms
+; Submitted by Science United
 ; 1,1,9,49,57,2401,-9063,-153502,-755943,-767039,-40127031,-58813391,-1696965207,-4483997699,105920054242,-203398909151,555306094297,-2817291378419,5514657953337,442400619060589,-739096098204743,-69507309377825326,-90124818751960951
-; Formula: a(n) = A262310(2*n)
+; Formula: a(n) = A262310(2*min(n,24))
 
+min $0,24
 mul $0,2
-seq $0,262310 ; a(n) = coefficient of x^(2n) in the expansion of the modular form Product_{k>=1} (1-x^k)^n.
+mov $1,$0
+seq $1,262310 ; a(n) = coefficient of x^(2n) in the expansion of the modular form Product_{k>=1} (1-x^k)^n.
+mov $0,$1

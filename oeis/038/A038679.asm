@@ -1,16 +1,15 @@
 ; A038679: Convolution of A007054 (Super ballot numbers) with A000302 (powers of 4).
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 3,14,59,242,982,3964,15955,64106,257282,1031780,4135518,16569204,66365964,265761016,1064046979,4259609626,17050224394,68241838036,273110643754,1092947507356,4373580244084,17500703480776
-; Formula: a(n) = 4^(n+1)-floor(binomial(2*n+2,n+2)/(n+1))
+; Formula: a(n) = 4^(n+1)-floor(binomial(2*n+2,n+1)/(n+2))
 
 add $0,1
-mov $1,$0
-add $0,1
-mul $1,2
-bin $1,$0
-sub $0,1
-div $1,$0
-mov $2,4
-pow $2,$0
-sub $2,$1
-mov $0,$2
+mov $1,4
+pow $1,$0
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
+sub $1,$0
+mov $0,$1

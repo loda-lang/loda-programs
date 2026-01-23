@@ -1,23 +1,22 @@
 ; A308733: Sum of the smallest parts of the partitions of n into 4 parts.
-; Submitted by atannir
+; Submitted by Science United
 ; 0,0,0,0,1,1,2,3,6,7,11,14,21,25,34,41,55,64,81,95,119,136,165,189,227,256,301,339,396,441,507,564,645,711,804,885,996,1089,1215,1326,1474,1600,1766,1914,2106,2272,2486,2678,2922,3136,3406,3650,3955,4225,4560
-; Formula: a(n) = a(n-4)+truncate((-9*n*(-2*truncate((n-4)/2)+n-4)+(n+3)*n^2+32)/144), a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 0
+; Formula: a(n) = a(n-4)+truncate((-9*n*(n%2)+(n+3)*n^2+32)/144), a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 0
 
 lpb $0
-  sub $0,4
+  mov $3,$0
+  mod $3,2
+  mul $3,$0
+  mul $3,9
   mov $4,$0
-  mod $4,2
+  add $4,3
   mov $2,$0
-  add $2,4
-  mul $4,$2
-  mul $4,9
-  mov $3,$2
-  add $3,3
   pow $2,2
-  mul $2,$3
-  sub $2,$4
+  mul $2,$4
+  sub $2,$3
   add $2,32
   div $2,144
+  sub $0,4
   add $1,$2
 lpe
 mov $0,$1

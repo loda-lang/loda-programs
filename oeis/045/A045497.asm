@@ -1,31 +1,24 @@
 ; A045497: Packing density for n balls in complex projective plane using Fubini-Study metric (denominators).
 ; Submitted by Science United
 ; 1,2,4,1,25,25,64,289,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = ((n-1)==1)+288*((n-1)==7)+63*((n-1)==6)+24*((((n-1)==4)+n-1)==5)+3*((n-1)==2)+1
 
 #offset 1
 
+mov $3,1
+mov $4,2
+mov $5,4
+mov $6,1
+mov $7,25
+mov $8,25
+mov $9,64
+mov $10,289
+mov $11,1
 sub $0,1
-mov $1,$0
-equ $1,1
-mov $2,$1
-mov $1,$0
-equ $1,2
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,4
-add $1,$0
-equ $1,5
-mul $1,24
-add $2,$1
-mov $1,$0
-equ $1,6
-mul $1,63
-add $2,$1
-mov $1,$0
-equ $1,7
-mul $1,288
-add $2,$1
-add $2,1
-mov $0,$2
+lpb $0
+  mov $3,0
+  rol $3,9
+  add $11,$10
+  sub $0,1
+lpe
+gcd $1,$3
+mov $0,$1

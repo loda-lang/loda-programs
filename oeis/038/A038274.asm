@@ -1,7 +1,7 @@
 ; A038274: Triangle whose (i,j)-th entry is binomial(i,j)*7^(i-j)*8^j.
 ; Submitted by loader3229
 ; 1,7,8,49,112,64,343,1176,1344,512,2401,10976,18816,14336,4096,16807,96040,219520,250880,143360,32768,117649,806736,2304960,3512320,3010560,1376256,262144,823543,6588344,22588608,43025920,49172480
-; Formula: a(n) = truncate(7^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*truncate(8^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*if((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,8^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*if((-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))<=(-1),0,7^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))
 
 add $0,1
 mov $1,$0

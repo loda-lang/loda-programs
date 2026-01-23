@@ -1,20 +1,19 @@
 ; A040476: Continued fraction for sqrt(499).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 22,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2
-; Formula: a(n) = (gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))%10+18*floor(((gcd(gcd(n,max(-n+2,0)+6)-3,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))%10)/3)
+; Formula: a(n) = a(n-6), a(9) = 21, a(8) = 1, a(7) = 2, a(6) = 44, a(5) = 2, a(4) = 1, a(3) = 21, a(2) = 1, a(1) = 2, a(0) = 22
 
+mov $1,22
 mov $2,2
-trn $2,$0
-add $2,6
-gcd $0,$2
-sub $0,3
-mov $3,3
-pow $3,$0
-gcd $0,2
-add $3,$0
-mov $0,$3
-mod $0,10
-mov $1,$0
-div $0,3
-mul $0,18
-add $0,$1
+mov $3,1
+mov $4,21
+mov $5,1
+mov $6,2
+mov $7,44
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

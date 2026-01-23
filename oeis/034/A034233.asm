@@ -1,9 +1,7 @@
 ; A034233: Number of quaternary codes of length 2 with n words.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,2,4,10,13,23,26,32,26,23,13,10,4,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,1
-mov $2,1
 mov $3,2
 mov $4,4
 mov $5,10
@@ -24,4 +22,5 @@ lpb $0
   rol $1,17
   sub $0,1
 lpe
+max $1,$16
 mov $0,$1

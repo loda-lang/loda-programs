@@ -9,9 +9,16 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $6,$1
+  dif $6,$1
+  add $6,1
+  mov $7,$1
+  max $7,1
+  seq $7,40 ; The prime numbers.
+  mul $6,$7
+  mov $7,$6
+  div $7,2
+  mov $3,$7
   seq $3,13636 ; a(n) = n*nextprime(n).
   add $3,1
   trn $3,8

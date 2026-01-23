@@ -1,5 +1,5 @@
 ; A029903: p(n), where exists one-parameter family of strategic partitions (k+p(n)+q(n), k+q(n), r(n)) for k = 0,1,2,... in Chomp.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Science United
 ; 1,2,4,5,6,7,9,11,12,14,15,16,17,19,21,22,23,24,25,27
 
 mov $7,$0
@@ -17,9 +17,8 @@ lpb $9
     add $5,$0
     sub $0,$4
     mul $4,2
-    mul $6,4
-    sub $6,3
-    mul $6,2
+    mul $6,8
+    sub $6,6
     div $5,$6
     sub $5,$4
     sub $5,1

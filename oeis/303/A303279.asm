@@ -1,27 +1,17 @@
 ; A303279: Expansion of (1/(1 - x)^2) * Sum_{p prime, k>=1} x^(p^k)/(1 - x^(p^k)).
-; Submitted by James Adrian
+; Submitted by Science United
 ; 0,1,3,7,12,19,27,38,51,66,82,101,121,143,167,195,224,256,289,325,363,403,444,489,536,585,637,692,748,807,867,932,999,1068,1139,1214,1290,1368,1448,1532,1617,1705,1794,1886,1981,2078,2176,2279,2384,2492,2602,2715,2829,2947,3067,3191,3317,3445,3574,3707,3841,3977,4116,4261,4408,4558,4709,4863,5019,5178,5338,5503,5669,5837,6008,6182,6358,6537,6717,6902
 
 #offset 1
 
 sub $0,1
-mov $30,$0
-mov $32,$0
-lpb $32
-  clr $0,30
-  sub $32,1
-  mov $0,$30
-  sub $0,$32
-  mov $27,$0
-  mov $29,$0
-  lpb $29
-    sub $29,1
-    mov $0,$27
-    sub $0,$29
-    add $0,1
-    seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-    add $28,$0
-  lpe
-  add $31,$28
+lpb $0
+  add $3,1
+  mov $2,$0
+  add $2,1
+  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mul $2,$3
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$31
+mov $0,$1

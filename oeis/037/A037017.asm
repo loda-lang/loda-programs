@@ -1,15 +1,19 @@
 ; A037017: Prime pentadecet homolog of {11,13,17,...,61,67}.
 ; Submitted by Science United
 ; 1632373745527558118201,1632373745527558118203,1632373745527558118207,1632373745527558118209,1632373745527558118213,1632373745527558118219,1632373745527558118221,1632373745527558118227,1632373745527558118231,1632373745527558118233,1632373745527558118237,1632373745527558118243,1632373745527558118249,1632373745527558118251,1632373745527558118257
-; Formula: a(n) = b(n)+min(n,0)+1632373745527558118190, b(n) = A159477(b(n-1)+2), b(0) = 7
+; Formula: a(n) = A000040(A048675(A181819(28)*A181811(A181819(28)))+n)+1632373745527558118190
 
 #offset 1
 
-mov $1,7
-lpb $0
-  sub $0,1
-  add $1,2
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-add $0,$1
+sub $0,1
+mov $2,28
+seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+mov $1,$2
+seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $1,$2
+seq $1,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
+add $1,1
+add $1,$0
+seq $1,40 ; The prime numbers.
+mov $0,$1
 add $0,1632373745527558118190

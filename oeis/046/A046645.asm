@@ -1,9 +1,11 @@
 ; A046645: a(n) = log_2(A046644(n)); also the 2-adic valuation of A046644(n).
-; Submitted by L@MiR
+; Submitted by Science United
 ; 0,1,1,3,1,2,1,4,3,2,1,4,1,2,2,7,1,4,1,4,2,2,1,5,3,2,4,4,1,3,1,8,2,2,2,6,1,2,2,5,1,3,1,4,4,2,1,8,3,4,2,4,1,5,2,5,2,2,1,5,1,2,4,10,2,3,1,4,2,3,1,7,1,2,4,4,2,3,1,8
-; Formula: a(n) = A317946(n^2)
+; Formula: a(n) = A001222(n)+A317946(n)
 
 #offset 1
 
-pow $0,2
-seq $0,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
+mov $1,$0
+seq $1,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+add $0,$1

@@ -8,5 +8,4 @@ mov $1,$0
 dif $1,2
 dif $1,2
 seq $1,74823 ; a(n) = 2^omega(n)*mu(n)^2.
-sub $0,1
 mov $0,$1
