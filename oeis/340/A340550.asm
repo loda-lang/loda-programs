@@ -1,7 +1,7 @@
 ; A340550: Number of main classes of diagonal Latin squares of order n that contain a doubly symmetric square.
 ; Submitted by [AF] Kalianthys
 ; 1,0,0,1,0,0,0,47,0,0,0
-; Formula: a(n) = truncate(gcd(max(n-8,-n+1),-2*(-n+1)^2+3)/2)
+; Formula: a(n) = floor(gcd(max(n-8,-n+1),-2*(-n+1)^2+3)/2)
 
 #offset 1
 

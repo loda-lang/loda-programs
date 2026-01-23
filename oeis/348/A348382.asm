@@ -1,8 +1,21 @@
 ; A348382: Number of compositions of n that are not a twin (x,x) but have adjacent equal parts.
-; Submitted by SirSexington
+; Submitted by Science United
 ; 0,0,0,1,3,9,17,41,88,185,387,810,1669,3435,7039,14360,29225,59347,120228,243166,491085,990446,1995409,4016259,8076959,16231746,32599773,65437945,131293191,263316897,527912139,1058061751,2120039884,4246934012,8505864639
-; Formula: a(n) = 2^max(n-1,0)-(max(n-1,0)%2)-A003242(max(n-1,0)+1)
 
+lpb $0
+  mov $3,5
+  lpb $3
+    mov $0,$3
+    sub $0,1
+    ror $3,51
+    sub $0,1
+    mov $2,3
+    pow $2,$0
+    mov $0,$2
+    mul $0,2
+  lpe
+  sub $0,1
+lpe
 mov $1,$0
 trn $1,1
 mod $1,2

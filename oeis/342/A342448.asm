@@ -5,15 +5,23 @@
 #offset 1
 
 sub $0,1
-mov $1,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$1
-  sub $0,$3
+mov $9,$0
+mov $11,$0
+add $11,1
+lpb $11
+  clr $0,8
+  add $5,1
+  sub $11,1
+  mov $0,$9
+  sub $0,$11
   seq $0,6068 ; a(n) is Gray-coded into n.
+  sub $0,$5
+  dif $0,-1
+  add $0,$5
+  mul $0,-21
+  add $0,42
+  div $0,21
   add $0,1
-  add $2,$0
+  add $10,$0
 lpe
-mov $0,$2
+mov $0,$10

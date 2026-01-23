@@ -1,22 +1,13 @@
 ; A331743: Lexicographically earliest infinite sequence such that a(i) = a(j) => A002487(i) = A002487(j) and A323901(i) = A323901(j) for all i, j.
-; Submitted by atannir
+; Submitted by skildude
 ; 1,2,2,3,2,4,3,5,2,6,4,7,3,8,5,9,2,10,6,11,4,12,7,13,3,14,8,15,5,16,9,17,2,18,10,19,6,20,11,21,4,22,12,23,7,24,13,25,3,26,14,27,8,28,15,29,5,30,16,31,9,32,17,33,2,34,18,35,10,36,19,37,6,38,20,39,11,40,21,41
-; Formula: a(n) = truncate((truncate((b(n)+c(n))/gcd(c(n),d(n)))+1)/2)+1, b(n) = b(n-1), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = e(n-1)*c(n-1)+d(n-1), c(3) = 192, c(2) = 16, c(1) = 2, c(0) = 0, d(n) = 2*e(n-1)*d(n-1), d(3) = 1024, d(2) = 64, d(1) = 8, d(0) = 2, e(n) = 2*e(n-1), e(3) = 16, e(2) = 8, e(1) = 4, e(0) = 2
 
-mov $4,2
-mov $5,2
-mov $1,$0
-lpb $1
-  sub $1,1
-  mul $3,$5
-  add $3,$4
-  mul $5,2
-  mul $4,$5
-lpe
-add $2,$3
-gcd $3,$4
-div $2,$3
-add $2,1
+mul $0,12
+sub $2,$0
+mov $3,3
+rol $1,$0
+dir $1,2
+sub $2,$1
 mov $0,$2
-div $0,2
+div $0,6
 add $0,1

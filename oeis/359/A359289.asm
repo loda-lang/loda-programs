@@ -4,18 +4,17 @@
 
 #offset 1
 
-mov $2,$0
-sub $2,2
-mov $4,$0
-lpb $4
-  sub $4,1
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,$2
+  mov $3,$0
+  gcd $3,$1
+  div $3,$1
+  add $4,$3
+  trn $0,1
+  add $1,4
   add $2,2
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  add $3,$1
-  trn $4,1
+  div $2,2
 lpe
-mov $0,$3
+mov $0,$4

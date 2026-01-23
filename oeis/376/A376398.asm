@@ -6,15 +6,13 @@
 
 sub $0,1
 mov $3,$0
-mov $2,$0
-lpb $2
-  trn $2,1
+mov $1,$0
+lpb $1
+  sub $1,1
   mov $0,$3
-  sub $0,$2
+  sub $0,$1
   add $0,1
   seq $0,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
-  mul $0,5
-  add $1,$0
+  add $2,$0
 lpe
-mov $0,$1
-div $0,5
+mov $0,$2

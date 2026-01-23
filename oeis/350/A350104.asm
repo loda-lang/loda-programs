@@ -1,28 +1,13 @@
 ; A350104: a(n) = Sum_{k=0..n} A350102(k).
-; Submitted by Scott H
+; Submitted by kpmonaghan
 ; 1,3,6,11,18,28,40,56,74,96,121,150,181,218,257,300,347,399,453,513,575,643,715,791,869,955,1044,1137,1234,1337,1442,1555,1670,1791,1916,2045,2178,2320,2464,2612,2764,2924,3086,3256,3428,3606,3790,3978,4168,4368
+; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A350102(n), b(0) = 0
 
-mov $5,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$5
-  sub $0,$3
-  mov $2,0
-  mov $6,$0
-  mov $1,$0
-  add $1,1
-  lpb $1
-    sub $1,1
-    mov $0,$6
-    sub $0,$1
-    sub $0,1
-    trn $0,1
-    add $0,1
-    seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-    add $2,$0
-  lpe
-  add $4,$2
+lpb $0
+  mov $2,$0
+  seq $2,350102 ; Number of self-measuring subsets of the initial segment of the natural numbers strictly below n. Number of subsets S of [n] with S = distset(S).
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$4
+mov $0,$1
+add $0,1

@@ -20,6 +20,5 @@ mul $4,$3
 mov $2,$4
 sub $2,4
 mul $2,$1
-sub $0,5
 mov $0,$2
 div $0,8

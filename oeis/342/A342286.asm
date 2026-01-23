@@ -1,5 +1,5 @@
 ; A342286: a(n) = number of n-variable nondegenerate self-reflecting truth-tables.
-; Submitted by Science United
+; Submitted by Dongha Hwang
 ; 2,0,2,8,210,64384,4294577650,18446744043646148328,340282366920938463315800654962347229922,115792089237316195423570985008687907850207443363352117868951295327319990568640
 
 mov $2,2
@@ -16,5 +16,3 @@ lpb $4
   pow $3,2
 lpe
 mov $0,$2
-div $0,2
-mul $0,2

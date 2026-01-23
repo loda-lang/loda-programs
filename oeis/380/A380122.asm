@@ -1,7 +1,7 @@
 ; A380122: a(n) is the number of integers m (possibly negative) such that the nonzero digits in the nonadjacent form for m appear in the nonadjacent form for n.
 ; Submitted by Science United
 ; 1,2,2,4,2,4,4,4,2,4,4,8,4,8,4,4,2,4,4,8,4,8,8,8,4,8,8,8,4,8,4,4,2,4,4,8,4,8,8,8,4,8,8,16,8,16,8,8,4,8,8,16,8,16,8,8,4,8,8,8,4,8,4,4,2,4,4,8,4,8,8,8,4,8,8,16,8,16,8,8
-; Formula: a(n) = truncate(2^(sumdigits(bitxor(floor(n/2)+n,floor(n/2)),2)*sign(bitxor(floor(n/2)+n,floor(n/2)))))
+; Formula: a(n) = 2^sumdigits(bitxor(floor(n/2)+n,floor(n/2)),2)
 
 mov $1,$0
 div $0,2

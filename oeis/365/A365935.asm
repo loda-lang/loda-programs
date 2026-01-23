@@ -1,11 +1,9 @@
 ; A365935: Final digit (in decimal system) of n^(n+1) = A007778(n).
-; Submitted by Science United
+; Submitted by John Napoli
 ; 0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1
-; Formula: a(n) = (n^sumdigits(n+1,90))%10
+; Formula: a(n) = (n*n^n)%10
 
 mov $1,$0
-add $0,1
-dgs $0,90
 pow $1,$0
-mov $0,$1
+mul $0,$1
 mod $0,10

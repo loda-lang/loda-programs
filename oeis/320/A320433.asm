@@ -1,34 +1,21 @@
 ; A320433: Expansion of e.g.f. exp(4 * (1 - exp(x)) + x).
-; Submitted by jlbrown
+; Submitted by loader3229
 ; 1,-3,5,5,-43,-27,597,805,-11883,-40475,265685,2133157,-3405803,-107760283,-301542315,4458255397,42421260949,-45046794011,-3365690666283,-19844416105563,138274174035221,2917746747446373,11092963732101461,-207438902364296411,-3205301465165742187
 
-mov $2,1
-mov $6,1
-sub $8,1
+mov $4,$0
+add $4,1
+bin $4,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    equ $7,$8
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    div $7,$8
-    mov $10,1
-    sub $10,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $3,$6
-  mul $3,4
-  add $9,1
-  mov $$9,$3
+  mov $3,-4
+  pow $3,$2
+  mov $5,$2
+  add $5,$4
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$3
+  add $1,$5
   add $2,1
 lpe
-mov $0,$6
+mov $0,$1

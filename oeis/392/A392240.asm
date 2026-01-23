@@ -1,21 +1,10 @@
 ; A392240: Largest prime factor of 6*n+1.
 ; Submitted by Science United
 ; 7,13,19,5,31,37,43,7,11,61,67,73,79,17,13,97,103,109,23,11,127,19,139,29,151,157,163,13,7,181,17,193,199,41,211,31,223,229,47,241,19,23,37,53,271,277,283,17,59,43,307,313,29,13,331,337,7,349,71,19,367,373,379,11,23,397
+; Formula: a(n) = A006530(6*n+1)
 
 #offset 1
 
-mov $1,5
 mul $0,6
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  add $2,2
-  equ $0,15
-  mul $1,4
-  mul $1,$2
-lpe
-mov $0,$1
-sub $0,140
-div $0,20
-add $0,5
+add $0,1
+seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
