@@ -4,7 +4,6 @@
 
 mov $2,12
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

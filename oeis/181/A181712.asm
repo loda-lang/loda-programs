@@ -1,4 +1,4 @@
-; A181712: Floor(3*n*tau)-Floor(2*n*tau)-Floor(n*tau), where tau=(1+sqrt(5))/2, the golden ratio.
+; A181712: a(n) = floor(3*n*phi) - floor(2*n*phi) - floor(n*phi), where phi = (1+sqrt(5))/2, the golden ratio.
 ; Submitted by Simon Strandgaard
 ; 0,0,1,1,0,1,0,1,0,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,1,1
 
@@ -6,9 +6,6 @@
 
 sub $0,1
 mov $3,1
-mov $4,0
-mov $6,0
-mov $7,0
 mov $1,$0
 add $1,1
 mul $1,2

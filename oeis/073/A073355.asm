@@ -1,22 +1,18 @@
 ; A073355: Sum of squarefree kernels of numbers <= n.
-; Submitted by Science United
+; Submitted by rajab
 ; 1,3,6,8,13,19,26,28,31,41,52,58,71,85,100,102,119,125,144,154,175,197,220,226,231,257,260,274,303,333,364,366,399,433,468,474,511,549,588,598,639,681,724,746,761,807,854,860,867,877,928,954,1007,1013,1068,1082,1139,1197,1256,1286,1347,1409,1430,1432,1497,1563,1630,1664,1733,1803,1874,1880,1953,2027,2042,2080,2157,2235,2314,2324
 
 #offset 1
 
 sub $0,1
-mov $4,$0
+mov $2,$0
 mov $1,$0
 add $1,1
 lpb $1
   sub $1,1
-  mov $0,$4
+  mov $0,$2
   sub $0,$1
-  mov $3,$0
-  add $3,1
-  seq $3,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-  mov $0,$3
-  add $0,1
-  add $2,$0
+  seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+  add $3,$0
 lpe
-mov $0,$2
+mov $0,$3

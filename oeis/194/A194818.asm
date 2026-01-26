@@ -3,7 +3,6 @@
 
 #offset 1
 
-mov $5,0
 mov $1,$0
 sub $1,1
 mov $2,$1
@@ -16,5 +15,4 @@ lpb $3
   seq $4,327180 ; a(n) = [(2n+1)r] - [(n+1)r] - [nr], where [ ] = floor and r = sqrt(3).
   add $5,$4
 lpe
-mov $1,$5
 sub $0,$5

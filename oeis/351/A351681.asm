@@ -4,32 +4,19 @@
 
 #offset 1
 
-mov $20,1
 mov $3,$0
-lpb $3
-  add $2,1
+bin $3,2
+lpb $0
+  sub $0,1
   mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
+  add $4,1
+  seq $4,52424 ; Numbers k with no single-digit factors (apart from 1 and k).
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  seq $4,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
 mov $0,$1

@@ -1,7 +1,7 @@
 ; A174344: List of x-coordinates of point moving in clockwise square spiral.
 ; Submitted by loader3229
 ; 0,1,1,0,-1,-1,-1,0,1,2,2,2,2,1,0,-1,-2,-2,-2,-2,-2,-1,0,1,2,3,3,3,3,3,3,2,1,0,-1,-2,-3,-3,-3,-3,-3,-3,-3,-2,-1,0,1,2,3,4,4,4,4,4,4,4,4,3,2,1,0,-1,-2,-3,-4,-4,-4,-4,-4,-4,-4,-4,-4,-3,-2,-1,0,1,2,3
-; Formula: a(n) = -truncate((-1)^truncate((sqrtint(4*n-4)+2)/2))*max(-2*binomial(truncate((sqrtint(4*n-4)+2)/2),2)+n-1,0)+truncate((truncate((sqrtint(4*n-4)+2)/2)*truncate((-1)^truncate((sqrtint(4*n-4)+2)/2)))/2)
+; Formula: a(n) = -max(-2*binomial(floor((sqrtint(4*n-4)+2)/2),2)+n-1,0)*(-1)^floor((sqrtint(4*n-4)+2)/2)+truncate((floor((sqrtint(4*n-4)+2)/2)*(-1)^floor((sqrtint(4*n-4)+2)/2))/2)
 
 #offset 1
 

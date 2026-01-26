@@ -1,5 +1,5 @@
 ; A088933: Number of generalized Moore graphs on n nodes.
-; Submitted by loader3229
+; Submitted by Just Jake
 ; 0,0,0,1,1,4,3,13,21
 
 #offset 1
@@ -25,14 +25,13 @@ lpb $0
   neq $6,0
   mov $9,$8
   mul $9,$6
-  add $8,$7
   div $0,2
   mov $2,$7
   mul $2,$6
-  add $7,$9
+  add $8,$7
   add $8,$2
   mov $4,$8
+  add $7,$9
 lpe
 mov $0,$4
-sub $0,1
 div $0,2

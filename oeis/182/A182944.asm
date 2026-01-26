@@ -1,6 +1,7 @@
 ; A182944: Square array A(i,j), i >= 1, j >= 1, of prime powers prime(i)^j, by descending antidiagonals.
 ; Submitted by Science United
 ; 2,4,3,8,9,5,16,27,25,7,32,81,125,49,11,64,243,625,343,121,13,128,729,3125,2401,1331,169,17,256,2187,15625,16807,14641,2197,289,19,512,6561,78125,117649,161051,28561,4913,361,23,1024,19683,390625,823543,1771561,371293,83521,6859,529,29,2048,59049,1953125,5764801,19487171,4826809,1419857,130321,12167,841,31,4096,177147,9765625,40353607,214358881,62748517,24137569,2476099,279841,24389,961,37,8192,531441
+; Formula: a(n) = if(((truncate((sqrtint(8*n)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1,2)-n+1)<=(-1),0,A000040(-(truncate((sqrtint(8*n)-1)/2)+1)^2+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+n+1)^((truncate((sqrtint(8*n)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1,2)-n+1))
 
 #offset 1
 
@@ -26,27 +27,7 @@ sub $0,$3
 sub $0,1
 sub $2,$0
 add $0,1
-mov $4,-1
-add $5,8
-pow $5,4
-lpb $5
-  add $6,1
-  mul $8,6
-  add $8,7
-  gcd $8,2
-  mul $8,$6
-  seq $8,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $2,$8
-  add $4,2
-  mov $7,$2
-  max $7,0
-  equ $7,$2
-  mul $5,$7
-  sub $5,18
-lpe
-mov $2,$4
-sub $2,7
-div $2,2
-add $2,5
+add $2,1
+seq $2,40 ; The prime numbers.
 pow $2,$0
 mov $0,$2

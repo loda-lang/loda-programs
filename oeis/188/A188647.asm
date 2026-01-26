@@ -13,7 +13,6 @@ add $6,1
 bin $6,2
 sub $0,$6
 sub $0,1
-mov $1,1
 sub $2,$0
 mov $4,$0
 add $4,1
@@ -28,4 +27,4 @@ lpb $0
   add $1,$3
   add $5,$1
 lpe
-mov $0,$1
+mov $0,$5

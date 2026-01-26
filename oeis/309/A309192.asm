@@ -1,30 +1,20 @@
 ; A309192: a(n) = Sum_{k=1..n} mu(k)^2 * k * floor(n/k).
-; Submitted by Science United
+; Submitted by Romeo Mikuli?
 ; 1,4,8,11,17,29,37,40,44,62,74,86,100,124,148,151,169,181,201,219,251,287,311,323,329,371,375,399,429,501,533,536,584,638,686,698,736,796,852,870,912,1008,1052,1088,1112,1184,1232,1244,1252,1270,1342,1384,1438,1450,1522,1546,1626,1716,1776,1848,1910,2006,2038,2041,2125,2269,2337,2391,2487,2631,2703,2715,2789,2903,2927,2987,3083,3251,3331,3349
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-mov $7,$0
-add $7,1
-lpb $7
-  sub $7,1
-  mov $0,$2
-  sub $0,$7
+mov $1,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$1
+  sub $0,$4
   add $0,1
-  mov $3,$0
-  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  mov $5,$0
-  sub $0,1
-  mov $1,$0
-  div $1,$3
-  add $0,$1
-  add $0,2
-  mov $4,$0
-  gcd $4,$5
-  mov $6,$4
-  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  add $8,$6
+  mov $2,$0
+  seq $2,48250 ; Sum of the squarefree divisors of n.
+  add $3,$2
 lpe
-mov $0,$8
+mov $0,$3

@@ -1,5 +1,5 @@
 ; A045170: Numbers whose base-5 representation contains exactly three 0's and one 1.
-; Submitted by damotbe
+; Submitted by Just Jake
 ; 125,627,628,629,635,640,645,675,700,725,875,1000,1125,1251,1255,1275,1375,1876,1880,1900,2000,2501,2505,2525,2625,3137,3138,3139,3142,3143,3144,3147,3148,3149,3177,3178,3179,3185,3190,3195,3202,3203,3204,3210,3215
 
 #offset 1
@@ -16,8 +16,7 @@ lpb $2
     mov $5,$3
     mul $5,2
     mod $5,10
-    add $5,1
-    trn $5,4
+    trn $5,3
     bin $5,2
     mul $3,2
     add $3,24
@@ -25,8 +24,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,19
-  equ $3,0
+  equ $3,19
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,7 +1,7 @@
 ; A275015: Number of neighbors of each new term in an isosceles triangle read by rows.
 ; Submitted by loader3229
 ; 0,1,2,1,3,2,1,3,3,2,1,3,3,3,2,1,3,3,3,3,2,1,3,3,3,3,3,2,1,3,3,3,3,3,3,2,1,3,3,3,3,3,3,3,2,1,3,3,3,3,3,3,3,3,2,1,3,3,3,3,3,3,3,3,3,2,1,3,3,3,3,3,3,3,3,3,3,2,1,3
-; Formula: a(n) = -2*truncate(0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,1)+2
+; Formula: a(n) = -2*if((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,1)+2
 
 #offset 1
 

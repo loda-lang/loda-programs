@@ -13,7 +13,6 @@ lpb $3
   add $0,$3
   seq $0,61720 ; First differences of sequence of primorials.
   mul $0,2
-  add $0,1
   log $0,2
   max $0,2
   mov $2,$3

@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,44948 ; Runs of odd length in the base 8 representation of n.
+  seq $3,44948 ; Number of runs of odd length in the base 8 representation of n.
   div $3,2
   equ $3,0
   sub $0,$3

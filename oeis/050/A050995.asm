@@ -5,7 +5,9 @@
 
 mov $1,$0
 seq $1,209884 ; E.g.f. A(x) satisfies: A(x/(1-x))/(1-x) = (1/x) * d/dx x^2*A(x)/2.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+fac $2,$0
+mov $0,$2
 pow $0,2
 gcd $1,$0
 div $0,$1

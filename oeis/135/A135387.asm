@@ -1,7 +1,7 @@
 ; A135387: Triangle read by rows, with (2, 1, 0, 0, 0, ...) in every column.
 ; Submitted by loader3229
 ; 2,1,2,0,1,2,0,0,1,2,0,0,0,1,2,0,0,0,0,1,2,0,0,0,0,0,1,2,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,2
-; Formula: a(n) = max(-binomial(truncate((sqrtint(8*n)+3)/2),2)+n+2,0)
+; Formula: a(n) = max(-binomial(floor((sqrtint(8*n)+3)/2),2)+n+2,0)
 
 #offset 1
 

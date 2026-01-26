@@ -1,27 +1,28 @@
 ; A105044: Numbers n such that 1000*n - 1 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by booc0mtaco
 ; 2,3,5,9,14,26,33,36,42,50,53,57,60,71,72,74,78,80,86,95,99,101,102,105,108,134,135,137,138,140,144,158,162,165,173,180,183,185,189,192,200,203,204,213,222,224,231,240,243,248,254,261,267,269,273,276,278,287,290,291,294,299,302,303,306,309,323,326,327,330,332,336,338,339,341,357,359,372,374,378
 
 #offset 1
 
+mov $1,-2
+mov $3,$0
 sub $0,1
-mov $5,-2
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,1000
-  mov $1,$5
+add $3,5
+pow $3,3
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $1,1000
+  mov $2,$1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,19
 lpe
-mov $0,$5
+mov $0,$1
+sub $0,1996
 div $0,1000
-add $0,1
+add $0,2

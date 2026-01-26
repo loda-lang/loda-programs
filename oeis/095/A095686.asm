@@ -1,7 +1,7 @@
 ; A095686: Half the number of divisors of nonsquares (A000037).
 ; Submitted by PDW
 ; 1,1,1,2,1,2,2,1,3,1,2,2,1,3,1,3,2,2,1,4,2,2,3,1,4,1,3,2,2,2,1,2,2,4,1,4,1,3,3,2,1,5,3,2,3,1,4,2,4,2,2,1,6,1,2,3,2,4,1,3,2,4,1,6,1,2,3,3,2,4,1,5,2,1,6,2,2,2,4,1
-; Formula: a(n) = truncate(A000005(max(0,n-1)+truncate((sqrtint(8*floor((n-1)/2)+1)+1)/2)+1)/2)
+; Formula: a(n) = truncate(A000005(floor((sqrtint(8*floor((n-1)/2)+1)+1)/2)+max(0,n-1)+1)/2)
 
 #offset 1
 

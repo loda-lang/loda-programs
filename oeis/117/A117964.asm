@@ -1,16 +1,12 @@
 ; A117964: a(n) = A117963(n) mod 2.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1
-; Formula: a(n) = floor(((floor(binomial(2*floor(n/2),floor(n/2))/(floor(n/2)+1))*2^(floor(n/2)+1))%3)/2)
+; Formula: a(n) = (binomial(n,floor(n/2))^2)%gcd(floor(n/2),3)
 
-div $0,2
-mov $2,$0
-mul $0,2
-bin $0,$2
-add $2,1
-mov $1,2
-pow $1,$2
-div $0,$2
-mul $0,$1
-mod $0,3
-div $0,2
+mov $1,$0
+div $1,2
+bin $0,$1
+pow $0,2
+mov $2,$1
+gcd $2,3
+mod $0,$2

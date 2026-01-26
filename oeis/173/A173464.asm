@@ -9,7 +9,7 @@ mov $2,$0
 add $2,253
 mov $3,$2
 mov $4,$2
-div $4,6
+div $4,12
 lpb $4
   sub $4,1
   mov $2,$3

@@ -1,36 +1,34 @@
 ; A189636: Positions of 0 in A116178; complement of A189637.
-; Submitted by skildude
+; Submitted by Just Jake
 ; 1,2,4,5,7,10,11,13,14,16,19,20,22,25,28,29,31,32,34,37,38,40,41,43,46,47,49,52,55,56,58,59,61,64,65,67,70,73,74,76,79,82,83,85,86,88,91,92,94,95,97,100,101,103,106,109,110,112,113,115,118,119,121,122,124,127,128,130,133,136,137,139,140,142,145,146,148,151,154,155
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-pow $2,2
-lpb $2
-  add $5,1
-  mul $5,2
-  mov $6,$5
-  sub $6,1
-  bxo $5,$6
-  add $5,1
-  div $5,2
-  log $5,2
-  mod $5,2
-  mov $3,$1
-  add $3,1
-  dir $3,3
-  mod $3,3
-  mod $3,2
-  mul $3,$5
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+mov $2,$0
+equ $2,0
+mov $3,$0
+add $0,$2
+div $3,$0
+mov $7,$0
+pow $7,2
+lpb $7
+  mov $4,$1
+  add $4,1
+  seq $4,126759 ; a(0) = 1; a(2n) = a(n); a(3n) = a(n); otherwise write n = 6i+j, where j = 1 or 5 and set a(n) = 2i+2 if j = 1, otherwise a(n) = 2i+3.
+  mov $6,$4
+  gcd $6,2
+  sub $0,$6
+  add $0,1
+  add $1,2
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $7,$5
+  sub $7,1
 lpe
 mov $0,$1
 div $0,2
+mul $3,$0
+mov $0,$3
 add $0,1

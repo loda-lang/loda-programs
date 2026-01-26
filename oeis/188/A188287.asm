@@ -1,32 +1,32 @@
 ; A188287: Convolution of A000085 with itself.
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 1,2,5,12,32,88,260,800,2604,8824,31340,115568,443760,1763456,7260256,30835712,135124496,609027360,2822461648,13417923008,65401203584,326242088064,1664539966400,8674167861760,46140838036160,250248380068736,1383064482739392,7782094359642880,44556274485385472,259386868954913792,1534648256144744448,9221768782496153600,56257200305542816000,348229414483067953664,2186289809959749219584,13915635548751404313600,89763262773250724958208,586568846542542312028160,3881730359224978577110016
 
-mov $2,1
-mov $10,1
-add $0,2
+mov $7,$0
+add $7,1
+bin $7,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
   mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $7,$4
-    trn $7,1
-    seq $7,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-    mov $9,10
-    add $9,$5
-    min $10,$0
-    mul $7,$$9
-    gcd $4,$10
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
+  div $4,2
+  seq $4,34430 ; Convolution of A001147 (double factorial numbers) with itself.
+  mov $5,$2
+  add $5,$7
+  add $5,1
+  mov $6,$5
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $3,$5
+  add $3,1
+  bin $3,2
+  sub $6,$3
+  sub $6,1
+  bin $5,$6
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

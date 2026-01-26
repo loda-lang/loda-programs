@@ -1,18 +1,19 @@
 ; A116975: Number of compositions of n into parts of sizes == 1 mod 5 or 4 mod 5.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,1,2,3,5,7,10,15,23,35,52,77,115,173,260,389,581,869,1302,1951,2921,4371,6542,9795,14667,21959,32872,49209,73671,110297,165128,247209,370089,554057,829482,1241819,1859117,2783263,4166802
+; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+b(n-4)+b(n-5)+2, b(8) = 14, b(7) = 9, b(6) = 6, b(5) = 4, b(4) = 2, b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 0
 
 #offset 1
 
+mov $1,1
+mov $5,1
 sub $0,1
-mov $2,1
-fil $2,3
-mov $5,2
-mov $6,3
 lpb $0
-  rol $2,5
-  add $6,$2
-  add $6,$5
+  rol $1,5
+  add $5,$1
+  add $5,$4
   sub $0,1
+  add $1,2
 lpe
 mov $0,$2
+add $0,1

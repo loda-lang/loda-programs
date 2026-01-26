@@ -14,8 +14,7 @@ lpb $2
   add $3,1
   seq $3,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $3,5
-  equ $3,2
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0

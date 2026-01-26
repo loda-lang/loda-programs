@@ -1,19 +1,37 @@
 ; A143630: Define E(n) = Sum_{k >= 0} (-1)^floor(k/3)*k^n/k! for n = 0,1,2,.... Then E(n) is an integral linear combination of E(0), E(1) and E(2). This sequence lists the coefficients of E(2).
-; Submitted by mkferrysr
+; Submitted by loader3229
 ; 0,0,1,3,7,14,16,-77,-922,-6660,-41264,-233828,-1218392,-5607225,-19220589,4397930,1016675382,14251497833,151695504253,1432992328055,12527186450276,102042171190168,760272520469199,4849866087637364,20093595876114890,-88658815027770226,-3815131107959902038,-67446331357364912766,-961655152186851174251,-12324099267508042590615,-146845109520341093441978,-1640145875698494951731512,-17013769451128017228728045,-158264224128972049824738497,-1182049207129834270179518581,-3541449812069926644099710580
 
-sub $0,1
-mov $2,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,143631 ; Let A(0) = 1, B(0) = 0 and C(0) = 0. Let A(n+1) = - Sum_{k = 0..n} binomial(n,k)*C(k), B(n+1) = Sum_{k = 0..n} binomial(n,k)*A(k) and C(n+1) = Sum_{k = 0..n} binomial(n,k)*B(k). This entry gives the sequence B(n).
-  mul $1,$0
-  add $3,$1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $10,-1
+  bin $10,$2
+  mov $4,$2
+  mod $4,3
+  trn $4,1
+  mul $4,$10
+  mov $5,$2
+  add $5,$9
+  mov $6,$5
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  mov $7,$5
+  sub $7,$6
+  mov $3,1
+  fac $3,$7
+  mov $8,$5
+  seq $8,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $8,$3
+  mov $5,$8
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
-mov $0,$3
+mov $0,$1

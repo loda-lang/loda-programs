@@ -1,7 +1,7 @@
 ; A187976: a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=6, [ ]=floor.
 ; Submitted by Science United
 ; 0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0
-; Formula: a(n) = -2*truncate((sqrtint(2*(n+6)^2)+sqrtint(2*n^2))/2)+sqrtint(2*(n+6)^2)+sqrtint(2*n^2)
+; Formula: a(n) = (sqrtint(2*(n+6)^2)+sqrtint(2*n^2))%2
 
 #offset 1
 

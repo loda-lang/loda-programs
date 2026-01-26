@@ -1,14 +1,21 @@
 ; A071148: Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
-; Submitted by Goldislops
+; Submitted by Science United
 ; 3,8,15,26,39,56,75,98,127,158,195,236,279,326,379,438,499,566,637,710,789,872,961,1058,1159,1262,1369,1478,1591,1718,1849,1986,2125,2274,2425,2582,2745,2912,3085,3264,3445,3636,3829,4026,4225,4436,4659,4886,5115,5348,5587,5828,6079,6336,6599,6868,7139,7416,7697,7980,8273,8580,8891,9204,9521,9852,10189,10536,10885,11238,11597,11964,12337,12716,13099,13488,13885,14286,14695,15114
-; Formula: a(n) = A014284(max(0,n+1)+1)-3
 
 #offset 1
 
-mov $2,$0
-add $2,1
-max $1,$2
-add $1,1
-seq $1,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
-mov $0,$1
-sub $0,3
+sub $0,1
+mov $4,$0
+mov $6,$0
+add $6,1
+lpb $6
+  clr $0,4
+  sub $6,1
+  mov $0,$4
+  sub $0,$6
+  add $0,2
+  seq $0,6005 ; The odd prime numbers together with 1.
+  add $1,$0
+  add $5,$1
+lpe
+mov $0,$5

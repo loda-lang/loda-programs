@@ -17,9 +17,8 @@ lpb $2
   mod $3,$1
   div $3,2
   min $3,1
-  mul $6,735
-  sub $6,1
-  mul $6,2
+  mul $6,1470
+  sub $6,2
   div $6,3
   sub $0,$3
   add $1,1

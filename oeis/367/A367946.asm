@@ -1,37 +1,21 @@
 ; A367946: Expansion of e.g.f. exp(2*(exp(2*x) - 1) + x).
-; Submitted by gemini8
+; Submitted by loader3229
 ; 1,5,33,261,2369,24069,269153,3272453,42858113,600181765,8933677729,140645797125,2332169258945,40586333768197,738998405168609,14040304543111941,277678389593341185,5704502830382733317,121500343635119818017,2678407616841000605957,61015572313688043492929
 
-mov $2,1
+mov $3,$0
+add $3,1
+bin $3,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
-  max $6,1
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    sub $9,1
-    add $9,$5
-    mov $11,$5
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    sub $3,$7
-    mul $3,2
-    add $5,1
-    add $6,$7
-    mul $6,2
-  lpe
-  sub $6,$3
-  sub $6,$7
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,294119 ; Expansion of e.g.f.: exp(2*((1+x)^2 - 1)).
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
-div $0,8
+mov $0,$1

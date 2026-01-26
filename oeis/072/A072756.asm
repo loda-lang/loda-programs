@@ -12,8 +12,7 @@ lpb $3
   mov $1,2
   lpb $1
     sub $1,2
-    trn $0,1
-    add $0,1
+    max $0,1
     seq $0,26343 ; Least k such that s(k) = n, where s = A026342.
     min $2,1
   lpe

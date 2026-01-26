@@ -1,11 +1,10 @@
 ; A095495: a(n) = 51 written in base 12 - n.
-; Submitted by GPV67
+; Submitted by James Adrian
 ; 43,47,51,56,63,102,123,201,303,1220,110011,111111111111111111111111111111111111111111111111111
 
 sub $0,2
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1
