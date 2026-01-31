@@ -1,14 +1,15 @@
 ; A016428: 511th cyclotomic polynomial.
-; Submitted by pututu
+; Submitted by shiva
 ; 1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,1,-1,0,0,1,-1,0
-; Formula: a(n) = b(n+1), b(n) = b(n-7)+A240356(max(n-1,0)), b(6) = 0, b(5) = 0, b(4) = 0, b(3) = 0, b(2) = -1, b(1) = 1, b(0) = 0
 
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,240356 ; Inverse of 73rd cyclotomic polynomial.
+  sub $2,1
+  sub $3,$2
+  mod $3,73
+  pow $3,$3
   trn $0,7
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

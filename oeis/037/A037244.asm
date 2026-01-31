@@ -1,25 +1,26 @@
 ; A037244: Base 100 expansion of Pi.
-; Submitted by JayPi
+; Submitted by Science United
 ; 3,14,15,92,65,35,89,79,32,38,46,26,43,38,32,79,50,28,84,19,71,69,39,93,75,10,58,20,97,49,44,59,23,7,81,64,6,28,62,8,99,86,28,3,48,25,34,21,17,6,79,82,14,80,86,51,32,82,30,66,47,9,38,44,60,95,50,58,22,31,72,53,59,40,81,28,48,11,17,45
 
 mul $0,2
-mov $1,$0
-trn $0,1
-sub $1,$0
-sub $0,1
+add $0,1
+mov $5,1
 mov $3,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$3
-  add $0,2
-  seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
-  add $2,$0
-  mul $2,10
-  add $3,1
+mul $3,7
+lpb $3
+  max $3,1
+  max $1,$4
+  div $1,$3
+  sub $3,1
+  add $4,$5
+  mul $5,2
+  add $5,$1
 lpe
-mov $0,$2
-div $0,10
-sub $0,3
-mul $0,$1
-add $0,3
+sub $0,1
+mov $2,10
+pow $2,$0
+div $4,$2
+mul $5,2
+div $5,$4
+mov $0,$5
+mod $0,100
