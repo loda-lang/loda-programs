@@ -1,16 +1,15 @@
 ; A040670: Continued fraction for sqrt(697).
-; Submitted by loader3229
+; Submitted by Science United
 ; 26,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2
-; Formula: a(n) = a(n-3), a(4) = 2, a(3) = 52, a(2) = 2, a(1) = 2, a(0) = 26
+; Formula: a(n) = 2*floor(binomial(3*gcd(min(n,1)+4,n%3),3)/18)+2
 
-mov $2,26
-mov $3,2
-mov $4,2
-mov $5,52
-lpb $0
-  mov $2,0
-  rol $2,4
-  add $5,$2
-  sub $0,1
-lpe
-mov $0,$2
+mov $1,$0
+mod $1,3
+min $0,1
+add $0,4
+gcd $0,$1
+mul $0,3
+bin $0,3
+div $0,18
+add $0,1
+mul $0,2

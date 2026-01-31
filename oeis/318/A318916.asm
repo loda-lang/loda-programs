@@ -10,8 +10,7 @@ mov $3,1
 lpb $0
   sub $0,2
   add $3,7
-  trn $0,$3
-  add $0,$3
+  max $0,$3
   sub $0,4
   div $3,2
 lpe

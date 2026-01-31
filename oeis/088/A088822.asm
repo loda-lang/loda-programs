@@ -1,31 +1,18 @@
 ; A088822: a(n) is the sum of largest prime factors of numbers from 1 to n.
-; Submitted by rajab
+; Submitted by Science United
 ; 0,2,5,7,12,15,22,24,27,32,43,46,59,66,71,73,90,93,112,117,124,135,158,161,166,179,182,189,218,223,254,256,267,284,291,294,331,350,363,368,409,416,459,470,475,498,545,548,555,560,577,590,643,646,657,664,683,712,771,776,837,868,875,877,890,901,968,985,1008,1015,1086,1089,1162,1199,1204,1223,1234,1247,1326,1331
+; Formula: a(n) = b(n-1)-1, b(n) = b(n-1)+A006530(n+1), b(0) = 1
 
 #offset 1
 
-mov $7,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $5,2
-  mov $0,$7
-  sub $0,$4
-  pow $0,$0
-  mov $1,$0
-  lpb $1
-    mov $2,$1
-    lpb $2
-      mov $3,$1
-      mod $3,$5
-      add $5,1
-      sub $2,$3
-    lpe
-    lpb $1
-      dif $1,$5
-      mov $8,$5
-    lpe
-  lpe
-  add $6,$8
+mov $1,1
+sub $0,1
+lpb $0
+  mov $2,$0
+  add $2,1
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$6
+mov $0,$1
+sub $0,1

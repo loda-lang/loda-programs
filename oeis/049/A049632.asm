@@ -1,20 +1,12 @@
 ; A049632: a(n) = T(n,n), array T as in A049627.
-; Submitted by atannir
+; Submitted by crashtech
 ; 1,4,6,10,14,22,26,38,46,58,66,86,94,118,130,146,162,194,206,242,258,282,302,346,362,402,426,462,486,542,558,618,650,690,722,770,794,866,902,950,982,1062,1086,1170,1210,1258,1302,1394,1426,1510,1550,1614,1662
 
-mov $4,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mov $1,280
-  min $1,$0
-  max $3,$1
-  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  mov $0,$1
-  mul $0,2
-  add $3,$0
+lpb $0
+  mov $1,$0
+  seq $1,49696 ; a(n)=T(n,n), array T as in A049695.
+  add $1,1
+  mov $0,0
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

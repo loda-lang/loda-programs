@@ -1,11 +1,9 @@
 ; A095451: a(n) = 29 written in base 14 - n.
-; Submitted by Ralfy
+; Submitted by Conan
 ; 21,23,25,27,29,32,35,41,45,104,131,1002,11101,11111111111111111111111111111
 
-mov $2,10
+mov $2,14
 sub $2,$0
-add $2,4
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

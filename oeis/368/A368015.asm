@@ -1,35 +1,20 @@
 ; A368015: Expansion of e.g.f. 1/(1 - exp(2*x) + exp(3*x)).
-; Submitted by Frank [NT]
+; Submitted by loader3229
 ; 1,-1,-3,5,81,29,-4623,-20035,415041,4838909,-46093743,-1309934275,3230184801,419574363389,2065056788337,-154120122603715,-2307971235744639,59954627542249469,1959892188447337617,-19474957767402204355,-1658215397958862557279
 
-mov $2,1
-add $2,1
-mov $3,1
+mov $3,$0
+add $3,1
+bin $3,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $3,$1
-  mov $10,1
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mul $6,2
-    mov $9,10
-    add $9,$5
-    mul $3,3
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    sub $3,$7
-    add $5,1
-    add $6,$7
-  lpe
-  add $3,$6
-  mov $5,0
-  sub $6,1
-  mov $$9,$3
+  seq $4,77979 ; Expansion of 1/(1+x+2*x^2+x^3).
+  mov $5,$2
+  add $5,$3
+  seq $5,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  equ $6,$4
 lpe
-mov $0,$3
+mov $0,$1

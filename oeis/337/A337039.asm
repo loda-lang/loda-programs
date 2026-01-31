@@ -1,32 +1,35 @@
 ; A337039: a(n) = exp(-1/3) * Sum_{k>=0} (3*k - 1)^n / (3^k * k!).
-; Submitted by Mads Nissen
+; Submitted by loader3229
 ; 1,0,3,9,54,351,2673,22842,216513,2248965,25351704,307699965,3995419365,55207193328,808078734999,12480510487509,202697232446070,3451417004044323,61450890989472837,1141331486235356178,22066085726516137149,443236553318792110113,9233934519951699602400
 
-mov $6,1
+mov $8,$0
+add $8,1
+bin $8,2
+add $0,1
 lpb $0
   sub $0,1
-  add $2,1
-  mov $3,$6
-  mul $3,2
-  add $3,$6
-  mov $5,0
-  mul $6,$5
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mul $6,3
-    mov $9,10
-    add $9,$5
-    mov $7,2
-    div $7,2
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $$9,$3
+  seq $4,4212 ; Shifts one place left under 3rd-order binomial transform.
+  mov $5,$2
+  add $5,$8
+  add $5,1
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $3,$7
+  add $3,1
+  bin $3,2
+  sub $5,$3
+  add $7,1
+  sub $7,$5
+  mov $6,0
+  sub $6,$5
+  bin $6,$7
+  mov $5,$6
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
-mov $0,$6
+mov $0,$1

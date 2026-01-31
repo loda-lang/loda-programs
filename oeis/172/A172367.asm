@@ -1,27 +1,19 @@
 ; A172367: Numbers k > 0 such that k+4 is a prime.
-; Submitted by booc0mtaco
+; Submitted by Just Jake
 ; 1,3,7,9,13,15,19,25,27,33,37,39,43,49,55,57,63,67,69,75,79,85,93,97,99,103,105,109,123,127,133,135,145,147,153,159,163,169,175,177,187,189,193,195,207,219,223,225,229,235,237,247,253,259,265,267,273,277,279,289,303,307,309,313,327,333,343,345,349,355,363,369,375,379,385,393,397,405,415,417
 
 #offset 1
 
-sub $0,1
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$6
-  add $0,$4
-  sub $0,3
-  mov $2,1
-  add $2,$0
-  add $2,4
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
   mov $1,$2
-  seq $1,40 ; The prime numbers.
-  mov $0,$1
-  add $0,1
-  mov $3,$4
-  mul $3,$0
-  add $5,$3
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,2
+  sub $3,$0
 lpe
-mov $0,$5
-sub $0,5
+add $0,$2
+sub $0,4

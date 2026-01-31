@@ -1,13 +1,21 @@
 ; A212692: Number of (w,x,y,z) with all terms in {1,...,n} and w<|x-y|+|y-z|.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,0,6,22,54,106,184,292,436,620,850,1130,1466,1862,2324,2856,3464,4152,4926,5790,6750,7810,8976,10252,11644,13156,14794,16562,18466,20510,22700,25040,27536,30192,33014,36006,39174,42522,46056,49780
-; Formula: a(n) = 2*truncate((-170*n+binomial(10*n+2,3))/400)
+; Formula: a(n) = floor(n/2)*(10*floor(n/2)+6)*(n%2)+truncate((floor(n/2)*(floor(n/2)*(20*floor(n/2)+3)-5))/3)
 
+mov $2,$0
+mod $2,2
+div $0,2
 mov $1,$0
-mul $1,170
-mul $0,10
-add $0,2
-bin $0,3
-sub $0,$1
-div $0,400
-mul $0,2
+mov $3,$0
+mul $0,20
+add $0,3
+mul $0,$1
+sub $0,5
+mul $0,$1
+div $0,3
+mul $3,10
+add $3,6
+mul $3,$1
+mul $2,$3
+add $0,$2

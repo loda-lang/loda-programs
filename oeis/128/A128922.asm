@@ -1,7 +1,7 @@
 ; A128922: Numbers simultaneously 10-gonal and centered 10-gonal.
-; Submitted by Science United
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,451,145351,46802701,15070324501,4852597686751,1562521384809451,503127033310956601,162005342204743216201,52165217062894004660251,16797037888909664757384751
-; Formula: a(n) = truncate((25*floor((b(n+1)^2)/4)-25)/16)+1, b(n) = 16*c(n-1)+b(n-1), b(1) = 2, b(0) = 2, c(n) = 17*c(n-1)+b(n-1), c(1) = 2, c(0) = 0
+; Formula: a(n) = floor((25*b(n+1)^2-97)/64)+1, b(n) = 16*c(n-1)+b(n-1), b(1) = 2, b(0) = 2, c(n) = 17*c(n-1)+b(n-1), c(1) = 2, c(0) = 0
 
 mov $2,2
 add $0,1
@@ -14,8 +14,7 @@ lpb $0
 lpe
 pow $2,2
 mov $0,$2
-div $0,4
 mul $0,25
-sub $0,25
-div $0,16
+sub $0,97
+div $0,64
 add $0,1

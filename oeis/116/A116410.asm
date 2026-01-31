@@ -1,24 +1,14 @@
 ; A116410: Expansion of (1-x-2x^2+sqrt(1-2x-3x^2))/(2*(1-2x-3x^2)).
 ; Submitted by Science United
 ; 1,1,3,8,23,66,192,561,1647,4850,14318,42351,125468,372191,1105275,3285288,9772767,29090826,86646486,258208671,769820418,2296067565,6850744365,20447143866,61045757604,182303186391,544550917797
+; Formula: a(n) = truncate((floor((3^n)/3)+A002426(n)+1)/2)
 
 mov $1,$0
-mov $4,1
-mov $6,$0
-add $0,1
-lpb $0
-  sub $0,1
-  sub $2,$6
-  bin $2,$0
-  sub $4,1
-  trn $0,1
-  mov $3,$4
-  sub $3,1
-  bin $3,$1
-  mul $3,$2
-  add $5,$3
-  sub $6,1
-  sub $1,3
-  equ $2,3
-lpe
-mov $0,$5
+mov $0,3
+pow $0,$1
+div $0,3
+seq $1,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
+add $1,1
+add $1,$0
+mov $0,$1
+div $0,2

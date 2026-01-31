@@ -1,32 +1,34 @@
 ; A116614: Values of n such that prime(2n) mod 12 = 1.
-; Submitted by Ralfy
+; Submitted by crashtech
 ; 3,6,9,21,22,25,34,35,37,39,40,41,42,44,50,53,55,56,61,65,67,68,84,86,87,90,99,102,108,113,122,127,130,132,139,142,153,154,155,158,161,163,176,183,189,190,194,198,211,219,225,232,233,237,238,248,258,259,278,280,282,284,287,295,306,309,311,312,315,319,322,324,328,334,339,341,342,346,348,357
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,3
-pow $2,2
+add $2,6
+pow $2,3
 lpb $2
-  sub $2,2
+  sub $2,15
   mov $3,$1
-  add $3,1
-  seq $3,68228 ; Primes congruent to 1 (mod 12).
-  seq $3,230980 ; Number of primes <= n, starting at n=0.
   add $3,2
+  seq $3,6005 ; The odd prime numbers together with 1.
+  div $3,2
+  mul $3,2
   mov $5,$3
-  mul $3,338
+  sub $3,2
   gcd $3,4
   add $3,1
-  equ $3,5
+  gcd $3,$5
+  equ $3,3
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
 lpe
-mov $0,$5
+mov $0,$1
+sub $0,6
 div $0,2
-sub $0,1
+add $0,3

@@ -1,24 +1,22 @@
 ; A087322: Triangle T read by rows: T(n, 1) = 2*n + 1. For 1 < k <= n, T(n, k) = 2*T(n,k-1) + 1.
 ; Submitted by Science United
 ; 3,5,11,7,15,31,9,19,39,79,11,23,47,95,191,13,27,55,111,223,447,15,31,63,127,255,511,1023,17,35,71,143,287,575,1151,2303,19,39,79,159,319,639,1279,2559,5119,21,43,87,175,351,703,1407,2815,5631,11263,23,47,95,191,383,767,1535,3071,6143,12287,24575,25,51,103,207,415,831,1663,3327,6655,13311,26623,53247,27,55
-; Formula: a(n) = 2*truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*(truncate((sqrtint(8*n)-1)/2)+2)-1
+; Formula: a(n) = (truncate((sqrtint(8*n)-1)/2)+2)*if((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))-1
 
 #offset 1
 
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $1,$2
-add $1,1
-bin $1,2
-sub $0,$1
-sub $0,1
-mov $3,2
-pow $3,$0
-add $2,2
-mul $2,$3
-mov $0,$2
-mul $0,2
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+mov $2,2
+pow $2,$0
+add $1,2
+mul $1,$2
+mov $0,$1
 sub $0,1

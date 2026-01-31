@@ -17,8 +17,7 @@ lpb $4
   seq $0,54055 ; Largest digit of n.
   add $0,3
   mul $1,$0
-  add $1,1
-  equ $1,6
+  equ $1,5
   add $3,$1
 lpe
 mov $0,$3

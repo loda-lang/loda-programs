@@ -1,34 +1,20 @@
 ; A355410: Expansion of e.g.f. 1/(3 - exp(x) - exp(3*x)).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,4,42,652,13482,348484,10809282,391162972,16177467642,752689508404,38911563009522,2212759299753292,137270821971529002,9225382887659221924,667690580181890112162,51776098497454677943612,4282645413209764715753562
 
-mov $2,1
+mov $3,$0
+add $3,1
+bin $3,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $3,$1
-  mov $10,1
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mul $6,3
-    mov $9,10
-    add $9,$5
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    sub $3,$7
-    add $5,1
-    add $6,$7
-  lpe
-  mov $5,0
-  sub $6,$3
-  sub $6,$7
-  mov $3,$6
-  mov $$9,$3
+  seq $4,181880 ; Expansion of 1/(1-4*x-3*x^2-x^3).
+  mov $5,$2
+  add $5,$3
+  seq $5,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  equ $6,$4
 lpe
-mov $0,$3
+mov $0,$1

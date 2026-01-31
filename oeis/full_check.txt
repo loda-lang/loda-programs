@@ -414,6 +414,7 @@ A092391: a(n) = n + wt(n), where wt(n) = A000120(n) = binary weight of n.
 A092436: a(n) = 1/2 + (-1)^n*(1/2 - A010060(floor(n/2))).
 A092486: Take natural numbers, exchange first and third quadrisection.
 A092620: Numbers with exactly one prime digit.
+A093599: Composite numbers having an odd number of prime factors, all of which are distinct.
 A094390: Beatty sequence of exp(Pi/4).
 A094562: Initial decimal digit of fractional part of Pi*n, Pi=3.1415...
 A094683: Juggler sequence: if n mod 2 = 0 then floor(sqrt(n)) else floor(n^(3/2)).

@@ -1,10 +1,19 @@
 ; A212419: Size of the equivalence class of S_n containing the identity permutation under transformations of positionally adjacent elements of the form abc <--> acb <--> bac <--> cba, where a<b<c.
 ; Submitted by Odicin
 ; 1,1,1,4,21,116,713,5030,40301,362852,3628744,39916716,479001426,6227020536,87178290639,1307674367142,20922789886141,355687428093140,6402373705721708,121645100408822276,2432902008176618342,51090942171709406408,1124000727777607604418,25852016738884976522428,620448401733239439093202,15511210043330985983583976,403291461126605635583049088,10888869450418352160766514200,304888344611713860501500582660,8841761993739701954543610651120,265252859812191058636308467630715,8222838654177922817725562860610310
-; Formula: a(n) = -A210671(n)+n!+1
 
 mov $1,$0
-seq $1,210671 ; Number of equivalence classes of S_n under transformations of positionally adjacent elements of the form abc <--> acb <--> bac <--> cba, where a<b<c.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-add $0,1
+lpb $1
+  sub $1,2
+  mov $3,$1
+  max $3,0
+  seq $3,104722 ; Self-convolution of repeated Catalan numbers.
+  mov $1,1
+lpe
+mov $1,$3
+add $1,1
+mov $2,1
+fac $2,$0
+mov $0,$2
 sub $0,$1
+add $0,1

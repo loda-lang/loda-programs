@@ -1,5 +1,5 @@
 ; A095423: Number of proper T_0-covers of an n-set.
-; Submitted by DukeBox
+; Submitted by kpmonaghan
 ; 0,1,42,15654,1073421588,4611685989440629944,85070591730234615704434641716516893512,28948022309329048855892746252171976959574390130279817915318273546782086570304
 
 #offset 1
@@ -13,6 +13,7 @@ lpb $5
   mov $4,$0
   max $4,0
   seq $4,59201 ; Number of T_0-covers of a labeled n-set.
+  mul $0,$5
   mov $2,$5
   mul $2,$4
   add $1,$2

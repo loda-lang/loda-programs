@@ -1,5 +1,5 @@
 ; A145433: Decimal expansion of Sum_{n>=1} (-1)^(n-1)*n/binomial(2n,n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,7,4,4,3,2,7,1,5,2,7,7,1,2,0,3,2,3,1,1,1,1,5,4,6,5,8,6,3,6,0,4,8,4,3,4,0,3,3,9,6,5,6,5,4,6,0,3,2,2,3,1,7,2,3,8,0,5,6,0,4,8,8,3,1,9,4,0,4,8,9,7,2,3,6,8,9,0,5,5
 
 mov $2,4
@@ -14,10 +14,8 @@ lpb $3
   mul $2,$5
   mul $1,$3
   add $1,$2
-  mov $5,$0
-  add $5,2
-  div $1,$5
-  div $2,$5
+  div $1,3
+  div $2,3
   sub $3,1
 lpe
 mov $4,10

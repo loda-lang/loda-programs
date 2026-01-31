@@ -6,6 +6,4 @@
 #offset 1
 
 add $0,1
-mov $1,$0
-seq $1,40 ; The prime numbers.
-mov $0,$1
+seq $0,40 ; The prime numbers.

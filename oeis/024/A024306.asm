@@ -1,26 +1,20 @@
 ; A024306: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k=[ (n+1)/2 ], s = (natural numbers >= 2), t = (natural numbers >= 3).
-; Submitted by loader3229
+; Submitted by Science United
 ; 6,8,22,27,52,61,100,114,170,190,266,293,392,427,552,596,750,804,990,1055,1276,1353,1612,1702,2002,2106,2450,2569,2960,3095,3536,3688,4182,4352,4902,5091,5700,5909,6580,6810,7546,7798,8602,8877,9752,10051,11000,11324
-; Formula: a(n) = floor((floor((n-1)/2)*(floor((n-1)/2)+5)+4)/2)*((n-1)%2)+floor((floor((n-1)/2)*(floor((n-1)/2)*(2*floor((n-1)/2)+15)+31)+18)/3)
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mod $2,2
-div $0,2
 mov $1,$0
-mov $3,$0
-mul $0,2
-add $0,15
-mul $0,$1
-add $0,31
-mul $0,$1
-add $0,18
-div $0,3
-add $3,5
-mul $3,$1
-add $3,4
-div $3,2
-mul $2,$3
-add $0,$2
+add $1,2
+add $0,1
+div $0,2
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  add $3,$0
+  add $4,$0
+  add $4,$3
+lpe
+mov $0,$4

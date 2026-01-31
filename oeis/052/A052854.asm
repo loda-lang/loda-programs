@@ -13,7 +13,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     add $7,1
-    seq $7,66768 ; Sum_{d|n} binomial(2*d-2,d-1).
+    seq $7,66768 ; a(n) = Sum_{d|n} binomial(2*d-2,d-1).
     mov $9,10
     add $9,$5
     mul $7,$$9

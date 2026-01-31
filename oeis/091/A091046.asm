@@ -1,39 +1,21 @@
 ; A091046: Stirling transform of first differences of Bell numbers (A005493), if offset zero: a(n) = Sum_{k=1..n} A008277(n,k)*A005493(k).
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 1,4,20,119,817,6338,54707,519184,5366097,59934937,718748131,9203953921,125268224954,1804750726306,27426230051634,438260834123607,7343677070172330,128716143768613600,2354633702684629141,44865189679858465163,888784065003104357924,18275015286028779082459,389429403424775967304276,8588103992500812588237695,195748566903108061843364213,4605848556584865603357452073,111749309740497291338853634393,2792878250969592666089300954524,71830525889243305595380980300056,1899420318877053567140412015543668
 
 #offset 1
 
-equ $1,0
-mov $20,1
-sub $0,1
-add $0,$1
 mov $3,$0
-lpb $3
-  add $2,1
+bin $3,2
+lpb $0
+  sub $0,1
   mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
+  seq $4,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  seq $4,138378 ; Number of embedded coalitions in an n-person game.
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
 mov $0,$1
-sub $0,1

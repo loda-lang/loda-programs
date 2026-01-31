@@ -1,17 +1,11 @@
-; A392739: allocated for Benoit Cloitre
-; Submitted by LM
+; A392739: A balanced 4-automatic binary sequence related to Thue-Morse sequence.
+; Submitted by Science United
 ; 0,1,0,1,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1
 
 lpb $0
-  add $2,$3
-  lpb $0
-    dif $0,2
-    add $2,1
-  lpe
-  add $2,1
-  mov $3,1
+  add $0,1
+  dir $0,2
   div $0,2
-  mov $1,$2
+  equ $1,0
 lpe
 mov $0,$1
-mod $0,2

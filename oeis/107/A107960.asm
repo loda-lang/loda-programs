@@ -1,35 +1,21 @@
 ; A107960: Numbers n such that 11*n - 1 is prime.
-; Submitted by p3d-cluster
+; Submitted by Science United
 ; 4,10,12,18,22,24,28,34,40,42,52,54,60,70,78,88,94,108,112,118,120,130,132,144,148,154,160,168,174,180,190,192,202,204,208,210,222,232,238,244,250,258,264,270,280,288,300,304,322,328,334,340,342,364,372,378,382,390,402,418,424,430,432,438,442,454,460,462,468,480,484,498,502,514,522,528,532,540,564,568
 
 #offset 1
 
-mov $2,42
+mov $2,22
 mov $3,$0
 pow $3,5
 lpb $3
-  mov $5,0
   mov $1,$2
-  add $1,1
-  lpb $1
-    gcd $5,3
-    mov $6,$1
-    div $6,3
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  sub $0,$5
+  sub $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   add $2,22
   sub $3,$0
 lpe
-add $0,$2
-sub $0,43
+mov $0,$2
+sub $0,44
 div $0,11
 add $0,4
