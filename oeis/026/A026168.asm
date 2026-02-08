@@ -1,18 +1,17 @@
 ; A026168: Numbers k such that A026166(j) < A026166(k) for all j < k.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,2,3,5,6,9,11,12,14,15,18,21,23,24,27,29,30,32,33,36,38,39,41,42,45,48,50,51,54,57,59,60,63,65,66,68,69,72,75,77,78,81,83,84,86,87,90,92,93,95,96,99,102,104,105,108,110,111,113,114
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-trn $0,1
-mov $2,$0
 mov $4,2
-add $0,1
+max $0,1
 lpb $0
   sub $0,1
-  add $6,$5
+  sub $1,1
+  add $2,$5
   sub $3,$4
   div $3,2
   mov $5,$3
@@ -22,7 +21,6 @@ lpb $0
   add $5,2
   div $5,2
 lpe
-mov $0,$6
-add $0,1
-sub $0,$2
+mov $0,$2
 add $0,$1
+add $0,2

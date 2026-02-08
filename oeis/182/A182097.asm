@@ -6,8 +6,7 @@
 mov $4,1
 lpb $0
   rol $2,3
-  add $4,$5
-  mov $5,$3
+  add $4,$2
   sub $0,1
 lpe
 mov $0,$4

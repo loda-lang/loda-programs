@@ -12,10 +12,9 @@ lpb $1
 lpe
 mov $1,$2
 sub $1,1
-mov $5,$0
-equ $5,0
 mov $3,$0
-add $3,$5
-div $1,$3
+equ $3,0
+sub $0,$3
+div $1,$0
 mov $0,$1
 add $0,1

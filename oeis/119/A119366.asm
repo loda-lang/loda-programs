@@ -1,5 +1,5 @@
 ; A119366: Number of rooted planar n-trees whose number of leaves is equal to 1 modulo 3.
-; Submitted by Penguin
+; Submitted by Science United
 ; 0,1,1,1,2,11,51,177,519,1513,5042,18866,71270,257974,905425,3193737,11578842,42930441,159998493,593445318,2194106568,8138471667,30399156174,114219616809,430344635913,1622777285682,6125465491551
 
 mov $3,$0
@@ -18,7 +18,6 @@ lpb $5
   mul $1,$2
   div $1,$0
   add $4,$1
-  sub $5,1
-  trn $5,1
+  trn $5,2
 lpe
 mov $0,$4

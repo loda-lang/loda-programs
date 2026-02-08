@@ -5,5 +5,4 @@
 dif $0,7
 pow $0,$0
 mod $0,7
-trn $0,1
-add $0,1
+max $0,1

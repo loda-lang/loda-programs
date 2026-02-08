@@ -1,10 +1,29 @@
 ; A230202: Primes that end in 999.
 ; Submitted by booc0mtaco
 ; 1999,2999,4999,8999,13999,25999,32999,35999,41999,49999,52999,56999,59999,70999,71999,73999,77999,79999,85999,94999,98999,100999,101999,104999,107999,133999,134999,136999,137999,139999,143999,157999,161999,164999,172999,179999
-; Formula: a(n) = 1000*A105044(n)-1
 
 #offset 1
 
-seq $0,105044 ; Numbers n such that 1000*n - 1 is prime.
-mul $0,1000
+mov $1,-2
+mov $3,$0
 sub $0,1
+add $3,5
+pow $3,3
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $1,1000
+  mov $2,$1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,19
+lpe
+mov $0,$1
+sub $0,1996
+div $0,1000
+mul $0,1000
+add $0,1999

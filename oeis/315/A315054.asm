@@ -1,5 +1,5 @@
 ; A315054: Coordination sequence Gal.4.129.3 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by 10esseeTony
+; Submitted by skildude
 ; 1,5,9,15,20,24,31,32,42,41,52,52,60,63,71,70,84,77,94,89,102,100,112,108,124,116,135,125,145,136,154,146,164,154,176,163,186,173,196,182,207,191,216,202,226,211,238,218,249,228
 
 mov $1,1
@@ -19,11 +19,9 @@ mov $14,63
 mov $15,71
 lpb $0
   sub $0,1
-  mul $1,0
-  mov $16,$1
   mov $1,$2
   mul $2,-1
-  add $16,$2
+  mov $16,$2
   mov $2,$3
   mul $3,-2
   add $16,$3

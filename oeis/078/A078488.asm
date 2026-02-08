@@ -1,13 +1,20 @@
 ; A078488: First differences of coefficients of g.f. (1-x)^24.
+; Submitted by loader3229
 ; -25,300,-2300,12650,-53130,177100,-480700,1081575,-2042975,3268760,-4457400,5200300,-5200300,4457400,-3268760,2042975,-1081575,480700,-177100,53130,-12650,2300,-300,25
-; Formula: a(n) = 5*truncate((binomial(n-26,n)-300)/5)+300
+; Formula: a(n) = b(n-1), b(n) = truncate((b(n-1)*(n-25))/(n+1)), b(1) = 300, b(0) = -25
 
 #offset 1
 
-mov $1,$0
-sub $0,26
-bin $0,$1
-sub $0,300
-div $0,5
-mul $0,5
-add $0,300
+mov $2,-25
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $3,$1
+  sub $3,24
+  mul $2,$3
+  mov $3,$1
+  add $3,2
+  add $1,1
+  div $2,$3
+lpe
+mov $0,$2

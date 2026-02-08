@@ -1,17 +1,36 @@
 ; A090754: Numerator of the expansion of e^(x + x^2 + x^3 + x^4).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by HeatForScience
 ; 1,1,3,13,73,127,2611,19993,55291,1436473,14004451,48366487,1584090553,2599545379,74472090481,2865429498961,2948475507877,178482956754811,7823019065848003,118402856414023933,88402610721571141
 
-mov $2,$0
-lpb $2
-  lpb $0
-    mod $0,1
-  lpe
-  mov $2,120
-lpe
+mov $7,1
 mov $1,$0
-seq $1,193930 ; E.g.f.: exp(x+x^2+x^3+x^4).
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
+lpb $1
+  mul $3,$1
+  add $5,$7
+  sub $1,1
+  mov $4,$3
+  mul $4,$1
+  mov $3,$7
+  add $3,$5
+  add $3,$5
+  mov $5,$7
+  mul $5,2
+  mul $5,$1
+  add $7,$6
+  add $4,$5
+  mov $6,$4
+lpe
+mov $2,1
+fac $2,$0
+mov $0,$2
+gcd $0,$7
+mov $1,$7
 div $1,$0
+add $1,1
 mov $0,$1
+mul $0,3
+div $0,2
+mul $0,6
+sub $0,18
+div $0,9
+add $0,1

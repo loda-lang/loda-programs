@@ -1,5 +1,5 @@
 ; A026312: n-th nonnegative integer k satisfying cos(k) > sin(k+1).
-; Submitted by Cruncher Pete
+; Submitted by Buckey
 ; 0,4,5,6,10,11,12,16,17,18,19,23,24,25,29,30,31,35,36,37,42,43,44,48,49,50,54,55,56,60,61,62,63,67,68,69,73,74,75,79,80,81,86,87,88,92,93,94,98,99,100,104,105,106,107,111,112,113,117
 
 #offset 1
@@ -9,6 +9,7 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  sub $2,1
   mov $3,$1
   mul $3,7
   div $3,22
@@ -20,8 +21,6 @@ lpb $2
   mov $4,$0
   max $4,0
   equ $4,$0
-  mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
-sub $0,6
+sub $0,7

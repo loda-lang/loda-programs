@@ -1,19 +1,55 @@
 ; A037017: Prime pentadecet homolog of {11,13,17,...,61,67}.
-; Submitted by Science United
+; Submitted by axels
 ; 1632373745527558118201,1632373745527558118203,1632373745527558118207,1632373745527558118209,1632373745527558118213,1632373745527558118219,1632373745527558118221,1632373745527558118227,1632373745527558118231,1632373745527558118233,1632373745527558118237,1632373745527558118243,1632373745527558118249,1632373745527558118251,1632373745527558118257
-; Formula: a(n) = A000040(A048675(A181819(28)*A181811(A181819(28)))+n)+1632373745527558118190
 
 #offset 1
 
-sub $0,1
-mov $2,28
-seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-mov $1,$2
-seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
-mul $1,$2
-seq $1,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
-add $1,1
-add $1,$0
-seq $1,40 ; The prime numbers.
-mov $0,$1
+mov $2,1
+mov $3,11
+mov $4,13
+mov $5,17
+mov $6,19
+mov $7,23
+mov $8,29
+mov $9,31
+mov $10,37
+mov $11,41
+mov $12,43
+mov $13,47
+mov $14,53
+mov $15,59
+mov $16,61
+mov $17,67
+mov $19,73
+mov $20,158
+mov $21,83
+mov $22,89
+mov $24,101
+mov $27,25
+mov $28,113
+mov $29,121
+mov $31,131
+mov $32,137
+mov $33,139
+mov $34,6
+mov $36,151
+mov $39,167
+mov $41,173
+mov $42,179
+mov $43,181
+mov $44,187
+mov $45,191
+mov $46,193
+mov $48,199
+mov $49,209
+mov $50,211
+lpb $0
+  sub $34,7
+  mul $2,-1
+  rol $2,49
+  add $50,$2
+  add $50,$49
+  sub $0,1
+lpe
+mov $0,$2
 add $0,1632373745527558118190

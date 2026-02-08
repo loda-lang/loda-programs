@@ -9,8 +9,7 @@ trn $2,3
 add $2,1
 sub $0,3
 lpb $0
-  sub $0,1
-  trn $0,10
+  trn $0,11
   trn $2,10
 lpe
 mov $1,1

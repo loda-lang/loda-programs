@@ -1,7 +1,7 @@
 ; A190762: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),2,1) and [ ]=floor.
 ; Submitted by Science United
 ; 2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,1,2,1,1,2,2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,1,2,1
-; Formula: a(n) = -2*truncate((2*n+sqrtint(2*n^2))/2)+truncate((4*n+sqrtint(2*(2*n+1)^2)+2)/2)-1
+; Formula: a(n) = -2*floor((2*n+sqrtint(2*n^2))/2)+floor((4*n+sqrtint(2*(2*n+1)^2)+2)/2)-1
 
 #offset 1
 

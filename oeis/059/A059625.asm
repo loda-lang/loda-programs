@@ -1,22 +1,22 @@
 ; A059625: Eleventh column (m=10) of convolution triangle A059594.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 1,11,77,407,1793,6875,23661,74503,217789,597311,1549977,3830619,9065485,20635967,45353033,96542523,199597519,401741989,788857795,1513922905,2844244975,5238604085,9471346755
+; Formula: a(n) = b(n-1), a(2) = 77, a(1) = 11, a(0) = 1, b(n) = truncate((b(n-2)*(n+32)+11*b(n-1))/(n+1)), b(2) = 407, b(1) = 77, b(0) = 11
 
-mov $4,4
-add $0,2
+mov $2,1
+mov $3,11
 lpb $0
-  mov $2,$0
-  add $4,4
-  sub $0,2
-  add $2,$4
-  bin $2,$0
-  add $4,$1
-  mov $3,$4
-  add $3,2
-  bin $3,$1
-  mul $3,$2
+  mov $5,$1
+  add $5,33
+  mul $2,$5
+  rol $2,2
+  mov $4,$2
+  mul $4,11
+  mov $5,$1
+  add $5,2
+  add $3,$4
+  div $3,$5
+  sub $0,1
   add $1,1
-  mov $4,4
-  add $5,$3
 lpe
-mov $0,$5
+mov $0,$2

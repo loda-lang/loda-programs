@@ -18,8 +18,7 @@ lpb $2
   mod $3,$5
   mod $3,3
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -1,7 +1,7 @@
 ; A073423: Sums of two powers of zero: triangle read by rows: T(m,n) = 0^n + 0^m, n >= 0, m = 0..n.
 ; Submitted by loader3229
 ; 2,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = (binomial(truncate((sqrtint(8*n)+2)/2),2)==n)+(n==0)
+; Formula: a(n) = (binomial(floor((sqrtint(8*n)+2)/2),2)==n)+(n==0)
 
 mov $1,$0
 mul $1,8

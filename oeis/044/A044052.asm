@@ -9,12 +9,11 @@ mov $0,0
 mov $1,$2
 lpb $2
   add $2,$0
+  trn $2,9
   add $1,$0
   add $3,1
   add $0,2
   gcd $0,$3
-  sub $2,8
-  trn $2,1
 lpe
 mul $1,9
 mov $0,$1

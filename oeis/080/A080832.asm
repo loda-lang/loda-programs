@@ -1,36 +1,27 @@
 ; A080832: Expansion of e.g.f. exp(x) * (sec(exp(x) - 1))^2.
-; Submitted by shiva
+; Submitted by loader3229
 ; 1,1,3,13,67,421,3115,26349,250867,2655541,30929019,393019837,5410699075,80221867909,1274393162827,21594697199757,388796268801427,7411769447027413,149143210226032923,3159088788867736669,70260247362180512995,1637046476694320259877,39876548159926859349739,1013578855822777542548781,26836526948890770124010803,738972757076983352424607861,21131044582198058157461700027,626625081975363007905230080765,19245737171958174127316017972867,611483277009195428290671148296901,20075901566713538481172463792688523
 
-equ $1,0
-mov $20,1
-add $0,$1
 mov $3,$0
-lpb $3
-  add $2,1
+add $3,1
+bin $3,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $6,$2
+  mod $6,2
   mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-lpe
-mov $1,0
-mov $2,0
-mov $3,$0
-lpb $3
+  div $4,2
+  add $4,1
+  seq $4,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+  mul $6,$4
+  sub $4,$6
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  seq $4,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,18
-  sub $3,1
 lpe
 mov $0,$1

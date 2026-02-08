@@ -1,4 +1,4 @@
-; A159297: Number of 3D matrices with positive integer entries such that sum of all entries equals n
+; A159297: Number of 3D matrices with positive integer entries such that sum of all entries equals n.
 ; Submitted by Simon Strandgaard
 ; 1,4,10,25,58,130,286,620,1329,2827,5977,12559,26227,54493,112849,233272,481616,992955,2043238,4194649,8591014,17559133,35833948,73054885,148849186,303171755,617306563,1256452642,2555937826
 

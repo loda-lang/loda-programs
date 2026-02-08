@@ -1,12 +1,12 @@
 ; A116726: Number of permutations of length n which avoid the patterns 213, 1234, 2431.
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 1,2,5,12,26,55,113,227,449,877,1696,3254,6203,11762,22205,41766,78316,146467,273313,509041,946531,1757541,3259480,6038576,11176989,20671462,38204837,70567516,130275854,240394475
+; Formula: a(n) = 2*a(n-1)-a(n-3)-a(n-5)-2*a(n-4)+a(n-2)+1, a(9) = 449, a(8) = 227, a(7) = 113, a(6) = 55, a(5) = 26, a(4) = 12, a(3) = 5, a(2) = 2, a(1) = 1, a(0) = 0
 
 #offset 1
 
 mov $4,1
 mov $5,2
-sub $0,1
 lpb $0
   mul $1,-1
   rol $1,5
@@ -19,4 +19,4 @@ lpb $0
   sub $0,1
   sub $1,1
 lpe
-mov $0,$4
+mov $0,$3

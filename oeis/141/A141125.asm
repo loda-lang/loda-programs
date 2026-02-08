@@ -1,14 +1,13 @@
 ; A141125: Hankel transform of a transform of Fibonacci numbers.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 1,4,-4,-16,16,64,-64,-256,256,1024,-1024,-4096,4096,16384,-16384,-65536,65536,262144,-262144,-1048576,1048576,4194304,-4194304,-16777216,16777216,67108864,-67108864,-268435456,268435456,1073741824,-1073741824,-4294967296,4294967296
-; Formula: a(n) = truncate((binomial(-1,n+3)*(-4)^floor((n+3)/2))/4)
+; Formula: a(n) = -4*a(n-2), a(1) = 4, a(0) = 1
 
-add $0,3
-mov $2,-1
-bin $2,$0
-div $0,2
-mov $1,-4
-pow $1,$0
-mul $1,$2
-mov $0,$1
-div $0,4
+mov $2,1
+mov $3,4
+lpb $0
+  mul $2,-4
+  rol $2,2
+  sub $0,1
+lpe
+mov $0,$2

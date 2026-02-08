@@ -20,13 +20,10 @@ lpb $0
   mul $3,$6
   div $3,$4
   add $5,$3
-  sub $0,1
-  trn $0,1
+  trn $0,2
   add $1,1
   add $4,21
   mul $6,-1
 lpe
 mov $0,$5
-sub $0,2
 div $0,2
-add $0,1

@@ -1,30 +1,20 @@
 ; A094419: Generalized ordered Bell numbers Bo(6,n).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,6,78,1518,39390,1277646,49729758,2258233998,117196187550,6842432930766,443879517004638,31674687990494478,2465744921215207710,207943837884583262286,18885506918597311159518,1837699347783655374914958,190743171535070652261555870,21035482423625416328497024206,2456289417922522904941769506398,302752469160862022121860747943438,39280069280281775061948625365888030,5351137314543677718300464755011848526,763700951899037404484982850989846157278,113947741997384549181234564440743937547918
 
-mov $8,$0
-add $8,1
-bin $8,2
+mov $3,$0
+add $3,1
+bin $3,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $4,$2
-  seq $4,47058 ; a(n) = 6^n * n!.
+  mov $4,6
+  pow $4,$2
   mov $5,$2
-  add $5,$8
-  mov $3,$5
-  mul $3,8
-  nrt $3,2
-  add $3,1
-  div $3,2
-  bin $3,2
+  add $5,$3
   mov $6,$5
-  sub $6,$3
-  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  mov $7,$5
-  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  div $7,$6
-  mov $5,$7
+  seq $6,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  mov $5,$6
   mul $5,$4
   add $1,$5
   add $2,1

@@ -1,5 +1,5 @@
 ; A128601: a(n) = the denominator of the continued fraction [1;floor(n/(n-1)),floor(n/(n-2)),...,floor(n/1)].
-; Submitted by arkiss
+; Submitted by Science United
 ; 1,2,4,13,27,107,197,691,1745,5716,10126,55634,97532,293694,851363,3209923,5516821,25655598,43801187,194256443,522900074,1451913673,2455573078,15955207491,33005125266,89673108924,231135972059
 
 #offset 1
@@ -21,7 +21,6 @@ lpb $2
     mov $1,$5
     add $5,$4
   lpe
-  add $6,$5
+  bin $2,10
 lpe
-mov $0,$6
-sub $0,1
+mov $0,$5

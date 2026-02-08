@@ -1,12 +1,16 @@
 ; A141212: a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0
-; Formula: a(n) = -2*truncate(truncate((377*bitxor(n-1,1))/3)/2)+truncate((377*bitxor(n-1,1))/3)
+; Formula: a(n) = a(n-6), a(8) = 0, a(7) = 1, a(6) = 0, a(5) = 0, a(4) = 1, a(3) = 1, a(2) = 0, a(1) = 1
 
 #offset 1
 
+mov $2,1
+mov $4,1
+mov $5,1
 sub $0,1
-bxo $0,1
-mul $0,377
-div $0,3
-mod $0,2
+lpb $0
+  rol $2,6
+  sub $0,1
+lpe
+mov $0,$2

@@ -11,14 +11,12 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $1,10
   pow $1,$0
   mov $0,$1
-  nrt $0,2
   sub $0,1
-  nrt $0,2
+  nrt $0,4
   add $0,1
   mov $2,$3
   mul $2,$0

@@ -1,11 +1,9 @@
 ; A008711: 14 in base 14-n.
-; Submitted by loader3229
+; Submitted by Buckey
 ; 10,11,12,13,14,15,16,20,22,24,32,112,1110,11111111111111
 
-sub $0,4
-mov $2,10
+mov $2,14
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

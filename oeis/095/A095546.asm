@@ -1,5 +1,5 @@
 ; A095546: a(n) = 77 written in base n.
-; Submitted by Matthias Lehmkuhl
+; Submitted by HeatForScience
 ; 11111111111111111111111111111111111111111111111111111111111111111111111111111,1001101,2212,1031,302,205,140,115,85,77,70,65
 
 #offset 1
@@ -11,8 +11,7 @@ mov $5,$0
 equ $5,1
 mov $0,0
 neq $1,0
-mul $1,20
-add $1,57
+add $1,76
 lpb $1
   mov $4,$1
   mod $4,$2

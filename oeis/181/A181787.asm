@@ -1,17 +1,13 @@
 ; A181787: Number of solutions to n^2 = a^2 + b^2 + c^2 with positive a, b, c.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 0,0,0,3,0,0,3,6,0,12,0,9,3,6,6,15,0,9,12,15,0,33,9,18,3,12,6,39,6,18,15,24,0,48,9,30,12,24,15,45,0,27,33,33,9,60,18,36,3,48,12,60,6,36,39,45,6,78,18,45,15,42,24,114,0,36,48,51,9,93,30,54,12,51,24,87,15,87,45,60
 
+dif $0,2
 pow $0,2
-lpb $0
-  add $3,1
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
-  mov $3,2
-  add $3,$4
-  add $1,$2
-  add $4,2
-lpe
-mov $0,$1
+mov $1,$0
+seq $1,63691 ; Number of solutions to x^2 + y^2 + z^2 = n in positive integers.
+mul $1,2
+add $2,$1
+add $3,$2
+mov $0,$3
+div $0,2

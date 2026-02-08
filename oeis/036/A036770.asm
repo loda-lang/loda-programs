@@ -1,19 +1,15 @@
 ; A036770: Number of labeled rooted trees with a degree constraint: (2*n)!/(2^n) * C(2*n+1, n).
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 1,3,60,3150,317520,52390800,12843230400,4382752374000,1986847742880000,1155153277710432000,838011196011749760000,742058914068404412480000,787724078011075453248000000,987468397792455300321600000000,1443283810213452666950050560000000
-; Formula: a(n) = truncate(b(n)/(n+1)), b(n) = 2*b(n-1)*(2*n-1)*(2*n+1), b(1) = 6, b(0) = 1
 
-mov $1,$0
-add $1,1
+mul $0,2
+add $0,1
 mov $2,1
-mov $3,$0
-mov $0,1
-lpb $3
-  sub $3,1
-  mul $2,2
+mov $1,$0
+lpb $1
+  sub $1,2
+  mul $2,$1
   mul $2,$0
-  add $0,2
-  mul $2,$0
+  sub $0,1
 lpe
 mov $0,$2
-div $0,$1

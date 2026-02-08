@@ -1,19 +1,18 @@
 ; A101630: Denominator of partial sums of a certain series.
-; Submitted by Jon Maiga
+; Submitted by Icecold
 ; 1,42,6006,204204,3879876,446185740,38818159380,2406725881560,89048857617720,3651003162326520,156993135980040360,51650741737433278440,2737489312083963757320,2737489312083963757320
 
 #offset 1
 
-mov $2,1
-mov $3,2
+mov $2,10
 mul $0,4
+add $0,2
 lpb $0
-  sub $0,1
-  gcd $1,$3
-  dif $2,$1
   mov $1,$2
-  mul $2,$3
-  add $3,1
+  gcd $1,$0
+  mul $2,$0
+  div $2,$1
+  sub $0,1
 lpe
 mov $0,$2
 div $0,60
