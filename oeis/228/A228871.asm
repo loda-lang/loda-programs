@@ -1,14 +1,14 @@
 ; A228871: Odd numbers producing 3 out-of-order odd numbers in the Collatz (3x+1) iteration.
-; Submitted by Science United
+; Submitted by Paul Javonillo
 ; 3,227,14563,932067,59652323,3817748707,244335917283,15637498706147,1000799917193443,64051194700380387,4099276460824344803,262353693492758067427,16790636383536516315363,1074600728546337044183267,68774446626965570827729123
-; Formula: a(n) = 224*floor((64^(n-1))/63)+3
+; Formula: a(n) = floor((8^(2*n)-64)/18)+3
 
 #offset 1
 
-sub $0,1
-mov $1,64
+mul $0,2
+mov $1,8
 pow $1,$0
 mov $0,$1
-div $0,63
-mul $0,224
+sub $0,64
+div $0,18
 add $0,3

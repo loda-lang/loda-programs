@@ -10,10 +10,12 @@ lpb $0
   sub $0,1
   mov $6,$2
   mod $6,2
-  mov $10,$2
-  seq $10,122045 ; Euler (or secant) numbers E(n).
   mov $4,$2
+  min $4,27
+  mov $10,$4
+  seq $10,122045 ; Euler (or secant) numbers E(n).
   seq $4,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  mul $4,2
   gcd $4,$10
   mul $6,$4
   sub $4,$6

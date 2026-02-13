@@ -1,30 +1,40 @@
 ; A346079: G.f. A(x) satisfies: A(x) = x - x^2 * A(x/(1 - x)) / (1 - x).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,0,-1,-2,-2,2,17,54,109,54,-796,-5000,-19499,-52252,-44617,577554,5071906,27330978,108557573,263947354,-453137963,-11252508862,-92193933208,-545809325184,-2441788385255,-6271647457176,22814756330975,492197181810550,4609129908957190
 
-mov $2,1
-add $2,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
+  mov $6,$2
+  mod $6,2
+  mul $6,2
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $11,1
-    sub $6,$7
-    mov $7,$0
-    sub $7,1
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-  lpe
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  sub $4,1
+  seq $4,58797 ; a(n) = n*a(n-1) - a(n-2), with a(-1) = 0, a(0) = 1.
+  mul $6,$4
+  sub $4,$6
+  mov $5,$2
+  add $5,$9
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  mov $8,$5
+  sub $8,$7
+  mov $3,1
+  fac $3,$8
+  mov $10,$5
+  seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $10,$3
+  mov $5,$10
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$7
+mov $0,$1
+mul $0,-1

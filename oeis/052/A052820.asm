@@ -1,34 +1,36 @@
 ; A052820: Expansion of e.g.f. 1/(1 - x + log(1 - x)).
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by loader3229
 ; 1,2,9,62,572,6604,91526,1480044,27353448,568731648,13138994112,333895239072,9256507508112,278000959058016,8991458660924112,311585506208924064,11517363473843526912,452332548042633835776,18809887136483116847232,825649337250681295954176,38148852438971184434943744,1850787762780612435618862080,94066534900775340140847759360,4998259827678883614638311065600,277131515362527560786699418915840,16005961627821796346770222329108480,961415159111015829566939476757314560,59969520446064587988095918193708165120
 
-mov $2,1
-add $2,1
-mov $3,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
 lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mul $6,$4
-    mov $9,10
-    add $9,$5
-    mov $11,1
-    sub $4,1
-    mov $7,2
-    div $7,2
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-    add $6,$7
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,305306 ; Expansion of e.g.f. 1/(1 + log(1 - x)/(1 - x)).
+    mov $4,$7
+    add $4,$3
+    seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  add $6,$7
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  mov $5,$2
+  add $5,$9
+  seq $5,8290 ; Triangle T(n,k) of rencontres numbers (number of permutations of n elements with k fixed points).
+  mul $5,$8
+  sub $0,1
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

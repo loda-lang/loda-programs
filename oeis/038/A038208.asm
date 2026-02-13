@@ -1,21 +1,19 @@
 ; A038208: Triangle whose (i,j)-th entry is binomial(i,j)*2^i.
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 1,2,2,4,8,4,8,24,24,8,16,64,96,64,16,32,160,320,320,160,32,64,384,960,1280,960,384,64,128,896,2688,4480,4480,2688,896,128,256,2048,7168,14336,17920,14336,7168,2048,256,512,4608,18432,43008,64512,64512,43008,18432,4608,512,1024,10240,46080,122880,215040,258048,215040,122880,46080,10240,1024,2048,22528,112640,337920,675840,946176,946176,675840,337920,112640,22528,2048,4096,49152
-; Formula: a(n) = truncate(2^truncate((sqrtint(8*n+8)-1)/2))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*if(truncate((sqrtint(8*n+8)-1)/2)<=(-1),0,2^truncate((sqrtint(8*n+8)-1)/2))
 
+mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
+mul $0,8
+nrt $0,2
 sub $0,1
-mov $2,$1
-bin $1,$0
-mov $0,2
-pow $0,$2
-mul $0,$1
+div $0,2
+mov $1,$0
+add $1,1
+bin $1,2
+sub $2,$1
+mov $3,2
+pow $3,$0
+bin $0,$2
+mul $0,$3

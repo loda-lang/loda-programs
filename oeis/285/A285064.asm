@@ -1,36 +1,21 @@
 ; A285064: Row sums of Sheffer triangle S2[4,1] = A285061.
-; Submitted by Fortuna
+; Submitted by loader3229
 ; 1,5,41,429,5329,75989,1215481,21453693,412820385,8579772325,191166679497,4538638641997,114238219541617,3035305413035125,84819458105387417,2484842038066995485,76101249873390595905,2430497813260105226053,80769536433102942870377,2787318255464814752951533
 
-mov $2,1
-mov $3,1
+mov $3,$0
+add $3,1
+bin $3,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $3,$1
   mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    add $7,$6
-    mul $3,4
-    div $6,-1
-    add $6,$7
-    mov $9,10
-    add $9,$5
-    pow $10,$3
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    sub $7,1
-    bin $7,$0
-    mul $7,$$9
-    sub $3,$7
-    add $5,1
-  lpe
-  mul $3,-1
-  add $3,$6
-  mov $5,0
-  mov $$9,$3
+  seq $4,202824 ; Expansion of e.g.f.: exp( (1+x)^4 - 1 ).
+  mov $5,$2
+  add $5,$3
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

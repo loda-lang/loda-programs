@@ -1,22 +1,19 @@
 ; A213480: Number of (w,x,y) with all terms in {0,...,n} and |w-x| + |x-y| != w+x+y.
 ; Submitted by loader3229
 ; 0,4,16,46,95,175,285,439,634,886,1190,1564,2001,2521,3115,3805,4580,5464,6444,7546,8755,10099,11561,13171,14910,16810,18850,21064,23429,25981,28695,31609,34696,37996,41480,45190,49095,53239,57589
-; Formula: a(n) = (floor(n/2)*(12*floor(n/2)+14)+4)*(n%2)+floor((floor(n/2)*(floor(n/2)*(16*floor(n/2)+15)+1))/2)
+; Formula: a(n) = n*(n+1)^2-binomial(floor(n/2)+1,2)-floor(n/2)
 
 mov $2,$0
-mod $2,2
+add $0,1
+mul $2,$0
+mul $2,$0
+sub $0,1
 div $0,2
 mov $1,$0
+add $1,1
+bin $1,2
+sub $2,$1
 mov $3,$0
-mul $0,16
-add $0,15
-mul $0,$1
-add $0,1
-mul $0,$1
-div $0,2
-mul $3,12
-add $3,14
-mul $3,$1
-add $3,4
-mul $2,$3
-add $0,$2
+sub $3,$2
+mul $3,-1
+mov $0,$3

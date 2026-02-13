@@ -4,14 +4,11 @@
 
 #offset 1
 
+mov $1,1
 sub $0,1
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
+  gcd $0,0
 lpe
-add $1,2
-sub $2,$0
-min $0,$2
 add $0,$1
-sub $0,1

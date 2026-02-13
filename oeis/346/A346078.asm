@@ -1,32 +1,39 @@
 ; A346078: G.f. A(x) satisfies: A(x) = 1 + x - x^2 * A(x/(1 - x)) / (1 - x).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,-1,-2,-2,1,11,33,61,22,-418,-2363,-8375,-19715,-6325,263490,1950298,9423505,33042827,59212141,-283826231,-3970508822,-28167479326,-148668438363,-571280079455,-848399025239,11052089847863,148600718966518,1198795581209734
 
-mov $2,1
-add $2,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
+  mov $6,$2
+  mod $6,2
+  mul $6,2
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $11,1
-    sub $6,$7
-    mov $7,$0
-    sub $7,1
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-  lpe
-  add $6,$7
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,74189 ; a(1) = 1, a(2) = 2; for n > 2, a(n) = {a(n-1) +a(n+1)}/n or a(n+1) = n*a(n)-a(n-1).
+  mul $6,$4
+  sub $4,$6
+  mov $5,$2
+  add $5,$9
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  mov $8,$5
+  sub $8,$7
+  mov $3,1
+  fac $3,$8
+  mov $10,$5
+  seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $10,$3
+  mov $5,$10
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-pow $3,$11
-mov $0,$3
+mov $0,$1
+mul $0,-1

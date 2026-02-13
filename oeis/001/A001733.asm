@@ -1,10 +1,9 @@
 ; A001733: 7 in base 10-n.
-; Submitted by loader3229
+; Submitted by Science United
 ; 7,7,7,10,11,12,13,21,111,1111111
 
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

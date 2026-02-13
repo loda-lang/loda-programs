@@ -4,29 +4,26 @@
 
 #offset 1
 
-mov $3,2
+mov $2,$0
+mov $6,1
 lpb $0
   sub $0,1
   mov $4,$2
   lpb $4
     sub $4,1
     sub $4,$0
-    pow $7,$1
-    sub $7,2
+    mul $7,$11
+    equ $7,$8
     mov $9,10
     add $9,$5
     mul $7,$$9
     mov $5,$4
     add $6,$7
   lpe
-  sub $6,$3
-  div $6,-1
   mov $9,10
   add $9,$2
   mov $3,$6
-  mul $6,$1
   mov $$9,$3
   add $2,1
 lpe
-mov $0,$3
-div $0,2
+mov $0,$6

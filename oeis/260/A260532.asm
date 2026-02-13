@@ -1,34 +1,37 @@
 ; A260532: Coefficients in asymptotic expansion of sequence A051295.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,7,31,165,1025,7310,59284,543702,5618267,65200918,846462826,12229783811,195394019337,3427472046792,65526442181293,1355785469986828,30166624979467869,717769036033944699,18174105506247664633,487655384740384445407,13816406622559942660420,412036489971423190454920,12898510641404378344978024,422814015533597950716311085,14481754253078234683031445456,517255863120666392304523241288,19232335354646977085211893364477,743187716303827755243370817344751,29803049178636535955483999100290412
 
-mov $20,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,134378 ; A084938 * [1,2,3,...], where A084938 is taken as lower triangular matrix.
+    mov $4,$7
+    add $4,$3
+    add $4,1
+    seq $4,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
+  mov $5,$2
+  add $5,$9
+  seq $5,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
   add $2,1
-  mov $4,$2
-  seq $4,134378 ; A084938 * [1,2,3,...], where A084938 is taken as lower triangular matrix.
-  add $2,19
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
-equ $0,0
-add $0,$1
+mov $0,$1
