@@ -1,0 +1,51 @@
+; A371880: Smallest number reachable starting from 1 and taking n steps either doubling or doubling+reversing.
+; Submitted by loader3229
+; 1,2,4,8,16,23,46,29,58,71,34,68,37,47,49,89,79,59,19,38,67,35,7,14,28,56,13,26,25,5,1,2,4,8,16,23,46,29,58,17,34,68,37,47,49,89,79,59,19,38,67,35,7,14,28,56,13,26,25,5,1,2,4,8,16,23,46,29,58,17,34,68,37,47,49,89,79,59,19,38
+
+mov $1,1
+mov $2,2
+mov $3,4
+mov $4,8
+mov $5,16
+mov $6,23
+mov $7,46
+mov $8,29
+mov $9,58
+mov $10,71
+mov $11,34
+mov $12,68
+mov $13,37
+mov $14,47
+mov $15,49
+mov $16,89
+mov $17,79
+mov $18,59
+mov $19,19
+mov $20,38
+mov $21,67
+mov $22,35
+mov $23,7
+mov $24,14
+mov $25,28
+mov $26,56
+mov $27,13
+mov $28,26
+mov $29,25
+mov $30,5
+mov $31,1
+mov $32,2
+mov $33,4
+mov $34,8
+mov $35,16
+mov $36,23
+mov $37,46
+mov $38,29
+mov $39,58
+mov $40,17
+lpb $0
+  mov $1,0
+  rol $1,40
+  add $40,$10
+  sub $0,1
+lpe
+mov $0,$1
