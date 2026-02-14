@@ -1,20 +1,35 @@
 ; A383203: Expansion of e.g.f. f(x) * exp(f(x)), where f(x) = (exp(2*x) - 1)/2.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 0,1,4,19,104,641,4380,32803,266768,2337505,21925236,218946003,2316939256,25878593313,304020964876,3745210267939,48248600421664,648460085178689,9072650530778084,131884007007981075,1988341404357799048,31040812899065995073,501049583881525932028
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,4211 ; Shifts one place left under 2nd-order binomial transform.
-  mov $2,$3
-  mul $2,$0
-  mul $4,$3
-  add $1,$2
-  mov $5,$0
+mov $9,$0
+add $0,1
+lpb $0
+  mov $5,0
+  mov $7,1
+  mov $4,$2
+  add $4,1
+  lpb $4
+    sub $4,1
+    mov $6,$2
+    bin $6,$4
+    mov $10,$4
+    mul $10,2
+    pow $10,$9
+    mul $10,$6
+    mul $10,$7
+    add $5,$10
+    mul $7,-1
+  lpe
+  mov $3,2
+  pow $3,$2
+  mov $8,1
+  fac $8,$2
+  div $5,$3
+  div $5,$8
+  mul $5,$2
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
-sub $1,$5
 mov $0,$1
-div $0,2

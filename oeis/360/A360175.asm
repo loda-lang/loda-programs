@@ -1,33 +1,34 @@
 ; A360175: a(n) = Sum_{k=0..n} (-1)^(n-k)*(n!/k!) * [x^n] (1 - exp(-LambertW(x*exp(-x))))^k.
-; Submitted by Just Jake
+; Submitted by loader3229
 ; 1,1,6,53,647,10092,191915,4309769,111682044,3281731611,107860953795,3921762633846,156322429050397,6779458454252941,317841794915501862,16020304439710056785,863955306007083830051,49641711131738762890764,3027776406780183894833791,195382900651186641677702197
 
-mov $2,1
+mov $8,$0
+add $8,1
+bin $8,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
-  max $6,1
   mov $4,$2
-  lpb $4
-    mov $8,$4
-    seq $8,273954 ; E.g.f. satisfies: A(x) = Sum_{n>=0} x^n/n! * exp(n*x) * A(x)^n.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    mul $7,$8
-    add $5,1
-    add $6,$7
-  lpe
-  sub $6,$3
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,124824 ; LambertW analog of the Bell numbers: a(n) = (1/e)*Sum_{k>=0} k*(n+k)^(n-1)/k! for n > 0 with a(0)=1.
+  mov $5,$2
+  add $5,$8
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $3,$7
+  add $3,1
+  bin $3,2
+  sub $5,$3
+  mov $6,$7
+  sub $6,$5
+  bin $7,$5
+  pow $5,$6
+  mul $7,$5
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

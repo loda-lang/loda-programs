@@ -16,6 +16,7 @@ if [ ! -f counts.dat ]; then
     date=${date/ +0100/}
     count=$(git ls-tree --name-only -r $commit | grep ".*oeis/.*" | wc -l)
     echo $date,$count >> counts.dat
+    echo $date
   done
 fi
 

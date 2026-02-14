@@ -1,24 +1,15 @@
 ; A125997: A106486-encodings of combinatorial games equivalent to game {0|1}.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 9,25,73,89,521,537,585,601,2057,2073,2121,2137,2569,2585,2633,2649,4105,4121,4169,4185,4617,4633,4681,4697,6153,6169,6217,6233,6665,6681,6729,6745,8201,8217,8265,8281,8713,8729,8777,8793,10249,10265
+; Formula: a(n) = 8*b(n)-1439, b(n) = bitor(b(n-1)+1,181), b(0) = 0
 
 #offset 1
 
-mov $1,1
-mov $2,17
-mov $3,65
-mov $4,81
-mov $5,513
-mov $6,529
-mov $7,577
-mov $8,593
-mov $9,2049
 lpb $0
-  mul $1,-1
-  rol $1,9
-  add $9,$1
-  add $9,$8
   sub $0,1
+  add $1,1
+  bor $1,181
 lpe
-mov $0,$8
-sub $0,2040
+mov $0,$1
+mul $0,8
+sub $0,1439

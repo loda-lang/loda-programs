@@ -8,10 +8,9 @@ mov $3,1
 mov $5,8
 mov $8,26
 lpb $0
-  mov $2,0
   rol $2,7
   max $3,1
-  add $8,$2
+  mov $8,$2
   sub $0,1
 lpe
 mov $0,$2
