@@ -8,12 +8,12 @@ lpe
 mov $0,$1
 
 ; parameter 0
-; number of unique values: 2
-; value: 1,2
+; number of unique values: 3
+; value: 1,2,3
 
 ; parameter 1
-; number of unique values: 2
-; value: 1,2
+; number of unique values: 3
+; value: 1,2,3
 
 ; parameter 2
 ; number of unique values: 14
@@ -24,5 +24,5 @@ mov $0,$1
 ; value: 1,2,3
 
 ; programs with this pattern
-; number of programs: 15
-; program id: 36459,49865,64918,65373,65770,72086,182850,256993,257248,279345,288636,330786,333262,333870,364334
+; number of programs: 16
+; program id: 36459,49865,64918,65373,65770,72086,182850,256993,257248,276770,279345,288636,330786,333262,333870,364334

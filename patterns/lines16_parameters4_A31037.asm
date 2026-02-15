@@ -16,12 +16,12 @@ lpe
 mov $0,$1
 
 ; parameter 0
-; number of unique values: 6
-; value: 74,75,117,161,162,629
+; number of unique values: 5
+; value: 74,75,117,161,629
 
 ; parameter 1
-; number of unique values: 7
-; value: 31087,43555,43556,54054,54634,160380,160382
+; number of unique values: 6
+; value: 31087,43555,43556,54054,54634,160382
 
 ; parameter 2
 ; number of unique values: 3
@@ -32,5 +32,5 @@ mov $0,$1
 ; value: 1,3
 
 ; programs with this pattern
-; number of programs: 17
-; program id: 31037,31089,43333,43594,43776,43784,43789,43825,43831,43835,43840,43846,43853,43861,43870,45091,284065
+; number of programs: 16
+; program id: 31037,31089,43594,43776,43784,43789,43825,43831,43835,43840,43846,43853,43861,43870,45091,284065

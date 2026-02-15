@@ -1,0 +1,26 @@
+add $0,1
+lpb $0
+  mov $2,$0
+  trn $2,1
+  seq $2,8636 ; source=parameter 0
+  sub $0,11 ; source=parameter 1
+  trn $0,10 ; source=parameter 2
+  add $1,$2
+lpe
+mov $0,$1
+
+; parameter 0
+; number of unique values: 17
+; value: 8636,8682,25773,25782,25787,25789,25792,25803,25830,25836,25852,25857,25898,25925,168201,266778,288000
+
+; parameter 1
+; number of unique values: 6
+; value: 1,2,3,4,10,11
+
+; parameter 2
+; number of unique values: 4
+; value: 7,8,9,10
+
+; programs with this pattern
+; number of programs: 22
+; program id: 8630,25915,25917,29074,29108,29122,29124,29128,29132,29183,29263,29283,29284,29285,29317,29323,29330,29331,29418,29446,266779,288001
