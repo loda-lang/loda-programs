@@ -14,21 +14,21 @@ div $0,6 ; source=parameter 3
 add $0,$1
 
 ; parameter 0
-; number of unique values: 3
-; value: 1,2,3
+; number of unique values: 2
+; value: 1,2
 
 ; parameter 1
-; number of unique values: 7
-; value: 7,8,9,10,12,14,15
+; number of unique values: 8
+; value: 3,7,8,9,10,12,14,15
 
 ; parameter 2
 ; number of unique values: 6
 ; value: 2,3,6,7,8,9
 
 ; parameter 3
-; number of unique values: 7
-; value: 6,7,8,9,11,13,14
+; number of unique values: 8
+; value: 2,6,7,8,9,11,13,14
 
 ; programs with this pattern
-; number of programs: 16
-; program id: 32819,32821,32822,32827,32915,32917,32919,32921,32922,89591,213084,276039,284294,284632,284922,284964
+; number of programs: 15
+; program id: 32819,32821,32822,32827,32915,32917,32919,32921,32922,89591,137951,213084,276039,284294,284922

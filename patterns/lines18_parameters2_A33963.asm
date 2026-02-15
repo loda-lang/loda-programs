@@ -22,9 +22,9 @@ lpe
 ; value: 1,3
 
 ; parameter 1
-; number of unique values: 13
-; value: 7,9,11,13,19,21,23,35,41,43,45,47,49
+; number of unique values: 12
+; value: 7,11,13,19,21,23,35,41,43,45,47,49
 
 ; programs with this pattern
-; number of programs: 16
-; program id: 33963,33964,33973,33976,33978,33980,37101,37102,37104,37107,37108,37109,37118,37119,37121,37122
+; number of programs: 15
+; program id: 33963,33964,33973,33976,33978,33980,37101,37104,37107,37108,37109,37118,37119,37121,37122
