@@ -1,0 +1,72 @@
+; A055643: Babylonian numbers: integers in base 60 with each sexagesimal digit represented by 2 decimal digits, leading zeros omitted.
+; Submitted by loader3229
+; 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119
+
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,4
+mov $6,5
+mov $7,6
+mov $8,7
+mov $9,8
+mov $10,9
+mov $11,10
+mov $12,11
+mov $13,12
+mov $14,13
+mov $15,14
+mov $16,15
+mov $17,16
+mov $18,17
+mov $19,18
+mov $20,19
+mov $21,20
+mov $22,21
+mov $23,22
+mov $24,23
+mov $25,24
+mov $26,25
+mov $27,26
+mov $28,27
+mov $29,28
+mov $30,29
+mov $31,30
+mov $32,31
+mov $33,32
+mov $34,33
+mov $35,34
+mov $36,35
+mov $37,36
+mov $38,37
+mov $39,38
+mov $40,39
+mov $41,40
+mov $42,41
+mov $43,42
+mov $44,43
+mov $45,44
+mov $46,45
+mov $47,46
+mov $48,47
+mov $49,48
+mov $50,49
+mov $51,50
+mov $52,51
+mov $53,52
+mov $54,53
+mov $55,54
+mov $56,55
+mov $57,56
+mov $58,57
+mov $59,58
+mov $60,59
+mov $61,100
+lpb $0
+  mul $1,-1
+  rol $1,61
+  add $61,$1
+  add $61,$60
+  sub $0,1
+lpe
+mov $0,$1
