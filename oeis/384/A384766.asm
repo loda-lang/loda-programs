@@ -1,0 +1,52 @@
+; A384766: Instruction-Limited Symbols Busy Beaver Sequence: Sigma_i(n). Maximum number of non-blank symbols that an n-instruction Turing machine (allowing any number of states and symbols) can leave on an initially blank tape before eventually halting.
+; Submitted by Goldislops
+; 0,1,2,4,5,9,14,2050
+
+mov $1,4
+mov $2,12
+mov $3,20
+mov $4,28
+mov $6,33
+mov $7,34
+mov $8,35
+mov $9,37
+mov $10,38
+mov $11,39
+mov $12,44
+mov $13,52
+mov $14,60
+lpb $0
+  mul $1,-1
+  rol $1,14
+  add $10,3
+  div $13,2
+  add $14,$1
+  add $14,$1
+  sub $14,$2
+  sub $14,$2
+  add $14,$3
+  sub $14,$4
+  sub $14,$4
+  add $14,$5
+  add $14,$5
+  sub $14,$6
+  sub $14,$6
+  add $14,$7
+  add $14,$7
+  sub $14,$8
+  sub $14,$8
+  add $14,$9
+  sub $0,1
+  mul $12,$14
+  add $14,$9
+  sub $14,$10
+  sub $14,$10
+  add $14,$11
+  add $14,$11
+  sub $14,$12
+  sub $14,$12
+  add $14,$13
+  add $14,$13
+lpe
+mov $0,$6
+sub $0,33
