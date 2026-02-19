@@ -1,0 +1,40 @@
+; A097762: Number of different partitions of the set {1, 2, ..., n} into an odd number of blocks such that each block contains at least 2 elements.
+; Submitted by loader3229
+; 0,1,1,1,1,16,106,491,1919,7771,40261,264892,1871728,12988977,88413417,612354549,4492798353,35529920764,299329573882,2625719242667,23612697535919,216981233646783,2047084700918445,19952633715109592,201518546878458752,2105942901645343281,22679872910619797601,250720257851127087961,2838727999849706392657,32903588382488035958536,390611437223419668772426,4751152082638116424814683,59197743066928486583690767,754899717541770836384002163,9841270811881517193900493253,131018216504433274023059255956
+
+#offset 1
+
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $6,$2
+  mod $6,2
+  mul $6,2
+  mov $4,$2
+  seq $4,216779 ; Number of derangements on n elements with an odd number of cycles.
+  mul $6,$4
+  sub $4,$6
+  mov $5,$2
+  add $5,$9
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  mov $8,$5
+  sub $8,$7
+  mov $3,1
+  fac $3,$8
+  mov $10,$5
+  seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $10,$3
+  mov $5,$10
+  mul $5,$4
+  add $1,$5
+  add $2,1
+lpe
+mov $0,$1
