@@ -1,0 +1,34 @@
+mov $2,$0
+sub $0,1
+add $2,1 ; source=parameter 0
+pow $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  add $3,1
+  seq $3,40
+  mov $5,$3
+  seq $3,7095 ; source=parameter 1
+  mul $3,2
+  seq $3,1222
+  equ $3,2
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+lpe
+mov $0,$5
+
+; parameter 0
+; number of unique values: 2
+; value: 1,10
+
+; parameter 1
+; number of unique values: 22
+; value: 6577,7095,22852,29931,30102,30104,30105,30108,33042,37463,37465,37470,37477,54055,55120,55565,65361,68527,92569,171885,203580,333884
+
+; programs with this pattern
+; number of programs: 22
+; program id: 65727,74833,75235,75236,75239,89740,92570,116968,146315,146318,155777,176112,231480,235475,235481,235625,235636,262829,262833,281551,307452,372885

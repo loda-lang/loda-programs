@@ -12,21 +12,21 @@ add $0,$1
 ; value: -1,2
 
 ; parameter 1
-; number of unique values: 14
-; value: 6,16,17,18,19,22,23,24,25,26,27,28,29,30
+; number of unique values: 15
+; value: 6,16,17,18,19,20,22,23,24,25,26,27,28,29,30
 
 ; parameter 2
-; number of unique values: 14
-; value: 4,18,19,20,21,24,25,26,27,28,29,30,31,32
+; number of unique values: 15
+; value: 4,18,19,20,21,22,24,25,26,27,28,29,30,31,32
 
 ; parameter 3
 ; number of unique values: 2
 ; value: 0,1
 
 ; parameter 4
-; number of unique values: 14
-; value: -31,-30,-29,-28,-27,-26,-25,-24,-23,-20,-19,-18,-17,-10
+; number of unique values: 15
+; value: -31,-30,-29,-28,-27,-26,-25,-24,-23,-21,-20,-19,-18,-17,-10
 
 ; programs with this pattern
-; number of programs: 15
-; program id: 40288,40323,40360,40399,40528,40575,40624,40675,40728,40783,40840,40884,40899,40960,91307
+; number of programs: 16
+; program id: 40288,40323,40360,40399,40440,40528,40575,40624,40675,40728,40783,40840,40884,40899,40960,91307
