@@ -1,25 +1,22 @@
 ; A078737: Denominators of convergents to sqrt(e).
-; Submitted by skildude
+; Submitted by Technik007[CZ]
 ; 1,1,2,3,17,20,37,353,390,743,10049,10792,20841,365089,385930,751019,16157329,16908348,33065677,843550273,876615950,1720166223,50761436417,52481602640,103243039057,3459501891521,3562744930578,7022246822099
-; Formula: a(n) = b(n-1), a(2) = 1, a(1) = 1, a(0) = 0, b(n) = b(n-1)*(4*truncate(gcd(-3*truncate(n/3)+n-1,n)/3)+1)+b(n-2), b(2) = 2, b(1) = 1, b(0) = 1
 
 #offset 1
 
 mov $1,1
-mov $3,1
 lpb $0
   sub $0,1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
+  mov $4,$0
+  ror $0,4
+  mov $0,$4
   mod $1,3
   sub $1,1
-  gcd $1,$3
+  gcd $1,$4
   div $1,3
   mul $1,4
   add $1,1
   mul $1,$2
-  add $1,$4
-  add $3,1
+  add $1,$3
 lpe
 mov $0,$2

@@ -1,6 +1,7 @@
 ; A103990: Reduced numerators of the hypercube line-picking integrand sqrt(Pi)*I(n,0).
 ; Submitted by Jamie Morken(w2)
 ; 2,6,50,38,74,386,206,310,1334,614,822,3218,1370,1718,6362,2582,3106,11090,4358,5094
+; Formula: a(n) = 2*if((((n-1)*((n-1)*(n+1)+3)+3)%3)==0,((n-1)*((n-1)*(n+1)+3)+3)/3,(n-1)*((n-1)*(n+1)+3)+3)
 
 #offset 1
 

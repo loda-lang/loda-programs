@@ -1,5 +1,5 @@
 ; A095432: a(n) = 17 written in base n.
-; Submitted by Just Jake
+; Submitted by Science United
 ; 11111111111111111,10001,122,101,32,25,23,21,18,17,16,15,14,13,12,11,10
 
 #offset 1
@@ -9,10 +9,9 @@ mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $0,1
+mov $0,0
 neq $1,0
-mul $1,16
-add $1,1
+add $1,16
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -23,4 +22,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-sub $0,1

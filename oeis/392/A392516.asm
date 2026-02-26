@@ -1,5 +1,5 @@
 ; A392516: Number of graceful Prüfer codes on n vertices with n-2 in the last position of the code.
-; Submitted by gingavasalata
+; Submitted by Science United
 ; 0,0,0,0,0,1,4,23,146,938
 
 #offset 3
@@ -15,9 +15,6 @@ lpb $0
   add $10,$11
   mov $11,$4
   mul $11,2934
-  add $10,$11
-  mov $11,$5
-  mul $11,5306
   add $10,$11
   mov $11,$6
   mul $11,3596

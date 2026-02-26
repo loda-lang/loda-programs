@@ -1,21 +1,19 @@
 ; A078615: a(n) = rad(n)^2, where rad is the squarefree kernel of n (A007947).
-; Submitted by Science United
+; Submitted by Goldislops
 ; 1,4,9,4,25,36,49,4,9,100,121,36,169,196,225,4,289,36,361,100,441,484,529,36,25,676,9,196,841,900,961,4,1089,1156,1225,36,1369,1444,1521,100,1681,1764,1849,484,225,2116,2209,36,49,100,2601,676,2809,36,3025,196,3249,3364,3481,900,3721,3844,441,4,4225,4356,4489,1156,4761,4900,5041,36,5329,5476,225,1444,5929,6084,6241,100
+; Formula: a(n) = gcd(truncate((n-1)/A003557(n))+n+1,n)^2
 
 #offset 1
 
+mov $2,$0
+mov $4,$0
+seq $4,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 sub $0,1
-lpb $0
-  mov $1,$0
-  add $1,1
-  seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  div $0,$1
-lpe
+mov $3,$0
+div $3,$4
+add $0,$3
+add $0,2
 mov $1,$0
-add $1,1
+gcd $1,$2
 pow $1,2
-mul $1,11
 mov $0,$1
-sub $0,11
-div $0,11
-add $0,1

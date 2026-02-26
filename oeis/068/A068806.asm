@@ -1,5 +1,5 @@
 ; A068806: Ulam numbers that are powers of 2.
-; Submitted by Science United
+; Submitted by zeekec
 ; 1,2,4,8,16,8192,16777216,67108864
 
 #offset 1
@@ -14,8 +14,6 @@ lpb $0
   add $2,1
   add $2,$3
 lpe
-add $2,3
 mov $1,2
 pow $1,$2
 mov $0,$1
-div $0,8

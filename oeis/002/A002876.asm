@@ -1,11 +1,9 @@
 ; A002876: Number of weighted linear spaces of total weight n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Pokihead
 ; 1,2,4,8,16,36,85,239
 
 #offset 1
 
-mov $1,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $5,$1

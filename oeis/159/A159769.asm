@@ -1,20 +1,32 @@
 ; A159769: Number of n-leaf binary trees that do not contain (((()())())(()(()()))) as a subtree.
-; Submitted by davidtgx
+; Submitted by Science United
 ; 1,1,2,5,14,41,124,384,1212,3885,12614,41400,137132,457841,1539150,5205612,17700450,60473476,207491052,714668954,2470156910,8564900629,29783782326,103846841946,362970362118,1271546963124,4463801464608
+; Formula: a(n) = d(n-1)+1, b(n) = c(n-1), b(4) = 68, b(3) = 23, b(2) = 8, b(1) = 3, b(0) = 1, c(n) = truncate((c(n-1)*(4*n+10)+c(n-3)*(-4*n+2))/(n+4)), c(4) = 207, c(3) = 68, c(2) = 23, c(1) = 8, c(0) = 3, d(n) = truncate((b(n-1)+d(n-1))/2), d(4) = 13, d(3) = 4, d(2) = 1, d(1) = 0, d(0) = 0
 
 #offset 1
 
+mov $3,1
+mov $4,3
 sub $0,1
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,56010 ; Number of words of length n in a simple grammar.
-  div $1,2
-  add $1,$0
+lpb $0
+  mov $6,$1
+  mul $6,-4
+  sub $6,2
+  mul $2,$6
+  rol $2,3
+  mov $6,$1
+  mul $6,4
+  add $6,14
+  mov $5,$3
+  mul $5,$6
+  mov $6,$1
+  add $6,5
+  add $8,$2
+  div $8,2
+  add $4,$5
+  div $4,$6
+  sub $0,1
+  add $1,1
 lpe
-mov $0,$1
-div $0,2
+mov $0,$8
 add $0,1

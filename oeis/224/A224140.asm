@@ -1,5 +1,5 @@
-; A224140: Number of n X n 0..1 arrays with rows and antidiagonals unimodal and columns nondecreasing
-; Submitted by Science United
+; A224140: Number of n X n 0..1 arrays with rows and antidiagonals unimodal and columns nondecreasing.
+; Submitted by drnickrivera
 ; 2,9,49,272,1509,8375,46586,259927,1454873,8167578,45975525,259412481,1466771294,8308711329,47142516717,267868554552,1524033271457,8681096155047,49500982033342,282533898125471,1614019099745197,9227766021583954
 
 #offset 1
@@ -29,6 +29,5 @@ lpb $0
   add $5,$1
 lpe
 mov $0,$8
-sub $0,9
 div $0,6
-add $0,2
+add $0,1

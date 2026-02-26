@@ -1,20 +1,29 @@
 ; A025464: Number of partitions of n into 2 distinct nonnegative cubes.
-; Submitted by rajab
+; Submitted by Science United
 ; 0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,55400 ; Cube excess: difference between n and largest cube <= n.
-  equ $2,0
-  add $4,$5
-  add $1,$2
-  mov $3,1
-  add $3,$4
-  add $5,6
+mov $5,3
+mov $8,-7
+bxo $2,$0
+add $2,3
+lpb $2
+  sub $2,$5
+  add $4,$3
+  mov $7,$2
+  max $7,0
+  mov $6,$7
+  nrt $6,3
+  pow $6,3
+  equ $7,$6
+  add $8,$7
+  add $3,6
+  mov $5,1
+  add $5,$4
 lpe
-mov $0,$1
-div $0,2
+mov $2,$8
+add $2,7
+mov $1,$2
+equ $1,0
+add $2,$1
+mov $0,$2
+sub $0,1

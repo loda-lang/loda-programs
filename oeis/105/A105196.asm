@@ -1,7 +1,7 @@
 ; A105196: Triangle, read by rows, of Stirling numbers of first kind, S1(n,k), multiplied by k^k, for n >= 1, 1<=k<=n.
 ; Submitted by KetamiNO [YouTube]
 ; 1,1,4,2,12,27,6,44,162,256,24,200,945,2560,3125,120,1096,6075,21760,46875,46656,720,7056,43848,188160,546875,979776,823543,5040,52272,354564,1732864,6125000,15023232,23059204,16777216,40320,438336,3189348
-; Formula: a(n) = truncate((2*A130534(n-1)*truncate((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)))/2)
+; Formula: a(n) = truncate((2*A130534(n-1)*if(((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^2)==1,(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n),if((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)<=(-1),0,(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n))))/2)
 
 #offset 1
 

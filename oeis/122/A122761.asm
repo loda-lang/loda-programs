@@ -1,22 +1,20 @@
 ; A122761: Triangular read by rows: T(n, k) = 3^k * (1 + (n mod 2)).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,2,6,1,3,9,2,6,18,54,1,3,9,27,81,2,6,18,54,162,486,1,3,9,27,81,243,729,2,6,18,54,162,486,1458,4374,1,3,9,27,81,243,729,2187,6561,2,6,18,54,162,486,1458,4374,13122,39366,1,3,9,27,81,243,729,2187,6561,19683,59049,2,6,18,54,162,486,1458,4374,13122,39366,118098,354294,1,3
-; Formula: a(n) = truncate(2^(-2*truncate(truncate((sqrtint(8*n+8)-1)/2)/2)+truncate((sqrtint(8*n+8)-1)/2)))*truncate(3^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = (floor((sqrtint(8*n+8)-1)/2)%2+1)*if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,3^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
+mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $3,$1
-add $3,1
-bin $3,2
-sub $0,$3
+mul $0,8
+nrt $0,2
 sub $0,1
-mod $1,2
-mov $2,3
-pow $2,$0
-mov $0,2
-pow $0,$1
-mul $0,$2
+div $0,2
+mov $1,$0
+add $1,1
+bin $1,2
+sub $2,$1
+mov $3,3
+pow $3,$2
+mod $0,2
+add $0,1
+mul $0,$3

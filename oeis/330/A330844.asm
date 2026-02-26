@@ -1,6 +1,7 @@
 ; A330844: Start with a Koch snowflake tile, and repeatedly append along the tiles of the previous step tiles scaled by a factor of sqrt(1/3) and rotated by 90 degrees that do not overlap with any prior tile and of which one third of the perimeter matches one sixth of the perimeter of adjacent prior tiles; a(n) gives the number of tiles appended at n-th step.
-; Submitted by loader3229
+; Submitted by Katja
 ; 1,6,18,42,90,186,366,690,1278,2322,4182,7482,13326,23682,42006,74442,131838,233394,413094,731034,1293582,2288898,4049910,7165674,12678366,22431954,39688902,70221498,124242606,219821730,388929174,688129674,1217502846,2154118770
+; Formula: a(n) = b(n-1), b(n) = 2*b(n-1)+2*b(n-5)-2*b(n-3)-2*b(n-4)+b(n-2), b(15) = 74442, b(14) = 42006, b(13) = 23682, b(12) = 13326, b(11) = 7482, b(10) = 4182, b(9) = 2322, b(8) = 1278, b(7) = 690, b(6) = 366, b(5) = 186, b(4) = 90, b(3) = 42, b(2) = 18, b(1) = 6, b(0) = 1
 
 #offset 1
 
@@ -13,9 +14,8 @@ mov $6,186
 mov $7,366
 sub $0,1
 lpb $0
-  mul $1,0
   rol $1,7
-  add $7,$2
+  mov $7,$2
   add $7,$2
   sub $7,$3
   sub $7,$3

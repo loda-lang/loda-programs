@@ -9,6 +9,7 @@ add $0,1
 mov $3,$0
 mov $2,2
 lpb $2
+  bin $2,2
   div $2,2
   mov $0,$3
   seq $0,13183 ; exp(arctanh(x)+arcsinh(x)) = 1+2*x+4/2!*x^2+9/3!*x^3+24/4!*x^4+105/5!*x^5...

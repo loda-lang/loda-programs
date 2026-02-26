@@ -1,10 +1,10 @@
 ; A166514: Zig-zag function for first two columns of a matrix (take numbers in consecutive pairs).
 ; Submitted by Science United
 ; 0,1,1,0,2,1,3,0,4,1,5,0,6,1,7,0,8,1,9,0,10,1,11,0,12,1,13,0,14,1,15,0,16,1,17,0,18,1,19,0,20,1,21,0,22,1,23,0,24,1,25,0,26,1,27,0,28,1,29,0,30,1,31,0,32,1,33,0,34,1,35,0,36,1,37,0,38,1,39,0
+; Formula: a(n) = floor((n+1)/2)%if(floor((n+1)/2)==0,n+1,if(((n+1)%floor((n+1)/2))==0,(n+1)/floor((n+1)/2),n+1))
 
 add $0,1
 mov $1,$0
-div $1,2
-dif $0,$1
-mod $1,$0
-mov $0,$1
+div $0,2
+dif $1,$0
+mod $0,$1

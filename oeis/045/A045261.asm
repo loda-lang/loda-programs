@@ -1,5 +1,5 @@
 ; A045261: Numbers whose base-5 representation contains exactly three 1's and two 4's.
-; Submitted by Philip Courte
+; Submitted by stoneageman
 ; 799,859,871,1159,1171,1231,2659,2671,2731,3031,3299,3359,3371,3659,3671,3731,3799,3859,3871,3899,3949,3974,3979,3989,3994,3995,3997,3998,4049,4109,4121,4174,4234,4246,4259,4271,4279
 
 #offset 1
@@ -15,8 +15,7 @@ lpb $2
     add $5,2
     mul $5,16
     mod $5,10
-    sub $5,1
-    trn $5,4
+    trn $5,5
     div $3,5
     add $4,$5
   lpe

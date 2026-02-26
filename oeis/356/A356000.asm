@@ -16,10 +16,11 @@ lpb $0
   lpb $10
     sub $10,1
     mov $6,$7
-    seq $6,355788 ; E.g.f. satisfies log(A(x)) = (exp(2*x) - 1) * A(x)/2.
+    seq $6,365053 ; E.g.f. satisfies A(x) = exp( x * (1+x/2) * A(x) ).
     mov $4,$7
     add $4,$3
-    seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+    add $4,1
+    seq $4,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
     mul $4,$6
     add $7,1
     add $8,$4

@@ -10,6 +10,7 @@ mov $3,$0
 mov $2,2
 lpb $2
   div $2,2
+  sub $2,1
   mov $0,$3
   seq $0,12255 ; Expansion of e.g.f.: exp(tanh(arcsin(x)))=1+x+1/2!*x^2-3/4!*x^4-4/5!*x^5+21/6!*x^6...
 lpe

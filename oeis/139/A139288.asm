@@ -1,13 +1,23 @@
 ; A139288: 2^(2p - 1)/2, where p is prime.
-; Submitted by pharde
+; Submitted by lotusexcelle
 ; 4,16,256,4096,1048576,16777216,4294967296,68719476736,17592186044416,72057594037927936,1152921504606846976,4722366482869645213696,1208925819614629174706176,19342813113834066795298816
-; Formula: a(n) = 4*floor((4^A000040(n))/16)
 
 #offset 1
 
-seq $0,40 ; The prime numbers.
-mov $1,4
-pow $1,$0
-mov $0,$1
-div $0,16
-mul $0,4
+add $0,1
+mov $4,$0
+pow $4,4
+lpb $4
+  add $3,1
+  mov $1,$2
+  gcd $1,$3
+  div $1,$3
+  sub $0,$1
+  mul $2,2
+  add $2,2
+  sub $4,$0
+lpe
+mov $0,$2
+add $0,2
+pow $0,2
+div $0,4

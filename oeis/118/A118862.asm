@@ -1,23 +1,23 @@
 ; A118862: Start with 1 and repeatedly place the first digit at the end of the number and add 15.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,16,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82,43,49,109,106,76,82
-; Formula: a(n) = b(n-1), b(n) = b(n-6), b(11) = 49, b(10) = 43, b(9) = 82, b(8) = 76, b(7) = 106, b(6) = 109, b(5) = 49, b(4) = 43, b(3) = 82, b(2) = 76, b(1) = 16, b(0) = 1
 
 #offset 1
 
 mov $1,1
-mov $2,16
-mov $3,76
-mov $4,82
-mov $5,43
-mov $6,49
-mov $7,109
-mov $8,106
-sub $0,1
 lpb $0
-  mul $1,0
-  rol $1,8
-  add $8,$2
   sub $0,1
+  max $0,1
+  mov $3,$1
+  log $3,10
+  mov $2,10
+  pow $2,$3
+  mov $4,$1
+  div $4,$2
+  mul $2,$4
+  sub $1,$2
+  mul $1,10
+  add $1,15
+  add $1,$4
 lpe
 mov $0,$1

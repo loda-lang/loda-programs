@@ -1,5 +1,5 @@
 ; A043636: Numbers whose base-9 representation has exactly 7 runs.
-; Submitted by vonboedefeldt
+; Submitted by Science United
 ; 538084,538085,538086,538087,538088,538089,538090,538091,538101,538102,538104,538105,538106,538107,538108,538109,538110,538111,538112,538114,538115,538116,538117,538118,538119,538120,538121
 
 #offset 1
@@ -18,8 +18,7 @@ lpb $4
   lpe
   add $1,4
   lpb $3
-    sub $3,5
-    trn $3,4
+    trn $3,9
     add $1,1
   lpe
 lpe

@@ -1,30 +1,27 @@
 ; A308281: The third power of the unsigned Lah triangular matrix A105278.
-; Submitted by Mumps
+; Submitted by lotusexcelle
 ; 1,6,1,54,18,1,648,324,36,1,9720,6480,1080,60,1,174960,145800,32400,2700,90,1,3674160,3674160,1020600,113400,5670,126,1,88179840,102876480,34292160,4762800,317520,10584,168,1,2380855680,3174474240,1234517760,205752960,17146080,762048,18144,216,1
 
 #offset 1
 
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $3,$2
-mov $1,$2
-add $1,1
-bin $1,2
-sub $0,$1
 sub $0,1
-mov $1,$2
-bin $1,$0
-sub $2,$0
-mov $0,$2
-pow $2,0
-add $2,$3
-lpb $0
-  sub $0,1
-  mul $1,3
-  mul $1,$2
-  sub $2,1
-lpe
-mov $0,$1
+mov $2,$0
+add $0,1
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $1,$0
+add $1,1
+mov $3,$1
+bin $1,2
+sub $2,$1
+mov $5,$0
+sub $5,$2
+mov $4,3
+pow $4,$5
+mul $5,-1
+fac $3,$5
+bin $0,$2
+mul $0,$3
+mul $0,$4

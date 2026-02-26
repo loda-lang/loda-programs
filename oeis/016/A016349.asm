@@ -1,17 +1,16 @@
 ; A016349: 185th cyclotomic polynomial.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by drnickrivera
 ; 1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,0,1,-1,1,-1,1,0,-1,1,-1,1
 
 add $0,1
 lpb $0
-  mov $2,$0
-  sub $2,1
-  mov $3,0
-  sub $3,$2
-  mod $3,5
-  pow $3,$3
-  sub $0,36
-  trn $0,1
-  add $1,$3
+  mov $3,$0
+  sub $3,1
+  trn $0,37
+  mov $1,0
+  sub $1,$3
+  mod $1,5
+  pow $1,$1
+  add $2,$1
 lpe
-mov $0,$1
+mov $0,$2

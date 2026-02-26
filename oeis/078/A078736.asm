@@ -1,24 +1,22 @@
 ; A078736: Numerators of convergents to sqrt(e).
-; Submitted by Jamie Morken(w1)
+; Submitted by Technik007[CZ]
 ; 1,2,3,5,28,33,61,582,643,1225,16568,17793,34361,601930,636291,1238221,26638932,27877153,54516085,1390779278,1445295363,2836074641,83691459952,86527534593,170218994545,5703754354578,5873973349123
-; Formula: a(n) = a(n-1)*(4*truncate(gcd(-3*truncate((n-1)/3)+n-2,n-1)/3)+1)+a(n-2), a(2) = 2, a(1) = 1, a(0) = 1
 
 #offset 1
 
 mov $1,1
 lpb $0
   sub $0,1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
+  mov $4,$0
+  ror $0,4
+  mov $0,$4
   mod $1,3
   sub $1,1
-  gcd $1,$3
+  gcd $1,$4
   div $1,3
   mul $1,4
   add $1,1
   mul $1,$2
-  add $1,$4
-  add $3,1
+  add $1,$3
 lpe
 mov $0,$1

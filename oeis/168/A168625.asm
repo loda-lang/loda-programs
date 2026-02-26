@@ -1,20 +1,18 @@
 ; A168625: Triangle T(n,k) = 8*binomial(n,k) - 7 with columns 0 <= k <= n.
-; Submitted by loader3229
+; Submitted by booc0mtaco
 ; 1,1,1,1,9,1,1,17,17,1,1,25,41,25,1,1,33,73,73,33,1,1,41,113,153,113,41,1,1,49,161,273,273,161,49,1,1,57,217,441,553,441,217,57,1,1,65,281,665,1001,1001,665,281,65,1,1,73,353,953,1673,2009,1673,953,353,73,1,1,81,433,1313,2633,3689,3689,2633,1313,433,81,1,1,89
-; Formula: a(n) = 8*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)-7
+; Formula: a(n) = 8*binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)-7
 
+mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
+mul $0,8
+nrt $0,2
 sub $0,1
-bin $1,$0
-mov $0,$1
+div $0,2
+mov $1,$0
+add $1,1
+bin $1,2
+sub $2,$1
+bin $0,$2
 mul $0,8
 sub $0,7

@@ -1,5 +1,5 @@
 ; A045224: Numbers whose base-5 representation contains exactly one 1 and three 2's.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Just Jake
 ; 187,287,307,311,687,887,927,935,938,939,942,947,962,987,1062,1187,1287,1307,1311,1387,1427,1435,1438,1439,1442,1447,1462,1487,1507,1511,1527,1535,1538,1539,1542,1547,1551,1555,1558
 
 #offset 1
@@ -15,8 +15,7 @@ lpb $2
     add $5,2
     mul $5,2
     mod $5,10
-    sub $5,1
-    trn $5,4
+    trn $5,5
     div $3,5
     add $4,$5
   lpe

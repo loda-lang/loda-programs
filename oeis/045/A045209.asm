@@ -13,12 +13,10 @@ lpb $2
   lpb $3
     mov $5,$3
     mul $5,8
+    add $5,16
     mod $5,10
-    sub $5,1
-    trn $5,4
-    mul $3,2
-    add $3,16
-    div $3,10
+    trn $5,5
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4
@@ -28,4 +26,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-sub $0,2

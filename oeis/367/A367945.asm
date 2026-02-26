@@ -1,35 +1,24 @@
 ; A367945: Expansion of e.g.f. exp(2*(exp(2*x) - 1) - x).
-; Submitted by Mumps
+; Submitted by loader3229
 ; 1,3,17,115,929,8547,87729,988883,12100929,159331523,2241395537,33493315379,529089873121,8799587162659,153545747910129,2802447872764307,53358770299683457,1057354788073681283,21760656533457251985,464240718007022020083,10249389749356980403745
 
-mov $2,1
+mov $3,$0
+add $3,1
+bin $3,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $5,2
-  max $6,1
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    sub $3,$7
-    mul $3,2
-    add $5,1
-    add $6,$7
-    mul $6,2
-  lpe
-  sub $6,$3
-  sub $6,$7
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,294189 ; E.g.f.: exp(2*(1/(1-x)^2 - 1)).
+  mov $5,$2
+  add $5,$3
+  mov $6,$5
+  seq $6,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$6
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

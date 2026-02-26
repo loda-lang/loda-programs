@@ -1,12 +1,10 @@
 ; A039571: Numbers whose base-5 representation has the same number of 1's, 3's and 4's.
-; Submitted by Science United
+; Submitted by ST240
 ; 0,2,10,12,44,48,50,52,60,62,84,96,108,116,144,148,194,198,204,214,220,222,228,238,240,242,250,252,260,262,294,298,300,302,310,312,334,346,358,366,384,396,404,414,420,422,434,446,476,480,482,486,508,516
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
 pow $2,4
 lpb $2
   mov $4,0

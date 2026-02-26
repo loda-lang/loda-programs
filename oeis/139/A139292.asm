@@ -1,12 +1,23 @@
 ; A139292: 2^(2p - 1)/8, where p is prime.
-; Submitted by pharde
+; Submitted by lotusexcelle
 ; 1,4,64,1024,262144,4194304,1073741824,17179869184,4398046511104,18014398509481984,288230376151711744,1180591620717411303424,302231454903657293676544,4835703278458516698824704
-; Formula: a(n) = floor((4^A000040(n))/16)
 
 #offset 1
 
-seq $0,40 ; The prime numbers.
-mov $1,4
-pow $1,$0
-mov $0,$1
+add $0,1
+mov $4,$0
+pow $4,4
+lpb $4
+  add $3,1
+  mov $1,$2
+  gcd $1,$3
+  div $1,$3
+  sub $0,$1
+  mul $2,2
+  add $2,2
+  sub $4,$0
+lpe
+mov $0,$2
+add $0,2
+pow $0,2
 div $0,16

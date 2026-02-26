@@ -1,8 +1,13 @@
 ; A323583: Number of ways to split an integer partition of n into consecutive subsequences.
-; Submitted by Science United
+; Submitted by lotusexcelle
 ; 1,1,3,7,17,37,83,175,373,773,1603,3275,6693,13557,27447,55315,111397,223769,449287,900795,1805465,3615929,7240327,14491623,29001625,58027017,116093259,232237583,464558201,929224589,1858623819,3717475031,7435314013,14871103069
-; Formula: a(n) = 2*truncate(A070933(n)/4)+1
 
+lpb $0
+  mov $0,1
+  seq $0,274730 ; Number of 5 X n 0..2 arrays with no element equal to any value at offset (-1,-2) (-2,-1) or (-1,0) and new values introduced in order 0..2.
+  pow $0,2
+  sub $0,14
+lpe
 seq $0,70933 ; Expansion of Product_{k>=1} 1/(1 - 2*t^k).
 div $0,4
 mul $0,2

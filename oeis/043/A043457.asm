@@ -1,5 +1,5 @@
 ; A043457: Numbers having one 1 in base 9.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by joenoroian
 ; 1,9,11,12,13,14,15,16,17,19,28,37,46,55,64,73,81,83,84,85,86,87,88,89,99,101,102,103,104,105,106,107,108,110,111,112,113,114,115,116,117,119,120,121,122,123,124,125,126,128,129,130
 
 #offset 1
@@ -19,8 +19,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
-  sub $3,7
-  equ $3,0
+  equ $3,7
   sub $0,$3
   add $1,1
   sub $2,$0

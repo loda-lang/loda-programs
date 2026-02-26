@@ -1,36 +1,19 @@
 ; A283896: Relative of Hofstadter Q-sequence: a(-88) = 89, a(-87) = 2; thereafter a(n) = a(n-a(n-1)) + a(n-a(n-2)).
-; Submitted by Science United
+; Submitted by booc0mtaco
 ; 91,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2,180,2
+; Formula: a(n) = 89*sign(if((2^2)==1,2^binomial(-n+1,gcd(n-1,2)),if(binomial(-n+1,gcd(n-1,2))<=(-1),0,2^binomial(-n+1,gcd(n-1,2)))))*((if((2^2)==1,2^binomial(-n+1,gcd(n-1,2)),if(binomial(-n+1,gcd(n-1,2))<=(-1),0,2^binomial(-n+1,gcd(n-1,2))))-1)%2+1)+2
 
 #offset 1
 
 sub $0,1
+sub $1,$0
 mov $2,$0
-mov $3,1
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  mov $5,$0
-  bin $5,2
-  mov $7,2
-  pow $7,$5
-  bin $0,2
-  mov $5,$7
-  add $5,1
-  mov $6,2
-  pow $6,$0
-  mov $0,$6
-  sub $0,$5
-  mul $1,$0
-  mul $3,-1
-  add $3,$1
-lpe
-mov $0,$3
-div $0,2
+sub $2,$0
+gcd $0,2
+bin $1,$0
+add $2,2
+pow $2,$1
+dgr $2,3
+mov $0,$2
 mul $0,89
-add $0,91
+add $0,2

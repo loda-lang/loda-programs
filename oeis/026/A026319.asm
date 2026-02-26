@@ -1,16 +1,15 @@
 ; A026319: a(n) is the n-th nonnegative integer k satisfying |sin(k)| < |cos(k)| < |sin(k+1)|.
-; Submitted by BigPoppa
+; Submitted by stoneageman
 ; 7,10,13,16,29,32,35,38,51,54,57,60,73,76,79,82,95,98,101,104,117,120,123,126,139,142,145,148,161,164,167,170,186,189,192,208,211,214,230,233,236,252,255,258,274,277,280,296,299,302
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,2
-add $2,8
+add $0,1
+add $2,7
 pow $2,3
 lpb $2
-  sub $2,28
+  sub $2,24
   mov $3,$1
   mul $3,4
   add $3,3

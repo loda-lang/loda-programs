@@ -1,78 +1,12 @@
 ; A326719: a(n) = n! * [x^n] (x * tanh(x) * sech(x)) / 2.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 0,0,1,0,-10,0,183,0,-5540,0,252605,0,-16216590,0,1395526867,0,-155132097160,0,21643917078969,0,-3703711882375250,0,762837618324516911,0,-186174409962685042860,0,53131942620810610600693,0,-17531634979650818116555990,0
+; Formula: a(n) = truncate((-n*A122045(n))/2)
 
-mov $5,$0
 mov $4,$0
-add $4,1
-lpb $4
-  div $4,2
-  sub $1,$0
-  gcd $1,$4
-  mov $3,-4
-  pow $3,$1
-  mul $4,2
-  mul $1,2
-  mov $6,2
-  pow $6,$1
-  bin $1,2
-  add $1,1
-  mov $9,$1
-  mul $9,8
-  nrt $9,2
-  sub $9,1
-  div $9,2
-  add $9,1
-  pow $9,2
-  sub $9,$1
-  mul $1,8
-  nrt $1,2
-  div $1,2
-  mov $7,$9
-  add $7,$1
-  mov $8,$7
-  add $8,2
-  mov $10,$8
-  mul $10,8
-  nrt $10,2
-  sub $10,1
-  div $10,2
-  mov $11,$10
-  add $11,1
-  bin $11,2
-  mov $12,$10
-  mod $12,2
-  sub $8,1
-  sub $8,$11
-  sub $8,$12
-  add $8,$7
-  mov $1,$7
-  add $1,1
-  mov $13,$1
-  mul $13,8
-  nrt $13,2
-  div $13,2
-  bin $13,2
-  sub $1,$13
-  sub $8,$1
-  mov $1,$8
-  add $1,2
-  mov $14,$1
-  mul $14,8
-  nrt $14,2
-  sub $14,1
-  div $14,2
-  add $14,1
-  pow $14,2
-  sub $14,$1
-  mov $1,$14
-  seq $1,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
-  mul $1,$6
-  div $1,$3
-lpe
-sub $0,$1
-sub $0,$5
-add $2,$0
-mul $5,$2
-mov $0,$5
+rol $1,10
+sub $4,$0
+seq $3,122045 ; Euler (or secant) numbers E(n).
+mul $3,$4
+mov $0,$3
 div $0,2

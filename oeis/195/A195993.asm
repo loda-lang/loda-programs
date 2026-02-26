@@ -1,19 +1,19 @@
 ; A195993: Numbers n such that 90n + 73 is prime.
-; Submitted by Kotenok2000
+; Submitted by Goldislops
 ; 0,1,4,5,6,9,11,12,15,18,19,20,22,23,27,28,29,32,36,39,40,42,43,49,51,54,55,56,61,62,63,65,70,72,74,75,85,88,91,92,93,95,96,97,98,103,104,106,109,110,113,114,116,127,128,131,132,133,139,141,142,144,154,158,161,162,165,166,168,170,173,174,175,176,179,180,181,182,184,187
 
 #offset 1
 
-mov $1,72
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $2,$1
+mov $3,72
+mov $1,$0
+pow $1,5
+lpb $1
+  mov $2,$3
   add $2,1
-  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $3,90
   sub $0,$2
-  add $1,90
-  sub $3,$0
+  sub $1,$0
 lpe
-mov $0,$1
+add $0,$3
 div $0,90

@@ -1,27 +1,18 @@
 ; A005921: From solution to a difference equation.
-; Submitted by loader3229
+; Submitted by gingavasalata
 ; 1,3,10,48,312,2520,24480,277200,3588480,52254720,845510400,15048633600,292190976000,6146069529600,139223731046400,3379030566912000,87478184521728000,2406225451069440000,70080382582898688000
+; Formula: a(n) = truncate(b(n+1)/(n+1)), b(n) = n*(max(b(n-2),2)*(n-1)+b(n-1)), b(2) = 6, b(1) = 1, b(0) = 1
 
-mov $1,-1
-mov $2,1
-fil $2,3
+mov $3,1
 add $0,1
 lpb $0
-  sub $0,2
-  add $2,$3
+  sub $0,1
+  mul $2,$1
+  add $1,1
+  ror $2,2
   add $3,$2
-  add $5,1
-  mul $4,$5
-  add $5,1
-  mul $4,$5
-  add $5,$1
-  mov $1,0
+  mul $3,$1
+  max $2,2
 lpe
-mul $2,$0
-add $2,$3
-mul $5,$0
-add $5,1
-mul $2,$4
-mul $2,$5
-mov $0,$2
-div $0,2
+mov $0,$3
+div $0,$1

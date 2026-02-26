@@ -1,18 +1,17 @@
 ; A016361: 230th cyclotomic polynomial.
-; Submitted by Alexandre_Phan
+; Submitted by [AF>France>Sale-caractere] Antares
 ; 1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,-1,-1,-1,-1,0,1,1,1,1,0,-1,-1,-1,-1,0,1,1,1,1,0,-1,-1,-1,0,1,1,1,1,0,-1,-1,-1,-1,0,1,1,1,1,0,-1,-1,-1,-1,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0
 
 mov $1,-1
 pow $1,$0
 add $0,1
 lpb $0
-  mov $3,1
-  sub $3,$0
-  mod $3,5
-  pow $3,$3
-  sub $0,12
-  trn $0,11
-  add $2,$3
+  mov $2,1
+  sub $2,$0
+  mod $2,5
+  pow $2,$2
+  trn $0,23
+  add $3,$2
 lpe
-mov $0,$2
+mov $0,$3
 mul $0,$1

@@ -1,37 +1,38 @@
 ; A352639: Expansion of e.g.f. exp(2*sin(x)).
-; Submitted by DukeBox
+; Submitted by roundup
 ; 1,2,4,6,0,-46,-192,-266,1792,14114,34816,-171930,-2027520,-6522382,34750464,496296022,1748500480,-12731696062,-186550845440,-617309234490,7292215885824,99199654760978,248883934396416,-5836506132182090,-69729013345550336
 
-mov $2,1
-mov $6,1
+mov $9,$0
 add $0,1
 lpb $0
-  sub $0,1
-  mov $5,2
-  mov $4,$2
-  lpb $4
-    mov $8,$4
-    add $8,3
-    seq $8,101455 ; a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
-    mul $8,2
-    mov $9,20
-    add $9,$5
-    sub $4,1
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    sub $7,1
-    bin $7,$0
-    mul $7,$$9
-    mul $7,$8
-    sub $9,1
-    add $5,1
-    add $6,$7
+  mov $4,1
+  mov $11,0
+  mov $5,$2
+  add $5,1
+  lpb $5
+    sub $5,1
+    mov $3,$2
+    bin $3,$5
+    mov $10,$5
+    mul $10,2
+    sub $10,$2
+    pow $10,$9
+    mul $10,$3
+    mul $10,$4
+    add $11,$10
+    mul $4,-1
   lpe
-  sub $6,$3
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  mov $7,$9
+  sub $7,$2
+  div $7,2
+  sub $0,1
+  mov $6,-1
+  pow $6,$7
+  mov $8,1
+  fac $8,$2
+  div $11,$8
+  mul $11,$6
+  add $1,$11
   add $2,1
 lpe
-mov $0,$3
+mov $0,$1

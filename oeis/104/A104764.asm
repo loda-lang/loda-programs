@@ -1,24 +1,23 @@
 ; A104764: Triangle T(n,k) = Lucas(n-k+1) read by rows, 1<=k<=n.
-; Submitted by Ralfy
+; Submitted by Rodney Duane
 ; 1,3,1,4,3,1,7,4,3,1,11,7,4,3,1,18,11,7,4,3,1,29,18,11,7,4,3,1,47,29,18,11,7,4,3,1,76,47,29,18,11,7,4,3,1,123,76,47,29,18,11,7,4,3,1,199,123,76,47,29,18,11,7,4,3,1,322,199,123
 
 #offset 1
 
+mov $1,1
+add $1,1
 mov $2,1
 mov $3,2
-mov $4,$0
-mul $4,8
-nrt $4,2
-add $4,3
-div $4,2
-bin $4,2
-sub $4,$0
-mov $1,$4
-lpb $1
-  sub $1,2
-  add $3,$2
+mov $6,$0
+mul $0,8
+nrt $0,2
+add $0,3
+div $0,2
+bin $0,2
+sub $0,$6
+lpb $0
+  sub $0,1
+  ror $2,$1
   add $2,$3
 lpe
-mul $1,$3
-add $1,$2
-mov $0,$1
+mov $0,$2
