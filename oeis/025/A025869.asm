@@ -1,25 +1,24 @@
-; A025869: Expansion of 1/((1-x^4)(1-x^7)(1-x^10)).
-; Submitted by Simon Strandgaard
+; A025869: Expansion of 1/((1-x^4)*(1-x^7)*(1-x^10)).
+; Submitted by Science United
 ; 1,0,0,0,1,0,0,1,1,0,1,1,1,0,2,1,1,1,2,1,2,2,2,1,3,2,2,2,4,2,3,3,4,2,4,4,4,3,5,4,5,4,6,4,6,5,6,5,7,6,7,6,8,6,8,7,9,7,9,8,10,8,10,9,11,9,11,10,12,10,13,11,13,11,14
 
-mov $3,3
 add $0,3
 lpb $0
+  sub $0,3
   sub $0,$3
+  mov $4,0
   mov $2,$0
-  mul $2,3
-  div $2,2
-  mov $4,$2
-  sub $4,1
-  mov $6,$2
-  div $6,3
-  mov $5,$2
-  div $5,5
-  add $5,$6
-  div $2,2
-  add $2,$5
-  sub $2,$4
-  add $1,$2
-  mov $3,14
+  add $2,6
+  lpb $2
+    mov $5,$2
+    mod $5,7
+    div $5,3
+    pow $5,2
+    div $5,4
+    trn $2,10
+    add $4,$5
+  lpe
+  add $1,$4
+  mov $3,1
 lpe
 mov $0,$1

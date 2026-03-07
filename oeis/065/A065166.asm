@@ -1,22 +1,21 @@
 ; A065166: Permutation t->t+3 of Z, folded to N.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 6,8,4,10,2,12,1,14,3,16,5,18,7,20,9,22,11,24,13,26,15,28,17,30,19,32,21,34,23,36,25,38,27,40,29,42,31,44,33,46,35,48,37,50,39,52,41,54,43,56,45,58,47,60,49,62,51,64,53,66,55,68,57,70,59,72,61,74,63,76,65,78
-; Formula: a(n) = -truncate((-4*floor(n/2)+min((n-1)*((4*n+56)%8)-12,10))/2)
+; Formula: a(n) = truncate((4*floor(n/2)-min((n-1)*((4*n+56)%8)-12,10))/2)
 
 #offset 1
 
 sub $0,1
-mov $2,$0
+mov $1,$0
 add $0,15
 mul $0,4
 mod $0,8
-mul $0,$2
+mul $0,$1
 sub $0,12
 min $0,10
-add $2,1
-div $2,2
-mul $2,4
-sub $0,$2
-div $0,2
+add $1,1
+div $1,2
+mul $1,4
 sub $1,$0
 mov $0,$1
+div $0,2

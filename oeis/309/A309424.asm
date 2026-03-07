@@ -1,5 +1,5 @@
 ; A309424: Sum x+y of generator pairs (x, y) {x and y coprime and not both odd} of primitive Pythagorean triangles, sorted by x and y (for same x).
-; Submitted by Steve Dodd
+; Submitted by [SG]KidDoesCrunch
 ; 3,5,5,7,7,9,7,11,9,11,13,9,11,13,15,11,13,17,11,13,17,19,13,15,17,19,21,13,17,19,23,15,17,19,21,23,25,15,17,19,23,25,27,17,19,23,29,17,19,21,23,25,27,29,31,19,21,23,25,27,29,31,33,19,23,25,29,31,35,21,23,25,27,29,31,33,35,37,21,23
 
 #offset 1
@@ -15,20 +15,19 @@ lpb $2
   nrt $6,2
   sub $6,1
   div $6,2
-  mov $5,$6
-  add $5,1
-  bin $5,2
-  mov $3,$1
-  sub $3,$5
-  add $6,2
   mov $7,$6
-  mul $7,2
-  sub $6,$3
-  sub $7,$6
+  add $7,1
+  bin $7,2
+  mov $3,$1
+  sub $3,$7
+  add $6,2
+  mov $7,$3
+  add $3,$6
+  mov $5,$3
+  sub $6,$7
   gcd $3,$6
   mov $6,1
   div $6,$3
-  mul $6,$7
   mov $3,$6
   mul $3,338
   add $3,2
@@ -41,4 +40,4 @@ lpb $2
   equ $4,$0
   mul $2,$4
 lpe
-mov $0,$6
+mov $0,$5

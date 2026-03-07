@@ -1,33 +1,26 @@
 ; A160997: Antidiagonal sums of the Wythoff array A035513.
-; Submitted by zombie67 [MM]
+; Submitted by Bagoda Tes-X
 ; 1,6,16,35,69,126,221,377,632,1048,1723,2818,4593,7467,12120,19651,31839,51563,83479,135123,218687,353899,572680,926677,1499459,2426243,3925813,6352171,10278103,16630397,26908628,43539157,70447921,113987219
-; Formula: a(n) = b(n)+c(n)-2, b(n) = b(n-1)+b(n-2)+truncate((sqrtint(5*n^2)+n)/2), b(3) = 14, b(2) = 7, b(1) = 3, b(0) = 1, c(n) = -n+b(n-1), c(3) = 4, c(2) = 1, c(1) = 0, c(0) = 0
 
 #offset 1
 
-mov $1,2
-mov $2,1
-mov $3,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mov $4,$2
-  sub $4,$3
-  mov $2,$1
-  mov $1,$3
-  add $1,1
-  mov $5,$1
-  mul $5,4
-  add $5,$1
-  mul $5,$1
-  nrt $5,2
-  add $5,$1
-  mov $1,$5
-  div $1,2
-  add $1,$3
-  add $1,$4
-  add $3,1
+mov $1,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$1
+  sub $0,$2
+  mov $6,$0
+  mul $0,55
+  div $0,34
+  add $0,$6
+  mov $3,$5
+  add $3,$0
+  mov $5,$4
+  sub $5,$6
+  add $4,$3
 lpe
-add $2,$4
-mov $0,$2
-sub $0,2
+add $5,1
+add $4,$5
+mov $0,$4
+sub $0,1

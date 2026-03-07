@@ -1,10 +1,10 @@
 ; A228718: Sequence taken from Garvan's paper (see slides 28, 29).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by KetamiNO [YouTube]
 ; 1,1,1,2,3,4,8,12,17,27,40
 
 #offset 1
 
-mov $1,126785
+mov $1,2
 sub $0,1
 lpb $0
   mov $3,$2

@@ -1,5 +1,5 @@
 ; A292151: Orphelins (orphans): Numbers in two disjoint sectors of the Roulette wheel addressed by an announced bet in European (French) Roulette.
-; Submitted by Coleslaw
+; Submitted by [SG]KidDoesCrunch
 ; 1,6,9,14,17,20,31,34
 
 #offset 1
@@ -13,7 +13,6 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $1,$0
-  mod $0,10
   add $0,$1
   lpb $0
     sub $1,1

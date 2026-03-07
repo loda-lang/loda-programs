@@ -1,6 +1,7 @@
 ; A308853: a(n) is the minimum absolute value of nonzero determinants of order n Latin squares.
 ; Submitted by skildude
 ; 1,3,18,80,75,126,196,144,405
+; Formula: a(n) = floor((floor((2*n)/gcd(if(((2*n+2)%10)==0,(2*n+2)/10,2*n+2)%6+12,2*n))*(n^2+n))/2)
 
 #offset 1
 

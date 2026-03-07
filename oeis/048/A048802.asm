@@ -1,40 +1,38 @@
 ; A048802: Number of labeled rooted trees of nonempty sets with n points. (Each node is a set of 1 or more points.)
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,16,133,1521,22184,393681,8233803,198342718,5408091155,164658043397,5537255169582,203840528337291,8153112960102283,352079321494938344,16325961781591781401,809073412162081974237,42674870241038732398720,2386963662244981472850709,141123109528983148638323591,8793592632731522370139175734,575987784166456468878038170351,39564858642039447896915145507025,2843932483680033431679707150915326,213494786411466889240294008103345991,16708198227703010120640682216140077895
 
 #offset 1
 
-mov $19,1
-sub $0,1
-add $0,$19
-mov $3,$0
-lpb $3
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  seq $4,52871 ; Expansion of e.g.f. -LambertW(x/(-1+x)).
+  mov $5,$2
+  add $5,$9
+  mov $8,$5
+  seq $8,97807 ; Riordan array (1/(1+x),1) read by rows.
+  mov $6,$5
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  mov $7,$5
+  sub $7,$6
+  mov $3,1
+  fac $3,$7
+  mov $10,$5
+  seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $10,$3
+  mov $5,$10
+  mul $5,$8
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,$4
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-  mov $19,0
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
-  mov $0,$2
-  mov $4,$2
-  add $4,1
-  pow $4,$0
-  add $2,20
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  sub $3,1
 lpe
 mov $0,$1

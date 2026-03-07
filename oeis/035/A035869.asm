@@ -1,22 +1,19 @@
 ; A035869: Coordination sequence for A_43 lattice.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 1,1892,895862,189126212,22576717592,1737436100444,93714991099466,3755363400343676,116715616046942726,2908413970471697116,59664124959218615418,1029601387463447404860,15216687141326909030760
 
 add $0,2
 lpb $0
   mov $2,$0
-  max $4,86
-  div $4,2
   sub $0,2
-  sub $2,3
-  add $2,$4
+  add $2,40
   bin $2,$0
-  mov $3,$4
+  mov $3,43
   bin $3,$1
   add $0,1
   add $1,1
   mul $2,$3
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4

@@ -9,7 +9,11 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  seq $4,370054 ; a(n) = 2*(3*n+1)!/(2*n+2)!.
+  add $4,1
+  mov $6,$4
+  mul $4,2
+  fac $4,$2
+  div $4,$6
   mov $5,$2
   add $5,$3
   seq $5,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.

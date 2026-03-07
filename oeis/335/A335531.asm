@@ -1,42 +1,36 @@
 ; A335531: Expansion of e.g.f. 1/(1-3*log(1+x)).
-; Submitted by crashtech
+; Submitted by loader3229
 ; 1,3,15,114,1152,14562,220842,3907656,79019496,1797660000,45439902288,1263456328032,38324061498672,1259345712721392,44565940575178992,1689757622095909248,68339921117338411776,2936658673480397537664,133615257668682429428352,6417113656859478628233984,324414161427519766056847104,17220635546383710220534963200,957639239811420830967445217280,55674951338781387184136271114240,3377545161377246552069382763422720,213437757967456526378839915437450240,14027319050825982183815961843834885120
 
-mov $10,1
-add $10,1
-mov $19,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-  sub $7,1
-  add $10,1
-  mov $19,0
-lpe
-mov $3,$0
-add $3,1
-lpb $3
-  mov $2,$0
-  mov $4,$2
-  mul $4,2
-  add $4,$10
-  add $4,1
-  sub $10,1
-  sub $0,1
-  add $2,19
-  mul $1,$4
-  add $1,$$2
-  sub $3,1
-lpe
-add $0,$1
+mov $9,$0
+add $9,1
+bin $9,2
 add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,343709 ; a(n) = 1 + 3 * Sum_{k=0..n-1} binomial(n,k) * (n-k-1)! * a(k).
+    mov $4,$7
+    add $4,$3
+    seq $4,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
+    mul $4,$6
+    add $7,1
+    add $8,$4
+  lpe
+  mov $5,$2
+  add $5,$9
+  seq $5,111596 ; The matrix inverse of the unsigned Lah numbers A271703.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
+lpe
+mov $0,$1

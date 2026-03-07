@@ -1,19 +1,12 @@
 ; A190843: a(n) = [2*n*e] - 2*[n*e], where [ ] = floor and e is the natural logarithm base.
-; Submitted by FritzB
+; Submitted by Science United
 ; 1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,0
+; Formula: a(n) = (sign(-604800*n)*((abs(-604800*n)-1)%213+1)-2*truncate((sign(-604800*n)*((abs(-604800*n)-1)%213+1))/2)+2)%2
 
 #offset 1
 
-mov $2,$0
-mul $0,2
-add $2,5
-log $2,2
-mul $2,2
-lpb $2
-  max $2,1
-  div $1,$2
-  add $1,$0
-  sub $2,1
-lpe
-mov $0,$1
+mul $0,-604800
+dgr $0,214
+mod $0,2
+add $0,2
 mod $0,2

@@ -1,7 +1,7 @@
 ; A274701: First differences of A259280.
 ; Submitted by Science United
 ; 1,2,1,2,2,2,3,2,3,2,3,3,3,3,3,4,3,4,3,4,3,4,4,4,4,4,4,4,5,4,5,4,5,4,5,4,5,5,5,5,5,5,5,5,5,6,5,6,5,6,5,6,5,6,5,6,6,6,6,6,6,6,6,6,6,6,7,6,7,6,7,6,7,6,7,6,7,6,7,7
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/2)+truncate((sqrtint(8*n)-1)/2)+n)/2)+1
+; Formula: a(n) = truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2*truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/2)+floor((sqrtint(8*n)-1)/2)+n)/2)+1
 
 #offset 1
 

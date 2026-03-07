@@ -1,38 +1,37 @@
 ; A006024: Number of labeled mating graphs with n nodes. Also called point-determining graphs.
-; Submitted by vonboedefeldt
+; Submitted by loader3229
 ; 1,1,1,4,32,588,21476,1551368,218608712,60071657408,32307552561088,34179798520396032,71474651351939175424,296572048493274368856832,2448649084251501449508762880,40306353989748719650902623919616,1324376443122336746050719917003867648,86931854926429330695979574085160506255360,11404667714555889163355105329791885713346172928,2991204059295235578606339070427908263875691282157568,1568706926242766771132160771576029882614556995225042325504,1645175071169649801937115606092518522221842440720828813254180864
 
-mov $19,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,1
-    sub $7,$2
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,6125 ; a(n) = 2^(n*(n-1)/2).
+    mov $4,$7
+    add $4,$3
+    seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  sub $3,1
-  mov $19,0
+  mov $5,$2
+  add $5,$9
+  add $5,1
+  seq $5,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
-mov $2,0
-mov $3,$0
-mov $0,$14
-lpb $3
-  add $2,20
-  mov $4,2
-  pow $4,$0
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  add $0,$2
-  sub $3,1
-lpe
-equ $0,0
-add $0,$1
+mov $0,$1

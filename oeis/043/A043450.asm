@@ -1,29 +1,26 @@
 ; A043450: Numbers having two 7's in base 8.
-; Submitted by Ralfy
+; Submitted by [SG]KidDoesCrunch
 ; 63,127,191,255,319,383,447,455,463,471,479,487,495,503,504,505,506,507,508,509,510,575,639,703,767,831,895,959,967,975,983,991,999,1007,1015,1016,1017,1018,1019,1020,1021,1022,1087,1151
 
 #offset 1
 
-sub $0,1
-mov $1,6
 mov $2,$0
-mul $2,240
-add $2,133
+sub $0,1
+add $2,7
+pow $2,4
 lpb $2
-  mul $4,6
-  add $4,1
-  mov $5,0
+  mov $5,-3
   mov $3,$1
   lpb $3
     mov $6,$3
     mod $6,8
-    equ $6,$4
+    equ $6,7
     div $3,8
     add $5,$6
   lpe
-  sub $5,1
+  add $5,1
   mov $3,$5
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

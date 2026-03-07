@@ -1,5 +1,5 @@
 ; A108414: Number of integer k:s for which max{x^(k-x) | x integer, 0<x<k} = n^(k-n).
-; Submitted by biodoc
+; Submitted by Science United
 ; 1,2,3,4,3,4,4,4,4,5,4,5,4,5,4,5,5,5,5,5,5,5,5,5,6
 
 #offset 1
@@ -15,10 +15,9 @@ lpb $0
   mod $1,11
   add $1,3
   sub $1,$0
-  add $2,4
   sub $0,$1
   div $0,11
+  add $2,1
 lpe
 mov $0,$2
-div $0,4
 add $0,1

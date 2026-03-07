@@ -1,31 +1,37 @@
 ; A296975: Number of aperiodic normal sequences of length n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,12,72,540,4668,47292,545760,7087248,102247020,1622632572,28091562840,526858348380,10641342923148,230283190977300,5315654681435520,130370767029135900,3385534663249753392,92801587319328411132,2677687796244281955480,81124824998504073834516,2574844419803188761911628,85438451336745709294580412,2958279121074145444558535520,106697365438475775825583497600,4002225759844168491959269190700,155897763918621623249276219166432,6297562064950066033507732592364120,263478385263023690020893329044576860
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  mov $4,$0
-  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
-  sub $0,1
-  lpb $0
-    add $5,1
-    sub $0,$5
+mov $9,$0
+bin $9,2
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,5408 ; The odd numbers: a(n) = 2*n + 1.
+    mov $4,$7
+    add $4,$3
+    seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  add $0,1
-  seq $0,76726 ; a(n) = Sum_{k>=0} k^n/2^k.
-  mul $0,$4
-  add $1,$0
+  mov $5,$2
+  add $5,$9
+  add $5,1
+  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1
-div $0,2

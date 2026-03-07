@@ -1,5 +1,5 @@
 ; A328085: Column sums of triangle A328084.
-; Submitted by Science United
+; Submitted by sbo92
 ; 1,1,2,3,5,8,12,18,26,38,52
 
 #offset 1
@@ -19,6 +19,5 @@ lpb $0
   add $2,1
 lpe
 mov $0,$3
-sub $0,1
 div $0,2
 add $0,1

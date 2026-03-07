@@ -1,5 +1,5 @@
 ; A375986: Maximum number of edges in a simple polygon that is the regular union of n triangles.
-; Submitted by Karlsson
+; Submitted by [SG]KidDoesCrunch
 ; 3,12,22,33,45,56,67,80,91
 
 #offset 1
@@ -15,7 +15,6 @@ mov $12,11
 sub $0,1
 lpb $0
   mov $14,0
-  mov $2,0
   rol $2,11
   add $3,1
   mul $4,$5
@@ -35,14 +34,11 @@ lpb $0
   mov $13,$7
   mul $13,-1
   add $1,$8
+  mul $7,$4
   add $12,$13
   add $12,$8
   add $12,$13
   mul $13,-1
-  add $12,$13
-  mov $13,$11
-  mul $13,-1
-  mul $7,$4
   add $12,$13
   add $12,945
   mov $14,-1

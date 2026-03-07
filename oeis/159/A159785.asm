@@ -5,20 +5,14 @@
 #offset 1
 
 sub $0,1
-mod $0,99
-mov $1,$0
-mov $2,2
-lpb $2
-  div $2,2
-  mov $0,$1
-  seq $0,255046 ; a(n) = (1 + A151548(n))/2.
-  mul $1,$2
-  add $1,$2
-  add $3,$0
+seq $0,151688 ; G.f.: Product_{n>=0} (1 + x^(2^n-1) + 2*x^(2^n)).
+lpb $0
+  add $1,$0
+  mul $1,4
+  div $0,$1
 lpe
-mov $0,$3
-div $0,2
-mul $0,158928
-sub $0,158928
-div $0,52976
+mov $0,$1
+sub $0,8
+div $0,8
+mul $0,3
 add $0,3

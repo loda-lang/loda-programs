@@ -1,29 +1,52 @@
 ; A365531: a(n) = Sum_{k=0..floor((n-3)/5)} Stirling2(n,5*k+3).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,0,0,1,6,25,90,301,967,3061,10080,40381,245553,2161238,21701381,219007491,2149071359,20442363031,189226358659,1712836890912,15232581945180,133717667932475,1164901223314180,10143255631462661,89207257764369032,804712211338739040
 
-mov $20,1
-mov $3,$0
-lpb $3
-  add $2,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $6,$2
+  mod $6,2
+  mul $6,2
+  mov $13,0
   mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mul $$6,$4
-    add $$6,$$5
-    sub $4,1
+  seq $4,289388 ; a(n) = Sum_{k>=0} (-1)^k*binomial(n,5*k+3).
+  mul $6,$4
+  sub $4,$6
+  mov $5,$2
+  add $5,$9
+  mov $7,0
+  mov $12,$5
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $8,$12
+  add $8,1
+  bin $8,2
+  mov $3,$5
+  sub $3,$8
+  mov $11,1
+  fac $11,$3
+  sub $12,$3
+  add $12,1
+  lpb $12
+    sub $12,1
+    mov $10,$5
+    seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+    div $10,$11
+    add $13,1
+    add $5,1
+    add $7,$10
+    mul $11,$13
   lpe
-  sub $3,1
-lpe
-mov $2,0
-mov $3,$0
-lpb $3
-  add $2,22
-  add $1,$$2
-  sub $2,17
-  sub $3,1
+  mov $5,$7
+  mul $5,$4
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1
+mul $0,-1

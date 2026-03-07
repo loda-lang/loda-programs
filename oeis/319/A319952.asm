@@ -1,7 +1,7 @@
 ; A319952: Let M = A022342(n) be the n-th number whose Zeckendorf representation is even; then a(n) = A129761(M).
 ; Submitted by Dongha Hwang
 ; 1,2,3,1,6,1,2,11,1,2,3,1,22,1,2,3,1,6,1,2,43,1,2,3,1,6,1,2,11,1,2,3,1,86,1,2,3,1,6,1,2,11,1,2,3,1,22,1,2,3,1,6,1,2,171,1,2,3,1,6,1,2,11,1,2,3,1,22,1,2,3,1,6,1
-; Formula: a(n) = truncate((A319432(n-1)-1)/2)+1
+; Formula: a(n) = floor((A319432(n-1)-1)/2)+1
 
 #offset 2
 

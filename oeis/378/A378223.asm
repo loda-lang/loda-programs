@@ -4,7 +4,7 @@
 
 #offset 1
 
-pow $1,0
+mov $1,1
 mov $2,$0
 mov $6,1
 lpb $0

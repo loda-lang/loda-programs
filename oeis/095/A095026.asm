@@ -1,4 +1,4 @@
-; A095026: Lower triangle T(j,k) read by rows, where T(j,k) is the number of occurrences of the digit k-1 as least significant digit in the base-j multiplication table.
+; A095026: Triangle read by rows, where T(n,k) is the number of occurrences of the digit k as least significant digit in the base-n multiplication table, and 0 <= k < n.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,3,1,5,2,2,8,2,4,2,9,4,4,4,4,15,2,6,5,6,2,13,6,6,6,6,6,6,20,4,8,4,12,4,8,4,21,6,6,12,6,6,12,6,6,27,4,12,4,12,9,12,4,12,4,21,10,10,10,10,10,10,10,10,10,10,40,4,8,10,16,4,20,4,16,10,8,4,25,12
 

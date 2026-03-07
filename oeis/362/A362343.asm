@@ -1,16 +1,14 @@
 ; A362343: Sequence that alternately doubles and squares the previous number; a(0) = 1.
-; Submitted by BrandyNOW
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,8,64,128,16384,32768,1073741824,2147483648,4611686018427387904,9223372036854775808,85070591730234615865843651857942052864,170141183460469231731687303715884105728,28948022309329048855892746252171976963317496166410141009864396001978282409984
-; Formula: a(n) = truncate(b(n)/2), b(n) = max(b(n-2)*(c(n-2)==0),2)*b(n-1), b(2) = 8, b(1) = 4, b(0) = 2, c(n) = b(n-1)*(c(n-1)==0), c(2) = 0, c(1) = 2, c(0) = 0
+; Formula: a(n) = if((b(n)+min(n,n%2))<=(-1),0,2^(b(n)+min(n,n%2))), b(n) = 2*b(n-2)+2, b(1) = 0, b(0) = 0
 
-mov $2,2
 lpb $0
-  sub $0,1
-  max $1,2
-  equ $3,0
-  mul $3,$2
-  mul $2,$1
-  mov $1,$3
+  sub $0,2
+  mul $2,2
+  add $2,2
 lpe
-mov $0,$2
-div $0,2
+add $2,$0
+mov $1,2
+pow $1,$2
+mov $0,$1

@@ -1,5 +1,5 @@
 ; A105416: Numbers that are pandigital in Roman numerals using each of the symbols I, V, X, L, C, D and M exactly once.
-; Submitted by Contact
+; Submitted by [SG]KidDoesCrunch
 ; 1444,1446,1464,1466,1644,1646,1664,1666
 
 #offset 1
@@ -15,8 +15,7 @@ lpb $2
     add $5,8
     mul $5,16
     mod $5,10
-    sub $5,1
-    trn $5,4
+    trn $5,5
     sub $3,2
     div $3,10
     add $4,$5

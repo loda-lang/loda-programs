@@ -1,5 +1,5 @@
 ; A067029: Exponent of least prime factor in prime factorization of n, a(1)=0.
-; Submitted by MVeiga
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,1,2,1,1,1,3,2,1,1,2,1,1,1,4,1,1,1,2,1,1,1,3,2,1,3,2,1,1,1,5,1,1,1,2,1,1,1,3,1,1,1,2,2,1,1,4,2,1,1,2,1,1,1,3,1,1,1,2,1,1,2,6,1,1,1,2,1,1,1,3,1,1,1,2,1,1,1,4
 
 #offset 1
@@ -16,9 +16,8 @@ lpb $0
   lpe
   lpb $0
     dif $0,$2
-    add $5,1
+    add $1,1
   lpe
-  sub $0,$1
-  mov $1,396
+  equ $0,$1
 lpe
-mov $0,$5
+mov $0,$1

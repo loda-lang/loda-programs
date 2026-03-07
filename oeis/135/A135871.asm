@@ -1,7 +1,7 @@
 ; A135871: Triangle by columns: A013610 signed and interleaved with zeros.
 ; Submitted by lotusexcelle
 ; 1,0,3,-1,0,9,0,-6,0,27,1,0,-27,0,81,0,9,0,-108,0,243,-1,0,54,0,-405,0,729,0,-12,0,270,0,-1458,0,2187
-; Formula: a(n) = truncate((truncate(3^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))*binomial(-1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)*binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2))*(-n-2*truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)/2)+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2))/9)
+; Formula: a(n) = truncate((binomial(-1,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)*binomial(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)/2))*(-n-2*truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)/2)+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,3^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)))/9)
 
 #offset 1
 

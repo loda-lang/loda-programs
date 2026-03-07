@@ -1,22 +1,21 @@
 ; A061243: a(n) = n+r where r is the smallest number such that n divides (n+1)(n+2)(n+3)...(n+r).
-; Submitted by Kingda Toro
+; Submitted by kpmonaghan
 ; 2,4,6,8,10,9,14,12,15,15,22,16,26,21,20,22,34,24,38,25,28,33,46,28,35,39,36,35,58,35,62,40,44,51,42,42,74,57,52,45,82,49,86,55,51,69,94,54,63,60,68,65,106,63,66,63,76,87,118,65,122,93,70,72,78,77,134,85,92
 
 #offset 1
 
-mov $2,$0
 mov $3,1
-mov $5,2
-mov $1,$0
 mov $4,$0
-lpb $4
-  sub $4,1
+mov $1,2
+mov $2,$0
+lpb $2
+  sub $2,1
   equ $0,$3
-  mul $3,$5
-  mod $3,$1
-  add $4,$0
-  add $5,1
+  add $2,$0
+  mul $3,$1
+  mod $3,$4
+  add $1,1
 lpe
-mov $0,$5
-add $0,$2
+add $1,$4
+mov $0,$1
 sub $0,1

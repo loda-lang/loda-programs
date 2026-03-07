@@ -1,6 +1,6 @@
 ; A161816: Denominator of fraction in Redheffer type matrix.
 ; 1,2,4,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072
-; Formula: a(n) = 2^max(truncate((n-2)^(-n+2))+n-2,0)
+; Formula: a(n) = 2^max(if(((n-2)^2)==1,(n-2)^(-n+2),if((-n+2)<=(-1),0,(n-2)^(-n+2)))+n-2,0)
 
 #offset 1
 

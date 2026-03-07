@@ -12,7 +12,7 @@ lpb $0
   mov $3,$4
   div $3,$1
   add $1,1
-  pow $2,0
+  mov $2,1
   add $5,$3
 lpe
 mov $0,$5

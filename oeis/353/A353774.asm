@@ -1,26 +1,36 @@
 ; A353774: Expansion of e.g.f. 1/(1 - (exp(x) - 1)^3).
-; Submitted by Aexoden
+; Submitted by loader3229
 ; 1,0,0,6,36,150,1260,16926,197316,2286150,32821020,548528046,9515702196,174531124950,3521913283980,76969474578366,1777400236160676,43405229295464550,1126972561394470140,30949983774936839886,893095888222540548756,27035433957000465352950,858056801888362343899500,28482332738853890242704606,986206131761446174716482436,35564229715529001641988438150,1334008220735505142906332132060,51966919144653160508582413484526,2099233566505485533199806249017716,87825389566331794571324585149968150
 
-mov $2,$0
-add $2,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  mov $0,$3
-  sub $0,$2
-  mov $4,$0
-  seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  lpb $0
-    div $0,2
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,24493 ; a(n) = C(n,0) + C(n,3) + ... + C(n,3[n/3]).
+    mov $4,$7
+    add $4,$3
+    seq $4,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  trn $2,3
-  mul $4,2
-  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  mul $0,$4
-  add $1,$0
+  mov $5,$2
+  add $5,$9
+  seq $5,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1
-div $0,2

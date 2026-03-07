@@ -17,8 +17,7 @@ lpb $2
   pow $5,$8
   mov $1,$4
   div $1,$5
-  sub $1,3
-  equ $1,5
+  equ $1,8
   add $6,$1
   mov $7,$6
   neq $7,$0

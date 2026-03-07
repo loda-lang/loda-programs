@@ -1,30 +1,22 @@
 ; A125266: Number of repetitions in A007918.
-; Submitted by booc0mtaco
+; Submitted by [SG]KidDoesCrunch
 ; 3,1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8
+; Formula: a(n) = c(n)+1, b(n) = A159477((d(n-1)==0)+b(n-1)+1), b(3) = 5, b(2) = 3, b(1) = 2, b(0) = 0, c(n) = -b(n-1)+A159477((d(n-1)==0)+b(n-1)+1)-1, c(3) = 1, c(2) = 0, c(1) = 2, c(0) = 0, d(n) = (d(n-1)==0)+b(n-1), d(3) = 3, d(2) = 2, d(1) = 1, d(0) = 0
 
 #offset 1
 
-sub $0,1
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$6
-  add $0,$4
-  trn $0,1
-  sub $0,2
-  mov $2,1
-  add $2,$0
-  add $2,2
-  mov $1,$2
-  seq $1,40 ; The prime numbers.
-  mov $0,$1
-  add $0,1
-  mov $3,$4
-  mul $3,$0
-  add $5,$3
+lpb $0
+  sub $0,1
+  equ $3,0
+  add $3,$1
+  mov $2,$3
+  add $2,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $1,1
+  mul $1,$4
+  sub $2,$1
+  mov $4,1
+  add $1,$2
 lpe
-min $6,1
-mul $6,$0
-mov $0,$5
-sub $0,$6
+mov $0,$2
+add $0,1

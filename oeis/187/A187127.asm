@@ -1,7 +1,7 @@
 ; A187127: Triangular numbers k*(k+1)/2 mod 100, sorted and uniqued.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 0,1,3,5,6,10,11,15,16,20,21,25,26,28,30,31,35,36,40,41,45,46,50,51,53,55,56,60,61,65,66,70,71,75,76,78,80,81,85,86,90,91,95,96
-; Formula: a(n) = floor((4*floor((10*n+13)/22)+3*floor((10*n+3)/11)+17)/2)-12
+; Formula: a(n) = floor((4*floor((10*n+13)/22)+3*floor((10*n+3)/11)+9)/2)-8
 
 #offset 1
 
@@ -15,9 +15,8 @@ sub $1,6
 div $1,11
 add $1,3
 add $0,$1
-add $0,4
 mul $0,2
 add $1,$0
 mov $0,$1
 div $0,2
-sub $0,12
+sub $0,8

@@ -8,7 +8,6 @@ mov $1,$0
 bin $1,2
 mul $1,8
 mov $2,1
-mov $4,0
 mov $6,$1
 lpb $6
   sub $6,1
@@ -40,5 +39,4 @@ div $1,$2
 add $1,$4
 div $1,$5
 mod $1,10
-sub $0,1
 mov $0,$1

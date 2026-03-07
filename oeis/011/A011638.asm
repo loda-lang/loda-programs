@@ -1,5 +1,5 @@
 ; A011638: 63rd cyclotomic polynomial.
-; Submitted by Solidair79
+; Submitted by [SG]KidDoesCrunch
 ; 1,0,0,-1,0,0,0,0,0,1,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,-1,0,0,1
 
 mov $1,$0
@@ -15,7 +15,6 @@ lpb $1
   mov $6,$4
   equ $6,3
   sub $5,$6
-  pow $2,5
   add $2,18
   add $3,$5
 lpe

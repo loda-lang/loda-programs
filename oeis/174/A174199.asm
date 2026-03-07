@@ -14,5 +14,4 @@ mov $1,$0
 add $1,2
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $1,$2
-add $0,1
 mov $0,$1

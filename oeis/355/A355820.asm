@@ -1,7 +1,7 @@
 ; A355820: a(n) = 1 if A003961(n) and A276086(n) are relatively prime, otherwise 0, where A003961 is fully multiplicative with a(p) = nextprime(p), and A276086 is primorial base exp-function.
 ; Submitted by Qingyao Sun
 ; 1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0
-; Formula: a(n) = truncate(0^(gcd(A283980(n),A276086(n-1))-1))
+; Formula: a(n) = if((gcd(A283980(n),A276086(n-1))-1)<=(-1),0,0^(gcd(A283980(n),A276086(n-1))-1))
 
 #offset 1
 

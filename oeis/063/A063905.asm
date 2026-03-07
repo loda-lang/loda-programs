@@ -8,5 +8,4 @@
 mov $1,$0
 add $1,1
 seq $1,175944 ; 1 appears once, n-th prime p appears p times.
-sub $0,1
 mov $0,$1

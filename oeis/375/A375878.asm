@@ -1,41 +1,37 @@
 ; A375878: E.g.f. satisfies A(x) = 1/(1 - x)^(2*A(x)^(1/2)).
-; Submitted by vonboedefeldt
+; Submitted by loader3229
 ; 1,2,10,78,832,11320,187968,3693760,83970640,2170052928,62876256000,2019782393904,71268840658464,2740911076718256,114134851494134352,5116804468061982000,245747690114319479808,12589481527535031074304,685316177026591879217664
 
-mov $19,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,1
-    sub $7,$2
-    mul $19,2
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    add $6,2
+    seq $6,7334 ; Number of spanning trees in the graph K_{n}/e, which results from contracting an edge e in the complete graph K_{n} on n vertices (for n>=2).
+    mov $4,$7
+    add $4,$3
+    seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  sub $3,1
-  mov $19,0
+  mov $5,$2
+  add $5,$9
+  seq $5,271703 ; Triangle read by rows: the unsigned Lah numbers T(n, k) = binomial(n-1, k-1)*n!/k! if n > 0 and k > 0, T(n, 0) = 0^n and otherwise 0, for n >= 0 and 0 <= k <= n.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
-mov $2,0
-mov $3,$0
-mov $0,$14
-lpb $3
-  mov $4,$2
-  add $4,3
-  pow $4,$0
-  add $2,20
-  mul $$2,$4
-  add $0,1
-  mul $1,-1
-  add $1,$$2
-  sub $2,19
-  sub $3,1
-lpe
-equ $0,0
-add $0,$1
+mov $0,$1

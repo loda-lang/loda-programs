@@ -17,17 +17,17 @@ lpb $0
   lpb $10
     sub $10,1
     mov $6,$7
-    seq $6,12262 ; Expansion of e.g.f. exp(arctanh(arcsinh(x))).
+    seq $6,13013 ; exp(sinh(x)+log(x+1))=1+2*x+3/2!*x^2+5/3!*x^3+13/4!*x^4+37/5!*x^5...
     mov $4,$7
     add $4,$3
-    seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+    seq $4,271703 ; Triangle read by rows: the unsigned Lah numbers T(n, k) = binomial(n-1, k-1)*n!/k! if n > 0 and k > 0, T(n, 0) = 0^n and otherwise 0, for n >= 0 and 0 <= k <= n.
     mul $4,$6
     add $7,1
     add $8,$4
   lpe
   mov $5,$2
   add $5,$9
-  seq $5,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  seq $5,111595 ; Triangle of coefficients of square of Hermite polynomials divided by 2^n with argument sqrt(x/2).
   mul $5,$8
   sub $0,1
   add $1,$5

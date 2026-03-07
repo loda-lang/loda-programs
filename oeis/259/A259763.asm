@@ -1,39 +1,36 @@
 ; A259763: Number of symmetric n X n (0,1)-matrices with pairwise distinct rows and columns.
-; Submitted by Katja
+; Submitted by loader3229
 ; 1,2,6,44,716,24416,1680224,229468288,61820527104,32848197477760,34502874046006912,71850629135663531776,297429744309497638961920,2452504520881914016303901696,40340635076928240671195746599936,1324981038432182976845483456362661888,86953044949519288083916385603832568137728,11406145556089638461976936982551333441952514048,2991409343314097584611279462323844517818531513270272,1568763759119893380608154292018368012871570633359403319296,1645206445308174657272538249307950042819494731860733314100690944
 
-mov $19,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,1
-    sub $7,$2
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,6898 ; a(n) = Sum_{k=0..n} C(n,k)*2^(k*(k+1)/2).
+    mov $4,$7
+    add $4,$3
+    seq $4,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  sub $3,1
-  mov $19,0
+  mov $5,$2
+  add $5,$9
+  seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
-mov $2,0
-mov $3,$0
-mov $0,$14
-lpb $3
-  add $0,1
-  add $2,20
-  mov $4,2
-  pow $4,$0
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  add $0,$2
-  sub $3,1
-lpe
-equ $0,0
-add $0,$1
+mov $0,$1

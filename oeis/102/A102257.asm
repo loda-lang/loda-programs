@@ -1,7 +1,7 @@
 ; A102257: Begin with 3, multiply each digit by 2, separate the digits.
 ; Submitted by Goldislops
 ; 3,6,1,2,2,4,4,8,8,1,6,1,6,2,1,2,2,1,2,4,2,4,4,2,4,8,4,8,8,4,8,1,6,8,1,6,1,6,8,1,6,2,1,2,1,6,2,1,2,2,1,2,1,6,2,1,2,4,2,4,2,1,2,4,2,4,4,2,4,2,1,2,4,2,4,8,4,8,4,2
-; Formula: a(n) = truncate((c(n)-2)/2)+1, b(n) = -100*truncate(b(n-1)/truncate(10^logint(b(n-1),10)))*truncate(10^logint(b(n-1),10))+100*b(n-1)+20*truncate(b(n-1)/truncate(10^logint(b(n-1),10))), b(1) = 60, b(0) = 3, c(n) = 2*truncate(b(n-1)/truncate(10^logint(b(n-1),10))), c(1) = 6, c(0) = 0
+; Formula: a(n) = truncate((c(n)-2)/2)+1, b(n) = -100*truncate(b(n-1)/(10^logint(b(n-1),10)))*10^logint(b(n-1),10)+100*b(n-1)+20*truncate(b(n-1)/(10^logint(b(n-1),10))), b(1) = 60, b(0) = 3, c(n) = 2*truncate(b(n-1)/(10^logint(b(n-1),10))), c(1) = 6, c(0) = 0
 
 #offset 1
 

@@ -1,24 +1,26 @@
 ; A101306: a(n) = Sum_{i=1..n} {last digit of prime(i)}.
-; Submitted by Just Jake
+; Submitted by sbo92
 ; 2,5,10,17,18,21,28,37,40,49,50,57,58,61,68,71,80,81,88,89,92,101,104,113,120,121,124,131,140,143,150,151,158,167,176,177,184,187,194,197,206,207,208,211,218,227,228,231,238,247,250,259,260,261,268,271,280
 
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
+mov $4,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$4
+  sub $0,$1
+  mul $0,-1
+  mov $3,$0
+  equ $3,$0
+  sub $3,$0
   mov $0,$3
-  sub $0,$2
-  mov $1,1
-  lpb $1
-    sub $1,1
-    add $0,1
-    seq $0,40 ; The prime numbers.
-    mod $0,10
+  seq $0,40 ; The prime numbers.
+  lpb $0
+    sub $0,10
   lpe
-  add $4,$0
+  add $2,$0
 lpe
-mov $0,$4
+mov $0,$2

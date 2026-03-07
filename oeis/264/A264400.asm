@@ -13,8 +13,7 @@ lpb $0
     seq $1,299473 ; a(n) = 3*p(n), where p(n) is the number of partitions of n.
     add $3,$1
     sub $4,$0
-    add $4,3
-    trn $4,3
+    max $4,0
   lpe
   max $0,1
   add $2,1

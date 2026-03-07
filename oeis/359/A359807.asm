@@ -1,15 +1,18 @@
 ; A359807: a(1) = 0; thereafter a(n) is the largest a(i) + i which is < n among i = 1..n-1.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,1,3,4,4,4,7,7,9,10,11,11,11,11,15,16,16,16,19,19,21,21,23,24,25,26,26,26,26,26,31,31,33,34,35,35,35,35,39,40,40,40,43,44,44,44,47,47,49,49,51,51,53,54,55,56,57,57,57,57,57,57,63,64,64,64,67,67,69,69,71,72,73,74,74,74,74,74,79
-; Formula: a(n) = truncate((2*A094591(n)-2*n-2)/2)
 
 #offset 1
 
-mov $1,$0
+mov $1,2
 sub $0,1
-seq $1,94591 ; a(0) = 1; a(n) = n + (largest element of {a} <= n).
-sub $1,$0
-mul $1,2
+lpb $0
+  sub $0,1
+  mov $3,$5
+  mov $4,1
+  add $4,$3
+  rol $4,$1
+  add $1,$5
+lpe
 mov $0,$1
-sub $0,4
-div $0,2
+sub $0,2

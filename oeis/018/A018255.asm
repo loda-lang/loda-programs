@@ -1,11 +1,9 @@
 ; A018255: Divisors of 30.
-; Submitted by iBezanilla
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,5,6,10,15,30
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

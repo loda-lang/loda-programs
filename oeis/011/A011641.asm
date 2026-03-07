@@ -1,5 +1,5 @@
 ; A011641: 70th cyclotomic polynomial.
-; Submitted by lotusexcelle
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,0,0,-1,-1,-1,-1,0,1,1,1,1,1,0,-1,-1,-1,-1,0,0,0,1,1
 
 mov $1,-1
@@ -13,7 +13,5 @@ lpb $0
   trn $0,7
   add $2,$3
 lpe
-mul $2,2
 mov $0,$2
 mul $0,$1
-div $0,2

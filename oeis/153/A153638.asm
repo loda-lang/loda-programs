@@ -1,9 +1,8 @@
 ; A153638: Odiousness of triangular numbers.
-; Submitted by loader3229
+; Submitted by Fiskinge
 ; 0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1
-; Formula: a(n) = sumdigits(binomial(n+1,2),2)%2
+; Formula: a(n) = sumdigits(n*(n+1),2)%2
 
-add $0,1
-bin $0,2
+fac $0,2
 dgs $0,2
 mod $0,2

@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,29148 ; Expansion of 1/((1-x^2)(1-x^3)(1-x^5)(1-x^11)).
+  seq $2,29148 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)*(1-x^11)).
   trn $0,31
   add $1,$2
 lpe

@@ -11,8 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,104714 ; Greatest common divisor of a Fibonacci number and its index.
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

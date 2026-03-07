@@ -12,5 +12,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   seq $0,13491 ; exp(sinh(x)-arctanh(x))=1-1/3!*x^3-23/5!*x^5+10/6!*x^6-719/7!*x^7...
+  mov $3,13
 lpe
 mul $0,$1

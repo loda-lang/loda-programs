@@ -1,12 +1,10 @@
 ; A045262: Numbers whose base-5 representation contains exactly three 1's and three 4's.
-; Submitted by Flashfire42
+; Submitted by rajab
 ; 3999,4299,4359,4371,5799,5859,5871,6159,6171,6231,13299,13359,13371,13659,13671,13731,15159,15171,15231,15531,16499,16799,16859,16871,18299,18359,18371,18659,18671,18731,18999,19299
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
 sub $2,97
 pow $2,4
 lpb $2

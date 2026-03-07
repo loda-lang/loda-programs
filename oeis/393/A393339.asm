@@ -1,5 +1,5 @@
 ; A393339: Indices of records in A393337.
-; Submitted by teoparas
+; Submitted by Science United
 ; 1,8,16,32,40,64,80,128,160
 
 #offset 1
@@ -19,6 +19,4 @@ lpb $2
 lpe
 mov $0,$1
 max $0,2
-sub $0,2
 div $0,2
-add $0,1
