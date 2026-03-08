@@ -1,0 +1,106 @@
+; A060164: Number of orbits of length n under the map whose periodic points are counted by A000364.
+; Submitted by KetamiNO [YouTube]
+; 1,2,20,345,10104,450450,28480140,2423938845,267208852820,37037118818700,6304443126648900,1292877846962865230,314390193022547991720,89447117243116404721950,29436259549934873636908816,11094961973721205588579579845,4748429366816935180127543967840,2290114463306539006796926377160050,1236293711949637276421990977694681460,742557535905749000893857820551731922276,493553463500933910447521776416437417949960,361253610118072395618547295909941897505733450,289892935508067172931957759772771660761917725420
+
+#offset 1
+
+sub $0,1
+mov $1,1
+add $1,$0
+gcd $2,$1
+pow $2,2
+mov $4,$0
+add $4,1
+mov $5,$0
+bin $5,2
+add $5,$0
+add $5,$4
+lpb $4
+  sub $4,1
+  mov $0,$5
+  sub $0,$4
+  mov $6,$0
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  mov $8,$6
+  bin $6,2
+  mov $9,$0
+  sub $9,$6
+  mov $11,$8
+  div $11,$9
+  mov $10,$8
+  mod $10,$9
+  equ $10,0
+  seq $11,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $11,$10
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
+  mov $13,$0
+  add $13,$0
+  bin $13,2
+  add $13,1
+  mov $17,$13
+  mul $17,8
+  nrt $17,2
+  sub $17,1
+  div $17,2
+  add $17,1
+  pow $17,2
+  sub $17,$13
+  mov $13,$17
+  mul $13,8
+  nrt $13,2
+  div $13,2
+  mov $14,$17
+  add $14,$13
+  mov $15,$14
+  add $15,2
+  mov $18,$15
+  mul $18,8
+  nrt $18,2
+  div $18,2
+  mov $19,$18
+  add $19,1
+  bin $19,2
+  sub $15,1
+  sub $15,$19
+  add $15,$18
+  add $15,$14
+  mov $13,$14
+  add $13,1
+  mov $16,$13
+  mul $16,8
+  nrt $16,2
+  div $16,2
+  bin $16,2
+  sub $13,$16
+  sub $15,$13
+  mov $13,$15
+  add $13,1
+  mov $12,$13
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  add $12,1
+  pow $12,2
+  sub $12,$13
+  mov $13,$12
+  seq $13,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mov $0,$13
+  mul $0,$11
+  add $3,$0
+lpe
+mov $0,$3
+sub $0,1
+mul $1,$0
+div $1,$2
+mov $0,$1
+add $0,1
