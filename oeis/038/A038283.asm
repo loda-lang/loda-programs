@@ -1,7 +1,7 @@
 ; A038283: Triangle whose (i,j)-th entry is binomial(i,j)*8^(i-j)*5^j.
 ; Submitted by iBezanilla
 ; 1,8,5,64,80,25,512,960,600,125,4096,10240,9600,4000,625,32768,102400,128000,80000,25000,3125,262144,983040,1536000,1280000,600000,150000,15625,2097152,9175040,17203200,17920000,11200000,4200000
-; Formula: a(n) = truncate(5^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(8^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,5^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,8^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))
 
 add $0,1
 mov $1,$0

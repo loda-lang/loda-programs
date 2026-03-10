@@ -1,5 +1,5 @@
 ; A360716: Number of unordered pairs of self-avoiding paths whose sets of nodes are disjoint subsets of a set of n points on a circle; one-node paths are not allowed.
-; Submitted by Irish Republican
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,3,45,435,3465,24794,165942,1061730,6578550,39796053,236309931,1382504669,7989938775,45704622660,259155482652,1458298435572,8151155034300,45290328792695,250308998693145,1376766613411959,7539656755416885,41126122248463038,223513887538508850,1210707873300202550,6537847299012919890
 
 #offset 1
@@ -30,9 +30,8 @@ lpb $5
   mul $1,6
   mul $1,$9
   mul $1,$8
-  div $1,384
   mul $2,$1
   add $4,$2
 lpe
 mov $0,$4
-div $0,2
+div $0,768

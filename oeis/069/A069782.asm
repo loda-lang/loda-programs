@@ -1,14 +1,15 @@
 ; A069782: Numbers k such that gcd(d(k^3), d(k)) = 2^w for some w.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80
-; Formula: a(n) = floor(valuation(780^(n-1),2)/2)+1
+; Formula: a(n) = valuation((n+6)^(n+6),n+6)-6
 
 #offset 1
 
 sub $0,1
-mov $1,780
-pow $1,$0
-lex $1,2
-mov $0,$1
-div $0,2
-add $0,1
+mov $1,$0
+mov $0,7
+add $0,$1
+mov $1,$0
+pow $0,$0
+lex $0,$1
+sub $0,6

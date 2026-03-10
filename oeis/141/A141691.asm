@@ -1,5 +1,5 @@
 ; A141691: A linear combination of Eulerian numbers (A008292) and Pascal's triangle (A007318); t(n,m)=(3*A008292(n,m)-A007318(n,m))/2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Flashfire42
 ; 1,1,1,1,5,1,1,15,15,1,1,37,96,37,1,1,83,448,448,83,1,1,177,1779,3614,1779,177,1,1,367,6429,23411,23411,6429,367,1,1,749,21898,132323,234250,132323,21898,749,1,1,1515,71742,682746,1965468,1965468,682746,71742
 
 #offset 1
@@ -46,9 +46,7 @@ lpb $5
 lpe
 mov $0,$2
 mul $0,2
-sub $0,1
 sub $1,$0
 div $0,2
 sub $0,$1
 div $0,2
-add $0,1

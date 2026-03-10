@@ -1,20 +1,14 @@
 ; A178166: 10^a(n) Pascal triangle, where a(n) = A007318(n).
-; Submitted by loader3229
+; Submitted by Science United
 ; 10,10,10,10,100,10,10,1000,1000,10,10,10000,1000000,10000,10,10,100000,10000000000,10000000000,100000,10,10,1000000,1000000000000000,100000000000000000000,1000000000000000,1000000,10,10,10000000,1000000000000000000000
-; Formula: a(n) = truncate(10^binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
-add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $3,$2
-add $3,1
-bin $3,2
-sub $0,$3
-sub $0,1
-bin $2,$0
-mov $1,10
-pow $1,$2
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+div $0,-1
+add $0,$1
+bin $1,$0
+mov $2,10
+pow $2,$1
+mov $0,$2

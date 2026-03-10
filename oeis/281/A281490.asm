@@ -1,29 +1,26 @@
 ; A281490: Expansion of f(x, x^3) * f(x, x^8) in powers of x where f(, ) is Ramanujan's general theta function.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,1,1,0,1,1,1,1,1,3,1,0,2,1,1,1,1,0,0,2,1,1,0,1,2,0,2,2,1,2,1,1,0,1,3,1,0,1,2,0,0,0,1,2,2,1,0,0,0,2,1,2,1,1,2,1,2,1,0,3,0,1,1,0,4,1,1,0,1,0,1,1,1,1,0,1,1,3
 
+mov $5,3
 mov $1,$0
 mul $1,2
 mov $2,$0
 add $2,2
 add $2,$1
-mov $8,3
-mov $5,$2
-add $5,3
-lpb $5
-  sub $5,$8
-  mov $6,$5
-  max $6,0
-  mov $3,$6
-  mul $3,24
-  nrt $3,2
-  add $3,2
-  div $3,2
-  bin $3,2
-  mul $6,3
-  equ $6,$3
-  add $8,$7
-  add $4,$6
-  mov $7,3
+add $2,3
+lpb $2
+  sub $2,$5
+  mov $4,$2
+  max $4,0
+  mul $4,24
+  add $4,1
+  mov $7,$4
+  nrt $4,2
+  pow $4,2
+  equ $4,$7
+  add $6,3
+  add $3,$4
+  mov $5,$6
 lpe
-mov $0,$4
+mov $0,$3

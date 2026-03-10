@@ -1,11 +1,10 @@
 ; A241771: Number of simple connected graphs with n nodes and exactly 5 articulation points (cutpoints).
-; Submitted by arkiss
+; Submitted by iBezanilla
 ; 0,0,0,0,0,0,1,9,97,1029
 
 #offset 1
 
 mov $3,$0
-sub $0,1
 add $3,1
 mul $3,3
 lpb $3

@@ -1,14 +1,9 @@
 ; A132247: Twin primes congruent to {1, 11, 13, 17, 19, 29} mod 30.
-; Submitted by Science United
+; Submitted by Vitmalok
 ; 11,13,17,19,29,31,41,43,59,61,71,73,101,103,107,109,137,139,149,151,179,181,191,193,197,199,227,229,239,241,269,271,281,283,311,313,347,349,419,421,431,433,461,463,521,523,569,571,599,601,617,619,641,643
-; Formula: a(n) = truncate((A278972(n+3)-22)/2)+11
+; Formula: a(n) = A001097(n+3)
 
 #offset 1
 
 add $0,3
-mov $1,$0
-seq $1,278972 ; Twice the twin primes.
-mov $0,$1
-sub $0,22
-div $0,2
-add $0,11
+seq $0,1097 ; Twin primes.

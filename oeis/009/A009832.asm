@@ -1,19 +1,17 @@
 ; A009832: Expansion of e.g.f. tanh(x)*exp(x).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,2,1,-4,1,62,1,-1384,1,50522,1,-2702764,1,199360982,1,-19391512144,1,2404879675442,1,-370371188237524,1,69348874393137902,1,-15514534163557086904,1,4087072509293123892362,1,-1252259641403629865468284,1
 
-mov $2,$0
-add $2,1
+mov $2,1
 lpb $2
   sub $2,1
-  mov $4,$3
-  mod $4,2
-  mov $1,$3
+  mov $3,$0
+  mod $3,2
+  mov $1,$0
   div $1,2
   seq $1,28296 ; Expansion of e.g.f. Gudermannian(x) = 2*arctan(exp(x)) - Pi/2.
-  add $3,1
-  mul $4,$1
-  sub $1,$4
+  mul $3,$1
+  sub $1,$3
 lpe
 mov $0,$1
 sub $0,1

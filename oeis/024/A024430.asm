@@ -1,10 +1,35 @@
 ; A024430: Expansion of e.g.f. cosh(exp(x)-1).
-; Submitted by DukeBox
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,0,1,3,8,25,97,434,2095,10707,58194,338195,2097933,13796952,95504749,692462671,5245040408,41436754261,340899165549,2915100624274,25857170687507,237448494222575,2253720620740362,22078799199129799,222987346441156585,2319210969809731600,24814199204060811913,272848114308187363275,3080250304510265720392,35670461974013556092289,423383124806722113882761,5146743270975278399645746,64032411745442269790870791,814792953749264238351995387,10597441247118532042323739714,140799479471167476990126130827
-; Formula: a(n) = truncate((A000110(n)+A000587(n))/2)
 
-mov $1,$0
-seq $1,587 ; Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-add $0,$1
-div $0,2
+mov $3,1
+mov $9,$0
+mov $11,1
+mov $12,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $6,0
+  mov $10,0
+  add $2,1
+  mov $7,$2
+  lpb $7
+    mov $8,$7
+    mul $8,-1
+    sub $7,1
+    mov $4,$7
+    pow $4,$9
+    bin $8,$6
+    mul $8,$4
+    add $10,$8
+    add $6,1
+  lpe
+  mov $5,$10
+  div $5,$3
+  mul $5,$12
+  sub $12,$11
+  add $1,$5
+  mul $3,$2
+  mul $11,-1
+lpe
+mov $0,$1
