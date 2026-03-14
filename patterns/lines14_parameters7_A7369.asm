@@ -14,8 +14,8 @@ mov $0,$1
 add $0,1 ; source=parameter 6
 
 ; parameter 0
-; number of unique values: 5
-; value: 1,2,9,23,28
+; number of unique values: 4
+; value: 1,2,9,23
 
 ; parameter 1
 ; number of unique values: 2
@@ -26,21 +26,21 @@ add $0,1 ; source=parameter 6
 ; value: 1,2
 
 ; parameter 3
-; number of unique values: 20
-; value: 54015,54973,55951,63974,71960,83475,88722,107016,190436,227990,259829,280827,287112,307666,322860,332042,335062,339767,357761,365605
+; number of unique values: 18
+; value: 54015,54973,55951,63974,71960,83475,88722,107016,190436,227990,259829,280827,307666,322860,332042,335062,339767,357761
 
 ; parameter 4
 ; number of unique values: 2
 ; value: 0,4
 
 ; parameter 5
-; number of unique values: 4
-; value: 1,2,5,6
+; number of unique values: 3
+; value: 1,2,5
 
 ; parameter 6
 ; number of unique values: 4
 ; value: 1,2,4,6
 
 ; programs with this pattern
-; number of programs: 24
-; program id: 7369,43007,50941,54021,60658,64000,64635,83476,91178,92256,107227,109608,132895,134100,134101,163836,171820,190437,230851,232531,237287,287113,307055,364056
+; number of programs: 21
+; program id: 7369,43007,50941,54021,60658,64000,83476,91178,107227,109608,132895,134100,134101,163836,171820,190437,230851,232531,237287,307055,364056
