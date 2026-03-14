@@ -1,0 +1,72 @@
+; A241357: Number of 2Xn 0..3 arrays with no element equal to zero plus the sum of elements to its left or one plus the sum of the elements above it or one plus the sum of the elements diagonally to its northwest or zero plus the sum of the elements antidiagonally to its northeast, modulo 4.
+; Submitted by loader3229
+; 3,3,9,17,23,53,103,160,344,643,1059,2196,4039,6930,13970,25512,45059,88830,161841,291573,565051,1029968,1879844,3596548,6568902,12087395,22908471,41950860,77573588,146021963,268115989,497179651,931373038,1714275422,3183550998,5943881019,10962716696,20372253097,37950003176,70109949756,130312733358,242385185985,448368312774,833333606684,1548517220617,2867277310664,5328175976455,9894903927507,18334920920376,34063928289615,63236669265626,117236563794143,217764041645257,404175661788596
+
+#offset 1
+
+mov $2,3
+mov $3,3
+mov $4,9
+mov $5,17
+mov $6,23
+mov $7,53
+mov $8,103
+mov $9,160
+mov $10,344
+mov $11,643
+mov $12,1059
+mov $13,2196
+mov $14,4039
+mov $15,6930
+mov $16,13970
+mov $17,25512
+mov $18,45059
+mov $19,88830
+mov $20,161841
+mov $21,291573
+sub $0,1
+lpb $0
+  mov $2,0
+  rol $2,20
+  mov $22,$4
+  mul $22,6
+  sub $0,1
+  add $21,$22
+  mov $22,$5
+  mul $22,-1
+  add $21,$22
+  mov $22,$6
+  mul $22,-6
+  add $21,$22
+  mov $22,$7
+  mul $22,-2
+  add $21,$22
+  mov $22,$8
+  mul $22,6
+  add $21,$22
+  add $21,$9
+  mov $22,$10
+  mul $22,-10
+  add $21,$22
+  mov $22,$11
+  mul $22,-5
+  add $21,$22
+  mov $22,$12
+  mul $22,16
+  add $21,$22
+  mov $22,$13
+  mul $22,10
+  add $21,$22
+  add $21,$14
+  mov $22,$15
+  mul $22,-18
+  add $21,$22
+  mov $22,$16
+  mul $22,-5
+  add $21,$22
+  mov $22,$18
+  mul $22,8
+  add $21,$22
+  add $21,$19
+lpe
+mov $0,$2
