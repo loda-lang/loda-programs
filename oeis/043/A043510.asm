@@ -13,8 +13,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,316866 ; Number of times 5 appears in decimal expansion of n.
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

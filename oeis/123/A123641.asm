@@ -1,7 +1,7 @@
 ; A123641: Triangular array related to sequence A123640 with row sum A001045.
 ; Submitted by loader3229
 ; 1,0,1,1,0,2,0,1,0,4,1,0,2,0,8,0,1,0,4,0,16,1,0,2,0,8,0,32,0,1,0,4,0,16,0,64,1,0,2,0,8,0,32,0,128,0,1,0,4,0,16,0,64,0,256,1,0,2,0,8,0,32,0,128,0,512,0,1,0,4,0,16,0,64,0,256,0,1024,1
-; Formula: a(n) = truncate(((2*truncate((sqrtint(8*n)-1)/2)+2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-4*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n)/2))^max(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,2))/4)
+; Formula: a(n) = truncate(((2*floor((sqrtint(8*n)-1)/2)+2*n-2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)-4*truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+n)/2))^max(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n,2))/4)
 
 #offset 1
 

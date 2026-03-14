@@ -1,5 +1,5 @@
 ; A380775: Decimal expansion of the long/short edge length ratio of a pentagonal icositetrahedron.
-; Submitted by BlisteringSheep
+; Submitted by kpmonaghan
 ; 1,4,1,9,6,4,3,3,7,7,6,0,7,0,8,0,5,6,6,2,7,5,9,2,6,2,8,2,3,2,6,6,4,3,3,0,0,2,1,2,0,8,9,3,7,3,0,4,8,7,9,6,1,2,3,3,8,9,3,7,9,3,1,9,7,0,2,1,0,1,6,1,1,0,4,0,9,8,3,2
 
 #offset 1
@@ -14,9 +14,8 @@ lpb $3
   add $2,$7
   add $6,$5
   mov $7,$6
-  mul $7,2
+  mul $7,4
   add $5,$2
-  add $6,$5
 lpe
 mov $4,10
 pow $4,$0

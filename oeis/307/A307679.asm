@@ -7,29 +7,32 @@ add $9,1
 bin $9,2
 add $0,1
 lpb $0
-  mov $7,0
-  mov $8,0
-  mov $3,$2
-  add $3,1
-  bin $3,2
-  mov $10,$2
-  add $10,1
-  lpb $10
-    sub $10,1
-    mov $6,$7
-    seq $6,327941 ; Expansion of e.g.f. exp(Sum_{i>=1} Sum_{j>=2} x^(i*j) / (i*j)).
-    mov $4,$7
-    add $4,$3
-    seq $4,94587 ; Triangle of permutation coefficients arranged with 1's on the diagonal. Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
-    mul $4,$6
-    add $7,1
-    add $8,$4
-  lpe
+  sub $0,1
+  mov $4,$2
+  seq $4,28342 ; Expansion of Product_{i>=1} (1 - x^i)^(-1/i); also of exp(Sum_{n>=1} (d(n)*x^n/n)) where d is number of divisors function.
   mov $5,$2
   add $5,$9
-  seq $5,271703 ; Triangle read by rows: the unsigned Lah numbers T(n, k) = binomial(n-1, k-1)*n!/k! if n > 0 and k > 0, T(n, 0) = 0^n and otherwise 0, for n >= 0 and 0 <= k <= n.
+  mov $7,$5
+  mov $8,$5
+  seq $8,97807 ; Riordan array (1/(1+x),1) read by rows.
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $10,$5
+  add $10,1
+  bin $10,2
+  sub $7,$10
+  mov $3,$5
+  sub $3,$7
+  mul $3,-1
+  mov $6,0
+  sub $6,$7
+  fac $6,$3
+  bin $5,$7
+  mul $5,$6
   mul $5,$8
-  sub $0,1
+  mul $5,$4
   add $1,$5
   add $2,1
 lpe
