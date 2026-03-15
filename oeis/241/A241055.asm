@@ -1,0 +1,62 @@
+; A241055: Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or zero plus the sum of the elements above it or zero plus the sum of the elements diagonally to its northwest or one plus the sum of the elements antidiagonally to its northeast, modulo 4.
+; Submitted by loader3229
+; 2,3,2,10,18,18,46,58,102,173,264,487,738,1318,2151,3591,6192,10096,17480,28925,49131,82966,138977,236535,395979,671706,1131018,1908201,3226558,5432423,9189152,15486612,26156656,44151446,74485403,125808822,212222281,358365965,604772853,1020803256,1723266385,2908198711,4909668284,8286136822,13987186599,23609289629,39849301662,67266114192,113534713357,191644881684,323476936152,546005918974,921626581992,1555616041753,2625801337527,4432116077070,7481123978006,12627581408349,21314377595593
+
+#offset 1
+
+mov $2,2
+mov $3,3
+mov $4,2
+mov $5,10
+mov $6,18
+mov $7,18
+mov $8,46
+mov $9,58
+mov $10,102
+mov $11,173
+mov $12,264
+mov $13,487
+mov $14,738
+mov $15,1318
+mov $16,2151
+mov $17,3591
+mov $18,6192
+sub $0,1
+lpb $0
+  mov $20,0
+  mov $2,0
+  rol $2,17
+  add $20,2
+  sub $0,1
+  mov $19,$3
+  mul $19,$20
+  add $18,$19
+  mov $19,$6
+  mul $19,-2
+  add $18,$19
+  mov $19,$7
+  mul $19,2
+  add $18,$19
+  mov $19,$9
+  mul $19,-1
+  add $18,$19
+  mov $19,$11
+  mul $19,3
+  add $18,$19
+  mov $19,$12
+  mul $19,-2
+  add $18,$19
+  mov $19,$13
+  mul $19,-4
+  add $18,$19
+  mov $19,$14
+  mul $19,-3
+  add $18,$19
+  mov $19,$15
+  mul $19,3
+  add $18,$19
+  mov $19,$16
+  mul $19,3
+  add $18,$19
+lpe
+mov $0,$2

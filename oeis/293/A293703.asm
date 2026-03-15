@@ -1,0 +1,79 @@
+; A293703: a(n) is the length of the longest palindromic subsequence in the first differences of the list of the first n negative and positive roots of floor(tan(k))=1.
+; Submitted by loader3229
+; 1,3,5,7,9,11,13,15,15,17,17,19,19,21,21,23,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99,101,103,105,107,109,111,113,115,117,119,121,123,125,127,129,131,133,135,137,139,141,143,145,147,149
+
+#offset 1
+
+mov $2,1
+mov $3,3
+mov $4,5
+mov $5,7
+mov $6,9
+mov $7,11
+mov $8,13
+mov $9,15
+mov $10,15
+mov $11,17
+sub $0,1
+lpb $0
+  mov $13,$1
+  mul $13,-24
+  add $13,360
+  mul $2,$13
+  rol $2,10
+  mov $13,$1
+  mul $13,48
+  sub $13,696
+  mov $12,$2
+  mul $12,$13
+  mov $13,$1
+  mul $13,-48
+  add $13,600
+  add $11,$12
+  mov $12,$3
+  mul $12,$13
+  mov $13,$1
+  mul $13,48
+  sub $13,504
+  add $11,$12
+  mov $12,$4
+  mul $12,$13
+  mov $13,$1
+  mul $13,-48
+  add $13,408
+  add $11,$12
+  mov $12,$5
+  mul $12,$13
+  mov $13,$1
+  mul $13,48
+  sub $13,312
+  add $11,$12
+  mov $12,$6
+  mul $12,$13
+  mov $13,$1
+  mul $13,-67
+  add $13,387
+  add $11,$12
+  mov $12,$7
+  mul $12,$13
+  mov $13,$1
+  mul $13,96
+  sub $13,523
+  add $11,$12
+  mov $12,$8
+  mul $12,$13
+  mov $13,$1
+  mul $13,-53
+  add $13,50
+  add $11,$12
+  mov $12,$9
+  mul $12,$13
+  add $11,$12
+  mov $12,$10
+  mul $12,480
+  add $11,$12
+  div $11,240
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$2
