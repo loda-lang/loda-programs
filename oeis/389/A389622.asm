@@ -1,0 +1,126 @@
+; A389622: Perrin numbers (A001608) which are the difference of two Fibonacci numbers.
+; Submitted by Science United
+; 0,2,3,5,7,10,12,29,68
+
+#offset 1
+
+sub $0,1
+mov $2,1
+mov $3,1
+mov $4,2
+fil $4,3
+mov $7,3
+fil $7,3
+mov $10,4
+mov $11,5
+mov $12,6
+mov $13,7
+mov $14,8
+mov $15,9
+mov $16,10
+mov $17,11
+mov $18,12
+mov $19,13
+mov $20,15
+mov $23,20
+mov $24,22
+mov $25,23
+mov $26,25
+mov $27,27
+mov $28,30
+mov $29,32
+lpb $0
+  mov $31,$1
+  mul $31,4
+  sub $31,231
+  mul $2,$31
+  rol $2,28
+  mov $30,$2
+  mul $30,305
+  add $29,$30
+  mov $30,$3
+  mul $30,8
+  add $29,$30
+  mov $30,$4
+  mul $30,8
+  add $29,$30
+  mov $30,$5
+  mul $30,8
+  add $29,$30
+  mov $30,$6
+  mul $30,8
+  add $29,$30
+  mov $30,$7
+  mul $30,8
+  add $29,$30
+  mul $29,$24
+  mul $30,8
+  add $29,$30
+  mov $30,$9
+  mul $30,8
+  add $29,$30
+  mov $30,$10
+  mul $30,8
+  add $29,$30
+  mov $30,$11
+  mul $30,8
+  add $29,$30
+  mov $30,$12
+  mul $30,8
+  add $29,$30
+  mov $30,$13
+  mul $30,8
+  add $4,1
+  add $29,$30
+  add $29,$14
+  mov $30,$15
+  mul $30,8
+  add $29,$30
+  mov $30,$16
+  mul $30,8
+  add $29,$30
+  mov $30,$17
+  mul $30,8
+  add $29,$30
+  mov $30,$18
+  mul $30,8
+  add $29,$30
+  mov $30,$19
+  mul $30,8
+  equ $20,1
+  add $29,$30
+  mul $30,8
+  add $29,$30
+  mov $30,$21
+  mul $30,8
+  add $29,$30
+  mov $30,$22
+  mul $30,8
+  add $29,$30
+  mov $30,$23
+  mul $30,8
+  add $29,$30
+  mov $30,$24
+  mul $30,8
+  add $29,$30
+  mov $30,$25
+  mul $30,8
+  add $29,$30
+  mov $30,$26
+  mul $30,8
+  add $29,$30
+  mov $30,$27
+  mul $30,8
+  mov $31,$1
+  mul $31,-4
+  add $31,239
+  add $29,$30
+  mov $30,$28
+  mul $30,$31
+  add $29,$30
+  div $29,297
+  sub $0,1
+  add $1,1
+lpe
+mov $0,$23
+sub $0,20

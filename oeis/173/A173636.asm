@@ -1,0 +1,13 @@
+; A173636: Number of positive solutions of equation x(x+n)=y*y.
+; Submitted by Science United
+; 0,0,0,1,0,1,1,1,1,2,1,1,1,1,1,4,2,1,2,1,1,4,1,1,4,2,1,3,1,1,4,1,3,4,1,4,2,1,1,4,4,1,4,1,1,7,1,1,7,2,2,4,1,1,3,4,4,4,1,1,4,1,1,7,4,4,4,1,1,4,4,1,7,1,1,7,1,4,4
+; Formula: a(n) = truncate(A146564(if((if((max(n,1)%2)==0,max(n,1)/2,max(n,1))%2)==0,if((max(n,1)%2)==0,max(n,1)/2,max(n,1))/2,if((max(n,1)%2)==0,max(n,1)/2,max(n,1))))/3)
+
+mov $2,$0
+max $2,1
+mov $1,$2
+dif $1,2
+dif $1,2
+seq $1,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+div $1,3
+mov $0,$1

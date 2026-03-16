@@ -1,0 +1,8 @@
+; A279873: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 211", based on the 5-celled von Neumann neighborhood.
+; Submitted by Science United
+; 1,1,101,111,10000,10111,1010100,1111101,100000001,101111111,10101000000,11111011111,1000000000000,1011111111111,101010000000000,111110111111111,10000000000000000,10111111111111111,1010100000000000000,1111101111111111111,100000000000000000000,101111111111111111111,10101000000000000000000,11111011111111111111111,1000000000000000000000000,1011111111111111111111111,101010000000000000000000000,111110111111111111111111111,10000000000000000000000000000,10111111111111111111111111111
+; Formula: a(n) = truncate(A099820(A279875(n))/10)
+
+seq $0,279875 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 211", based on the 5-celled von Neumann neighborhood.
+seq $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
+div $0,10
