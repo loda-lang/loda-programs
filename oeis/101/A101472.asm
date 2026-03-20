@@ -1,25 +1,21 @@
 ; A101472: Numbers k such that the number k33 is prime.
-; Submitted by Jamie Morken(w4)
+; Submitted by MVeiga
 ; 2,4,7,10,14,17,19,23,26,28,34,35,37,38,41,47,49,52,53,61,67,68,73,74,79,82,89,91,94,95,97,98,101,103,104,107,116,118,119,124,130,136,139,140,145,146,152,157,160,163,164,166,170,173,181,182,184,193,194,202,203,205,214,221,224,233,236,238,241,245,247,250,256,257,259,266,268,277,284,289
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,1
-pow $2,2
-lpb $2
-  mul $3,2
-  add $3,33
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,50
-  sub $0,$3
-  mov $1,$0
-  max $1,0
-  equ $1,$0
-  mul $2,$1
-  sub $2,1
-  mov $3,$4
+mov $2,130
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,100
+  sub $3,$0
 lpe
-mov $0,$3
-div $0,50
+mov $0,$2
+sub $0,230
+div $0,100
+add $0,2

@@ -1,5 +1,5 @@
 ; A282044: Reduced Kronecker coefficients for the case a=2, b=3, i=4.
-; Submitted by Science United
+; Submitted by GraceFeng
 ; 0,0,0,0,1,2,5,9,16,24,37,51,71,93
 
 mov $8,$0
@@ -27,7 +27,6 @@ lpb $6
         equ $4,0
         add $0,$5
         div $0,2
-        mov $5,2
         lpb $10
           dif $10,2
           add $2,1
@@ -35,7 +34,7 @@ lpb $6
           sub $3,$4
         lpe
         div $0,$2
-        div $10,2
+        mov $5,2
       lpe
       mov $4,$0
       mul $4,$5

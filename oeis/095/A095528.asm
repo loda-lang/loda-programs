@@ -1,17 +1,16 @@
 ; A095528: a(n) = 68 written in base n.
-; Submitted by pm120
+; Submitted by [SG]KidDoesCrunch
 ; 11111111111111111111111111111111111111111111111111111111111111111111,1000100,2112,1010,233,152,125,104,75,68,62,58,53
 
 #offset 1
 
-mov $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-neq $1,0
-add $1,67
+trn $1,$2
+add $1,68
 lpb $1
   mov $4,$1
   mod $4,$2

@@ -1,5 +1,5 @@
 ; A044946: Runs of odd length in the base 6 representation of n.
-; Submitted by Thylia
+; Submitted by Science United
 ; 1,1,1,1,1,2,0,2,2,2,2,2,2,0,2,2,2,2,2,2,0,2,2,2,2,2,2,0,2,2,2,2,2,2,0,1,3,3,3,3,3,1,1,1,1,1,1,3,3,1,3,3,3,3,3,3,1,3,3,3,3,3,3,1,3,3,3,3,3,3,1,1,3,3,3,3,3,3,1,3
 
 #offset 1
@@ -17,8 +17,4 @@ lpb $0
   mov $1,$3
   add $1,$2
 lpe
-add $2,$4
-mov $0,$2
-mod $0,10
-add $0,10
-mod $0,10
+mov $0,$4

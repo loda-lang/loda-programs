@@ -1,9 +1,8 @@
 ; A130009: Third diagonal of difference array of A130008.
-; Submitted by p3d-cluster
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,-2,5,-12,29,-70,167,-392
 
-trn $0,1
-add $0,1
+max $0,1
 lpb $0
   mov $5,$0
   sub $0,1

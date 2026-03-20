@@ -1,23 +1,25 @@
 ; A121398: Main diagonal of triangle A121400; also equals the partial sums of column 0 (A121399) of the same triangle.
-; Submitted by amazing
+; Submitted by h8a1c5
 ; 1,2,5,11,28,70,184,486,1313,3576,9851,27319,76286,214120,603858,1709719,4857959,13845948,39572583,113380652,325576692,936796592,2700456452,7797587816,22550434989,65308288346,189388557677
 
-add $0,1
-lpb $0
-  mov $1,0
-  mov $3,$2
-  add $3,1
-  bin $3,2
-  mov $5,$2
-  add $5,1
-  lpb $5
-    sub $5,1
-    mov $4,$1
-    add $4,$3
-    seq $4,121400 ; Triangle, read by rows, where T(n,k) = T(n-1,k-1) + T(n-1,k) + T(n-1,k+1) for n>=k>=1, with T(0,0) = 1, T(n,n) = T(n,0) + T(n-1,n-1) for n>=1; T(n,k)=0 when n<k or k<0.
-    add $1,1
+mov $5,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$5
+  sub $0,$3
+  mov $2,$0
+  seq $2,121399 ; G.f. satisfies: A(x) = G(x)*A(x^2*G(x)) where G(x) is the g.f. of the Motzkin numbers (A001006): G = (1 + x*G + x^2*G^2).
+  mov $1,65
+  lpb $1
+    mod $1,7
+    mul $2,14
   lpe
-  sub $0,1
-  add $2,1
+  mov $0,$2
+  sub $0,14
+  div $0,14
+  add $0,1
+  add $4,$0
 lpe
 mov $0,$4
+add $0,1

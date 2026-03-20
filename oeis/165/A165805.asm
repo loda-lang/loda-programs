@@ -1,5 +1,5 @@
 ; A165805: Integers that start a trajectory x -> A008619(x) which contains only primes until terminating at 2 or 3.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,3,4,5,6,7,10,11,14,15,22,23,46,47,94,95
 
 #offset 1
@@ -10,11 +10,9 @@ div $0,2
 add $0,2
 mov $5,$0
 lpb $5
-  sub $5,5
-  trn $5,2
+  trn $5,7
   add $0,$5
-  trn $5,2
-  sub $0,$5
+  trn $5,6
 lpe
 mov $4,$0
 mod $4,2

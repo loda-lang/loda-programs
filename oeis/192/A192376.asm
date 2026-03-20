@@ -1,23 +1,20 @@
 ; A192376: Constant term of the reduction by x^2->x+2 of the polynomial p(n,x) defined below in Comments.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,0,7,16,73,256,975,3616,13521,50432,188247,702512,2621849,9784832,36517535,136285248,508623521,1898208768,7084211623,26438637648,98670339049,368242718464,1374300534895,5128959421024,19141537149297,71437189176064
+; Formula: a(n) = c(n-1), a(3) = 7, a(2) = 0, a(1) = 1, a(0) = 0, b(n) = 5*c(n-1)+3*a(n-1)+2*d(n-1)+b(n-1), b(3) = 73, b(2) = 16, b(1) = 7, b(0) = 0, c(n) = b(n-1), c(3) = 16, c(2) = 7, c(1) = 0, c(0) = 1, d(n) = 2*c(n-1)+b(n-1)+a(n-1)+d(n-1), d(3) = 41, d(2) = 11, d(1) = 3, d(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $3,7
-mov $4,16
-sub $0,1
+mov $2,1
+mov $4,1
 lpb $0
-  mul $1,-1
-  rol $1,4
-  add $4,$1
-  add $4,$1
-  mov $5,$2
-  mul $5,6
   sub $0,1
-  add $4,$5
-  add $4,$3
-  add $4,$3
+  add $4,$2
+  ror $1,3
+  add $1,$3
+  add $4,$1
+  add $1,$4
+  add $4,$2
+  add $1,$4
 lpe
-mov $0,$1
+mov $0,$3

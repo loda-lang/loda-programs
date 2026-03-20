@@ -11,17 +11,15 @@ lpb $0
   pow $4,$0
   mul $4,2
   bin $4,2
-  mov $5,$0
-  add $5,1
-  seq $5,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
-  mul $5,$4
   mov $2,$0
-  mov $2,$5
-  mul $3,$5
+  add $2,1
+  seq $2,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $2,$4
+  mul $3,$2
   mul $3,-1
   add $3,$1
   sub $0,1
-  mul $1,$5
+  mul $1,$2
 lpe
 gcd $3,$1
 div $1,$3

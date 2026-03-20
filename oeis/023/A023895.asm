@@ -1,21 +1,31 @@
 ; A023895: Number of partitions of n into composite parts.
-; Submitted by hoppisaur
+; Submitted by Science United
 ; 1,0,0,0,1,0,1,0,2,1,2,0,4,1,4,2,7,2,9,3,12,6,15,6,23,11,26,15,37,19,48,26,61,39,78,47,105,65,126,88,167,111,211,146,264,196,331,241,426,318,519,408,657,511,820,651,1010,833,1252,1028,1564,1301,1900,1633,2357,2018,2895,2511,3530,3132,4320,3831,5296,4744,6404,5843,7813,7130,9489,8736
 
-mov $5,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  trn $0,1
-  seq $0,2095 ; Number of partitions of n into nonprime parts.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
+mov $2,1
+mov $6,1
+mov $10,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    mov $7,$4
+    add $7,1
+    seq $7,23891 ; Sum of composite divisors of n.
+    mov $9,10
+    add $9,$5
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,$2
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mov $0,$6

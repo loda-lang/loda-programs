@@ -15,13 +15,11 @@ lpb $0
   bin $2,$0
   mov $3,$4
   bin $3,$1
-  add $0,1
-  trn $0,2
+  trn $0,1
   add $1,1
   mul $3,$2
   div $3,$1
-  sub $1,1
-  trn $1,1
+  trn $1,2
   add $5,$3
 lpe
 mov $0,$5

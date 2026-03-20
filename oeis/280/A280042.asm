@@ -6,7 +6,6 @@
 
 mov $2,1
 fil $2,3
-sub $0,1
 lpb $0
   sub $0,1
   mov $1,$3
@@ -15,4 +14,4 @@ lpb $0
   add $3,$4
   mov $4,$1
 lpe
-mov $0,$3
+mov $0,$1

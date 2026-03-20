@@ -13,7 +13,6 @@ lpb $0
   mul $3,2
   bin $3,$1
   mul $3,$2
-  mul $3,6
   div $3,$4
   add $5,$3
   add $1,1
@@ -22,4 +21,3 @@ lpb $0
   sub $4,1
 lpe
 mov $0,$5
-div $0,6

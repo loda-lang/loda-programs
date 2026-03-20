@@ -1,22 +1,20 @@
 ; A197686: Decimal expansion of Pi/(2 + Pi).
-; Submitted by arkiss
+; Submitted by Science United
 ; 6,1,1,0,1,5,4,7,0,3,5,1,6,5,7,2,8,9,3,8,0,5,9,5,3,8,7,9,5,3,9,6,8,8,6,1,7,3,7,4,2,2,6,3,2,9,5,6,0,9,2,7,9,5,2,0,8,9,1,6,7,7,5,0,4,2,4,6,4,8,3,3,9,3,6,3,1,5,8,3
 
 add $0,1
+mov $1,1
 mov $3,$0
 mul $3,7
 lpb $3
-  mov $5,$3
-  equ $5,0
-  add $3,$5
-  mov $6,$4
-  div $6,$3
-  add $4,$1
+  max $3,1
+  max $5,$2
+  sub $5,$1
+  div $5,$3
   mul $1,2
-  add $1,$6
+  add $1,$5
   add $2,$1
   sub $3,1
-  add $1,3
 lpe
 mov $4,10
 pow $4,$0

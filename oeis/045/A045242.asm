@@ -15,8 +15,7 @@ lpb $2
     mov $5,$3
     mul $5,16
     mod $5,10
-    sub $5,1
-    trn $5,4
+    trn $5,5
     div $3,5
     add $4,$5
   lpe

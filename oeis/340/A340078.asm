@@ -10,5 +10,4 @@ seq $2,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
 add $2,1
 mov $1,$0
 gcd $1,$2
-sub $0,1
 mov $0,$1

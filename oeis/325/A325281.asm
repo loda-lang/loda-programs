@@ -15,8 +15,7 @@ lpb $2
   seq $3,61200 ; tau_5(n) = number of ordered 5-factorizations of n.
   mod $3,19
   gcd $3,4
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

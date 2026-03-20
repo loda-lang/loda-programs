@@ -1,23 +1,17 @@
 ; A212983: Number of (w,x,y) with all terms in {0,...,n} and w<=x+y and x<=y.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,5,15,33,62,104,162,238,335,455,601,775,980,1218,1492,1804,2157,2553,2995,3485,4026,4620,5270,5978,6747,7579,8477,9443,10480,11590,12776,14040,15385,16813,18327,19929,21622,23408,25290,27270,29351
-; Formula: a(n) = (floor(n/2)*(5*floor(n/2)+9)+4)*(n%2)+floor((floor(n/2)*(floor(n/2)*(20*floor(n/2)+39)+25)+6)/6)
 
-mov $2,$0
-mod $2,2
-div $0,2
-mov $1,$0
-mov $3,$0
-mul $0,20
-add $0,39
-mul $0,$1
-add $0,25
-mul $0,$1
-add $0,6
-div $0,6
-mul $3,5
-add $3,9
-mul $3,$1
-add $3,4
-mul $2,$3
-add $0,$2
+add $0,1
+mov $4,$0
+lpb $0
+  sub $0,1
+  add $5,$4
+  add $2,$3
+  add $2,$1
+  add $4,1
+  add $4,$2
+  equ $1,0
+  mov $3,2
+lpe
+mov $0,$5

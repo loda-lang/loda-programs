@@ -1,16 +1,11 @@
 ; A162964: a(n) = sigma(sigma(sigma(sigma(sigma(n))))).
-; Submitted by Jon Maiga
+; Submitted by kpmonaghan
 ; 1,15,24,60,120,360,168,480,168,360,360,1170,480,1512,1512,210,360,1170,728,1680,576,480,1512,4800,210,1680,1344,3276,992,2016,576,1651,1560,3276,1560,1512,1512,4800,3276,4064,1680,5952,1560,5040,4800,2016,1560,5040,1020,1240,2016,1596,3276,10192,2016,10192,3024,4064,4800,15748,1680,5952,1792,1240,5040,1920,2880,9906,5952,1920,2016,6552,1920,6120,5040,6552,5952,15748,3024,9920
+; Formula: a(n) = A000203(A129076(n))
 
 #offset 1
 
-sub $0,1
-mov $1,49
-lpb $1
-  add $0,1
-  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $0,1
-  mul $1,5
-  div $1,12
-lpe
-add $0,1
+mov $1,$0
+seq $1,129076 ; a(n) = sigma(sigma(sigma(sigma(n)))), where sigma(n) = sum of divisors of n.
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $0,$1

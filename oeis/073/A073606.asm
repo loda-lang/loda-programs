@@ -14,8 +14,7 @@ lpb $2
   seq $3,65769 ; Prime cascade: multiplicative with a(prime(m)^k) = prime(m-1) * prime(m)^(k-1).
   gcd $3,$5
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

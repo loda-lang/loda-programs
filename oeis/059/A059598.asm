@@ -1,8 +1,8 @@
 ; A059598: Tenth column (m=9) of convolution triangle A059594(n,m).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,10,65,320,1320,4752,15400,45760,126500,328680,809380,1901120,4282200,9289840,19482200,39619008,78337930,150954980,284060810,522920640,943206264,1669294000,2902420600,4963400000
 
-mov $1,3
+mov $1,1
 fil $1,3
 lpb $0
   sub $0,1
@@ -17,4 +17,3 @@ lpb $0
   add $3,$1
 lpe
 mov $0,$1
-div $0,3

@@ -1,25 +1,17 @@
 ; A166946: a(n) = 1 if n is a rounded multiple of phi (1.618033989...), the larger golden ratio value; else a(n) = 0.
-; Submitted by sj
+; Submitted by Science United
 ; 1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1
-; Formula: a(n) = (floor((sqrtint((n+27)*(5*n+135))+n+27)/2)+sqrtint((floor((sqrtint((n+27)*(5*n+135))+n+27)/2)+2)*(5*floor((sqrtint((n+27)*(5*n+135))+n+27)/2)+10))+2)%2
 
-add $0,27
-mov $2,$0
-add $2,$0
-mul $2,2
-add $2,$0
-mul $2,$0
-nrt $2,2
-add $2,$0
+lpb $0
+  mov $2,$0
+  trn $0,3
+  add $0,1
+  seq $0,280514 ; Index sequence of the reverse block-fractal sequence A003849.
+  sub $0,1
+lpe
+mov $1,$2
+equ $1,1
+mov $2,2
+pow $2,$1
 mov $0,$2
-div $0,2
-add $0,2
-mov $1,$0
-add $1,$0
-mul $1,2
-add $1,$0
-mul $1,$0
-nrt $1,2
-add $1,$0
-mov $0,$1
 mod $0,2

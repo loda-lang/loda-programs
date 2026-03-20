@@ -7,7 +7,6 @@
 dir $0,2
 div $0,2
 mov $1,1
-mov $3,0
 mov $5,$0
 lpb $5
   sub $5,1

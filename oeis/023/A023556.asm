@@ -1,32 +1,29 @@
 ; A023556: Convolution of A023531 and A023532.
-; Submitted by ANCHULA-MARK
+; Submitted by iBezanilla
 ; 0,1,0,1,2,0,2,2,2,1,3,3,1,4,2,4,3,2,4,5,3,3,5,3,5,5,5,2,6,6,4,6,4,6,5,5,7,7,4,5,7,7,5,8,6,6,8,4,8,8,8,6,7,7,7,9,7,7,9,9,7,7,7,9,10,8,8,10,7,8,10,10,6,10,10,10,11,5,11,9
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-lpb $0
-  mov $3,$0
-  add $3,1
-  mov $5,$3
-  add $0,$4
-  trn $0,3
-  mul $3,8
-  nrt $3,2
-  add $3,3
-  div $3,2
-  bin $3,2
-  sub $3,$5
-  equ $3,0
-  add $2,$3
-  sub $4,1
+mov $5,2
+mov $2,$0
+add $2,2
+lpb $2
+  sub $2,$5
+  add $4,1
+  mov $7,$0
+  sub $0,1
+  mov $3,$2
+  max $3,0
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  add $6,2
+  div $6,2
+  bin $6,2
+  gcd $7,$0
+  equ $3,$6
+  add $5,$7
+  add $1,$3
 lpe
-mul $1,8
-add $1,17
-nrt $1,2
-add $1,1
-div $1,2
-sub $1,$2
-mov $0,$1
-sub $0,2
+sub $4,$1
+mov $0,$4

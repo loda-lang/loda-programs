@@ -1,5 +1,5 @@
 ; A283828: Number of bounded regions in the Linial arrangement L_{n-1}.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,0,1,4,26,212,2108,24720,334072,5112544,87396728,1650607040,34132685120,767025716736,18612106195456,485013257865472,13509071081429888,400505695457942528,12592502771190979712,418524228123134068224,14661145374751901317888
 
 #offset 1
@@ -9,19 +9,13 @@ mov $3,1
 mov $1,$0
 lpb $1
   sub $1,1
-  div $2,2
-  add $2,$4
-  mul $2,2
   mov $4,$3
   div $4,2
   pow $4,$0
-  sub $4,$2
   mov $5,$0
   bin $5,$3
   mul $5,$4
+  add $2,$5
   add $3,1
-  mul $6,-1
-  add $6,$5
 lpe
-gcd $6,$1
-mov $0,$6
+mov $0,$2

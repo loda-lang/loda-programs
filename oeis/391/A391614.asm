@@ -1,13 +1,18 @@
 ; A391614: a(4n) = a(2n+a(n)), a(4n+2) = a(2n+1-a(n)) and a(2n+1) = 1-a(2n), with a(0) = 0.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by LM
 ; 0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0
-; Formula: a(n) = floor(bitxor(max(0,A100280(n))%2,2*bitxor(0,max(0,A100280(n))%2))/3)
 
-seq $0,100280 ; Inverse permutation to A099896.
-max $1,$0
-mod $1,2
-bxo $2,$1
-mul $2,2
-bxo $1,$2
-mov $0,$1
-div $0,3
+mov $1,1
+mov $2,-1
+lpb $0
+  mov $3,$0
+  mul $3,2
+  mul $3,$2
+  sub $4,$3
+  div $0,2
+  sub $1,$2
+  sub $2,$1
+lpe
+mov $0,$4
+div $0,2
+mod $0,2

@@ -4,6 +4,7 @@
 
 mov $1,-1
 pow $1,$0
+mul $1,2
 mul $0,2
 mov $3,$0
 mov $2,2
@@ -11,6 +12,7 @@ lpb $2
   mov $2,1
   mov $0,$3
   seq $0,13493 ; exp(arcsinh(x)-tanh(x))=1+1/3!*x^3-7/5!*x^5+10/6!*x^6+47/7!*x^7...
-  mov $3,27
+  mov $3,0
 lpe
 mul $0,$1
+div $0,2

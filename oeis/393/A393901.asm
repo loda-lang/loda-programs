@@ -1,7 +1,7 @@
 ; A393901: Triangle read by rows: T(n,k) = (2*n + k - 1) * 2^(k-2).
 ; Submitted by Science United
 ; 1,2,5,3,7,16,4,9,20,44,5,11,24,52,112,6,13,28,60,128,272,7,15,32,68,144,304,640,8,17,36,76,160,336,704,1472,9,19,40,84,176,368,768,1600,3328,10,21,44,92,192,400,832,1728,3584,7424,11,23,48,100,208,432,896,1856,3840,7936,16384,12,25,52,108,224,464,960,1984,4096,8448,17408,35840,13,27
-; Formula: a(n) = truncate(((2*floor((sqrtint(8*n)-1)/2)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))-2)/2)+1
+; Formula: a(n) = truncate(((2*floor((sqrtint(8*n)-1)/2)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)))/2)
 
 #offset 1
 
@@ -23,6 +23,4 @@ pow $4,$0
 add $1,$0
 mul $1,$4
 mov $0,$1
-sub $0,2
 div $0,2
-add $0,1

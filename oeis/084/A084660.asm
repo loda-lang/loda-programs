@@ -9,8 +9,6 @@ mul $3,7
 lpb $3
   max $3,1
   max $6,$2
-  mul $2,2
-  sub $2,$6
   div $6,$3
   mul $1,2
   add $2,$1

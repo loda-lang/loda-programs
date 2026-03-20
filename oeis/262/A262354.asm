@@ -3,7 +3,6 @@
 
 #offset 1
 
-mov $4,0
 mov $3,$0
 pow $3,5
 lpb $3

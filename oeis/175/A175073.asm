@@ -4,24 +4,20 @@
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,347202 ; Numbers whose number of odd divisors is not equal to 2.
-  mov $5,$3
-  add $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+mov $1,$0
+mov $3,1
+mov $4,$0
+lpb $4
+  mov $2,$0
+  add $2,$3
+  add $2,$1
+  seq $2,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
+  equ $3,-2
+  add $3,$2
+  trn $4,$3
+  mov $0,0
 lpe
-mov $0,$5
-add $0,2
+mov $0,$3
+mul $0,2
+add $0,1

@@ -1,5 +1,5 @@
 ; A039290: Numbers whose base-5 representation has the same nonzero number of 2's and 3's.
-; Submitted by Science United
+; Submitted by skildude
 ; 13,17,38,42,53,58,65,66,69,73,77,82,85,86,89,97,113,117,138,142,163,167,178,183,190,191,194,198,202,207,210,211,214,222,238,242,253,258,265,266,269,273,278,283,290,291,294,298,318,325,326,329,330,331,334
 
 #offset 1
@@ -14,8 +14,7 @@ lpb $2
     mov $5,$3
     mul $5,8
     mod $5,10
-    sub $5,1
-    trn $5,4
+    trn $5,5
     mul $3,2
     sub $3,8
     div $3,10

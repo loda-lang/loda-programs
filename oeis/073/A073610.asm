@@ -4,31 +4,23 @@
 
 #offset 1
 
-mov $2,1
-mov $10,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    max $4,2
-    mov $7,$4
-    seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-    mov $9,10
-    add $9,$5
-    min $10,$0
-    mul $7,$$9
-    mov $11,$7
-    gcd $4,$10
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+sub $0,1
+mov $5,$0
+mov $3,$0
+lpb $3
+  mov $1,$3
+  sub $3,1
+  mov $0,$5
+  sub $0,$3
+  add $0,$4
+  mov $2,$0
+  sub $2,$4
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $2,2
+  mul $2,$1
+  max $2,1
+  seq $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,$2
 lpe
-mov $0,$3
+mov $0,$4

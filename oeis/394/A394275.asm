@@ -1,17 +1,14 @@
 ; A394275: Number of induced cubes in the n-Sierpinski tetrahedron graph.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 10,37,142,562,2242,8962,35842,143362,573442,2293762,9175042,36700162,146800642,587202562,2348810242,9395240962,37580963842,150323855362,601295421442,2405181685762,9620726743042,38482906972162,153931627888642,615726511554562
+; Formula: a(n) = floor((35*4^(n-1))/4)+2
 
-mov $1,1
-fil $1,3
-lpb $0
-  sub $0,1
-  add $2,8
-  mov $3,2
-  pow $3,$0
-  add $3,$2
-  mul $2,4
-lpe
-mov $0,$3
-mul $0,3
-add $0,7
+#offset 1
+
+sub $0,1
+mov $1,4
+pow $1,$0
+mul $1,35
+div $1,4
+mov $0,$1
+add $0,2

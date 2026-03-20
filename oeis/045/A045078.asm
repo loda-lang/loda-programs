@@ -1,15 +1,12 @@
 ; A045078: Numbers whose base-4 representation contains exactly three 0's and two 3's.
-; Submitted by LM
+; Submitted by Science United
 ; 771,780,816,960,1039,1075,1084,1219,1228,1264,1795,1804,1840,1984,2063,2099,2108,2243,2252,2288,2819,2828,2864,3008,3079,3083,3085,3086,3091,3100,3107,3116,3121,3122,3124,3128,3139
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,2
-pow $2,3
+add $2,6
+pow $2,5
 lpb $2
   mov $4,1
   mov $3,$1

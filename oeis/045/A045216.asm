@@ -1,30 +1,28 @@
 ; A045216: Numbers whose base-5 representation contains exactly three 0's and two 4's.
-; Submitted by dskagcommunity
+; Submitted by Science United
 ; 2504,2520,2600,3000,3149,3229,3245,3629,3645,3725,5629,5645,5725,6125,6274,6354,6370,6754,6770,6850,8754,8770,8850,9250,9399,9479,9495,9879,9895,9975,11879,11895,11975,12375,12509
 
 #offset 1
 
 mov $2,$0
-add $2,8
+add $2,9
 pow $2,4
 lpb $2
-  mov $4,-6
+  mov $4,-7
   mov $3,$1
   lpb $3
     mov $5,$3
+    sub $5,1
     mul $5,2
     mod $5,10
     trn $5,5
-    mul $3,2
-    sub $3,8
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0
 lpe
 mov $0,$1
-add $0,1

@@ -1,7 +1,7 @@
 ; A153845: First Sunday in n-th month of 365-day year starting on Saturday.
 ; Submitted by Science United
 ; 2,6,6,3,1,5,3,7,4,2,6,4
-; Formula: a(n) = if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,41^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)-7*truncate((if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,41^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)-10*truncate((if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,41^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)+4)/10)+4)/7)-10*truncate((if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,41^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)+4)/10)+5
+; Formula: a(n) = if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,11^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)-7*truncate((if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,11^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)-10*truncate((if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,11^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)+4)/10)+4)/7)-10*truncate((if(truncate((24*floor((4*n-4)/3)-40)/9)<=(-1),0,11^truncate((24*floor((4*n-4)/3)-40)/9))-truncate((24*floor((4*n-4)/3)-40)/9)+4)/10)+5
 
 #offset 1
 
@@ -11,7 +11,7 @@ div $0,3
 mul $0,24
 sub $0,40
 div $0,9
-mov $1,41
+mov $1,11
 pow $1,$0
 sub $1,$0
 mov $0,$1

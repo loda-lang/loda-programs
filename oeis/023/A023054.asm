@@ -1,16 +1,15 @@
 ; A023054: Simon Plouffe's conjectured extension of sequence A008368.
-; Submitted by p3d-cluster
+; Submitted by Romeo Mikuli?
 ; 1,1,3,4,7,8,13,14,20,22,29,31,40,42,52,55,66,69,82,85,99,103,118,122,139,143,161,166,185,190,211,216,238,244,267,273,298,304,330,337,364,371,400,407,437,445,476,484,517,525,559,568,603,612,649,658,696,706,745,755
-; Formula: a(n) = floor((2*floor(n/2)*floor((5*n+18)/2)+18)/12)
+; Formula: a(n) = floor((floor((n+2)/2)^2+floor(binomial(n+2,2)/3)+1)/2)
 
-mov $1,5
-mul $1,$0
-mov $2,$0
-div $2,2
-mul $2,2
-add $1,18
+add $0,2
+mov $1,$0
+bin $0,2
+div $0,3
 div $1,2
-mul $1,$2
-add $1,18
-div $1,12
+pow $1,2
+add $1,$0
 mov $0,$1
+add $0,1
+div $0,2

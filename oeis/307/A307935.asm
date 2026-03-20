@@ -1,26 +1,25 @@
 ; A307935: Number of (undirected) Hamiltonian paths in the n-cocktail party graph.
-; Submitted by Daniel Gross
+; Submitted by Science United
 ; 0,4,120,6912,631680,84211200,15432560640,3722677862400,1143584003358720,435902085306777600,201889940373209088000,111673403387053395148800,72713691524377589317632000,55052849030095232395798118400,47957058157063329359371173888000
 
 #offset 1
 
-mov $1,-1
-pow $1,$0
-mov $3,1
-fac $3,$0
-mov $4,-1
-mov $5,2
-mov $6,2
+mul $0,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $2,$6
-  mov $6,$5
-  mul $5,$4
-  add $5,$2
-  mul $3,2
-  sub $4,2
+  mov $2,-2
+  pow $2,$1
+  add $4,$1
+  mov $3,$4
+  div $3,2
+  bin $3,$1
+  mul $3,$2
+  add $3,$5
+  mov $4,$0
+  add $1,1
+  mul $5,$0
+  add $5,$3
 lpe
-mov $0,$5
-mul $0,$1
-mul $0,$3
-div $0,4
+mov $0,$3
+div $0,2

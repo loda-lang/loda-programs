@@ -1,31 +1,30 @@
 ; A119696: Fib(n)*n^3*(binomial(2*n, n))^2/(n+1).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,2,96,5400,188160,6615000,210760704,6565110552,197880883200,5859173445840,170673897680000,4912438527364368,139967228091285504,3955257204911740000,110989637900511552000,3096031244768383500000
-; Formula: a(n) = truncate((min(n,n%2)*c(n)+b(n))/3)*floor(binomial(2*n,n)/(n+1))*binomial(2*n,n)*n^3, b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
+; Formula: a(n) = truncate((min(n,n%2)*b(n)+c(n))/3)*floor(binomial(2*n,n)/(n+1))*binomial(2*n,n)*n^3, b(n) = 3*b(n-2)-b(n-4), b(6) = 15, b(5) = 6, b(4) = 6, b(3) = 3, b(2) = 3, b(1) = 3, b(0) = 3, c(n) = 2*c(n-2)+b(n-2), c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 0
 
-mov $6,$0
-mov $8,3
 mov $1,$0
-mul $1,2
-mov $7,$0
-lpb $7
-  sub $7,2
-  add $8,$5
-  add $5,$8
+mov $2,3
+mov $5,$0
+mul $5,2
+mov $6,$0
+lpb $6
+  sub $6,2
+  add $2,$3
+  add $3,$2
 lpe
-mov $3,$0
-mul $7,$8
-add $7,$5
-div $7,3
-bin $1,$0
-mul $1,$7
-mov $2,$0
-mul $2,$1
 mul $6,$2
+add $6,$3
+div $6,3
+bin $5,$0
+mul $5,$6
 mov $4,$0
-mul $4,$6
+pow $4,2
+mul $4,$5
+mov $7,$0
 mul $0,2
-bin $0,$3
-add $3,1
-div $0,$3
+bin $0,$7
+add $7,1
+div $0,$7
 mul $0,$4
+mul $0,$1

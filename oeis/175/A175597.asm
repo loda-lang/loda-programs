@@ -1,7 +1,7 @@
 ; A175597: Minimal run length in binary representation of n.
 ; Submitted by LG@BOINC
 ; 1,1,2,1,1,1,3,1,1,1,1,2,1,1,4,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,3,1,1,1,2,1,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -10*truncate(A004186(A261300(bitxor(n,floor(n/2))))/10)+A004186(A261300(bitxor(n,floor(n/2))))
+; Formula: a(n) = A004186(A261300(bitxor(n,floor(n/2))))%10
 
 #offset 1
 

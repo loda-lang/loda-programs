@@ -1,5 +1,5 @@
 ; A199502: From Janet helicoidal classification of the periodic table.
-; Submitted by Steve Dodd
+; Submitted by Science United
 ; 1,2,3,4,5,10,11,12,13,18,19,20,21,30,31,36,37,38,39,48,49,54,55,56,57,70,71,80,81,86,87,88,89,102,103,112,113,118,119,120,121,138,139,152,153,162,163,168,169,170,171,188,189,202,203,212,213,218,219,220,221
 
 #offset 1
@@ -28,11 +28,9 @@ lpb $3
   div $0,4
   add $5,$0
   mov $0,$5
-  mul $0,4
-  sub $0,2
-  mul $0,3
+  mul $0,12
   mov $2,$0
-  sub $2,3
+  sub $2,9
   div $2,3
   add $1,$2
 lpe

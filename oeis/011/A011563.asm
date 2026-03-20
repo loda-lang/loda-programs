@@ -1,46 +1,49 @@
 ; A011563: Stirling numbers of second kind S2(14,n).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,8191,788970,10391745,40075035,63436373,49329280,20912320,5135130,752752,66066,3367,91,1
 
 #offset 1
 
-add $0,119
 mov $1,$0
-sub $0,28
-mov $4,$0
-mul $4,8
-nrt $4,2
-sub $4,1
-div $4,2
-mov $5,$4
-add $5,1
-bin $5,2
-sub $0,$5
-sub $0,1
-mov $5,$0
-mov $0,$4
-mov $4,$5
-add $4,2
-lpb $4
-  sub $4,1
-  mov $7,$4
-  pow $7,$0
-  sub $8,$4
-  bin $8,$6
-  mul $8,$7
-  add $9,$8
-  add $6,1
-  mov $8,0
-lpe
+add $1,77
 mov $2,$1
-mul $2,8
-add $2,1
-nrt $2,2
-add $2,1
-div $2,2
-bin $2,2
-sub $1,$2
-mov $3,1
-fac $3,$1
-mov $0,$9
-div $0,$3
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $1,$6
+sub $1,1
+add $5,1
+mov $6,$1
+mov $1,$5
+mov $5,$6
+add $5,2
+lpb $5
+  sub $5,1
+  mov $8,$5
+  pow $8,$1
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $10,$9
+  add $7,1
+  mov $9,0
+lpe
+mov $3,$2
+mul $3,8
+add $3,1
+nrt $3,2
+add $3,1
+div $3,2
+bin $3,2
+sub $2,$3
+mov $4,1
+fac $4,$2
+mov $1,$10
+div $1,$4
+mov $0,$1

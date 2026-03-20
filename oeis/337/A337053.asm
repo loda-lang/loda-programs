@@ -2,34 +2,34 @@
 ; Submitted by Science United
 ; 1,1,0,1,1,4,81,81,2500,71289,170569,4752400,314388361,2553584089,12138750976,3868290439209,98777141491561,74627448683524,77548359598953721,6456459980629467081,96370747288471888164,738333256838429983201,526354651474052521626801
 
-mov $7,$0
-add $7,1
-bin $7,2
+mod $0,49
+mov $5,$0
+add $5,1
+bin $5,2
 add $0,1
 lpb $0
   sub $0,1
-  mov $2,-1
-  bin $2,$5
-  mov $8,$5
-  add $8,$7
+  mov $9,-1
+  bin $9,$3
+  mov $6,$3
+  add $6,$5
+  mov $4,$6
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  bin $4,2
+  mov $7,$6
+  sub $7,$4
+  mov $1,1
+  fac $1,$7
+  mov $8,$6
+  seq $8,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $8,$1
   mov $6,$8
-  mul $6,8
-  nrt $6,2
-  add $6,1
-  div $6,2
-  bin $6,2
-  mov $9,$8
-  sub $9,$6
-  mov $3,1
-  fac $3,$9
-  mov $10,$8
-  seq $10,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  div $10,$3
-  mov $8,$10
-  mul $8,$2
-  add $4,$8
-  add $5,1
+  mul $6,$9
+  add $2,$6
+  add $3,1
 lpe
-mov $1,$4
-pow $1,2
-mov $0,$1
+mov $0,$2
+pow $0,2

@@ -17,6 +17,6 @@ lpb $2
   sub $1,$2
   add $1,$0
   add $1,1
-  seq $1,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+  seq $1,140347 ; Duplicate of A002808.
 lpe
 mov $0,$3

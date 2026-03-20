@@ -1,7 +1,7 @@
 ; A186808: Numbers n such that there are a prime number of unlabeled distributive lattices with n elements.
 ; Submitted by loader3229
 ; 4,5,6,10,12,13,18,21,23,26
-; Formula: a(n) = truncate((sqrtint(8*truncate((sqrtint(8*n)-1)/2)*((n-1)^2+sqrtint(floor((n-1)/2)))+8*binomial(truncate((sqrtint(8*n)-1)/2)+1,2))-1)/2)+4
+; Formula: a(n) = truncate((sqrtint(8*floor((sqrtint(8*n)-1)/2)*((n-1)^2+sqrtint(floor((n-1)/2)))+8*binomial(floor((sqrtint(8*n)-1)/2)+1,2))-1)/2)+4
 
 #offset 1
 

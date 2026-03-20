@@ -1,18 +1,12 @@
 ; A356426: Even bisection of A003278.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Owdjim
 ; 2,5,11,14,29,32,38,41,83,86,92,95,110,113,119,122,245,248,254,257,272,275,281,284,326,329,335,338,353,356,362,365,731,734,740,743,758,761,767,770,812,815,821,824,839,842,848,851,974,977,983,986,1001,1004,1010,1013,1055,1058
+; Formula: a(n) = 3*A005836(n)+2
 
 #offset 1
 
-mov $2,3
-sub $0,1
-lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  div $0,2
-  add $1,$3
-  mul $2,3
-lpe
+mov $1,$0
+seq $1,5836 ; Numbers whose base-3 representation contains no 2.
 mov $0,$1
+mul $0,3
 add $0,2

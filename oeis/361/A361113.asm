@@ -4,17 +4,24 @@
 
 #offset 1
 
+mov $2,$0
 sub $0,1
-mov $1,$0
-mov $2,2
+add $2,10
+pow $2,2
 lpb $2
-  sub $2,2
-  mov $0,$1
-  trn $0,1
-  add $0,1
-  seq $0,80765 ; Integers m such that m+1 divides lcm(1 through m).
+  sub $2,1
+  mov $4,$1
+  equ $4,0
+  mov $3,$1
+  add $3,1
+  seq $3,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $3,$4
+  add $3,1
+  mod $3,2
+  equ $3,0
+  sub $0,$3
+  add $1,1
+  sub $2,$0
 lpe
-mod $0,2
-min $1,1
-mul $1,$0
 mov $0,$1
+mod $0,2
