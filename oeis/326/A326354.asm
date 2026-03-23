@@ -1,20 +1,25 @@
 ; A326354: a(n) is the number of fractions reduced to lowest terms with numerator and denominator less than or equal to n in absolute value.
-; Submitted by JakuP
+; Submitted by skildude
 ; 1,3,7,15,23,39,47,71,87,111,127,167,183,231,255,287,319,383,407,479,511,559,599,687,719,799,847,919,967,1079,1111,1231,1295,1375,1439,1535,1583,1727,1799,1895,1959,2119,2167,2335,2415,2511,2599,2783,2847,3015,3095
 
 mov $1,$0
-lpb $1
+add $1,1
+mov $4,$1
+lpb $4
+  sub $4,1
+  add $6,$7
   mov $3,$1
-  add $3,1
-  seq $3,206297 ; Position of n in the canonical bijection from the positive integers to the positive rational numbers.
-  div $1,$3
+  sub $3,$4
+  mov $7,280
+  min $7,$3
+  seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpe
-mov $2,$3
+mov $1,$6
+mul $1,2
+mov $2,$1
 equ $2,0
-mov $1,$3
-add $1,$2
-sub $1,1
-add $2,$1
-mov $0,$2
+mov $5,$1
+add $5,$2
+mov $0,$5
 mul $0,2
 sub $0,1

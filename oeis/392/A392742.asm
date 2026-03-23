@@ -1,9 +1,8 @@
 ; A392742: A 4-automatic binary sequence with irreducible nested recurrence (see Comments).
-; Submitted by sbo92
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,0,1,0,1,0,1
 
-mov $2,6
-mov $3,1
+mov $3,-1
 lpb $0
   sub $2,$3
   lpb $0

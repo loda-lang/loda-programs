@@ -1,15 +1,12 @@
 ; A045075: Numbers whose base-4 representation contains exactly two 0's and four 3's.
-; Submitted by Landjunge
+; Submitted by Technik007[CZ]
 ; 3135,3279,3315,3324,3855,3891,3900,4035,4044,4080,4351,4927,5071,5107,5116,7231,7375,7411,7420,7951,7987,7996,8131,8140,8176,8447,9023,9167,9203,9212,11327,11471,11507,11516,12047
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,9
-pow $2,3
+add $2,8
+pow $2,4
 lpb $2
   mov $4,1
   mov $3,$1
@@ -19,10 +16,10 @@ lpb $2
     add $5,$6
     mod $5,4
     mul $5,$4
-    mov $6,1
     add $3,94
     div $3,4
     max $4,$5
+    mov $6,1
   lpe
   div $4,14
   sub $4,5

@@ -1,7 +1,7 @@
 ; A003124: One of the basic cycles in the x->3x-1 (x odd) or x/2 (x even) problem.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34,17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34,17,50,25,74,37,110,55,164,82,41,122,61,182,91,272,136,68,34
-; Formula: a(n) = truncate((b(n)-84)/5)+17, b(n) = if(((5*b(n-1)-5)%2)==0,(5*b(n-1)-5)/2,5*b(n-1)-5)-2*b(n-1)+2, b(0) = 84
+; Formula: a(n) = truncate(b(n)/5)+1, b(n) = if(((5*b(n-1)-5)%2)==0,(5*b(n-1)-5)/2,5*b(n-1)-5)-2*b(n-1)+2, b(0) = 84
 
 mov $1,84
 lpb $0
@@ -18,6 +18,5 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$1
-sub $0,84
 div $0,5
-add $0,17
+add $0,1

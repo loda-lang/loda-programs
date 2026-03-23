@@ -1,7 +1,7 @@
 ; A278545: Number of neighbors of the n-th term in a full square array read by antidiagonals.
 ; Submitted by mmonnin
 ; 3,5,5,5,8,5,5,8,8,5,5,8,8,8,5,5,8,8,8,8,5,5,8,8,8,8,8,5,5,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,8,8,8,5,5,8
-; Formula: a(n) = (min(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1,1)+2)*(min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,1)+2)-1
+; Formula: a(n) = (min(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1,1)+2)*(min(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1,1)+2)-1
 
 #offset 1
 

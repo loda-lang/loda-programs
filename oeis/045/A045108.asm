@@ -1,13 +1,60 @@
 ; A045108: Numbers whose base-4 representation contains exactly four 1's and three 2's.
-; Submitted by Jason Jung
+; Submitted by atannir
 ; 5482,5530,5542,5545,5722,5734,5737,5782,5785,5797,6490,6502,6505,6550,6553,6565,6742,6745,6757,6805,9562,9574,9577,9622,9625,9637,9814,9817,9829,9877,10582,10585,10597,10645,10837
-; Formula: a(n) = truncate(A145850(A031443(n+14)+1)/16)-10923
 
 #offset 1
 
-add $0,14
-seq $0,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
-add $0,1
-seq $0,145850 ; a(n) = A145818(2n-1).
-div $0,16
-sub $0,10923
+sub $0,1
+mov $1,4
+fil $1,3
+mov $4,$0
+mov $5,$0
+mov $6,$0
+mul $6,6
+nrt $6,3
+add $8,$6
+add $8,1
+bin $8,3
+sub $0,$8
+mov $9,$0
+mul $9,8
+add $9,1
+nrt $9,2
+add $9,1
+div $9,2
+bin $9,2
+mov $10,$4
+mul $10,6
+nrt $10,3
+mov $11,$10
+add $11,2
+bin $11,3
+mov $12,$4
+geq $12,$11
+add $12,$10
+add $12,1
+bin $12,3
+sub $0,$9
+sub $4,$12
+add $4,1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+mov $13,$5
+mul $13,6
+nrt $13,3
+mov $14,$13
+add $14,2
+bin $14,3
+geq $5,$14
+add $5,$13
+add $5,1
+pow $2,$4
+pow $3,$5
+pow $1,$0
+add $1,$2
+add $1,$3
+mov $0,$1
+add $0,5461

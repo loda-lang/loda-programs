@@ -1,5 +1,5 @@
 ; A325489: Digits of one of the four 5-adic integers 6^(1/4) that is congruent to 1 mod 5.
-; Submitted by damotbe
+; Submitted by [SG]KidDoesCrunch
 ; 1,4,4,1,3,1,3,3,1,0,2,2,2,2,0,3,4,3,0,4,2,1,2,2,0,1,1,2,4,2,3,4,2,1,2,3,4,3,1,0,3,2,3,4,2,3,4,4,4,2,2,2,4,1,1,0,2,1,3,3,2,0,0,1,2,4,4,1,0,4,1,0,2,4,0,2,2,0,1,3
 
 mov $1,5
@@ -25,7 +25,5 @@ lpb $0
   sub $5,24
 lpe
 sub $2,$4
+div $2,$1
 mov $0,$2
-add $0,$1
-div $0,$1
-sub $0,1

@@ -1,17 +1,17 @@
 ; A023632: a(n) = s(2n+1) - s(2n), where s( ) is sequence A023631.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 2,3,4,2,4,2,2,4,4,2,2,4,4,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4
 
 #offset 1
 
 mov $1,2
 max $4,1
+mov $5,1
 lpb $0
   sub $0,1
-  mov $3,$5
+  add $1,$5
   rol $4,$1
   mov $4,2
-  add $1,$3
 lpe
-mov $0,$3
+mov $0,$5
 add $0,2

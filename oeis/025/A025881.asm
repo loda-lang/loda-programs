@@ -1,18 +1,20 @@
 ; A025881: Expansion of 1/((1-x^5)*(1-x^6)*(1-x^12)).
-; Submitted by Just Jake
+; Submitted by zeroFX
 ; 1,0,0,0,0,1,1,0,0,0,1,1,2,0,0,1,1,2,2,0,1,1,2,2,3,1,1,2,2,3,4,1,2,2,3,4,5,2,2,3,4,5,6,2,3,4,5,6,7,3,4,5,6,7,8,4,5,6,7,8,10,5,6,7,8,10,11,6,7,8,10,11,13,7,8,10,11,13,14,8
 
-add $0,1
-lpb $0
-  mov $2,$0
-  lpb $2
-    mov $1,$2
-    trn $1,1
-    seq $1,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    sub $2,3
-    trn $2,9
-    add $3,$1
-  lpe
-  mov $0,0
+mov $3,$0
+add $3,1
+mov $2,$3
+mov $3,1
+lpb $2
+  mov $1,$2
+  add $1,4
+  mov $4,$1
+  div $4,6
+  div $1,5
+  sub $1,$4
+  trn $2,12
+  add $3,$1
 lpe
 mov $0,$3
+sub $0,1

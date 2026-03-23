@@ -39,8 +39,6 @@ lpe
 mul $10,2
 add $10,$5
 sub $0,1
-mov $1,$10
-div $1,3
 mov $4,$0
 mul $4,8
 add $4,1
@@ -53,4 +51,5 @@ sub $2,$4
 mov $3,2
 pow $3,$2
 mov $0,$3
-mul $0,$1
+mul $0,$10
+div $0,3

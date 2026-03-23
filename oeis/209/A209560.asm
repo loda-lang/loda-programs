@@ -25,7 +25,6 @@ lpb $1
   bin $4,$1
   trn $5,$4
   sub $6,1
-  dif $1,14
   add $3,$4
   add $4,$5
   mov $5,$3

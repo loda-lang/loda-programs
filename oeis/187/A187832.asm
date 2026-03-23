@@ -6,7 +6,7 @@ lpb $0
   mov $1,$0
   seq $1,2162 ; Decimal expansion of the natural logarithm of 2.
   sub $1,1
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1
 add $0,1

@@ -1,17 +1,17 @@
 ; A056195: a(n) = n! divided by its characteristic cube divisor A056194.
 ; Submitted by PDW
 ; 1,2,6,3,15,720,5040,5040,45360,3628800,39916800,17740800,230630400,403603200,1307674368,20922789888,355687428096,51218989645824,973160803270656,2432902008176640000,5516784599040000,15171157647360000,348936625889280000,1808887468610027520000,45222186715250688000000,146972106824564736000000,146972106824564736000000,1411520113943119724544000000,40934083304350472011776000000,2122022878497528469090467840000,65782709233423382541804503040000,263130836933693530167218012160000
-; Formula: a(n) = truncate((n!)/(gcd(A067318(n),A055204(n))^3))
+; Formula: a(n) = floor((n!)/(gcd(A067318(n),A055204(n))^3))
 
 #offset 1
 
-mov $1,$0
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $3,1
+fac $3,$0
 mov $2,$0
-seq $2,67318 ; Total number of transpositions in all permutations of n letters.
+seq $2,67318 ; Sum of the reflection lengths of all permutations of n letters.
 seq $0,55204 ; Squarefree part of n!: n! divided by its largest square divisor.
 gcd $2,$0
 pow $2,3
+mov $1,$3
 div $1,$2
-mov $0,$2
 mov $0,$1

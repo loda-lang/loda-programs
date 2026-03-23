@@ -1,12 +1,32 @@
 ; A316100: Numbers k such that k is deficient but k+1 is abundant, that is, a deficient number followed by an abundant number.
-; Submitted by iBezanilla
+; Submitted by JakuP
 ; 11,17,19,23,29,35,39,41,47,53,55,59,65,69,71,77,79,83,87,89,95,99,101,103,107,111,113,119,125,131,137,139,143,149,155,159,161,167,173,175,179,185,191,195,197,199,203,207,209,215,219,221,223,227,233,239
-; Formula: a(n) = 2*A039725(n)-1
 
 #offset 1
 
-mov $1,$0
-seq $1,39725 ; Even abundant numbers divided by 2.
-mov $0,$1
-mul $0,2
 sub $0,1
+mov $3,9
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $1,$3
+  add $1,2
+  mov $5,$1
+  add $1,1
+  add $5,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $5,$1
+  div $1,$5
+  equ $1,0
+  add $3,1
+  add $3,$1
+  sub $0,$1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$3
+add $0,2

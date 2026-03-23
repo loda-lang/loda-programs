@@ -1,12 +1,30 @@
 ; A141701: Triangle read by rows: A001414 interleaved with (k-1) zeros.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 0,2,0,3,0,0,4,2,0,0,5,0,0,0,0,5,3,2,0,0,0,7,0,0,0,0,0,0,6,4,0,2,0,0,0,0,6,0,3,0,0,0,0,0,0,7,5,0,0,2,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,7,5,4,3,0,2,0,0,0,0,0,0,13,0
-; Formula: a(n) = A001414(max(A126988(n)-1,0)+1)
 
 #offset 1
 
-seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+mov $4,$0
+mul $0,8
+nrt $0,2
 add $0,1
-trn $0,2
-add $0,1
-seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
+div $0,2
+mov $3,$0
+bin $0,2
+sub $4,$0
+mov $6,$3
+div $6,$4
+mov $5,$3
+mod $5,$4
+equ $5,0
+mul $5,$6
+mov $0,$5
+trn $0,1
+lpb $0
+  mov $1,$0
+  add $1,1
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$1
+  add $2,$1
+lpe
+mov $0,$2

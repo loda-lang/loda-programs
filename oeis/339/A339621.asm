@@ -1,27 +1,23 @@
 ; A339621: Sum of Fibonacci divisors of n^2 + 1.
-; Submitted by Jave808
+; Submitted by Science United
 ; 1,3,6,8,1,16,1,8,19,3,1,3,6,42,1,3,1,8,19,3,1,50,6,8,1,3,1,8,6,3,1,16,6,8,103,3,1,8,6,3,1,3,6,8,14,3,1,55,6,3,1,3,6,8,1,126,1,21,6,3,14,3,6,8,1,3,1,8,6,3,391,3,6,21,1,3,1,8,6,3
 
 pow $0,2
 add $0,1
 mov $1,1
-mov $3,1
-mov $4,1
-mov $2,$0
-lpb $2
-  mov $7,$4
-  add $4,$3
+mov $6,1
+mov $7,1
+mov $4,$0
+lpb $4
+  sub $4,$7
+  mov $2,$6
+  add $6,$7
   mov $5,$0
-  mod $5,$4
+  mod $5,$6
   equ $5,0
-  mov $6,$4
-  mul $6,$5
-  add $1,$6
-  mov $3,$7
-  mov $5,$0
-  sub $5,$4
-  add $5,1
-  min $5,1
-  sub $2,$5
+  mov $3,$6
+  mul $3,$5
+  mov $7,$2
+  add $1,$3
 lpe
 mov $0,$1

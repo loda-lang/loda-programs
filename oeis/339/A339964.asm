@@ -1,10 +1,19 @@
 ; A339964: a(n) = gcd(sigma(n), n+1).
+; Submitted by mkferrysr
 ; 1,3,4,1,6,1,8,3,1,1,12,1,14,3,8,1,18,1,20,21,2,1,24,5,1,3,4,1,30,1,32,3,2,1,12,1,38,3,8,1,42,1,44,3,2,1,48,1,1,3,4,1,54,5,8,3,2,1,60,1,62,3,8,1,6,1,68,3,2,1,72,1,74,3,4,7,6,1,80,3
-; Formula: a(n) = gcd(n+1,A000203(n))
+; Formula: a(n) = gcd(n+1,-A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))
 
 #offset 1
 
+sub $0,1
 mov $1,$0
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $0,1
-gcd $0,$1
+mov $4,$0
+dir $4,2
+seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $3,$0
+bxo $3,$1
+mul $3,$4
+sub $2,$3
+add $0,1
+gcd $0,$2

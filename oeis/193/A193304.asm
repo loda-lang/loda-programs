@@ -11,16 +11,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  mov $6,0
   max $6,$3
   mov $5,$6
   add $6,1
   seq $6,19554 ; Smallest number whose square is divisible by n.
   div $5,$6
   mov $3,$5
-  add $3,1
-  pow $3,2
-  sub $3,1
   seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   dif $3,5
   add $3,1

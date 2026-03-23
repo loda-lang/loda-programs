@@ -1,21 +1,23 @@
 ; A018615: Divisors of 730.
 ; Submitted by Science United
 ; 1,2,5,10,73,146,365,730
-; Formula: a(n) = A064989(A297002(((n-1)%4+2*max((n-1)%4-2,0)+1)*31^floor((n-1)/4)))
+; Formula: a(n) = (b(n-1)+1)*min(n-1,(n-1)%4)^2+c(n-1), b(n) = 32*c(n-4)+8*bitor(b(n-4),3)+16, b(7) = 72, b(6) = 72, b(5) = 72, b(4) = 72, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 32*c(n-4)+8*bitor(b(n-4),3)+truncate((4*c(n-4))/4)+16, c(7) = 73, c(6) = 73, c(5) = 73, c(4) = 73, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 1
 
 #offset 1
 
+mov $2,1
 sub $0,1
-mov $1,$0
-mod $1,4
+lpb $0
+  sub $0,4
+  mul $2,4
+  bor $1,3
+  add $1,2
+  add $1,$2
+  mul $1,8
+  div $2,4
+  add $2,$1
+lpe
 add $1,1
-div $0,4
-mov $2,31
-pow $2,$0
-mov $0,$1
-trn $0,3
-mul $0,2
-add $0,$1
-mul $0,$2
-seq $0,297002 ; Completely multiplicative with a(prime(k)) = prime(2 * k) (where prime(k) denotes the k-th prime).
-seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+pow $0,2
+mul $0,$1
+add $0,$2

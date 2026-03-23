@@ -1,9 +1,9 @@
 ; A019309: Number of "bifix-free" words of length n over a four-letter alphabet.
-; Submitted by Science United
+; Submitted by mkferrysr
 ; 1,4,12,48,180,720,2832,11328,45132,180528,721392,2885568,11539440,46157760,184619712,738478848,2953870260,11815481040,47261743632,189046974528,756187176720,3024748706880,12098991941952
 
+mov $1,1
 mov $2,1
-add $0,1
 mul $0,2
 lpb $0
   sub $0,2
@@ -13,7 +13,5 @@ lpb $0
   sub $2,$3
   mov $3,$2
   ror $3,$1
-  div $3,6
 lpe
 mov $0,$2
-div $0,4

@@ -1,26 +1,17 @@
 ; A138437: a(n) = ((n-th prime)^5-(n-th prime)^3)/12.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by amazing
 ; 2,18,250,1372,13310,30758,117912,205770,535348,1707230,2383280,5774442,9648940,12244078,19103432,34837218,59559910,70364110,112485362,150322620,172723548,256380280,328205738,465279540,715535632,875755850
+; Formula: a(n) = truncate((12*floor((A000040(n)*binomial(A000040(n)^2,2))/12)-12)/6)+2
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
-max $0,2
+seq $0,40 ; The prime numbers.
 mov $1,$0
 pow $0,2
-sub $0,1
-pow $1,3
-mul $1,$0
-mov $0,$1
+bin $0,2
+mul $0,$1
 div $0,12
+mul $0,12
+sub $0,12
+div $0,6
+add $0,2

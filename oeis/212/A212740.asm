@@ -1,21 +1,13 @@
 ; A212740: Number of (w,x,y,z) with all terms in {0,...,n} and max{w,x,y,z}<2*min{w,x,y,z}.
-; Submitted by loader3229
+; Submitted by 1scorpion
 ; 0,1,2,17,32,97,162,337,512,881,1250,1921,2592,3697,4802,6497,8192,10657,13122,16561,20000,24641,29282,35377,41472,49297,57122,66977,76832,89041,101250,116161,131072,149057,167042,188497,209952
-; Formula: a(n) = (floor(n/2)*(floor(n/2)*(4*floor(n/2)+6)+4)+1)*(n%2)+2*floor(n/2)^4
 
+pow $0,2
 mov $2,$0
-mod $2,2
+lpb $0
+  add $2,$0
+  sub $0,1
+  ror $2,2
+lpe
+mov $0,$3
 div $0,2
-mov $1,$0
-pow $1,3
-mov $3,$0
-mul $3,4
-add $3,6
-mul $3,$0
-add $3,4
-mul $3,$0
-add $3,1
-mul $2,$3
-mul $0,2
-mul $0,$1
-add $0,$2

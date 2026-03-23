@@ -4,46 +4,45 @@
 
 #offset 1
 
-sub $0,1
-mov $5,$0
-add $0,1
-pow $5,5
-lpb $5
-  mov $6,$4
-  add $6,1
-  mov $7,$6
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $1,$7
-  add $1,1
-  bin $1,2
-  add $4,1
-  sub $6,$1
-  sub $6,1
-  mov $8,$7
+mov $7,$0
+pow $7,5
+lpb $7
+  mov $8,$6
   add $8,1
-  mov $7,$6
-  mul $7,2
-  bin $7,$6
-  mov $6,2
-  mul $6,$8
-  bin $6,$8
-  sub $6,$7
-  gcd $6,$0
-  add $5,$6
-  sub $5,$0
+  mov $9,$8
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $2,$9
+  add $2,1
+  bin $2,2
+  sub $8,$2
+  sub $8,1
+  mov $5,$9
+  add $5,1
+  mov $9,$8
+  mul $9,2
+  bin $9,$8
+  mov $8,2
+  mul $8,$5
+  bin $8,$5
+  sub $8,$9
+  gcd $8,$0
+  add $6,1
+  add $7,$8
+  sub $7,$0
 lpe
-mov $0,$4
-add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $3,$2
-add $3,1
-mov $0,$3
-mul $0,2
-bin $0,$3
+mov $1,$6
+add $1,1
+mov $3,$1
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+mov $1,2
+mul $1,$4
+bin $1,$4
+mov $0,$1
