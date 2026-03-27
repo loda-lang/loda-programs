@@ -1,14 +1,15 @@
 ; A106594: a(n) = number of primitive solutions to 4n+1 = x^2 + y^2.
-; Submitted by pututu
+; Submitted by Science United
 ; 1,0,1,1,0,1,1,0,1,1,0,0,1,0,1,2,0,1,0,0,2,1,0,1,1,0,1,1,0,0,1,0,0,1,0,2,1,0,1,0,0,1,1,0,1,2,0,1,1,0,2,0,0,0,2,0,1,1,0,1,0,0,0,1,0,2,1,0,1,1,0,1,1,0,0,2,0,1,1,0
-; Formula: a(n) = truncate((A004018(A099985(4*n+1))+12)/8)-1
+; Formula: a(n) = truncate(A004018(A075423(8*n+2)+1)/8)
 
 #offset 1
 
-mul $0,4
-add $0,1
-seq $0,99985 ; a(n) = rad(2n), where rad = A007947.
-seq $0,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
-add $0,12
+mov $1,$0
+mul $1,8
+add $1,2
+seq $1,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+add $1,1
+seq $1,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+mov $0,$1
 div $0,8
-sub $0,1

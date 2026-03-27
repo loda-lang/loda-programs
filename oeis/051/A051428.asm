@@ -4,9 +4,8 @@
 
 mov $2,$0
 add $2,8
-pow $2,4
+pow $2,3
 lpb $2
-  sub $2,59
   mov $3,$1
   add $3,1
   mov $5,$3
@@ -17,8 +16,8 @@ lpb $2
   mov $6,$5
   add $6,1
   bin $6,2
+  add $6,1
   add $1,1
-  sub $3,1
   sub $3,$6
   mov $6,$5
   bin $6,$3
@@ -33,6 +32,7 @@ lpb $2
   mov $4,$0
   max $4,0
   equ $4,$0
+  sub $2,$6
   mul $2,$4
 lpe
 mov $0,$6

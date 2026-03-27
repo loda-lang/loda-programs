@@ -1,7 +1,7 @@
 ; A393500: Decimal expansion of the average dimensionless pairwise Manhattan distance between all points in a city of optimum shape, i.e., minimizing this distance.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by 1scorpion
 ; 6,5,0,2,4,5,9,5,2,9,5
-; Formula: a(n) = -10*truncate((-10*truncate((c(n)+5)/10)+c(n)+15)/10)-10*truncate((c(n)+5)/10)+c(n)+15, b(n) = max(b(n-1),1)+1, b(2) = 3, b(1) = 2, b(0) = 0, c(n) = d(n-1), c(2) = 5, c(1) = 0, c(0) = 1, d(n) = truncate((d(n-2)*(-4*b(n-1)-16)+max(b(n-1),1)*(666*max(b(n-1),1)-18)+d(n-1)+36)/(max(b(n-1),1)*(-max(b(n-1),1)-143)+258)), d(2) = -83, d(1) = 5, d(0) = 0
+; Formula: a(n) = -10*truncate((c(n)+715)/10)+c(n)+715, b(n) = max(b(n-1),1)+1, b(2) = 3, b(1) = 2, b(0) = 0, c(n) = d(n-1), c(2) = 5, c(1) = 0, c(0) = 1, d(n) = truncate((d(n-2)*(-4*b(n-1)-16)+max(b(n-1),1)*(666*max(b(n-1),1)-18)+d(n-1)+36)/(max(b(n-1),1)*(-max(b(n-1),1)-143)+258)), d(2) = -83, d(1) = 5, d(0) = 0
 
 mov $2,1
 lpb $0
@@ -28,7 +28,5 @@ lpb $0
   div $3,$5
 lpe
 mov $0,$2
-add $0,5
-mod $0,10
-add $0,10
+add $0,715
 mod $0,10

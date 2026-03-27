@@ -1,5 +1,5 @@
 ; A337298: Sum of the coordinates of all relatively prime pairs of divisors of n, (d1,d2), such that d1 <= d2.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 2,5,6,10,8,21,10,19,16,29,14,46,16,37,36,36,20,61,22,64,46,53,26,91,34,61,44,82,32,141,34,69,66,77,64,136,40,85,76,127,44,181,46,118,106,101,50,176,60,133,96,136,56,173,92,163,106,125,62,316,64,133,136,134,106,261,70
 
 #offset 1
@@ -9,7 +9,6 @@ mov $2,2
 mov $4,1
 lpb $0
   mov $3,$0
-  sub $3,2
   lpb $3
     mov $4,$0
     mod $4,$2

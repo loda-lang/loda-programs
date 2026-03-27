@@ -1,20 +1,17 @@
 ; A191869: First differences of the dying rabbits sequence A000044.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,1,1,2,3,5,8,13,21,34,55,88,143,231,373,603,974,1574,2543,4109,6639,10727,17332,28004,45248,73109,118126,190862,308385,498273,805084,1300814,2101789,3395964,5487026,8865658,14324680,23145090,37396661,60423625
 
 #offset 1
 
+mov $1,1
+mov $4,1
 sub $0,1
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,44 ; Dying rabbits: a(0) = 1; for 1 <= n <= 12, a(n) = Fibonacci(n); for n >= 13, a(n) = a(n-1) + a(n-2) - a(n-13).
-  mov $1,$2
-  mov $2,$0
-  mul $4,$3
+lpb $0
+  sub $0,1
+  ror $1,13
+  mul $1,-1
+  add $1,$2
+  add $1,$3
 lpe
-sub $1,$2
-mov $0,$1
+mov $0,$3

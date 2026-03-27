@@ -1,13 +1,11 @@
 ; A045043: Numbers whose base-4 representation contains exactly one 0 and one 2.
-; Submitted by atannir
+; Submitted by [SG]KidDoesCrunch
 ; 8,18,24,33,35,36,44,50,56,70,73,75,78,82,88,97,99,100,108,114,120,133,135,141,143,145,147,148,156,177,179,180,188,198,201,203,206,210,216,225,227,228,236,242,248,278,281,283,286,293
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
+add $2,6
 pow $2,3
 lpb $2
   mov $4,1
@@ -20,7 +18,8 @@ lpb $2
     div $3,4
     max $4,$5
   lpe
-  mul $4,3
+  mul $4,6
+  dif $4,2
   div $4,28
   mov $3,$4
   equ $3,2

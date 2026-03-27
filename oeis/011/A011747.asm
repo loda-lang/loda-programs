@@ -5,8 +5,7 @@
 mul $0,23
 pow $0,5
 mod $0,31
-sub $0,1
-trn $0,1
+trn $0,2
 bin $0,4
 add $0,1
 mod $0,2

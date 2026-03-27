@@ -1,12 +1,10 @@
 ; A031470: Numbers whose base-5 representation has the same number of 0's as 4's.
-; Submitted by Kotenok2000
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,6,7,8,11,12,13,16,17,18,20,29,31,32,33,36,37,38,41,42,43,45,54,56,57,58,61,62,63,66,67,68,70,79,81,82,83,86,87,88,91,92,93,95,101,102,103,105,110,115,134,139,144,146,147,148,154,156,157,158,161
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
 pow $2,8
 lpb $2
   mov $4,0

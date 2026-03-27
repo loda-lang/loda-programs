@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,70635 ; a(n) = n mod (sum of digits of n).
-  sub $3,1
-  equ $3,6
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0

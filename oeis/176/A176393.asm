@@ -1,18 +1,14 @@
 ; A176393: a(n) = A176100(n) + 1 = 2*A141468(n) + 1.
-; Submitted by Ralfy
+; Submitted by Goldislops
 ; 1,3,9,13,17,19,21,25,29,31,33,37,41,43,45,49,51,53,55,57,61,65,67,69,71,73,77,79,81,85,89,91,93,97,99,101,103,105,109,111,113,115,117,121,125,127,129,131,133,137,139,141,145,149,151,153,155,157,161,163,165
+; Formula: a(n) = 2*A173073(n)+2*n-1
 
 #offset 1
 
-sub $0,2
-lpb $0
-  trn $0,1
-  add $0,1
-  seq $0,72668 ; Numbers one less than composite numbers.
-  mov $1,$0
-  mov $0,0
-lpe
-add $0,1
-add $0,$1
+mov $1,$0
+sub $0,1
+seq $1,173073 ; (n-th nonnegative nonprime) minus (n-1).
+add $1,$0
+mov $0,$1
 mul $0,2
 add $0,1

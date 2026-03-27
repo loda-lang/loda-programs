@@ -1,18 +1,21 @@
 ; A214918: a(n) is the least m > 0 such that Fibonacci(n-m) divides Fibonacci(n+2+m).
-; Submitted by zelandonii
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,2,1,4,3,2,4,8,3,10,6,4,7,14,5,16,9,6,10,20,7,14,12,8,13,26,9,28,15,10,16,20,11,34,18,12,19,38,13,40,21,14,22,44,15,34,24,16,25,50,17,32,27,18,28,56,19,58,30,20,31,38,21,64,33,22,34,68,23,70,36,24,37,54,25,76,39,26,40
 
 #offset 2
 
-mov $1,2
+mov $1,$0
+mov $3,$0
+mul $3,2
+add $3,2
 sub $0,2
-lpb $0
-  sub $0,1
-  add $1,2
-  lpb $1
-    add $0,2
-    dif $1,$0
-  lpe
+sub $1,1
+lpb $1
+  mov $2,$3
+  gcd $2,$1
+  div $2,$1
+  sub $1,1
+  add $1,$2
 lpe
-div $1,2
-mov $0,$1
+sub $0,$1
+add $0,2

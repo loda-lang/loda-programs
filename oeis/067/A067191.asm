@@ -1,5 +1,5 @@
 ; A067191: Numbers that can be expressed as the sum of two primes in exactly five ways.
-; Submitted by owensse
+; Submitted by skildude
 ; 48,54,64,70,74,76,82,86,94,104,124,136,148,158,164,188
 
 #offset 1
@@ -10,7 +10,8 @@ mov $1,11
 add $2,5
 mul $2,81
 lpb $2
-  sub $2,18
+  sub $2,19
+  sub $2,$4
   mov $3,$1
   seq $3,45917 ; From Goldbach problem: number of decompositions of 2n into unordered sums of two primes.
   equ $3,5

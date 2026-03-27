@@ -9,9 +9,8 @@ pow $0,2
 mov $1,$0
 div $1,11
 add $1,3
-mov $0,7
+mov $0,14
 add $0,$1
-mov $1,$0
 add $1,$0
 nrt $1,2
 mov $0,$1

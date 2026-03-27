@@ -1,6 +1,7 @@
 ; A205064: Number of (n+1) X (n+1) 0..1 arrays with the number of rightwards and downwards edge increases in each 2 X 2 subblock differing from the number in all its horizontal and vertical neighbors.
 ; Submitted by 10esseeTony
 ; 16,64,144,376,856,1984,4480,9856,22144,47104,105472,219136,489472,999424,2228224,4489216,9994240,19922944,44302336,87556096,194510848,381681664,847249408,1652555776,3665821696
+; Formula: a(n) = b(n-1), b(n) = 8*b(n-2)-16*b(n-4), b(12) = 489472, b(11) = 219136, b(10) = 105472, b(9) = 47104, b(8) = 22144, b(7) = 9856, b(6) = 4480, b(5) = 1984, b(4) = 856, b(3) = 376, b(2) = 144, b(1) = 64, b(0) = 16
 
 #offset 1
 

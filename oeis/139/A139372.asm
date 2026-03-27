@@ -8,8 +8,18 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $7,$1
+  dgs $7,2
+  mul $7,3
+  mov $6,$7
+  mov $7,$1
+  dgs $7,4
+  mul $7,-2
+  add $6,$7
   mov $5,$1
-  seq $5,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
+  mul $5,2
+  add $5,$6
+  div $5,3
   mov $3,$1
   sub $3,$5
   sub $5,$3

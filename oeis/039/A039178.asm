@@ -1,20 +1,18 @@
 ; A039178: Numbers whose base-11 representation has the same number of 2's and 7's.
-; Submitted by Kotenok2000
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,3,4,5,6,8,9,10,11,12,14,15,16,17,19,20,21,29,33,34,36,37,38,39,41,42,43,44,45,47,48,49,50,52,53,54,55,56,58,59,60,61,63,64,65,66,67,69,70,71,72,74,75,76,79,88,89,91,92,93,94,96,97,98,99,100,102,103
 
 #offset 1
 
-sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  sub $2,1
   mov $4,0
   mov $3,$1
   lpb $3
     mov $5,$3
-    mul $5,2
-    add $5,8
+    add $5,9
+    mul $5,9
     mod $5,11
     mov $6,0
     sub $6,$5

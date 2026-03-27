@@ -15,8 +15,7 @@ lpb $0
   add $6,3
   mov $3,$4
   bin $3,$1
-  add $0,1
-  trn $0,2
+  trn $0,1
   add $1,1
   mul $3,$2
   div $3,$1

@@ -18,7 +18,6 @@ mov $0,$2
 lpb $0
   min $1,$0
   add $3,$1
-  sub $0,1
-  trn $0,1
+  trn $0,2
 lpe
 mov $0,$3

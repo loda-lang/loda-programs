@@ -1,21 +1,20 @@
 ; A020036: Nearest integer to Gamma(n + 1/6)/Gamma(1/6).
-; Submitted by Cruncher Pete
+; Submitted by treaclepumpkin
 ; 1,0,0,0,1,6,29,177,1269,10366,95020,966032,10787363,131246245,1728075563,24481070470,371296235455,6002622473192,103045019123133,1871984514070245,35879703186346359,723574014257984910
 
 mov $1,1
 mov $3,1
 lpb $0
   mov $2,$0
-  mul $2,6
-  sub $2,5
+  mul $2,12
+  sub $2,10
+  mul $3,12
   sub $0,1
-  mul $1,3
   mul $1,$2
-  mul $3,18
 lpe
-add $2,1
-mul $1,$2
-add $1,$3
-mul $3,2
+mul $1,2
 div $1,$3
 mov $0,$1
+add $0,3
+div $0,2
+sub $0,1

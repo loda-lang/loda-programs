@@ -1,19 +1,18 @@
-; A161585: The list of the k values in the common solutions to the 2 equations 7*k+1=A^2, 11*k+1=B^2.
-; Submitted by ckrause
+; A161585: The list of the k values in the common solutions to the 2 equations 7*k+1 = A^2, 11*k+1 = B^2.
+; Submitted by Science United
 ; 0,9,720,56880,4492809,354875040,28030635360,2214065318409,174883129518960,13813553166679440,1091095817038156809,86182755992847708480,6807346627617930813120,537694200825823686528009,42471034518612453304899600,3354674032769557987400540400
-; Formula: a(n) = floor((c(n-1)^2)/7), b(n) = 7*c(n-1)+b(n-1), b(1) = 7, b(0) = 0, c(n) = 8*c(n-1)+b(n-1), c(1) = 8, c(0) = 1
+; Formula: a(n) = floor(b(n)/49), b(n) = 7*d(n-1)^2, b(2) = 448, b(1) = 7, b(0) = 0, c(n) = 7*d(n-1)+c(n-1), c(2) = 63, c(1) = 7, c(0) = 0, d(n) = 8*d(n-1)+c(n-1), d(2) = 71, d(1) = 8, d(0) = 1
 
 #offset 1
 
 mov $3,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $1,$3
   mul $1,7
   add $2,$1
+  mul $1,$3
   add $3,$2
 lpe
-pow $3,2
-mov $0,$3
-div $0,7
+mov $0,$1
+div $0,49

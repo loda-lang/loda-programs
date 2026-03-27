@@ -11,9 +11,10 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  mul $3,4
+  mul $3,8
+  add $3,2
+  seq $3,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
   add $3,1
-  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
   mul $3,4
   seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   div $3,4

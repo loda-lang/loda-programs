@@ -8,8 +8,6 @@ mov $1,$0
 mul $1,2
 mov $2,$1
 sub $2,1
-mov $7,0
-mov $9,0
 bxo $1,$2
 add $1,1
 div $1,2

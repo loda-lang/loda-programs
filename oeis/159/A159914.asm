@@ -1,21 +1,15 @@
 ; A159914: Half the number of (n-3)-element subsets of {1,...,n} whose elements sum up to an odd value.
-; Submitted by LCB001
+; Submitted by Science United
 ; 0,0,0,0,1,3,5,8,14,22,30,40,55,73,91,112,140,172,204,240,285,335,385,440,506,578,650,728,819,917,1015,1120,1240,1368,1496,1632,1785,1947,2109,2280,2470,2670,2870,3080,3311,3553,3795,4048,4324,4612,4900,5200
+; Formula: a(n) = truncate((n-1)/2)*floor(n/4)+a(n-1), a(0) = 0
 
-mov $53,$0
-mov $55,$0
-lpb $55
-  clr $0,53
-  sub $55,1
-  mov $0,$53
-  sub $0,$55
-  mov $2,$0
+lpb $0
+  mov $3,$0
+  div $3,4
   sub $0,1
-  div $0,2
-  add $6,$2
-  div $6,4
-  mul $6,$0
-  rol $1,7
-  add $54,$5
+  mov $2,$0
+  div $2,2
+  mul $2,$3
+  add $1,$2
 lpe
-mov $0,$54
+mov $0,$1

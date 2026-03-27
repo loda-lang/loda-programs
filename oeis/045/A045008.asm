@@ -31,4 +31,7 @@ lpb $2
   max $3,$1
   div $3,2
 lpe
-mov $0,$3
+mov $0,$1
+sub $0,2968
+div $0,2
+add $0,1484

@@ -1,23 +1,7 @@
 ; A276150: Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 0,1,1,2,2,3,1,2,2,3,3,4,2,3,3,4,4,5,3,4,4,5,5,6,4,5,5,6,6,7,1,2,2,3,3,4,2,3,3,4,4,5,3,4,4,5,5,6,4,5,5,6,6,7,5,6,6,7,7,8,2,3,3,4,4,5,3,4,4,5,5,6,4,5,5,6,6,7,5,6
+; Formula: a(n) = A001222(A276086(n))
 
-mov $2,1
-mov $3,1
-mov $6,$0
-lpb $6
-  sub $6,1
-  add $2,1
-  mov $4,$3
-  mul $4,$2
-  mov $5,$0
-  mod $5,$4
-  div $5,$3
-  add $1,$5
-  add $2,$7
-  mov $3,$4
-  mov $7,$0
-  equ $7,0
-  add $7,1
-lpe
-mov $0,$1
+seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

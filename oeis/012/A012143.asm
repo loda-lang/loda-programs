@@ -7,5 +7,6 @@ lpb $0
   neq $0,2
   mul $0,3
   pow $0,$0
+  sub $0,1
 lpe
 seq $0,12134 ; exp(arcsin(arctanh(x)))=1+x+1/2!*x^2+4/3!*x^3+13/4!*x^4+84/5!*x^5...

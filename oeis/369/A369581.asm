@@ -11,8 +11,7 @@ lpb $0
   sub $2,$6
   bin $2,$0
   sub $4,1
-  sub $0,2
-  trn $0,1
+  trn $0,3
   mov $3,$4
   bin $3,$1
   mul $3,$2

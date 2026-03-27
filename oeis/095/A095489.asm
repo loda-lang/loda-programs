@@ -1,12 +1,10 @@
 ; A095489: a(n) = 48 written in base 16 - n.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 30,33,36,39,40,44,48,53,60,66,120,143,300,1210,110000,111111111111111111111111111111111111111111111111
 
 sub $0,1
-mov $2,10
+mov $2,15
 sub $2,$0
-add $2,5
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

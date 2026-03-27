@@ -1,5 +1,5 @@
 ; A010415: Squares mod 54.
-; Submitted by loader3229
+; Submitted by owensse
 ; 0,1,4,7,9,10,13,16,19,22,25,27,28,31,34,36,37,40,43,46,49,52
 
 #offset 1
@@ -16,7 +16,6 @@ mov $9,22
 mov $10,25
 mov $11,27
 mov $12,28
-sub $0,1
 lpb $0
   mul $1,-1
   rol $1,12
@@ -24,5 +23,5 @@ lpb $0
   add $12,$11
   sub $0,1
 lpe
-mov $0,$7
+mov $0,$6
 sub $0,18

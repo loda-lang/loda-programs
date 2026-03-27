@@ -32,7 +32,6 @@ lpb $33
       add $0,2
       add $2,$11
       mul $11,$12
-      nrt $12,10
     lpe
     mov $30,$29
     mul $30,$2

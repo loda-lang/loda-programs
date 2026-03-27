@@ -19,5 +19,4 @@ mov $1,$3
 mul $1,2
 seq $1,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
 div $1,2
-sub $0,1
 mov $0,$1

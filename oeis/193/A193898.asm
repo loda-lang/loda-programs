@@ -1,7 +1,7 @@
 ; A193898: Mirror of the triangle A193897.
 ; Submitted by loader3229
 ; 1,1,2,3,6,3,6,12,9,4,10,20,18,12,5,15,30,30,24,15,6,21,42,45,40,30,18,7,28,56,63,60,50,36,21,8,36,72,84,84,75,60,42,24,9,45,90,108,112,105,90,70,48,27,10,55,110,135,144,140,126,105,80,54,30,11,66,132
-; Formula: a(n) = binomial(max(1,truncate((sqrtint(8*n+8)-1)/2))+min(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1,0)+1,2)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)
+; Formula: a(n) = binomial(max(1,floor((sqrtint(8*n+8)-1)/2))+min(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+1,0)+1,2)*(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)
 
 add $0,1
 mov $1,$0

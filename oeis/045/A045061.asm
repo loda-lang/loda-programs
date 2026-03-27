@@ -1,5 +1,5 @@
 ; A045061: Numbers whose base-4 representation contains exactly four 0's and four 2's.
-; Submitted by atannir
+; Submitted by [SG]KidDoesCrunch
 ; 32810,32906,32930,32936,33290,33314,33320,33410,33416,33440,34826,34850,34856,34946,34952,34976,35330,35336,35360,35456,40970,40994,41000,41090,41096,41120,41474,41480,41504,41600
 
 #offset 1
@@ -57,8 +57,7 @@ pow $1,$0
 add $1,$2
 add $1,$3
 mov $0,$1
-mul $0,3
-sub $0,63
-div $0,9
 mul $0,6
+sub $0,126
+div $0,3
 add $0,32810

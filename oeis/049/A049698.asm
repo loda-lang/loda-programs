@@ -7,8 +7,12 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $2,$0
-  seq $2,100449 ; Number of ordered pairs (i,j) with |i| + |j| <= n and gcd(i,j) <= 1.
+  mov $4,$0
+  seq $4,49691 ; a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
+  sub $4,1
+  mov $2,$4
+  mul $2,2
+  add $2,1
   add $0,3
   add $1,$2
 lpe
