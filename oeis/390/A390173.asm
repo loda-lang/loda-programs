@@ -1,0 +1,27 @@
+; A390173: Smallest integer k with exactly n distinct prime factors such that the sum of those primes equals the sum of the exponents in its prime factorization.
+; Submitted by Science United
+; 4,48,3840,1720320,19377684480,1031822943191040,1149566322884455956480,5725686368778233622854369280,552351192504176469137269167237365760,4299848682728069379522650489560973602707210240,143124748393009469858583168565246475416987429092521410560,363911939248952903012060172699203001624375550710935062588713515089920
+
+#offset 1
+
+sub $0,1
+mov $1,1
+mov $2,$0
+lpb $2
+  add $2,1
+  mov $3,$2
+  seq $3,40 ; The prime numbers.
+  mov $4,2
+  pow $4,$3
+  mul $3,2
+  mul $4,$3
+  mov $2,$4
+  sub $2,14
+  div $2,4
+  add $2,4
+  sub $0,1
+  mul $1,$2
+  mov $2,$0
+lpe
+mov $0,$1
+mul $0,4
