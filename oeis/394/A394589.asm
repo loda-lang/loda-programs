@@ -1,0 +1,10 @@
+; A394589: Number of partitions of n with at least one even part minus the number of partitions of n into odd parts.
+; Submitted by Science United
+; -1,-1,0,-1,1,1,3,5,10,14,22,32,47,65,91,122,167,221,293,382,499,640,824,1047,1331,1674,2106,2626,3274,4053,5012,6162,7569,9247,11286,13713,16641,20117,24287,29221,35112,42063,50322,60041,71543,85038,100950,119574,141453,166997,196910,231749,272425,319691,374719,438520,512607,598320,697604,812236,944707,1097353,1273368,1475803,1708742,1976158,2283256,2635189,3038583,3500085,4028114,4631221,5320079,6105637,7001408,8021372,9182591,10502865,12003696,13707674
+; Formula: a(n) = -2*A000009(n)+A000041(n)
+
+mov $1,$0
+seq $1,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+sub $0,$1
+sub $0,$1
