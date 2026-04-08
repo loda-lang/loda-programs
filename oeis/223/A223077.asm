@@ -8,8 +8,7 @@ sub $0,1
 mov $1,1
 add $1,$0
 mov $3,1
-mov $4,1
-mov $5,1
+fil $3,3
 mov $7,$0
 add $7,10
 lpb $7
@@ -64,8 +63,7 @@ lpb $7
   lpe
   mov $9,$2
   add $9,$4
-  mov $2,$3
-  mov $3,$4
+  rol $2,3
   mov $4,$5
   mov $5,$9
   sub $7,1

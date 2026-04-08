@@ -1,18 +1,16 @@
 ; A096319: Final digit of the sum of the first n primes.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by 1scorpion
 ; 0,2,5,0,7,8,1,8,7,0,9,0,7,8,1,8,1,0,1,8,9,2,1,4,3,0,1,4,1,0,3,0,1,8,7,6,7,4,7,4,7,6,7,8,1,8,7,8,1,8,7,0,9,0,1,8,1,0,1,8,9,2,5,2,3,6,3,4,1,8,7,0,9,6,9,8,1,0,7,8
 
-mod $0,110
-add $0,1
-mov $2,12
+mod $0,-149
 mov $1,$0
-add $1,1
 lpb $1
-  sub $1,1
-  add $2,$3
-  add $3,1
-  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  max $1,1
+  seq $1,60939 ; a(n) = (Sum of the first n primes) + n.
+  mov $2,$1
+  mov $1,0
 lpe
-mov $0,$2
-sub $0,13
+mov $1,$2
+sub $1,$0
+mov $0,$1
 mod $0,10

@@ -1,29 +1,27 @@
 ; A134700: Triangle read by rows: A000012 * A051731^2.
-; Submitted by Dongha Hwang
+; Submitted by iBezanilla
 ; 1,3,1,5,1,1,8,3,1,1,10,3,1,1,1,14,5,3,1,1,1,16,5,3,1,1,1,1,20,8,3,3,1,1,1,1,23,8,5,3,1,1,1,1,1,27,10,5,3,3,1,1,1,1,1,29,10,5,3,3,1,1,1,1,1,1,35,14,8,5,3,3,1,1,1,1,1,1,37,14
 
 #offset 1
 
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $6,$2
-add $6,1
-bin $6,2
-sub $0,$6
-sub $0,1
-add $2,1
 mov $4,$0
-mov $5,$0
-mov $0,$2
-lpb $0
-  sub $0,1
-  add $4,1
-  mov $1,$2
-  div $1,$4
-  add $3,$1
-  add $4,$5
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $2,$4
+add $2,1
+bin $2,2
+mov $1,$0
+sub $1,$2
+add $4,1
+mov $7,$1
+mov $1,$4
+lpb $1
+  sub $1,$7
+  add $6,$7
+  mov $3,$4
+  div $3,$6
+  add $5,$3
 lpe
-mov $0,$3
+mov $0,$5

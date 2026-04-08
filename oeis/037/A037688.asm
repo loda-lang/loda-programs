@@ -1,19 +1,18 @@
 ; A037688: Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,0,3.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,6,24,99,397,1590,6360,25443,101773,407094,1628376,6513507,26054029,104216118,416864472,1667457891,6669831565,26679326262,106717305048,426869220195,1707476880781,6829907523126,27319630092504
-; Formula: a(n) = truncate((b(n-1)+c(n-1))/2), b(n) = 4*b(n-1)+4*c(n-1), b(1) = 12, b(0) = 0, c(n) = -4*truncate((c(n-1)+21)/4)+c(n-1)+21, c(1) = 0, c(0) = 3
+; Formula: a(n) = 4*a(n-1)+b(n-1), a(1) = 1, a(0) = 0, b(n) = -4*truncate(truncate(if(((b(n-1)+23)%6)==0,(b(n-1)+23)/6,b(n-1)+23)/2)/4)+truncate(if(((b(n-1)+23)%6)==0,(b(n-1)+23)/6,b(n-1)+23)/2), b(1) = 2, b(0) = 1
 
 #offset 1
 
-mov $2,3
-sub $0,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $1,$2
   mul $1,4
-  add $2,21
+  add $1,$2
+  add $2,23
+  dif $2,6
+  div $2,2
   mod $2,4
 lpe
-add $1,$2
 mov $0,$1
-div $0,2

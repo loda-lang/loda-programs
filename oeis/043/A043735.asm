@@ -6,12 +6,10 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
   seq $3,136004 ; a(n) = A005811(n) + 4.
-  dif $3,-2
   mod $3,3
   dif $3,2
   gcd $3,2

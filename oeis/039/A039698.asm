@@ -13,7 +13,6 @@ lpb $2
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,1
   seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

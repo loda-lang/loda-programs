@@ -8,10 +8,18 @@ mov $1,2
 lpb $1
   sub $1,1
   dif $0,$1
-  trn $0,1
-  seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  max $0,1
+  mov $2,$0
+  seq $2,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  mul $2,8
+  mov $0,$2
+  sub $0,4
+  div $0,8
   max $0,1
   add $0,1
-  seq $0,78310 ; a(n) = n*rad(n) + 1, where rad = A007947 (squarefree kernel).
-  sub $0,1
+  mov $3,$0
+  seq $0,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  mul $0,$3
+  add $3,$0
+  mov $0,$3
 lpe

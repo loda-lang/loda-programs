@@ -1,5 +1,5 @@
 ; A018289: Divisors of 112.
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 1,2,4,7,8,14,16,28,56,112
 
 #offset 1
@@ -8,7 +8,6 @@ sub $0,1
 mov $2,$0
 div $2,9
 mul $2,11
-mod $0,9
 mov $1,$0
 equ $1,1
 add $2,$1

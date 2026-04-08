@@ -1,19 +1,18 @@
 ; A103350: Denominators of sum_{k=1..n} 1/k^8 = Zeta(8,n).
-; Submitted by BrandyNOW
+; Submitted by Supericent
 ; 1,256,1679616,429981696,167961600000000,167961600000000,968265199641600000000,247875891108249600000000,1626313721561225625600000000,1626313721561225625600000000
 
 #offset 1
 
-mov $2,1
-mov $3,2
-sub $0,1
 lpb $0
+  mov $2,$0
+  pow $2,8
   sub $0,1
-  gcd $1,$3
-  dif $2,$1
-  mov $1,$2
-  mul $2,$3
-  add $3,1
+  max $1,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
 lpe
-pow $2,8
-mov $0,$2
+gcd $3,$1
+div $1,$3
+mov $0,$1

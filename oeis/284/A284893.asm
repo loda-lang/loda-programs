@@ -1,22 +1,19 @@
 ; A284893: Fixed point of the morphism 0 -> 01, 1 -> 0111.
-; Submitted by pram
+; Submitted by Science United
 ; 0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1
-; Formula: a(n) = truncate(d(n-1)/3), b(n) = truncate((-2*d(n-1)*c(n-1)+b(n-1))/2), b(2) = -17, b(1) = -2, b(0) = 0, c(n) = 2*d(n-1)*c(n-1), c(2) = 32, c(1) = 4, c(0) = 2, d(n) = gcd(2*d(n-1)-2*truncate((2*d(n-1)+truncate((-2*d(n-1)*c(n-1)+b(n-1))/2))/2)+truncate((-2*d(n-1)*c(n-1)+b(n-1))/2),4), d(2) = 1, d(1) = 4, d(0) = 1
+; Formula: a(n) = d(n)-1, b(n) = truncate((-c(n-1)+b(n-1))/gcd(-c(n-1)+b(n-1)+d(n-1),2)), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = 2*gcd(-c(n-1)+b(n-1)+d(n-1),2)*c(n-1), c(2) = -8, c(1) = -2, c(0) = -1, d(n) = gcd(-c(n-1)+b(n-1)+d(n-1),2), d(2) = 2, d(1) = 1, d(0) = 0
 
 #offset 1
 
-mov $2,2
-mov $3,1
-sub $0,1
+mov $2,-1
 lpb $0
   sub $0,1
-  mul $3,2
-  mul $2,$3
   sub $1,$2
-  div $1,2
   add $3,$1
-  mod $3,2
-  gcd $3,4
+  gcd $3,2
+  div $1,$3
+  mul $2,2
+  mul $2,$3
 lpe
 mov $0,$3
-div $0,3
+sub $0,1

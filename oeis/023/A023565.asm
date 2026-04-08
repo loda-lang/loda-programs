@@ -1,5 +1,5 @@
 ; A023565: Convolution of A023531 and A023533.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 0,1,0,0,2,0,0,1,1,0,1,1,0,2,0,0,1,1,0,1,1,0,2,1,0,0,1,1,1,1,0,0,1,0,1,2,0,1,2,0,0,0,1,2,0,1,1,1,0,0,0,0,1,3,0,0,2,0,0,1,1,0,2,1,1,0,0,1,2,0,0,0,1,1,1,0,1,1,0,1
 
 #offset 1
@@ -11,19 +11,16 @@ lpb $2
   sub $2,$5
   max $2,2
   add $4,1
-  mov $7,$0
-  sub $0,1
   mov $6,$2
   mul $6,8
   nrt $6,2
   add $6,2
   div $6,2
   bin $6,2
-  gcd $7,$0
   mov $3,$2
   equ $3,$6
   add $5,$4
-  add $5,$7
+  add $5,1
   add $1,$3
 lpe
 mov $0,$1

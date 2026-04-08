@@ -1,24 +1,33 @@
 ; A247100: The number of ways to write an n-bit binary string and then define each run of ones as an element in an equivalence relation.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,4,9,21,51,127,324,844,2243,6073,16737,46905,133556,386062,1132107,3365627,10137559,30920943,95457178,298128278,941574417,3006040523,9697677885,31602993021,104001763258,345524136076,1158570129917,3919771027105,13377907523151,46047432372123,159815330924268,559162819133068,1971880471591791,7007533691584213,25090879086713069,90502384994970613,328797409046551044,1202970132080458398,4431759588091834919,16437355467509547583,61371136585352164419,230630793118448127227,872244021205021057930
 
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  add $0,1
-  div $0,2
-  mov $5,$0
-  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  seq $5,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-  div $5,$0
-  mul $1,$5
-  add $3,$1
+mov $7,$0
+add $7,1
+bin $7,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  add $4,1
+  div $4,2
+  seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mov $5,$2
+  add $5,$7
+  add $5,1
+  mov $6,$5
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $3,$5
+  add $3,1
+  bin $3,2
+  sub $6,$3
+  sub $6,1
+  bin $5,$6
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
-mov $0,$3
+mov $0,$1

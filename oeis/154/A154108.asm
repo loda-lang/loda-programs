@@ -5,45 +5,43 @@
 #offset 1
 
 sub $0,1
-mov $15,$0
-mov $17,2
-lpb $17
-  clr $0,15
-  sub $17,1
-  mov $0,$15
-  add $0,$17
-  sub $0,1
-  mov $11,$0
-  mov $13,2
-  lpb $13
-    sub $13,1
-    mov $0,$11
-    add $0,$13
-    trn $0,1
-    lpb $0
-      mov $0,4
-      seq $0,13916 ; Numbers k such that the sum of the first k primes is prime.
-      mov $1,$0
-      seq $1,101301 ; The sum of the first n primes, minus n.
-      add $0,$1
-    lpe
-    add $0,1
-    mov $1,$0
-    seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-    mov $14,$13
-    mul $14,$1
-    mov $0,$1
-    add $12,$14
-  lpe
-  min $11,1
-  mul $11,$0
+mov $12,$0
+mov $14,2
+lpb $14
+  clr $0,12
+  sub $14,1
   mov $0,$12
-  sub $0,$11
-  mov $18,$17
-  mul $18,$0
-  add $16,$18
+  add $0,$14
+  sub $0,1
+  mov $8,$0
+  mov $10,2
+  lpb $10
+    sub $10,1
+    mov $2,45
+    mov $0,$8
+    add $0,$10
+    max $0,1
+    lpb $0
+      trn $2,7
+      mov $0,$2
+    lpe
+    mov $5,$0
+    seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+    rol $1,5
+    mov $11,$10
+    mul $11,$4
+    mov $0,$4
+    add $9,$11
+  lpe
+  min $8,1
+  mul $8,$0
+  mov $0,$9
+  sub $0,$8
+  mov $15,$14
+  mul $15,$0
+  add $13,$15
 lpe
-min $15,1
-mul $15,$0
-mov $0,$16
-sub $0,$15
+min $12,1
+mul $12,$0
+mov $0,$13
+sub $0,$12

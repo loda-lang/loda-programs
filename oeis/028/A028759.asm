@@ -1,5 +1,5 @@
 ; A028759: Nonsquares mod 46.
-; Submitted by loader3229
+; Submitted by Ryan Hothersall
 ; 5,7,10,11,14,15,17,19,20,21,22,28,30,33,34,37,38,40,42,43,44,45
 
 #offset 1
@@ -24,5 +24,4 @@ lpb $0
   add $12,$11
   sub $0,1
 lpe
-mov $0,$12
-sub $0,23
+mov $0,$1

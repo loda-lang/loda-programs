@@ -16,8 +16,9 @@ lpb $2
   sub $7,2
   mov $6,$3
   pow $6,$7
-  mov $5,$3
-  seq $5,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $8,1
+  fac $8,$3
+  mov $5,$8
   div $5,$6
   lex $5,$3
   mov $3,$5

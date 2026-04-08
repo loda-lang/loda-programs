@@ -1,14 +1,19 @@
 ; A268062: a(n) = Sum_{k=1..n} prime(k+1)^prime(k).
 ; Submitted by Wood
 ; 9,134,16941,19504112,1792179898149,9906370212804086,5480396764155014990025,74620951324354865576898512,4316720792370367095095683949638501,17761887757410618772194137156551786713472772,4113915065494528452775640793448453170290434881585
-; Formula: a(n) = a(n-1)+truncate(A159477((A008578(n+1)==0)+A008578(n+1)+1)^A008578(n+1)), a(0) = 0
 
 #offset 1
 
 lpb $0
+  mov $5,$0
+  dif $5,$0
+  add $5,1
   mov $3,$0
-  add $3,1
-  seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  max $3,1
+  seq $3,40 ; The prime numbers.
+  mul $5,$3
+  mov $3,$5
+  div $3,2
   mov $2,$3
   equ $2,0
   add $2,$3

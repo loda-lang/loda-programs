@@ -1,5 +1,5 @@
 ; A095468: a(n) = 38 written in base n.
-; Submitted by Science United
+; Submitted by h8a1c5
 ; 11111111111111111111111111111111111111,100110,1102,212,123,102,53,46,42,38,35,32
 
 #offset 1
@@ -11,9 +11,7 @@ mov $5,$0
 equ $5,1
 mov $0,0
 neq $1,0
-mul $1,10
-add $1,67
-div $1,2
+add $1,37
 lpb $1
   mov $4,$1
   mod $4,$2

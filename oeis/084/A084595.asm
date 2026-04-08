@@ -1,5 +1,5 @@
 ; A084595: For n > 0: a(n) = Sum_{r=0..2^(n-1)-1} binomial(2^n, 2r+1)*3^r.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,2,16,896,2781184,26794772135936,2487085750646543836443049984,21427531469765285263614058238314319540132878612321796096
 
 mov $3,1
@@ -7,10 +7,9 @@ mov $1,2
 pow $1,$0
 lpb $1
   sub $1,1
-  mul $3,2
   mov $4,$2
   mov $2,$3
   add $3,$4
+  mul $3,2
 lpe
 mov $0,$2
-div $0,2

@@ -14,6 +14,5 @@ lpb $3
   mov $0,$4
   seq $0,71521 ; Number of 3-smooth numbers <= n.
   add $2,$0
-  sub $4,1
 lpe
 mov $0,$2

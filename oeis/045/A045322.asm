@@ -1,44 +1,30 @@
 ; A045322: Primes congruent to {0, 2, 3, 4, 6} (mod 7).
-; Submitted by Kotenok2000
+; Submitted by 1scorpion
 ; 2,3,7,11,13,17,23,31,37,41,53,59,67,73,79,83,97,101,107,109,137,139,149,151,157,163,167,179,181,191,193,199,223,227,233,241,251,263,269,277,283,293,307,311,317,331,347,349,353,359,367,373,389,401,409,419,431,433,443,457,461,479,487,499,503,521,541,557,563,569,571,577,587,599,601,613,619,641,643,647
 
 #offset 1
 
-sub $0,1
-mov $6,5
 mov $2,$0
-add $2,6
+sub $0,1
+add $2,5
 pow $2,3
 lpb $2
-  mov $8,0
   mov $3,$6
   add $3,1
-  lpb $3
-    gcd $8,2
-    mov $9,$3
-    div $9,3
-    lpb $9
-      mov $7,$3
-      mod $7,$8
-      add $8,1
-      sub $9,$7
-    lpe
-    div $3,$8
-    pow $3,2
-    mov $8,1
-  lpe
-  sub $0,$8
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $5,1
+  sub $0,$3
   add $1,7
   mov $4,$0
   max $4,0
   equ $4,$0
+  gcd $6,2
+  add $6,$5
   mul $2,$4
   sub $2,18
-  div $5,2
+  mod $5,2
   add $5,$1
-  div $5,6
-  mov $6,$5
-  mul $5,2
+  div $5,3
 lpe
 mov $0,$6
 add $0,1

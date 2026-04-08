@@ -1,7 +1,7 @@
 ; A010379: Squares mod 17.
-; Submitted by Checco
+; Submitted by Science United
 ; 0,1,2,4,8,9,13,15,16
-; Formula: a(n) = truncate((11*max(2*n+gcd(sumdigits(n-2,2)*sign(n-2),2)-5,0)-11)/9)+1
+; Formula: a(n) = truncate((11*max(2*n+gcd(sumdigits(n-2,2)*sign(n-2),2)-5,0)-2)/9)
 
 #offset 1
 
@@ -12,7 +12,6 @@ dgs $0,2
 gcd $0,2
 add $0,$1
 trn $0,1
-sub $0,1
 mul $0,11
+sub $0,2
 div $0,9
-add $0,1

@@ -8,12 +8,11 @@ dir $0,2
 mov $4,$0
 mov $1,$0
 lpb $1
-  sub $1,3
+  mov $1,1
   mov $3,$4
   div $3,2
   mov $2,-1
   pow $2,$3
-  mov $0,$4
   mod $0,7
   pow $0,8
   add $0,1

@@ -1,5 +1,5 @@
 ; A043929: Numbers k such that 4 and 5 occur juxtaposed in the base-7 representation of k but not of k+1.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 33,39,82,88,131,137,180,186,229,237,279,284,327,333,376,382,425,431,474,480,523,529,572,580,622,627,670,676,719,725,768,774,817,823,866,872,915,923,965,970,1013,1019,1062,1068,1111
 
 #offset 1
@@ -27,5 +27,4 @@ lpb $0
   add $15,$14
   sub $0,1
 lpe
-mov $0,$15
-sub $0,343
+mov $0,$1

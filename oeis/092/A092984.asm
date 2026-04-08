@@ -1,20 +1,18 @@
 ; A092984: a(n) = the least k >= 1 such that n! + k is squarefree.
-; Submitted by vonboedefeldt
+; Submitted by Science United
 ; 1,1,1,2,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = ((truncate((-max(n-1,2)+floor((72*(64%max(n-1,2)))/77)+1)/2)+1)==0)+1
+; Formula: a(n) = if(((if(((n-1)%2)==0,(n-1)/2,n-1)+1)^2)<=1,0,valuation(floor(((if(((n-1)%2)==0,(n-1)/2,n-1)+1)*if(((n-1)%2)==0,(n-1)/2,n-1)+13)/3),if(((n-1)%2)==0,(n-1)/2,n-1)+1))+1
 
 #offset 1
 
 sub $0,1
-max $0,2
-mov $1,64
-mod $1,$0
-mul $1,72
-div $1,77
-add $1,1
-sub $1,$0
-div $1,2
-add $1,1
-equ $1,0
-add $1,1
-mov $0,$1
+dif $0,2
+mov $1,$0
+add $0,1
+mul $1,$0
+mov $2,13
+add $2,$1
+div $2,3
+lex $2,$0
+mov $0,$2
+add $0,1

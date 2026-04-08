@@ -1,15 +1,12 @@
 ; A045031: Numbers whose base-4 representation contains exactly three 0's and three 1's.
-; Submitted by damotbe
+; Submitted by Supericent
 ; 1029,1041,1044,1089,1092,1104,1281,1284,1296,1344,4118,4119,4121,4125,4133,4149,4166,4167,4169,4173,4178,4179,4184,4188,4193,4196,4209,4212,4229,4241,4244,4293,4305,4308,4358,4359
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,7
-mul $2,2
-pow $2,3
+add $2,6
+pow $2,4
 lpb $2
   mov $4,1
   mov $3,$1

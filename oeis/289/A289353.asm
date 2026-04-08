@@ -16,8 +16,7 @@ lpb $2
   seq $3,140365 ; a(n) = sum of primes in {6*n-5, 6*n-1}.
   add $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   mov $4,$0
   max $4,0

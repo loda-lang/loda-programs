@@ -5,8 +5,7 @@
 mov $4,2
 pow $4,$0
 mov $0,$4
-nrt $0,2
-nrt $0,2
+nrt $0,4
 sub $0,1
 lpb $0
   mov $1,$0

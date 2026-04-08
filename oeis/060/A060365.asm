@@ -1,10 +1,11 @@
 ; A060365: Multiples of one thousand which are described by single words in American English.
-; Submitted by Andrey
+; Submitted by lee
 ; 1000,1000000,1000000000,1000000000000,1000000000000000,1000000000000000000,1000000000000000000000,1000000000000000000000000,1000000000000000000000000000,1000000000000000000000000000000
-; Formula: a(n) = 1000^n
+; Formula: a(n) = 10^(3*n)
 
 #offset 1
 
-mov $1,1000
+mul $0,3
+mov $1,10
 pow $1,$0
 mov $0,$1

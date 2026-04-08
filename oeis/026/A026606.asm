@@ -1,7 +1,7 @@
 ; A026606: [1->null]-transform of three-symbol Thue-Morse A026600, with 1 subtracted.
 ; Submitted by Science United
 ; 1,2,1,2,2,1,1,2,2,1,1,2,2,1,1,2,1,2,1,2,2,1,1,2,2,1,1,2,1,2,1,2,1,2,2,1,2,1,1,2,1,2,1,2,1,2,2,1,1,2,2,1,1,2,1,2,2,1,1,2,2,1,1,2,1,2,1,2,1,2,2,1,2,1,1,2,1,2,1,2
-; Formula: a(n) = (2*sumdigits(floor((n-1)/2),3))%3-2*truncate(((2*sumdigits(floor((n-1)/2),3))%3+n-1)/2)+n
+; Formula: a(n) = ((2*sumdigits(floor((n-1)/2),3))%3+n-1)%2+1
 
 #offset 1
 

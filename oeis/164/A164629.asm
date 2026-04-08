@@ -1,5 +1,5 @@
 ; A164629: Expansion of phi (golden ratio) in base 5.
-; Submitted by JZD
+; Submitted by Goldislops
 ; 1,3,0,2,1,1,1,3,4,2,3,0,4,1,2,0,2,4,2,2,3,1,4,4,3,1,1,4,0,2,0,4,0,2,1,2,1,1,1,0,3,3,1,3,3,0,4,0,0,4,0,2,4,1,0,2,2,3,0,1,1,0,4,3,4,2,2,2,1,4,4,2,1,2,1,1,4,4,3,2
 
 #offset 1
@@ -10,13 +10,9 @@ mov $2,1
 mov $3,$0
 mul $3,4
 lpb $3
-  equ $6,0
   mul $2,$3
-  add $5,$6
   mul $1,$3
   add $1,$2
-  div $1,$5
-  div $2,$5
   add $2,$1
   sub $3,2
 lpe

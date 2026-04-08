@@ -10,9 +10,12 @@ lpb $0
   mov $2,$0
   add $2,1
   seq $2,288469 ; a(n) = n if n is a nonprime, otherwise take the prime index of n and repeat until you get a nonprime which is then a(n).
-  seq $2,62298 ; Number of nonprimes <= n.
+  mov $5,$2
+  seq $2,230980 ; Number of primes <= n, starting at n=0.
+  mov $4,$5
+  sub $4,$2
   mov $3,-2
-  add $3,$2
+  add $3,$4
   mov $0,$3
 lpe
 mov $0,$1

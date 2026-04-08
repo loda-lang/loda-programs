@@ -13,8 +13,6 @@ lpb $3
   mov $4,$2
   add $4,1
   seq $4,74823 ; a(n) = 2^omega(n)*mu(n)^2.
-  mov $7,8
-  mov $8,8
   mov $6,3
   min $6,$4
   mov $4,$6

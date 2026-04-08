@@ -25,7 +25,6 @@ lpb $0
   div $3,2
   bin $3,2
   sub $3,$7
-  mov $8,1
   bin $8,$3
   mov $3,$8
   mul $3,$6

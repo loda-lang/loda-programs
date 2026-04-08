@@ -4,8 +4,7 @@
 ; Formula: a(n) = -2*max(gcd(n,16)-3,0)+26
 
 gcd $0,16
-sub $0,1
-trn $0,2
+trn $0,3
 mov $1,13
 sub $1,$0
 mov $0,$1

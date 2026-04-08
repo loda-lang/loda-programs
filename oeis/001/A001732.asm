@@ -1,10 +1,9 @@
 ; A001732: 8 in base 10-n.
-; Submitted by loader3229
+; Submitted by Goldislops
 ; 8,8,10,11,12,13,20,22,1000,11111111
 
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

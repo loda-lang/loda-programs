@@ -9,9 +9,8 @@ sub $0,1
 add $2,9
 pow $2,5
 lpb $2
-  add $5,12
   mul $5,2
-  add $5,$4
+  add $5,25
   lpb $3
     mov $6,$3
     mod $6,3
@@ -23,13 +22,13 @@ lpb $2
   add $1,2
   equ $5,9
   sub $0,$5
-  max $3,$1
-  div $3,2
   mov $4,$0
   max $4,0
   equ $4,$0
   mov $5,-20
   mul $2,$4
-  sub $2,6
+  sub $2,3
+  max $3,$1
+  div $3,2
 lpe
 mov $0,$3

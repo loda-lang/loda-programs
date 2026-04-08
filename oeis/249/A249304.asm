@@ -1,23 +1,19 @@
 ; A249304: Number of zeros in row n of triangle A249133.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by 1scorpion
 ; 0,0,1,1,3,5,5,3,7,13,13,11,13,15,13,7,15,29,29,27,29,31,29,23,29,39,37,31,33,35,29,15,31,61,61,59,61,63,61,55,61,71,69,63,65,67,61,47,61,87,85,79,81,83,77,63,73,91,85,71,73,75,61,31,63,125,125,123,125,127,125,119,125,135,133,127,129,131,125,111
+; Formula: a(n) = -sumdigits(max(c(n),1),2)+logint(max(c(n),1),2)+1, b(n) = bitxor(4*max(b(n-1),7),max(b(n-1),7)), b(1) = 27, b(0) = 0, c(n) = max(b(n-1),7), c(1) = 7, c(0) = 0
 
-mov $4,3
-mov $1,$0
-add $1,3
-lpb $1
-  sub $1,$4
-  mov $3,$1
-  mov $5,$1
-  lpb $5
-    div $3,2
-    sub $5,$3
-  lpe
-  mov $3,2
-  pow $3,$5
-  add $2,$3
-  div $4,2
+lpb $0
+  sub $0,1
+  max $2,7
+  mov $3,$2
+  mul $2,4
+  bxo $2,$3
 lpe
-mul $0,2
+mov $0,$3
+max $0,1
+mov $1,$0
+dgs $1,2
+log $0,2
 add $0,1
-sub $0,$2
+sub $0,$1

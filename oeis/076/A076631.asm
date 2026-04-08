@@ -1,13 +1,12 @@
 ; A076631: Solve 2^n - 2 = 7(x^2 - x) + (y^2 - y) for (x,y) with x>0, y>0; a(n) = value of y.
-; Submitted by ckrause
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,1,6,5,7,16,3,29,34,24,91,44,138,225,51,500,399,601,1398,197,2599,2992,2206,8189,3778,12600,20155,5045,45354,35265,55443,125972,15087,236857,267030,206684,740743,327376,1154110,1808861,499359,4117080
-; Formula: a(n) = truncate(gcd(min(n-1,0),b(n-1))/2)+1, b(n) = -2*b(n-2)+b(n-1), b(1) = -3, b(0) = 1
+; Formula: a(n) = floor(gcd(min(n,0),b(n))/8)+1, b(n) = -2*b(n-2)+b(n-1), b(1) = 4, b(0) = 8
 
 #offset 1
 
-mov $1,1
+mov $1,8
 mov $2,2
-sub $0,1
 lpb $0
   sub $0,1
   mul $2,2
@@ -15,5 +14,5 @@ lpb $0
   add $2,$1
 lpe
 gcd $0,$1
-div $0,2
+div $0,8
 add $0,1

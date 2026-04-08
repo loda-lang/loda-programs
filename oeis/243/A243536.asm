@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,95048 ; Number of distinct digits needed to write all positive divisors of n in decimal representation.
-  sub $3,2
-  equ $3,1
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

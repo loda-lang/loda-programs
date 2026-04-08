@@ -1,7 +1,7 @@
 ; A204260: Symmetric matrix given by f(i,j)=ceiling(i*j/(i+j)) .
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,2,2,2,2,1,1,2,2,2,2,2,1,1,2,2,3,3,2,2,1,1,2,3,3,3,3,3,2,1,1,2,3,3,3,3,3,3,2,1,1,2,3,3,3,3,3,3,3,2,1,1,2,3,3,4,4,4,4,3,3,2,1,1,2
-; Formula: a(n) = truncate(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)-1)/(truncate((sqrtint(8*n)-1)/2)+2))+1
+; Formula: a(n) = truncate(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)-1)/(floor((sqrtint(8*n)-1)/2)+2))+1
 
 #offset 1
 

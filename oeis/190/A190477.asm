@@ -1,7 +1,7 @@
 ; A190477: Constant arising in lattice coverings of Nil space by congruent geodesic balls.
 ; Submitted by loader3229
 ; 1,4,2,9,0,0,6,1,5
-; Formula: a(n) = -binomial(-n+min(-sqrtint(n-1)^2+n,sqrtint(n-1))+sqrtint(n-1)-1,2)-10*truncate((-binomial(-n+min(-sqrtint(n-1)^2+n,sqrtint(n-1))+sqrtint(n-1)-1,2)-10*truncate((-binomial(-n+min(-sqrtint(n-1)^2+n,sqrtint(n-1))+sqrtint(n-1)-1,2)+sqrtint(n-1)-6)/10)+sqrtint(n-1)+4)/10)-10*truncate((-binomial(-n+min(-sqrtint(n-1)^2+n,sqrtint(n-1))+sqrtint(n-1)-1,2)+sqrtint(n-1)-6)/10)+sqrtint(n-1)+4
+; Formula: a(n) = (-binomial(-n+min(-sqrtint(n-1)^2+n,sqrtint(n-1))+sqrtint(n-1)-1,2)-10*truncate((-binomial(-n+min(-sqrtint(n-1)^2+n,sqrtint(n-1))+sqrtint(n-1)-1,2)+sqrtint(n-1)-6)/10)+sqrtint(n-1)+4)%10
 
 #offset 1
 

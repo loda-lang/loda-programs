@@ -1,30 +1,21 @@
 ; A262392: a(n) = A007504(n) + A010693(n).
-; Submitted by mmonnin
+; Submitted by [SG]KidDoesCrunch
 ; 2,5,7,13,19,31,43,61,79,103,131,163,199,241,283,331,383,443,503,571,641,715,793,877,965,1063,1163,1267,1373,1483,1595,1723,1853,1991,2129,2279,2429,2587,2749,2917,3089,3269,3449,3641,3833,4031,4229
 
-mov $1,1
-mov $2,2
-mov $3,$0
-mod $3,2
-lpb $0
-  sub $0,1
-  add $1,$2
-  add $2,1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $2,$0
+gcd $2,2
+equ $2,1
+mov $4,$0
+lpb $4
+  max $4,1
+  seq $4,60939 ; a(n) = (Sum of the first n primes) + n.
+  mov $3,$4
+  mov $4,0
 lpe
-sub $3,1
-add $1,2
-lpb $1
-  mov $0,$3
-  add $0,1
-  mov $2,1
-  lpb $2
-    add $0,$2
-    sub $1,$0
-    sub $2,1
-    mul $0,2
-    add $0,$1
-    mov $1,$2
-  lpe
-lpe
-sub $0,2
+mov $4,$3
+sub $4,$0
+mov $1,$4
+add $1,5
+add $2,$1
+mov $0,$2
+sub $0,3

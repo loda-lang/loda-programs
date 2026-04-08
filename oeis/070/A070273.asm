@@ -1,7 +1,7 @@
 ; A070273: Number of letters in the English names of the planets (in order from smallest orbit to largest) in 2002.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 7,5,5,4,7,6,6,7,5
-; Formula: a(n) = binomial(3*n-4*truncate((sqrtint(8*n)-1)/2)+min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-5,2)*(-truncate((sqrtint(8*n)-1)/2)+n-2)-10*truncate((binomial(3*n-4*truncate((sqrtint(8*n)-1)/2)+min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-5,2)*(-truncate((sqrtint(8*n)-1)/2)+n-2)-10*truncate((binomial(3*n-4*truncate((sqrtint(8*n)-1)/2)+min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-5,2)*(-truncate((sqrtint(8*n)-1)/2)+n-2)+truncate(binomial(8*truncate((sqrtint(8*n)-1)/2)-2*min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-6*n+12,3)/(-4))+5)/10)+truncate(binomial(8*truncate((sqrtint(8*n)-1)/2)-2*min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-6*n+12,3)/(-4))+15)/10)-10*truncate((binomial(3*n-4*truncate((sqrtint(8*n)-1)/2)+min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-5,2)*(-truncate((sqrtint(8*n)-1)/2)+n-2)+truncate(binomial(8*truncate((sqrtint(8*n)-1)/2)-2*min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-6*n+12,3)/(-4))+5)/10)+truncate(binomial(8*truncate((sqrtint(8*n)-1)/2)-2*min(3*truncate((sqrtint(8*n)-1)/2)-2*n+4,0)-6*n+12,3)/(-4))+15
+; Formula: a(n) = binomial(3*n-4*floor((sqrtint(8*n)-1)/2)+min(3*floor((sqrtint(8*n)-1)/2)-2*n+4,0)-5,2)*(-floor((sqrtint(8*n)-1)/2)+n-2)-10*truncate((binomial(3*n-4*floor((sqrtint(8*n)-1)/2)+min(3*floor((sqrtint(8*n)-1)/2)-2*n+4,0)-5,2)*(-floor((sqrtint(8*n)-1)/2)+n-2)+truncate(binomial(8*floor((sqrtint(8*n)-1)/2)-2*min(3*floor((sqrtint(8*n)-1)/2)-2*n+4,0)-6*n+12,3)/(-4))+25)/10)+truncate(binomial(8*floor((sqrtint(8*n)-1)/2)-2*min(3*floor((sqrtint(8*n)-1)/2)-2*n+4,0)-6*n+12,3)/(-4))+25
 
 #offset 1
 
@@ -32,7 +32,5 @@ bin $6,2
 mul $6,$0
 add $6,$3
 mov $0,$6
-add $0,5
-mod $0,10
-add $0,10
+add $0,25
 mod $0,10

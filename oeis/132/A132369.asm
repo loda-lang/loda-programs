@@ -1,9 +1,17 @@
 ; A132369: a(n) = PrimePi(n)!.
 ; Submitted by [SG]FX
 ; 1,1,2,2,6,6,24,24,24,24,120,120,720,720,720,720,5040,5040,40320,40320,40320,40320,362880,362880,362880,362880,362880,362880,3628800,3628800,39916800,39916800,39916800,39916800,39916800,39916800,479001600
-; Formula: a(n) = A000720(n)!
 
 #offset 1
 
-seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+sub $0,1
+lpb $0
+  mov $3,$0
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,1
+  add $2,$3
+lpe
+mov $1,1
+fac $1,$2
+mov $0,$1

@@ -1,5 +1,5 @@
 ; A045085: Numbers whose base-4 representation contains exactly four 0's and four 3's.
-; Submitted by atannir
+; Submitted by [SG]KidDoesCrunch
 ; 49215,49359,49395,49404,49935,49971,49980,50115,50124,50160,52239,52275,52284,52419,52428,52464,52995,53004,53040,53184,61455,61491,61500,61635,61644,61680,62211,62220,62256,62400
 
 #offset 1
@@ -45,9 +45,7 @@ add $4,1
 mov $13,$5
 mul $13,6
 nrt $13,3
-mov $14,$13
-add $14,2
-bin $14,3
+gcd $14,$11
 geq $5,$14
 add $5,$13
 add $5,1

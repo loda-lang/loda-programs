@@ -13,8 +13,7 @@ lpb $1
     mov $2,$0
     seq $2,238966 ; The number of distinct primes in divisor lattice in canonical order.
     pow $2,13
-    mul $0,0
-    add $0,$2
+    mov $0,$2
     div $0,2
   lpe
   add $3,$2

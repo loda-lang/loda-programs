@@ -1,5 +1,5 @@
 ; A037927: Trajectory of 24 under prime factor concatenation procedure.
-; Submitted by loader3229
+; Submitted by Technik007[CZ]
 ; 24,2,2,2,3,3,3,13,19,331319
 
 mov $1,24
@@ -35,5 +35,6 @@ lpb $2
   equ $9,0
   sub $2,1
   mul $2,$9
+  div $2,2
 lpe
 mov $0,$4

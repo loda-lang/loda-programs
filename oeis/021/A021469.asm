@@ -1,11 +1,23 @@
 ; A021469: Decimal expansion of 1/465.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 0,0,2,1,5,0,5,3,7,6,3,4,4,0,8,6,0,2,1,5,0,5,3,7,6,3,4,4,0,8,6,0,2,1,5,0,5,3,7,6,3,4,4,0,8,6,0,2,1,5,0,5,3,7,6,3,4,4,0,8,6,0,2,1,5,0,5,3,7,6,3,4,4,0,8,6,0,2,1,5
-; Formula: a(n) = floor((10^(n+1))/465)%10
 
-add $0,1
-mov $1,10
-pow $1,$0
-div $1,465
-mod $1,10
+mov $3,2
+mov $4,1
+mov $5,5
+mov $7,5
+mov $8,3
+mov $9,7
+mov $10,6
+mov $11,3
+mov $12,4
+mov $13,4
+mov $15,8
+mov $16,6
+lpb $0
+  mov $1,0
+  rol $1,16
+  add $16,$1
+  sub $0,1
+lpe
 mov $0,$1

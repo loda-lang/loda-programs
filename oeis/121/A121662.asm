@@ -14,7 +14,7 @@ add $4,1
 bin $4,2
 sub $0,$4
 sub $0,$2
-mov $1,13
+mov $1,1
 add $2,1
 sub $0,2
 dif $0,-1
@@ -25,4 +25,3 @@ lpb $0
   add $3,$1
 lpe
 mov $0,$3
-div $0,13

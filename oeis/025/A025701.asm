@@ -1,7 +1,7 @@
-; A025701: Index of 4^n within sequence of numbers of form 3^i*4^j.
+; A025701: Index of 4^n within the sequence of the numbers of the form 3^i*4^j.
 ; Submitted by Mads Nissen
 ; 1,3,6,10,16,23,31,40,51,63,76,90,106,123,141,160,181,203,226,250,276,303,331,361,392,424,457,492,528,565,603,643,684,726,769,814,860,907,955,1005,1056,1108,1161,1216,1272,1329,1388,1448,1509,1571,1635,1700,1766
-; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+logint(3*truncate(2^(2*n)),3), b(1) = 2, b(0) = 0
+; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+logint(3*2^(2*n),3), b(1) = 2, b(0) = 0
 
 #offset 1
 

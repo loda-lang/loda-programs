@@ -1,5 +1,5 @@
 ; A018441: Divisors of 414.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by 1scorpion
 ; 1,2,3,6,9,18,23,46,69,138,207,414
 
 #offset 1
@@ -10,8 +10,6 @@ fil $1,5
 mov $8,$0
 lpb $8
   lpb $5
-    add $2,1
-    mov $6,$2
     gcd $6,$3
     neq $6,1
     mov $2,22
@@ -22,6 +20,7 @@ lpb $8
   mov $5,$0
   mod $5,$4
   div $5,$3
+  sub $6,1
   mov $7,$2
   pow $7,$5
   mul $1,$7

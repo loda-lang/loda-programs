@@ -23,8 +23,7 @@ lpb $0
     sub $4,$0
     sub $4,1
     mul $7,$$9
-    sub $4,6
-    trn $4,3
+    trn $4,9
     add $5,1
     add $6,$7
   lpe

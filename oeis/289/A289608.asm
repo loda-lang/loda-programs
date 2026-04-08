@@ -1,6 +1,6 @@
-; A289608: Related to number of mesh patterns of length 2 that avoid the pattern 321.
+; A289608: a(n) is the number of permutations of length n that avoid the pattern 321 and the mesh pattern (12, 313) or the same sequence for the mesh pattern (12, 403).
 ; Submitted by Science United
-; 1,1,1,1,8,28,108,387,1354,4720,16524
+; 1,1,1,1,8,28,108,387,1354,4720,16524,58256,206968,740830,2670320,9686627,35341258,129611992,477573132,1767132084,6563858240,24465742694,91481515024,343057516456,1289899952976,4861938012798,18367336294888,69533517361522,263747884641444
 
 #offset 1
 

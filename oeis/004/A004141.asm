@@ -24,7 +24,6 @@ lpb $2
   add $5,1
   pow $5,2
   sub $5,$0
-  mov $4,0
   pow $4,$5
   mov $0,$5
   seq $0,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.

@@ -10,6 +10,7 @@ lpb $3
   max $5,0
   seq $5,125054 ; Central terms of triangle A125053.
   sub $0,1
+  mul $0,$3
   mov $2,$3
   mul $2,$5
   mov $6,5

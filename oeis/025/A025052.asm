@@ -1,4 +1,4 @@
-; A025052: Numbers not of form ab + bc + ca for 1<=a<=b<=c (probably the list is complete).
+; A025052: Numbers not of form a*b + b*c + c*a for 1<=a<=b<=c (probably the list is complete).
 ; Submitted by loader3229
 ; 1,2,4,6,10,18,22,30,42,58,70,78,102,130,190,210,330,462
 

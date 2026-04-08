@@ -1,11 +1,10 @@
 ; A104162: Indicator sequence for the Fibonacci numbers.
-; Submitted by Simon Strandgaard
+; Submitted by Mike C
 ; 1,2,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 add $0,1
 mov $1,1
 mov $3,1
-mov $4,1
 mov $2,$0
 lpb $2
   mov $7,$4

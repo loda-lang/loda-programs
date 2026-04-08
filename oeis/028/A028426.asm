@@ -4,20 +4,17 @@
 
 #offset 1
 
-sub $0,1
-mov $31,$0
 mov $33,$0
-add $33,1
 lpb $33
   clr $0,31
   sub $33,1
-  mov $0,$31
   sub $0,$33
   mov $27,$0
   mov $29,2
   lpb $29
     clr $0,27
     mov $12,94
+    gcd $27,$8
     sub $29,1
     mov $0,$27
     add $0,$29

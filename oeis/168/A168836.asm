@@ -1,11 +1,10 @@
 ; A168836: Number of reduced words of length n in Coxeter group on 15 generators S_i with relations (S_i)^2 = (S_i S_j)^20 = I.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,15,210,2940,41160,576240,8067360,112943040,1581202560,22136835840,309915701760,4338819824640,60743477544960,850408685629440,11905721598812160,166680102383370240,2333521433367183360
-; Formula: a(n) = floor(((n==0)+15*14^n)/14)
+; Formula: a(n) = floor((15*14^n)/14)
 
 mov $1,14
 pow $1,$0
-mul $1,15
-equ $0,0
-add $0,$1
+mov $0,$1
+mul $0,15
 div $0,14
