@@ -1,7 +1,7 @@
 ; A321994: Number of different chromatic symmetric functions of hypertrees on n vertices.
 ; Submitted by loader3229
 ; 1,1,2,4,9,22,59,165
-; Formula: a(n) = truncate((truncate(2^(n-3))*(truncate((4*binomial(n-1,2)+3*binomial(n-3,4))/3)+8))/8)+1
+; Formula: a(n) = truncate(((truncate((4*binomial(n-1,2)+3*binomial(n-3,4))/3)+8)*if((n-3)<=(-1),0,2^(n-3)))/8)+1
 
 #offset 1
 

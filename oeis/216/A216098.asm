@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
@@ -18,7 +17,7 @@ lpb $2
   seq $6,13636 ; a(n) = n*nextprime(n).
   mul $6,$3
   mov $3,$6
-  seq $3,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+  nrt $3,3
   sub $3,1
   mov $5,$3
   add $3,1

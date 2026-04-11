@@ -1,11 +1,9 @@
 ; A018759: Divisors of 986.
-; Submitted by Lenonn
+; Submitted by pm120
 ; 1,2,17,29,34,58,493,986
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $3,$1

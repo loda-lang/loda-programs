@@ -9,9 +9,9 @@ mov $4,$1
 add $4,1
 mov $5,1
 mov $7,$4
-mul $7,7
+mul $7,6
 lpb $7
-  sub $7,1
+  sub $7,3
   max $9,$6
   mul $6,12
   add $6,$5

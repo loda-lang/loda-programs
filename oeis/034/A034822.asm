@@ -1,5 +1,5 @@
 ; A034822: Numbers k such that there are no palindromic squares of length k.
-; Submitted by zioriga
+; Submitted by GPV67
 ; 2,4,8,10,14,18,20,24,30,38,40
 
 #offset 1
@@ -15,7 +15,6 @@ lpb $2
   sub $0,$2
   lpb $0
     dif $0,5
-    mul $1,5
     add $1,1
   lpe
   lpb $0

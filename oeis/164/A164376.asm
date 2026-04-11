@@ -7,10 +7,9 @@
 sub $0,2
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,61673 ; Even numbers k such that k+1 and k-1 are both composite.
-  mul $0,0
+  mov $0,0
 lpe
 add $1,2
 add $1,$0

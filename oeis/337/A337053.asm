@@ -1,35 +1,38 @@
 ; A337053: a(n) = exp(2) * Sum_{i>=0} Sum_{j>=0} (-1)^(i+j) * (i*j)^n / (i! * j!).
-; Submitted by Science United
+; Submitted by cellarnoise2
 ; 1,1,0,1,1,4,81,81,2500,71289,170569,4752400,314388361,2553584089,12138750976,3868290439209,98777141491561,74627448683524,77548359598953721,6456459980629467081,96370747288471888164,738333256838429983201,526354651474052521626801
 
-mod $0,49
-mov $5,$0
-add $5,1
-bin $5,2
-add $0,1
+sub $0,1
+mod $0,31
+mov $1,$0
+add $1,2
+bin $1,2
+add $0,2
 lpb $0
   sub $0,1
-  mov $9,-1
-  bin $9,$3
-  mov $6,$3
-  add $6,$5
-  mov $4,$6
-  mul $4,8
-  nrt $4,2
-  add $4,1
-  div $4,2
-  bin $4,2
+  mov $7,$4
+  add $7,$1
+  mov $2,$7
+  seq $2,97807 ; Riordan array (1/(1+x),1) read by rows.
+  mov $8,$7
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  mov $9,$7
+  sub $9,$8
+  mov $5,1
+  fac $5,$9
+  mov $6,$7
+  seq $6,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $6,$5
   mov $7,$6
-  sub $7,$4
-  mov $1,1
-  fac $1,$7
-  mov $8,$6
-  seq $8,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  div $8,$1
-  mov $6,$8
-  mul $6,$9
-  add $2,$6
-  add $3,1
+  mul $7,$2
+  add $3,$7
+  add $4,1
 lpe
-mov $0,$2
+mov $0,$3
+mul $0,4370636307296369963696696700000
 pow $0,2
+div $0,19102461730657248896361944221355755119887830491790890000000000

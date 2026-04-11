@@ -11,11 +11,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $7,$1
-  mul $7,2
-  mov $3,$1
-  mul $3,4
-  add $3,$7
   dgs $7,2
+  mul $3,4
   sub $3,$7
   gcd $3,2
   add $6,6

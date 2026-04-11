@@ -4,8 +4,7 @@
 ; Formula: a(n) = 3*max(2*floor(n/2)+2*max(n-6,0)-1,0)
 
 mov $1,$0
-sub $1,3
-trn $1,3
+trn $1,6
 div $0,2
 add $0,$1
 mul $0,2

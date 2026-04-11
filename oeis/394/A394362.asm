@@ -1,5 +1,5 @@
 ; A394362: Number of divisors d of n which also divide n/d + 1.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,1,1,3,1,1,1,2,1,2,1,2,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,1,2,2,1,1,1,2,1,1,1,4,1,2,2,2,1,1,1,2,2,1,1,2,1,2,1,2,1,3,1,2,1,1,1,3,1,1,2,3,1,2,1,2,1,2,1,3,1,1
 
 #offset 1
@@ -7,6 +7,7 @@
 mov $1,1
 mov $4,$0
 lpb $0
+  sub $0,$1
   trn $0,3
   add $1,1
   mov $2,$4

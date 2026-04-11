@@ -6,18 +6,20 @@
 
 mov $2,$0
 sub $0,1
-add $2,3
 pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
+  mov $5,$3
+  seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  mov $3,$5
+  div $3,2
+  add $3,1
   mul $3,338
   gcd $3,4
   mul $3,2
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

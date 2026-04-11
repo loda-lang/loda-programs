@@ -1,14 +1,12 @@
 ; A025052: Numbers not of form a*b + b*c + c*a for 1<=a<=b<=c (probably the list is complete).
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,6,10,18,22,30,42,58,70,78,102,130,190,210,330,462
 
 #offset 1
 
-mov $2,1
 mov $1,$0
 pow $1,3
 lpb $1
-  mov $3,1
   mov $4,$2
   div $4,3
   lpb $4

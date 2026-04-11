@@ -1,7 +1,7 @@
 ; A173020: Triangle of Generalized Runyon numbers R_{n,k}^(3) read by rows.
 ; Submitted by loader3229
 ; 1,1,3,1,9,12,1,18,66,55,1,30,210,455,273,1,45,510,2040,3060,1428,1,63,1050,6650,17955,20349,7752,1,84,1932,17710,74382,148764,134596,43263,1,108,3276,40950,245700,753480,1184040,888030,246675,1,135,5220,85260,690606,2992626,7125300,9161100,5852925,1430715,1,165,7920,163680,1718640,9968112,33227040,64080720,69420780,38567100,8414640,1,198,11550,294525,3887730,29028384,128554272,344341800,554772900,517788040,254186856,50067108,1,234
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*binomial(3*truncate((sqrtint(8*n)-1)/2)+3,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))
+; Formula: a(n) = truncate((binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*binomial(3*floor((sqrtint(8*n)-1)/2)+3,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))
 
 #offset 1
 

@@ -5,16 +5,15 @@
 add $0,3
 lpb $0
   mov $2,$0
-  sub $0,3
+  sub $0,2
   add $2,3
   lpb $2
     mov $3,$2
     mod $3,7
-    div $3,3
-    pow $3,2
-    div $3,4
+    div $3,6
     add $1,$3
     trn $2,10
   lpe
+  sub $0,1
 lpe
 mov $0,$1

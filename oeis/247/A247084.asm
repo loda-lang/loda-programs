@@ -1,9 +1,8 @@
 ; A247084: a(n)=0 when n<=0: Starting with n=1, a(n) = 1 + the sum of the digital sums of a(0) through a(n-4).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 0,1,1,1,1,2,3,4,5,7,10,14,19,26,27,32,42,50,59,64,70,75,89,99,106,118,135,153,160,170,179,188,195,203,220,237,252,257,261,273,282,296,305,317,329,346,354,365,379,392,404,418,437,451,459,472,486,496,514
-; Formula: a(n) = a(n-1)+sumdigits(a(n-4),10), a(6) = 3, a(5) = 2, a(4) = 1, a(3) = 1, a(2) = 1, a(1) = 1, a(0) = 0
+; Formula: a(n) = a(n-1)+sumdigits(a(n-4),10), a(4) = 1, a(3) = 1, a(2) = 1, a(1) = 1, a(0) = 0
 
-mov $2,1
 mov $5,1
 lpb $0
   sub $0,1
@@ -14,4 +13,4 @@ lpb $0
   mov $2,$5
   add $5,$1
 lpe
-mov $0,$4
+mov $0,$2

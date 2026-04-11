@@ -1,18 +1,19 @@
 ; A351683: Squares that are also 4-dimensional pyramidal numbers.
-; Submitted by Philip Courte
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,196,38025,7376656,1431033241,277613072100,53855504954161,10447690348035136,2026798072013862225,393188378280341236516,76276518588314186021881,14797251417754671747008400,2870590498525818004733607721,556879759462590938246572889476
-; Formula: a(n) = floor(b(max(4*n-4,0))/96), b(n) = 2*b(n-1)+c(n-1), b(1) = 2, b(0) = 1, c(n) = 3*b(n-1)+2*c(n-1), c(1) = 3, c(0) = 0
+; Formula: a(n) = floor(((c(n-1)*b(n-1))^2)/36), b(n) = 3*c(n-1)+2*b(n-1), b(1) = 3, b(0) = 0, c(n) = 2*c(n-1)+b(n-1), c(1) = 2, c(0) = 1
 
 #offset 1
 
-mov $1,1
+mov $2,1
 sub $0,1
-mul $0,4
 lpb $0
   sub $0,1
-  add $2,$1
   add $1,$2
   add $2,$1
+  add $1,$2
 lpe
-mov $0,$1
-div $0,96
+mul $2,$1
+pow $2,2
+mov $0,$2
+div $0,36

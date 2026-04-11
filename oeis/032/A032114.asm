@@ -1,19 +1,18 @@
 ; A032114: "BIJ" (reversible, indistinct, labeled) transform of 1,2,3,4,...
-; Submitted by cellarnoise2
+; Submitted by Science United
 ; 1,3,12,76,655,6906,85204,1201824,19071693,336276370,6522231826,138001776936,3163262495419,78085513281426,2065232400748560,58263438835891456,1746434237976248665,55428349087686179682
 
 #offset 1
 
-mov $1,$0
-mov $4,1
+mov $1,1
 lpb $0
   sub $0,1
   add $2,1
   mov $3,$0
   pow $3,$2
-  mul $4,$2
-  add $4,$3
+  mul $1,$2
+  add $1,$3
 lpe
-mov $0,$4
-add $0,$1
+add $2,$1
+mov $0,$2
 div $0,2

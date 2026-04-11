@@ -1,6 +1,7 @@
 ; A361025: a(n) = A007814(sigma(n)) - A007814(n), where A007814(n) gives the 2-adic valuation of n, and sigma is the sum of divisors function.
 ; Submitted by Science United
 ; 0,-1,2,-2,1,1,3,-3,0,0,2,0,1,2,3,-4,1,-1,2,-1,5,1,3,-1,0,0,3,1,1,2,5,-5,4,0,4,-2,1,1,3,-2,1,4,2,0,1,2,4,-2,0,-1,3,-1,1,2,3,0,4,0,2,1,1,4,3,-6,2,3,2,-1,5,3,3,-3,1,0,2,0,5,2,4,-3
+; Formula: a(n) = if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2))-logint(floor((bitxor(2*n,2*n-1)+1)/2),2)+1
 
 #offset 1
 

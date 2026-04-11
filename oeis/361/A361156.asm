@@ -1,7 +1,7 @@
 ; A361156: Number of ideals of norm 6 in the order O_D associated with the Teichmuller curve of discriminant D = A361155(n).
 ; Submitted by loader3229
 ; 1,1,2,2,2,1,2,2,1,1,4,2,1,2,1,4
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+binomial(-1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+truncate(truncate((sqrtint(8*n)-1)/2)/2)+n-1,2*binomial(-1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2)+1
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+binomial(-1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)+floor(floor((sqrtint(8*n)-1)/2)/2)+n-1,2*binomial(-1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)+2*n-2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)+1
 
 #offset 1
 

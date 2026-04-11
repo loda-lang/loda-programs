@@ -1,4 +1,4 @@
-; A347412: Sqrt(3)+1-adic expansion of 4, in binary alphabet
+; A347412: Sqrt(3)+1-adic expansion of 4, in binary alphabet.
 ; Submitted by Skillz
 ; 0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,0,1,1,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,0,0,0,1,0,1,1,0,1,1,0,1,1,0,0,1,1,1,1,1,0,0,1
 ; Formula: a(n) = -2*truncate(b(n)/2)+b(n), b(n) = b(n-1)+c(n-1)+9, b(2) = 28, b(1) = 10, b(0) = 0, c(n) = b(n-1)+truncate((3*c(n-2)+b(n-2)+22)/2)+9, c(2) = 31, c(1) = 9, c(0) = 1

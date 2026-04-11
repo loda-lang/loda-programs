@@ -1,19 +1,26 @@
 ; A361460: a(n) = 1 if A135504(n+1) = 2 * A135504(n), otherwise 0.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 0,1,0,0,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,0,1,1,1,0,0,0,1,1,1,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,0,0,1,1
+; Formula: a(n) = binomial(c(n)-1,2)==0, b(n) = b(n-1)*(floor((n+1)/gcd(n+1,b(n-1)))+1), b(2) = 6, b(1) = 3, b(0) = 1, c(n) = floor((n+1)/gcd(n+1,b(n-1)))+1, c(2) = 2, c(1) = 3, c(0) = 0
 
 #offset 1
 
-sub $0,1
-seq $1,43555 ; Number of runs in base-3 representation of n.
-mov $3,$0
-add $3,1
-seq $3,135506 ; a(n) = x(n+1)/x(n) - 1 where x(1)=1 and x(k) = x(k-1) + lcm(x(k-1),k). Here x(n) = A135504(n).
-max $2,$0
-bin $2,$0
-mov $0,0
-max $0,$2
+mov $3,1
+mov $6,1
 lpb $0
-  div $1,$3
-  mov $0,$1
+  sub $0,1
+  add $6,1
+  mov $1,$6
+  gcd $1,$3
+  mov $4,$6
+  div $4,$1
+  add $4,1
+  mul $3,$4
 lpe
+mov $0,$4
+sub $0,1
+mov $5,$0
+bin $5,2
+mov $2,$5
+equ $2,0
+mov $0,$2

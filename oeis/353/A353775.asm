@@ -1,28 +1,36 @@
 ; A353775: Expansion of e.g.f. 1/(1 - (exp(x) - 1)^4).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,0,0,0,24,240,1560,8400,81144,1638000,31058520,482499600,6905646264,114015261360,2456232531480,59734751403600,1427946773067384,33377481440110320,818549745973204440,22338800420915168400,667566534457962216504,20735588176755396824880,654276322064199515861400,21276186053484005868642000,729773028496198126024965624,26511906315437708081994845040,1005224937523523973325868886360,39247724803252535107537217072400,1576798425591175636242909364386744,65634164810351100361570645014010800
 
-mov $1,119
-mov $2,$0
-add $2,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  sub $0,1
-  mov $4,$0
-  seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  lpb $0
-    div $0,2
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $6,$7
+    seq $6,330045 ; Expansion of e.g.f. exp(x) / (1 - x^4).
+    mov $4,$7
+    add $4,$3
+    seq $4,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  trn $2,3
-  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  mul $0,$4
-  add $1,$0
+  mov $5,$2
+  add $5,$9
+  seq $5,48993 ; Triangle of Stirling numbers of 2nd kind, S(n,k), n >= 0, 0 <= k <= n.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1
-sub $0,119

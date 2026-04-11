@@ -1,5 +1,5 @@
 ; A335449: Number of (1,2,1)-avoiding permutations of the prime indices of n.
-; Submitted by Simon Strandgaard
+; Submitted by Wood
 ; 1,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,3,1,2,2,2,1,2,1,2,1,2,1,6,1,1,2,2,2,3,1,2,2,2,1,6,1,2,2,2,1,2,1,3,2,2,1,4,2,2,2,2,1,6,1,2,2,1,2,6,1,2,2,6,1,3,1,2,3,2,2,6,1,2
 
 #offset 1
@@ -9,7 +9,6 @@ mov $2,2
 lpb $0
   add $4,1
   mov $3,$0
-  sub $3,1
   lpb $3
     mov $4,$0
     mod $4,$2

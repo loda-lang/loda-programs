@@ -11,8 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,1203 ; Simple continued fraction expansion of Pi.
   log $3,10
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

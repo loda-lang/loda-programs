@@ -4,10 +4,8 @@
 
 #offset 2
 
-sub $0,2
 mov $3,$0
-add $0,2
-add $3,3
+add $3,1
 lpb $3
   mov $2,$3
   mul $2,$0

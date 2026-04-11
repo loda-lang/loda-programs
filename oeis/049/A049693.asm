@@ -1,21 +1,22 @@
 ; A049693: a(n) = T(n,n+2), array T as in A049687.
-; Submitted by Jamie Morken(w3)
+; Submitted by cellarnoise2
 ; 1,5,8,14,18,28,34,46,54,70,78,100,110,130,144,168,182,216,230,260,278,312,330,372,392,430,454,500,520,578,602,652,684,728,756,816,846,906,940,1004,1032,1114,1146,1212,1254,1324,1362,1450,1486,1560,1604,1688
 
-mov $1,$0
-min $1,1
-mov $4,2
-lpb $4
-  sub $4,1
-  add $0,$4
+mov $3,2
+lpb $3
+  sub $3,1
+  add $0,$3
   sub $0,1
-  mov $3,$0
-  seq $3,100449 ; Number of ordered pairs (i,j) with |i| + |j| <= n and gcd(i,j) <= 1.
+  mov $4,$0
+  seq $4,49691 ; a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
+  mov $2,$4
+  mul $2,2
+  add $2,1
+  mul $0,$3
   add $0,3
-  add $2,$3
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1
 sub $0,9
 div $0,4
 add $0,1
-add $0,$1

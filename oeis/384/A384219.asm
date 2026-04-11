@@ -1,6 +1,7 @@
-; A384219: Areas of triangles whose three vertices are consecutive ordered pairs of consecutive odd Fibonacci numbers such that an ordered pair’s y-value is the next ordered pair’s x-value.
+; A384219: Areas of triangles whose three vertices are consecutive ordered pairs of consecutive odd Fibonacci numbers such that an ordered pair's y-value is the next ordered pair's x-value.
 ; Submitted by loader3229
 ; 2,6,24,104,442,1870,7920,33552,142130,602070,2550408,10803704,45765226,193864606,821223648,3478759200,14736260450,62423800998,264431464440,1120149658760,4745030099482,20100270056686,85146110326224,360684711361584,1527884955772562
+; Formula: a(n) = b(n-1), b(n) = 4*b(n-1)+4*b(n-3)+b(n-4), b(7) = 33552, b(6) = 7920, b(5) = 1870, b(4) = 442, b(3) = 104, b(2) = 24, b(1) = 6, b(0) = 2
 
 #offset 1
 

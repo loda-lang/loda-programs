@@ -7,7 +7,6 @@ lpb $0
   add $2,2
   lpb $2
     div $2,10
-    equ $2,1
     mul $1,8
   lpe
   add $1,$3

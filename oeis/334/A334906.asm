@@ -10,8 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,58078 ; Greatest common divisor of two binomial coefficients formed from consecutive primes: a(n) = gcd(C(prime(n+2), prime(n+1)), C(prime(n+1), prime(n))).
-  sub $3,1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

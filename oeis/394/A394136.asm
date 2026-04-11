@@ -7,8 +7,7 @@ lpb $0
   div $4,25
   max $4,$0
   add $4,1
-  gcd $2,3
-  sub $2,1
+  mov $2,2
   add $2,$0
   sub $2,$1
   mov $6,$2
@@ -26,9 +25,6 @@ lpb $0
   div $3,$4
   sub $7,1
   add $1,1
-  mov $2,$1
-  mul $2,2
-  add $2,$1
   add $5,$3
 lpe
 mov $0,$5

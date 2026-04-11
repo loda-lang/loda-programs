@@ -1,19 +1,17 @@
 ; A325887: Excess of sum of odd integers up to n and coprime to n over sum of even integers up to n and coprime to n.
-; Submitted by Jamie Morken(s3)
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,-1,4,-2,6,-3,16,-1,20,-5,24,-6,42,4,64,-8,54,-9,80,6,110,-11,96,-2,156,-1,168,-14,120,-15,256,10,272,12,216,-18,342,12,320,-20,252,-21,440,4,506,-23,384,-3,500,16,624,-26,486,20,672,18,812,-29,480,-30,930,6,1024,24,660,-33,1088,22,840,-35,864,-36,1332,4,1368,30,936,-39,1280
 
 #offset 1
 
 mov $2,$0
-mov $4,$0
-lpb $0
+lpb $2
   mov $3,$2
   gcd $3,$0
-  mul $3,$4
-  equ $3,$2
-  mul $3,$0
-  sub $0,1
+  equ $3,1
+  mul $3,$2
   mul $1,-1
   add $1,$3
+  sub $2,1
 lpe
 mov $0,$1

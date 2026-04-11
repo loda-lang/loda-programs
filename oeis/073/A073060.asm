@@ -1,6 +1,7 @@
 ; A073060: Multiplication table for 1 and odd primes, read by antidiagonals.
 ; Submitted by PDW
 ; 1,3,3,5,9,5,7,15,15,7,11,21,25,21,11,13,33,35,35,33,13,17,39,55,49,55,39,17,19,51,65,77,77,65,51,19,23,57,85,91,121,91,85,57,23,29,69,95,119,143,143,119,95,69,29,31,87,115,133,187,169,187,133,115,87,31,37,93,145
+; Formula: a(n) = if(A181819(A057335(if((-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n))+2^floor((sqrtint(8*n+8)+1)/2)))==0,0,A181819(A057335(if((-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n))+2^floor((sqrtint(8*n+8)+1)/2)))/(2^valuation(A181819(A057335(if((-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n))+2^floor((sqrtint(8*n+8)+1)/2))),2)))
 
 add $0,1
 mov $1,$0

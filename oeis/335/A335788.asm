@@ -1,36 +1,91 @@
 ; A335788: Expansion of e.g.f. 2*sec(exp(x)-1) - 2*tan(exp(x)-1) - exp(x).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,1,3,11,49,263,1675,12417,105183,1002475,10616589,123679907,1571831251,21640964933,320872742611,5097445680435,86377624918593,1555173730665199,29646960589439139,596571563234557361,12636340495630310359,281040812801112341027,6548183676729160919245,159506163208194891330267,4054315017969344421174699,107346101980878679643918245,2955890941554407565687971547,84524176984670014742292102923,2506500306304789683920454698737,76982948328434616921629228347127,2445933101849662444538773795264603
 
-max $0,1
-mov $4,$0
-sub $4,1
+mov $8,$0
+add $8,1
+bin $8,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $8,0
-  mov $3,$0
-  add $3,2
-  lpb $3
-    sub $3,1
-    mov $6,$3
-    pow $6,$4
-    sub $7,$3
-    bin $7,$5
-    mul $7,$6
-    add $8,$7
-    add $5,1
-    mov $7,0
-  lpe
-  mov $2,1
-  fac $2,$0
-  mov $9,$0
-  add $9,1
-  seq $9,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-  div $8,$2
-  mul $8,$9
-  add $1,$8
+  mov $4,$2
+  bin $4,2
+  add $4,1
+  mov $11,$4
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  add $11,1
+  pow $11,2
+  sub $11,$4
+  mov $4,$11
+  add $4,2
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  add $9,$4
+  mov $10,$9
+  add $10,2
+  mov $12,$10
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $13,$12
+  add $13,1
+  bin $13,2
+  sub $10,$13
+  sub $10,1
+  mov $14,$12
+  mod $14,2
+  sub $12,$10
+  mul $12,$14
+  mul $14,$10
+  sub $10,$14
+  add $10,$12
+  add $10,$9
+  mov $4,$9
+  add $4,1
+  mov $15,$4
+  mul $15,8
+  nrt $15,2
+  add $15,1
+  div $15,2
+  bin $15,2
+  sub $4,$15
+  sub $10,$4
+  mov $4,$10
+  add $4,2
+  mov $16,$4
+  mul $16,8
+  nrt $16,2
+  sub $16,1
+  div $16,2
+  add $16,1
+  pow $16,2
+  sub $16,$4
+  mov $4,$16
+  seq $4,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mov $5,$2
+  add $5,$8
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  mov $6,$5
+  sub $6,$3
+  mov $17,1
+  fac $17,$6
+  mov $7,$5
+  seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $7,$17
+  mov $5,$7
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1
-mul $0,2
-sub $0,1

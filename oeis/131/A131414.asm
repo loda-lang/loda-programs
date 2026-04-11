@@ -1,7 +1,7 @@
 ; A131414: A130302 + A130303 - A000012.
 ; Submitted by treaclepumpkin
 ; 1,5,1,10,3,1,16,5,3,1,23,7,5,3,1,31,9,7,5,3,1,40,11,9,7,5,3,1,50,13,11,9,7,5,3,1,61,15,13,11,9,7,5,3,1,73,17,15,13,11,9,7,5,3,1
-; Formula: a(n) = truncate(min(binomial(truncate((sqrtint(8*n)-1)/2)+1,2),1)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*(binomial(truncate((sqrtint(8*n)-1)/2)+2,2)-1)+2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2*truncate((sqrtint(8*n)-1)/2)-2*n+3
+; Formula: a(n) = truncate(min(binomial(floor((sqrtint(8*n)-1)/2)+1,2),1)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*(binomial(floor((sqrtint(8*n)-1)/2)+2,2)-1)+2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2*floor((sqrtint(8*n)-1)/2)-2*n+3
 
 #offset 1
 

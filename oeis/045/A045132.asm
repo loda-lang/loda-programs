@@ -1,5 +1,5 @@
 ; A045132: Numbers whose base-4 representation contains exactly four 1's and three 3's.
-; Submitted by atannir
+; Submitted by Science United
 ; 5503,5599,5623,5629,5983,6007,6013,6103,6109,6133,7519,7543,7549,7639,7645,7669,8023,8029,8053,8149,13663,13687,13693,13783,13789,13813,14167,14173,14197,14293,15703,15709,15733,15829
 
 #offset 1
@@ -45,9 +45,7 @@ add $4,1
 mov $13,$5
 mul $13,6
 nrt $13,3
-mov $14,$13
-add $14,2
-bin $14,3
+gcd $14,$11
 geq $5,$14
 add $5,$13
 add $5,1

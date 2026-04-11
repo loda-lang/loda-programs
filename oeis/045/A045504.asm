@@ -1,22 +1,17 @@
 ; A045504: Palindromic Fibonacci numbers.
-; Submitted by Science United
+; Submitted by Jan
 ; 0,1,1,2,3,5,8,55
+; Formula: a(n) = d(n-1), a(9) = 105, a(8) = 55, a(7) = 8, a(6) = 5, a(5) = 3, a(4) = 2, a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 0, b(n) = b(n-1)+c(n-1)+d(n-1), b(9) = 349, b(8) = 202, b(7) = 105, b(6) = 55, b(5) = 8, b(4) = 5, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 42*d(n-8)+42, c(9) = 84, c(8) = 42, c(7) = 42, c(6) = 42, c(5) = 42, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = b(n-1), d(9) = 202, d(8) = 105, d(7) = 55, d(6) = 8, d(5) = 5, d(4) = 3, d(3) = 2, d(2) = 1, d(1) = 1, d(0) = 0
 
 #offset 1
 
-mov $2,1
-mov $3,1
-mov $4,2
-mov $5,3
-mov $6,5
-mov $7,8
-mov $8,13
-sub $0,1
+mov $1,1
 lpb $0
   sub $0,1
-  add $8,42
-  rol $1,6
-  mov $6,$7
-  mov $7,$8
+  add $5,1
+  ror $1,10
+  add $1,$2
+  add $1,$3
+  mul $7,42
 lpe
-mov $0,$1
+mov $0,$3

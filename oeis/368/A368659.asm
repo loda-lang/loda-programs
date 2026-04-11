@@ -1,7 +1,7 @@
 ; A368659: a(n) is the number of correct decimal digits of e obtained from the fraction A368620(n)/A368621(n).
 ; Submitted by loader3229
 ; 0,4,5,7,10,11,13,14,18
-; Formula: a(n) = ((10*n-7*truncate((10*n-10)/7)-10)>=2)+12*n-2*truncate((10*n-7*truncate((10*n-10)/7)-10)/2)-7*truncate((10*n-10)/7)-12
+; Formula: a(n) = (((10*n-10)%7)>=2)+((10*n-10)%7)%2+2*n-2
 
 #offset 1
 

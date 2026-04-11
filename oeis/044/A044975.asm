@@ -1,11 +1,10 @@
 ; A044975: Numbers whose base-3 representation contains exactly two 0's and no 1's.
-; Submitted by Ralfy
+; Submitted by dskagcommunity
 ; 18,56,60,72,170,182,186,218,222,234,512,548,560,564,656,668,672,704,708,720,1538,1646,1682,1694,1698,1970,2006,2018,2022,2114,2126,2130,2162,2166,2178,4616,4940,5048,5084,5096,5100
 
 #offset 1
 
 add $0,1
-mov $1,1
 mov $2,$0
 sub $0,2
 pow $2,4

@@ -1,7 +1,7 @@
 ; A127139: Inverse triangle of A126988.
 ; Submitted by iBezanilla
 ; 1,-2,1,-3,0,1,0,-2,0,1,-5,0,0,0,1,6,-3,-2,0,0,1,-7,0,0,0,0,0,1,0,0,0,-2,0,0,0,1,0,0,-3,0,0,0,0,0,1,10,-5,0,0,-2,0,0,0,0,1
-; Formula: a(n) = A008683(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))*truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)
+; Formula: a(n) = A008683(truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)))*truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)
 
 #offset 1
 

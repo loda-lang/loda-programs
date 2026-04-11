@@ -4,7 +4,6 @@
 
 mov $1,$0
 mov $3,$0
-add $3,9
 add $0,1
 mov $2,$0
 trn $2,2
@@ -16,4 +15,4 @@ lpb $1
 lpe
 add $0,$2
 add $0,$3
-add $0,7
+add $0,16

@@ -14,9 +14,8 @@ lpb $2
   seq $3,7092 ; Numbers in base 6.
   lpb $3
     mov $5,$3
-    mul $5,12
-    add $5,2
-    mul $5,2
+    mul $5,24
+    add $5,4
     mod $5,10
     trn $5,4
     bin $5,2

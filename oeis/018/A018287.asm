@@ -1,12 +1,13 @@
 ; A018287: Divisors of 108.
-; Submitted by emoga
+; Submitted by Science United
 ; 1,2,3,4,6,9,12,18,27,36,54,108
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
+  mul $1,9
+  add $1,36
+  add $2,2
   mov $3,$2
   lpb $3
     add $2,1
@@ -16,8 +17,9 @@ lpb $0
     equ $4,0
     sub $3,$4
   lpe
+  mov $1,32
   add $2,1
   sub $0,1
-  mov $1,108
 lpe
 mov $0,$2
+div $0,3

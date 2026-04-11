@@ -1,7 +1,7 @@
 ; A358260: a(n) is the number of infinitary square divisors of n.
 ; Submitted by TheXiron
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,4,1,1,1,2,1,1,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,4,1,1,2,2,1,1,1,2
-; Formula: a(n) = A037445(gcd(n,truncate((n-1)/A019554(max(0,n-1)+1))+1))
+; Formula: a(n) = A037445(gcd(n,floor((n-1)/A019554(max(0,n-1)+1))+1))
 
 #offset 1
 

@@ -14,8 +14,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,31076 ; Write n in base 9 and juxtapose.
-  sub $3,4
-  equ $3,4
+  equ $3,8
   sub $0,$3
   add $1,1
   sub $2,$0

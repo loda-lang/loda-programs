@@ -1,5 +1,5 @@
 ; A045108: Numbers whose base-4 representation contains exactly four 1's and three 2's.
-; Submitted by atannir
+; Submitted by mkferrysr
 ; 5482,5530,5542,5545,5722,5734,5737,5782,5785,5797,6490,6502,6505,6550,6553,6565,6742,6745,6757,6805,9562,9574,9577,9622,9625,9637,9814,9817,9829,9877,10582,10585,10597,10645,10837
 
 #offset 1
@@ -45,9 +45,7 @@ add $4,1
 mov $13,$5
 mul $13,6
 nrt $13,3
-mov $14,$13
-add $14,2
-bin $14,3
+gcd $14,$11
 geq $5,$14
 add $5,$13
 add $5,1

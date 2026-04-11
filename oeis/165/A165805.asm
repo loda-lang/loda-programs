@@ -10,9 +10,8 @@ div $0,2
 add $0,2
 mov $5,$0
 lpb $5
-  trn $5,7
+  sub $5,7
   add $0,$5
-  trn $5,6
 lpe
 mov $4,$0
 mod $4,2
