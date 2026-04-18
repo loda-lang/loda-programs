@@ -1,13 +1,12 @@
 ; A365936: Final digit (in decimal system) of n^(n-1) = A000169(n).
-; Submitted by Wood
+; Submitted by Science United
 ; 1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0,1,2,9,4,5,6,9,2,1,0,1,8,1,4,5,6,1,8,1,0
-; Formula: a(n) = -10*truncate(truncate(((n-1)%90+1)^gcd(0,(n-1)%90))/10)+truncate(((n-1)%90+1)^gcd(0,(n-1)%90))
+; Formula: a(n) = (n^(n-1))%10
 
 #offset 1
 
+mov $1,$0
 sub $0,1
-mod $0,90
-gcd $1,$0
-add $0,1
-pow $0,$1
+pow $1,$0
+mov $0,$1
 mod $0,10

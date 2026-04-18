@@ -14,8 +14,6 @@ lpb $0
   seq $6,40 ; The prime numbers.
   pow $6,2
   seq $6,230980 ; Number of primes <= n, starting at n=0.
-  mov $7,-1
-  mov $4,1
   mov $4,$6
   sub $4,$2
   sub $4,1

@@ -4,36 +4,14 @@
 
 #offset 1
 
-mov $2,12
-mov $11,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $4,11
-  mov $5,$2
-  lpb $5
-    trn $5,1
-    mov $6,$$5
-    leq $6,$$4
-    lpb $6
-      mov $6,0
-      mov $4,$5
-    lpe
-    mov $6,$5
-    geq $6,12
-    mul $5,$6
-  lpe
-  mov $3,$2
-  sub $3,$4
-  equ $3,1
-  lpb $3
-    mov $3,0
-    mov $$2,$$4
-    mul $$2,5
-    add $2,1
-  lpe
-  mov $1,$$4
-  mul $$4,2
+mov $2,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$2
+  sub $0,$1
+  seq $0,86761 ; Numbers k such that k-th cyclotomic polynomial has exactly 5 nonzero terms.
 lpe
-mov $0,$1
+div $0,5
 add $0,1

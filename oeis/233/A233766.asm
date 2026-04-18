@@ -1,5 +1,5 @@
 ; A233766: Digital root of Lucas numbers (A030133) indexed by natural numbers not divisible by 2, 3 or 5 (A007775).
-; Submitted by loader3229
+; Submitted by Science United
 ; 2,9,6,7,2,9,3,7,9,7,2,9,3,2,7,6,7,9,3,2,7,9,6,2,2,9,6,7,2,9,3,7,9,7,2,9,3,2,7,6,7,9,3,2,7,9,6,2,2,9,6,7,2,9,3,7,9,7,2,9,3,2,7,6,7,9,3,2,7,9,6,2,2,9,6,7,2,9,3,7
 
 #offset 1
@@ -28,9 +28,8 @@ mov $21,7
 mov $22,9
 mov $23,6
 mov $24,2
-sub $0,1
 lpb $0
   rol $1,24
   sub $0,1
 lpe
-mov $0,$1
+mov $0,$24

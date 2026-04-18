@@ -1,9 +1,11 @@
 ; A049711: a(n) = n - prevprime(n).
 ; Submitted by Science United
 ; 1,1,2,1,2,1,2,3,4,1,2,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,5,6,1,2,3
-; Formula: a(n) = A175851(n-1)
+; Formula: a(n) = -A007917(n-1)+n
 
 #offset 3
 
-sub $0,1
-seq $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
+mov $1,$0
+sub $1,1
+seq $1,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
+sub $0,$1

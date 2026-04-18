@@ -1,13 +1,11 @@
 ; A108126: Maximal number of squares of side 1 in an ellipse of semiaxes n,2n.
-; Submitted by Science United
+; Submitted by Sabroe_SMC
 ; 3,17,43,83,137,203,279,369,471,587,715,857,1011,1175,1351,1541,1743,1961,2191,2429,2683,2949,3227,3523,3829,4137,4469,4809,5167,5539,5913,6295,6701,7127,7555,7999,8449,8909,9395,9889,10395,10915
 
 #offset 1
 
-mov $3,3
 mul $0,2
 pow $0,2
-add $0,3
 lpb $0
   sub $0,3
   sub $0,$3

@@ -26,9 +26,11 @@ lpb $1
   gcd $5,$6
   mov $3,$6
   div $3,$5
-  seq $3,78310 ; a(n) = n*rad(n) + 1, where rad = A007947 (squarefree kernel).
-  sub $3,1
-  add $2,$3
+  mov $9,$3
+  seq $3,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  mul $3,$9
+  add $9,$3
+  add $2,$9
   mov $4,1
 lpe
 mov $0,$2

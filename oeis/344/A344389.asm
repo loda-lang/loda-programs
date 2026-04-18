@@ -1,16 +1,15 @@
 ; A344389: a(n) is the number of nonnegative numbers < 10^n with all digits distinct.
-; Submitted by Aionel
+; Submitted by John Napoli
 ; 1,10,91,739,5275,32491,168571,712891,2345851,5611771,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691,8877691
+; Formula: a(n) = 9*truncate(b(n)/10)+1, b(n) = b(n-1)+A306957(n), b(0) = 0
 
-mov $1,10
 lpb $0
+  mov $2,$0
+  seq $2,306957 ; a(n) = n!*binomial(10,n).
   sub $0,1
-  sub $1,$0
-  add $2,2
-  mul $2,$1
-  add $1,$0
+  add $1,$2
 lpe
-mov $0,$2
-div $0,20
+mov $0,$1
+div $0,10
 mul $0,9
 add $0,1

@@ -5,28 +5,34 @@
 #offset 1
 
 mov $2,$0
-sub $2,1
-mov $3,$0
-pow $3,4
-lpb $3
-  mov $1,$5
-  mul $1,3
-  add $1,1
-  seq $1,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $1,2
-  sub $2,$1
-  add $2,1
-  add $5,9
-  add $5,$4
-  mov $4,$2
+sub $0,1
+pow $2,3
+lpb $2
+  mov $3,$1
+  mul $3,2
+  pow $4,$5
+  add $5,$3
+  mov $6,$1
+  mul $6,2
+  add $6,5
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $6,$5
+  add $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mod $5,2
+  add $5,6
+  mov $3,$6
+  add $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $0,$3
+  mov $4,$0
   max $4,0
-  equ $4,$2
-  sub $2,$4
-  sub $3,$4
-  sub $4,2
+  equ $4,$0
+  add $1,6
+  add $1,$5
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$5
-sub $0,9
-div $0,8
+mov $0,$1
+div $0,12
 mul $0,3
-add $0,3

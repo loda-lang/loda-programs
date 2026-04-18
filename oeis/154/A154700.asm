@@ -1,23 +1,20 @@
 ; A154700: Prime divisors of 2^36-1.
-; Submitted by loader3229
+; Submitted by Torbj&#246;rn Eriksson
 ; 3,5,7,13,19,37,73,109
-; Formula: a(n) = 2*truncate(6^truncate((n-2)/4))*(2*max(-3*truncate((n-2)/4)+n-3,0)-3*truncate((n-2)/4)+n)+1
 
 #offset 1
 
-sub $0,2
-mov $1,$0
-mod $1,4
-add $1,1
-div $0,4
-add $1,$0
-add $1,1
-mov $2,6
-pow $2,$0
-mov $0,$1
-trn $0,3
+mov $9,1
+bor $6,$9
 mul $0,2
-add $0,$1
-mul $0,$2
+lpb $0
+  sub $0,1
+  add $1,1
+  mov $4,$5
+  add $4,$6
+  rol $4,$1
+  mul $7,$9
+lpe
+mov $0,$5
 mul $0,2
 add $0,1

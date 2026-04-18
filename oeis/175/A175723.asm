@@ -1,6 +1,6 @@
 ; A175723: a(1)=a(2)=1; thereafter a(n) = gpf(a(n-1)+a(n-2)), where gpf = "greatest prime factor".
 ; 1,1,2,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3,5,2,7,3
-; Formula: a(n) = -10*truncate((truncate(gcd(truncate((n-3)/2)*(n-3),2)^(n-3))+1)/10)+truncate(gcd(truncate((n-3)/2)*(n-3),2)^(n-3))+1
+; Formula: a(n) = (if((gcd(truncate((n-3)/2)*(n-3),2)^2)==1,gcd(truncate((n-3)/2)*(n-3),2)^(n-3),if((n-3)<=(-1),0,gcd(truncate((n-3)/2)*(n-3),2)^(n-3)))+1)%10
 
 #offset 1
 

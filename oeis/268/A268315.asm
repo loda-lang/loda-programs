@@ -1,16 +1,15 @@
 ; A268315: Decimal expansion of 256/27.
+; Submitted by Science United
 ; 9,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4,8,1,4
-; Formula: a(n) = -truncate((4*n+truncate((-2*n+1)/3)-2)/(4*n-2))*(4*n-2)+4*n-10*truncate((-truncate((4*n+truncate((-2*n+1)/3)-2)/(4*n-2))*(4*n-2)+4*n+truncate((-2*n+1)/3)+7)/10)+truncate((-2*n+1)/3)+7
+; Formula: a(n) = (16^(n-1)+floor((16^(n-1))/18)+8)%10
 
 #offset 1
 
-mul $0,2
 sub $0,1
-sub $1,$0
-mul $0,2
-div $1,3
-add $1,$0
-mod $1,$0
-add $1,9
-mod $1,10
+mov $1,16
+pow $1,$0
 mov $0,$1
+div $0,18
+add $0,$1
+add $0,8
+mod $0,10

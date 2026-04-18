@@ -1,20 +1,18 @@
 ; A161586: The list of the k values in the common solutions to the 2 equations 9*k+1=A^2, 13*k+1=B^2.
-; Submitted by Mads Nissen
+; Submitted by [SG]KidDoesCrunch
 ; 0,11,1320,157080,18691211,2224097040,264648856560,31490989833611,3747163141343160,445880922830002440,53056082653628947211,6313227954859014715680,751221070545569122218720,89388994166967866529312011,10636539084798630547865910600
-; Formula: a(n) = floor((c(n-1)^2)/9), b(n) = 9*c(n-1)+b(n-1), b(1) = 9, b(0) = 0, c(n) = 10*c(n-1)+b(n-1), c(1) = 10, c(0) = 1
+; Formula: a(n) = floor((d(n)*b(n))/36), b(n) = 9*d(n-1), b(2) = 18, b(1) = 0, b(0) = 0, c(n) = 9*d(n-1)+c(n-1), c(2) = 18, c(1) = 0, c(0) = 0, d(n) = 10*d(n-1)+c(n-1)+2, d(2) = 22, d(1) = 2, d(0) = 0
 
 #offset 1
 
-mov $3,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $1,$3
-  mul $1,8
-  add $2,$3
+  mul $1,9
   add $2,$1
+  add $3,2
   add $3,$2
 lpe
-pow $3,2
-mov $0,$3
-div $0,9
+mul $1,$3
+mov $0,$1
+div $0,36

@@ -1,25 +1,24 @@
 ; A192672: Floor-Sqrt transform of little Schroeder numbers (A001003).
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1,1,1,3,6,14,30,65,144,321,720,1626,3694,8428,19305,44371,102291,236450,547868,1272148,2959613,6897450,16100184,37635909,88095027,206458158,484399704,1137707979,2674734202,6293966627,14823002101,34937537185,82408390392,194515481823
+; Formula: a(n) = sqrtint(truncate((d(n+1)-2)/2)+1), b(n) = 3*b(n-1)+2*c(n-1)+truncate((2*b(n-1)+c(n-1))/(-n)), b(3) = -25, b(2) = -5, b(1) = -1, b(0) = -1, c(n) = 4*b(n-1)+3*c(n-1)+truncate((2*b(n-1)+c(n-1))/(-n)), c(3) = -38, c(2) = -8, c(1) = -2, c(0) = 0, d(n) = truncate((2*b(n-1)+c(n-1))/(-n)), d(3) = 6, d(2) = 2, d(1) = 2, d(0) = 0
 
-mov $5,-1
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  sub $1,1
-  add $3,$5
-  add $5,$3
-  mov $2,$5
-  div $2,$1
-  add $5,$3
-  add $3,$5
+mov $2,-1
+add $0,1
+lpb $0
+  sub $0,1
   add $3,$2
-  add $5,$2
+  sub $1,1
+  add $2,$3
+  mov $4,$2
+  div $4,$1
+  add $2,$3
+  add $3,$2
+  add $3,$4
+  add $2,$4
 lpe
-mov $4,$2
-sub $4,2
-div $4,2
-add $4,1
-nrt $4,2
 mov $0,$4
+sub $0,2
+div $0,2
+add $0,1
+nrt $0,2

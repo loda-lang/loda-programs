@@ -1,19 +1,33 @@
 ; A086169: Sum of the first n twin prime pairs.
-; Submitted by Mumps
+; Submitted by iBezanilla
 ; 8,20,44,80,140,224,344,488,692,908,1184,1484,1844,2228,2624,3080,3560,4100,4664,5288,5984,6824,7688,8612,9656,10796,11996,13232,14516,15836,17456,19100,20756,22472,24236,26276,28340,30440,32564,34748,37052,39512,42068,44648,47252,49892,52748,55652,58616,61592,64808,68048,71384,74780,78224,81800,85544,89300,93164,97064,101060,105116,109280,113456,117680,121940,126224,130700,135236,139856,144536,149300,154400,159584,164900,170276,175700,181160,186740,192344
-; Formula: a(n) = 6*b(n-1)+8, b(n) = b(n-1)+A167379(max(n-1,0)+1), b(0) = 0
 
 #offset 1
 
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,167379 ; Let p and q be twin primes, excluding the pair (3,5). Then p+q is always divisible by 6 and we set a(n) = (p+q)/6.
-  add $1,$2
+mov $5,-3
+mov $2,$0
+add $2,6
+pow $2,3
+lpb $2
+  mov $1,$6
+  add $1,2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $3,$6
+  add $3,3
+  mul $1,$3
+  add $1,1
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $5,6
+  add $7,$0
+  mul $2,$4
+  sub $2,18
+  mov $6,$5
 lpe
-mov $0,$1
-mul $0,6
+mov $0,$7
+mul $0,12
 add $0,8

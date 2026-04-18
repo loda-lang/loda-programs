@@ -4,7 +4,7 @@
 
 #offset 1
 
-mov $19,1
+mov $20,1
 mov $3,$0
 lpb $3
   add $2,1
@@ -20,7 +20,6 @@ lpb $3
     sub $4,1
   lpe
   sub $3,1
-  mov $19,0
 lpe
 mov $3,$0
 lpb $3

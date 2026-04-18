@@ -1,6 +1,7 @@
 ; A380455: Maximum number of prime polyomino factors of an n-polyomino.
 ; Submitted by HeatForScience
 ; 1,1,1,1,3,1,4,1,5,1,5,1
+; Formula: a(n) = binomial(floor(n/2),valuation(n,2))%10
 
 #offset 2
 

@@ -1,5 +1,5 @@
 ; A018736: Divisors of 945.
-; Submitted by JayPi
+; Submitted by estatic707
 ; 1,3,5,7,9,15,21,27,35,45,63,105,135,189,315,945
 
 #offset 1
@@ -9,7 +9,6 @@ sub $0,1
 lpb $0
   mul $1,7
   mov $3,$2
-  add $2,2
   lpb $3
     mov $4,$1
     gcd $4,$2

@@ -1,7 +1,7 @@
 ; A362695: Decimal expansion of (3 - sqrt(3))/4.
-; Submitted by Matthias Schmelz
+; Submitted by skildude
 ; 3,1,6,9,8,7,2,9,8,1,0,7,7,8,0,6,7,6,6,1,8,1,3,8,4,1,4,6,2,3,5,3,1,9,0,8,2,6,4,2,9,8,6,8,6,5,4,7,4,0,4,8,4,2,9,8,6,0,4,8,2,5,5,1,3,7,0,1,6,7,4,5,7,7,2,7,9,9,9,9
-; Formula: a(n) = (-floor((10^(n+1)+sqrtint(3*(10^(n+1))^2))/4)-10*truncate((-floor((10^(n+1)+sqrtint(3*(10^(n+1))^2))/4)-1)/10)+9)%10
+; Formula: a(n) = -floor((10^(n+1)+sqrtint(3*(10^(n+1))^2))/4)-10*truncate((-floor((10^(n+1)+sqrtint(3*(10^(n+1))^2))/4))/10)+9
 
 add $0,1
 mov $1,10
@@ -15,7 +15,5 @@ add $1,$0
 div $1,4
 mov $0,$1
 mul $0,-1
-sub $0,1
 mod $0,10
-add $0,10
-mod $0,10
+add $0,9

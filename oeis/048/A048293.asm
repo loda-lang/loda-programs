@@ -1,12 +1,12 @@
 ; A048293: Positions of 1-digit terms in the continued fraction for Pi (3 is at position 0).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,3,5,6,7,8,9,10,11,13,14,15,16,17,18,19,20,22,23,24,26,28,29,30,31,32,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,78,81
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-pow $2,2
+sub $0,1
+add $2,14
 lpb $2
   mov $3,$1
   seq $3,1203 ; Simple continued fraction expansion of Pi.

@@ -1,10 +1,10 @@
 ; A118138: Sum of factorials of prime factors, with multiplicity.
-; Submitted by PDW
+; Submitted by [SG]KidDoesCrunch
 ; 2,6,4,120,8,5040,6,12,122,39916800,10,6227020800,5042,126,8,355687428096000,14,121645100408832000,124,5046,39916802,25852016738884976640000,12,240,6227020802,18,5044
 
 #offset 2
 
-mov $1,1
+mov $1,2
 mov $2,2
 lpb $0
   mov $3,$0
@@ -20,4 +20,3 @@ lpb $0
   add $5,$1
 lpe
 mov $0,$5
-mul $0,2

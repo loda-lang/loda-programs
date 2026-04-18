@@ -1,15 +1,14 @@
 ; A091845: Records in sequence of lengths of suffix blocks associated with A091844.
-; Submitted by kundor
+; Submitted by Science United
 ; 1,3,11,55,315,1872,11205,67195
 
 mov $2,1
 lpb $0
   sub $0,1
   sub $3,$4
+  trn $3,3
   mul $4,2
   add $4,1
-  add $3,1
-  trn $3,4
   add $2,$4
   add $2,$3
   mov $1,$4

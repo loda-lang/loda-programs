@@ -1,11 +1,9 @@
 ; A018278: Divisors of 90.
-; Submitted by vilbrandt
+; Submitted by Mike C
 ; 1,2,3,5,6,9,10,15,18,30,45,90
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

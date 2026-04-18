@@ -1,21 +1,20 @@
 ; A075137: Numerator of the generalized harmonic number H(n,5,1).
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,7,83,697,1685,22521,714167,6551627,273085171,6372562445,109738148749,111017326363,6843690854527,6909897986791,494972427791585,9482037783487391,85993305141830183,3724238207261666261
+; Formula: a(n) = truncate((c(n)+d(n))/gcd(c(n),b(n))), b(n) = b(n-1)*(5*n-4), b(3) = 132, b(2) = 12, b(1) = 2, b(0) = 2, c(n) = c(n-1)*(5*n-4)+b(n-1), c(3) = 166, c(2) = 14, c(1) = 2, c(0) = 0, d(n) = d(n-1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $1,1
-sub $0,1
+mov $1,2
 lpb $0
-  mov $2,$0
-  mul $2,5
+  sub $0,1
   add $2,1
   mul $3,$2
   add $3,$1
-  sub $0,1
   mul $1,$2
+  add $2,4
 lpe
-add $1,$3
+add $4,$3
 gcd $3,$1
-div $1,$3
-mov $0,$1
+div $4,$3
+mov $0,$4

@@ -1,15 +1,14 @@
 ; A377809: k*(k+3)/2 appears k times.
-; Submitted by Stephen Uitti
+; Submitted by Science United
 ; 2,5,5,9,9,9,14,14,14,14,20,20,20,20,20,27,27,27,27,27,27,35,35,35,35,35,35,35,44,44,44,44,44,44,44,44,54,54,54,54,54,54,54,54,54,65,65,65,65,65,65,65,65,65,65,77,77,77,77,77,77,77,77,77,77,77,90
-; Formula: a(n) = binomial(truncate((sqrtint(8*n-7)+1)/2)+2,2)-1
+; Formula: a(n) = binomial(floor((sqrtint(8*n)+3)/2)+1,2)-1
 
 #offset 1
 
 mul $0,8
-sub $0,7
 nrt $0,2
-add $0,1
+add $0,3
 div $0,2
-add $0,2
+add $0,1
 bin $0,2
 sub $0,1

@@ -1,6 +1,7 @@
-; A211770:  a(n) = concatenation of periods of periodic sequences of ending digits of multiples of n.
+; A211770: a(n) = concatenation of periods of periodic sequences of ending digits of multiples of n.
 ; Submitted by cellarnoise2
 ; 1234567890,24680,3692581470,48260,50,62840,7418529630,86420,9876543210,0,1234567890,24680,3692581470,48260,50,62840,7418529630,86420,9876543210,0,1234567890,24680,3692581470,48260,50,62840,7418529630,86420,9876543210,0
+; Formula: a(n) = a(n-10), a(10) = 0, a(9) = 9876543210, a(8) = 86420, a(7) = 7418529630, a(6) = 62840, a(5) = 50, a(4) = 48260, a(3) = 3692581470, a(2) = 24680, a(1) = 1234567890
 
 #offset 1
 

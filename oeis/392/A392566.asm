@@ -21,7 +21,6 @@ lpb $1
   mov $3,$2
 lpe
 mov $1,$4
-div $1,6
 div $1,$0
 mov $0,$1
-div $0,2
+div $0,12

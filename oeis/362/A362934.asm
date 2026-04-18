@@ -12,7 +12,6 @@ lpb $1
   mov $0,$4
   sub $0,$1
   mov $3,$0
-  mov $6,0
   max $6,$0
   mov $5,$6
   add $6,1
@@ -23,7 +22,6 @@ lpb $1
   pow $0,2
   mul $0,4
   nrt $0,2
-  add $0,1
   div $0,2
   sub $0,1
   div $3,2

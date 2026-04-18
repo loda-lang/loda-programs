@@ -1,16 +1,12 @@
 ; A246850: Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
-; Submitted by loader3229
+; Submitted by Science United
 ; 2,4,8,12,20,36,44,60,84,116,140,156,204,260,380,420,660,924
 
 #offset 1
 
-mov $2,1
 mov $1,$0
 pow $1,3
 lpb $1
-  mov $3,1
-  mov $4,$2
-  div $4,3
   lpb $4
     mov $5,$4
     lpb $5
@@ -32,6 +28,7 @@ lpb $1
     lpe
     sub $4,1
   lpe
+  add $4,37
   sub $0,$3
   mov $3,$0
   neq $3,0

@@ -18,23 +18,14 @@ lpb $2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $7,$3
   mov $9,$7
-  add $9,1
-  equ $9,1
+  equ $9,0
   mov $8,$7
   add $8,1
   seq $8,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $8,$9
   add $8,1
   mod $8,2
-  mov $10,$7
-  add $10,1
-  seq $10,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
-  mov $7,$10
-  add $7,1
-  mul $8,$7
-  mov $7,$8
-  seq $7,209229 ; Characteristic function of powers of 2, cf. A000079.
-  sub $0,$7
+  sub $0,$8
   add $1,2
   mov $4,$0
   max $4,0

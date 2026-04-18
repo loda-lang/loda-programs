@@ -1,16 +1,15 @@
 ; A214864: Numbers k such that k XOR 10 = k - 10.
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 10,11,14,15,26,27,30,31,42,43,46,47,58,59,62,63,74,75,78,79,90,91,94,95,106,107,110,111,122,123,126,127,138,139,142,143,154,155,158,159,170,171,174,175,186,187,190,191,202
-; Formula: a(n) = 4*n-2*((n-1)%4)+gcd((n-1)%4,2)+4
+; Formula: a(n) = floor(b(n)/2)-1, b(n) = bitor(b(n-1),21)+1, b(0) = 0
 
 #offset 1
 
+lpb $0
+  sub $0,1
+  bor $1,21
+  add $1,1
+lpe
+mov $0,$1
+div $0,2
 sub $0,1
-mov $1,$0
-add $1,$0
-mod $0,4
-sub $1,$0
-gcd $0,2
-add $0,$1
-add $0,$1
-add $0,8

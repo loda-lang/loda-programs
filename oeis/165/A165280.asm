@@ -1,34 +1,20 @@
 ; A165280: If p and q are twin primes then pq + 1 is always divisible by 3, except for (p,q)=(3,5). Sequence gives values of (pq + 1)/3.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 12,48,108,300,588,1200,1728,3468,3888,6348,7500,10800,12288,13068,17328,19200,24300,26508,32448,40368,58800,62208,71148,90828,108300,120000,127308,137388,145200,218700,225228,228528,245388,259308,346800,355008,367500,375948,397488,442368,504300,544428,554700,565068,580800,679728,702768,732108,738048,861888,874800,927408,961068,988428,1065648,1168128,1175628,1244208,1267500,1330668,1370928,1444908,1453248,1486848,1512300,1529388,1669548,1714608,1778700,1825200,1891308,2167500,2239488,2354988
 
 #offset 1
 
-sub $0,1
-mov $1,-1
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $7,$6
-  add $7,2
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,4
-  add $3,3
-  mul $7,$3
-  add $7,1
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$7
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $5,3
-  add $5,$1
-  mul $2,$4
-  sub $2,18
-  add $6,3
+add $0,1
+lpb $0
+  mov $0,11
+  seq $0,74048 ; Pentanacci numbers with initial conditions a(0)=5, a(1)=1, a(2)=3, a(3)=7, a(4)=15.
 lpe
-mov $0,$5
-div $0,8
-mul $0,12
+sub $0,1
+mul $0,2
+seq $0,171688 ; Twin primes > 3.
+div $0,2
+pow $0,2
+mul $0,8
+sub $0,72
+div $0,6
 add $0,12

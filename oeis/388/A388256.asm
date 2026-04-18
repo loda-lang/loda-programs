@@ -6,8 +6,7 @@
 
 mov $3,$0
 sub $0,1
-mul $3,8
-sub $3,$0
+mul $3,7
 lpb $3
   max $3,1
   max $6,$2

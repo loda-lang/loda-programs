@@ -1,15 +1,14 @@
 ; A294317: Triangle read by rows: T(n, k) = 2*n-k, k <= n.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 0,2,1,4,3,2,6,5,4,3,8,7,6,5,4,10,9,8,7,6,5,12,11,10,9,8,7,6,14,13,12,11,10,9,8,7,16,15,14,13,12,11,10,9,8,18,17,16,15,14,13,12,11,10,9,20,19,18,17,16,15,14,13,12,11,10,22,21,20,19,18,17,16,15,14,13,12,11,24,23
-; Formula: a(n) = -n+binomial(truncate((sqrtint(8*n+8)+5)/2),2)-3
+; Formula: a(n) = -n+binomial(floor((sqrtint(8*n+8)+5)/2),2)-3
 
 add $0,1
 mov $1,$0
-mul $1,8
-nrt $1,2
-add $1,5
-div $1,2
-bin $1,2
-sub $1,$0
-mov $0,$1
+mul $0,8
+nrt $0,2
+add $0,5
+div $0,2
+bin $0,2
 sub $0,2
+sub $0,$1

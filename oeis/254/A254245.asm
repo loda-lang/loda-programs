@@ -1,5 +1,5 @@
 ; A254245: Decimal expansion of atomic unit of current in A.
-; Submitted by Fardringle
+; Submitted by Dirk Broer
 ; 6,6,2,3,6,1,8,2,3,7,5
 
 #offset -2
@@ -19,7 +19,6 @@ lpb $0
   mul $3,$2
   div $3,$1
   add $4,2
-  add $4,$5
   sub $5,10
   add $5,$3
 lpe

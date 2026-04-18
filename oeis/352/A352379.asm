@@ -15,8 +15,7 @@ lpb $2
   seq $5,38769 ; Number of digits of n which are divisors of n.
   add $1,1
   mov $3,$5
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

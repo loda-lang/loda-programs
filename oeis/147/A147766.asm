@@ -19,7 +19,7 @@ lpb $7
     sub $0,1
     mod $0,110
     max $0,0
-    seq $0,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+    seq $0,712 ; a(n) = number of partitions of n into parts of 2 kinds.
     mul $0,3
     mov $4,$3
     mul $4,$0

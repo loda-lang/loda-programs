@@ -6,10 +6,10 @@
 
 sub $0,1
 lpb $0
-  mul $0,16
+  div $0,2
   dgr $0,10
   mul $0,2
-  add $0,140
+  add $0,141
 lpe
 mov $1,$0
 lpb $1

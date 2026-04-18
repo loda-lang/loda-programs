@@ -1,11 +1,10 @@
 ; A205133: The number s(j) such that n divides s(k)-s(j), where s(j)=j*(2*j-1) and k is the least positive integer for which such a j exists.
-; Submitted by shiva
+; Submitted by Mike C
 ; 1,1,6,1,1,15,1,1,6,15,6,6,15,1,15,1,28,1,28,6,45,6,45,15,66,153,1,91,91,15,91,1,120,276,15,45,153,28,6,45,190,66,190,1,1,45,231,6,6,28,15,120,325,66,66,45,6,861,378,6
 
 #offset 1
 
 sub $0,1
-mov $2,0
 mov $3,$0
 add $0,1
 pow $3,5

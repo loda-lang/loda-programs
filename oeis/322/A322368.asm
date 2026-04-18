@@ -6,7 +6,6 @@
 
 mov $2,$0
 seq $2,289509 ; Numbers k such that the gcd of the indices j for which the j-th prime prime(j) divides k is 1.
-sub $0,1
 mov $1,$2
 lpb $2
   mov $2,2

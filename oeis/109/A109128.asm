@@ -1,7 +1,7 @@
 ; A109128: Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) + 1 for 0<k<n, T(n,0) = T(n,n) = 1.
 ; Submitted by arnavs
 ; 1,1,1,1,3,1,1,5,5,1,1,7,11,7,1,1,9,19,19,9,1,1,11,29,39,29,11,1,1,13,41,69,69,41,13,1,1,15,55,111,139,111,55,15,1,1,17,71,167,251,251,167,71,17,1,1,19,89,239,419,503,419,239,89,19,1,1,21,109,329,659,923,923,659,329,109,21,1,1,23
-; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)-1
+; Formula: a(n) = 2*binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)-1
 
 mov $2,$0
 add $0,1

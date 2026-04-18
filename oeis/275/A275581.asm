@@ -1,32 +1,25 @@
 ; A275581: Numbers n such that A010846(n) >= n/2.
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,4,6,8,10,12,18,30
 
 #offset 1
 
 sub $0,1
-mov $2,$0
 lpb $0
+  sub $0,1
+  sub $0,$4
   add $3,1
-  mov $0,$2
-  div $0,$3
-  sub $0,$3
-  sub $0,$3
+  add $4,1
+  sub $4,$2
+  mov $1,$3
+  mul $1,3
+  add $2,$1
+  mov $1,$3
+  mul $1,$0
   add $1,1
-  div $1,2
-  add $1,$0
-  add $4,$3
+  mul $3,$4
+  add $3,$2
+  sub $0,2
 lpe
-div $1,2
-mul $1,2
-mov $5,$0
-equ $5,0
-add $0,$5
-div $1,$0
-add $0,$2
-add $1,1
-mul $1,$4
-lpb $1
-  mov $0,$1
-  mul $0,2
-  mod $1,5
-lpe
+add $0,$1
+add $0,1

@@ -1,5 +1,5 @@
 ; A114118: Number triangle T(n,k)=sum{j=0..n, C(floor((n+k+j)/3),k)C(k,floor((n+k+j)/3))}.
-; Submitted by Science United
+; Submitted by dskagcommunity
 ; 1,2,1,1,3,1,0,2,3,1,0,1,3,3,1,0,0,2,3,3,1,0,0,1,3,3,3,1,0,0,0,2,3,3,3,1,0,0,0,1,3,3,3,3,1,0,0,0,0,2,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,1,0,0,0,0,0,2,3,3,3,3,3,1,0,0
 
 lpb $0
@@ -17,7 +17,7 @@ lpb $2
   mov $6,$1
   add $6,2
   lpb $6
-    sub $6,1
+    div $6,2
     mov $7,$2
     max $7,$6
     equ $7,1

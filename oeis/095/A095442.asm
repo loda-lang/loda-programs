@@ -1,5 +1,5 @@
 ; A095442: a(n) = 25 written in base n.
-; Submitted by kpmonaghan
+; Submitted by vinn@[CNT]
 ; 1111111111111111111111111,11001,221,121,100,41,34,31,27,25,23,21
 
 #offset 1
@@ -10,8 +10,8 @@ mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-add $1,630
-nrt $1,2
+neq $1,0
+add $1,24
 lpb $1
   mov $4,$1
   mod $4,$2

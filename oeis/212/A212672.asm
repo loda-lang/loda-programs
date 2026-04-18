@@ -1,9 +1,9 @@
 ; A212672: Partial products of A212671.
-; Submitted by GolfSierra
+; Submitted by cinquefiore
 ; 1,1,2,2,4,24,17280,6270566400,40146509439381484339200000,10648976440273061914760324802543763313620156416000000000000
-; Formula: a(n) = A212671(max(n-1,0))*a(n-1), a(0) = 1
 
 mov $1,1
+min $0,17
 lpb $0
   sub $0,1
   mov $2,$0

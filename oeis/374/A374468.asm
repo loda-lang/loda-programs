@@ -1,15 +1,13 @@
 ; A374468: Parity of the digit sum of n in factorial base.
-; Submitted by Mumps
+; Submitted by Cruncher Pete
 ; 0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1
 
-mov $3,2
-mov $1,$0
-lpb $1
-  div $1,$3
-  mod $2,$3
-  add $4,$2
-  mov $2,$1
-  add $3,1
+lpb $0
+  add $1,$0
+  add $2,1
+  div $0,$2
+  add $2,1
+  div $0,$2
 lpe
-sub $0,$4
+mov $0,$1
 mod $0,2

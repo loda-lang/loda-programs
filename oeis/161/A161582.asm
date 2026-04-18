@@ -1,4 +1,4 @@
-; A161582: The list of the k values in the common solutions to the 2 equations 5*k+1=A^2, 9*k+1=B^2.
+; A161582: The list of the k values in the common solutions to the 2 equations 5*k+1 = A^2, 9*k+1 = B^2.
 ; Submitted by vaughan
 ; 0,7,336,15792,741895,34853280,1637362272,76921173511,3613657792752,169764995085840,7975341111241735,374671267233275712,17601574218852716736,826899317018844410887,38846666325666834594960,1824966417989322381552240,85734574979172485098360327
 ; Formula: a(n) = floor((c(max(2*n-1,0))^2)/9), b(n) = 3*b(n-1)-b(n-2), b(3) = 5, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 2*c(n-1)+b(n-1), c(1) = 1, c(0) = 0

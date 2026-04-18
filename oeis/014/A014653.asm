@@ -15,11 +15,11 @@ lpb $1
   pow $6,$3
   seq $3,16056 ; Inverse of 2047th cyclotomic polynomial.
   mul $3,$6
+  pow $5,2
   sub $5,$4
   add $2,$3
   mov $4,$5
   add $4,16
-  mov $5,2
 lpe
 add $0,1
 mod $0,2

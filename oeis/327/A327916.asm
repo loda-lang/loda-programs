@@ -10,10 +10,7 @@ lpe
 sub $1,$0
 add $2,$0
 add $2,1
-mov $3,$1
-add $3,1
-mov $4,2
-pow $4,$3
-mul $2,$4
+mov $3,2
+pow $3,$1
+mul $2,$3
 mov $0,$2
-div $0,2

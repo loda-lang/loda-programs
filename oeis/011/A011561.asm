@@ -1,46 +1,38 @@
 ; A011561: Stirling numbers of second kind S2(12,n).
-; Submitted by Spot T
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,2047,86526,611501,1379400,1323652,627396,159027,22275,1705,66,1
 
 #offset 1
 
-add $0,65
-mov $1,$0
-add $0,1
-mov $4,$0
-mul $4,8
-nrt $4,2
-sub $4,1
-div $4,2
-mov $5,$4
+add $0,9
+mov $1,46
+add $1,$0
+mov $5,$1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $6,$1
+add $6,1
+bin $6,2
+add $1,1
+sub $5,$6
+mov $3,$5
+sub $3,1
 add $5,1
-bin $5,2
-sub $0,$5
-sub $0,1
-mov $5,$0
-mov $0,$4
-mov $4,$5
-add $4,2
-lpb $4
-  sub $4,1
-  mov $7,$4
-  pow $7,$0
-  sub $8,$4
-  bin $8,$6
-  mul $8,$7
-  add $9,$8
-  add $6,1
-  mov $8,0
+lpb $5
+  sub $5,1
+  mov $8,$5
+  pow $8,$1
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $2,$9
+  add $7,1
+  mov $9,0
 lpe
-mov $2,$1
-mul $2,8
-add $2,1
-nrt $2,2
-add $2,1
-div $2,2
-bin $2,2
-sub $1,$2
-mov $3,1
-fac $3,$1
-mov $0,$9
-div $0,$3
+mov $4,1
+fac $4,$3
+mov $1,$2
+div $1,$4
+mov $0,$1

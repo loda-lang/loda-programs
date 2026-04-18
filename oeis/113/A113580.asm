@@ -6,9 +6,16 @@ mov $1,-1
 lpb $0
   mov $2,$0
   mod $2,10
-  add $2,1
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  mov $3,$2
+  mov $4,$2
+  dif $4,$2
+  add $4,1
+  mov $5,$2
+  max $5,1
+  seq $5,40 ; The prime numbers.
+  mul $4,$5
+  mov $5,$4
+  div $5,2
+  mov $3,$5
   mul $3,2
   add $3,1
   div $0,10

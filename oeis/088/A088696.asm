@@ -8,7 +8,6 @@ mov $3,$0
 log $3,2
 mov $4,2
 pow $4,$3
-sub $4,1
 mov $1,$0
 bxo $1,$4
 mov $2,$1
@@ -22,3 +21,4 @@ lpb $1
   add $5,$6
 lpe
 mov $0,$5
+add $0,1

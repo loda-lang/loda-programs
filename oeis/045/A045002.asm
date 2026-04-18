@@ -1,13 +1,12 @@
 ; A045002: Numbers whose base-3 representation contains exactly two 0's and three 2's.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 170,182,186,218,222,234,269,305,317,321,413,425,429,461,465,477,503,509,511,521,533,537,545,547,551,555,559,561,575,587,591,623,627,639,653,655,659,663,667,669,677,681,693,703,705
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,4
 lpb $2
   mov $3,$1

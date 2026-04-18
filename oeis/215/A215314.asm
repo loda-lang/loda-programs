@@ -21,7 +21,6 @@ lpb $2
   div $5,2
   add $5,$1
   div $5,5
-  add $6,1
   mov $6,$5
   add $1,3
   sub $5,$4

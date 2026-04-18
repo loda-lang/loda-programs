@@ -1,7 +1,7 @@
 ; A123517: Triangle read by rows: T(n,k) = floor(n/k + 1/2) - floor(n/(k + 1/2)) (1<=k<=n).
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,2,1,0,1,2,1,1,0,1,2,1,1,1,0,1,3,2,0,1,0,0,1,3,1,1,1,1,0,0,1,3,2,1,0,1,1,0,0,1,4,1,1,1,1,1,0,0,0,1,4,2,1,1,0,1,1,0,0,0,1,4,2,1,1,0,1,1,1,0,0,0,1,5,2
-; Formula: a(n) = -truncate((2*truncate((sqrtint(8*n)-1)/2)+2)/(2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+1))+truncate((2*truncate((sqrtint(8*n)-1)/2)-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2)/(2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)))
+; Formula: a(n) = -truncate((2*floor((sqrtint(8*n)-1)/2)+2)/(2*n-2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)+1))+truncate((2*floor((sqrtint(8*n)-1)/2)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+2)/(2*n-2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)))
 
 #offset 1
 

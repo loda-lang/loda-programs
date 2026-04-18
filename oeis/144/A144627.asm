@@ -1,13 +1,12 @@
 ; A144627: Initial members of triples listed in A144625.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,0,0,2,1,0,1,0,0,3,2,1,0,2,1,0,1,0,0,4,3,2,1,0,3,2,1,0,2,1,0,1,0,0,5,4,3,2,1,0,4,3,2,1,0,3,2,1,0,2,1,0,1,0,0,6,5,4,3,2,1,0,5,4,3,2,1,0,4,3,2,1,0,3,2,1,0,2,1
 
 mov $2,$0
 add $0,1
 add $2,5
-pow $2,2
 lpb $2
-  sub $2,3
+  sub $2,1
   mov $3,$1
   mul $3,8
   nrt $3,2

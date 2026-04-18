@@ -1,30 +1,40 @@
 ; A139407: Numbers k such that 8*k+3 and 8*k+7 are primes.
-; Submitted by vanos0512
+; Submitted by taurec
 ; 2,5,8,20,38,47,62,80,92,107,110,113,185,197,233,260,275,293,317,332,335,338,377,395,398,488,500,653,668,722,740,755,818,863,905,950,962,965,1052,1055,1067,1097,1100,1193,1202,1217,1223,1235,1262,1280,1283,1307,1328,1385,1430,1433,1472,1478,1490,1592,1613,1622,1625,1637,1643,1745,1760,1790,1802,1847,1853,1868,1907,1955,1958,1973,2075,2087,2150,2183
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,3
-pow $2,2
+pow $2,3
 lpb $2
-  sub $2,1
+  add $1,6
   mov $3,$1
-  add $3,4
-  seq $3,140365 ; a(n) = sum of primes in {6*n-5, 6*n-1}.
-  add $3,2
-  gcd $3,4
+  mul $3,2
+  pow $4,$5
+  add $5,$3
+  mov $6,$5
+  add $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $6,2
+  mov $3,$6
+  mul $3,$1
+  mul $6,5
+  add $1,6
+  add $3,$6
   add $3,1
-  equ $3,5
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $3,1
   sub $0,$3
-  add $1,4
   mov $4,$0
   max $4,0
   equ $4,$0
+  mod $5,2
+  add $5,6
   mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-div $0,4
+div $0,12
 mul $0,3
-sub $0,1
+add $0,2

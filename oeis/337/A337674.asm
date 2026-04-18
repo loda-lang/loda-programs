@@ -10,7 +10,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,130674 ; a(n) = d(n)!, where d denotes the number of divisors of n.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,1
+  fac $5,$3
+  mov $3,$5
   pow $3,5
   mod $3,$1
   min $3,1

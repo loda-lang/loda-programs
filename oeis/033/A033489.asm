@@ -13,8 +13,7 @@ lpb $0
   mul $5,2
   rol $4,$1
   add $4,$6
-  add $2,$4
+  max $7,$6
 lpe
-mov $0,$2
-div $0,3
-add $0,1
+mov $0,$4
+div $0,2

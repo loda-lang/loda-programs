@@ -1,16 +1,15 @@
 ; A092554: Decimal expansion of e^(-3).
-; Submitted by Dave Studdert
+; Submitted by [SG]KidDoesCrunch
 ; 0,4,9,7,8,7,0,6,8,3,6,7,8,6,3,9,4,2,9,7,9,3,4,2,4,1,5,6,5,0,0,6,1,7,7,6,6,3,1,6,9,9,5,9,2,1,8,8,4,2,3,2,1,5,5,6,7,6,2,7,7,2,7,6,0,6,0,6,0,6,6,7,7,3,0,1,9,9,5,5
 
 add $0,1
+mov $1,1
 mov $3,$0
-mul $3,5
+mul $3,7
 lpb $3
   max $3,1
-  sub $1,10
-  mul $1,4
-  div $2,3
-  mul $2,36
+  mul $1,2
+  mul $2,6
   div $2,$3
   add $2,$1
   sub $3,1

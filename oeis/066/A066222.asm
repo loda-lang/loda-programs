@@ -1,15 +1,9 @@
 ; A066222: Bisection of A001189.
-; Submitted by Science United
+; Submitted by Mike C
 ; 1,9,75,763,9495,140151,2390479,46206735,997313823,23758664095,618884638911,17492190577599,532985208200575,17411277367391103,606917269909048575,22481059424730751231,881687990282453393919
+; Formula: a(n) = A000085(2*n+2)-1
 
-mov $3,1
 mul $0,2
 add $0,2
-lpb $0
-  mul $2,$0
-  sub $0,1
-  ror $2,2
-  add $3,$2
-lpe
-mov $0,$3
+seq $0,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
 sub $0,1
