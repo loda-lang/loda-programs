@@ -10,7 +10,6 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
-  mov $8,0
   max $8,$1
   mov $7,$8
   add $8,1
@@ -21,12 +20,10 @@ lpb $2
   pow $6,2
   mul $6,4
   nrt $6,2
-  add $6,1
   div $6,2
   pow $6,2
   mov $5,$1
   div $5,$6
-  mov $3,$1
   mov $3,$5
   add $3,1
   seq $3,67692 ; a(n) = Sum_{0 < d <= t <= n, d|n, t|n} d*t.

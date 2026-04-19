@@ -6,7 +6,7 @@
 
 mov $1,2
 mov $9,1
-mul $0,2
+mul $0,4
 lpb $0
   sub $0,1
   add $1,1
@@ -16,5 +16,4 @@ lpb $0
   rol $4,$1
   mul $7,$9
 lpe
-mov $0,$7
-add $0,1
+mov $0,$9

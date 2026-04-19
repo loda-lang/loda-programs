@@ -16,7 +16,6 @@ lpb $2
   div $6,2
   mov $3,$6
   mul $3,2
-  add $3,1
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
   seq $3,87380 ; Let Pricom(n) be defined as the number obtained by replacing each prime digit (2,3,5,7) of n with a '0' and a composite digit (0,4,6,8,9) with a '1' . A 1 remains the same. a(n) = Pricom(n).

@@ -1,5 +1,5 @@
 ; A018732: Divisors of 938.
-; Submitted by [AF>Le_Pommier] Jerome_C2005
+; Submitted by KetamiNO [YouTube]
 ; 1,2,7,14,67,134,469,938
 
 #offset 1
@@ -14,8 +14,7 @@ lpb $0
   mul $3,$2
   div $0,2
   add $1,$3
-  mul $2,2
-  sub $2,1
-  mul $2,6
+  mul $2,12
+  sub $2,6
 lpe
 mov $0,$1
