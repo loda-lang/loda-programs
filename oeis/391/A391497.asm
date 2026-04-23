@@ -1,0 +1,29 @@
+; A391497: Biquadratefree numbers that are neither cubefree nor cubefull.
+; Submitted by [SG]KidDoesCrunch
+; 24,40,54,56,72,88,104,108,120,135,136,152,168,184,189,200,232,248,250,264,270,280,296,297,312,328,344,351,360,375,376,378,392,408,424,440,456,459,472,488,500,504,513,520,536,540,552,568,584,594,600,616,621,632,664,675,680,686,696,702,712,728,744,750,756,760,776,783,792,808,824,837,840,856,872,875,888,904,918,920
+
+#offset 1
+
+sub $0,1
+mov $1,13
+mov $2,$0
+add $2,8
+pow $2,4
+lpb $2
+  sub $2,1
+  mov $3,$1
+  add $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  mov $4,$3
+  pow $4,4
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$4
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
+  equ $3,7
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
+add $0,1
