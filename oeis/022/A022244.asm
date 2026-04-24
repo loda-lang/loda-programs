@@ -4,17 +4,16 @@
 
 #offset 4
 
-add $0,2
+add $0,1
 lpb $0
   sub $0,5
-  mov $2,$0
-  equ $2,1
-  add $1,1
   mul $1,8
+  add $1,10
+  equ $2,$0
+  mov $4,$3
+  add $0,4
   add $3,$2
   mul $3,$1
-  add $0,4
-  max $0,2
 lpe
-mov $0,$3
-div $0,1574277120
+mov $0,$4
+div $0,3843450000

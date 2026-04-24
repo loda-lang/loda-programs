@@ -6,8 +6,7 @@
 #offset 1
 
 mov $1,$0
-mov $2,$0
-seq $2,6022 ; Sprague-Grundy (or Nim) values for the game of Maundy cake on an n X 1 sheet.
-add $2,$0
+seq $1,6022 ; Sprague-Grundy (or Nim) values for the game of Maundy cake on an n X 1 sheet.
+add $1,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,$2
+sub $0,$1

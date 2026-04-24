@@ -1,5 +1,5 @@
 ; A241468: Number of simple connected graphs g on n nodes with |Aut(g)| = 144.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 0,0,0,0,0,0,3,12,51,477
 
 #offset 1
@@ -68,7 +68,6 @@ lpb $4
             lpe
             mov $10,$9
             mul $10,$2
-            div $11,3
             mov $0,$2
             add $8,$10
           lpe

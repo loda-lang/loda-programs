@@ -1,12 +1,11 @@
 ; A145735: Indices of palindromes in A033649.
-; Submitted by Mumps
+; Submitted by iBezanilla
 ; 1,3,4,5,6,12,13,19,29,36
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,3
 pow $2,2
 lpb $2
   mov $5,0
@@ -31,7 +30,7 @@ lpb $2
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,2
 lpe
 mov $0,$1
 add $0,1

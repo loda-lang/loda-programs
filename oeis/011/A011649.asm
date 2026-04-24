@@ -2,15 +2,14 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1
 
-mov $1,-1
-pow $1,$0
-add $0,3
+add $0,1
+mov $3,$0
 lpb $0
-  sub $0,3
-  sub $3,$0
-  mod $3,17
-  pow $3,$3
-  add $2,$3
+  sub $0,1
+  div $3,18
+  add $1,1
+  trn $1,$3
+  add $1,$2
+  sub $2,$1
 lpe
-mov $0,$2
-mul $0,$1
+mov $0,$1

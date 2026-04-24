@@ -1,8 +1,10 @@
 ; A395019: Decimal expansion of sqrt(105)/5 - 1.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 1,0,4,9,3,9,0,1,5,3,1,9,1,9,1,9,6,7,6,6,4,4,2,0,7,7,3,6,1,0,4,2,1,0,3,9,8,1,4,7,0,0,6,5,3,2,6,9,0,9,6,6,5,8,5,9,0,8,3,9,5,6,9,9,9,7,8,0,6,9,5,9,7,1,4,1,0,7,0,8
-; Formula: a(n) = -10*truncate(truncate((4*d(n)+1)/truncate(c(n)/(10^n)))/10)+truncate((4*d(n)+1)/truncate(c(n)/(10^n))), b(n) = 2*c(n-1)+2*d(n-1)+b(n-1), b(2) = 326, b(1) = 2, b(0) = 0, c(n) = 160*c(n-1)+160*d(n-1)+80*(c(n-1)==2)+80*b(n-1), c(2) = 26080, c(1) = 160, c(0) = 1, d(n) = 2*c(n-1)+d(n-1), d(2) = 322, d(1) = 2, d(0) = 0
 
+#offset 1
+
+sub $0,1
 mov $2,1
 mov $3,$0
 lpb $3
@@ -11,8 +13,7 @@ lpb $3
   add $5,$2
   add $5,$2
   add $1,$5
-  equ $2,2
-  add $2,$1
+  mov $2,$1
   mul $2,80
 lpe
 mov $4,10

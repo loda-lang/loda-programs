@@ -1,7 +1,7 @@
 ; A275855: Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
 ; Submitted by Owdjim
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0
-; Formula: a(n) = -2*truncate((sqrtint((sqrtint(3*n^2)+n-2)*(3*sqrtint(3*n^2)+3*n-6))+sqrtint(3*n^2)+n-2)/2)+sqrtint((sqrtint(3*n^2)+n-2)*(3*sqrtint(3*n^2)+3*n-6))+sqrtint(3*n^2)+n-2
+; Formula: a(n) = (sqrtint((sqrtint(3*n^2)+n-2)*(3*sqrtint(3*n^2)+3*n-6))+sqrtint(3*n^2)+n-2)%2
 
 #offset 1
 

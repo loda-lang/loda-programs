@@ -26,8 +26,10 @@ lpb $2
   div $3,3
   equ $3,2
   sub $0,$3
+  add $1,$6
   add $1,1
   sub $2,$0
+  mov $6,1
 lpe
 mov $0,$1
 add $0,1

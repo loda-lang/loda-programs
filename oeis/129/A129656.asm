@@ -18,6 +18,7 @@ lpb $2
   neq $3,0
   sub $0,$3
   add $1,1
+  add $1,$3
   sub $2,$0
 lpe
 mov $0,$1

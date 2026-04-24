@@ -1,21 +1,19 @@
 ; A010210: Continued fraction for sqrt(161).
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 12,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4,2,1,24,1,2,4,1,2,1,4
 
 mov $2,12
 mov $3,1
 mov $4,2
 mov $5,4
-mov $6,1
 mov $7,2
-mov $8,1
 mov $9,4
 mov $10,2
-mov $11,1
 mov $12,24
 lpb $0
   mov $2,0
   rol $2,11
+  max $3,1
   add $12,$2
   sub $0,1
 lpe

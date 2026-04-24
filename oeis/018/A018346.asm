@@ -1,18 +1,18 @@
 ; A018346: Divisors of 232.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,8,29,58,116,232
-; Formula: a(n) = 2*a(n-1), a(7) = 116, a(6) = 58, a(5) = 29, a(4) = 8, a(3) = 4, a(2) = 2, a(1) = 1, a(0) = 0
+; Formula: a(n) = truncate(b(n)/2), b(n) = 2*b(n-1)+binomial(b(n-7),b(n-5)), b(9) = 928, b(8) = 464, b(7) = 232, b(6) = 116, b(5) = 58, b(4) = 16, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1
 
 #offset 1
 
-mov $6,1
+mov $1,1
+mov $3,26
 lpb $0
-  mul $1,-1
-  rol $1,6
   sub $0,1
-  mov $4,13
-  add $6,$5
-  add $6,$5
-  add $6,$1
+  ror $1,7
+  add $1,$2
+  add $1,$2
+  bin $4,$2
 lpe
-mov $0,$5
+mov $0,$1
+div $0,2

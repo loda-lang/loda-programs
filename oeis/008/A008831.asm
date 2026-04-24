@@ -1,12 +1,11 @@
 ; A008831: Discrete logarithm of n to the base 2 modulo 13.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 0,1,4,2,9,5,11,3,8,10,7,6
 
 #offset 1
 
 mov $1,$0
 add $1,6
-pow $1,3
 lpb $1
   mov $3,1
   mov $2,2

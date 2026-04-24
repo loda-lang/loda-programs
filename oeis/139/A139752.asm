@@ -1,15 +1,13 @@
 ; A139752: Primes arising in A139750.
-; Submitted by Kaischa
+; Submitted by Technik007[CZ]
 ; 2,3,5,7,2,5,17,37,2,3,11,83,3,7,19,67,5,13,29,53,5,41
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,1
-pow $2,2
+mov $2,121
 lpb $2
-  sub $2,1
+  sub $2,2
   mov $3,$1
   add $3,1
   seq $3,389091 ; Sum over i of the i-th digit of n raised to the i-th power.

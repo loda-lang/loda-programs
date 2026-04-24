@@ -1,19 +1,18 @@
 ; A040258: Continued fraction for sqrt(275).
-; Submitted by Fardringle
+; Submitted by Science United
 ; 16,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1
-; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+12*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)/3)+1
+; Formula: a(n) = b(n^2), b(n) = b(n-6), b(9) = 2, b(8) = 0, b(7) = 1, b(6) = 32, b(5) = 0, b(4) = 1, b(3) = 2, b(2) = 0, b(1) = 1, b(0) = 16
 
-mov $1,2
-trn $1,$0
-add $1,6
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-mod $0,10
+mov $1,16
 mov $2,1
-add $2,$0
-div $0,3
-mul $0,12
-add $0,$2
+mov $4,2
+mov $5,1
+mov $7,32
+pow $0,2
+lpb $0
+  mov $1,0
+  rol $1,7
+  add $7,$1
+  sub $0,1
+lpe
+mov $0,$1

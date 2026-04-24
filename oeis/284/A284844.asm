@@ -1,30 +1,20 @@
 ; A284844: Number of permutations on [n+3] with no circular 3-successions.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 16,70,384,2534,19424,169254,1650160,17784646,209855856,2689946246,37210700576,552433526310,8759992172224,147751562532454,2641055171379984,49869279287055494,991843699479853520,20724299315437752006,453861919477920665536,10395594941305558134886
 
 #offset 1
 
-mov $1,1
-fil $1,3
+mov $1,2
+add $0,1
 lpb $0
   sub $0,1
-  mul $2,-1
-  mul $1,$3
   add $1,$2
-  add $3,1
+  add $1,$0
+  mov $3,$1
+  add $1,$2
+  mul $1,$0
+  mov $2,1
+  add $2,$3
 lpe
-mul $2,-1
-mov $0,$1
-mul $1,$3
-add $1,$2
-mov $5,$3
-add $5,1
-mov $4,$0
-mul $4,$5
-add $5,1
-mul $4,$5
-mov $3,$1
-mul $3,$5
-mul $3,$5
-add $3,$4
-mov $0,$3
+mov $0,$2
+mul $0,2

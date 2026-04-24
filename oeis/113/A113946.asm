@@ -1,12 +1,11 @@
 ; A113946: Series expansion of Farey rational polynomial based on A112627.
-; Submitted by arkiss
+; Submitted by [SG]KidDoesCrunch
 ; 1,5,23,81,367,1297,5871,20753,93935,332049,1502959,5312785,24047343,85004561,384757487,1360072977,6156119791,21761167633,98497916655,348178682129,1575966666479,5570858914065,25215466663663,89133742625041
-; Formula: a(n) = -truncate((gcd(n+1,2)*(2^(n+1))^2)/24)+floor((2*(2^(n+1))^2)/5)
+; Formula: a(n) = -floor((gcd(n+1,2)*4^(n+1))/24)+floor((2*4^(n+1))/5)
 
 add $0,1
-mov $1,2
+mov $1,4
 pow $1,$0
-pow $1,2
 gcd $0,2
 mul $0,$1
 div $0,24

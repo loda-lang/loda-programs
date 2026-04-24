@@ -1,7 +1,7 @@
 ; A165556: A symmetric version of the Josephus problem read modulo 2.
 ; Submitted by loader3229
 ; 1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
-; Formula: a(n) = -2*truncate(gcd(n,logint(2*n,2)-1)/2)+gcd(n,logint(2*n,2)-1)
+; Formula: a(n) = gcd(n,logint(2*n,2)-1)%2
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A167051: Start at 1, then add the first term (which is one here) plus 1 for the second term; then add the second term plus 2 for the third term; then add the third term to the sum of the first and second term; this gives the fourth term. Restart the sequence by adding 1 to the fourth term, etc. (From a sixth grade math extra credit assignment).
 ; Submitted by loader3229
 ; 1,2,4,7,8,10,25,26,28,79,80,82,241,242,244,727,728,730,2185,2186,2188,6559,6560,6562,19681,19682,19684,59047,59048,59050,177145,177146,177148,531439,531440,531442,1594321,1594322,1594324,4782967,4782968,4782970,14348905,14348906,14348908,43046719,43046720,43046722,129140161,129140162,129140164,387420487,387420488,387420490,1162261465,1162261466,1162261468,3486784399,3486784400,3486784402,10460353201,10460353202,10460353204,31381059607,31381059608,31381059610,94143178825,94143178826,94143178828
-; Formula: a(n) = 2*b(n-1)+2*truncate(min(n-1,(n-1)%3)/2)+c(n-1)+min(min(n-1,(n-1)%3),1), b(n) = 3*b(n-3)+2*c(n-3)+1, b(5) = 3, b(4) = 3, b(3) = 3, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = truncate((2*b(n-3)+c(n-3))^d(n-3)), c(5) = 1, c(4) = 1, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 1, d(n) = d(n-3)
+; Formula: a(n) = 2*b(n-1)+2*truncate(min(n-1,(n-1)%3)/2)+c(n-1)+min(min(n-1,(n-1)%3),1), b(n) = 3*b(n-3)+2*c(n-3)+1, b(8) = 12, b(7) = 12, b(6) = 12, b(5) = 3, b(4) = 3, b(3) = 3, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = if(((2*b(n-3)+c(n-3))^2)==1,(2*b(n-3)+c(n-3))^d(n-3),if(d(n-3)<=(-1),0,(2*b(n-3)+c(n-3))^d(n-3))), c(8) = 1, c(7) = 1, c(6) = 1, c(5) = 1, c(4) = 1, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 1, d(n) = d(n-3), d(8) = 0, d(7) = 0, d(6) = 0, d(5) = 0, d(4) = 0, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
 
 #offset 1
 

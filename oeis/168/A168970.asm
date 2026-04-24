@@ -6,15 +6,14 @@ mov $1,1
 mov $3,1
 lpb $0
   sub $0,1
-  ror $3,24
+  ror $3,23
   mov $3,$1
   mul $3,3
-  sub $3,$26
-  mul $12,5
-  sub $1,$26
+  sub $3,$25
+  add $4,1
   add $1,$3
 lpe
 mov $0,$1
 add $0,$1
-add $0,$26
+add $0,$25
 sub $0,$3

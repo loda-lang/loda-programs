@@ -1,6 +1,7 @@
 ; A351442: a(n) = A003958(sigma(n)), where A003958 is multiplicative with a(p^e) = (p-1)^e and sigma is the sum of divisors function.
 ; Submitted by Ol_Sin
 ; 1,2,1,6,2,2,1,8,12,4,2,6,6,2,2,30,4,24,4,12,1,4,2,8,30,12,4,6,8,4,1,24,2,8,2,72,18,8,6,16,12,2,10,12,24,4,2,30,36,60,4,36,8,8,4,8,4,16,8,12,30,2,12,126,12,4,16,24,2,4,4,96,36,36,30,24,2,12,4,60
+; Formula: a(n) = A003958(if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))/(2^valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2))))
 
 #offset 1
 

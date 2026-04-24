@@ -1,17 +1,15 @@
 ; A339377: Number of triples (x, y, z) of natural numbers satisfying x+y = n and 2*x*y = z^2.
-; Submitted by Jamie Morken(w4)
+; Submitted by Science United
 ; 1,2,2,4,2,2,4,2,2,6,2,4,4,2,2,4,2,4,6,4,2,4,4,2,4,2,2,8,2,2,4,2,2,10,4,2,6,2,4,4,2,4,4,4,4,6,2,2,4,2,2,10,2,2,8,4,2,10,2,4,4,2,2,6,2,2,10,4,4,4,2,2,6,4,2,4,4,4,4,2
 
 pow $0,2
 mov $1,$0
+mov $5,3
 trn $0,1
 mov $2,$0
 add $0,1
 dir $0,2
 div $0,2
-mov $3,0
-mov $5,3
-mov $6,0
 add $0,3
 lpb $0
   sub $0,$5

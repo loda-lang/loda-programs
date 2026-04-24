@@ -1,5 +1,5 @@
 ; A049319: Number of 3-dimensional integer direction vectors (a,b,c) towards grid points at squared integer distance 2n-1.
-; Submitted by DukeBox
+; Submitted by Dylan Delgado
 ; 6,24,24,48,72,72,72,96,96,120,192,144,120,216,168,192,288,192,216,288,240,264,288,288,336,384,312,288,480,360,360,576,288,408,576,432,432,480,576,480,648,504,384,672,528,576,768,480,576,864,600,624
 
 #offset 1
@@ -7,7 +7,7 @@
 sub $0,1
 mul $0,2
 lpb $0
-  div $0,1048
+  div $0,524
   sub $0,1
 lpe
 add $0,1

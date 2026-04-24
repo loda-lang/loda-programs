@@ -9,11 +9,9 @@ lpb $3
   max $3,1
   max $6,$2
   div $6,$3
+  add $2,$1
   sub $2,$6
   div $6,$3
-  div $1,2
-  mul $1,2
-  add $2,$1
   sub $3,1
   mov $4,5
   add $4,$1

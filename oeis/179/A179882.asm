@@ -15,8 +15,7 @@ lpb $3
   add $7,1
   seq $7,73184 ; Number of cubefree divisors of n.
   mov $1,$7
-  trn $7,56
-  add $7,56
+  max $7,56
   mul $7,$1
   sub $7,32
   mod $7,3
@@ -28,8 +27,7 @@ lpb $3
   add $4,2
   seq $4,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   sub $4,$8
-  add $4,2
-  equ $4,0
+  equ $4,-2
   sub $0,$4
   add $2,3
   mov $5,$0

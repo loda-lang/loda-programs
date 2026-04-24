@@ -4,7 +4,7 @@
 
 #offset 1
 
-mov $3,2
+mov $3,1
 mov $5,$0
 equ $5,1
 mov $1,$0
@@ -23,4 +23,3 @@ lpb $1
   mul $3,10
 lpe
 mov $0,$2
-div $0,2

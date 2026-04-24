@@ -1,19 +1,17 @@
 ; A241519: Denominators of b(n) = b(n-1)/2 + 1/(2*n), b(0)=0.
-; Submitted by Science United
+; Submitted by Sabroe_SMC
 ; 1,2,2,12,3,15,60,840,105,630,630,13860,6930,180180,360360,144144,9009,306306,306306,11639628,14549535,14549535,58198140,2677114440,334639305,3346393050
-; Formula: a(n) = truncate((b(n)+d(n))/gcd(c(n),b(n))), b(n) = n*b(n-1), b(3) = 12, b(2) = 4, b(1) = 2, b(0) = 2, c(n) = truncate((n*c(n-1)+b(n-1))/2), c(3) = 5, c(2) = 2, c(1) = 1, c(0) = 0, d(n) = d(n-1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate(b(n)/gcd(c(n),b(n))), b(n) = 2*n*b(n-1), b(2) = 8, b(1) = 2, b(0) = 1, c(n) = n*c(n-1)+b(n-1), c(2) = 4, c(1) = 1, c(0) = 0
 
-mov $2,2
-mov $1,$0
-lpb $1
-  sub $1,1
-  add $3,1
-  mul $4,$3
-  add $4,$2
-  div $4,2
-  mul $2,$3
+mov $1,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+  mul $1,2
 lpe
-gcd $4,$2
-add $5,$2
-div $5,$4
-mov $0,$5
+gcd $3,$1
+div $1,$3
+mov $0,$1

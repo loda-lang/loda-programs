@@ -1,32 +1,30 @@
 ; A047931: Number of new penny-penny contacts when putting pennies on a table following a spiral pattern.
-; Submitted by Science United
+; Submitted by rilian
 ; 0,1,2,2,2,2,3,2,2,3,2,3,2,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,3,2,3,3,3,2,3,3,3,2,3,3,3,3,2,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,3
 
 #offset 1
 
 sub $0,1
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
+mov $3,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$3
+  add $0,$4
+  max $0,1
   sub $0,1
-  add $3,1
-  mov $4,$0
-  max $4,0
-  mov $6,$4
-  mul $6,3
-  add $6,1
-  mov $7,$6
-  mul $6,4
-  nrt $6,2
-  add $6,$7
-  mul $4,6
-  sub $4,$6
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
+  mov $1,$0
+  mul $1,12
+  add $1,5
+  nrt $1,2
+  mul $0,3
+  add $0,2
+  sub $0,$1
+  mov $2,$4
+  mul $2,$0
+  add $5,$2
 lpe
 min $3,1
-mul $3,$4
-sub $1,$3
-mov $0,$1
+mul $3,$0
+mov $0,$5
+sub $0,$3

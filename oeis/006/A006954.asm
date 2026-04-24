@@ -4,14 +4,9 @@
 
 mul $0,2
 equ $1,$0
-trn $0,3
 mov $2,$0
-add $2,2
-mov $5,$2
-gcd $5,2
-mov $8,2
-add $0,1
-sub $2,1
+sub $2,2
+mov $5,2
 mov $7,$2
 lpb $7
   sub $7,2
@@ -26,10 +21,9 @@ lpb $7
   seq $6,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   mul $6,$4
   add $6,1
-  mul $6,$8
-  div $7,$5
+  mul $6,$5
   mul $3,$6
-  max $8,$3
+  max $5,$3
 lpe
-mov $0,$8
+mov $0,$5
 sub $0,$1

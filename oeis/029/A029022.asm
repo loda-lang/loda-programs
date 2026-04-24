@@ -5,8 +5,7 @@
 add $0,3
 lpb $0
   sub $0,3
-  sub $3,1
-  trn $3,2
+  trn $3,3
   sub $0,$3
   mov $2,$0
   max $2,0

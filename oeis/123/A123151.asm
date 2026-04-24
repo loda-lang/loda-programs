@@ -10,10 +10,9 @@ lpb $0
   bin $2,2
   add $2,1
   mul $3,$2
+  trn $0,3
   max $1,$3
   mul $1,2
-  sub $0,1
-  trn $0,2
 lpe
 mov $0,$1
 div $0,4

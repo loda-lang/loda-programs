@@ -1,18 +1,19 @@
 ; A151679: a(n) = sum_{k >= 0} binomial(2*wt(n+k),k), where wt() = A000120().
-; Submitted by pututu
+; Submitted by Science United
 ; 2,3,5,4,5,6,11,5,5,6,11,7,11,14,21,6,5,6,11,7,11,14,21,8,11,14,21,15,23,33,36,7,5,6,11,7,11,14,21,8,11,14,21,15,23,33,36,9,11,14,21,15,23,33,36,16,23,33,38,34,49,73,57,8,5,6,11,7,11,14,21,8,11,14,21,15,23,33,36,9
 
-mov $3,$0
-mov $2,$0
-add $2,1
-lpb $2
-  mov $0,$3
-  add $0,1
-  seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
-  bin $0,$2
-  add $1,$0
+mul $0,2
+add $0,1
+lpb $0
+  add $2,$0
+  add $2,$0
   sub $2,1
-  add $3,1
+  dgs $2,2
+  bin $2,$0
+  add $3,$2
+  sub $0,1
+  add $1,1
+  mov $2,$1
 lpe
-mov $0,$1
+mov $0,$3
 add $0,1

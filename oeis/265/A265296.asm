@@ -7,14 +7,14 @@
 mov $1,10
 pow $1,$0
 mov $4,$1
+mul $4,5
 pow $1,2
 mov $2,1
 mov $0,$1
-mul $0,3
 lpb $0
   mov $0,0
   add $2,$3
-  add $2,$3
+  add $3,$2
   add $3,$2
   mov $5,$1
   div $5,$3
@@ -24,5 +24,4 @@ lpb $0
 lpe
 mov $0,$6
 div $0,$4
-div $0,10
 mod $0,10

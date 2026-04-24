@@ -10,7 +10,6 @@ lpb $0
   mov $5,$1
   mul $5,2
   add $5,$2
-  min $7,11
   add $8,4
   mov $4,$1
   mov $6,3

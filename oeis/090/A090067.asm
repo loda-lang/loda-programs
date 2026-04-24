@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,65001 ; a(n) = (presumed) number of palindromes in the 'Reverse and Add!' trajectory of n, or -1 if this number is not finite.
-  sub $3,4
-  equ $3,2
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

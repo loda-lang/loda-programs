@@ -20,8 +20,6 @@ lpb $4
   bin $6,$0
   mul $6,$5
   mul $1,$6
-  max $3,34
   add $3,$1
 lpe
 mov $0,$3
-sub $0,34

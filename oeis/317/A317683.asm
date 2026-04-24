@@ -13,8 +13,7 @@ lpb $3
   add $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $2,$1
-  sub $2,1
-  trn $2,1
+  trn $2,2
   seq $2,25441 ; Number of partitions of n into 2 distinct nonzero squares.
   add $4,$2
 lpe

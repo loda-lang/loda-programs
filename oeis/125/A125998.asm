@@ -30,9 +30,8 @@ lpb $4
 lpe
 mov $0,$3
 mul $0,16
-sub $0,15
 mov $1,1
 add $1,$0
 add $1,$2
 mov $0,$1
-add $0,6
+sub $0,9

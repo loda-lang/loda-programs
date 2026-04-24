@@ -1,13 +1,12 @@
 ; A392485: Number of n X n Boolean matrices that are row-consistent but not column-consistent.
-; Submitted by Science United
+; Submitted by Irish Republican
 ; 0,2,78,9122,3631230,5156504762,27001050877878,534501094899058562,40722145926117903423870,12087546475818254213970440762,14092107560516965761680288437626678,64865786413692603712581708653173229695202,1182842929982145786766341064087435441895201131230
 
+#offset 1
+
 mov $5,$0
-add $5,1
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
+lpb $0
+  sub $0,1
   mov $3,2
   pow $3,$2
   sub $3,1
@@ -15,8 +14,8 @@ lpb $1
   mov $4,$5
   bin $4,$2
   mul $4,$3
+  mul $1,-1
+  add $1,$4
   add $2,1
-  mul $6,-1
-  add $6,$4
 lpe
-mov $0,$6
+mov $0,$1

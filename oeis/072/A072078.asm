@@ -1,17 +1,14 @@
 ; A072078: Number of 3-smooth divisors of n.
-; Submitted by Science United
+; Submitted by owensse
 ; 1,2,2,3,1,4,1,4,3,2,1,6,1,2,2,5,1,6,1,3,2,2,1,8,1,2,4,3,1,4,1,6,2,2,1,9,1,2,2,4,1,4,1,3,3,2,1,10,1,2,2,3,1,8,1,4,2,2,1,6,1,2,3,7,1,4,1,3,2,2,1,12,1,2,2,3,1,4,1,5
 
 #offset 1
 
+mul $0,2
 mov $1,$0
-sub $1,1
-mov $3,1
-mov $2,$0
-lpb $2
-  dif $2,3
-  add $3,1
+lpb $0
+  dif $0,3
+  mul $1,$0
 lpe
-bxo $0,$1
-dgs $0,2
-mul $0,$3
+lex $1,2
+mov $0,$1

@@ -1,11 +1,11 @@
 ; A367695: Numbers k such that k and k+1 are both exponentially odd numbers (A268335).
-; Submitted by Jerzy_Przytocki
+; Submitted by Shanman Racing
 ; 1,2,5,6,7,10,13,14,21,22,23,26,29,30,31,32,33,34,37,38,39,40,41,42,46,53,54,55,56,57,58,61,65,66,69,70,73,77,78,82,85,86,87,88,93,94,95,96,101,102,103,104,105,106,109,110,113,114,118,119,122,127,128,129,130,133,134,135,136,137,138,141,142,145,151,154,157,158,159,160
 
 #offset 1
 
-sub $0,1
 mov $2,$0
+sub $0,1
 pow $2,2
 lpb $2
   mov $5,0
@@ -15,7 +15,7 @@ lpb $2
     mov $3,$1
     add $3,$7
     add $3,1
-    seq $3,367990 ; Sum of the squarefree divisors of the largest unitary divisor of n that is a square.
+    seq $3,360165 ; a(n) is the sum of the square roots of the unitary divisors of n that are odd squares minus the sum of the square roots of the unitary divisors of n that are even squares.
     mov $6,$7
     mul $6,$3
     add $5,$6

@@ -1,21 +1,25 @@
 ; A022785: Place where n-th 1 occurs in A023123.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,4,10,19,30,44,61,81,103,128,156,186,219,255,294,335,379,426,475,527,582,640,700,763,829,897,968,1042,1119,1198,1280,1365,1452,1542,1635,1731,1829,1930,2034,2141,2250,2362,2477,2594,2714,2837,2963
 
 #offset 1
 
 sub $0,1
-mov $20,$0
-mov $22,$0
-add $22,1
-lpb $22
-  clr $0,20
-  sub $22,1
-  mov $0,$20
-  sub $0,$22
-  seq $0,22843 ; Beatty sequence for e: a(n) = floor(n*e).
-  add $0,1
-  add $6,$0
-  add $21,$6
+mov $5,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$5
+  sub $0,$4
+  mov $2,8
+  lpb $2
+    max $2,1
+    div $1,$2
+    add $1,$0
+    sub $2,1
+  lpe
+  add $1,1
+  add $3,$1
 lpe
-mov $0,$21
+mov $0,$3

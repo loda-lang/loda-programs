@@ -1,4 +1,4 @@
-; A174966: A symmetrical triangle sequence: q=1;t(n,m,q)=If[q == 1, Binomial[n, m] + Eulerian[n + 1, m] - Binomial[n, m]*Eulerian[n + 1, m], (q - 1) + Binomial[n, m]^q + Eulerian[n + 1, m]^q - q*Binomial[n, m]*Eulerian[n + 1, m]].
+; A174966: Triangle read by rows: T(n,k) = binomial(n,k) + Eulerian1(n+1,k) - binomial(n,k) * Eulerian1(n+1,k).
 ; Submitted by Goldislops
 ; 1,1,1,1,-2,1,1,-19,-19,1,1,-74,-324,-74,1,1,-223,-2708,-2708,-223,1,1,-594,-16659,-45884,-16659,-594,1,1,-1475,-85839,-531011,-531011,-85839,-1475,1,1,-3506,-394388,-4852814,-10777040,-4852814,-394388,-3506,1,1
 

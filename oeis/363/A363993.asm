@@ -1,18 +1,18 @@
 ; A363993: a(n) = greatest integer k such that 1/n + 1/(n + 1) +...+ 1/k < 2.
-; Submitted by win prion
+; Submitted by [SG]KidDoesCrunch
 ; 3,10,18,25,32,40,47,54,62,69,77,84,91,99,106,114,121,128,136,143,150,158,165,173,180,187,195,202,210,217,224,232,239,247,254,261,269,276,283,291,298,306,313,320,328,335,343,350,357,365,372,380,387,394,402
-; Formula: a(n) = truncate((28*n+truncate((14*n-88)/9)+85)/4)-23
+; Formula: a(n) = truncate((28*n+truncate((14*n-88)/9)+393)/4)-100
 
 #offset 1
 
-add $0,3
 mov $1,$0
+add $1,14
 mul $1,28
 mul $0,14
-sub $0,130
+sub $0,88
 div $0,9
 add $0,1
 add $1,$0
 mov $0,$1
 div $0,4
-sub $0,23
+sub $0,100

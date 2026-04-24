@@ -1,7 +1,23 @@
 ; A228192: a(n) = A001850(n^2), where A001850 forms the central Delannoy numbers.
-; Submitted by Mike C
+; Submitted by Science United
 ; 1,3,321,1462563,252055236609,1569245074591690083,345299757825442889707393857,2653337188651000290233505189314055363,706829476163540077094231781323762631545566527489,6496844758902641761809431955916116052361210081093847336070467
-; Formula: a(n) = A001850(n^2)
+; Formula: a(n) = truncate((b(n^2)+c(n^2))/2), b(n) = 4*c(n-1)+3*b(n-1)+truncate((2*c(n-1)+b(n-1))/(-n)), b(2) = 16, b(1) = 4, b(0) = 3, c(n) = 3*c(n-1)+2*b(n-1)+truncate((2*c(n-1)+b(n-1))/(-n)), c(2) = 10, c(1) = 2, c(0) = -1
 
+mov $2,3
+mov $3,-1
 pow $0,2
-seq $0,1850 ; Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
+lpb $0
+  sub $0,1
+  add $2,$3
+  add $3,$2
+  sub $4,1
+  mov $1,$3
+  div $1,$4
+  add $3,$2
+  add $2,$3
+  add $2,$1
+  add $3,$1
+lpe
+add $2,$3
+mov $0,$2
+div $0,2

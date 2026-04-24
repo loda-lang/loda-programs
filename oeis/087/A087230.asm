@@ -1,12 +1,9 @@
 ; A087230: a(n) is the 2-adic valuation of 6*n + 4.
-; Submitted by Simon Strandgaard
+; Submitted by MarcoM.Conte
 ; 2,1,4,1,2,1,3,1,2,1,6,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,8,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,6,1,2,1,3,1
+; Formula: a(n) = valuation(9*n+6,2)+1
 
-mul $0,3
-add $0,2
-lpb $0
-  dif $0,2
-  add $1,1
-lpe
-add $1,1
-mov $0,$1
+mul $0,9
+add $0,6
+lex $0,2
+add $0,1

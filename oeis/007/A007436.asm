@@ -28,12 +28,7 @@ lpb $4
   sub $9,$1
   mov $11,$8
   div $11,$9
-  mov $10,$8
-  mod $10,$9
-  equ $10,0
   seq $11,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  mul $11,$10
-  mov $1,$11
   mov $6,$2
   mul $6,8
   nrt $6,2
@@ -47,7 +42,10 @@ lpb $4
   gcd $6,$2
   div $6,$2
   mul $2,$6
-  seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  mov $10,$2
+  seq $10,22365 ; Fibonacci sequence beginning 0, 31.
+  mov $2,$10
+  div $2,31
   mul $2,$11
   add $3,$2
 lpe

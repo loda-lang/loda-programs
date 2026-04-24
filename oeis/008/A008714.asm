@@ -1,11 +1,10 @@
 ; A008714: 17 in base 17-n.
-; Submitted by BrandyNOW
+; Submitted by crashtech
 ; 10,11,12,13,14,15,16,17,18,21,23,25,32,101,122,10001,11111111111111111
 
 sub $0,7
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

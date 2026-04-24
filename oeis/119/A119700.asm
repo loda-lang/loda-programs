@@ -1,10 +1,23 @@
 ; A119700: a(n) = n*binomial(2*n, n)*Fibonacci(n)^2.
-; Submitted by pututu
+; Submitted by GPV67
 ; 0,2,12,240,2520,31500,354816,4060056,45405360,505842480,5588869000,61464995592,672880545792,7340296254200,79824251379600,865788437880000,9368862119134560,101178055201047660,1090713358902182400,11739380070425284200,126171548138325690000
-; Formula: a(n) = truncate((A119701(n)*A022365(n))/31)
+; Formula: a(n) = n*binomial(2*n,n)*truncate((min(n,n%2)*c(n)+b(n))/3)^2, b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
+mov $2,$0
+mul $2,2
+mov $5,3
+mov $3,$0
+lpb $3
+  sub $3,2
+  add $5,$4
+  add $4,$5
+lpe
+mul $3,$5
+add $3,$4
+div $3,3
+bin $2,$0
+mul $2,$3
+mul $2,$3
 mov $1,$0
-seq $1,22365 ; Fibonacci sequence beginning 0, 31.
-seq $0,119701 ; a(n) = n*binomial(2*n, n)*Fibonacci(n).
-mul $0,$1
-div $0,31
+mul $1,$2
+mov $0,$1

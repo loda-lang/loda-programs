@@ -10,9 +10,13 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mov $3,$1
   add $3,1
-  seq $3,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $3,$5
   trn $3,1
   add $3,$4
   equ $3,1

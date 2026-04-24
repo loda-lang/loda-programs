@@ -1,20 +1,31 @@
 ; A320563: Expansion of Product_{k>=1} 1/(1 - x^k/(1 - x)^k)^k.
-; Submitted by damotbe
+; Submitted by sjmielh
 ; 1,1,4,13,41,125,374,1103,3213,9259,26430,74806,210095,585890,1623240,4470232,12241799,33349751,90410255,243977941,655553258,1754265279,4676358086,12420299846,32873598566,86721264126,228051843891,597905347237,1563071037798,4074973824099
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,294500 ; Binomial transform of the number of planar partitions (A000219).
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+mov $2,1
+mov $6,1
+mov $10,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    mov $7,$4
+    add $7,1
+    seq $7,356038 ; a(n) = Sum_{k=1..n} binomial(n,k) * sigma_2(k).
+    mov $9,10
+    add $9,$5
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,$2
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
+mov $0,$6

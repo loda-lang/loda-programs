@@ -1,39 +1,35 @@
 ; A269701: Cyclic Fibonacci sequence, restricted to maximum=6.
-; Submitted by Minoer
+; Submitted by Sabroe_SMC
 ; 0,1,1,2,3,5,2,1,3,4,1,5,6,5,5,4,3,1,4,5,3,2,5,1,6,1,1,2,3,5,2,1,3,4,1,5,6,5,5,4,3,1,4,5,3,2,5,1,6,1,1,2,3,5,2,1,3,4,1,5,6,5,5,4,3,1,4,5,3,2,5,1,6,1,1,2,3,5,2,1
 
 mov $1,$0
-mov $8,1
+mov $4,1
 lpb $0
-  mul $5,$8
-  mul $5,2
-  mov $4,$9
-  pow $4,2
-  sub $5,$4
-  mov $2,$8
-  pow $2,2
-  add $4,$2
-  mov $2,$4
-  sub $2,$5
-  mov $7,$0
-  max $7,1
-  log $7,2
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  sub $7,$8
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
   mov $6,2
-  pow $6,$7
+  pow $6,$5
   ban $6,$1
   neq $6,0
+  mul $9,$6
   div $0,2
+  mov $2,$7
   mul $2,$6
-  mov $10,$5
-  mul $10,$6
-  add $4,$10
-  add $5,$2
-  mov $8,$4
-  mov $9,$5
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mov $4,$8
 lpe
-mov $0,$9
-sub $0,1
-mov $3,$0
-mod $3,6
 mov $0,$3
-add $0,1
+dgr $0,7

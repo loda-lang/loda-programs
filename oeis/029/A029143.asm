@@ -1,20 +1,19 @@
 ; A029143: Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)*(1-x^6)). Molien series for u.g.g.r. #31 of order 46080. Poincaré series [or Poincare series] for ring of even weight Siegel modular forms of genus 2.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,0,1,1,1,2,3,2,4,4,5,6,8,7,10,11,12,14,17,16,21,22,24,27,31,31,37,39,42,46,52,52,60,63,67,73,80,81,91,95,101,108,117,119,131,137,144,153,164,167,182,189,198,209,222,227,244,253,264,277,293,299,319,330,343,359,377,385,408,421,437,455,476,486,512,528,546,567,591,603
-; Formula: a(n) = b(n+1), b(n) = b(n-5)+binomial(-floor((n+1)/3)+floor((n+1)/2)+1,2), b(4) = 1, b(3) = 1, b(2) = 0, b(1) = 1, b(0) = 0
+; Formula: a(n) = truncate(b(n+2)/2), b(n) = (-floor(n/3)+floor(n/2))^2-floor(n/3)+b(n-5)+floor(n/2), b(4) = 2, b(3) = 0, b(2) = 2, b(1) = 0, b(0) = 0
 
-add $0,1
+add $0,2
 lpb $0
   mov $2,$0
-  add $2,1
-  mov $3,$2
-  div $2,3
-  div $3,2
-  sub $3,$2
-  mov $2,$3
-  add $2,1
-  bin $2,2
+  mov $3,$0
+  div $3,3
   trn $0,5
+  div $2,2
+  sub $2,$3
+  add $1,$2
+  pow $2,2
   add $1,$2
 lpe
 mov $0,$1
+div $0,2

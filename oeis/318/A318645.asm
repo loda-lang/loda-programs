@@ -1,29 +1,21 @@
 ; A318645: Decimal expansion of the asymptotic density of e-perfect numbers (A054979).
-; Submitted by DukeBox
+; Submitted by Science United
 ; 8,6,9,4,1,9,3,9,9
-; Formula: a(n) = (145*(((n+4)%8)==5)+42*(((n+4)%8)==6)+27*(4==(n+5))+4*(((n+4)%8)==0)-(3==(n+5))+9)%10
+; Formula: a(n) = -10*truncate((b(n+2)+8)/10)+b(n+2)+8, b(n) = max(b(n-9),1), b(9) = 1, b(8) = 1, b(7) = 1, b(6) = 165, b(5) = 1, b(4) = 23, b(3) = 16, b(2) = 11, b(1) = 8, b(0) = 0
 
 #offset -2
 
-add $0,5
-mov $3,3
-equ $3,$0
-mov $4,4
-equ $4,$0
-mul $4,27
-sub $0,1
-mod $0,8
-mov $1,$0
-mov $2,$0
-equ $0,0
-mul $0,4
-equ $1,5
-mul $1,145
-equ $2,6
-mul $2,42
-add $0,$1
-add $0,$2
-sub $0,$3
-add $0,$4
-add $0,9
+mov $4,8
+mov $6,16
+mov $9,165
+mov $5,11
+mov $7,23
+add $0,2
+lpb $0
+  rol $3,9
+  sub $0,1
+  max $5,1
+lpe
+mov $0,$3
+add $0,8
 mod $0,10
