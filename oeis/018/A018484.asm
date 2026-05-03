@@ -1,13 +1,21 @@
 ; A018484: Divisors of 492.
-; Submitted by vanos0512
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,4,6,12,41,82,123,164,246,492
-; Formula: a(n) = 12*floor(A018405(n)/28)+A018405(n)
 
 #offset 1
 
-seq $0,18405 ; Divisors of 348.
-mov $1,$0
-div $1,28
-mul $1,12
-add $1,$0
-mov $0,$1
+lpb $0
+  sub $0,1
+  mov $3,$1
+  lpb $3
+    add $2,1
+    mov $4,492
+    gcd $4,$2
+    div $4,$2
+    equ $4,0
+    sub $3,$4
+  lpe
+  mov $1,494
+  add $2,1
+lpe
+mov $0,$2

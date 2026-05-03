@@ -8,8 +8,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
-  seq $0,292460 ; Expansion of (1 - x - x^2 - sqrt((1 - x - x^2)^2 - 4*x^3))/(2*x^3) in powers of x.
+  add $0,2
+  seq $0,4148 ; Generalized Catalan numbers: a(n+1) = a(n) + Sum_{k=1..n-1} a(k)*a(n-1-k).
   mov $2,$3
   mul $2,$0
   add $1,$2

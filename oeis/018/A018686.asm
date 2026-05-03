@@ -1,19 +1,19 @@
 ; A018686: Divisors of 856.
-; Submitted by BrandyNOW
+; Submitted by LCB001
 ; 1,2,4,8,107,214,428,856
-; Formula: a(n) = b(n-1)+1, b(n) = 2*c(n-1)-91*(c(n-2)==3)+1, b(4) = 106, b(3) = 7, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = 91*(c(n-1)==3)+2*c(n-1)-91*(c(n-2)==3)+1, c(4) = 106, c(3) = 98, c(2) = 3, c(1) = 1, c(0) = 0
+; Formula: a(n) = truncate(b(n)/2), b(n) = 7*binomial(b(n-7),b(n-5))+2*b(n-1), b(9) = 3424, b(8) = 1712, b(7) = 856, b(6) = 428, b(5) = 214, b(4) = 16, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1
 
 #offset 1
 
-sub $0,1
+mov $1,1
+mov $3,26
 lpb $0
   sub $0,1
-  add $3,1
-  mov $1,$3
-  equ $2,3
-  mul $2,91
-  add $2,$3
-  add $3,$2
+  ror $1,7
+  add $1,$2
+  add $1,$2
+  bin $4,$2
+  mul $5,7
 lpe
 mov $0,$1
-add $0,1
+div $0,2

@@ -4,10 +4,32 @@
 
 #offset 1
 
-mov $3,$0
-sub $0,8
-gcd $1,$3
-seq $1,25649 ; Exponent of 4 (value of i) in n-th number of form 4^i*10^j.
+gcd $1,$0
+sub $1,1
+sub $0,15
+mov $5,1
+mov $6,$1
+mul $6,11
+lpb $6
+  sub $6,1
+  mov $4,$5
+  seq $4,25667 ; Exponent of 7 (value of j) in n-th number of form 5^i*7^j.
+  mov $3,7
+  pow $3,$4
+  mov $7,$5
+  seq $7,3595 ; Numbers of the form 5^i*7^j with i, j >= 0.
+  div $7,$3
+  log $7,5
+  mul $7,338
+  gcd $7,4
+  equ $7,2
+  sub $1,$7
+  add $5,1
+  mov $8,$1
+  max $8,0
+  equ $8,$1
+  mul $6,$8
+lpe
 mov $2,$0
 mul $0,2
 add $2,$0
@@ -16,4 +38,4 @@ pow $0,$0
 lex $0,2
 add $0,1
 mod $0,10
-mul $0,$1
+mul $0,$4

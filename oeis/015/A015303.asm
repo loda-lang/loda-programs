@@ -6,7 +6,6 @@
 
 add $0,1
 lpb $0
-  max $0,2
   sub $0,5
   div $1,-2
   add $1,1
@@ -17,5 +16,5 @@ lpb $0
   add $0,4
   mul $1,26
 lpe
-mov $0,$3
+mov $0,$2
 div $0,3843360

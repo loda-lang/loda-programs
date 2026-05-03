@@ -1,35 +1,28 @@
 ; A043474: Numbers having two 5's in base 9.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 50,131,212,293,374,410,419,428,437,446,450,451,452,453,454,456,457,458,464,473,482,536,617,698,779,860,941,1022,1103,1139,1148,1157,1166,1175,1179,1180,1181,1182,1183,1185,1186,1187,1193
 
 #offset 1
 
 mov $2,$0
-sub $0,1
-add $2,2
-pow $2,4
+add $2,6
+pow $2,3
 lpb $2
-  mov $5,5
+  mov $4,6
   mov $3,$1
-  add $3,1
-  seq $3,52421 ; Numbers without 8 as a digit.
   lpb $3
-    mov $6,$3
-    add $6,7
-    mod $6,10
-    equ $6,2
-    div $3,10
-    add $5,$6
+    mov $5,$3
+    sub $5,1
+    mod $5,9
+    equ $5,4
+    div $3,9
+    add $4,$5
   lpe
-  sub $5,6
-  mov $3,$5
-  equ $3,1
+  sub $4,1
+  mov $3,$4
+  equ $3,7
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1

@@ -12,8 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,105673 ; One-half of theta series of square lattice (or half the number of ways of writing n > 0 as a sum of 2 squares), without the constant term, which is 1/2.
-  sub $3,2
-  equ $3,2
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,27 +1,17 @@
 ; A130917: a(n) is the sum of the digital roots of all of the previous terms.
-; Submitted by loader3229
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,2,4,8,16,23,28,29,31,35,43,50,55,56,58,62,70,77,82,83,85,89,97,104,109,110,112,116,124,131,136,137,139,143,151,158,163,164,166,170,178,185,190,191,193,197,205
-; Formula: a(n) = b(n-1), b(n) = 2*b(n-1)+2*b(n-4)-b(n-2)-b(n-3)-b(n-5), b(13) = 55, b(12) = 50, b(11) = 43, b(10) = 35, b(9) = 31, b(8) = 29, b(7) = 28, b(6) = 23, b(5) = 16, b(4) = 8, b(3) = 4, b(2) = 2, b(1) = 1, b(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,1
-mov $3,2
-mov $4,4
-mov $5,8
-mov $6,16
 sub $0,1
+mov $1,1
+fil $1,3
 lpb $0
-  mov $1,0
-  rol $1,6
-  sub $6,$1
-  add $6,$2
-  add $6,$2
-  sub $6,$3
-  sub $6,$4
-  add $6,$5
-  add $6,$5
   sub $0,1
+  mod $1,9
+  add $3,$4
+  mov $4,$1
+  add $1,$3
 lpe
-mov $0,$1
+mov $0,$3

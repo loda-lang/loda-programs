@@ -1,7 +1,6 @@
 ; A363849: Triangular array read by rows. T(n,k) is the number of Green's H-classes of rank k in the semigroup of partial transformations, n >= 0, 0 <= k <= n.
 ; Submitted by Science United
 ; 1,1,1,1,6,1,1,21,18,1,1,60,150,40,1,1,155,900,650,75,1,1,378,4515,7000,2100,126,1,1,889,20286,59535,36750,5586,196,1,1,2040,84700,435120,486570,148176,12936,288,1,1,4599,335880,2864820,5358150,2876202,493920,27000,405,1
-; Formula: a(n) = truncate(A028246(n+1)/((-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)!))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
 mov $1,$0
 add $1,1
@@ -17,7 +16,31 @@ sub $2,$3
 sub $2,1
 mov $4,$0
 add $0,1
-seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+mov $7,$0
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $8,$7
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
+mov $8,$0
+mov $0,$7
+mov $7,$8
+add $7,2
+lpb $7
+  sub $7,1
+  mov $10,$7
+  pow $10,$0
+  sub $11,$7
+  bin $11,$9
+  mul $11,$10
+  add $12,$11
+  add $9,1
+  mov $11,0
+lpe
 bin $1,$2
 mov $5,$4
 mul $5,8
@@ -27,6 +50,8 @@ add $5,1
 div $5,2
 bin $5,2
 sub $4,$5
-seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-div $0,$4
+mov $6,1
+fac $6,$4
+mov $0,$12
+div $0,$6
 mul $0,$1

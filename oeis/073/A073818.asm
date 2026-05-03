@@ -22,22 +22,20 @@ lpb $2
   bin $4,2
   add $4,1
   sub $4,$0
-  mov $5,$0
   sub $0,1
-  mov $7,$0
-  mul $7,8
-  add $7,1
-  nrt $7,2
-  add $7,1
-  div $7,2
-  bin $7,2
-  sub $0,$7
+  mov $5,$0
+  mul $5,8
+  add $5,1
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  sub $0,$5
   mov $6,$0
   add $6,1
   seq $6,40 ; The prime numbers.
   mov $0,$6
   mul $0,$4
-  trn $1,$0
-  add $1,$0
+  max $1,$0
 lpe
 mov $0,$1

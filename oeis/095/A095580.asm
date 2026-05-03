@@ -1,18 +1,16 @@
 ; A095580: a(n) = 94 written in base n.
-; Submitted by DukeBox
+; Submitted by Science United
 ; 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,1011110,10111,1132,334,234,163,136,114,94,86
 
 #offset 1
 
-mov $1,$0
+trn $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $0,0
-neq $1,0
-mul $1,96
-sub $1,2
+mov $0,1
+add $1,94
 lpb $1
   mov $4,$1
   mod $4,$2
@@ -23,3 +21,4 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
+sub $0,1

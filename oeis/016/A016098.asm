@@ -6,13 +6,8 @@ mov $1,$0
 mul $1,2
 mov $2,$0
 add $2,1
-mov $7,0
-mov $8,0
-mov $11,0
-mov $13,0
 bin $1,$0
 div $1,$2
-mov $3,0
 mov $6,1
 fac $6,$0
 mov $9,$0

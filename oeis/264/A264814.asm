@@ -17,7 +17,15 @@ lpb $2
   pow $6,$5
   mov $3,$1
   add $3,1
-  seq $3,1704 ; a(n) = n concatenated with n + 1.
+  mov $7,$1
+  add $7,2
+  mov $9,$7
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $3,$8
+  add $3,$9
   mul $3,$6
   add $3,$1
   add $3,1

@@ -1,14 +1,30 @@
 ; A359592: Parity (and also absolute values) of Dirichlet inverse of A035263, where A035263(n) is parity of 2-adic valuation of 2n.
-; Submitted by Science United
+; Submitted by Laze
 ; 1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,0,0,1,1,1,0,1,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,0,1,0,0,1,1,0,1,0
-; Formula: a(n) = -2*truncate((truncate((n%2-2)/A003557(n))+2)/2)+truncate((n%2-2)/A003557(n))+2
 
 #offset 1
 
+mul $0,2
+mov $5,2
 mov $1,$0
-seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-mod $0,2
-sub $0,2
-div $0,$1
-add $0,2
+lpb $1
+  add $5,1
+  mov $2,$1
+  div $2,4
+  lpb $2
+    mov $3,$1
+    mod $3,$5
+    add $5,1
+    sub $2,$3
+  lpe
+  lpb $1
+    dif $1,$5
+    gcd $5,$4
+    mov $6,$1
+    add $4,1
+  lpe
+  sub $4,1
+lpe
+mov $0,$6
+add $0,1
 mod $0,2

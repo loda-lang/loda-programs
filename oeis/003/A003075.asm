@@ -1,18 +1,17 @@
 ; A003075: Minimal number of comparisons needed for n-element sorting network.
-; Submitted by Jon Maiga
+; Submitted by Just Jake
 ; 0,1,3,5,9,12,16,19,25,29,35,39
 
 #offset 1
 
 sub $0,1
-mov $7,$0
+mov $6,$0
 mov $5,$0
 lpb $5
   sub $5,1
-  mov $0,$7
-  sub $0,$5
-  mov $1,0
   mov $2,2
+  mov $0,$6
+  sub $0,$5
   lpb $0
     mov $3,$0
     lpb $3
@@ -27,6 +26,5 @@ lpb $5
       add $1,$2
     lpe
   lpe
-  add $6,$1
 lpe
-mov $0,$6
+mov $0,$1

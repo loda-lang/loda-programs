@@ -14,7 +14,6 @@ lpb $2
   add $5,1
   seq $5,2325 ; Glaisher's J numbers.
   div $5,2
-  mov $3,$1
   mov $3,$5
   min $3,1
   sub $0,$3

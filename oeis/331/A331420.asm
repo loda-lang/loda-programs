@@ -10,7 +10,6 @@ add $0,2
 div $0,2
 bin $0,5
 lpb $1
-  sub $1,1
-  trn $1,1
+  trn $1,2
   mul $0,2
 lpe

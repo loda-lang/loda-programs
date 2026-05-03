@@ -1,32 +1,30 @@
 ; A026331: a(n) = T(2n-1,n), where T is the array in A026323.
-; Submitted by Dave Studdert
+; Submitted by KetamiNO [YouTube]
 ; 1,6,30,161,882,4916,27729,157830,904706,5215310,30203901,175598997,1024234850,5990912280,35126915550,206399581434,1215040298106,7164651246340,42310256416456,250194442456101,1481274328929984,8779528511274564
 
 #offset 1
 
-mul $0,2
 mov $1,1
-mov $2,$0
-mov $3,1
-mov $6,1
-mov $7,1
+mov $4,1
+mov $8,1
+mul $0,2
+mov $3,$0
 lpb $0
   sub $0,2
-  add $8,$7
-  add $3,$1
-  mov $7,$6
-  sub $7,1
-  add $6,$1
-  add $1,$5
   add $2,$4
-  add $4,1
-  mov $5,$3
-  mov $3,$1
-  mul $1,$2
-  div $1,$4
-  mov $2,$0
-  add $3,$1
-  sub $7,$8
-  add $7,$1
+  mov $4,$5
+  add $5,$1
+  add $8,$1
+  add $1,$6
+  add $3,$7
+  mov $6,$8
+  add $7,1
+  mov $8,$1
+  mul $1,$3
+  div $1,$7
+  mov $3,$0
+  sub $4,$2
+  add $4,$1
+  add $8,$1
 lpe
-mov $0,$7
+mov $0,$4

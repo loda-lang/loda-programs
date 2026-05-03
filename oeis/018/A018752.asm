@@ -1,11 +1,9 @@
 ; A018752: Divisors of 972.
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by Wood
 ; 1,2,3,4,6,9,12,18,27,36,54,81,108,162,243,324,486,972
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mul $1,6
   mov $3,$2

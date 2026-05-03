@@ -1,23 +1,20 @@
 ; A066332: a(1)=1; for n > 0, a(n+1) = rad(a(n))*n where rad=A007947.
-; Submitted by Jamie Morken(w4)
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,2,6,24,30,180,210,1680,1890,2100,2310,27720,30030,420420,450450,480480,510510,9189180,9699690,193993800,203693490,213393180,223092870,5354228880,5577321750,5800414620,6023507490,6246600360,6469693230,194090796900,200560490130
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-equ $2,0
+max $0,1
 mov $1,$0
-add $1,$2
-sub $0,1
-lpb $0
-  sub $0,1
-  div $0,2
-  mul $0,2
-  trn $0,1
-  add $0,3
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mul $1,$0
-  sub $0,1
+sub $1,1
+mov $2,1
+mov $4,$1
+lpb $4
+  dir $2,$4
+  mul $2,$4
+  sub $4,1
 lpe
-mov $0,$1
+add $3,$2
+mul $3,$0
+mov $0,$3

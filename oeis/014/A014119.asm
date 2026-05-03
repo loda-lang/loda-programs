@@ -1,16 +1,32 @@
 ; A014119: Inverse of 110th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,-1,1,-1,1,0,0,0,0,0,0,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,1,-1,1,-1,0,0,0,0,0,0,-1,1,-1,1,-1,0,0,0,0,0,0,0,0,0
 
-mov $3,3
-add $0,3
+mov $1,-1
+pow $1,$0
+mov $2,1
+fil $2,5
+mov $13,-1
+fil $13,5
 lpb $0
-  sub $0,$3
-  mov $1,-1
-  pow $1,$0
-  mov $2,$0
-  seq $2,14064 ; Coefficients of the reciprocal of the 55th cyclotomic polynomial.
-  mul $2,$1
-  mov $3,0
+  mul $2,-1
+  rol $2,40
+  add $41,$2
+  sub $41,$6
+  add $41,$7
+  sub $41,$11
+  add $41,$13
+  sub $41,$16
+  add $41,$18
+  sub $41,$21
+  add $41,$24
+  sub $41,$26
+  add $41,$29
+  sub $41,$31
+  add $41,$35
+  sub $41,$36
+  add $41,$40
+  sub $0,1
 lpe
 mov $0,$2
+mul $0,$1

@@ -1,5 +1,5 @@
 ; A018431: Divisors of 396.
-; Submitted by Science United
+; Submitted by Mr P Hucker
 ; 1,2,3,4,6,9,11,12,18,22,33,36,44,66,99,132,198,396
 
 #offset 1
@@ -7,13 +7,12 @@
 mov $2,1
 sub $0,1
 lpb $0
-  mul $1,4
+  mul $1,8
   add $2,1
   mov $3,$2
   lpb $3
     add $2,2
     mov $4,$1
-    mul $4,2
     gcd $4,$2
     trn $4,$3
     equ $4,0

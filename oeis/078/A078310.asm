@@ -1,27 +1,18 @@
 ; A078310: a(n) = n*rad(n) + 1, where rad = A007947 (squarefree kernel).
-; Submitted by https://pldin.karelia.ru/
+; Submitted by [B S] fred
 ; 2,5,10,9,26,37,50,17,28,101,122,73,170,197,226,33,290,109,362,201,442,485,530,145,126,677,82,393,842,901,962,65,1090,1157,1226,217,1370,1445,1522,401,1682,1765,1850,969,676,2117,2210,289,344,501,2602,1353,2810,325,3026,785,3250,3365,3482,1801,3722,3845,1324,129,4226,4357,4490,2313,4762,4901,5042,433,5330,5477,1126,2889,5930,6085,6242,801
 
 #offset 1
 
-mov $1,1
-mov $2,2
+mov $2,$0
+sub $0,1
 lpb $0
-  mov $3,$0
-  pow $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-  lpe
-  mul $1,$2
-  mul $1,$5
+  mov $1,$0
+  add $1,1
+  seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  div $0,$1
 lpe
-mov $0,$1
+add $0,1
+mul $2,$0
+mov $0,$2
 add $0,1

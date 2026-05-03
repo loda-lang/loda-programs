@@ -8,5 +8,4 @@
 mov $1,$0
 seq $1,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 sub $0,$1
-sub $0,1
-trn $0,1
+trn $0,2

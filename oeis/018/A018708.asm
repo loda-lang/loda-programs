@@ -1,5 +1,5 @@
 ; A018708: Divisors of 896.
-; Submitted by respawner
+; Submitted by Cruncher Pete
 ; 1,2,4,7,8,14,16,28,32,56,64,112,128,224,448,896
 
 #offset 1
@@ -7,9 +7,8 @@
 mov $2,1
 sub $0,1
 lpb $0
-  mul $1,9
-  sub $1,40
-  mul $1,2
+  mul $1,18
+  sub $1,80
   mov $3,$2
   add $3,1
   lpb $3

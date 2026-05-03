@@ -1,19 +1,19 @@
 ; A192473: Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x)=1+x^n+x^(2n+2).
-; Submitted by Zaibas McCann
+; Submitted by Science United
 ; 4,9,23,58,149,385,1000,2605,6799,17766,46457,121537,318044,832417,2178919,5703874,14931949,39090753,102338336,267921061,701419679,1836329614,4807555633,12586315393,32951355124,86267692665,225851630135
+; Formula: a(n) = d(n)*(2*b(n)+d(n))+c(n), b(n) = b(n-1)+b(n-2), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = d(n-1), c(2) = 1, c(1) = 1, c(0) = 0, d(n) = d(n-1)+d(n-2), d(2) = 2, d(1) = 1, d(0) = 1
 
 #offset 1
 
-mov $4,1
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $3,$4
-  add $4,$2
+mov $3,1
+lpb $0
+  sub $0,1
   mov $2,$3
+  add $3,$1
+  mov $1,$2
 lpe
-mul $2,2
-add $2,$4
-mul $4,$2
-add $4,$3
-mov $0,$4
+mul $1,2
+add $1,$3
+mul $3,$1
+add $3,$2
+mov $0,$3

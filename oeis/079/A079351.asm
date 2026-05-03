@@ -22,17 +22,16 @@ lpb $5
     gcd $6,2
     div $0,2
   lpe
-  mov $0,$1
   lpb $2
     mov $2,0
     sub $3,1
+    sub $1,1
     gcd $1,$0
-    sub $1,$0
   lpe
+  add $3,$6
   mov $0,$1
   mul $0,2
   add $0,1
-  add $3,$6
   add $4,$0
 lpe
 mov $0,$4

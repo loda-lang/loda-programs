@@ -13,13 +13,12 @@ lpb $0
     mov $7,0
     mov $4,$3
     lpb $4
-      mul $7,3
       mov $5,$4
       add $5,19
       mov $5,$$5
       max $5,$7
       sub $4,1
-      mul $7,2
+      mul $7,8
       add $7,$5
     lpe
     mov $6,$1

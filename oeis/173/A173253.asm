@@ -1,20 +1,64 @@
 ; A173253: Partial sums of A000111.
-; Submitted by Science United
+; Submitted by crashtech
 ; 1,2,3,5,10,26,87,359,1744,9680,60201,413993,3116758,25485014,224845995,2128603307,21520115452,231385458428,2636265133869,31725150246701,402096338484226,5353594391608322,74702468784746223,1090126355291598575,16604660518848685480,263526140709056669096,4350598650002180561457,74602200253946140449329,1326861841657576005917614,24446046029467173847391150,465989939278490278401073971,9179952696403659574571885363,186699344275942949011236675028,3916107047996472520108746300884
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $14,$0
-  seq $14,122045 ; Euler (or secant) numbers E(n).
-  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-  gcd $0,$14
-  add $10,$0
-  add $12,$10
+lpb $0
+  mov $2,$0
+  bin $2,2
+  add $2,1
+  mov $5,$2
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  add $5,1
+  pow $5,2
+  sub $5,$2
+  sub $0,1
+  mul $2,8
+  nrt $2,2
+  div $2,2
+  mov $3,$5
+  add $3,$2
+  mov $4,$3
+  add $4,2
+  mov $6,$4
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $4,$7
+  sub $4,1
+  mov $8,$6
+  mod $8,2
+  mul $8,$4
+  sub $4,$8
+  add $4,$3
+  mov $2,$3
+  add $2,1
+  mov $9,$2
+  mul $9,8
+  nrt $9,2
+  div $9,2
+  bin $9,2
+  sub $2,$9
+  sub $4,$2
+  mov $2,$4
+  add $2,2
+  mov $10,$2
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  add $10,1
+  pow $10,2
+  sub $10,$2
+  mov $2,$10
+  seq $2,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  add $1,$2
 lpe
-mov $0,$12
+mov $0,$1
+add $0,1

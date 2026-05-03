@@ -5,6 +5,7 @@
 mov $2,$0
 add $2,1
 mov $3,$0
+dgr $3,35
 bin $3,2
 add $3,$0
 add $3,$2

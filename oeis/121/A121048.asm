@@ -1,21 +1,13 @@
 ; A121048: a(n) = n + phi(n), where phi is the Euler totient function.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Buckey
 ; 2,3,5,6,9,8,13,12,15,14,21,16,25,20,23,24,33,24,37,28,33,32,45,32,45,38,45,40,57,38,61,48,53,50,59,48,73,56,63,56,81,54,85,64,69,68,93,64,91,70,83,76,105,72,95,80,93,86,117,76,121,92,99,96,113,86,133,100,113,94,141,96,145,110,115,112,137,102,157,112
+; Formula: a(n) = A000010(n)+n
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $3,0
-  mov $4,$1
-  lpb $4
-    mov $2,$4
-    gcd $2,$1
-    equ $2,1
-    add $3,$2
-    add $3,1
-    sub $4,1
-  lpe
-lpe
-mov $0,$3
+mov $1,$0
+sub $0,1
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+add $1,$0
+mov $0,$1
+add $0,1

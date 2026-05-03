@@ -1,7 +1,7 @@
 ; A364669: Lower independence number of the hypercube graph Q_n.
-; Submitted by BrandyNOW
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,2,2,4,8,12,16,32
-; Formula: a(n) = truncate((-n*gcd(n,3)+3*truncate(2^(-floor((n+2)/3)+n))+gcd(n,3)+n-4)/3)+1
+; Formula: a(n) = truncate((-n*gcd(n,3)+3*if((-floor((n+2)/3)+n)<=(-1),0,2^(-floor((n+2)/3)+n))+gcd(n,3)+n-1)/3)
 
 mov $4,$0
 add $4,2
@@ -19,6 +19,5 @@ mul $1,3
 add $1,$5
 sub $0,$2
 add $0,$1
-sub $0,4
+sub $0,1
 div $0,3
-add $0,1

@@ -1,14 +1,28 @@
 ; A277395: a(n) = Sum_{k=0..n} binomial(n+1,k+1)*A001003(k).
-; Submitted by zombie67 [MM]
+; Submitted by Ryan Hothersall
 ; 1,3,9,33,145,713,3745,20513,115713,667329,3916033,23305857,140327681,853262465,5231925761,32313686529,200843829249,1255308123137,7884792852481,49745076576257,315091155558401,2003009460686849,12774610185633793
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A118376(n+1), b(0) = 0
 
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,118376 ; Number of all trees of weight n, where nodes have positive integer weights and the sum of the weights of the children of a node is equal to the weight of the node.
-  sub $0,1
-  add $1,$2
+mov $7,$0
+mov $9,$0
+add $9,1
+lpb $9
+  clr $0,7
+  sub $9,1
+  mov $0,$7
+  sub $0,$9
+  mov $4,$0
+  mov $6,$0
+  add $6,1
+  lpb $6
+    clr $0,4
+    sub $6,1
+    mov $0,$4
+    sub $0,$6
+    mod $0,97
+    seq $0,68764 ; Generalized Catalan numbers 2*x*A(x)^2 -A(x) +1 -x =0.
+    add $3,$0
+    add $5,$3
+  lpe
+  add $8,$5
 lpe
-add $1,1
-mov $0,$1
+mov $0,$8

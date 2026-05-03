@@ -7,6 +7,5 @@
 
 mov $1,$0
 seq $1,352618 ; Squares that are 7-smooth.
-sub $0,1
 mov $0,$1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

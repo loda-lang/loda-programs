@@ -1,17 +1,18 @@
 ; A277646: Triangle T(n,k) = floor(n^2/k) for 1 <= k <= n^2, read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by Owdjim
 ; 1,4,2,1,1,9,4,3,2,1,1,1,1,1,16,8,5,4,3,2,2,2,1,1,1,1,1,1,1,1,25,12,8,6,5,4,3,3,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,36,18,12,9,7,6,5,4,4,3,3,3,2,2,2,2,2,2,1,1,1,1,1,1,1
 
 #offset 1
 
 sub $0,1
-lpb $0
-  add $1,1
-  add $2,2
-  sub $0,$1
-  add $1,$2
+mov $2,1
+mov $3,1
+mov $1,$0
+lpb $1
+  sub $1,$2
+  add $3,2
+  add $2,$3
 lpe
-add $0,1
 add $1,1
-div $1,$0
-mov $0,$1
+div $2,$1
+mov $0,$2

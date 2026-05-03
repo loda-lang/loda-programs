@@ -1,6 +1,6 @@
 ; A392463: a(n) is the minimum diameter of a n-element set of integers for which no nonzero d has more than 4 representations as a difference of elements of the set.
 ; Submitted by brooky
-; 0,1,2,3,4,6,8,10,13,16,20,23,28,32,37,43
+; 0,1,2,3,4,6,8,10,13,16,20,23,28,32,37,43,49,55
 ; Formula: a(n) = floor(((n+26)*((n-1)*(n+5)+46)+162)/324)-4
 
 #offset 1

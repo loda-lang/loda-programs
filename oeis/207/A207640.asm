@@ -1,6 +1,7 @@
 ; A207640: Squares that can be written as a sum of 3 distinct nonzero squares in exactly two ways.
 ; Submitted by loader3229
 ; 225,361,625,900,1444,2500,3600,5776,10000,14400,23104,40000,57600,92416,160000,230400,369664,640000,921600,1478656,2560000,3686400
+; Formula: a(n) = 4*a(n-3), a(3) = 625, a(2) = 361, a(1) = 225
 
 #offset 1
 

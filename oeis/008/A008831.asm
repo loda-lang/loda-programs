@@ -17,9 +17,8 @@ lpb $1
   mov $2,$0
   mod $2,2
   mul $2,90
-  sub $2,8
   mov $6,$2
-  max $6,0
+  trn $6,8
   mov $5,2
   mul $5,$6
   div $5,11

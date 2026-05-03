@@ -1,17 +1,44 @@
 ; A012007: cosh(log(cos(x))) = 1+3/4!*x^4+30/6!*x^6+693/8!*x^8+25260/10!*x^10...
-; Submitted by Eric
+; Submitted by iBezanilla
 ; 1,0,3,30,693,25260,1351383,99680490,9695756073,1202439837720,185185594118763,34674437196568950,7757267081778543453,2043536254646561946180,626129820701814932734143,220771946624511552276841410,88759695789769644718332394833
-; Formula: a(n) = floor(((floor((2*n)/2)+1)%2+gcd(A155585(2*n),A122045(2*n)))/2)
 
+sub $0,1
+min $0,109
+add $0,1
 mov $1,$0
 add $1,$0
-mov $2,$1
-seq $2,122045 ; Euler (or secant) numbers E(n).
-mov $0,$1
-div $1,2
-add $1,1
-mod $1,2
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $0,$2
-add $0,$1
+mov $3,1
+mov $4,$1
+add $4,1
+mov $5,$1
+bin $5,2
+add $5,$1
+add $5,$4
+lpb $4
+  sub $4,1
+  mov $2,$5
+  sub $2,$4
+  mov $7,$2
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $2,$8
+  sub $2,1
+  mov $8,$2
+  mov $2,$7
+  bin $2,$8
+  sub $7,$8
+  mov $6,-1
+  pow $6,$7
+  seq $7,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  mul $7,$6
+  mul $2,$7
+  add $3,$2
+lpe
+mov $0,$3
+gcd $0,$0
 div $0,2

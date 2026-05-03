@@ -22,7 +22,6 @@ lpb $2
   gcd $7,2
   pow $6,$7
   trn $6,$3
-  pow $6,2
   mov $3,$6
   equ $3,0
   sub $0,$3

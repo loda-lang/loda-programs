@@ -1,5 +1,5 @@
 ; A095464: a(n) = 36 written in base n.
-; Submitted by loader3229
+; Submitted by 1scorpion
 ; 111111111111111111111111111111111111,100100,1100,210,121,100,51,44,40,36,33,30
 
 #offset 1
@@ -10,11 +10,8 @@ mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-add $1,630
-mul $1,8
-nrt $1,2
-add $1,1
-div $1,2
+neq $1,0
+add $1,35
 lpb $1
   mov $4,$1
   mod $4,$2

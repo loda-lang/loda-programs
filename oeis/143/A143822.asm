@@ -18,14 +18,12 @@ lpb $2
   mov $5,$6
   mul $5,2
   add $5,1
-  seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$5
   pow $3,2
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   div $3,2
-  sub $3,3
-  equ $3,1
+  equ $3,4
   mul $5,3
   sub $0,$3
   add $1,1

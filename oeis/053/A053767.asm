@@ -1,11 +1,28 @@
 ; A053767: Sum of first n composite numbers.
-; Submitted by shiva
+; Submitted by [SG]KidDoesCrunch
 ; 0,4,10,18,27,37,49,63,78,94,112,132,153,175,199,224,250,277,305,335,367,400,434,469,505,543,582,622,664,708,753,799,847,896,946,997,1049,1103,1158,1214,1271,1329,1389,1451,1514,1578,1643,1709,1777,1846,1916,1988,2062,2137,2213,2290,2368,2448,2529,2611,2695,2780,2866,2953,3041,3131,3222,3314,3407,3501,3596,3692,3790,3889,3989,4091,4195,4300,4406,4514
-; Formula: a(n) = A101203(A141468(n+2))-1
 
-add $0,2
-seq $0,141468 ; Zero together with the nonprime numbers A018252.
-mov $1,$0
-seq $1,101203 ; a(n) = sum of nonprimes <= n.
-mov $0,$1
+mov $2,$0
+add $0,1
+add $2,3
+pow $2,2
+lpb $2
+  mov $5,$1
+  add $5,1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $5,1
+  seq $5,341591 ; Number of superior prime divisors of n.
+  add $6,$0
+  mov $3,$5
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$6
 sub $0,1

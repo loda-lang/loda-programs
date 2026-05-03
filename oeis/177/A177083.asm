@@ -1,25 +1,22 @@
 ; A177083: A006093(k)-fold repetition of A001248(k), k=1,2,3,..
-; Submitted by Jamie Morken(w1)
+; Submitted by Technik007[CZ]
 ; 4,9,9,25,25,25,25,49,49,49,49,49,49,121,121,121,121,121,121,121,121,121,121,169,169,169,169,169,169,169,169,169,169,169,169
 
 #offset 1
 
-sub $0,1
 mov $1,1
-mov $2,$0
-add $2,5
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $3,$1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $1,1
-  mul $2,$4
+sub $0,1
+lpb $0
+  sub $0,1
+  sub $0,$4
+  mov $3,$2
+  add $3,2
+  gcd $3,$1
+  add $2,1
+  mov $4,$2
+  mul $1,3
+  add $2,$3
 lpe
-pow $1,2
-mov $0,$1
+mov $0,$4
+add $0,2
+pow $0,2

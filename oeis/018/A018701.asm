@@ -1,12 +1,12 @@
 ; A018701: Divisors of 884.
-; Submitted by Daniel Morton
+; Submitted by Science United
 ; 1,2,4,13,17,26,34,52,68,221,442,884
 
 #offset 1
 
 lpb $0
   sub $0,1
-  mul $1,6
+  add $2,$4
   add $3,$1
   lpb $3
     add $2,1

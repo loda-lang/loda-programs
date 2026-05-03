@@ -1,10 +1,44 @@
 ; A342314: T(n, k) = [x^k] 2^n*(Euler(n, x/2) + Euler(n, x)), where Euler(n, x) are the Euler polynomials. Triangle read by rows, T(n, k) for 0 <= k <= n.
 ; Submitted by damotbe
 ; 2,-2,3,0,-6,5,4,0,-15,9,0,24,0,-36,17,-32,0,100,0,-85,33,0,-288,0,360,0,-198,65,544,0,-1680,0,1190,0,-455,129,0,6528,0,-8064,0,3696,0,-1032,257,-15872,0,48960,0,-34272,0,10920,0,-2313,513,0,-238080,0,293760,0,-133056,0,30960,0,-5130,1025
-; Formula: a(n) = A081733(n)*(truncate(2^(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n))+1)
 
 mov $1,$0
-seq $1,81733 ; Triangle read by rows, T(n,k) = 2^(n-k)*[x^k] Euler_polynomial(n, x), for n >= 0, k >= 0.
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $1,$6
+sub $1,1
+mov $6,$1
+mov $1,$5
+bin $1,$6
+sub $5,$6
+mov $7,-1
+pow $7,$5
+mov $11,$5
+add $5,1
+lpb $5
+  sub $5,1
+  sub $13,$9
+  mov $9,$8
+  pow $9,$11
+  add $9,$13
+  mov $10,$11
+  bin $10,$8
+  mul $10,$9
+  sub $13,$9
+  add $8,1
+  mul $12,-1
+  add $12,$10
+lpe
+mov $5,$12
+mul $5,$7
+mul $1,$5
 mov $4,$0
 mul $4,8
 add $4,1

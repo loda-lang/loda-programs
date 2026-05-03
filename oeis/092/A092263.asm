@@ -1,18 +1,17 @@
 ; A092263: a(1)=1, a(n+1)=ceiling(phi*a(n))+1 if a(n) is odd, a(n+1)=ceiling(phi*a(n)) if a(n) is even, where phi=(1+sqrt(5))/2.
-; Submitted by Science United
+; Submitted by titanroller
 ; 1,3,6,10,17,29,48,78,127,207,336,544,881,1427,2310,3738,6049,9789,15840,25630,41471,67103,108576,175680,284257,459939,744198,1204138,1948337,3152477,5100816,8253294,13354111,21607407,34961520,56568928
-; Formula: a(n) = c(n+1), b(n) = b(n-1)+b(n-3)+b(n-4), b(5) = 7, b(4) = 4, b(3) = 3, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = b(n-1)+c(n-1), c(4) = 6, c(3) = 3, c(2) = 1, c(1) = 0, c(0) = 0
+; Formula: a(n) = a(n-1)+gcd(max(a(n-4),a(n-3)),2)+max(a(n-3),a(n-2)), a(4) = 10, a(3) = 6, a(2) = 3, a(1) = 1, a(0) = 0
 
 #offset 1
 
-mov $1,1
 mov $3,1
-add $0,1
 lpb $0
   ror $1,4
+  max $2,$1
   add $4,$1
   add $4,$3
   sub $0,1
-  add $6,$1
+  gcd $3,2
 lpe
-mov $0,$6
+mov $0,$4

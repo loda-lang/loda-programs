@@ -1,5 +1,5 @@
 ; A390512: The all-integers indexing of lexicographically ordered 01 words; a bijection from the positive integers to the integers.
-; Submitted by Sabroe_SMC
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,-1,-2,2,3,-3,-4,-5,-6,4,5,6,7,-7,-8,-9,-10,-11,-12,-13,-14,8,9,10,11,12,13,14,15,-15,-16,-17,-18,-19,-20,-21,-22,-23,-24,-25,-26,-27,-28,-29,-30,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
 
 #offset 1
@@ -30,6 +30,6 @@ lpb $3
   add $2,20
   mul $$2,$4
   add $1,$$2
-  sub $3,2
+  equ $3,3
 lpe
 mov $0,$1

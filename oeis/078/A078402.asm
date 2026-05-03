@@ -1,23 +1,23 @@
 ; A078402: Numbers k such that k^2 + 5 is prime.
-; Submitted by vanos0512
+; Submitted by 1scorpion
 ; 0,6,12,36,48,72,78,96,114,126,162,168,198,204,246,258,294,336,342,372,414,432,456,462,492,504,516,534,552,576,588,594,624,666,714,726,756,768,786,792,798,804,834,852,876,888,918,954,996,1008,1014,1038,1044,1062,1092,1098,1104,1122,1164,1206,1212,1218,1248,1254,1266,1272,1302,1308,1314,1344,1356,1416,1476,1512,1542,1548,1554,1584,1632,1638
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-pow $2,4
-lpb $2
-  pow $3,2
-  add $3,5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,6
-  sub $0,$3
-  mov $1,$0
-  max $1,0
-  equ $1,$0
-  mul $2,$1
-  sub $2,1
-  mov $3,$4
+mov $4,-4
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,8
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
+  add $5,3
 lpe
-mov $0,$3
+mov $0,$5
+div $0,9
+mul $0,6

@@ -1,6 +1,7 @@
 ; A164755: Number of nX3 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 ; Submitted by loader3229
 ; 8,80,258,480,644,752,850,956,1070,1184,1298,1412,1526,1640,1754,1868,1982,2096,2210,2324,2438,2552,2666,2780,2894,3008,3122,3236,3350,3464,3578,3692,3806,3920,4034,4148,4262
+; Formula: a(n) = b(n-2), b(n) = 2*b(n-1)-b(n-2), b(16) = 1982, b(15) = 1868, b(14) = 1754, b(13) = 1640, b(12) = 1526, b(11) = 1412, b(10) = 1298, b(9) = 1184, b(8) = 1070, b(7) = 956, b(6) = 850, b(5) = 752, b(4) = 644, b(3) = 480, b(2) = 258, b(1) = 80, b(0) = 8
 
 #offset 2
 

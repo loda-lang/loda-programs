@@ -1,4 +1,5 @@
 ; A092906: Number of iterations of the sine function to be less than 1/n with an initial argument of Pi/2 radians.
+; Submitted by [SG]KidDoesCrunch
 ; 2,10,24,45,71,104,143,188,239,296,359,427,502,583,670,763,862,967,1078,1195,1318,1447,1582,1723,1870,2023,2181,2346,2517,2694,2877,3066,3261,3462,3669,3882,4101,4326,4557,4794,5037,5286,5541,5802,6069,6342,6621
 
 #offset 1
@@ -17,13 +18,12 @@ lpb $0
 lpe
 mov $1,$2
 add $1,2
-mov $7,$3
-mul $7,5
+mov $5,$3
+mul $5,5
 mov $6,$3
 mul $6,$3
-add $5,$6
-mov $4,$5
+mov $4,$6
 mul $4,3
-add $1,$7
+add $1,$5
 add $1,$4
 mov $0,$1

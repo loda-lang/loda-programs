@@ -1,36 +1,29 @@
 ; A043466: Numbers having two 3's in base 9.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 30,111,192,246,255,264,270,271,272,274,275,276,277,278,282,291,300,309,318,354,435,516,597,678,759,840,921,975,984,993,999,1000,1001,1003,1004,1005,1006,1007,1011,1020,1029,1038,1047
 
 #offset 1
 
 mov $2,$0
-sub $0,1
-add $2,2
-pow $2,4
+add $2,6
+pow $2,3
 lpb $2
-  mov $5,5
+  mov $4,6
   mov $3,$1
-  add $3,1
-  seq $3,52421 ; Numbers without 8 as a digit.
   lpb $3
-    mov $6,$3
-    mul $6,2
-    add $6,6
-    mod $6,10
-    equ $6,2
-    div $3,10
-    add $5,$6
+    mov $5,$3
+    mod $5,9
+    equ $5,4
+    add $3,8
+    div $3,9
+    add $4,$5
   lpe
-  sub $5,6
-  mov $3,$5
-  equ $3,1
+  sub $4,1
+  mov $3,$4
+  equ $3,7
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
+sub $0,1

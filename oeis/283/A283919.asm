@@ -1,7 +1,7 @@
 ; A283919: The smallest square referenced in A013929 (Numbers that are not squarefree).
 ; Submitted by [AF] Kalianthys
 ; 4,4,9,4,4,9,4,4,25,9,4,4,4,4,4,9,4,49,25,4,9,4,4,9,4,4,4,25,4,4,9,4,4,9,4,4,49,9,4,4,4,4,4,9,4,121,4,25,9,4,4,9,4,4,4,49,4,25,4,9,4,4,9,4,4,169,9,4,25,4,4,4,4,9,4,4,9,4,4,9
-; Formula: a(n) = A020639(truncate(A013929(n)/gcd(truncate((A013929(n)-1)/A003557(A013929(n)))+A013929(n)+1,A013929(n))))^2
+; Formula: a(n) = A020639(floor(A013929(n)/gcd(truncate((A013929(n)-1)/A003557(A013929(n)))+A013929(n)+1,A013929(n))))^2
 
 #offset 1
 

@@ -1,6 +1,7 @@
 ; A038587: Sizes of successive clusters in hexagonal lattice A_2 centered at deep hole.
 ; Submitted by Fire$torm [BlackOps]
 ; 3,6,12,12,18,21,27,27,30,36,42,42,48,48,54,54,63,69,69,69,75,78,84,84,90,96,102,102,102,102,114,114,120,123,129,129,135,141,141,141,144,150,156,156,168,168,174,174,174
+; Formula: a(n) = 3*b(n), b(n) = b(n-1)+A033762(floor(if((3*n+1)==0,0,(3*n+1)/(2^valuation(3*n+1,2)))/2)), b(0) = 1
 
 mov $1,1
 lpb $0

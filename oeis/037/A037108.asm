@@ -1,16 +1,15 @@
 ; A037108: Trajectory of 3 under map n->21*n+1 if n odd, n->n/2 if n even.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 3,64,32,16,8,4,2,1,22,11,232,116,58,29,610,305,6406,3203,67264,33632,16816,8408,4204,2102,1051,22072,11036,5518,2759,57940,28970,14485,304186,152093,3193954,1596977,33536518,16768259,352133440,176066720,88033360,44016680,22008340
-; Formula: a(n) = (2*max(b(n-1),10)*(-2*truncate(a(n-1)/2)+a(n-1))+1)*if((a(n-1)%2)==0,a(n-1)/2,a(n-1))-2*truncate(a(n-1)/2)+a(n-1), a(1) = 64, a(0) = 3, b(n) = 2*max(b(n-1),10)*(-2*truncate(a(n-1)/2)+a(n-1))+1, b(1) = 21, b(0) = 0
+; Formula: a(n) = (20*a(n-1)-40*truncate(a(n-1)/2)+1)*if((a(n-1)%2)==0,a(n-1)/2,a(n-1))-2*truncate(a(n-1)/2)+a(n-1), a(0) = 3
 
 mov $1,3
 lpb $0
   sub $0,1
   mov $2,$1
   mod $2,2
-  max $3,10
+  mov $3,20
   mul $3,$2
-  mul $3,2
   add $3,1
   dif $1,2
   mul $1,$3

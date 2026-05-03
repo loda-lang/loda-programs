@@ -1,26 +1,24 @@
 ; A188943: Decimal expansion of (7 + sqrt(13))/6.
-; Submitted by iBezanilla
+; Submitted by EricS1
 ; 1,7,6,7,5,9,1,8,7,9,2,4,3,9,9,8,2,1,5,5,1,9,8,7,0,2,1,1,2,4,5,0,8,2,6,5,7,7,0,8,5,4,9,4,2,8,9,7,4,2,0,7,7,0,2,1,1,8,4,0,8,8,4,2,7,0,4,5,2,7,8,2,4,7,1,5,5,0,1,7
 
 #offset 1
 
 sub $0,1
 mov $1,1
+mov $2,1
 mov $3,$0
 mul $3,4
 lpb $3
   sub $3,1
-  mov $5,$1
-  add $6,$1
-  add $1,$6
-  add $2,$1
   add $5,$2
-  add $6,$5
+  mov $1,$5
+  add $2,$5
+  mul $5,3
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-add $2,1
 div $1,$2
 mov $0,$1
 mod $0,10

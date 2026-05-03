@@ -1,7 +1,7 @@
 ; A131635: Triangle T(n,m)=m*n*binomial(m+n,m)^2/(2*(m+n)) read by rows.
 ; Submitted by loader3229
 ; 1,3,18,6,60,300,10,150,1050,4900,15,315,2940,17640,79380,21,588,7056,52920,291060,1280664,28,1008,15120,138600,914760,4756752,20612592,36,1620,29700,326700,2548260,15459444,77297220,331273800,45,2475,54450
-; Formula: a(n) = truncate((binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))/2)
+; Formula: a(n) = truncate((binomial(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+n,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*binomial(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+n+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))/2)
 
 #offset 1
 

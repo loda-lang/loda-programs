@@ -1,31 +1,25 @@
 ; A264740: Sum of odd parts of divisors of n.
-; Submitted by BrandyNOW
+; Submitted by LM
 ; 1,2,4,3,6,8,8,4,13,12,12,12,14,16,24,5,18,26,20,18,32,24,24,16,31,28,40,24,30,48,32,6,48,36,48,39,38,40,56,24,42,64,44,36,78,48,48,20,57,62,72,42,54,80,72,32,80,60,60,72,62,64,104,7,84,96,68,54,96,96,72,52,74,76,124,60,96,112,80,30
+; Formula: a(n) = truncate((3*A000203(n/(2^valuation(n,2)))*logint(floor((bitxor(2*n,2*n-1)+1)/2),2)-3)/3)+1
 
 #offset 1
 
 mov $1,$0
-sub $1,1
-mov $3,1
+dir $1,2
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $4,3
+mul $4,$1
+mul $0,2
+mov $3,$0
+sub $3,1
+bxo $0,$3
+add $0,1
+div $0,2
+log $0,2
 mov $2,$0
-lpb $2
-  mov $5,$2
-  lpb $5
-    mov $6,$2
-    mod $6,$4
-    min $6,2
-    add $4,2
-    sub $5,$6
-  lpe
-  mov $7,1
-  lpb $2
-    dif $2,$4
-    mul $7,$4
-    add $7,1
-  lpe
-  mul $3,$7
-lpe
-bxo $0,$1
-dgs $0,2
-mul $0,$3
+mul $2,$4
+mov $0,$2
+sub $0,3
+div $0,3
+add $0,1

@@ -1,24 +1,15 @@
 ; A067029: Exponent of least prime factor in prime factorization of n, a(1)=0.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 0,1,1,2,1,1,1,3,2,1,1,2,1,1,1,4,1,1,1,2,1,1,1,3,2,1,3,2,1,1,1,5,1,1,1,2,1,1,1,3,1,1,1,2,2,1,1,4,2,1,1,2,1,1,1,3,1,1,1,2,1,1,2,6,1,1,1,2,1,1,1,3,1,1,1,2,1,1,1,4
+; Formula: a(n) = logint(floor(n/(n/(max(A020639(n),2)^valuation(n,max(A020639(n),2))))),max(A020639(n),2))
 
 #offset 1
 
-lpb $0
-  mov $2,2
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    add $1,2
-  lpe
-  bin $0,0
-lpe
+mov $1,$0
+mov $2,$0
+seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+max $2,2
+dir $0,$2
+div $1,$0
+log $1,$2
 mov $0,$1
-div $0,2

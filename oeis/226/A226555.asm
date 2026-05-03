@@ -1,20 +1,16 @@
 ; A226555: Numerators of row sums of the triangular enumeration of rational numbers A226314(n,k) / A054531(n,k), 1 <= k <= n.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 1,5,4,13,7,25,10,33,17,45,16,69,19,65,38,81,25,109,28,125,55,105,34,177,53,125,68,181,43,241,46,193,89,165,100,301,55,185,106,321,61,349,64,293,167,225,70,433,109,341,140,349,79,433,162,465,157,285,88,661,91,305,242,449,193,565,100,461,191,633,106,769,109,365,288,517,235,673,118,785
+; Formula: a(n) = if(((2*A018804(n)-n+1)%2)==0,(2*A018804(n)-n+1)/2,2*A018804(n)-n+1)
 
 #offset 1
 
+mov $2,$0
+seq $2,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
+mul $2,2
 sub $0,1
-mov $1,$0
-add $0,1
-mov $3,$0
-lpb $3
-  mov $4,$3
-  gcd $4,$0
-  add $2,$4
-  sub $3,1
-lpe
-sub $1,$2
+sub $1,$0
+add $1,$2
+mov $2,$1
+dif $2,2
 mov $0,$2
-sub $0,$1
-dif $0,2

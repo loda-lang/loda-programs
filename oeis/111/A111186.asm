@@ -1,11 +1,10 @@
-; A111186: Difference between the closest squares surrounding squarefree composite numbers.
+; A111186: Difference between the closest squares surrounding nonsquare composite numbers.
 ; Submitted by Tom Poleski
 ; 5,5,7,7,7,7,9,9,9,9,9,11,11,11,11,11,11,11,11,13,13,13,13,13,13,13,13,15,15,15,15,15,15,15,15,15,15,15,17,17,17,17,17,17,17,17,17,17,17,17,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19
 
 #offset 6
 
 sub $0,6
-mov $1,0
 mov $2,$0
 pow $2,2
 lpb $2

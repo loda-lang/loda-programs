@@ -12,7 +12,14 @@ lpb $2
   mov $3,$1
   mul $3,$1
   seq $3,7954 ; Product of decimal digits of n.
-  seq $3,8687 ; Number of 1's in 2's complement representation of -n.
+  mul $3,4
+  sub $3,2
+  max $3,1
+  mov $5,$3
+  dgs $5,2
+  log $3,2
+  add $3,1
+  sub $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

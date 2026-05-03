@@ -11,7 +11,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,117929 ; Number of partitions of n into 2 distinct primes.
+  mov $5,$3
+  seq $5,73610 ; Number of primes of the form n-p where p is a prime.
+  mov $3,$5
+  div $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,5 +1,5 @@
 ; A108271: Consider primes p and q such that p = 2^k + 15 and q = 2^(k+1) + 15 for some k; sequence gives values of q.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by 1scorpion
 ; 19,23,31,47,79,2063,4111,65551,8388623
 
 #offset 1
@@ -15,10 +15,8 @@ lpb $0
   add $2,1
   add $2,$3
 lpe
-add $2,3
 mov $1,2
 pow $1,$2
-div $1,4
 mov $0,$1
-mul $0,2
+mul $0,4
 add $0,15

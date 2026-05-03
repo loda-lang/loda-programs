@@ -13,8 +13,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
-    add $7,1
+    max $7,1
     seq $7,75802 ; Characteristic function of perfect powers, A001597.
     mov $9,10
     add $9,$5

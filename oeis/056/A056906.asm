@@ -1,24 +1,22 @@
 ; A056906: Numbers k such that 36*k^2 + 5 is prime.
-; Submitted by vanos0512
+; Submitted by 1scorpion
 ; 0,1,2,6,8,12,13,16,19,21,27,28,33,34,41,43,49,56,57,62,69,72,76,77,82,84,86,89,92,96,98,99,104,111,119,121,126,128,131,132,133,134,139,142,146,148,153,159,166,168,169,173,174,177,182,183,184,187,194,201,202,203,208,209,211,212,217,218,219,224,226,236,246,252,257,258,259,264,272,273
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-pow $2,4
-lpb $2
-  pow $3,2
-  add $3,5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,6
-  sub $0,$3
-  mov $1,$0
-  max $1,0
-  equ $1,$0
-  mul $2,$1
-  sub $2,1
-  mov $3,$4
+mov $4,-4
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  add $1,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,8
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
+  add $5,3
 lpe
-mov $0,$3
-div $0,6
+mov $0,$5
+div $0,9

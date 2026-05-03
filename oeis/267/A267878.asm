@@ -1,8 +1,7 @@
 ; A267878: Middle column of the "Rule 233" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jarod
+; Submitted by Owdjim
 ; 1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate((min(n,4)+1)/2)+min(n,4)+1
+; Formula: a(n) = bitor(n,2)!=3
 
-min $0,4
-add $0,1
-mod $0,2
+bor $0,2
+neq $0,3
