@@ -1,11 +1,10 @@
 ; A095463: a(n) = 35 written in base 11 - n.
-; Submitted by Science United
+; Submitted by Supericent
 ; 32,35,38,43,50,55,120,203,1022,100011,11111111111111111111111111111111111
 
 sub $0,1
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

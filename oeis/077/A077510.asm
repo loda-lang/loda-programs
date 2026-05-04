@@ -10,7 +10,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,95117 ; a(n) = pi(n) + n, where pi(n) = A000720(n) is the number of primes <= n.
+  seq $3,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $3,$1
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   equ $3,1
   sub $0,$3

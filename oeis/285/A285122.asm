@@ -7,7 +7,6 @@
 
 mov $2,$0
 pow $2,2
-sub $0,1
 mov $0,$2
 add $0,1
 seq $0,33677 ; Smallest divisor of n >= sqrt(n).
