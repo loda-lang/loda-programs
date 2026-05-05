@@ -1,0 +1,24 @@
+; A045660: Number of 2n-bead balanced binary strings, rotationally equivalent to reversed complement, inequivalent to reverse and complement.
+; Submitted by Science United
+; 0,0,0,12,32,120,300,784,1824,4296,9720,21824,47852,104832,226576,487392,1042208,2219520,4703880,9942016,20940152,43995544,92206400,192843776,402500844,838655520,1744509312,3623427624,7515501648,15568306176,32210755680,66569961472,137435801376,283463472392,584108858880,1202581663984,2473886896712,5085221879808,10445330560000,21440435637360,43980402157944,90159867494400,184717820847832,378231819599872,774055909061632,1583296365517296,3236961653264384,6614661164171264,13510797671918828
+
+trn $0,1
+mov $2,$0
+add $2,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  gcd $1,$4
+  bin $1,$0
+  mul $0,$1
+  mov $5,$0
+  seq $5,45687 ; Number of 2n-bead balanced binary necklaces of fundamental period 2n which are equivalent to their reversed complement, but are not equivalent to their reverse and complement.
+  mul $0,2
+  mul $0,$5
+  mul $1,$0
+  add $3,$1
+lpe
+mov $0,$3
