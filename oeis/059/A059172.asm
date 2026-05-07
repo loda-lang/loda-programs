@@ -1,5 +1,5 @@
 ; A059172: Numbers k such that k/rad(k) > sqrt(k) where rad(k) is the largest squarefree number dividing k.
-; Submitted by http://amez.petrsu.ru/
+; Submitted by rajab
 ; 8,16,27,32,48,54,64,72,81,96,108,125,128,144,160,162,192,200,216,224,243,250,256,288,320,324,343,375,384,392,400,405,432,448,486,500,512,567,576,625,640,648,675,686,704,729,768,784,800,832,864,896,960,968,972,1000,1024,1029,1080,1125,1152,1200,1215,1250,1280,1296,1323,1331,1350,1352,1372,1408,1440,1458,1500,1536,1568,1600,1620,1664
 
 #offset 1
@@ -11,9 +11,15 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-  add $3,1
-  seq $3,19554 ; Smallest number whose square is divisible by n.
+  mov $5,$3
+  seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  mov $7,$3
+  sub $7,1
+  mov $6,$7
+  div $6,$5
+  add $7,$6
+  add $7,2
+  gcd $3,$7
   pow $3,2
   sub $3,$1
   mul $3,-8

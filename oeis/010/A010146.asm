@@ -1,21 +1,14 @@
 ; A010146: Continued fraction for sqrt(62).
-; Submitted by Science United
+; Submitted by Bill F
 ; 7,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1,14,1,6,1
-; Formula: a(n) = max(14*((sign(n)*((n-1)%4+1))==4)+7*((sign(n)*((n-1)%4+1))==0)+6*((sign(n)*((n-1)%4+1))==2)-1,0)+1
+; Formula: a(n) = sumdigits(binomial(gcd(n,4)+4,binomial(0,n)+5)-1,gcd(n,4)+4)*sign(binomial(gcd(n,4)+4,binomial(0,n)+5)-1)+1
 
-dgr $0,5
+bin $2,$0
+add $2,5
+gcd $0,4
+add $0,4
 mov $1,$0
-equ $1,0
-mul $1,7
-mov $2,$1
-mov $1,$0
-equ $1,2
-mul $1,6
-add $2,$1
-mov $1,$0
-equ $1,4
-mul $1,14
-add $2,$1
-trn $2,1
-mov $0,$2
+bin $0,$2
+sub $0,1
+dgs $0,$1
 add $0,1

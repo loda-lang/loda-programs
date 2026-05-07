@@ -1,17 +1,17 @@
 ; A018681: Divisors of 848.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Wood
 ; 1,2,4,8,16,53,106,212,424,848
+; Formula: a(n) = b(n-1)*if(min(n-1,(n-1)%5)<=(-1),0,2^min(n-1,(n-1)%5)), b(n) = b(n-5)+52, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1
 
 #offset 1
 
-mov $5,1
-fil $5,3
+mov $1,1
+sub $0,1
 lpb $0
-  mul $2,21
-  rol $1,6
-  div $3,$4
-  add $6,$5
-  add $6,$5
-  sub $0,1
+  sub $0,5
+  add $1,52
 lpe
-mov $0,$5
+mov $2,2
+pow $2,$0
+mul $1,$2
+mov $0,$1

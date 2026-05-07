@@ -1,18 +1,18 @@
 ; A021826: Decimal expansion of 1/822.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 0,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4,5,0,1,2,1,6,5,4
-; Formula: a(n) = -a(n-4)+a(n-1)+a(n-5), a(11) = 2, a(10) = 1, a(9) = 0, a(8) = 5, a(7) = 4, a(6) = 5, a(5) = 6, a(4) = 1, a(3) = 2, a(2) = 1, a(1) = 0, a(0) = 0
+; Formula: a(n) = 2^floor((n+1)/2)-sign(n+1)*(n%8+1)+2*truncate((sign(n+1)*(n%8+1)-4)/2)-10*truncate((2^floor((n+1)/2)-sign(n+1)*(n%8+1)+2*truncate((sign(n+1)*(n%8+1)-4)/2)+2)/10)+2
 
-mov $3,1
-mov $4,2
-mov $5,1
-mov $6,6
-lpb $0
-  mov $1,0
-  rol $1,6
-  add $6,$1
-  sub $6,$2
-  add $6,$5
-  sub $0,1
-lpe
-mov $0,$1
+add $0,1
+mov $1,$0
+div $0,2
+mov $2,2
+pow $2,$0
+dgr $1,9
+sub $1,4
+mod $1,2
+mov $3,$2
+sub $3,$1
+mov $0,$3
+sub $0,2
+mod $0,10

@@ -15,7 +15,6 @@ add $5,$2
 mul $5,$2
 nrt $5,2
 div $5,3
-mul $5,2
 mov $8,$1
 mul $8,6
 lpb $8
@@ -28,7 +27,6 @@ lpb $8
 lpe
 mov $4,10
 pow $4,$1
-div $5,2
 div $7,$4
 div $6,$5
 div $6,$7

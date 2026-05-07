@@ -1,13 +1,28 @@
 ; A393314: G.f. A(x) satisfies: A(x) = (1 + x + x^2 + x^3)^2 * A(x^4) / (1 - x).
-; Submitted by 1scorpion
+; Submitted by [SG]KidDoesCrunch
 ; 1,3,6,10,16,24,34,46,61,79,100,124,152,184,220,260,306,358,416,480,552,632,720,816,922,1038,1164,1300,1448,1608,1780,1964,2163,2377,2606,2850,3112,3392,3690,4006,4343,4701,5080,5480,5904,6352,6824,7320,7844,8396,8976
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A005705(n), b(0) = 0
 
-lpb $0
-  mov $2,$0
-  seq $2,5705 ; Number of partitions of 4*n into powers of 4.
-  sub $0,1
-  add $1,$2
+mov $10,$0
+mov $12,$0
+add $12,1
+lpb $12
+  clr $0,10
+  sub $12,1
+  mov $0,$10
+  sub $0,$12
+  mov $7,$0
+  mov $9,$0
+  add $9,1
+  lpb $9
+    sub $9,1
+    mov $0,$7
+    sub $0,$9
+    div $0,4
+    add $0,3
+    pow $0,2
+    div $0,8
+    add $8,$0
+  lpe
+  add $11,$8
 lpe
-mov $0,$1
-add $0,1
+mov $0,$11

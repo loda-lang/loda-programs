@@ -1,12 +1,14 @@
 ; A350623: a(n) = denominator of the X-coordinate of n*P where P is the generator [0,0] for rational points on the curve y^2 + y = x^3 + x^2.
-; Submitted by [SG] blAckmAmbA
+; Submitted by Just Jake
 ; 1,1,1,1,4,9,1,49,121,400,361,7569,36481,38809,1036324,7187761,67092481,34117281,6607901521,68162766400,385083543601,9202249657441,209674135856641,4853089476046161,7099336433764,2600282294202480889,60193393235277536641,1371165544633857017809
+; Formula: a(n) = f(n)^2, c(n) = truncate((c(n-2)^2-c(n-3)*c(n-1))/(-c(n-4))), c(5) = -7, c(4) = 1, c(3) = 3, c(2) = 2, c(1) = 1, c(0) = -1, d(n) = -c(n-1), d(4) = -3, d(3) = -2, d(2) = -1, d(1) = 1, d(0) = 1, e(n) = d(n-1), e(4) = -2, e(3) = -1, e(2) = 1, e(1) = 1, e(0) = 1, f(n) = e(n-1), f(4) = -1, f(3) = 1, f(2) = 1, f(1) = 1, f(0) = 0
 
 #offset 1
 
 mov $1,1
-fil $1,4
-sub $0,4
+mov $2,-1
+mov $3,1
+mov $4,1
 lpb $0
   sub $0,1
   mov $5,$2
@@ -15,11 +17,10 @@ lpb $0
   mul $6,$1
   add $6,$5
   div $6,$4
-  mov $4,$3
-  mul $4,-1
-  mov $3,$2
-  mov $2,$1
+  mov $7,$4
+  mul $2,-1
+  ror $1,4
   mov $1,$6
 lpe
-pow $1,2
-mov $0,$1
+pow $7,2
+mov $0,$7

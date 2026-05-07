@@ -16,14 +16,11 @@ lpb $0
   mov $5,$0
   sub $5,2
   div $5,$3
-  gcd $7,2
   mov $0,$5
   mov $3,1
   add $6,$5
 lpe
-mul $4,$7
 mov $0,$6
-mul $0,2
 div $0,$4
 div $0,18
 mod $0,10

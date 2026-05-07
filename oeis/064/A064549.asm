@@ -1,17 +1,12 @@
 ; A064549: a(n) = n * Product_{primes p|n} p.
-; Submitted by [B S] fred
+; Submitted by rajab
 ; 1,4,9,8,25,36,49,16,27,100,121,72,169,196,225,32,289,108,361,200,441,484,529,144,125,676,81,392,841,900,961,64,1089,1156,1225,216,1369,1444,1521,400,1681,1764,1849,968,675,2116,2209,288,343,500,2601,1352,2809,324,3025,784,3249,3364,3481,1800,3721,3844,1323,128,4225,4356,4489,2312,4761,4900,5041,432,5329,5476,1125,2888,5929,6084,6241,800
+; Formula: a(n) = n*A075423(n)+n
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-lpb $0
-  mov $1,$0
-  add $1,1
-  seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  div $0,$1
-lpe
-add $0,1
-mul $2,$0
-mov $0,$2
+mov $1,$0
+seq $0,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+mul $0,$1
+add $1,$0
+mov $0,$1

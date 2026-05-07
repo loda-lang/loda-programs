@@ -1,27 +1,22 @@
 ; A096169: Odd n such that (n^4+1)/2 is prime.
-; Submitted by Rodney Duane
+; Submitted by Laurent Cheylat
 ; 3,5,7,11,13,17,21,23,29,35,39,57,61,65,71,73,81,103,105,113,115,119,129,153,165,169,171,199,203,205,251,259,267,275,309,313,317,333,337,339,353,363,403,405,415,419,431,445,449,453,455,463,471,477,479,487,503,505,513,517,523,537,539,543,551,561,567,573,579,605,607,613,623,639,643,649,657,677,681,701
 
 #offset 1
 
+mov $3,1
 mov $2,$0
-sub $0,1
-add $2,1
-pow $2,2
+pow $2,5
 lpb $2
-  mov $3,$1
-  pow $3,4
-  sub $3,1
-  div $3,2
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
+  add $3,2
+  mov $1,$3
+  pow $1,4
   add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  sub $2,$0
 lpe
-mov $0,$1
-sub $0,1
+mov $0,$3
+div $0,2
+mul $0,2
+add $0,3

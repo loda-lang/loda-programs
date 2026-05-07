@@ -1,20 +1,27 @@
 ; A338062: Numbers k such that the Enots Wolley sequence A336957(k) is odd.
-; Submitted by Owdjim
+; Submitted by Just Jake
 ; 1,4,5,8,9,12,13,16,17,20,21,24,25,28,29,32,33,36,37,40,41,44,45,48,49,52,53,56,57,60,61,64,65,68,69,72,73,76,77,80,81,84,85,88,89,92,93,96,97,100,101,104,105,108,109,112,113,116,117,120,121,124,125,128,129,132,133,136,137,140,141,144,145,148,149,152,153,156,157,160
-; Formula: a(n) = truncate(b(n-1)/13)+1, b(n) = 13*if(((-4*truncate(b(n-1)/4)+b(n-1))%2)==0,(-4*truncate(b(n-1)/4)+b(n-1))/2,-4*truncate(b(n-1)/4)+b(n-1))+b(n-1), b(0) = 3
 
 #offset 1
 
-mov $1,3
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mod $1,4
-  dif $1,2
-  mul $1,13
-  add $1,$2
+mov $8,$0
+mov $10,$0
+add $10,1
+lpb $10
+  clr $0,8
+  sub $10,1
+  mov $0,$8
+  sub $0,$10
+  seq $0,350972 ; E.g.f. = tan(x).
+  mul $0,6
+  lpb $0
+    mod $0,3
+    mov $7,254
+  lpe
+  mov $0,$7
+  div $0,127
+  add $0,1
+  add $9,$0
 lpe
-mov $0,$1
-div $0,13
-add $0,1
+mov $0,$9

@@ -8,7 +8,7 @@ sub $0,1
 lpb $0
   div $0,29
   mul $0,2
-  sub $0,8
+  sub $0,6
 lpe
 seq $0,57520 ; a(n) = A014486(n)/2. In binary expansion there is one more 1 than 0 and reading from the left (the most significant bit) to right, the number of 0's never exceed the number of 1's.
 seq $0,126387 ; Read binary expansion of n from the left; keep track of the excess of 1's over 0's that have been seen so far; sequence gives maximum(excess of 1's over 0's).

@@ -5,22 +5,16 @@
 #offset 1
 
 sub $0,1
-mov $13,$0
-mov $15,$0
-add $15,1
-lpb $15
-  clr $0,13
-  sub $15,1
-  mov $0,$13
-  sub $0,$15
-  lpb $0
-    mov $0,$1
-    seq $0,11548 ; Decimal expansion of sqrt(2) rounded to n places.
-    mul $0,100
-  lpe
+mov $1,$0
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$1
+  sub $0,$3
+  mod $0,110
   add $0,1
-  mov $1,$0
-  seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  add $14,$1
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $2,$0
 lpe
-mov $0,$14
+mov $0,$2

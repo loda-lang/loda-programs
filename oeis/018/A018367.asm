@@ -1,23 +1,21 @@
 ; A018367: Divisors of 273.
-; Submitted by TuxNews
+; Submitted by Science United
 ; 1,3,7,13,21,39,91,273
-; Formula: a(n) = d(n)+1, b(n) = (c(n-3)+d(n-4))^2+1, b(7) = 65, b(6) = 17, b(5) = 5, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = 2*b(n-1), c(6) = 10, c(5) = 2, c(4) = 2, c(3) = 2, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = 2*(c(n-5)+d(n-6))^2+2*b(n-1)+2*d(n-1)-d(n-2)-2*b(n-2)+2, d(8) = 272, d(7) = 90, d(6) = 38, d(5) = 20, d(4) = 12, d(3) = 6, d(2) = 2, d(1) = 0, d(0) = 0
 
 #offset 1
 
+sub $0,1
 lpb $0
+  sub $3,$0
   sub $0,1
-  mul $2,2
-  add $6,$4
-  mov $4,$2
-  mov $2,1
-  add $2,$1
-  pow $3,2
-  add $7,$4
-  mov $1,$3
-  mov $3,$6
-  mov $6,$5
-  add $5,$7
+  add $2,$0
 lpe
-mov $0,$5
+lpb $2
+  trn $2,9
+  add $1,$2
+  mul $1,2
+lpe
+sub $1,$3
+mov $0,$1
+mul $0,2
 add $0,1

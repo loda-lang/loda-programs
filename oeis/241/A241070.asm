@@ -1,5 +1,5 @@
 ; A241070: Least number k such that k^n + (k-1)^n + ... + 3^n + 2^n is prime, or 0 if no such k exists.
-; Submitted by taurec
+; Submitted by Science United
 ; 2,3,0,3,0,4,0,4,0,7,0,8,0
 
 #offset 1
@@ -27,7 +27,6 @@ lpb $0
   mul $8,$4
   mov $2,$3
   add $2,$9
-  sub $2,$7
   mov $3,1
   add $3,$7
   add $3,$1
@@ -35,7 +34,6 @@ lpb $0
   mul $9,$6
   mul $10,2
   gcd $0,$10
-  add $2,$7
   add $2,$7
   sub $2,$9
   sub $2,$10

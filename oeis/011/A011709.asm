@@ -1,20 +1,17 @@
 ; A011709: A binary m-sequence: expansion of reciprocal of x^8+x^7+x^2+x+1.
-; Submitted by aicoder69
+; Submitted by vaughan
 ; 0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,1,0,0,0,1,0,0,1,0,1,1,1,1,0,0,1,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,1,0,1,0,1,1
+; Formula: a(n) = -2*truncate((-2*truncate(b(n)/2)+b(n)+2)/2)-2*truncate(b(n)/2)+b(n)+2, b(n) = c(n-2), b(7) = -1, b(6) = 0, b(5) = 0, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = b(n-5)+b(n-6)+c(n-1)+c(n-2)-2, c(9) = -19, c(8) = -11, c(7) = -6, c(6) = -3, c(5) = -1, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
 
 lpb $0
+  rol $1,8
+  sub $4,1
   sub $0,1
-  mov $7,$6
-  add $7,$9
-  add $4,1
-  mov $6,$4
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  mov $8,$5
-  add $5,$7
-  add $9,$5
+  add $8,$1
+  add $8,$6
+  add $8,$7
 lpe
-mov $0,$4
+mov $0,$5
+mod $0,2
+add $0,2
 mod $0,2

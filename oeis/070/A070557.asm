@@ -14,7 +14,7 @@ lpb $0
     sub $2,$3
     mov $5,$2
     max $5,0
-    seq $5,1994 ; Expansion of 1/((1-x^2)*(1-x^4)^2*(1-x^6)*(1-x^8)*(1-x^10)) (even powers only).
+    seq $5,1994 ; Expansion of 1/((1-x)*(1-x^2)^2*(1-x^3)*(1-x^4)*(1-x^5)).
     mov $3,1
     add $4,$5
   lpe

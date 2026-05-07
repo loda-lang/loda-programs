@@ -1,18 +1,17 @@
 ; A214858: Natural numbers missing from A214857.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 5,8,12,15,19,22,26,29,32,36,39,43,46,49,53,56,60,63,67,70,73,77,80,84,87,90,94,97,101,104,108,111,114,118,121,125,128,131,135,138,142,145,149,152,155,159,162,166,169,172,176,179,183,186,189,193,196,200
+; Formula: a(n) = 2*n+floor((sqrtint(4*n*(2*n+2))+1)/2)+1
 
 #offset 1
 
-mov $1,1
-mov $2,$0
-add $2,2
-sub $0,1
-mul $2,$0
+mov $1,$0
+mul $1,4
 mul $0,2
-lpb $2
-  add $1,1
-  sub $2,$1
-lpe
+add $0,2
+mul $1,$0
+nrt $1,2
+add $1,1
+div $1,2
 add $0,$1
-add $0,4
+sub $0,1

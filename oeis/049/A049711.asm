@@ -1,21 +1,10 @@
 ; A049711: a(n) = n - prevprime(n).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,1,2,1,2,1,2,3,4,1,2,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,5,6,1,2,3
+; Formula: a(n) = A064722(n-1)+1
 
 #offset 3
 
-sub $0,3
-mov $2,$0
-lpb $2
-  add $3,2
-  mov $1,$2
-  gcd $1,$3
-  equ $1,1
-  gcd $1,2
-  sub $2,1
-  trn $2,$1
-lpe
-add $3,1
-add $0,2
-mod $0,$3
+sub $0,1
+seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 add $0,1

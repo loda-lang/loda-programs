@@ -1,17 +1,21 @@
 ; A158907: Row sums of triangle A158906.
-; Submitted by Science United
+; Submitted by HumbleIdealism
 ; 1,3,4,6,6,9,8,11,11,13,12,17,14,17,18,20,18,23,20,25,24,25,24,31,27,29,30,33,30,37,32,37,36,37,38,44,38,41,42,47,42,49,44,49,50,49,48,57,51,55,54,57,54,61,58,63,60,61,60
 
 #offset 1
 
-sub $0,1
-mov $3,135
-lpb $3
-  mov $3,$0
-  add $3,1
+mov $2,$0
+lpb $0
+  mov $3,$2
+  dif $3,$0
+  mov $4,$3
+  neq $3,$2
+  mul $3,$0
+  geq $4,2
+  mul $4,$3
+  sub $0,1
+  dif $3,$4
+  add $1,$3
 lpe
-mov $2,$3
-seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $1,$0
-add $1,$2
 mov $0,$1
+add $0,1

@@ -15,8 +15,7 @@ lpb $6
   add $7,1
   seq $7,368247 ; The number of cubefree divisors of the cubefull part of n (A360540).
   mul $7,4
-  add $7,1
-  equ $7,5
+  equ $7,4
   sub $3,$7
   add $5,1
   mov $2,$3

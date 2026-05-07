@@ -1,21 +1,12 @@
 ; A161758: a(n)=n-p+1 where p is the maximal prime less than n-2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 4,4,5,4,5,4,5,6,7,4,5,4,5,6,7,4,5,4,5,6,7,4,5,6,7,8,9,4,5,4,5,6,7,8,9,4,5,6,7,4,5,4,5,6,7,4,5,6,7,8,9,4,5,6,7,8,9,4,5,4,5,6,7,8,9,4,5,6,7,4,5,4,5,6,7,8,9,4,5,6
+; Formula: a(n) = A064722(n-3)+4
 
 #offset 5
 
-sub $0,5
-mov $2,$0
-lpb $2
-  add $3,2
-  mov $1,$2
-  gcd $1,$3
-  equ $1,1
-  gcd $1,2
-  sub $2,1
-  trn $2,$1
-lpe
-add $3,1
-add $0,2
-mod $0,$3
+mov $1,$0
+sub $1,3
+seq $1,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+mov $0,$1
 add $0,4

@@ -1,10 +1,13 @@
 ; A139194: Natural numbers of the form (prime(n)!-6)/6.
 ; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 0,19,839,6652799,1037836799,59281238015999,20274183401471999,4308669456480829439999,1473626998956616992423935999999,1370473109029653802954260479999999
-; Formula: a(n) = truncate(A139190(n+1)/3)
 
 #offset 1
 
 add $0,1
-seq $0,139190 ; a(n) = (prime(n)!-2)/2.
-div $0,3
+seq $0,40 ; The prime numbers.
+mov $1,1
+fac $1,$0
+mov $0,$1
+sub $0,2
+div $0,6
