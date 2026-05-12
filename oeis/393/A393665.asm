@@ -1,0 +1,22 @@
+; A393665: Number of order-convex subsets of the square grid poset [n]^2 with componentwise partial order.
+; Submitted by Science United
+; 2,13,114,1146,12578,146581,1784114,22443232,289721772,3818789778,51205458186,696532306614,9590979868122,133456745720613,1874038107800370,26527162393038300,378160443213077840,5424985742151048640,78266294077222701884,1134914052039617826556
+
+#offset 1
+
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,-2
+  bin $2,$0
+  add $4,1
+  mov $3,$4
+  bin $3,$1
+  pow $3,2
+  mul $3,$2
+  div $3,$4
+  add $5,$3
+  add $1,1
+lpe
+mov $0,$5
