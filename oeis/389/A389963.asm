@@ -1,0 +1,61 @@
+; A389963: Number of polyiamonds with n cells that have the maximum degree (A389962(n)) in the polyiamond graph PG(n) defined in A389961.
+; Submitted by Science United
+; 1,1,1,3,2,2,2,1,1,1,1,2,1,1,1,2,5
+
+#offset 1
+
+mov $3,77
+mov $5,233
+mov $6,409
+mov $7,743
+mov $8,1361
+mov $9,2469
+mov $10,4485
+mov $11,8183
+mov $12,14901
+mov $4,133
+sub $4,$0
+mov $13,27091
+mov $14,49293
+mov $15,89729
+mov $18,540549
+sub $0,1
+lpb $0
+  mov $2,0
+  rol $2,17
+  lex $15,3
+  mov $19,$2
+  mul $19,-2
+  sub $0,1
+  add $18,$19
+  mov $19,$3
+  mul $19,-2
+  mul $6,4
+  add $18,$19
+  add $18,$4
+  add $18,$5
+  add $18,$6
+  mov $19,$7
+  mul $19,-3
+  add $18,$19
+  mov $19,$8
+  mul $19,-1
+  add $18,$19
+  add $18,$9
+  mov $19,$10
+  mul $19,2
+  add $18,$19
+  mov $19,$12
+  mul $19,-5
+  add $18,$19
+  mov $19,$14
+  mul $19,-1
+  add $18,$19
+  mov $19,$15
+  mul $19,4
+  add $18,$19
+  add $18,$17
+lpe
+mov $0,$19
+div $0,4
+add $0,1
