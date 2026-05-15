@@ -1,6 +1,7 @@
 ; A245187: Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
 ; Submitted by Jason Smith
 ; 1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0
+; Formula: a(n) = -10*truncate((binomial(n%2+12,((floor(n/2)+1)/(4^valuation(floor(n/2)+1,4)))%2)-1)/10)+binomial(n%2+12,((floor(n/2)+1)/(4^valuation(floor(n/2)+1,4)))%2)-1
 
 mov $1,$0
 mod $0,2

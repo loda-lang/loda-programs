@@ -1,19 +1,19 @@
 ; A164944: Decimal value of the concatenation of first n even numbers in binary.
-; Submitted by Supericent
+; Submitted by Wood
 ; 2,20,166,2664,42634,682156,10914510,349264336,11176458770,357646680660,11444693781142,366230200996568,11719366431890202,375019725820486492,12000631226255567774,768040398480356337568,49154585502742805604386
 
 #offset 1
 
 lpb $0
   sub $0,1
-  add $3,2
+  mul $1,2
+  add $3,1
   mov $2,$3
-  mov $4,$3
-  lpb $4
-    mul $1,2
+  lpb $2
     div $2,2
-    mov $4,$2
+    mul $1,2
   lpe
   add $1,$3
 lpe
 mov $0,$1
+mul $0,2

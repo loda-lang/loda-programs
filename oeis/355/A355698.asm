@@ -6,7 +6,6 @@
 
 mov $2,$0
 mov $4,$0
-sub $0,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -15,7 +14,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  max $5,1
   log $5,10
   add $5,1
   mov $6,10

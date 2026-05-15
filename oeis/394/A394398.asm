@@ -1,4 +1,4 @@
-; A394398: Number of integers k, 1<= k < n, such that n|(k^2-1) and k|n^2-1.
+; A394398: Number of integers k, 1 <= k < n, such that n divides k^2-1 and k divides n^2-1.
 ; Submitted by Science United
 ; 0,1,2,2,2,2,2,3,2,2,2,2,2,2,3,2,2,2,2,2,3,2,2,3,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,3,3,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3
 

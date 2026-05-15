@@ -1,16 +1,15 @@
 ; A033964: Trajectory of 1 under map n->13n+1 if n odd, n->n/2 if n even.
-; Submitted by rajab
+; Submitted by Science United
 ; 1,14,7,92,46,23,300,150,75,976,488,244,122,61,794,397,5162,2581,33554,16777,218102,109051,1417664,708832,354416,177208,88604,44302,22151,287964,143982,71991,935884,467942
-; Formula: a(n) = (12*a(n-1)-24*truncate(a(n-1)/2)+1)*if((a(n-1)%2)==0,a(n-1)/2,a(n-1))-2*truncate(a(n-1)/2)+a(n-1), a(0) = 1
+; Formula: a(n) = if((13^2)==1,13^(-2*truncate(a(n-1)/2)+a(n-1)),if((-2*truncate(a(n-1)/2)+a(n-1))<=(-1),0,13^(-2*truncate(a(n-1)/2)+a(n-1))))*if((a(n-1)%2)==0,a(n-1)/2,a(n-1))-2*truncate(a(n-1)/2)+a(n-1), a(0) = 1
 
 mov $1,1
 lpb $0
   sub $0,1
   mov $2,$1
   mod $2,2
-  mov $3,12
-  mul $3,$2
-  add $3,1
+  mov $3,13
+  pow $3,$2
   dif $1,2
   mul $1,$3
   add $1,$2

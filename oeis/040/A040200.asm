@@ -1,15 +1,12 @@
 ; A040200: Continued fraction for sqrt(215).
-; Submitted by loader3229
+; Submitted by Science United
 ; 14,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1,28,1,1,1
+; Formula: a(n) = floor(max(binomial(2*gcd(n,4),binomial(0,n)+5),2)/2)
 
-mov $2,14
-mov $3,1
-fil $3,3
-mov $6,28
-lpb $0
-  mov $2,0
-  rol $2,5
-  add $6,$2
-  sub $0,1
-lpe
-mov $0,$2
+bin $1,$0
+add $1,5
+gcd $0,4
+mul $0,2
+bin $0,$1
+max $0,2
+div $0,2

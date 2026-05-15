@@ -1,5 +1,5 @@
 ; A348705: a(n) is the total length of all line segments in the symmetric representation of sigma(n).
-; Submitted by gingavasalata
+; Submitted by iBezanilla
 ; 4,8,12,16,18,24,24,32,34,40,36,48,42,54,56,64,54,72,60,80,78,82,72,96,84,96,98,112,90,120,96,128
 
 #offset 1
@@ -7,7 +7,6 @@
 mov $2,2
 mov $3,$0
 mul $3,2
-sub $3,1
 lpb $3
   add $5,1
   lpb $5
@@ -28,4 +27,4 @@ lpe
 add $1,$0
 mov $0,$1
 mul $0,2
-add $0,2
+add $0,4

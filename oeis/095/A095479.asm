@@ -1,10 +1,9 @@
 ; A095479: a(n) = 43 written in base 10 - n.
-; Submitted by loader3229
+; Submitted by teoparas
 ; 43,47,53,61,111,133,223,1121,101011,1111111111111111111111111111111111111111111
 
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

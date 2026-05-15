@@ -1,15 +1,14 @@
 ; A040858: Continued fraction for sqrt(888).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by teoparas
 ; 29,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1,58,1,3,1
+; Formula: a(n) = 2*gcd(n,4)+max(-binomial(0,n)+binomial(2*gcd(n,4),binomial(0,n)+5)-5,0)-1
 
-mov $2,29
-mov $3,1
-fil $3,3
-add $4,2
-mov $6,58
-lpb $0
-  rol $2,5
-  mov $6,$2
-  sub $0,1
-lpe
-mov $0,$2
+bin $2,$0
+add $2,5
+gcd $0,4
+mul $0,2
+mov $1,$0
+bin $0,$2
+trn $0,$2
+add $0,$1
+sub $0,1

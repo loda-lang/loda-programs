@@ -11,8 +11,7 @@ lpb $0
     trn $4,1
     mul $4,4
     seq $4,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-    sub $2,1
-    trn $2,9
+    trn $2,10
     add $3,$4
   lpe
   trn $0,8

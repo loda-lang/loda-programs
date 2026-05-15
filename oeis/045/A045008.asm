@@ -25,9 +25,11 @@ lpb $2
   equ $4,$0
   mov $5,-20
   mul $2,$4
-  sub $2,4
+  sub $2,3
   max $3,$1
   div $3,2
 lpe
 mov $0,$1
+sub $0,8903
 div $0,6
+add $0,1484

@@ -4,13 +4,18 @@
 
 #offset 1
 
-mov $1,$0
-mov $2,1
-lpb $2
-  div $2,2
-  mov $0,$1
-  add $0,1
-  seq $0,8364 ; 11-rough numbers: not divisible by 2, 3, 5 or 7.
-  mul $1,$2
+add $0,5
+mov $4,$0
+pow $4,4
+lpb $4
+  add $2,1
+  mov $1,$3
+  gcd $1,$2
+  div $1,$2
+  sub $0,$1
+  add $3,1
+  mul $3,2
+  sub $4,$0
 lpe
-add $0,1632373745527558118190
+mov $0,$2
+add $0,1632373745527558118191

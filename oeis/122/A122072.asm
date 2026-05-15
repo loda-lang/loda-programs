@@ -1,17 +1,21 @@
-; A122072: Greatest prime less than 10n.
-; Submitted by Simon Strandgaard
+; A122072: Greatest prime less than 10*n.
+; Submitted by Science United
 ; 7,19,29,37,47,59,67,79,89,97,109,113,127,139,149,157,167,179,181,199,199,211,229,239,241,257,269,277,283,293,307,317,317,337,349,359,367,379,389,397,409,419,421,439,449,457,467,479,487,499,509,509,523,523,547,557,569,577,587,599,607,619,619,631,647,659,661,677,683,691,709,719,727,739,743,757,769,773,787,797
 
 #offset 1
 
-mul $0,5
-lpb $0
-  sub $0,1
-  mov $1,$0
-  add $1,$0
+sub $0,2
+mov $2,$0
+mul $2,5
+add $2,9
+lpb $2
+  mov $1,$2
+  mul $1,2
   add $1,1
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $1,0
+  sub $2,$1
 lpe
+mov $0,$2
 mul $0,2
-sub $0,1
+add $0,1

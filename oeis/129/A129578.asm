@@ -1,22 +1,10 @@
 ; A129578: Column 0 of triangle A129577.
-; Submitted by Ralfy
+; Submitted by iBezanilla
 ; 1,1,2,5,16,62,275,1350,7204,41345,253319,1647434,11318410,81820186,620213998,4915135856,40617213320,349192774319,3116811173348,28830194370470,275902967857298,2727619197322857,27818539432598746
+; Formula: a(n) = A129577(binomial(n+1,2))
 
-mov $6,1
-mov $20,2
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$6
-    mov $6,$4
-    add $6,19
-    add $$6,$$5
-    sub $4,1
-  lpe
-  sub $3,1
-  mov $2,$3
-lpe
-mov $0,$20
-div $0,2
+mov $1,$0
+add $1,1
+bin $1,2
+mov $0,$1
+seq $0,129577 ; Triangle, read by rows, defined by T(n,k) = T(n-1,k) + T(n,k-1) for nk>0, where T(n,0) = T(n-1,0) + T(n-1,n-1) and T(n,n) = T(n,n-1) for n>0 with T(0,0)=1.

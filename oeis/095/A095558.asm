@@ -1,18 +1,17 @@
 ; A095558: a(n) = 83 written in base n.
-; Submitted by Science United
+; Submitted by Daniel Morton
 ; 11111111111111111111111111111111111111111111111111111111111111111111111111111111111,1010011,10002,1103,313,215,146,123,102,83,76
 
 #offset 1
 
-mov $1,$0
+sub $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
 neq $1,0
-mul $1,2
-add $1,81
+add $1,82
 lpb $1
   mov $4,$1
   mod $4,$2

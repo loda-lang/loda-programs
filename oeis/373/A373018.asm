@@ -1,32 +1,15 @@
 ; A373018: Decimal expansion of Sum_{k>=0} |sin(k*Pi/3)|/2^k.
-; Submitted by paulteo
+; Submitted by SirVeyor
 ; 7,4,2,3,0,7,4,8,8,9,5,8,0,9,0,2,6,8,6,5,4,6,1,9,8,6,0,6,4,5,3,7,3,8,7,1,5,4,6,9,1,6,5,3,7,3,4,7,3,0,5,9,8,3,4,5,2,4,8,8,7,0,5,4,7,9,3,9,9,8,6,4,3,8,9,4,8,5,7,3
+; Formula: a(n) = sqrtint(6*floor((9*10^(2*n+2))/98))%10
 
 add $0,1
-mov $2,1
-mov $3,$0
-mul $3,2
-lpb $3
-  mul $1,$3
-  mul $1,2
-  mov $5,$3
-  mul $5,6
-  mul $2,4
-  mul $2,$5
-  sub $3,1
-  sub $1,$6
-  add $1,$2
-  div $1,$0
-  mul $2,-4
-  div $2,$0
-  mov $6,$1
-lpe
-sub $3,1
-mov $4,10
-pow $4,$0
-mul $4,3
-mul $2,$3
-div $2,$4
-div $1,$2
+mul $0,2
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,9
+div $0,98
+mul $0,6
+nrt $0,2
 mod $0,10

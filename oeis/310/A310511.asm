@@ -1,7 +1,7 @@
 ; A310511: Coordination sequence Gal.6.354.1 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by ckrause
+; Submitted by Irish Republican
 ; 1,4,10,16,21,26,31,36,41,46,52,58,62,66,72,78,83,88,93,98,103,108,114,120,124,128,134,140,145,150,155,160,165,170,176,182,186,190,196,202,207,212,217,222,227,232,238,244,248,252
-; Formula: a(n) = -truncate((7*n-1)/(2*n-truncate((gcd(floor(n/2),2)+n)/2)+gcd(floor(n/2),2)+truncate((4*truncate((25*n-25)/6))/5)+3))*(2*n-truncate((gcd(floor(n/2),2)+n)/2)+gcd(floor(n/2),2)+truncate((4*truncate((25*n-25)/6))/5)+3)+10*n
+; Formula: a(n) = -truncate((7*n)/(2*n-floor((gcd(floor(n/2),2)+n)/2)+gcd(floor(n/2),2)+truncate((4*truncate((25*n-25)/6))/5)+4))*(2*n-floor((gcd(floor(n/2),2)+n)/2)+gcd(floor(n/2),2)+truncate((4*truncate((25*n-25)/6))/5)+4)+10*n+1
 
 mov $3,$0
 div $3,2
@@ -18,14 +18,13 @@ mul $1,25
 div $1,6
 mul $1,4
 div $1,5
-sub $1,15
+sub $1,14
 add $1,$5
 add $1,$5
 sub $1,$4
 mov $2,$0
 mul $2,3
 mul $0,7
-sub $0,1
 mod $0,$1
 add $0,$2
 add $0,1

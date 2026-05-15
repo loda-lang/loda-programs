@@ -1,5 +1,5 @@
 ; A395553: Number of no-overhang stacked partitions (teeth) of base 4 and total size n.
-; Submitted by Science United
+; Submitted by Plejaden
 ; 1,4,7,12,20,30,42,58,77,100,127,158,194,236,282,334,393,458,529,608,694,788,890,1000,1119,1248,1385,1532,1690,1858,2036,2226,2427,2640,2865,3102,3352,3616,3892,4182,4487,4806,5139,5488,5852,6232,6628
 
 #offset 4
@@ -59,6 +59,4 @@ lpb $0
   add $15,$16
 lpe
 mov $0,$7
-sub $0,2
 div $0,2
-add $0,1

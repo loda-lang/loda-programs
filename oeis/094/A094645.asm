@@ -1,4 +1,4 @@
-; A094645: Triangle of generalized Stirling numbers of the first kind.
+; A094645: Triangle of generalized Stirling numbers of the first kind read by rows: T(n, k) = (-1)^(n+k)*Sum_{m=0..n} Stirling1(n, m) * binomial(m, k), where Stirling1 is A048994.
 ; Submitted by loader3229
 ; 1,-1,1,0,-1,1,0,-1,0,1,0,-2,-1,2,1,0,-6,-5,5,5,1,0,-24,-26,15,25,9,1,0,-120,-154,49,140,70,14,1,0,-720,-1044,140,889,560,154,20,1,0,-5040,-8028,-64,6363,4809,1638,294,27,1,0,-40320,-69264,-8540,50840,44835,17913,3990,510,35,1
 

@@ -1,7 +1,7 @@
 ; A089709: a(1) = 1, a(2) = 2; for n>2, a(n) = sum_{r=1..n} {sum of all previous terms taken r at a time}.
-; Submitted by BrandyNOW
+; Submitted by Daniel Morton
 ; 1,2,6,36,360,6480,220320,14541120,1890345600,487709164800,250682510707200,257200255985587200,527260524770453760000,2160713630509319508480000,17704887488393364052485120000
-; Formula: a(n) = truncate(gcd(d(n-1),b(n-1)+1)/2), b(n) = b(n-1)*(c(n-1)-2), b(2) = 12, b(1) = 3, b(0) = 1, c(n) = 2*c(n-1)-4, c(2) = 8, c(1) = 6, c(0) = 5, d(n) = d(n-1), d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate((b(n-1)+1)/2), b(n) = b(n-1)*(c(n-1)-2), b(1) = 3, b(0) = 1, c(n) = 2*c(n-1)-4, c(1) = 6, c(0) = 5
 
 #offset 1
 
@@ -15,6 +15,5 @@ lpb $0
   mul $2,2
 lpe
 add $1,1
-gcd $3,$1
-mov $0,$3
-div $0,2
+div $1,2
+mov $0,$1

@@ -1,26 +1,24 @@
 ; A080468: a(n) = A080578(n)-2n.
-; Submitted by DenMartin
+; Submitted by Science United
 ; 0,1,0,1,2,1,0,1,2,1,2,3,2,1,0,1,2,1,2,3,2,1,2,3,2,3,4,3,2,1,0,1,2,1,2,3,2,1,2,3,2,3,4,3,2,1,2,3,2,3,4,3,2,3,4,3,4,5,4,3,2,1,0,1,2,1,2,3,2,1,2,3,2,3,4,3,2,1,2,3
+; Formula: a(n) = (b(n-1)+1)%10, b(n) = b(n-1)+e(n-1)+9, b(3) = 29, b(2) = 20, b(1) = 9, b(0) = 0, c(n) = d(n-1)+truncate(c(n-1)/2), c(3) = 12, c(2) = 9, c(1) = 2, c(0) = 0, d(n) = gcd(e(n-1)+truncate(c(n-1)/2),4)*d(n-1), d(3) = 32, d(2) = 8, d(1) = 8, d(0) = 2, e(n) = floor(gcd(e(n-1)+truncate(c(n-1)/2),4)/2), e(3) = 2, e(2) = 0, e(1) = 2, e(0) = 0
 
 #offset 2
 
-sub $0,2
-mov $4,-7
-mov $1,$0
-add $1,2
-lpb $1
-  sub $1,1
-  sub $3,$4
-  sub $3,5
-  div $3,4
-  sub $6,$2
-  add $6,$5
-  mov $2,1
-  add $5,$3
-  gcd $5,4
-  mul $4,$5
-  mul $4,$5
-  div $5,2
-lpe
-mov $0,$6
+mov $3,2
 sub $0,1
+lpb $0
+  sub $0,1
+  add $1,1
+  add $1,$4
+  add $1,8
+  div $2,2
+  add $4,$2
+  gcd $4,4
+  add $2,$3
+  mul $3,$4
+  div $4,2
+lpe
+mov $0,$1
+add $0,1
+mod $0,10

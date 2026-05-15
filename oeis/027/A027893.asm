@@ -1,13 +1,11 @@
 ; A027893: Divisors of 99999.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,3,9,41,123,271,369,813,2439,11111,33333,99999
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   add $3,5

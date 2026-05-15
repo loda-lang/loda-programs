@@ -1,11 +1,9 @@
 ; A018585: Divisors of 672.
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by Irish Republican
 ; 1,2,3,4,6,7,8,12,14,16,21,24,28,32,42,48,56,84,96,112,168,224,336,672
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mul $1,4
   mov $3,$2

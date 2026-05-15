@@ -1,29 +1,28 @@
 ; A327996: Decimal expansion of (1/2)*Pi^(3/4)/Gamma(3/4).
-; Submitted by vaughan
+; Submitted by Romeo Mikuli?
 ; 9,6,2,8,2,7,7,8,2,4,4,6,4,1,7,5,4,7,9,1,9,0,9,2,2,1,5,4,4,8,5,2,2,9,7,8,2,7,1,0,0,8,5,1,4,4,7,8,5,8,0,6,7,1,0,0,1,8,2,1,5,1,4,9,5,0,0,4,5,5,3,5,7,5,7,5,5,0,9,8
 
 add $0,1
 mov $3,$0
 mul $0,2
-mul $3,8
+mul $3,7
 lpb $3
   max $3,1
   max $5,$2
   div $5,$3
-  div $5,-1
   mul $2,2
   add $2,$1
   sub $3,1
   add $4,2
-  sub $4,$5
+  add $4,$5
   add $4,$1
   mul $1,2
   add $1,$4
 lpe
 mov $4,10
 pow $4,$0
-mul $2,2
 div $2,$4
+mul $2,2
 div $1,$2
 mov $0,$1
 nrt $0,2

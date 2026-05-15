@@ -9,13 +9,9 @@ lpb $0
   mov $3,$4
   mul $3,3
   bin $3,$1
-  mul $3,12
   mul $3,$4
   add $1,1
   mul $2,2
   add $2,$3
 lpe
 mov $0,$2
-sub $0,12
-div $0,12
-add $0,1

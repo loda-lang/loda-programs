@@ -1,5 +1,5 @@
 ; A348854: a(n) is the total length of all line segments in an octant of the symmetric representation of sigma(n).
-; Submitted by gingavasalata
+; Submitted by iBezanilla
 ; 2,4,6,8,9,12,12,16,17,20,18,24,21,27,28,32,27,36,30,40,39,41,36,48,42,48,49,56,45,60,48,64
 
 #offset 1
@@ -7,7 +7,6 @@
 mov $2,2
 mov $3,$0
 mul $3,2
-sub $3,2
 lpb $3
   add $5,1
   lpb $5
@@ -27,4 +26,4 @@ lpb $3
 lpe
 add $1,$0
 mov $0,$1
-add $0,1
+add $0,2

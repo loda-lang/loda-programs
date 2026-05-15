@@ -20,7 +20,6 @@ lpb $1
   equ $6,3
   sub $7,$6
   add $3,$7
-  pow $5,5
   add $5,18
 lpe
 mov $1,$3

@@ -4,13 +4,8 @@
 
 #offset 1
 
-sub $0,1
-mov $6,0
-mov $8,0
-mov $9,0
 mov $1,$0
-add $1,1
-mov $4,$1
+mov $4,$0
 mul $4,8
 nrt $4,2
 sub $4,1
@@ -18,6 +13,7 @@ div $4,2
 mov $5,$4
 add $5,1
 bin $5,2
+sub $0,1
 sub $1,$5
 sub $1,1
 mov $5,$1
@@ -35,7 +31,7 @@ lpb $4
   mul $8,$7
   add $9,$8
   add $6,1
-  mul $8,0
+  mov $8,0
   sub $8,$5
 lpe
 mov $1,$9

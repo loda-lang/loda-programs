@@ -11,7 +11,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,190886 ; a(n) = [5nr]-5[nr], where r=sqrt(5).
+  mul $3,10
+  mov $5,$3
+  pow $5,2
+  mul $5,5
+  nrt $5,2
+  mov $3,$5
+  mod $3,10
+  div $3,2
   equ $3,1
   sub $0,$3
   add $1,1
