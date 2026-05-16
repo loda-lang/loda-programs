@@ -10,8 +10,13 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,328879 ; If n = Product (p_j^k_j) then a(n) = Product (pi(p_j) + 1), where pi = A000720.
+  mul $3,-1
+  mov $4,0
+  sub $4,$3
+  add $4,1
+  seq $4,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  seq $4,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
+  mov $3,$4
   gcd $3,$0
   add $1,1
   add $2,$3

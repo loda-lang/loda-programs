@@ -1,7 +1,7 @@
 ; A246140: Limiting block extension of  A006337 (difference sequence of the Beatty sequence for sqrt(2)) with first term as initial block.
 ; Submitted by loader3229
 ; 1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1
-; Formula: a(n) = sign(sqrtint(2*(sqrtint(2*(n+8)^2)-1)^2))*((abs(sqrtint(2*(sqrtint(2*(n+8)^2)-1)^2))-1)%2+1)
+; Formula: a(n) = sign(sqrtint(2*(sqrtint(2*(n+8)^2)-1)^2))*((sqrtint(2*(sqrtint(2*(n+8)^2)-1)^2)-1)%2+1)
 
 #offset 1
 

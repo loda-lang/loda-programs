@@ -1,13 +1,12 @@
 ; A048597: Very round numbers: reduced residue system consists of only primes and 1.
-; Submitted by HumbleIdealism
+; Submitted by iBezanilla
 ; 1,2,3,4,6,8,12,18,24,30
 
 #offset 1
 
+mov $3,$0
 sub $0,1
 mov $4,$0
-mov $3,$0
-add $3,1
 lpb $3
   sub $3,1
   mov $5,3

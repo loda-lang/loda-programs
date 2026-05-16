@@ -1,5 +1,5 @@
 ; A289431: Sum of factorial-Catalan numbers over a certain family of decorations.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by fix
 ; 1,2,8,40,224,1360,8864,61984,467072
 
 mov $2,1
@@ -15,8 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     sub $4,1
-    mov $7,2
-    div $7,2
+    mov $7,1
     add $7,$4
     mul $7,$$9
     add $5,1

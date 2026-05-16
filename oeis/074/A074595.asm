@@ -1,7 +1,7 @@
 ; A074595: Number of prime factors of numbers that are not prime powers (with multiplicity).
 ; Submitted by Mumps
 ; 2,2,3,2,2,3,3,2,2,4,2,3,3,2,2,2,4,2,2,4,3,3,3,2,5,3,2,3,4,2,4,2,2,4,2,3,2,3,3,2,3,5,2,3,3,2,3,5,2,4,2,2,2,4,4,2,3,2,2,2,6,3,3,4,3,4,3,2,5,3,2,5,3,2,3,3,2,2,5,2
-; Formula: a(n) = truncate((3*A001222(A080765(n)+1))/3)
+; Formula: a(n) = floor((3*A001222(A080765(n)+1))/3)
 
 #offset 1
 

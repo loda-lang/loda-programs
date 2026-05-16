@@ -10,7 +10,6 @@ add $0,1
 add $2,3
 pow $2,4
 lpb $2
-  mov $8,0
   max $8,$1
   mov $7,$8
   add $8,1
@@ -21,38 +20,31 @@ lpb $2
   pow $6,2
   mul $6,4
   nrt $6,2
-  add $6,1
   div $6,2
-  pow $6,2
   mov $5,$1
   div $5,$6
-  mov $4,$1
-  mov $4,$5
-  add $4,1
   mov $3,$1
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,1
-  mov $12,0
-  max $12,$3
-  mov $11,$12
-  add $12,1
-  seq $12,19554 ; Smallest number whose square is divisible by n.
-  div $11,$12
+  mov $4,0
+  max $4,$3
+  mov $11,$4
+  add $4,1
+  seq $4,19554 ; Smallest number whose square is divisible by n.
+  div $11,$4
   mov $10,$11
   add $10,1
   pow $10,2
   mul $10,4
   nrt $10,2
-  add $10,1
   div $10,2
   pow $10,2
   mov $9,$3
   div $9,$10
   mov $3,$9
-  sub $3,$4
+  sub $3,$5
   sub $3,$1
-  add $3,1
   max $3,0
   min $3,1
   sub $0,$3

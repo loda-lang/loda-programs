@@ -1,16 +1,15 @@
 ; A040249: Continued fraction for sqrt(266).
-; Submitted by iBezanilla
+; Submitted by teoparas
 ; 16,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3
-; Formula: a(n) = floor(floor((((gcd(n,4)-1)^2+2)^2+8)/(2*0^n+2))/2)
+; Formula: a(n) = floor(floor((((gcd(n,4)-1)^2+2)^2+8)/(0^n+1))/4)
 
 pow $1,$0
+add $1,1
 gcd $0,4
 sub $0,1
 pow $0,2
 add $0,2
 pow $0,2
 add $0,8
-add $1,1
-mul $1,2
 div $0,$1
-div $0,2
+div $0,4

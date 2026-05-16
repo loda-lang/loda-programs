@@ -9,8 +9,7 @@ mov $1,$0
 pow $1,$1
 mov $2,1
 fac $2,$0
-mul $2,$0
-mov $0,$2
+mul $0,$2
 gcd $0,$1
 div $1,$0
 mov $0,$1

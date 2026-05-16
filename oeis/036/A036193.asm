@@ -4,18 +4,21 @@
 
 #offset 1
 
-mov $1,216
+mov $1,$0
+add $1,6
+pow $1,3
 lpb $1
   mov $2,2
   sub $2,$0
   lpb $2
-    div $2,2
-    bin $1,2
+    mov $2,0
+    add $1,1
   lpe
   pow $2,2
   mod $2,2
   mul $2,90
   sub $2,8
+  add $4,3
   mov $6,$2
   max $6,0
   mov $5,2
@@ -23,10 +26,11 @@ lpb $1
   add $0,$5
   add $3,2
   lpb $3
-    mov $3,0
+    mov $3,1
     div $0,2
   lpe
   sub $1,1
   add $4,1
 lpe
 mov $0,$4
+div $0,4
