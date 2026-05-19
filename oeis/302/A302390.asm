@@ -1,19 +1,18 @@
 ; A302390: Triameter of the n-cube-connected cycle graph.
-; Submitted by BrandyNOW
+; Submitted by lotusexcelle
 ; 13,20,25,32,36,44,48,56,60,68,72,80,84,92,96,104,108,116,120,128,132,140,144,152,156,164,168,176,180,188,192,200,204,212,216,224,228,236,240,248,252,260,264,272,276,284,288,296,300,308,312,320,324,332,336
-; Formula: a(n) = ((n-4)==1)+max(4*truncate((3*n-8)/2),1)+12
+; Formula: a(n) = (((n-4)^2)==1)+4*floor((3*n)/2)-4
 
 #offset 3
 
 mov $2,$0
-sub $2,4
 mul $0,3
-sub $0,8
 div $0,2
 mul $0,4
-max $0,1
+sub $2,4
+pow $2,2
 mov $1,$2
 equ $1,1
 add $1,$0
 mov $0,$1
-add $0,12
+sub $0,4

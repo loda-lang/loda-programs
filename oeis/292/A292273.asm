@@ -1,7 +1,7 @@
 ; A292273: For odd n: a(n) = 0, and for even n: a(n) = -mu(n), where mu is Moebius function (A008683).
 ; Submitted by Christopher Todd
 ; 0,1,0,0,0,-1,0,0,0,-1,0,0,0,-1,0,0,0,0,0,0,0,-1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,-1,0,0,0,1,0,0,0,1,0,0,0,-1,0,0,0,1,0,0
-; Formula: a(n) = A008683(n)*(truncate(gcd(n-1,2)/2)-1)
+; Formula: a(n) = A008683(n)*(floor(gcd(n-1,2)/2)-1)
 
 #offset 1
 

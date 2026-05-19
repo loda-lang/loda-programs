@@ -9,7 +9,12 @@ bin $3,2
 lpb $0
   sub $0,1
   mov $4,$2
-  seq $4,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
+  add $4,2
+  seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mov $6,$2
+  add $6,1
+  seq $6,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  sub $4,$6
   mov $5,$2
   add $5,$3
   add $5,1

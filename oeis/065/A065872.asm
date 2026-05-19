@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,3
 pow $2,2
 lpb $2
   mov $6,0
@@ -17,7 +16,6 @@ lpb $2
   lpb $3
     gcd $6,2
     mov $7,$3
-    div $7,3
     lpb $7
       mov $5,$3
       mod $5,$6

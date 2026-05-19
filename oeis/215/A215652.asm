@@ -10,5 +10,5 @@ mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
-seq $1,3725 ; E.g.f.: exp( x * exp(-x) ).
+seq $1,3725 ; Expansion of e.g.f. exp( x * exp(-x) ).
 mul $0,$1

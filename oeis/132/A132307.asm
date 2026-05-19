@@ -1,8 +1,35 @@
 ; A132307: 2*A007318^(2) - A000012.
-; Submitted by Daniel Morton
+; Submitted by iBezanilla
 ; 1,3,1,7,7,1,15,23,11,1,31,63,47,15,1,63,159,159,79,19,1,127,383,479,319,119,23,1,255,895,1343,1119,559,167,27,1,511,2047,3583,3583,2239,895,223,31,1,1023,4607,9215,10751,8063,4031,1343,287,35,1
-; Formula: a(n) = 2*A038207(n)-1
 
-seq $0,38207 ; Triangle whose (i,j)-th entry is binomial(i,j)*2^(i-j).
+add $0,1
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $3,$1
+  add $3,1
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  add $6,1
+  bin $6,2
+  add $1,1
+  sub $3,$6
+  sub $3,1
+  mov $6,$4
+  sub $6,$3
+  bin $4,$3
+  mov $3,2
+  pow $3,$6
+  mul $3,$4
+  mul $3,3
+  mov $5,$3
+lpe
+mov $0,$5
+sub $0,3
+div $0,3
 mul $0,2
-sub $0,1
+add $0,1

@@ -4,6 +4,14 @@
 
 mov $1,1
 fac $1,$0
+mov $5,1
 mov $2,$1
-seq $2,7095 ; Numbers in base 9.
-mov $0,$2
+lpb $2
+  mov $4,$2
+  mod $4,9
+  mul $4,$5
+  div $2,9
+  add $3,$4
+  mul $5,10
+lpe
+mov $0,$3

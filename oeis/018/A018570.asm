@@ -6,7 +6,6 @@
 
 lpb $0
   mul $1,18
-  add $1,72
   mov $3,$2
   lpb $3
     add $2,1
@@ -16,7 +15,7 @@ lpb $0
     equ $4,0
     sub $3,$4
   lpe
-  mov $1,32
+  mov $1,36
   add $2,1
   sub $0,1
 lpe

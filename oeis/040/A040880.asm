@@ -13,7 +13,6 @@ mul $1,5
 add $2,$1
 mov $1,$0
 equ $1,2
-mul $1,2
 add $2,$1
 mov $1,$0
 equ $1,3
@@ -37,7 +36,6 @@ mul $1,4
 add $2,$1
 mov $1,$0
 equ $1,9
-mul $1,2
 add $2,$1
 mov $1,$0
 equ $1,12
@@ -45,7 +43,6 @@ mul $1,29
 add $2,$1
 mov $1,$0
 equ $1,15
-mul $1,2
 add $2,$1
 mov $1,$0
 equ $1,16
@@ -69,7 +66,6 @@ mul $1,8
 add $2,$1
 mov $1,$0
 equ $1,22
-mul $1,2
 add $2,$1
 mov $1,$0
 equ $1,23
@@ -79,8 +75,9 @@ mov $1,$0
 equ $1,24
 mul $1,60
 add $2,$1
+sub $2,1
 mul $2,2
 mov $0,$2
 sub $0,1
 div $0,2
-add $0,1
+add $0,2

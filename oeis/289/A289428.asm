@@ -1,5 +1,5 @@
 ; A289428: Sum of factorial-Catalan numbers over a certain family of decorations.
-; Submitted by Supericent
+; Submitted by Goldislops
 ; 1,3,18,144,1368,14688,173664,2226528,30647808
 
 bin $1,0
@@ -30,6 +30,4 @@ lpb $0
   sub $1,19
 lpe
 mov $0,$7
-sub $0,6
 div $0,6
-add $0,1

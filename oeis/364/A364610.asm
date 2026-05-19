@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,90885 ; Sum of the squares of the exponents in the prime factorization of n.
-  add $3,1
-  equ $3,4
+  equ $3,3
   add $5,5
   sub $0,$3
   mov $4,$0

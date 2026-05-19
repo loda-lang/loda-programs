@@ -17,8 +17,7 @@ lpb $2
   add $5,2
   div $5,4
   mov $3,$5
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,4
   mov $4,$0

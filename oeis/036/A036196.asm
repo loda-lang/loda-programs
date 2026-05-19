@@ -23,8 +23,8 @@ lpb $1
   lpb $3
     equ $3,7
     div $0,2
+    sub $1,1
   lpe
-  sub $1,1
 lpe
 mov $0,$4
 div $0,4

@@ -1,5 +1,5 @@
 ; A395013: Deficient numbers k for which the k-th Fibonacci number is abundant.
-; Submitted by HumbleIdealism
+; Submitted by Science United
 ; 225,315,525,675,735,855,1125,1155
 
 #offset 1
@@ -18,5 +18,6 @@ lpb $0
   sub $0,1
 lpe
 mov $0,$13
-mul $0,30
-add $0,195
+add $0,$13
+add $0,13
+mul $0,15

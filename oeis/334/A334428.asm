@@ -1,5 +1,5 @@
 ; A334428: Irregular triangle read by rows: row n gives the members of the smallest nonnegative reduced residue system in the modified congruence modulo 2*n - 1 by Brändli and Beyne, called mod*(2*n - 1).
-; Submitted by rajab
+; Submitted by Bagoda Tes-X
 ; 0,1,1,2,1,2,3,1,2,4,1,2,3,4,5,1,2,3,4,5,6,1,2,4,7,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,9,1,2,4,5,8,10,1,2,3,4,5,6,7,8,9,10,11,1,2,3,4,6,7,8,9,11,12,1,2,4,5,7,8,10,11,13,1,2
 
 #offset 1
@@ -13,8 +13,7 @@ lpb $2
   mov $6,0
   mov $3,$1
   lpb $3
-    add $6,$4
-    add $6,1
+    add $6,2
     sub $3,$6
   lpe
   mov $5,$3
@@ -31,8 +30,7 @@ lpb $2
   mul $3,338
   add $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

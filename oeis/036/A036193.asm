@@ -12,7 +12,7 @@ lpb $1
   sub $2,$0
   lpb $2
     mov $2,0
-    add $1,1
+    add $1,9
   lpe
   pow $2,2
   mod $2,2

@@ -1,4 +1,4 @@
-; A265425: Numbers n such that n+2 and sigma(n-1) are both primes.
+; A265425: Numbers k such that k+2 and sigma(k-1) are both primes.
 ; Submitted by bryentravis
 ; 3,5,17,65,4097,65537,262145,1073741825
 

@@ -1,15 +1,14 @@
 ; A127994: Maximum bowling score for a game with exactly n strikes.
-; Submitted by Vato
+; Submitted by Supericent
 ; 190,192,202,213,224,235,246,257,268,279,289,299,300
 ; Formula: a(n) = floor((73*floor((10*n+11)/11)+14*floor((10*n+21)/11)+219)/8)+152
 
 mul $0,10
-add $0,12
 mov $1,$0
-add $0,9
+add $0,21
 div $0,11
 mul $0,14
-sub $1,1
+add $1,11
 div $1,11
 add $1,3
 add $0,$1

@@ -13,8 +13,7 @@ lpb $0
   add $5,$3
   mul $6,3
   sub $0,$6
-  sub $0,2
-  trn $0,3
+  trn $0,5
   add $1,1
   mov $2,$1
   neq $6,$0

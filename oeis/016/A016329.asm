@@ -20,6 +20,5 @@ lpb $1
   add $3,$7
   add $5,18
 lpe
-mov $1,$3
-mul $1,$2
-mov $0,$1
+mul $2,$3
+mov $0,$2

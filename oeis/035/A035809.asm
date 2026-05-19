@@ -1,18 +1,16 @@
 ; A035809: Coordination sequence for lattice D*_48 (with edges defined by l_1 norm = 1).
-; Submitted by Science United
+; Submitted by Goldislops
 ; 1,96,4608,147488,3542016,68095200,1091884544,15023056032,181095585792,1943370847584,18801236605440,165673550159136,1341056098444288,10043368807877088,70018291338395136,456821317532555680
+; Formula: a(n) = truncate((3360*a(n-1)+b(n-1))/(35*n)), a(3) = 147488, a(2) = 4608, a(1) = 96, a(0) = 1, b(n) = 3360*a(n-2)+b(n-2), b(3) = 322560, b(2) = 3360, b(1) = 0, b(0) = 0
 
-add $0,2
+mov $2,1
 lpb $0
-  mov $2,$0
-  sub $0,2
-  add $2,45
-  bin $2,$0
-  mov $3,48
-  bin $3,$1
-  mul $3,$2
-  add $0,1
-  add $1,1
-  add $4,$3
+  sub $0,1
+  mul $2,3360
+  add $2,$3
+  mov $3,$4
+  mov $4,$2
+  add $1,35
+  div $2,$1
 lpe
-mov $0,$4
+mov $0,$2

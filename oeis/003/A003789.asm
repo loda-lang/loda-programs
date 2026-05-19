@@ -1,5 +1,5 @@
 ; A003789: Order of universal Chevalley group A_n (5).
-; Submitted by zogoon
+; Submitted by atannir
 ; 1,120,372000,29016000000,56653740000000000,2766118855500000000000000,3376566710423156250000000000000000,103044374585338670859375000000000000000000000
 ; Formula: a(n) = truncate(b(n+1)/4), b(n) = b(n-1)*(c(n-1)+1)*(5*c(n-1)+4), b(1) = 4, b(0) = 1, c(n) = 5*c(n-1)+4, c(1) = 4, c(0) = 0
 
@@ -7,13 +7,11 @@ mov $1,1
 add $0,1
 lpb $0
   sub $0,1
-  mov $3,1
-  add $3,$2
-  mov $4,4
-  mul $4,$3
-  add $2,$4
+  add $2,1
   mul $1,$2
-  mul $1,$3
+  mul $2,5
+  sub $2,1
+  mul $1,$2
 lpe
 mov $0,$1
 div $0,4
