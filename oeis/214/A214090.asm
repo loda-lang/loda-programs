@@ -1,7 +1,7 @@
 ; A214090: Period 6: repeat [0, 0, 1, 0, 1, 1].
 ; Submitted by Science United
 ; 0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0
-; Formula: a(n) = -2*truncate(truncate(bitxor(n,1)/3)/2)+truncate(bitxor(n,1)/3)
+; Formula: a(n) = floor(bitxor(n,1)/3)%2
 
 bxo $0,1
 div $0,3

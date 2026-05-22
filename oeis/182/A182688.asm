@@ -1,7 +1,7 @@
 ; A182688: a(n) = the largest 1-digit number with exactly n divisors, a(n) = 0 if no such number exists.
 ; Submitted by BrandyNOW
 ; 1,7,9,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -10*truncate(truncate(truncate((10*binomial(max(n-1,8),2*n-2))/(2*n))/4)/10)+truncate(truncate((10*binomial(max(n-1,8),2*n-2))/(2*n))/4)
+; Formula: a(n) = floor(floor((10*binomial(max(n-1,8),2*n-2))/(2*n))/4)%10
 
 #offset 1
 

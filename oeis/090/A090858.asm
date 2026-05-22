@@ -13,8 +13,7 @@ lpb $0
     seq $1,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
     add $3,$1
     sub $4,$0
-    add $4,3
-    trn $4,3
+    max $4,0
   lpe
   max $0,1
   add $2,1

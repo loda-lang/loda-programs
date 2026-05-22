@@ -14,8 +14,14 @@ lpb $2
   sub $0,$2
   add $0,1
   div $0,2
-  seq $0,108579 ; Number of symmetry classes of 3 X 3 magic squares (with distinct positive entries) having magic sum 3n.
-  add $1,$0
+  mul $0,3
+  sub $0,8
+  pow $0,2
+  div $0,9
+  add $0,1
+  mov $4,$0
+  div $4,4
+  add $1,$4
 lpe
 mov $0,$1
 mul $0,8

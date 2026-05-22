@@ -4,7 +4,9 @@
 
 #offset 1
 
-mov $1,216
+mov $1,$0
+add $1,6
+pow $1,3
 lpb $1
   mov $3,1
   mov $2,2
@@ -21,7 +23,7 @@ lpb $1
   mul $5,$2
   add $0,$5
   lpb $3
-    equ $3,7
+    mov $3,0
     div $0,2
     sub $1,1
   lpe

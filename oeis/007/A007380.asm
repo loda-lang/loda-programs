@@ -1,11 +1,10 @@
 ; A007380: Number of 5th-order maximal independent sets in path graph.
-; Submitted by Science United
+; Submitted by morse [E.R.] - BOINC.Italy
 ; 1,2,1,3,1,4,2,5,4,6,7,7,11,9,16,13,22,20,29,31,38,47,51,69,71,98,102,136,149,187,218,258,316,360,452,509,639,727,897,1043,1257,1495,1766,2134,2493,3031,3536,4288,5031,6054,7165,8547,10196
 ; Formula: a(n) = b(n+5), b(n) = b(n-2)+b(n-7), b(9) = 3, b(8) = 1, b(7) = 2, b(6) = 1, b(5) = 1, b(4) = 1, b(3) = 0, b(2) = 1, b(1) = 0, b(0) = 1
 
 #offset 1
 
-mov $4,1
 mov $6,1
 mov $8,1
 add $0,5
@@ -14,4 +13,4 @@ lpb $0
   add $8,$6
   sub $0,1
 lpe
-mov $0,$6
+mov $0,$8

@@ -16,6 +16,5 @@ lpb $2
   sub $0,$2
   mov $1,$0
   seq $1,132881 ; a(n) is the number of isolated divisors of n.
-  sub $0,1
 lpe
 mov $0,$1

@@ -1,4 +1,4 @@
-; A155717: Numbers of the form N = a^2 + 7b^2 for some positive integers a,b.
+; A155717: Numbers of the form N = a^2 + 7*b^2 for some positive integers a, b.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 8,11,16,23,29,32,37,43,44,53,56,64,67,71,72,77,79,88,92,99,107,109,112,113,116,121,127,128,137,144,148,149,151,161,163,172,176,179,184,191,193,197,200,203,207,211,212,224,232,233,239,253,256,259,261,263,268
 

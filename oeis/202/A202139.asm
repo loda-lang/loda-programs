@@ -8,8 +8,13 @@ bin $3,2
 add $0,1
 lpb $0
   sub $0,1
+  mov $6,$2
+  sub $6,1
+  mov $7,1
+  fac $7,$6
   mov $4,$2
-  seq $4,104150 ; Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.
+  min $4,1
+  mul $4,$7
   mov $5,$2
   add $5,$3
   seq $5,111594 ; Triangle of arctanh numbers.

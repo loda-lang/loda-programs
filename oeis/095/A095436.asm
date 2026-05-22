@@ -1,5 +1,5 @@
 ; A095436: a(n) = 21 written in base n.
-; Submitted by kpmonaghan
+; Submitted by [SG]KidDoesCrunch
 ; 111111111111111111111,10101,210,111,41,33,30,25,23,21
 
 #offset 1
@@ -9,8 +9,7 @@ mov $5,$0
 equ $5,1
 mov $1,$0
 neq $1,0
-mul $1,18
-add $1,3
+add $1,20
 lpb $1
   mov $4,$1
   mod $4,$0

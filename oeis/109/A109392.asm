@@ -1,16 +1,16 @@
 ; A109392: Partial sums of A109391.
-; Submitted by Science United
+; Submitted by Ryan Hothersall
 ; 0,1,13,175,2735,49610,1029386,24088590,628068366,18061990371,568061990371,19398632250697,714854467214665,28276489167109688,1195037205850701368,53742304051553826368,2562499498076052846144
-; Formula: a(n) = truncate(b(n)/2), b(n) = (n+1)*n^(n+1)+b(n-1), b(0) = 0
+; Formula: a(n) = truncate(b(n+1)/2), b(n) = n*(n-1)^n+b(n-1), b(0) = 0
 
+add $0,1
 lpb $0
-  mov $3,1
-  add $3,$0
-  mov $2,$0
-  pow $2,$3
-  mul $2,$3
+  mov $1,$0
+  sub $1,1
+  pow $1,$0
+  mul $1,$0
   sub $0,1
-  add $1,$2
+  add $2,$1
 lpe
-mov $0,$1
+mov $0,$2
 div $0,2

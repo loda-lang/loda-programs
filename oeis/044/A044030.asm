@@ -1,6 +1,7 @@
 ; A044030: Numbers k such that 4 and 9 occur juxtaposed in the base-10 representation of k but not of k+1.
 ; Submitted by Science United
 ; 49,94,149,194,249,294,349,394,449,499,549,594,649,694,749,794,849,894,949,994,1049,1094,1149,1194,1249,1294,1349,1394,1449,1499,1549,1594,1649,1694,1749,1794,1849,1894,1949,1994,2049
+; Formula: a(n) = 5*floor((if((n%10)==0,n/10,n)%2+50*n+39)/5)-41
 
 #offset 1
 

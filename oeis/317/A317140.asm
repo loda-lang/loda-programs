@@ -8,10 +8,8 @@ lpb $5
   sub $5,1
   sub $0,1
   sub $3,$0
-  mov $4,$0
-  max $4,0
-  mov $6,$4
-  add $6,$4
+  mov $6,$0
+  add $6,$0
   bin $6,2
   add $6,1
   mov $10,$6
@@ -28,8 +26,6 @@ lpb $5
   div $6,2
   mov $7,$10
   add $7,$6
-  mov $6,$7
-  add $6,1
   mov $8,$7
   add $8,2
   mov $11,$8
@@ -40,16 +36,14 @@ lpb $5
   mov $12,$11
   add $12,1
   bin $12,2
-  sub $8,$12
-  sub $8,1
   mov $13,$11
   mod $13,2
-  sub $11,$8
   mul $11,$13
-  mul $13,$8
-  sub $8,$13
+  sub $8,1
+  sub $8,$12
   add $8,$11
-  add $8,$6
+  add $8,$7
+  mov $6,$7
   add $6,1
   mov $9,$6
   mul $9,8

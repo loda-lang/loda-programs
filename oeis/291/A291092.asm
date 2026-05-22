@@ -1,10 +1,9 @@
 ; A291092: 1 followed by infinitely many 9's.
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by iBezanilla
 ; 1,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
-; Formula: a(n) = gcd((n-1)==0,9)
+; Formula: a(n) = gcd(n==1,9)
 
 #offset 1
 
-sub $0,1
-equ $0,0
+equ $0,1
 gcd $0,9

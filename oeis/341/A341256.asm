@@ -1,12 +1,11 @@
 ; A341256: Concatenation of all 01-words in the order induced by A004526; see Comments.
-; Submitted by Penguin
+; Submitted by Science United
 ; 0,1,0,0,1,0,0,1,1,1,0,0,0,1,0,0,0,1,0,1,1,0,0,0,1,1,0,1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1,0,1,0,0,1,1,0,1,1,1,0,0,0,0,1,1,0,0,1,0,1,0,1,1,1
 
 #offset 1
 
 mov $4,$0
 add $4,1
-sub $0,1
 lpb $3,5
   mov $5,$4
   lpb $5

@@ -1,20 +1,19 @@
 ; A010211: Continued fraction for sqrt(162).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 12,1,2,1,2,12,2,1,2,1,24,1,2,1,2,12,2,1,2,1,24,1,2,1,2,12,2,1,2,1,24,1,2,1,2,12,2,1,2,1,24,1,2,1,2,12,2,1,2,1,24,1,2,1,2,12,2,1,2,1,24,1,2,1,2,12,2,1,2,1,24,1,2,1,2
 
-mov $2,12
-mov $4,2
-mov $6,2
-mov $7,12
-mov $8,2
-mov $10,2
-mov $12,24
+mov $3,23
+mov $7,2
+mov $8,23
+mov $9,2
+mov $13,46
+pow $0,2
 lpb $0
-  mov $2,0
-  rol $2,11
-  add $12,$2
+  mov $3,0
+  rol $3,11
+  add $13,$3
   sub $0,1
 lpe
-trn $2,1
-mov $0,$2
+mov $0,$3
+div $0,2
 add $0,1

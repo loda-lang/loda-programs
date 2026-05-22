@@ -1,31 +1,13 @@
 ; A094591: a(0) = 1; a(n) = n + (largest element of {a} <= n).
-; Submitted by Landjunge
+; Submitted by Science United
 ; 1,2,4,5,8,10,11,12,16,17,20,22,24,25,26,27,32,34,35,36,40,41,44,45,48,50,52,54,55,56,57,58,64,65,68,70,72,73,74,75,80,82,83,84,88,90,91,92,96,97,100,101,104,105,108,110,112,114,116,117,118,119,120,121,128,130,131,132,136,137,140,141,144,146,148,150,151,152,153,154
 
-mov $2,1
-mov $10,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,2
-    mul $7,$$9
-    sub $2,$4
-    max $5,$1
-    add $6,$7
-  lpe
-  div $6,2
-  add $9,$5
-  add $9,$6
-  mov $3,$6
-  mov $$9,$3
-  add $1,$6
-  add $2,1
+  sub $0,$1
+  mov $1,$0
+  max $1,0
+  seq $1,37988 ; Critical values in Conway's game of one-dimensional phutball.
 lpe
 mov $0,$1
 add $0,1

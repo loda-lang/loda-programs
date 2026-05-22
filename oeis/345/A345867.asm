@@ -16,7 +16,6 @@ lpb $1
   seq $0,40 ; The prime numbers.
   mov $4,$0
   dgs $4,2
-  max $0,1
   log $0,2
   add $0,1
   sub $0,$4

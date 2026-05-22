@@ -1,5 +1,5 @@
 ; A023612: Convolution of Fibonacci numbers and A001950.
-; Submitted by Science United
+; Submitted by cinquefiore
 ; 2,7,16,33,62,110,190,320,533,879,1440,2350,3824,6210,10073,16324,26441,42812,69302,112166,181522,293745,475327,769134,1244526,2013728,3258324,5272125,8530524
 
 add $0,1
@@ -11,10 +11,9 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  mov $6,$0
+  add $4,$0
   mul $0,55
   div $0,34
-  add $0,$6
   add $3,$0
   add $4,$3
 lpe

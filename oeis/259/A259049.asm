@@ -1,26 +1,25 @@
 ; A259049: Number of self-complementary plane partitions in a (2n)-cube.
-; Submitted by Odd-Rod
+; Submitted by Science United
 ; 1,4,400,960400,54218191104,71410553858811024,2186315392560559723530496,1552832545847343203950118294425600,25554649541466337940020968722797075170918400,9736551559782513812975251884508283964266367033264640000
 
-mov $3,$0
-mul $3,2
-mov $4,4
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $0,$3
-  sub $0,$5
+mov $2,$0
+mul $2,2
+mov $3,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
   sub $0,1
   mov $1,$0
-  mov $2,$0
-  max $0,$3
+  mov $5,$0
+  max $0,$2
   div $0,2
+  bin $5,$0
+  add $1,$0
   bin $1,$0
-  add $2,$0
-  bin $2,$0
-  mul $4,$2
-  div $4,$1
+  mul $3,$1
+  div $3,$5
 lpe
-mov $0,$4
-div $0,4
-pow $0,2
+pow $3,2
+mov $0,$3

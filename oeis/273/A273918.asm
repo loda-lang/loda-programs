@@ -1,7 +1,7 @@
 ; A273918: Numerator of z(n), where z(n) = z(n - 1)^2 + 1/4 and z(0) = 1.
-; Submitted by Fardringle
+; Submitted by Science United
 ; 1,5,29,905,835409,698981939105,488580362881004355588929,238710771078004490460834598457103704776369419905
-; Formula: a(n) = 2*truncate((b(n)+7)/2)-7, b(n) = b(n-1)^2+c(n-1)^2, b(1) = 5, b(0) = 2, c(n) = 2*c(n-1)^2, c(1) = 2, c(0) = 1
+; Formula: a(n) = max(d(n),1), b(n) = b(n-1)^2+c(n-1)^2, b(2) = 29, b(1) = 5, b(0) = 2, c(n) = 2*c(n-1)^2, c(2) = 8, c(1) = 2, c(0) = 1, d(n) = b(n-1)^2+c(n-1)^2, d(2) = 29, d(1) = 5, d(0) = 0
 
 mov $1,2
 mov $2,1
@@ -11,9 +11,7 @@ lpb $0
   pow $1,2
   add $1,$2
   mul $2,2
+  mov $3,$1
 lpe
-mov $0,$1
-add $0,7
-div $0,2
-mul $0,2
-sub $0,7
+max $3,1
+mov $0,$3

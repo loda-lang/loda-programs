@@ -12,8 +12,7 @@ lpb $0
 lpe
 add $2,1
 mov $3,1
-add $0,12
-mul $0,2
+add $0,24
 lpb $0
   sub $0,2
   mov $1,$3
