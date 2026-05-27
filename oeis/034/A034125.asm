@@ -1,12 +1,11 @@
 ; A034125: Decimal part of cube root of n starts with digit 9.
-; Submitted by morse [E.R.] - BOINC.Italy
+; Submitted by Science United
 ; 7,25,26,60,61,62,63,118,119,120,121,122,123,124,206,207,208,209,210,211,212,213,214,215,329,330,331,332,333,334,335,336,337,338,339,340,341,342,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508
 
 #offset 1
 
-mov $2,$0
-add $2,6
-pow $2,3
+mov $2,6
+pow $2,$0
 lpb $2
   mov $4,1
   add $4,$1

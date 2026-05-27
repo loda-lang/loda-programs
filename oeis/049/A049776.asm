@@ -5,8 +5,7 @@
 
 #offset 1
 
-sub $0,1
-trn $0,1
+trn $0,2
 add $0,1
 seq $0,341257 ; Positions of palindromes in the ordering of all 01-words defined at A341256.
 add $0,1

@@ -16,7 +16,6 @@ lpb $3
   seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
   seq $4,122045 ; Euler (or secant) numbers E(n).
   sub $4,$0
-  mov $0,$4
   add $1,$4
   add $2,1
 lpe

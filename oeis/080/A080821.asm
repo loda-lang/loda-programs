@@ -16,8 +16,7 @@ lpb $2
   mul $3,$1
   add $3,1
   seq $3,80816 ; Triangle read by rows in which n-th row gives trajectory of n (omitting n itself) under the map k -> k+1 if k odd, k -> k/2 if k even.
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,2
   mov $4,$0

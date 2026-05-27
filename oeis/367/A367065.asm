@@ -1,5 +1,5 @@
 ; A367065: a(1)=2, thereafter a(n) is the least positive integer not yet in the sequence such that Sum_{i=1..n} a(i) == 2 (mod n+2).
-; Submitted by Johnbodlis team
+; Submitted by drnickrivera
 ; 2,4,1,7,9,3,12,14,5,17,6,20,22,8,25,27,10,30,11,33,35,13,38,40,15,43,16,46,48,18,51,19,54,56,21,59,61,23,64,24,67,69,26,72,74,28,77,29,80,82,31,85,32,88,90,34,93,95,36,98,37,101,103,39,106,108,41,111,42,114
 
 #offset 1
@@ -11,8 +11,7 @@ lpb $6
   mov $0,$4
   add $0,$6
   mov $1,$0
-  add $1,$0
-  mul $1,2
+  mul $1,4
   add $1,$0
   mul $1,$0
   sub $1,7

@@ -1,5 +1,5 @@
 ; A006620: A variant of Zarankiewicz's problem: a(n) is the least k such that every n X (n+1) {0,1}-matrix with k ones contains an all-ones 2 X 2 submatrix.
-; Submitted by LtFerrante
+; Submitted by Goldislops
 ; 5,8,11,15,19,23,27,32,37,43,49,54,59,64
 
 #offset 2
@@ -9,14 +9,11 @@ lpb $0
   sub $0,3
   sub $3,1
   sub $0,$3
-  mov $5,$0
-  div $5,24
-  mul $5,56
   mov $2,$0
   div $2,2
-  dgr $2,13
   mov $4,$2
   equ $4,0
+  bin $5,0
   add $5,$4
   mov $4,$2
   equ $4,1
@@ -49,4 +46,4 @@ lpb $0
   add $1,$5
 lpe
 mov $0,$1
-add $0,3
+add $0,1

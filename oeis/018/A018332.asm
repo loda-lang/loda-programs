@@ -10,11 +10,10 @@ lpb $2
   add $4,1
   mov $3,$1
   mul $3,20
-  sub $3,80
   gcd $3,$4
   div $3,$4
   sub $0,$3
-  add $1,6
+  add $1,10
   sub $2,$0
 lpe
 mov $0,$4

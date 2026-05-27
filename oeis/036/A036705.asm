@@ -13,7 +13,6 @@ lpb $5
   mov $2,1
   lpb $2
     mov $2,0
-    mov $0,$1
     add $0,1
     mul $0,$1
     seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.

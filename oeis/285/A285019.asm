@@ -1,6 +1,7 @@
 ; A285019: Numerator of (-1/3)^n*sqrt(Pi)/(Gamma(1/2 - n)*Gamma(1 + n)).
 ; Submitted by BrandyNOW
 ; 1,1,1,5,35,7,77,143,715,12155,46189,29393,676039,1300075,185725,1077205,33393355,21607465,756261275,1472719325,3829070245,22427411435,87670790155,19058867425,895766768975,1755702867191
+; Formula: a(n) = if(if(binomial(2*n,n)==0,0,binomial(2*n,n)/(2^valuation(binomial(2*n,n),2)))==0,0,if(binomial(2*n,n)==0,0,binomial(2*n,n)/(2^valuation(binomial(2*n,n),2)))/(3^valuation(if(binomial(2*n,n)==0,0,binomial(2*n,n)/(2^valuation(binomial(2*n,n),2))),3)))
 
 mov $1,$0
 mul $1,2

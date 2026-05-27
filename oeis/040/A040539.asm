@@ -1,19 +1,18 @@
 ; A040539: Continued fraction for sqrt(563).
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 23,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1,46,1,2,1,2,23,2,1,2,1
 
-mov $1,23
-mov $2,1
-mov $5,2
-mov $6,23
+mov $3,23
 mov $7,2
-mov $10,1
-mov $11,46
+mov $8,23
+mov $9,2
+mov $13,46
 pow $0,2
 lpb $0
-  mov $1,0
-  rol $1,11
-  add $11,$1
+  mov $3,0
+  rol $3,11
+  add $13,$3
   sub $0,1
 lpe
-mov $0,$1
+max $3,1
+mov $0,$3

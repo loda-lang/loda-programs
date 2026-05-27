@@ -1,20 +1,21 @@
 ; A090439: Alternating row sums of array A090438 ((4,2)-Stirling2).
-; Submitted by ckrause
+; Submitted by drnickrivera
 ; 1,5,37,-887,-168919,-21607859,-2799384755,-337767590383,-11912361112367,21032925955607701,16703816669710968821,10654267957172226744985,6614425802684094455696377,4120103872599589439389105373
+; Formula: a(n) = truncate(c(max(2*n-2,0))/3), b(n) = n*(-c(n-1)+b(n-1)), b(2) = -18, b(1) = -3, b(0) = 0, c(n) = c(n-1)*(n+2)-c(n-1)+b(n-1), c(2) = 15, c(1) = 6, c(0) = 3
 
 #offset 1
 
-mov $1,2
-mul $0,2
+mov $3,3
 sub $0,1
+mul $0,2
 lpb $0
   sub $0,1
   sub $1,$3
-  add $2,1
+  add $2,3
   mul $3,$2
   add $3,$1
-  mul $1,$0
-  mov $2,$0
+  sub $2,2
+  mul $1,$2
 lpe
 mov $0,$3
-div $0,2
+div $0,3

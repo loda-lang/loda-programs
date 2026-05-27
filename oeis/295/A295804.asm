@@ -1,7 +1,7 @@
 ; A295804: Numbers that have exactly seven representations as a sum of seven positive squares.
-; Submitted by William Michael Kanar
+; Submitted by LCB001
 ; 55,58,63,64,74,75,80,89
-; Formula: a(n) = -truncate((7*n+62)/(6*n-2*truncate((6*n+binomial(0,truncate((3*n-7)/7))+truncate(truncate((3*n-7)/7)/5)-4)/3)+truncate(truncate((3*n-7)/7)/5)-5))*(6*n-2*truncate((6*n+binomial(0,truncate((3*n-7)/7))+truncate(truncate((3*n-7)/7)/5)-4)/3)+truncate(truncate((3*n-7)/7)/5)-5)+10*n+114
+; Formula: a(n) = -truncate((7*n+62)/(6*n-2*truncate((6*n+binomial(0,truncate((3*n-7)/7))-4)/3)-5))*(6*n-2*truncate((6*n+binomial(0,truncate((3*n-7)/7))-4)/3)-5)+10*n+114
 
 #offset 1
 
@@ -14,8 +14,7 @@ mul $1,3
 sub $1,4
 div $1,7
 bin $3,$1
-div $1,5
-add $1,1
+mov $1,1
 add $1,$4
 add $3,$1
 add $3,1

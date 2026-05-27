@@ -14,9 +14,8 @@ lpb $2
   add $3,1
   seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   div $3,2
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-  sub $3,1
-  equ $3,1
+  dgs $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

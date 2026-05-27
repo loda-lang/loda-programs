@@ -20,7 +20,9 @@ lpb $0
   bin $4,2
   mov $7,$6
   sub $7,$4
-  seq $7,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $9,0
+  sub $9,$7
+  fac $7,$9
   mov $8,$6
   seq $8,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   div $8,$7

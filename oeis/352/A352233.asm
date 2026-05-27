@@ -12,8 +12,7 @@ mul $2,81
 lpb $2
   mov $3,$1
   seq $3,45917 ; From Goldbach problem: number of decompositions of 2n into unordered sums of two primes.
-  sub $3,1
-  equ $3,9
+  equ $3,10
   sub $0,$3
   add $1,1
   mov $4,$0

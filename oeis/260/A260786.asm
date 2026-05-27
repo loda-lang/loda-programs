@@ -1,11 +1,59 @@
 ; A260786: Twice the Euler or up/down numbers A000111.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Bill F
 ; 2,2,2,4,10,32,122,544,2770,15872,101042,707584,5405530,44736512,398721962,3807514624,38783024290,419730685952,4809759350882,58177770225664,740742376475050,9902996106248192,138697748786275802,2030847773013704704,31029068327114173810,493842960380415967232
-; Formula: a(n) = 2*gcd(A155585(min(n,27)),A122045(min(n,27)))
 
-min $0,27
-mov $1,$0
-seq $1,122045 ; Euler (or secant) numbers E(n).
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $0,$1
+min $0,47
+bin $0,2
+add $0,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+add $3,1
+pow $3,2
+sub $3,$0
+mul $0,8
+nrt $0,2
+div $0,2
+mov $1,$3
+add $1,$0
+mov $2,$1
+add $2,2
+mov $4,$2
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $2,$5
+sub $2,1
+mov $6,$4
+mod $6,2
+mul $6,$2
+sub $2,$6
+add $2,$1
+mov $0,$1
+add $0,1
+mov $7,$0
+mul $7,8
+nrt $7,2
+div $7,2
+bin $7,2
+sub $0,$7
+sub $2,$0
+mov $0,$2
+add $0,2
+mov $8,$0
+mul $8,8
+nrt $8,2
+sub $8,1
+div $8,2
+add $8,1
+pow $8,2
+sub $8,$0
+mov $0,$8
+seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
 mul $0,2

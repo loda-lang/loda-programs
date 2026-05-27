@@ -1,7 +1,7 @@
 ; A133985: Expansion of f(-x, x^2) in powers of x where f(, ) is Ramanujan's general theta function.
 ; Submitted by Just Jake
 ; 1,-1,1,0,0,-1,0,-1,0,0,0,0,1,0,0,-1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0
-; Formula: a(n) = binomial(3*n-binomial(truncate((sqrtint(24*n+8)-1)/2)+1,2)-1,binomial(truncate((sqrtint(24*n+8)-1)/2)+1,2))
+; Formula: a(n) = binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,binomial(floor((sqrtint(24*n+8)-1)/2)+1,2))
 
 mul $0,3
 add $0,1

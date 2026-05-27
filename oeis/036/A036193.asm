@@ -16,6 +16,7 @@ lpb $1
   mod $2,2
   mul $2,90
   sub $2,8
+  trn $3,$0
   add $4,4
   mov $6,$2
   max $6,0

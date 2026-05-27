@@ -1,12 +1,12 @@
 ; A095440: a(n) = 23 written in base n.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by MARP
 ; 11111111111111111111111,10111,212,113,43,35,32,27,25,23,21
 
 #offset 1
 
 mov $1,$0
 mov $2,$0
-mov $3,4
+mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
@@ -22,4 +22,3 @@ lpb $1
   add $0,$4
   mul $3,10
 lpe
-div $0,4

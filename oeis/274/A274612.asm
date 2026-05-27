@@ -14,8 +14,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,344511 ; a(n) = Sum_{k >= 0} sign(d_k) * 2^k for any number n with decimal expansion Sum_{k >= 0} d_k * 10^k.
-  sub $3,1
-  equ $3,4
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

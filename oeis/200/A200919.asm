@@ -1,10 +1,10 @@
 ; A200919: Number of crossings on periodic braids with n strands such that all strands meet.
 ; 0,0,0,1,3,5,9,13,19,25,34
+; Formula: a(n) = truncate((-if((max(n-3,0)%2)==0,max(n-3,0)/2,max(n-3,0))+binomial(max(n-3,0)+5,3))/8)-1
 
 #offset 1
 
-sub $0,1
-trn $0,2
+trn $0,3
 mov $1,$0
 dif $1,2
 add $0,5
