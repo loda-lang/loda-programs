@@ -1,0 +1,23 @@
+; A065837: String formed from first n quaternary digits found in decimal expansion of Pi.
+; Submitted by pm120
+; 3,31,311,3112,31123,311233,3112332,31123323,311233232,3112332323,31123323233,311233232333,3112332323332,31123323233320,311233232333202,3112332323332021,31123323233320211,311233232333202113,3112332323332021133,31123323233320211331,311233232333202113310
+
+#offset 1
+
+add $0,1
+mov $2,$0
+sub $0,2
+sub $2,1
+lpb $2
+  sub $2,1
+  mov $1,$0
+  sub $1,$2
+  mov $3,$1
+  bin $3,$1
+  add $1,1
+  seq $1,65836 ; Quaternary digits found in decimal expansion of Pi.
+  mul $3,$1
+  mul $4,10
+  add $4,$3
+lpe
+mov $0,$4
