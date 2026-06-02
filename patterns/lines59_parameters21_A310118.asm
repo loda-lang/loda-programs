@@ -67,16 +67,16 @@ mov $0,$1
 ; value: 6,7,8,9,10,11,12
 
 ; parameter 2
-; number of unique values: 9
-; value: 10,11,12,13,14,15,16,17,18
+; number of unique values: 8
+; value: 10,11,12,13,14,15,16,18
 
 ; parameter 3
-; number of unique values: 11
-; value: 12,14,15,16,17,18,19,20,21,22,23
+; number of unique values: 10
+; value: 12,14,15,16,17,18,19,20,21,23
 
 ; parameter 4
-; number of unique values: 13
-; value: 14,17,18,20,21,22,23,24,25,26,28,29,30
+; number of unique values: 12
+; value: 14,17,18,20,21,22,23,24,25,26,28,29
 
 ; parameter 5
 ; number of unique values: 15
@@ -91,16 +91,16 @@ mov $0,$1
 ; value: 30,32,34,35,36,38,40,41,42,43,45,48
 
 ; parameter 8
-; number of unique values: 13
-; value: 33,35,37,38,39,41,42,44,45,46,48,50,51
+; number of unique values: 12
+; value: 33,35,37,38,39,41,42,44,45,46,50,51
 
 ; parameter 9
 ; number of unique values: 18
 ; value: 34,36,37,39,40,41,42,43,44,45,46,47,48,49,51,54,56,57
 
 ; parameter 10
-; number of unique values: 16
-; value: 34,41,42,44,45,46,48,49,50,51,54,55,57,61,63,66
+; number of unique values: 15
+; value: 34,41,42,44,45,46,48,49,50,51,54,55,57,61,63
 
 ; parameter 11
 ; number of unique values: 13
@@ -111,8 +111,8 @@ mov $0,$1
 ; value: 38,46,48,51,53,54,55,56,57,58,59,60,61,65,66,71,72,74
 
 ; parameter 13
-; number of unique values: 20
-; value: 44,51,53,54,57,58,59,60,61,62,63,64,65,66,68,71,72,77,78,79
+; number of unique values: 19
+; value: 44,51,53,54,57,58,59,60,61,62,63,64,65,66,68,71,72,77,79
 
 ; parameter 14
 ; number of unique values: 2
@@ -143,5 +143,5 @@ mov $0,$1
 ; value: -6,-5
 
 ; programs with this pattern
-; number of programs: 31
-; program id: 310118,310235,310253,310268,310365,312106,312193,312843,312851,313261,313467,313604,313645,313856,314174,314176,314288,314306,314314,314353,314377,314390,314515,314612,314616,315372,315393,315532,315615,315953,315987
+; number of programs: 30
+; program id: 310118,310235,310253,310268,310365,312106,312193,312843,312851,313261,313467,313604,313645,313856,314174,314176,314288,314306,314314,314353,314377,314390,314515,314612,314616,315372,315393,315615,315953,315987

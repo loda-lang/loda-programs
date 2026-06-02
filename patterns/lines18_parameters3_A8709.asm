@@ -18,17 +18,17 @@ lpb $1
 lpe
 
 ; parameter 0
-; number of unique values: 4
-; value: 1,2,3,4
+; number of unique values: 5
+; value: 1,2,3,4,7
 
 ; parameter 1
-; number of unique values: 3
-; value: 10,13,15
+; number of unique values: 5
+; value: 10,11,13,14,15
 
 ; parameter 2
-; number of unique values: 20
-; value: 12,22,33,40,42,50,51,57,70,71,84,89,94,97,99,108,124,126,127,128
+; number of unique values: 28
+; value: 12,17,22,24,33,35,40,42,48,50,51,57,67,70,71,80,84,89,90,94,99,100,101,108,124,126,127,128
 
 ; programs with this pattern
-; number of programs: 20
-; program id: 8709,95439,95459,95473,95477,95493,95495,95507,95533,95535,95561,95571,95581,95587,95591,95607,95639,95643,95645,95647
+; number of programs: 28
+; program id: 8709,8714,65147,94203,95439,95459,95463,95473,95477,95489,95493,95495,95507,95527,95533,95535,95553,95561,95571,95573,95581,95591,95593,95607,95639,95643,95645,95647

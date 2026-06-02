@@ -15,13 +15,13 @@ lpe
 mov $0,$4
 
 ; parameter 0
-; number of unique values: 15
-; value: 11,13,15,16,17,18,23,28,29,33,34,37,38,43,45
+; number of unique values: 16
+; value: 11,13,15,16,17,18,20,23,28,29,33,34,37,38,43,45
 
 ; parameter 1
-; number of unique values: 15
-; value: 14,16,18,19,20,21,26,31,32,36,37,40,41,46,48
+; number of unique values: 16
+; value: 14,16,18,19,20,21,23,26,31,32,36,37,40,41,46,48
 
 ; programs with this pattern
-; number of programs: 15
-; program id: 35840,35842,35844,35845,35846,35847,35852,35857,35858,35862,35863,35866,35867,35872,35874
+; number of programs: 16
+; program id: 35840,35842,35844,35845,35846,35847,35849,35852,35857,35858,35862,35863,35866,35867,35872,35874

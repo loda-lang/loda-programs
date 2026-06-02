@@ -29,25 +29,25 @@ add $0,1 ; source=parameter 6
 ; value: 7,10
 
 ; parameter 2
-; number of unique values: 5
-; value: 1,2,21,25,47
+; number of unique values: 4
+; value: 1,2,21,47
 
 ; parameter 3
 ; number of unique values: 24
 ; value: 38374,46951,56061,58978,63994,71637,72627,78359,81810,90885,94572,100376,100387,238949,280521,284254,293235,304455,321944,322327,328026,340691,354713,368329
 
 ; parameter 4
-; number of unique values: 11
-; value: 1,2,3,4,5,6,7,8,9,10,11
+; number of unique values: 10
+; value: 1,2,3,5,6,7,8,9,10,11
 
 ; parameter 5
 ; number of unique values: 2
 ; value: 1,2
 
 ; parameter 6
-; number of unique values: 6
-; value: 1,2,4,21,25,47
+; number of unique values: 5
+; value: 1,2,4,21,47
 
 ; programs with this pattern
-; number of programs: 31
-; program id: 48195,54402,58957,59404,61753,61754,61756,61757,61758,61759,61764,62171,67873,71869,71870,75658,82295,110547,111458,185359,186129,251727,272635,280199,289554,306102,320632,328189,341099,348556,368833
+; number of programs: 29
+; program id: 48195,54402,58957,59404,61754,61757,61758,61759,61764,62171,67873,71869,71870,75658,82295,110547,111458,185359,186129,251727,272635,280199,289554,306102,320632,328189,341099,348556,368833
