@@ -2,31 +2,14 @@ A000004: The zero sequence.
 A000012: The simplest sequence of positive numbers: the all 1's sequence.
 A000034: Period 2: repeat [1, 2]; a(n) = 1 + (n mod 2).
 A000065: -1 + number of partitions of n.
-A000169: Number of labeled rooted trees with n nodes: n^(n-1).
 A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 A000312: a(n) = n^n; number of labeled mappings from n points to themselves (endofunctions).
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
-A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 A001247: Squares of Bell numbers.
-A001248: Squares of primes.
 A001255: Squares of partition numbers.
-A001348: Mersenne numbers: 2^p - 1, where p is prime.
 A001566: a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2.
-A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
-A001748: 3 * primes.
-A001749: Primes multiplied by 4.
-A001750: Primes multiplied by 5.
 A002062: a(n) = Fibonacci(n) + n.
-A002659: a(n) = 2*sigma(n) - 1.
-A003972: Moebius transform of A003961; a(n) = phi(A003961(n)), where A003961 shifts the prime factorization of n one step towards the larger primes.
-A004085: Sum of digits of Euler totient function of n.
-A004087: Primes written backwards.
 A004091: Fibonacci numbers written backwards.
-A004397: a(n) = prime(n) + Fibonacci(n).
-A004398: a(n) = Fibonacci(n+1) + prime(n).
-A004399: Fibonacci(n+2) plus n-th prime.
-A004649: Prime(n) mod (n-1).
-A004682: Primes written in base 8.
 A004922: a(n) = floor(n*phi^7), where phi is the golden ratio, A001622.
 A004923: a(n) = floor(n*phi^8), where phi is the golden ratio, A001622.
 A004924: a(n) = floor(n*phi^9), where phi is the golden ratio, A001622.
@@ -37,335 +20,85 @@ A004931: a(n) = floor(n*phi^16), where phi is the golden ratio, A001622.
 A004932: a(n) = floor(n*phi^17), where phi is the golden ratio, A001622.
 A004933: a(n) = floor(n*phi^18), where phi is the golden ratio, A001622.
 A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
-A005097: (Odd primes - 1)/2.
-A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
 A005563: a(n) = n*(n+2) = (n+1)^2 - 1.
-A005722: a(n) = (prime(n) - 1)^2.
-A006093: a(n) = prime(n) - 1.
-A006094: Products of 2 successive primes.
-A006308: Coefficients of period polynomials.
 A006450: Prime-indexed primes: primes with prime subscripts.
 A006862: Euclid numbers: 1 + product of the first n primes.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-A007423: a(n) = mu(n) + 1, where mu is the Moebius function.
 A007619: Wilson quotients: ((p-1)! + 1)/p where p is the n-th prime.
-A007652: Final digit of prime(n).
-A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-A008328: Number of divisors of prime(n)-1.
-A008329: Number of divisors of p+1, p prime.
-A008331: a(n) = phi(prime(n)+1).
-A008335: Number of primes dividing p+1 as p runs through the primes.
-A008837: a(n) = p*(p-1)/2 for p = prime(n).
-A008864: a(n) = prime(n) + 1.
-A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
 A009194: a(n) = gcd(n, sigma(n)).
 A010871: Constant sequence: a(n) = 32.
-A011757: a(n) = prime(n^2).
 A014566: Sierpiński numbers of the first kind: n^n + 1.
-A014683: In the sequence of positive integers add 1 to each prime number.
-A014688: a(n) = n-th prime + n.
-A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
-A014690: a(n) = n + prime(n+1).
-A014692: a(n) = prime(n) - (n-1).
 A014709: The regular paper-folding (or dragon curve) sequence.
 A014803: Squares of even hexagonal pyramidal numbers.
-A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A016775: (3*n)^11.
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A020908: Number of terms in Zeckendorf representation of 2^n.
 A021260: Decimal expansion of 1/256.
-A022797: n-th prime + n-th nonprime.
 A022988: 32-n.
 A023474: a(n) = n-32.
-A023507: a(n) = sum of distinct prime divisors of prime(n) - 1.
-A023517: Greatest prime divisor of p(n)*p(n-1) - 1.
-A023589: Number of distinct prime divisors of 2*p(n)+1.
-A023590: Greatest prime divisor of 2*prime(n)+1.
-A024701: a(n) = (-1 + prime(n+1)^2)/4.
 A026945: A bisection of the Motzkin numbers A001006.
-A028334: Differences between consecutive odd primes, divided by 2.
 A028560: a(n) = n*(n + 6).
-A030004: (prime(n)-1)(prime(n)-3)(prime(n)-5)/48.
-A030078: Cubes of primes.
-A030514: a(n) = prime(n)^4.
-A030516: Numbers with 7 divisors. 6th powers of primes.
-A030629: Numbers with 11 divisors.
-A031215: Even-indexed primes: a(n) = prime(2n).
-A031336: a(n) = prime(3*n).
-A031338: a(n) = prime(5*n).
-A031339: a(n) = prime(6*n).
-A031340: a(n) = prime(7*n).
-A031342: a(n) = prime(9*n).
-A031343: a(n) = prime(10*n).
-A031359: Bisection of A001615.
-A031368: Odd-indexed primes: a(n) = prime(2n-1).
-A031369: a(n) = prime(3n-1).
-A031370: a(n) = prime(4n-1).
-A031373: Primes p(7n-1).
-A031374: a(n) = prime(8*n - 1).
 A031375: a(n) = prime(9n-1).
-A031377: a(n) = prime(3n-2).
-A031378: a(n) = prime(4*n - 2).
-A031379: a(n) = prime(5*n - 2).
-A031380: a(n) = prime(6*n - 2).
-A031381: a(n) = prime(7*n - 2).
-A031384: a(n) = prime(10*n - 2).
-A031385: a(n) = prime(4*n-3).
-A031386: a(n) = prime(5*n-3).
-A031389: a(n) = prime(8*n-3).
-A031392: a(n) = prime(5*n-4).
-A031394: a(n) = prime(7*n - 4).
-A031906: a(n) = prime(6*n - 5).
-A031908: a(n) = prime(8*n - 5).
-A031910: a(n) = prime(10*n - 5).
-A031911: a(n) = prime(7*n - 6).
-A031912: a(n) = prime(8*n - 6).
-A031913: a(n) = prime(9*n - 6).
-A031914: a(n) = prime(10*n - 6).
-A031915: a(n) = prime(8*n - 7).
-A031918: a(n) = prime(9*n-8).
-A031919: a(n) = prime(10*n-8).
-A031920: a(n) = prime(10*n-9).
 A031937: Upper prime of a difference of 18 between consecutive primes.
-A031974: 1 repeated prime(n) times.
 A033192: a(n) = binomial(Fibonacci(n) + 1, 2).
-A033286: a(n) = n * prime(n).
 A033312: a(n) = n! - 1.
-A033633: Primes modulo 19.
-A034785: a(n) = 2^(n-th prime).
-A034953: Triangular numbers (A000217) with prime indices.
 A035011: A006318(n) - 1.
-A035116: a(n) = tau(n)^2, where tau(n) = A000005(n).
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function d = A000005, with initial value n.
 A036547: a(n) = T(6,n), array T given by A048471.
 A036548: a(n) = T(7,n), array T given by A048471.
-A036689: Product of a prime and the previous number.
-A036690: Product of a prime and the following number.
 A036987: Fredholm-Rueppel sequence.
-A037168: a(n) = 2*prime(n) - 2.
-A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
-A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
-A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
-A039643: Number of steps to fixed point of "k -> k/2 or (k-1)/2 until result is prime", starting with prime(n)+1.
-A039649: a(n) = phi(n)+1.
-A039701: a(n) = n-th prime modulo 3.
-A039702: a(n) = n-th prime modulo 4.
-A039703: a(n) = n-th prime modulo 5.
-A039704: a(n) = n-th prime modulo 6.
-A039705: a(n) = n-th prime modulo 7.
-A039706: a(n) = n-th prime modulo 8.
-A039709: a(n) = n-th prime modulo 11.
-A039710: a(n) = n-th prime modulo 12.
-A039711: Primes mod 13.
-A039712: a(n) = n-th prime modulo 14.
-A039713: a(n) = n-th prime modulo 15.
-A039714: a(n) = n-th prime modulo 16.
-A039715: Primes modulo 17.
-A040040: Average of twin prime pairs (A014574), divided by 2. Equivalently, 2*a(n)-1 and 2*a(n)+1 are primes.
 A040051: Parity of partition function A000041.
-A040976: a(n) = prime(n) - 2.
 A044187: Numbers n such that string 0,0 occurs in the base 8 representation of n but not of n-1.
 A044242: Numbers n such that string 6,7 occurs in the base 8 representation of n but not of n-1.
-A046151: a(n) = n*phi(n) - 1.
-A046152: a(n) = n*phi(n) + 1.
 A046975: Partial sums of digits of decimal expansion of e.
-A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
-A048974: Odd numbers that are the sum of 2 primes.
-A049001: a(n) = prime(n)^2 - 2.
-A049234: Number of divisors of prime(n) + 2.
-A049559: a(n) = gcd(n - 1, phi(n)).
-A050997: Fifth powers of primes.
 A051456: (Terms in A029625)/2.
-A051674: a(n) = prime(n)^prime(n).
-A052147: a(n) = prime(n) + 2.
-A054526: Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
-A055003: a(n) = prime(prime(n)-1).
-A056798: Prime powers with even nonnegative exponents.
-A056849: Final digit of n^n.
 A057048: a(n) = A017911(n+1) = round(sqrt(2)^(n+1)).
-A057901: a(n) = 3^prime(n).
-A057902: a(n) = 5^prime(n).
 A058692: a(n) = B(n) - 1, where B(n) = Bell numbers, A000110.
-A059159: A hierarchical sequence (W'2{2}*c) - see A059126).
 A059161: A hierarchical sequence (W'2{3}*c - see A059126).
 A059164: A hierarchical sequence (W'3{2,2}*cc - see A059126).
 A059591: Squarefree part of n^2+1.
-A059786: Smallest prime after 2*(n-th prime).
 A059841: Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2); Characteristic function of even numbers.
-A060418: Largest decimal digit in n-th prime.
-A060429: a(n) = 4*prime(n)^2+1.
-A060497: a(n) = binomial(2^n, prime(n)).
 A060604: a(n) = binomial(prime(n), n) where prime(n) = n-th prime.
 A060620: Average of the first n primes rounded down.
-A060800: a(n) = p^2 + p + 1 where p runs through the primes.
-A060904: Largest power of 5 that divides n.
-A061066: a(n) = (prime(n)^2 - 1)/8.
-A061397: Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
-A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
-A061725: p^2 + 2 where p is a prime.
-A062011: a(n) = 2*tau(n) = 2*A000005(n).
 A062207: a(n) = 2*n^n-1.
-A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
-A062312: Nonprime numbers squared.
-A062355: a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
 A062401: a(n) = phi(sigma(n)).
 A062402: a(n) = sigma(phi(n)).
 A062727: Sum of the divisors of n^n (A000312).
-A062772: Smallest prime larger than square of n-th prime.
 A062971: a(n) = (2*n)^n.
-A062981: a(n) = n^phi(n).
-A063439: a(n) = phi(n)^phi(n).
-A065073: n-th prime + sum of digits of n-th prime.
 A065858: m-th composite number c(m) = A002808(m), where m is the n-th prime number: a(n) = A002808(A000040(n)).
 A065995: a(n) = prime(prime(n) + n).
 A066096: a(n) = floor(n*phi), where phi = (1 + sqrt(5))/2.
-A066829: Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
-A066872: p^2 + 1 as p runs through the primes.
-A066885: a(n) = (prime(n)^2 + 1)/2.
-A068087: a(n) = n^(2*n-2).
-A068503: Highest power of 3 dividing prime(n)-1.
-A069177: Maximal power of 2 that divides Phi(n), or the size of the Sylow 2-subgroup of the group of units mod n.
-A069262: a(n) = 4*prime(n)^2.
-A071168: n-th prime reduced modulo phi(n).
-A071981: Parity of the digits of e in base 10.
-A071986: Parity of the prime-counting function pi(n).
-A072003: 10's complement of final digit of n-th prime.
-A072055: a(n) = 2*prime(n)+1.
-A072205: a(n) = (p^2 - p + 2)/2 for p = prime(n); number of squares modulo p^2.
 A073123: a(n) is the largest number such that pi(a(n)) = prime(n).
-A073256: a(n) = phi(n-th composite number).
-A073521: The set of 16 consecutive primes with the property that they form a 4 X 4 magic square with the smallest magic constant (258).
-A074367: (p^2-5)/4 for odd primes p.
-A074372: 1 + the sum of the distinct primes dividing n.
-A074400: Sum of the even divisors of 2n.
-A074462: Average digit (rounded up) in the decimal expansion of prime(n).
-A074850: Partial products of successive digits in the decimal expansion of Pi.
-A074943: tau(n) (mod 3).
-A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
 A075155: Cubes of Lucas numbers.
-A075730: Squares of odd semiprimes A046315, odd numbers divisible by exactly 2 primes (counted with multiplicity).
-A075818: Even numbers with exactly 3 prime factors (counted with multiplicity).
-A075892: Average of squares of successive primes: a(n) = (prime(n+1)^2 + prime(n)^2)/2, with n >= 2.
 A076338: a(n) = 512*n + 1.
-A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
-A076821: Squares of the differences between consecutive primes.
-A077063: Squarefree kernel of prime(n) - 1.
 A078570: Number of distinct prime factors of the average of n-th twin prime pair.
-A078574: Number of divisors of the average of n-th twin prime pair.
-A078584: a(n) = prime(2n) - prime(2n-1).
-A078650: 2-A000002(n) where A000002 is the Kolakoski sequence.
 A078724: a(n) = prime(n*(n+1)/2+3).
-A079395: a(n) = prime(n)^11.
-A079696: Numbers one more than composite numbers.
-A079704: a(n) = 2*prime(n)^2.
-A079705: 3p^2 where p runs through the primes.
-A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
 A081399: Bigomega of the n-th Catalan number: a(n) = A001222(A000108(n)).
 A081667: a(n) = Fibonacci(binomial(n+2,2)).
 A081689: A005228 - 1.
-A081865: a(n) = sigma_7(2n-1).
-A081866: a(n)=sigma_9(2n-1).
-A083271: a(n) = n*tau(n) + 1.
-A083681: Sum of divisors of semiprimes.
-A083786: Composite numbers mod 10.
-A084300: a(n) = phi(n) mod 6.
-A084311: a(n) = gcd(prime(n)-1,n-1).
-A084920: a(n) = (prime(n)-1)*(prime(n)+1).
 A085603: (2n)^(2n) + 1.
 A085855: Number of 1's in decimal expansion of Fibonacci(n).
 A085858: Number of 4's in decimal expansion of Fibonacci(n).
-A085975: Number of 1's in decimal expansion of prime(n).
-A085977: Number of 3's in decimal expansion of prime(n).
-A085983: Number of 9's in decimal expansion of prime(n).
-A086665: Difference between sum of divisors of n and integer log of n, i.e., A000203(n) - A001414(n).
-A086799: Replace all trailing 0's with 1's in binary representation of n.
-A086801: a(n) = prime(n) - 3.
-A086874: Seventh power of odd primes.
-A086995: Number of 1's in binary representation of n-th decimal digit in expansion of Pi.
-A088190: Largest quadratic residue modulo prime(n).
-A088308: 2 followed by list of composite numbers mod 10.
-A088377: (Smallest prime-factor of n)^2.
-A088580: a(n) = 1 + sigma(n).
-A088707: Semiprimes + 1.
-A088730: Numbers of the form p^p - 1, where p is a prime.
-A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
-A088838: Numerator of the quotient sigma(3n)/sigma(n).
-A089034: a(n) = (prime(n)^4 - 1) / 240.
-A089103: a(n) = Mod[n+Prime[n],10]
-A089241: Even numbers k such that k/2 - 1 is prime.
-A089250: Add 2 (mod 10) to each decimal digit of Pi.
-A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
-A091330: a(n) = ((p-1)!/p) - ((p-1)*(p-1)!/p!), where p is the n-th prime.
-A092759: a(n) = prime(n)^7.
 A092771: Prime(prime(n))^2-1.
-A093460: a(n) = 2n^(n-1) - 1.
 A094815: (prime(prime(n)))^n.
-A095116: a(n) = prime(n) + n - 1.
-A095901: A004001 (mod 2).
-A096197: a(n) = (1+prime(n)) mod n.
-A097012: a(n) = sigma(n) mod 210.
-A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
-A098640: 2^p + 1 where p is prime.
-A098823: a(n) = 16*(8*prime(n) + 7).
 A099250: Bisection of Motzkin numbers A001006.
 A099251: Bisection of Motzkin sums (A005043).
 A099366: Squares of A005668(n) (generalized Fibonacci).
-A099585: Remove all 3s from prime(n) - 1.
-A099618: a(n) = 1 if the n-th prime == 1 mod 6, otherwise a(n) = 0.
-A099777: Number of divisors of 2n.
-A099817: Bisection of A000796 (decimal expansion of Pi).
-A099822: Bisection of A005117.
 A099836: Bisection of A000961.
-A099861: Bisection of A002808.
 A099923: Fourth powers of Lucas numbers A000032.
 A099980: Bisection of A001358.
 A099981: Bisection of A001358.
 A099990: a(n) = Moebius(2n+1).
-A099991: a(n) = Moebius(2n).
-A100005: Bisection of A001414.
-A100429: Bisection of Kolakoski sequence A000002.
-A100484: The primes doubled.
-A100672: Second least-significant bit in the binary expansion of the n-th prime.
 A101202: Multiples of 142857.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A101404: a(n) = n*A101403(n).
-A101987: Product of nonzero digits of n-th prime.
-A102348: Decimated primes: every 10th prime has been omitted.
 A102689: a(n) = 10000*n + 2468.
-A102704: Numbers k such that k999 is prime.
-A102770: (p*q - 1)/2 where p and q are consecutive odd primes.
-A102781: Number of positive even numbers less than the n-th prime.
-A104638: Number of odd digits in n-th prime.
-A105555: Let d = number of divisors of n; a(n) = d-th prime.
-A105825: a(n) = sigma(n) (mod 5).
 A105827: a(n) = sigma(n) (mod 8).
-A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
-A106044: Difference between n-th prime and next larger perfect square.
-A106138: Semiprimes (mod 2).
-A106139: Semiprimes (mod 3).
-A106140: Semiprimes (mod 4).
-A106141: Semiprimes (mod 5).
-A106142: Semiprimes (mod 6).
-A106143: Semiprimes (mod 7).
-A106144: Semiprimes (mod 8).
-A106145: Semiprimes (mod 9).
-A106146: Semiprimes (mod 10).
-A106350: Semiprimes indexed by primes.
-A107115: Three-digit numbers from the decimal expansion of Pi (version 3) -- but see comments.
-A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
-A108605: Semiprimes with prime sum of factors: twice the lesser of the twin prime pairs.
 A109722: Sum of first 2n primes.
-A109763: Primes repeated.
 A110139: a(n) = floor(n/2)^floor(n/2).
-A110833: a(n) = (prime(n)+1)^2.
 A111431: a(n) = Fibonacci(tribonacci(n)).
-A111741: Distance between k*(n-th prime) and next prime, k=9 case.
-A111742: Distance between k*(n-th prime) and next prime, k=10 case.
-A113935: a(n) = prime(n) + 3.
-A117495: Product of a prime number p and the number of primes smaller than p.
 A117812: a(n) = n^(2*n) - 1.
-A117961: Hexagonal numbers with prime indices.
 A118075: Start with 1 and repeatedly reverse the digits and add 42 to get the next term.
 A118091: Start with 1 and repeatedly reverse the digits and add 46 to get the next term.
 A118152: Start with 1 and repeatedly reverse the digits and add 56 to get the next term.
@@ -388,77 +121,24 @@ A118633: Start with 1 and repeatedly reverse the digits and add 37 to get the ne
 A118634: Start with 1 and repeatedly reverse the digits and add 38 to get the next term.
 A118636: Start with 1 and repeatedly reverse the digits and add 40 to get the next term.
 A118755: Smallest prime >= 6*n.
-A119411: Product of the first prime(n) primes.
-A119959: p^2-p+1 central polygonal numbers with prime indices A002061(prime(n)).
 A120054: a(n) = binomial(n+3,4)*4^4.
-A121239: Decimal expansion of 10-e.
 A121292: a(n) = Bell(3*n+1).
 A121293: a(n) = Bell(3*n+2).
 A122566: Primes with index k^2+k+1.
-A124669: Product of successive primes minus 2.
-A125137: a(n) = p^p + 1, where p = prime(n).
 A126588: a(n) = prime(13*n).
 A126996: a(n) = binomial(prime(3+n), prime(3)).
 A127114: n! in base 7.
-A127884: a(n) = floor(Fibonacci(n)/n).
 A128973: Triangle formed by reading A038622 mod 2.
-A129069: Numbers n such that (n-3)/2 is prime.
-A129070: Numbers n such that (n-5)/4 is prime.
-A129071: Numbers n such that (n-7)/6 is prime.
-A129072: Numbers n such that (n-13)/12 is prime.
-A129073: Numbers n such that (n-8)/7 is prime.
-A129074: Numbers n such that (n-9)/8 is prime.
-A129075: Numbers n such that (n-4)/3 is prime.
-A130614: a(n) = p^(p-2), where p = prime(n).
-A130718: 2*(prime(n)-2)!.
-A131426: a(n) = 2*prime(n) - 3.
-A132227: a(n) = 3*prime(n) - 5.
 A133037: Squares of members of the Padovan sequence A000931.
 A133042: Cubes of partition numbers.
 A133053: Squares of Motzkin numbers.
 A134960: a(n) = n*453060.
-A135282: Largest k such that 2^k appears in the trajectory of the Collatz 3x+1 sequence started at n.
 A135403: a(n) = 1 + 111110*n.
 A135481: a(n) = 2^A007814(n+1) - 1.
-A135984: a(n) = 24(prime(n))+7.
-A137264: Prime number gaps read modulo 3.
-A137290: Fibonacci(n) mod 30.
-A137521: Prime numbers concatenated with 45.
-A137664: a(n) = (p+1)^p - 1 where p = prime(n).
-A137727: Final digit of prime(n)*prime(n+1).
-A137807: Final digit of prime(n)^2.
-A137831: (Prime(n)^2 minus its last digit)/20.
-A138031: a(n) = prime(n)^13.
-A138032: a(n) = prime(n)^17.
-A138418: a(n) = ((n-th prime)^4-(n-th prime)^2)/2.
-A138419: a(n) = (prime(n)^4 - prime(n)^2)/3.
-A138422: a(n) = (prime(n)^4 - prime(n)^2)/12.
-A138439: a(n) = ((n-th prime)^5-(n-th prime)^4)/2.
-A138636: a(n) = 6 * prime(n).
-A138689: Numbers of the form 26+p^2 (where p is a prime).
-A138690: Numbers of the form 56+p^2 (where p is a prime).
-A138691: Numbers of the form 68+p^2 (where p is a prime).
-A138692: Numbers of the form 86+p^2 (where p is a prime).
-A138693: Numbers of the form 110 + p^2. (where p is a prime).
-A138714: Add 1, modulo 10, to the decimal expansion of e, A001113.
-A138929: Twice the prime powers A000961.
-A139049: a(n) = prime(n) + 6.
-A139286: a(n) = 2^(2*prime(n) - 1).
-A139287: 2^(2p - 1) - 1, where p is prime.
-A139290: 2^(2p - 1)/4, where p is prime.
-A139293: (2^(2p - 1)/8)-1, where p is prime.
 A139478: a(n) = A001109(n) in binary.
 A139582: Twice partition numbers.
-A140353: a(n) = prime(n) + 9.
-A140475: 1 along with primes greater than 3.
-A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140681: a(n) = 3*n*(n+6).
-A140777: a(n) = 2*prime(n) - 4.
-A140853: a(n) = prime(prime(n) - 1) - 1, where prime(n) is the n-th prime.
 A141421: First bisection of A091137.
-A142342: a(n) = 10*prime(n).
-A143928: 2*p^2, for p an odd prime.
-A144769: a(n) = floor(prime(n)/3).
 A146094: Bell numbers (A000110) mod 4.
 A146098: Bell numbers (A000110) read mod 8.
 A146100: Bell numbers (A000110) read mod 10.
@@ -468,11 +148,7 @@ A146110: Bell numbers (A000110) read mod 20.
 A146116: Bell numbers (A000110) read mod 26.
 A146121: Bell numbers (A000110) read mod 31.
 A151549: a(n) = (A151548(n)-1)/2.
-A152241: Products of cubes of 2 successive primes.
 A153480: a(n) = 2*prime(n)^2 - 4.
-A153481: a(n) = prime(n)^3 - 2.
-A153482: a(n) = prime(n)^4 - 8.
-A155213: a(n) = floor(prime(n)/9).
 A156772: a(n) = 729*n - 198.
 A156865: a(n) = 729000*n - 612180.
 A156866: a(n) = 729000*n - 116820.
@@ -495,126 +171,43 @@ A158250: a(n) = 256*n - 1.
 A158395: 729n - 1.
 A158397: a(n) = 729n + 1.
 A158421: a(n) = 1024*n - 1.
-A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
-A160594: Indices of primes congruent to 1 modulo 12.
-A162143: a(n) = A007304(n)^2.
-A164028: The n-th composite minus 3.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
-A166010: a(n) = prime(n)^2-4.
-A166496: Prime plus the next composite.
-A171018: In the sequence of prime numbers, replace all the '3' digits with '2' and vice versa.
-A171031: In the sequence of prime numbers, replace all the '6' digits with '3' and vice versa.
-A171035: In the sequence of prime numbers, replace all the '7' digits with '1' and vice versa.
-A171038: In the sequence of prime numbers, replace all the '7' digits with '4' and vice versa.
-A171039: In the sequence of prime numbers, replace all the '7' digits with '5' and vice versa.
-A171050: In the sequence of prime numbers, replace all the '9' digits with '1' and vice versa.
-A171055: In the sequence of prime numbers, replace all the '9' digits with '6' and vice versa.
-A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
-A172190: a(n) = 2*prime(n)^3.
-A172191: a(n) = 2*prime(n)^4.
 A172282: Squares of Bernoulli number denominators A027642.
-A174429: Collatz-Fibonacci numbers: a(1) = a(2) = 1; if n > 2, a(n) = a(C(n)) + a(C(C(n))), where  C(n) = A006370(n).
-A175216: The first nonprimes after the primes.
-A175221: a(n) = prime(n) + 4.
-A175222: a(n) = prime(n) + 5.
-A175223: a(n) = prime(n) + 7.
-A175224: a(n) = prime(n) + 8.
-A175225: a(n) = prime(n) + 10.
-A175247: Primes (A000040) with noncomposite (A008578) subscripts.
-A175548: Binary weight of sigma(n).
-A176406: Odd semiprimes minus 2.
 A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent B_1.
 A177882: Trisection of A001317.
-A178064: Number of 0's in binary representation of n-th semiprime.
 A178743: a(n) = A000041(n) mod 10.
-A179262: a(n) = 2*prime(n)^2 - 1.
 A179665: a(n) = prime(n)^9.
 A180172: a(n) = gcd(prime(n)+2, n).
-A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
-A181062: Prime powers minus 1.
-A181150: a(n) = prime(n)^3 + prime(n) + 1.
-A181923: Nonprimes (A018252) mod 2.
-A181932: A003136(n) mod 2.
-A182200: a(n) = prime(n)^2-3.
 A183008: a(n) = 24*p(n) = 24*A000041(n).
-A185322: a(n) = ceiling(prime(n)/10).
 A186190: First digit of tribonacci sequence A000213.
-A186621: Semiprimes - 1.
 A193462: Sum of the distinct prime divisors of n^2+1.
 A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
-A195459: a(n) = phi(3*n)/2.
-A200905: a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
 A209229: Characteristic function of powers of 2, cf. A000079.
 A212739: a(n) = 2^(n^2) - 1.
-A213236: a(n) = (-n)^(n-1).
-A215848: Primes > 3.
 A216147: 2*n^n + 1.
-A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
-A222963: a(n) = (p-3)*(p+3)/4 where p is the n-th prime.
-A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).
-A229787: Primes modulo 24.
 A231620: a(n) = A000930(n^2), where A000930 is Narayana's cows sequence.
-A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
 A234645: Sum of the divisors of n^3+1.
-A239050: a(n) = 4*sigma(n).
 A239690: Base 4 sum of digits of prime(n).
 A239691: Base 5 sum of digits of prime(n).
 A239692: Base 6 sum of digits of prime(n).
 A239694: Base 8 sum of digits of prime(n).
-A240068: Number of prime Lipschitz quaternions having norm prime(n).
-A241676: 2^p - 3 where p is prime.
-A241677: 2^p + 5 where p is prime.
-A241679: 2^p + 7 where p is prime.
-A241680: 2^p + 11 where p is prime.
-A242119: Primes modulo 18.
-A242120: Primes modulo 20.
-A242122: Primes modulo 22.
-A242125: Primes modulo 27.
-A242126: Primes modulo 28.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
 A244009: Decimal expansion of 1 - log(2).
-A244735: a(n) = (prime(n) mod 5) mod 2.
-A248558: Squares of the digits of the decimal expansion of e.
 A254029: Positive solutions of Monkey and Coconuts Problem for the classic case (5 sailors, 1 coconut to the monkey): a(n) = 15625*n - 4 for n >= 1.
 A256136: a(n) = 6^A000120(n).
 A258774: a(n) = 1 + sigma(n) + sigma(n)^2.
 A259547: a(n) = n^4*Fibonacci(n).
-A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
-A263846: Floor of cube root of n-th prime.
 A265538: Largest base-7 palindrome m <= n, written in base 7.
-A272027: a(n) = 3*sigma(n).
-A272470: 7 times the primes.
-A274535: a(n) = 5*sigma(n).
-A274536: a(n) = 6 * sigma(n).
 A276234: a(n) = n/gcd(n, 256).
-A278227: Least number with the prime signature of prime(n)-1.
-A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
-A284600: a(n) = n/(largest prime power dividing n).
 A286387: a(n) = A002487(n^2).
-A287922: a(n) = prime(1)^2 + prime(n)^2.
-A287925: a(n) = prime(1)^4 + prime(n)^4
-A294628: a(n) = 8*(sigma(n) - n + (1/2)).
 A299473: a(n) = 3*p(n), where p(n) is the number of partitions of n.
 A299474: a(n) = 4*p(n), where p(n) is the number of partitions of n.
 A299919: Motzkin numbers (A001006) mod 4.
-A306695: a(n) = gcd(n, psi(n)).
-A319089: a(n) = tau(n)^3, where tau is A000005.
-A319527: a(n) = 7 * sigma(n).
-A319528: a(n) = 8 * sigma(n).
 A323902: a(n) = A002487(A156552(n)).
-A325299: a(n) = 9 * sigma(n).
-A326122: a(n) = 10 * sigma(n).
-A330410: a(n) = 6*prime(n) - 1.
 A333169: a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
-A336551: a(n) = A003557(n) - 1.
-A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.
 A344856: Bitwise XOR of prime(n) and n^2.
-A356533: a(n) = sigma_2(n)^2.
-A356534: a(n) = sigma_3(n)^2.
 A356868: a(n) = n^2 * prime(n).
-A358714: a(n) = phi(n)^3.
-A362361: a(n) = n*2^10 - 3.

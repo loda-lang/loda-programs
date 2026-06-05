@@ -10,7 +10,7 @@ mov $9,1 ; source=parameter 8
 mov $10,6 ; source=parameter 9
 mov $11,30 ; source=parameter 10
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,11
   sub $11,$1
   add $11,$6
@@ -24,45 +24,45 @@ mov $0,$1
 ; value: 1,7
 
 ; parameter 1
-; number of unique values: 5
-; value: 2,3,4,5,6
+; number of unique values: 4
+; value: 2,4,5,6
 
 ; parameter 2
-; number of unique values: 7
-; value: 1,6,7,8,9,10,11
+; number of unique values: 8
+; value: 1,6,7,8,9,10,11,12
 
 ; parameter 3
 ; number of unique values: 9
-; value: 1,9,10,11,13,14,15,16,18
+; value: 1,9,11,12,13,14,15,16,18
 
 ; parameter 4
-; number of unique values: 9
-; value: 3,12,13,15,16,17,18,19,20
+; number of unique values: 10
+; value: 3,12,14,16,18,19,20,21,22,23
 
 ; parameter 5
-; number of unique values: 8
-; value: 16,18,20,21,22,25,26,30
+; number of unique values: 7
+; value: 18,20,22,24,25,26,30
 
 ; parameter 6
-; number of unique values: 12
-; value: 5,19,21,23,24,25,26,28,29,30,31,32
+; number of unique values: 10
+; value: 5,24,25,26,28,29,30,31,34,35
 
 ; parameter 7
-; number of unique values: 12
-; value: 1,21,22,25,26,27,28,29,30,34,35,36
+; number of unique values: 10
+; value: 1,21,25,28,29,30,31,34,36,40
 
 ; parameter 8
 ; number of unique values: 14
-; value: 1,24,28,29,31,33,34,36,37,38,40,41,42,45
+; value: 1,24,29,31,32,33,34,35,38,41,42,44,45,47
 
 ; parameter 9
-; number of unique values: 15
-; value: 6,29,30,31,33,35,36,38,39,40,42,43,44,45,46
+; number of unique values: 12
+; value: 6,30,34,38,40,42,43,44,46,47,50,52
 
 ; parameter 10
-; number of unique values: 9
-; value: 30,32,36,40,42,44,50,52,60
+; number of unique values: 8
+; value: 30,36,40,44,48,50,52,60
 
 ; programs with this pattern
-; number of programs: 20
-; program id: 1204,301299,301690,310089,310252,310267,311002,311709,312839,313705,314299,314336,315103,315213,315248,315301,315373,315874,316050,316069
+; number of programs: 16
+; program id: 1204,301690,310508,312722,312841,312981,313333,313660,315092,315559,315662,315832,315860,315874,315959,316069
