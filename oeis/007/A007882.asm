@@ -1,23 +1,23 @@
 ; A007882: Number of lattice points inside circle of radius n is 4(a(n)+n)-3.
-; Submitted by Dylan Delgado
+; Submitted by oneski22
 ; 0,1,4,8,13,22,30,41,54,67,83,98,117,139,160,183,206,234,263,292,322,357,390,424,461,502,545,585,626,673,719,770,819,870,926,977,1034,1090,1153,1214,1272,1339,1404,1475,1543,1610,1683,1755,1832,1907,1990,2070,2147
 
 #offset 1
 
-mov $5,3
+mov $1,3
+mov $3,$0
 pow $0,2
 add $0,3
 lpb $0
-  sub $0,$5
+  sub $0,$1
   mov $4,$0
   max $4,0
-  mov $2,$4
-  nrt $2,2
-  mov $5,1
-  add $5,$1
-  max $5,2
-  add $1,2
-  add $3,$2
-  sub $3,1
+  nrt $4,2
+  mov $1,1
+  add $1,$2
+  max $1,2
+  add $2,2
+  add $3,$4
 lpe
+sub $3,$2
 mov $0,$3

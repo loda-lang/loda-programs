@@ -14,6 +14,4 @@ seq $2,276086 ; Primorial base exp-function: digits in primorial base representa
 seq $2,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
 sub $2,1
 sub $2,$1
-mov $3,$0
-sub $0,1
 mov $0,$2

@@ -1,5 +1,5 @@
 ; A092239: Number of orbits of length n under the map whose periodic points are counted by A061693.
-; Submitted by Aionel
+; Submitted by Laurent Cheylat
 ; 0,2,9,42,225,1260,7497,46176,293382,1908150,12655269,85287870,582628683,4026368514,28104231825,197884340160,1404038987577,10029929788566,72086075552493,520920674929650
 
 #offset 1
@@ -32,9 +32,11 @@ lpb $4
   div $8,$10
   mov $11,$9
   mod $11,$10
+  sub $0,$11
   equ $11,0
   seq $8,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mul $8,$11
+  add $1,1
   mov $7,$0
   mul $7,8
   nrt $7,2
@@ -46,9 +48,7 @@ lpb $4
   mul $0,$8
   add $3,$0
 lpe
-mov $0,$3
-mul $0,91
-mul $1,$0
+mul $1,$3
 div $1,$2
 mov $0,$1
-div $0,91
+div $0,2

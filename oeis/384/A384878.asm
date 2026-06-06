@@ -2,7 +2,10 @@
 ; Submitted by Science United
 ; 1,6,34,178,882,4210,19570,89202,400498,1776754
 
+#offset 1
+
 mov $1,2
+sub $0,1
 lpb $0
   sub $0,1
   add $1,$0

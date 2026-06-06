@@ -1,8 +1,15 @@
 ; A164028: The n-th composite minus 3.
-; Submitted by ChelseaOilman
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,3,5,6,7,9,11,12,13,15,17,18,19,21,22,23,24,25,27,29,30,31,32,33,35,36,37,39,41,42,43,45,46,47,48,49,51,52,53,54,55,57,59,60,61,62,63,65,66,67,69,71,72,73,74,75,77,78,79,81,82,83,84,85,87,88,89,90,91,92,93,95,96,97,99,101,102,103,105,107
-; Formula: a(n) = A002808(n+1)-3
+; Formula: a(n) = A072668(-floor(n/n)+n+1)-2
 
-add $0,1
-seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
-sub $0,3
+#offset 1
+
+mov $2,$0
+div $2,$0
+mov $1,$0
+sub $1,$2
+add $1,1
+seq $1,72668 ; Numbers one less than composite numbers.
+mov $0,$1
+sub $0,2

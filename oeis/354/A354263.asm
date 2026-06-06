@@ -1,28 +1,34 @@
 ; A354263: Expansion of e.g.f. 1/(1 + 3 * log(1-x)).
-; Submitted by kpmonaghan
+; Submitted by loader3229
 ; 1,3,21,222,3132,55242,1169262,28873800,814870584,25871762016,912684973968,35416732159872,1499286521185776,68757945743286576,3395829155786528976,179693346163010491008,10142543588881013369856,608262031900883147262336
 
+mov $7,$0
+add $7,1
+bin $7,2
 add $0,1
 lpb $0
-  mov $5,0
-  mov $7,0
-  mov $3,$2
+  sub $0,1
+  mov $4,$2
+  seq $4,343709 ; a(n) = 1 + 3 * Sum_{k=0..n-1} binomial(n,k) * (n-k-1)! * a(k).
+  mov $5,$2
+  add $5,$7
+  mov $8,$5
+  seq $8,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $5,1
+  mov $6,$5
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $3,$5
   add $3,1
   bin $3,2
-  mov $1,$2
-  add $1,1
-  lpb $1
-    sub $1,1
-    mov $6,$7
-    seq $6,343709 ; a(n) = 1 + 3 * Sum_{k=0..n-1} binomial(n,k) * (n-k-1)! * a(k).
-    mov $4,$7
-    add $4,$3
-    seq $4,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
-    mul $4,$6
-    add $5,$4
-    add $7,1
-  lpe
-  sub $0,1
+  sub $6,$3
+  sub $6,1
+  bin $5,$6
+  mul $5,$8
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-mov $0,$5
+mov $0,$1

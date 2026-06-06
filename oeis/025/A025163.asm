@@ -1,6 +1,6 @@
-; A025163: The value of the associated Legendre Polynomial of index n and order 1 evaluated at x=2^(-1/2) multiplied by 2^(3*n/2-1).
+; A025163: The value of the associated Legendre polynomial of index n and order 1 evaluated at x=2^(-1/2) multiplied by 2^(3*n/2-1).
 ; Submitted by loader3229
-; 0,1,6,18,20,-90,-588,-1708,-1944,7110,47300,136092,156312,-528164,-3540600,-10141080,-11703344
+; 0,1,6,18,20,-90,-588,-1708,-1944,7110,47300,136092,156312,-528164,-3540600,-10141080,-11703344,37922886,255287268,729276620,844084920,-2665175436,-17988763496,-51299837928,-59493138000,184568335900,1248021718632,3554751600792,4128363374576
 ; Formula: a(n) = b(n-1), a(3) = 18, a(2) = 6, a(1) = 1, a(0) = 0, b(n) = truncate((b(n-1)*(4*n+2)+b(n-2)*(-8*n-8))/n), b(3) = 20, b(2) = 18, b(1) = 6, b(0) = 1
 
 mov $3,1

@@ -1,11 +1,20 @@
 ; A294628: a(n) = 8*(sigma(n) - n + (1/2)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 4,12,12,28,12,52,12,60,36,68,12,132,12,84,76,124,12,172,12,180,92,116,12,292,52,132,108,228,12,340,12,252,124,164,108,444,12,180,140,404,12,436,12,324,268,212,12,612,68,348,172,372,12,532,140,516,188,260,12,868,12,276,332,508,156,628,12,468,220,596,12,988,12,324,396,516,156,724,12,852
-; Formula: a(n) = 8*A000203(n+1)-8*n-4
+; Formula: a(n) = 8*A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)-8*n+4
 
-mov $1,$0
+#offset 1
+
+sub $0,1
+mov $3,$0
 add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,$1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+sub $1,$0
+mov $0,$1
 mul $0,8
-sub $0,4
+add $0,4

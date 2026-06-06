@@ -4,13 +4,12 @@
 ; Formula: a(n) = floor((7*n+5)/12)+truncate((49*n-6)/12)+n+1
 
 mov $1,$0
-mul $1,7
-add $1,5
+mul $0,7
+add $0,5
+div $0,12
+add $0,$1
+mul $1,49
+sub $1,6
 div $1,12
-mov $2,$0
-mul $2,49
-sub $2,6
-div $2,12
-add $2,1
-add $1,$2
+add $1,1
 add $0,$1

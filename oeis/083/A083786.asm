@@ -1,8 +1,14 @@
 ; A083786: Composite numbers mod 10.
-; Submitted by Ralfy
+; Submitted by oneski22
 ; 4,6,8,9,0,2,4,5,6,8,0,1,2,4,5,6,7,8,0,2,3,4,5,6,8,9,0,2,4,5,6,8,9,0,1,2,4,5,6,7,8,0,2,3,4,5,6,8,9,0,2,4,5,6,7,8,0,1,2,4,5,6,7,8,0,1,2,3,4,5,6,8,9,0,2,4,5,6,8,0
-; Formula: a(n) = -10*truncate(A002808(n+1)/10)+A002808(n+1)
+; Formula: a(n) = (A072668(n)+1)%10
 
-add $0,1
-seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+#offset 1
+
+mov $2,$0
+seq $2,72668 ; Numbers one less than composite numbers.
+mov $1,-6
+add $1,$2
+mov $0,$1
+add $0,7
 mod $0,10

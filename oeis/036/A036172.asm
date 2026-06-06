@@ -26,6 +26,6 @@ lpb $1
     equ $3,$1
     div $0,2
   lpe
-  sub $1,5
+  sub $1,7
 lpe
 mov $0,$4

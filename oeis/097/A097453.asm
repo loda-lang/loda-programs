@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   sub $2,1
@@ -17,10 +16,7 @@ lpb $2
   div $7,$3
   mov $6,$3
   sub $6,$7
-  mov $8,$6
   seq $6,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-  lex $8,$6
-  add $6,$8
   add $3,1
   seq $3,40 ; The prime numbers.
   sub $3,$6

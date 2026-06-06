@@ -12,7 +12,6 @@ lpb $1
   mov $6,$0
   seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   mov $5,$0
-  gcd $5,$6
   mov $0,$6
   div $0,$5
   mov $3,$0

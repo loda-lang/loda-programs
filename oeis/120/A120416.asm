@@ -10,7 +10,7 @@ add $2,1
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,256011 ; Integers n with the property that the largest prime factor of n^2 + 1 is less than n.
+  seq $3,256011 ; Integers k with the property that the largest prime factor of k^2 + 1 is less than k.
   sub $3,1
   mov $5,$3
   mul $5,2

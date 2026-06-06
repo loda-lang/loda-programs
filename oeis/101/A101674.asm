@@ -1,26 +1,12 @@
 ; A101674: Fixed point of morphism 0 -> 01, 1 -> 20, 2 -> 21.
-; Submitted by loader3229
+; Submitted by abr00
 ; 0,1,2,0,2,1,0,1,2,1,2,0,0,1,2,0,2,1,2,0,2,1,0,1,0,1,2,0,2,1,0,1,2,1,2,0,2,1,0,1,2,1,2,0,0,1,2,0,0,1,2,0,2,1,0,1,2,1,2,0,0,1,2,0,2,1,2,0,2,1,0,1,2,1,2,0,0,1,2,0
+; Formula: a(n) = gcd(n,2)*(valuation(if(n==0,0,n/(2^valuation(n,2)))+1,2)%2)
 
 mov $1,$0
-lpb $0
-  sub $3,1
-  mov $4,$3
-  pow $4,2
-  sub $7,$4
-  mov $2,$4
-  sub $2,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  div $0,2
-  mul $2,$6
-  add $7,$2
-  mov $3,$7
-  add $7,1
-lpe
-mov $0,$3
+gcd $1,2
+dir $0,2
+add $0,1
+lex $0,2
+mod $0,2
+mul $0,$1

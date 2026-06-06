@@ -1,31 +1,37 @@
 ; A329489: Inflation orbit counts b^(4)(n) for the Elser-Sloane tiling.
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 1,0,255,624,14640,65280,707280,4100000,33361920,214344240,1568239200,10485693840,73680216480,500245705680,3461445351120,23639283000000,162614549665680,1113034754027520,7639424429247600,52333710967281120,358890347608872240,2459374189984879200,16860207009072934080,115552661798907900000,792070839735797226000,5428774300613343806880,37210469265076364513280,255041479450962425387040,1748099984649718927484400,11981604021910178547936720,82123488809483258365443600,562881841632627285459600000
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  mov $4,$0
-  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
+mov $9,$0
+bin $9,2
+lpb $0
   sub $0,1
-  lpb $0
-    add $5,1
-    sub $0,$5
-  lpe
-  add $0,1
-  seq $0,1350 ; Associated Mersenne numbers.
-  pow $0,4
-  mul $0,$4
-  add $1,$0
+  mov $4,$2
+  add $4,1
+  seq $4,329488 ; a(n) = A001350(n)^4.
+  mov $5,$2
+  add $5,$9
+  add $5,1
+  mov $7,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $8,$5
+  bin $5,2
+  sub $7,$5
+  mov $3,$8
+  div $3,$7
+  mov $6,$8
+  mod $6,$7
+  equ $6,0
+  seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $3,$6
+  mov $5,$3
+  mul $5,$4
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A095478: a(n) = 43 written in base n.
-; Submitted by kpmonaghan
+; Submitted by fzs600
 ; 1111111111111111111111111111111111111111111,101011,1121,223,133,111,61,53,47,43
 
 #offset 1
@@ -7,7 +7,10 @@
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $1,43
+mov $1,$0
+neq $1,0
+mul $1,3
+add $1,40
 lpb $1
   mov $4,$1
   mod $4,$0

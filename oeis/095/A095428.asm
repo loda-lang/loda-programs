@@ -1,10 +1,9 @@
 ; A095428: a(n) = 13 written in base n.
-; Submitted by Daniel Morton
+; Submitted by rilian
 ; 1111111111111,1101,111,31,23,21,16,15,14,13,12,11,10
 
 #offset 1
 
-mov $2,1
 mov $3,1
 mov $5,$0
 equ $5,1
@@ -22,4 +21,3 @@ lpb $1
   mul $3,10
 lpe
 mov $0,$2
-sub $0,1

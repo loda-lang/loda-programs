@@ -16,8 +16,7 @@ lpb $2
   sub $3,2
   add $4,1
   add $4,$3
-  sub $3,2
-  trn $3,1
+  trn $3,3
   add $3,$4
   bin $3,2
   gcd $3,2

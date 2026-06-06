@@ -1,23 +1,20 @@
 ; A051253: Weights of rotation-symmetric functions in n variables.
-; Submitted by loader3229
+; Submitted by lotusexcelle
 ; 1,4,6,18,36,80,172,360,760,1576,3264,6720,13776,28160,57376,116640,236608,479104,968640,1955712,3944064,7945856,15993856,32168448,64656640,129879040,260759040,523289088,1049711616,2104967168,4219743232,8456841216,16944388096
+; Formula: a(n) = b(n-1), b(n) = 2^(n-2)+2*b(n-2)+2*b(n-3), b(3) = 4, b(2) = 1, b(1) = 0, b(0) = 1
 
 #offset 3
 
-mov $1,1
-mov $2,4
-mov $3,6
-mov $4,18
-sub $0,3
+mov $2,1
+mov $3,-1
+mov $4,1
+sub $0,1
 lpb $0
-  mul $1,-4
-  rol $1,4
-  sub $4,$1
-  sub $4,$1
-  add $4,$2
-  add $4,$2
-  add $4,$3
-  add $4,$3
   sub $0,1
+  ror $1,3
+  add $1,$3
+  mul $1,2
+  add $1,$4
+  mul $4,2
 lpe
-mov $0,$1
+mov $0,$2

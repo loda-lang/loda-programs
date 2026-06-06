@@ -7,29 +7,29 @@ add $9,1
 bin $9,2
 add $0,1
 lpb $0
-  mov $7,0
-  mov $8,0
-  mov $3,$2
-  add $3,1
-  bin $3,2
-  mov $10,$2
-  add $10,1
-  lpb $10
-    sub $10,1
-    mov $6,$7
-    seq $6,244 ; Powers of 3: a(n) = 3^n.
-    mov $4,$7
-    add $4,$3
-    seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
-    mul $4,$6
-    add $7,1
-    add $8,$4
-  lpe
+  sub $0,1
+  mov $4,$2
+  seq $4,377394 ; Expansion of e.g.f. (1 - log(1-x))^3.
   mov $5,$2
   add $5,$9
-  seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
-  mul $5,$8
-  sub $0,1
+  mov $7,$5
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $8,$5
+  add $8,1
+  bin $8,2
+  sub $7,$8
+  mov $3,$5
+  sub $3,$7
+  mul $3,-1
+  mov $6,0
+  sub $6,$7
+  fac $6,$3
+  bin $5,$7
+  mul $5,$6
+  mul $5,$4
   add $1,$5
   add $2,1
 lpe

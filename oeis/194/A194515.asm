@@ -1,15 +1,28 @@
 ; A194515: Second coordinate of (3,4)-Lagrange pair for n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,-1,0,1,2,0,1,2,0,1,2,3,1,2,3,1,2,3,4,2,3,4,2,3,4,5,3,4,5,3,4,5,6,4,5,6,4,5,6,7,5,6,7,5,6,7,8,6,7,8,6,7,8,9,7,8,9,7,8,9,10,8,9,10,8,9,10,11,9,10,11,9,10,11,12,10,11,12,10,11
-; Formula: a(n) = 3*truncate((-41*n-82)/144)+n
+; Formula: a(n) = (((n-1)%7)==6)+(((n-1)%7)==3)+(((n-1)%7)==0)+2*(((n-1)%7)==4)-(((n-1)%7)==1)+floor((n-1)/7)
 
 #offset 1
 
 sub $0,1
-mov $1,-3
-sub $1,$0
-mul $1,41
-div $1,144
-mul $1,3
-add $0,$1
-add $0,1
+mov $2,$0
+div $2,7
+mod $0,7
+mov $1,$0
+equ $1,0
+add $2,$1
+mov $1,$0
+equ $1,1
+sub $2,$1
+mov $1,$0
+equ $1,3
+add $2,$1
+mov $1,$0
+equ $1,4
+mul $1,2
+add $2,$1
+mov $1,$0
+equ $1,6
+add $2,$1
+mov $0,$2

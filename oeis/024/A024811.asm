@@ -23,10 +23,9 @@ add $1,$3
 lpb $1
   mul $0,59
   sub $1,$0
-  trn $1,1
   add $4,4
   mov $0,$4
   add $4,1
 lpe
-sub $0,6
+mov $0,$4
 div $0,5

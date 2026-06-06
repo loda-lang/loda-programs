@@ -17,12 +17,18 @@ lpb $2
   mov $8,$3
   seq $8,72668 ; Numbers one less than composite numbers.
   add $9,$8
-  mov $7,$3
   mov $7,$9
   add $7,1
   mov $6,$1
   add $6,2
-  seq $6,7821 ; Primes p such that pi(p) is not prime.
+  seq $6,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  seq $6,40 ; The prime numbers.
+  mov $10,$6
+  mul $10,20
+  mov $6,$10
+  sub $6,37
+  div $6,20
+  add $6,2
   sub $6,$7
   mov $3,$6
   sub $3,1

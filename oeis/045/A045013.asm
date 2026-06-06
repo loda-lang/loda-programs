@@ -1,14 +1,11 @@
 ; A045013: Numbers whose base-3 representation contains exactly four 0's and four 2's.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 4400,4436,4448,4452,4544,4556,4560,4592,4596,4608,4868,4880,4884,4916,4920,4932,5024,5028,5040,5076,5840,5852,5856,5888,5892,5904,5996,6000,6012,6048,6320,6324,6336,6372,6480,6641
 
 #offset 1
 
 sub $0,1
-mov $1,1
-mov $2,$0
-add $2,10
-pow $2,5
+mov $2,59049
 lpb $2
   mul $5,2
   add $5,25
@@ -28,10 +25,8 @@ lpb $2
   max $4,0
   equ $4,$0
   mov $5,-20
+  sub $1,2
   mul $2,$4
-  sub $2,5
+  sub $2,3
 lpe
-mov $0,$1
-sub $0,13201
-div $0,3
-add $0,4400
+mov $0,$3

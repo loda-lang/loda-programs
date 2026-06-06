@@ -17,10 +17,10 @@ lpb $0
   lpb $10
     sub $10,1
     mov $6,$7
-    seq $6,291979 ; a(n) = (-1)^n*n!*[x^n] exp(-x)/(1 + log(1+x)).
+    seq $6,7840 ; Number of factorizations of permutations of n letters into ordered cycles.
     mov $4,$7
     add $4,$3
-    seq $4,8290 ; Triangle T(n,k) of rencontres numbers (number of permutations of n elements with k fixed points).
+    seq $4,94587 ; Triangle of permutation coefficients arranged with 1's on the diagonal. Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
     mul $4,$6
     add $7,1
     add $8,$4

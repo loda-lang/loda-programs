@@ -1,7 +1,7 @@
 ; A082389: a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
 ; Submitted by Ralfy
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1
-; Formula: a(n) = -truncate((sqrtint(5*(n+1)^2)+n+1)/2)+truncate((sqrtint(5*(n+2)^2)+n+2)/2)
+; Formula: a(n) = -floor((sqrtint(5*(n+1)^2)+n+1)/2)+floor((sqrtint(5*(n+2)^2)+n+2)/2)
 
 #offset 1
 

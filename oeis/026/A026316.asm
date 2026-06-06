@@ -1,26 +1,22 @@
 ; A026316: Numbers k such that |sin(k)| > |cos(k+1)|.
-; Submitted by Science United
+; Submitted by Aionel
 ; 1,4,7,8,10,11,13,14,16,17,20,23,26,29,30,32,33,35,36,38,39,42,45,48,51,52,54,55,57,58,60,61,64,67,70,73,74,76,77,79,80,82,83,86,89,92,95,96,98,99,101,102,104,105,108,111,114,117,118
 
 #offset 1
 
-mov $2,1
-mov $3,3
-mov $4,4
-mov $5,6
-mov $6,7
-mov $7,9
-mov $8,10
-mov $9,13
-mov $10,16
-mov $11,19
-mov $12,22
-lpb $0
-  mul $1,-1
-  rol $1,12
-  add $12,$1
-  add $12,$11
-  sub $0,1
+add $0,3
+mov $2,$0
+pow $2,4
+lpb $2
+  mov $3,$1
+  mul $3,7
+  div $3,22
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,2
+  sub $2,$0
 lpe
-mov $0,$9
-sub $0,15
+mov $0,$1
+div $0,2
+sub $0,6

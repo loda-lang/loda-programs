@@ -1,5 +1,5 @@
 ; A018360: Divisors of 260.
-; Submitted by Mads Nissen
+; Submitted by Conan
 ; 1,2,4,5,10,13,20,26,52,65,130,260
 
 #offset 1
@@ -13,8 +13,7 @@ lpb $2
   gcd $3,$4
   div $3,$4
   sub $0,$3
-  bin $1,0
-  add $1,12
+  mov $1,13
   sub $2,$0
 lpe
 mov $0,$4

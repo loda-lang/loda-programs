@@ -1,22 +1,11 @@
 ; A159057: a(n) = A102370(n) mod 10.
-; Submitted by gbusler
+; Submitted by ledwards
 ; 0,3,6,5,4,5,0,9,8,1,4,3,8,3,8,7,6,9,2,1,0,1,6,5,4,7,0,1,4,9,4,3,2,5,8,7,6,7,2,1,0,3,6,5,0,5,0,9,8,1,4,3,2,3,8,7,6,9,6,3,6,1,6,5,4,7,0,9,8,9,4,3,2,5,8,7,2,7,2,1
 
-mod $0,110
-mov $1,1
-mov $4,$0
-mov $5,$0
-add $0,1
-lpb $5
-  div $5,2
-  mul $1,2
-  mov $2,$0
-  mod $2,$1
-  equ $2,0
-  mov $3,$1
-  mul $3,$2
-  add $0,1
-  add $4,$3
+lpb $0
+  add $0,21
+  div $0,131
+  sub $0,1
 lpe
-mov $0,$4
+seq $0,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
 mod $0,10
