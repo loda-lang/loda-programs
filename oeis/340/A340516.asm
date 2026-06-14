@@ -1,13 +1,13 @@
 ; A340516: Let p_i (i=1..m) denote the primes <= n, and let e_i be the maximum number such that p_i^e_i <= n; then a(n) = Product_{i=1..m} p_i^(2*e_i-1).
-; Submitted by ChelseaOilman
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,2,6,24,120,120,840,3360,30240,30240,332640,332640,4324320,4324320,4324320,17297280,294053760,294053760,5587021440,5587021440,5587021440,5587021440,128501493120,128501493120,3212537328000,3212537328000,28912835952000,28912835952000,838472242608000,838472242608000,25992639520848000,103970558083392000,103970558083392000,103970558083392000,103970558083392000,103970558083392000,3846910649085504000,3846910649085504000,3846910649085504000,3846910649085504000,157723336612505664000
-; Formula: a(n) = truncate((truncate(A051426(n)/2)^3)/A064549(truncate(A051426(n)/2)))
+; Formula: a(n) = A003557(A003418(n))*A003418(n)
 
 #offset 1
 
-seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
-div $0,2
 mov $1,$0
-seq $1,64549 ; a(n) = n * Product_{primes p|n} p.
-pow $0,3
-div $0,$1
+seq $1,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+mov $2,$1
+seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+mul $2,$1
+mov $0,$2

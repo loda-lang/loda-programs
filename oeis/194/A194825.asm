@@ -1,43 +1,10 @@
 ; A194825: Digital roots of the nonzero 9-gonal (nonagonal) numbers.
-; Submitted by loader3229
+; Submitted by Shanman Racing
 ; 1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6,9,1,9,6,1,3,3,1,6
-; Formula: a(n) = (((n-1)%9)==6)+(((n-1)%9)==3)+(((n-1)%9)==0)+9*(((n-1)%9)==8)+9*(((n-1)%9)==1)+6*(((n-1)%9)==7)+6*(((n-1)%9)==2)+3*(((n-1)%9)==5)+3*(((n-1)%9)==4)
+; Formula: a(n) = sign(binomial(5*n,2))*((binomial(5*n,2)-1)%9+1)
 
 #offset 1
 
-sub $0,1
-mod $0,9
-mov $1,$0
-equ $1,0
-mov $2,$1
-mov $1,$0
-equ $1,1
-mul $1,9
-add $2,$1
-mov $1,$0
-equ $1,2
-mul $1,6
-add $2,$1
-mov $1,$0
-equ $1,3
-add $2,$1
-mov $1,$0
-equ $1,4
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,6
-add $2,$1
-mov $1,$0
-equ $1,7
-mul $1,6
-add $2,$1
-mov $1,$0
-equ $1,8
-mul $1,9
-add $2,$1
-mov $0,$2
+mul $0,5
+bin $0,2
+dgr $0,10

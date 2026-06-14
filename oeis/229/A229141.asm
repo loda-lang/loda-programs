@@ -1,11 +1,10 @@
 ; A229141: Number of circular permutations i_1, ..., i_n of 1, ..., n such that all the n sums i_1^2+i_2, ..., i_{n-1}^2+i_n, i_n^2+i_1 are among those integers m with the Jacobi symbol (m/(2n+1)) equal to 1.
-; Submitted by Gunnar Hjern
+; Submitted by Goldislops
 ; 1,0,0,2,0,1,0,5,35,0
-; Formula: a(n) = truncate(d(n+4)/2), b(n) = c(n-2)^3, b(7) = 0, b(6) = 0, b(5) = 0, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = d(n-1), c(7) = 0, c(6) = 2, c(5) = 0, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = max(-b(n-3)-d(n-4)-e(n-3)-2*d(n-2)+b(n-2)+b(n-4)+c(n-2)+d(n-1)+d(n-3)+e(n-2),0), d(8) = 4, d(7) = 0, d(6) = 0, d(5) = 2, d(4) = 0, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = -b(n-1)-e(n-1)+d(n-1)+2, e(7) = 0, e(6) = 2, e(5) = 2, e(4) = 0, e(3) = 2, e(2) = 0, e(1) = 2, e(0) = 0
+; Formula: a(n) = truncate(b(n+4)/2), b(n) = d(n-1), b(7) = 0, b(6) = 0, b(5) = 2, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = d(n-2)^3, c(7) = 0, c(6) = 8, c(5) = 0, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = e(n-1), d(7) = 4, d(6) = 0, d(5) = 0, d(4) = 2, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = max(-c(n-3)-e(n-4)-f(n-3)-2*e(n-2)+c(n-2)+c(n-4)+d(n-2)+e(n-1)+e(n-3)+f(n-2),0), e(8) = 2, e(7) = 0, e(6) = 4, e(5) = 0, e(4) = 0, e(3) = 2, e(2) = 0, e(1) = 0, e(0) = 0, f(n) = -c(n-1)-f(n-1)+e(n-1)+2, f(7) = -4, f(6) = 2, f(5) = 0, f(4) = 2, f(3) = 2, f(2) = 0, f(1) = 2, f(0) = 0
 
 #offset 1
 
-mov $4,-2
 add $0,4
 lpb $0
   sub $0,1
@@ -14,7 +13,6 @@ lpb $0
   mov $7,$6
   sub $4,$9
   mov $6,$4
-  add $6,27
   pow $1,3
   mov $4,$2
   trn $5,$7
@@ -28,5 +26,5 @@ lpb $0
   add $9,2
   add $5,$7
 lpe
-mov $0,$8
+mov $0,$1
 div $0,2

@@ -1,12 +1,24 @@
 ; A139293: (2^(2p - 1)/8)-1, where p is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,3,63,1023,262143,4194303,1073741823,17179869183,4398046511103,18014398509481983,288230376151711743,1180591620717411303423,302231454903657293676543,4835703278458516698824703
-; Formula: a(n) = truncate(4^(A000040(n+1)-2))-1
+
+#offset 1
 
 add $0,1
-seq $0,40 ; The prime numbers.
-sub $0,2
-mov $1,4
-pow $1,$0
-mov $0,$1
-sub $0,1
+mov $4,$0
+pow $4,4
+lpb $4
+  add $3,1
+  mov $1,$2
+  gcd $1,$3
+  div $1,$3
+  sub $0,$1
+  mul $2,2
+  add $2,2
+  sub $4,$0
+lpe
+mov $0,$2
+add $0,2
+pow $0,2
+sub $0,16
+div $0,16

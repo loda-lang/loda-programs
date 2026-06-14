@@ -1,5 +1,5 @@
 ; A085632: Number of connected coin graphs, also known as "penny" graphs.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,1,2,5,13,46,162,715
 
 #offset 1
@@ -10,7 +10,6 @@ lpb $0
   sub $0,1
   mov $5,$1
   mul $5,2
-  min $7,11
   add $8,5
   mov $6,3
   add $6,$8

@@ -1,9 +1,10 @@
-; A180739: Diagonal of array arising in computing the number of numerical semigroups using generating functions.
+; A180739: Number of numerical semigroups of multiplicity n and genus n+2.
 ; Submitted by Jamie Morken(s2)
-; 1,2,6,10,17,28,44,66,95,132,178,234
+; 1,2,6,10,17,28,44,66,95,132,178,234,301,380,472,578,699,836,990,1162,1353,1564,1796,2050,2327,2628,2954,3306,3685,4092,4528,4994,5491,6020,6582,7178,7809,8476,9180,9922,10703,11524,12386,13290,14237,15228,16264
 
-#offset 1
+#offset 2
 
+sub $0,1
 mov $1,$0
 lpb $1
   bin $1,3

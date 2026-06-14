@@ -1,18 +1,16 @@
 ; A095516: a(n) = 62 written in base n.
-; Submitted by Mads Nissen
+; Submitted by Goldislops
 ; 11111111111111111111111111111111111111111111111111111111111111,111110,2022,332,222,142,116,76,68,62,57,52
 
 #offset 1
 
-mov $1,$0
+trn $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-neq $1,0
-mul $1,5
-add $1,57
+add $1,62
 lpb $1
   mov $4,$1
   mod $4,$2

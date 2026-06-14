@@ -1,5 +1,5 @@
 ; A032763: Take list of even numbers, move left digit of each term to end of previous term.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,2,4,6,8,1,1,21,41,61,82,2,22,42,62,83,3,23,43,63,84,4,24,44,64,85,5,25,45,65,86,6,26,46,66,87,7,27,47,67,88,8,28,48,68,89,9,29,49,69,81,1,21,41,61,81,101,121,141,161,181,201,221,241,261,281,301,321,341,361,381,401,421,441,461,481,501,521,541,561
 
 mov $2,1
@@ -30,24 +30,12 @@ lpb $0
   sub $8,1
   mov $7,10
   pow $7,$8
+  equ $8,10
   mov $6,$3
   div $6,$7
   mul $1,10
   add $1,$6
-  mov $4,$8
-  equ $4,0
   mul $6,$7
-  add $2,$4
-  mov $5,$2
-  mul $5,2
-  mov $9,$5
-  log $9,10
-  add $9,1
-  mul $9,$4
-  mul $4,$5
-  equ $8,10
-  add $8,$9
   sub $3,$6
-  add $3,$4
 lpe
 mov $0,$10

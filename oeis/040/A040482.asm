@@ -1,17 +1,15 @@
 ; A040482: Continued fraction for sqrt(505).
-; Submitted by Time_Traveler
+; Submitted by Bill F
 ; 22,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2,44,2,8,2
-; Formula: a(n) = 2*max(b(n),1), b(n) = b(n-4), b(6) = 4, b(5) = 0, b(4) = 22, b(3) = 0, b(2) = 4, b(1) = 0, b(0) = 11
+; Formula: a(n) = 2*floor((3*binomial(gcd(n,4)+4,binomial(0,n)+5))/(gcd(n,4)+4))+2
 
-mov $2,11
-mov $4,4
-mov $6,22
-lpb $0
-  mov $2,0
-  rol $2,5
-  add $6,$2
-  sub $0,1
-lpe
-max $2,1
-mov $0,$2
+bin $2,$0
+add $2,5
+gcd $0,4
+add $0,4
+mov $1,$0
+bin $0,$2
+mul $0,3
+div $0,$1
 mul $0,2
+add $0,2

@@ -6,5 +6,6 @@ lpb $0
   div $0,131
   sub $0,1
 lpe
+mod $0,-65
 seq $0,106481 ; An Euler phi transform of 1/(1 - x^2).
 add $0,1

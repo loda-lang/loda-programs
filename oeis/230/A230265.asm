@@ -1,12 +1,11 @@
 ; A230265: Denominators of eta(2*n)/Pi^(2*n), where eta(n) is the Dirichlet eta function.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 2,12,720,30240,1209600,6842880,1307674368000,74724249600,1524374691840000,5109094217170944000,802857662698291200000,287777551824322560000,1693824136731743669452800000,186134520519971831808000000
 
 lpb $0
-  add $0,4
+  mul $0,2
   div $0,27
   sub $0,1
-  mul $0,3
 lpe
 seq $0,36281 ; Denominators in Taylor series for x * cosec(x).
 mul $0,2

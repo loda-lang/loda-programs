@@ -1,18 +1,16 @@
 ; A095446: a(n) = 27 written in base n.
-; Submitted by Ulf
+; Submitted by Johnbodlis team
 ; 111111111111111111111111111,11011,1000,123,102,43,36,33,30,27,25,23,21
 
 #offset 1
 
-mov $1,$0
+trn $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-neq $1,0
-mul $1,20
-add $1,7
+add $1,27
 lpb $1
   mov $4,$1
   mod $4,$2

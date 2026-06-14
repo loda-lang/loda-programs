@@ -1,5 +1,5 @@
 ; A043593: Numbers whose base-4 representation has exactly 2 runs.
-; Submitted by happywetter.at
+; Submitted by Science United
 ; 4,6,7,8,9,11,12,13,14,16,20,22,23,26,31,32,37,40,41,43,47,48,53,58,60,61,62,64,80,84,86,87,90,95,106,127,128,149,160,165,168,169,171,175,191,192,213,234,240,245,250,252,253,254,256
 
 #offset 1
@@ -14,6 +14,7 @@ lpb $2
   seq $3,43556 ; Number of runs in base-4 representation of n.
   dif $3,4
   add $3,1
+  min $3,5
   mod $3,2
   sub $0,$3
   add $1,1

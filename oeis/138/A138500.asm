@@ -1,11 +1,11 @@
 ; A138500: Decimal expansion of arc length of the quadrifolium.
-; Submitted by Laze
+; Submitted by Science United
 ; 9,6,8,8,4,4,8,2,2,0,5,4,7,6,7,6,1,9,8,4,2,8,5,0,3,1,9,6,3,9,1,8,2,9,4,1,1,9,5,3,9,1,8,3,9,7,8,8,6,6,0,0,8,2,5,0,8,3,1,1,6,3,5,2,4,6,2,1,2,0,6,4,5,9,6,2,5,5,2,1
 
 #offset 1
 
 mov $3,$0
-mul $3,9
+mul $3,7
 lpb $3
   max $3,1
   max $5,$2

@@ -15,7 +15,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
+    max $7,1
     seq $7,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
     mov $9,10
     add $9,$5

@@ -1,18 +1,14 @@
 ; A345111: a(n) = n + A345110(n).
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,2,4,6,8,10,12,14,16,18,11,22,33,44,55,66,77,88,99,110,22,33,44,55,66,77,88,99,110,121,33,44,55,66,77,88,99,110,121,132,44,55,66,77,88,99,110,121,132,143,55,66,77,88,99,110,121,132,143,154,66,77,88
-; Formula: a(n) = -10*truncate(10^logint(max(n,1),10))*floor(n/truncate(10^logint(max(n,1),10)))+11*n+floor(n/truncate(10^logint(max(n,1),10)))
 
-mov $1,$0
-max $1,1
-log $1,10
-mov $2,10
-pow $2,$1
-mov $3,$0
-div $3,$2
-mov $1,$0
-mul $2,$3
-sub $0,$2
-mul $0,10
-add $0,$3
-add $0,$1
+mov $2,$0
+lpb $0
+  mov $1,$0
+  mod $1,10
+  div $0,10
+  mul $3,10
+  add $3,$1
+lpe
+add $2,$3
+mov $0,$2

@@ -1,22 +1,21 @@
 ; A395767: Minimal value of p(1) + Sum_{i=2...n} p(i-1)*p(i), as p ranges over all permutations of powers of 2 {1,2,4,...,2^(n-1)}.
-; Submitted by hugo75
+; Submitted by Science United
 ; 1,3,8,22,52,128,288,672,1472,3328,7168,15872,33792,73728,155648,335872,704512,1507328,3145728,6684672,13893632,29360128,60817408,127926272,264241152,553648128,1140850688,2382364672,4898947072,10200547328,20937965568,43486543872
 
 #offset 1
 
+mov $2,-1
+mov $3,1
+fil $3,3
 sub $0,1
-mul $0,2
-mov $2,1
-mov $3,$0
-mov $4,1
 lpb $0
-  sub $0,2
-  add $1,2
-  mul $2,$3
-  div $2,$1
-  mov $3,$0
+  sub $0,1
+  mul $1,$2
+  add $1,$3
+  mul $3,2
   mul $4,2
-  add $4,$2
-  mul $1,$0
+  add $4,$1
+  add $2,1
+  mod $2,2
 lpe
 mov $0,$4

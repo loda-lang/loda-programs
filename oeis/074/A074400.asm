@@ -1,8 +1,18 @@
 ; A074400: Sum of the even divisors of 2n.
-; Submitted by ckrause
+; Submitted by Science United
 ; 2,6,8,14,12,24,16,30,26,36,24,56,28,48,48,62,36,78,40,84,64,72,48,120,62,84,80,112,60,144,64,126,96,108,96,182,76,120,112,180,84,192,88,168,156,144,96,248,114,186,144,196,108,240,144,240,160,180,120,336,124,192,208,254,168,288,136,252,192,288,144,390,148,228,248,280,192,336,160,372
-; Formula: a(n) = 2*A000203(n+1)
+; Formula: a(n) = 2*A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)
 
+#offset 1
+
+sub $0,1
+mov $3,$0
 add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+mov $0,$1
 mul $0,2

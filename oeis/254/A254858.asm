@@ -29,6 +29,7 @@ lpb $2
     mov $6,$1
     add $6,$9
     bin $6,$1
+    add $1,1
     seq $1,272470 ; 7 times the primes.
     mul $6,$1
     mul $8,-1

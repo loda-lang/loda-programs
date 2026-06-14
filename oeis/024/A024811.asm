@@ -18,8 +18,7 @@ add $3,6
 mul $3,$2
 mul $3,4
 add $0,5
-mod $1,2
-add $1,$3
+mov $1,$3
 lpb $1
   mul $0,59
   sub $1,$0

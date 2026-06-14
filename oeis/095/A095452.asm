@@ -1,17 +1,16 @@
 ; A095452: a(n) = 30 written in base n.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 111111111111111111111111111111,11110,1010,132,110,50,42,36,33,30,28,26,24,22,20
 
 #offset 1
 
-mov $1,$0
+trn $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
 mov $0,0
-neq $1,0
-mul $1,30
+add $1,30
 lpb $1
   mov $4,$1
   mod $4,$2

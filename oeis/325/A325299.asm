@@ -1,8 +1,18 @@
 ; A325299: a(n) = 9 * sigma(n).
-; Submitted by PDW
+; Submitted by Geddy
 ; 9,27,36,63,54,108,72,135,117,162,108,252,126,216,216,279,162,351,180,378,288,324,216,540,279,378,360,504,270,648,288,567,432,486,432,819,342,540,504,810,378,864,396,756,702,648,432,1116,513,837,648,882,486,1080,648,1080,720,810,540,1512
-; Formula: a(n) = 9*A000203(n+1)
+; Formula: a(n) = 9*A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)
 
+#offset 1
+
+sub $0,1
+mov $3,$0
 add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+mov $0,$1
 mul $0,9

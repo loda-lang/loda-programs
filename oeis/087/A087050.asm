@@ -1,7 +1,7 @@
 ; A087050: Square root of the largest square >1 dividing the n-th nonsquarefree number.
 ; Submitted by fzs600
 ; 2,2,3,2,4,3,2,2,5,3,2,4,6,2,2,3,4,7,5,2,3,2,2,3,8,2,6,5,2,4,9,2,2,3,2,4,7,3,10,2,6,4,2,3,2,11,2,5,3,8,2,3,2,2,12,7,2,5,2,3,2,4,9,2,2,13,3,2,5,4,6,2,2,3,8,14,3,10,2,3
-; Formula: a(n) = truncate(max(0,A013929(n)-1)/A019554(max(0,A013929(n)-1)+1))+1
+; Formula: a(n) = floor(max(0,A013929(n)-1)/A019554(max(0,A013929(n)-1)+1))+1
 
 #offset 1
 

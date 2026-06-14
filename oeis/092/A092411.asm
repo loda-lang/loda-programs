@@ -1,24 +1,51 @@
 ; A092411: a(n) = sigma(n,2) + sigma(n+1,2).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 6,15,31,47,76,100,135,176,221,252,332,380,420,510,601,631,745,817,908,1046,1110,1140,1380,1501,1501,1670,1870,1892,2142,2262,2327,2585,2670,2750,3211,3281,3180,3510,3910,3892,4182,4350,4412,4928,5016,4860,5620
 
 #offset 1
 
+mov $4,$0
+mul $4,2
 sub $0,1
-mov $3,2
-lpb $3
-  add $0,$3
-  mov $1,2
-  lpb $1
-    sub $1,1
-    sub $0,1
-    mov $2,$0
-    max $2,0
-    add $2,1
-    seq $2,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
-    mov $3,0
-    add $4,$2
-  lpe
-  sub $0,$2
+mov $5,$0
+bin $5,2
+add $5,$0
+add $5,$4
+lpb $4
+  sub $4,1
+  mov $0,$5
+  sub $0,$4
+  mov $6,$0
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  mov $9,$6
+  bin $6,2
+  mov $10,$0
+  sub $10,$6
+  mov $8,$9
+  div $8,$10
+  pow $8,2
+  mov $2,$9
+  mod $2,$10
+  equ $2,0
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
+  sub $0,1
+  pow $1,$0
+  mul $8,$2
+  mul $8,19
+  mov $0,$1
+  mul $0,2
+  mul $0,$8
+  add $3,$0
 lpe
-mov $0,$4
+mov $0,$3
+div $0,38
+add $0,1

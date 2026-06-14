@@ -1,5 +1,5 @@
 ; A095458: a(n) = 33 written in base n.
-; Submitted by joemosch
+; Submitted by FritzB
 ; 111111111111111111111111111111111,100001,1020,201,113,53,45,41,36,33,30,29,27,25,23,21
 
 #offset 1
@@ -9,8 +9,7 @@ mov $5,$0
 equ $5,1
 mov $1,$0
 neq $1,0
-add $1,10
-mul $1,3
+add $1,32
 lpb $1
   mov $4,$1
   mod $4,$0

@@ -1,12 +1,24 @@
 ; A139290: 2^(2p - 1)/4, where p is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Goldislops
 ; 2,8,128,2048,524288,8388608,2147483648,34359738368,8796093022208,36028797018963968,576460752303423488,2361183241434822606848,604462909807314587353088,9671406556917033397649408
-; Formula: a(n) = 2*truncate(4^(A000040(n+1)-2))
+
+#offset 1
 
 add $0,1
-seq $0,40 ; The prime numbers.
-sub $0,2
-mov $1,4
-pow $1,$0
-mul $1,2
-mov $0,$1
+mov $4,$0
+pow $4,4
+lpb $4
+  add $3,1
+  mov $1,$2
+  gcd $1,$3
+  div $1,$3
+  sub $0,$1
+  mul $2,2
+  add $2,2
+  sub $4,$0
+lpe
+mov $0,$2
+add $0,2
+pow $0,2
+div $0,16
+mul $0,2

@@ -19,10 +19,8 @@ lpb $2
   add $7,1
   seq $7,19554 ; Smallest number whose square is divisible by n.
   div $6,$7
-  mov $5,$3
   mov $5,$6
   add $5,1
-  pow $5,2
   sub $3,$5
   sub $3,$1
   equ $3,0

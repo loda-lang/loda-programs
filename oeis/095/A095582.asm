@@ -1,25 +1,24 @@
 ; A095582: a(n) = 95 written in base n.
-; Submitted by markus-d
+; Submitted by FritzB
 ; 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111,1011111,10112,1133,340,235,164,137,115,95,87
 
 #offset 1
 
-mov $1,$0
-mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $0,0
+mov $1,$0
 neq $1,0
-mul $1,96
-sub $1,1
+add $1,4
+mul $1,19
 lpb $1
   mov $4,$1
-  mod $4,$2
+  mod $4,$0
   add $4,$5
   sub $1,$4
-  div $1,$2
+  div $1,$0
   mul $4,$3
-  add $0,$4
+  add $2,$4
   mul $3,10
 lpe
+mov $0,$2

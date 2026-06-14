@@ -1,15 +1,12 @@
 ; A315736: Coordination sequence Gal.6.253.6 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by loader3229
+; Submitted by Bagoda Tes-X
 ; 1,6,12,18,23,27,31,35,40,46,52,58,64,70,76,81,85,89,93,98,104,110,116,122,128,134,139,143,147,151,156,162,168,174,180,186,192,197,201,205,209,214,220,226,232,238,244,250,255,259
-; Formula: a(n) = ((sign(n)*((n-1)%11+1))==0)+58*floor(n/11)+52*((sign(n)*((n-1)%11+1))==10)+46*((sign(n)*((n-1)%11+1))==9)+40*((sign(n)*((n-1)%11+1))==8)+35*((sign(n)*((n-1)%11+1))==7)+31*((sign(n)*((n-1)%11+1))==6)+27*((sign(n)*((n-1)%11+1))==5)+23*((sign(n)*((n-1)%11+1))==4)+18*((sign(n)*((n-1)%11+1))==3)+12*((sign(n)*((n-1)%11+1))==2)+6*((sign(n)*((n-1)%11+1))==1)
+; Formula: a(n) = max(58*floor(n/11)+52*((sign(n)*((n-1)%11+1))==10)+46*((sign(n)*((n-1)%11+1))==9)+40*((sign(n)*((n-1)%11+1))==8)+35*((sign(n)*((n-1)%11+1))==7)+31*((sign(n)*((n-1)%11+1))==6)+27*((sign(n)*((n-1)%11+1))==5)+23*((sign(n)*((n-1)%11+1))==4)+18*((sign(n)*((n-1)%11+1))==3)+12*((sign(n)*((n-1)%11+1))==2)+6*((sign(n)*((n-1)%11+1))==1)-1,0)+1
 
 mov $2,$0
 div $2,11
 mul $2,58
 dgr $0,12
-mov $1,$0
-equ $1,0
-add $2,$1
 mov $1,$0
 equ $1,1
 mul $1,6
@@ -50,4 +47,6 @@ mov $1,$0
 equ $1,10
 mul $1,52
 add $2,$1
+trn $2,1
 mov $0,$2
+add $0,1

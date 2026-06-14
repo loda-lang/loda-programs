@@ -10,7 +10,7 @@ lpb $3
   add $2,1
   mul $2,$3
   mul $2,18
-  add $5,1
+  sub $5,7
   mul $1,33
   add $1,$2
   div $1,$5

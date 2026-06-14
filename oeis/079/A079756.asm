@@ -1,7 +1,7 @@
 ; A079756: Operation count to create all permutations of n distinct elements using the "streamlined" version of Algorithm L (lexicographic permutation generation) from Knuth's The Art of Computer Programming, Vol. 4, chapter 7.2.1.2. Sequence gives number of interchanges in reversal step.
-; Submitted by ckrause
+; Submitted by iBezanilla
 ; 0,0,4,29,215,1734,15630,156327,1719637,20635688,268264004,3755696121,56335441899,901367070474,15323240198170,275818323567179,5240548147776545,104810962955531052,2201030222066152272,48422664885455350173,1113721292365473054199,26729311016771353301006,668232775419283832525414,17374052160901379645661039,469099408344337250432848365,13134783433641443012119754544,380908719575601847351472882140,11427261587268055420544186464577,354245109205309718036869780402307,11335843494569910977179832972874258
-; Formula: a(n) = truncate(b(n-3)/2), b(n) = (n+2)*(2*truncate((b(n-1)+n+2)/2)-2)+b(n-1), b(1) = 0, b(0) = 0
+; Formula: a(n) = b(n-3), b(n) = truncate((2*b(n-1)+n)/2)*(n+2)+b(n-1), b(1) = 0, b(0) = 0
 
 #offset 3
 
@@ -11,12 +11,11 @@ lpb $0
   sub $0,1
   add $2,1
   mov $1,$3
+  sub $1,1
+  mul $1,2
   add $1,$2
   div $1,2
-  mul $1,2
-  sub $1,2
   mul $1,$2
   add $3,$1
 lpe
 mov $0,$3
-div $0,2

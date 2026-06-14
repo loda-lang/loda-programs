@@ -1,15 +1,14 @@
 ; A095524: a(n) = 66 written in base n.
-; Submitted by Science United
+; Submitted by sjmielh
 ; 111111111111111111111111111111111111111111111111111111111111111111,1000010,2110,1002,231,150,123,102,73,66,60,56,51
 
 #offset 1
 
+trn $1,$0
 mov $2,$0
 mov $3,1
 mov $5,$0
 equ $5,1
-mov $1,$0
-sub $1,$0
 mov $0,0
 add $1,66
 lpb $1

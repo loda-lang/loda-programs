@@ -1,33 +1,34 @@
 ; A035168: a(n) = Sum_{d|n} Kronecker(-22, d).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by pascal768
 ; 1,1,0,1,0,0,0,1,1,0,1,0,2,0,0,1,0,1,2,0,0,1,2,0,1,2,0,0,2,0,2,1,0,0,0,1,0,2,0,0,0,0,2,1,0,2,2,0,1,1,0,2,0,0,0,0,0,2,0,0,2,2,0,1,0,0,0,0,0,0,2,1,0,0,0,2,0,0,0,0
 
 #offset 1
 
-mov $2,$0
+dif $0,2
+mov $3,$0
 sub $0,1
-mov $3,1
-mov $4,$0
-lpb $4
-  sub $4,2
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  mov $5,$0
-  add $5,1
-  mod $5,8
-  sub $5,3
-  mod $5,2
-  mov $6,0
-  sub $6,$5
-  pow $0,5
-  add $0,1
-  mod $0,11
-  sub $0,1
-  mul $0,$6
-  mul $1,$0
-  add $3,$1
+mov $4,1
+mov $5,$0
+lpb $5
+  sub $5,2
+  mov $1,$3
+  sub $1,$5
+  mov $2,$1
+  gcd $2,$5
+  bin $2,$1
+  mov $6,$1
+  add $6,1
+  mod $6,8
+  sub $6,3
+  mod $6,2
+  mov $7,0
+  sub $7,$6
+  pow $1,5
+  add $1,1
+  mod $1,11
+  sub $1,1
+  mul $1,$7
+  mul $2,$1
+  add $4,$2
 lpe
-mov $0,$3
+mov $0,$4

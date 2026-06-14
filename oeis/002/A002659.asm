@@ -1,9 +1,19 @@
 ; A002659: a(n) = 2*sigma(n) - 1.
-; Submitted by Bigos2
+; Submitted by Science United
 ; 1,5,7,13,11,23,15,29,25,35,23,55,27,47,47,61,35,77,39,83,63,71,47,119,61,83,79,111,59,143,63,125,95,107,95,181,75,119,111,179,83,191,87,167,155,143,95,247,113,185,143,195,107,239,143,239,159,179,119,335,123,191,207,253,167,287,135,251,191,287,143,389,147,227,247,279,191,335,159,371
-; Formula: a(n) = 2*A000203(n+1)-1
+; Formula: a(n) = 2*A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)-1
 
+#offset 1
+
+sub $0,1
+mov $3,$0
 add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+mov $0,$1
 mul $0,2
 sub $0,1

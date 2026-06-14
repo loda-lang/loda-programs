@@ -13,6 +13,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,231821 ; a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
     div $7,3
     equ $7,$8

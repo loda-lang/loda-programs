@@ -5,16 +5,6 @@
 #offset 1
 
 mov $1,$0
-mov $2,0
-mov $3,0
-mov $4,0
-mov $5,0
-mov $6,0
-mov $7,0
-mov $8,0
-mov $9,0
-mov $10,0
-mov $14,0
 lpb $0
   mov $12,$0
   mod $12,10

@@ -1,5 +1,5 @@
 ; A133075: Divisors of 2000.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1,2,4,5,8,10,16,20,25,40,50,80,100,125,200,250,400,500,1000,2000
 
 #offset 1
@@ -17,6 +17,5 @@ lpb $2
   add $1,10
   sub $2,$0
 lpe
-mov $0,$1
-div $0,10
+mov $0,$4
 add $0,1

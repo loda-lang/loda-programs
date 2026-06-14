@@ -1,18 +1,17 @@
 ; A295437: a(n) = (18*n)!*n!/((9*n)!*(6*n)!*(4*n)!).
-; Submitted by Facultad de Derecho
+; Submitted by iBezanilla
 ; 1,1021020,6016814703900,41477110789150966020,304331361887290342345862940,2309513382640863232775760738593520,17900786683992090777583802478540374204100,140773522690118901080808611014971776285838687000
-; Formula: a(n) = truncate((binomial(-6*n-1,12*n)*binomial(12*n,3*n))/binomial(4*n,3*n))
+; Formula: a(n) = truncate((binomial(-4*n-1,14*n)*binomial(14*n,5*n))/binomial(6*n,5*n))
 
 mov $1,$0
-mul $1,2
-add $0,$1
-mul $1,2
-bin $1,$0
+mul $0,5
+add $1,$0
 mov $2,$0
+mov $3,$1
+mul $0,2
+bin $1,$2
 sub $3,$0
 sub $0,$3
-mul $0,2
-mul $3,2
 sub $3,1
 bin $3,$0
 bin $0,$2

@@ -1,8 +1,18 @@
 ; A274536: a(n) = 6 * sigma(n).
-; Submitted by Gunnar Hjern
+; Submitted by Science United
 ; 6,18,24,42,36,72,48,90,78,108,72,168,84,144,144,186,108,234,120,252,192,216,144,360,186,252,240,336,180,432,192,378,288,324,288,546,228,360,336,540,252,576,264,504,468,432,288,744,342,558,432,588,324,720,432,720,480,540,360,1008,372,576,624,762,504,864,408,756,576,864,432,1170,444,684,744,840,576,1008,480,1116
-; Formula: a(n) = 6*A000203(n+1)
+; Formula: a(n) = 6*A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)
 
+#offset 1
+
+sub $0,1
+mov $3,$0
 add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+mov $0,$1
 mul $0,6
