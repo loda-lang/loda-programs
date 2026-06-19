@@ -1,0 +1,36 @@
+; A183650: Number of (n+1) X 8 0..4 arrays with every 2 X 2 subblock summing to 8.
+; Submitted by [AF>Libristes]Maeda
+; 535333,867205,1664533,3684925,9103453,24478885,70480453,214853005,687550573,2294054965,7936773973,28343747485,104086295293,391785045445,1507394293093,5914828040365,23627145705613,95951771082325,395793659485813,1657336566163645,7042677371189533,30364598036357605,132808871211840133,589129663614309325,2649412247622395053,12072379752364423285,55693950603101084053,259890272525679229405,1225410334688772410173,5831718158913430991365,27979748358467670385573,135190846574683235035885
+
+#offset 1
+
+mov $1,5
+pow $1,$0
+mul $1,5
+mov $2,$0
+seq $2,183644 ; Number of (n+1) X 2 0..4 arrays with every 2 X 2 subblock summing to 8.
+mov $3,$0
+seq $3,183645 ; Number of (n+1) X 3 0..4 arrays with every 2 X 2 subblock summing to 8.
+mov $4,$0
+seq $4,183646 ; Number of (n+1) X 4 0..4 arrays with every 2 X 2 subblock summing to 8.
+mov $5,$0
+seq $5,183647 ; Number of (n+1) X 5 0..4 arrays with every 2 X 2 subblock summing to 8.
+mov $7,3
+lpb $7
+  sub $7,1
+  rol $1,5
+  mov $6,$1
+  mul $6,-274
+  mul $5,120
+  add $5,$6
+  mov $6,$2
+  mul $6,225
+  add $5,$6
+  mov $6,$3
+  mul $6,-85
+  add $5,$6
+  mov $6,$4
+  mul $6,15
+  add $5,$6
+lpe
+mov $0,$5
