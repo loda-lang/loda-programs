@@ -1,0 +1,15 @@
+; A392090: The unitary totient of the smallest cubefull number that is divisible by n.
+; Submitted by teoparas
+; 1,7,26,7,124,182,342,7,26,868,1330,182,2196,2394,3224,15,4912,182,6858,868,8892,9310,12166,182,124,15372,26,2394,24388,22568,29790,31,34580,34384,42408,182,50652,48006,57096,868,68920,62244,79506,9310,3224,85162,103822,390,342,868,127712,15372,148876,182,164920,2394,178308,170716,205378,22568,226980,208530,8892,63,272304,242060,300762,34384,316316,296856,357910,182,389016,354564,3224,48006,454860,399672,493038,1860
+; Formula: a(n) = A385195(truncate((n*A056552(n)^3)/gcd(A056552(n)^3,n)))
+
+#offset 1
+
+mov $2,$0
+seq $0,56552 ; Powerfree kernel of cubefree part of n.
+pow $0,3
+mov $1,$0
+gcd $1,$2
+mul $0,$2
+div $0,$1
+seq $0,385195 ; The number of integers k from 1 to n such that the greatest divisor of k that is a unitary divisor of n is either 1 or 2.
