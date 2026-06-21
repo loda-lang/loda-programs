@@ -1,26 +1,24 @@
 ; A018617: Divisors of 735.
-; Submitted by Opolis
+; Submitted by Dark Angel
 ; 1,3,5,7,15,21,35,49,105,147,245,735
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,$4
-  mul $1,7
-  mov $3,$2
-  add $3,1
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    trn $4,$3
-    equ $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  sub $0,1
-  mov $1,104
+mov $2,$0
+pow $2,4
+lpb $2
+  mov $3,$1
+  add $4,1
+  mov $1,$5
+  sub $1,1
+  add $3,76
+  mul $3,20
+  gcd $3,$4
+  div $3,$4
+  add $5,1
+  sub $0,$3
+  sub $2,$0
+  add $4,1
 lpe
-mov $0,$2
+mov $0,$4
 add $0,1

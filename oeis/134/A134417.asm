@@ -1,10 +1,9 @@
-; A134417: A007318 * Triangle with A133632 as the diagonal and the rest zeros.
+; A134417: Triangle read by rows: T(n,k) = binomial(n,k)*A133632(k + 1).
 ; Submitted by loader3229
 ; 1,1,4,1,8,5,1,12,15,20,1,16,30,80,25,1,20,50,200,125,100,1,24,75,400,375,600,125,1,28,105,700,875,2100,875,500,1,32,140,1120,1750,5600,3500,4000,625,1,36,180,1680,3150,12600,10500,18000,5625,2500
-; Formula: a(n) = truncate(5^truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)/2))*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*gcd(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-2,2)^2
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*gcd(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n-1,2)^2*if(truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)<=(-1),0,5^truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))
 
-#offset 1
-
+add $0,1
 mov $1,$0
 mul $1,8
 nrt $1,2

@@ -1,7 +1,11 @@
 ; A386884: a(n) is the number of distinct four-cuboid combinations that fill an n X n X n cube using only strict cuboids.
 ; Submitted by Conan
 ; 0,0,0,0,1,2,9,12,30,36,70,80,135,150,231,252,364,392,540,576,765,810,1045,1100,1386,1452,1794,1872,2275,2366,2835,2940,3480,3600,4216,4352,5049,5202,5985,6156,7030,7220,8190,8400,9471,9702,10879,11132,12420
+; Formula: a(n) = truncate((floor((n-1)/2)*(n-4)*(floor((n-1)/2)-1))/2)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $1,2
 sub $1,1

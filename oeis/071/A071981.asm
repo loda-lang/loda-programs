@@ -1,8 +1,27 @@
 ; A071981: Parity of the digits of e in base 10.
 ; Submitted by Groo
 ; 0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,1,0,1,1,1,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,1,0,1,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,0,0,0,1,0,0,1,0,1,1,1,1,0,1,1
-; Formula: a(n) = -2*truncate(A001113(n+1)/2)+A001113(n+1)
 
-add $0,1
-seq $0,1113 ; Decimal expansion of e.
+#offset 1
+
+mov $1,10
+pow $1,$0
+mov $4,$1
+pow $1,2
+mov $2,1
+mov $0,$1
+lpb $0
+  add $2,$3
+  mul $3,-1
+  add $3,$2
+  mov $5,$0
+  sub $5,2
+  div $5,$3
+  mov $0,$5
+  mov $3,1
+  add $6,$5
+lpe
+mov $0,$6
+div $0,$4
+div $0,10
 mod $0,2

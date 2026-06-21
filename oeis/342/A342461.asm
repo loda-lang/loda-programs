@@ -1,11 +1,12 @@
 ; A342461: Number of nonzero digits when A329886(n) is written in primorial base, where A329886 is the primorial inflation of Doudna-tree.
 ; Submitted by LCB001
 ; 1,1,1,1,1,1,2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,2,2,2,3,2,3,2,3,2,3,2,1,1,1,1,2,2,2,2,2,2,3,2,3,2,3,2,3,3,3,3,3,3,3,3,4,4,4,2,5,4,3,2,1,1,1,1,2,1,2,1,2,2,2,2,3,2,3,2
-; Formula: a(n) = A001221(A007947(A276086(A181819(A181811(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1)*(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1))*A181811(A181819(A181811(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1)*(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1))))-1))
+; Formula: a(n) = A001221(A007947(A276086(A181819(A181811(truncate((A057335(n)-1)/A293810(A057335(n)))+1)*(truncate((A057335(n)-1)/A293810(A057335(n)))+1))*A181811(A181819(A181811(truncate((A057335(n)-1)/A293810(A057335(n)))+1)*(truncate((A057335(n)-1)/A293810(A057335(n)))+1))))-1))
 
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $1,$0
 mov $0,$1

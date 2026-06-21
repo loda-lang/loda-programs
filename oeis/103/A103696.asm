@@ -14,11 +14,10 @@ lpb $0
   log $5,10
   mov $6,10
   pow $6,$5
-  mov $7,$1
   mod $3,$4
   mul $3,$6
   mul $3,10
   add $3,$1
   mul $4,$6
 lpe
-mov $0,$7
+mov $0,$1

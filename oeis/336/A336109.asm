@@ -1,27 +1,21 @@
 ; A336109: First column of dispersion array A120861.
-; Submitted by stoneageman
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,3,4,5,6,8,9,10,11,13,14,15,16,17,18,20,21,22,23,25,26,27,28,29,30,32,33,34,35,37,38,39,40,42,43,44,45,46,47,49,50,51,52,54,55,56,57,58,59,61,62,63,64,66,67,68,69,71,72,73,74,75,76,78,79,80,81,83,84,85,86,87,88,90,91,92,93,95,96
+; Formula: a(n) = -floor((n-1)/2)+floor(sqrtint(8*floor((n-1)/2)^2)/2)+n
 
 #offset 1
 
-sub $0,1
 mov $1,$0
+sub $1,1
+mov $3,$1
 div $1,2
 mov $2,$1
-mul $2,$1
-lpb $2
-  sub $2,$1
-  add $1,1
-  sub $2,$1
-lpe
-add $1,1
-add $1,$0
-add $0,1
-mul $0,$1
-sub $0,$1
+mul $2,4
+sub $3,$1
 mul $1,2
-div $0,$1
-mul $0,2
-sub $1,$0
-mov $0,$1
-div $0,2
+mul $2,$1
+nrt $2,2
+div $2,2
+add $2,$3
+mov $0,$2
+add $0,1

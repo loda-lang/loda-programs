@@ -14,6 +14,7 @@ lpb $3
   seq $4,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   sub $4,1
   mov $5,$4
+  add $4,1
   seq $4,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $5,$4
   mov $4,$5

@@ -7,15 +7,14 @@ mov $2,1
 fil $2,4
 lpb $0
   sub $0,1
-  mul $1,2
-  add $1,1
+  add $1,3
   mul $2,$1
   mul $3,4
   add $3,$2
-  add $1,1
   mul $4,8
   add $4,$3
-  mul $5,2
+  add $1,1
+  mul $1,2
   mul $5,$1
   add $5,$4
   mov $1,2

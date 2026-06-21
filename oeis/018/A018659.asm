@@ -1,24 +1,23 @@
 ; A018659: Divisors of 810.
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by ChelseaOilman
 ; 1,2,3,5,6,9,10,15,18,27,30,45,54,81,90,135,162,270,405,810
 
 #offset 1
 
-mov $2,1
-sub $0,1
-lpb $0
-  mul $1,5
-  mov $3,$2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    trn $4,$3
-    equ $4,0
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mov $1,162
+mov $1,1
+mov $2,$0
+pow $2,4
+lpb $2
+  add $4,2
+  mov $3,$1
+  pow $3,2
+  mul $3,20
+  gcd $3,$4
+  div $3,$4
+  sub $0,$3
+  add $1,10
+  sub $2,$0
 lpe
-mov $0,$2
+mov $0,$1
+div $0,10
+add $0,1

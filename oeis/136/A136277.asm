@@ -1,11 +1,13 @@
 ; A136277: From the binary representation of n: binomial(number of ones, number of blocks of contiguous ones).
 ; Submitted by Penguin
 ; 1,1,1,2,1,1,2,3,1,1,1,3,2,3,3,4,1,1,1,3,1,1,3,6,2,3,3,6,3,6,4,5,1,1,1,3,1,1,3,6,1,1,1,4,3,4,6,10,2,3,3,6,3,4,6,10,3,6,6,10,4,10,5,6,1,1,1,3,1,1,3,6,1,1,1,4,3,4,6,10
+; Formula: a(n) = binomial(A252736(A181819(A181811(truncate((A057335(if(n==0,0,n/(2^valuation(n,2))))-1)/A293810(A057335(if(n==0,0,n/(2^valuation(n,2))))))+1)*(truncate((A057335(if(n==0,0,n/(2^valuation(n,2))))-1)/A293810(A057335(if(n==0,0,n/(2^valuation(n,2))))))+1)))+1,A001221(A181819(A181811(truncate((A057335(if(n==0,0,n/(2^valuation(n,2))))-1)/A293810(A057335(if(n==0,0,n/(2^valuation(n,2))))))+1)*(truncate((A057335(if(n==0,0,n/(2^valuation(n,2))))-1)/A293810(A057335(if(n==0,0,n/(2^valuation(n,2))))))+1))))
 
 dir $0,2
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $1,$0
 mov $0,$1

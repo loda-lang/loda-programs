@@ -1,37 +1,11 @@
 ; A327306: a(n) = floor(3*n*r) - 3*floor(n*r), where r = sqrt(6).
-; Submitted by planetclown
+; Submitted by loader3229
 ; 0,1,2,1,2,0,2,0,1,0,1,2,1,2,0,2,0,1,0,1,2,1,2,1,2,0,2,0,1,0,1,2,1,2,0,2,0,1,0,1,2,1,2,0,2,0,2,0,1,0,1,2,1,2,0,2,0,1,0,1,2,1,2,0,2,0,1,0,1,0,1,2,1,2,0,2,0,1,0,1
+; Formula: a(n) = sqrtint(54*n^2)%3
 
-mov $1,1
-mov $2,1
-mov $4,$0
-add $4,2
-mov $7,10
-pow $7,$4
-mov $3,$0
-add $3,2
-lpb $3
-  sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,6
-  mov $5,$1
-  pow $5,2
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  add $4,$5
-  mov $8,$4
-  div $8,$7
-  max $8,1
-  mov $1,$4
-  div $1,$8
-  mov $2,$6
-  div $2,$8
-  mov $9,3
-lpe
-div $2,$9
-mul $1,$0
-div $1,$2
-mod $1,$9
+mov $1,$0
+pow $1,2
+mul $1,54
+nrt $1,2
+mod $1,3
 mov $0,$1

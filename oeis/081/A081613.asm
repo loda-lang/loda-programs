@@ -1,14 +1,12 @@
 ; A081613: Length of iteration list when Collatz-function is iterated with initial value n!.
-; Submitted by 1scorpion
+; Submitted by amazing
 ; 1,1,2,9,11,21,21,42,45,87,67,148,211,176,265,256,260,427,426,363,388,501,490,448,450,390,560,420,518,634,445,530,535,796,951,827,814,1070,690,729,786,910,820,1014,1172,1219,997,1328,1331,892,1296
 
-sub $0,1
 lpb $0
-  mov $0,15
-  seq $0,40 ; The prime numbers.
-  seq $0,29184 ; Expansion of 1/((1-x^2)*(1-x^4)*(1-x^7)*(1-x^11)).
+  mul $0,4
+  div $0,257
+  sub $0,1
 lpe
-add $0,1
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $1,-1
 add $1,$0

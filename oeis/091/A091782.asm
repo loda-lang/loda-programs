@@ -1,11 +1,10 @@
 ; A091782: a(1) = 1, a(2) = 1, a(3) = a(1) + concatenation a(1), a(2). In general a(n) = a(1) + a(1)a(2)+ a(1)a(2)a(3) + ... + a(1)a(2)...a(n-1), where a(1)a(2)...a(r) is the concatenation of first r terms.
-; Submitted by iBezanilla
+; Submitted by morse [E.R.] - BOINC.Italy
 ; 1,1,12,1124,11122248,1112112422244496,11121124111222482224224844488992,1112112411122248111211242224449622242248222444964448449688977984
 
 #offset 1
 
 mov $1,1
-sub $0,1
 lpb $0
   sub $0,1
   mov $2,$1
@@ -19,4 +18,4 @@ lpb $0
   add $1,$2
   add $3,$2
 lpe
-mov $0,$1
+mov $0,$2

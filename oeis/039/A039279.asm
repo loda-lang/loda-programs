@@ -1,5 +1,5 @@
 ; A039279: Numbers whose base-4 representation has the same nonzero number of 0's and 3's.
-; Submitted by Manuel Gomez
+; Submitted by ChelseaOilman
 ; 12,19,28,35,44,49,50,52,56,71,75,77,78,83,92,99,108,113,114,116,120,135,139,141,142,147,156,163,172,177,178,180,184,195,197,198,201,202,204,209,210,212,216,225,226,228,232,240,271,279,283,285,286,295,299
 
 #offset 1
@@ -15,9 +15,8 @@ lpb $2
     mod $5,4
     dgs $5,2
     gcd $5,10
-    mul $5,$4
     div $3,4
-    max $4,$5
+    mul $4,$5
   lpe
   mul $4,3
   div $4,28

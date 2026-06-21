@@ -1,7 +1,7 @@
 ; A286374: a(n) = A278222(n^2).
 ; Submitted by Science United
 ; 1,2,2,6,2,12,6,12,2,30,12,48,6,210,12,24,2,30,30,420,12,360,48,30,6,120,210,1260,12,420,24,48,2,30,30,420,30,4620,420,480,12,420,360,1080,48,960,30,210,6,420,120,2310,210,3360,1260,1680,12,1260,420,6300,24,840,48,96,2,30,30,420,30,4620,420,2520,30,4620,4620,6720,420,9240,480,180
-; Formula: a(n) = A124859(A181819(truncate(A181819(A181811(truncate((A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1)/A293810(A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1))+1)*(truncate((A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1)/A293810(A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1))+1))/2))*A181811(A181819(truncate(A181819(A181811(truncate((A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1)/A293810(A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1))+1)*(truncate((A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1)/A293810(A057335(sign(3*sign(A006068(2*n^2+1))*sign(truncate(A006068(2*n^2+1)/2))+sign(truncate(A006068(2*n^2+1)/2))+sign(A006068(2*n^2+1)))*bitxor(abs(A006068(2*n^2+1)),abs(truncate(A006068(2*n^2+1)/2))))-1))+1))/2))))
+; Formula: a(n) = A124859(A181819(truncate(A181819(A181811(truncate((A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))-1)/A293810(A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))))+1)*(truncate((A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))-1)/A293810(A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))))+1))/2))*A181811(A181819(truncate(A181819(A181811(truncate((A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))-1)/A293810(A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))))+1)*(truncate((A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))-1)/A293810(A057335(bitxor(A006068(2*n^2+1),floor(A006068(2*n^2+1)/2)))))+1))/2))))
 
 pow $0,2
 mul $0,2
@@ -14,6 +14,7 @@ mov $0,$1
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1
 mov $2,$0
+add $0,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $2,$0
 mov $0,$2

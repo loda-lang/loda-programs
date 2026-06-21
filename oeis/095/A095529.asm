@@ -1,11 +1,10 @@
 ; A095529: a(n) = 68 written in base 13 - n.
-; Submitted by Checco
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 53,58,62,68,75,104,125,152,233,1010,2112,1000100,11111111111111111111111111111111111111111111111111111111111111111111
 
 sub $0,3
 mov $2,10
 sub $2,$0
-max $2,1
 mov $3,1
 mov $5,$2
 equ $5,1

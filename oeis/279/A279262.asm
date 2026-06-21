@@ -1,24 +1,22 @@
 ; A279262: Number of n X 2 0..1 arrays with no element equal to a strict majority of its horizontal and vertical neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
-; Submitted by BrandyNOW
+; Submitted by Pavel_Kirpichenko
 ; 0,4,10,20,38,68,120,208,358,612,1042,1768,2992,5052,8514,14324,24062,40364,67624,113160,189150,315844,526890,878160,1462368,2433268,4045690,6721748,11160278,18517652,30706392,50888128,84287062,139531812,230868034,381805624,631128592,1042794924,1722239154,2843210420,4691941550,7739820284,12762922120,21038571000,34668481998,57109870468,94048158810,154830653088,254821242048,419266949092,689645675242,1134085162388,1864460859782,3064448582372,5035542024504,8272525749424,13587235498822,22311464115684
-; Formula: a(n) = 2*b(n-1)-4, b(n) = b(n-1)+b(n-2)+c(n-3), b(4) = 21, b(3) = 12, b(2) = 7, b(1) = 4, b(0) = 2, c(n) = c(n-1)+c(n-2), c(4) = 8, c(3) = 5, c(2) = 3, c(1) = 2, c(0) = 1
+; Formula: a(n) = 2*truncate((c(n)-4)/2), b(n) = b(n-2)+c(n-2), b(3) = 6, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = 2*c(n-1)-b(n-2), c(3) = 14, c(2) = 8, c(1) = 4, c(0) = 4
 
 #offset 1
 
-mov $1,2
-mov $2,2
-mov $3,1
-mov $4,3
-sub $0,1
+mov $1,4
+mov $3,2
+mov $4,4
 lpb $0
+  mul $1,-1
+  rol $1,4
+  add $4,$3
+  add $4,$3
   sub $0,1
-  mov $5,$1
-  add $1,$3
-  add $3,$4
-  add $4,$2
-  mov $2,$3
-  mov $3,$5
+  add $3,$1
 lpe
-mov $0,$2
-sub $0,2
+mov $0,$4
+sub $0,4
+div $0,2
 mul $0,2

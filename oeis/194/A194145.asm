@@ -1,15 +1,12 @@
 ; A194145: Beatty sequence for -1+sqrt(6), a(n) = floor(n*(-1+sqrt(6))); complement of A194146.
-; Submitted by BlisteringSheep
+; Submitted by loader3229
 ; 1,2,4,5,7,8,10,11,13,14,15,17,18,20,21,23,24,26,27,28,30,31,33,34,36,37,39,40,42,43,44,46,47,49,50,52,53,55,56,57,59,60,62,63,65,66,68,69,71,72,73,75,76,78,79,81,82,84,85,86,88,89,91,92,94,95,97,98
 ; Formula: a(n) = -n+sqrtint(6*n^2)
 
 #offset 1
 
 mov $1,$0
-add $1,$0
-add $1,$0
-mul $1,2
-mul $1,$0
-nrt $1,2
-sub $1,$0
-mov $0,$1
+pow $0,2
+mul $0,6
+nrt $0,2
+sub $0,$1

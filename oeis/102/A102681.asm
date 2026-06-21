@@ -1,15 +1,12 @@
 ; A102681: Number of digits >= 8 in decimal representation of n.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1
 
 lpb $0
   mov $2,$0
   mod $2,10
-  lpb $2
-    mod $2,8
-    add $1,5
-  lpe
+  div $2,8
   div $0,10
+  add $1,$2
 lpe
-div $1,5
 mov $0,$1

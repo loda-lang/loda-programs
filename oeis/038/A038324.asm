@@ -1,18 +1,17 @@
 ; A038324: Triangle read by rows whose (i,j)-th entry is binomial(i,j)*11^(i-j)*10^j.
-; Submitted by Science United
+; Submitted by Johnbodlis team
 ; 1,11,10,121,220,100,1331,3630,3300,1000,14641,53240,72600,44000,10000,161051,732050,1331000,1210000,550000,100000,1771561,9663060,21961500,26620000,18150000,6600000,1000000,19487171,124009270,338207100,512435000,465850000,254100000,77000000,10000000
-; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(-floor((sqrtint(8*n+8)-1)/2),2)+n)*if((-binomial(-floor((sqrtint(8*n+8)-1)/2),2)+n)<=(-1),0,10^(-binomial(-floor((sqrtint(8*n+8)-1)/2),2)+n))*if((-n+binomial(-floor((sqrtint(8*n+8)-1)/2),2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,11^(-n+binomial(-floor((sqrtint(8*n+8)-1)/2),2)+floor((sqrtint(8*n+8)-1)/2)))
+; Formula: a(n) = binomial(floor((sqrtint(8*n+2)-1)/2),-binomial(-floor((sqrtint(8*n+2)-1)/2),2)+n)*if((-binomial(-floor((sqrtint(8*n+2)-1)/2),2)+n)<=(-1),0,10^(-binomial(-floor((sqrtint(8*n+2)-1)/2),2)+n))*if((-n+binomial(-floor((sqrtint(8*n+2)-1)/2),2)+floor((sqrtint(8*n+2)-1)/2))<=(-1),0,11^(-n+binomial(-floor((sqrtint(8*n+2)-1)/2),2)+floor((sqrtint(8*n+2)-1)/2)))
 
-add $0,1
 mov $1,$0
 mul $1,8
+add $1,2
 nrt $1,2
 sub $1,1
 div $1,2
 sub $2,$1
 bin $2,2
 sub $0,$2
-sub $0,1
 mov $2,$1
 sub $2,$0
 bin $1,$0

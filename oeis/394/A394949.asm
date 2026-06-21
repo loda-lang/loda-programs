@@ -1,5 +1,5 @@
 ; A394949: Number of equivalence classes of well-formed bracketed words of total length 2n built from the symbol * (of length 2) and three unary bracket types (), [], and {}, with no empty bracket pair, modulo commutativity of concatenation.
-; Submitted by h8a1c5
+; Submitted by iBezanilla
 ; 1,1,4,16,70,316,1496,7262,36125,182892,939930,4889397,25697696,136246850,727848980,3913926874,21168870664,115082573677,628505354627,3446616041324,18970906373519,104772011112388,580410325298722,3224368725260893,17958697907545749,100262386745980236
 
 mov $1,1
@@ -37,6 +37,4 @@ lpb $0
   sub $1,19
 lpe
 mov $0,$7
-sub $0,3
 div $0,3
-add $0,1

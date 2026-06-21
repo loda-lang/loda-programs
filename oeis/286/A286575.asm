@@ -1,11 +1,13 @@
 ; A286575: Run-length transform of A001316.
 ; Submitted by NeoGen
 ; 1,2,2,2,2,4,2,4,2,4,4,4,2,4,4,2,2,4,4,4,4,8,4,8,2,4,4,4,4,8,2,4,2,4,4,4,4,8,4,8,4,8,8,8,4,8,8,4,2,4,4,4,4,8,4,8,4,8,8,8,2,4,4,4,2,4,4,4,4,8,4,8,4,8,8,8,4,8,8,4
+; Formula: a(n) = 2^A064547(A181819(A181811(truncate((A057335(if(n==0,0,n/(2^valuation(n,2))))-1)/A293810(A057335(if(n==0,0,n/(2^valuation(n,2))))))+1)*(truncate((A057335(if(n==0,0,n/(2^valuation(n,2))))-1)/A293810(A057335(if(n==0,0,n/(2^valuation(n,2))))))+1)))
 
 dir $0,2
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1
 mov $2,$0
+add $0,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $2,$0
 mov $0,$2

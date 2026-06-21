@@ -8,8 +8,9 @@ mov $10,$0
 lpb $10
   add $11,1
   mov $12,$11
-  mul $12,33
+  mul $12,36
   seq $12,379003 ; Ordinal transform of A132741, where A132741 is the largest divisor of n having the form 2^i*5^j. a(0) = 0 by convention.
+  div $12,2
   add $$12,1
   sub $10,1
 lpe

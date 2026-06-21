@@ -1,21 +1,17 @@
 ; A110414: n! concatenated with n divided by n.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 11,11,21,61,241,1201,7201,50401,403201,36288001,362880001,3991680001,47900160001,622702080001,8717829120001,130767436800001,2092278988800001,35568742809600001,640237370572800001
+; Formula: a(n) = 10^(logint(n,10)+1)*(n-1)!+1
 
 #offset 1
 
+mov $2,$0
+log $2,10
+add $2,1
 sub $0,1
-lpb $0
-  add $2,9
-  sub $0,$2
-lpe
-mov $1,$2
-add $1,1
-add $0,$2
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
-mov $0,$1
-mul $0,10
+mov $1,1
+fac $1,$0
+mov $0,10
+pow $0,$2
+mul $0,$1
 add $0,1

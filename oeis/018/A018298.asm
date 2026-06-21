@@ -1,25 +1,22 @@
 ; A018298: Divisors of 135.
-; Submitted by atannir
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,5,9,15,27,45,135
 
 #offset 1
 
-mov $1,$0
-mov $2,1
-sub $0,1
-lpb $0
-  sub $0,1
-  mov $4,$3
+mov $2,$0
+pow $2,4
+lpb $2
   add $4,1
-  mul $3,$1
-  add $3,$2
-  div $1,8
-  add $2,$4
-  mul $2,$1
-  mul $4,3
-  add $2,$4
+  mov $3,$1
+  sub $3,1
+  mul $3,20
+  gcd $3,$4
+  div $3,$4
+  add $4,1
+  sub $0,$3
+  mov $1,28
+  sub $2,$0
 lpe
 mov $0,$4
-div $0,3
-mul $0,2
 add $0,1

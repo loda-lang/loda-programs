@@ -1,7 +1,7 @@
 ; A331597: a(n) = A007947(A331595(n)).
 ; Submitted by Science United
 ; 1,2,2,3,2,3,2,5,3,3,2,5,2,3,6,7,2,15,2,5,6,3,2,7,3,3,5,5,2,15,2,11,6,3,6,7,2,3,6,7,2,15,2,5,10,3,2,11,3,15,6,5,2,7,6,7,6,3,2,7,2,3,10,13,6,15,2,5,6,15,2,11,2,3,15,5,6,15,2,11
-; Formula: a(n) = gcd(gcd(A181819(n*A181811(n)),truncate((A057335(A341915(A006068(A156552(n))))-1)/A293810(A057335(A341915(A006068(A156552(n))))-1))+1),A034386(n))
+; Formula: a(n) = gcd(gcd(A181819(n*A181811(n)),truncate((A057335(A341915(A006068(A156552(n))))-1)/A293810(A057335(A341915(A006068(A156552(n))))))+1),A034386(n))
 
 #offset 1
 
@@ -12,6 +12,7 @@ seq $3,341915 ; For any nonnegative number n with runs in binary expansion (r_1,
 seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $3,1
 mov $2,$3
+add $3,1
 seq $3,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $2,$3
 mov $3,$2

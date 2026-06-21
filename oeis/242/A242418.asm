@@ -1,4 +1,4 @@
-; A242418: Numbers n in whose prime factorization, n = 2^e1 * 3^e2 * 5^e3 * ... * p_k^e_k, the exponents (some of them possibly zero) of prime factors from 2 to p_k form a palindrome, so that e1 = e_k, e2 = e_{k-1}, etc.
+; A242418: Numbers n in whose prime factorization, n = 2^e_1 * 3^e_2 * 5^e_3 * ... * p_k^e_k, the exponents (with only e_1 and e_k required to be nonzero) of prime factors from 2 to p_k form a palindrome, so that e_1 = e_k, e_2 = e_{k-1}, etc.
 ; Submitted by Fardringle
 ; 1,2,4,6,8,10,14,16,22,26,30,32,34,36,38,46,58,62,64,74,82,86,90,94,100,106,110,118,122,128,134,142,146,158,166,178,194,196,202,206,210,214,216,218,226,238,254,256,262,270,274,278,298,300,302,314,326,334,346,358,362,382,386,394,398,422,446,454,458,462,466,478,482,484,502,506,512,514,526,538
 
@@ -22,6 +22,7 @@ lpb $3
   seq $6,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   sub $6,1
   mov $7,$6
+  add $6,1
   seq $6,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $7,$6
   mov $6,$7

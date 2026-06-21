@@ -13,6 +13,7 @@ seq $0,341915 ; For any nonnegative number n with runs in binary expansion (r_1,
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $1,$0
 mov $0,$1

@@ -1,15 +1,12 @@
 ; A095915: Each number is twice times the product of the digits of the previous number.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8,16,12,4,8
-; Formula: a(n) = 2*a(n-1)-20*truncate(a(n-1)/10), a(1) = 1
+; Formula: a(n) = (2^(n-1))%20
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mod $1,10
-  mul $1,2
-lpe
+mov $1,2
+pow $1,$0
+mod $1,20
 mov $0,$1

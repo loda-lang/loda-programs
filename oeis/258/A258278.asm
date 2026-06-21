@@ -1,71 +1,32 @@
 ; A258278: Expansion of f(-x, -x^5)^2 in powers of x where f(,) is Ramanujan's general theta function.
-; Submitted by rajab
+; Submitted by vaughan
 ; 1,-2,1,0,0,-2,2,0,2,-2,1,0,0,-2,0,0,3,-2,0,0,0,-4,2,0,2,0,2,0,0,-2,0,0,1,-2,2,0,0,-2,2,0,2,-4,1,0,0,-2,0,0,2,-2,0,0,0,0,2,0,4,-2,0,0,0,-4,0,0,2,-2,3,0,0,0,2,0,2,-4,0,0,0,-2,0,0
 
-mov $1,$0
-add $0,2
-sub $1,1
-add $1,$0
-mov $3,$1
-add $3,1
-mov $2,2
-mul $2,$3
-mul $0,-1
-add $0,$2
-mov $4,-1
-pow $4,$0
-mul $0,4
+mul $0,3
+mov $2,-1
+pow $2,$0
+mov $7,3
 mov $5,$0
-sub $0,1
-mov $6,$0
-mov $8,$0
-add $8,1
-mov $17,$8
-lex $17,2
-mov $7,2
-pow $7,$17
-div $8,$7
-div $8,2
-mov $9,-1
-pow $9,$8
-mul $9,2
-mov $10,-2
-bin $10,$8
-div $10,$9
-mov $13,3
-sub $8,$10
-mul $8,2
-add $8,3
-lpb $8
-  sub $8,$13
-  mov $12,$8
-  max $12,0
-  mul $12,4
-  mov $16,$12
-  nrt $16,2
-  add $12,2
-  mov $15,$12
-  nrt $15,2
-  mov $12,$15
-  add $12,$16
-  mod $12,2
-  mov $13,2
-  add $13,$14
-  add $11,$12
-  add $14,2
+add $5,2
+dir $5,2
+add $5,2
+lpb $5
+  sub $5,$7
+  mov $1,$5
+  max $1,0
+  mov $4,$1
+  nrt $1,2
+  pow $1,2
+  equ $1,$4
+  equ $4,0
+  mul $1,2
+  sub $1,$4
+  add $3,$1
+  add $6,4
+  mov $7,2
+  mul $7,$6
 lpe
-mov $8,$11
-mul $8,$9
-div $8,2
-max $8,0
-mul $8,2
-mod $0,4
-mul $0,$8
-sub $8,$0
-mov $0,$8
-div $0,2
-mul $0,-2
-sub $0,$6
-add $0,$5
-mul $0,$4
+mov $0,$3
+mul $0,4
+mul $0,$2
 div $0,4

@@ -1,19 +1,26 @@
 ; A358300: Row 1 of array in A358298.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 3,6,11,19,29,43,57,77,97,121,145,177,205,243,277,315,355,405,447,503,551,605,659,727,783,853,917,989,1057,1143,1211,1303,1383,1469,1553,1647,1731,1841,1935,2037,2133,2255,2351,2479,2587,2701,2815,2955,3067,3207,3327,3461
 
-mov $1,$0
-add $1,1
-mov $4,$1
-lpb $4
-  sub $4,1
-  add $5,$2
-  add $5,$0
-  mov $3,$1
-  sub $3,$4
-  mov $2,280
-  min $2,$3
-  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$1
+  mov $5,0
+  mov $1,$3
+  add $1,1
+  mov $6,$1
+  lpb $6
+    mov $2,$6
+    gcd $2,$1
+    equ $2,1
+    add $5,2
+    add $5,$2
+    sub $6,1
+  lpe
+  mov $1,$5
+  add $1,$4
+  add $3,1
 lpe
-mov $0,$5
+mov $0,$4
 add $0,3

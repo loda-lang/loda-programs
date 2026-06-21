@@ -1,13 +1,12 @@
 ; A166595: The number of vertices of a hypercube modulo the number of largest-dimensional surface tiles, in the first fourteen cases of the residue being greater than the dimension number.
-; Submitted by taurec
+; Submitted by arkiss
 ; 16,28,32,64,64,62,64,98,96,128,108,116,116,176
 
 #offset 1
 
-sub $0,1
-mov $2,1
 mov $3,$0
-add $3,14
+sub $0,1
+add $3,13
 pow $3,2
 lpb $3
   mov $4,$2

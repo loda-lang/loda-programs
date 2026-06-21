@@ -1,7 +1,7 @@
 ; A366801: Arithmetic derivative without its inherited divisor applied to the Doudna sequence: a(n) = A342001(A005940(1+n)).
 ; Submitted by modesti
 ; 0,1,1,2,1,5,2,3,1,7,8,8,2,7,3,4,1,9,10,12,12,31,13,11,2,9,11,10,3,9,4,5,1,13,14,16,16,41,17,17,18,59,71,46,19,41,18,14,2,11,13,14,17,37,16,13,3,11,14,12,4,11,5,6,1,15,16,24,18,61,25,23,20,87,103,62,27,55,24,22
-; Formula: a(n) = truncate(A003415(A181819(A181811(truncate((A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1)/A293810(A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1))+1)*(truncate((A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1)/A293810(A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1))+1)))/A003557(A181819(A181811(truncate((A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1)/A293810(A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1))+1)*(truncate((A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1)/A293810(A057335(sign(3*sign(A006068(n))*sign(truncate(A006068(n)/2))+sign(truncate(A006068(n)/2))+sign(A006068(n)))*bitxor(abs(A006068(n)),abs(truncate(A006068(n)/2))))-1))+1))))
+; Formula: a(n) = truncate(A003415(A181819(A181811(truncate((A057335(bitxor(A006068(n),floor(A006068(n)/2)))-1)/A293810(A057335(bitxor(A006068(n),floor(A006068(n)/2)))))+1)*(truncate((A057335(bitxor(A006068(n),floor(A006068(n)/2)))-1)/A293810(A057335(bitxor(A006068(n),floor(A006068(n)/2)))))+1)))/A003557(A181819(A181811(truncate((A057335(bitxor(A006068(n),floor(A006068(n)/2)))-1)/A293810(A057335(bitxor(A006068(n),floor(A006068(n)/2)))))+1)*(truncate((A057335(bitxor(A006068(n),floor(A006068(n)/2)))-1)/A293810(A057335(bitxor(A006068(n),floor(A006068(n)/2)))))+1))))
 
 mov $1,$0
 seq $1,6068 ; a(n) is Gray-coded into n.
@@ -12,6 +12,7 @@ mov $1,$2
 seq $1,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $1,1
 mov $3,$1
+add $1,1
 seq $1,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $3,$1
 mov $1,$3

@@ -1,15 +1,37 @@
 ; A144501: Main diagonal of array in A144502.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,2,30,1633,198773,42965211,14505751627,7051160946740,4664901181968498,4030793305701978223,4407914679125170417031,5950921219972964057360847,9721118017169914469460646225,18898282608956442548700379478918,43117198379072165094561711078882078,114089724623922992953782697056886301761,346551520138115929489730463709080980155037,1197693358405240980811239392414967295635455535,4672837313828428442282717118918677976681819454843,20439125242654423472841850721111512475485910242906088
 
-mov $2,$0
-mov $1,1
-lpb $1
-  sub $1,1
-  mov $0,$2
-  add $0,1
-  bin $0,2
-  mul $0,4
-  seq $0,144502 ; Square array read by antidiagonals upwards: T(n,k) is the number of scenarios for the gift exchange problem in which each gift can be stolen at most once, when there are n gifts in the pool and k gifts (not yet frozen) in peoples' hands.
-  equ $2,0
+mov $5,$0
+mov $7,$0
+mul $7,2
+add $7,1
+mov $2,1
+fil $2,3
+lpb $0
+  sub $0,1
+  ror $2,2
+  mov $1,$4
+  mul $1,$2
+  add $3,$1
+  add $4,2
 lpe
+mul $4,$3
+add $4,$2
+sub $4,$3
+lpb $5
+  mov $6,$9
+  mul $6,-1
+  sub $6,1
+  mul $2,$6
+  rol $2,3
+  mov $6,$9
+  add $6,$7
+  mov $8,$3
+  mul $8,$6
+  add $4,$2
+  add $4,$8
+  sub $5,1
+  add $9,1
+lpe
+mov $0,$2

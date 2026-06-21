@@ -1,5 +1,5 @@
 ; A018499: Divisors of 522.
-; Submitted by Science United
+; Submitted by Dark Angel
 ; 1,2,3,6,9,18,29,58,87,174,261,522
 
 #offset 1
@@ -11,9 +11,7 @@ mov $8,$0
 lpb $8
   lpb $5
     neq $6,1
-    min $2,1
-    mul $2,10
-    add $2,18
+    mov $2,28
     sub $5,$6
   lpe
   add $2,1

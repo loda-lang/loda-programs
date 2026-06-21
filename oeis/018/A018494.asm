@@ -1,24 +1,22 @@
 ; A018494: Divisors of 510.
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by Science United
 ; 1,2,3,5,6,10,15,17,30,34,51,85,102,170,255,510
 
 #offset 1
 
-mov $2,1
-sub $0,1
-lpb $0
-  mul $1,3
-  mov $3,$2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    trn $4,$3
-    equ $4,0
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mov $1,170
+mov $1,13
+mov $2,$0
+pow $2,4
+lpb $2
+  add $4,2
+  mov $3,$1
+  mul $3,20
+  gcd $3,$4
+  div $3,$4
+  sub $0,$3
+  sub $1,38
+  sub $2,$0
 lpe
-mov $0,$2
+mov $0,$4
+div $0,2
+add $0,1

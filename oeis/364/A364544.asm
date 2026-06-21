@@ -14,6 +14,7 @@ lpb $2
   sub $3,1
   add $6,1
   mov $7,$3
+  add $3,1
   seq $3,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $7,$3
   mov $3,$7

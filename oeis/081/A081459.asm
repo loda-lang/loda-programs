@@ -1,19 +1,18 @@
 ; A081459: Consider the mapping f(r) = (1/2)*(r + N/r) from rationals to rationals where N = 5. Starting with r = 2 and applying the mapping to each new (reduced) rational number gives 2, 9/4, 161/72, 51841/23184, ..., tending to N^(1/2). Sequence gives values of the numerators.
-; Submitted by BrandyNOW
+; Submitted by iBezanilla
 ; 2,9,161,51841,5374978561,57780789062419261441,6677239169351578707225356193679818792961,89171045849445921581733341920411050611581102638589828325078491812417901966295041,15902950835767973436841607425221981143123560643249487217294939436533866227418678586143870309863245838079169166028428928842081968173986026885683691167976522383361
-; Formula: a(n) = truncate(b(n-1)/2)+1, b(n) = b(n-1)*(b(n-1)+4), b(2) = 320, b(1) = 16, b(0) = 2
+; Formula: a(n) = floor(b(n-1)/2), b(n) = max(b(n-1)^2-2,18), b(0) = 4
 
 #offset 1
 
-mov $1,2
-mov $2,8
 sub $0,1
-lpb $0
-  sub $0,1
-  mul $2,$1
-  mov $1,$2
-  add $2,4
+mov $2,4
+mov $1,$0
+lpb $1
+  sub $1,1
+  pow $2,2
+  sub $2,2
+  max $2,18
 lpe
-mov $0,$1
+mov $0,$2
 div $0,2
-add $0,1

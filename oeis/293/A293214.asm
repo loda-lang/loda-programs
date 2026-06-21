@@ -21,6 +21,7 @@ lpb $4
   sub $0,1
   sub $4,1
   mov $5,$0
+  add $0,1
   seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $5,$0
   mov $0,$5

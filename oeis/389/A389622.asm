@@ -1,5 +1,5 @@
 ; A389622: Perrin numbers (A001608) which are the difference of two Fibonacci numbers.
-; Submitted by PhilBoyd
+; Submitted by treaclepumpkin
 ; 0,2,3,5,7,10,12,29,68
 
 #offset 1
@@ -45,12 +45,10 @@ lpb $0
   add $29,$30
   mul $29,$24
   mul $30,8
-  add $29,$30
-  mov $30,$9
-  mul $30,8
   add $6,2
   add $29,$30
-  mul $30,8
+  mov $30,$9
+  mul $30,64
   add $4,1
   add $29,$30
   mov $30,$17

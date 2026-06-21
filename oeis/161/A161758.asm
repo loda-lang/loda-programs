@@ -1,12 +1,25 @@
 ; A161758: a(n)=n-p+1 where p is the maximal prime less than n-2.
-; Submitted by Science United
+; Submitted by [AF>Libristes]Maeda
 ; 4,4,5,4,5,4,5,6,7,4,5,4,5,6,7,4,5,4,5,6,7,4,5,6,7,8,9,4,5,4,5,6,7,8,9,4,5,6,7,4,5,4,5,6,7,4,5,6,7,8,9,4,5,6,7,8,9,4,5,4,5,6,7,8,9,4,5,6,7,4,5,4,5,6,7,8,9,4,5,6
-; Formula: a(n) = A064722(n-3)+4
 
 #offset 5
 
 mov $1,$0
-sub $1,3
-seq $1,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-mov $0,$1
-add $0,4
+sub $0,2
+sub $1,4
+div $1,2
+mul $1,2
+trn $1,1
+add $1,2
+lpb $1
+  mov $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $1,2
+  add $1,$3
+  add $1,$3
+lpe
+sub $0,3
+mov $2,$0
+sub $2,$1
+mov $0,$2
+add $0,6

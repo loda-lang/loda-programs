@@ -1,25 +1,21 @@
 ; A018406: Divisors of 350.
-; Submitted by Fardringle
+; Submitted by vaughan
 ; 1,2,5,7,10,14,25,35,50,70,175,350
 
 #offset 1
 
-mov $2,1
-sub $0,1
-lpb $0
-  mov $3,$2
-  add $2,1
-  lpb $3
-    add $2,2
-    mov $1,700
-    gcd $1,$2
-    div $1,$2
-    equ $1,0
-    sub $3,$1
-  lpe
-  add $2,1
-  sub $0,1
+mov $2,$0
+pow $2,4
+lpb $2
+  add $4,2
+  mov $3,$1
+  mul $3,20
+  gcd $3,$4
+  div $3,$4
+  sub $0,$3
+  mov $1,-35
+  sub $2,$0
 lpe
-mov $0,$2
+mov $0,$4
 div $0,2
 add $0,1

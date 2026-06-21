@@ -1,15 +1,14 @@
 ; A102489: Take the decimal representation of n and read it as if it were written in hexadecimal.
-; Submitted by John Doe
+; Submitted by loader3229
 ; 0,1,2,3,4,5,6,7,8,9,16,17,18,19,20,21,22,23,24,25,32,33,34,35,36,37,38,39,40,41,48,49,50,51,52,53,54,55,56,57,64,65,66,67,68,69,70,71,72,73,80,81,82,83,84,85,86,87,88,89,96,97,98,99,100,101,102,103,104,105,112,113,114,115,116,117,118,119,120,121
 
-mov $1,1
+mov $3,1
 lpb $0
-  mov $3,$0
-  mod $3,10
-  mov $4,$3
-  mul $4,$1
+  mov $2,$0
+  mod $2,10
+  mul $2,$3
   div $0,10
-  mul $1,16
-  add $2,$4
+  add $1,$2
+  mul $3,16
 lpe
-mov $0,$2
+mov $0,$1

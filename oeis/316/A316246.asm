@@ -1,6 +1,7 @@
 ; A316246: Decimal expansion of the least x such that 1/x + 1/(x+1) + 1/(x+2) = 3.
-; Submitted by Simon Strandgaard
+; Submitted by Orange Kid
 ; 1,7,9,2,5,1,7,2,1,3,9,7,4,3,4,0,2,9,1,7,3,0,1,7,3,3,1,4,9,4,1,4,1,5,5,8,5,7,5,9,8,7,3,8,2,6,2,9,1,3,2,2,0,1,9,9,0,1,2,7,7,0,6,3,9,2,5,8,4,5,3,7,8,4,1,6,1,0,5,3
+; Formula: a(n) = floor(b(max(3*n-3,0))/floor(c(max(3*n-3,0))/(10^(n-1))))%10, b(n) = 4*c(n-1)+2*b(n-1)+2*d(n-1), b(2) = 56, b(1) = 6, b(0) = 1, c(n) = 6*c(n-1)+2*b(n-1)+2*d(n-1), c(2) = 72, c(1) = 8, c(0) = 1, d(n) = 5*c(n-1)+4*d(n-1)+b(n-1), d(2) = 70, d(1) = 6, d(0) = 0
 
 #offset 1
 
@@ -11,15 +12,14 @@ mov $3,$0
 mul $3,3
 lpb $3
   sub $3,1
-  add $6,$2
-  add $1,$6
+  add $5,$2
+  add $1,$5
   add $1,$2
   add $2,$1
   mul $2,2
-  mov $5,$1
+  mul $5,3
+  add $5,$1
   mul $1,2
-  mul $6,3
-  add $6,$5
 lpe
 mov $4,10
 pow $4,$0

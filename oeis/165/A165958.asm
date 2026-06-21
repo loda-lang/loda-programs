@@ -1,5 +1,6 @@
 ; A165958: The digits on a number pad from lower right to upper left.
 ; 0,3,2,1,6,5,4,9,8,7
+; Formula: a(n) = if((((7*n-7)^3)%2)==0,((7*n-7)^3)/2,(7*n-7)^3)%10
 
 #offset 1
 

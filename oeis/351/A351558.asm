@@ -1,13 +1,14 @@
 ; A351558: a(n) = A048675(gcd(n, A019565(n))).
 ; Submitted by Fardringle
 ; 0,0,0,2,0,4,2,0,0,0,0,0,0,0,8,6,0,0,2,0,4,0,16,0,0,0,0,2,8,0,6,0,0,0,0,0,0,0,0,34,0,0,10,0,0,4,0,0,0,0,0,2,32,0,2,20,8,0,0,0,4,0,0,10,0,0,2,0,64,0,4,0,0,0,0,2,0,8,2,0
-; Formula: a(n) = A048675(gcd(A181819(A181811(truncate((A057335(A048678(n))-1)/A293810(A057335(A048678(n))-1))+1)*(truncate((A057335(A048678(n))-1)/A293810(A057335(A048678(n))-1))+1)),n))
+; Formula: a(n) = A048675(gcd(A181819(A181811(truncate((A057335(A048678(n))-1)/A293810(A057335(A048678(n))))+1)*(truncate((A057335(A048678(n))-1)/A293810(A057335(A048678(n))))+1)),n))
 
 mov $1,$0
 seq $0,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1
 mov $2,$0
+add $0,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $2,$0
 mov $0,$2

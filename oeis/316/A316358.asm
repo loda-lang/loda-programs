@@ -1,7 +1,7 @@
 ; A316358: Partial sums of A316317.
-; Submitted by BrandyNOW
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,4,10,21,35,50,70,95,121,150,184,221,261,304,350,401,455,510,570,635,701,770,844,921,1001,1084,1170,1261,1355,1450,1550,1655,1761,1870,1984,2101,2221,2344,2470,2601,2735,2870,3010,3155,3301,3450,3604,3761,3921
-; Formula: a(n) = 4*binomial(n+1,2)-floor((2*binomial(n+1,2))/3)+floor((gcd(binomial(n+1,2),2)^2)/3)
+; Formula: a(n) = 4*binomial(n+1,2)-floor((2*binomial(n+1,2))/3)+gcd(binomial(n+1,2),2)-1
 
 add $0,1
 bin $0,2
@@ -10,8 +10,7 @@ mul $1,2
 div $1,3
 mov $2,$0
 gcd $2,2
-pow $2,2
-div $2,3
 mul $0,4
+sub $0,1
 sub $0,$1
 add $0,$2

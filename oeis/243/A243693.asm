@@ -1,11 +1,11 @@
 ; A243693: Number of Hyposylvester classes of 3-multiparking functions of length n.
-; Submitted by Science United
+; Submitted by ChelseaOilman
 ; 1,1,5,32,233,1833,15180,130392,1151057,10378883,95182445,885053524,8324942620,79071217228,757310811912,7305728683824,70923966744609,692370887676567,6792525607165935,66933512163735000,662190712902022017,6574831459429388169,65494637699437417584
 
 mov $1,1
 mov $3,$0
 mov $4,2
-mov $6,3
+equ $6,$0
 mul $0,2
 add $0,1
 lpb $3
@@ -13,12 +13,11 @@ lpb $3
   add $5,$4
   add $0,1
   add $2,$1
-  mul $2,2
+  add $4,2
   mov $6,$2
   mul $1,$3
   mul $1,$0
   div $1,$5
-  add $4,2
+  mul $2,2
 lpe
 mov $0,$6
-div $0,2

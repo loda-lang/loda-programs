@@ -4,40 +4,28 @@
 
 #offset 1
 
-mov $8,$0
-seq $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-mov $1,6
-pow $1,$0
-mul $1,6
-mov $2,$0
-seq $2,183654 ; Number of (n+1) X 2 0..5 arrays with every 2 X 2 subblock summing to 10.
-mov $3,$0
-seq $3,183655 ; Number of (n+1) X 3 0..5 arrays with every 2 X 2 subblock summing to 10.
-mov $4,$0
-seq $4,183656 ; Number of (n+1) X 4 0..5 arrays with every 2 X 2 subblock summing to 10.
-mov $5,$0
-seq $5,183657 ; Number of (n+1) X 5 0..5 arrays with every 2 X 2 subblock summing to 10.
-mov $6,$0
-seq $6,183658 ; Number of (n+1) X 6 0..5 arrays with every 2 X 2 subblock summing to 10.
-seq $8,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-lpb $8
-  sub $8,1
-  rol $1,6
-  mov $7,$1
-  mul $7,1764
-  mul $6,-720
-  add $6,$7
-  mov $7,$2
-  mul $7,-1624
-  add $6,$7
-  mov $7,$3
-  mul $7,735
-  add $6,$7
-  mov $7,$4
-  mul $7,-175
-  add $6,$7
-  mov $7,$5
-  mul $7,21
-  add $6,$7
+mov $1,$0
+mov $3,2
+seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+add $0,1
+seq $1,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
+add $1,1
+mov $4,6
+pow $4,$0
+mov $7,1
+mov $8,-1
+mov $2,5
+lpb $2
+  mov $5,$2
+  pow $5,$0
+  mov $6,$3
+  pow $6,$1
+  sub $7,$6
+  sub $8,$7
+  mul $5,$8
+  ror $6,3
+  sub $2,1
+  add $3,1
+  add $4,$5
 lpe
-mov $0,$1
+mov $0,$4

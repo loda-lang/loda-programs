@@ -1,27 +1,22 @@
 ; A112988: Position of n-th prime in A089088.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 2,5,9,12,19,23,30,34,41,52,55,65,73,77,85,95,105,110,121,128,133,143,151,162,175,182,187,195,200,208,231,239,249,253,271,276,286,298,306,318,328,332,350,354,362,366,387,408,416,420,427,439,443,461,472,483,496,500,512,520,524,542,565,572,577,585,608,620,638,643,651,663,677,688,699,707,718,734,742,757
 
 #offset 1
 
-sub $0,1
-mov $3,2
 mov $1,$0
-lpb $1
-  sub $1,1
-  add $3,1
-  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $1,$3
+seq $1,40 ; The prime numbers.
 mul $1,2
 sub $1,1
 seq $1,62298 ; Number of nonprimes <= n.
 add $0,$1
-add $0,1
-lpb $1
-  mov $1,1
-  mov $2,$0
-  sub $2,1
+mov $2,4
+lpb $2
+  sub $2,3
+  sub $0,1
+  lpb $0
+    mov $0,$1
+    mov $2,75
+  lpe
 lpe
-mov $0,$2
-add $0,2
+add $0,1

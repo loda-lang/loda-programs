@@ -1,13 +1,11 @@
 ; A190669: a(n) = [(b*n+c)*r] - b*[n*r] - [c*r], where (r,b,c)=(sqrt(3),2,0) and [ ] = floor.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,1
-; Formula: a(n) = -2*truncate(sqrtint(12*n^2)/2)+sqrtint(12*n^2)
+; Formula: a(n) = sqrtint(12*n^2)%2
 
 #offset 1
 
 pow $0,2
-mov $1,$0
-mul $1,12
-nrt $1,2
-mov $0,$1
+mul $0,12
+nrt $0,2
 mod $0,2
