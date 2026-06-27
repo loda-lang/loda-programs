@@ -1,11 +1,9 @@
 ; A018462: Divisors of 450.
-; Submitted by [TA]crashtech
+; Submitted by iBezanilla
 ; 1,2,3,5,6,9,10,15,18,25,30,45,50,75,90,150,225,450
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   mul $1,6
   mov $3,$2

@@ -1,15 +1,14 @@
 ; A102673: Number of digits >= 4 in decimal representation of n.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,1,1,1,1,2,2,2,2,2,2,1,1,1,1,2,2,2,2,2,2,1,1,1,1,2,2,2,2,2,2
 
 lpb $0
   mov $2,$0
   mod $2,10
-  lpb $2
-    mod $2,4
-    add $1,5
-  lpe
+  pow $2,2
+  mov $3,$2
+  geq $3,10
   div $0,10
+  add $1,$3
 lpe
-div $1,5
 mov $0,$1

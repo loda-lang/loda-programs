@@ -23,8 +23,7 @@ lpb $2
   nrt $3,2
   add $3,1
   div $3,2
-  sub $3,1
-  trn $3,1
+  trn $3,2
   add $3,$4
   equ $3,1
   gcd $3,2

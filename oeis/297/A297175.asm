@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
@@ -16,15 +15,13 @@ lpb $2
   div $6,2
   mov $3,$6
   mul $3,2
-  add $3,1
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
   mov $5,$3
   mul $5,6
   add $3,1
   seq $3,35201 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 19.
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

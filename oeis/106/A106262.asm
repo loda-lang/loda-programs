@@ -1,7 +1,7 @@
 ; A106262: An invertible triangle of remainders of 2^n.
 ; Submitted by KetamiNO [YouTube]
 ; 1,0,1,0,2,1,0,1,2,1,0,2,0,2,1,0,1,0,4,2,1,0,2,0,3,4,2,1,0,1,0,1,2,4,2,1,0,2,0,2,4,1,4,2,1,0,1,0,4,2,2,0,4,2,1,0,2,0,3,4,4,0,8,4,2,1,0,1,0,1,2,1,0,7,8,4,2,1,0,2
-; Formula: a(n) = -truncate(truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)))/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2)+truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)))
+; Formula: a(n) = if((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2))<=(-1),0,2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)))-truncate(if((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2))<=(-1),0,2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)))/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2)
 
 mov $1,$0
 mul $1,8

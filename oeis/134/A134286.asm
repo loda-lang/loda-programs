@@ -4,4 +4,4 @@
 
 #offset 1
 
-seq $0,155972 ; The Partition Ruler
+seq $0,155972 ; The Partition Ruler.

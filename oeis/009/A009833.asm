@@ -10,7 +10,8 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  seq $4,9477 ; Expansion of sin(sin(x))*exp(x).
+  div $4,2
+  seq $4,24227 ; Expansion of sinh(x)*sin(sin(x))/2.
   mov $5,$2
   add $5,$3
   seq $5,119879 ; Exponential Riordan array (sech(x),x).
@@ -19,3 +20,4 @@ lpb $0
   add $2,1
 lpe
 mov $0,$1
+mul $0,2

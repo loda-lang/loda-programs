@@ -10,5 +10,4 @@ seq $1,5384 ; Sophie Germain primes p: 2p+1 is also prime.
 mul $1,2
 add $1,1
 seq $1,145325 ; Least k such that f(n,k) is not a prime, where f(n,1)=2n+1 and f(n,k)=f(f(n,k-1)) for k>=2.
-sub $0,1
 mov $0,$1

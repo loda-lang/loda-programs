@@ -4,7 +4,7 @@
 
 #offset 1
 
-mov $1,20
+mov $1,12
 lpb $1
   sub $1,1
   max $2,$0

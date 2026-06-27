@@ -16,8 +16,7 @@ lpb $0
   sub $3,1
   bin $3,$1
   mul $3,$2
-  sub $0,4
-  trn $0,4
+  trn $0,8
   add $1,1
   add $4,10
   add $5,$3

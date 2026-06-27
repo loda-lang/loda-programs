@@ -1,26 +1,49 @@
 ; A014199: Inverse of 190th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $4,3
-add $0,3
+mov $1,1
+mov $2,-1
+mov $3,1
+mov $4,-1
+mov $5,1
+mov $20,1
+mov $21,-1
+mov $22,1
+mov $23,-1
+mov $24,1
 lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  mov $5,-1
-  pow $5,$3
-  mul $5,2
-  add $3,1
-  seq $3,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
-  mov $1,13
-  mod $1,$3
-  seq $1,292438 ; Characteristic function of non-isolated nonprimes.
-  mov $3,$1
-  mul $3,$5
-  add $2,$3
-  mul $4,21
-  sub $4,44
+  mul $1,-1
+  rol $1,72
+  sub $72,$1
+  add $72,$5
+  add $72,$6
+  sub $72,$10
+  sub $72,$11
+  add $72,$15
+  add $72,$16
+  add $72,$19
+  sub $72,$21
+  sub $72,$24
+  add $72,$26
+  add $72,$29
+  sub $72,$31
+  sub $72,$34
+  add $72,$36
+  sub $72,$38
+  sub $72,$41
+  add $72,$43
+  add $72,$46
+  sub $72,$48
+  sub $72,$51
+  add $72,$53
+  add $72,$56
+  add $72,$57
+  sub $72,$61
+  sub $72,$62
+  add $72,$66
+  add $72,$67
+  sub $72,$71
+  sub $0,1
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1

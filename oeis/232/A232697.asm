@@ -1,20 +1,11 @@
 ; A232697: Number of partitions of 2n into parts such that the largest multiplicity equals n.
-; Submitted by Bagoda Tes-X
+; Submitted by Geoff
 ; 1,1,2,2,3,3,5,5,8,9,13,15,22,25,35,42,56,67,89,106,138,166,211,254,321,384,479,575,709,848,1040,1239,1508,1795,2168,2574,3095,3661,4379,5171,6154,7246,8592,10088,11915,13960,16425,19197,22520,26253,30702,35718,41647,48343,56225,65122,75548,87332,101067,116601,134648,155039,178652,205344,236132,270929,310963,356170,408047,466611,533624,609238,695579,792907,903812,1028765,1170828,1330773,1512302,1716487
 
-mov $2,1
 lpb $0
-  sub $0,1
-  mov $5,0
-  mov $4,$2
-  lpb $4
-    mov $1,$4
-    seq $1,2865 ; Number of partitions of n that do not contain 1 as a part.
-    mov $4,0
-    add $5,$1
-  lpe
-  add $2,1
-  mov $3,$5
+  seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
+  add $1,$0
+  mov $0,0
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

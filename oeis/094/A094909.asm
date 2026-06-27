@@ -1,15 +1,21 @@
 ; A094909: Let p_k(n) = number of partitions of n into exactly k parts; sequence gives p_3(n-3) + p_2(n-2) + 1.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,1,1,1,2,2,4,4,6,7,9,10,13,14,17,19,22,24,28,30,34,37,41,44,49,52,57,61,66,70,76,80,86,91,97,102,109,114,121,127,134,140,148,154,162,169,177,184,193,200,209,217,226,234,244,252,262,271,281,290,301,310,321
-; Formula: a(n) = floor((max(n,2)^2)/3)+truncate((-max(n,2)^2+59969536)/4)-14992383
 
-max $0,2
-pow $0,2
-mov $2,59969536
-sub $2,$0
-div $2,4
-mov $1,$0
-div $1,3
-add $2,$1
-mov $0,$2
-sub $0,14992383
+mov $1,1
+fil $1,4
+mov $5,2
+mov $6,2
+mov $7,4
+mov $8,4
+lpb $0
+  mov $1,0
+  rol $1,8
+  add $8,$2
+  sub $8,$3
+  sub $8,$4
+  add $8,$6
+  add $8,$7
+  sub $0,1
+lpe
+mov $0,$1

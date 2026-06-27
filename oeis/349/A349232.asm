@@ -1,5 +1,5 @@
 ; A349232: Decimal expansion of lim_{x->oo} (1/x) * Sum_{s(k+1) <= x} (s(k+1) - s(k))^2, where s(k) = A005117(k) is the k-th squarefree number.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Technik007[CZ]
 ; 2,0,4,0,7,0,9,7,7,6,5
 
 #offset 1
@@ -7,8 +7,7 @@
 sub $0,1
 mov $2,23
 mov $3,$0
-dif $3,2
-mul $3,5
+mul $3,2
 lpb $3
   mov $5,$3
   add $5,5

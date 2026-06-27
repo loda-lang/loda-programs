@@ -1,12 +1,38 @@
 ; A289840: Complex cross sequence (see Comments lines for definition).
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 0,1,3,11,19,27,35,67,83,99,115,163,179,195,211,275,323,355,387,467,483,499,515,579,627,675,707,787,803,819,835,899,947,995,1027,1107,1123,1139,1155,1219,1267,1315,1347,1427,1443,1459,1475,1539,1587,1635,1667,1747,1763,1779,1795,1859,1907,1955,1987,2067,2083,2099,2115,2179,2227,2275,2307,2387,2403,2419,2435,2499,2547,2595,2627,2707,2723,2739,2755,2819
-; Formula: a(n) = a(n-1)+A289841(n), a(0) = 0
 
+mov $2,1
+mov $3,3
+mov $4,11
+mov $5,19
+mov $6,27
+mov $7,35
+mov $8,67
+mov $9,83
+mov $10,99
+mov $11,115
+mov $12,163
+mov $13,179
+mov $14,195
+mov $15,211
+mov $16,275
+mov $17,323
+mov $18,355
+mov $19,387
+mov $20,467
+mov $21,483
+mov $22,499
+mov $23,515
+mov $24,579
+mov $25,627
+mov $26,675
 lpb $0
-  mov $2,$0
-  seq $2,289841 ; Number of elements added at n-th stage to the structure of the complex square cross described in A289840.
+  mov $1,0
+  rol $1,26
+  sub $26,$17
+  add $26,$18
+  add $26,$25
   sub $0,1
-  add $1,$2
 lpe
 mov $0,$1

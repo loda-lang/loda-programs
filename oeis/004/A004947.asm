@@ -1,26 +1,8 @@
 ; A004947: a(n) = round(n*phi^12), where phi is the golden ratio, A001622.
-; Submitted by loader3229
+; Submitted by Shanman Racing
 ; 0,322,644,966,1288,1610,1932,2254,2576,2898,3220,3542,3864,4186,4508,4830,5152,5474,5796,6118,6440,6762,7084,7406,7728,8050,8372,8694,9016,9338,9660,9982,10304,10626
-; Formula: a(n) = 322*n
+; Formula: a(n) = 46*if(((14*n)%2)==0,(14*n)/2,14*n)
 
-add $0,1
-mov $1,$0
-pow $1,2
-mul $1,6
-nrt $1,2
-mov $3,$0
-mul $3,2
-pow $0,2
-mul $0,6
-nrt $0,2
-sub $0,3
-sub $0,$1
-mov $2,1
-add $2,$0
-add $2,$0
-mul $2,-5
-sub $2,2
-mul $3,$2
-mov $0,$3
-sub $0,46
-mul $0,7
+mul $0,14
+dif $0,2
+mul $0,46

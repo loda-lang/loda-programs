@@ -1,7 +1,7 @@
 ; A144532: Continued fraction for sqrt(8/9).
 ; Submitted by KetamiNO [YouTube]
 ; 0,1,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2,16,2
-; Formula: a(n) = (max(-min(n,n%2)+b(n),0)+min(n,n%2))^truncate(max(-min(n,n%2)+b(n),0)^(max(-min(n,n%2)+b(n),0)+min(n,n%2))), b(n) = 2, b(1) = 0, b(0) = 0
+; Formula: a(n) = (max(-min(n,n%2)+b(n),0)+min(n,n%2))^if((max(-min(n,n%2)+b(n),0)^2)==1,max(-min(n,n%2)+b(n),0)^(max(-min(n,n%2)+b(n),0)+min(n,n%2)),if((max(-min(n,n%2)+b(n),0)+min(n,n%2))<=(-1),0,max(-min(n,n%2)+b(n),0)^(max(-min(n,n%2)+b(n),0)+min(n,n%2)))), b(n) = 2, b(1) = 0, b(0) = 0
 
 lpb $0
   sub $0,2

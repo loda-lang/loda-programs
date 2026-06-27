@@ -1,15 +1,158 @@
 ; A339094: Number of (unordered) ways of making change for n US Dollars using the current US denominations of $1, $2, $5, $10, $20, $50 and $100 bills.
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,1,2,2,3,4,5,6,7,8,11,12,15,16,19,22,25,28,31,34,41,44,51,54,61,68,75,82,89,96,109,116,129,136,149,162,175,188,201,214,236,249,271,284,306,328,350,372,394,416,451,473,508,530,565,600,635,670,705,740,793,828,881,916
 
-mov $3,3
-add $0,3
+mov $1,1
+mov $2,1
+mov $3,2
+mov $4,2
+mov $5,3
+mov $6,4
+mov $7,5
+mov $8,6
+mov $9,7
+mov $10,8
+mov $11,11
+mov $12,12
+mov $13,15
+mov $14,16
+mov $15,19
+mov $16,22
+mov $17,25
+mov $18,28
+mov $19,31
+mov $20,34
+mov $21,41
+mov $22,44
+mov $23,51
+mov $24,54
+mov $25,61
+mov $26,68
+mov $27,75
+mov $28,82
+mov $29,89
+mov $30,96
+mov $31,109
+mov $32,116
+mov $33,129
+mov $34,136
+mov $35,149
+mov $36,162
+mov $37,175
+mov $38,188
+mov $39,201
+mov $40,214
+mov $41,236
+mov $42,249
+mov $43,271
+mov $44,284
+mov $45,306
+mov $46,328
+mov $47,350
+mov $48,372
+mov $49,394
+mov $50,416
+mov $51,451
+mov $52,473
+mov $53,508
+mov $54,530
+mov $55,565
+mov $56,600
+mov $57,635
+mov $58,670
+mov $59,705
+mov $60,740
+mov $61,793
+mov $62,828
+mov $63,881
+mov $64,916
+mov $65,969
+mov $66,1022
+mov $67,1075
+mov $68,1128
+mov $69,1181
+mov $70,1234
+mov $71,1311
+mov $72,1364
+mov $73,1441
+mov $74,1494
+mov $75,1571
+mov $76,1648
+mov $77,1725
+mov $78,1802
+mov $79,1879
+mov $80,1956
+mov $81,2064
+mov $82,2141
+mov $83,2249
+mov $84,2326
+mov $85,2434
+mov $86,2542
+mov $87,2650
+mov $88,2758
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,1306 ; Number of ways of making change for n cents using coins of 1, 5, 10, 20, 50, 100 cents.
-  add $1,$2
-  mov $3,2
+  rol $1,88
+  add $88,$1
+  add $88,$2
+  sub $88,$3
+  add $88,$5
+  sub $88,$6
+  sub $88,$7
+  add $88,$8
+  add $88,$10
+  sub $88,$11
+  sub $88,$12
+  add $88,$13
+  sub $88,$15
+  add $88,$16
+  add $88,$17
+  sub $88,$18
+  add $88,$20
+  sub $88,$21
+  sub $88,$22
+  add $88,$23
+  sub $88,$25
+  add $88,$26
+  add $88,$27
+  sub $88,$28
+  sub $88,$30
+  add $88,$31
+  add $88,$32
+  sub $88,$33
+  add $88,$35
+  sub $88,$36
+  sub $88,$37
+  add $88,$38
+  add $88,$50
+  sub $88,$51
+  sub $88,$52
+  add $88,$53
+  sub $88,$55
+  add $88,$56
+  add $88,$57
+  sub $88,$58
+  sub $88,$60
+  add $88,$61
+  add $88,$62
+  sub $88,$63
+  add $88,$65
+  sub $88,$66
+  sub $88,$67
+  add $88,$68
+  sub $88,$70
+  add $88,$71
+  add $88,$72
+  sub $88,$73
+  add $88,$75
+  sub $88,$76
+  sub $88,$77
+  add $88,$78
+  add $88,$80
+  sub $88,$81
+  sub $88,$82
+  add $88,$83
+  sub $88,$85
+  add $88,$86
+  sub $0,1
 lpe
 mov $0,$1

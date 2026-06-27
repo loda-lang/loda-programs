@@ -8,5 +8,4 @@
 mov $1,$0
 add $1,13
 seq $1,8366 ; Smallest prime factor is >= 17.
-sub $0,1
 mov $0,$1

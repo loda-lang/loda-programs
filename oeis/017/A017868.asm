@@ -1,33 +1,15 @@
 ; A017868: Expansion of 1/(1-x^8-x^9-x^10).
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by loader3229
 ; 1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,2,3,2,1,0,0,0,1,3,6,7,6,3,1,0,1,4,10,16,19,16,10,4,2,5,15,30,45,51,45,30,16,11,22,50,90,126,141,126,91,57,49,83,162,266,357,393,358,274,197,189,294,511,785,1016,1108,1025,829,660,680,994,1590,2312
+; Formula: a(n) = c(n-2), a(9) = 1, a(8) = 1, a(7) = 0, a(6) = 0, a(5) = 0, a(4) = 0, a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 1, b(n) = c(n-1)+c(n-2)+c(n-3), b(9) = 3, b(8) = 2, b(7) = 1, b(6) = 0, b(5) = 0, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 1, b(0) = 1, c(n) = b(n-7), c(9) = 0, c(8) = 1, c(7) = 1, c(6) = 1, c(5) = 0, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
 
-add $0,2
+mov $1,1
+mov $9,1
+mov $10,1
 lpb $0
+  rol $1,10
+  add $10,$1
+  add $10,$2
   sub $0,1
-  mov $5,0
-  mov $6,0
-  add $10,1
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    add $7,1
-    seq $7,203175 ; Number of nX2 0..2 arrays with every 1 immediately preceded by 0 to the left or above, no 0 immediately preceded by a 0, and every 2 immediately preceded by 0 1 to the left or above.
-    dif $7,2
-    equ $7,1
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $3,$6
-  mov $9,10
-  add $9,$2
-  add $9,7
-  mul $10,$1
-  mov $$9,$3
-  add $2,1
 lpe
-mov $0,$7
+mov $0,$1

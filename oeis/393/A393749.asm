@@ -1,5 +1,5 @@
 ; A393749: The total number of at-most-5-furcating labeled histories that can be constructed for n labeled leaves.
-; Submitted by [AF>Libristes]Maeda
+; Submitted by MARP
 ; 1,1,4,29,336,5686,132265,4046980,157560312,7605060162,445672370220,31168687232760,2564260300175574,245154432841736418,26951837497162698120,3376310080623048408840,478104755655706037450592,75989669747033337085430640,13470917008811991735384666288
 
 #offset 1
@@ -19,8 +19,7 @@ lpb $0
     add $7,$0
     add $7,$4
     bin $7,$0
-    trn $8,4
-    div $8,2
+    trn $8,5
     equ $8,0
     mul $7,$$9
     mul $7,$8
@@ -32,4 +31,4 @@ lpb $0
   mov $$9,$3
   add $2,1
 lpe
-mov $0,$6
+mov $0,$3

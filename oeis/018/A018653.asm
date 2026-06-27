@@ -1,5 +1,5 @@
 ; A018653: Divisors of 800.
-; Submitted by Science United
+; Submitted by pm120
 ; 1,2,4,5,8,10,16,20,25,32,40,50,80,100,160,200,400,800
 
 #offset 1
@@ -17,6 +17,5 @@ lpb $2
   add $1,20
   sub $2,$0
 lpe
-mov $0,$1
-div $0,20
+mov $0,$4
 add $0,1

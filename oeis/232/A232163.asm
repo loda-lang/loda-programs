@@ -1,6 +1,7 @@
 ; A232163: Cardinality of the Weyl alternation set corresponding to the zero-weight in the adjoint representation of the Lie algebra so(2n+1).
 ; Submitted by DukeBox
 ; 0,1,2,5,10,22,49,106,231,506,1104,2409,5262,11489,25082,54766,119577,261078,570035,1244610,2717456,5933249,12954570,28284797,61756570,134838326,294403857,642796690,1403472095,3064318682,6690584704
+; Formula: a(n) = 2*b(n-1)+b(n-2), a(3) = 5, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = 3*b(n-3)+b(n-1)+b(n-2)+b(n-4), b(5) = 20, b(4) = 9, b(3) = 4, b(2) = 2, b(1) = 1, b(0) = 0
 
 mov $2,1
 mov $4,1

@@ -10,5 +10,4 @@ mul $0,3
 mov $1,$0
 add $1,2
 seq $1,6667 ; Number of tripling steps to reach 1 from n in '3x+1' problem, or -1 if 1 is never reached.
-add $0,1
 mov $0,$1

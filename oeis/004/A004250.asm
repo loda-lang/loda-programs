@@ -1,10 +1,10 @@
 ; A004250: Number of partitions of n into 3 or more parts.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 0,0,1,2,4,7,11,17,25,36,50,70,94,127,168,222,288,375,480,616,781,990,1243,1562,1945,2422,2996,3703,4550,5588,6826,8332,10126,12292,14865,17958,21618,25995,31165,37317,44562
 
 #offset 1
 
-mov $1,82
+mov $1,61
 lpb $1
   mov $1,$0
 lpe

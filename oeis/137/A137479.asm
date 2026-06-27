@@ -11,8 +11,20 @@ lpb $3
   div $3,2
   mov $0,$2
   add $0,$3
-  add $0,1
-  seq $0,14574 ; Average of twin prime pairs.
+  mul $0,2
+  trn $0,1
+  mov $4,$0
+  sub $0,1
+  gcd $0,2
+  div $4,2
+  add $4,1
+  seq $4,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $4,1
+  mul $4,3
+  add $4,$0
+  mov $0,$4
+  mul $0,2
+  add $0,2
   gcd $1,$0
   mul $2,$3
 lpe

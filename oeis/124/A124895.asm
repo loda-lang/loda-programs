@@ -1,7 +1,7 @@
 ; A124895: Triangle read by rows, 1 <= k <= n: T(n,k) = mu(n^2 + k^2) with mu = A008683.
 ; Submitted by matali
 ; -1,-1,0,1,-1,0,-1,0,0,0,1,-1,1,-1,0,-1,0,0,0,-1,0,0,-1,1,1,1,1,0,1,0,-1,0,-1,0,-1,0,1,1,0,-1,1,0,-1,1,0,-1,0,-1,0,0,0,-1,0,-1,0,1,0,-1,-1,1,-1,-1,1,1,1,0,1,0,0,0,0,0,-1,0,0,0,1,0,-1,-1
-; Formula: a(n) = A008683((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^2+(truncate((sqrtint(8*n)-1)/2)+1)^2)
+; Formula: a(n) = A008683((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^2+(floor((sqrtint(8*n)-1)/2)+1)^2)
 
 #offset 1
 

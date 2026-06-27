@@ -1,7 +1,7 @@
 ; A143728: Triangle read by rows: termwise product of mu(n) and n-th row of A127368.
 ; Submitted by p3d-cluster
 ; 1,1,0,1,-2,0,1,0,-3,0,1,-2,-3,0,0,1,0,0,0,-5,0,1,-2,-3,0,-5,6,0,1,0,-3,0,-5,0,-7,0,1,-2,0,0,-5,0,-7,0,0,1,0,-3,0,0,0,-7,0,0,0,1,-2,-3,0,-5,6,-7,0,0,10,0,1,0,0,0,-5,0,-7,0,0,0,-11,0,1,-2
-; Formula: a(n) = truncate((4*A008683(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(gcd(floor((sqrtint(8*n)+1)/2),-binomial(floor((sqrtint(8*n)+1)/2),2)+n)==1))/4)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)
+; Formula: a(n) = truncate((4*A008683(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(gcd(floor((sqrtint(8*n)+1)/2),-binomial(floor((sqrtint(8*n)+1)/2),2)+n)==1))/4)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)
 
 #offset 1
 

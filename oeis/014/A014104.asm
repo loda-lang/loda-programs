@@ -1,29 +1,43 @@
 ; A014104: Inverse of 95th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,-1
-pow $1,$0
-mov $5,3
-add $0,3
+mov $1,1
+fil $1,5
+mov $20,-1
+fil $20,5
 lpb $0
-  sub $0,$5
-  mov $4,$0
-  max $4,0
-  mov $6,-1
-  pow $6,$4
-  mul $6,2
-  add $4,1
-  seq $4,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
-  mov $2,13
-  mod $2,$4
-  seq $2,292438 ; Characteristic function of non-isolated nonprimes.
-  mov $4,$2
-  mul $4,$6
-  add $3,$4
-  mul $5,21
-  sub $5,44
+  mul $1,-1
+  rol $1,72
+  add $72,$1
+  sub $72,$5
+  add $72,$6
+  sub $72,$10
+  add $72,$11
+  sub $72,$15
+  add $72,$16
+  sub $72,$19
+  add $72,$21
+  sub $72,$24
+  add $72,$26
+  sub $72,$29
+  add $72,$31
+  sub $72,$34
+  add $72,$36
+  sub $72,$38
+  add $72,$41
+  sub $72,$43
+  add $72,$46
+  sub $72,$48
+  add $72,$51
+  sub $72,$53
+  add $72,$56
+  sub $72,$57
+  add $72,$61
+  sub $72,$62
+  add $72,$66
+  sub $72,$67
+  add $72,$71
+  sub $0,1
 lpe
-mov $0,$3
-div $0,2
-mul $0,$1
+mov $0,$1

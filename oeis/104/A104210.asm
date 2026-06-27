@@ -18,8 +18,7 @@ lpb $2
   gcd $5,$6
   mov $3,$5
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

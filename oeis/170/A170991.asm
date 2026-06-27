@@ -5,17 +5,16 @@
 
 #offset 2
 
-mov $1,$0
 mov $3,$0
 mul $3,6
 mov $2,$0
 sub $2,$3
 mul $2,$0
-mov $4,$0
-seq $4,1158 ; sigma_3(n): sum of cubes of divisors of n.
-mul $4,$0
-mul $4,5
+mov $1,$0
+seq $1,1158 ; sigma_3(n): sum of cubes of divisors of n.
+mul $1,$0
+mul $1,5
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mul $0,$2
-add $0,$4
+add $0,$1
 div $0,15

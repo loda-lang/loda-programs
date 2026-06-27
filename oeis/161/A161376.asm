@@ -1,5 +1,5 @@
 ; A161376: Number of letters in Spanish words for months of the year.
-; Submitted by loader3229
+; Submitted by atannir
 ; 5,7,5,5,4,5,5,6,10,7,9,9,5,7,5,5,4,5,5,6,10,7,9,9,5,7,5,5,4,5,5,6,10,7,9,9,5,7,5,5,4,5,5,6,10,7,9,9,5,7,5,5,4,5,5,6,10,7,9,9,5,7,5,5,4,5,5,6,10,7,9,9,5,7,5,5,4,5,5,6
 
 #offset 1
@@ -16,9 +16,8 @@ mov $9,10
 mov $10,7
 mov $11,9
 mov $12,9
-sub $0,1
 lpb $0
   rol $1,12
   sub $0,1
 lpe
-mov $0,$1
+mov $0,$12

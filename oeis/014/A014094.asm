@@ -1,28 +1,53 @@
 ; A014094: Inverse of 85th cyclotomic polynomial.
-; Submitted by sjmielh
+; Submitted by loader3229
 ; 1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,-1
-pow $1,$0
-mov $3,3
-add $0,3
+mov $1,1
+fil $1,5
+mov $18,-1
+fil $18,5
 lpb $0
-  sub $0,$3
-  mov $6,$0
-  max $6,0
-  mov $2,-1
-  pow $2,$6
-  add $6,1
-  seq $6,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
-  add $4,6
-  mul $4,2
-  mod $4,$6
-  seq $4,292438 ; Characteristic function of non-isolated nonprimes.
-  mov $6,$4
-  mul $6,$2
-  mul $3,21
-  sub $3,46
-  add $5,$6
+  mul $1,-1
+  rol $1,64
+  add $64,$1
+  sub $64,$5
+  add $64,$6
+  sub $64,$10
+  add $64,$11
+  sub $64,$15
+  add $64,$16
+  sub $64,$17
+  add $64,$18
+  sub $64,$20
+  add $64,$21
+  sub $64,$22
+  add $64,$23
+  sub $64,$25
+  add $64,$26
+  sub $64,$27
+  add $64,$28
+  sub $64,$30
+  add $64,$31
+  sub $64,$32
+  add $64,$33
+  sub $64,$34
+  add $64,$36
+  sub $64,$37
+  add $64,$38
+  sub $64,$39
+  add $64,$41
+  sub $64,$42
+  add $64,$43
+  sub $64,$44
+  add $64,$46
+  sub $64,$47
+  add $64,$48
+  sub $64,$49
+  add $64,$53
+  sub $64,$54
+  add $64,$58
+  sub $64,$59
+  add $64,$63
+  sub $0,1
 lpe
-mov $0,$5
-mul $0,$1
+mov $0,$1

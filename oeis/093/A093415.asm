@@ -1,6 +1,7 @@
 ; A093415: Triangle read by rows: a(n, k) is the denominator of (n + (n-1) + ... + (n-k+1))/(1 + 2 + ... + k), 0 < k <= n.
 ; Submitted by loader3229
 ; 1,1,1,1,3,1,1,3,2,1,1,1,1,5,1,1,3,2,5,3,1,1,3,1,5,3,7,1,1,1,2,5,1,7,4,1,1,3,1,1,3,7,2,9,1,1,3,2,5,3,7,4,9,5,1,1,1,1,5,1,7,1,3,5,11,1,1,3,2,5,3,7,4,9,5,11,6,1,1,3
+; Formula: a(n) = if((truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)/gcd(floor((sqrtint(8*n+8)-1)/2)+2,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1))%2)==0,truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)/gcd(floor((sqrtint(8*n+8)-1)/2)+2,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1))/2,truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)/gcd(floor((sqrtint(8*n+8)-1)/2)+2,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)))
 
 #offset 1
 

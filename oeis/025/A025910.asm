@@ -1,14 +1,27 @@
-; A025910: Expansion of 1/((1-x^7)(1-x^8)(1-x^11)).
-; Submitted by Simon Strandgaard
+; A025910: Expansion of 1/((1-x^7)*(1-x^8)*(1-x^11)).
+; Submitted by loader3229
 ; 1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,2,1,1,1,1,1,1,2,2,1,2,2,1,2,2,2,2,2,3,2,2,3,3,2,3,3,3,3,3,4,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,7,7,7
-; Formula: a(n) = b(n+1), b(n) = b(n-8)+A168201(max(n-1,0)), b(7) = 0, b(6) = 0, b(5) = 0, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 1, b(0) = 0
 
-add $0,1
+mov $1,1
+mov $8,1
+mov $9,1
+mov $12,1
+mov $15,1
+fil $15,3
+mov $19,1
+mov $20,1
+mov $22,1
+mov $23,2
+mov $24,1
+fil $24,3
 lpb $0
-  mov $2,$0
-  trn $2,1
-  seq $2,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
-  trn $0,8
-  add $1,$2
+  rol $1,26
+  sub $26,$7
+  sub $26,$8
+  sub $26,$11
+  add $26,$15
+  add $26,$18
+  add $26,$19
+  sub $0,1
 lpe
 mov $0,$1

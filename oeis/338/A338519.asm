@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,10
 pow $2,2
 bin $2,2
 lpb $2
@@ -14,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,327166 ; Number of divisors d of n for which A000005(d)*d is equal to n, where A000005(x) gives the number of divisors of x.
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

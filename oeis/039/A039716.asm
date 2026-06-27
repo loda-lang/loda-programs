@@ -5,6 +5,21 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-mov $1,1
-fac $1,$0
+mov $1,$0
+div $0,3
+lpb $1
+  mov $1,$0
+  add $1,31
+  mul $1,2
+lpe
 mov $0,$1
+mov $1,9
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $0,$1
+sub $0,18
+div $0,18
+mul $0,2
+add $0,2

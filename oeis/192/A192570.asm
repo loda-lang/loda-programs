@@ -1,7 +1,39 @@
 ; A192570: a(n) = floor(sqrt(Bell(n))).
 ; Submitted by Ralfy
 ; 1,1,1,2,3,7,14,29,64,145,340,823,2052,5257,13816,37188,102372,287862,825879,2415107,7191950,21791507,67132076,210123786,667801519,2153738687,7044944749,23360587491,78489103731
-; Formula: a(n) = sqrtint(A000110(n))
 
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $4,1
+fac $4,$0
+mov $7,$0
+mov $8,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  mov $10,$6
+  div $10,$4
+  mul $11,$1
+  add $11,$10
+  add $1,1
+  mod $6,$4
+  mul $8,-1
+  mov $12,$3
+  mul $12,$6
+  mul $12,$8
+  mov $13,$3
+  mul $13,$11
+  mul $13,$8
+  add $5,$13
+  add $9,$12
+lpe
+mul $5,$8
+mul $9,$8
+div $9,$4
+add $9,$5
+mov $0,$9
 nrt $0,2

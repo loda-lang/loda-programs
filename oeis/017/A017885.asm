@@ -1,32 +1,21 @@
 ; A017885: Expansion of 1/(1-x^9-x^10-x^11-x^12-x^13-x^14-x^15-x^16-x^17-x^18).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2,2,3,4,5,6,7,8,9,11,12,14,17,21,26,32,39,47,57,67,79,93,110,131,157,189,228,276,332,399,478,571,681,812,969,1158,1387,1662,1994,2393,2871,3442,4123,4935,5904,7063,8449,10111,12105,14498,17369,20811,24934,29869,35774,42836,51285,61396,73501,87999,105368,126179
 
-add $0,2
+mov $1,1
+mov $10,1
+fil $10,9
 lpb $0
+  rol $1,18
+  add $18,$1
+  add $18,$2
+  add $18,$3
+  add $18,$4
+  add $18,$5
+  add $18,$6
+  add $18,$7
+  add $18,$8
+  add $18,$9
   sub $0,1
-  mov $5,0
-  mov $6,0
-  add $10,1
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,275063 ; Number of permutations p of [n] such that p(i)-i is a multiple of eight for all i in [n].
-    dif $7,2
-    equ $7,1
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $3,$6
-  mov $9,10
-  add $9,$2
-  add $9,8
-  mul $10,$1
-  mov $$9,$3
-  add $2,1
 lpe
-mov $0,$7
+mov $0,$1

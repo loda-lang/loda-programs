@@ -1,18 +1,14 @@
 ; A299404: a(n) = 1 + Sum_{m >= 1} (m + 1)^n/2^(m - 1).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by ChelseaOilman
 ; 3,7,23,103,599,4327,37463,378343,4366679,56698087,817980503,12981060583,224732540759,4214866787047,85130743763543,1842265527822823,42525237455850839,1042966136233087207,27084277306054762583,742412698554627289063,21421502369955073624919
 
-mov $2,$0
-add $0,1
-mul $0,13
 lpb $0
-  sub $0,1
-  div $1,2
-  add $1,$3
-  add $1,1
-  mov $3,$0
-  pow $3,$2
+  mov $5,$0
+  seq $5,629 ; Number of necklaces of partitions of n+1 labeled beads.
+  rol $1,15
+  sub $4,1
+  mov $0,$3
 lpe
-mov $0,$1
-mul $0,2
-sub $0,3
+mov $0,$4
+mul $0,4
+add $0,3

@@ -1,20 +1,19 @@
 ; A051476: (Terms in A014733)/4.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 4,169,1089,169,22801,22801,3600,1459264,3600,63001,53348416,1946309689,6098829025,1946309689,53348416,63001,572166400,51799939216,429256901329,429256901329,51799939216,572166400,1036324,1213839841536
 
 mov $1,28
 lpb $0
   sub $0,$1
   div $0,2
-  mov $1,0
+  mov $1,$0
 lpe
 add $0,1
 seq $0,268232 ; Indices of 0's in A047999.
 seq $0,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
-div $0,2
 add $0,1
 pow $0,2
 mul $0,4
-sub $0,64
-div $0,16
+sub $0,256
+div $0,64
 add $0,4

@@ -9,7 +9,7 @@ lpb $0
   mov $0,0
   seq $0,49744 ; a(n)=T(n,1), array T as in A049735.
   pow $0,2
-  sub $0,1
+  sub $0,4
 lpe
 mov $1,$0
 add $0,1

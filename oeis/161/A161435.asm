@@ -1,6 +1,7 @@
 ; A161435: Number of reduced words of length n in the Weyl group A_3 (or D_3).
 ; Submitted by Science United
 ; 1,3,5,6,5,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = floor(binomial(10,if(((2*n+4)%2)==0,(2*n+4)/2,2*n+4))/37)
 
 mov $2,1
 add $2,$0

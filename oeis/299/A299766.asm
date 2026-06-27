@@ -4,9 +4,9 @@
 
 #offset 1
 
-mov $4,2
 mov $1,$0
 lpb $1
+  mov $4,2
   mov $2,$1
   div $2,4
   lpb $2
@@ -17,7 +17,7 @@ lpb $1
   lpe
   lpb $1
     dif $1,$4
-    mov $4,2
+    gcd $4,2
   lpe
 lpe
 mov $0,$1
