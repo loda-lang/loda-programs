@@ -1,0 +1,96 @@
+; A080867: Dorey's period-90 sequence (periodic from a(1)=1 onward).
+; Submitted by loader3229
+; 0,1,2,3,4,5,6,7,8,9,0,1,3,7,5,1,4,9,9,8,7,2,5,6,3,0,1,5,1,6,9,7,9,6,5,6,1,7,6,7,3,3,6,3,9,5,1,8,5,6,9,4,3,2,7,0,1,9,3,5,1,0,1,1,2,9,2,1,3,8,3,1,4,7,7,4,1,5,6,5
+
+mov $2,1
+mov $3,2
+mov $4,3
+mov $5,4
+mov $6,5
+mov $7,6
+mov $8,7
+mov $9,8
+mov $10,9
+mov $12,1
+mov $13,3
+mov $14,7
+mov $15,5
+mov $16,1
+mov $17,4
+mov $18,9
+mov $19,9
+mov $20,8
+mov $21,7
+mov $22,2
+mov $23,5
+mov $24,6
+mov $25,3
+mov $27,1
+mov $28,5
+mov $29,1
+mov $30,6
+mov $31,9
+mov $32,7
+mov $33,9
+mov $34,6
+mov $35,5
+mov $36,6
+mov $37,1
+mov $38,7
+mov $39,6
+mov $40,7
+mov $41,3
+mov $42,3
+mov $43,6
+mov $44,3
+mov $45,9
+mov $46,5
+mov $47,1
+mov $48,8
+mov $49,5
+mov $50,6
+mov $51,9
+mov $52,4
+mov $53,3
+mov $54,2
+mov $55,7
+mov $57,1
+mov $58,9
+mov $59,3
+mov $60,5
+mov $61,1
+mov $63,1
+mov $64,1
+mov $65,2
+mov $66,9
+mov $67,2
+mov $68,1
+mov $69,3
+mov $70,8
+mov $71,3
+mov $72,1
+mov $73,4
+mov $74,7
+mov $75,7
+mov $76,4
+mov $77,1
+mov $78,5
+mov $79,6
+mov $80,5
+mov $81,1
+mov $82,6
+mov $83,1
+mov $84,7
+mov $85,1
+mov $86,8
+mov $87,1
+mov $88,9
+mov $89,1
+mov $91,1
+lpb $0
+  mov $1,0
+  rol $1,91
+  add $91,$1
+  sub $0,1
+lpe
+mov $0,$1
