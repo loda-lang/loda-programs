@@ -4,35 +4,28 @@
 
 #offset 1
 
-mov $9,$0
-bin $9,2
+mov $7,$0
+bin $7,2
 lpb $0
-  mov $7,0
-  mov $8,0
-  mov $3,$2
-  add $3,1
-  bin $3,2
-  mov $10,$2
-  add $10,1
-  lpb $10
-    sub $10,1
-    mov $6,$7
-    add $6,1
-    seq $6,114643 ; Number of real primitive Dirichlet characters modulo n.
-    mov $4,$7
-    add $4,$3
-    add $4,1
-    seq $4,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
-    mul $4,$6
-    add $7,1
-    add $8,$4
-  lpe
-  mov $5,$2
-  add $5,$9
-  add $5,1
-  seq $5,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
-  mul $5,$8
   sub $0,1
+  mov $4,$2
+  add $4,1
+  seq $4,60594 ; Number of solutions to x^2 == 1 (mod n), that is, square roots of unity modulo n.
+  mov $5,$2
+  add $5,$7
+  add $5,1
+  mov $6,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $3,$5
+  bin $5,2
+  sub $6,$5
+  mod $3,$6
+  equ $3,0
+  mov $5,$3
+  mul $5,$4
   add $1,$5
   add $2,1
 lpe

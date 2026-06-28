@@ -1,25 +1,25 @@
-; A202099: Number of (n+2)X9 binary arrays avoiding patterns 001 and 011 in rows and columns
-; Submitted by [AF] Kalianthys
+; A202099: Number of (n+2)X9 binary arrays avoiding patterns 001 and 011 in rows and columns.
+; Submitted by loader3229
 ; 9450,99225,617400,3841600,17287200,77792400,280052640,1008189504,3080579040,9412880400,25357147200,68309049600,166503308400,405851814225,911913952950,2048991844900,4302882874290,9036054036009,17922751806960,35549259782400,67148601811200,126836247865600,229656164774400,415827138585600,725575925491200,1266055951622400,2138227829406720,3611229222998016,5924672943981120,9720166548719025,15538812960235950,24840593728820100,38794260576490650,60586098307729225,92641346996860200,141656574909326400
-; Formula: a(n) = b(n+4), b(n) = binomial(truncate((n-2)/2)+5,truncate((n-2)/2))*binomial(truncate((n-1)/2)+5,truncate((n-1)/2))*binomial(-truncate((n-2)/2)-1,4)*binomial(-truncate((n-1)/2)-1,4), b(2) = 1, b(1) = 0, b(0) = 0
+; Formula: a(n) = binomial(floor((n+10)/2),4)*binomial(floor((n+11)/2),4)*binomial(floor((n+12)/2),5)*binomial(floor((n+13)/2),5)
 
 #offset 1
 
-add $0,4
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  div $1,2
-  mov $5,$1
-  add $5,5
-  mov $4,4
-  sub $4,$5
-  bin $4,4
-  bin $5,$1
-  mul $4,$5
-  mov $1,$4
-  mul $2,$4
-  add $3,1
-lpe
-mov $0,$2
+mov $1,$0
+mov $2,$0
+mov $3,$0
+add $0,10
+div $0,2
+bin $0,4
+add $1,11
+div $1,2
+bin $1,4
+add $2,12
+div $2,2
+bin $2,5
+add $3,13
+div $3,2
+bin $3,5
+mul $0,$1
+mul $0,$2
+mul $0,$3

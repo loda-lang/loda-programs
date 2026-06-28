@@ -17,7 +17,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
+    max $7,1
     seq $7,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
     mov $9,10
     add $9,$5

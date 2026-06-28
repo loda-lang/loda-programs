@@ -22,6 +22,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,62355 ; a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
   mul $0,$4
   add $1,$0

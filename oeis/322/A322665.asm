@@ -1,12 +1,18 @@
 ; A322665: Partial sums of A089451.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,0,0,1,2,2,2,2,3,3,2,2,2,1,2,2,3,3,2,1,1,0,1,1,1,1,0,1,1,1,1,0,0,-1,-1,-1,-1,-1,0,0,1,1,0,0,0,0,1,0,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,-1,-1,-1,0,0,1,1,1,2,1,1,1,2,2,2,2,2
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A008683(A000040(n+1)-1), b(0) = 1
 
 #offset 1
 
-mov $1,1
+mov $1,41
+mov $2,47
+mov $3,90
 sub $0,1
+lpb $0
+  ror $1,3
+  add $1,$3
+  mov $0,$1
+lpe
 lpb $0
   mov $2,$0
   add $2,1
@@ -17,3 +23,4 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$1
+sub $0,40

@@ -1,25 +1,25 @@
-; A202095: Number of (n+2)X5 binary arrays avoiding patterns 001 and 011 in rows and columns
-; Submitted by Ralfy
+; A202095: Number of (n+2)X5 binary arrays avoiding patterns 001 and 011 in rows and columns.
+; Submitted by loader3229
 ; 720,3600,12000,40000,105000,275625,617400,1382976,2765952,5531904,10160640,18662400,32076000,55130625,89842500,146410000,228399600,356303376,535927392,806105664,1175570760,1714374025,2434614000,3457440000,4798080000,6658560000,9055641600,12315672576,16452968832,21980138049,28901219580,38001603600,49261338000,63857290000,81723180000,104587560000,132303263400,167363628201,209489167272,262217733184,325063305600,402971040000,495144000000,608400000000,741487500000,903687890625,1093100872500
-; Formula: a(n) = truncate(b(n+2)/144), b(n) = 4*truncate((n+2)/2)*truncate((n+3)/2)*binomial((truncate((n+2)/2)+1)^2,2)*binomial((truncate((n+3)/2)+1)^2,2), b(2) = 20736, b(1) = 0, b(0) = 0
+; Formula: a(n) = binomial(floor((n+6)/2),2)*binomial(floor((n+7)/2),2)*binomial(floor((n+8)/2),3)*binomial(floor((n+9)/2),3)
 
 #offset 1
 
-mov $3,4
-add $0,2
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  div $1,2
-  mov $4,$1
-  add $1,1
-  pow $1,2
-  bin $1,2
-  mul $1,$4
-  mul $1,2
-  mul $2,$1
-  add $3,1
-lpe
-mov $0,$2
-div $0,144
+mov $1,$0
+add $1,7
+div $1,2
+bin $1,2
+mov $2,$0
+add $2,8
+div $2,2
+bin $2,3
+mov $3,$0
+add $3,9
+div $3,2
+bin $3,3
+add $0,6
+div $0,2
+bin $0,2
+mul $0,$1
+mul $0,$2
+mul $0,$3

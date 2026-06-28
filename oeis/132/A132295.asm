@@ -1,21 +1,15 @@
 ; A132295: Sum of the nonsquare numbers not larger than n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,2,5,5,10,16,23,31,31,41,52,64,77,91,106,106,123,141,160,180,201,223,246,270,270,296,323,351,380,410,441,473,506,540,575,575,612,650,689,729,770,812,855,899,944,990,1037,1085,1085,1135,1186,1238,1291,1345,1400,1456,1513,1571,1630,1690,1751,1813,1876,1876,1941,2007,2074,2142,2211,2281,2352,2424,2497,2571,2646,2722,2799,2877,2956,3036
+; Formula: a(n) = -truncate(binomial(-2*sqrtint(n),3)/(-4))+binomial(n+1,2)
 
 #offset 1
 
-sub $0,1
-mov $3,$0
 mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  add $0,1
-  lpb $0
-    seq $0,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
-    sub $0,1
-  lpe
-  add $2,$0
-lpe
-mov $0,$2
+nrt $1,2
+mul $1,-2
+bin $1,3
+div $1,-4
+add $0,1
+bin $0,2
+sub $0,$1

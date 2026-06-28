@@ -1,63 +1,60 @@
 ; A113406: Half the number of integer solutions to x^2 + 4 * y^2 = n.
-; Submitted by vaughan
+; Submitted by MARP
 ; 1,0,0,2,2,0,0,2,1,0,0,0,2,0,0,2,2,0,0,4,0,0,0,0,3,0,0,0,2,0,0,2,0,0,0,2,2,0,0,4,2,0,0,0,2,0,0,0,1,0,0,4,2,0,0,0,0,0,0,0,2,0,0,2,4,0,0,4,0,0,0,2,2,0,0,0,0,0,0,4
 
 #offset 1
 
-mov $1,$0
-sub $1,1
-mov $3,$1
-mov $4,-1
-pow $4,$1
-mov $5,$1
-add $5,1
-mov $14,$5
-lex $14,2
-mov $2,2
-pow $2,$14
-div $5,$2
-div $5,2
+mov $4,$0
+sub $0,1
+mov $5,$0
 mov $6,-1
-pow $6,$5
-mul $6,2
-mov $7,-2
-bin $7,$5
-div $7,$6
-mov $10,3
-sub $5,$7
-mul $5,2
-add $5,3
-lpb $5
-  sub $5,$10
-  mov $9,$5
-  max $9,0
-  mul $9,4
-  mov $13,$9
-  nrt $13,2
-  add $9,2
-  mov $12,$9
-  nrt $12,2
-  mov $9,$12
-  add $9,$13
-  mod $9,2
-  mov $10,2
-  add $10,$11
-  add $8,$9
+pow $6,$0
+mov $7,$0
+add $7,1
+mov $1,$7
+lex $1,2
+mov $2,2
+pow $2,$1
+div $7,$2
+div $7,2
+mov $8,-1
+pow $8,$7
+mul $8,2
+mov $9,-2
+bin $9,$7
+div $9,$8
+mov $12,3
+sub $7,$9
+mul $7,2
+add $7,3
+lpb $7
+  sub $7,$12
+  mov $11,$7
+  max $11,0
+  mul $11,4
+  mov $3,$11
+  nrt $3,2
   add $11,2
+  nrt $11,2
+  add $11,$3
+  mod $11,2
+  mov $12,2
+  add $12,$13
+  add $10,$11
+  add $13,2
 lpe
-mov $5,$8
-mul $5,$6
-div $5,2
-max $5,0
-mul $5,2
-mod $1,4
-mul $1,$5
-sub $5,$1
-mov $1,$5
-div $1,2
-mul $1,$4
-mul $1,2
-sub $1,$3
-add $1,$0
-mov $0,$1
+mov $7,$10
+mul $7,$8
+div $7,2
+max $7,0
+mul $7,2
+mod $0,4
+mul $0,$7
+sub $7,$0
+mov $0,$7
+div $0,2
+mul $0,$6
+mul $0,2
+sub $0,$5
+add $0,$4
 div $0,2

@@ -4,11 +4,7 @@
 
 #offset 1
 
-mov $1,61
-lpb $1
-  mov $1,$0
-lpe
-mov $0,$1
+mov $1,$0
 div $1,2
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 sub $0,1

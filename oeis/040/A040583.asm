@@ -1,12 +1,19 @@
 ; A040583: Continued fraction for sqrt(608).
-; Submitted by iBezanilla
+; Submitted by loader3229
 ; 24,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1,48,1,1,1,11,1,1,1
-; Formula: a(n) = floor((A040329(n)+1)/3)+A040329(n)
 
-mov $1,$0
-seq $1,40329 ; Continued fraction for sqrt(348).
+mov $1,24
 mov $2,1
-add $2,$1
-div $2,3
-add $1,$2
+fil $2,5
+mov $5,11
+fil $6,5
+mov $9,48
+fil $10,7
+mov $13,11
+lpb $0
+  mov $1,0
+  rol $1,15
+  add $15,$7
+  sub $0,1
+lpe
 mov $0,$1

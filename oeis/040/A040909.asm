@@ -1,13 +1,19 @@
 ; A040909: Continued fraction for sqrt(940).
-; Submitted by Sabroe_SMC
+; Submitted by loader3229
 ; 30,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1,60,1,1,1,14,1,1,1
-; Formula: a(n) = 2*floor((A040329(n)+1)/3)+A040329(n)
 
-mov $1,$0
-seq $1,40329 ; Continued fraction for sqrt(348).
+mov $1,30
 mov $2,1
-add $2,$1
-div $2,3
-add $1,$2
-add $2,$1
-mov $0,$2
+fil $2,5
+mov $5,14
+fil $6,5
+mov $9,60
+fil $10,7
+mov $13,14
+lpb $0
+  mov $1,0
+  rol $1,15
+  add $15,$7
+  sub $0,1
+lpe
+mov $0,$1
