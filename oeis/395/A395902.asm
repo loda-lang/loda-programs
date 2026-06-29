@@ -1,0 +1,16 @@
+; A395902: Triple convolution of the modified Fibonacci sequence F(3n)/2 (A001076).
+; Submitted by loader3229
+; 0,0,0,1,12,99,688,4326,25464,143018,775536,4092207,21126564,107136597,535272864,2640788828,12888228336,62312915172,298810304672,1422537514989,6728698090428,31643981809111,148044975160272,689370668876130,3196344091219560,14762394097629870
+
+add $0,1
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,1076 ; Denominators of continued fraction convergents to sqrt(5).
+  mov $3,$1
+  seq $3,395431 ; Self-convolution of A001076.
+  add $1,1
+  mul $2,$3
+  add $4,$2
+lpe
+mov $0,$4

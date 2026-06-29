@@ -1,0 +1,7 @@
+; A162365: Number of reduced words of length n in the Weyl group D_23.
+; Submitted by loader3229
+; 1,23,275,2277,14673,78407,361514,1477750,5461235,18518565,58282576,171815888,477989151,1262643305,3183445871,7694405993,17895700206,40182143330,87349858045,184297593435,378236260170,756560791350,1477481301465,2821499709614,5276341352226
+; Formula: a(n) = A162206(n+3565)
+
+add $0,3565
+seq $0,162206 ; Triangle read by rows in which row n (n >= 1) gives coefficients in expansion of the polynomial f(n) * Product_{i=1..n-1} f(2i), where f(k) = (1 - x^k)/(1-x).
