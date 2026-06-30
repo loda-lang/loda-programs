@@ -1,0 +1,16 @@
+; A386815: Coefficients in q-expansion of E_2^4 * E_4^2, where E_2 and E_4 are respectively the Eisenstein series A006352 and A004009.
+; Submitted by loader3229
+; 1,384,19008,-3408384,86384832,390216960,-20773815552,-154767455232,1360271378880,30429758560128,278226995437440,1749537534970368,8664534035259648,36062711146189056,131104383085776384,427185615341306880,1270776436150340544,3499300888293305088,9016032242401655616
+
+add $0,1
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,8410 ; a(0) = 1, a(n) = 480*sigma_7(n).
+  mov $3,$1
+  seq $3,282210 ; Coefficients in q-expansion of E_2^4, where E_2 is the Eisenstein series shown in A006352.
+  add $1,1
+  mul $2,$3
+  add $4,$2
+lpe
+mov $0,$4

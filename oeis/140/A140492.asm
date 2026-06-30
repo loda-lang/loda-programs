@@ -1,0 +1,41 @@
+; A140492: Trajectory of 3 under repeated application of the map: n -> n + third-smallest number that does not divide n.
+; Submitted by Kaischa
+; 3,8,14,19,23,27,32,38,43,47,51,56,62,67,71,75,81,86,91,95,99,104,110,116,122,127,131,135,141,146,151,155,159,164,170,176,182,187,191,195,201,206,211,215,219,224,230,236,242,247,251,255,261,266,271,275
+
+#offset 1
+
+mov $2,4
+mov $3,9
+mov $4,14
+mov $5,19
+mov $6,23
+mov $7,27
+mov $8,32
+mov $9,38
+mov $10,43
+mov $11,47
+mov $12,51
+mov $13,56
+mov $14,62
+mov $15,67
+mov $16,71
+mov $17,75
+mov $18,81
+mov $19,86
+mov $20,91
+mov $21,95
+mov $22,99
+mov $23,104
+mov $24,110
+mov $25,116
+lpb $0
+  add $4,1
+  mov $1,0
+  rol $1,25
+  sub $25,$12
+  add $25,$13
+  add $25,$24
+  sub $0,1
+lpe
+mov $0,$1
+sub $0,1
