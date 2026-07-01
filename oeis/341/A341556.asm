@@ -1,0 +1,16 @@
+; A341556: Fourier coefficients of the modular form F_{3A}^12.
+; Submitted by loader3229
+; 1,72,2376,47592,646344,6305904,45821160,255215808,1125009864,4097478600,12975540336,37101202848,96867424872,232791251760,526183909056,1128351033648,2286328733640,4451427831312,8386379869896,15130456297056,26613241744752,45684436953024,75935115663264
+
+add $0,1
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,8655 ; Theta series of direct sum of 4 copies of hexagonal lattice.
+  mov $3,$1
+  seq $3,341306 ; Fourier coefficients of the modular form F_{3A}^8.
+  add $1,1
+  mul $2,$3
+  add $4,$2
+lpe
+mov $0,$4

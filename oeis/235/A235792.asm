@@ -1,0 +1,18 @@
+; A235792: Total number of parts in all overpartitions of n.
+; Submitted by loader3229
+; 2,6,16,34,68,128,228,390,650,1052,1664,2584,3940,5916,8768,12826,18552,26566,37672,52956,73848,102192,140420,191688,260038,350700,470384,627604,833236,1101080,1448500,1897438,2475464,3217016,4165200,5373714,6909180,8854288,11311304,14406276,18294512,23166832,29257000,36851208,46298972,58026076,72550788,90502568,112644318,139899730,173385032,214446652,264706900,326117192,401020944,492229156,603108592,737685620,900770112,1098099920,1336510540,1624136332,1970644900,2387511650,2888343632,3489256288
+
+#offset 1
+
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,15128 ; Number of overpartitions of n: an overpartition of n is an ordered sequence of nonincreasing integers that sum to n, where the first occurrence of each integer may be overlined.
+  mov $3,$1
+  add $3,1
+  seq $3,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+  add $1,1
+  mul $2,$3
+  add $4,$2
+lpe
+mov $0,$4
