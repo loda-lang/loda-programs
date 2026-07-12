@@ -1,10 +1,8 @@
 ; A021026: Decimal expansion of 1/22.
-; Submitted by DukeBox
+; Submitted by loader3229
 ; 0,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4
-; Formula: a(n) = -6*truncate(truncate(((3*n)^2-1)/2)/6)+truncate(((3*n)^2-1)/2)
+; Formula: a(n) = sumdigits(sign(n)*(sign(n)*((n-1)%2+1)+1)*(sign(n)*((n-1)%2+1)+2)*(sign(n)*((n-1)%2+1)+3)*((n-1)%2+1),6)
 
-mul $0,3
-pow $0,2
-sub $0,1
-div $0,2
-mod $0,6
+dgr $0,3
+fac $0,4
+dgs $0,6

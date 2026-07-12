@@ -4,7 +4,6 @@
 ; Formula: a(n) = (2*n+1)!
 
 mul $0,2
-add $0,1
-mov $1,1
+mov $1,2
 fac $1,$0
 mov $0,$1

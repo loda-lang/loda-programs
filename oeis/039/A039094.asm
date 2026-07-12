@@ -15,9 +15,8 @@ lpb $2
   seq $3,52421 ; Numbers without 8 as a digit.
   lpb $3
     mov $5,$3
-    mul $5,9
-    add $5,6
-    mul $5,3
+    mul $5,27
+    add $5,18
     mod $5,10
     seq $5,274719 ; Expansion of Product_{k >= 1} (1-q^(2*k)).
     div $3,10

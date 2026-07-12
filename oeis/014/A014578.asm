@@ -1,7 +1,7 @@
 ; A014578: Binary expansion of Thue constant (or Roth's constant).
-; Submitted by shiva
+; Submitted by loader3229
 ; 0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,0,1
+; Formula: a(n) = if(n==0,0,n/((-3)^valuation(n,-3)))>=1
 
-dir $0,9
-pow $0,2
-mod $0,3
+dir $0,-3
+geq $0,1

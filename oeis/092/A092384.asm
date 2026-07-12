@@ -1,13 +1,8 @@
 ; A092384: Sum of digits of n if n even, else sum of digits of 2n.
-; Submitted by ckrause
+; Submitted by loader3229
 ; 0,2,2,6,4,1,6,5,8,9,1,4,3,8,5,3,7,7,9,11,2,6,4,10,6,5,8,9,10,13,3,8,5,12,7,7,9,11,11,15,4,10,6,14,8,9,10,13,12,17,5,3,7,7,9,2,11,6,13,10,6,5,8,9,10,4,12,8,14,12,7,7,9,11,11,6,13,10,15,14
+; Formula: a(n) = sumdigits(2*if((n%2)==0,n/2,n),10)
 
 dif $0,2
 mul $0,2
-lpb $0
-  mov $2,$0
-  mod $2,10
-  div $0,10
-  add $1,$2
-lpe
-mov $0,$1
+dgs $0,10

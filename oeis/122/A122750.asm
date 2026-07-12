@@ -1,7 +1,7 @@
 ; A122750: Triangle T(n,k) = (-1)^(k+1) if n is odd, = (-1)^k if n and k are even, = 2*(-1)^k if n is even and k is odd, 0<=k<=n.
 ; Submitted by loader3229
 ; 1,-1,1,1,-2,1,-1,1,-1,1,1,-2,1,-2,1,-1,1,-1,1,-1,1,1,-2,1,-2,1,-2,1,-1,1,-1,1,-1,1,-1,1,1,-2,1,-2,1,-2,1,-2,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-2,1,-2,1,-2,1,-2,1,-2,1
-; Formula: a(n) = binomial(2*truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-1,-n-2*truncate((-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))/2)+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = binomial(2*truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-1,-n-2*truncate((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))/2)+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $2,$0

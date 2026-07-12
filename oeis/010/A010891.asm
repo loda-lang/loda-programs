@@ -1,8 +1,8 @@
 ; A010891: Inverse of 5th cyclotomic polynomial.
+; Submitted by loader3229
 ; 1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,0,0
-; Formula: a(n) = truncate((-n-5*truncate((-n)/5))^(-n-5*truncate((-n)/5)))
+; Formula: a(n) = if(((-n-5*truncate((-n)/5))^2)==1,(-n-5*truncate((-n)/5))^(-n-5*truncate((-n)/5)),if((-n-5*truncate((-n)/5))<=(-1),0,(-n-5*truncate((-n)/5))^(-n-5*truncate((-n)/5))))
 
-sub $1,$0
-mod $1,5
-pow $1,$1
-mov $0,$1
+mul $0,-1
+mod $0,5
+pow $0,$0

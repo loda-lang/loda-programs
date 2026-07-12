@@ -4,17 +4,26 @@
 
 #offset 2
 
-sub $0,1
-mov $2,0
 mov $3,$0
-sub $0,1
-add $3,1
+sub $0,2
 pow $3,5
 lpb $3
   sub $3,1
   mov $4,$2
   add $4,1
-  seq $4,127368 ; Relative prime triangle, read by rows.
+  mov $5,$4
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $6,$5
+  bin $5,2
+  mov $7,$4
+  sub $7,$5
+  gcd $6,$7
+  mov $5,$6
+  equ $5,1
+  mov $4,$5
   equ $4,0
   sub $0,$4
   add $2,1
@@ -22,7 +31,6 @@ lpb $3
 lpe
 mov $1,$2
 mul $1,8
-add $1,1
 nrt $1,2
 add $1,1
 div $1,2

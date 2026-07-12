@@ -1,21 +1,13 @@
 ; A130718: 2*(prime(n)-2)!.
-; Submitted by Aionel
+; Submitted by Manuel Gomez
 ; 2,2,12,240,725760,79833600,2615348736000,711374856192000,102181884343418880000,21777738900836704321536000000,17683523987479403909087232000000
 
 #offset 1
 
+min $0,11
 seq $0,40 ; The prime numbers.
 sub $0,2
-mov $1,$0
-min $1,32
+mov $1,1
+fac $1,$0
 mov $0,$1
-mov $1,9
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
-mov $0,$1
-sub $0,18
-div $0,9
 mul $0,2
-add $0,4

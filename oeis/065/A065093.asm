@@ -1,5 +1,5 @@
 ; A065093: Convolution of A000010 with itself.
-; Submitted by shiva
+; Submitted by Science United
 ; 1,2,5,8,16,20,36,44,68,76,120,124,188,196,276,272,404,380,544,532,716,668,968,860,1184,1120,1472,1332,1896,1624,2204,2036,2656,2352,3284,2752,3684,3356,4324,3744,5192,4312,5720,5180,6540,5628,7768,6388,8476,7492,9432,8064,11092,9068,11852,10448,13096,11104,15292,12276,15996,14124,17644,14928,20224,16240,21108,18548,23272,19312,26220,20996,27232,23968,29532,24696,33392,26632,34660,29956
 
 #offset 1
@@ -29,9 +29,17 @@ lpb $2
   add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,1
-  seq $0,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
+  mov $7,$0
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
+  add $0,1
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $0,$5
   add $1,$0
-  mov $4,$5
 lpe
 mov $0,$1

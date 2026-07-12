@@ -1,12 +1,11 @@
 ; A045182: Numbers whose base-5 representation contains exactly two 0's and two 2's.
-; Submitted by pm120
+; Submitted by Omar
 ; 252,260,300,637,677,685,877,885,925,1257,1261,1263,1264,1267,1272,1277,1285,1301,1303,1304,1305,1315,1320,1327,1335,1352,1360,1377,1385,1425,1501,1503,1504,1505,1515,1520,1525,1575
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
+add $2,1
 pow $2,8
 lpb $2
   mov $4,0

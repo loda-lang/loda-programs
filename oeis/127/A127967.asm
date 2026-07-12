@@ -1,6 +1,7 @@
 ; A127967: A right-skewed Pascal triangle, with interspersed 1's on main diagonal.
 ; Submitted by loader3229
 ; 1,1,1,1,0,1,1,0,2,1,1,0,3,0,1,1,0,4,0,3,1,1,0,5,0,6,0,1,1,0,6,0,10,0,4,1,1,0,7,0,15,0,10,0,1,1,0,8,0,21,0,20,0,5,1,1,0,9,0,28,0,35,0,15,0,1,1,0,10,0,36,0,56,0,35,0,6,1
+; Formula: a(n) = binomial(-truncate((-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)/2)+floor((sqrtint(8*n+16)-1)/2),-truncate((-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)/2)+max(if(((-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)%2)==0,(-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)/2,-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)-1,0))
 
 add $0,2
 mov $2,$0

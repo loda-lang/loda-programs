@@ -35,7 +35,6 @@ lpb $4
   equ $10,0
   seq $11,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mul $11,$10
-  mov $6,$11
   mov $7,$0
   mul $7,8
   nrt $7,2

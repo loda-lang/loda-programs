@@ -1,10 +1,9 @@
 ; A142464: Decimal expansion of 13/36.
-; Submitted by vaughan
+; Submitted by loader3229
 ; 3,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (min(n+1,3)^2+2)%10
+; Formula: a(n) = if((bitxor(min(n,2),-5)%3)==0,bitxor(min(n,2),-5)/3,bitxor(min(n,2),-5))+8
 
-add $0,1
-min $0,3
-pow $0,2
-add $0,2
-mod $0,10
+min $0,2
+bxo $0,-5
+dif $0,3
+add $0,8

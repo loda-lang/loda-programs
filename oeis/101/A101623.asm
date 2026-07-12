@@ -1,7 +1,18 @@
 ; A101623: Modular binomial transform of 10^n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,11,1,111,101,1011,1,10111,10101,111011,10001,1100111,1000101,10001011,1,100010111,100010101,1100111011,100010001,11101100111,10101000101,101110001011,100000001,1011000010111,1010000010101,11100000111011,1000000010001,110000001100111
-; Formula: a(n) = A007088(A101624(n))
+; Formula: a(n) = 2*truncate((10*a(n-2))/a(n-1))*a(n-1)-10*a(n-2)+a(n-1), a(1) = 1, a(0) = 1
 
-seq $0,101624 ; Stern-Jacobsthal numbers.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,1
+lpb $0
+  sub $0,1
+  mul $1,10
+  mov $3,$1
+  mod $3,$2
+  mul $3,-2
+  add $3,$1
+  add $3,$2
+  mov $1,$2
+  mov $2,$3
+lpe
+mov $0,$2

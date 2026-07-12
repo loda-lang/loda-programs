@@ -1,10 +1,9 @@
 ; A018099: Powers of fourth root of 19 rounded down.
-; Submitted by arkiss
+; Submitted by loader3229
 ; 1,2,4,9,19,39,82,172,361,753,1573,3285,6859,14320,29897,62420,130321,272083,568056,1185986,2476099,5169593,10793065,22533736,47045881,98222278,205068240,428140987,893871739
-; Formula: a(n) = sqrtint(sqrtint(19^n))
+; Formula: a(n) = sqrtnint(19^n,4)
 
 mov $1,19
 pow $1,$0
+nrt $1,4
 mov $0,$1
-nrt $0,2
-nrt $0,2

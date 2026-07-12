@@ -6,8 +6,7 @@
 
 mov $2,$0
 sub $0,1
-add $2,13
-pow $2,2
+pow $2,4
 lpb $2
   sub $2,7
   mov $3,$1

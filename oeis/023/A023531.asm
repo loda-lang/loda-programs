@@ -1,13 +1,11 @@
 ; A023531: a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-; Formula: a(n) = (n+1)==binomial(truncate((sqrtint(8*n+8)+2)/2),2)
+; Formula: a(n) = (8*n+9)==(sqrtint(8*n+9)^2)
 
-add $0,1
+mul $0,8
+add $0,9
 mov $1,$0
-mul $1,8
 nrt $1,2
-add $1,2
-div $1,2
-bin $1,2
+pow $1,2
 equ $0,$1

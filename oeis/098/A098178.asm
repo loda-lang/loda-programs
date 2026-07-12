@@ -1,9 +1,8 @@
 ; A098178: Expansion of (1+x)(1-x+x^2)/((1-x)(1+x^2)).
-; Submitted by WTBroughton
+; Submitted by loader3229
 ; 1,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1,2,1,0,1
-; Formula: a(n) = -4*truncate(gcd(max(n,1)+2,4)/4)+gcd(max(n,1)+2,4)
+; Formula: a(n) = min(bitxor(if(n==0,0,valuation(n,2)),1),2)
 
-max $0,1
-add $0,2
-gcd $0,4
-mod $0,4
+lex $0,2
+bxo $0,1
+min $0,2

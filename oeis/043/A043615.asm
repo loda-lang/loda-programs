@@ -1,26 +1,25 @@
 ; A043615: Numbers whose base-6 representation has exactly 7 runs.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 47989,47990,47991,47992,47993,48000,48001,48003,48004,48005,48006,48007,48008,48010,48011,48012,48013,48014,48015,48017,48018,48019,48020,48021,48022,48025,48026,48027,48028,48029
 
 #offset 1
 
-sub $0,1
-mov $1,1
-mov $2,$0
-add $2,7
-pow $2,2
+mul $0,5
+sub $0,30517578129
+div $0,5
+mov $2,6103515625
 lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,44946 ; Runs of odd length in the base 6 representation of n.
-  trn $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  max $2,1
+  mov $3,$0
+  div $3,$2
+  mov $5,$3
+  geq $5,$4
+  mod $0,$2
+  div $2,5
+  add $3,$5
+  mov $4,$3
+  mul $1,6
+  add $1,$3
 lpe
 mov $0,$1
-add $0,47953
+sub $0,17911760948

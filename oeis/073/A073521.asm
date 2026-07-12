@@ -1,61 +1,50 @@
 ; A073521: The set of 16 consecutive primes with the property that they form a 4 X 4 magic square with the smallest magic constant (258).
-; Submitted by crashtech
+; Submitted by [BOINCstats] CRNabein
 ; 31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101
 
 #offset 1
 
-mov $1,1
-mov $2,11
-mov $3,13
-mov $5,19
-mov $6,23
-mov $7,29
-mov $8,31
-mov $9,37
-mov $10,41
-mov $11,43
-mov $12,47
-mov $13,53
-mov $14,59
-mov $15,61
-mov $16,67
-mov $17,71
-mov $18,73
-mov $19,79
-mov $20,83
-mov $21,89
-mov $22,97
-mov $23,101
-mov $24,103
-mov $25,107
-mov $26,109
-mov $27,113
-mov $28,121
-mov $29,127
-mov $30,318
-mov $31,137
-mov $32,139
-mov $33,143
-mov $34,149
-mov $35,151
-mov $36,157
-mov $37,163
-mov $38,167
-mov $39,169
-mov $40,173
-mov $41,179
-mov $42,184
-mov $43,187
-mov $44,191
-mov $45,193
-mov $47,199
-mov $48,209
-mov $49,211
+mov $2,1
+mov $3,11
+mov $5,17
+mov $6,19
+mov $7,23
+mov $9,31
+mov $10,37
+mov $11,41
+mov $12,43
+mov $13,47
+mov $14,53
+mov $15,59
+mov $16,61
+mov $18,71
+mov $19,73
+mov $20,79
+mov $21,83
+mov $22,89
+mov $23,97
+mov $24,101
+mov $26,107
+mov $27,109
+mov $29,121
+mov $30,126
+mov $32,137
+mov $35,150
+mov $38,165
+mov $17,67
+mov $34,109
+mov $39,167
+mov $41,173
+mov $42,179
+mov $43,181
+mov $46,193
+mov $48,199
+mov $49,209
+mov $50,211
 sub $0,1
 lpb $0
-  rol $1,49
-  add $49,$1
-  add $49,$48
+  rol $2,49
+  add $50,$49
   sub $0,1
 lpe
-mov $0,$8
+mov $0,$9

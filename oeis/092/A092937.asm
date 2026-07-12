@@ -1,13 +1,11 @@
 ; A092937: Differences nextprime(2k) - precprime(2k) having maximum prime density for 2k <= 10^n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 6,6,6,6,12,18,18,30
-; Formula: a(n) = 6*truncate(((n-2)^2-1)/12)+6
 
 #offset 2
 
 sub $0,2
-pow $0,2
-sub $0,1
-div $0,12
-add $0,1
+fac $0,$0
+dir $0,32
+nrt $0,7
 mul $0,6

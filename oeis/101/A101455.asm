@@ -1,9 +1,8 @@
 ; A101455: a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1
-; Formula: a(n) = (n+1)%4-2*truncate(((n+1)%4-1)/2)-1
+; Formula: a(n) = if(bitand(n^5,3)==0,0,bitand(n^5,3)/((-3)^valuation(bitand(n^5,3),-3)))
 
-add $0,1
-mod $0,4
-sub $0,1
-mod $0,2
+pow $0,5
+ban $0,3
+dir $0,-3

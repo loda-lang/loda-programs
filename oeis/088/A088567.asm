@@ -1,30 +1,20 @@
 ; A088567: Number of "non-squashing" partitions of n into distinct parts.
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 1,1,1,2,2,3,4,5,6,7,9,10,13,14,18,19,24,25,31,32,40,41,50,51,63,64,77,78,95,96,114,115,138,139,163,164,194,195,226,227,266,267,307,308,357,358,408,409,471,472,535,536,612,613,690,691,785,786,881,882,995,996,1110,1111,1248,1249,1387,1388,1550,1551,1714,1715,1908,1909,2103,2104,2329,2330,2556,2557
 
-mov $2,1
-mov $10,1
+mov $3,$0
+add $3,1
+bin $3,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
   mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,2
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,2
-  add $9,$2
-  equ $10,$1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,88585 ; Bisection of A088567.
+  mov $5,$2
+  add $5,$3
+  seq $5,167374 ; Triangle, read by rows, given by [ -1,1,0,0,0,0,0,0,0,...] DELTA [1,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
+  mul $5,$4
+  add $1,$5
   add $2,1
-  mov $8,$3
 lpe
-mov $0,$8
-max $0,1
+mov $0,$1

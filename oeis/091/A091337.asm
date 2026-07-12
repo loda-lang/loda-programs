@@ -1,11 +1,8 @@
 ; A091337: a(n) = (2/n), where (k/n) is the Kronecker symbol.
-; Submitted by shiva
+; Submitted by loader3229
 ; 0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1
-; Formula: a(n) = (-n-2*truncate((-n)/2))^floor((n+10)/4)
+; Formula: a(n) = if(bitand(n^2,11)==0,0,bitand(n^2,11)/((-9)^valuation(bitand(n^2,11),-9)))
 
-sub $1,$0
-mod $1,2
-add $0,10
-div $0,4
-pow $1,$0
-mov $0,$1
+pow $0,2
+ban $0,11
+dir $0,-9

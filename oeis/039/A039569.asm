@@ -1,12 +1,10 @@
 ; A039569: Numbers whose base-5 representation has the same number of 1's, 2's and 3's.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,4,20,24,38,42,58,66,82,86,100,104,120,124,138,142,178,190,194,198,202,210,214,222,238,242,258,266,278,290,294,298,326,330,334,346,358,366,382,386,402,410,414,422,426,430,434,446,482,486,500,504,520,524
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
 pow $2,4
 lpb $2
   mov $4,0

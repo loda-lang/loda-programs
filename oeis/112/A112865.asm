@@ -1,14 +1,8 @@
 ; A112865: a(n) = (-1)^(n + floor(n/4) + floor(n/4^2) + ...).
 ; Submitted by loader3229
 ; 1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1
-; Formula: a(n) = 2*sumdigits(4*n,4)-4*truncate((-4*n+sumdigits(4*n,4))/2)-8*n+1
+; Formula: a(n) = if(bitor(sumdigits(n,4),-2)==0,0,if((bitor(sumdigits(n,4),-2)^2)<=1,bitor(sumdigits(n,4),-2),bitor(sumdigits(n,4),-2)/(bitor(sumdigits(n,4),-2)^valuation(bitor(sumdigits(n,4),-2),bitor(sumdigits(n,4),-2)))))
 
-mul $0,4
-mov $2,$0
 dgs $0,4
-sub $2,$0
-sub $1,$2
-mod $1,2
-mul $1,2
-add $1,1
-mov $0,$1
+bor $0,-2
+dir $0,$0

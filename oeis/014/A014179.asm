@@ -1,25 +1,59 @@
 ; A014179: Inverse of 170th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $4,3
-add $0,3
+mov $1,1
+mov $2,-1
+mov $3,1
+mov $4,-1
+mov $5,1
+mov $18,1
+mov $19,-1
+mov $20,1
+mov $21,-1
+mov $22,1
 lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  mov $5,-1
-  pow $5,$3
-  add $3,1
-  seq $3,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
-  add $1,6
-  mul $1,2
-  mod $1,$3
-  seq $1,292438 ; Characteristic function of non-isolated nonprimes.
-  mov $3,$1
-  mul $3,$5
-  add $2,$3
-  mul $4,21
-  sub $4,46
+  mul $1,-1
+  rol $1,64
+  sub $64,$1
+  add $64,$5
+  add $64,$6
+  sub $64,$10
+  sub $64,$11
+  add $64,$15
+  add $64,$16
+  add $64,$17
+  add $64,$18
+  sub $64,$20
+  sub $64,$21
+  sub $64,$22
+  sub $64,$23
+  add $64,$25
+  add $64,$26
+  add $64,$27
+  add $64,$28
+  sub $64,$30
+  sub $64,$31
+  sub $64,$32
+  sub $64,$33
+  sub $64,$34
+  add $64,$36
+  add $64,$37
+  add $64,$38
+  add $64,$39
+  sub $64,$41
+  sub $64,$42
+  sub $64,$43
+  sub $64,$44
+  add $64,$46
+  add $64,$47
+  add $64,$48
+  add $64,$49
+  sub $64,$53
+  sub $64,$54
+  add $64,$58
+  add $64,$59
+  sub $64,$63
+  sub $0,1
 lpe
-mov $0,$2
+mov $0,$1

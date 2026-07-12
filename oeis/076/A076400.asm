@@ -10,7 +10,7 @@ mov $1,$0
 trn $0,1
 sub $1,$0
 add $0,1
-seq $0,216765 ; Perfect powers (squares, cubes, etc.) plus 1.
+seq $0,216765 ; Perfect powers (squares, cubes, etc., not including 1) plus 1.
 sub $0,1
 pow $0,2
 sub $0,1

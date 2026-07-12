@@ -1,5 +1,5 @@
 ; A091601: Number of compositions (ordered partitions) of n with designated summands.
-; Submitted by Landjunge
+; Submitted by [AF>Libristes]Maeda
 ; 1,1,3,6,14,30,69,153,345,771,1730,3873,8682,19450,43590,97668,218864,490416,1098933,2462458,5517870,12364356,27705944,62083134,139115247,311727845,698516370,1565227653,3507344882,7859219406,17610851898
 
 mov $2,1
@@ -16,6 +16,7 @@ lpb $0
     seq $7,123331 ; Expansion of (c(q)^2/(3c(q^2))-1)/2 in powers of q where c(q) is a cubic AGM function.
     mov $9,10
     add $9,$5
+    mod $2,55
     mul $7,$$9
     add $5,1
     add $6,$7

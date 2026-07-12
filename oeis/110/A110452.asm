@@ -4,13 +4,7 @@
 
 #offset 1
 
-sub $0,1
-mov $1,8
-sub $1,$0
-mov $2,$0
-mov $3,1
-fac $3,$1
-mov $0,8
-bin $0,$2
-mul $0,$3
-mul $0,9
+sub $0,10
+mov $1,9
+fac $1,$0
+mov $0,$1

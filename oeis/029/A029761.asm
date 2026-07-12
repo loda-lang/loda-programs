@@ -1,28 +1,14 @@
 ; A029761: Partial sums of A005001.
-; Submitted by amazing
+; Submitted by iBezanilla
 ; 1,3,7,16,40,116,395,1551,6847,33290,175708,996696,6031281,38710303,262288647,1868825536,13955504572,108907053412,885935408411,7495705968467,65829634763895,599033379716074,5638952863115576,54830878201599424,549981672834888561,5683722799698177051,60448710450180221815,660930746036722255968,7421952186223198942576,85522775565269950820356,1010372613456126035148283,12228581397573358604571863,151511460231599304992921087,1920390231911632858145998458,24884308392232026873687732628
 
-mov $11,$0
-mov $13,$0
-add $13,1
-lpb $13
-  clr $0,11
-  sub $13,1
-  mov $0,$11
-  sub $0,$13
-  mov $8,$0
-  mov $10,$0
-  add $10,1
-  lpb $10
-    sub $10,1
-    mov $0,$8
-    sub $0,$10
-    mov $5,$0
-    seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-    seq $5,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-    div $5,$0
-    add $9,$5
-  lpe
-  add $12,$9
+add $0,1
+lpb $0
+  trn $0,1
+  add $1,1
+  mov $2,$0
+  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $2,$1
+  add $3,$2
 lpe
-mov $0,$12
+mov $0,$3

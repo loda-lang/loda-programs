@@ -120,6 +120,7 @@ A014587: Nim function for Take-a-Factorial-Game (a subtraction game).
 A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 A014963: Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
 A015168: Inverse of 1159th cyclotomic polynomial.
+A015256: Inverse of 1247th cyclotomic polynomial.
 A015550: Inverse of 1541st cyclotomic polynomial.
 A015582: Inverse of 1573rd cyclotomic polynomial.
 A015760: Inverse of 1751st cyclotomic polynomial.

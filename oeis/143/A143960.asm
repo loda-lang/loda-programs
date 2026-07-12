@@ -1,14 +1,14 @@
 ; A143960: a(n) = the n-th positive integer with exactly n zeros and n ones in its binary representation.
+; Submitted by loader3229
 ; 2,10,38,142,542,2110,8318,33022,131582,525310,2099198,8392702,33562622,134234110,536903678,2147549182,8590065662,34360000510,137439477758,549756862462,2199025352702,8796097216510,35184380477438,140737505132542,562949986975742
-; Formula: a(n) = 4*binomial(2^(n-1)+1,2)-2
+; Formula: a(n) = 2*(2^(n-1)+1)*2^(n-1)-2
 
 #offset 1
 
 sub $0,1
 mov $1,2
 pow $1,$0
-add $1,1
-bin $1,2
-mul $1,4
-sub $1,2
+fac $1,2
 mov $0,$1
+mul $0,2
+sub $0,2

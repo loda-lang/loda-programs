@@ -1,31 +1,28 @@
 ; A112503: Fourth column of triangle A112500.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 1,20,225,1882,13070,79872,444902,2311828,11388999,53820068,246112783,1096379070,4782801180,20515294320,86808499020,363304109640,1507010836605,6206407299540,25412183425165,103563957886370
 
-mov $2,1
-mov $10,1
+add $0,1
 lpb $0
+  mov $2,$0
+  add $2,2
+  mov $5,4
+  pow $5,$2
+  mov $7,2
+  pow $7,$2
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,254030 ; a(n) = 1*4^n + 2*3^n + 3*2^n + 4*1^n.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-  mov $8,$3
+  mov $6,3
+  pow $6,$2
+  sub $6,$7
+  mov $2,$6
+  mul $2,3
+  sub $5,$2
+  mov $2,$5
+  div $2,6
+  mov $3,$1
+  seq $3,112502 ; Third column of triangle A112500.
+  add $1,1
+  mul $2,$3
+  add $4,$2
 lpe
-mov $0,$8
-max $0,1
+mov $0,$4

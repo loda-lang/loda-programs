@@ -1,27 +1,14 @@
 ; A089802: Expansion of q^(-1/3) * (theta_4(q^3) - theta_4(q^(1/3))) / 2 in powers of q.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,-1,0,0,0,-1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = (-1)^n*((3*n+1)==(sqrtint(3*n+1)^2))
 
+mov $2,-1
+pow $2,$0
 mul $0,3
 add $0,1
-mov $1,-1
-pow $1,$0
-mov $3,2
-lpb $0
-  mov $2,$0
-  nrt $0,2
-  pow $0,2
-  equ $0,$2
-  mul $0,8
-  add $0,63
-  sub $3,$0
-  mov $4,$3
-  equ $0,1
-lpe
-add $4,1
-mov $0,$4
-mod $0,10
-add $0,10
-mod $0,10
-mul $0,$1
-div $0,-2
+mov $1,$0
+nrt $1,2
+pow $1,2
+equ $0,$1
+mul $0,$2

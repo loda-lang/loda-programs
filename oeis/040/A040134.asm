@@ -1,11 +1,10 @@
 ; A040134: Continued fraction for sqrt(147).
-; Submitted by [AF>France>Ouest>BZH]slq
+; Submitted by loader3229
 ; 12,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8,24,8
-; Formula: a(n) = 4*gcd(2^n+2,6)
+; Formula: a(n) = 4*if(bitxor(sign(n)*((n-1)%2+1),18)==0,0,valuation(bitxor(sign(n)*((n-1)%2+1),18),2))+8
 
-mov $1,2
-pow $1,$0
-add $1,2
-gcd $1,6
-mov $0,$1
+dgr $0,3
+bxo $0,18
+lex $0,2
 mul $0,4
+add $0,8

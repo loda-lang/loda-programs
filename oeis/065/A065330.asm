@@ -1,10 +1,9 @@
-; A065330: a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
-; Submitted by ckrause
+; A065330: Largest divisor of n coprime to 6. I.e., a(n) = max { k | gcd(n,k)=k and gcd(k,6)=1 }.
+; Submitted by loader3229
 ; 1,1,1,1,5,1,7,1,1,5,11,1,13,7,5,1,17,1,19,5,7,11,23,1,25,13,1,7,29,5,31,1,11,17,35,1,37,19,13,5,41,7,43,11,5,23,47,1,49,25,17,13,53,1,55,7,19,29,59,5,61,31,7,1,65,11,67,17,23,35,71,1,73,37,25,19,77,13,79,5
+; Formula: a(n) = if((n/(3^valuation(n,3)))==0,0,(n/(3^valuation(n,3)))/(2^valuation(n/(3^valuation(n,3)),2)))
 
 #offset 1
 
-lpb $0
-  dif $0,2
-  dif $0,3
-lpe
+dir $0,3
+dir $0,2

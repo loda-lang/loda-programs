@@ -1,11 +1,8 @@
 ; A096271: Ternary sequence that is a fixed point of the morphism 0 -> 01, 1 -> 02, 2 -> 00.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by loader3229
 ; 0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,1,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,2,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,1,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,1
+; Formula: a(n) = if(if(bitxor(n,-1)==0,0,bitxor(n,-1)/(8^valuation(bitxor(n,-1),8)))==0,0,valuation(if(bitxor(n,-1)==0,0,bitxor(n,-1)/(8^valuation(bitxor(n,-1),8))),2))
 
-add $0,1
-lpb $0
-  dif $0,2
-  add $1,1
-lpe
-mov $0,$1
-mod $0,3
+bxo $0,-1
+dir $0,8
+lex $0,2

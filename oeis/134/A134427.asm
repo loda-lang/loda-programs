@@ -13,7 +13,7 @@ lpb $2
   add $3,1
   pow $3,2
   add $3,1
-  seq $3,69158 ; a(n) = Product{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
+  seq $3,69158 ; a(n) = Product_{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
   equ $3,1
   sub $0,$3
   mov $4,$0

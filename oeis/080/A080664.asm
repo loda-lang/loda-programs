@@ -1,6 +1,7 @@
 ; A080664: Numbers n such that n-th Catalan number is squarefree.
 ; Submitted by aendgraend
 ; 1,2,3,4,5,7,8,9,11,17,19,31,35
+; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+truncate((5*truncate((if((A018662(max(n-1,0)+1)%4)==0,A018662(max(n-1,0)+1)/4,A018662(max(n-1,0)+1))-truncate((if((A018662(max(n-1,0)+1)%4)==0,A018662(max(n-1,0)+1)/4,A018662(max(n-1,0)+1))+8)/7))/3))/4)+1, b(0) = 0
 
 #offset 1
 

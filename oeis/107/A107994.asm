@@ -1,34 +1,23 @@
 ; A107994: Numbers n such that 11*n - 2 is prime.
-; Submitted by booc0mtaco
+; Submitted by Science United
 ; 3,5,9,15,21,23,29,35,41,59,63,69,75,83,89,93,99,101,105,119,125,131,135,141,143,149,159,171,173,183,191,195,209,213,225,231,243,245,255,269,273,275,279,281,293,303,315,321,329,339,345,353,359,365,369,371,383,401,411,423,425,435,443,449,455,465,471,485,491,495,503,513,531,533,539,549,569,573,575,579
 
 #offset 1
 
-mov $2,8
+mov $2,4
 mov $3,$0
 pow $3,5
 lpb $3
-  mov $5,0
   mov $1,$2
+  mul $1,2
   add $1,1
-  lpb $1
-    gcd $5,3
-    mov $6,$1
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $2,22
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,11
   sub $3,$0
 lpe
 mov $0,$2
-sub $0,30
+sub $0,15
 div $0,11
+mul $0,2
 add $0,3

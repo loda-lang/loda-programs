@@ -1,10 +1,9 @@
 ; A137331: a(n) = 1 if the binary weight of n is prime, otherwise 0.
 ; Submitted by loader3229
 ; 0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,0,1,0,0,1,0,1,1,1,1,1,1,0,1,1,1,0,1,0,0,1,1,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,0,1,0,0,1
-; Formula: a(n) = floor(((3*sumdigits(n,2))^4)/31)%2
+; Formula: a(n) = sumdigits(max(sumdigits(n,2)-1,0),2)%2
 
 dgs $0,2
-mul $0,3
-pow $0,4
-div $0,31
+trn $0,1
+dgs $0,2
 mod $0,2

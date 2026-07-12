@@ -1,10 +1,8 @@
 ; A089643: 3^a(n) divides C(3n,n); 3-adic valuation of A005809.
-; Submitted by Irish Republican
+; Submitted by loader3229
 ; 0,1,1,1,2,1,1,2,2,1,2,2,2,3,1,1,2,2,1,2,2,2,3,2,2,3,3,1,2,2,2,3,2,2,3,3,2,3,3,3,4,1,1,2,2,1,2,2,2,3,2,2,3,3,1,2,2,2,3,2,2,3,3,2,3,3,3,4,2,2,3,3,2,3,3,3,4,3,3,4
-; Formula: a(n) = floor(sumdigits(2*n,3)/2)
+; Formula: a(n) = if((sumdigits(2*n,3)%2)==0,sumdigits(2*n,3)/2,sumdigits(2*n,3))
 
-mov $1,$0
-mul $1,2
-dgs $1,3
-mov $0,$1
-div $0,2
+mul $0,2
+dgs $0,3
+dif $0,2

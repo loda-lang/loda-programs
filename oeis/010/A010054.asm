@@ -1,12 +1,11 @@
 ; A010054: a(n) = 1 if n is a triangular number, otherwise 0.
 ; Submitted by loader3229
 ; 1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = n==binomial(floor((sqrtint(8*n)+2)/2),2)
+; Formula: a(n) = (8*n+1)==(sqrtint(8*n+1)^2)
 
+mul $0,8
+add $0,1
 mov $1,$0
-mul $1,8
 nrt $1,2
-add $1,2
-div $1,2
-bin $1,2
+pow $1,2
 equ $0,$1

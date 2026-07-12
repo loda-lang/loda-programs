@@ -1,5 +1,5 @@
 ; A080884: Sum of (0,1) versions of Thue-Morse word (A010060) and Fibonacci word (A003849).
-; Submitted by Science United
+; Submitted by Geoff
 ; 0,2,1,0,2,0,1,1,1,1,0,1,1,1,2,0,1,1,0,2,0,1,2,0,0,2,1,1,1,0,1,1,1,1,0,2,0,1,2,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,2,0,0,2,0,2,1,0,2,0,0,2,0,2,1,0,1,1,2,0,1,1,0,1
 
 #offset 1
@@ -21,12 +21,11 @@ lpb $4
   nrt $2,2
   sub $2,$3
   div $2,2
-  sub $2,$1
 lpe
-mul $2,$1
 sub $1,$2
 mov $4,$1
 equ $4,0
+bxo $4,1
 add $4,1
 sub $0,1
 dgs $0,2

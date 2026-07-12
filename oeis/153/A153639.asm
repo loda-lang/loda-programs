@@ -1,10 +1,9 @@
 ; A153639: Evilness of triangular numbers.
 ; Submitted by loader3229
 ; 1,0,1,1,1,1,0,0,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,1,1,1,0,0,1,1,1,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,1,0,1,1,1,1,0,1,0,1,0,1,1,1,1,0,1,0,1,0
-; Formula: a(n) = (sumdigits(binomial(n+1,2),2)+1)%2
+; Formula: a(n) = gcd(sumdigits(n*(n+1),2),2)-1
 
-add $0,1
-bin $0,2
+fac $0,2
 dgs $0,2
-add $0,1
-mod $0,2
+gcd $0,2
+sub $0,1

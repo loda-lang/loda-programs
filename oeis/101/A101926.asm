@@ -4,10 +4,9 @@
 ; Formula: a(n) = 2*if((2*n-sumdigits(2*n,2))<=(-1),0,2^(2*n-sumdigits(2*n,2)))
 
 mul $0,2
-mov $2,$0
+mov $1,$0
 dgs $0,2
-sub $2,$0
-mov $1,2
-pow $1,$2
-mov $0,$1
+sub $1,$0
+mov $0,2
+pow $0,$1
 mul $0,2

@@ -1,10 +1,9 @@
 ; A020773: Decimal expansion of 1/4.
-; Submitted by vaughan
+; Submitted by loader3229
 ; 2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (min(n+1,3)^2+1)%10
+; Formula: a(n) = floor(if(bitxor(min(n,2),10)==0,0,bitxor(min(n,2),10)/(2^valuation(bitxor(min(n,2),10),2)))/2)
 
-add $0,1
-min $0,3
-pow $0,2
-add $0,1
-mod $0,10
+min $0,2
+bxo $0,10
+dir $0,2
+div $0,2

@@ -1,7 +1,6 @@
 ; A130543: Multiplicative persistence of n!.
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = min(floor(n/4),1)
+; Formula: a(n) = n>=4
 
-div $0,4
-min $0,1
+geq $0,4

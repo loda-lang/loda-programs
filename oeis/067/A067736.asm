@@ -1,30 +1,27 @@
 ; A067736: Decimal expansion of exp(3/2).
-; Submitted by BrandyNOW
+; Submitted by Science United
 ; 4,4,8,1,6,8,9,0,7,0,3,3,8,0,6,4,8,2,2,6,0,2,0,5,5,4,6,0,1,1,9,2,7,5,8,1,9,0,0,5,7,4,9,8,6,8,3,6,9,6,6,7,0,5,6,7,7,2,6,5,0,0,8,2,7,8,5,9,3,6,6,7,4,4,6,6,7,1,3,7
 
 #offset 1
 
-add $0,2
 mov $3,$0
-mul $3,3
+mul $3,7
 lpb $3
-  mov $5,$3
-  mul $5,2
-  mul $2,$5
-  add $2,$5
-  add $1,$2
-  div $1,$0
-  div $2,$0
+  max $3,1
+  max $6,$2
+  div $6,$3
   sub $3,1
+  add $5,$6
+  mul $1,2
+  add $1,$3
+  add $4,$5
+  add $2,$1
+  sub $2,$4
 lpe
-gcd $5,3
-add $5,2
 mov $4,10
 pow $4,$0
-mul $2,10
-pow $2,$5
 div $2,$4
-pow $1,$5
+div $1,5
 div $1,$2
 mov $0,$1
 mod $0,10

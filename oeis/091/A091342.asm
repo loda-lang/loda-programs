@@ -1,18 +1,18 @@
 ; A091342: Given (1) f(h,j,a) = ( [ ((a/gcd(a,h)) / gcd(j+1,(a/gcd(a,h)))) * (h(j+1)) ] - [ ((a/gcd(a,h)) / gcd(j+1,(a/gcd(a,h)))) * (ja) ] ) / a then let (2) a(h) = d(h,j) = lcm( f(h,j,1) ... f(h,j,h) ).
-; Submitted by DukeBox
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,3,10,105,252,2310,25740,45045,680680,11639628,10581480,223092870,1029659400,2868336900,77636318760,4512611027925,4247163320400,4011209802600,140603459396400,133573286426580,5215718803323600
+; Formula: a(n) = b(2*n), b(n) = if(gcd(b(n-1),n)==0,c(n-1),if((c(n-1)%gcd(b(n-1),n))==0,c(n-1)/gcd(b(n-1),n),c(n-1))), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = n*if(gcd(b(n-1),n)==0,c(n-1),if((c(n-1)%gcd(b(n-1),n))==0,c(n-1)/gcd(b(n-1),n),c(n-1))), c(2) = 2, c(1) = 1, c(0) = 1
 
 #offset 1
 
-mov $1,1
 mov $3,1
 mul $0,2
 lpb $0
   sub $0,1
+  add $1,1
   gcd $2,$1
   dif $3,$2
   mov $2,$3
   mul $3,$1
-  add $1,1
 lpe
 mov $0,$2

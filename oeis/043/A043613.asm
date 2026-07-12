@@ -1,26 +1,25 @@
 ; A043613: Numbers whose base-6 representation has exactly 5 runs.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1333,1334,1335,1336,1337,1344,1345,1347,1348,1349,1350,1351,1352,1354,1355,1356,1357,1358,1359,1361,1362,1363,1364,1365,1366,1369,1370,1371,1372,1373,1374,1376,1377,1378,1379,1386
 
 #offset 1
 
-sub $0,1
-mov $1,1
-mov $2,$0
-add $2,7
-pow $2,2
+mul $0,5
+sub $0,30517578129
+div $0,5
+mov $2,6103515625
 lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,44946 ; Runs of odd length in the base 6 representation of n.
-  trn $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  max $2,1
+  mov $3,$0
+  div $3,$2
+  mov $5,$3
+  geq $5,$4
+  mod $0,$2
+  div $2,5
+  add $3,$5
+  mov $4,$3
+  mul $1,6
+  add $1,$3
 lpe
 mov $0,$1
-add $0,1297
+sub $0,17911807604

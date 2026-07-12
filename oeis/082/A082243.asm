@@ -5,48 +5,46 @@
 #offset 1
 
 sub $0,1
-mov $2,$0
-mov $4,1816
-lpb $4
-  sub $4,24
-  mov $5,$3
-  add $5,1
-  mov $8,$3
-  add $8,2
-  mov $1,$8
-  log $8,10
-  add $8,1
-  mov $9,10
-  pow $9,$8
-  mul $5,$9
-  add $5,$1
-  mov $8,$1
-  add $8,1
-  mov $1,$8
-  log $8,10
-  add $8,1
-  mov $9,10
-  pow $9,$8
-  mul $5,$9
-  add $5,$1
-  mov $8,$1
-  add $8,1
-  mov $1,$8
-  log $8,10
-  add $8,1
-  mov $9,10
-  pow $9,$8
-  mul $5,$9
-  add $5,$1
-  mov $7,$5
-  gcd $5,4
-  equ $5,4
-  sub $2,$5
-  add $3,2
-  mov $6,$2
-  max $6,0
-  equ $6,$2
-  mul $4,$6
+mov $1,$0
+mov $3,1816
+lpb $3
+  sub $3,24
+  mov $4,$2
+  add $4,1
+  mov $7,$2
+  add $7,2
+  mov $9,$7
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $4,$8
+  add $4,$9
+  add $9,1
+  mov $7,$9
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $4,$8
+  add $4,$9
+  add $9,1
+  mov $7,$9
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $4,$8
+  add $4,$9
+  mov $6,$4
+  gcd $4,4
+  equ $4,4
+  sub $1,$4
+  add $2,2
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
 lpe
-mov $0,$7
+mov $0,$6
 div $0,4

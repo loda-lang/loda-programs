@@ -1,11 +1,9 @@
 ; A018387: Divisors of 312.
-; Submitted by arkiss
+; Submitted by fzs600
 ; 1,2,3,4,6,8,12,13,24,26,39,52,78,104,156,312
 
 #offset 1
 
-mov $2,1
-sub $0,1
 lpb $0
   sub $1,8
   mov $3,$2

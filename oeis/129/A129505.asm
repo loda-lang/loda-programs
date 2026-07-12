@@ -1,10 +1,25 @@
 ; A129505: Number of permutations of 2n-1 objects with exactly n cycles.
-; Submitted by Andrey
+; Submitted by Science United
 ; 1,3,35,735,22449,902055,44990231,2681453775,185953177553,14710753408923,1307535010540395,129006659818331295,13990945200239106865,1654339178844590073615,211821088794711294496815,29197210605623737977801375,4310704065427058593776844065,678699133190453314288471012275,113513133914533290023234311442675,20098472063149311215997537477144735,3755749687955610546382544532568019569,738671248537523328596759491329962049207,152527096775074238949473991364427574196935,32991668904459577515864910533133462432554735
-; Formula: a(n) = A130534(4*binomial(n,2))
 
 #offset 1
 
-bin $0,2
-mul $0,4
-seq $0,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+mov $3,$0
+mul $0,2
+sub $0,1
+mov $2,$0
+bin $2,2
+add $2,$0
+add $2,$3
+lpb $3
+  sub $3,1
+  add $3,$4
+  mov $1,$2
+  seq $1,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $1,5
+  gcd $1,0
+  div $1,5
+  mod $2,2
+  add $4,$0
+lpe
+mov $0,$1
