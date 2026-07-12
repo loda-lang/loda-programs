@@ -1,12 +1,9 @@
 ; A329509: Expansion of (1 + x)*(1 + x + x^2 - x^3) / (1 - x).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,3,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
-; Formula: a(n) = -10*truncate((binomial(n-2,(n-2)^4)+4)/10)+binomial(n-2,(n-2)^4)+4
+; Formula: a(n) = if((min(n,4)*(min(n,4)+1)*(min(n,4)+2)*(min(n,4)+3)*(min(n,4)+4)*(min(n,4)+5)*(min(n,4)+6)*(min(n,4)+7))==0,0,valuation(min(n,4)*(min(n,4)+1)*(min(n,4)+2)*(min(n,4)+3)*(min(n,4)+4)*(min(n,4)+5)*(min(n,4)+6)*(min(n,4)+7),3))+1
 
-sub $0,2
-mov $1,$0
-pow $0,4
-bin $1,$0
-mov $0,$1
-add $0,4
-mod $0,10
+min $0,4
+fac $0,8
+lex $0,3
+add $0,1

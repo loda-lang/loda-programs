@@ -1,10 +1,8 @@
 ; A186181: Period 4 sequence [ 2, 2, 3, 2, ...] except a(0) = 1.
-; Submitted by UBT - Mikeejones
+; Submitted by loader3229
 ; 1,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2
-; Formula: a(n) = gcd(truncate((n-1)/2),n)+1
+; Formula: a(n) = sign(bitxor(gcd(n,1228),40000))*((bitxor(gcd(n,1228),40000)-1)%3+1)
 
-mov $1,$0
-sub $0,1
-div $0,2
-gcd $0,$1
-add $0,1
+gcd $0,1228
+bxo $0,40000
+dgr $0,4

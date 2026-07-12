@@ -1,5 +1,5 @@
 ; A354292: Primes p such that for all m, M(m) is not divisible by p^2 where M(n) is the n-th Motzkin number A001006.
-; Submitted by Stony666
+; Submitted by abr00
 ; 5,13,31,37,61,79,97,103
 
 #offset 1
@@ -7,16 +7,15 @@
 sub $0,1
 mov $1,$0
 lpb $0
-  mov $3,$0
-  lpb $3
-    pow $3,2
+  mov $2,$0
+  lpb $2
+    pow $2,2
+    sub $2,1
     mul $1,3
-    equ $2,0
-    sub $3,$2
   lpe
   div $0,2
-  lpb $3
-    div $3,5
+  lpb $2
+    div $2,5
     add $1,$0
   lpe
   add $1,1

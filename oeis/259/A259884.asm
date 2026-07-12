@@ -12,14 +12,9 @@ lpb $0
   add $2,1
   dir $2,2
   div $2,2
-  mov $7,-1
-  pow $7,$2
   mul $2,2
   add $2,1
   seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
-  mul $7,$2
-  mov $2,$7
-  gcd $2,$2
   mul $2,2
   sub $2,1
   sub $2,$6

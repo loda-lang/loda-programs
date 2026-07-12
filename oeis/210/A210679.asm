@@ -1,9 +1,60 @@
 ; A210679: Number of distinct prime factors <= 7 of n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,1,1,1,2,1,1,1,2,0,2,0,2,2,1,0,2,0,2,2,1,0,2,1,1,1,2,0,3,0,1,1,1,2,2,0,1,1,2,0,3,0,1,2,1,0,2,1,2,1,1,0,2,1,2,1,1,0,3,0,1,2,1,1,2,0,1,1,3,0,2,0,1,2,1,1,2,0,2
-; Formula: a(n) = A001222(gcd(n,210))
 
 #offset 1
 
-gcd $0,210
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+sub $0,1
+mov $2,1
+fil $2,4
+mov $6,2
+mov $7,1
+fil $7,3
+mov $10,2
+mov $12,2
+mov $14,2
+mov $15,2
+lpb $0
+  mul $1,-3
+  rol $1,15
+  mov $16,$1
+  mul $16,-8
+  add $15,$16
+  mov $16,$2
+  mul $16,-12
+  add $15,$16
+  mov $16,$3
+  mul $16,-13
+  add $15,$16
+  mov $16,$4
+  mul $16,-12
+  add $15,$16
+  add $15,$5
+  mov $16,$6
+  mul $16,-4
+  add $15,$16
+  mov $16,$7
+  mul $16,3
+  add $15,$16
+  mov $16,$8
+  mul $16,9
+  add $15,$16
+  mov $16,$9
+  mul $16,12
+  add $15,$16
+  mov $16,$10
+  mul $16,13
+  add $15,$16
+  mov $16,$11
+  mul $16,12
+  add $15,$16
+  mov $16,$12
+  mul $16,9
+  add $15,$16
+  mov $16,$13
+  mul $16,4
+  sub $0,1
+  add $15,$16
+lpe
+mov $0,$1
+mod $0,10

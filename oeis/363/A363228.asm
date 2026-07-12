@@ -1,11 +1,10 @@
 ; A363228: Exponent of 4 in 9^n - 1.
-; Submitted by Fiskinge
+; Submitted by loader3229
 ; 1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,4,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,4,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,3
-; Formula: a(n) = valuation(8*n,4)
+; Formula: a(n) = valuation(26*n,4)+1
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-lex $1,4
-mov $0,$1
+mul $0,26
+lex $0,4
+add $0,1

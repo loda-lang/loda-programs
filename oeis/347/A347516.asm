@@ -13,7 +13,7 @@ lpb $0
   add $3,$2
   equ $3,$2
   lpb $3
-    mul $3,0
+    mov $3,0
     add $1,1
   lpe
   sub $0,1

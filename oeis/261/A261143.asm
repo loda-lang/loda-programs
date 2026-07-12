@@ -1,9 +1,8 @@
 ; A261143: a(n) = H_n(1,2) where H_n is the n-th hyperoperator.
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 3,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -max(min(n,3)-1,0)+3
+; Formula: a(n) = bitxor(min(max(n-1,0),2),3)
 
-min $0,3
 trn $0,1
-mul $0,-1
-add $0,3
+min $0,2
+bxo $0,3

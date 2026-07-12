@@ -1,14 +1,10 @@
 ; A275019: 2-adic valuation of tetrahedral numbers C(n+2,3) = n(n+1)(n+2)/6 = A000292(n).
-; Submitted by Jamie Morken(s4)
+; Submitted by loader3229
 ; 0,2,1,2,0,3,2,3,0,2,1,2,0,4,3,4,0,2,1,2,0,3,2,3,0,2,1,2,0,5,4,5,0,2,1,2,0,3,2,3,0,2,1,2,0,4,3,4,0,2,1,2,0,3,2,3,0,2,1,2,0,6,5,6,0,2,1,2,0,3,2,3,0,2,1,2,0,4,3,4
+; Formula: a(n) = valuation(n*(n+1)*(n+2),2)-1
 
 #offset 1
 
-add $0,2
-bin $0,3
-lpb $0
-  dif $0,2
-  add $1,6
-lpe
-mov $0,$1
-div $0,6
+fac $0,3
+lex $0,2
+sub $0,1

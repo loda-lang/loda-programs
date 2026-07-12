@@ -1,21 +1,17 @@
 ; A356139: a(n) = A137804(A001951(n)).
-; Submitted by Stony666
+; Submitted by atannir
 ; 2,4,8,10,14,16,18,23,25,29,31,33,37,39,43,46,50,52,54,58,60,64,67,69,73,75,79,81,85,87,90,94,96,100,102,104,108,110,115,117,119,123,125,129,131,136,138,140,144,146,150,152,154,159,161,165,167,171,173
-; Formula: a(n) = 2*sqrtint(2*n^2)+truncate(sqrtint(2*sqrtint(2*n^2)^2)/15)
+; Formula: a(n) = 2*sqrtint(2*n^2)+floor(sqrtint(2*sqrtint(2*n^2)^2)/15)
 
 #offset 1
 
 pow $0,2
 mul $0,2
-mov $3,$0
-nrt $3,2
-mov $1,$3
+nrt $0,2
+mov $1,$0
 mul $1,2
-mov $0,$3
 pow $0,2
 mul $0,2
-mov $2,$0
-nrt $2,2
-mov $0,$2
+nrt $0,2
 div $0,15
 add $0,$1

@@ -14,7 +14,9 @@ lpb $4
   bin $1,$0
   mul $0,2
   mov $5,$0
-  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $6,0
+  sub $6,$0
+  fac $0,$6
   seq $5,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
   div $5,$0
   mul $1,$5

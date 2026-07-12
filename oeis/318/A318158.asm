@@ -11,5 +11,5 @@ lpb $0
   div $0,$1
   add $0,$1
 lpe
-add $0,19
+add $0,20
 seq $0,140475 ; 1 along with primes greater than 3.

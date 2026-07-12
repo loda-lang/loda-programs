@@ -1,19 +1,29 @@
 ; A163631: Partial sums of the odd nonprimes, A014076.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,10,25,46,71,98,131,166,205,250,299,350,405,462,525,590,659,734,811,892,977,1064,1155,1248,1343,1442,1547,1658,1773,1890,2009,2130,2253,2378,2507,2640,2775,2916,3059,3204,3351,3504,3659,3818,3979,4144,4313,4484,4659,4836,5019,5204,5391,5580,5775,5976,6179,6384,6591,6800,7013,7228,7445,7664,7885,8110,8341,8576,8813,9056,9301,9548,9797,10050,10305,10564,10825,11090,11357,11630
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A007921(max(n-1,0)+1)+2, b(0) = 1
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  mov $2,$0
-  trn $2,1
-  add $2,1
-  seq $2,7921 ; Numbers that are not the difference of two primes.
-  add $2,2
-  sub $0,1
-  add $1,$2
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $5,$1
+  add $5,1
+  seq $5,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+  add $6,$0
+  mov $3,$1
+  sub $3,$5
+  trn $3,1
+  add $3,$4
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$1
+mov $0,$6

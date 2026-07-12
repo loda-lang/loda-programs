@@ -1,17 +1,36 @@
 ; A166139: Triangle T(n,k) read by rows. A080305(A126988(n,k)) if k|n, 0 otherwise.
-; Submitted by Roadranner
+; Submitted by iBezanilla
 ; 1,2,1,3,0,1,1,2,0,1,5,0,0,0,1,1,3,2,0,0,1,7,0,0,0,0,0,1,1,1,0,2,0,0,0,1,1,0,3,0,0,0,0,0,1,1,5,0,0,2,0,0,0,0,1,11,0,0,0,0,0,0,0,0,0,1,1,1,1,3,0,2,0,0,0,0,0,1,13,0
 
 #offset 1
 
-seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+mov $5,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
+mov $4,$0
+bin $0,2
+sub $5,$0
+mov $7,$4
+div $7,$5
+mov $6,$4
+mod $6,$5
+equ $6,0
+mul $6,$7
+mov $0,$6
 mul $0,2
 sub $0,1
 lpb $0
   div $0,2
-  mov $1,$0
-  add $1,1
-  seq $1,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  mov $8,$0
+  add $8,1
+  mov $2,1
+  fac $2,$0
+  mov $3,$2
+  add $3,1
+  gcd $8,$3
   mov $0,0
+  mov $1,$8
 lpe
 mov $0,$1

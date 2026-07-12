@@ -1,14 +1,31 @@
 ; A396891: Convolution of A001157 and A000219.
-; Submitted by ChelseaOilman
+; Submitted by Sempre
 ; 0,1,6,18,52,120,288,602,1280,2538,5000,9449,17748,32305,58338,103185,180752,311678,532818,899270,1505560,2494674,4102450,6688009,10828656,17400825,27787370,44081766,69530552,109028748,170068890,263881579,407469728,626174109,957982470,1459186610
 
-mov $2,$0
-mov $3,1
-lpb $3
-  sub $3,1
-  mov $0,$2
-  seq $0,219 ; Number of plane partitions (or planar partitions) of n.
-  mov $1,$2
-  mul $1,$0
+mov $2,1
+mov $10,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    mov $7,$4
+    add $7,1
+    seq $7,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+    mov $9,10
+    add $9,$5
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,$2
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-mov $0,$1
+mul $6,$5
+mov $0,$6

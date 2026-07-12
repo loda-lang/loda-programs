@@ -1,5 +1,5 @@
 ; A309965: a(n) is the greatest product of the digits of n in any base b in the range 2..n.
-; Submitted by Science United
+; Submitted by GPV67
 ; 0,1,1,2,2,3,4,4,4,6,5,6,8,9,8,10,9,12,12,10,12,15,16,14,16,18,16,20,18,21,20,20,24,25,20,22,24,28,25,30,27,30,32,27,30,35,36,36,33,36,35,40,40,42,36,36,40,45,36,42,48,49,48,50,45,48,48,54,50,56,48,52,56,54,60,60,56,63,64,55
 
 #offset 2
@@ -7,14 +7,12 @@
 mov $4,$0
 lpb $4
   max $4,1
-  gcd $1,$5
-  mul $1,$0
+  mov $1,$0
   div $1,$4
   mov $2,$0
   mod $2,$4
   mul $2,$1
   max $3,$2
   sub $4,1
-  mov $5,1
 lpe
 mov $0,$3

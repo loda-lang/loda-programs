@@ -16,11 +16,8 @@ lpb $2
   seq $6,64988 ; Multiplicative with a(p^e) = prime(p)^e.
   mov $7,$3
   div $7,$6
-  sub $3,1
-  mov $3,$7
   mov $5,1
   bin $5,$7
-  mul $7,2
   sub $0,$5
   add $1,1
   mov $4,$0

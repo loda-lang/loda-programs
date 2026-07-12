@@ -1,10 +1,9 @@
 ; A356037: Conjecturally, a(n) is the smallest number m such that every natural number is a sum of at most m n-simplex numbers.
-; Submitted by Geoff
+; Submitted by Supericent
 ; 1,3,5,8,10,13,15,15,19,25
 
 #offset 1
 
-sub $0,1
 mov $1,1
 mov $8,1
 fil $8,7
@@ -20,4 +19,4 @@ lpb $0
   add $14,$7
   sub $0,1
 lpe
-mov $0,$14
+mov $0,$13

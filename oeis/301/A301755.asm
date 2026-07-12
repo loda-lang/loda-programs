@@ -1,11 +1,10 @@
 ; A301755: Decimal expansion of 3/8.
-; Submitted by Science United
+; Submitted by loader3229
 ; 3,7,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = floor((15*2^n)/4)%10
+; Formula: a(n) = (sumdigits(min(n,3)*(min(n,3)+1)*(min(n,3)+2)*(min(n,3)+3),50)+3)%10
 
-mov $1,2
-pow $1,$0
-mov $0,$1
-mul $0,15
-div $0,4
+min $0,3
+fac $0,4
+dgs $0,50
+add $0,3
 mod $0,10

@@ -1,21 +1,15 @@
 ; A158572: a(n) = A007814((2n-1)!! - 1).
-; Submitted by ckrause
+; Submitted by Shanman Racing
 ; 1,1,3,4,1,1,4,5,1,1,3,4,1,1,5,6,1,1,3,4,1,1,4,5,1,1,3,4,1,1,6,7,1,1,3,4,1,1,4,5,1,1,3,4,1,1,5,6,1,1,3,4,1,1,4,5,1,1,3,4,1,1,7,8,1,1,3,4,1,1,4,5,1,1,3,4,1,1,5,6
+; Formula: a(n) = if((floor(n/2)*(2*n-6))==0,0,if((gcd(floor(n/2),2)^2)<=1,0,valuation(floor(n/2)*(2*n-6),gcd(floor(n/2),2))))+1
 
 #offset 2
 
-sub $0,2
-mov $2,$0
-gcd $2,2
-add $0,1
-div $0,2
-add $0,$2
-lpb $0
-  add $0,1
-  dif $0,2
-  sub $2,1
-  mov $1,3
-  sub $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+div $1,2
+mul $0,2
+sub $0,6
+mul $0,$1
+gcd $1,2
+lex $0,$1
 add $0,1

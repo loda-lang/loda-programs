@@ -1,13 +1,18 @@
 ; A270362: Running maxima of Stern's diatomic sequence.
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 0,1,1,2,2,3,3,3,3,4,4,5,5,5,5,5,5,5,5,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,11,11,11,11,11,11,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,14,14,14,14,15,15,18,18,18,18,18
-; Formula: a(n) = max(a(n-1),A002487(n)), a(0) = 0
+; Formula: a(n) = max(a(n-1),b(n-1)), a(2) = 1, a(1) = 1, a(0) = 0, b(n) = 2*truncate(b(n-2)/b(n-1))*b(n-1)-b(n-2)+b(n-1), b(2) = 2, b(1) = 1, b(0) = 1
 
+mov $2,1
 lpb $0
-  mov $3,$0
   sub $0,1
-  mov $1,$3
-  seq $1,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
-  max $2,$1
+  mov $3,$1
+  mod $3,$2
+  mul $3,-2
+  add $3,$1
+  add $3,$2
+  max $4,$2
+  mov $1,$2
+  mov $2,$3
 lpe
-mov $0,$2
+mov $0,$4

@@ -13,8 +13,6 @@ mov $2,$1
 nrt $2,2
 pow $0,2
 mul $0,2
-mov $3,$0
-nrt $3,2
-mov $0,$3
+nrt $0,2
 add $0,$2
 mod $0,2

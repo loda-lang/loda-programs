@@ -1,10 +1,8 @@
 ; A359738: a(n) = [x^n] (2*x^4 + 2*x^3 + 2*x^2 + x + 1)/(x^2 + 1).
-; Submitted by omegaintellisys
+; Submitted by loader3229
 ; 1,1,1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,-1
-; Formula: a(n) = (-1)^max(binomial(-n,2),10)
+; Formula: a(n) = if(bitor(max(n-3,0),-3)==0,0,if((bitor(max(n-3,0),-3)^2)<=1,bitor(max(n-3,0),-3),bitor(max(n-3,0),-3)/(bitor(max(n-3,0),-3)^valuation(bitor(max(n-3,0),-3),bitor(max(n-3,0),-3)))))
 
-sub $1,$0
-bin $1,2
-max $1,10
-mov $0,-1
-pow $0,$1
+trn $0,3
+bor $0,-3
+dir $0,$0

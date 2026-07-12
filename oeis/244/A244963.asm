@@ -17,4 +17,3 @@ seq $3,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(
 mul $3,$2
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,$3
-mov $1,$3

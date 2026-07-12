@@ -1,16 +1,13 @@
 ; A160181: Number of partitions of sets containing from 0 to n elements into blocks of at least 2 elements.
-; Submitted by pm120
-; 1,1,2,3,7,18,59,221,936,4361,22083,120336,700653,4333933,28345090,195233255,1411303635,10675375402,84276173439,692752181561,5917018378496,52416910416933,480786834535247,4559132648864256
+; Submitted by Science United
+; 1,1,2,3,7,18,59,221,936,4361,22083,120336,700653,4333933,28345090,195233255,1411303635,10675375402,84276173439,692752181561,5917018378496,52416910416933,480786834535247,4559132648864256,44632792689619593,450518001943669545,4683223124919618946
 
-mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  mod $0,110
-  seq $0,296 ; Set partitions without singletons: number of partitions of an n-set into blocks of size > 1. Also number of cyclically spaced (or feasible) partitions.
-  add $2,$0
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1
+add $0,1

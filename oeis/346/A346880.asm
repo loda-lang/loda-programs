@@ -1,17 +1,15 @@
 ; A346880: Sum of the divisors, except the smallest and the largest, of the n-th positive even number.
-; Submitted by Science United
+; Submitted by Chad To
 ; 0,2,5,6,7,15,9,14,20,21,13,35,15,27,41,30,19,54,21,49,53,39,25,75,42,45,65,63,31,107,33,62,77,57,73,122,39,63,89,105,43,139,45,91,143,75,49,155,72,116,113,105,55,171,105,135,125,93,61,239,63,99,185,126,121
+; Formula: a(n) = truncate((A062967(2*n)+1)/2)-1
 
 #offset 1
 
-lpb $0
-  mov $3,$2
-  gcd $3,$0
-  equ $3,$0
-  mul $3,$0
-  sub $0,1
-  add $1,$3
-  sub $2,2
-lpe
-mov $0,$1
+mov $1,$0
+mul $1,2
+seq $1,62967 ; a(n) = 2*(sigma(n)-n-1)+1, where sigma = A000203, sum of divisors of n.
+mov $2,1
+add $2,$1
+mov $0,$2
+div $0,2
 sub $0,1

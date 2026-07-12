@@ -1,35 +1,26 @@
 ; A174655: Partial sums of A049486.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by [SG]ATA-Rolf
 ; 1,5,15,36,70,123,197,298,428,593,795,1040,1330,1671,2065,2518,3032,3613,4263,4988,5790,6675,7645,8706,9860,11113,12467,13928,15498,17183,18985,20910,22960,25141,27455,29908,32502,35243,38133,41178,44380
 
 #offset 1
 
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,0
-  sub $0,$2
-  mov $7,$0
-  mul $7,$0
-  mov $6,$7
-  equ $6,0
-  mov $4,$7
-  add $4,$6
-  mov $0,$7
-  div $0,$4
-  mov $3,$0
-  mul $3,2
-  add $0,$4
+sub $0,1
+mov $5,$0
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$5
+  sub $0,$3
   mov $1,$0
-  lpb $0
-    mod $0,3
-    add $1,1
-  lpe
-  mov $0,$7
-  lpb $0
-    trn $0,2
-    add $1,$3
-  lpe
-  add $5,$1
+  mov $2,1
+  add $2,$0
+  add $0,$2
+  mul $0,$1
+  gcd $2,2
+  trn $1,$2
+  sub $0,$1
+  add $0,1
+  add $4,$0
 lpe
-mov $0,$5
+mov $0,$4

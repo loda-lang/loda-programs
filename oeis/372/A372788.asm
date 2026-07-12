@@ -1,9 +1,15 @@
 ; A372788: a(n) = tau(8*n) = A000005(8*n).
-; Submitted by omegaintellisys
+; Submitted by Science United
 ; 4,5,8,6,8,10,8,7,12,10,8,12,8,10,16,8,8,15,8,12,16,10,8,14,12,10,16,12,8,20,8,9,16,10,16,18,8,10,16,14,8,20,8,12,24,10,8,16,12,15,16,12,8,20,16,14,16,10,8,24,8,10,24,10,16,20,8,12,16,20,8,21
-; Formula: a(n) = A000005(8*n)
+; Formula: a(n) = A000005(8*min(n-1,98)+8)
 
 #offset 1
 
-mul $0,8
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+sub $0,1
+min $0,98
+mov $1,$0
+add $1,1
+mul $1,8
+mov $2,$1
+seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $0,$2

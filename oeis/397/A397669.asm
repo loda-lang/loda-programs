@@ -4,7 +4,6 @@
 ; Formula: a(n) = binomial(3*n-4,n)
 
 mov $1,$0
-mul $1,3
-sub $1,4
-bin $1,$0
-mov $0,$1
+mul $0,3
+sub $0,4
+bin $0,$1

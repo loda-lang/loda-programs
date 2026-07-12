@@ -1,26 +1,20 @@
 ; A292151: Orphelins (orphans): Numbers in two disjoint sectors of the Roulette wheel addressed by an announced bet in European (French) Roulette.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,6,9,14,17,20,31,34
+; Formula: a(n) = 3*n+2*((n-1)!=0)+2*max(4*floor((n-1)/3)-3,0)-2
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-mov $4,$0
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mov $1,$0
-  add $0,$1
-  lpb $0
-    sub $1,1
-    gcd $1,$0
-    trn $0,7
-  lpe
-  mov $0,$1
-  mul $0,2
-  add $0,1
-  add $3,$0
-lpe
-mov $0,$3
+mov $2,$0
+neq $2,0
+mul $2,2
+add $2,1
+mov $1,$0
+div $1,3
+mul $1,4
+trn $1,3
+mul $1,2
+mul $0,3
+add $0,$1
+add $0,$2

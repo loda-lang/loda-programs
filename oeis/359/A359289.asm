@@ -1,5 +1,5 @@
 ; A359289: Number of divisors of 4*n-2 of form 4*k+1.
-; Submitted by MASTERBLASTER
+; Submitted by Science United
 ; 1,1,2,1,2,1,2,2,2,1,2,1,3,2,2,1,2,2,2,2,2,1,4,1,2,2,2,2,2,1,2,3,4,1,2,1,2,3,2,1,3,1,4,2,2,2,2,2,2,3,2,1,4,1,2,2,2,2,4,2,2,2,4,1,2,1,2,4,2,1,2,2,4,3,2,1,4,2,2,2
 
 #offset 1
@@ -8,12 +8,11 @@ mov $1,1
 mov $2,1
 lpb $0
   sub $0,$2
+  mov $2,2
   mov $3,$0
   gcd $3,$1
   div $3,$1
   add $4,$3
   add $1,4
-  add $2,3
-  div $2,2
 lpe
 mov $0,$4

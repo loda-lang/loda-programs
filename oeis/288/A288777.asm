@@ -9,8 +9,7 @@ mul $2,8
 nrt $2,2
 sub $2,1
 div $2,2
-mov $1,$2
-add $1,1
+sub $1,$2
 bin $1,2
 sub $0,$1
 add $2,2

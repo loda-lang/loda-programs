@@ -1,12 +1,11 @@
 ; A360172: Sequences of length n in [n] not starting with their minimum value.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by odontojeter
 ; 0,1,13,156,2146,34455,638723,13479760,319689156,8425695015,244459904085,7745416087332,266155064108662,9860698167427471,391859875043125895
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 lpb $0
   mov $3,$0
   pow $3,$2

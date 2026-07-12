@@ -7,10 +7,8 @@ add $5,1
 lpb $5
   sub $5,1
   mov $1,$3
-  add $1,$0
   add $1,$5
-  mul $1,3
-  sub $1,1
+  mul $1,6
   bin $1,$3
   sub $1,$4
   add $3,1
@@ -18,4 +16,4 @@ lpb $5
   add $4,$2
   mov $2,$1
 lpe
-mov $0,$4
+mov $0,$1

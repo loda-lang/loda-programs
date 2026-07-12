@@ -1,22 +1,19 @@
 ; A200613: Number of quasi-abelian ideals in the affine Lie algebra sl_n^{hat}.
-; Submitted by Jamie Morken(w4)
+; Submitted by Science United
 ; 1,3,11,44,183,774,3294,14034,59711,253430,1072506,4525168,19036726,79861404,334155036,1394789214,5808981711,24143440374,100156051746,414762312504,1714844273586,7079573497524,29187378344676,120180109515204,494264431607718,2030539136846844
+; Formula: a(n) = truncate((binomial(2*n,n)*(n+4)-6*4^(n-1))/4)
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  mul $1,2
-  sub $1,$4
-  mov $2,2
-  mul $2,$0
-  add $2,$4
-  bin $2,$0
-  mov $3,-2
-  bin $3,$1
-  mul $3,$2
-  mov $1,1
-  add $4,2
-  add $5,$3
-lpe
-mov $0,$5
+sub $0,1
+mov $1,4
+pow $1,$0
+mul $1,6
+add $0,1
+mov $2,$0
+mul $2,2
+bin $2,$0
+add $0,4
+mul $0,$2
+sub $0,$1
+div $0,4

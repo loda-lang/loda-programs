@@ -1,5 +1,5 @@
 ; A256280: Expansion of phi(q^3)^4 / (phi(q) * phi(q^9)) in powers of q where phi() is a Ramanujan theta function.
-; Submitted by Simon Strandgaard
+; Submitted by Zafford
 ; 1,-2,4,0,-2,8,0,0,4,4,-4,0,0,-4,0,0,-2,8,4,0,8,0,0,0,0,-6,8,0,0,8,0,0,4,0,-4,0,4,-4,0,0,-4,8,0,0,0,8,0,0,0,-2,12,0,-4,8,0,0,0,0,-4,0,0,-4,0,0,-2,16,0,0,8,0,0,0,4,-4,8,0,0,0,0,0
 
 mov $1,-1
@@ -23,9 +23,9 @@ mov $7,$0
 add $7,1
 mov $16,$7
 lex $16,2
-mov $17,2
-pow $17,$16
-div $7,$17
+mov $14,2
+pow $14,$16
+div $7,$14
 div $7,2
 mov $8,-1
 pow $8,$7
@@ -45,9 +45,7 @@ lpb $7
   mov $15,$11
   nrt $15,2
   add $11,2
-  mov $14,$11
-  nrt $14,2
-  mov $11,$14
+  nrt $11,2
   add $11,$15
   mod $11,2
   mov $12,2

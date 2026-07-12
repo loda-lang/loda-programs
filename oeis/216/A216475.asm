@@ -5,9 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,3
+sub $2,1
+add $0,2
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,1
 gcd $1,$2

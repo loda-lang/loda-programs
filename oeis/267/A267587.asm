@@ -1,10 +1,8 @@
 ; A267587: Middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate((truncate(n^(-n+4))+1)/2)+truncate(n^(-n+4))+1
+; Formula: a(n) = if(bitxor(n-3,1)==0,0,if((bitxor(n-3,1)^2)<=1,0,valuation(bitxor(n-3,1),bitxor(n-3,1))))
 
-mov $1,4
-sub $1,$0
-pow $0,$1
-add $0,1
-mod $0,2
+sub $0,3
+bxo $0,1
+lex $0,$0

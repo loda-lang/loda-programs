@@ -1,14 +1,13 @@
 ; A160419: a(n) = A160409(n+2)/2.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 1,2,2,2,2,2,4,8
-; Formula: a(n) = truncate((2^(n-1)-17)/16)+2
+; Formula: a(n) = if((n-9)==0,-8,if(((-8)%(n-9))==0,(-8)/(n-9),-8))-10*truncate((if((n-9)==0,-8,if(((-8)%(n-9))==0,(-8)/(n-9),-8))+10)/10)+10
 
 #offset 1
 
-sub $0,1
-mov $1,2
-pow $1,$0
+sub $0,9
+mov $1,-8
+dif $1,$0
 mov $0,$1
-sub $0,17
-div $0,16
-add $0,2
+add $0,10
+mod $0,10

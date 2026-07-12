@@ -8,12 +8,11 @@ mul $1,2
 add $1,5
 div $1,11
 mov $3,$0
-mul $3,32
-mov $2,$3
-mul $3,2
+mul $3,64
 add $3,6
 div $3,11
-mul $2,2
+mov $2,$0
+mul $2,64
 sub $2,7
 div $2,11
 add $2,1

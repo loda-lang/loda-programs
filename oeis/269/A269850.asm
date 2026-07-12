@@ -13,6 +13,7 @@ lpb $4
   sub $0,$4
   lpb $0
     mov $2,$0
+    add $2,1
     seq $2,137264 ; Prime number gaps read modulo 3.
     mov $0,0
     add $3,$2

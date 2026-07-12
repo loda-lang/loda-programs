@@ -1,20 +1,24 @@
 ; A263398: Expansion of phi(-x^2)^6 * psi(x^6) / f(x)^2 in powers of x where phi(), psi(), f() are Ramanujan theta functions.
-; Submitted by TheMohawk
+; Submitted by Science United
 ; 1,-2,-7,14,20,-36,-34,40,50,-30,-71,76,82,-144,-98,112,131,-70,-140,170,168,-288,-228,232,246,-120,-290,258,310,-468,-280,344,337,-190,-350,394,412,-648,-510,496,462,-252,-583,558,602,-864,-532,584,664,-350,-574,728,712,-1152,-912,728,836,-390,-994,942,852,-1368,-784,1040,1004,-490,-917,1016,1092,-1692,-1190,1112,1166,-640,-1420,1150,1244,-1908,-1190,1424
 
 add $0,1
+mul $0,3
 lpb $0
-  sub $0,1
-  add $1,2
+  trn $0,1
+  mov $2,$0
+  nrt $2,2
+  pow $2,2
   equ $2,$0
   mul $2,2
-  mov $4,$0
-  equ $4,0
+  mov $5,$0
+  equ $5,0
   mov $3,$1
-  seq $3,245643 ; Expansion of eta(q)^6 * eta(q^2) / eta(q^4)^2 in powers of q.
+  seq $3,96727 ; Expansion of eta(q)^8 / eta(q^2)^4 in powers of q.
   add $1,1
-  sub $2,$4
+  sub $2,$5
   mul $2,$3
+  add $4,$2
 lpe
-mov $0,$2
+mov $0,$4
 div $0,8

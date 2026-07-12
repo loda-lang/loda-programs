@@ -1,42 +1,25 @@
 ; A294159: Alternating row sums of triangle A291844.
-; Submitted by Science United
+; Submitted by johnroyer
 ; 1,1,2,6,18,55,171,538,1708,5461,17560,56728,183973,598597,1953145,6388376,20939664,68764283,226192964,745146462,2458020664,8118111977,26841209903,88835163150,294284206183,975699571009,3237456793478,10749922312752,35718863630895,118757413662397,395072199015947,1315008218925164,4379271622466772,14590938661045027,48636265814533534,162189085740377270,541074599285810352,1805748785727600657,6028558449075054553,20133419714744900690,67260813817751569898,224771014270894869639,751355935157585362108
 
-mov $4,$0
-mov $2,1
-lpb $2
-  sub $2,1
-  mov $7,2
-  lpb $7
-    sub $7,1
-    mov $0,$4
-    add $0,$7
-    mov $3,$0
-    mov $1,2
-    lpb $1
-      sub $1,1
-      pow $2,2
-      sub $3,1
-      gcd $7,2
-      mov $0,$3
-      add $0,$1
-      trn $0,1
-      seq $0,108626 ; Antidiagonal sums of square array A108625, in which row n equals the crystal ball sequence for A_n lattice.
-      mul $0,32
-      add $1,$2
-      add $8,$0
-      add $6,$8
-      sub $6,1
-      mov $5,$1
-      mul $5,$6
-      add $9,$5
-    lpe
-    min $3,1
-    mul $3,$0
-    mov $4,2
-    mov $0,$9
-    sub $0,$3
-  lpe
+mov $3,$0
+mov $5,2
+lpb $5
+  bin $5,$4
+  add $0,$5
+  sub $0,1
+  mov $4,$0
+  max $4,0
+  seq $4,108626 ; Antidiagonal sums of square array A108625, in which row n equals the crystal ball sequence for A_n lattice.
+  mov $2,$5
+  mul $2,$4
+  mul $0,$5
+  sub $0,1
+  add $1,$2
 lpe
-div $0,64
+min $3,1
+mul $3,$4
+sub $1,$3
+mov $0,$1
 add $0,1
+div $0,2

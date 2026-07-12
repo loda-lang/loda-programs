@@ -4,7 +4,6 @@
 
 mul $0,2
 add $0,1
-mov $1,1
 mov $5,$0
 mul $5,2
 nrt $5,2
@@ -23,4 +22,4 @@ lpb $0
   add $1,$4
   add $4,$3
 lpe
-mov $0,$3
+mov $0,$1

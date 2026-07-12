@@ -1,24 +1,22 @@
 ; A289187: The arithmetic function v_1(n,6).
-; Submitted by Science United
+; Submitted by [SG]ATA-Rolf
 ; 1,1,2,1,3,1,4,3,5,2,6,2,7,5,8,3,9,3,10,7,11,4,12,5,13,9,14,5,15,5,16,11,17,7,18,6,19,13,20,7,21,7,22,15,23,8,24,8,25,17,26,9,27,11,28,19,29,10,30,10,31,21,32,13,33,11,34,23,35
 
 #offset 2
 
-sub $0,2
-mov $1,$0
-mov $2,2
-mov $3,4
-lpb $0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    neq $4,0
-    sub $0,1
-    add $2,1
-    sub $3,$4
-  lpe
-  mod $0,-1
-  div $1,$2
+mov $4,$0
+lpb $4
+  max $4,1
+  mov $1,$4
+  add $1,4
+  div $1,6
+  mul $1,$0
+  div $1,$4
+  mov $2,$0
+  mod $2,$4
+  equ $2,0
+  mul $2,$1
+  max $3,$2
+  sub $4,2
 lpe
-mov $0,$1
-add $0,1
+mov $0,$3

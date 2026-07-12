@@ -5,16 +5,14 @@
 add $0,1
 lpb $0
   trn $0,1
-  mov $5,$0
-  mul $5,2
-  add $5,1
-  mov $6,$5
-  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,-1
+  pow $5,$0
+  mov $2,$0
+  seq $2,15128 ; Number of overpartitions of n: an overpartition of n is an ordered sequence of nonincreasing integers that sum to n, where the first occurrence of each integer may be overlined.
   mov $3,$1
-  sub $3,1
-  seq $3,134414 ; Expansion of eta(q)^2 / (eta(q^2) * eta(q^4)^6) in powers of q.
+  seq $3,29841 ; McKay-Thompson series of class 8E for the Monster group.
   add $1,1
-  mov $2,$6
+  mul $2,$5
   mul $2,$3
   add $4,$2
 lpe

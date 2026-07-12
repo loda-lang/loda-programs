@@ -1,18 +1,11 @@
 ; A287576: Start with 0 and repeatedly substitute 0->0321, 1->3210, 2->2103, 3->1032.
-; Submitted by zombie67 [MM]
+; Submitted by loader3229
 ; 0,3,2,1,1,0,3,2,2,1,0,3,3,2,1,0,3,2,1,0,0,3,2,1,1,0,3,2,2,1,0,3,2,1,0,3,3,2,1,0,0,3,2,1,1,0,3,2,1,0,3,2,2,1,0,3,3,2,1,0,0,3,2,1,1,0,3,2,2,1,0,3,3,2,1,0,0,3,2,1
+; Formula: a(n) = bitand(sumdigits(bitxor(n-1,4539),4),3)
 
 #offset 1
 
-mov $3,1
 sub $0,1
-lpb $0
-  mov $2,$0
-  mul $2,3
-  mul $2,$3
-  add $3,2
-  div $0,4
-  add $1,$2
-lpe
-mod $1,4
-mov $0,$1
+bxo $0,4539
+dgs $0,4
+ban $0,3

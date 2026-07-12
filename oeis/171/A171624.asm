@@ -1,11 +1,10 @@
 ; A171624: Floor(n-th nonprime / n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (truncate((n-3)/2)==0)+1
+; Formula: a(n) = gcd(if((n-3)==0,0,if(((n-3)^2)<=1,0,valuation(n-3,n-3))),2)
 
 #offset 1
 
 sub $0,3
-div $0,2
-equ $0,0
-add $0,1
+lex $0,$0
+gcd $0,2

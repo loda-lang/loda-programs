@@ -1,8 +1,7 @@
 ; A179850: Characteristic function of numbers that are congruent to {0, 1, 3, 4} mod 5.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1
-; Formula: a(n) = ((n+3)^4)%5
+; Formula: a(n) = (sign(n)*((n-1)%5+1))!=2
 
-add $0,3
-pow $0,4
-mod $0,5
+dgr $0,6
+neq $0,2

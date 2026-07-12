@@ -6,9 +6,9 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,8410 ; a(0) = 1, a(n) = 480*sigma_7(n).
+  seq $2,4009 ; Expansion of Eisenstein series E_4(q) (alternate convention E_2(q)); theta series of E_8 lattice.
   mov $3,$1
-  seq $3,13974 ; Eisenstein series E_10(q) (alternate convention E_5(q)).
+  seq $3,58550 ; Eisenstein series E_14(q) (alternate convention E_7(q)).
   add $1,1
   mul $2,$3
   add $4,$2
