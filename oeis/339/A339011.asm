@@ -1,0 +1,24 @@
+; A339011: Sum over all partitions of n of the product of the number of parts and the number of distinct parts.
+; Submitted by loader3229
+; 0,1,3,8,17,34,61,107,176,284,442,676,1007,1483,2140,3055,4299,5993,8255,11284,15272,20529,27373,36274,47735,62484,81293,105251,135555,173818,221836,282003,356980,450256,565765,708537,884296,1100287,1364736,1687952,2081724,2560608,3141295,3844260,4692958,5715945,6946024,8422755,10191645,12307297,14832419,17841863,21421675,25673912,30715883,36686179,43743893,52076223,61898014,73460937,87053663,103013281,121725874,143640890,169272782,199218399,234160269,274888215,322304236,377449508,441511956
+
+add $0,2
+lpb $0
+  trn $0,1
+  mov $2,$0
+  add $2,1
+  seq $2,51336 ; Number of increasing arithmetic progressions in {1,2,3,...,n}, including trivial arithmetic progressions of lengths 1 and 2.
+  mov $5,0
+  equ $5,$1
+  mov $6,1
+  equ $6,$1
+  mov $3,$1
+  trn $3,2
+  seq $3,2865 ; Number of partitions of n that do not contain 1 as a part.
+  sub $3,$5
+  sub $3,$6
+  add $1,1
+  mul $2,$3
+  add $4,$2
+lpe
+mov $0,$4
