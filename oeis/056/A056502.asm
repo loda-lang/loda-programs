@@ -1,0 +1,37 @@
+; A056502: Number of primitive (period n) periodic palindromes using exactly six different symbols.
+; Submitted by loader3229
+; 0,0,0,0,0,0,0,0,0,360,720,7920,15120,103320,191520,1048320,1905120,9170280,16435440,72832680,129230640,541129320,953029440,3832179120,6711344640,26192751480,45674188560,174286569240,302899156560,1136022947280,1969147121760,7286642475840,12604139925840,46149478432200,79694820748080,289356777836280,499018753280880,1799697762543240,3100376804661360,11121032936114640,19141689213218880,68360766641556480,117579844328562000,418419070497176760,719258297747860080,2552114120911427160,4384969945980861600
+
+#offset 1
+
+mov $9,$0
+bin $9,2
+add $9,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  add $4,1
+  seq $4,56492 ; Number of periodic palindromes using exactly six different symbols.
+  mov $5,$2
+  add $5,$9
+  mov $7,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $8,$5
+  bin $5,2
+  sub $7,$5
+  mov $3,$8
+  div $3,$7
+  mov $6,$8
+  mod $6,$7
+  equ $6,0
+  seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $3,$6
+  mov $5,$3
+  mul $5,$4
+  add $1,$5
+  add $2,1
+lpe
+mov $0,$1
