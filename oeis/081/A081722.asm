@@ -1,0 +1,18 @@
+; A081722: Row sums of triangle in A081720.
+; Submitted by loader3229
+; 1,4,15,83,561,6332,88086,1561008,31966485,746278033,19441692751,559268543516,17599832876941,601468320356528,22182618618501188,878172760660077348,37144096971415045713,1671734397769302244110,79770632874353931073165,4022719642533206402716726
+
+#offset 1
+
+mov $3,$0
+bin $3,2
+add $3,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  add $4,$3
+  seq $4,81720 ; Triangle T(n,k) read by rows, giving number of bracelets (turnover necklaces) with n beads of k colors (n >= 1, 1 <= k <= n).
+  add $1,$4
+  add $2,1
+lpe
+mov $0,$1
