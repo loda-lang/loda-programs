@@ -12,6 +12,15 @@ lpb $1
   mov $0,$2
   add $0,$1
   add $0,1
-  seq $0,188090 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=5, [ ]=floor.
+  mov $3,$0
+  pow $3,2
+  mul $3,3
+  nrt $3,2
+  add $0,5
+  pow $0,2
+  mul $0,3
+  nrt $0,2
+  sub $0,8
+  sub $0,$3
   mov $1,$0
 lpe

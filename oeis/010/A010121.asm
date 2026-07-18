@@ -1,11 +1,9 @@
 ; A010121: Continued fraction for sqrt(7).
-; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
+; Submitted by loader3229
 ; 2,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1,4,1,1,1
+; Formula: a(n) = bitxor(sign(if((n%2)==0,n/2,n))*((if((n%2)==0,n/2,n)-1)%2+1),1)+1
 
 dif $0,2
-mov $1,$0
-equ $0,0
-sub $1,$0
-gcd $1,2
-add $0,$1
-mul $0,$1
+dgr $0,3
+bxo $0,1
+add $0,1

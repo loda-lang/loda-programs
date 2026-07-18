@@ -1,6 +1,7 @@
 ; A171387: The characteristic function of primes > 3: 1 if n is prime such that neither prime+-1 is prime else 0.
 ; Submitted by loader3229
 ; 0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
+; Formula: a(n) = floor(floor((4*n!)/n)/n)%2
 
 #offset 1
 

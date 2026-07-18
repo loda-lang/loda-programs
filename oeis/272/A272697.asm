@@ -1,5 +1,5 @@
 ; A272697: Powers of 2 with exactly one odd decimal digit.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,16,32,128,256,1024,4096,262144,524288,8388608
 
 #offset 1
@@ -17,9 +17,8 @@ lpb $2
     div $3,10
     add $5,$6
   lpe
-  sub $5,204
   mov $3,$5
-  equ $3,1
+  equ $3,205
   sub $0,$3
   mul $1,2
   mov $4,$0

@@ -6,13 +6,11 @@
 #offset 1
 
 mov $3,$0
-mov $4,$0
-seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
 seq $1,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
-mod $1,$4
+mod $1,$3
 mov $2,$1
 mod $2,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,$2
-mov $1,$2

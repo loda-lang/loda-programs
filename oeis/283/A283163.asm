@@ -1,32 +1,34 @@
 ; A283163: Expansion of exp( Sum_{n>=1} -sigma(4*n)*x^n/n ) in powers of x.
-; Submitted by [AF>Libristes]MortelKni
+; Submitted by loader3229
 ; 1,-7,17,-14,2,-21,36,13,-26,-24,10,12,-17,34,22,19,-96,-10,14,38,0,12,-23,72,-38,-2,-11,-64,-34,0,72,84,-26,0,0,-79,60,24,-32,-58,-7,-84,50,26,120,0,0,46,-34,-64,10,-119,70,0,22,-70,36,37,-120,0,128,108,50,0,-36,-72,-60,-70,0,-22,-41,96,0,74,-82,-50,98,43,-86,120
 
-mov $2,1
-mov $6,1
-mov $10,1
+add $0,1
 lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    add $7,1
-    seq $7,193553 ; Sum of divisors of 4*n.
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    div $7,-1
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  trn $0,1
+  mov $2,$0
+  nrt $2,2
+  pow $2,2
+  equ $2,$0
+  mul $2,-1
+  pow $2,$0
+  mul $2,2
+  mov $5,$0
+  equ $5,0
+  mov $3,$1
+  mul $3,24
+  add $3,1
+  mov $6,$3
+  add $1,1
+  nrt $3,2
+  mov $7,$3
+  pow $3,2
+  equ $3,$6
+  mul $3,$7
+  mod $3,3
+  dif $3,-2
+  mul $3,$7
+  sub $2,$5
+  mul $2,$3
+  add $4,$2
 lpe
-mov $0,$6
+mov $0,$4

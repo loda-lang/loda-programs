@@ -1,20 +1,23 @@
 ; A079728: sum(k=0,p,binomial(2*k,k)) (mod p) where p runs through the primes.
-; Submitted by treaclepumpkin
+; Submitted by Science United
 ; 1,2,1,3,1,3,1,3,1,1,3,3,1,3,1,1,1,3,3,1,3,3,1,1,3,1,3,1,3,1,3,1,1,3,1,3,3,3,1,1,1,3,1,3,1,3,3,3,1,3,1,1,3,1,1,1,1,3,3,1,3,1,3,1,3,1,3,3,1,3,1,1,3,3,3,1,1,3,1,3
 
 #offset 1
 
-seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
-div $0,4
+sub $0,1
+lpb $0
+  mov $0,1
+  seq $0,126634 ; a(n) is the number of nonnegative integers k less than 10^n such that the decimal representation of k lacks the digits 1,2,3,4 and at least one of digits 5,6,7,8,9.
+  pow $0,3
+lpe
 add $0,1
-max $0,3
-add $0,1
-mov $1,$0
-mod $0,3
 mov $2,$0
-equ $2,0
-lex $1,2
-add $1,3
-dgr $1,4
-mul $1,$2
-add $0,$1
+seq $2,40 ; The prime numbers.
+mov $1,1
+sub $1,$2
+gcd $2,2
+add $2,2
+mod $1,$2
+pow $1,$1
+mov $0,$1
+add $0,2

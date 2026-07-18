@@ -5,9 +5,7 @@
 #offset 1
 
 mov $2,$0
-mov $4,1
-sub $0,1
-pow $2,2
+mul $2,3
 lpb $2
   sub $2,1
   mov $3,$1
@@ -17,7 +15,7 @@ lpb $2
   mul $5,$3
   div $5,113
   sub $3,$5
-  dgr $3,3
+  gcd $3,2
   sub $0,$3
   add $0,1
   add $1,$4

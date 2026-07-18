@@ -4,7 +4,5 @@
 
 #offset 1
 
-sub $0,1
-bxo $0,-1
 fac $0,$0
 lex $0,3

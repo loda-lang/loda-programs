@@ -1,18 +1,71 @@
 ; A122045: Euler (or secant) numbers E(n).
-; Submitted by odontojeter
+; Submitted by Science United
 ; 1,0,-1,0,5,0,-61,0,1385,0,-50521,0,2702765,0,-199360981,0,19391512145,0,-2404879675441,0,370371188237525,0,-69348874393137901,0,15514534163557086905,0,-4087072509293123892361,0,1252259641403629865468285,0,-441543893249023104553682821,0,177519391579539289436664789665,0,-80723299235887898062168247453281,0,41222060339517702122347079671259045,0,-23489580527043108252017828576198947741,0,14851150718114980017877156781405826684425,0,-10364622733519612119397957304745185976310201,0
-; Formula: a(n) = b(n+1), b(n) = -A028296(truncate((n-1)/2))*(-2*truncate((n-1)/2)+n-1)+A028296(truncate((n-1)/2)), b(1) = 1, b(0) = 0
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  mod $1,2
-  mov $3,$2
+mov $1,$0
+add $1,1
+lpb $1
+  div $1,2
+  gcd $4,$1
+  mov $5,-4
+  pow $5,$4
+  mul $1,2
+  mul $4,2
+  mov $6,2
+  pow $6,$4
+  bin $4,2
+  add $4,1
+  mov $9,$4
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  add $9,1
+  pow $9,2
+  sub $9,$4
+  mul $4,8
+  nrt $4,2
+  div $4,2
+  mov $7,$9
+  add $7,$4
+  mov $8,$7
+  add $8,2
+  mov $10,$8
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $11,$10
+  add $11,1
+  bin $11,2
+  mov $12,$10
+  mod $12,2
+  sub $8,1
+  sub $8,$11
+  sub $8,$12
+  add $8,$7
+  mov $4,$7
+  add $4,1
+  mov $3,$4
+  mul $3,8
+  nrt $3,2
   div $3,2
-  seq $3,28296 ; Expansion of e.g.f. Gudermannian(x) = 2*arctan(exp(x)) - Pi/2.
-  mul $1,$3
+  bin $3,2
+  sub $4,$3
+  sub $8,$4
+  mov $4,$8
+  add $4,2
+  mov $2,$4
+  mul $2,8
+  nrt $2,2
+  sub $2,1
+  div $2,2
   add $2,1
-  sub $3,$1
+  pow $2,2
+  sub $2,$4
+  mov $4,$2
+  seq $4,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+  mul $4,$6
+  div $4,$5
 lpe
-mov $0,$3
+mov $0,$4

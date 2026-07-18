@@ -1,17 +1,32 @@
 ; A262044: Partial sum of the first n odd composite numbers.
-; Submitted by Landjunge
+; Submitted by Shanman Racing
 ; 9,24,45,70,97,130,165,204,249,298,349,404,461,524,589,658,733,810,891,976,1063,1154,1247,1342,1441,1546,1657,1772,1889,2008,2129,2252,2377,2506,2639,2774,2915,3058,3203,3350,3503,3658,3817,3978,4143,4312,4483,4658,4835,5018,5203,5390,5579,5774,5975,6178,6383,6590,6799,7012,7227,7444,7663,7884,8109,8340,8575,8812,9055,9300,9547,9796,10049,10304,10563,10824,11089,11356,11629,11904
-; Formula: a(n) = a(n-1)+A007921(max(n-1,0)+1)+2, a(0) = 0
 
 #offset 1
 
-lpb $0
-  mov $2,$0
-  trn $2,1
-  add $2,1
-  seq $2,7921 ; Numbers that are not the difference of two primes.
-  add $2,2
-  sub $0,1
-  add $1,$2
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $5,$1
+  add $5,1
+  mov $7,$5
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $5,$7
+  mov $3,$1
+  sub $3,$5
+  trn $3,1
+  add $3,$4
+  gcd $3,2
+  add $6,$0
+  add $6,1
+  sub $0,$3
+  add $0,1
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$1
+mov $0,$6

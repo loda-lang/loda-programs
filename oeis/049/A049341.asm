@@ -1,23 +1,15 @@
 ; A049341: a(n+1) = sum of digits of a(n) + a(n-1).
-; Submitted by loader3229
+; Submitted by Goldislops
 ; 3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3,3,6,9,6,6,3,9,3
-; Formula: a(n) = 3*truncate((-6*truncate(d(n)/6)+d(n))/2)+3, b(n) = d(n-1), b(3) = 5, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = (d(n-2)*c(n-2))<=b(n-1), c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 1, d(n) = d(n-1)*c(n-1)+b(n-1)+c(n-1), d(3) = 9, d(2) = 5, d(1) = 3, d(0) = 1
+; Formula: a(n) = b(n+1), b(n) = sumdigits(b(n-1)+b(n-2),10)*sign(b(n-1)+b(n-2)), b(1) = 3, b(0) = 3
 
-mov $1,1
-fil $1,4
+mov $2,3
+add $0,1
 lpb $0
   sub $0,1
-  leq $4,$1
-  mov $6,$2
-  mul $6,$3
-  add $2,$6
-  mov $5,$1
-  add $5,$2
-  rol $1,6
-  rol $1,6
+  mov $1,$3
+  mov $3,$2
+  add $2,$1
+  dgs $2,10
 lpe
-mod $3,6
-mov $0,$3
-div $0,2
-mul $0,3
-add $0,3
+mov $0,$2

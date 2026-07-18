@@ -1,5 +1,5 @@
 ; A093165: Primes of the form 70*R_k + 3, where R_k is the repunit (A002275) of length k.
-; Submitted by Science United
+; Submitted by estatic707
 ; 3,73,773,77773,777777773,777777777773,777777777777773,777777777777777777773
 
 #offset 1
@@ -21,9 +21,7 @@ lpe
 mov $3,2
 pow $3,$1
 log $3,10
-add $3,1
 add $2,$3
-sub $2,1
 mov $4,10
 pow $4,$2
 mov $0,$4

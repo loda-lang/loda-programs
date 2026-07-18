@@ -1,8 +1,8 @@
 ; A204817: Final nonzero digit of n^n in base 7.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,1,4,6,4,3,1,1,1,1,4,2,1,6,4,1,2,5,1,5,1,6,1,4,1,4,4,6,4,1,1,3,2,6,1,3,1,2,2,1,2,6,1,1,4,6,4,3,1,1,1,1,4,2,1,6,1,1,2,5,1,5,1,1,1,4,1,4,4,6,4,1,1,3,2,6,1,2,1,2
+; Formula: a(n) = sign(if((n^n)==0,0,(n^n)/(7^valuation(n^n,7))))*((if((n^n)==0,0,(n^n)/(7^valuation(n^n,7)))-1)%7+1)
 
-dif $0,7
 pow $0,$0
-mod $0,7
-max $0,1
+dir $0,7
+dgr $0,8

@@ -1,11 +1,10 @@
 ; A105396: A simple "Fractal Jump Sequence" (FJS).
-; Submitted by DenMartin
+; Submitted by loader3229
 ; 3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6,6,3,6
-; Formula: a(n) = 3*((n^2)%3)+3
+; Formula: a(n) = sign(gcd(n,3)*(gcd(n,3)+1)*(gcd(n,3)+2))*((gcd(n,3)*(gcd(n,3)+1)*(gcd(n,3)+2)-1)%19+1)
 
 #offset 3
 
-pow $0,2
-mod $0,3
-add $0,1
-mul $0,3
+gcd $0,3
+fac $0,3
+dgr $0,20

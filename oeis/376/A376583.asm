@@ -1,11 +1,15 @@
 ; A376583: Parity of A002260.
-; Submitted by 10263185
+; Submitted by fzs600
 ; 1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0
-; Formula: a(n) = -2*truncate((A002262(n-1)+1)/2)+A002262(n-1)+1
+; Formula: a(n) = -binomial(floor((sqrtint(8*n)+1)/2),2)-2*truncate((-binomial(floor((sqrtint(8*n)+1)/2),2)+n)/2)+n
 
 #offset 1
 
-sub $0,1
-seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+bin $1,2
+sub $0,$1
 mod $0,2

@@ -1,7 +1,7 @@
 ; A230844: Decimal expansion of m_p*c in SI units (kg*m/s), where m_p is the proton mass and c is the speed of light in vacuum.
 ; Submitted by BrandyNOW
 ; 5,0,1,4,3,9,3,9,3
-; Formula: a(n) = -10*truncate((truncate((bitxor((n+23)^2,1)*(n+20))/4)+3)/10)+truncate((bitxor((n+23)^2,1)*(n+20))/4)+3
+; Formula: a(n) = (floor((bitxor((n+23)^2,1)*(n+20))/4)+3)%10
 
 #offset -18
 

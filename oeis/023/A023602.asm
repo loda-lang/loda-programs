@@ -6,24 +6,22 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
   mov $5,$0
-  pow $5,2
-  mul $5,5
-  nrt $5,2
-  sub $0,1
-  add $2,$5
-  div $2,2
-  add $3,1
-  mov $6,$3
-  mul $6,8
-  mov $1,$6
-  nrt $1,2
-  add $6,2
-  mov $7,$6
+  mul $5,8
+  mov $7,$5
   nrt $7,2
-  equ $1,$7
-  mul $2,$1
+  sub $0,1
+  add $5,2
+  mov $6,$5
+  nrt $6,2
+  equ $7,$6
+  mov $3,$1
+  add $3,1
+  mul $3,55
+  div $3,34
+  add $1,1
+  mov $2,$7
+  mul $2,$3
   add $4,$2
 lpe
 mov $0,$4

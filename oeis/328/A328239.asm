@@ -12,8 +12,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,258644 ; Fourth arithmetic derivative of n.
-  sub $3,1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

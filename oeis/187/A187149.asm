@@ -6,11 +6,30 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,2107 ; Expansion of Product_{k>=1} (1 - x^k)^2.
-  mov $3,$1
-  seq $3,134343 ; Expansion of psi(-x)^2 in powers of x where psi() is a Ramanujan theta function.
+  nrt $2,2
+  pow $2,2
+  equ $2,$0
+  mul $2,-1
+  pow $2,$0
+  mul $2,2
+  mov $5,$0
+  equ $5,0
+  mov $7,$1
+  mul $7,3
+  add $7,1
+  mov $8,$7
+  nrt $7,2
+  mov $6,$7
+  pow $7,2
+  equ $7,$8
+  mul $7,$6
+  mov $3,$7
+  mod $7,3
+  dif $7,-2
+  mul $7,$3
   add $1,1
-  mul $2,$3
+  sub $2,$5
+  mul $2,$7
   add $4,$2
 lpe
 mov $0,$4

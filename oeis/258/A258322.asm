@@ -1,5 +1,5 @@
 ; A258322: Expansion of phi(-q) * phi(-q^9) in powers of q where phi() is a Ramanujan theta function.
-; Submitted by Gunnar Hjern
+; Submitted by KetamiNO [YouTube]
 ; 1,-2,0,0,2,0,0,0,0,-4,4,0,0,-4,0,0,2,0,4,0,0,0,0,0,0,-6,0,0,0,0,0,0,0,0,4,0,4,-4,0,0,4,0,0,0,0,-8,0,0,0,-2,0,0,4,0,0,0,0,0,4,0,0,-4,0,0,2,0,0,0,0,0,0,0,4,-4,0,0,0,0,0,0
 
 mov $1,$0
@@ -11,7 +11,6 @@ mov $2,-1
 pow $2,$0
 mul $0,4
 mov $3,$0
-mov $12,0
 trn $0,1
 mov $4,$0
 mov $5,-1
@@ -20,9 +19,9 @@ mov $6,$0
 add $6,1
 mov $15,$6
 lex $15,2
-mov $16,2
-pow $16,$15
-div $6,$16
+mov $13,2
+pow $13,$15
+div $6,$13
 div $6,2
 mov $7,-1
 pow $7,$6
@@ -30,7 +29,6 @@ mul $7,2
 mov $8,-2
 bin $8,$6
 div $8,$7
-mov $9,0
 mov $11,3
 sub $6,$8
 mul $6,2
@@ -43,9 +41,7 @@ lpb $6
   mov $14,$10
   nrt $14,2
   add $10,2
-  mov $13,$10
-  nrt $13,2
-  mov $10,$13
+  nrt $10,2
   add $10,$14
   mod $10,2
   mov $11,2

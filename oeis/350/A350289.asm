@@ -1,20 +1,20 @@
 ; A350289: Infinite binary Walsh matrix read by antidiagonals.
-; Submitted by Wood
+; Submitted by loader3229
 ; 0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1
+; Formula: a(n) = sumdigits(bitand(-n+binomial(floor((sqrtint(8*n+8)+1)/2),2)+floor((sqrtint(8*n+8)+1)/2)-1,-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n),2)*sign(bitand(-n+binomial(floor((sqrtint(8*n+8)+1)/2),2)+floor((sqrtint(8*n+8)+1)/2)-1,-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n))-2*truncate((sumdigits(bitand(-n+binomial(floor((sqrtint(8*n+8)+1)/2),2)+floor((sqrtint(8*n+8)+1)/2)-1,-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n),2)*sign(bitand(-n+binomial(floor((sqrtint(8*n+8)+1)/2),2)+floor((sqrtint(8*n+8)+1)/2)-1,-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)))/2)
 
+add $0,1
 mov $2,$0
-seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
-mov $4,$0
-max $4,$2
-min $0,$2
-lpb $2
-  mov $3,$0
-  mul $3,$4
-  div $0,2
-  add $1,$3
-  mov $2,$0
-  div $4,2
-lpe
-mov $0,$1
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $2,$0
+sub $0,1
+ban $2,$0
+dgs $2,2
+mov $0,$2
 mod $0,2

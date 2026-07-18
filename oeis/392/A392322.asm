@@ -1,17 +1,16 @@
 ; A392322: Number of coverings of [n] by 1-tuples, 2-tuples, ..., n-tuples where each entry is chosen from the subsets of [n].
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,10,371,53108,29405577,63422514894,536842525103887,17946027593293876456,2380248400260600171166613,1256540596610637930077566092098,2645496803167571992523450535629589723,22240912657758659268957594752722686275423964
 
 #offset 1
 
-mov $1,1
-mov $4,$0
+mov $1,$0
 lpb $0
   sub $0,1
-  mov $3,$1
-  pow $3,$4
-  mul $1,2
-  add $1,1
-  add $2,$3
+  mul $2,2
+  add $2,1
+  mov $4,$2
+  pow $4,$1
+  add $3,$4
 lpe
-mov $0,$2
+mov $0,$3

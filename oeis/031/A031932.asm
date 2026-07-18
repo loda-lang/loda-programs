@@ -14,8 +14,7 @@ lpb $2
   add $1,$3
   add $1,2
   div $3,2
-  sub $3,2
-  equ $3,4
+  equ $3,6
   sub $0,$3
   sub $2,$0
 lpe

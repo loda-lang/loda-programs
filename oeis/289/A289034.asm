@@ -1,7 +1,7 @@
 ; A289034: Fixed point of the morphism 0->010, 1->10 starting with 1.
 ; Submitted by KetamiNO [YouTube]
 ; 1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
-; Formula: a(n) = -truncate((sqrtint(5*(n-1)^2)+n-1)/2)-2*truncate((-truncate((sqrtint(5*(n-1)^2)+n-1)/2)+sqrtint(5*(truncate((sqrtint(5*(n-1)^2)+n-1)/2)-1)^2)+1)/2)+sqrtint(5*(truncate((sqrtint(5*(n-1)^2)+n-1)/2)-1)^2)+1
+; Formula: a(n) = -floor((sqrtint(5*(n-1)^2)+n-1)/2)-2*truncate((-floor((sqrtint(5*(n-1)^2)+n-1)/2)+sqrtint(5*(floor((sqrtint(5*(n-1)^2)+n-1)/2)-1)^2)+1)/2)+sqrtint(5*(floor((sqrtint(5*(n-1)^2)+n-1)/2)-1)^2)+1
 
 #offset 1
 

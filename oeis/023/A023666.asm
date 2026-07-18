@@ -6,21 +6,18 @@
 
 add $0,1
 lpb $0
+  trn $0,1
   mov $2,$0
-  mov $5,$0
-  pow $5,2
-  mul $5,5
-  nrt $5,2
-  sub $0,1
-  add $2,$5
-  div $2,2
+  mul $2,6
+  nrt $2,3
+  add $2,2
+  bin $2,3
   mov $3,$1
-  mul $3,6
-  nrt $3,3
-  add $3,2
-  bin $3,3
-  neq $3,$1
+  add $3,1
+  mul $3,55
+  div $3,34
   add $1,1
+  neq $2,$0
   mul $2,$3
   add $4,$2
 lpe

@@ -1,8 +1,25 @@
 ; A099822: Bisection of A005117.
 ; Submitted by Fardringle
 ; 1,3,6,10,13,15,19,22,26,30,33,35,38,41,43,47,53,57,59,62,66,69,71,74,78,82,85,87,91,94,97,102,105,107,110,113,115,119,123,129,131,134,138,141,143,146,151,155,158,161,165,167,173,177,179,182,185,187,191,194
-; Formula: a(n) = A005117(2*n+1)
+
+#offset 1
 
 mul $0,2
-add $0,1
-seq $0,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
+sub $0,2
+mov $1,$0
+min $1,1
+mov $2,1
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  sub $0,$4
+  add $2,1
+  sub $3,$0
+lpe
+add $2,1
+add $1,$2
+mov $0,$1
+sub $0,1

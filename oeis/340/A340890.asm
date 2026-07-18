@@ -1,12 +1,11 @@
 ; A340890: a(n) is the number of preference profiles for n men and n women, where all men prefer the same woman.
-; Submitted by Tom Hennigan
+; Submitted by Aionel
 ; 1,8,5184,1719926784,990677827584000000,2495937495082991616000000000000,58001506007267709490243656115814400000000000000,23264754073069200132851692722771970253637181903994880000000000000000
 
 #offset 1
 
-sub $0,1
 mov $3,$0
-add $0,1
+sub $3,1
 lpb $0
   mov $2,$0
   pow $2,$3

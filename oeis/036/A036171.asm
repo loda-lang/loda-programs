@@ -1,28 +1,30 @@
 ; A036171: Log base 2 (n) mod 53.
-; Submitted by Bok
+; Submitted by abr00
 ; 0,1,17,2,47,18,14,3,34,48,6,19,24,15,12,4,10,35,37,49,31,7,39,20,42,25,51,16,46,13,33,5,23,11,9,36,30,38,41,50,45,32,22,8,29,40,44,21,28,43,27,26
 
 #offset 1
 
-mov $1,270
+mov $1,$0
+add $1,6
+pow $1,3
 lpb $1
   mov $2,2
   sub $2,$0
   lpb $2
     mov $2,0
-    pow $1,2
+    mov $1,1
   lpe
-  add $1,2
   mov $2,$0
-  div $0,2
   mod $2,2
   mul $2,20
-  sub $2,2
-  lpb $2
-    sub $2,2
-    add $0,3
-  lpe
-  sub $1,4
+  sub $2,3
+  mov $4,$2
+  trn $4,8
+  mov $5,3
+  mul $5,$4
+  div $0,2
+  add $0,$5
+  sub $1,12
   add $3,1
 lpe
 mov $0,$3

@@ -5,22 +5,23 @@
 #offset 1
 
 mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
+sub $1,1
+lpb $0
   mov $0,$1
-  add $0,$3
-  mod $0,110
-  add $0,1
-  seq $0,40 ; The prime numbers.
-  mul $0,10
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
 lpe
-min $1,1
-mul $1,$0
+add $0,1
+lpb $0
+  mul $0,2
+  div $0,257
+  sub $0,1
+lpe
+mov $1,$0
+add $1,1
+seq $1,40 ; The prime numbers.
+seq $1,13632 ; Difference between n and the next prime greater than n.
+add $2,$1
 mov $0,$2
-sub $0,$1
-div $0,10
-sub $0,1
+sub $0,4
+div $0,2
+mul $0,2
+add $0,3

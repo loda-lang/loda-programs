@@ -4,11 +4,5 @@
 
 #offset 1
 
-sub $0,1
-lpb $0
-  div $0,2
-  sub $0,41
-lpe
-add $0,1
 seq $0,174562 ; a(1)=2, a(2)=3, then a(n)=a(n-1)+a(n-2) if n odd, a(n)=a(n-1)-a(n-2) if n even.
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

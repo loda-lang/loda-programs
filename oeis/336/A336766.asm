@@ -4,12 +4,22 @@
 
 add $0,1
 lpb $0
-  trn $0,1
-  mov $2,$0
-  seq $2,726 ; Number of partitions of n in which no parts are multiples of 3.
+  sub $0,1
+  mov $5,$0
+  mul $5,2
+  add $5,1
+  div $5,3
+  mov $6,-1
+  pow $6,$5
+  add $6,1
+  div $5,2
+  seq $5,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $5,$6
+  dif $5,2
   mov $3,$1
-  seq $3,89812 ; Expansion of Jacobi theta function q^(-1/8) * (theta_2(q^(1/2)) - 3 * theta_2(q^(9/2))) / 2 in powers of q.
+  seq $3,258277 ; Expansion of chi(-q) * phi(-q^3) * psi(q^3) in powers of q where chi(), phi(), psi() are Ramanujan theta functions.
   add $1,1
+  mov $2,$5
   mul $2,$3
   add $4,$2
 lpe
