@@ -6,12 +6,9 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,1935 ; Number of partitions with no even part repeated; partitions of n in which no parts are multiples of 4.
+  seq $2,260164 ; Expansion of f(-x^8)^2 / f(-x) in powers of x where f() is a Ramanujan theta function.
   mov $3,$1
-  mul $3,2
-  add $3,1
-  seq $3,29838 ; Expansion of square root of q times normalized Hauptmodul for Gamma(4) in powers of q^8.
-  gcd $3,$3
+  seq $3,308399 ; Expansion of 1 / Sum_{k=-oo..oo} (-x)^(k*(4*k + 1)).
   add $1,1
   mul $2,$3
   add $4,$2

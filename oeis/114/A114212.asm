@@ -1,33 +1,33 @@
 ; A114212: Generalized Gould sequence.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,3,4,4,4,6,8,6,4,6,8,8,8,12,16,10,4,6,8,8,8,12,16,12,8,12,16,16,16,24,32,18,4,6,8,8,8,12,16,12,8,12,16,16,16,24,32,20,8,12,16,16,16,24,32,24,16,24,32,32,32,48,64,34,4,6,8,8,8,12,16,12,8,12,16,16,16,24,32
 
-mov $2,$0
-mov $8,6
+mov $4,$0
+add $4,1
+bin $4,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $3,$2
-  sub $3,$0
-  sub $3,1
-  mov $6,0
-  equ $8,0
+  mov $7,$2
+  div $7,2
+  mov $6,$7
+  dgs $6,2
+  mov $7,2
+  pow $7,$6
+  mov $5,$2
+  add $5,$4
+  add $5,1
+  mov $3,$5
+  mul $3,8
+  nrt $3,2
+  add $3,3
+  div $3,2
+  bin $3,2
+  sub $3,$5
+  leq $3,1
   mov $5,$3
-  add $5,$8
-  mov $7,$0
-  mov $4,$5
-  lpb $4
-    mov $9,$7
-    mod $9,2
-    mov $10,$5
-    mod $10,2
-    div $5,2
-    mul $9,$10
-    mov $4,$5
-    add $6,$9
-    div $7,2
-  lpe
-  equ $6,0
-  add $1,$6
+  mul $5,$7
+  add $1,$5
+  add $2,1
 lpe
 mov $0,$1
-add $0,1

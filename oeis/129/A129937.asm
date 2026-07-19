@@ -5,12 +5,9 @@
 
 #offset 1
 
-mov $2,$0
-mov $4,$0
-div $4,2
-bin $0,$4
-mov $3,$2
-bin $3,2
 mov $1,$0
-sub $1,$3
-mov $0,$1
+div $1,2
+mov $2,$0
+bin $2,2
+bin $0,$1
+sub $0,$2

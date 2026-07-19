@@ -14,8 +14,7 @@ lpb $2
   seq $5,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
   mul $5,-1
   mov $3,$5
-  add $3,8
-  equ $3,1
+  equ $3,-7
   sub $0,$3
   mov $4,$0
   max $4,0

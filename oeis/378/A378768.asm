@@ -12,7 +12,19 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
-  seq $3,353292 ; a(n) is the number of positive integers k <= n that have at least one common 1-bit with n.
+  mov $5,$3
+  mov $6,$3
+  dgs $6,2
+  mov $7,$3
+  min $7,1
+  log $3,2
+  add $7,$3
+  sub $7,$6
+  mov $3,2
+  pow $3,$7
+  sub $3,1
+  sub $5,$3
+  mov $3,$5
   add $3,1
   mod $3,2
   sub $0,$3

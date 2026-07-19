@@ -1,12 +1,12 @@
 ; A026806: a(n) = number of numbers k such that only one partition of n has least part k.
+; Submitted by loader3229
 ; 1,2,1,2,2,2,2,3,2,3,3,3,3,4,3,4,4,4,4,5,4,5,5,5,5,6,5,6,6,6,6,7,6,7,7,7,7,8,7,8,8,8,8,9,8,9,9,9,9,10,9,10,10,10,10,11,10,11,11,11,11,12,11,12,12,12,12,13,12,13,13,13,13,14,13,14,14,14,14,15
-; Formula: a(n) = -floor((n+6)/3)+floor((n+6)/2)
+; Formula: a(n) = -floor(n/3)+floor((n+2)/2)
 
 #offset 1
 
-add $0,6
 mov $1,$0
-div $0,3
-div $1,2
-sub $1,$0
-mov $0,$1
+div $1,3
+add $0,2
+div $0,2
+sub $0,$1

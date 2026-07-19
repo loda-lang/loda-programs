@@ -21,6 +21,7 @@ lpb $2
     mov $6,$7
     mul $6,$3
     bin $6,2
+    bin $5,2
     add $5,$6
     mov $8,$3
     mov $9,$10

@@ -1,5 +1,5 @@
 ; A328544: Numbers k such that k multiplied by any of its digits contains k as a substring.
-; Submitted by Johnbodlis team
+; Submitted by Science United
 ; 0,1,5,6,11,111,1111,11111,111111
 
 #offset 1
@@ -11,8 +11,6 @@ lpb $0
   mov $5,$3
   sub $5,1
   bxo $3,$5
-  add $3,1
-  div $3,2
   log $3,2
   sub $0,$3
   mul $1,10

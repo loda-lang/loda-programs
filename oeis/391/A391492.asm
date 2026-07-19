@@ -6,9 +6,9 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,391464 ; Expansion of 1/(2 - g^2), where g = 1+x*g^4 is the g.f. of A002293.
+  seq $2,391465 ; Expansion of g/(2 - g^2), where g = 1+x*g^4 is the g.f. of A002293.
   mov $3,$1
-  seq $3,391464 ; Expansion of 1/(2 - g^2), where g = 1+x*g^4 is the g.f. of A002293.
+  seq $3,391518 ; Expansion of 1/(g * (2 - g^2)), where g = 1+x*g^4 is the g.f. of A002293.
   add $1,1
   mul $2,$3
   add $4,$2

@@ -5,10 +5,8 @@
 #offset 1
 
 lpb $0
-  mov $2,$0
-  seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
-  div $0,$2
+  mov $1,$0
+  seq $1,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
+  div $0,$1
 lpe
-mov $1,$0
-seq $1,76649 ; Number of digits required to write the prime factors of n.
-mov $0,$1
+seq $0,76649 ; Number of digits required to write the prime factors of n.

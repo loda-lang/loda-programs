@@ -1,14 +1,67 @@
 ; A034379: Expansion of 1/(1-x)^2/(1-x^2)/(1-x^3)/(1-x^5)/(1-x^8).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,4,7,11,17,25,35,49,66,88,115,148,188,236,293,361,440,533,640,764,906,1068,1252,1461,1696,1961,2257,2588,2956,3365,3817,4317,4867,5472,6135,6861,7653,8517,9456,10477
-; Formula: a(n) = b(n+1), b(n) = b(n-8)+A028291(max(n-1,0)), b(7) = 25, b(6) = 17, b(5) = 11, b(4) = 7, b(3) = 4, b(2) = 2, b(1) = 1, b(0) = 0
 
 add $0,1
 lpb $0
+  sub $0,1
+  mov $6,$0
+  div $6,8
+  mul $6,9
+  mov $7,$0
+  div $7,8
   mov $2,$0
-  trn $2,1
-  seq $2,28291 ; Expansion of 1/((1-x)^2(1-x^2)(1-x^3)(1-x^5)) in powers of x.
-  trn $0,8
-  add $1,$2
+  mod $2,8
+  mov $8,$7
+  mul $8,$2
+  bin $7,2
+  mul $7,8
+  add $7,$8
+  mov $5,$2
+  equ $5,0
+  add $6,$7
+  add $6,$5
+  mov $5,$2
+  equ $5,1
+  mul $5,2
+  add $6,$5
+  mov $5,$2
+  equ $5,2
+  mul $5,3
+  add $6,$5
+  mov $5,$2
+  equ $5,3
+  mul $5,4
+  add $6,$5
+  mov $5,$2
+  equ $5,4
+  mul $5,5
+  add $6,$5
+  mov $5,$2
+  equ $5,5
+  mul $5,6
+  add $6,$5
+  mov $5,$2
+  equ $5,6
+  mul $5,7
+  add $6,$5
+  mov $5,$2
+  equ $5,7
+  mul $5,8
+  add $6,$5
+  mov $3,$1
+  add $3,4
+  mov $9,$3
+  add $1,1
+  pow $3,2
+  add $3,9
+  div $3,20
+  bin $9,2
+  add $9,7
+  div $9,15
+  sub $3,$9
+  mov $2,$6
+  mul $2,$3
+  add $4,$2
 lpe
-mov $0,$1
+mov $0,$4

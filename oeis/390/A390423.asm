@@ -4,18 +4,12 @@
 
 add $0,1
 lpb $0
-  sub $0,1
-  mov $6,1
-  sub $6,$0
-  sub $6,$0
-  mov $5,0
-  sub $5,$6
-  bin $5,$0
-  div $5,$6
+  trn $0,1
+  mov $2,$0
+  seq $2,289684 ; Mixing moments for the waiting time in an M/G/1 waiting queue.
   mov $3,$1
-  seq $3,391460 ; Expansion of g/(2 - g^2)^2, where g = 1+x*g^2 is the g.f. of A000108.
+  seq $3,289684 ; Mixing moments for the waiting time in an M/G/1 waiting queue.
   add $1,1
-  mov $2,$5
   mul $2,$3
   add $4,$2
 lpe

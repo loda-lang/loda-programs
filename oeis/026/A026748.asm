@@ -7,16 +7,17 @@ lpb $0
   trn $0,1
   mov $2,$0
   add $2,1
-  seq $2,26762 ; a(n) = T(2n-1,n-1), T given by A026758. Also T(2n+1,n+1), T given by A026747.
-  mov $3,1
-  sub $3,$1
-  sub $3,$1
-  mov $5,0
-  sub $5,$3
-  bin $5,$1
-  div $5,$3
+  seq $2,26861 ; T(2n,n+1), T given by A026747.
+  mov $5,1
+  sub $5,$1
+  sub $5,$1
+  mov $3,$1
+  pow $3,$5
+  sub $3,$5
+  bin $3,$1
+  div $3,$5
   add $1,1
-  mul $2,$5
+  mul $2,$3
   add $4,$2
 lpe
 mov $0,$4

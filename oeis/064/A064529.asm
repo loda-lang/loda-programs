@@ -1,12 +1,11 @@
 ; A064529: Number of connected components remaining when n-th letter of English alphabet is cut from a piece of paper.
-; Submitted by GolfSierra
+; Submitted by Goldislops
 ; 2,3,1,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 lpb $0
   add $3,2
   mov $0,$2

@@ -1,19 +1,18 @@
 ; A281452: Expansion of f(x, x) * f(x^5, x^13) in powers of x where f(, ) is Ramanujan's general theta function.
-; Submitted by ckrause
+; Submitted by Science United
 ; 1,2,0,0,2,1,2,0,0,4,0,0,0,1,4,0,2,2,0,0,0,2,2,0,0,2,0,0,1,4,2,0,2,0,0,0,2,2,2,0,0,2,0,0,3,2,0,0,2,4,0,0,0,4,2,0,0,0,0,0,2,0,2,0,4,0,0,0,0,5,2,0,0,2,0,0,0,4,2,0
 
-mul $0,9
-add $0,4
-mul $0,4
+mul $0,36
 mov $1,$0
-sub $0,1
+add $1,16
+add $0,15
 mov $2,$0
 mov $4,$0
 add $4,1
-mov $13,$4
-lex $13,2
+mov $11,$4
+lex $11,2
 mov $3,2
-pow $3,$13
+pow $3,$11
 div $4,$3
 div $4,2
 mov $5,-1
@@ -34,9 +33,7 @@ lpb $4
   mov $12,$8
   nrt $12,2
   add $8,2
-  mov $11,$8
-  nrt $11,2
-  mov $8,$11
+  nrt $8,2
   add $8,$12
   mod $8,2
   mov $9,2

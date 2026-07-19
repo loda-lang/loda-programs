@@ -7,8 +7,6 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,316832 ; In A316831, replace 2's and 3's with 0's.
-  sub $3,1
-  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

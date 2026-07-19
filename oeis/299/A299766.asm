@@ -4,20 +4,19 @@
 
 #offset 1
 
-mov $1,$0
-lpb $1
-  mov $4,2
-  mov $2,$1
-  div $2,4
-  lpb $2
-    mov $3,$1
-    mod $3,$4
-    add $4,1
-    sub $2,$3
+mov $2,2
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    min $1,1
+    add $2,1
+    sub $3,$1
   lpe
-  lpb $1
-    dif $1,$4
-    gcd $4,2
+  lpb $0
+    dif $0,$2
   lpe
 lpe
-mov $0,$1
+dif $2,2
+mov $0,$2

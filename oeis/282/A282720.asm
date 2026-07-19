@@ -1,17 +1,19 @@
 ; A282720: Number of nonzero terms in first n rows of the base-2 generalized Pascal triangle P_2 (see A282714).
-; Submitted by pm120
+; Submitted by Science United
 ; 0,1,3,6,9,13,18,23,27,32,39,47,54,61,69,76,81,87,96,107,117,128,141,153,162,171,183,196,207,217,228,237,243,250,261,275,288,303,321,338,351,365,384,405,423,440,459,475,486,497,513,532,549,567,588,607,621,634,651,669,684,697,711,722,729,737,750,767,783,802,825,847,864,883,909,938,963,987,1014,1037
+; Formula: a(n) = b(n-1)+c(n-1)+a(n-1), a(2) = 3, a(1) = 1, a(0) = 0, b(n) = c(n-1), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = 2*truncate(c(n-2)/c(n-1))*c(n-1)-c(n-2)+c(n-1), c(2) = 2, c(1) = 1, c(0) = 1
 
-mov $4,$0
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$4
-  sub $0,$1
-  mov $3,$0
+mov $2,1
+lpb $0
   sub $0,1
-  add $3,$0
-  seq $3,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
-  add $2,$3
+  mov $3,$1
+  mod $3,$2
+  mul $3,-2
+  add $3,$1
+  add $3,$2
+  add $4,$1
+  add $4,$2
+  mov $1,$2
+  mov $2,$3
 lpe
-mov $0,$2
+mov $0,$4

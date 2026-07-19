@@ -1,13 +1,18 @@
 ; A094120: a(n) = Sum_{k=1..n} Sum_{i=1..k} (-2)^valuation(i,2).
-; Submitted by Jamie Morken(w2)
+; Submitted by loader3229
 ; 0,1,0,0,4,9,12,16,12,9,4,0,0,1,0,0,16,33,48,64,84,105,124,144,156,169,180,192,208,225,240,256,240,225,208,192,180,169,156,144,124,105,84,64,48,33,16,0,0,1,0,0,4,9,12,16,12,9,4,0,0,1,0,0,64,129,192,256,324,393,460,528,588,649,708,768,832,897,960,1024
-; Formula: a(n) = -n+a(n-1)+A057300(n), a(0) = 0
+; Formula: a(n) = truncate(c(n)/8), b(n) = 8*(d(n-1)-10)^if(n==0,0,valuation(n,2))+b(n-1), b(3) = 0, b(2) = -8, b(1) = 8, b(0) = 0, c(n) = 8*(d(n-1)-10)^if(n==0,0,valuation(n,2))+b(n-1)+c(n-1), c(3) = 0, c(2) = 0, c(1) = 8, c(0) = 0, d(n) = 8*(d(n-1)-10)^if(n==0,0,valuation(n,2)), d(3) = 8, d(2) = -16, d(1) = 8, d(0) = 0
 
 lpb $0
-  mov $2,$0
-  seq $2,57300 ; Binary counter with odd/even bit positions swapped; base-4 counter with 1's replaced by 2's and vice versa.
-  sub $2,$0
   sub $0,1
-  add $1,$2
+  add $1,1
+  mov $3,$1
+  lex $3,2
+  sub $5,10
+  pow $5,$3
+  mul $5,8
+  add $2,$5
+  add $4,$2
 lpe
-mov $0,$1
+mov $0,$4
+div $0,8

@@ -13,7 +13,8 @@ lpb $2
   mov $3,$1
   mov $5,$1
   add $5,2
-  seq $5,318995 ; Totally additive with a(prime(n)) = n - 1.
+  seq $5,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $6,-1
   pow $6,$5
   add $1,1
@@ -22,8 +23,7 @@ lpb $2
   mul $3,$6
   mul $3,2
   div $3,3
-  add $3,1
-  equ $3,0
+  equ $3,-1
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -13,9 +13,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,49195 ; Numbers k such that the Euler totient function phi(k) is divisible by a square.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   equ $3,1
   sub $0,$3

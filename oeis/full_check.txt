@@ -1010,3 +1010,4 @@ A383762: The number of unitary divisors of n that are exponentially squarefree n
 A384627: Decimal expansion of 1/998001.
 A385623: Array read by ascending antidiagonals: A(n,k) is the number obtained by concatenation of n with k in that order, with k >= 0.
 A386470: The number of divisors of n whose exponents in their prime factorization are squares.
+A387543: a(n) is the size of the largest subset of {1, 2, ..., n} containing n in which any two numbers share a prime factor.

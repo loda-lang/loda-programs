@@ -1,20 +1,12 @@
 ; A372672: a(n) = phi(10 * n)/4.
-; Submitted by mkferrysr
+; Submitted by Geoff
 ; 1,2,2,4,5,4,6,8,6,10,10,8,12,12,10,16,16,12,18,20,12,20,22,16,25,24,18,24,28,20,30,32,20,32,30,24,36,36,24,40,40,24,42,40,30,44,46,32,42,50,32,48,52,36,50,48,36,56,58,40,60,60,36,64,60,40,66,64,44,60,70,48,72,72,50,72,60,48
+; Formula: a(n) = truncate((A000010(20*n)-8)/8)+1
 
 #offset 1
 
-mov $2,$0
-lpb $2
-  mov $2,0
-  mov $3,270
-  gcd $3,$1
-  min $3,$0
-  mul $3,10
-  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  mov $1,$0
-lpe
-mov $0,$3
-sub $0,3
-div $0,4
+mul $0,20
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+sub $0,8
+div $0,8
 add $0,1

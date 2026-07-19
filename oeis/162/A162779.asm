@@ -1,16 +1,14 @@
 ; A162779: Rows of A162777 when written as a triangle converge to this sequence.
-; Submitted by teoparas
+; Submitted by Johnbodlis team
 ; 1,3,5,5,7,13,15,9,7,13,17,19,29,43,39,17,7,13,17,19,29,43,41,27,29,45,55,69,103,127,95,33,7,13,17,19,29,43,41,27,29,45,55,69,103,127,97,43,29,45,55,69,103,129,111,85,105,147,181,243,335,351,223,65,7
 
 mov $1,$0
+sub $0,7
 div $0,9
 lpb $0
-  mov $0,8
+  mov $0,6
   mov $1,1
 lpe
 seq $1,151688 ; G.f.: Product_{n>=0} (1 + x^(2^n-1) + 2*x^(2^n)).
 mov $0,$1
-sub $0,2
-div $0,2
-mul $0,2
-add $0,1
+sub $0,1

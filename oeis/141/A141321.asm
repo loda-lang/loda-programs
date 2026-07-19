@@ -12,9 +12,7 @@ lpb $0
   mov $2,$1
   mov $1,$3
   add $1,2
-  mov $4,$1
-  seq $4,141459 ; a(n) = Product_{p-1 divides n} p, where p is an odd prime.
-  mov $1,$4
+  seq $1,141459 ; a(n) = Product_{p-1 divides n} p, where p is an odd prime.
   mul $1,2
   mul $1,$2
   add $3,1
