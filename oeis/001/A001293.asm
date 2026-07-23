@@ -1,0 +1,43 @@
+; A001293: Leech triangle: k-th number (0 <= k <= n) in n-th row (0 <= n) is number of octads in S(5,8,24) containing k given points and missing n-k given points.
+; Submitted by Hein
+; 759,506,253,330,176,77,210,120,56,21,130,80,40,16,5,78,52,28,12,4,1,46,32,20,8,4,0,1,30,16,16,4,4,0,0,1,30,0,16,0,4,0,0,0,1
+
+mov $1,759
+mov $2,506
+mov $3,253
+mov $4,330
+mov $5,176
+mov $6,77
+mov $7,210
+mov $8,120
+mov $9,56
+mov $10,21
+mov $11,130
+mov $12,80
+mov $13,40
+mov $14,16
+mov $15,5
+mov $16,78
+mov $17,52
+mov $18,28
+mov $19,12
+mov $20,4
+mov $21,1
+mov $22,46
+mov $23,32
+mov $24,20
+mov $25,8
+mov $26,4
+mov $28,1
+mov $29,30
+mov $30,16
+mov $31,16
+mov $32,4
+mov $33,4
+mov $36,1
+mov $37,30
+mov $39,16
+mov $41,4
+mov $45,1
+add $0,1
+mov $0,$$0

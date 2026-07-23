@@ -1,0 +1,43 @@
+; A001294: Triangle in which k-th number (0<=k<=n) in n-th row (0<=n) is number of dodecads in Golay code G_24 containing k given points and missing n-k given points.
+; Submitted by Hein
+; 2576,1288,1288,616,672,616,280,336,336,280,120,160,176,160,120,48,72,88,88,72,48,16,32,40,48,40,32,16,0,16,16,24,24,16,16,0,0,0,16,0,24,0,16,0,0
+
+mov $1,2576
+mov $2,1288
+mov $3,1288
+mov $4,616
+mov $5,672
+mov $6,616
+mov $7,280
+mov $8,336
+mov $9,336
+mov $10,280
+mov $11,120
+mov $12,160
+mov $13,176
+mov $14,160
+mov $15,120
+mov $16,48
+mov $17,72
+mov $18,88
+mov $19,88
+mov $20,72
+mov $21,48
+mov $22,16
+mov $23,32
+mov $24,40
+mov $25,48
+mov $26,40
+mov $27,32
+mov $28,16
+mov $30,16
+mov $31,16
+mov $32,24
+mov $33,24
+mov $34,16
+mov $35,16
+mov $39,16
+mov $41,24
+mov $43,16
+add $0,1
+mov $0,$$0
