@@ -4,7 +4,6 @@
 
 #offset 2
 
-mov $2,0
 mov $1,$0
 lpb $1
   mov $3,$1
@@ -12,7 +11,6 @@ lpb $1
   dir $1,$3
   add $2,$3
 lpe
-mov $1,$2
 sub $0,1
 div $0,$2
 mul $0,$2

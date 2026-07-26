@@ -27,25 +27,24 @@ lpb $2
     lpe
     div $9,10
   lpe
-  mov $10,$6
-  equ $10,0
-  lpb $10
-    mov $10,0
+  mov $4,$6
+  equ $4,0
+  lpb $4
+    mov $4,0
     mov $6,-2
   lpe
   equ $5,$6
   lpb $5
     mov $5,0
     sub $0,1
-    mov $4,$3
   lpe
   mov $5,$0
   equ $5,0
   lpb $5
     mov $5,0
-    mov $2,1
+    pow $2,3
   lpe
   sub $2,1
   add $3,1
 lpe
-mov $0,$4
+mov $0,$3

@@ -1,16 +1,15 @@
 ; A047363: Numbers that are congruent to {0, 2, 3, 4, 5} mod 7.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,2,3,4,5,7,9,10,11,12,14,16,17,18,19,21,23,24,25,26,28,30,31,32,33,35,37,38,39,40,42,44,45,46,47,49,51,52,53,54,56,58,59,60,61,63,65,66,67,68,70,72,73,74,75,77,79
-; Formula: a(n) = floor((6*n+3)/5)+floor((n-1)/5)-1
+; Formula: a(n) = -floor((n+1)/5)+floor((8*n-6)/5)
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-add $0,3
-add $0,$1
-mul $0,3
+mul $0,8
+add $0,2
 div $0,5
-sub $0,1
+add $1,2
 div $1,5
-add $0,$1
+sub $0,$1

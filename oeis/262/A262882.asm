@@ -2,16 +2,11 @@
 ; Submitted by Science United
 ; 0,1,2,3,3,5,6,7,7,7,7,11,11,13,14,15,15,15,15,15,15,15,15,23,23,23,23,27,27,29,30,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,47,47,47,47,47,47,47,47,55,55,55,55,59,59,61,62,63,63,63,63,63
 
+add $0,1
 lpb $0
-  add $1,$3
-  add $2,1
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  sub $0,1
-  div $0,2
-  mul $2,2
-  add $2,$1
-  sub $2,$3
+  mov $1,$0
+  seq $1,342410 ; The binary expansion of a(n) corresponds to that of n where all the 1's have been replaced by 0's except in the last run of 1's.
+  sub $0,$1
 lpe
-mov $0,$2
+mov $0,$1
+sub $0,1

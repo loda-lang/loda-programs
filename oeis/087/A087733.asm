@@ -1,12 +1,18 @@
 ; A087733: Partial sums of A068639.
-; Submitted by Kotenok2000
+; Submitted by [SG]ATA-Rolf
 ; 0,1,1,2,4,7,9,12,14,17,19,22,26,31,35,40,46,53,59,66,74,83,91,100,108,117,125,134,144,155,165,176,186,197,207,218,230,243,255,268,280,293,305,318,332,347,361,376,392,409,425,442,460,479,497,516,534,553,571
-; Formula: a(n) = a(n-1)+A068639(n), a(0) = 0
+; Formula: a(n) = truncate(c(n)/8), b(n) = 8*(d(n-1)-9)^if(n==0,0,valuation(n,2))+b(n-1), b(3) = 8, b(2) = 0, b(1) = 8, b(0) = 0, c(n) = 8*(d(n-1)-9)^if(n==0,0,valuation(n,2))+b(n-1)+c(n-1), c(3) = 16, c(2) = 8, c(1) = 8, c(0) = 0, d(n) = 8*(d(n-1)-9)^if(n==0,0,valuation(n,2)), d(3) = 8, d(2) = -8, d(1) = 8, d(0) = 0
 
 lpb $0
-  mov $2,$0
-  seq $2,68639 ; a(0) = 0, a(n) = a(n-1) + (-1)^p(n) for n >= 1, where p(n) = highest power of 2 dividing n.
   sub $0,1
-  add $1,$2
+  add $1,1
+  mov $3,$1
+  lex $3,2
+  sub $5,9
+  pow $5,$3
+  mul $5,8
+  add $2,$5
+  add $4,$2
 lpe
-mov $0,$1
+mov $0,$4
+div $0,8

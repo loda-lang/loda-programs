@@ -6,12 +6,11 @@
 #offset 1
 
 mul $0,10
-add $0,2
 mov $1,$0
-add $0,9
+add $0,11
 div $0,11
 mul $0,22
-sub $1,3
+sub $1,1
 div $1,11
 add $0,$1
 mul $1,102

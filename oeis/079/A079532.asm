@@ -10,7 +10,6 @@ seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
 mov $2,$0
 nrt $2,2
-mov $3,0
 gcd $3,$0
 sub $3,$2
 mov $0,$3

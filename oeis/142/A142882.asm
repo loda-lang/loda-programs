@@ -1,7 +1,7 @@
 ; A142882: First trisection of A120070.
-; Submitted by loader3229
+; Submitted by GPV67
 ; 3,15,24,9,27,48,33,63,48,15,72,45,99,84,51,120,105,72,21,135,108,63,168,153,120,69,195,180,147,96,27,216,189,144,81,255,240,207,156,87,288,273,240,189,120,33,315,288,243,180,99,360,345,312,261,192,105,399,384,351,300,231,144,39
-; Formula: a(n) = (truncate((sqrtint(24*n-16)-1)/2)+2)^2-(3*n-binomial(truncate((sqrtint(24*n-16)-1)/2)+1,2)-2)^2
+; Formula: a(n) = (3*n-binomial(floor((sqrtint(24*n-16)-1)/2),2))*(2*floor((sqrtint(24*n-16)-1)/2)-3*n+binomial(floor((sqrtint(24*n-16)-1)/2),2)+4)
 
 #offset 1
 
@@ -13,11 +13,10 @@ nrt $1,2
 sub $1,1
 div $1,2
 mov $2,$1
-add $2,1
 bin $2,2
 sub $0,$2
-pow $0,2
+mul $1,2
 add $1,2
-pow $1,2
 sub $1,$0
-mov $0,$1
+add $0,2
+mul $0,$1

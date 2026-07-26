@@ -1,12 +1,11 @@
 ; A045226: Numbers whose base-5 representation contains exactly two 1's and one 2.
-; Submitted by stoneageman
+; Submitted by Johnbodlis team
 ; 32,36,56,132,136,152,160,163,164,167,172,176,180,183,184,191,196,207,211,232,236,256,276,280,283,284,291,296,331,356,407,411,431,532,536,556,632,636,652,660,663,664,667,672,676,680
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,1
+add $2,1
 pow $2,8
 lpb $2
   mov $4,-3

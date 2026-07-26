@@ -1,6 +1,7 @@
 ; A159747: If an array is made of columns of -nacci sequences, fibo-, tribo- etc. all starting w. 1,1,2 etc, the NW to SE diagonals can be extended by computation. The above is diagonal 10. See A159741 for details.
 ; Submitted by loader3229
 ; 89,504,1490,3525,7617,15808,32192,64960,130496,261568,523712,1048000,2096576,4193728,8388032,16776640,33553856,67108288,134217152,268434880,536870336,1073741248,2147483072,4294966720,8589934016,17179868608,34359737792,68719476160,137438952896
+; Formula: a(n) = b(n-1), b(n) = 3*b(n-1)-2*b(n-2), b(12) = 2096576, b(11) = 1048000, b(10) = 523712, b(9) = 261568, b(8) = 130496, b(7) = 64960, b(6) = 32192, b(5) = 15808, b(4) = 7617, b(3) = 3525, b(2) = 1490, b(1) = 504, b(0) = 89
 
 #offset 1
 
@@ -13,7 +14,7 @@ mov $6,15808
 mov $7,32192
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,7
   sub $7,$5
   sub $7,$5

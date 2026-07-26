@@ -12,12 +12,11 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    add $5,$6
     mod $5,4
     mul $5,$4
+    add $3,94
     div $3,4
     max $4,$5
-    mov $6,1
   lpe
   dif $4,2
   div $4,14
@@ -30,5 +29,5 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-add $0,10923
+add $0,5430
 mul $0,2

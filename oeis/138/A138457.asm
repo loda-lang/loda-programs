@@ -10,7 +10,5 @@ pow $0,2
 mov $1,$0
 pow $0,2
 sub $0,$1
-mov $2,$0
-mul $2,$1
-mov $0,$2
+mul $0,$1
 div $0,8

@@ -11,22 +11,18 @@ lpb $2
   mov $4,$1
   pow $4,2
   mul $4,2
-  mov $6,$4
-  nrt $6,2
+  mov $5,$4
+  nrt $5,2
   mov $3,$1
   add $3,1
   pow $3,2
   mul $3,2
-  mov $7,$3
-  nrt $7,2
-  mov $3,$7
-  add $3,$6
+  nrt $3,2
+  add $3,$5
   add $3,1
   pow $3,2
   mul $3,2
-  mov $5,$3
-  nrt $5,2
-  mov $3,$5
+  nrt $3,2
   mod $3,2
   sub $0,$3
   add $1,1

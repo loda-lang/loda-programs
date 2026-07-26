@@ -21,14 +21,13 @@ lpb $2
   sub $0,1
   mov $5,$0
   mul $5,8
-  add $5,1
   nrt $5,2
   add $5,1
   div $5,2
   bin $5,2
   sub $0,$5
-  add $0,1
-  seq $0,204988 ; The index j < k such that n divides 2^k - 2^j, where k is the least index (A204987) for which such j exists.
+  bxo $0,-1
+  lex $0,2
   mul $0,$4
   add $1,$0
 lpe

@@ -1,7 +1,7 @@
 ; A130836: Square array d(m,n) = multiplicative distance between m>=1 and n>=1, read by antidiagonals.
 ; Submitted by Cruncher Pete
 ; 0,1,1,1,0,1,2,2,2,2,1,1,0,1,1,2,2,3,3,2,2,1,1,2,0,2,1,1,3,2,1,3,3,1,2,3,2,2,2,2,0,2,2,2,2,2,3,4,3,3,3,3,4,3,2,1,1,1,1,2,0,2,1,1,1,1,3,2,3,4,4,3,3,4,4,3,2,3,1,2
-; Formula: a(n) = A001222(truncate(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2))/(gcd(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)^2)))
+; Formula: a(n) = A001222(truncate(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2))/(gcd(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)^2)))
 
 #offset 1
 

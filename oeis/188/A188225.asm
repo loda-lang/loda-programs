@@ -5,9 +5,9 @@
 
 #offset 30
 
-sub $0,30
 mov $1,$0
-add $0,14
+sub $1,30
+sub $0,16
 bin $0,$1
 add $1,30
 mul $0,$1

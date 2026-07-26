@@ -1,7 +1,7 @@
 ; A397585: Triangle listed by rows: T(n, k) = n*(n+k) with n >= 2 and 1 <= k <= n-1.
-; Submitted by Matthias Lehmkuhl
+; Submitted by Geir.E.M
 ; 6,12,15,20,24,28,30,35,40,45,42,48,54,60,66,56,63,70,77,84,91,72,80,88,96,104,112,120,90,99,108,117,126,135,144,153,110,120,130,140,150,160,170,180,190,132,143,154,165,176,187,198,209,220,231,156,168,180,192,204,216,228,240,252,264,276
-; Formula: a(n) = (floor((sqrtint(8*n-8)-1)/2)+2)*(-binomial(floor((sqrtint(8*n-8)-1)/2)+1,2)+floor((sqrtint(8*n-8)-1)/2)+n+1)
+; Formula: a(n) = (floor((sqrtint(8*n-8)-1)/2)+2)*(-binomial(floor((sqrtint(8*n-8)-1)/2),2)+n+1)
 
 #offset 2
 
@@ -12,9 +12,8 @@ nrt $1,2
 sub $1,1
 div $1,2
 mov $2,$1
-add $2,1
 bin $2,2
 add $1,2
+add $0,2
 sub $0,$2
-add $0,$1
 mul $0,$1

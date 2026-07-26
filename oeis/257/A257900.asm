@@ -1,5 +1,5 @@
 ; A257900: Expansion of 1/2 - (phi(-q)^2 + phi(-q^9)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
-; Submitted by Arkhenia
+; Submitted by crh
 ; 1,-1,0,-1,2,0,0,-1,2,-2,0,0,2,0,0,-1,2,-2,0,-2,0,0,0,0,3,-2,0,0,2,0,0,-1,0,-2,0,-2,2,0,0,-2,2,0,0,0,4,0,0,0,1,-3,0,-2,2,0,0,0,0,-2,0,0,2,0,0,-1,4,0,0,-2,0,0,0,-2,2,-2,0,0,0,0,0,-2
 
 #offset 1
@@ -21,10 +21,10 @@ sub $0,1
 mov $4,$0
 mov $6,$0
 add $6,1
-mov $15,$6
-lex $15,2
+mov $13,$6
+lex $13,2
 mov $5,2
-pow $5,$15
+pow $5,$13
 div $6,$5
 div $6,2
 mov $7,-1
@@ -45,9 +45,7 @@ lpb $6
   mov $14,$10
   nrt $14,2
   add $10,2
-  mov $13,$10
-  nrt $13,2
-  mov $10,$13
+  nrt $10,2
   add $10,$14
   mod $10,2
   mov $11,2

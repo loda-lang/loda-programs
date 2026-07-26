@@ -5,8 +5,6 @@
 
 #offset 1
 
-mov $1,$0
-pow $1,$1
-log $1,2
-mov $0,$1
+pow $0,$0
+log $0,2
 add $0,1

@@ -1,5 +1,5 @@
 ; A039437: Numbers whose base-10 representation has the same nonzero number of 8's and 9's.
-; Submitted by Hein
+; Submitted by crashtech
 ; 89,98,189,198,289,298,389,398,489,498,589,598,689,698,789,798,809,819,829,839,849,859,869,879,890,891,892,893,894,895,896,897,908,918,928,938,948,958,968,978,980,981,982,983,984,985,986,987,1089,1098
 
 #offset 1
@@ -15,10 +15,7 @@ lpb $2
     mod $7,10
     mov $8,$7
     equ $8,8
-    lpb $8
-      mov $8,0
-      add $5,1
-    lpe
+    add $5,$8
     mov $8,$7
     equ $8,9
     lpb $8

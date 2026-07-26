@@ -1,18 +1,19 @@
 ; A181132: a(0)=0; thereafter a(n) = total number of 0's in binary expansions of 1, ..., n.
-; Submitted by Manuel Stenschke
+; Submitted by Goldislops
 ; 0,0,1,1,3,4,5,5,8,10,12,13,15,16,17,17,21,24,27,29,32,34,36,37,40,42,44,45,47,48,49,49,54,58,62,65,69,72,75,77,81,84,87,89,92,94,96,97,101,104,107,109,112,114,116,117,120,122,124,125,127,128,129,129,135,140,145,149,154,158,162,165,170,174,178,181,185,188,191,193
+; Formula: a(n) = -sumdigits(n,2)+a(n-1)+logint(max(n,1),2)+min(n,1), a(0) = 0
 
-mov $2,$0
-mov $3,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  dgs $1,2
-  log $0,2
-  sub $0,$1
-  add $3,$0
+lpb $0
+  mov $3,$0
+  dgs $3,2
+  mov $4,$0
+  min $4,1
+  mov $2,$0
+  max $2,1
+  log $2,2
+  add $4,$2
+  sub $4,$3
+  sub $0,1
+  add $1,$4
 lpe
-mov $0,$3
+mov $0,$1

@@ -4,10 +4,6 @@
 
 mov $1,-1
 pow $1,$0
-mov $4,0
-mov $7,0
-trn $0,1
-add $0,1
 dir $0,2
 div $0,2
 mov $2,-1

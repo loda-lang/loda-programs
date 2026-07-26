@@ -1,100 +1,14 @@
 ; A021490: Decimal expansion of 1/486.
-; Submitted by loader3229
+; Submitted by crashtech
 ; 0,0,2,0,5,7,6,1,3,1,6,8,7,2,4,2,7,9,8,3,5,3,9,0,9,4,6,5,0,2,0,5,7,6,1,3,1,6,8,7,2,4,2,7,9,8,3,5,3,9,0,9,4,6,5,0,2,0,5,7,6,1,3,1,6,8,7,2,4,2,7,9,8,3,5,3,9,0,9,4
+; Formula: a(n) = floor(b(n)/54)%10, b(n) = 10^n+b(n-1), b(0) = 0
 
-dgr $0,28
-mov $1,$0
-equ $1,2
-mul $1,2
-mov $2,$1
-mov $1,$0
-equ $1,4
-mul $1,5
-add $2,$1
-mov $1,$0
-equ $1,5
-mul $1,7
-add $2,$1
-mov $1,$0
-equ $1,6
-mul $1,6
-add $2,$1
-mov $1,$0
-equ $1,7
-add $2,$1
-mov $1,$0
-equ $1,8
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,9
-add $2,$1
-mov $1,$0
-equ $1,10
-mul $1,6
-add $2,$1
-mov $1,$0
-equ $1,11
-mul $1,8
-add $2,$1
-mov $1,$0
-equ $1,12
-mul $1,7
-add $2,$1
-mov $1,$0
-equ $1,13
-mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,14
-mul $1,4
-add $2,$1
-mov $1,$0
-equ $1,15
-mul $1,2
-add $2,$1
-mov $1,$0
-equ $1,16
-mul $1,7
-add $2,$1
-mov $1,$0
-equ $1,17
-mul $1,9
-add $2,$1
-mov $1,$0
-equ $1,18
-mul $1,8
-add $2,$1
-mov $1,$0
-equ $1,19
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,20
-mul $1,5
-add $2,$1
-mov $1,$0
-equ $1,21
-mul $1,3
-add $2,$1
-mov $1,$0
-equ $1,22
-mul $1,9
-add $2,$1
-mov $1,$0
-equ $1,24
-mul $1,9
-add $2,$1
-mov $1,$0
-equ $1,25
-mul $1,4
-add $2,$1
-mov $1,$0
-equ $1,26
-mul $1,6
-add $2,$1
-mov $1,$0
-equ $1,27
-mul $1,5
-add $2,$1
-mov $0,$2
+lpb $0
+  mov $2,10
+  pow $2,$0
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1
+div $0,54
+mod $0,10

@@ -1,7 +1,7 @@
 ; A391047: Triangle read by rows: T(n,k) = binomial(n+1,k+1) * binomial(4*n-3*k+1,k) / (n+1), 0<=k<=n.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,1,6,1,1,15,21,1,1,28,110,56,1,1,45,350,550,126,1,1,66,855,2800,2145,252,1,1,91,1771,9975,16660,7007,462,1,1,120,3276,28336,83790,79968,20020,792,1,1,153,5580,68796,318780,553014,325584,51480,1287,1
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(4*truncate((sqrtint(8*n+8)-1)/2)+3*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-3*n+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))
+; Formula: a(n) = truncate((binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(4*floor((sqrtint(8*n+8)-1)/2)+3*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-3*n+1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1))
 
 add $0,1
 mov $1,$0

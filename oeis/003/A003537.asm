@@ -1,5 +1,5 @@
 ; A003537: Divisors of 2^29 - 1.
-; Submitted by Hein
+; Submitted by GeirM
 ; 1,233,1103,2089,256999,486737,2304167,536870911
 
 #offset 1
@@ -36,7 +36,6 @@ lpb $2
       mov $6,536870911
       div $6,$1
       mov $0,$6
-      mov $2,1
     lpe
   lpe
   add $1,1

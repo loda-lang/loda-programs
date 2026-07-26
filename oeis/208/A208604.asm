@@ -4,10 +4,9 @@
 ; Formula: a(n) = 0^n-truncate((A131124(n)*(floor((n+1)/2)%2))/2)
 
 pow $1,$0
-add $0,1
 mov $2,$0
-sub $0,1
 seq $0,131124 ; Expansion of q^(-1) * (phi(-q) / psi(q^4))^2 in powers of q where phi(), psi() are Ramanujan theta functions.
+add $2,1
 div $2,2
 mod $2,2
 mul $2,$0

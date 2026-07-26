@@ -20,6 +20,6 @@ lpb $0
     sub $5,1
     max $1,$5
   lpe
-  mul $5,0
+  mov $5,0
 lpe
 mov $0,$1

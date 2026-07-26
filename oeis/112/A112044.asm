@@ -6,8 +6,7 @@ lpb $0
   mov $2,$0
   dif $2,$0
   mov $3,$0
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,40 ; The prime numbers.
   mul $2,$3
   sub $0,1

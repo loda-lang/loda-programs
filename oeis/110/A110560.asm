@@ -4,18 +4,17 @@
 
 add $0,1
 mov $3,$0
-sub $0,1
-mov $2,$0
-bin $2,2
-add $2,$0
-add $2,$3
-sub $4,$0
-fac $0,$4
-gcd $0,$2
-mov $1,$2
-div $1,$0
-mov $0,$1
-mul $1,2
-add $1,$0
-mov $0,$1
-div $0,3
+lpb $3
+  sub $3,2
+  mov $2,$0
+  sub $2,$3
+  mov $1,$2
+  add $2,1
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $2,$1
+  mul $2,2
+lpe
+div $2,4
+mov $0,$2
+mul $0,2
+add $0,1

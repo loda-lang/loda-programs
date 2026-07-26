@@ -1,34 +1,29 @@
 ; A046113: Coefficients in expansion of theta_3(q) * theta_3(q^6) in powers of q.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by loader3229
 ; 1,2,0,0,2,0,2,4,0,2,4,0,0,0,0,4,2,0,0,0,0,0,4,0,2,6,0,0,4,0,0,4,0,4,0,0,2,0,0,0,4,0,4,0,0,0,0,0,0,6,0,0,0,0,2,8,0,0,4,0,4,0,0,4,2,0,0,0,0,0,8,0,0,4,0,0,0,0,0,4
 
-mov $2,1
-mov $6,1
-mov $10,1
-mul $0,2
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
-    mov $9,10
-    add $9,$5
-    sub $4,$0
-    sub $4,1
-    mul $7,$$9
-    trn $4,3
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,$2
-  sub $0,1
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+mov $1,$0
+div $1,6
+nrt $1,2
+add $1,1
+lpb $1
+  trn $1,1
+  mov $2,$1
+  pow $2,2
+  mul $2,6
+  mov $3,$0
+  sub $3,$2
+  mov $4,$3
+  nrt $4,2
+  pow $4,2
+  equ $4,$3
+  mov $5,$1
+  neq $5,0
+  neq $3,0
+  add $3,$5
+  mov $6,2
+  pow $6,$3
+  mul $6,$4
+  add $7,$6
 lpe
-mov $0,$6
+mov $0,$7

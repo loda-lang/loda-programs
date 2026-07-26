@@ -1,11 +1,11 @@
 ; A279083: Numbers k such that there exists at least one tetrahedral number with exactly k divisors.
-; Submitted by Science United
+; Submitted by Geir.E.M
 ; 1,3,4,6,8,12,16,18,20,24,28,30,32,36,40
 
 #offset 1
 
-sub $0,1
 mov $1,$0
+sub $0,1
 lpb $0
   mov $2,$0
   trn $2,2
@@ -21,4 +21,3 @@ lpb $0
 lpe
 add $1,$2
 mov $0,$1
-add $0,1

@@ -1,5 +1,5 @@
 ; A003534: Divisors of 2^26 - 1.
-; Submitted by Hein
+; Submitted by Science United
 ; 1,3,2731,8191,8193,24573,22369621,67108863
 
 #offset 1
@@ -11,8 +11,7 @@ mov $3,$0
 geq $3,9
 lpb $3
   mov $3,0
-  mov $0,-1
-  mov $2,-1
+  mov $5,1
 lpe
 lpb $2
   mov $4,67108863

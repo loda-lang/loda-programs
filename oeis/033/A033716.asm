@@ -1,29 +1,29 @@
 ; A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,0,2,6,0,0,4,0,2,0,0,6,4,0,0,6,0,0,4,0,4,0,0,0,2,0,2,12,0,0,4,0,0,0,0,6,4,0,4,0,0,0,4,0,0,0,0,6,6,0,0,12,0,0,0,0,4,0,0,0,4,0,4,6,0,0,4,0,0,0,0,0,4,0,2,12,0,0,4
 
-mov $2,$0
-mov $7,-1
-pow $7,$0
-mul $7,10
-add $7,5
-mov $1,2
+mov $1,$0
+div $1,3
+nrt $1,2
+add $1,1
 lpb $1
-  sub $1,1
-  mov $0,$2
-  add $0,$1
-  trn $0,1
-  seq $0,38589 ; Sizes of successive clusters in hexagonal lattice A_2 centered at lattice point.
-  mov $3,$1
-  mul $3,$0
-  mov $4,$0
-  add $6,$3
+  trn $1,1
+  mov $2,$1
+  pow $2,2
+  mul $2,3
+  mov $3,$0
+  sub $3,$2
+  mov $4,$3
+  nrt $4,2
+  pow $4,2
+  equ $4,$3
+  mov $5,$1
+  neq $5,0
+  neq $3,0
+  add $3,$5
+  mov $6,2
+  pow $6,$3
+  mul $6,$4
+  add $7,$6
 lpe
-min $2,1
-mul $2,$4
-sub $6,$2
-mov $0,$6
-mul $0,$7
-div $0,15
-gcd $5,$0
-mov $0,$5
+mov $0,$7

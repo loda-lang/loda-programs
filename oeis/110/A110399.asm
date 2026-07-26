@@ -1,9 +1,32 @@
 ; A110399: Expansion of (theta_3(q)*theta_3(q^7) - 1)/2 in powers of q.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,0,1,0,0,1,2,1,0,2,0,0,0,0,3,0,0,0,0,0,0,2,0,1,0,0,1,2,0,0,4,0,0,0,1,2,0,0,0,0,0,2,2,0,0,0,0,1,0,0,0,2,0,0,2,0,0,0,0,0,0,1,5,0,0,2,0,0,0,2,2,0,0,0,0,2,0,2,0
-; Formula: a(n) = truncate(A033719(n)/2)
 
 #offset 1
 
-seq $0,33719 ; Coefficients in expansion of theta_3(q) * theta_3(q^7) in powers of q.
+mov $1,$0
+div $1,7
+nrt $1,2
+add $1,1
+lpb $1
+  trn $1,1
+  mov $2,$1
+  pow $2,2
+  mul $2,7
+  mov $3,$0
+  sub $3,$2
+  mov $4,$3
+  nrt $4,2
+  pow $4,2
+  equ $4,$3
+  mov $5,$1
+  neq $5,0
+  neq $3,0
+  add $3,$5
+  mov $6,2
+  pow $6,$3
+  mul $6,$4
+  add $7,$6
+lpe
+mov $0,$7
 div $0,2

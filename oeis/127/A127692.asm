@@ -1,6 +1,7 @@
 ; A127692: Expansion of psi(x^4) + x * psi(x^12) in powers of x where psi() is a Ramanujan theta function.
 ; Submitted by Science United
 ; 1,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+; Formula: a(n) = (sqrtint((2*n+1)/(3^valuation(2*n+1,3)))^2)==((2*n+1)/(3^valuation(2*n+1,3)))
 
 mul $0,2
 add $0,1

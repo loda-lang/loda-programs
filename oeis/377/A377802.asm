@@ -1,22 +1,20 @@
 ; A377802: Triangle read by rows: T(n, k) = (2 * (n+1)^2 + 7 - (-1)^n) / 8 - k.
-; Submitted by morse [E.R.] - BOINC.Italy
+; Submitted by loader3229
 ; 1,2,1,4,3,2,6,5,4,3,9,8,7,6,5,12,11,10,9,8,7,16,15,14,13,12,11,10,20,19,18,17,16,15,14,13,25,24,23,22,21,20,19,18,17,30,29,28,27,26,25,24,23,22,21,36,35,34,33,32,31,30,29,28,27,26,42,41,40,39,38,37,36,35,34,33,32,31
-; Formula: a(n) = -n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor(((floor((sqrtint(8*n)-1)/2)+2)^2)/4)+1
+; Formula: a(n) = floor((sqrtint(8*n)+1)/2)^2-n+truncate((floor((sqrtint(8*n)+1)/2)^2)/(-4))+1
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
+mov $2,$0
+mul $2,8
+nrt $2,2
 add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
-add $1,2
-pow $1,2
-div $1,4
-sub $1,$0
-mov $0,$1
+div $2,2
+mov $1,$2
+mul $1,$2
+div $1,-4
+sub $0,$1
+pow $2,2
+add $2,1
+sub $2,$0
+mov $0,$2

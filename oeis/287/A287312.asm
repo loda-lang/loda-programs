@@ -6,13 +6,18 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,20337 ; Numbers whose base-9 representation is the juxtaposition of two identical strings.
+  mov $7,$3
+  log $7,9
+  add $7,1
+  mov $6,9
+  pow $6,$7
+  mul $6,$3
+  add $3,$6
   mov $5,$3
   add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

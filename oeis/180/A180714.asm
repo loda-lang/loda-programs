@@ -1,7 +1,7 @@
 ; A180714: Sum of the x- and y-coordinates of a point moving in a clockwise spiral.
 ; Submitted by loader3229
 ; 0,1,2,1,0,-1,-2,-1,0,1,2,3,4,3,2,1,0,-1,-2,-3,-4,-3,-2,-1,0,1,2,3,4,5,6,5,4,3,2,1,0,-1,-2,-3,-4,-5,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,7,6,5,4,3,2,1,0,-1,-2,-3,-4,-5,-6,-7,-8,-7,-6,-5,-4,-3,-2,-1
-; Formula: a(n) = -truncate((-1)^truncate((sqrtint(4*n)+1)/2))*(-2*binomial(truncate((sqrtint(4*n)+1)/2),2)+n)+2*truncate((truncate((sqrtint(4*n)+1)/2)*truncate((-1)^truncate((sqrtint(4*n)+1)/2)))/2)
+; Formula: a(n) = -(-2*binomial(floor((sqrtint(4*n)+1)/2),2)+n)*(-1)^floor((sqrtint(4*n)+1)/2)+2*truncate((floor((sqrtint(4*n)+1)/2)*(-1)^floor((sqrtint(4*n)+1)/2))/2)
 
 mov $1,$0
 mul $1,4

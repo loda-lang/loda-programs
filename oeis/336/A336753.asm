@@ -1,7 +1,7 @@
 ; A336753: Largest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
 ; Submitted by loader3229
 ; 4,5,7,6,8,7,10,9,8,11,10,9,13,12,11,10,14,13,12,11,16,15,14,13,12,17,16,15,14,13,19,18,17,16,15,14,20,19,18,17,16,15,22,21,20,19,18,17,16,23,22,21,20,19,18,17,25,24,23,22,21,20,19,18,26,25,24,23,22,21,20,19,28,27,26,25,24,23,22,21
-; Formula: a(n) = -truncate((2*n-1)/2)+floor(((sqrtint(4*n-2)+3)^2)/4)
+; Formula: a(n) = -floor((2*n-1)/2)+floor(((sqrtint(4*n-2)+3)^2)/4)
 
 #offset 1
 

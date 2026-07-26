@@ -1,16 +1,15 @@
 ; A323735: a(n) is the largest minimal distance of a binary LCD [n,2] code.
-; Submitted by Raimund Barbeln
+; Submitted by loader3229
 ; 1,2,2,2,3,4,5,6,6,6,7,8,9,10,10,10,11,12,13,14,14,14,15,16,17,18,18,18,19,20,21,22,22,22,23,24,25,26,26,26,27,28,29,30,30,30,31,32,33,34,34,34,35,36,37,38,38,38,39,40,41,42,42,42,43,44,45,46,46,46,47,48,49,50,50,50,51,52,53,54
-; Formula: a(n) = truncate(((n+1)%6+4*n-4)/6)
+; Formula: a(n) = -floor((n+1)/6)+floor((5*n-3)/6)
 
 #offset 2
 
-sub $0,1
+sub $0,2
 mov $1,$0
-add $0,2
-mov $2,$0
-mod $2,6
-mov $0,4
-mul $0,$1
-add $0,$2
+mul $0,5
+add $0,7
 div $0,6
+add $1,3
+div $1,6
+sub $0,$1

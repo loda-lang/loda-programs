@@ -1,5 +1,5 @@
 ; A360280: Squares that are the hypotenuse of a primitive Pythagorean triangle.
-; Submitted by Cruncher Pete
+; Submitted by Bagoda Tes-X
 ; 25,169,289,625,841,1369,1681,2809,3721,4225,5329,7225,7921,9409,10201,11881,12769,15625,18769,21025,22201,24649,28561,29929,32761,34225,37249,38809,42025,48841,52441,54289,58081,66049,70225,72361,76729,78961,83521,85849,93025,97969
 
 #offset 1
@@ -37,8 +37,7 @@ lpb $2
 lpe
 mov $0,$1
 add $0,5
-mul $0,2
 pow $0,2
-div $0,16
-mul $0,4
+div $0,8
+mul $0,8
 add $0,1

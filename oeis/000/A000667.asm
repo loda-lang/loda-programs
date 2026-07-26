@@ -1,45 +1,19 @@
 ; A000667: Boustrophedon transform of all-1's sequence.
-; Submitted by Athlici
+; Submitted by arkiss
 ; 1,2,4,9,24,77,294,1309,6664,38177,243034,1701909,13001604,107601977,959021574,9157981309,93282431344,1009552482977,11568619292914,139931423833509,1781662223749884,23819069385695177,333601191667149054,4884673638115922509,74632315670093621224,1187810195329013662577,19660769860322449341994,337943740492346897832309,6023966680068031463069364,111214312601829345803969177,2124036911177808912457183734,41918320741725076522807066909,853953017876105014527904878304,17940231403145538170396324358977
 
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$0
 mov $2,$0
-lpb $2
-  mov $0,$3
-  sub $0,$2
-  add $0,1
-  mov $6,$0
-  mul $6,8
-  nrt $6,2
-  sub $6,1
-  div $6,2
-  mov $7,$6
-  add $7,1
-  bin $7,2
-  sub $0,$7
-  sub $0,1
-  mov $7,$0
-  mov $0,$6
-  bin $0,$7
-  sub $6,$7
-  mov $8,-1
-  pow $8,$6
-  mov $9,$6
-  seq $9,122045 ; Euler (or secant) numbers E(n).
-  seq $6,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-  gcd $6,$9
-  mul $6,$8
-  mul $0,$6
-  mov $4,0
-  gcd $4,$0
-  mov $5,0
-  gcd $5,$4
-  mov $0,$5
-  add $1,$5
-  sub $2,1
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$1
-add $0,1
+mov $0,$3

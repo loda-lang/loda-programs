@@ -1,15 +1,11 @@
 ; A289139: a(n) is the number of odd integers divisible by 7 in ]4*(n-1)^2, 4*n^2[.
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 0,0,1,2,2,2,3,4,4,5,6,6,6,7,8,8,9,10,10,10,11,12,12,13,14,14,14,15,16,16,17,18,18,18,19,20,20,21,22,22,22,23,24,24,25,26,26,26,27,28,28,29,30,30,30,31,32,32,33,34,34,34,35,36,36,37,38,38,38,39,40,40
-; Formula: a(n) = truncate((floor((4*floor((36*n+151)/28))/3)-3)/3)-1
+; Formula: a(n) = -floor((n+2)/7)+floor((5*n)/7)
 
-mul $0,36
-add $0,151
-div $0,28
-mul $0,4
-div $0,3
 mov $1,$0
-sub $1,3
-div $1,3
-mov $0,$1
-sub $0,1
+mul $0,5
+div $0,7
+add $1,2
+div $1,7
+sub $0,$1

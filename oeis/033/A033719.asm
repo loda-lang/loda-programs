@@ -1,12 +1,29 @@
 ; A033719: Coefficients in expansion of theta_3(q) * theta_3(q^7) in powers of q.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,2,0,0,2,0,0,2,4,2,0,4,0,0,0,0,6,0,0,0,0,0,0,4,0,2,0,0,2,4,0,0,8,0,0,0,2,4,0,0,0,0,0,4,4,0,0,0,0,2,0,0,0,4,0,0,4,0,0,0,0,0,0,2,10,0,0,4,0,0,0,4,4,0,0,0,0,4,0,4
-; Formula: a(n) = A324969(binomial(n,203)+1)*(-14*truncate(A000143(n)/14)+A000143(n))
 
 mov $1,$0
-seq $1,143 ; Number of ways of writing n as a sum of 8 squares.
-mod $1,14
-bin $0,203
-add $0,1
-seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
-mul $0,$1
+div $1,7
+nrt $1,2
+add $1,1
+lpb $1
+  trn $1,1
+  mov $2,$1
+  pow $2,2
+  mul $2,7
+  mov $3,$0
+  sub $3,$2
+  mov $4,$3
+  nrt $4,2
+  pow $4,2
+  equ $4,$3
+  mov $5,$1
+  neq $5,0
+  neq $3,0
+  add $3,$5
+  mov $6,2
+  pow $6,$3
+  mul $6,$4
+  add $7,$6
+lpe
+mov $0,$7

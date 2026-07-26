@@ -1,7 +1,7 @@
 ; A204242: Infinite symmetric matrix given by f(i,1)=1, f(1,j)=1, f(i,i)=2^i-1 and f(i,j)=0 otherwise, read by antidiagonals.
 ; Submitted by loader3229
 ; 1,1,1,1,3,1,1,0,0,1,1,0,7,0,1,1,0,0,0,0,1,1,0,0,15,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,31,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,63,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
-; Formula: a(n) = truncate(2^truncate((binomial(2*truncate((sqrtint(8*n)-1)/2)-4*gcd(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1,truncate((sqrtint(8*n)-1)/2))-2,2*truncate((sqrtint(8*n)-1)/2)-2*gcd(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1,truncate((sqrtint(8*n)-1)/2)))+1)/2))-1
+; Formula: a(n) = if(truncate((binomial(2*floor((sqrtint(8*n)-1)/2)-4*gcd(-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1,floor((sqrtint(8*n)-1)/2))-2,2*floor((sqrtint(8*n)-1)/2)-2*gcd(-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1,floor((sqrtint(8*n)-1)/2)))+1)/2)<=(-1),0,2^truncate((binomial(2*floor((sqrtint(8*n)-1)/2)-4*gcd(-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1,floor((sqrtint(8*n)-1)/2))-2,2*floor((sqrtint(8*n)-1)/2)-2*gcd(-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1,floor((sqrtint(8*n)-1)/2)))+1)/2))-1
 
 #offset 1
 

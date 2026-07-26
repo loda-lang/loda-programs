@@ -1,10 +1,8 @@
 ; A143431: Periodic length 8 sequence [1, -1, 1, -1, -1, 1, -1, 1, ...].
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1
-; Formula: a(n) = (-1)^floor((5*n)/4)
+; Formula: a(n) = if((sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1))==0,0,if(((sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1))^2)<=1,sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1),(sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1))/((sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1))^valuation(sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1),sign(bitor(n,-518))*((abs(bitor(n,-518))-1)%3+1)))))
 
-mul $0,5
-div $0,4
-mov $1,-1
-pow $1,$0
-mov $0,$1
+bor $0,-518
+dgr $0,4
+dir $0,$0

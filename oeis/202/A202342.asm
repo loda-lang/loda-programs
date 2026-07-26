@@ -1,6 +1,7 @@
 ; A202342: Numbers occurring exactly twice in Hofstadter H-sequence A005374.
 ; Submitted by Science United
 ; 1,4,5,7,10,13,14,17,18,20,23,24,26,29,32,33,35,38,41,42,45,46,48,51,54,55,58,59,61,64,65,67,70,73,74,77,78,80,83,84,86,89,92,93,95,98,101,102,105,106,108,111,112,114,117,120,121,123,126,129,130,133,134,136,139,142,143,146,147,149,152,153,155,158,161,162,164,167,170,171
+; Formula: a(n) = d(n-1)+a(n-1)+1, a(3) = 5, a(2) = 4, a(1) = 1, a(0) = 0, b(n) = if(floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)+1)/4),4)/2)==0,truncate((-c(n-1)+b(n-1)+1)/4),if((truncate((-c(n-1)+b(n-1)+1)/4)%floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)+1)/4),4)/2))==0,truncate((-c(n-1)+b(n-1)+1)/4)/floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)+1)/4),4)/2),truncate((-c(n-1)+b(n-1)+1)/4))), b(3) = -2, b(2) = -1, b(1) = 0, b(0) = 0, c(n) = gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)+1)/4),4)*c(n-1), c(3) = 16, c(2) = 8, c(1) = 8, c(0) = 2, d(n) = floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)+1)/4),4)/2), d(3) = 1, d(2) = 0, d(1) = 2, d(0) = 0
 
 #offset 1
 

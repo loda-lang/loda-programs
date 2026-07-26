@@ -1,18 +1,19 @@
 ; A308050: a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
-; Submitted by Geoff
+; Submitted by Rodney Duane
 ; 2,2,3,2,3,2,3,4,5,2,3,2,3,4,5,2,3,2,3,4,5,2,3,4,5,6,7,2,3,2,3,4,5,6,7,2,3,4,5,2,3,2,3,4,5,2,3,4,5,6,7,2,3,4,5,6,7,2,3,2,3,4,5,6,7,2,3,4,5,2,3,2,3,4,5,6,7,2,3,4
 
 #offset 4
 
-sub $0,2
-lpb $0
-  sub $0,1
+sub $0,4
+mov $2,$0
+mod $2,110
+add $2,2
+lpb $2
+  mov $3,$2
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   add $1,1
-  mov $2,$0
-  add $2,1
-  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $0,$2
+  sub $2,1
+  add $2,$3
 lpe
 mov $0,$1
-dgs $0,10
 add $0,2

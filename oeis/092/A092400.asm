@@ -1,23 +1,19 @@
 ; A092400: Fixed point of the morphism 1 -> 1121211, 2 -> 1121212121211, starting from a(1) = 1.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 1,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,2,1,2,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,2,1,2,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,2
+; Formula: a(n) = c(n-1)+1, b(n) = if((b(n-1)+1)==0,0,valuation(b(n-1)+1,3))%2+b(n-1)+1, b(1) = 2, b(0) = 1, c(n) = if((b(n-1)+1)==0,0,valuation(b(n-1)+1,3))%2, c(1) = 0, c(0) = 0
 
 #offset 1
 
-mov $1,2
-mov $2,1
+mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
-  sub $1,$2
   add $1,1
-  div $1,2
-  mul $2,4
-  bin $3,$2
-  add $3,$1
-  gcd $3,4
-  dif $1,2
-  mul $2,$3
+  mov $2,$1
+  lex $2,3
+  mod $2,2
+  add $1,$2
 lpe
-mov $0,$3
-div $0,3
+mov $0,$2
 add $0,1
