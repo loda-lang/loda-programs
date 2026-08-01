@@ -1,5 +1,5 @@
 ; A338690: Inverse Moebius transform of A209615.
-; Submitted by amargo133
+; Submitted by Shanman Racing
 ; 1,0,0,1,2,0,0,0,1,0,0,0,2,0,0,1,2,0,0,2,0,0,0,0,3,0,0,0,2,0,0,0,0,0,0,1,2,0,0,0,2,0,0,0,2,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,2,0,0,1,4,0,0,2,0,0,0,0,2,0,0,0,0,0,0,2
 
 #offset 1
@@ -24,20 +24,18 @@ div $6,2
 add $6,3
 lpb $6
   sub $6,$8
-  mov $10,$6
-  max $10,0
-  mul $10,4
-  mov $4,$10
+  mov $5,$6
+  max $5,0
+  mul $5,4
+  mov $4,$5
   nrt $4,2
-  add $10,2
-  mov $5,$10
+  add $5,2
   nrt $5,2
-  mov $10,$5
-  add $10,$4
-  mod $10,2
+  add $5,$4
+  mod $5,2
   mov $8,2
   add $8,$7
-  add $9,$10
+  add $9,$5
   add $7,2
 lpe
 mov $0,$9

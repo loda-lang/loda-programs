@@ -13,7 +13,7 @@ lpb $0
     add $9,$5
     mov $10,3
     sub $4,1
-    seq $7,3149 ; a(n) = Sum_{k=0..n} k!(n-k)!.
+    seq $7,3149 ; a(n) = Sum_{k=0..n} k!*(n - k)!.
     mul $7,$$9
     add $5,1
     add $6,$7

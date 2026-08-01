@@ -11,6 +11,5 @@ dgs $1,2
 mov $2,2
 pow $2,$1
 mul $2,$3
-mul $0,0
-add $0,$2
+mov $0,$2
 div $0,2

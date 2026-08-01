@@ -1,20 +1,16 @@
 ; A152714: Triangle read by rows: T(n,k) = 3^min(k, n-k).
 ; Submitted by loader3229
 ; 1,1,1,1,3,1,1,3,3,1,1,3,9,3,1,1,3,9,9,3,1,1,3,9,27,9,3,1,1,3,9,27,27,9,3,1,1,3,9,27,81,27,9,3,1,1,3,9,27,81,81,27,9,3,1,1,3,9,27,81,243,81,27,9,3,1,1,3,9,27,81,243,243,81,27,9,3,1,1,3
-; Formula: a(n) = if(min(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,3^min(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = 3^floor(gcd(-sqrtint(2*n)*(sqrtint(2*n)+1)+2*n+1,0)/2)
 
-add $0,1
+mul $0,2
 mov $1,$0
-mul $1,8
 nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
-sub $1,$0
-min $1,$0
-mov $0,3
-pow $0,$1
+fac $1,2
+sub $0,$1
+add $0,1
+gcd $0,0
+div $0,2
+mov $2,3
+pow $2,$0
+mov $0,$2

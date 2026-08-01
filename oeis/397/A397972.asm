@@ -1,10 +1,9 @@
 ; A397972: Lower (1,1/3) midsequence of triangular numbers (A000217) and squares (A000290); see Comments.
 ; Submitted by Science United
 ; 0,1,4,9,15,23,33,44,57,72,88,106,126,147,170,195,221,249,279,310,343,378,414,452,492,533,576,621,667,715,765,816,869,924,980,1038,1098,1159,1222,1287,1353,1421,1491,1562,1635,1710,1786,1864,1944,2025,2108
-; Formula: a(n) = floor((n*(5*n+3))/6)
+; Formula: a(n) = floor(binomial(5*n+2,2)/15)
 
-mov $1,$0
 mul $0,5
-add $0,3
-mul $0,$1
-div $0,6
+add $0,2
+bin $0,2
+div $0,15

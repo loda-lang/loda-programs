@@ -1,31 +1,41 @@
 ; A000899: Number of solutions to the rook problem on an n X n board having a certain symmetry group (see Robinson for details).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 0,0,0,1,9,70,571,4820,44676,450824,4980274,59834748,778230060,10896609768,163456629604,2615335902176,44460874280032,800296440705472,15205636325496568,304112744618157872,6386367741011250672,140500090807262405024,3231502091535943714096,77556050212036641134016,1938901255392207895918272,50411432640686081723339136,1361108681301532474486895392,38111043076459701202498769600,1105220249217437068220540940736,33156607476523725243988764677248,1027854831772239430203448654378048
-; Formula: a(n) = truncate((n!+2*A000898(floor(n/2))-floor((2*2^floor(n/2)*floor(n/2)!)/2)-2*A000085(n))/8)
 
 #offset 1
 
-mov $1,$0
-seq $1,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-mul $1,2
-mov $2,$0
-div $2,2
-mov $5,1
-fac $5,$2
-mul $5,2
-mov $4,2
-pow $4,$2
-mul $4,$5
-mov $2,$4
-div $2,2
-mov $3,$0
+mov $1,1
+mov $2,1
+mov $4,1
+mov $7,1
+lpb $0
+  sub $0,2
+  add $3,1
+  mul $7,$3
+  mul $1,$3
+  add $1,$2
+  add $3,1
+  mul $2,$3
+  add $2,$1
+  add $6,$7
+  mov $7,$4
+  add $4,$6
+lpe
+sub $2,$1
+add $3,$0
+mul $4,2
+mul $0,$2
+add $0,$1
+mov $8,1
+fac $8,$3
 div $3,2
-seq $3,898 ; a(n) = 2*(a(n-1) + (n-1)*a(n-2)) for n >= 2 with a(0) = 1.
-mul $3,2
-mov $6,1
-fac $6,$0
-mov $0,$6
-sub $0,$1
-sub $0,$2
-add $0,$3
+mov $5,1
+fac $5,$3
+mov $9,2
+pow $9,$3
+mul $9,$5
+mul $0,-2
+add $0,$8
+sub $0,$9
+add $0,$4
 div $0,8

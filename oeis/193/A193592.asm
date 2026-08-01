@@ -1,7 +1,7 @@
 ; A193592: Triangle read by rows having n-th row 1, n, n-1, n-2,..., 2, 1 for n>=0.
 ; Submitted by Ralfy
 ; 1,1,1,1,2,1,1,3,2,1,1,4,3,2,1,1,5,4,3,2,1,1,6,5,4,3,2,1,1,7,6,5,4,3,2,1,1,8,7,6,5,4,3,2,1,1,9,8,7,6,5,4,3,2,1,1,10,9,8,7,6,5,4,3,2,1,1,11,10,9,8,7,6,5,4,3,2,1,1,12
-; Formula: a(n) = max(-n+binomial(truncate((sqrtint(8*n)+3)/2),2),1)
+; Formula: a(n) = max(-n+binomial(floor((sqrtint(8*n)+3)/2),2),1)
 
 mov $1,$0
 mul $1,8

@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,191336 ; (A022838 mod 2)+(A054406 mod 2).
-  add $3,2
-  equ $3,2
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

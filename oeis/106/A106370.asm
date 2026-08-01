@@ -1,4 +1,4 @@
-; A106370: Smallest b>1 such that n contains no zeros in its base b representation.
+; A106370: Smallest b > 1 such that n contains no zeros in its base b representation.
 ; Submitted by gemini8
 ; 2,3,2,3,3,4,2,3,4,4,4,5,3,3,2,3,3,5,5,6,4,3,3,5,3,3,4,6,4,4,2,5,5,5,6,5,4,4,4,3,3,4,3,3,4,4,4,5,3,3,6,3,3,4,4,5,4,4,4,7,4,4,2,5,6,5,3,3,5,3,3,5,5,5,7,3,3,7,3,3
 

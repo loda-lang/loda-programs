@@ -1,15 +1,18 @@
 ; A253903: The characteristic function of square pyramidal numbers.
-; Submitted by mg13 [HWU]
+; Submitted by loader3229
 ; 1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = c(n+1), b(n) = ((max(b(n-1)-1,0)==0)+d(n-1))^2*(max(b(n-1)-1,0)==0)+max(b(n-1)-1,0), b(2) = 4, b(1) = 1, b(0) = 0, c(n) = max(b(n-1)-1,0)==0, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = (max(b(n-1)-1,0)==0)+d(n-1), d(2) = 2, d(1) = 1, d(0) = 0
 
-mov $2,1
-mov $3,1
-mov $1,$0
-lpb $1
-  sub $1,$2
-  add $3,2
-  add $2,$3
+add $0,1
+lpb $0
+  sub $0,1
+  trn $1,1
+  mov $2,$1
+  equ $2,0
+  add $3,$2
+  mov $4,$3
+  pow $4,2
+  mul $4,$2
+  add $1,$4
 lpe
-add $1,1
-mov $0,$1
-equ $0,1
+mov $0,$2

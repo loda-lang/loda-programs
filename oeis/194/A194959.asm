@@ -9,10 +9,8 @@ sub $0,1
 mul $0,2
 mov $1,$0
 nrt $1,2
-mov $2,$1
-add $1,1
-mul $2,$1
-sub $0,$2
+fac $1,2
+sub $0,$1
 mul $0,2
 add $0,1
 gcd $0,0

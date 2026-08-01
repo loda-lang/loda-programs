@@ -1,22 +1,22 @@
 ; A124791: Row sums of number triangle A124790.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,1,3,5,13,29,73,181,465,1205,3171,8425,22597,61073,166195,454949,1251985,3461573,9611191,26787377,74916661,210178457,591347989,1668172841,4717282753,13369522249,37970114703,108045430901
+; Formula: a(n) = bitor(b(n-1),1), a(2) = 1, a(1) = 1, a(0) = 1, b(n) = truncate((n*(3*bitor(b(n-2),1)+2*bitor(b(n-1),1)))/(n+2)), b(2) = 2, b(1) = 1, b(0) = 0
 
-mov $1,1
-sub $2,$0
-sub $2,1
-mov $3,1
+mov $1,3
+mov $2,1
 lpb $0
   sub $0,1
-  sub $1,$3
-  add $2,1
-  add $4,1
-  add $5,$3
-  add $3,$1
-  mul $1,$2
-  div $1,$4
-  add $3,$1
-  add $3,$5
+  bor $3,1
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
+  sub $4,2
+  mul $4,$2
+  div $4,$1
+  add $1,1
+  mov $2,$3
+  mov $3,$4
 lpe
-sub $3,$5
-mov $0,$3
+mov $0,$2

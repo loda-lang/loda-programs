@@ -1,16 +1,18 @@
 ; A362777: Triangular array read by rows: T(n,k) = n!*k + 1, n >= 1, 1 <= k <= n.
-; Submitted by JagDoc
+; Submitted by loader3229
 ; 2,3,5,7,13,19,25,49,73,97,121,241,361,481,601,721,1441,2161,2881,3601,4321,5041,10081,15121,20161,25201,30241,35281,40321,80641,120961,161281,201601,241921,282241,322561,362881,725761,1088641,1451521,1814401,2177281,2540161,2903041,3265921
 
 #offset 1
 
 mov $1,$0
-seq $1,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-add $2,$0
-lpb $2
-  mul $1,$2
-  sub $2,1
-lpe
-mov $0,$1
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+mov $2,$1
+bin $2,2
+sub $0,$2
+mov $2,1
+fac $2,$1
+mul $0,$2
 add $0,1

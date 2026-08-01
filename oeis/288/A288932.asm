@@ -1,18 +1,21 @@
 ; A288932: Fixed point of the mapping 00->1000, 10->10101, starting with 00.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-lpb $1
-  sub $1,2
-  mov $2,3
-  lpb $1
-    sub $1,$2
-    mul $2,2
-  lpe
+lpb $0
+  sub $0,1
+  max $0,1
+  trn $1,1
+  mov $2,$1
+  equ $2,0
+  add $3,$2
+  mov $4,$3
+  lex $4,2
+  mul $4,$2
+  add $1,$4
 lpe
-mov $0,$1
-equ $0,0
+mov $0,$3
+add $0,1
+mod $0,2

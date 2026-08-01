@@ -1,7 +1,7 @@
 ; A224701: Table read by antidiagonals of numbers of form (2^n - 1)*2^(m+3) + 5 where n>=1, m>=1.
 ; Submitted by loader3229
 ; 21,37,53,69,101,117,133,197,229,245,261,389,453,485,501,517,773,901,965,997,1013,1029,1541,1797,1925,1989,2021,2037,2053,3077,3589,3845,3973,4037,4069,4085,4101,6149,7173,7685,7941,8069,8133,8165,8181,8197,12293,14341,15365,15877,16133,16261,16325,16357,16373,16389,24581,28677,30725,31749,32261,32517,32645,32709,32741,32757,32773,49157,57349,61445,63493,64517,65029,65285,65413,65477,65509,65525,65541,98309
-; Formula: a(n) = 16*truncate((truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))*(truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))-2)-2)/2)+21
+; Formula: a(n) = 16*(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))-1)*if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))+5
 
 #offset 1
 
@@ -14,18 +14,13 @@ mov $3,$1
 add $3,1
 bin $3,2
 sub $0,$3
-sub $0,1
 sub $1,$0
-add $0,2
+add $1,1
 mov $2,2
 pow $2,$0
-sub $2,2
-mov $0,$2
-mov $2,2
-pow $2,$1
-mul $2,$0
-mov $0,$2
-sub $0,2
-div $0,2
+sub $2,1
+mov $0,2
+pow $0,$1
+mul $0,$2
 mul $0,16
-add $0,21
+add $0,5

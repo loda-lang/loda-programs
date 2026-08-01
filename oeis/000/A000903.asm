@@ -1,31 +1,45 @@
 ; A000903: Number of inequivalent ways of placing n nonattacking rooks on n X n board up to rotations and reflections of the board.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,1,2,7,23,115,694,5282,46066,456454,4999004,59916028,778525516,10897964660,163461964024,2615361578344,44460982752488,800296985768776,15205638776753680,304112757426239984,6386367801916347184,140500091137140820528,3231502093185301751456,77556050221273226549920,1938901255440538607925664,50411432640965327219349344,1361108681303055565751793088,38111043076468763923174549696,1105220249217488420415660378560,33156607476524039415090248590144,1027854831772241274227943958889344
-; Formula: a(n) = max(truncate((n!+2*A000085(n)+2*A037224(n)+floor((2*2^floor(n/2)*floor(n/2)!)/2))/8),1)
 
 #offset 1
 
-mov $1,$0
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,2
+  add $3,1
+  mul $1,$3
+  add $1,$2
+  add $3,1
+  mul $2,$3
+  add $2,$1
+lpe
+sub $2,$1
+add $3,$0
+mul $0,$2
+add $0,$1
+mul $0,2
+mov $1,$3
 div $1,2
 mov $5,1
 fac $5,$1
-mul $5,2
 mov $4,2
 pow $4,$1
 mul $4,$5
-mov $1,$4
-div $1,2
-mov $2,$0
-seq $2,37224 ; Number of permutations p of {1,2,3...,n} that are fixed points under the operation of first reversing p, then taking the inverse.
-mul $2,2
-mov $3,$0
-seq $3,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-mul $3,2
+mov $9,$3
+div $9,4
+mov $7,$9
+mov $8,$3
+ban $8,2
+bxo $8,2
+add $9,1
+fac $9,$7
+mul $9,$8
 mov $6,1
-fac $6,$0
-mov $0,$6
-add $0,$1
-add $0,$2
-add $0,$3
+fac $6,$3
+add $0,$4
+add $0,$9
+add $0,$6
 div $0,8
 max $0,1

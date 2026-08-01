@@ -1,6 +1,7 @@
 ; A367269: Triangle T(n, k) read by rows and based on A042948 yields a permutation of the natural numbers.
 ; Submitted by mg13 [HWU]
 ; 1,4,3,6,5,2,13,12,9,8,15,14,11,10,7,26,25,22,21,18,17,28,27,24,23,20,19,16,43,42,39,38,35,34,31,30,45,44,41,40,37,36,33,32,29,64,63,60,59,56,55,52,51,48,47,66,65,62,61,58,57,54,53,50,49,46,89,88,85,84,81,80,77,76,73,72,69,68
+; Formula: a(n) = 2*if((floor((sqrtint(8*n+8)-1)/2)%2)==0,floor((sqrtint(8*n+8)-1)/2)/2,floor((sqrtint(8*n+8)-1)/2))+2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-n-2*truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+1
 
 add $0,1
 mov $1,$0

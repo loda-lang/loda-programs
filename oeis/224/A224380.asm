@@ -1,7 +1,7 @@
 ; A224380: Table read by antidiagonals of numbers of form (2^n -1)*2^(m+2) + 3 where n>=1, m>=1.
 ; Submitted by loader3229
 ; 11,19,27,35,51,59,67,99,115,123,131,195,227,243,251,259,387,451,483,499,507,515,771,899,963,995,1011,1019,1027,1539,1795,1923,1987,2019,2035,2043,2051,3075,3587,3843,3971,4035,4067,4083,4091,4099,6147,7171,7683,7939,8067,8131,8163,8179,8187,8195,12291,14339,15363,15875,16131,16259,16323,16355,16371,16379,16387,24579,28675,30723,31747,32259,32515,32643,32707,32739,32755,32763,32771,49155
-; Formula: a(n) = 8*truncate((truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))*(truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))-2)-2)/2)+11
+; Formula: a(n) = 8*(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))-1)*if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))+3
 
 #offset 1
 
@@ -14,18 +14,13 @@ mov $3,$1
 add $3,1
 bin $3,2
 sub $0,$3
-sub $0,1
 sub $1,$0
-add $0,2
+add $1,1
 mov $2,2
 pow $2,$0
-sub $2,2
-mov $0,$2
-mov $2,2
-pow $2,$1
-mul $2,$0
-mov $0,$2
-sub $0,2
-div $0,2
+sub $2,1
+mov $0,2
+pow $0,$1
+mul $0,$2
 mul $0,8
-add $0,11
+add $0,3

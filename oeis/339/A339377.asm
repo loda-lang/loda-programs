@@ -15,14 +15,12 @@ lpb $0
   sub $0,$5
   mov $4,$0
   max $4,0
+  add $6,2
   mov $7,$4
   nrt $4,2
   pow $4,2
   equ $4,$7
-  equ $7,0
   mul $4,2
-  sub $4,$7
-  add $6,2
   add $3,$4
   mov $5,2
   mul $5,$6
@@ -30,3 +28,4 @@ lpe
 mov $0,$3
 sub $0,$2
 add $0,$1
+sub $0,1

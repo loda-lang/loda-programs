@@ -1,11 +1,25 @@
 ; A119384: Ten's complement of the factorials.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 9,8,4,76,880,280,4960,59680,637120,6371200,60083200,520998400,3772979200,12821708800,8692325632000,79077210112000,644312571904000,3597626294272000,878354899591168000,7567097991823360000,48909057828290560000,8875999272222392320000
-; Formula: a(n) = A089186(A249769(2*n-1))
+; Formula: a(n) = 10^(logint(c(max(2*n-2,0))+min(2*n-2,(2*n-2)%2),10)+1)-c(max(2*n-2,0))-min(2*n-2,(2*n-2)%2), b(n) = b(n-2)+1, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = c(n-2)*(b(n-2)+2), c(3) = 2, c(2) = 2, c(1) = 1, c(0) = 1
 
 #offset 1
 
+mov $4,1
 mul $0,2
-sub $0,1
-seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
-seq $0,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).
+sub $0,2
+lpb $0
+  sub $0,2
+  mov $5,$1
+  add $5,2
+  add $1,1
+  mul $4,$5
+lpe
+add $0,$4
+mov $2,$0
+log $2,10
+add $2,1
+mov $3,10
+pow $3,$2
+sub $3,$0
+mov $0,$3

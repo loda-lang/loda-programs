@@ -5,8 +5,7 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
-max $4,$2
+max $4,$0
 lpb $4
   sub $4,1
   mov $0,$2
@@ -16,7 +15,6 @@ lpb $4
   bin $1,$0
   mov $5,$0
   seq $5,338814 ; Expansion of e.g.f. log(Product_{k>0} (1 + x^k)^(1/k)).
-  sub $0,1
   mul $1,$5
   add $3,$1
 lpe

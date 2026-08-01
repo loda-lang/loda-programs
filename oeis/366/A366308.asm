@@ -18,20 +18,18 @@ mul $4,4
 nrt $4,2
 div $4,2
 sub $4,1
-max $10,$4
-mov $9,$10
-add $10,1
-seq $10,19554 ; Smallest number whose square is divisible by n.
-div $9,$10
+max $7,$4
+mov $9,$7
+add $7,1
+seq $7,19554 ; Smallest number whose square is divisible by n.
+div $9,$7
 mov $8,$9
 add $8,1
 pow $8,2
 mul $8,4
 nrt $8,2
 div $8,2
-mov $7,$4
-div $7,$8
-mov $4,$7
+div $4,$8
 add $4,1
 pow $4,2
 mov $2,$0

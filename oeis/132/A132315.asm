@@ -1,37 +1,28 @@
 ; A132315: Sum of the non-fourth powers less than or equal to n.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,2,5,9,14,20,27,35,44,54,65,77,90,104,119,119,136,154,173,193,214,236,259,283,308,334,361,389,418,448,479,511,544,578,613,649,686,724,763,803,844,886,929,973,1018,1064,1111,1159,1208,1258,1309,1361,1414,1468
 
 #offset 1
 
-mov $2,2
-mov $3,5
-mov $4,9
-mov $5,14
-mov $6,20
-mov $7,27
-mov $8,35
-mov $9,44
-mov $10,54
-mov $11,65
-mov $12,77
-mov $13,90
-mov $14,104
-mov $15,119
-mov $16,119
-mov $17,136
-mov $18,154
-sub $0,1
-lpb $0
-  mul $1,0
-  rol $1,18
-  mov $19,$16
-  mul $19,-3
-  add $18,$15
-  add $18,$19
-  mov $19,$17
-  mul $19,3
-  sub $0,1
-  add $18,$19
+mov $27,$0
+mov $29,$0
+lpb $29
+  clr $0,27
+  mov $5,4
+  sub $29,1
+  mov $0,$27
+  sub $0,$29
+  mov $1,$0
+  lpb $1
+    add $4,3
+    pow $5,2
+    mov $18,$1
+    lpb $1
+      dif $1,$5
+      sub $1,2
+      gcd $5,$4
+    lpe
+  lpe
+  add $28,$18
 lpe
-mov $0,$1
+mov $0,$28

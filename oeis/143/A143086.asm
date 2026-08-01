@@ -1,19 +1,18 @@
 ; A143086: Triangle read by rows: T(n,k) = 2^(k + 1) - 1 if k < = floor(n/2), otherwise 2^(n - k + 1) - 1, for 0 <= k <= n.
-; Submitted by Ryan Hothersall
+; Submitted by loader3229
 ; 1,1,1,1,3,1,1,3,3,1,1,3,7,3,1,1,3,7,7,3,1,1,3,7,15,7,3,1,1,3,7,15,15,7,3,1,1,3,7,15,31,15,7,3,1,1,3,7,15,31,31,15,7,3,1,1,3,7,15,31,63,31,15,7,3,1,1,3,7,15,31,63,63,31,15,7,3,1,1,3
+; Formula: a(n) = 2*2^floor(gcd(-sqrtint(2*n)*(sqrtint(2*n)+1)+2*n+1,0)/2)-1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-sub $2,$0
-min $2,$0
-add $2,1
-mov $0,$2
-lpb $0
-  sub $0,1
-  mul $1,2
-  add $1,2
-lpe
-mov $0,$1
+mul $0,2
+mov $1,$0
+nrt $1,2
+fac $1,2
+sub $0,$1
+add $0,1
+gcd $0,0
 div $0,2
+mov $2,2
+pow $2,$0
+mov $0,$2
+mul $0,2
+sub $0,1

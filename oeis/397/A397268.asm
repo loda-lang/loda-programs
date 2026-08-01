@@ -1,16 +1,14 @@
 ; A397268: Lower (-1,2) midsequence of (floor[n/2]^2) and (ceiling[n/2]^2); see Comments.
-; Submitted by [BOINCstats] CRNabein
+; Submitted by Science United
 ; 0,2,1,7,4,14,9,23,16,34,25,47,36,62,49,79,64,98,81,119,100,142,121,167,144,194,169,223,196,254,225,287,256,322,289,359,324,398,361,439,400,482,441,527,484,574,529,623,576,674,625,727,676,782,729,839,784,898,841,959,900
-; Formula: a(n) = floor((n%2+n)/2)^2+floor((2*n*(n%2))/2)
+; Formula: a(n) = floor(n/2)^2+2*n*(n%2)
 
-mov $1,$0
 mov $2,$0
 mul $2,2
-mod $0,2
-add $1,$0
+mov $1,$0
 div $1,2
 pow $1,2
+mod $0,2
 mul $0,$2
-div $0,2
 add $1,$0
 mov $0,$1

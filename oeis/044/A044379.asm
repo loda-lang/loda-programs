@@ -15,9 +15,7 @@ div $1,11
 mul $1,23
 add $1,4
 add $0,$1
-mov $1,2
-add $1,$0
-add $0,$1
-mul $0,5
+mul $0,10
+add $0,10
 div $0,3
 sub $0,93

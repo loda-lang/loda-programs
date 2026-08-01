@@ -1,7 +1,7 @@
 ; A025664: Exponent of 7 (value of j) in n-th number of form 2^i*7^j.
 ; Submitted by BrandyNOW
 ; 0,0,0,1,0,1,0,1,0,2,1,0,2,1,0,2,1,0,3,2,1,0,3,2,1,0,3,2,1,0,4,3,2,1,0,4,3,2,1,0,4,3,2,1,0,5,4,3,2,1,0,5,4,3,2,1,0,5,4,3,2,1,6,0,5,4,3,2,1,6,0,5,4,3,2,1,6,0,5,4
-; Formula: a(n) = logint(truncate(A003591(n)/truncate(2^A025637(n))),7)
+; Formula: a(n) = logint(floor(A003591(n)/(2^A025637(n))),7)
 
 #offset 1
 

@@ -1,35 +1,19 @@
 ; A269701: Cyclic Fibonacci sequence, restricted to maximum=6.
-; Submitted by Sabroe_SMC
+; Submitted by loader3229
 ; 0,1,1,2,3,5,2,1,3,4,1,5,6,5,5,4,3,1,4,5,3,2,5,1,6,1,1,2,3,5,2,1,3,4,1,5,6,5,5,4,3,1,4,5,3,2,5,1,6,1,1,2,3,5,2,1,3,4,1,5,6,5,5,4,3,1,4,5,3,2,5,1,6,1,1,2,3,5,2,1
+; Formula: a(n) = b(n+1), b(n) = sumdigits(c(n-1),7), b(2) = 1, b(1) = 0, b(0) = 0, c(n) = floor((3*(sumdigits(c(n-1),7)+sumdigits(c(n-2),7))^1)/3), c(2) = 1, c(1) = 1, c(0) = 0
 
-mov $1,$0
-mov $4,1
+add $0,1
 lpb $0
-  mul $7,$4
-  mul $7,2
-  mov $8,$3
-  pow $8,2
-  mov $9,$4
-  pow $9,2
-  sub $7,$8
-  add $8,$9
-  mov $9,$8
-  sub $9,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mul $9,$6
-  div $0,2
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
+  sub $0,1
+  dgs $3,7
+  add $2,$3
+  pow $2,$1
+  mov $4,3
+  mul $4,$2
+  div $4,3
+  mov $1,1
+  mov $2,$3
+  mov $3,$4
 lpe
-mov $0,$3
-dgr $0,7
+mov $0,$2

@@ -1,4 +1,4 @@
-; A162693: Strictly positive numbers n such that 30*n/(30+n) are integers.
+; A162693: Strictly positive numbers k such that 30*k/(30+k) are integers.
 ; Submitted by Skillz
 ; 6,15,20,30,45,60,70,120,150,195,270,420,870
 

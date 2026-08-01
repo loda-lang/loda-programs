@@ -1,20 +1,34 @@
 ; A109194: Number of returns to the x-axis (i.e., d or u steps hitting the x-axis) in all Grand Motzkin paths of length n. (A Grand Motzkin path of length n is a path in the half-plane x>=0, starting at (0,0), ending at (n,0) and consisting of steps u=(1,1), d=(1,-1) and h=(1,0).).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,6,22,70,224,700,2174,6702,20572,62920,191932,584220,1775258,5386846,16326734,49435150,149557436,452133880,1366012832,4124825872,12449394278,37558361290,113266431860,341467468420,1029119688014,3100728586290,9340155873574,28128513051622,84693540280384,254960105285292,767395602354158,2309391043916974,6948836033589836,20905850128482760,62888185770783568,189155784065955072,568883061352489574,1710733508341886346,5143995512256731944,15466081047631184824,46496885031860408474,139776289042818055054
+; Formula: a(n) = 2*truncate((3*d(n-1)+e(n-1))/4), b(n) = c(n-1), b(4) = 3, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = truncate((n*(3*c(n-2)+2*c(n-1)))/(n+2)), c(4) = 6, c(3) = 3, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 3*d(n-1)+b(n-1)+c(n-1), d(4) = 46, d(3) = 14, d(2) = 4, d(1) = 1, d(0) = 0, e(n) = -e(n-1)+b(n-1)+c(n-1), e(4) = 2, e(3) = 2, e(2) = 0, e(1) = 1, e(0) = 0
 
 #offset 2
 
-sub $0,2
-mov $1,1
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,187306 ; Alternating sum of Motzkin numbers A001006.
-  mul $1,3
-  add $1,$0
+mov $1,3
+mov $2,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $5,3
+  add $5,$2
+  add $5,$3
+  mul $6,-1
+  add $6,$2
+  add $6,$3
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
+  sub $4,2
+  mul $4,$2
+  div $4,$1
+  add $1,1
+  mov $2,$3
+  mov $3,$4
 lpe
-mov $0,$1
+mov $0,$5
+mul $0,3
+add $0,$6
+div $0,4
 mul $0,2

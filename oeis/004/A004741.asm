@@ -1,19 +1,17 @@
 ; A004741: Concatenation of sequences (1,3,..,2n-1,2n,2n-2,..,2) for n >= 1.
 ; Submitted by loader3229
 ; 1,2,1,3,4,2,1,3,5,6,4,2,1,3,5,7,8,6,4,2,1,3,5,7,9,10,8,6,4,2,1,3,5,7,9,11,12,10,8,6,4,2,1,3,5,7,9,11,13,14,12,10,8,6,4,2,1,3,5,7,9,11,13,15,16,14,12,10,8,6,4,2,1,3,5,7,9,11,13,15
-; Formula: a(n) = floor(gcd(-8*sqrtint(n-1)*(sqrtint(n-1)+1)+8*n-6,0)/4)+1
+; Formula: a(n) = floor(gcd(-4*sqrtint(n-1)*(sqrtint(n-1)+1)+4*n-3,0)/2)+1
 
 #offset 1
 
 sub $0,1
 mov $1,$0
 nrt $1,2
-mov $2,$1
-add $1,1
-mul $2,$1
-sub $0,$2
-mul $0,8
-add $0,2
+fac $1,2
+sub $0,$1
+mul $0,4
+add $0,1
 gcd $0,0
-div $0,4
+div $0,2
 add $0,1
