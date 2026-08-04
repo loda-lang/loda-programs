@@ -1,0 +1,10 @@
+; A397569: a(1) = 0; for n >= 2, a(n) is the smallest number whose Hamming distance from a(n-1) is Fibonacci(n).
+; Submitted by Josemi
+; 0,1,2,5,26,229,7962,2089189,17177779994,36028779841183973,618970019606661357608378138,22300745198530622522565698665987003897602277,13803492693581127574869511702253305706371595421775074444338044549996314
+; Formula: a(n) = A006068(A048721(n-1))
+
+#offset 1
+
+sub $0,1
+seq $0,48721 ; Binary packing of Fibonacci sequence A000045.
+seq $0,6068 ; a(n) is Gray-coded into n.
