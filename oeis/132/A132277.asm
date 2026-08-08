@@ -1,0 +1,73 @@
+; A132277: Triangle read by rows: T(n,k) is number of paths in the first quadrant from (0,0) to (n,0) using steps U=(1,1), D=(1,-1), h=(1,0) and H=(2,0), having exactly k h-steps.
+; Submitted by loader3229
+; 1,0,1,2,0,1,0,5,0,1,6,0,9,0,1,0,25,0,14,0,1,22,0,66,0,20,0,1,0,129,0,140,0,27,0,1,90,0,450,0,260,0,35,0,1,0,681,0,1210,0,441,0,44,0,1,394,0,2955,0,2765,0,700,0,54,0,1,0,3653,0,9625,0,5642,0,1056,0,65,0,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  add $3,1
+  sub $4,$9
+  sub $4,1
+  mul $4,-1
+  add $4,$8
+  mov $7,-1
+  bin $7,$4
+  equ $7,1
+  mul $8,-1
+  sub $8,1
+  add $8,$4
+  div $4,2
+  bin $8,$4
+  mul $7,$8
+  mov $4,$7
+  gcd $4,$7
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $13,$10
+  add $13,1
+  bin $13,2
+  sub $5,$13
+  sub $5,1
+  mov $11,$5
+  mov $5,$10
+  bin $5,$11
+  sub $10,$11
+  mov $12,$10
+  dif $12,2
+  bin $10,$12
+  add $12,1
+  div $10,$12
+  mul $5,$10
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

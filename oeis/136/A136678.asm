@@ -1,0 +1,64 @@
+; A136678: Triangle read by rows: n-th row (n>=0) gives coefficients of characteristic polynomial of n X n generalized Cartan matrix M defined in Comments.
+; Submitted by loader3229
+; 1,2,-1,2,-4,1,2,-9,6,-1,1,-16,20,-8,1,0,-24,50,-35,10,-1,-2,-32,104,-112,54,-12,1,-4,-38,190,-293,210,-77,14,-1,-7,-40,314,-664,659,-352,104,-16,1,-10,-35,478,-1349,1772,-1286,546,-135,18,-1,-14,-20,677,-2512,4234,-3992,2274,-800,170,-20,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  add $3,1
+  mul $4,8
+  nrt $4,2
+  add $4,3
+  div $4,2
+  bin $4,2
+  add $4,1
+  sub $4,$7
+  mod $4,2
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $8,$9
+  add $8,1
+  bin $8,2
+  sub $5,$8
+  sub $9,1
+  add $9,$5
+  mul $5,2
+  sub $5,1
+  mov $8,$9
+  trn $8,1
+  bin $8,$5
+  mul $8,-2
+  mov $10,1
+  add $10,$9
+  bin $10,$5
+  add $10,$8
+  div $5,2
+  mov $11,-1
+  pow $11,$5
+  mul $10,$11
+  mul $4,$10
+  add $6,$4
+lpe
+mov $0,$6

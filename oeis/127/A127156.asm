@@ -1,0 +1,67 @@
+; A127156: Triangle read by rows: T(n,k) is the number of Dyck paths of semilength n starting with exactly k consecutive pyramids. A pyramid in a Dyck path is a factor of the form U^j D^j (j>0), starting at the x-axis. Here U=(1,1) and D=(1,-1). This definition differs from the one in A091866.
+; Submitted by loader3229
+; 1,0,1,0,1,1,1,1,2,1,5,2,3,3,1,19,7,5,6,4,1,67,26,12,11,10,5,1,232,93,38,23,21,15,6,1,804,325,131,61,44,36,21,7,1,2806,1129,456,192,105,80,57,28,8,1,9878,3935,1585,648,297,185,137,85,36,9,1,35072,13813,5520
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $10,$8
+  add $10,1
+  bin $10,2
+  sub $4,1
+  sub $4,$10
+  sub $4,$8
+  mov $8,1
+  add $8,$4
+  add $4,$8
+  mov $7,$8
+  bin $7,$4
+  sub $8,3
+  bin $8,$4
+  add $8,$7
+  mov $9,0
+  gcd $9,$8
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $12,$5
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $13,$12
+  add $13,1
+  bin $13,2
+  sub $5,$13
+  sub $5,1
+  mov $11,$12
+  bin $11,$5
+  add $5,1
+  bin $12,$5
+  sub $11,$12
+  mov $4,$9
+  mul $4,$11
+  add $6,$4
+lpe
+mov $0,$6

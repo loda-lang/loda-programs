@@ -1,0 +1,53 @@
+; A126125: Triangle equal to the matrix square of the triangle binomial(n,floor((n+1-(-1)^(n+k)*(k+1))/2)).
+; Submitted by loader3229
+; 1,2,1,5,2,1,11,7,2,1,27,15,9,2,1,61,44,19,11,2,1,149,97,65,23,13,2,1,342,267,141,90,27,15,2,1,835,599,433,193,119,31,17,2,1,1939,1598,956,655,253,152,35,19,2,1,4740,3631
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  bin $9,2
+  sub $4,$9
+  div $4,2
+  mov $7,$8
+  bin $7,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $11,$5
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $12,$11
+  bin $12,2
+  sub $5,$12
+  div $5,2
+  mov $10,$11
+  bin $10,$5
+  mov $4,$7
+  mul $4,$10
+  add $6,$4
+lpe
+mov $0,$6

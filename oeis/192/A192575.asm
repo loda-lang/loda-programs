@@ -1,0 +1,58 @@
+; A192575: Triangle T(n,0) = A040000(n), T(n,k) = 0 (odd-numbered columns); T(n,k) = (-1)^(k/2)*A110813(n-k/2-1,k/2-1) (even-numbered columns, k>0).
+; Submitted by loader3229
+; 1,2,0,2,0,-1,2,0,-3,0,2,0,-5,0,1,2,0,-7,0,4,0,2,0,-9,0,9,0,-1,2,0,-11,0,16,0,-5,0,2,0,-13,0,25,0,-14,0,1,2,0,-15,0,36,0,-30,0,6,0,2,0,-17,0,49,0,-55,0,20,0,-1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  add $7,3
+  div $7,2
+  bin $7,2
+  sub $7,$4
+  leq $7,1
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $8,$9
+  add $8,1
+  bin $8,2
+  sub $5,$8
+  sub $5,1
+  mov $8,-1
+  bin $8,$5
+  equ $8,1
+  mul $9,-1
+  sub $9,1
+  add $9,$5
+  div $5,2
+  bin $9,$5
+  mul $8,$9
+  mov $4,$7
+  mul $4,$8
+  add $6,$4
+lpe
+mov $0,$6

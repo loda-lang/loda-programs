@@ -1,0 +1,63 @@
+; A101919: Triangle read by rows: T(n,k) is the number of Schroeder paths of length 2n and having k up steps starting at even heights.
+; Submitted by loader3229
+; 1,1,1,1,4,1,1,12,8,1,1,33,42,13,1,1,88,183,102,19,1,1,232,717,624,205,26,1,1,609,2622,3275,1650,366,34,1,1,1596,9134,15473,11020,3716,602,43,1,1,4180,30691,67684,64553,30520,7483,932,53,1,1,10945,100284,279106
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  add $7,$4
+  mul $4,2
+  bin $7,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  bin $9,$5
+  mul $5,-1
+  add $5,$10
+  sub $10,1
+  bin $10,$5
+  add $5,1
+  mul $9,$10
+  div $9,$5
+  mov $4,$7
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6

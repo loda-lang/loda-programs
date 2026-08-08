@@ -1,0 +1,62 @@
+; A394385: Triangle read by rows: T(n,k) is the number of ordered rooted trees with node weights summing to n that have k leaf nodes; where the root has weight 0 and non-root nodes have positive integer weights.
+; Submitted by loader3229
+; 1,0,1,0,2,1,0,4,5,1,0,8,18,9,1,0,16,56,50,14,1,0,32,160,220,110,20,1,0,64,432,840,645,210,27,1,0,128,1120,2912,3150,1575,364,35,1,0,256,2816,9408,13552,9534,3388,588,44,1,0,512,6912,28800,53088,49644,24822,6636,900,54,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $4,$7
+  sub $4,2
+  sub $8,1
+  bin $8,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  bin $9,$5
+  mul $5,-1
+  add $5,$10
+  sub $10,1
+  bin $10,$5
+  add $5,1
+  mul $9,$10
+  div $9,$5
+  mov $4,$8
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6

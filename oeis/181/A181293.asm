@@ -1,0 +1,61 @@
+; A181293: Triangle read by rows: T(n,k) is the number of 2-compositions of n having k 0's (0<=k<=n) A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
+; Submitted by loader3229
+; 1,0,2,1,2,4,2,6,8,8,4,14,24,24,16,8,32,64,80,64,32,16,72,164,240,240,160,64,32,160,408,680,800,672,384,128,64,352,992,1848,2480,2464,1792,896,256,128,768,2368,4864,7296,8288,7168,4608,2048,512,256,1664,5568
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $4,$7
+  sub $4,3
+  sub $8,2
+  bin $8,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  mov $10,$5
+  add $5,$9
+  mov $9,$5
+  div $9,2
+  bin $9,$10
+  mov $5,2
+  pow $5,$10
+  mul $5,$9
+  mov $4,$8
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

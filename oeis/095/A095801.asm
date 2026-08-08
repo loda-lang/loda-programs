@@ -1,0 +1,66 @@
+; A095801: Square of Narayana triangle A001263: View A001263 as a lower triangular matrix. Then the square of that matrix is also lower triangular. Sequence gives this lower triangle, read by rows.
+; Submitted by loader3229
+; 1,2,1,5,6,1,14,30,12,1,42,140,100,20,1,132,630,700,250,30,1,429,2772,4410,2450,525,42,1,1430,12012,25872,20580,6860,980,56,1,4862,51480,144144,155232,74088,16464,1680,72,1,16796,218790,772200,1081080,698544
+
+#offset 1
+
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  mov $8,$7
+  add $8,1
+  bin $8,$4
+  bin $7,$4
+  add $4,1
+  mul $7,$8
+  div $7,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  add $10,1
+  bin $10,2
+  sub $5,$10
+  sub $5,1
+  mov $10,$9
+  add $10,1
+  bin $10,$5
+  bin $9,$5
+  add $5,1
+  mul $9,$10
+  div $9,$5
+  mov $4,$7
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6

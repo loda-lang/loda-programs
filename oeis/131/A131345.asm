@@ -1,0 +1,57 @@
+; A131345: Triangle read by rows: A065941 * A046854 as infinite lower triangular matrices.
+; Submitted by loader3229
+; 1,2,1,3,2,1,5,5,3,1,8,10,8,3,1,13,20,19,10,4,1,21,38,42,26,14,4,1,34,71,89,65,41,16,5,1,55,130,182,151,110,50,21,5,1,89,235,363,338,276,146,72,23,6,1,144,420,709,730,659,392,223,83,29,6,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  sub $7,$4
+  div $4,2
+  add $7,$4
+  bin $7,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  add $10,1
+  bin $10,2
+  sub $5,$10
+  sub $9,$5
+  div $9,2
+  add $9,$5
+  bin $9,$5
+  mov $4,$7
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6

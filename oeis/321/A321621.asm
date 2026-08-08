@@ -1,0 +1,68 @@
+; A321621: The Riordan square of the Motzkin numbers, triangle read by rows, T(n, k) for 0 <= k <= n.
+; Submitted by loader3229
+; 1,1,1,2,3,1,4,8,5,1,9,21,18,7,1,21,55,58,32,9,1,51,145,177,123,50,11,1,127,385,525,431,224,72,13,1,323,1030,1532,1429,889,369,98,15,1,835,2775,4428,4572,3269,1639,566,128,17,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  mov $7,$8
+  bin $7,2
+  sub $4,$7
+  sub $8,$4
+  mov $9,0
+  sub $9,$4
+  bin $9,$8
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $11,0
+  gcd $11,$10
+  mov $12,$10
+  add $12,1
+  bin $12,2
+  sub $10,1
+  sub $5,1
+  sub $5,$12
+  sub $5,$10
+  add $10,1
+  add $10,$11
+  add $10,$5
+  add $10,$11
+  add $5,$10
+  mov $11,$10
+  bin $11,$5
+  mul $11,-2
+  add $10,1
+  bin $10,$5
+  add $10,$11
+  mov $4,$9
+  mul $4,$10
+  add $6,$4
+lpe
+mov $0,$6

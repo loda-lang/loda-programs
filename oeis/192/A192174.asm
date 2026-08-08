@@ -1,0 +1,59 @@
+; A192174: Triangle T(n,k) of the coefficients [x^(n-k)] of the polynomial p(0,x)=-1, p(1,x)=x and p(n,x) = x*p(n-1,x) - p(n-2,x) in row n, column k.
+; Submitted by loader3229
+; -1,1,0,1,0,1,1,0,0,0,1,0,-1,0,-1,1,0,-2,0,-1,0,1,0,-3,0,0,0,1,1,0,-4,0,2,0,2,0,1,0,-5,0,5,0,2,0,-1,1,0,-6,0,9,0,0,0,-3,0,1,0,-7,0,14,0,-5,0,-5,0,1,1,0,-8,0,20,0,-14,0,-5,0,4,0
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  mov $7,$4
+  add $7,3
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $8,$7
+  bin $8,2
+  add $3,1
+  sub $4,$8
+  bin $4,-3
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $9,$10
+  add $9,1
+  bin $9,2
+  sub $5,$9
+  sub $5,1
+  mov $9,-1
+  bin $9,$5
+  equ $9,1
+  mul $10,-1
+  sub $10,1
+  add $10,$5
+  div $5,2
+  bin $10,$5
+  mul $9,$10
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6
+mul $0,-1

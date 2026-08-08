@@ -1,0 +1,73 @@
+; A201730: Triangle T(n,k), read by rows, given by (2,1/2,3/2,0,0,0,0,0,0,0,...) DELTA (0,1/2,-1/2,0,0,0,0,0,0,0,...) where DELTA is the operator defined in A084938.
+; Submitted by loader3229
+; 1,2,0,5,1,0,14,6,0,0,41,26,1,0,0,122,100,10,0,0,0,365,363,63,1,0,0,0,1094,1274,322,14,0,0,0,0,3281,4372,1462,116,1,0,0,0,0,9842,14760,6156,744,18,0,0,0,0,0
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  mov $8,$7
+  sub $8,$4
+  mov $9,-1
+  pow $9,$4
+  bin $7,$4
+  mul $7,$9
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $11,$5
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $14,$11
+  add $14,1
+  bin $14,2
+  sub $5,$14
+  sub $5,1
+  sub $11,$5
+  mov $10,$11
+  sub $10,1
+  mul $5,-1
+  add $5,$11
+  bin $10,$5
+  mov $12,$11
+  bin $12,$5
+  add $12,$10
+  mov $13,2
+  pow $13,$5
+  mul $12,$13
+  mov $5,$12
+  div $5,2
+  mov $4,3
+  pow $4,$8
+  mul $4,$7
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

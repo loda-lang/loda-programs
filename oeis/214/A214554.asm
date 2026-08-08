@@ -1,0 +1,62 @@
+; A214554: Triangle read by rows, coefficients of polynomials related to the Springer numbers A001586.
+; Submitted by loader3229
+; 1,-1,2,-3,-4,4,11,-18,-12,8,57,88,-72,-32,16,-361,570,440,-240,-80,32,-2763,-4332,3420,1760,-720,-192,64,24611,-38682,-30324,15960,6160,-2016,-448,128,250737,393776,-309456,-161728,63840,19712,-5376,-1024,256
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  mov $8,$4
+  add $4,1
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $7,$4
+  add $7,1
+  bin $7,2
+  sub $8,$7
+  mov $9,2
+  pow $9,$8
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $11,$10
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  mov $11,$5
+  mov $5,$10
+  bin $5,$11
+  sub $10,$11
+  mov $12,-1
+  pow $12,$10
+  seq $10,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  mul $10,$12
+  mul $5,$10
+  bin $4,$8
+  mul $4,$9
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

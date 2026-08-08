@@ -1,0 +1,73 @@
+; A132884: Triangle read by rows: T(n,k) is the number of paths in the right half-plane from (0,0) to (n,0), consisting of steps U=(1,1), D=(1,-1), h=(1,0) and H=(2,0), having k h=(1,0) steps (0<=k<=n).
+; Submitted by loader3229
+; 1,0,1,3,0,1,0,8,0,1,13,0,15,0,1,0,57,0,24,0,1,63,0,156,0,35,0,1,0,384,0,340,0,48,0,1,321,0,1380,0,645,0,63,0,1,0,2505,0,3800,0,1113,0,80,0,1,1683,0,11145,0,8855,0,1792,0,99,0,1,0,16008,0,37065,0,18368,0,2736,0
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  add $3,1
+  sub $4,$9
+  sub $4,1
+  mul $4,-1
+  add $4,$8
+  mov $7,-1
+  bin $7,$4
+  equ $7,1
+  mul $8,-1
+  sub $8,1
+  add $8,$4
+  div $4,2
+  bin $8,$4
+  mul $7,$8
+  mov $4,$7
+  gcd $4,$7
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $12,$10
+  add $12,1
+  bin $12,2
+  sub $5,$12
+  sub $5,1
+  mov $11,$10
+  sub $11,$5
+  bin $10,$5
+  mov $5,$11
+  dif $11,2
+  bin $5,$11
+  add $11,1
+  div $5,$11
+  mul $10,$5
+  mul $11,$10
+  mul $4,$11
+  add $6,$4
+lpe
+mov $0,$6

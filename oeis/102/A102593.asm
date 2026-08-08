@@ -1,0 +1,73 @@
+; A102593: Triangle read by rows: T(n,k) is the number of noncrossing trees with n edges in which the maximum number of contiguous border edges starting from the root in counterclockwise direction is equal to k.
+; Submitted by loader3229
+; 1,0,1,1,1,1,5,4,2,1,25,18,8,3,1,130,88,37,13,4,1,700,455,185,63,19,5,1,3876,2448,973,325,97,26,6,1,21945,13566,5304,1748,518,140,34,7,1,126500,76912,29697,9690,2856,775,193,43,8,1,740025,444015,169763,54967,16131,4386,1108,257,53,9,1,4382625,2601300,986700,317515,92851,25270,6441,1530,333,64,10,1,26225628,15426840
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $4,1
+  sub $4,$9
+  sub $4,$7
+  mul $7,2
+  sub $7,$4
+  mov $8,$7
+  add $4,$7
+  bin $7,$4
+  add $4,1
+  bin $8,$4
+  mul $8,-2
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  add $7,$8
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $12,$10
+  add $12,1
+  bin $12,2
+  sub $5,1
+  sub $5,$12
+  sub $5,$10
+  add $10,$5
+  add $10,2
+  add $10,$5
+  div $10,-1
+  mov $11,$10
+  add $5,$10
+  bin $10,$5
+  add $5,1
+  sub $11,1
+  bin $11,$5
+  add $10,$11
+  mov $4,$7
+  mul $4,$10
+  add $6,$4
+lpe
+mov $0,$6

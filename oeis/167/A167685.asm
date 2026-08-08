@@ -1,0 +1,80 @@
+; A167685: Triangle read by rows given by [1,1,1,1,1,1,1,1,1,1,...] DELTA [1,1,0,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
+; Submitted by loader3229
+; 1,1,1,2,4,2,5,14,13,4,14,48,62,36,8,42,165,264,217,92,16,132,572,1066,1104,670,224,32,429,2002,4186,5130,3965,1912,528,64,1430,7072,16184,22576,20858,12904,5168,1216,128
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  bin $9,2
+  mul $8,2
+  sub $4,$9
+  sub $4,1
+  mov $7,$8
+  bin $7,$4
+  add $4,1
+  bin $8,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  sub $7,$8
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  add $10,1
+  pow $10,2
+  sub $10,$5
+  mov $5,$10
+  add $5,1
+  mov $12,$5
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $15,$12
+  add $15,1
+  bin $15,2
+  sub $5,$15
+  sub $5,1
+  sub $12,$5
+  mov $11,$12
+  sub $11,1
+  mul $5,-1
+  add $5,$12
+  bin $11,$5
+  mov $13,$12
+  bin $13,$5
+  add $13,$11
+  mov $14,2
+  pow $14,$5
+  mul $13,$14
+  mov $5,$13
+  div $5,2
+  mov $4,$7
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

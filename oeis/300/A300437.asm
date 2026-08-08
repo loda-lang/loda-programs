@@ -1,0 +1,64 @@
+; A300437: Triangle T(nu,m) read by rows: The number of N-color odd self-inverse compositions of (2*nu+1) into (2*m+1) parts.
+; Submitted by loader3229
+; 1,3,1,5,3,1,7,8,3,1,9,16,11,3,1,11,29,25,14,3,1,13,47,58,34,17,3,1,15,72,110,96,43,20,3,1,17,104,206,200,143,52,23,3,1,19,145,346,442,317,199,61,26,3,1,21,195,571,822,807,461,264,70,29,3,1,23,256,881,1565,1613,1328,632,338,79,32,3,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $4,1
+  sub $7,$4
+  div $7,2
+  mov $8,-1
+  sub $8,$4
+  bin $8,$7
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  mov $10,$9
+  sub $10,$5
+  add $9,$5
+  div $9,2
+  bin $9,$5
+  mov $5,2
+  pow $5,$10
+  mul $5,$9
+  mov $4,$8
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

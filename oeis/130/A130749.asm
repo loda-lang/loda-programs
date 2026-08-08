@@ -1,0 +1,60 @@
+; A130749: Triangle A007318*A090181 (as infinite lower triangular matrices) .
+; Submitted by loader3229
+; 1,1,1,1,3,1,1,7,6,1,1,15,24,10,1,1,31,80,60,15,1,1,63,240,280,125,21,1,1,127,672,1120,770,231,28,1,1,255,1792,4032,3920,1806,392,36,1,1,511,4608,13440,17472,11340,3780,624,45,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $8,$4
+  add $8,1
+  bin $8,2
+  sub $7,$8
+  sub $7,1
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  bin $9,$5
+  mul $5,-1
+  add $5,$10
+  sub $10,1
+  bin $10,$5
+  add $5,1
+  mul $9,$10
+  div $9,$5
+  bin $4,$7
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6
