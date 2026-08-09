@@ -1,0 +1,66 @@
+; A395642: Triangular array: row n shows the coefficients of the polynomial - n!*L(n, x), where L(n, x) is the Lagrange interpolating polynomial that passes through (0,-1) and (k,(-1)^(k+1)) for k = 1..n.
+; Submitted by loader3229
+; 1,1,-2,2,-8,4,6,-40,36,-8,24,-256,320,-128,16,120,-2048,3200,-1760,400,-32,720,-19968,36736,-24960,7840,-1152,64,5040,-231936,482944,-382592,148960,-30464,3136,-128,40320,-3145728,7208960,-6422528,2924544,-745472
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $4,$7
+  sub $4,1
+  mov $7,$8
+  bin $7,$4
+  sub $8,$4
+  mov $10,-1
+  pow $10,$4
+  mov $4,$8
+  mul $4,-1
+  mov $8,$9
+  fac $8,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  mul $7,$8
+  mov $11,$5
+  seq $11,111594 ; Triangle of arctanh numbers.
+  mov $14,$5
+  mul $14,8
+  nrt $14,2
+  add $14,1
+  div $14,2
+  bin $14,2
+  mov $12,$5
+  sub $12,$14
+  mov $13,2
+  pow $13,$12
+  mov $5,$13
+  mul $5,$11
+  mov $4,$7
+  mul $4,$10
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

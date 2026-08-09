@@ -1,0 +1,72 @@
+; A118976: Triangle read by rows: T(n,k) = binomial(n-1,k-1)*binomial(n,k-1)/k + binomial(n-1,k)*binomial(n,k)/(k+1) (1 <= k <= n). In other words, to each entry of the Narayana triangle (A001263) add the entry on its right.
+; Submitted by loader3229
+; 1,2,1,4,4,1,7,12,7,1,11,30,30,11,1,16,65,100,65,16,1,22,126,280,280,126,22,1,29,224,686,980,686,224,29,1,37,372,1512,2940,2940,1512,372,37,1,46,585,3060,7812,10584,7812,3060,585,46,1,56,880,5775,18810,33264,33264,18810,5775,880,56,1,67,1276,10285,41745,93654,121968,93654,41745,10285,1276,67,1,79,1794
+
+#offset 1
+
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $4,$9
+  sub $4,1
+  bin $7,$4
+  mul $4,-1
+  add $4,$8
+  add $8,$4
+  add $8,2
+  bin $8,$4
+  add $4,1
+  mul $7,$8
+  div $7,$4
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $11,$5
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $10,$11
+  add $10,1
+  bin $10,2
+  sub $5,1
+  sub $5,$10
+  sub $5,$11
+  add $11,$5
+  mul $11,-1
+  sub $11,1
+  add $5,$11
+  mov $10,$11
+  bin $10,$5
+  sub $11,1
+  bin $11,$5
+  add $11,$10
+  mov $4,$7
+  mul $4,$11
+  add $6,$4
+lpe
+mov $0,$6

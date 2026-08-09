@@ -1,0 +1,62 @@
+; A208749: Triangle of coefficients of polynomials u(n,x) jointly generated with A208750; see the Formula section.
+; Submitted by loader3229
+; 1,1,2,1,6,2,1,12,10,4,1,20,32,24,4,1,30,80,88,36,8,1,42,170,256,180,72,8,1,56,322,644,660,384,104,16,1,72,560,1456,1992,1568,704,192,16,1,90,912,3024,5256,5360,3392,1344,272,32,1,110,1410,5856,12552
+
+#offset 1
+
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $4,$7
+  sub $4,1
+  mov $7,$8
+  bin $7,$4
+  add $4,1
+  div $4,2
+  mov $10,2
+  pow $10,$4
+  mov $9,$7
+  mul $9,$10
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  mov $11,$5
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $12,$11
+  bin $12,2
+  sub $5,$12
+  mul $11,2
+  mov $12,$11
+  sub $12,$5
+  div $11,4
+  bin $11,$12
+  mov $4,$9
+  mul $4,$11
+  add $6,$4
+lpe
+mov $0,$6
