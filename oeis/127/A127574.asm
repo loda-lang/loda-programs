@@ -1,0 +1,76 @@
+; A127574: Triangle T(n,k) = k*sigma(n) if k divides n, else 0.
+; Submitted by loader3229
+; 1,3,6,4,0,12,7,14,0,28,6,0,0,0,30,12,24,36,0,0,72,8,0,0,0,0,0,56,15,30,0,60,0,0,0,120,13,0,39,0,0,0,0,0,117,18,36,0,0,90,0,0,0,0,180,12,0,0,0,0,0,0,0,0,0,132,28,56,84,112,0,168,0,0,0,0,0,336
+
+#offset 1
+
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  div $7,2
+  mov $12,$7
+  add $3,1
+  bin $7,2
+  mov $13,$4
+  sub $13,$7
+  mov $11,$12
+  div $11,$13
+  mov $10,$12
+  mod $10,$13
+  equ $10,0
+  mul $10,$11
+  sub $4,1
+  mov $9,$4
+  mul $9,8
+  add $9,1
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  sub $4,$9
+  add $4,1
+  mov $8,$4
+  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $7,$10
+  equ $7,1
+  mul $7,2
+  mov $4,$8
+  mul $4,$7
+  div $4,2
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $14,$5
+  mul $14,8
+  nrt $14,2
+  sub $14,1
+  div $14,2
+  mov $15,$14
+  add $15,1
+  bin $15,2
+  sub $5,$15
+  add $14,1
+  gcd $14,$5
+  div $14,$5
+  mul $5,$14
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

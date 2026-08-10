@@ -1,0 +1,60 @@
+; A174559: Triangle T(n,k)of the coefficients [x^(n-k)] of the polynomials q(0,x)=-1, q(1,x)=3*x, q(n,x)=x*q(n-1,x)-q(n-2,x) in row n,column k. A companion to A193002(n).
+; Submitted by Josemi
+; -1,3,0,3,0,1,3,0,-2,0,3,0,-5,0,-1,3,0,-8,0,1,0,3,0,-11,0,6,0,1,3,0,-14,0,14,0,0,0,3,0,-17,0,25,0,-6,0,-1,3,0,-20,0,39,0,-20,0,-1,0,3,0,-23,0,56,0,-45,0,5,0,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  mov $7,$4
+  add $7,3
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $8,$7
+  bin $8,2
+  add $3,1
+  sub $4,$8
+  bin $4,-3
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $9,$10
+  add $9,1
+  bin $9,2
+  sub $5,$9
+  sub $5,1
+  mov $9,-1
+  bin $9,$5
+  equ $9,1
+  mul $10,-1
+  sub $10,1
+  add $10,$5
+  div $5,2
+  bin $10,$5
+  mul $9,$10
+  mul $4,$9
+  mul $6,2
+  add $6,$4
+lpe
+mov $0,$6
+mul $0,-1

@@ -1,0 +1,66 @@
+; A213221: Riordan array (f(x), x*g(x)) where f(x) is the g.f. of A157004 and g(x) is the g.f. of A157003.
+; Submitted by Science United
+; 1,2,1,6,3,1,18,10,4,1,58,32,15,5,1,192,106,52,21,6,1,650,357,180,79,28,7,1,2232,1222,624,288,114,36,8,1,7746,4230,2178,1035,439,158,45,9,1,27096,14770,7648,3706,1642,643,212,55,10,1
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $4,$7
+  sub $4,1
+  mul $4,-1
+  add $4,$8
+  mov $9,-1
+  bin $9,$4
+  equ $9,1
+  mul $8,-1
+  sub $8,1
+  add $8,$4
+  div $4,2
+  add $8,$4
+  add $8,$0
+  bin $8,$4
+  mul $9,$8
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $12,$10
+  add $12,3
+  bin $12,2
+  sub $5,$12
+  mov $11,-2
+  sub $11,$5
+  bin $11,$10
+  mov $4,$9
+  mul $4,$11
+  add $6,$4
+lpe
+mov $0,$6
