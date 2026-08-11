@@ -1,0 +1,71 @@
+; A127749: Inverse of number triangle A(n,k) = 1/(2n+1) if k <= n <= 2k, 0 otherwise.
+; Submitted by Checco
+; 1,0,3,0,-3,5,0,3,-5,7,0,0,0,-7,9,0,-3,5,0,-9,11,0,0,0,0,0,-11,13,0,3,-5,7,0,0,-13,15,0,0,0,0,0,0,0,-15,17,0,0,0,-7,9,0,0,0,-17,19,0,0,0,0,0,0,0,0,0,-19,21,0,-3,5
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $9,$4
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  mov $7,$4
+  sub $7,$11
+  add $9,1
+  mov $10,$9
+  mul $9,$7
+  gcd $7,$10
+  pow $7,2
+  div $9,$7
+  mov $7,$9
+  dir $7,4
+  mov $8,1
+  sub $8,$7
+  pow $8,$8
+  mov $7,$8
+  pow $7,6
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  mov $12,$5
+  add $12,3
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $14,$12
+  bin $14,2
+  add $5,1
+  sub $5,$14
+  sub $12,$5
+  equ $13,$8
+  max $13,$5
+  add $13,$0
+  mov $5,-2
+  pow $5,$12
+  dif $5,2
+  mul $5,$13
+  mov $4,$7
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6

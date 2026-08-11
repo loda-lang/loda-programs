@@ -1,0 +1,77 @@
+; A110107: Triangle read by rows: T(n,k) (0 <= k <= n) is the number of Delannoy paths of length n, having k return steps to the line y = x from the line y = x+1 or from the line y = x-1 (i.e., E steps from the line y = x+1 to the line y = x or N steps from the line y = x-1 to the line y = x).
+; Submitted by Science United
+; 1,1,2,1,8,4,1,26,28,8,1,88,136,80,16,1,330,600,512,208,32,1,1360,2636,2768,1648,512,64,1,6002,11892,14024,10544,4832,1216,128,1,27760,55376,69728,60768,35712,13312,2816,256,1,132690,265200,347072,332768,231232,111616,35072,6400,512,1,649816,1299412,1742432,1780000,1388928,803200,328960,89344,14336,1024,1,3242378,6484492,8840264,9434528,7991488,5264512,2606592,926976,221696,31744,2048,1,16421832
+
+mov $1,$0
+add $1,1
+mov $6,$1
+mul $6,8
+nrt $6,2
+add $6,1
+div $6,2
+mov $5,$6
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $7,$1
+sub $6,$1
+lpb $6
+  sub $6,1
+  mov $8,$5
+  add $8,$7
+  add $8,1
+  mov $11,$8
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $12,$11
+  add $12,1
+  bin $12,2
+  sub $8,$12
+  sub $8,1
+  add $11,$8
+  mul $8,2
+  bin $11,$8
+  add $7,1
+  mov $9,$7
+  bin $9,2
+  add $9,$1
+  add $9,1
+  mov $13,$9
+  mul $13,8
+  nrt $13,2
+  sub $13,1
+  div $13,2
+  mov $15,$13
+  add $15,1
+  bin $15,2
+  sub $9,1
+  sub $9,$15
+  sub $9,$13
+  sub $13,$9
+  trn $13,1
+  mov $14,$13
+  add $9,$13
+  bin $13,$9
+  add $9,1
+  bin $14,$9
+  mul $14,-1
+  add $13,$14
+  mov $8,$11
+  mul $8,$13
+  add $10,$8
+lpe
+mov $4,$0
+mul $4,8
+add $4,1
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $2,$0
+sub $2,$4
+mov $3,2
+pow $3,$2
+mov $0,$3
+mul $0,$10

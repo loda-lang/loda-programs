@@ -1,0 +1,74 @@
+; A094322: Triangle read by rows: T(n,k) is the number of Dyck paths of semilength n having k pyramids.
+; Submitted by loader3229
+; 1,0,1,0,1,1,1,1,2,1,4,3,3,3,1,13,11,7,6,4,1,42,37,23,14,10,5,1,139,122,78,43,25,15,6,1,470,408,262,145,75,41,21,7,1,1616,1390,887,494,251,124,63,28,8,1,5632,4810,3048,1694,864,414,196,92,36,9,1,19852,16857,10622,5877,3000,1437,658,298,129,45,10,1,70654,59705
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,1
+  sub $4,$8
+  sub $4,$7
+  sub $7,$4
+  mov $8,$7
+  add $4,$7
+  bin $7,$4
+  add $4,1
+  bin $8,$4
+  mul $8,-1
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  add $7,$8
+  mov $10,$5
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $11,$10
+  add $11,1
+  bin $11,2
+  sub $5,$11
+  sub $5,1
+  mul $5,-1
+  add $5,$10
+  mov $9,-1
+  bin $9,$5
+  equ $9,1
+  mul $10,-1
+  sub $10,1
+  add $10,$9
+  add $10,$5
+  div $5,2
+  bin $10,$5
+  mul $9,2
+  sub $9,1
+  mul $9,$10
+  mov $4,$7
+  mul $4,$9
+  add $6,$4
+lpe
+mov $0,$6
