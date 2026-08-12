@@ -1,0 +1,63 @@
+; A193796: Triangular array:  the fusion of polynomial sequences P and Q given by p(n,x)=(2x+3)^n and q(n,x)=1+x^n.
+; Submitted by Johnbodlis team
+; 1,1,1,3,2,5,9,12,4,25,27,54,36,8,125,81,216,216,96,16,625,243,810,1080,720,240,32,3125,729,2916,4860,4320,2160,576,64,15625,2187,10206,20412,22680,15120,6048,1344,128,78125,6561,34992,81648,108864,90720
+
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+add $1,1
+pow $1,2
+sub $1,$0
+mov $0,$1
+add $0,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+add $3,1
+div $3,2
+mov $2,$3
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $4,$0
+sub $3,$0
+lpb $3
+  sub $3,1
+  mov $5,$2
+  add $5,$4
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $8,$9
+  add $8,1
+  bin $8,2
+  sub $5,$8
+  sub $5,2
+  sub $9,1
+  bin $9,$5
+  add $4,1
+  mov $6,$4
+  bin $6,2
+  add $6,$0
+  add $6,1
+  mov $10,$6
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  add $10,1
+  pow $10,2
+  sub $10,$6
+  mov $6,$10
+  seq $6,193792 ; Triangular array: the fusion of polynomial sequences P and Q given by p(n,x)=(x+3)^n and q(n,x)=1+x^n.
+  mov $5,$9
+  mul $5,$6
+  add $7,$5
+lpe
+mov $0,$7

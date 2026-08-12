@@ -1,0 +1,77 @@
+; A124816: Product of Riordan array (1,x(1-x^2))^(-1) and number triangle T(n,k)=C(floor(k/2),n-k).
+; Submitted by loader3229
+; 1,0,1,0,0,1,0,1,1,1,0,0,2,1,1,0,3,3,3,2,1,0,0,7,4,5,2,1,0,12,12,12,10,6,3,1,0,0,30,18,24,12,9,3,1,0,55,55,55,50,32,22,10,4,1,0,0,143,88,121,66,57,25,14,4,1,0,273,273,273
+
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$1
+  add $4,$3
+  mov $7,$4
+  add $7,1
+  mov $13,$7
+  add $3,1
+  mul $7,8
+  nrt $7,2
+  add $7,3
+  div $7,2
+  bin $7,2
+  sub $7,$13
+  mov $8,$7
+  mod $8,2
+  mov $12,$7
+  equ $12,0
+  div $7,2
+  mov $9,$7
+  sub $9,1
+  mov $10,$7
+  mul $10,3
+  sub $10,1
+  mov $14,$4
+  mul $14,8
+  add $14,1
+  nrt $14,2
+  add $14,1
+  div $14,2
+  bin $14,2
+  sub $4,$14
+  max $7,1
+  mov $11,$4
+  add $4,$10
+  bin $4,$9
+  mul $4,$11
+  div $4,$7
+  mul $8,$4
+  sub $4,$8
+  add $4,$12
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  mov $15,$5
+  mul $15,8
+  nrt $15,2
+  sub $15,1
+  div $15,2
+  mov $17,$15
+  add $17,1
+  bin $17,2
+  sub $5,$17
+  mov $16,$15
+  sub $16,$5
+  div $5,2
+  bin $5,$16
+  mul $4,$5
+  add $6,$4
+lpe
+mov $0,$6
