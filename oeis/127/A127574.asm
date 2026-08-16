@@ -19,58 +19,33 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  mov $7,$4
-  mul $7,8
-  nrt $7,2
-  div $7,2
-  mov $12,$7
-  add $3,1
-  bin $7,2
-  mov $13,$4
-  sub $13,$7
-  mov $11,$12
-  div $11,$13
-  mov $10,$12
-  mod $10,$13
-  equ $10,0
-  mul $10,$11
-  sub $4,1
-  mov $9,$4
-  mul $9,8
-  add $9,1
-  nrt $9,2
-  add $9,1
-  div $9,2
-  bin $9,2
-  sub $4,$9
-  add $4,1
   mov $8,$4
-  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  mov $7,$10
-  equ $7,1
-  mul $7,2
-  mov $4,$8
-  mul $4,$7
-  div $4,2
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  add $3,1
+  sub $4,$8
+  add $4,1
+  seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
-  mov $14,$5
-  mul $14,8
-  nrt $14,2
-  sub $14,1
-  div $14,2
-  mov $15,$14
-  add $15,1
-  bin $15,2
-  sub $5,$15
-  add $14,1
-  gcd $14,$5
-  div $14,$5
-  mul $5,$14
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $5,$6
+  add $7,1
+  gcd $7,$5
+  div $7,$5
+  mul $5,$7
   mul $4,$5
-  add $6,$4
 lpe
-mov $0,$6
+mov $0,$4

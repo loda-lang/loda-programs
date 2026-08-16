@@ -4,17 +4,34 @@
 
 #offset 1
 
-add $0,1
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $3,$1
-  seq $3,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-  add $3,1
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+mov $1,2
+lpb $0
+  sub $0,1
+  mov $2,$1
+  lex $2,2
+  mov $3,2
+  pow $3,$2
+  mov $4,$1
+  div $4,$3
+  add $4,1
+  lex $4,2
+  mov $5,2
+  pow $5,$4
+  mov $6,$5
+  sub $6,1
+  mul $6,$3
+  div $6,$1
+  mov $7,$5
+  pow $7,2
+  add $7,$5
+  sub $3,1
+  mul $6,$7
+  add $6,$5
+  add $1,$3
+  add $1,$6
+  sub $1,1
 lpe
 mov $0,$1
-sub $0,1
+sub $0,10
+div $0,2
+add $0,4

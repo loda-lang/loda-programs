@@ -1,64 +1,29 @@
 ; A136535: A128064 * A001263.
 ; Submitted by loader3229
 ; 1,1,2,1,7,3,1,15,21,4,1,26,76,46,5,1,40,200,250,85,6,1,57,435,925,645,141,7,1,77,833,2695,3185,1421,217,8,1,100,1456,6664,11956,9016,2800,316,9,1,126,2376,14616,37044,42336,22176,5076,441,10
+; Formula: a(n) = binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*binomial(floor((sqrtint(8*n)-1)/2)+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)+binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-2)
 
 #offset 1
 
-mov $2,$0
-mul $2,8
-nrt $2,2
-add $2,1
-div $2,2
-mov $1,$2
-bin $1,2
-sub $0,$1
+mov $1,$0
+mul $0,8
+nrt $0,2
 sub $0,1
-mov $3,$0
-sub $2,$0
-lpb $2
-  sub $2,1
-  mov $4,$1
-  add $4,$3
-  mov $7,$4
-  add $7,3
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $9,$7
-  bin $9,2
-  add $3,1
-  add $4,1
-  sub $4,$9
-  sub $7,$4
-  mov $8,0
-  max $8,$4
-  mov $4,-2
-  pow $4,$7
-  dif $4,2
-  mov $5,$3
-  bin $5,2
-  add $5,$0
-  add $5,1
-  mov $10,$5
-  mul $10,8
-  nrt $10,2
-  sub $10,1
-  div $10,2
-  mov $11,$10
-  add $11,1
-  bin $11,2
-  sub $5,$11
-  sub $5,1
-  mov $11,$10
-  add $11,1
-  bin $11,$5
-  bin $10,$5
-  add $5,1
-  mul $10,$11
-  div $10,$5
-  mul $4,$8
-  mul $4,$10
-  add $6,$4
-lpe
-mov $0,$6
+div $0,2
+mov $2,$0
+add $2,1
+mov $6,$2
+bin $2,2
+sub $1,$2
+mov $4,$0
+bin $4,$1
+mov $5,$0
+mov $3,$1
+sub $3,1
+bin $6,$3
+bin $0,$3
+mul $0,$6
+sub $1,2
+bin $5,$1
+mul $4,$5
+add $0,$4

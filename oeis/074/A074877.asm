@@ -1,23 +1,19 @@
 ; A074877: Number of function calls required to compute ack(3,n), where ack denotes the Ackermann function.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 15,106,541,2432,10307,42438,172233,693964,2785999,11164370,44698325,178875096,715664091,2862983902,11452590817,45811673828,183249316583,733002509034,2932020521709,11728103058160,46912454175475,187649900587766,750599770123001,3002399416036092
-; Formula: a(n) = 3*n+2*truncate((b(n+1)^2+b(n+1))/3)-3*b(n+1)+5, b(n) = 2*b(n-1)+2, b(0) = 2
+; Formula: a(n) = truncate(c(n+2)/2), b(n) = 2*b(n-1)+1, b(2) = 15, b(1) = 7, b(0) = 3, c(n) = d(n-1), c(2) = 30, c(1) = 0, c(0) = 0, d(n) = 2*b(n-1)*(2*b(n-1)-1)+d(n-1), d(2) = 212, d(1) = 30, d(0) = 0
 
-add $0,1
-mov $2,2
-mov $3,$0
+mov $5,3
+add $0,2
 lpb $0
   sub $0,1
-  add $2,1
-  mul $2,2
+  mul $5,2
+  mov $6,$5
+  fac $6,-2
+  add $5,1
+  mov $7,$6
+  add $7,$8
+  ror $7,2
 lpe
-sub $3,$2
-mul $3,3
-mov $1,$2
-pow $2,2
-add $1,$2
-div $1,3
-add $3,$1
-add $1,$3
-mov $0,$1
-add $0,2
+mov $0,$7
+div $0,2

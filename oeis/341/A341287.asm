@@ -19,13 +19,25 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  seq $4,39810 ; Matrix square of Stirling2 triangle A008277: 2-levels set partitions of [n] into k first-level subsets.
+  seq $4,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,49444 ; Generalized Stirling number triangle of first kind read by rows: T(n, k) = [x^k] Product_{m=1..n} (x - m - r), with r = 1.
-  mul $4,$5
+  add $5,1
+  mov $8,$5
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  mov $7,$8
+  bin $7,2
+  sub $5,$7
+  sub $8,$5
+  mov $9,0
+  sub $9,$5
+  bin $9,$8
+  mul $4,$9
   add $6,$4
 lpe
 mov $0,$6

@@ -1,7 +1,7 @@
 ; A018395: Divisors of 328.
 ; Submitted by loader3229
 ; 1,2,4,8,41,82,164,328
-; Formula: a(n) = 2^(n-1)+25*truncate(2^(n-5))
+; Formula: a(n) = 2^(n-1)+25*if((n-5)<=(-1),0,2^(n-5))
 
 #offset 1
 

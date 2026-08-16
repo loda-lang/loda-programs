@@ -18,8 +18,50 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,115236 ; Matrix inverse of triangle A003983.
+  add $4,1
+  mov $9,$4
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $11,$9
+  add $11,1
+  bin $11,2
+  mov $7,$4
+  sub $7,$11
+  add $9,1
+  mov $10,$9
+  mul $9,$7
+  gcd $7,$10
+  pow $7,2
+  div $9,$7
+  mov $7,$9
+  dir $7,4
+  mov $8,1
+  sub $8,$7
+  pow $8,$8
+  mov $7,$8
+  pow $7,6
   add $3,1
-  add $5,$4
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  mov $12,$5
+  add $12,3
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $13,$12
+  bin $13,2
+  add $5,1
+  sub $5,$13
+  sub $12,$5
+  mov $5,-2
+  pow $5,$12
+  dif $5,2
+  mov $4,$7
+  mul $4,$5
+  add $6,$4
 lpe
-mov $0,$5
+mov $0,$6

@@ -19,40 +19,29 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.
+  seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  add $5,1
-  mov $8,$5
-  mul $8,8
-  nrt $8,2
-  add $8,3
-  div $8,2
-  bin $8,2
-  sub $8,$5
-  sub $5,1
-  mov $7,4
-  pow $7,$8
   mov $9,$5
-  add $5,1
-  seq $5,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
-  mov $10,$9
-  mul $10,8
-  add $10,1
-  nrt $10,2
-  add $10,1
-  div $10,2
-  bin $10,2
-  sub $9,$10
-  mov $11,0
-  sub $11,$9
-  fac $9,$11
-  div $5,$9
-  mul $5,$7
-  mul $4,$5
+  mul $9,8
+  add $9,1
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  mov $8,$5
+  sub $8,$9
+  mov $11,4
+  pow $11,$8
+  mov $10,1
+  fac $10,$8
+  mul $10,$11
+  mov $7,$5
+  seq $7,225473 ; Triangle read by rows, k!*S_4(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+  div $7,$10
+  mul $4,$7
   add $6,$4
 lpe
 mov $0,$6

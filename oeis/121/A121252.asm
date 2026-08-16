@@ -1,5 +1,5 @@
 ; A121252: Number of labeled digraphs without isolated vertices and with n arcs.
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 1,2,25,520,15150,567540,25986334,1406214816,87803248260,6213408758960,491423381371208,42958461746823376,4112928296979824348,428022362222941505760,48106759414197240877200,5807382441785322296139392
 
 mov $2,$0
@@ -9,8 +9,7 @@ lpb $0
   add $1,$3
   mov $3,$0
   sub $3,2
-  bin $3,2
-  mul $3,2
+  fac $3,-2
   bin $3,$2
   sub $0,1
 lpe

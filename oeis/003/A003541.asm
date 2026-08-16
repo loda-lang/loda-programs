@@ -1,5 +1,5 @@
 ; A003541: Divisors of 2^34 - 1.
-; Submitted by [SG]ATA-Rolf
+; Submitted by Science United
 ; 1,3,43691,131071,131073,393213,5726623061,17179869183
 
 #offset 1
@@ -34,7 +34,6 @@ lpb $2
       mov $6,17179869183
       div $6,$1
       mov $0,$6
-      mov $2,1
     lpe
   lpe
   add $1,1

@@ -6,8 +6,16 @@
 
 sub $0,1
 sub $2,$0
-add $0,1
-seq $0,78160 ; a(n) = A055086(n!).
+mov $3,$0
+neq $3,0
+mul $3,2
+fac $3,$0
+add $3,1
+max $4,$3
+mul $4,4
+nrt $4,2
+mov $0,$4
+sub $0,1
 mov $1,$0
 div $1,2
 lpb $0
@@ -15,4 +23,4 @@ lpb $0
   sub $1,$2
   mov $2,$1
 lpe
-mov $0,$1
+mov $0,$2

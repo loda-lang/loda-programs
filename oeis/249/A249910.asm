@@ -1,11 +1,10 @@
 ; A249910: Digital root of A003500(n).
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4,5,7,5,4,2,4
-; Formula: a(n) = -10*truncate((truncate((7*gcd(n,6)+5)/4)+1)/10)+truncate((7*gcd(n,6)+5)/4)+1
+; Formula: a(n) = (sumdigits(binomial(gcd(n,6),2),8)+4)%10
 
 gcd $0,6
-mul $0,7
-add $0,5
-div $0,4
-add $0,1
+bin $0,2
+dgs $0,8
+add $0,4
 mod $0,10

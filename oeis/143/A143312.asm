@@ -20,14 +20,50 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  seq $4,54523 ; Triangle read by rows: T(n,k) = phi(n/k) if k divides n, T(n,k)=0 otherwise (n >= 1, 1 <= k <= n).
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $9,$7
+  bin $7,2
+  mov $10,$4
+  sub $10,$7
+  mov $12,$9
+  div $12,$10
+  mov $11,$9
+  mod $11,$10
+  equ $11,0
+  seq $12,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $12,$11
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
-  seq $5,127649 ; A127648 * A054523 as infinite lower triangular matrices.
-  mul $4,$5
+  mov $14,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $13,$5
+  bin $5,2
+  sub $14,$5
+  mov $16,$13
+  div $16,$14
+  mov $15,$13
+  mod $15,$14
+  equ $15,0
+  mul $15,$16
+  sub $4,$8
+  mul $4,$12
+  mul $4,$15
   add $6,$4
 lpe
 mov $0,$6

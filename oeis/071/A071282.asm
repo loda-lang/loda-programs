@@ -1,10 +1,9 @@
 ; A071282: Denominators of Peirce sequence of order 3.
+; Submitted by loader3229
 ; 2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3,1,3,2,3,2,3
-; Formula: a(n) = gcd(truncate(9/gcd(n+10,6)),6)
+; Formula: a(n) = if(((6*truncate(n/(-6))+n)%(-2))==0,(6*truncate(n/(-6))+n)/(-2),6*truncate(n/(-6))+n)-2*truncate(if(((6*truncate(n/(-6))+n)%(-2))==0,(6*truncate(n/(-6))+n)/(-2),6*truncate(n/(-6))+n)/2)+2
 
-add $0,10
-gcd $0,6
-mov $1,9
-div $1,$0
-gcd $1,6
-mov $0,$1
+mod $0,-6
+dif $0,-2
+mod $0,2
+add $0,2

@@ -19,15 +19,29 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.
+  seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  add $5,1
-  seq $5,75498 ; Stirling2 triangle with scaled diagonals (powers of 3).
-  mul $4,$5
+  mov $7,$5
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  mov $9,$5
+  sub $9,$7
+  mov $11,1
+  fac $11,$9
+  mov $10,3
+  pow $10,$9
+  mul $10,$11
+  mov $8,$5
+  seq $8,225472 ; Triangle read by rows, k!*S_3(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+  div $8,$10
+  mul $4,$8
   add $6,$4
 lpe
 mov $0,$6

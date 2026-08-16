@@ -1,10 +1,44 @@
 ; A151757: Positive integers n, excluding 1 and 2^i+1 for all i, having wt <= 3.
-; Submitted by PDW
+; Submitted by Science United
 ; 4,6,7,8,10,11,12,13,14,16,18,19,20,21,22,24,25,26,28,32,34,35,36,37,38,40,41,42,44,48,49,50,52,56,64,66,67,68,69,70,72,73,74,76,80,81,82,84,88,96,97,98,100,104,112,128,130,131,132,133,134,136,137,138,140,144,145,146,148,152,160,161,162,164,168,176,192,193,194,196
-; Formula: a(n) = truncate(A285326(A014311(n))/2)
 
 #offset 1
 
-seq $0,14311 ; Numbers with exactly 3 ones in binary expansion.
-seq $0,285326 ; a(0) = 0, for n > 0, a(n) = n + A006519(n).
+sub $0,1
+mov $1,$0
+mov $3,$0
+mul $3,6
+nrt $3,3
+mov $4,$3
+add $4,2
+bin $4,3
+geq $0,$4
+add $0,$3
+sub $0,1
+mov $2,$0
+fac $2,3
+div $2,6
+sub $1,$2
+mov $2,$1
+add $2,1
+add $1,1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $5,$1
+add $5,1
+bin $5,2
+sub $2,$5
+mov $6,2
+pow $6,$0
+mul $6,4
+mov $7,2
+pow $7,$1
+mul $7,2
+mov $8,2
+pow $8,$2
+mov $0,$6
+add $0,$7
+add $0,$8
 div $0,2

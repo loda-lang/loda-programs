@@ -18,7 +18,7 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,4070 ; Table of Whitney numbers W(n,k) read by antidiagonals, where W(n,k) is maximal number of pieces into which n-space is sliced by k hyperplanes, n >= 0, k >= 0.
+  seq $4,131255 ; A004070 * A000012(signed).
   add $3,1
   mov $5,$3
   bin $5,2
@@ -29,14 +29,20 @@ lpb $2
   nrt $8,2
   sub $8,1
   div $8,2
-  mov $7,$8
-  add $7,1
-  bin $7,2
-  sub $5,$7
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  sub $8,1
+  sub $5,$9
   sub $5,2
+  mov $7,$8
+  bin $7,$5
+  mul $7,2
+  sub $5,1
   sub $8,1
   bin $8,$5
-  mul $4,$8
+  sub $7,$8
+  mul $4,$7
   add $6,$4
 lpe
 mov $0,$6

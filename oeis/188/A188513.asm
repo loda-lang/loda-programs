@@ -18,12 +18,33 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,65600 ; Triangle T(n,k) giving number of Dyck paths of length 2n with exactly k hills (0 <= k <= n).
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $4,1
+  sub $4,$9
+  sub $4,$7
+  sub $7,$4
+  trn $7,1
+  mov $8,$7
+  add $4,$7
+  bin $7,$4
+  add $4,1
+  bin $8,$4
+  mul $8,-1
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,147703 ; Triangle [1,1,1,0,0,0,...] DELTA [1,0,0,0,...] with Deléham DELTA defined in A084938.
+  seq $5,37027 ; Skew Fibonacci-Pascal triangle read by rows.
+  add $7,$8
+  mov $4,$7
   mul $4,$5
   add $6,$4
 lpe

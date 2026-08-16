@@ -1,5 +1,5 @@
 ; A098942: Numbers where 4 is the only even decimal digit.
-; Submitted by Supericent
+; Submitted by Science United
 ; 4,14,34,41,43,44,45,47,49,54,74,94,114,134,141,143,144,145,147,149,154,174,194,314,334,341,343,344,345,347,349,354,374,394,411,413,414,415,417,419,431,433,434,435,437,439,441,443,444,445,447,449,451,453,454
 
 #offset 1
@@ -20,13 +20,10 @@ lpb $2
       mov $8,0
       add $5,1
     lpe
+    div $1,10
     mov $8,$7
     equ $8,5
-    lpb $8
-      mov $8,0
-      add $6,1
-    lpe
-    div $1,10
+    add $6,$8
   lpe
   mov $4,$6
   equ $4,0

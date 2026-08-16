@@ -19,29 +19,12 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.
+  seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  add $5,1
-  mov $8,$5
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $9,$8
-  add $9,1
-  bin $9,2
-  sub $5,1
-  sub $5,$9
-  mov $7,$8
-  bin $7,$5
-  sub $8,$5
-  add $5,2
-  fac $5,$8
-  mul $5,$7
+  seq $5,216154 ; Triangle read by rows, T(n,k) n>=0, k>=0, generalization of A000255.
   mul $4,$5
   add $6,$4
 lpe

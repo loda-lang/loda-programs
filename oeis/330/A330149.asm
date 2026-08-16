@@ -1,5 +1,5 @@
 ; A330149: Expansion of e.g.f. exp(-x) / (1 + log(1 - x)).
-; Submitted by shiva
+; Submitted by Science United
 ; 1,0,2,7,47,368,3494,38673,489341,6966344,110199090,1917589771,36402276107,748629861016,16580304397942,393443385034069,9958671117295737,267824225078212336,7626444798009902530,229232204568273395919,7252798333599466521575,240948882537990850397536
 
 mov $2,$0
@@ -12,11 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  add $0,1
-  mov $5,0
-  gcd $5,$0
-  seq $0,52860 ; A simple grammar: rooted sequences of cycles.
-  dif $0,$5
+  seq $0,7840 ; Number of factorizations of permutations of n letters into ordered cycles.
   mul $1,$0
   mul $3,-1
   add $3,$1

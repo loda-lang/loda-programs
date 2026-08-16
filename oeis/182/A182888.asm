@@ -18,34 +18,12 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  mov $8,$4
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $7,$8
-  add $7,1
-  bin $7,2
-  sub $4,$7
-  sub $4,1
-  mul $4,-1
-  add $4,$8
-  mov $7,-1
-  bin $7,$4
-  equ $7,1
-  mul $8,-1
-  sub $8,1
-  add $8,$4
-  div $4,2
-  bin $8,$4
+  seq $4,104562 ; Inverse of the Motzkin triangle A064189.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,109189 ; Triangle read by rows: T(n,k) is number of Grand Motzkin paths of length n having k (1,0)-steps at level zero. (A Grand Motzkin path is a path in the half-plane x>=0, starting at (0,0), ending at (n,0) and consisting of steps u=(1,1), d=(1,-1) and h=(1,0).).
-  mul $7,$8
-  mov $4,$7
+  seq $5,155788 ; Renewal array for 1/(x+sqrt(1-4x)).
   mul $4,$5
   add $6,$4
 lpe

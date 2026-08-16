@@ -1,27 +1,23 @@
 ; A217319: Numbers with binary representation ending in 4*k+2 or 4*k+3 zeros.
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 4,8,12,20,24,28,36,40,44,52,56,60,64,68,72,76,84,88,92,100,104,108,116,120,124,128,132,136,140,148,152,156,164,168,172,180,184,188,192,196,200,204,212,216,220,228,232,236,244,248,252,260,264,268,276,280,284,292,296,300,308,312,316,320,324,328,332,340,344,348,356,360,364,372,376,380,384,388,392,396
+; Formula: a(n) = 4*c(n)-4, b(n) = gcd(max(b(n-1)-1,0),2)*(binomial(if((c(n-1)+gcd(max(b(n-1)-1,0),2))==0,0,valuation(c(n-1)+gcd(max(b(n-1)-1,0),2),2)),2)+3)+max(b(n-1)-1,0), b(1) = 6, b(0) = 0, c(n) = c(n-1)+gcd(max(b(n-1)-1,0),2), c(1) = 2, c(0) = 0
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mul $2,4
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,87810 ; First differences of A029931.
-  add $3,$4
-  gcd $3,2
-  sub $0,$3
-  add $0,1
-  add $1,1
-  mov $4,$0
-  max $4,1
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  sub $0,1
+  trn $1,1
+  mov $2,$1
+  gcd $2,2
+  add $3,$2
+  mov $4,$3
+  lex $4,2
+  bin $4,2
+  add $4,3
+  mul $4,$2
+  add $1,$4
 lpe
-mov $0,$1
-add $0,1
+mov $0,$3
 mul $0,4
+sub $0,4

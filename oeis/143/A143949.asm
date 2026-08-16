@@ -18,12 +18,33 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,127543 ; Triangle T(n,k), 0<=k<=n, read by rows given by :[ -1,1,1,1,1,1,1,...] DELTA [1,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
+  add $4,1
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $4,1
+  sub $4,$9
+  sub $4,$7
+  sub $7,$4
+  trn $7,1
+  mov $8,$7
+  add $4,$7
+  bin $7,$4
+  add $4,1
+  bin $8,$4
+  mul $8,-1
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,53538 ; Triangle: a(n,m) = ways to place p balls in n slots with m in the rightmost p slots, 0<=p<=n, 0<=m<=n, summed over p, a(n,m)= Sum_{k=0..n} binomial(k,m)*binomial(n-k,k-m), (see program line).
+  seq $5,136531 ; Coefficients of polynomials B(x,n) = ((1+a+b)*x - c)*B(x,n-1) - a*b*B(x,n-2) where B(x,0) = 1, B(x,1) = x, a=-b, b=1, c=1.
+  add $7,$8
+  mov $4,$7
   mul $4,$5
   add $6,$4
 lpe

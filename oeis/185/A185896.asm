@@ -20,6 +20,7 @@ lpb $2
   add $4,$3
   add $4,1
   seq $4,59419 ; Triangle T(n,k) (1 <= k <= n) of tangent numbers, read by rows: T(n,k) = coefficient of x^n/n! in expansion of (tan x)^k/k!.
+  mov $1,0
   add $3,1
   mov $5,$3
   bin $5,2

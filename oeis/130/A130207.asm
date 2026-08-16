@@ -1,15 +1,36 @@
 ; A130207: Diagonalized matrix of A000010, Euler totient function phi.
-; Submitted by mmonnin
+; Submitted by M0CZY
 ; 1,0,1,0,0,2,0,0,0,2,0,0,0,0,4,0,0,0,0,0,2,0,0,0,0,0,0,6,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,4,0,0
-; Formula: a(n) = A054526(n-1)*truncate(A126988(n)^(-A126988(n)+truncate(0^A126988(n))))
 
 #offset 1
 
-mov $1,$0
-seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
-pow $2,$1
-sub $2,$1
-pow $1,$2
+mov $2,$0
+mul $2,8
+nrt $2,2
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
 sub $0,1
-seq $0,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
-mul $0,$1
+sub $2,$0
+lpb $2
+  sub $2,1
+  mul $2,2
+  mov $4,$1
+  add $4,$0
+  equ $8,0
+  mov $3,$4
+  mul $3,8
+  nrt $3,2
+  add $3,1
+  div $3,2
+  bin $3,2
+  sub $4,$3
+  add $4,1
+  mov $5,$4
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $7,$8
+  mul $7,$5
+  add $6,$7
+lpe
+mov $0,$6

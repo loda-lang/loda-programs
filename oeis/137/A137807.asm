@@ -1,8 +1,12 @@
 ; A137807: Final digit of prime(n)^2.
-; Submitted by Simon Strandgaard
+; Submitted by reallight
 ; 4,9,5,9,1,9,9,1,9,1,1,9,1,9,9,9,1,1,9,1,9,1,9,1,9,1,9,9,1,9,9,1,9,1,1,1,9,9,9,9,1,1,1,9,9,1,1,9,9,1,9,1,1,1,9,9,1,1,9,1,9,9,9,1,9,9,1,9,9,1,9,1,9,9,1,9,1,9,1,1
-; Formula: a(n) = (A000040(n+1)^2)%10
+; Formula: a(n) = (A000040(min(n-1,155)+1)^2)%10
 
+#offset 1
+
+sub $0,1
+min $0,155
 add $0,1
 seq $0,40 ; The prime numbers.
 pow $0,2

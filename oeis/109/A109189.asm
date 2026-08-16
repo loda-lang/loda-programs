@@ -18,13 +18,25 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,89942 ; Inverse binomial matrix applied to A039599.
+  seq $4,111960 ; Renewal array for central trinomial numbers A002426.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,136531 ; Coefficients of polynomials B(x,n) = ((1+a+b)*x - c)*B(x,n-1) - a*b*B(x,n-2) where B(x,0) = 1, B(x,1) = x, a=-b, b=1, c=1.
-  mul $4,$5
+  add $5,1
+  mov $8,$5
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  mov $7,$8
+  bin $7,2
+  sub $5,$7
+  sub $8,$5
+  mov $9,0
+  sub $9,$5
+  bin $9,$8
+  mul $4,$9
   add $6,$4
 lpe
 mov $0,$6

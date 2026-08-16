@@ -1,5 +1,5 @@
 ; A334260: Sum of the largest composite parts in the partitions of 2n into two parts.
-; Submitted by Mads Nissen
+; Submitted by owensse
 ; 0,0,4,10,23,33,39,68,76,85,116,138,175,228,242,257,306,375,393,470,490,511,578,624,697,773,799,881,966,1024,1054,1179,1276,1309,1412,1447,1483,1632,1747,1786,1907,1989,2116,2289,2333,2469,2608,2797,2845,2993,3043
 
 #offset 1
@@ -20,7 +20,6 @@ lpb $3
     lpb $7
       mov $5,$2
       mod $5,$6
-      mul $5,3
       add $6,1
       sub $7,$5
     lpe

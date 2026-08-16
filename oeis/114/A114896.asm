@@ -1,5 +1,5 @@
 ; A114896: A symmetrical triangle of weight coefficients using the Divisors Sigma function: t(n,m) = Sigma_0(n-m+1)*Sigma_0(m+1).
-; Submitted by loader3229
+; Submitted by tosi
 ; 1,2,2,2,4,2,3,4,4,3,2,6,4,6,2,4,4,6,6,4,4,2,8,4,9,4,8,2,4,4,8,6,6,8,4,4,3,8,4,12,4,12,4,8,3,4,6,8,6,8,8,6,8,6,4,2,8,6,12,4,16,4,12,6,8,2,6,4,8,9,8,8,8,8,9,8,4,6,2,12
 
 add $0,1
@@ -16,6 +16,7 @@ mov $3,$0
 sub $2,$0
 lpb $2
   sub $2,1
+  dif $2,$3
   mov $4,$1
   add $4,$3
   add $4,1
@@ -24,6 +25,7 @@ lpb $2
   nrt $8,2
   sub $8,1
   div $8,2
+  mov $1,3
   add $3,1
   mov $7,$8
   add $7,1

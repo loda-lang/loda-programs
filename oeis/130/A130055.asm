@@ -20,29 +20,26 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  seq $4,127170 ; Triangle read by rows: T(n,k) is the number of divisors of n that are divisible by k, with 1 <= k <= n.
+  seq $4,129691 ; Inverse of A054523.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
-  mov $8,$5
-  mul $5,8
-  nrt $5,2
-  add $5,1
-  div $5,2
   mov $7,$5
-  bin $5,2
-  sub $8,$5
-  mov $10,$7
-  div $10,$8
-  mov $9,$7
-  mod $9,$8
-  equ $9,0
-  seq $10,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  mul $10,$9
-  mul $7,$10
-  mul $4,$7
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $5,$8
+  add $7,1
+  gcd $7,$5
+  div $7,$5
+  mul $5,$7
+  mul $4,$5
   add $6,$4
 lpe
 mov $0,$6

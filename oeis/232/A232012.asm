@@ -6,18 +6,13 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
   seq $3,85099 ; Least natural number k such that k^2 + n is prime.
-  mov $5,$3
-  seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
-  sub $3,1
-  mov $3,$5
-  add $3,1
-  equ $3,1
+  seq $3,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

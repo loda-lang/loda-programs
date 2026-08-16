@@ -18,14 +18,33 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,121461 ; Triangle read by rows: T(n,k) is the number of nondecreasing Dyck paths of semilength n, having last ascent of length k (1 <= k <= n).
+  seq $4,125171 ; Riordan array ((1-x)/(1-3*x+x^2),x/(1-x)) read by rows.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,168216 ; Riordan array (1/(1-x),xc(x)/(1-xc(x))) where c(x)is the g.f. of A000108.It factorizes as A007318*A106566.
-  mul $4,$5
+  add $5,1
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $5,1
+  sub $5,$9
+  sub $5,$7
+  sub $7,$5
+  trn $7,1
+  mov $8,$7
+  add $5,$7
+  bin $7,$5
+  add $5,1
+  bin $8,$5
+  mul $8,-1
+  add $7,$8
+  mul $4,$7
   add $6,$4
 lpe
 mov $0,$6

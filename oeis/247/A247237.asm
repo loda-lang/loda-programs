@@ -18,13 +18,29 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,127949 ; A000012 as an infinite lower triangular matrix with all 1's; A127899 = a simple transform; then A000012 * A127899. Given A051340, change all 1's to -1. Triangle read by rows, (n-1) -1's followed by "n".
+  seq $4,248345 ; Signed version of A094953.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,242598 ; Triangle read by rows: T(n,k) is the coefficient A_k in the transformation of 1 + x + x^2 + ... + x^n to the polynomial A_k*(x-k)^k for 0 <= k <= n.
+  add $5,1
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $5,$8
+  sub $5,1
+  mov $8,$7
+  sub $8,$5
+  add $5,1
+  add $7,1
+  bin $7,$5
+  pow $5,$8
+  mul $5,$7
   mul $4,$5
   add $6,$4
 lpe

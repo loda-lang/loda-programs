@@ -18,20 +18,23 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,89942 ; Inverse binomial matrix applied to A039599.
+  add $4,1
+  mov $7,$4
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $8,$4
+  add $8,1
+  bin $8,2
+  sub $7,$8
+  sub $7,1
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  mul $5,2
-  mov $7,$5
-  nrt $7,2
-  fac $7,2
-  sub $5,$7
-  add $5,1
-  gcd $5,0
-  div $5,2
-  add $5,1
+  seq $5,116399 ; Triangle whose k-th column has e.g.f. sum{j=0..k, Bessel_I(k+j,2x)}.
+  bin $4,$7
   mul $4,$5
   add $6,$4
 lpe

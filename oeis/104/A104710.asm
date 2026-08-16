@@ -1,5 +1,5 @@
 ; A104710: Triangle read by rows: reversed partial sums of Narayana triangle rows.
-; Submitted by loader3229
+; Submitted by Kaischa
 ; 1,2,1,5,4,1,14,13,7,1,42,41,31,11,1,132,131,116,66,16,1,429,428,407,302,127,22,1,1430,1429,1401,1205,715,225,29,1,4862,4861,4825,4489,3313,1549,373,37,1,16796,16795,16750,16210,13690,8398,3106,586,46,1
 
 #offset 1
@@ -13,58 +13,30 @@ mov $1,$2
 bin $1,2
 sub $0,$1
 sub $0,1
-mov $3,$0
 sub $2,$0
 lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
   add $4,1
-  mov $8,$4
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $9,$8
-  add $9,1
-  bin $9,2
   mov $7,$4
-  sub $7,$9
+  mul $7,8
+  nrt $7,2
   sub $7,1
-  mov $9,$8
-  add $9,1
-  bin $9,$7
-  bin $8,$7
-  add $7,1
-  mul $8,$9
-  div $8,$7
-  mov $10,$4
-  mul $10,8
-  nrt $10,2
-  div $10,$9
-  sub $10,1
-  div $10,2
-  add $10,1
-  mov $4,2
-  mul $4,$10
-  bin $4,$10
-  mov $11,$10
-  add $11,1
-  add $3,1
-  mov $5,$3
+  div $7,2
+  mov $5,$7
+  add $5,1
   bin $5,2
-  add $5,$0
-  mov $12,$5
-  mul $12,8
-  add $12,16
-  nrt $12,2
-  add $12,1
-  div $12,2
-  bin $12,2
-  neq $5,$12
-  div $4,$11
-  mul $4,$8
-  mul $4,$5
-  add $6,$4
+  sub $4,$5
+  sub $4,1
+  mov $5,$7
+  add $5,1
+  bin $5,$4
+  bin $7,$4
+  add $4,1
+  mul $7,$5
+  div $7,$4
+  add $3,1
+  add $6,$7
 lpe
 mov $0,$6

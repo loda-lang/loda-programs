@@ -18,20 +18,35 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,37027 ; Skew Fibonacci-Pascal triangle read by rows.
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
   add $3,1
+  sub $4,$9
+  sub $4,1
+  mul $4,-1
+  add $4,$8
+  mov $7,-1
+  bin $7,$4
+  equ $7,1
+  mul $8,-1
+  sub $8,1
+  add $8,$4
+  div $4,2
+  bin $8,$4
+  mul $7,$8
+  mov $4,$7
+  gcd $4,$7
   mov $5,$3
   bin $5,2
   add $5,$0
-  add $5,1
-  mov $7,$5
-  mul $5,8
-  nrt $5,2
-  add $5,3
-  div $5,2
-  bin $5,2
-  add $5,1
-  sub $5,$7
+  seq $5,55249 ; Triangle of partial row sums (prs) of triangle A055248 (prs of Pascal's triangle A007318).
   mul $4,$5
   add $6,$4
 lpe

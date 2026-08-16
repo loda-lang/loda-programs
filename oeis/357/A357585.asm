@@ -18,13 +18,25 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,121576 ; Riordan array (2-2*x-sqrt(1-8*x+4*x^2), (1-2*x-sqrt(1-8*x+4*x^2))/2).
+  seq $4,265435 ; Riordan array (1, x*f(x)) where f(x) is the g.f. of A007564.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,103316 ; Riordan array (1/(1+2x), x/(1+x)).
-  mul $4,$5
+  add $5,1
+  mov $8,$5
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $5,$7
+  sub $5,2
+  sub $8,1
+  bin $8,$5
+  mul $4,$8
   add $6,$4
 lpe
 mov $0,$6

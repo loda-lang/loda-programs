@@ -1,12 +1,9 @@
 ; A397983: Upper (2/3,1) midsequence of triangular numbers (A000217) and squares (A000290); see Comments.
-; Submitted by Science United
+; Submitted by Chad To
 ; 0,2,6,13,23,35,50,68,88,111,137,165,196,230,266,305,347,391,438,488,540,595,653,713,776,842,910,981,1055,1131,1210,1292,1376,1463,1553,1645,1740,1838,1938,2041,2147,2255,2366,2480,2596,2715,2837,2961,3088,3218
-; Formula: a(n) = n^2+floor((n^2+n+1)/3)
+; Formula: a(n) = truncate((binomial(-4*n,2)+3)/6)
 
-mov $1,$0
-mul $1,$0
-add $0,$1
-add $0,1
-div $0,3
-add $1,$0
-mov $0,$1
+mul $0,-4
+bin $0,2
+add $0,3
+div $0,6

@@ -1,14 +1,11 @@
 ; A236210: Pairs of "harmonic numbers" 2^m * 3^n that differ by 1.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,2,3,3,4,8,9
-; Formula: a(n) = 4*binomial(floor((n+1)/2),4)-floor((n+1)/2)+n+1
+; Formula: a(n) = truncate(bitor(n-23,8)/2)+12
 
 #offset 1
 
-add $0,1
-mov $1,$0
-div $1,2
-sub $0,$1
-bin $1,4
-mul $1,4
-add $0,$1
+sub $0,23
+bor $0,8
+div $0,2
+add $0,12

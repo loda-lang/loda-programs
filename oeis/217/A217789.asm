@@ -1,12 +1,12 @@
 ; A217789: Least difference between 2 palindromic numbers of length n.
-; Submitted by [AF>Linux]Rogue 9
+; Submitted by loader3229
 ; 1,11,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+; Formula: a(n) = min(sumdigits(n*(n-1)*(n+1)*(n+2)*(n+3)*(n+4)*(n+5)*(n+6)*(n+7)*(n+8),4),10)+1
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-mul $0,10
-dif $0,$1
-neq $1,2
-add $0,$1
+fac $0,10
+dgs $0,4
+min $0,10
+add $0,1

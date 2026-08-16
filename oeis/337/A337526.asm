@@ -1,5 +1,5 @@
 ; A337526: Number of length n permutations that are sorted to the identity by a consecutive-213-avoiding stack followed by a classical-21-avoiding stack.
-; Submitted by William Michael Kanar
+; Submitted by atannir
 ; 1,2,5,15,50,180,686,2731
 
 #offset 1
@@ -12,10 +12,9 @@ lpb $0
   add $1,5
   mov $6,3
   add $6,$1
+  mov $1,$4
   mul $5,2
   add $5,$4
-  mov $1,$4
-  add $1,1
   div $4,2
   add $2,$4
   div $2,2

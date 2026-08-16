@@ -1,39 +1,38 @@
 ; A006025: Number of labeled mating digraphs with n nodes.
-; Submitted by Science United
+; Submitted by Checco
 ; 1,1,3,54,3750,1009680,1058347920,4375678520640,71934792452208000,4719774805970453006400,1237727595442264073683462080,1298006134163762816201615178698880,5444432200219729912412940250057668378240,91343427664314313661310430506697679793337259520,6129973851193306491857700112912725946124053661062771200,1645503913673536053682244290627092454394248793720007392557593600,1766846867317877786301258561667779341063794600392815607263255886037324800
 
-mov $19,1
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,1
-    sub $7,$2
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
+mov $9,$0
+add $9,1
+bin $9,2
+add $0,1
+lpb $0
+  mov $7,0
+  mov $8,0
+  mov $3,$2
+  add $3,1
+  bin $3,2
+  mov $10,$2
+  add $10,1
+  lpb $10
+    sub $10,1
+    mov $4,$7
+    add $4,$3
+    mov $6,$7
+    seq $6,6125 ; a(n) = 2^(n*(n-1)/2).
+    pow $6,2
+    seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+    mul $4,$6
+    add $7,1
+    add $8,$4
   lpe
-  sub $3,1
-  mov $19,0
+  mov $5,$2
+  add $5,$9
+  add $5,1
+  seq $5,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.
+  mul $5,$8
+  sub $0,1
+  add $1,$5
+  add $2,1
 lpe
-mov $2,0
-mov $3,$0
-mov $0,$14
-lpb $3
-  add $0,$2
-  add $2,20
-  mov $4,2
-  pow $4,$0
-  mul $$2,$4
-  add $1,$$2
-  sub $2,19
-  add $0,$2
-  sub $3,1
-lpe
-equ $0,0
-add $0,$1
+mov $0,$1

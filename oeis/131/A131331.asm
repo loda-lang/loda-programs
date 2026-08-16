@@ -18,25 +18,34 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,136531 ; Coefficients of polynomials B(x,n) = ((1+a+b)*x - c)*B(x,n-1) - a*b*B(x,n-2) where B(x,0) = 1, B(x,1) = x, a=-b, b=1, c=1.
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $7,$4
+  div $7,2
+  add $7,$4
+  bin $7,$4
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
+  mov $9,$5
   add $5,1
-  mov $8,$5
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $7,$8
-  add $7,1
-  bin $7,2
-  sub $5,$7
-  sub $5,2
-  sub $8,1
-  bin $8,$5
-  mul $4,$8
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,4
+  add $9,$5
+  mov $5,-1
+  pow $5,$9
+  mov $4,$7
+  mul $4,$5
   add $6,$4
 lpe
 mov $0,$6

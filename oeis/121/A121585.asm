@@ -18,25 +18,15 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  mov $7,$4
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $8,$7
-  add $8,1
-  bin $8,2
-  sub $4,$8
-  bin $7,$4
+  seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $4,5
+  gcd $4,0
+  div $4,5
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  add $5,1
-  seq $5,59418 ; Triangle T(n,k) arising from enumeration of permutations with ordered orbits, read by rows (1<=k<=n).
-  div $4,-1
-  fac $4,$7
+  seq $5,239473 ; Triangle read by rows: signed version of A059260: coefficients for expansion of partial sums of sequences a(n,x) in terms of their binomial transforms (1+a(.,x))^n ; Laguerre polynomial expansion of the truncated exponential.
   mul $4,$5
   add $6,$4
 lpe

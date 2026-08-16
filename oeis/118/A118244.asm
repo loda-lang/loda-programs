@@ -18,12 +18,35 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,54456 ; Convolution triangle of A000129(n) (Pell numbers).
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
   add $3,1
+  sub $4,$9
+  sub $4,1
+  mul $4,-1
+  add $4,$8
+  mov $7,-1
+  bin $7,$4
+  equ $7,1
+  mul $8,-1
+  sub $8,1
+  add $8,$4
+  div $4,2
+  bin $8,$4
+  mul $7,$8
+  mov $4,$7
+  gcd $4,$7
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  seq $5,38719 ; Triangle T(n,k) (0 <= k <= n) giving number of chains of length k in partially ordered set formed from subsets of n-set by inclusion.
   mul $4,$5
   add $6,$4
 lpe

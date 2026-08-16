@@ -1,13 +1,11 @@
 ; A037213: Expansion of Sum_{n>=0} n*q^(n^2).
-; Submitted by omegaintellisys
+; Submitted by Science United
 ; 0,1,0,0,2,0,0,0,0,3,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = sqrtint(n)*((sqrtint(n)^2)==n)
 
-mov $3,$0
+mov $1,$0
 nrt $0,2
 mov $2,$0
-lpb $0
-  mul $0,$2
-  sub $0,$3
-  mov $1,$2
-lpe
-mov $0,$1
+pow $0,2
+equ $0,$1
+mul $0,$2

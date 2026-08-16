@@ -22,28 +22,21 @@ lpb $2
   mov $8,$4
   mul $8,8
   nrt $8,2
-  sub $8,1
+  add $8,1
   div $8,2
-  add $3,1
   mov $7,$8
-  add $7,1
   bin $7,2
   sub $4,$7
-  sub $4,1
-  mov $7,$8
-  sub $7,1
-  bin $7,$4
-  mov $9,$8
-  bin $9,$4
-  min $8,1
-  add $9,$7
-  add $9,$8
-  mov $4,$9
-  sub $4,1
+  sub $8,$4
+  mov $9,0
+  sub $9,$4
+  bin $9,$8
+  add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,381082 ; Triangle T(n,k) read by rows, where the columns are the coefficients of the standard expansion of the function f(x) = (-log(1-x))^(k)*exp(-m*x)/k! for the case m=2.
+  seq $5,326326 ; T(n, k) = [x^k] Sum_{j=0..n} Pochhammer(x, j), for 0 <= k <= n, triangle read by rows.
+  mov $4,$9
   mul $4,$5
   add $6,$4
 lpe

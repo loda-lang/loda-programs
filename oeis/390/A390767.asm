@@ -1,12 +1,8 @@
 ; A390767: Number of digits in base-9 representation of n.
-; Submitted by vaughan
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+; Formula: a(n) = logint(9*max(n,1),9)
 
-mov $2,$0
-lpb $2
-  div $2,9
-  add $1,1
-lpe
-trn $1,1
-mov $0,$1
-add $0,1
+max $0,1
+mul $0,9
+log $0,9

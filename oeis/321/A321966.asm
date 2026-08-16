@@ -18,31 +18,27 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,104556 ; Matrix inverse of triangle A001497 of Bessel polynomials, read by rows; essentially the same as triangle A096713 of modified Hermite polynomials.
+  mov $8,$4
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $7,$4
+  add $7,1
+  bin $7,2
+  sub $8,$7
+  mov $10,$4
+  sub $10,$8
+  mov $9,$8
+  fac $9,$10
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  mov $8,$5
-  add $8,1
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $9,$8
-  add $9,1
-  bin $9,2
-  sub $5,$9
-  mov $7,$8
-  bin $7,$5
-  pow $7,2
-  sub $8,$5
-  mov $9,2
-  pow $9,$8
-  mov $5,1
-  fac $5,$8
-  mul $5,$9
-  mul $5,$7
+  add $5,1
+  seq $5,49403 ; A triangle of numbers related to triangle A030528; array a(n,m), read by rows (1 <= m <= n).
+  bin $4,$8
+  mul $4,$9
   mul $4,$5
   add $6,$4
 lpe

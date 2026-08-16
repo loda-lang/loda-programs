@@ -1,13 +1,12 @@
 ; A105677: Highest minimal Hamming distance of any Type 4^E Euclidean linear self-dual code over GF(4) of length 2n.
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 2,3,3,4,4,6,6,6
-; Formula: a(n) = (truncate((n-7)/2)==0)+truncate((n-7)/2)+5
+; Formula: a(n) = (if((floor((n+14)/2)%10)==0,floor((n+14)/2)/10,floor((n+14)/2))+5)%10
 
 #offset 1
 
-sub $0,7
+add $0,14
 div $0,2
-mov $1,$0
-equ $1,0
-add $0,$1
+dif $0,10
 add $0,5
+mod $0,10

@@ -1,11 +1,10 @@
 ; A021086: Decimal expansion of 1/82.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 0,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9,5,1,2,1,9
-; Formula: a(n) = floor((10^(n+1))/82)%10
+; Formula: a(n) = if((if((sign(n)*((n-1)%5+1))==0,0,(sign(n)*((n-1)%5+1))/(3^valuation(sign(n)*((n-1)%5+1),3)))%(-4))==0,if((sign(n)*((n-1)%5+1))==0,0,(sign(n)*((n-1)%5+1))/(3^valuation(sign(n)*((n-1)%5+1),3)))/(-4),if((sign(n)*((n-1)%5+1))==0,0,(sign(n)*((n-1)%5+1))/(3^valuation(sign(n)*((n-1)%5+1),3))))-10*truncate((if((if((sign(n)*((n-1)%5+1))==0,0,(sign(n)*((n-1)%5+1))/(3^valuation(sign(n)*((n-1)%5+1),3)))%(-4))==0,if((sign(n)*((n-1)%5+1))==0,0,(sign(n)*((n-1)%5+1))/(3^valuation(sign(n)*((n-1)%5+1),3)))/(-4),if((sign(n)*((n-1)%5+1))==0,0,(sign(n)*((n-1)%5+1))/(3^valuation(sign(n)*((n-1)%5+1),3))))+10)/10)+10
 
-add $0,1
-mov $1,10
-pow $1,$0
-div $1,82
-mov $0,$1
+dgr $0,6
+dir $0,3
+dif $0,-4
+add $0,10
 mod $0,10

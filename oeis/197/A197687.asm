@@ -1,10 +1,10 @@
 ; A197687: Decimal expansion of 3*Pi/(6 + 2*Pi).
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 7,6,7,2,9,1,0,3,4,4,5,6,7,1,7,6,2,1,9,7,8,4,3,4,7,0,3,2,0,7,5,7,0,0,7,2,5,6,7,3,4,6,4,6,7,8,7,2,0,3,4,6,2,4,1,3,1,7,5,3,7,5,1,2,1,0,5,9,2,5,5,4,2,1,4,8,7,5,6,6
 
 add $0,1
 mov $3,$0
-mul $3,5
+mul $3,4
 lpb $3
   mov $5,$3
   mul $5,2
@@ -13,16 +13,13 @@ lpb $3
   sub $2,$3
   mul $1,$3
   add $1,$2
-  div $1,$0
-  div $2,$0
   sub $3,1
 lpe
-mul $1,2
 div $1,3
+add $2,$1
+add $2,$1
 mov $4,10
 pow $4,$0
-div $4,2
-add $2,$1
 div $2,$4
 mul $1,3
 div $1,$2

@@ -20,23 +20,23 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  mov $7,$4
-  mul $4,8
-  nrt $4,2
-  add $4,1
-  div $4,2
-  mov $8,$4
-  bin $4,2
-  sub $7,$4
-  mod $8,$7
-  equ $8,0
+  seq $4,127170 ; Triangle read by rows: T(n,k) is the number of divisors of n that are divisible by k, with 1 <= k <= n.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
-  seq $5,127371 ; Triangle read by rows: A051731 * A054521, as infinite lower triangular matrices.
-  mov $4,$8
+  mov $8,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $7,$5
+  bin $5,2
+  sub $8,$5
+  gcd $7,$8
+  mov $5,$7
+  equ $5,1
   mul $4,$5
   add $6,$4
 lpe

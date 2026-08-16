@@ -1,5 +1,5 @@
 ; A112026: A puzzle sequence, answer unknown.
-; Submitted by Laurent Cheylat
+; Submitted by vaughan
 ; 30,28,32,38,40,42,46,52,60,60,64,68
 
 #offset 1
@@ -7,6 +7,7 @@
 sub $0,1
 mov $1,$0
 dgr $1,17
+mov $2,4
 mov $4,$1
 equ $4,1
 mov $3,$4
@@ -37,10 +38,6 @@ equ $4,10
 add $3,$4
 mov $4,$1
 equ $4,11
-add $3,$4
-mov $4,$1
-equ $4,13
-mov $2,4
 add $3,$4
 nrt $0,4
 lpb $0

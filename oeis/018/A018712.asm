@@ -1,5 +1,5 @@
 ; A018712: Divisors of 903.
-; Submitted by owensse
+; Submitted by loader3229
 ; 1,3,7,21,43,129,301,903
 
 #offset 1
@@ -16,7 +16,6 @@ lpb $0
   div $0,2
   mul $2,$1
   dif $2,$3
-  bin $1,2
-  mul $1,2
+  fac $1,-2
 lpe
 mov $0,$2

@@ -1,12 +1,43 @@
 ; A076903: Numerator of coefficients of power series for exp(exp(x)-1).
-; Submitted by BarnardsStern
+; Submitted by Bagoda Tes-X
 ; 1,1,1,5,5,13,203,877,23,1007,4639,22619,4213597,27644437,95449661,276591709,10480142147,255755771,97439543737,5832742205057,263898766507,158289938718917,88366975263673,22076002927542173,148652956431601763,356814640940769181,1459742544812316361,545717047936059989389,1232107880919986930491,1049114734395004046929,282249671503936444150049,935759904202397862281423,2462782116344398342671647,1629595892846007606764728147,543462548426675909292016841,191564763958884535077102331
-; Formula: a(n) = truncate(truncate(A137341(n)/(n!))/gcd(n!,truncate(A137341(n)/(n!))))
 
+mov $6,1
+fac $6,$0
+mov $10,1
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
-gcd $0,$1
+add $1,1
+lpb $1
+  sub $1,1
+  mov $4,$3
+  pow $4,$0
+  mov $5,$0
+  bin $5,$3
+  mul $8,$3
+  add $8,$4
+  mov $12,$8
+  div $12,$6
+  mul $13,$3
+  add $13,$12
+  add $3,1
+  mod $8,$6
+  mul $10,-1
+  mov $14,$5
+  mul $14,$8
+  mul $14,$10
+  mov $9,$5
+  mul $9,$13
+  mul $9,$10
+  add $7,$9
+  add $11,$14
+lpe
+sub $2,$0
+mul $7,$10
+mul $11,$10
+div $11,$6
+add $11,$7
+fac $0,$2
+gcd $0,$11
+mov $1,$11
 div $1,$0
 mov $0,$1

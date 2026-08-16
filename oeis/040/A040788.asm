@@ -1,19 +1,17 @@
 ; A040788: Continued fraction for sqrt(817).
-; Submitted by 7kuskus
+; Submitted by Owdjim
 ; 28,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1
-; Formula: a(n) = (truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10+24*floor(((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10)/3)
 
-mov $1,2
-trn $1,$0
-add $1,6
-gcd $0,$1
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-add $0,1
-mod $0,10
-mov $2,$0
-div $0,3
-mul $0,24
-add $0,$2
+mov $2,28
+mov $3,1
+mov $6,1
+mov $11,2
+mov $14,56
+pow $0,2
+lpb $0
+  mov $2,0
+  rol $2,13
+  add $14,$2
+  sub $0,1
+lpe
+mov $0,$2

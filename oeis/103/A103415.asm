@@ -12,20 +12,13 @@ mov $1,$2
 bin $1,2
 sub $0,$1
 sub $0,1
-mov $3,$0
 sub $2,$0
 lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,128514 ; Triangle, Pell sequence in every column.
+  seq $4,8288 ; Square array of Delannoy numbers D(i,j) (i >= 0, j >= 0) read by antidiagonals.
   add $3,1
-  mov $5,$3
-  bin $5,2
-  add $5,$0
-  seq $5,122542 ; Triangle T(n,k), 0 <= k <= n, read by rows, given by [0, 2, -1, 0, 0, 0, 0, 0, ...] DELTA [1, 0, 0, 0, 0, 0, 0, 0, ...] where DELTA is the operator defined in A084938.
-  mul $4,$5
-  add $6,$4
+  add $5,$4
 lpe
-mov $0,$6
+mov $0,$5

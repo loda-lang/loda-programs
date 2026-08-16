@@ -1,18 +1,27 @@
 ; A128540: Triangle A127647 * A097806, read by rows.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Thylia
 ; 1,1,1,0,2,2,0,0,3,3,0,0,0,5,5,0,0,0,0,8,8,0,0,0,0,0,13,13,0,0,0,0,0,0,21,21,0,0,0,0,0,0,0,34,34,0,0,0,0,0,0,0,0,55,55,0,0,0,0,0,0,0,0,0,89,89,0,0,0,0,0,0,0,0,0,0,144,144,0,0
 
 #offset 1
 
-mov $1,2
-lpb $1
-  sub $1,1
-  add $0,$1
-  sub $0,1
-  sub $1,$2
-  mov $2,$0
-  max $2,0
-  add $2,1
-  seq $2,127647 ; Triangle read by rows: row n consists of n-1 zeros followed by Fibonacci(n).
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
+lpb $2
+  sub $2,1
+  pow $2,2
+  add $3,1
+  mov $4,$3
+  bin $4,2
+  add $4,1
+  seq $4,131410 ; A127647 * A000012.
 lpe
-mov $0,$2
+mov $0,$4

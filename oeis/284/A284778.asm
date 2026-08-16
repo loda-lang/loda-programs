@@ -1,21 +1,26 @@
 ; A284778: Number of self-avoiding planar walks of length n+1 starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 0,1,1,4,8,22,54,142,370,983,2627,7086,19238,52561,144377,398518,1104794,3074809,8588093,24064642,67630898,190584766,538412426,1524554956,4326119748,12300296227,35037658099,99977847308,285741659312,817901027070,2344475178110,6729332492206,19339562937170,55646678811017,160295684134541,462241200509994,1334307564896634,3855331473327640,11149761814958044,32273689052932504,93496029134987816,271070862492008971,786506463940064147,2283690325406444200,6635507859605616020,19293036409496015695
+; Formula: a(n) = -e(n+1)+d(n+1), b(n) = c(n-1), b(4) = 3, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = truncate((n*(3*c(n-2)+2*c(n-1)))/(n+2)), c(4) = 6, c(3) = 3, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = truncate((n*(3*b(n-1)+2*c(n-1)))/(n+2)), d(4) = 6, d(3) = 3, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = -e(n-1)+b(n-1)+c(n-1), e(4) = 2, e(3) = 2, e(2) = 0, e(1) = 1, e(0) = 0
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  add $0,1
-  seq $0,124791 ; Row sums of number triangle A124790.
+mov $1,3
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  mul $5,-1
+  add $5,$2
+  add $5,$3
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
+  sub $4,2
+  mul $4,$2
+  div $4,$1
+  add $1,1
   mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mul $4,$3
-  mov $5,$0
+  mov $3,$4
 lpe
-sub $1,$5
-mov $0,$1
-div $0,2
+sub $4,$5
+mov $0,$4

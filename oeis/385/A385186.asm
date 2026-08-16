@@ -5,28 +5,33 @@
 #offset 1
 
 sub $0,1
-mov $4,$0
+mov $5,$0
 mov $3,2
 lpb $3
-  div $3,2
-  mov $6,$4
-  sub $6,1
-  mov $5,$6
-  div $6,2
-  add $6,2
-  mov $1,$6
-  seq $1,40 ; The prime numbers.
-  sub $6,4
-  sub $1,$6
-  sub $1,$6
-  add $5,$1
+  sub $3,1
   mov $0,$5
-  sub $0,5
-  add $2,2
+  mov $5,1
+  equ $6,0
+  add $0,$3
+  add $0,$6
+  sub $0,3
+  mov $7,$0
+  div $0,2
+  add $0,2
+  mov $4,$0
+  seq $4,40 ; The prime numbers.
+  sub $0,4
+  sub $4,$0
+  sub $4,$0
+  add $7,$4
+  mov $0,$7
+  sub $0,4
+  bin $0,2
+  mov $2,$3
   mul $2,$0
-  pow $4,$3
+  add $1,$2
 lpe
-mov $0,$2
-sub $0,4
-div $0,2
+sub $1,$5
+mov $0,$1
+mul $0,2
 add $0,2

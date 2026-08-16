@@ -1,28 +1,24 @@
 ; A224195: Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
 ; Submitted by Science United
 ; 3,5,7,9,13,15,17,25,29,31,33,49,57,61,63,65,97,113,121,125,127,129,193,225,241,249,253,255,257,385,449,481,497,505,509,511,513,769,897,961,993,1009,1017,1021,1023,1025,1537,1793,1921,1985,2017,2033,2041,2045,2047,2049,3073,3585,3841,3969,4033,4065,4081,4089,4093,4095,4097,6145,7169,7681,7937,8065,8129,8161,8177,8185,8189,8191,8193,12289
-; Formula: a(n) = truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))*(truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))-2)+1
+; Formula: a(n) = (if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))-1)*if((-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2)+1))+1
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $3,$1
-add $3,1
 bin $3,2
 sub $0,$3
-sub $0,1
 sub $1,$0
-add $0,2
+add $1,1
 mov $2,2
 pow $2,$0
-sub $2,2
-mov $0,$2
-mov $2,2
-pow $2,$1
-mul $2,$0
-mov $0,$2
+sub $2,1
+mov $0,2
+pow $0,$1
+mul $0,$2
 add $0,1

@@ -18,16 +18,40 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
-  mul $4,5
-  gcd $4,0
-  div $4,5
+  mov $8,$4
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $7,$4
+  add $7,1
+  bin $7,2
+  sub $8,$7
+  mov $10,$4
+  sub $10,$8
+  mov $9,$8
+  fac $9,$10
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,130191 ; Square of the Stirling2 matrix A048993.
-  mul $4,$5
+  mov $13,$5
+  mul $13,8
+  nrt $13,2
+  add $13,1
+  div $13,2
+  bin $13,2
+  mov $12,$5
+  sub $12,$13
+  mov $14,0
+  sub $14,$12
+  fac $12,$14
+  mov $11,$5
+  seq $11,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $11,$12
+  bin $4,$8
+  mul $4,$9
+  mul $4,$11
   add $6,$4
 lpe
 mov $0,$6

@@ -5,21 +5,16 @@
 #offset 1
 
 sub $0,1
-mov $3,$0
 mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  mov $4,0
-  seq $4,111530 ; Row 3 of table A111528.
-  add $4,$0
-  seq $4,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
-  mov $5,$4
-  lpb $5
-    mod $5,2
-  lpe
-  add $2,$5
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$1
+  sub $0,$3
+  add $0,1
+  seq $0,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  mod $0,2
+  add $2,$0
 lpe
 mov $0,$2
+add $0,1

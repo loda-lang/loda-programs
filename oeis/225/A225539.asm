@@ -1,12 +1,11 @@
 ; A225539: Numbers n where 2^n and n have the same digital root.
-; Submitted by Science United
+; Submitted by loader3229
 ; 5,16,23,34,41,52,59,70,77,88,95,106,113,124,131,142,149,160,167,178,185,196,203,214,221,232,239,250,257,268,275,286,293,304,311,322,329,340,347,358,365,376,383,394,401,412,419,430,437,448
-; Formula: a(n) = 8*n+bitxor(n,1)-3
+; Formula: a(n) = bitxor(9*n-8,1)+5
 
 #offset 1
 
-mov $1,$0
-bxo $1,1
-mul $0,8
-sub $0,3
-add $0,$1
+mul $0,9
+sub $0,8
+bxo $0,1
+add $0,5

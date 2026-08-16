@@ -19,22 +19,27 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  mov $7,$4
-  mul $4,8
-  nrt $4,2
-  sub $4,1
-  div $4,2
   mov $8,$4
-  add $8,1
-  bin $8,2
-  sub $7,$8
-  sub $7,1
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $9,$8
+  add $9,1
+  bin $9,2
+  sub $4,$9
+  sub $4,1
+  mov $7,$8
+  bin $7,$4
+  add $4,1
+  bin $8,$4
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,193554 ; Triangle read by rows: first column: top entry is 1, then powers of 2; rest of triangle is Pascal's triangle A007318.
-  bin $4,$7
+  seq $5,91918 ; Inverse of number triangle A091917.
+  sub $7,$8
+  mov $4,$7
   mul $4,$5
   add $6,$4
 lpe

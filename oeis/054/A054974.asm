@@ -1,26 +1,24 @@
 ; A054974: Number of nonnegative integer 2 X 2 matrices with no zero rows or columns and with sum of elements equal to n, up to row and column permutation.
 ; Submitted by loader3229
 ; 1,2,6,9,17,23,36,46,65,80,106,127,161,189,232,268,321,366,430,485,561,627,716,794,897,988,1106,1211,1345,1465,1616,1752,1921,2074,2262,2433,2641,2831,3060,3270,3521,3752,4026,4279,4577,4853,5176,5476,5825,6150,6526,6877,7281,7659,8092,8498,8961,9396,9890,10355,10881,11377,11936,12464,13057,13618,14246,14841,15505,16135,16836,17502,18241,18944,19722,20463,21281,22061,22920,23740
-; Formula: a(n) = floor((floor((n-2)/2)*(floor((n-2)/2)+3)+2)/2)*((n-2)%2)+floor((floor((n-2)/2)*(floor((n-2)/2)*(floor((n-2)/2)+6)+8)+3)/3)
+; Formula: a(n) = truncate((floor((2*n+1)/2)*floor(((-n)^2)/4)+truncate((-n)/2)*(-n+1)+binomial(-n+1,3))/2)
 
 #offset 2
 
-sub $0,2
-mov $2,$0
-mod $2,2
+add $0,1
+sub $2,$0
+mov $3,$2
+add $3,1
+add $2,2
+sub $0,$3
+mov $1,$3
+div $1,2
+mul $1,$2
+bin $2,3
+add $2,$1
+pow $3,2
+div $3,4
 div $0,2
-mov $1,$0
-mov $3,$0
-mov $4,$0
-add $0,6
-mul $0,$1
-add $0,8
-mul $0,$1
-add $0,3
-div $0,3
-add $3,3
-mul $3,$4
-add $3,2
-div $3,2
-mul $2,$3
+mul $0,$3
 add $0,$2
+div $0,2

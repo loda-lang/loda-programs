@@ -1,12 +1,11 @@
 ; A289589: a(n) is the number of permutations of length n that avoid the pattern 321 and the mesh pattern (12, 165) or the same sequence for the mesh patterns (12, 167), (12, 225), (12, 233), (12, 270), (12, 302), (12, 330), (12, 458).
-; Submitted by Alexandre_Phan
+; Submitted by Science United
 ; 1,1,1,2,5,15,48,159,538,1850,6446,22712,80794,289804,1047063,3807186,13921317,51160389,188858973,699999531,2604038517,9719460729,36387837723,136609040721,514179424239,1939885552719,7334783750167,27789460372643
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 lpb $0
   sub $0,1
   sub $4,1

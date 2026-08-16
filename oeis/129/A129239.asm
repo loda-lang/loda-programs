@@ -20,34 +20,23 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  seq $4,143614 ; Triangle read by rows: A054521 * A051731 as infinite lower triangular matrices.
+  mov $8,$4
   add $3,1
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $7,$4
+  bin $4,2
+  sub $8,$4
+  gcd $7,$8
+  mov $4,$7
+  equ $4,1
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
-  mov $7,$5
-  mul $7,8
-  nrt $7,2
-  add $7,1
-  div $7,2
-  mov $8,$7
-  bin $7,2
-  mov $9,$5
-  sub $9,$7
-  mov $11,$8
-  div $11,$9
-  mov $10,$8
-  mod $10,$9
-  equ $10,0
-  mul $10,$11
-  mov $7,$10
-  mul $7,2
-  max $7,1
-  seq $7,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
-  div $7,2
-  seq $5,162319 ; Array read by antidiagonals: a(n,m) = the number of digits of m is when written in base n. The top row is the number of digits for each m in base 1.
-  mul $5,$7
+  seq $5,129234 ; Triangle read by rows: T(n,k) = n/k + k - 1 if n mod k = 0; otherwise T(n,k)=0 (1 <= k <= n).
   mul $4,$5
   add $6,$4
 lpe

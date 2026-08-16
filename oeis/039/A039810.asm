@@ -4,25 +4,29 @@
 
 #offset 1
 
-mov $1,$0
-seq $1,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
 mov $2,$0
-mov $3,$1
-seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-seq $2,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $3,$0
+sub $2,$0
 lpb $2
   sub $2,1
-  mov $4,$0
-  add $4,1
-  bin $4,2
+  mov $4,$1
   add $4,$3
-  seq $4,48993 ; Triangle of Stirling numbers of 2nd kind, S(n,k), n >= 0, 0 <= k <= n.
-  mov $5,$3
-  add $5,1
-  bin $5,2
-  add $5,$1
-  seq $5,48993 ; Triangle of Stirling numbers of 2nd kind, S(n,k), n >= 0, 0 <= k <= n.
+  add $4,1
+  seq $4,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
   add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
   mul $4,$5
   add $6,$4
 lpe

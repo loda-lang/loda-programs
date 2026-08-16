@@ -18,12 +18,21 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,118800 ; Triangle read by rows: T satisfies the matrix products: C*T*C = T^-1 and T*C*T = C^-1, where C is Pascal's triangle.
+  mov $7,$4
+  add $7,4
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $8,$7
+  bin $8,2
   add $3,1
+  sub $4,$8
+  bin $4,-3
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,39991 ; Triangle of coefficients of cos(x)^n in polynomial for cos(nx).
+  seq $5,53118 ; Triangle of coefficients of Chebyshev's U(n,x) polynomials (exponents in decreasing order).
   mul $4,$5
   add $6,$4
 lpe

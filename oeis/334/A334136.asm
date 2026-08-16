@@ -1,33 +1,32 @@
 ; A334136: a(n) = (n-1)*sigma(n) where sigma is the sum of divisors A000203.
-; Submitted by KetamiNO [YouTube]
+; Submitted by Josemi
 ; 0,3,8,21,24,60,48,105,104,162,120,308,168,312,336,465,288,663,360,798,640,756,528,1380,744,1050,1040,1512,840,2088,960,1953,1536,1782,1632,3185,1368,2220,2128,3510,1680,3936,1848,3612,3432,3240,2208,5828,2736,4557
 
 #offset 1
 
+mov $4,$0
+sub $4,1
 mov $2,$0
 mov $3,$0
-sub $3,1
-mov $6,$0
-nrt $6,2
-lpb $6
-  max $6,1
-  mov $7,$0
-  mod $7,$6
-  equ $7,0
-  mov $5,$0
-  div $5,$6
+nrt $3,2
+lpb $3
+  max $3,1
+  mov $1,$0
+  mod $1,$3
+  equ $1,0
+  mov $6,$0
+  div $6,$3
+  add $6,$3
+  mul $6,$1
+  sub $3,1
   add $5,$6
-  mul $5,$7
-  add $4,$5
-  sub $6,1
 lpe
 nrt $2,2
-mov $6,$2
-mul $6,$2
-sub $6,$0
-equ $6,0
-mul $2,$6
-sub $4,$2
-bxo $1,$3
-mul $1,$4
-mov $0,$1
+mov $3,$2
+mul $3,$2
+sub $3,$0
+equ $3,0
+mul $2,$3
+sub $5,$2
+mul $4,$5
+mov $0,$4

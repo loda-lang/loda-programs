@@ -18,37 +18,15 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  mov $8,$4
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $9,$8
-  mov $7,$8
-  add $7,1
-  bin $7,2
-  sub $4,$7
-  sub $4,1
-  mov $7,$8
-  bin $7,$4
-  sub $8,$4
-  mov $10,-1
-  pow $10,$4
-  mov $4,$8
-  mul $4,-1
-  mov $8,1
-  add $8,$9
-  fac $8,$4
+  seq $4,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $4,5
+  gcd $4,0
+  div $4,5
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  add $5,1
-  seq $5,59418 ; Triangle T(n,k) arising from enumeration of permutations with ordered orbits, read by rows (1<=k<=n).
-  mul $7,$8
-  mov $4,$7
-  mul $4,$10
+  seq $5,118800 ; Triangle read by rows: T satisfies the matrix products: C*T*C = T^-1 and T*C*T = C^-1, where C is Pascal's triangle.
   mul $4,$5
   add $6,$4
 lpe

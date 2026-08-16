@@ -1,5 +1,5 @@
 ; A035299: Minimum square grid needed to fit English words for 1...n crossword style.
-; Submitted by [BOINCstats] CRNabein
+; Submitted by arkiss
 ; 3,3,5,5,6,8,7,7,8,8,8,9
 
 #offset 1
@@ -10,7 +10,7 @@ div $0,2
 lpb $0
   mov $2,$0
   add $2,1
-  div $0,9
+  mov $0,0
   add $1,$2
 lpe
 lpb $3

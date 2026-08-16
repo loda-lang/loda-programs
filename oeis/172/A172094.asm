@@ -18,12 +18,23 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,80247 ; Formal inverse of triangle A080246. Unsigned version of A080245.
+  seq $4,122538 ; Riordan array (1, x*f(x)) where f(x)is the g.f. of A006318.
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,112465 ; Riordan array (1/(1+x), x/(1-x)).
+  add $5,1
+  mov $7,$5
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $8,$5
+  add $8,1
+  bin $8,2
+  sub $7,$8
+  sub $7,1
+  bin $5,$7
   mul $4,$5
   add $6,$4
 lpe

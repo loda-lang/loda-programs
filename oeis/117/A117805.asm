@@ -1,12 +1,11 @@
 ; A117805: Start with 3. Square the previous term and subtract it.
-; Submitted by TankbusterGames
+; Submitted by loader3229
 ; 3,6,30,870,756030,571580604870,326704387862983487112030,106735757048926752040856495274871386126283608870,11392521832807516835658052968328096177131218666695418950023483907701862019030266123104859068030
-; Formula: a(n) = 2*binomial(a(n-1),2), a(0) = 3
+; Formula: a(n) = a(n-1)*(a(n-1)-1), a(0) = 3
 
 mov $1,3
 lpb $0
   sub $0,1
-  bin $1,2
-  mul $1,2
+  fac $1,-2
 lpe
 mov $0,$1

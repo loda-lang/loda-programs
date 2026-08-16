@@ -1,24 +1,54 @@
 ; A030333: Position of n-th 1 in A003137.
-; Submitted by Science United
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,5,6,7,12,15,18,20,21,24,25,27,28,29,30,31,33,36,38,39,47,52,55,56,58,65,69,73,76,77,81,83,85,87,88,89,91,93,97,100,101,105,106,109,110,112,113,114,117,118,119,121,122,123,124,125,126,127,129,130,133,134,136,137,138,141,145,148,149,153,155,157,159,160,161,163,165,169,172
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,10
+mov $1,1
 pow $2,2
+bin $2,2
 lpb $2
-  add $1,1
+  sub $2,1
   mov $3,$1
-  seq $3,54635 ; Champernowne sequence: write n in base 3 and juxtapose.
+  sub $3,1
+  mov $4,1
+  mov $6,0
+  mov $8,$3
+  lpb $8
+    sub $8,1
+    mov $9,3
+    pow $9,$4
+    mov $5,$6
+    mov $6,$4
+    mul $6,$9
+    div $9,2
+    sub $6,$9
+    mov $7,$3
+    geq $7,$6
+    mul $8,$7
+    add $4,$7
+  lpe
+  mov $7,$3
+  sub $7,$5
+  mod $7,$4
+  mov $8,$4
+  sub $8,$7
+  sub $8,1
+  mov $7,3
+  pow $7,$8
+  mov $6,3
+  pow $6,$4
+  div $6,3
+  sub $3,$5
+  div $3,$4
+  add $3,$6
+  div $3,$7
+  mod $3,3
   equ $3,1
   sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,1

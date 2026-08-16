@@ -1,18 +1,15 @@
 ; A238454: Difference between 2^(2*n-1) and the next larger square.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 2,1,4,16,17,68,89,356,697,1337,2449,4001,4417,17668,24329,4633,18532,74128,296512,1186048,1778369,1181833,4727332,18909328,28184177,17830441,71321764,285287056,381898097,9092137,36368548,145474192,581896768,2327587072,9310348288
-; Formula: a(n) = (sqrtint(2^(2*n-1))+1)^2-2^(2*n-1)
+; Formula: a(n) = (sqrtint(floor((4^n)/2))+1)^2-floor((4^n)/2)
 
 #offset 1
 
-mul $0,2
-sub $0,1
-mov $1,2
+mov $1,4
 pow $1,$0
+div $1,2
 mov $0,$1
-nrt $1,2
-mov $2,$1
-add $2,1
-pow $2,2
-sub $2,$0
-mov $0,$2
+nrt $0,2
+add $0,1
+pow $0,2
+sub $0,$1

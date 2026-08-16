@@ -1,5 +1,5 @@
 ; A118401: Triangle, read by rows, equal to the matrix square of triangle A118400; also equals the matrix inverse of triangle A118407.
-; Submitted by loader3229
+; Submitted by ledwards
 ; 1,0,1,2,0,1,-2,2,0,1,4,-2,2,0,1,-6,4,-2,2,0,1,8,-6,4,-2,2,0,1,-10,8,-6,4,-2,2,0,1,12,-10,8,-6,4,-2,2,0,1,-14,12,-10,8,-6,4,-2,2,0,1,16,-14,12,-10,8,-6,4,-2,2,0,1,-18,16,-14,12,-10,8,-6,4,-2,2,0,1,20,-18
 
 add $0,1
@@ -15,7 +15,6 @@ sub $0,$2
 sub $0,1
 sub $1,$0
 mov $4,$1
-mov $2,$1
 add $2,1
 lpb $2
   sub $2,1

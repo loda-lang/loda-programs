@@ -1,21 +1,16 @@
 ; A137300: 4 X 4 Latin square or "Vigenere" square read by rows.
-; Submitted by Kcchouette
+; Submitted by loader3229
 ; 1,2,2,3,3,3,4,4,4,4,1,1,1,2,2,3
+; Formula: a(n) = -truncate(floor((sqrtint(8*n)-1)/2)/truncate((n-53)/10))*truncate((n-53)/10)+floor((sqrtint(8*n)-1)/2)+1
 
 #offset 1
 
-mov $2,1
+mov $1,$0
+mul $0,8
+nrt $0,2
 sub $0,1
-lpb $0
-  sub $0,1
-  add $0,$1
-  mov $3,$2
-  lpb $3
-    sub $3,4
-    add $1,2
-  lpe
-  sub $1,1
-  add $2,1
-lpe
-mov $0,$3
+div $0,2
+sub $1,53
+div $1,10
+mod $0,$1
 add $0,1

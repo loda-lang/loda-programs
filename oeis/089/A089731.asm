@@ -18,8 +18,13 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  mov $7,$4
+  seq $4,104562 ; Inverse of the Motzkin triangle A064189.
+  add $3,1
+  mov $5,$3
+  bin $5,2
+  add $5,$0
+  add $5,1
+  mov $7,$5
   mul $7,8
   nrt $7,2
   sub $7,1
@@ -27,18 +32,18 @@ lpb $2
   mov $8,$7
   add $8,1
   bin $8,2
-  add $3,1
-  sub $4,$8
-  sub $4,1
-  sub $7,$4
-  mul $4,-2
-  sub $4,2
-  mov $5,$3
-  bin $5,2
-  add $5,$0
-  seq $5,104259 ; Triangle T read by rows: matrix product of Pascal and Catalan triangle.
-  bin $4,$7
-  mul $4,$5
+  sub $5,1
+  sub $5,$8
+  sub $5,$7
+  sub $7,$5
+  mov $8,$7
+  add $5,$7
+  bin $7,$5
+  add $5,1
+  bin $8,$5
+  mul $8,-1
+  add $7,$8
+  mul $4,$7
   add $6,$4
 lpe
 mov $0,$6

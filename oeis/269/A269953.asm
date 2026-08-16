@@ -18,12 +18,28 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,8290 ; Triangle T(n,k) of rencontres numbers (number of permutations of n elements with k fixed points).
+  add $4,1
+  mov $8,$4
+  mul $8,8
+  nrt $8,2
+  add $8,1
+  div $8,2
+  mov $7,$8
+  bin $7,2
+  sub $4,$7
+  sub $8,$4
+  mov $9,0
+  sub $9,$4
+  bin $9,$8
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,94645 ; Triangle of generalized Stirling numbers of the first kind read by rows: T(n, k) = (-1)^(n+k)*Sum_{m=0..n} Stirling1(n, m) * binomial(m, k), where Stirling1 is A048994.
+  seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $5,5
+  gcd $5,0
+  div $5,5
+  mov $4,$9
   mul $4,$5
   add $6,$4
 lpe
