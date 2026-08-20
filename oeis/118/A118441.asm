@@ -1,0 +1,45 @@
+; A118441: Triangle L, read by rows, equal to the matrix log of A118435, with the property that L^2 consists of a single diagonal (two rows down from the main diagonal).
+; Submitted by loader3229
+; 0,1,0,-4,2,0,-12,12,3,0,32,-48,-24,4,0,80,-160,-120,40,5,0,-192,480,480,-240,-60,6,0,-448,1344,1680,-1120,-420,84,7,0,1024,-3584,-5376,4480,2240,-672,-112,8,0,2304,-9216,-16128,16128,10080,-4032,-1008,144,9,0
+
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
+mov $2,$0
+sub $2,$3
+mov $4,$0
+add $4,1
+mov $6,$4
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $7,$6
+add $7,1
+bin $7,2
+sub $4,$7
+sub $4,1
+mov $7,$6
+div $7,2
+mul $7,2
+sub $7,$4
+bin $7,2
+mov $5,$1
+sub $5,$2
+bin $6,$4
+mov $8,2
+pow $8,$5
+mul $5,$8
+div $5,2
+mov $4,-1
+pow $4,$7
+mul $4,$6
+mul $4,$5
+mov $0,$4

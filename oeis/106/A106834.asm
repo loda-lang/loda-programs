@@ -1,0 +1,72 @@
+; A106834: Triangle read by rows: T(n, m) = number of painted forests on labeled vertex set [n] with m trees. Also number of painted forests with exactly n - m edges.
+; Submitted by loader3229
+; 1,1,2,3,6,3,16,30,18,4,125,220,135,40,5,1296,2160,1305,420,75,6,16807,26754,15750,5180,1050,126,7,262144,401408,229824,75460,16100,2268,196,8,4782969,7085880,3949722,1282176,278775,42336,4410,288,9,100000000,144000000,78300000,25032000,5460525,859950,98490,7920,405,10,2357947691,3312819070,1761092685,553749240,120241275,19247382,2320395,208560,13365,550,11,61917364224,85136375808,44341862400,13713131520,2952061200,475022394,58881438,5643000,409860,21450,726,12,1792160394037,2417825857044
+
+#offset 1
+
+sub $0,1
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
+mov $2,$0
+sub $2,$3
+mov $4,$0
+add $4,1
+mov $8,$4
+mul $8,8
+nrt $8,2
+add $8,1
+div $8,2
+mov $7,$8
+bin $7,2
+sub $4,$7
+sub $4,1
+mov $9,$4
+sub $8,$4
+lpb $8
+  sub $8,1
+  mov $10,$7
+  add $10,$9
+  add $10,1
+  mov $13,$10
+  mul $13,8
+  nrt $13,2
+  sub $13,1
+  div $13,2
+  mov $15,$13
+  add $15,1
+  bin $15,2
+  add $9,1
+  sub $10,$15
+  sub $10,1
+  mov $14,$13
+  sub $14,$10
+  bin $13,$10
+  add $10,$14
+  add $10,1
+  mov $11,$9
+  bin $11,2
+  add $11,$4
+  seq $11,104556 ; Matrix inverse of triangle A001497 of Bessel polynomials, read by rows; essentially the same as triangle A096713 of modified Hermite polynomials.
+  pow $10,$14
+  mul $10,$13
+  mul $10,$11
+  add $12,$10
+lpe
+mov $5,$2
+mul $5,4
+sub $6,$5
+pow $5,$5
+lex $5,$6
+div $5,4
+add $5,1
+mov $4,$12
+mul $4,$5
+mov $0,$4

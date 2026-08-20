@@ -1,0 +1,50 @@
+; A259759: Triangle read by rows: T(n,k) = number of partial idempotent mappings (of an n-chain) with collapse exactly k.
+; Submitted by loader3229
+; 1,2,0,4,0,2,8,0,12,3,16,0,48,24,16,32,0,160,120,160,65,64,0,480,480,960,780,336,128,0,1344,1680,4480,5460,4704,1897,256,0,3584,5376,17920,29120,37632,30352,11824,512,0,9216,16128,64512,131040,225792,273168,212832,80145
+
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
+mov $2,$0
+sub $2,$3
+mov $4,$0
+add $4,1
+mov $6,$4
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $7,$6
+add $7,1
+bin $7,2
+sub $4,$7
+sub $4,1
+mov $7,$6
+sub $7,$4
+bin $6,$4
+mov $4,2
+pow $4,$7
+mul $4,$6
+mov $5,$2
+lpb $5
+  mov $9,$2
+  sub $9,$5
+  sub $9,1
+  pow $9,$5
+  mov $10,$2
+  bin $10,$5
+  mul $10,$9
+  sub $5,1
+  add $8,$10
+lpe
+mov $5,$8
+add $5,1
+mul $4,$5
+mov $0,$4
