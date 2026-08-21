@@ -1,0 +1,53 @@
+; A124731: Triangle, row sums = powers of 3, companion to A124730.
+; Submitted by loader3229
+; 1,2,1,4,3,2,8,7,10,2,16,15,34,12,4,32,31,98,46,32,4,64,63,258,144,156,36,8,128,127,642,402,600,192,88,8,256,255,1538,1044,2004,792,560,96,16
+
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
+mov $2,$0
+sub $2,$3
+mov $4,$0
+add $4,1
+mov $7,$4
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $13,$7
+add $13,1
+bin $13,2
+sub $4,$13
+sub $4,1
+mov $8,$4
+mov $4,$7
+sub $7,$8
+add $7,1
+lpb $7
+  sub $7,1
+  mov $10,$9
+  add $10,$4
+  add $10,$7
+  div $10,2
+  sub $10,$9
+  bin $10,$7
+  mov $11,$4
+  bin $11,$9
+  mul $11,$10
+  add $9,1
+  add $12,$11
+lpe
+mov $5,$2
+div $5,2
+mov $6,2
+pow $6,$5
+mov $4,$12
+mul $4,$6
+mov $0,$4
