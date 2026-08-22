@@ -1,9 +1,25 @@
 ; A000744: Boustrophedon transform (second version) of Fibonacci numbers 1,1,2,3,...
-; Submitted by F14Claude
+; Submitted by [AF>Libristes]Maeda
 ; 1,2,5,14,42,144,563,2526,12877,73778,469616,3288428,25121097,207902202,1852961189,17694468210,180234349762,1950592724756,22352145975707,270366543452702,3442413745494957,46021681757269830,644562876393632120,9437853847921656984,144199784838834362017,2295010854990640086914,37987281490205575924853,652953271369324236501686,11639122963602211712601402,214881178537757395114661448,4103928209003526919763838131,80991897109090449349215109038,1649953379238646750757694287197,34662967175364958481434880464922
-; Formula: a(n) = A000687(n)+A000738(n)
 
-mov $1,$0
-seq $1,687 ; Boustrophedon transform (first version) of Fibonacci numbers 0,1,1,2,3,5,...
-seq $0,738 ; Boustrophedon transform (first version) of Fibonacci numbers 0,1,1,2,3,...
-add $0,$1
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $5,$6
+  mov $6,$3
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  mov $7,$0
+  seq $7,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$7
+  mul $1,$0
+  add $3,$5
+  add $3,$1
+lpe
+mov $0,$3

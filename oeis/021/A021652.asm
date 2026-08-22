@@ -1,19 +1,13 @@
 ; A021652: Decimal expansion of 1/648.
-; Submitted by iBezanilla
+; Submitted by ForSocial
 ; 0,0,1,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0,9,8,7,6,5,4,3,2,0
+; Formula: a(n) = floor((5*floor((10^(n+1))/90))/36)%10
 
-mov $3,1
-mov $4,5
-mov $5,4
-mov $6,3
-mov $7,2
-mov $9,9
-mov $10,8
-mov $11,7
-mov $12,6
-lpb $0
-  rol $1,12
-  mov $12,$3
-  sub $0,1
-lpe
+add $0,1
+mov $1,10
+pow $1,$0
 mov $0,$1
+div $0,90
+mul $0,5
+div $0,36
+mod $0,10

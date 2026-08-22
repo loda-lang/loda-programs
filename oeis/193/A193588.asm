@@ -1,11 +1,24 @@
 ; A193588: A Fibonacci triangle: T(n,k) = Fib(k+2) for 0 <= k <= n.
-; Submitted by [AF>Amis des Lapins] Phil1966
+; Submitted by loader3229
 ; 1,1,2,1,2,3,1,2,3,5,1,2,3,5,8,1,2,3,5,8,13,1,2,3,5,8,13,21,1,2,3,5,8,13,21,34,1,2,3,5,8,13,21,34,55,1,2,3,5,8,13,21,34,55,89,1,2,3,5,8,13,21,34,55,89,144,1,2,3,5,8,13,21,34,55,89,144,233
 
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 lpb $0
-  add $1,1
-  sub $0,$1
+  sub $0,1
+  add $3,1
+  mov $4,$1
+  add $1,$3
+  mov $3,$4
 lpe
-add $0,2
-seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
-sub $0,7
+mov $0,$1
+add $0,1

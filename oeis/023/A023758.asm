@@ -1,25 +1,23 @@
 ; A023758: Numbers of the form 2^i - 2^j with i >= j.
-; Submitted by Josemi
+; Submitted by loader3229
 ; 0,1,2,3,4,6,7,8,12,14,15,16,24,28,30,31,32,48,56,60,62,63,64,96,112,120,124,126,127,128,192,224,240,248,252,254,255,256,384,448,480,496,504,508,510,511,512,768,896,960,992,1008,1016,1020,1022,1023,1024,1536,1792,1920,1984,2016,2032,2040,2044,2046,2047,2048,3072,3584,3840,3968,4032,4064,4080,4088,4092,4094,4095,4096
-; Formula: a(n) = truncate(((if((-binomial(floor((sqrtint(8*n-8)+1)/2),2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n-8)+1)/2),2)+n-1))-1)*if((-n+binomial(floor((sqrtint(8*n-8)+1)/2),2)+floor((sqrtint(8*n-8)+1)/2)+2)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n-8)+1)/2),2)+floor((sqrtint(8*n-8)+1)/2)+2)))/2)
+; Formula: a(n) = (if((-binomial(floor((sqrtint(8*n-8)+1)/2),2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n-8)+1)/2),2)+n-1))-1)*if((-n+binomial(floor((sqrtint(8*n-8)+1)/2),2)+floor((sqrtint(8*n-8)+1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n-8)+1)/2),2)+floor((sqrtint(8*n-8)+1)/2)+1))
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-add $1,1
-div $1,2
-mov $3,$1
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $3,$2
 bin $3,2
 sub $0,$3
-sub $1,$0
-add $1,1
-mov $2,2
-pow $2,$0
-sub $2,1
+mov $1,2
+pow $1,$0
+sub $1,1
+sub $2,$0
 mov $0,2
-pow $0,$1
-mul $0,$2
-div $0,2
+pow $0,$2
+mul $0,$1

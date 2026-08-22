@@ -1,5 +1,5 @@
 ; A039405: Numbers whose base-10 representation has the same nonzero number of 1's and 5's.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by cinquefiore
 ; 15,51,105,125,135,145,150,152,153,154,156,157,158,159,165,175,185,195,215,251,315,351,415,451,501,510,512,513,514,516,517,518,519,521,531,541,561,571,581,591,615,651,715,751,815,851,915,951,1005,1025
 
 #offset 1
@@ -28,13 +28,9 @@ lpb $2
   lpe
   mov $4,$6
   equ $4,0
-  lpb $4
-    mov $4,0
-    mov $6,-2
-  lpe
   equ $5,$6
   lpb $5
-    mov $5,0
+    mul $5,$4
     sub $0,1
   lpe
   mov $5,$0

@@ -1,19 +1,14 @@
 ; A040294: Continued fraction for sqrt(312).
-; Submitted by Science United
+; Submitted by ForSocial
 ; 17,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1,34,1,1,1
+; Formula: a(n) = floor(max(floor(((gcd(n,4)^2+1)*gcd(n,4)^2)/6)-12,0)/(0^n+1))+1
 
-pow $3,$0
-add $3,1
+pow $1,$0
+add $1,1
 gcd $0,4
-sub $0,1
-mul $0,2
 pow $0,2
-sub $0,3
-div $0,$3
-mov $2,$0
-lpb $2
-  add $1,$2
-  mod $2,3
-lpe
-mov $0,$1
+fac $0,2
+div $0,6
+trn $0,12
+div $0,$1
 add $0,1

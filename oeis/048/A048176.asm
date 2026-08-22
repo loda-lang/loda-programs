@@ -1,4 +1,4 @@
-; A048176: Generalized Stirling number triangle of first kind.
+; A048176: Triangle read by rows: T(n, m) = S1(n, m)*10^(n-m), where S1 are the signed Stirling numbers of first kind A008275 (n >= 1, 1 <= m <= n).
 ; Submitted by Matthias Lehmkuhl
 ; 1,-10,1,200,-30,1,-6000,1100,-60,1,240000,-50000,3500,-100,1,-12000000,2740000,-225000,8500,-150,1,720000000,-176400000,16240000,-735000,17500,-210,1,-50400000000,13068000000,-1313200000,67690000,-1960000,32200,-280,1,4032000000000,-1095840000000
 

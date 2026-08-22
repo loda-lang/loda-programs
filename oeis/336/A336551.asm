@@ -1,12 +1,15 @@
 ; A336551: a(n) = A003557(n) - 1.
 ; Submitted by Ralfy
 ; 0,0,0,1,0,0,0,3,2,0,0,1,0,0,0,7,0,2,0,1,0,0,0,3,4,0,8,1,0,0,0,15,0,0,0,5,0,0,0,3,0,0,0,1,2,0,0,7,6,4,0,1,0,8,0,3,0,0,0,1,0,0,2,31,0,0,0,1,0,0,0,11,0,0,4,1,0,0,0,7
-; Formula: a(n) = truncate((n+1)/gcd(A073353(n+1),n+1))-1
+
+#offset 1
 
 mov $2,$0
-add $2,1
-add $0,1
-seq $0,73353 ; Sum of n and its squarefree kernel.
+mov $3,$0
+lpb $3
+  seq $3,19554 ; Smallest number whose square is divisible by n.
+lpe
+add $0,$3
 mov $1,$0
 gcd $1,$2
 mov $0,$2

@@ -6,11 +6,9 @@
 #offset 1
 
 mov $1,$0
-mov $2,$0
-mul $2,2
-add $2,$0
-mul $2,$0
-nrt $2,6
-add $2,$0
-sub $0,1
-mov $0,$2
+mul $1,2
+add $1,$0
+mul $1,$0
+nrt $1,6
+add $1,$0
+mov $0,$1

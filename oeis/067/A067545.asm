@@ -13,10 +13,7 @@ lpb $0
   add $2,1
   div $4,$2
   sub $2,$4
-  mov $5,$2
   seq $2,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-  lex $5,$2
-  add $2,$5
   sub $2,1
   mul $3,$2
   add $3,$1

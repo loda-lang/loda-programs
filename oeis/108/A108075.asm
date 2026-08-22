@@ -18,13 +18,42 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,63967 ; Triangle read by rows, T(n,k) = T(n-1,k) + T(n-2,k) + T(n-1,k-1) + T(n-2,k-1) and T(0,0) = 1.
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $7,$4
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,97609 ; Triangle read by rows: T(n,k) is number of Motzkin paths of length n having k horizontal steps at level 0.
-  mul $4,$5
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $10,$9
+  add $10,1
+  bin $10,2
+  sub $5,1
+  sub $5,$10
+  sub $5,$9
+  sub $9,$5
+  mov $10,$9
+  add $5,$9
+  bin $9,$5
+  add $5,1
+  bin $10,$5
+  mul $10,-1
+  add $9,$10
+  bin $4,$7
+  mul $4,$9
   add $6,$4
 lpe
 mov $0,$6

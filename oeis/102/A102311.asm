@@ -6,7 +6,7 @@
 
 sub $0,1
 mov $3,$0
-pow $0,0
+mov $0,1
 lpb $3
   mov $2,$0
   mul $2,$3

@@ -1,20 +1,18 @@
 ; A092477: Triangle read by rows: T(n,k) = (2^k - 1)^n, 1<=k<=n.
 ; Submitted by loader3229
 ; 1,1,9,1,27,343,1,81,2401,50625,1,243,16807,759375,28629151,1,729,117649,11390625,887503681,62523502209,1,2187,823543,170859375,27512614111,3938980639167,532875860165503,1,6561,5764801,2562890625,852891037441,248155780267521,67675234241018881,17878103347812890625
-; Formula: a(n) = truncate((truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))-1)^(truncate((sqrtint(8*n)-1)/2)+1))
+; Formula: a(n) = (if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))-1)^floor((sqrtint(8*n)+1)/2)
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $3,$1
-add $3,1
 bin $3,2
 sub $0,$3
-add $1,1
 mov $2,2
 pow $2,$0
 sub $2,1

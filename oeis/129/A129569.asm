@@ -19,9 +19,8 @@ lpb $0
   add $5,1
   bin $5,2
   sub $2,$5
-  add $3,1
   mov $4,$3
-  sub $3,1
+  add $4,1
   div $3,$2
   add $3,1
   mul $4,$3

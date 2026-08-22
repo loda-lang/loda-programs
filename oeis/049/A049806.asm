@@ -1,19 +1,25 @@
 ; A049806: Number of Farey fractions of order n that are <=1/2; cf. A049805.
-; Submitted by [AF>Libristes]Maeda
+; Submitted by iBezanilla
 ; 1,2,3,4,6,7,10,12,15,17,22,24,30,33,37,41,49,52,61,65,71,76,87,91,101,107,116,122,136,140,155,163,173,181,193,199,217,226,238,246,266,272,293,303,315,326,349,357,378,388,404,416,442
 
 #offset 1
 
 sub $0,1
-lpb $0
-  add $0,1
-  lpb $0
-    mov $1,$0
-    max $1,1
-    seq $1,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
-    mov $0,0
-  lpe
+mov $4,$0
+mov $2,$0
+lpb $2
+  sub $2,2
+  mov $0,$4
+  sub $0,$2
+  mov $1,280
+  min $1,$0
+  add $2,1
+  max $3,$1
+  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $0,$1
+  mul $0,2
+  add $3,$0
 lpe
-mov $0,$1
-div $0,16
+mov $0,$3
+div $0,4
 add $0,1

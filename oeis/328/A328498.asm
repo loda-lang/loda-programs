@@ -1,7 +1,7 @@
 ; A328498: Decimal expansion of Sum_{(p, q) runs through the twin primes} ((p mod 4) - 2) * (1/p + 1/q).
 ; Submitted by loader3229
 ; 1,8,3,5,0,0,3,8
-; Formula: a(n) = -10*truncate(truncate((((-truncate(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n+1)*(2*sqrtint(4*n+1)+2*n-2*truncate(sqrtint(4*n+1)/4)+5)+22)*(-truncate(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n))/24)/10)+truncate((((-truncate(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n+1)*(2*sqrtint(4*n+1)+2*n-2*truncate(sqrtint(4*n+1)/4)+5)+22)*(-truncate(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n))/24)
+; Formula: a(n) = -10*truncate(truncate((((-floor(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n+1)*(2*sqrtint(4*n+1)+2*n-2*floor(sqrtint(4*n+1)/4)+5)+22)*(-floor(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n))/24)/10)+truncate((((-floor(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n+1)*(2*sqrtint(4*n+1)+2*n-2*floor(sqrtint(4*n+1)/4)+5)+22)*(-floor(sqrtint(4*n+1)/4)+sqrtint(4*n+1)+n))/24)
 
 add $0,1
 mov $1,$0

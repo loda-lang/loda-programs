@@ -5,16 +5,15 @@
 #offset 1
 
 mov $2,$0
-mul $2,8
-nrt $2,2
 sub $2,1
-div $2,2
-sub $1,$2
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
+mov $1,$0
 bin $1,2
-sub $0,$1
-mov $3,1
-fac $3,$0
-add $2,2
-sub $2,$0
-mul $2,$3
-mov $0,$2
+sub $2,$1
+mov $3,2
+fac $3,$2
+sub $0,$2
+mul $0,$3

@@ -18,7 +18,6 @@ lpb $1
   equ $7,3
   sub $6,$7
   add $3,$6
-  mul $5,$0
   add $5,12
 lpe
 mov $1,$3

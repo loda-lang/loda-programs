@@ -1,9 +1,20 @@
 ; A060996: Stirling2 transform of [2,3,3,3,3,3,3,3,...].
-; Submitted by Baggins
+; Submitted by yasiwo
 ; 2,5,14,44,155,608,2630,12419,63440,347924,2035709,12640790,82933310,572697965,4148875634,31440426440,248594609411,2046230418476,17498226615170,155172474706115,1424609448470252,13520147215341968,132456017565253037
-; Formula: a(n) = 3*A000110(n+1)-1
 
 add $0,1
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mul $0,3
-sub $0,1
+mov $1,$0
+lpb $1
+  add $2,1
+  sub $1,$2
+  mov $2,$0
+  mov $3,$0
+  bin $3,2
+  add $3,$0
+  seq $3,11971 ; Aitken's array: triangle of numbers {a(n,k), n >= 0, 0 <= k <= n} read by rows, defined by a(0,0)=1, a(n,0) = a(n-1,n-1), a(n,k) = a(n,k-1) + a(n-1,k-1).
+lpe
+mov $0,$3
+mul $0,895671264
+sub $0,895671264
+div $0,298557088
+add $0,2

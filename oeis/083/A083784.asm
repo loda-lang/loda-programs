@@ -21,10 +21,10 @@ pow $4,2
 lpb $4
   mov $5,$3
   add $5,2
-  mov $10,$5
-  seq $10,40 ; The prime numbers.
-  div $10,2
-  mov $5,$10
+  mov $9,$5
+  seq $9,40 ; The prime numbers.
+  div $9,2
+  mov $5,$9
   mul $5,2
   add $5,1
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
@@ -35,10 +35,7 @@ lpb $4
   add $8,1
   nrt $8,2
   mod $5,$8
-  mov $9,$5
-  equ $9,0
-  mov $5,$9
-  equ $5,0
+  neq $5,0
   sub $0,$5
   add $3,1
   mov $6,$0

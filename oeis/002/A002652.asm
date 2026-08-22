@@ -1,5 +1,5 @@
 ; A002652: Theta series of Kleinian lattice Z[(1 + sqrt(-7))/ 2] in 1 complex (or 2 real) dimensions.
-; Submitted by Goldislops
+; Submitted by matszpk
 ; 1,2,4,0,6,0,0,2,8,2,0,4,0,0,4,0,10,0,4,0,0,0,8,4,0,2,0,0,6,4,0,0,12,0,0,0,6,4,0,0,0,0,0,4,12,0,8,0,0,2,4,0,0,4,0,0,8,0,8,0,0,0,0,2,14,0,0,4,0,0,0,4,8,0,8,0,0,4,0,4
 
 mov $1,$0
@@ -19,13 +19,11 @@ lpb $1
   nrt $4,2
   pow $4,2
   equ $4,$3
-  mov $5,$1
-  neq $5,0
+  add $5,$6
   neq $3,0
-  add $3,$5
   mov $6,2
   pow $6,$3
   mul $6,$4
-  add $7,$6
+  add $5,$6
 lpe
-mov $0,$7
+mov $0,$5

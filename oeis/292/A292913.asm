@@ -1,14 +1,64 @@
 ; A292913: Square array A(n,k), n >= 0, k >= 0, read by antidiagonals, where column k is the expansion of e.g.f. exp(exp(k*x)-1).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,0,1,1,0,1,2,2,0,1,3,8,5,0,1,4,18,40,15,0,1,5,32,135,240,52,0,1,6,50,320,1215,1664,203,0,1,7,72,625,3840,12636,12992,877,0,1,8,98,1080,9375,53248,147987,112256,4140,0,1,9,128,1715,19440,162500,831488,1917999,1059840,21147,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-mov $2,$1
-sub $2,$0
-mov $1,$2
-pow $1,$0
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mul $0,$1
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
+mov $2,$0
+sub $2,$3
+mov $4,$0
+add $4,1
+mov $7,$4
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $6,$7
+add $6,1
+bin $6,2
+sub $4,$6
+sub $4,1
+sub $7,$4
+pow $7,$4
+mov $9,2
+pow $9,$2
+mul $9,66744
+mov $8,$9
+mov $9,3
+pow $9,$2
+mul $9,22260
+add $8,$9
+mov $9,4
+pow $9,$2
+mul $9,5544
+add $8,$9
+mov $9,5
+pow $9,$2
+mul $9,1134
+add $8,$9
+mov $9,6
+pow $9,$2
+mul $9,168
+add $8,$9
+mov $9,7
+pow $9,$2
+mul $9,36
+add $8,$9
+mov $9,9
+pow $9,$2
+add $8,$9
+add $8,133497
+mov $5,133496
+add $5,$8
+div $5,362880
+mov $4,$7
+mul $4,$5
+mov $0,$4

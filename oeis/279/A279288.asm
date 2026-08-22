@@ -9,6 +9,4 @@ mov $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 gcd $1,$0
-mov $2,$0
-div $2,$1
-mov $0,$2
+div $0,$1

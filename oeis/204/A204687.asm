@@ -1,7 +1,7 @@
 ; A204687: a(n) = A204321(n)/4.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,33,4323,74748993,22349647743307203,1998027016999666984531472383425633,15968447842642350164774423714587589071259011612916483703599782377123
-; Formula: a(n) = truncate(b(n-1)/4), b(n) = 2*binomial(b(n-1),2), b(0) = 4
+; Formula: a(n) = truncate(b(n-1)/4), b(n) = b(n-1)*(b(n-1)-1), b(0) = 4
 
 #offset 1
 
@@ -9,8 +9,7 @@ mov $1,4
 sub $0,1
 lpb $0
   sub $0,1
-  bin $1,2
-  mul $1,2
+  fac $1,-2
 lpe
 mov $0,$1
 div $0,4

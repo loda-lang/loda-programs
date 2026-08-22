@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,4
+sub $2,1
+add $0,3
 mov $1,$0
 mod $1,2
 add $1,2

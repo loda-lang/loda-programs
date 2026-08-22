@@ -13,21 +13,19 @@ mul $4,2
 add $4,3
 lpb $4
   sub $4,$5
-  mov $8,$4
-  add $8,3
-  max $8,0
-  mov $1,$8
+  mov $2,$4
+  add $2,3
+  max $2,0
+  mov $1,$2
   nrt $1,2
-  add $8,2
-  mov $2,$8
+  add $2,2
   nrt $2,2
-  mov $8,$2
-  add $8,$1
-  mod $8,2
+  add $2,$1
+  mod $2,2
   mov $5,2
   add $5,$3
   mul $5,3
   add $3,2
-  add $7,$8
+  add $7,$2
 lpe
 mov $0,$7

@@ -1,14 +1,21 @@
-; A025915: Expansion of 1/((1-x^7)(1-x^10)(1-x^11)).
-; Submitted by Simon Strandgaard
+; A025915: Expansion of 1/((1-x^7)*(1-x^10)*(1-x^11)).
+; Submitted by Science United
 ; 1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,2,1,0,1,1,0,1,2,1,1,2,2,1,1,2,1,1,2,2,2,2,3,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,5,5
+; Formula: a(n) = b(n+1), b(n) = -floor((3*n+7)/11)+b(n-10)+floor((2*n+5)/7), b(9) = 0, b(8) = 1, b(7) = 0, b(6) = 0, b(5) = 0, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 1, b(0) = 0
 
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
-  sub $0,2
-  trn $0,8
+  sub $2,1
+  mov $3,$2
+  mul $2,2
+  add $2,7
+  div $2,7
+  mul $3,3
+  add $3,10
+  div $3,11
+  sub $2,$3
+  trn $0,10
   add $1,$2
 lpe
 mov $0,$1

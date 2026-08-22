@@ -1,7 +1,7 @@
 ; A204181: Symmetric matrix based on f(i,j) defined by f(i,1)=f(1,j)=1; f(i,i)= 2i-1; f(i,j)=0 otherwise; by antidiagonals.
 ; Submitted by loader3229
 ; 1,1,1,1,3,1,1,0,0,1,1,0,5,0,1,1,0,0,0,0,1,1,0,0,7,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,9,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,11,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
-; Formula: a(n) = binomial(2*truncate((sqrtint(8*n)-1)/2)-4*gcd(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1,truncate((sqrtint(8*n)-1)/2))-2,2*truncate((sqrtint(8*n)-1)/2)-2*gcd(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1,truncate((sqrtint(8*n)-1)/2)))
+; Formula: a(n) = binomial(2*floor((sqrtint(8*n)-1)/2)-4*gcd(-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1,floor((sqrtint(8*n)-1)/2))-2,2*floor((sqrtint(8*n)-1)/2)-2*gcd(-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1,floor((sqrtint(8*n)-1)/2)))
 
 #offset 1
 

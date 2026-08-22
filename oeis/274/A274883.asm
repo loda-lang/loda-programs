@@ -2,67 +2,41 @@
 ; Submitted by loader3229
 ; 1,1,2,1,4,4,3,6,12,8,2,24,24,32,16,10,20,120,80,80,32,5,120,120,480,240,192,64,35,70,840,560,1680,672,448,128,14,560,560,4480,2240,5376,1792,1024,256,126,252,5040,3360,20160,8064,16128,4608,2304,512
 
-add $0,1
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
 mov $2,$0
-mul $2,8
-nrt $2,2
-add $2,1
-div $2,2
-mov $1,$2
-bin $1,2
-sub $0,$1
-sub $0,1
-mov $3,$0
-sub $2,$0
-lpb $2
-  sub $2,1
-  mov $4,$1
-  add $4,$3
-  add $4,1
-  seq $4,128229 ; A natural number transform, inverse of signed A094587.
-  add $3,1
-  mov $5,$3
-  bin $5,2
-  add $5,$0
-  mov $7,$5
-  add $7,1
-  mov $8,$7
-  mul $8,8
-  nrt $8,2
-  sub $8,1
-  div $8,2
-  mov $9,$8
-  add $9,1
-  bin $9,2
-  add $5,1
-  sub $7,$9
-  add $8,$7
-  mod $8,2
-  mul $8,2
-  pow $8,$7
-  mov $10,$5
-  mul $10,8
-  nrt $10,2
-  sub $10,1
-  div $10,2
-  mov $13,$10
-  add $13,1
-  bin $13,2
-  sub $5,$13
-  sub $5,1
-  mov $11,$5
-  mov $5,$10
-  bin $5,$11
-  sub $10,$11
-  mov $12,$10
-  dif $12,2
-  bin $10,$12
-  add $12,1
-  div $10,$12
-  mul $5,$10
-  mul $5,$8
-  div $5,2
-  mul $4,$5
-  add $6,$4
-lpe
-mov $0,$6
+sub $2,$3
+mov $4,$0
+add $4,1
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $6,$4
+add $6,1
+bin $6,2
+mov $7,$0
+sub $7,$6
+mov $8,2
+pow $8,$7
+mov $5,$1
+sub $5,$2
+mov $9,$5
+div $9,2
+mov $10,-2
+sub $10,$9
+bin $10,$9
+bin $5,$9
+gcd $5,$10
+bin $4,$7
+mul $4,$8
+mul $4,$5
+mov $0,$4

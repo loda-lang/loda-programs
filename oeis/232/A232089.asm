@@ -1,20 +1,18 @@
 ; A232089: Table read by rows, which consist of 1 followed by 2^k, 0 <= k < n ; n = 0,1,2,3,...
 ; Submitted by loader3229
 ; 1,1,1,1,1,2,1,1,2,4,1,1,2,4,8,1,1,2,4,8,16,1,1,2,4,8,16,32,1,1,2,4,8,16,32,64,1,1,2,4,8,16,32,64,128,1,1,2,4,8,16,32,64,128,256,1,1,2,4,8,16,32,64,128,256,512,1,1,2,4,8,16,32,64,128,256,512,1024,1,1
-; Formula: a(n) = 2^max(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n-1,0)
+; Formula: a(n) = 2^max(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n-1,0)
 
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
+mov $2,$0
+mul $2,8
+nrt $2,2
 add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
-trn $0,1
+div $2,2
+mov $3,$2
+bin $3,2
+sub $0,$3
+trn $0,2
 mov $1,2
 pow $1,$0
 mov $0,$1

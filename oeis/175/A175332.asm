@@ -1,21 +1,19 @@
 ; A175332: Numbers whose binary expansion is of the form 11+0*.
-; Submitted by loader3229
+; Submitted by vaughan
 ; 3,6,7,12,14,15,24,28,30,31,48,56,60,62,63,96,112,120,124,126,127,192,224,240,248,252,254,255,384,448,480,496,504,508,510,511,768,896,960,992,1008,1016,1020,1022,1023,1536,1792,1920,1984,2016,2032,2040,2044,2046,2047,3072,3584,3840,3968,4032,4064,4080,4088,4092,4094,4095,6144,7168,7680,7936,8064,8128,8160,8176,8184,8188,8190,8191,12288,14336
-; Formula: a(n) = (if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))-1)*if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))
+; Formula: a(n) = (if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1))-1)*if((-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2))<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2)))
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $3,$1
-add $3,1
 bin $3,2
 sub $0,$3
 sub $1,$0
-add $1,1
 add $0,1
 mov $2,2
 pow $2,$0

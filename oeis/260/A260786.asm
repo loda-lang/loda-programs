@@ -1,14 +1,13 @@
 ; A260786: Twice the Euler or up/down numbers A000111.
-; Submitted by Science United
+; Submitted by MVeiga
 ; 2,2,2,4,10,32,122,544,2770,15872,101042,707584,5405530,44736512,398721962,3807514624,38783024290,419730685952,4809759350882,58177770225664,740742376475050,9902996106248192,138697748786275802,2030847773013704704,31029068327114173810,493842960380415967232
+; Formula: a(n) = 2*gcd(A155585(min(n,25)),A122045(min(n,25)))
 
-lpb $0
-  mov $0,1
-  seq $0,103564 ; Primes p such that 3*p^2 + 2 is prime.
-  pow $0,3
-lpe
+min $0,25
+mov $2,$0
+seq $2,122045 ; Euler (or secant) numbers E(n).
 mov $1,$0
-seq $1,122045 ; Euler (or secant) numbers E(n).
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $0,$1
+seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $1,$2
+mov $0,$1
 mul $0,2

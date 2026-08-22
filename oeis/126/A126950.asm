@@ -1,19 +1,19 @@
 ; A126950: a(1) = 1; for n>1, a(n) = the smallest number p > a(n-1) such that (a(n-1)+p)/2 is a cube.
-; Submitted by vaughan
+; Submitted by ForSocial
 ; 1,15,39,89,161,271,415,609,849,1151,1511,1945,2449,3039,3711,4481,5345,6319,7399,8601,9921,11375,12959,14689,16561,18591,20775,23129,25649,28351,31231,34305,37569,41039,44711,48601,52705,57039,61599,66401
-; Formula: a(n) = 2*b(n)+1, b(n) = n^3-b(n-1)-1, b(1) = 0, b(0) = 0
+; Formula: a(n) = 2*floor((n^3+3*floor((n^2)/2))/2)+1
 
 #offset 1
 
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $3,$1
-  pow $3,3
-  mul $2,-1
-  sub $2,1
-  add $2,$3
-lpe
+mov $2,$0
+pow $0,2
+mov $1,$2
+mul $1,$0
+pow $2,2
+div $2,2
+mul $2,3
+add $2,$1
 mov $0,$2
+div $0,2
 mul $0,2
 add $0,1

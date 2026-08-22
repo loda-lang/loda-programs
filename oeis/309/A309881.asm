@@ -6,10 +6,9 @@ add $0,2
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,25850 ; Expansion of 1/((1-x^3)*(1-x^8)*(1-x^9)).
+  seq $2,25769 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^8)).
   mov $3,$1
-  add $3,1
-  seq $3,239092 ; Prefix overlap of dictionary consisting of decimal expansions of 0 through n.
+  div $3,10
   add $1,1
   mul $2,$3
   add $4,$2

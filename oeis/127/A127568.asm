@@ -1,9 +1,48 @@
 ; A127568: Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
-; Submitted by andrew
+; Submitted by loader3229
 ; 1,1,1,1,1,2,1,1,2,5,1,1,2,5,15,1,1,2,5,15,52,1,1,2,5,15,52,203
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+mul $3,$1
+div $3,2
+mov $2,$0
+sub $2,$3
+mov $4,2
+pow $4,$2
+mul $4,66744
+mov $6,$4
+mov $4,3
+pow $4,$2
+mul $4,22260
+add $6,$4
+mov $4,4
+pow $4,$2
+mul $4,5544
+add $6,$4
+mov $4,5
+pow $4,$2
+mul $4,1134
+add $6,$4
+mov $4,6
+pow $4,$2
+mul $4,168
+add $6,$4
+mov $4,7
+pow $4,$2
+mul $4,36
+add $6,$4
+mov $4,9
+pow $4,$2
+add $6,$4
+add $6,133497
+mov $5,133496
+add $5,$6
+div $5,362880
+mov $0,$5

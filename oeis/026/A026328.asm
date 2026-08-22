@@ -1,25 +1,38 @@
 ; A026328: a(n) = number of (s(0), s(1), ..., s(n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, s(0) = 2, s(n) = 5. Also a(n) = T(n,n-3), where T is the array in A026323.
-; Submitted by ckrause
+; Submitted by rilian
 ; 1,4,15,50,161,504,1553,4730,14289,42900,128193,381654,1132950,3355392,9918990,29278012,86316259,254227980,748200145,2200619806,6469372932,19011518480,55853259800,164055406320,481804384035,1414857108756,4154663090529
+; Formula: a(n) = -2*d(n-3)+b(n-3)+min(n-3,0), b(n) = c(n-1), b(3) = 104, b(2) = 27, b(1) = 6, b(0) = 1, c(n) = truncate((c(n-1)*((n-1)*(2*n+27)+105)+c(n-2)*((n-1)*(3*n+36)+126))/((n-1)*(n+15)+28)), c(3) = 369, c(2) = 104, c(1) = 27, c(0) = 6, d(n) = b(n-1), d(3) = 27, d(2) = 6, d(1) = 1, d(0) = 0
 
 #offset 3
 
+mov $2,1
+mov $3,6
 sub $0,3
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  add $0,5
-  seq $0,5325 ; Column of Motzkin triangle.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+lpb $0
+  mov $5,3
+  mul $5,$1
+  add $5,39
+  mul $5,$1
+  add $5,126
+  mov $6,$2
+  mul $2,$5
+  rol $2,2
+  mov $5,2
+  mul $5,$1
+  add $5,29
+  mul $5,$1
+  add $5,105
+  mov $4,$2
+  mul $4,$5
+  mov $5,$1
+  add $5,16
+  mul $5,$1
+  add $5,28
+  sub $0,1
+  add $1,1
+  add $3,$4
+  div $3,$5
 lpe
-mul $0,2
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
+add $0,$2
+sub $0,$6
+sub $0,$6

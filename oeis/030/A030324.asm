@@ -1,34 +1,39 @@
 ; A030324: Triangle read by rows, where row k consists of the binary digits of Fibonacci(k+1).
-; Submitted by Hein
+; Submitted by loader3229
 ; 1,1,0,1,1,1,0,1,1,0,0,0,1,1,0,1,1,0,1,0,1,1,0,0,0,1,0,1,1,0,1,1,1,1,0,1,1,0,0,1,1,0,0,1,0,0,0,0,1,1,1,0,1,0,0,1,1,0,1,1,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,1,1,1,1,0
+; Formula: a(n) = truncate(d(n-1)/if((2^2)==1,2^(e(n-1)-1),if((e(n-1)-1)<=(-1),0,2^(e(n-1)-1)))), a(4) = 1, a(3) = 0, a(2) = 1, a(1) = 1, a(0) = 0, b(n) = c(n-1)*((e(n-1)-1)==0)+b(n-1), b(4) = 5, b(3) = 5, b(2) = 3, b(1) = 3, b(0) = 2, c(n) = (-c(n-1)+b(n-1))*((e(n-1)-1)==0)+c(n-1), c(4) = 3, c(3) = 3, c(2) = 2, c(1) = 2, c(0) = 1, d(n) = -truncate(d(n-1)/if((2^2)==1,2^(e(n-1)-1),if((e(n-1)-1)<=(-1),0,2^(e(n-1)-1))))*if((2^2)==1,2^(e(n-1)-1),if((e(n-1)-1)<=(-1),0,2^(e(n-1)-1)))+((-c(n-1)+b(n-1))*((e(n-1)-1)==0)+c(n-1))*((e(n-1)-1)==0)+d(n-1), d(4) = 1, d(3) = 3, d(2) = 0, d(1) = 2, d(0) = 1, e(n) = (logint((-c(n-1)+b(n-1))*((e(n-1)-1)==0)+c(n-1),2)+1)*((e(n-1)-1)==0)+e(n-1)-1, e(4) = 1, e(3) = 2, e(2) = 1, e(1) = 2, e(0) = 1
 
 #offset 1
 
-mov $3,2
-mov $8,$0
+mov $2,1
+mov $3,1
+mov $8,1
+mov $10,2
 lpb $0
-  mov $4,$3
-  seq $4,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-  seq $4,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-  mov $2,$4
-  log $2,10
-  add $2,1
-  mov $5,10
-  pow $5,$2
-  mul $1,$5
-  add $1,$4
-  add $3,1
-  sub $0,$2
-  max $0,0
-lpe
-mov $6,$1
-log $6,10
-add $6,1
-mov $7,$6
-sub $7,$8
-lpb $7
-  sub $7,1
-  div $1,10
+  sub $0,1
+  sub $8,1
+  mov $7,2
+  pow $7,$8
+  mov $1,$3
+  div $1,$7
+  mov $6,$1
+  mul $6,$7
+  mov $4,$8
+  equ $4,0
+  mov $11,$10
+  sub $11,$2
+  mul $11,$4
+  mov $5,$2
+  mul $5,$4
+  add $2,$11
+  mov $9,$2
+  log $9,2
+  add $9,1
+  mul $9,$4
+  add $10,$5
+  mul $4,$2
+  add $8,$9
+  sub $3,$6
+  add $3,$4
 lpe
 mov $0,$1
-mod $0,10

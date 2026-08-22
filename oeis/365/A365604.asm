@@ -1,34 +1,20 @@
 ; A365604: Expansion of e.g.f. 1 / (1 - 5 * log(1 + x)).
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 1,5,45,610,11020,248870,6744350,213233400,7704814200,313199930400,14146162064400,702826758144000,38093116667766000,2236695336601458000,141433354184701746000,9582086196220281456000,692463727252196674560000
 
-mov $2,1
-add $2,1
+mov $3,$0
+add $3,1
+bin $3,2
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
   mov $4,$2
-  lpb $4
-    mov $9,10
-    add $9,$5
-    mov $11,1
-    mul $6,$4
-    div $6,-1
-    sub $4,1
-    mov $7,$0
-    add $7,1
-    add $7,$4
-    bin $7,$0
-    mul $7,5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
+  seq $4,52562 ; a(n) = 5^n * n!.
+  mov $5,$2
+  add $5,$3
+  seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $5,$4
+  add $1,$5
   add $2,1
 lpe
-pow $3,$11
-mov $0,$3
+mov $0,$1

@@ -1,7 +1,6 @@
 ; A348085: a(n) = [x^n] Product_{k=1..2*n} 1/(1 - (2*k-1) * x).
 ; Submitted by Science United
 ; 1,4,170,13776,1652442,262842580,52116296024,12380577235040,3427841258566890,1083931844930932140,385417972804020879450,152219732613102667656000,66113646914860527721527960,31319437721634527178263452656,16070573254332847726171921567888,8879313592352298860073540234801600,5255895032875345897789230889576284810,3318229908634011958552404056104748143260,2225691683344758051106719256715274482732030,1580598896920004099627418122929004361604912400,1184780256926098721461765354378915170672844957642
-; Formula: a(n) = truncate(A225476(9*binomial(n+1,2)-sqrtint(32*binomial(n+1,2)))/((9*binomial(n+1,2)-binomial(truncate((sqrtint(72*binomial(n+1,2)-8*sqrtint(32*binomial(n+1,2)))+1)/2),2)-sqrtint(32*binomial(n+1,2)))!))
 
 add $0,1
 bin $0,2
@@ -21,8 +20,49 @@ div $1,2
 bin $1,2
 mov $4,$2
 sub $4,$1
-seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $5,$2
-seq $5,225476 ; Triangle read by rows, k!*2^k*S_2(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+sub $6,$4
+mov $9,$2
+mul $9,8
+nrt $9,2
+add $9,1
+div $9,2
+bin $9,2
+fac $4,$6
+mov $8,$2
+sub $8,$9
+mov $12,2
+pow $12,$8
+mov $7,$2
+add $7,1
+mov $13,$7
+mul $13,8
+nrt $13,2
+sub $13,1
+div $13,2
+mov $14,$13
+add $14,1
+bin $14,2
+sub $7,$14
+sub $7,1
+mov $14,$7
+mov $7,$13
+mov $13,$14
+add $13,2
+lpb $13
+  sub $13,1
+  mov $16,$13
+  add $16,$14
+  pow $16,$7
+  sub $11,$13
+  bin $11,$15
+  mul $11,$16
+  sub $14,1
+  add $15,1
+  add $10,$11
+  mov $11,0
+lpe
+mov $7,$10
+div $7,$12
+mov $5,$7
 div $5,$4
 mov $0,$5

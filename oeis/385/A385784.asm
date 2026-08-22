@@ -8,7 +8,7 @@ mov $2,$0
 sub $0,1
 pow $2,3
 lpb $2
-  equ $5,6
+  mov $5,0
   mov $6,1
   mov $3,$1
   add $3,1
@@ -16,21 +16,22 @@ lpb $2
     sub $3,1
     mov $7,$3
     mod $7,3
-    add $7,2
-    bin $7,2
-    mul $7,$6
+    mov $8,$7
+    add $8,3
     div $3,3
+    mul $7,$6
+    mul $7,$8
+    div $7,2
     add $5,$7
     mul $6,10
   lpe
   mov $3,$6
+  mul $3,2
   div $3,9
   add $5,$3
   mov $4,$5
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  min $3,1
-  mul $3,$4
-  sub $0,$3
+  sub $0,$4
   add $1,1
   mov $4,$0
   max $4,0

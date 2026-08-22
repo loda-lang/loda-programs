@@ -1,5 +1,5 @@
 ; A256279: Expansion of psi(q) * chi(-q^3) * phi(-q^9) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
-; Submitted by [AF] Kalianthys
+; Submitted by [SG]ATA-Rolf
 ; 1,1,0,0,-1,0,0,0,0,-4,-2,0,0,2,0,0,-1,0,4,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,-2,0,4,2,0,0,-2,0,0,0,0,-8,0,0,0,1,0,0,-2,0,0,0,0,0,-2,0,0,2,0,0,-1,0,0,0,0,0,0,0,4,2,0,0,0,0,0,0
 
 mov $1,8
@@ -16,7 +16,6 @@ mov $3,-1
 pow $3,$0
 mul $0,4
 mov $4,$0
-mov $13,0
 trn $0,1
 mov $5,$0
 mov $6,-1
@@ -25,9 +24,9 @@ mov $7,$0
 add $7,1
 mov $16,$7
 lex $16,2
-mov $17,2
-pow $17,$16
-div $7,$17
+mov $14,2
+pow $14,$16
+div $7,$14
 div $7,2
 mov $8,-1
 pow $8,$7
@@ -35,7 +34,6 @@ mul $8,2
 mov $9,-2
 bin $9,$7
 div $9,$8
-mov $10,0
 mov $12,3
 sub $7,$9
 mul $7,2
@@ -48,9 +46,7 @@ lpb $7
   mov $15,$11
   nrt $15,2
   add $11,2
-  mov $14,$11
-  nrt $14,2
-  mov $11,$14
+  nrt $11,2
   add $11,$15
   mod $11,2
   mov $12,2

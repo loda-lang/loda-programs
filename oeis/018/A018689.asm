@@ -1,10 +1,10 @@
 ; A018689: Divisors of 861.
-; Submitted by loader3229
+; Submitted by Owen Jiang
 ; 1,3,7,21,41,123,287,861
 
 #offset 1
 
-mov $2,3
+mov $2,1
 mov $4,2
 sub $0,1
 lpb $0
@@ -21,4 +21,3 @@ lpb $0
   fac $1,-2
 lpe
 mov $0,$2
-div $0,3

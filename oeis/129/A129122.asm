@@ -11,8 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,83514 ; Number of steps for iteration of map x -> (4/3)*ceiling(x) to reach an integer > 3n+1 when started at 3n+1, or -1 if no such integer is ever reached.
-  sub $3,5
-  equ $3,2
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0

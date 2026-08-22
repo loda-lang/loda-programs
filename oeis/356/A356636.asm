@@ -1,13 +1,38 @@
 ; A356636: Triangle read by rows. T(n, k) = binomial(n, k) * n!^2 / floor(n/2)!^2.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,4,8,4,36,108,108,36,144,576,864,576,144,3600,18000,36000,36000,18000,3600,14400,86400,216000,288000,216000,86400,14400,705600,4939200,14817600,24696000,24696000,14817600,4939200,705600
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-mov $2,$0
-mov $0,$1
-bin $0,$2
-seq $1,193282 ; a(n) = (n!/floor(n/2)!)^2.
-mul $0,$1
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+sub $1,1
+div $1,2
+mov $4,$0
+add $4,1
+mov $6,$4
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $3,$6
+add $3,1
+bin $3,2
+sub $4,$3
+sub $4,1
+mov $7,$4
+mov $4,$6
+bin $4,$7
+mov $8,$6
+div $8,2
+sub $9,$8
+add $9,$6
+bin $9,$8
+bin $6,$8
+mul $6,$9
+sub $2,$1
+mov $5,$1
+fac $5,$2
+mul $4,$6
+mul $4,$5
+mov $0,$4

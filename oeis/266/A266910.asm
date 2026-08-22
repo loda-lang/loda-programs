@@ -4,11 +4,10 @@
 
 #offset 2
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,233824 ; A recurrent sequence in Panaitopol's formula for pi(x), where pi(x) is the number of primes <= x.
 sub $0,1
+sub $1,1
 lpb $1
   mul $0,$1
   sub $1,1

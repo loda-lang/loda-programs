@@ -1,20 +1,22 @@
 ; A339584: A ternary sequence: a(n) = 1 if n is in A003156, 2 if n is in A003157, 3 if n is in A003158.
-; Submitted by [AF] Kalianthys
+; Submitted by loader3229
 ; 1,3,2,1,1,1,3,2,1,3,2,1,3,2,1,1,1,3,2,1,1,1,3,2,1,1,1,3,2,1,3,2,1,3,2,1,1,1,3,2,1,3,2,1,3,2,1,1,1,3,2,1,3,2,1,3,2,1,1,1,3,2,1,1,1,3,2,1,1,1,3,2,1,3,2,1,3,2,1,1
+; Formula: a(n) = b(n)+1, b(n) = 2*(if(((max(b(n-1)-1,0)==0)+c(n-1))==0,0,valuation((max(b(n-1)-1,0)==0)+c(n-1),2))%2)*(max(b(n-1)-1,0)==0)+max(b(n-1)-1,0), b(1) = 0, b(0) = 0, c(n) = (max(b(n-1)-1,0)==0)+c(n-1), c(1) = 1, c(0) = 0
 
 #offset 1
 
-add $0,2
 lpb $0
-  sub $0,3
-  mov $1,$2
-  sub $3,1
-  sub $0,$3
-  mov $2,$0
-  add $2,1
-  seq $2,26465 ; Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).
-  mul $1,$2
-  mul $3,$2
+  sub $0,1
+  trn $1,1
+  mov $2,$1
+  equ $2,0
+  add $3,$2
+  mov $4,$3
+  lex $4,2
+  mod $4,2
+  mul $4,2
+  mul $4,$2
+  add $1,$4
 lpe
 mov $0,$1
 add $0,1

@@ -1,5 +1,5 @@
 ; A398654: Upper (1, 1/3) midsequence of triangular numbers (A000217) and tetrahedral numbers (A000330); see Comments.
-; Submitted by bcavnaugh
+; Submitted by Science United
 ; 0,2,5,11,20,34,52,75,104,140,184,235,295,364,444,534,635,748,874,1014,1167,1335,1518,1718,1934,2167,2418,2688,2978,3287,3617,3968,4342,4738,5157,5600,6068,6562,7081,7627,8200,8802,9432,10091,10780,11500,12252
 
 mov $2,1
@@ -25,6 +25,5 @@ lpb $0
   mov $3,$6
 lpe
 mov $0,$3
-sub $0,3
 div $0,3
-sub $0,1
+sub $0,2

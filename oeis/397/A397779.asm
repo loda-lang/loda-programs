@@ -1,22 +1,14 @@
 ; A397779: 2-adic valuation of the triple factorial of n.
-; Submitted by Science United
+; Submitted by vaughan
 ; 0,0,1,0,2,1,1,2,4,1,3,4,3,3,5,3,7,5,4,7,7,4,8,7,7,8,8,7,10,8,8,10,13,8,11,13,10,11,14,10,14,14,11,14,16,11,15,16,15,15,17,15,17,17,16,17,20,16,18,20,18,18,21,18,24,21,19,24,23,19,25,23,22,25,24,22,27,24,23,27
 
-mov $3,$0
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $3,3
-  mov $5,1
-  lpb $0
-    mov $1,$0
-    add $1,$5
-    mod $1,2
-    mul $1,$5
-    div $0,2
-    add $4,$1
-    mul $5,$1
+lpb $0
+  lpb $2
+    mov $0,$2
+    lex $0,2
+    add $1,$0
+    trn $2,3
   lpe
 lpe
-mov $0,$4
+mov $0,$1

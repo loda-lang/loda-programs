@@ -1,15 +1,15 @@
 ; A179753: Integers (2k)-1..0 followed by integers (2k)+1..0 and so on.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,0,3,2,1,0,5,4,3,2,1,0,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,11,10,9,8,7,6,5,4,3,2,1,0,13,12,11,10,9,8,7,6,5,4,3,2,1,0,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,17,16,15,14,13,12,11,10
+; Formula: a(n) = floor((sqrtint(4*n)+3)/2)*(floor((sqrtint(4*n)+3)/2)-1)-n
 
 #offset 1
 
-mov $1,2
-sub $0,1
-lpb $0
-  sub $0,$1
-  add $1,2
-lpe
+mov $1,$0
+mul $1,4
+nrt $1,2
+add $1,3
+div $1,2
+fac $1,-2
 sub $1,$0
 mov $0,$1
-sub $0,1
