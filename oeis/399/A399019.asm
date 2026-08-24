@@ -1,0 +1,17 @@
+; A399019: Number of empty unit triangles in the hexagonal cross-section of the first iteration of the generalized Menger sponge with subdivision 2n+1, cut through the center perpendicular to a space diagonal.
+; Submitted by Science United
+; 0,12,78,90,276,240,594,462,1032,756,1590,1122,2268,1560,3066,2070,3984,2652,5022,3306,6180,4032,7458,4830,8856,5700,10374,6642,12012,7656,13770,8742,15648,9900,17646,11130,19764,12432,22002,13806,24360,15252,26838,16770,29436,18360,32154,20022,34992,21756,37950,23562,41028,25440,44226,27390,47544,29412,50982,31506,54540,33672,58218,35910,62016,38220,65934,40602,69972,43056,74130,45582,78408,48180,82806,50850,87324,53592,91962,56406
+; Formula: a(n) = 3*floor((2*n)/2)*(2*n+binomial(-2,floor((2*n)/2))+1)+3*binomial(2*n+1,2)
+
+mul $0,2
+mov $1,$0
+add $1,1
+div $0,2
+mov $2,-2
+bin $2,$0
+add $2,$1
+mul $2,$0
+bin $1,2
+add $2,$1
+mov $0,$2
+mul $0,3
