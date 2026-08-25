@@ -1,0 +1,19 @@
+; A399018: Number of solid unit triangles in the hexagonal cross-section of the first iteration of the generalized Menger sponge with subdivision 2n+1, cut through the center perpendicular to a space diagonal.
+; Submitted by Science United
+; 6,42,72,204,210,486,420,888,702,1410,1056,2052,1482,2814,1980,3696,2550,4698,3192,5820,3906,7062,4692,8424,5550,9906,6480,11508,7482,13230,8556,15072,9702,17034,10920,19116,12210,21318,13572,23640,15006,26082,16512,28644,18090,31326,19740,34128,21462,37050,23256,40092,25122,43254,27060,46536,29070,49938,31152,53460,33306,57102,35532,60864,37830,64746,40200,68748,42642,72870,45156,77112,47742,81474,50400,85956,53130,90558,55932,95280
+; Formula: a(n) = 12*n+6*binomial(2*n+1,2)+6*binomial(-3,floor((2*n)/2)-1)+6
+
+mul $0,2
+mov $1,$0
+add $1,1
+div $0,2
+sub $0,1
+mov $2,-3
+bin $2,$0
+add $2,$1
+add $2,1
+bin $1,2
+add $2,$1
+mov $0,$2
+mul $0,6
+sub $0,6
