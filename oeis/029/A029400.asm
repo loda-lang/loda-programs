@@ -6,9 +6,10 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,25793 ; Expansion of 1/((1-x)*(1-x^10)*(1-x^11)).
+  seq $2,25915 ; Expansion of 1/((1-x^7)*(1-x^10)*(1-x^11)).
   mov $3,$1
-  seq $3,11634 ; 35th cyclotomic polynomial.
+  gcd $3,5
+  div $3,4
   add $1,1
   mul $2,$3
   add $4,$2

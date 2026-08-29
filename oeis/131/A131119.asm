@@ -1,17 +1,15 @@
 ; A131119: a(n) = (-1)^n * Sum_{i=1..floor(n/2)} i * floor(n/(n-i)).
-; Submitted by loader3229
+; Submitted by arkiss
 ; 0,0,2,-1,5,-3,9,-6,14,-10,20,-15,27,-21,35,-28,44,-36,54,-45,65,-55,77,-66,90,-78,104,-91,119,-105,135,-120,152,-136,170,-153,189,-171,209,-190,230,-210,252,-231,275,-253,299,-276,324,-300,350,-325,377,-351,405
-; Formula: a(n) = floor((n+1)/2)*(floor((n+1)/2)+1)*((n+1)%2)-binomial(floor((n+1)/2),2)
+; Formula: a(n) = truncate(bitxor(truncate(bitxor(-2,n)/(-2))*(-truncate(bitxor(-2,n)/(-2))-1),bitxor(-2,n)+n)/2)
 
-add $0,1
-mov $1,$0
-mod $1,2
+mov $1,-2
+bxo $1,$0
+add $0,$1
+div $1,-2
+mov $2,-1
+sub $2,$1
+mul $2,$1
+bxo $2,$0
+mov $0,$2
 div $0,2
-mov $2,$0
-add $2,1
-mov $3,$0
-bin $3,2
-mul $1,$2
-mul $1,$0
-sub $1,$3
-mov $0,$1

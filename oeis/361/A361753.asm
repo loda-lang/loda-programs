@@ -7,8 +7,7 @@ lpb $0
   sub $0,2
   mov $4,2
   mul $4,$0
-  mul $1,0
-  add $1,$4
+  mov $1,$4
   bin $1,$0
   mov $3,$4
   bin $3,$2

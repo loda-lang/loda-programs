@@ -1,27 +1,19 @@
 ; A203568: a(n) = A026837(n) - A026838(n).
-; Submitted by Wood
+; Submitted by loader3229
 ; 0,1,-1,0,0,1,0,-1,0,0,0,0,1,0,0,-1,0,0,0,0,0,0,1,0,0,0,-1,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0
+; Formula: a(n) = if(((sqrtint(24*n+1)*((sqrtint(24*n+1)<=1)-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)<=1)-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))%(-2))==0,(sqrtint(24*n+1)*((sqrtint(24*n+1)<=1)-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)<=1)-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))/(-2),sqrtint(24*n+1)*((sqrtint(24*n+1)<=1)-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)<=1)-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))
 
-bin $1,$0
-sub $1,1
-mul $0,3
+mul $0,24
 add $0,1
+mov $1,$0
+nrt $0,2
 mov $2,$0
-mul $2,8
-nrt $2,2
+leq $2,1
 sub $2,1
-div $2,2
-mov $3,$2
-add $3,1
-bin $3,2
-mul $2,10
-sub $0,2
-sub $0,$3
-bin $0,$2
-mul $2,2
-add $2,1
-mul $2,$0
-mov $0,$2
+mov $3,$0
+pow $0,2
+equ $0,$1
+mul $0,$3
+mul $0,$2
 mod $0,3
 dif $0,-2
-mul $0,$1

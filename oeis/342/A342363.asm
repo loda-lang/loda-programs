@@ -1,20 +1,14 @@
 ; A342363: First differences of A341282.
-; Submitted by Steve Dodd
+; Submitted by loader3229
 ; 3,3,3,19,3,3,3,19,3,3,3,3,19,3,3,3,19,3,3,3,3,19,3,3,3,19,3,3,3,19,3,3,3,3,19,3,3,3,19,3,3,3,3,19,3,3,3,19,3,3,3,19,3,3,3,3,19,3,3,3,19,3,3,3,3,19,3,3,3,19,3,3,3,19
+; Formula: a(n) = 16*floor(gcd(floor((10*n+9)/11),4)/4)+3
 
 #offset 1
 
-mov $2,$0
-lpb $0
-  mul $0,0
-  mul $2,42
-  div $2,37
-  add $0,$2
-  add $0,1
-  dif $0,5
-  mov $1,$2
-  min $1,1
-lpe
-mul $1,16
-add $1,3
-mov $0,$1
+mul $0,10
+add $0,9
+div $0,11
+gcd $0,4
+div $0,4
+mul $0,16
+add $0,3

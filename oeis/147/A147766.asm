@@ -1,38 +1,16 @@
 ; A147766: Successive differences of A000990.
-; Submitted by LtFerrante
+; Submitted by loader3229
 ; 1,0,2,2,5,6,13,16,30,40,66,90,142,192,290,396,575,782,1112,1500,2092,2808,3848,5132,6945,9192,12298,16178,21422,28000,36763,47748,62205,80334,103910,133458,171538,219150,280039,356020,452469,572548,724047,912126,1148120,1440320,1805061,2255458,2815116,3504220,4356931,5404016,6694580,8275078,10216090,12586762,15488414,19023226,23335953,28576550,34951439,42678714,52052090,63386962,77099515,93643380,113606792,137638066,166566327,201313740,243044747,293065122,353005590,424706066,510443720,612800644
 
-mov $9,$0
-mov $11,2
-lpb $11
-  clr $0,9
-  sub $11,1
-  mov $0,$9
-  add $0,$11
-  sub $0,1
-  mov $5,$0
-  mov $7,2
-  lpb $7
-    sub $7,1
-    mov $0,$5
-    add $0,$7
-    sub $0,1
-    min $0,156
-    max $0,0
-    seq $0,712 ; a(n) = number of partitions of n into parts of 2 kinds.
-    mov $8,$7
-    mul $8,$0
-    add $6,$8
-  lpe
-  min $5,1
-  mul $5,$0
-  mov $0,$6
-  sub $0,$5
-  mov $12,$11
-  mul $12,$0
-  add $10,$12
+add $0,1
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,398101 ; Number of inequivalent n X n symmetric nonnegative integer matrices with each row sum nonzero and at most 2, up to simultaneous row and column permutations.
+  mov $3,$1
+  seq $3,2107 ; Expansion of Product_{k>=1} (1 - x^k)^2.
+  add $1,1
+  mul $2,$3
+  add $4,$2
 lpe
-min $9,1
-mul $9,$0
-mov $0,$10
-sub $0,$9
+mov $0,$4

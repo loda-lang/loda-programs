@@ -18,7 +18,26 @@ lpb $2
   pow $7,2
   sub $7,$3
   mov $6,$7
-  seq $6,81733 ; Triangle read by rows, T(n,k) = 2^(n-k)*[x^k] Euler_polynomial(n, x), for n >= 0, k >= 0.
+  add $6,1
+  mov $11,$6
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $12,$11
+  add $12,1
+  bin $12,2
+  sub $6,$12
+  sub $6,1
+  mov $12,$6
+  mov $6,$11
+  bin $6,$12
+  sub $11,$12
+  mov $13,-1
+  pow $13,$11
+  seq $11,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  mul $11,$13
+  mul $6,$11
   mov $10,$7
   mul $10,8
   add $10,1

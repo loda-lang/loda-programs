@@ -1,30 +1,35 @@
 ; A190483: a(n) = [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(2),2,1) and []=floor.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 1,2,0,1,0,1,2,1,1,0,1,2,1,2,0,1,0,1,2,0,1,0,1,2,1,1,0,1,0,1,2,0,1,0,1,2,1,1,0,1,2,1,2,0,1,0,1,2,1,1,0,1,2,1,1,0,1,0,1,2,0,1,0,1,2,1,1,0,1,2,1,2,0,1,0,1,2,1,1,0
+; Formula: a(n) = -2*sqrtint(2*n^2)+sqrtint(2*(2*n+1)^2)-1
 
 #offset 1
 
+mov $1,$0
+mul $1,2
+mov $6,1
+add $6,$1
 sub $0,1
-mov $6,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  mov $8,1
-  add $8,$6
-  mov $7,$8
-  pow $7,2
-  mul $7,2
-  mov $9,$7
-  nrt $9,2
-  sub $4,$3
-  sub $4,$1
-  add $8,$9
-  mov $1,$8
-  add $2,$4
-  mov $3,$2
-  add $3,$8
-  mul $6,2
-  add $6,2
-lpe
-mov $0,$3
+mov $5,$6
+pow $5,2
+mul $5,2
+mov $7,$5
+nrt $7,2
+mul $6,2
+add $6,$7
+mov $1,$6
+sub $1,1
+mov $3,1
+add $3,$0
+mov $8,$3
+pow $8,2
+mul $8,2
+mov $4,$8
+nrt $4,2
+mul $3,2
+add $3,$4
+sub $2,$3
+sub $2,$3
+add $2,$1
+mov $0,$2
 sub $0,2

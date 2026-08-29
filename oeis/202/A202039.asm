@@ -1,71 +1,46 @@
 ; A202039: Triangle T(n,m) = coefficient of x^n in expansion of (1/2-1/2*(1-8*x)^1/4)^m = sum(n>=m, T(n,m) x^n), n>=1, m>=1.
-; Submitted by Josemi
+; Submitted by rajab
 ; 1,3,1,14,6,1,77,37,9,1,462,238,69,12,1,2926,1582,510,110,15,1,19228,10780,3738,920,160,18,1,129789,74877,27405,7389,1495,219,21,1,894102,528022,201569,58156,13075,2262,287,24,1,6258714,3769370,1488762,452826,110143,21417,3248,364,27,1
 
 #offset 1
 
-mov $2,$0
-mul $2,8
-nrt $2,2
-add $2,1
-div $2,2
-mov $1,$2
-bin $1,2
-sub $0,$1
-sub $0,1
-mov $3,$0
-sub $2,$0
-lpb $2
-  sub $2,1
-  mov $4,$1
-  add $4,$3
-  add $4,1
-  mov $7,$4
-  mul $7,8
-  nrt $7,2
+mov $1,$0
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+mov $3,$1
+bin $3,2
+mov $4,$0
+sub $4,$3
+sub $4,1
+mov $6,$1
+mov $7,$1
+sub $7,$4
+mov $8,$4
+sub $1,1
+lpb $7
   sub $7,1
-  div $7,2
-  mov $9,$7
-  add $9,1
-  bin $9,2
-  sub $4,1
-  sub $4,$9
-  sub $4,$7
-  sub $7,$4
-  mov $8,$7
-  add $4,$7
-  bin $7,$4
-  add $4,1
-  bin $8,$4
-  mul $8,-1
-  add $3,1
-  mov $5,$3
-  bin $5,2
-  add $5,$0
-  add $5,1
-  add $7,$8
-  mov $10,$5
-  mul $10,8
-  nrt $10,2
-  sub $10,1
-  div $10,2
-  mov $12,$10
-  add $12,1
-  bin $12,2
-  sub $5,1
-  sub $5,$12
-  sub $5,$10
-  sub $10,$5
-  mov $11,$10
-  add $5,$10
-  bin $10,$5
-  add $5,1
-  bin $11,$5
-  mul $11,-1
-  add $10,$11
-  mov $4,$7
-  mul $4,$10
-  mul $6,2
-  add $6,$4
+  mov $12,$1
+  add $12,$1
+  sub $12,$8
+  mov $13,$12
+  bin $13,$6
+  mov $5,$8
+  add $5,$8
+  sub $5,$4
+  bin $12,$1
+  sub $12,$13
+  mov $10,$8
+  add $10,1
+  mov $2,$5
+  bin $2,$10
+  bin $5,$8
+  sub $5,$2
+  add $8,1
+  mov $9,$12
+  mul $9,$5
+  mul $11,2
+  add $11,$9
 lpe
-mov $0,$6
+mov $0,$11

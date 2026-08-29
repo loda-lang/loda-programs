@@ -1,9 +1,21 @@
 ; A121357: Number of different, not necessarily connected, labeled trivalent diagrams of size n.
-; Submitted by taurec
-; 1,1,2,12,90,546,6156,81432,942012,15114780,294765336,5069224656,108842183352,2770895886552,64609245619920,1742542175582496,55074355772360976,1626315165597840912,53331321825434963232
-; Formula: a(n) = A001470(n)*A000085(n)
+; Submitted by loader3229
+; 1,1,2,12,90,546,6156,81432,942012,15114780,294765336,5069224656,108842183352,2770895886552,64609245619920,1742542175582496,55074355772360976,1626315165597840912,53331321825434963232,2011417086122071508160,72327784410267864674976,2802665464827343926064416
+; Formula: a(n) = c(n)*b(n), b(n) = b(n-3)*(n-2)*(n-1)+b(n-1), b(5) = 21, b(4) = 9, b(3) = 3, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = c(n-2)*(n-1)+c(n-1), c(6) = 76, c(5) = 26, c(4) = 10, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 1
 
-mov $1,$0
-seq $1,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-seq $0,1470 ; Number of degree-n permutations of order dividing 3.
-mul $0,$1
+mov $1,1
+mov $5,1
+mov $6,1
+lpb $0
+  sub $0,1
+  ror $1,3
+  mul $1,$4
+  add $1,$2
+  mul $3,$4
+  add $4,1
+  mul $5,$4
+  add $5,$6
+  ror $5,2
+lpe
+mov $0,$1
+mul $0,$5

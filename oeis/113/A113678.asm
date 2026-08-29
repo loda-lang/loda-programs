@@ -21,6 +21,5 @@ mov $6,-2
 pow $6,$5
 add $6,2
 gcd $4,$6
-mov $5,$4
-div $5,3
-mov $0,$5
+mov $0,$4
+div $0,3

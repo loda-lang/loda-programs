@@ -1,5 +1,5 @@
 ; A181645: Triangle Id-(xc(x),xc(x)), c(x) the g.f. of the Catalan numbers A000108.
-; Submitted by Wood
+; Submitted by Science United
 ; 1,-1,1,-1,-1,1,-2,-2,-1,1,-5,-5,-3,-1,1,-14,-14,-9,-4,-1,1,-42,-42,-28,-14,-5,-1,1,-132,-132,-90,-48,-20,-6,-1,1,-429,-429,-297,-165,-75,-27,-7,-1,1,-1430,-1430,-1001,-572,-275,-110,-35,-8,-1,1,-4862,-4862,-3432
 
 mov $3,2
@@ -7,32 +7,30 @@ lpb $3
   div $3,2
   add $0,$3
   add $0,1
-  mov $7,$0
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $6,$7
+  mov $2,$0
+  mul $2,8
+  nrt $2,2
+  sub $2,1
+  div $2,2
+  mov $6,$2
   add $6,1
   bin $6,2
   sub $0,1
   sub $0,$6
-  sub $0,$7
-  sub $7,$0
-  sub $7,1
-  add $0,$7
-  mov $4,$7
-  bin $7,$0
+  sub $0,$2
+  sub $2,$0
+  sub $2,1
+  mov $4,$2
+  add $0,$2
+  bin $2,$0
   add $0,1
   bin $4,$0
   mul $4,-1
-  add $7,$4
-  mov $2,$3
-  mul $2,$7
+  add $2,$4
   add $1,$2
   equ $1,$5
   mov $3,1
-  mov $5,$7
+  mov $5,$2
 lpe
 sub $1,$5
 mov $0,$1

@@ -18,31 +18,38 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,63967 ; Triangle read by rows, T(n,k) = T(n-1,k) + T(n-2,k) + T(n-1,k-1) + T(n-2,k-1) and T(0,0) = 1.
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $4,$8
+  sub $7,$4
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
-  mov $7,$5
-  mul $7,8
-  nrt $7,2
-  sub $7,1
-  div $7,2
-  mov $9,$7
-  add $9,1
-  bin $9,2
-  sub $5,$9
+  mov $9,$5
+  mul $5,8
+  nrt $5,2
   sub $5,1
-  mov $8,$7
-  sub $8,$5
-  mov $5,2
-  mul $5,$8
-  bin $7,$5
-  bin $5,$8
-  add $8,1
-  div $5,$8
-  mul $5,$7
+  div $5,2
+  mov $10,$5
+  add $10,1
+  mov $11,$10
+  bin $10,2
+  sub $9,$10
+  mov $12,$9
+  sub $12,1
+  bin $11,$12
+  bin $5,$12
+  mul $5,$11
+  div $5,$9
+  bin $4,$7
   mul $4,$5
   add $6,$4
 lpe

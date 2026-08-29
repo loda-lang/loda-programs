@@ -42,10 +42,9 @@ sub $7,$6
 pow $7,$7
 mov $6,$7
 pow $6,6
+neq $11,$7
 mov $5,$2
 div $5,2
-mov $11,$5
-dif $11,2
 add $5,5
 bin $5,3
 sub $5,$11

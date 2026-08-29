@@ -1,7 +1,7 @@
 ; A202149: Triangle read by rows: T(n, k) = mod(2^k, n), where 1 <= k < n.
 ; Submitted by loader3229
 ; 0,2,1,2,0,0,2,4,3,1,2,4,2,4,2,2,4,1,2,4,1,2,4,0,0,0,0,0,2,4,8,7,5,1,2,4,2,4,8,6,2,4,8,6,2,2,4,8,5,10,9,7,3,6,1,2,4,8,4,8,4,8,4,8,4,8,2,4,8,3,6,12,11,9,5,10,7,1,2,4
-; Formula: a(n) = -truncate(truncate(2^(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-1))/(truncate((sqrtint(8*n-8)-1)/2)+2))*(truncate((sqrtint(8*n-8)-1)/2)+2)+truncate(2^(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-1))
+; Formula: a(n) = if((-binomial(floor((sqrtint(8*n-8)-1)/2)+1,2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n-8)-1)/2)+1,2)+n-1))%(floor((sqrtint(8*n-8)-1)/2)+2)
 
 #offset 2
 

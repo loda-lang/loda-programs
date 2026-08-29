@@ -1,45 +1,28 @@
 ; A253298: Digital root for the following sequences, F(4*n)/F(4); F(12*n)/F(12); F(20*n)/F(20), where the pattern increases by 8, ad infinitum, with the Fibonacci numbers F = A000045.
 ; Submitted by loader3229
 ; 1,7,3,5,5,3,7,1,9,8,2,6,4,4,6,2,8,9,1,7,3,5,5,3,7,1,9,8,2,6,4,4,6,2,8,9,1,7,3,5,5,3,7,1,9,8,2,6,4,4,6,2,8,9,1,7,3,5,5,3,7,1,9,8,2,6,4,4,6,2,8,9
+; Formula: a(n) = truncate((sign(truncate((11^(n+2)+20*5^(n+2)-5*3^(n+2)-16*6^(n+2))/80))*((abs(truncate((11^(n+2)+20*5^(n+2)-5*3^(n+2)-16*6^(n+2))/80))-1)%27+1)-3)/3)+1
 
 #offset 1
 
-mov $1,1
-mov $2,7
-mov $3,3
-mov $4,5
-mov $5,5
-mov $6,3
-mov $7,7
-mov $8,1
-mov $9,9
-mov $10,8
-mov $11,2
-mov $12,6
-mov $13,4
-mov $14,4
-mov $15,6
-mov $16,2
-mov $17,8
-sub $0,1
-lpb $0
-  rol $1,17
-  sub $17,$1
-  add $17,$2
-  sub $17,$3
-  add $17,$4
-  sub $17,$5
-  add $17,$6
-  sub $17,$7
-  add $17,$8
-  sub $17,$9
-  add $17,$10
-  sub $17,$11
-  add $17,$12
-  sub $17,$13
-  add $17,$14
-  sub $17,$15
-  add $17,$16
-  sub $0,1
-lpe
+add $0,2
+mov $2,6
+pow $2,$0
+mul $2,16
+mov $3,5
+pow $3,$0
+mul $3,20
+mov $4,3
+pow $4,$0
+mul $4,5
+mov $1,11
+pow $1,$0
+sub $1,$2
+add $1,$3
+sub $1,$4
+div $1,80
+dgr $1,28
 mov $0,$1
+sub $0,3
+div $0,3
+add $0,1

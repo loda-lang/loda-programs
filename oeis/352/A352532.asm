@@ -1,25 +1,24 @@
 ; A352532: Numbers with multiplicative persistence value 11.
 ; Submitted by loader3229
 ; 277777788888899,277777788888989,277777788888998,277777788889889,277777788889898,277777788889988,277777788898889,277777788898898,277777788898988,277777788899888,277777788988889,277777788988898,277777788988988,277777788989888,277777788998888
-; Formula: a(n) = truncate(10^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+truncate(10^(truncate((sqrtint(8*n)-1)/2)+1))+277777788888888
+; Formula: a(n) = if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1)<=(-1),0,10^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1))+10^floor((sqrtint(8*n)+1)/2)+277777788888888
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
 add $1,1
-mov $2,10
-pow $2,$0
-mov $0,10
-pow $0,$1
-add $2,$0
-mov $0,$2
+div $1,2
+mov $5,$1
+bin $5,2
+sub $0,1
+mov $2,$0
+sub $2,$5
+mov $4,10
+pow $4,$1
+mov $3,10
+pow $3,$2
+mov $0,$4
+add $0,$3
 add $0,277777788888888

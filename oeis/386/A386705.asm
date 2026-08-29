@@ -1,6 +1,7 @@
 ; A386705: a(n) = sum of the 2^(n-1) even positive integers having bit length 2*n and in which, when written in binary, each run of 0's is of exactly the same length as the run of 1's immediately before it.
 ; Submitted by teoparas
 ; 2,22,192,1576,12704,101856,815360,6524032,52194816,417564160,3340525568,26724231168,213793906688,1710351376384,13682811273216,109462490742784,875699927121920,7005599419465728,56044795360968704,448358362898759680,3586866903213146112,28694935225753403392
+; Formula: a(n) = c(n-1), b(n) = 2*2^(n-1)+2*b(n-1), b(2) = 16, b(1) = 6, b(0) = 2, c(n) = 8*c(n-1)+2*2^(n-1)+2*b(n-1), c(2) = 192, c(1) = 22, c(0) = 2
 
 #offset 1
 

@@ -1,5 +1,5 @@
 ; A202396: Triangle T(n,k), read by rows, given by (2, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (2, -1/2, -1/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
-; Submitted by BlisteringSheep
+; Submitted by vaughan
 ; 1,2,2,5,8,3,13,27,19,5,34,86,86,42,8,89,265,338,234,85,13,233,798,1227,1084,567,166,21,610,2362,4230,4510,3038,1286,314,34,1597,6898,14058,17474,14284,7814,2774,582,55
 
 add $0,1
@@ -13,6 +13,7 @@ bin $1,2
 sub $0,$1
 sub $0,1
 mov $3,$0
+mod $2,16
 sub $2,$0
 lpb $2
   sub $2,1

@@ -1,20 +1,18 @@
 ; A369152: Total number of digits in row n of Pascal's triangle.
-; Submitted by loader3229
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,3,4,5,8,10,12,14,18,25,28,31,38,44,50,57,64,69,76,88,96,102,114,125,134,142,154,166,178,191,202,215,230,244,256,268,288,303,316,334,356,372,388,411,428,447,470,490,506,529,554,573,590,618,642,660,686
 
-mov $2,$0
-add $2,1
+add $0,1
 mov $4,$0
-add $4,1
 lpb $4
   sub $4,1
-  mov $1,$2
+  mov $1,$0
   sub $1,1
   bin $1,$4
-  mov $5,$1
-  mul $5,10
-  add $5,1
-  log $5,10
-  add $3,$5
+  mov $2,$1
+  mul $2,10
+  add $2,1
+  log $2,10
+  add $3,$2
 lpe
 mov $0,$3

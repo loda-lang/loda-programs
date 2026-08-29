@@ -1,26 +1,24 @@
 ; A038281: Triangle whose (i,j)-th entry is binomial(i,j)*8^(i-j)*3^j.
 ; Submitted by loader3229
 ; 1,8,3,64,48,9,512,576,216,27,4096,6144,3456,864,81,32768,61440,46080,17280,3240,243,262144,589824,552960,276480,77760,11664,729,2097152,5505024,6193152,3870720,1451520,326592,40824,2187,16777216,50331648,66060288,49545216,23224320,6967296,1306368,139968,6561,134217728,452984832,679477248,594542592,334430208,125411328,31352832,5038848,472392,19683,1073741824,4026531840,6794772480,6794772480,4459069440,2006581248,627056640,134369280,18895680,1574640,59049,8589934592,35433480192,66437775360
-; Formula: a(n) = truncate(3^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(8^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)*if((-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)<=(-1),0,3^(-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n))*if((-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,8^(-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2)))
 
+mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
+mul $0,8
+nrt $0,2
 sub $0,1
-mov $2,$1
-sub $2,$0
-bin $1,$0
-mov $3,3
-pow $3,$0
-mov $0,8
-pow $0,$2
-mul $1,$3
-mul $1,$0
-mov $0,$1
+div $0,2
+mov $3,$0
+fac $3,2
+div $3,2
+sub $2,$3
+mov $4,3
+pow $4,$2
+mov $1,$0
+sub $1,$2
+mov $5,8
+pow $5,$1
+bin $0,$2
+mul $0,$4
+mul $0,$5

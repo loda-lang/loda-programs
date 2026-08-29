@@ -1,27 +1,21 @@
 ; A003885: Degrees of irreducible representations of group L2(17).
-; Submitted by Rhodan71
+; Submitted by loader3229
 ; 1,9,9,16,16,16,16,17,18,18,18
+; Formula: a(n) = (n>=9)+(n>=8)+8*(n>=2)+bitxor(9*(n>=4),5)-4
 
 #offset 1
 
-mov $5,3
-sub $0,1
-lpb $0
-  sub $0,1
-  sub $0,$6
-  mov $6,$4
-  add $6,1
-  sub $1,$6
-  sub $3,4
-  add $3,$1
-  sub $1,$4
-  add $2,$4
-  gcd $2,$3
-  add $5,$2
-  mov $3,$5
-  mov $4,2
-  add $4,$1
-  add $4,$6
-lpe
-mov $0,$3
-add $0,1
+mov $1,$0
+mov $2,$0
+geq $2,8
+mov $3,$0
+geq $3,9
+geq $0,2
+mul $0,8
+sub $0,4
+geq $1,4
+mul $1,9
+bxo $1,5
+add $0,$1
+add $0,$2
+add $0,$3

@@ -1,19 +1,13 @@
 ; A021310: Decimal expansion of 1/306.
-; Submitted by Johnbodlis team
+; Submitted by ForSocial
 ; 0,0,3,2,6,7,9,7,3,8,5,6,2,0,9,1,5,0,3,2,6,7,9,7,3,8,5,6,2,0,9,1,5,0,3,2,6,7,9,7,3,8,5,6,2,0,9,1,5,0,3,2,6,7,9,7,3,8,5,6,2,0,9,1,5,0,3,2,6,7,9,7,3,8,5,6,2,0,9,1
-; Formula: a(n) = b(n)%10, b(n) = floor((b(n-1)+floor((7*floor((10^n)/9))/2)+1)/12), b(1) = 0, b(0) = 0
+; Formula: a(n) = floor((5*floor((10^(n+1))/90))/17)%10
 
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $3,10
-  pow $3,$1
-  div $3,9
-  mul $3,7
-  div $3,2
-  add $3,1
-  add $2,$3
-  div $2,12
-lpe
-mov $0,$2
+add $0,1
+mov $1,10
+pow $1,$0
+mov $0,$1
+div $0,90
+mul $0,5
+div $0,17
 mod $0,10

@@ -1,7 +1,7 @@
-; A358288: Number of 3-connected planer cubic graphs with 2*n nodes and the maximum number of edge-Kempe equivalence classes.
+; A358288: Number of 3-connected planar cubic simple graphs on 2n unlabeled nodes with the maximum number of edge-Kempe equivalence classes of 3-edge-colorings.
 ; Submitted by loader3229
 ; 1,1,1,1,1,3,23,1,1,1,6,31,1,2,55,1,1,1
-; Formula: a(n) = truncate((7800*sumdigits(n-2,12)+6864*sumdigits(n-2,15)+6292*sumdigits(n-2,7)+1671*n-143*sumdigits(n-2,13)-572*sumdigits(n-2,10)-858*sumdigits(n-2,5)-4290*sumdigits(n-2,11)-6864*sumdigits(n-2,6)-9900*sumdigits(n-2,14)-1626)/1716)
+; Formula: a(n) = truncate((7800*sumdigits(n-2,12)+6864*sumdigits(n-2,15)+6292*sumdigits(n-2,7)+1671*n-143*if((7800*sumdigits(n-2,12))==0,0,if(((7800*sumdigits(n-2,12))^2)<=1,0,valuation(7800*sumdigits(n-2,12),7800*sumdigits(n-2,12))))-572*sumdigits(n-2,10)-858*sumdigits(n-2,5)-4290*sumdigits(n-2,11)-6864*sumdigits(n-2,6)-9900*sumdigits(n-2,14)-1626)/1716)
 
 #offset 2
 
@@ -30,8 +30,7 @@ mov $2,$0
 dgs $2,12
 mul $2,7800
 add $1,$2
-mov $2,$0
-dgs $2,13
+lex $2,$2
 mul $2,-143
 add $1,$2
 mov $2,$0

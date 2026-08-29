@@ -1,12 +1,11 @@
 ; A290141: Numbers n that have a record maximum (> n) in their aliquot sequence.
-; Submitted by pututu
+; Submitted by Science United
 ; 12,18,20,24,30,102,120,138
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 lpb $0
   mov $1,$0
   mul $1,2

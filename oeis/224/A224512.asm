@@ -1,19 +1,18 @@
 ; A224512: Gray code variant of A147582.
-; Submitted by computerguy09
+; Submitted by Science United
 ; 1,4,12,4,12,36,12,4,12,36,108,36,12,36,12,4,12,36,108,36,108,324,108,36,12,36,108,36,12,36,12,4,12,36,108,36,108,324,108,36,108,324,972,324,108,324,108,36,12,36,108,36,108,324,108,36,12,36,108
+; Formula: a(n) = floor((4*3^sumdigits(bitxor(n-1,floor((n-1)/2)),2))/3)
 
 #offset 1
 
 sub $0,1
-lpb $0
-  mov $3,$0
-  div $0,2
-  add $3,$0
-  mod $3,2
-  add $2,$3
-lpe
-mov $1,3
-pow $1,$2
-mul $1,4
-div $1,3
-mov $0,$1
+mov $1,$0
+div $1,2
+mov $2,$0
+bxo $2,$1
+dgs $2,2
+mov $3,3
+pow $3,$2
+mul $3,4
+div $3,3
+mov $0,$3

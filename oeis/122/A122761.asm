@@ -1,20 +1,18 @@
 ; A122761: Triangular read by rows: T(n, k) = 3^k * (1 + (n mod 2)).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,6,1,3,9,2,6,18,54,1,3,9,27,81,2,6,18,54,162,486,1,3,9,27,81,243,729,2,6,18,54,162,486,1458,4374,1,3,9,27,81,243,729,2187,6561,2,6,18,54,162,486,1458,4374,13122,39366,1,3,9,27,81,243,729,2187,6561,19683,59049,2,6,18,54,162,486,1458,4374,13122,39366,118098,354294,1,3
-; Formula: a(n) = (floor((sqrtint(8*n+8)-1)/2)%2+1)*if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,3^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = gcd(floor((sqrtint(8*n+8)+1)/2),2)*if((-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)<=(-1),0,3^(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n))
 
 mov $2,$0
 add $0,1
 mul $0,8
 nrt $0,2
-sub $0,1
+add $0,1
 div $0,2
 mov $1,$0
-add $1,1
 bin $1,2
 sub $2,$1
 mov $3,3
 pow $3,$2
-mod $0,2
-add $0,1
+gcd $0,2
 mul $0,$3

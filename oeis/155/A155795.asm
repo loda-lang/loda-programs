@@ -12,10 +12,8 @@ mov $1,$0
 add $1,1
 bin $1,2
 sub $2,$1
-mov $4,$0
-sub $4,$2
-mul $4,$2
-mul $4,-1
 mov $3,$0
-fac $3,$4
-mov $0,$3
+sub $3,$2
+mul $3,$2
+mul $3,-1
+fac $0,$3

@@ -1,16 +1,13 @@
 ; A323466: Number of terms in row n of A323465.
-; Submitted by Science United
+; Submitted by loader3229
 ; 2,3,3,3,4,4,4,3,4,5,5,4,5,5,5,3,4,5,5,5,6,6,6,4,5,6,6,5,6,6,6,3,4,5,5,5,6,6,6,5,6,7,7,6,7,7,7,4,5,6,6,6,7,7,7,5,6,7,7,6,7,7,7,3,4,5,5,5,6,6,6,5,6,7,7,6,7,7,7,5
+; Formula: a(n) = sumdigits(bitor(floor(n/2),n),2)+1
 
 #offset 1
 
-mov $1,4
-lpb $0
-  mov $2,$0
-  dif $2,2
-  mod $2,2
-  div $0,2
-  add $1,$2
-lpe
+mov $1,$0
+div $1,2
+bor $1,$0
+dgs $1,2
 mov $0,$1
-sub $0,3
+add $0,1

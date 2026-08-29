@@ -1,7 +1,7 @@
 ; A018380: Divisors of 296.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,8,37,74,148,296
-; Formula: a(n) = truncate(2^min(n-1,(n-1)%4))*b(n-1), b(n) = 37*b(n-4), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1
+; Formula: a(n) = b(n-1)*if(min(n-1,(n-1)%4)<=(-1),0,2^min(n-1,(n-1)%4)), b(n) = 37*b(n-4), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1
 
 #offset 1
 

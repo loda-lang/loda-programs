@@ -1,25 +1,22 @@
 ; A349413: Number of smooth positroid varieties corresponding to derangements in S_n.
-; Submitted by Technik007[CZ]
+; Submitted by Science United
 ; 1,0,1,2,5,14,40,118,357,1100
 
-mod $0,11
+mov $1,$0
 mov $4,$0
 add $0,1
 lpb $0
   sub $0,1
-  sub $1,1
-  equ $5,1
-  sub $5,$2
-  bin $5,$0
-  mov $6,$1
-  bin $6,$4
-  mul $6,$5
+  mov $2,$4
+  sub $2,1
+  bin $2,$0
+  mov $3,$4
+  bin $3,$1
   trn $0,1
-  add $4,1
-  gcd $6,0
-  div $6,$4
-  add $2,2
-  add $3,$6
-  trn $4,2
+  add $1,1
+  mul $3,$2
+  div $3,$1
+  trn $1,2
+  add $5,$3
 lpe
-mov $0,$3
+mov $0,$5

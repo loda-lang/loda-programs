@@ -1,52 +1,50 @@
 ; A190446: Positions of 0 in A190445.
-; Submitted by Matthias Schmelz
+; Submitted by Science United
 ; 5,13,26,34,47,60,68,81,89,94,102,115,123,136,149,157,170,178,191,204,212,225,233,238,246,259,267,280,293,301,314,322,335,348,356,369,382,390,403,411,424,437,445,458,466,471,479,492,500,513,526,534,547,555,568,581,589,602,610,615
 
 #offset 1
 
-mov $6,$0
+mov $3,$0
 sub $0,1
-pow $6,2
-lpb $6
-  mov $7,$5
-  add $7,2
-  mov $4,$7
-  mul $4,4
-  mov $3,$4
-  add $3,$4
-  mul $3,2
-  add $3,$4
-  mul $3,$4
-  nrt $3,2
-  add $3,$4
-  mov $4,$3
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,2
+  mov $6,$4
+  mul $6,4
+  mov $7,$6
+  add $7,$6
+  mul $7,2
+  add $7,$6
+  mul $7,$6
+  nrt $7,2
+  add $7,$6
+  add $2,1
+  mov $6,$7
+  div $6,2
+  mod $6,4
+  add $6,1
+  div $6,2
+  mov $4,$6
+  add $4,$5
   div $4,2
-  mod $4,4
-  add $4,1
-  div $4,2
-  mov $7,$4
-  add $7,$8
-  div $7,2
-  gcd $7,2
-  sub $0,$7
+  gcd $4,2
+  sub $0,$4
   add $0,1
-  add $5,1
-  mov $8,$0
-  max $8,0
-  equ $8,$0
-  mul $6,$8
-  sub $6,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
 lpe
-mov $0,$5
-add $0,2
+mov $0,$2
+add $0,3
 mov $1,$0
-add $1,$0
-mul $1,2
+mul $1,4
 add $1,$0
 mul $1,$0
 nrt $1,2
 add $1,$0
-mov $2,$1
-div $2,2
-add $2,$0
-mov $0,$2
+div $1,2
+add $0,$1
+sub $0,2

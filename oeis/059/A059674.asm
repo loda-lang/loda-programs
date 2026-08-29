@@ -1,14 +1,23 @@
 ; A059674: Square array a(m,n) = binomial(max(m,n), min(m,n)) (m>=0, n>=0) read by antidiagonals.
-; Submitted by Jamie Morken(l1)
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,2,1,1,3,1,3,1,1,4,3,3,4,1,1,5,6,1,6,5,1,1,6,10,4,4,10,6,1,1,7,15,10,1,10,15,7,1,1,8,21,20,5,5,20,21,8,1,1,9,28,35,15,1,15,35,28,9,1,1,10,36,56,35,6,6,35,56,36,10,1,1,11
+; Formula: a(n) = binomial(max(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n),-max(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+floor((sqrtint(8*n+8)-1)/2))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-  mov $2,$1
-  sub $2,$0
-lpe
-min $0,$2
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 sub $1,$0
+mov $2,$1
+max $1,$0
+add $0,$2
+sub $0,$1
 bin $1,$0
 mov $0,$1

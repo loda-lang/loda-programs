@@ -1,17 +1,17 @@
 ; A356089: a(n) = A001951(A054406(n)).
-; Submitted by Stephen Uitti
+; Submitted by Science United
 ; 2,5,9,12,15,19,22,25,29,32,36,39,42,46,49,52,56,59,62,66,69,73,76,79,83,86,89,93,96,98,103,106,110,113,115,120,123,125,130,132,137,140,142,147,149,152,156,159,162,166,169,173,176,179,183,186,189,193
-; Formula: a(n) = sqrtint(2*(truncate((sqrtint(3*n^2)+n)/2)+n)^2)
+; Formula: a(n) = sqrtint(2*(floor((sqrtint(3*n^2)+n)/2)+n)^2)
 
 #offset 1
 
 sub $0,1
 mov $2,1
 add $2,$0
-mov $4,$2
-pow $4,2
-mul $4,3
-mov $3,$4
+mov $1,$2
+pow $1,2
+mul $1,3
+mov $3,$1
 nrt $3,2
 add $2,$3
 div $2,2
@@ -19,6 +19,4 @@ add $0,$2
 add $0,1
 pow $0,2
 mul $0,2
-mov $1,$0
-nrt $1,2
-mov $0,$1
+nrt $0,2

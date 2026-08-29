@@ -1,23 +1,22 @@
 ; A143278: Convolution of A006352 and A010815.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,-25,-49,0,0,121,0,169,0,0,0,0,-289,0,0,-361,0,0,0,0,0,0,529,0,0,0,625,0,0,0,0,0,0,0,0,-841,0,0,0,0,-961,0,0,0,0,0,0,0,0,0,0,1225,0,0,0,0,0,1369,0,0,0,0,0,0,0,0,0,0,0,0,-1681,0,0,0,0,0,0,-1849,0,0
+; Formula: a(n) = bitor(0,24*n+1)*if(((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))%(-2))==0,(sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))/(-2),sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))
 
+mul $0,24
+add $0,1
 mov $4,$0
-mul $4,24
-add $4,1
-mov $3,$4
-nrt $4,2
-max $0,$3
-mov $1,$4
-mov $2,$4
+nrt $0,2
+bor $1,$4
+mov $2,$0
 add $2,1
 mod $2,4
 sub $2,1
-pow $4,2
-equ $4,$3
-mul $4,$1
-mul $4,$2
-mod $4,3
-dif $4,-2
-mul $4,$0
-mov $0,$4
+mov $3,$0
+pow $0,2
+equ $0,$4
+mul $0,$3
+mul $0,$2
+mod $0,3
+dif $0,-2
+mul $0,$1

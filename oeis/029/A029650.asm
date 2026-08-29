@@ -4,7 +4,7 @@
 
 mov $2,7259
 lpb $2
-  sub $2,41
+  sub $2,45
   mov $3,$1
   seq $3,29649 ; Numbers to the right of the central elements of the (1,2)-Pascal triangle A029635 that are different from 2.
   add $3,1

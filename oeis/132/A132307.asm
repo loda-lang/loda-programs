@@ -1,8 +1,23 @@
 ; A132307: 2*A007318^(2) - A000012.
-; Submitted by Dylan Delgado
+; Submitted by loader3229
 ; 1,3,1,7,7,1,15,23,11,1,31,63,47,15,1,63,159,159,79,19,1,127,383,479,319,119,23,1,255,895,1343,1119,559,167,27,1,511,2047,3583,3583,2239,895,223,31,1,1023,4607,9215,10751,8063,4031,1343,287,35,1
-; Formula: a(n) = 2*A038207(n)-1
+; Formula: a(n) = 2*binomial(floor((sqrtint(8*n+8)-1)/2),-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)*if((-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,2^(-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2)))-1
 
-seq $0,38207 ; Triangle whose (i,j)-th entry is binomial(i,j)*2^(i-j).
+mov $2,$0
+add $0,1
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $3,$0
+fac $3,2
+div $3,2
+sub $2,$3
+mov $1,$0
+sub $1,$2
+mov $4,2
+pow $4,$1
+bin $0,$2
+mul $0,$4
 mul $0,2
 sub $0,1

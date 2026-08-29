@@ -1,4 +1,4 @@
-; A052038: First nonzero digit in expansion of 1/n.
+; A052038: First nonzero digit in the decimal expansion of 1/n.
 ; Submitted by 7Tonin
 ; 1,5,3,2,2,1,1,1,1,1,9,8,7,7,6,6,5,5,5,5,4,4,4,4,4,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 

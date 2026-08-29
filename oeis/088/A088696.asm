@@ -9,11 +9,9 @@ mov $1,$0
 log $1,2
 mov $2,2
 pow $2,$1
+bxo $0,$2
 mov $3,$0
-bxo $3,$2
-mov $4,$3
-div $3,2
-bxo $3,$4
-dgs $3,2
-mov $0,$3
+div $0,2
+bxo $0,$3
+dgs $0,2
 add $0,1

@@ -1,7 +1,7 @@
 ; A307707: Lexicographically earliest sequence of nonnegative integers in which, for all k >= 0, there are exactly k pairs of consecutive terms whose sum is k.
 ; Submitted by loader3229
 ; 0,1,1,1,2,1,2,2,2,2,2,3,2,3,2,3,3,3,3,3,3,3,4,3,4,3,4,3,4,4,4,4,4,4,4,4,4,5,4,5,4,5,4,5,4,5,5,5,5,5,5,5,5,5,5,5,6,5,6,5,6,5,6,5,6,5,6,6,6,6,6,6,6,6,6,6,6,6,6,7
-; Formula: a(n) = truncate((sign(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n)*((abs(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n)-1)%2+1)+truncate((sqrtint(8*n)-1)/2))/2)
+; Formula: a(n) = truncate((sign(-binomial(floor((sqrtint(8*n)-1)/2),2)+n)*((abs(-binomial(floor((sqrtint(8*n)-1)/2),2)+n)-1)%2+1)+floor((sqrtint(8*n)-1)/2))/2)
 
 #offset 1
 

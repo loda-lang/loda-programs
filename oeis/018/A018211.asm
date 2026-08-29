@@ -1,47 +1,15 @@
 ; A018211: Alkane (or paraffin) numbers l(10,n).
-; Submitted by Wood
+; Submitted by loader3229
 ; 1,4,20,60,170,396,868,1716,3235,5720,9752,15912,25236,38760,58200,85272,122661,173052,240460,328900,444158,592020,780572,1017900,1315015,1682928,2136304,2689808,3362600,4173840,5148144,6310128
+; Formula: a(n) = floor((binomial(floor((n+7)/2),3)*((n+7)%2)+binomial(n+7,7))/2)
 
-mov $20,$0
-mov $22,$0
-add $22,1
-lpb $22
-  clr $0,20
-  sub $22,1
-  mov $0,$20
-  sub $0,$22
-  mov $17,$0
-  mov $19,$0
-  add $19,1
-  lpb $19
-    clr $0,17
-    sub $19,1
-    mov $0,$17
-    sub $0,$19
-    mov $14,$0
-    mov $16,$0
-    add $16,1
-    lpb $16
-      clr $0,14
-      sub $16,1
-      mov $0,$14
-      sub $0,$16
-      mov $11,$0
-      mov $13,$0
-      add $13,1
-      lpb $13
-        sub $13,1
-        mov $0,$11
-        sub $0,$13
-        mov $1,-4
-        bin $1,$0
-        max $1,0
-        add $12,$1
-      lpe
-      add $15,$12
-    lpe
-    add $18,$15
-  lpe
-  add $21,$18
-lpe
-mov $0,$21
+add $0,7
+mov $2,$0
+mod $2,2
+mov $1,$0
+div $1,2
+bin $1,3
+mul $2,$1
+bin $0,7
+add $0,$2
+div $0,2

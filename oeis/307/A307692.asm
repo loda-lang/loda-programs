@@ -1,20 +1,14 @@
 ; A307692: g values of Triphosian primes.
-; Submitted by loader3229
+; Submitted by Zaibas McCann
 ; 0,2,0,2,0,2,0,5,0,5,0,5,0,11,0,11,0,11
-; Formula: a(n) = truncate(((5*gcd(n,2)^2+5*gcd(n,2))*max(0,gcd(n,2))^floor((n-1)/6))/10)-1
+; Formula: a(n) = floor(binomial(floor(if(((n+53)%2)==0,(n+53)/2,n+53)/6),6)/42)
 
 #offset 1
 
 mov $1,$0
-gcd $1,2
-sub $0,1
-div $0,6
-max $2,$1
-pow $2,$0
+add $1,53
+dif $1,2
+div $1,6
+bin $1,6
 mov $0,$1
-mul $0,5
-mul $1,$0
-add $0,$1
-mul $0,$2
-div $0,10
-sub $0,1
+div $0,42

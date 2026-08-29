@@ -13,10 +13,8 @@ mov $1,$2
 bin $1,2
 sub $0,$1
 sub $0,1
-sub $2,$0
 lpb $2
-  sub $2,1
-  div $2,2
+  div $2,106
   mov $4,$1
   add $4,$0
   add $4,1

@@ -1,26 +1,24 @@
 ; A038259: Triangle whose (i,j)-th entry is binomial(i,j)*6^(i-j)*5^j.
 ; Submitted by loader3229
 ; 1,6,5,36,60,25,216,540,450,125,1296,4320,5400,3000,625,7776,32400,54000,45000,18750,3125,46656,233280,486000,540000,337500,112500,15625,279936,1632960,4082400,5670000,4725000,2362500,656250,78125,1679616,11197440,32659200,54432000,56700000,37800000,15750000,3750000,390625,10077696,75582720,251942400,489888000,612360000,510300000,283500000,101250000,21093750,1953125,60466176,503884800,1889568000,4199040000,6123600000,6123600000,4252500000,2025000000,632812500,117187500,9765625,362797056
-; Formula: a(n) = truncate(5^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(6^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)*if((-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)<=(-1),0,5^(-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n))*if((-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,6^(-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2)))
 
+mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
+mul $0,8
+nrt $0,2
 sub $0,1
-mov $2,$1
-sub $2,$0
-bin $1,$0
-mov $3,5
-pow $3,$0
-mov $0,6
-pow $0,$2
-mul $1,$3
-mul $1,$0
-mov $0,$1
+div $0,2
+mov $3,$0
+fac $3,2
+div $3,2
+sub $2,$3
+mov $4,5
+pow $4,$2
+mov $1,$0
+sub $1,$2
+mov $5,6
+pow $5,$1
+bin $0,$2
+mul $0,$4
+mul $0,$5

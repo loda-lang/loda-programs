@@ -1,5 +1,5 @@
 ; A134141: Generalized unsigned Stirling1 triangle, S1p(7).
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by loader3229
 ; 1,7,1,56,21,1,504,371,42,1,5040,6440,1295,70,1,55440,114520,36225,3325,105,1,665280,2116800,983920,135975,7105,147,1,8648640,40884480,26714800,5199145,398860,13426,196,1,121080960,826338240,735469280
 
 #offset 1
@@ -19,8 +19,7 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  add $4,1
-  seq $4,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.
+  seq $4,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
   add $3,1
   mov $5,$3
   bin $5,2
@@ -65,7 +64,6 @@ lpb $2
   mul $5,$8
   mul $5,$7
   mul $4,$5
-  mul $6,-1
   add $6,$4
 lpe
 mov $0,$6

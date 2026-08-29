@@ -1,12 +1,10 @@
 ; A259080: Expressed in base n, the number (n+1)^n.
-; Submitted by Science United
+; Submitted by Conan
 ; 1001,2101,21301,222101,2304401,23553101,244153501,2520607101,25937424601,267120945101
 
 #offset 2
 
-sub $0,1
-mov $2,1
-add $2,$0
+mov $2,$0
 mov $3,1
 mov $0,0
 mov $1,1

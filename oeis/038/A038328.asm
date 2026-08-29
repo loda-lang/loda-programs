@@ -1,33 +1,24 @@
 ; A038328: Triangle whose (i,j)-th entry is binomial(i,j)*12^(i-j)*2^j.
 ; Submitted by loader3229
 ; 1,12,2,144,48,4,1728,864,144,8,20736,13824,3456,384,16,248832,207360,69120,11520,960,32,2985984,2985984,1244160,276480,34560,2304,64,35831808,41803776,20901888,5806080,967680,96768,5376,128,429981696,573308928,334430208,111476736,23224320,3096576,258048,12288,256,5159780352,7739670528,5159780352,2006581248,501645312,83607552,9289728,663552,27648,512,61917364224,103195607040,77396705280,34398535680,10032906240,2006581248,278691840,26542080,1658880,61440,1024,743008370688,1362182012928
-; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*2^floor((sqrtint(8*n+1)-1)/2)*if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,6^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)*if((-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)<=(-1),0,2^(-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n))*if((-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,12^(-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2)))
 
+mov $2,$0
+add $0,1
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $3,$0
+fac $3,2
+div $3,2
+sub $2,$3
+mov $4,2
+pow $4,$2
 mov $1,$0
-mul $1,8
-add $1,1
-nrt $1,2
-sub $1,1
-div $1,2
-mov $4,$0
-add $4,1
-mov $5,$4
-mul $5,8
-nrt $5,2
-sub $5,1
-div $5,2
-mov $3,$5
-add $3,1
-bin $3,2
-sub $4,$3
-sub $4,1
-mov $3,$5
-sub $3,$4
-bin $5,$4
-mov $2,2
-pow $2,$1
-mov $4,6
-pow $4,$3
-mul $4,$5
-mul $4,$2
-mov $0,$4
+sub $1,$2
+mov $5,12
+pow $5,$1
+bin $0,$2
+mul $0,$4
+mul $0,$5

@@ -1,15 +1,11 @@
 ; A217585: Number of triangles with endpoints of the form (x,x^2), x in {-n,...,n}, having at least one angle of 45 degrees.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,5,11,15,19,23,27,31,35,39,43,47,51,55,59,63,67,71,75,79,83,87,91,95,99,103,107,111,115,119,123,127,131,135,139,143,147,151,155,159,163,167,171,175,179,183,187,191,195,199,203,207,211,215,219,223,227,231,235,239,243,247
-; Formula: a(n) = max(if(((8*n-2)%2)==0,(8*n-2)/2,8*n-2)-2*binomial(2,2*n-2),0)
+; Formula: a(n) = max(n*min(n+1,4),1)-1
 
 mov $1,$0
-mul $0,8
-sub $0,2
-dif $0,2
-sub $1,1
-mul $1,2
-mov $2,2
-bin $2,$1
-mul $2,2
-trn $0,$2
+add $0,1
+min $0,4
+mul $0,$1
+max $0,1
+sub $0,1

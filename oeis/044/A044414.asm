@@ -1,31 +1,26 @@
 ; A044414: Numbers n such that string 8,2 occurs in the base 10 representation of n but not of n-1.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 82,182,282,382,482,582,682,782,820,882,982,1082,1182,1282,1382,1482,1582,1682,1782,1820,1882,1982,2082,2182,2282,2382,2482,2582,2682,2782,2820,2882,2982,3082,3182,3282,3382,3482,3582
-; Formula: a(n) = 6*truncate((5*floor((56*floor((10*n+19)/11)+44*floor((10*n+31)/11)+152)/5)-90)/2)-20*truncate((2*truncate((5*floor((56*floor((10*n+19)/11)+44*floor((10*n+31)/11)+152)/5)-90)/2))/10)-230
+; Formula: a(n) = floor((50*floor((21*floor((bitor(10*n,1)+7)/11)+15*floor((bitor(10*n,1)+8)/11))/2))/9)-18
 
 #offset 1
 
 mul $0,10
-add $0,22
-mov $2,$0
-add $0,9
-div $0,11
-mul $0,22
-sub $2,3
-div $2,11
-add $2,3
-mul $2,14
-add $0,$2
-add $0,$2
-sub $0,8
-mul $0,2
-div $0,5
-sub $0,18
-mul $0,5
-div $0,2
-mul $0,2
+bor $0,1
 mov $1,$0
-mod $0,10
-mul $0,2
-sub $0,230
+add $0,7
+div $0,11
+mul $0,7
+add $1,8
+div $1,11
+mul $1,5
 add $0,$1
+mul $0,3
+div $0,2
+mov $1,$0
+add $1,$0
+add $0,$1
+add $0,$1
+mul $0,10
+div $0,9
+sub $0,18

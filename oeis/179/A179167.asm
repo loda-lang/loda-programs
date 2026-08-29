@@ -1,18 +1,20 @@
-; A179167: Place a(n) red and b(n) blue balls in an urn; draw 3 balls without replacement; Probability(3 red balls) = Probability(1 red and 2 blue balls); binomial(a(n),3) = binomial(a(n),1)*binomial(b(n),2).
-; Submitted by Ulf
-; 3,4,11,37,134,496,1847,6889,25706,95932,358019,1336141,4986542,18610024,69453551,259204177,967363154,3610248436,13473630587,50284273909,187663465046,700369586272,2613814880039,9754889933881
-; Formula: a(n) = max(b(n-1)-1,0)+3, b(n) = 2*b(n-1)-3*c(n-1)+2, b(1) = 2, b(0) = 0, c(n) = 2*c(n-1)-b(n-1)-1, c(1) = -1, c(0) = 0
+; A179167: a(n) is the number of red balls in an urn such that if the urn contains b(n)=A101265(n) blue balls, the probability of drawing 3 red balls without replacement is the same as drawing 1 red and 2 blue balls without replacement; that is, binomial(a(n),3) = binomial(a(n),1) * binomial(b(n),2).
+; Submitted by Fiskinge
+; 3,4,11,37,134,496,1847,6889,25706,95932,358019,1336141,4986542,18610024,69453551,259204177,967363154,3610248436,13473630587,50284273909,187663465046,700369586272,2613814880039,9754889933881,36405744855482,135868089488044,507066613096691,1892398362898717,7062526838498174,26357708991093976,98368309125877727,367115527512416929,1370093800923789986,5113259676182743012,19082944903807182059,71218519939045985221,265791134852376758822,991946019470461050064,3701992943029467441431,13816025752647408715657
+; Formula: a(n) = truncate((b(n-1)-2)/2)+3, b(n) = 3*c(n-1)+2*b(n-1), b(1) = 5, b(0) = 1, c(n) = 2*c(n-1)+b(n-1), c(1) = 3, c(0) = 1
 
 #offset 1
 
+mov $1,1
+mov $2,1
 sub $0,1
 lpb $0
   sub $0,1
-  add $1,1
-  sub $1,$2
-  sub $2,$1
-  sub $1,$2
+  add $1,$2
+  add $2,$1
+  add $1,$2
 lpe
-trn $1,1
 mov $0,$1
+sub $0,2
+div $0,2
 add $0,3

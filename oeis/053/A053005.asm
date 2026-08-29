@@ -1,7 +1,6 @@
-; A053005: Denominator of beta(2n+1)/Pi^(2n+1), where beta(m) = Sum_{k=0..inf} (-1)^k/(2k+1)^m.
+; A053005: Denominator of beta(2n+1)/Pi^(2n+1), where beta(m) = Sum_{k>=0} (-1)^k/(2k+1)^m.
 ; Submitted by davidtgx
 ; 4,32,1536,184320,8257536,14863564800,1569592442880,5713316492083200,1096956766479974400,6713375410857443328000,408173224980132554342400,18857602994082124010618880000,640578267860512766391484416000,108257727268426657520160866304000000,3446014392207602235168067996876800000,1139252358063833298946563279767470080000000,53182980668203418002587801107262603264000000,20288243465306239899627194366398537893150720000000,1573119185617591524524939378563825092022763520000000
-; Formula: a(n) = 4*truncate(A190901(2*n)/gcd(A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)),A190901(2*n)))
 
 mov $2,$0
 add $2,$0
@@ -21,8 +20,6 @@ nrt $2,2
 div $2,2
 mov $3,$6
 add $3,$2
-mov $2,$3
-add $2,1
 mov $4,$3
 add $4,2
 mov $7,$4
@@ -33,16 +30,10 @@ div $7,2
 mov $8,$7
 add $8,1
 bin $8,2
-sub $4,$8
 sub $4,1
-mov $9,$7
-mod $9,2
-sub $7,$4
-mul $7,$9
-mul $9,$4
-sub $4,$9
-add $4,$7
-add $4,$2
+sub $4,$8
+add $4,$3
+mov $2,$3
 add $2,1
 mov $5,$2
 mul $5,8
@@ -53,20 +44,19 @@ sub $2,$5
 sub $4,$2
 mov $2,$4
 add $2,1
-mov $10,$2
-mul $10,8
-nrt $10,2
-sub $10,1
-div $10,2
-add $10,1
-pow $10,2
-sub $10,$2
-mov $2,$10
+mov $9,$2
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+add $9,1
+pow $9,2
+sub $9,$2
+mov $2,$9
 seq $2,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
-mov $1,$0
-mov $1,$2
 mul $0,2
 seq $0,190901 ; a(n) = Product_{k in M_n} k; M_n = {k | 1 <= k <= 2n and k mod 2 = n mod 2}.
+mov $1,$2
 gcd $1,$0
 div $0,$1
 mul $0,4

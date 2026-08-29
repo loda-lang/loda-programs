@@ -1,7 +1,7 @@
 ; A335445: Maximum number of rooks within an n X n chessboard, where each rook has a path to an edge.
 ; Submitted by BrandyNOW
 ; 1,4,8,13,21,28,37,50
-; Formula: a(n) = truncate(((n-1)*(truncate((17*n-17)/13)+5)+2)/2)
+; Formula: a(n) = floor(((n-1)*(floor((17*n-17)/13)+5)+2)/2)
 
 #offset 1
 

@@ -8,6 +8,7 @@ sub $0,1
 mov $4,$0
 lpb $0
   sub $0,1
+  min $0,6
   mov $3,$4
   bin $3,2
   pow $3,2

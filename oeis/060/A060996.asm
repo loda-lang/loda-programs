@@ -1,20 +1,45 @@
 ; A060996: Stirling2 transform of [2,3,3,3,3,3,3,3,...].
-; Submitted by yasiwo
+; Submitted by Science United
 ; 2,5,14,44,155,608,2630,12419,63440,347924,2035709,12640790,82933310,572697965,4148875634,31440426440,248594609411,2046230418476,17498226615170,155172474706115,1424609448470252,13520147215341968,132456017565253037
 
 add $0,1
+mov $9,400
+mov $12,1
+mov $7,1
+fac $7,$0
 mov $1,$0
+add $1,1
 lpb $1
+  sub $1,1
+  mov $3,$2
+  pow $3,$0
+  mov $4,$0
+  bin $4,$2
+  mul $12,-1
+  mul $14,$2
+  add $14,$3
+  mov $10,$14
+  div $10,$7
+  mul $8,$2
+  add $8,$10
+  mod $14,$7
   add $2,1
-  sub $1,$2
-  mov $2,$0
-  mov $3,$0
-  bin $3,2
-  add $3,$0
-  seq $3,11971 ; Aitken's array: triangle of numbers {a(n,k), n >= 0, 0 <= k <= n} read by rows, defined by a(0,0)=1, a(n,0) = a(n-1,n-1), a(n,k) = a(n,k-1) + a(n-1,k-1).
+  mov $6,$4
+  mul $6,$14
+  mul $6,$12
+  mov $5,$4
+  mul $5,$8
+  mul $5,$12
+  add $11,$6
+  add $13,$5
 lpe
-mov $0,$3
-mul $0,895671264
-sub $0,895671264
-div $0,298557088
+mul $13,$12
+mul $11,$12
+div $11,$7
+add $11,$13
+mul $9,$11
+mov $0,$9
+sub $0,400
+div $0,400
+mul $0,3
 add $0,2
