@@ -18,5 +18,6 @@ lpb $2
   add $1,1
   seq $1,186366 ; Triangle read by rows: T(n,k) is the number of cycle-up-down permutations of {1,2,...,n} having k cycles (1<=k<=n).
   mov $2,0
+  div $3,2
 lpe
 mov $0,$1

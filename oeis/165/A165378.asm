@@ -1,6 +1,7 @@
 ; A165378: Number of slanted n X 4 (i=1..n) X (j=i..4+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, 4 in the lower right corner, and with no element having more than 2 neighbors with the same value.
 ; Submitted by loader3229
 ; 33,94,158,243,346,467,606,763,938,1131,1342,1571,1818,2083,2366,2667,2986,3323,3678,4051,4442,4851,5278,5723,6186,6667,7166,7683,8218,8771,9342,9931,10538,11163,11806,12467,13146,13843,14558,15291,16042,16811,17598,18403,19226,20067,20926,21803,22698,23611,24542,25491,26458,27443,28446,29467,30506,31563,32638,33731,34842,35971,37118,38283,39466,40667,41886,43123,44378,45651,46942,48251,49578,50923,52286,53667,55066,56483,57918,59371
+; Formula: a(n) = b(n-2), b(n) = 3*b(n-1)-3*b(n-2)+b(n-3), b(9) = 1131, b(8) = 938, b(7) = 763, b(6) = 606, b(5) = 467, b(4) = 346, b(3) = 243, b(2) = 158, b(1) = 94, b(0) = 33
 
 #offset 2
 
@@ -11,7 +12,7 @@ mov $4,243
 mov $5,346
 sub $0,2
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,5
   mov $6,$3
   mul $6,-3

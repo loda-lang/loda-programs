@@ -1,7 +1,8 @@
 ; A111432: Fibonacci(tetranacci(n)).
-; Submitted by KetamiNO [YouTube]
+; Submitted by Science United
 ; 0,0,0,1,1,1,3,21,610,514229,225851433717,16641027750620563662096,13180872826374098837632191485015125807374171,284812298108489611757988937681460995615380088782304890986477195645969271404032323901
-; Formula: a(n) = A147316(A000078(n))
+; Formula: a(n) = A147316(A000078(min(n,13)))
 
+min $0,13
 seq $0,78 ; Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) for n >= 4 with a(0) = a(1) = a(2) = 0 and a(3) = 1.
 seq $0,147316 ; Fibonacci numbers (A000045) starting at offset -20.

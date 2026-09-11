@@ -1,17 +1,15 @@
 ; A276882: Sums-complement of the Beatty sequence for 2 + sqrt(2).
-; Submitted by LCB001
+; Submitted by loader3229
 ; 1,2,5,8,9,12,15,16,19,22,25,26,29,32,33,36,39,42,43,46,49,50,53,56,57,60,63,66,67,70,73,74,77,80,83,84,87,90,91,94,97,98,101,104,107,108,111,114,115,118,121,124,125,128,131,132,135,138,141,142,145
-; Formula: a(n) = 2*truncate(sqrtint(8*(n-1)^2)/4)+max(0,n-1)+1
+; Formula: a(n) = bitor(sqrtint((n-1)*(2*n-2)),1)+n-1
 
 #offset 1
 
 sub $0,1
-max $1,$0
-pow $0,2
-mul $0,8
-nrt $0,2
-div $0,4
-mul $0,2
+mov $1,$0
+mul $1,2
+mul $1,$0
+nrt $1,2
+bor $1,1
 add $1,$0
 mov $0,$1
-add $0,1

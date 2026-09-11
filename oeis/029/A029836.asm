@@ -1,14 +1,14 @@
 ; A029836: log( n-th prime) rounded to nearest integer.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,1,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+; Formula: a(n) = logint(-4*binomial(-n,3)+4,10)+1
 
-pow $0,2
-mul $0,2
-div $0,7
-lpb $0
-  sub $0,1
-  div $0,5
-  add $1,1
-lpe
+sub $2,$0
+bin $2,3
+mov $1,2
+sub $1,$2
+sub $1,$2
+mul $1,2
+log $1,10
 mov $0,$1
 add $0,1

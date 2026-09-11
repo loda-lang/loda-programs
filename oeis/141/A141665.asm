@@ -1,40 +1,25 @@
 ; A141665: A signed half of Pascal's triangle A007318: p(x,n) = (1+I*x)^n; t(n,m) = real part of coefficients(p(x,n)).
 ; Submitted by loader3229
 ; 1,1,0,1,0,-1,1,0,-3,0,1,0,-6,0,1,1,0,-10,0,5,0,1,0,-15,0,15,0,-1,1,0,-21,0,35,0,-7,0,1,0,-28,0,70,0,-28,0,1,1,0,-36,0,126,0,-84,0,9,0,1,0,-45,0,210,0,-210,0,45,0,-1,1,0,-55,0,330,0,-462,0,165,0,-11,0,1,0
+; Formula: a(n) = truncate(binomial(bitor(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n,-2),if(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)%2)==0,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))/(if(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)%2)==0,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+1))*binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
+add $0,1
 mov $1,$0
 mul $1,8
-add $1,1
 nrt $1,2
 sub $1,1
 div $1,2
 mov $3,$1
 add $3,1
-div $3,2
+bin $3,2
+sub $0,$3
+sub $0,1
+bin $1,$0
 mov $2,$0
-sub $2,$3
-ban $2,1
-mov $4,$0
-add $4,1
-mov $6,$4
-mul $6,8
-nrt $6,2
-sub $6,1
-div $6,2
-mov $7,$6
-add $7,1
-bin $7,2
-sub $4,$7
-sub $4,1
-bin $6,$4
-leq $7,2
-sub $7,$4
-bin $7,2
-sub $5,$2
-bor $5,3
-div $5,2
-mov $4,-1
-pow $4,$7
-mul $4,$6
-mul $4,$5
-mov $0,$4
+dif $2,2
+bor $0,-2
+bin $0,$2
+add $2,1
+div $0,$2
+mul $1,$0
+mov $0,$1

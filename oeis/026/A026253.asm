@@ -19,9 +19,7 @@ lpb $0
   add $4,1
   pow $4,2
   mul $4,2
-  mov $8,$4
-  nrt $8,2
-  mov $4,$8
+  nrt $4,2
   add $4,1
   add $4,$7
   mod $4,2

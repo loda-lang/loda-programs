@@ -1,23 +1,21 @@
 ; A134319: Triangle read by rows. T(n, k) = binomial(n, k)*(2^k - 1 + 0^k).
 ; Submitted by loader3229
 ; 1,1,1,1,2,3,1,3,9,7,1,4,18,28,15,1,5,30,70,75,31,1,6,45,140,225,186,63,1,7,63,245,525,651,441,127,1,8,84,392,1050,1736,1764,1016,255,1,9,108,588,1890,3906,5292,4572,2295,511,1,10,135,840,3150,7812,13230,15240,11475,5110,1023,1,11,165,1155,4950,14322,29106,41910,42075,28105,11253,2047,1,12
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(max(truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)),2)-1)
+; Formula: a(n) = bitor(max(if((-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)<=(-1),0,2^(-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n))-2,0),1)*binomial(floor((sqrtint(8*n+8)-1)/2),-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)
 
-add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $3,$1
-add $3,1
-bin $3,2
-sub $0,$3
-sub $0,1
-bin $1,$0
 mov $2,$0
-mov $0,2
-pow $0,$2
-max $0,2
+add $0,1
+mul $0,8
+nrt $0,2
 sub $0,1
+div $0,2
+mov $3,$0
+fac $3,2
+div $3,2
+sub $2,$3
+mov $1,2
+pow $1,$2
+trn $1,2
+bor $1,1
+bin $0,$2
 mul $0,$1

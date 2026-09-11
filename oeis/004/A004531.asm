@@ -1,5 +1,5 @@
 ; A004531: Number of integer solutions to x^2 + 4 * y^2 = n.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,2,0,0,4,4,0,0,4,2,0,0,0,4,0,0,4,4,0,0,8,0,0,0,0,6,0,0,0,4,0,0,4,0,0,0,4,4,0,0,8,4,0,0,0,4,0,0,0,2,0,0,8,4,0,0,0,0,0,0,0,4,0,0,4,8,0,0,8,0,0,0,4,4,0,0,0,0,0,0
 
 mov $1,$0
@@ -11,9 +11,9 @@ mov $4,$0
 add $4,1
 mov $13,$4
 lex $13,2
-mov $14,2
-pow $14,$13
-div $4,$14
+mov $11,2
+pow $11,$13
+div $4,$11
 div $4,2
 mov $5,-1
 pow $5,$4
@@ -33,9 +33,7 @@ lpb $4
   mov $12,$8
   nrt $12,2
   add $8,2
-  mov $11,$8
-  nrt $11,2
-  mov $8,$11
+  nrt $8,2
   add $8,$12
   mod $8,2
   mov $9,2

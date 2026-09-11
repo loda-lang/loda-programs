@@ -1,19 +1,37 @@
 ; A034807: Triangle T(n,k) of coefficients of Lucas (or Cardan) polynomials.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,1,1,2,1,3,1,4,2,1,5,5,1,6,9,2,1,7,14,7,1,8,20,16,2,1,9,27,30,9,1,10,35,50,25,2,1,11,44,77,55,11,1,12,54,112,105,36,2,1,13,65,156,182,91,13,1,14,77,210,294,196,49,2,1,15,90,275,450,378,140,15,1,16,104,352,660,672,336,64
 
-lpb $0
-  add $2,1
-  sub $0,$2
-  add $1,1
-  mov $2,$1
-  div $2,2
-lpe
-sub $1,$0
-mov $2,$1
-bin $1,$0
+add $0,1
+mov $2,$0
+mul $0,4
+nrt $0,2
+mov $1,$0
+pow $1,2
+div $1,4
+sub $2,$1
+mov $1,$2
+mov $2,$0
+sub $2,$1
+bin $2,2
+add $2,$0
+mov $4,$2
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $6,$4
+add $6,1
+bin $6,2
+mov $3,$4
+sub $3,1
+mov $0,$2
+sub $0,$6
 sub $0,1
-sub $2,1
-bin $2,$0
-add $1,$2
-mov $0,$1
+mul $0,-1
+add $0,$4
+bin $3,$0
+mov $5,$4
+bin $5,$0
+add $5,$3
+mov $0,$5

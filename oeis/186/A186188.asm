@@ -1,17 +1,13 @@
 ; A186188: Least k such that A156077^(k)(n)=1 where a^(k)=a(a^(k-1)).
-; Submitted by WyerByter
+; Submitted by loader3229
 ; 1,1,1,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+; Formula: a(n) = max(logint(floor((13*n)/11),2),1)
 
 #offset 1
 
-mov $2,3
-sub $0,1
-lpb $0
-  max $0,$2
-  sub $0,$1
-  sub $0,1
-  add $1,1
-  mul $2,2
-lpe
-add $1,1
+mov $1,$0
+mul $1,13
+div $1,11
+log $1,2
+max $1,1
 mov $0,$1

@@ -1,7 +1,9 @@
 ; A225699: Numerators of coefficients arising from q-expansion of Integrate[eta[q^4]^8/eta[q^2]^4, q]/q where eta is the Dedekind eta function.
-; Submitted by Simon Strandgaard
+; Submitted by HansCCT
 ; 1,1,1,1,13,1,1,3,1,1,16,1,31,10,1,1,24,4,1,7,1,1,39,1,57,18,1,9,40,1,1,13,14,1,48,1,1,31,16,1,121,1,54,15,1,28,64,5,1,39,1,1,96
+; Formula: a(n) = if((A000203(2*min(n,87)+1)%gcd(2*min(n,87)+2,A000203(2*min(n,87)+1)))==0,A000203(2*min(n,87)+1)/gcd(2*min(n,87)+2,A000203(2*min(n,87)+1)),A000203(2*min(n,87)+1))
 
+min $0,87
 mul $0,2
 mov $1,$0
 add $0,1

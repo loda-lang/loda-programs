@@ -10,11 +10,10 @@ mul $1,8
 nrt $1,2
 add $1,1
 div $1,2
-mov $3,$1
-bin $3,2
-sub $0,$3
 mov $2,$1
-add $2,1
-ban $2,$0
-dgs $2,2
-mov $0,$2
+bin $2,2
+sub $0,$2
+add $1,1
+ban $1,$0
+dgs $1,2
+mov $0,$1

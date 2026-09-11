@@ -1,27 +1,21 @@
 ; A278545: Number of neighbors of the n-th term in a full square array read by antidiagonals.
-; Submitted by mmonnin
+; Submitted by loader3229
 ; 3,5,5,5,8,5,5,8,8,5,5,8,8,8,5,5,8,8,8,8,5,5,8,8,8,8,8,5,5,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,8,8,5,5,8,8,8,8,8,8,8,8,8,8,5,5,8
-; Formula: a(n) = (min(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1,1)+2)*(min(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1,1)+2)-1
+; Formula: a(n) = floor(((floor((2*n)/(binomial(floor((sqrtint(8*n+1)+1)/2),2)+2))+1)*(floor((2*n)/(binomial(floor((sqrtint(8*n+1)+1)/2),2)+2))+2))/2)+2
 
 #offset 1
 
 mov $1,$0
 mul $1,8
+add $1,1
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
-mov $2,$1
-sub $2,$0
-min $0,1
-mov $3,$0
-add $3,2
-min $2,1
-add $2,2
-mul $3,$2
-mov $0,$3
-sub $0,1
+bin $1,2
+add $1,2
+mul $0,2
+div $0,$1
+add $0,1
+fac $0,2
+div $0,2
+add $0,2

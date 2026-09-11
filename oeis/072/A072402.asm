@@ -12,9 +12,11 @@ add $3,$0
 add $3,$2
 lpb $2
   sub $2,1
+  add $4,29
   mov $0,$3
   sub $0,$2
   seq $0,92082 ; Triangle of numbers related to triangle A092083; generalization of Stirling numbers of second kind A008277, Lah-numbers A008297, ...
   add $1,$0
+  mod $2,$4
 lpe
 mov $0,$1

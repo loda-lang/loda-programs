@@ -1,12 +1,16 @@
 ; A008648: Molien series of 3 X 3 upper triangular matrices over GF( 5 ).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,7,7,7,7,7,9,9,9,9,9,11,11,11,11,11,13,13,13,13,13,15,15,15,15,15,18,18,18,18,18,21,21,21,21,21,24,24,24,24,24,27,27,27,27,27,30,30,30,30,30,34,34,34,34,34
+; Formula: a(n) = truncate((-2*(n+10)*(n%5)+(n+15)*(n+20))/250)
 
-div $0,5
-mov $1,1
-add $1,$0
-lpb $1
-  add $2,$1
-  trn $1,5
-lpe
-mov $0,$2
+mov $1,$0
+mod $1,5
+add $0,10
+mul $1,$0
+mul $1,2
+mov $2,$0
+add $2,10
+add $0,5
+mul $0,$2
+sub $0,$1
+div $0,250

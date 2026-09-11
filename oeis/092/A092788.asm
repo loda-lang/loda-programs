@@ -1,16 +1,13 @@
 ; A092788: USUP perfect numbers.
+; Submitted by loader3229
 ; 1,1,1,1,1,2,2,1,2,1,2,2,2,2,2,2
-; Formula: a(n) = gcd(max(-truncate((2*truncate(((n-1)^2-1)/12))/3)+5,0),2)
+; Formula: a(n) = (sumdigits(2^n,14)>=11)+1
 
 #offset 1
 
-sub $0,1
-pow $0,2
-sub $0,1
-div $0,12
-mul $0,2
-div $0,3
-mov $1,5
-trn $1,$0
-gcd $1,2
+mov $1,2
+pow $1,$0
+dgs $1,14
+geq $1,11
 mov $0,$1
+add $0,1

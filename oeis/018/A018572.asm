@@ -1,22 +1,22 @@
 ; A018572: Divisors of 651.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,7,21,31,93,217,651
+; Formula: a(n) = (8*max((n-1)%4-2,0)+2*binomial((n-1)%4+1,2)+1)*31^floor((n-1)/4)
 
 #offset 1
 
-mov $1,1
-mov $2,2
 sub $0,1
-lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$1
-  mul $3,$2
-  div $0,2
-  add $1,$3
-  nrt $2,10
-  add $2,$4
-  mul $2,6
-  mov $4,4
-lpe
+mov $1,$0
+mod $1,4
+add $1,1
+div $0,4
+mov $2,31
+pow $2,$0
 mov $0,$1
+bin $1,2
+trn $0,3
+mul $0,8
+add $0,$1
+add $0,$1
+add $0,1
+mul $0,$2

@@ -11,27 +11,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  mov $8,$3
-  seq $8,40 ; The prime numbers.
-  div $8,2
-  mov $3,$8
-  mul $3,2
-  add $3,1
-  seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $3,1
-  mov $5,$3
   mov $6,$3
-  add $6,1
-  mul $6,2
-  mov $7,$6
-  sub $7,1
-  bxo $6,$7
-  add $6,1
+  seq $6,40 ; The prime numbers.
   div $6,2
-  log $6,2
+  mov $3,$6
+  mul $3,2
+  mov $5,$3
   add $3,1
   seq $3,35210 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 28.
-  mul $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

@@ -1,10 +1,9 @@
 ; A005862: The coding-theoretic function A(n,14,10).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,1,1,1,1,2,2,2,2,3,4,4,5,6,8,9,11
 
 #offset 10
 
-mov $1,0
 mov $3,3
 sub $0,7
 lpb $0

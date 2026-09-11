@@ -1,15 +1,12 @@
 ; A093001: Least k such that Sum_{r=n+1..k} r is greater than or equal to the sum of the first n positive integers (i.e., the n-th triangular number, A000217(n)). Or, least k such that (sum of first n positive integers) <= (sum of numbers from n+1 up to k).
+; Submitted by loader3229
 ; 2,3,5,6,8,9,11,12,13,15,16,18,19,20,22,23,25,26,28,29,30,32,33,35,36,37,39,40,42,43,45,46,47,49,50,52,53,54,56,57,59,60,62,63,64,66,67,69,70,71,73,74,76,77,78,80,81,83,84,86,87,88,90,91,93,94,95,97,98,100,101
+; Formula: a(n) = floor((sqrtint(8*n*(n+1))+1)/2)
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mul $0,2
-pow $1,2
-lpb $1
-  sub $1,$0
-  trn $1,1
-  sub $0,1
-lpe
-add $0,2
+fac $0,2
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2

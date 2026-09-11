@@ -1,20 +1,19 @@
 ; A046143: Triangle T(n, k) = gcd(2^n-1, 2^k-1), for n>=1 and 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,1,3,1,1,7,1,3,1,15,1,1,1,1,31,1,3,7,3,1,63,1,1,1,1,1,1,127,1,3,1,15,1,3,1,255,1,1,7,1,1,7,1,1,511,1,3,1,3,31,3,1,3,1,1023,1,1,1,1,1,1,1,1,1,1,2047,1,3,7,15,1,63,1,15,7,3,1,4095,1,1
-; Formula: a(n) = 2^gcd(-binomial(floor((sqrtint(8*n)+1)/2),2)+n,floor((sqrtint(8*n)+1)/2))-1
+; Formula: a(n) = 2^gcd(floor((sqrtint(8*n)+1)/2),-binomial(floor((sqrtint(8*n)+1)/2),2)+n)-1
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-nrt $1,2
-add $1,1
-div $1,2
-mov $2,$1
-bin $2,2
-sub $0,$2
-gcd $0,$1
-mov $3,2
-pow $3,$0
-mov $0,$3
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+gcd $2,$0
+mov $0,2
+pow $0,$2
 sub $0,1

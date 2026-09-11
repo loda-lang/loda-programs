@@ -1,18 +1,15 @@
 ; A061434: a(n) is the smallest n-digit cube.
-; Submitted by [Trident Mindset] Timothy Ray Green
+; Submitted by loader3229
 ; 1,27,125,1000,10648,103823,1000000,10077696,100544625,1000000000,10007873875,100026577288,1000000000000,10000909453625,100000721719296,1000000000000000,10000073940248384,100000075387171679,1000000000000000000,10000004316234262875
-; Formula: a(n) = (sqrtnint(10^(n-1)-1,3)+1)^3
+; Formula: a(n) = (sqrtnint(10^bitor(0,n-1)-1,3)+1)^3
 
 #offset 1
 
 sub $0,1
-mov $1,10
-pow $1,$0
-sub $1,1
-mov $0,$1
+bor $1,$0
+mov $0,10
+pow $0,$1
+sub $0,1
 nrt $0,3
 add $0,1
-mov $1,$0
-mul $1,$0
-mul $1,$0
-mov $0,$1
+pow $0,3

@@ -1,6 +1,7 @@
 ; A052453: Number of nonisomorphic (3,n) cage graphs.
 ; Submitted by fzs600
 ; 1,1,1,1,1,1,18,3,1,1
+; Formula: a(n) = max(0,truncate(34/((n-3)*if(((n-3)%8)==0,(n-3)/8,n-3)-34)))+1
 
 #offset 3
 

@@ -26,6 +26,7 @@ lpb $2
   seq $6,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   add $5,$0
   add $5,1
+  equ $0,3
   mov $3,$5
   mul $5,8
   nrt $5,2

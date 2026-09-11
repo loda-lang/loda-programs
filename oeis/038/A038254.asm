@@ -1,25 +1,24 @@
 ; A038254: Triangle whose (i,j)-th entry is binomial(i,j)*5^(i-j)*12^j.
-; Submitted by loader3229
+; Submitted by [BOINCstats] CRNabein
 ; 1,5,12,25,120,144,125,900,2160,1728,625,6000,21600,34560,20736,3125,37500,180000,432000,518400,248832,15625,225000,1350000,4320000,7776000,7464960,2985984,78125,1312500,9450000,37800000,90720000
-; Formula: a(n) = truncate(5^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*truncate(12^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)*if((-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n)<=(-1),0,12^(-floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+n))*if((-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,5^(-n+floor((floor((sqrtint(8*n+8)-1)/2)*(floor((sqrtint(8*n+8)-1)/2)+1))/2)+floor((sqrtint(8*n+8)-1)/2)))
 
+mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
+mul $0,8
+nrt $0,2
 sub $0,1
-mov $2,$1
-sub $2,$0
-mov $3,12
-pow $3,$0
-bin $1,$0
-mul $1,$3
-mov $0,5
-pow $0,$2
-mul $0,$1
+div $0,2
+mov $3,$0
+fac $3,2
+div $3,2
+sub $2,$3
+mov $4,12
+pow $4,$2
+mov $1,$0
+sub $1,$2
+mov $5,5
+pow $5,$1
+bin $0,$2
+mul $0,$4
+mul $0,$5

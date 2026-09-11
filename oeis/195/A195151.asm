@@ -16,8 +16,7 @@ sub $0,1
 mov $2,$1
 sub $2,$0
 mov $1,$0
-mov $0,2
-mul $0,$2
+mov $0,$2
 add $2,1
 mod $2,2
 pow $1,$2
@@ -25,4 +24,3 @@ add $2,1
 div $0,$2
 mul $1,$0
 mov $0,$1
-div $0,2

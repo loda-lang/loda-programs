@@ -1,17 +1,14 @@
 ; A004547: Expansion of sqrt(3) in base 2.
-; Submitted by Josemi
+; Submitted by loader3229
 ; 1,1,0,1,1,1,0,1,1,0,1,1,0,0,1,1,1,1,0,1,0,1,1,1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,1,0,1,0,1,0,0,1,1,1,0,0,1,1,1,0,1,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,0
-; Formula: a(n) = sqrtint(floor((6*2^(2*n-2))/2))%2
+; Formula: a(n) = floor(sqrtint(3*4^n)/2)%2
 
 #offset 1
 
-sub $0,1
-mul $0,2
-mov $1,2
+mov $1,4
 pow $1,$0
+mul $1,3
+nrt $1,2
 mov $0,$1
-mul $0,7
-sub $0,$1
 div $0,2
-nrt $0,2
 mod $0,2

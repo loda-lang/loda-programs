@@ -6,11 +6,7 @@
 #offset 1
 
 mov $1,$0
-sub $1,2
-mov $2,$1
-geq $0,2
-sub $0,1
-add $1,1
+sub $1,1
 mul $1,8
 nrt $1,2
 sub $1,1
@@ -18,11 +14,14 @@ div $1,2
 mov $5,$1
 add $5,1
 bin $5,2
+mov $2,$0
 sub $2,$5
-sub $2,1
+sub $2,3
 mov $3,10
 pow $3,$1
 mov $4,10
 pow $4,$2
+geq $0,2
+sub $0,1
 add $0,$3
 add $0,$4

@@ -1,16 +1,12 @@
 ; A268173: a(n) = Sum_{k=0..n} (-1)^k*floor(sqrt(k)).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,-1,0,-1,1,-1,1,-1,1,-2,1,-2,1,-2,1,-2,2,-2,2,-2,2,-2,2,-2,2,-3,2,-3,2,-3,2,-3,2,-3,2,-3,3,-3,3,-3,3,-3,3,-3,3,-3,3,-3,3,-4,3,-4,3,-4,3,-4,3,-4,3,-4,3,-4,3,-4,4,-4,4,-4,4,-4,4,-4,4,-4,4,-4,4,-4,4,-4
+; Formula: a(n) = truncate(bitxor(sqrtint(n),binomial(-1,n))/2)
 
+mov $2,-1
+bin $2,$0
 mov $1,$0
-mod $1,2
-mov $2,1
-lpb $0
-  add $2,2
-  trn $0,$2
-lpe
-div $2,2
-mul $1,$2
-mov $0,$2
-div $0,2
-sub $0,$1
+nrt $1,2
+bxo $1,$2
+div $1,2
+mov $0,$1

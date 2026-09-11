@@ -17,14 +17,11 @@ sub $2,$0
 mov $0,1
 lpb $2
   sub $2,1
-  mov $4,2
-  pow $4,$1
-  div $4,2
-  add $4,2
-  mov $3,$4
-  div $3,3
+  mov $3,2
+  pow $3,$1
+  div $3,6
   mul $3,2
-  sub $3,1
+  add $3,1
   mul $0,$3
   div $0,-1
   sub $1,1

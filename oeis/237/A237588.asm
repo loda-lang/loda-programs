@@ -1,33 +1,14 @@
 ; A237588: a(n) = sigma(n) - 2n + 1.
-; Submitted by MVeiga
+; Submitted by Science United
 ; 0,0,-1,0,-3,1,-5,0,-4,-1,-9,5,-11,-3,-5,0,-15,4,-17,3,-9,-7,-21,13,-18,-9,-13,1,-27,13,-29,0,-17,-13,-21,20,-35,-15,-21,11,-39,13,-41,-3,-11,-19,-45,29,-40,-6,-29,-5,-51,13,-37,9,-33,-25,-57,49,-59,-27,-21,0
+; Formula: a(n) = -2*n+A000203(n)+1
 
 #offset 1
 
-mov $2,$0
-mov $4,$0
-nrt $4,2
-lpb $4
-  max $4,1
-  mov $1,$0
-  mod $1,$4
-  equ $1,0
-  mov $5,$0
-  div $5,$4
-  add $5,$4
-  mul $5,$1
-  add $3,$5
-  sub $4,1
-lpe
-nrt $2,2
-mov $4,$2
-mul $4,$2
-sub $4,$0
-equ $4,0
-mul $2,$4
-sub $3,$2
-mov $2,$3
-sub $2,$0
-sub $2,$0
-add $2,1
-mov $0,$2
+mov $1,$0
+sub $0,1
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $1,1
+sub $1,$0
+sub $1,$0
+mov $0,$1

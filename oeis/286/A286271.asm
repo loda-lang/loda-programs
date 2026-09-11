@@ -1,25 +1,30 @@
 ; A286271: a(0)=1; thereafter a(n) = Sum_{k=2..n+1} A006206(k).
 ; Submitted by Science United
 ; 1,1,2,3,5,7,11,16,24,35,53,78,118,176,266,401,611,927,1419,2169,3333,5124,7910,12215,18925,29345,45609,70959,110609,172576,269684,421829,660647,1035602,1625122,2552322,4012282,6312136,9938336,15658610,24689060,38952138
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+truncate(truncate((91*A031367(max(n-1,0)+1)*(max(n-1,0)+1))/(gcd(0,max(n-1,0)+1)^2))/91), b(0) = 0
 
-add $0,1
-lpb $0
-  mov $2,$0
-  trn $2,1
-  mov $3,1
-  add $3,$2
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  lpb $0
+    div $0,26
+    sub $0,2
+  lpe
+  mov $5,1
+  add $5,$0
   mov $4,0
-  gcd $4,$3
+  gcd $4,$5
   pow $4,2
-  add $2,1
-  seq $2,31367 ; Inflation orbit counts.
-  mul $2,91
-  mul $3,$2
-  div $3,$4
-  mov $2,$3
-  div $2,91
-  sub $0,1
-  add $1,$2
+  add $0,1
+  seq $0,31367 ; Inflation orbit counts.
+  mul $0,91
+  mul $5,$0
+  div $5,$4
+  mov $0,$5
+  div $0,91
+  add $2,$0
 lpe
-mov $0,$1
+mov $0,$2

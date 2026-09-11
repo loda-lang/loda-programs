@@ -12,6 +12,7 @@ lpb $2
   mov $5,$3
   add $1,1
   neq $3,0
+  dif $0,47
   sub $0,$3
   mov $4,$0
   max $4,0

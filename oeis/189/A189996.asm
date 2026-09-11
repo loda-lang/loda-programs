@@ -1,15 +1,10 @@
 ; A189996: Bott periodicity: the homotopy groups of the stable orthogonal group are periodic with period 8 and repeat like [2, 2, 1, 0, 1, 1, 1, 0].
-; Submitted by stoneageman
+; Submitted by loader3229
 ; 2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0,2,2,1,0,1,1,1,0
-; Formula: a(n) = truncate((gcd(floor(n/2),4)+gcd(n,2)+5)/2)-3
 
-mov $2,$0
-gcd $2,2
-div $0,2
-gcd $0,4
-mov $1,5
-add $1,$2
-add $1,$0
-div $1,2
-mov $0,$1
-sub $0,3
+mod $0,8
+fac $0,20
+dgs $0,2
+ban $0,9
+add $0,2
+mod $0,10

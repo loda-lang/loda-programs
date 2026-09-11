@@ -19,9 +19,9 @@ lpb $0
   bin $6,2
   seq $1,40329 ; Continued fraction for sqrt(348).
   add $1,$6
-  div $1,2
   mov $5,$1
-  div $1,8
+  div $5,2
+  div $1,16
   mul $1,49
   max $1,4
   add $1,$5

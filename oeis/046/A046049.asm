@@ -1,7 +1,7 @@
 ; A046049: Sum of 18 but no fewer nonzero fourth powers.
 ; Submitted by loader3229
 ; 63,78,143,158,223,238,303,318,383,398,463,478,543,558,623,703,783,863,943,1008,1023,1103,1183,1248
-; Formula: a(n) = 720*(bitand(n-1,16)==16)+320*(bitand(n-1,8)==8)+160*(bitand(n-1,4)==4)+80*(bitand(n-1,20)==20)+80*(bitand(n-1,18)==18)+80*(bitand(n-1,2)==2)+65*(bitand(n-1,17)==17)+65*(bitand(n-1,15)==15)+15*bitand(n-1,1)-15*(bitand(n-1,19)==19)+63
+; Formula: a(n) = 720*(bitand(n-1,16)==16)+320*(bitand(n-1,8)==8)+160*(bitand(n-1,4)==4)+80*(bitand(n-1,20)==20)+80*(bitand(n-1,18)==18)+80*(bitand(n-1,2)==2)+65*((n-1)==15)+65*(bitand(n-1,17)==17)+15*bitand(n-1,1)-15*(bitand(n-1,19)==19)+63
 
 #offset 1
 
@@ -26,7 +26,6 @@ equ $2,8
 mul $2,320
 add $1,$2
 mov $2,$0
-ban $2,15
 equ $2,15
 mul $2,65
 add $1,$2

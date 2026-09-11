@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,248792 ; Numbers n such that sigma(n) - 1 is a prime p.
+seq $0,248792 ; Numbers k such that sigma(k) - 1 is a prime p.
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mul $0,21
 mov $1,3

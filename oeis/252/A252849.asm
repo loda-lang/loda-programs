@@ -15,8 +15,7 @@ lpb $2
   seq $3,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   mul $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,7 +1,7 @@
 ; A093270: a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 70.
-; Submitted by MarcoM.Conte
+; Submitted by vaughan
 ; 0,700,77000,7770000,777700000,77777000000,7777770000000,777777700000000,77777777000000000,7777777770000000000,777777777700000000000,77777777777000000000000,7777777777770000000000000,777777777777700000000000000,77777777777777000000000000000
-; Formula: a(n) = 7*floor((36*floor((10^n)/90)*10^n)/36)
+; Formula: a(n) = 7*floor((10^n)/90)*10^n
 
 #offset 1
 
@@ -9,8 +9,6 @@ mov $1,10
 pow $1,$0
 mov $0,$1
 div $0,90
-mul $0,36
 mul $1,$0
 mov $0,$1
-div $0,36
 mul $0,7

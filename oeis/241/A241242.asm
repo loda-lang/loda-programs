@@ -1,10 +1,23 @@
 ; A241242: a(n) = -2^(2*n+1)*(E(2*n+1, 1/2) + E(2*n+1, 1) + 2*(E(2*n+2, 1/2) + E(2*n+2, 1))), where E(n,x) are the Euler polynomials.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 0,-3,45,-1113,42585,-2348973,176992725,-17487754833,2195014332465,-341282303124693,64397376340013805,-14499110277050234553,3840151029102915908745,-1182008039799685905580413,418424709061213506712209285,-168805428822414120140493978273
-; Formula: a(n) = A240559(2*n+1)
 
+min $0,15
 mov $1,$0
 add $0,1
 add $1,$0
-seq $1,240559 ; a(n) = -2^n*(E(n, 1/2) + E(n, 1) + (n mod 2)*2*(E(n+1, 1/2) + E(n+1, 1))), where E(n, x) are the Euler polynomials.
-mov $0,$1
+mov $3,$1
+mov $5,$1
+lpb $5
+  sub $5,1
+  mov $1,$3
+  sub $1,$5
+  mov $2,$1
+  add $2,$5
+  bin $2,$1
+  seq $1,240560 ; a(n) = 2^n*E(n,1/2) + 2^(n+1)*E(n+1,0), where E(n,x) the Euler polynomials.
+  mul $2,$1
+  mul $4,-1
+  add $4,$2
+lpe
+mov $0,$4

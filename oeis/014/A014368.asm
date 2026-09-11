@@ -1,7 +1,7 @@
 ; A014368: a(n) = bc, where n = C(b,2)+C(c,1), b>c>=0.
 ; Submitted by loader3229
 ; 20,21,30,31,32,40,41,42,43,50,51,52,53,54,60,61,62,63,64,65,70,71,72,73,74,75,76,80,81,82,83,84,85,86,87,90,91,92,93,94,95,96,97,98,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,1110,120,121,122,123
-; Formula: a(n) = floor((sqrtint(8*n+8)+1)/2)*10^(logint(max(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n,1),10)+1)-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n
+; Formula: a(n) = floor((sqrtint(8*n+8)+1)/2)*10^(if((-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)==0,0,valuation(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n,10))+1)-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n
 
 #offset 1
 
@@ -15,8 +15,7 @@ mov $4,$1
 bin $4,2
 sub $0,$4
 mov $2,$0
-max $2,1
-log $2,10
+lex $2,10
 add $2,1
 mov $3,10
 pow $3,$2

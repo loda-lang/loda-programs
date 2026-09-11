@@ -1,5 +1,5 @@
 ; A026153: T(n,n-2), where T is the array in A026148.
-; Submitted by Jamie Morken(w1)
+; Submitted by hugo75
 ; 1,2,7,20,60,176,517,1512,4415,12870,37477,109044,317109,921870,2679510,7787904,22636503,65804638,191332945,556456060,1618813834,4710869108,13713658368,39935698400,116340344575,339050396646,988474306017
 
 #offset 2
@@ -15,6 +15,7 @@ lpb $5
   max $4,0
   add $4,2
   seq $4,26327 ; a(n) = number of (s(0), s(1), ..., s(n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, s(0) = 2, s(n) = 4. Also a(n) = T(n,n-2), where T is the array in A026323.
+  mul $0,$5
   mov $2,$5
   mul $2,$4
   add $1,$2

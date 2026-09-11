@@ -1,14 +1,15 @@
 ; A140132: a(n) = Sum_digits{a(n-1)+a(n-2)+Sum_digits[a(n-1)]+Sum_digits[a(n-2)]}, with a(0)=0 and a(1)=1.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,1,2,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4,5,9,10,11,6,7,8,3,4
+; Formula: a(n) = n%3+sign(6*floor(n/3))*((6*floor(n/3)-1)%9+1)
 
 mov $2,$0
+mod $2,3
+div $0,3
 mov $1,$0
-lpb $1
-  sub $1,3
-  lpb $2
-    sub $2,9
-  lpe
-  add $2,3
-lpe
-mov $0,$2
+mul $1,6
+dgr $1,10
+add $1,9
+add $1,$2
+mov $0,$1
+sub $0,9

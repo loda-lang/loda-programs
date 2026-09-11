@@ -13,7 +13,5 @@ mov $1,$0
 add $1,1
 bin $1,2
 sub $2,$1
-mov $3,$0
-sub $3,$2
-mul $3,-1
-mov $0,$3
+sub $2,$0
+mov $0,$2

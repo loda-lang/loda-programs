@@ -1,17 +1,27 @@
 ; A075349: a(1) = 1; first differences follow the pattern 1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,..., i.e., the next n differences are n.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by loader3229
 ; 1,2,4,6,9,12,15,19,23,27,31,36,41,46,51,56,62,68,74,80,86,92,99,106,113,120,127,134,141,149,157,165,173,181,189,197,205,214,223,232,241,250,259,268,277,286,296,306,316,326,336,346,356,366,376,386,397,408,419,430,441,452,463,474,485,496,507,519,531,543,555,567,579,591,603,615,627,639,651,664
-; Formula: a(n) = c(n-1), b(n) = sqrtint(2*n+b(n-1)), b(2) = 2, b(1) = 1, b(0) = 0, c(n) = c(n-1)+sqrtint(2*n+b(n-1)), c(2) = 4, c(1) = 2, c(0) = 1
+; Formula: a(n) = (floor((sqrtint(8*n)-1)/2)+1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)+truncate(binomial(-2*floor((sqrtint(8*n)-1)/2),3)/(-4))+1
 
 #offset 1
 
-mov $3,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
 sub $0,1
-lpb $0
-  sub $0,1
-  add $2,2
-  add $1,$2
-  nrt $1,2
-  add $3,$1
-lpe
+sub $0,$2
+mov $4,$1
+mul $4,-2
+bin $4,3
+div $4,-4
+mov $3,$1
+add $3,1
+mul $3,$0
+add $3,$4
 mov $0,$3
+add $0,1

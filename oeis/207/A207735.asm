@@ -1,27 +1,18 @@
 ; A207735: Expansion of f(-x^2, x^3)^2 / f(x, -x^2) in powers of x where f() is Ramanujan's two-variable theta function.
 ; Submitted by loader3229
 ; 1,-1,0,1,0,0,0,1,-1,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = if(((binomial(15*n-binomial(floor((sqrtint(120*n+8)-1)/2)+1,2)-1,floor((sqrtint(120*n+8)-1)/2))*(2*floor((sqrtint(120*n+8)-1)/2)+1)*(-1)^(15*n)-3*truncate((binomial(15*n-binomial(floor((sqrtint(120*n+8)-1)/2)+1,2)-1,floor((sqrtint(120*n+8)-1)/2))*(2*floor((sqrtint(120*n+8)-1)/2)+1)*(-1)^(15*n))/3))%(-2))==0,(binomial(15*n-binomial(floor((sqrtint(120*n+8)-1)/2)+1,2)-1,floor((sqrtint(120*n+8)-1)/2))*(2*floor((sqrtint(120*n+8)-1)/2)+1)*(-1)^(15*n)-3*truncate((binomial(15*n-binomial(floor((sqrtint(120*n+8)-1)/2)+1,2)-1,floor((sqrtint(120*n+8)-1)/2))*(2*floor((sqrtint(120*n+8)-1)/2)+1)*(-1)^(15*n))/3))/(-2),binomial(15*n-binomial(floor((sqrtint(120*n+8)-1)/2)+1,2)-1,floor((sqrtint(120*n+8)-1)/2))*(2*floor((sqrtint(120*n+8)-1)/2)+1)*(-1)^(15*n)-3*truncate((binomial(15*n-binomial(floor((sqrtint(120*n+8)-1)/2)+1,2)-1,floor((sqrtint(120*n+8)-1)/2))*(2*floor((sqrtint(120*n+8)-1)/2)+1)*(-1)^(15*n))/3))
+; Formula: a(n) = if((((sqrtint(120*n+1)*bitand(sqrtint(120*n+1),5)*((sqrtint(120*n+1)^2)==(120*n+1)))%3)%(-2))==0,((sqrtint(120*n+1)*bitand(sqrtint(120*n+1),5)*((sqrtint(120*n+1)^2)==(120*n+1)))%3)/(-2),(sqrtint(120*n+1)*bitand(sqrtint(120*n+1),5)*((sqrtint(120*n+1)^2)==(120*n+1)))%3)
 
-mul $0,15
-mov $1,-1
-pow $1,$0
+mul $0,120
 add $0,1
+mov $1,$0
+nrt $0,2
 mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $3,$2
-add $3,1
-bin $3,2
-sub $0,2
-sub $0,$3
-bin $0,$2
-mul $2,2
-add $2,1
-mul $2,$0
-mov $0,$2
-mul $0,$1
+ban $2,5
+mov $3,$0
+pow $0,2
+equ $0,$1
+mul $0,$2
+mul $0,$3
 mod $0,3
 dif $0,-2

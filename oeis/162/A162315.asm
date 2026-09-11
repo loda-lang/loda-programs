@@ -1,22 +1,17 @@
 ; A162315: Triangular array 2*P - P^-1, where P is Pascal's triangle A007318.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,3,1,1,6,1,3,3,9,1,1,12,6,12,1,3,5,30,10,15,1,1,18,15,60,15,18,1,3,7,63,35,105,21,21,1,1,24,28,168,70,168,28,24,1,3,9,108,84,378,126,252,36,27,1,1,30,45,360,210,756,210,360,45,30,1
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(if(1==1,(-1)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n+1),if((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n+1)<=(-1),0,(-1)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n+1)))+2)
 
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
 mov $2,$0
-add $0,1
-mul $0,8
-nrt $0,2
-sub $0,1
-div $0,2
-mov $1,$0
-add $1,1
-mov $3,$1
-bin $1,2
-sub $2,$1
+mov $0,$1
 bin $0,$2
-add $2,$3
-mov $4,-1
-pow $4,$2
-add $4,2
-mul $0,$4
+sub $1,$2
+mod $1,2
+mov $3,$1
+mov $1,3
+fac $1,$3
+mul $0,$1

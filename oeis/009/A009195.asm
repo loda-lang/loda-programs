@@ -1,14 +1,23 @@
 ; A009195: a(n) = gcd(n, phi(n)).
-; Submitted by Just Jake
+; Submitted by Science United
 ; 1,1,1,2,1,2,1,4,3,2,1,4,1,2,1,8,1,6,1,4,3,2,1,8,5,2,9,4,1,2,1,16,1,2,1,12,1,2,3,8,1,6,1,4,3,2,1,16,7,10,1,4,1,18,5,8,3,2,1,4,1,2,9,32,1,2,1,4,1,2,1,24,1,2,5,4,1,6,1,16
-; Formula: a(n) = gcd(n,-A109606(n)-1)
+; Formula: a(n) = floor((4*gcd((n-1)*(A080339(n)==0)+1,if((A062570((n-1)*(A080339(n)==0)+1)%2)==0,A062570((n-1)*(A080339(n)==0)+1)/2,A062570((n-1)*(A080339(n)==0)+1)))-4)/4)+1
 
 #offset 1
 
-mov $2,$0
-seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
-sub $1,$2
-sub $1,1
 mov $3,$0
-gcd $3,$1
-mov $0,$3
+sub $3,1
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+equ $0,0
+mul $0,$3
+add $0,1
+mov $2,$0
+seq $2,62570 ; a(n) = phi(2*n).
+dif $2,2
+mov $1,$0
+gcd $1,$2
+mul $1,4
+mov $0,$1
+sub $0,4
+div $0,4
+add $0,1

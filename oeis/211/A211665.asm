@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
-trn $0,8
+trn $0,9
 equ $0,0
 gcd $0,2

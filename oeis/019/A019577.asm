@@ -7,11 +7,9 @@
 sub $0,1
 mov $1,1
 add $1,$0
-mov $6,0
-mov $8,0
-add $0,1
 mov $4,-1
 mov $5,1
+add $0,1
 mov $2,$0
 lpb $2
   sub $2,1
@@ -27,6 +25,5 @@ mov $3,1
 fac $3,$0
 mov $2,$5
 sub $2,$3
-mov $0,$3
 mov $0,$2
 div $0,$1

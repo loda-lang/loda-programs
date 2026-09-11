@@ -21,6 +21,7 @@ lpb $2
   sub $3,$1
   sub $3,1
   bin $5,$3
+  mov $0,0
   mov $4,$6
   sub $4,$5
 lpe

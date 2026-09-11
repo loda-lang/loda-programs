@@ -1,18 +1,14 @@
 ; A021481: Decimal expansion of 1/477.
-; Submitted by loader3229
+; Submitted by Geoff
 ; 0,0,2,0,9,6,4,3,6,0,5,8,7,0,0,2,0,9,6,4,3,6,0,5,8,7,0,0,2,0,9,6,4,3,6,0,5,8,7,0,0,2,0,9,6,4,3,6,0,5,8,7,0,0,2,0,9,6,4,3,6,0,5,8,7,0,0,2,0,9,6,4,3,6,0,5,8,7,0,0
-; Formula: a(n) = -10*truncate(b(n)/10)+b(n), b(n) = truncate((7*floor((10^n)/9)+truncate(b(n-1)/(-1)))/37), b(1) = 0, b(0) = 0
+; Formula: a(n) = floor((5*floor((10^(n+1))/45)+1)/53)%10
 
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $3,10
-  pow $3,$1
-  div $3,9
-  mul $3,7
-  div $2,-1
-  add $2,$3
-  div $2,37
-lpe
-mov $0,$2
+add $0,1
+mov $1,10
+pow $1,$0
+mov $0,$1
+div $0,45
+mul $0,5
+add $0,1
+div $0,53
 mod $0,10

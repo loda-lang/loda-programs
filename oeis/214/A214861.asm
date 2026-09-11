@@ -15,8 +15,7 @@ lpb $3
   pow $1,2
   mul $1,20
   nrt $1,2
-  mul $0,4
-  add $0,$1
+  mov $0,$1
   add $0,1
   div $0,2
   mov $2,$3
@@ -27,4 +26,3 @@ min $5,1
 mul $5,$0
 mov $0,$4
 sub $0,$5
-sub $0,2

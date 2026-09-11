@@ -1,14 +1,14 @@
 ; A010126: Continued fraction for sqrt(22).
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 4,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1,2,4,2,1,8,1
+; Formula: a(n) = floor((gcd(n,3)*gcd(max(n,1),2)*(2*gcd(n,3)+9))/11)
 
-mov $1,6
-lpb $0
-  gcd $1,$0
-  mul $1,4
-  div $1,3
-  add $1,2
-  mov $0,0
-lpe
-mov $0,$1
-sub $0,2
+mov $1,$0
+max $1,1
+gcd $1,2
+gcd $0,3
+mul $1,$0
+mul $0,2
+add $0,9
+mul $0,$1
+div $0,11

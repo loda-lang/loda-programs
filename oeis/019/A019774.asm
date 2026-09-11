@@ -4,6 +4,7 @@
 
 #offset 1
 
+sub $0,1
 mov $1,10
 pow $1,$0
 mov $4,$1
@@ -11,17 +12,15 @@ pow $1,2
 mov $2,1
 mov $0,$1
 lpb $0
+  add $2,$3
   mul $3,-1
   add $3,$2
+  div $0,$3
   mov $5,$0
-  sub $5,2
-  div $5,$3
-  mov $0,$5
-  add $2,2
+  div $0,2
   mov $3,1
   add $6,$5
 lpe
 mov $0,$6
 div $0,$4
-div $0,10
 mod $0,10

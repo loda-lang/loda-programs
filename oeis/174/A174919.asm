@@ -6,6 +6,7 @@ mov $2,1
 lpb $2
   sub $2,1
   mov $6,$0
+  sub $6,$1
   seq $6,22167 ; Triangle of Gaussian binomial coefficients [ n,k ] for q = 3.
   add $5,$0
   add $5,1

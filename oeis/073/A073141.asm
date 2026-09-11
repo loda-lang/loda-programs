@@ -1,12 +1,11 @@
 ; A073141: Product of the largest and smallest number having in binary representation the same number of 0's and 1's as n.
 ; Submitted by USTL-FIL (Lille Fr)
-; 0,1,4,9,16,30,30,49,64,108,108,154,108,154,154,225,256,408,408,532,408,532,532,690,408,532,532,690,532,690,690,961,1024,1584,1584,1960,1584,1960,1960,2340,1584,1960,1960,2340,1960,2340,2340,2914,1584,1960
-; Formula: a(n) = A073138(max(n-1,0)+1)*A059893(A073138(max(n-1,0)+1))*(n!=0)
+; 0,1,4,9,16,30,30,49,64,108,108,154,108,154,154,225,256,408,408,532,408,532,532,690,408,532,532,690,532,690,690,961,1024,1584,1584,1960,1584,1960,1960,2340,1584,1960,1960,2340,1960,2340,2340,2914,1584,1960,1960,2340,1960,2340,2340,2914,1960,2340,2340,2914,2340,2914,2914,3969,4096,6240,6240,7504,6240,7504,7504,8520,6240,7504,7504,8520,7504,8520,8520,9796
+; Formula: a(n) = A073138(max(n,1))*A059893(A073138(max(n,1)))*(n!=0)
 
 mov $1,$0
 neq $1,0
-trn $0,1
-add $0,1
+max $0,1
 seq $0,73138 ; Largest number having in its binary representation the same number of 0's and 1's as n.
 mov $2,$0
 seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.

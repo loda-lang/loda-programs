@@ -14,6 +14,7 @@ lpb $2
   div $5,2
   mov $6,$0
   seq $6,22168 ; Triangle of Gaussian binomial coefficients [ n,k ] for q = 4.
+  mov $0,2
   mov $1,$5
   add $1,1
   bin $1,2

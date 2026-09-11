@@ -1,19 +1,46 @@
 ; A074941: a(n) = sigma(n) mod 3.
-; Submitted by Karlsson
+; Submitted by Geoff
 ; 1,0,1,1,0,0,2,0,1,0,0,1,2,0,0,1,0,0,2,0,2,0,0,0,1,0,1,2,0,0,2,0,0,0,0,1,2,0,2,0,0,0,2,0,0,0,0,1,0,0,0,2,0,0,0,0,2,0,0,0,2,0,2,1,0,0,2,0,0,0,0,0,2,0,1,2,0,0,2,0
 
 #offset 1
 
-sub $0,1
 mov $3,$0
-add $0,1
+sub $3,1
 mov $2,$0
 dir $2,2
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $2,2
+mov $7,$2
+sub $7,1
+mov $6,$2
+dir $6,2
+mov $11,$6
+mov $10,$6
+nrt $10,2
+lpb $10
+  max $10,1
+  mov $4,$6
+  mod $4,$10
+  equ $4,0
+  mov $9,$6
+  div $9,$10
+  add $9,$10
+  mul $9,$4
+  add $8,$9
+  sub $10,1
+lpe
+nrt $6,2
+mov $10,$6
+pow $10,2
+sub $10,$11
+equ $10,0
+mul $6,$10
+sub $8,$6
+mov $5,$2
+bxo $5,$7
+mul $5,$8
 mov $1,$0
 bxo $1,$3
-mul $1,$2
+mul $1,$5
 mod $1,9
 mov $0,$1
-seq $0,7089 ; Numbers in base 3.
-mod $0,10
+div $0,3

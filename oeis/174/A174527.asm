@@ -9,6 +9,7 @@ lpb $2
   seq $6,22167 ; Triangle of Gaussian binomial coefficients [ n,k ] for q = 3.
   add $5,$0
   add $5,1
+  mov $0,2
   mov $3,$5
   mul $5,8
   nrt $5,2

@@ -16,10 +16,8 @@ gcd $1,0
 div $1,2
 mov $7,1
 fac $7,$1
-mov $1,$7
-add $1,1
 mov $2,-1
-add $2,$1
+add $2,$7
 mov $5,$0
 mul $0,8
 nrt $0,2
@@ -32,4 +30,3 @@ sub $5,$6
 sub $5,1
 bin $0,$5
 add $0,$2
-sub $0,1

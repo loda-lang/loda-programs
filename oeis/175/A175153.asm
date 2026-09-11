@@ -1,35 +1,42 @@
 ; A175153: Numbers k such that 13*k-1, 13*k+1 are twin primes.
-; Submitted by [AF] Kalianthys
+; Submitted by FritzB
 ; 24,66,84,114,144,150,156,180,210,240,294,450,504,564,576,606,690,714,726,780,810,900,906,1026,1176,1236,1284,1404,1494,1530,1566,1596,1614,1620,1680,1734,1740,1746,1860,2130,2196,2394,2424,2466,2490,2544,2550,2586,2754,2874,2970,2994,3126,3300,3414,3444,3486,3666,3810,3840,3960,3990,4014,4146,4326,4410,4470,4566,4590,4674,4686,4704,4896,4974,5040,5310,5346,5394,5400,5460
 
 #offset 1
 
 sub $0,1
+mov $1,1
+mov $5,-1
 mov $2,$0
-mul $2,2
-add $2,2
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  mov $3,$1
-  mul $3,3
+  mov $7,$6
+  add $7,3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
+  mov $3,$6
+  sub $3,$7
   add $3,1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $3,2
-  add $3,$4
-  add $4,5
-  sub $0,$3
-  add $0,1
-  add $1,13
-  add $1,$4
-  add $1,7
+  gcd $7,2
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  gcd $1,2
+  add $1,2
+  pow $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
+  add $5,$1
+  add $5,4
   mul $2,$4
-  sub $2,1
+  sub $2,18
+  mov $6,$5
+  mul $6,3
+  div $6,2
 lpe
-mov $0,$1
-sub $0,103
-div $0,26
-mul $0,6
+mov $0,$3
+sub $0,293
+div $0,13
 add $0,24

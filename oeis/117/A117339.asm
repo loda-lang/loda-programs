@@ -4,19 +4,37 @@
 
 #offset 1
 
-mov $1,1
-mov $2,1
-mov $3,2
-mov $4,3
-mov $5,5
-mov $6,4
-mov $7,3
-mov $8,7
-sub $0,1
-lpb $0
-  mul $1,0
-  rol $1,8
-  add $8,$2
-  sub $0,1
-lpe
-mov $0,$1
+mov $5,$0
+leq $5,2
+max $0,3
+mov $2,-1
+pow $2,$0
+dgr $0,4
+mov $3,$2
+mul $3,267
+mov $4,$0
+mov $1,$0
+mul $1,54
+mul $2,9
+pow $0,3
+add $0,72
+sub $0,$1
+mul $0,$4
+ban $3,$0
+add $0,998
+leq $0,$3
+sub $0,2472
+mul $0,$4
+sub $0,$2
+sub $0,5151
+mul $0,$4
+add $0,21552
+mul $0,$4
+mul $0,2
+add $0,$3
+sub $0,33867
+div $0,192
+sub $0,$5
+sub $0,6
+mod $0,10
+add $0,10

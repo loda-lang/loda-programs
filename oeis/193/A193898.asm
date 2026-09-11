@@ -13,6 +13,7 @@ mov $2,$1
 add $2,1
 bin $2,2
 sub $0,$2
+mov $4,$0
 sub $0,1
 mov $5,1
 sub $5,$0
@@ -21,8 +22,6 @@ min $7,0
 mov $6,1
 max $6,$1
 add $6,$7
-mov $4,$0
-add $4,1
 mov $3,$6
 add $3,1
 bin $3,2

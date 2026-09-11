@@ -14,14 +14,15 @@ lpb $2
   nrt $5,2
   sub $5,1
   div $5,2
+  mov $0,$4
   mov $1,$5
   add $1,1
   bin $1,2
   sub $3,$1
   sub $3,1
   mov $4,$6
-  add $4,1
   bin $5,$3
 lpe
 sub $4,$5
 mov $0,$4
+add $0,1

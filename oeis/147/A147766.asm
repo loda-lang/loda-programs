@@ -1,16 +1,22 @@
 ; A147766: Successive differences of A000990.
-; Submitted by loader3229
+; Submitted by figo4
 ; 1,0,2,2,5,6,13,16,30,40,66,90,142,192,290,396,575,782,1112,1500,2092,2808,3848,5132,6945,9192,12298,16178,21422,28000,36763,47748,62205,80334,103910,133458,171538,219150,280039,356020,452469,572548,724047,912126,1148120,1440320,1805061,2255458,2815116,3504220,4356931,5404016,6694580,8275078,10216090,12586762,15488414,19023226,23335953,28576550,34951439,42678714,52052090,63386962,77099515,93643380,113606792,137638066,166566327,201313740,243044747,293065122,353005590,424706066,510443720,612800644
 
-add $0,1
-lpb $0
+mov $4,$0
+mov $2,2
+lpb $2
+  sub $2,1
+  mov $0,$4
+  add $0,$2
   trn $0,1
-  mov $2,$0
-  seq $2,398101 ; Number of inequivalent n X n symmetric nonnegative integer matrices with each row sum nonzero and at most 2, up to simultaneous row and column permutations.
-  mov $3,$1
-  seq $3,2107 ; Expansion of Product_{k>=1} (1 - x^k)^2.
-  add $1,1
-  mul $2,$3
-  add $4,$2
+  seq $0,990 ; Number of plane partitions of n with at most two rows.
+  mul $0,2147437310
+  mov $1,$2
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$4
+min $4,1
+mul $4,$0
+mov $0,$3
+sub $0,$4
+div $0,2147437310

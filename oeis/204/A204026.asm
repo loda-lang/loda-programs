@@ -1,48 +1,26 @@
 ; A204026: Symmetric matrix based on f(i,j)=min(F(i+1),F(j+1)), where F=A000045 (Fibonacci numbers), by antidiagonals.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 1,1,1,1,2,1,1,2,2,1,1,2,3,2,1,1,2,3,3,2,1,1,2,3,5,3,2,1,1,2,3,5,5,3,2,1,1,2,3,5,8,5,3,2,1,1,2,3,5,8,8,5,3,2,1,1,2,3,5,8,13,8,5,3,2,1,1,2,3,5,8,13,13,8,5,3,2,1,1,2
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $1,$2
+bin $1,2
+sub $0,$1
+sub $2,$0
 sub $0,1
-mul $0,2
-mov $1,$0
-nrt $1,2
-mov $2,$1
-add $1,1
-mul $2,$1
-sub $0,$2
-add $0,1
-gcd $0,0
-div $0,2
-add $0,1
-mov $3,$0
-mov $6,1
-lpb $0
-  mul $9,$6
-  mul $9,2
-  mov $10,$5
-  pow $10,2
-  mov $11,$6
-  pow $11,2
-  sub $9,$10
-  add $10,$11
-  mov $11,$10
-  sub $11,$9
-  mov $7,$0
-  max $7,1
-  log $7,2
-  mov $8,2
-  pow $8,$7
-  ban $8,$3
-  neq $8,0
-  mul $11,$8
-  div $0,2
-  mov $4,$9
-  mul $4,$8
-  add $9,$11
-  add $10,$4
-  mov $5,$9
-  mov $6,$10
+min $2,$0
+mov $5,1
+fil $5,3
+lpb $2
+  sub $2,1
+  mov $3,$6
+  add $6,$5
+  mov $5,$3
 lpe
 mov $0,$6

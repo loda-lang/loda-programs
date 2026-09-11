@@ -16,8 +16,7 @@ lpb $2
   add $9,1
   seq $9,73184 ; Number of cubefree divisors of n.
   mov $6,$9
-  trn $9,56
-  add $9,56
+  max $9,56
   mul $9,$6
   sub $9,32
   mod $9,3

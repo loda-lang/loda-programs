@@ -1,5 +1,5 @@
 ; A259761: Expansion of (phi(x)^2 + phi(x^9)^2) / 2 in powers of x where phi() is a Ramanujan theta function.
-; Submitted by Kotenok2000
+; Submitted by arkiss
 ; 1,2,2,0,2,4,0,0,2,4,4,0,0,4,0,0,2,4,4,0,4,0,0,0,0,6,4,0,0,4,0,0,2,0,4,0,4,4,0,0,4,4,0,0,0,8,0,0,0,2,6,0,4,4,0,0,0,0,4,0,0,4,0,0,2,8,0,0,4,0,0,0,4,4,4,0,0,0,0,0
 
 mov $1,17
@@ -11,7 +11,6 @@ sub $1,2
 dif $1,2
 mul $0,4
 mov $2,$0
-mov $11,0
 trn $0,1
 mov $3,$0
 mov $4,-1
@@ -20,9 +19,9 @@ mov $5,$0
 add $5,1
 mov $14,$5
 lex $14,2
-mov $15,2
-pow $15,$14
-div $5,$15
+mov $12,2
+pow $12,$14
+div $5,$12
 div $5,2
 mov $6,-1
 pow $6,$5
@@ -30,7 +29,6 @@ mul $6,2
 mov $7,-2
 bin $7,$5
 div $7,$6
-mov $8,0
 mov $10,3
 sub $5,$7
 mul $5,2
@@ -43,9 +41,7 @@ lpb $5
   mov $13,$9
   nrt $13,2
   add $9,2
-  mov $12,$9
-  nrt $12,2
-  mov $9,$12
+  nrt $9,2
   add $9,$13
   mod $9,2
   mov $10,2

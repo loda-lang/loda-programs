@@ -1,10 +1,10 @@
 ; A249800: a(n) is the smallest prime q such that n(q+1)+1 is prime, that is, the smallest prime q such that n = (p-1)/(q+1) with p prime; or a(n) = -1 if no such q exists.
-; Submitted by atannir
+; Submitted by Geoff
 ; 3,2,3,2,5,2,3,11,3,2,5,2,3,2,3,5,5,3,11,2,5,2,5,2,3,2,3,3,7,5,11,2,5,2,5,2,3,5,3,5,17,2,3,7,3,2,5,3,3,2,5,2,13,2,5,5,3,3,11,2,5,5,5,2,7,2,3,5,3,2,7,5,3,2,7,2,5,3,3,2
 
 #offset 1
 
-mov $3,1
+mov $3,2
 mov $2,100
 mul $2,$0
 lpb $2

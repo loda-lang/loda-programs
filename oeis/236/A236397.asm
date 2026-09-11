@@ -1,7 +1,7 @@
 ; A236397: Weight of the largest-weight sunflower-free set of width n.
 ; Submitted by loader3229
 ; 1,2,4,8,20,40,96,224
-; Formula: a(n) = truncate(((2*sqrtnint(binomial(n,4),3)+8)*2^n)/8)
+; Formula: a(n) = floor(((2*sqrtnint(binomial(n,4),3)+8)*2^n)/8)
 
 mov $1,2
 pow $1,$0
