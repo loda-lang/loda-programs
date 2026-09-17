@@ -1,5 +1,5 @@
 ; A143594: Triangle read by rows, A051731 * (an infinite lower triangular matrix with 1's in the first column and the rest 2's).
-; Submitted by marianob [marche]
+; Submitted by loader3229
 ; 1,2,2,2,2,2,3,4,2,2,2,2,2,2,2,4,6,4,2,2,2,2,2,2,2,2,2,2,4,6,4,4,2,2,2,2,3,4,4,2,2,2,2,2,2,4,6,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6,10,8,6,4,4,2,2,2,2,2,2,2,2
 
 #offset 1
@@ -7,15 +7,13 @@
 mov $4,$0
 mul $4,8
 nrt $4,2
-sub $4,1
+add $4,1
 div $4,2
 mov $8,$4
-add $8,1
 bin $8,2
 mov $1,$0
 sub $1,$8
 sub $1,1
-add $4,1
 mov $7,$1
 mov $1,$4
 lpb $1

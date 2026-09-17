@@ -22,15 +22,13 @@ lpb $2
   mov $9,$4
   mul $9,8
   nrt $9,2
-  sub $9,1
+  add $9,1
   div $9,2
+  mov $10,$9
   mov $11,$9
-  add $11,1
   bin $11,2
   mov $7,$4
   sub $7,$11
-  add $9,1
-  mov $10,$9
   mul $9,$7
   gcd $7,$10
   pow $7,2

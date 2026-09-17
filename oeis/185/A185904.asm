@@ -1,7 +1,7 @@
 ; A185904: Multiplication table for the tetrahedral numbers (A000292), by antidiagonals.
 ; Submitted by loader3229
 ; 1,4,4,10,16,10,20,40,40,20,35,80,100,80,35,56,140,200,200,140,56,84,224,350,400,350,224,84,120,336,560,700,700,560,336,120,165,480,840,1120,1225,1120,840,480,165,220,660,1200,1680,1960,1960,1680,1200,660,220,286,880,1650,2400,2940,3136,2940,2400,1650,880,286,364,1144,2200,3300,4200,4704,4704,4200,3300,2200,1144,364,455,1456
-; Formula: a(n) = truncate((binomial(-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2)+3,-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+2)-6)/6)+1
+; Formula: a(n) = truncate((binomial(-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2)+3,-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+2))/6)
 
 #offset 1
 
@@ -20,6 +20,4 @@ add $4,$2
 bin $4,$2
 fac $0,3
 mul $0,$4
-sub $0,6
 div $0,6
-add $0,1

@@ -23,15 +23,14 @@ lpb $2
   mov $7,$4
   mul $7,8
   nrt $7,2
-  sub $7,1
+  add $7,1
   div $7,2
+  mov $8,$7
   mov $9,$7
-  add $9,1
   bin $9,2
   add $3,1
   sub $4,$9
-  mov $8,$7
-  add $8,1
+  sub $7,1
   div $7,$4
   add $7,1
   mul $8,$7

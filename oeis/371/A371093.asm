@@ -1,11 +1,8 @@
 ; A371093: a(n) is the 2-adic valuation of 3n+1.
-; Submitted by rilian
+; Submitted by loader3229
 ; 0,2,0,1,0,4,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,6,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,4,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,5,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,4,0,1,0,2,0,1,0,3,0,1
-; Formula: a(n) = valuation(3*n+1,2)
+; Formula: a(n) = valuation(-3*n-1,2)
 
-mov $1,$0
-add $1,1
-mov $2,$0
-add $2,$1
-add $0,$2
+mul $0,-3
+sub $0,1
 lex $0,2

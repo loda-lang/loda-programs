@@ -1,14 +1,14 @@
 ; A214560: Number of 0's in binary expansion of n^2.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,2,2,4,2,4,3,6,4,4,2,6,4,5,4,8,6,6,4,6,3,4,7,8,5,6,4,7,5,6,5,10,8,8,6,8,5,6,4,8,6,5,4,6,3,9,8,10,7,7,7,8,4,6,5,9,6,7,5,8,6,7,6,12,10,10,8,10,7,8,6,10,7,7,4,8,6,6,8
+; Formula: a(n) = -sumdigits(n*(n+1)-n,2)*sign(n*(n+1)-n)+logint(max(n*(n+1)-n,1),2)+1
 
-pow $0,2
-mov $2,1
+mov $2,$0
+fac $0,2
+sub $0,$2
 mov $1,$0
-lpb $1
-  div $0,2
-  sub $1,$0
-  add $2,1
-lpe
-sub $2,$1
-mov $0,$2
+dgs $1,2
+max $0,1
+log $0,2
+add $0,1
+sub $0,$1

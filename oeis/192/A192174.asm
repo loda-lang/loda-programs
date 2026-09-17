@@ -1,5 +1,5 @@
 ; A192174: Triangle T(n,k) of the coefficients [x^(n-k)] of the polynomial p(0,x)=-1, p(1,x)=x and p(n,x) = x*p(n-1,x) - p(n-2,x) in row n, column k.
-; Submitted by Herbert Skopnik
+; Submitted by loader3229
 ; -1,1,0,1,0,1,1,0,0,0,1,0,-1,0,-1,1,0,-2,0,-1,0,1,0,-3,0,0,0,1,1,0,-4,0,2,0,2,0,1,0,-5,0,5,0,2,0,-1,1,0,-6,0,9,0,0,0,-3,0,1,0,-7,0,14,0,-5,0,-5,0,1,1,0,-8,0,20,0,-14,0,-5,0,4,0
 
 add $0,1
@@ -35,10 +35,9 @@ lpb $2
   mov $10,$5
   mul $10,8
   nrt $10,2
-  sub $10,1
+  add $10,1
   div $10,2
   mov $9,$10
-  add $9,1
   bin $9,2
   sub $5,$9
   sub $5,1
@@ -46,7 +45,6 @@ lpb $2
   bin $9,$5
   equ $9,1
   mul $10,-1
-  sub $10,1
   add $10,$5
   div $5,2
   bin $10,$5

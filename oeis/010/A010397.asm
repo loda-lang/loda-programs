@@ -1,35 +1,34 @@
 ; A010397: Squares mod 36.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,4,9,13,16,25,28
+; Formula: a(n) = floor((((sign(n-1)*((n-2)%12+1))==5)+sign(n-1)*((n-2)%12+1)*(((sign(n-1)*((n-2)%12+1))==2)+sign(n-1)*((n-2)%12+1)+2*((sign(n-1)*((n-2)%12+1))==3))+sign(n-1)*((n-2)%12+1)+8*((sign(n-1)*((n-2)%12+1))==6)+6*((sign(n-1)*((n-2)%12+1))==4)+1)/2)
 
 #offset 1
 
 sub $0,1
-mov $3,$0
-pow $3,2
-lpb $3
-  mov $4,$2
-  mul $4,$6
-  bin $4,$5
-  mov $1,$4
-  dir $1,3
-  seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  seq $4,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
-  mul $4,2
-  sub $4,$1
-  mov $7,$4
-  min $7,1
-  sub $0,$7
-  add $2,3
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  max $6,9
-  add $6,3
-  mul $3,$5
-  sub $3,1
-lpe
+dgr $0,13
+mov $1,$0
+equ $1,2
+mov $2,$0
+add $2,$1
+mov $1,$0
+equ $1,3
+mul $1,2
+add $2,$1
+mul $2,$0
+mov $1,$0
+equ $1,4
+mul $1,6
+add $2,$1
+mov $1,$0
+equ $1,5
+add $2,$1
+mov $1,$0
+equ $1,6
+mul $1,8
+add $2,$1
+mov $1,$0
+add $1,1
+add $2,$1
 mov $0,$2
-mul $0,7
-add $0,$2
-div $0,24
+div $0,2

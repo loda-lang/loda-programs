@@ -4,10 +4,7 @@
 
 #offset 1
 
-mov $2,$0
-seq $2,55669 ; Number of prime Hurwitz quaternions of norm prime(n).
-sub $0,1
-mov $0,$2
+seq $0,55669 ; Number of prime Hurwitz quaternions of norm prime(n).
 lpb $0
   dif $0,2
   add $1,1

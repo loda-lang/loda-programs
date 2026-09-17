@@ -9,15 +9,14 @@ mov $5,3
 mov $2,$0
 mul $2,8
 nrt $2,2
-sub $2,1
+add $2,1
 div $2,2
 mov $7,$2
-add $7,1
 bin $7,2
 sub $0,$7
 sub $0,1
 mov $1,3
-sub $2,1
+sub $2,2
 sub $2,$0
 lpb $0
   sub $0,1

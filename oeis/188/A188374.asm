@@ -1,5 +1,5 @@
 ; A188374: [nr+kr]-[nr]-[kr], where r=1/sqrt(2), k=2, [ ]=floor.
-; Submitted by Science United
+; Submitted by mg13 [HWU]
 ; 1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0
 ; Formula: a(n) = (sqrtint(2*n^2)*sqrtint(2*(n+2)^2)+sqrtint(2*n^2))%2
 
@@ -9,14 +9,12 @@ mov $1,$0
 add $1,2
 pow $1,2
 mul $1,2
-mov $2,$1
-nrt $2,2
+nrt $1,2
 pow $0,2
 mul $0,2
-mov $3,$0
-nrt $3,2
-mov $1,$2
-mul $1,$3
-mov $0,$3
-add $0,$1
+mov $2,$0
+nrt $2,2
+mul $1,$2
+add $2,$1
+mov $0,$2
 mod $0,2

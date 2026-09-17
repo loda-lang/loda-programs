@@ -9,10 +9,9 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  mul $3,2
-  mov $5,$3
+  mov $5,$1
   dgs $5,2
+  mov $3,$1
   sub $3,$5
   gcd $3,$1
   equ $3,1

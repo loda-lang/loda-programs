@@ -1,7 +1,7 @@
 ; A018392: Divisors of 322.
-; Submitted by lotusexcelle
+; Submitted by loader3229
 ; 1,2,7,14,23,46,161,322
-; Formula: a(n) = floor(((((n-1)%4+1)^2+2*max(((n-1)%4+1)^2-3,1))*23^floor((n-1)/4))/3)
+; Formula: a(n) = floor(((2*max(((n-1)%4+1)^2-3,0)+2)*23^floor((n-1)/4))/2)
 
 #offset 1
 
@@ -14,9 +14,8 @@ div $0,4
 mov $2,23
 pow $2,$0
 mov $0,$1
-sub $0,3
-max $0,1
+trn $0,3
 mul $0,2
-add $0,$1
+add $0,2
 mul $0,$2
-div $0,3
+div $0,2

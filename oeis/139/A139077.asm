@@ -18,7 +18,6 @@ lpb $2
   seq $0,322071 ; Triangle read by rows: T(n, k) is the largest integer m such that m*k^k <= 2*n^k.
   add $0,1
   div $0,2
-  trn $1,$0
-  add $1,$0
+  max $1,$0
 lpe
 mov $0,$1

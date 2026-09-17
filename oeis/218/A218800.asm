@@ -1,5 +1,5 @@
 ; A218800: Number of nonnegative integer solutions to x^2 + 2y^2 = (3n)^2.
-; Submitted by Science United
+; Submitted by [DPC] hansR
 ; 1,2,2,3,2,2,3,2,2,4,2,5,3,2,2,3,2,5,4,5,2,3,5,2,3,2,2,5,2,2,3,2,2,8,5,2,4,2,5,3,2,5,3,5,5,4,2,2,3,2,2,8,2,2,5,5,2,8,2,5,3,2,2,4,2,2,8,5,5,3,2,2,4,5,2,3,5,5,3,2
 
 mov $5,3
@@ -17,10 +17,8 @@ lpb $0
   nrt $2,2
   pow $2,2
   equ $2,$3
-  mul $2,2
   add $1,$2
   mov $5,2
   mul $5,$4
 lpe
 mov $0,$1
-div $0,2

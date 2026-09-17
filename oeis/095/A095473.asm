@@ -1,9 +1,8 @@
 ; A095473: a(n) = 40 written in base 13 - n.
-; Submitted by dedla
+; Submitted by Geoff
 ; 31,34,37,40,44,50,55,104,130,220,1111,101000,1111111111111111111111111111111111111111
 
-sub $0,3
-mov $2,10
+mov $2,13
 sub $2,$0
 mov $3,1
 mov $5,$2

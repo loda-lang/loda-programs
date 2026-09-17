@@ -7,13 +7,12 @@
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $7,$1
-add $7,1
 bin $7,2
 sub $0,$7
-add $1,2
+add $1,1
 lpb $1
   sub $1,1
   mov $4,$3
@@ -25,7 +24,7 @@ lpb $1
   mov $6,$2
   add $2,$5
   add $3,1
-  mul $5,0
+  mov $5,0
 lpe
 mov $0,$6
 add $0,1

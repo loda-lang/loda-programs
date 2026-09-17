@@ -6,14 +6,13 @@ add $0,1
 mov $2,$0
 mul $2,8
 nrt $2,2
-sub $2,1
+add $2,1
 div $2,2
 mov $4,$2
-add $4,1
 bin $4,2
 sub $0,$4
 sub $0,1
-add $2,2
+add $2,1
 sub $2,$0
 mov $3,$2
 add $0,3

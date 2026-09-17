@@ -1,22 +1,26 @@
 ; A240682: Number of forests with n labeled nodes and 5 trees.
-; Submitted by Technik007[CZ]
+; Submitted by Science United
 ; 1,15,210,3220,55755,1092105,24048255,590412240,16027796070,477411574640,15495339234375,544652100894720,20619226977792170,836670560604157440,36232055577668433690,1668081561600000000000,81363801140161673297535,4191692026268767965880320,227445259120925691433116760,12965600225479929942119546880,774701912887394428253173828125,48415890530488784305609872179200,3158741687538163550431238551969425,214754591607664696726120428050841600,15190157293252844287760875166222637900
 
 #offset 5
 
-mov $1,$0
-add $0,69
-bin $1,2
-add $1,$0
+add $0,2
+mov $3,$0
+bin $3,2
 mov $2,$0
-sub $2,4
+sub $2,1
 lpb $2
   sub $2,1
-  mov $0,$1
+  sub $3,$0
+  mov $0,$3
   sub $0,$2
-  seq $0,106834 ; Triangle read by rows: T(n, m) = number of painted forests on labeled vertex set [n] with m trees. Also number of painted forests with exactly n - m edges.
+  mov $1,$0
+  add $1,6
+  seq $1,106834 ; Triangle read by rows: T(n, m) = number of painted forests on labeled vertex set [n] with m trees. Also number of painted forests with exactly n - m edges.
   mov $2,0
 lpe
-sub $0,5
-div $0,5
+mul $1,2
+mov $0,$1
+sub $0,10
+div $0,10
 add $0,1

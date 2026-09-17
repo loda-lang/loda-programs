@@ -1,6 +1,7 @@
 ; A373775: For an oriented graph D, let X_m(D) be the number of copies of D in a random tournament (i.e., a complete graph, each of whose edges is directed randomly with probability 1/2 for each direction) on m vertices. The variance of X_m(D) is a polynomial in m, and a(n) is the minimum degree of this polynomial over all weakly connected oriented graphs D on n vertices. a(n) = 0 if the variance of X_m(D) is identically 0 for some such D.
 ; Submitted by BrandyNOW
 ; 0,0,3,0,5,6,9,0
+; Formula: a(n) = 2^max(if((n%4)==0,n/4,n),2)-max(if((n%4)==0,n/4,n),2)-10*truncate((2^max(if((n%4)==0,n/4,n),2)-max(if((n%4)==0,n/4,n),2)-2)/10)-2
 
 #offset 1
 

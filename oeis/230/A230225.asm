@@ -11,10 +11,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,217707 ; Numbers n such that both 4*n-1 and 4*n+1 are composite.
-  sub $3,1
+  seq $3,217707 ; Numbers k such that both 4*k-1 and 4*k+1 are composite.
   mov $5,$3
-  add $3,1
+  sub $5,1
   add $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

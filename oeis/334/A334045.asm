@@ -1,17 +1,17 @@
 ; A334045: Bitwise NOR of binary representation of n and n-1.
-; Submitted by Jamie Morken(s4.)
+; Submitted by loader3229
 ; 0,0,0,0,2,0,0,0,6,4,4,0,2,0,0,0,14,12,12,8,10,8,8,0,6,4,4,0,2,0,0,0,30,28,28,24,26,24,24,16,22,20,20,16,18,16,16,0,14,12,12,8,10,8,8,0,6,4,4,0,2,0,0,0,62,60,60,56,58,56,56,48,54,52,52
+; Formula: a(n) = 2^(logint(n,2)+1)-bitor(n-1,n)-1
 
 #offset 1
 
 mov $1,$0
-mov $2,1
-mov $3,$0
-lpb $0
-  div $0,2
-  mul $2,2
-lpe
-gcd $3,$2
-sub $2,$3
-mov $0,$2
-mod $0,$1
+sub $0,1
+bor $0,$1
+log $1,2
+add $1,1
+mov $2,$0
+mov $0,2
+pow $0,$1
+sub $0,$2
+sub $0,1

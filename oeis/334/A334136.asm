@@ -1,31 +1,15 @@
 ; A334136: a(n) = (n-1)*sigma(n) where sigma is the sum of divisors A000203.
-; Submitted by Goldislops
+; Submitted by Just Jake
 ; 0,3,8,21,24,60,48,105,104,162,120,308,168,312,336,465,288,663,360,798,640,756,528,1380,744,1050,1040,1512,840,2088,960,1953,1536,1782,1632,3185,1368,2220,2128,3510,1680,3936,1848,3612,3432,3240,2208,5828,2736,4557
+; Formula: a(n) = truncate((2*A000203(n)*(3*n-3))/6)
 
 #offset 1
 
-mov $1,$0
-mov $4,$0
 sub $0,1
-mov $2,$4
-nrt $2,2
-lpb $2
-  max $2,1
-  mov $6,$4
-  mod $6,$2
-  equ $6,0
-  mov $5,$4
-  div $5,$2
-  add $5,$2
-  mul $5,$6
-  sub $2,1
-  add $3,$5
-lpe
-nrt $4,2
-mov $2,$4
-mul $2,$4
-sub $2,$1
-equ $2,0
-mul $4,$2
-sub $3,$4
-mul $0,$3
+mov $1,$0
+mul $1,3
+add $0,1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $0,2
+mul $0,$1
+div $0,6

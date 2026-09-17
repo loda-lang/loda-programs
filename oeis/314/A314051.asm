@@ -9,10 +9,9 @@ div $3,3
 add $3,4
 mov $1,$0
 mul $1,13
-sub $0,1
 mov $2,$0
 mul $2,2
-sub $2,1
+sub $2,3
 add $2,$3
 div $2,3
 trn $2,1

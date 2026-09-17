@@ -10,8 +10,7 @@ dgr $0,9
 sub $0,4
 div $0,2
 mod $0,2
-sub $3,$0
-add $2,$3
+sub $2,$0
 mov $1,$2
 equ $1,0
 add $2,$1

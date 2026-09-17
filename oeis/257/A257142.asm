@@ -23,12 +23,12 @@ lpb $2
   mov $8,$4
   mul $8,8
   nrt $8,2
-  sub $8,1
+  add $8,1
   div $8,2
   mov $9,$8
-  add $9,1
   bin $9,2
   sub $4,$9
+  sub $8,1
   add $8,$4
   mul $4,2
   sub $4,1
@@ -42,16 +42,15 @@ lpb $2
   mov $10,$5
   mul $10,8
   nrt $10,2
-  sub $10,1
+  add $10,1
   div $10,2
   mov $11,$10
-  add $11,1
   bin $11,2
   sub $5,$11
   sub $5,1
   mov $11,$10
-  add $11,1
   bin $11,$5
+  sub $10,1
   bin $10,$5
   add $5,1
   mul $10,$11

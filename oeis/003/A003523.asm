@@ -1,5 +1,5 @@
 ; A003523: Divisors of 2^10 - 1.
-; Submitted by Science United
+; Submitted by FritzB
 ; 1,3,11,31,33,93,341,1023
 
 #offset 1
@@ -16,7 +16,7 @@ lpb $2
   gcd $3,$1
   div $3,$4
   sub $0,$3
-  sub $2,$3
   sub $2,$0
 lpe
 mov $0,$1
+add $0,1

@@ -12,8 +12,7 @@ mov $1,$0
 add $1,1
 bin $1,2
 sub $2,$1
-gcd $4,$2
 mov $3,$0
-fac $3,$4
+fac $3,$2
 bin $0,$2
 mul $0,$3

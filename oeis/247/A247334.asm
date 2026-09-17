@@ -1,17 +1,13 @@
 ; A247334: Highly abundant numbers which are not abundant.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,2,3,4,6,8,10,16
-; Formula: a(n) = truncate((n-2)/3)*(n-2)-2*truncate((n-2)/3)+n
+; Formula: a(n) = bitand(-5,max(n,4))+n
 
 #offset 1
 
-sub $0,2
-mov $1,$0
-div $0,3
 mov $2,$0
-sub $2,15
-mul $2,2
-mul $0,$1
-sub $0,$2
-add $0,$1
-sub $0,28
+max $0,4
+mov $1,-5
+ban $1,$0
+add $2,$1
+mov $0,$2

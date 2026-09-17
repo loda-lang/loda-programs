@@ -19,7 +19,6 @@ mov $3,$2
 mod $3,2
 mul $3,2
 pow $3,$1
-div $3,2
 div $2,2
 mul $1,-1
 bin $1,$2
@@ -27,4 +26,4 @@ gcd $1,0
 mov $0,4
 mul $0,$3
 mul $0,$1
-div $0,4
+div $0,8

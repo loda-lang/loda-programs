@@ -1,13 +1,10 @@
 ; A102541: Triangle read by rows, formed from antidiagonals of Losanitsch's triangle. T(n, k) = A034851(n-k, k), n >= 0 and 0 <= k <= floor(n/2).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,1,1,2,2,1,3,4,1,1,3,6,2,1,4,9,6,1,1,4,12,10,3,1,5,16,19,9,1,1,5,20,28,19,3,1,6,25,44,38,12,1,1,6,30,60,66,28,4,1,7,36,85,110,66,16,1,1,7,42,110,170,126,44,4,1,8,49,146,255,236,110,20
 
 add $0,1
 mov $2,$0
-mov $5,0
-mov $8,0
 mul $0,4
-sub $0,3
 nrt $0,2
 mov $1,$0
 pow $1,2
@@ -21,14 +18,14 @@ add $2,$0
 mov $3,$2
 mul $3,8
 nrt $3,2
-sub $3,1
+add $3,1
 div $3,2
 mov $4,$3
-add $4,1
 bin $4,2
 mov $0,$2
 sub $0,$4
 sub $0,1
+sub $3,1
 mov $4,$0
 mov $0,$3
 sub $3,$4

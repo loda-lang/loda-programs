@@ -1,7 +1,7 @@
 ; A292660: Rank of n*sqrt(2) when all the numbers h*sqrt(2), j*sqrt(3), k*sqrt(5), for h>=1, j>=1, k>=1, are jointly ranked.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,4,6,9,12,13,16,19,21,24,25,28,31,33,36,39,40,43,46,48,51,52,55,58,60,63,66,67,70,72,75,78,79,82,85,87,90,93,94,97,99,102,105,106,109,112,114,117,119,121,124,126,129,132,133,136,139,141,144,145,148,151,153,156,159,160,163,166,168,171,172,175,178,180,183,186,187,190,192,195
-; Formula: a(n) = sqrtint(floor((2*n^2)/5))+truncate(sqrtint(6*n^2)/3)+n
+; Formula: a(n) = floor(sqrtint(6*bitor(0,n^2))/3)+sqrtint(floor((2*n^2)/5))+n
 
 #offset 1
 
@@ -14,12 +14,10 @@ mov $1,$4
 mul $1,2
 div $1,5
 nrt $1,2
-add $3,$1
-add $0,1
-pow $0,2
-mov $2,$0
+bor $2,$4
 mul $2,6
 nrt $2,2
+add $3,$1
 mov $0,$2
 div $0,3
 add $0,$3

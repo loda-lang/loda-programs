@@ -10,4 +10,5 @@ lpb $0
   sub $0,2
   dif $0,4
 lpe
+add $0,1
 seq $0,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).

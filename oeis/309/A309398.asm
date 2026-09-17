@@ -5,11 +5,9 @@
 
 #offset 1
 
-add $0,1
 mov $1,$0
-mul $1,$0
-mov $2,$0
-mul $2,$1
-log $2,16
-mov $0,$2
+add $1,1
+pow $1,3
+log $1,16
+mov $0,$1
 add $0,1

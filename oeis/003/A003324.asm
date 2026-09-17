@@ -1,21 +1,20 @@
 ; A003324: A nonrepetitive sequence.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,2,3,4,1,4,3,2,1,2,3,2,1,4,3,4,1,2,3,4,1,4,3,4,1,2,3,2,1,4,3,2,1,2,3,4,1,4,3,2,1,2,3,2,1,4,3,2,1,2,3,4,1,4,3,4,1,2,3,2,1,4,3,4,1,2,3,4,1,4,3,2,1,2,3,2,1,4,3,4
+; Formula: a(n) = bitand(floor((n^2+1)/2)^6-((n^3)/((-8)^valuation(n^3,-8))),3)+1
 
 #offset 1
 
-pow $0,2
 mov $2,$0
-sub $0,2
-lpb $0
-  mov $3,$2
-  dif $3,$0
-  neq $3,$2
-  mul $3,$0
-  trn $3,1
-  sub $0,1
-  add $1,$3
-lpe
-mov $0,$1
-mod $0,4
+pow $0,2
+mov $1,$2
+mul $1,$0
+dir $1,-8
+pow $2,2
+add $2,1
+div $2,2
+pow $2,6
+sub $2,$1
+ban $2,3
+mov $0,$2
 add $0,1

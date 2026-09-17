@@ -27,14 +27,12 @@ fac $2,$3
 mov $7,$0
 mul $7,8
 nrt $7,2
-sub $7,1
+add $7,1
 div $7,2
 mov $8,$7
-add $8,1
 bin $8,2
 sub $0,$8
 sub $0,1
-add $7,1
 sub $9,$0
 add $9,$7
 pow $9,$0

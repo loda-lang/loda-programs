@@ -1,5 +1,5 @@
 ; A260322: Triangle read by rows: T(n,k) = logarithmic polynomial G_k^(n)(x) evaluated at x=1.
-; Submitted by Josemi
+; Submitted by loader3229
 ; 1,-1,2,2,-6,6,0,24,-24,24,9,-80,60,-120,120,35,450,240,360,-720,720,230,-2142,-2310,-840,2520,-5040,5040,1624,17696,9744,21840,-6720,20160,-40320,40320,13209,-112464,91224,-184464,15120,-60480,181440,-362880,362880
 
 #offset 1
@@ -23,13 +23,12 @@ lpb $2
   mov $8,$4
   mul $8,8
   nrt $8,2
-  sub $8,1
+  add $8,1
   div $8,2
   mov $7,$8
-  add $7,1
   bin $7,2
   sub $4,$7
-  add $8,2
+  add $8,1
   sub $8,$4
   fac $8,$4
   div $8,$4
@@ -41,13 +40,11 @@ lpb $2
   mov $9,$5
   mul $9,8
   nrt $9,2
-  sub $9,1
+  add $9,1
   div $9,2
   mov $10,$9
-  add $10,1
   bin $10,2
   sub $5,$10
-  add $9,1
   gcd $9,$5
   div $9,$5
   mul $5,$9

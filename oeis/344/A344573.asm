@@ -14,7 +14,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $5,0
+  sub $5,$0
+  fac $0,$5
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $1,$0
   add $3,$1

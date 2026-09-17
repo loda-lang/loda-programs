@@ -7,13 +7,11 @@
 mov $2,$0
 mul $2,8
 nrt $2,2
-sub $2,1
+add $2,1
 div $2,2
 mov $3,$2
-add $3,1
 bin $3,2
 sub $0,$3
-add $2,1
 sub $2,$0
 mov $1,2
 min $1,$0

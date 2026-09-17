@@ -1,7 +1,7 @@
 ; A003675: Decimal expansion of neutron mass (mass units).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,0,8,6,6,4,9,1
-; Formula: a(n) = -max(2*binomial(floor(sqrtint(8*n)/2)+1,2)-floor(floor(sqrtint(8*n)/2)/2)-2*n+floor(sqrtint(8*n)/2)+2,0)*(4*n-4*binomial(floor(sqrtint(8*n)/2)+1,2)+max(2*binomial(floor(sqrtint(8*n)/2)+1,2)-floor(floor(sqrtint(8*n)/2)/2)-2*n+floor(sqrtint(8*n)/2)+2,0)-3)-10*truncate((-max(2*binomial(floor(sqrtint(8*n)/2)+1,2)-floor(floor(sqrtint(8*n)/2)/2)-2*n+floor(sqrtint(8*n)/2)+2,0)*(4*n-4*binomial(floor(sqrtint(8*n)/2)+1,2)+max(2*binomial(floor(sqrtint(8*n)/2)+1,2)-floor(floor(sqrtint(8*n)/2)/2)-2*n+floor(sqrtint(8*n)/2)+2,0)-3)+binomial((floor(floor(sqrtint(8*n)/2)/2)+1)^2+1,2))/10)+binomial((floor(floor(sqrtint(8*n)/2)/2)+1)^2+1,2)
+; Formula: a(n) = -(2*n-floor(floor(sqrtint(8*n)/2)/2)-2*binomial(floor(sqrtint(8*n)/2)+1,2)+floor(sqrtint(8*n)/2)-1)*(2*binomial(floor(sqrtint(8*n)/2)+1,2)-floor(floor(sqrtint(8*n)/2)/2)-2*n+floor(sqrtint(8*n)/2)+2)-10*truncate((-(2*n-floor(floor(sqrtint(8*n)/2)/2)-2*binomial(floor(sqrtint(8*n)/2)+1,2)+floor(sqrtint(8*n)/2)-1)*(2*binomial(floor(sqrtint(8*n)/2)+1,2)-floor(floor(sqrtint(8*n)/2)/2)-2*n+floor(sqrtint(8*n)/2)+2)+binomial((floor(floor(sqrtint(8*n)/2)/2)+1)^2+1,2))/10)+binomial((floor(floor(sqrtint(8*n)/2)/2)+1)^2+1,2)
 
 #offset 1
 
@@ -22,7 +22,6 @@ sub $5,$0
 sub $5,$0
 sub $5,$6
 add $5,1
-max $5,0
 pow $6,2
 mov $4,$0
 mul $4,4

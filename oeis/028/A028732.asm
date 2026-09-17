@@ -1,27 +1,20 @@
 ; A028732: Nonsquares mod 19.
-; Submitted by Dingo
+; Submitted by loader3229
 ; 2,3,8,10,12,13,14,15,18
+; Formula: a(n) = 2*truncate(bitand(2*floor((n+1)/2),-12)/3)+2*n+bitand(if((n%(-4))==0,n/(-4),n),1)-1
 
 #offset 1
 
+mov $1,$0
+add $0,1
 mov $2,$0
-sub $0,1
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  pow $3,3
-  mod $3,19
-  add $3,5
-  gcd $3,2
-  sub $0,$3
-  add $0,1
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
 div $0,2
+mul $0,2
+ban $0,-12
+div $0,3
+add $0,$2
+mul $0,2
+sub $0,3
+dif $1,-4
+ban $1,1
+add $0,$1

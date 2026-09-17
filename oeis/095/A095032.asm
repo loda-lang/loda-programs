@@ -1,7 +1,7 @@
 ; A095032: An example of a (v,k,lambda)=(57,8,1) cyclic difference set.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,6,15,22,26,45,55
-; Formula: a(n) = ((sign(n-1)*((n-2)%12+1))==5)+((sign(n-1)*((n-2)%12+1)+1)==7)+sign(n-1)*((n-2)%12+1)*(((sign(n-1)*((n-2)%12+1))==2)+sign(n-1)*((n-2)%12+1)+2*((sign(n-1)*((n-2)%12+1))==3))+8*((sign(n-1)*((n-2)%12+1))==6)+6*((sign(n-1)*((n-2)%12+1))==4)+6*((sign(n-1)*((n-2)%12+1)+1)==8)
+; Formula: a(n) = ((sign(n-1)*((n-2)%12+1))==5)+sign(n-1)*((n-2)%12+1)*(((sign(n-1)*((n-2)%12+1))==2)+sign(n-1)*((n-2)%12+1)+2*((sign(n-1)*((n-2)%12+1))==3))+9*((sign(n-1)*((n-2)%12+1))==6)+6*((sign(n-1)*((n-2)%12+1))==7)+6*((sign(n-1)*((n-2)%12+1))==4)
 
 #offset 1
 
@@ -27,12 +27,11 @@ mov $1,$0
 equ $1,6
 mul $1,8
 add $2,$1
-add $0,1
 mov $1,$0
-equ $1,7
+equ $1,6
 add $2,$1
 mov $1,$0
-equ $1,8
+equ $1,7
 mul $1,6
 add $2,$1
 mov $0,$2

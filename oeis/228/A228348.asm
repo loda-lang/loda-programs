@@ -7,14 +7,12 @@
 mov $2,$0
 mul $2,8
 nrt $2,2
-sub $2,1
+add $2,1
 div $2,2
 mov $5,$2
-add $5,1
 bin $5,2
 sub $0,$5
 sub $0,1
-add $2,1
 mov $4,$0
 mov $0,8
 lpb $0

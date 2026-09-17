@@ -1,5 +1,5 @@
 ; A230060: Numbers k such that the distance from k^2 to the smallest triangular number >= k^2 is itself triangular.
-; Submitted by Kingda Toro
+; Submitted by loader3229
 ; 1,3,5,6,7,9,11,15,18,20,28,30,35,42,45,54,60,63,66,77,78,88,90,102,105,114,117,126,130,138,150,162,165,174,175,186,198,204,210,221,222,234,245,246,247,258,264,266,270,282,294,306,315,318,330,342,351,354,366,368,378,385,390
 
 #offset 1
@@ -13,22 +13,19 @@ lpb $2
   mov $7,$3
   mul $7,8
   nrt $7,2
-  sub $7,1
+  add $7,1
   div $7,2
   mov $8,$7
-  add $8,1
   bin $8,2
   sub $3,$8
   sub $3,1
   sub $7,$3
-  add $7,1
   mov $6,$7
   mul $6,8
   nrt $6,2
-  sub $6,1
+  add $6,1
   div $6,2
   mov $8,$6
-  add $8,1
   bin $8,2
   sub $7,$8
   mov $3,$7

@@ -1,13 +1,11 @@
 ; A294652: Positive integers k such that the sum of decimal digits of (4^k - 1) equals 3*k.
-; Submitted by Science United
+; Submitted by BlackGoose05
 ; 1,2,3,4,6,7,8,10,12,13,14,20,23,24,25,26,27,28,34,36,41,46,65,71,74,83,86,89,92,111,120,235,238,253,297,366,446
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,4
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1

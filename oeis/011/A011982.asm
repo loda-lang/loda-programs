@@ -1,24 +1,21 @@
 ; A011982: Covering numbers C(n,7,3).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,4,4,6,8,11,13,15,15
+; Formula: a(n) = -sqrtint(5*logint(n-6,3)^2)+sqrtint(5*(n-3)^2)-7
 
 #offset 7
 
-mov $1,1
-mov $9,1
-fil $9,8
-mul $14,2
-lpb $0
-  rol $1,17
-  sub $0,1
-  add $11,1
-  add $17,$2
-  add $17,$3
-  add $17,$4
-  add $17,$5
-  add $17,$6
-  add $17,$7
-  add $17,$8
-  add $17,$9
-lpe
-mov $0,$10
+mov $2,$0
+sub $2,3
+pow $2,2
+mul $2,5
+nrt $2,2
+sub $0,6
+log $0,3
+mov $1,$0
+pow $1,2
+mul $1,5
+nrt $1,2
+sub $2,$1
+mov $0,$2
+sub $0,7

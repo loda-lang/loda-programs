@@ -1,14 +1,11 @@
 ; A104356: Smallest m such that A104350(m) has exactly n trailing zeros in decimal representation.
+; Submitted by loader3229
 ; 1,5,10,15,20,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072,262144,524288,1048576,2097152,4194304,8388608,16777216,33554432,67108864,134217728,268435456,536870912,1073741824,2147483648
-; Formula: a(n) = 5*n+max(-5*n+b(n),0), b(n) = 2*b(n-1), b(1) = 2, b(0) = 1
+; Formula: a(n) = max(2^n,5*n)
 
-mov $3,1
-lpb $0
-  sub $0,1
-  add $2,5
-  mul $3,2
-lpe
-trn $3,$2
-mov $1,$2
-add $1,$3
-mov $0,$1
+mov $1,$0
+mul $1,5
+mov $2,2
+pow $2,$0
+max $2,$1
+mov $0,$2

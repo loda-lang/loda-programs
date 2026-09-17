@@ -5,11 +5,8 @@
 
 trn $0,1
 mov $1,$0
-mov $3,1
-add $3,$0
-mov $0,$3
-add $0,$3
-mul $0,-1
+add $0,1
+mul $0,-2
 mov $2,2
 pow $2,$1
 add $1,3

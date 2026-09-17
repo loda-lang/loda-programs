@@ -1,5 +1,5 @@
 ; A003534: Divisors of 2^26 - 1.
-; Submitted by Owen Jiang
+; Submitted by Solo Man
 ; 1,3,2731,8191,8193,24573,22369621,67108863
 
 #offset 1
