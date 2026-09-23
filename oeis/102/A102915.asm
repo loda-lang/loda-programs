@@ -5,7 +5,5 @@
 
 #offset 1
 
-mov $1,$0
-seq $1,101780 ; Primes of the form 100*n + 3.
-mov $0,$1
+seq $0,101780 ; Primes of the form 100*n + 3.
 div $0,10

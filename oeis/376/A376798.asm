@@ -1,7 +1,7 @@
 ; A376798: Least number of inequivalent cells in a polycube with n cells.
 ; Submitted by Science United
 ; 1,1,2,1,2,1,2,1,3,2,3,2,3
-; Formula: a(n) = truncate((gcd(n-1,2)+sqrtint(gcd(n-1,2)*(n-1)))/2)
+; Formula: a(n) = floor((gcd(n-1,2)+sqrtint(gcd(n-1,2)*(n-1)))/2)
 
 #offset 1
 

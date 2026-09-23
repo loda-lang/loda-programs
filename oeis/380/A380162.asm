@@ -1,6 +1,7 @@
 ; A380162: a(n) is the value of the Euler totient function when applied to the largest square dividing n.
 ; Submitted by Science United
 ; 1,1,1,2,1,1,1,2,6,1,1,2,1,1,1,8,1,6,1,2,1,1,1,2,20,1,6,2,1,1,1,8,1,1,1,12,1,1,1,2,1,1,1,2,6,1,1,8,42,20,1,2,1,6,1,2,1,1,1,2,1,1,6,32,1,1,1,2,1,1,1,12,1,1,20,2,1,1,1,8
+; Formula: a(n) = truncate((2*A002618(gcd(0,floor((n-1)/A019554(max(0,n-1)+1))+1))*((valuation((5*n)^(5*n),2)+1)%10))/2)
 
 #offset 1
 

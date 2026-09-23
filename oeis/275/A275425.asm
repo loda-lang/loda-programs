@@ -11,6 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $8,$4
+    equ $8,7
     mov $9,10
     add $9,$5
     sub $4,1
@@ -18,8 +19,6 @@ lpb $0
     add $7,$0
     add $7,$4
     bin $7,$0
-    sub $8,4
-    equ $8,3
     mul $7,$$9
     mul $7,$8
     add $5,1

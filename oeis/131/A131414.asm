@@ -22,8 +22,7 @@ mov $4,-1
 add $4,$3
 mul $4,$2
 sub $1,$0
-add $1,3
 mul $1,2
 add $4,$1
 mov $0,$4
-sub $0,5
+add $0,1

@@ -1,11 +1,26 @@
 ; A398005: Number of domino towers in 3 dimensions consisting of n blocks 2 X 1 X 1, connected and supported, counted up to horizontal translation.
-; Submitted by Science United
+; Submitted by LCB001
 ; 3,12,48,189,738,2862,11043,42444,162648,621837,2373138,9043974,34428483,130948812,497726208,1890808029,7179951618,27255325662,103434972003,392458313484,1488842117928,5647388078637,21419150942898,81230998124214,308044590380163,1168109195049612,4429308644898768,16794795385673469,63679937689201698,241447076017080462,915449671496211363,3470896133671970124,13159655088900828408,49893506687907247437,189165044390990783058,717192330418393758054,2719122155973252623043,10309093553810236142412
-; Formula: a(n) = 3*truncate((A269771(n)-4)/4)+3
+; Formula: a(n) = 3*truncate((b(n-1)-4)/4)+3, b(n) = 6*b(n-1)-6*b(n-2)-9*b(n-3), b(5) = 3816, b(4) = 984, b(3) = 252, b(2) = 64, b(1) = 16, b(0) = 4
 
 #offset 1
 
-seq $0,269771 ; Number of length-n 0..3 arrays with every repeated value unequal to the previous repeated value plus one mod 3+1.
+mov $2,4
+mov $3,16
+mov $4,64
+sub $0,1
+lpb $0
+  mul $2,-9
+  rol $2,3
+  mov $5,$2
+  mul $5,-6
+  add $4,$5
+  mov $5,$3
+  mul $5,6
+  sub $0,1
+  add $4,$5
+lpe
+mov $0,$2
 sub $0,4
 div $0,4
 mul $0,3

@@ -1,20 +1,24 @@
 ; A044380: Numbers n such that string 4,8 occurs in the base 10 representation of n but not of n-1.
-; Submitted by Steve Dodd
+; Submitted by loader3229
 ; 48,148,248,348,448,480,548,648,748,848,948,1048,1148,1248,1348,1448,1480,1548,1648,1748,1848,1948,2048,2148,2248,2348,2448,2480,2548,2648,2748,2848,2948,3048,3148,3248,3348,3448,3480
-; Formula: a(n) = 68*floor((10*n+599)/11)+32*floor((10*n+600)/11)-5452
+; Formula: a(n) = floor((70*floor((10*n+16)/11)+50*floor((10*n-5)/11)+15*bitxor(7*floor((10*n+16)/11)+5*floor((10*n-5)/11),1))/3)-73
 
 #offset 1
 
-add $0,60
 mul $0,10
 mov $1,$0
-sub $1,1
-div $1,11
+add $0,16
 div $0,11
+mul $0,7
+sub $1,5
+div $1,11
+mul $1,5
 add $0,$1
-add $0,$1
-mul $0,8
+mov $1,$0
+bxo $0,1
 add $1,$0
-mov $0,$1
-mul $0,4
-sub $0,5452
+add $0,$1
+add $0,$1
+mul $0,5
+div $0,3
+sub $0,73

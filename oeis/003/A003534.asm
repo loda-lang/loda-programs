@@ -1,12 +1,12 @@
 ; A003534: Divisors of 2^26 - 1.
-; Submitted by Solo Man
+; Submitted by Josemi
 ; 1,3,2731,8191,8193,24573,22369621,67108863
 
 #offset 1
 
 mov $1,1
 mov $5,$0
-equ $0,2
+equ $0,1
 mov $2,$0
 add $2,8
 pow $2,4
@@ -15,7 +15,7 @@ lpb $2
   mod $4,$1
   equ $4,0
   lpb $4
-    bin $4,2
+    bin $4,4
     add $7,1
     mov $3,$7
     equ $3,$5

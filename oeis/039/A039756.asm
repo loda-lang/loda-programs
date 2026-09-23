@@ -1,7 +1,6 @@
 ; A039756: Triangle of B-analogs of Stirling numbers of 2nd kind.
 ; Submitted by Science United
 ; 1,1,1,1,4,1,1,9,13,1,1,16,58,40,1,1,25,170,330,121,1,1,36,395,1520,1771,364,1,1,49,791,5075,12411,9219,1093,1,1,64,1428,13776,58086,96096,47188,3280,1,1,81,2388,32340,209622,618870,719860,239220,9841,1,1,100,3765,68160,630042,2924712,6289690,5278240,1205941,29524,1,1,121,5665,132165,1652442,11115258,38461522,61885450,38153621,6059229,88573,1,1,144
-; Formula: a(n) = truncate(A225476((truncate((sqrtint(8*n+8)-1)/2)+1)^2-n-1)/(((truncate((sqrtint(8*n+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n+8)-1)/2)+1)^2-8*n-7)+1)/2),2)-n-1)!))
 
 add $0,1
 mov $1,$0
@@ -21,8 +20,50 @@ div $4,2
 bin $4,2
 mov $3,$1
 sub $3,$4
-seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $2,$1
-seq $2,225476 ; Triangle read by rows, k!*2^k*S_2(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+sub $5,$3
+mov $8,$1
+mul $8,8
+add $8,1
+nrt $8,2
+add $8,1
+div $8,2
+bin $8,2
+fac $3,$5
+mov $7,$1
+sub $7,$8
+mov $11,2
+pow $11,$7
+mov $6,$1
+add $6,1
+mov $12,$6
+mul $12,8
+nrt $12,2
+sub $12,1
+div $12,2
+mov $13,$12
+add $13,1
+bin $13,2
+sub $6,$13
+sub $6,1
+mov $13,$6
+mov $6,$12
+mov $12,$13
+add $12,2
+lpb $12
+  sub $12,1
+  mov $15,$12
+  add $15,$13
+  pow $15,$6
+  sub $10,$12
+  bin $10,$14
+  mul $10,$15
+  sub $13,1
+  add $14,1
+  add $9,$10
+  mov $10,0
+lpe
+mov $6,$9
+div $6,$11
+mov $2,$6
 div $2,$3
 mov $0,$2

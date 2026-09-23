@@ -1,7 +1,7 @@
 ; A125093: Triangle T(n,k) = n*A054525(n,k) read by rows.
 ; Submitted by iBezanilla
 ; 1,-2,2,-3,0,3,0,-4,0,4,-5,0,0,0,5,6,-6,-6,0,0,6,-7,0,0,0,0,0,7,0,0,0,-8,0,0,0,8,0,0,-9,0,0,0,0,0,9,10,-10,0,0,-10,0,0,0,0,10,-11,0,0,0,0,0,0,0,0,0,11,0,12,0,-12,0,-12,0,0,0,0,0,12,-13,0
-; Formula: a(n) = A008683(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))*truncate((sqrtint(8*n)+1)/2)*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)
+; Formula: a(n) = A008683(truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)))*floor((sqrtint(8*n)+1)/2)*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)
 
 #offset 1
 

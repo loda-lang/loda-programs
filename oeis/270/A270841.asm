@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
-neq $1,$0
-sub $0,1
+sub $0,2
+leq $1,$0
 mov $2,2
 pow $2,$0
 fac $2,$1

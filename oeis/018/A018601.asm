@@ -1,25 +1,20 @@
 ; A018601: Divisors of 705.
-; Submitted by Aflatoxin
+; Submitted by loader3229
 ; 1,3,5,15,47,141,235,705
+; Formula: a(n) = (8*(((n-1)%4)>=3)+2*((n-1)%4)+1)*47^floor((n-1)/4)
 
 #offset 1
 
-mov $1,1
-mov $2,3
 sub $0,1
-lpb $0
-  add $1,2
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
-  max $3,2
-  div $0,2
-  mul $2,$1
-  dif $2,$3
-  bin $1,2
-  add $1,1
-  mul $1,2
-lpe
-mov $0,$2
-div $0,3
+mov $1,$0
+mod $1,4
+div $0,4
+mov $2,47
+pow $2,$0
+mov $0,$1
+geq $0,3
+mul $0,8
+add $0,$1
+add $0,$1
+add $0,1
+mul $0,$2

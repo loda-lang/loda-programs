@@ -6,6 +6,4 @@
 #offset 1
 
 seq $0,286708 ; Powerful numbers (A001694) that are not prime powers (A000961).
-mov $1,$0
-seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-mov $0,$1
+seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

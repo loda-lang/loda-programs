@@ -1,5 +1,5 @@
 ; A117540: Scrambled version of the first 8 terms of the Fibonacci sequence appearing as one of the clues in _The Da Vinci Code_.
-; Submitted by [DPC] hansR
+; Submitted by Geoff
 ; 13,3,2,21,1,1,8,5
 
 #offset 1
@@ -16,12 +16,9 @@ mov $12,2
 mov $13,1
 mov $14,4
 mov $15,2
-mov $16,1
 mov $18,4
 mov $20,7
 mov $22,8
-mov $23,7
-mov $24,1
 mov $25,5
 mov $26,9
 lpb $0

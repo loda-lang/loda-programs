@@ -1,17 +1,16 @@
 ; A092121: Minimum sum of absolute values of coefficients of a product of n binomials.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 6,8,10,12,16,16,20,24,28
-; Formula: a(n) = 2*((n-2)==5)+2*truncate(((n-2)*(n+3)-2)/11)+6
+; Formula: a(n) = 2*floor((10*n-4)/11)+2*max(floor((10*n-4)/11)-5,0)+2
 
 #offset 3
 
-sub $0,2
-mov $1,$0
-add $0,5
-mul $0,$1
-equ $1,5
-sub $0,2
+mul $0,10
+sub $0,4
 div $0,11
-add $0,$1
-add $0,3
+mov $1,$0
+trn $0,5
+add $1,$0
+mov $0,$1
 mul $0,2
+add $0,2

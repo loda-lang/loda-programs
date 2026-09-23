@@ -1,15 +1,14 @@
 ; A393685: Records in A393684.
-; Submitted by atannir
+; Submitted by loader3229
 ; 71,843,8335,77459,704727,6365659,57360671,516455715,4648730983,41840468075,376569881007
-; Formula: a(n) = 4*truncate((3*n+2*binomial(3^(n+1),2)-3*3^(n+1)+3)/3)+3
+; Formula: a(n) = 4*truncate(((3^(n+1)-1)*3^(n+1)+3*n-3*3^(n+1)+3)/3)+3
 
 #offset 1
 
 add $0,1
 mov $1,3
 pow $1,$0
-bin $1,2
-mul $1,2
+fac $1,-2
 mov $2,3
 pow $2,$0
 sub $2,$0

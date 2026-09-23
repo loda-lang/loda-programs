@@ -20,8 +20,7 @@ lpb $2
   mov $3,$6
   mov $5,$0
   sub $5,$4
-  add $5,1
-  neq $5,0
+  neq $5,-1
   sub $2,$5
 lpe
 mov $0,$1

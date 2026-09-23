@@ -1,19 +1,17 @@
 ; A380082: Number of Boolean intervals of rank 2 in the weak order of the Coxeter group of type C_n, for n >= 2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by ForSocial
 ; 0,12,288,5760,115200,2419200,54190080,1300561920,33443020800,919683072000,26977370112000,841693947494400,27852417898905600,974834626461696000,35993893900124160000,1398619877261967360000,57063690992288268288000,2439472789920323469312000,109058783549379166863360000
-; Formula: a(n) = truncate((binomial(n-1,2)*b(2*n))/4), b(n) = n*b(n-2), b(1) = 1, b(0) = 1
+; Formula: a(n) = binomial((n-1)^2,2)*2^(n-2)*(n-2)!
 
 #offset 2
 
-sub $0,1
+sub $0,2
 mov $2,1
-mov $1,$0
-mul $1,2
-add $1,2
-lpb $1
-  mul $2,$1
-  sub $1,2
-lpe
+fac $2,$0
+mov $1,2
+pow $1,$0
+add $0,1
+pow $0,2
 bin $0,2
+mul $0,$1
 mul $0,$2
-div $0,4

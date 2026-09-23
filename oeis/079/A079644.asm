@@ -1,7 +1,7 @@
 ; A079644: a(n) = (n mod sqrtint(n)).
 ; Submitted by Science United
 ; 0,0,0,0,1,0,1,0,0,1,2,0,1,2,0,0,1,2,3,0,1,2,3,0,0,1,2,3,4,0,1,2,3,4,0,0,1,2,3,4,5,0,1,2,3,4,5,0,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0
-; Formula: a(n) = -truncate(n/sqrtint(n))*sqrtint(n)+n
+; Formula: a(n) = n%sqrtint(n)
 
 #offset 1
 

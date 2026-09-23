@@ -15,11 +15,11 @@ lpb $0
   rol $2,3
   max $0,$4
   sub $0,1
+  div $4,42
   mov $6,$1
   add $6,3
   mul $6,2
   add $1,1
-  div $4,$6
 lpe
 mov $0,$6
 add $0,5

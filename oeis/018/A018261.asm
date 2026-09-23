@@ -1,22 +1,22 @@
 ; A018261: Divisors of 48.
-; Submitted by FritzB
+; Submitted by loader3229
 ; 1,2,3,4,6,8,12,16,24,48
+; Formula: a(n) = if((-sumdigits(bitor(binomial(truncate((n-2)/2)+1,2),truncate((n-2)/2)),2)*sign(bitor(binomial(truncate((n-2)/2)+1,2),truncate((n-2)/2)))+n-2)<=(-1),0,2^(-sumdigits(bitor(binomial(truncate((n-2)/2)+1,2),truncate((n-2)/2)),2)*sign(bitor(binomial(truncate((n-2)/2)+1,2),truncate((n-2)/2)))+n-2))+if(truncate((n-2)/2)<=(-1),0,2^truncate((n-2)/2))
 
 #offset 1
 
-mov $2,$0
-pow $2,4
-lpb $2
-  add $4,5
-  sub $1,6
-  mov $3,$1
-  mul $3,40
-  gcd $3,$4
-  div $3,$4
-  sub $0,$3
-  mod $1,2
-  sub $2,$0
-lpe
-mov $0,$4
-div $0,5
-add $0,1
+mov $1,$0
+sub $1,2
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+bor $2,$1
+dgs $2,2
+sub $0,$2
+sub $0,2
+mov $2,2
+pow $2,$0
+mov $0,2
+pow $0,$1
+add $0,$2

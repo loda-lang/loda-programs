@@ -11,7 +11,15 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,1704 ; a(n) = n concatenated with n + 1.
+  mov $5,$1
+  add $5,2
+  mov $7,$5
+  log $5,10
+  add $5,1
+  mov $6,10
+  pow $6,$5
+  mul $3,$6
+  add $3,$7
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,$4
   equ $3,1

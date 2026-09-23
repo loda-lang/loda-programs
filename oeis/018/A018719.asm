@@ -1,25 +1,23 @@
 ; A018719: Divisors of 915.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 1,3,5,15,61,183,305,915
+; Formula: a(n) = truncate(((2*bitand(max(bitxor(((n-1)%4+1)^2,1)-3,0),-18)+2)*61^floor((n-1)/4))/2)
 
 #offset 1
 
-mov $1,2
-mov $2,3
 sub $0,1
-lpb $0
-  add $1,1
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
-  div $0,2
-  mul $2,$1
-  dif $2,$3
-  sub $1,2
-  mul $1,2
-  bin $1,2
-  mul $1,4
-lpe
-mov $0,$2
-div $0,3
+mov $1,$0
+mod $1,4
+add $1,1
+pow $1,2
+bxo $1,1
+div $0,4
+mov $2,61
+pow $2,$0
+mov $0,$1
+trn $0,3
+ban $0,-18
+mul $0,2
+add $0,2
+mul $0,$2
+div $0,2

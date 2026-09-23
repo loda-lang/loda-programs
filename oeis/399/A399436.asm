@@ -9,14 +9,13 @@ mov $5,1
 mov $6,$0
 lpb $6
   sub $6,1
-  mov $7,$5
+  mov $4,$5
   mov $5,$3
-  add $3,$7
+  add $3,$4
 lpe
 mov $2,2
 pow $2,$0
-add $4,$3
-mov $1,$4
+mov $1,$3
 gcd $1,$2
 mov $0,$2
 div $0,$1

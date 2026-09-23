@@ -1,7 +1,7 @@
-; A328873: Maximal size of a set of pairwise mutually orthogonal diagonal Latin squares of order n.
+; A328873: Maximum size of a set of pairwise mutually orthogonal diagonal Latin squares of order n.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,0,0,2,2,1,4,6,6
-; Formula: a(n) = sumdigits(gcd(n-1,10),2)*sign(gcd(n-1,10))-gcd(n-1,10)-10*truncate((sumdigits(gcd(n-1,10),2)*sign(gcd(n-1,10))-gcd(n-1,10)+n+8)/10)+n+8
+; Formula: a(n) = -gcd(n-1,10)-10*truncate((-gcd(n-1,10)+sumdigits(gcd(n-1,10),2)+n+8)/10)+sumdigits(gcd(n-1,10),2)+n+8
 
 #offset 1
 

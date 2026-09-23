@@ -8,16 +8,14 @@ add $0,1
 mov $2,$0
 mul $2,8
 nrt $2,2
-sub $2,1
+add $2,1
 div $2,2
 mov $8,$2
-add $8,1
 bin $8,2
 sub $0,$8
 sub $0,1
 mov $1,3
 sub $2,$0
-add $2,1
 add $0,$2
 sub $2,1
 lpb $0

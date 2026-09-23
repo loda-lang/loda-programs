@@ -1,21 +1,19 @@
 ; A385406: Triangle read by rows: T(n, k) = n*(n+1)/2 - floor((n-1)/2) - (-1)^k * floor(k/2).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,3,2,5,4,6,9,8,10,7,13,12,14,11,15,19,18,20,17,21,16,25,24,26,23,27,22,28,33,32,34,31,35,30,36,29,41,40,42,39,43,38,44,37,45,51,50,52,49,53,48,54,47,55,46,61,60,62,59,63,58,64,57,65,56,66,73,72,74,71,75,70,76,69,77,68,78,67
-; Formula: a(n) = truncate(((truncate((sqrtint(8*n)-1)/2)+1)^2-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+gcd(2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)/2)+n-1)+1)/2)
+; Formula: a(n) = truncate((floor((sqrtint(8*n)+1)/2)^2-n+binomial(floor((sqrtint(8*n)+1)/2),2)+gcd(2*n-2*binomial(floor((sqrtint(8*n)+1)/2),2),-binomial(floor((sqrtint(8*n)+1)/2),2)-2*truncate((-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1)/2)+n-1)+1)/2)
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $3,$1
-add $3,1
 bin $3,2
 sub $0,$3
 sub $0,1
-add $1,1
 pow $1,2
 sub $1,$0
 mov $2,$0

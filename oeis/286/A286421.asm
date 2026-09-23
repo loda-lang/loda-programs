@@ -10,8 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,286419 ; {0100->1}-transform of the Thue-Morse word A010060.
   add $3,1
   sub $0,$3

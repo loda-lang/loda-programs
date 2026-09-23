@@ -5,17 +5,14 @@
 #offset 1
 
 mov $1,$0
-sub $0,1
 mov $2,12
 mov $3,$0
-add $3,3
 pow $3,2
 lpb $3
   mov $4,$2
   add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $4,2
-  trn $4,1
+  trn $4,3
   add $4,$5
   gcd $4,2
   sub $1,$4

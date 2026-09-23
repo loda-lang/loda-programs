@@ -6,7 +6,7 @@
 
 sub $0,1
 lpb $0
-  pow $0,0
+  mov $0,1
   seq $0,49744 ; a(n)=T(n,1), array T as in A049735.
   pow $0,2
   sub $0,1

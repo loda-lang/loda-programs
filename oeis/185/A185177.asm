@@ -29,9 +29,8 @@ mul $1,3
 add $2,$1
 mov $1,$0
 geq $1,12
-add $0,4
 add $2,$1
 bor $2,$1
 add $2,$0
 mov $0,$2
-add $0,1
+add $0,5

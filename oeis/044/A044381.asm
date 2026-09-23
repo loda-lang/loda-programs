@@ -1,7 +1,7 @@
 ; A044381: Numbers n such that string 4,9 occurs in the base 10 representation of n but not of n-1.
 ; Submitted by loader3229
 ; 49,149,249,349,449,490,549,649,749,849,949,1049,1149,1249,1349,1449,1490,1549,1649,1749,1849,1949,2049,2149,2249,2349,2449,2490,2549,2649,2749,2849,2949,3049,3149,3249,3349,3449,3490
-; Formula: a(n) = floor((175*floor((10*n+16)/11)+125*floor((10*n-5)/11)-125)/3)-26
+; Formula: a(n) = truncate(bitand(175*floor((10*n+16)/11)+125*floor((10*n-5)/11),-3)/3)-67
 
 #offset 1
 
@@ -19,6 +19,6 @@ add $1,$0
 add $0,$1
 add $0,$1
 mul $0,5
-sub $0,125
+ban $0,-3
 div $0,3
-sub $0,26
+sub $0,67

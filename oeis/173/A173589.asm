@@ -1,9 +1,53 @@
 ; A173589: Integers whose binary representation contains exactly three 1's, no two 1's being adjacent.
 ; Submitted by Athlici
 ; 21,37,41,42,69,73,74,81,82,84,133,137,138,145,146,148,161,162,164,168,261,265,266,273,274,276,289,290,292,296,321,322,324,328,336,517,521,522,529,530,532,545,546,548,552,577,578,580,584,592,641,642,644,648,656,672,1029,1033,1034,1041,1042,1044,1057,1058,1060,1064,1089,1090,1092,1096,1104,1153,1154,1156,1160,1168,1184,1281,1282,1284
-; Formula: a(n) = A048678(A014311(n))
 
 #offset 1
 
-seq $0,14311 ; Numbers with exactly 3 ones in binary expansion.
-seq $0,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
+sub $0,1
+mov $1,$0
+mov $3,$0
+mul $3,6
+nrt $3,3
+mov $4,$3
+add $4,2
+bin $4,3
+geq $0,$4
+add $0,$3
+sub $0,1
+mov $2,$0
+fac $2,3
+div $2,6
+sub $1,$2
+mov $2,$1
+add $1,1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $5,$1
+add $5,1
+bin $5,2
+sub $2,$5
+mov $6,2
+pow $6,$0
+mul $6,4
+mov $7,2
+pow $7,$1
+mul $7,2
+mov $8,2
+pow $8,$2
+mov $0,$6
+add $0,$7
+add $0,$8
+lpb $0
+  mov $11,$0
+  max $11,1
+  log $11,2
+  mov $10,2
+  pow $10,$11
+  mod $0,$10
+  mul $9,2
+  add $9,$10
+lpe
+mov $0,$9

@@ -10,5 +10,4 @@ seq $1,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, wh
 mov $2,$0
 seq $2,113177 ; Fully additive with a(p) = Fibonacci(p); If, for p prime, p^(m_{n,p}) is the highest power of p dividing n with m>=0, then a(n) = Sum_{p prime} F(p)*(m_{n,p}), where F(p) = p-th Fibonacci number.
 gcd $2,$1
-sub $0,1
 mov $0,$2

@@ -1,12 +1,12 @@
 ; A399197: Number of nonnegative integer solutions to the equation x^2 + 4*y^2 = n.
-; Submitted by Science United
+; Submitted by Geoff
 ; 1,1,0,0,2,1,0,0,1,1,0,0,0,1,0,0,2,1,0,0,2,0,0,0,0,2,0,0,0,1,0,0,1,0,0,0,2,1,0,0,2,1,0,0,0,1,0,0,0,1,0,0,2,1,0,0,0,0,0,0,0,1,0,0,2,2,0,0,2,0,0,0,1,1,0,0,0,0,0,0
 
 mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
-  mov $4,3
+  mov $4,$3
   mov $2,$0
   add $2,3
   lpb $2

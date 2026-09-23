@@ -12,9 +12,8 @@ add $2,$0
 div $2,13
 mov $3,$0
 trn $3,$2
-mov $4,-1
+mov $4,1
 add $4,$1
-add $4,2
 sub $3,$4
 div $3,2
 dif $3,-1

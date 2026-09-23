@@ -4,17 +4,16 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-sub $0,1
+sub $1,1
+sub $0,2
 mov $4,$0
 pow $4,2
 lpb $4
   mov $5,$3
   add $5,3
   seq $5,109082 ; Depth of rooted tree having Matula-Goebel number n.
-  sub $5,2
-  equ $5,0
+  equ $5,2
   sub $0,$5
   add $3,3
   mov $6,$0

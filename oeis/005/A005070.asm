@@ -5,9 +5,7 @@
 
 #offset 1
 
-mov $2,$0
-seq $0,121940 ; Product of the first n primes of the form 6k+1.
 mov $1,$0
-gcd $1,$2
-mov $0,$1
+seq $0,121940 ; Product of the first n primes of the form 6k+1.
+gcd $0,$1
 seq $0,8472 ; Sum of the distinct primes dividing n.
