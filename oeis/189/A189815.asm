@@ -9,7 +9,6 @@ bin $3,2
 lpb $0
   sub $0,1
   mov $4,$2
-  add $4,1
   seq $4,159039 ; E.g.f. sec(x)/(1-x) = 1/( cos(x) * (1-x) ).
   mov $5,$2
   add $5,$3

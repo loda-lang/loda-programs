@@ -7,10 +7,14 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  add $4,1
   mov $3,$1
   add $3,1
-  seq $3,73791 ; Replace 4^k with (-4)^k in base 4 expansion of n.
+  add $4,1
+  mov $5,$3
+  bxo $5,51
+  mov $6,51
+  sub $6,$5
+  mov $3,$6
   gcd $3,0
   div $3,$4
   sub $0,$3

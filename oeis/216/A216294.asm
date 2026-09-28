@@ -38,9 +38,51 @@ lpb $2
   bin $9,2
   sub $8,$9
   sub $8,1
-  bin $5,$8
   sub $4,$0
-  seq $4,127568 ; Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
+  bin $5,$8
+  mov $10,$4
+  mul $10,8
+  add $10,1
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $12,$10
+  add $12,1
+  mul $12,$10
+  div $12,2
+  mov $11,$4
+  sub $11,$12
+  mov $13,2
+  pow $13,$11
+  mul $13,66744
+  mov $15,$13
+  mov $13,3
+  pow $13,$11
+  mul $13,22260
+  add $15,$13
+  mov $13,4
+  pow $13,$11
+  mul $13,5544
+  add $15,$13
+  mov $13,5
+  pow $13,$11
+  mul $13,1134
+  add $15,$13
+  mov $13,6
+  pow $13,$11
+  mul $13,168
+  add $15,$13
+  mov $13,7
+  pow $13,$11
+  mul $13,36
+  add $15,$13
+  mov $13,9
+  pow $13,$11
+  add $15,$13
+  mov $14,$15
+  div $14,362880
+  mov $4,$14
+  add $4,1
   mul $4,$7
   mul $4,$5
   add $6,$4

@@ -1,12 +1,13 @@
 ; A051568: Let M(n) (A051755) be the maximal number of queens that can be placed on an n X n chessboard so that each queen attacks exactly two other queens; a(n) is the number of non-equivalent solutions. "Non-equivalent" means none of the a(n) solutions can be mapped onto any other solution by board rotations through 90, 180 or 270 degrees or mirror operations along the two diagonals or center lines.
 ; Submitted by Stony666
-; 4,2,1,1,5,2,15,3
+; 4,2,1,1,5,2,15,3,37
+; Formula: a(n) = if((floor(floor(gcd((n-2)*(-n+4)+6,(n-2)*(-n+4)+6)/gcd(n-2,(n-2)*(-n+4)+6))/2)%5)==0,floor(floor(gcd((n-2)*(-n+4)+6,(n-2)*(-n+4)+6)/gcd(n-2,(n-2)*(-n+4)+6))/2)/5,floor(floor(gcd((n-2)*(-n+4)+6,(n-2)*(-n+4)+6)/gcd(n-2,(n-2)*(-n+4)+6))/2))+1
 
 #offset 3
 
-sub $0,1
 mov $2,$0
-sub $0,1
+sub $2,1
+sub $0,2
 mov $1,3
 sub $1,$2
 mul $1,$0

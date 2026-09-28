@@ -1,6 +1,6 @@
 ; A076435: Number of strongly regular simple graphs on n nodes.
 ; Submitted by Kotenok2000
-; 1,2,2,4,3,6,2,6,5,8,2,10,3,6
+; 1,2,2,4,3,6,2,6,5,8,2,10,3,6,8,14,3,10,2,10,8,6,2,14,21,26,8,18,43,14,2,10,6,6,7714,65476
 
 #offset 1
 

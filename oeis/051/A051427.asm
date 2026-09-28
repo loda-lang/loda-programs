@@ -1,6 +1,6 @@
 ; A051427: Number of strictly Deza graphs with n nodes.
 ; Submitted by Simon Strandgaard
-; 0,0,0,0,0,0,0,3,2,1,0,6,1,1,1
+; 0,0,0,0,0,0,0,3,2,1,0,6,1,1,1,10,3,13,11,56,31
 
 #offset 1
 

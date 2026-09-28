@@ -1,4 +1,4 @@
-; A317990: Number of genera of real quadratic field Q(sqrt(k)), k squarefree > 1.
+; A317990: Number of genera of the real quadratic field Q(sqrt(k)), k squarefree > 1.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,2,2,2,2,1,2,4,1,2,2,2,2,2,1,4,2,2,2,4,1,2,4,1,4,2,2,2,4,1,4,2,2,2,1,2,2,4,2,2,4,2,1,2,2,4,2,2,2,2,2,4,1,4,2,2,4,1,1,4,2,4,2,2,1,4,4,1,4,4,2,4,2,4,2,2,4,2
 ; Formula: a(n) = binomial(A001221(A033198(n-1)),2)+1

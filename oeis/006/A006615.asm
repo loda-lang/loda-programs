@@ -1,6 +1,6 @@
 ; A006615: A variant of Zarankiewicz's problem: a(n) is the least k such that every n X n {0,1}-matrix with k ones contains an all-ones 3 X 4 submatrix.
 ; Submitted by h8a1c5
-; 15,22,31,38,46,57,67,79
+; 15,22,31,38,46,57,67,79,91
 
 #offset 4
 

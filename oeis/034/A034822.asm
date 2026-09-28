@@ -1,6 +1,6 @@
 ; A034822: Numbers k such that there are no palindromic squares of length k.
 ; Submitted by iBezanilla
-; 2,4,8,10,14,18,20,24,30,38,40
+; 2,4,8,10,14,18,20,24,30,38,40,46,54,56,62,64
 
 #offset 1
 

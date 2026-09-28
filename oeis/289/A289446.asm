@@ -1,10 +1,7 @@
-; A289446: Related to number of mesh patterns of length 2 that avoid the pattern 231.
+; A289446: a(n) is the number of permutations of length n that avoid the pattern 231 and the mesh pattern (21, 204) or the same sequence for the mesh patterns (21, 206), (21, 236), (21, 238).
 ; Submitted by PDW
-; 1,1,1,2,7,25,85,285,964,3310,11527
+; 1,1,1,2,7,25,85,285,964,3310,11527,40619,144545,518680,1874713,6819033,24942773,91692355,338580112,1255267919,4670808304,17437517562,65296399663,245186344749,923016310851,3482917631642,13171095703465,49908870565766,189474155924628
 
-#offset 1
-
-sub $0,1
 mov $6,$0
 mov $4,2
 lpb $4

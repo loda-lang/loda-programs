@@ -1,6 +1,6 @@
-; A138580: Numbers n such that 2^(2*n-13)-13 is prime.
+; A138580: Numbers k such that 2^(2*k-13) - 13 is prime.
 ; Submitted by Jan
-; 7,8,9,11,13,15,35,59,75
+; 9,11,13,15,35,59,75,1615,1621,2123,3055,4385,5735,6043,7719,20065,22685
 
 #offset 1
 

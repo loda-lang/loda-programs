@@ -1,5 +1,5 @@
 ; A215476: Minimum number of comparisons needed to find the median of n elements.
-; 0,1,3,4,6,8,10,12,14,16,18,20,23
+; 0,1,3,4,6,8,10,12,14,16,18,20,23,25,27
 ; Formula: a(n) = floor(((n+14)^2)/22)-10
 
 #offset 1

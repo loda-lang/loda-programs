@@ -22,6 +22,5 @@ lpb $3
 lpe
 mov $0,$2
 mod $0,9
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1

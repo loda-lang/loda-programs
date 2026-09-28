@@ -1,6 +1,6 @@
 ; A279405: Peaceable coexisting armies of queens on a torus: the maximum number m such that m white queens and m black queens can coexist on an n X n toroidal chessboard without attacking each other.
 ; Submitted by Science United
-; 0,0,0,2,2,4,4,8,7,12,10,18
+; 0,0,0,2,2,4,4,8,7,12,10,18,16,25,20,32,28,42
 
 #offset 1
 

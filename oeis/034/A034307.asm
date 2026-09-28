@@ -1,6 +1,6 @@
 ; A034307: Numbers k such that there are no oblong (promic) palindromes of length k.
 ; Submitted by Science United
-; 2,5,9,12,18,20,30,34
+; 2,5,9,12,18,20,30,34,41,42,48,49
 
 #offset 1
 

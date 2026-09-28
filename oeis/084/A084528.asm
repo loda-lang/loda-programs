@@ -1,6 +1,6 @@
 ; A084528: Partial sums of A084529. Positions of ones in the first differences of A084526.
 ; Submitted by Skillz
-; 1,2,5,17,59,201,703,2405
+; 1,2,5,17,59,201,703,2405,8283,28063,95477
 
 #offset 1
 

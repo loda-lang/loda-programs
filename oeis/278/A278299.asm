@@ -1,7 +1,7 @@
 ; A278299: a(n) is the tile count of the smallest polyomino with an n-coloring such that every color is adjacent to every other distinct color at least once.
 ; Submitted by Science United
-; 2,4,6,9,12,15,19,24,30,34
-; Formula: a(n) = floor(((2*truncate((7*n-6)/4)+2*n+7)^2)/120)+1
+; 2,4,6,9,12,15,19,24,30,34,40,46,56,61,69,77,90,96,106
+; Formula: a(n) = floor(((2*floor((7*n-6)/4)+2*n+7)^2)/120)+1
 
 #offset 2
 

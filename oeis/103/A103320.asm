@@ -2,9 +2,9 @@
 ; Submitted by pag
 ; 1,22,33,444,555,6666,7777,8888,99999
 
-#offset 12
+#offset 1
 
-sub $0,12
+sub $0,1
 mov $2,1
 add $2,$0
 mul $0,$2

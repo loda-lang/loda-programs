@@ -13,6 +13,7 @@ lpb $3
   mov $1,$0
   bin $1,$0
   sub $0,$1
-  seq $0,107792 ; Threes order in the tribonacci substitution of three symbols.
+  add $0,1
+  seq $0,107792 ; Positions of 3's in the 1-limiting word of the morphism 1->2, 2->3, 3->123.
 lpe
 sub $0,1

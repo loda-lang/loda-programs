@@ -1,7 +1,7 @@
 ; A064866: Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
 ; Submitted by loader3229
 ; 1,1,2,3,4,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
-; Formula: a(n) = -truncate(binomial(-2*truncate((sqrtnint(24*n,3)-1)/2),3)/(-4))+n
+; Formula: a(n) = -truncate(binomial(-2*floor((sqrtnint(24*n,3)-1)/2),3)/(-4))+n
 
 #offset 1
 

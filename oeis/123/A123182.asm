@@ -1,6 +1,6 @@
-; A123182: Sequence gives k numbers in A123181.
+; A123182: Values of k in A123181 in the order of their appearance.
 ; Submitted by Cruncher Pete
-; 1,2,3,2,3,4,3,3,4
+; 1,2,3,2,3,4,3,3,4,2,3,4,3
 
 #offset 1
 

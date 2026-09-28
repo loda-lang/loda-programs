@@ -15,6 +15,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,38194 ; Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
     mov $4,$2
     mov $6,$7

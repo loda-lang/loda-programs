@@ -17,7 +17,49 @@ lpb $2
   mov $4,$0
   seq $4,126030 ; Riordan array (1/(1+x^3),x/(1+x^3)).
   mov $5,0
-  seq $0,127568 ; Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
+  mov $6,$0
+  mul $6,8
+  add $6,1
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  mul $8,$6
+  div $8,2
+  mov $7,$0
+  sub $7,$8
+  mov $9,2
+  pow $9,$7
+  mul $9,66744
+  mov $11,$9
+  mov $9,3
+  pow $9,$7
+  mul $9,22260
+  add $11,$9
+  mov $9,4
+  pow $9,$7
+  mul $9,5544
+  add $11,$9
+  mov $9,5
+  pow $9,$7
+  mul $9,1134
+  add $11,$9
+  mov $9,6
+  pow $9,$7
+  mul $9,168
+  add $11,$9
+  mov $9,7
+  pow $9,$7
+  mul $9,36
+  add $11,$9
+  mov $9,9
+  pow $9,$7
+  add $11,$9
+  mov $10,$11
+  div $10,362880
+  mov $0,$10
+  add $0,1
   mul $0,$4
   add $1,$0
 lpe

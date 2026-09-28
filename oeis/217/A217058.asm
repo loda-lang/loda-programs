@@ -1,12 +1,12 @@
 ; A217058: Van der Waerden numbers w(j+2; t_0,t_1,...,t_{j-1}, 3, 4) with t_0 = t_1 = ... = t_{j-1} = 2.
 ; Submitted by Science United
-; 18,21,25,29,33,36,40,42,45,48,52,55
+; 18,21,25,29,33,36,40,42,45,48,52,55,57
 
 mov $1,$0
+mov $2,$0
 mov $3,$0
 add $0,1
-mov $2,$0
-trn $2,2
+trn $2,1
 add $2,$0
 lpb $1
   mov $0,$1

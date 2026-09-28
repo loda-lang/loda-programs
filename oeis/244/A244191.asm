@@ -1,6 +1,6 @@
 ; A244191: a(n) = most common final digit for a prime < 10^n, or 0 if there is a tie.
 ; Submitted by Science United
-; 0,3,7,3,7,3,3,7,3,3,7,7,3,3
+; 0,3,7,3,7,3,3,7,3,3,7,7,3,3,3,7,3,7,7
 
 #offset 1
 

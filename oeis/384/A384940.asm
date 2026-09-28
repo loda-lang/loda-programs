@@ -20,5 +20,6 @@ lpb $2
   mov $2,0
   dif $0,2
   div $0,2
+  add $0,1
   seq $0,100484 ; The primes doubled; even semiprimes.
 lpe

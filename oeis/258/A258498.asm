@@ -16,7 +16,49 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,157491 ; A050165*A130595 as infinite lower triangular matrices.
-  seq $0,127568 ; Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
+  mov $5,$0
+  mul $5,8
+  add $5,1
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $7,$5
+  add $7,1
+  mul $7,$5
+  div $7,2
+  mov $6,$0
+  sub $6,$7
+  mov $8,2
+  pow $8,$6
+  mul $8,66744
+  mov $10,$8
+  mov $8,3
+  pow $8,$6
+  mul $8,22260
+  add $10,$8
+  mov $8,4
+  pow $8,$6
+  mul $8,5544
+  add $10,$8
+  mov $8,5
+  pow $8,$6
+  mul $8,1134
+  add $10,$8
+  mov $8,6
+  pow $8,$6
+  mul $8,168
+  add $10,$8
+  mov $8,7
+  pow $8,$6
+  mul $8,36
+  add $10,$8
+  mov $8,9
+  pow $8,$6
+  add $10,$8
+  mov $9,$10
+  div $9,362880
+  mov $0,$9
+  add $0,1
   mul $0,$4
   add $1,$0
 lpe

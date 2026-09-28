@@ -1,6 +1,6 @@
 ; A319115: Number of simple connected toroidal graphs on n nodes.
 ; Submitted by [SG]KidDoesCrunch
-; 0,0,0,0,1,13,207,5128
+; 0,0,0,0,1,13,207,5128,184985
 ; Formula: a(n) = truncate(b(n-1)/2), b(n) = c(n-2), b(5) = 26, b(4) = 2, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = (n+1)*(2*c(n-2)+2)*(d(n-2)+n-2)+(2*c(n-1)+2)*(d(n-1)+n-1)+d(n-1)*c(n-3), c(5) = 10256, c(4) = 414, c(3) = 26, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = d(n-1)+n-1, d(5) = 10, d(4) = 6, d(3) = 3, d(2) = 1, d(1) = 0, d(0) = 0
 
 #offset 1

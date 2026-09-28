@@ -1,10 +1,9 @@
 ; A124038: Triangle read by rows: T(n, k) = T(n-1, k-1) - T(n-2, k), with T(n, n) = 1, T(n, n-1) = -2.
 ; Submitted by loader3229
-; 1,-2,1,-1,-2,1,2,-2,-2,1,1,4,-3,-2,1,-2,3,6,-4,-2,1,-1,-6,6,8,-5,-2,1,2,-4,-12,10,10,-6,-2,1,1,8,-10,-20,15,12,-7,-2,1,-2,5,20,-20,-30,21,14,-8,-2,1,-1,-10,15,40,-35,-42,28,16,-9,-2,1
-; Formula: a(n) = min(2*binomial(-1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1),1)*binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2))
+; 1,-2,1,-1,-2,1,2,-2,-2,1,1,4,-3,-2,1,-2,3,6,-4,-2,1,-1,-6,6,8,-5,-2,1,2,-4,-12,10,10,-6,-2,1,1,8,-10,-20,15,12,-7,-2,1,-2,5,20,-20,-30,21,14,-8,-2,1,-1,-10,15,40,-35,-42,28,16,-9,-2,1,2,-6,-30,35,70,-56,-56,36,18,-10,-2,1,1,12
+; Formula: a(n) = min(2*binomial(-1,-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)),1)*binomial(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-1,truncate((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))/2))
 
-#offset 1
-
+add $0,1
 mov $2,$0
 mul $2,8
 nrt $2,2

@@ -1,8 +1,18 @@
 ; A095901: A004001 (mod 2).
 ; Submitted by Landjunge
 ; 1,1,0,0,1,0,0,0,1,0,1,1,0,0,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,1,0,1,1,0,1,0,0,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,1
-; Formula: a(n) = -2*truncate(A004001(n+1)/2)+A004001(n+1)
+; Formula: a(n) = b(n-1)%2, b(n) = b(n-1)+A093879(max(n-1,0)+1), b(0) = 1
 
-add $0,1
-seq $0,4001 ; Hofstadter-Conway $10000 sequence: a(n) = a(a(n-1)) + a(n-a(n-1)) with a(1) = a(2) = 1.
+#offset 1
+
+mov $1,1
+sub $0,1
+lpb $0
+  trn $0,1
+  mov $2,$0
+  add $2,1
+  seq $2,93879 ; First differences of A004001.
+  add $1,$2
+lpe
+mov $0,$1
 mod $0,2

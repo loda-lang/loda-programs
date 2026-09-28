@@ -1,6 +1,6 @@
-; A094861: Same as A094858, except that we fix X = 123123123...
+; A094861: Same as A094859, except that we fix X = 123123123...
 ; Submitted by Jon Maiga
-; 1,2,3,4,6,10,14,24,36,58
+; 1,2,3,4,6,10,14,24,36,58,88,145
 
 #offset 1
 

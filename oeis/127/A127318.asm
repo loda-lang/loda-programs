@@ -1,8 +1,9 @@
-; A127318: a(n)={binomial[n,(sum of decimal digits of n)] mod (sum of digits of n)}, with n>=1.
+; A127318: a(n) = binomial(n, sd) mod sd, with sd = sum of decimal digits of n.
 ; Submitted by Science United
 ; 0,1,1,1,1,1,1,1,1,0,1,1,3,2,1,2,6,2,8,0,1,3,4,4,3,3,3,0,2,1,1,1,4,4,4,4,6,3,4,2,3,4,6,3,5,1,4,8,3,0,4,0,6,6,0,5,0,4,0,4,1,1,7,6,5,4,5,8,1,3,0,8,6,6,8,5,6,5,4,6
 
-add $0,1
+#offset 1
+
 mov $1,$0
 lpb $1
   mov $2,$1

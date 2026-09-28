@@ -1,6 +1,6 @@
-; A130673: Smallest m of r=1,2,3,... where the generalized Euler constants (of D. H. Lehmer) E(r,m) change their sign: E(r,m) > 0 and E(r+1,m) < 0.
+; A130673: Smallest m > 1 such that log m + psi(n/m) is negative, where psi(x) is the digamma function.
 ; Submitted by Simon Strandgaard
-; 2,3,6,9,13,17,21,25,29,34,39,43,48,53,58,63,68
+; 2,3,6,9,13,17,21,25,29,34,39,43,48,53,58,63,68,74,79,84,90,95,101,106,112,118,123,129,135,141,147,152,158,164,170,176,183,189,195,201,207,213,220,226,232,239,245,251,258,264,271,277,284,290,297,303,310
 
 #offset 1
 
