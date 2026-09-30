@@ -14,8 +14,7 @@ lpb $2
   add $3,3
   seq $3,200815 ; Number of iterations of k -> d(k) until n reaches an odd prime.
   mul $3,2
-  sub $3,2
-  equ $3,4
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

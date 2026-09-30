@@ -5,13 +5,9 @@
 
 #offset 2
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-add $1,1
 seq $1,66328 ; a(n) = sum of indices of distinct prime factors of n; here, index(i-th prime) = i.
 gcd $1,$0
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

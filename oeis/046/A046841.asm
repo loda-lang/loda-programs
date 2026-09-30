@@ -15,9 +15,8 @@ lpb $2
   add $5,1
   seq $5,1158 ; sigma_3(n): sum of cubes of divisors of n.
   gcd $5,$3
+  div $3,$5
   mov $6,$3
-  div $6,$5
-  mov $3,$6
   equ $3,1
   sub $0,$3
   add $1,1

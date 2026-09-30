@@ -1,7 +1,7 @@
 ; A028735: Nonsquares mod 22.
 ; Submitted by BrandyNOW
 ; 2,6,7,8,10,13,17,18,19,21
-; Formula: a(n) = truncate(((4*n-5*truncate((4*n-4)/5)-4)^2+11*truncate((4*n-4)/5))/4)+2
+; Formula: a(n) = floor((((4*n-4)%5)^2+11*floor((4*n-4)/5))/4)+2
 
 #offset 1
 

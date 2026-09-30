@@ -7,6 +7,5 @@ lpb $0
   dif $0,8
   sub $0,1
 lpe
+div $0,2
 mov $1,$0
-div $1,2
-mov $0,$1

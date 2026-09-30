@@ -4,9 +4,8 @@
 
 #offset 1
 
-add $0,1
 mov $1,$0
-sub $0,1
+add $1,1
 mov $3,$0
 bin $3,2
 add $3,$0

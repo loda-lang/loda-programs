@@ -8,4 +8,4 @@
 mul $0,2
 sub $0,1
 seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
-seq $0,61537 ; Product of unitary divisors of n.
+seq $0,61537 ; Product of the unitary divisors of n: a(n) = Product_{d|n, gcd(d,n/d) = 1} d.

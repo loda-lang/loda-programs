@@ -5,14 +5,12 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,40 ; The prime numbers.
-mov $2,$1
-add $2,1
+sub $1,1
+mov $2,$0
 seq $2,40 ; The prime numbers.
 seq $2,13632 ; Difference between n and the next prime greater than n.
+seq $0,40 ; The prime numbers.
 mul $1,$2
 add $1,$2
 sub $1,$0

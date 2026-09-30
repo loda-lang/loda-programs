@@ -1,4 +1,4 @@
-; A088100: Group the natural numbers with at least two members in each group such that the n-th group sum is a multiple of n. (1,2),(3,4,5,),(6,7,8),(9,10,11,12,13,14,15),(16,17,18,19),(20,21,22,23,24,25,26,27,28),(29,30,31,32,33,34),... Sequence contains the number of members in the n-th group.
+; A088100: Group the natural numbers with at least two members in each group such that the n-th group sum is a multiple of n. (1,2), (3,4,5), (6,7,8), (9,10,11,12,13,14,15), (16,17,18,19), (20,21,22,23,24,25,26,27,28), (29,30,31,32,33,34), ... Sequence contains the number of members in the n-th group.
 ; Submitted by loader3229
 ; 2,3,3,7,4,9,6,11,8,5,4,3,12,13,5,32,17,8,18,19,6,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5,13,5
 
@@ -29,7 +29,7 @@ mov $22,5
 mov $23,13
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,23
   add $23,$21
   sub $0,1

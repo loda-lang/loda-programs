@@ -13,9 +13,8 @@ lpb $0
   mov $7,$2
   nrt $7,2
   add $2,2
+  nrt $2,2
   mov $6,$2
-  nrt $6,2
-  mov $2,$6
   add $2,$7
   mod $2,2
   mod $5,2

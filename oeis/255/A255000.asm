@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,2
 mov $1,$0
-add $0,2
+sub $1,2
 seq $0,40 ; The prime numbers.
 seq $0,13632 ; Difference between n and the next prime greater than n.
 add $0,$1

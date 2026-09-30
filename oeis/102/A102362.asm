@@ -10,7 +10,7 @@ bin $2,8
 mov $4,$0
 mov $3,$0
 lpb $3
-  mul $3,0
+  mov $3,0
   mov $0,2
 lpe
 add $0,$4

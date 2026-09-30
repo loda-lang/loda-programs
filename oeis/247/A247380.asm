@@ -11,9 +11,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
   mov $6,$0
-  add $0,1
+  add $6,1
+  add $0,2
   seq $0,6005 ; The odd prime numbers together with 1.
   mul $0,$6
   mov $2,$3

@@ -12,9 +12,14 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,7519 ; Primes of form 8n+1, that is, primes congruent to 1 mod 8.
+  seq $3,153762 ; Numbers k such that 8k + 9 is prime.
+  mul $3,8
+  sub $3,8
+  div $3,2
+  mul $3,2
   mov $5,$3
-  add $3,6
+  add $5,17
+  add $3,23
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

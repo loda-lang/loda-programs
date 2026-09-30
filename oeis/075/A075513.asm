@@ -1,7 +1,7 @@
 ; A075513: Triangle read by rows. T(n, m) are the coefficients of Sidi polynomials.
 ; Submitted by KetamiNO [YouTube]
 ; 1,-1,2,1,-8,9,-1,24,-81,64,1,-64,486,-1024,625,-1,160,-2430,10240,-15625,7776,1,-384,10935,-81920,234375,-279936,117649,-1,896,-45927,573440,-2734375,5878656,-5764801,2097152,1,-2048,183708,-3670016,27343750,-94058496,161414428,-134217728,43046721
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^truncate((sqrtint(8*n)-1)/2))*binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)
+; Formula: a(n) = binomial(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2),-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)*if(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^2)==1,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^floor((sqrtint(8*n)-1)/2),if(floor((sqrtint(8*n)-1)/2)<=(-1),0,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^floor((sqrtint(8*n)-1)/2)))
 
 #offset 1
 

@@ -4,7 +4,30 @@
 
 #offset 1
 
-seq $0,79695 ; Values never taken by phi(j)/2 for any j: a(n) = A005277(n)/2.
+mov $1,0
+mov $2,$0
+sub $0,1
+add $2,6
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $1,1
+  add $3,2
+  seq $3,61026 ; Smallest number m such that phi(m) is divisible by n, where phi = Euler totient function A000010.
+  div $3,2
+  trn $3,$1
+  min $3,1
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,3
+lpe
+mov $0,$1
+div $0,2
+add $0,1
 dir $0,2
 div $0,2
 mul $0,2

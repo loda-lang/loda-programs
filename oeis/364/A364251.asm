@@ -1,7 +1,7 @@
 ; A364251: a(n) = 1 if n is of the form q*(2^k), where q is one of the Mersenne primes (A000668) and k >= 0, otherwise a(n) = 0.
 ; Submitted by www.urfak.petrsu.ru
 ; 0,0,1,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate((A159477(A331410(n)+1)+1)/2)+A159477(A331410(n)+1)+1
+; Formula: a(n) = (A159477(A331410(n)+1)+1)%2
 
 #offset 1
 

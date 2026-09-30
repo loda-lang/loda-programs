@@ -6,9 +6,19 @@
 
 sub $0,1
 mov $1,$0
-trn $0,1
-add $0,1
-seq $0,140130 ; a(n) = denominator(c(n)) where c(n) = 1 if n=1, otherwise if n < 3*2^floor(log_2(n)-1) then c(n) = (c(floor(n/2))+c(floor((n+1)/2)))/2 otherwise c(n) = c(n-2^floor(log_2(n)))+1.
+max $0,1
+mov $3,$0
+log $3,2
+add $3,1
+mov $2,2
+pow $2,$3
+sub $2,$0
+mov $4,$2
+dir $4,2
+log $4,2
+mov $2,2
+pow $2,$4
+mov $0,$2
 div $1,2
 lpb $1
   mul $0,$1

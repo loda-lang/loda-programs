@@ -1,7 +1,44 @@
 ; A146105: Bell numbers (A000110) read mod 15.
 ; Submitted by 10esseeTony
 ; 1,1,2,5,0,7,8,7,0,12,10,0,7,7,7,5,2,9,4,2,7,6,3,1,9,13,4,4,5,2,12,13,14,7,9,0,7,6,1,4,7,8,2,0,1,5,10,12,6,1,0,7,13,7,11,2,0,10,8,13,12,0,13,6,10,7,13,14,11,12,10,2,10,3,12,7,12,13,10,4
-; Formula: a(n) = -15*truncate(A000110(n)/15)+A000110(n)
 
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $5,0
+mov $6,0
+mov $9,0
+mov $11,0
+mov $1,0
+mov $4,1
+fac $4,$0
+mov $7,$0
+mov $8,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  mov $10,$6
+  div $10,$4
+  mul $11,$1
+  add $11,$10
+  add $1,1
+  mod $6,$4
+  mul $8,-1
+  mov $12,$3
+  mul $12,$6
+  mul $12,$8
+  mov $13,$3
+  mul $13,$11
+  mul $13,$8
+  add $5,$13
+  add $9,$12
+lpe
+mul $5,$8
+mul $9,$8
+div $9,$4
+add $9,$5
+mov $0,$9
 mod $0,15

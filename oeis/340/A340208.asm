@@ -1,7 +1,7 @@
 ; A340208: Constant whose decimal expansion is the concatenation of the smallest n-digit cube A061434(n), for n = 1, 2, 3, ...
 ; Submitted by loader3229
 ; 1,2,7,1,2,5,1,0,0,0,1,0,6,4,8,1,0,3,8,2,3,1,0,0,0,0,0,0,1,0,0,7,7,6,9,6,1,0,0,5,4,4,6,2,5,1,0,0,0,0,0,0,0,0,0,1,0,0,0,7,8,7,3,8,7,5,1,0,0,0,2,6,5,7,7,2,8,8,1,0
-; Formula: a(n) = -10*truncate(truncate(((sqrtnint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1,3)+1)^3)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))/10)+truncate(((sqrtnint(truncate(10^truncate((sqrtint(8*n+8)-1)/2))-1,3)+1)^3)/truncate(10^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)))
+; Formula: a(n) = floor(((sqrtnint(10^floor((sqrtint(8*n+8)-1)/2)-1,3)+1)^3)/if((-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)-1)<=(-1),0,10^(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)-1)))%10
 
 mov $1,$0
 add $1,1

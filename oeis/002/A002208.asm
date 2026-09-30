@@ -19,7 +19,10 @@ lpb $0
   mov $8,$0
   trn $10,1
   mov $9,$10
-  seq $9,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  seq $9,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $9,5
+  gcd $9,0
+  div $9,5
   mul $9,$7
   add $5,$9
   add $6,1

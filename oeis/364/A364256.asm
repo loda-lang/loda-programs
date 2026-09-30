@@ -4,16 +4,15 @@
 
 #offset 1
 
+mov $5,$0
+sub $5,1
+mov $10,$0
 mov $1,$0
-sub $1,1
-mov $5,$1
-add $1,1
-mov $10,$1
 sub $1,1
 mov $8,$1
 lpb $8
   sub $8,1
-  mov $1,$10
+  mov $1,$0
   sub $1,$8
   mov $9,$1
   gcd $9,$8

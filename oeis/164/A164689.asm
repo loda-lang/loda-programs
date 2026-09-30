@@ -11,8 +11,7 @@ lpb $3
   div $3,3
   mov $1,$4
   mul $1,2
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,171688 ; Twin primes > 3.
   mov $2,$1
   div $1,2

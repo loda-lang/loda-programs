@@ -1,9 +1,39 @@
 ; A308536: Expansion of e.g.f. exp(1 - exp(2*x)).
 ; Submitted by LM
 ; 1,-2,0,8,16,-64,-576,-1152,12800,136704,422912,-4464640,-72626176,-413966336,1805123584,64448004096,651340611584,1132294045696,-73000566390784,-1332193006190592,-10293724166750208,56984418960539648,3042980275005947904,46913652420264329216
-; Formula: a(n) = A000587(n)*2^n
 
 mov $1,2
 pow $1,$0
-seq $0,587 ; Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
+mov $2,0
+mov $3,0
+mov $5,$0
+add $5,1
+bin $5,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $9,-1
+  bin $9,$3
+  mov $6,$3
+  add $6,$5
+  mov $4,$6
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  bin $4,2
+  mov $7,$6
+  sub $7,$4
+  mov $10,1
+  fac $10,$7
+  mov $7,$10
+  mov $8,$6
+  seq $8,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  div $8,$10
+  mov $6,$8
+  mul $6,$9
+  add $2,$6
+  add $3,1
+lpe
+mov $0,$2
 mul $0,$1

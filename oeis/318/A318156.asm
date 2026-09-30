@@ -21,8 +21,7 @@ lpb $0
   mul $2,$4
   mod $2,3
   dif $2,-2
-  add $2,1
-  equ $2,0
+  equ $2,-1
   add $3,$2
   mov $2,$3
   div $2,2

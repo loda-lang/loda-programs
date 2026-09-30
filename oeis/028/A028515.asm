@@ -12,14 +12,14 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     sub $7,1
     seq $7,521 ; Coefficients of modular function j as power series in q = e^(2 Pi i t). Another name is the elliptic modular invariant J(tau).
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     mul $7,$$9
     gcd $4,$10
     add $5,1

@@ -1,4 +1,4 @@
-; A085358: Runs of zeros in binomial(3k,k)/(2k+1) (Mod 2): relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
+; A085358: Runs of zeros in binomial(3k,k)/(2k+1) (mod 2): relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
 ; Submitted by shiva
 ; 1,2,5,1,10,1,2,21,1,2,5,1,42,1,2,5,1,10,1,2,85,1,2,5,1,10,1,2,21,1,2,5,1,170,1,2,5,1,10,1,2,21,1,2,5,1,42,1,2,5,1,10,1,2,341,1,2,5,1,10,1,2,21,1,2,5,1,42,1,2,5,1,10,1,2,85,1,2,5,1
 

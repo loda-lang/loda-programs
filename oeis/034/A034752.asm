@@ -28,10 +28,21 @@ lpb $3
   sub $10,$5
   mov $12,$9
   div $12,$10
+  sub $12,1
   mov $11,$9
   mod $11,$10
   equ $11,0
-  seq $12,1747 ; 2 together with primes multiplied by 2.
+  mov $15,$12
+  dif $15,$12
+  add $15,1
+  mov $14,$12
+  max $14,1
+  seq $14,40 ; The prime numbers.
+  mul $15,$14
+  mov $13,1
+  add $13,$15
+  mov $12,$13
+  sub $12,1
   mul $12,$11
   sub $1,1
   mov $8,$1

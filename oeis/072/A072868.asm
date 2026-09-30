@@ -1,7 +1,7 @@
 ; A072868: Numbers k such that sigma(sigma(k) - k) = k.
 ; Submitted by Science United
 ; 4,8,32,128,8192,131072,524288,2147483648,2305843009213693952,618970019642690137449562112
-; Formula: a(n) = 2*truncate(2^(A139421(A019280(n)+1)-1))
+; Formula: a(n) = 2*if((A139421(A019280(n)+1)-1)<=(-1),0,2^(A139421(A019280(n)+1)-1))
 
 #offset 1
 

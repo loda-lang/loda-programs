@@ -1,7 +1,7 @@
 ; A131406: 3*A128174 - 2*A000012(signed).
 ; Submitted by Ralfy
 ; 1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1
-; Formula: a(n) = -n-2*truncate((-n+binomial(truncate((sqrtint(8*n)+3)/2),2))/2)+binomial(truncate((sqrtint(8*n)+3)/2),2)+1
+; Formula: a(n) = -n-2*truncate((-n+binomial(floor((sqrtint(8*n)+3)/2),2))/2)+binomial(floor((sqrtint(8*n)+3)/2),2)+1
 
 #offset 1
 

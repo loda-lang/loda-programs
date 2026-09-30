@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,52763 ; Number of rooted trees with n nodes and 4-colored non-root nodes.
 mov $1,$0
-seq $1,52763 ; Number of rooted trees with n nodes and 4-colored non-root nodes.
-mov $0,$1
 mul $0,2

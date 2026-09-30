@@ -6,8 +6,7 @@
 
 sub $0,1
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $1,$0
   seq $1,40 ; The prime numbers.
   sub $1,1

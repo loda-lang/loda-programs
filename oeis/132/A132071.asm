@@ -1,7 +1,7 @@
 ; A132071: A007318 + A002024 - A103451 as infinite lower triangular matrices.
 ; Submitted by loader3229
 ; 1,2,2,3,5,3,4,7,7,4,5,9,11,9,5,6,11,16,16,11,6,7,13,22,27,22,13,7,8,15,29,43,43,29,15,8,9,17,37,65,79,65,37,17,9,10,19,46,94,136,136,94,46,19,10
-; Formula: a(n) = -truncate(1/binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+truncate((sqrtint(8*n+8)-1)/2)+1
+; Formula: a(n) = -truncate(1/binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+floor((sqrtint(8*n+8)-1)/2)+1
 
 add $0,1
 mov $2,$0

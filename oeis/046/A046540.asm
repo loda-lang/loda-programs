@@ -1,7 +1,7 @@
 ; A046540: Denominators of the 1/3-Pascal triangle (by row).
 ; Submitted by loader3229
 ; 1,1,1,1,3,1,1,3,3,1,1,3,3,3,1,1,3,1,1,3,1,1,3,3,1,3,3,1,1,3,3,3,3,3,3,1,1,3,1,1,3,1,1,3,1,1,3,3,1,3,3,1,3,3,1,1,3,3,3,3,3,3,3,3,3,1,1,3,1,1,1,1,1,1,1,1,3,1,1,3
-; Formula: a(n) = 4*gcd(-truncate(binomial(truncate((sqrtint(8*n)-1)/2)-2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-2)/binomial(binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*binomial(binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+binomial(truncate((sqrtint(8*n)-1)/2)-2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-2),3)-10*truncate((4*gcd(-truncate(binomial(truncate((sqrtint(8*n)-1)/2)-2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-2)/binomial(binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*binomial(binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+binomial(truncate((sqrtint(8*n)-1)/2)-2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-2),3)-1)/10)-1
+; Formula: a(n) = (4*gcd(-truncate(binomial(floor((sqrtint(8*n)-1)/2)-2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-2)/binomial(binomial(floor((sqrtint(8*n)-1)/2)+1,2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))*binomial(binomial(floor((sqrtint(8*n)-1)/2)+1,2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)+binomial(floor((sqrtint(8*n)-1)/2)-2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-2),3)-1)%10
 
 #offset 1
 

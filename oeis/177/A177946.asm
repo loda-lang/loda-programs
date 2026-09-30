@@ -1,14 +1,19 @@
 ; A177946: a(n) = prime(n)! / n!.
 ; Submitted by STE\/E
 ; 2,3,20,210,332640,8648640,70572902400,3016991577600,71241227785728000,2436552577639909048320000,205999445200465037721600000,28734252852655074735274328064000000,5372155913332392772506888374845440000000
-; Formula: a(n) = truncate(A157132(n)/((n-1)!))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-add $1,1
-seq $1,157132 ; Factorial of primes divided by prime numbers' respective places in the sequence of primes.
+sub $0,1
+mov $2,0
+sub $2,$0
+mov $3,$1
+fac $0,$2
+seq $1,131491 ; a(n) = 2*prime(n)!.
+div $1,$3
+sub $1,4
+div $1,2
+add $1,2
 div $1,$0
 mov $0,$1

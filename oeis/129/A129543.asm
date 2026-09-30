@@ -5,8 +5,7 @@
 
 mov $2,$0
 div $2,2
+bxo $0,$2
 mov $1,$0
-bxo $1,$2
-mov $0,$1
 add $0,1
 seq $0,40 ; The prime numbers.

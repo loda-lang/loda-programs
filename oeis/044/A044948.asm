@@ -1,4 +1,4 @@
-; A044948: Runs of odd length in the base 8 representation of n.
+; A044948: Number of runs of odd length in the base 8 representation of n.
 ; Submitted by jp557
 ; 1,1,1,1,1,1,1,2,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,1,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,3
 

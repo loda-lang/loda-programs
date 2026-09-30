@@ -15,7 +15,7 @@ lpb $0
   sub $2,$6
   mov $3,$1
   add $3,1
-  seq $3,248076 ; Partial sums of the sum of the 5th powers of the divisors of n: Sum_{i=1..n} sigma_5(i).
+  seq $3,248076 ; Partial sums of A001160: Sum_{j=1..n} sigma_5(j).
   add $1,1
   mul $2,$3
   add $4,$2

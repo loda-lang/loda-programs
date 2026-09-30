@@ -1,7 +1,7 @@
 ; A240801: Triangle read by rows: T(n,k) (n>=2, 0 <= k <= n-2) = number of possible topologies with n given vertices and n-k-2 Steiner points.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,3,3,12,12,15,75,120,60,105,630,1350,1200,360,945,6615,17640,22050,12600,2520
-; Formula: a(n) = A193229(n-2)*binomial(truncate((sqrtint(8*n-8)-1)/2)+2,-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-2)
+; Formula: a(n) = A193229(n-2)*binomial(floor((sqrtint(8*n-8)-1)/2)+2,-binomial(floor((sqrtint(8*n-8)-1)/2)+1,2)+n-2)
 
 #offset 2
 

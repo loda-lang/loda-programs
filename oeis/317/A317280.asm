@@ -9,8 +9,7 @@ lpb $4
   sub $4,1
   mov $0,$3
   add $0,$4
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $5,$0
   seq $0,108125 ; Expansion of e.g.f.: x/(1 - log(1+x)).
   div $0,$5

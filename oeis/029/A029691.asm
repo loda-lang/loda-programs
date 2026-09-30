@@ -1,7 +1,7 @@
 ; A029691: n-th binary digit in fractional part of square root of n.
 ; Submitted by mmonnin
 ; 0,1,1,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,1,1,1,0,1,0,1,0,1,0,0
-; Formula: a(n) = -2*truncate(sqrtint(n*4^n)/2)+sqrtint(n*4^n)
+; Formula: a(n) = sqrtint(n*4^n)%2
 
 #offset 1
 

@@ -4,7 +4,7 @@
 
 mov $19,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,19
   sub $19,$1
   add $19,$2

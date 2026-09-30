@@ -14,8 +14,7 @@ lpb $2
   seq $5,70871 ; a(n) = A002487(n) * A002487(n+1) (Conway's alimentary function).
   mov $3,$1
   sub $3,$5
-  add $3,3
-  trn $3,3
+  max $3,0
   min $3,1
   sub $0,$3
   add $1,1

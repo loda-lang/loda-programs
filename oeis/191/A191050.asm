@@ -11,11 +11,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,2
-  seq $3,11600 ; Legendre symbol (n,83).
-  add $3,2
-  mul $3,$1
-  trn $3,1
+  pow $3,41
   add $3,1
+  mod $3,83
+  add $3,1
+  mul $3,$1
+  max $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

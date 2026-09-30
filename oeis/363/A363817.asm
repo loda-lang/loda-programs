@@ -12,7 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,366695 ; G.f. satisfies A(x) = (1 + x)^3 + x*A(x)^2.
+    seq $7,366695 ; G.f. A(x) satisfies A(x) = (1 + x)^3 + x*A(x)^2.
     mov $9,10
     add $9,$5
     sub $4,1

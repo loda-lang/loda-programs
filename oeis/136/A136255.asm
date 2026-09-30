@@ -1,7 +1,7 @@
 ; A136255: Triangle T(n,k) read by rows: T(n,k) = (k+1) * A137276(n,k+1).
 ; Submitted by loader3229
 ; 1,0,2,1,0,3,0,0,0,4,-3,0,-3,0,5,0,-6,0,-8,0,6,5,0,-6,0,-15,0,7,0,16,0,0,0,-24,0,8,-7,0,30,0,15,0,-35,0,9,0,-30,0,40,0,42,0,-48,0,10,9,0,-75,0,35,0,84,0,-63,0,11
-; Formula: a(n) = binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2))*(2*n-truncate((sqrtint(8*n)+1)/2)^2)*(binomial(-1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)==1)
+; Formula: a(n) = binomial(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2),truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)/2))*(2*n-floor((sqrtint(8*n)+1)/2)^2)*(binomial(-1,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)==1)
 
 #offset 1
 

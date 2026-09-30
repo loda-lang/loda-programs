@@ -1,4 +1,4 @@
-; A194798: Numbers n having the same parity as the number of partitions of n.
+; A194798: Numbers k having the same parity as the number of partitions of k.
 ; Submitted by amazing
 ; 1,2,3,5,7,8,10,13,17,22,23,26,28,29,30,33,34,35,37,39,40,41,42,43,46,49,50,51,53,58,61,62,63,64,66,67,69,70,71,73,74,77,78,80,81,83,84,85,86,87,89,91,93,94,95,96,98,99,100,105,106,107,108,110,111,112,115,116,119,120,121,122,123,124,126,127,128,130,136,139
 
@@ -15,8 +15,7 @@ lpb $2
   sub $3,$1
   mul $3,338
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

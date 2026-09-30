@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,62319 ; Number of divisors of n^n, or of A000312(n).
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mov $5,$3
-  seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
-  mov $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

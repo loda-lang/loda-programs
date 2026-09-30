@@ -1,6 +1,7 @@
 ; A359158: a(n) = 1 if the odd part of n is squarefree and the number of prime factors of n (with multiplicity) is odd, otherwise 0.
 ; Submitted by Science United
 ; 0,1,1,0,1,0,1,1,0,0,1,1,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,1,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,1,1,1,0,1,1,0,1,0,0,1,0,1,1,1
+; Formula: a(n) = -2*truncate((min(A008683(n/(4^valuation(n,4))),0)+2)/2)+min(A008683(n/(4^valuation(n,4))),0)+2
 
 #offset 1
 

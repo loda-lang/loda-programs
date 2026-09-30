@@ -14,8 +14,7 @@ lpb $3
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   bin $4,2
   mod $4,$1
-  sub $4,1
-  equ $4,0
+  equ $4,1
   sub $0,$4
   add $2,1
   sub $3,$0

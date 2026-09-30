@@ -6,10 +6,9 @@
 #offset 1
 
 seq $0,1597 ; Perfect powers: m^k where m > 0 and k >= 2.
+mov $2,$0
+sub $2,1
 mov $1,$0
-sub $1,1
-mov $2,$1
-add $1,1
 seq $1,73353 ; Sum of n and its squarefree kernel.
 sub $1,1
 sub $1,$2

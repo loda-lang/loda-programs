@@ -15,8 +15,7 @@ lpb $0
     neq $4,1
     sub $3,$4
   lpe
-  trn $2,1
-  add $2,1
+  max $2,1
   sub $0,1
 lpe
 mov $0,$2

@@ -1,6 +1,7 @@
 ; A037623: Base 9 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,3.
 ; Submitted by amazing
 ; 2,18,165,1487,13383,120450,1084052,9756468,87808215,790273937,7112465433,64012188900,576109700102,5184987300918,46664885708265,419983971374387,3779855742369483
+; Formula: a(n) = truncate(b(n)/9), b(n) = 9*b(n-1)+9*c(n-1), b(1) = 18, b(0) = 0, c(n) = if((c(n-1)%2)==0,c(n-1)/2,c(n-1))-4*truncate((if((c(n-1)%2)==0,c(n-1)/2,c(n-1))+3)/4)+3, c(1) = 0, c(0) = 2
 
 #offset 1
 

@@ -1,6 +1,7 @@
-; A280598: Number of nX2 0..1 arrays with no element equal to more than two of its horizontal, vertical and antidiagonal neighbors and with new values introduced in order 0 sequentially upwards.
+; A280598: Number of n X 2 0..1 arrays with no element equal to more than two of its horizontal, vertical and antidiagonal neighbors and with new values introduced in order 0 sequentially upwards.
 ; Submitted by loader3229
 ; 2,7,18,50,138,383,1063,2951,8193,22748,63161,175370,486925,1351977,3753848,10422792,28939529,80352400,223103432,619460544,1719970697,4775605529,13259765537,36816563059,102223475346,283829832107,788071167816,2188128573143,6075474967411,16868933815262,46837643079774,130047626796875,361085317779422,1002575824928462,2783714084284678,7729155152527059,21460479619330859,59586355352322939,165445218706813349,459368931546477208,1275466386514933277,3541411687666270134,9832949636413190945
+; Formula: a(n) = b(n-1), b(n) = c(n-3), b(5) = 383, b(4) = 138, b(3) = 50, b(2) = 18, b(1) = 7, b(0) = 2, c(n) = d(n-1), c(5) = 8193, c(4) = 2951, c(3) = 1063, c(2) = 383, c(1) = 138, c(0) = 50, d(n) = e(n-1), d(5) = 22748, d(4) = 8193, d(3) = 2951, d(2) = 1063, d(1) = 383, d(0) = 138, e(n) = 3*e(n-1)-c(n-4)-d(n-1)-2*c(n-3)+c(n-1)+c(n-2), e(7) = 486925, e(6) = 175370, e(5) = 63161, e(4) = 22748, e(3) = 8193, e(2) = 2951, e(1) = 1063, e(0) = 383
 
 #offset 1
 

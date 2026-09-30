@@ -8,8 +8,10 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,0
+  sub $5,$1
   mov $3,$1
-  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  fac $3,$5
   dgs $3,10
   add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

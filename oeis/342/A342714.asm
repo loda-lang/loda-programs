@@ -1,7 +1,7 @@
 ; A342714: Decimal expansion of infinite sum of reciprocals of lesser twin primes, Sum_{n>=1} 1/A001359(n).
 ; Submitted by BrandyNOW
 ; 1,0,5,9,0,6,4,2,6
-; Formula: a(n) = -10*truncate((-10*truncate((truncate(((-(n-1)^2-n+1)*(3*n+floor(((n-1)^4)/2)+28))/42)-9)/10)+truncate(((-(n-1)^2-n+1)*(3*n+floor(((n-1)^4)/2)+28))/42)+1)/10)-10*truncate((truncate(((-(n-1)^2-n+1)*(3*n+floor(((n-1)^4)/2)+28))/42)-9)/10)+truncate(((-(n-1)^2-n+1)*(3*n+floor(((n-1)^4)/2)+28))/42)+1
+; Formula: a(n) = (-10*truncate((truncate(((-(n-1)^2-n+1)*(3*n+floor(((n-1)^4)/2)+28))/42)-9)/10)+truncate(((-(n-1)^2-n+1)*(3*n+floor(((n-1)^4)/2)+28))/42)+1)%10
 
 #offset 1
 

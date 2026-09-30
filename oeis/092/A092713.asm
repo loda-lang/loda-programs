@@ -1,6 +1,6 @@
-; A092713: Disk degeneracies for brane III in the O(K)->P^1 x P^1 geometry.
+; A092713: Ooguri-Vafa invariants of disk degeneracies for brane III in the O(K) -> P^1 x P^1 geometry.
 ; Submitted by Science United
-; 0,0,0,0,0,-28,-336,-2156
+; 0,0,0,0,0,-28,-336,-2156,-9856,-36036,-112112
 ; Formula: a(n) = 28*truncate((-n*binomial(n+4,9))/5)
 
 add $0,4

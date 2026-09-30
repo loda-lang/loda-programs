@@ -6,8 +6,7 @@
 #offset 2
 
 mul $0,2
-sub $0,4
-trn $0,1
+trn $0,5
 add $0,3
 lpb $0
   sub $0,1

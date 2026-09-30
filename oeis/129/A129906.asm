@@ -9,4 +9,9 @@ mov $1,$0
 seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
 lex $1,$0
 add $0,$1
-seq $0,226198 ; a(n) = floor((n-1)!/n).
+mov $2,$0
+sub $0,1
+mov $3,1
+fac $3,$0
+mov $0,$3
+div $0,$2

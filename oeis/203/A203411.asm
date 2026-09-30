@@ -1,15 +1,15 @@
 ; A203411: Discriminant of the cyclotomic binomial period polynomial for an odd prime.
 ; Submitted by ckrause
 ; 1,5,49,14641,371293,410338673,16983563041,41426511213649,10260628712958602189,756943935220796320321,456487940826035155404146917,4394336169668803158610484050361,467056167777397914441056671494001,6111571184724799803076702357055363809
-; Formula: a(n) = truncate((2*truncate(A000040(n)/2)+1)^(truncate(A000040(n)/2)-1))
+; Formula: a(n) = (2*floor(A000040(n)/2)+1)^(floor(A000040(n)/2)-1)
 
 #offset 2
 
 seq $0,40 ; The prime numbers.
 div $0,2
-add $0,2
 mov $1,$0
-sub $0,3
+add $1,2
+sub $0,1
 add $1,$0
 pow $1,$0
 mov $0,$1

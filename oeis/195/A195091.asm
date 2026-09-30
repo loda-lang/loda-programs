@@ -4,17 +4,14 @@
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-add $0,1
 mov $1,188
-add $2,9
+mov $2,$0
+add $2,8
 pow $2,4
 lpb $2
   add $3,1
   seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
-  sub $3,2
-  equ $3,5
+  equ $3,7
   sub $0,$3
   add $1,1
   sub $2,$0

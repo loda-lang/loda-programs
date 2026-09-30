@@ -1,11 +1,27 @@
 ; A212396: Numerator of the average number of move operations required by an insertion sort of n (distinct) elements.
 ; Submitted by Gunnar Hjern
 ; 0,0,3,23,41,313,73,676,3439,38231,46169,602359,703999,10565707,12071497,13669093,30716561,582722017,215455199,4516351061,991731385,361369795,393466951,9817955321,31848396101,858318957533,922672670033,8903430207697,9522990978097,294719141434013,313856494008353,10340937324493943,21940893125778961,2112377203325651,2233421357957051,2357758443110891,2485387845920891,96803433118867367,101769291662094767,106856908212701567,112066266383338187,4813291390414905667,719550866367935581,32344663924424973583
-; Formula: a(n) = truncate(A212395(n)/gcd(n!,A212395(n)))
 
+mov $4,1
+mov $5,0
+mov $6,0
 mov $1,$0
-seq $1,212395 ; Number of move operations required to sort all permutations of [n] by insertion sort.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
+lpb $1
+  add $5,$6
+  add $6,$4
+  mul $4,$1
+  sub $1,1
+  mov $3,$5
+  mul $5,$1
+  add $5,$6
+  add $5,$6
+  add $5,$3
+  mul $6,$1
+lpe
+mov $2,0
+sub $2,$0
+fac $0,$2
+gcd $0,$3
+mov $1,$3
 div $1,$0
 mov $0,$1

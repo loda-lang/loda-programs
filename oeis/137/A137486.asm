@@ -5,9 +5,9 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-pow $0,11
 mov $2,$0
-pow $2,2
+pow $2,22
+pow $0,11
 mov $1,1
 lpb $1
   mov $1,0

@@ -6,7 +6,6 @@
 #offset 1
 
 seq $0,334880 ; Numbers k such that gcd(k, k-th composite number) > 1.
+seq $0,72668 ; Numbers one less than composite numbers.
 mov $1,$0
-seq $1,72668 ; Numbers one less than composite numbers.
-mov $0,$1
 add $0,1

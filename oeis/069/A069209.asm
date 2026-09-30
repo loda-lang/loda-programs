@@ -11,9 +11,8 @@ pow $2,2
 lpb $2
   add $3,1
   seq $3,348928 ; a(n) = gcd(n, A003958(n)), where A003958 is multiplicative with a(p^e) = (p-1)^e.
-  sub $3,1
   add $3,$4
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -1,6 +1,6 @@
 ; A221877: Triangle read by rows: T(n,k) = number of order-preserving or order-reversing full contraction mappings (of an n-chain) with height exactly k.
 ; Submitted by loader3229
-; 1,2,2,3,8,2,4,18,12,2,5,32,36,16,2,6,50,80,60,20,2,7,72,150,160,90,24,2,8,98,252,350,280,126,28,2,9,128,392,672,700,448,168,32,2,10,162,576,1176,1512,1260,672,216,36,2
+; 1,2,2,3,8,2,4,18,12,2,5,32,36,16,2,6,50,80,60,20,2,7,72,150,160,90,24,2,8,98,252,350,280,126,28,2,9,128,392,672,700,448,168,32,2,10,162,576,1176,1512,1260,672,216,36,2,11,200,810,1920,2940,3024,2100,960,270,40,2,12,242,1100,2970,5280,6468,5544,3300,1320,330,44,2,13,288
 ; Formula: a(n) = -gcd(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)),2)*binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1)+gcd(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)),2)*binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)
 
 #offset 1

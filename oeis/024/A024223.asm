@@ -1,7 +1,7 @@
 ; A024223: [ (4th elementary symmetric function of S(n))/(2nd elementary symmetric function of S(n)) ], where S(n) = {first n+3 positive integers congruent to 1 mod 3}.
 ; Submitted by BrandyNOW
 ; 1,12,45,115,244,457,785,1262,1926,2822,3997,5504,7400,9746,12608,16057,20168,25021,30699,37290,44888,53591,63500,74722,87368,101553,117397,135026,154567,176154,199926,226024,254597,285795,319774,356694,396722,440026
-; Formula: a(n) = truncate(floor(((n*(n*(n*(405*n+3510)+9855)+8814)-184)*(((n+3)!)/((n-1)!)))/1920)/truncate(binomial(binomial(3*n+8,2)-1,2)/9))
+; Formula: a(n) = truncate(floor((n*(n+1)*(n+2)*(n+3)*(n*(n*(n*(405*n+3510)+9855)+8814)-184))/1920)/truncate(binomial(binomial(3*n+8,2)-1,2)/9))
 
 #offset 1
 

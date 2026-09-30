@@ -14,7 +14,7 @@ lpb $2
   sub $0,$2
   mov $3,$0
   add $3,1
-  seq $3,280223 ; Precipice of n: descending by the main diagonal of the pyramid described in A245092, a(n) is the height difference between the n-th level (starting from the top) and the level of the next terrace.
+  seq $3,280223 ; Distance of n to the next number with middle divisors.
   sub $3,1
 lpe
 mov $0,$3

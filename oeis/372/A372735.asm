@@ -1,6 +1,7 @@
 ; A372735: Number of distinct circles that can be constructed from the 3 vertices and the equally spaced 3*n points placed on the sides of an equilateral triangle when every pair of the 3 + 3*n points are connected by a circle and where the points lie at the ends of the circle's diameter.
 ; Submitted by loader3229
 ; 3,15,34,63,99,148,201,267,340,423,513,616,723,843,970,1107,1251,1408,1569,1743,1924,2115,2313,2524,2739,2967,3202,3447,3699
+; Formula: a(n) = b(n-1), b(n) = c(n-2), b(5) = 148, b(4) = 99, b(3) = 63, b(2) = 34, b(1) = 15, b(0) = 3, c(n) = d(n-2), c(5) = 267, c(4) = 201, c(3) = 148, c(2) = 99, c(1) = 63, c(0) = 34, d(n) = e(n-1), d(5) = 423, d(4) = 340, d(3) = 267, d(2) = 201, d(1) = 148, d(0) = 99, e(n) = -c(n-1)-c(n-2)+c(n-3)+d(n-1)+e(n-1), e(6) = 616, e(5) = 513, e(4) = 423, e(3) = 340, e(2) = 267, e(1) = 201, e(0) = 148
 
 #offset 1
 

@@ -1,7 +1,6 @@
 ; A056622: a(n) = A000188(n)/A055229(n).
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,1,1,1,1,3,1,1,2,1,1,1,4,1,3,1,2,1,1,1,1,5,1,1,2,1,1,1,2,1,1,1,6,1,1,1,1,1,1,1,2,3,1,1,4,7,5,1,2,1,1,1,1,1,1,1,2,1,1,3,8,1,1,1,2,1,1,1,3,1,1,5,2,1,1,1,4
-; Formula: a(n) = truncate(truncate((n^2)/((truncate((n-1)/(truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/floor(sqrtint(4*(floor(max(0,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)/2))+1))+1)*(floor((n-1)/(floor(sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)^2))+1)))/gcd(n,truncate((n^2)/((truncate((n-1)/(truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/floor(sqrtint(4*(floor(max(0,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)/2))+1))+1)*(floor((n-1)/(floor(sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2)^2))+1)))))
 
 #offset 1
 
@@ -50,9 +49,8 @@ pow $15,2
 mul $15,4
 nrt $15,2
 div $15,2
+div $9,$15
 mov $14,$9
-div $14,$15
-mov $9,$14
 add $9,1
 mov $1,$0
 div $1,$9

@@ -1,7 +1,6 @@
 ; A225466: Triangle read by rows, 3^k*S_3(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
 ; Submitted by KetamiNO [YouTube]
 ; 1,2,3,4,21,9,8,117,135,27,16,609,1431,702,81,32,3093,13275,12015,3240,243,64,15561,115479,171990,81405,13851,729,128,77997,970515,2238327,1655640,479682,56133,2187,256,390369,7998111,27533142,29893941,13121514,2561706,218700,6561,512,1952613,65155995,326858895,501114600,312747561,90598662,12715218,826686,19683,1024,9764601,527105799,3790915830,7996181085,6820052337,2750215923,564246000,59639490,3050865,59049,2048,48826077,4246140195,43281391527,123319282680,139929432984,75464475471,21228305769
-; Formula: a(n) = truncate(A225472(n)/((-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)!))
 
 mov $1,$0
 mul $1,8
@@ -12,9 +11,43 @@ div $1,2
 bin $1,2
 mov $3,$0
 sub $3,$1
-seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,0
+sub $4,$3
+mov $9,0
+mov $10,0
+fac $3,$4
+mov $7,0
 mov $2,$0
-seq $2,225472 ; Triangle read by rows, k!*S_3(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
+add $2,1
+mov $5,$2
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $2,$6
+sub $2,1
+mov $6,$2
+mov $2,$5
+mov $5,$6
+add $5,2
+lpb $5
+  sub $5,1
+  mov $8,$5
+  mul $8,2
+  add $8,$6
+  pow $8,$2
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $10,$9
+  sub $6,1
+  add $7,1
+  mov $9,0
+lpe
+mov $2,$10
 div $2,$3
 add $0,1
 mov $0,$2

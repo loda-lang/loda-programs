@@ -7,7 +7,7 @@
 add $0,15
 mov $3,$0
 lpb $3
-  pow $0,0
+  mov $0,1
   mov $1,50
   seq $1,210435 ; Number of digits in 5^n.
   mul $2,4

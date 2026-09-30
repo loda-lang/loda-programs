@@ -9,9 +9,8 @@ div $1,2
 bxo $2,$1
 mov $1,$2
 seq $1,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-sub $1,1
 mov $3,$1
-add $1,1
+sub $3,1
 seq $1,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $3,$1
 mov $1,$3
@@ -20,10 +19,8 @@ mov $4,$1
 seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
 mul $1,$4
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-sub $1,1
 mov $5,$1
-add $1,1
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $5,1
 mov $6,-1
 pow $6,$5
 mul $6,2
@@ -32,6 +29,7 @@ mov $7,$5
 add $7,1
 seq $7,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
 mul $7,$6
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $5,$7
 gcd $5,$1
 mov $0,$5

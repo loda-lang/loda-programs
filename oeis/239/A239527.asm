@@ -18,8 +18,7 @@ lpb $2
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   div $3,4
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $3,1
   add $5,$1
   sub $0,1

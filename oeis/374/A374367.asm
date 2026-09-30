@@ -23,7 +23,7 @@ lpb $2
     sub $0,$5
   lpe
   add $0,1
-  seq $0,374366 ; a(n) = Im(Sum_{k=1..n} [k|n]*A008683(k)*(i^k)).
+  seq $0,374366 ; a(n) = Im(Sum_{d|n} mu(d)*(i^d)).
   mul $0,$4
   add $1,$0
 lpe

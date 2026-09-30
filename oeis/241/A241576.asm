@@ -19,8 +19,7 @@ lpb $2
     sub $6,1
     mov $0,$7
     add $0,$6
-    trn $0,1
-    add $0,1
+    max $0,1
     seq $0,17911 ; Powers of sqrt(2) rounded to nearest integer.
     sub $0,1
     mov $5,$6

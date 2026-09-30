@@ -6,8 +6,7 @@ pow $1,$0
 lpb $0
   mov $2,$0
   seq $2,8637 ; Number of partitions of n into at most 8 parts.
-  sub $0,1
-  trn $0,7
+  trn $0,8
   add $1,$2
 lpe
 mov $0,$1

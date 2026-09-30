@@ -1,6 +1,7 @@
 ; A255198: Let EKG-n denote the EKG sequence (A064413) started with n rather than 2, and suppose EKG-n first merges with some other EKG-i (i >= 2) sequence after f(n) (= A255583(n)) steps; then a(n) = number of i such that EKG-i meets EKG-n after f(n) steps.
 ; Submitted by Science United
 ; 1,1,1,4,1,6,2,2,5
+; Formula: a(n) = if((binomial(n-2,gcd(4*n-8,8)-2)%2)==0,binomial(n-2,gcd(4*n-8,8)-2)/2,binomial(n-2,gcd(4*n-8,8)-2))-10*truncate((if((binomial(n-2,gcd(4*n-8,8)-2)%2)==0,binomial(n-2,gcd(4*n-8,8)-2)/2,binomial(n-2,gcd(4*n-8,8)-2))+1)/10)+1
 
 #offset 2
 

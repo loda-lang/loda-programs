@@ -4,7 +4,7 @@
 ; Formula: a(n) = -A000041(n)+A000712(n)
 
 mov $1,$0
-seq $1,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+seq $1,712 ; a(n) = number of partitions of n into parts of 2 kinds.
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 sub $1,$0
 mov $0,$1

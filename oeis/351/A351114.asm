@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $2,1
 seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mod $2,$0
 bin $1,$2

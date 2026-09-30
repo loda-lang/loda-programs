@@ -1,7 +1,7 @@
 ; A033918: Triangular array in which n-th row consists of the numbers 1^1, 2^2, ... n^n.
 ; Submitted by loader3229
 ; 1,1,4,1,4,27,1,4,27,256,1,4,27,256,3125,1,4,27,256,3125,46656,1,4,27,256,3125,46656,823543,1,4,27,256,3125,46656,823543,16777216,1,4,27,256,3125,46656,823543,16777216,387420489,1,4,27,256,3125,46656,823543,16777216,387420489,10000000000,1,4,27,256,3125,46656,823543,16777216,387420489,10000000000,285311670611,1,4,27,256,3125,46656,823543,16777216,387420489,10000000000,285311670611,8916100448256,1,4
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))
+; Formula: a(n) = if(((-binomial(floor((sqrtint(8*n)+1)/2),2)+n)^2)==1,(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n),if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n)<=(-1),0,(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)))
 
 #offset 1
 

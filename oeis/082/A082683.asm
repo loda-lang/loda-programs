@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,82663 ; Odd semiprimes pq with p < q < 2p.
+seq $0,82663 ; Odd semiprimes p*q with p < q < 2*p.
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.

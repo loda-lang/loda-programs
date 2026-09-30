@@ -2,9 +2,8 @@
 ; Submitted by sbo92
 ; 0,1,3,32,734,28994,1752046,150262104,17356844088,2597710341600,488957612319984,113044488306692304,31490845086661001664,10403092187976909854640,4021236906890850070201488,1798052050351216209712206336,920859156623446912386646303104
 
-add $0,1
 mov $3,$0
-sub $0,1
+add $3,1
 mov $2,$0
 bin $2,2
 add $2,$0
@@ -28,7 +27,10 @@ lpb $3
   div $1,-1
   pow $1,$5
   mov $7,$0
-  seq $7,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  seq $7,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $7,5
+  gcd $7,0
+  div $7,5
   seq $0,233543 ; Triangle read by rows: T(n,k) = k!.
   mul $0,$7
   mul $0,$1

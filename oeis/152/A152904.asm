@@ -1,7 +1,7 @@
 ; A152904: Triangle read by rows: T(n,k) = A008683(n-k+1); 1<=k<=n; mu(n) "decrescendo".
 ; Submitted by Science United
 ; 1,-1,1,-1,-1,1,0,-1,-1,1,-1,0,-1,-1,1,1,-1,0,-1,-1,1,-1,1,-1,0,-1,-1,1,0,-1,1,-1,0,-1,-1,1,0,0,-1,1,-1,0,-1,-1,1,1,0,0,-1,1,-1,0,-1,-1,1,-1,1,0,0,-1,1,-1,0,-1,-1,1
-; Formula: a(n) = A008683(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)
+; Formula: a(n) = A008683(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)
 
 #offset 1
 

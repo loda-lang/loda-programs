@@ -12,6 +12,6 @@ bin $0,$2
 sub $1,$2
 mov $3,-1
 pow $3,$1
-seq $1,557 ; Expansion of e.g.f.: 1/(1-2*sinh(x)).
+seq $1,557 ; Expansion of e.g.f. 1/(1 - 2*sinh(x)).
 mul $1,$3
 mul $0,$1

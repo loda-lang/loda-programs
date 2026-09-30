@@ -16,8 +16,7 @@ lpb $2
   lpb $3
     mov $6,$3
     mod $6,10
-    sub $6,4
-    trn $6,1
+    trn $6,5
     div $3,10
     add $5,$6
   lpe

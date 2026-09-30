@@ -1,6 +1,7 @@
 ; A290344: Denominators of the Kirchhoff (and Harary) index for the n-hypercube graph.
 ; Submitted by shiva
 ; 1,1,1,3,3,15,15,105,105,315,63,693,693,9009,9009,45045,45045,765765,765765,14549535,14549535,14549535,14549535,334639305,334639305,1673196525,1673196525,5019589575,5019589575,145568097675,145568097675,4512611027925,4512611027925
+; Formula: a(n) = if(truncate(b(n)/gcd(c(n),b(n)))==0,0,truncate(b(n)/gcd(c(n),b(n)))/(2^valuation(truncate(b(n)/gcd(c(n),b(n))),2))), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 2*n*c(n-1)+b(n-1), c(2) = 5, c(1) = 1, c(0) = 0
 
 mov $1,1
 lpb $0

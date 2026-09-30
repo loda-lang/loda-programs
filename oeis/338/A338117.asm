@@ -1,6 +1,7 @@
 ; A338117: Number of partitions of n into two parts (s,t) such that (t-s) | n, where s < t.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,1,1,1,1,2,2,1,1,3,1,1,3,3,1,2,1,3,3,1,1,5,2,1,3,3,1,3,1,4,3,1,3,5,1,1,3,5,1,3,1,3,5,1,1,7,2,2,3,3,1,3,3,5,3,1,1,7,1,1,5,5,3,3,1,3,3,3,1,8,1,1,5,3,3,3,1,7
+; Formula: a(n) = A000005(if((n%2)==0,n/2,n))-1
 
 #offset 1
 

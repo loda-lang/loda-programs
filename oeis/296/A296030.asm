@@ -1,7 +1,7 @@
 ; A296030: Pairs of coordinates for successive integers in the square spiral (counterclockwise).
 ; Submitted by loader3229
 ; 0,0,1,0,1,1,0,1,-1,1,-1,0,-1,-1,0,-1,1,-1,2,-1,2,0,2,1,2,2,1,2,0,2,-1,2,-2,2,-2,1,-2,0,-2,-1,-2,-2,-1,-2,0,-2,1,-2,2,-2,3,-2,3,-1,3,0,3,1,3,2,3,3,2,3,1,3,0,3,-1,3,-2,3,-3,3,-3,2,-3,1,-3,0
-; Formula: a(n) = (-floor(((-(n%2)+sqrtint(2*n-2)+1)^2)/4)+floor((n-1)/2))*(-4*truncate(gcd(n%2+sqrtint(2*n-2),4)/4)+gcd(n%2+sqrtint(2*n-2),4)-1)+truncate(binomial(-2,truncate(sqrtint(2*n-2)/2))/(-2))
+; Formula: a(n) = (-floor(((-(n%2)+sqrtint(2*n-2)+1)^2)/4)+floor((n-1)/2))*(gcd(n%2+sqrtint(2*n-2),4)%4-1)+truncate(binomial(-2,floor(sqrtint(2*n-2)/2))/(-2))
 
 #offset 1
 

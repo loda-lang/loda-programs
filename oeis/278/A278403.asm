@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
-add $1,1
 seq $1,1158 ; sigma_3(n): sum of cubes of divisors of n.
+seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
 add $0,$1
 div $0,2

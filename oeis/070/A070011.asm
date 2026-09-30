@@ -10,10 +10,10 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  add $3,1
-  mov $5,$3
-  add $3,1
+  add $3,2
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mov $7,$5
   add $7,1
@@ -21,9 +21,8 @@ lpb $2
   mov $5,$7
   add $5,1
   gcd $5,$3
+  div $3,$5
   mov $6,$3
-  div $6,$5
-  mov $3,$6
   equ $3,1
   gcd $3,2
   sub $0,$3

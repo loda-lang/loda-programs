@@ -1,7 +1,7 @@
 ; A247223: Expansion of f(-x^5, -x^7) in powers of x where f() is a Ramanujan theta function.
 ; Submitted by loader3229
 ; 1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate(gcd(binomial(3*n-binomial(truncate((sqrtint(24*n+8)-1)/2)+1,2)-1,truncate((sqrtint(24*n+8)-1)/2))*(2*truncate((sqrtint(24*n+8)-1)/2)+1)-1,3)/2)*(-1)^n
+; Formula: a(n) = floor(gcd(binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1)-1,3)/2)*(-1)^n
 
 mov $1,-1
 pow $1,$0

@@ -4,15 +4,15 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-sub $0,1
+sub $0,2
+sub $2,1
 pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,59708 ; Numbers n such that all digits have same parity.
+  seq $3,59708 ; Numbers k such that all digits have same parity.
   sub $3,1
   add $0,1
   add $1,1

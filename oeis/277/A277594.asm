@@ -15,8 +15,7 @@ lpb $2
   add $3,1
   dir $3,10
   mod $3,10
-  sub $3,2
-  equ $3,5
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0

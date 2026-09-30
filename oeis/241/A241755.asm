@@ -1,5 +1,6 @@
 ; A241755: A finite sum of products of binomial coefficients: Sum_(m=0..n) binomial(-1/4, m)^2*binomial(-1/4, n-m)^2 (C. C. Grosjean's problem, numerators).
 ; 1,1,27,125,42875,250047,12326391,78953589,266468362875,1795828623875,98540708249269,685638992559339,308969245276647319,2197380271937921875,126096314555551359375,911218671317138401125,27146115437208870107914875
+; Formula: a(n) = if(binomial(2*n,n)==0,0,binomial(2*n,n)/(2^valuation(binomial(2*n,n),2)))^3
 
 mov $1,$0
 mul $0,2

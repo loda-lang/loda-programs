@@ -6,10 +6,15 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,37213 ; Expansion of Sum_{n>=0} n*q^(n^2).
+  nrt $2,2
+  mov $5,$0
+  mov $6,$2
   mov $3,$1
   seq $3,37214 ; Expansion of ( Sum_{k>=0} k*q^(k^2) )^2.
   add $1,1
+  pow $2,2
+  equ $2,$0
+  mul $2,$6
   mul $2,$3
   add $4,$2
 lpe

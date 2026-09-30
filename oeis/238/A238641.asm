@@ -8,9 +8,8 @@
 mov $1,$0
 seq $1,6128 ; Total number of parts in all partitions of n. Also, sum of largest parts of all partitions of n.
 sub $1,2
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 mul $0,$2
 sub $0,$1

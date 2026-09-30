@@ -1,6 +1,7 @@
 ; A154034: Number of planar triangular n X n X n nonnegative integer grids with every similarly oriented 3 X 3 X 3 subtriangle summing to 3.
 ; Submitted by loader3229
 ; 56,164,248,207,155,94,34,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28
+; Formula: a(n) = b(n-3), b(n) = b(n-1), b(14) = 28, b(13) = 28, b(12) = 28, b(11) = 28, b(10) = 28, b(9) = 28, b(8) = 28, b(7) = 28, b(6) = 34, b(5) = 94, b(4) = 155, b(3) = 207, b(2) = 248, b(1) = 164, b(0) = 56
 
 #offset 3
 

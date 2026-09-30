@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,176045 ; Numbers n such that n-1 and 2*n-1 are both prime.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   mov $6,$3
   seq $6,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

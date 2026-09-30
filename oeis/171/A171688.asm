@@ -10,10 +10,10 @@ lpb $0
   lpe
   sub $0,1
 lpe
-sub $0,1
 mov $1,$0
-sub $0,1
+sub $0,2
 gcd $0,2
+sub $1,1
 div $1,2
 add $1,1
 seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.

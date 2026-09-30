@@ -16,7 +16,22 @@ lpb $2
   sub $0,$2
   mov $4,$0
   add $4,1
-  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $7,$4
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $6,$4
+  bin $4,2
+  sub $7,$4
+  mov $9,$6
+  div $9,$7
+  mov $8,$6
+  mod $8,$7
+  equ $8,0
+  seq $9,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $9,$8
+  mov $4,$9
   mov $5,$0
   mul $5,8
   add $5,1
@@ -27,7 +42,7 @@ lpb $2
   sub $0,$5
   add $0,1
   seq $0,70106 ; Number of integer triangles with perimeter n which are obtuse and isosceles.
-  mul $0,$4
+  mul $0,$9
   add $1,$0
 lpe
 mov $0,$1

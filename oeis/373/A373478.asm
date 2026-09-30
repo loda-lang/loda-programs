@@ -13,9 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
-  add $3,1
-  trn $3,2
-  add $3,1
+  max $3,1
   seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   mov $5,$1
   add $5,1
@@ -26,8 +24,7 @@ lpb $2
   mod $3,6
   dif $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

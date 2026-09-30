@@ -14,7 +14,12 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,37213 ; Expansion of Sum_{n>=0} n*q^(n^2).
+  mov $5,$0
+  nrt $0,2
+  mov $6,$0
+  pow $0,2
+  equ $0,$5
+  mul $0,$6
   mul $1,$0
   add $3,$1
 lpe

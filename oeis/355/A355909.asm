@@ -1,7 +1,7 @@
 ; A355909: Number of nodes at level n in the tree T_0 mentioned in A355905.
 ; Submitted by Mads Nissen
 ; 1,2,3,4,6,9,13,19,28,42,63,94,141,212,318,477,716,1074,1611,2417,3626,5439,8158,12237
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+c(n-1)+truncate((b(n-1)+c(n-1))/4)+1, b(1) = 1, b(0) = 0, c(n) = truncate((b(n-1)+c(n-1))/4), c(1) = 0, c(0) = 0
+; Formula: a(n) = b(n+1), b(n) = b(n-1)+c(n-1)+floor((b(n-1)+c(n-1))/4)+1, b(1) = 1, b(0) = 0, c(n) = floor((b(n-1)+c(n-1))/4), c(1) = 0, c(0) = 0
 
 add $0,1
 lpb $0

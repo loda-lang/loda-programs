@@ -1,7 +1,7 @@
 ; A229952: Decimal expansion of m_e*c in SI units (kg*m/s), where m_e is the electron mass and c is the speed of light in vacuum.
 ; Submitted by BrandyNOW
 ; 2,7,3,0,9,2,4,2,9
-; Formula: a(n) = -10*truncate((truncate((3*gcd(n+22,2)^5+binomial((n+22)^3,6))/8)+2)/10)+truncate((3*gcd(n+22,2)^5+binomial((n+22)^3,6))/8)+2
+; Formula: a(n) = (floor((3*gcd(n+22,2)^5+binomial((n+22)^3,6))/8)+2)%10
 
 #offset -21
 

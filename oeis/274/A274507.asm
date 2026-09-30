@@ -9,9 +9,9 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $5,$1
-  add $5,11
-  mov $6,$5
-  sub $5,2
+  add $5,9
+  mov $6,$1
+  add $6,11
   mul $6,2
   seq $6,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   sub $6,$5
@@ -27,8 +27,7 @@ lpb $2
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $5,$3
   mov $3,$5
-  sub $3,1
-  equ $3,6
+  equ $3,7
   sub $0,$3
   add $1,6
   mov $4,$0

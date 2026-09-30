@@ -25,7 +25,6 @@ lpb $2
   bin $5,$0
   mov $0,$5
   dgr $0,10
-  trn $1,$0
-  add $1,$0
+  max $1,$0
 lpe
 mov $0,$1

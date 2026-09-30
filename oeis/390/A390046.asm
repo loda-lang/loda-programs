@@ -1,6 +1,7 @@
 ; A390046: Circular sorting numbers: a(n) = maximum number of swaps required to arrange n labeled points on a circle into clockwise order.
 ; Submitted by Science United
 ; 0,1,1,3,3,5,5,6,7,9,9,11,11,12,13,15,15,17,17,18
+; Formula: a(n) = max(max((n-2)%2-if((-n+3)==0,0,valuation(-n+3,3)),0)+n-3,0)
 
 #offset 2
 

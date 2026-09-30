@@ -1,4 +1,4 @@
-; A022924: Number of 3^m between 2^n and 2^(n+1).
+; A022924: Number of numbers of the form 3^m between 2^n and 2^(n+1).
 ; Submitted by BrandyNOW
 ; 0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1
 ; Formula: a(n) = -logint(2^n,3)+logint(2*2^n,3)

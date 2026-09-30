@@ -14,8 +14,7 @@ lpb $2
   seq $5,2322 ; Reduced totient function psi(n): least k such that x^k == 1 (mod n) for all x prime to n; also known as the Carmichael lambda function (exponent of unit group mod n); also called the universal exponent of n.
   mov $3,$1
   mod $3,$5
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $0,$3
   add $1,1
   add $1,$4

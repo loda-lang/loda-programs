@@ -1,7 +1,7 @@
 ; A014047: Inverse of 38th cyclotomic polynomial.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
-; Formula: a(n) = truncate((-n-19*truncate((-n)/19))^(-n-19*truncate((-n)/19)))*(-1)^n
+; Formula: a(n) = (-1)^n*if(((-n-19*truncate((-n)/19))^2)==1,(-n-19*truncate((-n)/19))^(-n-19*truncate((-n)/19)),if((-n-19*truncate((-n)/19))<=(-1),0,(-n-19*truncate((-n)/19))^(-n-19*truncate((-n)/19))))
 
 mov $1,-1
 pow $1,$0

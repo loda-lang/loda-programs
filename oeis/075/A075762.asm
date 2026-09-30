@@ -10,7 +10,7 @@ add $0,1
 seq $0,40 ; The prime numbers.
 add $1,1
 seq $1,40 ; The prime numbers.
-seq $1,109771 ; G.f.: sqrt(1+6*x+x^2).
+seq $1,109771 ; Expansion of g.f.: sqrt(1+6*x+x^2).
 div $1,$0
 mov $0,$1
 div $0,4

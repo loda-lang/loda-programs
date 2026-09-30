@@ -29,6 +29,6 @@ lpb $5
 lpe
 mov $0,$4
 sub $0,1
-mov $1,$0
-equ $1,0
+mov $1,$4
+equ $1,1
 mov $0,$1

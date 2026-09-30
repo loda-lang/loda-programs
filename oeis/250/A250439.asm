@@ -11,8 +11,24 @@ lpb $0
   mov $2,$1
   mov $1,$3
   trn $1,$0
-  add $1,1
-  seq $1,250428 ; Number of (n+1)X(4+1) 0..1 arrays with nondecreasing sum of every two consecutive values in every row and column.
+  mov $4,$1
+  add $4,7
+  div $4,2
+  bin $4,2
+  mov $5,$1
+  add $5,8
+  div $5,2
+  bin $5,3
+  mov $6,$1
+  add $6,9
+  div $6,2
+  bin $6,3
+  add $1,6
+  div $1,2
+  bin $1,2
+  mul $1,$4
+  mul $1,$5
+  mul $1,$6
   mul $2,$1
   add $3,1
 lpe

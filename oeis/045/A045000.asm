@@ -22,8 +22,7 @@ lpb $2
   lpe
   add $1,2
   max $3,$1
-  sub $5,7
-  equ $5,2
+  equ $5,9
   sub $0,$5
   sub $1,1
   mov $4,$0

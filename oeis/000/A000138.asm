@@ -9,13 +9,13 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    sub $4,1
     mov $7,$4
-    equ $7,3
+    equ $7,4
     add $7,1
     seq $7,140757 ; Cumulative sums of A140756.
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $6,$5
     mul $7,$$9
     add $5,1

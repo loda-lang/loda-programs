@@ -15,8 +15,7 @@ lpb $6
   sub $6,$0
 lpe
 mov $0,$5
-sub $0,2
-trn $0,1
+trn $0,3
 mov $2,$0
 bin $2,2
 gcd $2,2

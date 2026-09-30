@@ -1,7 +1,7 @@
 ; A370783: a(n) is the numerator of the sum of the reciprocals of the squarefree divisors of the powerful part of n.
 ; Submitted by Science United
 ; 1,1,1,3,1,1,1,3,4,1,1,3,1,1,1,3,1,4,1,3,1,1,1,3,6,1,4,3,1,1,1,3,1,1,1,2,1,1,1,3,1,1,1,3,4,1,1,3,8,6,1,3,1,4,1,3,1,1,1,3,1,1,4,3,1,1,1,3,1,1,1,2,1,1,6,3,1,1,1,3
-; Formula: a(n) = truncate((A253629(gcd(n,A345305(n)))*binomial(2*truncate((-1)^(gcd(n,A345305(n))-1)),2))/gcd(A253629(gcd(n,A345305(n)))*binomial(2*truncate((-1)^(gcd(n,A345305(n))-1)),2),gcd(n,A345305(n))))
+; Formula: a(n) = truncate((A253629(gcd(n,A345305(n)))*binomial(2*(-1)^(gcd(n,A345305(n))-1),2))/gcd(A253629(gcd(n,A345305(n)))*binomial(2*(-1)^(gcd(n,A345305(n))-1),2),gcd(n,A345305(n))))
 
 #offset 1
 

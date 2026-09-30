@@ -15,8 +15,7 @@ lpb $2
   seq $3,240657 ; Least k such that 2^k == -1 (mod prime(n)), or 0 if no such k exists.
   mov $5,$3
   gcd $3,4
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

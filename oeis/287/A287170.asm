@@ -1,7 +1,7 @@
 ; A287170: a(n) = number of runs of consecutive prime numbers among the prime divisors of n.
 ; Submitted by Orange Kid
 ; 0,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,2,2,2,1,1,1,2,1,2,1,1,1,1,2,2,1,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,2,2,1,1,2,2,2,2,1,1,1,2,2,1,2,2,1,2,2,2,1,1,1,2,1,2,1,2,1,2
-; Formula: a(n) = truncate((sumdigits(sign(3*sign(A334032(A181819(n*A181811(n))))*sign(2*A334032(A181819(n*A181811(n))))+sign(2*A334032(A181819(n*A181811(n))))+sign(A334032(A181819(n*A181811(n)))))*bitxor(abs(2*A334032(A181819(n*A181811(n)))),abs(A334032(A181819(n*A181811(n))))),2)*sign(sign(3*sign(A334032(A181819(n*A181811(n))))*sign(2*A334032(A181819(n*A181811(n))))+sign(2*A334032(A181819(n*A181811(n))))+sign(A334032(A181819(n*A181811(n)))))*bitxor(abs(2*A334032(A181819(n*A181811(n)))),abs(A334032(A181819(n*A181811(n)))))))/2)
+; Formula: a(n) = floor(sumdigits(bitxor(2*A334032(A181819(n*A181811(n))),A334032(A181819(n*A181811(n)))),2)/2)
 
 #offset 1
 

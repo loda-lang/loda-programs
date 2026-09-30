@@ -1,6 +1,7 @@
 ; A374113: a(n) = 1 if A113177(n) and A276085(n) are both even, otherwise 0, where A113177 and A276085 are fully additive with a(p) = Fibonacci(p) and a(p) = p#/p, respectively.
 ; Submitted by Science United
 ; 1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+; Formula: a(n) = 2*(n/(3^valuation(n,3)))-gcd(A001414(n/(3^valuation(n,3))),A276085(n/(3^valuation(n,3))))-2*truncate((2*(n/(3^valuation(n,3)))-gcd(A001414(n/(3^valuation(n,3))),A276085(n/(3^valuation(n,3))))-1)/2)-1
 
 #offset 1
 

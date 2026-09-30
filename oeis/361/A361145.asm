@@ -1,7 +1,7 @@
 ; A361145: Number of downwards peaks in row 2*n-1 of the Sierpinski triangle.
 ; Submitted by Mads Nissen
 ; 1,3,2,7,2,6,4,15,2,6,4,14,4,12,8,31,2,6,4,14,4,12,8,30,4,12,8,28,8,24,16,63,2,6,4,14,4,12,8,30,4,12,8,28,8,24,16,62,4,12,8,28,8,24,16,60,8,24,16,56,16,48,32,127,2,6,4,14,4,12,8,30,4,12,8,28,8,24,16,62
-; Formula: a(n) = truncate((bitxor(n,n-1)*2^sumdigits(n,2))/2)
+; Formula: a(n) = floor((bitxor(n,n-1)*2^sumdigits(n,2))/2)
 
 #offset 1
 

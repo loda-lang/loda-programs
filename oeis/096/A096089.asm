@@ -1,7 +1,7 @@
 ; A096089: Let f(n) = largest number formed using digits of n, g(n) = smallest number formed using digits of n; then a(n) = floor(f(n)/g(n)).
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,1,1,10,1,1,2,2,3,3,4,4,4,10,1,1,1,1,2,2,2,2,3,10,2,1,1,1,1,1,1,2,2,10,2,1,1,1,1,1,1,1,1,10,3,2,1,1,1,1,1,1,1,10,3,2,1,1,1,1,1,1,1,10,4,2,1,1,1,1,1,1,1,10
-; Formula: a(n) = truncate(A004186(n)/A004185(n))
+; Formula: a(n) = floor(A004186(n)/A004185(n))
 
 #offset 1
 

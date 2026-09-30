@@ -17,7 +17,7 @@ lpb $0
   lpb $10
     sub $10,1
     mov $6,$7
-    seq $6,9477 ; Expansion of sin(sin(x))*exp(x).
+    seq $6,9477 ; Expansion of e.g.f.: sin(sin(x))*exp(x).
     mov $4,$7
     add $4,$3
     seq $4,130595 ; Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.

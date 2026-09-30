@@ -11,11 +11,9 @@ lpb $0
     mov $1,$2
     trn $1,1
     seq $1,2865 ; Number of partitions of n that do not contain 1 as a part.
-    add $2,4
-    trn $2,8
+    trn $2,4
     add $3,$1
   lpe
-  add $0,2
-  trn $0,7
+  trn $0,5
 lpe
 mov $0,$3

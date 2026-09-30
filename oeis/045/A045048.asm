@@ -20,9 +20,9 @@ lpb $2
   lpe
   dif $4,2
   div $4,28
-  sub $4,1
   mov $3,$4
-  equ $3,2
+  equ $3,3
+  sub $4,1
   sub $0,$3
   add $1,1
   sub $2,$0

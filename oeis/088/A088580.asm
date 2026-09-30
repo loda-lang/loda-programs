@@ -1,18 +1,47 @@
 ; A088580: a(n) = 1 + sigma(n).
 ; Submitted by Science United
 ; 2,4,5,8,7,13,9,16,14,19,13,29,15,25,25,32,19,40,21,43,33,37,25,61,32,43,41,57,31,73,33,64,49,55,49,92,39,61,57,91,43,97,45,85,79,73,49,125,58,94,73,99,55,121,73,121,81,91,61,169,63,97,105,128,85,145,69,127,97,145,73,196,75,115,125,141,97,169,81,187
-; Formula: a(n) = A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)+1
 
 #offset 1
 
 sub $0,1
 mov $3,$0
+mov $7,0
 add $0,1
 mov $2,$0
 dir $2,2
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $6,$2
+sub $6,1
+mov $5,$2
+dir $5,2
+mov $10,$5
+mov $9,$5
+nrt $9,2
+lpb $9
+  max $9,1
+  mov $11,$5
+  mod $11,$9
+  equ $11,0
+  mov $8,$5
+  div $8,$9
+  add $8,$9
+  mul $8,$11
+  add $7,$8
+  sub $9,1
+lpe
+nrt $5,2
+mov $9,$5
+pow $9,2
+sub $9,$10
+equ $9,0
+mul $5,$9
+sub $7,$5
+mov $4,$2
+bxo $4,$6
+mul $4,$7
 mov $1,$0
 bxo $1,$3
-mul $1,$2
+mul $1,$4
+mov $2,$4
 mov $0,$1
 add $0,1

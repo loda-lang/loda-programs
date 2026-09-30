@@ -9,15 +9,14 @@ div $1,$0
 mov $3,$0
 pow $3,4
 lpb $3
+  mov $6,$2
+  add $6,1
   mov $4,$2
-  add $4,1
-  mov $6,$4
-  add $4,3
+  add $4,4
   seq $4,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mod $4,$6
   sub $4,$5
-  sub $4,1
-  equ $4,0
+  equ $4,1
   gcd $5,$2
   sub $0,$4
   add $2,1

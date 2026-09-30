@@ -1,4 +1,4 @@
-; A384906: Number of maximal anti-runs of consecutive parts increasing by more than 1 in the prime indices of n (with multiplicity).
+; A384906: Number of maximal anti-runs of consecutive parts not increasing by 1 in the prime indices of n (with multiplicity).
 ; Submitted by fzs600
 ; 0,1,1,1,1,2,1,1,1,1,1,2,1,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,1,3,1,1,1,1,2,2,1,1,1,1,1,2,1,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,1,3,1,1,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,2,1,1
 

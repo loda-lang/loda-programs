@@ -1,7 +1,6 @@
 ; A360130: a(n) = 1 if A003961(n) is a triangular number, otherwise 0, where A003961 is fully multiplicative with a(p) = nextprime(p).
 ; Submitted by Science United
 ; 1,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((-truncate(((truncate((sqrtint(8*A003961(n))-1)/2)+1)*(-binomial(truncate((sqrtint(8*A003961(n))-1)/2)+1,2)+A003961(n)))/(gcd(-binomial(truncate((sqrtint(8*A003961(n))-1)/2)+1,2)+A003961(n),truncate((sqrtint(8*A003961(n))-1)/2)+1)^2))+1)^(-truncate(((truncate((sqrtint(8*A003961(n))-1)/2)+1)*(-binomial(truncate((sqrtint(8*A003961(n))-1)/2)+1,2)+A003961(n)))/(gcd(-binomial(truncate((sqrtint(8*A003961(n))-1)/2)+1,2)+A003961(n),truncate((sqrtint(8*A003961(n))-1)/2)+1)^2))+1))
 
 #offset 1
 

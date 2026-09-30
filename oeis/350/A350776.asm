@@ -10,8 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,350775 ; The balanced ternary expansion of a(n) is obtained by multiplying adjacent digits in the balanced ternary expansion of n: a(Sum_{k >= 0} t_k * 3^k) = Sum_{k >= 0} t_k * t_{k+1} * 3^k (with -1 <= t_k <= 1 for any k >= 0).
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

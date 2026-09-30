@@ -11,7 +11,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,76035 ; G.f.: 1/(1-4*x*C) where C = (1/2-1/2*(1-4*x)^(1/2))/x = g.f. for Catalan numbers A000108.
+    seq $7,76035 ; Expansion of g.f. 1/(1-4*x*C) where C = (1/2-1/2*(1-4*x)^(1/2))/x = g.f. for Catalan numbers A000108.
     mov $9,10
     add $9,$5
     mov $10,3

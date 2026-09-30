@@ -1,7 +1,7 @@
 ; A072934: Length of longest non-crossing walk along vertices of n-dimensional hypercubes.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,4,9,20,41,84,169,255
-; Formula: a(n) = truncate((2*(gcd(floor((n-1)/7),2)+2)*2^(n-1))/3)-1
+; Formula: a(n) = floor((2*(gcd(floor((n-1)/7),2)+2)*2^(n-1))/3)-1
 
 #offset 1
 

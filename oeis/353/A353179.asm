@@ -6,4 +6,4 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-seq $0,52038 ; First nonzero digit in expansion of 1/n.
+seq $0,52038 ; First nonzero digit in the decimal expansion of 1/n.

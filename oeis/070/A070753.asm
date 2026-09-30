@@ -14,8 +14,7 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   seq $3,493 ; a(n) = floor(sin(n)).
-  add $3,1
-  equ $3,0
+  equ $3,-1
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -5,11 +5,9 @@
 
 #offset 1
 
-sub $0,2
 mov $1,$0
-add $0,2
 seq $0,40 ; The prime numbers.
 pow $0,2
-add $1,4
+add $1,2
 seq $1,40 ; The prime numbers.
 mod $0,$1

@@ -11,10 +11,9 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
+  mov $6,$1
+  sub $6,1
   mov $3,$1
-  sub $3,1
-  mov $6,$3
-  add $3,1
   seq $3,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
   mov $7,$6
   mul $7,8
@@ -24,13 +23,14 @@ lpb $2
   div $7,2
   bin $7,2
   sub $6,$7
-  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $8,0
+  sub $8,$6
+  fac $6,$8
   div $3,$6
   mov $5,$3
   mul $3,338
   gcd $3,4
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

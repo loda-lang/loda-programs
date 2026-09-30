@@ -1,7 +1,7 @@
 ; A359166: a(n) = lambda(n) * lambda(sigma(n)), where lambda is Liouville's lambda, and sigma is the sum of divisors function.
 ; Submitted by Ralfy
 ; 1,1,-1,-1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,-1,1,-1,1,1,-1,1,-1,1,-1,-1,-1,-1,1,1,1,1,-1,1,-1,1,-1,1,1,1,1,-1,1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,1,1,1,1
-; Formula: a(n) = truncate((truncate((-1)^A001222(n*A000203(n)))+truncate((7*truncate((-1)^A001222(n*A000203(n))))/3))/3)
+; Formula: a(n) = truncate(((-1)^A001222(n*A000203(n))+truncate((7*(-1)^A001222(n*A000203(n)))/3))/3)
 
 #offset 1
 

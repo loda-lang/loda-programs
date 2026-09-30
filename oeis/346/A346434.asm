@@ -1,7 +1,7 @@
 ; A346434: Triangle read by rows of numbers with n 1's and n 0's in their representation in base of Fibonacci numbers (A210619), written as those 1's and 0's.
 ; Submitted by nenym
 ; 10,1001,1010,100101,101001,101010,10010101,10100101,10101001,10101010,1001010101,1010010101,1010100101,1010101001,1010101010,100101010101,101001010101,101010010101,101010100101,101010101001,101010101010,10010101010101,10100101010101,10101001010101,10101010010101,10101010100101,10101010101001,10101010101010,1001010101010101,1010010101010101,1010100101010101,1010101001010101,1010101010010101,1010101010100101,1010101010101001,1010101010101010,100101010101010101,101001010101010101
-; Formula: a(n) = truncate(A304453(2*truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))*(truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))-1)-1)/1000)
+; Formula: a(n) = floor(A304453(2*(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))-1)*if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))-1)/1000)
 
 #offset 1
 

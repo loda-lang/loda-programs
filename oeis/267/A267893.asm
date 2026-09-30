@@ -13,8 +13,7 @@ lpb $2
   seq $4,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   mov $3,$4
   div $3,2
-  sub $3,5
-  equ $3,5
+  equ $3,10
   sub $0,$3
   add $1,1
   sub $2,$0

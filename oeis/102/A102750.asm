@@ -11,7 +11,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,71178 ; Exponent of the largest prime factor of n.
+  mov $5,$3
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  lex $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

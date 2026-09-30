@@ -23,8 +23,7 @@ lpb $3
   seq $4,62570 ; a(n) = phi(2*n).
   dif $4,2
   dir $4,2
-  sub $4,1
-  equ $4,0
+  equ $4,1
   sub $0,$4
   add $2,1
   mov $5,$0

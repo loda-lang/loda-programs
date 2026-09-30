@@ -5,8 +5,7 @@
 
 #offset 1
 
-sub $0,1
-trn $0,1
+trn $0,2
 mod $0,3
 mul $0,27
 add $0,21

@@ -10,7 +10,13 @@ mul $2,10
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  add $5,1
+  mov $9,$5
+  seq $9,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  mul $9,8
+  mov $5,$9
+  sub $5,4
+  div $5,8
   add $5,1
   mov $7,$5
   seq $7,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.

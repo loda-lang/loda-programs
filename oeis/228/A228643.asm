@@ -1,7 +1,7 @@
 ; A228643: Triangle read by rows: T(n,1) = n * (n - 1) + 1 and for k: 1 < k <= n: T(n,k) = T(n,k-1) + T(n-1,k-1).
 ; Submitted by loader3229
 ; 1,3,4,7,10,14,13,20,30,44,21,34,54,84,128,31,52,86,140,224,352,43,74,126,212,352,576,928,57,100,174,300,512,864,1440,2368,73,130,230,404,704,1216,2080,3520,5888,91,164,294,524,928,1632,2848,4928,8448,14336,111,202,366,660,1184,2112,3744,6592,11520,19968,34304,133,244,446,812,1472,2656,4768,8512,15104,26624,46592,80896,157,290
-; Formula: a(n) = truncate((truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2))*((2*truncate((sqrtint(8*n)-1)/2)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2)^2-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+2))/32)
+; Formula: a(n) = truncate((((2*floor((sqrtint(8*n)-1)/2)-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2)^2-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+2)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+2)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+2)))/32)
 
 #offset 1
 

@@ -21,8 +21,7 @@ lpb $2
   bin $6,$3
   mov $3,$6
   mul $3,2
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,$5
   mov $4,$0

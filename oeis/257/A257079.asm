@@ -1,6 +1,7 @@
 ; A257079: The least nonzero digit missing from the factorial representation (A007623) of n.
 ; Submitted by Science United
 ; 1,2,2,2,1,3,2,2,2,2,3,3,1,3,3,3,1,3,1,2,2,2,1,4,2,2,2,2,3,3,2,2,2,2,3,3,3,3,3,3,3,3,2,2,2,2,4,4,1,3,3,3,1,3,3,3,3,3,3,3,1,3,3,3,1,3,1,4,4,4,1,4,1,2,2,2,1,4,2,2
+; Formula: a(n) = A257993(truncate(A278159(if((A277012(n)%4)==0,A277012(n)/4,A277012(n)))/A064989(A278159(if((A277012(n)%4)==0,A277012(n)/4,A277012(n))))))
 
 seq $0,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
 dif $0,4

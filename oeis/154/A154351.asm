@@ -1,7 +1,7 @@
 ; A154351: a(n) = number of distinct values of A056239(m) when A153452(m) is equal to n.
 ; Submitted by loader3229
 ; 2,1,1,2,2,1,1,2,2,1,1,1,3,2,2,1,1,1
-; Formula: a(n) = truncate((4*truncate((sqrtint(8*n+16)-1)/2)+4)/(2*n-2*binomial(truncate((sqrtint(8*n+16)-1)/2)+1,2)+truncate((sqrtint(8*n+16)-1)/2)+5))
+; Formula: a(n) = truncate((4*floor((sqrtint(8*n+16)-1)/2)+4)/(2*n-2*binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+floor((sqrtint(8*n+16)-1)/2)+5))
 
 #offset 2
 

@@ -13,10 +13,9 @@ lpb $1
   add $2,1
   mov $4,10
   pow $4,$2
-  mul $0,0
+  mov $0,0
   mov $2,$4
-  nrt $2,2
-  nrt $2,2
+  nrt $2,4
   add $2,1
   seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   pow $2,4

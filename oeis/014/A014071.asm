@@ -1,7 +1,7 @@
 ; A014071: Inverse of 62nd cyclotomic polynomial.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((-n-31*truncate((-n)/31))^(-n-31*truncate((-n)/31)))*(-1)^n
+; Formula: a(n) = (-1)^n*if(((-n-31*truncate((-n)/31))^2)==1,(-n-31*truncate((-n)/31))^(-n-31*truncate((-n)/31)),if((-n-31*truncate((-n)/31))<=(-1),0,(-n-31*truncate((-n)/31))^(-n-31*truncate((-n)/31))))
 
 mov $1,-1
 pow $1,$0

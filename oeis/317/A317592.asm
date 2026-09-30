@@ -9,6 +9,5 @@ lpb $0
   dir $0,2
   pow $0,$0
 lpe
+add $0,98
 mov $1,$0
-add $1,98
-mov $0,$1

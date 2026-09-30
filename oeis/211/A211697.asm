@@ -18,8 +18,7 @@ lpb $4
   seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
   mul $1,$0
   add $3,$1
-  sub $4,2
-  trn $4,1
+  trn $4,3
 lpe
 mov $0,$3
 add $0,1

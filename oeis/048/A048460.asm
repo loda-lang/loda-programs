@@ -1,6 +1,7 @@
 ; A048460: Total of odd numbers in the generations from 2 onwards.
 ; Submitted by BrandyNOW
 ; 2,3,3,3,4,6,5,3,4,6,6,6,8,12,9,3,4,6,6,6,8,12,10,6,8,12,12,12,16,24,17,3,4,6,6,6,8,12,10,6,8,12,12,12,16,24,18,6,8,12,12,12,16,24,20,12,16,24,24,24,32,48,33,3,4,6,6,6,8,12,10,6,8,12,12,12,16,24,18,6
+; Formula: a(n) = if(((sumdigits(b(n),2)*sign(b(n)))%2)==0,(sumdigits(b(n),2)*sign(b(n)))/2,sumdigits(b(n),2)*sign(b(n))), b(n) = bitxor(c(n-1),8*b(n-1)), b(1) = 11, b(0) = 1, c(n) = bitxor(c(n-1),8*b(n-1)), c(1) = 11, c(0) = 3
 
 #offset 2
 

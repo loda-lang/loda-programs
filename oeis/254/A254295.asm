@@ -1,7 +1,7 @@
 ; A254295: Decimal expansion of triton mass in u.
 ; Submitted by loader3229
 ; 3,0,1,5,5,0,0,7,1
-; Formula: a(n) = -10*truncate((-10*truncate(truncate(((binomial(n,2)-1)*(-19*n-2))/6)/10)+truncate(((binomial(n,2)-1)*(-19*n-2))/6)+10)/10)-10*truncate(truncate(((binomial(n,2)-1)*(-19*n-2))/6)/10)+truncate(((binomial(n,2)-1)*(-19*n-2))/6)+10
+; Formula: a(n) = (-10*truncate(truncate(((binomial(n,2)-1)*(-19*n-2))/6)/10)+truncate(((binomial(n,2)-1)*(-19*n-2))/6)+10)%10
 
 #offset 1
 

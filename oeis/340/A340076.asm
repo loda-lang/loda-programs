@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   gcd $5,$3
   div $3,$5

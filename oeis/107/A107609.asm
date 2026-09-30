@@ -1,4 +1,4 @@
-; A107609: a(n) = round(n / pi(n)) = round(A000027(n) / A000720(n)) where round(x) rounds half to even.
+; A107609: a(n) = round(n / pi(n)) = round(n / A000720(n)) where round(x) rounds half to even.
 ; Submitted by loader3229
 ; 2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,2,3,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,3,4,3,3,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4
 

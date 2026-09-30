@@ -10,13 +10,13 @@ lpb $2
   sub $2,1
   mov $4,$3
   seq $4,31269 ; Write the (n+1)st Fibonacci number in base 5 and juxtapose.
-  sub $4,2
   mov $5,$4
-  equ $5,1
+  equ $5,3
   add $1,$5
   add $3,1
   mov $5,$4
-  equ $5,2
+  equ $5,4
   sub $1,$5
+  sub $4,2
 lpe
 mov $0,$1

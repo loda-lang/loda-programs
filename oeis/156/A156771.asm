@@ -5,6 +5,5 @@
 
 #offset 1
 
-mul $0,81
-sub $0,59
-mul $0,9
+mul $0,729
+sub $0,531

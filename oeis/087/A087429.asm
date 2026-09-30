@@ -8,7 +8,7 @@ sub $0,2
 mov $2,$0
 max $2,0
 add $2,2
-seq $2,70221 ; a(n)=LPF(n+1)-LPF(n), where LPF(n) denotes the largest prime factor of n.
+seq $2,70221 ; a(n) = gpf(n+1) - gpf(n), where gpf = A006530 (greatest prime factor).
 lpb $2
   div $2,9
   mov $1,6

@@ -8,7 +8,6 @@ mov $1,2
 lpb $1
   sub $1,1
   dif $0,$1
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,101643 ; First row of array in A101385.
 lpe

@@ -12,8 +12,7 @@ lpb $2
   add $1,4
   mov $3,$1
   seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -8,8 +8,10 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $4,0
+  sub $4,$0
   mov $2,$0
-  seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  fac $2,$4
   seq $2,4086 ; Read n backwards (referred to as R(n) in many sequences).
   sub $0,1
   bin $0,$3

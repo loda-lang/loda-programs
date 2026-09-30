@@ -9,7 +9,50 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $1,$3
-  seq $1,10183 ; Continued fraction for sqrt(118).
+  dgr $1,11
+  mov $5,$1
+  equ $5,0
+  mul $5,10
+  mov $6,$5
+  mov $5,$1
+  equ $5,1
+  add $6,$5
+  mov $5,$1
+  equ $5,2
+  mul $5,6
+  add $6,$5
+  mov $5,$1
+  equ $5,3
+  mul $5,3
+  add $6,$5
+  mov $5,$1
+  equ $5,4
+  mul $5,2
+  add $6,$5
+  mov $5,$1
+  equ $5,5
+  mul $5,10
+  add $6,$5
+  mov $5,$1
+  equ $5,6
+  mul $5,2
+  add $6,$5
+  mov $5,$1
+  equ $5,7
+  mul $5,3
+  add $6,$5
+  mov $5,$1
+  equ $5,8
+  mul $5,6
+  add $6,$5
+  mov $5,$1
+  equ $5,9
+  add $6,$5
+  mov $5,$1
+  equ $5,10
+  mul $5,20
+  add $6,$5
+  mov $1,$6
   mul $1,3
   dif $1,9
   mul $1,$2

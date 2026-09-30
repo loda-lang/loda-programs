@@ -21,7 +21,9 @@ lpb $2
   bin $6,2
   mov $5,$0
   sub $5,$6
-  seq $5,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,0
+  sub $7,$5
+  fac $5,$7
   mov $4,$0
   seq $4,284861 ; Triangle read by rows: T(n, k) = S2[3,1](n, k)*k! with the Sheffer triangle S2[3,1] = (exp(x), exp(3*x) -1) given in A282629.
   div $4,$5

@@ -4,8 +4,7 @@
 
 mov $1,$0
 neq $1,0
-trn $0,1
-add $0,1
+max $0,1
 mov $3,3
 mov $5,$0
 div $0,2

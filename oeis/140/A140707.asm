@@ -10,13 +10,16 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,80791 ; Number of nonleading 0's in binary expansion of n.
-  add $3,1
+  max $3,1
+  mov $6,$3
+  dgs $6,2
   mov $5,$1
   add $5,1
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
+  log $3,2
+  sub $3,$6
   sub $3,$5
-  equ $3,0
+  equ $3,-2
   sub $0,$3
   add $1,1
   mov $4,$0

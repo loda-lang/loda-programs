@@ -12,8 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,316863 ; Number of times 2 appears in the decimal expansion of n.
-  add $3,2
-  equ $3,2
+  equ $3,0
   add $5,37
   sub $0,$3
   mul $1,2

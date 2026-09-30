@@ -11,7 +11,18 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,1747 ; 2 together with primes multiplied by 2.
+  sub $0,1
+  mov $6,$0
+  dif $6,$0
+  add $6,1
+  mov $5,$0
+  max $5,1
+  seq $5,40 ; The prime numbers.
+  mul $6,$5
+  mov $4,1
+  add $4,$6
+  mov $0,$4
+  sub $0,1
   add $3,$0
 lpe
 mov $0,$3

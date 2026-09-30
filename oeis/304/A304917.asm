@@ -1,7 +1,7 @@
 ; A304917: a(n) = prime(n)^n - primorial(n - 1).
 ; Submitted by Skillz
 ; 1,7,119,2371,160841,4824499,410308643,16983052531,1801142961773,420707010207331,25408470426711601,6582951805279545151,925103094894275494511,73885357039888240238239,12063348337737606907045313,3876269049503627062809380911
-; Formula: a(n) = -truncate((A102476(n)+1)/4)+A062006(n)-1
+; Formula: a(n) = max(A006005(n),2)^n-truncate((A102476(n)+1)/4)
 
 #offset 1
 
@@ -9,6 +9,10 @@ mov $1,$0
 seq $1,102476 ; Least modulus with 2^n square roots of 1.
 add $1,1
 div $1,4
-seq $0,62006 ; a(n) = prime(n)^n + 1.
-sub $0,1
+mov $2,$0
+seq $0,6005 ; The odd prime numbers together with 1.
+mov $3,$0
+sub $3,1
+max $0,2
+pow $0,$2
 sub $0,$1

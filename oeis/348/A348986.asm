@@ -1,7 +1,7 @@
 ; A348986: Denominator of ratio sigma(n) / A325973(n), where A325973 is the arithmetic mean of {sum of squarefree divisors} and {sum of unitary divisors}.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,4,1,1,1,2,7,1,1,4,1,1,1,10,1,7,1,4,1,1,1,2,16,1,2,4,1,1,1,2,1,1,1,31,1,1,1,2,1,1,1,4,7,1,1,10,29,16,1,4,1,2,1,2,1,1,1,4,1,1,7,34,1,1,1,4,1,1,1,17,1,1,16,4,1,1,1,10
-; Formula: a(n) = truncate(truncate((A034448(n)+A048250(n))/2)/gcd(A000203(n),truncate((A034448(n)+A048250(n))/2)))
+; Formula: a(n) = truncate(truncate((A000203(A075423(n)+1)+A034448(n))/2)/gcd(A000203(n),truncate((A000203(A075423(n)+1)+A034448(n))/2)))
 
 #offset 1
 
@@ -9,12 +9,17 @@ sub $0,1
 mov $1,$0
 mov $2,$0
 add $2,1
-seq $2,48250 ; Sum of the squarefree divisors of n.
+mov $3,$2
+seq $3,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+add $3,1
+mov $4,$3
+seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $0,1
 seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
-add $0,$2
+add $0,$4
 div $0,2
 add $1,1
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 gcd $1,$0
+mov $2,$4
 div $0,$1

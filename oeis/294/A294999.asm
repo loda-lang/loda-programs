@@ -4,17 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
   pow $3,3
   seq $3,54055 ; Largest digit of n.
-  sub $3,1
-  equ $3,8
+  equ $3,9
   add $3,$4
   gcd $3,2
   sub $0,$3

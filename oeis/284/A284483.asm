@@ -12,8 +12,7 @@ trn $2,$1
 add $2,1
 sub $1,1
 trn $1,$2
-sub $2,3
-trn $2,4
+trn $2,7
 add $1,$2
 mov $5,1
 mov $0,$1

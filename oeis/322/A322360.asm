@@ -9,6 +9,5 @@ lpb $0
   seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
   div $0,$2
 lpe
+seq $0,167344 ; Totally multiplicative sequence with a(p) = (p-1)*(p+1) = p^2-1 for prime p.
 mov $1,$0
-seq $1,167344 ; Totally multiplicative sequence with a(p) = (p-1)*(p+1) = p^2-1 for prime p.
-mov $0,$1

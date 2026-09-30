@@ -11,8 +11,7 @@ lpb $4
   sub $4,1
   mov $0,$2
   add $0,$4
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,210 ; A Beatty sequence: floor(n*(e-1)).
   mov $1,$4
   mul $1,$0

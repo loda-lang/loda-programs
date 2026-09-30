@@ -18,12 +18,66 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,$3
-  seq $4,34851 ; Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n.
+  mov $8,$4
   add $3,1
+  add $4,1
+  mov $7,$4
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $9,$4
+  bin $9,2
+  sub $4,1
+  sub $7,$9
+  sub $7,1
+  sub $8,$9
+  mov $10,-1
+  bin $10,$7
+  mov $11,$7
+  sub $11,$4
+  div $7,2
+  pow $10,$11
+  equ $10,1
+  sub $11,2
+  div $11,2
+  bin $11,$7
+  mul $10,$11
+  gcd $10,0
+  bin $4,$8
+  add $4,$10
+  div $4,2
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,34851 ; Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n.
+  mov $13,$5
+  add $5,1
+  mov $12,$5
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $14,$5
+  bin $14,2
+  sub $5,1
+  sub $12,$14
+  sub $12,1
+  sub $13,$14
+  mov $15,-1
+  bin $15,$12
+  mov $16,$12
+  sub $16,$5
+  div $12,2
+  pow $15,$16
+  equ $15,1
+  sub $16,2
+  div $16,2
+  bin $16,$12
+  mul $15,$16
+  gcd $15,0
+  bin $5,$13
+  add $5,$15
+  div $5,2
   mul $4,$5
   add $6,$4
 lpe

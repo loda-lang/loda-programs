@@ -12,7 +12,7 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,324659 ; a(n) = (1/2)*A318468(n), where A318468(n) is bitwise-AND of 2*n and sigma(n).
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1
 mul $0,2

@@ -17,8 +17,7 @@ lpb $2
 lpe
 mov $0,$3
 div $0,4
-mul $0,4
-add $0,5
-mul $0,74
+mul $0,296
+add $0,370
 pow $0,4
 div $0,29986576

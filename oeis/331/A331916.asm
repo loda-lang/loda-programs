@@ -4,17 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,90
+add $2,89
 lpb $2
   sub $2,1
   add $3,1
   seq $3,295665 ; Fully multiplicative with a(prime(m)) = prime(k) when m = prime(k), and a(prime(m)) = 1 when m is not a prime.
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $0,$3
   add $1,1
   max $3,$1

@@ -16,8 +16,7 @@ lpb $3
   nrt $4,2
   add $4,1
   div $4,2
-  trn $4,1
-  add $4,1
+  max $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $4,1
   sub $0,$4
@@ -31,9 +30,8 @@ lpe
 mov $0,$2
 pow $0,2
 mul $0,2
+nrt $0,2
 mov $1,$0
-nrt $1,2
-mov $0,$1
 div $0,2
 mul $0,2
 add $0,1

@@ -17,6 +17,5 @@ sub $3,$0
 add $1,$3
 mov $0,$1
 sub $0,4
+div $0,2
 mov $2,$0
-div $2,2
-mov $0,$2

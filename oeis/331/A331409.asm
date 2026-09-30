@@ -13,7 +13,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   add $0,1
-  seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).
   sub $0,$1
   add $1,$0
   add $3,$0

@@ -11,7 +11,13 @@ lpb $2
   mov $3,$1
   add $3,2
   bin $3,2
-  seq $3,80883 ; Distance of n to next square.
+  mov $5,$3
+  nrt $5,2
+  mov $6,$5
+  add $6,1
+  pow $6,2
+  sub $6,$3
+  mov $3,$6
   seq $3,163771 ; Triangle interpolating the swinging factorial (A056040) restricted to even indices with its binomial inverse. Same as interpolating the central trinomial coefficients (A002426) with the central binomial coefficients (A000984).
   mod $3,2
   sub $0,$3

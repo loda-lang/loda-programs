@@ -12,8 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,7376 ; The almost-natural numbers: write n in base 10 and juxtapose digits.
-  sub $3,2
-  equ $3,1
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -9,7 +9,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,10057 ; a(n) = 1 if n is a cube, else 0.
+  mov $6,$2
+  nrt $6,3
+  pow $6,3
+  equ $2,$6
   add $4,$5
   max $4,$2
   add $1,$2

@@ -4,9 +4,9 @@
 
 #offset 1
 
-mul $0,4
 mov $1,$0
-mul $0,2
+mul $0,8
+mul $1,4
 pow $1,2
 lpb $1
   sub $1,$0

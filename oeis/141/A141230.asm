@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,327551 ; Number of cycles in the perfect shuffle permutation mapping (1,2,...,2n) to (1,n+1,2,n+2,...,n,2n).
-  sub $3,1
-  equ $3,5
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

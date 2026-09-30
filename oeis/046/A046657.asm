@@ -8,8 +8,16 @@ lpb $0
   mov $2,$0
   div $0,13
   bin $0,$2
+  mov $3,$2
+  seq $3,49691 ; a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
+  mov $4,$3
+  equ $4,0
+  add $3,$4
+  sub $3,1
   mov $1,$2
-  seq $1,100449 ; Number of ordered pairs (i,j) with |i| + |j| <= n and gcd(i,j) <= 1.
+  mov $1,$3
+  mul $1,2
+  add $1,1
   mov $2,$1
   div $2,4
 lpe

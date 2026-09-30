@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 lpb $0
   mov $4,$0
   seq $4,54611 ; a(n) = Sum_{d|n} phi(d)*4^(n/d).

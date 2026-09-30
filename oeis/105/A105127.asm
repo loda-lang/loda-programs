@@ -5,8 +5,7 @@
 
 #offset 1
 
+seq $0,105135 ; Numbers n such that 32n+17 is prime.
 mov $1,$0
-seq $1,105135 ; Numbers n such that 32n+17 is prime.
-mov $0,$1
 mul $0,32
 add $0,17

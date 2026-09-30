@@ -1,7 +1,7 @@
 ; A119031: Add and Reverse: a(n) = the reversal of (a(n-1)+d), case a(1)=1 and d=4.
 ; Submitted by loader3229
 ; 1,5,9,31,53,75,97,101,501,505,905,909,319,323,723,727,137,141,541,545,945,949,359,363,763,767,177,181,581,585,985,989,399,304,803,708,217,122,621,526,35,93,79,38,24,82,68,27,13,71,57,16,2,6,1,5,9,31,53,75,97,101,501,505,905,909,319,323,723,727,137,141,541,545,945,949,359,363,763,767
-; Formula: a(n) = b(n-1), b(n) = (9*min(truncate((b(n-1)+4)/100),1)+1)*(9*min((-10*truncate(truncate((b(n-1)+4)/10)/10)+truncate((b(n-1)+4)/10))*(9*min(truncate((b(n-1)+4)/100),1)+1)+truncate((b(n-1)+4)/100),1)+1)*(-10*truncate((b(n-1)+4)/10)+b(n-1)+4)+(-10*truncate(truncate((b(n-1)+4)/10)/10)+truncate((b(n-1)+4)/10))*(9*min(truncate((b(n-1)+4)/100),1)+1)+truncate((b(n-1)+4)/100), b(0) = 1
+; Formula: a(n) = (9*min(truncate((a(n-1)+4)/100),1)+1)*(9*min((-10*truncate(truncate((a(n-1)+4)/10)/10)+truncate((a(n-1)+4)/10))*(9*min(truncate((a(n-1)+4)/100),1)+1)+truncate((a(n-1)+4)/100),1)+1)*(-10*truncate((a(n-1)+4)/10)+a(n-1)+4)+(-10*truncate(truncate((a(n-1)+4)/10)/10)+truncate((a(n-1)+4)/10))*(9*min(truncate((a(n-1)+4)/100),1)+1)+truncate((a(n-1)+4)/100), a(1) = 1
 
 #offset 1
 

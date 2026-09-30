@@ -9,7 +9,7 @@ lpb $0
   max $2,0
   mov $3,-1
   pow $3,$2
-  mul $0,0
+  mov $0,0
   seq $2,7248 ; McKay-Thompson series of class 4C for the Monster group.
   mul $2,$3
   add $1,$2

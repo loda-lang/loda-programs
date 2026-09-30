@@ -10,7 +10,11 @@ pow $2,2
 add $2,12
 lpb $2
   mov $3,$1
-  seq $3,232243 ; a(n) = wt(n^2) - wt(n), where wt(n) = A000120(n) is the binary weight function.
+  mul $3,$1
+  dgs $3,2
+  mov $5,$1
+  dgs $5,2
+  sub $3,$5
   add $3,1
   gcd $3,2
   sub $0,$3

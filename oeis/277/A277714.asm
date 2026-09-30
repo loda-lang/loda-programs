@@ -11,8 +11,7 @@ pow $2,3
 lpb $2
   mov $3,$1
   seq $3,264977 ; a(0) = 0, a(1) = 1, a(2*n) = 2*a(n), a(2*n+1) = a(n) XOR a(n+1).
-  sub $3,6
-  equ $3,0
+  equ $3,6
   sub $0,$3
   add $1,3
   mov $4,$0

@@ -6,7 +6,13 @@
 
 lpb $0
   trn $0,1
-  seq $0,80883 ; Distance of n to next square.
+  mov $2,$0
+  nrt $2,2
+  mov $3,$2
+  add $3,1
+  pow $3,2
+  sub $3,$0
+  mov $0,$3
   sub $0,1
   add $1,1
 lpe

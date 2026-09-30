@@ -18,12 +18,10 @@ lpb $0
   lpe
   lpb $0
     dif $0,$2
-    add $5,1
-    equ $5,4
+    equ $5,3
     sub $5,$4
     mul $4,$2
-    sub $4,2
-    equ $4,3
+    equ $4,5
     mul $4,$2
     add $5,$4
   lpe

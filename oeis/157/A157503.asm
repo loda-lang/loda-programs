@@ -9,11 +9,37 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  seq $4,293140 ; E.g.f.: Product_{m>0} (1-x^m).
+  mul $4,24
+  add $4,1
+  mov $10,$2
+  mov $13,$4
+  nrt $4,2
+  mov $11,$4
+  add $11,1
+  mod $11,4
+  sub $11,1
+  mov $12,$4
+  pow $4,2
+  equ $4,$13
+  mul $4,$12
+  mul $4,$11
+  mod $4,3
+  dif $4,-2
+  mov $14,1
+  fac $14,$2
+  mul $4,$14
   mov $5,$2
   add $5,$9
   mov $8,$5
-  seq $8,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $8,1
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,4
+  mov $15,$5
+  add $15,$8
+  mov $8,-1
+  pow $8,$15
   add $5,1
   mov $7,$5
   mul $7,8

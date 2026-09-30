@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,332844 ; Dirichlet g.f.: zeta(s) * zeta(s-1) * zeta(2*s).
 sub $0,1
 sub $0,$1

@@ -1,4 +1,4 @@
-; A324024: One of the two successive approximations up to 5^n for 5-adic integer sqrt(6). This is the 4 (mod 5) case (except for n = 0).
+; A324024: One of the two successive approximations up to 5^n for the 5-adic integer sqrt(6). This is the 4 (mod 5) case (except for n = 0).
 ; Submitted by Science United
 ; 0,4,9,109,109,1359,10734,41984,120109,1291984,3245109,13010734,208323234,452463859,1673166984,13880198234,44397776359,349573557609,1875452463859,9504846995109,9504846995109,104872278635734,581709436838859,7734266809885734,7734266809885734
 ; Formula: a(n) = -5*truncate((3*(b(n-1)+24)^2+b(n-1)+5)/(5*5^(n-1)))*5^(n-1)+3*(b(n-1)+24)^2+b(n-1)+6, a(4) = 109, a(3) = 109, a(2) = 9, a(1) = 4, a(0) = 0, b(n) = -5*truncate((3*(b(n-1)+24)^2+b(n-1)+5)/(5*5^(n-1)))*5^(n-1)+3*(b(n-1)+24)^2+b(n-1)-18, b(4) = 85, b(3) = 85, b(2) = -15, b(1) = -20, b(0) = 0

@@ -26,8 +26,7 @@ lpb $2
   add $3,$5
   mul $3,$5
   mod $3,2
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

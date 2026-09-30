@@ -4,9 +4,23 @@
 
 mov $5,$0
 add $5,1
-seq $5,272171 ; Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
+mov $9,$5
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+mov $8,$9
+add $8,1
+bin $8,2
+add $9,1
+sub $5,$8
+sub $5,$9
+sub $5,1
+gcd $5,0
+seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $6,$0
 add $6,1
+mov $9,$5
 add $0,1
 mov $4,$6
 mul $4,8

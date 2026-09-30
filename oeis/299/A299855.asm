@@ -12,7 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,244038 ; a(n) = 4^n*binomial(3*n/2,n).
+    seq $7,244038 ; a(n) = 4^n * binomial(3*n/2,n).
     mov $9,10
     add $9,$5
     sub $4,1

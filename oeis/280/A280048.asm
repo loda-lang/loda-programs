@@ -1,6 +1,7 @@
 ; A280048: The Tower of Hanoi word, with a,b,c,a-bar,b-bar,c-bar encoded as 1,2,3,-1,-2,-3 respectively.
 ; Submitted by Vit Kliber
 ; 1,-3,2,1,3,-2,1,-3,2,-1,3,2,1,-3,2,1,3,-2,1,3,2,-1,3,-2,1,-3,2,1,3,-2,1,-3,2,-1,3,2,1,-3,2,-1,3,-2,1,3,2,-1,3,2,1,-3,2,1,3,-2,1,-3,2,-1,3,2,1,-3,2,1,3,-2,1,3,2,-1,3,-2,1,-3,2,1,3,-2,1,3
+; Formula: a(n) = binomial(-1,(n+1)/(4^valuation(n+1,4))-1)*if((((n+1)/(4^valuation(n+1,4))-3*truncate(((n+1)/(4^valuation(n+1,4))-1)/3)+1)%2)==0,((n+1)/(4^valuation(n+1,4))-3*truncate(((n+1)/(4^valuation(n+1,4))-1)/3)+1)/2,(n+1)/(4^valuation(n+1,4))-3*truncate(((n+1)/(4^valuation(n+1,4))-1)/3)+1)
 
 add $0,1
 dir $0,4

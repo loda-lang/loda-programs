@@ -20,10 +20,9 @@ lpb $2
   seq $3,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
   mod $3,19
   mul $3,2
-  sub $3,1
   sub $3,$7
   add $3,$6
-  neq $3,0
+  neq $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

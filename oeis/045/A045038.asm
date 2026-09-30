@@ -14,8 +14,7 @@ lpb $2
   mov $3,$1
   seq $3,309954 ; Product of digits of (n written in base 4).
   gcd $3,4
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $3,1
   sub $0,1
   sub $0,$3

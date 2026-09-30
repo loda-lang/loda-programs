@@ -1,6 +1,7 @@
 ; A356275: a(n) is the number of tuples (t_1,t_2,m) of integers 2 <= t_1 <= t_2 and 0 < m < n such that (3 + 1/t_1)^m * (3 + 1/t_2)^(n-m) is an integer.
 ; Submitted by Elzeard BOUFFIER
 ; 3,2,4,2,5,3,5,5,5,4
+; Formula: a(n) = 3*floor(n/2)-floor(if((n%3)==0,n/3,n)/5)-n+2
 
 #offset 2
 

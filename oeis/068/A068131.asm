@@ -13,8 +13,7 @@ lpb $2
   dgs $3,10
   trn $3,1
   mul $3,-1
-  add $3,22
-  equ $3,2
+  equ $3,-20
   sub $0,$3
   sub $1,$5
   mov $4,$0

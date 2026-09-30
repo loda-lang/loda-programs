@@ -7,12 +7,12 @@ mov $3,1
 lpb $0
   mov $2,$0
   mod $2,10
-  add $2,1
   mov $4,$2
-  geq $4,10
+  geq $4,9
   add $4,1
   mov $5,10
   pow $5,$4
+  add $2,1
   mul $2,$3
   div $0,10
   add $1,$2

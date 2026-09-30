@@ -7,8 +7,7 @@
 sub $0,1
 sub $1,$0
 bin $1,3
-add $0,1
-trn $0,2
+trn $0,1
 bin $0,2
 add $0,1
 sub $0,$1

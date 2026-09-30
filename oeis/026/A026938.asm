@@ -13,7 +13,6 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,26300 ; Motzkin triangle, T, read by rows; T(0,0) = T(1,0) = T(1,1) = 1; for n >= 2, T(n,0) = 1, T(n,k) = T(n-1,k-2) + T(n-1,k-1) + T(n-1,k) for k = 1,2,...,n-1 and T(n,n) = T(n-1,n-2) + T(n-1,n-1).
-  trn $1,$0
-  add $1,$0
+  max $1,$0
 lpe
 mov $0,$1

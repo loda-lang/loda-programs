@@ -14,8 +14,7 @@ lpb $2
   add $5,1
   seq $5,43536 ; Number of distinct base-9 digits of n.
   mov $3,$5
-  add $3,1
-  equ $3,4
+  equ $3,3
   sub $0,$3
   add $1,$4
   mov $4,$0

@@ -1,7 +1,7 @@
 ; A213685: Arises in enumerating maximal antichains of minimum size.
 ; Submitted by Simon Strandgaard
-; 1,3,6,9,12,17,22,28,33,41,48,57,64
-; Formula: a(n) = truncate((floor(((n-2)^2)/2)+truncate((floor((n-1)/2)^2+n-2)/2))/2)
+; 1,3,6,9,12,17,22,28,33,41,48,57,64,75,84,96,105,119,130,145,156,173,186,204,217,237,252,273,288,311,328,352,369,395,414,441,460,489,510,540,561,593,616,649,672,707,732,768,793,831,858,897,924,965,994,1036
+; Formula: a(n) = floor((floor(((n-2)^2)/2)+floor((floor((n-1)/2)^2+n-2)/2))/2)
 
 #offset 4
 

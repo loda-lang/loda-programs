@@ -4,10 +4,9 @@
 
 #offset 1
 
-add $0,1
 mov $2,$0
-add $0,1
-add $2,11
+add $0,2
+add $2,12
 pow $2,2
 bin $2,2
 lpb $2

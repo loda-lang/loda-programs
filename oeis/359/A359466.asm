@@ -1,7 +1,7 @@
 ; A359466: a(n) = 1 if n has exactly one non-unitary prime factor, otherwise 0.
 ; Submitted by Coleslaw
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1
-; Formula: a(n) = floor(truncate(2^A001221(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1))/2)%2
+; Formula: a(n) = floor(if(A001221(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)<=(-1),0,2^A001221(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1))/2)%2
 
 #offset 1
 

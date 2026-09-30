@@ -6,7 +6,6 @@
 #offset 1
 
 sub $0,1
+seq $0,64365 ; a(0) = 0; thereafter a(n) = a(n-1)-prime(n) if positive and new, otherwise a(n) = a(n-1)+prime(n), where prime(n) is the n-th prime.
 mov $1,$0
-seq $1,64365 ; a(0) = 0; thereafter a(n) = a(n-1)-prime(n) if positive and new, otherwise a(n) = a(n-1)+prime(n), where prime(n) is the n-th prime.
-mov $0,$1
 add $0,1

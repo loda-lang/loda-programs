@@ -5,16 +5,13 @@
 
 #offset 2
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $3,$1
-add $3,1
+sub $1,1
+mov $3,$0
 seq $3,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,$3
 add $1,1
 gcd $1,$0
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

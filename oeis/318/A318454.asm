@@ -1,6 +1,7 @@
 ; A318454: Denominators of the sequence whose Dirichlet convolution with itself yields A001227, number of odd divisors of n.
 ; Submitted by BrandyNOW
 ; 1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,128,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,256,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,128,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,1024,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,128
+; Formula: a(n) = if((2*valuation(n,2)-sumdigits(valuation(n,2),2))<=(-1),0,2^(2*valuation(n,2)-sumdigits(valuation(n,2),2)))
 
 #offset 1
 

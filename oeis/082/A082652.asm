@@ -1,7 +1,7 @@
 ; A082652: Triangle read by rows: T(n,k) is the number of squares that can be found in a k X n rectangular grid of little squares, for 1 <= k <= n.
 ; Submitted by Science United
 ; 1,2,5,3,8,14,4,11,20,30,5,14,26,40,55,6,17,32,50,70,91,7,20,38,60,85,112,140,8,23,44,70,100,133,168,204,9,26,50,80,115,154,196,240,285,10,29,56,90,130,175,224,276,330,385,11,32,62,100,145,196,252,312,375,440,506,12,35,68,110,160,217,280,348,420,495,572,650,13,38
-; Formula: a(n) = truncate(((3*truncate((sqrtint(8*n)-1)/2)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+4)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^2+(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(3*truncate((sqrtint(8*n)-1)/2)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+4))/6)
+; Formula: a(n) = truncate(((3*floor((sqrtint(8*n)-1)/2)-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+4)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^2+(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(3*floor((sqrtint(8*n)-1)/2)-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+4))/6)
 
 #offset 1
 

@@ -4,12 +4,10 @@
 
 #offset 1
 
-sub $0,2
 mov $1,$0
-add $0,3
+add $0,1
 seq $0,40 ; The prime numbers.
 seq $0,13632 ; Difference between n and the next prime greater than n.
-add $1,2
 seq $1,40 ; The prime numbers.
 add $1,$0
 mov $0,$1

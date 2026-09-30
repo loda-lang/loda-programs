@@ -15,8 +15,7 @@ lpb $5
   add $3,1
   seq $3,96501 ; Difference between primes preceding n+1 and n.
   div $3,2
-  sub $3,4
-  equ $3,0
+  equ $3,4
   sub $0,$3
   mov $1,$0
   max $1,0

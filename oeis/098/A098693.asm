@@ -21,6 +21,5 @@ lpe
 mov $1,$2
 dif $1,2
 add $1,1
-pow $0,0
-sub $0,2
+mov $0,-1
 add $0,$1

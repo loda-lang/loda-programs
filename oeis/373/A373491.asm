@@ -1,7 +1,7 @@
 ; A373491: a(n) = 1 if A059975(n) and A083345(n) are both multiples of 3, otherwise 0, where A059975 is fully additive with a(p) = p-1, and A083345 is the numerator of the fully additive function with a(p) = 1/p.
 ; Submitted by Science United
 ; 1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate(gcd(gcd(A059975(n),truncate(A003415(n)/gcd(n,A003415(n)))),3)/2)
+; Formula: a(n) = floor(gcd(gcd(A059975(n),floor(A003415(n)/gcd(n,A003415(n)))),3)/2)
 
 #offset 1
 

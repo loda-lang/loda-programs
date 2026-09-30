@@ -5,6 +5,5 @@
 
 #offset 1
 
+seq $0,273618 ; Numbers m = 2*k+1 where k is odd with the property that 3^k mod m = 1 and k^k mod m = 1.
 mov $1,$0
-seq $1,273618 ; Numbers m = 2*k+1 where k is odd with the property that 3^k mod m = 1 and k^k mod m = 1.
-mov $0,$1

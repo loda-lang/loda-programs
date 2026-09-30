@@ -7,11 +7,10 @@
 sub $0,2
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,59540 ; Beatty sequence for 3^(1/3)/(3^(1/3)-1).
   add $2,2
-  mul $0,0
+  mov $0,0
 lpe
 add $1,1
 add $1,$0

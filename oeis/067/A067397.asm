@@ -1,6 +1,7 @@
 ; A067397: Maximal power of 3 that divides n-th Catalan number.
 ; Submitted by Science United
 ; 0,0,0,0,0,1,1,1,0,0,0,0,0,0,2,2,2,1,1,1,1,1,1,2,2,2,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,3,3,3,2,2,2,2,2,2,3,3,3,1,1,1,1,1,1,2,2,2,1,1,1,1,1,1,3,3,3,2,2,2,2,2,2,3,3,3
+; Formula: a(n) = if(floor(binomial(2*n,n)/(n+1))==0,0,valuation(floor(binomial(2*n,n)/(n+1)),3))
 
 mov $1,$0
 mul $0,2

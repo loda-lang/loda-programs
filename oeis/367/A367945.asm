@@ -13,7 +13,15 @@ lpb $0
   mov $5,$2
   add $5,$3
   mov $6,$5
-  seq $6,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $6,1
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,4
+  mov $7,$5
+  add $7,$6
+  mov $6,-1
+  pow $6,$7
   add $5,1
   seq $5,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
   mul $5,$6

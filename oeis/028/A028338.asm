@@ -4,6 +4,5 @@
 ; Formula: a(n) = gcd(A039757(n),0)
 
 seq $0,39757 ; Triangle of coefficients in expansion of (x-1)*(x-3)*(x-5)*...*(x-(2*n-1)).
+gcd $0,0
 mov $1,$0
-gcd $1,0
-mov $0,$1

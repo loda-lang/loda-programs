@@ -20,8 +20,7 @@ lpb $2
   seq $3,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
   mul $3,2
   sub $3,$4
-  add $3,2
-  equ $3,5
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

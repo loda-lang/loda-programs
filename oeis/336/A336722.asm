@@ -5,13 +5,12 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $1,1
 mov $2,1
 add $2,$1
 pow $2,10
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 gcd $1,$2

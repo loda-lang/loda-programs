@@ -1,7 +1,6 @@
 ; A135090: Array read by antidiagonals: T(n, k) = Knuth's Fibonacci (or circle) product of n and k ("n o k"), n >= 0, k >= 0.
 ; Submitted by DukeBox
 ; 0,0,0,0,3,0,0,5,5,0,0,8,8,8,0,0,11,13,13,11,0,0,13,18,21,18,13,0,0,16,21,29,29,21,16,0,0,18,26,34,40,34,26,18,0,0,21,29,42,47,47,42,29,21,0,0,24,34,47,58,55,58,47,34,24,0,0,26,39,55,65,68,68,65,55,39,26,0,0,29
-; Formula: a(n) = 3*(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)*(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)-1)-truncate((-truncate((-binomial(floor((sqrtint(8*n+8)+3)/2),2)+sqrtint(5*(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)+1)^2)+n-1)/2)+sqrtint(5*truncate((-binomial(floor((sqrtint(8*n+8)+3)/2),2)+sqrtint(5*(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)+1)^2)+n-1)/2)^2))/2)*(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n)-truncate((-truncate((-n+binomial(floor((sqrtint(8*n+8)+1)/2),2)+sqrtint(5*(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+2)^2)-2)/2)+sqrtint(5*truncate((-n+binomial(floor((sqrtint(8*n+8)+1)/2),2)+sqrtint(5*(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+2)^2)-2)/2)^2))/2)*(-n+binomial(floor((sqrtint(8*n+8)+3)/2),2)-1)
 
 add $0,1
 mov $4,$0

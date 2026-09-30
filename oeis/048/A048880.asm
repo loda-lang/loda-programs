@@ -1,4 +1,4 @@
-; A048880: Primes of form pq+2 where p and q are consecutive primes.
+; A048880: Primes of the form p*q+2 where p and q are consecutive primes.
 ; Submitted by p3d-cluster
 ; 17,37,79,223,439,4759,22501,32401,53359,57601,60493,72901,77839,95479,99223,159199,164011,176401,194479,239119,324901,378223,416023,497011,680623,756853,804511,1115113,1664101,1742401,2223079,2595319,2873023,3186223,3515623,4003999,4613881,5022079,5336101,5904853,6456679,6502501,6765139,6859159,7452901,7617553,7986229,8732023,9235519,9492559,9603703,9790579,10017223,10595023,11289601,11329933,11431099,11492101,11964679,12006223,13571809,14976853,15046639,17189269,18147601,18766201,20385223
 
@@ -9,13 +9,21 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $6,$1
+  dif $6,$1
+  add $6,1
+  mov $7,$1
+  max $7,1
+  seq $7,40 ; The prime numbers.
+  mul $6,$7
+  mov $7,$6
+  div $7,2
   mov $3,$1
-  add $3,1
-  seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $3,$7
   seq $3,13636 ; a(n) = n*nextprime(n).
-  add $3,1
   mov $5,$3
-  add $3,1
+  add $5,1
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,353238 ; Perfect powers that are divisible by 3.
 mov $1,$0
-seq $1,353238 ; Perfect powers that are divisible by 3.
-mov $0,$1
 sub $0,1

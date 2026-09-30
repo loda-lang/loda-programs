@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,307118 ; a(1) = 0; for n>1, a(n) = dr(n-1) + dr(n) + dr(n+1), where dr(n) is the number of nontrivial divisors of n (A070824).
-  sub $3,4
-  equ $3,0
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

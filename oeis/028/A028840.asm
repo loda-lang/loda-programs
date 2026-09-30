@@ -10,8 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   dgs $3,10
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,194029 ; Natural fractal sequence of the Fibonacci sequence (1, 2, 3, 5, 8, ...).
   equ $3,1
   sub $0,$3

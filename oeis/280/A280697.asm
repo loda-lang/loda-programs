@@ -23,8 +23,7 @@ lpb $3
   mul $4,2
   mov $6,$1
   sub $6,$5
-  add $6,1
-  neq $6,1
+  neq $6,0
   dif $8,$4
   sub $3,$6
   mov $4,$8

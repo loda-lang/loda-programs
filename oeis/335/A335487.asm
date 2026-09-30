@@ -1,7 +1,7 @@
 ; A335487: Number of (1,1)-matching permutations of the prime indices of n.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,1,0,0,0,1,1,0,0,3,0,0,0,1,0,3,0,3,0,0,0,4,1,0,1,3,0,0,0,1,0,0,0,6,0,0,0,4,0,0,0,3,3,0,0,5,1,3,0,3,0,4,0,4,0,0,0,12,0,0,3,1,0,0,0,3,0,0,0,10,0,0,3,3,0,0,0,5
-; Formula: a(n) = A008480(n)*(-2*truncate((max(2*A046660(n),1)-1)/2)+max(2*A046660(n),1)-1)
+; Formula: a(n) = A008480(n)*((max(2*A046660(n),1)-1)%2)
 
 #offset 1
 

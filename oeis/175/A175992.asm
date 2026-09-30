@@ -1,7 +1,7 @@
 ; A175992: Triangle T(n,k) read by rows. If n=k then 0, else if k divides n then 1 else 0.
 ; Submitted by Science United
 ; 0,1,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0
-; Formula: a(n) = sqrtnint(truncate(truncate(truncate((sqrtint(8*n)+1)/2)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+gcd(0,n)))*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+gcd(0,n)))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+gcd(0,n))+truncate((sqrtint(8*n)+1)/2))==0),10)
+; Formula: a(n) = sqrtnint(truncate(floor(floor((sqrtint(8*n)+1)/2)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+gcd(0,n)))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+gcd(0,n)))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+gcd(0,n))+floor((sqrtint(8*n)+1)/2))==0),10)
 
 #offset 1
 

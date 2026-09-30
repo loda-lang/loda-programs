@@ -19,9 +19,8 @@ lpb $3
   gcd $6,2
   mov $4,$2
   seq $4,37800 ; Number of occurrences of 01 in the binary expansion of n.
-  sub $4,1
   add $4,$6
-  equ $4,1
+  equ $4,2
   sub $0,$4
   add $2,1
   mov $5,$0

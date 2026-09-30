@@ -8,8 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   add $0,$1
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,95944 ; Number of subsets S of {1,2,...,n} which contain a number that is greater than the sum of the other numbers in S.
   mov $2,$1
   mul $2,$0

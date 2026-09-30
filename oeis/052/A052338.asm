@@ -8,6 +8,5 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
 seq $0,50443 ; a(0)=4, a(1)=0, a(2)=0, a(3)=3; thereafter a(n) = a(n-3) + a(n-4).
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

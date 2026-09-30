@@ -11,6 +11,5 @@ mul $0,$1
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 mov $3,$0
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+gcd $0,$3
 mov $2,$0
-gcd $2,$3
-mov $0,$2

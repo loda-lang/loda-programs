@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,4
   seq $3,325989 ; Number of perfect factorizations of n.
-  add $3,4
-  equ $3,5
+  equ $3,1
   sub $0,$3
   add $1,4
   mov $4,$0

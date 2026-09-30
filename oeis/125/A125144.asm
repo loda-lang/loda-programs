@@ -1,7 +1,7 @@
 ; A125144: Increments in the number of decimal digits of 4^n.
 ; Submitted by Skillz
 ; 1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0
-; Formula: a(n) = -2*truncate(truncate(truncate((24*n-27)/5)^truncate((24*n-27)/5))/2)+truncate(truncate((24*n-27)/5)^truncate((24*n-27)/5))
+; Formula: a(n) = if((truncate((24*n-27)/5)^2)==1,truncate((24*n-27)/5)^truncate((24*n-27)/5),if(truncate((24*n-27)/5)<=(-1),0,truncate((24*n-27)/5)^truncate((24*n-27)/5)))-2*truncate(if((truncate((24*n-27)/5)^2)==1,truncate((24*n-27)/5)^truncate((24*n-27)/5),if(truncate((24*n-27)/5)<=(-1),0,truncate((24*n-27)/5)^truncate((24*n-27)/5)))/2)
 
 #offset 1
 

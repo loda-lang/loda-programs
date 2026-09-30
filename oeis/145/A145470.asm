@@ -13,8 +13,14 @@ lpb $2
   mov $6,$1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$1
-  add $5,1
-  seq $5,92405 ; a(n) = tau(n) + tau(n+1), where tau(n) = A000005(n), the number of divisors of n.
+  add $5,2
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $7,$1
+  add $7,1
+  seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $7,2
+  add $5,$7
+  add $5,2
   mov $3,$6
   equ $3,$5
   sub $0,$3

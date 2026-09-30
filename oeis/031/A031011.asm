@@ -14,8 +14,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,31007 ; Triangle T(n,k): Write n in base 7, reverse order of digits, to get row n.
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

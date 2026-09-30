@@ -1,7 +1,7 @@
 ; A342311: T(n, k) = (n - k + 2)*binomial(2*n, n + k - 2). Triangle read by rows, T(n, k) for 0 <= k <= n.
 ; Submitted by shiva
 ; 0,0,2,4,12,12,30,60,60,30,168,280,280,168,56,840,1260,1260,840,360,90,3960,5544,5544,3960,1980,660,132,18018,24024,24024,18018,10010,4004,1092,182,80080,102960,102960,80080,48048,21840,7280,1680,240
-; Formula: a(n) = binomial(2*truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n-1)*(-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n-1)
+; Formula: a(n) = binomial(2*floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n-1)*(-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n-1)
 
 add $0,1
 mov $1,$0

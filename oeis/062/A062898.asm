@@ -9,12 +9,10 @@ mov $2,7260
 lpb $2
   sub $2,32
   mov $3,$1
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,66492 ; a(n) = A056524(n)/11.
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,4
   mov $4,$0

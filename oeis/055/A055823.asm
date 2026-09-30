@@ -5,9 +5,9 @@
 
 #offset 6
 
-sub $0,6
 mov $1,$0
-add $0,51
+sub $1,6
+add $0,45
 mul $0,$1
 add $0,925
 mul $0,$1

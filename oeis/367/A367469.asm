@@ -27,10 +27,10 @@ lpe
 mov $2,0
 mov $3,$0
 lpb $3
-  add $16,$1
-  add $2,2
   mov $4,$2
-  add $2,18
+  add $4,2
+  add $16,$1
+  add $2,20
   mul $$2,$4
   add $1,$$2
   sub $2,19

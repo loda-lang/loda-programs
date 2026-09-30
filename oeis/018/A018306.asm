@@ -1,6 +1,7 @@
 ; A018306: Divisors of 152.
 ; Submitted by BrandyNOW
 ; 1,2,4,8,19,38,76,152
+; Formula: a(n) = if((max(n,2^n)%2)==0,max(n,2^n)/2,max(n,2^n))+3*floor((2^n)/30)
 
 #offset 1
 

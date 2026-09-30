@@ -8,11 +8,8 @@
 mov $1,$0
 seq $1,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
 mov $2,$0
-sub $2,1
-mov $3,$2
-add $2,1
 seq $2,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-add $3,1
+mov $3,$0
 seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 gcd $3,$2
 mov $2,$3

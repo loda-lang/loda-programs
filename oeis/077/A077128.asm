@@ -9,9 +9,9 @@ equ $1,2
 mul $1,2
 add $0,1
 bin $0,2
-sub $0,1
 mov $2,$0
-equ $2,0
+sub $0,1
+equ $2,1
 add $2,$0
 mov $4,$2
 mov $5,$2

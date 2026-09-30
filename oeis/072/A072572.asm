@@ -18,8 +18,7 @@ lpb $2
   sub $5,$6
   mov $3,$1
   sub $3,$5
-  add $3,2
-  equ $3,0
+  equ $3,-2
   sub $0,$3
   mov $4,$0
   max $4,0

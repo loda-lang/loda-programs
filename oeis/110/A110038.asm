@@ -16,12 +16,10 @@ lpb $0
     add $7,$0
     add $7,$4
     bin $7,$0
-    sub $8,2
-    trn $8,3
     mov $9,10
     add $9,$5
-    add $8,1
-    equ $8,1
+    trn $8,5
+    equ $8,0
     mul $7,$$9
     mul $7,$8
     add $5,1

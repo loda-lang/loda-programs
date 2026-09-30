@@ -10,8 +10,7 @@ add $0,1
 seq $0,91304 ; a(n) = Omega(2n-1) (number of prime factors of the n-th odd number, counted with multiplicity).
 bin $0,2
 mov $1,$0
-sub $0,1
-trn $0,2
+trn $0,3
 sub $0,$1
 add $0,1
 mod $0,2

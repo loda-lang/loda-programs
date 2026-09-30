@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,275823 ; Least k such that n divides phi(k^2).
 lpb $1,6
   div $2,$0

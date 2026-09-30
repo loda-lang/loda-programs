@@ -22,8 +22,7 @@ lpb $4
   add $5,1
   seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
   dif $5,$6
-  sub $5,2
-  equ $5,2
+  equ $5,4
   sub $1,$5
   add $3,1
   sub $4,$1

@@ -1,4 +1,4 @@
-; A228017: Numbers n divisible by the sum of any k-subset of digits of n with k >= 1.
+; A228017: Numbers m divisible by the sum of any k-subset of digits of m with k >= 1.
 ; Submitted by loader3229
 ; 1,2,3,4,5,6,7,8,9,12,24,36,48
 ; Formula: a(n) = truncate((10*floor((10^(floor((n-1)/9)+1))/9)*(-9*floor((n-1)/9)+n)-sumdigits(10*floor((10^(floor((n-1)/9)+1))/9)*(-9*floor((n-1)/9)+n),10)*sign(10*floor((10^(floor((n-1)/9)+1))/9)*(-9*floor((n-1)/9)+n)))/9)

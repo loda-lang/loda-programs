@@ -1,6 +1,7 @@
 ; A243329: Number of simple connected graphs with n nodes that are integral and distance regular.
 ; Submitted by Jon Maiga
 ; 1,1,1,2,1,4,1,4,3,6
+; Formula: a(n) = (max((n-3)*(if((((n-3)^2)%3)==0,((n-3)^2)/3,(n-3)^2)+2)-2,0)+1)%10
 
 #offset 1
 

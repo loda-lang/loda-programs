@@ -4,12 +4,11 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 add $0,1
 seq $0,1227 ; Number of odd divisors of n.
+sub $1,1
 lpb $1
   mov $1,$0
 lpe

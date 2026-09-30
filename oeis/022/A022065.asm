@@ -5,11 +5,11 @@
 add $0,1
 lpb $0
   trn $0,1
+  mov $5,$0
+  equ $5,1
+  gcd $5,3
   mov $2,$0
   sub $2,1
-  mov $5,$2
-  equ $5,0
-  gcd $5,3
   seq $2,7191 ; McKay-Thompson series of class 2B for the Monster group with a(0) = -24.
   mul $2,$5
   div $2,3

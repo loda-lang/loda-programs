@@ -18,7 +18,13 @@ lpb $2
   sub $5,1
   mov $3,$1
   sub $3,$5
-  seq $3,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
+  dir $3,2
+  mul $3,-1
+  mov $7,$3
+  mod $3,2
+  sub $3,$7
+  add $3,1
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   equ $3,1
   sub $0,$3
   add $1,1

@@ -5,12 +5,10 @@
 
 #offset 1
 
-sub $0,2
 mov $1,$0
-add $0,2
 seq $0,40 ; The prime numbers.
 sub $0,1
-add $1,3
+add $1,1
 seq $1,40 ; The prime numbers.
 mov $2,2
 sub $2,$1

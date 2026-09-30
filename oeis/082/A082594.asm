@@ -19,8 +19,18 @@ lpb $5
   mov $2,$0
   add $2,$5
   bin $2,$0
-  add $0,1
-  seq $0,112773 ; 3 together with primes multiplied by 3.
+  mov $6,$0
+  dif $6,$0
+  add $6,1
+  mov $7,$0
+  max $7,1
+  seq $7,40 ; The prime numbers.
+  mul $6,$7
+  mov $0,$6
+  sub $0,2
+  div $0,2
+  mul $0,3
+  add $0,3
   mul $2,$0
   sub $2,$4
 lpe

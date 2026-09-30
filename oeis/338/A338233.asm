@@ -8,9 +8,8 @@
 mov $1,$0
 seq $1,46951 ; a(n) is the number of squares dividing n.
 sub $1,1
-sub $0,1
 sub $0,$1
+sub $0,1
+max $0,1
 mov $2,$0
-max $2,1
-mov $0,$2
 sub $0,1

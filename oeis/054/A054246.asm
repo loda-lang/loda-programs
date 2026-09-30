@@ -1,7 +1,7 @@
 ; A054246: Non-Cayley-isomorphic circulant p^2-tournaments, indexed by odd primes p.
 ; Submitted by [TA]crashtech
 ; 1,1,4,16,36,256,900,8836,343396,1201216,53085796
-; Formula: a(n) = A000016(truncate(A000040(n-1)/2))^2
+; Formula: a(n) = A000016(floor(A000040(n-1)/2))^2
 
 #offset 3
 

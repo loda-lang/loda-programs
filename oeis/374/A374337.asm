@@ -1,6 +1,7 @@
 ; A374337: Start with two vertices and draw a circle around each whose radius is the distance between the vertices. The sequence gives the number of regions constructed after n iterations of drawing circles with this same radius around every new vertex created from all circles' intersections.
 ; Submitted by James Adrian
 ; 3,11,27,55,99,145,203,277,353,441,545,651,769,903,1039,1187,1351,1517,1695,1889,2085,2293,2517,2743,2981,3235,3491,3759,4043,4329,4627,4941,5257,5585,5929,6275,6633,7007,7383,7771,8175,8581,8999,9433,9869,10317,10781,11247,11725,12219,12715
+; Formula: a(n) = 2*d(n-1)+3, b(n) = if(((c(n-1)+1)%4)==0,(c(n-1)+1)/4,c(n-1)+1)+b(n-1)+c(n-1)+1, b(3) = 15, b(2) = 9, b(1) = 5, b(0) = 0, c(n) = if(((c(n-1)+1)%4)==0,(c(n-1)+1)/4,c(n-1)+1), c(3) = 3, c(2) = 2, c(1) = 1, c(0) = 3, d(n) = if(((c(n-2)+1)%4)==0,(c(n-2)+1)/4,c(n-2)+1)+b(n-1)+c(n-1)+d(n-1)+1, d(3) = 26, d(2) = 12, d(1) = 4, d(0) = 0
 
 #offset 1
 

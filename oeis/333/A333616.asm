@@ -3,8 +3,7 @@
 ; Formula: a(n) = binomial(-n+floor(max(n-2,0)/2),2)
 
 mov $1,$0
-sub $1,1
-trn $1,1
+trn $1,2
 div $1,2
 sub $1,$0
 bin $1,2

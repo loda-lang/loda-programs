@@ -1,6 +1,7 @@
 ; A333363: Horizontal visibility sequence at the onset of chaos in the 3-period cascade.
 ; Submitted by KetamiNO [YouTube]
 ; 3,2,5,3,2,7,3,2,5,3,2,9,3,2,5,3,2,7,3,2,5,3,2,11,3,2,5,3,2,7,3,2,5,3,2,9,3,2,5,3,2,7,3,2,5,3,2,13,3,2,5,3,2,7,3,2,5,3,2,9,3,2,5,3,2,7,3,2,5,3,2,11,3,2,5,3,2,7,3,2
+; Formula: a(n) = valuation(-3*truncate((-264*n^2+n)/3)+n,2)+2
 
 #offset 1
 

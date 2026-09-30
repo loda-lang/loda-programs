@@ -11,8 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   add $0,$2
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,284535 ; Positions of 1 in A284533; complement of A284534.
   mov $1,$2
   mul $1,$0

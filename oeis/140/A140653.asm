@@ -4,8 +4,7 @@
 
 #offset 1
 
-sub $0,1
-trn $0,3
+trn $0,4
 lpb $0
   add $1,1
   sub $0,$1

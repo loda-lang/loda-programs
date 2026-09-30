@@ -15,13 +15,13 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,23359 ; Number of compositions (ordered partitions) of n into powers of 2.
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     mul $7,$$9
     gcd $4,$10
     add $5,1

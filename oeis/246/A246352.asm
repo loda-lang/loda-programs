@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,246351 ; Numbers n such that A048673(n) < n.
+  seq $3,246351 ; Numbers k such that A048673(k) < k.
   sub $3,1
   add $0,1
   add $1,1

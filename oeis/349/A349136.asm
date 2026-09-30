@@ -1,4 +1,4 @@
-; A349136: Möbius transform of Kimberling's paraphrases, A003602.
+; A349136: Möbius transform of Kimberling's paraphrase, A003602.
 ; Submitted by BarnardsStern
 ; 1,0,1,0,2,0,3,0,3,0,5,0,6,0,4,0,8,0,9,0,6,0,11,0,10,0,9,0,14,0,15,0,10,0,12,0,18,0,12,0,20,0,21,0,12,0,23,0,21,0,16,0,26,0,20,0,18,0,29,0,30,0,18,0,24,0,33,0,22,0,35,0,36,0,20,0,30,0,39,0
 

@@ -20,8 +20,7 @@ lpb $0
   add $2,1
   mul $4,$3
   div $4,$2
-  sub $2,1
-  trn $2,1
+  trn $2,2
   add $6,$4
 lpe
 mov $0,$6

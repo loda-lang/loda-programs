@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,27750 ; Triangle read by rows in which row n lists the divisors of n.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   mul $3,13
   div $3,31

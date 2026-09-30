@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,61537 ; Product of unitary divisors of n.
+seq $0,61537 ; Product of the unitary divisors of n: a(n) = Product_{d|n, gcd(d,n/d) = 1} d.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

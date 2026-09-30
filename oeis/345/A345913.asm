@@ -10,8 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,124754 ; Alternating sum of compositions in standard order.
-  add $3,4
-  trn $3,3
+  trn $3,-1
   min $3,1
   sub $0,$3
   add $1,1

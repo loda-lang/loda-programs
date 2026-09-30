@@ -1,7 +1,7 @@
 ; A173882: Triangle T(n, k) = A090443(n-1)/(A090443(k-1)*A090443(n-k-1)) read by rows.
 ; Submitted by Science United
 ; 1,1,1,1,6,1,1,24,24,1,1,60,240,60,1,1,120,1200,1200,120,1,1,210,4200,10500,4200,210,1,1,336,11760,58800,58800,11760,336,1,1,504,28224,246960,493920,246960,28224,504,1,1,720,60480,846720,2963520,2963520,846720,60480,720,1,1,990,118800,2494800,13970880,24449040,13970880,2494800,118800,990,1,1,1320,217800,6534000,54885600,153679680,153679680,54885600,6534000,217800,1320,1,1,1716
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)==1)+binomial(truncate((sqrtint(8*n+8)-1)/2)-1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)))
+; Formula: a(n) = truncate((binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(floor((sqrtint(8*n+8)-1)/2)+1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*((binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)==1)+binomial(floor((sqrtint(8*n+8)-1)/2)-1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)))
 
 mov $1,$0
 add $1,1

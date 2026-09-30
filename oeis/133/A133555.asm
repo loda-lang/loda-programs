@@ -5,9 +5,9 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
-add $0,3
+sub $1,2
+add $0,1
 seq $0,40 ; The prime numbers.
 mov $2,$0
 div $0,2

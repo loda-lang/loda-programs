@@ -11,8 +11,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,83266 ; Sum of related numbers (counted in A073757) belonging to n: a(n) = A000203(n) + A023896(n) - 1; related = {divisor-set, RRS}.
-  add $3,1
+  mov $5,$3
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,2618 ; a(n) = n*phi(n).
+  dif $3,2
+  add $5,$3
+  mov $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

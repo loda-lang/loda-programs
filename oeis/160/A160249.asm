@@ -1,7 +1,7 @@
 ; A160249: Triangle of "less regular" face-centered-cubic sphere pack cuboctahedron numbers read by rows.
 ; Submitted by Science United
 ; 1,4,13,10,28,55,20,50,92,147,35,80,140,216,309,56,119,200,300,420,561,84,168,273,400,550,724,923,120,228,360,517,700,910,1148,1415,165,300,462,652,871,1120,1400,1712,2057
-; Formula: a(n) = (-binomial(truncate((sqrtint(8*n)-1)/2),2)+n)*(-truncate((sqrtint(8*n)-1)/2)*(-n+binomial(truncate((sqrtint(8*n)-1)/2),2)+truncate((sqrtint(8*n)-1)/2)+1)+binomial(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n+1,2))-binomial(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n,2)-truncate(binomial(2*binomial(truncate((sqrtint(8*n)-1)/2),2)-2*n+2,3)/(-4))
+; Formula: a(n) = (-binomial(floor((sqrtint(8*n)-1)/2),2)+n)*(-floor((sqrtint(8*n)-1)/2)*(-n+binomial(floor((sqrtint(8*n)-1)/2),2)+floor((sqrtint(8*n)-1)/2)+1)+binomial(-binomial(floor((sqrtint(8*n)-1)/2),2)+n+1,2))-binomial(-binomial(floor((sqrtint(8*n)-1)/2),2)+n,2)-truncate(binomial(2*binomial(floor((sqrtint(8*n)-1)/2),2)-2*n+2,3)/(-4))
 
 #offset 1
 

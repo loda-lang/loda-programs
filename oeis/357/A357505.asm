@@ -11,8 +11,7 @@ lpb $2
   add $1,1
   mov $3,$1
   seq $3,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,3
   mov $4,$0

@@ -15,12 +15,10 @@ lpb $3
   mov $4,$2
   add $4,1
   seq $4,46034 ; Numbers whose digits are primes.
-  sub $4,1
   mov $6,$4
-  add $4,1
+  sub $6,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $4,1
-  equ $4,1
+  equ $4,2
   sub $0,$4
   add $2,1
   mov $5,$0

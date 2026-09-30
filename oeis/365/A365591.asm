@@ -9,9 +9,17 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $7,$1
+  dif $7,$1
+  add $7,1
+  mov $8,$1
+  max $8,1
+  seq $8,40 ; The prime numbers.
+  mul $7,$8
+  mov $8,$7
+  div $8,2
   mov $5,$1
-  add $5,1
-  seq $5,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $5,$8
   add $5,$6
   mov $6,$1
   add $6,$5

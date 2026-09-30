@@ -7,8 +7,17 @@ lpb $2
   sub $2,1
   dif $1,2
   mul $1,2
+  mov $4,$3
+  dgs $4,2
+  mov $5,$3
+  min $5,1
   mov $0,$3
-  seq $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
+  max $0,1
+  log $0,2
+  add $5,$0
+  sub $5,$4
+  mov $0,2
+  pow $0,$5
   add $1,$0
   add $3,1
 lpe

@@ -6,5 +6,5 @@
 #offset 1
 
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-seq $0,122638 ; {n+1}_n.
+seq $0,122638 ; a(n) = {n+1}_n.
 sub $0,1

@@ -1,7 +1,35 @@
 ; A267054: Binary representation of the n-th iteration of the "Rule 93" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by emoga
 ; 1,11,10100,101111,101010000,1010111111,1010101000000,10101011111111,10101010100000000,101010101111111111,101010101010000000000,1010101010111111111111,1010101010101000000000000,10101010101011111111111111,10101010101010100000000000000,101010101010101111111111111111,101010101010101010000000000000000,1010101010101010111111111111111111,1010101010101010101000000000000000000,10101010101010101011111111111111111111,10101010101010101010100000000000000000000,101010101010101010101111111111111111111111
-; Formula: a(n) = A007088(A267055(n))
 
-seq $0,267055 ; Decimal representation of the n-th iteration of the "Rule 93" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,-1
+pow $2,$0
+mov $1,$2
+mov $2,2
+pow $2,$0
+add $1,$2
+mov $2,-2
+pow $2,$0
+mul $2,-3
+add $1,$2
+mov $2,4
+pow $2,$0
+mul $2,6
+add $1,$2
+mov $2,-4
+pow $2,$0
+mul $2,2
+add $1,$2
+mov $3,0
+mov $4,1
+mov $0,$1
+div $0,6
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

@@ -16,6 +16,5 @@ lpe
 sub $6,$3
 mov $0,$6
 add $0,1
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

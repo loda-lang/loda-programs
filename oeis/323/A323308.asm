@@ -1,7 +1,7 @@
 ; A323308: The number of exponential semiproper divisors of n.
 ; Submitted by Penguin
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,4,1,1,1,2,1,1,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,2,1,1,1,2,1,1,1,4,1,1,2,2,1,1,1,2
-; Formula: a(n) = truncate(2^A001221(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1))
+; Formula: a(n) = if(A001221(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)<=(-1),0,2^A001221(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1))
 
 #offset 1
 

@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,291208 ; Number of noncube divisors of n.
-  sub $3,3
-  equ $3,2
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0

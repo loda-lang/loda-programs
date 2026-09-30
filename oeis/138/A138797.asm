@@ -5,9 +5,8 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
-add $0,2
+sub $1,2
 seq $0,138798 ; Values of j corresponding to least possible k>0 with T(k)-T(j)=n, where T(i)>0 are the triangular numbers A000217.
 mul $0,2
 add $0,1

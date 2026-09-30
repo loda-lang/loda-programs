@@ -1,7 +1,7 @@
 ; A338104: Number of spanning trees in the join of the disjoint union of two complete graphs each on n vertices with the empty graph on n+1 vertices.
 ; Submitted by BrandyNOW
 ; 1,4,1200,2074464,10883911680,128615328600000,2881502756476710912,109416128865750000000000,6508595325997684722663161856,572150341080161420030586961966080,71062412455566037275496151040000000000
-; Formula: a(n) = truncate((2*n+1)^(2*n-2))*(n+1)*(2*n)^n
+; Formula: a(n) = (n+1)*(2*n)^n*if(((2*n+1)^2)==1,(2*n+1)^(2*n-2),if((2*n-2)<=(-1),0,(2*n+1)^(2*n-2)))
 
 mov $1,$0
 add $1,1

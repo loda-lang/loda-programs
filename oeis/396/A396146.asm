@@ -1,4 +1,4 @@
-; A396146: Expansion of 1/sqrt((1-x^2)*(1-2*x)).
+; A396146: Expansion of e.g.f. 1/sqrt((1-x^2)*(1-2*x)).
 ; Submitted by loader3229
 ; 1,1,4,18,132,1140,12600,161280,2414160,40778640,772934400,16181272800,371495678400,9270866404800,249989198659200,7241246812800000,224266644489888000,7394638814218656000,258627987363537792000,9563202745771042368000,372757850968184922240000,15275486215276368681600000
 
@@ -13,7 +13,15 @@ lpb $0
   mov $5,$2
   add $5,$3
   mov $6,$5
-  seq $6,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $6,1
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,4
+  mov $7,$5
+  add $7,$6
+  mov $6,-1
+  pow $6,$7
   seq $5,111595 ; Triangle of coefficients of square of Hermite polynomials divided by 2^n with argument sqrt(x/2).
   mul $5,$6
   mul $5,$4

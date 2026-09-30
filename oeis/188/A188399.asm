@@ -14,9 +14,8 @@ lpb $2
   seq $3,187970 ; Positions of 0 in A187969; complement of A187971.
   pow $3,2
   mul $3,2
+  nrt $3,2
   mov $4,$3
-  nrt $4,2
-  mov $3,$4
   sub $3,1
   add $0,1
   add $1,1

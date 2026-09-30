@@ -14,8 +14,7 @@ lpb $2
   add $3,1
   seq $3,62570 ; a(n) = phi(2*n).
   gcd $3,3
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

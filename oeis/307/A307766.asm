@@ -1,6 +1,6 @@
 ; A307766: Number of palindromic hexagonal numbers of length n whose index is also palindromic.
 ; 3,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate(gcd(6,2*n+4)/floor((2*n+4)/3))
+; Formula: a(n) = floor(gcd(6,2*n+4)/floor((2*n+4)/3))
 
 #offset 1
 

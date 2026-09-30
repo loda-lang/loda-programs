@@ -1,14 +1,33 @@
-; A098630: Consider the family of directed multigraphs enriched by the species of parts. Sequence gives number of those multigraphs with n labeled loops and arcs
+; A098630: Consider the family of directed multigraphs enriched by the species of parts. Sequence gives number of those multigraphs with n labeled loops and arcs.
 ; Submitted by [SG]ATA-Rolf
 ; 1,4,60,1624,66240,3711200,269670208,24435113216,2682916389632,349223324753408,52965538033020928,9229753832340117504,1826647528631522463744,406579171521484851396608,100934277604965329345822720,27746271707522968205726416896,8392846216390817468837111005184,2778076202747869326526206023958528,1001315298153547258914544204203163648,391270834947031213289294811962616578048,165098908172896102031634564070801216110592,74957558537514107097796593386261876712669184
-; Formula: a(n) = truncate(A137341(2*n)/((2*n)!))*2^n
 
 mov $1,2
 pow $1,$0
+mov $8,0
 mul $0,2
 mov $2,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $2,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
+mov $3,0
+sub $3,$0
+mov $9,0
+fac $0,$3
+mov $4,0
+mov $7,$2
+add $2,1
+lpb $2
+  sub $2,1
+  mov $5,$4
+  pow $5,$7
+  mov $6,$7
+  bin $6,$4
+  mul $9,$4
+  add $9,$5
+  add $4,1
+  mul $6,$9
+  mul $8,-1
+  add $8,$6
+lpe
+mov $2,$8
 div $2,$0
 mov $0,$2
 mul $0,$1

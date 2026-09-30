@@ -23,8 +23,27 @@ lpb $2
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,141665 ; A signed half of Pascal's triangle A007318: p(x,n) = (1+I*x)^n; t(n,m) = real part of coefficients(p(x,n)).
-  mul $4,$5
+  add $5,1
+  mov $7,$5
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $5,$9
+  sub $5,1
+  bin $7,$5
+  mov $8,$5
+  dif $8,2
+  bor $5,-2
+  bin $5,$8
+  add $8,1
+  div $5,$8
+  mul $7,$5
+  mul $4,$7
+  mov $5,$7
   add $6,$4
 lpe
 mov $0,$6

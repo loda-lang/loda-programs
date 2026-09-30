@@ -1,7 +1,7 @@
-; A060176: Square array A(n,k) = the largest power of k-th prime which divides n, read by by falling antidiagonals.
+; A060176: Square array A(n,k) = the largest power of k-th prime which divides n, read by falling antidiagonals.
 ; Submitted by loader3229
 ; 1,1,2,1,1,1,1,1,3,4,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,5,3,1,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7,1,9,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,4,1,1
-; Formula: a(n) = gcd(truncate(A000040(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)
+; Formula: a(n) = gcd(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,A000040(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)
 
 #offset 1
 

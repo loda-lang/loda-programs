@@ -1,6 +1,7 @@
 ; A359370: a(n) = 1 if n is not a multiple of 4 and has an even number of prime factors (with multiplicity), otherwise a(n) = 0.
 ; Submitted by amazing
 ; 1,0,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0
+; Formula: a(n) = -2*truncate((truncate((8*(A001222(n)-1)*if((n%2)==0,n/2,n))/8)+2)/2)+truncate((8*(A001222(n)-1)*if((n%2)==0,n/2,n))/8)+2
 
 #offset 1
 

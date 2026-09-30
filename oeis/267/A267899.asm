@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,134438 ; Number of tilings of a 3 X n rectangle with n trominoes.
+sub $1,1
 lpb $1
   mul $0,$1
   sub $1,1

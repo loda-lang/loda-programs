@@ -1,6 +1,7 @@
 ; A152932: Number of sets (in the Hausdorff metric geometry) at each location between two sets defining a polygonal configuration consisting of three 6-gonal polygonal components chained with string components of length l as l varies.
 ; Submitted by loader3229
 ; 32733,80361,215658,559305,1469565,3842082,10063989,26342577,68971050,180563265,472726053,1237607586,3240104013,8482697145,22207994730,58141279737,152215851789,398506268322,1043302960485,2731402605825,7150904864298,18721311979761
+; Formula: a(n) = b(n-1), b(n) = 2*b(n-1)+2*b(n-2)-b(n-3), b(5) = 3842082, b(4) = 1469565, b(3) = 559305, b(2) = 215658, b(1) = 80361, b(0) = 32733
 
 #offset 1
 

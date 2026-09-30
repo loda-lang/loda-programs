@@ -17,8 +17,7 @@ lpb $3
   mov $4,$1
   mul $4,$2
   add $4,$1
-  add $4,1
-  trn $4,3
+  trn $4,2
   add $4,1
   seq $4,1221 ; Number of distinct primes dividing n (also called omega(n)).
   equ $4,1

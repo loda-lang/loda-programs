@@ -1,12 +1,41 @@
 ; A279236: Denominators of coefficients in expansion of 1/(2 - cos(sqrt(x))).
 ; Submitted by ChelseaOilman
 ; 1,2,24,720,40320,518400,479001600,87178291200,38817792000,6402373705728000,221172909834240000,160571532539658240000,47726800133326110720000,36662860102418694144000000,43555477801673408643072000000,24113896346562823512391680000000,263130836933693530167218012160000000,42176114148514877263945515663360000000,2601351935593714807468527609446400000000,22740113802895700511304661917394534400000000,10596302379842827718774172332417089536000000000,1405006117752879898543142606244511569936384000000000
-; Formula: a(n) = truncate(((2*n)!)/gcd(A336012(2*n),(2*n)!))
 
 mov $1,$0
 mul $1,2
-seq $1,336012 ; a(n) is the number of chains from {} to a top element in the poset of even sized subsets of {1,2,...,n} ordered by inclusion.
+mov $3,0
+mov $4,0
+mov $5,$1
+add $5,1
+bin $5,2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $6,$4
+  seq $6,327034 ; Expansion of e.g.f. exp(x) / (2 - cosh(x)).
+  mov $7,$4
+  add $7,$5
+  mov $8,$7
+  add $8,1
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,4
+  mov $9,$7
+  add $9,$8
+  mov $8,-1
+  pow $8,$9
+  seq $7,55137 ; Regard triangle of rencontres numbers (see A008290) as infinite matrix, compute inverse, read by rows.
+  mul $7,$8
+  mul $7,$6
+  add $3,$7
+  add $4,1
+lpe
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,0
+sub $2,$0
+fac $0,$2
+mov $1,$3
 gcd $1,$0
 div $0,$1

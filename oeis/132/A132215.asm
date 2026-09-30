@@ -1,7 +1,7 @@
 ; A132215: Numbers that are sums of eighth powers of two distinct primes.
 ; Submitted by misaki@med
 ; 6817,390881,397186,5765057,5771362,6155426,214359137,214365442,214749506,220123682,815730977,815737282,816121346,821495522,1030089602,6975757697,6975764002,6976148066,6981522242,7190116322,7791488162
-; Formula: a(n) = A351248(A181819(A181811(A057335(truncate(2^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n-1))+truncate(2^truncate((sqrtint(8*n)+1)/2))))*A057335(truncate(2^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n-1))+truncate(2^truncate((sqrtint(8*n)+1)/2)))))
+; Formula: a(n) = A351248(A181819(A181811(A057335(if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1))+2^floor((sqrtint(8*n)+1)/2)))*A057335(if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1))+2^floor((sqrtint(8*n)+1)/2))))
 
 #offset 1
 

@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 mov $1,$0
-seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-mov $0,$1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

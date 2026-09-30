@@ -14,7 +14,7 @@ lpb $2
   mul $3,2
   mov $5,$3
   add $5,1
-  seq $5,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  seq $5,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
   mov $3,$5
   add $3,1
   mov $6,$3
@@ -27,8 +27,7 @@ lpb $2
   sub $6,$7
   mul $6,-2
   add $3,$6
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

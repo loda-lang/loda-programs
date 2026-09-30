@@ -1,14 +1,55 @@
 ; A239052: Sum of divisors of 4*n-2.
 ; Submitted by Wood
 ; 3,12,18,24,39,36,42,72,54,60,96,72,93,120,90,96,144,144,114,168,126,132,234,144,171,216,162,216,240,180,186,312,252,204,288,216,222,372,288,240,363,252,324,360,270,336,384,360,294,468,306,312,576,324,330,456,342,432,546,432,399,504,468,384,528,396,480,720,414,420,576,504,540,684,450,456,702,576,474,648
-; Formula: a(n) = 3*A002129(2*n-1)
 
 #offset 1
 
 sub $0,1
 mov $1,$0
 mul $1,2
+mov $4,$1
+mov $5,0
+mov $9,0
 mov $0,$1
 add $0,1
-seq $0,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
+mov $3,$0
+dir $3,2
+mov $8,$3
+sub $8,1
+mov $7,$3
+dir $7,2
+mov $12,$7
+mov $11,$7
+nrt $11,2
+lpb $11
+  max $11,1
+  mov $13,$7
+  mod $13,$11
+  equ $13,0
+  mov $10,$7
+  div $10,$11
+  add $10,$11
+  mul $10,$13
+  add $9,$10
+  sub $11,1
+lpe
+nrt $7,2
+mov $11,$7
+pow $11,2
+sub $11,$12
+equ $11,0
+mul $7,$11
+sub $9,$7
+mov $6,$3
+bxo $6,$8
+mul $6,$9
+mov $3,$6
+mul $3,2
+mov $2,$0
+bxo $2,$1
+sub $2,2
+mul $2,$3
+sub $5,$2
+mov $0,$5
+div $0,2
 mul $0,3

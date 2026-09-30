@@ -8,9 +8,17 @@ lpb $0
   sub $0,3
   mov $2,$0
   max $2,0
-  add $2,1
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $3,$2
+  dif $3,$2
+  add $3,1
+  mov $4,$2
+  max $4,1
+  seq $4,40 ; The prime numbers.
+  mul $3,$4
+  mov $4,$3
+  div $4,2
   add $0,1
-  mul $1,$2
+  mul $1,$4
+  mov $2,$4
 lpe
 mov $0,$1

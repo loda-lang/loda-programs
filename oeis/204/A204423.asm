@@ -1,7 +1,7 @@
 ; A204423: Infinite matrix: f(i,j)=(2i+j mod 3), by antidiagonals.
 ; Submitted by loader3229
 ; 0,1,2,2,0,1,0,1,2,0,1,2,0,1,2,2,0,1,2,0,1,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,2,0,1,2,0,1,2,0,1,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,2,0,1,2,0,1,2,0,1,2,0,1,0,1
-; Formula: a(n) = -binomial(truncate((sqrtint(8*n)-1)/2),2)-3*truncate((-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1)/3)+n-1
+; Formula: a(n) = -binomial(floor((sqrtint(8*n)-1)/2),2)-3*truncate((-binomial(floor((sqrtint(8*n)-1)/2),2)+n-1)/3)+n-1
 
 #offset 1
 

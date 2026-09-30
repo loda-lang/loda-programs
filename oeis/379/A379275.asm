@@ -1,7 +1,7 @@
 ; A379275: a(n) = A163801(n) mod 2.
 ; Submitted by Science United
 ; 0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1
-; Formula: a(n) = n*(-truncate((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)+sqrtint(5*truncate((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)^2)+1)-2*truncate((n*(-truncate((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)+sqrtint(5*truncate((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)^2)+1))/2)
+; Formula: a(n) = n*(-floor((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)+sqrtint(5*floor((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)^2)+1)-2*truncate((n*(-floor((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)+sqrtint(5*floor((floor(n/2)+sqrtint(5*(floor(n/2)+2)^2))/2)^2)+1))/2)
 
 mov $1,$0
 div $0,2

@@ -16,8 +16,19 @@ lpb $2
   sub $0,$2
   mov $5,$0
   add $0,1
-  seq $0,143037 ; Triangle read by rows, A000012 * A127773 * A000012. A000012 is an infinite lower triangular matrix with all 1's, A127773 = (1; 0,3; 0,0,6; 0,0,0,10; ...).
+  mov $7,$0
+  mul $0,8
+  nrt $0,2
+  add $0,3
+  div $0,2
+  mov $6,$0
+  bin $6,2
+  sub $7,$6
+  bin $7,3
+  add $0,1
+  bin $0,3
   sub $0,1
+  add $0,$7
   sub $0,$5
   equ $0,$2
   sub $0,1

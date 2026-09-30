@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,37276 ; Start with 1; for n>1, replace n with the concatenation of its prime factors in increasing order.
 sub $0,1
 sub $0,$1

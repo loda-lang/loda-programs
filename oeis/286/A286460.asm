@@ -1,18 +1,47 @@
 ; A286460: Compound filter (2-adic valuation & sum of the divisors): a(n) = P(A001511(n), A000203(n)), where P(n,k) is sequence A000027 used as a pairing function.
 ; Submitted by iBezanilla
 ; 1,8,7,39,16,80,29,157,79,173,67,438,92,302,277,600,154,782,191,949,497,668,277,1957,466,905,781,1656,436,2630,497,2284,1129,1487,1129,4281,704,1832,1541,4282,862,4658,947,3658,3004,2630,1129,8133,1597,4373,2557,4953,1432,7262,2557,7507,3161,4097,1771,14368,1892,4658,5357,8785,3487,10442,2279,8131,4561,10442,2557,19507,2702,6557,7627,10014,4561,14198,3161,17960
-; Formula: a(n) = truncate(((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)+logint(floor((bitxor(2*n,2*n-1)+1)/2),2))^2-3*A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)-logint(floor((bitxor(2*n,2*n-1)+1)/2),2))/2)+1
 
 #offset 1
 
 mov $6,$0
 sub $6,1
+mov $10,0
 mov $5,$0
 dir $5,2
-seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $9,$5
+sub $9,1
+mov $8,$5
+dir $8,2
+mov $13,$8
+mov $12,$8
+nrt $12,2
+lpb $12
+  max $12,1
+  mov $14,$8
+  mod $14,$12
+  equ $14,0
+  mov $11,$8
+  div $11,$12
+  add $11,$12
+  mul $11,$14
+  add $10,$11
+  sub $12,1
+lpe
+nrt $8,2
+mov $12,$8
+pow $12,2
+sub $12,$13
+equ $12,0
+mul $8,$12
+sub $10,$8
+mov $7,$5
+bxo $7,$9
+mul $7,$10
 mov $4,$0
 bxo $4,$6
-mul $4,$5
+mul $4,$7
+mov $5,$7
 mul $0,2
 mov $1,$4
 mul $1,3

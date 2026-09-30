@@ -15,7 +15,21 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $11,$4
+  bin $4,2
+  mov $12,$0
+  sub $12,$4
+  mov $14,$11
+  div $14,$12
+  mov $13,$11
+  mod $13,$12
+  equ $13,0
+  mul $13,$14
+  mov $4,$13
   mul $4,2
   trn $4,1
   mov $6,0
@@ -27,8 +41,7 @@ lpb $2
   add $7,1
   seq $7,73184 ; Number of cubefree divisors of n.
   mov $9,$7
-  trn $7,56
-  add $7,56
+  max $7,56
   mul $7,$9
   sub $7,32
   mod $7,3

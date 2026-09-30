@@ -21,10 +21,23 @@ lpb $5
   mov $0,$6
   sub $0,$5
   mov $7,$0
-  seq $7,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
-  mul $7,2
-  trn $7,1
+  mul $7,8
+  nrt $7,2
   add $7,1
+  div $7,2
+  mov $11,$7
+  bin $7,2
+  mov $12,$0
+  sub $12,$7
+  mov $14,$11
+  div $14,$12
+  mov $13,$11
+  mod $13,$12
+  equ $13,0
+  mul $13,$14
+  mov $7,$13
+  mul $7,2
+  max $7,1
   seq $7,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
   div $7,2
   mov $8,$0

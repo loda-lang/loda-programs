@@ -4,17 +4,16 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 mov $4,$0
 lpb $4
-  mul $4,0
+  mov $4,0
   mov $0,$2
   bin $0,2
   mov $3,$2
   add $3,1
-  seq $3,43687 ; a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 3 runs.
+  seq $3,43687 ; a(n) = (A043570(n)-1)/2, where A043570(n) is the n-th number whose base-2 representation has exactly 3 runs.
   mov $1,$2
   bin $1,2
   mov $5,2

@@ -13,8 +13,7 @@ bin $1,$0
 add $2,1
 mul $2,$0
 add $0,$1
-sub $0,1
-trn $0,1
+trn $0,2
 bin $2,$0
 add $0,1
 mul $1,$2

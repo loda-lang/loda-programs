@@ -9,10 +9,18 @@ lpb $1
   sub $1,1
   mov $0,$3
   bin $0,$1
+  mov $5,$0
+  dif $5,$0
+  add $5,1
+  mov $6,$0
+  max $6,1
+  seq $6,40 ; The prime numbers.
+  mul $5,$6
+  mov $6,$5
+  div $6,2
   mov $2,$0
-  add $2,1
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  mul $4,$2
+  mov $2,$6
+  mul $4,$6
 lpe
 mov $0,$4
 mul $0,2

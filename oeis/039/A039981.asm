@@ -16,6 +16,5 @@ lpb $0
   lpe
 lpe
 seq $0,52709 ; Expansion of g.f. (1-sqrt(1-4*x-4*x^2))/(2*(1+x)).
+mod $0,3
 mov $1,$0
-mod $1,3
-mov $0,$1

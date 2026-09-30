@@ -10,11 +10,10 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  sub $0,2
   mov $6,$0
-  equ $6,0
+  equ $6,2
   add $0,$6
-  max $0,0
+  trn $0,2
   sub $0,1
   mov $7,$0
   div $0,2

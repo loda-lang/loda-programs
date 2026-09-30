@@ -1,6 +1,7 @@
 ; A336477: a(n) = 1 if a regular n-gon is constructible with ruler (or, more precisely, an unmarked straightedge) and compass, 0 otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+; Formula: a(n) = if((if(if((A062570(n)%2)==0,A062570(n)/2,A062570(n))==0,0,if((A062570(n)%2)==0,A062570(n)/2,A062570(n))/(2^valuation(if((A062570(n)%2)==0,A062570(n)/2,A062570(n)),2)))-1)<=(-1),0,0^(if(if((A062570(n)%2)==0,A062570(n)/2,A062570(n))==0,0,if((A062570(n)%2)==0,A062570(n)/2,A062570(n))/(2^valuation(if((A062570(n)%2)==0,A062570(n)/2,A062570(n)),2)))-1))
 
 #offset 1
 

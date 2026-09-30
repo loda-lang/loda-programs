@@ -10,8 +10,11 @@ mov $2,2
 add $2,$0
 pow $2,2
 lpb $2
+  mov $5,11
+  pow $5,$1
+  dgs $5,10
   mov $3,$1
-  seq $3,66005 ; Sum of digits of 11^n.
+  mov $3,$5
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

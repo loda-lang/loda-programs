@@ -13,8 +13,7 @@ lpb $2
   add $3,1
   seq $3,190555 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(2),4,2) and []=floor.
   mul $3,-4
-  add $3,4
-  trn $3,3
+  trn $3,-1
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,7 +1,7 @@
 ; A278218: Triangle read by rows: T(n,k) = Least number with the prime signature of binomial(n,k).
 ; Submitted by Science United
 ; 1,1,1,1,2,1,1,2,2,1,1,4,6,4,1,1,2,6,6,2,1,1,6,6,12,6,6,1,1,2,6,6,6,6,2,1,1,8,12,24,30,24,12,8,1,1,4,36,60,60,60,60,36,4,1,1,6,12,120,210,180,210,120,12,6,1,1,2,6,30,210,210,210,210,30,6,2,1,1,12
-; Formula: a(n) = A124859(A181819(binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*A181811(A181819(binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))))
+; Formula: a(n) = A124859(A181819(binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*A181811(A181819(binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))))
 
 add $0,1
 mov $2,$0

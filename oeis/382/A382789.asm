@@ -4,6 +4,5 @@
 ; Formula: a(n) = A001222(A005867(n))
 
 seq $0,5867 ; a(0) = 1; for n > 0, a(n) = (prime(n)-1)*a(n-1).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mov $1,$0
-seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-mov $0,$1

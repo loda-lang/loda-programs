@@ -1,6 +1,7 @@
 ; A229938: Decimal expansion of Hartree energy in Joules.
 ; Submitted by Goldislops
 ; 4,3,5,9,7,4,4,7,2,2
+; Formula: a(n) = (-10*truncate((binomial(n+7,max(if(((2*n+24)^2)==0,0,if(((n+7)^2)<=1,(2*n+24)^2,((2*n+24)^2)/((n+7)^valuation((2*n+24)^2,n+7))))-1,0))+3)/10)+binomial(n+7,max(if(((2*n+24)^2)==0,0,if(((n+7)^2)<=1,(2*n+24)^2,((2*n+24)^2)/((n+7)^valuation((2*n+24)^2,n+7))))-1,0))+13)%10
 
 #offset -17
 

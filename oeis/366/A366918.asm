@@ -8,6 +8,6 @@ mov $1,-1
 seq $0,281188 ; Number of refactorable numbers m such that tau(m) = n, or 0 if there are infinitely many such numbers.
 lpb $0
   mov $1,$0
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

@@ -13,8 +13,7 @@ lpb $5
   add $0,$5
   add $1,2
   mov $3,1
-  trn $0,1
-  add $0,1
+  max $0,1
   lpb $0
     mov $2,$0
     seq $2,341900 ; Partial sums of A005165.

@@ -1,11 +1,36 @@
 ; A309206: a(n) = (2*n)!/A309205(n).
 ; Submitted by mg13 [HWU]
 ; 1,1,1,1,5,1,1,1,7,1,1,1,13,19,5,1,221,1,1,1,1,1,13,17,5,1,47,4913,29,7,11,53,1,47,325,13,1147,41,1,1,41,1081,11,1,5,1,1,83,1,1,133,1,2491,97,5,103,61,1,1,19,226493,1,1,1,5,31,1,1,1,1271,289
-; Formula: a(n) = gcd(A143601(n),(2*n)!)
 
 mov $1,$0
-seq $1,143601 ; Number of labeled odd-degree trees with 2n+1 nodes.
+mov $5,0
+mov $9,0
+mov $10,0
+mov $3,$0
+mul $3,2
+mov $8,$3
+add $3,1
+mov $4,4
+pow $4,$0
+mul $4,$3
+lpb $3
+  sub $3,1
+  sub $10,$3
+  add $10,1
+  mov $6,$5
+  add $6,$10
+  pow $6,$8
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $9,$7
+  equ $10,169
+  add $5,1
+lpe
+mov $3,$9
+div $3,$4
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $1,$0
-mov $0,$1
+mov $2,0
+sub $2,$0
+fac $0,$2
+gcd $0,$3

@@ -13,8 +13,7 @@ lpb $0
   bin $3,0
   add $3,$4
   mul $3,$2
-  sub $4,1
-  trn $4,1
+  trn $4,2
   add $5,$3
   add $1,2
 lpe

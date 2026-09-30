@@ -6,8 +6,7 @@
 
 sub $0,1
 mov $2,$0
-trn $0,1
-add $0,1
+max $0,1
 seq $0,129146 ; a(n) = n-th odd prime minus n-th odd composite number.
 pow $1,$2
 lpb $2

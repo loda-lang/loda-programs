@@ -15,9 +15,8 @@ lpb $2
   mov $3,$1
   add $3,8
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  seq $3,168141 ; a(n) = pi(n + 1) - pi(n - 2), where pi is the prime counting function.
   mov $4,$3
-  seq $4,168141 ; a(n) = pi(n + 1) - pi(n - 2), where pi is the prime counting function.
-  mov $3,$4
   equ $3,2
   sub $0,$3
   add $1,6

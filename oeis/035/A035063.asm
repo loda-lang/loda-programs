@@ -15,8 +15,7 @@ lpb $2
   sub $2,$4
   mov $3,$1
   seq $3,316869 ; Number of times 8 appears in decimal expansion of n.
-  add $3,2
-  equ $3,2
+  equ $3,0
   add $5,37
   sub $0,$3
   mul $1,2

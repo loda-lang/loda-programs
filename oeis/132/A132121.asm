@@ -1,7 +1,7 @@
 ; A132121: Triangle read by rows: T(n,k)=n*(n+1)*((3*k+2)*n+1)/6, 0<=k<=n.
 ; Submitted by loader3229
 ; 0,1,2,5,11,17,14,32,50,68,30,70,110,150,190,55,130,205,280,355,430,91,217,343,469,595,721,847,140,336,532,728,924,1120,1316,1512,204,492,780,1068,1356,1644,1932,2220,2508,285,690,1095,1500,1905,2310,2715,3120,3525,3930
-; Formula: a(n) = truncate((sqrtint(8*n+8)-1)/2)*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+truncate(binomial(-2*truncate((sqrtint(8*n+8)-1)/2),3)/(-4))
+; Formula: a(n) = floor((sqrtint(8*n+8)-1)/2)*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)*(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+truncate(binomial(-2*floor((sqrtint(8*n+8)-1)/2),3)/(-4))
 
 add $0,1
 mov $1,$0

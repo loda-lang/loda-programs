@@ -1,7 +1,7 @@
 ; A074326: Numbers n such that difference between (1+2^n)-th and (2^n)-th primes is 2.
 ; Submitted by BlisteringSheep
 ; 1,6,8,9,17,23,27,39,48
-; Formula: a(n) = truncate((12*(((n-1)^2)%3)+4*n+3*floor((2*(-n+1)^2+2)/3)+3*max(n-1,3)-3)/4)-1
+; Formula: a(n) = floor((12*(((n-1)^2)%3)+4*n+3*floor((2*(-n+1)^2+2)/3)+3*max(n-1,3)-3)/4)-1
 
 #offset 1
 

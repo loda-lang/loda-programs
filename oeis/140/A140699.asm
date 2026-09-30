@@ -1,7 +1,6 @@
 ; A140699: Triangle read by rows: T(n,k) = moebius(k)*A014963(n/k) if k divides n, T(n,k) = 0 otherwise.
 ; Submitted by Vertys001
 ; 1,2,-1,3,0,-1,2,-2,0,0,5,0,0,0,-1,1,-3,-2,0,0,1,7,0,0,0,0,0,-1,2,-2,0,0,0,0,0,0,3,0,-3,0,0,0,0,0,0,1,-5,0,0,-2,0,0,0,0,1,11,0,0,0,0,0,0,0,0,0,-1,1,-1,-2,0,0,2,0,0,0,0,0,0,13,0
-; Formula: a(n) = A008683(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*((gcd(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)),truncate(2^truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))-2)-1)*(-2*truncate((A143731(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))+1)/2)+A143731(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))+1)+1)*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)
 
 #offset 1
 

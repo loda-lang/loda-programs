@@ -1,7 +1,7 @@
 ; A130271: Triangle read by rows: A051340^2.
 ; Submitted by loader3229
 ; 1,3,4,5,5,9,7,7,7,16,9,9,9,9,25,11,11,11,11,11,36,13,13,13,13,13,13,49,15,15,15,15,15,15,15,64
-; Formula: a(n) = truncate((sqrtint(8*n)-1)/2)*(truncate((sqrtint(8*n)-1)/2)*((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)==truncate((sqrtint(8*n)-1)/2))+2)+1
+; Formula: a(n) = floor((sqrtint(8*n)-1)/2)*(floor((sqrtint(8*n)-1)/2)*((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)==floor((sqrtint(8*n)-1)/2))+2)+1
 
 #offset 1
 

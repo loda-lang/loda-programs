@@ -1,4 +1,4 @@
-; A381463: Limiting sequence of the possible number of inversions in stable configurations of 4^n-1 chips in a chip firing-game directed 4-ary tree resulting from a permutation-based strategy of firing chips
+; A381463: Limiting sequence of the possible number of inversions in stable configurations of 4^n-1 chips in a chip firing-game directed 4-ary tree resulting from a permutation-based strategy of firing chips.
 ; Submitted by Ralfy
 ; 0,1,4,5,6,16,17,20,21,22,24,25,26,27,64,65,68,69,70,80,81,84,85,86,88,89,90,91,96,97,100,101,102,104,105,106,107,108,109,110,111,112,256,257,260,261,262,272,273,276,277,278,280,281,282,283,320,321,324,325,326,336,337,340
 

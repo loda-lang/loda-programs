@@ -4,9 +4,9 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
-trn $1,1
+trn $1,3
+sub $0,2
 bin $5,$0
 mov $6,$0
 mul $6,3

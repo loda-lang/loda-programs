@@ -1,11 +1,40 @@
 ; A294937: Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
 ; 0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1
-; Formula: a(n) = -2*truncate(truncate((4*n-2*truncate((84*A000203(n)-79)/84)-4)/(4*n-2*truncate((84*A000203(n)-79)/84)-3))/2)+truncate((4*n-2*truncate((84*A000203(n)-79)/84)-4)/(4*n-2*truncate((84*A000203(n)-79)/84)-3))
 
 #offset 1
 
 mov $2,$0
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $6,$0
+sub $6,1
+mov $7,0
+mov $5,$0
+dir $5,2
+mov $10,$5
+mov $9,$5
+nrt $9,2
+lpb $9
+  max $9,1
+  mov $11,$5
+  mod $11,$9
+  equ $11,0
+  mov $8,$5
+  div $8,$9
+  add $8,$9
+  mul $8,$11
+  add $7,$8
+  sub $9,1
+lpe
+nrt $5,2
+mov $9,$5
+pow $9,2
+sub $9,$10
+equ $9,0
+mul $5,$9
+sub $7,$5
+mov $4,$0
+bxo $4,$6
+mul $4,$7
+mov $2,$4
 mul $2,21
 mov $3,3
 mul $3,$2

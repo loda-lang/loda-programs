@@ -1,13 +1,42 @@
 ; A017666: Denominator of sum of reciprocals of divisors of n.
 ; 1,2,3,4,5,1,7,8,9,5,11,3,13,7,5,16,17,6,19,10,21,11,23,2,25,13,27,1,29,5,31,32,11,17,35,36,37,19,39,4,41,7,43,11,15,23,47,12,49,50,17,26,53,9,55,7,57,29,59,5,61,31,63,64,65,11,67,34,23,35,71,24,73,37,75,19,77,13,79,40
-; Formula: a(n) = floor((n-1)/gcd(n,A000203(n)))+1
 
 #offset 1
 
 mov $2,$0
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $5,$0
+sub $5,1
+mov $6,0
+mov $4,$0
+dir $4,2
+mov $9,$4
+mov $8,$4
+nrt $8,2
+lpb $8
+  max $8,1
+  mov $10,$4
+  mod $10,$8
+  equ $10,0
+  mov $7,$4
+  div $7,$8
+  add $7,$8
+  mul $7,$10
+  add $6,$7
+  sub $8,1
+lpe
+nrt $4,2
+mov $8,$4
+pow $8,2
+sub $8,$9
+equ $8,0
+mul $4,$8
+sub $6,$4
+mov $3,$0
+bxo $3,$5
+mul $3,$6
 mov $1,$0
-gcd $1,$2
+gcd $1,$3
+mov $2,$3
 sub $0,1
 div $0,$1
 add $0,1

@@ -5,6 +5,5 @@
 
 mov $2,$0
 seq $2,77285 ; Number of partitions of n with designated summands.
+mul $0,$2
 mov $1,$0
-mul $1,$2
-mov $0,$1

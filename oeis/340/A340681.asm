@@ -12,7 +12,8 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,53166 ; Smallest positive integer for which n divides a(n)^4.
+  seq $5,19554 ; Smallest number whose square is divisible by n.
+  seq $5,19554 ; Smallest number whose square is divisible by n.
   pow $5,4
   mov $3,$5
   mod $3,$1

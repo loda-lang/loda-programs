@@ -7,8 +7,7 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
+seq $0,13939 ; Partial sums of sequence A001221 (number of distinct primes dividing n).
 mov $1,$0
-seq $1,13939 ; Partial sums of sequence A001221 (number of distinct primes dividing n).
-mov $0,$1
-mov $2,$1
+mov $2,$0
 add $2,1

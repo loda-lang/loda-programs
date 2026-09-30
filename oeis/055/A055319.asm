@@ -4,11 +4,9 @@
 
 #offset 8
 
-sub $0,8
 mov $1,$0
-add $0,6
+sub $0,2
 seq $0,112494 ; Sixth diagonal of the Stirling2 triangle A048993 and sixth column of triangle A008278.
-add $1,8
 lpb $1
   mul $0,$1
   sub $1,1

@@ -1,7 +1,7 @@
 ; A194098: Decimal expansion of sum of reciprocals of cousin primes.
 ; Submitted by loader3229
 ; 1,1,9,7,0,4,4,9
-; Formula: a(n) = -10*truncate((truncate(((sqrtint(19200*n-19184)+4)^10-3)/2)+1)/10)+truncate(((sqrtint(19200*n-19184)+4)^10-3)/2)+1
+; Formula: a(n) = (floor(((sqrtint(19200*n-19184)+4)^10-3)/2)+1)%10
 
 #offset 1
 

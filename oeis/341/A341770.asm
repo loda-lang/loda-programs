@@ -1,6 +1,7 @@
 ; A341770: Largest number m on the square spiral board such that it takes n steps to reach square 1 from square m along the shortest path without stepping on any prime number.
 ; Submitted by loader3229
 ; 1,8,23,34,61,62,97,138,189,248,315,390,473,564,663,770,885,1008,1139,1278,1425,1580,1743,1914,2093,2280,2475,2678,2889,3108,3335,3570,3813,4064,4323,4590,4865,5148,5439,5738,6045,6360,6683,7014,7353,7700,8055,8418
+; Formula: a(n) = 3*a(n-1)-3*a(n-2)+a(n-3), a(18) = 1139, a(17) = 1008, a(16) = 885, a(15) = 770, a(14) = 663, a(13) = 564, a(12) = 473, a(11) = 390, a(10) = 315, a(9) = 248, a(8) = 189, a(7) = 138, a(6) = 97, a(5) = 62, a(4) = 61, a(3) = 34, a(2) = 23, a(1) = 8, a(0) = 1
 
 mov $1,1
 mov $2,8

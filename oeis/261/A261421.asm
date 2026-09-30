@@ -1,6 +1,7 @@
 ; A261421: Numerators of coefficients in Taylor series expansion of sqrt(m(x)) where m(x) is g.f. for Motzkin numbers A001006.
 ; Submitted by Tom Poleski
 ; 1,1,7,25,427,1911,18051,87945,3518515,17943211,185961113,976288495,20727407743,111039591475,1199227922235,6520801221225,570761912807235,3139190488028595,34696316039725725,192564553799569875,4291438629174301605,23993043241870766505,269139354637637831685
+; Formula: a(n) = if((floor(binomial(2*n,n)/(n+1))*floor((3^(n+1)+1)/4))==0,0,(floor(binomial(2*n,n)/(n+1))*floor((3^(n+1)+1)/4))/(2^valuation(floor(binomial(2*n,n)/(n+1))*floor((3^(n+1)+1)/4),2)))
 
 mov $1,$0
 mul $1,2

@@ -1,4 +1,4 @@
-; A003131: Order of Monster simple group.
+; A003131: Decimal expansion of the order of Monster group.
 ; Submitted by BrandyNOW
 ; 8,0,8,0,1,7,4,2,4,7,9,4,5,1,2,8,7,5,8,8,6,4,5,9,9,0,4,9,6,1,7,1,0,7,5,7,0,0,5,7,5,4,3,6,8,0,0,0,0,0,0,0,0,0
 ; Formula: a(n) = floor(863457500757017169409954688578215497424710808/(10^(n-54)))%10

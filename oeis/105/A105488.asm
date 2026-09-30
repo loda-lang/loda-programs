@@ -1,13 +1,50 @@
 ; A105488: Number of partitions of {1...n} containing 2 detached pairs of consecutive integers, i.e., partitions in which only 1- or 2-strings of consecutive integers can appear in a block and there are exactly two 2-strings.
 ; Submitted by Science United
 ; 1,6,30,150,780,4263,24556,149040,951615,6378625,44785620,328660566,2515643767,20044428810,165955025400,1425299331992,12678325080012,116635133853189,1108221018960830,10862073229428120,109694927532209481,1140199081827172719,12185953616003279496,133787660788441586700,1507541857974749789725,17420567529790183452174,206281044119830675989042,2501178998267573468896730,31032813843404219708159820,393738291747991339589318355,5105506037328282736607443888,67618145786351800896392740032
-; Formula: a(n) = A000110(n-3)*binomial(n-2,2)
 
 #offset 4
 
 sub $0,2
 mov $1,$0
 bin $1,2
+mov $6,0
+mov $7,0
+mov $10,0
+mov $12,0
 sub $0,1
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $2,0
+mov $5,1
+fac $5,$0
+mov $8,$0
+mov $9,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  pow $3,$8
+  mov $4,$8
+  bin $4,$2
+  mul $7,$2
+  add $7,$3
+  mov $11,$7
+  div $11,$5
+  mul $12,$2
+  add $12,$11
+  add $2,1
+  mod $7,$5
+  mul $9,-1
+  mov $13,$4
+  mul $13,$7
+  mul $13,$9
+  mov $14,$4
+  mul $14,$12
+  mul $14,$9
+  add $6,$14
+  add $10,$13
+lpe
+mul $6,$9
+mul $10,$9
+div $10,$5
+add $10,$6
+mov $0,$10
 mul $0,$1

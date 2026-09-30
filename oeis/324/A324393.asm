@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,324392 ; a(n) is the number of divisors d of n such that A000120(d) divides n, where A000120(d) gives the binary weight of d.
-add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $1,$0
 mov $0,$1

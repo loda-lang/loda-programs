@@ -1,7 +1,7 @@
 ; A038358: Ranks of certain relations among Euler sums of weight n.
 ; Submitted by BrandyNOW
 ; 1,2,5,10,17,31,45,75
-; Formula: a(n) = truncate((sqrtnint(3^(n+1)-8,5)*binomial(n+1,2))/8)
+; Formula: a(n) = floor((sqrtnint(3^(n+1)-8,5)*binomial(n+1,2))/8)
 
 #offset 3
 

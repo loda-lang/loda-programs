@@ -1,12 +1,41 @@
 ; A082895: Closest number to sigma(n) = A000203(n) which is divisible by n.
 ; Submitted by Simon Strandgaard
 ; 1,4,3,8,5,12,7,16,9,20,11,24,13,28,30,32,17,36,19,40,42,44,23,72,25,52,27,56,29,60,31,64,33,68,35,108,37,76,39,80,41,84,43,88,90,92,47,144,49,100,51,104,53,108,55,112,57,116,59,180,61,124,126,128,65,132,67,136,69,140,71,216,73,148,150,152,77,156,79,160
-; Formula: a(n) = truncate((2*n*truncate((2*A000203(n)+n)/(2*n)))/2)
 
 #offset 1
 
 mov $1,$0
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$0
+sub $4,1
+mov $5,0
+mov $3,$0
+dir $3,2
+mov $8,$3
+mov $7,$3
+nrt $7,2
+lpb $7
+  max $7,1
+  mov $9,$3
+  mod $9,$7
+  equ $9,0
+  mov $6,$3
+  div $6,$7
+  add $6,$7
+  mul $6,$9
+  add $5,$6
+  sub $7,1
+lpe
+nrt $3,2
+mov $7,$3
+pow $7,2
+sub $7,$8
+equ $7,0
+mul $3,$7
+sub $5,$3
+mov $2,$0
+bxo $2,$4
+mul $2,$5
+mov $1,$2
 mul $1,2
 add $1,$0
 mul $0,2

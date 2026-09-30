@@ -10,13 +10,12 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,226158 ; a(n) = 2*n*(2^n - 1)*zeta(1-n) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
     mov $9,10
     min $10,$0
-    sub $4,1
+    sub $4,2
     mul $7,$$9
     gcd $4,$10
     add $6,$7

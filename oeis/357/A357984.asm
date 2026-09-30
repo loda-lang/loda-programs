@@ -21,8 +21,7 @@ lpb $0
   lpb $5
     sub $5,1
     add $3,$5
-    trn $3,1
-    add $3,1
+    max $3,1
     seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   lpe
   lpb $0

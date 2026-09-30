@@ -12,8 +12,11 @@ lpb $2
   add $3,1
   seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   trn $3,1
-  seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
-  equ $3,1
+  mov $5,$3
+  add $5,1
+  nrt $5,2
+  nrt $3,2
+  neq $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

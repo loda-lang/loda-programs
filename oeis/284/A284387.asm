@@ -9,8 +9,7 @@ mov $2,$0
 mov $1,2
 lpb $1
   sub $1,2
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,287792 ; Positions of 1 in A287790; complement of A287791.
   mod $0,3
 lpe

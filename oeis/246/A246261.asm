@@ -11,9 +11,8 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $5,$3
-  seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  mov $3,$5
   div $3,2
   add $3,1
   mul $3,338

@@ -8,7 +8,8 @@ lpb $0
   equ $4,0
   add $3,$4
   mod $0,$3
-  seq $2,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  mul $2,2
+  seq $2,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
   div $2,2
   mul $1,$2
 lpe

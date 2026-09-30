@@ -16,9 +16,9 @@ sub $0,$2
 sub $1,$0
 add $1,1
 mul $0,$1
-sub $0,1
 mov $3,$0
-equ $3,0
+sub $0,1
+equ $3,1
 add $3,$0
 mov $5,$3
 mov $6,$3

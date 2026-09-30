@@ -1,7 +1,7 @@
 ; A188037: a(n) = floor(n*r) - 1 - floor((n-1)*r), where r = sqrt(2).
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1
-; Formula: a(n) = -2*truncate(sqrtint(2*(sqrtint(2*(n-1)^2)+2)^2)/2)+sqrtint(2*(sqrtint(2*(n-1)^2)+2)^2)
+; Formula: a(n) = sqrtint(2*(sqrtint(2*(n-1)^2)+2)^2)%2
 
 #offset 1
 

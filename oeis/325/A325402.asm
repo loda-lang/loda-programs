@@ -13,6 +13,5 @@ lpe
 div $3,2
 mov $0,$3
 sub $0,$1
-add $0,1
-trn $0,1
+max $0,0
 add $0,$2

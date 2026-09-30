@@ -13,8 +13,7 @@ lpb $2
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mod $3,8
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,4
   mov $4,$0

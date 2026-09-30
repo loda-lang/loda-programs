@@ -1,6 +1,7 @@
 ; A053381: Maximal number of linearly independent smooth nowhere-zero vector fields on a (2n+1)-sphere.
 ; Submitted by fzs600
 ; 1,3,1,7,1,3,1,8,1,3,1,7,1,3,1,9,1,3,1,7,1,3,1,8,1,3,1,7,1,3,1,11,1,3,1,7,1,3,1,8,1,3,1,7,1,3,1,9,1,3,1,7,1,3,1,8,1,3,1,7,1,3,1,15,1,3,1,7,1,3,1,8,1,3,1,7,1,3,1,9
+; Formula: a(n) = 2*valuation(n+1,2)+floor(((6*valuation(n+1,2)+18)%8)/3)+1
 
 add $0,1
 lex $0,2

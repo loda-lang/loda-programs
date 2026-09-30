@@ -1,4 +1,4 @@
-; A108171: Tribonacci version of A076662 using beta positive real Pisot root of x^3 - x^2 - x - 1.
+; A108171: Tribonacci version of A076662 using the positive real Pisot root of x^3 - x^2 - x - 1.
 ; Submitted by [SG]KidDoesCrunch
 ; 4,3,4,3,3,4,3,4,3,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,3,4,3,4,3,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,3,4,3,4,3,3,4,3
 

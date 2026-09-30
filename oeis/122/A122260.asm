@@ -10,8 +10,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,173557 ; a(n) = Product_{primes p dividing n} (p-1).
-  seq $3,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
+  mov $6,$3
+  seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $5,$3
+  seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  div $6,$5
+  mov $3,$6
+  dir $3,3
+  dir $3,2
   equ $3,1
   sub $0,$3
   mov $4,$0

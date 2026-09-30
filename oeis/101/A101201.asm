@@ -1,6 +1,7 @@
 ; A101201: Maximal number of kings in the toroidal king's graph on an n X n board such that each king is attacking no more than four other kings.
 ; Submitted by loader3229
 ; 0,2,5,9,15,21,28,37,47,60,71,84
+; Formula: a(n) = floor((n*sign(10*n)*((10*n-1)%((if((n%2)==0,n/2,n)+1)%3+floor((floor((n+5)/4)%3+16*n)/3)-1)+1))/8)
 
 #offset 1
 

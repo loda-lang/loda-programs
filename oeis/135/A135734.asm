@@ -6,11 +6,9 @@
 #offset 1
 
 mov $1,$0
-sub $1,1
-mov $2,$1
-add $1,1
 seq $1,40 ; The prime numbers.
-add $2,2
+mov $2,$0
+add $2,1
 seq $2,40 ; The prime numbers.
 seq $2,13636 ; a(n) = n*nextprime(n).
 mul $2,$1

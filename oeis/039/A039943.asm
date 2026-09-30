@@ -2,10 +2,8 @@
 ; Submitted by iBezanilla
 ; 0,1,4,16,20,37,42,58,89,145
 
-add $0,1
 mov $2,$0
-sub $0,1
-add $2,2
+add $2,3
 pow $2,2
 mul $2,2
 lpb $2

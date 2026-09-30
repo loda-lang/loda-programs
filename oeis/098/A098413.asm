@@ -28,8 +28,7 @@ lpb $2
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $5,$3
   mov $3,$5
-  sub $3,1
-  equ $3,6
+  equ $3,7
   sub $0,$3
   add $1,6
   mov $4,$0

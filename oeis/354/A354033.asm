@@ -1,7 +1,7 @@
 ; A354033: a(n) = 1 if n > 1 and n is a power of a prime of the form 4m+3, otherwise 0.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = -2*truncate(binomial(gcd(n,2^n-2)*(A143731(n)+1),3)/2)+binomial(gcd(n,2^n-2)*(A143731(n)+1),3)
+; Formula: a(n) = binomial(gcd(n,2^n-2)*(A143731(n)+1),3)%2
 
 #offset 1
 

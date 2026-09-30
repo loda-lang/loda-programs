@@ -4,8 +4,8 @@
 
 #offset 1
 
-add $0,7
 mov $1,$0
-add $0,5
+add $1,7
+add $0,12
 mul $0,$1
 mod $0,9

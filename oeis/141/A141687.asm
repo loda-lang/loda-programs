@@ -1,7 +1,7 @@
 ; A141687: Triangle read by rows: t(n,m) = 1 - ((prime(n) - prime(m))/2 mod 2).
 ; Submitted by PDW
 ; 1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,1,0,0,1,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,0,1,0,1,0,0,1,1,0,0,1,0,1,1,1,0
-; Formula: a(n) = -2*truncate(truncate((A000040(-binomial(truncate((sqrtint(8*truncate((sqrtint(8*n-7)+1)/2)+8*n+1)+1)/2),2)+truncate((sqrtint(8*n-7)+1)/2)+n+1)+A005145(truncate((sqrtint(8*n-7)+1)/2)+n+1))/2)/2)+truncate((A000040(-binomial(truncate((sqrtint(8*truncate((sqrtint(8*n-7)+1)/2)+8*n+1)+1)/2),2)+truncate((sqrtint(8*n-7)+1)/2)+n+1)+A005145(truncate((sqrtint(8*n-7)+1)/2)+n+1))/2)
+; Formula: a(n) = floor((A000040(-binomial(floor((sqrtint(8*floor((sqrtint(8*n-7)+1)/2)+8*n+1)+1)/2),2)+floor((sqrtint(8*n-7)+1)/2)+n+1)+A005145(floor((sqrtint(8*n-7)+1)/2)+n+1))/2)%2
 
 #offset 1
 

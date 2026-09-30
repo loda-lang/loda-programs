@@ -1,6 +1,7 @@
 ; A286562: Transpose of square array A286561.
 ; Submitted by loader3229
 ; 1,1,0,1,1,0,1,0,0,0,1,2,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,3,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,2,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,2
+; Formula: a(n) = floor(gcd((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)==1,2)/2)*if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)==0,0,if(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^2)<=1,0,valuation(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)))+binomial(0,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)
 
 #offset 1
 

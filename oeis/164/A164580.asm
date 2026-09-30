@@ -10,14 +10,13 @@ add $4,5
 pow $4,3
 lpb $4
   mov $5,$3
-  add $5,2
-  mov $1,$5
-  sub $5,1
+  add $5,1
   add $2,$5
   sub $2,$3
   mov $5,$2
   add $5,2
-  sub $1,1
+  mov $1,$3
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $1,$5
   add $2,1

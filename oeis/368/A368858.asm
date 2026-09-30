@@ -1,7 +1,7 @@
 ; A368858: Number of perfect cube unlabeled endofunctions from n points to themselves.
 ; Submitted by BrandyNOW
 ; 1,1,3,5,12,22,49,99
-; Formula: a(n) = truncate((2^(n+1)+3*2^floor((2*n)/2)-2^(floor((n+1)/2)+1)-truncate(2^truncate((2*n+gcd(2*n-1,3)-1)/3)))/6)+1
+; Formula: a(n) = truncate((2^(n+1)+3*2^floor((2*n)/2)-2^(floor((n+1)/2)+1)-2^floor((2*n+gcd(2*n-1,3)-1)/3))/6)+1
 
 add $0,1
 mov $1,2

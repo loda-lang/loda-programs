@@ -22,8 +22,7 @@ lpb $2
     add $5,$0
     sub $0,1
     mod $0,5
-    pow $4,0
-    mul $4,$3
+    mov $4,$3
   lpe
   div $4,10051
   add $4,1

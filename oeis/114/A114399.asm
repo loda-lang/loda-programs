@@ -7,7 +7,14 @@ pow $2,4
 lpb $2
   mov $3,$1
   pow $3,2
-  seq $3,139352 ; Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives o(n).
+  mov $6,$3
+  dgs $6,2
+  mov $5,0
+  sub $5,$6
+  mov $6,$3
+  dgs $6,4
+  add $5,$6
+  mov $3,$5
   equ $3,0
   sub $0,$3
   add $1,1

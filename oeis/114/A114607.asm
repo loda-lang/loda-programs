@@ -1,7 +1,7 @@
 ; A114607: Start with 1 0 1 0 then add a one every time (e.g. 1 1 0 1 1 1 0 1 1 1 1 0 ...).
 ; Submitted by shiva
 ; 1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
-; Formula: a(n) = (n-1)!=binomial(truncate((sqrtint(8*n+8)+1)/2),2)
+; Formula: a(n) = (n-1)!=binomial(floor((sqrtint(8*n+8)+1)/2),2)
 
 #offset 1
 

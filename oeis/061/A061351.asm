@@ -4,8 +4,7 @@
 
 mov $1,1
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,70195 ; Squarefree numbers sandwiched between a pair of twin primes.
   sub $0,2
   mov $1,$0

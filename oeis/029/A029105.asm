@@ -13,11 +13,9 @@ lpb $0
     div $1,5
     div $4,2
     sub $4,$1
-    sub $2,6
-    trn $2,6
+    trn $2,12
     add $3,$4
   lpe
-  sub $0,3
-  trn $0,8
+  trn $0,11
 lpe
 mov $0,$3

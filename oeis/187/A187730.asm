@@ -5,10 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,174824 ; a(n) = period of the sequence {m^m, m >= 1} modulo n.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

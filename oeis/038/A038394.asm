@@ -9,9 +9,8 @@ add $0,1
 seq $0,102476 ; Least modulus with 2^n square roots of 1.
 div $0,4
 mul $0,2
+seq $0,84796 ; Replace n with concatenation of its prime factors in decreasing order.
 mov $1,$0
-seq $1,84796 ; Replace n with concatenation of its prime factors in decreasing order.
-mov $0,$1
 sub $0,22
 div $0,10
 add $0,2

@@ -6,8 +6,7 @@ mov $1,1
 mov $3,1
 mov $5,1
 mov $7,1
-mov $8,1
-mov $9,1
+fil $7,3
 mov $10,2
 mov $11,1
 mov $12,3
@@ -20,19 +19,7 @@ lpb $0
   add $15,$3
   add $15,$8
   add $15,$13
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
+  rol $1,14
   mov $14,$15
 lpe
 mov $0,$1

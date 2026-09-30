@@ -5,8 +5,7 @@
 
 #offset 1
 
-mul $0,8
-add $0,1
-mul $0,3
+mul $0,24
+add $0,3
 nrt $0,2
 sub $0,4

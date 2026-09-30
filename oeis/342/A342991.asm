@@ -1,7 +1,7 @@
 ; A342991: Left(0)/right(1) turning sequence needed to traverse the Stern-Brocot tree (A007305, A047679) from the root down to e (A001113).
 ; Submitted by Dongha Hwang
 ; 1,1,0,1,1,0,1,0,0,0,0,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate((truncate((sqrtint(4*bitxor(n,1))+1)/2)+1)/2)+truncate((sqrtint(4*bitxor(n,1))+1)/2)+1
+; Formula: a(n) = (floor((sqrtint(4*bitxor(n,1))+1)/2)+1)%2
 
 #offset 1
 

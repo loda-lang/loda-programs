@@ -20,9 +20,8 @@ lpb $2
   div $6,$5
   add $3,$6
   add $3,2
+  pow $3,2
   mov $7,$3
-  pow $7,2
-  mov $3,$7
   sub $3,$8
   trn $3,$1
   neq $3,0

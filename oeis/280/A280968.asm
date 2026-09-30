@@ -10,7 +10,8 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
-  seq $2,278972 ; Twice the twin primes.
+  seq $2,1097 ; Twin primes.
+  mul $2,2
   add $1,$2
 lpe
 mov $0,$1

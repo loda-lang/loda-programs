@@ -1,6 +1,7 @@
 ; A301281: Numerator of proportion of the volume of a unit box in R^4 that can be filled by n disjoint symplectically embedded balls of equal radius.
 ; Submitted by loader3229
 ; 1,1,2,8,9,48,224,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = b(n-1), b(n) = b(n-1), b(14) = 1, b(13) = 1, b(12) = 1, b(11) = 1, b(10) = 1, b(9) = 1, b(8) = 1, b(7) = 1, b(6) = 224, b(5) = 48, b(4) = 9, b(3) = 8, b(2) = 2, b(1) = 1, b(0) = 1
 
 #offset 1
 

@@ -1,7 +1,7 @@
-; A110000: Minimal number of polygonal pieces in a dissection of a regular n-gon to an equilateral triangle (conjectured).
+; A110000: Minimum number of polygonal pieces in a dissection of a regular n-gon to an equilateral triangle (conjectured).
 ; Submitted by loader3229
 ; 1,4,6,5,8,7,8,7
-; Formula: a(n) = -10*truncate((binomial(sqrtnint(6*n-18,3),2)+gcd(n-3,8)+3)/10)+binomial(sqrtnint(6*n-18,3),2)+gcd(n-3,8)+3
+; Formula: a(n) = (binomial(sqrtnint(6*n-18,3),2)+gcd(n-3,8)+3)%10
 
 #offset 3
 

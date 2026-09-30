@@ -10,7 +10,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,354918 ; a(n) = A344005(n) mod 2, where A344005(n) is the smallest positive m such that n divides the oblong number m*(m+1).
+  seq $3,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

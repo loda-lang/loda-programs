@@ -1,16 +1,21 @@
 ; A325978: a(n) = (1/2)*(A325314(n) + A325814(n)).
 ; Submitted by ckrause
 ; 1,2,3,1,5,6,7,-1,3,10,11,0,13,14,15,-5,17,0,19,2,21,22,23,-12,10,26,3,4,29,30,31,-13,33,34,35,-24,37,38,39,-14,41,42,43,8,9,46,47,-36,21,5,51,10,53,-18,55,-16,57,58,59,-12,61,62,15,-29,65,66,67,14,69,70,71,-72,73,74,15,16,77,78,79,-46
-; Formula: a(n) = -A000203(n)+truncate((A034448(n)+A048250(n))/2)+n
+; Formula: a(n) = -A000203(n)+truncate((A000203(A075423(n)+1)+A034448(n))/2)+n
 
 #offset 1
 
 mov $2,$0
+mov $4,$0
+seq $4,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+add $4,1
+mov $5,$4
+seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $3,$0
-seq $3,48250 ; Sum of the squarefree divisors of n.
+mov $3,$5
 sub $0,1
 seq $2,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
-add $2,$3
+add $2,$5
 div $2,2
 mov $1,$0
 add $1,1

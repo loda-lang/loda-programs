@@ -1,7 +1,7 @@
 ; A306348: Numbers k such that exp(H_k)*log(H_k) <= sigma(k), where H_k is the harmonic number.
 ; Submitted by BrandyNOW
 ; 1,2,3,4,6,12,24,60
-; Formula: a(n) = truncate((-n+truncate(binomial(2*n-2,n-1)/n))/n)+n
+; Formula: a(n) = truncate((-n+floor(binomial(2*n-2,n-1)/n))/n)+n
 
 #offset 1
 

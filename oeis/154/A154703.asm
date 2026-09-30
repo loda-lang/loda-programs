@@ -8,6 +8,5 @@
 add $0,1
 seq $0,102476 ; Least modulus with 2^n square roots of 1.
 div $0,4
+seq $0,65016 ; Working in base 2, replace n with the concatenation of its prime factors (without repetition).
 mov $1,$0
-seq $1,65016 ; Working in base 2, replace n with the concatenation of its prime factors (without repetition).
-mov $0,$1

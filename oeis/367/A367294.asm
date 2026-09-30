@@ -18,8 +18,7 @@ lpb $3
   mov $2,$5
   div $2,$9
   mul $2,2
-  sub $2,3
-  equ $2,5
+  equ $2,8
   add $7,$2
   mov $8,$7
   neq $8,$0

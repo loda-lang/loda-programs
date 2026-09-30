@@ -1,7 +1,7 @@
 ; A168258: Triangle read by rows, A101688 * A000012 as infinite lower triangular matrices.
 ; Submitted by loader3229
 ; 1,1,1,2,2,1,2,2,2,1,3,3,3,2,1,3,3,3,3,2,1,4,4,4,4,3,2,1,4,4,4,4,4,3,2,1,5,5,5,5,5,4,3,2,1,5,5,5,5,5,5,4,3,2,1,6,6,6,6,6,6,5,4,3,2,1,6,6,6,6,6,6,6,5,4,3,2,1
-; Formula: a(n) = min(-n+binomial(truncate((sqrtint(8*n)+3)/2),2),truncate((sqrtint(8*n)-1)/4))+1
+; Formula: a(n) = min(-n+binomial(floor((sqrtint(8*n)+3)/2),2),floor((sqrtint(8*n)-1)/4))+1
 
 #offset 1
 

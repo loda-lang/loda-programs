@@ -1,7 +1,7 @@
 ; A130154: Triangle read by rows: T(n, k) = 1 + 2*(n-k)*(k-1) (1 <= k <= n).
 ; Submitted by DukeBox
 ; 1,1,1,1,3,1,1,5,5,1,1,7,9,7,1,1,9,13,13,9,1,1,11,17,19,17,11,1,1,13,21,25,25,21,13,1,1,15,25,31,33,31,25,15,1,1,17,29,37,41,41,37,29,17,1,1,19,33,43,49,51,49,43,33,19,1,1,21,37,49,57,61,61,57,49,37,21,1,1,23
-; Formula: a(n) = 2*(-n+binomial(truncate((sqrtint(8*n)+1)/2),2)+truncate((sqrtint(8*n)+1)/2))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n-1)+1
+; Formula: a(n) = 2*(-n+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n-1)+1
 
 #offset 1
 

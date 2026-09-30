@@ -14,8 +14,7 @@ lpb $2
   add $3,$4
   add $3,1
   mod $3,2
-  add $3,2
-  equ $3,2
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

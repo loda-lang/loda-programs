@@ -1,7 +1,7 @@
 ; A104887: Triangle T(n,k) = (n-k+1)-th prime, read by rows.
 ; Submitted by Egon Olsen
 ; 2,3,2,5,3,2,7,5,3,2,11,7,5,3,2,13,11,7,5,3,2,17,13,11,7,5,3,2,19,17,13,11,7,5,3,2,23,19,17,13,11,7,5,3,2,29,23,19,17,13,11,7,5,3,2,31,29,23,19,17,13,11,7,5,3,2,37,31,29,23,19,17,13,11,7,5,3,2,41,37
-; Formula: a(n) = A000040((truncate((sqrtint(8*n)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+1)+1)/2),2)-n+1)
+; Formula: a(n) = A000040((floor((sqrtint(8*n)-1)/2)+1)^2-binomial(floor((sqrtint(8*(floor((sqrtint(8*n)-1)/2)+1)^2-8*n+1)+1)/2),2)-n+1)
 
 #offset 1
 

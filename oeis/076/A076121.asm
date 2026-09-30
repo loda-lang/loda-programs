@@ -3,8 +3,7 @@
 ; Formula: a(n) = floor(max(n-14,0)/5)^2+n
 
 mov $1,$0
-sub $0,7
-trn $0,7
+trn $0,14
 div $0,5
 pow $0,2
 add $0,$1

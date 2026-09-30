@@ -13,8 +13,8 @@ lpb $5
   lpb $0
     mov $2,$0
     sub $2,1
-    mov $4,$2
-    equ $4,0
+    mov $4,$0
+    equ $4,1
     add $2,$4
     div $0,$2
     div $0,24

@@ -7,7 +7,7 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $1,53871 ; a(0)=1; a(1)=0; a(n) = 2*(n-1)*(a(n-1) + a(n-2)).
+seq $1,53871 ; a(n) = 2*(n-1)*(a(n-1) + a(n-2)), starting a(0) = 1; a(1) = 0.
 div $1,$0
 add $1,$0
 mov $0,$1

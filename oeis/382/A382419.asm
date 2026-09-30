@@ -1,7 +1,7 @@
 ; A382419: The product of exponents in the prime factorization of the cubefree numbers.
 ; Submitted by loader3229
 ; 1,1,1,2,1,1,1,2,1,1,2,1,1,1,1,2,1,2,1,1,1,2,1,2,1,1,1,1,1,1,4,1,1,1,1,1,1,2,2,1,1,2,2,1,2,1,1,1,1,1,2,1,1,2,1,1,1,2,1,1,1,1,1,2,2,1,1,1,1,1,2,1,1,1,1,2,1,2,1,1
-; Formula: a(n) = A037445(gcd(0,truncate((A004709(n)-1)/A019554(max(0,A004709(n)-1)+1))+1))
+; Formula: a(n) = A037445(gcd(0,floor((A004709(n)-1)/A019554(max(0,A004709(n)-1)+1))+1))
 
 #offset 1
 

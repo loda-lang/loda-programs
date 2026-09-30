@@ -31,9 +31,9 @@ lpb $1
     sub $4,1
   lpe
   add $0,$3
-  sub $0,1
   mov $3,$0
-  neq $3,0
+  neq $3,1
+  sub $0,1
   mul $1,$3
   sub $1,1
   add $2,1

@@ -9,12 +9,21 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $6,$1
+  dif $6,$1
+  add $6,1
+  mov $7,$1
+  max $7,1
+  seq $7,40 ; The prime numbers.
+  mul $6,$7
   mov $3,$1
-  add $3,1
-  seq $3,112773 ; 3 together with primes multiplied by 3.
-  sub $3,1
+  mov $3,$6
+  sub $3,2
+  div $3,2
+  mul $3,3
   mov $5,$3
-  add $3,3
+  add $5,2
+  add $3,5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

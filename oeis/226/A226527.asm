@@ -16,8 +16,7 @@ lpb $6
   mul $7,$5
   add $7,1
   seq $7,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $7,2
-  equ $7,1
+  equ $7,3
   sub $1,$7
   mov $3,$1
   max $3,0

@@ -14,8 +14,7 @@ lpb $2
   mov $0,$4
   sub $0,$2
   lpb $0
-    trn $0,1
-    add $0,1
+    max $0,1
     seq $0,36263 ; Second differences of primes.
     add $1,$0
     div $0,63

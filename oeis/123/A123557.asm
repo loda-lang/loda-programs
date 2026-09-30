@@ -6,7 +6,6 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
+seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
 mov $1,$0
-seq $1,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
-mov $0,$1
 sub $0,1

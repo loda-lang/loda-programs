@@ -1,13 +1,25 @@
 ; A111928: Numerator of f(n) := Product_{i=1..n} sigma(i)/i.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,2,7,21,42,48,18,26,234,2808,6552,7056,12096,96768,187488,3374784,7312032,29248128,307105344,467970048,8423460864,202163060736,101081530368,3133527441408,5061852020736,1499808006144,2999616012288,17997696073728,215972352884736,222939202977792,438911555862528,7022584893800448,189609792132612096,1300181431766482944,3286569730298609664,6573139460597219328,39438836763583315968,56630124583606812672,127417780313115328512,5351546773150843797504,12232106910059071537152,48928427640236286148608
-; Formula: a(n) = truncate(A066780(n)/gcd(n!,A066780(n)))
 
 #offset 1
 
+mov $3,1
+mov $5,0
 mov $1,$0
-seq $1,66780 ; a(n) = Product_{k=1..n} sigma(k); sigma(k) is the sum of the positive divisors of n.
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $0,$1
+lpb $1
+  sub $1,1
+  mov $4,$3
+  mov $3,$5
+  add $3,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $3,$4
+  add $5,1
+lpe
+mov $2,0
+sub $2,$0
+fac $0,$2
+gcd $0,$3
+mov $1,$3
 div $1,$0
 mov $0,$1

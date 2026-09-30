@@ -1,14 +1,43 @@
 ; A324658: a(n) = n - A324659(n), where A324659(n) is half of bitwise-AND of 2*n and sigma(n).
 ; Submitted by LCB001
 ; 1,2,1,4,4,0,3,8,9,2,9,0,8,2,3,16,16,0,17,0,5,4,19,0,16,10,11,0,16,26,15,32,33,32,35,0,36,32,35,0,40,10,41,4,8,10,39,0,33,16,19,4,36,2,19,0,17,18,33,40,32,14,11,64,65,2,65,64,69,6,67,8,72,66,65,8,77,10,71,0
-; Formula: a(n) = truncate((sign(3*sign(A000203(n))*sign(sign(2*sign(2*n)+2*sign(A000203(n))-1)*bitor(abs(2*n),abs(A000203(n))))+sign(sign(2*sign(2*n)+2*sign(A000203(n))-1)*bitor(abs(2*n),abs(A000203(n))))+sign(A000203(n)))*bitxor(abs(sign(2*sign(2*n)+2*sign(A000203(n))-1)*bitor(abs(2*n),abs(A000203(n)))),abs(A000203(n))))/2)
 
 #offset 1
 
 mov $1,$0
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$0
+sub $4,1
+mov $5,0
+mov $3,$0
+dir $3,2
+mov $8,$3
+mov $7,$3
+nrt $7,2
+lpb $7
+  max $7,1
+  mov $9,$3
+  mod $9,$7
+  equ $9,0
+  mov $6,$3
+  div $6,$7
+  add $6,$7
+  mul $6,$9
+  add $5,$6
+  sub $7,1
+lpe
+nrt $3,2
+mov $7,$3
+pow $7,2
+sub $7,$8
+equ $7,0
+mul $3,$7
+sub $5,$3
+mov $2,$0
+bxo $2,$4
+mul $2,$5
 mul $1,2
-bor $1,$0
-bxo $1,$0
+bor $1,$2
+bxo $1,$2
+mov $0,$2
 mov $0,$1
 div $0,2

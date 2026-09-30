@@ -1,6 +1,6 @@
 ; A323305: Number of divisors of the number of prime factors of n counted with multiplicity.
 ; 1,1,1,2,1,2,1,2,2,2,1,2,1,2,2,3,1,2,1,2,2,2,1,3,2,2,2,2,1,2,1,2,2,2,2,3,1,2,2,3,1,2,1,2,2,2,1,2,2,2,2,2,1,3,2,3,2,2,1,3,1,2,2,4,2,2,1,2,2,2,1,2,1,2,2,2,2,2,1,2
-; Formula: a(n) = truncate(A001222(n)/(-2*truncate(A001222(n)/2)+A001222(n)+2))+1
+; Formula: a(n) = floor(A001222(n)/(A001222(n)%2+2))+1
 
 #offset 1
 

@@ -1,12 +1,35 @@
 ; A108793: Semiprimes that can be partitioned into a sum of semiprimes in more than one way.
 ; Submitted by DukeBox
 ; 10,14,15,21,22,25,26,33,34,35,38,39,46,49,51,55,57,58,62,65,69,74,77,82,85,86,87,91,93,94,95,106,111,115,118,119,121,122,123,129,133,134,141,142,143,145,146,155,158,159,161,166,169,177,178,183,185,187,194
-; Formula: a(n) = A001358(gcd(0,n+2)+1)
 
 #offset 1
 
 add $0,2
 gcd $1,$0
 add $1,1
-seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
+mov $4,0
+mov $6,0
+mov $3,0
+mov $5,$1
+sub $1,1
+add $5,1
+pow $5,2
+lpb $5
+  max $6,$3
+  add $6,1
+  seq $6,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$6
+  mov $2,$1
+  max $2,0
+  equ $2,$1
+  sub $3,2
+  div $3,4
+  add $4,1
+  mul $5,$2
+  sub $5,1
+  add $3,$4
+lpe
+mov $1,$3
+add $1,1
 mov $0,$1

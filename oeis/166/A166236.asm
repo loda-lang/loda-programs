@@ -7,8 +7,7 @@
 sub $0,1
 mov $1,$0
 lpb $1
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
   mov $3,$1
   mov $1,1

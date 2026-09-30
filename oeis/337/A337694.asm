@@ -20,9 +20,8 @@ lpb $3
   seq $4,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   mul $4,2
   seq $4,64894 ; Binary dilution of n. GCD of exponents in binary expansion of n.
-  sub $4,1
   add $4,$5
-  equ $4,1
+  equ $4,2
   gcd $4,2
   sub $0,$4
   add $0,1

@@ -1,10 +1,11 @@
 ; A354321: Digit above the least significant 01 digit pair in the Zeckendorf representation of n.
 ; Submitted by vonboedefeldt
 ; 0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1,1,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,1
+; Formula: a(n) = floor(if(A087808(A022340(n))==0,0,A087808(A022340(n))/(2^valuation(A087808(A022340(n)),2)))/2)%2
 
 #offset 1
 
-seq $0,22340 ; Even Fibbinary numbers (A003714); also 2*Fibbinary(n).
+seq $0,22340 ; Even Fibbinary numbers (A003714); also a(n) = 2*Fibbinary(n).
 seq $0,87808 ; a(0) = 0; a(2n) = 2a(n), a(2n+1) = a(n) + 1.
 dir $0,2
 div $0,2

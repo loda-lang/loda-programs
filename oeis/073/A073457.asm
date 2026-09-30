@@ -15,8 +15,7 @@ lpb $2
   add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $3,$4
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

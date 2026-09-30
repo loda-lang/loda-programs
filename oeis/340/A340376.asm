@@ -11,7 +11,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  mov $5,$3
+  div $3,2
+  add $3,1
   seq $3,62756 ; Number of 1's in ternary (base-3) expansion of n.
   equ $3,0
   sub $0,$3

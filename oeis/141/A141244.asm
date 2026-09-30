@@ -1,6 +1,7 @@
 ; A141244: Numerators in the expansion of (1-sqrt(1-x^2))/(1-x).
 ; Submitted by Tom Poleski
 ; 0,0,1,1,5,5,11,11,93,93,193,193,793,793,1619,1619,26333,26333,53381,53381,215955,215955,436109,436109,3518265,3518265,7088533,7088533,28539857,28539857,57414019
+; Formula: a(n) = if((2^max(n-1,0)-binomial(max(n-1,0),floor(max(n-1,0)/2)))==0,0,(2^max(n-1,0)-binomial(max(n-1,0),floor(max(n-1,0)/2)))/(2^valuation(2^max(n-1,0)-binomial(max(n-1,0),floor(max(n-1,0)/2)),2)))
 
 trn $0,1
 mov $2,$0

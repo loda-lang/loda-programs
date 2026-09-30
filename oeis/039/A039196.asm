@@ -13,9 +13,8 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    mul $5,3
-    add $5,7
-    mul $5,2
+    mul $5,6
+    add $5,14
     mod $5,11
     seq $5,14026 ; Inverse of 17th cyclotomic polynomial.
     div $3,11

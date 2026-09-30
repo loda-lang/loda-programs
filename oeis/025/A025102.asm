@@ -18,7 +18,7 @@ lpb $0
     mov $7,$4
     trn $7,$10
     add $7,1
-    seq $7,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+    seq $7,140347 ; Duplicate of A002808.
     mov $9,10
     add $9,$5
     min $10,$0

@@ -1,6 +1,6 @@
 ; A394083: Genus of the n-cycle complement graph.
 ; Submitted by Science United
-; 0,0,0,0,1,1,1,3,3,4,6,7
+; 0,0,0,0,1,1,1,3,3,4,6,7,9,11,13,15,17,20,22,25,28,31,35
 ; Formula: a(n) = truncate(bitxor(2,binomial(n-3,2)-1)/7)
 
 #offset 3

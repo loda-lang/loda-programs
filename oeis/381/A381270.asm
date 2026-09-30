@@ -1,7 +1,7 @@
 ; A381270: a(n) = denominator( [x*y*z]^n 1/sqrt((1 - (x + y + z))*(1 - y - z^2)) ).
 ; Submitted by Science United
 ; 1,4,64,64,16384,65536,262144,524288,1073741824,4294967296,68719476736,17179869184,4398046511104,17592186044416,140737488355328,281474976710656,4611686018427387904,18446744073709551616,295147905179352825856,295147905179352825856,75557863725914323419136
-; Formula: a(n) = truncate(truncate(4^(2*n-sumdigits(2*n,2)))/gcd(truncate(4^(2*n-sumdigits(2*n,2))),binomial(3*n,2*n)))
+; Formula: a(n) = floor(if((2*n-sumdigits(2*n,2))<=(-1),0,4^(2*n-sumdigits(2*n,2)))/gcd(if((2*n-sumdigits(2*n,2))<=(-1),0,4^(2*n-sumdigits(2*n,2))),binomial(3*n,2*n)))
 
 mov $3,$0
 mul $3,2

@@ -1,6 +1,7 @@
 ; A129565: A115359 * A000012 as infinite lower triangular matrices.
 ; Submitted by loader3229
 ; 1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1
+; Formula: a(n) = if(((sqrtint(8*n-7)+1)%2)==0,(sqrtint(8*n-7)+1)/2,sqrtint(8*n-7)+1)%2
 
 #offset 1
 

@@ -13,6 +13,5 @@ add $3,1
 div $3,2
 bin $3,2
 sub $0,$3
+min $0,$1
 mov $2,$0
-min $2,$1
-mov $0,$2

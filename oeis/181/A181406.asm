@@ -1,13 +1,42 @@
 ; A181406: Symbolic sequence at the accumulation point of the 3*2^{k} supercycles of unimodal maps.
 ; 1,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1
-; Formula: a(n) = truncate((-1)^sqrtint(2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0)))*((2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0))==(sqrtint(2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0))*(sqrtint(2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0))+1)))-2*truncate((truncate((-1)^sqrtint(2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0)))*((2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0))==(sqrtint(2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0))*(sqrtint(2*max(8*n-truncate((84*A000203(4*n-2)-79)/84)-4,0))+1)))+1)/2)+1
 
 #offset 1
 
 mul $0,4
 sub $0,2
 mov $1,$0
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $8,$0
+sub $8,1
+mov $9,0
+mov $7,$0
+dir $7,2
+mov $12,$7
+mov $11,$7
+nrt $11,2
+lpb $11
+  max $11,1
+  mov $13,$7
+  mod $13,$11
+  equ $13,0
+  mov $10,$7
+  div $10,$11
+  add $10,$11
+  mul $10,$13
+  add $9,$10
+  sub $11,1
+lpe
+nrt $7,2
+mov $11,$7
+pow $11,2
+sub $11,$12
+equ $11,0
+mul $7,$11
+sub $9,$7
+mov $6,$0
+bxo $6,$8
+mul $6,$9
+mov $1,$6
 mul $1,21
 mov $2,3
 mul $2,$1

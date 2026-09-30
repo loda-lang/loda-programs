@@ -13,8 +13,16 @@ lpb $0
   mov $5,$2
   add $5,$7
   mov $8,$5
-  seq $8,97807 ; Riordan array (1/(1+x),1) read by rows.
+  add $8,1
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,4
+  mov $9,$5
+  add $9,$8
   add $5,1
+  mov $8,-1
+  pow $8,$9
   mov $3,$5
   mul $3,8
   nrt $3,2

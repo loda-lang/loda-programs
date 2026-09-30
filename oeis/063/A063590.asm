@@ -9,9 +9,8 @@ pow $3,5
 lpb $3
   mov $4,$2
   add $4,1
+  seq $4,126207 ; Number of 5's in decimal expansion of 5^n.
   mov $1,$4
-  seq $1,126207 ; Number of 5's in decimal expansion of 5^n.
-  mov $4,$1
   gcd $4,$0
   add $2,1
   add $3,$4

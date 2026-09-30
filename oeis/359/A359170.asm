@@ -1,7 +1,7 @@
 ; A359170: a(n) = 1 if n is not a multiple of 3 and has an even number of prime factors (with multiplicity), otherwise a(n) = 0.
 ; Submitted by Kotenok2000
 ; 1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
-; Formula: a(n) = -A001222(n)*(-truncate((-1)^truncate((8*n-11)/3))+truncate((8*n-11)/3)+1)-truncate((-1)^truncate((8*n-11)/3))-2*truncate((-A001222(n)*(-truncate((-1)^truncate((8*n-11)/3))+truncate((8*n-11)/3)+1)-truncate((-1)^truncate((8*n-11)/3))-2*truncate((-A001222(n)*(-truncate((-1)^truncate((8*n-11)/3))+truncate((8*n-11)/3)+1)-truncate((-1)^truncate((8*n-11)/3))+truncate((8*n-11)/3)+1)/2)+truncate((8*n-11)/3)+3)/2)-2*truncate((-A001222(n)*(-truncate((-1)^truncate((8*n-11)/3))+truncate((8*n-11)/3)+1)-truncate((-1)^truncate((8*n-11)/3))+truncate((8*n-11)/3)+1)/2)+truncate((8*n-11)/3)+3
+; Formula: a(n) = (-A001222(n)*(-if(((-1)^2)==1,(-1)^truncate((8*n-11)/3),if(truncate((8*n-11)/3)<=(-1),0,(-1)^truncate((8*n-11)/3)))+truncate((8*n-11)/3)+1)-if(((-1)^2)==1,(-1)^truncate((8*n-11)/3),if(truncate((8*n-11)/3)<=(-1),0,(-1)^truncate((8*n-11)/3)))-2*truncate((-A001222(n)*(-if(((-1)^2)==1,(-1)^truncate((8*n-11)/3),if(truncate((8*n-11)/3)<=(-1),0,(-1)^truncate((8*n-11)/3)))+truncate((8*n-11)/3)+1)-if(((-1)^2)==1,(-1)^truncate((8*n-11)/3),if(truncate((8*n-11)/3)<=(-1),0,(-1)^truncate((8*n-11)/3)))+truncate((8*n-11)/3)+1)/2)+truncate((8*n-11)/3)+3)%2
 
 #offset 1
 

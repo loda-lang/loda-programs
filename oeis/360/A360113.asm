@@ -18,6 +18,5 @@ lpb $2
   add $3,$5
 lpe
 mov $2,$3
-add $2,1
-equ $2,1
+equ $2,0
 mov $0,$2

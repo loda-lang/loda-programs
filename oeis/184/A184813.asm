@@ -16,12 +16,11 @@ lpe
 mov $1,$3
 div $1,3
 add $1,2
+add $1,$0
 mov $2,$1
-add $2,$0
-mov $1,$2
-sub $1,1
 add $0,1
 pow $0,2
+sub $1,1
 mov $4,$0
 mul $4,6
 nrt $4,2

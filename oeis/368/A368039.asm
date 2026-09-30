@@ -1,7 +1,7 @@
 ; A368039: The product of exponents of prime factorization of the nonsquarefree numbers.
 ; Submitted by Lazarus-uk
 ; 2,3,2,2,4,2,2,3,2,3,2,5,4,3,2,2,4,2,2,2,3,3,2,2,6,2,6,2,2,4,4,2,3,2,2,5,2,2,4,3,6,4,2,2,3,2,2,3,2,7,2,3,3,2,8,2,2,2,3,2,2,5,4,2,3,2,2,2,2,4,4,3,2,3,6,4,2,6,2,2
-; Formula: a(n) = A000005(truncate(A013929(n)/gcd(truncate((A013929(n)-1)/A003557(A013929(n)))+A013929(n)+1,A013929(n))))
+; Formula: a(n) = A000005(floor(A013929(n)/gcd(truncate((A013929(n)-1)/A003557(A013929(n)))+A013929(n)+1,A013929(n))))
 
 #offset 1
 

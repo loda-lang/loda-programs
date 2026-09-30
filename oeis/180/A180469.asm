@@ -12,9 +12,9 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
-  mul $3,10
   mov $5,$3
-  mul $3,10
+  mul $5,10
+  mul $3,100
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

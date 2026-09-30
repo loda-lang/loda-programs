@@ -1,20 +1,37 @@
 ; A258399: Number of 4n-length strings of balanced parentheses of exactly n different types that are introduced in ascending order.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,98,11880,2432430,714249900,275335499824,131928199603200,75727786603836510,50713478000403718500,38843740303576863755100,33508462196084294380001040,32157574295254903735909896240,33990046387543889224733323929120,39241208357277246873225696561384000,49136522846349555427278731945996160000,66333303404305747786196150468301173932830,96044476017808512559784466391811975161273620,148478150790916289582356671774335576596244008900,244103501775551586410735246945010587360787043850000
-; Formula: a(n) = truncate(A344397(2*n)/(n!))*floor(binomial(4*n,2*n)/(2*n+1))
 
 mov $1,$0
 mul $1,2
 mov $2,$1
 mov $3,$1
 add $3,1
+mov $7,0
 mul $1,2
 bin $1,$2
 div $1,$3
 mov $4,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mul $4,2
-seq $4,344397 ; a(n) = Stirling2(n, floor(n/2)) * floor(n/2)!.
+mov $5,0
+sub $5,$0
+mov $8,0
+fac $0,$5
+mov $6,$4
+div $6,2
+add $6,1
+lpb $6
+  sub $6,1
+  mov $9,$6
+  pow $9,$4
+  mov $10,-1
+  sub $10,$6
+  bin $10,$8
+  mul $10,$9
+  add $7,$10
+  add $8,1
+lpe
+mov $4,$7
 div $4,$0
 mov $0,$4
 mul $0,$1

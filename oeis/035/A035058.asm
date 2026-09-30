@@ -14,8 +14,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,316864 ; Number of times 3 appears in decimal expansion of n.
-  add $3,2
-  equ $3,2
+  equ $3,0
   add $5,37
   sub $0,$3
   mul $1,2

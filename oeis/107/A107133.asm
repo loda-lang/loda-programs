@@ -9,8 +9,7 @@ sub $0,1
 add $2,7
 pow $2,3
 lpb $2
-  mul $5,0
-  add $5,$1
+  mov $5,$1
   add $5,$1
   add $5,6
   add $3,1

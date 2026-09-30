@@ -14,9 +14,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,2
   mov $5,$0
-  add $0,1
+  sub $5,2
+  sub $0,1
   seq $0,72031 ; Row sums of A072030.
   sub $0,$5
   div $0,2

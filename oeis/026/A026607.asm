@@ -1,7 +1,7 @@
 ; A026607: Delete all 2's from A026600 and then replace each 3 with 2.
 ; Submitted by Science United
 ; 1,2,2,1,2,1,2,1,2,1,1,2,2,1,1,2,2,1,2,1,2,1,1,2,2,1,1,2,2,1,1,2,2,1,2,1,2,1,1,2,2,1,1,2,2,1,2,1,2,1,2,1,1,2,2,1,2,1,1,2,2,1,1,2,2,1,1,2,2,1,2,1,2,1,1,2,2,1,1,2
-; Formula: a(n) = (sumdigits(floor((n-1)/2),3)^2)%3-2*truncate(((sumdigits(floor((n-1)/2),3)^2)%3+n-1)/2)+n
+; Formula: a(n) = ((sumdigits(floor((n-1)/2),3)^2)%3+n-1)%2+1
 
 #offset 1
 

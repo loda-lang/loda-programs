@@ -9,10 +9,16 @@ lpb $0
   add $1,1
   mov $2,$0
   mul $2,2
-  add $2,1
   mov $3,$2
+  add $3,1
+  add $2,2
+  dir $2,2
+  mul $2,-1
+  mov $4,$2
+  mod $2,2
+  sub $2,$4
   add $2,1
-  seq $2,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
+  seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   div $3,$2
   mov $2,$3
   div $2,2

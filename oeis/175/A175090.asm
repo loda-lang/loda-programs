@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,175089 ; Numbers m with result 0 under iterations of {r mod (max prime p <= r)} starting at r = m.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

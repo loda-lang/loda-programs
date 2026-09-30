@@ -4,8 +4,7 @@
 ; Formula: a(n) = -b(n)+d(n), b(n) = truncate((n+1)/gcd(c(n-1),n+1)), b(3) = 2, b(2) = 3, b(1) = 2, b(0) = 0, c(n) = truncate((n+1)/gcd(c(n-1),n+1))*c(n-1), c(3) = 12, c(2) = 6, c(1) = 2, c(0) = 1, d(n) = d(n-1), d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 1
 
 mov $2,1
-mov $3,1
-mov $4,1
+fil $2,3
 lpb $0
   sub $0,1
   mov $5,$2

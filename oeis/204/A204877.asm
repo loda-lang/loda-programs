@@ -9,6 +9,5 @@ mov $1,$2
 mod $1,4
 mul $2,$1
 mul $1,$2
-add $1,5
-trn $1,5
+max $1,0
 mov $0,$1

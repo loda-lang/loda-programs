@@ -7,8 +7,7 @@
 
 mov $1,$0
 mov $2,$0
+seq $0,6005 ; The odd prime numbers together with 1.
 mov $3,$0
-seq $3,6005 ; The odd prime numbers together with 1.
-mov $0,$3
 pow $0,$1
 mod $0,$2

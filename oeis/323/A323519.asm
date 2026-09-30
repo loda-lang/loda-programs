@@ -1,7 +1,7 @@
 ; A323519: a(n) is the number of ways to fill a square matrix with the multiset of prime factors of n, if the number of prime factors (counted with multiplicity) is a perfect square, and a(n) = 0 otherwise.
 ; Submitted by Orange Kid
 ; 1,1,1,0,1,0,1,0,0,0,1,0,1,0,0,1,1,0,1,0,0,0,1,4,0,0,0,0,1,0,1,0,0,0,0,6,1,0,0,4,1,0,1,0,0,0,1,0,0,0,0,0,1,4,0,4,0,0,1,12,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
-; Formula: a(n) = A008480(n)*(-2*truncate((truncate(A001222(n)/(-2*truncate(A001222(n)/2)+A001222(n)+2))+1)/2)+truncate(A001222(n)/(-2*truncate(A001222(n)/2)+A001222(n)+2))+1)
+; Formula: a(n) = A008480(n)*((floor(A001222(n)/(A001222(n)%2+2))+1)%2)
 
 #offset 1
 

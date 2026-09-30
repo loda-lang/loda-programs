@@ -11,6 +11,6 @@ lpb $0
 lpe
 add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $0,110963 ; Fractalization of Kimberling's paraphrases sequence beginning with 1.
+seq $0,110963 ; Fractalization of Kimberling's paraphrase of the binary number system beginning with 1.
 mul $0,2
 sub $0,1

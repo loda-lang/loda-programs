@@ -1,7 +1,7 @@
 ; A155997: Triangle read by rows: T(n, k) = f(n, k) + f(n, n-k), where f(n, k) = binomial(n, k)*(1 + (-1)^k)/2.
 ; Submitted by loader3229
 ; 2,1,1,2,0,2,1,3,3,1,2,0,12,0,2,1,5,10,10,5,1,2,0,30,0,30,0,2,1,7,21,35,35,21,7,1,2,0,56,0,140,0,56,0,2,1,9,36,84,126,126,84,36,9,1,2,0,90,0,420,0,420,0,90,0,2,1,11,55,165,330,462,462,330,165,55,11,1,2,0
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(if(1==1,(-1)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n),if((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,(-1)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)))-2*truncate((truncate((sqrtint(8*n+8)-1)/2)+1)/2)+truncate((sqrtint(8*n+8)-1)/2)+1)*if(1==1,(-1)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n),if((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,(-1)^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)))
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*(if(((-1)^2)==1,(-1)^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n),if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,(-1)^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)))+(floor((sqrtint(8*n+8)-1)/2)+1)%2)*if(((-1)^2)==1,(-1)^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n),if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,(-1)^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)))
 
 mov $2,$0
 add $0,1

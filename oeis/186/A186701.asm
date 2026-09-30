@@ -14,10 +14,8 @@ lpb $4
   sub $0,$4
   add $0,1
   seq $0,6577 ; Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
-  add $0,1
   mov $2,$0
-  sub $0,1
-  add $2,8
+  add $2,9
   lpb $2
     mov $2,8
     add $0,1

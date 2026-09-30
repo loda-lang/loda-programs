@@ -1,7 +1,7 @@
 ; A353491: a(1) = 1, and for n > 1, a(n) = 1 if the largest proper divisor of n is of the form 4k+1, otherwise 0.
 ; Submitted by Mumps
 ; 1,1,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,1,1,0,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,0,1,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0
-; Formula: a(n) = -2*truncate((truncate(((A032742(n)+3)^2-5)/4)-1)/2)+truncate(((A032742(n)+3)^2-5)/4)-1
+; Formula: a(n) = (floor(((A032742(n)+3)^2-5)/4)-1)%2
 
 #offset 1
 

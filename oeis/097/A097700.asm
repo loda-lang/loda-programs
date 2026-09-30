@@ -14,10 +14,9 @@ lpb $2
   add $1,1
   add $3,1
   seq $3,2325 ; Glaisher's J numbers.
-  sub $3,1
   sub $3,$5
   add $3,$1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0

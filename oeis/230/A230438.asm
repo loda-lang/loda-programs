@@ -1,7 +1,7 @@
 ; A230438: Decimal expansion of the proton mass energy equivalent in Joules.
 ; Submitted by Goldislops
 ; 1,5,0,3,2,7,7,6,1
-; Formula: a(n) = -truncate(binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)/8)-10*truncate((-truncate(binomial(2*truncate((sqrtint(8*n+80)-1)/2)+3,3)/8)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+1)/10)+binomial(3*truncate((sqrtint(8*n+80)-1)/2)-n-4,3)+1
+; Formula: a(n) = -floor(binomial(2*floor((sqrtint(8*n+80)-1)/2)+3,3)/8)-10*truncate((-floor(binomial(2*floor((sqrtint(8*n+80)-1)/2)+3,3)/8)+binomial(3*floor((sqrtint(8*n+80)-1)/2)-n-4,3)+1)/10)+binomial(3*floor((sqrtint(8*n+80)-1)/2)-n-4,3)+1
 
 #offset -9
 

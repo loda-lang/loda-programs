@@ -5,5 +5,5 @@
 
 #offset 2
 
-seq $0,328803 ; The minimum value of j + k where j and k are positive integers with j^2 + k^2 = A001481(n).
+seq $0,328803 ; The minimum value of j + k where j and k are nonnegative integers with j^2 + k^2 = A001481(n).
 add $0,1

@@ -1,6 +1,7 @@
 ; A259705: Row sums of A259704.
 ; Submitted by Science United
 ; 0,0,2,8,80,480,5040,40320
+; Formula: a(n) = floor((floor((n-2)/2)*(n-1)!)/3)
 
 #offset 2
 

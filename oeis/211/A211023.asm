@@ -6,6 +6,5 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
+seq $0,211011 ; Value on the axis "y" of the endpoint of the structure (or curve) of A211000 at n-th stage.
 mov $1,$0
-seq $1,211011 ; Value on the axis "y" of the endpoint of the structure (or curve) of A211000 at n-th stage.
-mov $0,$1

@@ -12,6 +12,5 @@ seq $0,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
 add $0,$3
 gcd $3,$0
 div $0,$3
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

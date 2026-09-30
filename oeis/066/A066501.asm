@@ -11,8 +11,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,319100 ; Number of solutions to x^6 == 1 (mod n).
-  sub $3,2
-  trn $3,1
+  trn $3,3
   gcd $3,2
   sub $0,$3
   add $0,1

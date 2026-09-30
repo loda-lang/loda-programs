@@ -54,9 +54,8 @@ lpb $2
   add $17,1
   div $17,2
   pow $17,2
+  div $3,$17
   mov $16,$3
-  div $16,$17
-  mov $3,$16
   add $3,1
   pow $3,3
   mov $6,$3

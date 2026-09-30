@@ -4,9 +4,8 @@
 
 #offset 1
 
+seq $0,25619 ; Numbers of form 4^i*7^j, with i, j >= 0.
 mov $2,$0
-seq $2,25619 ; Numbers of form 4^i*7^j, with i, j >= 0.
-mov $0,$2
 lpb $0
   dif $0,2
   add $1,1

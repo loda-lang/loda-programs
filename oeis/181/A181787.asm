@@ -4,8 +4,22 @@
 
 dif $0,2
 pow $0,2
+mov $4,0
+mov $6,0
+mov $7,0
 mov $1,$0
-seq $1,63691 ; Number of solutions to x^2 + y^2 + z^2 = n in positive integers.
+lpb $1
+  add $6,1
+  sub $1,$6
+  mov $5,$1
+  max $5,0
+  seq $5,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
+  mov $6,2
+  add $6,$7
+  add $4,$5
+  add $7,2
+lpe
+mov $1,$4
 mul $1,2
 add $2,$1
 add $3,$2

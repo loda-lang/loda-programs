@@ -12,7 +12,7 @@ lpb $0
   add $3,1
   mov $2,$0
   add $2,1
-  seq $2,1462 ; Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
+  seq $2,1462 ; Golomb's sequence: a(n) is the number of times n occurs in the sequence, starting with a(1) = 1.
   mul $2,$3
   add $1,$2
 lpe

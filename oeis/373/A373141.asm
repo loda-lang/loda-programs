@@ -1,6 +1,7 @@
 ; A373141: a(n) = 1 if A276085(n) is of the form 4m+2, otherwise 0, where A276085 is the primorial base log-function.
 ; Submitted by crashtech
 ; 0,0,1,1,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1
+; Formula: a(n) = (floor(n/gcd(A003415(n),n))*if((A003415(n)%gcd(A003415(n),n))==0,A003415(n)/gcd(A003415(n),n),A003415(n)))%2
 
 #offset 1
 

@@ -4,8 +4,7 @@
 
 #offset 1
 
-sub $0,1
-trn $0,1
+trn $0,2
 mov $4,0
 mov $5,0
 mov $1,$0

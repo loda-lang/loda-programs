@@ -18,8 +18,7 @@ mul $5,2
 mul $4,$1
 div $4,$5
 add $4,5
+add $0,$4
 mov $2,$0
-add $2,$4
-mov $0,$2
 div $0,2
 sub $0,2

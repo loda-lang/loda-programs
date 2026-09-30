@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,61020 ; Negate primes in factorizations of divisors of n, then sum.
 add $0,$1
 add $0,1

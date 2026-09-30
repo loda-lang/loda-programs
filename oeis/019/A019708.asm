@@ -27,7 +27,6 @@ div $0,36
 mov $1,$0
 nrt $1,2
 sub $1,$0
+add $0,$1
 mov $2,$0
-add $2,$1
-mov $0,$2
 mod $0,10

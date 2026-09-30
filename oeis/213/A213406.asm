@@ -15,7 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
-    seq $7,187366 ; One half of a trisection of A001700: binomial(6n+5,3(n+1))/2, n>=0.
+    seq $7,187366 ; One half of a trisection of A001700: binomial(6n+5,3(n+1))/2, n >= 0.
     mul $7,4
     mul $7,$$9
     add $5,1

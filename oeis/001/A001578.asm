@@ -7,8 +7,7 @@
 
 mov $1,$0
 seq $1,61446 ; Primitive part of Fibonacci(n).
-sub $0,1
-trn $0,1
+trn $0,2
 mov $2,1
 fac $2,$0
 mov $0,$2

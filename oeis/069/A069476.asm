@@ -4,7 +4,6 @@
 ; Formula: a(n) = 720*n+1800
 
 mul $0,10
+add $0,25
 mov $1,$0
-add $1,25
-mov $0,$1
 mul $0,72

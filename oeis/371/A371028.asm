@@ -13,7 +13,22 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,370983 ; Triangle read by rows: T(n, k) = (n + k - 1)! / (k!*(n - k)!) if k > 0 and T(n, 0) = 0^n.
+  mov $5,$0
+  mul $0,8
+  nrt $0,2
+  sub $0,1
+  div $0,2
+  mov $4,$0
+  add $4,1
+  mov $6,$4
+  bin $4,2
+  sub $5,$4
+  mov $7,1
+  sub $7,$5
+  mul $7,-1
+  fac $6,$7
+  bin $0,$5
+  mul $0,$6
   add $1,$0
 lpe
 mov $0,$1

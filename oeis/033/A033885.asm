@@ -1,18 +1,47 @@
 ; A033885: a(n) = 3*n - sum of divisors of n.
 ; Submitted by shiva
 ; 2,3,5,5,9,6,13,9,14,12,21,8,25,18,21,17,33,15,37,18,31,30,45,12,44,36,41,28,57,18,61,33,51,48,57,17,73,54,61,30,81,30,85,48,57,66,93,20,90,57,81,58,105,42,93,48,91,84,117,12,121,90,85,65,111,54,133,78,111,66,141,21,145,108,101,88,135,66,157,54
-; Formula: a(n) = -A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)+3*n
 
 #offset 1
 
 mov $3,$0
 sub $3,1
+mov $7,0
 mov $2,$0
 dir $2,2
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $6,$2
+sub $6,1
+mov $5,$2
+dir $5,2
+mov $10,$5
+mov $9,$5
+nrt $9,2
+lpb $9
+  max $9,1
+  mov $11,$5
+  mod $11,$9
+  equ $11,0
+  mov $8,$5
+  div $8,$9
+  add $8,$9
+  mul $8,$11
+  add $7,$8
+  sub $9,1
+lpe
+nrt $5,2
+mov $9,$5
+pow $9,2
+sub $9,$10
+equ $9,0
+mul $5,$9
+sub $7,$5
+mov $4,$2
+bxo $4,$6
+mul $4,$7
 mov $1,$0
 bxo $1,$3
-mul $1,$2
+mul $1,$4
 sub $1,$0
+mov $2,$4
 mul $0,2
 sub $0,$1

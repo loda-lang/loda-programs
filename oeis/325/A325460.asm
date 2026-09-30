@@ -8,9 +8,8 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  add $5,1
   mov $3,$5
-  add $3,1
-  mov $5,$3
   seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
   mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).

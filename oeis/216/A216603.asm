@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-add $1,1001
+add $1,1000
 lpb $1
   div $1,10
   add $1,$0

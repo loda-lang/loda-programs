@@ -1,7 +1,7 @@
 ; A036577: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 ; Submitted by Science United
 ; 2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,2,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,0,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,2,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,0
-; Formula: a(n) = sumdigits(2*n,2)%2+sumdigits(2*n-1,2)*sign(2*n-1)-2*truncate((sumdigits(2*n-1,2)*sign(2*n-1))/2)
+; Formula: a(n) = sumdigits(2*n,2)%2+sumdigits(2*n-1,2)%2
 
 #offset 1
 

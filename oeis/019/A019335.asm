@@ -9,10 +9,10 @@ mov $2,$0
 pow $2,5
 lpb $2
   sub $2,1
+  mov $4,$1
+  add $4,1
   mov $3,$1
-  add $3,1
-  mov $4,$3
-  add $3,1
+  add $3,2
   seq $3,70677 ; Smallest m in range 1..phi(n) such that 5^m == 1 mod n, or 0 if no such number exists.
   div $3,$4
   sub $0,$3

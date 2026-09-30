@@ -11,8 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$5
   add $0,$2
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $3,$0
   add $0,1
   seq $0,3592 ; Numbers of the form 2^i*5^j with i, j >= 0.

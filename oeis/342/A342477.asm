@@ -1,7 +1,7 @@
 ; A342477: The squarefree part of the powerful numbers: a(n) = A007913(A001694(n)).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,1,1,1,3,2,1,1,1,2,1,1,3,1,5,2,1,1,1,2,6,1,3,1,2,1,1,7,1,2,1,3,1,1,5,2,1,1,1,2,3,1,1,1,2,1,6,1,1,2,3,10,1,1,5,2,1,1,1,3,11,2,1,7,1,1,2,1,1,3,1,2,1,1,6,5,1,2
-; Formula: a(n) = truncate((A001694(n)-1)/(truncate(sqrtint(4*(truncate(max(0,A001694(n)-1)/A019554(max(0,A001694(n)-1)+1))+1)^2)/2)^2))+1
+; Formula: a(n) = floor((A001694(n)-1)/(floor(sqrtint(4*(floor(max(0,A001694(n)-1)/A019554(max(0,A001694(n)-1)+1))+1)^2)/2)^2))+1
 
 #offset 1
 
@@ -19,7 +19,6 @@ mul $2,4
 nrt $2,2
 div $2,2
 pow $2,2
+div $0,$2
 mov $1,$0
-div $1,$2
-mov $0,$1
 add $0,1

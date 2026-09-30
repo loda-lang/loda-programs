@@ -10,8 +10,11 @@ pow $2,3
 lpb $2
   sub $2,1
   add $1,1
+  mov $4,$1
+  div $4,2
   mov $3,$1
-  seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  bxo $3,$4
+  dgs $3,2
   sub $0,$3
   sub $2,$0
 lpe

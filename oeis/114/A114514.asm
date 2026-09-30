@@ -1,5 +1,6 @@
 ; A114514: The digits on a numerical pad from upper left to lower right.
 ; 7,8,9,4,5,6,1,2,3,0
+; Formula: a(n) = if((((3*n)^3)%2)==0,((3*n)^3)/2,(3*n)^3)%10
 
 #offset 1
 

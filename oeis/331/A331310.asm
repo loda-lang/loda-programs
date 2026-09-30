@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,293442 ; Multiplicative with a(p^e) = A019565(e).
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

@@ -4,9 +4,9 @@
 
 pow $0,2
 lpb $0
-  sub $0,1
   mov $3,$0
-  equ $3,0
+  equ $3,1
+  sub $0,1
   mov $2,$0
   add $2,$3
   pow $0,2

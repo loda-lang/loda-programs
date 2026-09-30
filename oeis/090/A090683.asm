@@ -1,7 +1,6 @@
 ; A090683: Triangle read by rows, defined by T(n,k) = C(n,k)*S2(n,k), 0 <= k <= n, where C(n,k) are the binomial coefficients and S2(n,k) are the Stirling numbers of the second kind.
 ; Submitted by KetamiNO [YouTube]
 ; 1,0,1,0,2,1,0,3,9,1,0,4,42,24,1,0,5,150,250,50,1,0,6,465,1800,975,90,1,0,7,1323,10535,12250,2940,147,1,0,8,3556,54096,119070,58800,7448,224,1,0,9,9180,254100,979020,875826,222264,16632,324,1,0,10,22995,1119600,7162050,10716300,4793670,705600,33750,450,1,0,11,56265,4702665,48097500,113989260,82922994,21115710,1960200,63525,605,1,0,12
-; Formula: a(n) = truncate(A090657(n)/((-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)!))
 
 mov $3,$0
 mul $3,8
@@ -12,8 +11,54 @@ div $3,2
 bin $3,2
 mov $2,$0
 sub $2,$3
-seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,0
+sub $4,$2
+mov $5,$0
+add $5,1
+mov $6,$5
+mov $12,0
+mov $13,0
+fac $2,$4
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $7,$5
+add $7,1
+bin $7,2
+sub $6,$7
+sub $6,1
+mov $14,0
+bin $5,$6
+mov $10,0
 mov $1,$0
-seq $1,90657 ; Triangle read by rows: T(n,k) = number of functions from [1,2,...,n] to [1,2,...,n] such that the image contains exactly k elements (0<=k<=n).
+add $1,1
+mov $8,$1
+mul $8,8
+nrt $8,2
+sub $8,1
+div $8,2
+mov $9,$8
+add $9,1
+bin $9,2
+sub $1,$9
+mov $9,$1
+mov $1,$8
+mov $8,$9
+lpb $8
+  sub $8,1
+  mov $11,$8
+  pow $11,$1
+  sub $12,$14
+  sub $12,$8
+  bin $12,$10
+  mul $12,$11
+  add $13,$12
+  mov $14,1
+  add $10,1
+  mov $12,0
+lpe
+mov $1,$13
+mul $1,$5
 div $1,$2
 mov $0,$1

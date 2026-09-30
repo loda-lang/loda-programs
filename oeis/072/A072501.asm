@@ -13,7 +13,7 @@ lpb $0
   add $3,$2
   equ $3,$2
   lpb $3
-    mul $3,0
+    mov $3,0
     mul $1,$0
     div $1,$2
     mul $1,$0

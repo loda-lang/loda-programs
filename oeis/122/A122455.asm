@@ -23,7 +23,9 @@ lpb $2
   bin $4,2
   mov $5,$0
   sub $5,$4
-  seq $5,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $7,0
+  sub $7,$5
+  fac $5,$7
   mov $6,$0
   seq $6,90657 ; Triangle read by rows: T(n,k) = number of functions from [1,2,...,n] to [1,2,...,n] such that the image contains exactly k elements (0<=k<=n).
   div $6,$5

@@ -7,5 +7,5 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-seq $1,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+seq $1,712 ; a(n) = number of partitions of n into parts of 2 kinds.
 mov $0,$1

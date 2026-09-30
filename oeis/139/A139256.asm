@@ -1,7 +1,7 @@
 ; A139256: Twice even perfect numbers. Also a(n) = M(n)*(M(n)+1), where M(n) is the n-th Mersenne prime A000668(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 12,56,992,16256,67100672,17179738112,274877382656,4611686016279904256,5316911983139663489309385231907684352,383123885216472214589586756168607276261994643096338432
-; Formula: a(n) = 4*floor(binomial(truncate(2^A139421(A019280(n)+1)),2)/2)
+; Formula: a(n) = 4*floor(binomial(if(A139421(A019280(n)+1)<=(-1),0,2^A139421(A019280(n)+1)),2)/2)
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A190224: a(n) = [n*u + n*v] - [n*u] - [n*v], where u=sin(Pi/3), v=cos(Pi/3), and []=floor.
 ; Submitted by tomkalei
 ; 1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0
-; Formula: a(n) = n*sqrtint(3*n^2)-2*truncate((n*sqrtint(3*n^2))/2)
+; Formula: a(n) = (n*sqrtint(3*n^2))%2
 
 #offset 1
 

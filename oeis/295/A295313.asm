@@ -9,6 +9,5 @@ seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(
 mov $2,$0
 seq $2,62570 ; a(n) = phi(2*n).
 dif $2,2
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

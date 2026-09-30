@@ -12,7 +12,13 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,195508 ; Number of iterations in a Draim factorization of 2n+1.
+  mov $6,$0
+  add $0,$6
+  add $0,1
+  seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  sub $0,3
+  div $0,2
+  add $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2

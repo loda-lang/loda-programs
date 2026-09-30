@@ -4,7 +4,21 @@
 
 #offset 1
 
-seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+mov $4,$0
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
+mov $3,$0
+bin $0,2
+sub $4,$0
+mov $6,$3
+div $6,$4
+mov $5,$3
+mod $5,$4
+equ $5,0
+mul $5,$6
+mov $0,$5
 mul $0,2
 mov $2,$0
 sub $0,1

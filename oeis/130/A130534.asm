@@ -23,6 +23,7 @@ lpb $2
   mul $7,5
   gcd $7,0
   div $7,5
+  mov $15,229383
   add $3,1
   mov $5,$3
   bin $5,2
@@ -38,10 +39,14 @@ lpb $2
   bin $9,2
   sub $8,$9
   sub $8,1
+  mov $10,1
+  mov $12,1
   bin $5,$8
+  mov $11,1
+  mov $13,9
+  mov $14,0
   mov $4,2
-  seq $4,127568 ; Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
-  mul $4,$7
+  mov $4,$7
   mul $4,$5
   add $6,$4
 lpe

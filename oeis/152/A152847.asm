@@ -1,4 +1,4 @@
-; A152847: Triangle read by rows, A007318 rows repeated nine times .
+; A152847: Triangle read by rows, A007318 rows repeated nine times.
 ; Submitted by Kotenok2000
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,3,3,1,1,3,3,1,1,3,3,1,1,3,3,1,1,3,3,1,1,3,3,1,1,3
 

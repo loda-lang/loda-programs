@@ -1,7 +1,7 @@
 ; A194032: Natural interspersion of the squares (1,4,9,16,25,...), a rectangular array, by antidiagonals.
 ; Submitted by loader3229
-; 1,4,2,9,5,3,16,10,6,7,25,17,11,12,8,36,26,18,19,13,14,49,37,27,28,20,21,15,64,50,38,39,29,30,22,23,81,65,51,52,40,41,31,32,24,100,82,66,67,53,54,42,43,33,34,121,101,83,84,68,69,55,56,44,45
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate((sqrtint(8*n)-1)/2)+n-2)/2)^2-truncate((2*truncate((sqrtint(8*n)-1)/2))/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate((sqrtint(8*n)-1)/2)+n-2))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate((sqrtint(8*n)-1)/2)+n-2)+2*truncate((sqrtint(8*n)-1)/2)+1
+; 1,4,2,9,5,3,16,10,6,7,25,17,11,12,8,36,26,18,19,13,14,49,37,27,28,20,21,15,64,50,38,39,29,30,22,23,81,65,51,52,40,41,31,32,24,100,82,66,67,53,54,42,43,33,34,121,101,83,84,68,69,55,56,44,45,35,144,122,102,103,85,86,70,71,57,58,46,47,169,145
+; Formula: a(n) = truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2*floor((sqrtint(8*n)-1)/2)+n-2)/2)^2-truncate((2*floor((sqrtint(8*n)-1)/2))/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2*floor((sqrtint(8*n)-1)/2)+n-2))*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2*floor((sqrtint(8*n)-1)/2)+n-2)+2*floor((sqrtint(8*n)-1)/2)+1
 
 #offset 1
 

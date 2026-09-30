@@ -6,9 +6,8 @@
 sub $0,1
 mov $1,$0
 lpb $1
+  trn $1,7
   mod $0,7
   mul $0,24
-  sub $1,1
-  trn $1,6
 lpe
 div $0,24

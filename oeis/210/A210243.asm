@@ -1,6 +1,7 @@
 ; A210243: Hanoi solutions (odd), the disks are moved from pillar 1 to pillar 3. For disks = 2k+1 use the first 2^(2k+2)-2 number pairs.
 ; Submitted by mikey
 ; 1,3,1,2,3,2,1,3,2,1,2,3,1,3,1,2,3,2,3,1,2,1,3,2,1,3,1,2,3,2,1,3,2,1,2,3,1,3,2,1,3,2,3,1,2,1,2,3,1,3,1,2,3,2,1,3,2,1,2,3,1,3,1,2,3,2,3,1,2,1,3,2,1,3,1,2,3,2,3,1
+; Formula: a(n) = (2*gcd(64,if(((n-1)%2)==0,(n-1)/2,n-1)+1)+floor((n-1)/2)+4)%3+1
 
 #offset 1
 

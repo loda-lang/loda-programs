@@ -15,8 +15,7 @@ lpb $3
   mov $1,$2
   pow $1,2
   seq $1,43537 ; Number of distinct base-10 digits of n.
-  sub $1,1
-  equ $1,4
+  equ $1,5
   sub $0,$1
   add $2,1
   sub $3,$0

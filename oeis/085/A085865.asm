@@ -1,4 +1,4 @@
-; A085865: a(1) = 2, a(n+1) = a(n)*{sigma(a(n))}, where sigma(n) is the sum of the divisors function.
+; A085865: a(1) = 2, a(n+1) = a(n)*sigma(a(n)), where sigma(n) is the sum of the divisors function.
 ; Submitted by ThrasherX-17
 ; 2,6,72,14040,707616000,2299654269739008000,25353370781704805143366427867873280000,3361021040447648920437074194752848938805829494939344230020451929790873600000
 

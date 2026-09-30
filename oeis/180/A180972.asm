@@ -1,7 +1,7 @@
 ; A180972: Numbers n such that 8^9 + n^2 is a square.
 ; Submitted by loader3229
 ; 4096,14336,31744,65024,130816,262016,524224,1048544,2097136,4194296,8388604,16777214,33554431
-; Formula: a(n) = truncate((truncate(2^(-n+17))*(2^(2*n)-2))/32)
+; Formula: a(n) = floor(((2^(2*n)-2)*if((-n+17)<=(-1),0,2^(-n+17)))/32)
 
 #offset 1
 

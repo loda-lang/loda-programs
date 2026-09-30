@@ -11,8 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $8,$4
-    sub $8,1
-    trn $8,1
+    trn $8,2
     seq $8,259688 ; Related to Euler numbers, expansion of e.g.f. tan(x)^2.
     mov $9,10
     add $9,$5

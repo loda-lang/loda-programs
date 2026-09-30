@@ -1,7 +1,7 @@
 ; A364652: Lower independence number of the n-Lucas cube graph.
 ; Submitted by KetamiNO [YouTube]
 ; 1,1,1,3,4,5,8,11,17,24,35
-; Formula: a(n) = 2*truncate((sqrtint(8*n)-1)/4)-truncate(binomial(n-1,3)/(-4))+1
+; Formula: a(n) = 2*floor((sqrtint(8*n)-1)/4)-truncate(binomial(n-1,3)/(-4))+1
 
 #offset 1
 

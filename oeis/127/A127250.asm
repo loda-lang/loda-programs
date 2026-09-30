@@ -1,6 +1,7 @@
 ; A127250: Sequence consisting of 1,3 or 5 with 3's occurring at the odious indices given by A091855 and 5's occurring at twice these odious indices.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,3,5,1,3,1,1,3,5,1,1,3,1,3,5,1,3,1,1,3,1,3,5,1,1,3,5,1,3,1,1,3,5,1,1,3,1,3,5,1,1,3,5,1,3,1,1,3,1,3,5,1,3,1,1,3,5,1,1,3,1,3,5,1,3,1,1,3,1,3,5,1,1,3,5,1,3,1,1,3
+; Formula: a(n) = 2*sign(if((2*n)==0,0,if((gcd(sumdigits(n,2)-1,2)^2)<=1,0,valuation(2*n,gcd(sumdigits(n,2)-1,2)))))*((if((2*n)==0,0,if((gcd(sumdigits(n,2)-1,2)^2)<=1,0,valuation(2*n,gcd(sumdigits(n,2)-1,2))))-1)%2+1)+1
 
 mov $1,$0
 add $1,$0

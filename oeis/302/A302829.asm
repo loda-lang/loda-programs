@@ -23,7 +23,6 @@ lpb $5
   sub $5,1
 lpe
 sub $0,3
+sub $0,$3
 mov $1,$0
-sub $1,$3
-mov $0,$1
 mul $0,4

@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,33715 ; Number of integer solutions (x, y) to the equation x^2 + 2y^2 = n.
+sub $1,1
 bin $1,2
 lpb $1
   sub $1,11

@@ -8,7 +8,6 @@
 mov $1,$0
 nrt $1,2
 div $0,2
+nrt $0,2
 mov $2,$0
-nrt $2,2
-mov $0,$2
 add $0,$1

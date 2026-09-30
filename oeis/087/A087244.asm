@@ -20,7 +20,7 @@ lpb $2
   seq $5,181434 ; First column in matrix inverse of a mixed convolution of A052542.
   add $5,1
   mul $5,$3
-  pow $3,0
+  mov $3,1
   sub $3,$5
   equ $3,0
   sub $0,$3

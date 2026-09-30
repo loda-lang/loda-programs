@@ -12,7 +12,10 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,11592 ; Legendre symbol (n,47).
+  pow $3,23
+  add $3,1
+  mod $3,47
+  sub $3,1
   bin $3,2
   sub $0,$3
   mov $4,$0

@@ -15,8 +15,7 @@ lpb $2
   seq $3,6005 ; The odd prime numbers together with 1.
   mul $3,-2
   mov $5,$1
-  trn $5,1
-  add $5,1
+  max $5,1
   seq $5,40 ; The prime numbers.
   sub $5,$3
   mov $3,$5

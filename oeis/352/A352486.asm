@@ -18,8 +18,7 @@ lpb $2
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mov $3,$1
   sub $3,$5
-  add $3,2
-  neq $3,0
+  neq $3,-2
   sub $0,$3
   mov $4,$0
   max $4,0

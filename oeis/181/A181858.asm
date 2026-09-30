@@ -1,6 +1,7 @@
 ; A181858: a(n) = lcm(n^2, n!) / lcm(n^2, swinging_factorial(n)).
 ; Submitted by loader3229
 ; 1,1,1,1,1,4,4,36,18,64,576,14400,43200,518400,518400,5080320,12700800,1625702400,1625702400,131681894400,131681894400,627056640000,13168189440000,1593350922240000
+; Formula: a(n) = floor((n!)/gcd(truncate((binomial(n,floor(n/2))*binomial(-floor(n/2)+n,floor(n/2))*n^2)/gcd(n^2,binomial(n,floor(n/2))*binomial(-floor(n/2)+n,floor(n/2)))),n!))
 
 mov $6,$0
 div $6,2

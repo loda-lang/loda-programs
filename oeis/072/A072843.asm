@@ -4,6 +4,5 @@
 ; Formula: a(n) = A246850(n+3)
 
 add $0,3
+seq $0,246850 ; Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
 mov $1,$0
-seq $1,246850 ; Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
-mov $0,$1

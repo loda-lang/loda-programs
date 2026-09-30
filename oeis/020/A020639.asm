@@ -4,10 +4,9 @@
 
 #offset 1
 
-trn $2,$0
-add $2,$0
 mov $4,1
 mov $5,2
+max $2,$0
 lpb $2
   mov $6,$2
   lpb $6
@@ -22,6 +21,5 @@ lpb $2
     max $4,$2
   lpe
 lpe
+div $0,$4
 mov $3,$0
-div $3,$4
-mov $0,$3

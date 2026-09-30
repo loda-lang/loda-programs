@@ -15,9 +15,8 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,355297 ; a(n) = A007088(n) mod n.
+  gcd $3,$6
   mov $5,$3
-  gcd $5,$6
-  mov $3,$5
   div $3,2
   min $3,1
   sub $0,$3

@@ -1,7 +1,7 @@
 ; A353811: a(n) = 1 if sigma(n) is odd, and has an odd number of prime factors (with multiplicity), otherwise 0. Here sigma is the sum of divisors function.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate(A001222(truncate(A000203(n)^A000203(n)))/2)+A001222(truncate(A000203(n)^A000203(n)))
+; Formula: a(n) = A001222(if((A000203(n)^2)==1,A000203(n)^A000203(n),if(A000203(n)<=(-1),0,A000203(n)^A000203(n))))%2
 
 #offset 1
 

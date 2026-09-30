@@ -9,7 +9,6 @@ mov $0,$1
 mul $0,11
 sub $0,12
 mul $0,$1
-add $0,4
-trn $0,15
+trn $0,11
 div $0,3
 add $0,1

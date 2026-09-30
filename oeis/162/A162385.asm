@@ -1,7 +1,7 @@
 ; A162385: Alternating sum from the n-th Mersenne prime up to the n-th perfect number.
 ; Submitted by Science United
 ; 2,11,233,4001,16771073,4294868993,68719083521,1152921502996234241,1329227995784915871174424803370074113,95780971304118053647396688732666809244153592049303553
-; Formula: a(n) = truncate((4*binomial(truncate(2^A139421(A019280(n)+1))-1,2)-12)/8)+2
+; Formula: a(n) = truncate((4*binomial(if(A139421(A019280(n)+1)<=(-1),0,2^A139421(A019280(n)+1))-1,2)-12)/8)+2
 
 #offset 1
 

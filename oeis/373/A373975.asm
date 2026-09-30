@@ -1,7 +1,7 @@
 ; A373975: a(n) = 1 if the number of prime factors with multiplicity is a multiple of 3, otherwise 0.
 ; Submitted by Jerzy_Przytocki
 ; 1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,0,0,0,1,1,0,1,0,0
-; Formula: a(n) = truncate(gcd(A001222(n),3)/2)
+; Formula: a(n) = floor(gcd(A001222(n),3)/2)
 
 #offset 1
 

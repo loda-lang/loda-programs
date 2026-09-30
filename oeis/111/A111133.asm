@@ -5,8 +5,7 @@
 
 seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
 add $0,1
+mul $0,4
 mov $1,$0
-mul $1,4
-mov $0,$1
 sub $0,8
 div $0,4

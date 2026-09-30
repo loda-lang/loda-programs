@@ -8,8 +8,7 @@
 mul $0,2
 seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
 add $0,1
+min $0,1
 mov $1,$0
-min $1,1
-mov $0,$1
 add $0,1
 mod $0,2

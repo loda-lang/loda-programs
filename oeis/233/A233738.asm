@@ -4,10 +4,10 @@
 ; Formula: a(n) = floor((4*binomial(5*n+10,n))/(2*n+4))
 
 add $0,2
-mov $2,$0
-mul $0,2
 mov $1,$0
-mul $0,3
+mul $1,2
+mov $2,$0
+mul $0,6
 sub $0,$2
 sub $2,2
 bin $0,$2

@@ -5,8 +5,7 @@
 
 #offset 1
 
+seq $0,202116 ; Numbers k such that 90*k + 89 is prime.
 mov $1,$0
-seq $1,202116 ; Numbers k such that 90*k + 89 is prime.
-mov $0,$1
 mul $0,90
 add $0,89

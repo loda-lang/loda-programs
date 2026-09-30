@@ -17,14 +17,13 @@ div $1,3
 mod $1,2
 add $0,2
 add $0,$1
-mov $3,$0
-div $3,3
-mov $0,$3
-sub $0,1
+div $0,3
 mov $2,$5
 mul $2,3
+mov $3,$0
 mov $6,$5
 mul $6,$5
+sub $0,1
 add $0,$2
 mov $2,$6
 mul $2,2

@@ -5,8 +5,7 @@
 #offset 1
 
 mov $3,1
-mov $4,1
-mov $5,1
+fil $3,3
 mov $2,$0
 lpb $2
   add $3,$5

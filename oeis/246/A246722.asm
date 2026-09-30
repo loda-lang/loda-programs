@@ -23,7 +23,7 @@ lpb $3
   add $10,$2
   add $10,$5
   add $1,$7
-  pow $4,0
+  mov $4,1
   bin $7,$6
   sub $7,$8
   add $7,$1

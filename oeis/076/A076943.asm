@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,76944 ; Least number such that n*k+1 is an n-th power.
 add $2,$0
 mov $1,$0

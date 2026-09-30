@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,142317 ; Primes congruent to 11 mod 45.
 mov $1,$0
-seq $1,142317 ; Primes congruent to 11 mod 45.
-mov $0,$1
 div $0,90

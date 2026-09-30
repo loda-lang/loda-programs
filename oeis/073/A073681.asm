@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,72225 ; Numbers n such that prime(n) + prime(n+1) + prime(n+2) is prime.
+seq $0,72225 ; Numbers k such that prime(k) + prime(k+1) + prime(k+2) is prime.
 seq $0,40 ; The prime numbers.

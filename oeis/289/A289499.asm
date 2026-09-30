@@ -4,12 +4,10 @@
 
 #offset 1
 
-mul $0,2
 mov $3,$0
-mul $0,2
+mul $0,4
 mov $1,$0
 add $1,$0
-div $3,2
 lpb $3
   sub $3,2
   mov $2,$1

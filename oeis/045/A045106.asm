@@ -12,8 +12,7 @@ mul $2,8
 lpb $2
   mov $3,$1
   seq $3,160381 ; Number of 1's in base-4 representation of n.
-  sub $3,4
-  equ $3,0
+  equ $3,4
   sub $0,$3
   add $1,3
   mov $4,$0

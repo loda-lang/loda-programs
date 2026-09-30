@@ -1,11 +1,56 @@
 ; A309432: Number of distinct digits in decimal representation of n^2.
 ; Submitted by Kaischa
 ; 1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,2,3,3,3,3,2,2,2,3,3,3,2,3,3,3,2,3,4,4,3,3,4,4,2,3,3,3,4,4,4,3,3,3,4,4,3,4,4,4,4,4,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,4,4,4,3,3,3,4,4
-; Formula: a(n) = A043537(max(n*bitor(0,n),1))
 
 bor $1,$0
+clr $9,3
 mul $0,$1
 max $0,1
-mov $2,$0
-seq $2,43537 ; Number of distinct base-10 digits of n.
+clr $6,3
+clr $3,3
+mov $2,0
+mov $12,$0
+lpb $12
+  mov $13,$12
+  mod $13,10
+  mov $14,$13
+  equ $14,0
+  bor $2,$14
+  div $12,10
+  mov $14,$13
+  equ $14,1
+  bor $3,$14
+  mov $14,$13
+  equ $14,2
+  bor $4,$14
+  mov $14,$13
+  equ $14,3
+  bor $5,$14
+  mov $14,$13
+  equ $14,4
+  bor $6,$14
+  mov $14,$13
+  equ $14,5
+  bor $7,$14
+  mov $14,$13
+  equ $14,6
+  bor $8,$14
+  mov $14,$13
+  equ $14,7
+  bor $9,$14
+  mov $14,$13
+  equ $14,8
+  bor $10,$14
+  equ $13,9
+  bor $11,$13
+lpe
+add $2,$3
+add $2,$4
+add $2,$5
+add $2,$6
+add $2,$7
+add $2,$8
+add $2,$9
+add $2,$10
+add $2,$11
 mov $0,$2

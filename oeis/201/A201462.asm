@@ -11,7 +11,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,109848 ; Highest common factor of n and its 9's complement.
+  mov $5,$3
+  log $5,10
+  add $5,1
+  mov $6,10
+  pow $6,$5
+  sub $6,1
+  gcd $3,$6
   neq $3,1
   sub $0,$3
   add $1,1

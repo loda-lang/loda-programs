@@ -9,6 +9,7 @@ mov $2,$0
 mov $4,2
 lpb $4
   sub $4,1
+  mov $6,-6
   mov $0,$2
   add $0,$4
   add $0,$4
@@ -16,10 +17,8 @@ lpb $4
   add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,13636 ; a(n) = n*nextprime(n).
-  pow $1,0
-  mov $6,$1
-  sub $6,7
-  add $0,$6
+  sub $0,6
+  mov $1,1
   mov $3,$4
   mul $3,$0
   add $5,$3

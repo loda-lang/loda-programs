@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,75177 ; Indices of additive primes - primes with prime sum-of-digits, see A046704.
+seq $0,75177 ; Indices of additive primes, see A046704.
 seq $0,40 ; The prime numbers.

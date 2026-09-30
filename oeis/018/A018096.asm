@@ -1,10 +1,9 @@
 ; A018096: Powers of fourth root of 18 rounded down.
 ; Submitted by Science United
 ; 1,2,4,8,18,37,76,157,324,667,1374,2831,5832,12012,24743,50964,104976,216226,445375,917369,1889568,3892070,8016758,16512654,34012224,70057261,144301645,297227788,612220032
-; Formula: a(n) = sqrtint(sqrtint(18^n))
+; Formula: a(n) = sqrtnint(18^n,4)
 
 mov $1,18
 pow $1,$0
 mov $0,$1
-nrt $0,2
-nrt $0,2
+nrt $0,4

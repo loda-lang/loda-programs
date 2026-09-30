@@ -4,15 +4,7 @@
 
 mov $10,$0
 mov $0,2
-mov $1,2
-mov $2,2
-mov $3,2
-mov $4,2
-mov $5,2
-mov $6,2
-mov $7,2
-mov $8,2
-mov $9,2
+fil $0,10
 lpb $10
   mov $11,$10
   mod $11,10

@@ -14,7 +14,8 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,55565 ; Sum of digits of n^4.
+  pow $3,4
+  dgs $3,10
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2

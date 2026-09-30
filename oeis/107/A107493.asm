@@ -3,11 +3,10 @@
 ; Formula: a(n) = -10*truncate(binomial(max(n-5,0)*(2*n-3),n)/10)+binomial(max(n-5,0)*(2*n-3),n)
 
 mov $1,$0
-mov $2,$0
-sub $0,2
-trn $0,3
 mul $1,2
 sub $1,3
+mov $2,$0
+trn $0,5
 mul $0,$1
 bin $0,$2
 mod $0,10

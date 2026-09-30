@@ -1,7 +1,6 @@
 ; A056191: Characteristic cube divisor of n: cube of g = gcd(K,F), where K is the largest square root divisor of n (A000188) and F = n/(K*K) = A007913(n) is its squarefree part; g^2 divides K^2 = A008833(n) = g^2*L^2 and g divides F = gf.
 ; Submitted by trigggl
 ; 1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,27,1,1,1,1,8,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,27,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1
-; Formula: a(n) = (truncate((floor(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+1,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/(floor(sqrtint(4*(floor(max(0,floor(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+1,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/A019554(max(0,floor(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+1,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)+1))+1)^2)/2)^2))+1)^3
 
 #offset 1
 
@@ -42,8 +41,7 @@ mul $10,4
 nrt $10,2
 div $10,2
 pow $10,2
+div $0,$10
 mov $9,$0
-div $9,$10
-mov $0,$9
 add $0,1
 pow $0,3

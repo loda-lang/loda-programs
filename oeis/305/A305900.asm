@@ -12,7 +12,7 @@ lpb $0
   seq $2,305800 ; Filter sequence for a(prime) = constant sequences.
   max $2,3
   add $3,$2
-  pow $1,0
+  mov $1,1
   add $1,$3
   mov $0,$1
 lpe

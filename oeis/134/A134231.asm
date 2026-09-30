@@ -1,6 +1,7 @@
 ; A134231: Triangle T(n, k) = n -k +1 with T(n, n-1) = 2*n-1 and T(n, n) = 1, read by rows.
 ; Submitted by loader3229
 ; 1,3,1,3,5,1,4,3,7,1,5,4,3,9,1,6,5,4,3,11,1,7,6,5,4,3,13,1,8,7,6,5,4,3,15,1,9,8,7,6,5,4,3,17,1,10,9,8,7,6,5,4,3,19,1,11,10,9,8,7,6,5,4,3,21,1,12,11,10,9,8,7,6,5,4,3,23,1,13,12
+; Formula: a(n) = 2*floor((sqrtint(8*n)-1)/2)-if((2*floor((sqrtint(8*n)-1)/2))==0,-binomial(floor((sqrtint(8*n)-1)/2),2)+n,if(((-binomial(floor((sqrtint(8*n)-1)/2),2)+n)%(2*floor((sqrtint(8*n)-1)/2)))==0,(-binomial(floor((sqrtint(8*n)-1)/2),2)+n)/(2*floor((sqrtint(8*n)-1)/2)),-binomial(floor((sqrtint(8*n)-1)/2),2)+n))+2
 
 #offset 1
 

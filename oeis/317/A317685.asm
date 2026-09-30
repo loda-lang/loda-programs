@@ -13,8 +13,7 @@ lpb $3
   add $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $2,$1
-  sub $2,1
-  trn $2,1
+  trn $2,2
   mov $8,$2
   seq $8,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
   mov $6,$8

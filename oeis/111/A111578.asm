@@ -1,7 +1,6 @@
 ; A111578: Triangle T(n, m) = T(n-1, m-1) + (4m-3)*T(n-1, m) read by rows 1<=m<=n.
 ; Submitted by Science United
 ; 1,1,1,1,6,1,1,31,15,1,1,156,166,28,1,1,781,1650,530,45,1,1,3906,15631,8540,1295,66,1,1,19531,144585,126651,30555,2681,91,1,1,97656,1320796,1791048,646086,86856,4956,120,1,1,488281,11984820,24604420,12774510
-; Formula: a(n) = truncate(A285066(n-1)/A047053(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1))
 
 #offset 1
 
@@ -13,10 +12,48 @@ nrt $3,2
 add $3,1
 div $3,2
 bin $3,2
+mov $10,0
 mov $2,$0
 sub $2,$3
-seq $2,47053 ; a(n) = 4^n * n!.
+mov $5,4
+pow $5,$2
+mov $4,1
+fac $4,$2
+mul $4,$5
+mov $11,0
+mov $2,$4
+mov $8,0
 mov $1,$0
-seq $1,285066 ; Triangle read by rows: T(n, m) = A285061(n, m)*m!, 0 <= m <= n.
-div $1,$2
+add $1,1
+mov $6,$1
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $13,$6
+add $13,1
+bin $13,2
+sub $1,$13
+sub $1,1
+mov $7,$1
+mov $1,$6
+mov $6,$7
+add $6,2
+lpb $6
+  sub $6,1
+  mov $12,$7
+  mul $12,3
+  mov $9,$6
+  add $9,$12
+  pow $9,$1
+  sub $10,$6
+  bin $10,$8
+  mul $10,$9
+  add $11,$10
+  sub $7,1
+  add $8,1
+  mov $10,0
+lpe
+mov $1,$11
+div $1,$4
 mov $0,$1

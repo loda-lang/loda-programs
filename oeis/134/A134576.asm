@@ -1,7 +1,7 @@
-; A134576: A127733 * A051731.
+; A134576: Triangle read by rows: T(n,k) = n^2*A051731(n,k).
 ; Submitted by iBezanilla
-; 1,4,4,9,0,9,16,16,0,16,25,0,0,0,25,36,36,36,0,0,36,49,0,0,0,0,0,49,64,64,0,64,0,0,0,64,81,0,81,0,0,0,0,0,81,100,100,0,0,100,0,0,0,0,100
-; Formula: a(n) = truncate((sqrtint(8*n)+1)/2)^2*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)
+; 1,4,4,9,0,9,16,16,0,16,25,0,0,0,25,36,36,36,0,0,36,49,0,0,0,0,0,49,64,64,0,64,0,0,0,64,81,0,81,0,0,0,0,0,81,100,100,0,0,100,0,0,0,0,100,121,0,0,0,0,0,0,0,0,0,121,144,144,144,144,0,144,0,0,0,0,0,144,169,0
+; Formula: a(n) = floor((sqrtint(8*n)+1)/2)^2*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)
 
 #offset 1
 

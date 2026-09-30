@@ -21,7 +21,7 @@ lpb $0
   mul $4,-1
   sub $5,$2
   mov $2,$5
-  pow $5,0
+  mov $5,1
   add $5,$4
   fac $5,$2
   mul $6,$5

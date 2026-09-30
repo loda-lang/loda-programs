@@ -9,11 +9,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  mov $5,$3
-  add $3,1
+  add $3,2
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  add $5,1
+  mov $5,$1
+  add $5,2
   seq $5,8472 ; Sum of the distinct primes dividing n.
   gcd $5,$3
   div $3,$5

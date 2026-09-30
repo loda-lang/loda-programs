@@ -4,6 +4,5 @@
 ; Formula: a(n) = A004086(A282805(n))
 
 seq $0,282805 ; Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 513", based on the 5-celled von Neumann neighborhood.
+seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0
-seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $0,$1

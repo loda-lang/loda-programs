@@ -3,9 +3,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 mul $0,5
 lpb $0
   add $1,1

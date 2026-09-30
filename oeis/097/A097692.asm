@@ -5,8 +5,7 @@
 equ $1,$0
 mov $4,0
 mov $8,0
-trn $0,1
-add $0,1
+max $0,1
 mov $2,$0
 mul $2,8
 nrt $2,2
@@ -21,9 +20,9 @@ mov $3,$0
 mov $0,$2
 bin $0,$3
 sub $2,$3
-add $2,1
 mov $7,$2
-add $2,2
+add $7,1
+add $2,3
 lpb $2
   mov $5,$2
   add $5,$7

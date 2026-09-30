@@ -5,8 +5,7 @@
 
 #offset 2
 
+seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 mov $1,$0
-seq $1,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
-mov $0,$1
 div $0,2
 add $0,1

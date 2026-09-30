@@ -13,13 +13,13 @@ lpb $0
   mov $4,$2
   add $4,2
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,700 ; Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     mul $7,$$9
     gcd $4,$10
     add $5,1

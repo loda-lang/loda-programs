@@ -5,10 +5,32 @@
 mov $1,$0
 trn $1,1
 add $1,$0
-seq $1,350972 ; E.g.f. = tan(x).
+mov $4,0
+mov $7,0
+mov $8,0
+mov $3,1
+mov $6,$1
+lpb $1
+  sub $1,1
+  div $8,2
+  add $8,$4
+  mul $8,2
+  mov $4,$3
+  pow $4,$6
+  sub $4,$8
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  add $3,1
+  mul $7,-1
+  add $7,$5
+lpe
+gcd $1,$7
 mul $1,$0
 dif $1,$0
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,0
+sub $2,$0
+fac $0,$2
 gcd $1,$0
 div $0,$1

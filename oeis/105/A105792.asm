@@ -8,10 +8,11 @@ sub $0,2
 mov $1,$0
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
-  seq $1,136798 ; First term in a sequence of at least 3 consecutive composite integers.
-  sub $1,4
+  max $1,1
+  add $1,2
+  seq $1,25584 ; Primes p such that p-2 is not a prime.
+  seq $1,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  sub $1,3
   mov $0,0
 lpe
 mov $0,$1

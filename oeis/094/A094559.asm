@@ -7,7 +7,7 @@ trn $0,1
 mov $1,4
 pow $1,$0
 add $0,1
-seq $0,94547 ; A019309(n)/4 for n >= 1.
+seq $0,94547 ; a(n) = A019309(n)/4 for n >= 1.
 sub $1,$0
 mov $0,$1
 mul $0,4

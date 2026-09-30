@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
+seq $0,7522 ; Primes of the form 8*k+7, that is, primes congruent to -1 mod 8.
 mul $0,3

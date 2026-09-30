@@ -1,4 +1,4 @@
-; A393994: Largest number of directions of lines determined by pairs of cell centers of a polycube with n cells.
+; A393994: Largest number of distinct directions of lines determined by pairs of cell centers of a polycube with n cells.
 ; Submitted by Science United
 ; 0,1,3,6,8,11,15,19,24,30,36
 

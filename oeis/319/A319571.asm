@@ -1,7 +1,7 @@
 ; A319571: The stripe enumeration of N X N where N = {0, 1, 2, ...}, also called boustrophedonic Cantor enumeration. Terms are interleaved x and y coordinates.
 ; Submitted by loader3229
 ; 0,0,0,1,1,0,2,0,1,1,0,2,0,3,1,2,2,1,3,0,4,0,3,1,2,2,1,3,0,4,0,5,1,4,2,3,3,2,4,1,5,0,6,0,5,1,4,2,3,3,2,4,1,5,0,6,0,7,1,6,2,5,3,4,4,3,5,2,6,1,7,0,8,0,7,1,6,2,5,3
-; Formula: a(n) = -(-2*truncate((truncate((sqrtint(8*floor(n/2)+8)-1)/2)+n)/2)+truncate((sqrtint(8*floor(n/2)+8)-1)/2)+n)*(-floor(n/2)+binomial(truncate((sqrtint(8*floor(n/2)+8)-1)/2)+1,2)+truncate((sqrtint(8*floor(n/2)+8)-1)/2))+(-binomial(truncate((sqrtint(8*floor(n/2)+8)-1)/2)+1,2)+floor(n/2))*(-2*truncate((truncate((sqrtint(8*floor(n/2)+8)-1)/2)+n)/2)+truncate((sqrtint(8*floor(n/2)+8)-1)/2)+n)-floor(n/2)+binomial(truncate((sqrtint(8*floor(n/2)+8)-1)/2)+1,2)+truncate((sqrtint(8*floor(n/2)+8)-1)/2)
+; Formula: a(n) = -(-floor(n/2)+binomial(floor((sqrtint(8*floor(n/2)+8)-1)/2)+1,2)+floor((sqrtint(8*floor(n/2)+8)-1)/2))*((floor((sqrtint(8*floor(n/2)+8)-1)/2)+n)%2)+(-binomial(floor((sqrtint(8*floor(n/2)+8)-1)/2)+1,2)+floor(n/2))*((floor((sqrtint(8*floor(n/2)+8)-1)/2)+n)%2)-floor(n/2)+binomial(floor((sqrtint(8*floor(n/2)+8)-1)/2)+1,2)+floor((sqrtint(8*floor(n/2)+8)-1)/2)
 
 mov $3,$0
 div $0,2

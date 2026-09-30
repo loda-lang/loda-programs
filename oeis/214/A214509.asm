@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,143259 ; a(n) = 1 if n is a nonzero square, -1 if n is twice a nonzero square, 0 otherwise.
+sub $1,1
 bin $1,2
 lpb $1
   sub $1,11

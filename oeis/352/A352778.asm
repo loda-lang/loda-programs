@@ -9,9 +9,14 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $5,0
+  sub $5,$1
+  dgs $5,2
   mov $3,$1
-  seq $3,229745 ; a(n) = wt(n+wt(n))-wt(n), where wt(n) is the binary weight of n, A000120(n).
+  sub $3,$5
+  dgs $3,2
   sub $3,1
+  add $3,$5
   bin $3,$2
   equ $3,0
   sub $0,$3

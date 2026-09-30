@@ -1,7 +1,7 @@
 ; A185879: Weight array of A185877, by antidiagonals.
 ; Submitted by loader3229
 ; 1,2,0,4,2,0,6,2,2,0,8,2,2,2,0,10,2,2,2,2,0,12,2,2,2,2,2,0,14,2,2,2,2,2,2,0,16,2,2,2,2,2,2,2,0,18,2,2,2,2,2,2,2,2,0,20,2,2,2,2,2,2,2,2,2,0,22,2,2,2,2,2,2,2,2,2,2,0,24,2
-; Formula: a(n) = -2*binomial(truncate((sqrtint(8*n)-1)/2),truncate(0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)))*((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)==truncate((sqrtint(8*n)-1)/2))+truncate(0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)==truncate((sqrtint(8*n)-1)/2))+2*binomial(truncate((sqrtint(8*n)-1)/2),truncate(0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)))
+; Formula: a(n) = -2*binomial(floor((sqrtint(8*n)-1)/2),if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)))*((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)==floor((sqrtint(8*n)-1)/2))+if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))*((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)==floor((sqrtint(8*n)-1)/2))+2*binomial(floor((sqrtint(8*n)-1)/2),if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)))
 
 #offset 1
 

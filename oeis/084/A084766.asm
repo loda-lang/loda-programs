@@ -18,8 +18,7 @@ lpb $3
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $2,2
   mul $2,$1
-  sub $2,1
-  trn $2,1
+  trn $2,2
   add $2,1
   seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   add $4,$2

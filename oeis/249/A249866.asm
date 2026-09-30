@@ -1,7 +1,7 @@
 ; A249866: Characteristic triangle for primitive Pythagorean triples.
 ; Submitted by iBezanilla
 ; 1,0,1,1,0,1,0,1,0,1,1,0,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0
-; Formula: a(n) = gcd(-binomial(truncate((sqrtint(8*n-8)-1)/2)+2,2)+n-2,2*truncate((sqrtint(8*n-8)-1)/2)+4)==1
+; Formula: a(n) = gcd(-binomial(floor((sqrtint(8*n-8)-1)/2)+2,2)+n-2,2*floor((sqrtint(8*n-8)-1)/2)+4)==1
 
 #offset 2
 

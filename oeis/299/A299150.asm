@@ -5,14 +5,11 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 pow $0,2
 seq $0,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
 mov $2,2
 pow $2,$0
-add $1,1
 gcd $1,$2
 mov $0,$2
 div $0,$1

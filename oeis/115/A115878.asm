@@ -1,6 +1,7 @@
 ; A115878: a(n) is the number of positive solutions of the Diophantine equation x^2 = y(y+n).
 ; Submitted by Karlsson
 ; 0,0,1,0,1,1,1,1,2,1,1,1,1,1,4,2,1,2,1,1,4,1,1,4,2,1,3,1,1,4,1,3,4,1,4,2,1,1,4,4,1,4,1,1,7,1,1,7,2,2,4,1,1,3,4,4,4,1,1,4,1,1,7,4,4,4,1,1,4,4,1,7,1,1,7,1,4,4,1,7
+; Formula: a(n) = truncate(A146564(if((if((n%2)==0,n/2,n)%2)==0,if((n%2)==0,n/2,n)/2,if((n%2)==0,n/2,n)))/3)
 
 #offset 1
 

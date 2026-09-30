@@ -19,9 +19,8 @@ lpb $2
   seq $3,360720 ; a(n) is the sum of unitary divisors of n that are powerful (A001694).
   mov $5,$7
   gcd $5,$3
+  div $3,$5
   mov $6,$3
-  div $6,$5
-  mov $3,$6
   equ $3,1
   sub $0,$3
   mov $4,$0

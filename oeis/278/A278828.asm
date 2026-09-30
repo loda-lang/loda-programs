@@ -1,7 +1,7 @@
 ; A278828: King's moves in chess: possible difference between origin and destination square when the squares are numbered sequentially row by row.
 ; Submitted by vaughan
 ; -9,-8,-7,-1,1,7,8,9
-; Formula: a(n) = truncate((14*truncate((2*n-2)/5)+4*n-4)/3)-9
+; Formula: a(n) = floor((14*floor((2*n-2)/5)+4*n-4)/3)-9
 
 #offset 1
 

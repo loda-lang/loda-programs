@@ -36,8 +36,8 @@ lpb $2
   mov $10,$9
   sub $10,$8
   mov $0,$10
-  sub $0,$5
   sub $0,1
+  sub $0,$5
   equ $0,$2
   sub $0,1
   gcd $0,3

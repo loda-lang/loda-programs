@@ -1,7 +1,7 @@
 ; A340944: List of X-coordinates of point moving along one of the arms of a counterclockwise square spiral with four arms; A340945 gives Y-coordinates.
 ; Submitted by loader3229
 ; 0,1,1,1,0,-1,-2,-3,-3,-3,-3,-3,-3,-3,-2,-1,0,1,2,3,4,5,5,5,5,5,5,5,5,5,5,5,4,3,2,1,0,-1,-2,-3,-4,-5,-6,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,9,9,9,9,9,9
-; Formula: a(n) = truncate((-1)^sqrtint(floor(n/4)))*min(min(-(2*sqrtint(floor(n/4)))^2+n,2*sqrtint(floor(n/4))+1),(2*sqrtint(floor(n/4))+2)^2-n)
+; Formula: a(n) = min(min(-(2*sqrtint(floor(n/4)))^2+n,2*sqrtint(floor(n/4))+1),(2*sqrtint(floor(n/4))+2)^2-n)*(-1)^sqrtint(floor(n/4))
 
 mov $1,$0
 div $1,4

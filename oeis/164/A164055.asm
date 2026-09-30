@@ -20,9 +20,8 @@ lpb $0
 lpe
 mul $0,$5
 add $0,$4
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1
 div $0,4
 mul $0,9
 add $0,1

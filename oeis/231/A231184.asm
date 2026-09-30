@@ -1,6 +1,7 @@
 ; A231184: Coefficients of the nonnegative powers of rho(11) = 2*cos(Pi/11) when written in the power basis of the degree 5 number field Q(rho(11)). Negative of the coefficients of the second power.
 ; Submitted by loader3229
 ; -1,0,0,3,6,17,32,73,135,286,528,1080,2002,4015,7485,14827,27796,54606,102869,200909,380006,739013,1402309,2718485,5171573,10001553,19064476,36802823,70259834,135444612,258883604,498538557,953762458
+; Formula: a(n) = 4*a(n-2)-3*a(n-3)-3*a(n-4)+a(n-1)+a(n-5), a(10) = 528, a(9) = 286, a(8) = 135, a(7) = 73, a(6) = 32, a(5) = 17, a(4) = 6, a(3) = 3, a(2) = 0, a(1) = 0, a(0) = -1
 
 mov $1,-1
 mov $4,3

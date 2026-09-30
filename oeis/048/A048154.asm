@@ -1,7 +1,7 @@
 ; A048154: Triangular array T read by rows: T(n,k)=k^3 mod n, for k=1,2,...,n, n=1,2,...
 ; Submitted by loader3229
 ; 0,1,0,1,2,0,1,0,3,0,1,3,2,4,0,1,2,3,4,5,0,1,1,6,1,6,6,0,1,0,3,0,5,0,7,0,1,8,0,1,8,0,1,8,0,1,8,7,4,5,6,3,2,9,0,1,8,5,9,4,7,2,6,3,10,0,1,8,3,4,5,0,7,8,9,4,11,0,1,8
-; Formula: a(n) = (-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^3-truncate(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^3)/(truncate((sqrtint(8*n)-1)/2)+1))*(truncate((sqrtint(8*n)-1)/2)+1)
+; Formula: a(n) = (-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^3-truncate(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)^3)/(floor((sqrtint(8*n)-1)/2)+1))*(floor((sqrtint(8*n)-1)/2)+1)
 
 #offset 1
 

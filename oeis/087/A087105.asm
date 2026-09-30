@@ -4,12 +4,11 @@
 
 #offset 2
 
-sub $0,3
 mov $1,$0
-add $0,4
+add $0,1
 seq $0,40 ; The prime numbers.
 div $0,2
-add $1,2
+sub $1,1
 seq $1,40 ; The prime numbers.
 add $1,1
 mul $0,$1

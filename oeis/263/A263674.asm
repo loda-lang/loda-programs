@@ -16,7 +16,7 @@ lpb $2
     mov $3,$1
     add $3,$7
     add $3,1
-    seq $3,52288 ; First differences of the average of two consecutive primes (A024675).
+    seq $3,52288 ; First differences of the average of two consecutive odd primes (A024675).
     mov $6,$7
     mul $6,$3
     add $5,$6

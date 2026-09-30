@@ -1,6 +1,7 @@
 ; A134756: Coefficients of a q-series of Zagier related to the Dedekind eta function.
 ; Submitted by Tatadu
 ; 1,-5,-7,0,0,11,0,13,0,0,0,0,-17,0,0,-19,0,0,0,0,0,0,23,0,0,0,25,0,0,0,0,0,0,0,0,-29,0,0,0,0,-31,0,0,0,0,0,0,0,0,0,0,35,0,0,0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,-41,0,0,0,0,0,0,-43,0,0
+; Formula: a(n) = sqrtint(24*n+1)*if(((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))%(-2))==0,(sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))/(-2),sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))
 
 mul $0,24
 add $0,1

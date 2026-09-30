@@ -1,6 +1,6 @@
 ; A185706: Characteristic function of positive numbers that are primes ending in 3.
 ; 0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-; Formula: a(n) = truncate(gcd(5,n*A010051(n)-3)/4)
+; Formula: a(n) = floor(gcd(5,n*A010051(n)-3)/4)
 
 #offset 1
 

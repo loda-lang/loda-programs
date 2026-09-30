@@ -13,9 +13,9 @@ mov $5,$0
 lpb $5
   mov $4,$$2
   lpb $4
-    sub $0,1
     mov $7,$0
-    leq $7,0
+    leq $7,1
+    sub $0,1
     mov $$3,$1
     sub $4,1
     mod $4,4

@@ -9,7 +9,7 @@ lpb $0
   mov $3,$0
   add $3,1
   seq $3,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
-  mul $0,0
+  mov $0,0
   mov $2,$3
   add $3,1
   bxo $3,$2

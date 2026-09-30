@@ -5,6 +5,6 @@
 #offset 1
 
 mov $1,$0
-seq $1,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+seq $1,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mul $0,$1

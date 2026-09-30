@@ -4,8 +4,7 @@
 
 mov $2,1
 mov $10,1
-trn $0,1
-add $0,1
+max $0,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -15,8 +14,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
-    add $7,1
+    max $7,1
     seq $7,7424 ; a(n) = 1 if n is squarefree, otherwise 2.
     equ $7,2
     equ $7,$8

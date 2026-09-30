@@ -6,7 +6,6 @@
 #offset 1
 
 seq $0,217948 ; List of numbers 2n for which the riffle permutation permutes all except the first and last of the 2n cards.
+seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 mov $1,$0
-seq $1,36234 ; Number of primes <= n, if 1 is counted as a prime.
-mov $0,$1
 sub $0,1

@@ -4,10 +4,9 @@
 
 #offset -1
 
-add $0,1
 mov $1,$0
-sub $0,1
 seq $0,30181 ; Expansion of (eta(q) / eta(q^7))^4 in powers of q.
+add $1,1
 lpb $1
   sub $1,1
   mul $0,$1

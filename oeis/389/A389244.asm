@@ -9,6 +9,5 @@ fac $0,2
 mov $2,$0
 seq $2,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 pow $2,2
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

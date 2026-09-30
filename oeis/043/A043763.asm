@@ -6,8 +6,7 @@
 
 sub $0,1
 mov $1,1
-add $2,8
-pow $2,4
+mov $2,4096
 lpb $2
   mov $3,$1
   seq $3,37800 ; Number of occurrences of 01 in the binary expansion of n.

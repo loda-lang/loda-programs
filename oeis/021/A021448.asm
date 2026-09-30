@@ -1,7 +1,7 @@
 ; A021448: Decimal expansion of 1/444.
 ; Submitted by DukeBox
 ; 0,0,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5,2,2,5
-; Formula: a(n) = truncate((-3*truncate((max(n,1)-2)/3)+max(n,1)-2)^(-3*truncate((max(n,1)-2)/3)+max(n,1)-2))+1
+; Formula: a(n) = if(((-3*truncate((max(n,1)-2)/3)+max(n,1)-2)^2)==1,(-3*truncate((max(n,1)-2)/3)+max(n,1)-2)^(-3*truncate((max(n,1)-2)/3)+max(n,1)-2),if((-3*truncate((max(n,1)-2)/3)+max(n,1)-2)<=(-1),0,(-3*truncate((max(n,1)-2)/3)+max(n,1)-2)^(-3*truncate((max(n,1)-2)/3)+max(n,1)-2)))+1
 
 max $0,1
 sub $0,2

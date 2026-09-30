@@ -1,6 +1,7 @@
 ; A255820: Decimal expansion of the heliocentric gravitational constant in SI units.
 ; Submitted by DukeBox
 ; 1,3,2,7,1,2,4,4
+; Formula: a(n) = max(if((3*n-63)==0,0,(3*n-63)/(2^valuation(3*n-63,2)))-n+21,0)%(n-17)+1
 
 #offset 21
 

@@ -1,6 +1,7 @@
 ; A220780: Nonzero terms of A220779: exponent of highest power of 2 dividing an even sum 1^n + 2^n + ... + n^n.
 ; Submitted by BrandyNOW
 ; 2,1,4,2,2,1,6,3,2,1,4,2,2,1,8,4,2,1,4,2,2,1,6,3,2,1,4,2,2,1,10,5,2,1,4,2,2,1,6,3,2,1,4,2,2,1,8,4,2,1,4,2,2,1,6,3,2,1,4,2,2,1,12,6,2,1,4,2,2,1,6,3,2,1,4,2,2,1,8,4
+; Formula: a(n) = if((binomial(n+1,2)*(2*n+2))==0,0,valuation(binomial(n+1,2)*(2*n+2),2))
 
 #offset 1
 

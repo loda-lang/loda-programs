@@ -11,8 +11,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,308948 ; a(n) = A006190(A322907(n)+1) mod n.
-  sub $3,1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

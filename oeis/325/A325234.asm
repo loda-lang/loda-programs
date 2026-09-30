@@ -18,8 +18,7 @@ lpb $2
   seq $5,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   sub $5,$3
   mov $3,$5
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,7 +1,7 @@
 ; A080721: Triangle of binomial(n,k)*(binomial(n+k,k)-binomial(n+k-2,k-1)).
 ; Submitted by Science United
 ; 1,1,1,1,4,4,1,9,21,14,1,16,66,100,50,1,25,160,410,455,182,1,36,330,1260,2310,2016,672,1,49,609,3220,8610,12222,8778,2508,1,64,1036,7224,26250,53592,61908,37752,9438,1,81,1656,14700,69300,189882,312312,303732,160875,35750,1,100,2520,27720,164010,576576,1261260,1733160,1454310,680680,136136,1,121,3685,49170,356070,1555554,4330326,7859280,9262110,6831110,2863718,520676,1,144
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(binomial(max(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n-2,0)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n-1)+binomial(max(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n-2,0),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*(binomial(max(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n-2,0)+1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n-1)+binomial(max(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n-2,0),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
 mov $1,$0
 add $1,1

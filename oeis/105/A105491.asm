@@ -4,13 +4,13 @@
 
 #offset 10
 
-sub $0,10
 mov $1,$0
-add $0,5
+sub $1,10
+sub $0,5
 bin $0,$1
-add $1,5
 mov $4,$1
-sub $1,1
+add $4,5
+add $1,4
 mov $3,$1
 bin $3,2
 add $3,$1

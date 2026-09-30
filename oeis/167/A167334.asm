@@ -11,9 +11,8 @@ lpb $0
   add $2,1
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $0,$2
-  mul $2,2
-  add $2,1
-  mul $2,2
+  mul $2,4
+  add $2,2
   mul $1,$2
 lpe
 mov $0,$1

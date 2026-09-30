@@ -1,7 +1,7 @@
 ; A368928: Triangle read by rows where T(n,k) is the number of labeled loop-graphs with n vertices and n edges, k of which are loops.
 ; Submitted by loader3229
 ; 1,0,1,0,2,1,1,9,9,1,15,80,90,24,1,252,1050,1200,450,50,1,5005,18018,20475,9100,1575,90,1,116280,379848,427329,209475,46550,4410,147,1,3108105,9472320,10548720,5503680,1433250,183456,10584,224,1,94143280,272343060,300516480,163614528,47500992,7422030,599760,22680,324,1,3190187286,8861631350,9699893775,5445554400,1710462600,307883268,31288950,1702800,44550,450,1,119653565850,321735143730,349712112750,200898447750,66966149250,13393229850,1607187582,112548150,4328775,81675,605,1,4922879481520
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(binomial(truncate((sqrtint(8*n+8)-1)/2),2),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(binomial(floor((sqrtint(8*n+8)-1)/2),2),-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $1,$0

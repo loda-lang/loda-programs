@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $2,95847 ; Lucas-Lehmer residues for Mersenne numbers with prime indices.
+bin $0,$2
 mov $1,$0
-bin $1,$2
-mov $0,$1

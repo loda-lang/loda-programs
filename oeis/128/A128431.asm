@@ -1,7 +1,7 @@
 ; A128431: Triangle read by rows: A054521 * A128407.
 ; Submitted by vanos0512
 ; 1,1,0,1,-1,0,1,0,-1,0,1,-1,-1,0,0,1,0,0,0,-1,0,1,-1,-1,0,-1,1,0,1,0,-1,0,-1,0,-1,0,1,-1,0,0,-1,0,-1,0,0,1,0,-1,0,0,0,-1,0,0,0
-; Formula: a(n) = truncate((4*A008683(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(gcd(floor((sqrtint(8*n)+1)/2),-binomial(floor((sqrtint(8*n)+1)/2),2)+n)==1))/4)
+; Formula: a(n) = truncate((4*A008683(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(gcd(floor((sqrtint(8*n)+1)/2),-binomial(floor((sqrtint(8*n)+1)/2),2)+n)==1))/4)
 
 #offset 1
 

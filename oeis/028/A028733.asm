@@ -1,7 +1,7 @@
 ; A028733: Nonsquares mod 20.
 ; Submitted by BrandyNOW
 ; 2,3,6,7,8,10,11,12,13,14,15,17,18,19
-; Formula: a(n) = -n*truncate(sqrtint(sqrtint(n)+n+1)/n)+sqrtint(sqrtint(n)+n+1)+n+1
+; Formula: a(n) = sqrtint(sqrtint(n)+n+1)%n+n+1
 
 #offset 1
 

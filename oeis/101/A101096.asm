@@ -11,8 +11,7 @@ equ $2,$0
 equ $1,$0
 mul $1,29
 bin $0,2
-mul $0,4
-add $0,1
-mul $0,30
+mul $0,120
+add $0,30
 sub $0,$1
 sub $0,$2

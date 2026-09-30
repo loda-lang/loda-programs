@@ -6,9 +6,9 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-sub $0,2
 mov $2,$0
-add $0,1
+sub $2,2
+sub $0,1
 seq $0,33677 ; Smallest divisor of n >= sqrt(n).
 div $2,$0
 sub $2,$0

@@ -14,8 +14,7 @@ lpb $2
   mov $4,$1
   bin $4,2
   seq $4,43537 ; Number of distinct base-10 digits of n.
-  sub $4,3
-  equ $4,6
+  equ $4,9
   sub $0,$4
   sub $2,$0
   add $3,$1

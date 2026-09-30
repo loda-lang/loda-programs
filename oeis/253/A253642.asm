@@ -19,8 +19,7 @@ lpb $3
   sub $4,$5
   sub $0,1
   mov $0,$4
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   bxo $1,$0
 lpe

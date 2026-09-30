@@ -10,10 +10,9 @@ mov $1,$0
 mov $2,$0
 add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-add $0,1
 add $2,1
 seq $2,8472 ; Sum of the distinct primes dividing n.
 add $2,1
 sub $0,$2
 sub $0,$1
-trn $0,2
+trn $0,1

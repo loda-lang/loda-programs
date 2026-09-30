@@ -7,6 +7,5 @@
 
 mul $0,9
 sub $0,4
+seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
-seq $1,6005 ; The odd prime numbers together with 1.
-mov $0,$1

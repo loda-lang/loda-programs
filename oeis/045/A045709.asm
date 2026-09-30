@@ -16,8 +16,7 @@ lpb $2
   seq $3,85090 ; If 2n-1 is prime then a(n) = 2n-1, otherwise a(n) = 0.
   lpb $3
     mov $6,$3
-    sub $6,1
-    equ $6,2
+    equ $6,3
     div $3,10
     add $5,$6
   lpe

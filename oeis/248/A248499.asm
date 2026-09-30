@@ -15,8 +15,7 @@ lpb $2
   div $5,10
   gcd $3,$5
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   add $3,$4
   gcd $3,2
   sub $0,$3

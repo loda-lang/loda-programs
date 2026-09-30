@@ -17,8 +17,7 @@ lpb $2
   seq $5,28233 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
   sub $5,$3
   mov $3,$5
-  add $3,3
-  trn $3,3
+  max $3,0
   min $3,1
   sub $0,$3
   add $1,1

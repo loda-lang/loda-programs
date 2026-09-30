@@ -12,7 +12,27 @@ lpb $2
   sub $2,1
   mov $5,$1
   add $5,1
-  seq $5,185395 ; a(3n) = n^2, a(3n+1) = a(3n+2) = 3*n*(n+1)/2.
+  mov $7,$5
+  mod $7,3
+  div $5,3
+  mov $6,$5
+  mov $8,$5
+  mul $8,3
+  add $8,9
+  mul $8,$5
+  div $8,2
+  mov $9,$5
+  mul $9,-1
+  sub $9,3
+  mul $9,$5
+  div $9,2
+  mul $9,$7
+  add $8,$9
+  mul $7,$8
+  mul $5,2
+  mul $5,$6
+  add $5,$7
+  div $5,2
   sub $5,21
   mov $3,$1
   add $3,1

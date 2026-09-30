@@ -18,9 +18,8 @@ mul $3,4
 nrt $3,2
 div $3,2
 pow $3,2
+div $1,$3
 mov $2,$1
-div $2,$3
-mov $1,$2
 add $1,1
 seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $7,$2

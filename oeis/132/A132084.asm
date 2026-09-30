@@ -10,6 +10,5 @@ lpb $0
   mov $3,$2
 lpe
 seq $0,2445 ; Denominators of Bernoulli numbers B_{2n}.
+add $0,$3
 mov $1,$0
-add $1,$3
-mov $0,$1

@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,135210 ; Numbers n such that Sum_digits(n) + Sum_digits(n+1) = Sum_digits(2*n+1).
 mov $1,$0
-seq $1,135210 ; Numbers n such that Sum_digits(n) + Sum_digits(n+1) = Sum_digits(2*n+1).
-mov $0,$1
 add $0,1

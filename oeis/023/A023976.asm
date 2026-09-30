@@ -1,11 +1,11 @@
 ; A023976: First bit in fractional part of binary expansion of 9th root of n.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (n-1)>=38
+; Formula: a(n) = n>=39
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-geq $1,38
+geq $1,39
+sub $0,1
 mov $0,$1

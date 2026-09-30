@@ -1,4 +1,4 @@
-; A272231: a(n) = round(n / pi(n)), where pi(n) is the prime-counting function.
+; A272231: a(n) = round(n / pi(n)) = round(n / A000720(n)) where round(x) rounds up.
 ; Submitted by Simon Strandgaard (M1)
 ; 2,2,2,2,2,2,2,2,3,2,2,2,2,3,3,2,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,3,4,3,3,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4
 

@@ -1,7 +1,7 @@
 ; A193496: a(n) = 1 iff digit n+1 of Pi is >= digit n, otherwise a(n) = 0. We consider 3 to be digit 1 of Pi.
 ; Submitted by ckrause
 ; 0,1,0,1,1,0,1,0,0,1,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,0,1,0,0,1,1,0,1,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,1,1,1,0,1,0,1,1,0,1,0,0,1,0,1,0,0,0,1,1,1
-; Formula: a(n) = truncate(13^A095916(n))%2
+; Formula: a(n) = if(A095916(n)<=(-1),0,13^A095916(n))%2
 
 #offset 1
 

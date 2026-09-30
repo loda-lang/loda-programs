@@ -10,6 +10,5 @@ lpb $0
   seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 add $0,$1
+mul $0,$1
 mov $2,$0
-mul $2,$1
-mov $0,$2

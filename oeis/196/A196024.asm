@@ -14,9 +14,8 @@ lpb $2
   mov $9,$3
   dgs $9,2
   sub $3,$9
+  add $3,1
   mov $8,$3
-  add $8,1
-  mov $3,$8
   mod $3,2
   equ $3,0
   sub $5,$7

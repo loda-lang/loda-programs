@@ -1,7 +1,6 @@
 ; A254251: Decimal expansion of atomic unit of Hartree energy in eV.
 ; Submitted by shiva
 ; 2,7,2,1,1,3,8,6,2,4
-; Formula: a(n) = -binomial(2*n-truncate((sqrtint(8*n-8)-1)/2)-2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate(truncate((sqrtint(8*n-8)-1)/2)/2)+9,2)*(2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)-2*n+truncate((sqrtint(8*n-8)-1)/2)-7)+(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-2)*(2*n-truncate((sqrtint(8*n-8)-1)/2)-2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate(truncate((sqrtint(8*n-8)-1)/2)/2)+8)-binomial(2*n-truncate((sqrtint(8*n-8)-1)/2)-2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate(truncate((sqrtint(8*n-8)-1)/2)/2)+9,2)-truncate(binomial(4*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+2*truncate((sqrtint(8*n-8)-1)/2)-2*truncate(truncate((sqrtint(8*n-8)-1)/2)/2)-4*n-14,3)/(-4))-10*truncate((-binomial(2*n-truncate((sqrtint(8*n-8)-1)/2)-2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate(truncate((sqrtint(8*n-8)-1)/2)/2)+9,2)*(2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)-2*n+truncate((sqrtint(8*n-8)-1)/2)-7)+(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-2)*(2*n-truncate((sqrtint(8*n-8)-1)/2)-2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate(truncate((sqrtint(8*n-8)-1)/2)/2)+8)-binomial(2*n-truncate((sqrtint(8*n-8)-1)/2)-2*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate(truncate((sqrtint(8*n-8)-1)/2)/2)+9,2)-truncate(binomial(4*binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+2*truncate((sqrtint(8*n-8)-1)/2)-2*truncate(truncate((sqrtint(8*n-8)-1)/2)/2)-4*n-14,3)/(-4))+8)/10)+8
 
 #offset 2
 

@@ -1,7 +1,7 @@
 ; A154896: Sum of proper divisors minus the number of proper divisors of the perfect number A000396(n).
 ; Submitted by Aexoden
 ; 3,23,487,8115,33550311,8589869023,137438691291,2305843008139952067,2658455991569831744654692615953842055,191561942608236107294793378084303638130997321548169039
-; Formula: a(n) = -truncate((4*A139421(A019280(n)+1)-24)/2)+binomial(truncate(2^A139421(A019280(n)+1)),2)-11
+; Formula: a(n) = -truncate((4*A139421(A019280(n)+1)-24)/2)+binomial(if(A139421(A019280(n)+1)<=(-1),0,2^A139421(A019280(n)+1)),2)-11
 
 #offset 1
 

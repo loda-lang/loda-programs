@@ -13,9 +13,8 @@ lpb $0
   seq $2,53782 ; Numbers k such that the sum of the first k composite numbers is prime.
   add $2,2
   seq $2,141468 ; Zero together with the nonprime numbers A018252.
+  seq $2,101203 ; a(n) = sum of nonprimes <= n.
   mov $3,$2
-  seq $3,101203 ; a(n) = sum of nonprimes <= n.
-  mov $2,$3
   sub $2,1
   add $1,$2
 lpe

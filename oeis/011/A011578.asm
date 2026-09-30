@@ -4,9 +4,9 @@
 
 #offset 1
 
-add $0,405
 mov $1,$0
-add $0,1
+add $1,405
+add $0,406
 mov $4,$0
 mul $4,8
 nrt $4,2

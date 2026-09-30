@@ -6,9 +6,8 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,261130 ; a(n) = Product(p prime | n < p <= 2*n).
 mul $1,$0
 add $0,$1

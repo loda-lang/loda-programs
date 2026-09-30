@@ -1,6 +1,6 @@
 ; A393584: a(n) is the minimum, over all partitions {X, Y} of {1..2n} with |X| = |Y|, of the maximum number of pairs (x, y) with the same difference x - y for x in X and y in Y.
 ; Submitted by John Napoli
-; 1,1,2,2,3,3,3,4,4,5,5,5,6,6,6,7,7,8,8,8,9
+; 1,1,2,2,3,3,3,4,4,5,5,5,6,6,6,7,7,8,8,8,9,9,10,10,10,11,11,11,12,12,13,13,13
 ; Formula: a(n) = floor((10*n+56)/26)-1
 
 #offset 1

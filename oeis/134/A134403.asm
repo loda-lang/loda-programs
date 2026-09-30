@@ -1,7 +1,7 @@
 ; A134403: Triangle read by rows: row n consists of (n, n, (n+1), (n+2), (n+3), ...).
 ; Submitted by tosi
 ; 0,1,1,2,2,3,3,3,4,5,4,4,5,6,7,5,5,6,7,8,9,6,6,7,8,9,10,11,7,7,8,9,10,11,12,13,8,8,9,10,11,12,13,14,15,9,9,10,11,12,13,14,15,16,17,10,10,11,12,13,14,15,16,17,18,19,11,11,12,13,14,15,16,17,18,19,20,21,12,12
-; Formula: a(n) = max(-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n-1,truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = max(-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n-1,floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $2,$0

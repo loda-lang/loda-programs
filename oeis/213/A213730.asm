@@ -9,8 +9,7 @@ lpb $4
   sub $4,1
   mov $5,$3
   seq $5,213719 ; Characteristic function for A179016.
-  add $5,1
-  equ $5,2
+  equ $5,1
   sub $0,$5
   add $3,1
   sub $4,$0

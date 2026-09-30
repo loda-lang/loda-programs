@@ -1,7 +1,7 @@
 ; A249740: The largest prime whose square divides n, 1 if n is squarefree.
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,1,1,2,1,1,1,2,3,1,1,2,1,1,1,2,1,3,1,2,1,1,1,2,5,1,3,2,1,1,1,2,1,1,1,3,1,1,1,2,1,1,1,2,3,1,1,2,7,5,1,2,1,3,1,2,1,1,1,2,1,1,3,2,1,1,1,2,1,1,1,3,1,1,5,2,1,1,1,2
-; Formula: a(n) = A006530((truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)
+; Formula: a(n) = A006530((floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)
 
 #offset 1
 

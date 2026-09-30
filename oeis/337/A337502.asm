@@ -1,6 +1,7 @@
 ; A337502: Minimum number of painted cells in an n X n grid to avoid unpainted tetrominoes.
 ; Submitted by BrandyNOW
 ; 0,1,3,6,9,15,20,27,34,43
+; Formula: a(n) = binomial(n,2)+truncate((if(((n+5)%10)==0,(n+5)/10,n+5)-binomial(n,2)-2)/11)
 
 #offset 1
 

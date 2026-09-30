@@ -1,9 +1,9 @@
 ; A088534: Number of representations of n by the quadratic form x^2 + xy + y^2 with 0 <= x <= y.
 ; Submitted by PDW
 ; 1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,1,2,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,1,1,0,0,1
+; Formula: a(n) = truncate((4*A001817(max(n,1))-2*truncate((2*A001817(max(n,1))-A000005(max(n,1)/(3^valuation(max(n,1),3))))/2)-2*A000005(max(n,1)/(3^valuation(max(n,1),3))))/2)
 
-trn $0,1
-add $0,1
+max $0,1
 mov $2,$0
 dir $2,3
 seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,24791 ; Number of 7's in all partitions of n.
   mov $2,$3
   mul $2,$0

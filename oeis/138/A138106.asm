@@ -1,7 +1,7 @@
 ; A138106: A triangular sequence of coefficients based on the expansion of a Morse potential type function: p(x,t) = exp(x*t)*(exp(-2*t) - 2*exp(-t)).
 ; Submitted by loader3229
 ; -1,0,-1,2,0,-1,-6,6,0,-1,14,-24,12,0,-1,-30,70,-60,20,0,-1,62,-180,210,-120,30,0,-1,-126,434,-630,490,-210,42,0,-1,254,-1008,1736,-1680,980,-336,56,0,-1,-510,2286,-4536,5208,-3780,1764,-504,72,0,-1,1022,-5100,11430,-15120,13020,-7560,2940,-720,90,0,-1,-2046,11242,-28050,41910,-41580,28644,-13860,4620,-990,110,0,-1,4094,-24552
-; Formula: a(n) = binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2),-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)*(truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))-2)
+; Formula: a(n) = binomial(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2),-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)*(if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))-2)
 
 #offset 1
 

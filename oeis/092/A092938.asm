@@ -6,6 +6,5 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
+seq $0,20481 ; Least p with p, q both prime, p+q = 2n.
 mov $1,$0
-seq $1,20481 ; Least p with p, q both prime, p+q = 2n.
-mov $0,$1

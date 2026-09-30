@@ -5,9 +5,8 @@
 
 #offset 1
 
+seq $0,246850 ; Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
 mov $1,$0
-seq $1,246850 ; Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
-mov $0,$1
 sub $0,2
 div $0,2
 add $0,1

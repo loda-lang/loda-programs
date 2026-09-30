@@ -19,7 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
-    seq $5,365810 ; Squareferee numbers ordered factorization-wise by Blue code: a(n) = A019565(A193231(n)).
+    seq $5,365810 ; Squarefree numbers ordered factorization-wise by Blue code: a(n) = A019565(A193231(n)).
     add $4,1
   lpe
   mul $1,$5

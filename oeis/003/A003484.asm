@@ -1,6 +1,7 @@
 ; A003484: Radon function, also called Hurwitz-Radon numbers.
 ; Submitted by BrandyNOW
 ; 1,2,1,4,1,2,1,8,1,2,1,4,1,2,1,9,1,2,1,4,1,2,1,8,1,2,1,4,1,2,1,10,1,2,1,4,1,2,1,8,1,2,1,4,1,2,1,9,1,2,1,4,1,2,1,8,1,2,1,4,1,2,1,12,1,2,1,4,1,2,1,8,1,2,1,4,1,2,1,9
+; Formula: a(n) = 2*valuation(n,2)+floor(((6*valuation(n,2)+12)%8)/3)
 
 #offset 1
 

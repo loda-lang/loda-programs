@@ -20,9 +20,8 @@ lpb $3
   nrt $6,2
   add $6,1
   add $1,1
+  nrt $1,2
   mov $5,$1
-  nrt $5,2
-  mov $1,$5
   add $1,$6
   mod $1,2
   add $1,1

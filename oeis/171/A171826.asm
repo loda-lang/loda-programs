@@ -1,7 +1,7 @@
 ; A171826: Nonnegative integers that can be made using exactly three threes (3 3's) and the four basic operators {+, -, *, /}.
 ; Submitted by BrandyNOW
 ; 0,2,3,4,6,9,12,18,27
-; Formula: a(n) = sqrtnint(truncate((2*n-2)/n)*3^n,3)
+; Formula: a(n) = sqrtnint(floor((2*n-2)/n)*3^n,3)
 
 #offset 1
 

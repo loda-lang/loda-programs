@@ -17,7 +17,7 @@ lpb $0
   lpe
   mov $3,$2
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
-  seq $3,261179 ; Take the list of positive rationals {R(n): n>=1} in the order defined by Calkin and Wilf (Recounting the Rationals, 1999); a(n) = numerator of R(prime(n)).
+  seq $3,261179 ; a(n) is the prime(n)-th term of Stern-Brocot sequence, A002487.
   lpb $0
     dif $0,$2
     mul $1,$3

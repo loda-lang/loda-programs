@@ -1,6 +1,7 @@
 ; A328979: Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
 ; Submitted by BrandyNOW
 ; 0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0
+; Formula: a(n) = bitand(if((n-1)==0,0,valuation(n-1,2)),1)
 
 #offset 1
 

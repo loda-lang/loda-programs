@@ -12,12 +12,11 @@ lpb $2
   add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   mul $3,2
+  equ $3,8
   sub $6,1
   mul $5,2
   add $5,$6
   sub $1,$5
-  sub $3,8
-  equ $3,0
   add $5,$6
   sub $0,$3
   sub $1,$5

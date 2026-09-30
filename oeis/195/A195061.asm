@@ -6,8 +6,7 @@
 
 sub $0,35
 lpb $0
-  sub $0,2
-  equ $0,2
+  equ $0,4
   add $1,2
   lex $1,2
 lpe

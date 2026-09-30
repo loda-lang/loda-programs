@@ -15,9 +15,8 @@ lpb $2
   div $7,2
   mov $3,$7
   mul $3,2
-  add $3,1
   mov $5,$3
-  sub $3,1
+  add $5,1
   mov $8,$3
   seq $8,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
   mov $6,$8

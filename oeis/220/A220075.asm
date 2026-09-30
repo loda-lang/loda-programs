@@ -16,8 +16,7 @@ bin $5,2
 sub $0,$5
 sub $0,1
 sub $2,$0
-trn $2,1
-add $2,1
+max $2,1
 mov $3,$2
 lpb $0
   sub $0,1

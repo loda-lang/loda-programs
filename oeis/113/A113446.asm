@@ -1,6 +1,7 @@
 ; A113446: Expansion of (phi(q)^2 - phi(q^3)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by Simon Strandgaard
 ; 1,1,-1,1,2,-1,0,1,1,2,0,-1,2,0,-2,1,2,1,0,2,0,0,0,-1,3,2,-1,0,2,-2,0,1,0,2,0,1,2,0,-2,2,2,0,0,0,2,0,0,-1,1,3,-2,2,2,-1,0,0,0,2,0,-2,2,0,0,1,4,0,0,2,0,0,0,1,2,2,-3,0,0,-2,0,2
+; Formula: a(n) = A035154(2*floor((n/(2^valuation(n,2)))/2)+1)*(-1)^floor((n/(2^valuation(n,2)))/2)
 
 #offset 1
 

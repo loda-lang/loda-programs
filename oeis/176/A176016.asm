@@ -1,7 +1,7 @@
 ; A176016: Decimal expansion of (3+sqrt(15))/6.
 ; Submitted by loader3229
 ; 1,1,4,5,4,9,7,2,2,4,3,6,7,9,0,2,8,1,4,1,9,6,5,4,4,2,3,3,2,9,7,0,6,6,6,0,1,8,0,5,4,8,6,9,5,0,8,8,1,9,3,1,8,0,4,4,3,1,2,6,2,2,9,4,3,5,2,2,4,7,1,8,1,9,8,9,4,9,6,5
-; Formula: a(n) = -10*truncate(truncate(b(7*n)/truncate(c(7*n)/(10^(n-1))))/10)+truncate(b(7*n)/truncate(c(7*n)/(10^(n-1)))), b(n) = 2*b(n-1)+truncate(max(d(n-1),c(n-1))/6), b(2) = 4, b(1) = 2, b(0) = 1, c(n) = b(n-1)+c(n-1), c(2) = 3, c(1) = 1, c(0) = 0, d(n) = truncate(max(d(n-1),c(n-1))/6), d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = floor(b(7*n)/floor(c(7*n)/(10^(n-1))))%10, b(n) = 2*b(n-1)+floor(max(d(n-1),c(n-1))/6), b(2) = 4, b(1) = 2, b(0) = 1, c(n) = b(n-1)+c(n-1), c(2) = 3, c(1) = 1, c(0) = 0, d(n) = floor(max(d(n-1),c(n-1))/6), d(2) = 0, d(1) = 0, d(0) = 0
 
 #offset 1
 

@@ -12,7 +12,7 @@ lpb $0
   mov $5,-1
   pow $5,$2
   mul $2,2
-  seq $2,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+  seq $2,8441 ; Number of ordered ways of writing n as the sum of 2 triangular numbers.
   mul $2,$5
   sub $4,1
   add $1,$2

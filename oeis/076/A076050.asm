@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,7001 ; Trajectory of 1 under the morphism 1 -> 12, 2 -> 123, 3 -> 1234, etc.
 mov $1,$0
-seq $1,7001 ; Trajectory of 1 under the morphism 1 -> 12, 2 -> 123, 3 -> 1234, etc.
-mov $0,$1
 add $0,1

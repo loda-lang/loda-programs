@@ -7,11 +7,8 @@
 
 mov $1,$0
 seq $1,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-sub $0,1
 mov $2,$0
-add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-add $2,1
 seq $2,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 gcd $2,$0
 mov $0,$2

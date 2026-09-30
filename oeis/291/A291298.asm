@@ -1,7 +1,7 @@
 ; A291298: Connected domination number of Fibonacci cube Gamma_n.
 ; Submitted by loader3229
 ; 1,1,2,3,5,7,10,14,22
-; Formula: a(n) = truncate(((n-1)^2+max(18*n-18,122)-122)/4)+1
+; Formula: a(n) = floor(((n-1)^2+max(18*n-18,122)-122)/4)+1
 
 #offset 1
 

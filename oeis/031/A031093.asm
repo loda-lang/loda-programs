@@ -13,8 +13,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,31087 ; Triangle T(n,k): write n in base 9, reverse order of digits.
-  sub $3,1
-  equ $3,4
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

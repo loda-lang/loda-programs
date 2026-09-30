@@ -17,8 +17,7 @@ lpb $2
   sub $3,1
   seq $3,212894 ; Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)=1.
   mul $3,2
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

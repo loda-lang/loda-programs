@@ -1,7 +1,7 @@
 ; A108689: Smallest integer q >= 1 such that difference between q*Pi and the nearest integer is <= 1/n.
 ; Submitted by KetamiNO [YouTube]
 ; 1,1,1,1,1,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
-; Formula: a(n) = 6*gcd(max(binomial(floor((n-2)/2),2)-4,0),truncate(7^(binomial(floor((n-2)/2),2)-3)))+1
+; Formula: a(n) = 6*gcd(max(binomial(floor((n-2)/2),2)-4,0),if((binomial(floor((n-2)/2),2)-3)<=(-1),0,7^(binomial(floor((n-2)/2),2)-3)))+1
 
 #offset 2
 

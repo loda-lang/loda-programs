@@ -14,8 +14,7 @@ lpb $2
   seq $3,30353 ; Write 2n-1 in base 3 and juxtapose.
   sub $3,1
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

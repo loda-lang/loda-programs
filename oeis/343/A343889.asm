@@ -1,6 +1,7 @@
 ; A343889: Integer k of the pairs (k, m) ordered by m with 1 < k < m such that k has the same prime divisors as m, and, k+1 has the same prime divisors as m+1.
 ; Submitted by mkferrysr
 ; 2,6,14,30,75,62,126,254,510,1022,2046,4094,8190,16382,32766,65534
+; Formula: a(n) = b(n)-2, b(n) = 64*2^(n-6), b(9) = 512, b(8) = 256, b(7) = 128, b(6) = 64, b(5) = 77, b(4) = 32, b(3) = 16, b(2) = 8, b(1) = 4, b(0) = 0
 
 #offset 1
 

@@ -12,8 +12,15 @@ add $2,9
 pow $2,2
 lpb $2
   add $2,2
+  mov $5,$1
+  dgs $5,2
   mov $3,$1
-  seq $3,301895 ; a(n) = (number of 1's in binary expansion of n)^(number of 0's in binary expansion of n).
+  max $3,1
+  log $3,2
+  add $3,1
+  sub $3,$5
+  pow $5,$3
+  mov $3,$5
   gcd $3,2
   add $4,1
   sub $0,$3

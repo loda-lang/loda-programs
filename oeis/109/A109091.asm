@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,284152 ; a(n) = Sum_{d|n, d == 2 or 3 mod 5} d.
-add $1,1
 seq $1,284150 ; Sum_{d|n, d==1 or 4 mod 5} d.
 sub $1,$0
 mov $0,$1

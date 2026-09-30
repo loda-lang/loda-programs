@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   mov $4,-1
   pow $4,$0
-  mul $0,0
+  mov $0,0
   seq $2,14331 ; Inverse of 322nd cyclotomic polynomial.
   mul $2,$4
   add $1,$2

@@ -1,6 +1,7 @@
 ; A187476: Rank transform of the sequence floor(3(n-1)/2); complement of A187477.
 ; Submitted by Conan
 ; 1,2,5,6,8,10,12,13,15,17,19,21,23,24,26,28,30,32,34,35,37,39,41,42,45,46,48,50,52,54,55,57,59,61,63,64,66,68,70,72,74,75,77,79,81,83,85,86,88,90,92,94,96,97,99,101,103,104,107,108,110,112,114,115,117,119
+; Formula: a(n) = floor(e(n+1)/2)-2, b(n) = if((2*floor(gcd(4*d(n-1)+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2))==0,truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),if((truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4)%(2*floor(gcd(4*d(n-1)+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2)))==0,truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4)/(2*floor(gcd(4*d(n-1)+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2)),truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4))), b(3) = -1, b(2) = -3, b(1) = -1, b(0) = 0, c(n) = gcd(4*d(n-1)+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)*c(n-1), c(3) = 32, c(2) = 8, c(1) = 8, c(0) = 4, d(n) = 2*floor(gcd(4*d(n-1)+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2), d(3) = 4, d(2) = 0, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 8, e(2) = 6, e(1) = 2, e(0) = 0
 
 #offset 1
 

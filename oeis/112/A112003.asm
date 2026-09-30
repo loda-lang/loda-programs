@@ -2,9 +2,38 @@
 ; Submitted by Aurum
 ; -30,1827,-75915,2774695,-97362265,3410657250,-121647896370,4464233824050,-169525943987400,6681570663692925,-273715584240223125,11660420923428902625,-516518847915111916875,23780637468174359272500,-1137205925185934836732500
 
+mov $6,$0
+add $6,4
 add $0,1
+mov $8,0
+equ $8,$0
+mov $5,2
+pow $5,$6
+sub $6,4
+mov $7,1
+fac $7,$6
+mov $2,$0
+pow $2,2
+mul $2,600
+mov $3,$0
+pow $3,3
+mul $3,80
 mov $1,$0
-seq $1,1785 ; Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+4, n]]. The number of n-orbit permutations of a (2n+4)-set with at least 2 elements in each orbit. Also known as associated Stirling numbers of the first kind (e.g., Comtet).
+mul $1,1447
+add $1,$2
+add $1,$3
+add $1,1113
+mov $4,$0
+mul $4,2
+add $4,4
+mov $9,$4
+mov $4,1
+fac $4,$9
+mul $5,$7
+mul $5,1215
+mul $1,$4
+div $1,$5
+sub $1,$8
 lpb $0
   mod $0,2
   sub $0,1

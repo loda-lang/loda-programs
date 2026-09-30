@@ -4,6 +4,5 @@
 ; Formula: a(n) = A030101(A038185(n))
 
 seq $0,38185 ; One-dimensional cellular automaton 'sigma' (Rule 150).
+seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
 mov $1,$0
-seq $1,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-mov $0,$1

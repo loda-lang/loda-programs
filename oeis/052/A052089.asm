@@ -11,10 +11,19 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,127423 ; a(1) = 1; for n > 1, a(n) = n concatenated with n - 1.
-  sub $3,1
+  mov $8,$1
+  mov $9,$1
+  neq $9,0
+  mov $6,$1
+  max $6,1
+  log $6,10
+  add $6,$9
+  mov $7,10
+  pow $7,$6
+  mul $3,$7
+  add $3,$1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

@@ -1,7 +1,7 @@
 ; A143110: Triangle read by rows, A051731 * A000034 * 0^(n-k), 1<=k<=n.
 ; Submitted by loader3229
 ; 1,1,2,1,0,1,1,2,0,2,1,0,0,0,1,1,2,1,0,0,2,1,0,0,0,0,0,1,1,2,0,2,0,0,0,2,1,0,1,0,0,0,0,0,1,1,2,0,0,1,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,1,1,2,1,2,0,2,0,0,0,0,0,2,1,0
-; Formula: a(n) = sign(truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*((abs(truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))-1)%2+1)
+; Formula: a(n) = sign(truncate(gcd(floor((sqrtint(8*n)-1)/2)+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*((abs(truncate(gcd(floor((sqrtint(8*n)-1)/2)+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))-1)%2+1)
 
 #offset 1
 

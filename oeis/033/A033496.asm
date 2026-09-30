@@ -16,8 +16,7 @@ lpb $3
   seq $4,25586 ; Largest value in '3x+1' trajectory of n.
   div $4,$6
   mul $4,2
-  sub $4,1
-  equ $4,1
+  equ $4,2
   sub $0,$4
   add $2,1
   mov $5,$0

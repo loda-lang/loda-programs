@@ -6,8 +6,7 @@ mov $1,$0
 sub $1,1
 mov $2,$1
 lpb $1
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,60939 ; a(n) = (Sum of the first n primes) + n.
   mov $3,$1
   mov $1,0

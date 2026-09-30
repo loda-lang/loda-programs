@@ -1,6 +1,7 @@
 ; A095805: Reduced numerators in Wolfram's iteration for sqrt(2).
 ; Submitted by [AF>Amis de la Mer] ComteZera
 ; 0,1,1,5,11,11,45,45,181,181,181,181,181,181,11585,11585,11585,92681,185363,370727,741455,741455,741455,5931641,11863283,11863283,11863283,94906265,189812531,189812531,189812531,1518500249
+; Formula: a(n) = if(floor(sqrtint(2*4^n)/2)==0,0,floor(sqrtint(2*4^n)/2)/(2^valuation(floor(sqrtint(2*4^n)/2),2)))
 
 mov $1,4
 pow $1,$0

@@ -5,8 +5,7 @@
 mov $1,1
 lpb $0
   mov $4,$0
-  sub $0,3
-  trn $0,6
+  trn $0,9
   mov $2,2
   pow $2,$1
   mov $3,$4

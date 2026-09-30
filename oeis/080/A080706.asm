@@ -16,8 +16,7 @@ lpb $2
   div $5,8
   mov $3,$5
   seq $3,90996 ; Number of leading 1's in binary expansion of n.
-  add $3,1
-  equ $3,3
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

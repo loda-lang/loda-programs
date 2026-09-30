@@ -7,4 +7,4 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,228587 ; Sum of the squares (modulo n) of the odd numbers less than n.
-seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).

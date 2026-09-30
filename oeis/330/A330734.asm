@@ -11,7 +11,7 @@ pow $3,5
 lpb $3
   mov $4,$2
   add $4,1
-  seq $4,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+  seq $4,2805 ; a(n) = denominator of harmonic number H(n) = Sum_{i=1..n} 1/i.
   gcd $4,$1
   add $2,1
   add $3,$4

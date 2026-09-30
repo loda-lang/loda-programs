@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,5846 ; Primes of the form n^2 + n + 41.
+seq $0,5846 ; Primes of the form k^2 + k + 41.
 mov $1,$0
 sub $1,1
 seq $1,36234 ; Number of primes <= n, if 1 is counted as a prime.

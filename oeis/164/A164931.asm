@@ -12,8 +12,7 @@ lpb $2
   dif $1,$2
   add $1,1
   mov $3,$2
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,40 ; The prime numbers.
   mul $1,$3
   mov $3,$1

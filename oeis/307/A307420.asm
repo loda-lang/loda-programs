@@ -5,6 +5,6 @@
 
 #offset 1
 
-seq $0,124315 ; a(n) = Sum_{ d divides n } tau(gcd(d,n/d)), where tau = sigma_0 = A000005.
+seq $0,124315 ; a(n) = Sum_{d|n} tau(gcd(d,n/d)), where tau = sigma_0 = A000005.
 mod $0,3
 dif $0,-2

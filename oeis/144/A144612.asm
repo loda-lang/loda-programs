@@ -1,7 +1,7 @@
 ; A144612: Sturmian word of slope (3-sqrt(3))/2.
 ; Submitted by iBezanilla
 ; 1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1
-; Formula: a(n) = -2*truncate((sqrtint((2*truncate((sqrtint(3*n^2)+n)/2)+4)*(6*truncate((sqrtint(3*n^2)+n)/2)+12))+1)/2)+sqrtint((2*truncate((sqrtint(3*n^2)+n)/2)+4)*(6*truncate((sqrtint(3*n^2)+n)/2)+12))+1
+; Formula: a(n) = (sqrtint((2*floor((sqrtint(3*n^2)+n)/2)+4)*(6*floor((sqrtint(3*n^2)+n)/2)+12))+1)%2
 
 #offset 1
 

@@ -7,8 +7,7 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,142072 ; Primes congruent to 19 mod 34.
   sub $1,2
   mov $0,0

@@ -4,11 +4,16 @@
 
 mov $2,$0
 lpb $0
+  mov $4,$0
+  dif $4,$0
+  mov $5,$0
+  max $5,1
+  seq $5,40 ; The prime numbers.
+  mul $4,$5
   mov $3,$0
-  add $3,1
-  seq $3,182986 ; Zero together with the prime numbers (A000040).
+  mov $3,$4
   mul $0,2
-  mov $1,$3
+  mov $1,$4
   trn $1,$0
   mov $0,2
 lpe

@@ -10,11 +10,11 @@ mov $4,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $5,0
   mov $3,$1
   add $3,1
   seq $3,249160 ; Smallest number of iterations k such that A068527^(k)(n)=A068527^(k+1)(n).
   gcd $3,2
+  mov $5,0
   sub $0,$3
   add $0,1
   add $1,$4

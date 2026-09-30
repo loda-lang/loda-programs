@@ -15,8 +15,7 @@ lpb $3
     lpe
   lpe
   mov $1,$0
-  add $1,1
-  neq $1,1
+  neq $1,0
   add $2,1
   sub $3,$1
 lpe

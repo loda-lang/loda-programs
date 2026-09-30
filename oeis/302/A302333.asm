@@ -1,7 +1,7 @@
 ; A302333: Wagstaff primes related to The New Mersenne Conjecture that are the indices of perfect numbers in a list of centered 9-gonal numbers.
 ; Submitted by Cruncher Pete
 ; 3,11,43,2731,43691,174763,715827883,768614336404564651,56713727820156410577229101238628035243
-; Formula: a(n) = truncate((2*floor(truncate(2^(A000203(A019280(n+1)+1)-1))/2)-8)/3)+3
+; Formula: a(n) = truncate((2*floor(if((A000203(A019280(n+1)+1)-1)<=(-1),0,2^(A000203(A019280(n+1)+1)-1))/2)-8)/3)+3
 
 #offset 1
 

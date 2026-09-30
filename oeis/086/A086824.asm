@@ -9,6 +9,5 @@ lpb $0
   div $0,5
   mul $0,3
 lpe
+seq $0,65027 ; a(n) is the smallest k > 0 such that n^k < k!.
 mov $1,$0
-seq $1,65027 ; a(n) is the smallest k > 0 such that n^k < k!.
-mov $0,$1

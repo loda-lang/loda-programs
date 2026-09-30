@@ -1,7 +1,7 @@
 ; A179057: a(n) is the smallest argument m for which an auxiliary sequence A_n(m) differs from Fibonacci(m).
 ; Submitted by BrandyNOW
 ; 9,9,13,19,23,29,33,42
-; Formula: a(n) = floor((2*truncate(2^truncate((n-1)/2))+floor((17*max(n-1,0))/2)+1)/2)+8
+; Formula: a(n) = floor((2*if(truncate((n-1)/2)<=(-1),0,2^truncate((n-1)/2))+floor((17*max(n-1,0))/2)+1)/2)+8
 
 mov $1,$0
 sub $0,1

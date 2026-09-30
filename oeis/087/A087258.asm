@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,25586 ; Largest value in '3x+1' trajectory of n.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

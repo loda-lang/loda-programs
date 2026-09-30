@@ -4,6 +4,5 @@
 ; Formula: a(n) = 64*(n%2)+220
 
 mod $0,2
-mul $0,16
-add $0,55
-mul $0,4
+mul $0,64
+add $0,220

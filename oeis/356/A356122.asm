@@ -15,7 +15,7 @@ lpb $2
   equ $5,0
   add $0,1
   add $1,$5
-  mul $4,0
+  mov $4,0
 lpe
 mov $0,$1
 add $0,1

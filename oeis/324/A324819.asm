@@ -12,6 +12,6 @@ lpb $0
   add $0,1
   mov $1,$0
   seq $1,318466 ; a(n) = 2*n OR A000203(n), where OR is bitwise-or (A003986) and A000203 = sum of divisors.
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

@@ -1,13 +1,20 @@
 ; A306927: a(n) = A001615(n) - n.
 ; Submitted by Skillz
 ; 0,1,1,2,1,6,1,4,3,8,1,12,1,10,9,8,1,18,1,16,11,14,1,24,5,16,9,20,1,42,1,16,15,20,13,36,1,22,17,32,1,54,1,28,27,26,1,48,7,40,21,32,1,54,17,40,23,32,1,84,1,34,33,32,19,78,1,40,27,74,1,72,1,40,45,44,19,90,1,64
-; Formula: a(n) = -n+A001615(n)
+; Formula: a(n) = A253629(n)*binomial(2*(-1)^(n-1),2)-n
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-add $0,1
-seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
-sub $0,1
+mov $3,-1
+pow $3,$0
+mul $3,2
+bin $3,2
+mov $2,$0
+add $2,1
+seq $2,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+mul $2,$3
+mov $0,$2
 sub $0,$1
+sub $0,1

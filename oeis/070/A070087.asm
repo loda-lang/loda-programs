@@ -12,7 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,70221 ; a(n)=LPF(n+1)-LPF(n), where LPF(n) denotes the largest prime factor of n.
+  seq $3,70221 ; a(n) = gpf(n+1) - gpf(n), where gpf = A006530 (greatest prime factor).
   mul $3,-4
   trn $3,3
   min $3,1

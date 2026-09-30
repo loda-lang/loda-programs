@@ -16,7 +16,16 @@ lpb $2
   add $3,$6
   mov $5,$3
   add $3,2
-  seq $3,135694 ; Period 6: repeat [1, -1, -1, -1, 0, 2].
+  mod $3,6
+  mov $7,$3
+  dif $7,2
+  sub $7,2
+  div $3,2
+  mov $8,0
+  sub $8,$7
+  bin $8,$3
+  dif $8,$7
+  mov $3,$8
   equ $3,0
   sub $0,$3
   mov $4,$0

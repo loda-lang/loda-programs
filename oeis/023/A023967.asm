@@ -6,7 +6,6 @@
 #offset 1
 
 mul $0,100000000
+nrt $0,8
 mov $1,$0
-nrt $1,8
-mov $0,$1
 mod $0,10

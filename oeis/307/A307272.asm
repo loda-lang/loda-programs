@@ -4,9 +4,9 @@
 ; Formula: a(n) = 3*truncate((floor((5*n+5)/4)*(5*n-floor((5*n+5)/4)-1)+53)/5)-29
 
 mul $0,5
-sub $0,1
 mov $1,$0
-add $0,6
+sub $1,1
+add $0,5
 div $0,4
 sub $1,$0
 mul $0,$1

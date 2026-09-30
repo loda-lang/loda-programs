@@ -10,8 +10,7 @@ lpb $2
   sub $0,$2
   add $0,1
   seq $0,72400 ; (Factors of 4 removed from n) modulo 8.
-  sub $0,5
-  trn $0,1
+  trn $0,6
   add $0,2
   seq $0,56016 ; a(n) = -2*a(n - 1) -a(n - 2) -a(n - 3), a(0) = a(1) = a(2) = 1.
   mov $4,$0

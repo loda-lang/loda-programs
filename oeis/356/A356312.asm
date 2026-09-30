@@ -16,7 +16,17 @@ lpb $2
   gcd $5,$3
   bin $3,0
   div $3,$5
-  seq $3,273314 ; Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+  mov $6,$3
+  mul $3,4
+  add $3,12
+  mul $3,$6
+  sub $3,13
+  mul $3,$6
+  add $3,15
+  div $3,3
+  equ $6,0
+  mul $6,-4
+  add $3,$6
   equ $3,1
   sub $0,$3
   add $1,1

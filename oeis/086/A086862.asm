@@ -17,8 +17,7 @@ lpb $4
   sub $3,1
   mov $0,1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,2113 ; Palindromes in base 10.
   mov $2,$4
   mul $2,$0

@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,72906 ; Least k >=1 such that floor(n/k) is squarefree.
+  seq $3,72906 ; Least k >= 1 such that floor(n/k) is squarefree.
   trn $3,2
   min $3,1
   sub $0,$3

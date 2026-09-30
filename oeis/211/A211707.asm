@@ -21,6 +21,6 @@ lpb $0
   add $4,2
   div $1,$4
   add $3,$1
-  pow $1,0
+  mov $1,1
 lpe
 mov $0,$3

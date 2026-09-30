@@ -1,6 +1,7 @@
 ; A319773: Number of non-isomorphic intersecting set systems of weight n whose dual is also an intersecting set system.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,1,0,0,2,1,2,4,5
+; Formula: a(n) = truncate(A057038(A000040(if(((min(n,n%11)+1)%4)==0,(min(n,n%11)+1)/4,min(n,n%11)+1)+1)+2)/2)-1
 
 lpb $0
   sub $0,11

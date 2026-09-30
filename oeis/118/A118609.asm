@@ -1,7 +1,7 @@
 ; A118609: Start with 1 and repeatedly reverse the digits and add 23 to get the next term.
 ; Submitted by loader3229
 ; 1,24,65,79,120,44,67,99,122,244,465,587,808,831,161,184,504,428,847,771,200,25,75,80,31,36,86,91,42,47,97,102,224,445,567,788,910,42,47,97,102,224,445,567,788,910,42,47,97,102,224,445,567,788,910,42,47,97,102
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+23, b(0) = 1
+; Formula: a(n) = (-10*truncate(a(n-1)/10)+a(n-1))*(9*min(truncate(a(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100),1)+1)+(-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100)+23, a(1) = 1
 
 #offset 1
 

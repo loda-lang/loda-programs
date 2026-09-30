@@ -10,17 +10,37 @@ add $2,5
 pow $2,3
 lpb $2
   sub $2,19
-  add $4,1
   mov $3,$1
+  mul $3,8
   add $3,1
-  seq $3,204890 ; Ordered differences of primes.
+  nrt $3,2
+  add $3,1
+  div $3,2
+  add $4,1
+  mov $7,$1
+  add $7,$3
+  mov $10,$7
+  mul $10,8
+  add $10,1
+  nrt $10,2
+  add $10,1
+  div $10,2
+  bin $10,2
+  mov $8,$7
+  sub $8,$10
+  mov $9,$8
+  add $9,1
+  seq $9,40 ; The prime numbers.
+  mov $3,$7
+  add $3,2
+  seq $3,5145 ; n copies of n-th prime.
+  sub $3,$9
   div $3,$4
   mov $5,$3
   mod $3,5
   dif $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   mov $4,$0
   max $4,0

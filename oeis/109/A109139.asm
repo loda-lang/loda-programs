@@ -4,8 +4,7 @@
 ; Formula: a(n) = A013632(A000040(n))*a(n-1)+a(n-2), a(2) = 5, a(1) = 2, a(0) = 1
 
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 lpb $0
   sub $0,1
   mov $4,$2

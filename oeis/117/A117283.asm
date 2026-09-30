@@ -13,10 +13,12 @@ lpb $2
   seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
   sub $3,$5
-  trn $3,1
-  add $3,1
-  seq $3,48798 ; Smallest k > 0 such that n*k is a perfect cube.
+  max $3,1
+  pow $3,2
+  seq $3,50985 ; Cubefree part of n.
+  mov $7,$3
   equ $3,1
+  mov $6,$7
   sub $0,$3
   add $1,1
   mov $4,$0

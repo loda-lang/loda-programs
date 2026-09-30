@@ -1,18 +1,50 @@
 ; A138949: Expansion of (3 * phi(q^3)^2 - phi(q)^2) / 2 in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by Simon Strandgaard
 ; 1,-2,-2,6,-2,-4,6,0,-2,-2,-4,0,6,-4,0,12,-2,-4,-2,0,-4,0,0,0,6,-6,-4,6,0,-4,12,0,-2,0,-4,0,-2,-4,0,12,-4,-4,0,0,0,-4,0,0,6,-2,-6,12,-4,-4,6,0,0,0,-4,0,12,-4,0,0,-2,-8,0,0,-4,0,0,0,-2,-4,-4,18,0,0,12,0
-; Formula: a(n) = 2*A116604(A003602(max(2*n-1,0)+1)-1)*(-1)^max(2*n-1,0)+2*n-max(2*n-1,0)-1
 
 mul $0,2
 mov $1,$0
+mov $7,0
+mov $10,0
 trn $0,1
 mov $2,$0
 mov $3,-1
 pow $3,$0
 add $0,1
-seq $0,3602 ; Kimberling's paraphrase of the binary number system: if n = (2k-1)*2^m then a(n) = k.
-sub $0,1
-seq $0,116604 ; Expansion of q^(-1/2) * eta(q)^3 * eta(q^4) * eta(q^12) / (eta(q^2)^2 * eta(q^3)) in powers of q.
+dir $0,2
+div $0,2
+mov $4,-1
+pow $4,$0
+mov $5,-1
+pow $5,$0
+mul $5,2
+bin $5,2
+mov $6,-2
+bin $6,$0
+div $6,2
+sub $0,$6
+mul $0,4
+add $0,1
+mov $8,$0
+lpb $0
+  add $10,1
+  min $0,$10
+  mov $9,$8
+  dif $9,$0
+  add $0,$9
+  mod $0,2
+  mul $0,2
+  sub $0,1
+  mul $9,$10
+  equ $9,$8
+  mul $9,$0
+  sub $7,$9
+  sub $8,$10
+  mov $0,$8
+lpe
+mov $0,$7
+mul $0,$5
+mul $0,$4
 mul $0,$3
 mul $0,2
 sub $0,1

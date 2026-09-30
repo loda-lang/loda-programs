@@ -1,7 +1,7 @@
 ; A225203: Table T(n,k) composed of rows equal to: n * (the characteristic function of the multiples of (n+1)), read by downwards antidiagonals.
 ; Submitted by loader3229
 ; 1,0,2,1,0,3,0,0,0,4,1,2,0,0,5,0,0,0,0,0,6,1,0,3,0,0,0,7,0,2,0,0,0,0,0,8,1,0,0,4,0,0,0,0,9,0,0,0,0,0,0,0,0,0,10,1,2,3,0,5,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,12,1,0
-; Formula: a(n) = binomial(gcd(truncate((sqrtint(8*n)-1)/2)+2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)-binomial(gcd(truncate((sqrtint(8*n)-1)/2)+2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)
+; Formula: a(n) = binomial(gcd(floor((sqrtint(8*n)-1)/2)+2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)-binomial(gcd(floor((sqrtint(8*n)-1)/2)+2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)
 
 #offset 1
 

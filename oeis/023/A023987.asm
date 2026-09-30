@@ -6,9 +6,8 @@
 mov $2,$0
 mul $2,3
 bin $2,$0
+seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mov $1,$2
-seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-mov $2,$1
 mul $2,-10
 mul $1,16
 add $1,$2

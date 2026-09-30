@@ -6,15 +6,14 @@
 
 add $0,1
 lpb $0
-  sub $0,5
   mov $2,$0
-  equ $2,1
+  equ $2,6
   mul $1,-4
   add $1,4
   add $3,$2
   mul $3,$1
   sub $0,$2
-  add $0,4
+  sub $0,1
 lpe
 mov $0,$3
 div $0,417530880

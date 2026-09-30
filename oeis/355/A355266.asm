@@ -1,10 +1,100 @@
 ; A355266: Triangle read by rows, T(n, k) = (-1)^(n-k)*Bell(k)*Stirling1(n+1, k+1), for 0 <= k <= n.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,3,2,6,11,12,5,24,50,70,50,15,120,274,450,425,225,52,720,1764,3248,3675,2625,1092,203,5040,13068,26264,33845,29400,16744,5684,877,40320,109584,236248,336420,336735,235872,110838,31572,4140
-; Formula: a(n) = A130534(min(n,70))*A127568(min(n,70))
 
 min $0,70
 mov $1,$0
-seq $1,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
-seq $0,127568 ; Triangle T(n,k) = Bell(k) = A000110(k), 0<=k<=n.
-mul $0,$1
+add $1,1
+mov $9,$1
+mul $9,8
+nrt $9,2
+add $9,1
+div $9,2
+mov $13,0
+mov $8,$9
+bin $8,2
+sub $1,$8
+sub $1,1
+mov $10,$1
+sub $9,$1
+lpb $9
+  sub $9,1
+  mov $11,$8
+  add $11,$10
+  mov $14,$11
+  seq $14,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $14,5
+  gcd $14,0
+  div $14,5
+  mov $22,229383
+  add $10,1
+  mov $12,$10
+  bin $12,2
+  add $12,$1
+  add $12,1
+  mov $15,$12
+  mul $12,8
+  nrt $12,2
+  sub $12,1
+  div $12,2
+  mov $16,$12
+  add $16,1
+  bin $16,2
+  sub $15,$16
+  sub $15,1
+  mov $17,1
+  mov $19,1
+  bin $12,$15
+  mov $18,1
+  mov $20,9
+  mov $21,0
+  mov $11,2
+  mov $11,$14
+  mul $11,$12
+  add $13,$11
+lpe
+mov $1,$13
+mov $2,$0
+mul $2,8
+add $2,1
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+mul $4,$2
+div $4,2
+mov $3,$0
+sub $3,$4
+mov $5,2
+pow $5,$3
+mul $5,66744
+mov $7,$5
+mov $5,3
+pow $5,$3
+mul $5,22260
+add $7,$5
+mov $5,4
+pow $5,$3
+mul $5,5544
+add $7,$5
+mov $5,5
+pow $5,$3
+mul $5,1134
+add $7,$5
+mov $5,6
+pow $5,$3
+mul $5,168
+add $7,$5
+mov $5,7
+pow $5,$3
+mul $5,36
+add $7,$5
+mov $5,9
+pow $5,$3
+add $7,$5
+mov $6,$7
+div $6,362880
+mov $0,$6
+add $0,1
+mul $0,$13

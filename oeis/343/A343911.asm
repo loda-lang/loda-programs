@@ -1,6 +1,7 @@
 ; A343911: a(n) = Omega(phi(n)), where Omega is the number of prime factors of n with multiplicity and phi is the Euler totient function.
 ; Submitted by Penguin
 ; 0,0,1,1,2,1,2,2,2,2,2,2,3,2,3,3,4,2,3,3,3,2,2,3,3,3,3,3,3,3,3,4,3,4,4,3,4,3,4,4,4,3,3,3,4,2,2,4,3,3,5,4,3,3,4,4,4,3,2,4,4,3,4,5,5,3,3,5,3,4,3,4,5,4,4,4,4,4,3,5
+; Formula: a(n) = A001222(A062570(if((n%2)==0,n/2,n)))
 
 #offset 1
 

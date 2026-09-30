@@ -1,4 +1,4 @@
-; A069859: (Largest prime factor of n) modulo (smallest prime factor of n).
+; A069859: a(n) = (greatest prime factor of n) modulo (least prime factor of n).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,2,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,2,1,2,1,0,1,1,1,0,1,0,1,2,1,0,1,0,1,2,1,0,1,1,1,1,1,0,1,0,1,1,0,3,1,0,1,2,1,0,1,0,1,2,1,4,1,0,1
 

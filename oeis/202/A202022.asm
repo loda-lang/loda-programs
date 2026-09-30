@@ -1,7 +1,7 @@
 ; A202022: Characteristic functions of repdigit numbers in decimal representation.
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
-; Formula: a(n) = (n%floor(truncate(10^(logint(max(n,1),10)+1))/9))==0
+; Formula: a(n) = (n%floor((10^(logint(max(n,1),10)+1))/9))==0
 
 mov $1,$0
 max $1,1

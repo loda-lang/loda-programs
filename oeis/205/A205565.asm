@@ -13,5 +13,4 @@ mov $1,2
 pow $1,$2
 mov $0,$1
 div $0,2
-trn $0,1
-add $0,1
+max $0,1

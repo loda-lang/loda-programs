@@ -17,9 +17,9 @@ mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
-add $1,1
 mov $6,$1
-add $1,2
+add $6,1
+add $1,3
 lpb $1
   mov $4,$1
   add $4,$6

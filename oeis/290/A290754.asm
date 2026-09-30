@@ -1,4 +1,4 @@
-; A290754: Number of 3 X n binary matrices that are "primitive"; that is, they cannot be expressed as a "tiling" by a smaller matrix.
+; A290754: Number of 4 X n binary matrices that are "primitive"; that is, they cannot be expressed as a "tiling" by a smaller matrix.
 ; Submitted by rajab
 ; 12,228,4020,65040,1047540,16768860,268419060,4294836480,68719210560,1099509531420,17592181850100,281474943095280,4503599560261620,72057593501073180,1152921503532053580,18446744065119682560,295147905162172956660,4722366482732189753280
 

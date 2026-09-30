@@ -10,11 +10,16 @@ lpb $0
   sub $0,1
   mov $4,$2
   add $4,1
+  mov $12,$4
+  seq $12,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  add $12,1
+  mov $13,$12
+  seq $13,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $11,$4
-  seq $11,48250 ; Sum of the squarefree divisors of n.
+  mov $11,$13
   mov $10,$4
   seq $10,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
-  add $10,$11
+  add $10,$13
   div $10,2
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $4,$10

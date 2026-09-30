@@ -4,8 +4,7 @@
 ; Formula: a(n) = truncate(b(2*n)/3), b(n) = truncate((-6*c(n-1))/n), b(3) = -276, b(2) = 81, b(1) = -18, b(0) = 3, c(n) = -c(n-1)-2*d(n-1)+truncate((-6*c(n-1))/n), c(3) = -546, c(2) = 138, c(1) = -27, c(0) = 3, d(n) = d(n-1)+truncate((-6*c(n-1))/n), d(3) = -210, d(2) = 66, d(1) = -15, d(0) = 3
 
 mov $1,3
-mov $2,3
-mov $3,3
+fil $1,3
 mul $0,2
 lpb $0
   sub $0,1

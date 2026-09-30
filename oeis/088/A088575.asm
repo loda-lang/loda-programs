@@ -4,6 +4,5 @@
 ; Formula: a(n) = A088567(2*n)
 
 mul $0,2
+seq $0,88567 ; Number of "non-squashing" partitions of n into distinct parts.
 mov $1,$0
-seq $1,88567 ; Number of "non-squashing" partitions of n into distinct parts.
-mov $0,$1

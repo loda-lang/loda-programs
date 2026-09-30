@@ -1,7 +1,6 @@
 ; A225468: Triangle read by rows, S_3(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
 ; Submitted by shiva
 ; 1,2,1,4,7,1,8,39,15,1,16,203,159,26,1,32,1031,1475,445,40,1,64,5187,12831,6370,1005,57,1,128,25999,107835,82901,20440,1974,77,1,256,130123,888679,1019746,369061,53998,3514,100,1,512,650871,7239555,12105885,6186600,1287027,124278,5814,126,1,1024,3254867,58567311,140404290,98718285,28066059,3772587,258000,9090,155,1,2048,16275359,471793355,1603014501,1522460280,575841288,103517799,9706587,494340,13585,187,1,4096,81378843
-; Formula: a(n) = truncate(A225472(n)/A032031(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n))
 
 mov $1,$0
 mul $1,8
@@ -12,8 +11,45 @@ div $1,2
 bin $1,2
 mov $3,$0
 sub $3,$1
-seq $3,32031 ; Triple factorial numbers: (3n)!!! = 3^n*n!.
+mov $5,1
+fac $5,$3
+mov $10,0
+mov $4,3
+pow $4,$3
+mul $4,$5
+mov $11,0
+mov $3,$4
+mov $8,0
 mov $2,$0
-seq $2,225472 ; Triangle read by rows, k!*S_3(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
-div $2,$3
+add $2,1
+mov $6,$2
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $7,$6
+add $7,1
+bin $7,2
+sub $2,$7
+sub $2,1
+mov $7,$2
+mov $2,$6
+mov $6,$7
+add $6,2
+lpb $6
+  sub $6,1
+  mov $9,$6
+  mul $9,2
+  add $9,$7
+  pow $9,$2
+  sub $10,$6
+  bin $10,$8
+  mul $10,$9
+  add $11,$10
+  sub $7,1
+  add $8,1
+  mov $10,0
+lpe
+mov $2,$11
+div $2,$4
 mov $0,$2

@@ -12,7 +12,9 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,353394 ; Product of prime shadows of prime indices of n (with multiplicity).
-  seq $3,77106 ; Largest integer cube <= n^2.
+  pow $3,2
+  nrt $3,3
+  pow $3,3
   mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

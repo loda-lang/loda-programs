@@ -1,7 +1,6 @@
 ; A162944: A162943(A010766).
 ; Submitted by Simon Strandgaard
 ; 1,2,1,4,1,1,4,2,1,1,8,2,1,1,1,4,4,2,1,1,1,8,4,2,1,1,1,1,8,4,2,2,1,1,1,1,8,4,4,2,1,1,1,1,1,4,8,4,2,2,1,1,1,1,1,8,8,4,2,2,1,1,1,1,1,1,8,4,4,4,2,2,1,1,1,1,1,1,16,4
-; Formula: a(n) = truncate(A000040(-binomial(truncate((sqrtint(8*binomial(A002321(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))-1,2)+1)+1)/2),2)+binomial(A002321(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))-1,2)+1)^(-binomial(A002321(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))-1,2)+binomial(truncate((sqrtint(8*binomial(A002321(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))-1,2)+8)+3)/2),2)-1))
 
 #offset 1
 

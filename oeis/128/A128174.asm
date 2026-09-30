@@ -1,7 +1,7 @@
 ; A128174: Transform, (1,0,1,...) in every column.
 ; Submitted by Science United
 ; 1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0
-; Formula: a(n) = -n-2*truncate((-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)/2)+binomial(truncate((sqrtint(8*n)+3)/2),2)+1
+; Formula: a(n) = -n-2*truncate((-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)/2)+binomial(floor((sqrtint(8*n)+3)/2),2)+1
 
 #offset 1
 

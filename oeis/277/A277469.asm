@@ -12,7 +12,9 @@ lpb $0
   mod $6,2
   mov $4,$2
   div $4,2
-  seq $4,1818 ; Squares of double factorials: (1*3*5*...*(2n-1))^2 = ((2*n-1)!!)^2.
+  fac $4,$4
+  dir $4,2
+  pow $4,2
   mul $4,$6
   mov $5,$2
   add $5,$9

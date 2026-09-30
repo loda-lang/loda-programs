@@ -6,10 +6,9 @@
 
 pow $0,2
 lpb $0
+  seq $0,260740 ; a(n) = n minus the number of positive squares needed to sum to n using the greedy algorithm: a(n) = n - A053610(n).
   add $1,1
   mov $2,$0
-  seq $2,260740 ; a(n) = n minus the number of positive squares needed to sum to n using the greedy algorithm: a(n) = n - A053610(n).
-  mov $0,$2
 lpe
 mov $0,$1
 sub $0,1

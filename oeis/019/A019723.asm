@@ -5,9 +5,9 @@
 add $0,1
 mul $0,2
 seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
-div $0,9
 mov $1,$0
-div $0,6
+div $1,9
+div $0,54
 lpb $0
   div $2,$0
   add $0,1

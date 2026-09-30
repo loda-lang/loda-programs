@@ -1,6 +1,7 @@
 ; A093703: Numbers whose Roman numeral representation, reversed, is a Roman numeral.
 ; Submitted by loader3229
 ; 1,2,3,4,5,6,9,10,11,19,20,30,40,50,60,90,100,110,190,200,300,400,500,600,900,1000,1100,1900,2000,3000
+; Formula: a(n) = b(n-1), b(n) = 10*b(n-9), b(10) = 20, b(9) = 19, b(8) = 11, b(7) = 10, b(6) = 9, b(5) = 6, b(4) = 5, b(3) = 4, b(2) = 3, b(1) = 2, b(0) = 1
 
 #offset 1
 
@@ -16,7 +17,7 @@ mov $9,11
 mov $10,19
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,10
   mov $11,$1
   mul $11,10

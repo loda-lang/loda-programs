@@ -12,8 +12,7 @@ lpb $5
   add $3,1
   seq $3,327569 ; Exponent of the group SL(2, Z_n).
   div $3,$2
-  sub $3,1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   add $4,1
   sub $5,$0

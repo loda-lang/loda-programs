@@ -1,4 +1,4 @@
-; A111348: Numbers n such that the result of swapping the 3rd and next to the next to the last digit of a number is prime.
+; A111348: Numbers k such that the result of swapping the 3rd and next to the next to the last digit of k is prime.
 ; Submitted by Science United
 ; 101,104,106,107,110,112,113,118,119,124,125,128,130,131,133,134,136,140,142,145,146,149,151,152,157,160,164,166,167,170,172,175,179,181,182,188,191,194,196,199,200,300,301,305,310,311,313,316,320,322,325
 

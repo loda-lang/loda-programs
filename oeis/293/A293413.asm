@@ -11,8 +11,7 @@ lpb $1
   sub $1,1
 lpe
 add $2,$0
-add $0,1
-neq $0,1
+neq $0,0
 add $3,$2
 add $3,$0
 add $4,$3

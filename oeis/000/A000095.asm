@@ -1,4 +1,4 @@
-; A000095: Number of fixed points of GAMMA_0 (n) of type i.
+; A000095: Number of fixed points of Gamma_0 (n) of type i.
 ; Submitted by Simon Strandgaard
 ; 1,2,0,0,2,0,0,0,0,4,0,0,2,0,0,0,2,0,0,0,0,0,0,0,2,4,0,0,2,0,0,0,0,4,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,4,0,0,2,0,0,0,0,4,0,0,2,0,0,0,4,0,0,0,0,0,0,0,2,4,0,0,0,0,0,0
 

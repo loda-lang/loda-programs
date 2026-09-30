@@ -1,20 +1,49 @@
 ; A157449: Difference between n and the sum of its divisors except 1 and itself.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,3,2,5,1,7,2,6,3,11,-3,13,5,7,2,17,-2,19,-1,11,9,23,-11,20,11,15,1,29,-11,31,2,19,15,23,-18,37,17,23,-9,41,-11,43,5,13,21,47,-27,42,8,31,7,53,-11,39,-7,35,27,59,-47,61,29,23,2,47,-11,67,11,43,-3,71,-50,73,35,27,13,59,-11,79,-25,42
-; Formula: a(n) = -A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)+2*n+1
 
 #offset 2
 
 mov $2,$0
 mov $4,$0
 sub $4,1
+mov $8,0
 mul $0,2
 mov $3,$2
 dir $3,2
-seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $7,$3
+sub $7,1
+mov $6,$3
+dir $6,2
+mov $11,$6
+mov $10,$6
+nrt $10,2
+lpb $10
+  max $10,1
+  mov $12,$6
+  mod $12,$10
+  equ $12,0
+  mov $9,$6
+  div $9,$10
+  add $9,$10
+  mul $9,$12
+  add $8,$9
+  sub $10,1
+lpe
+nrt $6,2
+mov $10,$6
+pow $10,2
+sub $10,$11
+equ $10,0
+mul $6,$10
+sub $8,$6
+mov $5,$3
+bxo $5,$7
+mul $5,$8
 bxo $2,$4
-mul $2,$3
+mul $2,$5
 sub $2,$0
+mov $3,$5
 mov $1,13
 sub $1,$2
 mov $0,$1

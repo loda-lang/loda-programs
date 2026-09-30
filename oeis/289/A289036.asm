@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,153307 ; Numbers n such that 14*n+3 is not prime.
+  seq $3,153307 ; Numbers k such that 14*k+3 is not prime.
   sub $3,1
   add $0,1
   mov $1,1

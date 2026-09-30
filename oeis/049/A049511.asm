@@ -14,9 +14,9 @@ lpb $2
   add $3,2
   seq $3,6005 ; The odd prime numbers together with 1.
   div $3,2
-  mul $3,2
   mov $5,$3
-  mul $3,2
+  mul $5,2
+  mul $3,4
   gcd $3,4
   add $3,1
   gcd $3,$5

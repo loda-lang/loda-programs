@@ -13,9 +13,8 @@ lpb $2
   add $3,1
   seq $3,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
   seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-  sub $3,1
   mov $6,$3
-  add $3,1
+  sub $6,1
   seq $3,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $6,$3
   mov $3,$6
@@ -38,9 +37,8 @@ lpb $2
   nrt $8,2
   div $8,2
   pow $8,2
+  div $3,$8
   mov $7,$3
-  div $7,$8
-  mov $3,$7
   equ $3,1
   sub $0,$3
   mov $4,$0

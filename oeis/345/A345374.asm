@@ -11,7 +11,6 @@ div $0,3
 add $0,1
 seq $0,66205 ; a(n) = Product_{k=1..n} prime(2k-1), where prime(k) is k-th prime.
 pow $0,10
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1
 seq $0,56169 ; Number of unitary prime divisors of n.

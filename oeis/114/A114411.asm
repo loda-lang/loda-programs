@@ -1,7 +1,7 @@
 ; A114411: Triple primorial n### = n#3.
 ; Submitted by Jamie Morken(w3)
 ; 1,2,3,5,14,33,65,238,627,1495,6902,19437,55315,282982,835791,2599805,14998046,49311669,158588105,1004869082,3501128499,11576931665,79384657478,290593665417,1030346918185,7700311775366,29349960207117
-; Formula: a(n) = b(n+3), b(n) = A008578(max(n-3,0)+1)*b(n-3), b(2) = 1, b(1) = 1, b(0) = 1
+; Formula: a(n) = b(n+3), b(n) = floor((A000040(max(max(n-3,0),1))*(if(max(n-3,0)==0,max(n-3,0),if((max(n-3,0)%max(n-3,0))==0,max(n-3,0)/max(n-3,0),max(n-3,0)))+1))/2)*b(n-3), b(2) = 1, b(1) = 1, b(0) = 1
 
 mov $1,1
 add $0,3
@@ -9,8 +9,16 @@ lpb $0
   sub $0,3
   mov $2,$0
   max $2,0
-  add $2,1
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  mul $1,$2
+  mov $3,$2
+  dif $3,$2
+  add $3,1
+  mov $4,$2
+  max $4,1
+  seq $4,40 ; The prime numbers.
+  mul $3,$4
+  mov $4,$3
+  div $4,2
+  mul $1,$4
+  mov $2,$4
 lpe
 mov $0,$1

@@ -1,4 +1,4 @@
-; A043782: Numbers n such that number of runs in base 3 representation of n is congruent to 2 mod 5.
+; A043782: Numbers k such that number of runs in base 3 representation of k is congruent to 2 mod 5.
 ; Submitted by pnbbfr
 ; 3,5,6,7,9,12,14,17,18,22,24,25,27,36,39,41,44,53,54,67,72,76,78,79,81,108,117,120,122,125,134,161,162,202,216,229,234,238,240,241,243,324,351,360,363,365,368,377,404,485,486,607,648
 

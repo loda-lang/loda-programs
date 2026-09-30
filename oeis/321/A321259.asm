@@ -6,9 +6,9 @@
 
 mov $2,$0
 lpb $0
-  sub $0,1
   mov $5,$0
-  equ $5,0
+  equ $5,1
+  sub $0,1
   add $0,$5
   mov $3,$2
   dif $3,$0

@@ -14,13 +14,13 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,168046 ; Characteristic function of zerofree numbers in decimal representation.
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     sub $4,$0
     mul $7,$$9
     add $5,1

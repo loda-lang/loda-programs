@@ -1,4 +1,4 @@
-; A079815: Number of equivalent classes of n X n 0-1 matrices with 3 1's in each row and column.
+; A079815: Erroneous version of A000512.
 ; Submitted by BrandyNOW
 ; 0,0,1,1,2,7,16,71
 ; Formula: a(n) = e(max(n-2,0)), b(n) = -3*truncate(b(n-1)/3)+b(n-1)+2, b(3) = 2, b(2) = 3, b(1) = 1, b(0) = -1, c(n) = c(n-1)*(-3*truncate(b(n-1)/3)+b(n-1)+2)+c(n-2), c(3) = 16, c(2) = 7, c(1) = 2, c(0) = 1, d(n) = c(n-1), d(3) = 7, d(2) = 2, d(1) = 1, d(0) = 1, e(n) = d(n-1), e(3) = 2, e(2) = 1, e(1) = 1, e(0) = 0

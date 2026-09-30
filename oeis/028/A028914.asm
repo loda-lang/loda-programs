@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,28913 ; First differences of A007952.
 mov $1,$0
-seq $1,28913 ; First differences of A007952.
-mov $0,$1
 div $0,2

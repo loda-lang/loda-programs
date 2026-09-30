@@ -12,8 +12,7 @@ lpb $0
     add $2,1
     mov $1,1260
     gcd $1,$2
-    sub $1,1
-    equ $1,0
+    equ $1,1
     sub $3,$1
   lpe
   sub $0,1

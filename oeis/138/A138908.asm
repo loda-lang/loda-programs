@@ -1,11 +1,10 @@
 ; A138908: a(n) = d^d, where d is the number of digits in n.
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,1,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
-; Formula: a(n) = truncate(logint(10*n+1,10)^logint(10*n+1,10))
+; Formula: a(n) = logint(10*n+1,10)^logint(10*n+1,10)
 
 mul $0,10
 add $0,1
 log $0,10
+pow $0,$0
 mov $1,$0
-pow $1,$1
-mov $0,$1

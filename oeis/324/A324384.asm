@@ -5,6 +5,5 @@
 
 mov $2,$0
 seq $0,276154 ; a(n) = Shift primorial base representation (A049345) of n left by one digit (append one zero to the right, then convert back to decimal).
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

@@ -27,7 +27,6 @@ lpe
 div $0,$3
 mov $2,$0
 equ $2,2
+equ $0,1
 mov $1,$0
-equ $1,1
-mov $0,$1
 sub $0,$2

@@ -6,6 +6,5 @@
 #offset 1
 
 seq $0,79635 ; Sum of (2 - p mod 4) for all prime factors p of n (with repetition).
+equ $0,0
 mov $1,$0
-equ $1,0
-mov $0,$1

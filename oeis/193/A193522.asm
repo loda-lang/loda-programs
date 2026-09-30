@@ -7,10 +7,9 @@
 add $0,1
 mov $1,-1
 pow $1,$0
-sub $0,1
 mov $2,$0
-neq $2,0
-add $0,2
+neq $2,1
+add $0,1
 lpb $0
   sub $0,1
   mov $4,$0

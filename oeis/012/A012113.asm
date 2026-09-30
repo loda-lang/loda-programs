@@ -9,10 +9,10 @@ mul $0,2
 sub $0,1
 mov $1,$0
 mul $1,2
-sub $1,1
 mov $2,$1
-sub $1,1
+sub $1,2
 gcd $1,2
+sub $2,1
 div $2,2
 add $2,1
 seq $2,12262 ; Expansion of e.g.f. exp(arctanh(arcsinh(x))).

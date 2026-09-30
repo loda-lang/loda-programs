@@ -17,9 +17,8 @@ lpb $2
   div $5,2
   mov $3,$1
   gcd $3,2
-  sub $3,2
   add $3,$5
-  trn $3,3
+  trn $3,5
   min $3,1
   sub $0,$3
   add $1,1

@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,70323 ; Let M_n be the n X n matrix m(i,j) = min(prime(i), prime(j)); then a(n) = det(M_n).
-add $1,1
 seq $1,40 ; The prime numbers.
 mul $1,$0
 mov $0,$1

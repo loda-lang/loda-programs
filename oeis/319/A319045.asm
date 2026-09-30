@@ -1,6 +1,7 @@
 ; A319045: Length of longest run of consecutive odd numbers having exactly n divisors.
 ; Submitted by BrandyNOW
 ; 1,3,1,8,1,8,1,17,1
+; Formula: a(n) = floor((sqrtint(5*valuation(n,2)*n^2)+valuation(n,2))/2)+1
 
 #offset 1
 

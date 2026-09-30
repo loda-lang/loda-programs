@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+  seq $3,8441 ; Number of ordered ways of writing n as the sum of 2 triangular numbers.
   neq $3,0
   add $5,1
   sub $0,$3
@@ -22,6 +22,5 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-mul $0,4
-sub $0,3
-mul $0,2
+mul $0,8
+sub $0,6

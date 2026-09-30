@@ -22,8 +22,7 @@ lpb $2
   add $5,4
   sub $0,$3
   add $0,1
-  mul $1,0
-  add $1,$5
+  mov $1,$5
   dif $1,2
   mov $4,$0
   max $4,0

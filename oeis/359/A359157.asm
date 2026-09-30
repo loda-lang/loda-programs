@@ -13,13 +13,11 @@ lpb $2
   dir $3,4
   seq $3,73184 ; Number of cubefree divisors of n.
   mov $5,$3
-  trn $3,56
-  add $3,56
+  max $3,56
   mul $3,$5
   sub $3,32
   mod $3,3
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

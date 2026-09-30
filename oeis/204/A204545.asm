@@ -1,7 +1,7 @@
 ; A204545: Symmetric matrix: f(i,j)=floor[(i+j+3)/4]-floor[(i+j+1)/4], by (constant) antidiagonals.
 ; Submitted by omegaintellisys
 ; 1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate((truncate((sqrtint(8*n-7)+1)/4)+1)/2)+truncate((sqrtint(8*n-7)+1)/4)+1
+; Formula: a(n) = (floor((sqrtint(8*n-7)+1)/4)+1)%2
 
 #offset 1
 

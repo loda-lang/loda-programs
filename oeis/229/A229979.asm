@@ -7,8 +7,10 @@ lpb $2
   trn $2,1
   mov $3,$2
   seq $3,129814 ; a(n) = Bernoulli(n) * (n+1)!.
+  mov $4,0
+  sub $4,$2
   mov $1,$2
-  seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  fac $1,$4
   gcd $1,$3
   div $3,$1
   mov $1,$3

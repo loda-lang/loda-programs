@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $2,64614 ; Exchange 2 and 3 in the prime factorization of n.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

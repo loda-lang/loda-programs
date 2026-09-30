@@ -5,7 +5,7 @@
 #offset 1
 
 mov $1,1
-seq $0,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+seq $0,140347 ; Duplicate of A002808.
 lpb $0
   mov $2,$0
   mod $2,10

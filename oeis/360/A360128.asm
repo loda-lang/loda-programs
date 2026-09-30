@@ -22,6 +22,5 @@ mov $6,$7
 add $6,1
 max $6,2
 mov $3,$6
-sub $3,1
-equ $3,1
+equ $3,2
 mov $0,$3

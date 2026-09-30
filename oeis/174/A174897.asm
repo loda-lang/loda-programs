@@ -14,7 +14,10 @@ lpb $2
   sub $0,$2
   mov $5,$0
   add $0,1
-  seq $0,7955 ; Product of divisors of n.
+  mov $6,$0
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  pow $0,$6
+  nrt $0,2
   sub $0,1
   sub $0,$5
   equ $0,$2

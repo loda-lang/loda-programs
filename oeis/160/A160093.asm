@@ -1,6 +1,7 @@
 ; A160093: Number of digits in n, excluding any trailing zeros.
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1
+; Formula: a(n) = logint(n/(10^valuation(n,10)),10)+1
 
 #offset 1
 

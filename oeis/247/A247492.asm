@@ -1,7 +1,7 @@
 ; A247492: Triangle read by rows: T(n, k) = binomial(k-1, n-k)*(n+1)/(n+1-k), 0 <= k <= n.
 ; Submitted by loader3229
 ; 1,-1,2,1,0,3,-1,0,2,4,1,0,0,5,5,-1,0,0,2,9,6,1,0,0,0,7,14,7,-1,0,0,0,2,16,20,8,1,0,0,0,0,9,30,27,9,-1,0,0,0,0,2,25,50,35,10,1,0,0,0,0,0,11,55,77,44,11,-1,0,0,0,0,0,2,36,105,112,54,12
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n-1,2*n-truncate((sqrtint(8*n+8)-1)/2)-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-1)+binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n,2*n-truncate((sqrtint(8*n+8)-1)/2)-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-1)
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n-1,2*n-floor((sqrtint(8*n+8)-1)/2)-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-1)+binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n,2*n-floor((sqrtint(8*n+8)-1)/2)-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-1)
 
 add $0,1
 mov $2,$0

@@ -15,7 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
-    seq $7,6359 ; Number of distributive lattices; also number of paths with n turns when light is reflected from 6 glass plates.
+    seq $7,6359 ; Number of antichains in the product of a fence poset with n elements and a chain with 5 elements; also number of paths with n turns when light is reflected from 6 glass plates.
     mul $7,2
     sub $4,1
     mul $7,$$9

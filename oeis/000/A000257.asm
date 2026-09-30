@@ -7,9 +7,9 @@ equ $3,$0
 sub $0,1
 mov $1,2
 pow $1,$0
-add $0,3
 mov $2,$0
-sub $0,2
+add $2,3
+add $0,1
 mov $4,$0
 mul $0,2
 bin $0,$4

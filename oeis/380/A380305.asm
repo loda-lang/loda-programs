@@ -1,7 +1,7 @@
 ; A380305: Triangle read by rows: T(n,k) = (n - floor((n - k)/k)) mod k, for 0 < k <= n.
 ; Submitted by Groo
 ; 0,0,0,0,1,0,0,1,1,0,0,0,2,1,0,0,0,2,2,1,0,0,1,0,3,2,1,0,0,1,1,3,3,2,1,0,0,0,1,0,4,3,2,1,0,0,0,2,1,4,4,3,2,1,0,0,1,0,2,0,5,4,3,2,1,0,0,1,0,2,1,5,5,4,3,2,1,0,0,0
-; Formula: a(n) = -truncate((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))+truncate((sqrtint(8*n)+1)/2)+1)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))+truncate((sqrtint(8*n)+1)/2)+1
+; Formula: a(n) = -truncate((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))+floor((sqrtint(8*n)+1)/2)+1)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))+floor((sqrtint(8*n)+1)/2)+1
 
 #offset 1
 

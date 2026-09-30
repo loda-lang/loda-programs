@@ -11,7 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,1842 ; Expansion of Sum_{n>=0} x^(4*n+3)/(1 - x^(4*n+3)).
+  seq $3,1842 ; Number of divisors of n of the form 4*k+3.
   min $3,1
   sub $0,$3
   add $1,4

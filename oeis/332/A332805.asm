@@ -4,16 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 pow $2,5
 lpb $2
   mov $4,$1
   min $4,1
   mov $3,$1
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,111745 ; a(2k-1) = k-th prime congruent to 3 mod 4, a(2k) = k-th prime congruent to 1 mod 4.
   sub $3,1
   add $3,$4

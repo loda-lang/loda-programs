@@ -5,13 +5,12 @@
 
 #offset 1
 
-add $0,1
 mov $2,$0
-sub $0,2
+sub $0,1
+add $2,1
 seq $2,137516 ; Let 2n = p + q where p and q are primes. Take the p and q that produce the smallest product, then set a(n) = p*q - 2n.
 add $2,$0
 add $0,$2
 add $0,4
+seq $0,241917 ; If n is a prime with index i, p_i, a(n) = i, (with a(1)=0), otherwise difference (i-j) of the indices of the two largest primes p_i, p_j, i >= j in the prime factorization of n: a(n) = A061395(n) - A061395(A052126(n)).
 mov $1,$0
-seq $1,241917 ; If n is a prime with index i, p_i, a(n) = i, (with a(1)=0), otherwise difference (i-j) of the indices of the two largest primes p_i, p_j, i >= j in the prime factorization of n: a(n) = A061395(n) - A061395(A052126(n)).
-mov $0,$1

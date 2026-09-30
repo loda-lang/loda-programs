@@ -20,8 +20,7 @@ lpb $3
   seq $7,19554 ; Smallest number whose square is divisible by n.
   div $6,$7
   mov $4,$6
-  add $4,1
-  equ $4,1
+  equ $4,0
   sub $1,$4
   add $2,1
   mov $5,$1

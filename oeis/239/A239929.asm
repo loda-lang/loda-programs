@@ -1,4 +1,4 @@
-; A239929: Numbers n with the property that the symmetric representation of sigma(n) has two parts.
+; A239929: Numbers k with the property that the symmetric representation of sigma(k) has two parts.
 ; Submitted by Orange Kid
 ; 3,5,7,10,11,13,14,17,19,22,23,26,29,31,34,37,38,41,43,44,46,47,52,53,58,59,61,62,67,68,71,73,74,76,78,79,82,83,86,89,92,94,97,101,102,103,106,107,109,113,114,116,118,122,124,127,131,134,136,137,138
 

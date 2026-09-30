@@ -13,8 +13,7 @@ lpb $2
   seq $3,7092 ; Numbers in base 6.
   div $3,2
   seq $3,316866 ; Number of times 5 appears in decimal expansion of n.
-  sub $3,2
-  equ $3,1
+  equ $3,3
   sub $0,$3
   add $1,1
   add $1,$3

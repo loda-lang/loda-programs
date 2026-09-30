@@ -1,7 +1,7 @@
 ; A134447: A002260 * A128174.
 ; Submitted by loader3229
 ; 1,1,2,4,2,3,4,6,3,4,9,6,8,4,5,9,12,8,10,5,6,16,12,15,10,12,6,7,16,20,15,18,12,14,7,8,25,20,24,18,21,14,16,8,9,25,30,24,28,21,24,16,18,9,10
-; Formula: a(n) = (truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2)+1)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2)+n)
+; Formula: a(n) = (truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)/2)+1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)/2)+n)
 
 #offset 1
 

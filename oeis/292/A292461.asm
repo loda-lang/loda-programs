@@ -12,8 +12,7 @@ lpb $4
   lpb $3
     sub $3,1
     mov $0,$2
-    sub $0,2
-    trn $0,1
+    trn $0,3
     seq $0,292460 ; Expansion of (1 - x - x^2 - sqrt((1 - x - x^2)^2 - 4*x^3))/(2*x^3) in powers of x.
     add $1,$0
     max $4,1

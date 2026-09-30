@@ -5,10 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
+sub $1,1
 min $1,1
 mul $1,$0
 add $0,$1

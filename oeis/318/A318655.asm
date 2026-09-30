@@ -1,6 +1,7 @@
 ; A318655: The 2-adic valuation of A318649, the numerators of "Dirichlet Square Root" of squares.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,1,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = max(2*valuation(n,2)-A317946(n^2),0)
 
 #offset 1
 

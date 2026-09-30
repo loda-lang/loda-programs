@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   dgs $3,10
   mod $3,10
-  sub $3,4
-  equ $3,0
+  equ $3,4
   sub $0,$3
   add $1,3
   mov $4,$0

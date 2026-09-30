@@ -7,7 +7,7 @@
 seq $0,76957 ; Smallest k such that there are exactly n primes strictly between k^2 and (k+1)^2.
 mov $1,$0
 lpb $0
-  mul $0,0
+  mov $0,0
   mul $1,40
   pow $1,2
 lpe

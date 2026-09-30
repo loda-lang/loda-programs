@@ -1,6 +1,7 @@
 ; A221837: Number of integer Heron triangles of height n such that the angles adjacent to the base are not right.
 ; Submitted by Science United
 ; 0,0,1,1,1,1,1,4,4,1,1,16,1,1,16,9,1,4,1,16,16,1,1,49,4,1,9,16,1,16,1,16,16,1,16,49,1,1,16,49,1,16,1,16,49,1,1,100,4,4,16,16,1,9,16,49,16,1,1,169,1,1,49,25,16,16,1,16,16,16,1,144,1,1,49,16,16,16,1,100
+; Formula: a(n) = truncate(A146564(if((n%2)==0,n/2,n))/3)^2
 
 #offset 1
 

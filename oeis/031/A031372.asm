@@ -9,9 +9,8 @@ sub $0,1
 mul $0,6
 mov $1,$0
 add $1,5
+seq $1,40 ; The prime numbers.
 mov $2,$1
-seq $2,40 ; The prime numbers.
-mov $1,$2
 sub $1,11
 div $1,2
 add $1,1

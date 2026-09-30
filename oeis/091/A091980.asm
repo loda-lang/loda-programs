@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,355108 ; Maximal number of root ancestral configurations among matching gene trees and species trees with n leaves.
 mov $1,$0
-seq $1,355108 ; Maximal number of root ancestral configurations among matching gene trees and species trees with n leaves.
-mov $0,$1
 add $0,1

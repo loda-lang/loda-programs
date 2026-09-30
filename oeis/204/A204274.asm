@@ -5,11 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,2
+add $0,1
 seq $0,207846 ; Number of 3 X n 0..1 arrays avoiding 0 0 0 and 0 0 1 horizontally and 0 0 0 and 1 1 1 vertically.
-add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mod $1,2
 mul $0,$1

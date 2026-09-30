@@ -1,6 +1,7 @@
 ; A365722: The number of prime factors (with multiplicity) in A356867(1+n), where A356867 is Sycamore's Doudna variant D(3).
 ; Submitted by Ralfy
 ; 0,1,1,1,2,2,2,3,2,1,2,2,2,3,3,3,4,3,2,3,3,3,4,4,4,5,3,1,2,2,2,3,3,3,4,3,2,3,3,3,4,4,4,5,4,3,4,4,4,5,5,5,6,4,2,3,3,3,4,4,4,5,4,3,4,4,4,5,5,5,6,5,4,5,5,5,6,6,6,7
+; Formula: a(n) = -if((2*n+2)==0,0,valuation(2*n+2,3))+sumdigits(n,3)
 
 mov $1,$0
 dgs $1,3

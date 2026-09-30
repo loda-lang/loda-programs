@@ -1,6 +1,7 @@
 ; A132003: Expansion of (phi(q^3) / phi(q)) * phi(-q^2) * phi(-q^6) in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by Simon Strandgaard
 ; 1,-2,2,-2,2,-4,2,0,2,-2,4,0,2,-4,0,-4,2,-4,2,0,4,0,0,0,2,-6,4,-2,0,-4,4,0,2,0,4,0,2,-4,0,-4,4,-4,0,0,0,-4,0,0,2,-2,6,-4,4,-4,2,0,0,0,4,0,4,-4,0,0,2,-8,0,0,4,0,0,0,2,-4,4,-6,0,0,4,0
+; Formula: a(n) = (2*gcd(A035154(2*floor(((max(n-1,0)+1)/(2^valuation(max(n-1,0)+1,2)))/2)+1)*(-1)^floor(((max(n-1,0)+1)/(2^valuation(max(n-1,0)+1,2)))/2),A035154(2*floor(((max(n-1,0)+1)/(2^valuation(max(n-1,0)+1,2)))/2)+1)*(-1)^floor(((max(n-1,0)+1)/(2^valuation(max(n-1,0)+1,2)))/2))-max(n-1,0)+n-1)*(-1)^n
 
 mov $1,-1
 pow $1,$0

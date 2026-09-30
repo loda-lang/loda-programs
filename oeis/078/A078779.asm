@@ -12,8 +12,7 @@ lpb $2
   add $3,1
   dif $3,2
   seq $3,7424 ; a(n) = 1 if n is squarefree, otherwise 2.
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

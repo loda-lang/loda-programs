@@ -4,16 +4,21 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,2
+add $0,1
 mov $1,22
-add $2,7
+add $2,6
 pow $2,2
 lpb $2
+  mov $6,1
+  fac $6,$1
+  mov $5,$1
+  add $5,2
   mov $3,$1
-  add $3,1
-  seq $3,71637 ; Largest exponent k >=0 such that (n+1)^k divides n!.
+  mul $3,2
+  div $3,$5
+  mul $3,$6
+  lex $3,$5
   trn $3,5
   min $3,1
   sub $0,$3

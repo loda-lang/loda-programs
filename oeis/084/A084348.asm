@@ -1,4 +1,4 @@
-; A084348: Triangle in which row n gives periodic part of a certain map.
+; A084348: Triangle read by rows: T(n,k) = floor(e*k!) - n*floor(e*k!/n).
 ; Submitted by loader3229
 ; 0,0,1,2,2,1,2,1,0,1,2,0,1,0,1,2,5,4,5,2,1,2,5,2,2,4,4,1,2,5,0,1,6,5,4,1,2,5,7,2,2,4,2,8,1,2,5,6,5,6,7,0,1,0,1,2,5,5,10,7,10,5,8,7,5,1,2,5,4,5,2,1,8,5,10,5,8,1,2,5
 

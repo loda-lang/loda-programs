@@ -5,10 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-sub $0,100
-sub $1,99
+sub $0,101
+sub $1,100
 div $1,$0
 mov $0,$1
 add $0,111

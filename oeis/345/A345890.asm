@@ -11,9 +11,9 @@ lpb $2
   mov $2,3
   add $0,1
   seq $0,65855 ; Number of composites <= n.
-  add $0,2
   mov $3,$0
-  equ $0,1
+  add $3,2
+  equ $0,-1
 lpe
 mul $1,$3
 mov $0,$1

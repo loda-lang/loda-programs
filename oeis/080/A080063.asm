@@ -1,4 +1,4 @@
-; A080063: a(n) = n mod (spf(n)+1), where spf(n) is the smallest prime dividing n (A020639).
+; A080063: a(n) = n mod (lpf(n)+1), where lpf(n) is the least prime dividing n (A020639).
 ; Submitted by Science United
 ; 1,2,3,1,5,0,7,2,1,1,11,0,13,2,3,1,17,0,19,2,1,1,23,0,1,2,3,1,29,0,31,2,1,1,5,0,37,2,3,1,41,0,43,2,1,1,47,0,1,2,3,1,53,0,1,2,1,1,59,0,61,2,3,1,5,0,67,2,1,1,71,0,73,2,3,1,5,0,79,2
 

@@ -10,8 +10,7 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-add $0,1
-equ $0,1
+equ $0,0
 mul $0,$1
 add $1,2
 mul $1,2

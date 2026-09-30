@@ -1,7 +1,7 @@
 ; A214604: Odd numbers by transposing the right half of A176271, triangle read by rows: T(n,k) = A176271(n - 1 + k, n), 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,5,9,11,17,25,19,27,37,49,29,39,51,65,81,41,53,67,83,101,121,55,69,85,103,123,145,169,71,87,105,125,147,171,197,225,89,107,127,149,173,199,227,257,289,109,129,151,175,201,229,259,291,325,361,131,153,177,203,231,261,293,327,363,401,441,155,179,205,233,263,295,329,365,403,443,485,529,181,207
-; Formula: a(n) = 2*binomial(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n,2)+2*truncate((sqrtint(8*n)-1)/2)+1
+; Formula: a(n) = 2*binomial(-binomial(floor((sqrtint(8*n)-1)/2),2)+n,2)+2*floor((sqrtint(8*n)-1)/2)+1
 
 #offset 1
 

@@ -4,8 +4,7 @@
 ; Formula: a(n) = b(n)^2, b(n) = n*b(n-2)+2*b(n-1)-b(n-2), b(4) = 43, b(3) = 14, b(2) = 5, b(1) = 2, b(0) = 1
 
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 lpb $0
   sub $0,1
   add $1,1

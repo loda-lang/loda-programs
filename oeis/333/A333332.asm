@@ -7,8 +7,7 @@
 mov $1,$0
 sub $0,2
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,73733 ; Numerators of convergents to log_2(10).
   mov $1,$0
   mov $0,0

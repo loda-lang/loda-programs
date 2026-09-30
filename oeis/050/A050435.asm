@@ -10,7 +10,6 @@ mul $1,-2
 div $1,$0
 sub $0,$1
 seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
+seq $0,72668 ; Numbers one less than composite numbers.
 mov $2,$0
-seq $2,72668 ; Numbers one less than composite numbers.
-mov $0,$2
 add $0,1

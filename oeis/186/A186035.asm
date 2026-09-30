@@ -16,6 +16,5 @@ lpb $1
   sub $0,2
   equ $1,$0
 lpe
+add $0,1
 mov $2,$0
-add $2,1
-mov $0,$2

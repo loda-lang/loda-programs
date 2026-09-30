@@ -1,7 +1,7 @@
 ; A110503: Triangle, read by rows, which shifts one column left under matrix inverse.
 ; Submitted by loader3229
 ; 1,1,1,1,-1,1,1,-2,1,1,1,-1,1,-1,1,1,-1,1,-2,1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-2,1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-2,1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-2,1,1,1,-1
-; Formula: a(n) = max(3*(truncate((sqrtint(8*n)-1)/2)==(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))-2,truncate((-1)^(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))*max(((truncate((sqrtint(8*n)-1)/2)-2)==(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))-binomial(floor((sqrtint(8*n+1)+1)/2),2)-2*truncate((-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n)/2)+n,1))
+; Formula: a(n) = max(3*(truncate((sqrtint(8*n)-1)/2)==(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))-2,max(((truncate((sqrtint(8*n)-1)/2)-2)==(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))-binomial(floor((sqrtint(8*n+1)+1)/2),2)-2*truncate((-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n)/2)+n,1)*if(((-1)^2)==1,(-1)^(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n),if((-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n)<=(-1),0,(-1)^(-binomial(floor((sqrtint(8*n+1)+1)/2),2)+n))))
 
 mov $1,$0
 mul $0,8

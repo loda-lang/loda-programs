@@ -12,7 +12,17 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,118680 ; Numerator of determinant of n X n matrix with M(i,j) = (i+1)/i if i=j otherwise 1.
+  mov $6,$1
+  bin $6,2
+  add $6,$3
+  add $6,$3
+  mov $7,0
+  sub $7,$3
+  fac $3,$7
+  gcd $3,$6
+  mov $5,$6
+  div $5,$3
+  mov $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

@@ -1,7 +1,7 @@
 ; A132918: Identity matrix with interpolated zeros.
 ; Submitted by Owdjim
 ; 1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = sqrtint(2*n)*((2*n)==(sqrtint(2*n)*(sqrtint(2*n)+1)))-2*truncate((sqrtint(2*n)*((2*n)==(sqrtint(2*n)*(sqrtint(2*n)+1))))/2)
+; Formula: a(n) = (sqrtint(2*n)*((2*n)==(sqrtint(2*n)*(sqrtint(2*n)+1))))%2
 
 #offset 1
 

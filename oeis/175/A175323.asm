@@ -18,13 +18,12 @@ lpb $4
   pow $0,$1
   seq $0,341915 ; For any nonnegative number n with runs in binary expansion (r_1, ..., r_w), a(n) = Sum_{k = 1..w} 2^(r_1 + ... + r_k - 1).
   seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+  seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mov $7,$0
-  seq $7,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  mov $0,$7
   seq $0,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
-  sub $0,2
   mov $6,$0
-  equ $6,0
+  equ $6,2
+  sub $0,2
   mov $0,$6
   mul $0,$5
   mul $1,$0

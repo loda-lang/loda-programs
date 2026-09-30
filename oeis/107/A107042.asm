@@ -1,6 +1,7 @@
 ; A107042: First differences of indices of squarefree Catalan numbers.
 ; Submitted by mmonnin
 ; 1,1,1,1,2,1,1,2,6,2,12,4
+; Formula: a(n) = truncate((5*truncate((if((A018662(n+1)%4)==0,A018662(n+1)/4,A018662(n+1))-floor((if((A018662(n+1)%4)==0,A018662(n+1)/4,A018662(n+1))+8)/7))/3))/4)+1
 
 add $0,1
 seq $0,18662 ; Divisors of 816.

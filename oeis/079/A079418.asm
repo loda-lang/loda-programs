@@ -8,10 +8,10 @@ sub $0,1
 mov $2,$0
 mul $2,10
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  add $3,1
-  mov $5,$3
-  add $3,1
+  add $3,2
   seq $3,40 ; The prime numbers.
   mov $6,$5
   add $6,1

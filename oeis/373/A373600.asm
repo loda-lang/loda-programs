@@ -4,6 +4,5 @@
 ; Formula: a(n) = A001414(A276086(n))
 
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
 mov $1,$0
-seq $1,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-mov $0,$1

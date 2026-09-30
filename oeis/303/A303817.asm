@@ -8,8 +8,9 @@
 sub $0,2
 mov $1,10
 pow $1,$0
-mul $1,2
 mov $2,$1
+mul $2,2
+mul $1,2
 div $1,17
 add $2,$1
 mov $0,$2

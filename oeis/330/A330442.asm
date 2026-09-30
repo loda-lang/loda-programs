@@ -1,6 +1,6 @@
 ; A330442: The number of free polyominoes with n cells which, when drawn on a 2D square grid, contain an Eulerian path.
 ; Submitted by Ralfy
-; 1,1,1,2,3,6,8,18
+; 1,1,1,2,3,6,8,18,28,60,102,206,380,752,1399,2759,5277,10213,19615,38147,73343,141740,273508,528519,1017858,1964393,3787009,7298120,14054797,27077565,52123798
 ; Formula: a(n) = truncate(binomial(n-1,truncate((n-2)/2))/2)+1
 
 #offset 1
@@ -10,7 +10,6 @@ sub $1,2
 div $1,2
 sub $0,1
 bin $0,$1
+div $0,2
 mov $1,$0
-div $1,2
-mov $0,$1
 add $0,1

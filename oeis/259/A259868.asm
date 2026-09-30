@@ -32,8 +32,7 @@ lpb $3
   gcd $1,$5
   add $1,$5
   mul $2,2
-  trn $2,$1
-  add $2,$1
+  max $2,$1
 lpe
 mov $1,$2
 div $1,2

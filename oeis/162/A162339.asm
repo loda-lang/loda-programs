@@ -16,8 +16,7 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $6,$3
-  trn $6,1
-  add $6,1
+  max $6,1
   seq $6,40 ; The prime numbers.
   seq $6,13632 ; Difference between n and the next prime greater than n.
   mov $3,$6

@@ -4,14 +4,21 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,1704 ; a(n) = n concatenated with n + 1.
+  mov $4,$1
+  add $4,2
+  mov $6,$4
+  log $4,10
+  add $4,1
+  mov $5,10
+  pow $5,$4
+  mul $3,$5
+  add $3,$6
   gcd $3,$0
   add $1,1
   add $2,$3

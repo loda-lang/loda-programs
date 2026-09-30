@@ -7,8 +7,7 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,321580 ; Numbers k such that it is possible to reverse a deck of k cards by a sequence of perfect Faro shuffles with cut.
   mov $0,0
 lpe

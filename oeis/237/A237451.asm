@@ -1,7 +1,7 @@
 ; A237451: Zero-based column index to irregular tables organized as successively larger square matrices.
 ; Submitted by loader3229
 ; 0,0,1,0,1,0,1,2,0,1,2,0,1,2,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0
-; Formula: a(n) = -truncate((-truncate(binomial(-2*truncate((sqrtnint(24*n,3)-1)/2),3)/(-4))+n-1)/(truncate((sqrtnint(24*n,3)-1)/2)+1))*(truncate((sqrtnint(24*n,3)-1)/2)+1)-truncate(binomial(-2*truncate((sqrtnint(24*n,3)-1)/2),3)/(-4))+n-1
+; Formula: a(n) = -truncate((-truncate(binomial(-2*floor((sqrtnint(24*n,3)-1)/2),3)/(-4))+n-1)/(floor((sqrtnint(24*n,3)-1)/2)+1))*(floor((sqrtnint(24*n,3)-1)/2)+1)-truncate(binomial(-2*floor((sqrtnint(24*n,3)-1)/2),3)/(-4))+n-1
 
 #offset 1
 

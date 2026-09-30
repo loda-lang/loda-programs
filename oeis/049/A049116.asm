@@ -1,7 +1,7 @@
 ; A049116: Repeatedly apply Euler phi to n; a(n) = highest power of 2 that is seen.
 ; Submitted by Science United
 ; 1,2,2,4,4,2,2,8,2,4,4,4,4,2,8,16,16,2,2,8,4,4,4,8,8,4,2,4,4,8,8,32,8,16,8,4,4,2,8,16,16,4,4,8,8,4,4,16,4,8,32,8,8,2,16,8,4,4,4,16,16,8,4,64,16,8,8,32,8,8,8,8,8,4,16,4,16,8,8,32
-; Formula: a(n) = floor(truncate(2^(A049113(n)+1))/4)
+; Formula: a(n) = floor(if((A049113(n)+1)<=(-1),0,2^(A049113(n)+1))/4)
 
 #offset 1
 

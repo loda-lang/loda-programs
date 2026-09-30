@@ -11,8 +11,7 @@ lpb $0
   bin $3,$1
   pow $3,2
   mul $3,$4
-  sub $0,1
-  trn $0,1
+  trn $0,2
   add $1,1
   add $2,$3
 lpe

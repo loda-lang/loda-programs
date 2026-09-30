@@ -13,7 +13,7 @@ lpb $1
   mov $3,$2
   add $3,1
   seq $3,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-  mul $1,0
+  mov $1,0
   sub $2,$3
   add $2,1
 lpe

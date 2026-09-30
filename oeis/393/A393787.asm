@@ -1,6 +1,6 @@
 ; A393787: Number of free tetrablocks that contain n regular tetrahedra.
 ; Submitted by Wood
-; 1,1,1,1,3,7,23,89,398
+; 1,1,1,1,3,7,23,89,398,1859,9154,45884,234182,1207604,6283263,32911374,173381671,917753281,4878040551
 ; Formula: a(n) = floor(b(n)/4)+1, b(n) = floor((b(n-1)*(n+1))/2)+1, b(2) = 1, b(1) = 0, b(0) = 0
 
 mov $2,2

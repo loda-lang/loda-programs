@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,106927 ; Primes of the form 2x^2+xy+8y^2, with x and y any integer.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   mov $6,$3
   mul $6,2
   mov $7,$6

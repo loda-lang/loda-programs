@@ -1,7 +1,7 @@
 ; A130459: A059268 * A097806.
 ; Submitted by loader3229
 ; 1,3,2,3,6,4,3,6,12,8,3,6,12,24,16,3,6,12,24,48,32,3,6,12,24,48,96,64,3,6,12,24,48,96,192,128,3,6,12,24,48,96,192,384,256
-; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*gcd((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)==truncate((sqrtint(8*n)-1)/2),3)
+; Formula: a(n) = gcd((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)==floor((sqrtint(8*n)-1)/2),3)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))
 
 #offset 1
 

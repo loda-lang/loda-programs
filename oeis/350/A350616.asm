@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $3,$0
-add $0,1
+sub $3,1
 lpb $0
   sub $0,1
   seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).

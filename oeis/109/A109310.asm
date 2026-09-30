@@ -15,8 +15,7 @@ lpb $2
   seq $3,65516 ; Differences between products of 2 primes.
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mul $3,2
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -22,9 +22,9 @@ mov $1,$3
 lpb $1
   mul $0,59
   sub $1,$0
-  add $4,4
   mov $0,$4
-  add $4,1
+  add $0,4
+  add $4,5
 lpe
 mov $0,$4
 div $0,5

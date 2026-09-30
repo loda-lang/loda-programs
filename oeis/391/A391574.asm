@@ -4,15 +4,21 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,4
-add $2,9
+add $0,3
+add $2,8
 pow $2,2
 lpb $2
   add $2,2
+  mov $4,$1
+  dgs $4,2
   mov $3,$1
-  seq $3,301895 ; a(n) = (number of 1's in binary expansion of n)^(number of 0's in binary expansion of n).
+  max $3,1
+  log $3,2
+  add $3,1
+  sub $3,$4
+  pow $4,$3
+  mov $3,$4
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -1,7 +1,7 @@
 ; A347418: Decimal expansion of the elementary charge in natural units.
 ; Submitted by BrandyNOW
 ; 0,3,0,2,8,2,2,1,2
-; Formula: a(n) = (n-1)%2-10*truncate(((n-1)%2+truncate((truncate(sqrtint(2*n+2)^sqrtint(2*n+2))*((n-1)%2+12))/2)-4)/10)+truncate((truncate(sqrtint(2*n+2)^sqrtint(2*n+2))*((n-1)%2+12))/2)-4
+; Formula: a(n) = ((n-1)%2+floor((((n-1)%2+12)*sqrtint(2*n+2)^sqrtint(2*n+2))/2)-4)%10
 
 #offset 1
 

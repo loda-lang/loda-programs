@@ -1,7 +1,7 @@
 ; A018328: Divisors of 192.
 ; Submitted by Science United
 ; 1,2,3,4,6,8,12,16,24,32,48,64,96,192
-; Formula: a(n) = truncate(2^truncate((truncate((12*n-36)/11)+1)/2))*(-2*truncate((truncate((12*n-36)/11)+1)/2)+truncate((12*n-36)/11)+3)
+; Formula: a(n) = (-2*truncate((truncate((12*n-36)/11)+1)/2)+truncate((12*n-36)/11)+3)*if(truncate((truncate((12*n-36)/11)+1)/2)<=(-1),0,2^truncate((truncate((12*n-36)/11)+1)/2))
 
 #offset 1
 

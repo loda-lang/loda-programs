@@ -1,6 +1,7 @@
 ; A030050: Numbers from the Conway-Schneeberger 15-theorem.
 ; Submitted by BrandyNOW
 ; 1,2,3,5,6,7,10,14,15
+; Formula: a(n) = binomial(if((n-1)==0,floor((n+4)/2),if((floor((n+4)/2)%(n-1))==0,floor((n+4)/2)/(n-1),floor((n+4)/2)))-2,2)+n
 
 #offset 1
 

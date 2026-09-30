@@ -10,10 +10,15 @@ lpb $0
   sub $0,$3
   mov $5,$0
   max $5,0
-  seq $5,89801 ; a(n) = 0 unless n = 3j^2 + 2j or 3j^2 + 4j + 1 for some j >= 0, in which case a(n) = 1.
+  mul $5,3
+  add $5,1
+  mov $6,$5
+  nrt $6,2
+  pow $6,2
   mov $3,2
   add $3,$2
   mul $3,24
+  equ $5,$6
   add $2,2
   add $4,$5
 lpe

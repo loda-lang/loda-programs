@@ -1,7 +1,7 @@
 ; A110517: Riordan array (1,x(1-3x)).
 ; Submitted by Science United
 ; 1,0,1,0,-3,1,0,0,-6,1,0,0,9,-9,1,0,0,0,27,-12,1,0,0,0,-27,54,-15,1,0,0,0,0,-108,90,-18,1,0,0,0,0,81,-270,135,-21,1,0,0,0,0,0,405,-540,189,-24,1,0,0,0,0,0,-243,1215,-945,252,-27,1,0,0,0,0,0,0,-1458,2835,-1512,324,-30,1,0,0
-; Formula: a(n) = truncate((-3)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)))*binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2))
+; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2))*if((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2))<=(-1),0,(-3)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)))
 
 mov $1,$0
 mul $1,8

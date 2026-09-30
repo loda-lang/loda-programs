@@ -14,9 +14,8 @@ lpe
 mul $0,$3
 add $0,$1
 pow $0,2
+div $0,5
 mov $2,$0
-div $2,5
-mov $0,$2
 mul $0,10
 add $0,5
 div $0,15

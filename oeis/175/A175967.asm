@@ -6,7 +6,6 @@
 #offset 1
 
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
+seq $0,101203 ; a(n) = sum of nonprimes <= n.
 mov $1,$0
-seq $1,101203 ; a(n) = sum of nonprimes <= n.
-mov $0,$1
 add $0,1

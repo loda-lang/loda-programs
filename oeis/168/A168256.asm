@@ -1,7 +1,7 @@
 ; A168256: Triangle read by rows: Catalan number C(n) repeated n+1 times.
 ; Submitted by Science United
 ; 1,1,1,2,2,2,5,5,5,5,14,14,14,14,14,42,42,42,42,42,42,132,132,132,132,132,132,132,429,429,429,429,429,429,429,429,1430,1430,1430,1430,1430,1430,1430,1430,1430,4862,4862,4862,4862,4862,4862,4862,4862,4862,4862
-; Formula: a(n) = truncate(binomial(2*truncate((sqrtint(8*n+8)-1)/2),truncate((sqrtint(8*n+8)-1)/2))/(truncate((sqrtint(8*n+8)-1)/2)+1))
+; Formula: a(n) = floor(binomial(2*floor((sqrtint(8*n+8)-1)/2),floor((sqrtint(8*n+8)-1)/2))/(floor((sqrtint(8*n+8)-1)/2)+1))
 
 add $0,1
 mov $1,$0

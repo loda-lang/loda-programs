@@ -1,12 +1,13 @@
 ; A111275: Number of inequivalent non-crossing partitions of n (equally spaced) points on a circle, under rotations and reflections.
 ; Submitted by piieeto
 ; 1,2,3,6,10,24,49,130,336,980,2904,9176,29432,97356,326399,1111770,3825238,13293456,46553116,164200028,582706692,2079517924,7458493728,26874412064,97241528200,353223728624,1287668381250,4709805627484
+; Formula: a(n) = 2*A006080(n+1)-2*A006081(n+1)+floor(binomial(n-1,if(((n-1)%2)==0,(n-1)/2,n-1))/(if(((n-1)%2)==0,(n-1)/2,n-1)+1))
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,2
+sub $2,1
+add $0,1
 mov $1,$0
 seq $1,6081 ; Number of line-rooted projective plane trees with n nodes.
 mov $3,$2

@@ -1,6 +1,7 @@
 ; A181796: a(n) = number of divisors of n whose canonical prime factorizations contain no repeated positive exponents (cf. A130091).
 ; Submitted by Science United
 ; 1,2,2,3,2,3,2,4,3,3,2,5,2,3,3,5,2,5,2,5,3,3,2,7,3,3,4,5,2,4,2,6,3,3,3,7,2,3,3,7,2,4,2,5,5,3,2,9,3,5,3,5,2,7,3,7,3,3,2,7,2,3,5,7,3,4,2,5,3,4,2,10,2,3,5,5,3,4,2,9
+; Formula: a(n) = (truncate((3*A335516(n)-2)/3)+1)*((if(((5*floor(n/2))^(5*floor(n/2)))==0,0,valuation((5*floor(n/2))^(5*floor(n/2)),2))+1)%10)
 
 #offset 1
 

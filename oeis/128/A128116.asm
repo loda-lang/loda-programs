@@ -1,7 +1,7 @@
 ; A128116: A128064 * A122432 (unsigned).
 ; Submitted by loader3229
 ; 1,5,2,12,7,3,22,15,9,4,35,26,18,11,5,51,40,30,21,13,6,70,57,45,34,24,15,7,92,77,63,50,38,27,17,8,117,100,84,69,55,42,30,19,9,145,126,108,91,75,60,46,33,21,10
-; Formula: a(n) = -binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+3,2)+n+1,2)
+; Formula: a(n) = -binomial(floor((sqrtint(8*n)-1)/2)+1,2)+binomial(-binomial(floor((sqrtint(8*n)-1)/2)+3,2)+n+1,2)
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A297042: Number of pieces in the list d(m), d(m-1), ..., d(0) of base-14 digits of n; see Comments.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -11*truncate(truncate(floor(10/2)^(10*n-140))/11)+truncate(floor(10/2)^(10*n-140))
+; Formula: a(n) = if((floor(10/2)^2)==1,floor(10/2)^(10*n-140),if((10*n-140)<=(-1),0,floor(10/2)^(10*n-140)))-11*truncate(if((floor(10/2)^2)==1,floor(10/2)^(10*n-140),if((10*n-140)<=(-1),0,floor(10/2)^(10*n-140)))/11)
 
 #offset 1
 

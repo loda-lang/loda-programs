@@ -8,8 +8,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,78678 ; Number of binary strings with n 1's and n 0's avoiding zigzags, that is avoiding the substrings 101 and 010.
   div $0,2
   mov $2,$3

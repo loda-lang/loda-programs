@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   seq $3,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   seq $3,268643 ; Number of 1's in decimal representation of n.
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -8,10 +8,42 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  geq $4,1
+  mul $4,4
+  mov $5,$4
+  mov $4,$1
+  geq $4,2
+  mul $4,4
+  add $5,$4
+  mov $4,$1
+  geq $4,3
+  mul $4,4
+  add $5,$4
+  mov $4,$1
+  geq $4,4
+  mul $4,2
+  add $5,$4
+  mov $4,$1
+  geq $4,6
+  mul $4,2
+  add $5,$4
+  mov $4,$1
+  geq $4,8
+  mul $4,2
+  add $5,$4
+  mov $4,$1
+  geq $4,10
+  mul $4,2
+  add $5,$4
+  mov $4,$1
+  geq $4,12
+  mul $4,2
+  add $5,$4
   mov $3,$1
-  add $3,1
-  seq $3,204879 ; Numbers that can be written as sum of perfect numbers.
-  sub $3,1
+  mul $3,2
+  add $3,5
+  add $3,$5
   add $0,1
   add $1,1
   add $2,$3

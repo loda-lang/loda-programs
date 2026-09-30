@@ -5,6 +5,5 @@
 
 #offset 1
 
+log $0,3
 mov $1,$0
-log $1,3
-mov $0,$1

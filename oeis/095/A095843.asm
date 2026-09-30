@@ -1,7 +1,7 @@
 ; A095843: Triangle read by rows: T(n,k) = (n-k)^((n-k+1)^2), n>=1, 1<=k<=n.
 ; Submitted by loader3229
 ; 0,1,0,512,1,0,43046721,512,1,0,1125899906842624,43046721,512,1,0,14551915228366851806640625,1125899906842624,43046721,512,1,0,134713546244127343440523266742756048896,14551915228366851806640625
-; Formula: a(n) = (-n+binomial(truncate((sqrtint(8*n)+3)/2),2))^((-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)^2)
+; Formula: a(n) = (-n+binomial(floor((sqrtint(8*n)+3)/2),2))^((-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^2)
 
 #offset 1
 

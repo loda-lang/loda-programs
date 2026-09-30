@@ -18,7 +18,7 @@ sub $0,1
 mov $1,$2
 bin $1,$0
 mul $0,-1
-pow $2,0
+mov $2,1
 add $2,$3
 mul $2,2
 fac $2,$0

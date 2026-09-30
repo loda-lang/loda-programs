@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,47994 ; Unitary totient (or unitary phi) function uphi(n).
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

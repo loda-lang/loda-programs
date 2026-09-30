@@ -8,9 +8,9 @@ equ $4,$0
 sub $0,1
 mov $2,2
 pow $2,$0
-add $0,3
 mov $3,$0
-sub $0,2
+add $3,3
+add $0,1
 mov $5,$0
 mul $0,2
 bin $0,$5

@@ -1,15 +1,44 @@
 ; A264740: Sum of odd parts of divisors of n.
 ; Submitted by LM
 ; 1,2,4,3,6,8,8,4,13,12,12,12,14,16,24,5,18,26,20,18,32,24,24,16,31,28,40,24,30,48,32,6,48,36,48,39,38,40,56,24,42,64,44,36,78,48,48,20,57,62,72,42,54,80,72,32,80,60,60,72,62,64,104,7,84,96,68,54,96,96,72,52,74,76,124,60,96,112,80,30
-; Formula: a(n) = truncate((3*A000203(n/(2^valuation(n,2)))*logint(floor((bitxor(2*n,2*n-1)+1)/2),2)-3)/3)+1
 
 #offset 1
 
 mov $1,$0
 dir $1,2
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $7,$1
+sub $7,1
+mov $8,0
+mov $6,$1
+dir $6,2
+mov $11,$6
+mov $10,$6
+nrt $10,2
+lpb $10
+  max $10,1
+  mov $12,$6
+  mod $12,$10
+  equ $12,0
+  mov $9,$6
+  div $9,$10
+  add $9,$10
+  mul $9,$12
+  add $8,$9
+  sub $10,1
+lpe
+nrt $6,2
+mov $10,$6
+pow $10,2
+sub $10,$11
+equ $10,0
+mul $6,$10
+sub $8,$6
+mov $5,$1
+bxo $5,$7
+mul $5,$8
+mov $1,$5
 mov $4,3
-mul $4,$1
+mul $4,$5
 mul $0,2
 mov $3,$0
 sub $3,1
@@ -17,9 +46,8 @@ bxo $0,$3
 add $0,1
 div $0,2
 log $0,2
+mul $0,$4
 mov $2,$0
-mul $2,$4
-mov $0,$2
 sub $0,3
 div $0,3
 add $0,1

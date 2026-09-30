@@ -4,22 +4,20 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
-  add $6,1
   mov $3,$1
-  seq $3,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
-  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  nrt $3,3
+  add $6,1
+  mov $7,0
+  sub $7,$3
+  fac $3,$7
+  gcd $3,$6
   mov $5,$3
-  gcd $5,$6
-  mov $3,$5
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

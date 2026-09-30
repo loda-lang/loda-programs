@@ -1,6 +1,7 @@
 ; A030315: Write n in base 2, complement each digit (d -> 1-d) and append the complemented digits to the sequence.
 ; Submitted by Science United
 ; 1,0,0,1,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,1,1,1,0,1,1,0,0,1,0,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1,1,0,1,1,1,0,0,1,1,0,1,0,1,1,0,0,0,1,0,1,1,0,1,0,1,0
+; Formula: a(n) = (-2*truncate((truncate(e(n+2)/b(n+2))-1)/2)+truncate(e(n+2)/b(n+2))+1)%2, b(n) = if(((b(n-1)*(floor((n-1)/c(n-1))*c(n-1)+c(n-1)))%2)==0,(b(n-1)*(floor((n-1)/c(n-1))*c(n-1)+c(n-1)))/2,b(n-1)*(floor((n-1)/c(n-1))*c(n-1)+c(n-1))), b(5) = -32, b(4) = -8, b(3) = -4, b(2) = -2, b(1) = -2, b(0) = -4, c(n) = floor((n-1)/c(n-1))*c(n-1)+c(n-1), c(5) = 8, c(4) = 4, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 1, d(n) = n, d(5) = 5, d(4) = 4, d(3) = 3, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = e(n-1)*(floor(d(n-1)/c(n-1))*c(n-1)+c(n-1))+n-1, e(5) = 220, e(4) = 27, e(3) = 6, e(2) = 1, e(1) = 0, e(0) = 0
 
 mov $1,-4
 mov $2,1

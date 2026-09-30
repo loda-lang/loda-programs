@@ -15,13 +15,10 @@ lpb $1
   mov $4,$1
   max $4,0
   mov $7,$4
-  mul $4,0
-  sub $4,1
   add $7,1
   seq $7,46951 ; a(n) is the number of squares dividing n.
-  add $7,1
-  add $7,$4
   add $3,$7
+  mov $4,-1
   mov $5,2
   add $5,$6
   add $6,2

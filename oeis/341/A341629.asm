@@ -1,7 +1,7 @@
 ; A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
 ; Submitted by Stephen Uitti
 ; 1,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-; Formula: a(n) = floor(truncate(10^(truncate((gcd(n,A057335(A334032(n)))+A057335(A334032(n)))/A057335(A334032(n)))-1))/9)
+; Formula: a(n) = floor(if((truncate((gcd(n,A057335(A334032(n)))+A057335(A334032(n)))/A057335(A334032(n)))-1)<=(-1),0,10^(truncate((gcd(n,A057335(A334032(n)))+A057335(A334032(n)))/A057335(A334032(n)))-1))/9)
 
 #offset 1
 

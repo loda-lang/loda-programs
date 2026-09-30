@@ -4,8 +4,7 @@
 
 #offset 9
 
-sub $0,9
 mov $1,$0
-add $0,9
+sub $1,9
 mul $0,9
 bin $0,$1

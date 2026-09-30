@@ -8,12 +8,16 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
-  add $2,1
-  seq $2,111089 ; Largest prime factor of 2n.
-  mul $3,$2
+  max $2,1
+  mov $4,1
+  add $4,$2
+  mov $5,$4
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  mov $2,$5
+  mul $3,$5
   add $3,$1
   sub $0,1
-  mul $1,$2
+  mul $1,$5
 lpe
 gcd $3,$1
 div $1,$3

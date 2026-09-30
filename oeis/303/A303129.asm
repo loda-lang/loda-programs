@@ -1,6 +1,7 @@
 ; A303129: Decimal expansion of quantum of circulation in m^2 s^(-1).
 ; Submitted by Science United
 ; 3,6,3,6,9,4,7,5
+; Formula: a(n) = b(n+3)+3, b(n) = b(n-8), b(9) = 3, b(8) = 0, b(7) = 2, b(6) = 4, b(5) = 1, b(4) = 6, b(3) = 3, b(2) = 0, b(1) = 3, b(0) = 0
 
 #offset -3
 

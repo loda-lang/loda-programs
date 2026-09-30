@@ -10,7 +10,11 @@ lpb $2
   trn $2,1
   mov $3,$2
   add $3,1
-  seq $3,171716 ; a(n) = abs((n-th prime of the form 6*k+1) minus (n-th prime of the form 6*m-1))/2.
+  mov $4,$3
+  seq $4,7528 ; Primes of the form 6k-1.
+  seq $3,2476 ; Primes of the form 6m + 1.
+  mod $3,$4
+  div $3,2
   mul $3,64
   add $1,$3
 lpe

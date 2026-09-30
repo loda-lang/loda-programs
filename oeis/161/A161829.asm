@@ -1,6 +1,7 @@
 ; A161829: First differences of A161828.
 ; Submitted by BrandyNOW
 ; 0,3,0,6,0,6,6,12,6
+; Formula: a(n) = 3*binomial(floor((n+1)/4),2)+3*floor(if(((n+9)%2)==0,(n+9)/2,n+9)/4)-3
 
 #offset 1
 

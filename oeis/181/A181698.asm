@@ -7,8 +7,7 @@
 
 sub $0,1
 sub $2,$0
-add $2,12
-trn $2,4
+trn $2,-8
 mov $3,$2
 max $3,2
 add $2,$3

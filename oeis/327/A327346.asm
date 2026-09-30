@@ -37,9 +37,9 @@ lpb $1
     add $5,1
   lpe
   sub $1,1
-  add $2,2
   mov $8,$2
-  equ $8,5
+  add $2,2
+  equ $8,3
   lpb $8
     mov $8,0
     add $2,2

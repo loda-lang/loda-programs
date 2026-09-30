@@ -8,7 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,119647 ; Fixed point of the morphism 1->{1,2}, 2->{1,3}, 3->{1}.
+  seq $0,119647 ; Duplicate of A092782.
   mov $4,$0
   lpb $4
     sub $4,3

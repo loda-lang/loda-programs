@@ -12,9 +12,16 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,86134 ; Smallest prime factor of arithmetic derivative of n or a(n)=0 if no such prime exists.
-  sub $3,1
-  equ $3,4
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  trn $3,1
+  mov $4,$3
+  add $4,1
+  seq $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  mov $5,1
+  equ $5,$4
+  sub $4,$5
+  mov $3,$4
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

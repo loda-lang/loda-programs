@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,79635 ; Sum of (2 - p mod 4) for all prime factors p of n (with repetition).
+  equ $3,0
   mov $5,$3
-  equ $5,0
-  mov $3,$5
   add $3,$4
   sub $0,$3
   add $0,1

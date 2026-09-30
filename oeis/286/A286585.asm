@@ -4,9 +4,8 @@
 
 #offset 1
 
+seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 mov $1,$0
-seq $1,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mov $0,$1
 div $0,2
 add $0,1
 dgs $0,3

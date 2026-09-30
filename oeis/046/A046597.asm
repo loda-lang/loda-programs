@@ -25,8 +25,7 @@ lpb $2
   sub $7,1
   sub $7,$10
   sub $7,$9
-  trn $9,$7
-  add $9,$7
+  max $9,$7
   sub $9,1
   add $7,$9
   mov $8,$9
@@ -40,8 +39,7 @@ lpb $2
   mov $5,$3
   div $3,4
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

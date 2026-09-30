@@ -13,8 +13,7 @@ lpb $2
   dif $5,$1
   add $5,1
   mov $3,$1
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,40 ; The prime numbers.
   mul $5,$3
   mov $3,$5

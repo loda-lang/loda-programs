@@ -10,7 +10,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,190843 ; a(n) = [2*n*e] - 2*[n*e], where [ ] = floor and e is the natural logarithm base.
+  mul $3,-604800
+  dgr $3,214
+  mod $3,2
+  add $3,2
+  mod $3,2
   add $3,$4
   sub $0,$3
   add $0,1

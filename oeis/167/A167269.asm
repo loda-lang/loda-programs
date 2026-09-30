@@ -1,6 +1,7 @@
 ; A167269: Triangle read by rows, Pascal's triangle columns interleaved with 1's.
 ; Submitted by loader3229
 ; 1,1,1,1,2,1,1,3,1,1,1,4,1,3,1,1,5,1,6,1,1,1,6,1,10,1,4,1,1,7,1,15,1,10,1,1,1,8,1,21,1,20,1,5,1,1,9,1,28,1,35,1,15,1,1,1,10,1,36,1,56,1,35,1,6,1,1,11,1,45,1,84,1,70,1,21,1,1,1,12
+; Formula: a(n) = binomial(-truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+floor((sqrtint(8*n+8)-1)/2),if(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)%2)==0,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)-truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))
 
 add $0,1
 mov $2,$0

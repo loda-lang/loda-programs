@@ -9,7 +9,6 @@ seq $0,40 ; The prime numbers.
 pow $0,3
 mul $0,2
 sub $0,1
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1
 div $0,4

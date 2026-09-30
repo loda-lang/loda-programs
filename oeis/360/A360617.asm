@@ -1,7 +1,7 @@
 ; A360617: Half the number of prime factors of n (counted with multiplicity, A001222), rounded up.
 ; Submitted by Science United
 ; 0,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,1,2,2,1,2,1,3,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,3,1,2,1,2,1,2,1,2,1,1,1,2,1,1,2,3,1,2,1,2,1,2,1,3,1,1,2,2,1,2,1,3
-; Formula: a(n) = truncate((A001222(n)+3)/2)-1
+; Formula: a(n) = floor((A001222(n)+3)/2)-1
 
 #offset 1
 

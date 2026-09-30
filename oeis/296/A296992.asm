@@ -1,6 +1,7 @@
 ; A296992: Largest number m such that n^m divides tau(n), where tau(n) = A000594(n) is Ramanujan's tau function.
 ; Submitted by Athlici
 ; 3,2,3,1,3,1,3,2,1,0,2,0,1,1,3,0,2,0,1,2,0,0,3,1,0,2,1,0,1,0,3,0,0,1,2,0,0,0,2,0,2,0,0,1,0,0,2,1,1,0,0,0,2,0,1,0,0,0,1,0,0,1,3,0,0,0,0,0,1,0,2,0,0,1,0,0,0,0,1,2
+; Formula: a(n) = if(A000594(n)==0,0,if((n^2)<=1,0,valuation(A000594(n),n)))
 
 #offset 2
 

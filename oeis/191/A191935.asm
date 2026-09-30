@@ -1,7 +1,7 @@
 ; A191935: Triangle read by rows of Legendre-Stirling numbers of the second kind.
 ; Submitted by Checco
 ; 1,1,2,1,8,4,1,20,52,8,1,40,292,320,16,1,70,1092,3824,1936,32,1,112,3192,25664,47824,11648,64,1,168,7896,121424,561104,585536,69952,128,1,240,17304,453056,4203824,11807616,7096384,419840,256,1,330,34584,1422080,23232176,137922336,243248704,85576448,2519296,512,1,440,64284,3912128,102868656,1113673728,4380918784,4950550528,1029436672,15116288,1024,1,572,112684,9697688,384541872,6874318464,51155215360,136378114048,100040447232,12368356352,90698752,2048,1,728
-; Formula: a(n) = A071951((truncate((sqrtint(8*n)-1)/2)+1)^2-n+1)
+; Formula: a(n) = A071951((floor((sqrtint(8*n)-1)/2)+1)^2-n+1)
 
 #offset 1
 
@@ -15,6 +15,5 @@ pow $2,2
 sub $2,$0
 mov $0,$2
 add $0,1
+seq $0,71951 ; Triangle of Legendre-Stirling numbers of the second kind T(n,j), n >= 1, 1 <= j <= n, read by rows.
 mov $1,$0
-seq $1,71951 ; Triangle of Legendre-Stirling numbers of the second kind T(n,j), n >= 1, 1 <= j <= n, read by rows.
-mov $0,$1

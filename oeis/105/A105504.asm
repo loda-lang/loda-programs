@@ -11,8 +11,7 @@ pow $2,3
 lpb $2
   mov $3,$1
   seq $3,8963 ; Initial digit of Fibonacci number F(n).
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

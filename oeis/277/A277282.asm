@@ -17,7 +17,6 @@ lpb $2
   seq $0,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
   gcd $0,$4
   add $0,$4
-  trn $1,$0
-  add $1,$0
+  max $1,$0
 lpe
 mov $0,$1

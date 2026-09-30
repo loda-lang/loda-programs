@@ -14,7 +14,7 @@ lpb $0
 lpe
 trn $0,1
 mov $2,$0
-seq $2,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+seq $2,712 ; a(n) = number of partitions of n into parts of 2 kinds.
 mov $1,$0
 seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
 sub $2,$1

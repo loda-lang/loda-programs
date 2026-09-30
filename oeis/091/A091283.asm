@@ -1,4 +1,4 @@
-; A091283: Exponent of 2 in -1+prime[n]^s, if s is an exponent of the form s=8k-4.
+; A091283: Exponent of 2 in the prime factorization of prime(n)^4 - 1.
 ; Submitted by Orange Kid
 ; 0,4,4,5,4,4,6,4,5,4,7,4,5,4,6,4,4,4,4,5,5,6,4,5,7,4,5,4,4,6,9,4,5,4,4,5,4,4,5,4,4,4,8,8,4,5,4,7,4,4,5,6,6,4,10,5,4,6,4,5,4,4,4,5,5,4,4,6,4,4,7,5,6,4,4,9,4,4,6,5
 

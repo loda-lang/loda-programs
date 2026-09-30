@@ -11,7 +11,15 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
+  mov $6,$0
+  seq $6,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $6,1
+  div $6,2
+  mov $5,$6
+  gcd $5,4
+  sub $0,1
+  mov $0,$5
+  div $0,4
   mul $1,$0
   add $3,$1
 lpe

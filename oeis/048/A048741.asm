@@ -8,4 +8,14 @@ mov $1,$0
 seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
 lex $1,$0
 add $0,$1
-seq $0,7956 ; Product of the proper divisors of n.
+mov $2,$0
+mov $5,$0
+seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $3,$0
+pow $3,$5
+nrt $3,2
+mov $4,$3
+gcd $3,$0
+div $4,$3
+mul $0,$4
+div $0,$2

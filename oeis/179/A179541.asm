@@ -6,10 +6,9 @@
 sub $0,2
 lpb $0
   max $1,$0
-  sub $0,5
-  equ $0,2
   dif $1,3
   div $1,3
+  equ $0,7
 lpe
 add $1,1
 mov $0,$1

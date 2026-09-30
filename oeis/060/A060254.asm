@@ -12,9 +12,8 @@ lpb $6
   mov $3,$5
   add $3,1
   seq $3,166037 ; Numbers that are the sum of 2 successive nonprimes A141468.
-  sub $3,1
   mov $2,$3
-  add $3,1
+  sub $2,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $4,$3
   add $5,1

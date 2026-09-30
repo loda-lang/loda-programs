@@ -20,8 +20,7 @@ lpb $2
   add $3,$5
   nrt $3,2
   gcd $3,4
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

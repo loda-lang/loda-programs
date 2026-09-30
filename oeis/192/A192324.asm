@@ -9,9 +9,9 @@ mov $1,$0
 mov $3,1
 lpb $0
   sub $0,1
-  add $3,1
   mov $4,$3
-  equ $4,0
+  add $3,1
+  equ $4,-1
   add $4,$3
   add $4,1
   seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

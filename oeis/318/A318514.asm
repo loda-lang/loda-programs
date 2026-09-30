@@ -5,8 +5,7 @@
 #offset 1
 
 mov $4,2
-trn $2,$0
-add $2,$0
+max $2,$0
 lpb $2
   mov $3,$2
   lpb $3

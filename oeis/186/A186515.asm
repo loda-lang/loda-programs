@@ -11,6 +11,5 @@ mov $1,$2
 sub $1,3
 div $1,5
 nrt $1,2
+add $0,$1
 mov $3,$0
-add $3,$1
-mov $0,$3

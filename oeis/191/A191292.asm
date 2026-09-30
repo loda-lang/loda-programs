@@ -8,9 +8,16 @@ mov $2,1
 mov $3,$0
 pow $3,4
 lpb $3
+  mov $6,$2
+  dgs $6,2
+  mov $5,0
+  bxo $5,$6
   mov $4,$2
-  seq $4,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-  equ $4,0
+  max $4,1
+  log $4,2
+  sub $4,$6
+  sub $4,$5
+  equ $4,-1
   sub $0,$4
   add $2,1
   sub $3,$0

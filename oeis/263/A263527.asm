@@ -15,9 +15,8 @@ lpb $0
   sub $0,$5
   mov $4,$0
   max $4,0
-  mul $4,3
-  add $4,4
-  mul $4,2
+  mul $4,6
+  add $4,8
   seq $4,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   mod $7,2
   add $7,1

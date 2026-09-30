@@ -1,4 +1,4 @@
-; A089746: Period 12: repeat (4, 4, 1, 2, 1, 1, 2, 2, 3, 3, 3, 3). (Number of syllables in English name of the months.)
+; A089746: Period 12: repeat [4, 4, 1, 2, 1, 1, 2, 2, 3, 3, 3, 3] (number of syllables in English name of the months).
 ; Submitted by [SG]KidDoesCrunch
 ; 4,4,1,2,1,1,2,2,3,3,3,3,4,4,1,2,1,1,2,2,3,3,3,3,4,4,1,2,1,1,2,2,3,3,3,3,4,4,1,2,1,1,2,2,3,3,3,3,4,4,1,2,1,1,2,2,3,3,3,3,4,4,1,2,1,1,2,2,3,3,3,3,4,4,1,2,1,1,2,2
 

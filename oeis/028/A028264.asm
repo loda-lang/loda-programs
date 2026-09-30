@@ -8,13 +8,33 @@ pow $2,3
 lpb $2
   sub $2,32
   mov $3,$1
-  seq $3,28262 ; Elements in 3-Pascal triangle (by row).
-  mov $5,$3
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $9,$7
+  add $9,1
+  bin $9,2
+  sub $3,$9
+  sub $3,1
+  mov $6,$7
+  bin $6,$3
+  mov $8,$7
+  mul $8,2
+  neq $8,2
+  sub $3,1
+  sub $7,2
+  bin $7,$3
+  mul $7,$8
+  add $6,$7
+  mov $3,$6
   mul $3,338
   add $3,2
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

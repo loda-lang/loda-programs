@@ -10,8 +10,7 @@ lpb $2
   add $1,2
   mov $3,$1
   seq $3,108964 ; Write n in balanced ternary notation, omit any zeros and form the left-to-right alternating sum mod 3.
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -11,8 +11,7 @@ lpb $0
 lpe
 bin $1,$0
 min $0,$2
-trn $0,1
-add $0,1
+max $0,1
 pow $0,$3
 mul $1,$0
 mov $0,$1

@@ -7,8 +7,7 @@ mul $0,2
 mov $2,$0
 equ $2,0
 add $0,$2
+seq $0,2618 ; a(n) = n*phi(n).
 mov $1,$0
-seq $1,2618 ; a(n) = n*phi(n).
-mov $0,$1
 div $0,2
 add $0,1

@@ -17,8 +17,7 @@ lpb $2
   mov $3,$1
   seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $3,$5
-  add $3,2
-  equ $3,0
+  equ $3,-2
   sub $0,$3
   add $1,1
   mov $4,$0

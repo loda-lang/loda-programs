@@ -1,6 +1,7 @@
 ; A159631: Dimension of space of modular forms of weight 1/2, level 4*n and trivial character.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,3,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,3,1,1,1,4,1,1,1,2,1,1,1,2,2,1,1,3,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,4,1,1,2,2,1,1,1,3
+; Formula: a(n) = A355593(gcd(0,floor((n-1)/A019554(max(0,n-1)+1))+1))*((valuation((5*n)^(5*n),2)+1)%10)
 
 #offset 1
 

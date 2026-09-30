@@ -13,9 +13,7 @@ lpb $2
   lpb $3
     sub $3,1
     add $0,$3
-    sub $0,1
-    trn $0,2
-    add $0,3
+    max $0,3
     mov $1,$0
     seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
     mov $5,$3

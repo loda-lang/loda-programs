@@ -5,5 +5,5 @@
 
 mov $1,$0
 trn $1,1
-seq $1,3722 ; E.g.f. sin(sinh(x)) (odd powers only).
+seq $1,3722 ; Expansion of e.g.f. sin(sinh(x)) (odd powers only).
 mul $0,$1

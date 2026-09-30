@@ -8,7 +8,6 @@
 seq $0,196415 ; Values of n such that (product of first n composite numbers) / (sum of first n composite numbers) is an integer.
 add $0,2
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
+seq $0,101203 ; a(n) = sum of nonprimes <= n.
 mov $1,$0
-seq $1,101203 ; a(n) = sum of nonprimes <= n.
-mov $0,$1
 sub $0,1

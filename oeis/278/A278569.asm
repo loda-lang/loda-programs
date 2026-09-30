@@ -15,8 +15,7 @@ lpb $2
   seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   div $3,2
   dgs $3,2
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

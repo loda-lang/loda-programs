@@ -1,6 +1,7 @@
 ; A249458: The numerators of curvatures of touching circles inscribed in a special way in the smaller segment of unit circle divided by a chord of length sqrt(84)/5.
 ; Submitted by loader3229
 ; 10,100,1690,36100,835210,19802500,472931290,11318832100,271066588810,6492762648100,155527144782490,3725543446072900,89243180863948810,2137770243127864900,51209104645650371290,1226685938180259902500
+; Formula: a(n) = 343*a(n-3)+33*a(n-1)-231*a(n-2), a(5) = 19802500, a(4) = 835210, a(3) = 36100, a(2) = 1690, a(1) = 100, a(0) = 10
 
 mov $1,10
 mov $2,100

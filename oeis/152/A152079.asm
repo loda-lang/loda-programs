@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,152863 ; Numbers for which A000695(p_n) are primes, where p_n is the n-th prime
+seq $0,152863 ; Numbers for which A000695(p_n) are primes, where p_n is the n-th prime.
 seq $0,40 ; The prime numbers.

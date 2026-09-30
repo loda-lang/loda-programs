@@ -1,7 +1,7 @@
 ; A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
 ; Submitted by Athlici
 ; 2,2,3,2,2,3,2,2,5,3,2,2,2,2,2,3,2,7,5,2,3,2,2,3,2,2,2,5,2,2,3,2,2,3,2,2,7,3,2,2,2,2,2,3,2,11,2,5,3,2,2,3,2,2,2,7,2,5,2,3,2,2,3,2,2,13,3,2,5,2,2,2,2,3,2,2,3,2,2,3
-; Formula: a(n) = A020639(truncate(A013929(n)/gcd(truncate((A013929(n)-1)/A003557(A013929(n)))+A013929(n)+1,A013929(n))))
+; Formula: a(n) = A020639(floor(A013929(n)/gcd(truncate((A013929(n)-1)/A003557(A013929(n)))+A013929(n)+1,A013929(n))))
 
 #offset 1
 

@@ -15,9 +15,9 @@ lpb $2
   add $3,1
   seq $3,47930 ; Smallest positive Fibonacci number divisible by n.
   div $3,$6
-  mul $3,2
   mov $5,$3
-  mul $3,2
+  mul $5,2
+  mul $3,4
   gcd $3,4
   add $3,1
   gcd $3,$5

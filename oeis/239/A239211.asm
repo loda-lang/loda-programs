@@ -14,8 +14,7 @@ lpb $3
   pow $6,2
   seq $6,38769 ; Number of digits of n which are divisors of n.
   mov $4,$6
-  add $4,1
-  equ $4,1
+  equ $4,0
   sub $0,$4
   mov $5,$0
   max $5,0
@@ -25,6 +24,5 @@ lpb $3
 lpe
 mov $0,$2
 add $0,1
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1

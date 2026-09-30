@@ -1,6 +1,7 @@
 ; A270788: Unique fixed point of the 3-symbol Fibonacci morphism phi-hat_2.
 ; Submitted by entity
 ; 1,2,3,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,1,2,3,1,2,3,1
+; Formula: a(n) = truncate((-8*truncate(b(n-1)/8)+b(n-1))/2)+1, b(n) = -c(n-1)+bitor(b(n-1)+c(n-1)+2,c(n-1)), b(1) = 2, b(0) = 0, c(n) = truncate((-c(n-1)+bitor(b(n-1)+c(n-1)+2,c(n-1)))/2), c(1) = 1, c(0) = 0
 
 #offset 1
 

@@ -1,7 +1,6 @@
 ; A081733: Triangle read by rows, T(n,k) = 2^(n-k)*[x^k] Euler_polynomial(n, x), for n >= 0, k >= 0.
 ; Submitted by Merlin2331
 ; 1,-1,1,0,-2,1,2,0,-3,1,0,8,0,-4,1,-16,0,20,0,-5,1,0,-96,0,40,0,-6,1,272,0,-336,0,70,0,-7,1,0,2176,0,-896,0,112,0,-8,1,-7936,0,9792,0,-2016,0,168,0,-9,1,0,-79360,0,32640,0,-4032,0,240,0,-10,1,353792,0,-436480,0,89760,0,-7392,0,330,0,-11,1,0,4245504
-; Formula: a(n) = A155585(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))*truncate((-1)^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
 add $0,1
 mov $1,$0
@@ -12,6 +11,9 @@ div $1,2
 mov $2,$1
 add $2,1
 bin $2,2
+mov $5,0
+mov $8,0
+mov $9,0
 sub $0,$2
 sub $0,1
 mov $2,$0
@@ -20,6 +22,23 @@ bin $0,$2
 sub $1,$2
 mov $3,-1
 pow $3,$1
-seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+mov $4,0
+mov $7,$1
+add $1,1
+lpb $1
+  sub $1,1
+  sub $9,$5
+  mov $5,$4
+  pow $5,$7
+  add $5,$9
+  mov $6,$7
+  bin $6,$4
+  mul $6,$5
+  sub $9,$5
+  add $4,1
+  mul $8,-1
+  add $8,$6
+lpe
+mov $1,$8
 mul $1,$3
 mul $0,$1

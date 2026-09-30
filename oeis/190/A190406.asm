@@ -6,8 +6,7 @@ add $0,1
 mov $3,10
 pow $3,$0
 mov $4,1
-mov $5,1
-mov $6,1
+fil $4,3
 div $0,3
 add $0,6
 lpb $0

@@ -6,10 +6,7 @@
 #offset 1
 
 mov $1,1
-mov $2,1
-mov $3,1
-mov $4,1
-mov $5,1
+fil $1,5
 sub $0,4
 lpb $0
   sub $0,1
@@ -18,9 +15,9 @@ lpb $0
   add $5,$1
   add $5,$2
   div $5,$4
-  mov $4,$3
-  mov $3,$2
-  mov $2,$1
+  mov $6,$1
+  ror $1,4
+  mov $1,$6
   mov $1,$5
 lpe
 mov $0,$5

@@ -4,8 +4,7 @@
 ; Formula: a(n) = n*(12*2^max(n-2,0)+4*4^max(n-2,0)-12*3^max(n-2,0)-4)
 
 mov $1,$0
-sub $0,1
-trn $0,1
+trn $0,2
 mov $2,4
 pow $2,$0
 mov $4,2

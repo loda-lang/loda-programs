@@ -30,9 +30,8 @@ mul $5,4
 nrt $5,2
 div $5,2
 pow $5,2
+div $1,$5
 mov $4,$1
-div $4,$5
-mov $1,$4
 add $1,1
 pow $1,2
 mov $8,$0

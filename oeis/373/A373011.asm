@@ -1,6 +1,7 @@
 ; A373011: Number of congruences of the 0-twisted Temperley-Lieb monoid of degree n.
 ; Submitted by DukeBox
 ; 2,2,3,3,7,4,8,5,9,6,10,7,11,8,12,9,13,10,14,11,15,12,16,13,17,14,18,15,19,16,20,17,21,18,22,19,23,20,24,21,25,22,26,23,27,24,28,25,29,26,30,27,31,28,32,29,33,30,34,31,35,32,36,33,37,34,38,35,39,36,40,37,41,38,42,39,43,40,44,41
+; Formula: a(n) = if(if(((n*floor(n/2))%2)==0,(n*floor(n/2))/2,n*floor(n/2))==0,0,if((floor(n/2)^2)<=1,0,valuation(if(((n*floor(n/2))%2)==0,(n*floor(n/2))/2,n*floor(n/2)),floor(n/2))))^if(if(((n*floor(n/2))%2)==0,(n*floor(n/2))/2,n*floor(n/2))==0,0,if((floor(n/2)^2)<=1,0,valuation(if(((n*floor(n/2))%2)==0,(n*floor(n/2))/2,n*floor(n/2)),floor(n/2))))+floor(n/2)+1
 
 mov $1,$0
 div $0,2

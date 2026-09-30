@@ -5,6 +5,5 @@
 
 mul $0,2
 add $0,1
+seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
 mov $1,$0
-seq $1,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
-mov $0,$1

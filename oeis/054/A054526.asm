@@ -15,6 +15,5 @@ div $1,2
 bin $1,2
 sub $0,$1
 add $0,1
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $2,$0
-seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $0,$2

@@ -12,8 +12,22 @@ lpb $1
   sub $1,1
   mov $0,$4
   sub $0,$1
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  add $7,1
   mov $3,$0
-  seq $3,272171 ; Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
+  sub $3,$6
+  sub $3,$7
+  sub $3,1
+  gcd $3,0
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $7,$3
   sub $0,1
   mov $5,$0
   mul $5,8

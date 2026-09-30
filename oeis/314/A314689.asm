@@ -5,11 +5,11 @@
 
 mov $1,$0
 mul $1,2
-mul $0,9
 mov $2,$0
-mul $0,5
+mul $0,45
 add $0,5
 div $0,11
+mul $2,9
 sub $2,6
 div $2,11
 add $2,1

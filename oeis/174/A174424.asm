@@ -1,4 +1,4 @@
-; A174424: Number of "non-iterative" n x n adjacency matrices of sphere packings in R^3.
+; A174424: Erroneous version of A390292.
 ; Submitted by Science United
 ; 0,0,0,0,0,1,3,1,5,126
 

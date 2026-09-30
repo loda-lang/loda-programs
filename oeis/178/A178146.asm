@@ -1,7 +1,7 @@
 ; A178146: a(n) is the number of distinct prime factors <= 5 of n.
 ; Submitted by loader3229
 ; 0,1,1,1,1,2,0,1,1,2,0,2,0,1,2,1,0,2,0,2,1,1,0,2,1,1,1,1,0,3,0,1,1,1,1,2,0,1,1,2,0,2,0,1,2,1,0,2,0,2,1,1,0,2,1,1,1,1,0,3,0,1,1,1,1,2,0,1,1,2,0,2,0,1,2,1,0,2,0,2
-; Formula: a(n) = logint(gcd(n,30)+truncate((2*gcd(n,30))/4),3)
+; Formula: a(n) = logint(floor((2*gcd(n,30))/4)+gcd(n,30),3)
 
 #offset 1
 

@@ -18,8 +18,7 @@ sub $4,3
 bin $4,$6
 mul $4,2
 div $4,$5
-trn $0,1
-add $0,1
+max $0,1
 lpb $0
   max $7,$0
   mov $8,2

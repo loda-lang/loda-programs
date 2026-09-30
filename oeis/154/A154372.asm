@@ -1,7 +1,7 @@
 ; A154372: Triangle T(n,k) = (k+1)^(n-k)*binomial(n,k).
 ; Submitted by loader3229
 ; 1,1,1,1,4,1,1,12,9,1,1,32,54,16,1,1,80,270,160,25,1,1,192,1215,1280,375,36,1,1,448,5103,8960,4375,756,49,1,1,1024,20412,57344,43750,12096,1372,64,1,1,2304,78732,344064,393750,163296,28812,2304,81,1,1,5120,295245,1966080,3281250,1959552,504210,61440,3645,100,1,1,11264,1082565,10813440,25781250,21555072,7764834,1351680,120285,5500,121,1,1,24576
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*if(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2)==1,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)),if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))))
 
 add $0,1
 mov $1,$0

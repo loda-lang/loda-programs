@@ -4,9 +4,9 @@
 
 #offset -1
 
-add $0,1
 mov $1,$0
-trn $1,1
+add $0,1
+max $1,0
 seq $1,210459 ; McKay-Thompson series of class 20A for the Monster group with a(0) = 4.
 lpb $1
   sub $0,1

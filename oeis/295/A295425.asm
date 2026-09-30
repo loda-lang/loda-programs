@@ -16,8 +16,7 @@ lpb $2
   seq $3,72499 ; Product of divisors of n which are <= n^(1/2).
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

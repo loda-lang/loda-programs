@@ -1,6 +1,7 @@
 ; A091338: a(n) = (3/n), where (k/n) is the Kronecker symbol.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,-1,0,1,-1,0,-1,-1,0,1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,-1,0,-1,-1,0,-1,-1,0,1,1,0,1,1,0,1,-1,0,-1,1,0,-1,1,0,1,-1,0,1,-1,0,-1,1,0,1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,-1,0,-1,-1,0,-1,-1
+; Formula: a(n) = if(((n*(-1)^floor((n/(2^valuation(n,2)))/2)-3*truncate((n*(-1)^floor((n/(2^valuation(n,2)))/2))/3))%(-2))==0,(n*(-1)^floor((n/(2^valuation(n,2)))/2)-3*truncate((n*(-1)^floor((n/(2^valuation(n,2)))/2))/3))/(-2),n*(-1)^floor((n/(2^valuation(n,2)))/2)-3*truncate((n*(-1)^floor((n/(2^valuation(n,2)))/2))/3))
 
 #offset 1
 

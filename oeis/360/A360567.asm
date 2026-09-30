@@ -14,8 +14,26 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
+  mov $8,$3
+  div $3,2
   add $3,1
-  seq $3,349520 ; Let S_k denote the list of pairs (1,k), (2,k), (3,k), ..., (k,k); sequence lists the pairs in S_1, S_2, S_3, ...
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  add $8,3
+  mod $8,2
+  sub $3,1
+  sub $3,$7
+  mul $3,$8
+  mul $8,$6
+  sub $6,$8
+  add $3,$6
+  add $3,1
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2

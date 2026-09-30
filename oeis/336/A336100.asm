@@ -9,7 +9,25 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  seq $4,293140 ; E.g.f.: Product_{m>0} (1-x^m).
+  mul $4,24
+  add $4,1
+  mov $9,$2
+  mov $12,$4
+  nrt $4,2
+  mov $10,$4
+  add $10,1
+  mod $10,4
+  sub $10,1
+  mov $11,$4
+  pow $4,2
+  equ $4,$12
+  mul $4,$11
+  mul $4,$10
+  mod $4,3
+  dif $4,-2
+  mov $13,1
+  fac $13,$2
+  mul $4,$13
   mov $5,$2
   add $5,$8
   mov $3,$5
@@ -20,7 +38,9 @@ lpb $0
   bin $3,2
   mov $6,$5
   sub $6,$3
-  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $14,0
+  sub $14,$6
+  fac $6,$14
   mov $7,$5
   seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   div $7,$6

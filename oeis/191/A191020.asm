@@ -17,9 +17,8 @@ lpb $2
   mov $3,$6
   mul $3,2
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,35168 ; a(n) = Sum_{d|n} Kronecker(-22, d).
   bin $3,2
   sub $0,$3

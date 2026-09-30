@@ -1,7 +1,6 @@
 ; A089732: Triangle read by rows: T(n,k) = number of peakless Motzkin paths of length n having k (1,1) steps (can be easily translated into RNA secondary structure terminology). Except for row 0, row n has ceiling(n/2) entries.
 ; Submitted by Science United
-; 1,1,1,1,1,1,3,1,6,1,1,10,6,1,15,20,1,1,21,50,10,1,28,105,50,1,1,36,196,175,15,1,45,336,490,105,1,1,55,540,1176,490,21,1,66,825,2520,1764,196,1,1,78,1210,4950,5292,1176,28,1,91,1716,9075,13860,5292,336,1,1,105
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+8*sqrtint(4*max(n,1)))-1)/2),-binomial(truncate((sqrtint(8*binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+8*sqrtint(4*max(n,1)))-1)/2)+1,2)+binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+sqrtint(4*max(n,1))-1)*binomial(truncate((sqrtint(8*binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+8*sqrtint(4*max(n,1)))-1)/2)+1,-binomial(truncate((sqrtint(8*binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+8*sqrtint(4*max(n,1)))-1)/2)+1,2)+binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+sqrtint(4*max(n,1))-1))/(-binomial(truncate((sqrtint(8*binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+8*sqrtint(4*max(n,1)))-1)/2)+1,2)+binomial(-max(n,1)+floor((sqrtint(4*max(n,1))^2)/4)+sqrtint(4*max(n,1)),2)+sqrtint(4*max(n,1))))
+; 1,1,1,1,1,1,3,1,6,1,1,10,6,1,15,20,1,1,21,50,10,1,28,105,50,1,1,36,196,175,15,1,45,336,490,105,1,1,55,540,1176,490,21,1,66,825,2520,1764,196,1,1,78,1210,4950,5292,1176,28,1,91,1716,9075,13860,5292,336,1,1,105,2366,15730,32670,19404,2520,36,1,120,3185,26026,70785,60984,13860
 
 max $0,1
 mov $2,$0

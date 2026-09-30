@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,126289 ; a(1) = 1, a(2) = 1, a(n) = n * LargestPrimeFactor(n-1) / LargestPrimeFactor(n).
-  sub $3,4
-  equ $3,7
+  equ $3,11
   sub $0,$3
   add $1,1
   mov $4,$0

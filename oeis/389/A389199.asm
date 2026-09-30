@@ -14,9 +14,8 @@ lpb $2
   seq $3,15053 ; Smallest positive integer for which n divides a(n)^6.
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $3,1
+  bin $3,3
   mov $5,$3
-  bin $5,3
-  mov $3,$5
   mod $3,2
   sub $0,$3
   add $1,1

@@ -15,8 +15,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,69248 ; Number of positive divisors of n themselves divisible by largest prime that divides n.
-  add $3,2
-  equ $3,5
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

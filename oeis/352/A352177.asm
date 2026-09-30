@@ -1,6 +1,7 @@
 ; A352177: a(n) is the number of symmetric Toeplitz anti-Hadamard matrices of order n whose sum of the inverse squares of their singular values is maximal.
 ; Submitted by loader3229
 ; 1,2,1,2,1,3,1,1,2,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = binomial(floor((sqrtint(8*n)-1)/2),if(floor((sqrtint(8*n)-1)/2)==0,n,if((n%floor((sqrtint(8*n)-1)/2))==0,n/floor((sqrtint(8*n)-1)/2),n))-floor((sqrtint(8*n)-1)/2))+1
 
 #offset 1
 

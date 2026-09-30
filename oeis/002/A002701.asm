@@ -5,11 +5,11 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
-add $0,1
+sub $0,1
 seq $0,7406 ; Wolstenholme numbers: numerator of Sum_{k=1..n} 1/k^2.
+sub $1,2
 mul $1,2
-seq $1,14401 ; Denominators of coefficients of expansion of Bessel function J_3(x).
+seq $1,14401 ; Denominators of coefficients of odd powers of x of the expansion of Bessel function J_3(x).
 gcd $1,$0
 div $0,$1

@@ -1,7 +1,7 @@
 ; A018487: Divisors of 496.
 ; Submitted by Jon Maiga
 ; 1,2,4,8,16,31,62,124,248,496
-; Formula: a(n) = 2^(n-1)-truncate(2^(n-6))
+; Formula: a(n) = 2^(n-1)-if((n-6)<=(-1),0,2^(n-6))
 
 #offset 1
 

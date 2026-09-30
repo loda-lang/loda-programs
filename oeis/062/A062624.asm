@@ -9,6 +9,5 @@ add $3,1
 mul $0,2
 bin $0,$2
 div $0,$3
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $1,$0
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $0,$1

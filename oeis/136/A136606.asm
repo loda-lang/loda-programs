@@ -1,7 +1,6 @@
 ; A136606: Reduced denominators in the Maclaurin series for the Gudermannian.
 ; Submitted by Odd-Rod
 ; 1,6,24,5040,72576,39916800,95800320,1307674368000,4184557977600,121645100408832000,2043637686868377600,25852016738884976640000,238634000666630553600000,10888869450418352160768000000
-; Formula: a(n) = truncate(truncate(A067626(n-1)/gcd(A008280((truncate((sqrtint(16*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)+8)-1)/2)/2)+8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2))/2),2)+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)+8)-1)/2)+1,2)-8*truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)+8)-1)/2)+8)-1)/2)+1)^2-(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2))/2),2)-truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)+8)-1)/2)/2)+binomial(2*n-2,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n-2,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n-2,2)+8)/2)-8*binomial(2*n-2,2)+8)-1)/2)-1)*truncate(2^(2*n-2)),A067626(n-1)))/2)
 
 #offset 1
 
@@ -10,7 +9,15 @@ mov $1,$0
 mul $1,2
 mov $2,2
 pow $2,$1
-seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
+mov $11,4
+pow $11,$0
+mul $0,2
+add $0,1
+mov $12,1
+fac $12,$0
+mul $11,$12
+mov $0,$11
+mul $0,2
 bin $1,2
 add $1,1
 mov $5,$1

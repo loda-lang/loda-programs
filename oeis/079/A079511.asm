@@ -8,8 +8,7 @@ sub $0,2
 mul $0,2
 lpb $0
   add $1,$0
-  sub $0,5
-  trn $0,1
+  trn $0,6
   dif $0,2
 lpe
 mov $0,$1

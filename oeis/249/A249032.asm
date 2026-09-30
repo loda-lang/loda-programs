@@ -1,7 +1,7 @@
 ; A249032: First differences of A075326.
 ; Submitted by loader3229
 ; 3,6,4,5,5,6,4,6,4,6,4,5,5,6,4,5,5,6,4,5,5,6,4,6,4,6,4,5,5,6,4,6,4,6,4,5,5,6,4,6,4,6,4,5,5,6,4,5,5,6,4,5,5,6,4,6,4,6,4,5,5,6,4,5,5,6,4,5,5,6,4,6,4,6,4,5,5,6,4,5
-; Formula: a(n) = 3*truncate(bitxor(n+1,n)/3)-bitxor(n+1,n)-3*truncate(bitxor(n-1,n)/3)+bitxor(n-1,n)+5
+; Formula: a(n) = -(bitxor(n+1,n)%3)-3*truncate(bitxor(n-1,n)/3)+bitxor(n-1,n)+5
 
 mov $1,$0
 mov $2,$0

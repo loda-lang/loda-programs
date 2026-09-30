@@ -1,6 +1,7 @@
 ; A018402: Divisors of 342.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,18,19,38,57,114,171,342
+; Formula: a(n) = if((if((a(n-1)%18)==0,a(n-1)/18,a(n-1))%2)==0,if((a(n-1)%18)==0,a(n-1)/18,a(n-1))/2,if((a(n-1)%18)==0,a(n-1)/18,a(n-1)))+a(n-1), a(1) = 1
 
 #offset 1
 

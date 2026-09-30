@@ -14,7 +14,6 @@ mov $4,$3
 div $4,$2
 add $3,$4
 add $3,2
+gcd $0,$3
 mov $1,$0
-gcd $1,$3
-mov $0,$1
 mul $0,2

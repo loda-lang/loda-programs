@@ -1,6 +1,7 @@
 ; A214304: Expansion of phi(q) + phi(q^2) - phi(q^4) in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by amazing
 ; 1,2,2,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+; Formula: a(n) = 2*((sqrtint(if((n%2)==0,n/2,n))^2)==if((n%2)==0,n/2,n))-(if((n%2)==0,n/2,n)==0)
 
 mov $2,$0
 dif $2,2

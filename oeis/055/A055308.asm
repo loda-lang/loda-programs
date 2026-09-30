@@ -4,11 +4,24 @@
 
 #offset 8
 
-sub $0,8
 mov $1,$0
-add $0,7
-seq $0,144969 ; Stirling numbers of second kind S(n,n-6).
-add $1,8
+sub $0,1
+mul $0,-1
+mov $2,63
+mul $2,$0
+add $2,1575
+mul $2,$0
+add $2,15435
+mul $2,$0
+add $2,73801
+mul $2,$0
+add $2,171150
+mul $2,$0
+add $2,152696
+add $0,6
+bin $0,7
+mul $0,$2
+div $0,576
 lpb $1
   mul $0,$1
   sub $1,1

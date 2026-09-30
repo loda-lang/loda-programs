@@ -12,10 +12,25 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,336751 ; Smallest side of integer-sided triangles whose sides a < b < c are in arithmetic progression.
-  sub $3,2
-  mov $5,$3
+  mov $6,$3
+  mul $6,4
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  add $6,1
+  mov $7,$3
+  sub $7,1
+  sub $3,1
+  div $3,$6
   add $3,1
+  gcd $3,$6
+  add $3,$6
+  pow $6,2
+  sub $6,$7
+  mul $6,-1
+  add $3,$6
+  mov $5,$3
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

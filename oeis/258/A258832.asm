@@ -14,9 +14,8 @@ lpb $0
   mul $7,24
   mov $6,$7
   nrt $6,2
-  mul $3,12
-  add $3,1
-  mul $3,2
+  mul $3,24
+  add $3,2
   mov $8,$3
   nrt $8,2
   add $6,$8

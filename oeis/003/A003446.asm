@@ -16,8 +16,7 @@ lpb $0
   bin $5,$0
   mov $6,$7
   bin $6,$4
-  sub $0,1
-  trn $0,1
+  trn $0,2
   add $4,1
   mul $6,$5
   mul $6,$9

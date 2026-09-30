@@ -13,8 +13,7 @@ lpb $2
   mov $5,$1
   seq $5,54634 ; Champernowne sequence: write n in base 8 and juxtapose.
   mov $3,$5
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -12,12 +12,12 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,192687 ; Male-female differences: a(n) = A005378(n) - A005379(n).
     mov $9,10
     add $9,$5
+    sub $4,1
     sub $4,$10
     min $10,$0
     mul $7,$$9

@@ -6,8 +6,7 @@
 
 mov $1,$0
 sub $1,2
-sub $0,3
-equ $0,3
+equ $0,6
 mov $2,$1
 mul $2,2
 sub $2,2

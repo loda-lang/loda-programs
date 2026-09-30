@@ -16,8 +16,7 @@ lpb $0
   bin $3,$1
   div $4,2
   add $6,3
-  sub $0,1
-  trn $0,2
+  trn $0,3
   add $1,1
   mul $3,$2
   div $3,$1

@@ -24,9 +24,8 @@ lpb $1
   div $8,$9
   add $3,$8
   add $3,2
+  gcd $3,$6
   mov $7,$3
-  gcd $7,$6
-  mov $3,$7
   mul $3,$5
   add $2,$3
   mov $4,1

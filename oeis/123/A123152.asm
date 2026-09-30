@@ -1,11 +1,31 @@
 ; A123152: a(n) = (n-th decimal digit of Pi) + 1.
 ; Submitted by lotusexcelle
 ; 4,2,5,2,6,10,3,7,6,4,6,9,10,8,10,4,3,4,9,5,7,3,7,5,4,4,9,4,3,8,10,6,1,3,9,9,5,2,10,8,2,7,10,4,10,10,4,8,6,2,1,6,9,3,1,10,8,5,10,5,5,6,10,3,4,1,8,9,2,7,5,1,7,3,9,7,3,1,9,10
-; Formula: a(n) = A000796(n)+1
 
 #offset 1
 
 mov $1,$0
-seq $1,796 ; Decimal expansion of Pi (or digits of Pi).
+mov $3,0
+mov $6,0
+mov $2,1
+mov $4,$0
+mul $4,7
+lpb $4
+  max $4,1
+  max $6,$3
+  div $6,$4
+  add $3,$2
+  sub $4,1
+  mul $2,2
+  add $2,$6
+lpe
+sub $1,1
+mov $5,10
+pow $5,$1
+div $3,$5
+mul $2,2
+div $2,$3
+mov $1,$2
+mod $1,10
 mov $0,$1
 add $0,1

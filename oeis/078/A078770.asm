@@ -1,4 +1,4 @@
-; A078770: a(n) = the least positive integer k such that k^2 + k + N is prime, where N is the n-th positive odd integer.
+; A078770: a(n) = the least positive integer k such that k^2 + k + 2*n - 1 is prime.
 ; Submitted by Coleslaw
 ; 1,1,1,2,1,1,2,1,1,3,1,2,2,1,1,2,4,1,2,1,1,5,1,2,3,1,2,2,1,1,2,4,1,2,1,1,2,7,1,5,1,2,3,1,3,2,4,1,2,1,1,2,1,1,5,1,10,3,4,3,2,7,1,3,1,2,2,1,1,3,7,2,2,1,1,2,4,1,2,4
 

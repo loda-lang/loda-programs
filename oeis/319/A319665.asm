@@ -1,4 +1,4 @@
-; A319665: Irregular triangle read by rows: T(n,k) = log_5(4*k + 1) mod 2^n, n >= 2, 0 <= k <= 2^(n-2) - 1.
+; A319665: Irregular triangle read by rows: T(n,k) is the discrete logarithm log_5(4*k + 1) in the cyclic group 1+4Z/2^nZ, n >= 2, 0 <= k <= 2^(n-2) - 1.
 ; Submitted by gemini8
 ; 0,0,1,0,1,2,3,0,1,6,7,4,5,2,3,0,1,6,15,12,13,2,11,8,9,14,7,4,5,10,3,0,1,6,15,28,13,2,27,24,25,30,7,20,5,26,19,16,17,22,31,12,29,18,11,8,9,14,23,4,21,10,3,0,1,6,47,28,45,2,59,56,25,62,7,20,5,58,19,48
 

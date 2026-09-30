@@ -13,7 +13,14 @@ lpb $3
   mov $4,$1
   mov $0,$2
   add $0,1
-  seq $0,162897 ; a(1)=a(2)=2. a(n) = the smallest integer >= 2 such that a(n-1)^a(n) > a(n-2)^a(n-1).
+  mov $5,$2
+  div $5,2
+  mov $6,$2
+  bor $6,$0
+  leq $6,6
+  add $6,$5
+  mov $0,$6
+  add $0,1
   add $1,$0
   add $2,1
   pow $4,$0

@@ -1,7 +1,7 @@
 ; A060040: Square array T(n,k) (n >= 2, k >= 1) giving smallest positive integer m such that any set of m points in general position in R^n contains k points in convex position, read by antidiagonals.
 ; Submitted by loader3229
 ; 1,1,2,1,2,3,1,2,3,5,1,2,3,4,9,1,2,3,4,6
-; Formula: a(n) = -binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+binomial(truncate((sqrtint(8*n+8)-1)/2),2*n-truncate((sqrtint(8*n+8)-1)/2)-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-3)+n+1
+; Formula: a(n) = -binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+binomial(floor((sqrtint(8*n+8)-1)/2),2*n-floor((sqrtint(8*n+8)-1)/2)-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-3)+n+1
 
 add $0,1
 mov $1,$0

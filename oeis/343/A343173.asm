@@ -1,6 +1,7 @@
 ; A343173: First differences of paper-folding sequence A014577.
 ; Submitted by Science United
 ; 0,-1,1,0,-1,0,1,0,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,0,1,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,1,0,0,-1,0,1,-1,0,0,1,0,-1,1,0,-1,0,0,1,0,-1,0,1,-1,0,1,0,0,-1,1,0,-1,0,1,0,0,-1,0,1,-1,0,1,0
+; Formula: a(n) = floor(if(binomial(n+2,2)==0,0,binomial(n+2,2)/(2^valuation(binomial(n+2,2),2)))/2)%2-2*(floor((n+2)/2)%2)*(floor(if(binomial(n+2,2)==0,0,binomial(n+2,2)/(2^valuation(binomial(n+2,2),2)))/2)%2)
 
 add $0,2
 mov $1,$0

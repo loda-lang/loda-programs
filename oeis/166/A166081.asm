@@ -13,8 +13,7 @@ lpb $2
   seq $5,294345 ; Sum of the products of the smaller and larger parts of the Goldbach partitions of n into two distinct parts.
   mov $3,$1
   sub $3,$5
-  add $3,3
-  trn $3,3
+  max $3,0
   min $3,1
   sub $0,$3
   add $1,1

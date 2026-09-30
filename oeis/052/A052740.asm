@@ -1,10 +1,9 @@
-; A052740: A simple context-free grammar in a labeled universe.
+; A052740: A simple context-free grammar in a labeled universe: labeled version of A049140.
 ; Submitted by PDW
 ; 0,1,2,12,144,2400,50400,1290240,39070080,1365154560,54047347200,2391175987200,116918542540800,6260970517401600,364413626331955200,22906448213096448000,1546480919558615040000,111605770820457897984000
 
 mov $1,$0
-trn $0,1
-add $0,1
+max $0,1
 seq $0,49140 ; Revert transform of 1 - x - x^3.
 lpb $1
   mul $0,$1

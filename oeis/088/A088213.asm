@@ -18,7 +18,7 @@ lpb $2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   lpb $3
     div $3,4
-    mul $2,0
+    mov $2,0
   lpe
   sub $4,1
 lpe

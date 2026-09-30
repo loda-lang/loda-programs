@@ -1,7 +1,7 @@
 ; A127872: Triangle formed by reading A039599 mod 2.
 ; Submitted by KetamiNO [YouTube]
 ; 1,1,1,0,1,1,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0
-; Formula: a(n) = -2*truncate(binomial(2*truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n+1)/2)+binomial(2*truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n+1)
+; Formula: a(n) = -2*truncate(binomial(2*floor((sqrtint(8*n+8)-1)/2)+1,-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+1)/2)+binomial(2*floor((sqrtint(8*n+8)-1)/2)+1,-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+1)
 
 add $0,1
 mov $1,$0

@@ -10,9 +10,8 @@ seq $1,156552 ; Unary-encoded compressed factorization of natural numbers.
 seq $1,6068 ; a(n) is Gray-coded into n.
 seq $1,341915 ; For any nonnegative number n with runs in binary expansion (r_1, ..., r_w), a(n) = Sum_{k = 1..w} 2^(r_1 + ... + r_k - 1).
 seq $1,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-sub $1,1
 mov $2,$1
-add $1,1
+sub $2,1
 seq $1,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $2,$1
 mov $1,$2

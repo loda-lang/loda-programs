@@ -1,11 +1,15 @@
 ; A344587: Deficiency of prime-shifted n: a(n) = 2*A003961(n) - sigma(A003961(n)).
 ; 1,2,4,5,6,6,10,14,19,10,12,12,16,18,22,41,18,26,22,22,38,22,28,30,41,30,94,42,30,18,36,122,46,34,58,47,40,42,62,58,42,42,46,52,102,54,52,84,109,66,70,72,58,126,70,114,86,58,60,6,66,70,178,365,94,54,70,82,110,78,72,110,78,78,148,102,118,78,82,166
-; Formula: a(n) = 2*A253885(n-1)-truncate((84*A000203(A253885(n-1)+1)-79)/84)+1
+; Formula: a(n) = 2*truncate((8*A003961(n)-4)/8)-truncate((84*A000203(truncate((8*A003961(n)-4)/8)+1)-79)/84)+1
 
 #offset 1
 
-sub $0,1
-seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+mov $3,$0
+seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+mul $3,8
+mov $0,$3
+sub $0,4
+div $0,8
 add $0,1
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

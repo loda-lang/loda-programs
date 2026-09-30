@@ -6,9 +6,8 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
 mov $3,$0
-add $0,1
+sub $3,1
 seq $0,7429 ; Inverse Moebius transform applied twice to natural numbers.
 sub $0,1
 sub $0,$3

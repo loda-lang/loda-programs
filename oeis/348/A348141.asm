@@ -4,5 +4,16 @@
 
 #offset 1
 
-seq $0,115415 ; Real part of (n + i)^n, with i=sqrt(-1).
+mov $1,$0
+mov $2,1
+mov $3,0
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mul $3,$1
+  add $3,$2
+  mul $2,$1
+  sub $2,$4
+lpe
+mov $0,$2
 dir $0,2

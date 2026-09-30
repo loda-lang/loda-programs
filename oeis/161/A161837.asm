@@ -1,7 +1,7 @@
 ; A161837: First differences of A161836.
 ; Submitted by Science United
 ; 0,0,0,3,0,0,0,6,6
-; Formula: a(n) = 3*truncate((n*truncate(7/(-n))+7)/3)
+; Formula: a(n) = 3*floor((n*truncate(7/(-n))+7)/3)
 
 #offset 1
 

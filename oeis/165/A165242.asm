@@ -1,15 +1,14 @@
 ; A165242: The larger member of the n-th twin prime pair, modulo 8.
 ; Submitted by DukeBox
 ; 5,7,5,3,7,3,5,1,7,5,3,7,5,1,7,5,1,7,3,1,5,5,1,7,3,3,1,3,3,5,3,7,5,3,3,5,1,3,7,5,1,7,7,3,7,1,5,5,3,1,1,5,5,3,3,5,1,7,5,7,7,5,3,1,1,3,7,7,5,7,5,7,7,1,3,1,1,3,7,3
-; Formula: a(n) = 2*((floor((A171688(max(2*n-3,0)+1)*(8*floor((169*floor(A171688(max(2*n-3,0)+1)/2)^2-663)/169)+34)-167)/12)+14)%4)+1
+; Formula: a(n) = 2*truncate((A171688(max(2*n-2,1))*(8*truncate((169*truncate(A171688(max(2*n-2,1))/2)^2-663)/169)+34)-167)/12)-8*truncate((truncate((A171688(max(2*n-2,1))*(8*truncate((169*truncate(A171688(max(2*n-2,1))/2)^2-663)/169)+34)-167)/12)+14)/4)+29
 
 #offset 1
 
 mov $1,$0
 sub $1,1
 mul $1,2
-trn $1,1
-add $1,1
+max $1,1
 seq $1,171688 ; Twin primes > 3.
 mov $2,$1
 div $1,2

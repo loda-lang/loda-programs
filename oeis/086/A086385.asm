@@ -11,8 +11,11 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
+  mov $6,$1
+  seq $6,796 ; Decimal expansion of Pi (or digits of Pi).
   mov $3,$1
-  seq $3,123152 ; a(n) = (n-th decimal digit of Pi) + 1.
+  mov $3,$6
+  add $3,1
   mov $5,$3
   mul $3,338
   gcd $3,4

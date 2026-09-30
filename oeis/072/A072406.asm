@@ -10,7 +10,28 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $0,$3
-  seq $0,28262 ; Elements in 3-Pascal triangle (by row).
+  add $0,1
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  mov $7,$5
+  add $7,1
+  bin $7,2
+  sub $0,$7
+  sub $0,1
+  mov $4,$5
+  bin $4,$0
+  mov $6,$5
+  mul $6,2
+  neq $6,2
+  sub $0,1
+  sub $5,2
+  bin $5,$0
+  mul $5,$6
+  add $4,$5
+  mov $0,$4
   mod $0,2
   add $1,$0
   sub $3,1

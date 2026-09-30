@@ -12,9 +12,8 @@ lpb $2
   add $3,1
   seq $3,120294 ; Numerator of determinant of n X n matrix with elements M[j,j] = (i+j)/(i+j-1).
   div $3,2
+  equ $3,0
   mov $5,$3
-  equ $5,0
-  mov $3,$5
   add $3,1
   mod $3,2
   sub $0,$3

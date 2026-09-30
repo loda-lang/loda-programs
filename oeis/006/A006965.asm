@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,38060 ; Number of trees with 3-colored nodes.
 mov $1,$0
-seq $1,38060 ; Number of trees with 3-colored nodes.
-mov $0,$1
 div $0,3

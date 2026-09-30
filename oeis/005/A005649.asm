@@ -10,11 +10,10 @@ lpb $0
   sub $0,1
   mov $5,$2
   add $5,$3
+  seq $5,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  mov $6,$5
   bin $4,0
   add $4,$2
-  mov $6,$5
-  seq $6,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  mov $5,$6
   mul $5,$4
   add $1,$5
   add $2,1

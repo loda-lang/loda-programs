@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 lpb $2
   gcd $3,2
   mov $5,$1
@@ -16,9 +14,8 @@ lpb $2
   seq $5,6068 ; a(n) is Gray-coded into n.
   seq $5,341915 ; For any nonnegative number n with runs in binary expansion (r_1, ..., r_w), a(n) = Sum_{k = 1..w} 2^(r_1 + ... + r_k - 1).
   seq $5,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-  sub $5,1
   mov $6,$5
-  add $5,1
+  sub $6,1
   seq $5,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $6,$5
   mov $5,$6

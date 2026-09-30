@@ -4,8 +4,7 @@
 
 #offset 1
 
-sub $0,1
-trn $0,1
+trn $0,2
 add $0,1
 mov $3,$0
 mul $3,200

@@ -1,7 +1,7 @@
 ; A240236: Triangle read by rows: sum of digits of n in base k, for 2<=k<=n.
 ; Submitted by loader3229
 ; 1,2,1,1,2,1,2,3,2,1,2,2,3,2,1,3,3,4,3,2,1,1,4,2,4,3,2,1,2,1,3,5,4,3,2,1,2,2,4,2,5,4,3,2,1,3,3,5,3,6,5,4,3,2,1,2,2,3,4,2,6,5,4,3,2,1,3,3,4,5,3,7,6,5,4,3,2,1,3,4
-; Formula: a(n) = sumdigits(truncate((sqrtint(8*n-8)+3)/2),-binomial(truncate((sqrtint(8*n-8)+3)/2)-1,2)+n)*sign(truncate((sqrtint(8*n-8)+3)/2))
+; Formula: a(n) = sumdigits(floor((sqrtint(8*n-8)+3)/2),-binomial(floor((sqrtint(8*n-8)+3)/2)-1,2)+n)
 
 #offset 2
 

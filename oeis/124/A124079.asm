@@ -1,12 +1,22 @@
 ; A124079: a(n) = H(2n+1)*(2n+1)!/n!, where H(n) = Sum_{k=1..n} 1/k, the n-th harmonic number.
 ; Submitted by PDW
 ; 1,11,137,2178,42774,1004532,27503832,860945040,30342400560,1189277851680,51324077044800,2418504655996800,123569793528249600,6804789307610918400,401797276566253747200,25323878997135577958400
-; Formula: a(n) = truncate(A000254(2*n+1)/(n!))
 
 mov $1,$0
 add $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,0
+sub $2,$0
+mov $3,2
+mov $4,0
+fac $0,$2
 add $1,1
-seq $1,254 ; Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
+lpb $1
+  mul $4,$1
+  add $4,$3
+  mul $3,$1
+  sub $1,1
+lpe
+mov $1,$4
+div $1,2
 div $1,$0
 mov $0,$1

@@ -17,9 +17,8 @@ lpb $3
   bin $0,2
   add $0,2
   seq $0,141468 ; Zero together with the nonprime numbers A018252.
+  seq $0,101203 ; a(n) = sum of nonprimes <= n.
   mov $6,$0
-  seq $6,101203 ; a(n) = sum of nonprimes <= n.
-  mov $0,$6
   sub $0,1
   mov $1,$3
   mul $1,$0

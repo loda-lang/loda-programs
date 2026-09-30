@@ -1,6 +1,7 @@
 ; A193514: Expansion of phi(-q)^2 * phi(-q^9) / phi(-q^3) in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,-4,4,2,-4,0,4,-8,4,2,0,0,2,-8,8,0,-4,0,4,-8,0,4,0,0,4,-4,8,2,-8,0,0,-8,4,0,0,0,2,-8,8,4,0,0,8,-8,0,0,0,0,2,-12,4,0,-8,0,4,0,8,4,0,0,0,-8,8,4,-4,0,0,-8,0,0,0,0,4,-8,8,2,-8,0,8,-8
+; Formula: a(n) = truncate(((6*if((((n+2)%3)%2)==0,((n+2)%3)/2,(n+2)%3)-4)*(2*A123331(max(n-1,0)+1)-max(n-1,0)+n-1))/2)
 
 mov $1,$0
 add $1,2

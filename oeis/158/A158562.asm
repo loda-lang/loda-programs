@@ -6,6 +6,5 @@
 #offset 1
 
 pow $0,2
-mul $0,16
-sub $0,1
-mul $0,16
+mul $0,256
+sub $0,16

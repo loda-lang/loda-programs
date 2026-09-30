@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $2,55 ; Number of trees with n unlabeled nodes.
+mul $0,$2
 mov $1,$0
-mul $1,$2
-mov $0,$1

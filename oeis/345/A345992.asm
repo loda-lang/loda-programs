@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

@@ -25,7 +25,6 @@ div $4,2
 bin $4,2
 sub $0,$4
 add $0,1
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $5,$0
-seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $0,$5
 mul $0,$2

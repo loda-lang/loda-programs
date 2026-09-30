@@ -12,7 +12,7 @@ lpb $0
   max $2,0
   mul $2,2
   dif $2,2
-  seq $2,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+  seq $2,712 ; a(n) = number of partitions of n into parts of 2 kinds.
   mul $2,$5
   add $4,1
   add $1,$2

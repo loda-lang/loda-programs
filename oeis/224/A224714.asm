@@ -13,11 +13,9 @@ lpb $0
   lpb $4
     sub $4,1
     mov $5,$4
-    trn $5,1
-    add $5,1
+    max $5,1
     seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-    add $5,2
-    equ $5,2
+    equ $5,0
     equ $5,$1
     min $1,$0
     add $2,1

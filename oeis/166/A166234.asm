@@ -19,7 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
-    seq $5,69158 ; a(n) = Product{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
+    seq $5,69158 ; a(n) = Product_{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
     add $4,1
   lpe
   mul $1,$5

@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   mov $6,$3
   seq $6,63659 ; The number of integers m in [1..n] for which gcd(m,n) is not divisible by a square greater than 1.
   sub $3,$6

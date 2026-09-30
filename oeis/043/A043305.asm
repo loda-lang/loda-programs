@@ -4,14 +4,10 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,2
+add $2,1
 pow $2,3
 lpb $2
-  trn $3,1
-  add $3,1
   mov $4,$1
   add $4,1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
@@ -22,6 +18,7 @@ lpb $2
   mov $5,$4
   gcd $5,$6
   div $4,$5
+  max $3,1
   equ $3,$4
   sub $0,$3
   add $1,1

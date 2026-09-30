@@ -1,4 +1,4 @@
-; A324476: Packing numbers for n-tripods.
+; A324476: Duplicate of A070214.
 ; Submitted by Dave Studdert
 ; 1,2,5,8,11,14,19,23,28,32,38
 ; Formula: a(n) = floor((3*floor(((n+10)*(5*n-5))/42))/2)+1

@@ -5,11 +5,9 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
-add $0,1
+sub $0,1
 seq $0,40 ; The prime numbers.
-add $1,2
 seq $1,40 ; The prime numbers.
 seq $1,60284 ; Periodic part of decimal expansion of 1/n (leading 0's omitted).
 mul $1,$0

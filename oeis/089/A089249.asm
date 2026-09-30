@@ -1,7 +1,7 @@
 ; A089249: Triangular array read by rows illustrating the connection between A000522 and A008292.
 ; Submitted by loader3229
 ; 1,3,4,6,16,11,10,40,55,26,15,80,165,156,57,21,140,385,546,399,120
-; Formula: a(n) = binomial(truncate((sqrtint(8*n)-1)/2)+2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))-2)
+; Formula: a(n) = binomial(floor((sqrtint(8*n)-1)/2)+2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)*(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)
 
 #offset 1
 

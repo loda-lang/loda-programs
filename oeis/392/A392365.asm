@@ -1,12 +1,39 @@
 ; A392365: The cubefree numbers squared.
 ; Submitted by Science United
 ; 1,4,9,16,25,36,49,81,100,121,144,169,196,225,289,324,361,400,441,484,529,625,676,784,841,900,961,1089,1156,1225,1296,1369,1444,1521,1681,1764,1849,1936,2025,2116,2209,2401,2500,2601,2704,2809,3025,3249,3364,3481,3600,3721,3844,3969,4225,4356,4489,4624,4761,4900,5041,5329,5476,5625,5776,5929,6084,6241,6724,6889,7056,7225,7396,7569,7921,8100,8281,8464,8649,8836
-; Formula: a(n) = A004709(n)*gcd(0,A004709(n))
 
 #offset 1
 
-seq $0,4709 ; Cubefree numbers: numbers that are not divisible by any cube > 1.
+sub $0,1
+mov $3,0
+mov $4,$0
+pow $4,2
+lpb $4
+  mov $5,$3
+  add $5,1
+  mov $7,$5
+  seq $7,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  mov $10,$5
+  sub $5,1
+  mov $8,$5
+  div $8,$7
+  add $5,$8
+  add $5,2
+  mov $9,$5
+  mod $9,$7
+  gcd $9,$10
+  mov $5,$9
+  trn $5,$3
+  sub $0,$5
+  add $3,1
+  mov $6,$0
+  max $6,0
+  equ $6,$0
+  mul $4,$6
+  sub $4,1
+lpe
+mov $0,$3
+add $0,1
 gcd $2,$0
+mul $0,$2
 mov $1,$0
-mul $1,$2
-mov $0,$1

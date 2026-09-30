@@ -9,11 +9,8 @@ mov $1,$0
 seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
 mul $0,$1
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-sub $0,1
 mov $2,$0
-add $0,1
 seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-add $2,1
 seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $2,$0
 mov $0,$2

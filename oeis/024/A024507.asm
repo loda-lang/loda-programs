@@ -10,8 +10,7 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  trn $3,1
-  add $3,1
+  max $3,1
   dir $3,2
   div $3,2
   mov $5,-1

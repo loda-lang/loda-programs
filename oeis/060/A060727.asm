@@ -9,13 +9,13 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    sub $4,1
     mov $7,$4
-    equ $7,6
+    equ $7,7
     seq $7,152204 ; Triangle read by rows: T(n,k) = 2*n-4*k+5 (n >= 0, 1 <= k <= 1+floor(n/2)).
     equ $7,1
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $6,$5
     mul $7,$$9
     add $5,1

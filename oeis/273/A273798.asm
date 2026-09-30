@@ -15,7 +15,11 @@ lpb $2
   min $3,1
   mul $3,$1
   add $3,1
-  seq $3,322865 ; a(n) = A000265(A122111(n)).
+  mov $5,$3
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$5
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  dir $3,2
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

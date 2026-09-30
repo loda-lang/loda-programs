@@ -1,7 +1,7 @@
 ; A286752: {010010->null}-transform of the infinite Fibonacci word A003849.
 ; Submitted by Stephen Uitti
 ; 1,0,1,0,0,1,0,1,0,1,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,0,1
-; Formula: a(n) = -2*truncate((truncate((floor((n-1)/2)+sqrtint((floor((n-1)/2)+1)*(5*floor((n-1)/2)+5))+1)/2)+n-1)/2)+truncate((floor((n-1)/2)+sqrtint((floor((n-1)/2)+1)*(5*floor((n-1)/2)+5))+1)/2)+n-1
+; Formula: a(n) = (floor((floor((n-1)/2)+sqrtint((floor((n-1)/2)+1)*(5*floor((n-1)/2)+5))+1)/2)+n-1)%2
 
 #offset 1
 

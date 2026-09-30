@@ -7,6 +7,5 @@ mov $1,$0
 add $1,$0
 add $1,1
 ban $0,$1
+equ $0,0
 mov $2,$0
-equ $2,0
-mov $0,$2

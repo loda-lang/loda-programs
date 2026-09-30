@@ -8,8 +8,7 @@ mov $1,3
 sub $0,1
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,133870 ; Primes of the form 32*n + 1.
   mov $0,0
 lpe

@@ -1,4 +1,4 @@
-; A241436: Number of 2Xn 0..3 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of the elements above it or zero plus the sum of the elements diagonally to its northwest or one plus the sum of the elements antidiagonally to its northeast, modulo 4.
+; A241436: Number of 2 X n 0..3 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of the elements above it or zero plus the sum of the elements diagonally to its northwest or one plus the sum of the elements antidiagonally to its northeast, modulo 4.
 ; Submitted by loader3229
 ; 3,5,10,21,45,88,181,378,710,1460,2973,5668,11567,23202,45182,91386,182056,358886,721278,1433814,2843343,5691577,11312714,22494505,44919750,89325211,177819368,354608529,705515901,1405063399,2799954077,5572860402,11099862396,22111334391,44020446205,87678616338,174629532177,347716175678,692547806525,1379248959974,2746552811219,5470135377449,10893805683104,21694270013014,43205998489857,86044409194720,171355506400289,341263456248579,679623779493527,1353469859823910,2695478941457253,5368039782972716
 

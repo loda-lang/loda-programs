@@ -4,12 +4,11 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-sub $0,1
+sub $1,1
+sub $0,2
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,55638 ; Numbers k for which sigma(k^2) is prime.
   pow $0,2
   sub $0,2

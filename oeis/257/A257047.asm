@@ -11,9 +11,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,256914 ; Trace of the enhanced squares representation of n.
-  sub $3,1
   add $3,$4
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

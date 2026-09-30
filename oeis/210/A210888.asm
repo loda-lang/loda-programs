@@ -1,6 +1,7 @@
 ; A210888: Dates after Jan 01 00 in chronological order which are palindromic when they are written in the format DD.MM.YY. The terms are listed as numbers (without the dots). Leading zeros of the terms are suppressed.
 ; Submitted by loader3229
 ; 101101,201102,301103,11110,111111,211112,21120,121121,221122,31130,131131,231132,41140,141141,241142,51150,151151,251152,61160,161161,261162,71170,171171,271172,81180,181181,281182,91190,191191,291192
+; Formula: a(n) = b(n-1), b(n) = -b(n-4)+b(n-1)+b(n-3), b(13) = 141141, b(12) = 41140, b(11) = 231132, b(10) = 131131, b(9) = 31130, b(8) = 221122, b(7) = 121121, b(6) = 21120, b(5) = 211112, b(4) = 111111, b(3) = 11110, b(2) = 301103, b(1) = 201102, b(0) = 101101
 
 #offset 1
 
@@ -13,7 +14,7 @@ mov $6,211112
 mov $7,21120
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,7
   sub $7,$3
   add $7,$4

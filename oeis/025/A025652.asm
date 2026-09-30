@@ -1,7 +1,7 @@
 ; A025652: Exponent of 5 (value of i) in n-th number of form 5^i*7^j.
 ; Submitted by BrandyNOW
 ; 0,1,0,2,1,0,3,2,1,0,4,3,2,1,0,5,4,3,2,1,6,0,5,4,3,2,7,1,6,0,5,4,3,8,2,7,1,6,0,5,4,9,3,8,2,7,1,6,0,5,10,4,9,3,8,2,7,1,6,0,11,5,10,4,9,3,8,2,7,1,12,6,0,11,5,10,4,9,3,8
-; Formula: a(n) = logint(truncate(A003595(n)/truncate(7^A025667(n))),5)
+; Formula: a(n) = logint(truncate(A003595(n)/if((7^2)==1,7^A025667(n),if(A025667(n)<=(-1),0,7^A025667(n)))),5)
 
 #offset 1
 

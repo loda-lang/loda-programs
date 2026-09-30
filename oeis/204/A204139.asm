@@ -15,8 +15,7 @@ lpb $2
   seq $3,71519 ; Numbers whose square is a zeroless pandigital number (i.e., use the digits 1 through 9 once).
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

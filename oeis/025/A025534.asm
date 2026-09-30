@@ -6,6 +6,6 @@
 mov $1,$0
 seq $0,24419 ; a(n) = n! (1/C(n,0) + 1/C(n,1) + ... + 1/C(n,[ n/2 ])).
 add $1,1
-seq $1,67318 ; Total number of transpositions in all permutations of n letters.
+seq $1,67318 ; Sum of the reflection lengths of all permutations of n letters.
 gcd $1,$0
 div $0,$1

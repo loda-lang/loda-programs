@@ -17,7 +17,7 @@ lpb $0
     sub $4,$3
     add $7,1
   lpe
-  mul $1,0
+  mov $1,0
   mul $2,$7
   lpb $0
     dif $0,$7

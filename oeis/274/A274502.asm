@@ -5,9 +5,9 @@
 
 #offset 5
 
-sub $0,7
 mov $1,$0
-add $0,6
+sub $1,7
+sub $0,1
 bin $0,$1
 mul $1,10
 add $1,7

@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,376604 ; Second differences of the Kolakoski sequence (A000002). First differences of A054354.
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $3,1
   gcd $3,2
   sub $0,$3

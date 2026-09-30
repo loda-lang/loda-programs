@@ -13,8 +13,7 @@ lpb $0
   lpb $4
     sub $4,1
     sub $4,$0
-    sub $5,2
-    trn $5,1
+    trn $5,3
     bin $8,$0
     add $1,$7
     mul $7,$11

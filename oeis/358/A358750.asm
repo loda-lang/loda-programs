@@ -1,6 +1,7 @@
 ; A358750: a(n) = 1 if A349905(n) is a multiple of 4, otherwise 0. Here A349905(n) is the arithmetic derivative applied to the prime shifted n.
 ; Submitted by Stony666
 ; 1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+; Formula: a(n) = (if((A003415(A003961(n))%2)==0,A003415(A003961(n))/2,A003415(A003961(n)))+1)%2
 
 #offset 1
 

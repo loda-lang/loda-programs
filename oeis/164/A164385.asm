@@ -39,6 +39,5 @@ lpb $2
 lpe
 mov $0,$1
 div $0,3
-mul $0,2
-add $0,3
-mul $0,3
+mul $0,6
+add $0,9

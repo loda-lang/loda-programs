@@ -9,11 +9,11 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  mov $5,$3
-  add $3,8
+  add $3,9
   mov $6,$3
   seq $3,40297 ; Continued fraction for sqrt(315).
+  mov $5,$1
+  add $5,1
   lpb $5
     div $5,10
     mul $3,10

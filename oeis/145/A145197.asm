@@ -9,7 +9,7 @@ sub $0,1
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,82462 ; Let chi(k) = 1 if prime(k+1) - prime(k) = 2, = 0 otherwise; sequence gives a(n) = sum_{k <= n} chi(k).
+  seq $2,82462 ; Let chi(k) = 1 if prime(k+1) - prime(k) = 2, = 0 otherwise; sequence gives a(n) = Sum_{k <= n} chi(k).
   sub $0,1
   add $1,$2
 lpe

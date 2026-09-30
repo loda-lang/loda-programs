@@ -25,9 +25,8 @@ lpb $4
   add $0,2
   pow $0,2
   mul $0,2
+  nrt $0,2
   mov $6,$0
-  nrt $6,2
-  mov $0,$6
   add $0,$7
   mod $0,2
   add $0,2

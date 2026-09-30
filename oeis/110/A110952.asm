@@ -1,7 +1,7 @@
 ; A110952: Triangle read by rows: T(n,k) = number of permutations of [n] where the first increasing run has length k and the last increasing run has length n-k-1, 0<k<n-1.
 ; Submitted by loader3229
-; 1,3,3,6,11,6,10,26,26,10,15,50,71,50,15,21,85,155,155,85,21,28,133,295,379,295,133,28,36,196,511,799,799,511,196,36,45,276,826,1519,1849,1519,826,276,45,55,375,1266,2674,3829,3829,2674,1266,375,55,66,495,1860
-; Formula: a(n) = binomial(truncate((sqrtint(8*n-16)-1)/2)+3,-binomial(truncate((sqrtint(8*n-16)-1)/2)+1,2)+n-1)*(-binomial(truncate((sqrtint(8*n-16)-1)/2)+1,2)+n-1)-binomial(truncate((sqrtint(8*n-16)-1)/2)+3,-binomial(truncate((sqrtint(8*n-16)-1)/2)+1,2)+n-1)-binomial(truncate((sqrtint(8*n-16)-1)/2)+3,-binomial(truncate((sqrtint(8*n-16)-1)/2)+1,2)+n-2)+1
+; 1,3,3,6,11,6,10,26,26,10,15,50,71,50,15,21,85,155,155,85,21,28,133,295,379,295,133,28,36,196,511,799,799,511,196,36,45,276,826,1519,1849,1519,826,276,45,55,375,1266,2674,3829,3829,2674,1266,375,55,66,495,1860,4434,7294,8581,7294,4434,1860,495,66,78,638,2640,7008,13014,17590,17590,13014,7008,2640,638,78,91,806
+; Formula: a(n) = binomial(floor((sqrtint(8*n-16)-1)/2)+3,-binomial(floor((sqrtint(8*n-16)-1)/2)+1,2)+n-1)*(-binomial(floor((sqrtint(8*n-16)-1)/2)+1,2)+n-1)-binomial(floor((sqrtint(8*n-16)-1)/2)+3,-binomial(floor((sqrtint(8*n-16)-1)/2)+1,2)+n-1)-binomial(floor((sqrtint(8*n-16)-1)/2)+3,-binomial(floor((sqrtint(8*n-16)-1)/2)+1,2)+n-2)+1
 
 #offset 3
 

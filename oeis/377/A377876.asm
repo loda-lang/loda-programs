@@ -12,7 +12,7 @@ lpb $2
   mul $0,12
   bin $1,0
   mul $1,$0
-  mul $0,0
+  mov $0,0
   add $3,$1
 lpe
 mod $3,324

@@ -4,17 +4,15 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-sub $0,1
-add $2,6
+sub $0,2
+add $2,5
 pow $2,3
 lpb $2
   mov $3,$1
   add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -1,6 +1,7 @@
 ; A004067: The coding-theoretic function A(n,6,7).
 ; Submitted by BrandyNOW
 ; 1,1,1,3,6,12,26,42,69
+; Formula: a(n) = floor(((max(if(((n-7)%3)==0,(n-7)/3,n-7),(n-7)^2-if(((n-7)%3)==0,(n-7)/3,n-7))+8)*(2*(n-7)^2+1))/120)+1
 
 #offset 7
 

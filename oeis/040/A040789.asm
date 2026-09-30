@@ -1,7 +1,7 @@
 ; A040789: Continued fraction for sqrt(818).
 ; Submitted by BrandyNOW
 ; 28,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1,56,1,1,1,1
-; Formula: a(n) = binomial(8,truncate(binomial(gcd(min(n,1)+4,n),3)/2))
+; Formula: a(n) = binomial(8,floor(binomial(gcd(min(n,1)+4,n),3)/2))
 
 mov $1,$0
 min $0,1

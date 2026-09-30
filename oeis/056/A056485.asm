@@ -10,8 +10,28 @@ add $9,1
 lpb $0
   sub $0,1
   mov $4,$2
-  add $4,1
-  seq $4,56457 ; Palindromes using exactly six different symbols.
+  add $4,2
+  div $4,2
+  mov $11,5
+  pow $11,$4
+  mul $11,6
+  mov $12,4
+  pow $12,$4
+  mul $12,15
+  mov $13,3
+  pow $13,$4
+  mul $13,20
+  mov $14,2
+  pow $14,$4
+  mul $14,15
+  mov $10,6
+  pow $10,$4
+  sub $10,$11
+  add $10,$12
+  sub $10,$13
+  add $10,$14
+  mov $4,$10
+  sub $4,6
   mov $5,$2
   add $5,$9
   mov $7,$5

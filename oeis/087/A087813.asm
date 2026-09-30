@@ -5,14 +5,11 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,40 ; The prime numbers.
-add $1,1
 seq $1,40 ; The prime numbers.
 mov $2,2
 pow $2,$1
+seq $0,40 ; The prime numbers.
 mul $1,2
 bin $1,$0
 sub $1,$2

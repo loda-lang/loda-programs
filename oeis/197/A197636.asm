@@ -20,7 +20,15 @@ lpb $2
   add $5,1
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$5
-  seq $3,301316 ; a(n) = ((n-1)! + 1) mod n^2.
+  sub $3,1
+  mov $8,1
+  fac $8,$3
+  mov $7,$3
+  add $7,1
+  pow $7,2
+  mov $3,$8
+  add $3,1
+  mod $3,$7
   neq $3,0
   sub $0,$3
   mov $4,$0

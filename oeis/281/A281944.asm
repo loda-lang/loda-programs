@@ -28,9 +28,9 @@ mov $6,$5
 add $6,1
 bin $6,2
 sub $1,$6
-sub $1,1
 mov $6,$1
-add $1,2
+sub $6,1
+add $1,1
 mov $5,$6
 add $5,2
 lpb $5
@@ -42,7 +42,7 @@ lpb $5
   mul $9,$8
   add $10,$9
   add $7,1
-  mul $9,0
+  mov $9,0
 lpe
 mov $1,$10
 mul $1,$2

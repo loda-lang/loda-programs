@@ -8,8 +8,7 @@ lpb $4
   sub $4,1
   mov $0,$5
   add $0,$4
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $2,$0
   seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.

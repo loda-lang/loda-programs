@@ -5,9 +5,8 @@
 
 #offset 1
 
-mul $0,2
-sub $0,1
-mul $0,2
+mul $0,4
+sub $0,2
 lpb $0
   mov $2,$0
   div $2,2

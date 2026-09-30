@@ -4,8 +4,7 @@
 ; Formula: a(n) = 2*floor(((max(n-2,0)+n)*n^max(n-2,0))/2)
 
 mov $1,$0
-sub $0,1
-trn $0,1
+trn $0,2
 mov $2,$1
 pow $2,$0
 add $1,$0

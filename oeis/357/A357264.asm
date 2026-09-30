@@ -1,14 +1,14 @@
 ; A357264: Circumference of the n X n giraffe graph.
 ; Submitted by seanr22a
 ; 16,28,46,62,80,100,118,144
-; Formula: a(n) = 6*truncate((sqrtint((n-3)*(5*n-17)^2)+n-3)/2)-2*sqrtint((n-3)*(5*n-17)^2)-2*n+12
+; Formula: a(n) = 6*floor((sqrtint((n-3)*(5*n-17)^2)+n-3)/2)-2*sqrtint((n-3)*(5*n-17)^2)-2*n+12
 
 #offset 5
 
-sub $0,4
 mov $2,$0
-add $0,1
+sub $0,3
 add $2,$0
+sub $2,4
 mul $2,2
 add $2,$0
 pow $2,2

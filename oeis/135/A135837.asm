@@ -1,7 +1,7 @@
 ; A135837: A007318 * a triangle with (1, 2, 2, 4, 4, 8, 8, ...) in the main diagonal and the rest zeros.
 ; Submitted by loader3229
 ; 1,1,2,1,4,2,1,6,6,4,1,8,12,16,4,1,10,20,40,20,8,1,12,30,80,60,48,8,1,14,42,140,140,168,56,16,1,16,56,224,280,448,224,128,16,1,18,72,336,504,1008,672,576,144,32,1,20,90,480,840,2016,1680,1920,720,320,32,1,22,110,660,1320,3696,3696,5280,2640,1760,352,64,1,24
-; Formula: a(n) = truncate(2^truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/2))*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)
+; Formula: a(n) = binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*if(truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/2)<=(-1),0,2^truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/2))
 
 #offset 1
 

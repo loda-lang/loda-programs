@@ -1,7 +1,7 @@
 ; A350070: a(n) = 1 if the maximal digit in the primorial base expansion of n is greater than or equal to the maximal exponent in the prime factorization of n, otherwise 0.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0
-; Formula: a(n) = sqrtnint(truncate(n^(-A051903(n)+A067132(A276086(n))-1)),n)
+; Formula: a(n) = sqrtnint(if((n^2)==1,n^(-A051903(n)+A067132(A276086(n))-1),if((-A051903(n)+A067132(A276086(n))-1)<=(-1),0,n^(-A051903(n)+A067132(A276086(n))-1))),n)
 
 #offset 1
 

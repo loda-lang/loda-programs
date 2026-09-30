@@ -1,7 +1,7 @@
 ; A082786: Triangle, read by rows, of exponents of primes in canonical prime factorization of n: T(n,k) = greatest number such that prime(k)^T(n,k) divides n, 1 <= k <= n.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,0,1,0,2,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A067132(gcd(truncate(A000040(-(truncate((sqrtint(8*n)-1)/2)+1)^2+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+n+1)^(truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1)),truncate((sqrtint(8*(truncate((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1))-1
+; Formula: a(n) = A067132(gcd(if((truncate((sqrtint(8*(floor((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1)<=(-1),0,A000040(-(floor((sqrtint(8*n)-1)/2)+1)^2+binomial(truncate((sqrtint(8*(floor((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*(floor((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+n+1)^(truncate((sqrtint(8*(floor((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1)),truncate((sqrtint(8*(floor((sqrtint(8*n)-1)/2)+1)^2-8*n+8)-1)/2)+1))-1
 
 #offset 1
 

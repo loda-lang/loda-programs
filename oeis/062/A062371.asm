@@ -11,9 +11,11 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,51801 ; Product of the nonzero digits of n.
+  mov $5,$3
+  nrt $5,2
   sub $3,1
-  seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
-  equ $3,1
+  nrt $3,2
+  neq $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

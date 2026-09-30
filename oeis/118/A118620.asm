@@ -1,7 +1,7 @@
 ; A118620: Start with 1 and repeatedly reverse the digits and add 45 to get the next term.
 ; Submitted by loader3229
 ; 1,46,109,946,694,541,190,136,676,721,172,316,658,901,154,496,739,982,334,478,919,964,514,460,109,946,694,541,190,136,676,721,172,316,658,901,154,496,739,982,334,478,919,964,514,460,109,946,694,541,190,136,676,721,172
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+45, b(0) = 1
+; Formula: a(n) = (-10*truncate(a(n-1)/10)+a(n-1))*(9*min(truncate(a(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100),1)+1)+(-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100)+45, a(1) = 1
 
 #offset 1
 

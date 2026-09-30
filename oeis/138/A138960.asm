@@ -6,8 +6,7 @@
 
 sub $0,1
 lpb $0
-  mul $0,0
-  add $0,4
+  mov $0,4
   seq $0,24920 ; a(n) = Sum_{k=1..n} (n-k) * floor(n/k).
   div $0,2
   add $0,$1

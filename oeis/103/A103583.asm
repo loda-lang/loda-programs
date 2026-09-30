@@ -1,7 +1,7 @@
 ; A103583: Same as A103582, but read antidiagonals in upward direction.
 ; Submitted by loader3229
 ; 1,1,0,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1
-; Formula: a(n) = -2*truncate(binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))+n,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))+n,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = -2*truncate(binomial(if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+binomial(if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
 add $0,1
 mov $1,$0

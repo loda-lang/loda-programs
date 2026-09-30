@@ -11,7 +11,22 @@ lpb $4
   sub $0,$4
   mov $1,$0
   sub $1,1
-  seq $0,274719 ; Expansion of Product_{k >= 1} (1-q^(2*k)).
+  mul $0,120
+  dif $0,10
+  add $0,1
+  mov $5,$0
+  nrt $0,2
+  mov $6,$0
+  mov $7,$0
+  add $7,1
+  mod $7,4
+  sub $7,1
+  pow $0,2
+  equ $0,$5
+  mul $0,$6
+  mul $0,$7
+  mod $0,3
+  dif $0,-2
   add $1,$4
   add $1,$4
   bin $1,$4

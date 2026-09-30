@@ -38,9 +38,8 @@ lpb $0
   equ $6,12
   mul $6,54
   add $5,$6
+  sub $5,1
   mov $1,$5
-  sub $1,1
-  mov $5,$1
   max $5,0
   mov $1,$5
   add $1,1

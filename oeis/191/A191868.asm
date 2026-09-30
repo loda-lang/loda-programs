@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,2
+add $2,1
 pow $2,3
 lpb $2
   mov $3,$1
@@ -17,7 +15,10 @@ lpb $2
   add $4,1
   mov $5,$4
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  seq $4,7955 ; Product of divisors of n.
+  mov $6,$4
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  pow $4,$6
+  nrt $4,2
   mod $4,$5
   equ $3,$4
   sub $0,$3

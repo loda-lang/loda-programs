@@ -1,7 +1,7 @@
 ; A081480: Consider the mapping f(a/b) = (a^2 +b^2)/(a+b). Taking a =1, b = 2 to start with and carrying out this mapping repeatedly on each new (reduced) rational number gives the following sequence 1/2,5/3,17/4,305/21,... Sequence contains the denominators.
 ; Submitted by loader3229
 ; 2,3,4,21,163,23448,1092023377,596231923288918561,355492505697703670063523236830811569,126374921607231876111985200006557923908784362170241984606666354067170697
-; Formula: a(n) = c(n-1), b(n) = truncate((b(n-1)^2+c(n-1)^2)/gcd(b(n-1)+c(n-1),b(n-1)^2+c(n-1)^2)), b(1) = 5, b(0) = 1, c(n) = truncate((b(n-1)+c(n-1))/gcd(b(n-1)+c(n-1),b(n-1)^2+c(n-1)^2)), c(1) = 3, c(0) = 2
+; Formula: a(n) = c(n-1), b(n) = floor((b(n-1)^2+c(n-1)^2)/gcd(b(n-1)+c(n-1),b(n-1)^2+c(n-1)^2)), b(1) = 5, b(0) = 1, c(n) = truncate((b(n-1)+c(n-1))/gcd(b(n-1)+c(n-1),b(n-1)^2+c(n-1)^2)), c(1) = 3, c(0) = 2
 
 #offset 1
 

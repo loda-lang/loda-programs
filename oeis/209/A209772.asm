@@ -1,7 +1,7 @@
 ; A209772: Triangle of coefficients of polynomials v(n,x) jointly generated with A209771; see the Formula section.
 ; Submitted by loader3229
 ; 1,2,2,2,5,4,3,9,14,8,3,14,32,36,16,4,20,60,100,88,32,4,27,100,220,288,208,64,5,35,154,420,728,784,480,128,5,44,224,728,1568,2240,2048,1088,256,6,54,312,1176,3024,5376,6528,5184,2432,512,6,65,420
-; Formula: a(n) = truncate((truncate((binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n+1)+1)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)))/4)
+; Formula: a(n) = truncate((truncate((binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+n+1)+1)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)))/4)
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A068432: Expansion of golden ratio (1 + sqrt(5))/2 in base 2.
 ; Submitted by Science United
 ; 1,1,0,0,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,1,1,0,0,1,1,1,0,0,1,1,1,0
-; Formula: a(n) = -2*truncate(truncate((2^(n-1)+sqrtint(5*(2^(n-1))^2))/2)/2)+truncate((2^(n-1)+sqrtint(5*(2^(n-1))^2))/2)
+; Formula: a(n) = floor((2^(n-1)+sqrtint(5*(2^(n-1))^2))/2)%2
 
 #offset 1
 

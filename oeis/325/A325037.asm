@@ -19,8 +19,7 @@ lpb $2
   mov $6,0
   sub $6,$5
   mov $3,$6
-  add $3,3
-  trn $3,3
+  max $3,0
   min $3,1
   sub $0,$3
   add $1,1

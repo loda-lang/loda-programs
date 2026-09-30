@@ -13,6 +13,5 @@ mov $4,7
 mul $4,$2
 mod $0,2
 add $0,$4
+bin $0,2
 mov $1,$0
-bin $1,2
-mov $0,$1

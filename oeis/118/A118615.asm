@@ -1,7 +1,7 @@
 ; A118615: Start with 1 and repeatedly reverse the digits and add 26 to get the next term.
 ; Submitted by loader3229
 ; 1,27,98,115,537,761,193,417,740,73,63,62,52,51,41,40,30,29,118,837,764,493,420,50,31,39,119,937,765,593,421,150,77,103,327,749,973,405,530,61,42,50,31,39,119,937,765,593,421,150,77,103,327,749,973,405,530,61,42
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+26, b(0) = 1
+; Formula: a(n) = (-10*truncate(a(n-1)/10)+a(n-1))*(9*min(truncate(a(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100),1)+1)+(-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100)+26, a(1) = 1
 
 #offset 1
 

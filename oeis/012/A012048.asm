@@ -5,6 +5,5 @@
 
 mul $0,2
 add $0,1
+seq $0,9330 ; Expansion of log(1+sin(tanh(x))).
 mov $1,$0
-seq $1,9330 ; Expansion of log(1+sin(tanh(x))).
-mov $0,$1

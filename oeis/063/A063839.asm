@@ -47,9 +47,8 @@ lpb $4
   gcd $6,$2
   div $6,$2
   mul $2,$6
+  seq $2,22365 ; Fibonacci sequence beginning 0, 31.
   mov $10,$2
-  seq $10,22365 ; Fibonacci sequence beginning 0, 31.
-  mov $2,$10
   div $2,31
   mul $2,$11
   add $3,$2

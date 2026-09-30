@@ -16,10 +16,9 @@ lpb $1
   seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $4,$5
 lpe
+mov $3,$4
+mul $3,2
 mov $1,$4
-mul $1,2
-mov $3,$1
-div $1,2
 pow $1,4
 add $2,$1
 div $2,5

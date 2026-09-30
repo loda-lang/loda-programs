@@ -1,6 +1,6 @@
-; A394574: Greatest a(n) such that every graph on n vertices has an induced regular subgraph of order a(n).
+; A394574: a(n) is the greatest k such that every graph on n vertices has an induced regular subgraph of order k.
 ; Submitted by [AF>Le_Pommier] Jerome_C2005
-; 0,1,2,2,2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5
+; 0,1,2,2,2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5
 ; Formula: a(n) = logint(max(2*n*(n+3)*10^(logint(n+2,10)+1),1),10)
 
 mov $3,$0

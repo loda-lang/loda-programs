@@ -1,7 +1,7 @@
 ; A095033: An example of a (v,k,lambda)=(19,9,4) cyclic difference set.
 ; Submitted by Vato
 ; 1,4,5,6,7,9,11,16,17
-; Formula: a(n) = (floor((n+1)/truncate(3^logint(n+1,3)))-1)*((n+1)%truncate(3^logint(n+1,3)))+truncate(3^logint(n+1,3))+n-1
+; Formula: a(n) = 3^logint(n+1,3)+(floor((n+1)/(3^logint(n+1,3)))-1)*((n+1)%(3^logint(n+1,3)))+n-1
 
 #offset 1
 

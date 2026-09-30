@@ -8,13 +8,12 @@ mov $9,$0
 bin $9,2
 lpb $0
   sub $0,1
-  mov $4,$2
-  add $4,1
-  mov $10,$4
-  sub $4,1
+  mov $10,$2
+  add $10,1
   seq $10,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   seq $10,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $10,$4
+  sub $10,$2
+  mov $4,$2
   mov $4,$10
   sub $4,1
   mov $5,$2

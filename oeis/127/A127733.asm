@@ -1,6 +1,6 @@
-; A127733: Square of A127648 = Triangle read by rows, n^2 preceded by (n-1) zeros.
+; A127733: Triangle read by rows: n-th row is n^2 preceded by (n-1) zeros.
 ; Submitted by Science United
-; 1,0,4,0,0,9,0,0,0,16,0,0,0,0,25,0,0,0,0,0,36,0,0,0,0,0,0,49
+; 1,0,4,0,0,9,0,0,0,16,0,0,0,0,25,0,0,0,0,0,36,0,0,0,0,0,0,49,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,81,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,121,0,0,0,0,0,0,0,0,0,0,0,144,0,0
 ; Formula: a(n) = sqrtint(2*n)^2*((2*n)==(sqrtint(2*n)*(sqrtint(2*n)+1)))
 
 #offset 1

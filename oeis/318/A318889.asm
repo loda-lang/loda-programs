@@ -21,9 +21,8 @@ lpb $3
   sub $6,$0
   dif $6,2
   add $0,$6
-  sub $0,1
   mov $7,$0
-  add $0,1
+  sub $7,1
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $0,1
   sub $0,$7

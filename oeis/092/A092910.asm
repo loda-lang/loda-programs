@@ -1,6 +1,7 @@
 ; A092910: a(n) is the (3n+2)-th component of the continued fraction for sum(k>=0,2^(-k!)).
 ; Submitted by Science United
 ; 3,4,3,3,2,3,4,3,2,4,3,2,3,3,4,3,2,4,3,3,2,3,4,2,3,4,3,2,3,3,4,3,2,4,3,3,2,3,4,3,2,4,3,2,3,3,4,2,3,4,3,3,2,3,4,2,3,4,3,2,3,3,4,3,2,4,3,3,2,3,4,3,2,4,3,2,3,3,4,3
+; Formula: a(n) = floor((if(binomial(n+1,2)==0,0,binomial(n+1,2)/(2^valuation(binomial(n+1,2),2)))+1)/2)%2-2*(floor((if(binomial(n+1,2)==0,0,binomial(n+1,2)/(2^valuation(binomial(n+1,2),2)))+1)/2)%2)*((floor((n+1)/2)+1)%2)+3
 
 add $0,1
 mov $1,$0

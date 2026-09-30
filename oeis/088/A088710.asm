@@ -27,10 +27,9 @@ lpb $3
   seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $4,2
   add $4,$8
   add $4,$7
-  equ $4,2
+  equ $4,4
   sub $0,$4
   add $2,1
   mov $5,$0

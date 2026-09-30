@@ -19,7 +19,7 @@ lpb $0
   mul $3,$6
   mul $5,-1
   add $5,$3
-  mul $6,0
+  mov $6,0
 lpe
 mov $0,$5
 div $0,$4

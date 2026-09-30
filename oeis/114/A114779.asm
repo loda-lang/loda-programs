@@ -8,7 +8,6 @@ lpb $1
   mov $2,1
   fac $2,$1
   mul $3,$2
-  sub $1,2
-  trn $1,2
+  trn $1,4
 lpe
 mov $0,$3

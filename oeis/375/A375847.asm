@@ -1,7 +1,7 @@
 ; A375847: The maximum exponent in the prime factorization of the largest unitary cubefree divisor of n.
 ; Submitted by shiva
 ; 0,1,1,2,1,1,1,0,2,1,1,2,1,1,1,0,1,2,1,2,1,1,1,1,2,1,0,2,1,1,1,0,1,1,1,2,1,1,1,1,1,1,1,2,2,1,1,1,2,2,1,2,1,1,1,1,1,1,1,2,1,1,2,0,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,1
-; Formula: a(n) = 7*gcd(A181819(n),A002110(2))+7*sqrtint(5*gcd(A181819(n),A002110(2))^2)-10*truncate((7*gcd(A181819(n),A002110(2))+7*sqrtint(5*gcd(A181819(n),A002110(2))^2)+49)/10)+49
+; Formula: a(n) = (7*gcd(A181819(n),A002110(2))+7*sqrtint(5*gcd(A181819(n),A002110(2))^2)+49)%10
 
 #offset 1
 

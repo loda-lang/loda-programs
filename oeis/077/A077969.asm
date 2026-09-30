@@ -9,8 +9,7 @@ mov $2,216
 lpb $2
   mov $3,$1
   seq $3,347550 ; Number of partitions of n into at most 2 distinct prime parts.
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

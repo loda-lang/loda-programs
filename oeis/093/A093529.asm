@@ -1,6 +1,7 @@
 ; A093529: Pi*denominators of odd raw moments in the distribution of line lengths for lines picked at random in the unit disk.
 ; Submitted by Dongha Hwang
 ; 45,525,2205,31185,99099,585585,1640925,35334585,92147055,468495027,1166167275,11408158125,27484885575,130734984825,307452619485,11455089532425,26442675480375,121132637200575,275520749478975
+; Formula: a(n) = floor(((4*n+2)*(64*(n+1)^2-16)*if(binomial(2*n,n)==0,0,binomial(2*n,n)/(2^valuation(binomial(2*n,n),2))))/32)
 
 #offset 1
 

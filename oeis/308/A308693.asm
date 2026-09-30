@@ -14,9 +14,9 @@ lpb $0
   mul $3,$0
   pow $3,3
   pow $3,$5
-  sub $0,1
   mov $4,$0
-  equ $4,0
+  equ $4,1
+  sub $0,1
   add $0,$4
   add $1,$3
 lpe

@@ -6,12 +6,10 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
 mov $3,$0
-add $0,1
+sub $3,1
 seq $0,3968 ; Möbius transform of A003959.
 sub $0,1
 sub $0,$3
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

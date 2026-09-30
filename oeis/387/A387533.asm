@@ -5,10 +5,7 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,40 ; The prime numbers.
-add $1,1
 seq $1,796 ; Decimal expansion of Pi (or digits of Pi).
+seq $0,40 ; The prime numbers.
 pow $0,$1

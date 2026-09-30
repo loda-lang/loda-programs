@@ -4,13 +4,11 @@
 
 #offset 1
 
+mov $1,$0
 mov $3,$0
 add $3,85
-mov $1,$0
-sub $1,1
-mov $4,$1
-add $1,1
-add $4,9
+mov $4,$0
+add $4,8
 pow $4,4
 lpb $4
   add $5,1

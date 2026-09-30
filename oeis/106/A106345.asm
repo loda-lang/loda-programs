@@ -12,8 +12,7 @@ lpb $0
   mul $3,$2
   div $3,$4
   mod $3,2
-  sub $0,2
-  trn $0,2
+  trn $0,4
   mov $2,$1
   add $2,2
   add $1,2

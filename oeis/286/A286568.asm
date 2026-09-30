@@ -1,6 +1,7 @@
 ; A286568: Compound filter (phi(n) & 2-adic valuation of sigma(n)): a(n) = P(A000010(n), A286357(n)), where P(n,k) is sequence A000027 used as a pairing function.
 ; Submitted by Skillz
 ; 1,1,8,3,14,8,42,10,21,14,76,19,90,42,63,36,152,21,208,44,148,76,322,53,210,90,228,117,434,63,625,136,296,152,402,78,702,208,375,152,860,148,988,251,324,322,1271,169,903,210,627,324,1430,228,943,375,816,434,1828,187,1890,625,777,528,1273,296,2344,560,1220,402,2698,300,2700,702,901,739,2140,375,3399,560
+; Formula: a(n) = truncate(((if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2))+A000010(n)+1)^2-A000010(n)-3*if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2))-1)/2)
 
 #offset 1
 

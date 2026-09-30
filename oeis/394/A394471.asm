@@ -18,8 +18,8 @@ lpb $2
   sub $6,1
   mov $3,$1
   sub $3,1
-  mov $5,$3
-  trn $5,1
+  mov $5,$1
+  trn $5,2
   sub $3,$5
   add $5,1
   seq $5,40 ; The prime numbers.

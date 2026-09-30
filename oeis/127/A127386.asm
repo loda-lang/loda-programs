@@ -1,6 +1,7 @@
 ; A127386: Number of cycles in range [A014137(n-1)..A014138(n-1)] of permutation A127388.
 ; Submitted by Science United
 ; 1,1,2,4,10,27,79,244,784,2597,8805,30407,106565,377977
+; Formula: a(n) = truncate((floor(binomial(2*n,if(((2*n)%2)==0,(2*n)/2,2*n))/(if(((2*n)%2)==0,(2*n)/2,2*n)+1))+A152172(n))/2)
 
 mov $1,$0
 mul $1,2

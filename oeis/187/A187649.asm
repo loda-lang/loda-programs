@@ -10,13 +10,14 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $5,0
+  sub $5,$0
+  fac $0,$5
   mul $4,2
   seq $4,344397 ; a(n) = Stirling2(n, floor(n/2)) * floor(n/2)!.
   div $4,$0
   mov $0,$4
   sub $0,$1
-  mul $1,0
-  add $1,$0
+  mov $1,$0
 lpe
 mov $0,$1

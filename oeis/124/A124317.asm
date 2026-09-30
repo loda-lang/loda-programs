@@ -6,6 +6,5 @@
 #offset 1
 
 seq $0,14612 ; Numbers that are the product of exactly three (not necessarily distinct) primes.
+seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
 mov $1,$0
-seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
-mov $0,$1

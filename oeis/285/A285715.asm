@@ -7,7 +7,6 @@
 
 mul $0,4
 sub $0,2
+seq $0,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
 mov $1,$0
-seq $1,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
-mov $0,$1
 sub $0,2

@@ -1,7 +1,7 @@
 ; A225145: Square array read by downwards antidiagonals: T(n,k) = 1 if k mod (n+1) > 0, T(n,k) = 0 if k mod (n+1) = 0.
 ; Submitted by loader3229
 ; 1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0
-; Formula: a(n) = min(-truncate((truncate((sqrtint(8*n)-1)/2)+3)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)+truncate((sqrtint(8*n)-1)/2)+3,1)
+; Formula: a(n) = min(-truncate((floor((sqrtint(8*n)-1)/2)+3)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)+floor((sqrtint(8*n)-1)/2)+3,1)
 
 #offset 1
 

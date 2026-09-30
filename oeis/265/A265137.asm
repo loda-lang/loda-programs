@@ -13,8 +13,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,347730 ; Number of compositions (ordered partitions) of n into at most 2 triangular numbers.
-  sub $3,5
-  trn $3,2
+  trn $3,7
   min $3,1
   sub $0,$3
   add $1,1

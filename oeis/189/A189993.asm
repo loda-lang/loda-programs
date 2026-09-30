@@ -9,13 +9,12 @@ mov $1,13
 lpb $1
   mov $1,$0
 lpe
+add $1,1
 mov $0,$1
-add $0,1
-mov $1,$0
-mul $1,2
 mul $0,2
 dif $0,4
 seq $0,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
+mul $1,2
 mov $2,$1
 sub $2,1
 mul $2,2

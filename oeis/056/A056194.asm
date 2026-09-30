@@ -6,7 +6,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,67318 ; Total number of transpositions in all permutations of n letters.
+seq $1,67318 ; Sum of the reflection lengths of all permutations of n letters.
 seq $0,55204 ; Squarefree part of n!: n! divided by its largest square divisor.
 gcd $1,$0
 pow $1,3

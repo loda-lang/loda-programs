@@ -1,7 +1,7 @@
 ; A049763: Triangular array T, read by rows: T(n,k) = n^4 mod k, for k = 1..n and n >= 1.
 ; Submitted by loader3229
 ; 0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,0,0,0,1,0,1,4,1,0,0,1,0,1,1,3,2,1,0,0,0,1,0,0,4,4,0,1,0,0,1,1,1,1,1,4,1,7,1,0,0,0,0,0,1,0,2,0,0,6,1,0,0,1
-; Formula: a(n) = (truncate((sqrtint(8*n)-1)/2)+1)^4-truncate(((truncate((sqrtint(8*n)-1)/2)+1)^4)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)
+; Formula: a(n) = (floor((sqrtint(8*n)-1)/2)+1)^4-truncate(((floor((sqrtint(8*n)-1)/2)+1)^4)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)
 
 #offset 1
 

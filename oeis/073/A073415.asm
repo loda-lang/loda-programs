@@ -9,11 +9,9 @@ mov $2,1
 lpb $0
   sub $0,1
   mov $4,$2
+  mov $6,$3
+  add $6,1
   mov $2,$1
-  mov $1,$3
-  add $1,1
-  mov $6,$1
-  sub $1,1
   mov $5,$6
   bin $6,2
   dir $6,2
@@ -21,13 +19,14 @@ lpb $0
   mod $6,2
   equ $6,0
   mov $7,0
-  equ $7,$1
+  equ $7,$3
   div $5,2
   mod $5,2
   mul $5,$6
   mul $5,2
   sub $6,$5
   sub $6,$7
+  mov $1,$3
   mov $1,$6
   add $1,2
   mul $1,2

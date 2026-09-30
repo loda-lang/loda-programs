@@ -1,7 +1,6 @@
 ; A304334: T(n, k) = Sum_{j=0..k} (-1)^j*binomial(2*k, j)*(k - j)^(2*n)/k!, triangle read by rows, n >= 0 and 0 <= k <= n.
 ; Submitted by Science United
 ; 1,0,1,0,1,6,0,1,30,60,0,1,126,840,840,0,1,510,8820,25200,15120,0,1,2046,84480,526680,831600,332640,0,1,8190,780780,9609600,30270240,30270240,8648640,0,1,32766,7108920,164684520,929728800,1755673920,1210809600,259459200
-; Formula: a(n) = truncate(A304330(n)/((-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)!))
 
 mov $3,$0
 mul $3,8
@@ -10,10 +9,42 @@ nrt $3,2
 add $3,1
 div $3,2
 bin $3,2
+mov $9,0
+mov $11,0
+mov $12,0
 mov $2,$0
 sub $2,$3
-seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,0
+sub $4,$2
 mov $1,$0
-seq $1,304330 ; T(n, k) = Sum_{j=0..k} (-1)^j*binomial(2*k, j)*(k - j)^(2*n), triangle read by rows, n >= 0 and 0 <= k <= n.
+fac $2,$4
+mov $5,$0
+add $5,1
+mov $7,$5
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+mov $6,$7
+add $6,1
+bin $6,2
+sub $5,$6
+mov $8,$5
+mov $5,$7
+mov $7,$8
+lpb $7
+  sub $7,1
+  mov $10,$7
+  pow $10,$5
+  pow $10,2
+  sub $11,$8
+  sub $11,$7
+  bin $11,$9
+  mul $11,$10
+  add $12,$11
+  add $9,1
+  mov $11,0
+lpe
+mov $1,$12
 div $1,$2
 mov $0,$1

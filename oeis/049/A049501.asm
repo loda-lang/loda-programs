@@ -5,8 +5,7 @@
 lpb $0
   mov $2,$0
   mod $2,4
-  add $2,1
-  equ $2,3
+  equ $2,2
   add $3,$1
   div $0,2
   add $1,$2

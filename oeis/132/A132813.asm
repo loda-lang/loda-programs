@@ -1,4 +1,4 @@
-; A132813: Triangle read by rows: A001263 * A127648 as infinite lower triangular matrices.
+; A132813: Triangle read by rows: T(n,k) = binomial(n, k)*binomial(n+1, k).
 ; Submitted by iBezanilla
 ; 1,1,2,1,6,3,1,12,18,4,1,20,60,40,5,1,30,150,200,75,6,1,42,315,700,525,126,7,1,56,588,1960,2450,1176,196,8,1,72,1008,4704,8820,7056,2352,288,9,1,90,1620,10080,26460,31752,17640,4320,405,10,1,110,2475,19800,69300,116424,97020,39600,7425,550,11,1,132,3630,36300,163350,365904,426888,261360,81675,12100,726,12,1,156
 ; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(floor((sqrtint(8*n+8)-1)/2)+1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)

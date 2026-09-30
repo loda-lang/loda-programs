@@ -1,7 +1,7 @@
 ; A118446: Number of tree-rooted maps of genus 2 with n edges: rooted maps with a distinguished spanning tree on an orientable surface of genus 2.
 ; Submitted by BrandyNOW
 ; 21,1428,59136,1936935,55165110,1430857428,34701610944,800003272068,17726513264460,380471504212800,7955313269904000,162738137109652650,3267801532548762300,64578810084245919000,1258643138633207712000,24234564983959535297400,461636913607179055445700
-; Formula: a(n) = truncate((n*(n-3)*(n-1)*(5*n^2+n+6)*binomial(2*n,n)^2*(n-2)^2)/(5760*(n+1)*(2*n-3)*(2*n-1)))
+; Formula: a(n) = floor((n*(n-3)*(n-1)*(5*n^2+n+6)*binomial(2*n,n)^2*(n-2)^2)/(5760*(n+1)*(2*n-3)*(2*n-1)))
 
 #offset 4
 

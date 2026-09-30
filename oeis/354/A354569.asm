@@ -12,7 +12,18 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
+  dir $3,2
+  mov $6,$3
+  seq $6,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  mov $7,$3
+  sub $7,1
+  mov $8,$7
+  div $8,$6
+  add $7,$8
+  add $7,2
+  gcd $3,$7
+  mov $5,$3
+  mul $3,2
   seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
   div $3,8
   sub $0,$3

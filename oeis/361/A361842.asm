@@ -10,7 +10,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $5,$0
-  seq $5,155579 ; Recursive sequence (n+1)*a(n) = 3*(3*n-2)*a(n-1).
+  seq $5,155579 ; Recursive sequence (n+1)*a(n) = 3*(3*n-2)*a(n-1), a(0) = 2.
   mov $1,$0
   mul $1,3
   add $0,1

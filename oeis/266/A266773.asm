@@ -7,8 +7,7 @@ lpb $0
   trn $0,1
   mov $2,$0
   seq $2,8638 ; Number of partitions of n into at most 9 parts.
-  add $0,5
-  trn $0,9
+  trn $0,4
   add $1,$2
 lpe
 mov $0,$1

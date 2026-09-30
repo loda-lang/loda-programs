@@ -11,7 +11,9 @@ lpb $5
   mov $4,$0
   max $4,0
   add $4,1
-  seq $4,91980 ; Recursive sequence; one more than maximum of products of pairs of previous terms with indices summing to current index.
+  seq $4,355108 ; Maximal number of root ancestral configurations among matching gene trees and species trees with n leaves.
+  mov $6,$4
+  add $4,1
   mov $2,$5
   mul $2,$4
   add $1,$2

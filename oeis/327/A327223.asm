@@ -17,16 +17,14 @@ lpb $2
   add $3,4
   pow $3,2
   mul $3,2
+  nrt $3,2
   mov $6,$3
-  nrt $6,2
-  mov $3,$6
   add $3,$5
   add $3,1
   pow $3,2
   mul $3,2
+  nrt $3,2
   mov $7,$3
-  nrt $7,2
-  mov $3,$7
   mod $3,2
   equ $3,0
   sub $0,$3

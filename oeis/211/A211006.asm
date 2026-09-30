@@ -17,8 +17,24 @@ lpb $5
   mov $6,1
   bin $6,$4
   sub $4,$6
+  sub $4,1
+  mov $8,$4
+  div $4,2
+  add $4,2
+  mov $9,$4
+  seq $9,40 ; The prime numbers.
+  sub $4,4
+  sub $9,$4
+  sub $9,$4
+  add $8,$9
+  mov $4,$8
+  sub $4,5
+  mov $7,$8
+  sub $7,4
+  mul $4,$7
+  sub $4,2
+  div $4,2
   add $4,1
-  seq $4,147846 ; Triangular numbers n*(n+1)/2 with n or n+1 prime.
   mul $0,$5
   mov $2,$5
   mul $2,$4

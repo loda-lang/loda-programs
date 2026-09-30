@@ -1,7 +1,7 @@
 ; A248922: Number of wavelengths of the orange-red line of a krypton isotope with mass number 86 in a vacuum.
 ; Submitted by Andrey
 ; 1,6,5,0,7,6,3,7,3
-; Formula: a(n) = (n-7)*((n-5)%5+logint(n-5,2)+1)-10*truncate(((n-7)*((n-5)%5+logint(n-5,2)+1)+11)/10)+11
+; Formula: a(n) = ((n-7)*((n-5)%5+logint(n-5,2)+1)+11)%10
 
 #offset 7
 

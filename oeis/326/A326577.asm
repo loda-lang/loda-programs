@@ -27,6 +27,5 @@ lpb $3
   mul $5,$0
   max $7,$5
 lpe
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

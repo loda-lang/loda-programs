@@ -7,6 +7,5 @@
 sub $0,2
 mov $1,3
 fac $1,$0
-add $0,1
-trn $0,1
+max $0,0
 mul $0,$1

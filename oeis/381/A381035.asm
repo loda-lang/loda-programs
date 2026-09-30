@@ -13,8 +13,7 @@ lpb $2
   seq $3,276088 ; The least significant nonzero digit in primorial base representation of n: a(n) = A276094(n) / A002110(A276084(n)) (with a(0) = 0).
   sub $3,1
   min $3,1
-  sub $3,1
-  neq $3,0
+  neq $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

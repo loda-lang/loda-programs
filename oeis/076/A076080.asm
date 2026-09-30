@@ -14,8 +14,17 @@ lpb $3
   trn $0,1
   mov $1,$0
   add $1,1
-  add $0,2
-  seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  add $0,1
+  mov $4,$0
+  dif $4,$0
+  add $4,1
+  mov $5,$0
+  max $5,1
+  seq $5,40 ; The prime numbers.
+  mul $4,$5
+  mov $5,$4
+  div $5,2
+  mov $0,$5
   div $0,$1
   min $2,$0
 lpe

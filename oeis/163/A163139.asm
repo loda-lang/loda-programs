@@ -4,8 +4,7 @@
 
 #offset 1
 
-sub $0,1
-trn $0,3
+trn $0,4
 mod $0,10
 neq $0,0
 mul $0,9

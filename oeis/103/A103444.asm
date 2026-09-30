@@ -1,6 +1,6 @@
 ; A103444: Triangle read by rows: T(n,k) is number of unitary divisors of C(n,k), 0<=k<=n.
 ; 1,1,1,1,2,1,1,2,2,1,1,2,4,2,1,1,2,4,4,2,1,1,4,4,4,4,4,1,1,2,4,4,4,4,2,1,1,2,4,4,8,4,4,2,1,1,2,4,8,8,8,8,4,2,1,1,4,4,8,16,8,16,8,4,4,1,1,2,4,8,16,16,16,16,8,4,2,1,1,4
-; Formula: a(n) = A034444(binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = A034444(binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
 add $0,1
 mov $1,$0

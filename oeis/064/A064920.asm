@@ -5,9 +5,8 @@
 
 #offset 2
 
-sub $0,2
 mov $1,$0
-add $0,2
+sub $1,2
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 div $1,$0
 add $0,$1

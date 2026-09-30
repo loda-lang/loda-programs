@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,139898 ; Primes of the form 4x^2+4xy+61y^2.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   mov $6,$3
   mul $6,2
   mov $7,$6

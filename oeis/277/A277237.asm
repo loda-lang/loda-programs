@@ -1,12 +1,13 @@
 ; A277237: Number of strings of length n composed of symbols from the circular list [1,2,3,4,5,6] such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1, 3 and 5.
 ; Submitted by loader3229
 ; 1,6,15,39,99,255,651,1671,4275,10959,28059,71895,184131,471711,1208235,3095079,7928019,20308335,52020411,133253751,341335395,874350399,2239691979,5737093575,14695861491,37644235791,96427681755,247004624919,632715351939,1620733851615
+; Formula: a(n) = 4*a(n-2)+a(n-1), a(4) = 99, a(3) = 39, a(2) = 15, a(1) = 6, a(0) = 1
 
 mov $1,1
 mov $2,6
 mov $3,15
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,3
   mov $4,$1
   mul $4,4

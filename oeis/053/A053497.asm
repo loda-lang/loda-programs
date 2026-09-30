@@ -12,7 +12,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     add $7,2
-    seq $7,70221 ; a(n)=LPF(n+1)-LPF(n), where LPF(n) denotes the largest prime factor of n.
+    seq $7,70221 ; a(n) = gpf(n+1) - gpf(n), where gpf = A006530 (greatest prime factor).
     equ $7,1
     mov $9,10
     add $9,$5

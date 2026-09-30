@@ -1,19 +1,46 @@
 ; A146076: Sum of even divisors of n.
 ; Submitted by LM
 ; 0,2,0,6,0,8,0,14,0,12,0,24,0,16,0,30,0,26,0,36,0,24,0,56,0,28,0,48,0,48,0,62,0,36,0,78,0,40,0,84,0,64,0,72,0,48,0,120,0,62,0,84,0,80,0,112,0,60,0,144,0,64,0,126,0,96,0,108,0,96,0,182,0,76,0,120,0,112,0,180
-; Formula: a(n) = 2*((n-1)%2)+2*A000203(floor((n-1)/2)*((n-1)%2)+1)-2
 
 #offset 1
 
 sub $0,1
 mov $1,$0
+mov $6,0
 mod $0,2
 div $1,2
 mul $1,$0
+mov $5,$1
 add $1,1
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$1
+dir $4,2
+mov $9,$4
+mov $8,$4
+nrt $8,2
+lpb $8
+  max $8,1
+  mov $10,$4
+  mod $10,$8
+  equ $10,0
+  mov $7,$4
+  div $7,$8
+  add $7,$8
+  mul $7,$10
+  add $6,$7
+  sub $8,1
+lpe
+nrt $4,2
+mov $8,$4
+pow $8,2
+sub $8,$9
+equ $8,0
+mul $4,$8
+sub $6,$4
+mov $3,$1
+bxo $3,$5
+mul $3,$6
+add $0,$3
+mov $1,$3
 mov $2,$0
-add $2,$1
-mov $0,$2
 sub $0,1
 mul $0,2

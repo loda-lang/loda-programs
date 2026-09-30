@@ -1,6 +1,7 @@
 ; A187568: Rank transform of the sequence round(2n/3); complement of A187569.
 ; Submitted by Drago75
 ; 1,2,4,6,7,8,10,11,12,14,15,17,19,20,21,23,24,26,28,29,30,32,33,35,36,37,39,40,41,43,45,46,48,49,50,52,54,55,56,58,59,60,62,63,65,67,68,69,71,72,74,75,76,78,80,81,83,84,85,87,89,90,92,93,94,96,97,98,100,102,103,104,106,107,109,111,112,113,115,116
+; Formula: a(n) = floor(e(n)/2), b(n) = if(floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2)==0,truncate((-4*c(n-1)+b(n-1)+1)/4),if((truncate((-4*c(n-1)+b(n-1)+1)/4)%floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2))==0,truncate((-4*c(n-1)+b(n-1)+1)/4)/floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2),truncate((-4*c(n-1)+b(n-1)+1)/4))), b(3) = -64, b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 4*gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)*c(n-1), c(3) = 2048, c(2) = 128, c(1) = 8, c(0) = 2, d(n) = floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2), d(3) = 2, d(2) = 2, d(1) = 0, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 8, e(2) = 4, e(1) = 2, e(0) = 0
 
 #offset 1
 

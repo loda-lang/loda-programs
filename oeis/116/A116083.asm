@@ -1,7 +1,7 @@
 ; A116083: Numbers k such that phi(sigma(k)) - sigma(phi(k)) = 1.
 ; Submitted by Steve Dodd
 ; 2,6,8,24,128,384,32768,98304,2147483648,6442450944
-; Formula: a(n) = 2*truncate((truncate(3^min(n-1,(n-1)%2))*b(n-1))/4), b(n) = b(n-2)^2, b(1) = 4, b(0) = 4
+; Formula: a(n) = 2*floor((b(n-1)*if(min(n-1,(n-1)%2)<=(-1),0,3^min(n-1,(n-1)%2)))/4), b(n) = b(n-2)^2, b(1) = 4, b(0) = 4
 
 #offset 1
 

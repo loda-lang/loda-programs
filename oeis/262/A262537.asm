@@ -5,6 +5,5 @@
 
 min $0,24
 mul $0,2
+seq $0,262310 ; a(n) = coefficient of x^(2n) in the expansion of the modular form Product_{k>=1} (1-x^k)^n.
 mov $1,$0
-seq $1,262310 ; a(n) = coefficient of x^(2n) in the expansion of the modular form Product_{k>=1} (1-x^k)^n.
-mov $0,$1

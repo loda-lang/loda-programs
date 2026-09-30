@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,108977 ; Numbers n such that 19*n + 17 is prime.
 mov $1,$0
-seq $1,108977 ; Numbers n such that 19*n + 17 is prime.
-mov $0,$1
 add $0,1

@@ -8,9 +8,10 @@ lpb $3
   bxo $2,$3
   div $3,2
 lpe
+mov $1,$2
+mul $1,3
 mov $0,$2
 mul $0,3
-mov $1,$0
 div $0,2
 bxo $1,$0
 mov $0,$1

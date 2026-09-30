@@ -1,6 +1,7 @@
 ; A053866: Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
 ; Submitted by Eric Liskay
 ; 1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+; Formula: a(n) = (sqrtint(n/(2^valuation(n,2)))^2)==(n/(2^valuation(n,2)))
 
 #offset 1
 

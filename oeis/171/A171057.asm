@@ -6,6 +6,5 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
+seq $0,222254 ; In the number n, replace all (decimal) digits '8' with '9' and vice versa.
 mov $1,$0
-seq $1,222254 ; In the number n, replace all (decimal) digits '8' with '9' and vice versa.
-mov $0,$1

@@ -8,13 +8,11 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $1,$4
-    trn $1,1
-    seq $1,3149 ; a(n) = Sum_{k=0..n} k!(n-k)!.
+    trn $1,2
+    seq $1,3149 ; a(n) = Sum_{k=0..n} k!*(n - k)!.
     add $3,1
     min $3,$0
-    add $4,1
     gcd $4,$3
     mul $5,-1
     mul $5,$0

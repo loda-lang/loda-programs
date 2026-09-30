@@ -15,7 +15,14 @@ lpb $5
   mov $0,$3
   add $0,$5
   trn $0,1
-  seq $0,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
+  mov $7,$0
+  mul $0,2
+  add $0,7
+  div $0,7
+  mul $7,3
+  add $7,10
+  div $7,11
+  sub $0,$7
   mov $6,$5
   mul $6,$0
   add $4,$6

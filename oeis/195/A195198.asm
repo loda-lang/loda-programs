@@ -1,6 +1,7 @@
 ; A195198: Characteristic function of squares or three times squares.
 ; Submitted by GPV67
 ; 1,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+; Formula: a(n) = (sqrtint(if(n==0,0,n/(3^valuation(n,3))))^2)==if(n==0,0,n/(3^valuation(n,3)))
 
 dir $0,3
 mov $1,$0
