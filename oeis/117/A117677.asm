@@ -8,5 +8,4 @@
 seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
 div $0,3
 mul $0,2
-add $0,1
-trn $0,2
+trn $0,1

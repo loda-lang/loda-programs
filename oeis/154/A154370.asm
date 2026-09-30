@@ -15,7 +15,14 @@ lpb $2
   seq $3,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
   lex $5,$3
   add $3,$5
-  seq $3,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
+  mov $7,$3
+  equ $7,1
+  mov $6,$3
+  seq $6,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  add $6,$7
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  max $3,2
+  sub $3,$6
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   equ $3,1
   sub $0,$3

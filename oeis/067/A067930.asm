@@ -13,9 +13,9 @@ lpb $2
   add $3,1
   seq $3,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
   mul $3,2
-  sub $3,2
   mov $5,$3
-  add $3,1
+  sub $5,2
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

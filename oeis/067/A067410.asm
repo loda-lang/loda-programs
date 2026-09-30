@@ -1,7 +1,7 @@
 ; A067410: Triangle with columns built from certain power sequences.
 ; Submitted by loader3229
 ; 1,2,1,4,3,1,8,12,4,1,16,48,24,5,1,32,192,144,40,6,1,64,768,864,320,60,7,1,128,3072,5184,2560,600,84,8,1,256,12288,31104,20480,6000,1008,112,9,1,512,49152,186624,163840,60000,12096,1568,144,10,1,1024,196608,1119744,1310720,600000,145152,21952,2304,180,11,1,2048,786432,6718464,10485760,6000000,1741824,307328,36864,3240,220,12,1,4096,3145728
-; Formula: a(n) = max(truncate((2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+2)^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)-1))*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+2)-1,0)+1
+; Formula: a(n) = max((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+2)*if(((2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+2)^2)==1,(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+2)^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)-1),if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)-1)<=(-1),0,(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+2)^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)-1)))-1,0)+1
 
 add $0,1
 mov $1,$0

@@ -1,6 +1,7 @@
 ; A204746: Number of (n+2)X(n+2) 0..1 arrays with every 3X3 subblock having three equal elements in a row horizontally, vertically, diagonally or antidiagonally exactly three ways, and new values 0..1 introduced in row major order.
 ; Submitted by loader3229
 ; 40,46,22,32,48,74,116,184,294,472,760,1226,1980,3200,5174,8368,13536,21898,35428,57320,92742,150056,242792,392842
+; Formula: a(n) = b(n-1), b(n) = 2*b(n-1)-b(n-3), b(8) = 294, b(7) = 184, b(6) = 116, b(5) = 74, b(4) = 48, b(3) = 32, b(2) = 22, b(1) = 46, b(0) = 40
 
 #offset 1
 
@@ -11,7 +12,7 @@ mov $4,32
 mov $5,48
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,5
   sub $5,$2
   add $5,$4

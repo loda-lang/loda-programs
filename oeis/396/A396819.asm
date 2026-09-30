@@ -5,9 +5,9 @@
 
 mov $1,10
 pow $1,$0
-mul $1,4
 mov $0,$1
-mul $1,4
+mul $0,4
+mul $1,16
 add $1,$0
 mul $1,$0
 nrt $1,2

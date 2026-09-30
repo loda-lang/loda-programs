@@ -1,7 +1,7 @@
 ; A089209: Table, read by rows, related to Catalan triangle A033184.
 ; Submitted by Science United
 ; 1,2,1,3,2,1,2,1,4,3,2,1,3,2,1,2,1,3,2,1,2,1,5,4,3,2,1,4,3,2,1,3,2,1,2,1,4,3,2,1,3,2,1,2,1,3,2,1,2,1,4,3,2,1,3,2,1,2,1,3,2,1,2,1,6,5,4,3,2,1,5,4,3,2,1,4,3,2,1,3
-; Formula: a(n) = -10*truncate((b(n)-1)/10)+b(n)-1, b(n) = 10*b(n-1)-10*truncate(10^logint(b(n-1),10))+truncate(c(n-1)^c(n-1))+truncate(b(n-1)/truncate(10^logint(b(n-1),10))), b(1) = 2, b(0) = 1, c(n) = truncate(c(n-1)^c(n-1)), c(1) = 1, c(0) = 0
+; Formula: a(n) = -10*truncate((b(n)-1)/10)+b(n)-1, b(n) = c(n-1)^c(n-1)+10*b(n-1)-10*10^logint(b(n-1),10)+truncate(b(n-1)/(10^logint(b(n-1),10))), b(1) = 2, b(0) = 1, c(n) = c(n-1)^c(n-1), c(1) = 1, c(0) = 0
 
 #offset 1
 

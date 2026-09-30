@@ -28,7 +28,18 @@ lpb $4
   sub $9,$1
   mov $10,$8
   div $10,$9
-  seq $10,1747 ; 2 together with primes multiplied by 2.
+  sub $10,1
+  mov $13,$10
+  dif $13,$10
+  add $13,1
+  mov $12,$10
+  max $12,1
+  seq $12,40 ; The prime numbers.
+  mul $13,$12
+  mov $11,1
+  add $11,$13
+  mov $10,$11
+  sub $10,1
   mov $6,$2
   mul $6,8
   nrt $6,2

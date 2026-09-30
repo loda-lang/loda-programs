@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+sub $2,1
 lpb $2
   div $2,2
   add $1,1

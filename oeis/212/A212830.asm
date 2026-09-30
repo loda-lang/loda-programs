@@ -15,7 +15,15 @@ lpb $4
   bin $1,$0
   add $2,1
   add $0,$4
-  seq $0,11968 ; Apply (1+Shift) to Bell numbers.
+  mov $6,0
+  equ $6,$0
+  trn $0,1
+  mov $5,$0
+  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $0,1
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $0,$5
+  sub $0,$6
   mul $1,$0
   add $3,$1
 lpe

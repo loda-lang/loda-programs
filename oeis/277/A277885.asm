@@ -1,6 +1,6 @@
 ; A277885: a(n) = index of the least non-unitary prime divisor of n or 0 if no such prime-divisor exists.
 ; 0,0,0,1,0,0,0,1,2,0,0,1,0,0,0,1,0,2,0,1,0,0,0,1,3,0,2,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,2,0,0,1,4,3,0,1,0,2,0,1,0,0,0,1,0,0,2,1,0,0,0,1,0,0,0,1,0,0,3,1,0,0,0,1
-; Formula: a(n) = A230980(A020639(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
+; Formula: a(n) = A230980(A020639(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
 
 #offset 1
 

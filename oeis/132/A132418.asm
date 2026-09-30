@@ -1,6 +1,7 @@
 ; A132418: Sequence is identical to its third differences in absolute values: a(n+k)=3a(n+k-1)-3a(n+k-2)+2a(n+k-3), k=0, 1, 2, 3, 4, a(n+5)=3a(n+4)-3a(n+3), n > 2.
 ; Submitted by loader3229
 ; 1,2,3,5,10,21,43,86,129,215,430,903,1849,3698,5547,9245,18490,38829,79507
+; Formula: a(n) = 43*a(n-6), a(7) = 86, a(6) = 43, a(5) = 21, a(4) = 10, a(3) = 5, a(2) = 3, a(1) = 2, a(0) = 1
 
 mov $1,1
 mov $2,2

@@ -12,7 +12,6 @@ add $0,1
 seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
 sub $0,1
 add $0,$2
+add $0,$2
 mov $1,$0
-add $1,$2
-mov $0,$1
 add $0,1

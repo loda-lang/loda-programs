@@ -18,8 +18,7 @@ lpb $3
   add $4,1
   mov $6,$4
   seq $4,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.
-  sub $4,1
-  equ $4,0
+  equ $4,1
   sub $0,$4
   add $2,1
   mov $5,$0

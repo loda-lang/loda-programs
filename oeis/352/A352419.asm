@@ -1,7 +1,7 @@
 ; A352419: Triangle read by rows T(n,k): number of three-in-a-rows in n-dimensional tic-tac-toe through a cell that is central in k dimensions (for k=0..n).
 ; Submitted by loader3229
 ; 0,1,1,3,2,4,7,4,5,13,15,8,7,14,40,31,16,11,16,41,121,63,32,19,20,43,122,364,127,64,35,28,47,124,365,1093,255,128,67,44,55,128,367,1094,3280,511,256,131,76,71,136,371,1096,3281,9841,1023,512,259,140,103,152,379,1100,3283,9842,29524
-; Formula: a(n) = floor(truncate(3^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))/2)+truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))-1
+; Formula: a(n) = if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))+floor(if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,3^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))/2)-1
 
 add $0,1
 mov $1,$0

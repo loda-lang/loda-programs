@@ -1,4 +1,4 @@
-; A051150: Generalized Stirling number triangle of first kind.
+; A051150: Triangle read by rows: T(n, m) = S1(n, m)*5^(n-m), where S1 are the signed Stirling numbers of first kind A008275 (n >= 1, 1 <= m <= n).
 ; Submitted by Karlsson
 ; 1,-5,1,50,-15,1,-750,275,-30,1,15000,-6250,875,-50,1,-375000,171250,-28125,2125,-75,1,11250000,-5512500,1015000,-91875,4375,-105,1,-393750000,204187500,-41037500,4230625
 

@@ -4,6 +4,16 @@
 
 #offset 1
 
+mov $1,2
 dir $0,2
-seq $0,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
+sub $0,1
+mod $0,97
+lpb $0
+  mov $2,$0
+  add $2,1
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+  add $1,$2
+lpe
+mov $0,$1
 sub $0,2

@@ -5,9 +5,8 @@
 #offset 1
 
 dif $0,2
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 mov $3,$0
 mul $3,8
 nrt $3,2

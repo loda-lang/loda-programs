@@ -12,7 +12,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,2
-  seq $0,160476 ; The first right hand column of the Zeta and Lambda triangles
+  seq $0,160476 ; The first right hand column of the Zeta and Lambda triangles.
   mov $2,$3
   mul $2,$0
   add $1,$2

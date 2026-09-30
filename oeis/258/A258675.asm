@@ -12,7 +12,7 @@ lpb $0
   mov $1,$3
   div $1,2
   add $1,1
-  seq $1,205219 ; Number of (n+1)X2 0..1 arrays with the number of equal 2X2 subblock diagonal pairs and equal antidiagonal pairs differing from each horizontal or vertical neighbor, and new values 0..1 introduced in row major order
+  seq $1,205219 ; Number of (n+1)X2 0..1 arrays with the number of equal 2X2 subblock diagonal pairs and equal antidiagonal pairs differing from each horizontal or vertical neighbor, and new values 0..1 introduced in row major order.
   mul $2,$1
   add $3,1
 lpe

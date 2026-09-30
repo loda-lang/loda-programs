@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,91633 ; Primes whose digits are restricted to 1,3,7,9 (same as terminal digits of primes).
+seq $0,91633 ; Primes having only {1, 3, 7, 9} as digits.
 seq $0,230980 ; Number of primes <= n, starting at n=0.

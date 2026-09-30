@@ -1,6 +1,7 @@
 ; A069924: Number of k, 1<=k<=n, such that phi(k) divides k.
 ; Submitted by loader3229
 ; 1,2,2,3,3,4,4,5,5,5,5,6,6,6,6,7,7,8,8,8,8,8,8,9,9,9,9,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,13,13,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15,15,15
+; Formula: a(n) = (if(if(floor(n/2)==0,0,floor(n/2)/(2^valuation(floor(n/2),2)))==0,0,if(floor(n/2)==0,0,floor(n/2)/(2^valuation(floor(n/2),2)))/(3^valuation(if(floor(n/2)==0,0,floor(n/2)/(2^valuation(floor(n/2),2))),3)))==1)+a(n-2), a(1) = 1, a(0) = 1
 
 #offset 1
 

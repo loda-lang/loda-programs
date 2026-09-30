@@ -8,7 +8,11 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,129578 ; Column 0 of triangle A129577.
+  mov $6,$0
+  add $6,1
+  bin $6,2
+  mov $0,$6
+  seq $0,129577 ; Triangle, read by rows, defined by T(n,k) = T(n-1,k) + T(n,k-1) for nk>0, where T(n,0) = T(n-1,0) + T(n-1,n-1) and T(n,n) = T(n,n-1) for n>0 with T(0,0)=1.
   mov $2,$3
   mul $2,$0
   add $1,$2

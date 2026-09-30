@@ -1,15 +1,44 @@
 ; A365414: a(n) = sigma(6*n+4). Sum of the divisors of 6*n+4, n >= 0.
 ; Submitted by Science United
 ; 7,18,31,36,56,54,90,72,98,90,127,144,140,126,180,144,217,162,248,180,224,252,270,216,266,288,378,252,308,270,360,360,399,306,434,324,504,342,450,432,434,468,511,396,476,414,720,504,518,450,620,576,560,576,630,504,756,522,756,540
-; Formula: a(n) = truncate((7*A000203(6*n+4)-47)/7)+7
 
 add $0,1
 mov $1,3
 mul $1,$0
 sub $1,1
+mov $5,0
 mov $0,$1
 mul $0,2
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$0
+sub $4,1
+mov $3,$0
+dir $3,2
+mov $8,$3
+mov $7,$3
+nrt $7,2
+lpb $7
+  max $7,1
+  mov $9,$3
+  mod $9,$7
+  equ $9,0
+  mov $6,$3
+  div $6,$7
+  add $6,$7
+  mul $6,$9
+  add $5,$6
+  sub $7,1
+lpe
+nrt $3,2
+mov $7,$3
+pow $7,2
+sub $7,$8
+equ $7,0
+mul $3,$7
+sub $5,$3
+mov $2,$0
+bxo $2,$4
+mul $2,$5
+mov $0,$2
 mul $0,7
 sub $0,47
 div $0,7

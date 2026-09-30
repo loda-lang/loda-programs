@@ -1,7 +1,7 @@
 ; A131427: A000108(n) preceded by n zeros.
 ; Submitted by loader3229
 ; 1,0,1,0,0,2,0,0,0,5,0,0,0,0,14,0,0,0,0,0,42,0,0,0,0,0,0,132,0,0,0,0,0,0,0,429,0,0,0,0,0,0,0,0,1430,0,0,0,0,0,0,0,0,0,4862,0,0,0,0,0,0,0,0,0,0,16796,0,0,0,0,0,0,0,0,0,0,0,58786,0,0
-; Formula: a(n) = truncate((binomial(2*truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(truncate((sqrtint(8*n+8)-1)/2)==(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))
+; Formula: a(n) = truncate((binomial(2*floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*(floor((sqrtint(8*n+8)-1)/2)==(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)))/(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1))
 
 add $0,1
 mov $1,$0

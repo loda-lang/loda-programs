@@ -1,7 +1,7 @@
 ; A304653: a(n) = (-1)^Omega(n) if n is not a perfect power > 1, and 0 otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,-1,-1,0,-1,1,-1,0,0,1,-1,-1,-1,1,1,0,-1,-1,-1,-1,1,1,-1,1,0,1,0,-1,-1,-1,-1,0,1,1,1,0,-1,1,1,1,-1,-1,-1,-1,-1,1,-1,-1,0,-1,1,-1,-1,1,1,1,1,1,-1,1,-1,1,-1,0,1,-1,-1,-1,1,-1,-1,-1,-1,1
-; Formula: a(n) = truncate((-1)^A001222(n))*(max(A052409(n)-1,0)==0)
+; Formula: a(n) = (-1)^A001222(n)*(max(A052409(n)-1,0)==0)
 
 #offset 1
 
@@ -11,7 +11,6 @@ mov $2,-1
 pow $2,$1
 seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
 trn $0,1
+equ $0,0
 mov $3,$0
-equ $3,0
-mov $0,$3
 mul $0,$2

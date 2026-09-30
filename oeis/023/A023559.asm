@@ -7,8 +7,15 @@
 sub $0,1
 lpb $0
   mov $2,$0
-  add $2,1
-  seq $2,158611 ; 0, 1 and the primes.
+  sub $2,1
+  mov $4,$0
+  trn $4,2
+  sub $2,$4
+  add $4,1
+  seq $4,40 ; The prime numbers.
+  add $4,$2
+  mov $2,$4
+  sub $2,1
   add $0,$3
   trn $0,3
   add $1,$2

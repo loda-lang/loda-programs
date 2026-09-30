@@ -6,6 +6,7 @@ mov $3,$0
 mul $3,8
 lpb $3
   sub $3,1
+  add $4,19
   add $5,$6
   add $5,$1
   sub $6,$8
@@ -16,13 +17,11 @@ lpb $3
   mov $7,3
   add $7,$5
   mul $7,3
-  add $4,19
-  mul $6,4
   mov $8,$6
-  mul $6,5
-  div $6,2
+  mul $8,4
   add $2,$7
   mul $2,2
+  mul $6,10
 lpe
 pow $4,$0
 add $2,10

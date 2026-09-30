@@ -1,6 +1,7 @@
 ; A263419: a(n) is the total number of pentagrams in a variant of pentagram fractal after n iterations.
 ; Submitted by loader3229
 ; 1,6,11,26,51,106,201,396,751,1446,2741
+; Formula: a(n) = 5*b(n)+1, b(n) = 2*b(n-2)+2*b(n-3)+2*b(n-4)+n, b(5) = 21, b(4) = 10, b(3) = 5, b(2) = 2, b(1) = 1, b(0) = 0
 
 lpb $0
   sub $0,1

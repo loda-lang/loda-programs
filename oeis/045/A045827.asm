@@ -11,8 +11,7 @@ lpb $0
   mul $2,2
   dir $2,4
   mov $7,$2
-  trn $7,1
-  add $7,1
+  max $7,1
   seq $7,1158 ; sigma_3(n): sum of cubes of divisors of n.
   mov $5,$2
   mul $5,$7

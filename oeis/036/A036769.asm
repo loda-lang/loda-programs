@@ -12,8 +12,7 @@ lpb $0
   bin $2,$0
   mov $3,$4
   bin $3,$1
-  sub $0,5
-  trn $0,2
+  trn $0,7
   add $1,1
   mul $3,$2
   div $3,$1

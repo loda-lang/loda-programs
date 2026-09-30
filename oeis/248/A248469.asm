@@ -9,9 +9,9 @@ mul $1,$0
 mov $3,$1
 mov $4,1
 lpb $1
-  sub $1,1
   mov $2,$1
-  equ $2,0
+  equ $2,1
+  sub $1,1
   add $1,$2
   sub $4,$3
   div $4,$1

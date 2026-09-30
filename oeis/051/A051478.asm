@@ -14,7 +14,7 @@ lpb $0
   mov $2,$0
   add $2,1
   seq $2,134269 ; Number of solutions to the equation p^k - p^(k-1) = n, where k is a positive integer and p is prime.
-  pow $0,0
+  mov $0,1
 lpe
 mov $0,$2
 mul $0,2

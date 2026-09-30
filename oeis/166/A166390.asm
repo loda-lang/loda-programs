@@ -16,8 +16,7 @@ lpb $2
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mod $3,13
   add $3,$4
-  sub $3,12
-  equ $3,1
+  equ $3,13
   sub $0,$3
   add $1,1
   mov $4,$0

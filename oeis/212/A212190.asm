@@ -15,8 +15,7 @@ lpb $3
   pow $6,2
   dgs $6,2
   mov $4,$6
-  sub $4,2
-  equ $4,1
+  equ $4,3
   sub $1,$4
   add $2,1
   mov $5,$1

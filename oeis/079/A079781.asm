@@ -5,8 +5,7 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,79782 ; Final term of n-th row of triangle in A079784.
 sub $0,$1

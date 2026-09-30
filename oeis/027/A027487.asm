@@ -15,7 +15,10 @@ lpb $1
   seq $3,52517 ; Number of ordered pairs of cycles over all n-permutations having two cycles.
   mov $2,$5
   add $2,$6
-  seq $2,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  seq $2,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $2,5
+  gcd $2,0
+  div $2,5
   mul $2,$3
   mul $4,$5
   add $4,$2

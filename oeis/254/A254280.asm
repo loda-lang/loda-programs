@@ -5,9 +5,9 @@
 
 #offset -9
 
-add $0,9
 mov $1,$0
-add $0,36
+add $1,9
+add $0,45
 bin $0,$1
 pow $0,2
 add $1,15

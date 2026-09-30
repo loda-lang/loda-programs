@@ -10,9 +10,8 @@ mov $2,2
 pow $2,$1
 mul $2,2
 mov $3,0
-add $0,1
 mov $5,$0
-sub $0,1
+add $5,1
 mov $4,$0
 bin $4,2
 add $4,$0

@@ -1,7 +1,7 @@
 ; A204911: The prime q>=5 such that n divides p-q, where p>q is the least prime for which such a prime q exists.
 ; Submitted by mmonnin
 ; 5,5,5,7,7,5,5,5,5,7,7,5,5,5,7,7,7,5,5,11,5,7,7,5,11,5,5,13,13,7,5,5,5,7,13,5,5,5,5,7,7,5,11,17,7,7,7,5,5,11,5,7,7,5,17,5,13,13,13,7,5,5,5,7,7,5,5,5,11,13,7,7,5,5,7,7,13,5,5,17
-; Formula: a(n) = A000040(-binomial(truncate((sqrtint(8*A204907(n))+1)/2),2)+A204907(n)+2)
+; Formula: a(n) = A000040(-binomial(floor((sqrtint(8*A204907(n))+1)/2),2)+A204907(n)+2)
 
 #offset 1
 

@@ -16,7 +16,7 @@ lpb $2
     mov $3,$1
     add $3,$7
     add $3,1
-    seq $3,140700 ; Row products of A140699.
+    seq $3,140700 ; a(n) = n*A069158(n).
     mov $6,$7
     mul $6,$3
     add $5,$6

@@ -1,7 +1,7 @@
 ; A112280: Coefficients, read modulo 9, of the cube of q-series (q;q)_oo.
 ; Submitted by loader3229
 ; 1,6,0,5,0,0,2,0,0,0,0,0,0,0,0,7,0,0,0,0,0,4,0,0,0,0,0,0,3,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,7,0
-; Formula: a(n) = truncate(0^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(8^truncate((sqrtint(8*n+8)-1)/2))*(2*truncate((sqrtint(8*n+8)-1)/2)+binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))+9*truncate((truncate(0^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(8^truncate((sqrtint(8*n+8)-1)/2))*(2*truncate((sqrtint(8*n+8)-1)/2)+binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)))/(-9))
+; Formula: a(n) = (2*floor((sqrtint(8*n+8)-1)/2)+binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*8^floor((sqrtint(8*n+8)-1)/2)*if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,0^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))+9*truncate(((2*floor((sqrtint(8*n+8)-1)/2)+binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*8^floor((sqrtint(8*n+8)-1)/2)*if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,0^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)))/(-9))
 
 add $0,1
 mov $1,$0

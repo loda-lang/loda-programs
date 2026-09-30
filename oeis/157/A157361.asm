@@ -24,6 +24,6 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,114810 ; Number of complex, weakly primitive Dirichlet characters modulo n.
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

@@ -16,7 +16,14 @@ lpb $4
   bin $1,$0
   sub $0,$1
   add $0,1
-  seq $0,166260 ; a(n) = A089026(n) - 1.
+  mov $6,2
+  pow $6,$0
+  sub $6,2
+  lex $6,$0
+  mov $5,$0
+  sub $5,$6
+  mul $5,$6
+  mov $0,$5
   add $0,1
   seq $0,193 ; Nearest integer to log n.
   mul $1,$0

@@ -8,7 +8,6 @@
 pow $0,2
 mul $0,2
 sub $0,2
+nrt $0,2
 mov $1,$0
-nrt $1,2
-mov $0,$1
 add $0,3

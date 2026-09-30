@@ -1,7 +1,7 @@
 ; A369001: a(n) = 1 if n' / gcd(n,n') is even, otherwise 0, where n' stands for the arithmetic derivative of n, A003415.
 ; Submitted by fzs600
 ; 1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0
-; Formula: a(n) = -2*truncate((truncate(A003415(n)/gcd(n,A003415(n)))+1)/2)+truncate(A003415(n)/gcd(n,A003415(n)))+1
+; Formula: a(n) = (floor(A003415(n)/gcd(n,A003415(n)))+1)%2
 
 #offset 1
 

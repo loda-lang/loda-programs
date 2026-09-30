@@ -5,7 +5,6 @@
 #offset 1
 
 mov $2,2
-sub $0,1
 seq $0,6093 ; a(n) = prime(n) - 1.
 mul $0,2
 add $0,1

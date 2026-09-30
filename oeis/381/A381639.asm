@@ -21,6 +21,6 @@ lpb $0
   mov $5,$2
   bin $5,$6
   mul $1,$5
-  pow $6,0
+  mov $6,1
 lpe
 mov $0,$1

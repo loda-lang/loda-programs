@@ -12,7 +12,13 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,1
-  seq $0,18214 ; Alkane (or paraffin) numbers l(13,n).
+  add $0,10
+  mov $6,$0
+  div $6,2
+  bin $6,5
+  bin $0,10
+  add $0,$6
+  div $0,2
   mov $3,$4
   mul $3,$0
   add $5,$3

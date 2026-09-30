@@ -14,8 +14,7 @@ lpb $2
   add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   dif $3,2
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

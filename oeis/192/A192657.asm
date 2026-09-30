@@ -6,9 +6,15 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  seq $2,192655 ; Floor-Sqrt transform of central binomial coefficients (A000984).
+  mul $2,2
+  bin $2,$0
+  nrt $2,2
+  mov $5,$0
+  mov $6,$1
   mov $3,$1
-  seq $3,192655 ; Floor-Sqrt transform of central binomial coefficients (A000984).
+  mul $3,2
+  bin $3,$1
+  nrt $3,2
   add $1,1
   mul $2,$3
   add $4,$2

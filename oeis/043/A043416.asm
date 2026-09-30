@@ -14,14 +14,12 @@ lpb $2
   lpb $3
     mov $6,$3
     mod $6,10
-    sub $6,3
-    equ $6,2
+    equ $6,5
     div $3,10
     add $5,$6
   lpe
   mov $3,$5
-  sub $3,8
-  equ $3,1
+  equ $3,9
   sub $0,$3
   add $1,1
   mov $4,$0

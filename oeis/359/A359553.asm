@@ -1,17 +1,32 @@
 ; A359553: Numerator of the coefficient of x^(2n+1) in the Taylor series expansion of sin(sin(x)).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,-1,1,-8,13,-47,15481,-15788,451939,-23252857,186846623,-831520891,1108990801,-143356511198507,920716137922619,-13390469094133441,929480267163260699,-118186323448146684881,69875813865886026036091,-155759565768613453511731,384497299908401854920076069,-581111266505562714283507129,2853420643485485085748928103553,-460781912353476387921089211713,9282206207905897567789738077958187,-67284035697712234094423234679064873,4115600774482571100381082048502951659,-5356966071657876332360665741542747562871
-; Formula: a(n) = truncate((A003724(2*n+1)*(-1)^n)/gcd((2*n)!,A003724(2*n+1)*(-1)^n))
 
 mov $2,-1
 pow $2,$0
+mov $5,0
 mov $1,$0
 mul $1,2
 add $1,1
-seq $1,3724 ; Number of partitions of n-set into odd blocks.
+mov $4,0
+mov $6,$1
+add $6,1
+bin $6,2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $7,$5
+  add $7,$6
+  seq $7,136630 ; Triangular array: T(n,k) counts the partitions of the set [n] into k odd sized blocks.
+  add $4,$7
+  add $5,1
+lpe
+mov $1,$4
 mul $1,$2
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $3,0
+sub $3,$0
+fac $0,$3
 gcd $0,$1
 div $1,$0
 mov $0,$1

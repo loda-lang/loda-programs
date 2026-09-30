@@ -1,10 +1,23 @@
 ; A275070: Number of set partitions of [n] such that i-j is a multiple of three for all i,j belonging to the same block.
 ; Submitted by Science United
 ; 1,1,1,1,2,4,8,20,50,125,375,1125,3375,11700,40560,140608,548912,2142868,8365427,36140293,156133187,674526133,3184194060,15031429200,70957944000,362451121200,1851389821260,9456845543523,51863510753775,284431392616875,1559887017484375,9126902638106250,53401528977277500,312452472671793000,1940181265738905300,12047602989777995130,74809885221745127173,490810383382597860733,3220093597552417437493,21126290575876420561453,145888105708566184255018,1007433809110658110577908,6956858304587720715134248
-; Formula: a(n) = truncate((sqrtint(16*A275073(2*n))-3)/4)+1
 
 mul $0,2
-seq $0,275073 ; Number of set partitions of [n] such that i-j is a multiple of six for all i,j belonging to the same block.
+mov $3,$0
+mov $4,2
+mov $1,3
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,2
+  div $0,3
+  mov $2,$0
+  seq $2,124419 ; Number of partitions of the set {1,2,...n} having no blocks that contain both odd and even entries.
+  mul $4,$2
+lpe
+mov $0,$4
+div $0,2
 mul $0,16
 nrt $0,2
 sub $0,3

@@ -1,7 +1,7 @@
 ; A369004: a(n) = 1 if n' / gcd(n,n') is a multiple of 4, otherwise 0, where n' stands for the arithmetic derivative of n, A003415(n).
 ; Submitted by mmonnin
 ; 1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-; Formula: a(n) = truncate(gcd(A064097(10),truncate(A003415(n)/gcd(n,A003415(n))))/3)
+; Formula: a(n) = floor(gcd(A064097(10),floor(A003415(n)/gcd(n,A003415(n))))/3)
 
 #offset 1
 

@@ -1,6 +1,7 @@
 ; A125091: Triangle read by rows: T(n,k) = (1/6)*k*(k+1)*(k+2)*binomial(n,k) (1 <= k <= n).
 ; Submitted by BrandyNOW
 ; 1,2,4,3,12,10,4,24,40,20,5,40,100,100,35,6,60,200,300,210,56,7,84,350,700,735,392,84,8,112,560,1400,1960,1568,672,120,9,144,840,2520,4410,4704,3024,1080,165,10,180,1200,4200,8820,11760,10080,5400,1650,220,11
+; Formula: a(n) = truncate((binomial(floor((sqrtint(8*n)+1)/2),-binomial(floor((sqrtint(8*n)+1)/2),2)+n)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1)*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+2))/6)
 
 #offset 1
 

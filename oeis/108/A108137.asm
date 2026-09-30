@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $26,$0
-equ $26,0
+equ $26,1
+sub $0,1
 mov $2,$0
 add $2,$26
 seq $2,30433 ; Primes of form 10*k + 9.

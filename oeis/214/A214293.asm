@@ -1,7 +1,7 @@
 ; A214293: a(n) = 1 if n is a square, -1 if n is five times a square.
 ; Submitted by PDW
 ; 1,0,0,1,-1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1
-; Formula: a(n) = truncate(truncate((-A037449(n))/3)^truncate((-A037449(n))/3))
+; Formula: a(n) = if((truncate((-A037449(n))/3)^2)==1,truncate((-A037449(n))/3)^truncate((-A037449(n))/3),if(truncate((-A037449(n))/3)<=(-1),0,truncate((-A037449(n))/3)^truncate((-A037449(n))/3)))
 
 #offset 1
 

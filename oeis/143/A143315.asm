@@ -1,7 +1,7 @@
 ; A143315: Triangle read by rows: T(n, k) = 2*A126988(n, k) - signum(A126988(n, k)).
 ; Submitted by KetamiNO [YouTube]
 ; 1,3,1,5,0,1,7,3,0,1,9,0,0,0,1,11,5,3,0,0,1,13,0,0,0,0,0,1,15,7,0,3,0,0,0,1,17,0,5,0,0,0,0,0,1,19,9,0,0,3,0,0,0,0,1,21,0,0,0,0,0,0,0,0,0,1,23,11,7,5,0,3,0,0,0,0,0,1,25,0
-; Formula: a(n) = max(2*truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)-1,0)
+; Formula: a(n) = max(2*truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)-1,0)
 
 #offset 1
 

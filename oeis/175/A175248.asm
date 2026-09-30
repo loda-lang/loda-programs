@@ -1,9 +1,26 @@
 ; A175248: Noncomposites (A008578) with noncomposite (A008578) subscripts.
 ; 1,2,3,7,13,29,37,53,61,79,107,113,151,173,181,199,239,271,281,317,349,359,397,421,457,503,541,557,577,593,613,701,733,769,787,857,863,911,953,983,1021,1061,1069,1151,1163,1193,1213,1291,1399,1429,1439,1459
-; Formula: a(n) = A158611(A008578(n)+1)
+; Formula: a(n) = -max(floor((A000040(max(n-1,1))*(if((n-1)==0,n-1,if(((n-1)%(n-1))==0,(n-1)/(n-1),n-1))+1))/2)-2,0)+floor((A000040(max(n-1,1))*(if((n-1)==0,n-1,if(((n-1)%(n-1))==0,(n-1)/(n-1),n-1))+1))/2)+A000040(max(floor((A000040(max(n-1,1))*(if((n-1)==0,n-1,if(((n-1)%(n-1))==0,(n-1)/(n-1),n-1))+1))/2)-2,0)+1)-2
 
 #offset 1
 
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-add $0,1
-seq $0,158611 ; 0, 1 and the primes.
+sub $0,1
+mov $1,$0
+dif $1,$0
+add $1,1
+mov $2,$0
+max $2,1
+seq $2,40 ; The prime numbers.
+mul $1,$2
+mov $2,$1
+div $2,2
+mov $3,$2
+trn $3,2
+mov $0,$2
+sub $0,$3
+sub $0,1
+add $3,1
+seq $3,40 ; The prime numbers.
+add $3,$0
+mov $0,$3
+sub $0,1

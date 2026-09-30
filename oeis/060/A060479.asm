@@ -16,7 +16,22 @@ lpb $3
   mov $0,$4
   sub $0,$3
   mov $5,$0
-  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $7,$5
+  bin $5,2
+  mov $8,$0
+  sub $8,$5
+  mov $10,$7
+  div $10,$8
+  mov $9,$7
+  mod $9,$8
+  equ $9,0
+  seq $10,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $10,$9
+  mov $5,$10
   mov $6,$0
   mul $6,8
   nrt $6,2
@@ -25,7 +40,7 @@ lpb $3
   bin $6,2
   sub $0,$6
   seq $0,2445 ; Denominators of Bernoulli numbers B_{2n}.
-  mul $0,$5
+  mul $0,$10
   add $2,$0
 lpe
 mov $0,$2

@@ -1,6 +1,6 @@
 ; A078393: Squarefree numbers which can be written as sum of a positive square and a positive cube.
 ; Submitted by Stony666
-; 2,5,10,17,26,31,33,37,43,57,65,73,82,89,91,101,113,122,127,129,134,141,145,161,170,174,177,185,197,206,217,223,226,233,241,246,257,265,269,283,290,321,337,347,353,359,362,379,381,385,401,407,427,442,443
+; 2,5,10,17,26,31,33,37,43,57,65,73,82,89,91,101,113,122,127,129,134,141,145,161,170,174,177,185,197,206,217,223,226,233,241,246,257,265,269,283,290,321,337,347,353,359,362,379,381,385,401,407,427,442,443,449,485,487,505,511,521,530,537,561,566,577,593,599,609,626,633,654,667,677,681,689,701,703,730,733
 
 #offset 1
 
@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,55394 ; Numbers that are the sum of a positive square and a positive cube.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   mov $6,$3
   seq $6,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

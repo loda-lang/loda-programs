@@ -13,10 +13,14 @@ lpb $2
   sub $2,$1
   mov $3,$1
   add $3,1
-  seq $3,185597 ; a(n) = floor(n^(3/2) - n^(1/2)); complement of A185598.
+  mov $4,$1
+  pow $4,2
+  mul $4,$3
+  nrt $4,2
   add $0,1
   add $1,1
-  add $2,$3
+  add $2,$4
   sub $2,$0
+  mov $3,$4
 lpe
 sub $0,1

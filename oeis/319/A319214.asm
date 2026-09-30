@@ -7,9 +7,8 @@
 
 pow $0,5
 sub $0,1
+seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 mov $1,$0
-seq $1,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
-mov $0,$1
 sub $0,28
 div $0,10
 mul $0,2

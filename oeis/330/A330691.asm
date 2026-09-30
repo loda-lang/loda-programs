@@ -5,14 +5,13 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
 mov $4,$0
-add $0,1
+sub $4,1
 pow $4,5
 lpb $4
   mov $5,$3
   add $5,1
-  seq $5,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+  seq $5,2805 ; a(n) = denominator of harmonic number H(n) = Sum_{i=1..n} 1/i.
   gcd $5,$0
   add $3,1
   add $4,$5
@@ -20,6 +19,5 @@ lpb $4
 lpe
 mov $0,$3
 add $0,1
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

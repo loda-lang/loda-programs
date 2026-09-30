@@ -1,10 +1,43 @@
 ; A176161: Triangle read by rows: T(n,k) = (1 + Eulerian(n+1, k))^n.
 ; Submitted by Jo&amp;atilde;o Vitor de Sousa
 ; 1,2,2,4,25,4,8,1728,1728,8,16,531441,20151121,531441,16,32,656356768,2553954421743,2553954421743,656356768,32,64,3138428376721,2868517689517932544,199370042958924478369,2868517689517932544,3138428376721,64
-; Formula: a(n) = (truncate(A176200(n)/2)+2)^floor((sqrtint(8*n+8)-1)/2)-binomial(floor((sqrtint(8*n+8)-1)/2),-1)
 
+mov $4,0
+mov $6,0
+mov $7,0
 mov $1,$0
-seq $1,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+add $1,1
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $1,$3
+sub $1,1
+mov $3,$1
+mov $1,$2
+add $1,1
+sub $2,$3
+add $2,2
+lpb $2
+  sub $2,1
+  mov $5,$2
+  pow $5,$1
+  sub $6,2
+  sub $6,$2
+  bin $6,$4
+  mul $6,$5
+  add $7,$6
+  add $4,1
+  mov $6,0
+  sub $6,$3
+lpe
+mov $1,$7
+mul $1,2
+sub $1,1
 div $1,2
 add $1,2
 add $0,1

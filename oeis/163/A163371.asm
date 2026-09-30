@@ -7,6 +7,5 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
-seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $0,$1

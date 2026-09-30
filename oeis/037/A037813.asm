@@ -1,4 +1,4 @@
-; A037813: Number of i such that d(i) <= d(i-1), where Sum_{i=0..n} d(i)*6^i is the base-6 representation of n.
+; A037813: Number of i such that d(i) <= d(i-1), where Sum_{i=0..m} d(i)*6^i is the base-6 representation of n.
 ; Submitted by Simon Strandgaard (M1)
 ; 0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,2,2,2,2,1,1,1,2,2,2,1,1,1,1,2,2,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1
 

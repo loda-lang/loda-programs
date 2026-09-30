@@ -1,6 +1,7 @@
 ; A185175: a(n) = A010815(7*n + 5).
 ; Submitted by loader3229
 ; 1,-1,0,1,0,-1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,1,0,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0
+; Formula: a(n) = if(((binomial(21*n-binomial(floor((sqrtint(168*n+128)-1)/2)+1,2)+14,floor((sqrtint(168*n+128)-1)/2))*(2*floor((sqrtint(168*n+128)-1)/2)+1)-3*truncate((binomial(21*n-binomial(floor((sqrtint(168*n+128)-1)/2)+1,2)+14,floor((sqrtint(168*n+128)-1)/2))*(2*floor((sqrtint(168*n+128)-1)/2)+1))/3))%(-2))==0,(binomial(21*n-binomial(floor((sqrtint(168*n+128)-1)/2)+1,2)+14,floor((sqrtint(168*n+128)-1)/2))*(2*floor((sqrtint(168*n+128)-1)/2)+1)-3*truncate((binomial(21*n-binomial(floor((sqrtint(168*n+128)-1)/2)+1,2)+14,floor((sqrtint(168*n+128)-1)/2))*(2*floor((sqrtint(168*n+128)-1)/2)+1))/3))/(-2),binomial(21*n-binomial(floor((sqrtint(168*n+128)-1)/2)+1,2)+14,floor((sqrtint(168*n+128)-1)/2))*(2*floor((sqrtint(168*n+128)-1)/2)+1)-3*truncate((binomial(21*n-binomial(floor((sqrtint(168*n+128)-1)/2)+1,2)+14,floor((sqrtint(168*n+128)-1)/2))*(2*floor((sqrtint(168*n+128)-1)/2)+1))/3))
 
 mul $0,21
 add $0,16

@@ -1,6 +1,7 @@
 ; A124010: Triangle in which first row is 0, n-th row (n>1) lists the exponents of distinct prime factors ("ordered prime signature") in the prime factorization of n.
 ; Submitted by Science United
 ; 0,1,1,2,1,1,1,1,3,2,1,1,1,2,1,1,1,1,1,1,4,1,1,2,1,2,1,1,1,1,1,1,3,1,2,1,1,3,2,1,1,1,1,1,1,5,1,1,1,1,1,1,2,2,1,1,1,1,1,3,1,1,1,1,1,1,2,1,2,1,1,1,1,4,1,2,1,2,1,1
+; Formula: a(n) = b(max(2*n-1,0)), b(n) = if(d(n-2)==0,0,if((A020639(d(n-2))^2)<=1,0,valuation(d(n-2),A020639(d(n-2))))), b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = (if(d(n-2)==0,0,if((A020639(d(n-2))^2)<=1,d(n-2),d(n-2)/(A020639(d(n-2))^valuation(d(n-2),A020639(d(n-2))))))==1)+c(n-2), c(5) = 4, c(4) = 4, c(3) = 3, c(2) = 3, c(1) = 2, c(0) = 2, d(n) = max(if(d(n-2)==0,0,if((A020639(d(n-2))^2)<=1,d(n-2),d(n-2)/(A020639(d(n-2))^valuation(d(n-2),A020639(d(n-2)))))),((if(d(n-2)==0,0,if((A020639(d(n-2))^2)<=1,d(n-2),d(n-2)/(A020639(d(n-2))^valuation(d(n-2),A020639(d(n-2))))))==1)+c(n-2))*(if(d(n-2)==0,0,if((A020639(d(n-2))^2)<=1,d(n-2),d(n-2)/(A020639(d(n-2))^valuation(d(n-2),A020639(d(n-2))))))==1)), d(5) = 4, d(4) = 4, d(3) = 3, d(2) = 3, d(1) = 2, d(0) = 2
 
 #offset 1
 

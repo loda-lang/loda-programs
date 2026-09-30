@@ -11,14 +11,12 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,376598 ; Points of nonzero curvature in the sequence of prime-powers inclusive (A000961).
+  sub $0,1
   mov $1,$0
-  sub $1,1
-  mov $0,$1
   mov $2,$3
-  mul $2,$1
+  mul $2,$0
   add $4,$2
 lpe
 min $5,1

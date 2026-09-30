@@ -1,7 +1,7 @@
 ; A110356: Array read by antidiagonals: T(n,k) (n>=3, k>=3) = minimal number of polygonal pieces in a dissection of a regular n-gon to a regular k-gon (conjectured).
 ; Submitted by loader3229
 ; 1,4,4,6,1,6,5,6,6,5
-; Formula: a(n) = -binomial(truncate(sqrtint(8*n-24)/2),2)-10*truncate((-binomial(truncate(sqrtint(8*n-24)/2),2)+floor(((2*n-2*binomial(truncate(sqrtint(8*n-24)/2),2)+binomial(truncate((sqrtint(8*n-16)+3)/2),2)+7)^2)/4)+n-1)/10)+floor(((2*n-2*binomial(truncate(sqrtint(8*n-24)/2),2)+binomial(truncate((sqrtint(8*n-16)+3)/2),2)+7)^2)/4)+n-1
+; Formula: a(n) = -binomial(floor(sqrtint(8*n-24)/2),2)-10*truncate((-binomial(floor(sqrtint(8*n-24)/2),2)+floor(((2*n-2*binomial(floor(sqrtint(8*n-24)/2),2)+binomial(floor((sqrtint(8*n-16)+3)/2),2)+7)^2)/4)+n-1)/10)+floor(((2*n-2*binomial(floor(sqrtint(8*n-24)/2),2)+binomial(floor((sqrtint(8*n-16)+3)/2),2)+7)^2)/4)+n-1
 
 #offset 3
 

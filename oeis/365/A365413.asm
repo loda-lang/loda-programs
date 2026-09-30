@@ -10,7 +10,7 @@ sub $0,1
 lpb $0
   sub $0,1
   add $1,1
-  seq $1,289280 ; a(n) = least integer k > n such that any prime factor of k is also a prime factor of n.
+  seq $1,289280 ; a(n) is the least integer k > n such that any prime factor of k is also a prime factor of n.
   sub $1,2
 lpe
 mov $0,$1

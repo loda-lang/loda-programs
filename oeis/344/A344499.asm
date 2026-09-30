@@ -14,9 +14,8 @@ bin $2,2
 sub $0,$2
 sub $0,1
 sub $1,$0
-add $1,1
 mov $5,$1
-sub $1,1
+add $5,1
 mov $4,$1
 bin $4,2
 add $4,$1

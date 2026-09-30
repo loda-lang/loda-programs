@@ -19,8 +19,7 @@ lpb $2
   seq $3,23172 ; Self-Fibonacci numbers: numbers k that divide Fibonacci(k).
   div $6,$3
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   mov $5,$6
   sub $0,$3
   add $1,1

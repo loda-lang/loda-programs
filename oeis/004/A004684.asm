@@ -7,11 +7,11 @@
 
 seq $0,40 ; The prime numbers.
 mul $0,10
-add $0,2
 mov $1,$0
-add $0,7
+add $0,9
 div $0,11
 mul $0,22
+add $1,2
 div $1,11
 add $1,3
 mul $1,14

@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
   add $5,1
@@ -15,8 +13,7 @@ lpb $2
   seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
   gcd $3,$5
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

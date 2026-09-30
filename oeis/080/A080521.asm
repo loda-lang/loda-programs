@@ -13,9 +13,8 @@ mov $7,$1
 add $7,1
 bin $7,2
 sub $0,$7
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 sub $1,$2
 equ $1,0
 add $1,2

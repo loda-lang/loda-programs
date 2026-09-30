@@ -1,6 +1,6 @@
 ; A392517: a(n) is the minimum diameter of a n-element set of integers for which no nonzero d has more than d-1 representations as a difference of elements of the set.
 ; Submitted by crashtech
-; 0,2,5,8,12,16,20,25,30,35,40,46,52,58,64,70
+; 0,2,5,8,12,16,20,25,30,35,40,46,52,58,64,70,77,84,91,98,105,112,120
 
 #offset 1
 

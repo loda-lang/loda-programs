@@ -6,7 +6,6 @@
 #offset 1
 
 add $0,3
+seq $0,24953 ; a(n) = Sum_{i=1..floor((n+2)/4)} a(2i-1)*a(n-2i+1), with a(1)=a(2)=1 and a(3)=6.
 mov $1,$0
-seq $1,24953 ; a(n) = Sum_{i=1..floor((n+2)/4)} a(2i-1)*a(n-2i+1), with a(1)=a(2)=1 and a(3)=6.
-mov $0,$1
 div $0,6

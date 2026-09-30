@@ -18,7 +18,22 @@ lpb $5
   mov $3,$1
   sub $3,$5
   mov $2,$3
-  seq $2,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mul $2,8
+  nrt $2,2
+  add $2,1
+  div $2,2
+  mov $9,$2
+  bin $2,2
+  mov $10,$3
+  sub $10,$2
+  mov $12,$9
+  div $12,$10
+  mov $11,$9
+  mod $11,$10
+  equ $11,0
+  seq $12,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $12,$11
+  mov $2,$12
   sub $3,1
   mov $8,$3
   mul $8,8
@@ -32,7 +47,7 @@ lpb $5
   sub $6,$8
   pow $7,$6
   mov $3,$7
-  mul $3,$2
+  mul $3,$12
   add $4,$3
 lpe
 add $0,1

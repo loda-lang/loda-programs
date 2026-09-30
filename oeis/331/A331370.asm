@@ -9,8 +9,7 @@ sub $0,405
 mul $0,2
 pow $0,2
 sub $0,2
+dgs $0,4
 mov $1,$0
-dgs $1,4
-mov $0,$1
 add $0,1
 mod $0,10

@@ -24,6 +24,6 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,7427 ; Moebius transform applied twice to sequence 1,0,0,0,....
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

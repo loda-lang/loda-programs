@@ -1,4 +1,4 @@
-; A176677: Sequence defined by the recurrence formula a(n+1)=sum(a(p)*a(n-p)+k,p=0..n)+l for n>=1, with here a(0)=1, a(1)=1, k=0 and l=-1.
+; A176677: Sequence defined by the recurrence formula a(n+1) = Sum_{p=0..n} (a(p)*a(n-p)+k) + l for n>=1, with here a(0)=1, a(1)=1, k=0 and l=-1.
 ; Submitted by Landjunge
 ; 1,1,1,2,5,14,41,123,375,1158,3615,11393,36209,115940,373709,1211740,3949969,12937612,42558745,140547051,465799527,1548766044,5164917003,17271369744,57900615135,194558333460,655168354935,2210681734671
 

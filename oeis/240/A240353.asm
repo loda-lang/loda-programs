@@ -1,7 +1,7 @@
 ; A240353: Inverse of 68th cyclotomic polynomial.
 ; Submitted by arkiss
 ; 1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17))^(-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17)))*(-1)^floor((n+1)/2)*((n+1)%2)
+; Formula: a(n) = (-1)^floor((n+1)/2)*((n+1)%2)*if(((-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17))^2)==1,(-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17))^(-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17)),if((-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17))<=(-1),0,(-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17))^(-floor((n+1)/2)-17*truncate((-floor((n+1)/2))/17))))
 
 add $0,1
 mov $1,$0

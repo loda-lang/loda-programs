@@ -3,13 +3,11 @@
 
 #offset 1
 
-sub $0,1
 mov $4,$0
-add $0,1
+sub $4,1
 lpb $0
   sub $3,$0
-  sub $3,2
-  trn $3,1
+  trn $3,3
   sub $0,$3
   add $1,2
   mov $2,$0

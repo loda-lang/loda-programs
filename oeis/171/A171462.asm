@@ -6,7 +6,7 @@
 #offset 1
 
 mov $2,$0
-seq $2,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+seq $2,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).
 sub $0,1
 mov $1,1
 sub $1,$2

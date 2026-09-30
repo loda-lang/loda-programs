@@ -6,12 +6,10 @@
 
 sub $0,1
 lpb $0
-  pow $0,0
-  add $1,$0
+  mov $0,-3
+  add $1,1
   add $2,$1
   mul $2,21
-  div $0,2
-  sub $0,3
   add $0,$2
 lpe
 trn $0,1

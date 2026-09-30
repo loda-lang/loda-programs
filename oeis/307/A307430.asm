@@ -1,6 +1,6 @@
 ; A307430: Dirichlet g.f.: zeta(s) / zeta(4*s).
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-; Formula: a(n) = truncate((truncate(56/(binomial(truncate(max(0,truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)/A019554(max(0,truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)+1))+5,2)-8))-7)/11)
+; Formula: a(n) = truncate((truncate(56/(binomial(floor(max(0,floor((sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)/A019554(max(0,floor((sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)+1))+5,2)-8))-7)/11)
 
 #offset 1
 

@@ -5,8 +5,7 @@
 #offset -1
 
 mov $1,$0
-add $1,2
-neq $1,2
+neq $1,0
 mov $4,3
 add $0,4
 lpb $0
@@ -14,7 +13,7 @@ lpb $0
   mov $3,$0
   mov $5,-1
   pow $5,$0
-  mul $0,0
+  mov $0,0
   sub $3,1
   seq $3,210459 ; McKay-Thompson series of class 20A for the Monster group with a(0) = 4.
   mul $3,$5

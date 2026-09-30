@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,43534 ; Number of distinct base-7 digits of n.
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -23,7 +23,7 @@ lpb $4
   gcd $5,2
   sub $2,$5
   add $2,1
-  pow $5,0
+  mov $5,1
   add $5,$3
   add $3,$6
   mov $6,$2

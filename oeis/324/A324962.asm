@@ -13,7 +13,10 @@ lpb $0
   seq $4,26388 ; a(n) is the number of integer strings s(0),...,s(n) counted by array T in A026386 that have s(n)=2; also a(n) = T(2n,n-1).
   mov $5,$2
   add $5,$3
-  seq $5,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $5,5
+  gcd $5,0
+  div $5,5
   mul $5,$4
   add $1,$5
   add $2,1

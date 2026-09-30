@@ -1,6 +1,7 @@
 ; A093419: Denominators of row sums in triangle described in A093412.
 ; Submitted by ckrause
 ; 1,1,3,6,5,10,35,140,126,1260,1155,13860,12870,12012,45045,360360,340340,2042040,1939938,369512,117572,2586584,7436429,178474296,171609900,1487285800,1434168450,40156716600,38818159380,1164544781400
+; Formula: a(n) = truncate(if((truncate(b(n)/gcd(c(n),b(n)))%2)==0,truncate(b(n)/gcd(c(n),b(n)))/2,truncate(b(n)/gcd(c(n),b(n))))/gcd(if((truncate(b(n)/gcd(c(n),b(n)))%2)==0,truncate(b(n)/gcd(c(n),b(n)))/2,truncate(b(n)/gcd(c(n),b(n)))),n+1)), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*c(n-1)+b(n-1), c(2) = 3, c(1) = 1, c(0) = 0
 
 #offset 1
 

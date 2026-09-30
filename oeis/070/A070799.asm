@@ -12,8 +12,7 @@ lpb $2
   add $1,1
   mov $3,$1
   seq $3,328995 ; Dirichlet g.f. = Product_{primes p == 1 mod 3} (1+p^(-s))/(1-p^(-s)).
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

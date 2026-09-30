@@ -9,6 +9,5 @@ mov $2,$0
 seq $2,40 ; The prime numbers.
 add $0,1
 seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+add $0,$2
 mov $1,$0
-add $1,$2
-mov $0,$1

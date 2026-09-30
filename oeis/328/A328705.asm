@@ -19,7 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
-    seq $5,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+    seq $5,712 ; a(n) = number of partitions of n into parts of 2 kinds.
     add $4,1
   lpe
   mul $1,$5

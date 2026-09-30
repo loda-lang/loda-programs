@@ -7,8 +7,7 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $5,$0
-  trn $5,1
-  add $5,1
+  max $5,1
   seq $5,56458 ; Number of primitive (aperiodic) palindromes using a maximum of two different symbols.
   mov $4,$5
   div $4,2
@@ -18,8 +17,7 @@ lpb $0
   add $4,$2
   mov $2,$4
   sub $2,2
-  mul $3,0
-  add $3,$0
+  mov $3,$0
   dif $3,2
   add $1,$2
 lpe

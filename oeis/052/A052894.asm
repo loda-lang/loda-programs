@@ -6,9 +6,8 @@ mov $1,1
 add $1,$0
 gcd $2,$1
 pow $2,2
-add $0,1
 mov $6,$0
-sub $0,1
+add $6,1
 mov $7,$0
 bin $7,2
 add $7,$0

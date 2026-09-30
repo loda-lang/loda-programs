@@ -1,12 +1,41 @@
 ; A318457: a(n) = n XOR A001065(n), where XOR is bitwise-xor (A003987) and A001065 = sum of proper divisors.
 ; Submitted by Tim B
 ; 1,3,2,7,4,0,6,15,13,2,10,28,12,4,6,31,16,7,18,2,30,24,22,60,31,10,22,0,28,52,30,63,46,54,46,19,36,48,54,26,40,28,42,4,12,52,46,124,57,25,38,26,52,116,38,120,46,26,58,80,60,28,22,127,82,12,66,126,94,12,70,51,72,98,122,12,94,20,78,58
-; Formula: a(n) = sign(3*sign(n)*sign(-n+A000203(n))+sign(-n+A000203(n))+sign(n))*bitxor(abs(n),abs(-n+A000203(n)))
 
 #offset 1
 
 mov $1,$0
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$0
+sub $4,1
+mov $5,0
+mov $3,$0
+dir $3,2
+mov $8,$3
+mov $7,$3
+nrt $7,2
+lpb $7
+  max $7,1
+  mov $9,$3
+  mod $9,$7
+  equ $9,0
+  mov $6,$3
+  div $6,$7
+  add $6,$7
+  mul $6,$9
+  add $5,$6
+  sub $7,1
+lpe
+nrt $3,2
+mov $7,$3
+pow $7,2
+sub $7,$8
+equ $7,0
+mul $3,$7
+sub $5,$3
+mov $2,$0
+bxo $2,$4
+mul $2,$5
+mov $0,$2
 sub $0,$1
 bxo $1,$0
 mov $0,$1

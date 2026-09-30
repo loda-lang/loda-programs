@@ -1,6 +1,7 @@
 ; A248866: Discrete Heilbronn Triangle Problem: a(n) is twice the maximal area of the smallest triangle defined by three vertices that are a subset of n points on an n X n square lattice.
 ; Submitted by DukeBox
 ; 4,9,6,6,5,6,5,6,6,6,6
+; Formula: a(n) = -10*truncate((truncate(binomial(if((n-5)==0,4,if((4%(n-5))==0,4/(n-5),4)),3)/3)+15)/10)+truncate(binomial(if((n-5)==0,4,if((4%(n-5))==0,4/(n-5),4)),3)/3)+15
 
 #offset 3
 

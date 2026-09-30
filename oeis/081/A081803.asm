@@ -1,7 +1,7 @@
 ; A081803: Decimal expansion of Compton electron radius in meters.
 ; Submitted by loader3229
 ; 3,8,6,1,5,9,2,6,7
-; Formula: a(n) = -10*truncate((floor(((4*binomial(n+12,2)+3*floor(binomial(n+12,4)/2)+8)*(2^(n+12)+1)^2)/8)-1)/10)+floor(((4*binomial(n+12,2)+3*floor(binomial(n+12,4)/2)+8)*(2^(n+12)+1)^2)/8)-1
+; Formula: a(n) = (floor(((4*binomial(n+12,2)+3*floor(binomial(n+12,4)/2)+8)*(2^(n+12)+1)^2)/8)-1)%10
 
 #offset -12
 

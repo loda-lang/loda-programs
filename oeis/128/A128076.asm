@@ -1,7 +1,7 @@
 ; A128076: Triangle T(n,k) = 2*n-k, read by rows.
 ; Submitted by Ralfy
 ; 1,3,2,5,4,3,7,6,5,4,9,8,7,6,5,11,10,9,8,7,6,13,12,11,10,9,8,7,15,14,13,12,11,10,9,8,17,16,15,14,13,12,11,10,9,19,18,17,16,15,14,13,12,11,10,21,20,19,18,17,16,15,14,13,12,11
-; Formula: a(n) = -n+binomial(truncate((sqrtint(8*n)+5)/2),2)-1
+; Formula: a(n) = -n+binomial(floor((sqrtint(8*n)+5)/2),2)-1
 
 #offset 1
 

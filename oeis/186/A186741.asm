@@ -1,6 +1,7 @@
 ; A186741: Expansion of f(x^5, x^7) in powers of x where f(, ) is Ramanujan's general theta function.
 ; Submitted by lotusexcelle
 ; 1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = max(if(((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))%(-2))==0,(sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))/(-2),sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3)),0)
 
 mul $0,24
 add $0,1

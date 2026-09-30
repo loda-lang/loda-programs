@@ -22,10 +22,15 @@ lpb $2
   bin $5,2
   mov $4,$0
   sub $4,$5
-  seq $4,32031 ; Triple factorial numbers: (3n)!!! = 3^n*n!.
+  mov $8,1
+  fac $8,$4
+  mov $7,3
+  pow $7,$4
+  mul $7,$8
+  mov $4,$7
   mov $6,$0
   seq $6,225472 ; Triangle read by rows, k!*S_3(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
-  div $6,$4
+  div $6,$7
   add $1,$6
 lpe
 mov $0,$1

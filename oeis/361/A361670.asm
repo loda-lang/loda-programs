@@ -22,8 +22,7 @@ mul $4,4
 nrt $4,2
 div $4,2
 pow $4,2
+div $1,$4
 mov $3,$1
-div $3,$4
-mov $1,$3
 add $1,1
 mov $0,$1

@@ -1,7 +1,7 @@
 ; A118614: Start with 1 and repeatedly reverse the digits and add 28 to get the next term.
 ; Submitted by loader3229
 ; 1,29,120,49,122,249,970,107,729,955,587,813,346,671,204,430,62,54,73,65,84,76,95,87,106,629,954,487,812,246,670,104,429,952,287,810,46,92,57,103,329,951,187,809,936,667,794,525,553,383,411,142,269,990,127,749,975,607,734,465,592,323,351,181,209,930,67,104,429,952,287,810,46,92,57,103,329,951,187,809
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+28, b(0) = 1
+; Formula: a(n) = (-10*truncate(a(n-1)/10)+a(n-1))*(9*min(truncate(a(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100),1)+1)+(-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100)+28, a(1) = 1
 
 #offset 1
 

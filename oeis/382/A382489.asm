@@ -1,7 +1,7 @@
 ; A382489: The number of unitary 5-smooth divisors of n.
 ; Submitted by mmonnin
 ; 1,2,2,2,2,4,1,2,2,4,1,4,1,2,4,2,1,4,1,4,2,2,1,4,2,2,2,2,1,8,1,2,2,2,2,4,1,2,2,4,1,4,1,2,4,2,1,4,1,4,2,2,1,4,2,2,2,2,1,8,1,2,2,2,2,4,1,2,2,4,1,4,1,2,4,2,1,4,1,4
-; Formula: a(n) = truncate(2^logint(gcd(n,30)+truncate(gcd(n,30)/2),3))
+; Formula: a(n) = 2^logint(floor(gcd(n,30)/2)+gcd(n,30),3)
 
 #offset 1
 

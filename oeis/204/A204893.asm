@@ -1,6 +1,7 @@
 ; A204893: The index j<k such that n divides s(k)-s(j), where k is the least index (A204892) for which such j exists, and s(k)=prime(k).
 ; Submitted by Simon Strandgaard
 ; 1,2,1,2,1,3,2,2,1,2,1,3,2,2,1,2,1,3,2,2,1,4,4,3,2,2,1,2,1,4,3,3,3,2,1,3,3,2,1,2,1,3,2,2,1,4,2,3,2,2,1,4,2,3,2,2,1,2,1,4,3,3,3,2,1,3,2,2,1,2
+; Formula: a(n) = truncate((if((A013632(A204896(n)+1)+2)==0,0,(A013632(A204896(n)+1)+2)/(10^valuation(A013632(A204896(n)+1)+2,10)))-10*truncate(if((A013632(A204896(n)+1)+2)==0,0,(A013632(A204896(n)+1)+2)/(10^valuation(A013632(A204896(n)+1)+2,10)))/10))/2)
 
 #offset 1
 

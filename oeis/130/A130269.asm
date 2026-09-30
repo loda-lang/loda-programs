@@ -1,7 +1,7 @@
 ; A130269: A002260 * A051340.
 ; Submitted by joe carnivore
 ; 1,3,4,6,7,9,10,11,13,16,15,16,18,21,25,21,22,24,27,31,36,28,29,31,34,38,43,49,36,37,39,42,46,51,57,64,45,46,48,51,55,60,66,73,81,55,56,58,61,65,70,76,83,91,100
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n,2)+binomial(truncate((sqrtint(8*n)+1)/2),2)+truncate((sqrtint(8*n)+1)/2)
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n)+1)/2),2)+n,2)+binomial(floor((sqrtint(8*n)+1)/2),2)+floor((sqrtint(8*n)+1)/2)
 
 #offset 1
 

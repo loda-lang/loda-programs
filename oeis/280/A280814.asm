@@ -3,9 +3,9 @@
 
 #offset 1
 
-add $0,1
 mov $1,$0
-add $0,2
+add $1,1
+add $0,3
 div $0,2
 mov $3,6
 mov $4,10

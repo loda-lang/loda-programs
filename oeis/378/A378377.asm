@@ -1,7 +1,7 @@
 ; A378377: Triangle read by rows: T(n,k) is the number of non-descending sequences with length k such that the maximum of the length and the last number is n.
 ; Submitted by loader3229
-; 1,1,3,1,3,10,1,4,10,35,1,5,15,35,126,1,6,21,56,126,462,1,7,28,84,210,462,1716,1,8,36,120,330,792,1716,6435,1,9,45,165,495,1287,3003,6435,24310,1,10,55,220,715,2002,5005,11440,24310,92378
-; Formula: a(n) = binomial(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)==truncate((sqrtint(8*n)-1)/2))-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+n-1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)
+; 1,1,3,1,3,10,1,4,10,35,1,5,15,35,126,1,6,21,56,126,462,1,7,28,84,210,462,1716,1,8,36,120,330,792,1716,6435,1,9,45,165,495,1287,3003,6435,24310,1,10,55,220,715,2002,5005,11440,24310,92378,1,11,66,286,1001,3003,8008,19448,43758,92378,352716,1,12,78,364,1365,4368,12376,31824,75582,167960,352716,1352078,1,13
+; Formula: a(n) = binomial(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)==floor((sqrtint(8*n)-1)/2))-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+n-1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)
 
 #offset 1
 

@@ -15,6 +15,5 @@ lpb $1
 lpe
 mov $1,$2
 gcd $1,3
-sub $1,1
-equ $1,2
+equ $1,3
 mov $0,$1

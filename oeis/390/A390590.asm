@@ -11,10 +11,9 @@ lpb $0
   add $2,2
   add $2,$0
   bin $2,$0
-  add $0,1
-  trn $0,2
   bin $3,0
   mul $3,$2
+  trn $0,1
   add $1,$3
 lpe
 mov $0,$1

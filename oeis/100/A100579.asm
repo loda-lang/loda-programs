@@ -1,6 +1,7 @@
 ; A100579: Numerator of the best rational approximation to the decimal representation of the digital roots of m^n, m=1,2,..
 ; Submitted by Science United
 ; 1,125,7,49,158,17,58,2,1,1,125,7,49,158,17,58,2,1,1,125,7,49,158,17,58,2,1,1,125,7,49,158,17,58,2,1,1,125,7,49,158,17,58,2,1,1,125,7,49,158,17,58,2,1,1,125,7,49,158,17,58,2,1,1,125,7,49,158,17
+; Formula: a(n) = a(n-9), a(9) = 1, a(8) = 2, a(7) = 58, a(6) = 17, a(5) = 158, a(4) = 49, a(3) = 7, a(2) = 125, a(1) = 1, a(0) = 1
 
 #offset 1
 

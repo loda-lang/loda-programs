@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,178837 ; Indices k such that the sums of the digits of Fibonacci(k) are prime numbers.
+seq $0,178837 ; Indices k such that the sum of the digits of Fibonacci(k) is a prime number.
 sub $0,2
 seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
 sub $0,1981

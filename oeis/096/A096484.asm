@@ -1,7 +1,7 @@
 ; A096484: Integer part of the square root of (2n-1)-th decimal repunit.
 ; Submitted by Science United
 ; 1,10,105,1054,10540,105409,1054092,10540925,105409255,1054092553,10540925533,105409255338,1054092553389,10540925533894,105409255338945,1054092553389459,10540925533894597,105409255338945977
-; Formula: a(n) = truncate(sqrtint(truncate(10^(2*n-1)))/3)
+; Formula: a(n) = floor(sqrtint(10^(2*n-1))/3)
 
 #offset 1
 

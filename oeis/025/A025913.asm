@@ -1,4 +1,4 @@
-; A025913: Expansion of 1/((1-x^7)(1-x^9)(1-x^11)).
+; A025913: Expansion of 1/((1-x^7)*(1-x^9)*(1-x^11)).
 ; Submitted by Simon Strandgaard
 ; 1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,2,0,1,1,1,1,0,2,0,2,1,2,1,1,2,1,2,1,3,1,2,2,2,2,2,3,2,3,2,3,2,3,3,3,3,3,4,3,4,3,4,3,4,4,4,5,4,5,4,5,4,5,5,5,6,5,6,5,6,6,6,6
 
@@ -8,7 +8,14 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
+  mov $4,$2
+  mul $2,2
+  add $2,7
+  div $2,7
+  mul $4,3
+  add $4,10
+  div $4,11
+  sub $2,$4
   add $1,$2
   mov $3,6
 lpe

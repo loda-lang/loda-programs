@@ -29,7 +29,16 @@ lpb $2
   sub $5,$4
   add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $8,$7
+  add $8,1
+  bin $8,2
+  sub $0,$8
+  seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mul $0,$5
   add $1,$0
   mov $4,$5

@@ -1,7 +1,7 @@
 ; A127641: A127640 * A051731 as infinite lower triangular matrices.
 ; Submitted by fzs600
 ; 2,3,3,5,0,5,7,7,0,7,11,0,0,0,11,13,13,13,0,0,13,17,0,0,0,0,0,17,19,19,0,19,0,0,0,19,23,0,23,0,0,0,0,0,23,29,29,0,0,29,0,0,0,0,29,31,0,0,0,0,0,0,0,0,0,31,37,37,37,37,0,37,0,0,0,0,0,37,41,0
-; Formula: a(n) = A005145(n)*truncate(gcd(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))
+; Formula: a(n) = A005145(n)*truncate(gcd(floor((sqrtint(8*n)-1)/2)+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))
 
 #offset 1
 

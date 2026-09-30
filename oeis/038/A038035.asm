@@ -19,8 +19,7 @@ lpb $1
   add $5,$6
   add $7,1
   add $2,$6
-  mul $4,0
-  add $4,$5
+  mov $4,$5
   mul $4,$7
   mov $5,$3
   mul $6,$1

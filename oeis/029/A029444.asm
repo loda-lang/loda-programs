@@ -7,7 +7,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,25925 ; Expansion of 1/((1-x^9)(1-x^11)(1-x^12)).
+  seq $2,25925 ; Expansion of 1/((1-x^9)*(1-x^11)*(1-x^12)).
   trn $0,8
   add $1,$2
 lpe

@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,40 ; The prime numbers.
 mul $0,$1
 seq $1,61802 ; Sum of n-th row of triangle of primes: 2; 2 3 2; 2 3 5 3 2; 2 3 5 7 5 3 2; ...; where n-th row contains 2n+1 terms.

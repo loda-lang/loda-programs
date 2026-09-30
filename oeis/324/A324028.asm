@@ -1,4 +1,4 @@
-; A324028: One of the two successive approximations up to 5^n for 5-adic integer sqrt(-6). This is the 3 (mod 5) case (except for n = 0).
+; A324028: One of the two successive approximations up to 5^n for the 5-adic integer sqrt(-6). This is the 3 (mod 5) case (except for n = 0).
 ; Submitted by Egon Olsen
 ; 0,3,13,88,463,1713,4838,36088,36088,426713,6286088,45348588,240661088,973082963,2193786088,20504332963,51021911088,51021911088,1576900817338,5391598082963,43538570739213,138906002379838,1092580318786088,1092580318786088,1092580318786088
 ; Formula: a(n) = ((2*a(n-1))^2+a(n-1)+24)%(5*5^(n-1)), a(3) = 88, a(2) = 13, a(1) = 3, a(0) = 0

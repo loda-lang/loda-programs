@@ -5,9 +5,18 @@
 #offset 1
 
 lpb $0
+  mov $6,$0
+  dif $6,$0
+  add $6,1
+  mov $5,$0
+  max $5,1
+  seq $5,40 ; The prime numbers.
+  mul $6,$5
+  mov $4,1
+  add $4,$6
   mov $2,$0
-  add $2,1
-  seq $2,1747 ; 2 together with primes multiplied by 2.
+  mov $2,$4
+  sub $2,1
   mov $3,$2
   mul $3,2
   mul $3,$2
@@ -16,7 +25,6 @@ lpb $0
   div $2,16
 lpe
 mov $1,$2
-sub $1,1
-trn $1,2
+trn $1,3
 mov $0,$1
 add $0,3

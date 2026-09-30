@@ -1,6 +1,7 @@
 ; A125520: a(n) is the maximal difference between two distinct n-digit numbers with the property that when one of them is typed into a calculator and rotated 180 degrees, the other one is seen.
 ; Submitted by loader3229
 ; 3,75,825,8835,89235,898335,8992335,89983335,899923335,8999833335,89999233335,899998333335,8999992333335,89999983333335,899999923333335,8999999833333335,89999999233333335,899999998333333335,8999999992333333335,89999999983333333335,899999999923333333335
+; Formula: a(n) = b(n-1), b(n) = 100*b(n-4)+11*b(n-1)-110*b(n-3), b(7) = 89983335, b(6) = 8992335, b(5) = 898335, b(4) = 89235, b(3) = 8835, b(2) = 825, b(1) = 75, b(0) = 3
 
 #offset 1
 

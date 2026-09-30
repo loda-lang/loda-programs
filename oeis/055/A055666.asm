@@ -1,6 +1,7 @@
 ; A055666: Number of inequivalent Eisenstein-Jacobi primes of successive norms (indexed by A055664).
 ; Submitted by Rhodan71
 ; 1,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+; Formula: a(n) = truncate(((0==A055664(n))+12*A001817(A055664(n))-6*A000005(if(A055664(n)==0,0,A055664(n)/(3^valuation(A055664(n),3)))))/6)
 
 #offset 1
 

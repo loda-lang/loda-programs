@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 lpb $2
   mov $3,$1
   add $3,2
@@ -14,9 +13,8 @@ lpb $2
   div $3,2
   mul $3,2
   seq $3,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-  sub $3,1
   add $3,$4
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $1,1

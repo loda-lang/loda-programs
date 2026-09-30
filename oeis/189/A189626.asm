@@ -4,16 +4,13 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,90
+add $2,89
 lpb $2
   sub $2,1
   add $3,1
   seq $3,189624 ; Fixed point of the morphism 0->001, 1->10.
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $0,$3
   add $1,1
   max $3,$1

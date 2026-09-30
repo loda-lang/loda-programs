@@ -5,9 +5,9 @@
 
 #offset 1
 
-add $0,2
 mov $1,$0
-sub $0,1
+add $0,1
+add $1,2
 seq $1,173073 ; (n-th nonnegative nonprime) minus (n-1).
 add $1,$0
 mov $0,$1

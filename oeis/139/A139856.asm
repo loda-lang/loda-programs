@@ -11,10 +11,17 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,107003 ; Primes of the form 24n + 5.
+  seq $3,107003 ; Primes of the form 24*k + 5.
   sub $3,1
   mov $5,$3
-  seq $3,14024 ; Inverse of 15th cyclotomic polynomial.
+  mov $6,$3
+  mod $6,5
+  leq $6,2
+  div $3,5
+  add $3,2
+  mod $3,3
+  sub $3,1
+  mul $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

@@ -18,8 +18,7 @@ lpb $4
   seq $0,54055 ; Largest digit of n.
   max $0,5
   mul $1,$0
-  add $1,3
-  equ $1,8
+  equ $1,5
   add $3,$1
 lpe
 mov $0,$3

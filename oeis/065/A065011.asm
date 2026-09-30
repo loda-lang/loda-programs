@@ -13,9 +13,9 @@ lpb $2
   mov $5,$1
   seq $5,91453 ; Triangular array T(n,k) read by rows in which row n consists of the numbers floor(2n/k), k=1,2,...,2n+1.
   mul $5,-1
-  add $5,2
   mov $3,$5
-  equ $3,-6
+  equ $3,-8
+  add $5,2
   sub $0,$3
   mov $4,$0
   max $4,0

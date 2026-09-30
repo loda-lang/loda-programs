@@ -9,7 +9,7 @@ lpb $0
   add $1,$4
   mov $3,$0
   lpb $3
-    mul $3,0
+    mov $3,0
     mov $4,$0
     min $4,1
   lpe

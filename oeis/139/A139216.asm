@@ -5,11 +5,9 @@
 
 #offset -1
 
-add $0,1
 mov $1,$0
-sub $0,1
 seq $0,187144 ; McKay-Thompson series of class 12I for the Monster group with a(0) = 1.
-add $1,2
+add $1,3
 mod $1,3
 sub $1,1
 mul $1,$0

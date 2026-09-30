@@ -1,7 +1,7 @@
 ; A228524: Triangle read by rows: T(n,k) = total number of occurrences of parts k in the n-th section of the set of compositions (ordered partitions) of any integer >= n.
 ; Submitted by mmonnin
 ; 1,1,1,3,1,1,7,3,1,1,16,7,3,1,1,36,16,7,3,1,1,80,36,16,7,3,1,1,176,80,36,16,7,3,1,1,384,176,80,36,16,7,3,1,1,832,384,176,80,36,16,7,3,1,1,1792,832,384,176,80,36,16,7,3,1,1,3840,1792,832,384,176,80,36,16,7,3,1,1
-; Formula: a(n) = truncate((truncate(2^(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)))*(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+4)+4)/8)
+; Formula: a(n) = truncate(((-n+binomial(floor((sqrtint(8*n)+3)/2),2)+4)*if((-n+binomial(floor((sqrtint(8*n)+3)/2),2))<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)+3)/2),2)))+4)/8)
 
 #offset 1
 

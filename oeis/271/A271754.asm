@@ -26,7 +26,7 @@ mov $3,$0
 lpb $3
   add $2,1
   mov $4,$2
-  seq $4,173961 ; Averages of two consecutive even cubes: (n^3+(n+2)^3)/2.
+  seq $4,173961 ; Averages of two consecutive even cubes: (n^3 + (n+2)^3)/2.
   add $2,19
   mul $$2,$4
   add $1,$$2

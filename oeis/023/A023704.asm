@@ -11,8 +11,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,81603 ; Number of 2's in ternary representation of n.
-  sub $3,1
-  equ $3,5
+  equ $3,6
   sub $0,$3
   add $1,3
   mov $4,$0

@@ -4,9 +4,8 @@
 
 #offset 1
 
+seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
 mov $1,$0
-seq $1,2865 ; Number of partitions of n that do not contain 1 as a part.
-mov $0,$1
 mov $2,1
 lpb $2
   mov $2,$0

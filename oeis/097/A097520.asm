@@ -8,7 +8,7 @@ seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
 lpb $0
   mov $1,$0
-  seq $1,177069 ; 11^n + n^11.
+  seq $1,177069 ; a(n) = 11^n + n^11.
   div $0,$1
 lpe
 mov $0,$1

@@ -1,7 +1,7 @@
 ; A110608: Number triangle T(n,k) = binomial(n,k)*binomial(2n,n-k).
 ; Submitted by loader3229
 ; 1,2,1,6,8,1,20,45,18,1,70,224,168,32,1,252,1050,1200,450,50,1,924,4752,7425,4400,990,72,1,3432,21021,42042,35035,12740,1911,98,1,12870,91520,224224,244608,127400,31360,3360,128,1,48620,393822,1145664,1559376,1079568,385560,68544,5508,162,1,184756,1679600,5668650,9302400,8139600,3907008,1017450,136800,8550,200,1,705432,7113106,27358100,52762050,56279520,34471206,12166308,2413950,254100,12705,242,1,2704156,29953728
-; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(2*truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n)
+; Formula: a(n) = binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(2*floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n)
 
 add $0,1
 mov $2,$0

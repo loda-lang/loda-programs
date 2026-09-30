@@ -28,7 +28,7 @@ mov $3,$4
 bin $3,$0
 sub $4,$0
 mov $0,$4
-pow $4,0
+mov $4,1
 add $4,$5
 lpb $0
   sub $0,1

@@ -1,6 +1,7 @@
 ; A122840: a(n) is the number of 0's at the end of n when n is written in base 10.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
+; Formula: a(n) = valuation(n,10)
 
 #offset 1
 

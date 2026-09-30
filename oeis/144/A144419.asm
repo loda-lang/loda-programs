@@ -20,10 +20,9 @@ lpb $2
   sub $6,$3
   mov $7,0
   gcd $7,$6
+  mov $5,$7
+  sub $5,1
   mov $3,$7
-  sub $3,1
-  mov $5,$3
-  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

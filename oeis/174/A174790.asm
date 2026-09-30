@@ -16,7 +16,7 @@ bin $1,$0
 bin $1,2
 mul $1,2
 mov $0,$2
-pow $2,0
+mov $2,1
 fac $2,$0
 mul $1,$2
 mov $0,$1

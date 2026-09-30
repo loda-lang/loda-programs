@@ -9,7 +9,7 @@ lpb $0
   mov $3,$0
   dgs $3,2
   add $3,$4
-  pow $4,0
+  mov $4,1
   mov $2,2
   pow $2,$3
   sub $0,1

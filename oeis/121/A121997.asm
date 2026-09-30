@@ -1,7 +1,7 @@
 ; A121997: Count up to n, n times.
 ; Submitted by loader3229
 ; 1,1,2,1,2,1,2,3,1,2,3,1,2,3,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6,1
-; Formula: a(n) = -truncate((-truncate(binomial(-2*truncate((sqrtnint(24*n,3)-1)/2),3)/(-4))+n-1)/(truncate((sqrtnint(24*n,3)-1)/2)+1))*(truncate((sqrtnint(24*n,3)-1)/2)+1)-truncate(binomial(-2*truncate((sqrtnint(24*n,3)-1)/2),3)/(-4))+n
+; Formula: a(n) = -truncate((-truncate(binomial(-2*floor((sqrtnint(24*n,3)-1)/2),3)/(-4))+n-1)/(floor((sqrtnint(24*n,3)-1)/2)+1))*(floor((sqrtnint(24*n,3)-1)/2)+1)-truncate(binomial(-2*floor((sqrtnint(24*n,3)-1)/2),3)/(-4))+n
 
 #offset 1
 

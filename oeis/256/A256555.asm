@@ -16,9 +16,8 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
-    add $7,1
-    seq $7,75743 ; For all numbers of the form 6 +- 1 starting with 5,7,11,13,..., '1' indicates prime and '0' indicates composite.
+    max $7,1
+    seq $7,75743 ; For all numbers of the form 6*k +- 1 starting with 5, '1' indicates prime and '0' indicates composite.
     mov $9,10
     add $9,$5
     min $10,$0

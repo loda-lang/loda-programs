@@ -7,14 +7,13 @@
 sub $0,2
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,187970 ; Positions of 0 in A187969; complement of A187971.
   pow $1,2
   mul $1,2
   mov $3,$1
   nrt $3,2
-  mul $0,0
+  mov $0,0
   mov $1,$3
   add $2,2
 lpe

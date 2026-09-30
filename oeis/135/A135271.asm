@@ -1,7 +1,7 @@
 ; A135271: Row 7 of A038207.
 ; Submitted by Ralfy
 ; 128,448,672,560,280,84,14,1
-; Formula: a(n) = truncate(2^(-n+7))*binomial(7,n)
+; Formula: a(n) = binomial(7,n)*if((-n+7)<=(-1),0,2^(-n+7))
 
 mov $2,7
 sub $2,$0

@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,3595 ; Numbers of the form 5^i*7^j with i, j >= 0.
 mov $1,$0
-seq $1,3595 ; Numbers of the form 5^i*7^j with i, j >= 0.
-mov $0,$1
 mul $0,35

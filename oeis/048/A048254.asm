@@ -11,8 +11,7 @@ lpb $2
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

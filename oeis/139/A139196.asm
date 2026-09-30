@@ -5,6 +5,6 @@
 
 #offset 3
 
-seq $0,131491 ; 2*prime(n)!.
+seq $0,131491 ; a(n) = 2*prime(n)!.
 sub $0,1
 div $0,16

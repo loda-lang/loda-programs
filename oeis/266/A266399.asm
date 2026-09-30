@@ -17,8 +17,9 @@ lpb $2
   pow $6,$5
   sub $6,1
   bxo $3,$6
-  seq $3,265754 ; Reduced frequency counts for A004001: a(n) = A265332(n+1) - A036987(n).
-  trn $3,2
+  sub $3,1
+  seq $3,293959 ; Construct a triangle T(n,k) (0 <= k <= n) of strings of integers, where T(0,0) = {0}, T(n,n) = {n}, and otherwise T(n,k) is the concatenation of T(n-1,k-1) and T(n-1,k). The sequence is obtained by reading across the rows of the triangle, concatenating the successive strings.
+  trn $3,1
   min $3,1
   sub $0,$3
   add $1,1

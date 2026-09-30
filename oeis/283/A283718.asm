@@ -11,8 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,343638 ; a(n) = (Sum of decimal digits of 3*n) / 3.
-  sub $3,3
-  equ $3,6
+  equ $3,9
   sub $0,$3
   add $1,9
   mov $4,$0

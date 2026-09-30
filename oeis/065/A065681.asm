@@ -1,7 +1,7 @@
 ; A065681: Number of primes <= prime(n) which begin with a 2.
 ; Submitted by [AF] Hydrosaure
 ; 1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19
-; Formula: a(n) = b(n-1), b(n) = ((A077648(n+1)-1)==1)+b(n-1), b(0) = 1
+; Formula: a(n) = b(n-1), b(n) = ((A004086(A000040(n+1))%10)==2)+b(n-1), b(0) = 1
 
 #offset 1
 
@@ -10,9 +10,10 @@ sub $0,1
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,77648 ; Initial digits of prime numbers.
-  sub $2,1
-  equ $2,1
+  seq $2,40 ; The prime numbers.
+  seq $2,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  mod $2,10
+  equ $2,2
   sub $0,1
   add $1,$2
 lpe

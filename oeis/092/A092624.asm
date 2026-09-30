@@ -17,8 +17,7 @@ lpb $2
   seq $5,193238 ; Number of prime digits in decimal representation of n.
   add $3,$7
   sub $3,$5
-  add $3,1
-  equ $3,0
+  equ $3,-1
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -10,8 +10,7 @@ lpb $2
   dgs $3,10
   trn $3,1
   seq $3,284504 ; Expansion of Product_{k>=0} (1 - x^(7*k+6)) in powers of x.
-  add $3,1
-  equ $3,2
+  equ $3,1
   sub $5,1
   sub $0,$3
   sub $1,$5

@@ -9,6 +9,5 @@ mov $1,$0
 seq $1,211776 ; a(n) = Product_{d | n} tau(d).
 seq $0,206032 ; a(n) = Product_{d|n} sigma(d) where sigma = A000203.
 gcd $1,$0
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,6667 ; Number of tripling steps to reach 1 from n in '3x+1' problem, or -1 if 1 is never reached.
-  add $3,2
-  equ $3,6
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -5,18 +5,16 @@
 #offset 1
 
 mov $1,$0
-add $1,1
-mov $3,$1
-sub $1,1
+mov $3,$0
+add $3,1
 pow $3,8
 lpb $3
-  mov $5,$2
-  add $5,1
-  mov $7,$5
-  sub $5,1
+  mov $7,$2
+  add $7,1
   seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $7,1
-  sub $7,$5
+  sub $7,$2
+  mov $5,$2
   add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $5,$7

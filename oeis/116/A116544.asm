@@ -19,8 +19,7 @@ lpb $2
   sub $6,$7
   bin $3,$6
   mul $3,2
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,$5
   add $1,1

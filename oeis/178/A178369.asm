@@ -21,8 +21,7 @@ lpb $2
   neq $6,0
   div $3,$5
   add $3,$6
-  sub $3,8
-  equ $3,1
+  equ $3,9
   sub $0,$3
   add $1,1
   mov $4,$0

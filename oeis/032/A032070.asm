@@ -1,6 +1,7 @@
 ; A032070: Number of reversible strings with n labeled beads of 3 colors, no palindromes of more than 1 bead.
 ; Submitted by loader3229
 ; 3,6,54,864,12960,252720,5307120,130636800,3527193600,106697606400,3521021011200,127105948569600,4957131994214400,208390202679859200,9377559120593664000,450260112212951040000
+; Formula: a(n) = (3*truncate((3^(n-1)-3^floor((n-1)/2)-1)/2)+3)*n!
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A365336: The sum of exponentially odd divisors of the square root of the largest square dividing n.
 ; Submitted by KetamiNO [YouTube]
 ; 1,1,1,3,1,1,1,3,4,1,1,3,1,1,1,3,1,4,1,3,1,1,1,3,6,1,4,3,1,1,1,3,1,1,1,12,1,1,1,3,1,1,1,3,4,1,1,3,8,6,1,3,1,4,1,3,1,1,1,3,1,1,4,11,1,1,1,3,1,1,1,12,1,1,6,3,1,1,1,3
-; Formula: a(n) = A033634(gcd(0,truncate((n-1)/A019554(max(0,n-1)+1))+1))
+; Formula: a(n) = A033634(gcd(0,floor((n-1)/A019554(max(0,n-1)+1))+1))
 
 #offset 1
 

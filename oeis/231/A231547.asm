@@ -10,8 +10,20 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,53246 ; First differences of chowla(n).
+  sub $3,1
+  mov $5,$1
+  equ $5,0
+  add $3,$5
+  mov $6,2
+  add $6,$3
+  mov $7,$6
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $8,$6
+  add $8,1
+  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $8,1
+  sub $8,$7
+  mov $3,$8
   sub $3,1
   trn $3,$1
   min $3,1

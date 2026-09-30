@@ -1,4 +1,4 @@
-; A161052: Number of partitions of n into powers of two where every part appears at least 3 times
+; A161052: Number of partitions of n into powers of two where every part appears at least 3 times.
 ; Submitted by Simon Strandgaard (M1)
 ; 0,0,1,1,1,2,1,2,2,3,3,5,4,5,6,8,7,9,9,12,11,14,14,19,17,21,22,27,26,32,31,39,37,44,45,54,52,61,61,73,70,81,82,96,93,107,107,126,121,138,140,161,157,179,178,205,200,226,227,259,253,284,285,324,316,353,355,399,392,437,436,490,481,533,535,596,587,648,648,721
 

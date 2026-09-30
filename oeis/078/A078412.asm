@@ -1,6 +1,7 @@
-; A078412: a(0) = 5, a(1) = 8; for n >1, a(n)=(a(n-1)+a(n-2))/3^n, where 3^n is the highest power of 3 dividing a(n-1)+a(n-2).
+; A078412: a(0) = 5, a(1) = 8; for n > 1, a(n)=(a(n-1)+a(n-2))/3^k, where 3^k is the highest power of 3 dividing a(n-1)+a(n-2).
 ; Submitted by mkferrysr
 ; 5,8,13,7,20,1,7,8,5,13,2,5,7,4,11,5,16,7,23,10,11,7,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2
+; Formula: a(n) = if((a(n-1)+a(n-2))==0,0,(a(n-1)+a(n-2))/(3^valuation(a(n-1)+a(n-2),3))), a(1) = 8, a(0) = 5
 
 mov $1,5
 mov $3,3

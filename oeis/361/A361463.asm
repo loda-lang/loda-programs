@@ -1,15 +1,27 @@
 ; A361463: a(n) = 1 if A135506(n) == 3 (mod 4), otherwise 0.
 ; Submitted by Sphynx
 ; 0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0
-; Formula: a(n) = truncate((-4*truncate(truncate((n+1)/gcd(A135504(n),n+1))/4)+truncate((n+1)/gcd(A135504(n),n+1))+1)/2)-1
 
 #offset 1
 
 mov $2,$0
 add $2,1
-seq $0,135504 ; a(1)=1; for n>1, a(n) = a(n-1) + lcm(a(n-1),n).
-mov $1,$0
+mov $3,1
+mov $4,1
+sub $0,1
+lpb $0
+  sub $0,1
+  add $4,1
+  mov $6,$4
+  gcd $6,$3
+  mov $5,$4
+  div $5,$6
+  add $5,1
+  mul $3,$5
+lpe
+mov $1,$3
 gcd $1,$2
+mov $0,$3
 mov $0,$2
 div $0,$1
 mod $0,4

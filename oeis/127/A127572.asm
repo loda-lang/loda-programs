@@ -1,13 +1,27 @@
 ; A127572: Triangle, T(n,k) = sigma(k) * n/k if k|n, T(n,k) = 0 otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,3,0,4,4,6,0,7,5,0,0,0,6,6,9,8,0,0,12,7,0,0,0,0,0,8,8,12,0,14,0,0,0,15,9,0,12,0,0,0,0,0,13,10,15,0,0,12,0,0,0,0,18
-; Formula: a(n) = A126988(n)*A000203(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)
 
 #offset 1
 
 mov $1,$0
-seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+mov $4,$1
+mov $11,0
+bin $1,2
+mov $5,$0
+sub $5,$1
+mov $7,$4
+div $7,$5
+mov $6,$4
+mod $6,$5
+equ $6,0
+mul $6,$7
 sub $0,1
+mov $1,$6
 mov $3,$0
 mul $3,8
 add $3,1
@@ -18,6 +32,35 @@ bin $3,2
 sub $0,$3
 add $0,1
 mov $2,$0
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $0,$2
-mul $0,$1
+mov $10,$0
+sub $10,1
+mov $9,$0
+dir $9,2
+mov $14,$9
+mov $13,$9
+nrt $13,2
+lpb $13
+  max $13,1
+  mov $15,$9
+  mod $15,$13
+  equ $15,0
+  mov $12,$9
+  div $12,$13
+  add $12,$13
+  mul $12,$15
+  add $11,$12
+  sub $13,1
+lpe
+nrt $9,2
+mov $13,$9
+pow $13,2
+sub $13,$14
+equ $13,0
+mul $9,$13
+sub $11,$9
+mov $8,$0
+bxo $8,$10
+mul $8,$11
+mov $0,$8
+mul $0,$6
+mov $2,$8

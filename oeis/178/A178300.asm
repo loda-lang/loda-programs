@@ -1,7 +1,7 @@
-; A178300: Triangle T(n,k) = binomial(n+k-1,n) read by rows, 1 <= k <= n.
+; A178300: Triangle T(n, k) = binomial(n+k-1, n) read by rows, 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,1,3,1,4,10,1,5,15,35,1,6,21,56,126,1,7,28,84,210,462,1,8,36,120,330,792,1716,1,9,45,165,495,1287,3003,6435,1,10,55,220,715,2002,5005,11440,24310,1,11,66,286,1001,3003,8008,19448,43758,92378,1,12,78,364,1365,4368,12376,31824,75582,167960,352716,1,13,91,455,1820,6188,18564,50388,125970,293930,646646,1352078
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n,truncate((sqrtint(8*n)-1)/2)+1)
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n)-1)/2),2)+n,floor((sqrtint(8*n)-1)/2)+1)
 
 #offset 1
 

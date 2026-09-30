@@ -1,7 +1,6 @@
 ; A208855: Array of even catheti of primitive Pythagorean triangles when read by SW-NE diagonals.
 ; Submitted by loader3229
-; 4,12,8,20,24,12,28,40,0,16,36,56,60,48,20,44,72,84,80,60,24,52,88,0,112,0,0,28,60,104,132,144,140,120,84,32,68,120,156,176,180,168,140,96,36,76,136,0,208,220,0,0,160,0,40
-; Formula: a(n) = 4*truncate(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2*truncate((sqrtint(8*n)-1)/2)-2*n+3))/truncate(gcd(2*truncate((sqrtint(8*n)-1)/2)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+3,(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2*truncate((sqrtint(8*n)-1)/2)-2*n+3))^((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2*truncate((sqrtint(8*n)-1)/2)-2*n+3))))
+; 4,12,8,20,24,12,28,40,0,16,36,56,60,48,20,44,72,84,80,60,24,52,88,0,112,0,0,28,60,104,132,144,140,120,84,32,68,120,156,176,180,168,140,96,36,76,136,0,208,220,0,0,160,0,40,84,152,204,240,260,264,252,224,180,120,44,92,168,228,272,0,312,308,288,252,0,132,48,100,184
 
 #offset 1
 

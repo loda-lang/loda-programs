@@ -17,11 +17,9 @@ lpb $2
   add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,$5
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $3,4
-  equ $3,0
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

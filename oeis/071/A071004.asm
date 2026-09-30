@@ -1,4 +1,4 @@
-; A071004: Binary expansion of AGM(1,sqrt(2)) where AGM(x,y) denote the arithmetic-geometric mean of (x,y).
+; A071004: Binary expansion of AGM(1,sqrt(2)) where AGM(x,y) denotes the arithmetic-geometric mean of (x,y).
 ; Submitted by ckrause
 ; 1,0,0,1,1,0,0,1,0,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,0,0,0,1,1,0,0,1,1,1,1,1,0,1,0,0,0,1,0,1,1
 

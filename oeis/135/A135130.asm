@@ -10,7 +10,10 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,7955 ; Product of divisors of n.
+  mov $7,$5
+  seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  pow $5,$7
+  nrt $5,2
   mov $3,$1
   add $3,1
   seq $3,211776 ; a(n) = Product_{d | n} tau(d).

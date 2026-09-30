@@ -16,7 +16,7 @@ lpb $1
 lpe
 mov $1,$6
 sub $1,1
-mov $2,$1
-equ $2,0
+mov $2,$6
+equ $2,1
 add $1,$2
 add $0,$1

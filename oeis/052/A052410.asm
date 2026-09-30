@@ -14,6 +14,5 @@ seq $0,175070 ; a(n) is the sum of perfect divisors of n - n, where a perfect di
 add $4,$0
 mov $0,$4
 sub $0,$3
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

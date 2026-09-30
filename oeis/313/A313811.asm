@@ -6,9 +6,8 @@
 mov $1,3
 add $1,$0
 div $1,7
-mul $0,9
-sub $0,1
-mul $0,6
+mul $0,54
+sub $0,6
 div $0,11
 add $0,1
 add $0,$1

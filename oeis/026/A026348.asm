@@ -1,6 +1,7 @@
 ; A026348: Greatest k such that s(k) = n, where s = A026346.
 ; Submitted by HeatForScience
 ; 2,6,9,11,15,18,22,26,28,31,35,37,41,44,46,50,53,55,59,63,66,70,72,75,79,83,85,88,92,94,98,102,105,107,111,114,118,122,124,127,131,133,136,140,142,146,149,151,155,159,162,166,168,171
+; Formula: a(n) = floor(e(n)/2)+floor(floor(e(n)/2)/2)+n, b(n) = if(floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2)==0,truncate((-4*c(n-1)+b(n-1)+1)/4),if((truncate((-4*c(n-1)+b(n-1)+1)/4)%floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2))==0,truncate((-4*c(n-1)+b(n-1)+1)/4)/floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2),truncate((-4*c(n-1)+b(n-1)+1)/4))), b(3) = -67, b(2) = -15, b(1) = 0, b(0) = 0, c(n) = 4*gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)*c(n-1), c(3) = 256, c(2) = 64, c(1) = 16, c(0) = 1, d(n) = floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2), d(3) = 0, d(2) = 0, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 8, e(2) = 6, e(1) = 2, e(0) = 0
 
 #offset 1
 

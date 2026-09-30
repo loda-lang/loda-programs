@@ -13,7 +13,12 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
+  mov $5,$0
+  seq $5,6005 ; The odd prime numbers together with 1.
+  sub $5,1
+  mov $0,$5
+  mul $0,4
+  add $0,4
   add $3,$0
   add $4,$3
 lpe

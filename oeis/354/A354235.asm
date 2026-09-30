@@ -15,8 +15,7 @@ lpb $2
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
   mod $3,3
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

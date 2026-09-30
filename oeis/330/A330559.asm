@@ -9,7 +9,10 @@ sub $1,$0
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,80378 ; Residues mod 4 of the n-th difference between consecutive primes.
+  seq $2,40 ; The prime numbers.
+  seq $2,13636 ; a(n) = n*nextprime(n).
+  mod $2,4
+  sub $2,1
   sub $0,1
   add $1,$2
 lpe

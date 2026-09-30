@@ -1,7 +1,7 @@
 ; A374258: Square array: T(n,k) = ((3^(n+1) + 1)^(k-1) + 2)/3, read by descending antidiagonals.
 ; Submitted by loader3229
 ; 1,4,1,34,10,1,334,262,28,1,3334,7318,2242,82,1,33334,204886,183790,19846,244,1,333334,5736790,15070726,4842262,177634,730,1,3333334,160630102,1235799478,1181511766,129672334,1595782,2188,1,33333334,4497642838,101335557142,288288870742,94660803334,3491569558,14353282,6562,1,333333334,125933999446,8309515685590,70342484460886,69102386433334,7639554191446,94186232110,129153286,19684,1,3333333334,3526151984470,681380286218326,17163566208456022,50444742096333334,16715344570882390,618050055101446
-; Formula: a(n) = truncate(truncate((truncate(3^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))+1)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))/3)+1
+; Formula: a(n) = floor(if(((if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,3^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))+1)^2)==1,(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,3^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))+1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1),if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,3^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1))+1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)))/3)+1
 
 #offset 1
 

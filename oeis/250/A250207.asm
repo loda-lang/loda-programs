@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,73103 ; Number of solutions to x^4 == 1 (mod n).
-add $1,1
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 div $1,$0
 mov $0,$1

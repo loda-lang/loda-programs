@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 mul $0,2
 seq $0,7844 ; Least positive integer k for which 3^n divides k!.
 mul $0,2

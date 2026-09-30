@@ -18,7 +18,10 @@ lpb $2
   seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
   mul $3,$6
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
-  seq $3,7955 ; Product of divisors of n.
+  mov $7,$3
+  seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  pow $3,$7
+  nrt $3,2
   mul $3,2
   mov $5,-1
   add $5,$3

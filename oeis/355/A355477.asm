@@ -1,7 +1,7 @@
 ; A355477: Maximum number of skew-tetrominoes that can be packed into an n X n square.
 ; Submitted by BrandyNOW
-; 0,0,1,3,4,8,9,14,16,23,25,33,36,46,49,60,64,77,81,96,100
-; Formula: a(n) = truncate((truncate(((n-1)*((n-1)%2+n-1))/2)+truncate((sqrtint(n-1)*((n-1)%2))/2))/2)
+; 0,0,1,3,4,8,9,14,16,23,25,33,36,46,49,60,64,77,81,96,100,116,121,139,144,163,169,190,196
+; Formula: a(n) = floor((floor(((n-1)*((n-1)%2+n-1))/2)+floor((sqrtint(n-1)*((n-1)%2))/2))/2)
 
 #offset 1
 

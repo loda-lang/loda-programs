@@ -1,6 +1,7 @@
 ; A101608: Solution to Tower of Hanoi puzzle encoded in pairs with the moves (1,2),(2,3),(3,1),(2,1),(3,2),(1,3). The disks are moved from peg 1 to 2. For a tower of k disks use the first 2^k-1 number pairs.
 ; Submitted by biodoc
 ; 1,2,1,3,2,3,1,2,3,1,3,2,1,2,1,3,2,3,2,1,3,1,2,3,1,2,1,3,2,3,1,2,3,1,3,2,1,2,3,1,2,3,2,1,3,1,3,2,1,2,1,3,2,3,1,2,3,1,3,2,1,2,1,3,2,3,2,1,3,1,2,3,1,2,1,3,2,3,2,1
+; Formula: a(n) = (2*floor((n-1)/2)+gcd(64,if(((n-1)%2)==0,(n-1)/2,n-1)+1)+2)%3+1
 
 #offset 1
 

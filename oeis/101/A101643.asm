@@ -12,9 +12,8 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  seq $0,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
   mov $4,$0
-  seq $4,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
-  mov $0,$4
   add $0,1
   seq $0,1654 ; Golden rectangle numbers: F(n) * F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
   mul $0,2

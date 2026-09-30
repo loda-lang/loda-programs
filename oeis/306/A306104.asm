@@ -14,8 +14,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,94572 ; Number of pairs of integers x, y (of either sign) with x^2 - y^2 = n.
-  sub $3,10
-  trn $3,5
+  trn $3,15
   min $3,1
   sub $0,$3
   add $1,1

@@ -6,6 +6,5 @@
 #offset 1
 
 add $0,1
+seq $0,81 ; Number of unlabeled rooted trees with n nodes (or connected functions with a fixed point).
 mov $1,$0
-seq $1,81 ; Number of unlabeled rooted trees with n nodes (or connected functions with a fixed point).
-mov $0,$1

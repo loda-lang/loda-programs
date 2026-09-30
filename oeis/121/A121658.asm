@@ -12,9 +12,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,265413 ; Positions of records in A265410: a(0) = 1; for n >= 1, a(n) = 1 + A265412(n-1).
-  sub $3,2
   mov $5,$3
-  add $3,1
+  sub $5,2
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

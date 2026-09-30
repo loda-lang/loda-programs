@@ -7,9 +7,8 @@
 sub $0,1
 mov $1,8
 add $1,$0
-mul $1,2
-sub $1,1
-mul $1,5
+mul $1,10
+sub $1,5
 div $1,33
 sub $1,1
 add $1,$0

@@ -17,9 +17,9 @@ lpb $4
   bin $1,$0
   mul $1,$0
   seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
-  sub $0,1
   mov $5,$0
-  equ $5,0
+  equ $5,1
+  sub $0,1
   mov $0,$5
   mul $0,$3
   mul $1,$0

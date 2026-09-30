@@ -4,8 +4,7 @@
 
 mov $2,$0
 lpb $2
-  trn $2,1
-  add $2,1
+  max $2,1
   seq $2,60939 ; a(n) = (Sum of the first n primes) + n.
   mov $1,$2
   mov $2,0

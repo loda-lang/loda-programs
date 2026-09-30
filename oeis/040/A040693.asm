@@ -8,7 +8,6 @@ add $1,1
 gcd $0,4
 pow $0,2
 mul $0,4
-sub $0,10
-trn $0,3
+trn $0,13
 div $0,$1
 add $0,1

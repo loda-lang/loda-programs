@@ -5,8 +5,7 @@
 
 #offset 1
 
+seq $0,5835 ; Pseudoperfect (or semiperfect) numbers k: some subset of the proper divisors of k sums to k.
 mov $1,$0
-seq $1,5835 ; Pseudoperfect (or semiperfect) numbers k: some subset of the proper divisors of k sums to k.
-mov $0,$1
 div $0,2
 mul $0,4

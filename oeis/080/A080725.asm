@@ -1,6 +1,7 @@
 ; A080725: a(1) = 2; for n>1, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) == 1 mod 3".
 ; Submitted by eclipse99
 ; 2,4,5,7,10,11,13,14,15,16,19,20,22,25,28,31,32,33,34,37,38,40,41,42,43,44,45,46,47,48,49,52,55,58,59,60,61,64,65,67,70,73,76,79,82,85,88,91,94,95,96,97,98,99,100,101,102,103,106,109,112,113,114,115,118,119,121
+; Formula: a(n) = floor(e(n)/2)+1, b(n) = if(floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)/2)==0,truncate((-c(n-1)+b(n-1)-6)/4),if((truncate((-c(n-1)+b(n-1)-6)/4)%floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)/2))==0,truncate((-c(n-1)+b(n-1)-6)/4)/floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)/2),truncate((-c(n-1)+b(n-1)-6)/4)))+2, b(3) = -76, b(2) = -35, b(1) = -8, b(0) = 0, c(n) = 2*gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)*c(n-1), c(3) = 1088, c(2) = 272, c(1) = 136, c(0) = 34, d(n) = 2*floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)/2), d(3) = 2, d(2) = 0, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 8, e(2) = 6, e(1) = 2, e(0) = 0
 
 #offset 1
 

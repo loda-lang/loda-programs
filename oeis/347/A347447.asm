@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,84114 ; Number of divisions when calculating A084110(n).
 mov $1,$0
 equ $1,0

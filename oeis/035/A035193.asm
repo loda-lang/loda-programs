@@ -15,9 +15,8 @@ log $1,2
 mod $1,2
 sub $0,1
 pow $0,$1
-add $0,1
 mov $4,$0
-sub $0,1
+add $4,1
 mov $5,1
 mov $6,$0
 lpb $6

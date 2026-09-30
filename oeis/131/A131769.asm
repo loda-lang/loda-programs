@@ -1,6 +1,7 @@
 ; A131769: Number of connected components in the double Bruhat cells for simple Lie groups of type B_n (or C_n).
 ; Submitted by loader3229
 ; 8,30,72,160,352,768,1664,3584,7680,16384,34816,73728,155648,327680,688128,1441792,3014656,6291456,13107200,27262976
+; Formula: a(n) = b(n-2), b(n) = 4*b(n-1)-4*b(n-2), b(6) = 1664, b(5) = 768, b(4) = 352, b(3) = 160, b(2) = 72, b(1) = 30, b(0) = 8
 
 #offset 2
 
@@ -10,7 +11,7 @@ mov $3,72
 mov $4,160
 sub $0,2
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,4
   mov $5,$2
   mul $5,-4

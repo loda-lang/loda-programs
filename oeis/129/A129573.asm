@@ -1,7 +1,7 @@
-; A129573: A097806 * A129372.
+; A129573: Triangle read by rows: A097806 * A129372 as infinite lower triangular matrices.
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,1,0,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,1,1,0
-; Formula: a(n) = truncate(gcd(truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))
+; Formula: a(n) = truncate(gcd(truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))
 
 #offset 1
 

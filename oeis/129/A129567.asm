@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+seq $0,2805 ; a(n) = denominator of harmonic number H(n) = Sum_{i=1..n} 1/i.
 mul $0,2
 mov $1,-1
 add $1,$0

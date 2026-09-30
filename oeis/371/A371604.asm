@@ -1,4 +1,4 @@
-; A371604: Decimal expansion of 5 * sqrt(3 - phi) / (2 * Pi).
+; A371604: Decimal expansion of 5 * sqrt(3 - phi) / (2 * Pi), where phi is the golden ratio.
 ; Submitted by Athlici
 ; 9,3,5,4,8,9,2,8,3,7,8,8,6,3,9,0,3,3,2,1,2,9,1,9,0,6,6,1,5,2,9,8,2,8,1,6,7,9,6,7,8,1,9,2,7,2,9,8,4,9,8,1,2,4,7,0,6,6,5,0,1,9,8,7,0,2,5,5,5,3,3,8,9,8,4,2,8,9,2,2
 

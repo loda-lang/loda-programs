@@ -10,9 +10,8 @@ mov $3,$0
 mul $3,8
 lpb $3
   mov $5,$3
-  mul $5,2
-  sub $5,1
-  mul $5,2
+  mul $5,4
+  sub $5,2
   add $1,$2
   mul $2,$5
   mul $1,$3

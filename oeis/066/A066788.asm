@@ -9,6 +9,5 @@ mov $2,$0
 pow $2,2
 add $2,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

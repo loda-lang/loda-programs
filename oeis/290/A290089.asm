@@ -8,14 +8,13 @@ sub $0,1
 mov $1,$0
 mov $2,$0
 lpb $2
-  pow $2,0
+  mov $2,1
   mov $3,$1
   add $3,1
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $0,$1
   sub $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $4,$0
   seq $4,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $0,1

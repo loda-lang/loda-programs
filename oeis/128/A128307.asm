@@ -1,7 +1,7 @@
 ; A128307: Triangle, (1, 0, 1, 2, 4, 8, ...) in every column.
 ; Submitted by loader3229
 ; 1,0,1,1,0,1,2,1,0,1,4,2,1,0,1,8,4,2,1,0,1,16,8,4,2,1,0,1,32,16,8,4,2,1,0,1,64,32,16,8,4,2,1,0,1,128,64,32,16,8,4,2,1,0,1,256,128,64,32,16,8,4,2,1,0,1,512,256,128,64,32,16,8,4,2,1,0,1,1024,512
-; Formula: a(n) = truncate((-n-3*truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+3)/3)+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+truncate((sqrtint(8*n)-1)/2)+4)/4)
+; Formula: a(n) = truncate((if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))-n-3*truncate((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+3)/3)+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+4)/4)
 
 #offset 1
 

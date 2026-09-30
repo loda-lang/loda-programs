@@ -1,7 +1,7 @@
 ; A112802: Number of ways of representing 2n-1 as sum of three integers with 3 distinct prime factors.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((n-84)^(n-89))
+; Formula: a(n) = if(((n-84)^2)==1,(n-84)^(n-89),if((n-89)<=(-1),0,(n-84)^(n-89)))
 
 #offset 1
 

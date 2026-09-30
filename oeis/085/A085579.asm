@@ -1,4 +1,4 @@
-; A085579: See comments lines for definition.
+; A085579: a(n) is the n-th digit after the decimal point of the positive real root of x^2+n*x-2.
 ; Submitted by ckrause
 ; 9,3,1,4,8,4,2,8,6,7,0,8,0,4,4,3,8,1,7,6,8,6,4,9,9,5,3,6,3,6,1,3,7,9,3,4,1,7,1,0,8,0,2,2,1,8,2,8,3,7,2,3,1,0,2,4,4,4,6,6,6,7,2,5,9,0,2,3,2,5,2,2,7,1,6,8,7,3,3,0
 

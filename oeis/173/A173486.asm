@@ -1,6 +1,7 @@
 ; A173486: a(n) = the largest (n+2)-digit number ending in n+1 zeros that is divisible by n, else 0.
 ; Submitted by Katja
 ; 900,9000,90000,900000,9000000,90000000,700000000,9000000000,90000000000,900000000000,0,90000000000000,0,7000000000000000,90000000000000000
+; Formula: a(n) = 10*10^(n+1)-10*((10^(n+1)-1)%floor(floor(if(((91*n*min(n+1,1)*10^(n+1))%5)==0,(91*n*min(n+1,1)*10^(n+1))/5,91*n*min(n+1,1)*10^(n+1))/gcd(min(n+1,1)*10^(n+1),n))/182))-10
 
 #offset 1
 

@@ -13,8 +13,7 @@ lpb $3
   sub $0,$3
   mov $2,$0
   mul $2,$1
-  trn $2,1
-  add $2,1
+  max $2,1
   mov $5,$2
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $2,1

@@ -1,7 +1,7 @@
 ; A215480: Characteristic function of numbers n with exactly two distinct prime factors.
 ; Submitted by ChelseaOilman
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,1,1,0,0,1
-; Formula: a(n) = -2*truncate(truncate(A034444(n)/4)/2)+truncate(A034444(n)/4)
+; Formula: a(n) = floor(A034444(n)/4)%2
 
 #offset 1
 

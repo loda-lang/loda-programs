@@ -1,7 +1,7 @@
 ; A278317: Number of neighbors of each new term in a right triangle read by rows.
 ; Submitted by loader3229
 ; 0,1,2,2,3,2,2,4,3,2,2,4,4,3,2,2,4,4,4,3,2,2,4,4,4,4,3,2,2,4,4,4,4,4,3,2,2,4,4,4,4,4,4,3,2,2,4,4,4,4,4,4,4,3,2,2,4,4,4,4,4,4,4,4,3,2,2,4,4,4,4,4,4,4,4,4,3,2,2,4
-; Formula: a(n) = -2*truncate(0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,2)+2
+; Formula: a(n) = -2*binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))+min(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1,2)+2
 
 #offset 1
 

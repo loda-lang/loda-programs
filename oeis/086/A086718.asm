@@ -45,10 +45,9 @@ lpb $2
   bin $9,2
   sub $0,$9
   add $0,1
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $4,$6
   mov $8,$0
-  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  mov $0,$8
   mul $0,$6
   add $1,$0
 lpe

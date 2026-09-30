@@ -1,7 +1,7 @@
 ; A319513: The boustrophedonic Rosenberg-Strong function maps N onto N X N where N = {0, 1, 2, ...} and n -> factor(a(n)) = 2^x*3^y -> (x, y).
 ; Submitted by loader3229
 ; 1,3,6,2,4,12,36,18,9,27,54,108,216,72,24,8,16,48,144,432,1296,648,324,162,81,243,486,972,1944,3888,7776,2592,864,288,96,32,64,192,576,1728,5184,15552,46656,23328,11664,5832,2916,1458,729,2187,4374,8748,17496
-; Formula: a(n) = truncate(2^min(max((2*truncate(sqrtint(n)/2)+1)^2-n-1,0)+max(-(2*truncate(sqrtint(n)/2)+1)^2+n,0),sqrtint(n)))*truncate(3^min(max((2*sqrtint(n)-2*truncate(sqrtint(n)/2))^2-n-1,0)+max(-(2*sqrtint(n)-2*truncate(sqrtint(n)/2))^2+n,0),sqrtint(n)))
+; Formula: a(n) = 2^min(max((-(sqrtint(n)%2)+sqrtint(n)+1)^2-n-1,0)+max(-(-(sqrtint(n)%2)+sqrtint(n)+1)^2+n,0),sqrtint(n))*3^min(max((sqrtint(n)%2+sqrtint(n))^2-n-1,0)+max(-(sqrtint(n)%2+sqrtint(n))^2+n,0),sqrtint(n))
 
 mov $1,$0
 nrt $1,2

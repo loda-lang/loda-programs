@@ -9,13 +9,12 @@ sub $0,1
 lpb $0
   sub $0,1
   max $2,11
+  nrt $2,2
   mov $4,$3
   mov $1,$2
-  nrt $1,2
-  mov $2,$1
+  sub $1,1
   pow $2,2
   mov $3,$2
-  sub $1,1
   add $2,$4
 lpe
 mov $0,$1

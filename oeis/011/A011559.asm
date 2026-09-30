@@ -1,12 +1,40 @@
 ; A011559: Stirling numbers of second kind S2(10,n).
 ; Submitted by Science United
 ; 1,511,9330,34105,42525,22827,5880,750,45,1
-; Formula: a(n) = A008277(n+45)
 
 #offset 1
 
 sub $0,1
 mov $1,46
 add $1,$0
-seq $1,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+mov $4,$1
+mov $6,0
+mov $8,0
+mov $9,0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $5,$1
+add $5,1
+bin $5,2
+sub $4,$5
+mov $2,$4
+sub $2,1
+add $4,1
+lpb $4
+  sub $4,1
+  mov $7,$4
+  pow $7,$1
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mov $8,0
+lpe
+mov $3,1
+fac $3,$2
+mov $1,$9
+div $1,$3
 mov $0,$1

@@ -1,7 +1,7 @@
 ; A040793: Continued fraction for sqrt(822).
 ; Submitted by crashtech
 ; 28,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1,2,28,2,1,56,1
-; Formula: a(n) = truncate((gcd(max(n,1),2)*binomial(3*gcd(n,3),gcd(n,3)))/3)
+; Formula: a(n) = floor((gcd(max(n,1),2)*binomial(3*gcd(n,3),gcd(n,3)))/3)
 
 mov $2,$0
 max $2,1

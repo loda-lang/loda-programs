@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
-  trn $3,1
-  add $3,1
+  max $3,1
   mov $5,$3
   mul $5,8
   nrt $5,2
@@ -25,8 +24,7 @@ lpb $2
   bin $5,$3
   mov $3,$5
   mul $3,2
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

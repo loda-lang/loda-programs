@@ -1,6 +1,7 @@
 ; A123671: Number of nonisomorphic Camina groups of order n.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,0,2,0,1,0,1,0,1,0,0,0,2,0,1,1,1,0
+; Formula: a(n) = A082299(n)%gcd(n,if((A062570(n)%2)==0,A062570(n)/2,A062570(n)))
 
 #offset 1
 

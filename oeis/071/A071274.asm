@@ -4,10 +4,10 @@
 
 #offset 1
 
-sub $0,1
 mov $3,$0
-trn $3,9
+trn $3,10
 mod $3,10
+sub $0,1
 mov $2,$3
 mul $2,90
 mov $1,1

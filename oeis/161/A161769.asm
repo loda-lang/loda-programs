@@ -1,13 +1,11 @@
-; A161769: A positive integer n is included if the greatest common divisor of (the sum of the distinct primes dividing n) and (the sum of the exponents in the prime-factorization of n) is > 1.
+; A161769: A positive integer k is included if the greatest common divisor of (the sum of the distinct primes dividing k) and (the sum of the exponents in the prime factorization of k) is > 1.
 ; Submitted by Stony666
-; 4,15,16,21,27,28,33,35,39,42,48,51,52,55,57,60,64,65,69,72,76,77,78,84,85,87,90,91,93,95,98,105,108,110,111,114,115,119,120,123,124,126,129,132,133,135,140,141,143,145,148,150,155,156,159,161,162,170,172,175
+; 4,15,16,21,27,28,33,35,39,42,48,51,52,55,57,60,64,65,69,72,76,77,78,84,85,87,90,91,93,95,98,105,108,110,111,114,115,119,120,123,124,126,129,132,133,135,140,141,143,145,148,150,155,156,159,161,162,170,172,175,177,180,183,185,186,187,189,195,198,201,203,204,205,208,209,213,215,217,219,220
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
   mov $5,$1

@@ -10,7 +10,7 @@ lpb $0
   mul $1,2
   seq $1,9821 ; Expansion of tanh(tanh(x))*exp(x).
   gcd $1,$0
-  pow $2,0
+  mov $2,1
 lpe
 mov $0,$1
 div $0,2

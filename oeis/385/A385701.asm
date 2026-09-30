@@ -9,9 +9,9 @@ mov $2,$0
 pow $2,2
 add $2,12
 lpb $2
-  add $1,6
   mov $3,$1
-  add $1,24
+  add $1,30
+  add $3,6
   lpb $3
     mov $5,$3
     div $3,10

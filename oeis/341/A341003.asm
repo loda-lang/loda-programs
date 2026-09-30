@@ -13,8 +13,7 @@ lpb $2
   add $3,2
   seq $3,71650 ; Difference between sums of odd and even digits of n.
   pow $3,2
-  sub $3,3
-  equ $3,1
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

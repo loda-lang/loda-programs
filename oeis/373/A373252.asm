@@ -12,9 +12,9 @@ lpb $0
   mov $5,$1
   div $5,$2
   add $1,$5
-  add $1,2
   mov $4,$1
-  sub $1,1
+  add $4,2
+  add $1,1
   mul $1,$4
   mov $3,$1
   gcd $3,$0

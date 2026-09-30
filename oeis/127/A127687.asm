@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,1608 ; Perrin sequence (or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.
+  seq $0,1608 ; Perrin sequence (or Perrin numbers, or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.
   add $3,$0
 lpe
 div $3,$1

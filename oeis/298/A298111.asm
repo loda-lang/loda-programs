@@ -1,6 +1,7 @@
 ; A298111: Solution b( ) of the complementary equation a(n) = a(1)*b(n) - a(0)*b(n-1) + 2*n, where a(0) = 1, a(1) = 2, b(0) = 3, b(1) = 4, b(2) = 5, and (b(n)) is the increasing sequence of positive integers not in (a(n)).  See Comments.
 ; Submitted by arkiss
 ; 3,4,5,6,7,8,9,11,12,14,15,17,18,20,21,23,24,25,26,28,30,31,32,33,35,37,38,39,40,42,44,45,46,47,49,51,52,53,54,56,58,59,61,62,64,65,66,67,69,70,71,73,75,76,78,79,81,82,83,84,86,87,88,90,92,93
+; Formula: a(n) = floor(e(n)/2)+3, b(n) = -4*max(if(d(n-1)==0,truncate(c(n-1)/2),if((truncate(c(n-1)/2)%d(n-1))==0,truncate(c(n-1)/2)/d(n-1),truncate(c(n-1)/2))),4)*gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1)-2)/2)-1)/2)+d(n-1)+truncate((-c(n-1)+b(n-1)-2)/2)-1,4)+truncate((-c(n-1)+b(n-1)-2)/2), b(3) = -106, b(2) = -50, b(1) = -18, b(0) = 0, c(n) = 4*max(if(d(n-1)==0,truncate(c(n-1)/2),if((truncate(c(n-1)/2)%d(n-1))==0,truncate(c(n-1)/2)/d(n-1),truncate(c(n-1)/2))),4)*gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1)-2)/2)-1)/2)+d(n-1)+truncate((-c(n-1)+b(n-1)-2)/2)-1,4), c(3) = 64, c(2) = 32, c(1) = 16, c(0) = 2, d(n) = floor(gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1)-2)/2)-1)/2)+d(n-1)+truncate((-c(n-1)+b(n-1)-2)/2)-1,4)/2), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 6, e(2) = 4, e(1) = 2, e(0) = 0
 
 mov $2,2
 lpb $0

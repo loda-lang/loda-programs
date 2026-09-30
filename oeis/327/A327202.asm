@@ -8,8 +8,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   pow $0,2
   mov $4,$0
   mul $4,4

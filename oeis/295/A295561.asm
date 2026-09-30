@@ -9,8 +9,9 @@ mov $2,$0
 lpb $2
   sub $2,4
   mov $3,$1
+  seq $3,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n >= 0, S(n+3) = S(n+2) S(n+1) S(n).
+  mov $4,$3
   add $3,1
-  seq $3,92782 ; The ternary tribonacci word; also a Rauzy fractal sequence: fixed point of the morphism 1 -> 12, 2 -> 13, 3 -> 1, starting from a(1) = 1.
   add $1,1
   add $2,$3
 lpe

@@ -1,4 +1,4 @@
-; A251992: Decimal expansion of the double infinite sum (negated) sum_{m=1..infinity} sum_{k=0..infinity} (-1)^m/((2k+1)^2+m^2).
+; A251992: Decimal expansion of the double infinite sum (negated) Sum_{m=1..oo} Sum_{k=0..oo} (-1)^m/((2k+1)^2+m^2).
 ; Submitted by mmonnin
 ; 4,8,0,7,5,1,1,4,4,4,2,4,1,0,9,7,8,0,5,2,0,8,6,2,6,3,1,3,5,2,4,0,8,5,7,4,2,4,8,4,4,4,7,3,1,6,7,9,4,6,9,0,2,0,7,5,5,4,7,2,1,3,2,6,8,9,1,0,8,5,1,7,0,7,7,6,5,3,9,5
 

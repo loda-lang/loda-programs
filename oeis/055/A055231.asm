@@ -1,7 +1,7 @@
 ; A055231: Powerfree part of n: product of primes that divide n only once.
 ; Submitted by Sterndu
 ; 1,2,3,1,5,6,7,1,1,10,11,3,13,14,15,1,17,2,19,5,21,22,23,3,1,26,1,7,29,30,31,1,33,34,35,1,37,38,39,5,41,42,43,11,5,46,47,3,1,2,51,13,53,2,55,7,57,58,59,15,61,62,7,1,65,66,67,17,69,70,71,1,73,74,3,19,77,78,79,5
-; Formula: a(n) = truncate(gcd(truncate((n-1)/A003557(n))+n+1,n)/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
+; Formula: a(n) = floor(gcd(truncate((n-1)/A003557(n))+n+1,n)/gcd(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+1,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
 
 #offset 1
 

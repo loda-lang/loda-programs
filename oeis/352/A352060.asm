@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
+sub $1,1
 lpb $1
   mul $0,$1
   sub $1,1

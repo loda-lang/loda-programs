@@ -1,7 +1,7 @@
 ; A159335: Triangle read by rows: numerator of n/binomial(n,m).
 ; Submitted by Science United
 ; 0,1,1,2,1,2,3,1,1,3,4,1,2,1,4,5,1,1,1,1,5,6,1,2,3,2,1,6,7,1,1,1,1,1,1,7,8,1,2,1,4,1,2,1,8,9,1,1,3,1,1,3,1,1,9,10,1,2,1,1,5,1,1,2,1,10,11,1,1,1,1,1,1,1,1,1,1,11,12,1
-; Formula: a(n) = truncate(truncate((sqrtint(8*n+8)-1)/2)/gcd(binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n),truncate((sqrtint(8*n+8)-1)/2)))
+; Formula: a(n) = floor(floor((sqrtint(8*n+8)-1)/2)/gcd(binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n),floor((sqrtint(8*n+8)-1)/2)))
 
 mov $1,$0
 add $1,1

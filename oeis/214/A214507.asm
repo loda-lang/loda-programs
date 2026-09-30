@@ -24,9 +24,8 @@ lpb $5
   mov $7,$3
   nrt $7,2
   add $3,2
+  nrt $3,2
   mov $8,$3
-  nrt $8,2
-  mov $3,$8
   add $3,$7
 lpe
 mov $2,$3

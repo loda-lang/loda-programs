@@ -1,7 +1,7 @@
 ; A166786: Number of nX4 1..2 arrays containing at least one of each value, all equal values connected, and rows considered as a single number in nondecreasing order.
 ; Submitted by loader3229
 ; 6,31,112,317,750,1559,2944,5165,8550,13503,20512,30157,43118,60183,82256
-; Formula: a(n) = truncate((n*(n*(n*(n*(2*n+15)+60)-75)+268)-90)/30)
+; Formula: a(n) = floor((n*(n*(n*(n*(2*n+15)+60)-75)+268)-90)/30)
 
 #offset 1
 

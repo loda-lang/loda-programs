@@ -1,6 +1,7 @@
-; A163685: Number of nX2 binary arrays with all 1s connected, a path of 1s from upper left corner to lower right corner, and no 1 having more than two 1s adjacent.
+; A163685: Number of n X 2 binary arrays with all 1s connected, a path of 1s from upper left corner to lower right corner, and no 1 having more than two 1s adjacent.
 ; Submitted by loader3229
 ; 1,3,5,8,13,20,32,52,85,138,223,360,582,942,1525,2468,3993,6460,10452,16912,27365,44278,71643,115920,187562,303482,491045,794528,1285573,2080100,3365672,5445772,8811445,14257218,23068663,37325880,60394542,97720422,158114965,255835388,413950353,669785740,1083736092,1753521832,2837257925,4590779758,7428037683,12018817440,19446855122,31465672562,50912527685,82378200248,133290727933,215668928180,348959656112,564628584292,913588240405,1478216824698,2391805065103,3870021889800,6261826954902
+; Formula: a(n) = b(n-1), b(n) = 2*b(n-1)-b(n-2)+b(n-4), b(10) = 223, b(9) = 138, b(8) = 85, b(7) = 52, b(6) = 32, b(5) = 20, b(4) = 13, b(3) = 8, b(2) = 5, b(1) = 3, b(0) = 1
 
 #offset 1
 
@@ -12,7 +13,7 @@ mov $5,13
 mov $6,20
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,6
   add $6,$2
   sub $6,$4

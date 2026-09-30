@@ -14,9 +14,8 @@ lpb $2
   add $3,1
   seq $3,107116 ; Three-digit numbers from the decimal expansion of Pi (version 1).
   mov $5,$3
-  sub $3,1
   mov $7,$3
-  add $3,1
+  sub $7,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $3,1
   mov $8,$7

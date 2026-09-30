@@ -4,12 +4,11 @@
 ; Formula: a(n) = floor((26*n+4)/9)+truncate((26*n-5)/9)+1
 
 mul $0,26
-add $0,1
 mov $1,$0
-add $0,3
+add $0,4
 div $0,9
 add $0,1
-sub $1,6
+sub $1,5
 div $1,9
 add $1,$0
 mov $0,$1

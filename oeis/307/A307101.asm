@@ -16,8 +16,11 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
+  mov $6,$0
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$0
-  seq $5,7955 ; Product of divisors of n.
+  pow $5,$6
+  nrt $5,2
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $0,$5
   mul $0,$3

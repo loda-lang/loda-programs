@@ -1,5 +1,5 @@
-; A092724: Disk degeneracies for brane III in the O(K)->P^1 x P^1 geometry.
-; 0,0,0,0,0,0,0,-264,-4224,-35640
+; A092724: Ooguri-Vafa invariants of disk degeneracies for brane III in the O(K) -> P^1 x P^1 geometry.
+; 0,0,0,0,0,0,0,-264,-4224,-35640,-211200,-987360
 
 sub $1,$0
 lpb $0

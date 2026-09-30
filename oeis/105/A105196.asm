@@ -1,13 +1,60 @@
-; A105196: Triangle, read by rows, of Stirling numbers of first kind, S1(n,k), multiplied by k^k, for n >= 1, 1<=k<=n.
+; A105196: Triangle read by rows: T(n,k) = |Stirling1(n,k)| * k^k, for 1 <= k <= n.
 ; Submitted by KetamiNO [YouTube]
 ; 1,1,4,2,12,27,6,44,162,256,24,200,945,2560,3125,120,1096,6075,21760,46875,46656,720,7056,43848,188160,546875,979776,823543,5040,52272,354564,1732864,6125000,15023232,23059204,16777216,40320,438336,3189348
-; Formula: a(n) = truncate((2*A130534(n-1)*if(((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^2)==1,(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n),if((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)<=(-1),0,(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n))))/2)
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-seq $1,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+mov $6,$0
+mul $6,8
+nrt $6,2
+add $6,1
+div $6,2
+mov $10,0
+sub $0,1
+mov $5,$6
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $7,$1
+sub $6,$1
+lpb $6
+  sub $6,1
+  mov $8,$5
+  add $8,$7
+  mov $11,$8
+  seq $11,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $11,5
+  gcd $11,0
+  div $11,5
+  mov $19,229383
+  add $7,1
+  mov $9,$7
+  bin $9,2
+  add $9,$1
+  add $9,1
+  mov $12,$9
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $13,$9
+  add $13,1
+  bin $13,2
+  sub $12,$13
+  sub $12,1
+  mov $14,1
+  mov $16,1
+  bin $9,$12
+  mov $15,1
+  mov $17,9
+  mov $18,0
+  mov $8,2
+  mov $8,$11
+  mul $8,$9
+  add $10,$8
+lpe
+mov $1,$10
 mov $4,$0
 mul $4,8
 add $4,1
@@ -22,5 +69,5 @@ mov $3,$2
 pow $3,$2
 mov $0,$3
 mul $0,2
-mul $0,$1
+mul $0,$10
 div $0,2

@@ -1,7 +1,6 @@
 ; A046989: Denominators of Taylor series expansion in powers of x^2 of log(x/sin x).
 ; Submitted by FritzB
 ; 1,6,180,2835,37800,467775,3831077250,127702575,2605132530000,350813659321125,15313294652906250,147926426347074375,2423034863565078262500,144228265688397515625,3952575621190533915703125,84913182070036240111050234375,999843529136357459316262500000
-; Formula: a(n) = truncate((gcd(0,2*truncate(truncate((n*((2*n+1)!)^2)/gcd(A129814(2*n),n*((2*n+1)!)^2))/(2*n+1)))+1)/gcd(2*truncate(truncate((n*((2*n+1)!)^2)/gcd(A129814(2*n),n*((2*n+1)!)^2))/(2*n+1)),2^(2*n)))
 
 mov $5,2
 mul $5,$0
@@ -9,7 +8,9 @@ mov $7,$5
 seq $7,129814 ; a(n) = Bernoulli(n) * (n+1)!.
 mov $8,$5
 add $8,1
-seq $8,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $9,0
+sub $9,$8
+fac $8,$9
 pow $8,2
 mul $8,$0
 mov $4,$5

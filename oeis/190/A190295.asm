@@ -1,7 +1,7 @@
-; A190295: A055134(n,k)*k
+; A190295: A055134(n,k)*k.
 ; Submitted by loader3229
 ; 1,2,2,12,12,3,108,108,36,4,1280,1280,480,80,5,18750,18750,7500,1500,150,6,326592,326592,136080,30240,3780,252,7,6588344,6588344,2823576,672280,96040,8232,392,8
-; Formula: a(n) = truncate(truncate((sqrtint(8*n)-1)/2)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*(truncate((sqrtint(8*n)-1)/2)+1)
+; Formula: a(n) = binomial(floor((sqrtint(8*n)-1)/2),-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*(floor((sqrtint(8*n)-1)/2)+1)*if((floor((sqrtint(8*n)-1)/2)^2)==1,floor((sqrtint(8*n)-1)/2)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1),if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,floor((sqrtint(8*n)-1)/2)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)))
 
 #offset 1
 

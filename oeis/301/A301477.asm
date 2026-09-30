@@ -1,9 +1,51 @@
 ; A301477: T(n,k) = Sum_{j=0..n-k} H(n,j)*2^k with H(n,k) = binomial(n,k)* hypergeom([-k/2, 1/2-k/2], [2-k+n], 4), for 0 <= k <= n, triangle read by rows.
 ; Submitted by Simon Strandgaard
 ; 1,2,2,5,6,4,13,18,16,8,35,52,56,40,16,96,150,180,160,96,32,267,432,560,568,432,224,64,750,1246,1708,1904,1680,1120,512,128,2123,3600,5152,6160,6048,4736,2816,1152,256,6046,10422,15432,19488,20736,18240,12864,6912,2560,512
-; Formula: a(n) = A059268(n)*A038622(n)
 
+mov $7,3
+mov $8,0
+mov $9,3
+mov $10,3
 mov $1,$0
-seq $1,38622 ; Triangular array that counts rooted polyominoes.
-seq $0,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+add $1,1
+mov $6,$1
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $11,$6
+add $11,1
+bin $11,2
+sub $1,$11
+sub $1,1
+mul $1,-1
+add $1,$6
+lpb $1
+  sub $1,1
+  add $7,$9
+  mov $5,$7
+  sub $5,$9
+  mul $5,$6
+  sub $6,1
+  add $8,1
+  div $5,$8
+  add $7,$5
+  mul $9,-1
+  add $9,$5
+  add $10,$5
+lpe
+mov $1,$10
+div $1,3
+mov $4,$0
+mul $4,8
+add $4,1
+nrt $4,2
+add $4,1
+div $4,2
+bin $4,2
+mov $2,$0
+sub $2,$4
+mov $3,2
+pow $3,$2
+mov $0,$3
 mul $0,$1

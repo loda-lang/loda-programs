@@ -11,8 +11,7 @@ lpb $0
     mov $1,$4
     seq $1,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
     sub $4,$0
-    add $4,3
-    trn $4,3
+    max $4,0
     add $5,$1
   lpe
   add $2,1

@@ -1,6 +1,7 @@
 ; A327500: Number of steps to reach a fixed point starting with n and repeatedly taking the quotient by the maximum divisor whose prime multiplicities are distinct (A327498, A327499).
 ; Submitted by sascha.gibson@gmx.de
 ; 0,1,1,1,1,2,1,1,1,2,1,1,1,2,2,1,1,1,1,1,2,2,1,1,1,2,1,1,1,3,1,1,2,2,2,2,1,2,2,1,1,3,1,1,1,2,1,1,1,1,2,1,1,1,2,1,2,2,1,2,1,2,1,1,2,3,1,1,2,3,1,1,1,2,1,1,2,3,1,1
+; Formula: a(n) = A157754(A181819(n))*bitand(valuation(n^n,2)+1,1)
 
 #offset 1
 

@@ -50,8 +50,7 @@ lpb $4
   geq $6,22
   mul $6,-1
   add $5,$6
-  mul $0,0
-  add $0,$5
+  mov $0,$5
   add $0,1
   mul $1,$0
   add $3,$1

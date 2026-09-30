@@ -1,7 +1,7 @@
 ; A190909: Triangle read by rows: T(n,k) = binomial(n+k,n-k) * k! / floor(k/2)!^2.
 ; Submitted by loader3229
 ; 1,1,1,1,3,2,1,6,10,6,1,10,30,42,6,1,15,70,168,54,30,1,21,140,504,270,330,20,1,28,252,1260,990,1980,260,140,1,36,420,2772,2970,8580,1820,2100,70,1,45,660,5544,7722,30030,9100,16800,1190,630
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n,truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))*binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n,2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))*binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+n,truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n,truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))*binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n,2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2))*binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+n,truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2))
 
 add $0,1
 mov $1,$0

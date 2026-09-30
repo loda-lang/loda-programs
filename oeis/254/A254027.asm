@@ -1,7 +1,7 @@
 ; A254027: Table T(n,k) = 3^n - 2^k read by antidiagonals.
 ; Submitted by loader3229
 ; 0,2,-1,8,1,-3,26,7,-1,-7,80,25,5,-5,-15,242,79,23,1,-13,-31,728,241,77,19,-7,-29,-63,2186,727,239,73,11,-23,-61,-127,6560,2185,725,235,65,-5,-55,-125,-255,19682,6559,2183,721,227,49,-37,-119,-253,-511,59048,19681,6557,2179,713,211,17,-101,-247,-509,-1023,177146,59047,19679,6553,2171,697,179,-47,-229,-503,-1021,-2047,531440,177145
-; Formula: a(n) = -truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))+truncate(3^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))
+; Formula: a(n) = if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,3^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))-if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
 add $0,1
 mov $1,$0

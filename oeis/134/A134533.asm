@@ -8,8 +8,11 @@ mov $2,$0
 sub $0,1
 pow $2,2
 lpb $2
+  mov $5,7
+  pow $5,$1
+  dgs $5,10
   mov $3,$1
-  seq $3,66003 ; Sum of digits of 7^n.
+  mov $3,$5
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   equ $3,1
   sub $0,$3

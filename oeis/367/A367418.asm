@@ -1,7 +1,7 @@
 ; A367418: The exponentially odd numbers (A268335) divided by their squarefree kernels (A007947).
 ; Submitted by ChelseaOilman
 ; 1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,4,1,9,1,1,1,16,1,1,1,1,1,1,4,1,1,1,1,1,1,1,9,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,16,1,1,1,1,4,1,1,1,1,1,1
-; Formula: a(n) = (truncate(max(0,A268335(n)-1)/A019554(max(0,A268335(n)-1)+1))+1)^2
+; Formula: a(n) = (floor(max(0,A268335(n)-1)/A019554(max(0,A268335(n)-1)+1))+1)^2
 
 #offset 1
 

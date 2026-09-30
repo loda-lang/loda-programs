@@ -1,7 +1,7 @@
 ; A157423: Triangle read by rows, T(n,k) = 0 if (n-k+1) is prime, else 1.
 ; Submitted by entity
 ; 1,0,1,0,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,1,0,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,1,0,1,0,1,0,0,1,1,1,1,0,1,0,1,0,0,1,0,1,1,1,0,1,0,1,0,0,1,1,0,1,1,1,0,1,0,1,0,0,1
-; Formula: a(n) = -2*truncate((A010051(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)+1)/2)+A010051(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)+1
+; Formula: a(n) = (A010051(-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)+1)%2
 
 #offset 1
 

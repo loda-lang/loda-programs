@@ -6,8 +6,7 @@
 
 sub $0,1
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
   mov $1,$0
   mov $0,0

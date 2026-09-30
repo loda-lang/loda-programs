@@ -1,7 +1,7 @@
 ; A359172: a(n) = 1 if n is not a multiple of 3 and has an odd number of prime factors (with multiplicity), otherwise a(n) = 0.
 ; Submitted by Kotenok2000
 ; 0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,0,0,1,1
-; Formula: a(n) = -A001222(n)*max((n-1)%3,1)-2*truncate((-A001222(n)*max((n-1)%3,1))/2)-2*truncate((-A001222(n)*max((n-1)%3,1)-2*truncate((-A001222(n)*max((n-1)%3,1))/2)+2)/2)+2
+; Formula: a(n) = (-A001222(n)*max((n-1)%3,1)-2*truncate((-A001222(n)*max((n-1)%3,1))/2)+2)%2
 
 #offset 1
 

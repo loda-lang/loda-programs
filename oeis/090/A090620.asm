@@ -1,4 +1,4 @@
-; A090620: Highest power of 13 dividing n!.
+; A090620: Exponent of highest power of 13 dividing n!.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6
 ; Formula: a(n) = truncate((-sumdigits(n,13)+n)/12)

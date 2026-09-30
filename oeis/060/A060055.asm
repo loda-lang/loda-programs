@@ -10,7 +10,9 @@ mov $2,$0
 seq $2,129814 ; a(n) = Bernoulli(n) * (n+1)!.
 mov $1,$0
 add $1,1
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $3,0
+sub $3,$1
+fac $1,$3
 pow $1,2
 gcd $2,$1
 add $0,1

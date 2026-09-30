@@ -1,4 +1,4 @@
-; A291070: Number of 4 X n binary matrices that are "primitive"; that is, they cannot be expressed as a "tiling" by a smaller matrix.
+; A291070: Number of 5 X n binary matrices that are "primitive"; that is, they cannot be expressed as a "tiling" by a smaller matrix.
 ; Submitted by Science United
 ; 30,990,32730,1047540,33554370,1073708010,34359738210,1099510578960,35184372055560,1125899873286210,36028797018961890,1152921503532053580,36893488147419095010,1180591620683051547810,37778931862957128089670,1208925819613529663013120
 

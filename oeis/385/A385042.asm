@@ -1,6 +1,7 @@
 ; A385042: The number of unitary divisors of n whose exponents in their prime factorizations are all powers of 2 (A138302).
 ; Submitted by Science United
 ; 1,2,2,2,2,4,2,1,2,4,2,4,2,4,4,2,2,4,2,4,4,4,2,2,2,4,1,4,2,8,2,1,4,4,4,4,2,4,4,2,2,8,2,4,4,4,2,4,2,4,4,4,2,2,4,2,4,4,2,8,2,4,4,1,4,8,2,4,4,8,2,2,2,4,4,4,4,8,2,4
+; Formula: a(n) = floor((A000040(1)^(A293439(n)*((valuation((5*n)^(5*n),2)+1)%10)+2))/4)
 
 #offset 1
 

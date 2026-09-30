@@ -21,8 +21,7 @@ lpb $2
   mov $3,$5
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   seq $3,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.
-  sub $3,3
-  equ $3,1
+  equ $3,4
   mul $5,3
   sub $0,$3
   add $1,1

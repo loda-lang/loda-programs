@@ -11,8 +11,7 @@ pow $2,3
 lpb $2
   mov $3,$1
   seq $3,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
-  sub $3,2
-  equ $3,6
+  equ $3,8
   sub $0,$3
   add $1,1
   mov $4,$0

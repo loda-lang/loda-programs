@@ -7,8 +7,7 @@
 mov $1,$0
 sub $0,2
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,179194 ; Bases n in which 1/(n-2) is non-terminating and has period n-3.
   mov $2,1
   seq $2,3628 ; Primes congruent to {5, 7} mod 8.

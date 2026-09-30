@@ -1,7 +1,7 @@
 ; A296299: Dimension of the n-th component of a certain graded Lie algebra.
 ; Submitted by Science United
 ; 2,1,2,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2
-; Formula: a(n) = truncate((d(n)+2)/3), b(n) = truncate(truncate((-c(n-1)+b(n-1))/2)/gcd(truncate((-c(n-1)+b(n-1))/2)+1,4)), b(2) = -2, b(1) = 0, b(0) = -2, c(n) = 4*c(n-1), c(2) = 16, c(1) = 4, c(0) = 1, d(n) = gcd(truncate((-c(n-1)+b(n-1))/2)+1,4), d(2) = 1, d(1) = 4, d(0) = 0
+; Formula: a(n) = floor((c(n)+2)/3), b(n) = truncate(truncate((-4^(n-1)+b(n-1))/2)/gcd(truncate((-4^(n-1)+b(n-1))/2)+1,4)), b(2) = -2, b(1) = 0, b(0) = -2, c(n) = gcd(truncate((-4^(n-1)+b(n-1))/2)+1,4), c(2) = 1, c(1) = 4, c(0) = 0
 
 #offset 1
 

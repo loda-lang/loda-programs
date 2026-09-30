@@ -10,12 +10,11 @@ lpb $2
   add $0,$2
   trn $0,1
   seq $0,29084 ; Expansion of 1/((1-x)(1-x^4)(1-x^11)(1-x^12)).
-  mov $5,$0
-  mul $5,2
-  mov $0,$5
+  mul $0,2
   mov $1,$2
-  mul $1,$5
+  mul $1,$0
   add $3,$1
+  mov $5,$0
 lpe
 min $4,1
 mul $4,$0

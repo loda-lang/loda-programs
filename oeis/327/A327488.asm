@@ -1,14 +1,14 @@
 ; A327488: T(n, k) = 1 + NAND(k - 1, n - k), where NAND is the Sheffer stroke operating bitwise on the inputs, triangle read by rows, T(n, k) for n >= 1, 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,2,2,4,1,4,4,4,4,4,8,3,2,3,8,8,8,2,2,8,8,8,7,8,1,8,7,8,8,8,8,8,8,8,8,8,16,7,6,7,4,7,6,7,16,16,16,6,6,4,4,6,6,16,16,16,15,16,5,4,3,4,5,16,15,16,16,16,16,16,4,4,4,4,16,16,16,16
-; Formula: a(n) = -((n-1)==0)-bitand(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(truncate((sqrtint(8*n)+3)/2),2))+truncate(2^(logint(max(bitor(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(truncate((sqrtint(8*n)+3)/2),2)),1),2)+1))
+; Formula: a(n) = 2^(logint(max(bitor(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(floor((sqrtint(8*n)+3)/2),2)),1),2)+1)-(n==1)-bitand(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(floor((sqrtint(8*n)+3)/2),2))
 
 #offset 1
 
 mov $1,$0
-sub $0,1
 mov $3,$0
-equ $3,0
+equ $3,1
+sub $0,1
 mov $4,$0
 mul $4,8
 add $4,1

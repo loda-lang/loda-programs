@@ -1,17 +1,51 @@
 ; A213193: O.g.f.: Sum_{n>=0} (4*n+1)^(4*n+1) * exp(-(4*n+1)^4*x) * x^n / n!.
 ; Submitted by shiva
 ; 1,3124,191757120,49208861869440,33030777426968816640,45829974166034718596428800,114009204539207742166715857223680,462192193445890293982679086838571270144,2851153321165202191241172917762717987236478976
-; Formula: a(n) = truncate(A285066(binomial(floor((8*n+4)/2),2)+n)/(n!))
 
+mov $4,0
+sub $4,$0
+mov $7,0
+mov $9,0
 mov $2,$0
-seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+fac $2,$4
 mov $3,$0
 mul $3,8
 add $3,4
 div $3,2
 bin $3,2
+mov $10,0
 add $0,$3
 mov $1,$0
-seq $1,285066 ; Triangle read by rows: T(n, m) = A285061(n, m)*m!, 0 <= m <= n.
+add $1,1
+mov $5,$1
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $12,$5
+add $12,1
+bin $12,2
+sub $1,$12
+sub $1,1
+mov $6,$1
+mov $1,$5
+mov $5,$6
+add $5,2
+lpb $5
+  sub $5,1
+  mov $11,$6
+  mul $11,3
+  mov $8,$5
+  add $8,$11
+  pow $8,$1
+  sub $9,$5
+  bin $9,$7
+  mul $9,$8
+  add $10,$9
+  sub $6,1
+  add $7,1
+  mov $9,0
+lpe
+mov $1,$10
 div $1,$2
 mov $0,$1

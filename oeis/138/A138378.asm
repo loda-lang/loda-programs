@@ -5,9 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,2
+sub $2,1
+add $0,1
 seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
 mov $1,$2
 add $1,1

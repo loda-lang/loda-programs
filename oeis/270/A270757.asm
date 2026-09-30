@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  sub $0,1
-  trn $0,1
+  trn $0,2
   pow $1,$3
   mov $5,$0
   seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.

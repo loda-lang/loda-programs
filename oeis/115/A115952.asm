@@ -1,6 +1,7 @@
 ; A115952: Expansion of (1-x+x*y)/(1-x^2*y^2) - x^2/(1-x^2*y).
 ; Submitted by loader3229
 ; 1,-1,1,-1,0,1,0,0,-1,1,0,-1,0,0,1,0,0,0,0,-1,1,0,0,-1,0,0,0,1,0,0,0,0,0,0,-1,1,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,1,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,1,0,0
+; Formula: a(n) = truncate((2*binomial(if((floor((sqrtint(8*n+16)-1)/2)%2)==0,floor((sqrtint(8*n+16)-1)/2)/2,floor((sqrtint(8*n+16)-1)/2)),-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)*if((-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1))-3*((-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n+1)==if((floor((sqrtint(8*n+16)-1)/2)%2)==0,floor((sqrtint(8*n+16)-1)/2)/2,floor((sqrtint(8*n+16)-1)/2))))/2)
 
 add $0,2
 mov $1,$0

@@ -1,7 +1,7 @@
 ; A369643: a(n) = 1 if n' / gcd(n,n') is a multiple of 3, otherwise 0. Here n' stands for the arithmetic derivative of n, A003415.
 ; Submitted by iBezanilla
 ; 1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0
-; Formula: a(n) = truncate(gcd(3,truncate(A003415(n)/gcd(n,A003415(n))))/2)
+; Formula: a(n) = floor(gcd(3,floor(A003415(n)/gcd(n,A003415(n))))/2)
 
 #offset 1
 

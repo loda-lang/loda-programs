@@ -13,9 +13,8 @@ add $2,2
 seq $2,40 ; The prime numbers.
 seq $2,13636 ; a(n) = n*nextprime(n).
 mul $0,$2
+seq $0,23889 ; Sum of the prime power divisors of n (not including 1).
 mov $1,$0
-seq $1,23889 ; Sum of the prime power divisors of n (not including 1).
-mov $0,$1
 sub $0,26
 div $0,2
 add $0,13

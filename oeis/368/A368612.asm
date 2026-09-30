@@ -14,8 +14,7 @@ lpb $0
   seq $2,2815 ; a(n) = n + Sum_{k=1..n} pi(k), where pi() = A000720.
   sub $2,$4
   mul $2,2
-  add $3,2
-  equ $3,2
+  equ $3,0
   gcd $3,$5
   add $5,1
   add $1,$2

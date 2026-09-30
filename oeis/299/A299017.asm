@@ -5,8 +5,7 @@
 #offset 1
 
 mov $1,$0
-sub $1,2
-trn $1,2
+trn $1,4
 add $0,1
 add $0,$1
 bin $0,2

@@ -1,7 +1,7 @@
 ; A288213: Fixed point of the mapping 00->0010, 1->011, starting with 00.
 ; Submitted by Science United
 ; 0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0
-; Formula: a(n) = -2*truncate(truncate(sqrtint(2*(2*n-1)^2)/2)/2)+truncate(sqrtint(2*(2*n-1)^2)/2)
+; Formula: a(n) = floor(sqrtint(2*(2*n-1)^2)/2)%2
 
 #offset 1
 

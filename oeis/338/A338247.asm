@@ -5,8 +5,7 @@
 mov $2,1
 lpb $0
   mov $3,$0
-  trn $3,2
-  add $3,2
+  max $3,2
   mod $3,3
   sub $3,1
   mul $3,$2

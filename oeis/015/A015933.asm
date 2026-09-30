@@ -14,8 +14,7 @@ lpb $7
   mov $6,-1
   pow $6,$7
   mov $9,$7
-  sub $9,8
-  trn $9,6
+  trn $9,14
   seq $9,16056 ; Inverse of 2047th cyclotomic polynomial.
   mul $9,$6
   sub $11,$10

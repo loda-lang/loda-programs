@@ -12,9 +12,18 @@ lpb $2
   sub $0,1
   mov $3,$0
   mul $0,2
-  seq $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
-  sub $0,1
+  mov $6,$0
+  dgs $6,2
+  mov $7,$0
+  min $7,1
+  max $0,1
+  log $0,2
+  add $7,$0
+  sub $7,$6
+  mov $0,2
+  pow $0,$7
   sub $0,$3
+  sub $0,1
   mov $4,$3
   sub $4,$0
   add $1,$4

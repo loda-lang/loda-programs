@@ -35,7 +35,9 @@ lpb $2
   bin $7,2
   mov $4,$6
   sub $4,$7
-  seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $8,0
+  sub $8,$4
+  fac $4,$8
   div $0,$4
   mul $1,$0
   max $1,$0

@@ -11,8 +11,10 @@ mul $2,2
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  dgs $5,4
   mov $3,$1
-  seq $3,230631 ; a(n) = n + (sum of digits in base-4 representation of n).
+  add $3,$5
   mul $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2

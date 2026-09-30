@@ -7,7 +7,6 @@
 
 pow $0,11
 mul $0,79
+log $0,3
 mov $1,$0
-log $1,3
-mov $0,$1
 sub $0,3

@@ -6,7 +6,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
+seq $1,7522 ; Primes of the form 8*k+7, that is, primes congruent to -1 mod 8.
 div $1,8
 add $1,2
 seq $0,153762 ; Numbers k such that 8k + 9 is prime.

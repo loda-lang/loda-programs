@@ -1,7 +1,7 @@
 ; A135356: Triangle T(n,k) read by rows: coefficients in the recurrence of sequences which equal their n-th differences.
 ; Submitted by loader3229
 ; 2,2,0,3,-3,2,4,-6,4,0,5,-10,10,-5,2,6,-15,20,-15,6,0,7,-21,35,-35,21,-7,2,8,-28,56,-70,56,-28,8,0,9,-36,84,-126,126,-84,36,-9,2,10,-45,120,-210,252,-210,120,-45,10,0,11,-55,165,-330,462,-462,330,-165,55,-11,2,12,-66,220,-495,792,-924,792,-495,220,-66,12,0,13,-78
-; Formula: a(n) = truncate((-1)^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))*binomial(truncate((sqrtint(8*n)-1)/2)+1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)+truncate(0^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))
+; Formula: a(n) = if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,0^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))+binomial(floor((sqrtint(8*n)-1)/2)+1,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)*if(((-1)^2)==1,(-1)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1),if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,(-1)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)))
 
 #offset 1
 

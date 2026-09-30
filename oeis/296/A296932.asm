@@ -17,9 +17,8 @@ lpb $2
   mul $3,2
   add $3,1
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,13959 ; a(n) = sigma_11(n), the sum of the 11th powers of the divisors of n.
   mod $3,23
   add $3,1

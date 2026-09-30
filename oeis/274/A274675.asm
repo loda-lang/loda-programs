@@ -15,13 +15,16 @@ lpb $2
   mov $5,$3
   mul $3,3
   mov $8,$3
-  seq $8,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+  mod $8,8
+  mov $9,8
+  sub $9,$8
+  min $8,$9
   mod $8,4
   seq $3,40329 ; Continued fraction for sqrt(348).
   add $3,$8
-  div $3,2
   mov $7,$3
-  div $3,8
+  div $7,2
+  div $3,16
   add $3,$7
   mov $6,0
   gcd $6,$3

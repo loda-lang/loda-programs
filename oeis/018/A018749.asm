@@ -1,7 +1,7 @@
 ; A018749: Divisors of 968.
 ; Submitted by Jon Maiga
 ; 1,2,4,8,11,22,44,88,121,242,484,968
-; Formula: a(n) = truncate(2^min(n-1,(n-1)%4))*b(n-1), b(n) = 11*b(n-4), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1
+; Formula: a(n) = b(n-1)*if(min(n-1,(n-1)%4)<=(-1),0,2^min(n-1,(n-1)%4)), b(n) = 11*b(n-4), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1
 
 #offset 1
 

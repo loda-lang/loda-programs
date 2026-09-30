@@ -29,8 +29,7 @@ lpb $2
   mul $6,$0
   nrt $6,2
   add $6,$0
-  add $7,1
-  equ $7,1
+  equ $7,0
   sub $7,$6
   mov $0,$7
   add $0,1

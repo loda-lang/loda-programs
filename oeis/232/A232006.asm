@@ -1,4 +1,4 @@
-; A232006: Triangular array read by rows: T(n,k) is the number of simple labeled graphs on vertex set {1,2,...,n} with exactly k components (all of which are trees) such that the labels {1,2,...,k} are all in distinct components (trees), n >= 0, 0 <= k <= n.
+; A232006: Triangular array read by rows: T(n, k) is the number of simple labeled graphs on vertex set {1,2,...,n} with exactly k components (all of which are trees) such that the labels {1,2,...,k} are all in distinct components (trees), n >= 0, 0 <= k <= n.
 ; Submitted by Science United
 ; 1,0,1,0,1,1,0,3,2,1,0,16,8,3,1,0,125,50,15,4,1,0,1296,432,108,24,5,1,0,16807,4802,1029,196,35,6,1,0,262144,65536,12288,2048,320,48,7,1,0,4782969,1062882,177147,26244,3645,486,63,8,1,0,100000000,20000000,3000000,400000,50000,6000,700,80,9,1,0,2357947691,428717762,58461513,7086244,805255,87846,9317,968,99,10,1,0,61917364224
 

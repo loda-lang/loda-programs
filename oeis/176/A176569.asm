@@ -12,6 +12,6 @@ seq $0,40 ; The prime numbers.
 sub $0,$1
 lpb $1
   mov $1,$0
-  mul $0,0
+  mov $0,0
 lpe
 add $0,1

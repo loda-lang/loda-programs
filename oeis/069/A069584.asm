@@ -10,9 +10,9 @@ lpb $0
   mov $2,$0
   add $2,1
   seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
-  sub $2,1
   mov $3,$2
-  equ $3,0
+  equ $3,1
   sub $0,$3
+  sub $2,1
 lpe
 mov $0,$1

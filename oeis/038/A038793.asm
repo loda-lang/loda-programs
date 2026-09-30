@@ -5,9 +5,8 @@
 
 #offset 3
 
-sub $0,3
 mov $1,$0
-add $0,3
+sub $1,3
 bin $0,$1
 pow $1,2
 trn $1,2

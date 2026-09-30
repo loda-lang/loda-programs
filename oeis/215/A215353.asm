@@ -17,8 +17,13 @@ lpb $2
   add $6,1
   sub $1,2
   sub $3,$6
-  add $4,4
-  seq $4,354487 ; Triangle read by rows: T(n,k) is the denominator of the n-th term of the Somos-k sequence, 4 <= k <= n.
+  sub $4,2
+  mul $4,5
+  pow $4,$4
+  mov $7,0
+  trn $7,$4
+  mov $4,$7
+  add $4,1
   mul $4,$3
   add $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
@@ -31,7 +36,7 @@ lpb $2
   add $1,1
   seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $1,1
-  mul $4,0
+  mov $4,0
   sub $0,$1
   mov $5,$0
   max $5,0

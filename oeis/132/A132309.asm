@@ -1,7 +1,7 @@
 ; A132309: A007318^(-1) * A132307.
 ; Submitted by loader3229
 ; 1,2,1,2,5,1,2,5,8,1,2,9,9,11,1,2,9,24,14,14,1,2,13,25,50,20,17,1,2,13,48,55,90,27,20,1,2,17,49,133,105,147,35,23,1,2,17,80,140,308,182,224,44,26,1
-; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n+8)-1)/2),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))-binomial(truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1)),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = 2*binomial(floor((sqrtint(8*n+8)-1)/2),-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))-binomial(truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1)),-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $2,$0

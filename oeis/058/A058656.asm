@@ -10,6 +10,5 @@ add $2,1
 mov $3,$0
 seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 sub $0,$3
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

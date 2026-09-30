@@ -43,7 +43,7 @@ lpb $4
   add $9,$8
   mov $10,1
   add $6,1
-  mul $8,0
+  mov $8,0
 lpe
 mov $0,$9
 mul $0,$1

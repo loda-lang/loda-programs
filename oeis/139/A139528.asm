@@ -1,12 +1,14 @@
-; A139528: Numbers n such that numbers 24n+11 are primes.
+; A139528: Numbers k such that 24*k + 11 is prime.
 ; Submitted by crashtech
 ; 0,2,3,4,5,7,9,10,14,17,18,19,20,23,24,27,28,34,39,40,42,45,48,49,52,53,54,59,60,62,63,65,67,69,74,75,79,80,82,83,84,87,93,94,97,100,102,105,107,112,117,118,122,123,125,128,133,135,137,138,139,140,144,145,147,152,157,158,160,163,164,167,170,172,175,177,178,185,188,189
-; Formula: a(n) = truncate(A168539(n)/24)
+; Formula: a(n) = floor(A273618(n)/24)
 
 #offset 1
 
+mov $2,$0
+seq $2,273618 ; Numbers m = 2*k+1 where k is odd with the property that 3^k mod m = 1 and k^k mod m = 1.
 mov $1,$0
-seq $1,168539 ; Terms of A123239 which are prime in Z(i), Z(rho) and Z(sqrt(2)).
+mov $1,$2
 sub $0,1
-mov $0,$1
+mov $0,$2
 div $0,24

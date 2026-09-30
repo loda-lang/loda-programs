@@ -11,10 +11,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,349447 ; Dirichlet convolution of A003602 (Kimberling's paraphrases) with A326937 (Dirichlet inverse of A000265).
+  seq $3,349447 ; Dirichlet convolution of A003602 (a Kimberling paraphrase) with A326937 (Dirichlet inverse of A000265).
   gcd $3,3
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,4 +1,4 @@
-; A182377: Total sum of positive ranks of all regions in the last shell of n.
+; A182377: Total sum of positive ranks of all regions in the last section of the modular table of partitions of n.
 ; Submitted by Tatadu
 ; 0,0,0,1,2,5,8,14,21,32,45,67,91
 

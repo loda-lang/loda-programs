@@ -14,9 +14,9 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,208645 ; Least x>0 such that x^2+x+n is not prime.
-  sub $3,1
   mov $5,$3
-  neq $3,0
+  sub $5,1
+  neq $3,1
   sub $0,$3
   mov $4,$0
   max $4,0

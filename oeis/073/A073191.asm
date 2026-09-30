@@ -1,6 +1,7 @@
 ; A073191: Number of separate orbits/cycles to which the Catalan bijections A072796/A072797 partition each A000108(n) structures encoded in the range [A014137(n-1)..A014138(n-1)] of the sequence A014486/A063171.
 ; Submitted by CThiede
 ; 1,1,2,4,11,31,96,305,1007,3389,11636,40498,142714,507870,1823040,6591885,23989419,87795473,322922652,1193058230,4425547638,16475756738,61539293424,230548633954,866095934598,3261868457698,12313423931624
+; Formula: a(n) = truncate((floor(binomial(2*n,if(((2*n)%2)==0,(2*n)/2,2*n))/(if(((2*n)%2)==0,(2*n)/2,2*n)+1))+A073190(n))/2)
 
 mov $1,$0
 mul $1,2

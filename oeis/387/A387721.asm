@@ -11,10 +11,9 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,107758 ; (+2)Sigma(n): If n = Product p_i^r_i then a(n) = Product (2 + Sum p_i^s_i, s_i=1 to r_i) = Product (1 + (p_i^(r_i+1)-1)/(p_i-1)), a(1) = 1.
-  sub $3,1
   sub $3,$1
   sub $3,$1
-  trn $3,1
+  trn $3,2
   neq $3,0
   sub $0,$3
   add $1,1

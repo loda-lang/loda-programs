@@ -1,7 +1,6 @@
 ; A144834: Numbers n such that the two numbers n+1 and n+3 are both prime.
 ; Submitted by DukeBox
 ; 2,4,10,16,28,40,58,70,100,106,136,148,178,190,196,226,238,268,280,310,346,418,430,460,520,568,598,616,640,658,808,820,826,856,880,1018,1030,1048,1060,1090,1150,1228,1276,1288,1300,1318,1426,1450,1480,1486,1606,1618,1666,1696,1720,1786,1870,1876,1930,1948,1996,2026,2080,2086,2110,2128,2140,2236,2266,2308,2338,2380,2548,2590,2656,2686,2710,2728,2788,2800
-; Formula: a(n) = 6*A002822(floor(max(2*n-3,0)/2)+1)+2*gcd(max(2*n-3,0)-1,2)-6
 
 #offset 1
 
@@ -9,12 +8,36 @@ sub $0,1
 mov $2,$0
 mul $2,2
 trn $2,1
+mov $7,-3
+mov $8,0
 mov $1,$2
+div $1,2
 sub $2,1
 gcd $2,2
-div $1,2
+mov $4,$1
+add $4,6
+pow $4,3
+lpb $4
+  mov $3,$8
+  add $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$8
+  add $5,3
+  mul $3,$5
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$3
+  mov $6,$1
+  max $6,0
+  equ $6,$1
+  add $7,6
+  mul $4,$6
+  sub $4,18
+  mov $8,$7
+lpe
+mov $1,$7
+div $1,6
 add $1,1
-seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
 mul $1,3
 add $1,$2
 mov $0,$1

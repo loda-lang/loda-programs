@@ -6,11 +6,8 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
 mov $3,$0
-add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-add $3,1
 seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 pow $3,40
 gcd $3,$0

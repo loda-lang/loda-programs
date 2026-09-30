@@ -14,12 +14,10 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $2,$0
-  trn $2,1
-  add $2,1
+  max $2,1
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
   mul $2,$1
-  trn $2,1
-  add $2,1
+  max $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,$2
 lpe

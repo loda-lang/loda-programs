@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,180097 ; Numbers n such that sigma(n) is powerful.
+seq $0,180097 ; Numbers k such that sigma(k) is powerful.
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

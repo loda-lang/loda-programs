@@ -1,7 +1,7 @@
 ; A128137: A002260 * A128132.
 ; Submitted by loader3229
 ; 1,-1,4,-1,1,9,-1,1,5,16,-1,1,5,11,25,-1,1,5,11,19,36,-1,1,5,11,19,29,49,-1,1,5,11,19,29,41,64,-1,1,5,11,19,29,41,55,81,-1,1,5,11,19,29,41,55,71,100
-; Formula: a(n) = (-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate(0^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+n-2)-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate(0^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))+n-1
+; Formula: a(n) = if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,0^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))+(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,0^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1))-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-2)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1
 
 #offset 1
 

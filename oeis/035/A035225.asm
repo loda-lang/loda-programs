@@ -20,7 +20,10 @@ lpb $4
   div $5,2
   mov $6,-1
   pow $6,$5
-  seq $0,11591 ; Legendre symbol (n,43).
+  pow $0,21
+  add $0,1
+  mod $0,43
+  sub $0,1
   mul $0,$6
   mul $1,$0
   add $3,$1

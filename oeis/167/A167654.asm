@@ -1,4 +1,4 @@
-; A167654: Simple zero-divisors of Cayley-Dickson algebras
+; A167654: Simple zero-divisors of Cayley-Dickson algebras.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,0,42,294,1518,6942,29886
 

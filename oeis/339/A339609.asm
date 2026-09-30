@@ -1,6 +1,7 @@
 ; A339609: Consider a triangle drawn on the perimeter of a triangular lattice with side length n. a(n) is the number of regions inside the triangle after drawing unit circles centered at each lattice point inside the triangle.
 ; Submitted by loader3229
 ; 0,0,4,10,22,39,61,88,120,157,199,246,298,355,417,484,556,633,715,802,894,991,1093,1200,1312,1429,1551,1678,1810,1947,2089,2236,2388,2545,2707,2874,3046,3223,3405,3592,3784,3981,4183,4390,4602,4819,5041,5268,5500,5737
+; Formula: a(n) = b(n-1), b(n) = 3*c(n-1)+2*c(n-3)+n-2, b(4) = 22, b(3) = 10, b(2) = 4, b(1) = 0, b(0) = 0, c(n) = c(n-1)+n, c(4) = 10, c(3) = 6, c(2) = 3, c(1) = 1, c(0) = 0
 
 #offset 1
 

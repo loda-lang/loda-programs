@@ -8,6 +8,5 @@
 mov $2,$0
 seq $2,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
 add $2,1
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

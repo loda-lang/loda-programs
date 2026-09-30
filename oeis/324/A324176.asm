@@ -13,9 +13,8 @@ lpb $2
   mov $8,$3
   nrt $8,2
   div $3,3
+  nrt $3,2
   mov $7,$3
-  nrt $7,2
-  mov $3,$7
   add $3,$8
   mov $5,$3
   gcd $5,$6

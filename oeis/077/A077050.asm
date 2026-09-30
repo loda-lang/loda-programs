@@ -1,7 +1,7 @@
 ; A077050: Left Moebius transformation matrix, M, by antidiagonals.
 ; Submitted by DukeBox
 ; 1,-1,0,-1,1,0,0,0,0,0,-1,-1,1,0,0,1,0,0,0,0,0,-1,-1,0,1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,1
-; Formula: a(n) = A008683(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))*((-truncate((truncate((sqrtint(8*n)+1)/2)+1)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2)+1)==0)
+; Formula: a(n) = A008683(truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)))*((-truncate((floor((sqrtint(8*n)+1)/2)+1)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2)+1)==0)
 
 #offset 1
 

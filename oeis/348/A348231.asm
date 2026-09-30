@@ -10,6 +10,5 @@ mul $1,2
 sub $0,1
 mul $1,$0
 add $1,8
-mul $0,0
-add $0,$1
+mov $0,$1
 max $0,1

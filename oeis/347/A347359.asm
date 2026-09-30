@@ -1,7 +1,7 @@
 ; A347359: Decimal expansion of Product_{p in A077800} (1 - 1/p).
 ; Submitted by shiva
 ; 1,2,9,3,3,7,1,7
-; Formula: a(n) = -10*truncate((binomial(2*n,2*n-2)+max(truncate((2*n+binomial(2*n,2*n-2)-2)^binomial(2*n,2*n-2))-2,0)+1)/10)+binomial(2*n,2*n-2)+max(truncate((2*n+binomial(2*n,2*n-2)-2)^binomial(2*n,2*n-2))-2,0)+1
+; Formula: a(n) = -10*truncate((binomial(2*n,2*n-2)+max(if(((2*n+binomial(2*n,2*n-2)-2)^2)==1,(2*n+binomial(2*n,2*n-2)-2)^binomial(2*n,2*n-2),if(binomial(2*n,2*n-2)<=(-1),0,(2*n+binomial(2*n,2*n-2)-2)^binomial(2*n,2*n-2)))-2,0)+1)/10)+binomial(2*n,2*n-2)+max(if(((2*n+binomial(2*n,2*n-2)-2)^2)==1,(2*n+binomial(2*n,2*n-2)-2)^binomial(2*n,2*n-2),if(binomial(2*n,2*n-2)<=(-1),0,(2*n+binomial(2*n,2*n-2)-2)^binomial(2*n,2*n-2)))-2,0)+1
 
 mul $0,2
 mov $1,$0

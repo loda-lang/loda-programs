@@ -1,6 +1,7 @@
 ; A060386: In base ten, we try to get the digits 0,1,2,3,...,9,0,1,2,3,... in order only using primes and each time choosing the smallest prime that will give the desired digit.
 ; Submitted by loader3229
 ; 101,11,2,3,41,5,61,7,83,19,101,11,2,3,41,5,61,7,83,19,101,11,2,3,41,5,61,7,83,19,101,11,2,3,41,5,61,7,83,19,101,11,2,3,41,5,61,7,83,19,101,11,2,3,41,5,61,7,83,19,101
+; Formula: a(n) = a(n-10), a(9) = 19, a(8) = 83, a(7) = 7, a(6) = 61, a(5) = 5, a(4) = 41, a(3) = 3, a(2) = 2, a(1) = 11, a(0) = 101
 
 mov $2,101
 mov $3,11

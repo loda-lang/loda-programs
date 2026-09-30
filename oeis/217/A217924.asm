@@ -12,7 +12,7 @@ lpb $0
   mod $6,2
   mul $6,2
   mov $4,$2
-  seq $4,23 ; Expansion of e.g.f. exp(-2*x)/(1-x).
+  seq $4,23 ; a(n) is the number of permutations on {1,2,...,n} with an even number of fixed points minus the number of permutations with an odd number of fixed points.
   mul $6,$4
   sub $4,$6
   mov $5,$2

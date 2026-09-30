@@ -20,7 +20,6 @@ nrt $3,2
 add $3,1
 div $3,2
 pow $3,2
+div $0,$3
 mov $4,$0
-div $4,$3
-mov $0,$4
 add $0,1

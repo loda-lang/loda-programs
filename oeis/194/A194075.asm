@@ -1,7 +1,7 @@
 ; A194075: Natural interspersion of A194073; a rectangular array, by antidiagonals.
 ; Submitted by loader3229
 ; 1,4,2,7,5,3,13,8,6,10,19,14,9,16,11,28,20,15,22,17,12,37,29,21,31,23,18,25,49,38,30,40,32,24,34,26,61,50,39,52,41,33,43,35,27,76,62,51,64,53,42,55,44,36,46,91,77,63,79,65,54,67,56,45,58,47,109,92,78
-; Formula: a(n) = 3*floor(((2*truncate((-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1)/3)-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)^2)/4)-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n
+; Formula: a(n) = 3*floor(((2*truncate((-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1)/3)-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^2)/4)-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n
 
 #offset 1
 

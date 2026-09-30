@@ -18,8 +18,7 @@ lpb $2
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   bxo $6,$3
-  add $3,2
-  neq $3,0
+  neq $3,-2
   sub $0,$3
   add $1,1
   mov $4,$0

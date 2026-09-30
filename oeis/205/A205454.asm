@@ -1,7 +1,7 @@
 ; A205454: s(k)-s(j), where (k,j) is the least pair for which n divides s(k)-s(j), and s(j)=Fibonacci(2j).
 ; Submitted by Science United
 ; 2,2,18,20,5,18,7,136,18,20,143,984,13,322,46365,2576,34,18,6764,20,966,374,322,984,75025,52,54,2576,986,317790,2178308,832032,46365,34,17710,46224,4181,6764,2178306,2440,123,966,39603,2178308,317790
-; Formula: a(n) = -A052925(-binomial(floor((sqrtint(8*A205449(n))+1)/2),2)+A205449(n))+A052925(truncate((sqrtint(8*A205449(n))-1)/2)+2)
+; Formula: a(n) = -A052925(-binomial(floor((sqrtint(8*A205449(n))+1)/2),2)+A205449(n))+A052925(floor((sqrtint(8*A205449(n))-1)/2)+2)
 
 #offset 1
 

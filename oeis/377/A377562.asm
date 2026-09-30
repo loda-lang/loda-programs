@@ -4,11 +4,10 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,6
+add $0,5
 mov $1,2
-add $2,9
+add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
@@ -16,8 +15,7 @@ lpb $2
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   dir $3,2
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $3,1
-  equ $3,3
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -13,8 +13,7 @@ lpb $2
   add $1,1
   mov $3,$1
   seq $3,343638 ; a(n) = (Sum of decimal digits of 3*n) / 3.
-  add $3,1
-  equ $3,5
+  equ $3,4
   add $1,$5
   add $1,1
   mov $5,8
@@ -27,6 +26,5 @@ lpb $2
 lpe
 mov $0,$1
 div $0,30
-mul $0,9
-add $0,1
-mul $0,10
+mul $0,90
+add $0,10

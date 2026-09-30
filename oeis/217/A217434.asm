@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $1,$0
 mov $0,$1

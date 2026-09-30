@@ -1,23 +1,45 @@
-; A202520: Denominator of [x^(4n+2)] in the Taylor series log(cosec(x)*sinh(x))= x^2/3 +2*x^6/2835 +2*x^10/467775 +4*x^14/127702575 +...
+; A202520: Denominator of [x^(4n+2)] in the Taylor series log(cosec(x)*sinh(x)).
 ; Submitted by PDW
 ; 3,2835,467775,127702575,350813659321125,147926426347074375,144228265688397515625,84913182070036240111050234375,206217727884373725983979140625,45665884751355139750522260795703125,48463572986198162681964482985158015982421875,176412350932310924219767245054034888177646484375
 
 mov $2,$0
 mul $2,4
 add $2,1
-seq $2,350972 ; E.g.f. = tan(x).
+mov $6,0
+mov $9,0
+mov $10,0
+mov $5,1
+mov $8,$2
+lpb $2
+  sub $2,1
+  div $10,2
+  add $10,$6
+  mul $10,2
+  mov $6,$5
+  pow $6,$8
+  sub $6,$10
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $5,1
+  mul $9,-1
+  add $9,$7
+lpe
 mul $0,2
 mov $1,$0
 add $1,1
 mov $3,4
 pow $3,$1
 bin $3,2
+gcd $2,$9
 gcd $2,$3
 mov $1,$3
 div $1,$2
 add $0,1
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,0
+sub $4,$0
+fac $0,$4
 mul $1,$0
 mov $0,$1
 dir $0,2

@@ -13,7 +13,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     add $7,1
-    seq $7,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+    seq $7,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently, the 2-adic valuation of 2n.
     mov $9,10
     add $9,$5
     mul $7,$$9

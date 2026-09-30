@@ -11,10 +11,11 @@ lpb $3
   mov $5,$4
   mul $5,2
   lpb $5
-    mul $0,-1
     mov $1,$0
+    mul $0,-1
     div $0,2
     sub $0,2
+    mul $1,-1
     mod $1,2
     equ $1,0
     sub $5,$1

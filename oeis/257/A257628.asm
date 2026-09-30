@@ -1,6 +1,7 @@
 ; A257628: Expansion of 1 - f(-x) in powers of x where f() is a Ramanujan theta function.
 ; Submitted by loader3229
 ; 0,1,1,0,0,-1,0,-1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,-1,0,0,0,-1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
+; Formula: a(n) = (binomial(0,n)-1)*if(((binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1)-3*truncate((binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1))/3))%(-2))==0,(binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1)-3*truncate((binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1))/3))/(-2),binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1)-3*truncate((binomial(3*n-binomial(floor((sqrtint(24*n+8)-1)/2)+1,2)-1,floor((sqrtint(24*n+8)-1)/2))*(2*floor((sqrtint(24*n+8)-1)/2)+1))/3))
 
 bin $1,$0
 sub $1,1

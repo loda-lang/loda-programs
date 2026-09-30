@@ -31,6 +31,6 @@ lpb $1
   mov $7,$6
   add $6,$5
   add $3,1
-  mul $5,0
+  mov $5,0
 lpe
 mov $0,$7

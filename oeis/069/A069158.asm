@@ -1,4 +1,4 @@
-; A069158: a(n) = Product{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
+; A069158: a(n) = Product_{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
 ; Submitted by kpmonaghan
 ; 1,-1,-1,0,-1,1,-1,0,0,1,-1,0,-1,1,1,0,-1,0,-1,0,1,1,-1,0,0,1,0,0,-1,1,-1,0,1,1,1,0,-1,1,1,0,-1,1,-1,0,0,1,-1,0,0,0,1,0,-1,0,1,0,1,1,-1,0,-1,1,0,0,1,1,-1,0,1,1,-1,0,-1,1,0,0,1,1,-1,0
 

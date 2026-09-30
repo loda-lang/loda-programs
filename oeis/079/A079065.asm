@@ -6,7 +6,7 @@
 sub $0,1
 lpb $0
   add $0,1
-  seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).
   mul $0,3
   sub $0,1
 lpe

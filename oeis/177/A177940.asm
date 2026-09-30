@@ -9,8 +9,7 @@ mov $1,10
 pow $1,$0
 mov $0,$1
 div $0,9
-mul $0,9
-add $0,1
-mul $0,19
+mul $0,171
+add $0,19
 div $0,89
 mod $0,10

@@ -1,7 +1,7 @@
 ; A274048: a(n) = A116640(A018900(n)) = A116623(A059893(A018900(n))).
 ; Submitted by Science United
 ; 19,23,29,31,37,49,47,53,65,89,79,85,97,121,169,143,149,161,185,233,329,271,277,289,313,361,457,649,527,533,545,569,617,713,905,1289,1039,1045,1057,1081,1129,1225,1417,1801
-; Formula: a(n) = 4*truncate(2^truncate((sqrtint(8*n)-1)/2))+3*truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))+9
+; Formula: a(n) = 4*2^floor((sqrtint(8*n)-1)/2)+3*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))+9
 
 #offset 1
 

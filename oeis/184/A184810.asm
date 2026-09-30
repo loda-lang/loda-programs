@@ -12,8 +12,15 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
+  mov $5,$3
+  pow $5,2
+  mul $5,6
+  nrt $5,2
   add $3,1
-  seq $3,276856 ; First differences of the Beatty sequence A022840 for sqrt(6).
+  pow $3,2
+  mul $3,6
+  nrt $3,2
+  sub $3,$5
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

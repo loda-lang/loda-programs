@@ -10,7 +10,7 @@ lpb $0
   mov $5,2
   pow $5,$2
   mov $3,$1
-  seq $3,309728 ; G.f. A(x) satisfies: A(x) = A(x^2) / (1 - 2*x).
+  seq $3,309728 ; G.f. A(x) satisfies A(x) = A(x^2) / (1 - 2*x), with A(0) = 1.
   add $1,1
   mov $2,$5
   mul $2,$3

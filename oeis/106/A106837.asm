@@ -20,8 +20,7 @@ lpb $5
   pow $7,$6
   gcd $7,$6
   mov $6,$7
-  sub $6,2
-  equ $6,0
+  equ $6,2
   sub $3,$6
   add $4,1
   sub $5,$3

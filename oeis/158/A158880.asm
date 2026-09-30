@@ -7,7 +7,7 @@
 
 mov $1,$0
 seq $1,1109 ; a(n)^2 is a triangular number: a(n) = 6*a(n-1) - a(n-2) with a(0)=0, a(1)=1.
-seq $0,6238 ; Complexity of (or spanning trees in) a 3 X n grid.
+seq $0,6238 ; Number of spanning trees in the 3 X n grid graph.
 mul $1,$0
 mul $0,$1
 mul $0,6

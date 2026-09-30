@@ -11,11 +11,16 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $5,$0
   seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-  seq $0,33452 ; "STIRLING" transform of squares A000290.
+  mov $6,$0
+  add $0,2
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  add $6,1
+  seq $6,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $6,2
+  sub $0,$6
   add $0,$5
   mov $4,$3
   mul $4,$0

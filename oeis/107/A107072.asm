@@ -19,9 +19,9 @@ lpb $2
   equ $4,$0
   mul $2,$4
   sub $2,18
-  add $5,1009
   mov $1,$5
-  add $5,12
+  add $1,1009
+  add $5,1021
 lpe
 mov $0,$1
 div $0,1021

@@ -5,12 +5,10 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,215653 ; a(n) = smallest positive m such that m^2 = 1+k*n with positive k.
 sub $0,1
-trn $1,1
+trn $1,2
 min $1,1
 mul $0,$1
 add $0,1

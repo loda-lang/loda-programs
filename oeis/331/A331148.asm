@@ -1,7 +1,7 @@
 ; A331148: Triangle read by rows: T(n,k) (n>=k>=1) = f(n,n-k+1) where f(n,k) =  floor((n/k)*floor(n/k)).
 ; Submitted by loader3229
 ; 1,1,4,1,1,9,1,1,4,16,1,1,1,5,25,1,1,1,4,9,36,1,1,1,1,4,10,49,1,1,1,1,4,5,16,64,1,1,1,1,1,4,9,18,81,1,1,1,1,1,4,5,10,25,100,1,1,1,1,1,1,4,5,11,27,121,1,1,1,1,1,1,4,4,9,16,36,144,1,1
-; Formula: a(n) = truncate((truncate((truncate((sqrtint(8*n)-1)/2)+1)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-truncate((sqrtint(8*n)-1)/2)+n-2))*(truncate((sqrtint(8*n)-1)/2)+1))/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-truncate((sqrtint(8*n)-1)/2)+n-2))
+; Formula: a(n) = truncate((truncate((floor((sqrtint(8*n)-1)/2)+1)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-2))*(floor((sqrtint(8*n)-1)/2)+1))/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-2))
 
 #offset 1
 

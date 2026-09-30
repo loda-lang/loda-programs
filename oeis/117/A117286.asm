@@ -16,8 +16,7 @@ lpb $2
   sub $5,1
   mov $3,$1
   sub $3,$5
-  trn $3,1
-  add $3,1
+  max $3,1
   mov $7,$3
   mul $7,8
   nrt $7,2

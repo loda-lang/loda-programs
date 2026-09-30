@@ -7,12 +7,11 @@
 
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 seq $0,40 ; The prime numbers.
+mul $0,20
 mov $2,$0
-mul $2,20
-mov $0,$2
 sub $0,37
 div $0,20
 add $0,2
-seq $1,14401 ; Denominators of coefficients of expansion of Bessel function J_3(x).
+seq $1,14401 ; Denominators of coefficients of odd powers of x of the expansion of Bessel function J_3(x).
 gcd $1,$0
 div $0,$1

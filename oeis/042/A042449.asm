@@ -14,9 +14,9 @@ lpb $0
   min $5,$7
   seq $1,40329 ; Continued fraction for sqrt(348).
   add $1,$5
-  div $1,2
   mov $3,$1
-  div $1,8
+  div $3,2
+  div $1,16
   add $1,$3
   gcd $6,$1
   add $1,2

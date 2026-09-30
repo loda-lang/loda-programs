@@ -7,10 +7,9 @@ mov $3,$0
 lpb $0
   sub $1,$0
   trn $1,3
-  sub $0,1
-  trn $0,1
   add $2,$3
   mov $3,$1
+  trn $0,2
   mov $1,$2
 lpe
 mov $0,$1

@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 mov $2,$0
 mul $2,8
 nrt $2,2
@@ -25,8 +24,7 @@ lpb $5
   div $5,2
   mov $0,$6
   add $0,$5
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,7604 ; a(n) = a(n-1) + a(n-1-(number of odd terms so far)).
   mov $4,$5
   mul $4,$0

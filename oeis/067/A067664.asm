@@ -16,9 +16,9 @@ lpb $2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $7,$3
   pow $7,2
-  add $7,1
   mov $9,$7
-  equ $9,1
+  equ $9,0
+  add $7,1
   mov $8,$7
   seq $8,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $8,$9

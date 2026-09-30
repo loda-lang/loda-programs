@@ -11,11 +11,34 @@ lpb $3
   sub $3,24
   mov $4,$2
   add $4,1
-  seq $4,279204 ; Numbers whose decimal expansion is a concatenation of 4 consecutive increasing nonnegative numbers.
+  mov $7,$2
+  add $7,2
+  mov $9,$7
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $4,$8
+  add $4,$9
+  add $9,1
+  mov $7,$9
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $4,$8
+  add $4,$9
+  add $9,1
+  mov $7,$9
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $4,$8
+  add $4,$9
   mov $6,$4
   gcd $4,4
-  add $4,1
-  equ $4,5
+  equ $4,4
   sub $1,$4
   add $2,2
   mov $5,$1

@@ -9,7 +9,6 @@ seq $0,13929 ; Numbers that are not squarefree. Numbers that are divisible by a 
 mov $2,$0
 seq $2,392108 ; a(n) = smallest prime with exponent > 1 in the prime factorization of n, or 0 if no such prime exists.
 sub $0,1
+div $0,$2
 mov $1,$0
-div $1,$2
-mov $0,$1
 add $0,1

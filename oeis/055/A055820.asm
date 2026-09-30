@@ -5,11 +5,11 @@
 
 #offset 3
 
-sub $0,3
 mov $1,$0
-add $0,5
+add $0,2
 bin $0,3
 sub $0,7
+sub $1,3
 max $1,1
 mul $1,2
 sub $0,$1

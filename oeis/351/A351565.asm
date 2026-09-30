@@ -1,6 +1,7 @@
-; A351565: Odd part of Kimberling's paraphrases: a(n) = A000265(A003602(n)).
+; A351565: Odd part of Kimberling's paraphrase of the binary number system: a(n) = A000265(A003602(n)).
 ; Submitted by Fardringle
 ; 1,1,1,1,3,1,1,1,5,3,3,1,7,1,1,1,9,5,5,3,11,3,3,1,13,7,7,1,15,1,1,1,17,9,9,5,19,5,5,3,21,11,11,3,23,3,3,1,25,13,13,7,27,7,7,1,29,15,15,1,31,1,1,1,33,17,17,9,35,9,9,5,37,19,19,5,39,5,5,3
+; Formula: a(n) = floor((n/(4^valuation(n,4))+2)/2)/(2^valuation(floor((n/(4^valuation(n,4))+2)/2),2))
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A053864: A second-order generalization of the Mobius function of n.
 ; Submitted by http://kodeks.karelia.ru/
 ; 1,1,1,-1,1,1,1,0,-1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,-1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,-1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0
-; Formula: a(n) = truncate(A189021(n)^A000005(n))
+; Formula: a(n) = if((A189021(n)^2)==1,A189021(n)^A000005(n),if(A000005(n)<=(-1),0,A189021(n)^A000005(n)))
 
 #offset 1
 

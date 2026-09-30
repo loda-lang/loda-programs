@@ -1,6 +1,7 @@
 ; A278614: Sum of terms in level n of TRIP -  Stern sequence associated with permutation triple (e,12,12).
 ; Submitted by loader3229
 ; 3,8,22,62,176,502,1434,4100,11726,33542,95952,274494,785266,2246484,6426742,18385646,52597744,150471910,430470890,1231493604
+; Formula: a(n) = 3*a(n-1)-4*a(n-3)+a(n-2), a(5) = 502, a(4) = 176, a(3) = 62, a(2) = 22, a(1) = 8, a(0) = 3
 
 mov $1,3
 mov $2,8

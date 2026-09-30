@@ -1,6 +1,6 @@
 ; A081245: Number of days in months in the Haab year of Mayan/Mesoamerican calendars.
 ; 20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5
-; Formula: a(n) = 15*truncate(binomial(2,gcd(n,19))/2)+5
+; Formula: a(n) = 15*floor(binomial(2,gcd(n,19))/2)+5
 
 #offset 1
 

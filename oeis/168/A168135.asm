@@ -11,7 +11,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,168201 ; Number of representations of n in the form 7*k+11*m (with nonnegative k, m).
+  mul $3,2
+  add $3,7
+  div $3,7
+  mov $5,$1
+  mul $5,3
+  add $5,10
+  div $5,11
+  sub $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

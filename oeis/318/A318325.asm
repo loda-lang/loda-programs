@@ -15,11 +15,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $4,1
-  sub $0,1
   mov $5,$0
-  add $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $5,1
   seq $5,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
   div $5,$0
   add $5,$0

@@ -1,4 +1,4 @@
-; A384186: Number of permutations of 1, 2,..., n with exactly one rising or falling successon, namely (n-1)n or n(n-1).
+; A384186: Number of permutations of 1, 2,..., n with exactly one rising or falling succession, namely (n-1)n or n(n-1).
 ; Submitted by Goldislops
 ; 0,2,2,2,6,34,214,1506,11990,107234,1065846,11659426,139217494,1801784610,25124797046,375531165794,5989287277014,101524201538146,1822662037112950,34548339122512674,689469487015534166,14450128299126915746
 ; Formula: a(n) = 2*d(n-1), b(n) = c(n-2), b(5) = 90, b(4) = 14, b(3) = 2, b(2) = 0, b(1) = 0, b(0) = 1, c(n) = -c(n-3)*(n-2)+c(n-1)*(n+4)+c(n-2)*(-n-1)+n*c(n-4), c(7) = 479306, c(6) = 47622, c(5) = 5242, c(4) = 646, c(3) = 90, c(2) = 14, c(1) = 2, c(0) = 0, d(n) = b(n-1)+d(n-1), d(5) = 17, d(4) = 3, d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 0

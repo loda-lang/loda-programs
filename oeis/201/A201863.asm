@@ -32,7 +32,40 @@ lpb $2
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,53118 ; Triangle of coefficients of Chebyshev's U(n,x) polynomials (exponents in decreasing order).
+  mov $9,0
+  gcd $9,$5
+  add $9,1
+  mov $11,$9
+  mul $11,8
+  nrt $11,2
+  sub $11,1
+  div $11,2
+  mov $10,$11
+  add $10,1
+  bin $10,2
+  sub $9,$10
+  sub $9,1
+  mov $10,-1
+  bin $10,$9
+  mul $11,-1
+  sub $11,1
+  add $11,$9
+  div $9,2
+  bin $11,$9
+  add $5,1
+  max $10,0
+  mul $10,$11
+  mov $12,$5
+  mul $5,8
+  nrt $5,2
+  add $5,3
+  div $5,2
+  bin $5,2
+  sub $5,$12
+  mov $13,2
+  pow $13,$5
+  mov $5,$13
+  mul $5,$10
   mul $4,$5
   add $6,$4
 lpe

@@ -11,8 +11,7 @@ lpb $0
   mov $3,$2
   sub $3,2
   lpb $3
-    sub $3,1
-    equ $3,2
+    equ $3,3
     add $3,$0
     add $1,1
     mov $2,1

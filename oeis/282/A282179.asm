@@ -13,7 +13,7 @@ lpb $4
   add $1,$4
   bin $1,$0
   mov $5,$3
-  seq $0,78468 ; Distinct compositions of the complete graph with one edge removed (K^-_n).
+  seq $0,78468 ; Distinct compositions of the complete graph on n+2 vertices with one edge removed (K^-_{n+2}).
   mul $1,$0
   add $3,$1
 lpe

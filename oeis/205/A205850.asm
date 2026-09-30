@@ -14,8 +14,7 @@ lpb $3
   seq $4,204922 ; Ordered differences of Fibonacci numbers.
   mov $6,$4
   gcd $4,4
-  add $4,1
-  equ $4,5
+  equ $4,4
   sub $1,$4
   add $2,1
   mov $5,$1

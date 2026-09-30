@@ -1,6 +1,7 @@
 ; A373156: a(n) = 1 if the 2-adic and the 3-adic valuations of n are equal, otherwise 0.
 ; Submitted by Ralfy
 ; 1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0
+; Formula: a(n) = (floor((n/(6^valuation(n,6))+1)/3)+1)%2
 
 #offset 1
 

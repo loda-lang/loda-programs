@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   seq $3,338854 ; Product of the nonzero digits of (n written in base 4).
   div $3,3
-  sub $3,3
-  equ $3,3
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

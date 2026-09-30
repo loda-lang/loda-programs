@@ -7,9 +7,8 @@
 mov $1,$0
 mov $6,1
 dif $0,2
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 mov $4,$0
 mul $4,8
 nrt $4,2

@@ -7,11 +7,11 @@
 
 sub $0,1
 sub $1,$0
-add $0,3
 mov $2,$0
-add $0,3
+add $0,6
 pow $0,2
 div $0,4
+add $2,3
 pow $2,2
 div $2,2
 mul $2,$0

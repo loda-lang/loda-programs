@@ -1,7 +1,7 @@
 ; A136157: Triangle by columns, (3, 1, 0, 0, 0, ...) in every column.
 ; Submitted by loader3229
 ; 3,1,3,0,1,3,0,0,1,3,0,0,0,1,3,0,0,0,0,1,3,0,0,0,0,0,1,3,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,1,3,0,0
-; Formula: a(n) = binomial(3,-binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+n+2)
+; Formula: a(n) = binomial(3,-binomial(floor((sqrtint(8*n+8)-1)/2)+2,2)+n+2)
 
 add $0,1
 mov $1,$0

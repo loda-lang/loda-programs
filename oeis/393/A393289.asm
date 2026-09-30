@@ -1,13 +1,12 @@
 ; A393289: Genus of the n-path complement graph.
 ; Submitted by Science United
-; 0,0,0,0,0,0,1,1,2,3,3,5,6,7
+; 0,0,0,0,0,0,1,1,2,3,3,5,6,7,9,11,13,15,17,20,23,25,28,32,35
 ; Formula: a(n) = floor(((2*floor(n/4)+2*n-5)^2)/120)
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 div $0,4
 add $0,$1
 mul $0,2

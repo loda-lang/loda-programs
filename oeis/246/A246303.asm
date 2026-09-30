@@ -19,7 +19,7 @@ lpb $3
   gcd $4,2
   sub $1,$4
   add $1,1
-  pow $4,0
+  mov $4,1
   add $4,$2
   add $2,$5
   mov $5,$1

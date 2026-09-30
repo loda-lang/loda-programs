@@ -11,8 +11,7 @@ bin $2,2
 lpb $2
   mov $3,$1
   seq $3,31347 ; Multiplicative digital root of n (keep multiplying digits of n until reaching a single digit).
-  sub $3,4
-  equ $3,2
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

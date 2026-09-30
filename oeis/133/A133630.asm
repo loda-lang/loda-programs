@@ -13,9 +13,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,133621 ; Numbers k such that binomial(k+p,k) mod k = 1, where p=10.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1
   min $3,1

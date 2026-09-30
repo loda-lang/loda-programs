@@ -1,7 +1,7 @@
 ; A364653: Domination number of the n-Lucas cube graph.
 ; Submitted by BrandyNOW
 ; 1,1,1,3,4,5,7,11,16,23,35
-; Formula: a(n) = floor((16*truncate(3^(n-4)))/(2^(n-1)))+1
+; Formula: a(n) = floor((16*if((n-4)<=(-1),0,3^(n-4)))/(2^(n-1)))+1
 
 #offset 1
 

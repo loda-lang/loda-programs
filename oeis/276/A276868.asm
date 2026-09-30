@@ -1,7 +1,7 @@
-; A276868: First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
+; A276868: First differences of the Beatty sequence A276855 for 3 + phi, where phi = golden ratio = (1 + sqrt(5))/2.
 ; Submitted by Science United
 ; 4,5,4,5,5,4,5,4,5,5,4,5,5,4,5,4,5,5,4,5,4,5,5,4,5,5,4,5,4,5,5,4,5,5,4,5,4,5,5,4,5,4,5,5,4,5,5,4,5,4,5,5,4,5,4,5,5,4,5,5,4,5,4,5,5,4,5,5,4,5,4,5,5,4,5,4,5,5,4,5
-; Formula: a(n) = -truncate((sqrtint(5*(n-1)^2)+n-1)/2)-2*truncate((-truncate((sqrtint(5*(n-1)^2)+n-1)/2)+sqrtint(5*(truncate((sqrtint(5*(n-1)^2)+n-1)/2)+2)^2))/2)+sqrtint(5*(truncate((sqrtint(5*(n-1)^2)+n-1)/2)+2)^2)+4
+; Formula: a(n) = -floor((sqrtint(5*(n-1)^2)+n-1)/2)-2*truncate((-floor((sqrtint(5*(n-1)^2)+n-1)/2)+sqrtint(5*(floor((sqrtint(5*(n-1)^2)+n-1)/2)+2)^2))/2)+sqrtint(5*(floor((sqrtint(5*(n-1)^2)+n-1)/2)+2)^2)+4
 
 #offset 1
 

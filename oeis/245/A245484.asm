@@ -40,9 +40,8 @@ lpb $2
   bin $8,2
   sub $5,$8
   add $5,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $11,$5
-  seq $11,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  mov $5,$11
   mul $5,$10
   mov $7,$0
   mul $7,8

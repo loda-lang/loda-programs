@@ -14,8 +14,7 @@ lpb $2
   seq $3,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
   dif $3,2
   gcd $3,4
-  add $3,2
-  equ $3,4
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

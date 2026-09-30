@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,40 ; The prime numbers.
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   mov $4,$3

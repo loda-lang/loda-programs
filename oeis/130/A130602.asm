@@ -1,7 +1,7 @@
 ; A130602: A shell geometric model of the atomic nucleus.
 ; Submitted by crashtech
 ; 11,1111,11,111111,11,1111,11111111,1111,11,111111,1111111111,111111,11,1111,11111111,111111111111,11111111,1111,11,111111,1111111111,11111111111111,1111111111,111111,11,1111,11111111,111111111111
-; Formula: a(n) = floor(truncate(10^(2*min(2*n-sqrtint(2*n-2)^2-2,(sqrtint(2*n-2)+1)^2-2*n+1)+3))/90)
+; Formula: a(n) = floor(if((2*min(2*n-sqrtint(2*n-2)^2-2,(sqrtint(2*n-2)+1)^2-2*n+1)+3)<=(-1),0,10^(2*min(2*n-sqrtint(2*n-2)^2-2,(sqrtint(2*n-2)+1)^2-2*n+1)+3))/90)
 
 #offset 1
 

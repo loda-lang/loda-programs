@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,84339 ; 7*n digit-reversed mod 7.
-  sub $3,4
-  equ $3,2
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,7 +1,7 @@
 ; A138711: n-th run has length n-th positive triangular number, with digits 0 and 1 only, starting with 1.
 ; Submitted by loader3229
 ; 1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = ((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))-2*truncate((((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3))/2)+sqrtnint(6*n-6,3)
+; Formula: a(n) = (((n-1)>=binomial(sqrtnint(6*n-6,3)+2,3))+sqrtnint(6*n-6,3))%2
 
 #offset 1
 

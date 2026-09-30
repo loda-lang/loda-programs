@@ -18,10 +18,12 @@ lpb $0
   bin $3,2
   mov $6,$5
   sub $6,$3
-  seq $6,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $9,0
+  sub $9,$6
   mov $4,$2
   seq $4,522 ; Total number of ordered k-tuples (k=0..n) of distinct elements from an n-element set: a(n) = Sum_{k=0..n} n!/k!.
   sub $4,1
+  fac $6,$9
   mov $7,$5
   seq $7,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   div $7,$6

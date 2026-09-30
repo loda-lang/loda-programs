@@ -4,11 +4,9 @@
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-add $0,1
 mov $4,$0
-add $2,5
+mov $2,$0
+add $2,4
 lpb $2
   max $3,$4
   mul $3,2

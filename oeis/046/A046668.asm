@@ -1,4 +1,4 @@
-; A046668: Numbers n such that partition function p(n) divides n!.
+; A046668: Numbers m such that partition function p(m) divides m!.
 ; Submitted by [AF] Kalianthys
 ; 1,2,3,7,9,10,11,12,14,15,16,17,18,19,20,21,24,28,32,33,39
 

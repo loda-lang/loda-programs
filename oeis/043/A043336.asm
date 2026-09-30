@@ -12,8 +12,7 @@ mul $2,8
 lpb $2
   mov $3,$1
   seq $3,160380 ; a(0) = 0; for n >= 1, a(n) = number of 0's in base-4 representation of n.
-  sub $3,4
-  equ $3,1
+  equ $3,5
   sub $0,$3
   add $1,4
   mov $4,$0

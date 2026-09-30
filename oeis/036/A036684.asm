@@ -13,8 +13,17 @@ lpb $4
   bin $1,$0
   add $2,1
   add $0,$4
-  add $0,1
-  seq $0,139798 ; Coefficient of x^5 in (1-x-x^2)^(-n).
+  mov $5,$0
+  add $5,1
+  add $0,31
+  mul $0,$5
+  add $0,215
+  mul $0,$5
+  add $0,450
+  mul $0,$5
+  add $0,264
+  mul $0,$5
+  div $0,120
   mul $1,$0
   add $3,$1
 lpe

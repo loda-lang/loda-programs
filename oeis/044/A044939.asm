@@ -1,4 +1,4 @@
-; A044939: Number of runs of even length in base-8 representation of n.
+; A044939: Number of runs of even length in the base-8 representation of n.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0
 

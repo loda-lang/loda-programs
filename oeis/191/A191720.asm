@@ -11,8 +11,14 @@ lpb $0
   mov $6,$2
   mod $6,2
   mov $4,$2
-  seq $4,165233 ; Signed denominators of terms in series expansion of cos(x)+sin(x).
-  mul $6,$4
+  div $4,2
+  mov $8,-1
+  pow $8,$4
+  mov $7,1
+  fac $7,$2
+  mul $7,$8
+  mul $6,$7
+  mov $4,$7
   sub $4,$6
   mov $5,$2
   add $5,$3

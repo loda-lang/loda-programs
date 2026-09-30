@@ -4,9 +4,8 @@
 
 mov $1,$0
 div $0,2
-mul $0,2
 mov $4,$0
-div $0,2
+mul $4,2
 lpb $0
   mov $5,$4
   bin $5,$0

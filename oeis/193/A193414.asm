@@ -16,8 +16,7 @@ lpb $2
   bin $3,2
   sub $3,$5
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   add $5,2
   sub $0,$3
   add $1,1

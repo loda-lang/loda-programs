@@ -1,7 +1,7 @@
 ; A166282: Matrix inverse of Sierpinski's triangle (A047999, Pascal's triangle mod 2).
 ; Submitted by loader3229
 ; 1,-1,1,-1,0,1,1,-1,-1,1,-1,0,0,0,1,1,-1,0,0,-1,1,1,0,-1,0,-1,0,1,-1,1,1,-1,1,-1,-1,1,-1,0,0,0,0,0,0,0,1,1,-1,0,0,0,0,0,0,-1,1,1,0,-1,0,0,0,0,0,-1,0,1,-1,1,1,-1,0,0,0,0,1,-1,-1,1,1,0
-; Formula: a(n) = (-2*truncate(binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*(2*gcd(-sumdigits(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2),2)*sign(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)),2)-3)
+; Formula: a(n) = (-2*truncate(binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*(2*gcd(-sumdigits(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2),2)*sign(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)),2)-3)
 
 add $0,1
 mov $1,$0

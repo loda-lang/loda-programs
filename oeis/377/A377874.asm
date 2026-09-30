@@ -1,7 +1,7 @@
 ; A377874: Parity of A083345(n), where A083345(n) = n' / gcd(n,n') = numerator of Sum(e/p: n=Product(p^e)).
 ; Submitted by HansCCT
 ; 0,1,1,1,1,1,1,1,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,0,0,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1
-; Formula: a(n) = -2*truncate(truncate(A003415(n)/gcd(n,A003415(n)))/2)+truncate(A003415(n)/gcd(n,A003415(n)))
+; Formula: a(n) = floor(A003415(n)/gcd(n,A003415(n)))%2
 
 #offset 1
 

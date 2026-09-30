@@ -18,9 +18,8 @@ lpb $2
   div $3,$5
   mul $3,7
   div $3,6
+  seq $3,257993 ; Least gap in the partition having Heinz number n; index of the least prime not dividing n.
   mov $4,$3
-  seq $4,257993 ; Least gap in the partition having Heinz number n; index of the least prime not dividing n.
-  mov $3,$4
   equ $3,2
   sub $0,$3
   add $1,1

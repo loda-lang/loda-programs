@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,178503 ; n minus totally additive with a(p)=PrimePi(p), where PrimePi(n)=A000720(n).
+seq $0,178503 ; n minus totally additive with a(p) = PrimePi(p), where PrimePi = A000720.
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).

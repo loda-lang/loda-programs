@@ -1,7 +1,7 @@
 ; A265583: Array T(n,k) = k*(k-1)^(n-1) read by ascending antidiagonals; k,n >= 1.
 ; Submitted by loader3229
 ; 1,0,2,0,2,3,0,2,6,4,0,2,12,12,5,0,2,24,36,20,6,0,2,48,108,80,30,7,0,2,96,324,320,150,42,8,0,2,192,972,1280,750,252,56,9,0,2,384,2916,5120,3750,1512,392,72,10,0,2,768,8748,20480,18750,9072,2744,576,90,11,0,2,1536,26244,81920,93750,54432,19208,4608,810,110,12,0,2
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))
+; Formula: a(n) = if(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)^2)==1,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1),if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)))+(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*if(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)^2)==1,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1),if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)))
 
 #offset 1
 

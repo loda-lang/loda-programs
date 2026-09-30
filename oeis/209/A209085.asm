@@ -10,12 +10,12 @@ add $2,1
 pow $2,2
 lpb $2
   sub $2,2
+  mov $6,$1
+  add $6,1
   mov $3,$1
-  add $3,1
-  seq $3,86799 ; Replace all trailing 0's with 1's in binary representation of n.
-  sub $3,1
+  bor $3,$6
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

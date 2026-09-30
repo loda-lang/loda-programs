@@ -4,10 +4,8 @@
 
 #offset 1
 
-mov $1,$0
-sub $1,3
-mov $2,$1
-trn $2,6
+mov $2,$0
+trn $2,9
 add $2,1
 mov $1,10
 pow $1,$2

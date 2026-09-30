@@ -13,9 +13,7 @@ lpb $2
   mov $9,0
   mov $0,$3
   sub $0,$2
-  mov $4,0
-  mov $5,0
-  mov $6,0
+  clr $4,3
   lpb $0
     add $4,1
     sub $0,$4

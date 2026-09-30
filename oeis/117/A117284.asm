@@ -13,8 +13,7 @@ lpb $2
   seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
   sub $3,$5
-  trn $3,1
-  add $3,1
+  max $3,1
   mov $6,$3
   mul $6,8
   nrt $6,2
@@ -26,8 +25,7 @@ lpb $2
   bin $6,$3
   mov $3,$6
   mul $3,2
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

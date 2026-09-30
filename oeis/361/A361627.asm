@@ -12,9 +12,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,228190 ; a(n) = sum_{i=1..n} prime(i) + product_{i=1..n} prime(i).
+  gcd $3,$1
   mov $5,$3
-  gcd $5,$1
-  mov $3,$5
   trn $3,2
   min $3,1
   sub $0,$3

@@ -1,9 +1,47 @@
 ; A350700: a(n) is the number of 1's minus the number of 0's in A004685(n).
 ; Submitted by Dataman
 ; -1,1,1,0,2,1,-2,2,1,-2,4,1,-4,2,3,-2,6,3,-4,-3,3,-2,1,7,-4,-5,1,4,3,5,-4,1,-4,4,1,-2,0,3,-6,-2,5,6,0,3,6,-1,11,-6,-9,3,2,-1,-1,-2,-5,6,4,-7,8,0,-9,-4,10,3,-4,6,-7,6,-17,-1,-2,-5,1,4,-3,-5,-6,-9,1,2
-; Formula: a(n) = -A037861(A000045(n))
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-seq $0,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+mov $6,0
+mov $10,0
+mov $4,$0
+mov $7,1
+lpb $0
+  mul $10,$7
+  mul $10,2
+  mov $11,$6
+  pow $11,2
+  mov $12,$7
+  pow $12,2
+  sub $10,$11
+  add $11,$12
+  mov $12,$11
+  sub $12,$10
+  mov $8,$0
+  max $8,1
+  log $8,2
+  mov $9,2
+  pow $9,$8
+  ban $9,$4
+  neq $9,0
+  mul $12,$9
+  div $0,2
+  mov $5,$10
+  mul $5,$9
+  add $10,$12
+  add $11,$5
+  mov $6,$10
+  mov $7,$11
+lpe
+mov $3,$6
+dgs $3,2
+mov $2,0
+bxo $2,$3
+mov $0,$6
+max $0,1
+log $0,2
+add $0,1
+sub $0,$3
+sub $0,$2
 sub $1,$0
 mov $0,$1

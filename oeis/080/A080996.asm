@@ -6,7 +6,6 @@
 #offset 2
 
 sub $0,1
+seq $0,247499 ; a(n) = hypergeom([1, -n, -n-1], [2], 1).
 mov $1,$0
-seq $1,247499 ; a(n) = hypergeom([1, -n, -n-1], [2], 1).
-mov $0,$1
 sub $0,1

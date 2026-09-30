@@ -17,8 +17,7 @@ lpb $2
   mov $6,0
   sub $6,$5
   mov $3,$6
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,1
   sub $0,$3

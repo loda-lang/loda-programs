@@ -1,7 +1,7 @@
 ; A080234: Triangle whose rows are the differences of consecutive pairs of row elements of A080232.
 ; Submitted by loader3229
 ; 1,1,-2,1,-1,-1,1,0,-2,0,1,1,-2,-2,1,1,2,-1,-4,-1,2,1,3,1,-5,-5,1,3,1,4,4,-4,-10,-4,4,4,1,5,8,0,-14,-14,0,8,5,1,6,13,8,-14,-28,-14,8,13,6,1,7,19,21,-6,-42,-42
-; Formula: a(n) = -4*binomial(max(truncate((sqrtint(8*n+8)-1)/2)-1,0),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n-1)+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = -4*binomial(max(floor((sqrtint(8*n+8)-1)/2)-1,0),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n-1)+binomial(floor((sqrtint(8*n+8)-1)/2)+1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
 add $0,1
 mov $2,$0

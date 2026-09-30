@@ -4,12 +4,11 @@
 ; Formula: a(n) = -truncate((12*n-1)/(floor((24*n+4)/11)+truncate((24*n-5)/11)+1))*(floor((24*n+4)/11)+truncate((24*n-5)/11)+1)+14*n
 
 mov $1,$0
-mul $1,12
-mov $3,$1
-mul $1,2
+mul $1,24
 add $1,4
 div $1,11
-mul $3,2
+mov $3,$0
+mul $3,24
 sub $3,5
 div $3,11
 add $3,1

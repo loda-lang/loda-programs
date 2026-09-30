@@ -16,8 +16,7 @@ lpb $2
   mov $3,$1
   seq $3,78896 ; Number of times the smallest prime factor of n is a factor in all numbers <= n; a(1) = 1.
   sub $3,$5
-  add $3,2
-  equ $3,0
+  equ $3,-2
   sub $0,$3
   add $1,2
   mov $4,$0

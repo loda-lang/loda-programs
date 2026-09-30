@@ -5,11 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,100959 ; Non-semiprimes.
-add $1,1
 seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
 add $1,1
 add $1,$0

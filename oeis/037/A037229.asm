@@ -1,4 +1,4 @@
-; A037229: n such that pi(n) >= phi(n).
+; A037229: Numbers k such that pi(k) >= phi(k).
 ; Submitted by ladmo
 ; 2,3,4,6,8,10,12,14,18,20,24,30,42,60,90
 

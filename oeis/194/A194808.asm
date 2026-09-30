@@ -1,12 +1,13 @@
 ; A194808: Twin primes modulo 5.
 ; Submitted by DukeBox
 ; 3,0,2,1,3,2,4,4,1,1,3,4,1,1,3,1,3,2,4,2,4,4,1,4,1,1,3,2,4,2,4,4,1,4,1,1,3,1,3,2,4,4,1,1,3,1,3,1,3,4,1,4,1,2,4,1,3,4,1,4,1,1,3,2,4,2,4,1,3,4,1,1,3,4,1,1,3,1,3,1
-; Formula: a(n) = truncate((-10*truncate(A278972(n)/10)+A278972(n))/2)
+; Formula: a(n) = truncate((2*A001097(n)-10*truncate((2*A001097(n))/10))/2)
 
 #offset 1
 
 mov $1,$0
-seq $1,278972 ; Twice the twin primes.
+seq $1,1097 ; Twin primes.
+mul $1,2
 mov $0,$1
 mod $0,10
 div $0,2

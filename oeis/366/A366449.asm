@@ -14,13 +14,13 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,5130 ; Robbins numbers: a(n) = Product_{k=0..n-1} (3k+1)!/(n+k)!; also the number of descending plane partitions whose parts do not exceed n; also the number of n X n alternating sign matrices (ASM's).
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     mul $7,$$9
     gcd $4,$10
     add $5,1

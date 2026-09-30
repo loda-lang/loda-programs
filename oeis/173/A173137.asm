@@ -11,7 +11,17 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $3,$2
-  seq $2,28815 ; a(n) = prime(n) + 1 (starting with 1).
+  mov $4,$2
+  dif $4,$2
+  add $4,1
+  mov $5,$2
+  max $5,1
+  seq $5,40 ; The prime numbers.
+  mul $4,$5
+  mov $5,$4
+  div $5,2
+  mov $2,$5
+  add $2,1
   add $2,$3
   mov $1,$2
 lpe

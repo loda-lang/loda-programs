@@ -11,8 +11,26 @@ lpb $0
   mov $6,$2
   mod $6,2
   mul $6,2
+  mov $11,$2
   mov $4,$2
-  seq $4,293140 ; E.g.f.: Product_{m>0} (1-x^m).
+  mul $4,24
+  add $4,1
+  mov $14,$4
+  nrt $4,2
+  mov $12,$4
+  add $12,1
+  mod $12,4
+  sub $12,1
+  mov $13,$4
+  pow $4,2
+  equ $4,$14
+  mul $4,$13
+  mul $4,$12
+  mod $4,3
+  dif $4,-2
+  mov $15,1
+  fac $15,$2
+  mul $4,$15
   mul $6,$4
   sub $4,$6
   mov $5,$2

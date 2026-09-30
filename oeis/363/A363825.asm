@@ -1,6 +1,7 @@
 ; A363825: The number of infinitary divisors of n that are exponentially odd numbers (A268335).
 ; Submitted by Torbj&#246;rn Eriksson
 ; 1,2,2,1,2,4,2,3,1,4,2,2,2,4,4,1,2,2,2,2,4,4,2,6,1,4,3,2,2,8,2,3,4,4,4,1,2,4,4,6,2,8,2,2,2,4,2,2,1,2,4,2,2,6,4,6,4,4,2,4,2,4,2,1,4,8,2,2,4,8,2,3,2,4,2,2,4,8,2,2
+; Formula: a(n) = A049599(A350389(n))*((if(((5*A350389(n))^(5*A350389(n)))==0,0,valuation((5*A350389(n))^(5*A350389(n)),2))+1)%10)
 
 #offset 1
 

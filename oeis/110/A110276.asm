@@ -9,7 +9,8 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  seq $0,238111 ; Twice the large Schroeder numbers A006318.
+  seq $0,6318 ; Large Schröder numbers (or large Schroeder numbers, or big Schroeder numbers).
+  mul $0,2
   equ $1,1
   add $1,$4
   mul $1,2

@@ -9,7 +9,6 @@ mov $2,$0
 seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 add $2,1
 seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

@@ -23,12 +23,10 @@ lpb $2
   mod $3,2
   sub $3,2
   add $3,$7
+  dif $3,2
   mov $6,$3
-  dif $6,2
-  mov $3,$6
   sub $3,$5
-  add $3,1
-  equ $3,0
+  equ $3,-1
   sub $0,$3
   add $1,4
   mov $4,$0

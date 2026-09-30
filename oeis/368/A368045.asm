@@ -1,7 +1,7 @@
 ; A368045: Triangle read by rows. T(n, k) = (k*(k + 1)*(2*k + 1) + n*(n + 1)*(2*n + 1)) / 6.
 ; Submitted by loader3229
 ; 0,1,2,5,6,10,14,15,19,28,30,31,35,44,60,55,56,60,69,85,110,91,92,96,105,121,146,182,140,141,145,154,170,195,231,280,204,205,209,218,234,259,295,344,408,285,286,290,299,315,340,376,425,489,570
-; Formula: a(n) = -truncate(binomial(2*truncate((sqrtint(8*n+8)-1)/2)+2,3)/(-4))+truncate(binomial(2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-2*n,3)/(-4))
+; Formula: a(n) = -truncate(binomial(2*floor((sqrtint(8*n+8)-1)/2)+2,3)/(-4))+truncate(binomial(2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-2*n,3)/(-4))
 
 add $0,1
 mov $1,$0

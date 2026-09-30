@@ -4,19 +4,17 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,6
+add $0,5
 mov $1,2
-add $2,9
+add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
   bin $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $3,1
-  equ $3,3
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

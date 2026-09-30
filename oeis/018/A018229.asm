@@ -1,4 +1,4 @@
-; A018229: Numbers n such that normalizer of Gamma_0(n) is triangle group (2,4,inf).
+; A018229: Numbers k such that normalizer of Gamma_0(k) is triangle group (2,4,inf).
 ; Submitted by yasiwo
 ; 2,8,18,32,72,128,288,1152
 ; Formula: a(n) = 2*floor((2*max(n+8,(n-1)^2-25)*((n-1)^2+13))/120)^2

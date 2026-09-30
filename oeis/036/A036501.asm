@@ -1,6 +1,7 @@
 ; A036501: Number of inequivalent Golomb rulers with n marks and shortest length.
 ; Submitted by DukeBox
 ; 1,1,1,2,4,5,1,1,1,2,1,1,1,1,1,1,1,1
+; Formula: a(n) = if(((n-2)^2-n-2)==0,0,if((floor((n+1)/3)^2)<=1,0,valuation((n-2)^2-n-2,floor((n+1)/3))))+1
 
 #offset 2
 

@@ -12,10 +12,23 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,84854 ; Triangular array, read by rows: T(n,k) = concatenated decimal representations of n and k, 1<=k<=n.
-  sub $3,1
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  mov $9,$6
+  bin $9,2
+  sub $3,$9
+  mov $7,$3
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  mul $6,$8
+  add $3,$6
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,$3

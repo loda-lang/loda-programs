@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,6093 ; a(n) = prime(n) - 1.
 mov $1,2
 lpb $1

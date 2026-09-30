@@ -1,6 +1,7 @@
 ; A369831: a(n) is the number of distinct values of the permanent of an n X n symmetric Toeplitz matrix using the integers 1 to n.
 ; Submitted by BrandyNOW
 ; 1,1,1,6,23,120,720,5040,40320,362880
+; Formula: a(n) = n!-(((n-3)^2)==1)
 
 mov $1,$0
 mov $0,1

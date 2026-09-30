@@ -12,12 +12,13 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  add $0,1
-  seq $0,111150 ; a(n) is the number of integers of the form (n+k)/|(n-k)| for k>0.
-  div $0,2
-  sub $0,1
+  mov $4,$0
+  mul $4,2
+  add $4,2
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $0,$4
   sub $0,$1
-  trn $0,-1
+  trn $0,1
   add $1,$0
 lpe
 mov $0,$1

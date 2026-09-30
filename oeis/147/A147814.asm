@@ -1,4 +1,4 @@
-; A147814: Number of bits in Elias omega-coded prime numbers.
+; A147814: a(n) is the number of bits in the Elias omega-coded value of prime(n).
 ; Submitted by Jamie Morken(w2)
 ; 4,4,7,7,8,8,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17
 ; Formula: a(n) = A072464(A000040(n))+1

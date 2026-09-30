@@ -5,7 +5,7 @@
 add $0,2
 lpb $0
   mov $3,$0
-  pow $0,0
+  mov $0,1
   lpb $3
     mov $1,$0
     bin $1,$3

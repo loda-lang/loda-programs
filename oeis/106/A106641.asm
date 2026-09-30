@@ -1,4 +1,4 @@
-; A106641: A four-symbol four-at-a-time substitution with an ordering change: q=0.
+; A106641: 1-limiting word of the morphism 1->3443, 2->2332, 3->1221, 4->4114 starting from 1.
 ; Submitted by zombie67 [MM]
 ; 1,2,2,1,4,1,1,4,4,1,1,4,1,2,2,1,2,3,3,2,1,2,2,1,1,2,2,1,2,3,3,2,2,3,3,2,1,2,2,1,1,2,2,1,2,3,3,2,1,2,2,1,4,1,1,4,4,1,1,4,1,2,2,1,4,1,1,4,3,4,4,3,3,4,4,3,4,1,1,4
 

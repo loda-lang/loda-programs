@@ -4,8 +4,7 @@
 ; Formula: a(n) = gcd(n*a(n-1),b(n-1)), a(2) = 1, a(1) = 1, a(0) = 1, b(n) = b(n-1)*n^2, b(2) = 4, b(1) = 1, b(0) = 1
 
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 lpb $0
   sub $0,1
   mul $2,$1

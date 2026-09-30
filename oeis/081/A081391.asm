@@ -1,4 +1,4 @@
-; A081391: Numbers k such that the central binomial coefficient C(2*k,k) has only one prime divisor whose exponent equals one.
+; A081391: Numbers k such that the central binomial coefficient C(2*k,k) has only one prime divisor whose exponent exceeds one.
 ; Submitted by Landjunge
 ; 3,6,7,8,9,10,11,12,16,21,22,28,29,30,31,36,37,54,55,57,58,110,171,784,786
 

@@ -4,7 +4,6 @@
 ; Formula: a(n) = A022943(n+1)-1
 
 add $0,1
+seq $0,22943 ; a(n) = a(n-2) + c(n-1) for n >= 3, a( ) increasing, given a(1)=2, a(2)=3, where c( ) is complement of a( ).
 mov $1,$0
-seq $1,22943 ; a(n) = a(n-2) + c(n-1) for n >= 3, a( ) increasing, given a(1)=2, a(2)=3, where c( ) is complement of a( ).
-mov $0,$1
 sub $0,1

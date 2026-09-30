@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,104794 ; Expansion of theta_4(q)^2 in powers of q.
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

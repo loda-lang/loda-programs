@@ -1,4 +1,4 @@
-; A226918: Minimal number of 1X3 I-trominoes needed to prevent any further I-trominoe from being placed on an n X n grid.
+; A226918: Minimal number of 1X3 I-trominoes needed to prevent any further I-tromino from being placed on an n X n grid.
 ; Submitted by Jon Maiga
 ; 0,0,3,4,5,7,9,13,16,20,24,28
 

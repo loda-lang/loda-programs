@@ -1,6 +1,7 @@
 ; A072174: Maximum path length of a crippled knight on an n X n board.
 ; Submitted by Science United
 ; 1,1,5,9,16,27,38,51,66
+; Formula: a(n) = if((logint(14*n-13,2)-2)==0,0,valuation(logint(14*n-13,2)-2,2))+(n-1)^2
 
 #offset 1
 

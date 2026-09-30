@@ -7,9 +7,8 @@
 
 mov $1,$0
 seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
 sub $0,$2

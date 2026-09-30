@@ -5,7 +5,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,60881 ; n-th primorial (A002110) + prime(n + 1).
+seq $1,60881 ; a(n) = primorial(n) + prime(n + 1), where primorial(n) = A002110(n).
 lpb $0
   add $3,9
   lpb $3

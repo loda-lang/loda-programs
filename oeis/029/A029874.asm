@@ -10,12 +10,12 @@ lpb $0
   mov $4,$2
   add $4,2
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,2909 ; Low temperature energy function for square lattice.
     mov $9,10
     sub $10,1
+    sub $4,1
     mul $7,$$9
     gcd $4,$10
     add $6,$7

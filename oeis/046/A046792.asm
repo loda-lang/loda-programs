@@ -20,7 +20,7 @@ bin $1,$0
 sub $2,$0
 mul $2,$0
 mov $0,$2
-pow $2,0
+mov $2,1
 add $2,$3
 fac $2,$0
 mul $1,$2

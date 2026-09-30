@@ -8,8 +8,7 @@ lpb $0
   mov $1,55
 lpe
 bin $1,2
-sub $0,1
-trn $0,1
+trn $0,2
 seq $0,78944 ; First column of A078939, the fourth power of lower triangular matrix A056857.
 mul $0,4
 mul $0,$1

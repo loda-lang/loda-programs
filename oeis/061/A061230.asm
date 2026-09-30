@@ -25,16 +25,14 @@ lpb $2
   nrt $8,2
   div $8,2
   pow $8,2
+  div $3,$8
   mov $7,$3
-  div $7,$8
-  mov $3,$7
   add $3,1
   mov $5,$3
   add $3,$5
   sub $3,1
   div $3,2
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

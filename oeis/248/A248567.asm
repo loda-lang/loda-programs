@@ -22,8 +22,7 @@ lpb $2
     mul $5,2
   lpe
   mov $4,$2
-  trn $6,8
-  add $6,8
+  max $6,8
   mov $9,-1
   mov $10,$3
   mul $10,$6

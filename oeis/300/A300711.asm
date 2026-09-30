@@ -1,13 +1,16 @@
 ; A300711: a(n) = A000367(n)/A001067(n).
 ; Submitted by Orange Kid
 ; 1,1,1,1,5,1,7,1,1,1,11,1,13,7,5,1,17,1,19,1,1,11,23,1,25,13,1,7,29,1,31,1,11,17,35,1,37,19,13,1,41,1,43,11,5,23,47,1,49,1,17,13,53,1,5,7,19,29,59,1,61,31,1,1,65,11,67,17,23,7,71,1,73,37,25,19,77,1,79,1
-; Formula: a(n) = gcd(2*n,A027641(2*n))
+; Formula: a(n) = gcd(2*n,truncate(A227570(2*n)/gcd(6,A227570(2*n))))
 
 #offset 1
 
 mul $0,2
-mov $2,$0
-seq $2,27641 ; Numerator of Bernoulli number B_n.
+mov $3,$0
+seq $3,227570 ; Numerators of rationals with e.g.f. D(3,x), a Debye function.
+mov $2,6
+gcd $2,$3
+div $3,$2
+gcd $0,$3
 mov $1,$0
-gcd $1,$2
-mov $0,$1
+mov $2,$3

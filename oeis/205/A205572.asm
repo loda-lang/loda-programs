@@ -10,13 +10,13 @@ lpb $0
   max $6,1
   mov $4,$2
   lpb $4
-    sub $4,1
     mov $8,$4
-    trn $8,1
+    trn $8,2
     seq $8,102560 ; Expansion of (1-x^3)/(1-x^4).
     pow $8,$8
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$1
     add $7,$0
     add $7,$4

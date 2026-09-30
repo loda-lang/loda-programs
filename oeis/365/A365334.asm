@@ -1,7 +1,7 @@
 ; A365334: The sum of exponentially odd divisors of the largest square dividing n.
 ; Submitted by Stephen Uitti
 ; 1,1,1,3,1,1,1,3,4,1,1,3,1,1,1,11,1,4,1,3,1,1,1,3,6,1,4,3,1,1,1,11,1,1,1,12,1,1,1,3,1,1,1,3,4,1,1,11,8,6,1,3,1,4,1,3,1,1,1,3,1,1,4,43,1,1,1,3,1,1,1,12,1,1,6,3,1,1,1,11
-; Formula: a(n) = A033634(gcd(0,(truncate((n-1)/A019554(max(0,n-1)+1))+1)^2))
+; Formula: a(n) = A033634(gcd(0,(floor((n-1)/A019554(max(0,n-1)+1))+1)^2))
 
 #offset 1
 

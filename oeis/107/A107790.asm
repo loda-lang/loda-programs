@@ -1,7 +1,10 @@
-; A107790: Ones order in the tribonacci substitution of three symbols.
+; A107790: Positions of 1's in the 2-limiting word of the morphism 1->2, 2->3, 3->123.
 ; Submitted by Sphynx
 ; 3,7,12,15,20,24,29,33,38,41,46,50,55,60,64,69,72,77,81,86,89,94,98,103,108,112,117,120,125,129,134,138,143,146,151,155,160,165,169,174,177,182,186,191,195,200,203,208,212,217,222,226,231,234,239,243,248,251
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 lpb $0
   sub $0,1

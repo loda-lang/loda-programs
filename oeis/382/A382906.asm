@@ -23,7 +23,6 @@ seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^
 mov $6,$0
 mul $0,$6
 sub $0,1
+div $0,$5
 mov $7,$0
-div $7,$5
-mov $0,$7
 add $0,1

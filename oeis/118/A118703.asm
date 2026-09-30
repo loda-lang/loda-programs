@@ -14,9 +14,9 @@ lpb $2
   seq $3,23776 ; Metadromes: digits in base 7 are in strict ascending order.
   seq $3,7093 ; Numbers in base 7.
   mul $3,9
-  add $3,6
   mov $5,$3
-  add $3,1
+  add $5,6
+  add $3,7
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

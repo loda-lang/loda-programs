@@ -20,9 +20,8 @@ lpb $4
   pow $6,$5
   seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   trn $0,1
+  equ $0,0
   mov $7,$0
-  equ $7,0
-  mov $0,$7
   mul $0,$6
   mul $1,$0
   add $3,$1

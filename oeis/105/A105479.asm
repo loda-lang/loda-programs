@@ -6,10 +6,10 @@ mov $1,$0
 mov $3,2
 lpb $3
   sub $3,2
+  mov $2,$1
+  sub $2,1
   mov $0,$1
-  sub $0,1
-  mov $2,$0
-  trn $0,1
+  trn $0,2
   seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
   mul $0,$2
 lpe

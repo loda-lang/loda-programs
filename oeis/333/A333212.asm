@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,258025 ; Numbers k such that prime(k+2) - 2*prime(k+1) + prime(k) > 0.
   mul $0,25
   mov $4,$3

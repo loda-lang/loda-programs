@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+seq $0,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
 add $0,1
 seq $0,132468 ; Longest gap between numbers relatively prime to n.
 add $0,1

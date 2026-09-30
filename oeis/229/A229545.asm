@@ -8,8 +8,10 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  dgs $6,10
   mov $3,$1
-  seq $3,62028 ; a(n) = n + sum of the digits of n.
+  add $3,$6
   mov $5,$3
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
   equ $3,$5

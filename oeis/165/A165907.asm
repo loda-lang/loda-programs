@@ -1,4 +1,4 @@
-; A165907: Minimal m for packing the first n primes in a prime(n) X m rectangle
+; A165907: Minimal m for packing the first n primes in a prime(n) X m rectangle.
 ; Submitted by Simon Strandgaard
 ; 1,2,2,3,3,4,4,5,5,5,6,6,6,7,8,8,8,9,9,10
 

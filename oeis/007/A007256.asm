@@ -4,10 +4,9 @@
 
 #offset -1
 
-add $0,1
 mov $2,$0
-sub $0,1
 seq $0,121666 ; McKay-Thompson series of class 6C for the Monster group with a(0) = -6.
+add $2,1
 lpb $2
   sub $1,72
   div $0,$1

@@ -1,5 +1,6 @@
 ; A161836: Number of concave-convex hexagons in the Y-toothpick structure of A160120 after n rounds.
 ; 0,0,0,0,3,3,3,3,9,15
+; Formula: a(n) = 3*((if((binomial(-n+3,23220)%2)==0,binomial(-n+3,23220)/2,binomial(-n+3,23220))-10*truncate(if((binomial(-n+3,23220)%2)==0,binomial(-n+3,23220)/2,binomial(-n+3,23220))/10)+10)%9)-3
 
 mov $1,3
 sub $1,$0

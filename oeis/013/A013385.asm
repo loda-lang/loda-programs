@@ -4,6 +4,5 @@
 ; Formula: a(n) = A013379(2*n)
 
 mul $0,2
+seq $0,13379 ; Expansion of e.g.f.: exp(sin(x)-tanh(x))=1+1/3!*x^3-15/5!*x^5+10/6!*x^6+271/7!*x^7...
 mov $1,$0
-seq $1,13379 ; Expansion of e.g.f.: exp(sin(x)-tanh(x))=1+1/3!*x^3-15/5!*x^5+10/6!*x^6+271/7!*x^7...
-mov $0,$1

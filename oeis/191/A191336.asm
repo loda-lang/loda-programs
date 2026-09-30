@@ -23,7 +23,7 @@ lpb $2
   add $3,$4
   mod $3,2
   div $4,2
-  mul $0,0
+  mov $0,0
   add $1,$3
 lpe
 mov $0,$1

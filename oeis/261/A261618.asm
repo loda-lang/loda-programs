@@ -6,7 +6,15 @@
 
 mov $1,$0
 mov $2,$0
-seq $0,1704 ; a(n) = n concatenated with n + 1.
+mov $3,$0
+add $3,1
+mov $5,$3
+log $3,10
+add $3,1
+mov $4,10
+pow $4,$3
+mul $0,$4
+add $0,$5
 lpb $1
   div $1,10
   mul $0,10

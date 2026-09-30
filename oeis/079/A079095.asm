@@ -20,10 +20,10 @@ lpb $2
   mov $6,$7
   sub $6,11
   div $6,4
+  mov $5,$6
+  add $5,2
   mov $3,$6
-  add $3,2
-  mov $5,$3
-  add $3,1
+  add $3,3
   mov $8,$3
   seq $8,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

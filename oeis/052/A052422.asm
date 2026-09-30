@@ -1,7 +1,7 @@
 ; A052422: Number of n-crossing hyperbolic knots having symmetry group D8.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,1,0,0,0,2,2,0,2,8
-; Formula: a(n) = truncate(A063694(A121663(n-1))/10)
+; Formula: a(n) = floor(A063694(A121663(n-1))/10)
 
 #offset 1
 

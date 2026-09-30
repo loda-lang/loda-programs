@@ -10,10 +10,10 @@ mov $3,$0
 mul $3,5
 lpb $3
   mul $2,$3
-  sub $3,1
   mov $4,$3
-  equ $4,0
+  equ $4,1
   add $1,$2
+  sub $3,1
   add $3,$4
   div $2,$3
   add $2,$1

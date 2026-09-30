@@ -8,8 +8,7 @@
 mov $1,$0
 add $1,1
 gcd $1,10
-sub $1,1
-trn $1,5
+trn $1,6
 mul $0,50
 sub $0,6
 sub $0,$1

@@ -8,9 +8,9 @@ sub $0,1
 lpb $0
   max $0,1
   seq $0,7921 ; Numbers that are not the difference of two primes.
-  add $0,1
   mov $1,$0
-  equ $0,7
+  add $1,1
+  equ $0,6
 lpe
 mov $0,$1
 div $0,2

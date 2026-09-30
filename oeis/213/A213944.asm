@@ -1,7 +1,7 @@
 ; A213944: Triangle read by rows, with column k defined by partial sums of the finite sequence that contains k three times.
 ; Submitted by loader3229
 ; 1,2,0,3,2,0,3,4,0,0,3,6,3,0,0,3,6,6,0,0,0,3,6,9,4,0,0,0,3,6,9,8,0,0,0,0,3,6,9,12,5,0,0,0,0,3,6,9,12,10,0,0,0,0,0,3,6,9,12,15,6,0,0,0,0,0,3,6,9,12,15,12,0,0,0,0,0,0,3,6
-; Formula: a(n) = truncate((2*max(min(2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*n+truncate((sqrtint(8*n)-1)/2),0)+3,0)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))/2)
+; Formula: a(n) = truncate((2*max(min(2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2*n+floor((sqrtint(8*n)-1)/2),0)+3,0)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))/2)
 
 #offset 1
 

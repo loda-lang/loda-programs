@@ -3,6 +3,5 @@
 ; Formula: a(n) = max(n-25,0)+n
 
 mov $1,$0
-sub $1,8
-trn $1,17
+trn $1,25
 add $0,$1

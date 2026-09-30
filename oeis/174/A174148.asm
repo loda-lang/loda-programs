@@ -1,7 +1,7 @@
-; A174148: A symmetrical binomial product triangle sequence:q=2; t(n,m,q)=If[n == 0 || n == 1, 1, Product[Binomial[n + i, m + i], {i, -Floor[q/2], Floor[q/2]}] + Product[Binomial[n + i, n - m + i], {i, -Floor[q/2], Floor[q/2]}]].
+; A174148: Triangle read by rows: T(n,k) = binomial(n,k)*(binomial(n-1,k-1)*binomial(n+1,k+1) + binomial(n-1,k)*binomial(n+1,k)), with T(0,0) = 1.
 ; Submitted by Science United
-; 1,1,1,1,12,1,1,42,42,1,1,100,360,100,1,1,195,1700,1700,195,1,1,336,5775,14000,5775,336,1,1,532,15876,75950,75950,15876,532,1,1,792,37632,312816,617400,312816,37632,792,1,1,1125,79920,1058400,3630312,3630312
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*(binomial(truncate((sqrtint(8*n+8)-1)/2)-1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))+binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; 1,1,1,1,12,1,1,42,42,1,1,100,360,100,1,1,195,1700,1700,195,1,1,336,5775,14000,5775,336,1,1,532,15876,75950,75950,15876,532,1,1,792,37632,312816,617400,312816,37632,792,1,1,1125,79920,1058400,3630312,3630312,1058400,79920,1125,1,1,1540,155925,3088800,16881480,29338848,16881480,3088800,155925,1540,1,1,2046,284350,8031375,65666700,181854288,181854288,65666700,8031375,284350,2046,1,1,2652
+; Formula: a(n) = truncate((binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(floor((sqrtint(8*n+8)-1)/2)+1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))/(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1))*(binomial(floor((sqrtint(8*n+8)-1)/2)-1,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2))+binomial(floor((sqrtint(8*n+8)-1)/2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
 mov $1,$0
 add $1,1

@@ -1,7 +1,7 @@
 ; A077606: Left differencing matrix, D, by antidiagonals.
 ; Submitted by loader3229
 ; 1,-1,0,0,1,0,0,-1,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0
-; Formula: a(n) = binomial(2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*n+truncate((sqrtint(8*n)-1)/2),-2)
+; Formula: a(n) = binomial(2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2*n+floor((sqrtint(8*n)-1)/2),-2)
 
 #offset 1
 

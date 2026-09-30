@@ -7,9 +7,9 @@
 sub $0,1
 mov $1,$0
 mov $3,0
-add $0,2
 mov $5,$0
-sub $0,1
+add $5,2
+add $0,1
 mov $4,$0
 bin $4,2
 add $4,$0

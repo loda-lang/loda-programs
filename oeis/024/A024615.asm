@@ -14,8 +14,7 @@ lpb $2
   mov $3,$1
   seq $3,24614 ; Numbers of the form x^2 + xy + y^2, where x and y are positive integers.
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

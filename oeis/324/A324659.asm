@@ -4,11 +4,8 @@
 
 #offset 1
 
-sub $0,1
-mov $5,$0
-add $0,1
 mov $4,1
-add $5,1
+mov $5,$0
 seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 div $5,2
 max $2,$0

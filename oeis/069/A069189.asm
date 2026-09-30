@@ -12,14 +12,13 @@ lpb $2
   mov $5,0
   mov $3,$1
   lpb $3
-    add $3,1
     mov $5,$3
-    add $3,1
+    add $5,1
+    add $3,2
     seq $3,55491 ; Smallest square divisible by n divided by largest square which divides n.
   lpe
   mov $3,$5
-  add $3,1
-  neq $3,1
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

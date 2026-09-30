@@ -13,9 +13,8 @@ mov $5,$2
 add $5,1
 bin $5,2
 sub $0,$5
-sub $0,1
 mov $4,$0
-add $0,1
+sub $4,1
 sub $3,$0
 bin $3,2
 add $2,2

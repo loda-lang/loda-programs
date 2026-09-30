@@ -13,9 +13,16 @@ mov $3,1
 mov $4,$0
 pow $4,4
 lpb $4
+  mov $7,$3
+  dgs $7,2
+  mov $6,0
+  bxo $6,$7
   mov $5,$3
-  seq $5,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-  neq $5,0
+  max $5,1
+  log $5,2
+  sub $5,$7
+  sub $5,$6
+  neq $5,-1
   sub $0,$5
   add $3,1
   sub $4,$0

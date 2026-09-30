@@ -8,15 +8,7 @@ mov $1,$0
 mul $1,$0
 mul $1,$0
 add $1,$0
-mov $2,0
-mov $3,0
-mov $4,0
-mov $5,0
-mov $6,0
-mov $7,0
-mov $8,0
-mov $9,0
-mov $10,0
+clr $2,9
 lpb $1
   mov $12,$1
   mod $12,10

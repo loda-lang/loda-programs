@@ -7,6 +7,5 @@
 
 seq $0,71149 ; Numbers n such that the sum of the first n odd primes (A071148) is prime; analogous to A013916.
 add $0,1
+seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
-seq $1,6005 ; The odd prime numbers together with 1.
-mov $0,$1

@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+seq $0,2805 ; a(n) = denominator of harmonic number H(n) = Sum_{i=1..n} 1/i.
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

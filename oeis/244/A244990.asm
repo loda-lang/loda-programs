@@ -10,9 +10,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
+  seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   mov $5,$3
-  seq $5,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
-  mov $3,$5
   mod $3,2
   sub $0,$3
   add $1,1

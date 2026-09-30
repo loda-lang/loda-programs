@@ -1,6 +1,7 @@
 ; A187482: Rank transform of the sequence ceiling(2n/3); complement of A187483.
 ; Submitted by misaki@med
 ; 1,3,4,5,7,8,10,12,13,14,16,17,19,20,21,23,24,25,27,29,30,32,33,34,36,38,39,40,42,43,45,47,48,49,51,52,54,56,57,58,60,61,62,64,65,67,68,69,71,73,74,76,77,78,80,81,82,84,86,87,89,90,91,93,95,96,97,99,100,101,103,104,106,108,109,110,112,113,115,116
+; Formula: a(n) = floor(e(n)/2), b(n) = if(floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2)==0,truncate((-4*c(n-1)+b(n-1)+1)/4),if((truncate((-4*c(n-1)+b(n-1)+1)/4)%floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2))==0,truncate((-4*c(n-1)+b(n-1)+1)/4)/floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2),truncate((-4*c(n-1)+b(n-1)+1)/4))), b(3) = -67, b(2) = -15, b(1) = 0, b(0) = 0, c(n) = 4*gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)*c(n-1), c(3) = 256, c(2) = 64, c(1) = 16, c(0) = 1, d(n) = floor(gcd(binomial(d(n-1),4*c(n-1))+truncate((-4*c(n-1)+b(n-1)+1)/4),4)/2), d(3) = 0, d(2) = 0, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 8, e(2) = 6, e(1) = 2, e(0) = 0
 
 #offset 1
 

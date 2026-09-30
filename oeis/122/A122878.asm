@@ -1,7 +1,7 @@
 ; A122878: Periodic sequence of period 21 related to a simple scheduling problem.
 ; Submitted by Fardringle
 ; 12,12,12,12,13,13,13,23,23,23,23,12,12,12,13,13,13,13,23,23,23,12,12,12,12,13,13,13,23,23,23,23,12,12,12,13,13,13,13,23,23,23,12,12,12,12,13,13,13,23,23,23,23,12,12,12,13,13,13,13,23,23,23,12,12,12,12,13,13
-; Formula: a(n) = floor(truncate(10^(-3*truncate(truncate((2*n-2)/7)/3)+truncate((2*n-2)/7)+1))/90)+12
+; Formula: a(n) = floor((10^(floor((2*n-2)/7)%3+1))/90)+12
 
 #offset 1
 

@@ -7,6 +7,5 @@
 
 seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
 trn $0,1
+equ $0,0
 mov $1,$0
-equ $1,0
-mov $0,$1

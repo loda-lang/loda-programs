@@ -17,15 +17,12 @@ mov $3,$0
 sub $2,$0
 lpb $2
   sub $2,1
-  mov $4,$1
-  sub $4,84
-  sub $7,$4
-  dgs $7,$7
   add $3,1
   mov $5,$3
   bin $5,2
   add $5,$0
   add $5,1
+  mov $7,1
   mov $8,$5
   mul $8,8
   nrt $8,2
@@ -48,8 +45,8 @@ lpb $2
   add $5,1
   mul $8,$9
   div $8,$5
-  mov $4,$7
-  mul $4,$8
-  add $6,$4
+  mov $4,$1
+  mov $4,$8
+  add $6,$8
 lpe
 mov $0,$6

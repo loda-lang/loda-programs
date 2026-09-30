@@ -6,9 +6,10 @@
 mov $1,$0
 add $1,1
 div $1,3
-mul $0,22
 mov $2,$0
+mul $0,22
 div $0,9
+mul $2,22
 sub $2,1
 div $2,9
 add $2,$0

@@ -7,7 +7,7 @@
 seq $0,54035 ; Numbers n such that n^2 contains exactly 7 different digits.
 mov $1,$0
 lpb $0
-  mul $0,0
+  mov $0,0
   mul $1,99
   pow $1,2
 lpe

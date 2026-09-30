@@ -1,6 +1,7 @@
 ; A046643: From square root of Riemann zeta function: form Dirichlet series Sum b_n/n^s whose square is zeta function; sequence gives numerator of b_n.
 ; Submitted by Merlin2331
 ; 1,1,1,3,1,1,1,5,3,1,1,3,1,1,1,35,1,3,1,3,1,1,1,5,3,1,5,3,1,1,1,63,1,1,1,9,1,1,1,5,1,1,1,3,3,1,1,35,3,3,1,3,1,5,1,5,1,1,1,3,1,1,3,231,1,1,1,3,1,1,1,15,1,1,3,3,1,1,1,35
+; Formula: a(n) = if(A317848(n)==0,0,A317848(n)/(2^valuation(A317848(n),2)))
 
 #offset 1
 

@@ -10,8 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,375707 ; First differences minus 1 of nonsquarefree numbers.
-  sub $3,3
-  equ $3,0
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

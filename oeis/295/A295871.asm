@@ -1,6 +1,7 @@
 ; A295871: a(n) = numerator(hypergeom([-n, 1/2], [1], 1)*hypergeom([-floor(n/2), (-1)^n/2], [1], 1)).
 ; Submitted by sjmielh
 ; 1,1,3,15,105,945,1155,15015,225225,3828825,2909907,61108047,156165009,3904125225,2151252675,62386327575,1933976154825,63821213109225,27577067392875,1020351493536375,1591748329916745,65261681526586545,23192167815233235,1043647551685495575
+; Formula: a(n) = if((binomial(n,floor(n/2))*binomial(-floor(n/2)+n,floor(n/2))*binomial(2*n,n))==0,0,(binomial(n,floor(n/2))*binomial(-floor(n/2)+n,floor(n/2))*binomial(2*n,n))/(2^valuation(binomial(n,floor(n/2))*binomial(-floor(n/2)+n,floor(n/2))*binomial(2*n,n),2)))
 
 mov $2,$0
 mul $0,2

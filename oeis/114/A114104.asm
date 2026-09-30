@@ -1,7 +1,7 @@
 ; A114104: a(n) = A114103(n)/n.
 ; Submitted by BrandyNOW
 ; 1,1,2,3,3,1,4,1,4,2,5,5,5,5,1,3,6,1,6,3,2,7,7,7,7,7,7,1,8,4,8,1,8,4,8,2,9,9,3,9,9,3,9,9,1,5,10,5,10,1,10,5,10,5,2,11,11,11,11,11,11,11,11,11,11,1,12,3,4,6,12,1,12,6,4,3,12,2,13,13
-; Formula: a(n) = truncate(truncate((sqrtint(8*n)+1)/2)/gcd(n,truncate((sqrtint(8*n)+1)/2)))
+; Formula: a(n) = floor(floor((sqrtint(8*n)+1)/2)/gcd(n,floor((sqrtint(8*n)+1)/2)))
 
 #offset 1
 

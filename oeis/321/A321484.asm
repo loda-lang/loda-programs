@@ -1,7 +1,7 @@
 ; A321484: Number of non-isomorphic self-dual connected multiset partitions of weight n.
 ; Submitted by Ulf
 ; 1,1,1,2,3,6,9,20,35,78,141
-; Formula: a(n) = truncate(b(n)/4)+1, b(n) = 4*b(n-4)+2*b(n-2)-2*b(n-3)+b(n-1)+4, b(9) = 308, b(8) = 136, b(7) = 76, b(6) = 32, b(5) = 20, b(4) = 8, b(3) = 4, b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = floor(b(n)/4)+1, b(n) = 4*b(n-4)+2*b(n-2)-2*b(n-3)+b(n-1)+4, b(9) = 308, b(8) = 136, b(7) = 76, b(6) = 32, b(5) = 20, b(4) = 8, b(3) = 4, b(2) = 0, b(1) = 0, b(0) = 0
 
 lpb $0
   sub $0,1

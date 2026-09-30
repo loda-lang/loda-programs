@@ -1,7 +1,7 @@
 ; A335234: Number of partitions of k_n into two parts (s,t) such that k_n | s*t, where k_n is the n-th nonsquarefree number (A013929).
 ; Submitted by Bok
 ; 1,1,1,1,2,1,1,1,2,1,1,2,3,1,1,1,2,3,2,1,1,1,1,1,4,1,3,2,1,2,4,1,1,1,1,2,3,1,5,1,3,2,1,1,1,5,1,2,1,4,1,1,1,1,6,3,1,2,1,1,1,2,4,1,1,6,1,1,2,2,3,1,1,1,4,7,1,5,1,1
-; Formula: a(n) = truncate((truncate(max(0,A013929(n)-1)/A019554(max(0,A013929(n)-1)+1))+1)/2)
+; Formula: a(n) = floor((floor(max(0,A013929(n)-1)/A019554(max(0,A013929(n)-1)+1))+1)/2)
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A284729: Dimensions of certain centralizer algebras associated with Bratelli diagram B(A_6, A_5).
 ; Submitted by BrandyNOW
 ; 1,1,2,5,15,53,219,1037,5427
-; Formula: a(n) = floor((20*truncate(3^(n-2))+15*truncate(2^(n-2))+truncate(6^(n-2)))/60)+1
+; Formula: a(n) = floor((if((n-2)<=(-1),0,6^(n-2))+20*if((n-2)<=(-1),0,3^(n-2))+15*if((n-2)<=(-1),0,2^(n-2)))/60)+1
 
 #offset 1
 

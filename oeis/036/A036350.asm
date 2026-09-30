@@ -4,18 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
-  add $3,1
-  trn $3,2
-  add $3,1
+  max $3,1
   seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   add $3,$4
   gcd $3,2

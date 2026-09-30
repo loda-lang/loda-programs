@@ -1,6 +1,6 @@
 ; A376337: Numbers k such that phi(k)/2 + 1 = phi(k + 1) where phi = A000010.
 ; Submitted by Science United
-; 3,7,9,31,127,8191,131071,524287
+; 3,7,9,31,127,8191,131071,524287,2147483647
 
 #offset 1
 

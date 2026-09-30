@@ -5,11 +5,11 @@
 
 #offset 6
 
-sub $0,4
 mov $1,$0
-add $0,3
+sub $0,1
 pow $0,2
 div $0,2
+sub $1,4
 pow $1,2
 div $1,2
 mul $1,$0

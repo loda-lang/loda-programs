@@ -10,8 +10,7 @@ lpb $0
   seq $4,233272 ; a(n) = n + 1 + number of nonleading zeros in binary representation of n (A080791).
 lpe
 mov $0,$4
-trn $0,1
-add $0,1
+max $0,1
 mov $2,$0
 log $2,2
 mov $3,2

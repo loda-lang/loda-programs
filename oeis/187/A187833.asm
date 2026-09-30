@@ -1,6 +1,7 @@
 ; A187833: Rank transform of the sequence floor(3n/2-1/2); complement of A187834.
 ; Submitted by [DPC] hansR
 ; 1,3,5,6,9,10,12,14,16,17,19,21,23,25,27,28,30,32,34,36,38,39,41,43,45,46,49,50,52,54,56,58,59,61,63,65,67,68,70,72,74,76,78,79,81,83,85,87,89,90,92,94,96,98,100,101,103,105,107,108,111,112,114,116,118,119,121,123,125,127,129,130,133,134,136,138,140,141,143,145
+; Formula: a(n) = floor(e(n)/2), b(n) = if((2*floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2))==0,truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),if((truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4)%(2*floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2)))==0,truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4)/(2*floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2)),truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4))), b(3) = -3, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)*c(n-1), c(3) = 8, c(2) = 8, c(1) = 4, c(0) = 2, d(n) = 2*floor(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+truncate(b(n-1)/2)-7)/4),4)/2), d(3) = 0, d(2) = 2, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 10, e(2) = 6, e(1) = 2, e(0) = 0
 
 #offset 1
 

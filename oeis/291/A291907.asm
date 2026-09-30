@@ -12,9 +12,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,319651 ; Largest number having in its ternary representation the same number of 0's, 1's and 2's as n.
+  seq $3,30102 ; Base-3 reversal of n (written in base 10).
   mov $5,$3
-  seq $5,30102 ; Base-3 reversal of n (written in base 10).
-  mov $3,$5
   div $3,2
   equ $3,7
   sub $0,$3

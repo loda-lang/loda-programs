@@ -1,13 +1,28 @@
 ; A265097: a(n) = Product_{k=0..n} q(k)^k, where q(k) = partition numbers into distinct parts (A000009).
 ; Submitted by Landjunge
 ; 1,1,1,8,128,31104,127401984,9953280000000,16717688340480000000,2243810146471316029440000000,22438101464713160294400000000000000000,16671697210628551555613518410547200000000000000000,2163091659500402360172559530668851200000000000000000000000000000
-; Formula: a(n) = a(n-1)*(floor((n^2+16)/12)+A026811(max(n-5,0)))^n, a(0) = 1
+; Formula: a(n) = a(n-1)*(((max(n-5,0)-5)>=0)+floor((n^2+16)/12)+truncate(((max(n-5,0)-5)*((max(n-5,0)-5)*((max(n-5,0)-5)*(max(n-5,0)+25)+310)+180*truncate((max(n-5,0)-5)/2)-90*max(n-5,0)+1770))/2880))^n, a(0) = 1
 
 mov $1,1
 lpb $0
   mov $3,$0
   trn $3,5
-  seq $3,26811 ; Number of partitions of n in which the greatest part is 5.
+  mov $4,$3
+  sub $3,5
+  add $4,25
+  mul $4,$3
+  add $4,310
+  mov $5,$3
+  mod $5,2
+  mul $5,-90
+  mul $4,$3
+  add $4,$5
+  add $4,1320
+  mov $5,$3
+  geq $5,0
+  mul $3,$4
+  div $3,2880
+  add $3,$5
   mov $2,$0
   pow $2,2
   add $2,16

@@ -1,7 +1,44 @@
 ; A050315: Main diagonal of A050314.
 ; Submitted by Science United
 ; 1,1,1,2,1,2,2,5,1,2,2,5,2,5,5,15,1,2,2,5,2,5,5,15,2,5,5,15,5,15,15,52,1,2,2,5,2,5,5,15,2,5,5,15,5,15,15,52,2,5,5,15,5,15,15,52,5,15,15,52,15,52,52,203,1,2,2,5,2,5,5,15,2,5,5,15,5,15,15,52
-; Formula: a(n) = A000110(sumdigits(n,2))
 
 dgs $0,2
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $5,0
+mov $6,0
+mov $9,0
+mov $11,0
+mov $1,0
+mov $4,1
+fac $4,$0
+mov $7,$0
+mov $8,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  mov $10,$6
+  div $10,$4
+  mul $11,$1
+  add $11,$10
+  add $1,1
+  mod $6,$4
+  mul $8,-1
+  mov $12,$3
+  mul $12,$6
+  mul $12,$8
+  mov $13,$3
+  mul $13,$11
+  mul $13,$8
+  add $5,$13
+  add $9,$12
+lpe
+mul $5,$8
+mul $9,$8
+div $9,$4
+add $9,$5
+mov $0,$9

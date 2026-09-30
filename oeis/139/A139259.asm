@@ -1,7 +1,6 @@
 ; A139259: Triangle read by rows: row n lists the digits of A139258(n), the palindromic number formed from the reflected decimal expansion of Euler's constant (or Euler-Mascheroni constant) gamma.
 ; Submitted by loader3229
 ; 5,5,5,5,7,5,5,7,7,5,5,7,7,7,5,5,7,7,7,7,5,5,7,7,2,7,7,5,5,7,7,2,2,7,7,5,5,7,7,2,1,2,7,7,5,5,7,7,2,1,1,2,7,7,5,5,7,7,2,1,5,1,2,7,7,5,5,7,7,2,1,5,5,1,2,7,7,5
-; Formula: a(n) = binomial(min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+1,2)*((min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+1)^2+1)-(min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+1)^2-10*truncate((binomial(min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+1,2)*((min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+1)^2+1)-(min(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+1)^2+6)/10)+6
 
 #offset 1
 

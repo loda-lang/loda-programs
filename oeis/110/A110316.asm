@@ -9,7 +9,15 @@ lpb $2
   sub $2,1
   mov $5,$2
   max $5,0
-  seq $5,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+  mov $9,$5
+  dgs $9,2
+  mov $8,0
+  bxo $8,$9
+  max $5,1
+  log $5,2
+  add $5,1
+  sub $5,$9
+  sub $5,$8
   mov $6,0
   sub $6,$5
   mov $7,$4

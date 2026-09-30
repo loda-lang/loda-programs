@@ -13,9 +13,8 @@ seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $4,$6
 gcd $4,$0
+div $0,$4
 mov $5,$0
-div $5,$4
-mov $0,$5
 mul $0,$3
 mov $1,$0
 gcd $1,$2

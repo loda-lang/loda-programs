@@ -30,6 +30,5 @@ lpb $5
   add $2,5
 lpe
 mov $3,$4
-sub $3,4
-equ $3,0
+equ $3,4
 mov $0,$3

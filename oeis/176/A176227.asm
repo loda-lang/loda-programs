@@ -1,7 +1,7 @@
 ; A176227: A symmetrical triangle sequence: T(n, k) = q^k + q^(n-k) - q^n, with q=4.
 ; Submitted by loader3229
 ; 1,1,1,1,-8,1,1,-44,-44,1,1,-188,-224,-188,1,1,-764,-944,-944,-764,1,1,-3068,-3824,-3968,-3824,-3068,1,1,-12284,-15344,-16064,-16064,-15344,-12284,1,1,-49148,-61424,-64448,-65024,-64448,-61424,-49148,1,1,-196604,-245744,-257984,-260864,-260864,-257984,-245744,-196604,1,1,-786428,-983024,-1032128,-1044224,-1046528,-1044224,-1032128,-983024,-786428,1,1,-3145724,-3932144,-4128704,-4177664,-4189184,-4189184,-4177664,-4128704,-3932144,-3145724,1,1,-12582908
-; Formula: a(n) = -truncate(4^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*(truncate(4^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))-1)+truncate(4^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))
+; Formula: a(n) = if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,4^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))-(if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,4^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))-1)*if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,4^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
 add $0,1
 mov $1,$0

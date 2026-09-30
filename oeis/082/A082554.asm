@@ -12,7 +12,7 @@ lpb $2
   sub $2,2
   mov $3,$1
   add $3,1
-  seq $3,43687 ; a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 3 runs.
+  seq $3,43687 ; a(n) = (A043570(n)-1)/2, where A043570(n) is the n-th number whose base-2 representation has exactly 3 runs.
   mul $3,2
   mov $5,$3
   add $3,1

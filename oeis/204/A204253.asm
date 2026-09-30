@@ -1,7 +1,7 @@
 ; A204253: Symmetric matrix given by f(i,j)=1+[(i+j) mod 3].
 ; Submitted by wareyore
 ; 3,1,1,2,2,2,3,3,3,3,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3
-; Formula: a(n) = -3*truncate(truncate((sqrtint(8*n-7)+3)/2)/3)+truncate((sqrtint(8*n-7)+3)/2)+1
+; Formula: a(n) = floor((sqrtint(8*n-7)+3)/2)%3+1
 
 #offset 1
 

@@ -5,11 +5,8 @@
 
 #offset 2
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-add $1,1
 seq $1,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 mod $1,$0
 mov $0,$1

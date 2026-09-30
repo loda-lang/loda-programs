@@ -11,7 +11,6 @@ seq $2,137516 ; Let 2n = p + q where p and q are primes. Take the p and q that p
 add $2,$0
 add $0,$2
 add $0,4
+seq $0,333807 ; Sum of odd divisors of n that are < sqrt(n).
 mov $1,$0
-seq $1,333807 ; Sum of odd divisors of n that are < sqrt(n).
-mov $0,$1
 sub $0,1

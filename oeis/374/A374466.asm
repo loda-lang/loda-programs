@@ -1,7 +1,7 @@
 ; A374466: a(n) = 1 if n is the product of an odd number of primes and the total number of 1-bits in the exponents of its prime factorization is odd, otherwise 0.
 ; Submitted by iBezanilla
 ; 0,1,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,1,0
-; Formula: a(n) = -2*truncate((gcd(A317946(n),A001222(n)+1)+1)/2)+gcd(A317946(n),A001222(n)+1)+1
+; Formula: a(n) = (gcd(A317946(n),A001222(n)+1)+1)%2
 
 #offset 1
 

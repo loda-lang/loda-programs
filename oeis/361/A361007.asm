@@ -15,7 +15,9 @@ lpb $3
   seq $2,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
   gcd $2,0
   mul $2,$1
-  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mov $6,0
+  sub $6,$0
+  fac $0,$6
   gcd $0,$2
   div $2,$0
   mov $4,$2

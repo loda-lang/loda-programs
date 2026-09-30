@@ -11,7 +11,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,87267 ; a(n) = gcd(n, pi(n)) where pi is A000720.
+  mov $6,$3
+  seq $6,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+  seq $6,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  gcd $3,$6
+  mov $5,$3
   equ $3,1
   sub $0,$3
   add $1,1

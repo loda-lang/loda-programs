@@ -9,6 +9,5 @@ div $1,2
 mul $0,2
 bin $0,$1
 add $1,1
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

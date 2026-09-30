@@ -14,8 +14,7 @@ lpb $0
   neq $3,$2
   mul $3,$0
   div $3,$0
-  sub $0,1
-  trn $0,1
+  trn $0,2
   add $1,$3
   mov $3,$2
 lpe

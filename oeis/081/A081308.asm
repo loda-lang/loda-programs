@@ -17,8 +17,7 @@ lpb $3
   add $2,1
   seq $2,65333 ; Characteristic function of 3-smooth numbers, i.e., numbers of the form 2^i*3^j (i, j >= 0).
   mul $2,$1
-  sub $2,1
-  trn $2,1
+  trn $2,2
   add $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,$2

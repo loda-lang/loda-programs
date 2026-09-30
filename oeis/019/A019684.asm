@@ -1,9 +1,28 @@
 ; A019684: Decimal expansion of Pi/17.
 ; Submitted by Goldislops
 ; 1,8,4,7,9,9,5,6,7,8,5,8,2,2,3,1,3,1,6,7,4,2,7,3,1,4,0,1,9,2,9,1,1,9,3,4,3,6,4,5,3,9,3,7,6,4,3,3,8,2,9,7,5,4,1,7,4,9,9,6,7,4,0,7,2,3,9,8,9,2,0,0,3,6,9,7,7,6,9,9
-; Formula: a(n) = -10*truncate(truncate(A011545(n+1)/17)/10)+truncate(A011545(n+1)/17)
 
-add $0,1
-seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
+mov $2,0
+mov $5,0
+add $0,2
+mov $1,1
+mov $3,$0
+mul $3,7
+lpb $3
+  max $3,1
+  max $5,$2
+  div $5,$3
+  add $2,$1
+  sub $3,1
+  mul $1,2
+  add $1,$5
+lpe
+sub $0,1
+mov $4,10
+pow $4,$0
+div $2,$4
+mul $1,2
+div $1,$2
+mov $0,$1
 div $0,17
 mod $0,10

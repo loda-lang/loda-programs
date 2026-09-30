@@ -1,13 +1,42 @@
 ; A378996: Denominator of sigma(2*n)/(2*n).
 ; Submitted by Science United
 ; 2,4,1,8,5,3,7,16,6,10,11,2,13,1,5,32,17,36,19,4,7,11,23,12,50,26,9,7,29,5,31,64,11,34,35,24,37,19,13,40,41,3,43,22,5,23,47,8,98,100,17,52,53,27,55,14,19,58,59,1,61,31,21,128,65,11,67,68,23,5,71,144,73,74,25,38,77,39,79,80
-; Formula: a(n) = truncate((2*n)/gcd(2*n,A000203(2*n)))
 
 #offset 1
 
 mul $0,2
 mov $1,$0
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $5,$0
+sub $5,1
+mov $6,0
+mov $4,$0
+dir $4,2
+mov $9,$4
+mov $8,$4
+nrt $8,2
+lpb $8
+  max $8,1
+  mov $10,$4
+  mod $10,$8
+  equ $10,0
+  mov $7,$4
+  div $7,$8
+  add $7,$8
+  mul $7,$10
+  add $6,$7
+  sub $8,1
+lpe
+nrt $4,2
+mov $8,$4
+pow $8,2
+sub $8,$9
+equ $8,0
+mul $4,$8
+sub $6,$4
+mov $3,$0
+bxo $3,$5
+mul $3,$6
+mov $1,$3
 mov $2,$0
-gcd $2,$1
+gcd $2,$3
 div $0,$2

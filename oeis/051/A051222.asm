@@ -12,8 +12,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,277087 ; a(0) = 1, a(n) = (denominator of the Bernoulli number B_{2n})/3, for n>=1.
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

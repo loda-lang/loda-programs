@@ -1,7 +1,7 @@
 ; A301370: Maximum determinant of an n X n (0,1)-matrix that has exactly 2*n ones.
 ; Submitted by Landjunge
 ; 0,2,2,3,4,4,6,8,9,12,16,18,24,32,36,48,64
-; Formula: a(n) = b(n-1), b(n) = max(2*b(n-6)+b(n-5)+2,2*b(n-3)), b(7) = 6, b(6) = 4, b(5) = 4, b(4) = 3, b(3) = 2, b(2) = 2, b(1) = 0, b(0) = 0
+; Formula: a(n) = max(2*a(n-6)+a(n-5)+2,2*a(n-3)), a(8) = 6, a(7) = 4, a(6) = 4, a(5) = 3, a(4) = 2, a(3) = 2, a(2) = 0, a(1) = 0
 
 #offset 2
 

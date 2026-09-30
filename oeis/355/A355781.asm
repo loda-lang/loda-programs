@@ -9,12 +9,11 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  add $4,1
-  mov $10,$4
-  sub $4,1
+  mov $10,$2
+  add $10,1
   mov $11,2
   mul $11,$10
-  pow $11,$4
+  pow $11,$2
   div $11,$10
   mov $5,$2
   add $5,$9

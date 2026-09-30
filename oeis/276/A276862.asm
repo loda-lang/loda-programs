@@ -1,7 +1,7 @@
 ; A276862: First differences of the Beatty sequence A003151 for 1 + sqrt(2).
 ; Submitted by Science United
 ; 2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2
-; Formula: a(n) = -2*truncate(sqrtint(2*(sqrtint(2*n^2)+2)^2)/2)+sqrtint(2*(sqrtint(2*n^2)+2)^2)+2
+; Formula: a(n) = sqrtint(2*(sqrtint(2*n^2)+2)^2)%2+2
 
 #offset 1
 

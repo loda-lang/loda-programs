@@ -9,11 +9,25 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $6,$1
+  mul $6,9
+  div $6,4
+  max $6,1
+  log $6,10
+  mov $7,10
+  pow $7,$6
+  mov $8,$7
+  div $7,9
+  mul $7,4
+  add $7,1
   mov $3,$1
-  add $3,1
-  seq $3,273892 ; Numbers starting with an even (decimal) digit.
-  add $3,1
-  trn $3,2
+  sub $3,$7
+  mov $7,$3
+  div $3,$8
+  add $3,2
+  mul $3,$8
+  add $3,$7
+  trn $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

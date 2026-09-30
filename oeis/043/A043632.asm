@@ -18,8 +18,7 @@ lpb $4
   lpe
   add $1,4
   lpb $3
-    sub $3,5
-    trn $3,4
+    trn $3,9
     add $1,1
   lpe
 lpe

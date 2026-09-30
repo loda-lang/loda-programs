@@ -5,9 +5,8 @@
 
 #offset 2
 
+seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $1,40 ; The prime numbers.
-mov $0,$1
 div $0,2
 seq $0,165781 ; a(n) = (2^A002326(n)-1)/(2*n+1).
 mod $0,$1

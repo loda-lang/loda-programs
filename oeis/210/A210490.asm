@@ -16,8 +16,7 @@ lpb $2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $5,$3
   mov $3,$5
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,296306 ; a(n) = A001157(n)/A050999(n).
   equ $3,1
   sub $0,$3

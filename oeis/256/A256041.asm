@@ -22,7 +22,7 @@ lpb $0
   sub $0,1
   mul $1,$2
   add $2,1
-  mul $3,0
+  mov $3,0
   gcd $3,$1
   sub $4,1
   sub $1,$3

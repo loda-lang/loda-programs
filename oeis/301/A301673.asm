@@ -3,9 +3,9 @@
 ; Formula: a(n) = floor(((5*n+1)*(5*n+4))/12)+1
 
 mul $0,5
-add $0,1
 mov $1,$0
-add $0,3
+add $1,1
+add $0,4
 mul $0,$1
 div $0,12
 add $0,1

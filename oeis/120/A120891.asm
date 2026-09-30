@@ -1,7 +1,7 @@
 ; A120891: Number of primitive Pythagorean triangles with odd leg 2n-1.
 ; Submitted by STE\/E
 ; 0,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,2,2,1,2,1,1,2,1,1,2,1,2,2,1,1,2,2,1,2,1,1,2,2,1,1,1,2,2,1,2,2,2,1,2,1,1,4,1,1,2,1,2,2,2,1,2,1,1,2,1,2,2,1,1,2,2,2,2,1,1,2,2,1,2
-; Formula: a(n) = truncate((5*truncate((A100007(n)+2)/2)-4)/5)
+; Formula: a(n) = floor((5*floor((A100007(n)+2)/2)-4)/5)
 
 #offset 1
 

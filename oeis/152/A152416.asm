@@ -4,11 +4,11 @@
 
 mov $1,0
 mov $2,0
+mov $3,$0
 mov $5,0
 mov $6,0
-add $0,2
-mov $3,$0
-sub $0,1
+add $0,1
+add $3,2
 mul $3,7
 lpb $3
   max $3,1

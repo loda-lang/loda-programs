@@ -1,6 +1,7 @@
 ; A058368: Number of ways to cover (without overlapping) a ring lattice (necklace) of n sites with molecules that are 5 sites wide.
 ; Submitted by loader3229
 ; 1,1,1,1,6,7,8,9,10,16,23,31,40,50,66,89,120,160,210,276,365,485,645,855,1131,1496,1981,2626,3481,4612,6108,8089,10715,14196,18808,24916,33005,43720,57916,76724,101640,134645,178365,236281,313005,414645
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+b(n-5), b(9) = 16, b(8) = 10, b(7) = 9, b(6) = 8, b(5) = 7, b(4) = 6, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1
 
 #offset 1
 

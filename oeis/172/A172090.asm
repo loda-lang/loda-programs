@@ -1,7 +1,7 @@
 ; A172090: Triangle T(n, k) = f(n-k) + f(k) - f(n), where f(n) = -3*n with f(0) = 1, f(1) = -2, read by rows.
 ; Submitted by loader3229
 ; 1,1,1,1,2,1,1,1,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1
-; Formula: a(n) = binomial((truncate((sqrtint(8*n+8)-1)/2)==2)+1,min(truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1))+truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = binomial((floor((sqrtint(8*n+8)-1)/2)==2)+1,min(floor((sqrtint(8*n+8)-1)/2)+truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1)),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
 add $0,1
 mov $1,$0

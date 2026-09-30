@@ -12,7 +12,20 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,127368 ; Relative prime triangle, read by rows.
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $5,$4
+  bin $4,2
+  mov $6,$3
+  sub $6,$4
+  gcd $5,$6
+  mov $4,$5
+  equ $4,1
+  mul $4,$6
+  mov $3,$4
   equ $3,0
   sub $0,$3
   add $1,1

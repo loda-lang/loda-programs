@@ -15,8 +15,16 @@ lpb $2
   mul $3,$6
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
+  mov $8,$3
+  dgs $8,2
+  mov $7,0
+  bxo $7,$8
   mov $5,$3
-  seq $5,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+  max $5,1
+  log $5,2
+  add $5,1
+  sub $5,$8
+  sub $5,$7
   min $5,0
   neq $5,0
   sub $0,$5

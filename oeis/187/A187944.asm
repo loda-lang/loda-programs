@@ -1,7 +1,7 @@
 ; A187944: [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=3, [ ]=floor.
 ; Submitted by Science United
 ; 1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1
-; Formula: a(n) = -truncate((sqrtint(5*n^2)+n)/2)-2*truncate((-truncate((sqrtint(5*n^2)+n)/2)+truncate((sqrtint(5*(n+3)^2)+n+1)/2)+1)/2)+truncate((sqrtint(5*(n+3)^2)+n+1)/2)+1
+; Formula: a(n) = -floor((sqrtint(5*n^2)+n)/2)-2*truncate((-floor((sqrtint(5*n^2)+n)/2)+floor((sqrtint(5*(n+3)^2)+n+1)/2)+1)/2)+floor((sqrtint(5*(n+3)^2)+n+1)/2)+1
 
 #offset 1
 

@@ -5,7 +5,6 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
+fac $0,$0
 mov $1,$0
-fac $1,$0
-mov $0,$1
 mul $0,2

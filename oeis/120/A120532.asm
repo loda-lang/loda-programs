@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,120510 ; Generalized meta-Fibonacci sequence a(n) with parameters s=3 and k=4.
   mov $2,$3
   mul $2,$0

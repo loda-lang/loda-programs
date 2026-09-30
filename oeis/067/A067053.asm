@@ -9,6 +9,5 @@ mov $2,$0
 pow $0,2
 mul $0,11
 log $0,11
+pow $0,$2
 mov $1,$0
-pow $1,$2
-mov $0,$1

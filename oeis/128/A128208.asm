@@ -1,7 +1,7 @@
 ; A128208: Inverse of number triangle A128210.
 ; Submitted by loader3229
 ; 1,1,1,0,1,1,0,0,3,1,0,0,0,5,1,0,0,0,0,11,1,0,0,0,0,0,21,1,0,0,0,0,0,0,43,1,0,0,0,0,0,0,0,85,1,0,0,0,0,0,0,0,0,171,1,0,0,0,0,0,0,0,0,0,341,1
-; Formula: a(n) = floor((truncate(2^binomial(truncate((sqrtint(8*n+8)-1)/2),(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-truncate((sqrtint(8*n+8)-1)/2)+n)^10))+4)/3)-1
+; Formula: a(n) = floor((2^binomial(floor((sqrtint(8*n+8)-1)/2),(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)-floor((sqrtint(8*n+8)-1)/2)+n)^10)+4)/3)-1
 
 add $0,1
 mov $2,$0

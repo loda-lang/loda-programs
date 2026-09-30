@@ -1,7 +1,7 @@
 ; A359152: a(n) = 1 if n is a number of the form 4u+3 with an odd number of prime factors (counted with multiplicity), otherwise 0.
 ; Submitted by tomkalei
 ; 0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0
-; Formula: a(n) = A001222(n)*(binomial(n,2)*(n+1)+binomial(n,2))-2*truncate((A001222(n)*(binomial(n,2)*(n+1)+binomial(n,2)))/2)
+; Formula: a(n) = (A001222(n)*(binomial(n,2)*(n+1)+binomial(n,2)))%2
 
 #offset 1
 

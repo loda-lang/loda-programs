@@ -7,8 +7,7 @@
 
 mov $1,$0
 seq $1,300147 ; a(n) = (1/8) * Sum_{d|n} d * A110163(d).
-mul $0,0
-add $0,2
+mov $0,2
 seq $0,142213 ; Primes congruent to 16 mod 41.
 mul $0,$1
 div $0,14010

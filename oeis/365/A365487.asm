@@ -7,10 +7,10 @@
 
 mul $0,2
 mov $1,$0
-sub $1,2
-mov $2,$1
-sub $1,1
+sub $1,3
 gcd $1,2
+mov $2,$0
+sub $2,2
 div $2,2
 add $2,1
 mov $3,$2

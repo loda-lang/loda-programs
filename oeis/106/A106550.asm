@@ -5,12 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
 seq $0,37276 ; Start with 1; for n>1, replace n with the concatenation of its prime factors in increasing order.
-add $1,1
 seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
 add $1,1
 add $1,$0

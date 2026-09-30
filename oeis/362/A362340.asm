@@ -7,7 +7,7 @@ lpb $0
   sub $0,1
   div $1,2
   mul $1,$4
-  mul $2,0
+  mov $2,0
   sub $2,$0
   pow $2,$0
   mul $2,256

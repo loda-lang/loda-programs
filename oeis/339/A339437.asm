@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,339436 ; If n = p_1 * ... * p_m with primes p_i <= p_{i+1}, a(n) = Sum_{j=1..m-1} p_1*...*p_j + Sum_{j=2..m} p_j*...*p_m.
-  trn $3,1
-  add $3,1
+  max $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

@@ -11,7 +11,7 @@ lpb $0
   mov $2,$0
   mov $4,-1
   pow $4,$0
-  mul $0,0
+  mov $0,0
   sub $2,1
   seq $2,210459 ; McKay-Thompson series of class 20A for the Monster group with a(0) = 4.
   mul $2,$4

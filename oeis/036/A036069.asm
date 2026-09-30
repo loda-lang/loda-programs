@@ -4,8 +4,7 @@
 ; Formula: a(n) = truncate(b(n)/gcd(c(n),b(n))), b(n) = 2*b(n-2)*(n-1), b(2) = 2, b(1) = 2, b(0) = 1, c(n) = 2*n*c(n-2), c(2) = 4, c(1) = 1, c(0) = 1
 
 mov $1,1
-mov $2,1
-mov $3,1
+fil $1,3
 lpb $0
   sub $0,1
   sub $3,$1

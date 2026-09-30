@@ -1,7 +1,7 @@
 ; A174699: Triangle read by rows: T(n,k) = 2^(2n) mod (2k+1).
 ; Submitted by loader3229
 ; 0,0,1,0,1,1,0,1,4,1,0,1,1,4,4,0,1,4,2,7,1,0,1,1,1,1,4,1,0,1,4,4,4,5,4,4,0,1,1,2,7,9,3,1,1,0,1,4,1,1,3,12,4,4,1,0,1,1,4,4,1,9,1,16,4,4
-; Formula: a(n) = -truncate(truncate(4^truncate((sqrtint(8*n+8)-1)/2))/(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1))*(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1)+truncate(4^truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = 4^floor((sqrtint(8*n+8)-1)/2)-truncate((4^floor((sqrtint(8*n+8)-1)/2))/(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+1))*(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+1)
 
 add $0,1
 mov $1,$0

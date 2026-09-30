@@ -4,9 +4,8 @@
 
 mov $2,$0
 seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $0,$2
 mov $1,$0
-add $1,$2
-mov $0,$1
 sub $0,2
 lpb $1
   mul $0,2

@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   seq $3,256289 ; Apply the transformation 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 0 to the digits of n written in base 9; do not convert back to base 10.
   seq $3,316866 ; Number of times 5 appears in decimal expansion of n.
-  sub $3,2
-  equ $3,1
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

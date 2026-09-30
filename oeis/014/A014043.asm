@@ -1,7 +1,7 @@
 ; A014043: Inverse of 34th cyclotomic polynomial.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((-n-17*truncate((-n)/17))^(-n-17*truncate((-n)/17)))*(-1)^n
+; Formula: a(n) = (-1)^n*if(((-n-17*truncate((-n)/17))^2)==1,(-n-17*truncate((-n)/17))^(-n-17*truncate((-n)/17)),if((-n-17*truncate((-n)/17))<=(-1),0,(-n-17*truncate((-n)/17))^(-n-17*truncate((-n)/17))))
 
 mov $1,-1
 pow $1,$0

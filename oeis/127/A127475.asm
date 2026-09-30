@@ -1,17 +1,41 @@
 ; A127475: Triangle T(n,k) read by rows: T(n,k) = mu(n)*phi(k) if k|n, else T(n,k)=0.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,-1,-1,-1,0,-2,0,0,0,0,-1,0,0,0,-4,1,1,2,0,0,2,-1,0,0,0,0,0,-6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,4,0,0,0,0,4,-1,0,0,0,0,0,0,0,0,0,-10,0,0,0,0,0,0,0,0,0,0,0,0,-1,0
-; Formula: a(n) = truncate((4*A054526(n-1)*A008683(truncate((sqrtint(8*n-7)+1)/2))*A126988(n)^truncate(0^A126988(n)))/4)
 
 #offset 1
 
 mov $2,$0
-seq $2,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
-pow $3,$2
+mul $2,8
+nrt $2,2
+add $2,1
+div $2,2
+mov $4,$2
+bin $2,2
+mov $5,$0
+sub $5,$2
+mov $7,$4
+div $7,$5
+mov $6,$4
+mod $6,$5
+equ $6,0
+mul $6,$7
+pow $3,$6
 sub $0,1
+mov $2,$6
 pow $2,$3
 mov $1,$0
-seq $1,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
+sub $1,1
+mov $8,$1
+mul $8,8
+add $8,1
+nrt $8,2
+add $8,1
+div $8,2
+bin $8,2
+sub $1,$8
+add $1,1
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+mov $9,$1
 mul $1,$2
 mul $0,8
 add $0,1

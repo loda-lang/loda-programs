@@ -12,7 +12,8 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,206369 ; a(p^k) = p^k - p^(k-1) + p^(k-2) - ... +- 1, and then extend by multiplicativity.
+  seq $0,61020 ; Negate primes in factorizations of divisors of n, then sum.
+  gcd $0,0
   mov $2,$3
   mul $2,$0
   add $1,$2

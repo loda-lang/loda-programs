@@ -1,7 +1,7 @@
 ; A354031: a(n) = 1 if n > 1 and n is a power of a Pythagorean prime (prime of the form 4m+1), otherwise 0.
 ; Submitted by zombie67 [MM]
 ; 0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate(truncate((A253629(2*n)*binomial(2*truncate((-1)^(2*n-1)),2)*(n+6))/2)/2)+truncate((A253629(2*n)*binomial(2*truncate((-1)^(2*n-1)),2)*(n+6))/2)
+; Formula: a(n) = -2*truncate(truncate((A253629(2*n)*binomial(2*(-1)^(2*n-1),2)*(n+6))/2)/2)+truncate((A253629(2*n)*binomial(2*(-1)^(2*n-1),2)*(n+6))/2)
 
 #offset 1
 

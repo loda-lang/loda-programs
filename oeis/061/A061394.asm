@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,25487 ; Least integer of each prime signature A124832; also products of primorial numbers A002110.
 mov $1,$0
-seq $1,25487 ; Least integer of each prime signature A124832; also products of primorial numbers A002110.
-mov $0,$1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

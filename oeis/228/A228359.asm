@@ -1,4 +1,4 @@
-; A228359: Numbers n whose 10's complement is not prime, i.e., 10^k-n, where k is the number of digits of n, is not prime.
+; A228359: Numbers m whose 10's complement is not prime, i.e., 10^k-m, where k is the number of digits of m, is not prime.
 ; Submitted by nenym
 ; 1,2,4,6,9,10,12,13,14,15,16,18,19,20,22,23,24,25,26,28,30,31,32,34,35,36,37,38,40,42,43,44,45,46,48,49,50,51,52,54,55,56,58,60,61,62,64,65,66,67,68,70,72,73,74,75,76,78,79,80,82,84,85,86,88,90,91,92,94,96,99,100,101,102,103,104,105,106,107,108
 

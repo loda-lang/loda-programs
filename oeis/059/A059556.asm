@@ -19,8 +19,7 @@ lpb $4
     mov $5,0
     mov $0,$11
     add $0,$9
-    trn $0,1
-    add $0,1
+    max $0,1
     mov $2,1
     mov $3,$0
     lpb $3

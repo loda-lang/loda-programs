@@ -14,9 +14,8 @@ lpb $2
   div $3,2
   mul $3,4
   seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  equ $3,0
   mov $5,$3
-  equ $5,0
-  mov $3,$5
   add $3,1
   mod $3,2
   sub $0,$3

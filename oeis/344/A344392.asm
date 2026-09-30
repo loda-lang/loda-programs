@@ -40,6 +40,6 @@ lpb $3
   add $8,$7
   mov $9,1
   add $5,1
-  mul $7,0
+  mov $7,0
 lpe
 mov $0,$8

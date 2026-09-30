@@ -6,7 +6,6 @@
 #offset 1
 
 sub $0,1
+seq $0,157679 ; Number of subtrees of a complete binary tree.
 mov $1,$0
-seq $1,157679 ; Number of subtrees of a complete binary tree.
-mov $0,$1
 add $0,1

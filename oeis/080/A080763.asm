@@ -1,7 +1,7 @@
 ; A080763: Exchange 1's and 2's in the eta-sequence A006337.
 ; Submitted by Joe
 ; 2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2
-; Formula: a(n) = -2*truncate(sqrtint(2*(sqrtint(2*(n+1)^2)-1)^2)/2)+sqrtint(2*(sqrtint(2*(n+1)^2)-1)^2)+1
+; Formula: a(n) = sqrtint(2*(sqrtint(2*(n+1)^2)-1)^2)%2+1
 
 #offset 1
 

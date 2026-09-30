@@ -1,6 +1,7 @@
 ; A219902: Number of isomorphism classes of IPR nanocones with 3 pentagons and a nearsymmetric boundary of length n.
 ; Submitted by Stony666
 ; 0,0,5,14,32,57,97,145,215,295,402,522,675,842,1049,1272
+; Formula: a(n) = if((max(n-1,0)%2)==0,max(n-1,0)/2,max(n-1,0))-max(n-1,0)+floor((2*max(n-1,0)*(max(n-1,0)+2)^2+2*(max(n-1,0)+2)^2)/6)-1
 
 trn $0,1
 mov $2,$0

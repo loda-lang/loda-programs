@@ -11,9 +11,8 @@ lpb $0
   mov $2,$0
   max $2,0
   add $2,1
+  seq $2,7001 ; Trajectory of 1 under the morphism 1 -> 12, 2 -> 123, 3 -> 1234, etc.
   mov $3,$2
-  seq $3,7001 ; Trajectory of 1 under the morphism 1 -> 12, 2 -> 123, 3 -> 1234, etc.
-  mov $2,$3
   add $2,1
   add $1,$2
 lpe

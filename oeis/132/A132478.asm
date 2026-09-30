@@ -1,7 +1,7 @@
 ; A132478: A007318^(-1) * [4*A007318^(2) - 3*A000012].
 ; Submitted by loader3229
 ; 1,4,1,4,11,1,4,9,18,1,4,19,15,25,1,4,17,52,22,32,1,4,27,45,110,30,39,1,4,25,102,95,200,39,46,1,4,35,91,287,175,329,49,53,1,4,33,168,252,672,294,504,60,60,1
-; Formula: a(n) = 4*binomial(truncate((sqrtint(8*n+8)-1)/2),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))-3*binomial(truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1)),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = 4*binomial(floor((sqrtint(8*n+8)-1)/2),-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))-3*binomial(truncate((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1)),-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $2,$0

@@ -1,7 +1,7 @@
 ; A104104: a(1) = 1, if A(k) = sequence of first 2^(k-1) terms and if B(k) is A(k) with 0's and 1's exchanged, then A(k+1) = A(k)A(k) if a(k) = 0, A(k+1) = A(k)B(k) if a(k) = 1.
 ; Submitted by loader3229
 ; 1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1
-; Formula: a(n) = -sumdigits(16*n-16,8)*sign(16*n-16)+17*n-2*truncate((-sumdigits(16*n-16,8)*sign(16*n-16)+17*n-16)/2)-16
+; Formula: a(n) = 17*n-sumdigits(16*n-16,8)-2*truncate((17*n-sumdigits(16*n-16,8)-16)/2)-16
 
 #offset 1
 

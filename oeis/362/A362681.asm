@@ -1,4 +1,4 @@
-; A362681: The number of steps, starting from n, to reach x<=2 in an iteration x <- 2x - {sum of proper factors of 2x}.
+; A362681: The number of steps, starting from n, to reach k<=2 in an iteration k -> 2*k - (sum of proper factors of 2*k).
 ; Submitted by Science United
 ; 0,0,1,1,2,1,3,1,1,1,2,1,3,1,1,1,2,1,3,1,1,3,2,1,2,4,1,1,2,1,3,1,1,3,1,1,2,4,1,1,2,1,3,1,1,3,2,1,5,1,1,1,2,1,3,1,1,3,2,1,3,3,1,1,2,1,3,2,1,1,2,1,3,4,1,3,2,1,3,1
 

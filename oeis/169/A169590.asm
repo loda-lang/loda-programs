@@ -1,7 +1,7 @@
 ; A169590: Triangle T(n,k) with : column n = A000034 if n even and column n = A000007 if n odd.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,1,0,1,2,0,2,1,1,0,1,0,1,2,0,2,0,2,1,1,0,1,0,1,0,1,2,0,2,0,2,0,2,1,1,0,1,0,1,0,1,0,1,2,0,2,0,2,0,2,0,2,1,1,0,1,0,1,0,1,0,1,0,1,2,0,2,0,2,0,2,0,2,0,2,1,1,0
-; Formula: a(n) = truncate((truncate(2^(-binomial(truncate((sqrtint(8*n+16)-1)/2)+1,2)+n))+1)^truncate((sqrtint(8*n+16)-1)/2))%3
+; Formula: a(n) = ((if((-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n+16)-1)/2)+1,2)+n))+1)^floor((sqrtint(8*n+16)-1)/2))%3
 
 mov $1,$0
 add $1,2

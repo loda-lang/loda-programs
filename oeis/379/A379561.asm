@@ -10,7 +10,7 @@ add $1,1
 mov $2,$1
 seq $2,25527 ; a(n) = n!/lcm{1,2,...,n} = (n-1)!/lcm{C(n-1,0), C(n-1,1), ..., C(n-1,n-1)}.
 sub $1,1
-seq $1,1705 ; Generalized Stirling numbers: a(n) = n! * Sum_{k=0..n-1} (k+1)/(n-k).
+seq $1,1705 ; Generalized Stirling numbers, [n+2,3]_2: a(n) = n! * Sum_{k=0..n-1} (k+1)/(n-k).
 div $1,$2
 seq $0,25558 ; a(n) = (n/(n+1)) * lcm(1,2,...,n+1).
 add $0,$1

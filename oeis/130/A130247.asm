@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
 seq $0,130241 ; Maximal index k of a Lucas number such that Lucas(k) <= n (the 'lower' Lucas (A000032) Inverse).
+sub $2,1
 lpb $2
   sub $1,72
   div $0,$1

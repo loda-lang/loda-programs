@@ -13,9 +13,8 @@ lpb $0
   sub $0,$5
   mov $4,$0
   max $4,0
+  nrt $4,2
   mov $7,$4
-  nrt $7,2
-  mov $4,$7
   add $4,1
   mov $5,1
   add $5,$6

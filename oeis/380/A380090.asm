@@ -13,7 +13,6 @@ mov $2,$0
 div $2,$1
 add $0,$2
 add $0,2
+gcd $0,$3
 mov $4,$0
-gcd $4,$3
-mov $0,$4
 seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).

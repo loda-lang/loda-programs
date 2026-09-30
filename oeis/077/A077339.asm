@@ -19,6 +19,6 @@ lpb $0
   mul $1,10
   sub $1,1
   add $1,$0
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

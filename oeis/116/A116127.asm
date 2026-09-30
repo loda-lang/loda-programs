@@ -13,9 +13,8 @@ lpb $3
   trn $0,1
   add $0,2
   seq $0,40 ; The prime numbers.
+  add $0,1
   mov $5,$0
-  add $5,1
-  mov $0,$5
   div $0,3
   mov $2,$3
   mul $2,$0

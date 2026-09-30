@@ -7,11 +7,10 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,79255 ; a(n) is taken to be the smallest positive integer greater than a(n-1) such that the condition "n is in the sequence if and only if a(n) is odd and a(n+1) is even" can be satisfied.
   add $1,2
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1
 add $0,1

@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   seq $3,287619 ; Number of positive odd solutions to equation x^2 + 39y^2 = 8*(n + 5).
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,5
   mov $4,$0

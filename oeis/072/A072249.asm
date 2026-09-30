@@ -1,4 +1,4 @@
-; A072249: Related to lollipop graphs.
+; A072249: a(n) is the least k such that for every m >= k, the characteristic set of the lollipop graph C_{m,n} is the central edge of its pendant path.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 5,7,11,17,21,27,35,41
 ; Formula: a(n) = 2*truncate((binomial(n+2,2)-4)/3)+1

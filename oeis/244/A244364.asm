@@ -1,6 +1,7 @@
 ; A244364: a(n) is the least integer m > 1 such that n is the largest number of identical digits that can end m^k for positive integer k.
 ; Submitted by loader3229
 ; 3,4,2,33,17,319,639,1279,2559,5119,10239,20479,40959,81919,163839,327679,655359,1310719,2621439,5242879,10485759,20971519,41943039,83886079,167772159,335544319,671088639
+; Formula: a(n) = b(n-1), b(n) = 3*b(n-1)-2*b(n-2), b(12) = 40959, b(11) = 20479, b(10) = 10239, b(9) = 5119, b(8) = 2559, b(7) = 1279, b(6) = 639, b(5) = 319, b(4) = 17, b(3) = 33, b(2) = 2, b(1) = 4, b(0) = 3
 
 #offset 1
 
@@ -13,7 +14,7 @@ mov $6,319
 mov $7,639
 sub $0,1
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,7
   sub $7,$5
   sub $7,$5

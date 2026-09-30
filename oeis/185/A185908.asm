@@ -1,7 +1,7 @@
 ; A185908: Array: T(n,k) = n-1 + min{n,k}, by antidiagonals.
 ; Submitted by loader3229
 ; 1,1,2,1,3,3,1,3,4,4,1,3,5,5,5,1,3,5,6,6,6,1,3,5,7,7,7,7,1,3,5,7,8,8,8,8,1,3,5,7,9,9,9,9,9,1,3,5,7,9,10,10,10,10,10,1,3,5,7,9,11,11,11,11,11,11,1,3,5,7,9,11,12,12,12,12,12,12,1,3
-; Formula: a(n) = min(truncate((sqrtint(8*n)-1)/2),2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2)+1
+; Formula: a(n) = min(floor((sqrtint(8*n)-1)/2),2*n-2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)+1
 
 #offset 1
 

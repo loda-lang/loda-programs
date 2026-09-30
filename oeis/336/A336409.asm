@@ -1,7 +1,7 @@
 ; A336409: Distance from prime(n) to the nearest odd composite that is < prime(n).
 ; Submitted by Science United
 ; 2,4,2,4,2,2,4,2,2,4,2,2,2,4,2,2,4,2,2,2,2,2,4,2,4,2,2,2,2,4,2,4,2,2,2,2,2,4,2,4,2,4,2,2,2,4,2,2,4,2,2,2,2,4,2,2,4,2,2,2,4,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,4,2,4
-; Formula: a(n) = 2*A001222(logint(A000010(A064722(2*truncate(A000040(n)/2))+1),2)+1)-4*truncate((A001222(logint(A000010(A064722(2*truncate(A000040(n)/2))+1),2)+1)+5)/2)+12
+; Formula: a(n) = 2*((A001222(logint(A000010(A064722(2*floor(A000040(n)/2))+1),2)+1)+5)%2)+2
 
 #offset 5
 

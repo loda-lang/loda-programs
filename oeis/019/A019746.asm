@@ -1,13 +1,35 @@
 ; A019746: Decimal expansion of e/9.
 ; Submitted by DukeBox
 ; 3,0,2,0,3,1,3,1,4,2,7,3,2,2,7,2,4,8,3,7,3,3,6,5,2,7,4,5,9,4,7,4,0,2,7,7,5,2,8,5,8,3,0,1,0,4,1,1,1,0,6,6,1,9,4,4,0,7,7,4,1,8,0,8,5,8,2,3,0,7,3,6,7,0,5,9,4,9,7,3
-; Formula: a(n) = -10*truncate(truncate(A011543(n+1)/9)/10)+truncate(A011543(n+1)/9)
 
 sub $0,3
 mov $1,4
 add $1,$0
+mov $5,0
+mov $8,0
 mov $2,$1
-seq $2,11543 ; Decimal expansion of e truncated to n places.
+add $2,1
+mov $3,10
+pow $3,$2
+mov $6,$3
+pow $3,2
+mov $4,1
+mov $2,$3
+lpb $2
+  mov $2,-1
+  add $4,$5
+  mul $5,-1
+  add $5,$4
+  mov $7,$3
+  div $7,$5
+  add $2,$7
+  mov $3,$2
+  mov $5,1
+  add $8,$2
+lpe
+mov $2,$8
+div $2,$6
 mov $0,$2
-div $0,9
+div $0,90
 mod $0,10
+div $2,10

@@ -23,8 +23,21 @@ lpb $2
   mov $5,$3
   bin $5,2
   add $5,$0
-  seq $5,136572 ; Triangle read by rows: row n consists of n zeros followed by n!.
-  mul $4,$5
+  mov $7,$5
+  add $5,1
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $9,$5
+  bin $9,2
+  sub $5,1
+  mov $8,0
+  sub $8,$5
+  sub $7,$9
+  fac $7,$8
+  mul $4,$7
+  mov $5,$7
   add $6,$4
 lpe
 mov $0,$6

@@ -3,9 +3,8 @@
 ; Formula: a(n) = truncate((binomial(-n,4)*(3*n+2))/5)
 
 sub $1,$0
-mul $0,2
-add $0,1
-mul $0,2
+mul $0,4
+add $0,2
 add $0,$1
 bin $1,4
 mul $1,$0

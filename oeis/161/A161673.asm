@@ -9,8 +9,9 @@ mov $2,$0
 mul $2,4
 lpb $2
   mov $3,$1
+  bor $3,7
   add $3,1
-  seq $3,53388 ; a(n) = A053398(8, n).
+  lex $3,2
   add $3,$4
   gcd $3,2
   sub $0,$3

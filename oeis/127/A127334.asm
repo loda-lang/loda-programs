@@ -10,8 +10,7 @@ lpb $4
   sub $4,1
   mov $0,$2
   add $0,$4
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,40 ; The prime numbers.
   add $0,86
   gcd $3,5

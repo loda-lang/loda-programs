@@ -1,6 +1,7 @@
-; A194550: Parts that are visible in one of the three views of the version "Tree" of the shell model of partitions.
+; A194550: Parts that are visible in one of the three views of the version "Tree" of the modular table of partitions.
 ; Submitted by Science United
 ; 1,1,2,1,3,1,2,1,4,1,3,1,5,1,2,1,4,1,3,1,6,1,3,1,5,1,4,1,7,1,2,1,4,1,3,1,6,1,5,1,4,1,8,1,3,1,5,1,4,1,7,1,3,1,6,1,5,1,9,1,2,1,4,1,3,1,6,1,5,1,4,1,8,1,4,1,7,1,6,1
+; Formula: a(n) = truncate(((A141285(if(((n-1)%2)==0,(n-1)/2,n-1)+1)-1)*((-1)^(n-1)+1))/2)+1
 
 #offset 1
 

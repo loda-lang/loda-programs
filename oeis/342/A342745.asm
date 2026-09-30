@@ -7,8 +7,7 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,342743 ; Positions of words in A341334 such that first digit = 0 and last digit = 1.
   mov $0,0
 lpe

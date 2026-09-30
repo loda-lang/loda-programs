@@ -1,7 +1,7 @@
 ; A133278: Triangle read by rows, with n-th row the smallest non-constant n-term arithmetic progression of primes beginning with prime(n).
 ; Submitted by loader3229
 ; 2,3,5,5,11,17,7,19,31,43
-; Formula: a(n) = max(truncate((sqrtint(8*n)-1)/2)*((truncate((sqrtint(8*n)-1)/2)+1)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+2)-1,0)+2
+; Formula: a(n) = max(floor((sqrtint(8*n)-1)/2)*((floor((sqrtint(8*n)-1)/2)+1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)+2)-1,0)+2
 
 #offset 1
 

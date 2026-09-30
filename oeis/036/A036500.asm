@@ -1,5 +1,6 @@
 ; A036500: Number of inequivalent cyclic Hadamard difference sets with parameters (2^n-1, 2^(n-1)-1, 2^(n-2)-1).
 ; 1,1,1,1,2,2,6,4,5,10
+; Formula: a(n) = if((max(-if((max(-n+9,0)%2)==0,max(-n+9,0)/2,max(-n+9,0))+n-1,0)%2)==0,max(-if((max(-n+9,0)%2)==0,max(-n+9,0)/2,max(-n+9,0))+n-1,0)/2,max(-if((max(-n+9,0)%2)==0,max(-n+9,0)/2,max(-n+9,0))+n-1,0))+1
 
 #offset 1
 

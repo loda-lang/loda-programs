@@ -1,4 +1,4 @@
-; A115568: Maximal Fibonacci exponent in prime factorization of n, or 1 if there is no Fibonacci exponent.
+; A115568: Maximum Fibonacci exponent in prime factorization of n, or 1 if there is no Fibonacci exponent.
 ; Submitted by Science United
 ; 1,1,1,2,1,1,1,3,2,1,1,2,1,1,1,1,1,2,1,2,1,1,1,3,2,1,3,2,1,1,1,5,1,1,1,2,1,1,1,3,1,1,1,2,2,1,1,1,2,2,1,2,1,3,1,3,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,3,1,1,2,2,1,1,1,1
 

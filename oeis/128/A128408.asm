@@ -1,7 +1,7 @@
 ; A128408: Triangle read by rows: A128407 * A051731 as infinite lower triangular matrices.
 ; Submitted by Coleslaw
 ; 1,-1,-1,-1,0,-1,0,0,0,0,-1,0,0,0,-1,1,1,1,0,0,1,-1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,-1,0
-; Formula: a(n) = A008683(truncate((sqrtint(8*n)+1)/2))*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)
+; Formula: a(n) = A008683(floor((sqrtint(8*n)+1)/2))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)
 
 #offset 1
 

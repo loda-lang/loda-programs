@@ -14,7 +14,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+    seq $7,712 ; a(n) = number of partitions of n into parts of 2 kinds.
     mov $9,10
     add $9,$5
     sub $4,$0

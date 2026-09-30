@@ -7,5 +7,4 @@ lpb $0
   pow $0,2
 lpe
 mul $0,3
-trn $0,1
-add $0,1
+max $0,1

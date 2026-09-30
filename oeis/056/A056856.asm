@@ -1,13 +1,60 @@
 ; A056856: Triangle of numbers related to rooted trees and unrooted planar trees.
 ; Submitted by Science United
 ; 1,1,2,2,9,9,6,44,96,64,24,250,875,1250,625,120,1644,8100,18360,19440,7776,720,12348,79576,252105,420175,352947,117649,5040,104544,840448,3465728,8028160,10551296,7340032,2097152
-; Formula: a(n) = A130534(n-1)*truncate(truncate((sqrtint(8*n-7)+1)/2)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-seq $1,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+mov $6,$0
+mul $6,8
+nrt $6,2
+add $6,1
+div $6,2
+mov $10,0
+sub $0,1
+mov $5,$6
+bin $5,2
+sub $1,$5
+sub $1,1
+mov $7,$1
+sub $6,$1
+lpb $6
+  sub $6,1
+  mov $8,$5
+  add $8,$7
+  mov $11,$8
+  seq $11,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $11,5
+  gcd $11,0
+  div $11,5
+  mov $19,229383
+  add $7,1
+  mov $9,$7
+  bin $9,2
+  add $9,$1
+  add $9,1
+  mov $12,$9
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  mov $13,$9
+  add $13,1
+  bin $13,2
+  sub $12,$13
+  sub $12,1
+  mov $14,1
+  mov $16,1
+  bin $9,$12
+  mov $15,1
+  mov $17,9
+  mov $18,0
+  mov $8,2
+  mov $8,$11
+  mul $8,$9
+  add $10,$8
+lpe
+mov $1,$10
 mov $4,$0
 mul $4,8
 add $4,1
@@ -20,4 +67,4 @@ mov $2,$0
 sub $2,$4
 pow $3,$2
 mov $0,$3
-mul $0,$1
+mul $0,$10

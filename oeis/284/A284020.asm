@@ -4,9 +4,8 @@
 ; Formula: a(n) = 10*A007088(truncate((2*2^n-2*floor(A273972(n)/2)-1)/2))+1
 
 mov $1,$0
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 mov $3,2
 pow $3,$0
 sub $3,1

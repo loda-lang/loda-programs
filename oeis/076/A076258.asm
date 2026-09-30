@@ -6,7 +6,6 @@
 #offset 1
 
 add $0,1
+seq $0,64289 ; Height of n-th term in Recamán's sequence A005132.
 mov $1,$0
-seq $1,64289 ; Height of n-th term in Recamán's sequence A005132.
-mov $0,$1
 sub $0,1

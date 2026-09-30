@@ -9,7 +9,6 @@ mov $1,2
 lpb $1
   sub $1,1
   add $0,$1
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,80542 ; In binary representation: keep the first digit and rotate right the others.
 lpe

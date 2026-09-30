@@ -11,7 +11,24 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,164874 ; Triangle read by rows: T(1,1)=2; T(n,k)=2*T(n-1,k)+1, 1<=k<n; T(n,n)=2*(T(n-1,n-1)+1).
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  mov $8,$6
+  bin $8,2
+  add $3,1
+  sub $3,$8
+  sub $6,$3
+  add $6,1
+  mov $7,2
+  pow $7,$3
+  sub $7,1
+  mov $3,2
+  pow $3,$6
+  mul $3,$7
+  sub $3,1
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1

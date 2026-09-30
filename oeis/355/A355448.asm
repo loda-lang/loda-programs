@@ -1,6 +1,7 @@
 ; A355448: a(n) = 1 if the number of divisors of n^2 is coprime to 6, otherwise 0.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+; Formula: a(n) = if(((2*truncate(A146564(n)/3)-3*truncate((2*truncate(A146564(n)/3)+1)/3)+1)%2)==0,(2*truncate(A146564(n)/3)-3*truncate((2*truncate(A146564(n)/3)+1)/3)+1)/2,2*truncate(A146564(n)/3)-3*truncate((2*truncate(A146564(n)/3)+1)/3)+1)
 
 #offset 1
 

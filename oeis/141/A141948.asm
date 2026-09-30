@@ -5,8 +5,7 @@
 
 #offset 1
 
+seq $0,224467 ; Numbers n such that 27*n+1 is prime.
 mov $1,$0
-seq $1,224467 ; Numbers n such that 27*n+1 is prime.
-mov $0,$1
 mul $0,27
 add $0,1

@@ -1,7 +1,7 @@
 ; A127185: Triangle of distances between n>=1 and n>=m>=1 measured by the number of non-common prime factors.
 ; Submitted by [TA]crashtech
 ; 0,1,0,1,2,0,2,1,3,0,1,2,2,3,0,2,1,1,2,3,0,1,2,2,3,2,3,0,3,2,4,1,4,3,4,0,2,3,1,4,3,2,3,5,0,2,1,3,2,1,2,3,3,4,0,1,2,2,3,2,3,2,4,3,3,0,3,2,2,1,4,1,4,2,3,3,4,0,1,2
-; Formula: a(n) = A001222(truncate(((truncate((sqrtint(8*n)-1)/2)+1)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))/(gcd(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,truncate((sqrtint(8*n)-1)/2)+1)^2)))
+; Formula: a(n) = A001222(truncate(((floor((sqrtint(8*n)-1)/2)+1)*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))/(gcd(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n,floor((sqrtint(8*n)-1)/2)+1)^2)))
 
 #offset 1
 

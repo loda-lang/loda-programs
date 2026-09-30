@@ -1,7 +1,7 @@
 ; A359217: Y-coordinates of a point moving along a counterclockwise undulating spiral on a square grid.
 ; Submitted by loader3229
 ; 0,0,1,1,2,2,1,1,0,0,-1,-1,-2,-2,-1,-1,0,0,1,1,2,2,3,3,4,4,3,3,2,2,1,1,0,0,-1,-1,-2,-2,-3,-3,-4,-4,-3,-3,-2,-2,-1,-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,5,5,4,4,3,3,2,2,1,1,0,0,-1,-1,-2,-2,-3,-3
-; Formula: a(n) = -truncate((-1)^truncate((sqrtint(4*floor(n/2))+1)/2))*(-2*binomial(truncate((sqrtint(4*floor(n/2))+1)/2),2)+floor(n/2))+2*truncate((truncate((sqrtint(4*floor(n/2))+1)/2)*truncate((-1)^truncate((sqrtint(4*floor(n/2))+1)/2)))/2)
+; Formula: a(n) = -(-2*binomial(floor((sqrtint(4*floor(n/2))+1)/2),2)+floor(n/2))*(-1)^floor((sqrtint(4*floor(n/2))+1)/2)+2*truncate((floor((sqrtint(4*floor(n/2))+1)/2)*(-1)^floor((sqrtint(4*floor(n/2))+1)/2))/2)
 
 div $0,2
 mov $1,$0

@@ -4,8 +4,7 @@
 
 lpb $0
   add $2,$0
-  sub $0,2
-  trn $0,2
+  trn $0,4
   add $1,$2
   mod $2,2
   add $2,$0

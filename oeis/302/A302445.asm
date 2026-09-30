@@ -10,7 +10,17 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,185910 ; Array: T(n,k) = n^2 + k - 1, by antidiagonals.
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  mov $6,$7
+  bin $6,2
+  sub $3,$6
+  sub $7,$3
+  pow $3,2
+  add $3,$7
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

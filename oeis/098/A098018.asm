@@ -14,15 +14,14 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,2
   mov $5,$0
-  sub $0,1
+  sub $5,2
+  sub $0,3
   sub $0,$5
   add $5,1
   seq $5,73184 ; Number of cubefree divisors of n.
   mov $7,$5
-  trn $5,56
-  add $5,56
+  max $5,56
   mul $5,$7
   sub $5,32
   mod $5,3

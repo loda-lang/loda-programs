@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,43687 ; a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 3 runs.
+seq $0,43687 ; a(n) = (A043570(n)-1)/2, where A043570(n) is the n-th number whose base-2 representation has exactly 3 runs.
 add $0,1
 seq $0,89118 ; Nonnegative numbers in (3*A005836 - 1) [A005836 are the numbers with base representation containing no 2].
 seq $0,4488 ; Tersum n + n.

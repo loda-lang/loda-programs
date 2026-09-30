@@ -4,12 +4,12 @@
 ; Formula: a(n) = a(n-1)+truncate((((2*max(n-2,0))%4)^2+A170903(max(n-2,0)+1))/4)+1, a(0) = 0
 
 lpb $0
-  sub $0,1
   mov $2,$0
-  trn $2,1
+  trn $2,2
   mov $3,$2
   add $3,1
   seq $3,170903 ; a(n) = 2*A160552(n)-1.
+  sub $0,1
   mul $2,2
   mod $2,4
   pow $2,2

@@ -1,7 +1,7 @@
 ; A127507: Triangle read by rows: T(n,k) = mu(n) where 1<=k<=n and mu=A008683.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,-1,-1,-1,-1,-1,0,0,0,0,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = A008683(truncate((sqrtint(8*n)+1)/2))
+; Formula: a(n) = A008683(floor((sqrtint(8*n)+1)/2))
 
 #offset 1
 

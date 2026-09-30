@@ -8,7 +8,6 @@
 mov $2,$0
 sub $0,1
 seq $0,193436 ; exp( Sum_{n>=1} x^n/n^3 )  =  Sum_{n>=0} a(n)*x^n/n!^3.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1
 seq $0,8472 ; Sum of the distinct primes dividing n.

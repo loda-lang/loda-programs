@@ -19,7 +19,9 @@ lpb $2
   add $5,1
   mov $3,$1
   add $3,1
-  seq $3,92412 ; Fixed point of the morphism 0->11, 1->12, 2->13, 3->10, starting from a(1) = 1.
+  lex $3,2
+  add $3,1
+  ban $3,3
   add $3,5
   sub $5,$3
   mul $5,$3

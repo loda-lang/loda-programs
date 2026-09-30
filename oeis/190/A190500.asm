@@ -41,8 +41,7 @@ lpb $2
   mov $3,$6
   sub $3,3
   div $3,2
-  sub $3,7
-  equ $3,1
+  equ $3,8
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -10,11 +10,53 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
-  seq $3,259749 ; Numbers that are congruent to {1,2,5,7,10,11,13,17,19,23} mod 24.
-  sub $3,1
-  mov $5,$3
-  add $3,1
+  add $3,3
+  mov $7,$3
+  div $7,10
+  mul $7,24
+  mod $3,10
+  mov $6,$3
+  equ $6,0
+  add $7,$6
+  mov $6,$3
+  equ $6,1
+  mul $6,2
+  add $7,$6
+  mov $6,$3
+  equ $6,2
+  mul $6,5
+  add $7,$6
+  mov $6,$3
+  equ $6,3
+  mul $6,7
+  add $7,$6
+  mov $6,$3
+  equ $6,4
+  mul $6,10
+  add $7,$6
+  mov $6,$3
+  equ $6,5
+  mul $6,11
+  add $7,$6
+  mov $6,$3
+  equ $6,6
+  mul $6,13
+  add $7,$6
+  mov $6,$3
+  equ $6,7
+  mul $6,17
+  add $7,$6
+  mov $6,$3
+  equ $6,8
+  mul $6,19
+  add $7,$6
+  mov $6,$3
+  equ $6,9
+  mul $6,23
+  add $7,$6
+  mov $5,$7
+  sub $5,1
+  mov $3,$7
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

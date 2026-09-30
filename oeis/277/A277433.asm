@@ -1,7 +1,7 @@
 ; A277433: Martin Gardner's minimal no-3-in-a-line problem, all slopes version.
 ; Submitted by loader3229
-; 1,4,4,4,6,6,8,8,8,8
-; Formula: a(n) = truncate((54*sqrtint(4*n+8))/24)-5
+; 1,4,4,4,6,6,8,8,8,8,10,10
+; Formula: a(n) = floor((54*sqrtint(4*n+8))/24)-5
 
 #offset 1
 

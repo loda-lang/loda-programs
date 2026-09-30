@@ -13,8 +13,13 @@ lpb $4
   mov $0,$1
   sub $0,$4
   add $0,1
+  mov $5,$0
+  seq $5,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  add $5,1
+  mov $6,$5
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $2,$0
-  seq $2,48250 ; Sum of the squarefree divisors of n.
-  add $3,$2
+  mov $2,$6
+  add $3,$6
 lpe
 mov $0,$3

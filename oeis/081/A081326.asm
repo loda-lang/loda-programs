@@ -19,12 +19,11 @@ lpb $0
       dif $7,3
       dif $7,2
     lpe
-    sub $7,1
-    equ $7,0
     mov $9,10
     add $9,$5
     min $10,$0
     sub $4,$0
+    equ $7,1
     mul $7,$$9
     add $5,1
     add $6,$7

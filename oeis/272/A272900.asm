@@ -4,9 +4,8 @@
 #offset 1
 
 mov $1,1
-mul $0,4
-sub $0,3
-mul $0,2
+mul $0,8
+sub $0,6
 lpb $0
   sub $0,$1
   gcd $0,0

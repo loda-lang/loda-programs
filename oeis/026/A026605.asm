@@ -1,7 +1,7 @@
 ; A026605: [3->null]-transform of three-symbol Thue-Morse A026600.
 ; Submitted by Spot T
 ; 1,2,2,1,1,2,2,1,1,2,1,2,1,2,1,2,2,1,2,1,1,2,1,2,1,2,1,2,2,1,1,2,2,1,1,2,1,2,1,2,2,1,1,2,2,1,1,2,2,1,1,2,1,2,2,1,1,2,1,2,1,2,1,2,2,1,1,2,2,1,1,2,1,2,1,2,2,1,1,2
-; Formula: a(n) = sumdigits(floor((n-1)/2),3)%3-2*truncate((sumdigits(floor((n-1)/2),3)%3+n-1)/2)+n
+; Formula: a(n) = (sumdigits(floor((n-1)/2),3)%3+n-1)%2+1
 
 #offset 1
 

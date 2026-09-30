@@ -1,11 +1,10 @@
-; A080462: Define f(k) = Floor [ k/ sum of the digits of k]. Let f(f(...(n))) = m where m is divisible by the sum of the digits of m. Then a(n)= one more than the least number of steps to obtain m.
+; A080462: Define f(k) = floor(k/ sum of the digits of k). Let f(f(...(n))) = m where m is divisible by the sum of the digits of m. Then a(n)= one more than the least number of steps to obtain m.
 ; Submitted by kpmonaghan
 ; 1,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,1,2,1,1,2,2,1,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,2,2,1,2,2,2,2,2,2,1,2,1,2,2,2,2,2,2,2,1
+; Formula: a(n) = min(A070635(n),1)+1
 
 #offset 1
 
 seq $0,70635 ; a(n) = n mod (sum of digits of n).
-lpb $0
-  pow $0,0
-lpe
+min $0,1
 add $0,1

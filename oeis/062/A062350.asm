@@ -12,9 +12,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,7932 ; Numbers that contain only 1's, 2's and 3's.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

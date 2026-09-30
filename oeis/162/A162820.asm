@@ -1,4 +1,4 @@
-; A162820: Positive numbers n such that 60*n/(60+n) are integers.
+; A162820: Positive numbers n such that 60*n/(60+n) is an integer.
 ; Submitted by [TA]crashtech
 ; 12,15,20,30,40,60,84,90,120,140,165,180,240,300,340,390,540,660,840,1140,1740,3540
 

@@ -1,11 +1,31 @@
 ; A380857: Squares of numbers that are neither squarefree nor prime powers.
 ; Submitted by iBezanilla
 ; 144,324,400,576,784,1296,1600,1936,2025,2304,2500,2704,2916,3136,3600,3969,4624,5184,5625,5776,6400,7056,7744,8100,8464,9216,9604,9801,10000,10816,11664,12544,13456,13689,14400,15376,15876,17424,18225,18496,19600,20736,21609,21904,22500,23104,23409,24336,25600,26244,26896,28224,29241,29584,30625,30976,32400,33856,35344,35721,36864,38416,39204,40000,41616,42849,43264,44944,46656,48400,50176,50625,51984,53824,54756,55696,57600,58564,59536,60025
-; Formula: a(n) = A126706(n)^2
 
 #offset 1
 
-seq $0,126706 ; Positive integers which are neither squarefree integers nor prime powers.
+sub $0,1
+mov $2,1
+mov $3,$0
+add $3,14
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,73184 ; Number of cubefree divisors of n.
+  pow $4,2
+  add $4,1
+  seq $4,37800 ; Number of occurrences of 01 in the binary expansion of n.
+  div $4,2
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1

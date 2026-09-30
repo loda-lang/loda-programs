@@ -9,14 +9,13 @@ mov $4,-1
 lpb $0
   sub $0,1
   add $4,$3
+  equ $4,0
   sub $1,$2
   div $1,2
   mul $2,2
   mov $3,$2
   add $3,$1
   gcd $3,4
-  add $4,2
-  equ $4,2
   trn $0,$4
   div $1,$3
   div $3,2

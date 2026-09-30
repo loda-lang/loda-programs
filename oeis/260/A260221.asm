@@ -12,8 +12,11 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
-  seq $3,256636 ; Expansion of phi(-x^3) / f(-x^2) in powers of x where phi(), f() are Ramanujan theta functions.
-  add $2,$3
+  mov $6,$3
+  mul $6,3
+  seq $6,256626 ; Expansion of psi(x) / psi(x^3) in powers of x where psi() is a Ramanujan theta function.
+  add $2,$6
+  mov $3,$6
   mov $4,$5
 lpe
 mov $0,$2

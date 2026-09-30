@@ -47,9 +47,8 @@ lpb $0
   equ $6,16
   mul $6,50
   add $5,$6
+  mul $5,2
   mov $1,$5
-  mul $1,2
-  mov $5,$1
   sub $5,1
   mov $1,$5
   div $1,2

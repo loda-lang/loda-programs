@@ -4,16 +4,14 @@
 
 #offset 1
 
-sub $0,1
-trn $0,1
+trn $0,2
 mov $1,$0
 mov $3,2
 lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,247636 ; Numbers k such that d(r,k) != d(s,k), where d(x,k) = k-th binary digit of x, r = {sqrt(2)}, s = {sqrt(8)}, and { } = fractional part.
   mov $2,$3
   mul $2,$0

@@ -18,9 +18,9 @@ lpb $0
   mod $7,4
   seq $1,40329 ; Continued fraction for sqrt(348).
   add $1,$7
-  div $1,2
   mov $6,$1
-  div $1,8
+  div $6,2
+  div $1,16
   add $1,$6
   gcd $5,$1
   add $1,2

@@ -1,7 +1,7 @@
 ; A027918: Least k such that 1+2+...+k >= E{1,2,...,n}, where E is the 4th elementary symmetric function.
 ; Submitted by loader3229
 ; 7,23,57,116,212,356,562,845,1224,1717,2345,3130,4097,5272,6682,8357,10327,12627,15290,18353,21855,25834,30332,35393,41062,47385,54412,62191,70776
-; Formula: a(n) = truncate((sqrtint(8*truncate((binomial(n+1,5)*(485*n+150*(n-3)^2+15*(n-3)^3-953))/48))-1)/2)+1
+; Formula: a(n) = truncate((sqrtint(8*floor((binomial(n+1,5)*(485*n+150*(n-3)^2+15*(n-3)^3-953))/48))-1)/2)+1
 
 #offset 4
 

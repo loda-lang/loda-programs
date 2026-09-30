@@ -19,8 +19,7 @@ lpb $0
     add $7,$4
     bin $7,$0
     dif $8,2
-    sub $8,1
-    trn $8,1
+    trn $8,2
     min $8,3
     add $8,1
     mod $8,2

@@ -1,6 +1,7 @@
 ; A249549: Conjectured largest number k not divisible by 10 such that k^k has exactly n distinct decimal digits.
 ; Submitted by Science United
 ; 2,3,6,8,7,14,15,17,34
+; Formula: a(n) = b(n)-2, b(n) = 2*b(n-3)+2*b(n-7)-b(n-4)+3, b(8) = 19, b(7) = 17, b(6) = 16, b(5) = 9, b(4) = 10, b(3) = 8, b(2) = 5, b(1) = 4, b(0) = 1
 
 #offset 1
 

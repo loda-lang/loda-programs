@@ -4,6 +4,5 @@
 ; Formula: a(n) = A121649(2*n)
 
 mul $0,2
+seq $0,121649 ; G.f.: A(x) = 1/(1 - x*B(x^2)), where B(x) = Sum_{n>=0} a(n)^2*x^n is the g.f. of A121648.
 mov $1,$0
-seq $1,121649 ; G.f.: A(x) = 1/(1 - x*B(x^2)), where B(x) = Sum_{n>=0} a(n)^2*x^n is the g.f. of A121648.
-mov $0,$1

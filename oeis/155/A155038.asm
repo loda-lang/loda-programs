@@ -1,6 +1,7 @@
 ; A155038: Triangle read by rows: T(n,k) is the number of compositions of n with first part k.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,2,1,1,4,2,1,1,8,4,2,1,1,16,8,4,2,1,1,32,16,8,4,2,1,1,64,32,16,8,4,2,1,1,128,64,32,16,8,4,2,1,1,256,128,64,32,16,8,4,2,1,1,512,256,128,64,32,16,8,4,2,1,1,1024,512,256,128,64,32,16,8,4,2,1,1,2048,1024
+; Formula: a(n) = if((sqrtint(if((-n+binomial(floor((sqrtint(8*n)+3)/2),2))<=(-1),0,4^(-n+binomial(floor((sqrtint(8*n)+3)/2),2))))%2)==0,sqrtint(if((-n+binomial(floor((sqrtint(8*n)+3)/2),2))<=(-1),0,4^(-n+binomial(floor((sqrtint(8*n)+3)/2),2))))/2,sqrtint(if((-n+binomial(floor((sqrtint(8*n)+3)/2),2))<=(-1),0,4^(-n+binomial(floor((sqrtint(8*n)+3)/2),2)))))
 
 #offset 1
 

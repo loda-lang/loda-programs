@@ -12,7 +12,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,277543 ; a(n) = n/5^m mod 5, where 5^m is the greatest power of 5 that divides n.
+  dir $3,5
+  dgr $3,6
   equ $3,3
   sub $0,$3
   mov $4,$0

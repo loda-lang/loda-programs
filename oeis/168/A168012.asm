@@ -14,9 +14,9 @@ lpb $3
   trn $0,1
   add $0,2
   pow $0,2
-  sub $0,2
   mov $6,$0
-  add $0,1
+  sub $6,2
+  sub $0,1
   mul $6,$0
   div $6,2
   mov $5,$0

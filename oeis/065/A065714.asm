@@ -8,8 +8,7 @@ pow $0,$1
 lpb $0
   mov $2,$0
   mod $2,10
-  sub $2,1
-  equ $2,2
+  equ $2,3
   div $0,10
   add $3,$2
 lpe

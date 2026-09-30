@@ -12,8 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,30547 ; Number of terms (including the initial term) needed to reach a palindrome when the Reverse Then Add! map (x -> x + (x-with-digits-reversed)) is repeatedly applied to n, or -1 if a palindrome is never reached.
-  sub $3,2
-  equ $3,1
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

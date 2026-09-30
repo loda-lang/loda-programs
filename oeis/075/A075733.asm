@@ -1,7 +1,7 @@
 ; A075733: Array of coefficients in Zagier's polynomials P_(n,0)(x).
 ; Submitted by loader3229
 ; 1,-2,1,-8,8,1,-18,48,-32,1,-32,160,-256,128,1,-50,400,-1120,1280,-512,1,-72,840,-3584,6912,-6144,2048,1,-98,1568,-9408,26880,-39424,28672,-8192,1,-128,2688,-21504,84480,-180224,212992,-131072,32768,1,-162,4320,-44352,228096,-658944,1118208
-; Formula: a(n) = truncate((truncate((-4)^truncate((2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))/2))*(binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n-1,2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))+binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n,2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))))/2)
+; Formula: a(n) = truncate(((binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n-1,2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2))+binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n,2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)))*if(truncate((2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2))/2)<=(-1),0,(-4)^truncate((2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2))/2)))/2)
 
 #offset 1
 

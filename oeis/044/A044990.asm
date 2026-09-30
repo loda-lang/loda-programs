@@ -1,7 +1,7 @@
 ; A044990: Numbers whose base-3 representation contains no 0's and exactly one 2.
 ; Submitted by loader3229
 ; 2,5,7,14,16,22,41,43,49,67,122,124,130,148,202,365,367,373,391,445,607,1094,1096,1102,1120,1174,1336,1822,3281,3283,3289,3307,3361,3523,4009,5467,9842,9844,9850,9868,9922,10084,10570,12028
-; Formula: a(n) = floor(truncate(3^(truncate((sqrtint(8*n)-1)/2)+1))/2)+truncate(3^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))
+; Formula: a(n) = if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,3^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))+floor((3^(floor((sqrtint(8*n)-1)/2)+1))/2)
 
 #offset 1
 

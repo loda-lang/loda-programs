@@ -18,9 +18,8 @@ lpb $4
   add $5,1
   seq $5,40 ; The prime numbers.
   seq $5,70676 ; Smallest m in range 1..phi(n) such that 3^m == 1 mod n, or 0 if no such number exists.
-  add $5,1
   mov $9,$5
-  sub $5,1
+  add $9,1
   trn $5,2
   gcd $5,2
   mov $8,$9

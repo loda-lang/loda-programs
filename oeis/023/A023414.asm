@@ -1,7 +1,7 @@
 ; A023414: If any power of 2 ends with k 7's and 8's, they must be the first k terms of this sequence in reverse order.
 ; Submitted by Fardringle
 ; 8,8,8,7,7,8,7,8,7,8,8,8,8,8,7,8,8,8,7,8,8,8,8,8,7,7,8,8,7,8,8,7,8,7,8,8,8,7,8,7,8,7,7,8,8,7,8,7,7,7,8,8,8,8,7,7,8,7,8,8,8,7,7,7,8,7,8,8,7,7,7,8,7,7,8,8,7,8,8,8
-; Formula: a(n) = 2*d(n-1)-2*truncate((2*d(n-1)+c(n-1)+truncate(b(n-1)/2))/2)+c(n-1)+truncate(b(n-1)/2)+7, a(3) = 8, a(2) = 8, a(1) = 8, a(0) = 0, b(n) = c(n-1)*(2*b(n-1)-2*truncate((2*b(n-1)-2*truncate(b(n-2)/2)+c(n-1)+truncate(b(n-1)/2))/2)-2*truncate(b(n-2)/2)+c(n-1)+truncate(b(n-1)/2)+7)+truncate(b(n-1)/2), b(4) = 986, b(3) = 222, b(2) = 44, b(1) = 8, b(0) = 0, c(n) = 5*c(n-1), c(3) = 125, c(2) = 25, c(1) = 5, c(0) = 1, d(n) = c(n-1)*(2*d(n-1)-2*truncate((2*d(n-1)+c(n-1)+truncate(b(n-1)/2))/2)+c(n-1)+truncate(b(n-1)/2)+7), d(3) = 200, d(2) = 40, d(1) = 8, d(0) = 0
+; Formula: a(n) = (5^(n-1)+2*c(n-1)+floor(b(n-1)/2))%2+7, a(3) = 8, a(2) = 8, a(1) = 8, a(0) = 0, b(n) = ((5^(n-1)+2*b(n-1)-2*floor(b(n-2)/2)+floor(b(n-1)/2))%2+7)*5^(n-1)+floor(b(n-1)/2), b(4) = 986, b(3) = 222, b(2) = 44, b(1) = 8, b(0) = 0, c(n) = ((5^(n-1)+2*c(n-1)+floor(b(n-1)/2))%2+7)*5^(n-1), c(3) = 200, c(2) = 40, c(1) = 8, c(0) = 0
 
 #offset 1
 

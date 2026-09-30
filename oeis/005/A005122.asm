@@ -1,16 +1,15 @@
 ; A005122: Numbers k such that 8k - 1 is prime.
 ; Submitted by Coleslaw
 ; 1,3,4,6,9,10,13,16,19,21,24,25,28,30,33,34,39,45,46,48,54,55,58,60,61,63,75,76,79,81,90,91,93,94,103,105,108,111,114,115,121,123,124,129,130,133,136,138,144,153,154,160,163,165,166,171,175,178,180,181,184,186,189,193,195,196,198,201,208,220,223,228,229,231,234,235,244,250,255,258
-; Formula: a(n) = floor((floor(floor(A007522(n)/2)/2)+floor(A007522(n)/2))/6)+1
+; Formula: a(n) = floor((floor(A007522(n)/4)+floor(A007522(n)/2))/6)+1
 
 #offset 1
 
-seq $0,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
-div $0,2
+seq $0,7522 ; Primes of the form 8*k+7, that is, primes congruent to -1 mod 8.
 mov $2,$0
-div $0,2
+div $2,2
+div $0,4
+add $0,$2
 mov $1,$0
-add $1,$2
-mov $0,$1
 div $0,6
 add $0,1

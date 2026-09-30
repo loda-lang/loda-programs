@@ -1,7 +1,7 @@
 ; A104586: Pentagonal wave sequence triangle.
 ; Submitted by loader3229
 ; 1,7,2,12,5,1,26,15,7,2,35,22,12,5,1,57,40,26,15,7,2,70,51,35,22,12,5,1,100,77,57,40,26,15,7,2
-; Formula: a(n) = truncate(((4*truncate((sqrtint(8*n)-1)/2)+3*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate(truncate((sqrtint(8*n)-1)/2)/2)-3*n+5)^2+4*truncate((sqrtint(8*n)-1)/2)+3*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*truncate(truncate((sqrtint(8*n)-1)/2)/2)-3*n+5)/6)
+; Formula: a(n) = truncate((floor((sqrtint(8*n)-1)/2)%2+(floor((sqrtint(8*n)-1)/2)%2+3*binomial(floor((sqrtint(8*n)-1)/2)+1,2)+3*floor((sqrtint(8*n)-1)/2)-3*n+5)^2+3*binomial(floor((sqrtint(8*n)-1)/2)+1,2)+3*floor((sqrtint(8*n)-1)/2)-3*n+5)/6)
 
 #offset 1
 

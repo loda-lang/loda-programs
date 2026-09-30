@@ -1,6 +1,7 @@
 ; A091952: a(1)=1, a(2n)=(a(n)+1) mod 2; a(2n+1)=2*a(2n).
 ; Submitted by BlisteringSheep
 ; 1,0,0,1,2,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0
+; Formula: a(n) = -10*truncate((binomial((2^logint(n,2)+n)%2+12,(floor((2^logint(n,2)+n)/2)/(4^valuation(floor((2^logint(n,2)+n)/2),4)))%2)-1)/10)+binomial((2^logint(n,2)+n)%2+12,(floor((2^logint(n,2)+n)/2)/(4^valuation(floor((2^logint(n,2)+n)/2),4)))%2)-1
 
 #offset 1
 

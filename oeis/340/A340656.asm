@@ -18,9 +18,8 @@ lpb $2
   add $3,2
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   pow $3,2
+  div $3,$5
   mov $6,$3
-  div $6,$5
-  mov $3,$6
   equ $3,1
   gcd $3,2
   sub $0,$3

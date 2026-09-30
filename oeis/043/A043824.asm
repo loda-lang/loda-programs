@@ -5,8 +5,7 @@
 #offset 1
 
 sub $0,1
-add $2,9
-pow $2,5
+mov $2,59049
 lpb $2
   mov $3,$1
   seq $3,43555 ; Number of runs in base-3 representation of n.

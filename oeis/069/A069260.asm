@@ -22,9 +22,8 @@ lpb $2
   add $4,1
   div $4,2
   pow $4,2
+  div $2,$4
   mov $3,$2
-  div $3,$4
-  mov $2,$3
   add $2,1
   sub $0,1
   mul $1,$2

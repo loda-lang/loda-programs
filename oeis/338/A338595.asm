@@ -1,6 +1,7 @@
 ; A338595: Denominators of resistance values < 1 ohm that can be obtained from a network of exactly 5 one-ohm resistors, but not from any network with fewer than 5 one-ohm resistors. Numerators are in A338580.
 ; Submitted by loader3229
 ; 5,7,8,7,7,8,7,5,6,7
+; Formula: a(n) = sign(if(binomial(n-4,2)==0,0,valuation(binomial(n-4,2),2))+3)*((if(binomial(n-4,2)==0,0,valuation(binomial(n-4,2),2))+2)%3+1)-3*truncate(binomial(n-4,2)/3)+binomial(n-4,2)+4
 
 #offset 1
 

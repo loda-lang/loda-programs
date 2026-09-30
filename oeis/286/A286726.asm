@@ -1,7 +1,7 @@
 ; A286726: {0->10, 1->01}-transform of the Pell word, A171588.
 ; Submitted by atannir
 ; 1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1
-; Formula: a(n) = -sqrtint(2*(floor((n-1)/2)+1)^2)*sqrtint(2*(floor((n-1)/2)+2)^2)+2*truncate((sqrtint(2*(floor((n-1)/2)+1)^2)*sqrtint(2*(floor((n-1)/2)+2)^2)+sqrtint(2*(floor((n-1)/2)+2)^2))/2)-sqrtint(2*(floor((n-1)/2)+2)^2)-2*truncate((-sqrtint(2*(floor((n-1)/2)+1)^2)*sqrtint(2*(floor((n-1)/2)+2)^2)+2*truncate((sqrtint(2*(floor((n-1)/2)+1)^2)*sqrtint(2*(floor((n-1)/2)+2)^2)+sqrtint(2*(floor((n-1)/2)+2)^2))/2)-sqrtint(2*(floor((n-1)/2)+2)^2)+n)/2)+n
+; Formula: a(n) = (-((sqrtint(2*(floor((n-1)/2)+1)^2)*sqrtint(2*(floor((n-1)/2)+2)^2)+sqrtint(2*(floor((n-1)/2)+2)^2))%2)+n)%2
 
 #offset 1
 

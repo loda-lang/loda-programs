@@ -9,9 +9,9 @@ lpb $0
   mov $3,$2
   dif $3,$0
   neq $3,$2
-  sub $0,1
   mov $4,$0
-  equ $4,1
+  equ $4,2
+  sub $0,1
   add $0,$4
   add $1,$3
   mod $1,2

@@ -27,7 +27,7 @@ lpb $2
   bin $10,$8
   div $10,$9
   sub $8,$10
-  seq $8,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+  seq $8,8441 ; Number of ordered ways of writing n as the sum of 2 triangular numbers.
   mul $8,$9
   max $8,0
   mul $3,$8

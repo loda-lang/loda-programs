@@ -1,6 +1,7 @@
 ; A122369: Dimension of 5-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 5 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i/=j).
 ; Submitted by loader3229
 ; 1,4,19,93,459,2273,11274,55964,277924,1380527,6858356,34074280,169297743,841173845,4179517118,20766807551,103184684826,512698227699,2547469553647,12657750705603,62893284231103,312501512711984,1552744642741738,7715214279423070
+; Formula: a(n) = 37*a(n-3)+10*a(n-1)-11*a(n-4)-32*a(n-2), a(8) = 277924, a(7) = 55964, a(6) = 11274, a(5) = 2273, a(4) = 459, a(3) = 93, a(2) = 19, a(1) = 4, a(0) = 1
 
 mov $1,1
 mov $2,4

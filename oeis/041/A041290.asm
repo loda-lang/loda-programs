@@ -17,11 +17,10 @@ lpb $0
   mov $1,$3
   seq $1,40329 ; Continued fraction for sqrt(348).
   add $1,$7
-  div $1,2
   mov $6,$1
-  div $1,2
+  div $1,4
   add $1,1
-  div $6,5
+  div $6,10
   gcd $6,$1
   add $1,$6
   sub $1,1

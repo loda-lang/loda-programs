@@ -9,9 +9,8 @@ lpb $2
   add $3,1
   seq $3,74286 ; Partial sum of the Kolakoski sequence (A000002) minus n.
   mul $3,2
-  sub $3,1
   sub $3,$1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

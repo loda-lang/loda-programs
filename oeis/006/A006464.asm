@@ -1,6 +1,7 @@
 ; A006464: Continued fraction for Sum_{n>=0} 1/4^(2^n).
 ; Submitted by shiva
 ; 0,3,6,4,4,2,4,6,4,2,6,4,2,4,4,6,4,2,6,4,4,2,4,6,2,4,6,4,2,4,4,6,4,2,6,4,4,2,4,6,4,2,6,4,2,4,4,6,2,4,6,4,4,2,4,6,2,4,6,4,2,4,4,6,4,2,6,4,4,2,4,6,4,2,6,4,2,4,4,6
+; Formula: a(n) = (-max(n-2,0)+n)*(2*(floor((max(n-2,0)+2)/2)%2)*((floor(if(binomial(max(n-2,0)+2,2)==0,0,binomial(max(n-2,0)+2,2)/(2^valuation(binomial(max(n-2,0)+2,2),2)))/2)%2)==0)-((floor(if(binomial(max(n-2,0)+2,2)==0,0,binomial(max(n-2,0)+2,2)/(2^valuation(binomial(max(n-2,0)+2,2),2)))/2)%2)==0)+2)
 
 mov $2,$0
 trn $2,2

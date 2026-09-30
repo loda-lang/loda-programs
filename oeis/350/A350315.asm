@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$4
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,350314 ; The catch-up points of the Redstone permutation A350313.
   mov $2,$3
   mul $2,$0

@@ -4,8 +4,8 @@
 
 #offset 1
 
-mov $6,0
 mov $4,0
+mov $6,0
 equ $6,$0
 mul $6,17
 mov $7,-1

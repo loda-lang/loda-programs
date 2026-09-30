@@ -13,8 +13,7 @@ lpb $3
     lpb $0
       mov $6,$0
       mod $6,$2
-      sub $6,2
-      equ $6,2
+      equ $6,4
       div $0,$2
       add $1,$6
       sub $5,$6

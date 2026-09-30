@@ -1,6 +1,7 @@
 ; A369258: a(n) = number of odd divisors of n that have an odd number of prime factors with multiplicity.
 ; Submitted by mmonnin
 ; 0,0,1,0,1,1,1,0,1,1,1,1,1,1,2,0,1,1,1,1,2,1,1,1,1,1,2,1,1,2,1,0,2,1,2,1,1,1,2,1,1,2,1,1,3,1,1,1,1,1,2,1,1,2,2,1,2,1,1,2,1,1,3,0,2,2,1,1,2,2,1,1,1,1,3,1,2,2,1,1
+; Formula: a(n) = truncate(A000005(n/(2^valuation(n,2)))/2)
 
 #offset 1
 

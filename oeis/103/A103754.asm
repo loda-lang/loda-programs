@@ -1,6 +1,6 @@
 ; A103754: Number of contiguous digits i in the counting numbers, for i=0.
 ; 1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2
-; Formula: a(n) = truncate(gcd(n+8,19)/18)+1
+; Formula: a(n) = floor(gcd(n+8,19)/18)+1
 
 #offset 1
 

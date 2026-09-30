@@ -5,9 +5,8 @@
 
 #offset 1
 
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1
 mul $0,-2
 bin $0,3
 div $0,-4

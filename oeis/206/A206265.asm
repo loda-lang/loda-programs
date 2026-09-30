@@ -7,9 +7,9 @@
 
 mov $2,6
 add $2,$0
-add $2,1
 mov $1,$2
-add $2,1
+add $1,1
+add $2,2
 bin $1,$0
 mul $1,$2
 add $2,5

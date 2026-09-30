@@ -10,9 +10,16 @@ add $2,1
 mul $2,3
 pow $2,2
 lpb $2
+  mov $7,$1
+  dgs $7,2
+  mov $6,0
+  bxo $6,$7
   mov $5,$1
-  seq $5,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-  equ $5,0
+  max $5,1
+  log $5,2
+  sub $5,$7
+  sub $5,$6
+  equ $5,-1
   mov $3,$5
   mul $3,$1
   mul $3,2

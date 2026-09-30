@@ -6,9 +6,8 @@
 #offset 1
 
 seq $0,53149 ; Smallest cube divisible by n.
-sub $0,1
 mov $3,$0
-add $0,1
+sub $3,1
 mov $2,$0
 dir $2,2
 seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

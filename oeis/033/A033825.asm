@@ -5,7 +5,7 @@
 mov $1,$0
 add $1,29
 add $0,1
-seq $0,240926 ; a(n) = 2 + L(2*n) = 2 + A005248(n), n >= 0, with the Lucas numbers (A000032).
+seq $0,240926 ; Duplicate of A092387.
 div $0,$1
 mul $1,2
 add $0,$1

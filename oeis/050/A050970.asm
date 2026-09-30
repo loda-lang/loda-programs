@@ -11,7 +11,9 @@ mov $1,$0
 seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
 gcd $1,$2
 trn $0,1
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $3,0
+sub $3,$0
+fac $0,$3
 gcd $0,$1
 div $1,$0
 mov $0,$1

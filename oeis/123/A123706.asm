@@ -1,7 +1,7 @@
 ; A123706: Matrix inverse of triangle A010766, where A010766(n,k) = [n/k], for n>=k>=1.
 ; Submitted by loader3229
 ; 1,-2,1,-1,-1,1,1,-1,-1,1,-1,0,0,-1,1,2,0,-1,0,-1,1,-1,0,0,0,0,-1,1,0,0,1,-1,0,0,-1,1,0,1,-1,0,0,0,0,-1,1,2,-1,0,1,-1,0,0,0,-1,1,-1,0,0,0,0,0,0,0,0,-1,1,-1,1,1,-1,1,-1,0,0,0,0,-1,1,-1,0
-; Formula: a(n) = -A008683(max(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n+1)),1))*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n+1))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n+1)+truncate((sqrtint(8*n)+1)/2))==0)+A008683(truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)))*((-truncate(truncate((sqrtint(8*n)+1)/2)/(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))*(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)+truncate((sqrtint(8*n)+1)/2))==0)
+; Formula: a(n) = -A008683(max(truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1)),1))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n+1)+floor((sqrtint(8*n)+1)/2))==0)+A008683(truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)))*((-truncate(floor((sqrtint(8*n)+1)/2)/(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)+floor((sqrtint(8*n)+1)/2))==0)
 
 #offset 1
 

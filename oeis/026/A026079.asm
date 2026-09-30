@@ -7,11 +7,11 @@
 
 sub $0,1
 lpb $0
-  sub $0,1
   mov $2,$0
-  trn $2,1
+  trn $2,2
   add $2,4
   seq $2,26083 ; a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is an integer, s(0) = 0 = s(n), |s(i) - s(i-1)| = 1 for i = 1,2,3; |s(i) - s(i-1)| <= 1 for i >= 4. Also a(n) = T(n,n), where T is the array defined in A026082.
+  sub $0,1
   add $1,$2
 lpe
 sub $1,1

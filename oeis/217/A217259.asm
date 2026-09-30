@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,54799 ; Integers n such that sigma(n+2) = sigma(n) + 2, where sigma = A000203, the sum of divisors of n.
 mov $1,$0
-seq $1,54799 ; Integers n such that sigma(n+2) = sigma(n) + 2, where sigma = A000203, the sum of divisors of n.
-mov $0,$1
 add $0,1

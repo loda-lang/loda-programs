@@ -1,7 +1,7 @@
 ; A278290: Number of neighbors of each new term in a square array read by antidiagonals.
 ; Submitted by loader3229
 ; 0,1,2,1,4,2,1,4,4,2,1,4,4,4,2,1,4,4,4,4,2,1,4,4,4,4,4,2,1,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,4,4,4,2,1,4
-; Formula: a(n) = truncate(gcd(truncate(0^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)),4)/(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)==truncate((sqrtint(8*n)-1)/2))+1))
+; Formula: a(n) = floor(gcd(if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,0^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)),4)/(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)==floor((sqrtint(8*n)-1)/2))+1))
 
 #offset 1
 

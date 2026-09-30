@@ -5,9 +5,9 @@
 
 add $0,3
 lpb $0
-  sub $0,5
   mov $2,$0
-  trn $2,3
+  sub $0,5
+  trn $2,8
   div $2,3
   add $2,$0
   add $1,$2

@@ -9,8 +9,7 @@ pow $2,3
 lpb $2
   mov $3,$1
   seq $3,1113 ; Decimal expansion of e.
-  add $3,1
-  equ $3,7
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0

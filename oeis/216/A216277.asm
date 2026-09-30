@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-trn $1,2
+trn $1,3
+sub $0,1
 mul $0,2
 sub $0,$1
 trn $0,1

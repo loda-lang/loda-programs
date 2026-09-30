@@ -1,7 +1,7 @@
 ; A018469: Divisors of 464.
 ; Submitted by BrandyNOW
 ; 1,2,4,8,16,29,58,116,232,464
-; Formula: a(n) = -3*truncate(2^(n-6))+floor((2^n)/2)
+; Formula: a(n) = -3*if((n-6)<=(-1),0,2^(n-6))+floor((2^n)/2)
 
 #offset 1
 

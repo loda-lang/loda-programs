@@ -14,8 +14,7 @@ lpb $2
     seq $3,33879 ; Deficiency of n, or 2n - (sum of divisors of n).
     sub $3,1
   lpe
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

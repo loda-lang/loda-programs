@@ -16,14 +16,13 @@ lpb $0
   mov $4,$2
   add $4,6
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
     equ $7,2
     mov $9,10
     add $9,$5
-    sub $4,2
+    sub $4,3
     mul $7,$$9
     add $5,1
     add $6,$7

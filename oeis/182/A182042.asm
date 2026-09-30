@@ -1,7 +1,7 @@
 ; A182042: Triangle T(n,k), read by rows, given by (0, 2, -1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (3, 0, -3/2, 3/2, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 ; Submitted by loader3229
 ; 1,0,3,0,6,9,0,9,27,27,0,12,54,108,81,0,15,90,270,405,243,0,18,135,540,1215,1458,729,0,21,189,945,2835,5103,5103,2187,0,24,252,1512,5670,13608,20412,17496,6561,0,27,324,2268,10206,30618,61236,78732,59049,19683,0,30,405,3240,17010,61236,153090,262440,295245,196830,59049,0,33,495,4455,26730,112266,336798,721710,1082565,1082565,649539,177147,0,36
-; Formula: a(n) = truncate(3^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)
+; Formula: a(n) = binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*if((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)<=(-1),0,3^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))
 
 mov $1,$0
 mul $1,8

@@ -5,11 +5,11 @@
 
 #offset 1
 
-add $0,2730
 mov $1,$0
-sub $0,1
+add $0,2729
 dgs $0,2
 mod $0,2
+add $1,2730
 dgs $1,2
 mul $1,-3
 mod $1,2

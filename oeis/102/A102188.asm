@@ -13,7 +13,9 @@ lpb $4
   mov $1,$0
   sub $1,$2
   bin $1,$0
-  seq $0,101485 ; a(n) = (4n)! / ( 4^n * (2n)! ).
+  mul $0,2
+  fac $0,$0
+  dir $0,2
   mul $1,$0
   add $3,$1
 lpe

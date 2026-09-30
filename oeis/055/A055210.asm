@@ -1,7 +1,7 @@
 ; A055210: Sum of totients of square divisors of n.
 ; Submitted by ckrause
 ; 1,1,1,3,1,1,1,3,7,1,1,3,1,1,1,11,1,7,1,3,1,1,1,3,21,1,7,3,1,1,1,11,1,1,1,21,1,1,1,3,1,1,1,3,7,1,1,11,43,21,1,3,1,7,1,3,1,1,1,3,1,1,7,43,1,1,1,3,1,1,1,21,1,1,21,3,1,1,1,11
-; Formula: a(n) = A057660(truncate(sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2))
+; Formula: a(n) = A057660(floor(sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)/2))
 
 #offset 1
 

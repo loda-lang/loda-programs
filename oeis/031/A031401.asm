@@ -1,7 +1,7 @@
 ; A031401: Period of continued fraction for sqrt(A031400(n)).
 ; Submitted by Cruncher Pete
 ; 1,2,4,8,4,4,4,4,4,4,4
-; Formula: a(n) = -10*truncate(min(2^(n-1),14)/10)+min(2^(n-1),14)
+; Formula: a(n) = min(2^(n-1),14)%10
 
 #offset 1
 

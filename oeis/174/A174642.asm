@@ -4,13 +4,13 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-trn $2,6
+trn $2,7
 pow $2,2
 mov $1,6
 add $1,$2
 bin $1,2
+sub $0,1
 mov $0,$1
 sub $0,15
 mul $0,2

@@ -10,7 +10,7 @@ lpb $0
   div $0,131
   sub $0,1
 lpe
-seq $0,22340 ; Even Fibbinary numbers (A003714); also 2*Fibbinary(n).
+seq $0,22340 ; Even Fibbinary numbers (A003714); also a(n) = 2*Fibbinary(n).
 seq $0,87808 ; a(0) = 0; a(2n) = 2a(n), a(2n+1) = a(n) + 1.
 sub $0,2
 mov $1,$0

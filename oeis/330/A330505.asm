@@ -4,10 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,2131 ; Sum of divisors d of n such that n/d is odd.
+sub $1,1
 lpb $1
   mul $0,$1
   sub $1,1

@@ -1,6 +1,7 @@
 ; A309118: Number of tiles added at iteration n when successively, layer by layer, building a symmetric patch of a rhombille tiling around a central star of six rhombs.
 ; Submitted by DukeBox
 ; 6,6,12,18,24,24,36,30,48,36,60,42,72,48,84,54,96,60,108,66,120,72,132,78,144,84,156,90,168,96,180,102,192,108,204,114,216,120,228,126,240,132,252,138,264,144,276,150,288,156,300,162,312,168,324,174,336,180,348,186,360,192,372,198,384,204,396,210,408,216,420,222,432,228,444,234,456,240,468,246
+; Formula: a(n) = 6*max(-max(if(((-n+2)%(-2))==0,(-n+2)/(-2),-n+2)-1,0)+n-2,0)+6
 
 #offset 1
 

@@ -1,6 +1,7 @@
 ; A113430: Expansion of f(-x, -x^2) * f(-x^10, -x^20) / f(-x^2, -x^8) in powers of x where f(, ) is Ramanujan's general theta function.
 ; Submitted by Science United
 ; 1,-1,0,-1,0,0,0,1,1,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = if(((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%10-1)*((sqrtint(120*n+1)^2)==(120*n+1))-3*truncate((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%10-1)*((sqrtint(120*n+1)^2)==(120*n+1)))/3))%(-2))==0,(sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%10-1)*((sqrtint(120*n+1)^2)==(120*n+1))-3*truncate((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%10-1)*((sqrtint(120*n+1)^2)==(120*n+1)))/3))/(-2),sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%10-1)*((sqrtint(120*n+1)^2)==(120*n+1))-3*truncate((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%10-1)*((sqrtint(120*n+1)^2)==(120*n+1)))/3))
 
 mul $0,120
 add $0,1

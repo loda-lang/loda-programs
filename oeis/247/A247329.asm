@@ -24,7 +24,7 @@ lpb $6
   sub $4,1
   sub $4,$1
   bin $4,$2
-  seq $0,94645 ; Triangle of generalized Stirling numbers of the first kind.
+  seq $0,94645 ; Triangle of generalized Stirling numbers of the first kind read by rows: T(n, k) = (-1)^(n+k)*Sum_{m=0..n} Stirling1(n, m) * binomial(m, k), where Stirling1 is A048994.
   mul $0,$4
   add $5,$0
 lpe

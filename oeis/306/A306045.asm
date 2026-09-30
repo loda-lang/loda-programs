@@ -12,9 +12,8 @@ lpb $0
   seq $4,15128 ; Number of overpartitions of n: an overpartition of n is an ordered sequence of nonincreasing integers that sum to n, where the first occurrence of each integer may be overlined.
   mov $5,$2
   add $5,$3
+  seq $5,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   mov $6,$5
-  seq $6,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  mov $5,$6
   mul $5,$4
   add $1,$5
   add $2,1

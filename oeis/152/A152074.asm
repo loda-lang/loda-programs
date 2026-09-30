@@ -14,7 +14,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,152072 ; Triangle read by rows: T(n,k) = the largest product of a partition of n into k positive integers (1 <= k <= n).
+  seq $0,152072 ; Triangle read by rows: T(n, k) is the largest product of a partition of n into k positive integers.
   add $1,$0
 lpe
 mov $0,$1

@@ -13,8 +13,7 @@ lpb $2
   add $3,1
   seq $3,351346 ; Dirichlet g.f.: Product_{p prime} 1 / (1 - 2*p^(-s) - p^(-2*s)).
   div $3,4
-  sub $3,2
-  equ $3,12
+  equ $3,14
   sub $0,$3
   add $1,1
   mov $4,$0

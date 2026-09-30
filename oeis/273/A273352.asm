@@ -8,9 +8,9 @@ sub $0,1
 mov $1,4
 pow $1,$0
 mul $0,4
-add $0,3
 mov $5,$0
-add $0,1
+add $5,3
+add $0,4
 lpb $0
   sub $0,1
   sub $7,$3

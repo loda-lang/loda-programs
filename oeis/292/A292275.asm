@@ -1,6 +1,7 @@
 ; A292275: A sequence of rounded numbers useful for entering values over several orders of magnitude in computer-human interfaces, with 10 values per order of magnitude.
 ; Submitted by loader3229
 ; 100,125,150,200,250,300,400,500,600,800,1000,1250,1500,2000,2500,3000,4000,5000,6000,8000,10000,12500,15000,20000,25000,30000,40000,50000,60000,80000,100000,125000,150000,200000,250000,300000,400000,500000,600000,800000,1000000
+; Formula: a(n) = 10*a(n-10), a(29) = 800, a(28) = 600, a(27) = 500, a(26) = 400, a(25) = 300, a(24) = 250, a(23) = 200, a(22) = 150, a(21) = 125, a(20) = 100
 
 #offset 20
 

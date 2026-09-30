@@ -15,8 +15,7 @@ lpb $2
   seq $3,188172 ; Number of divisors d of n of the form d == 7 (mod 8).
   equ $3,0
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,2
   mov $4,$0

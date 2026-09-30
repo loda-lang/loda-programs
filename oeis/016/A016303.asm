@@ -12,8 +12,7 @@ lpb $2
   mov $1,-1
   pow $1,$2
   mov $4,$2
-  sub $4,2
-  trn $4,6
+  trn $4,8
   seq $4,16056 ; Inverse of 2047th cyclotomic polynomial.
   mul $4,$1
   mul $6,6

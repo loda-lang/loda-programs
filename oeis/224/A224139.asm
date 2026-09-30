@@ -4,7 +4,18 @@
 
 #offset 1
 
+mov $1,0
 mul $0,2
 sub $0,1
-seq $0,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
+lpb $0
+  mov $3,$0
+  max $3,1
+  log $3,2
+  mov $2,2
+  pow $2,$3
+  mod $0,$2
+  mul $1,2
+  add $1,$2
+lpe
+mov $0,$1
 dir $0,3

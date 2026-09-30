@@ -8,7 +8,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
-  seq $2,51291 ; Whitney number of level n of the lattice of the ideals of the fence of order 2 n + 1.
+  seq $2,51291 ; Whitney number of level n of the lattice of the ideals of the fence of order 2*n + 1.
   sub $0,1
   add $1,$2
 lpe

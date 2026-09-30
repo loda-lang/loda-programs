@@ -9,12 +9,11 @@ add $0,3
 lpb $0
   sub $0,$3
   add $1,$2
-  sub $3,1
-  equ $3,2
   mov $2,$0
   add $2,1
   seq $2,40 ; The prime numbers.
   mod $2,3
+  equ $3,3
   add $1,$2
 lpe
 mov $0,$1

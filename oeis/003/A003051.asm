@@ -1,6 +1,7 @@
 ; A003051: Number of inequivalent sublattices of index n in hexagonal lattice, where two sublattices are equivalent if they are related by a rotation or reflection preserving the hexagonal lattice.
 ; Submitted by BrandyNOW
 ; 1,1,2,3,2,3,3,5,4,4,3,8,4,5,6,9,4,8,5,10,8,7,5,15,7,8,9,13,6,14,7,15,10,10,10,20,8,11,12,20,8,18,9,17,16,13,9,28,12,17,14,20,10,22,14,25,16,16,11,34,12,17,21,27,16,26,13,24,18,26,13,40,14,20,24,27,18,30,15,38
+; Formula: a(n) = truncate((4*A001817(n)+3*A145390(n)-2*A000005(n/(3^valuation(n,3)))+A000203(n))/6)
 
 #offset 1
 

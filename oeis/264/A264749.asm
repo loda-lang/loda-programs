@@ -7,6 +7,5 @@ mov $1,$0
 max $1,1
 log $1,2
 add $1,1
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

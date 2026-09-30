@@ -18,10 +18,9 @@ lpb $2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   pow $6,2
   add $6,$3
+  mov $5,$6
+  sub $5,1
   mov $3,$6
-  sub $3,1
-  mov $5,$3
-  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

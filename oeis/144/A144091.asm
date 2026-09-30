@@ -1,4 +1,4 @@
-; A144091: T(n,k) is the number of partial bijections (or subpermutations) of an n-element set of height k (height(alpha) = |Im(alpha)|) and with exactly 2 fixed points
+; A144091: T(n,k) is the number of partial bijections (or subpermutations) of an n-element set of height k (height(alpha) = |Im(alpha)|) and with exactly 2 fixed points.
 ; Submitted by loader3229
 ; 1,3,0,6,12,6,10,60,90,20,15,180,630,660,135,21,420,2730,6720,5565,924,28,840,8820,39760,76020,51912,7420,36,1512,23436,168840,585900,917784,533988,66744
 

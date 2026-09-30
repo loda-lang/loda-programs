@@ -1,9 +1,26 @@
 ; A062198: Sum of first n semiprimes.
 ; Submitted by abr00
 ; 4,10,19,29,43,58,79,101,126,152,185,219,254,292,331,377,426,477,532,589,647,709,774,843,917,994,1076,1161,1247,1334,1425,1518,1612,1707,1813,1924,2039,2157,2276,2397,2519,2642,2771,2904,3038,3179,3321,3464,3609,3755,3910,4068,4227,4388,4554,4723,4900,5078,5261,5446,5633,5827,6028,6230,6433,6638,6844,7053,7266,7480,7695,7912,8130,8349,8570,8796,9031,9268,9515,9764
-; Formula: a(n) = A110208(n)-1
 
 #offset 1
 
-seq $0,110208 ; 1 + sum of first n semiprimes.
-sub $0,1
+clr $3,3
+mov $1,0
+mov $2,$0
+add $2,1
+pow $2,2
+lpb $2
+  max $3,$5
+  add $3,1
+  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $5,$4
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  add $1,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1

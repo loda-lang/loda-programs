@@ -10,6 +10,5 @@ seq $3,62799 ; Inverse Möbius transform of the numbers of distinct prime factor
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$3
 gcd $1,$0
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

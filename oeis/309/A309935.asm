@@ -15,8 +15,18 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
+  mov $8,$3
+  mov $9,$3
+  neq $9,0
+  mov $6,$3
+  max $6,1
+  log $6,10
+  add $6,$9
+  mov $7,10
+  pow $7,$6
   add $3,1
-  seq $3,127423 ; a(1) = 1; for n > 1, a(n) = n concatenated with n - 1.
+  mul $3,$7
+  add $3,$8
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2

@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,23900 ; Dirichlet inverse of Euler totient function (A000010).
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

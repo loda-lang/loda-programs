@@ -1,7 +1,7 @@
 ; A251592: Triangle of coefficients of polynomials P(n,t) related to the Mittag-Leffler function, where P(n,t) = Product_{k=0..n-2} n*t-k.
 ; Submitted by Science United
 ; 1,0,2,0,-3,9,0,8,-48,64,0,-30,275,-750,625,0,144,-1800,7560,-12960,7776,0,-840,13426,-77175,204085,-252105,117649,0,5760,-112896,831488,-3010560,5734400,-5505024,2097152,0,-45360,1058508,-9573228
-; Formula: a(n) = A048994(n-1)*truncate(truncate((sqrtint(8*n-8)+1)/2)^(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1))
+; Formula: a(n) = A048994(n-1)*if((truncate((sqrtint(8*n-8)+1)/2)^2)==1,truncate((sqrtint(8*n-8)+1)/2)^(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1),if((-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1)<=(-1),0,truncate((sqrtint(8*n-8)+1)/2)^(-binomial(truncate((sqrtint(8*n-8)+1)/2),2)+n-1)))
 
 #offset 1
 

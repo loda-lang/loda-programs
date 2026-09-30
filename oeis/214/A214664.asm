@@ -1,7 +1,7 @@
 ; A214664: The x-coordinates of prime numbers in an Ulam spiral oriented counterclockwise with first step east.
 ; Submitted by Jamie Morken(w2)
 ; 1,1,-1,-1,2,2,-2,-2,0,3,3,-3,-3,-3,1,4,2,0,-4,-4,-4,2,5,5,-1,-5,-5,-5,-5,-3,6,6,2,0,-6,-6,-6,0,4,7,7,7,-1,-3,-7,-7,-7,5,8,8,8,8,8,-2,-8,-8,-8,-8,-4,0,2,9,9,5,3,-1,-9,-9,-5,-3,1,7,10,10,10,8,2,-6,-10,-10
-; Formula: a(n) = -truncate((-1)^truncate((sqrtint(4*A000040(n)-4)+2)/2))*max(-2*binomial(truncate((sqrtint(4*A000040(n)-4)+2)/2),2)+A000040(n)-1,0)+truncate((truncate((sqrtint(4*A000040(n)-4)+2)/2)*truncate((-1)^truncate((sqrtint(4*A000040(n)-4)+2)/2)))/2)
+; Formula: a(n) = -max(-2*binomial(floor((sqrtint(4*A000040(n)-4)+2)/2),2)+A000040(n)-1,0)*(-1)^floor((sqrtint(4*A000040(n)-4)+2)/2)+truncate((floor((sqrtint(4*A000040(n)-4)+2)/2)*(-1)^floor((sqrtint(4*A000040(n)-4)+2)/2))/2)
 
 #offset 1
 

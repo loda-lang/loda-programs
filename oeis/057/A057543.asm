@@ -7,5 +7,4 @@ lpb $1
   div $1,4
 lpe
 add $0,$1
-trn $0,1
-add $0,1
+max $0,1

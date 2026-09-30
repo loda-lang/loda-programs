@@ -14,9 +14,8 @@ lpb $0
   mov $0,$3
   div $0,2
   mod $0,2
-  mul $0,2
-  sub $0,1
-  mul $0,47
+  mul $0,94
+  sub $0,47
   mul $3,$4
   equ $3,$2
   mul $3,$0

@@ -1,14 +1,14 @@
 ; A327490: T(n, k) = 1 + IFF(k - 1, n - k), where IFF is Boolean equality evaluated bitwise on the inputs, triangle read by rows, T(n, k) for n >= 1, 1 <= k <= n.
 ; Submitted by loader3229
 ; 1,1,1,2,2,2,1,1,1,1,4,2,4,2,4,3,3,3,3,3,3,2,4,2,4,2,4,2,1,1,1,1,1,1,1,1,8,2,4,2,8,2,4,2,8,7,7,3,3,7,7,3,3,7,7,6,8,6,4,6,8,6,4,6,8,6,5,5,5,5,5,5,5,5,5,5,5,5
-; Formula: a(n) = -((n-1)==0)-bitxor(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(truncate((sqrtint(8*n)+3)/2),2))+truncate(2^(logint(max(bitor(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(truncate((sqrtint(8*n)+3)/2),2)),1),2)+1))
+; Formula: a(n) = 2^(logint(max(bitor(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(floor((sqrtint(8*n)+3)/2),2)),1),2)+1)-(n==1)-bitxor(-binomial(floor((sqrtint(8*n-7)+1)/2),2)+n-1,-n+binomial(floor((sqrtint(8*n)+3)/2),2))
 
 #offset 1
 
 mov $1,$0
-sub $0,1
 mov $3,$0
-equ $3,0
+equ $3,1
+sub $0,1
 mov $4,$0
 mul $4,8
 add $4,1

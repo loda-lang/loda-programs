@@ -1,7 +1,7 @@
 ; A051067: A051066 read mod 2.
 ; Submitted by loader3229
 ; 0,1,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,0,1,1,1,0
-; Formula: a(n) = -2*truncate(truncate((3*binomial(n+1,2)-b(n))/2)/2)+truncate((3*binomial(n+1,2)-b(n))/2), b(n) = sumdigits(n,3)*sign(n)+b(n-1), b(1) = 1, b(0) = 0
+; Formula: a(n) = -2*truncate(truncate((3*binomial(n+1,2)-b(n))/2)/2)+truncate((3*binomial(n+1,2)-b(n))/2), b(n) = b(n-1)+sumdigits(n,3), b(1) = 1, b(0) = 0
 
 lpb $0
   sub $0,1

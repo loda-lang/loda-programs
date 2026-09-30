@@ -1,7 +1,7 @@
 ; A176891: Triangle T(n,k) = k if k<n and k|n, = 0 otherwise, 1 <= k <= n; read by rows.
 ; Submitted by loader3229
 ; 1,1,0,1,0,0,1,2,0,0,1,0,0,0,0,1,2,3,0,0,0,1,0,0,0,0,0,0,1,2,0,4,0,0,0,0,1,0,3,0,0,0,0,0,0,1,2,0,0,5,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,2,3,4,0,6,0,0,0,0,0,0,1,0
-; Formula: a(n) = truncate(gcd(max(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2),0)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)
+; Formula: a(n) = truncate(gcd(max(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2),0)+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)/(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)
 
 #offset 1
 

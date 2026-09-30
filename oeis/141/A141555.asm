@@ -22,7 +22,13 @@ lpb $2
   add $5,1
   mov $6,$1
   add $6,2
-  seq $6,7821 ; Primes p such that pi(p) is not prime.
+  seq $6,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  seq $6,40 ; The prime numbers.
+  mul $6,20
+  mov $9,$6
+  sub $6,37
+  div $6,20
+  add $6,2
   add $6,$5
   mov $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

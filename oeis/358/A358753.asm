@@ -1,7 +1,7 @@
 ; A358753: a(n) = 1 if bigomega(n) == 3 (mod 4), otherwise 0.
 ; Submitted by SirSexington
 ; 0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,1,1,0,1,0,0
-; Formula: a(n) = -2*truncate(binomial(A001222(n),3)/2)+binomial(A001222(n),3)
+; Formula: a(n) = binomial(A001222(n),3)%2
 
 #offset 1
 

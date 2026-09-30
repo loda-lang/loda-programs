@@ -10,9 +10,9 @@ lpb $0
   max $0,3
   sub $3,$1
   add $4,$3
-  sub $5,1
   mov $1,$5
-  trn $1,3
+  sub $5,1
+  trn $1,4
   add $1,$5
   sub $3,4
   add $3,$1

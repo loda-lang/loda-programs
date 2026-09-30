@@ -5,9 +5,9 @@
 
 #offset 1
 
-sub $0,1
 mov $5,$0
-add $0,3
+sub $5,1
+add $0,2
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 add $4,$0
 mul $4,2

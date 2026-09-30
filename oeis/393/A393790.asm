@@ -1,11 +1,48 @@
 ; A393790: Expansion of e.g.f. (exp(exp(2*x) - 1) + 1) / 2.
 ; Submitted by Checco
 ; 1,1,4,20,120,832,6496,56128,529920,5413632,59379200,694855680,8629446656,113231613952,1563847245824,22658392801280,343413297872896,5430632107474944,89401171136872448,1529018372602462208,27118355472906715136,497937092346381336576,9451267924316280324096
-; Formula: a(n) = truncate((A000110(n)*2^n-2)/2)+1
 
 mov $1,2
 pow $1,$0
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $6,0
+mov $7,0
+mov $10,0
+mov $12,0
+mov $2,0
+mov $5,1
+fac $5,$0
+mov $8,$0
+mov $9,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  pow $3,$8
+  mov $4,$8
+  bin $4,$2
+  mul $7,$2
+  add $7,$3
+  mov $11,$7
+  div $11,$5
+  mul $12,$2
+  add $12,$11
+  add $2,1
+  mod $7,$5
+  mul $9,-1
+  mov $13,$4
+  mul $13,$7
+  mul $13,$9
+  mov $14,$4
+  mul $14,$12
+  mul $14,$9
+  add $6,$14
+  add $10,$13
+lpe
+mul $6,$9
+mul $10,$9
+div $10,$5
+add $10,$6
+mov $0,$10
 mul $0,$1
 sub $0,2
 div $0,2

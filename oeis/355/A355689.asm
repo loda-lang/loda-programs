@@ -1,6 +1,7 @@
 ; A355689: Dirichlet inverse of A166486, characteristic function of numbers that are not multiples of 4.
 ; Submitted by Simon Strandgaard
 ; 1,-1,-1,1,-1,1,-1,-1,0,1,-1,-1,-1,1,1,1,-1,0,-1,-1,1,1,-1,1,0,1,0,-1,-1,-1,-1,-1,1,1,1,0,-1,1,1,1,-1,-1,-1,-1,0,1,-1,-1,0,0,1,-1,-1,0,1,1,1,1,-1,1,-1,1,0,1,1,-1,-1,-1,1,-1,-1,0,-1,1,0,-1,1,-1,-1,-1
+; Formula: a(n) = A008683(n/(4^valuation(n,4)))
 
 #offset 1
 

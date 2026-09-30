@@ -1,7 +1,7 @@
 ; A141679: Triangle of coefficients of the inverse of A058071.
 ; Submitted by loader3229
 ; 1,-1,1,-1,-1,1,0,-1,-1,1,0,0,-1,-1,1,0,0,0,-1,-1,1,0,0,0,0,-1,-1,1,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,0,-1,-1,1,0,0,0,0,0,0,0,0,0,-1,-1,1,0,0
-; Formula: a(n) = truncate(truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n-1)/2)^truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+2,2)+n-1)/2))
+; Formula: a(n) = if((truncate((-binomial(floor((sqrtint(8*n)-1)/2)+2,2)+n-1)/2)^2)==1,truncate((-binomial(floor((sqrtint(8*n)-1)/2)+2,2)+n-1)/2)^truncate((-binomial(floor((sqrtint(8*n)-1)/2)+2,2)+n-1)/2),if(truncate((-binomial(floor((sqrtint(8*n)-1)/2)+2,2)+n-1)/2)<=(-1),0,truncate((-binomial(floor((sqrtint(8*n)-1)/2)+2,2)+n-1)/2)^truncate((-binomial(floor((sqrtint(8*n)-1)/2)+2,2)+n-1)/2)))
 
 #offset 1
 

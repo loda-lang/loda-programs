@@ -6,8 +6,7 @@
 
 sub $0,1
 mov $2,$0
-trn $0,1
-add $0,1
+max $0,1
 seq $0,30059 ; Numbers that are the product of an odd number of distinct primes.
 pow $1,$2
 lpb $2

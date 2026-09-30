@@ -18,5 +18,4 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$1
-trn $0,1
-add $0,1
+max $0,1

@@ -1,4 +1,4 @@
-; A084842: Number of rooted trees with n nodes with a height of 2 and with at least 1 node at height 1 has degree > 2.
+; A084842: Erroneous duplicate of A004250.
 ; Submitted by Bill F
 ; 1,2,4,7,11,17,25,37
 ; Formula: a(n) = sqrtint(12*2^(n-4))-2

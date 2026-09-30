@@ -23,8 +23,7 @@ lpb $2
   mul $5,6
   add $3,1
   seq $3,35205 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 23.
-  sub $3,2
-  equ $3,0
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

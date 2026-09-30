@@ -1,6 +1,7 @@
 ; A010815: From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,-1,-1,0,0,1,0,1,0,0,0,0,-1,0,0,-1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,-1,0,0
+; Formula: a(n) = if(((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))%(-2))==0,(sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))/(-2),sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1))-3*truncate((sqrtint(24*n+1)*((sqrtint(24*n+1)+1)%4-1)*((sqrtint(24*n+1)^2)==(24*n+1)))/3))
 
 mul $0,24
 add $0,1

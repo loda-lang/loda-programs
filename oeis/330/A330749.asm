@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

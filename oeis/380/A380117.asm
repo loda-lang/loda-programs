@@ -7,8 +7,7 @@
 mov $1,$0
 lpb $0
   mov $2,$0
-  trn $2,2
-  add $2,2
+  max $2,2
   mov $3,$2
   seq $3,34387 ; Sum of primes <= n.
   mov $0,0

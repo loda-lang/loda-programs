@@ -16,8 +16,7 @@ lpb $2
       add $4,2
     lpe
     div $3,2
-    sub $4,1
-    trn $4,1
+    trn $4,2
   lpe
   add $3,$4
   equ $3,0

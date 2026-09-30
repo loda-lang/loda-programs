@@ -16,7 +16,7 @@ pow $1,$0
 add $0,1
 seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
 mul $2,2
-seq $2,14401 ; Denominators of coefficients of expansion of Bessel function J_3(x).
+seq $2,14401 ; Denominators of coefficients of odd powers of x of the expansion of Bessel function J_3(x).
 gcd $2,$0
 div $0,$2
 mul $0,$1

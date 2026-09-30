@@ -5,4 +5,4 @@
 
 mul $0,2
 add $0,1
-seq $0,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+seq $0,712 ; a(n) = number of partitions of n into parts of 2 kinds.

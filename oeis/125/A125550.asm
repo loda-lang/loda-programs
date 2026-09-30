@@ -5,12 +5,10 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
-add $1,3
+add $1,2
 seq $1,40 ; The prime numbers.
 bin $1,$0
 mov $0,$1

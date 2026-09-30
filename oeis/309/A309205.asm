@@ -1,14 +1,41 @@
 ; A309205: Denominators of coefficients of odd powers of x in expansion of f(x) = x cos (x cos (x cos( ... .
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,24,720,8064,3628800,479001600,87178291200,2988969984000,6402373705728000,2432902008176640000,1124000727777607680000,47726800133326110720000,21225866375084507136000000,60977668922342772100300800000,265252859812191058636308480000000,1190637271193183394421800960000000,295232799039604140847618609643520000000,371993326789901217467999448150835200000000,523022617466601111760007224100074291200000000,815915283247897734345611269596115894272000000000
-; Formula: a(n) = truncate(((2*n-2)!)/gcd(A143601(n-1),(2*n-2)!))
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-seq $1,143601 ; Number of labeled odd-degree trees with 2n+1 nodes.
+mov $5,0
+mov $9,0
+mov $10,0
+mov $3,$0
+mul $3,2
+mov $8,$3
+add $3,1
+mov $4,4
+pow $4,$0
+mul $4,$3
+lpb $3
+  sub $3,1
+  sub $10,$3
+  add $10,1
+  mov $6,$5
+  add $6,$10
+  pow $6,$8
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $9,$7
+  equ $10,169
+  add $5,1
+lpe
+mov $3,$9
+div $3,$4
 mul $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,0
+sub $2,$0
+fac $0,$2
+mov $1,$3
 gcd $1,$0
 div $0,$1

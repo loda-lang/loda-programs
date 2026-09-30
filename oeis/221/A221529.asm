@@ -17,7 +17,6 @@ div $3,2
 bin $3,2
 sub $0,$3
 add $0,1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $2,$0
-seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $0,$2
 mul $0,$1

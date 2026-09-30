@@ -5,6 +5,5 @@
 
 add $0,1
 bin $0,2
+seq $0,121400 ; Triangle, read by rows, where T(n,k) = T(n-1,k-1) + T(n-1,k) + T(n-1,k+1) for n>=k>=1, with T(0,0) = 1, T(n,n) = T(n,0) + T(n-1,n-1) for n>=1; T(n,k)=0 when n<k or k<0.
 mov $1,$0
-seq $1,121400 ; Triangle, read by rows, where T(n,k) = T(n-1,k-1) + T(n-1,k) + T(n-1,k+1) for n>=k>=1, with T(0,0) = 1, T(n,n) = T(n,0) + T(n-1,n-1) for n>=1; T(n,k)=0 when n<k or k<0.
-mov $0,$1

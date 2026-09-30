@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,142033 ; Primes congruent to 29 mod 31.
 mov $1,$0
-seq $1,142033 ; Primes congruent to 29 mod 31.
-mov $0,$1
 div $0,31

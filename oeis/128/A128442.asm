@@ -1,7 +1,7 @@
 ; A128442: Array T by antidiagonals: T(n,k)=Floor(k*2^(n/2)).
 ; Submitted by Baggins
 ; 1,2,2,4,4,2,5,6,5,4,7,8,8,8,5,8,10,11,12,11,8,9,12,14,16,16,16,11,11,14,16,20,22,24,22,16,12,16,19,24,28,32,33,32,22,14,18,22,28,33,40,45,48,45,32,15,20,25,32,39,48,56,64,67,64,45,16,22,28,36,45,56,67,80,90
-; Formula: a(n) = sqrtint(truncate(2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n))*(-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^2)
+; Formula: a(n) = sqrtint((-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^2*if((-binomial(floor((sqrtint(8*n)+1)/2),2)+n)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)+1)/2),2)+n)))
 
 #offset 1
 

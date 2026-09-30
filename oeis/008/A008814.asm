@@ -4,9 +4,8 @@
 ; Formula: a(n) = floor(((2232*(n+1)^2)%14+(n+1)^2)/7)
 
 add $0,1
+pow $0,2
 mov $1,$0
-pow $1,2
-mov $0,$1
 mul $1,2232
 mod $1,14
 add $0,$1

@@ -1,14 +1,12 @@
 ; A051483: Order of group H_{1,n}.
 ; Submitted by NOSNHOP
 ; 96,384,1152,3072,5760,9216,16128,24576
+; Formula: a(n) = 96*if((truncate((n*A007434(2*n))/3)%2)==0,truncate((n*A007434(2*n))/3)/2,truncate((n*A007434(2*n))/3))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 add $1,$0
-add $1,1
 seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
 mul $1,$0
 mov $0,$1

@@ -11,8 +11,7 @@ pow $2,3
 lpb $2
   mov $3,$1
   seq $3,51802 ; Nonzero multiplicative digital root of n.
-  add $3,1
-  equ $3,6
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0

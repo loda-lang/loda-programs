@@ -4,6 +4,5 @@
 ; Formula: a(n) = A234715(min(n,16))
 
 min $0,16
+seq $0,234715 ; Denominator of sum_{k=1..n} 1/(k*H(k)) where H(k) is the harmonic number H(k) = sum_{j=1..n} 1/j.
 mov $1,$0
-seq $1,234715 ; Denominator of sum_{k=1..n} 1/(k*H(k)) where H(k) is the harmonic number H(k) = sum_{j=1..n} 1/j.
-mov $0,$1

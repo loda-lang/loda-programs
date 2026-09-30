@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,194750 ; Number of k such that {k*e} < {n*e}, where { } = fractional part.
 mov $1,$0
-seq $1,194750 ; Number of k such that {k*e} < {n*e}, where { } = fractional part.
-mov $0,$1
 sub $0,1

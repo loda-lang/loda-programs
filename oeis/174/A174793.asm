@@ -1,7 +1,7 @@
 ; A174793: Triangle read by rows: R(n,k) = n mod 2^Omega(k), where Omega( ) is number of prime divisors counted with multiplicity and 1 <= k <= n.
 ; Submitted by loader3229
 ; 0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0,0,2,0,2,0,1,1,3,1,3,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,2,0,2,0,2,2,2,0,1,1,3,1,3,1,3,3,3,1,0,0,0,0,0,0,0,4,0,0,0,4,0,1
-; Formula: a(n) = -A061142(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*truncate((truncate((sqrtint(8*n)-1)/2)+1)/A061142(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))+truncate((sqrtint(8*n)-1)/2)+1
+; Formula: a(n) = (floor((sqrtint(8*n)-1)/2)+1)%A061142(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)
 
 #offset 1
 

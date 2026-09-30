@@ -5,13 +5,10 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 seq $0,350388 ; a(n) is the largest unitary divisor of n that is a square.
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-add $1,1
 seq $1,350389 ; a(n) is the largest unitary divisor of n that is an exponentially odd number (A268335).
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,163671 ; Expansion of Sum_( x^k / (1 - x^(k^2)) ).
+  seq $3,163671 ; Expansion of Sum_{k>=1} x^k / (1 - x^(k^2)).
   equ $3,2
   sub $0,$3
   add $1,1

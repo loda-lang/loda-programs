@@ -1,6 +1,7 @@
 ; A286096: Triangle read by rows giving numerators of the Fourier expansion of cos^n(x).
 ; Submitted by PDW
 ; 1,0,1,1,0,1,0,3,0,1,3,0,4,0,1,0,10,0,5,0,1,10,0,15,0,6,0,1,0,35,0,21,0,7,0,1,35,0,56,0,28,0,8,0,1,0,126,0,84,0,36,0,9,0,1,126,0,210,0,120,0,45,0,10,0,1,0,462,0,330,0,165,0,55,0,11,0,1,462,0
+; Formula: a(n) = if(((min(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+1,2)*binomial(floor((sqrtint(8*n+8)-1)/2),if(((-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)%2)==0,(-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)/2,-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)-1))%2)==0,(min(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+1,2)*binomial(floor((sqrtint(8*n+8)-1)/2),if(((-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)%2)==0,(-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)/2,-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)-1))/2,min(-binomial(floor((sqrtint(8*n+8)+1)/2),2)+n+1,2)*binomial(floor((sqrtint(8*n+8)-1)/2),if(((-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)%2)==0,(-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)/2,-binomial(floor((sqrtint(8*n+8)-1)/2),2)+n+2)-1))
 
 mov $1,$0
 add $1,1

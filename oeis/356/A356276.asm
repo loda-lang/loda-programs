@@ -1,6 +1,7 @@
 ; A356276: a(n) is the number of integers that can be written as (3 + 1/t_1)^m * (3 + 1/t_2)^(n-m) with integers t_1,t_2 >= 2 and 0 < m < n.
 ; Submitted by GolfSierra
 ; 2,2,3,2,4,3,4,5,4,4
+; Formula: a(n) = -floor(if((n%3)==0,n/3,n)/5)+floor(n/2)+1
 
 #offset 2
 

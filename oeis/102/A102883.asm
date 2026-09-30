@@ -14,8 +14,7 @@ lpb $2
   seq $3,66839 ; a(n) = sum of positive divisors k of n with k <= sqrt(n).
   gcd $3,$5
   add $3,$4
-  sub $3,1
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -1,6 +1,7 @@
 ; A376838: Phase shift (original name "sfasamento") of the tetration base 10*n at height 2.
 ; Submitted by Science United
 ; 1,6,9,6,5,6,9,6,1,1,1,6,9,6,5,6,9,6,1,6,1,6,9,6,5,6,9,6,1,1,1,6,9,6,5,6,9,6,1,6,1,6,9,6,5,6,9,6,1,5,1,6,9,6,5,6,9,6,1,6,1,6,9,6,5,6,9,6,1,1,1,6,9,6,5,6,9,6,1,6
+; Formula: a(n) = if(((-n)%10)==0,(-n)/10,-n)^(2*n)-10*truncate((if(((-n)%10)==0,(-n)/10,-n)^(2*n))/10)
 
 #offset 1
 

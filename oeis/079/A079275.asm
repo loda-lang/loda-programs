@@ -1,7 +1,7 @@
 ; A079275: Number of divisors of n that are semiprimes with distinct factors.
 ; Submitted by entity
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,3,0,0,1,1,1,1,0,1,1,1,0,3,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,3,0,1,1,0,1,3,0,1,1,3,0,1,0,1,1,1,1,3,0,1
-; Formula: a(n) = truncate((13*A034444(n))/31)
+; Formula: a(n) = floor((13*A034444(n))/31)
 
 #offset 1
 

@@ -8,13 +8,12 @@ sub $0,1
 mov $1,$0
 mov $3,2
 lpb $3
-  mul $3,0
+  mov $3,0
   mov $2,$1
   add $2,1
   mul $2,5
   mov $0,$1
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,38049 ; Number of labeled rooted trees with 2-colored leaves.
   mul $0,$2
   mov $1,1

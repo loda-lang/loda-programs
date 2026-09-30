@@ -1,7 +1,7 @@
 ; A276152: a(n) = {smallest prime not dividing n} times {greatest primorial number which divides n} = A053669(n) * A053589(n).
 ; Submitted by Cruncher Pete
 ; 2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,210,2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,210,2,6,2,6,2,30,2,6,2,6,2,30,2,6,2,6,2,30,2,6
-; Formula: a(n) = 2*truncate(A002110(A230980(A055874(n^3))+1)/2)
+; Formula: a(n) = 2*floor(A002110(A230980(A055874(n^3))+1)/2)
 
 #offset 1
 

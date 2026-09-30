@@ -1,6 +1,7 @@
 ; A023121: Signature sequence of sqrt(2/3) (arrange the numbers i+j*x (i,j >= 1) in increasing order; the sequence of i's is the signature of x).
 ; Submitted by Science United
 ; 1,1,2,1,2,3,1,2,3,4,1,2,3,4,5,1,2,3,4,5,1,6,2,3,4,5,1,6,2,7,3,4,5,1,6,2,7,3,8,4,5,1,6,2,7,3,8,4,9,5,1,6,2,7,3,8,4,9,5,1,10,6,2,7,3,8,4,9,5,1,10,6,2,11,7,3,8,4,9,5
+; Formula: a(n) = A025680(floor(if(((2*n-2)^(2*n-2))==0,0,if(((2*n-2)^2)<=1,0,valuation((2*n-2)^(2*n-2),2*n-2)))/2)+1)+1
 
 #offset 1
 

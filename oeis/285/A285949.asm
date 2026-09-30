@@ -1,7 +1,7 @@
 ; A285949: {0->01, 1->0}-transform of the Thue-Morse word A010060.
 ; Submitted by loader3229
 ; 0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0
-; Formula: a(n) = truncate(gcd(3,sumdigits(floor((n-1)/3),2)%2-n+2)/2)
+; Formula: a(n) = floor(gcd(3,sumdigits(floor((n-1)/3),2)%2-n+2)/2)
 
 #offset 1
 

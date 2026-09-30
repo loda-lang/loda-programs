@@ -14,9 +14,8 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  seq $3,257993 ; Least gap in the partition having Heinz number n; index of the least prime not dividing n.
   mov $4,$3
-  seq $4,257993 ; Least gap in the partition having Heinz number n; index of the least prime not dividing n.
-  mov $3,$4
   equ $3,2
   sub $0,$3
   add $1,1

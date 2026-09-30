@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,4
 lpb $2
   max $8,$1
@@ -40,9 +38,8 @@ lpb $2
   nrt $10,2
   div $10,2
   pow $10,2
+  div $3,$10
   mov $9,$3
-  div $9,$10
-  mov $3,$9
   sub $3,$5
   sub $3,$1
   max $3,0

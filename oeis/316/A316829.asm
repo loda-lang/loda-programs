@@ -1,6 +1,7 @@
 ; A316829: Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1
+; Formula: a(n) = floor(gcd(binomial(n-1,if((n%2)==0,n/2,n)),3)/2)
 
 mov $1,$0
 dif $1,2

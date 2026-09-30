@@ -16,7 +16,7 @@ lpb $2
   add $3,1
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   mov $5,$3
-  seq $5,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  seq $5,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).
   mov $4,$3
   seq $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mul $4,$5

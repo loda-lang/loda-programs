@@ -13,7 +13,6 @@ add $4,$3
 mov $1,$0
 mov $1,$4
 add $1,1
+seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
 mov $2,$0
-seq $2,1358 ; Semiprimes (or biprimes): products of two primes.
-mov $0,$2
 sub $0,$1

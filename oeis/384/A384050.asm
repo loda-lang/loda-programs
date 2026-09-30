@@ -23,7 +23,7 @@ lpb $0
     equ $5,0
     sub $5,$4
     mul $5,$6
-    mul $6,0
+    mov $6,0
     mul $4,$2
     add $5,$4
   lpe

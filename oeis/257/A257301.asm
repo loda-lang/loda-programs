@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,46530 ; Number of distinct cubic residues mod n.
 sub $0,56
 sub $1,$0

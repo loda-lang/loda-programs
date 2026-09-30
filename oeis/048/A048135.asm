@@ -10,8 +10,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n > 1.
-  seq $3,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
+  mul $3,2
+  mov $5,$3
+  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  div $3,2
+  add $3,1
+  dir $3,3
+  dir $3,2
   equ $3,1
   sub $0,$3
   mov $4,$0

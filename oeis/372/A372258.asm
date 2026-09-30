@@ -1,6 +1,7 @@
 ; A372258: An infinite sequence over {0,1} with no palindromes of length > 12.
 ; Submitted by Science United
 ; 0,1,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0,0,1
+; Formula: a(n) = -floor((floor((n+2)/2)/(2^valuation(floor((n+2)/2),2)))/2)-2*truncate((-floor((floor((n+2)/2)/(2^valuation(floor((n+2)/2),2)))/2)+n)/2)+n
 
 mov $1,$0
 add $0,2

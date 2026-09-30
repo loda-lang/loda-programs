@@ -1,7 +1,7 @@
 ; A095890: Triangle read by rows: T(n,k) = (n-k+1)^(n-k), n>=1, 1<=k<=n.
 ; Submitted by Science United
 ; 1,2,1,9,2,1,64,9,2,1,625,64,9,2,1,7776,625,64,9,2,1,117649,7776,625,64,9,2,1,2097152,117649,7776,625,64,9,2,1,43046721,2097152,117649,7776,625,64,9,2,1,1000000000,43046721,2097152,117649,7776,625,64,9,2,1,25937424601,1000000000,43046721,2097152,117649,7776,625,64,9,2,1,743008370688,25937424601,1000000000,43046721,2097152,117649,7776,625,64,9,2,1,23298085122481,743008370688
-; Formula: a(n) = truncate((-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)^(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)))
+; Formula: a(n) = if(((-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^2)==1,(-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^(-n+binomial(floor((sqrtint(8*n)+3)/2),2)),if((-n+binomial(floor((sqrtint(8*n)+3)/2),2))<=(-1),0,(-n+binomial(floor((sqrtint(8*n)+3)/2),2)+1)^(-n+binomial(floor((sqrtint(8*n)+3)/2),2))))
 
 #offset 1
 

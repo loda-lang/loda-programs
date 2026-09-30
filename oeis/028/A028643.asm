@@ -4,10 +4,10 @@
 
 add $0,1
 lpb $0
-  sub $0,1
   mov $2,$0
-  trn $2,1
+  trn $2,2
   mov $5,$2
+  sub $0,1
   add $2,1
   seq $2,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
   mod $2,19

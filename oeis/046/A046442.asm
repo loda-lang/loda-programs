@@ -13,12 +13,10 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,84891 ; Multiples of 2, 3, 5, or 7, but not 7-smooth.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  sub $3,1
-  equ $3,1
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

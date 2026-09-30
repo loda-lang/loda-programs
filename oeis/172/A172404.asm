@@ -11,10 +11,16 @@ add $2,2
 add $2,$0
 pow $2,2
 lpb $2
+  mov $5,2
+  pow $5,$1
+  mov $6,$5
+  log $6,10
+  mov $7,10
+  pow $7,$6
   mov $3,$1
-  seq $3,8952 ; Leading digit of 2^n.
-  sub $3,1
-  equ $3,2
+  mov $3,$5
+  div $3,$7
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

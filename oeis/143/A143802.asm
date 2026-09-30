@@ -1,7 +1,7 @@
 ; A143802: Triangle read by rows, "n" followed by (n-1) terms of (1, 3, 7, 15, ...).
 ; Submitted by loader3229
 ; 1,2,1,3,1,3,4,1,3,7,5,1,3,7,15,6,1,3,7,15,31,7,1,3,7,15,31,63,8,1,3,7,15,31,63,127,9,1,3,7,15,31,63,127,255,10,1,3,7,15,31,63,127,255,511
-; Formula: a(n) = truncate((truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1))*binomial(truncate((sqrtint(8*n)-1)/2)+2,(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)==2))/4)-1
+; Formula: a(n) = floor((binomial(floor((sqrtint(8*n)-1)/2)+2,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)==2)*if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)<=(-1),0,2^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)))/4)-1
 
 #offset 1
 

@@ -1,4 +1,4 @@
-; A051187: Generalized Stirling number triangle of the first kind.
+; A051187: Triangle read by rows: T(n, m) = S1(n, m)*8^(n-m), where S1 are the signed Stirling numbers of first kind A008275 (n >= 1, 1 <= m <= n).
 ; Submitted by Science United
 ; 1,-8,1,128,-24,1,-3072,704,-48,1,98304,-25600,2240,-80,1,-3932160,1122304,-115200,5440,-120,1,188743680,-57802752,6651904,-376320,11200,-168,1,-10569646080,3425697792,-430309376,27725824,-1003520,20608,-224,1
 

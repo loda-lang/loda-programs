@@ -1,6 +1,7 @@
 ; A122864: Expansion of eta(q^3)^2 * eta(q^4) * eta(q^6)^2 * eta(q^36) / (eta(q) * eta(q^9) * eta(q^12)^2) in powers of q.
 ; Submitted by Simon Strandgaard
 ; 1,1,2,1,2,2,0,1,-2,2,0,2,2,0,4,1,2,-2,0,2,0,0,0,2,3,2,2,0,2,4,0,1,0,2,0,-2,2,0,4,2,2,0,0,0,-4,0,0,2,1,3,4,2,2,2,0,0,0,2,0,4,2,0,0,1,4,0,0,2,0,0,0,-2,2,2,6,0,0,4,0,2
+; Formula: a(n) = truncate((A035154(2*floor((n/(2^valuation(n,2)))/2)+1)*(6*if(((n%3)%2)==0,(n%3)/2,n%3)-4)*(-1)^floor((n/(2^valuation(n,2)))/2))/2)
 
 #offset 1
 

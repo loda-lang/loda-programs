@@ -4,6 +4,5 @@
 ; Formula: a(n) = A004086(A022509(n))
 
 seq $0,22509 ; Describe previous term from the right (method A - initial term is 5).
+seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0
-seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $0,$1

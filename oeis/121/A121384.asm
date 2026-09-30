@@ -10,8 +10,7 @@ lpb $3
   sub $3,1
 lpe
 add $2,$0
-add $0,1
-neq $0,1
+neq $0,0
 add $1,$2
 add $1,$0
 mov $0,$1

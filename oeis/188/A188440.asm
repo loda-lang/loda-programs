@@ -1,7 +1,6 @@
 ; A188440: Triangle T(n,k) read by rows: number of size-k antisymmetric subsets of {1,2,...,n}.
 ; Submitted by Goldislops
 ; 1,1,1,2,1,2,1,4,4,1,4,4,1,6,12,8,1,6,12,8,1,8,24,32,16,1,8,24,32,16,1,10,40,80,80,32,1,10,40,80,80,32,1,12,60,160,240,192,64,1,12,60,160,240,192,64,1,14,84,280,560,672,448,128,1,14,84,280,560,672,448,128,1,16,112,448,1120,1792,1792,1024
-; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+8*sqrtint(4*n+1))-1)/2)+1,2)+binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+sqrtint(4*n+1)-1))*binomial(truncate((-binomial(truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+8*sqrtint(4*n+1))-1)/2)+1,2)+binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+sqrtint(4*n+1)+truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+8*sqrtint(4*n+1))-1)/2)-1)/2),-binomial(truncate((sqrtint(8*binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+8*sqrtint(4*n+1))-1)/2)+1,2)+binomial(-n+floor((sqrtint(4*n+1)^2)/4)+sqrtint(4*n+1)-1,2)+sqrtint(4*n+1)-1)
 
 add $0,1
 mov $5,$0

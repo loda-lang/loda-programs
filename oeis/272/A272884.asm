@@ -18,9 +18,8 @@ lpb $2
   mov $5,$3
   dgs $5,2
   log $3,2
-  add $3,1
   sub $3,$5
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

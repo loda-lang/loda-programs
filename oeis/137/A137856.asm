@@ -4,11 +4,11 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-equ $1,0
-pow $19,0
+equ $1,1
+mov $19,1
 mov $20,1
+sub $0,1
 mov $3,$0
 lpb $3
   mov $4,$3

@@ -27,6 +27,5 @@ add $5,$0
 mov $0,$5
 add $0,2
 seq $0,5145 ; n copies of n-th prime.
+mod $0,$3
 mov $2,$0
-mod $2,$3
-mov $0,$2

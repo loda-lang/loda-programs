@@ -1,7 +1,7 @@
 ; A128046: Triangle read by rows: inverse of the lower triangular matrix (1/1; 1/1, 1/3; 1/1, 1/3, 1/5; ...).
 ; Submitted by loader3229
 ; 1,-3,3,0,-5,5,0,0,-7,7,0,0,0,-9,9,0,0,0,0,-11,11,0,0,0,0,0,-13,13,0,0,0,0,0,0,-15,15,0,0,0,0,0,0,0,-17,17,0,0,0,0,0,0,0,0,-19,19,0,0,0,0,0,0,0,0,0,-21,21,0,0,0,0,0,0,0,0,0,0,-23,23
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-truncate((sqrtint(8*n)-1)/2)+n-1)^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-truncate((sqrtint(8*n)-1)/2)+n-1))*(2*truncate((sqrtint(8*n)-1)/2)+1)
+; Formula: a(n) = (2*floor((sqrtint(8*n)-1)/2)+1)*if(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1)^2)==1,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1),if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1)<=(-1),0,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1)))
 
 #offset 1
 

@@ -4,8 +4,7 @@
 
 #offset 2
 
-sub $0,2
-trn $0,2
+trn $0,4
 mov $1,$0
 div $0,2
 bin $0,2

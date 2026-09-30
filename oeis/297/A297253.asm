@@ -14,8 +14,7 @@ lpb $2
   mov $3,$1
   seq $3,55949 ; n - reversal of base 4 digits of n (written in base 10).
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -10,7 +10,13 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mul $1,$0
-  seq $0,27306 ; a(n) = 2^(n-1) + ((1 + (-1)^n)/4)*binomial(n, n/2).
+  mov $4,$0
+  dif $4,2
+  sub $0,1
+  mov $5,2
+  pow $5,$0
+  bin $0,$4
+  add $0,$5
   add $1,$0
 lpe
 mov $0,$1

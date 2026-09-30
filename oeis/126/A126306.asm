@@ -1,8 +1,25 @@
 ; A126306: a(n) = number of double-rises (UU-subsequences) in the n-th Dyck path encoded by A014486(n).
 ; Submitted by ChelseaOilman
 ; 0,0,0,1,0,1,1,1,2,0,1,1,1,2,1,2,1,1,2,2,2,2,3,0,1,1,1,2,1,2,1,1,2,2,2,2,3,1,2,2,2,3,1,2,1,1,2,2,2,2,3,2,3,2,2,3,2,2,2,3,3,3,3,3,4,0,1,1,1,2,1,2,1,1,2,2,2,2,3,1
-; Formula: a(n) = A014081(truncate(A014486(n)/4))
 
-seq $0,14486 ; List of totally balanced sequences of 2n binary digits written in base 10. Binary expansion of each term contains n 0's and n 1's and reading from left to right (the most significant to the least significant bit), the number of 0's never exceeds the number of 1's.
+mov $3,0
+mov $4,$0
+pow $4,4
+lpb $4
+  sub $4,1
+  mov $5,$3
+  seq $5,80116 ; Characteristic function of A014486. a(n) = 1 if n's binary expansion is totally balanced, otherwise zero.
+  sub $0,$5
+  add $3,2
+  sub $4,$0
+lpe
+mov $0,$3
 div $0,4
-seq $0,14081 ; a(n) is the number of occurrences of '11' in the binary expansion of n.
+mov $2,$0
+add $2,$0
+bxo $2,$0
+mov $1,$2
+dgs $1,2
+div $1,2
+dgs $0,2
+sub $0,$1

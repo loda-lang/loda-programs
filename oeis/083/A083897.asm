@@ -19,8 +19,7 @@ lpb $4
     mov $6,$0
     mod $6,10
     div $0,10
-    trn $5,$6
-    add $5,$6
+    max $5,$6
   lpe
   pow $5,2
   mov $0,$5

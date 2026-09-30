@@ -1,7 +1,7 @@
 ; A075753: Smallest prime factor of n-th odd triangular number; a(1) = 1.
 ; Submitted by Science United
 ; 1,3,3,3,3,5,7,3,3,3,3,11,5,3,3,3,3,5,19,3,3,3,3,23,5,3,3,3,3,29,31,3,3,3,3,5,37,3,3,3,3,41,5,3,3,3,3,5,7,3,3,3,3,53,5,3,3,3,3,7,11,3,3,3,3,5,7,3,3,3,3,11,5,3,3,3,3,5,79,3
-; Formula: a(n) = 2*truncate(A020639(binomial(2*n-((n-1)%2),2))/2)+1
+; Formula: a(n) = 2*floor(A020639(binomial(2*n-((n-1)%2),2))/2)+1
 
 #offset 1
 

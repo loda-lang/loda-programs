@@ -14,8 +14,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,48853 ; Number of primes (different from n) that can be produced by altering one digit of decimal expansion of n (without changing the number of digits).
-  sub $3,1
-  equ $3,4
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

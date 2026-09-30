@@ -1,7 +1,7 @@
 ; A204433: Symmetric matrix: f(i,j) = (2*i + 2*j + 2) mod 3, by antidiagonals.
 ; Submitted by Yeti
 ; 0,2,2,1,1,1,0,0,0,0,2,2,2,2,2,1,1,1,1,1,1,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,0,0
-; Formula: a(n) = 2*truncate((sqrtint(8*n)+1)/2)-3*truncate((2*truncate((sqrtint(8*n)+1)/2)-2)/3)-2
+; Formula: a(n) = (2*floor((sqrtint(8*n)+1)/2)-2)%3
 
 #offset 1
 

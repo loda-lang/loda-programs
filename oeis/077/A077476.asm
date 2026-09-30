@@ -22,9 +22,8 @@ lpb $2
   nrt $7,2
   div $7,2
   pow $7,2
+  div $4,$7
   mov $6,$4
-  div $6,$7
-  mov $4,$6
   add $4,1
   mov $3,$1
   dgs $3,2

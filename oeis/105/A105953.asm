@@ -1,4 +1,4 @@
-; A105953: Numbers n such that the period length P(n) of the Fibonacci sequence mod n is a multiple of n.
+; A105953: Numbers k such that the period length P(k) of the Fibonacci sequence mod k is a multiple of k.
 ; Submitted by loader3229
 ; 1,5,6,10,12,20,24,25,30,50,60,100,120,125,150,250,300,500,600,625,750,1250,1500,2500,3000,3125,3750,6250,7500,12500,15000,15625,18750,31250,37500,62500,75000,78125,93750,156250,187500,312500,375000,390625
 ; Formula: a(n) = b(n-1), b(n) = 5*b(n-6), b(9) = 50, b(8) = 30, b(7) = 25, b(6) = 24, b(5) = 20, b(4) = 12, b(3) = 10, b(2) = 6, b(1) = 5, b(0) = 1

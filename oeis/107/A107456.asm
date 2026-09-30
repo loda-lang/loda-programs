@@ -5,9 +5,7 @@
 #offset 13
 
 mov $1,1
-mov $2,1
-mov $3,1
-mov $4,1
+fil $1,4
 mov $5,2
 mov $6,1
 mov $7,2
@@ -16,40 +14,22 @@ mov $9,3
 mov $10,2
 mov $11,2
 mov $13,2
-mov $14,2
-mov $15,2
+fil $13,3
 mov $16,4
 mov $17,2
 mov $18,1
 mov $19,2
-mov $20,2
-mov $21,2
-mov $22,2
+fil $19,4
 mov $23,5
 mov $24,1
 mov $25,2
-mov $26,2
-mov $27,2
-mov $28,2
+fil $25,4
 sub $0,13
 lpb $0
   sub $0,1
-  mul $1,0
-  mov $29,$1
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
-  mov $9,$10
-  mov $10,$11
-  mov $11,$12
-  mov $12,$13
-  mov $13,$14
-  mov $14,$15
+  mov $29,0
+  mov $1,0
+  rol $1,15
   mov $15,$16
   add $29,$17
   add $29,$18
@@ -57,13 +37,7 @@ lpb $0
   add $29,$20
   add $29,$21
   add $29,$22
-  mov $16,$17
-  mov $17,$18
-  mov $18,$19
-  mov $19,$20
-  mov $20,$21
-  mov $21,$22
-  mov $22,$23
+  rol $16,8
   mov $23,$24
   mul $24,-1
   add $29,$24

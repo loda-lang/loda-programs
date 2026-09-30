@@ -12,14 +12,21 @@ lpb $1
   mov $0,$5
   add $0,$1
   max $0,1
+  mov $7,$0
+  dif $7,$0
+  add $7,1
+  mov $8,$0
+  max $8,1
+  seq $8,40 ; The prime numbers.
+  mul $7,$8
+  mov $8,$7
+  div $8,2
   mov $2,$0
-  add $2,1
-  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  mov $4,$0
-  mul $4,$2
-  mov $0,$4
+  mov $2,$8
+  mul $0,$8
   mov $3,$1
-  mul $3,$4
+  mul $3,$0
+  mov $4,$0
   add $6,$3
 lpe
 min $5,1

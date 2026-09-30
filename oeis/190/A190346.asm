@@ -23,9 +23,8 @@ add $1,$4
 add $0,1
 pow $0,2
 mul $0,10
+nrt $0,2
 mov $6,$0
-nrt $6,2
-mov $0,$6
 div $0,2
 sub $0,478
 add $0,$1

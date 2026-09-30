@@ -14,7 +14,7 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,53158 ; Sum of n and its cototient function value (A051953): a(n) = 2*n - phi(n), where phi is Euler phi.
-  mul $0,0
+  mov $0,0
 lpe
 mul $1,2
 sub $2,$1

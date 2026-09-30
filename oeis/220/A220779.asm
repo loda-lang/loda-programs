@@ -1,6 +1,7 @@
 ; A220779: Exponent of highest power of 2 dividing the sum 1^n + 2^n + ... + n^n.
 ; Submitted by BrandyNOW
 ; 0,0,2,1,0,0,4,2,0,0,2,1,0,0,6,3,0,0,2,1,0,0,4,2,0,0,2,1,0,0,8,4,0,0,2,1,0,0,4,2,0,0,2,1,0,0,6,3,0,0,2,1,0,0,4,2,0,0,2,1,0,0,10,5,0,0,2,1,0,0,4,2,0,0,2,1,0,0,6,3
+; Formula: a(n) = valuation(floor((n+1)/2),2)*gcd(2,n+1)
 
 #offset 1
 

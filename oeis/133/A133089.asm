@@ -1,7 +1,7 @@
 ; A133089: Expansion of f(x)^3 in powers of x where f() is a Ramanujan theta function.
 ; Submitted by loader3229
 ; 1,3,0,-5,0,0,-7,0,0,0,9,0,0,0,0,11,0,0,0,0,0,-13,0,0,0,0,0,0,-15,0,0,0,0,0,0,0,17,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,-21,0,0,0,0,0,0,0,0,0,0,-23,0,0,0,0,0,0,0,0,0,0,0,25,0
-; Formula: a(n) = binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n-1,truncate((sqrtint(8*n+8)-1)/2))*(2*truncate((sqrtint(8*n+8)-1)/2)+1)*(-1)^n
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n-1,floor((sqrtint(8*n+8)-1)/2))*(2*floor((sqrtint(8*n+8)-1)/2)+1)*(-1)^n
 
 mov $1,-1
 pow $1,$0

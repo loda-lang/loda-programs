@@ -1,9 +1,50 @@
 ; A094762: a(n) = Bell(n+1) - 2^n + 1 + n, where Bell(i) is the i-th Bell number A000110(i).
 ; Submitted by Science United
 ; 1,2,4,11,41,177,820,4020,20900,115473,677557,4211561,27640354,190891144,1382942176,10480109395,82864804285,682076675105,5832741942932,51724157711104,474869815108196,4506715736350193,44152005850890065,445958869286416705
-; Formula: a(n) = A058681(n)+n+1
 
 mov $1,$0
-seq $1,58681 ; Number of matroids of rank 2 on n labeled points.
-add $0,$1
+clr $7,3
+mov $13,0
+mov $14,0
+mov $3,2
+pow $3,$0
+mov $4,$0
+add $4,1
+mov $12,1
+fac $12,$4
+mov $15,$4
+mov $16,1
+add $4,1
+lpb $4
+  sub $4,1
+  mov $10,$9
+  pow $10,$15
+  mov $11,$15
+  bin $11,$9
+  mul $14,$9
+  add $14,$10
+  mov $5,$14
+  div $5,$12
+  mul $7,$9
+  add $7,$5
+  add $9,1
+  mod $14,$12
+  mul $16,-1
+  mov $6,$11
+  mul $6,$14
+  mul $6,$16
+  mov $2,$11
+  mul $2,$7
+  mul $2,$16
+  add $8,$6
+  add $13,$2
+lpe
+mul $13,$16
+mul $8,$16
+div $8,$12
+add $8,$13
+mov $4,$8
+sub $4,$3
+add $0,$4
 add $0,1
+mov $1,$4

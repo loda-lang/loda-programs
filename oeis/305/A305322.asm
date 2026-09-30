@@ -10,13 +10,19 @@ add $2,5
 pow $2,3
 lpb $2
   sub $2,31
+  mov $6,$1
+  add $6,8
+  div $6,9
+  mov $7,10
+  pow $7,$6
+  div $7,9
   mov $3,$1
-  seq $3,10785 ; Repdigit numbers, or numbers whose digits are all equal.
+  dgr $3,10
+  mul $3,$7
   mov $5,$3
   mod $3,3
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

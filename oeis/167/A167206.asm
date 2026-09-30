@@ -16,10 +16,19 @@ lpb $4
   add $0,1
   mov $5,$0
   div $5,2
-  seq $5,367 ; Numerators of Bernoulli numbers B_2n.
+  mul $5,2
+  mov $6,$5
+  seq $6,129814 ; a(n) = Bernoulli(n) * (n+1)!.
+  add $5,1
+  mov $7,1
+  fac $7,$5
+  mov $5,$7
+  gcd $5,$6
+  div $6,$5
   mod $0,2
-  mul $0,$5
+  mul $0,$6
   mul $1,$0
   add $3,$1
+  mov $5,$6
 lpe
 mov $0,$3

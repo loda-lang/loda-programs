@@ -12,6 +12,6 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,9194 ; a(n) = gcd(n, sigma(n)).
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

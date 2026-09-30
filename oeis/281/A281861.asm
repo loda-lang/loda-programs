@@ -23,8 +23,7 @@ lpb $1
       sub $9,1
       mov $0,$7
       add $0,$9
-      trn $0,1
-      add $0,1
+      max $0,1
       seq $0,98615 ; G.f. A(x) satisfies: A(x*G(x)) = G(x), where G(x) is the g.f. for A098614(n) = Fibonacci(n+1)*Catalan(n).
       sub $0,1
       mov $10,$9

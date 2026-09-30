@@ -1,7 +1,7 @@
 ; A085194: Terms of A085193 halved. The repeating part in the first differences of A057520.
 ; Submitted by Science United
 ; 1,3,1,2,9,1,3,1,2,5,1,2,4,29,1,3,1,2,9,1,3,1,2,5,1,2,4,13,1,3,1,2,5,1,2,4,9,1,2,4,8,101,1,3,1,2,9,1,3,1,2,5,1,2,4,29,1,3,1,2,9,1,3,1,2,5,1,2,4,13,1,3,1,2,5,1,2,4,9,1
-; Formula: a(n) = truncate(A085193(truncate((4*n+A189727(-floor((12*n+3)/2)+730)+1)/4))/2)
+; Formula: a(n) = truncate(A085193(floor((4*n+A189727(-floor((12*n+3)/2)+730)+1)/4))/2)
 
 mul $0,4
 sub $0,1

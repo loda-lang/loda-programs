@@ -8,6 +8,5 @@
 pow $0,2
 mul $0,3
 log $0,3
+sub $0,1
 mov $1,$0
-sub $1,1
-mov $0,$1

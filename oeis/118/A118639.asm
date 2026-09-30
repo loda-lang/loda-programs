@@ -1,7 +1,7 @@
 ; A118639: Smallest number expressible using the next Roman-numeral symbol under the vinculum system.
 ; Submitted by crashtech
 ; 1,4,9,40,90,400,900,4000,9000,40000,90000,400000,900000
-; Formula: a(n) = truncate(10^truncate((n-2)/2))*(-2*truncate((n-2)/2)+n)^2
+; Formula: a(n) = (-2*truncate((n-2)/2)+n)^2*if(truncate((n-2)/2)<=(-1),0,10^truncate((n-2)/2))
 
 #offset 1
 

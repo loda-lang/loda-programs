@@ -30,8 +30,7 @@ lpb $2
   seq $8,19554 ; Smallest number whose square is divisible by n.
   div $7,$8
   mov $3,$7
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

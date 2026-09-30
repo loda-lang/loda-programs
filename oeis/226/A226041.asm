@@ -11,8 +11,26 @@ add $2,2
 pow $2,2
 mul $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
+  mov $8,$6
+  mov $9,$1
+  add $9,2
+  mov $11,$9
+  log $6,10
+  add $6,1
+  mov $7,10
+  pow $7,$6
   mov $3,$1
-  seq $3,74991 ; Concatenation of n, n+1, n+2 divided by 3.
+  mul $3,$7
+  add $3,$8
+  log $9,10
+  add $9,1
+  mov $10,10
+  pow $10,$9
+  mul $3,$10
+  add $3,$11
+  div $3,3
   sub $3,1
   mov $5,$3
   div $5,2

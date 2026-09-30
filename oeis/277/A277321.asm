@@ -16,8 +16,7 @@ lpb $2
   mul $3,$6
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $3,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
-  add $3,1
-  trn $3,2
+  trn $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

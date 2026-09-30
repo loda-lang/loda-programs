@@ -13,8 +13,7 @@ lpb $0
     add $9,$5
     mov $10,3
     sub $4,1
-    trn $7,1
-    add $7,1
+    max $7,1
     seq $7,38548 ; Number of divisors of n that are at most sqrt(n).
     mul $7,$$9
     add $5,1

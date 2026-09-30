@@ -3,5 +3,16 @@
 
 #offset 1
 
-seq $0,340081 ; a(n) = gcd(n-1, A003958(n)).
+sub $0,1
+mov $2,1
+mov $1,$0
+lpb $1
+  mov $3,$1
+  add $3,1
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $1,$3
+  sub $3,1
+  mul $2,$3
+lpe
+gcd $0,$2
 dir $0,2

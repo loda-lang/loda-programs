@@ -4,6 +4,6 @@
 ; Formula: a(n) = 2*truncate(A080310(A014486(n))/2)
 
 seq $0,14486 ; List of totally balanced sequences of 2n binary digits written in base 10. Binary expansion of each term contains n 0's and n 1's and reading from left to right (the most significant to the least significant bit), the number of 0's never exceeds the number of 1's.
-seq $0,80310 ; Rewrite 0->100 in the binary expansion of n (but leaving single zero as zero) and append 10 to the right.
+seq $0,80310 ; a(0) = 2 and, for n >= 1, rewrite 0->100 in the binary expansion of n and append 10 to the right.
 div $0,2
 mul $0,2

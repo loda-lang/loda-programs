@@ -5,9 +5,8 @@
 
 #offset 1
 
+seq $0,33029 ; Numbers whose base-16 expansion has no run of digits with length < 2.
 mov $1,$0
-seq $1,33029 ; Numbers whose base-16 expansion has no run of digits with length < 2.
-mov $0,$1
 sub $0,17
 div $0,17
 add $0,1

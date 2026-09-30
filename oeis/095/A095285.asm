@@ -11,7 +11,15 @@ lpb $2
   mov $3,$1
   add $3,$4
   mul $3,16
-  seq $3,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+  mov $7,$3
+  dgs $7,2
+  mov $6,0
+  bxo $6,$7
+  max $3,1
+  log $3,2
+  add $3,1
+  sub $3,$7
+  sub $3,$6
   max $3,0
   bin $5,$3
   add $1,1

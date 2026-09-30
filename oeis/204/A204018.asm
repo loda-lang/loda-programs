@@ -1,7 +1,7 @@
 ; A204018: Symmetric matrix based on f(i,j)=1+max(j mod i, i mod j), by antidiagonals.
 ; Submitted by mudpuppie
 ; 1,2,2,2,1,2,2,3,3,2,2,3,1,3,2,2,3,4,4,3,2,2,3,4,1,4,3,2,2,3,4,5,5,4,3,2,2,3,4,5,1,5,4,3,2,2,3,4,5,6,6,5,4,3,2,2,3,4,5,6,1,6,5,4,3,2,2,3,4,5,6,7,7,6,5,4,3,2,2,3
-; Formula: a(n) = -truncate((truncate((sqrtint(8*n)-1)/2)+2)/max(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))*max(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)+truncate((sqrtint(8*n)-1)/2)+3
+; Formula: a(n) = -truncate((floor((sqrtint(8*n)-1)/2)+2)/max(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n))*max(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)+floor((sqrtint(8*n)-1)/2)+3
 
 #offset 1
 

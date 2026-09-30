@@ -1,13 +1,14 @@
 ; A028252: Sequence arising in multiprocessor page migration.
 ; Submitted by Science United
 ; 3,8,14,19,24,29,35,40,45,51
-; Formula: a(n) = (truncate((4*n-4)/3)==2)+4*n+truncate((4*n-4)/3)-1
+; Formula: a(n) = (floor((4*n-4)/3)==2)+4*n+floor((4*n-4)/3)-1
 
 #offset 1
 
 sub $0,1
-mul $0,4
 mov $1,$0
+mul $1,4
+mul $0,4
 div $0,3
 add $1,$0
 equ $0,2

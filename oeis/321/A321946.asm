@@ -5,7 +5,7 @@
 
 #offset 1
 
-seq $0,322309 ; Largest automorphism group size for a binary self-dual code of length 2n
+seq $0,322309 ; Largest automorphism group size for a binary self-dual code of length 2n.
 mul $0,2
 mov $1,-1
 add $1,$0

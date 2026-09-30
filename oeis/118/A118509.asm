@@ -12,7 +12,8 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,31921 ; a(n) = prime(100*n).
+  mul $0,100
+  seq $0,40 ; The prime numbers.
   mov $2,$3
   mul $2,$0
   mul $4,$3

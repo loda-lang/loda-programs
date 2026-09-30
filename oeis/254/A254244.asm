@@ -1,7 +1,7 @@
 ; A254244: Decimal expansion of atomic unit of charge density in C m^-3.
 ; Submitted by loader3229
 ; 1,0,8,1,2,0,2,3
-; Formula: a(n) = ((n-13)==0)+(n-13)*(-(binomial(n-13,2)%4)+10)-10*truncate((((n-13)==0)+(n-13)*(-(binomial(n-13,2)%4)+10))/10)
+; Formula: a(n) = (((n-13)==0)+(n-13)*(-(binomial(n-13,2)%4)+10))%10
 
 #offset 13
 

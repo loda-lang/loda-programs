@@ -1,7 +1,7 @@
 ; A369010: Exponential of Mangoldt function M(n) applied to primorial base exp-function: a(n) = A014963(A276086(n)).
 ; Submitted by Skillz
 ; 1,2,3,1,3,1,5,1,1,1,1,1,5,1,1,1,1,1,5,1,1,1,1,1,5,1,1,1,1,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (gcd(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))),truncate(2^truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))))-2)-1)*(-2*truncate((A143731(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))))+1)/2)+A143731(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))))+1)+1
+; Formula: a(n) = (gcd(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))),if((2^2)==1,2^truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))),if(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n)))<=(-1),0,2^truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n)))))-2)-1)*(-2*truncate((A143731(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))))+1)/2)+A143731(truncate(A276086(n)/gcd(A003415(A276086(n)),A276086(n))))+1)+1
 
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 mov $1,$0

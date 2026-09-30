@@ -1,7 +1,7 @@
 ; A098229: a(n) = 6*c(m,1) where m = A003586(n) is the n-th 3-smooth number, c(m,k) = {(m^(2*k)-1)*B(2*k)}, {x} denotes the fractional part of x and B(k) is the k-th Bernoulli number.
 ; Submitted by Bigos2
 ; 0,3,2,3,5,3,2,5,3,5,5,2,3,5,5,5,3,5,2,5,5,3,5,5,5,5,2,3,5,5,5,5,5,3,5,5,2,5,5,5,3,5,5,5,5,5,5,3,2,5,5,5,5,5,5,3,5,5,5,5,5,2,5,5,3,5,5,5,5,5,5,5,5,3,5,5,2,5,5,5
-; Formula: a(n) = -(gcd(A003586(n),210)+2)^7-10*truncate((-(gcd(A003586(n),210)+2)^7-10*truncate((-(gcd(A003586(n),210)+2)^7+26)/10)+37)/10)-10*truncate((-(gcd(A003586(n),210)+2)^7+26)/10)+37
+; Formula: a(n) = (-(gcd(A003586(n),210)+2)^7-10*truncate((-(gcd(A003586(n),210)+2)^7+26)/10)+37)%10
 
 #offset 1
 

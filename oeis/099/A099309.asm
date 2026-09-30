@@ -12,8 +12,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,328308 ; a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
-  add $3,2
-  equ $3,2
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -7,5 +7,5 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $0,1608 ; Perrin sequence (or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.
+seq $0,1608 ; Perrin sequence (or Perrin numbers, or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.
 div $0,$1

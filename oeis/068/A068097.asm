@@ -1,7 +1,7 @@
 ; A068097: a(1) = 1; a(n+1) = smallest triangular numbers starting with a(n).
 ; Submitted by loader3229
 ; 1,10,105,10585,105858525,10585852585252500,105858525852525008525250025000000,10585852585252500852525002500000085252500250000002500000000000000
-; Formula: a(n) = b(n-1), b(n) = binomial(max(truncate((sqrtint(8*truncate(10^logint(b(n-1),10))*b(n-1))+1)/2)+1,5),2), b(0) = 1
+; Formula: a(n) = binomial(max(truncate((sqrtint(8*a(n-1)*10^logint(a(n-1),10))+1)/2)+1,5),2), a(1) = 1
 
 #offset 1
 

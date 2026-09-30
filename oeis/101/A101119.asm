@@ -4,10 +4,7 @@
 
 #offset 1
 
-mov $1,0
-mov $2,0
-mov $3,0
-mov $4,0
+clr $1,4
 mov $6,0
 mov $7,0
 lex $0,2

@@ -11,8 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$4
   add $0,$2
-  trn $0,1
-  add $0,1
+  max $0,1
   nrt $0,2
   seq $0,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
   mov $1,$2

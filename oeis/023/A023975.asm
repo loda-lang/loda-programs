@@ -5,6 +5,5 @@
 
 #offset 1
 
+geq $0,26
 mov $1,$0
-geq $1,26
-mov $0,$1

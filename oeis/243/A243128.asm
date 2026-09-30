@@ -14,14 +14,19 @@ lpb $2
   max $5,$1
   mov $6,$1
   add $6,1
-  seq $6,48250 ; Sum of the squarefree divisors of n.
+  mov $7,$6
+  seq $7,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  add $7,1
+  mov $8,$7
+  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
   add $3,1
   seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
-  add $3,$6
+  add $3,$8
   div $3,2
   mul $5,-1
   add $5,$3
+  mov $6,$8
   mov $3,$5
   sub $3,1
   div $3,$1

@@ -21,8 +21,7 @@ lpb $2
   mul $3,2
   mov $5,$0
   sub $5,$4
-  add $5,1
-  neq $5,1
+  neq $5,0
   dif $7,$3
   sub $2,$5
   mov $3,$7

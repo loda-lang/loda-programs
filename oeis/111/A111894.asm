@@ -15,9 +15,9 @@ lpb $2
   mul $0,9997
   nrt $0,2
   mod $0,10
-  sub $0,1
   mov $3,$0
-  equ $3,3
+  equ $3,4
+  sub $0,1
   add $4,$3
 lpe
 mov $0,$4

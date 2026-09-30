@@ -10,8 +10,11 @@ mul $2,9
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  div $5,2
   mov $3,$1
-  seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  bxo $3,$5
+  dgs $3,2
   seq $3,2241 ; 10th powers written backwards.
   mul $3,2
   equ $3,2

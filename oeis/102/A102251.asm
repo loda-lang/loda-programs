@@ -1,7 +1,7 @@
 ; A102251: Begin with 1, multiply each digit by 2.
 ; Submitted by Goldislops
 ; 1,2,4,8,16,2,12,4,2,4,8,4,8,16,8,16,2,12,16,2,12,4,2,4,2,12,4,2,4,8,4,8,4,2,4,8,4,8,16,8,16,8,4,8,16,8,16,2,12,16,2,12,16,8,16,2,12,16,2,12,4,2,4,2,12,4,2,4,2,12,16,2,12,4,2,4,2,12,4,2
-; Formula: a(n) = c(n+1), b(n) = -100*truncate(b(n-1)/truncate(10^logint(b(n-1),10)))*truncate(10^logint(b(n-1),10))+100*b(n-1)+20*truncate(b(n-1)/truncate(10^logint(b(n-1),10))), b(2) = 40, b(1) = 20, b(0) = 1, c(n) = 2*truncate(b(n-2)/truncate(10^logint(b(n-2),10))), c(2) = 2, c(1) = 1, c(0) = 0
+; Formula: a(n) = c(n+1), b(n) = -100*truncate(b(n-1)/(10^logint(b(n-1),10)))*10^logint(b(n-1),10)+100*b(n-1)+20*truncate(b(n-1)/(10^logint(b(n-1),10))), b(2) = 40, b(1) = 20, b(0) = 1, c(n) = 2*truncate(b(n-2)/(10^logint(b(n-2),10))), c(2) = 2, c(1) = 1, c(0) = 0
 
 mov $1,1
 mov $4,1

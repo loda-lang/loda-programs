@@ -7,7 +7,6 @@ max $2,$0
 add $2,$0
 bxo $2,$0
 add $0,$2
+bxo $0,$2
 mov $1,$0
-bxo $1,$2
-mov $0,$1
 div $0,2

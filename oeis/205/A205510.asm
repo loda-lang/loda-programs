@@ -9,7 +9,6 @@ mov $2,$0
 seq $2,40 ; The prime numbers.
 add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
+bxo $0,$2
 mov $1,$0
-bxo $1,$2
-mov $0,$1
 dgs $0,2

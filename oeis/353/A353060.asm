@@ -1,6 +1,7 @@
 ; A353060: Solution to Snake Numbers Problems from 1 to n for an n X n square grid with chess knight moves (see Comments).
 ; Submitted by LCB001
 ; 1,1,3,13,15,36,39,64
+; Formula: a(n) = d(n-1)+1, b(n) = e(n-3)+10, b(7) = 28, b(6) = 15, b(5) = 12, b(4) = 11, b(3) = 10, b(2) = 10, b(1) = 0, b(0) = 0, c(n) = c(n-2)+e(n-5)+11, c(8) = 40, c(7) = 26, c(6) = 24, c(5) = 13, c(4) = 12, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 2*c(n-1)+b(n-1), d(7) = 63, d(6) = 38, d(5) = 35, d(4) = 14, d(3) = 12, d(2) = 2, d(1) = 0, d(0) = 0, e(n) = 2*c(n-2)+e(n-1)+e(n-5)+11, e(9) = 253, e(8) = 172, e(7) = 108, e(6) = 69, e(5) = 33, e(4) = 18, e(3) = 5, e(2) = 2, e(1) = 1, e(0) = 0
 
 #offset 1
 

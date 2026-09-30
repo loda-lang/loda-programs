@@ -10,11 +10,17 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $7,$1
+  log $7,10
+  add $7,1
+  mov $8,10
+  pow $8,$7
+  sub $8,$1
   mov $6,$1
-  seq $6,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).
+  mov $6,$8
   mov $5,$1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $5,$6
+  sub $5,$8
   mov $3,$1
   sub $3,$5
   mul $3,-4

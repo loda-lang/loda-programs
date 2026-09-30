@@ -13,9 +13,9 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,153775 ; Sequence S such that 1 is in S and if x is in S, then 3x-1 and 3x are in S.
-  sub $3,2
   mov $5,$3
-  add $3,1
+  sub $5,2
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

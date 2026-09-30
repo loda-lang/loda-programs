@@ -1,7 +1,6 @@
 ; A046569: Denominators of the 1/4-Pascal triangle (by row).
 ; Submitted by Science United
 ; 1,1,1,1,4,1,1,4,4,1,1,4,2,4,1,1,4,4,4,4,1,1,4,1,2,1,4,1,1,4,4,2,2,4,4,1,1,4,2,4,1,4,2,4,1,1,4,4,4,4,4,4,4,4,1,1,4,1,1,1,2,1,1,1,4,1,1,4,4,1,1,2,2,1,1,4,4,1,1,4
-; Formula: a(n) = truncate(4/gcd(binomial(max(truncate((sqrtint(8*max(0,n-1))-1)/2)-2,-binomial(truncate((sqrtint(8*max(0,n-1))-1)/2)+1,2)-truncate((sqrtint(8*max(0,n-1))-1)/2)+max(0,n-1)+1),-binomial(truncate((sqrtint(8*max(0,n-1))-1)/2)+1,2)-truncate((sqrtint(8*max(0,n-1))-1)/2)+max(truncate((sqrtint(8*max(0,n-1))-1)/2)-2,-binomial(truncate((sqrtint(8*max(0,n-1))-1)/2)+1,2)-truncate((sqrtint(8*max(0,n-1))-1)/2)+max(0,n-1)+1)+max(0,n-1)+1),4))
 
 #offset 1
 

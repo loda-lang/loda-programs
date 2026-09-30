@@ -16,9 +16,9 @@ lpb $0
   add $1,1
   mov $2,$5
 lpe
-sub $0,1
 mov $3,$0
-equ $3,-2
+sub $0,1
+equ $3,-1
 lpb $3
   sub $3,1
   mov $0,0

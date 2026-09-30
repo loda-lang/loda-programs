@@ -10,7 +10,7 @@ lpb $0
   bin $3,2
   add $4,$3
   add $1,1
-  pow $2,0
+  mov $2,1
   bin $2,$0
   mul $2,$0
   mov $3,$1

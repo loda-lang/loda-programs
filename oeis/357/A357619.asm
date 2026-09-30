@@ -1,7 +1,7 @@
 ; A357619: Length of longest induced path (or chordless path) in the n-Fibonacci cube graph.
 ; Submitted by BrandyNOW
 ; 0,1,2,3,6,9,13,20,30
-; Formula: a(n) = truncate(sqrtint(12*(n+1)*2^(n+3)+12*2^(n+3))/16)
+; Formula: a(n) = floor(sqrtint(12*(n+1)*2^(n+3)+12*2^(n+3))/16)
 
 add $0,3
 mov $1,2

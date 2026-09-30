@@ -9,7 +9,12 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,267155 ; Middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
+  mov $4,2
+  pow $4,$0
+  mul $4,959
+  div $4,768
+  mov $0,$4
+  mod $0,2
   mul $1,10
   add $1,$0
 lpe

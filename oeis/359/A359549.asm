@@ -1,7 +1,7 @@
 ; A359549: a(n) = 1 if n is either an odd squarefree number squared or twice such a number, otherwise 0.
 ; Submitted by Fire$torm [BlackOps]
 ; 1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate((-2*truncate(A046692(n)/2)+A046692(n)+2)/2)-2*truncate(A046692(n)/2)+A046692(n)+2
+; Formula: a(n) = (-2*truncate(A046692(n)/2)+A046692(n)+2)%2
 
 #offset 1
 

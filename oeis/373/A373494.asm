@@ -10,7 +10,12 @@ pow $2,6
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,373493 ; a(n) = 1 if A059975(n) and A003415(n) are both multiples of 3, otherwise 0, where A059975 is fully additive with a(p) = p-1, and A003415 is the arithmetic derivative.
+  mov $5,$3
+  seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  gcd $5,3
+  seq $3,59975 ; For n > 1, a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors; fully additive with a(p) = p-1.
+  gcd $3,$5
+  div $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

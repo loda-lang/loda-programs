@@ -1,6 +1,7 @@
 ; A122857: Expansion of (phi(q)^2 + phi(q^3)^2) / 2 in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by Mumps
 ; 1,2,2,2,2,4,2,0,2,2,4,0,2,4,0,4,2,4,2,0,4,0,0,0,2,6,4,2,0,4,4,0,2,0,4,0,2,4,0,4,4,4,0,0,0,4,0,0,2,2,6,4,4,4,2,0,0,0,4,0,4,4,0,0,2,8,0,0,4,0,0,0,2,4,4,6,0,0,4,0
+; Formula: a(n) = if(n==0,0,n/(3^valuation(n,3)))+2*A035154(2*floor(((max(if(n==0,0,n/(3^valuation(n,3)))-1,0)+1)/(2^valuation(max(if(n==0,0,n/(3^valuation(n,3)))-1,0)+1,2)))/2)+1)*(-1)^floor(((max(if(n==0,0,n/(3^valuation(n,3)))-1,0)+1)/(2^valuation(max(if(n==0,0,n/(3^valuation(n,3)))-1,0)+1,2)))/2)-max(if(n==0,0,n/(3^valuation(n,3)))-1,0)-1
 
 dir $0,3
 mov $1,$0

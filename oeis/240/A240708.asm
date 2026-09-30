@@ -21,8 +21,7 @@ lpb $5
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,2
   mul $4,$3
-  trn $4,1
-  add $4,1
+  max $4,1
   seq $4,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,$4

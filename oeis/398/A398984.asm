@@ -11,7 +11,26 @@ lpb $0
   mov $4,$2
   add $4,$3
   add $4,1
-  seq $4,398983 ; Array read by ascending antidiagonals: A(n,k) = k*binomial((k+1)*n, n)/((k + 1)*n - 1), with k > 0.
+  mov $5,$4
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $7,$5
+  bin $7,2
+  sub $4,$7
+  mov $6,$5
+  sub $6,$4
+  mov $9,$6
+  add $9,1
+  mov $8,$4
+  mul $8,$9
+  sub $8,1
+  add $8,$6
+  bin $8,$6
+  add $4,1
+  mul $4,$8
+  div $4,$9
   add $1,$4
   add $2,1
 lpe

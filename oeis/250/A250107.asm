@@ -1,13 +1,51 @@
 ; A250107: Column 3 of triangle in A250104 (or A124323).
 ; Submitted by nenym
 ; 1,0,10,20,140,616,3444,19440,117975,753500,5068492,35764092,264044235,2034636800,16327586760,136180742640,1178372198220,10561041814380,97889061389210,937053052507880,9252175434771885,94115781485796488,985250825472122200
-; Formula: a(n) = A000296(n-3)*binomial(n,n-3)
 
 #offset 3
 
 sub $0,3
 mov $1,$0
+mov $8,0
+mov $9,0
+mov $12,0
+mov $14,0
 add $0,3
 bin $0,$1
-seq $1,296 ; Set partitions without singletons: number of partitions of an n-set into blocks of size > 1. Also number of cyclically spaced (or feasible) partitions.
-mul $0,$1
+mov $4,0
+mov $7,1
+fac $7,$1
+mov $11,1
+mov $2,$1
+add $2,1
+lpb $2
+  sub $2,1
+  mov $5,$4
+  sub $5,1
+  pow $5,$1
+  mov $6,$1
+  bin $6,$4
+  mul $9,$4
+  add $9,$5
+  mov $13,$9
+  div $13,$7
+  mul $14,$4
+  add $14,$13
+  add $4,1
+  mod $9,$7
+  mul $11,-1
+  mov $3,$6
+  mul $3,$9
+  mul $3,$11
+  mov $10,$6
+  mul $10,$14
+  mul $10,$11
+  add $8,$10
+  add $12,$3
+lpe
+mul $8,$11
+mul $12,$11
+div $12,$7
+add $12,$8
+mul $0,$12
+mov $1,$12

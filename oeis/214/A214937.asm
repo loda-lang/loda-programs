@@ -5,5 +5,5 @@
 
 #offset 1
 
-seq $0,215069 ; Natural numbers that when squared can be expressed as sums of a positive square number and a positive triangular number
+seq $0,215069 ; Natural numbers that when squared can be expressed as sums of a positive square number and a positive triangular number.
 pow $0,2

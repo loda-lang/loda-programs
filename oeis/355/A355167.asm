@@ -22,10 +22,15 @@ lpb $2
   bin $6,2
   mov $5,$0
   sub $5,$6
-  seq $5,47053 ; a(n) = 4^n * n!.
+  mov $8,4
+  pow $8,$5
+  mov $7,1
+  fac $7,$5
+  mul $7,$8
   mov $4,$0
   seq $4,225473 ; Triangle read by rows, k!*S_4(n, k) where S_m(n, k) are the Stirling-Frobenius subset numbers of order m; n >= 0, k >= 0.
-  div $4,$5
+  div $4,$7
+  mov $5,$7
   add $1,$4
 lpe
 mov $0,$1

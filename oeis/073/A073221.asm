@@ -1,7 +1,7 @@
 ; A073221: The terms of A073213 (sums of two powers of 17) divided by 2.
 ; Submitted by loader3229
 ; 1,9,17,145,153,289,2457,2465,2601,4913,41761,41769,41905,44217,83521,709929,709937,710073,712385,751689,1419857,12068785,12068793,12068929,12071241,12110545,12778713,24137569,205169337,205169345,205169481,205171793,205211097,205879265,217238121,410338673
-; Formula: a(n) = floor((truncate(17^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))+truncate(17^truncate((sqrtint(8*n+8)-1)/2)))/2)
+; Formula: a(n) = floor((if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,17^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))+17^floor((sqrtint(8*n+8)-1)/2))/2)
 
 add $0,1
 mov $1,$0

@@ -10,7 +10,7 @@ lpb $3
   add $0,$3
   mul $0,10
   trn $0,1
-  seq $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+  nrt $0,3
   add $0,1
   mov $2,$3
   mul $2,$0

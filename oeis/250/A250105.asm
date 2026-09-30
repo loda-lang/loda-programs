@@ -1,13 +1,51 @@
 ; A250105: Column 1 of triangle in A250104 (or A124323).
 ; Submitted by Gunnar Hjern
 ; 0,0,3,4,20,66,287,1296,6435,34250,194942,1179036,7544121,50865920,360167355,2670210640,20673196460,166753291806,1398415162703,12169520162440,109709590135635,1022997624845614,9852508254721222,97880299543896216,1001841501018883425
-; Formula: a(n) = n*A000296(max(n-1,1))
 
 #offset 1
 
 sub $0,1
 mov $1,$0
 max $1,1
-seq $1,296 ; Set partitions without singletons: number of partitions of an n-set into blocks of size > 1. Also number of cyclically spaced (or feasible) partitions.
+mov $8,0
+mov $9,0
+mov $12,0
+mov $14,0
+mov $4,0
+mov $7,1
+fac $7,$1
+mov $11,1
+mov $2,$1
+add $2,1
+lpb $2
+  sub $2,1
+  mov $5,$4
+  sub $5,1
+  pow $5,$1
+  mov $6,$1
+  bin $6,$4
+  mul $9,$4
+  add $9,$5
+  mov $13,$9
+  div $13,$7
+  mul $14,$4
+  add $14,$13
+  add $4,1
+  mod $9,$7
+  mul $11,-1
+  mov $3,$6
+  mul $3,$9
+  mul $3,$11
+  mov $10,$6
+  mul $10,$14
+  mul $10,$11
+  add $8,$10
+  add $12,$3
+lpe
+mul $8,$11
+mul $12,$11
+div $12,$7
+add $12,$8
 add $0,1
-mul $0,$1
+mul $0,$12
+mov $1,$12

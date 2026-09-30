@@ -8,7 +8,6 @@
 seq $0,13919 ; Numbers n such that sum of first n composites is composite.
 add $0,2
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
+seq $0,101203 ; a(n) = sum of nonprimes <= n.
 mov $1,$0
-seq $1,101203 ; a(n) = sum of nonprimes <= n.
-mov $0,$1
 sub $0,1

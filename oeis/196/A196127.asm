@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  seq $3,52126 ; a(1) = 1; for n>1, a(n)=n/(greatest prime dividing n).
   div $3,4
   min $3,1
   sub $0,1

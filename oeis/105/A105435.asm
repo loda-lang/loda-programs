@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,166733 ; Numbers n with the property that the concatenation of the trivial divisors of n (i.e., 1 and n) is a prime.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

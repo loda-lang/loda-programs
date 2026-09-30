@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,66260 ; In the prime factorization of n replace the k-th prime with the k-th composite number, k > 0.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

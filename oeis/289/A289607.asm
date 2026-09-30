@@ -1,10 +1,7 @@
-; A289607: Related to number of mesh patterns of length 2 that avoid the pattern 321.
+; A289607: a(n) is the number of permutations of length n that avoid the pattern 321 and the mesh pattern (12, 279) or the same sequence for the mesh patterns (12, 309), (12, 345), (12, 465).
 ; Submitted by respawner
-; 1,1,1,2,7,28,106,382,1345,4706,16504
+; 1,1,1,2,7,28,106,382,1345,4706,16504,58229,206933,740786,2670266,9686562,35341181,129611902,477573028,1767131965,6563858105,24465742542,91481514854,343057516267,1289899952767,4861938012568,18367336294636,69533517361247,263747884641145
 
-#offset 1
-
-sub $0,1
 mov $6,1
 mov $5,$0
 lpb $5

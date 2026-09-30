@@ -8,8 +8,11 @@ mov $2,$0
 sub $0,1
 pow $2,2
 lpb $2
+  mov $5,5
+  pow $5,$1
+  dgs $5,10
   mov $3,$1
-  seq $3,66001 ; Sum of digits of 5^n.
+  mov $3,$5
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

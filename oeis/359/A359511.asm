@@ -12,13 +12,13 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
+    trn $7,2
     seq $7,10056 ; Characteristic function of Fibonacci numbers: a(n) = 1 if n is a Fibonacci number, otherwise 0.
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     max $4,$5
     mul $7,$$9
     gcd $4,$10

@@ -14,9 +14,8 @@ lpb $0
   mul $2,2
   seq $2,52653 ; E.g.f. (1-2x^2)/(1-x-2x^2).
   mul $2,3
+  div $2,$3
   mov $4,$2
-  div $4,$3
-  mov $2,$4
   nrt $2,4
   mov $0,0
   mov $1,$2

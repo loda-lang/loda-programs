@@ -1,7 +1,7 @@
 ; A204435: Symmetric matrix: f(i,j)=((i+j)^2 mod 3), read by (constant) antidiagonals.
 ; Submitted by loader3229
 ; 1,0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = sign(truncate((sqrtint(8*n)+1)/2))*((abs(truncate((sqrtint(8*n)+1)/2))-1)%3+1)-2*truncate((sign(truncate((sqrtint(8*n)+1)/2))*((abs(truncate((sqrtint(8*n)+1)/2))-1)%3+1))/2)
+; Formula: a(n) = (sign(floor((sqrtint(8*n)+1)/2))*((floor((sqrtint(8*n)+1)/2)-1)%3+1))%2
 
 #offset 1
 

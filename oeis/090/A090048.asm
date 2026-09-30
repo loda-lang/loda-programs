@@ -22,7 +22,7 @@ lpb $1
     gcd $4,$5
   lpe
   mov $2,$6
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$2
 sub $0,1

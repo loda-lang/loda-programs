@@ -11,8 +11,7 @@ lpb $2
   mov $7,$1
   add $7,1
   seq $7,51903 ; Maximum exponent in the prime factorization of n.
-  trn $3,2
-  add $3,2
+  max $3,2
   pow $3,$7
   mov $5,$3
   gcd $5,$6

@@ -1,6 +1,7 @@
 ; A319658: a(n) is the minimal number of successive ON cells that appears in n-th generation of rule-30 1D cellular automaton started from a single ON cell.
 ; Submitted by Science United
 ; 1,3,1,2,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = if((sumdigits(binomial(2*n-2,2)+1,3)^2)<=1,0,valuation(4,sumdigits(binomial(2*n-2,2)+1,3)))+1
 
 #offset 1
 

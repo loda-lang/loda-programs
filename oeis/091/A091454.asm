@@ -5,18 +5,15 @@
 #offset 1
 
 mov $1,$0
-sub $1,1
-mov $6,$1
-add $1,1
-add $6,3
+mov $6,$0
+add $6,2
 pow $6,4
 lpb $6
   add $4,1
   mov $7,$5
   mul $7,743008370688
+  gcd $7,$4
   mov $3,$7
-  gcd $3,$4
-  mov $7,$3
   sub $7,$5
   max $7,0
   equ $7,0

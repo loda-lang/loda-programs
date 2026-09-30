@@ -9,11 +9,10 @@ lpb $3
   sub $0,$3
   min $3,114
 lpe
-sub $0,1
 mov $1,$0
-add $0,3
+add $0,2
 seq $0,40 ; The prime numbers.
-add $1,2
+add $1,1
 seq $1,40 ; The prime numbers.
 mov $2,$1
 add $2,1

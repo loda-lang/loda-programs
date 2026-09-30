@@ -13,9 +13,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,73803 ; Numbers k such that the number of divisors of k is smaller than that of sigma(k).
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   gcd $3,2

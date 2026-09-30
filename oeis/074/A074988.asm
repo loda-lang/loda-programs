@@ -12,9 +12,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  add $0,1
   mov $4,$0
-  add $0,2
+  add $4,1
+  add $0,3
   sub $0,$4
   seq $4,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   equ $4,0

@@ -1,7 +1,7 @@
 ; A073222: A073214/2.
 ; Submitted by loader3229
 ; 1,10,19,181,190,361,3430,3439,3610,6859,65161,65170,65341,68590,130321,1238050,1238059,1238230,1241479,1303210,2476099,23522941,23522950,23523121,23526370,23588101,24760990,47045881,446935870
-; Formula: a(n) = floor((truncate(19^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+truncate(19^truncate((sqrtint(8*n)-1)/2)))/2)
+; Formula: a(n) = floor((if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,19^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))+19^floor((sqrtint(8*n)-1)/2))/2)
 
 #offset 1
 

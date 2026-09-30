@@ -8,14 +8,13 @@ sub $0,1
 mov $1,$0
 mov $2,$0
 lpb $2
-  pow $2,0
+  mov $2,1
   mov $3,$1
   add $3,1
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $0,$1
   sub $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
   mov $1,0
 lpe

@@ -6,9 +6,18 @@
 
 mov $1,9
 lpb $0
+  mov $5,$0
+  dif $5,$0
+  add $5,1
+  mov $4,$0
+  max $4,1
+  seq $4,40 ; The prime numbers.
+  mul $5,$4
+  mov $3,1
+  add $3,$5
   mov $1,$0
-  add $1,1
-  seq $1,1747 ; 2 together with primes multiplied by 2.
+  mov $1,$3
+  sub $1,1
   mov $2,$1
   mul $2,2
   mul $2,$1

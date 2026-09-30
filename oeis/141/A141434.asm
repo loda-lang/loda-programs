@@ -1,7 +1,7 @@
 ; A141434: Triangle T(n, k) = (k-1)*(3*n-k-1), read by rows.
 ; Submitted by loader3229
 ; 0,0,3,0,6,10,0,9,16,21,0,12,22,30,36,0,15,28,39,48,55,0,18,34,48,60,70,78,0,21,40,57,72,85,96,105,0,24,46,66,84,100,114,126,136,0,27,52,75,96,115,132,147,160,171,0,30,58,84,108,130,150,168,184,198,210,0,33,64,93,120,145,168,189,208,225,240,253,0,36
-; Formula: a(n) = (-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*(3*truncate((sqrtint(8*n)-1)/2)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2)
+; Formula: a(n) = (-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*(3*floor((sqrtint(8*n)-1)/2)-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2)
 
 #offset 1
 

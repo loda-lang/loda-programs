@@ -5,6 +5,5 @@
 
 mul $0,3
 add $0,1
+seq $0,87221 ; Number of compositions (ordered partitions) of n into powers of 4.
 mov $1,$0
-seq $1,87221 ; Number of compositions (ordered partitions) of n into powers of 4.
-mov $0,$1

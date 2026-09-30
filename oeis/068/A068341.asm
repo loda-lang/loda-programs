@@ -16,8 +16,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
-    add $7,1
+    max $7,1
     seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
     mov $9,10
     add $9,$5

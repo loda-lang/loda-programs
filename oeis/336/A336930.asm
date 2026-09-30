@@ -9,7 +9,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  add $3,1
+  mov $5,$3
+  seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  mul $5,8
+  mov $3,$5
+  sub $3,4
+  div $3,8
   add $3,1
   seq $3,99378 ; Denominators of the harmonic means of the divisors of the positive integers.
   add $3,$4

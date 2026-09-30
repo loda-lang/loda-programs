@@ -1,7 +1,7 @@
 ; A221876: T(n,k) is the number of order-preserving full contraction mappings (of an n-chain) with exactly k fixed points.
 ; Submitted by Science United
 ; 1,2,1,5,2,1,12,5,2,1,28,12,5,2,1,64,28,12,5,2,1,144,64,28,12,5,2,1,320,144,64,28,12,5,2,1,704,320,144,64,28,12,5,2,1,1536,704,320,144,64,28,12,5,2,1,3328,1536,704,320,144,64,28,12,5,2,1
-; Formula: a(n) = truncate((truncate(2^(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)))*(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+3)+1)/4)
+; Formula: a(n) = truncate(((-n+binomial(floor((sqrtint(8*n)+3)/2),2)+3)*if((-n+binomial(floor((sqrtint(8*n)+3)/2),2))<=(-1),0,2^(-n+binomial(floor((sqrtint(8*n)+3)/2),2)))+1)/4)
 
 #offset 1
 

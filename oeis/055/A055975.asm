@@ -1,6 +1,7 @@
 ; A055975: First differences of A003188 (decimal equivalent of the Gray Code).
 ; Submitted by Science United
 ; 1,2,-1,4,1,-2,-1,8,1,2,-1,-4,1,-2,-1,16,1,2,-1,4,1,-2,-1,-8,1,2,-1,-4,1,-2,-1,32,1,2,-1,4,1,-2,-1,8,1,2,-1,-4,1,-2,-1,-16,1,2,-1,4,1,-2,-1,-8,1,2,-1,-4,1,-2,-1,64,1,2,-1,4,1,-2,-1,8,1,2,-1,-4,1,-2,-1,16
+; Formula: a(n) = floor(n/(n/(2^valuation(n,2))))*(-1)^floor((n/(2^valuation(n,2)))/2)
 
 #offset 1
 

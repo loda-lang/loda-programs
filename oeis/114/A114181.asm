@@ -1,7 +1,7 @@
 ; A114181: Floor of log base 10 of sequence A029722.
 ; Submitted by BrandyNOW
 ; 3,9,27,2,0,0,0,0,0
-; Formula: a(n) = truncate((3^n)/(truncate((truncate(truncate(binomial(2*n-2,n-1)/n)/4)*3^n)/3)+1))
+; Formula: a(n) = floor((3^n)/(floor((floor(floor(binomial(2*n-2,n-1)/n)/4)*3^n)/3)+1))
 
 #offset 1
 

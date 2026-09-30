@@ -11,6 +11,5 @@ seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n,
 mul $0,$3
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

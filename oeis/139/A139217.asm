@@ -1,6 +1,7 @@
 ; A139217: Smallest positive integer of the form 3k+1 such that all subsets of {a(1),...,a(n)} have a different sum.
 ; Submitted by loader3229
 ; 1,4,7,13,22,49,97,190,385,769,1534,3073,6145,12286
+; Formula: a(n) = 3*if((n-2)<=(-1),0,2^(n-2))+3*0^if((n-2)==0,0,valuation(n-2,3))-2
 
 #offset 1
 

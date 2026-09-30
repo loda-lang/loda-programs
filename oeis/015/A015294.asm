@@ -6,14 +6,13 @@
 
 add $0,2
 lpb $0
-  sub $0,5
   mov $2,$0
-  equ $2,1
+  equ $2,6
   mul $1,-8
   sub $1,112
   add $3,$2
   mul $3,$1
-  add $0,4
+  sub $0,1
   max $0,2
 lpe
 mov $0,$3

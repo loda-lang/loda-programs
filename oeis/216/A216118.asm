@@ -1,13 +1,61 @@
 ; A216118: Triangle read by rows: T(n,k) is the number of stretching pairs in all permutations in S_{n,k} (=set of permutations in S_n with k cycles) (n >= 3; 1 <= k <= n-2).
 ; Submitted by Ralfy
 ; 0,1,1,10,15,5,90,165,90,15,840,1750,1225,350,35,8400,19180,15750,5950,1050,70,90720,222264,204624,92610,22050,2646,126,1058400,2744280,2757720,1421490,411600,67620,5880,210,13305600,36162720,38980920,22203720,7408170,1496880,180180,11880,330,179625600,508155120,580486500,358221600,133315875,31320135,4677750,430650,22275,495,2594592000,7599477600,9118806840,6012792500,2443104950,644969325,112807695,12977250,943800,39325,715,39956716800,120664383840,151068893976,105363334076,46041725730
-; Formula: a(n) = A130534(n-3)*binomial(truncate((sqrtint(8*n-23)+1)/2)+2,4)
 
 #offset 3
 
-sub $0,3
 mov $1,$0
-seq $1,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+sub $1,2
+mov $5,$1
+mul $5,8
+nrt $5,2
+add $5,1
+div $5,2
+mov $9,0
+sub $0,3
+mov $4,$5
+bin $4,2
+sub $1,$4
+sub $1,1
+mov $6,$1
+sub $5,$1
+lpb $5
+  sub $5,1
+  mov $7,$4
+  add $7,$6
+  mov $10,$7
+  seq $10,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $10,5
+  gcd $10,0
+  div $10,5
+  mov $18,229383
+  add $6,1
+  mov $8,$6
+  bin $8,2
+  add $8,$1
+  add $8,1
+  mov $11,$8
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $12,$8
+  add $12,1
+  bin $12,2
+  sub $11,$12
+  sub $11,1
+  mov $13,1
+  mov $15,1
+  bin $8,$11
+  mov $14,1
+  mov $16,9
+  mov $17,0
+  mov $7,2
+  mov $7,$10
+  mul $7,$8
+  add $9,$7
+lpe
+mov $1,$9
 mov $2,$0
 mul $2,8
 add $2,1
@@ -18,4 +66,4 @@ add $3,$2
 add $3,2
 bin $3,4
 mov $0,$3
-mul $0,$1
+mul $0,$9

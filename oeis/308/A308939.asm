@@ -12,7 +12,10 @@ lpb $0
   seq $4,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
   mov $5,$2
   add $5,$3
-  seq $5,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  seq $5,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
+  mul $5,5
+  gcd $5,0
+  div $5,5
   mul $5,$4
   mul $1,2
   add $1,$5

@@ -14,9 +14,8 @@ lpb $4
   max $0,1
   seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
   seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  add $0,1
   mov $2,$0
-  sub $0,1
+  add $2,1
   mov $3,$0
   bin $3,2
   add $3,$0

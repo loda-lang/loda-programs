@@ -8,8 +8,7 @@ pow $5,4
 lpb $5
   mov $6,$4
   seq $6,316832 ; In A316831, replace 2's and 3's with 0's.
-  sub $6,1
-  equ $6,0
+  equ $6,1
   sub $0,$6
   add $4,1
   sub $5,$0

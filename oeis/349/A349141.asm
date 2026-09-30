@@ -11,9 +11,8 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   mov $4,$0
-  add $0,1
+  sub $4,1
   seq $0,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
   sub $0,1
   sub $0,$4

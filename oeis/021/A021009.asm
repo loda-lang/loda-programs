@@ -21,9 +21,7 @@ mov $4,-1
 pow $4,$0
 mov $0,$2
 mul $0,-1
-pow $2,0
-bin $2,2
-add $2,$3
+mov $2,$3
 fac $2,$0
 mul $1,$2
 mov $0,$1

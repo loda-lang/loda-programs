@@ -1,12 +1,41 @@
 ; A318466: a(n) = 2*n OR A000203(n), where OR is bitwise-or (A003986) and A000203 = sum of divisors.
 ; Submitted by Ralfy
 ; 3,7,6,15,14,12,14,31,31,22,30,28,30,28,30,63,50,39,54,42,42,44,62,60,63,62,62,56,62,124,62,127,114,118,118,91,110,124,126,90,122,116,126,92,94,92,126,124,123,125,110,106,126,124,110,120,114,126,126,248,126,124,126,255,214,148,198,254,234,156,206,211,218,246,254,156,250,188,222,186
-; Formula: a(n) = sign(2*sign(2*n)+2*sign(A000203(n))-1)*bitor(abs(2*n),abs(A000203(n)))
 
 #offset 1
 
 mov $1,$0
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $4,$0
+sub $4,1
+mov $5,0
+mov $3,$0
+dir $3,2
+mov $8,$3
+mov $7,$3
+nrt $7,2
+lpb $7
+  max $7,1
+  mov $9,$3
+  mod $9,$7
+  equ $9,0
+  mov $6,$3
+  div $6,$7
+  add $6,$7
+  mul $6,$9
+  add $5,$6
+  sub $7,1
+lpe
+nrt $3,2
+mov $7,$3
+pow $7,2
+sub $7,$8
+equ $7,0
+mul $3,$7
+sub $5,$3
+mov $2,$0
+bxo $2,$4
+mul $2,$5
 mul $1,2
-bor $1,$0
+bor $1,$2
+mov $0,$2
 mov $0,$1

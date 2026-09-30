@@ -1,7 +1,7 @@
 ; A120027: Triangle, generated from (3^(n-k) * 5^k) table.
 ; Submitted by Cruncher Pete
 ; 1,3,5,9,15,25,27,45,75,125,81,135,225,375,625,243,405,675,1125,1875,3125,729,1215,2025,3375,5625,9375,15625,2187,3645,6075,10125,16875,28125,46875,78125,6561,10935,18225,30375,50625,84375,140625,234375
-; Formula: a(n) = truncate(3^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*truncate(5^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
+; Formula: a(n) = if((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)<=(-1),0,5^(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n))*if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,3^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))
 
 add $0,1
 mov $1,$0

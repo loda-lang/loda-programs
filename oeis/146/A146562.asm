@@ -16,8 +16,7 @@ lpb $2
   seq $3,64353 ; Kolakoski-(1,3) sequence: the alphabet is {1,3}, and a(n) is the length of the n-th run.
   sub $3,$5
   gcd $3,4
-  add $3,1
-  equ $3,5
+  equ $3,4
   add $5,2
   sub $0,$3
   add $1,1

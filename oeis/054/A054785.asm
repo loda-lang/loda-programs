@@ -1,7 +1,6 @@
 ; A054785: a(n) = sigma(2n) - sigma(n), where sigma is the sum of divisors of n, A000203.
 ; Submitted by Science United
 ; 2,4,8,8,12,16,16,16,26,24,24,32,28,32,48,32,36,52,40,48,64,48,48,64,62,56,80,64,60,96,64,64,96,72,96,104,76,80,112,96,84,128,88,96,156,96,96,128,114,124,144,112,108,160,144,128,160,120,120,192,124,128,208,128,168,192,136,144,192,192,144,208,148,152,248,160,192,224,160,192
-; Formula: a(n) = A000203(n/(2^valuation(n,2)))*bitxor(n,n-1)+A000203(n/(2^valuation(n,2)))
 
 #offset 1
 
@@ -9,9 +8,39 @@ mov $2,$0
 sub $2,1
 mov $3,$0
 dir $3,2
-seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $6,$3
+sub $6,1
+mov $7,0
+mov $5,$3
+dir $5,2
+mov $10,$5
+mov $9,$5
+nrt $9,2
+lpb $9
+  max $9,1
+  mov $11,$5
+  mod $11,$9
+  equ $11,0
+  mov $8,$5
+  div $8,$9
+  add $8,$9
+  mul $8,$11
+  add $7,$8
+  sub $9,1
+lpe
+nrt $5,2
+mov $9,$5
+pow $9,2
+sub $9,$10
+equ $9,0
+mul $5,$9
+sub $7,$5
+mov $4,$3
+bxo $4,$6
+mul $4,$7
 mov $1,$0
 bxo $1,$2
-mul $1,$3
+mul $1,$4
+mov $3,$4
 add $3,$1
 mov $0,$3

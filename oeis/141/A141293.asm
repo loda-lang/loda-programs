@@ -9,10 +9,9 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  add $1,1
-  add $3,2
+  add $1,3
+  add $3,4
   seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.

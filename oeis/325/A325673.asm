@@ -16,8 +16,15 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  mov $6,$0
+  pow $6,2
+  mul $6,7
+  nrt $6,2
   add $0,1
-  seq $0,276857 ; First differences of the Beatty sequence A022841 for sqrt(7).
+  pow $0,2
+  mul $0,7
+  nrt $0,2
+  sub $0,$6
   mul $1,$0
   add $1,2
   mul $3,-1

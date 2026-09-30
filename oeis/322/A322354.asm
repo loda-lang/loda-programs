@@ -9,6 +9,5 @@ lpb $0
   seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
   div $0,$2
 lpe
+seq $0,322362 ; a(n) = gcd(n, A166590(n)), where A166590 is completely multiplicative with a(p) = p+2 for prime p.
 mov $1,$0
-seq $1,322362 ; a(n) = gcd(n, A166590(n)), where A166590 is completely multiplicative with a(p) = p+2 for prime p.
-mov $0,$1

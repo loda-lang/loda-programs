@@ -8,8 +8,12 @@ mov $2,$0
 sub $0,1
 pow $2,2
 lpb $2
+  mov $5,$1
+  div $5,2
   mov $3,$1
-  seq $3,136004 ; a(n) = A005811(n) + 4.
+  bxo $3,$5
+  dgs $3,2
+  add $3,4
   mod $3,3
   dif $3,2
   gcd $3,2

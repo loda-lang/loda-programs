@@ -1,10 +1,7 @@
-; A136673: Triangle of coefficients from a polynomial recursion for Galois field GF(2^n) polynomials: p(x,n)=(x+1)*p(x,n-1)-x*p(x,n-2); or f(x,n)=x^n+x+1;.
+; A136673: Triangle T(n,k) read by rows: T(n,k) = [x^k] x^n+x+1, 0 <= k <= max(n, 1).
 ; Submitted by vanos0512
 ; 2,1,1,2,1,1,1,1,1,0,1,1,1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1
 
-#offset 1
-
-sub $0,1
 lpb $0
   sub $0,2
   sub $0,$2

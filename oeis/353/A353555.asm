@@ -1,6 +1,7 @@
 ; A353555: a(n) = 1 if n is an even number with an even number of prime factors (counted with multiplicity), otherwise 0.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+; Formula: a(n) = A252736(max(if(((n-1)%(-2))==0,(n-1)/(-2),n-1),0)+1)%2
 
 #offset 1
 

@@ -14,9 +14,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,347398 ; Expansion of g.f. Sum_{k>=1} k^k * x^(k^k)/(1 - x^(k^k)).
-  sub $3,1
   add $3,$4
-  equ $3,1
+  equ $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

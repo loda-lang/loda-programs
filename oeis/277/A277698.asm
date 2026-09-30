@@ -8,7 +8,7 @@ seq $0,80368 ; a(n) is the least unitary prime divisor of n, or 0 if no such pri
 sub $0,1
 mov $1,$0
 lpb $1
-  mul $1,0
+  mov $1,0
   mov $2,$0
 lpe
 mov $0,$2

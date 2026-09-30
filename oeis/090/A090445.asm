@@ -12,7 +12,8 @@ lpb $0
   sub $0,1
   mov $4,$2
   add $4,$3
-  seq $4,90441 ; Symmetric triangle of certain normalized products of decreasing factorials.
+  add $4,1
+  seq $4,90441 ; Triangle read by rows: T(n, k) = (n!)^k * Product_{j=0..k-1} binomial(n + j, n).
   add $1,$4
   add $2,1
 lpe

@@ -4,14 +4,15 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,358654 ; a(n) = A025480(A353654(n+1) - 1).
+  add $3,1
+  seq $3,353654 ; Numbers whose binary expansion has the same number of trailing 0 bits as other 0 bits.
+  dir $3,2
+  div $3,2
   sub $3,$1
   max $3,0
   min $3,1

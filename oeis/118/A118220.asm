@@ -1,7 +1,7 @@
 ; A118220: Start with 1 and repeatedly reverse the digits and add 72 to get the next term.
 ; Submitted by loader3229
 ; 1,73,109,973,451,226,694,568,937,811,190,163,433,406,676,748,919,991,271,244,514,487,856,730,109,973,451,226,694,568,937,811,190,163,433,406,676,748,919,991,271,244,514,487,856,730,109,973,451,226,694,568
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+72, b(0) = 1
+; Formula: a(n) = (-10*truncate(a(n-1)/10)+a(n-1))*(9*min(truncate(a(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100),1)+1)+(-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100)+72, a(1) = 1
 
 #offset 1
 

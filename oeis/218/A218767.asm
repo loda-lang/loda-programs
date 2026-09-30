@@ -19,8 +19,8 @@ lpe
 mov $1,$6
 sub $1,17
 div $1,4
-add $1,1
 mov $2,$1
-trn $2,3
+trn $2,2
 mov $0,$2
 add $0,1
+add $1,1

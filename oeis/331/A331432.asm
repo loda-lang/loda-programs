@@ -19,8 +19,20 @@ lpb $2
   mov $4,$1
   add $4,$3
   add $4,1
-  seq $4,133728 ; A128174 * A127775.
+  mov $11,$4
+  mul $11,8
+  nrt $11,2
+  add $11,1
+  div $11,2
   add $3,1
+  mov $10,$11
+  bin $10,2
+  sub $4,$10
+  sub $11,$4
+  mod $11,2
+  mul $4,2
+  gcd $4,$11
+  sub $4,1
   mov $5,$3
   bin $5,2
   add $5,$0

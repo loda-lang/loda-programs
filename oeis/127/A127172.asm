@@ -27,7 +27,7 @@ lpb $0
   add $1,1
   mov $2,$1
   add $3,$1
-  mul $0,0
+  mov $0,0
   seq $1,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   mul $1,$2
 lpe

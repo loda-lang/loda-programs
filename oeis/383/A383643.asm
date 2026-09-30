@@ -1,7 +1,7 @@
 ; A383643: Number of n-dimensional additively indecomposable positive definite integral lattices (or quadratic forms).
 ; Submitted by SirSexington
 ; 1,0,0,0,0,1,1,1,2
-; Formula: a(n) = truncate(gcd(floor((5*n)/7)-2,0)/2)
+; Formula: a(n) = floor(gcd(floor((5*n)/7)-2,0)/2)
 
 #offset 1
 

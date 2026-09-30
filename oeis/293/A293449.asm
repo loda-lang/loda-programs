@@ -21,8 +21,7 @@ lpb $0
     mov $5,$4
     add $5,1
     seq $5,122667 ; a(n) = d(n)_d(n) = A122618(d(n)), where d = A000005, and A122618 = "n read in base n".
-    add $5,1
-    equ $5,3
+    equ $5,2
     add $4,1
   lpe
   mul $1,$5

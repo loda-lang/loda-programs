@@ -16,7 +16,7 @@ lpb $2
   seq $6,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
   lex $7,$6
   add $6,$7
-  seq $6,69859 ; (Largest prime factor of n) modulo (smallest prime factor of n).
+  seq $6,69859 ; a(n) = (greatest prime factor of n) modulo (least prime factor of n).
   mov $3,$1
   add $3,1
   seq $3,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.

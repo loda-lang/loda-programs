@@ -1,9 +1,43 @@
 ; A107033: Expansion of f(x, x) * f(x, -x^2) in powers of x where f(,) is a Ramanujan theta function.
 ; Submitted by vanos0512
 ; 1,3,1,-2,2,1,-4,-1,-2,0,2,-4,-1,-2,-2,1,0,2,-2,2,0,-4,1,0,2,2,5,0,-2,0,0,4,-2,0,0,3,4,0,0,2,1,-4,2,-2,0,0,0,2,-2,0,2,3,-2,0,-2,-2,-4,-1,0,0,0,-4,2,0,4,0,-4,-2,0,-2,-1,0,0,-2,-2,2,-6,1,2,0
-; Formula: a(n) = A115110(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,115110 ; Expansion of q^(-1/24) * eta(q)^3 / eta(q^2) in powers of q.
+mov $2,0
+mov $5,0
+add $0,1
+lpb $0
+  trn $0,1
+  mov $3,$0
+  nrt $3,2
+  pow $3,2
+  equ $3,$0
+  mul $3,-1
+  pow $3,$0
+  mul $3,2
+  mov $6,$0
+  equ $6,0
+  mov $4,$2
+  mul $4,24
+  add $4,1
+  mov $9,$4
+  add $2,1
+  nrt $4,2
+  mov $7,$4
+  add $7,1
+  mod $7,4
+  sub $7,1
+  mov $8,$4
+  pow $4,2
+  equ $4,$9
+  mul $4,$8
+  mul $4,$7
+  mod $4,3
+  dif $4,-2
+  sub $3,$6
+  mul $3,$4
+  add $5,$3
+lpe
+mov $0,$5
 mul $0,$1

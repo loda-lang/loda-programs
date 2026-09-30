@@ -14,10 +14,9 @@ seq $1,40 ; The prime numbers.
 seq $1,13632 ; Difference between n and the next prime greater than n.
 add $2,2
 seq $2,40 ; The prime numbers.
+sub $2,3
 add $2,$1
 mov $1,$2
-sub $1,3
-mov $2,$1
 mul $2,21
 mov $1,$2
 sub $1,21

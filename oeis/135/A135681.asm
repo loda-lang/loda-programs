@@ -1,4 +1,4 @@
-; A135681: a(n)=n if n=1 or if n=prime. Otherwise, n=4 if n is even and n=1 if n is odd.
+; A135681: a(n)=n if n=prime. Otherwise, a(n)=4 if n is even and a(n)=1 if n is odd.
 ; Submitted by shiva
 ; 1,2,3,4,5,4,7,4,1,4,11,4,13,4,1,4,17,4,19,4,1,4,23,4,1,4,1,4,29,4,31,4,1,4,1,4,37,4,1,4,41,4,43,4,1,4,47,4,1,4,1,4,53,4,1,4,1,4,59,4,61,4,1,4,1,4,67,4,1,4,71,4,73,4,1,4,1,4,79,4
 

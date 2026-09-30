@@ -15,16 +15,31 @@ lpb $3
   mov $0,$4
   sub $0,$3
   mov $5,$0
-  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mul $5,8
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $6,$5
+  bin $5,2
+  mov $7,$0
+  sub $7,$5
+  mov $9,$6
+  div $9,$7
+  mov $8,$6
+  mod $8,$7
+  equ $8,0
+  seq $9,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $9,$8
   mov $1,$0
   mul $1,8
   nrt $1,2
   add $1,1
   div $1,2
   bin $1,2
+  mov $5,$9
   sub $0,$1
   seq $0,385136 ; The sum of divisors d of n such that n/d is a cubefull number (A036966).
-  mul $0,$5
+  mul $0,$9
   add $2,$0
 lpe
 mov $0,$2

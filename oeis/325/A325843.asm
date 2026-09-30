@@ -16,7 +16,11 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,22849 ; Integer nearest nx, where x = sqrt(6).
+  pow $0,2
+  mul $0,24
+  nrt $0,2
+  add $0,1
+  div $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

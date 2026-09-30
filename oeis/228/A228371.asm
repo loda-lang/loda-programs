@@ -1,6 +1,7 @@
 ; A228371: First differences of A228370. Also A001511 and A006519 interleaved.
 ; Submitted by loader3229
 ; 1,1,2,2,1,1,3,4,1,1,2,2,1,1,4,8,1,1,2,2,1,1,3,4,1,1,2,2,1,1,5,16,1,1,2,2,1,1,3,4,1,1,2,2,1,1,4,8,1,1,2,2,1,1,3,4,1,1,2,2,1,1,6,32,1,1,2,2,1,1,3,4,1,1,2,2,1,1,4,8
+; Formula: a(n) = floor(floor(n/(n/(2^valuation(n,2))))/2)+valuation(n+1,2)
 
 #offset 1
 

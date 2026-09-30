@@ -1,7 +1,7 @@
 ; A254270: Decimal expansion of atomic unit of magnetic dipole moment in J T^-1.
 ; Submitted by loader3229
 ; 1,8,5,4,8,0,2,0,1
-; Formula: a(n) = -10*truncate((truncate(((2^(n+22)+1)*(16*n+binomial(n+22,4)+362))/8)-1)/10)+truncate(((2^(n+22)+1)*(16*n+binomial(n+22,4)+362))/8)-1
+; Formula: a(n) = (floor(((2^(n+22)+1)*(16*n+binomial(n+22,4)+362))/8)-1)%10
 
 #offset -22
 

@@ -6,6 +6,7 @@ mov $1,$0
 add $0,1
 mov $5,$0
 lpb $0
+  trn $0,6
   equ $2,1
   sub $2,$5
   sub $4,1
@@ -13,8 +14,6 @@ lpb $0
   bin $3,$1
   mul $3,$2
   gcd $3,0
-  sub $0,4
-  trn $0,2
   add $1,1
   div $3,$1
   mov $5,$0

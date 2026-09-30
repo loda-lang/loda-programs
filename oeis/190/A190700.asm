@@ -14,9 +14,8 @@ lpb $2
   mov $3,$1
   pow $3,2
   mul $3,3
+  nrt $3,2
   mov $5,$3
-  nrt $5,2
-  mov $3,$5
   gcd $3,4
   equ $3,2
   sub $0,$3

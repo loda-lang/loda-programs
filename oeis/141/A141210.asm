@@ -4,7 +4,7 @@
 ; Formula: a(n) = A141155(n)*A000041(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)
 
 mov $1,$0
-seq $1,141155 ; Triangle read by rows, A140207 * A000012.
+seq $1,141155 ; Triangle read by rows: T(n,k) = Sum_{i=k..n} A000041(i).
 mov $2,$0
 mul $2,8
 add $2,1

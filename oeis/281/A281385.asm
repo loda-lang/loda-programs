@@ -1,7 +1,7 @@
 ; A281385: Triangular array T(n, k) = n^2 + n*k - k^2.
 ; Submitted by loader3229
 ; 0,1,1,4,5,4,9,11,11,9,16,19,20,19,16,25,29,31,31,29,25,36,41,44,45,44,41,36,49,55,59,61,61,59,55,49,64,71,76,79,80,79,76,71,64,81,89,95,99,101,101,99,95,89,81,100,109,116,121,124,125,124,121,116,109,100,121,131,139,145,149,151,151,149,145,139,131,121,144,155
-; Formula: a(n) = truncate((sqrtint(8*n+8)-1)/2)^2+(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = floor((sqrtint(8*n+8)-1)/2)^2+(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)*(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $1,$0

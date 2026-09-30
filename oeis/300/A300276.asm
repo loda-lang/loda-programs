@@ -15,10 +15,31 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mul $1,8
+  nrt $1,2
+  add $1,1
+  div $1,2
+  mov $5,$1
+  bin $1,2
+  mov $6,$0
+  sub $6,$1
+  mov $8,$5
+  div $8,$6
+  mov $7,$5
+  mod $7,$6
+  equ $7,0
+  seq $8,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $8,$7
+  mov $9,$0
+  mul $9,8
+  nrt $9,2
+  add $9,1
+  div $9,2
+  bin $9,2
+  sub $0,$9
   seq $0,26007 ; Expansion of Product_{m>=1} (1 + q^m)^m; number of partitions of n into distinct parts, where n different parts of size n are available.
-  mul $0,$1
+  mul $0,$8
+  mov $1,$8
   add $3,$0
 lpe
 mov $0,$3

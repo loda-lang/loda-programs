@@ -8,11 +8,10 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
+  max $0,1
   mov $5,$0
   seq $5,6330 ; Number of corners, or planar partitions of n with only one row and one column.
-  seq $0,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+  seq $0,712 ; a(n) = number of partitions of n into parts of 2 kinds.
   sub $0,$5
   mov $4,$3
   mul $4,$0

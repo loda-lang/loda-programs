@@ -1,7 +1,7 @@
 ; A064727: Number of pairs x,y such that 0 < x <= y < n and x+y = n and x*y = k*n for some k.
 ; Submitted by MechWarrior
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,2,0,1,0,1,0,0,0,1,2,0,1,1,0,0,0,2,0,0,0,3,0,0,0,1,0,0,0,1,1,0,0,2,3,2,0,1,0,1,0,1,0,0,0,1,0,0,1,4,0,0,0,1,0,0,0,3,0,0,2,1,0,0,0,2
-; Formula: a(n) = truncate((truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)/2)
+; Formula: a(n) = floor((floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)/2)
 
 #offset 1
 

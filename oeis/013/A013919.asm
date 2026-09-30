@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,141468 ; Zero together with the nonprime numbers A018252.
+  seq $3,101203 ; a(n) = sum of nonprimes <= n.
   mov $5,$3
-  seq $5,101203 ; a(n) = sum of nonprimes <= n.
-  mov $3,$5
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   neq $3,1

@@ -1,7 +1,7 @@
 ; A122059: Number of different polygonal knots with n straight line segments.
 ; Submitted by loader3229
 ; 1,0,0,1,1,2,3,0,4
-; Formula: a(n) = -truncate((n-2)/(sqrtint(2*n-5)+1))*(sqrtint(2*n-5)+1)+n-2
+; Formula: a(n) = (n-2)%(sqrtint(2*n-5)+1)
 
 #offset 3
 

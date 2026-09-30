@@ -1,7 +1,7 @@
 ; A079633: a(n) = floor(n/floor(n^(1/3))) - floor(n^(2/3)).
 ; Submitted by loader3229
 ; 0,1,1,2,3,3,4,0,0,1,1,1,1,2,1,2,2,3,2,3,3,4,3,4,4,5,0,0,0,1,1,0,1,1,1,2,1,1,2,2,2,2,2,2,3,3,2,3,3,3,4,4,3,4,4,4,5,5,4,5,5,5,6,0,0,0,0,1,1,1,0,1,1,1,1,2,1,1,1,2
-; Formula: a(n) = -sqrtnint(n^2,3)+truncate(n/sqrtnint(n,3))
+; Formula: a(n) = -sqrtnint(n^2,3)+floor(n/sqrtnint(n,3))
 
 #offset 1
 

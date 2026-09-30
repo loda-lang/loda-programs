@@ -1,7 +1,7 @@
 ; A120438: Average of twin-prime pairs modulo 10 (least absolute residue).
 ; Submitted by rajab
 ; 4,-4,2,-2,0,2,0,2,2,-2,-2,0,0,2,-2,-2,0,0,2,2,-2,0,2,2,2,0,0,-2,2,0,0,2,-2,-2,2,0,2,0,2,2,2,0,-2,0,2,0,-2,2,2,-2,-2,0,-2,-2,2,-2,2,-2,2,0,-2,-2,2,-2,2,0,2,-2,-2,0,0,2,0,2,-2,-2,2,0,0,2
-; Formula: a(n) = 2*((floor(A001359(n)/2)+3)%5)-4
+; Formula: a(n) = 2*truncate(A001359(n)/2)-10*truncate((truncate(A001359(n)/2)+3)/5)+2
 
 #offset 1
 

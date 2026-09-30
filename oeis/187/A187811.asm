@@ -12,8 +12,18 @@ lpb $2
   sub $2,1
   add $1,1
   mov $3,$1
-  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
-  mul $3,4
+  dir $3,2
+  mov $6,$3
+  seq $6,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  mov $7,$3
+  sub $7,1
+  mov $8,$7
+  div $8,$6
+  add $7,$8
+  add $7,2
+  gcd $3,$7
+  mov $5,$3
+  mul $3,8
   seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   add $3,13
   div $3,8

@@ -1,7 +1,7 @@
 ; A322586: a(n) = 1 if n is a highly composite number (A002182), 0 otherwise.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate(A061799(A000005(n))/n)
+; Formula: a(n) = floor(A061799(A000005(n))/n)
 
 #offset 1
 

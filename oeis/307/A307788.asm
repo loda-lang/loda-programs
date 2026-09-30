@@ -9,8 +9,7 @@ mov $2,$4
 add $2,1
 lpb $2
   sub $2,1
-  trn $0,2
-  add $0,2
+  max $0,2
   mov $1,$4
   sub $1,$2
   mov $3,$1

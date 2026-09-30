@@ -17,7 +17,6 @@ lpb $0
   sub $3,1
   add $3,$1
   add $3,$1
-  sub $0,1
-  trn $0,1
+  trn $0,2
 lpe
 mov $0,$3

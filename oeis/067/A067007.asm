@@ -1,6 +1,7 @@
 ; A067007: a(n) = googolplex (mod n).
 ; Submitted by loader3229
 ; 0,0,1,0,0,4,4,0,1,0,1,4,3,4,10,0,1,10,9,0,4,12,13,16,0,16,10,4,24,10,5,0,1,18,25,28,10,28,16,0,1,4,24,12,10,36,9,16,4,0,1,16,46,10,45,32,28,24,48,40,47,36,46,0,55,34,10,52,13,60,45,64,1,10,25,28,67,16,52,0
+; Formula: a(n) = (10^(((A007732(if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5))))-10)^100)%A007732(if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5)))))*if((floor(n/if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5))))^2)==1,floor(n/if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5))))^A000010(if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5)))),if(A000010(if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5))))<=(-1),0,floor(n/if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5))))^A000010(if((n/(2^valuation(n,2)))==0,0,(n/(2^valuation(n,2)))/(5^valuation(n/(2^valuation(n,2)),5)))))))%n
 
 #offset 1
 

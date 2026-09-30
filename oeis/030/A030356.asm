@@ -13,8 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,30353 ; Write 2n-1 in base 3 and juxtapose.
-  add $3,3
-  equ $3,5
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

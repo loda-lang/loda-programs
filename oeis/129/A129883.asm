@@ -1,6 +1,7 @@
 ; A129883: Sequence i_{h_n} arising in enumeration of arrays of directed blocks (see Quaintance reference for precise definition), where i_n = A129876, h_n = A129874.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,0,2,2,10,6,34,88
+; Formula: a(n) = 2*d(n-1), b(n) = if((b(n-2)%2)==0,b(n-2)/2,b(n-2))+b(n-1)*(truncate((-A360496(truncate((8*n+10)/7))+sqrtint(5*A360496(truncate((8*n+10)/7))^2))/2)+1), b(3) = 6, b(2) = 5, b(1) = 2, b(0) = 1, c(n) = if((b(n-1)%2)==0,b(n-1)/2,b(n-1)), c(3) = 5, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = c(n-1), d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 1
 
 #offset 1
 

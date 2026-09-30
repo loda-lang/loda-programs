@@ -1,6 +1,6 @@
 ; A053164: 4th root of largest 4th power dividing n.
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2
-; Formula: a(n) = truncate(max(0,truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)/A019554(max(0,truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)+1))+1
+; Formula: a(n) = floor(max(0,floor((sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)/A019554(max(0,floor((sqrtint(4*(floor(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)-1)+1))+1
 
 #offset 1
 

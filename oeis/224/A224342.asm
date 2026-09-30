@@ -1,6 +1,7 @@
 ; A224342: Apparently solves the identity: find sequence B that represents the numbers of ordered compositions of n using the terms of A, and vice versa.
 ; Submitted by WTBroughton
 ; 1,2,3,6,10,18,32,57,101,179,318,564,1002,1778,3157,5604,9949,17661,31352,55657
+; Formula: a(n) = e(n+1), b(n) = floor(d(n-3)/4), b(6) = 2, b(5) = 1, b(4) = 0, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = b(n-1)+d(n-1)+1, c(6) = 31, c(5) = 17, c(4) = 9, c(3) = 5, c(2) = 2, c(1) = 1, c(0) = 0, d(n) = b(n-2)+b(n-4)+d(n-1)+d(n-2)+d(n-4)+4, d(6) = 53, d(5) = 29, d(4) = 16, d(3) = 8, d(2) = 4, d(1) = 1, d(0) = 0, e(n) = c(n-2)+1, e(6) = 10, e(5) = 6, e(4) = 3, e(3) = 2, e(2) = 1, e(1) = 1, e(0) = 0
 
 #offset 1
 

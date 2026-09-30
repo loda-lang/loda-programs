@@ -1,7 +1,7 @@
 ; A380740: Number of smallest fully n-forested graphs.
 ; Submitted by Science United
 ; 1,1,1,1,2,2,7,13,25,17
-; Formula: a(n) = min(truncate(2^(-truncate(sqrtint(8*n-8)/2)+n-3)),4)*binomial(truncate(sqrtint(8*n-8)/2),-truncate(sqrtint(8*n-8)/2)+n-3)+1
+; Formula: a(n) = min(if((-floor(sqrtint(8*n-8)/2)+n-3)<=(-1),0,2^(-floor(sqrtint(8*n-8)/2)+n-3)),4)*binomial(floor(sqrtint(8*n-8)/2),-floor(sqrtint(8*n-8)/2)+n-3)+1
 
 #offset 1
 

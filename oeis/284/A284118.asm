@@ -9,6 +9,5 @@ lpb $0
   seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
   div $0,$2
 lpe
+seq $0,178637 ; a(n) = sum of divisors d of n such that d is not equal to p^k where p = prime, k >=1.
 mov $1,$0
-seq $1,178637 ; a(n) = sum of divisors d of n such that d is not equal to p^k where p = prime, k >=1.
-mov $0,$1

@@ -1,6 +1,7 @@
 ; A092934: a(n) = floor((product of next n even numbers) / (product of first n odd numbers)).
 ; Submitted by KetamiNO [YouTube]
 ; 2,8,64,768,12202,240546,5652480,154090259,4777917500,165999652648,6386199899437,269455867248640,12371082837260281,613924958232961934,32745240915899894988,1868019304186661949347,113491057175295931012181
+; Formula: a(n) = floor(((((binomial(n,2)+n)!)/(binomial(n,2)!))*4^n*n!)/((2*n)!))
 
 #offset 1
 

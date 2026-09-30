@@ -1,7 +1,7 @@
 ; A141662: Triangle read by rows, T(n,m) = abs(n - m^2).
 ; Submitted by loader3229
 ; 0,1,0,2,1,2,3,2,1,6,4,3,0,5,12,5,4,1,4,11,20,6,5,2,3,10,19,30,7,6,3,2,9,18,29,42,8,7,4,1,8,17,28,41,56,9,8,5,0,7,16,27,40,55,72,10,9,6,1,6,15,26,39,54,71,90,11,10,7,2,5,14,25,38,53,70,89,110,12,11
-; Formula: a(n) = gcd(0,-(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)^2+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = gcd(0,-(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)^2+floor((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $1,$0

@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $2,227570 ; Numerators of rationals with e.g.f. D(3,x), a Debye function.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

@@ -1,12 +1,11 @@
 ; A018107: Powers of fourth root of 21 rounded up.
 ; Submitted by Science United
 ; 1,3,5,10,21,45,97,207,441,945,2021,4327,9261,19825,42440,90850,194481,416325,891224,1907839,4084101,8742816,18715702,40064613,85766121,183599119,393029742,841356859,1801088541
-; Formula: a(n) = sqrtint(sqrtint(21^n-1))+1
+; Formula: a(n) = sqrtnint(21^n-1,4)+1
 
 mov $1,21
 pow $1,$0
 mov $0,$1
 sub $0,1
-nrt $0,2
-nrt $0,2
+nrt $0,4
 add $0,1

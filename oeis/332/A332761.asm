@@ -5,12 +5,11 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  trn $1,1
-  add $1,1
+  max $1,1
   seq $1,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   dgs $1,2
   mov $2,1
-  mul $0,0
+  mov $0,0
 lpe
 add $1,2
 add $1,$0

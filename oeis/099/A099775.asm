@@ -20,8 +20,7 @@ lpb $2
   div $7,2
   mov $3,$7
   seq $3,13636 ; a(n) = n*nextprime(n).
-  add $3,1
-  trn $3,8
+  trn $3,7
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

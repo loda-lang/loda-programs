@@ -23,8 +23,7 @@ lpb $5
   add $7,$3
   mov $2,2
   mov $6,$7
-  add $6,3
-  equ $6,4
+  equ $6,1
   sub $1,$6
   add $4,1
   sub $5,$1

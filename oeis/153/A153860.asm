@@ -1,7 +1,7 @@
 ; A153860: Triangle by columns: leftmost column = (1, 0, 1, -1, 1, -1, 1, ...); columns >1 = (1, 1, 0, 0, 0, ...).
 ; Submitted by loader3229
 ; 1,0,1,1,1,1,-1,0,1,1,1,0,0,1,1,-1,0,0,0,1,1,1,0,0,0,0,1,1,-1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,-1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,-1,0,0,0,0,0,0,0,0,0,1,1,1,0
-; Formula: a(n) = truncate((binomial(1,-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)+min(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1,1)-1)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))
+; Formula: a(n) = if(((binomial(1,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)+min(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1,1)-1)^2)==1,(binomial(1,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)+min(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1,1)-1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1),if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)<=(-1),0,(binomial(1,-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)+min(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1,1)-1)^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+1)))
 
 #offset 1
 

@@ -16,7 +16,6 @@ lpb $4
   bin $1,$0
   mul $1,$0
   add $3,$1
-  sub $4,5
-  trn $4,1
+  trn $4,6
 lpe
 mov $0,$3

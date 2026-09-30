@@ -15,9 +15,17 @@ seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2
 lex $5,$0
 add $0,$5
 mov $3,$0
-add $0,1
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-mov $2,$0
-sub $2,$3
+mov $6,$0
+dif $6,$0
+add $6,1
+mov $7,$0
+max $7,1
+seq $7,40 ; The prime numbers.
+mul $6,$7
+mov $7,$6
+div $7,2
+mov $2,$7
+sub $2,$0
 mov $4,$2
+mov $0,$7
 mov $0,$2

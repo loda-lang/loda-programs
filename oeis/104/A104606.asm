@@ -5,10 +5,9 @@
 #offset 1
 
 seq $0,217 ; Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.
-sub $0,1
 mov $7,$0
-equ $7,0
-sub $0,1
+equ $7,1
+sub $0,2
 mov $1,1
 mov $5,$0
 lpb $5

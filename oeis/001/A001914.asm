@@ -6,10 +6,8 @@
 
 sub $0,1
 equ $1,$0
-add $0,1
 mov $3,$0
-sub $0,1
-add $3,1
+add $3,2
 pow $3,2
 lpb $3
   mov $4,$2

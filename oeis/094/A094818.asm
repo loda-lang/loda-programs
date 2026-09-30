@@ -8,25 +8,16 @@ mov $3,2
 mov $4,2
 mov $5,4
 mov $6,2
-mov $7,2
-mov $8,2
+fil $6,3
 mov $9,4
 mov $10,2
 mov $11,3
 lpb $0
   sub $0,1
-  mul $1,0
-  mov $12,$1
-  add $12,$4
+  mov $12,$4
   add $12,$6
-  mov $1,$2
-  mov $2,$3
-  mov $3,$4
-  mov $4,$5
-  mov $5,$6
-  mov $6,$7
-  mov $7,$8
-  mov $8,$9
+  mov $1,0
+  rol $1,9
   mov $9,$10
   mul $10,-1
   add $12,$10

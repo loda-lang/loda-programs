@@ -7,7 +7,6 @@
 
 seq $0,40 ; The prime numbers.
 pow $0,3
-sub $0,6
-trn $0,7
+trn $0,13
 div $0,2
 add $0,7

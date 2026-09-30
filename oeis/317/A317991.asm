@@ -1,4 +1,4 @@
-; A317991: 2-rank of the narrow class group of real quadratic field with discriminant A003658(n), n >= 2.
+; A317991: 2-rank of the narrow class group of the real quadratic field with discriminant A003658(n), n >= 2.
 ; Submitted by Science United
 ; 0,0,1,0,0,1,1,1,0,1,0,1,0,1,0,1,1,2,0,1,1,0,1,1,1,1,0,1,1,0,0,1,2,0,0,2,1,1,1,1,0,2,1,1,0,1,2,0,1,2,2,1,0,1,0,1,1,1,0,0,1,2,1,1,1,1,2,1,0,1,0,1,1,0,1,1,1,0,2,1
 ; Formula: a(n) = A001221(A003658(n))-1

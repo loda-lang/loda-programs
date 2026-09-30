@@ -9,6 +9,6 @@ lpb $0
   gcd $1,$0
   div $0,3
 lpe
-sub $1,1
 mov $0,$1
-equ $0,0
+equ $0,1
+sub $1,1

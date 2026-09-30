@@ -4,6 +4,5 @@
 ; Formula: a(n) = sqrtnint(2*n,6)
 
 mul $0,2
+nrt $0,6
 mov $1,$0
-nrt $1,6
-mov $0,$1

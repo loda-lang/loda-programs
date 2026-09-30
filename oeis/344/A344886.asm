@@ -9,13 +9,11 @@ mov $3,$0
 mul $3,2
 trn $3,1
 mov $4,$3
+div $4,2
 sub $3,1
 gcd $3,2
-div $4,2
-add $4,1
 mov $6,$4
-sub $4,1
-add $6,5
+add $6,6
 pow $6,3
 lpb $6
   mov $2,$10

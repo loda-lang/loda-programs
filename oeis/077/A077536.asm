@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   max $3,1
   log $3,10
-  add $3,1
   sub $3,$5
-  equ $3,0
+  equ $3,-1
   sub $0,$3
   add $1,7
   mov $4,$0

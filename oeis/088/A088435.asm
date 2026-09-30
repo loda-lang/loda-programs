@@ -1,6 +1,7 @@
 ; A088435: 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k>=1,1/3^(2^k)).
 ; Submitted by Science United
 ; 3,2,2,1,2,3,2,1,3,2,1,2,2,3,2,1,3,2,2,1,2,3,1,2,3,2,1,2,2,3,2,1,3,2,2,1,2,3,2,1,3,2,1,2,2,3,1,2,3,2,2,1,2,3,1,2,3,2,1,2,2,3,2,1,3,2,2,1,2,3,2,1,3,2,1,2,2,3,2,1
+; Formula: a(n) = floor(if(binomial(n+1,2)==0,0,binomial(n+1,2)/(2^valuation(binomial(n+1,2),2)))/2)%2-2*(floor(if(binomial(n+1,2)==0,0,binomial(n+1,2)/(2^valuation(binomial(n+1,2),2)))/2)%2-1)*(floor((n+1)/2)%2)+1
 
 #offset 1
 

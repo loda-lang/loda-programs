@@ -11,8 +11,7 @@ lpb $1
   mov $6,-1
   pow $6,$1
   mov $3,$1
-  trn $3,2
-  add $3,2
+  max $3,2
   seq $3,15862 ; Inverse of 1853rd cyclotomic polynomial.
   mul $3,$6
   bin $5,3

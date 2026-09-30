@@ -8,8 +8,7 @@ lpb $0
   trn $2,$0
   add $2,$1
   sub $0,$2
-  sub $0,1
-  trn $0,3
+  trn $0,4
   add $1,1
   mul $2,2
   add $2,8

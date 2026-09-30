@@ -11,8 +11,7 @@ lpb $2
   dif $7,$1
   add $7,1
   mov $4,$1
-  trn $4,1
-  add $4,1
+  max $4,1
   seq $4,40 ; The prime numbers.
   mul $7,$4
   mov $4,$7

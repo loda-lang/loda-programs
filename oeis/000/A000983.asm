@@ -1,6 +1,7 @@
 ; A000983: Size of minimal binary covering code of length n and covering radius 1.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,2,4,7,12,16,32,62
+; Formula: a(n) = b(n)+1, b(n) = c(n-2), b(4) = 3, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = if(c(n-3)==0,c(n-4)+d(n-2),if(((c(n-4)+d(n-2))%c(n-3))==0,(c(n-4)+d(n-2))/c(n-3),c(n-4)+d(n-2)))+c(n-1)+2, c(6) = 31, c(5) = 15, c(4) = 11, c(3) = 6, c(2) = 3, c(1) = 1, c(0) = 1, d(n) = c(n-1)+d(n-1), d(4) = 11, d(3) = 5, d(2) = 2, d(1) = 1, d(0) = 0
 
 #offset 1
 

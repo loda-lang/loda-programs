@@ -1,6 +1,7 @@
 ; A286358: Compound filter: a(n) = P(A286357(n), A161942(n)), where P(n,k) is sequence A000027 used as a pairing function.
 ; Submitted by mmonnin
 ; 1,4,6,22,8,13,10,106,79,47,13,39,30,19,19,466,47,742,24,233,21,58,19,139,466,233,32,49,122,70,21,1954,26,380,26,4096,192,139,49,1037,233,34,81,256,782,70,26,531,1597,4279,70,1227,380,157,70,157,41,1037,139,280,498,34,124,8002,256,83,174,2018,34,83,70,18916,705,1655,531,669,34,280,41,4373
+; Formula: a(n) = truncate(((if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))/(2^valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2)))+if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2))+1)^2-if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2))-3*if((A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))==0,0,(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1))/(2^valuation(A000203(n/(2^valuation(n,2)))*bitxor(n,n-1),2)))+1)/2)
 
 #offset 1
 

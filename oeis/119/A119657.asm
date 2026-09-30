@@ -7,9 +7,8 @@
 
 seq $0,40 ; The prime numbers.
 mul $0,10
+seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
 mov $1,$0
-seq $1,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
-mov $0,$1
 sub $0,65
 div $0,66
 add $0,1

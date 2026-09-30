@@ -22,8 +22,8 @@ lpb $2
 lpe
 mov $2,$8
 add $2,7
-mov $1,$2
-equ $1,0
+mov $1,$8
+equ $1,-7
 add $2,$1
 mov $0,$2
 sub $0,1

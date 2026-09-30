@@ -1,6 +1,7 @@
 ; A227742: Fixed points of permutation A227741.
 ; Submitted by Orange Kid
 ; 1,4,8,12,16,23,28,32,36,43,51,59,64,71,76,80,84,91,99,107,115,126,135,143,148,155,163,171,176,183,188,192,196,203,211,219,227,238,247,255,263,274,286,298,307,318,327,335,340,347,355,363,371,382,391,399,404,411,419,427,432,439,444,448,452,459,467,475,483,494,503,511,519,530,542,554,563,574,583,591
+; Formula: a(n) = b(max(2*n-2,0)), b(n) = sumdigits(bitxor(floor(if((n+1)==0,0,(n+1)/(2^valuation(n+1,2)))/2),floor(if((n+1)==0,0,(n+1)/(2^valuation(n+1,2)))/4)),2)*sign(bitxor(floor(if((n+1)==0,0,(n+1)/(2^valuation(n+1,2)))/2),floor(if((n+1)==0,0,(n+1)/(2^valuation(n+1,2)))/4)))+b(n-1)+1, b(0) = 1
 
 #offset 1
 
@@ -11,8 +12,11 @@ lpb $0
   mov $2,$0
   add $2,1
   dir $2,2
+  mov $3,$2
+  div $3,4
   div $2,2
-  seq $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  bxo $2,$3
+  dgs $2,2
   add $2,1
   sub $0,1
   add $1,$2

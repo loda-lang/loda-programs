@@ -1,6 +1,7 @@
 ; A095907: Digits in the concatenation of strings formed from a previous string by substituting "01" for "0" and "011" for "1" simultaneously at each occurrence. Start with [0].
 ; Submitted by Jamie Morken(l1)
 ; 0,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1
+; Formula: a(n) = b(n-1)%2, b(n) = if(((b(n-1)+c(n-1))%2)==0,(b(n-1)+c(n-1))/2,b(n-1)+c(n-1)), b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)+1, c(1) = 1, c(0) = 0
 
 #offset 1
 

@@ -1,6 +1,7 @@
 ; A370002: Maximum number of connected induced subgraphs, up to isomorphism, of an n-vertex graph.
 ; Submitted by loader3229
 ; 1,2,3,5,8,16,31,62,129
+; Formula: a(n) = sqrtnint(6*n!,3)
 
 #offset 1
 

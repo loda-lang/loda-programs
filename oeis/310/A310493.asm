@@ -6,9 +6,10 @@
 mul $0,2
 mov $1,$0
 add $1,3
-mul $1,10
 mov $2,$1
+mul $1,10
 div $1,9
+mul $2,10
 add $2,23
 div $2,90
 add $2,$1

@@ -13,8 +13,7 @@ lpb $2
   add $3,1
   seq $3,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
   mov $5,$3
-  sub $3,1
-  neq $3,0
+  neq $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

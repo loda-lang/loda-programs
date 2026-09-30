@@ -16,7 +16,6 @@ lpb $0
 lpe
 mov $0,$3
 gcd $3,$1
+div $0,$3
 mov $1,$0
-div $1,$3
-mov $0,$1
 mul $0,9

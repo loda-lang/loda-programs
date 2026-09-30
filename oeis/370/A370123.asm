@@ -9,7 +9,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,370122 ; a(n) = 1 if the second arithmetic derivative of n is a multiple of 3, otherwise 0.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  mul $3,2
+  add $3,3
+  pow $3,6
+  mod $3,36
+  mod $3,5
+  div $3,3
   sub $0,$3
   add $1,1
   mov $4,$0

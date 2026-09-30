@@ -4,15 +4,13 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,3
+add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
-  seq $3,85275 ; Sum of n-th composite number and its largest prime divisor.
+  add $3,1
+  seq $3,85275 ; a(n) = Sum of n-th composite number and its largest prime divisor.
   gcd $3,2
   sub $0,$3
   add $0,1

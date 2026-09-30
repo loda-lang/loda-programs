@@ -1,4 +1,4 @@
-; A322309: Largest automorphism group size for a binary self-dual code of length 2n
+; A322309: Largest automorphism group size for a binary self-dual code of length 2n.
 ; Submitted by Jamie Morken(w1)
 ; 2,8,48,1344,3840,46080,645120,10321920,185794560,3715891200,81749606400,1961990553600,51011754393600,1428329123020800,42849873690624000,1371195958099968000,46620662575398912000
 

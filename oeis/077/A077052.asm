@@ -1,7 +1,7 @@
 ; A077052: Right Moebius transformation matrix, M, by antidiagonals.
 ; Submitted by Simon Strandgaard
 ; 1,0,-1,0,1,-1,0,0,0,0,0,0,1,-1,-1,0,0,0,0,0,1,0,0,0,1,0,-1,-1,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A008683(truncate(((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)^2)/gcd((truncate((sqrtint(8*n)-1)/2)+2)^3,(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)^2)))
+; Formula: a(n) = A008683(truncate(((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)^2)/gcd((floor((sqrtint(8*n)-1)/2)+2)^3,(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n)*(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)^2)))
 
 #offset 1
 

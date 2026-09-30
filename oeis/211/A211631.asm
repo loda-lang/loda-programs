@@ -11,7 +11,7 @@ lpb $0
   mov $2,$0
   max $2,0
   add $2,1
-  seq $2,7882 ; Number of lattice points inside circle of radius n is 4(a(n)+n)-3.
+  seq $2,7882 ; Number of lattice points inside circle of radius n is 4*(a(n)+n)-3.
   add $1,$2
 lpe
 add $0,$1

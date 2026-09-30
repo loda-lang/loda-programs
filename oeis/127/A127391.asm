@@ -9,10 +9,9 @@ lpb $0
   lpe
   sub $0,1
 lpe
-add $0,1
 mov $1,$0
-sub $0,1
 seq $0,131124 ; Expansion of q^(-1) * (phi(-q) / psi(q^4))^2 in powers of q where phi(), psi() are Ramanujan theta functions.
+add $1,1
 div $1,2
 mod $1,2
 mul $1,$0

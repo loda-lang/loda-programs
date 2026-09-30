@@ -1,7 +1,7 @@
 ; A098457: Farey Bisection Expansion of sqrt(7).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0
-; Formula: a(n) = truncate(gcd(binomial(3*n-3,5),7)/6)
+; Formula: a(n) = floor(gcd(binomial(3*n-3,5),7)/6)
 
 #offset 1
 

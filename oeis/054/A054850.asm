@@ -12,9 +12,8 @@ lpb $1
   mov $0,$2
   seq $0,61720 ; First differences of sequence of primorials.
   mul $0,2
+  log $0,2
   mov $3,$0
-  log $3,2
-  mov $0,$3
   max $0,2
   mov $2,0
 lpe

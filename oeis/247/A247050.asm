@@ -1,6 +1,7 @@
-; A247050: Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 >= k <= 2, consisting of segments given by the vectors (,1,1), (1,2), (1,-1).
+; A247050: Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 <= k <= 2, consisting of segments given by the vectors (1,1), (1,2), (1,-1).
 ; Submitted by loader3229
 ; 0,1,0,1,0,1,0,2,1,2,1,2,1,4,3,4,4,5,4,9,8,9,12,13,12,22,21,22,33,34,33,56,55,56,88,89,88,145,144,145,232,233,232,378,377,378,609,610,609,988,987,988,1596,1597,1596,2585,2584,2585,4180,4181,4180,6766,6765,6766,10945,10946,10945,17712,17711,17712,28656,28657,28656,46369,46368,46369,75024,75025,75024,121394
+; Formula: a(n) = b(n-3), a(8) = 1, a(7) = 2, a(6) = 0, a(5) = 1, a(4) = 0, a(3) = 1, a(2) = 0, a(1) = 1, a(0) = 0, b(n) = c(n-3), b(8) = 2, b(7) = 1, b(6) = 2, b(5) = 1, b(4) = 2, b(3) = 0, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = 2*b(n-3)+b(n-6), c(9) = 4, c(8) = 3, c(7) = 4, c(6) = 1, c(5) = 2, c(4) = 1, c(3) = 2, c(2) = 1, c(1) = 2, c(0) = 0
 
 mov $2,1
 mov $4,1

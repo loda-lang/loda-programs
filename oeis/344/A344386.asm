@@ -10,7 +10,7 @@ mov $3,$0
 mul $3,10
 lpb $3
   sub $3,4
-  pow $1,0
+  mov $1,1
   add $1,$6
   add $2,$1
   add $5,$2

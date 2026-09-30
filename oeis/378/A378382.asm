@@ -1,4 +1,4 @@
-; A378382: Number of maximal chains in the poset of all binary words of length <= n, ordered by B covers A iff A_i <= B_{i+k} for all i in A and some k >= 0.
+; A378382: Number of maximal chains in the poset of compositions with weight <= n and parts of size <= 2, ordered by A covers B iff A_i >= B_{i+k} for all i in B and some k >= 0.
 ; Submitted by Steve Dodd
 ; 1,1,2,5,16,57,226,961,4376,21041,106534,563961,3112924,17839993,105907946,649432673,4105783696,26706965985,178466243662,1223248786921,8589272300516,61708802126441,453143009601682,3397715981566545,25990997059282456,202666687407866257
 

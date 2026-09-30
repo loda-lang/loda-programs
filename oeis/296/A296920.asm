@@ -10,11 +10,34 @@ add $2,1
 pow $2,2
 lpb $2
   sub $2,1
+  mov $7,$1
+  div $7,5
+  mul $7,11
   mov $3,$1
-  seq $3,267755 ; Expansion of (1 + 2*x + x^2 + x^3 + 4*x^4 + 2*x^5)/(1 - x - x^5 + x^6).
-  mov $5,$3
+  mod $3,5
+  mov $6,$3
+  equ $6,0
+  add $7,$6
+  mov $6,$3
+  equ $6,1
+  mul $6,3
+  add $7,$6
+  mov $6,$3
+  equ $6,2
+  mul $6,4
+  add $7,$6
+  mov $6,$3
+  equ $6,3
+  mul $6,5
+  add $7,$6
+  mov $6,$3
+  equ $6,4
+  mul $6,9
+  add $7,$6
+  mov $3,$7
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
+  mov $5,$7
   sub $0,$3
   add $1,1
   mov $4,$0

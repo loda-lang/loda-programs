@@ -7,7 +7,7 @@
 
 sub $0,1
 mov $1,$0
-seq $0,35109 ; Numerators in expansion of a certain Dirichlet series.
+seq $0,35109 ; Numerators in the expansion of the Dirichlet series zeta(s) * Product((1+p^-s) / (1-p^(1-s))), p > 2.
 mod $1,2
 add $1,1
 mul $1,$0

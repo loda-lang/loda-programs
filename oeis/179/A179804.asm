@@ -1,4 +1,4 @@
-; A179804: Number of letter combinations on a standard telephone keypad represented by the digits in n
+; A179804: Number of letter combinations on a standard telephone keypad represented by the digits in n.
 ; Submitted by Simon Strandgaard
 ; 0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,9,9,9,9,9,0,0,9,9,9,9,9,9,9,9,0,0,9,9,9,9,9,9,9,9,0,0,9,9,9,9,9,9,9,9,0,0,9,9,9,9,9,9,9,9,0,0,9,9,9,9,9,9,9,9,0
 

@@ -19,8 +19,7 @@ lpb $2
   sub $3,$1
   add $1,$3
   add $1,1
-  sub $3,1
-  equ $3,2
+  equ $3,3
   sub $0,$3
   sub $2,$0
 lpe

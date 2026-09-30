@@ -21,8 +21,7 @@ lpb $2
   sub $3,$5
   div $3,2
   mul $3,2
-  add $3,1
-  trn $3,6
+  trn $3,5
   min $3,1
   sub $0,$3
   add $1,1

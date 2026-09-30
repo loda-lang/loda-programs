@@ -11,7 +11,7 @@ lpb $5
   mov $4,$0
   max $4,0
   add $4,1
-  seq $4,173277 ; A(x) satisfies A000290(x)/x^2 = A(x)/A(x^2); A000290 = integer squares
+  seq $4,173277 ; A(x) satisfies A000290(x)/x^2 = A(x)/A(x^2); A000290 = integer squares.
   mov $2,$5
   mul $2,$4
   add $1,$2

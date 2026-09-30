@@ -16,9 +16,8 @@ lpb $0
   seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
   mul $0,$3
   seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+  gcd $0,$2
   mov $1,$0
-  gcd $1,$2
-  mov $0,$1
   sub $0,1
 lpe
 add $0,1

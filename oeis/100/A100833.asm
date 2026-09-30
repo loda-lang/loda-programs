@@ -1,6 +1,7 @@
 ; A100833: Smallest positive palindrome-free and squarefree sequence.
 ; Submitted by loader3229
 ; 1,2,3,1,2,4,1,2,3,1,2,5,1,2,3,1,2,4,1,2,3,1,2,6,1,2,3,1,2,4,1,2,3,1,2,5,1,2,3,1,2,4,1,2,3,1,2,7,1,2,3,1,2,4,1,2,3,1,2,5,1,2,3,1,2,4,1,2,3,1,2,6,1,2,3,1,2,4,1,2
+; Formula: a(n) = valuation(floor((13^n)/9),2)+1
 
 #offset 1
 

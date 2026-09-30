@@ -1,7 +1,7 @@
 ; A081825: Decimal expansion of atomic mass constant, in kg.
 ; Submitted by loader3229
 ; 1,6,6,0,5,3,9,0,6
-; Formula: a(n) = (n+27)%3-3*truncate((sqrtint(300*n+8100)+1)/2)*sqrtint(75*n+2024)+450*n-10*truncate(((n+27)%3-3*truncate((sqrtint(300*n+8100)+1)/2)*sqrtint(75*n+2024)+450*n+12146)/10)+12146
+; Formula: a(n) = (n+27)%3-3*sqrtint(75*n+2024)*floor((sqrtint(300*n+8100)+1)/2)+450*n-10*truncate(((n+27)%3-3*sqrtint(75*n+2024)*floor((sqrtint(300*n+8100)+1)/2)+450*n+12146)/10)+12146
 
 #offset -26
 

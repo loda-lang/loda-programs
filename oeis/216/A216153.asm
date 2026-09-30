@@ -6,8 +6,7 @@
 
 sub $0,1
 lpb $0
-  trn $0,1
-  add $0,1
+  max $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
   add $0,1
   seq $0,205959 ; a(n) = n^omega(n)/rad(n).

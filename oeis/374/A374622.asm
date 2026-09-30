@@ -1,6 +1,7 @@
 ; A374622: Maximum number of vertices of a chordal ring mixed graph CRM(N,c) with diameter n.
 ; Submitted by Science United
 ; 8,10,18,16,32,34,50,44,72,74,98,88,128,130,162,148,200,202,242,224,288,290,338,316,392,394,450,424,512,514,578,548,648,650,722,688,800,802,882,844,968,970,1058,1016,1152,1154
+; Formula: a(n) = 2*if(floor(gcd(n-2,4)/2)==0,n-2,if(((n-2)%floor(gcd(n-2,4)/2))==0,(n-2)/floor(gcd(n-2,4)/2),n-2))+2*(floor((n-3)/2)+1)^2+4
 
 #offset 3
 

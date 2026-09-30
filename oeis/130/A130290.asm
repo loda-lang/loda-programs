@@ -5,7 +5,6 @@
 
 #offset 1
 
+seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $1,40 ; The prime numbers.
-mov $0,$1
 div $0,2

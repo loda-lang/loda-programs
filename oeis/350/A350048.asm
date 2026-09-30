@@ -4,9 +4,9 @@
 
 #offset -2
 
-add $0,3
 mov $3,$0
-add $0,2
+add $0,5
+add $3,3
 mul $3,7
 lpb $3
   max $3,1

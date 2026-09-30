@@ -7,8 +7,7 @@
 
 seq $0,90658 ; Numbers n such that n-1 is a prime of the form 4k+3.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
+mul $0,3
 mov $1,$0
-mul $1,3
-mov $0,$1
 sub $0,3
 div $0,3

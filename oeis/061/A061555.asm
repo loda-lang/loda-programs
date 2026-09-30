@@ -1,16 +1,49 @@
 ; A061555: Integer part of sigma(n!)/n!.
 ; Submitted by aendgraend
 ; 1,1,1,2,2,3,3,3,3,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8
-; Formula: a(n) = truncate((truncate((84*A000203(n!)-79)/84)+1)/(n!))
 
+mov $3,0
+sub $3,$0
+mov $8,0
 mov $1,$0
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+fac $1,$3
+mov $7,$1
+sub $7,1
+mov $6,$1
+dir $6,2
+mov $11,$6
+mov $10,$6
+nrt $10,2
+lpb $10
+  max $10,1
+  mov $12,$6
+  mod $12,$10
+  equ $12,0
+  mov $9,$6
+  div $9,$10
+  add $9,$10
+  mul $9,$12
+  add $8,$9
+  sub $10,1
+lpe
+nrt $6,2
+mov $10,$6
+pow $10,2
+sub $10,$11
+equ $10,0
+mul $6,$10
+sub $8,$6
+mov $5,$1
+bxo $5,$7
+mul $5,$8
+mov $1,$5
 mul $1,21
 mov $2,3
 mul $2,$1
 add $2,$1
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,0
+sub $4,$0
+fac $0,$4
 mov $1,$2
 sub $1,79
 div $1,84

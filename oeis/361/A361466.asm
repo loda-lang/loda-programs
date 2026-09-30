@@ -1,7 +1,7 @@
 ; A361466: a(n) = 1 if A017665(A003961(n)) is a power of 2, otherwise 0. Here A017665 is the numerator of the sum of the reciprocals of the divisors of n, and A003961 is fully multiplicative with a(p) = nextprime(p).
 ; Submitted by Science United
 ; 1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (truncate(A064989(A000203(A003961(n)))/gcd(n,A064989(A000203(A003961(n)))))-1)==0
+; Formula: a(n) = truncate(A064989(A000203(A003961(n)))/gcd(n,A064989(A000203(A003961(n)))))==1
 
 #offset 1
 
@@ -12,6 +12,5 @@ seq $1,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for od
 mov $2,$0
 gcd $2,$1
 div $1,$2
-sub $1,1
-equ $1,0
+equ $1,1
 mov $0,$1

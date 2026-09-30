@@ -8,7 +8,6 @@
 dif $0,2
 dif $0,2
 mod $0,10
+equ $0,0
 mov $1,$0
-equ $1,0
-mov $0,$1
 add $0,3

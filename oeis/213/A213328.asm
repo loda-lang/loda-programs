@@ -5,9 +5,8 @@
 
 #offset 1
 
+seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $1,40 ; The prime numbers.
-mov $0,$1
 seq $1,212962 ; Expansion of x*(3+x-x^3)/((1-3*x-x^2)*(1-x)*(1+x)).
 sub $1,2
 div $1,$0

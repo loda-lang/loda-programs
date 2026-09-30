@@ -5,12 +5,12 @@
 
 #offset 1
 
-add $0,83
 mov $1,$0
-add $0,1
+add $0,84
 pow $0,2
 mul $0,3
 nrt $0,2
+add $1,83
 pow $1,2
 mul $1,3
 nrt $1,2

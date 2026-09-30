@@ -7,6 +7,5 @@
 
 seq $0,1359 ; Lesser of twin primes.
 add $0,1
+seq $0,303603 ; a(n) is the maximum distance between primes in Goldbach partitions of 2n, or 2n if there are no Goldbach partitions of 2n.
 mov $1,$0
-seq $1,303603 ; a(n) is the maximum distance between primes in Goldbach partitions of 2n, or 2n if there are no Goldbach partitions of 2n.
-mov $0,$1

@@ -4,14 +4,18 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,64447 ; a(n) = phi(n^n).
+  mov $4,$3
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $5,$3
+  sub $5,1
+  pow $3,$5
+  mul $3,$4
   gcd $3,$0
   add $1,1
   add $2,$3

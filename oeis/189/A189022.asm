@@ -1,7 +1,7 @@
 ; A189022: Apostol's third-order Möbius function mu_3(n).
 ; Submitted by PDW
 ; 1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,-1,1,1,-1,1,1,1,1,0,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,0,1,1,1,1,1,-1,1,-1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,0
-; Formula: a(n) = A008683(truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n)))))
+; Formula: a(n) = A008683(floor(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+1,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n)))))
 
 #offset 1
 

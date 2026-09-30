@@ -16,8 +16,7 @@ lpb $2
   seq $3,31100 ; Write 2n-1 in base 9 and juxtapose.
   add $3,5
   mul $3,$4
-  sub $3,6
-  equ $3,4
+  equ $3,10
   mov $4,2
   sub $0,$3
   add $1,1

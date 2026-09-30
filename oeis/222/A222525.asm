@@ -1,7 +1,6 @@
 ; A222525: O.g.f.: Sum_{n>=0} (2*n+1)^(2*n) * exp(-(2*n+1)^2*x) * x^n / n!.
 ; Submitted by KetamiNO [YouTube]
 ; 1,8,232,12160,929376,93590784,11709432064,1751777730560,305065968649728,60623947402670080,13538933075023376384,3356940619048979988480,915040828127405123420160,271974910674004076827115520,87543520972441760055430348800,30337462571518006406505729884160,11261499558402916938176036648386560,4458185650622429063889022016767918080,1874904155308271522087010958209266483200,834765663607980439861538453277070327808000,392266256208066018798627614626096300819480576
-; Formula: a(n) = truncate(A145901(4*binomial(n+1,2))/((4*binomial(n+1,2)-binomial(truncate((sqrtint(32*binomial(n+1,2))+1)/2),2))!))
 
 add $0,1
 bin $0,2
@@ -11,11 +10,40 @@ nrt $3,2
 add $3,1
 div $3,2
 bin $3,2
+mov $6,0
 mul $0,4
 mov $2,$0
 sub $2,$3
-seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $4,0
+sub $4,$2
+mov $9,0
+fac $2,$4
+mov $5,0
 mov $1,$0
-seq $1,145901 ; Triangle of f-vectors of the simplicial complexes dual to the permutohedra of type B_n.
+add $1,1
+mov $7,$1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $8,$1
+add $8,1
+bin $8,2
+sub $7,$8
+add $7,1
+lpb $7
+  mov $10,$7
+  add $10,$7
+  sub $10,3
+  pow $10,$1
+  sub $7,1
+  sub $6,$7
+  bin $6,$9
+  mul $6,$10
+  add $9,1
+  add $5,$6
+  mov $6,0
+lpe
+mov $1,$5
 div $1,$2
 mov $0,$1

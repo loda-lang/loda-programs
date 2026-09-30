@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,1
-sub $0,1
 seq $0,40976 ; a(n) = prime(n) - 2.
 min $0,99
 lpb $0

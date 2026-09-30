@@ -24,6 +24,6 @@ lpb $0
 lpe
 mov $0,$1
 sub $0,2
-mov $3,$0
-equ $3,0
+mov $3,$1
+equ $3,2
 mov $0,$3

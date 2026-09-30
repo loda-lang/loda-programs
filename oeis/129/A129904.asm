@@ -10,9 +10,8 @@ pow $4,6
 lpb $4
   mov $5,$3
   add $5,1
+  seq $5,59975 ; For n > 1, a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors; fully additive with a(p) = p-1.
   mov $2,$5
-  seq $2,59975 ; For n > 1, a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors; fully additive with a(p) = p-1.
-  mov $5,$2
   gcd $5,3
   div $5,2
   sub $1,$5

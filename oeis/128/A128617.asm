@@ -24,9 +24,8 @@ lpb $4
   nrt $1,2
   add $3,8
   add $8,2
+  nrt $8,2
   mov $2,$8
-  nrt $2,2
-  mov $8,$2
   add $8,$1
   mod $8,2
   mov $5,2

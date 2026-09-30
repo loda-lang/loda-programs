@@ -4,11 +4,10 @@
 
 add $0,1
 lpb $0
+  trn $0,1
   mov $2,$0
-  trn $2,1
-  mov $0,$2
-  trn $0,8
   seq $2,25881 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^12)).
+  trn $0,8
   add $1,$2
 lpe
 mov $0,$1

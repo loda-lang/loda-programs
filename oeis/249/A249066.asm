@@ -7,8 +7,7 @@
 
 seq $0,120294 ; Numerator of determinant of n X n matrix with elements M[j,j] = (i+j)/(i+j-1).
 div $0,2
+equ $0,0
 mov $1,$0
-equ $1,0
-mov $0,$1
 add $0,1
 mod $0,2

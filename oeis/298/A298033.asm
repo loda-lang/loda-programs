@@ -6,8 +6,7 @@
 mul $0,3
 sub $0,1
 div $0,2
-mul $0,4
-sub $0,1
-mul $0,3
+mul $0,12
+sub $0,3
 div $0,2
 add $0,2

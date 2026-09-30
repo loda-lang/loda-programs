@@ -5,8 +5,7 @@
 
 #offset 1
 
+seq $0,25613 ; Numbers of form 3^i*4^j, with i, j >= 0.
 mov $1,$0
-seq $1,25613 ; Numbers of form 3^i*4^j, with i, j >= 0.
-mov $0,$1
 mul $0,2
 sub $0,1

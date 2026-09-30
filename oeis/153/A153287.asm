@@ -8,9 +8,9 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  pow $0,2
   mov $6,$0
-  pow $0,2
+  pow $6,2
+  pow $0,4
   mul $0,5
   nrt $0,2
   sub $0,$6

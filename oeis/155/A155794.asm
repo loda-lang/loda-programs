@@ -5,6 +5,19 @@ mov $1,$0
 mov $2,$0
 lpb $2
   sub $2,$1
-  seq $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = i*j (i>=0, j>=0). Alternatively, multiplication triangle read by rows: P(i,j) = j*(i-j) (i>=0, 0<=j<=i).
+  add $0,1
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  add $4,1
+  div $4,2
+  mov $5,$4
+  bin $5,2
+  sub $0,$5
+  sub $4,$0
+  sub $0,1
+  mul $0,$4
 lpe
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $3,0
+sub $3,$0
+fac $0,$3

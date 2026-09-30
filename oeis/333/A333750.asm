@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,72505 ; a(n) = n / (LCM of divisors of n which are <= sqrt(n)).
 div $1,$0
 mov $0,$1

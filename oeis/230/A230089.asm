@@ -1,6 +1,7 @@
 ; A230089: If n is divisible by 4 then 4, if n is divisible by 2 then 2, otherwise n.
 ; Submitted by shiva
 ; 1,2,3,4,5,2,7,4,9,2,11,4,13,2,15,4,17,2,19,4,21,2,23,4,25,2,27,4,29,2,31,4,33,2,35,4,37,2,39,4,41,2,43,4,45,2,47,4,49,2,51,4,53,2,55,4,57,2,59,4,61,2,63,4,65,2,67,4,69,2,71,4,73,2,75,4,77,2,79,4
+; Formula: a(n) = if(if((floor(n/2)%2)==0,floor(n/2)/2,floor(n/2))==0,n,if((n%if((floor(n/2)%2)==0,floor(n/2)/2,floor(n/2)))==0,n/if((floor(n/2)%2)==0,floor(n/2)/2,floor(n/2)),n))
 
 #offset 1
 

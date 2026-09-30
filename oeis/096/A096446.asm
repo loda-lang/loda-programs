@@ -1,4 +1,4 @@
-; A096446: Number of reduced primitive positive definite binary quadratic forms of determinant n.
+; A096446: Erroneous version of A000003.
 ; 1,1,2,1,2,2,2,3,2,2,4,2
 
 #offset 1

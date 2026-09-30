@@ -1,6 +1,7 @@
 ; A359770: a(n) = 1 if n and bigomega(n) are of different parity, otherwise 0. Here bigomega (A001222) gives the number of prime factors of n with multiplicity.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1
+; Formula: a(n) = -2*truncate((truncate(A146564(if((n%2)==0,n/2,n))/3)+1)/2)+truncate(A146564(if((n%2)==0,n/2,n))/3)+1
 
 #offset 1
 

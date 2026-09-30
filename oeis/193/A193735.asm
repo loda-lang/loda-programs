@@ -1,7 +1,7 @@
 ; A193735: Mirror of the triangle A193734.
 ; Submitted by loader3229
 ; 1,2,1,8,6,1,32,32,10,1,128,160,72,14,1,512,768,448,128,18,1,2048,3584,2560,960,200,22,1,8192,16384,13824,6400,1760,288,26,1,32768,73728,71680,39424,13440,2912,392,30,1,131072,327680,360448,229376,93184,25088,4480,512,34,1,524288,1441792,1769472,1277952,602112,193536,43008,6528,648,38,1,2097152,6291456,8519680,6881280,3686400,1376256,365568,69120,9120,800,42,1,8388608,27262976
-; Formula: a(n) = truncate((truncate(4^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*(binomial(truncate((sqrtint(8*n+8)-1)/2)-1,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))+binomial(truncate((sqrtint(8*n+8)-1)/2),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))))/2)
+; Formula: a(n) = truncate(((binomial(floor((sqrtint(8*n+8)-1)/2)-1,-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))+binomial(floor((sqrtint(8*n+8)-1)/2),-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)))*if((-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))<=(-1),0,4^(-n+binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2))))/2)
 
 add $0,1
 mov $2,$0

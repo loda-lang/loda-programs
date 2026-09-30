@@ -1,4 +1,4 @@
-; A262145: O.g.f.: exp( Sum_{n >= 1} A000182(n+1)*x^n/n ), where A000182 is the sequence of tangent numbers.
+; A262145: Expansion of o.g.f. exp( Sum_{n >= 1} A000182(n+1)*x^n/n ), where A000182 is the sequence of tangent numbers.
 ; Submitted by LM
 ; 1,2,10,108,2214,75708,3895236,280356120,26824493574,3287849716332,501916845156012,93337607623037544,20766799390944491100,5446109742113077482456,1662395457873577922274888
 

@@ -1,7 +1,6 @@
 ; A336644: a(n) = (n-rad(n)) / core(n), where rad(n) and core(n) give the squarefree kernel and squarefree part of n, respectively.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,2,0,0,0,3,6,0,0,2,0,0,0,14,0,6,0,2,0,0,0,3,20,0,8,2,0,0,0,15,0,0,0,30,0,0,0,3,0,0,0,2,6,0,0,14,42,20,0,2,0,8,0,3,0,0,0,2,0,0,6,62,0,0,0,2,0,0,0,33,0,0,20,2,0,0,0,14
-; Formula: a(n) = -truncate(truncate((n^2)/((truncate((n-1)/(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)+1)/2)^2))+1))+1)*(floor((n-1)/(truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)^2))+1)))/gcd(n,truncate((n^2)/((truncate((n-1)/(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)+1)/2)^2))+1))+1)*(floor((n-1)/(truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)^2))+1)))))+gcd(n,truncate((n^2)/((truncate((n-1)/(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A019554(max(0,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)+1))+1)^2)+1)/2)^2))+1))+1)*(floor((n-1)/(truncate((sqrtint(4*(truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1)/2)^2))+1))))
 
 #offset 1
 
@@ -56,9 +55,8 @@ nrt $15,2
 add $15,1
 div $15,2
 pow $15,2
+div $9,$15
 mov $14,$9
-div $14,$15
-mov $9,$14
 add $9,1
 mov $1,$0
 div $1,$9

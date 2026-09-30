@@ -13,8 +13,7 @@ lpb $0
     seq $3,26796 ; Number of partitions of n in which the least part is 3.
     add $1,$3
     sub $4,$0
-    add $4,1
-    trn $4,3
+    trn $4,2
   lpe
   add $2,1
 lpe

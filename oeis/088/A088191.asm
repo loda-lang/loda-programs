@@ -17,6 +17,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,88190 ; Largest quadratic residue modulo prime(n).
     mov $4,$2
     mov $6,$7

@@ -1,7 +1,7 @@
 ; A252995: Numbers n such that the n-th odd composite number is 3n.
 ; Submitted by Science United
 ; 335,337,339,343,349,353,359,365,367,369,371,373,375,377
-; Formula: a(n) = e(n)+333, b(n) = truncate((-c(n-1)+b(n-1)+1)/2), b(3) = -6, b(2) = -1, b(1) = 1, b(0) = 3, c(n) = gcd(2*d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),4)*(4*c(n-1)-4), c(3) = 88, c(2) = 12, c(1) = 4, c(0) = 2, d(n) = truncate(gcd(2*d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),4)/2), d(3) = 1, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = 2*d(n-1)+e(n-1)+2, e(3) = 6, e(2) = 4, e(1) = 2, e(0) = 0
+; Formula: a(n) = e(n)+333, b(n) = truncate((-c(n-1)+b(n-1)+1)/2), b(3) = -6, b(2) = -1, b(1) = 1, b(0) = 3, c(n) = gcd(2*d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),4)*(4*c(n-1)-4), c(3) = 88, c(2) = 12, c(1) = 4, c(0) = 2, d(n) = floor(gcd(2*d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),4)/2), d(3) = 1, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = 2*d(n-1)+e(n-1)+2, e(3) = 6, e(2) = 4, e(1) = 2, e(0) = 0
 
 #offset 1
 

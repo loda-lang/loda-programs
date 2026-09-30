@@ -4,9 +4,8 @@
 
 #offset 2
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 lpb $0
   sub $2,$4
   equ $4,$3

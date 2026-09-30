@@ -1,4 +1,4 @@
-; A023584: Greatest exponent in prime-power factorization of 2*p(n)-1.
+; A023584: Greatest exponent in prime-power factorization of 2*prime(n)-1.
 ; Submitted by pelpolaris
 ; 1,1,2,1,1,2,1,1,2,1,1,1,4,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,3,1,1,2,2,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,3,2,1,1,1,1,1,2,1,3,4,1,1,1,2,1,1,1,1,1,1,2,1,1,2,1
 ; Formula: a(n) = A067132(A278223(A000040(n)))-1

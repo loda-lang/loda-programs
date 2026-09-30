@@ -1,7 +1,7 @@
 ; A197863: Smallest powerful number that is a multiple of n.
 ; Submitted by BrandyNOW
 ; 1,4,9,4,25,36,49,8,9,100,121,36,169,196,225,16,289,36,361,100,441,484,529,72,25,676,27,196,841,900,961,32,1089,1156,1225,36,1369,1444,1521,200,1681,1764,1849,484,225,2116,2209,144,49,100,2601,676,2809,108,3025,392,3249,3364,3481,900,3721,3844,441,64,4225,4356,4489,1156,4761,4900,5041,72,5329,5476,225,1444,5929,6084,6241,400
-; Formula: a(n) = n*truncate(gcd(truncate((n-1)/A003557(n))+n+1,n)/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
+; Formula: a(n) = n*floor(gcd(truncate((n-1)/A003557(n))+n+1,n)/gcd(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+truncate((floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+1,floor(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
 
 #offset 1
 

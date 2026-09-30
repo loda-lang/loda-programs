@@ -26,6 +26,6 @@ lpb $0
   mov $1,$0
   add $1,1
   seq $1,7444 ; Moebius transform of primes.
-  mul $0,0
+  mov $0,0
 lpe
 mov $0,$1

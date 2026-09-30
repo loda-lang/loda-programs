@@ -1,6 +1,6 @@
-; A033062: Numbers whose base-11 representation Sum_{i=0..m} d(i)*11^i has odd d(i) for all odd i.
+; A033062: Numbers whose base-11 representation Sum_{i=0..m} d(i)*11^i has odd d(m-i) for all odd i.
 ; 1,2,3,4,5,6,7,8,9,10,12,14,16,18,20,23,25,27,29,31,34,36,38,40,42,45,47,49,51,53,56,58,60,62,64,67,69,71,73,75,78,80,82,84,86,89,91,93,95,97,100,102,104,106,108,111,113,115,117,119
-; Formula: a(n) = max(n+10,truncate((11*n-11)/5))-10
+; Formula: a(n) = max(n+10,floor((11*n-11)/5))-10
 
 #offset 1
 

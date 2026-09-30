@@ -1,7 +1,7 @@
 ; A049800: Triangular array T, read by rows: T(n,k) = (n+1) mod floor((k+1)/2), k = 1..n and n >= 1.
 ; Submitted by loader3229
 ; 0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,2,2,0,0,0,1,1,0,0,1,1,0,0,0,0,1,1,2,2,0,0,0,1,1,2,2,3,3,1,1,0,0,0,0,0,0,0,0,2,2,0,0,0,1,1,1,1,1,1,3,3,1,1,0,0
-; Formula: a(n) = -truncate((truncate((sqrtint(8*n)-1)/2)+2)/truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)/2))*truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1)/2)+truncate((sqrtint(8*n)-1)/2)+2
+; Formula: a(n) = -truncate((floor((sqrtint(8*n)-1)/2)+2)/truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)/2))*truncate((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1)/2)+floor((sqrtint(8*n)-1)/2)+2
 
 #offset 1
 

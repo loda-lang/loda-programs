@@ -1,7 +1,7 @@
 ; A086412: Number of distinct prime factors of 3-smooth numbers.
 ; Submitted by [AF] Kalianthys
 ; 0,1,1,1,2,1,1,2,1,2,2,1,1,2,2,2,1,2,1,2,2,1,2,2,2,2,1,1,2,2,2,2,2,1,2,2,1,2,2,2,1,2,2,2,2,2,2,1,1,2,2,2,2,2,2,1,2,2,2,2,2,1,2,2,1,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2
-; Formula: a(n) = min(truncate(gcd(A003586(n),210)/2),2)
+; Formula: a(n) = min(floor(gcd(A003586(n),210)/2),2)
 
 #offset 1
 

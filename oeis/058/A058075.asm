@@ -15,8 +15,7 @@ lpb $2
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   gcd $4,$3
   mov $3,$4
-  sub $3,1
-  equ $3,0
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

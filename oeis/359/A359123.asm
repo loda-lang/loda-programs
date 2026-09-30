@@ -12,7 +12,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,68811 ; Numbers k such that k and its 10's complement (10^d-k, where d is the number of digits in k) are both primes
+  seq $0,68811 ; Numbers k such that k and its 10's complement (10^d-k, where d is the number of digits in k) are both primes.
   mov $2,$3
   mul $2,$0
   mul $4,$3

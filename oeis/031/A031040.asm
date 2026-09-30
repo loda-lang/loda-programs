@@ -18,8 +18,7 @@ lpb $2
   seq $4,54634 ; Champernowne sequence: write n in base 8 and juxtapose.
   mul $4,-1
   mov $3,$4
-  add $3,6
-  equ $3,2
+  equ $3,-4
   sub $0,$3
   add $1,1
   sub $2,$0

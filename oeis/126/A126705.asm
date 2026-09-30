@@ -29,10 +29,10 @@ lpb $2
   add $9,1
   bin $9,2
   sub $4,$9
-  add $7,1
   mov $8,$7
-  trn $8,2
+  trn $8,1
   div $8,$4
+  add $7,1
   div $7,$4
   sub $7,$8
   add $3,1

@@ -1,6 +1,7 @@
 ; A328482: Number of distinct terms required when n is expressed as a greedy sum of terms of A129912 (number of nonzero digits when n is expressed in greedy A129912-base).
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,1,2,1,2,1,2,2,3,2,3,1,2,2,3,2,3,2,3,3,4,3,4,1,2,2,3,2,3,1,2,2,3,2,3,2,3,3,4,3,4,2,3,3,4,3,4,3,4,4,5,4,5,2,3,3,4,3,4,1,2,2,3,2,3,2,3,3,4,3,4,2,3,3,4,3,4,3,4
+; Formula: a(n) = A371090(A276086(n))*(if(((5*n+5)^(5*n+5))==0,0,valuation((5*n+5)^(5*n+5),2))-10*truncate((if(((5*n+5)^(5*n+5))==0,0,valuation((5*n+5)^(5*n+5),2))+1)/10)+1)
 
 mov $1,$0
 add $0,1

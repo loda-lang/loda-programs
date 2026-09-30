@@ -1,4 +1,4 @@
-; A372824: Sequence formed as follows: for each k >= 0, insert between 3^k and 3^(k+1) the greatest power of 2 than is in the interval [3^k, 3^(k+1)], and then arrange the resulting numbers in nondecreasing order.
+; A372824: Sequence formed as follows: for each k >= 0, insert between 3^k and 3^(k+1) the greatest power of 2 that is in the interval [3^k, 3^(k+1)], and then arrange the resulting numbers in nondecreasing order.
 ; Submitted by zombie67 [MM]
 ; 1,2,3,8,9,16,27,64,81,128,243,512,729,2048,2187,4096,6561,16384,19683,32768,59049,131072,177147,524288,531441,1048576,1594323,4194304,4782969,8388608,14348907,33554432,43046721,67108864,129140163,268435456,387420489
 

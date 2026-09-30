@@ -20,9 +20,8 @@ nrt $4,2
 add $2,1
 pow $2,2
 mul $2,2
+nrt $2,2
 mov $5,$2
-nrt $5,2
-mov $2,$5
 add $2,$4
 mod $2,2
 mov $0,$2

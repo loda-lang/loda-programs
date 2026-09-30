@@ -7,7 +7,6 @@
 
 seq $0,40 ; The prime numbers.
 mul $0,6
+pow $0,18
 mov $1,$0
-pow $1,18
-mov $0,$1
 div $0,101559956668416

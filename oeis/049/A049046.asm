@@ -9,6 +9,7 @@ mov $4,$0
 mov $5,1
 mov $3,$0
 lpb $3
+  neq $0,1
   equ $1,1
   mov $6,$2
   add $7,$1
@@ -16,8 +17,6 @@ lpb $3
   mul $5,$6
   mod $5,$4
   mov $6,$0
-  neq $6,1
-  mov $0,$6
   add $0,$5
   max $1,$5
   sub $3,$6

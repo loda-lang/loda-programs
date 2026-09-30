@@ -15,6 +15,7 @@ lpb $0
     mov $5,$4
     mov $7,$4
     add $7,$2
+    add $7,1
     seq $7,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
     equ $7,1
     add $7,1

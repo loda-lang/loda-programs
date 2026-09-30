@@ -1,6 +1,7 @@
 ; A340373: a(n) = 1 if n is of the form of 2^i * p^j, with p an odd prime, and i>=0, j>=1, otherwise 0.
 ; Submitted by Torbj&#246;rn Eriksson
 ; 0,0,1,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,1,0,0,1,1
+; Formula: a(n) = floor(A100007(floor((n/(2^valuation(n,2)))/2)+1)/2)%2
 
 #offset 1
 

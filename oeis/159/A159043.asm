@@ -14,11 +14,16 @@ lpb $2
   add $6,$4
   add $6,1
   seq $6,156037 ; Largest nonprime < n-th prime.
+  mov $7,$1
+  trn $7,2
   mov $3,$1
-  add $3,1
-  seq $3,158611 ; 0, 1 and the primes.
+  sub $3,$7
+  sub $3,1
+  add $7,1
+  seq $7,40 ; The prime numbers.
+  add $7,$3
+  mov $3,$7
   add $3,$6
-  add $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

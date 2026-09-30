@@ -11,8 +11,7 @@ pow $2,3
 lpb $2
   mov $3,$1
   dgs $3,4
-  sub $3,4
-  equ $3,0
+  equ $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

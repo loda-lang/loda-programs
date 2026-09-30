@@ -10,8 +10,11 @@ lpb $1
   mov $0,$5
   sub $0,$1
   min $0,48
+  mov $6,$0
+  div $6,2
   mov $2,$0
-  seq $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  bxo $2,$6
+  dgs $2,2
   mov $3,3
   pow $3,$2
   mul $3,4

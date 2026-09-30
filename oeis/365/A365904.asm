@@ -1,7 +1,7 @@
 ; A365904: Triangle read by rows T(n,k) = n^2 - binomial(k+1,2), n>=1, k<n.
 ; Submitted by BrandyNOW
 ; 1,4,3,9,8,6,16,15,13,10,25,24,22,19,15,36,35,33,30,26,21,49,48,46,43,39,34,28,64,63,61,58,54,49,43,36,81,80,78,75,71,66,60,53,45,100,99,97,94,90,85,79,72,64,55,121,120,118,115,111,106,100,93,85,76,66,144,143,141,138,134,129,123,116,108,99,89,78,169,168
-; Formula: a(n) = truncate((sqrtint(8*n)+1)/2)^2-binomial(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n,2)
+; Formula: a(n) = floor((sqrtint(8*n)+1)/2)^2-binomial(-binomial(floor((sqrtint(8*n)+1)/2),2)+n,2)
 
 #offset 1
 

@@ -7,6 +7,5 @@
 
 mov $2,$0
 seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

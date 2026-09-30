@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,11
+add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
@@ -17,7 +15,15 @@ lpb $2
   mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
-  seq $3,65359 ; Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
+  mov $7,$3
+  dgs $7,2
+  mul $7,3
+  mov $6,$7
+  mov $7,$3
+  dgs $7,4
+  mul $7,-2
+  add $6,$7
+  mov $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

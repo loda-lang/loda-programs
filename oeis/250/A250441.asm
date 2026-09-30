@@ -1,4 +1,4 @@
-; A250441: Number of (n+1)X(6+1) 0..2 arrays with nondecreasing sum of every two consecutive values in every row and column
+; A250441: Number of (n+1)X(6+1) 0..2 arrays with nondecreasing sum of every two consecutive values in every row and column.
 ; Submitted by Gunnar Hjern
 ; 22500,787500,27562500,450187500,7353062500,74118870000,747118209600,5379251109120,38730607985664,217365657062400,1219909299840000,5648304538800000,26152226372250000,103882454756437500,412644195282515625,1446394320056936250,5069879942599572100,16014116645136830220,50583432907200797604,146315715020828753400,423227274853636890000,1135284208680367200000,3045338311253056000000,7652143410283008000000,19227846888198144000000,45628857880809799680000,108280073354705377689600,244306915506554008412160
 
@@ -12,7 +12,24 @@ lpb $0
   mov $1,$3
   trn $1,$0
   add $1,1
-  seq $1,250430 ; Number of (n+1)X(6+1) 0..1 arrays with nondecreasing sum of every two consecutive values in every row and column
+  mov $4,$1
+  mov $5,$1
+  add $1,7
+  add $4,8
+  div $4,2
+  bin $4,3
+  add $5,9
+  div $5,2
+  bin $5,4
+  mov $6,$1
+  add $6,3
+  div $6,2
+  bin $6,4
+  div $1,2
+  bin $1,3
+  mul $1,$4
+  mul $1,$5
+  mul $1,$6
   mul $2,$1
   add $3,1
 lpe

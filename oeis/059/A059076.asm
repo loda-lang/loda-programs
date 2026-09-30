@@ -14,8 +14,7 @@ pow $1,$7
 mul $1,$2
 mov $7,$1
 sub $7,2
-trn $0,1
-add $0,1
+max $0,1
 mov $5,$0
 lpb $0
   mov $3,$5

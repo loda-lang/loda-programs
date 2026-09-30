@@ -21,8 +21,7 @@ lpb $2
     add $5,$6
   lpe
   mov $3,$5
-  sub $3,7
-  equ $3,1
+  equ $3,8
   sub $0,$3
   add $1,1
   mov $4,$0

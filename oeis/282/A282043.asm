@@ -5,6 +5,6 @@
 
 #offset 1
 
-seq $0,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
+seq $0,7522 ; Primes of the form 8*k+7, that is, primes congruent to -1 mod 8.
 seq $0,165186 ; a(n) = Sum_{k=1..n} (k*(n-k) mod n).
 div $0,2

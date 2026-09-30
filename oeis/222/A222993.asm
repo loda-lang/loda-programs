@@ -1,4 +1,4 @@
-; A222993: Number of n X 2 0..2 arrays with successive rows and columns fitting to straight lines with nondecreasing slope, with a single point array taken as having zero slope
+; A222993: Number of n X 2 0..2 arrays with successive rows and columns fitting to straight lines with nondecreasing slope, with a single point array taken as having zero slope.
 ; Submitted by mmonnin
 ; 9,50,222,867,3123,10660,35064,112373,353517,1097430,3374226,10302919,31301991,94757960,286108908,862258905,2595165345,7803321850,23447714310,70422834731,211436276379,634661150700,1904721649632,5715708452797,17150346583893,51457750638110,154387210558074,463190622703503,1389631997652687,4169020547009680,12507319339066836,37522490593145249,112568571291063561
 ; Formula: a(n) = truncate((-(n+2)*2^(n+4)-n+floor((3^(n+4))/2)-2)/2)-2

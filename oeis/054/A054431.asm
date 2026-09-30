@@ -1,7 +1,7 @@
 ; A054431: Array read by antidiagonals: T(x, y) tells whether (x, y) are coprime (1) or not (0).
 ; Submitted by loader3229
 ; 1,1,1,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-; Formula: a(n) = gcd(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,truncate((sqrtint(8*n)-1)/2)+2)==1
+; Formula: a(n) = gcd(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n,floor((sqrtint(8*n)-1)/2)+2)==1
 
 #offset 1
 

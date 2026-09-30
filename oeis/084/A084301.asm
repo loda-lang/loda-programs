@@ -1,9 +1,38 @@
 ; A084301: a(n) = sigma(n) mod 6.
 ; Submitted by Simon Strandgaard
 ; 1,3,4,1,0,0,2,3,1,0,0,4,2,0,0,1,0,3,2,0,2,0,0,0,1,0,4,2,0,0,2,3,0,0,0,1,2,0,2,0,0,0,2,0,0,0,0,4,3,3,0,2,0,0,0,0,2,0,0,0,2,0,2,1,0,0,2,0,0,0,0,3,2,0,4,2,0,0,2,0
-; Formula: a(n) = -6*truncate(A000203(n)/6)+A000203(n)
 
 #offset 1
 
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $3,$0
+sub $3,1
+mov $4,0
+mov $2,$0
+dir $2,2
+mov $7,$2
+mov $6,$2
+nrt $6,2
+lpb $6
+  max $6,1
+  mov $8,$2
+  mod $8,$6
+  equ $8,0
+  mov $5,$2
+  div $5,$6
+  add $5,$6
+  mul $5,$8
+  add $4,$5
+  sub $6,1
+lpe
+nrt $2,2
+mov $6,$2
+pow $6,2
+sub $6,$7
+equ $6,0
+mul $2,$6
+sub $4,$2
+mov $1,$0
+bxo $1,$3
+mul $1,$4
+mov $0,$1
 mod $0,6

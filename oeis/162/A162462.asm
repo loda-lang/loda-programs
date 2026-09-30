@@ -1,6 +1,5 @@
 ; A162462: Sum of all numbers from n to sigma(n).
 ; 1,5,7,22,11,63,15,92,55,126,23,340,27,209,195,376,35,627,39,713,318,435,47,1554,196,578,469,1218,59,2193,63,1520,648,924,581,3556,75,1127,855,3315,83,3795,87,2624,2091,1593,95,6622,477,3146,1353,3525,107,5829,1143
-; Formula: a(n) = -binomial(n-1,2)-n+binomial(A000203(n)+1,2)+1
 
 #offset 1
 
@@ -8,10 +7,39 @@ sub $0,1
 mov $2,$0
 mov $3,$0
 bin $3,2
+mov $7,0
 mov $1,$0
 mul $1,2
+mov $6,$0
 add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $5,$0
+dir $5,2
+mov $10,$5
+mov $9,$5
+nrt $9,2
+lpb $9
+  max $9,1
+  mov $11,$5
+  mod $11,$9
+  equ $11,0
+  mov $8,$5
+  div $8,$9
+  add $8,$9
+  mul $8,$11
+  add $7,$8
+  sub $9,1
+lpe
+nrt $5,2
+mov $9,$5
+pow $9,2
+sub $9,$10
+equ $9,0
+mul $5,$9
+sub $7,$5
+mov $4,$0
+bxo $4,$6
+mul $4,$7
+mov $0,$4
 add $0,1
 bin $0,2
 sub $0,$3

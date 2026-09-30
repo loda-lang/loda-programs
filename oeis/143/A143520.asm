@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 seq $0,94572 ; Number of pairs of integers x, y (of either sign) with x^2 - y^2 = n.
 div $0,2
 mul $1,$0

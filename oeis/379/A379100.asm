@@ -1,7 +1,7 @@
 ; A379100: Triangle read by rows: T(n, k) = binomial(2*k, k) * binomial(2*n, n) / (n + 1).
 ; Submitted by loader3229
 ; 1,1,2,2,4,12,5,10,30,100,14,28,84,280,980,42,84,252,840,2940,10584,132,264,792,2640,9240,33264,121968,429,858,2574,8580,30030,108108,396396,1472328,1430,2860,8580,28600,100100,360360,1321320,4907760,18404100
-; Formula: a(n) = truncate(binomial(2*truncate((sqrtint(8*n+8)-1)/2),truncate((sqrtint(8*n+8)-1)/2))/(truncate((sqrtint(8*n+8)-1)/2)+1))*binomial(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
+; Formula: a(n) = floor(binomial(2*floor((sqrtint(8*n+8)-1)/2),floor((sqrtint(8*n+8)-1)/2))/(floor((sqrtint(8*n+8)-1)/2)+1))*binomial(2*n-2*binomial(floor((sqrtint(8*n+8)-1)/2)+1,2),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
 add $0,1
 mov $1,$0

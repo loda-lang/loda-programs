@@ -14,8 +14,7 @@ lpb $3
     bin $4,$2
     mod $4,$2
   lpe
-  trn $1,$4
-  add $1,$4
+  max $1,$4
   add $2,1
   sub $3,1
   mov $4,1

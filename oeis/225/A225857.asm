@@ -7,13 +7,12 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $4,0
   mov $3,$1
   add $3,1
-  seq $3,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
-  add $4,$3
-  div $4,2
-  mov $3,$4
+  dir $3,3
+  dir $3,2
+  div $3,2
+  mov $4,$3
   mod $3,2
   equ $3,0
   sub $0,$3

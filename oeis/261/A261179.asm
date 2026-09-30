@@ -1,4 +1,4 @@
-; A261179: Take the list of positive rationals {R(n): n>=1} in the order defined by Calkin and Wilf (Recounting the Rationals, 1999); a(n) = numerator of R(prime(n)).
+; A261179: a(n) is the prime(n)-th term of Stern-Brocot sequence, A002487.
 ; Submitted by Jon Maiga
 ; 1,2,3,3,5,5,5,7,7,7,5,11,11,13,9,13,11,9,11,13,15,13,19,17,11,19,17,21,19,13,7,13,19,23,29,25,23,25,27,31,29,31,13,13,25,23,31,17,23,27,25,19,17,17,9,19,27,21,37,31,35,41,41,37,33,29,49,37,49,41,27,41,33,41,31,15,31,39,33,41
 ; Formula: a(n) = A002487(A000040(n))

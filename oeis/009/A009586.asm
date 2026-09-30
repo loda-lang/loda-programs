@@ -30,7 +30,7 @@ lpb $3
   seq $12,101455 ; a(n) = 0 for even n, a(n) = (-1)^((n-1)/2) for odd n. Periodic sequence 1,0,-1,0,...
   add $2,19
   div $4,2
-  seq $4,3722 ; E.g.f. sin(sinh(x)) (odd powers only).
+  seq $4,3722 ; Expansion of e.g.f. sin(sinh(x)) (odd powers only).
   mul $4,$12
   mul $$2,$4
   add $1,$$2

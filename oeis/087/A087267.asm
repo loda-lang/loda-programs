@@ -8,6 +8,5 @@
 mov $2,$0
 seq $2,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
 seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
+gcd $0,$2
 mov $1,$0
-gcd $1,$2
-mov $0,$1

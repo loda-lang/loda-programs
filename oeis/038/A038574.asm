@@ -4,6 +4,5 @@
 ; Formula: a(n) = A030102(A319651(n))
 
 seq $0,319651 ; Largest number having in its ternary representation the same number of 0's, 1's and 2's as n.
+seq $0,30102 ; Base-3 reversal of n (written in base 10).
 mov $1,$0
-seq $1,30102 ; Base-3 reversal of n (written in base 10).
-mov $0,$1

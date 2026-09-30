@@ -1,7 +1,7 @@
 ; A096044: Triangle read by rows: T(n,k) = (n+1,k)-th element of (M^10-M)/9, where M is the infinite lower Pascal's triangle matrix, 1<=k<=n.
 ; Submitted by loader3229
 ; 1,11,2,111,33,3,1111,444,66,4,11111,5555,1110,110,5,111111,66666,16665,2220,165,6,1111111,777777,233331,38885,3885,231,7,11111111,8888888,3111108,622216,77770,6216,308,8,111111111,99999999,39999996,9333324,1399986,139986,9324,396,9,1111111111,1111111110,499999995,133333320,23333310,2799972,233310,13320,495,10,11111111111,12222222221,6111111105,1833333315,366666630,51333282,5133282,366630,18315,605,11,111111111111,133333333332,73333333326,24444444420,5499999945,879999912,102666564,8799912,549945
-; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n)-1)/2)+1,-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*(truncate(10^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2))-1))/9)
+; Formula: a(n) = truncate((binomial(floor((sqrtint(8*n)-1)/2)+1,-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)*(if((-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2)<=(-1),0,10^(-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+2))-1))/9)
 
 #offset 1
 

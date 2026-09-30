@@ -5,9 +5,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,127835 ; (Order of Galois group of Chebyshev polynomial)/(order of polynomial); or A124827(n)/n.
 mov $1,1
 add $1,$2

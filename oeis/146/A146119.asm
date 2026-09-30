@@ -2,5 +2,43 @@
 ; Submitted by MaxTheMouse
 ; 1,1,2,5,15,23,0,7,22,6,4,28,13,13,7,20,28,17,16,20,20,15,5,25,7,24,11,21,18,2,3,7,20,9,23,7,0,28,10,3,12,26,20,27,19,16,4,7,11,6,20,1,3,2,6,3,10,20,5,10,27,0,3,1,7,28,9,13,15,9,17,18,17,6,20,11,18,17,26,21
 
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mov $5,0
+mov $6,0
+mov $9,0
+mov $11,0
+mov $1,0
+mov $4,1
+fac $4,$0
+mov $7,$0
+mov $8,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  mov $10,$6
+  div $10,$4
+  mul $11,$1
+  add $11,$10
+  add $1,1
+  mod $6,$4
+  mul $8,-1
+  mov $12,$3
+  mul $12,$6
+  mul $12,$8
+  mov $13,$3
+  mul $13,$11
+  mul $13,$8
+  add $5,$13
+  add $9,$12
+lpe
+mul $5,$8
+mul $9,$8
+div $9,$4
+add $9,$5
+mov $0,$9
 mod $0,29

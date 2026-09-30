@@ -8,9 +8,9 @@ sub $0,1
 mov $3,2
 add $3,$0
 lpb $3
-  sub $3,1
   mov $0,$3
-  trn $0,1
+  trn $0,2
+  sub $3,1
   mov $5,$0
   add $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

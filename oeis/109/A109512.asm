@@ -10,7 +10,7 @@ lpb $1
   mov $3,$1
   max $3,0
   add $3,1
-  seq $3,1462 ; Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
+  seq $3,1462 ; Golomb's sequence: a(n) is the number of times n occurs in the sequence, starting with a(1) = 1.
   add $2,$3
 lpe
 add $0,$2

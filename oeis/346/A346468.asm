@@ -10,6 +10,5 @@ sub $1,1
 seq $1,141459 ; a(n) = Product_{p-1 divides n} p, where p is an odd prime.
 seq $1,11773 ; Variant of Carmichael's lambda function: a(p1^e1*...*pN^eN) = lcm((p1-1)*p1^(e1-1), ..., (pN-1)*pN^(eN-1)).
 sub $0,1
+div $0,$1
 mov $2,$0
-div $2,$1
-mov $0,$2

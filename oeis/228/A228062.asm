@@ -7,9 +7,12 @@
 sub $0,1
 mov $1,$0
 lpb $1
-  trn $1,1
+  max $1,1
+  seq $1,246850 ; Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
+  mov $3,$1
+  sub $1,2
+  div $1,2
   add $1,1
-  seq $1,25052 ; Numbers not of form ab + bc + ca for 1<=a<=b<=c (probably the list is complete).
   mov $2,$1
   mov $1,0
 lpe

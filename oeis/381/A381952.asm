@@ -10,8 +10,7 @@ lpb $0
   mov $3,$0
   add $3,1
   seq $3,51903 ; Maximum exponent in the prime factorization of n.
-  pow $0,0
-  sub $0,1
+  mov $0,0
   add $2,$3
 lpe
 gcd $1,$2

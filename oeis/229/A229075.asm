@@ -12,9 +12,9 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,69484 ; a(n) = prime(n+1)^2 + prime(n)^2.
-  sub $3,2
   mov $5,$3
-  add $3,23
+  sub $5,2
+  add $3,21
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

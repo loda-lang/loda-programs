@@ -9,12 +9,21 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
-  seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  add $3,3
+  mov $6,$3
+  dif $6,$3
+  add $6,1
+  mov $7,$3
+  max $7,1
+  seq $7,40 ; The prime numbers.
+  mul $6,$7
+  mov $7,$6
+  div $7,2
+  mov $3,$7
   seq $3,13636 ; a(n) = n*nextprime(n).
-  add $3,1
   mov $5,$3
-  add $3,1
+  add $5,1
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

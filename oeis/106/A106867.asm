@@ -8,10 +8,10 @@ mov $2,$0
 sub $0,1
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  add $3,1
-  mov $5,$3
-  add $3,1
+  add $3,2
   seq $3,78712 ; Series expansion of (-3 - 2*x)/(1 + x - x^3) in powers of x.
   mod $3,$5
   equ $3,0

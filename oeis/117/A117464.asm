@@ -11,8 +11,7 @@ lpb $2
   nrt $6,2
   pow $6,2
   sub $3,$6
-  add $3,1
-  equ $3,1
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

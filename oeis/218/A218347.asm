@@ -1,6 +1,7 @@
 ; A218347: Numbers of the form a^a + b^b, a>=b>=0.
 ; Submitted by Science United
 ; 0,1,2,4,5,8,27,28,31,54,256,257,260,283,512,3125,3126,3129,3152,3381,6250,46656,46657,46660,46683,46912,49781,93312,823543,823544,823547,823570,823799,826668,870199,1647086,16777216,16777217,16777220,16777243,16777472,16780341
+; Formula: a(n) = if(((if(((n+1)%(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2))==0,(n+1)/(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2),n+1)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)^2)==1,(if(((n+1)%(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2))==0,(n+1)/(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2),n+1)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)^(if(((n+1)%(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2))==0,(n+1)/(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2),n+1)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2),if((if(((n+1)%(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2))==0,(n+1)/(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2),n+1)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)<=(-1),0,(if(((n+1)%(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2))==0,(n+1)/(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2),n+1)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)^(if(((n+1)%(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2))==0,(n+1)/(binomial(floor((sqrtint(8*n)-1)/2)+1,2)+2),n+1)-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-2)))+floor((sqrtint(8*n)-1)/2)^floor((sqrtint(8*n)-1)/2)
 
 #offset 1
 

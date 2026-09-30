@@ -4,15 +4,32 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,4
+add $2,3
 pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,135765 ; Distribute the odd numbers in columns based on the occurrence of "3" in each prime factorization; square array A(row, col) = 3^(row-1) * A007310(col), read by antidiagonals A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), ...
+  mov $4,$3
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $3,$5
+  sub $3,1
+  mov $5,3
+  pow $5,$3
+  sub $4,$3
+  mul $4,3
+  add $4,1
+  div $4,2
+  mul $4,$5
+  mul $4,2
+  add $4,$5
+  mov $3,$4
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   gcd $3,$0
   add $1,1

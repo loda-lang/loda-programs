@@ -18,9 +18,8 @@ lpb $3
   mov $3,$6
   div $3,2
   mod $3,2
-  mul $3,2
-  sub $3,1
-  mul $3,47
+  mul $3,94
+  sub $3,47
   mul $6,$7
   equ $6,$5
   mul $6,$3

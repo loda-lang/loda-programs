@@ -2,9 +2,8 @@
 ; Submitted by Ralfy
 ; 1,1,3,16,115,1021,10696,128472,1734447,25937683,424852351,7554471156,144767131444,2971727661124,65013102375404,1509186299410896,37032678328740751,957376811266995031,25999194631060525009,739741591417352081464,22000132609456951524051
 
-add $0,1
 mov $6,$0
-sub $0,1
+add $6,1
 mov $7,$0
 bin $7,2
 add $7,$0
@@ -25,7 +24,7 @@ lpb $6
   sub $4,$1
   bin $4,$2
   sub $0,1
-  seq $0,94645 ; Triangle of generalized Stirling numbers of the first kind.
+  seq $0,94645 ; Triangle of generalized Stirling numbers of the first kind read by rows: T(n, k) = (-1)^(n+k)*Sum_{m=0..n} Stirling1(n, m) * binomial(m, k), where Stirling1 is A048994.
   mul $0,$4
   add $5,$0
 lpe

@@ -1,7 +1,7 @@
 ; A118155: Start with 1 and repeatedly reverse the digits and add 59 to get the next term.
 ; Submitted by loader3229
 ; 1,60,65,115,570,134,490,153,410,73,96,128,880,147,800,67,135,590,154,510,74,106,660,125,580,144,500,64,105,560,124,480,143,400,63,95,118,870,137,790,156,710,76,126,680,145,600,65,115,570,134,490,153,410,73,96,128,880,147,800,67,135,590,154,510,74,106,660,125,580,144,500,64,105,560,124,480,143,400,63
-; Formula: a(n) = b(n-1), b(n) = (-10*truncate(b(n-1)/10)+b(n-1))*(9*min(truncate(b(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100),1)+1)+(-10*truncate(truncate(b(n-1)/10)/10)+truncate(b(n-1)/10))*(9*min(truncate(b(n-1)/100),1)+1)+truncate(b(n-1)/100)+59, b(0) = 1
+; Formula: a(n) = (-10*truncate(a(n-1)/10)+a(n-1))*(9*min(truncate(a(n-1)/100),1)+1)*(9*min((-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100),1)+1)+(-10*truncate(truncate(a(n-1)/10)/10)+truncate(a(n-1)/10))*(9*min(truncate(a(n-1)/100),1)+1)+truncate(a(n-1)/100)+59, a(1) = 1
 
 #offset 1
 

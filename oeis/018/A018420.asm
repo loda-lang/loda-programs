@@ -1,6 +1,7 @@
 ; A018420: Divisors of 374.
 ; Submitted by Stony666
 ; 1,2,11,17,22,34,187,374
+; Formula: a(n) = A064989(A297002(floor((if((A018286(n)%3)==0,A018286(n)/3,A018286(n))+A018286(n))/2)))
 
 #offset 1
 

@@ -1,7 +1,7 @@
 ; A076662: First differences of A007066.
 ; Submitted by mmonnin
 ; 3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3
-; Formula: a(n) = -n+truncate((-truncate((sqrtint(5*n^2)+n)/2)+sqrtint(5*(truncate((sqrtint(5*n^2)+n)/2)-1)^2)+1)/2)+4
+; Formula: a(n) = -n+truncate((-floor((sqrtint(5*n^2)+n)/2)+sqrtint(5*(floor((sqrtint(5*n^2)+n)/2)-1)^2)+1)/2)+4
 
 #offset 1
 

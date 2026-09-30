@@ -6,11 +6,8 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
 mov $3,$0
-add $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $3,1
 seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 gcd $3,$0
 mov $1,$3

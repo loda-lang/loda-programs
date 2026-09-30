@@ -11,9 +11,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,318978 ; Heinz numbers of integer partitions with a common divisor > 1.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,355683 ; Multiplicative with a(p^e) = 0 if e=1 and a(p^e)= -1 if e>1.
   equ $3,0
   sub $0,$3

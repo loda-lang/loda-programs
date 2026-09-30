@@ -1,6 +1,7 @@
 ; A136203: Derived Shabat linear tree transform of A053120: Triangle of coefficients of transformed Chebyshev's T(n, x) polynomials (powers of x in increasing order) T(x,n)->c*T(c*x+d)+d: c=-1;d=1; as substitution: 1-x->y( here alternative starting polynomial of Q(y,1]=1-y.
 ; Submitted by loader3229
 ; 1,1,-1,1,-2,2,1,-3,8,-4,1,-4,20,-24,8,1,-5,40,-84,64,-16,1,-6,70,-224,288,-160,32,1,-7,112,-504,960,-880,384,-64,1,-8,168,-1008,2640,-3520,2496,-896,128,1,-9,240,-1848,6336,-11440,11648,-6720,2048,-256,1,-10,330,-3168,13728,-32032,43680,-35840,17408
+; Formula: a(n) = binomial(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+floor((sqrtint(8*n)-1)/2)+n-2,max(2*n-2*binomial(floor((sqrtint(8*n)-1)/2)+1,2)-3,0))*if((if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,(-2)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))%2)==0,if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,(-2)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1))/2,if((-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)<=(-1),0,(-2)^(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n-1)))
 
 #offset 1
 

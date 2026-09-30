@@ -14,11 +14,10 @@ lpb $2
   seq $3,40 ; The prime numbers.
   div $3,2
   mul $3,2
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   mov $6,$3
-  seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  seq $3,75423 ; a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
   mov $8,$3
   add $8,1
   add $3,1

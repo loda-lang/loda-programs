@@ -5,15 +5,15 @@
 #offset 1
 
 lpb $0
-  sub $0,1
   mov $2,$0
-  trn $2,3
+  trn $2,4
   mod $2,10
   neq $2,0
   mul $2,9
   add $2,1
   mov $3,$1
   nrt $3,6
+  sub $0,1
   add $1,1
   mul $2,$3
   add $4,$2

@@ -6,7 +6,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,115568 ; Maximal Fibonacci exponent in prime factorization of n, or 1 if there is no Fibonacci exponent.
+seq $1,115568 ; Maximum Fibonacci exponent in prime factorization of n, or 1 if there is no Fibonacci exponent.
 add $1,1
 div $1,4
 mov $0,$1

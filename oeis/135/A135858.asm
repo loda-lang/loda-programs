@@ -1,7 +1,7 @@
 ; A135858: A128229^2 * A000012.
 ; Submitted by loader3229
 ; 1,3,1,7,5,1,13,13,7,1,21,21,21,9,1,31,31,31,31,11,1,43,43,43,43,43,13,1,57,57,57,57,57,57,15,1,73,73,73,73,73,73,73,17,1,91,91,91,91,91,91,91,91,19,1
-; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n)-1)/2)+1,max(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1,truncate((sqrtint(8*n)-1)/2))-1)+2*binomial(truncate((sqrtint(8*n)-1)/2),max(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n+1,truncate((sqrtint(8*n)-1)/2)))-1
+; Formula: a(n) = 2*binomial(floor((sqrtint(8*n)-1)/2)+1,max(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1,floor((sqrtint(8*n)-1)/2))-1)+2*binomial(floor((sqrtint(8*n)-1)/2),max(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)+n+1,floor((sqrtint(8*n)-1)/2)))-1
 
 #offset 1
 

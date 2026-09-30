@@ -1,7 +1,7 @@
 ; A240356: Inverse of 73rd cyclotomic polynomial.
 ; Submitted by Science United
 ; 1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0
-; Formula: a(n) = truncate((-n-73*truncate((-n)/73))^(-n-73*truncate((-n)/73)))
+; Formula: a(n) = if(((-n-73*truncate((-n)/73))^2)==1,(-n-73*truncate((-n)/73))^(-n-73*truncate((-n)/73)),if((-n-73*truncate((-n)/73))<=(-1),0,(-n-73*truncate((-n)/73))^(-n-73*truncate((-n)/73))))
 
 sub $1,$0
 mod $1,73

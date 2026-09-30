@@ -15,10 +15,9 @@ lpb $0
   add $3,1
   pow $3,2
   mul $3,2
+  nrt $3,2
   mov $4,$5
   mov $6,$3
-  nrt $6,2
-  mov $3,$6
   add $3,1
   add $3,$5
   mod $3,2

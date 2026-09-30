@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $0,1
-add $2,9
+add $2,8
 pow $2,4
 lpb $2
   mov $4,-1
@@ -15,9 +13,8 @@ lpb $2
   seq $3,7092 ; Numbers in base 6.
   lpb $3
     mov $5,$3
-    mul $5,12
-    add $5,3
-    mul $5,2
+    mul $5,24
+    add $5,6
     mod $5,10
     trn $5,4
     bin $5,2

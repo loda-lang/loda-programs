@@ -13,11 +13,15 @@ lpb $2
   mov $6,$1
   add $6,2
   seq $6,156037 ; Largest nonprime < n-th prime.
+  mov $7,$1
+  trn $7,1
   mov $3,$1
-  add $3,2
-  seq $3,158611 ; 0, 1 and the primes.
+  sub $3,$7
+  add $7,1
+  seq $7,40 ; The prime numbers.
+  add $7,$3
+  mov $3,$7
   add $3,$6
-  add $3,1
   gcd $3,$5
   equ $3,1
   sub $0,$3

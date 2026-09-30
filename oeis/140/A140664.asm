@@ -7,9 +7,8 @@
 
 mov $1,$0
 seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-sub $0,1
 mov $2,$0
-add $0,1
+sub $2,1
 seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 mul $0,$2
 add $0,1

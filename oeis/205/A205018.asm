@@ -1,6 +1,7 @@
 ; A205018: Least k such that n divides s(k)-s(j) for some j satisfying 1<=j<k, where s(j)=j*(j+1).
 ; Submitted by HipsterDuRocher
 ; 2,2,3,2,3,3,4,4,4,3,6,5,7,4,6,8,9,4,10,6,8,6,12,5,7,7,7,5,15,6,16,16,8,9,8,6,19,10,9,6,21,8,22,7,10,12,24,9,10,7,11,8,27,7,13,11,12,15,30,8
+; Formula: a(n) = A205002(if((n%2)==0,n/2,n))
 
 #offset 1
 

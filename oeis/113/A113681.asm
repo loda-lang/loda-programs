@@ -1,6 +1,7 @@
 ; A113681: Expansion of f(-x^2, -x^3)^2 / f(-x, -x^2) in powers of x where f() is Ramanujan's two-variable theta function.
 ; Submitted by DukeBox
 ; 1,1,0,-1,0,0,0,-1,-1,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = if(((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%4-1)*((sqrtint(120*n+1)^2)==(120*n+1))-3*truncate((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%4-1)*((sqrtint(120*n+1)^2)==(120*n+1)))/3))%(-2))==0,(sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%4-1)*((sqrtint(120*n+1)^2)==(120*n+1))-3*truncate((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%4-1)*((sqrtint(120*n+1)^2)==(120*n+1)))/3))/(-2),sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%4-1)*((sqrtint(120*n+1)^2)==(120*n+1))-3*truncate((sqrtint(120*n+1)*((sqrtint(120*n+1)+1)%4-1)*((sqrtint(120*n+1)^2)==(120*n+1)))/3))
 
 mul $0,120
 add $0,1

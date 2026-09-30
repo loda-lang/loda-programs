@@ -1,13 +1,14 @@
 ; A248834: The numerator of curvature of touching circles inscribed in a special way in the smaller segment of circle of radius 1/6 divided by a chord of length sqrt(8/75).
 ; Submitted by loader3229
 ; 15,25,245,3025,39605,525625,6997445,93219025,1242045605,16549536025,220514700245,2938258798225,39150987330005,521669482807225,6951013841444645,92619168339300625,1234109231890228805,16443956730548563225,219108411138085022645,2919522145350504838225
+; Formula: a(n) = 27*a(n-3)+17*a(n-1)-51*a(n-2), a(7) = 93219025, a(6) = 6997445, a(5) = 525625, a(4) = 39605, a(3) = 3025, a(2) = 245, a(1) = 25, a(0) = 15
 
 mov $1,15
 mov $2,25
 mov $3,245
 mov $4,3025
 lpb $0
-  mul $1,0
+  mov $1,0
   rol $1,4
   mov $5,$1
   mul $5,27

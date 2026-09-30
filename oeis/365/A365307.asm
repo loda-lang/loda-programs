@@ -14,10 +14,10 @@ lpb $3
   add $3,$4
   mul $2,$3
   add $2,$1
-  sub $3,2
   mov $4,$3
-  equ $4,0
+  equ $4,2
   add $1,$2
+  sub $3,2
   add $3,$4
 lpe
 mov $5,10

@@ -1,7 +1,7 @@
 ; A126271: a(n) = order of Galois group of the polynomial P(x) + n if P(x) + n (after dividing by the gcd of its coefficients) is irreducible, otherwise a(n) = 0, where P(x) = 128*x^8 - 256*x^6 + 160*x^4 - 32*x^2 + 1.
 ; Submitted by loader3229
 ; 32,32,16,32,32,32,32,32,32,16,32,32,32,16,32,32,32,32,32,32,32,32,32,32,32,32,16,16,32,32,32
-; Formula: a(n) = 16*(((binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)^2)%11)%2)+16
+; Formula: a(n) = 16*(((binomial(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+floor((sqrtint(8*n+8)-1)/2)+n,-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)^2)%11)%2)+16
 
 add $0,1
 mov $1,$0

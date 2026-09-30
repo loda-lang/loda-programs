@@ -1,6 +1,6 @@
 ; A330333: Number of diameter-2-critical graphs with n nodes.
 ; Submitted by shiva
-; 1,2,3,5,10,30,103,519
+; 1,2,3,5,10,30,103,519,3746
 
 #offset 3
 

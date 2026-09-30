@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
+sub $1,1
 mul $0,4
 mov $2,$0
 sub $0,1
@@ -37,9 +36,8 @@ lpb $5
   mov $13,$9
   nrt $13,2
   add $9,2
+  nrt $9,2
   mov $12,$9
-  nrt $12,2
-  mov $9,$12
   add $9,$13
   mod $9,2
   mov $10,2

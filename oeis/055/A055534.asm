@@ -1,6 +1,7 @@
 ; A055534: Number of labeled order relations on n nodes in which longest chain has n-2 nodes.
 ; Submitted by loader3229
 ; 1,86,2310,42960,712320,11481120,186671520,3116534400,53907638400,970417324800,18217668268800
+; Formula: a(n) = truncate(((n*(n*(n*(4*n-22)+23)+35)-38)*n!)/24)
 
 #offset 3
 

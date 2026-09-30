@@ -10,8 +10,7 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $5,$0
-  trn $5,1
-  add $5,1
+  max $5,1
   seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
   mul $5,2
   sub $5,1

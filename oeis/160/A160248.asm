@@ -1,7 +1,7 @@
 ; A160248: Table read by antidiagonals of "less regular" truncated tetrahedron numbers built of face-centered-cubic sphere packing.
 ; Submitted by loader3229
 ; 1,6,4,19,16,10,44,40,31,20,85,80,68,52,35,146,140,125,104,80,56,231,224,206,180,149,116,84,344,336,315,284,246,204,161,120,489,480,456,420,375,324,270,216,165
-; Formula: a(n) = 4*binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-truncate((sqrtint(8*n)-1)/2)+n-1,3)+binomial(2*truncate((sqrtint(8*n)-1)/2)-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+4,3)
+; Formula: a(n) = 4*binomial(-binomial(floor((sqrtint(8*n)-1)/2)+1,2)-floor((sqrtint(8*n)-1)/2)+n-1,3)+binomial(2*floor((sqrtint(8*n)-1)/2)-n+binomial(floor((sqrtint(8*n)-1)/2)+1,2)+4,3)
 
 #offset 1
 

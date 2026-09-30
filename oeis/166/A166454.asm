@@ -1,7 +1,7 @@
 ; A166454: Triangle read by rows: T(n, k) = (1/2)*(A007318(n,k) - A047999(n,k)).
 ; Submitted by shiva
 ; 1,1,1,2,3,2,2,5,5,2,3,7,10,7,3,3,10,17,17,10,3,4,14,28,35,28,14,4,4,18,42,63,63,42,18,4,5,22,60,105,126,105,60,22,5,5,27,82,165,231,231,165,82,27,5,6,33,110,247,396,462,396,247,110,33,6,6,39,143,357,643,858,858,643,357,143,39,6,7,45
-; Formula: a(n) = truncate(binomial(truncate((sqrtint(8*n-8)-1)/2)+2,-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+n-1)/2)
+; Formula: a(n) = truncate(binomial(floor((sqrtint(8*n-8)-1)/2)+2,-binomial(floor((sqrtint(8*n-8)-1)/2)+1,2)+n-1)/2)
 
 #offset 2
 

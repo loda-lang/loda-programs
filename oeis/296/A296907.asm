@@ -17,10 +17,10 @@ lpb $1
     lpb $5
       sub $5,1
       add $6,1
-      sub $7,1
       mov $8,$7
-      neq $8,0
+      neq $8,1
       mul $5,$8
+      sub $7,1
     lpe
     sub $3,1
     mul $3,$8

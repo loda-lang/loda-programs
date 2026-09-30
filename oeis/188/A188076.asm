@@ -11,7 +11,16 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,2
-  seq $3,188090 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=5, [ ]=floor.
+  mov $4,$3
+  pow $4,2
+  mul $4,3
+  nrt $4,2
   add $1,1
+  add $3,5
+  pow $3,2
+  mul $3,3
+  nrt $3,2
+  sub $3,8
+  sub $3,$4
 lpe
 mov $0,$3

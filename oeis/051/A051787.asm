@@ -12,9 +12,9 @@ lpb $0
   sub $0,1
   add $2,$3
   mul $2,-1
-  add $4,1
   mov $5,$4
-  add $4,10
+  add $5,1
+  add $4,11
   sub $1,$2
   mul $1,8
   add $1,34

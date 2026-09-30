@@ -13,9 +13,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
+  gcd $3,$6
   mov $5,$3
-  gcd $5,$6
-  mov $3,$5
   equ $3,5
   sub $0,$3
   add $1,1

@@ -11,7 +11,10 @@ mul $2,2
 lpb $2
   mov $3,$1
   seq $3,7954 ; Product of decimal digits of n.
-  seq $3,10057 ; a(n) = 1 if n is a cube, else 0.
+  mov $6,$3
+  nrt $6,3
+  pow $6,3
+  equ $3,$6
   sub $0,$3
   mov $4,$0
   max $4,0

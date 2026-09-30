@@ -12,9 +12,8 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,237287 ; Numbers that are not practical: positive integers n such that there exists at least one number k <= sigma(n) that is not a sum of distinct divisors of n.
-  sub $3,1
   mov $5,$3
-  add $3,1
+  sub $5,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

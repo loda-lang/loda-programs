@@ -1,6 +1,7 @@
 ; A165621: Riordan array (c(x^2)*(1+xc(x^2)), xc(x^2)).
 ; Submitted by loader3229
 ; 1,1,1,1,1,1,2,2,1,1,2,3,3,1,1,5,5,4,4,1,1,5,9,9,5,5,1,1,14,14,14,14,6,6,1,1,14,28,28,20,20,7,7,1,1,42,42,48,48,27,27,8,8,1,1,42,90,90,75,75,35,35,9,9,1,1
+; Formula: a(n) = 2*binomial(floor((sqrtint(8*n+8)-1)/2),truncate((if(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)%(-1))==0,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+floor((sqrtint(8*n+8)-1)/2))/2))-binomial(floor((sqrtint(8*n+8)-1)/2)+1,truncate((if(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)%(-1))==0,(-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)/(-1),-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n)+floor((sqrtint(8*n+8)-1)/2))/2))
 
 add $0,1
 mov $2,$0

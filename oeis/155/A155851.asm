@@ -15,8 +15,7 @@ lpb $2
   add $6,1
   seq $6,101301 ; The sum of the first n primes, minus n.
   add $3,$6
-  add $3,1
-  trn $3,6
+  trn $3,5
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

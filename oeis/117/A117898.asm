@@ -1,7 +1,7 @@
 ; A117898: Number triangle 2^abs(L(C(n,2)/3) - L(C(k,2)/3))*[k<=n] where L(j/p) is the Legendre symbol of j and p.
 ; Submitted by loader3229
 ; 1,1,1,2,2,1,1,1,2,1,1,1,2,1,1,2,2,1,2,2,1,1,1,2,1,1,2,1,1,1,2,1,1,2,1,1,2,2,1,2,2,1,2,2,1,1,1,2,1,1,2,1,1,2,1,1,1,2,1,1,2,1,1,2,1,1,2,2,1,2,2,1,2,2,1,2,2,1,1,1
-; Formula: a(n) = (-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2+(truncate((sqrtint(8*n+8)-1)/2)+1)^2+3*truncate(((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2+(truncate((sqrtint(8*n+8)-1)/2)+1)^2)/(-3))-2*truncate(((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2+(truncate((sqrtint(8*n+8)-1)/2)+1)^2+3*truncate(((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2+(truncate((sqrtint(8*n+8)-1)/2)+1)^2)/(-3)))/2)+1
+; Formula: a(n) = ((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2+(floor((sqrtint(8*n+8)-1)/2)+1)^2+3*truncate(((-binomial(floor((sqrtint(8*n+8)-1)/2)+1,2)+n+1)^2+(floor((sqrtint(8*n+8)-1)/2)+1)^2)/(-3)))%2+1
 
 add $0,1
 mov $1,$0

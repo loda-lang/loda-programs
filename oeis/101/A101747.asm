@@ -1,4 +1,4 @@
-; A101747: Numbers n such that ((0!)^2+(1!)^2+(2!)^2+...+(n!)^2)/6 is prime.
+; A101747: Numbers k such that ((0!)^2+(1!)^2+(2!)^2+...+(k!)^2)/6 is prime.
 ; Submitted by Science United
 ; 3,4,5,6,7,19,40,56,93
 

@@ -23,9 +23,9 @@ lpb $2
   add $3,1
   dif $5,2
   bin $5,$3
-  add $5,1
   mov $3,$5
-  equ $3,1
+  equ $3,0
+  add $5,1
   sub $0,$3
   add $1,1
   mov $4,$0

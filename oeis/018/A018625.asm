@@ -1,7 +1,7 @@
 ; A018625: Divisors of 748.
 ; Submitted by damotbe
 ; 1,2,4,11,17,22,34,44,68,187,374,748
-; Formula: a(n) = A030101(A018701(n))*truncate(2^(-logint(max(A030101(A018701(n)),1),2)+logint(max(A018701(n),1),2)))
+; Formula: a(n) = A030101(A018701(n))*if((-logint(max(A030101(A018701(n)),1),2)+logint(max(A018701(n),1),2))<=(-1),0,2^(-logint(max(A030101(A018701(n)),1),2)+logint(max(A018701(n),1),2)))
 
 #offset 1
 

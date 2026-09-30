@@ -1,10 +1,34 @@
 ; A332814: a(n) is -1, 0, or +1 such that a(n) == A156552(n) (mod 3).
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,-1,0,1,-1,-1,1,0,0,1,-1,-1,-1,1,0,1,1,-1,1,0,0,1,-1,0,-1,-1,-1,-1,0,1,1,1,0,-1,0,-1,-1,0,0,1,1,-1,1,1,0,1,-1,0,1,1,-1,-1,-1,0,-1,0,-1,1,1,-1,0,-1,0,-1,0,1,1,1,-1,-1,1,1,-1,-1,-1,1,1,-1,1
-; Formula: a(n) = if(((-3*truncate(A156552(n)/3)+A156552(n))%(-2))==0,(-3*truncate(A156552(n)/3)+A156552(n))/(-2),-3*truncate(A156552(n)/3)+A156552(n))
 
 #offset 1
 
-seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
+mov $3,$0
+mov $4,0
+sub $0,1
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  mov $2,$0
+  gcd $2,$1
+  bin $2,$0
+  mov $5,$0
+  seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $5,1
+  mov $7,$0
+  seq $7,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $7,$5
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $0,1
+  add $0,$7
+  mov $6,2
+  pow $6,$0
+  mul $2,$6
+  add $4,$2
+lpe
+mov $0,$4
 mod $0,3
 dif $0,-2

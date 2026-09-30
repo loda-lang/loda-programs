@@ -15,8 +15,7 @@ lpb $0
     mov $7,$4
     add $7,1
     seq $7,73184 ; Number of cubefree divisors of n.
-    sub $7,1
-    equ $7,2
+    equ $7,3
     mov $9,10
     add $9,$5
     mul $7,$$9

@@ -8,6 +8,6 @@ mov $2,$0
 lpb $2
   seq $2,66535 ; Number of ways of writing n as a sum of n squares.
   mul $1,$2
-  mul $2,0
+  mov $2,0
 lpe
 mov $0,$1

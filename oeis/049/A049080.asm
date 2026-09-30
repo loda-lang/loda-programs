@@ -7,9 +7,8 @@
 
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 seq $0,40 ; The prime numbers.
+mul $0,20
 mov $1,$0
-mul $1,20
-mov $0,$1
 sub $0,37
 div $0,20
 add $0,2
