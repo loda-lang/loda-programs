@@ -13,6 +13,15 @@ For updates on new miner findings, you can check the [latest commits](https://gi
 
 <img src="https://raw.githubusercontent.com/loda-lang/loda-programs/main/program_counts.png" width=400 />
 
+## Explanation for protect.txt, full_check.txt, deny.txt, and overwrite.txt
+protect.txt: For sequences in this file, programs do not get overridden by the "mining" (even if better programs are found).
+
+full_check.txt: For sequences in this file, instead of only checking the default number of terms (up to 1,000), instead, it will check up to 100,000 sequence terms.
+
+deny.txt: These sequences are not suitable for LODA, so that they are not accepted.
+
+overwrite.txt: this is used when mining in "auto" mode. This forces sequences with existing programs to remain eligible for matching/re-mining, allowing them to be overwritten by better programs.
+
 ## License
 
 The programs in this repository are published under the 
